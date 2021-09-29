@@ -2,13 +2,13 @@
 title: Verwenden von Metadatenprofilen zum Anwenden von Standardmetadaten auf alle Assets in einem Ordner
 description: Informieren Sie sich über Metadatenprofile für Assets. Erfahren Sie, wie Sie Metadatenprofile erstellen und auf Ordner-Assets anwenden können.
 contentOwner: AG
-feature: 'Metadaten  '
+feature: Metadata
 role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 65%
+source-wordcount: '1226'
+ht-degree: 59%
 
 ---
 
@@ -18,7 +18,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 
 ## Hinzufügen eines Metadatenprofils {#adding-a-metadata-profile}
 
-1. Tippen oder klicken Sie auf das AEM Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]** und tippen Sie dann auf **[!UICONTROL Erstellen]**.
+1. Tippen oder klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]** und tippen Sie dann auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Titel für das Metadatenprofil ein, etwa Beispielmetadaten, und klicken Sie auf **[!UICONTROL Senden]**. Das **[!UICONTROL Bearbeitungsformular]** für das Metadatenprofil wird angezeigt.
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
@@ -34,7 +34,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   Der Wert, den Sie für **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird als Eigenschaft unter dem Metadatenknoten des Assets gespeichert. Beispiel: Wenn Sie `/jcr:content/metadata/dc:desc` als Name von **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird der Wert `dc:desc` von AEM Assets im Metadatenknoten des Assets gespeichert.
+   Der Wert, den Sie für **[!UICONTROL Zu Eigenschaft zuordnen]** angeben, wird als Eigenschaft unter dem Metadatenknoten des Assets gespeichert. Beispiel: Wenn Sie `/jcr:content/metadata/dc:desc` als Name von  **[!UICONTROL Zu Eigenschaft zuordnen]**, speichert  [!DNL Experience Manager] Assets den Wert  `dc:desc` im Metadatenknoten des Assets.
 
    * **[!UICONTROL Standardwert]**: Mit dieser Eigenschaft können Sie einen Standardwert für die Metadatenkomponente hinzufügen. Wenn Sie beispielsweise „Meine Beschreibung“ angeben, wird dieser Wert der Eigenschaft `dc:desc` im Metadatenknoten des Assets zugewiesen.
 
@@ -67,7 +67,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 
    ![chlimage_1-486](assets/chlimage_1-486.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]** .
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Metadatenprofil kopieren]** einen Titel für die neue Kopie des Profils ein.
 1. Klicken Sie auf **[!UICONTROL Kopieren]**. Eine Kopie des Profils wird in der Profilliste auf der Seite **[!UICONTROL Metadatenprofile]** angezeigt.
 
@@ -79,7 +79,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 
    ![chlimage_1-488](assets/chlimage_1-488.png)
 
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Metadatenprofile löschen]** .
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Metadatenprofile löschen]**.
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Löschen]** , um den Löschvorgang zu bestätigen. Das Metadatenprofil wird aus der Liste gelöscht.
 
 ## Anwenden eines Metadatenprofils auf Ordner {#applying-a-metadata-profile-to-folders}
@@ -96,13 +96,13 @@ Sie können Metadatenprofile auf bestimmte Ordner oder global auf alle Assets an
 
 ### Anwenden von Metadatenprofilen auf bestimmte Ordner {#applying-metadata-profiles-to-specific-folders}
 
-Sie können ein Metadatenprofil über das Menü **[!UICONTROL Werkzeuge]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Metadatenprofile auf beide Arten auf Ordner anwenden.
+Sie können ein Metadatenprofil über das Menü **[!UICONTROL Tools]** oder, falls Sie sich im Ordner befinden, über **[!UICONTROL Eigenschaften]** auf einen Ordner anwenden. In diesem Abschnitt wird beschrieben, wie Sie Metadatenprofile auf beide Arten auf Ordner anwenden.
 
 Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
 #### Anwenden von Metadatenprofilen auf Ordner über die Benutzeroberfläche „Profile“  {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Videoprofile]**.
+1. Tippen Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie auf einen oder mehrere Ordner anwenden möchten.
 
    ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -122,7 +122,7 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 ### Globales Anwenden eines Metadatenprofils {#applying-a-metadata-profile-globally}
 
-Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet werden. Dann wird allen Inhalten, die Sie in AEM Assets in beliebigen Ordnern hochladen, das ausgewählte Profil zugeordnet. Gehen Sie wie folgt vor, um ein Metadatenprofil global anzuwenden:
+Sie können ein Profil nicht nur auf einen Ordner anwenden, sondern auch global anwenden, sodass auf alle Inhalte, die in [!DNL Experience Manager]-Assets in einem beliebigen Ordner hochgeladen werden, das ausgewählte Profil angewendet wird. Gehen Sie wie folgt vor, um ein Metadatenprofil global anzuwenden:
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -144,7 +144,7 @@ Sie können ein Metadatenprofil aus einem Ordner im Menü **[!UICONTROL Tools]**
 
 Gehen Sie wie folgt vor, um über die Benutzeroberfläche &quot;Profile&quot;ein Metadatenprofil aus Ordnern zu entfernen:
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Videoprofile]**.
+1. Tippen Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenprofile]**.
 1. Wählen Sie ein Metadatenprofil aus, das Sie aus einem oder mehreren Ordnern entfernen möchten.
 1. Tippen Sie auf **[!UICONTROL Metadatenprofil aus Ordner(n)]** entfernen und wählen Sie den Ordner oder mehrere Ordner aus, aus denen Sie ein Profil entfernen möchten. Tippen Sie dann auf **[!UICONTROL Fertig]**.
 
@@ -152,7 +152,7 @@ Gehen Sie wie folgt vor, um über die Benutzeroberfläche &quot;Profile&quot;ein
 
 ### Entfernen von Metadatenprofilen aus Ordnern über &quot;Eigenschaften&quot; {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann in den Ordner, aus dem Sie ein Metadatenprofil entfernen möchten.
+1. Tippen Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Assets]** und dann zu dem Ordner, aus dem Sie ein Metadatenprofil entfernen möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
 1. Wählen Sie die Registerkarte **[!UICONTROL Metadatenprofile]** und dann **[!UICONTROL Keine]** aus dem Dropdown-Menü aus. Tippen Sie auf **[!UICONTROL Speichern]**.
 

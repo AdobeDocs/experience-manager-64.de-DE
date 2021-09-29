@@ -1,20 +1,20 @@
 ---
 title: 'Suchen nach Assets in AEM '
-description: Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
+description: Erfahren Sie, wie Sie die erforderlichen Assets in [!DNL Experience Manager] mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '549'
 ht-degree: 93%
 
 ---
 
-# Suchen nach Assets in AEM  {#search-assets-in-aem}
+# Suchen nach Assets in [!DNL Experience Manager] {#search-assets-in-aem}
 
-Erfahren Sie, wie Sie die erforderlichen Assets in AEM mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
+Erfahren Sie, wie Sie die erforderlichen Assets in[!DNL Experience Manager]mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 
 Verwenden Sie das Bedienfeld Filter, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen.
 

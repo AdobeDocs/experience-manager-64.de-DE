@@ -1,8 +1,8 @@
 ---
 title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
-seo-title: Einbetten des Dynamic Media-Video- oder Bild-Viewers auf einer Web-Seite
+seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: Erfahren Sie, wie Sie Dynamic Media-Videos oder -Bilder auf einer Web-Seite einbetten.
-seo-description: Erfahren Sie, wie Sie Dynamic Media-Videos oder -Bilder auf einer Web-Seite einbetten.
+seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: Komponenten
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 96%
+source-wordcount: '367'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 
 Verwenden Sie die Funktion **[!UICONTROL Einbettungs-Code]**, wenn Sie ein Video wiedergeben oder ein Asset anzeigen möchten, das auf einer Web-Seite eingebettet wurde. Kopieren Sie den Einbettungs-Code in die Zwischenablage, damit Sie ihn in die Web-Seiten einfügen können. Der Code kann im Dialogfeld **[!UICONTROL Einbettungs-Code]** nicht bearbeitet werden.
 
-Sie betten URLs nur dann ein, wenn Sie AEM _nicht_ als Ihren WCM verwenden. Wenn Sie AEM als Ihren WCM verwenden, [fügen Sie die Assets direkt zu Ihrer Seite hinzu](adding-dynamic-media-assets-to-pages.md).
+Betten Sie URLs nur dann ein, wenn Sie _nicht_ als Ihr WCM verwenden. [!DNL Experience Manager] Wenn Sie [!DNL Experience Manager] als WCM verwenden, [fügen Sie die Assets direkt auf Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
 
 Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 

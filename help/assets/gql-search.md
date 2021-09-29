@@ -1,20 +1,20 @@
 ---
 title: GQL-Volltextsuche
-description: Lernen Sie die Funktion zur GQL-Volltextsuche in AEM Assets kennen. Mit dieser Funktion können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung und Erstellername nach Assets suchen.
+description: Erkunden Sie die GQL-Volltextsuchfunktion in [!DNL Experience Manager] Assets. Mit dieser Funktion können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung und Erstellername nach Assets suchen.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 74%
+source-wordcount: '873'
+ht-degree: 72%
 
 ---
 
 # GQL-Volltextsuche {#gql-full-text-search}
 
-Lernen Sie die Funktion zur GQL-Volltextsuche in AEM Assets kennen. Mit dieser Funktion können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung und Erstellername nach Assets suchen.
+Erkunden Sie die GQL-Volltextsuchfunktion in [!DNL Experience Manager] Assets. Mit dieser Funktion können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung und Erstellername nach Assets suchen.
 
 Mit der Funktion zur GQL-Volltextsuche können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung, Ersteller usw., nach Assets suchen.
 
@@ -38,7 +38,7 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
    ![gql_search](assets/gql_search.png)
 
-1. Drücken Sie **[!UICONTROL Enter]**. In der AEM Assets-Benutzeroberfläche werden nur die Assets angezeigt, deren Titel genau mit &quot;Target&quot;übereinstimmt.
+1. Drücken Sie **[!UICONTROL Enter]**. Die [!DNL Assets]-Benutzeroberfläche zeigt nur die Assets an, deren Titel genau mit &quot;Target&quot;übereinstimmt.
 
 Mit der Funktion für die GQL-Volltextsuche können Sie Assets anhand der folgenden Elemente durchsuchen:
 
@@ -57,7 +57,7 @@ Mit der Volltextsuchfunktion GQL können Sie anhand der folgenden Metadateneigen
 | [!UICONTROL Titel] | title:John |
 | [!UICONTROL Ersteller] | creator:John |
 | [!UICONTROL Mitarbeiter] | contributor:John |
-| [!UICONTROL Speicherort] | location:India |
+| [!UICONTROL Standort] | location:India |
 | [!UICONTROL Beschreibung] | description:&quot;Sample Image&quot; |
 | [!UICONTROL Erstellungswerkzeug] | creatortool:„Adobe Photoshop 7.0“ |
 | [!UICONTROL Urheberrechtsbesitzer] | copyrightowner:&quot;Adobe Systems&quot; |
@@ -112,7 +112,6 @@ title:&quot;Meeting&quot;;
 >Die Eigenschaften „path“, „limit“, „size“ und „orderby“ können nicht über ODER mit einer anderen Eigenschaft verknüpft werden.
 >
 >Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
-
 
 >[!NOTE]
 >

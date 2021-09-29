@@ -1,22 +1,22 @@
 ---
 title: Unterstützung für IPTC-Metadaten
-description: Erfahren Sie mehr darüber, wie Adobe Experience Manager (AEM) Assets IPTC-Metadaten, kreative Bewertungen und Keywords unterstützt, die über Adobe Bridge und andere Kreativanwendungen zu Assets hinzugefügt werden.
+description: Erfahren Sie, wie Adobe Experience Manager Assets die IPTC-Metadaten, kreativen Bewertungen und Suchbegriffe unterstützt, die über Adobe Bridge und andere Kreativ-Apps zu Assets hinzugefügt werden.
 contentOwner: AG
-feature: 'Metadaten  '
+feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 100%
+source-wordcount: '364'
+ht-degree: 76%
 
 ---
 
 # Unterstützung für IPTC-Metadaten {#support-for-iptc-metadata}
 
-Erfahren Sie mehr darüber, wie Adobe Experience Manager (AEM) Assets IPTC-Metadaten, kreative Bewertungen und Keywords unterstützt, die über Adobe Bridge und andere Kreativanwendungen zu Assets hinzugefügt werden.
+Erfahren Sie, wie Adobe Experience Manager Assets die IPTC-Metadaten, kreativen Bewertungen und Suchbegriffe unterstützt, die über Adobe Bridge und andere Kreativ-Apps zu Assets hinzugefügt werden.
 
-Adobe Experience Manager (AEM) Assets unterstützt den IPTC-Metadatenstandard, der häufig zum Beschreiben von Assets verwendet wird. Auf diese Weise verbessert AEM Assets die Akzeptanz der eigenen Bilder bei den verschiedenen Beteiligten wie Fotografen, Werbeagenturen, Bibliotheken und Museen.
+Adobe Experience Manager Assets unterstützt den IPTC-Metadatenstandard, der häufig zur Beschreibung von Assets verwendet wird. Auf diese Weise verbessert [!DNL Experience Manager Assets] die Akzeptanz seiner Bilder bei verschiedenen Parteien, einschließlich Fotografen, Kreativagenturen, Bibliotheken, Museen usw.
 
 Das standardmäßige Metadatenschema für Assets enthält nun die Metadatenschemata IPTC Core und IPTC Extension, damit umfassende Metadateneigenschaften definiert werden können, mit denen Benutzer präzise und zuverlässige Daten über in einem Bild gezeigte Personen, Orte und die Produkte hinzufügen können. Darüber hinaus werden Daten, Namen und Bezeichner zur Bilderstellung sowie flexible Möglichkeiten für die Angabe von Rechtinformationen unterstützt.
 

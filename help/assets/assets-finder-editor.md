@@ -2,13 +2,13 @@
 title: Erstellen und Konfigurieren von Asset-Editor-Seiten
 description: Erfahren Sie, wie Sie benutzerdefinierte Asset-Editor-Seiten erstellen und mehrere Assets gleichzeitig bearbeiten können.
 contentOwner: AG
-feature: Entwicklertools,Asset Management
+feature: Developer Tools,Asset Management
 role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '3318'
-ht-degree: 79%
+source-wordcount: '3300'
+ht-degree: 76%
 
 ---
 
@@ -26,13 +26,13 @@ Dieses Dokument beschäftigt sich mit den folgenden Fragestellungen:
 
 ## Was spricht für das Erstellen und Konfigurieren von Asset-Editor-Seiten? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management wird in einer immer größeren Anzahl von Szenarien eingesetzt. Beim Umstieg von einer kleinen Lösung für eine kleine Gruppe professionell ausgebildeter Benutzer (beispielsweise Fotografen oder Taxonome) auf ein System für größere und vielfältigere Benutzergruppen (beispielsweise Geschäftsbenutzer, WCM-Autoren, Journalisten usw.) stellt die leistungsstarke Benutzeroberfläche von Adobe Experience Manager (AEM) Assets für professionelle Benutzer möglicherweise zu viele Informationen bereit, sodass die beteiligten Personen für den Zugriff auf die für sie relevanten digitalen Assets spezielle Benutzeroberflächen oder Anwendungen anfragen.
+Digital Asset Management wird in einer immer größeren Anzahl von Szenarien eingesetzt. Wenn Sie von einer kleinen Lösung für eine kleine Benutzergruppe professionell ausgebildeter Benutzer - z. B. Fotografen oder Taxonomen - zu größeren und vielfältigeren Benutzergruppen (z. B. Geschäftsbenutzer, WCM-Autoren, Journalisten usw.) wechseln, kann die leistungsstarke Benutzeroberfläche von [!DNL Adobe Experience Manager Assets] für professionelle Benutzer zu viele Informationen bereitstellen und Interessengruppen beginnen, spezifische Benutzeroberflächen oder Anwendungen für den Zugriff auf digitale Assets anzufordern, die für sie relevant sind.
 
 Bei diesen Asset-orientierten Anwendungen kann es sich um einfache Fotogalerien im Internet handeln, über die Mitarbeiter Fotos von Messebesuchen hochladen können, oder um Pressezentren öffentlicher Websites, wie etwa hier im Geometrixx-Beispiel zu sehen. Asset-orientierte Anwendungen können sich auch auf Komplettlösungen, einschließlich Warenkorb, Kassen- und Prüfprozessen, erstrecken.
 
-Eine Asset-orientierte Anwendung zu erstellen, wird so in erster Linie zu einem Konfigurationsvorgang, der keinerlei Kodierung erfordert. Sie müssen lediglich mit den Benutzergruppen, deren Bedürfnissen und den verwendeten Metadaten vertraut sein. Mit AEM Assets erstellte Asset-orientierte Anwendungen sind erweiterbar: Mit moderatem Kodierungsaufwand können Sie wiederverwendbare Komponenten für die Suche, Anzeige und Bearbeitung von Assets erstellen.
+Eine Asset-orientierte Anwendung zu erstellen, wird so in erster Linie zu einem Konfigurationsvorgang, der keinerlei Kodierung erfordert. Sie müssen lediglich mit den Benutzergruppen, deren Bedürfnissen und den verwendeten Metadaten vertraut sein. Asset-orientierte Anwendungen, die mit [!DNL Assets] erstellt wurden, sind erweiterbar: Mit moderatem Kodierungsaufwand können wiederverwendbare Komponenten für die Suche, Anzeige und Änderung von Assets erstellt werden.
 
-Eine Asset-orientierte Anwendung in AEM besteht aus einer Asset-Editor-Seite, die eine detaillierte Ansicht eines bestimmten Assets liefert. Über eine Asset-Editor-Seite können zudem Metadaten bearbeitet werden, sofern der Benutzer, der auf das Asset zugreift, über die erforderlichen Berechtigungen verfügt.
+Eine Asset-zentrierte Anwendung in [!DNL Experience Manager] besteht aus einer Asset-Editor-Seite, die verwendet werden kann, um eine detaillierte Ansicht eines bestimmten Assets zu erhalten. Über eine Asset-Editor-Seite können zudem Metadaten bearbeitet werden, sofern der Benutzer, der auf das Asset zugreift, über die erforderlichen Berechtigungen verfügt.
 
 ## Erstellen und Konfigurieren einer Asset-Freigabe-Seite {#creating-and-configuring-an-asset-share-page}
 
@@ -161,7 +161,7 @@ So passen Sie den Query Builder an:
 
 #### Hinzufügen von Prädikaten {#adding-predicates}
 
-AEM Assets beinhaltet eine Reihe von Eigenschaften, die Sie der Asset-Freigabe-Seite hinzufügen können. So können Benutzer Suchvorgänge weiter eingrenzen. Mitunter können sie auch einen Query-Builder-Parameter (etwa den Pfad-Parameter) überschreiben.
+[!DNL Experience Manager Assets] beinhaltet eine Reihe von Eigenschaften, die Sie der Asset-Freigabe-Seite hinzufügen können. So können Benutzer Suchvorgänge weiter eingrenzen. Mitunter können sie auch einen Query-Builder-Parameter (etwa den Pfad-Parameter) überschreiben.
 
 So fügen Sie Eigenschaften hinzu:
 
@@ -279,7 +279,7 @@ Das Metadatenformular ist ein Formular mit Start- und Endaktion. Dazwischen nehm
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   Informationen zum Ändern der im Metadatenformular verfügbaren Namespaces finden Sie unter [Anpassen und Erweitern von AEM Assets](extending-assets.md) .
+   Informationen zum Ändern der im Metadatenformular verfügbaren Namespaces finden Sie unter [Anpassen und Erweitern [!DNL Assets]](extending-assets.md) .
 
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Beschränkungen]**. Hier können Sie festlegen, ob ein Feld erforderlich ist, und ggf. weitere Beschränkungen hinzufügen.
 
@@ -392,10 +392,10 @@ So fügen Sie der Asset-Editor-Seite Aktionen hinzu:
 
 ## Bearbeiten mehrerer Assets mit der Asset-Editor-Seite {#multi-editing-assets-with-the-asset-editor-page}
 
-Mit AEM Assets können Sie Änderungen an mehreren Assets gleichzeitig vornehmen. Nach Auswahl der Assets können Sie bei diesen gleichzeitig Folgendes ändern:
+Mit [!DNL Assets] können Sie Änderungen an mehreren Assets gleichzeitig vornehmen. Nach Auswahl der Assets können Sie bei diesen gleichzeitig Folgendes ändern:
 
 * Tags
-* Metadaten  
+* Metadaten
 
 So führen Sie eine Mehrfachbearbeitung von Assets mit der Asset-Editor-Seite durch:
 

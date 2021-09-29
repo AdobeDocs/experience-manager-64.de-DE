@@ -1,14 +1,14 @@
 ---
 title: Best Practices für die Assets-Abladung
-description: Empfohlene Anwendungsfälle und Best Practices für die Abladung der Workflows zur Asset-Aufnahme und -Replikation in AEM Assets.
+description: Empfohlene Anwendungsfälle und Best Practices für die Abladung von Workflows zur Asset-Aufnahme und -Replikation in  [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Asset-Management
+feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1820'
-ht-degree: 78%
+source-wordcount: '1805'
+ht-degree: 73%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 78%
 
 >[!WARNING]
 >
->Diese Funktion wird ab AEM 6.4 nicht mehr unterstützt und in AEM 6.5 entfernt. Planen Sie entsprechend.
+>Diese Funktion ist ab [!DNL Experience Manager] 6.4 veraltet und wird in [!DNL Experience Manager] 6.5 entfernt. Planen Sie entsprechend.
 
-Durch die Verarbeitung großer Dateien und Ausführung von Workflows in Adobe Experience Manager (AEM) Assets kann ein erheblicher Teil von CPU, Speicher und I/O-Ressourcen in Beschlag genommen werden. Insbesondere die Größe der Assets, die Workflows, die Anzahl der Benutzer und die Häufigkeit der Asset-Aufnahme können sich auf die Gesamtleistung des Systems auswirken. Zu den ressourcenintensivsten Vorgängen gehören die AEM-Workflows zur Asset-Aufnahme und Replikation. Eine intensive Nutzung dieser Workflows in einer AEM-Autoreninstanz kann die Bearbeitungseffizienz beeinträchtigen.
+Die Verarbeitung großer Dateien und die Ausführung von Workflows in Adobe Experience Manager Assets können erhebliche CPU-, Speicher- und I/O-Ressourcen beanspruchen. Insbesondere die Größe der Assets, die Workflows, die Anzahl der Benutzer und die Häufigkeit der Asset-Aufnahme können sich auf die Gesamtleistung des Systems auswirken. Die ressourcenintensivsten Vorgänge sind Workflows zur Asset-Erfassung und -Replikation. Eine intensive Nutzung dieser Workflows auf einer einzelnen Authoring-Instanz kann die Authoring-Effizienz beeinträchtigen.
 
 Werden diese Aufgaben auf dedizierte Worker-Instanzen abgeladen, kann sich der CPU-, Speicher- und I/O-Mehraufwand reduzieren. Im Allgemeinen lautet die Idee hinter der Abladung, dass Aufgaben mit hohem CPU-/Speicher-/Ressourcenverbrauch auf dedizierte Worker-Instanzen verteilt werden. In den folgenden Abschnitten werden empfohlene Anwendungsbeispiele für die Assets-Abladung beschrieben.
 
-## AEM Assets-Abladung {#aem-assets-offloading}
+## [!DNL Experience Manager Assets] Entladen {#aem-assets-offloading}
 
-AEM Assets implementiert eine native Asset-spezifische Workflow-Erweiterung zur Abladung. Als Basis dient hierbei die generische Workflow-Erweiterung des Abladeframeworks, wobei allerdings zusätzliche Asset-spezifische Funktionen in der Implementierung enthalten sind. Das Ziel der Assets-Abladung besteht darin, den Workflow „DAM-Update-Asset“ auf einem hochgeladenen Asset effizient auszuführen. Mittels Assets-Abladung erlangen Sie eine größere Kontrolle über die Aufnahmeworkflows.
+[!DNL Experience Manager] Assets implementiert eine native Asset-spezifische Workflow-Erweiterung zur Abladung. Als Basis dient hierbei die generische Workflow-Erweiterung des Abladeframeworks, wobei allerdings zusätzliche Asset-spezifische Funktionen in der Implementierung enthalten sind. Das Ziel der Assets-Abladung besteht darin, den Workflow „DAM-Update-Asset“ auf einem hochgeladenen Asset effizient auszuführen. Mittels Assets-Abladung erlangen Sie eine größere Kontrolle über die Aufnahmeworkflows.
 
-## Komponenten der AEM Assets-Abladung {#aem-assets-offloading-components}
+## [!DNL Experience Manager] Komponenten zum Abladen von Assets {#aem-assets-offloading-components}
 
 Die folgende Abbildung zeigt die Hauptkomponenten des Asset-Abladeprozesses:
 
@@ -40,7 +40,7 @@ Der Workflow &quot;Asset-Abladung für DAM-Update&quot;wird auf dem primären (A
 
 Der Job Manager verteilt neue Aufträge an Worker-Instanzen. Beim Design des Verteilungsmechanismus muss an die Themenaktivierung gedacht werden. Aufträge können Instanzen nur dann zugewiesen werden, wenn das Thema des entsprechenden Auftrags aktiviert ist. Deaktivieren Sie das Thema `com/adobe/granite/workflow/offloading` auf der primären INstanz und aktivieren Sie es auf dem Worker, um sicherzustellen, dass der Auftrag dem Worker zugewiesen ist.
 
-### AEM-Abladung {#aem-offloading}
+### [!DNL Experience Manager] Abladung {#aem-offloading}
 
 Das Abladeframework identifiziert Aufträge zur Workflow-Abladung, die Worker-Instanzen zugewiesen sind, und transportiert diese physisch, einschließlich Nutzlast (etwa aufzunehmende Bilder), an Worker. 
 
@@ -50,7 +50,7 @@ Sobald ein Auftrag auf den Worker geschrieben wurde, ruft der Job Manager den Jo
 
 ## Sling-Topologie {#sling-topology}
 
-Die Sling-Topologie gruppiert AEM-Instanzen und ermöglicht deren gegenseitige Erkennung, und zwar unabhängig von der zugrundeliegenden Persistenz. Dank dieser Eigenschaft der Sling-Topologie können Sie Topologien für Nicht-Cluster-, Cluster- und Mischszenarien erstellen. Eine Instanz kann Eigenschaften gegenüber der gesamten Topologie offenlegen. Das Framework bietet Callbacks für das Listening auf Änderungen in der Topologie (Instanzen und Eigenschaften). Die Sling-Topologie bildet die Grundlage für Sling-verteilte Aufträge.
+Die Sling-Topologie gruppiert [!DNL Experience Manager]-Instanzen und ermöglicht es ihnen, sich gegenseitig zu kennen, unabhängig von der zugrunde liegenden Persistenz. Dank dieser Eigenschaft der Sling-Topologie können Sie Topologien für Nicht-Cluster-, Cluster- und Mischszenarien erstellen. Eine Instanz kann Eigenschaften gegenüber der gesamten Topologie offenlegen. Das Framework bietet Callbacks für das Listening auf Änderungen in der Topologie (Instanzen und Eigenschaften). Die Sling-Topologie bildet die Grundlage für Sling-verteilte Aufträge.
 
 ### Sling-verteilte Aufträge {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Wenn Sie zu dem Schluss kommen, dass die Assets-Abladung ein für Sie geeigneter
 
 ### Empfohlene Bereitstellung zur Assets-Abladung {#recommended-assets-offloading-deployment}
 
-Mit AEM und Oak sind verschiedene Bereitstellungszenarien möglich. Zur Assets-Abladung wird eine TarMK-basierte Bereitstellung mit freigegebenem Datenspeicher empfohlen. Die folgende Grafik zeigt die empfohlene Bereitstellung:
+Bei [!DNL Experience Manager] und Oak gibt es mehrere Bereitstellungsszenarien. Zur Assets-Abladung wird eine TarMK-basierte Bereitstellung mit freigegebenem Datenspeicher empfohlen. Die folgende Grafik zeigt die empfohlene Bereitstellung:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

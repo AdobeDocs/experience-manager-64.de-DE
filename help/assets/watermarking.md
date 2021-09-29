@@ -2,12 +2,12 @@
 title: Hinzufügen von Wasserzeichen zu digitalen Assets
 description: Erfahren Sie, wie Sie die Funktion verwenden können, um Assets digitale Wasserzeichen hinzuzufügen.
 contentOwner: AG
-feature: Asset-Management
+feature: Asset Management
 role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '319'
 ht-degree: 36%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 36%
 
 [!DNL Adobe Experience Manager Assets] ermöglicht das Hinzufügen eines digitalen Wasserzeichens zu Assets, mit dem Benutzer die Authentizität und das Urheberrecht der Assets überprüfen können. [!DNL Experience Manager Assets] unterstützt die Verwendung von Text als Wasserzeichen auf PNG- und JPEG-Dateien.
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Bildern ein digitales Wasserzeichen hinzufügen, mit dem Benutzer die Authentizität und das Urheberrecht der Assets überprüfen können. AEM Assets unterstützt die Verwendung von Text als Wasserzeichen auf PNG- und JPEG-Dateien.
+Mit Adobe Experience Manager Assets können Sie Bildern ein digitales Wasserzeichen hinzufügen, mit dem Benutzer die Authentizität und das Urheberrecht der Assets überprüfen können. [!DNL Experience Manager] Assets unterstützt die Verwendung von Text als Wasserzeichen auf PNG- und JPEG-Dateien.
 
 Um Wasserzeichen auf Assets anwenden zu können, fügen Sie den Schritt &quot;Wasserzeichen&quot;im Workflow [!UICONTROL DAM-Update-Asset] hinzu.
 
@@ -37,9 +37,9 @@ Um Wasserzeichen auf Assets anwenden zu können, fügen Sie den Schritt &quot;Wa
    ![Bereitstellen der Argumente im Schritt „Wasserzeichen hinzufügen“ in Assets](assets/arguments_add_watermark_aem_assets.png)
 
 1. Speichern Sie den Workflow **[!UICONTROL DAM-Update-Asset]** mit dem Schritt „Wasserzeichen“.
-1. Laden Sie in der AEM-Benutzeroberfläche ein Beispiel-Asset hoch. Das Wasserzeichen wird mit der Schriftgröße, Farbe usw. an der Position angezeigt, die Sie in den oben genannten Schritten konfiguriert haben.
+1. Laden Sie in der Benutzeroberfläche [!DNL Experience Manager] ein Beispiel-Asset hoch. Das Wasserzeichen wird mit der Schriftgröße, Farbe usw. an der Position angezeigt, die Sie in den oben genannten Schritten konfiguriert haben.
 
-Wenn Sie PDF-Dokumente programmatisch oder mit dynamischen Informationen mit Wasserzeichen versehen möchten, sollten Sie das Angebot [AEM Document Services](/help/forms/using/overview-aem-document-services.md) in Erwägung ziehen.
+Wenn Sie PDF-Dokumente programmatisch oder mit dynamischen Informationen mit Wasserzeichen versehen möchten, sollten Sie das Angebot [[!DNL Experience Manager] Document Services](/help/forms/using/overview-aem-document-services.md) in Erwägung ziehen.
 
 ## Tipps und Einschränkungen {#tips-limitations}
 

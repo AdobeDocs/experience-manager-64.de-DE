@@ -1,28 +1,28 @@
 ---
 title: Verbesserungen beim Benutzererlebnis von Assets
-description: In diesem Artikel werden die Verbesserungen beim Benutzererlebnis von AEM 6.4 Assets beschrieben.
+description: In diesem Artikel werden die Verbesserungen beim Benutzererlebnis in  [!DNL Experience Manager] 6.4 Assets beschrieben.
 contentOwner: AG
-feature: Versionshinweise
+feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 79%
+source-wordcount: '641'
+ht-degree: 75%
 
 ---
 
 # Verbesserungen beim Benutzererlebnis von Assets {#user-experience-enhancements-in-assets}
 
-AEM 6.4 Assets umfasst verschiedene Verbesserungen der Benutzerfreundlichkeit, die ein nahtloses Benutzererlebnis bieten und die Produktivität steigern. Das beschleunigte Erstellen und Verwalten Ihres Go-to-Market-Inhalts verbessert die Content Velocity in Ihrem Unternehmen.
+[!DNL Experience Manager] 6.4 Assets umfasst verschiedene Verbesserungen der Benutzerfreundlichkeit, die ein nahtloses Benutzererlebnis bieten und die Produktivität steigern. Das beschleunigte Erstellen und Verwalten Ihres Go-to-Market-Inhalts verbessert die Content Velocity in Ihrem Unternehmen.
 
 Die Benutzeroberfläche ist responsiver und hilft Ihnen, ein großes Asset-Portfolio effizient zu verwalten. Sie können schnell eine lange Liste von Elementen durchsuchen, anzeigen, sortieren und reibungslos darin scrollen.
 
-Sie können die verschiedenen Ansichten personalisieren – Karten-, Listen- und Spaltenansicht. Beispielsweise können Sie die Größe der Miniaturen konfigurieren, die in der Kartenansicht angezeigt werden sollen. In der Listenansicht können Sie konfigurieren, wie detailgenau die Assets in der Liste angezeigt werden sollen. AEM 6.4 Assets enthält eine neue Baumansicht, mit der Sie einfach durch das Asset-Repository navigieren und Ihre Assets finden können.
+Sie können die verschiedenen Ansichten personalisieren – Karten-, Listen- und Spaltenansicht. Beispielsweise können Sie die Größe der Miniaturen konfigurieren, die in der Kartenansicht angezeigt werden sollen. In der Listenansicht können Sie konfigurieren, wie detailgenau die Assets in der Liste angezeigt werden sollen. [!DNL Experience Manager] 6.4 Assets enthält eine neue Baumansicht, mit der Sie einfach durch das Asset-Repository navigieren und Ihre Assets finden können.
 
 ## Lazy Loading (langsames Laden) {#lazy-loading}
 
-Wenn Sie in AEM 6.4 Assets nach Assets suchen bzw. die Assets durchsuchen, werden gleichzeitig bis zu 200 Assets angezeigt. Sie können schneller durch die Ergebnisse scrollen. Das ist besonders hilfreich, wenn Sie eine lange Liste von Ergebnissen durchsuchen. Da eine bedeutende Menge von Assets gleichzeitig geladen wird, verläuft das Durchsuchen reibungsloser.
+Wenn Sie Assets in [!DNL Experience Manager] 6.4 Assets durchsuchen/suchen, werden bis zu 200 Assets gleichzeitig angezeigt. Sie können schneller durch die Ergebnisse scrollen. Das ist besonders hilfreich, wenn Sie eine lange Liste von Ergebnissen durchsuchen. Da eine bedeutende Menge von Assets gleichzeitig geladen wird, verläuft das Durchsuchen reibungsloser.
 
 Wenn Sie auf ein Asset tippen/klicken, um die Detailseite dafür anzuzeigen, können Sie zur Ergebnisseite zurückkehren, indem Sie in der Symbolleiste einfach auf die Schaltfläche „Zurück“ tippen/klicken.
 
@@ -66,7 +66,7 @@ Zusätzlich zur Karten- und Listenansicht können Sie jetzt über die Spaltenans
 
 ## Baumansicht {#tree-view}
 
-AEM 6.4 Assets enthält eine Baumansicht, mit der Sie schnell und einfach Ihre Asset-Hierarchie durchsuchen und zum gewünschten Asset oder Ordner navigieren können.
+[!DNL Experience Manager] 6.4 Assets enthält eine Baumansicht, mit der Sie schnell und einfach Ihre Asset-Hierarchie durchsuchen und zum gewünschten Asset oder Ordner navigieren können.
 
 Um die Baumansicht zu öffnen, tippen/klicken Sie auf das GlobalNav-Symbol in `Assets UI` und wählen Sie **[!UICONTROL Inhaltsstruktur]** aus dem Menü aus.
 

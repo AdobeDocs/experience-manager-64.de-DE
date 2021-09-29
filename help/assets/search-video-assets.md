@@ -1,14 +1,14 @@
 ---
 title: Suchen nach Video-Assets
-description: Verwenden Sie Keywords und Dateieigenschaften, wie z. B. MIME-Typ, Größe oder aktuelle Zeitstempel, um schnell die richtige Datei in AEM Assets zu finden.
+description: Verwenden Sie Suchbegriffe, Dateieigenschaften wie MIME-Typ, Größe oder kürzlich geänderten Zeitstempel, um Ihre Datei schnell in [!DNL Experience Manager] Assets zu finden.
 contentOwner: AG
 feature: Video,Search
 role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 68%
+source-wordcount: '577'
+ht-degree: 62%
 
 ---
 
@@ -32,7 +32,7 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 | Videohöhe | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Videobreite | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Videoformat | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value wird in den Metadaten des Quellvideos und allen Ausgabeformaten gespeichert. |
-| Video-Codec | x264Der Wert wird nur in den Metadaten der Videoausgabeformate gespeichert. |
+| Video-Codec | x264.Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Video-Bitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Audio-Codec | Libvorbis, Lame Mp3, AAC Encoding.Value wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Audiobitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |

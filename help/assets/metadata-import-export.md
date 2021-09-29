@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 75%
+source-wordcount: '638'
+ht-degree: 72%
 
 ---
 
 # Massenimport und -export von Metadaten {#bulk-metadata-import-and-export}
 
-Mit AEM Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
+[!DNL Experience Manager]Mit  Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
 ## Importieren von Metadaten {#import-metadata}
 
@@ -56,7 +56,7 @@ Einige Anwendungsfälle für den Massenexport von Metadaten:
 * Testen oder prüfen Sie die Metadaten auf Ihre Konformität.
 * Externalisieren Sie die Metadaten für eine separate Lokalisierung.
 
-Sie können Metadaten für mehrere Assets in einem CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. Wenn Sie Metadaten exportieren, durchsucht AEM die Eigenschaften des Asset-Knotens `jcr:content/metadata` und der untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
+Sie können Metadaten für mehrere Assets in einem CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. Um Metadaten zu exportieren, durchsucht [!DNL Experience Manager] die Eigenschaften des Asset-Knotens `jcr:content/metadata` und seiner untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
 
 Gehen Sie wie folgt vor, um Metadaten mehrerer Assets stapelweise zu exportieren:
 

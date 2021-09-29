@@ -2,13 +2,13 @@
 title: XMP-Writeback in Ausgabedarstellungen
 description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
 contentOwner: AG
-feature: 'Metadaten  '
+feature: Metadata
 role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 65%
+source-wordcount: '775'
+ht-degree: 61%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 65%
 
 Die XMP-Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert Änderungen von Metadaten in den Ausgabedarstellungen des Original-Assets. Wenn Sie die Metadaten für ein Asset in Assets ändern oder das Asset hochladen, werden die Änderungen zunächst im Metadatenknoten in der Asset-Hierarchie gespeichert.
 
-Mit der XMP-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namespace `jcr` verwenden, d. h. eine Eigenschaft mit dem Namen `dc:title` wird zurückgeschrieben, eine Eigenschaft mit dem Namen `mytitle` jedoch nicht.
+Mit der XMP-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namespace `jcr` verwenden, d. h. eine Eigenschaft namens `dc:title` wird zurückgeschrieben, eine Eigenschaft namens `mytitle` jedoch nicht.
 
 Stellen Sie sich vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
 ![Metadaten](assets/metadata.png)
 
-In diesem Fall speichert AEM Assets die Änderungen an der Eigenschaft **[!UICONTROL Titel]** im Parameter `dc:title` der in der Elementhierarchie gespeicherten Asset-Metadaten.
+In diesem Fall speichert [!DNL Experience Manager] Assets die Änderungen an der Eigenschaft **[!UICONTROL Titel]** im Parameter `dc:title` für die in der Asset-Hierarchie gespeicherten Asset-Metadaten.
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -67,13 +67,13 @@ Die Metadatenänderungen werden in die Ausgabeformate `thumbnail.140.100.png` un
 
 [!DNL Experience Manager Assets] unterstützt sowohl die Blockierungsliste- als auch die Zulassungsliste-Filterung von Eigenschaften/Knoten für XMP Metadaten, die aus Asset-Binärdateien gelesen und in JCR gespeichert werden, wenn Assets erfasst werden.
 
-Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn durch das Filtern mit einer Blockierungsliste eine große Anzahl von Assets mit vielen XMP-Metadaten importiert werden kann, kann es zu Stabilitätsproblemen bei AEM-Instanz oder -Cluster kommen, zum Beispiel zu blockierten Beobachtungswarteschlangen.
+Bei der Filterung über eine Blockierungsliste können Sie alle XMP-Metadateneigenschaften importieren – mit Ausnahme der Eigenschaften, für die ein Ausschluss angegeben ist. Jedoch ist der Name der zu filternden Knoten für Elementtypen wie INDD-Dateien mit enormen Mengen an XMP-Metadaten (z. B. 1.000 Knoten mit 10.000 Eigenschaften) nicht immer bereits im Voraus bekannt. Wenn beim Filtern mit einer Blockierungsliste eine große Anzahl von Assets mit zahlreichen XMP-Metadaten importiert werden kann, kann es bei der [!DNL Experience Manager]-Instanz oder dem Cluster zu Stabilitätsproblemen kommen, z. B. zu blockierten Beobachtungswarteschlangen.
 
 Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem behoben, indem Sie die zu importierenden XMP-Eigenschaften definieren können. Auf diese Weise werden andere/unbekannte XMP-Eigenschaften ignoriert. Aus Gründen der Abwärtskompatibilität können Sie einige dieser Eigenschaften dem Filter hinzufügen, der eine Blockierungsliste verwendet.
 
 >[!NOTE]
 >
->Die Filterung funktioniert nur für aus XMP-Quellen in Asset-Binärdateien abgeleitete Eigenschaften. Bei Eigenschaften, die aus XMP-fremden Quellen wie EXIF- und IPTC-Formaten abgeleitet wurden, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. AEM speichert diesen Wert im Metadatenfeld `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
+>Die Filterung funktioniert nur für aus XMP-Quellen in Asset-Binärdateien abgeleitete Eigenschaften. Bei Eigenschaften, die aus XMP-fremden Quellen wie EXIF- und IPTC-Formaten abgeleitet wurden, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. [!DNL Experience Manager] speichert diesen Wert im Metadatenfeld  `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
 
 1. Öffnen Sie Configuration Manager über `https://[aem_server]:[port]/system/console/configMgr`.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.

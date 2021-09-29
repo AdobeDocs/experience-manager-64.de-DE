@@ -3,13 +3,13 @@ title: Wiederverwenden von Assets mit MSM
 description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus übergeordneten Assets abgeleitet und mit diesen verknüpft sind. Die Assets bleiben mit einer Primärkopie synchronisiert und erhalten mit wenigen Klicks die Aktualisierungen von übergeordneten Assets.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset-Management, Multi-Site-Manager
+feature: Asset Management,Multi Site Manager
 role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 79%
+source-wordcount: '3159'
+ht-degree: 76%
 
 ---
 
@@ -64,7 +64,7 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 Führen Sie einen der folgenden Schritte aus, um eine Live Copy aus einem oder mehreren Quell-Assets oder -Ordnern zu erstellen:
 
 * **Methode 1**: Wählen Sie die Quell-Assets aus und klicken Sie oben in der Symbolleiste auf  **[!UICONTROL Erstellen]**  >  **[!UICONTROL Live]** Copy .
-* **** Methode 2: Klicken Sie oben rechts in der AEM-Benutzeroberfläche auf **[!UICONTROL Erstellen > Live Copy]**.
+* **Methode 2**: Klicken Sie in der  [!DNL Experience Manager] Benutzeroberfläche oben rechts auf der Benutzeroberfläche auf  **[!UICONTROL Erstellen > Live]** Copy .
 
 Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copies erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist.
 
@@ -73,15 +73,15 @@ Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie v
 Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu erstellen:
 
 1. Wählen Sie Quell-Assets oder -ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen > Live Copy]**.
-   ![Erstellen einer Live Copy über die AEM-Oberfläche](assets/lc_create1.png)
+   ![Erstellen einer Live Copy über die  [!DNL Experience Manager] Benutzeroberfläche](assets/lc_create1.png)
 1. Wählen Sie Quell-Asset oder -ordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Titel und Namen an. Assets haben keine untergeordneten Elemente. Wenn Sie eine Live Copy von Ordnern erstellen, können Sie die untergeordneten Elemente ein- oder ausschließen.
 1. Wählen Sie eine Rollout-Konfiguration aus. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
 Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu erstellen:
 
-1. Klicken Sie oben rechts in der AEM-Oberfläche auf **[!UICONTROL Erstellen > Live Copy]**.
-   ![Erstellen einer Live Copy über die AEM-Oberfläche](assets/lc_create2.png)
+1. Klicken Sie in der [!DNL Experience Manager]-Benutzeroberfläche oben rechts auf **[!UICONTROL Erstellen > Live Copy]**.
+   ![Erstellen einer Live Copy über die  [!DNL Experience Manager] Benutzeroberfläche](assets/lc_create2.png)
 1. Wählen Sie Quell-Asset oder -ordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Wählen Sie einen Zielordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Titel und Namen an. Assets haben keine untergeordneten Elemente. Wenn Sie eine Live Copy von Ordnern erstellen, können Sie die untergeordneten Elemente ein- oder ausschließen.
@@ -93,7 +93,7 @@ Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu er
 
 ## Anzeigen verschiedener Eigenschaften und Status von Quelle und Live Copy {#view-properties-statuses-source-and-lc}
 
-Sie können Informationen und MSM-bezogene Status der Live Copy wie Beziehung, Synchronisierung, Rollouts usw. in verschiedenen Bereichen der AEM-Benutzeroberfläche anzeigen. Die folgenden beiden Methoden funktionieren für Assets und Ordner:
+Sie können die Informationen und MSM-bezogenen Status von Live Copies wie Beziehung, Synchronisierung, Rollouts und mehr aus den verschiedenen Bereichen der [!DNL Experience Manager]-Benutzeroberfläche anzeigen. Die folgenden beiden Methoden funktionieren für Assets und Ordner:
 
 * Wählen Sie ein Live Copy-Asset aus und suchen Sie die Informationen auf seiner Seite **[!UICONTROL Eigenschaften]** .
 * Wählen Sie den Quellordner aus und suchen Sie die detaillierten Informationen zu den einzelnen Live Copies über die **[!UICONTROL Live Copy-Konsole]**.
@@ -220,7 +220,7 @@ Sie können alle lokalen Änderungen rückgängig machen und das Asset auf den S
 
 ## Entfernen von Live-Beziehungen   {#remove-live-relationship}
 
-Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trennen“ vollständig entfernen. Nach dem Trennen wird die Live Copy zu einem eigenständigen Asset oder Ordner. Sie wird unmittelbar nach dem Trennen als neues Asset in der AEM-Oberfläche angezeigt. Führen Sie die folgenden Schritte aus, um eine Live Copy von ihrer Quelle zu trennen.
+Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trennen“ vollständig entfernen. Nach dem Trennen wird die Live Copy zu einem eigenständigen Asset oder Ordner. Sie wird unmittelbar nach dem Trennen in der [!DNL Experience Manager]-Benutzeroberfläche als neues Asset angezeigt. Führen Sie die folgenden Schritte aus, um eine Live Copy von ihrer Quelle zu trennen.
 
 1. Wählen Sie ein Live Copy-Asset oder einen Ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]** Sie können auch den Tastaturbefehl `p` verwenden.
 1. Klicken Sie auf **[!UICONTROL Live Copy]**. Klicken Sie in der Symbolleiste auf **[!UICONTROL Trennen]**. Klicken Sie im angezeigten Dialogfeld auf **[!UICONTROL Trennen]**.
@@ -243,7 +243,7 @@ Wenn mehrere Assets in einem Live Copy-Ordner vorhanden sind, kann das Initiier
 
 ## Erweitern von MSM für Assets {#extend-msm-for-assets}
 
-AEM ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern. Bei MSM für Assets funktioniert die Erweiterung genauso wie bei MSM für Sites. Weitere Details finden Sie unter [Erweitern von MSM](../sites-developing/extending-msm.md) sowie Informationen zu bestimmten Aufgaben in den folgenden Abschnitten:
+[!DNL Experience Manager] ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern. Bei MSM für Assets funktioniert die Erweiterung genauso wie bei MSM für Sites. Weitere Details finden Sie unter [Erweitern von MSM](../sites-developing/extending-msm.md) sowie Informationen zu bestimmten Aufgaben in den folgenden Abschnitten:
 
 * [Übersicht über APIs](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Erstellen einer neuen Aktion „Synchronisieren“](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -259,7 +259,7 @@ AEM ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern.
 
 ## Auswirkungen von Asset-Management-Aufgaben auf Live Copies {#impact-of-asset-management-tasks-on-live-copies}
 
-Live Copies und Quellen sind Assets oder Ordner, die in gewissem Umfang als digitale Assets verwaltet werden können. Einige Asset-Management-Aufgaben in AEM haben eine spezifische Auswirkung auf Live Copies.
+Live Copies und Quellen sind Assets oder Ordner, die in gewissem Umfang als digitale Assets verwaltet werden können. Einige Asset-Management-Aufgaben in [!DNL Experience Manager] wirken sich spezifisch auf die Live Copies aus.
 
 * Beim Kopieren einer Live Copy wird ein Live Copy-Asset mit derselben Quelle wie bei der ersten Live Copy erstellt.
 * Wenn Sie eine Quelle oder eine Live Copy verschieben, wird die Live-Beziehung beibehalten.
@@ -284,4 +284,4 @@ Im Folgenden finden Sie die Einschränkungen bei MSM für Assets.
 
 * Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie versuchen, deren Live Copies zu erstellen, werden die Inhaltsfragmente wie vorliegend und ohne Beziehung kopiert. Die kopierten Inhaltsfragmente sind eine Momentaufnahme und werden nicht zusammen mit den ursprünglichen Inhaltsfragmenten aktualisiert.
 
-* MSM funktioniert nicht mit aktiviertem Metadaten-Writeback. Beim Zurückschreiben bricht die Vererbung.
+* MSM funktioniert nicht mit aktiviertem Metadaten-Writeback. Beim Zurückschreiben wird die Vererbung unterbrochen.

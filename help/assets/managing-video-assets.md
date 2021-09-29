@@ -8,20 +8,20 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 51%
+source-wordcount: '787'
+ht-degree: 48%
 
 ---
 
 # Verwalten von Video-Assets    {#managing-video-assets}
 
-Lernen Sie, wie Sie die Video-Assets in Adobe Experience Manager (AEM) Assets verwalten und bearbeiten. Wenn Sie eine Lizenz für die Nutzung von Dynamic Media besitzen, sehen Sie sich die [Dynamic Media-Videodokumentation](video.md) an.
+Erfahren Sie, wie Sie die Video-Assets in Adobe Experience Manager Assets verwalten und bearbeiten. Wenn Sie eine Lizenz für die Nutzung von Dynamic Media besitzen, sehen Sie sich die [Dynamic Media-Videodokumentation](video.md) an.
 
 ## Hochladen und Anzeigen der Vorschau von Video-Assets {#uploading-and-previewing-video-assets}
 
-AEM Assets generiert eine Vorschau für Video-Assets mit der Erweiterung MP4. Wenn das Format des Assets nicht MP4 ist, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videoausgabeformate vom Typ OGG und MP4. Sie können eine Vorschau dieser Wiedergaben in der Benutzeroberfläche von AEM Assets anzeigen.
+[!DNL Experience Manager] Assets generiert eine Vorschau für Video-Assets mit der Erweiterung MP4. Wenn das Format des Assets nicht MP4 ist, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videoausgabeformate vom Typ OGG und MP4. Sie können diese Ausgabeformate in der Benutzeroberfläche [!DNL Experience Manager] Assets in der Vorschau anzeigen.
 
 1. Navigieren Sie im Ordner &quot;Digitale Assets&quot;oder in den Unterordnern zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. Um Assets hochzuladen, klicken oder tippen Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Dateien]** aus. Alternativ können Sie sie direkt in den Assets-Bereich ziehen. Weitere Informationen zum Hochladen finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
@@ -39,16 +39,16 @@ AEM Assets generiert eine Vorschau für Video-Assets mit der Erweiterung MP4. We
 
 ## Konfiguration zum Hochladen von Assets, die größer als 2 GB sind {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-Standardmäßig gestattet der AEM Assets das Hochladen von Assets, die aufgrund einer Dateigrößenbeschränkung größer als 2 GB sind. Sie können diese Beschränkung aber umgehen, indem Sie CRXDE Lite aufrufen und im Verzeichnis `/apps` einen Knoten erstellen. Der Knoten muss denselben Knotennamen, dieselbe Verzeichnisstruktur und vergleichbare Knoteneigenschaften im Hinblick auf die Reihenfolge aufweisen.
+Standardmäßig können Sie mit [!DNL Experience Manager] Assets keine Assets hochladen, die aufgrund einer Dateigrößenbeschränkung größer als 2 GB sind. Sie können diese Beschränkung aber umgehen, indem Sie CRXDE Lite aufrufen und im Verzeichnis `/apps` einen Knoten erstellen. Der Knoten muss denselben Knotennamen, dieselbe Verzeichnisstruktur und vergleichbare Knoteneigenschaften im Hinblick auf die Reihenfolge aufweisen.
 
-Ändern Sie zusätzlich zur AEM Assets-Konfiguration die folgenden Konfigurationen, um große Assets hochzuladen:
+Ändern Sie zusätzlich zur Konfiguration [!DNL Experience Manager] Assets die folgenden Konfigurationen, um große Assets hochzuladen:
 
 * Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in der Web-Konsole unter `https://[aem_server]:[port]/system/console/configMgr`. Weitere Informationen finden Sie unter [CSRF-Schutz](/help/sites-developing/csrf-protection.md).
 * Erhöhen Sie `receiveTimeout` in der Dispatcher-Konfiguration. Weitere Informationen finden Sie unter [Experience Manager Dispatcher-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
 
 >[!NOTE]
 >
->Die AEM Classic-Benutzeroberfläche hat keine Dateigrößenbeschränkung von zwei Gigabyte. Außerdem werden End-to-End-Workflows für große Videos nicht vollständig unterstützt.
+>Die klassische Benutzeroberfläche [!DNL Experience Manager] hat keine Dateigrößenbeschränkung von zwei Gigabyte. Außerdem werden End-to-End-Workflows für große Videos nicht vollständig unterstützt.
 
 Um eine höhere Dateigrößenbeschränkung zu konfigurieren, führen Sie die folgenden Schritte im Verzeichnis `/apps` aus.
 

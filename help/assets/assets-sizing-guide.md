@@ -1,31 +1,31 @@
 ---
 title: Handbuch zur Assets-Dimensionierung
-description: 'Best Practices zur Bestimmung effizienter Metriken zur Abschätzung der für die Bereitstellung von AEM Assets erforderlichen Infrastruktur und Ressourcen. '
+description: 'Best Practices zur Bestimmung effizienter Metriken zur Schätzung der Infrastruktur und der Ressourcen, die für die Bereitstellung von [!DNL Experience Manager] Assets erforderlich sind. '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
-feature: Asset-Management
+feature: Asset Management
 role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1860'
-ht-degree: 88%
+source-wordcount: '1840'
+ht-degree: 75%
 
 ---
 
 # Handbuch zur Assets-Dimensionierung {#assets-sizing-guide}
 
-Beim Dimensionieren der Umgebung für eine Adobe Experience Manager (AEM) Assets-Implementierung gilt es sicherzustellen, dass hinsichtlich Festplatte, CPU, Arbeitsspeicher, I/O und Netzwerkdurchsatz genügend Ressourcen verfügbar sind. Zur Dimensionierung dieser Ressourcen muss bekannt sein, wie viele Assets in das System geladen werden. Wenn keine bessere Metrik verfügbar ist, können Sie die Größe der vorhandenen Bibliothek durch das Alter der Bibliothek dividieren, um die Rate zu ermitteln, mit der Assets erstellt werden.
+Bei der Dimensionierung der Umgebung für eine Adobe Experience Manager Assets-Implementierung ist es wichtig sicherzustellen, dass ausreichend Ressourcen zur Verfügung stehen, d. h. Festplatten-, CPU-, Speicher-, I/O- und Netzwerkdurchsatz. Zur Dimensionierung dieser Ressourcen muss bekannt sein, wie viele Assets in das System geladen werden. Wenn keine bessere Metrik verfügbar ist, können Sie die Größe der vorhandenen Bibliothek durch das Alter der Bibliothek dividieren, um die Rate zu ermitteln, mit der Assets erstellt werden.
 
 ## Festplatte {#disk}
 
 ### Datenspeicher {#datastore}
 
-Ein häufiger Fehler bei der Dimensionierung des erforderlichen Festplattenspeichers für eine Assets-Implementierung besteht darin, die Berechnungen auf der Größe der in das System aufzunehmenden Rohbilder basieren zu lassen. Standardmäßig erstellt AEM zum Rendering der AEM-Benutzeroberflächenelemente drei Wiedergaben zusätzlich zum Originalbild. In vorherigen Implementierungen haben sich diese Wiedergaben als doppelt so groß wie die aufgenommenen Assets herausgestellt. 
+Ein häufiger Fehler bei der Dimensionierung des erforderlichen Festplattenspeichers für eine Assets-Implementierung besteht darin, die Berechnungen auf der Größe der in das System aufzunehmenden Rohbilder basieren zu lassen. Standardmäßig erstellt [!DNL Experience Manager] drei Ausgabedarstellungen zusätzlich zum Originalbild für das Rendern der Elemente der Benutzeroberfläche [!DNL Experience Manager]. In vorherigen Implementierungen haben sich diese Wiedergaben als doppelt so groß wie die aufgenommenen Assets herausgestellt. 
 
-Die meisten Benutzer definieren benutzerdefinierte Wiedergaben neben den standardmäßig verfügbaren Wiedergaben. Zusätzlich zu den Wiedergaben können Sie mit AEM Assets Unter-Assets aus gängigen Dateitypen wie InDesign und Illustrator extrahieren.
+Die meisten Benutzer definieren benutzerdefinierte Wiedergaben neben den standardmäßig verfügbaren Wiedergaben. Zusätzlich zu den Ausgabeformaten können Sie mit Assets Unter-Assets aus gängigen Dateitypen wie InDesign und Illustrator extrahieren.
 
 Schließlich sorgen die AEM-Versionierungsfunktionen dafür, dass Duplikate der Assets im Versionsverlauf gespeichert werden. Sie können die Versionen so konfigurieren, dass Bereinigungen häufig durchgeführt werden. Jedoch entscheiden sich viele Benutzer für eine längere Aufbewahrung der Versionen im System, wodurch zusätzlicher Speicherplatz belegt wird.
 
@@ -34,11 +34,11 @@ Angesichts dieser Faktoren benötigen Sie eine Methodik für eine ausreichend ge
 1. Bestimmen Sie die Größe und die Anzahl der Assets, die in das System geladen werden.
 1. Beschaffen Sie sich eine repräsentative Stichprobe der Assets, die in AEM hochgeladen werden sollen. Wenn Sie beispielsweise PSD-, JPG-, AI- und PDF-Dateien in das System laden möchten, benötigen Sie mehrere Beispielbilder für jedes Dateiformat. Außerdem sollten diese Stichproben repräsentativ für die verschiedenen Dateigrößen und die Komplexität der Bilder sein.
 1. Definieren Sie die zu verwendenden Wiedergaben.
-1. Erstellen Sie die Wiedergaben in AEM mit ImageMagick oder den Creative Cloud-Anwendungen von Adobe. Erstellen Sie neben den von den Benutzern angegebenen Wiedergaben sofort einsetzbare Standardwiedergaben. Für Benutzer, die Dynamic Media Classic implementieren, können Sie die IC-Binärdatei verwenden, um die PTIFF-Ausgabeformate zu generieren, die in AEM gespeichert werden sollen.
+1. Erstellen Sie die Ausgabedarstellungen in [!DNL Experience Manager] mithilfe von ImageMagick oder den Creative Cloud-Programmen der Adobe. Erstellen Sie neben den von den Benutzern angegebenen Wiedergaben sofort einsetzbare Standardwiedergaben. Für Benutzer, die Dynamic Media Classic implementieren, können Sie die IC-Binärdatei verwenden, um die PTIFF-Ausgabeformate zu generieren, die in AEM gespeichert werden sollen.
 1. Wenn Sie die Verwendung von Unter-Assets beabsichtigen, generieren Sie diese für die entsprechenden Dateitypen. Informationen zum Generieren von Unter-Asset-Seiten aus InDesign-Dateien oder PNG-/PDF-Dateien aus Illustrator-Ebenen finden Sie in der entsprechenden Onlinedokumentation.
 1. Vergleichen Sie die Größe der Ausgabebilder, Wiedergaben und Unter-Assets mit den Originalbildern. So können Sie den erwarteten Wachstumsfaktor beim Laden des Systems generieren. Wenn Sie z. B. Wiedergaben und Unter-Assets mit einer kombinierten Größe von 3 GB nach der Verarbeitung von 1 GB an Assets erzeugen, lautet der Wiedergabe-Wachstumsfaktor 3.
 1. Ermitteln Sie, wie lange die einzelnen Asset-Versionen maximal im System aufbewahrt werden sollen.
-1. Ermitteln Sie, wie oft vorhandene Assets im System geändert werden. Wenn AEM als Collaboration-Hub in kreativen Workflows dient, gibt es viele Änderungen. Wenn nur fertiggestellte Assets in das System hochgeladen werden, ist diese Zahl wesentlich niedriger.
+1. Ermitteln Sie, wie oft vorhandene Assets im System geändert werden. Wenn [!DNL Experience Manager] als Knotenpunkt für die Zusammenarbeit in kreativen Workflows verwendet wird, ist die Anzahl der Änderungen hoch. Wenn nur fertiggestellte Assets in das System hochgeladen werden, ist diese Zahl wesentlich niedriger.
 1. Ermitteln Sie, wie viele Assets jeden Monat in das System geladen werden. Wenn Sie sich nicht sicher sind, bestimmen Sie die Anzahl der aktuell verfügbaren Assets und dividieren Sie diese Zahl durch das Alter des ältesten Assets, um einen ungefähren Wert zu berechnen. 
 
 Mit den Schritten 1–9 können Sie Folgendes ermitteln:
@@ -51,7 +51,7 @@ Mit den Schritten 1–9 können Sie Folgendes ermitteln:
 * Anzahl der neu geladenen Assets pro Monat
 * Wachstumsjahre, für die Speicher reserviert werden muss
 
-Sie können diese Zahlen in der Tabelle zur Netzwerkdimensionierung angeben, um den Gesamtspeicherbedarf für den Datenspeicher zu ermitteln. Zudem lässt sich so nützlicherweise feststellen, wie sich die Aufbewahrung von Asset-Versionen oder die Änderung von Assets in AEM auf das Festplattenwachstum auswirkt. 
+Sie können diese Zahlen in der Tabelle zur Netzwerkdimensionierung angeben, um den Gesamtspeicherbedarf für den Datenspeicher zu ermitteln. Es ist auch ein nützliches Tool, um die Auswirkungen der Pflege von Asset-Versionen oder der Änderung von Assets in [!DNL Experience Manager] auf das Festplattenwachstum zu ermitteln.
 
 Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung der genannten Schritte ist. Wenn Sie den Datenspeicher allein basierend auf dem Ladevorgang der Rohbilder (1 TB) bemessen, ist eine Unterbewertung der Repositorygröße um dem Faktor 15 möglich.
 
@@ -106,11 +106,11 @@ Verwenden Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level gr�
 
 ## Netzwerk {#network}
 
-Für AEM Assets gibt es eine Reihe von Anwendungsbeispielen, in denen die Netzwerkleistung eine größere Bedeutung hat als bei vielen anderen unserer AEM-Projekte. Ein Kunde kann über einen schnellen Server verfügen. Wenn die Netzwerkverbindung jedoch nicht groß genug ist, um die Last der Benutzer zu unterstützen, die Assets vom System hochladen und herunterladen, scheint sie dennoch langsam zu sein. Es gibt eine gute Methode, um den Engpass in der Netzwerkverbindung eines Benutzers zu AEM unter [AEM Asset-Überlegungen für Benutzererlebnisse, Instanzgröße, Workflow-Auswertung und Netzwerktopologie](assets-network-considerations.md) zu bestimmen.
+[!DNL Assets] verfügt über eine Reihe von Anwendungsfällen, die die Netzwerkleistung wichtiger machen als bei vielen unserer  [!DNL Experience Manager] Projekte. Ein Kunde kann über einen schnellen Server verfügen. Wenn die Netzwerkverbindung jedoch nicht groß genug ist, um die Last der Benutzer zu unterstützen, die Assets vom System hochladen und herunterladen, scheint sie dennoch langsam zu sein. Es gibt eine gute Methode zur Bestimmung des Schlupfpunkts in der Netzwerkverbindung eines Benutzers zu [!DNL Experience Manager] unter [[!DNL Experience Manager]  Asset-Überlegungen für Benutzererlebnisse, Instanzgrößen, Workflow-Auswertung und Netzwerktopologie](assets-network-considerations.md).
 
 ## WebDAV {#webdav}
 
-Wird dazu noch die AEM Desktop App genutzt, verschärfen sich die Netzwerkprobleme aufgrund von Ineffizienzen im WebDAV-Protokoll weiter.
+Wenn Sie das [!DNL Experience Manager]-Desktop-Programm zum Mix hinzufügen, treten Netzwerkprobleme aufgrund von Ineffizienzen im WebDAV-Protokoll auf.
 
 Um diese Ineffizienzen zu verdeutlichen, hat Adobe die Systemleistung mit WebDAV unter OS X getestet. Ein 3,5 MB große InDesign-Datei wurde geöffnet, bearbeitet und mit Änderungen gespeichert. Folgendes wurde beobachtet:
 
@@ -122,7 +122,7 @@ Um diese Ineffizienzen zu verdeutlichen, hat Adobe die Systemleistung mit WebDAV
 
 Beim Analysieren der durchschnittlichen Speicherzeit für Dateien über WebDAV wurde eine deutliche Leistungszunahme festgestellt, als sich die Brandbreite auf 5–10 MBit/s erhöht hatte. Daher empfiehlt Adobe, dass alle Benutzer, die gleichzeitig auf das System zugreifen, mindestens über eine Uploadgeschwindigkeit von 10 MBit/s und eine Bandbreite von 5–10 MBit/s verfügen sollten.
 
-Weitere Informationen finden Sie unter [Fehlerbehebung AEM Desktop-Programms](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-companion-app.html).
+Weitere Informationen finden Sie unter [Fehlerbehebung [!DNL Experience Manager] Desktop-Programm](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-companion-app.html).
 
 ## Beschränkungen {#limitations}
 
@@ -142,8 +142,8 @@ Die maximale Anzahl von Dateien in einem Datenspeicher kann sich aufgrund von Da
 
 Wurden die Wiedergaben nicht korrekt generiert, verwenden Sie die Camera Raw-Bibliothek. In diesem Fall sollte jedoch die längste Bildseite nicht größer sein als 65.000 Pixel. Außerdem sollte das Bild nicht mehr als 512 MP (512 &amp;ast) enthalten. 1024 &amp;ast; 1024 Pixel)&quot;. *Die Größe des Assets ist unerheblich*.
 
-Die bei einem bestimmten Heap standardmäßig unterstützte TIFF-Dateigröße für AEM lässt sich nur schwer abschätzen, weil die Verarbeitung durch zusätzliche Faktoren wie die Pixelgröße beeinflusst wird. Es ist möglich, dass AEM eine 255 MB große Datei standardmäßig verarbeiten kann, aber eine 18 MB große Datei nicht, weil sich letztere gegenüber der ersteren eine ungewöhnlich hohe Anzahl an Pixel aufweist.
+Es ist schwierig, die Größe der standardmäßig unterstützten TIFF-Datei (OOTB) mit einem bestimmten Heap für [!DNL Experience Manager] genau zu schätzen, da zusätzliche Faktoren wie die Pixelgröße die Verarbeitung beeinflussen. Es ist möglich, dass [!DNL Experience Manager] eine Datei mit einer OOTB-Größe von 255 MB verarbeiten kann, jedoch keine Dateigröße von 18 MB verarbeiten kann, da letztere eine ungewöhnlich höhere Anzahl von Pixeln im Vergleich zu ersteren aufweist.
 
 ## Größe der Assets {#size-of-assets}
 
-Standardmäßig können AEM Assets mit Dateigrößen von bis zu 2 GB hochladen. Informationen zum Hochladen sehr großer Assets in AEM finden Sie unter [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).
+Standardmäßig können Sie mit [!DNL Experience Manager] Assets mit Dateigrößen von bis zu 2 GB hochladen. Informationen zum Hochladen sehr großer Assets in AEM finden Sie unter [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb).

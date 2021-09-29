@@ -2,12 +2,12 @@
 title: Erstellen von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM erstellen können.
 contentOwner: AG
-feature: Übersetzung
+feature: Translation
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1939'
 ht-degree: 96%
 
 ---
@@ -40,7 +40,7 @@ Den Workflow zum Erstellen und Übersetzen verwenden Sie, um erstmals Sprachkopi
 * Erstellen eines neuen Übersetzungsprojekts
 * Hinzufügen zu einem vorhandenen Übersetzungsprojekt
 
-### Nur Struktur erstellen  {#create-structure-only}
+### Nur Struktur erstellen {#create-structure-only}
 
 Verwenden Sie die Option **Nur Struktur erstellen**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
@@ -94,7 +94,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Assets aus dem Quellordner werden in die Zielordner für die Gebietsschemata kopiert, die Sie in Schritt 4 gewählt haben.
+1. Klicken/tippen Sie auf **[!UICONTROL Erstellen]**. Assets aus dem Quellordner werden in die Zielordner für die Gebietsschemas kopiert, die Sie in Schritt 4 gewählt haben.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -282,9 +282,9 @@ Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen
 
 ## Erstellen von temporären Sprachkopien {#creating-temporary-language-copies}
 
-Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. AEM Assets speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
+Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. [!DNL Experience Manager] Assets speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
 
-1. Tippen/Klicken Sie unter **[!UICONTROL Sprachkopien]**, für die Sie bereits eine Sprachkopie erstellt haben, auf den Quellstammordner und dann auf **[!UICONTROL In Assets anzeigen]**, um den Ordner in AEM Assets zu öffnen.
+1. Tippen/Klicken Sie unter **[!UICONTROL Sprachkopien]**, für die Sie bereits eine Sprachkopie erstellt haben, auf den Quellstammordner und dann auf **[!UICONTROL In Assets anzeigen]**, um den Ordner in Assets zu öffnen.[!DNL Experience Manager]
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 

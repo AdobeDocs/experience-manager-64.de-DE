@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 36%
+source-wordcount: '674'
+ht-degree: 33%
 
 ---
 
@@ -22,10 +22,10 @@ Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketingt
 
 Führen Sie die folgenden Schritte aus, um Assets Insights über DTM zu aktivieren:
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights-Konfiguration]**.
-1. [Konfigurieren Sie die AEM-Instanz mit dem DTM Cloud-Dienst.](../sites-administering/dtm.md)
+1. Tippen/klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights-Konfiguration]**.
+1. [Konfigurieren der Instanz [!DNL Experience Manager] mit DTM-Cloud Service](../sites-administering/dtm.md)
 
-   Das API-Token sollte verfügbar sein, sobald Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) anmelden und **[!UICONTROL Kontoeinstellungen]** über das Profilsymbol aufrufen. Dieser Schritt ist aus Sicht von Assets Insights nicht erforderlich, da die Integration von AEM Sites mit Assets Insights noch in Arbeit ist.
+   Das API-Token sollte verfügbar sein, sobald Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) anmelden und **[!UICONTROL Kontoeinstellungen]** über das Profilsymbol aufrufen. Dieser Schritt ist aus Sicht von Assets Insights nicht erforderlich, da die Integration von [!DNL Experience Manager Sites] mit Assets Insights noch in Arbeit ist.
 
 1. Melden Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) an und wählen Sie ggf. ein Unternehmen aus.
 1. Erstellen/Öffnen einer vorhandenen Webeigenschaft
@@ -43,7 +43,7 @@ Führen Sie die folgenden Schritte aus, um Assets Insights über DTM zu aktivier
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. Tippen/klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets]**.
+1. Tippen/klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets]**.
 1. Tippen/klicken Sie auf **[!UICONTROL Insights Page Tracker]**, kopieren Sie den Tracker-Code und fügen Sie ihn dann in das Skript-Dialogfeld ein, das Sie in Schritt 6 geöffnet haben. Speichern Sie die Änderungen.
 
    >[!NOTE]

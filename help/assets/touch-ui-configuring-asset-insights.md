@@ -1,20 +1,20 @@
 ---
 title: Konfigurieren von Asset Insights
-description: Erfahren Sie, wie Sie Assets Insights in AEM Assets konfigurieren.
+description: Erfahren Sie, wie Sie Assets Insights in [!DNL Experience Manager] Assets konfigurieren.
 contentOwner: AG
-feature: Asset Insights,Asset-Berichte
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 72%
+source-wordcount: '230'
+ht-degree: 46%
 
 ---
 
 # Konfigurieren von Asset Insights {#configuring-asset-insights}
 
-Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von Websites von Drittanbietern aus Adobe Analytics ab. Damit Assets Insights diese Daten abrufen und Einblicke generieren kann, konfigurieren Sie zunächst die Funktion zur Integration in Adobe Analytics.
+Adobe Experience Manager Assets ruft Nutzungsdaten für [!DNL Experience Manager]-Assets ab, die von Drittanbieter-Websites von Adobe Analytics verwendet werden. Damit Assets Insights diese Daten abrufen und Einblicke generieren kann, konfigurieren Sie zunächst die Funktion zur Integration in Adobe Analytics.
 
 >[!NOTE]
 >
@@ -30,12 +30,12 @@ Adobe Experience Manager (AEM) Assets ruft Nutzungsdaten rund um AEM-Assets von 
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. Klicken/tippen Sie auf **[!UICONTROL Authentifizieren]**.
-1. Nachdem AEM Ihre Anmeldedaten authentifiziert hat, wählen Sie in der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics Report Suite aus, aus der Assets Insights Daten abrufen soll. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
-1. Nach der Report Suite-Einrichtung durch AEM klicken/tippen Sie auf **[!UICONTROL Fertig]**.
+1. Nachdem [!DNL Experience Manager] Ihre Anmeldedaten authentifiziert hat, wählen Sie in der Liste **[!UICONTROL Report Suite]** eine Adobe Analytics Report Suite aus, aus der Assets Insights Daten abrufen soll. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
+1. Nachdem [!DNL Experience Manager] Ihre Report Suite eingerichtet hat, klicken/tippen Sie auf **[!UICONTROL Fertig]**.
 
 ## Seitenverfolgung {#page-tracker}
 
-Nachdem Sie Ihr Analytics-Konto konfiguriert haben, wird der Seitenverfolgungs-Code für Sie erzeugt. Um Asset Insights zur Verfolgung von AEM-Assets in Websites von Drittanbietern zu aktivieren, beziehen Sie den Seitenverfolgungscode in den Website-Code ein. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in AEM Assets, um den Seitenverfolgungscode zu erzeugen. Weitere Informationen dazu, wie Sie Ihren Seitenverfolgungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md).
+Nachdem Sie Ihr Analytics-Konto konfiguriert haben, wird der Seitenverfolgungs-Code für Sie erzeugt. Damit Assets Insights die [!DNL Experience Manager]-Assets verfolgen kann, die auf Drittanbieter-Websites verwendet werden, fügen Sie den Seiten-Tracker-Code in den Website-Code ein. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in [!DNL Experience Manager] Assets, um den Seitenverfolgungs-Code zu generieren. Weitere Informationen dazu, wie Sie Ihren Seitenverfolgungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md).
 
 1. Klicken Sie in AEM auf **[!UICONTROL Tools > Assets]**.
 

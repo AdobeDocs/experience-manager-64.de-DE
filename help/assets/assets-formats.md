@@ -1,22 +1,22 @@
 ---
-title: In AEM Assets unterstützte Dateiformate
-description: Liste der von AEM Assets unterstützten Dateiformate und MIME-Typen sowie der für jedes Format unterstützten Funktionen.
+title: Unterstützte Dateiformate in [!DNL Experience Manager] Assets
+description: Liste der von Assets unterstützten Dateiformate und MIME-Typen sowie der für jedes Format unterstützten Funktionen.
 contentOwner: AG
-feature: Asset-Management,Ausgabeformate
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 64%
+source-wordcount: '1635'
+ht-degree: 62%
 
 ---
 
-# Unterstützte Dateiformate in AEM Assets {#assets-supported-formats}
+# Unterstützte Dateiformate in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
-AEM Assets unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen.
+[!DNL Experience Manager Assets] unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen.
 
-Um AEM Assets mit anderen standardkonformen DAM-Lösungen (Digital Asset Management) und Desktop-Software-Anwendungen zu integrieren, verwenden Sie die Extensible Metadata Platform (XMP) von Adobe.
+Um [!DNL Assets] in andere standardkonforme DAM-Lösungen (Digital Asset Management) und Desktop-Software zu integrieren, verwenden Sie die Extensible Metadata Platform (XMP) von Adobe.
 
 Die Legende gibt den Grad der Unterstützung an.
 
@@ -24,7 +24,7 @@ Die Legende gibt den Grad der Unterstützung an.
 |:---:|---|
 | ✓ | Unterstützt |
 | * | Mit Funktionen von Zusatzmodulen unterstützt |
-| - | Nicht zutreffend |
+| − | Nicht zutreffend |
 
 ## Raster-Bildformate {#supported-raster-image-formats}
 
@@ -111,7 +111,7 @@ Siehe [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-Die Adobe Camera Raw-Bibliothek aktiviert AEM Assets für die Aufnahme von Rohbildern. Siehe [Camera Raw Unterstützung](camera-raw.md).
+Die Adobe Camera Raw-Bibliothek ermöglicht [!DNL Assets] die Aufnahme von Rohbildern. Siehe [Camera Raw Unterstützung](camera-raw.md).
 
 ## Dokumentenformate {#supported-document-formats}
 
@@ -244,7 +244,7 @@ Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wir
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
-Standardmäßig erkennt AEM den Dateityp mithilfe der Dateierweiterung. AEM kann es aus dem Inhalt der Dateien erkennen. Wählen Sie für letztere die Option [!UICONTROL MIME aus dem Inhalt erkennen] in [!UICONTROL Day CQ DAM Mime Type Service] in der AEM Web Console.
+Standardmäßig erkennt [!DNL Experience Manager] den Dateityp mit der Dateierweiterung . [!DNL Experience Manager] kann es aus dem Inhalt der Dateien erkennen. Wählen Sie für letztere die Option [!UICONTROL MIME aus Inhalt erkennen] in [!UICONTROL Day CQ DAM Mime Type Service] in der Web-Konsole [!DNL Experience Manager].
 
 Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes` verfügbar.
 

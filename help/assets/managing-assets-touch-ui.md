@@ -1,27 +1,27 @@
 ---
-title: Verwalten digitaler Assets mit AEM Assets
-description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie mithilfe der Touch-optimierten Benutzeroberfläche von AEM Assets durchführen können
+title: Verwalten digitaler Assets mit [!DNL Experience Manager] Assets
+description: Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie über die Touch-optimierte Benutzeroberfläche von  [!DNL Experience Manager] Assets ausführen können
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset-Management, Suche, Ausgabedarstellungen, Zusammenarbeit
+feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '10131'
-ht-degree: 67%
+source-wordcount: '10078'
+ht-degree: 62%
 
 ---
 
 # Verwalten digitaler Assets {#managing-assets-with-the-touch-optimized-ui}
 
-Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie mithilfe der Touch-optimierten Benutzeroberfläche von AEM Assets durchführen können.
+Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie über die Touch-optimierte Benutzeroberfläche von [!DNL Experience Manager] Assets ausführen können.
 
-In diesem Artikel wird beschrieben, wie Sie Assets mithilfe der Touch-optimierten Benutzeroberfläche von Adobe Experience Manager (AEM) Assets verwalten und bearbeiten. Grundlegende Informationen zur Benutzeroberfläche finden Sie unter [Grundlegende Handhabung der Touch-Benutzeroberfläche](/help/sites-authoring/basic-handling.md). Informationen zum Verwalten von Inhaltsfragmenten finden Sie unter [Verwalten von Inhaltsfragmenten](content-fragments-managing.md) -Assets.
+In diesem Artikel wird beschrieben, wie Sie Assets mit der Touch-optimierten Benutzeroberfläche von Adobe Experience Manager Assets verwalten und bearbeiten. Grundlegende Informationen zur Benutzeroberfläche finden Sie unter [Grundlegende Handhabung der Touch-Benutzeroberfläche](/help/sites-authoring/basic-handling.md). Informationen zum Verwalten von Inhaltsfragmenten finden Sie unter [Verwalten von Inhaltsfragmenten](content-fragments-managing.md) -Assets.
 
 ## Erstellen von Ordnern   {#create-folders}
 
-Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. Bei AEM Assets müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
+Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. [!DNL Experience Manager]Bei  Assets müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
 
 >[!NOTE]
 >
@@ -39,9 +39,9 @@ Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unt
 * Der Asset-Dateiname darf nicht enthalten: `* / : [ \ \ ] | # % { } ? &`
 * Der Asset-Ordnername darf nicht enthalten: `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
-## Hochladen von Assets {#uploading-assets}
+## Upload von Assets {#uploading-assets}
 
-Sie können verschiedene Arten von Assets (z. B. Bilder, PDF-Dateien, Raw-Dateien usw.) von Ihrem lokalen Ordner oder Netzlaufwerk in AEM Assets hochladen.
+Sie können verschiedene Asset-Typen (z. B. Bilder, PDF-Dateien, RAW-Dateien usw.) von Ihrem lokalen Ordner oder Netzlaufwerk in [!DNL Experience Manager] Assets hochladen.
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es sich in einem [unters
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   Um einen laufenden Upload abzubrechen, klicken Sie auf die Schaltfläche `X` neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht AEM Assets den teilweise hochgeladenen Teil des Assets.
+   Um einen laufenden Upload abzubrechen, klicken Sie auf die Schaltfläche `X` neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, löscht [!DNL Experience Manager] Assets den teilweise hochgeladenen Teil des Assets.
 
    Den Upload fortsetzen zu können, ist besonders hilfreich bei geringer Bandbreite und Netzwerkfehlern, bei denen der Upload großer Assets lange dauern kann. Sie können den Uploadvorgang anhalten und später fortsetzen, wenn die Bedingungen besser sind. Beim Fortsetzen beginnt der Upload an dem Punkt, an dem Sie pausiert haben.
 
-   Während des Uploads speichert AEM die Teile des hochgeladenen Assets als Datenblöcke im CRX-Repository. Wenn der Upload abgeschlossen ist, konsolidiert AEM diese Blöcke in einem einzelnen Datenblock im Repository.
+   Während des Upload-Vorgangs speichert [!DNL Experience Manager] die Teile des hochgeladenen Assets als Datenblöcke im CRX-Repository. Nach Abschluss des Uploads konsolidiert [!DNL Experience Manager] diese Blöcke in einem einzigen Datenblock im Repository.
 
    Um die Bereinigungsaufgabe für die nicht abgeschlossenen Chunk-Upload-Aufträge zu konfigurieren, gehen Sie zu `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`.
 
@@ -99,7 +99,7 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es sich in einem [unters
    >
    >Wenn **[!UICONTROL Asset Insights]** aktiviert ist, um Impressionen/Klicks mit Adobe Analytics zu verfolgen, werden mit dieser neu generierten Asset-ID die für das Asset in Adobe Analytics erfassten Daten ungültig.
 
-   Wenn das hochgeladene Asset in AEM Assets vorhanden ist, wird im Dialogfeld **[!UICONTROL Duplikate gefunden]** gewarnt, dass Sie versuchen, ein doppeltes Asset hochzuladen. Das Dialogfeld wird nur angezeigt, wenn der SHA-1-Prüfsummenwert der Binärdatei des bestehenden Assets dem des Assets entspricht, das Sie gerade hochladen. In diesem Fall sind die Namen der Assets unerheblich. Das bedeutet, dass das Dialogfeld auch für Assets mit unterschiedlichen Namen angezeigt werden kann, wenn die SHA 1-Werte für ihre Binärdateien identisch sind.
+   Wenn das hochgeladene Asset in [!DNL Experience Manager] Assets vorhanden ist, wird im Dialogfeld **[!UICONTROL Duplikate gefunden]** gewarnt, dass Sie versuchen, ein doppeltes Asset hochzuladen. Das Dialogfeld wird nur angezeigt, wenn der SHA-1-Prüfsummenwert der Binärdatei des bestehenden Assets dem des Assets entspricht, das Sie gerade hochladen. In diesem Fall sind die Namen der Assets unerheblich. Das bedeutet, dass das Dialogfeld auch für Assets mit unterschiedlichen Namen angezeigt werden kann, wenn die SHA 1-Werte für ihre Binärdateien identisch sind.
 
    >[!NOTE]
    >
@@ -107,9 +107,9 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es sich in einem [unters
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   Tippen Sie auf **[!UICONTROL Behalten Sie]**, um das doppelte Asset in AEM Assets beizubehalten. Tippen Sie auf **[!UICONTROL Löschen]** , um das doppelte Asset zu löschen, das Sie hochgeladen haben.
+   Tippen Sie auf **[!UICONTROL Behalten Sie]**, um das doppelte Asset in [!DNL Experience Manager] Assets beizubehalten. Tippen Sie auf **[!UICONTROL Löschen]** , um das doppelte Asset zu löschen, das Sie hochgeladen haben.
 
-   AEM Assets verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset hochzuladen, das die unzulässigen Zeichen enthält, zeigt AEM Assets eine Warnmeldung bezüglich des Vorhandenseins verbotener Zeichen im Dateinamen an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
+   [!DNL Experience Manager] Assets verhindert, dass Sie Assets hochladen, deren Dateinamen unzulässige Zeichen enthalten. Wenn Sie versuchen, ein Asset hochzuladen, das die unzulässigen Zeichen enthält, zeigt [!DNL Experience Manager] Assets eine Warnmeldung bezüglich des Vorhandenseins verbotener Zeichen im Dateinamen an und stoppt den Upload, bis Sie diese Zeichen entfernen oder mit einem zulässigen Namen hochladen.
 
    Um bestimmte Dateibenennungskonventionen für Ihre Organisation einzuhalten, können Sie im Dialogfeld **[!UICONTROL Assets hochladen]** lange Namen für die Dateien angeben, die Sie hochladen.
 
@@ -125,13 +125,13 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es sich in einem [unters
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   Wenn Sie den Upload abbrechen, bevor die Dateien hochgeladen sind, unterbricht AEM Assets den Upload der aktuellen Datei und aktualisiert den Inhalt. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
+   Wenn Sie den Upload abbrechen, bevor die Dateien hochgeladen werden, stoppt [!DNL Experience Manager] Assets das Hochladen der aktuellen Datei und aktualisiert den Inhalt. Dateien, die bereits hochgeladen wurden, werden jedoch nicht gelöscht.
 
 ### Serielle Uploads {#serial-uploads}
 
-Das Hochladen zahlreicher Assets in großen Mengen beansprucht erhebliche Systemressourcen, was sich negativ auf die Leistung Ihrer AEM-Bereitstellung auswirken kann. Mögliche Engpässe sind Ihre Internetverbindung, Lese- und Schreibvorgänge auf der Festplatte, Webbrowserbeschränkungen bei der Anzahl der POST-Anfragen beim gleichzeitigen Asset-Upload. Der Massen-Upload kann fehlschlagen oder vorzeitig beenden. Dabei kann es vorkommen, dass in AEM Assets bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
+Das Hochladen zahlreicher Assets in großen Mengen beansprucht erhebliche Systemressourcen, was sich negativ auf die Leistung Ihrer [!DNL Experience Manager]-Implementierung auswirken kann. Mögliche Engpässe sind Ihre Internetverbindung, Lese- und Schreibvorgänge auf der Festplatte, Webbrowserbeschränkungen bei der Anzahl der POST-Anfragen beim gleichzeitigen Asset-Upload. Der Massen-Upload kann fehlschlagen oder vorzeitig beenden. Mit anderen Worten: [!DNL Experience Manager] Assets können einige Dateien bei der Aufnahme einer Reihe von Dateien vermissen oder überhaupt keine Datei erfassen.
 
-Um diese Situation zu vermeiden, gibt es die Möglichkeit, Ladevorgänge im Stapelmodus seriell durchzuführen. Dabei werden in AEM Assets die Assets nicht gleichzeitig, sondern einzeln nacheinander erfasst.
+Um dies zu vermeiden, erfasst [!DNL Experience Manager] Assets während eines Massen-Upload-Vorgangs jeweils ein Asset (serielles Upload), anstatt alle Assets gleichzeitig aufzunehmen.
 
 Der serielle Upload von Assets ist standardmäßig aktiviert. Um die Funktion zu deaktivieren und das gleichzeitige Hochladen zuzulassen, überlagern Sie den Knoten `fileupload` in CRXDe und legen Sie den Wert der Eigenschaft `parallelUploads` auf `true` fest.
 
@@ -145,9 +145,9 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 
 >[!NOTE]
 >
->Um Assets über FTP in Dynamic Media - Scene7-Modus hochzuladen, installieren Sie Feature Pack (FP) 18912 auf AEM Author. Wenden Sie sich an die Kundenunterstützung von Adobe, um Zugriff auf FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
+>Um Assets über FTP in Dynamic Media hochzuladen, installieren Sie Feature Pack (FP) 18912 im Scene7-Modus unter [!DNL Experience Manager] author. Wenden Sie sich an die Kundenunterstützung von Adobe, um Zugriff auf FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 >
->Die in AEM angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum Hochladen von Assets verwenden. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
+>Wenn Sie FTP zum Hochladen von Assets verwenden, werden die unter [!DNL Experience Manager] angegebenen Upload-Einstellungen ignoriert. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
 **So laden Sie Assets per FTP hoch**
 
@@ -167,7 +167,7 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 1. Tippen Sie in der rechten unteren Ecke des Dialogfelds **[!UICONTROL Upload-Auftragsoptionen]** auf **[!UICONTROL Speichern]**.
 1. Tippen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Upload]** auf **[!UICONTROL Upload starten]**.
 
-   Um den Upload-Fortschritt anzuzeigen, tippen Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite **[!UICONTROL Aufträge]** wird der Fortschritt des Uploads angezeigt. Sie können mit der Arbeit in AEM fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
+   Um den Upload-Fortschritt anzuzeigen, tippen Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite **[!UICONTROL Aufträge]** wird der Fortschritt des Uploads angezeigt. Sie können weiterhin in [!DNL Experience Manager] arbeiten und jederzeit zur Seite &quot;Aufträge&quot;in Dynamic Media Classic zurückkehren, um einen laufenden Auftrag zu überprüfen.
 
    Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, tippen oder klicken Sie neben der Information „Dauer“ auf die Schaltfläche **[!UICONTROL Abbrechen]****[!UICONTROL .]**
 
@@ -181,7 +181,7 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 | ZIP- oder TAR-Dateien beim Hochladen dekomprimieren |  |  |
 | Auftragsoptionen |  | Tippen oder klicken Sie auf **[!UICONTROL Auftragsoptionen]** , um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen und Optionen auszuwählen, die sich auf den gesamten Upload-Auftrag auswirken. Diese Optionen sind für alle Dateitypen gleich.<br>Sie können über die Seite „Allgemeine Programmeinstellungen“ Standardoptionen für das Hochladen von Dateien auswählen. Um diese Seite zu öffnen, wählen Sie **[!UICONTROL Einstellung]** > **[!UICONTROL Anwendungseinstellungen]**. Tippen Sie auf die Schaltfläche **[!UICONTROL Standard-Upload-Optionen]** , um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen. |
 |  | Wenn | Wählen Sie „Einmalig“ oder „Wiederkehrend“ aus. Zum Einrichten eines wiederkehrenden Auftrags wählen Sie eine Wiederholungsoption („Täglich“, „Wöchentlich“, „Monatlich“ oder „Benutzerdefiniert“), um anzugeben, wie oft der FTP-Upload-Auftrag wiederholt werden soll. Dann geben Sie nach Bedarf die Planungsoptionen an. |
-|  | Unterordner einschließen | Laden Sie alle Unterordner im hochzuladenden Ordner hoch. Der Name des hochgeladenen Ordners und die Namen der darin enthaltenen Unterordner werden automatisch in AEM Assets erfasst. |
+|  | Unterordner einschließen | Laden Sie alle Unterordner im hochzuladenden Ordner hoch. Die Namen des Ordners und der von Ihnen hochgeladenen Unterordner werden automatisch in [!DNL Experience Manager] Assets eingegeben. |
 |  | Optionen für das Zuschneiden | Um die Seiten eines Bildes manuell zu beschneiden, wählen Sie im Menü „Beschneiden“ die Option „Manuell“ aus. Dann geben Sie die Anzahl von Pixeln ein, die an einer oder jeder Seite des Bildes abgeschnitten werden sollen. Um wie viel das Bild beschnitten wird, hängt von der ppi-Einstellung (Pixel per Inch; Pixel pro Zoll) in der Bilddatei ab. Beispiel: Wenn das Bild 150 ppi aufweist und Sie 75 in die Textfelder für oben, rechts, unten und links eingeben, wird ein halber Zoll von jeder Seite abgeschnitten.<br> Zum automatischen Beschneiden der Leerraumpixel eines Bildes öffnen Sie das Menü „Beschneiden“, wählen Sie „Manuell“ und geben Sie zum Beschneiden der Seiten die Pixelwerte in die Felder „Oben“, „Rechts“, „Unten“ und „Links“ ein. Sie können im Menü „Beschneiden“ auch „Zuschneiden“ und anschließend folgende Optionen auswählen:<br> **Beschneiden basierend auf** <ul><li>**Farbe**  - Wählen Sie die Option &quot;Farbe&quot;. Wählen Sie anschließend im Menü „Ecke“ die Bildecke mit der Farbe aus, die am besten der Leerraumfarbe entspricht, die Sie entfernen möchten.</li><li>**** Transparenz – Wählen Sie die Option „Transparenz“.<br> **Toleranz**  - Ziehen Sie den Regler, um eine Toleranz von 0 bis 1 festzulegen. Für das Zuschneiden auf Grundlage der Farbe geben Sie 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie genau der Farbe entsprechen, die Sie in der Bildecke ausgewählt haben. Werte, die näher an 1 liegen, lassen eine größere Farbdifferenz zu.<br>Für das Zuschneiden auf der Grundlage der Transparenz geben Sie den Wert 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie transparent sind. Werte, die näher an 1 liegen, lassen eine größere Transparenz zu.</li></ul><br>Beachten Sie, dass diese Optionen für das Beschneiden zerstörungsfrei sind. |
 |  | Farbprofiloptionen | Wählen Sie beim Erstellen optimierter Dateien eine Farbkonversion aus, die für die Bereitstellung verwendet wird:<ul><li>Beibehaltung der Standardfarbe: Behält die Farben des Quellbildes bei, wenn die Bilder Farbrauminformationen enthalten. Es findet keine Farbkonversion statt. Heutzutage ist in fast allen Bildern das entsprechende Farbprofil eingebettet. Wenn jedoch ein CMYK-Quellbild kein eingebettetes Farbprofil enthält, werden die Farben in den Farbraum sRGB (standardmäßiges Rot Grün Blau) konvertiert. sRGB ist der empfohlene Farbraum zum Anzeigen von Bildern auf Webseiten.</li><li>Ursprünglichen Farbraum beibehalten: Behält die ursprünglichen Farben bei, ohne dass an der betreffenden Stelle eine Farbkonversion stattfindet. Bei Bildern ohne eingebettetes Farbprofil wird jede Farbkonversion mit den in den Veröffentlichungseinstellungen konfigurierten Standardfarbprofilen durchgeführt. Die Farbprofile stimmen möglicherweise nicht mit der Farbe in den Dateien überein, die mit dieser Option erstellt wurden. Deshalb empfiehlt es sich, die Option „Beibehaltung der Standardfarbe“ zu verwenden.</li><li>Benutzerdefinierte Einstellung von > in:<br> Öffnet Menüs, damit Sie einen „Konvertieren von“- und einen „Konvertieren in“-Farbraum auswählen können. Diese erweiterte Option überschreibt alle Farbinformationen, die in die Quelldatei eingebettet sind. Wählen Sie diese Option aus, wenn alle Bilder, die Sie senden, falsche oder fehlende Farbprofildaten enthalten.</li></ul> |
 |  | Bildbearbeitungsoptionen | Sie können die Beschneidungsmasken in Bildern beibehalten und ein Farbprofil auswählen.<br> Siehe [Festlegen von Bildbearbeitungsoptionen beim Hochladen](#setting-image-editing-options-at-upload). |
@@ -190,7 +190,7 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 |  | PDF-Optionen | Sie können die Dateien rastern, Suchbegriffe und -links extrahieren, automatisch einen E-Katalog erstellen, die Auflösung einstellen und einen Farbraum auswählen.<br> Beachten Sie, dass in AEM E-Kataloge nicht unterstützt werden. <br> Siehe [Festlegen von PDF-Uploadoptionen](#setting-pdf-upload-options). |
 |  | Illustrator-Optionen | Sie können Adobe Illustrator®-Dateien rastern, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
 |  | eVideo-Optionen | Sie können eine Videodatei durch Auswahl einer Videovorgabe transkodieren.<br> Siehe [Festlegen von eVideo-Uploadoptionen](#setting-evideo-upload-options). |
-|  | Stapelsatzvorgaben | Um ein Bild- oder Rotationsset aus den hochgeladenen Dateien zu erstellen, klicken Sie auf die Spalte „Aktiv“ der Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. Die Vorgaben erstellen Sie auf der Seite „Anwendungseinstellungen/Stapelsatzvorgaben“ von Dynamic Media Classic.<br> Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Siehe [Festlegen von Stapelsatzvorgaben beim Hochladen](#setting-batch-set-presets-at-upload). |
+|  | Stapelsatz-Vorgaben | Um ein Bild- oder Rotationsset aus den hochgeladenen Dateien zu erstellen, klicken Sie auf die Spalte „Aktiv“ der Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. Die Vorgaben erstellen Sie auf der Seite „Anwendungseinstellungen/Stapelsatzvorgaben“ von Dynamic Media Classic.<br> Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Siehe [Festlegen von Stapelsatzvorgaben beim Hochladen](#setting-batch-set-presets-at-upload). |
 
 #### Festlegen von Bildbearbeitungsoptionen beim Hochladen {#setting-image-editing-options-at-upload}
 
@@ -298,17 +298,17 @@ Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Ko
 
 ### Gestreamte Uploads {#streamed-uploads}
 
-Wenn Sie viele Assets hochladen, steigt die Zahl der I/O-Aufrufe, die an den AEM-Server gesendet werden, drastisch an, wodurch die Upload-Effizienz verringert wird und sogar eine Zeitüberschreitung auftreten kann. AEM Assets unterstützt gestreamte Uploads von Assets. Gestreamte Uploads sorgen für eine Datenträger-I/O-Reduzierung beim Hochladen, da die Speicherung von Assets in einem temporären Ordner auf dem Server vermieden wird, bevor Assets in das Repository kopiert werden. Stattdessen werden die Daten direkt an das Repository übertragen. Auf diese Weise wird die Zeit für das Hochladen von Assets und die Möglichkeit von Zeitüberschreitungen verringert. Das gestreamte Hochladen ist in AEM Assets standardmäßig aktiviert.
+Wenn Sie zahlreiche Assets hochladen, erhöhen sich die E/A-Aufrufe drastisch an den Server [!DNL Experience Manager], was die Upload-Effizienz reduziert und sogar zu einer Zeitüberschreitung führen kann. [!DNL Experience Manager] Assets unterstützt gestreamte Uploads von Assets. Gestreamte Uploads sorgen für eine Datenträger-I/O-Reduzierung beim Hochladen, da die Speicherung von Assets in einem temporären Ordner auf dem Server vermieden wird, bevor Assets in das Repository kopiert werden. Stattdessen werden die Daten direkt an das Repository übertragen. Auf diese Weise wird die Zeit für das Hochladen von Assets und die Möglichkeit von Zeitüberschreitungen verringert. Der gestreamte Upload ist in [!DNL Experience Manager] Assets standardmäßig aktiviert.
 
-Die Funktion „Streaming-Upload“ ist für den Betrieb von AEM auf JEE-Servern mit Servlet-API. Version unter 3.1 deaktiviert.
+Der Streaming-Upload ist für [!DNL Experience Manager] deaktiviert, der auf dem JEE-Server mit Servlet-API-Version unter 3.1 ausgeführt wird.
 
 ### ZIP-Archiv mit Assets extrahieren {#extract-zip-archive-containing-assets}
 
-Sie können ZIP-Archive wie jedes andere unterstützte Asset hochladen. Für ZIP-Dateien gelten dieselben Regeln für Dateinamen. Mit AEM können Sie ein ZIP-Archiv in einen DAM-Speicherort extrahieren.
+Sie können ZIP-Archive wie jedes andere unterstützte Asset hochladen. Für ZIP-Dateien gelten dieselben Regeln für Dateinamen. [!DNL Experience Manager]Mit können Sie ein ZIP-Archiv in einen DAM-Speicherort extrahieren. 
 
 Wählen Sie jeweils ein ZIP-Archiv aus, klicken Sie auf **[!UICONTROL Archiv extrahieren]** und wählen Sie einen Zielordner aus. Wählen Sie eine Option für den Umgang mit eventuellen Konflikten. Wenn die Assets in der ZIP-Datei bereits im Zielordner vorhanden sind, können Sie eine der folgenden Optionen auswählen: Extrahieren überspringen, vorhandene Dateien ersetzen, beide Assets durch Umbenennen behalten oder neue Version erstellen.
 
-Nach Abschluss des Extrahierungsvorgangs erhalten Sie von AEM eine Benachrichtigung im Benachrichtigungsbereich. Während AEM das ZIP-Archiv extrahiert, können Sie ohne Unterbrechung des Extrahierungsvorgangs mit Ihrer Arbeit fortfahren.
+Nach Abschluss der Extraktion benachrichtigt Sie [!DNL Experience Manager] im Benachrichtigungsbereich. Während [!DNL Experience Manager] die ZIP-Datei extrahiert, können Sie ohne Unterbrechung der Extraktion zu Ihrer Arbeit zurückkehren.
 
 ![Benachrichtigung über ZIP-Extraktion](assets/zip_extract_notification.png)
 
@@ -413,7 +413,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    >[!NOTE]
    >
-   >Wenn Sie ein Asset in denselben Speicherort kopieren, generiert AEM automatisch eine Variation des Namens. Beispiel: Wenn Sie ein Asset mit dem Namen „Quadrat“ kopieren, generiert AEM automatisch den Namen „Quadrat1“ für die Kopie.
+   >Wenn Sie ein Asset an denselben Speicherort kopieren, generiert [!DNL Experience Manager] automatisch eine Variante des Namens. Wenn Sie beispielsweise ein Asset mit dem Titel &quot;Quadrat&quot;kopieren, generiert [!DNL Experience Manager] automatisch den Titel für die Kopie als &quot;Quadrat1&quot;.
 
 1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Asset einfügen]** :
 
@@ -500,7 +500,7 @@ Wenn Sie Assets durch Ziehen verschieben, wird der Assistent [!UICONTROL Asset v
 
    >[!NOTE]
    >
-   >Standardmäßig zeigt AEM Assets im Vorschaumodus nicht die ursprüngliche Ausgabedarstellung des Assets an. Wenn Sie ein Administrator sind, können Sie Überlagerungen verwenden, um AEM Assets so zu konfigurieren, dass ursprüngliche Ausgabedarstellungen im Vorschaumodus angezeigt werden.
+   >Standardmäßig zeigt [!DNL Experience Manager] Assets nicht die ursprüngliche Wiedergabe des Assets im Vorschaumodus an. Wenn Sie Administrator sind, können Sie Überlagerungen verwenden, um [!DNL Experience Manager] Assets so zu konfigurieren, dass Original-Ausgabeformate im Vorschaumodus angezeigt werden.
 
 1. Wählen Sie eine Ausgabedarstellung aus, um sie anzuzeigen oder zu löschen.
 
@@ -520,7 +520,7 @@ Wenn Sie Assets durch Ziehen verschieben, wird der Assistent [!UICONTROL Asset v
    >
    >Wenn Sie eine Ausgabedarstellung im Bedienfeld **[!UICONTROL Ausgabedarstellungen]** auswählen, wird der Kontext der Symbolleiste geändert, sodass nur die für die Ausgabedarstellung relevanten Aktionen angezeigt werden. Optionen wie das Symbol **[!UICONTROL Ausgabedarstellung hochladen]** werden nicht angezeigt. Um diese Optionen in der Symbolleiste anzuzeigen, navigieren Sie zur Detailseite für das Asset.
 
-   Sie können die Dimensionen für die anzuzeigende Ausgabedarstellung auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. AEM Assets zeigt anhand der von Ihnen angegebenen Abmessungen die Ausgabedarstellung mit den genauen oder möglichst genauen Abmessungen an.
+   Sie können die Dimensionen für die anzuzeigende Ausgabedarstellung auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. Basierend auf den von Ihnen angegebenen Dimensionen zeigt [!DNL Experience Manager] Assets die Ausgabedarstellung mit den exakten oder nächstgelegenen Dimensionen an.
 
    Um die Ausgabedarstellungsdimensionen eines Bildes auf der Asset-Detailebene zu konfigurieren, überlagern Sie den Knoten **[!UICONTROL renditionpicker]** `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` und konfigurieren Sie den Wert der width-Eigenschaft. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um die Ausgabedarstellung auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft **[!UICONTROL preferOriginal]** der Originalgröße den Vorzug, wenn das angepasste Wiedergabeformat größer ist als das Original.
 
@@ -589,7 +589,7 @@ Weitere Informationen zu [!DNL Dynamic Media] finden Sie unter [Publishing [!DNL
 
 1. Wenn ein Asset beim Veröffentlichen auf andere Assets verweist, werden seine Referenzen im Assistenten aufgelistet. Es werden nur die Verweise angezeigt, die seit der letzten Veröffentlichung entweder rückgängig gemacht oder geändert wurden. Wählen Sie die Referenzen aus, die Sie veröffentlichen möchten.
 
-1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie rückgängig machen möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum rückgängig gemacht werden soll.
+1. Wenn beim Rückgängigmachen der Veröffentlichung ein Asset auf andere Assets verweist, wählen Sie die Referenzen, deren Veröffentlichung Sie aufheben möchten. Klicken Sie auf **[!UICONTROL Veröffentlichung aufheben]**. Klicken Sie im Bestätigungsdialog auf **[!UICONTROL Abbrechen]**, um die Aktion abzubrechen, oder klicken Sie auf **[!UICONTROL Veröffentlichung rückgängig machen]**, um zu bestätigen, dass die Veröffentlichung der Assets zum angegebenen Datum aufgehoben werden soll.
 
 Machen Sie sich mit den folgenden Einschränkungen und Tipps im Zusammenhang mit dem Veröffentlichen oder Rückgängigmachen der Veröffentlichung von Assets oder Ordnern vertraut:
 
@@ -615,12 +615,12 @@ CUG bietet eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschr
 
    ![login_page](assets/login_page.png)
 
-   Wenn Sie den Pfad zur Anmeldeseite nicht angeben, zeigt AEM die standardmäßige Anmeldeseite in der Veröffentlichungsinstanz an.
+   Wenn Sie den Pfad zur Anmeldeseite nicht angeben, zeigt [!DNL Experience Manager] die standardmäßige Anmeldeseite in der Veröffentlichungsinstanz an.
 
 1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
-1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von AEM authentifiziert wurden, wird der Ordner angezeigt.
+1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von [!DNL Experience Manager] authentifiziert wurden, wird der Ordner angezeigt.
 
-## Suchen von Assets  {#searching-assets}
+## Suchen von Assets {#searching-assets}
 
 Die grundlegende Suche wird im Abschnitt über das [Suchen und Filtern](/help/sites-authoring/search.md#search-and-filter) detailliert beschrieben. Verwenden Sie das Bedienfeld **[!UICONTROL Suchen]** , um nach Assets, Tags und Metadaten zu suchen. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen. Darüber hinaus können Sie den Bereich **[!UICONTROL Suche]** mithilfe von [Suchfacetten](search-facets.md) anpassen.
 
@@ -628,7 +628,7 @@ Die grundlegende Suche wird im Abschnitt über das [Suchen und Filtern](/help/si
 
 Bei kürzlich hochgeladenen Assets sind ihre Metadaten (einschließlich Titel, Tags usw.) nicht sofort in der Liste der Vorschläge verfügbar, die angezeigt werden, wenn Sie in das Omnisearch-Feld eingeben.
 
-Das liegt daran, dass AEM Assets erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig 1 Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen/aktualisierten Assets erstellt und sie der Liste der Vorschläge hinzufügt.
+Dies liegt daran, dass [!DNL Experience Manager] Assets bis zum Ablauf einer Timeout-Zeit (standardmäßig 1 Stunde) wartet, bevor ein Hintergrundauftrag ausgeführt wird, um die Metadaten für alle neu hochgeladenen/aktualisierten Assets zu indizieren und sie zur Liste der Vorschläge hinzuzufügen.
 
 ## Verwenden von Schnellaktionen {#quick-actions}
 
@@ -655,7 +655,7 @@ Weitere Informationen finden Sie unter [Anzeigen und Auswählen Ihrer Ressourcen
 
 ## Bearbeiten von Bildern {#editing-images}
 
-Mit den Bearbeitungswerkzeugen in der Oberfläche von AEM Assets können Sie kleine Bearbeitungsaktionen in Bild-Assets durchführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
+Mit den Bearbeitungswerkzeugen in der Oberfläche [!DNL Experience Manager] Assets können Sie kleine Bearbeitungsvorgänge an Bild-Assets durchführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
 
 Die Bildbearbeitung wird für Dateien mit den folgenden Formaten unterstützt:
 
@@ -715,7 +715,7 @@ Mit der **[!UICONTROL Timeline]** können Sie verschiedene Ereignisse für ein a
 
 In der [Konsole für Sammlungen](managing-collections-touch-ui.md#navigating-the-collections-console) bietet die Liste **[!UICONTROL Alle anzeigen]** Optionen, um nur Kommentare und Workflows anzuzeigen. Darüber hinaus wird die Zeitleiste nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
 
-**** Die Zeitleiste enthält mehrere  [inhaltsfragmentspezifische Optionen](content-fragments-managing.md#timeline-for-content-fragments). Diese Funktion erfordert  [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)  oder höher.
+**** Die Zeitleiste enthält mehrere  [inhaltsfragmentspezifische Optionen](content-fragments-managing.md#timeline-for-content-fragments). Diese Funktion erfordert  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
 
 **So verwenden Sie die Timeline**:
 
@@ -732,9 +732,9 @@ In der [Konsole für Sammlungen](managing-collections-touch-ui.md#navigating-the
 
 Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos hinzugefügt werden. Anmerkungen bieten Marketern die Möglichkeit, zusammenzuarbeiten und Feedback zu Assets bereitzustellen.
 
-Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Von AEM Assets unterstützte Videoformate sind vom jeweiligen Browser abhängig.
+Videoanmerkungen werden nur bei Browsern mit HTML5-kompatiblen Videoformaten unterstützt. Videoformate, die von [!DNL Experience Manager] Assets unterstützt werden, hängen vom Browser ab.
 
-Für Inhaltsfragmente werden [Anmerkungen im Editor](content-fragments-variations.md#annotating-a-content-fragment) erstellt. Diese Funktion erfordert [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
+Für Inhaltsfragmente werden [Anmerkungen im Editor](content-fragments-variations.md#annotating-a-content-fragment) erstellt. Diese Funktion erfordert [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
 
 Sie können mehrere Anmerkungen hinzufügen, bevor Sie diese speichern.
 
@@ -748,7 +748,7 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
 1. Tippen Sie auf das Symbol **[!UICONTROL Anmerken]** aus einem der folgenden Elemente:
 
    * [Schnellaktionen](managing-assets-touch-ui.md#quick-actions)
-   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben   oder zur Asset-Seite navigiert sind
+   * In der Symbolleiste, nachdem Sie das Asset ausgewählt haben oder zur Asset-Seite navigiert sind
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -769,7 +769,7 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. Tippen Sie auf **[!UICONTROL Close]**, um den Modus **[!UICONTROL Anmerkung]** zu beenden.
-1. Um die Benachrichtigung anzuzeigen, melden Sie sich mit den Anmeldedaten von Aaron MacDonald bei AEM Assets an und tippen Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**, um die Benachrichtigung anzuzeigen.
+1. Um die Benachrichtigung anzuzeigen, melden Sie sich bei [!DNL Experience Manager] Assets mit den Anmeldedaten von Aaron MacDonald an und tippen Sie auf das Symbol **[!UICONTROL Benachrichtigungen]**, um die Benachrichtigung anzuzeigen.
 
 1. Um eine andere Farbe auszuwählen, sodass Sie zwischen Benutzern unterscheiden können, tippen Sie auf das Symbol **[!UICONTROL Profil]** und dann auf **[!UICONTROL Meine Voreinstellungen]**.
 
@@ -861,12 +861,12 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf das Symbol
 
    Kehren Sie zu der gerenderten PDF-Datei zurück und aktualisieren Sie sie. Der aktualisierte PDF-Datei spiegelt die von Ihnen vorgenommenen Änderungen wider.
 
-**So drucken Sie Anmerkungen in Fremdsprachen**: Wenn ein Asset Anmerkungen in Fremdsprachen enthält (insbesondere Sprachen, die nicht lateinisch sind), müssen Sie zunächst den CQ-DAM-Handler-Gibson Font Manager Service auf dem AEM-Server konfigurieren, damit Sie diese Anmerkungen drucken können. Beim Konfigurieren des CQ-DAM-Handler-Gibson Font Manager Service geben Sie den Pfad an, über den auf die gewünschten Sprachen zugegriffen werden kann.
+**So drucken Sie Anmerkungen in Fremdsprachen**: Wenn ein Asset Anmerkungen in Fremdsprachen enthält (insbesondere Sprachen, die nicht lateinisch sind), müssen Sie zunächst den CQ-DAM-Handler-Gibson Font Manager Service auf dem  [!DNL Experience Manager] Server konfigurieren, um diese Anmerkungen drucken zu können. Beim Konfigurieren des CQ-DAM-Handler-Gibson Font Manager Service geben Sie den Pfad an, über den auf die gewünschten Sprachen zugegriffen werden kann.
 
 1. Öffnen Sie die Konfigurationsseite **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** über die URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Um **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** zu konfigurieren, führen Sie einen der folgenden Schritte aus:
 
-   * Geben Sie in der Ordneroption **[!UICONTROL Systemschriftarten]** den vollständigen Pfad zum Schriftartenverzeichnis auf Ihrem System an. Wenn Sie beispielsweise ein Mac-Benutzer sind, können Sie den Pfad in der Ordneroption **[!UICONTROL Systemschriftarten]** als `/Library/Fonts` angeben. AEM ruft die Schriftarten aus diesem Verzeichnis ab.
+   * Geben Sie in der Ordneroption **[!UICONTROL Systemschriftarten]** den vollständigen Pfad zum Schriftartenverzeichnis auf Ihrem System an. Wenn Sie beispielsweise ein Mac-Benutzer sind, können Sie den Pfad in der Ordneroption **[!UICONTROL Systemschriftarten]** als `/Library/Fonts` angeben. [!DNL Experience Manager] ruft die Schriftarten aus diesem Verzeichnis ab.
    * Erstellen Sie im Ordner **crx-quickstart** ein Verzeichnis mit dem Namen **[!UICONTROL fonts]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** Service ruft die Schriftarten automatisch am Speicherort ab  `crx-quickstart/fonts`. Sie können diesen Standardpfad über die Ordneroption **[!UICONTROL Adobe Server Fonts]** überschreiben.
    * Erstellen Sie einen neuen Ordner für Schriftarten in Ihrem System und speichern Sie in diesem Ordner die gewünschten Schriftarten. Geben Sie dann den vollständigen Pfad zu diesem Ordner in der Ordneroption **[!UICONTROL Kundenschriftarten]** an.
 
@@ -875,9 +875,9 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf das Symbol
 
    * Schließen Sie die Zeichenfolge `<font_family_name_of_custom_font, sans-serif>` in der Schriftartoption ein. Wenn Sie z. B. Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) drucken möchten, schließen Sie die Zeichenfolge `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in die Schriftartoption ein. Wenn Sie Anmerkungen in Hindi drucken möchten, laden Sie die entsprechende Schriftart herunter. Anschließend konfigurieren Sie die Schriftart als Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, Sans-Serif.
 
-1. Starten Sie die AEM-Instanz neu.
+1. Starten Sie die [!DNL Experience Manager]-Instanz neu.
 
-Im Folgenden finden Sie ein Beispiel dafür, wie Sie AEM konfigurieren, um Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) zu drucken:
+Im Folgenden finden Sie ein Beispiel dafür, wie Sie [!DNL Experience Manager] konfigurieren, um Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) zu drucken:
 
 1. Laden Sie die Google Noto CJK-Schriftarten über die folgenden Links herunter und speichern Sie sie im Schriftartenverzeichnis, das in Font Manager Service konfiguriert ist.
 
@@ -894,9 +894,9 @@ Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bes
 
 In folgenden Szenarien werden Versionen erstellt:
 
-* Sie ändern ein Bild in einer anderen Anwendung und laden es in AEM Assets hoch. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
+* Sie ändern ein Bild in einer anderen Anwendung und laden es in [!DNL Experience Manager] Assets hoch. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
 * Sie können die Metadaten eines Assets bearbeiten.
-* Sie verwenden das AEM-Desktop-Programm, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Bei jedem Speichern des Assets wird eine neue Version erstellt.
+* Sie verwenden das [!DNL Experience Manager]-Desktop-Programm, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Bei jedem Speichern des Assets wird eine neue Version erstellt.
 
 Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabedarstellungen gemeinsam mit der Version gespeichert. Ausgabedarstellungen sind gerenderte Alternativen für dieselben Bilder, z. B. eine PNG-Ausgabedarstellung einer hochgeladenen JPEG-Datei.
 
@@ -952,7 +952,7 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
 ### Starten eines Workflows für ein Asset {#starting-a-workflow-on-an-asset}
 
-Siehe [Anwenden eines Workflows auf ein AEM Asset](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
+Siehe [Anwenden eines Workflows auf ein [!DNL Experience Manager] Asset](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
 
 ## Über Sammlungen {#collections}
 

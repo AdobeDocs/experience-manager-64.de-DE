@@ -1,20 +1,20 @@
 ---
 title: Best Practices für Dateiformate in Assets
-description: Best Practices für die Dateiunterstützung in AEM Assets.
+description: Best Practices für die Dateiunterstützung in [!DNL Experience Manager] Assets.
 contentOwner: AG
-feature: Asset Management,Entwicklertools
+feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 91%
+source-wordcount: '424'
+ht-degree: 88%
 
 ---
 
 # Best Practices für Dateiformate in Assets {#assets-file-format-best-practices}
 
-AEM Assets unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. Zu den unterstützten Adobe-Bibliotheken zählen Adobe Camera Raw, Gibson, Adobe PDF Rasterizer und Adobe InDesign Server. Außerdem unterstützt AEM Assets Drittanbieterbibliotheken, darunter ImageMagick, TwelveMonkeys usw.
+[!DNL Experience Manager Assets] unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. Zu den unterstützten Adobe-Bibliotheken zählen Adobe Camera Raw, Gibson, Adobe PDF Rasterizer und Adobe InDesign Server. Darüber hinaus unterstützt [!DNL Assets] Drittanbieterbibliotheken, einschließlich ImageMagick, TzwölfMonkeys usw.
 
 Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).
 
@@ -27,7 +27,7 @@ Für optimale Leistung empfiehlt Adobe die Verwendung der Adobe Camera Raw-Bibli
 
 Die Adobe Camera Raw-Bibliothek unterstützt das CMYK-Farbprofil als Eingabe. Sie generiert die Ausgabe jedoch im RGB-Farbraum und unterstützt nur Darstellungen im JPEG-Format. Sie behält nicht den Quelldatei-Farbraum (z. B. CMYK) in den Miniaturen bei.
 
-Weitere Informationen finden Sie unter [Camera Raw-Unterstützung](camera-raw.md) in AEM Assets.
+Weitere Informationen finden Sie unter [Camera Raw-Unterstützung](camera-raw.md) in [!DNL Assets].
 
 ## Adobe PDF Rasterizer-Bibliothek {#adobe-pdf-rasterizer-library}
 
@@ -41,7 +41,7 @@ Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, habe
 
 ## Adobe InDesign Server {#adobe-indesign-cc-server}
 
-Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. Weitere Informationen finden Sie unter [Hinzufügen AEM Assets als Referenzen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. Weitere Informationen finden Sie unter [Hinzufügen von [!DNL Experience Manager] Assets als Referenzen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -58,7 +58,7 @@ Adobe empfiehlt, die ImageMagick-Bibliothek für folgende Zwecke zu verwenden:
 * Beibehaltung von Transparenz
 * Verarbeitung von PSD- und PSB-Dateien
 
-Informationen zum Einrichten der ImageMagic-Bibliothek in AEM finden Sie unter [Verwenden von ImageMagick](media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](best-practices-for-imagemagick.md).
+Informationen zum Einrichten der ImageMagic-Bibliothek in [!DNL Experience Manager] finden Sie unter [Verwenden von ImageMagick](media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](best-practices-for-imagemagick.md).
 
 ## Imaging Transcoding Library {#image-transcoding-library}
 

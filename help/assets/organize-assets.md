@@ -2,12 +2,12 @@
 title: Digitale Assets organisieren
 description: Organisieren Sie Ihre digitalen Assets, Bilder, Dateien, Ordner usw. mithilfe von Experience Manager.
 contentOwner: AG
-feature: Asset-Verwaltung, Suche
+feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '803'
 ht-degree: 19%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 19%
 
 Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokumenten werden extrahiert und für die Suche aufbereitet. Die Suche ermöglicht weitreichende Filtermöglichkeiten für Assets und hält dabei vollständig die korrekten Berechtigungen ein. Metadaten werden in den Metadaten in Digital Asset Management ausführlich erläutert.
 
-AEM Assets unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch mithilfe von Ordnern organisieren oder ungeordnet und ad hoc organisieren, beispielsweise mithilfe von Tags. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
+[!DNL Experience Manager] Assets unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch mithilfe von Ordnern organisieren oder ungeordnet und ad hoc organisieren, beispielsweise mithilfe von Tags. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
 
 ## Organisieren von Assets in Ordnern {#organize-using-folders}
 
 Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in Ordnern zu speichern. Dies entspricht dem Organisieren von Dateien in Ordnern in unserem lokalen Dateisystem. Weitere Informationen zum Erstellen und Verwalten von Ordnern finden Sie unter [Verwalten von Assets](managing-assets-touch-ui.md). Wie Sie Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, kann erhebliche Auswirkungen auf die Verarbeitung dieser Assets haben. Durch die Verwendung konsistenter und angemessener Strategien für die Datei- und Ordnernamen sowie guter Metadatenpraktiken können Sie das gesamte digitale Asset-Repository optimal nutzen.
 
-* In den meisten Fällen wächst Ihr digitales Asset-Repository ständig. Daher ist es wichtig, die Verwendung von Metadaten, die Ordnerstruktur und die Dateibenennung frühzeitig im Erstellungszyklus des Inhalts zu formalisieren.
+* In den meisten Fällen wächst Ihr digitales Asset-Repository ständig. Daher ist es wichtig, die Metadatenverwendung, die Ordnerstruktur und die Dateibenennung frühzeitig im Erstellungszyklus des Inhalts zu formalisieren.
 * Verwenden Sie Ordner, um eine konsistente Speicherstruktur für die digitalen Assets durchzusetzen. Diese Konsistenz hilft Ihrem Prozess und der besseren Verwaltung Ihrer Assets. Beispielsweise können Sie mithilfe von Assets, die in den folgenden Ordnertypen platziert werden, geeignete [Profile für die Asset-Verarbeitung verwenden](processing-profiles.md):
 
    * **Entwicklungsordner** – enthalten digitale Assets, an denen Sie derzeit arbeiten.
@@ -36,7 +36,7 @@ Die einfachste Möglichkeit zum Organisieren von Assets besteht darin, diese in 
    * **Datumsbasierte Ordner** – enthalten digitale Assets basierend auf einem Erstellungsdatum oder dem letzten Änderungsdatum.
 
 * Erstellen Sie einen Ordner mit Ordnern, die sich wahrscheinlich nicht ändern werden, damit Anpassungen oder Automatisierungen weiterhin funktionieren. Beispielsweise funktionieren die zugewiesenen Verarbeitungsprofile weiterhin.
-* Wenn ein Asset bereits veröffentlicht ist, verwenden Sie AEM zum Verschieben des Assets in einen anderen Ordner und zum erneuten Veröffentlichen von seinem neuen Speicherort aus, ist der ursprünglich veröffentlichte Asset-Speicherort weiterhin verfügbar, zusammen mit dem neu veröffentlichten Asset. Das ursprünglich veröffentlichte Asset ist jedoch *AEM* und kann nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.
+* Wenn ein Asset bereits veröffentlicht ist und Sie [!DNL Experience Manager] verwenden, um das Asset in einen anderen Ordner zu verschieben und es von seinem neuen Speicherort aus erneut zu veröffentlichen, ist der ursprünglich veröffentlichte Asset-Speicherort weiterhin verfügbar, zusammen mit dem neu veröffentlichten Asset. Das ursprünglich veröffentlichte Asset ist jedoch *lost* bis [!DNL Experience Manager] und kann nicht rückgängig gemacht werden. Daher empfiehlt es sich, zunächst die Veröffentlichung eines Assets rückgängig zu machen und es dann in einen anderen Ordner zu verschieben.
 
 ## Organisieren von Assets mit Tags {#use-tags-to-organize-assets}
 

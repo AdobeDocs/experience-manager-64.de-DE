@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Übersetzungsprojekten für Inhaltsfragmente
-seo-title: Erstellen von Übersetzungsprojekten für Inhaltsfragmente
+seo-title: Creating Translation Projects for Content Fragments
 description: Erfahren Sie, wie Sie Inhaltsfragmente übersetzen können.
-seo-description: Erfahren Sie, wie Sie Inhaltsfragmente übersetzen können.
+seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 87%
+source-wordcount: '968'
+ht-degree: 85%
 
 ---
 
@@ -54,13 +54,13 @@ Sie können auch temporäre Sprachkopien für Fragmente erstellen, ähnlich wie 
 
 ## Übersetzen von Fragmenten mit gemischten Medien {#translating-mixed-media-fragments}
 
-In AEM können Sie Inhaltsfragmente übersetzen, die unterschiedliche Arten von Medien-Assets und Sammlungen enthalten. Wenn Sie ein Inhaltsfragment übersetzen, das Inline-Assets enthält, werden die übersetzten Kopien dieser Assets im Zielsprachstamm gespeichert.
+[!DNL Experience Manager]In können Sie Inhaltsfragmente übersetzen, die unterschiedliche Arten von Medien-Assets und Sammlungen enthalten. Wenn Sie ein Inhaltsfragment übersetzen, das Inline-Assets enthält, werden die übersetzten Kopien dieser Assets im Zielsprachstamm gespeichert.
 
 Wenn das Inhaltsfragment eine Sammlung umfasst, werden die darin enthaltenen Assets zusammen mit dem Inhaltsfragment übersetzt. Die übersetzten Kopien der Assets werden in dem jeweiligen Zielsprachenstamm an einem Speicherort gespeichert, der dem physischen Speicherort der Quell-Assets unter dem Ausgangssprachenstamm entspricht.
 
 Um Inhaltsfragmente zu übersetzen, die gemischte Medien enthalten, bearbeiten Sie zunächst das standardmäßige Übersetzungs-Framework, um die Übersetzung von mit Inhaltsfragmenten verknüpften Inline-Assets und Sammlungen zu ermöglichen.
 
-1. Klicken oder tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud-Services]**.
+1. Klicken/tippen Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools > Bereitstellung > Cloud Services]**.
 1. Suchen Sie **[!UICONTROL Übersetzungsintegration]** unter **[!UICONTROL Adobe Marketing Cloud]** und klicken/tippen Sie auf **[!UICONTROL Konfigurationen anzeigen]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

@@ -1,26 +1,26 @@
 ---
-title: AEM Assets-Startseitenerlebnis
-description: Passen Sie die AEM Assets-Startseite an, um Benutzern ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
+title: '[!DNL Experience Manager Assets] Startseiten-Erlebnis'
+description: Passen Sie die Assets-Startseite an, um Benutzern ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
 contentOwner: AG
-feature: Entwicklertools,Asset Management
+feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 56%
+source-wordcount: '557'
+ht-degree: 45%
 
 ---
 
-# AEM Assets-Startseitenerlebnis {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Startseiten-Erlebnis {#aem-assets-home-page-experience}
 
-Passen Sie die AEM Assets-Startseite an, um Benutzern ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
+Personalisieren Sie die Startseite [!DNL Experience Manager Assets] für ein umfangreiches Begrüßungsbildschirm-Erlebnis, einschließlich einer Momentaufnahme der aktuellen Aktivitäten rund um Assets.
 
-Die Adobe Experience Manager (AEM) Assets-Startseite bietet ein ansprechendes und personalisiertes Willkommenserlebnis, einschließlich einer Übersicht der letzten Aktivitäten, wie z. B. kürzlich angezeigte oder hochgeladene Assets.
+Die Startseite [!DNL Adobe Experience Manager Assets] bietet ein umfangreiches und personalisiertes Begrüßungsbildschirm-Erlebnis, das eine Momentaufnahme aktueller Aktivitäten enthält, z. B. Assets, die kürzlich angezeigt oder hochgeladen wurden.
 
 Die Assets-Startseite ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um sie zu aktivieren:
 
-1. Um auf AEM Configuration Manager zuzugreifen, klicken Sie auf **[!UICONTROL Tools > Vorgang > Web Console]**.
+1. Um auf [!DNL Experience Manager] Configuration Manager zuzugreifen, klicken Sie auf **[!UICONTROL Tools > Vorgang > Web Console]**.
 1. Öffnen Sie den Dienst **Day CQ DAM Event Recorder** .
 1. Wählen Sie **[!UICONTROL Aktivieren Sie diesen Dienst]**, um die Aktivitätsaufzeichnung zu aktivieren.
 
@@ -70,7 +70,7 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 
 **Zuletzt**: Das Widget  **Kürzlich** angezeigte Anzeigen unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten, auf die der angemeldete Benutzer zugegriffen hat, einschließlich Ordnern, Sammlungen und Projekten.
 
-**Discover**: Das  **** Newwidget unter diesem Abschnitt zeigt die Assets und Ausgabedarstellungen an, die kürzlich in die AEM Assets-Instanz hochgeladen wurden.
+**Discover**: Das  **** Newwidget unter diesem Abschnitt zeigt die Assets und Ausgabedarstellungen an, die kürzlich in die  [!DNL Assets] Instanz hochgeladen wurden.
 
 Um die Bereinigung der Benutzeraktivitätsdaten zu aktivieren, aktivieren Sie den **DAM-Ereignisbereinigungsdienst** in Configuration Manager. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
 
@@ -78,7 +78,7 @@ Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in
 
 >[!NOTE]
 >
->Durch die Aktivierung der Day CQ DAM Event Recorder- und DAM Event Purge-Dienste werden Schreibvorgänge in JCR und die Suchindizierung erhöht, wodurch die Belastung des AEM-Servers deutlich erhöht wird. Die zusätzliche Last auf dem AEM-Server kann dessen Leistung beeinträchtigen.
+>Durch die Aktivierung der Day CQ DAM Event Recorder- und DAM Event Purge-Dienste werden Schreibvorgänge in JCR und die Suchindizierung erhöht, wodurch die Last auf dem [!DNL Experience Manager]-Server deutlich erhöht wird. Die zusätzliche Belastung des [!DNL Experience Manager]-Servers kann sich auf seine Leistung auswirken.
 
 >[!CAUTION]
 >

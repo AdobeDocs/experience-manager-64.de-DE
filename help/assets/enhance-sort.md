@@ -1,28 +1,28 @@
 ---
 title: Optimierte Sortierung von Assets in AEM
-description: Erfahren Sie, wie AEM Assets mit der serverseitigen Sortierung Ordner-Assets oder Suchanfragen in einem Durchgang sortiert, anstatt sie in Batches auf Clientseite zu verarbeiten.
+description: Erfahren Sie, wie [!DNL Experience Manager] Assets eine serverseitige Sortierung bereitstellt, um Ordner-Assets oder eine Suchabfrage auf einmal zu sortieren, anstatt sie in Stapeln auf der Clientseite zu sortieren.
 contentOwner: AG
-feature: Suche
+feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 93%
+source-wordcount: '433'
+ht-degree: 74%
 
 ---
 
-# Optimierte Sortierung von Assets in AEM {#enhanced-sorting-of-assets-in-aem}
+# Optimierte Sortierung von Assets in [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Erfahren Sie, wie AEM Assets mit der serverseitigen Sortierung Ordner-Assets oder Suchanfragen in einem Durchgang sortiert, anstatt sie in Batches auf Clientseite zu verarbeiten.
+Erfahren Sie, wie [!DNL Experience Manager] Assets eine serverseitige Sortierung bereitstellt, um Ordner-Assets oder Suchabfragen auf einmal zu sortieren, anstatt sie in Stapeln auf der Clientseite zu sortieren.
 
-Die Suchfunktion von Adobe Experience Manager (AEM) Assets wurde verbessert, um eine große Anzahl von Assets in der Ordnerlistenansicht und auf Suchergebnisseiten effizient zu sortieren.  Timeline-Einträge können ebenfalls sortiert werden. 
+Die Suchfunktion von Adobe Experience Manager Assets wurde verbessert, um eine große Anzahl von Assets in der Ordnerlistenansicht und den Suchergebnisseiten effizient zu sortieren. Timeline-Einträge können ebenfalls sortiert werden. 
 
-AEM Assets setzt auf eine serverseitige Sortierung, um alle Assets (unabhängig von ihrer Größe) in einem Ordner oder in einer Suchabfrage in einem Schritt und nicht stapelweise auf Clientseite zu sortieren.  Auf diese Weise können per Prefetch abgerufene Ergebnisse schnell in der Benutzeroberfläche angezeigt werden. Der Sortiervorgang wird hierdurch responsiver und schneller. 
+[!DNL Experience Manager] Assets setzt auf eine serverseitige Sortierung, um alle Assets (unabhängig von ihrer Größe) in einem Ordner oder in einer Suchabfrage in einem Schritt und nicht stapelweise auf Clientseite zu sortieren.  Auf diese Weise können per Prefetch abgerufene Ergebnisse schnell in der Benutzeroberfläche angezeigt werden. Der Sortiervorgang wird hierdurch responsiver und schneller. 
 
 ## Sortieren von Assets in der Listenansicht {#sorting-assets-in-list-view}
 
-Mit AEM Assets können Sie Ordner-Assets basierend auf den folgenden Feldern sortieren: 
+[!DNL Experience Manager]Mit Assets können Sie Ordner-Assets basierend auf den folgenden Feldern sortieren: 
 
 * Gebietsschema
 * Status
@@ -75,7 +75,7 @@ Sie können die Suchergebnisse basierend auf den folgenden Feldern sortieren:
 
 ## Sortieren von Assets in der Timeline {#sorting-assets-in-timeline}
 
-Mit AEM Assets können Sie Timeline-Einträge chronologisch sortieren, wie z. B. Anmerkungen, Versionen, Workflows und Aktivitäten. 
+[!DNL Assets]Mit können Sie Timeline-Einträge chronologisch sortieren, wie z. B. Anmerkungen, Versionen, Workflows und Aktivitäten. 
 
 1. Wählen Sie über die Assets-Benutzeroberfläche ein Asset aus, für das die Timeline angezeigt werden soll. 
 1. Klicken/tippen Sie auf das GlobalNav-Symbol und wählen Sie **[!UICONTROL Timeline]** aus.

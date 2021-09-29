@@ -5,26 +5,26 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 52%
+source-wordcount: '403'
+ht-degree: 45%
 
 ---
 
 # Veröffentlichen von Assets in Brand Portal {#publish-assets-to-brand-portal}
 
-Als Adobe Experience Manager (AEM) Assets-Administrator können Sie Assets für Ihr Unternehmen in der AEM Assets Brand Portal-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow zu einem späteren Zeitpunkt planen). Sie müssen AEM Assets jedoch zuerst mit Brand Portal konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren der von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md).
+Als Adobe Experience Manager Assets-Administrator können Sie Assets für Ihr Unternehmen in der [!DNL Experience Manager Assets Brand Portal]-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow zu einem späteren Zeitpunkt planen). Sie müssen [!DNL Assets] jedoch zunächst mit [!DNL Brand Portal] konfigurieren. Weitere Informationen finden Sie unter [Konfigurieren [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md).
 
 Nachdem Sie ein Asset veröffentlicht haben, ist es für Benutzer in Brand Portal verfügbar.
 
-Wenn Sie nachfolgende Änderungen am ursprünglichen Asset in AEM Assets vornehmen, werden die Änderungen erst dann in Brand Portal übernommen, wenn Sie das Asset erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
+Wenn Sie nachfolgende Änderungen am ursprünglichen Asset in [!DNL Assets] vornehmen, werden die Änderungen erst dann in Brand Portal übernommen, wenn Sie das Asset erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
-Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in Brand Portal veröffentlichen. Gehen Sie wie folgt vor, um Assets in Brand Portal zu veröffentlichen:
+Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in [!DNL Brand Portal] veröffentlichen. Gehen Sie wie folgt vor, um Assets in Brand Portal zu veröffentlichen:
 
 >[!NOTE]
 >
->Adobe empfiehlt eine gestaffelte Veröffentlichung, vorzugsweise außerhalb der Spitzenzeiten, sodass die AEM-Autoreninstanz keine übermäßigen Ressourcen belegt.
+>Adobe empfiehlt eine gestaffelte Veröffentlichung, vorzugsweise außerhalb der Spitzenzeiten, damit der Autor [!DNL Experience Manager] keine überschüssigen Ressourcen besetzt.
 
 1. Bewegen Sie in der Assets-Konsole den Mauszeiger auf die gewünschten Assets und wählen Sie aus den Schnellaktionen die Option **[!UICONTROL Veröffentlichen]** aus.
 

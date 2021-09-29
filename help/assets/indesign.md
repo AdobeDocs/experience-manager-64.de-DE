@@ -1,27 +1,27 @@
 ---
-title: Integrieren von AEM Assets mit Adobe InDesign Server
-description: Erfahren Sie mehr über die Integration von AEM Assets mit InDesign Server.
+title: Integrieren von [!DNL Experience Manager] Assets mit Adobe InDesign Server
+description: Erfahren Sie, wie Sie  [!DNL Experience Manager] Assets mit InDesign Server integrieren.
 contentOwner: AG
-feature: Veröffentlichung
+feature: Publishing
 role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 65%
+source-wordcount: '1674'
+ht-degree: 51%
 
 ---
 
-# Integrieren von AEM Assets mit Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+# Integration von Assets mit Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
-Adobe Experience Manager (AEM) Assets nutzt:
+Adobe Experience Manager Assets verwendet:
 
-* Einen Proxy für den Lastenausgleich bei der Verarbeitung bestimmter Aufgaben. Ein Proxy ist eine AEM-Instanz, die mit einem Proxy Worker kommuniziert, um eine bestimmte Aufgabe zu erfüllen, sowie mit anderen AEM-Instanzen, um das Ergebnis bereitzustellen.
+* Einen Proxy für den Lastenausgleich bei der Verarbeitung bestimmter Aufgaben. Ein Proxy ist eine [!DNL Experience Manager]-Instanz, die mit einem Proxy Worker kommuniziert, um eine bestimmte Aufgabe zu erfüllen, und mit anderen [!DNL Experience Manager]-Instanzen, um die Ergebnisse bereitzustellen.
 * Einen Proxy Worker zum Definieren und Verwalten einer bestimmten Aufgabe.
 
 Diese können eine Vielzahl von Aufgaben abdecken; Beispielsweise die Verwendung einer Adobe InDesign Server zur Verarbeitung von Dateien.
 
-Um Dateien, die Sie mit Adobe InDesign erstellt haben, vollständig in AEM Assets zu laden, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit Adobe InDesign Server, wo [Skripte](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabeformate für AEM Assets zu generieren. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen InDesign Server und den AEM-Instanzen in einer Cloud-Konfiguration.
+Um Dateien vollständig in [!DNL Experience Manager] Assets hochzuladen, die Sie mit Adobe InDesign erstellt haben, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit Adobe InDesign Server, wo [Skripte](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabeformate für Assets zu generieren. [!DNL Experience Manager] Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen der InDesign Server und den [!DNL Experience Manager] Instanzen in einer Cloud-Konfiguration.
 
 >[!NOTE]
 >
@@ -29,25 +29,23 @@ Um Dateien, die Sie mit Adobe InDesign erstellt haben, vollständig in AEM Asset
 >
 >* [InDesign](https://www.adobe.com/de/products/indesign.html)\
    >  Damit können Sie Seiten-Layouts für den Druck bzw. die digitale Distribution entwerfen.
-   >
-   >
-* [InDesign Server](https://www.adobe.com/de/products/indesignserver.html)\
+>
+>* [InDesign Server](https://www.adobe.com/de/products/indesignserver.html)\
    >  Diese Engine ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit InDesign entworfen haben. Die Engine fungiert als Dienst, der eine Schnittstelle seiner [ExtendScript](https://www.adobe.com/devnet/scripting.html)-Engine bereitstellt.\
-   >  Die Skripte werden in ExtendScript geschrieben, das JavaScript ähnelt. Weitere Informationen zu InDesign-Skripten finden Sie unter [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+   >  Die Skripte werden in ExtendScript geschrieben, das JavaScript ähnelt. Weitere Informationen zu Adobe InDesign-Skripten finden Sie unter [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 >
-
 
 
 ## So funktioniert die Extraktion {#how-the-extraction-works}
 
-Die InDesign Server kann in AEM Assets integriert werden, sodass mit InDesign ( `.indd`) erstellte Dateien hochgeladen, Ausgabeformate generiert, *alle* Medien extrahiert (z. B. Video) und als Assets gespeichert werden können:
+Die InDesign Server kann in [!DNL Experience Manager] Assets integriert werden, sodass mit InDesign ( `.indd`) erstellte Dateien hochgeladen, Ausgabeformate generiert, *alle* Medien extrahiert (z. B. Video) und als Assets gespeichert werden können:
 
 >[!NOTE]
 >
->Frühere Versionen von AEM konnten XMP und die Miniaturansicht extrahieren, während jetzt alle Medien extrahiert werden können.
+>Frühere Versionen von [!DNL Experience Manager] konnten XMP und die Miniaturansicht extrahieren, jetzt können alle Medien extrahiert werden.
 
-1. Laden Sie Ihre `.indd`-Datei in AEM Assets hoch.
+1. Laden Sie die Datei `.indd` in [!DNL Experience Manager] Assets hoch.
 1. Ein Framework sendet Befehlsskripte via SOAP (Simple Object Access Protocol) an InDesign Server.
 
 
@@ -59,7 +57,7 @@ Die InDesign Server kann in AEM Assets integriert werden, sodass mit InDesign ( 
       * Struktur, Text und alle Mediendateien werden extrahiert.
       * PDF- und JPG-Ausgabeformate werden generiert.
       * HTML- und IDML-Ausgabeformate werden generiert.
-   * Veröffentlicht die resultierenden Dateien wieder in AEM Assets.
+   * Posten Sie die resultierenden Dateien zurück in [!DNL Experience Manager] Assets.
 
    >[!NOTE]
    >
@@ -69,20 +67,20 @@ Die InDesign Server kann in AEM Assets integriert werden, sodass mit InDesign ( 
 
    >[!CAUTION]
    >
-   >Wenn die InDesign Server nicht installiert oder nicht konfiguriert ist, können Sie dennoch eine `.indd`-Datei in AEM hochladen. Die generierten Ausgabedarstellungen sind jedoch auf `png` und `jpeg` beschränkt, Sie können `html`, `idml` oder die Seitenausgabeformate nicht generieren.
+   >Wenn die InDesign Server nicht installiert oder nicht konfiguriert ist, können Sie dennoch eine `.indd`-Datei in [!DNL Experience Manager] hochladen. Die generierten Ausgabedarstellungen sind jedoch auf `png` und `jpeg` beschränkt, Sie können `html`, `idml` oder die Seitenausgabeformate nicht generieren.
 
 1. Nach der Extraktion und Ausgabegenerierung:
 
    * Die Struktur wird auf einer `cq:Page` repliziert (Ausgabetyp).
-   * Der extrahierte Text und die Dateien werden in AEM Assets gespeichert.
-   * Alle Ausgabeformate werden in AEM Assets im Asset selbst gespeichert.
+   * Der extrahierte Text und die Dateien werden in [!DNL Experience Manager] Assets gespeichert.
+   * Alle Ausgabedarstellungen werden in [!DNL Experience Manager] Assets im Asset selbst gespeichert.
 
-## Integrieren von InDesign Server in AEM   {#integrating-the-indesign-server-with-aem}
+## Integrieren von InDesign Server in [!DNL Experience Manager] {#integrating-the-indesign-server-with-aem}
 
-Um InDesign Server für die Verwendung mit AEM Assets zu integrieren und nach der Konfiguration des Proxys müssen Sie folgende Schritte durchführen:
+Um die InDesign Server zur Verwendung mit [!DNL Experience Manager] Assets zu integrieren und nach der Konfiguration Ihres Proxys müssen Sie:
 
 1. [Installieren Sie InDesign Server](#installing-the-indesign-server).
-1. Falls erforderlich, [konfigurieren Sie den AEM Assets-Workflow](#configuring-the-aem-assets-workflow).
+1. Falls erforderlich, [ [!DNL Experience Manager] konfigurieren Sie den Assets-Workflow](#configuring-the-aem-assets-workflow).
 
    Dies ist nur dann notwendig, wenn die Standardwerte für Ihre Instanz nicht geeignet sind.
 
@@ -90,7 +88,7 @@ Um InDesign Server für die Verwendung mit AEM Assets zu integrieren und nach d
 
 ### Installieren von InDesign Server   {#installing-the-indesign-server}
 
-Um InDesign Server für die Verwendung mit AEM zu installieren und zu starten, gehen Sie wie folgt vor:
+So installieren und starten Sie die InDesign Server zur Verwendung mit [!DNL Experience Manager]:
 
 1. Laden Sie Adobe InDesign Server herunter und installieren Sie ihn.
 
@@ -112,16 +110,16 @@ Um InDesign Server für die Verwendung mit AEM zu installieren und zu starten, g
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### Konfigurieren des AEM Assets-Workflows {#configuring-the-aem-assets-workflow}
+### Konfigurieren des Workflows [!DNL Experience Manager] &quot;Assets&quot; {#configuring-the-aem-assets-workflow}
 
-AEM Assets verfügt über einen vorkonfigurierten Workflow **DAM Update Asset**, der mehrere Prozessschritte speziell für InDesign umfasst:
+[!DNL Experience Manager] Assets verfügt über einen vorkonfigurierten Workflow  **DAM Update Asset**, der mehrere Prozessschritte speziell für das InDesign umfasst:
 
 * [Extrahierung von Medien](#media-extraction)
 * [Extrahierung von Seiten  ](#page-extraction)
 
 Dieser Workflow wird mit Standardwerten konfiguriert, die für Ihr Setup in den verschiedenen Autoreninstanzen angepasst werden können. (Dies ist ein Standard-Workflow. Deshalb finden Sie weitere Information unter [Bearbeiten eines Workflows](/help/sites-developing/workflows-models.md#configuring-a-workflow-step).) Wenn Sie die Standardwerte (einschließlich SOAP-Port) verwenden, ist keine Konfiguration erforderlich.
 
-Nach Abschluss des Setups löst das Hochladen von InDesign-Dateien in AEM Assets (mithilfe einer der üblichen Methoden) den Workflow für die Verarbeitung des Assets und Vorbereitung der verschiedenen Ausgabeformate aus. Testen Sie Ihre Konfiguration, indem Sie eine `.indd`-Datei in AEM Assets hochladen und auf diese Weise überprüfen, ob IDS verschiedene Ausgabeformate unter `<*your_asset*>.indd/Renditions` erstellt. 
+Nach dem Setup wird beim Hochladen von InDesign-Dateien in [!DNL Experience Manager] Assets (mit einer der üblichen Methoden) der für die Verarbeitung des Assets und Vorbereitung der verschiedenen Ausgabeformate erforderliche Workflow Trigger. Testen Sie Ihre Konfiguration, indem Sie eine `.indd`[!DNL Experience Manager]-Datei in  Assets hochladen und auf diese Weise überprüfen, ob IDS verschiedene Ausgabeformate unter  erstellt. `<*your_asset*>.indd/Renditions`
 
 #### Extrahierung von Medien {#media-extraction}
 
@@ -143,13 +141,13 @@ Argumente und Skriptpfade zum Extrahieren von Medien
 >
 >Ändern Sie nicht die ExtendScript-Bibliothek. Die Bibliothek bietet die HTTP-Funktionalität, die für die Kommunikation mit Sling erforderlich ist. Diese Einstellung gibt die Bibliothek an, die zur Verwendung an die Adobe InDesign Server gesendet werden soll.
 
-Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt &quot;Extrahierung von Medien&quot;ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Dieses Ausgabeformat wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für AEM erforderlichen statischen Ausgabeformate zu rendern.
+Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt &quot;Extrahierung von Medien&quot;ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Diese Ausgabedarstellung wird vom Workflow-Schritt &quot;Miniaturansichten verarbeiten&quot;verwendet, um die für [!DNL Experience Manager] erforderlichen statischen Ausgabedarstellungen zu generieren.
 
-Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Voreinstellungen nicht entfernen, da sie für die AEM Assets-Benutzeroberfläche erforderlich sind. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
+Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Standardwerte nicht entfernen, da sie für die Benutzeroberfläche [!DNL Experience Manager] Assets erforderlich sind. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
 
 #### Extrahierung von Seiten   {#page-extraction}
 
-Dabei wird eine AEM-Seite aus den extrahierten Elementen erstellt. Das Extrahieren von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extrahierungshandlers. Diese Daten werden verwendet, um eine Seite mit PageBuilder zu erstellen.
+Dadurch wird aus den extrahierten Elementen eine [!DNL Experience Manager]-Seite erstellt. Das Extrahieren von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extrahierungshandlers. Diese Daten werden verwendet, um eine Seite mit PageBuilder zu erstellen.
 
 Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf der Registerkarte **Argumente** vornehmen.
 
@@ -187,7 +185,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 
 ### Konfigurieren von Day CQ Link Externalizer  {#configuring-day-cq-link-externalizer}
 
-Wenn sich die InDesign Server und AEM auf unterschiedlichen Hosts befinden oder eine oder beide dieser Anwendungen nicht an Standardanschlüssen funktionieren, konfigurieren Sie **Day CQ Link Externalizer**, um den Hostnamen, Port und Inhaltspfad für die InDesign Server festzulegen.
+Wenn sich die InDesign Server und [!DNL Experience Manager] auf unterschiedlichen Hosts befinden oder eine oder beide dieser Anwendungen nicht an Standardanschlüssen funktionieren, konfigurieren Sie **Day CQ Link Externalizer**, um den Hostnamen, Port und Inhaltspfad für die InDesign Server festzulegen.
 
 1. Greifen Sie auf Configuration Manager über die URL `https://[AEM_server]:[port]/system/console/configMgr` zu.
 1. Suchen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Klicken Sie auf **[!UICONTROL Bearbeiten]** , um zu öffnen.
@@ -252,7 +250,7 @@ Führen Sie für InDesign Server 10.0 oder höher die folgenden Schritte durch,
 
 ## Experience Manager-Anmeldedaten konfigurieren {#configure-aem-credentials}
 
-Sie können die standardmäßigen Administratorberechtigungen (Benutzername und Kennwort) für den Zugriff auf den InDesign-Server von Ihrer AEM-Instanz aus ändern, ohne die Integration mit dem Adobe InDesign-Server zu unterbrechen.
+Sie können die standardmäßigen Administratorberechtigungen (Benutzername und Kennwort) für den Zugriff auf den InDesign-Server von Ihrer [!DNL Experience Manager]-Instanz aus ändern, ohne die Integration mit dem Adobe InDesign-Server zu unterbrechen.
 
 1. Wechseln zu `/etc/cloudservices/proxy.html`.
 1. Geben Sie in diesem Dialogfeld den neuen Benutzernamen und das Kennwort ein.

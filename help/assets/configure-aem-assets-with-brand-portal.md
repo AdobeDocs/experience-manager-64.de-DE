@@ -5,16 +5,16 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1646'
 ht-degree: 54%
 
 ---
 
 # Konfigurieren von AEM Assets mit Brand Portal {#configure-integration-64}
 
-Adobe Experience Manager (AEM) Assets wird mit Brand Portal über [!DNL Adobe I/O] konfiguriert, das ein IMS-Token zur Autorisierung Ihres Brand Portal-Mandanten abruft.
+Adobe Experience Manager Assets wird mit Brand Portal über [!DNL Adobe I/O] konfiguriert, das ein IMS-Token zur Autorisierung Ihres Brand Portal-Mandanten abruft.
 
 >[!NOTE]
 >

@@ -2,19 +2,19 @@
 title: Einchecken und Auschecken digitaler Assets zur Bearbeitung
 description: Erfahren Sie, wie Sie Assets zur Bearbeitung auschecken und nach Abschluss der Änderungen wieder einchecken können.
 contentOwner: AG
-feature: Asset-Management
+feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 67%
+source-wordcount: '393'
+ht-degree: 66%
 
 ---
 
 # Ein- und Auschecken von Dateien in Assets {#check-in-and-check-out-files-in-assets}
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Assets zur Bearbeitung auschecken und wieder einchecken, nachdem Sie die Änderungen vorgenommen haben. Nachdem Sie ein Asset ausgecheckt haben, können nur Sie es bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in AEM Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
+Mit Adobe Experience Manager Assets können Sie Assets zur Bearbeitung auschecken und wieder einchecken, nachdem Sie die Änderungen vorgenommen haben. Nachdem Sie ein Asset ausgecheckt haben, können nur Sie es bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in [!DNL Experience Manager] Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
 Um Assets ein- oder auschecken zu können, benötigen Sie Schreibzugriff auf sie.
 
@@ -58,13 +58,13 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   Das geänderte Asset wird in AEM Assets eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+   Das geänderte Asset wird in [!DNL Assets] eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
 
 ## Erzwungenes Einchecken {#forced-check-in}
 
 Administratoren können Assets einchecken, die von anderen Benutzern ausgecheckt wurden.
 
-1. Melden Sie sich bei AEM Assets als Administrator an.
+1. Melden Sie sich bei [!DNL Assets] als Administrator an.
 1. Wählen Sie in der Assets-Benutzeroberfläche ein bzw. mehrere Assets, das bzw. die von anderen Benutzern ausgecheckt wurde(n).
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

@@ -1,14 +1,14 @@
 ---
 title: Anleitung zum Bearbeiten oder Hinzufügen von Metadaten
-description: Erfahren Sie mehr über Asset-Metadaten in AEM Assets und lernen Sie die verschiedenen Bearbeitungsmöglichkeiten kennen.
+description: Erfahren Sie mehr über Asset-Metadaten in [!DNL Experience Manager] Assets und verschiedene Methoden, mit denen Sie Asset-Metadaten bearbeiten können.
 contentOwner: AG
-feature: 'Metadaten  '
+feature: Metadata
 role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 86%
+source-wordcount: '479'
+ht-degree: 77%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 86%
 
 Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Beim Hochladen eines Bildes werden sie automatisch extrahiert. Sie können die vorhandenen Metadaten bearbeiten oder vorhandenen Feldern neue Metadateneigenschaften hinzufügen (etwa wenn ein Metadatenfeld leer ist).
 
-Da Unternehmen gesteuertes und zuverlässiges Metadatenvokabular benötigen, lässt AEM Assets das Adhoc-Hinzufügen von neuen Metadateneigenschaften nicht zu. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. Informationen finden Sie unter [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
+Da Unternehmen gesteuertes und zuverlässiges Metadaten-Vokabular benötigen, lässt [!DNL Experience Manager] Assets das Adhoc-Hinzufügen neuer Metadateneigenschaften nicht zu. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. Informationen finden Sie unter [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
 
-## Bearbeiten von Metadaten für ein Asset  {#editing-metadata-for-an-asset}
+## Bearbeiten von Metadaten für ein Asset {#editing-metadata-for-an-asset}
 
 So bearbeiten Sie Metadaten:
 
@@ -28,7 +28,7 @@ So bearbeiten Sie Metadaten:
    * Wählen Sie die Schnellaktion **[!UICONTROL Eigenschaften anzeigen]** aus der Miniaturansicht des Assets aus.
    * Klicken/tippen Sie auf der Asset-Seite auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** ![Infosymbol](assets/do-not-localize/info_icon.png) in der Symbolleiste.
 
-   Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Diese Metadaten wurden beim Hochladen (Erfassen) in AEM Assets automatisch extrahiert.
+   Auf der Asset-Seite werden alle Metadaten des Assets angezeigt. Diese Metadaten wurden beim Hochladen (Aufnehmen) in [!DNL Experience Manager] Assets automatisch extrahiert.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -46,7 +46,7 @@ XMP-Writeback wird für die in [Technische Anforderungen](/help/sites-deploying/
 
 Weitere Informationen zur Bearbeitung von Metadatenschemata finden Sie unter [Bearbeiten von Metadaten-Schemaformularen](metadata-schemas.md#editing-metadata-schema-forms).
 
-## Registrieren eines benutzerdefinierten Namespace in AEM {#registering-a-custom-namespace-within-aem}
+## Registrieren eines benutzerdefinierten Namespace in [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
 Sie können eigene Namespaces in AEM hinzufügen. Es gibt vordefinierte Namespaces wie cq, jcr und sling. Sie können aber auch einen Namespace für Ihre Repository-Metadaten und die XML-Verarbeitung hinzufügen.
 

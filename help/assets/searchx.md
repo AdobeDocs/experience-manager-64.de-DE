@@ -1,28 +1,28 @@
 ---
 title: Erweitern der Asset-Suche
-description: Erweitern Sie die Suchfunktionen von AEM Assets über die vorkonfigurierten Suchläufe für Assets nach Zeichenfolgen hinaus.
+description: Erweitern Sie die Suchfunktionen von [!DNL Experience Manager] Assets über die native Suche nach Assets nach Zeichenfolgen hinaus.
 contentOwner: AG
-feature: Suchen
+feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 90%
+source-wordcount: '820'
+ht-degree: 79%
 
 ---
 
 # Erweitern der Asset-Suche {#extending-assets-search}
 
-Sie können die Suchfunktionen von Adobe Experience Manager (AEM) Assets erweitern. Standardmäßig sucht AEM Assets anhand von Zeichenfolgen nach Assets.
+Sie können die Suchfunktionen von Adobe Experience Manager Assets erweitern. Standardmäßig sucht [!DNL Experience Manager] Assets nach Assets anhand von Zeichenfolgen.
 
 Die Suchfunktion wird über die QueryBuilder-Schnittstelle durchgeführt und lässt sich mit mehreren Eigenschaften anpassen. Sie können den Standardsatz der Eigenschaften im folgenden Verzeichnis überlagern: `/apps/dam/content/search/searchpanel/facets`.
 
-Sie können dem Admin-Bedienfeld von AEM Assets auch zusätzliche Registerkarten hinzufügen.
+Sie können dem Admin-Bedienfeld [!DNL Experience Manager] Assets auch zusätzliche Registerkarten hinzufügen.
 
 >[!CAUTION]
 >
->Seit Einführung von AEM 6.4 wird die klassische Benutzeroberfläche nicht mehr unterstützt. Eine entsprechende Ankündigung finden Sie unter [Veraltete und entfernte Funktionen](../release-notes/deprecated-removed-features.md). Es empfiehlt sich, die Touch-optimierte Benutzeroberfläche zu verwenden. Informationen zu Anpassungen finden Sie unter [Suchfacetten](search-facets.md).
+>Ab [!DNL Experience Manager] 6.4 wird die klassische Benutzeroberfläche nicht mehr unterstützt. Eine entsprechende Ankündigung finden Sie unter [Veraltete und entfernte Funktionen](../release-notes/deprecated-removed-features.md). Es empfiehlt sich, die Touch-optimierte Benutzeroberfläche zu verwenden. Informationen zu Anpassungen finden Sie unter [Suchfacetten](search-facets.md).
 
 ## Überlagern {#overlaying}
 
@@ -34,10 +34,9 @@ Um die vorkonfigurierten Eigenschaften zu überlagern, kopieren Sie den Knoten `
 >
 >Standardmäßig ist die Verzeichnisstruktur unter /`apps` nicht vorhanden und muss erstellt werden. Stellen Sie sicher, dass die Knotentypen den Typen unter /`libs` entsprechen.
 
-
 ## Hinzufügen von Registerkarten {#adding-tabs}
 
-Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie im Admin-Bedienfeld von AEM Assets konfigurieren. So erstellen Sie weitere Registerkarten:
+Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie im Asset-Admin [!DNL Experience Manager] konfigurieren. So erstellen Sie weitere Registerkarten:
 
 1. Erstellen Sie die Ordnerstruktur `/apps/wcm/core/content/damadmin/tabs,`, falls noch nicht vorhanden, kopieren Sie den Knoten `tabs` aus `/libs/wcm/core/content/damadmin` und fügen Sie ihn ein.
 1. Erstellen und konfigurieren Sie die zweite Registerkarte wie gewünscht.
@@ -48,15 +47,15 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie im Admin-
 
 ## Erstellen benutzerdefinierter Eigenschaften {#creating-custom-predicates}
 
-AEM Assets umfasst einen Satz vordefinierter Eigenschaften, mit denen eine Asset-Freigaben-Seite angepasst werden kann. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
+[!DNL Experience Manager] Assets umfasst einen Satz vordefinierter Eigenschaften, mit denen eine Asset-Freigaben-Seite angepasst werden kann. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
 
-AEM-Entwickler können neben den bereits vorhandenen Eigenschaften auch eigene Prädikate erstellen. Hierfür können sie die [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) verwenden.
+Neben der Verwendung bereits vorhandener Eigenschaften können [!DNL Experience Manager]-Entwickler auch eigene Prädikate mit der [Query Builder-API](/help/sites-developing/querybuilder-api.md) erstellen.
 
 Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
 Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispielprädikate befinden sich unter `/libs/cq/search/components/predicates`.
 
-### Beispiel: Einfaches Eigenschaftsprädikat erstellen    {#example-build-a-simple-property-predicate}
+### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
@@ -304,6 +303,6 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
 ## Anpassen von Suchergebnissen {#customizing-search-results}
 
-Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. AEM Assets umfasst einen Satz vordefinierter Linsen, mit denen Sie eine Asset-Freigaben-Seite anpassen können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
+Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. [!DNL Experience Manager] Assets umfasst einen Satz vordefinierter Linsen, mit denen Sie eine Asset-Freigaben-Seite anpassen können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
 
-Zusätzlich zu den bereits vorhandenen Linsen können AEM-Entwickler auch eigene Linsen erstellen.
+Neben der Verwendung bereits vorhandener Linsen können [!DNL Experience Manager]-Entwickler auch eigene Linsen erstellen.

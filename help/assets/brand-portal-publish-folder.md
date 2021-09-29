@@ -5,30 +5,30 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 58%
+source-wordcount: '552'
+ht-degree: 45%
 
 ---
 
 # Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal}
 
-Als Adobe Experience Manager (AEM) Assets-Administrator können Sie für Ihre Organisation Assets und Ordner in der AEM Assets Brand Portal-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow für einen späteren Zeitpunkt planen). Allerdings müssen Sie zunächst AEM Assets mit Brand Portal integrieren. Weitere Informationen finden Sie unter [Konfigurieren der von AEM Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md).
+Als Adobe Experience Manager Assets-Administrator können Sie Assets und Ordner für Ihr Unternehmen in der [!DNL Experience Manager Assets Brand Portal]-Instanz veröffentlichen (oder den Veröffentlichungs-Workflow für einen späteren Zeitpunkt planen). Sie müssen jedoch zunächst [!DNL Experience Manager Assets] mit [!DNL Brand Portal] integrieren. Weitere Informationen finden Sie unter [Konfigurieren [!DNL Experience Manager Assets] mit Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Nachdem Sie ein Asset oder einen Ordner veröffentlicht haben, ist es für Benutzer in Brand Portal verfügbar.
 
-Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM Assets vornehmen, werden die Änderungen erst dann in Brand Portal übernommen, wenn Sie das Asset oder den Ordner erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
+Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in [!DNL Assets] vornehmen, werden die Änderungen erst dann in Brand Portal übernommen, wenn Sie das Asset oder den Ordner erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
 ## Veröffentlichen von Ordnern in Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Bewegen Sie in der AEM Assets-Benutzeroberfläche den Mauszeiger über den gewünschten Ordner und wählen Sie in den Schnellaktionen die Option **[!UICONTROL Publish]** aus.
+1. Bewegen Sie in der [!DNL Assets]-Benutzeroberfläche den Mauszeiger über den gewünschten Ordner und wählen Sie in den Schnellaktionen die Option **[!UICONTROL Veröffentlichen]** aus.
 
    Alternativ können Sie den gewünschten Ordner auswählen und den weiteren Schritten folgen.
 
    ![publish2bp](assets/publish2bp.png)
 
-2. **Ordner jetzt veröffentlichen** 
+2. **Ordner jetzt veröffentlichen**
 
    Um die ausgewählten Ordner in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
@@ -57,11 +57,11 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in AEM As
 
 ## Veröffentlichung von Ordnern in Brand Portal rückgängig machen {#unpublish-folders-from-brand-portal}
 
-Sie können alle in Brand Portal veröffentliche Assets/Ordner entfernen, indem Sie die Veröffentlichung über die AEM-Autoreninstanz rückgängig machen. Nachdem Sie die Veröffentlichung des ursprünglichen Ordners aufgehoben haben, ist dessen Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
+Sie können alle in Brand Portal veröffentlichten Asset-Ordner entfernen, indem Sie die Veröffentlichung in der [!DNL Experience Manager] -Autoreninstanz rückgängig machen. Nachdem Sie die Veröffentlichung des ursprünglichen Ordners aufgehoben haben, ist dessen Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
 
 Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig machen oder diesen Vorgang für einen späteren Zeitpunkt planen. So machen Sie die Veröffentlichung von Assets/Ordnern in Brand Portal rückgängig:
 
-1. Wählen Sie in der AEM Assets-Benutzeroberfläche in der AEM-Autoreninstanz den Ordner aus, dessen Veröffentlichung Sie rückgängig machen möchten.
+1. Wählen Sie in der [!DNL Assets] -Benutzeroberfläche in der [!DNL Experience Manager] -Autoreninstanz den Ordner aus, dessen Veröffentlichung Sie rückgängig machen möchten.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 

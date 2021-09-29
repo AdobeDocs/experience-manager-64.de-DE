@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Search,Adobe Stock
 role: User,Admin
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1126'
-ht-degree: 80%
+source-wordcount: '1114'
+ht-degree: 85%
 
 ---
 
@@ -30,15 +30,15 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 >
 >Nur [!DNL Experience Manager]- und [!DNL Admin Console]-Administratoren einer Organisation können die Integration durchführen, da hierfür Administratorrechte erforderlich sind.
 
-### Erstellen einer IMS-Konfiguration  {#create-an-ims-configuration}
+### Erstellen einer IMS-Konfiguration {#create-an-ims-configuration}
 
 1. Navigieren Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloud-Lösung]** > **[!UICONTROL Adobe Stock]**.
 1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
-1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**. Lassen Sie den Bildschirm [!UICONTROL Adobe IMS Technical Account Configuration] geöffnet, um die erforderlichen Werte in Kürze anzugeben.
+1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**. Lassen Sie den Bildschirm [!UICONTROL Konfiguration des technischen Adobe IMS-Kontos] geöffnet, um die erforderlichen Werte in Kürze anzugeben.
 1. Greifen Sie auf die [Adobe Developer Console](https://console.adobe.io) zu. Stellen Sie sicher, dass Ihr Konto über Administratorrechte für die Organisation verfügt, für die die Integration benötigt wird.
-1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL API hinzufügen]**. Wählen Sie **[!UICONTROL Adobe Stock]** aus der Liste der zur Verfügung stehenden APIs. Wählen Sie [!UICONTROL OAUTH 2.0 Web].
-1. Geben Sie die Werte **[!UICONTROL Standard-Umleitungs-URI]** und **[!UICONTROL Umleitungs-URI-Muster]** an. Klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**. Kopieren Sie die generierte ID und den geheimen Schlüssel.
-1. Geben Sie im Bildschirm [!UICONTROL Adobe IMS Technical Account Configuration] die Werte in den Feldern **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** und **[!UICONTROL Payload&lt;a11/ an.>.]** Detaillierte Informationen zu diesen Werten finden Sie unter [Schnellstart zur JWT-Authentifizierung](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
+1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL API hinzufügen]**. Wählen Sie **[!UICONTROL Adobe Stock]** aus der Liste der zur Verfügung stehenden APIs. Wählen Sie [!UICONTROL OAUTH 2.0 Web] aus.
+1. Geben Sie die Werte für den **[!UICONTROL Standard-Umleitungs-URI]** und **[!UICONTROL Umleitungs-URI-Muster]** an. Klicken Sie auf **[!UICONTROL Konfigurierte API speichern]**. Kopieren Sie die generierte ID und den geheimen Schlüssel.
+1. Geben Sie im Bildschirm [!UICONTROL Konfiguration des technischen Adobe IMS-Kontos] die Werte in die Felder **[!UICONTROL Titel]**, **[!UICONTROL Autorisierungsserver]**, **[!UICONTROL API-Schlüsel]**, **[!UICONTROL Client-Geheimnis]** und **[!UICONTROL Nutzlast]** ein. Ausführliche Informationen zu diesen Werten finden Sie unter [Schnellstart zur JWT-Authentifizierung](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 
 <!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
@@ -123,7 +123,7 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 >[!MORELIKETHIS]
 >
->* [Video-Tutorial zur Verwendung von Adobe Stock-Assets mit Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=de)
->* [Hilfe zum Adobe Stock-Unternehmensplan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
->* [Häufig gestellte Fragen zu Adobe Stock](https://helpx.adobe.com/de/stock/faq.html)
+>* [Video-Tutorial zur  [!DNL Adobe Stock] Verwendung von Assets mit [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=de)
+>* [[!DNL Adobe Stock] Hilfe zum Unternehmensplan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
+>* [[!DNL Adobe Stock] Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/de/stock/faq.html)
 

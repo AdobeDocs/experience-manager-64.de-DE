@@ -1,20 +1,20 @@
 ---
 title: Verwenden von Apache Tika zur Erkennung des MIME-Typs digitaler Assets
-description: Aktivieren Sie Apache Tika, damit AEM Assets beim Upload-Vorgang den MIME-Typ von Assets aus dem Inhalts-Stream anstelle der Dateierweiterung erkennen kann.
+description: Aktivieren Sie Apache Tika, um [!DNL Experience Manager] Assets beim Hochladen zu helfen, den MIME-Typ von Assets aus dem Inhalts-Stream anstelle der Dateierweiterung zu erkennen.
 contentOwner: AG
-feature: Metadaten,Entwicklertools,Asset-Management
+feature: Metadata,Developer Tools,Asset Management
 role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 36%
+source-wordcount: '194'
+ht-degree: 10%
 
 ---
 
 # Verwenden von Apache Tika zur Erkennung des MIME-Typs digitaler Assets {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normalerweise erkennt Adobe Experience Manager (AEM) Assets den MIME-Typ der Assets, die Sie von ihrer Dateierweiterung hochladen. Wenn Sie Apache Tika verwenden, um Assets hochzuladen, erkennt AEM Assets deren MIME-Typ durch den Content Stream während des Uploadvorgangs statt durch die Dateierweiterung. 
+In der Regel erkennt Adobe Experience Manager Assets den MIME-Typ der Assets, die Sie von ihrer Dateierweiterung hochladen. Wenn Sie Assets mit Apache Tika hochladen, erkennt [!DNL Experience Manager] Assets während des Upload-Vorgangs den MIME-Typ vom Inhalts-Stream anstelle der Dateierweiterung.
 
 Diese Funktion ist standardmäßig deaktiviert.  Um die Funktion zu aktivieren, konfigurieren Sie den Dienst **Day CQ DAM Mime Type** aus Configuration Manager.
 

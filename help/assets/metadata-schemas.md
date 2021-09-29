@@ -2,17 +2,17 @@
 title: Metadatenschemata
 description: 'Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.  '
 contentOwner: AG
-feature: Metadaten
+feature: Metadata
 role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 84%
+source-wordcount: '2524'
+ht-degree: 81%
 
 ---
 
-# Metadatenschemata {#metadata-schemas}
+# Metadatenschemata   {#metadata-schemas}
 
 In [!DNL Experience Manager Assets] definiert ein Metadatenschema das Layout der Eigenschaftenseite und die für Assets angezeigten Metadateneigenschaften, die das bestimmte Schema verwenden. Zu den Metadateneigenschaften zählen u. a. Titel, Beschreibung, MIME-Typen, Tags usw. Mit dem Editor für Metadaten-Schemaformulare können Sie vorhandene Schemata ändern oder benutzerdefinierte Metadatenschemata hinzufügen.
 
@@ -174,7 +174,7 @@ Klicken Sie auf `+`, um einem Schemaformular eine neue Registerkarte hinzuzufüg
 
 ## Löschen von Metadatenschema-Formularen {#deleting-metadata-schema-forms}
 
-In AEM können Sie nur benutzerdefinierte Schemaformulare löschen. Die Standardschemaformulare/-vorlagen können nicht gelöscht werden. Sie können aber alle benutzerdefinierten Änderungen in diesen Formularen löschen.
+In [!DNL Experience Manager] können Sie nur benutzerdefinierte Schemaformulare löschen. Die Standardschemaformulare/-vorlagen können nicht gelöscht werden. Sie können aber alle benutzerdefinierten Änderungen in diesen Formularen löschen.
 
 Um ein Formular zu löschen, wählen Sie das Formular aus und klicken Sie auf das Symbol **[!UICONTROL Löschen]**.
 
@@ -184,11 +184,11 @@ Um ein Formular zu löschen, wählen Sie das Formular aus und klicken Sie auf da
 
 >[!NOTE]
 >
->Die Standard-Metadatenschemaformulare in AEM Assets können nicht gelöscht werden.
+>Sie können die nativen Metadatenschema-Formulare in [!DNL Experience Manager] Assets nicht löschen.
 
-## Schemaformulare für MIME-Typen   {#schema-forms-for-mime-types}
+## Schemaformulare für MIME-Typen {#schema-forms-for-mime-types}
 
-AEM Assets stellt voreingestellte Standardformulare für verschiedene MIME-Typen bereit. Sie können jedoch benutzerdefinierte Formulare für verschiedene MIME-Typen hinzufügen.
+[!DNL Experience Manager] Assets stellt voreingestellte Standardformulare für verschiedene MIME-Typen bereit. Sie können jedoch benutzerdefinierte Formulare für verschiedene MIME-Typen hinzufügen.
 
 ### Hinzufügen neuer Formulare für MIME-Typen {#adding-new-forms-for-mime-types}
 
@@ -205,7 +205,7 @@ Erstellen Sie in diesem Fall einen neuen Knoten unter `/etc/dam/metadataeditor/
 | `exposedmimetype` | Name des vorhandenen Formulars, das zugeordnet werden soll | `String` | `image/jpeg` |
 | `mimetypes` | Liste der MIME-Typen, die das im Attribut `exposedmimetype` definierte Formular verwenden | `String` | `image/png` |
 
-AEM Assets ordnet die folgenden MIME-Typen und Schemaformulare zu:
+[!DNL Experience Manager] Assets ordnet die folgenden MIME-Typen und Schemaformulare zu:
 
 | Schemaformular | MIME-Typen |
 |---|---|
@@ -227,7 +227,7 @@ Die Metadatenschema-Funktion steht nur Administratoren zur Verfügung. Administr
 
 ## Anwenden von ordnerspezifischen Metadaten {#applying-folder-specific-metadata}
 
-Mit AEM Assets können Sie Varianten eines Metadatenschemas definieren und auf einen bestimmten Ordner anwenden.
+[!DNL Experience Manager]Mit  Assets können Sie Varianten eines Metadatenschemas definieren und auf einen bestimmten Ordner anwenden.
 
 Zum Beispiel können Sie eine Variante des Standard-Metadatenschemas definieren und diese auf einen Ordner anwenden. Das ursprüngliche Standard-Metadatenschema wird dabei überschrieben.
 
@@ -239,7 +239,7 @@ Die Metadatenübernahme durch Assets richtet sich nach dem Schema, das auf den O
 
 Assets in Unterordnern übernehmen die Metadaten aus dem Schema, das auf den Unterordner angewendet wurde, wenn es sich um ein anderes Schema handelt als das des übergeordneten Ordners. Assets in Unterordnern, auf die kein Schema oder dasselbe Schema wie auf den übergeordneten Ordner angewendet wurde, übernehmen die Metadaten des Schemas für den übergeordneten Ordner.
 
-1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenschemata]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenschemata]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
 1. Aktivieren Sie das Kontrollkästchen vor einem Formular, z. B. dem Standard-Metadatenformular, klicken oder tippen Sie auf das Symbol **[!UICONTROL Kopieren]** und speichern Sie es als benutzerdefiniertes Formular. Geben Sie einen benutzerdefinierten Namen für das Formular an, beispielsweise `my_default`. Alternativ können Sie ein benutzerdefiniertes Formular erstellen.
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -269,9 +269,9 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 
 >[!NOTE]
 >
->Ein Metadatenfeld kann je nach dem Wert eines weiteren Felds als Pflichtfeld definiert werden. In der Kartenansicht zeigt AEM keine Warnung zu fehlenden Metadaten für solche obligatorischen Metadatenfelder an.
+>Ein Metadatenfeld kann je nach dem Wert eines weiteren Felds als Pflichtfeld definiert werden. In der Kartenansicht zeigt [!DNL Experience Manager] nicht die Warnmeldung zu fehlenden Metadaten für solche obligatorischen Metadatenfelder an.
 
-1. Klicken Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenschemata]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Metadatenschemata]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
 1. Speichern Sie die Standard-Metadatenformulare als benutzerdefiniertes Formular. Speichern Sie sie beispielsweise unter dem Namen `my_default`.
 
    ![chlimage_1-189](assets/chlimage_1-189.png)
@@ -286,8 +286,8 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. (Optional) Rufen Sie `http://[server]:[port]/system/console/components/` auf. Konfigurieren und aktivieren Sie die Komponente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob`, die standardmäßig deaktiviert ist. Legen Sie fest, mit welcher Häufigkeit AEM die Gültigkeit der Metadaten in den Assets überprüfen soll.
-Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu jcr:content in Assets hinzu. Mit dieser Eigenschaft kann AEM die Ergebnisse in einer Suche filtern.
+1. (Optional) Rufen Sie `http://[server]:[port]/system/console/components/` auf. Konfigurieren und aktivieren Sie die Komponente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob`, die standardmäßig deaktiviert ist. Legen Sie eine Häufigkeit fest, mit der [!DNL Experience Manager] die Gültigkeit von Metadaten für Assets überprüft.
+Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu jcr:content in Assets hinzu. Mit dieser Eigenschaft kann [!DNL Experience Manager] Ergebnisse in einer Suche filtern.
 
 >[!NOTE]
 >
@@ -295,4 +295,4 @@ Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu jcr:content in 
 
 >[!CAUTION]
 >
->Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn bei der AEM-Implementierung Leistungsprobleme auftreten, versuchen Sie, diesen Auftrag zu deaktivieren.
+>Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn bei der [!DNL Experience Manager]-Implementierung Leistungsprobleme auftreten, versuchen Sie, diesen Auftrag zu deaktivieren.

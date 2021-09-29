@@ -1,17 +1,17 @@
 ---
 title: Asset-Vorlagen
-description: Erfahren Sie mehr über Asset-Vorlagen in AEM Assets und wie Sie die Vorlagen zur Erstellung von Marketingmaterialien verwenden können.
+description: Erfahren Sie mehr über Asset-Vorlagen in [!DNL Experience Manager] Assets und wie Sie Asset-Vorlagen verwenden, um Marketingmaterialien zu erstellen.
 uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
-feature: Asset Management,Entwicklertools
+feature: Asset Management,Developer Tools
 role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 84%
+source-wordcount: '1574'
+ht-degree: 68%
 
 ---
 
@@ -23,9 +23,9 @@ Der unveränderliche Messagingabschnitt kann proprietären Inhalt enthalten, z.�
 
 Da eingeschränkte Bearbeitungen flexibel vorgenommen werden können, während das globale Erscheinungsbild geschützt ist, sind Asset-Vorlagen ideale Bausteine für die schnelle Inhaltsadaptation und Verteilung als Inhaltsartefakte für verschiedene Funktionen. Durch die Wiederverwendung von Inhalten werden die Kosten für die Verwaltung von Printkanälen und digitalen Kanälen reduziert und ganzheitliche und konsistente Umgebungen für diese Kanäle bereitgestellt.
 
-Als Marketer können Sie Vorlagen in AEM Assets speichern und verwalten und eine Basisvorlage verwenden, um auf einfache Weise mehrere personalisierte Druckerfahrungen zu erstellen. Sie können verschiedene Arten von Marketingmaterial erstellen, z. B. Broschüren, Flyer, Postkarten, Visitenkarten usw., um Kunden Ihre Marketingbotschaft eindeutig und klar zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Umgebungen und Printumgebungen bereitstellen, um für Benutzer eine konsistente integrierte Erfahrung zu schaffen.
+Als Marketer können Sie Vorlagen in [!DNL Experience Manager] Assets speichern und verwalten und eine Basisvorlage verwenden, um mühelos mehrere personalisierte Druckerfahrungen zu erstellen. Sie können verschiedene Arten von Marketingmaterial erstellen, z. B. Broschüren, Flyer, Postkarten, Visitenkarten usw., um Kunden Ihre Marketingbotschaft eindeutig und klar zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Umgebungen und Printumgebungen bereitstellen, um für Benutzer eine konsistente integrierte Erfahrung zu schaffen.
 
-Bei Asset-Vorlagen handelt es sich zwar meistens um InDesign-Dateien, aber gute InDesign-Kenntnisse sind keine Grundvoraussetzung für die Erstellung von beeindruckenden Artefakten. Es ist nicht erforderlich, dass Sie die Felder Ihrer InDesign-Vorlage den Produktfeldern zuordnen, wie dies sonst beim Erstellen von Katalogen der Fall ist. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Web-Oberfläche bearbeiten. Damit Ihre Änderungen von InDesign verarbeitet werden können, müssen Sie AEM Assets aber zuerst für die Integration in den InDesign-Server konfigurieren.
+Bei Asset-Vorlagen handelt es sich zwar meistens um InDesign-Dateien, aber gute InDesign-Kenntnisse sind keine Grundvoraussetzung für die Erstellung von beeindruckenden Artefakten. Es ist nicht erforderlich, dass Sie die Felder Ihrer InDesign-Vorlage den Produktfeldern zuordnen, wie dies sonst beim Erstellen von Katalogen der Fall ist. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Web-Oberfläche bearbeiten. Damit InDesign Ihre Bearbeitungsänderungen verarbeiten kann, müssen Sie zunächst [!DNL Experience Manager] Assets für die Integration mit dem InDesign-Server konfigurieren.
 
 Die Möglichkeit, InDesign-Vorlagen über die Webbenutzeroberfläche zu bearbeiten, fördert die Zusammenarbeit zwischen dem Kreativ- und Marketingpersonal und sorgt gleichzeitig dafür, dass für regionale Werbeinitiativen die Zeit bis zur Veröffentlichung verkürzt wird.
 
@@ -37,7 +37,7 @@ Sie können Asset-Vorlagen für folgende Zwecke nutzen:
 * Anzeigen von Vorlagenbearbeitungen in der Vorschau
 * Zusammenführen mehrerer Vorlagendateien zum Erstellen eines mehrseitigen Artefakts
 
-Wenn Sie eine Vorlage für Ihr Marketingmaterial auswählen, erstellt AEM Assets eine Kopie der Vorlage, die Sie bearbeiten können. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
+Wenn Sie eine Vorlage für Ihr Material auswählen, erstellt [!DNL Assets] eine Kopie der Vorlage, die Sie bearbeiten können. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
 
 Sie können die aktualisierte Datei im übergeordneten Ordner in den folgenden Formaten exportieren:
 
@@ -49,9 +49,9 @@ Außerdem können Sie die Ausgabe in diesen Formaten auf Ihr lokales System heru
 
 ## Erstellen von Sicherheiten {#creating-a-collateral}
 
-Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (ein- oder mehrseitig) erstellen, indem sie eine Lösung für die Kreativarbeit nutzen, z. B. InDesign, und die Vorlagen für Sie in AEM Assets hochladen. Bevor Sie ein Material erstellen, lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in den Experience Manager hochladen und verfügbar.
+Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (einseitige oder mehrseitige) mithilfe einer kreativen Lösung wie InDesign erstellen und die Vorlagen für Sie in [!DNL Assets] hochladen. Bevor Sie ein Material erstellen, lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in den Experience Manager hochladen und verfügbar.
 
-1. Klicken bzw. tippen Sie auf das AEM-Logo und dann auf der Seite „Navigation“ auf **[!UICONTROL Assets]**.
+1. Klicken Sie auf das [!DNL Experience Manager]-Logo und dann auf der Navigationsseite auf **[!UICONTROL Assets]**.
 1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
@@ -97,17 +97,17 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    Sie können den Text-Editor verwenden, um den Text zu ändern, der im Textfeld angezeigt werden soll. Sie können Schriftgröße, -stil, -farbe und -typ auf der Tag-Ebene ändern.
 
-   Mithilfe der Asset-Suche können Sie in AEM Assets nach Bildern suchen und die bearbeitbaren Bilder in der Vorlage durch Bilder Ihrer Wahl ersetzen.
+   Mit der Asset-Suche können Sie in [!DNL Assets] nach Bildern suchen oder nach Bildern suchen und die bearbeitbaren Bilder in der Vorlage durch Bilder Ihrer Wahl ersetzen.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
-   Die bearbeitbaren Bilder werden rechts angezeigt. Damit ein Feld in AEM Assets bearbeitbar ist, muss das entsprechende Feld in der Vorlage in InDesign mit einem Tag versehen sein. Anders ausgedrückt: Es muss in InDesign als bearbeitbar gekennzeichnet werden.
+   Die bearbeitbaren Bilder werden rechts angezeigt. Damit ein Feld in [!DNL Assets] bearbeitet werden kann, muss das entsprechende Feld in der Vorlage mit InDesign markiert sein. Anders ausgedrückt: Es muss in InDesign als bearbeitbar gekennzeichnet werden.
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass Ihre AEM-Instanz in einen InDesign-Server integriert ist, damit AEM Assets Daten aus der InDesign-Vorlage extrahieren und für die Bearbeitung bereitstellen kann. Weitere Informationen finden Sie unter [Integrieren von AEM Assets mit InDesign Server](indesign.md).
+   >Stellen Sie sicher, dass Ihre [!DNL Experience Manager]-Instanz in einen InDesign-Server integriert ist, damit [!DNL Assets] Daten aus der InDesign-Vorlage extrahieren und zur Bearbeitung verfügbar machen kann. Weitere Informationen finden Sie unter [Integrieren [!DNL Assets] mit InDesign Server](indesign.md).
 
 1. Klicken bzw. tippen Sie zum Ändern des Texts in einem bearbeitbaren Feld in der Liste mit den entsprechenden Feldern auf das Textfeld und bearbeiten Sie den Text.
 
@@ -127,7 +127,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-319](assets/chlimage_1-319.png)
 
-   Sie können auch nach Bildern suchen, indem Sie Stichwörter, Tags und den Veröffentlichungsstatus angeben. Sie können das AEM Assets-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
+   Sie können auch nach Bildern suchen, indem Sie Stichwörter, Tags und den Veröffentlichungsstatus angeben. Sie können das [!DNL Assets]-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -143,19 +143,19 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    >[!NOTE]
    >
-   >Die Symbole „Vorschau“ und „Fertig“ sind nur aktiviert, wenn die bearbeitbaren Bildfelder im Material keine fehlenden Symbole aufweisen. Falls in Ihrem Material Symbole fehlen, liegt dies daran, dass AEM die Bilder in der InDesign-Vorlage nicht auflösen kann. Normalerweise können Bilder von AEM in den folgenden Fällen nicht aufgelöst werden:
+   >Die Symbole „Vorschau“ und „Fertig“ sind nur aktiviert, wenn die bearbeitbaren Bildfelder im Material keine fehlenden Symbole aufweisen. Wenn in Ihrem Material Symbole fehlen, liegt das daran, dass [!DNL Experience Manager] die Bilder in der InDesign-Vorlage nicht auflösen kann. Normalerweise kann [!DNL Experience Manager] in folgenden Fällen keine Bilder auflösen:
    >
-   >* Bilder sind nicht in die zugrunde liegende InDesign-Vorlage eingebettet
+   >* Bilder werden nicht in die zugrunde liegende InDesign-Vorlage eingebettet
    >* Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem
 
    >
-   >Gehen Sie wie folgt vor, um für AEM das Auflösen von Bildern zu ermöglichen:
+   >Gehen Sie wie folgt vor, um [!DNL Experience Manager] zu aktivieren, um Bilder aufzulösen:
    >
    >* Betten Sie Bilder ein, während Sie InDesign-Vorlagen erstellen (siehe [Informationen zu Links und eingebetteten Grafiken](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
-   >* Stellen Sie AEM in Ihrem lokalen Dateisystem bereit und ordnen Sie anschließend fehlende Symbole den vorhandenen AEM-Assets zu.
+   >* Stellen Sie [!DNL Experience Manager] in Ihr lokales Dateisystem ein und ordnen Sie dann fehlende Symbole vorhandenen [!DNL Experience Manager]-Assets zu.
 
    >
-   >Weitere Informationen zum Arbeiten mit InDesign-Dokumenten finden Sie unter [Best Practices zum Arbeiten mit InDesign-Dokumenten in AEM](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Weitere Informationen zum Arbeiten mit InDesign-Dokumenten finden Sie unter [Best Practices zum Arbeiten mit InDesign-Dokumenten in [!DNL Experience Manager]](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Wählen Sie zum Generieren einer PDF-Ausgabe für die Broschüre im Dialogfeld die Acrobat-Option aus und klicken Sie anschließend auf **[!UICONTROL Weiter]**.
 1. Das Marketingmaterial wird in dem Ordner erstellt, in dem Sie den Vorgang begonnen haben. Öffnen Sie das Marketingmaterialelement und wählen Sie in der GlobalNav-Liste die Option **[!UICONTROL Ausgabeformate]**, um die Ausgabeformate anzuzeigen.
@@ -187,7 +187,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
-   Sie können das AEM Assets-Repository bzw. die Sammlungen durchsuchen, zum Speicherort der gewünschten Vorlagen navigieren und sie dann für die Zusammenführung auswählen.
+   Sie können das [!DNL Assets]-Repository oder die Sammlungen durchsuchen, zum Speicherort der gewünschten Vorlagen navigieren und diese dann zum Zusammenführen auswählen.
 
    ![chlimage_1-329](assets/chlimage_1-329.png)
 

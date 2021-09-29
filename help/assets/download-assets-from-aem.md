@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 75%
+source-wordcount: '806'
+ht-degree: 76%
 
 ---
 
@@ -24,7 +24,7 @@ Die Asset-Typen „Bildset“, „Rotationsset“ „Set für gemischte Medien�
 
 Gehen Sie wie folgt vor, um Assets herunterzuladen:
 
-1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Navigation]**.
+1. Tippen Sie in der linken oberen Ecke von AEM auf das [!DNL Experience Manager]-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Navigation]**.
 1. Tippen Sie auf der Navigationsseite auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien.]**
 1. Navigieren Sie zu einem Ordner mit den Assets, die Sie herunterladen möchten.
 1. Wählen Sie den Ordner oder ein oder mehrere Assets im Ordner aus.

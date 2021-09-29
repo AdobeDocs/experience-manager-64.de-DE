@@ -2,19 +2,19 @@
 title: Zugehörige Assets
 description: Erfahren Sie, wie Sie Assets mit bestimmten gemeinsamen Attributen verknüpfen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen.
 contentOwner: AG
-feature: Asset-Management, Zusammenarbeit
+feature: Asset Management,Collaboration
 role: User
 exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 99%
+source-wordcount: '610'
+ht-degree: 89%
 
 ---
 
 # Zugehörige Assets {#related-assets}
 
-Mit Adobe Experience Manager (AEM) Assets können Sie Assets manuell entsprechend den Anforderungen Ihres Unternehmens zuordnen. Verwenden Sie hierfür die Funktion „Zugehörige Assets“. Beispielsweise können Sie einem Asset oder einem Bild/Video eine Lizenzdatei zu einem ähnlichen Thema zuordnen. Sie können Assets zuordnen, die bestimmte gängige Attribute teilen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, der INDD-Quelldatei zuordnen.
+Mit Adobe Experience Manager Assets können Sie Assets mithilfe der Funktion &quot;Zugehörige Assets&quot;manuell basierend auf den Anforderungen Ihres Unternehmens zuordnen. Beispielsweise können Sie einem Asset oder einem Bild/Video eine Lizenzdatei zu einem ähnlichen Thema zuordnen. Sie können Assets zuordnen, die bestimmte gängige Attribute teilen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, der INDD-Quelldatei zuordnen.
 
 Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z. B. PDF/JPG) mit Mitarbeitern/Agenturen zu teilen und die Datei mit hoher Auflösung (z. B. INDD) nur auf Anfrage zur Verfügung zu stellen.
 
@@ -65,11 +65,11 @@ Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z
 
 ## Übersetzen von zugehörigen Assets {#translating-related-assets}
 
-Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen/abgeleiteten Beziehungen zwischen Assets mit der Funktion „Zugehörige Assets“ nützlich. Wenn Sie für ein abgeleitetes Asset einen Übersetzungs-Workflow ausführen, ruft AEM Assets automatisch beliebige Assets ab, die von der Quelldatei referenziert werden, und nimmt sie in die Übersetzung auf. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
+Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen/abgeleiteten Beziehungen zwischen Assets mit der Funktion „Zugehörige Assets“ nützlich. Wenn Sie einen Übersetzungs-Workflow für ein abgeleitetes Asset ausführen, ruft [!DNL Experience Manager] Assets automatisch jedes Asset ab, auf das die Quelldatei verweist, und fügt es zur Übersetzung hinzu. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Ist die Quelldatei mit einem anderen Asset verknüpft, ruft AEM Assets das referenzierte Asset ab und nimmt es in die Übersetzung auf.
+Wenn die Quelldatei mit einem anderen Asset verknüpft ist, ruft [!DNL Experience Manager] Assets das referenzierte Asset ab und fügt es zur Übersetzung hinzu.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 

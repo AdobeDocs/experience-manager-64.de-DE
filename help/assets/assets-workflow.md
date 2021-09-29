@@ -2,13 +2,13 @@
 title: Verarbeiten Sie Assets, um Geschäftsprozesse zu erledigen, Prüfungen durchzuführen, die Einhaltung zu erreichen und die grundlegende Vernunft zu wahren.
 description: Asset-Verarbeitung zum Konvertieren von Formaten, Erstellen von Ausgabedarstellungen, Verwalten von Assets, Überprüfen von Assets und Ausführen von Workflows.
 contentOwner: AG
-feature: Workflow,Ausgabedarstellungen
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 28%
+source-wordcount: '1032'
+ht-degree: 27%
 
 ---
 
@@ -40,7 +40,7 @@ Nutzen Sie Workflows in digitalen Assets, um das Asset zu aktivieren oder Wasser
 >
 >Wenn ein in der klassischen Benutzeroberfläche verfügbarer Workflow in der Touch-optimierten Benutzeroberfläche nicht verfügbar ist, wie [!UICONTROL Aktivierungsanfrage] und [!UICONTROL Deaktivierungsanfrage], siehe [Workflow-Modelle erstellen](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui).
 
-## Anwenden eines Workflows auf ein AEM-Asset {#apply-a-workflow-to-an-aem-asset}
+## Anwenden eines Workflows auf ein [!DNL Experience Manager]-Asset {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ Für ein Workflow-Modell können Benutzer einen Workflow-Starter erstellen, der 
 >[!MORELIKETHIS]
 >
 >* [Anwenden und Teilnahme an Workflows](/help/sites-authoring/workflows.md)
-* [Erstellen von Workflow-Modellen und Erweitern der Workflow-Funktionalität](/help/sites-developing/workflows.md)
-* [Methoden zum Ausführen von Workflows](/help/sites-administering/workflows-starting.md)
-* [Best Practices bei Workflows](/help/sites-developing/workflows-best-practices.md)
+>* [Erstellen von Workflow-Modellen und Erweitern der Workflow-Funktionalität](/help/sites-developing/workflows.md)
+>* [Methoden zum Ausführen von Workflows](/help/sites-administering/workflows-starting.md)
+>* [Best Practices bei Workflows](/help/sites-developing/workflows-best-practices.md)
 
