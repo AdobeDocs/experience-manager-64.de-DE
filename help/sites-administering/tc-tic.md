@@ -1,19 +1,19 @@
 ---
 title: Konfigurieren des Frameworks für die Übersetzungsintegration
-seo-title: Konfigurieren des Frameworks für die Übersetzungsintegration
+seo-title: Configuring the Translation Integration Framework
 description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegration konfigurieren.
-seo-description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegration konfigurieren.
+seo-description: Learn how to configure the Translation Integration Framework.
 uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
-feature: Sprachkopie
+feature: Language Copy
 exl-id: e68b5a5c-e12a-4b7b-b607-451ef8fdeff0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a9459872f9ce8e68dccb46e7dfddebe9eeb39bd4
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1550'
 ht-degree: 78%
 
 ---
@@ -38,7 +38,7 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
 * [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [CrossLang NV](https://exchange.adobe.com/experiencecloud.details.90049.crosslang-xtm-for-adobe-experience-manager.html)
+* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
 * [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
 * [Smartling](https://exchange.adobe.com/experiencecloud.details.90101.smartling-connector-for-adobe-experience-manager.html)
 * [SDL](https://exchange.adobe.com/experiencecloud.details.100110.sdl-translation-management.html)
@@ -57,14 +57,13 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 >
 
 
-
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft Translator-Connector finden Sie unter [Integrieren mit Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
 Sie können mehrere Cloud-Konfigurationen für denselben Connector erstellen, falls erforderlich. Beispielsweise können Sie eine Konfiguration für jedes Konto oder Projekt erstellen, das Sie bei einem Anbieter haben.
 
 Nach der Konfiguration einer Verbindung können Sie die Framework-Konfiguration für die Übersetzungsintegration erstellen, von der diese Verbindung genutzt wird.
 
-## Erstellen einer Konfiguration für die Übersetzungsintegration  {#creating-a-translation-integration-configuration}
+## Erstellen einer Konfiguration für die Übersetzungsintegration {#creating-a-translation-integration-configuration}
 
 Erstellen Sie eine Framework-Konfiguration für die Übersetzungsintegration, um festzulegen, wie Ihre Inhalte übersetzt werden sollen. Die Konfiguration enthält die folgenden Informationen:
 
