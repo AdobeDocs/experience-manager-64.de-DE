@@ -1,8 +1,8 @@
 ---
 title: Upgrade auf AEM 6.4 Communities
-seo-title: Upgrade auf AEM 6.4 Communities
+seo-title: Upgrading to AEM 6.4 Communities
 description: Upgrade von einer früheren Version auf AEM 6.4 Communities
-seo-description: Upgrade von einer früheren Version auf AEM 6.4 Communities
+seo-description: How to upgrade from an earlier version to AEM 6.4 Communities
 uuid: c6c2846e-38d4-4e99-9038-bfb486afd8b9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 5%
+source-wordcount: '664'
+ht-degree: 4%
 
 ---
 
@@ -51,17 +51,17 @@ Wenn die aktualisierte Site für die Verwendung von Adobe Cloud Storage konfigur
 
 Somit besteht die Möglichkeit, ASRP anzuweisen, `AEM 6.0 compatability-mode` für den Zugriff auf UGC zu verwenden.
 
-Für alle AEM 6.3 Autoren- und Veröffentlichungsinstanzen
+Für alle AEM 6.3 Autoren- und Veröffentlichungsinstanzen:
 
-1. Anmelden mit Administratorrechten
-2. Konfigurieren von [ASRP](asrp.md)
-3. Führen Sie die folgenden Schritte aus, um bereits vorhandene benutzergenerierte Inhalte sichtbar zu machen:
-i. Navigieren Sie zur Web-Konsole, z. B.
-   [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
-configMgrii. Suchen Sie nach der Konfiguration **[!UICONTROL AEM Communities Utilities]** .
-iii. Zum Erweitern des Konfigurationsbereichs auswählen
-   * *Deaktivieren* **`Cloud Storage`**
-   * Wählen Sie **[!UICONTROL Speichern]** aus
+1. Melden Sie sich mit Administratorrechten an und konfigurieren Sie [ASRP](asrp.md).
+1. Führen Sie die folgenden Schritte aus, um die vorhandene benutzergenerierte Anzeige sichtbar zu machen:
+
+   i. Navigieren Sie zur Web-Konsole. Die Standardeinstellung ist
+   `https://localhost:4502/system/console/configMgr`.
+
+   ii. Suchen Sie die Konfiguration **[!UICONTROL AEM Communities Utilities]** und wählen Sie zum Erweitern des Konfigurationsbereichs aus.
+
+   iii. Deaktivieren Sie **[!UICONTROL Cloud-Speicher]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
