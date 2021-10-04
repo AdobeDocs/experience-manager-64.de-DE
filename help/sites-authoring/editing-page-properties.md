@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten der Seiteneigenschaften
-seo-title: Bearbeiten der Seiteneigenschaften
+seo-title: Editing Page Properties
 description: Definieren der erforderlichen Eigenschaften für eine Seite
-seo-description: Definieren der erforderlichen Eigenschaften für eine Seite
+seo-description: Define the required properties for a page
 uuid: c0386cd6-ca01-4741-b8c8-36edb66e50ef
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 90%
+source-wordcount: '1789'
+ht-degree: 86%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese k
 
 Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
-### Einfach {#basic}
+### Allgemein {#basic}
 
 * **Titel**
 
@@ -124,13 +124,10 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Geben Sie einen Alias an, der für diese Seite verwendet werden soll.
 
-   >[!NOTE]
-   >
-   > Alias legt die Eigenschaft `sling:alias` fest, um einen Alias für die Ressource zu definieren (dies betrifft nur die Ressource, nicht den Pfad).
-   >
-   >Beispiel: Wenn Sie einen Alias `latin-lang` für den Knoten `/content/we-retail/spanish` definieren, kann auf diese Seite über `/content/we-retail/latin-language` zugegriffen werden.
-   >
-   >Weitere Informationen finden Sie unter [Lokalisierte Seitennamen unter SEO und URL-Verwaltung Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
+   * Wenn Sie beispielsweise den Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite auch über `/content/wknd/us/en/magazine/private` zugegriffen werden.
+   * Beim Erstellen eines Alias wird die `sling:alias`-Eigenschaft auf dem Seitenknoten festgelegt, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt.
+   * Seiten, auf die über Alias im Editor zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen ](/help/sites-authoring/publishing-pages.md) im Editor sind nur für Seiten verfügbar, die über ihre tatsächlichen Pfade aufgerufen werden.
+   * Weitere Informationen finden Sie unter [Lokalisierte Seitennamen unter SEO und URL-Verwaltung Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Zugelassene Vorlagen**
 
@@ -221,13 +218,13 @@ Definieren Sie die Experience Fragment-Variante, die zum Generieren von Metadate
 
    Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
-### Live Copy   {#live-copy}
+### Live Copy  {#live-copy}
 
 * **Live Copy**
 
    Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
-### Site-Struktur   {#site-structure}
+### Site-Struktur  {#site-structure}
 
 * Geben Sie Links zu Seiten an, die Site-übergreifende Funktionalität bieten, z. B. **Anmeldungsseite**, **Offline-Seite** und andere.
 
@@ -247,7 +244,7 @@ Sie können Seiteneigenschaften an folgenden Stellen definieren:
 
    * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
-### In der Sites-Konsole (einzelne Seite) {#from-the-sites-console-single-page}
+### In der Sites-Konsole (einzelne Seite)  {#from-the-sites-console-single-page}
 
 durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften festzulegen:
 
@@ -281,7 +278,7 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
 1. Mit der Schaltfläche **Speichern und schließen** können Sie Änderungen speichern.
 
-### In der Sites-Konsole (mehrere Seiten) {#from-the-sites-console-multiple-pages}
+### In der Sites-Konsole (mehrere Seiten)  {#from-the-sites-console-multiple-pages}
 
 In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
 
