@@ -2,7 +2,7 @@
 title: Tough Day
 seo-title: Tough Day
 description: Der „Tough Day“-Test simuliert die tägliche Last von rund 1.000 Autoren in einem Worst-Case-Szenario, bei dem alle Vorgänge gleichzeitig ablaufen.
-seo-description: Der „Tough Day“-Test simuliert die tägliche Last von rund 1.000 Autoren in einem Worst-Case-Szenario, bei dem alle Vorgänge gleichzeitig ablaufen.
+seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 uuid: 7a13efe0-c455-4af0-ad7b-c39cb2479d74
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,22 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 204b28653c8771fead77c484aec40d6ec6629b6c
+source-git-commit: 119023a24d5f21fd003439992fe5a520f48b6861
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 53%
+source-wordcount: '1894'
+ht-degree: 52%
 
 ---
 
 # Tough Day{#tough-day}
 
-## Was ist Tough Day 2?{#what-is-tough-day}
+## Was ist Tough Day 2? {#what-is-tough-day}
 
 Tough Day 2 ist eine Anwendung, mit der Sie die Grenzen Ihrer AEM testen können. Sie können ihn direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://docs.adobe.com/ddc/de/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) sehen Sie eine Präsentation der Anwendung.
 
 ## Ausführen von Tough Day 2 {#how-to-run-tough-day}
 
-Laden Sie die aktuelle Version von Tough Day 2 aus dem [Adobe-Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/) herunter. Nachdem Sie die Anwendung heruntergeladen haben, können Sie sie standardmäßig ausführen, indem Sie den Parameter `host` angeben. Im folgenden Beispiel wird die AEM-Instanz lokal ausgeführt, sodass der Wert `localhost` verwendet wird:
+Laden Sie die aktuelle Version von Tough Day 2 aus dem [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/) herunter. Nachdem Sie die Anwendung heruntergeladen haben, können Sie sie standardmäßig ausführen, indem Sie den Parameter `host` angeben. Im folgenden Beispiel wird die AEM-Instanz lokal ausgeführt, sodass der Wert `localhost` verwendet wird:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -53,10 +53,9 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >
 >Bei Tough Day 2 gibt es keinen Bereinigungsschritt. Wir empfehlen daher, Tough Day 2 auf einer geklonten Staging-Instanz auszuführen, nicht auf der Hauptproduktionsinstanz. Die Staging-Instanz sollte nach den Tests nicht mehr genutzt werden.
 
-
 ### Hilfe {#getting-help}
 
-Tough Day 2 bietet zahlreiche Hilfeoptionen, auf die Sie über die Befehlszeile zugreifen können. Beispiel:
+Tough Day 2 bietet zahlreiche Hilfeoptionen, auf die Sie über die Befehlszeile zugreifen können. Zum Beispiel:
 
 ```xml
 java -jar toughday2.jar --help_full
@@ -116,7 +115,7 @@ In der nachfolgenden Tabelle finden Sie die relevanten Hilfeparameter.
 
 ### Globale Parameter {#global-parameters}
 
-Tough Day 2 bietet globale Parameter, die die Testumgebung festlegen oder ändern. Dazu gehören der Ziel-Host, die Portnummer, das verwendete Protokoll, Benutzer und Kennwort für die Instanz usw. Beispiel:
+Tough Day 2 bietet globale Parameter, die die Testumgebung festlegen oder ändern. Dazu gehören der Ziel-Host, die Portnummer, das verwendete Protokoll, Benutzer und Kennwort für die Instanz usw. Zum Beispiel:
 
 ```xml
 java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m --dryrun=true 
@@ -126,7 +125,7 @@ Nachfolgend finden Sie alle relevanten Parameter:
 
 | **Parameter** | **Beschreibung** | **Standardwert** | **Mögliche Werte** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Das standardmäßige Inhaltspaket Tough Day 2 wird entweder installiert oder übersprungen. | true | „true“ oder „false“ |
+| `--installsamplecontent=<Val>` | Das standardmäßige Inhaltspaket Tough Day 2 wird entweder installiert oder übersprungen. | Ja | „true“ oder „false“ |
 | `--protocol=<Val>` | Das für den Host verwendete Protokoll. | http | http oder https |
 | `--host=<Val>` | Der Hostname oder die IP-Adresse, die als Ziel ausgewählt wird. |  |  |
 | `--port=<Val>` | Der Anschluss des Hosts. | 4502 |  |
@@ -138,7 +137,7 @@ Nachfolgend finden Sie alle relevanten Parameter:
 | `--configfile=<Val>` | Die zielgerichtete YAML-Konfigurationsdatei. |  |  |
 | `--contextpath=<Val>` | Kontextpfad der Instanz. |  |  |
 | `--loglevel=<Val>` | Die Protokollebene für die Tough Day 2-Engine. | INFO | ALL, DEBUG, INFO, WARN, FEHLER, FATAL, OFF |
-| `--dryrun=<Val>` | Wenn &quot;true&quot;, wird die resultierende Konfiguration gedruckt und es werden keine Tests ausgeführt. | false | „true“ oder „false“ |
+| `--dryrun=<Val>` | Wenn &quot;true&quot;, wird die resultierende Konfiguration gedruckt und es werden keine Tests ausgeführt. | Nein | „true“ oder „false“ |
 
 ## Anpassung {#customizing}
 
@@ -165,7 +164,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Hinzufügen von mehreren Instanzen desselben Tests   {#adding-multiple-instances-of-the-same-test}
+### Hinzufügen von mehreren Instanzen desselben Tests  {#adding-multiple-instances-of-the-same-test}
 
 Sie können auch mehrere Instanzen desselben Tests hinzufügen und ausführen. Dabei muss jedoch jede Instanz einen eindeutigen Namen aufweisen. Die folgenden Beispiele zeigen, wie Sie zwei Instanzen desselben Tests mit Befehlszeilenparametern oder mit einer YAML-Konfigurationsdatei hinzufügen.
 
@@ -189,7 +188,7 @@ tests:
       name : SecondAssetTree
 ```
 
-### Ändern der Testeigenschaften  {#changing-the-test-properties}
+### Ändern der Testeigenschaften {#changing-the-test-properties}
 
 Wenn Sie eine Testeigenschaft (oder mehrere) ändern müssen, können Sie diese Eigenschaft(en) zur Befehlszeile oder zur YAML-Konfigurationsdatei hinzufügen. Um alle verfügbaren Testeigenschaften anzuzeigen, fügen Sie den Parameter `--help <TestClass/PublisherClass>` zur Befehlszeile hinzu, z. B.:
 
@@ -218,7 +217,7 @@ tests:
       template : /conf/toughday-templates/settings/wcm/templates/toughday-template
 ```
 
-### Arbeiten mit vordefinierten Test-Suites  {#working-with-predefined-test-suites}
+### Arbeiten mit vordefinierten Test-Suites {#working-with-predefined-test-suites}
 
 Die folgenden Beispiele zeigen, wie Sie einen Test zu einer vordefinierten Suite hinzufügen und einen vorhandenen Test neu konfigurieren und aus einer vordefinierten Suite ausschließen.
 
@@ -280,7 +279,7 @@ tests:
   - exclude : UploadAsset 
 ```
 
-### Ausführungsmodi  {#run-modes}
+### Ausführungsmodi {#run-modes}
 
 Tough Day 2 kann in einem der folgenden Modi ausgeführt werden: **normal** und **Konstante Last**.
 
@@ -346,7 +345,7 @@ java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTe
 
 Tough Day 2 gibt Testmetriken und -protokolle aus. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
-### Testmetriken  {#test-metrics}
+### Testmetriken {#test-metrics}
 
 Tough Day 2 meldet derzeit neun Testmetriken, die Sie auswerten können. Metriken mit dem Symbol **&amp;ast;** werden erst nach erfolgreichen Ausführungen gemeldet:
 
