@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '2754'
-ht-degree: 78%
+source-wordcount: '2751'
+ht-degree: 77%
 
 ---
 
@@ -187,7 +187,7 @@ AEM 6.4 wurde um mehrere neue Funktionen und Verbesserungen für Assets ergänzt
 
 **Adobe Asset Link**
 
-Mit Adobe Asset Link in Creative Cloud für Unternehmen lässt sich die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Erstellung von Inhalten optimieren. Dabei handelt es sich um eine neue native Funktion von Creative Cloud für Unternehmen, die Photoshop CC, Illustrator CC und InDesign CC mit AEM verbindet, sodass Kreative arbeiten können, ohne ihre bevorzugten Tools verlassen zu müssen.
+Mit Adobe Asset Link in Creative Cloud für Unternehmen lässt sich die Zusammenarbeit zwischen Kreativen und Marketingexperten bei der Erstellung von Inhalten optimieren. Es handelt sich um eine neue native Funktion in Creative Cloud für Unternehmen, die Photoshop, Illustrator und InDesign mit AEM verbindet - ohne dass Kreative ihre Werkzeuge ihrer Wahl überlassen müssen.
 
 Weitere Informationen zu dieser Funktion, den damit verbundenen Systemanforderungen sowie zum Zugriff darauf finden Sie unter [Adobe Asset Link](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html).
 
@@ -308,7 +308,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
 
 * Paket zum Hinzufügen von erweiterter Rohbildunterstützung ([weitere Informationen](/help/assets/camera-raw.md))
 
-**Forms**
+**Formulare**
 
 * Pakete für Funktionen in AEM Forms:
 
@@ -327,7 +327,7 @@ Die Benutzeroberfläche ist in den folgenden Sprachen verfügbar:
 * Französisch
 * Spanisch
 * Italienisch
-* Brasilianisches  Portugiesisch
+* Brasilianisches Portugiesisch
 * Japanisch
 * Vereinfachtes Chinesisch
 * Traditionelles Chinesisch (begrenzte Unterstützung)

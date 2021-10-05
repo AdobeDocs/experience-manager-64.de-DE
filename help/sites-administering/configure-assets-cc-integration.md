@@ -1,13 +1,13 @@
 ---
 title: AEM Assets-Integration mit Experience Cloud konfigurieren
 description: Erfahren Sie, wie Sie die AEM Assets-Integration mit Experience Cloud konfigurieren.
-feature: Asset-Management
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
 source-wordcount: '1017'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
@@ -54,7 +54,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 1. Wählen Sie in der Liste **[!UICONTROL Perimeter]** **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]** und **[!UICONTROL cc-share]** aus.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Eine Meldung informiert Sie darüber, dass die Anwendung erstellt wurde.
 
-   ![Benachrichtigung über die erfolgreiche Erstellung der Anwendung, die AEM Assets mit Adobe CC integrieren soll](assets/chlimage_1-289.png)
+   ![Benachrichtigung über die erfolgreiche Erstellung der Anwendung zur Integration von AEM Assets in Adobe Creative Cloud](assets/chlimage_1-289.png)
 
 1. Kopieren Sie die **[!UICONTROL Anwendungs-ID]**, die für die neue Anwendung generiert wird.
 
@@ -74,13 +74,13 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 1. Geben Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel und einen Namen für die neue Konfiguration an und klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   ![Benennen neuer Konfigurationen für die Integration mit AEM Assets und CC](assets/cloudservices_configure_mc.png)
+   ![Benennen neuer Konfigurationen für die Integration mit AEM Assets und Creative Cloud](assets/cloudservices_configure_mc.png)
 
 1. Geben Sie im Feld **[!UICONTROL Mandanten-URL]** die URL für AEM Assets ein. Wenn die URL in der Vergangenheit als `https://<tenant_id>.marketing.adobe.com` definiert wurde, ändern Sie sie in `https://<tenant_id>.experiencecloud.adobe.com`.
 
    1. Navigieren Sie zu **Werkzeuge > Cloud Services > Legacy-Cloud Services**. Klicken Sie unter Adobe Experience Cloud auf **Konfigurationen anzeigen**.
    1. Wählen Sie die zu bearbeitende vorhandene Konfiguration aus. Bearbeiten Sie die Konfiguration und ersetzen Sie `marketing.adobe.com` durch `experiencecloud.adobe.com`.
-   1. Speichern Sie die Konfiguration. Testen Sie die Replikationsagenten für die MAC-Synchronisierung.
+   1. Speichern Sie die Konfiguration. Testen Sie die MAC-synchronisierten Replikationsagenten.
 
 1. Fügen Sie im Feld **[!UICONTROL Client-ID]** die Anwendungs-ID ein, die Sie am Ende des Verfahrens kopiert haben [Erstellen Sie eine Anwendung](#create-an-application).
 
@@ -164,5 +164,5 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Best Practices für die Integration von Assets und Creative Clouden](/help/assets/aem-cc-integration-best-practices.md)
-* [Best Practices für die Ordnerfreigabe von Assets in Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
+>* [Best Practices für die Ordnerfreigabe von Assets in Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

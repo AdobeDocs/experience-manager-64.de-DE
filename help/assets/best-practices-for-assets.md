@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 20%
 
 ---
@@ -37,4 +37,4 @@ Die Verarbeitung großer Dateien und die Ausführung von Workflows in [!DNL Expe
 * [[!DNL Experience Manager] Best ](aem-cc-integration-best-practices.md)
 Practices für die Integration von Creative CloudenSie können Ihre  [!DNL Experience Manager] Implementierung auf verschiedene Arten mit Creative Cloud integrieren. Das Einhalten einiger Best Practices für die Optimierung Ihrer Workflows zur Integration und Asset-Übertragung trägt zum Erzielen der maximalen Effizienz bei. Dieses Handbuch enthält Best Practices zur Integration von [!DNL Experience Manager] Assets mit Adobe Creative Cloud.
 * (Veraltet) [[!DNL Experience Manager] Best Practices für die Ordnerfreigabe in Creative Cloud](aem-cc-folder-sharing-best-practices.md)
-Sie können [!DNL Experience Manager] so konfigurieren, dass Benutzer in DAM Ordner für Creative Cloud-Benutzer (CC) freigeben können, damit sie als freigegebene Ordner im Creative Cloud Assets-Dienst verfügbar sind. Die Funktion kann verwendet werden, um Dateien zwischen Kreativteams und DAM-Benutzern auszutauschen. In diesem Handbuch werden Best Practices für die Nutzung der Funktion [!DNL Experience Manager] zur Ordnerfreigabe in Creative Cloud erläutert.
+Sie können [!DNL Experience Manager] so konfigurieren, dass Benutzer in DAM Ordner für Creative Cloud-Benutzer freigeben können, damit sie als freigegebene Ordner im Creative Cloud Assets-Dienst verfügbar sind. Die Funktion kann verwendet werden, um Dateien zwischen Kreativteams und DAM-Benutzern auszutauschen. In diesem Handbuch werden Best Practices für die Nutzung der Funktion [!DNL Experience Manager] zur Ordnerfreigabe in Creative Cloud erläutert.
