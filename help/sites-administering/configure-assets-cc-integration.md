@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die AEM Assets-Integration mit Experience Clo
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 43%
@@ -25,7 +25,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 >[!NOTE]
 >
->Diese Funktion wird in AEM Assets nicht mehr unterstützt. Suchen Sie nach Ersetzungen in [Best Practices für die AEM- und Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). Wenden Sie sich bei Fragen an die Kundenunterstützung von Adobe](https://www.adobe.com/account/sign-in.supportportal.html).[
+>Diese Funktion wird in AEM Assets nicht mehr unterstützt. Suchen Sie nach Ersetzungen in [Best Practices für die AEM- und Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). Wenn Sie Fragen haben, wenden Sie sich an den Kundendienst von Adobe](https://www.adobe.com/account/sign-in.supportportal.html).[
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-287.png)

@@ -1,19 +1,19 @@
 ---
 title: Konfigurieren von Dynamic Media – Hybridmodus
-seo-title: Konfigurieren von Dynamic Media – Hybridmodus
+seo-title: Configuring Dynamic Media - Hybrid mode
 description: Erfahren Sie mehr über die Konfiguration von Dynamic Media – Hybridmodus.
-seo-description: Erfahren Sie mehr über die Konfiguration von Dynamic Media – Hybridmodus.
+seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
-feature: Konfiguration,Hybridmodus
+feature: Configuration,Hybrid Mode
 role: Admin,User,Developer
-source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '7796'
-ht-degree: 56%
+source-wordcount: '7780'
+ht-degree: 55%
 
 ---
 
@@ -250,11 +250,11 @@ Navigieren Sie zum Ändern der Speicherbegrenzung für die PTIFF-Erstellung zu *
 
 ### Einrichten der Authentifizierung {#setting-up-authentication}
 
-Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor einrichten, um Bilder für den Dynamic Media-Service für die Bildbereitstellung zu replizieren. Rufen Sie dazu einen KeyStore ab, speichern Sie ihn dann unter dem Benutzer **[!UICONTROL dynamic-media-replication]** und konfigurieren Sie ihn. Der Administrator in Ihrem Unternehmen sollte während des Bereitstellungsprozesses eine Begrüßungs-E-Mail mit der KeyStore-Datei und den erforderlichen Anmeldeinformationen erhalten haben. Wenden Sie sich an die Kundenunterstützung, falls Sie diese Informationen nicht erhalten haben.
+Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor einrichten, um Bilder für den Dynamic Media-Service für die Bildbereitstellung zu replizieren. Rufen Sie dazu einen KeyStore ab, speichern Sie ihn dann unter dem Benutzer **[!UICONTROL dynamic-media-replication]** und konfigurieren Sie ihn. Der Administrator in Ihrem Unternehmen sollte während des Bereitstellungsprozesses eine Begrüßungs-E-Mail mit der KeyStore-Datei und den erforderlichen Anmeldeinformationen erhalten haben. Wenn Sie diese nicht erhalten haben, wenden Sie sich an den Support.
 
 **Gehen Sie wie folgt vor, um die Authentifizierung einzurichten**:
 
-1. Wenden Sie sich an die Kundenunterstützung, um Ihre KeyStore-Datei und das dazugehörige Kennwort zu erhalten (falls noch nicht vorhanden). Dies ist Teil des Bereitstellungsvorgangs und die Schlüssel werden Ihrem Konto zugeordnet.
+1. Wenden Sie sich an den Support, wenn Sie noch nicht über eine KeyStore-Datei und ein Kennwort verfügen. Dies ist Teil des Bereitstellungsvorgangs und die Schlüssel werden Ihrem Konto zugeordnet.
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Sicherheit > Benutzer]**.
 1. Navigieren Sie auf der Seite Benutzerverwaltung zum Benutzer **[!UICONTROL dynamic-media-replication]** und tippen Sie dann zum Öffnen.
 
@@ -275,9 +275,9 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 
    * Geben Sie im Feld **[!UICONTROL Neuer Alias]** den Namen eines Alias ein, den Sie später in der Replikationskonfiguration verwenden werden. Beispiel: **replication**.
    * Tippen Sie auf **[!UICONTROL KeyStore-Datei]**. Navigieren Sie zur KeyStore-Datei, die Sie von Adobe, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Öffnen]**.
-   * Geben Sie im Feld **[!UICONTROL KeyStore File Password]** das Kennwort für die KeyStore-Datei ein. Dies ist _nicht_ das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben, aber die KeyStore-Adobe für das Dateikennwort ist in der Begrüßungs-E-Mail enthalten, die Sie während der Bereitstellung erhalten haben. Wenden Sie sich an die Kundenunterstützung von Adobe, um Ihre KeyStore-Datei und das dazugehörige Kennwort zu erhalten (falls noch nicht vorhanden).
-   * Geben Sie im Feld **[!UICONTROL Kennwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (dies kann dasselbe Kennwort für den privaten Schlüssel wie im vorherigen Schritt sein). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie kein Kennwort für den privaten Schlüssel erhalten haben.
-   * Geben Sie im Feld **[!UICONTROL Alias für privaten Schlüssel]** den Alias für den privaten Schlüssel ein. Beispiel: `companyname-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit der Kundenunterstützung von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
+   * Geben Sie im Feld **[!UICONTROL KeyStore File Password]** das Kennwort für die KeyStore-Datei ein. Dies ist _nicht_ das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben, aber die KeyStore-Adobe für das Dateikennwort ist in der Begrüßungs-E-Mail enthalten, die Sie während der Bereitstellung erhalten haben. Wenden Sie sich an den Adobe-Support, wenn Sie kein Kennwort für die KeyStore-Datei erhalten haben.
+   * Geben Sie im Feld **[!UICONTROL Kennwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (dies kann dasselbe Kennwort für den privaten Schlüssel wie im vorherigen Schritt sein). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Wenden Sie sich an den Adobe-Support, wenn Sie kein Kennwort für einen privaten Schlüssel erhalten haben.
+   * Geben Sie im Feld **[!UICONTROL Alias für privaten Schlüssel]** den Alias für den privaten Schlüssel ein. Beispiel: `companyname-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Wenden Sie sich an den Kundensupport von Adobe , wenn Sie keinen Alias für den privaten Schlüssel erhalten haben.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -294,7 +294,7 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 
    * **[!UICONTROL Aktiviert]**: Aktivieren Sie dieses Kontrollkästchen, um den Replikationsagenten zu aktivieren.
    * **[!UICONTROL Region]**  - Auf die entsprechende Region eingestellt: Nordamerika, Europa oder Asien
-   * **[!UICONTROL Mandantenkennung]**  - Dieser Wert ist der Name Ihres Unternehmens/Mandanten, das/der im Replikationsdienst veröffentlicht wird. Dieser Wert ist die Mandantenkennung, die die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenden Sie sich an die Kundenunterstützung von Adobe, falls Sie diese E-Mail nicht erhalten haben.
+   * **[!UICONTROL Mandantenkennung]**  - Dieser Wert ist der Name Ihres Unternehmens/Mandanten, das/der im Replikationsdienst veröffentlicht wird. Dieser Wert ist die Mandantenkennung, die die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenden Sie sich an den Support von Adobe , wenn Sie diese nicht erhalten haben.
    * **[!UICONTROL Key Store Alias]**  - Dieser Wert entspricht dem Wert &quot;New Alias&quot;, der beim Generieren des Schlüssels unter  [Einrichten der Authentifizierung](#setting-up-authentication) festgelegt wurde. z. B.  `replication`. (Siehe Schritt 7 unter [Einrichten der Authentifizierung](#setting-up-authentication).)
    * **[!UICONTROL Key Store Password]**  - Dies ist das KeyStore-Kennwort, das erstellt wurde, als Sie auf KeyStore  **[!UICONTROL erstellen tippen]**. Dieses Kennwort wird nicht von Adobe bereitgestellt. Siehe Schritt 5 von [Einrichten der Authentifizierung](#setting-up-authentication).
 
@@ -790,7 +790,7 @@ Die folgende Grafik ist ein Beispiel für die Wiedergabeformate eines Assets.
 
 ![chlimage_1-513](assets/chlimage_1-513.png)
 
-Wenn Sie anhand des obigen Beispiels nur das PTIFF (Pyramid TIFF) replizieren möchten, geben Sie `+cqdam,*` ein, das alle Ausgabedarstellungen enthält, die mit `cqdam` beginnen. Im Beispiel ist diese Ausgabedarstellung `cqdam.pyramid.tiff`.
+Wenn Sie anhand des obigen Beispiels nur das PTIFF-Ausgabeformat (Pyramid-TIFF) replizieren möchten, geben Sie `+cqdam,*` ein, das alle Ausgabeformate enthält, die mit `cqdam` beginnen. Im Beispiel ist diese Ausgabedarstellung `cqdam.pyramid.tiff`.
 
 Wenn Sie nur das Original replizieren möchten, geben Sie `+original` ein.
 
@@ -875,7 +875,7 @@ Dynamic Media arbeitet standardmäßig [nach der Aktivierung](#enabling-dynamic-
 
 ### Standardeinstellungen des Manifests {#default-manifest-settings}
 
-Mit dem Standardmanifest können Sie die Standardwerte konfigurieren, die zum Generieren der Antworten für die Dynamic Media-Bereitstellung verwendet werden. Sie können die Qualität (JPEG-Qualität, Auflösung, Resampling-Modus), das Caching (Ablauf) optimieren und das Rendern von zu großen Bildern verhindern (defaultpix, defaultthumbpix, maxpix).
+Mit dem Standardmanifest können Sie die Standardwerte konfigurieren, die zum Generieren der Antworten für die Dynamic Media-Bereitstellung verwendet werden. Sie können die Qualität (JPEG-Qualität, Auflösung, Resampling-Modus), das Caching (Ablauf) anpassen und das Rendern von zu großen Bildern verhindern (defaultpix, defaultthumbpix, maxpix).
 
 Der Speicherort der Standardmanifest-Konfiguration wird aus dem Standardwert für **[!UICONTROL Catalog root]** des **[!UICONTROL Adobe CQ Scene7 PlatformServer]**-Bundles übernommen. Standardmäßig befindet sich dieser Wert im folgenden Pfad unter **[!UICONTROL Tools > Allgemein > CRXDE Lite]**:
 
@@ -918,7 +918,7 @@ Tabelle mit Manifesteinstellungen und deren Standardwerte:
   <tr> 
    <td>Ablauf</td> 
    <td>36000000</td> 
-   <td><p>Standardeinstellung für Time-To-Live des Client-Caches. Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.</p> <p>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten. Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert. Dieser Wert ist standardmäßig auf 10 Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an die Kundenunterstützung, wenn der Cache früher geleert werden soll.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Expiration</a> in der Image-Serving-API.</p> </td> 
+   <td><p>Standardeinstellung für Time-To-Live des Client-Caches. Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.</p> <p>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten. Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert. Dieser Wert ist standardmäßig auf 10 Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an den Support , wenn Sie den Cache früher löschen müssen.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Expiration</a> in der Image-Serving-API.</p> </td> 
   </tr> 
   <tr> 
    <td>jpegquality</td> 
@@ -1091,7 +1091,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>CIERGB</td> 
       <td>RGB</td> 
-      <td>CIE RGB</td> 
+      <td>CIE-RGB</td> 
       </tr> 
       <tr> 
       <td>CoatedFogra27</td> 
@@ -1111,7 +1111,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>ColorMatchRGB</td> 
       <td>RGB</td> 
-      <td>ColorMatch RGB</td> 
+      <td>ColorMatch-RGB</td> 
       </tr> 
       <tr> 
       <td>EuropeISOCoated</td> 
@@ -1171,7 +1171,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>ProFoto</td> 
       <td>RGB</td> 
-      <td>ProFoto RGB</td> 
+      <td>ProFoto-RGB</td> 
       </tr> 
       <tr> 
       <td>PS4Default</td> 
@@ -1236,7 +1236,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>WideGamutRGB</td> 
       <td>RGB</td> 
-      <td>Wide Gamut RGB</td> 
+      <td>Wide Gamut-RGB</td> 
       </tr> 
     </tbody> 
     </table>

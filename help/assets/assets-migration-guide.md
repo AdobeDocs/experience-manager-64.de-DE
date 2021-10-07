@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 55%
@@ -22,7 +22,7 @@ Bevor Sie einen der unten beschriebenen Schritte durchführen, lesen und impleme
 
 >[!NOTE]
 >
->Die folgenden Tools zur Asset-Migration sind nicht Teil von Adobe Experience Manager. Die Kundenunterstützung von Adobe unterstützt diese Tools nicht.
+>Die folgenden Tools zur Asset-Migration sind nicht Teil von Adobe Experience Manager. Der Adobe-Support unterstützt diese Tools nicht.
 >
 >* ACS [!DNL Experience Manager] Tools Tag Maker
 >* ACS [!DNL Experience Manager] Tools CSV Asset Importer
@@ -52,7 +52,7 @@ Deaktivieren Sie vor Beginn einer Migration die Starter für den `DAM Update Ass
 
 ### Laden von Tags {#load-tags}
 
-Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Tools wie der CSV Asset Importer und die Metadatenprofilfunktionalität können dabei helfen, die Anwendung von Tags auf Assets zu automatisieren. Fügen Sie vor diesem die Tags in Experience Manager hinzu. Mit der Funktion [ACS [!DNL Experience Manager] Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) können Sie Tags mithilfe einer Microsoft Excel-Tabelle ausfüllen, die in das System geladen wird.
+Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Tools wie der CSV Asset Importer und die Metadatenprofilfunktionalität können dabei helfen, die Anwendung von Tags auf Assets zu automatisieren. Fügen Sie vor diesem die Tags in Experience Manager hinzu. Mit der Funktion [ACS [!DNL Experience Manager] Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) können Sie Tags mithilfe einer in das System geladenen Microsoft Excel-Tabelle ausfüllen.
 
 ### Aufnehmen von Assets {#ingest-assets}
 

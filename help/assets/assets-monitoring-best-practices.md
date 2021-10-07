@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 74%
@@ -195,5 +195,5 @@ Im Rahmen der Überwachung können Sie, wenn Sie auf Probleme stoßen, einige Au
 * Verwenden Sie die Workflow-Konsole, um sicherzustellen, dass Ihre Workflows erwartungsgemäß durchgeführt werden. Fassen Sie mehrere Workflows nach Möglichkeit zu einem einzelnen Workflow zusammen.
 * Suchen Sie über die Live-Überwachung nach weiteren Engpässen oder einem hohen Verbrauch bestimmter Ressourcen.
 * Untersuchen Sie die Ausspeisepunkte aus dem Client-Netzwerk und der Eingang verweist auf das [!DNL Experience Manager]-Instanznetzwerk, einschließlich des Dispatchers. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md).
-* Ändern Sie die Größe Ihres [!DNL Experience Manager]-Servers. Möglicherweise ist die Größe Ihrer [!DNL Experience Manager]-Instanz unzureichend. Die Kundenunterstützung von Adobe kann Ihnen dabei helfen, festzustellen, ob Ihr Server zu groß ist.
+* Ändern Sie die Größe Ihres [!DNL Experience Manager]-Servers. Möglicherweise ist die Größe Ihrer [!DNL Experience Manager]-Instanz unzureichend. Der Kundensupport von Adobe kann Ihnen dabei helfen, festzustellen, ob Ihr Server zu groß ist.
 * Untersuchen Sie die Dateien `access.log` und `error.log` auf Einträge, die zu Fehlerzeitpunkten erstellt wurden. Suchen Sie nach Mustern, die ggf. auf Anomalien im benutzerdefinierten Code hinweisen. Fügen Sie diese der Liste mit den zu überwachenden Ereignissen hinzu.

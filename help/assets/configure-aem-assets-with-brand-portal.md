@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 54%
@@ -67,7 +67,7 @@ Detaillierte Anweisungen finden Sie unter
 
 * [Versionshinweise zum AEM 6.4 Service Pack](https://helpx.adobe.com/de/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Wenden Sie sich** an den Kundendienst, wenn Sie das neueste AEM oder Service Pack nicht finden können.
+**Wenden Sie sich an den** Support, wenn Sie das neueste AEM oder Service Pack nicht finden können.
 
 ## Konfiguration erstellen {#configure-new-integration-64}
 
@@ -106,7 +106,7 @@ Standard-URL: http:// localhost:4502/aem/start.html
 
    Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   Dadurch gelangen Sie zur Seite **[!UICONTROL Adobe IMS Technical Account Configuration]** .
+   Dadurch gelangen Sie zur Seite **[!UICONTROL Technische Kontokonfiguration für Adobe IMS]**.
 
 1. Standardmäßig wird die Registerkarte **Zertifikat** geöffnet.
 

@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '10078'
 ht-degree: 62%
@@ -59,11 +59,11 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es sich in einem [unters
 1. Führen Sie einen der folgenden Schritte aus, um die Assets hochzuladen:
 
    * Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Erstellen]**. Tippen Sie dann im Menü auf **[!UICONTROL Dateien]**. Sie können die Datei im angezeigten Dialogfeld bei Bedarf umbenennen.
-   * Ziehen Sie die Assets in einem Browser, der HTML5 unterstützt, direkt auf die Benutzeroberfläche. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
+   * Ziehen Sie die Assets in einem Browser, der HTML 5 unterstützt, direkt auf die Benutzeroberfläche. Das Dialogfeld zum Umbenennen der Datei wird nicht angezeigt.
 
    ![create_menu](assets/create_menu.png)
 
-   Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. Auf einem iPad können Sie jeweils nur eine Datei auswählen.
+   Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. In iPad können Sie jeweils nur eine Datei auswählen.
 
    Sie können das Hochladen von großen Assets (größer als 500 MB) anhalten und später von der gleichen Seite aus fortsetzen. Tippen Sie auf das Symbol **[!UICONTROL Pause]** neben dem bei Uploadbeginn eingeblendeten Fortschrittsbalken.
 
@@ -145,7 +145,7 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 
 >[!NOTE]
 >
->Um Assets über FTP in Dynamic Media hochzuladen, installieren Sie Feature Pack (FP) 18912 im Scene7-Modus unter [!DNL Experience Manager] author. Wenden Sie sich an die Kundenunterstützung von Adobe, um Zugriff auf FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
+>Um Assets über FTP in Dynamic Media hochzuladen, installieren Sie Feature Pack (FP) 18912 im Scene7-Modus unter [!DNL Experience Manager] author. Wenden Sie sich an den Support von Adobe, um Zugriff auf FP-18912 zu erhalten und die Einrichtung Ihres FTP-Kontos abzuschließen. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 >
 >Wenn Sie FTP zum Hochladen von Assets verwenden, werden die unter [!DNL Experience Manager] angegebenen Upload-Einstellungen ignoriert. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
@@ -167,7 +167,7 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 1. Tippen Sie in der rechten unteren Ecke des Dialogfelds **[!UICONTROL Upload-Auftragsoptionen]** auf **[!UICONTROL Speichern]**.
 1. Tippen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Upload]** auf **[!UICONTROL Upload starten]**.
 
-   Um den Upload-Fortschritt anzuzeigen, tippen Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite **[!UICONTROL Aufträge]** wird der Fortschritt des Uploads angezeigt. Sie können weiterhin in [!DNL Experience Manager] arbeiten und jederzeit zur Seite &quot;Aufträge&quot;in Dynamic Media Classic zurückkehren, um einen laufenden Auftrag zu überprüfen.
+   Um den Upload-Fortschritt anzuzeigen, tippen Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Auf der Seite **[!UICONTROL Aufträge]** wird der Fortschritt des Uploads angezeigt. Sie können die Arbeit in [!DNL Experience Manager] fortsetzen und jederzeit zur Seite &quot;Aufträge&quot;in Dynamic Media Classic zurückkehren, um einen laufenden Auftrag zu überprüfen.
 
    Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, tippen oder klicken Sie neben der Information „Dauer“ auf die Schaltfläche **[!UICONTROL Abbrechen]****[!UICONTROL .]**
 
@@ -255,7 +255,7 @@ Verwenden Sie die oben beschriebenen **[!UICONTROL Zuschnitt-Optionen]** und **[
 |  | Photoshop- und Ebenenname | Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der -nummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Zum Beispiel erhält eine Ebene mit dem Namen „Preisschild“ in einer PSD-Datei mit dem Namen „Frühjahrsannonce“ den Namen „Frühjahrsannonce_Preisschild“. Eine Ebene mit dem standardmäßigen Namen „Ebene 2“ erhält den Namen „Frühjahrsannonce_2“. |
 | Anker |  | Geben Sie an, wie Bilder in Vorlagen, die aus der Zusammenstellung der Ebenen aus der PSD-Datei erstellt werden, verankert werden. Der Anker ist standardmäßig zentriert. Ein zentrierter Anker eignet sich am besten zum Auffüllen desselben Raums mit Ersatzbildern, unabhängig vom Seitenverhältnis der Ersatzbilder. Bilder mit einem anderen Seitenverhältnis, die dieses Bild ersetzen, nehmen effektiv denselben Raum ein, wenn auf die Vorlage verwiesen und die Parameterersetzung durchgeführt wird. Wählen Sie eine andere Einstellung, wenn es für Ihre Anwendung erforderlich ist, dass die Ersatzbilder den zugeordneten Raum in der Vorlage ausfüllen. |
 
-#### PDF-Uploadoptionen festlegen {#setting-pdf-upload-options}
+#### Festlegen von PDF-Uploadoptionen {#setting-pdf-upload-options}
 
 Wenn Sie eine PDF-Datei hochladen, können Sie diese auf verschiedene Arten formatieren. Sie können ihre Seiten zuschneiden, Suchbegriffe extrahieren, eine ppi (Pixel pro Zoll)-Auflösung eingeben und einen Farbraum auswählen. PDF-Dateien enthalten oft einen Beschnittrand, Schnittmarken, Registrierungsmarken und andere Druckermarken. Sie können diese Marken von den Seitenrändern aus zuschneiden, wenn Sie eine PDF-Datei hochladen.
 
@@ -715,7 +715,7 @@ Mit der **[!UICONTROL Timeline]** können Sie verschiedene Ereignisse für ein a
 
 In der [Konsole für Sammlungen](managing-collections-touch-ui.md#navigating-the-collections-console) bietet die Liste **[!UICONTROL Alle anzeigen]** Optionen, um nur Kommentare und Workflows anzuzeigen. Darüber hinaus wird die Zeitleiste nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
 
-**** Die Zeitleiste enthält mehrere  [inhaltsfragmentspezifische Optionen](content-fragments-managing.md#timeline-for-content-fragments). Diese Funktion erfordert  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
+**** Zeitleiste enthält mehrere  [inhaltsfragmentspezifische Optionen](content-fragments-managing.md#timeline-for-content-fragments); Diese Funktion erfordert  [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
 
 **So verwenden Sie die Timeline**:
 
@@ -813,7 +813,7 @@ Sie können auch nur die Anmerkungen oder nur den Prüfungsstatus drucken.
 
 >[!NOTE]
 >
->Sie können beim Drucken des kommentierten Assets mehrere Anmerkungen als PDF auswählen.
+>Sie können mehrere Anmerkungen auswählen, während Sie das kommentierte Asset als PDF drucken.
 
 Längere Anmerkungen werden in der PDF-Datei möglicherweise nicht richtig gerendert. Für optimales Rendering wird empfohlen, Anmerkungen auf 50 Wörter zu begrenzen.
 
@@ -837,13 +837,13 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf das Symbol
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Drucken]** die Position aus, an der die Anmerkungen oder der Prüfungsstatus in der PDF-Datei angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen oder den Status oben rechts auf der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **[!UICONTROL Oben links]** (Standard).
+1. Wählen Sie im Dialogfeld **[!UICONTROL Drucken]** die Position aus, an der die Anmerkungen oder der Prüfungsstatus auf der PDF angezeigt werden sollen. Wenn Sie beispielsweise die Anmerkungen oder den Status oben rechts auf der Seite drucken möchten, die das gedruckte Bild enthält, verwenden Sie die Einstellung **[!UICONTROL Oben links]** (Standard).
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
-   Sie können abhängig von der Position, an der die Anmerkungen oder Status in der gedruckten PDF-Datei angezeigt werden sollen, weitere Einstellungen auswählen. Wenn die Anmerkungen oder der Status auf einer Seite angezeigt werden sollen, die vom gedruckten Asset getrennt ist, wählen Sie **[!UICONTROL Nächste Seite]**.
+   Sie können abhängig von der Position, an der die Anmerkungen oder den Status in der gedruckten PDF angezeigt werden sollen, weitere Einstellungen auswählen. Wenn die Anmerkungen oder der Status auf einer Seite angezeigt werden sollen, die vom gedruckten Asset getrennt ist, wählen Sie **[!UICONTROL Nächste Seite]**.
 
-1. Tippen Sie auf **[!UICONTROL Print]**. Je nach der in Schritt 2 ausgewählten Option zeigt die erstellte PDF-Datei die Anmerkungen oder den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **[!UICONTROL Oben links]** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
+1. Tippen Sie auf **[!UICONTROL Print]**. Je nach der in Schritt 2 ausgewählten Option zeigt die generierte PDF die Anmerkungen oder den Status an der angegebenen Position an. Beispiel: Wenn Sie beide Anmerkungen und den Prüfungsstatus mithilfe der Einstellung **[!UICONTROL Oben links]** drucken, ähnelt die erstellte Ausgabe der hier dargestellten PDF-Datei.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -855,7 +855,7 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf das Symbol
    >
    >Wenn das Asset Unter-Assets enthält, können Sie alle Unter-Assets zusammen mit ihren jeweiligen seitenweisen Anmerkungen drucken.
 
-   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern, z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status, öffnen Sie die **[!UICONTROL PDF-Konfiguration für Anmerkungen]** in **[!UICONTROL Configuration Manager]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](managing-assets-touch-ui.md#annotating).
+   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern, z. B. Schriftfarbe, Größe, Stil und Hintergrundfarbe der Kommentare und Status, öffnen Sie die **[!UICONTROL Anmerkungs-PDF-Konfiguration]** in **[!UICONTROL Configuration Manager]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](managing-assets-touch-ui.md#annotating).
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -866,12 +866,12 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf das Symbol
 1. Öffnen Sie die Konfigurationsseite **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** über die URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
 1. Um **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** zu konfigurieren, führen Sie einen der folgenden Schritte aus:
 
-   * Geben Sie in der Ordneroption **[!UICONTROL Systemschriftarten]** den vollständigen Pfad zum Schriftartenverzeichnis auf Ihrem System an. Wenn Sie beispielsweise ein Mac-Benutzer sind, können Sie den Pfad in der Ordneroption **[!UICONTROL Systemschriftarten]** als `/Library/Fonts` angeben. [!DNL Experience Manager] ruft die Schriftarten aus diesem Verzeichnis ab.
+   * Geben Sie in der Ordneroption **[!UICONTROL Systemschriftarten]** den vollständigen Pfad zum Schriftartenverzeichnis auf Ihrem System an. Wenn Sie z. B. Mac-Benutzer sind, können Sie den Pfad in der Ordneroption **[!UICONTROL Systemschriftarten]** als `/Library/Fonts` angeben. [!DNL Experience Manager] ruft die Schriftarten aus diesem Verzeichnis ab.
    * Erstellen Sie im Ordner **crx-quickstart** ein Verzeichnis mit dem Namen **[!UICONTROL fonts]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager]** Service ruft die Schriftarten automatisch am Speicherort ab  `crx-quickstart/fonts`. Sie können diesen Standardpfad über die Ordneroption **[!UICONTROL Adobe Server Fonts]** überschreiben.
    * Erstellen Sie einen neuen Ordner für Schriftarten in Ihrem System und speichern Sie in diesem Ordner die gewünschten Schriftarten. Geben Sie dann den vollständigen Pfad zu diesem Ordner in der Ordneroption **[!UICONTROL Kundenschriftarten]** an.
 
-1. Greifen Sie über die URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig) auf die Konfiguration **[!UICONTROL PDF-Anmerkungen]** zu.
-1. Konfigurieren Sie das PDF-Dokument **[!UICONTROL Anmerkung]** mit der richtigen Schriftart wie folgt:
+1. Greifen Sie über die URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig) auf die PDF für Anmerkungen zu.****
+1. Konfigurieren Sie die PDF **[!UICONTROL Anmerkung]** mit der richtigen Schriftart wie folgt:
 
    * Schließen Sie die Zeichenfolge `<font_family_name_of_custom_font, sans-serif>` in der Schriftartoption ein. Wenn Sie z. B. Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) drucken möchten, schließen Sie die Zeichenfolge `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in die Schriftartoption ein. Wenn Sie Anmerkungen in Hindi drucken möchten, laden Sie die entsprechende Schriftart herunter. Anschließend konfigurieren Sie die Schriftart als Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, Sans-Serif.
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 67%
@@ -166,7 +166,7 @@ Ab [!DNL Experience Manager] 6.2 und mit einem Feature Pack für [!DNL Experienc
 
 ### Konfiguration von DAM-Update-Asset {#dam-update-asset-configuration}
 
-Der Workflow &quot;DAM-Update-Asset&quot;enthält eine vollständige Suite von Schritten, die für Aufgaben wie die PTIFF-Generierung in Dynamic Media Classic und die InDesign Server-Integration konfiguriert sind. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe empfiehlt die Erstellung einer benutzerdefinierten Kopie des DAM-Update-Asset-Workflow-Modells, in der alle unnötigen Schritte entfernt wurden. Aktualisieren Sie dann die Launcher für DAM-Update-Asset so, dass sie auf das neue Modell zeigen.
+Der Workflow &quot;DAM-Update-Asset&quot;enthält eine vollständige Suite von Schritten, die für Aufgaben wie die Dynamic Media Classic-PTIFF-Generierung und InDesign Server-Integration konfiguriert sind. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe empfiehlt die Erstellung einer benutzerdefinierten Kopie des DAM-Update-Asset-Workflow-Modells, in der alle unnötigen Schritte entfernt wurden. Aktualisieren Sie dann die Launcher für DAM-Update-Asset so, dass sie auf das neue Modell zeigen.
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ Stellen Sie darüber hinaus in der Datei *configure.xml* (alternativ in der Umge
 >
 >Die ImageMagick-Dateien `policy.xml` und `configure.xml` befinden sich unter `/usr/lib64/ImageMagick-*/config/` anstelle von `/etc/ImageMagick/`. Weitere Informationen zu den Speicherorten der Konfigurationsdatei finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/resources.php) .
 
-Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an die Kundenunterstützung von Adobe, wenn Sie eine Vielzahl großer PSD- oder PSB-Dateien verarbeiten möchten. Experience Manager verarbeiten möglicherweise keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel.
+Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Support von Adobe, wenn Sie eine Vielzahl großer PSD- oder PSB-Dateien verarbeiten möchten. Experience Manager verarbeiten möglicherweise keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel.
 
 <!-- 
 
@@ -418,6 +418,6 @@ Um Latenz zu minimieren und einen hohen Durchsatz durch effiziente CPU-Auslastun
 * Entfernen Sie unnötige Schritte aus dem Workflow &quot;DAM-Update-Asset&quot;.
 * Konfigurieren Sie den Workflow und die Versionsbereinigung.
 * Optimieren Sie die Lucene-Indexkonfiguration.
-* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an die Adobe-Kundenunterstützung, um weitere verfügbare Indexoptimierungen zu erhalten.
+* Optimieren Sie die Indizes mit den neuesten Service Packs und Hotfixes. Wenden Sie sich an die Adobe-Kundenunterstützung , um weitere verfügbare Indexoptimierungen zu erhalten.
 * Verwenden Sie `guessTotal`, um die Abfrageleistung zu optimieren.
 * Wenn Sie [!DNL Experience Manager] so konfigurieren, dass Dateitypen aus dem Inhalt der Dateien erkannt werden (durch Konfiguration von [!UICONTROL Day CQ DAM Mime Type Service] in der [!UICONTROL [!DNL Experience Manager] Web Console]), laden Sie viele Dateien außerhalb der Spitzenzeiten stapelweise hoch, da der Vorgang ressourcenintensiv ist.
