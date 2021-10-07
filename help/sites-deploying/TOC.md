@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4-Implementierungsanleitung
 breadcrumb-title: Implementierungsanleitung
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich der Adobe Managed Services-Cloud-Implementierung.
-feature: Bereitstellen
+feature: Deploying
 role: Architect
-source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '373'
-ht-degree: 91%
+source-wordcount: '370'
+ht-degree: 93%
 
 ---
 
@@ -85,7 +85,7 @@ ht-degree: 91%
    + [Repository-Neustrukturierung in AEM 6.4](repository-restructuring.md)
    + [Repository-Neustrukturierung für alle Lösungen in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Repository-Neustrukturierung in AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
-   + [Assets-Repository-Neustrukturierung in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+   + [Assets-Repository-Neustrukturierung in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=de)
    + [Dynamic Media: Repository-Neustrukturierung in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Forms-Repository-Neustrukturierung in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [E-Commerce-Repository-Neustrukturierung in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
