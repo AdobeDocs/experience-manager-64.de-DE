@@ -1,8 +1,8 @@
 ---
 title: Benutzerdefinierte Knotentypen
-seo-title: Benutzerdefinierte Knotentypen
+seo-title: Custom Node Types
 description: AEM basiert auf Sling und verwendet ein JCR-Repository mit von AEM und JCR bereitgestellten Knotentypen. Darüber hinaus bietet AEM aber auch eine Reihe benutzerdefinierter Knotentypen.
-seo-description: AEM basiert auf Sling und verwendet ein JCR-Repository mit von AEM und JCR bereitgestellten Knotentypen. Darüber hinaus bietet AEM aber auch eine Reihe benutzerdefinierter Knotentypen.
+seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: 3611cfe5-a3bd-4f46-8949-8f13e1bceb4d
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1879'
 ht-degree: 52%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 52%
 
 Da AEM auf Sling basiert und ein JCR-Repository verwendet, sind Knotentypen verfügbar, die von beiden bereitgestellt werden:
 
-* [JCR-Knotentypen](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
+* [JCR-Knotentypen](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Sling-Knotentypen](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Darüber hinaus stellt AEM stellt eine Reihe benutzerdefinierter Knotentypen bereit.
@@ -56,7 +56,7 @@ Definiert den Knotentyp eines Audit-Ereignisknotens.
 
 ## Kommentar {#comment}
 
-### cq:Comment  {#cq-comment}
+### cq:Comment {#cq-comment}
 
 **Beschreibung**
 
@@ -129,9 +129,9 @@ Definiert den Knotentyp eines trackback-Knotens.
 
 * `[cq:Trackback] > mix:title, mix:created, mix:language, nt:unstructured`
 
-## Kern {#core}
+## Core {#core}
 
-### cq:Page  {#cq-page}
+### cq:Page {#cq-page}
 
 **Beschreibung**
 
@@ -206,7 +206,7 @@ Definiert eine CQ-Vorlage.
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Reguläre Ausdrücke, um den Pfad bzw. die Pfade zu Vorlagen zu bestimmen, die als übergeordnete Vorlagen zulässig sind.
+* `@prop allowedParents` - Regular expression patterns to determine the path(s) to templates allowed as parent templates.
 * `@prop allowedChildren` - Reguläre Ausdrücke, um den Pfad bzw. die Pfade zu Vorlagen zu bestimmen, die als untergeordnete Vorlagen zulässig sind.
 * `@prop ranking` - Positionieren Sie diese in der Liste der Vorlagen im Dialogfeld Seite erstellen .
 
@@ -340,12 +340,12 @@ Definiert eine virtuelle CQ-Komponente. Diese werden derzeit nur für den neuen 
 
 * `@prop jcr:title` - Titel dieser Komponente.
 * `@prop jcr:description` - Beschreibung dieser Komponente.
-* `@node cq:editConfig` - Konfiguration bearbeiten , die die Parameter für die Bearbeitungsleiste definiert.
+* `@node cq:editConfig` - Edit configuration that defines the parameters for the edit bar.
 * `@node cq:childEditConfig`- Konfiguration bearbeiten, die von untergeordneten Komponenten übernommen wird.
 * `@node icon.png` - Eine Datei, die ein charakteristisches Symbol enthält.
 * `@node thumbnail.png` - Eine Datei, die ein charakteristisches Miniaturbild enthält.
 * `@prop allowedParents` - Reguläre Ausdrücke, um den Pfad bzw. die Pfade von Komponenten zu bestimmen, die als übergeordnete Komponenten zulässig sind.
-* `@prop allowedChildren` - Reguläre Ausdrücke, um den Pfad bzw. die Pfade von Komponenten zu bestimmen, die als untergeordnete Komponenten zulässig sind.
+* `@prop allowedChildren` - Regular expression patterns to determine path(s) of components that are allowed as child components.
 * `@prop componentGroup` - Name der Komponentengruppe für die Drag-and-Drop-Komponente.
 
 **Definition**
@@ -393,7 +393,7 @@ Definiert die (clientseitigen) Listener, die bei einem Bearbeitungsereignis ausg
 
 ## DAM {#dam}
 
-### dam:AssetContent  {#dam-assetcontent}
+### dam:AssetContent {#dam-assetcontent}
 
 **Beschreibung**
 
@@ -483,7 +483,7 @@ Die Elemente in einem `cq:Cq4ContentPage` sind:
 
 ## Importtool {#importer}
 
-### cq:PollConfig  {#cq-pollconfig}
+### cq:PollConfig {#cq-pollconfig}
 
 **Beschreibung**
 
@@ -514,7 +514,7 @@ Praktischer primärer Knotentyp zum einfachen Erstellen von Abfragekonfiguration
 
 ## Standort {#location}
 
-### cq:GeoLocation  {#cq-geolocation-1}
+### cq:GeoLocation {#cq-geolocation-1}
 
 **Beschreibung**
 
@@ -532,7 +532,7 @@ Ein Mixin, das eine geografische Position in Dezimalgraden (DD) definiert
 
 ## Mailer {#mailer}
 
-### cq:mailerMessage  {#cq-mailermessage}
+### cq:mailerMessage {#cq-mailermessage}
 
 **Beschreibung**
 
@@ -548,7 +548,7 @@ MailerService-Knotentypen. Der Mailer verwendet Knoten mit diesem Mixin als Stam
 
 ## MSM {#msm}
 
-### cq:LiveRelationship  {#cq-liverelationship}
+### cq:LiveRelationship {#cq-liverelationship}
 
 **Beschreibung**
 
@@ -633,7 +633,7 @@ Blueprint-Aktion
 
 ## Plattform {#platform}
 
-### cq:Console  {#cq-console}
+### cq:Console {#cq-console}
 
 **Beschreibung**
 
@@ -646,7 +646,7 @@ Definiert den Knotentyp eines Konsolenknotens.
 
 ## Replikation {#replication}
 
-### cq:ReplicationStatus  {#cq-replicationstatus}
+### cq:ReplicationStatus {#cq-replicationstatus}
 
 **Beschreibung**
 
@@ -672,7 +672,7 @@ Definiert das Replikationsstatusinformations-Mixin.
 
 ## Sicherheit {#security}
 
-### cq:ApplicationPrivilege  {#cq-applicationprivilege}
+### cq:ApplicationPrivilege {#cq-applicationprivilege}
 
 **Beschreibung**
 
@@ -766,7 +766,7 @@ Definiert einen Mixintyp, der Dateien markiert, die mit dem Komponenten-Extracto
 
 ## Tagging {#tagging}
 
-### cq:Tag  {#cq-tag}
+### cq:Tag {#cq-tag}
 
 **Beschreibung**
 
@@ -858,7 +858,7 @@ Benutzerdaten
 
 ## Widgets {#widgets}
 
-### cq:ClientLibraryFolder  {#cq-clientlibraryfolder}
+### cq:ClientLibraryFolder {#cq-clientlibraryfolder}
 
 **Beschreibung**
 
@@ -920,7 +920,7 @@ Bereich
 
 **Beschreibung**
 
-Registerkartenbedienfeld
+Tab panel
 
 **Definition**
 
@@ -942,7 +942,7 @@ Feld
 
 ## Wiki {#wiki}
 
-### wiki:Topic  {#wiki-topic}
+### wiki:Topic {#wiki-topic}
 
 **Beschreibung**
 
@@ -988,7 +988,7 @@ Wiki-Eigenschaften
 
 ## Workflow {#workflow}
 
-### cq:Workflow  {#cq-workflow}
+### cq:Workflow {#cq-workflow}
 
 **Beschreibung**
 
@@ -1151,7 +1151,7 @@ Warten
 
 **Beschreibung**
 
-Workflow-Stapel
+Workflow stack
 
 **Definition**
 

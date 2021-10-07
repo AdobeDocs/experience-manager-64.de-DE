@@ -1,8 +1,8 @@
 ---
 title: Query Builder-Prädikatsreferenz
-seo-title: Query Builder-Prädikatsreferenz
+seo-title: Query Builder Predicate Reference
 description: Vollständiger Eigenschaftsverweis für die Query Builder-API.
-seo-description: Vollständiger Eigenschaftsverweis für die Query Builder-API.
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 2bcc2be9-1e8a-44b5-add2-370b9ff80de8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 59%
+source-wordcount: '2310'
+ht-degree: 58%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 59%
 * [contentfragment](/help/sites-developing/querybuilder-predicate-reference.md#contentfragment)
 * [dateComparison](/help/sites-developing/querybuilder-predicate-reference.md#datecomparison)
 * [daterange](/help/sites-developing/querybuilder-predicate-reference.md#daterange)
-* [excludepaths ](/help/sites-developing/querybuilder-predicate-reference.md#excludepaths)
+* [excludepaths](/help/sites-developing/querybuilder-predicate-reference.md#excludepaths)
 * [fulltext](/help/sites-developing/querybuilder-predicate-reference.md#fulltext)
 * [hasPermission](/help/sites-developing/querybuilder-predicate-reference.md#haspermission)
 * [language](/help/sites-developing/querybuilder-predicate-reference.md#language)
@@ -48,7 +48,7 @@ ht-degree: 59%
 * [tag](/help/sites-developing/querybuilder-predicate-reference.md#tag)
 * [tagid](/help/sites-developing/querybuilder-predicate-reference.md#tagid)
 * [tagsearch](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
-* [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
+* [Typ](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
 ### boolproperty {#boolproperty}
 
@@ -65,7 +65,7 @@ boolpropertyRelativer Pfad zur Eigenschaft, z. B.
 `myFeatureEnabled` oder `jcr:content/myFeatureEnabled`
 
 * ****
--Wert, auf den die Eigenschaft überprüft werden soll, &quot; 
+Wert, für den die Eigenschaft geprüft werden soll, &quot; 
 `true`&quot; oder &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -137,7 +137,7 @@ Filtern wird nicht unterstützt.
 
    Kennung der Zeitzone, die verwendet werden soll, wenn keine ISO-8601-Datumszeichenfolge angegeben wird. Der Standardwert ist die standardmäßige Zeitzone des Systems.
 
-### excludepaths  {#excludepaths}
+### excludepaths {#excludepaths}
 
 Schließt Knoten aus dem Ergebnis aus, wenn ihr Pfad mit einem regulären Ausdruck übereinstimmt.
 
@@ -220,7 +220,7 @@ Dies ist konzeptionell `fulltext AND ( (path AND type) OR (path AND type) )`. Be
 
 ### hasPermission {#haspermission}
 
-Beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung die angegebenen [JCR-Privilegien](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) aufweist.
+Beschränkt das Ergebnis auf Elemente, bei denen die aktuelle Sitzung über die angegebenen [JCR-Berechtigungen](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) verfügt.
 
 Dies ist ein reines Filterprädikat und kann keine Suchindizes nutzen. Facettenextraktion wird nicht unterstützt.
 
@@ -412,7 +412,7 @@ Facettenextraktion wird nicht unterstützt.
 
 Gleicht `JCR DATE`-Eigenschaften anhand von Zeit-Offsets, die relativ zur aktuellen Serverzeit sind, mit einem Datums-/Zeitintervall ab. Sie können `lowerBound` und `upperBound` entweder mithilfe eines Millisekundenwerts oder der Bugzilla-Syntax `1s 2m 3h 4d 5w 6M 7y` (eine Sekunde, zwei Minuten, drei Stunden, vier Tage, fünf Wochen, sechs Monate, sieben Jahre) angeben. Präfix mit &quot; `-`&quot;, um einen negativen Versatz vor der aktuellen Zeit anzugeben. Wenn Sie nur `lowerBound` oder `upperBound` angeben, wird für die jeweils andere Grenze standardmäßig „0“ festgelegt, was die aktuelle Zeit bedeutet.
 
-Beispiel:
+Zum Beispiel:
 
 * `upperBound=1h` (und nein  `lowerBound`) würde etwas in der nächsten Stunde auswählen
 * `lowerBound=-1d` (und nein  `upperBound`) würde in den letzten 24 Stunden etwas auswählen
@@ -570,7 +570,7 @@ Facettenextraktion wird nicht unterstützt.
 
    (bool) den gesamten Tag-Volltext durchsuchen, d. h. alle Titel, Beschreibungen usw. (hat Vorrang vor &quot;l `ang`&quot;)
 
-### type {#type}
+### Typ {#type}
 
 Schränkt Ergebnisse auf einen bestimmten JCR-Knotentyp ein, sowohl den primären Knotentyp als auch den Mixin-Typ. Hierbei werden auch Untertypen dieses Knotentyps gefunden. Zur effizienten Ausführung müssen Repository-Suchindizes die Knotentypen enthalten.
 
@@ -578,6 +578,6 @@ Unterstützt die Facettenextraktion. Stellt für jeden einzigartigen Typ in den 
 
 #### Eigenschaften {#Properties-2}
 
-* **type**
+* **Typ**
 
    Knotentyp oder Mixin-Name, nach dem gesucht werden soll, z. B. `cq:Page`

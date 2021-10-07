@@ -1,8 +1,8 @@
 ---
 title: OWASP – Top 10
-seo-title: OWASP – Top 10
+seo-title: OWASP Top 10
 description: Erfahren Sie, wie AEM mit den 10 häufigsten OWASP-Sicherheitsrisiken umgeht.
-seo-description: Erfahren Sie, wie AEM mit den 10 häufigsten OWASP-Sicherheitsrisiken umgeht.
+seo-description: Learn how AEM deals with the top 10 OWASP security risks.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: c29472c8-9a93-4cb1-9cb1-05fc155ba736
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 89%
+source-wordcount: '496'
+ht-degree: 87%
 
 ---
 
@@ -29,7 +29,7 @@ Diese sind unten aufgeführt – zusammen mit einer Erläuterung, wie CRX mit ih
 * LDAP – Die LDAP-Injection ist nicht möglich, da das Authentifizierungsmodul die Eingaben filtert und den Benutzerimport mithilfe der bind-Methode durchführt.
 * BS – Aus der Anwendung heraus wird keine Shell-Ausführung durchgeführt.
 
-## 2. Cross-Site Scripting (XSS)  {#cross-site-scripting-xss}
+## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
 
 Die allgemeine Praxis zur Schadensbegrenzung besteht in der Codierung aller Ausgaben benutzergenerierter Inhalte mithilfe einer serverseitigen XSS-Schutzbibliothek, die auf dem [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) und [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) basiert.
 
@@ -43,7 +43,7 @@ AEM nutzt fundierte, bewährte Authentifizierungstechniken und greift hierzu auf
 
 Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und daher durch die rollenbasierte Zugriffssteuerung beschränkt.
 
-## 5. Cross-Site Request Forgery (CSRF)  {#cross-site-request-forgery-csrf}
+## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
 Die Cross-Site Request Forgery (CSRF) wird durch das automatische Einfügen eines kryptografischen Tokens in alle Formulare und AJAX Anforderungen sowie die Überprüfung dieses Tokens auf dem Server für jede POST verhindert.
 
@@ -61,9 +61,9 @@ Die Kennwörter werden als kryptografische Hashes im Benutzerknoten gespeichert.
 
 Sensible Daten wie die Drittanbieteranmeldedaten sind in verschlüsselter Form mithilfe einer FIPS 140-2-zertifizierten kryptografischen Bibliothek gespeichert
 
-## 8. Fehlgeschlagene Beschränkung des URL-Zugriffs  {#failure-to-restrict-url-access}
+## 8. Fehlgeschlagene Beschränkung des URL-Zugriffs {#failure-to-restrict-url-access}
 
-Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html) für jeden Benutzer bzw. jede Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
+Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) für jeden Benutzer bzw. jede Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
 
 ## 9. Unzureichende Transportschichtsicherheit {#insufficient-transport-layer-protection}
 
