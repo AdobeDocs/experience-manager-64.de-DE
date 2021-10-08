@@ -2,7 +2,7 @@
 title: Versionshinweise zu AEM Assets
 seo-title: AEM Assets
 description: Spezifische Versionshinweise für Adobe Experience Manager 6.4 Assets.
-seo-description: Spezifische Versionshinweise für Adobe Experience Manager 6.4 Assets.
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
 uuid: f5e7608d-f906-4a35-b442-899703de3587
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,7 +12,7 @@ discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
 source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1647'
 ht-degree: 60%
 
 ---
@@ -27,7 +27,7 @@ Mit Adobe Asset Link in Creative Cloud für Unternehmen lässt sich die Zusammen
 
 Weitere Informationen zu Funktionen, Voraussetzungen und Zugriff finden Sie auf der Seite [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) .
 
-## Verbesserte Smart-Tags (unterstützt von Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
+## Verbesserte Smart-Tags (mit Adobe Sensei) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
 AEM 6.4 führt zusätzlich zu Smart-Tags, die in AEM 6.3 eingeführt wurden, eine auf künstlicher Intelligenz basierende Funktion für optimierte Smart-Tags ein.
 
@@ -36,7 +36,7 @@ AEM 6.4 führt zusätzlich zu Smart-Tags, die in AEM 6.3 eingeführt wurden, ein
 
 Um AEM Assets Enhanced Smart Tags zu verwenden, installieren Sie das [neueste Service Pack von AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
 
-## Smart Translation Search (powered by Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
+## Smart Translation Search (basierend auf Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
 AEM 6.4 verfügt über eine Funktion zur intelligenten Übersetzungssuche, die mehrsprachige Suchszenarien unterstützt. Unternehmen mit weltweit verstreuten Teams können nun in verschiedenen Sprachen nach Assets suchen, ohne auf kostspielige und zeitraubende Übersetzungs-Workflows angewiesen zu sein. 
 
@@ -60,7 +60,7 @@ Suchverbesserungen
 
 * Neue Schaltfläche, mit der zu den letzten Suchergebnissen zurückgekehrt werden kann, ohne die Suchanfrage erneut eingeben zu müssen.
 * Neuer Zähler für Suchergebnisse, um die Anzahl der Suchergebnisse anzuzeigen.
-* Verbesserter Suchfilter für Dateitypen mit der Möglichkeit, Suchergebnisse basierend auf differenzierten MIME-Typen wie JPG, PNG und PSD im Vergleich zu früheren Bild-, Dokument- und Multimediaoptionen zu filtern.
+* Verbesserter Suchfilter für Dateitypen mit der Möglichkeit, Suchergebnisse basierend auf differenzierten MIME-Typen wie JPG, PNG und PSD zu filtern, im Vergleich zu früheren Bild-, Dokument- und Multimediaoptionen.
 * Verbesserte Suchfilter mit genauen Zeitstempeln anstelle der bisherigen Zeitschiebereglerfunktion.
 
 Verbesserungen an Assets mit mehreren Seiten
@@ -76,7 +76,7 @@ Kataloge
 
 * Verbessertes Benutzererlebnis, Anpassung an die Benutzeroberfläche &quot;Vorlagen&quot;. Weitere Informationen finden Sie unter [Catalog Producer](../sites-administering/catalog-producer.md).
 
-## Metadaten   {#metadata}
+## Metadaten {#metadata}
 
 AEM 6.4 umfasst mehrere erweiterte Metadatenverwaltungsfunktionen, um Metadaten skalierbar zu verwalten und die Integrität der Metadaten mithilfe von Regeln und Überprüfungen durchzusetzen. Die wichtigsten Funktionen:
 
@@ -138,11 +138,11 @@ Eine Übersicht der unterstützten Plattformen finden Sie in der [Dokumentation 
 
 Dynamic Media in 6.4 unterstützt einen neuen Modus, in dem Master-Assets über die Web-Benutzeroberfläche von AEM Assets hochgeladen und verwaltet werden und dynamische Ausgabeformate und andere Funktionen für dynamische Medien im Hintergrund vom Cloud-Bereitstellungservice für dynamische Medien verwaltet werden.
 
-In diesem Modus (der mit der Veröffentlichung von [AEM 6.3 Feature Packs 14410 und 18912](https://helpx.adobe.com/de/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html) eingeführt wurde) profitieren Benutzer von End-to-End-Asset-Management- und Dynamic Media-Funktionen über die moderne AEM Assets-Web-Benutzeroberfläche und nutzen weiterhin die Bereitstellungsdienste, die abwärtskompatibel mit Dynamic Media Classic (Scene7) sind, einschließlich der Bereitstellungs-URLs, die unverändert sind.
+In diesem Modus (der mit der Veröffentlichung von [AEM 6.3 Feature Packs 14410 und 18912](https://helpx.adobe.com/de/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html) eingeführt wurde) profitieren Benutzer von End-to-End-Asset-Management- und Dynamic Media-Funktionen über die moderne AEM Assets-Web-Benutzeroberfläche und nutzen weiterhin die mit Dynamic Media Classic (Scene7) kompatiblen Bereitstellungsdienste, einschließlich der Bereitstellungs-URLs, die unverändert sind.
 
 Darüber hinaus werden mit AEM 6.4 neue, auf Adobe Sensei basierende Funktionen, Erweiterungen für neue Medien wie VR und 3D, Dynamic Media-Viewer und Unterstützung für Erlebnisfragmente in interaktiven Bildern und Karussellbannern eingeführt.
 
-### Smartes Zuschneiden (powered by Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
+### Smartes Zuschneiden (basierend auf Adobe Sensei) {#smart-crop-powered-by-adobe-sensei}
 
 * Smartes Zuschneiden ermöglicht es, Bilder automatisch so zuzuschneiden, dass das gewünschte Motiv unabhängig von der Bildschirmgröße zu sehen ist, um ein responsives Design zu erzielen. Sie können die Zuschnitte in der Vorschau anzeigen und bei Bedarf manuell anpassen.
 * Die Funktion ermöglicht darüber hinaus die automatische Erstellung von Mustern für Produktbilder. Die automatische Mustergenerierung hilft dabei, Farbfelder, Produktmuster oder beides automatisch zu den Produktbildern hinzuzufügen.
@@ -159,7 +159,7 @@ Weitere Informationen zum smarten Zuschneiden in der Komponente Dynamic Media fi
 
 Weitere Informationen finden Sie in der Dokumentation zur [intelligenten Bildbearbeitung](../assets/imaging-faq.md).
 
-### Verbesserungen für neue Medien und Viewer {#emerging-media-amp-viewer-enhancements}
+### Neue Verbesserungen bei Medien und Viewern {#emerging-media-amp-viewer-enhancements}
 
 * Es werden neue Viewer unterstützt, die den Benutzern bessere, immersive Erlebnisse bieten.
 * Mit dem Panorama-Viewer können Sie Benutzer ansprechen und Raumszenen, -eigenschaften, -standorte und -landschaften besser erleben. Weitere Informationen finden Sie in der Dokumentation zu [Panoramabildern](../assets/panoramic-images.md).
