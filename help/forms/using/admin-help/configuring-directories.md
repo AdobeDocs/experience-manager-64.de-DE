@@ -1,8 +1,8 @@
 ---
 title: Ordner konfigurieren
-seo-title: Ordner konfigurieren
+seo-title: Configuring directories
 description: Erfahren Sie, wie Sie Ordner hinzufügen, bearbeiten und löschen und User Management für die virtuelle Listenansicht konfigurieren.
-seo-description: Erfahren Sie, wie Sie Ordner hinzufügen, bearbeiten und löschen und User Management für die virtuelle Listenansicht konfigurieren.
+seo-description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
 uuid: 0bf1a8a7-c917-4248-9937-d24e31c5ba17
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: fe69a3ca-0452-4e06-bd74-45d80659574e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bf9b94e8af72ad7b0a2c1d867fa35acfa31e6c1c
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3227'
 ht-degree: 78%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 78%
 
 Für jede Unternehmensdomäne, die Sie konfigurieren, geben Sie die Ordner an, aus denen der Authentifizierungsanbieter Benutzerdaten abfragt. Sie können mehrere Ordner für eine Domäne konfigurieren.
 
-## Ordner oder benutzerdefinierte SPIs hinzufügen  {#adding-directories-or-custom-spis}
+## Ordner oder benutzerdefinierte SPIs hinzufügen {#adding-directories-or-custom-spis}
 
 Für jede Unternehmensdomäne, die Sie konfigurieren, geben Sie die Ordner an, aus denen der Authentifizierungsanbieter Benutzerdaten abfragt. Sie können einen Ordner zu einer bestehenden Unternehmensdomäne hinzufügen oder zu einer neuen Unternehmensdomäne, die Sie gerade hinzufügen. Sie können mehrere Ordner für eine Domäne konfigurieren. Sie können eine Domäne auch für die Verwendung einer benutzerdefinierten SPI (Service Provider Interface) zur Synchronisierung konfigurieren.
 
-### Ordner hinzufügen  {#add-a-directory}
+### Ordner hinzufügen {#add-a-directory}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
 1. Klicken Sie auf „Neue Unternehmensdomäne“ oder wählen Sie eine bestehende Unternehmensdomäne aus.
@@ -39,9 +39,9 @@ Für jede Unternehmensdomäne, die Sie konfigurieren, geben Sie die Ordner an, a
    Wenn Benutzer zurückgegeben werden, zeigen die Ergebnisse die Werte, die jedem Feld gemäß der Attributfestlegung zugewiesen werden. Schlägt der Test fehl (wegen eines nicht existierenden Servernamens, falscher Autorisierungsinformationen oder falscher Attribute), wird die folgende Fehlermeldung angezeigt: „Die angegebenen Suchkriterien haben kein Ergebnis zurückgegeben.“ Um die Fehlerursache zu bestimmen, überprüfen Sie die Ausnahme in der Protokolldatei des Anwendungsservers. Klicken Sie auf „Schließen“ und dann auf „Weiter“.
 
 1. Wählen Sie „Gruppeneinstellungen“ aus und konfigurieren Sie die Einstellungen den Anforderungen entsprechend. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).)
-1. Klicken Sie auf „Testen“, um zu überprüfen, ob der Basis-DN und andere konfigurierte Attribute den richtigen Gruppenstapel abrufen. Wenn Gruppen zurückgegeben werden, zeigen die Ergebnisse die Werte, die jedem Feld gemäß der Attributfestlegung zugewiesen werden. Klicken Sie auf „Schließen“.
+1. Klicken Sie auf „Testen“, um zu überprüfen, ob der Basis-DN und andere konfigurierte Attribute den richtigen Gruppenstapel abrufen. Wenn Gruppen zurückgegeben werden, zeigen die Ergebnisse die Werte, die jedem Feld gemäß der Attributfestlegung zugewiesen werden. Klicken Sie auf Schließen.
 
-### Eine benutzerdefinierte SPI hinzufügen  {#add-a-custom-spi}
+### Eine benutzerdefinierte SPI hinzufügen {#add-a-custom-spi}
 
 Informationen zum Erstellen einer benutzerdefinierten SPI finden Sie unter „Entwickeln von SPIs für AEM Forms“ in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63). Starten Sie den Server neu, damit eine neu bereitgestellte benutzerdefinierte SPI für die Verknüpfung mit der Domäne verfügbar wird.
 
@@ -52,7 +52,7 @@ Informationen zum Erstellen einer benutzerdefinierten SPI finden Sie unter „En
 1. Wählen Sie einen benutzerdefinierten Benutzeranbieter in der Liste aus und klicken Sie auf „Weiter“.
 1. Wählen Sie einen benutzerdefinierten Gruppenanbieter in der Liste aus und klicken Sie auf „Fertig stellen“.
 
-## Ordner bearbeiten  {#edit-a-directory}
+## Ordner bearbeiten {#edit-a-directory}
 
 Sie können die Details eines bereits konfigurierten Ordners bearbeiten.
 
@@ -61,7 +61,7 @@ Sie können die Details eines bereits konfigurierten Ordners bearbeiten.
 1. Konfigurieren Sie die Ordner-, Benutzer- und Gruppeneinstellungen den Anforderungen entsprechend. (Siehe [Ordnereinstellungen](configuring-directories.md#directory-settings).)
 1. Klicken Sie auf OK.
 
-## Ordner löschen  {#delete-a-directory}
+## Ordner löschen {#delete-a-directory}
 
 Wenn Sie Ihre Domänen nach dem Löschen eines Ordners synchronisieren, werden alle Benutzer und Gruppen in der Datenbank als veraltet markiert. Sie werden bei keiner Suche von Administration Console zurückgegeben.
 
@@ -74,11 +74,11 @@ Wenn Sie Ihre Domänen nach dem Löschen eines Ordners synchronisieren, werden a
 1. Aktivieren Sie das Kontrollkästchen neben dem gewünschten Ordner und klicken Sie auf „Löschen“.
 1. Klicken Sie zuerst auf der angezeigten Bestätigungsseite auf „OK“ und dann erneut auf „OK“.
 
-## Ordnereinstellungen  {#directory-settings}
+## Ordnereinstellungen {#directory-settings}
 
 Wenn Sie einer Domäne einen Ordner hinzufügen, geben Sie die folgenden Ordnereinstellungen an.
 
-**Server:**  (Obligatorisch) Vollqualifizierter Domänenname (FQDN) des Ordnerservers. Beispiel: Der vollständig qualifizierte Domänenname eines Computers namens x im Netzwerk corp.adobe.com lautet x.corp.adobe.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
+**Server:**  (Obligatorisch) Vollqualifizierter Domänenname (FQDN) des Ordnerservers. Beispielsweise lautet der FQDN für einen Computer mit dem Namen x im Netzwerk adobe.com x.adobe.com. Anstelle des vollständig qualifizierten Servernamens kann auch eine IP-Adresse verwendet werden.
 
 **Port:**  (Obligatorisch) Der Port, den der Ordnerserver verwendet. Dies ist in der Regel Anschluss 389 bzw. 636, falls das SSL-Protokoll (Secure Sockets Layer) zum Senden der Authentifizierungsinformationen über das Netzwerk verwendet wird.
 
@@ -216,7 +216,7 @@ Wird der DN als eindeutiger Bezeichner angegeben, muss „Eindeutiger Bezeichner
 >
 >User Management unterstützt keine doppelten Benutzer-IDs innerhalb einer Domäne. Es wird nur ein Benutzer mit der Benutzer-ID synchronisiert.
 
-## User Management mit der virtuellen Listenansicht (VLV) konfigurieren  {#configure-user-management-to-use-virtual-list-view-vlv}
+## User Management mit der virtuellen Listenansicht (VLV) konfigurieren {#configure-user-management-to-use-virtual-list-view-vlv}
 
 Eine wichtige Voraussetzung für User Management ist die Ordnersynchronisierung. Die Benutzer und Gruppen werden aus einem Unternehmensordner mit der AEM Forms-Datenbank synchronisiert, um Rollen und Berechtigungen zuzuweisen. Die Anzahl der Benutzer liegt (je nach Anforderung) zwischen 100 und über 100.000, was eine technische Herausforderung für eine effiziente Datensynchronisierung darstellt.
 
@@ -230,7 +230,7 @@ Das LDAP-Protokoll bietet in der Form von Anforderungssteuerelementen eine Mögl
 1. Verwenden Sie die Sun ONE Administration Console oder ein Befehlszeilenskript, um die LDAP-VLV-Einträge für Benutzer und Gruppen zu erstellen. Mithilfe eines Befehlszeilenskripts können die Benutzer- und Gruppen-LDIF-Beispieldateien verwendet werden. (Siehe [Sun ONE Directory Server für VLV konfigurieren](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
 1. Beenden Sie den Server und erstellen Sie den erforderlichen Index. (Siehe [Ordnerserverindex für VLV erstellen](configuring-directories.md#create-the-directory-server-index-for-vlv).)
 
-### Sun ONE Directory Server für VLV konfigurieren  {#configuring-the-sun-one-directory-server-for-vlv}
+### Sun ONE Directory Server für VLV konfigurieren {#configuring-the-sun-one-directory-server-for-vlv}
 
 Zum Erstellen einer virtuellen Listenansicht muss ein Paar von Einträgen vorhanden sein, zu denen die Objektklassen `vlvSearch` und `vlvIndex` gehören. Der vlvSearch-Eintrag beinhaltet eine Suchbasis und das `vlvFilter`-Attribut, das die Objektklasse angibt, die die Attribute enthält, die sortiert werden sollen. Die Objektklasse `vlvIndex` enthält das Attribut `vlvSort` , das eines oder mehrere zu sortierende Attribute und die Reihenfolge ihrer Sortierung angibt. (Ein Minuszeichen (-) bedeutet umgekehrte alphabetische Reihenfolge). Für die Verwendung der virtuellen Listenansicht mit AEM Forms sind getrennte Einträge für Benutzer und Gruppen erforderlich.
 
