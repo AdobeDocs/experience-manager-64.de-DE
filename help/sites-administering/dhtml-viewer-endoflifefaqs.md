@@ -7,10 +7,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 80%
+ht-degree: 66%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 80%
 
 Am 31. Januar 2014 wurde die DHTML-Viewer-Plattform offiziell eingestellt.
 
-Die neuesten unterstützten Viewer finden Sie im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html?lang=de).
+Die neuesten unterstützten Viewer finden Sie im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 <!-- **What is the change?**
 
