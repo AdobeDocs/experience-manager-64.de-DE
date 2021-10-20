@@ -1,8 +1,8 @@
 ---
 title: Unterstützte Plattformen für AEM Forms on JEE
-seo-title: Unterstützte Plattformen für AEM Forms on JEE
+seo-title: Supported Platforms for AEM Forms on JEE
 description: Liste der Infrastrukturkomponenten, die für die Installation von AEM Forms on JEE erforderlich sind und unterstützt werden
-seo-description: Liste der Infrastrukturkomponenten, die für die Installation von AEM Forms on JEE erforderlich sind und unterstützt werden
+seo-description: List of infrastructure components required and supported for installing AEM Forms on JEE
 uuid: 22f05fd4-f9fc-423e-8a86-1e75df4b2b44
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
 workflow-type: tm+mt
-source-wordcount: '3316'
-ht-degree: 86%
+source-wordcount: '3315'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,6 @@ In diesem Dokument werden die unterstützten Client- und Serverplattformen für 
 >* AEM Forms on JEE unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
 
 >
-
 
 
 ### Empfohlene Konfigurationen {#recommendedconfigurations}
@@ -98,7 +97,6 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 >* Es wird empfohlen, die Sicherheitsbulletins vom Java-Anbieter zu verfolgen, um den Schutz und die Sicherheit von Produktionsumgebungen sicherzustellen und die neuesten Java-Aktualisierungen zu installieren.
 
 >
-
 
 
 ### Datenbanken und CRX-Persistenz {#databases-and-crx-persistence}
@@ -278,7 +276,7 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
    <td><p>Updates und Patches</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Hinweis:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> erreicht das Ende der Wartungsphase und wechselt zur Phase der erweiterten Unterstützung für Lebenszyklen am 30. November 2020. Adobe empfiehlt Red Hat Enterprise Linux 7 für Upgrades und neue Installationen. Bestehende Installationen können Red Hat Enterprise Linux 6 während der Erweiterten Life Cycle Support-Phase verwenden.</p> </td> 
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x)</br><b>Hinweis:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> erreicht das Ende der Wartungsphase und wechselt zur Phase der erweiterten Unterstützung für den Lebenszyklus am 30. November 2020. Adobe empfiehlt Red Hat Enterprise Linux 7 für Upgrades und neue Installationen. Bestehende Installationen können Red Hat Enterprise Linux 6 während der Erweiterten Life Cycle Support-Phase verwenden.</p> </td> 
    <td><p>A: Unterstützt</p> </td> 
    <td><p>Nebenversionen, kumulative Updates und wichtige Updates</p> </td> 
   </tr> 
@@ -336,7 +334,6 @@ Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuel
 >* PDF Generator-Dienst wird unter Windows 10 nicht unterstützt. 
 
 >
-
 
 
 ### Ausnahmen für unterstützte Serverplattformen {#exceptions-to-supported-server-platforms}
@@ -501,11 +498,11 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
   </tr> 
   <tr> 
    <td>OpenOffice 4.1.2</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPEG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, JPC, JPC), HTML, HTM, RTF und TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</td> 
   </tr> 
   <tr> 
    <td>OpenOffice 3.4</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPEG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, JPC, JPC), HTML, HTM, RTF und TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</td> 
   </tr> 
  </tbody> 
 </table>
@@ -516,7 +513,7 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >
 >Zusätzlich gilt Folgendes:
 >
->* Für PDF Generator ist eine 32-Bit-Version von [Acrobat 2017 Classic Track Version 17.011.30078 oder höher](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) erforderlich, um die Konvertierung durchzuführen.
+>* Für PDF Generator ist eine 32-Bit-Version von erforderlich. [Acrobat 2017 Klassische Track-Version 17.011.30078 oder höher](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) , um die Konvertierung durchzuführen.
 >* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft Office Professional Plus und andere für die Konvertierung erforderliche Software.
 >* PDF Generator unterstützt nicht Microsoft Office 365.
 >* PDF Generator-Konversionen für OpenOffice werden nur unter Windows, Linux und Solaris unterstützt.
@@ -525,7 +522,6 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung entsprechend Ihrer Implementierung ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 
 >
-
 
 
 ### Ausnahmen der Barrierefreiheit {#exceptions-to-accessibility-support}
@@ -659,7 +655,7 @@ Für zusätzliche Anforderungen siehe:
 
 >[!NOTE]
 >
->Die Acrobat DC-Produktfamilie führt zwei Spuren für Acrobat und Reader ein, die im Wesentlichen zwei verschiedene Produkte sind: „Klassik“ und „Fortlaufend“. Weitere Informationen und einen Vergleich der beiden Tracks finden Sie unter [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+>Die Acrobat DC-Produktfamilie führt zwei Spuren für Acrobat und Reader ein, die im Wesentlichen zwei verschiedene Produkte sind: „Klassik“ und „Fortlaufend“. Weitere Informationen und einen Vergleich der beiden Tracks finden Sie unter [https://www.adobe.com/go/acrobatdctracks](https://www.adobe.com/go/acrobatdctracks)
 
 ### Browser {#browsers}
 
@@ -704,7 +700,7 @@ Für zusätzliche Anforderungen siehe:
 >
 >Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
 >
->* Die meisten modernen Browser unterstützen keine NPAPI-basierten Plug-Ins mehr. Weitere Informationen zu den Auswirkungen auf AEM Forms-Anwendungen und -Workflows finden Sie unter [Abbruch von NPAPI-Browser-Plug-ins und deren Auswirkungen](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+>* Die meisten modernen Browser unterstützen keine NPAPI-basierten Plug-Ins mehr. Informationen zu den Auswirkungen auf AEM Forms-Anwendungen und -Workflows finden Sie unter [Abbruch der NPAPI-Browser-Plug-ins und deren Auswirkung](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 >* Safari wird nur unter Mac OS X unterstützt.
 
 
@@ -721,7 +717,7 @@ Für zusätzliche Anforderungen siehe:
    <td><p>Alle Updates</p> </td> 
   </tr> 
   <tr> 
-   <td>Safari unter iOS 11.0 und höher</td> 
+   <td>Safari unter iOS 15.1 und höher</td> 
    <td>Alle Updates</td> 
   </tr> 
   <tr> 
@@ -746,7 +742,6 @@ Für zusätzliche Anforderungen siehe:
 >
 
 
-
 ### AEM Forms-App {#aem-forms-workspace-app}
 
 #### Unterstützung für Mobilgeräte {#mobile-device-support}
@@ -755,9 +750,9 @@ Die AEM Forms-App ist für die folgenden Plattformen verfügbar:
 
 | **Plattform** | **Unterstützte Geräte** |
 |---|---|
-| Apple iOS | Apple iPhone, iPad, iPad Air und iPad mini mit iOS 11 und höher. |
-| Google Android | Android 4.4 (Android Kit Kat) und höher *[API Level 19 und höher]*. Die AEM Forms-App ist für Samsung Galaxy-Tablets (7 und 10 Zoll) und Google Nexus-Tablets (7 Zoll) sowie beliebte Smartphones zertifiziert. |
-| Microsoft Windows | Microsoft Surface-Geräte, Tablets, Laptops und Desktops mit Microsoft Windows 10-Betriebssystem. |
+| Apple iOS | Apple iPhone, iPad, iPad Air und iPad mini mit iOS 15.1 und höher. |
+| Google Android | Android 4.4 (Android Kit Kat) und höher *[API-Ebene 19 und höher]*. Die AEM Forms-App ist für Samsung Galaxy-Tablets (7 und 10 Zoll) und Google Nexus-Tablets (7 Zoll) sowie beliebte Smartphones zertifiziert. |
+| Microsoft Windows | Microsoft Surface-Geräte, Tablets, Laptops und Desktops mit Microsoft Windows 10. |
 
 ### Adobe Flash Player {#adobe-flash-player}
 
@@ -776,7 +771,7 @@ Die AEM Forms-App ist für die folgenden Plattformen verfügbar:
 
 >[!NOTE]
 >
->Adobe wird [die Aktualisierung und Verteilung des Flash Players Ende 2020 einstellen](https://theblog.adobe.com/adobe-flash-update/).
+>Adobe wird [Ende 2020 die Aktualisierung und Verteilung des Flash Players einstellen](https://theblog.adobe.com/adobe-flash-update/).
 
 ### Adobe Document Security Extension for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
@@ -790,13 +785,13 @@ Außerdem unterstützt AEM Forms on JEE Updates, Patches und Fix Packs zusätzli
 
 ## Richtlinie zur Unterstützung für Patches von Drittanbietern {#third-party-patch-support-policy}
 
-Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Die gesamte Dokumentation ist unter [https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64_de) verfügbar.
+Die Anforderungen an Drittpartei-Software für AEM Forms on JEE werden im Abschnitt „Systemanforderungen“ der jeweiligen Produktdokumente erläutert. Die gesamte Dokumentation ist unter [https://adobe.com/go/learn_aemforms_documentation_64](https://adobe.com/go/learn_aemforms_documentation_64_de) .
 
 Die für AEM Forms on JEE verwendeten Referenzplattformen von Drittanbietern stellen ein spezifisches Patchlevel für die Infrastruktur von Drittanbietern dar, das während der Entwicklung und Veröffentlichung der jeweiligen Versionen von AEM Forms on JEE aktuell war, und bilden das Mindest-Patchlevel oder Service Pack-Level der Infrastruktur, die von dieser Version von AEM Forms on JEE unterstützt wird.
 
 Adobe unterstützt dringende oder empfohlene Patches von Drittanbietern und geht bei deren Veröffentlichung davon aus, dass Drittanbieter die Abwärtskompatibilität mit den Versionen gewährleisten, die AEM Forms on JEE unterstützt. Adobe unterstützt nur Patches, die nach dem in der Dokumentation von AEM Forms on JEE angegebenen Mindest-Patchlevel veröffentlicht wurden.
 
-In einigen Fällen unterstützt Adobe keine Updates von Drittanbietern, die Hauptfunktionen verändern und dadurch keine vollständige Abwärtskompatibilität gewährleisten. Weitere Informationen zu den unterstützten Updates finden Sie unter [Unterstützte Patch-Definitionen](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) für bestimmte Produkte von Anbietern und die von der Adobe unterstützte Patch-Typen.
+In einigen Fällen unterstützt Adobe keine Updates von Drittanbietern, die Hauptfunktionen verändern und dadurch keine vollständige Abwärtskompatibilität gewährleisten. Weitere Informationen zu den unterstützten Updates finden Sie unter [Unterstützte Patch-Definitionen](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) für bestimmte Produkte von Anbietern und die von der Adobe unterstützten Patch-Typen.
 
 Unter gewissen Voraussetzungen, auf die Adobe keinen Einfluss hat, können sich Patches von Drittanbietern, die Abwärtskompatibilität garantieren, möglicherweise negativ auf die Adobe-Produkte oder Kundenumgebungen auswirken. In diesen Fällen empfiehlt Adobe Kunden, die Auswirkungen dringender Drittanbieter-Patches vor ihrer Anwendung in kritischen Systemen zuerst zu prüfen. Adobe wird mit Drittanbietern die entsprechenden geschäftlichen Anstrengungen unternehmen, um solche Probleme zu beheben, entweder durch die üblichen Adobe-Supportprogramme oder, indem Drittanbieter das Problem in ihrem Patch beheben. Dies ist keine Garantie dafür, dass ein neu veröffentlichtes Drittanbieter-Patch, das von Adobe unterstützt wird, wie in der Dokumentation des Anbieters funktioniert oder mit AEM Forms on JEE kompatibel ist.
 
@@ -805,3 +800,10 @@ Adobe behält sich das Recht vor, die von einer Version von AEM Forms on JEE unt
 Weitere Informationen über Patches von Drittanbietern erhalten Sie auch auf der Adobe Enterprise-Supportseite, indem Sie nach Knowledgebase-Artikeln für Ihr jeweiliges Produkt suchen.
 
 [**Support kontaktieren**](https://www.adobe.com/account/sign-in.supportportal.html)
+
+## Revisionsverlauf {#revision-history}
+
+
+* 10. Oktober 2021
+
+   * Die unterstützte Version von iOS für AEM Forms App wurde in iOS 15.1 geändert. Die vorherige Version war iOS 12.
