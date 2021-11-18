@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 74%
+source-wordcount: '636'
+ht-degree: 75%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 74%
 + [Über DAM](assets.md)
 + [Verbesserungen beim Benutzererlebnis](ux-improvements.md)
 + [Best Practices für Assets](best-practices-for-assets.md)
-+ AEM Assets {#using} verwenden
++ Verwenden von AEM Assets {#using}
    + [AEM Assets-Startseite](assets-home-page.md)
    + [Suchen nach Assets in AEM ](search-assets.md)
    + [GQL-Volltextsuche](gql-search.md)
@@ -33,10 +33,10 @@ ht-degree: 74%
    + [Hinzufügen von Imagemaps](image-maps.md)
    + [Wiederverwenden von Assets mit MSM](reuse-assets-using-msm.md)
 + Dynamic Media{#dynamic}
-   + [Dynamic Media-Newsletter-Archiv nach Experience League](dynamic-media-newsletter.md)
+   + [Dynamic Media Newsletter-Archiv von Experience League](dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media.md)
-   + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
+   + [Konfigurieren von Dynamic Media - Scene7-Modus](config-dms7.md)
    + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
    + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
    + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
@@ -47,7 +47,7 @@ ht-degree: 74%
    + [Anwenden von Dynamic Media-Bildvorgaben](image-presets.md)
    + [Dynamic Media-Videoprofile](video-profiles.md)
    + [Dynamic Media-Bildprofile](image-profiles.md)
-   + [Smart Imaging](imaging-faq.md)
+   + [Intelligente Bildbearbeitung](imaging-faq.md)
    + [Video](s7-video.md)
    + [Hinzufügen von Dynamic Media Classic-Funktionen zu Ihrer Seite](scene7.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
@@ -85,7 +85,7 @@ ht-degree: 74%
    + [Von Assets unterstützte Formate](assets-formats.md)
    + [Suchfacetten](search-facets.md)
    + [Verwalten von Metadaten für Assets](metadata.md)
-   + [XMP-Writeback in Ausgabedarstellungen](xmp-writeback.md)
+   + [XMP-Writeback zu Ausgabedarstellungen](xmp-writeback.md)
    + [Asset-Linkfreigabe](link-sharing.md)
    + [Asset-Berichte](asset-reports.md)
    + [Optimierte Smart-Tags](enhanced-smart-tags.md)
@@ -101,7 +101,7 @@ ht-degree: 74%
    + [XMP-Metadaten](xmp.md)
    + [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md)
    + [AEM Assets und AEM Media Library](medialibrary.md)
-   + [PDF Rasterizer verwenden](aem-pdf-rasterizer.md)
+   + [Verwenden von PDF Rasterizer](aem-pdf-rasterizer.md)
    + [Konfigurieren von Asset-Upload-Beschränkungen](configuring-asset-upload-restrictions.md)
    + [Best Practices für die Integration von AEM und Creative Cloud](aem-cc-integration-best-practices.md)
    + [Integrieren von AEM Assets mit dem InDesign-Server](indesign.md)
@@ -115,7 +115,7 @@ ht-degree: 74%
    + [Erkennen des MIME-Typs von Assets mit Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
    + [Unterstützung für IPTC-Metadaten](iptc-support.md)
-   + [Metadatenschemata](metadata-schemas.md)
+   + [Metadatenschemas](metadata-schemas.md)
    + [Multi-Tenancy für Sammlungen, Snippets sowie Snippet-Vorlagen](multi-tenancy.md)
    + [Wasserzeichen  ](watermarking.md)
    + [Massenimport und -export von Metadaten](metadata-import-export.md)
@@ -165,3 +165,7 @@ ht-degree: 74%
    + [Freigeben privater Ordner](private-folder.md)
    + [Richtlinien für das Trainieren des Smart Content Service](smart-tags-training-guidelines.md)
    + [Videoausgabeformate](video-renditions.md)
++ Integration mit anderen Lösungen {#integrations}
+   + [Integrationen mit [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installieren [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-install.md)
+   + [Konfigurieren [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-configure.md)
