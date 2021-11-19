@@ -34,13 +34,13 @@ Bevor Sie mit der Erstellung und Analyse von A/B-Tests für adaptive Formulare b
 
 Wenn Sie AEM mit Target integrieren möchten, stellen Sie sicher, dass Sie über ein gültiges Adobe Target-Konto verfügen. Nach der Registrierung bei Adobe Target erhalten Sie einen Clientcode. Sie benötigen den Clientcode, die E-Mail-Adresse, die mit dem Target-Konto verknüpft sind, und das Kennwort, um AEM mit Target zu verbinden. 
 
-Der Clientcode identifiziert das Adobe Target-Kundenkonto und wird als Subdomäne in einer URL verwendet, wenn er über den Adobe Target-Server aufgerufen wird. Melden Sie sich vor dem Fortfahren bei [https://experience.adobe.com/](https://experience.adobe.com/) an und, falls Sie Zugriff haben, zeigen Sie die Option [!DNL Adobe Target] im Abschnitt [!UICONTROL Schnellzugriff] an.
+Der Clientcode identifiziert das Adobe Target-Kundenkonto und wird als Subdomäne in einer URL verwendet, wenn er über den Adobe Target-Server aufgerufen wird. Melden Sie sich vor dem Fortfahren bei [https://experience.adobe.com/](https://experience.adobe.com/) Wenn Sie Zugriff haben, zeigen Sie die [!DNL Adobe Target] in der [!UICONTROL Schnellzugriff] Abschnitt.
 
 ### Integration von Target in AEM Forms {#integrate-target-in-aem-forms}
 
 Gehen Sie zur Integration eines laufenden Target-Servers in AEM Forms wie folgt vor:
 
-1. Wechseln Sie auf AEM Server zu https://&lt;*Hostname*:&lt;*Port*>/libs/cq/core/content/tools/cloudservices.html.
+1. Wechseln Sie auf AEM Server zu https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
 1. Klicken Sie im Bereich **Adobe Target** auf **Konfigurationen anzeigen** und anschließend auf das Symbol **+**, um eine neue Konfiguration anzuzeigen.
 
    Wenn Sie Target zum ersten Mal konfigurieren, klicken Sie auf **Jetzt konfigurieren**.
@@ -51,10 +51,10 @@ Gehen Sie zur Integration eines laufenden Target-Servers in AEM Forms wie folgt 
 1. Wählen Sie **Rest** aus der Dropdownliste „API-Typ“ aus.
 1. Klicken Sie auf **Mit Adobe Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindung erfolgreich hergestellt wurde, wird die Meldung „Verbindung erfolgreich“ angezeigt. Klicken Sie auf **OK** und dann auf **OK**. Das Target-Konto wird konfiguriert.
 1. Erstellen Sie ein Target-Framework, wie beschrieben in [Framework hinzufügen](/help/sites-administering/target.md).
-1. Wechseln Sie zu https://&lt;*Hostname*:&lt;*Port*/system/console/configMgr.
+1. Gehen Sie zu https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
 1. Klicken Sie auf **AEM Forms Target-Konfiguration**.
 1. Wählen Sie ein **Target-Framework** aus.
-1. Geben Sie im Feld **Target-URLs** alle URLs an, für die A/B-Tests durchgeführt werden sollen. Beispiel: https://&lt;*Hostname*:&lt;*Port*>/ für AEM Forms-Server unter OSGi oder https://&lt;*Hostname*:&lt;*Port*/lc/ für AEM Forms-Server unter JEE.
+1. Geben Sie im Feld **Target-URLs** alle URLs an, für die A/B-Tests durchgeführt werden sollen. Beispiel: https://&lt;*hostname*>:&lt;*port*>/ für AEM Forms-Server unter OSGi oder https://&lt;*hostname*>:&lt;*port*>/lc/ für AEM Forms-Server auf JEE.
 
    Wenn Sie z. B. eine Target-URL für eine Instanz im Veröffentlichungsmodus konfigurieren möchten und Ihre Kunden über den Hostnamen oder die IP-Adresse darauf zugreifen können, müssen Sie beide konfigurieren – sowohl den Hostnamen als auch die IP-Adresse. Wenn Sie nur eine der URLs konfigurieren, ist der A/B-Test für Kunden, die über die andere URL zugreifen möchten, nicht möglich. Klicken Sie auf **+**, um mehrere URLs anzugeben.
 
@@ -86,8 +86,8 @@ Mit AEM können Sie eine Zielgruppe erstellen und für einen A/B-Test verwenden.
 1. Wählen Sie im Dialogfeld „Adobe Target-Konfiguration“ eine Target-Konfiguration und klicken Sie auf **OK**.
 1. Erstellen Sie auf der Seite „Neue Zielgruppe erstellen“ Regeln. Mit Regeln können Sie die Zielgruppe kategorisieren. Beispiel: Sie möchten die Zielgruppen basierend auf dem Betriebssystem kategorisieren. Ihre Zielgruppe A kommt von Windows und Zielgruppe B von Linux.
 
-   * Um die Zielgruppe basierend auf Windows zu kategorisieren, wählen Sie in Regel 1 den Attributtyp **OS** aus. Wählen Sie aus der Dropdownliste Wenn die Option **Windows** aus.
-   * Um die Zielgruppe basierend auf Linux zu kategorisieren, wählen Sie in Regel 2 den Attributtyp **OS** aus. Wählen Sie aus der Dropdownliste &quot;Wann&quot;die Option **Linux** und klicken Sie auf **Weiter**.
+   * Um die Zielgruppe basierend auf Windows zu kategorisieren, wählen Sie in Regel 1 die Option **BS** Attributtyp. Wählen Sie aus der Dropdownliste Wann die Option **Windows**.
+   * Um die Zielgruppe basierend auf Linux zu kategorisieren, wählen Sie in Regel 2 die Option **BS** Attributtyp. Wählen Sie aus der Dropdownliste Wann die Option **Linux** und klicken Sie auf **Nächste**.
 
 1. Geben Sie einen Namen für die erstellte Zielgruppe an und klicken Sie auf **Speichern**.
 
@@ -97,7 +97,7 @@ Wie nachfolgend gezeigt, können Sie die Zielgruppe auswählen, wenn Sie A/B-Tes
 
 Führen Sie die folgenden Schritte aus, um einen A/B-Test für ein adaptives Formular zu erstellen.
 
-1. Navigieren Sie zu **Forms &amp; Documents** unter https://&lt;*Hostname*:&lt;*Port*>/aem/forms.html/content/dam/formsanddocuments.
+1. Navigieren Sie zu **Forms und Dokumente** https://&lt;*hostname*>:&lt;*port*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Navigieren Sie zum Ordner mit dem adaptiven Formular.
 1. Klicken Sie auf das Tool **Auswählen** in der Symbolleiste und wählen Sie das adaptive Formular aus.
