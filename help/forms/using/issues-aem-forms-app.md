@@ -1,8 +1,8 @@
 ---
 title: Fehlerbehebung der AEM Forms-App
-seo-title: Fehlerbehebung der AEM Forms-App
+seo-title: Troubleshoot AEM Forms app
 description: 'Erfahren Sie mehr über die häufigsten Probleme mit AEM Forms-App und wie die Fehlerbehebung für diese Probleme durchgeführt wird. '
-seo-description: 'Erfahren Sie mehr über die häufigsten Probleme mit AEM Forms-App und wie die Fehlerbehebung für diese Probleme durchgeführt wird. '
+seo-description: Learn about common issues with AEM Forms app and how to troubleshoot them.
 uuid: a5cc3065-0ebf-48c0-a8fe-f1061632ca90
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 exl-id: 1e772376-d25a-4471-bf7c-5a8a8cdeb543
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 62%
+source-wordcount: '680'
+ht-degree: 61%
 
 ---
 
@@ -33,17 +33,17 @@ Die Abschnitte in diesem Artikel behandeln Folgendes:
 
 AEM Forms-App für iOS, die zur Synchronisierung mit AEM Forms unter OSGi konfiguriert ist, unterstützt nur Anlagen auf Feldebene. Alle Anlagen müssen eindeutige Namen haben. Wenn mehrere Anlagen denselben Namen haben, wird nur eine Anlage beibehalten und alle anderen mit identischem Namen gehen verloren. Führen Sie die folgenden Schritte aus, um Benutzer auf iOS-Geräten vor Datenverlust zu bewahren:
 
-1. Navigieren Sie auf dem verbundenen Server zu **Adobe Experience Manager > Tools > Vorgänge > Web Console**.
-1. Klicken Sie auf **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]**.
-1. Aktivieren Sie im Dialogfeld [!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation] die Option **Dateinamen individualisieren**.
+1. Navigieren Sie auf dem verbundenen Server zu **Adobe Experience Manager > Tools > Vorgänge > Web-Konsole**.
+1. Suchen und Klicken **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]**.
+1. Im [!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation] dialog, aktivieren **Dateinamen individualisieren**.
 
-   Wenn die Einstellung **Dateinamen individualisieren** deaktiviert ist, gehen die Daten der Benutzer verloren, wenn sie versuchen, adaptive Formulare mit mehreren Anhängen zu senden.
+   Wenn **Dateinamen individualisieren** -Einstellung deaktiviert ist, kann es bei Benutzern zu Datenverlusten kommen, wenn sie versuchen, adaptive Formulare mit mehreren Anhängen zu senden.
 
 1. Klicken Sie auf **Speichern**.
 
-## Entwürfe von HTML5 -Formularen, die von Workspace-Benutzern eingesendet wurden, werden nicht auf dem Portal angezeigt  {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## Entwürfe von HTML5 -Formularen, die von Workspace-Benutzern eingesendet wurden, werden nicht auf dem Portal angezeigt {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Bei HTML5-Formularen, die in der AEM Forms-App mit **Als Entwurf speichern** HTML-Renderprofil aktiviert sind, sind die gespeicherten Entwürfe für Workspace-Benutzer nicht sichtbar. Um gespeicherte Entwürfe von HTML5-Formularen anzuzeigen, die von Workspace-Benutzern im Portal gesendet wurden, führen Sie die folgenden Schritte aus:
+Für HTML5 Formulare, die in der AEM Forms-App mit **Als Entwurf speichern** HTML Render Profile, die gespeicherten Entwürfe sind für Workspace-Benutzer nicht sichtbar. So zeigen Sie gespeicherte Entwürfe von HTML5-Formularen an, die von Workspace-Benutzern im Portal übermittelt wurden:
 
 1. Öffnen Sie CRXDE und melden Sie sich als Administrator an.
 
@@ -51,11 +51,11 @@ Bei HTML5-Formularen, die in der AEM Forms-App mit **Als Entwurf speichern** HTM
 
 1. Im Stammpfad von CRXDE, in der Zugriffssteuerungsliste unter Zugriffssteuerung klicken Sie auf **+**.
 1. Klicken Sie im Dialogfeld **Neuen Eintrag hinzufügen** auf die Gruppensuche-Schaltfläche im Feld „Prinzipal“.
-1. Geben Sie im Feld &quot;Name&quot;des Dialogfelds &quot;Prinzipal auswählen&quot;`PERM_WORKSPACE_USER` ein und klicken Sie auf **Suche**.
-1. Wählen Sie die Gruppe `PERM_WORKSPACE_USER` im Dialogfeld &quot;Prinzipal auswählen&quot;und klicken Sie auf **OK**.
+1. Geben Sie im Feld &quot;Name&quot;des Dialogfelds &quot;Prinzipal auswählen&quot;Folgendes ein: `PERM_WORKSPACE_USER` und klicken Sie auf **Suche**.
+1. Auswählen `PERM_WORKSPACE_USER` Gruppe im Dialogfeld &quot;Prinzipal auswählen&quot;und klicken Sie auf **OK**.
 1. Im Dialogfeld „Neuen Eintrag hinzufügen“ wird `PERM_WORKSPACE_USER`-Gruppe im Feld „Prinzipal“ ausgewählt.
 
-   Aktivieren Sie die `jcr:read`-Berechtigungen für die Benutzergruppe.
+   Aktivieren `jcr:read` Berechtigungen für die Benutzergruppe.
 
 1. Klicken Sie auf **OK**.
 
@@ -71,22 +71,22 @@ Führen Sie zur Behebung dieses Problems folgende Schritte durch:
    URL: https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
 
 1. Im **manuellen Ressourcen-Cache** klicken Sie auf die Schaltfläche **+**, um einen CRX-Pfad hinzuzufügen.
-1. Geben Sie im Feld **Neue Ressource** Folgendes ein: /etc.clientlibs/fd/xfaforms/I18N/en_US.js und klicken Sie auf **Hinzufügen**.
+1. Im **Neue Ressource hinzufügen** -Feld, Typ: /etc.clientlibs/fd/xfaforms/I18N/en_US.js und klicken Sie auf **Hinzufügen**.
 1. Klicken Sie auf **Speichern**.
 
-## AEM Forms werden unter Windows nicht synchronisiert  {#aem-forms-do-not-sync-on-windows}
+## AEM Forms werden unter Windows nicht synchronisiert {#aem-forms-do-not-sync-on-windows}
 
 Ein Formular wird unter Windows nicht in der AEM Forms-App mit dem verbundenen Server synchronisiert, wenn der Pfad des Formulars oder seine Ressourcen länger als 256 Zeichen lang sind.
 
 Modifizieren Sie den Pfad des Formulars und seine Ressourcen, um die Anzahl der Zeichen im Pfad auf 256 zu reduzieren.
 
-## Nicht unterstützte Version von Gradle  {#unsupported-version-of-gradle}
+## Nicht unterstützte Version von Gradle {#unsupported-version-of-gradle}
 
 **Fehlermeldung:** Das Projekt verwendet eine nicht unterstützte Version von Gradle.
 
 Die Fehlermeldung wird angezeigt, wenn Sie die AEM Forms-App in Android Studio erstellen. Das Problem tritt aufgrund einer nicht unterstützten Version von Gradle auf, die vom System unterstützt wird.
 
-**Lösung:** Klicken Sie auf Gradle Wrapper  **reparieren und** importieren Sie das Projekt erneut, um das Problem zu beheben.
+**Auflösung:** Klicken **Gradle Wrapper- und Neu-Import-Projekt reparieren** um das Problem zu beheben.
 
 ![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
@@ -94,14 +94,14 @@ Die Fehlermeldung wird angezeigt, wenn Sie die AEM Forms-App in Android Studio e
 
 **Fehlermeldung:** Die Versionen des Android Gradle-Plug-ins und Gradle sind nicht kompatibel.
 
-Die Fehlermeldung wird angezeigt, wenn Sie die Option **Build APK** aus dem Menü **Build** auf der Benutzeroberfläche von Android Studio auswählen.
+Die Fehlermeldung wird angezeigt, wenn Sie **Build-APK** -Option **Build** auf der Benutzeroberfläche von Android Studio.
 
 ![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 
-**Lösung:** Öffnen Sie die Datei  **Gradle Scripts**  >  **gradle-wrapper.** properties und bearbeiten Sie die Eigenschaft  **** distributionUrlproperty.
+**Auflösung:** Öffnen **Gradle Scripts** > **gradle-wrapper.properties** und bearbeiten Sie die **distributionUrl** -Eigenschaft.
 
-Beispielsweise empfiehlt die Android Studio-Konsole, die Gradle-Version auf 3.5 herabzustufen. Bearbeiten Sie die Version in der Datei **distributionUrl** von **gradle-wrapper.properties** .
+Beispielsweise empfiehlt die Android Studio-Konsole, die Gradle-Version auf 3.5 herabzustufen. Bearbeiten Sie die Version in **distributionUrl** von **gradle-wrapper.properties** -Datei.
 
-Wählen Sie erneut **Build** > **Build APK** aus, um den Fehler zu beheben und die .apk-Datei zu generieren.
+Auswählen **Build** > **Build-APK** erneut, um den Fehler zu beheben und die .apk-Datei zu generieren.
 
 ![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)

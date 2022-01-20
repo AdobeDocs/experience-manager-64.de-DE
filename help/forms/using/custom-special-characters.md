@@ -1,25 +1,25 @@
 ---
 title: Benutzerdefinierte Sonderzeichen in Correspondence Management
-seo-title: Benutzerdefinierte Sonderzeichen in Correspondence Management
+seo-title: Custom special characters in Correspondence Management
 description: Erfahren Sie, wie Sie benutzerdefinierte Sonderzeichen in Correspondence Management hinzufügen.
-seo-description: Erfahren Sie, wie Sie benutzerdefinierte Sonderzeichen in Correspondence Management hinzufügen.
+seo-description: Learn how to add custom special characters in Correspondence Management.
 uuid: ac4f1353-f1ef-43b7-8e80-aba56a155e3f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: a6206ae1-b71b-4066-b7a0-ce39a60d6dd0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '639'
 ht-degree: 69%
 
 ---
 
 # Benutzerdefinierte Sonderzeichen in Correspondence Management {#custom-special-characters-in-correspondence-management}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Correspondence Management umfasst einen integrierten Standard-Support für 210 Sonderzeichen, die Sie mühelos in Briefen einfügen können.
 
@@ -32,7 +32,7 @@ Sie können beispielsweise die folgenden Sonderzeichen einfügen:
 Sie können Sonderzeichen in Briefe einfügen:
 
 * Im [Texteditor](/help/forms/using/document-fragments.md#createtext)
-* In einem [bearbeitbaren Inline-Modul in einer Korrespondenz](/help/forms/using/create-correspondence.md#managecontent)
+* In einer [editierbares Inline-Modul in einer Korrespondenz](/help/forms/using/create-correspondence.md#managecontent)
 
 ![specialcharaktersinlinemodul](assets/specialcharactersinlinemodule.png)
 
@@ -42,20 +42,20 @@ Der Administrator kann Unterstützung für mehr/benutzerdefinierte Sonderzeichen
 
 Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefinierte Sonderzeichen hinzuzufügen:
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen **[!UICONTROL specialcharacters]** mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner für Sonderzeichen (im Ordner textEditorConfig unter libs):
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen **[!UICONTROL Sonderzeichen]** mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner &quot;Sonderzeichen&quot;(im Ordner textEditorConfig unter libs):
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner **specialcharacters** im folgenden Pfad und wählen Sie **Überlagerungsknoten** aus:
+   1. Klicken Sie mit der rechten Maustaste auf die **Sonderzeichen** Ordner unter folgendem Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:**  /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **Pfad:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
       **Überlagerungsspeicherort:** /apps/
 
-      **Knotentypen abgleichen:** Überprüft
+      **Knotentypen abgleichen:** Aktiviert
 
       >[!NOTE]
       >
@@ -77,7 +77,7 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
    | cmConfigurationType | Zeichenfolge | cmTextEditorConfiguration |
    | cssPath | Zeichenfolge | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL specialcharacters]** im folgenden Pfad und wählen Sie **Erstellen > Untergeordneter Knoten** und klicken Sie dann auf **Alle speichern**:
+1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL Sonderzeichen]** Ordner unter folgendem Pfad und wählen Sie **Erstellen > Untergeordneter Knoten** und klicken Sie anschließend auf **Alle speichern**:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 

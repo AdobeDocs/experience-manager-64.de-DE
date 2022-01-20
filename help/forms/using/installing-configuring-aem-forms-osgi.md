@@ -1,8 +1,8 @@
 ---
 title: Installieren und konfigurieren Sie Datenerfassungsfunktionen
-seo-title: Installieren und konfigurieren Sie Datenerfassungsfunktionen
+seo-title: Install and configure data capture capabilities
 description: Installieren und konfigurieren Sie adaptive Formulare, PDF-Formulare und HTML5-Formulare. Konfigurieren Sie Adobe Analytics und Adobe Target für adaptive Formulare, um die Verwendung von Formularen und Zielbenutzern anhand ihres Profils zu analysieren.
-seo-description: Installieren und konfigurieren Sie adaptive Formulare, PDF-Formulare und HTML5-Formulare. Konfigurieren Sie Adobe Analytics und Adobe Target für adaptive Formulare, um die Verwendung von Formularen und Zielbenutzern anhand ihres Profils zu analysieren.
+seo-description: Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
 uuid: ce253b5a-eeb2-47d2-a6c9-e6f59384159a
 contentOwner: khsingh
 topic-tags: installing
@@ -11,7 +11,7 @@ role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1799'
 ht-degree: 88%
 
 ---
@@ -95,14 +95,14 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads suchen]** verwenden, um die Ergebnisse zu filtern.
-1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem, wählen Sie **[!UICONTROL Endbenutzer-Lizenzbedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die **[!UICONTROL Suchdownloads]** Option zum Filtern der Ergebnisse.
+1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+   Sie können das Paket auch über den direkten Link herunterladen, der im Abschnitt [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) Artikel.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der Datei  [AEM-Installation-Directory]/crx-quickstart/logs/error.log angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der [AEM-Installationsverzeichnis]/crx-quickstart/logs/error.log und das Protokoll ist stabil.
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
@@ -116,9 +116,9 @@ AEM Forms verfügt über einige obligatorische und optionale Konfigurationen. Zu
 Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz folgende Schritte zum Boot-Delegate der Bibliotheken aus:
 
 1. Beenden Sie die zugrunde liegenden AEM-Instanz.
-1. Öffnen Sie die Datei [AEM Installationsverzeichnis]\crx-quickstart\conf\sling.properties zur Bearbeitung.
+1. Öffnen Sie die [AEM Installationsverzeichnis]\crx-quickstart\conf\sling.properties Datei zur Bearbeitung.
 
-   Wenn Sie [AEM Installationsordner]\crx-quickstart\bin\start.bat zum Starten von AEM verwendet haben, bearbeiten Sie die sling.properties-Datei unter [AEM_root]\crx-quickstart\.
+   Wenn Sie [AEM Installationsverzeichnis]\crx-quickstart\bin\start.bat , um AEM zu starten, und bearbeiten Sie dann die sling.properties-Datei unter [AEM_root]\crx-quickstart\.
 
 1. Fügen Sie die folgenden Eigenschaften der sling.properties-Datei hinzu:
 
@@ -142,7 +142,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. Die Standardeinstellung ist `https://[server]:[port]/system/console/configMgr`.
 1. Suchen und öffnen Sie die **[!UICONTROL Deserialisierungs-Firewallkonfiguration]**.
-1. Fügen Sie das Paket **[!UICONTROL sun.util.calendar]** zum Feld **[!UICONTROL Zulassungsliste]** hinzu. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Fügen Sie die **[!UICONTROL sun.util.calendar]** -Paket zu **[!UICONTROL Zulassungsliste]** -Feld. Klicken Sie auf **[!UICONTROL Speichern]**.
 1. Wiederholen Sie Schritte 1-3 für alle Autor- und Veröffentlichungsinstanzen.
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
@@ -172,8 +172,8 @@ Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu 
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
-1. Wechseln Sie zum AEM Web Console Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
-1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiven Kommunikations-Web-Kanal]**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **[!UICONTROL Anzahl adaptiver Forms]** zwischenspeichern kann. Der Standardwert ist 100. Klicken Sie auf **[!UICONTROL Speichern]**.
+1. Wechseln Sie zum Konfigurations-Manager der AEM-Web-Konsole unter `https://[server]:[port]/system/console/configMgr`.
+1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiven Kommunikations-Web-Kanal]**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im **[!UICONTROL Anzahl der adaptiven Forms]** -Feld. Der Standardwert ist 100. Klicken Sie auf **[!UICONTROL Speichern]**.
 
    >[!NOTE]
    >
@@ -189,13 +189,13 @@ Sie können die SSL-Kommunikation für das Formulardatenmodell aktivieren. Um di
 
 Adobe Sign aktiviert Arbeitsabläufe für E-Signaturen für adaptive Formulare. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. v. a..
 
-In einem typischen Szenario mit Adobe Sign und adaptiven Formularen füllt der Benutzer ein adaptives Formular aus, um eine Dienstleistung zu beantragen. Dies könnte beispielsweise ein Antrag für eine Kreditkarte oder ein Formular für Dienstleistungen für Bürger sein. Wenn ein Benutzer das Antragsformular ausfüllt und signiert, wird dieses zur Bearbeitung an den Dienstanbieter gesendet. Dienstanbieter prüft den Antrag und markiert ihn mit Adobe Sign als genehmigt. Sie können ähnliche Workflows für elektronische Signaturen ermöglichen, indem Sie Adobe Sign in AEM Forms integrieren.
+In einem typischen Szenario mit Adobe Sign und adaptiven Formularen füllt der Benutzer ein adaptives Formular aus, um eine Dienstleistung zu beantragen. Dies könnte beispielsweise ein Antrag für eine Kreditkarte oder ein Formular für Dienstleistungen für Bürger sein. Wenn ein Benutzer das Antragsformular ausfüllt und signiert, wird dieses zur Bearbeitung an den Dienstleister gesendet. Dienstanbieter prüft den Antrag und markiert ihn mit Adobe Sign als genehmigt. Sie können ähnliche Workflows für elektronische Signaturen ermöglichen, indem Sie Adobe Sign in AEM Forms integrieren.
 
 Um Adobe Sign mit AEM Forms zu verwenden, [integrieren Sie Adobe Sign mit AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
-#### Konfigurieren Sie Analytics {#configure-adobe-analytics}
+#### Konfigurieren von Adobe Analytics {#configure-adobe-analytics}
 
-AEM Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
+AEM Forms ermöglicht die Integration mit Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
 Adobe Analytics mit AEM Forms finden Sie unter [Konfigurieren von Analytics und Berichte](/help/forms/using/configure-analytics-forms-documents.md).
 

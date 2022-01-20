@@ -1,18 +1,18 @@
 ---
 title: Erstellen adaptiver Formulare mithilfe des JSON-Schemas
-seo-title: Erstellen adaptiver Formulare mithilfe des JSON-Schemas
+seo-title: Creating adaptive forms using JSON Schema
 description: 'Adaptive Formulare können ein JSON-Schema als Formularmodell verwenden, sodass Sie vorhandene JSON-Vorlagen nutzen können, um adaptive Formulare zu erstellen. '
-seo-description: 'Adaptive Formulare können ein JSON-Schema als Formularmodell verwenden, sodass Sie vorhandene JSON-Vorlagen nutzen können, um adaptive Formulare zu erstellen. '
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 81%
+source-wordcount: '1207'
+ht-degree: 85%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 81%
 Für das Authoring eines adaptiven Formulars mit einem JSON-Schema als Formularmodell sind grundlegende Kenntnisse zu JSON-Schemas erforderlich. Es wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
 
 * [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md)
-* [JSON-Schema](https://json-schema.org/) 
+* [JSON-Schema](https://json-schema.org/)
 
-## Verwenden eines JSON-Schemas als Formularmodell   {#using-a-json-schema-as-form-model}
+## Verwenden eines JSON-Schemas als Formularmodell  {#using-a-json-schema-as-form-model}
 
-AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das JSON-Schema, das Sie verwenden, sollte [v4-Spezifikationen](https://json-schema.org/draft-04/schema) entsprechen.
+AEM Forms unterstützt die Erstellung eines adaptiven Formulars mit einem vorhandenen JSON-Schema als Formularmodell. Dieses JSON-Schema stellt die Struktur dar, in der Daten vom Back-End-System in Ihrem Unternehmen produziert oder genutzt werden. Das JSON-Schema, das Sie verwenden, sollte mit den [Spezifikationen der Version 4](https://json-schema.org/draft-04/schema) konform sein.
 
 Die Haupteigenschaften bei der Verwendung eines JSON-Schemas sind wie folgt:
 
@@ -46,7 +46,7 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
    <th><strong>Komponente des adaptiven Formulars</strong></th> 
   </tr> 
   <tr> 
-   <td><p>Zeichenfolgeneigenschaften mit Enum- und enumNames-Beschränkung.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
+   <td><p>Zeichenfolgen-Eigenschaften mit enum- und enumNames-Beschränkung.</p> <p>Syntax,</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
    <td><p>Dropdown-Komponente:</p> 
     <ul> 
      <li>Die in enumNames aufgeführten Werte werden im Dropdown-Feld angezeigt.</li> 
@@ -70,16 +70,16 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
    <td>Numerisches Feld, Untertyp auf „nicht verankert“ eingestellt<br /> </td> 
   </tr> 
   <tr> 
-   <td>Ganzzahl-Eigenschaft <br /> </td> 
+   <td>Ganzzahl-Eigenschaft<br /> </td> 
    <td>Numerisches Feld, Untertyp auf „Ganzzahl“ eingestellt<br /> </td> 
   </tr> 
   <tr> 
-   <td>Boolean-Eigenschaft<br /> </td> 
+   <td>Boolesche Eigenschaft<br /> </td> 
    <td>Schalter<br /> </td> 
   </tr> 
   <tr> 
    <td>Objekt-Eigenschaft<br /> </td> 
-   <td>Fenster<br /> </td> 
+   <td>Bedienfeld<br /> </td> 
   </tr> 
   <tr> 
    <td>Array-Eigenschaft</td> 
@@ -88,7 +88,7 @@ Diese Zuordnung von JSON-Elementen zu Komponenten adaptiver Formulare ist wie fo
  </tbody> 
 </table>
 
-### Allgemeine Schemaeigenschaften {#common-schema-properties}
+### Allgemeine Schema-Eigenschaften {#common-schema-properties}
 
 Bei einem adaptiven Formular werden jedem generierten Feld im JSON-Schema verfügbare Informationen zugeordnet. Führen Sie insbesondere die folgenden Aufgaben aus:
 
@@ -102,9 +102,9 @@ Bei einem adaptiven Formular werden jedem generierten Feld im JSON-Schema verfü
 * Die Eigenschaft readOnly legt das schreibgeschützte Attribut einer adaptiven Formularkomponente fest.
 * Die erforderliche Eigenschaft markiert das Feld im adaptiven Formular als obligatorisch, während im Falle eines Bedienfelds (wobei der Typ &quot;Objekt&quot;ist) die endgültigen gesendeten JSON-Daten Felder mit leerem Wert aufweisen, die diesem Objekt entsprechen.
 * Die pattern-Eigenschaft wird als Überprüfungsmuster (regulärer Ausdruck) im adaptiven Formular festgelegt.
-* Die Erweiterung der JSON-Schemadatei muss .schema.json beibehalten werden. Beispiel: &lt;filename>.schema.json.
+* Die Erweiterung der JSON-Schema-Datei „.schema.json“ muss beibehalten werden. Beispiel: &lt;filename>.schema.json.
 
-## JSON-Beispielschema {#sample-json-schema}
+## Beispiel für ein JSON-Schema {#sample-json-schema}
 
 Im Folgenden finden Sie ein Beispiel eines JSON-Schemas.
 
@@ -286,9 +286,9 @@ Im Folgenden finden Sie ein Beispiel eines JSON-Schemas.
 }
 ```
 
-### Wiederverwendbare Schemadefinitionen  {#reusable-schema-definitions}
+### Wiederverwendbare Schemadefinitionen {#reusable-schema-definitions}
 
-Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schemadefinitionen werden zum Erstellen von Fragmenten verwendet. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
+Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendbaren Schemadefinitionen werden verwendet, um Fragmente zu erstellen. Dies geschieht ähnlich wie beim Identifizieren komplexer Typen in XSD. Ein JSON-Beispielschema mit Definitionen wird unten angezeigt:
 
 ```
 {
@@ -317,9 +317,9 @@ Definitionsschlüssel kennzeichnen wiederverwendbare Schemas. Die wiederverwendb
 
 Das obige Beispiel definiert einen Kundendatensatz, bei dem jeder Kunde über eine Versand- und eine Rechnungsadresse verfügt. Die Struktur der beiden Adressen ist gleich: Straße, Stadt und Land. Daher sollten Sie die Adressen nicht duplizieren. Das erleichtert auch das Hinzufügen und Löschen von Feldern, wodurch zukünftige Änderungen einfach sind.
 
-## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen  {#pre-configuring-fields-in-json-schema-definition}
+## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen {#pre-configuring-fields-in-json-schema-definition}
 
-Sie können die Eigenschaft **aem:afProperties** verwenden, um das JSON-Schema-Feld so zu konfigurieren, dass es einer benutzerdefinierten adaptiven Formularkomponente zugeordnet wird. Ein Beispiel wird unten angezeigt:
+Sie können die **aem:afProperties** -Eigenschaft zum Vorkonfigurieren des JSON-Schema-Felds für die Zuordnung zu einer benutzerdefinierten adaptiven Formularkomponente. Ein Beispiel wird unten angezeigt:
 
 ```
 {
@@ -339,7 +339,7 @@ Sie können die Eigenschaft **aem:afProperties** verwenden, um das JSON-Schema-F
 }
 ```
 
-## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars  {#limit-acceptable-values-for-an-adaptive-form-component}
+## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
 
 Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, um die Werte zu beschränken, die für eine Komponente eines adaptiven Formulars gültig sind:
 
@@ -398,7 +398,7 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   <tr> 
    <td><p><code>minLength</code></p> </td> 
    <td><p>Zeichenfolge</p> </td> 
-   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich Null sein.</p> </td> 
+   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich null sein.</p> </td> 
    <td> 
     <ul> 
      <li>Textfeld</li> 
@@ -407,7 +407,7 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   <tr> 
    <td><code>maxLength</code></td> 
    <td>Zeichenfolge</td> 
-   <td>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest. Die maximale Länge muss größer oder gleich Null sein.</td> 
+   <td>Legt die zulässige Höchstzahl von Zeichen in einer Komponente fest. Die maximale Länge muss größer oder gleich null sein.</td> 
    <td> 
     <ul> 
      <li>Textfeld</li> 
@@ -425,13 +425,13 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   <tr> 
    <td>maxItems</td> 
    <td>Zeichenfolge</td> 
-   <td>Gibt die maximale Anzahl von Elementen in einem Array an. Die maximale Anzahl von Elementen muss größer oder gleich Null sein.</td> 
+   <td>Gibt die maximale Anzahl von Elementen in einem Array an. Die maximale Anzahl von Elementen muss größer oder gleich null sein.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>minItems</td> 
    <td>Zeichenfolge</td> 
-   <td>Gibt die Mindestanzahl von Elementen in einem Array an. Die Mindestanzahl von Elementen muss größer oder gleich Null sein.</td> 
+   <td>Gibt die Mindestanzahl von Elementen in einem Array an. Die Mindestanzahl von Elementen muss größer oder gleich null sein.</td> 
    <td> </td> 
   </tr> 
  </tbody> 
@@ -448,13 +448,13 @@ Adaptive Formulare bieten keine Unterstützung für die folgenden JSON-Schemakon
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
-**Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
+**Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von „minOccurs“ oder „maxOccurs“ ist größer als 1)?**
 
-In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
+In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder nutzen möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
 
 **Ich habe eine lange komplexe Struktur in der Inhaltssuche. Wie kann ich ein bestimmtes Element suchen?**
 
 Es gibt zwei Optionen:
 
-* Blättern Sie durch die Baumstruktur
+* Scrollen Sie durch die Baumstruktur
 * Verwenden Sie das Suchfeld, um ein Element zu finden

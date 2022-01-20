@@ -1,8 +1,8 @@
 ---
 title: Software-Architektur
-seo-title: Software-Architektur
+seo-title: Software Architecture
 description: Best Practices für die Entwicklung der Architektur Ihrer Software
-seo-description: Best Practices für die Entwicklung der Architektur Ihrer Software
+seo-description: Best practices for architecting your software
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: 4c5896a4-d3f4-4278-9af3-538ab10cd210
 source-git-commit: b7d1a2435e33d4fdd1d030d81ff1ca1b65700fa6
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '614'
 ht-degree: 41%
 
 ---
@@ -35,11 +35,11 @@ Indem Sie die Komponenten definieren, die in den einzelnen Absatzsystemen auf de
 
 SOLID ist ein Akronym, das fünf architektonische Prinzipien beschreibt, die Sie einhalten sollten:
 
-* **** Grundsatz der einheitlichen Verantwortung - Jedes Modul, jede Klasse, jede Methode usw. sollte nur eine Verantwortung haben.
-* **** Open/Closed Principle - Module sollten zur Erweiterung geöffnet und zur Änderung geschlossen sein.
-* **** Liskov-Substitutionsprinzip - Typen sollten durch ihre Untertypen ersetzt werden können.
-* **** Grundsatz der Schnittstellensegregation - kein Client sollte gezwungen sein, von nicht verwendeten Methoden abhängig zu sein.
-* **** Abhängigkeits-Inversion-Prinzip - Module auf hoher Ebene sollten nicht von Modulen auf niedriger Ebene abhängig sein. Beide sollten von Abstraktionen abhängen. Abstraktionen sollten nicht von Details abhängen. Details sollten von Abstraktionen abhängen.
+* **S** Grundsatz der einheitlichen Verantwortung - Jedes Modul, jede Klasse, jede Methode usw. sollte nur eine Verantwortung haben.
+* **O** pen/Closed-Prinzip - Module sollten für Erweiterungen geöffnet und zur Bearbeitung geschlossen sein.
+* **L** iskov-Substitutionsprinzip - Typen sollten durch ihre Untertypen ersetzt werden können.
+* **I** Interface Segregation Principle - kein Client sollte gezwungen sein, von Methoden abhängig zu sein, die er nicht verwendet.
+* **D** ependency Inversion Principle - High-Level-Module sollten nicht von Low-Level-Modulen abhängig sein. Beide sollten von Abstraktionen abhängen. Abstraktionen sollten nicht von Details abhängen. Details sollten von Abstraktionen abhängen.
 
 Durch die Berücksichtigung dieser fünf Prinzipien lässt sich ein System erzielen, in dem eine strikte Trennung der Anliegen gegeben ist.
 
@@ -63,4 +63,4 @@ Bei Datenmigrationsskripten handelt es sich zwar um Produktionscode, doch diese 
 
 ### Befolgen veröffentlichter Maven-Konventionen in POM-Dateien {#follow-published-maven-conventions-in-pom-files}
 
-Apache hat Stilkonventionen unter [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html) veröffentlicht. Es ist am besten, diese Konventionen zu befolgen, da sie es den neuen Ressourcen erleichtern werden, schnell zu arbeiten.
+Apache hat Stilkonventionen unter veröffentlicht [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). Es ist am besten, diese Konventionen zu befolgen, da sie es den neuen Ressourcen erleichtern werden, schnell zu arbeiten.

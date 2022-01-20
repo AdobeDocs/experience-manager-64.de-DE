@@ -1,8 +1,8 @@
 ---
 title: Ändern des Farbschemas der Benutzeroberfläche
-seo-title: Ändern des Farbschemas der Benutzeroberfläche
+seo-title: Changing the color scheme of the interface
 description: Sie können das Farbschema der Benutzeroberfläche von AEM Forms Workspace selektiv ändern.
-seo-description: Sie können das Farbschema der Benutzeroberfläche von AEM Forms Workspace selektiv ändern.
+seo-description: How to modify the color scheme of AEM Forms workspace user interface portions selectively.
 uuid: 32c32f7a-8271-4d2c-8a1f-ad5ab3c90b83
 contentOwner: robhagat
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 exl-id: efbb9a9e-0ddf-49f2-bcb8-14cd0c6de5ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 76%
+source-wordcount: '229'
+ht-degree: 74%
 
 ---
 
-# Ändern des Farbschemas der Benutzeroberfläche  {#changing-the-color-scheme-of-the-interface}
+# Ändern des Farbschemas der Benutzeroberfläche {#changing-the-color-scheme-of-the-interface}
 
-Sie können das Farbschema von Bereichen der Benutzeroberfläche von AEM Forms Workspace Ihren Anforderungen entsprechend ändern. Im Folgenden sehen Sie einige Beispiele für repräsentative Anpassungen des Farbschemas. Zusätzlich zu den Schritten, die in diesem Artikel beschrieben werden, finden Sie unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
+Sie können das Farbschema von Bereichen der Benutzeroberfläche von AEM Forms Workspace Ihren Anforderungen entsprechend ändern. Im Folgenden sehen Sie einige Beispiele für repräsentative Anpassungen des Farbschemas. Lesen Sie zusätzlich zu den Schritten, die in diesem Artikel beschrieben werden, [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Navigationsleiste oben {#top-navigation-bar}
 
@@ -42,7 +42,7 @@ Aktualisieren der Navigationsleiste oben in AEM Forms Workspace.
    }
    ```
 
-### Verwenden der Farbeigenschaft in CSS   {#using-color-property-in-css}
+### Verwenden der Farbeigenschaft in CSS  {#using-color-property-in-css}
 
 1. Fügen Sie in newStyle.css unter „/apps/ws/css“ den folgenden Stil hinzu.
 
@@ -55,7 +55,7 @@ Aktualisieren der Navigationsleiste oben in AEM Forms Workspace.
 
 ## Category-Komponente {#category-component}
 
-In der Category-Komponente werden die verschiedenen Kategorien Ihrer Aufgaben im linken Fenster angezeigt. Um die Farbe zu ändern, definieren Sie die Hintergrundfarbe im Element `.category` der CSS-Datei.
+In der Category-Komponente werden die verschiedenen Kategorien Ihrer Aufgaben im linken Fenster angezeigt. Um die Farbe zu ändern, definieren Sie die Hintergrundfarbe in `.category` -Element der CSS-Datei.
 
 ## Task-Komponente {#task-component}
 

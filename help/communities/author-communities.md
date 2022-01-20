@@ -1,8 +1,8 @@
 ---
 title: Communities-Komponenten
-seo-title: Communities-Komponenten
+seo-title: Communities Components
 description: 'Hinzufügen von Community-Funktionen zu AEM Website '
-seo-description: 'Hinzufügen von Community-Funktionen zu AEM Website '
+seo-description: Adding community features to any AEM site
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 exl-id: 7118dbca-e9b4-4b69-b4c3-34bb52008168
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 67%
+source-wordcount: '286'
+ht-degree: 68%
 
 ---
 
@@ -31,17 +31,17 @@ Weitere Informationen zum Erstellen eines Community-Site-Besuchs finden Sie unte
 
 >[!NOTE]
 >
->Wenn Sie nicht mit der Authoring-Umgebung vertraut sind, lesen Sie die Dokumentation zu [Grundlegender Umgang](../../help/sites-authoring/basic-handling.md) und eine [Kurzanleitung zum Erstellen von Seiten](../../help/sites-authoring/qg-page-authoring.md).
+>Wenn Sie nicht mit der Authoring-Umgebung vertraut sind, lesen Sie die Dokumentation unter [grundlegende Handhabung](../../help/sites-authoring/basic-handling.md) und [Kurzanleitung zum Erstellen von Seiten](../../help/sites-authoring/qg-page-authoring.md).
 
 ## Verfügbare Communities-Komponenten {#available-communities-components}
 
 In der folgenden Tabelle sind diejenigen Communities-Komponenten aufgeführt, die Autoren angezeigt werden, wenn sie im Komponenten-Browser (Sidekick) aktiviert sind.
 
-Siehe auch das interaktive [Handbuch zu Community-Komponenten](components-guide.md).
+Siehe auch interaktive [Handbuch zu Community-Komponenten](components-guide.md).
 
 >[!NOTE]
 >
->Lesen Sie [Communities Components Basics](basics.md) , da es Informationen enthält, die für das Authoring mit Communities-Komponenten erforderlich sind.
+>Lesen [Grundlagen zu Communities-Komponenten](basics.md) da sie Informationen enthält, die für das Authoring mit Communities-Komponenten erforderlich sind.
 
 | **Komponentenname** | **Funktion** |
 |---|---|
@@ -82,8 +82,8 @@ Siehe auch das interaktive [Handbuch zu Community-Komponenten](components-guide.
 
 ## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
 
-* Besuchen Sie [Communities bereitstellen](deploy-communities.md) , um mehr über empfohlene Bereitstellungen zu erfahren.
+* Besuch [Bereitstellen von Communities](deploy-communities.md) , um mehr über empfohlene Bereitstellungen zu erfahren.
 
 * Unter [Communities-Sites verwalten](administer-landing.md) erfahren Sie mehr darüber, wie Sie Community-Sites erstellen, Community-Site-Vorlagen bearbeiten, Community-Inhalte moderieren, Mitglieder verwalten und Messaging-Systeme konfigurieren können.
 
-* Besuchen Sie [Communities entwickeln](communities.md) , um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
+* Besuch [Entwickeln von Communities](communities.md) , um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.

@@ -26,7 +26,7 @@ Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets 
 * Eine Sammlung mit einer statischen Referenzliste von Assets, Ordnern und anderen Sammlungen.
 * Eine Smart-Sammlung, die Assets auf Grundlage eines Suchkriteriums dynamisch verwendet.
 
-## Aufrufen der Konsole „Sammlungen“  {#navigating-the-collections-console}
+## Aufrufen der Konsole „Sammlungen“ {#navigating-the-collections-console}
 
 Um **[!UICONTROL Sammlungen]** zu öffnen, tippen oder klicken Sie auf das Experience Manager-Logo. Gehen Sie auf der Navigationsseite zu **[!UICONTROL Assets]** > **[!UICONTROL Sammlungen]**.
 
@@ -47,7 +47,7 @@ Sie können eine Sammlung mit statischen Referenzen erstellen, wie eine Sammlung
    >
    >Um es Mitgliedern zu ermöglichen, Sammlungen mit anderen Benutzern zu teilen, gewähren Sie der Gruppe `dam-users` Leseberechtigungen für den Pfad `home/users`. Erteilen Sie den Benutzern eine Berechtigung für den Pfad `/content/dam/collections`, damit Benutzer Sammlungen in Popup-Listen anzeigen können. Alternativ dazu können Sie Benutzer auch in die Gruppe `dam-users` aufnehmen.
 
-1. (Optional) Fügen Sie eine Miniaturansicht für die Sammlung hinzu.
+1. (Optional) Fügen Sie eine Miniatur für die Sammlung hinzu.
 1. Tippen oder klicken Sie auf **[!UICONTROL Erstellen]** und anschließend auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. In der Konsole „Sammlungen“ wird eine Sammlung mit dem angegebenen Titel und ihren Eigenschaften geöffnet.
 
    >[!NOTE]
@@ -65,7 +65,7 @@ Sie können Assets aus der Assets-Benutzeroberfläche ziehen und in einer Sammlu
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
-   Lassen Sie die Maustaste los, wenn die Dropzone aktiv wird und sich die Bezeichnung in **[!UICONTROL Zum Hinzufügen ablegen]** ändert.
+   Lassen Sie die Maustaste los, wenn die Dropzone aktiv wird und sich die Bezeichnung in **[!UICONTROL Zum Hinzufügen ablegen]**.
 
    ![drop_to_add](assets/drop_to_add.png)
 
@@ -101,7 +101,7 @@ Gehen Sie wie folgt vor, um eine Smart-Sammlung zu erstellen:
 
    >[!NOTE]
    >
-   >Wenn Sie **[!UICONTROL Öffentlich]** auswählen, wird die Smart-Sammlung nach der Erstellung für alle Benutzer mit der Eigentümerrolle verfügbar. Wenn Sie die Option **[!UICONTROL Öffentlich]** deaktivieren, ist die DAM-Benutzergruppe nicht mehr mit der Smart-Sammlung verknüpft.
+   >Wenn Sie **[!UICONTROL Öffentlich]**, wird die Smart-Sammlung für alle Benutzer mit der Eigentümerrolle verfügbar, nachdem Sie sie erstellt haben. Wenn Sie die Option **[!UICONTROL Öffentlich]** deaktivieren, ist die DAM-Benutzergruppe nicht mehr mit der Smart-Sammlung verknüpft.
 
 1. Tippen oder klicken Sie auf **[!UICONTROL Speichern]**, um die Smart-Sammlung zu erstellen, und schließen Sie dann das Meldungsfenster, um den Vorgang abzuschließen.
 
@@ -117,11 +117,11 @@ Gehen Sie wie folgt vor, um eine Smart-Sammlung zu erstellen:
 
 Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Assets hinzufügen. Smart-Sammlungen füllen Assets anhand einer Suchabfrage. Daher sind statische Referenzen zu Assets und Ordnern für sie nicht anwendbar.
 
-1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus und tippen/klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Zu Sammlung]** .
+1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus und tippen/klicken Sie auf die **[!UICONTROL Zu Sammlung]** in der Symbolleiste.
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-   Alternativ können Sie das Asset in den Bereich **[!UICONTROL In Sammlung ablegen]** auf der Benutzeroberfläche ziehen. Fügen Sie die Assets hinzu, wenn sich die Bezeichnung der Region in **[!UICONTROL Zum Hinzufügen ablegen]** ändert.
+   Alternativ können Sie das Asset in die **[!UICONTROL In Sammlung ablegen]** -Bereich auf der Benutzeroberfläche. Fügen Sie die Assets hinzu, wenn sich die Bezeichnung der Region in **[!UICONTROL Zum Hinzufügen ablegen]**.
 
 1. Wählen Sie auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** die Sammlung aus, der Sie das Asset hinzufügen möchten.
 
@@ -181,11 +181,11 @@ Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit d
 
 
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Speichern und schließen]** und schließen Sie danach das Bestätigungsdialogfeld, um den Vorgang abzuschließen.
-1. Um die neuen Metadaten mit den vorhandenen Metadaten anzuhängen, wählen Sie **[!UICONTROL Anlagenmodus]** aus. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen oder klicken Sie auf **[!UICONTROL Absenden]**.
+1. Um die neuen Metadaten an die vorhandenen Metadaten anzuhängen, wählen Sie **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Tippen oder klicken Sie auf **[!UICONTROL Absenden]**.
 
    >[!NOTE]
    >
-   >Die Metadaten, die Sie für die ausgewählten Sammlungen hinzufügen, überschreiben die vorherigen Metadaten für diese Sammlungen. Verwenden Sie den [!UICONTROL Anlagenmodus], um den vorhandenen Metadaten in den Feldern, die mehrere Werte enthalten können, neue Werte hinzuzufügen. Einzelwertfelder werden immer überschrieben. Alle Tags, die Sie im Feld [!UICONTROL Tags] hinzufügen, werden der vorhandenen Liste der Tags in den Metadaten anhängt.
+   >Die Metadaten, die Sie für die ausgewählten Sammlungen hinzufügen, überschreiben die vorherigen Metadaten für diese Sammlungen. Verwenden Sie die [!UICONTROL Anlagenmodus] , um den vorhandenen Metadaten in Feldern, die mehrere Werte enthalten können, neue Werte hinzuzufügen. Einzelwertfelder werden immer überschrieben. Alle Tags, die Sie im Feld [!UICONTROL Tags] hinzufügen, werden der vorhandenen Liste der Tags in den Metadaten anhängt.
 
 Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Metadaten, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften, den Schemaeditor.
 
@@ -195,7 +195,7 @@ Verwenden Sie zum Anpassen der Seite mit den [!UICONTROL Eigenschaften] von Meta
 
 ## Suchen nach Sammlungen {#searching-collections}
 
-Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie mit Keywords im Omnisearch-Feld suchen, sucht [!DNL Experience Manager] Assets nach Sammlungsnamen, Metadaten und den Tags, die zu den Sammlungen hinzugefügt wurden.
+Sie können mit der Konsole „Sammlungen“ nach Sammlungen suchen. Wenn Sie mit Keywords im Omnisearch-Suchfeld suchen, [!DNL Experience Manager] Assets sucht nach Sammlungsnamen, Metadaten und den Tags, die den Sammlungen hinzugefügt wurden.
 
 Wenn Sie auf der obersten Ebene nach Sammlungen suchen, werden nur die einzelnen Sammlungen in den Suchergebnissen zurückgegeben. Assets oder Ordner in den Sammlungen werden ausgeschlossen. In allen anderen Fällen (z. B. innerhalb einer individuellen Sammlung oder in einer Ordnerhierarchie) werden alle relevanten Assets, Ordner und Sammlungen zurückgegeben.
 
@@ -209,8 +209,8 @@ Innerhalb einer Sammlung ist die Suche auf Assets (und deren Tags und Metadaten)
 
 Sie können Sammlungseinstellungen, wie z. B. Titel und Beschreibung, bearbeiten oder Mitglieder zu einer Sammlung hinzufügen.
 
-1. Wählen Sie eine Sammlung aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einstellungen]**. Verwenden Sie alternativ die Schnellaktion **[!UICONTROL Einstellungen]** in der Miniaturansicht der Sammlung.
-1. Ändern Sie die Sammlungseinstellungen auf der Seite **[!UICONTROL Sammlungseinstellungen]** . Ändern Sie beispielsweise den Sammlungstitel, die Beschreibungen, Mitglieder und Berechtigungen wie unter [Hinzufügen von Sammlungen](#creating-a-collection) beschrieben.
+1. Wählen Sie eine Sammlung aus und tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Einstellungen]**. Verwenden Sie alternativ die Schnellaktion **[!UICONTROL Einstellungen]** in der Miniatur der Sammlung.
+1. Ändern Sie die Sammlungseinstellungen in der **[!UICONTROL Sammlungseinstellungen]** Seite. Ändern Sie beispielsweise den Sammlungstitel, die Beschreibungen, Mitglieder und Berechtigungen wie unter [Hinzufügen von Sammlungen](#creating-a-collection).
 
 1. Um die Änderungen zu speichern, tippen/klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -222,7 +222,7 @@ Sie können Sammlungseinstellungen, wie z. B. Titel und Beschreibung, bearbeite
 
    >[!NOTE]
    >
-   >Sie können Smart-Sammlungen auch löschen, indem Sie [gespeicherte Suchen ](#deleting-saved-searches) löschen.
+   >Sie können Smart-Sammlungen auch löschen, indem Sie [Löschen gespeicherter Suchen](#deleting-saved-searches).
 
 ## Herunterladen von Sammlungen {#downloading-a-collection}
 
@@ -234,7 +234,7 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Asset-Hierarchie innerhal
 
    Bei Auswahl einer Sammlung für den Download wird die gesamte Ordnerstruktur unter dieser Sammlung heruntergeladen. Um jede Sammlung (einschließlich Assets in untergeordneten Sammlungen, die unter der übergeordneten Sammlung verschachtelt sind), die Sie herunterladen, in einem eigenen Ordner zu speichern, wählen Sie **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** aus.
 
-## Erstellen von verschachtelten Sammlungen {#creating-nested-collections}
+## Erstellen verschachtelter Sammlungen {#creating-nested-collections}
 
 Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine verschachtelte Sammlung erstellen.
 
@@ -262,7 +262,7 @@ In der Assets-Benutzeroberfläche können Sie Assets basierend auf bestimmten Re
 
 ### Gespeicherte Suchen erstellen {#creating-saved-searches}
 
-Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage &quot;Gespeicherte Suchen&quot;für die Sammlung wird in der Eigenschaft `dam:query` in crxde am relativen Speicherort `/content/dam/collections/` gespeichert. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt.
+Gespeicherte Suchen werden erstellt, wenn Sie eine Smart-Sammlung erstellen. Smart-Sammlungen werden automatisch der Liste **[!UICONTROL Gespeicherte Suchen]** hinzugefügt. Die Abfrage &quot;Gespeicherte Suchen&quot;für die Sammlung wird im `dam:query` -Eigenschaft in crxde am relativen Speicherort `/content/dam/collections/`. Die Suchen, die Sie speichern können, und die gespeicherten Suchen, die in der Liste angezeigt werden, sind unbegrenzt.
 
 >[!NOTE]
 >
@@ -282,7 +282,7 @@ Gespeicherte Suchen werden genauso wie Smart-Sammlungen bearbeitet. Einzelheiten
 
 1. Klicken oder tippen Sie auf das GlobalNav-Symbol, um das Bedienfeld „Filter“ anzuzeigen.
 
-1. Tippen/klicken Sie in der Liste **[!UICONTROL Gespeicherte Suchen]** auf das Löschsymbol neben der Smart-Sammlung, die Sie löschen möchten.
+1. Aus dem **[!UICONTROL Gespeicherte Suchen]** auf das Löschsymbol neben der Smart-Sammlung, die Sie löschen möchten.
 
    ![select_smart_collection-1](assets/select_smart_collection-1.png)
 
@@ -304,6 +304,6 @@ Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn di
 
 >[!MORELIKETHIS]
 >
->* [E-Mail-Benachrichtigungen für Experience Manager Assets konfigurieren](/help/sites-administering/notification.md#assetsconfig)
+>* [Konfigurieren von Experience Manager Assets-E-Mail-Benachrichtigungen](/help/sites-administering/notification.md#assetsconfig)
 >* [Erstellen einer Prüfungsaufgabe für Sammlungen](bulk-approval.md)
 

@@ -1,23 +1,23 @@
 ---
 title: Benutzerhandbuch zu AEM 6.4 Funktionen
-seo-title: Benutzerhandbuch zu AEM 6.4 Funktionen
+seo-title: AEM 6.4 Capabilities User Guide
 description: Überblick über die wichtigsten Funktionen von AEM 6.4
-seo-description: Überblick über die wichtigsten Funktionen von AEM 6.4
+seo-description: An overview of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 52%
+source-wordcount: '141'
+ht-degree: 56%
 
 ---
 
-# AEM 6.4 Benutzerhandbücher für Funktionen {#aem-64-capabilities-user-guides}
+# Benutzerhandbücher zu AEM 6.4 Funktionen {#aem-64-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4](/help/sites-deploying/home.md), einschließlich der Adobe Managed Services-Cloud-Implementierung.
+[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4.](/help/sites-deploying/home.md), einschließlich der Adobe Managed Services-Cloud-Implementierung.
 
 [Erfahren Sie, wie Sie ein AEM-Projekt verwalten können](/help/managing/home.md).
 

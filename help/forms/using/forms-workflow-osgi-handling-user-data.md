@@ -1,8 +1,8 @@
 ---
 title: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
-seo-title: Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten
+seo-title: Forms-centric workflows on OSGi | Handling user data
 description: Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularzentrierten Geschäftsprozessen. Weitere Informationen zu Benutzerdaten und Datenspeichern. Erfahren Sie, wie Sie auf Benutzerdaten zugreifen und diese löschen können.
-seo-description: Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularzentrierten Geschäftsprozessen. Weitere Informationen zu Benutzerdaten und Datenspeichern. Erfahren Sie, wie Sie auf Benutzerdaten zugreifen und diese löschen können.
+seo-description: Forms-centric AEM workflows enable you to automate real-world Forms-centric business processes. Dig deeper on user data and data stores. Learn how to access and delete user data.
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ role: Admin
 exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 97%
+source-wordcount: '1033'
+ht-degree: 98%
 
 ---
 

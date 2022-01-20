@@ -1,15 +1,15 @@
 ---
 title: AEM Mobile – Einhaltung der Datenschutz-Grundverordnung
-seo-title: AEM Mobile – Einhaltung der Datenschutz-Grundverordnung
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile – Einhaltung der Datenschutz-Grundverordnung"'
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: 2b73e843-690b-4cf3-9b8f-936b70c84406
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 89%
 
 ---
@@ -26,7 +26,7 @@ AEM Mobile kann Kunden bei der Erfüllung ihrer DSGVO-Compliancepflichten unters
 
 [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html)
 
-## Adobe Digital Publishing Suite  {#adobe-digital-publishing-suite}
+## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
 Das Produkt von Adobe für digitales Publishing (Vorgänger von AEM Mobile) unterstützt die Initiativen von Adobe zur Einhaltung der Datenschutz-Grundverordnung. Weitere Informationen finden Sie unter [https://www.adobe.com/de/privacy/general-data-protection-regulation.html](https://www.adobe.com/de/privacy/general-data-protection-regulation.html). Im Folgenden erhalten Sie nähere Informationen zur Unterstützung für DSGVO-relevante Funktionen in Digital Publishing Suite. Dazu gehören auch Informationen, wie Sie zusammen mit Adobe DSGVO-Anfragen intitiieren können.
 
@@ -70,7 +70,7 @@ Adobe verfügt nur über sehr wenige Informationen, die direkt mit einem bestimm
 
 **Welche personenbezogenen Daten werden mit Analytics verfolgt?**
 
-Kein. Es werden Daten zurückverfolgt. Dabei handelt es sich jedoch um Daten auf App-Ebene (und nicht um personenbezogene Daten). Hierzu gehören Ereignisse wie Starts, Abstürze, Schließvorgänge, Aktivitäten, Käufe oder Folio-Überlagerungen. Geografische Orte, Namen, Geräte-IDs oder IP-Adressen werden nicht zurückverfolgt.
+Ohne. Es werden Daten zurückverfolgt. Dabei handelt es sich jedoch um Daten auf App-Ebene (und nicht um personenbezogene Daten). Hierzu gehören Ereignisse wie Starts, Abstürze, Schließvorgänge, Aktivitäten, Käufe oder Folio-Überlagerungen. Geografische Orte, Namen, Geräte-IDs oder IP-Adressen werden nicht zurückverfolgt.
 
 **Der Endbenutzer hat Informationen bereitgestellt, es wurde jedoch nichts gefunden. Warum nicht?**
 

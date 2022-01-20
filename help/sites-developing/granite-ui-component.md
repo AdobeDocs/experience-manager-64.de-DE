@@ -1,8 +1,8 @@
 ---
 title: Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche
-seo-title: Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche
+seo-title: Creating a New Granite UI Field Component
 description: Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwendung in Formularen, die in Granite als „Felder“ bezeichnet werden.
-seo-description: Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwendung in Formularen, die in Granite als „Felder“ bezeichnet werden.
+seo-description: Granite UI provides a range of components designed to be used in forms, called fields
 uuid: cf26e057-4b0c-45f4-8975-2c658517f20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 exl-id: 9a6cc25e-e54e-4b8a-8fdd-bcd65d8fe601
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 91%
+source-wordcount: '539'
+ht-degree: 90%
 
 ---
 
@@ -89,20 +89,20 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
    vm.get("value, String.class"); 
    ```
 
-   Weitere Informationen finden Sie in der Implementierung von nativen Feldern der Granite-Benutzeroberfläche. z. B. `/libs/granite/ui/components/foundation/form/textfield`.
+   Weitere Informationen finden Sie in der Implementierung von nativen Feldern der Granite-Benutzeroberfläche. Beispiel: `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
    >Derzeit ist JSP die bevorzugte Methode für die Skripterstellung, da die Weitergabe von Daten von einer Komponente an die andere (die bei Formularen/Feldern häufig erfolgt) mit HTL schwierig zu bewerkstelligen ist.
 
-## Erstellen der Client-Bibliothek für die Komponente  {#creating-the-client-library-for-the-component}
+## Erstellen der Client-Bibliothek für die Komponente {#creating-the-client-library-for-the-component}
 
 Gehen Sie wie folgt vor, um der Komponente ein bestimmtes clientseitiges Verhalten hinzuzufügen:
 
 1. Erstellen Sie eine Client-Bibliothek der Kategorie `cq.authoring.dialog`.
-1. Erstellen Sie eine clientlib der Kategorie `cq.authoring.dialog` und definieren Sie darin `JS`/ `CSS`.
+1. Erstellen einer clientlib der Kategorie `cq.authoring.dialog` und definieren Sie `JS`/ `CSS` darin.
 
-   Definieren Sie `JS`/ `CSS` innerhalb der clientlib.
+   Definieren Sie Ihre `JS`/ `CSS` in die clientlib.
 
    >[!NOTE]
    >

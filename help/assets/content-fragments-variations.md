@@ -1,8 +1,8 @@
 ---
 title: Varianten – Erstellen von Fragmentinhalten
-seo-title: Varianten – Erstellen von Fragmentinhalten
+seo-title: Variations - Authoring Fragment Content
 description: Mit Varianten können Sie Inhalte für ein Fragment erstellen und je nach Bedarf (und falls erforderlich) Varianten dieses Inhalts erstellen.
-seo-description: Mit Varianten können Sie Inhalte für ein Fragment erstellen und je nach Bedarf (und falls erforderlich) Varianten dieses Inhalts erstellen.
+seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
 uuid: affccda0-be5f-47d2-85b6-8701b77ac932
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 92%
+source-wordcount: '1738'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](../release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0 oder höher)](../release-notes/sp-release-notes.md).
 
 [Varianten](content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts zu erstellen und zu bearbeiten und diese für bestimmte Kanäle und/oder Szenarien zu verwenden.
 
@@ -84,11 +84,11 @@ Der Vollbild-Editor bietet Folgendes:
 * Zugriff auf verschiedene [Aktionen](#actions)
 * Je nach [Format](#formats) weitere Formatierungsoptionen ([Rich-Text](#rich-text))
 
-### Aktionen  {#actions}
+### Aktionen {#actions}
 
 Die folgenden Aktionen sind ebenfalls verfügbar (für sämtliche [Formate](#formats)), wenn der Vollbild-Editor (d. h. mehrzeiliger Text) geöffnet ist:
 
-* Wählen Sie das [Format](#formats) ([Rich Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown)) aus.
+* Wählen Sie die [format](#formats) ([Rich-Text](#rich-text), [Nur Text](#plain-text), [Markdown](#markdown))
 * [Textstatistiken anzeigen](#viewing-key-statistics)
 * [Inhalt hochladen](#uploading-content)
 * [Mit primärer Version synchronisieren](#synchronizing-with-master) (beim Bearbeiten einer Variante)
@@ -164,7 +164,7 @@ Für weitere [Aktionen](#actions) können Sie auch den Vollbild-Editor öffnen.
 >
 >Wenn Sie zwischen **Rich-Text** und **Markdown** umschalten, treten möglicherweise unerwartete Effekte mit Blockzitaten und Code-Blöcken auf, da diese beiden Formate unterschiedlich verarbeitet werden.
 
-### Anzeigen von Schlüsselstatistiken {#viewing-key-statistics}
+### Anzeigen von wichtigen Statistiken {#viewing-key-statistics}
 
 Wenn der Vollbild-Editor geöffnet ist, zeigt die Aktion **Textstatistik** eine Reihe von Informationen über den Text an. Beispiel:
 
@@ -202,7 +202,6 @@ Mithilfe der Zusammenfassung von Text können Benutzer die Länge des Textes auf
 >* [Spanisch (es) von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 
 >
-
 
 
 1. Wählen Sie **[!UICONTROL Primäre Version]** oder die erforderliche Variante aus.
@@ -281,7 +280,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
    * Navigieren zum gewünschten Asset in DAM
    * Suchen nach dem Asset in DAM
 
-   Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniaturansicht klicken.
+   Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniatur klicken.
 
 1. Verwenden Sie **[!UICONTROL Auswahl]**, um das Asset dem Absatzsystem Ihres Content Fragments am aktuellen Speicherort hinzuzufügen.
 
@@ -295,7 +294,7 @@ Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Di
 
 ## Verwalten von Varianten  {#managing-variations}
 
-### Variante erstellen {#creating-a-variation}
+### Erstellen einer Variante {#creating-a-variation}
 
 Varianten ermöglichen die Abänderung von **primärem** Inhalt für einen bestimmten Zweck (sofern notwendig).
 
@@ -311,7 +310,7 @@ So erstellen Sie eine neue Variante:
    >
    >Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
-### Bearbeiten einer Variante    {#editing-a-variation}
+### Bearbeiten einer Variante {#editing-a-variation}
 
 Sie können nach einer der folgenden Aktionen Änderungen am Inhalt der Variante vornehmen:
 
@@ -374,7 +373,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 
 3. Master und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt    wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
 
    ![cfm-6420-27](assets/cfm-6420-27.png)

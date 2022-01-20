@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions
-seo-title: Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions
+seo-title: Configuring credentials for use with Acrobat Reader DC extensions
 description: Erfahren Sie, wie Sie Berechtigungen für die Verwendung mit Acrobat Reader DC-Erweiterungen konfigurieren.
-seo-description: Erfahren Sie, wie Sie Berechtigungen für die Verwendung mit Acrobat Reader DC-Erweiterungen konfigurieren.
+seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
 uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: 40c2e205-0115-4ebe-ab24-66c8ee0663fa
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '555'
 ht-degree: 97%
 
 ---
@@ -36,7 +36,7 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 >
 >Sie können Berechtigungen auch importieren und programmgesteuert löschen. (Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
 
-## Acrobat Reader DC Extensions-Berechtigungen importieren  {#import-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigungen importieren {#import-a-acrobat-reader-dc-extensions-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Klicken Sie auf „Importieren“ und wählen Sie unter „Trust Store-Typ“ die Option „Acrobat Reader DC Extensions-Berechtigung“.
@@ -51,12 +51,12 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 
    Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist.
 
-## Acrobat Reader DC Extensions-Berechtigungen entfernen  {#remove-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigungen entfernen {#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Wählen Sie die Berechtigung und klicken Sie auf „Löschen“.
 
-## Acrobat Reader DC Extensions-Berechtigungen ersetzen  {#replace-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigungen ersetzen {#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Notieren Sie sich den Alias der vorhandenen Berechtigung, wählen Sie ihn aus und klicken Sie auf „Löschen“.

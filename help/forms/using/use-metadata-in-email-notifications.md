@@ -1,16 +1,16 @@
 ---
 title: 'Verwenden von Metadaten in einer E-Mail-Benachrichtigung '
-seo-title: 'Verwenden von Metadaten in einer E-Mail-Benachrichtigung '
+seo-title: Use metadata in an email notification
 description: Verwenden von Metadaten zum Ausfüllen von Informationen in einer Formular-Workflow-E-Mail-Benachrichtigung
-seo-description: Verwenden von Metadaten zum Ausfüllen von Informationen in einer Formular-Workflow-E-Mail-Benachrichtigung
+seo-description: Use metadata to populate information in a forms workflow email notification
 uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
 topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
 exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 98%
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## Verwenden von systemgenerierten Metadaten in einer E-Mail-Benachrichtigung  {#using-system-generated-metadata-in-an-email-notification}
+## Verwenden von systemgenerierten Metadaten in einer E-Mail-Benachrichtigung {#using-system-generated-metadata-in-an-email-notification}
 
 Eine AEM Forms-Anwendung bietet verschiedene standardmäßige Metadatenvariable (Schlüssel-Wert-Paare). Sie können diese Variablen in einer E-Mail-Vorlage verwenden. Der Wert der Variable basiert auf der verknüpften Formularanwendung. Die folgende Tabelle enthält alle Metadatenvariablen, die standardmäßig zur Verfügung stehen:
 
@@ -156,9 +156,9 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
 
 ### Verwenden von ECMAScript zum Hinzufügen benutzerdefinierter Metadaten  {#use-ecmascript-to-add-custom-metadata}
 
-[ECMAScript](https://de.wikipedia.org/wiki/ECMAScript) ist eine Skriptsprache. Sie wird für clientseitige Skript- und Serveranwendungen verwendet. Führen Sie die folgenden Schritte aus, um ECMAScript zum Hinzufügen benutzerdefinierter Metadaten für eine E-Mail-Vorlage zu verwenden:
+[ECMAScript](https://de.wikipedia.org/wiki/ECMAScript) ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstellung und Server-Anwendungen verwendet. Führen Sie die folgenden Schritte aus, um ECMAScript zum Hinzufügen benutzerdefinierter Metadaten für eine E-Mail-Vorlage zu verwenden:
 
-1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. Die URL lautet `https://[server]:[port]/crx/de/index.jsp` .
+1. Melden Sie sich bei CRX DE mit einem Administratorkonto an. Die URL lautet `https://[server]:[port]/crx/de/index.jsp`.
 
 1. Navigieren Sie zu /apps/fd/dashboard/scripts/metadataScripts. Erstellen Sie eine Datei mit der Erweiterung „.ecma“. Beispiel: usermetadata.ecma
 
@@ -195,17 +195,17 @@ Sie können auch benutzerdefinierte Metadaten in einer E-Mail-Benachrichtigung v
       | Typ | Zeichenfolge |
       | Wert | Geben Sie den Titel des Skripts an. Beispiel: Benutzerdefinierte Metadaten für den Richtlinieneigentümer. Der angegebene Wert wird im Schritt „Aufgabe zuweisen“ angezeigt. |
 
-### Verwenden eines OSGi-Bundles und einer Java-Schnittstelle zum Hinzufügen benutzerdefinierter Metadaten  {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
+### Verwenden eines OSGi-Bundles und einer Java-Schnittstelle zum Hinzufügen benutzerdefinierter Metadaten {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
 Sie können die Java-Schnittstelle „WorkitemUserMetadataService“ zum Hinzufügen benutzerdefinierter Metadaten für E-Mail-Vorlagen verwenden. Erstellen Sie ein OSGi-Bundle, das die Java-Schnittstelle „WorkitemUserMetadataService“ verwendet, und stellen Sie es auf dem AEM Forms-Server bereit. Dadurch werden die Metadaten zur Auswahl im Schritt „Aufgabe zuweisen“ verfügbar.
 
-Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Bundle-Projekt die Dateien [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) und [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) als externe Abhängigkeiten hinzu. Sie können eine beliebigen Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
+Um ein OSGi-Bundle mit Java-Schnittstelle zu erstellen, fügen Sie dem OSGi-Bundle-Projekt die Dateien [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) und [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) als externe Abhängigkeiten hinzu. Sie können eine beliebigen Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
 
 1. Öffnen Sie die Eclipse-IDE. Navigieren Sie zu Datei > Neues Projekt.
 
 1. Wählen Sie im Assistenten-Dialogfeld Maven-Projekt und klicken Sie auf Weiter.
 
-1. Behalten Sie im Feld „New Maven Project“ die Standardeinstellungen bei und klicken Sie auf „Next“. Wählen Sie einen Archetyp aus und klicken Sie auf „Next“. Beispiel: maven-archetype-quickstart. Geben Sie „Group Id“, „Artifact Id“, „version“ und „package“ für das Projekt an und klicken Sie auf „Finish“. Das Projekt wird erstellt.
+1. Behalten Sie im Feld „New Maven Project“ die Standardeinstellungen bei und klicken Sie auf „Next“. Wählen Sie einen Archetyp aus und klicken Sie auf „Next“. Beispiel: maven-archetype-quickstart. Geben Sie Group Id, Artifact ID, Version und Paket für das Projekt an und klicken Sie auf Beenden. Das Projekt wird erstellt.
 
 1. Öffnen Sie die Datei „pom.xml“ zur Bearbeitung und ersetzen Sie den gesamten Inhalt dieser Datei durch den folgenden Text:
 

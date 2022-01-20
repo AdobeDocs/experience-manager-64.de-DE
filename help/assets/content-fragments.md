@@ -23,9 +23,9 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0 oder höher)](/help/release-notes/sp-release-notes.md).
 
-Mit Adobe Experience Manager (AEM)-Inhaltsfragmenten können Sie seitenunabhängige Inhalte erstellen, erstellen, kuratieren und [veröffentlichen](/help/sites-authoring/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten.
+Adobe Experience Manager (AEM)-Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und [seitenunabhängige Inhalte veröffentlichen](/help/sites-authoring/content-fragments.md). Außerdem können Sie Inhalte zur Verwendung an mehreren Orten/über mehrere Kanäle hinweg vorbereiten.
 
 Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:
 
@@ -67,7 +67,7 @@ Inhaltsfragmente ermöglichen Ihnen Folgendes:
 
 Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über verschiedene Kanäle bereitzustellen.
 
-## Inhaltsfragmente und Content Services          {#content-fragments-and-content-services}
+## Inhaltsfragmente und Content Services {#content-fragments-and-content-services}
 
 Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Web-Seiten hinweg generalisiert werden.
 
@@ -103,7 +103,7 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 
 >[!NOTE]
 >
->AEM unterstützt auch die Übersetzung von Fragmentinhalten. Weitere Informationen finden Sie unter [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md).
+>AEM unterstützt auch die Übersetzung von Fragmentinhalten. Siehe [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md) für weitere Informationen.
 
 ## Arten von Inhaltsfragmenten {#types-of-content-fragment}
 

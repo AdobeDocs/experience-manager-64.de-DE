@@ -1,8 +1,8 @@
 ---
 title: 'Funktionsunterschiede zwischen HTML5- und PDF-Formularen '
-seo-title: 'Funktionsunterschiede zwischen HTML5- und PDF-Formularen '
+seo-title: Feature differentiation between HTML5 forms and PDF forms
 description: In den HTML5-Formularen und in PDF-Formularen unterstützte Funktionen
-seo-description: In den HTML5-Formularen und in PDF-Formularen unterstützte Funktionen
+seo-description: Feature supported in HTML5 forms and PDF forms
 uuid: b0a96da5-31d3-4f99-b100-91ad51736ffb
 contentOwner: robhagat
 content-type: reference
@@ -13,8 +13,8 @@ feature: Mobile Forms
 exl-id: 2b82e68c-ec11-417d-a8e2-769da9b35140
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 84%
+source-wordcount: '485'
+ht-degree: 83%
 
 ---
 
@@ -52,7 +52,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   <tr>
    <td>Seitenumbruch<br /> </td> 
    <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es wie ein PDF-Formular wirkt. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet und es wird kein Leerraum zwischen den Seiten angezeigt, die der leeren Seite vorangehen und folgen.</p> <p>Wird einer Seite durch Datenzusammenführung oder Skripte Inhalt hinzugefügt, wird die Seite verlängert, damit der neu hinzukommende Inhalt Platz findet. Dem Formular werden keine neuen Seiten für den neuen Inhalt hinzugefügt. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite zwischen der ersten und zweiten, nicht jedoch zwischen den weiteren Seiten sichtbar.</p> </td> 
-   <td>Die Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab und die Seitenzahl wird je nach Inhalt erhöht/reduziert.</td> 
+   <td>Die Paginierung in der PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab und die Seitenzahl wird je nach Inhalt erhöht/reduziert.</td> 
   </tr>
   <tr>
    <td>Kopf- und Fußzeilen </td> 
@@ -82,4 +82,4 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
  </tbody>
 </table>
 
-Befolgen Sie die Best Practices, um eine Formularvorlage für HTML5-Ausgabeformate zu aktivieren und sicherzustellen, dass das Verhalten und das Erscheinungsbild von HTML5-Formularen und XFA-basierten PDF-Dateien konsistent ist. Eine detaillierte Liste bewährter Verfahren finden Sie unter [Empfohlene Vorgehensweisen für den Entwurf eines HTML5-Formulars](/help/forms/using/best-practices-for-html5-forms.md).
+Befolgen Sie die Best Practices, um eine Formularvorlage für HTML5-Ausgabeformate zu aktivieren und sicherzustellen, dass das Verhalten und das Erscheinungsbild von HTML5-Formularen und XFA-basiertem PDF konsistent ist. Eine detaillierte Liste bewährter Verfahren finden Sie unter [Empfohlene Vorgehensweisen für den Entwurf eines HTML5-Formulars](/help/forms/using/best-practices-for-html5-forms.md).

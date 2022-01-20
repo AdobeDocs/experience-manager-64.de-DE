@@ -1,8 +1,8 @@
 ---
 title: Synchronisieren der App
-seo-title: Synchronisieren der App
+seo-title: Synchronizing the app
 description: Synchronisieren Sie die AEM Forms-App auf Ihrem mobilen Gerät mit dem AEM Forms-Server.
-seo-description: Synchronisieren Sie die AEM Forms-App auf Ihrem mobilen Gerät mit dem AEM Forms-Server.
+seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 uuid: 7e1526e1-13bd-498a-a265-cd4f2d05ccdd
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 exl-id: b5681fe5-69ba-4fc0-95e3-6ffdcdd95382
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '369'
 ht-degree: 96%
 
 ---
 
-# Synchronisieren der App  {#synchronizing-the-app}
+# Synchronisieren der App {#synchronizing-the-app}
 
 ## Synchronisieren der App {#synchronizing-the-app-1}
 
@@ -29,7 +29,7 @@ Wenn Sie mit dem AEM Forms-Server online sind, wird Ihre App standardmäßig all
 
 **Manuelles Synchronisieren der App**
 
-Tippen Sie auf die Schaltfläche Synchronisieren ![sync-app](assets/sync-app.png) in der rechten unteren Ecke des Startbildschirms.
+Tippen Sie auf die Schaltfläche Synchronisieren . ![sync-app](assets/sync-app.png) in der rechten unteren Ecke des Startbildschirms.
 
 **Ändern der Synchronisierungsfrequenz**
 
@@ -41,7 +41,7 @@ Tippen Sie auf die Schaltfläche Synchronisieren ![sync-app](assets/sync-app.png
 1. Tippen Sie für die Option „Sync frequency“ auf den Wert rechts neben „Sync frequency“. 
 1. Wählen Sie in der Dropdown-Liste die neue Synchronisierungshäufigkeit aus.
 
-### Technische Spezifikationen  {#technical-specifications}
+### Technische Spezifikationen {#technical-specifications}
 
 * Die Hauptlogik zum Übertragen der Offline-Daten der App an den AEM Forms-Server ist in „runtime/offline/util/offline.js“ enthalten.
 * In der .js sendet ein Aufruf der Funktion „processOfflineSubmittedSavedTasks(...)“ die gespeicherten bzw. übermittelten Aufgaben an den Server. Darüber hinaus werden Fehler bei der Synchronisierung behandelt. Wenn bei der Übermittlung einer Aufgabe ein Fehler auftritt, wird die Aufgabe in der App als fehlerhaft markiert. Darüber hinaus verbleibt die Aufgabe in der Outbox.

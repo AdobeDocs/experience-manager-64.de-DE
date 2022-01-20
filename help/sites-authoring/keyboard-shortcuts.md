@@ -1,8 +1,8 @@
 ---
-title: 'Tastaturbefehle für Konsolen  '
-seo-title: 'Tastaturbefehle für Konsolen  '
+title: Tastaturbefehle für Konsolen
+seo-title: Keyboard Shortcuts for Consoles
 description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
-seo-description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
+seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '378'
 ht-degree: 98%
 
 ---
 
-# Tastaturbefehle für Konsolen  {#keyboard-shortcuts-for-consoles}
+# Tastaturbefehle für Konsolen{#keyboard-shortcuts-for-consoles}
 
 In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
@@ -29,7 +29,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich e
 
 Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce“, „Screens“, „Assets“, „Benutzer“, „Gruppen“, „Projekte“ und „Experience Fragments“ zur Verfügung.
 
-| Standort | Kürzel | Beschreibung |
+| Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
 | Allgemein | `Ctrl+Click` | Mehrfachauswahl auf einem Desktop-Gerät |
 | Konsole – Spaltenansicht und Inhaltsansicht | `Right Arrow` | Navigieren nach unten in die Struktur der Website/Erweitern des Strukturknotens |
@@ -41,7 +41,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce�
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | Umschalten zwischen den anzuzeigenden [Schienenauswahloptionen](/help/sites-authoring/basic-handling.md#rail-selector) |
-|  | &grave; | Ausblenden der Schiene |
+|  | &amp;grave; | Ausblenden der Schiene |
 |  | `e` | Bearbeiten |
 |  | `p` | Eigenschaften |
 |  | `m` | Verschieben |
@@ -67,7 +67,7 @@ Die für die Tastaturbefehle verwendeten Zusatztasten variieren je nach dem vom 
 
 AEM vermeidet gängige Tastaturbefehle von Standardbrowsern. Jedoch wird das standardmäßige Browserverhalten nicht durch AEM-Tastaturbefehle außer Kraft gesetzt.
 
-Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastaturlayouts identisch.
+Außerdem sind die Tastaturbefehle für alle Gebietsschemas und Tastatur-Layouts identisch.
 
 >[!NOTE]
 >

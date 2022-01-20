@@ -33,13 +33,13 @@ Das AEMFD-Kompatibilitätspaket ermöglicht es Ihnen, die folgenden Assets aus A
 * Datenwörterbücher
 * Veraltete Vorlagen und Seiten für adaptive Formulare
 
-Weitere Informationen finden Sie unter [Assets, die mit AEM Forms 6.4 kompatibel sind, indem Sie das Kompatibilitätspaket](/help/forms/using/compatibility-package.md#assetsmadecompatible) installieren.
+Weitere Informationen finden Sie unter [Assets, die durch Installation des Kompatibilitätspakets mit AEM Forms 6.4 kompatibel gemacht wurden](/help/forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## Unterstützung für Assets aus AEM Forms 6.3 und 6.2 in AEM Forms 6.4 hinzufügen {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Gehen Sie nach der Aktualisierung wie folgt vor, um das AEM-Kompatibilitätspaket zu installieren und Ihre Assets mit Version 6.4 kompatibel zu machen:
 
-Stellen Sie sicher, dass das [AEM Kompatibilitätspaket](/help/sites-deploying/backward-compatibility.md) vorinstalliert ist.
+Stellen Sie sicher, dass Sie [AEM Kompatibilitätspaket](/help/sites-deploying/backward-compatibility.md) vorinstalliert.
 
 1. Installieren Sie das [Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 

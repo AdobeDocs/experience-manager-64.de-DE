@@ -1,18 +1,18 @@
 ---
 title: Adaptive Formulare Suchbegriffe
-seo-title: Adaptive Formulare Suchbegriffe
+seo-title: Adaptive forms keywords
 description: Sie können diese reservierten Wörter nicht als Bezeichner in Ihren adaptiven Formularen verwenden.
-seo-description: Sie können diese reservierten Wörter nicht als Bezeichner in Ihren adaptiven Formularen verwenden.
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 96%
+source-wordcount: '208'
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
   <tr>
    <td><p>calcExp</p> </td> 
    <td><p>queueExpressions</p> </td> 
-   <td><p>Instanzen</p> </td> 
+   <td><p>instances</p> </td> 
   </tr>
   <tr>
    <td><p>title</p> </td> 
@@ -65,7 +65,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
   <tr>
    <td><p>valueCommitScript</p> </td> 
    <td><p>autoSaveStart</p> </td> 
-   <td><p>Besuch</p> </td> 
+   <td><p>visit</p> </td> 
   </tr>
   <tr>
    <td><p>validateExp</p> </td> 
@@ -75,7 +75,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
   <tr>
    <td><p>placeholderText</p> </td> 
    <td><p>autoSaveStartExpression</p> </td> 
-   <td><p>untergeordnete Elemente</p> </td> 
+   <td><p>children</p> </td> 
   </tr>
   <tr>
    <td><p>value</p> </td> 
@@ -128,7 +128,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
    <td><p>viewVisited</p> </td> 
   </tr>
   <tr>
-   <td><p>Breite</p> </td> 
+   <td><p>width</p> </td> 
    <td><p>buttonText</p> </td> 
    <td><p>index</p> </td> 
   </tr>
@@ -240,4 +240,4 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
  </tbody>
 </table>
 
-Neben den Stichwörtern, die oben aufgeführt sind, sollten Sie Dateinamen verwenden, die [adaptiven Formularen JavaScript-APIs ähnlich sind](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Neben den Stichwörtern, die oben aufgeführt sind, sollten Sie Dateinamen verwenden, die [adaptiven Formularen JavaScript-APIs ähnlich sind](https://adobe.com/go/learn_aemforms_javascript_api_63_de).

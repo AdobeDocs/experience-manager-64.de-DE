@@ -1,8 +1,8 @@
 ---
 title: Unterstützung von Encapsulated Tokens
-seo-title: Unterstützung von Encapsulated Tokens
+seo-title: Encapsulated Token Support
 description: Informieren Sie sich über die Unterstützung von Encapsulated Tokens in AEM.
-seo-description: Informieren Sie sich über die Unterstützung von Encapsulated Tokens in AEM.
+seo-description: Learn about the Encapsulated Token support in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: 2339657a-20ac-42af-96fb-aebafd5044c7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '833'
 ht-degree: 88%
 
 ---
@@ -35,7 +35,7 @@ Die Lösung besteht darin, dauerhafte Verbindungen auf der Ebene des Load-Balanc
 
 Wenn eine Veröffentlichungsinstanz nicht mehr verfügbar ist, gehen die Sitzungen aller auf dieser Instanz authentifizierten Benutzer verloren. Dies liegt daran, dass der Zugriff auf das Repository zur Validierung des Authentifizierungs-Cookies erforderlich ist.
 
-## „Stateless“-Authentifizierung mit dem Encapsulated Token  {#stateless-authentication-with-the-encapsulated-token}
+## „Stateless“-Authentifizierung mit dem Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
 
 Die Lösung für die horizontale Skalierbarkeit besteht in der „Stateless“-Authentifizierung, bei der die neue Unterstützung von Encapsulated Tokens in AEM genutzt wird.
 
@@ -51,16 +51,14 @@ Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und 
 >
 >Wenn beispielsweise ein neuer Benutzer auf der Veröffentlichungsinstanz 1 erstellt wird, wird er mit dem Encapsulated Token auf der Veröffentlichen-Instanz 2 erfolgreich authentifiziert. Wenn der Benutzer auf der zweiten Veröffentlichungsinstanz nicht vorhanden ist, ist die Abfrage dennoch nicht erfolgreich.
 
-
-## Konfigurieren des Encapsulated Tokens  {#configuring-the-encapsulated-token}
+## Konfigurieren des Encapsulated Tokens {#configuring-the-encapsulated-token}
 
 >[!NOTE]
 >Alle Authentifizierungs-Handler, die Benutzer synchronisieren und sich auf Token-Authentifizierung (wie SAML und OAuth) verlassen, funktionieren nur mit verkapselten Token, wenn:
 >
 >* fixierbare Sitzungen sind aktiviert oder
-   >
-   >
-* Benutzer werden bereits in AEM erstellt, wenn die Synchronisierung beginnt. Dies bedeutet, dass gekapselte Token in Situationen nicht unterstützt werden, in denen die Handler **create** -Benutzer während des Synchronisierungsprozesses verwenden.
+>
+>* Benutzer werden bereits in AEM erstellt, wenn die Synchronisierung beginnt. Dies bedeutet, dass gekapselte Token in Situationen, in denen die Handler **erstellen** -Benutzer während des Synchronisierungsprozesses.
 
 
 Bei der Konfiguration des Encapsulated Tokens müssen Sie einige Aspekte berücksichtigen:
@@ -68,9 +66,9 @@ Bei der Konfiguration des Encapsulated Tokens müssen Sie einige Aspekte berück
 1. Wegen der Verschlüsselung müssen alle Instanzen denselben HMAC-Schlüssel aufweisen. Seit AEM 6.3 werden die Schlüsseldaten nicht mehr im Repository, sondern im Dateisystem selbst gespeichert. Daher besteht die beste Möglichkeit zum Replizieren der Schlüssel darin, sie vom Dateisystem der Quellinstanz zum Dateisystem der Zielinstanz(en) zu kopieren, auf die Sie die Schlüssel replizieren möchten. Weitere Informationen dazu finden Sie unter „Replizieren des HMAC-Schlüssels“.
 1. Das Encapsulated Token muss aktiviert werden. Dies ist über die Web-Konsole möglich.
 
-### Replizieren des HMAC-Schlüssels  {#replicating-the-hmac-key}
+### Replizieren des HMAC-Schlüssels {#replicating-the-hmac-key}
 
-Der HMAC-Schlüssel ist als binäre Eigenschaft von `/etc/key` im Repository vorhanden. Sie können ihn separat herunterladen. Klicken Sie dazu auf den Link **Anzeigen** neben der Eigenschaft:
+Der HMAC-Schlüssel ist als binäre Eigenschaft von `/etc/key` im Repository. Sie können ihn separat herunterladen. Klicken Sie dazu auf den Link **Anzeigen** neben der Eigenschaft:
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
@@ -101,6 +99,6 @@ Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgende
 
 Wenn Sie den HMAC-Schlüssel repliziert haben, können Sie das Encapsulated Token über die Web-Konsole aktivieren:
 
-1. Verweisen Sie Ihren Browser auf `https://serveraddress:port/system/console/configMgr`
+1. Zeigen Sie Ihren Browser auf `https://serveraddress:port/system/console/configMgr`
 1. Suchen Sie den Eintrag **Day CRX Token Authentication Handler** und klicken Sie darauf.
 1. Aktivieren Sie im daraufhin angezeigten Fenster das Kontrollkästchen **Unterstützung von Encapsulated Tokens aktivieren**. Klicken Sie dann auf **Speichern**.

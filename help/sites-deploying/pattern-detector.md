@@ -1,26 +1,26 @@
 ---
 title: 'Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor '
-seo-title: 'Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor '
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität der Aktualisierung bewerten können.
-seo-description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität der Aktualisierung bewerten können.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '500'
 ht-degree: 93%
 
 ---
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor {#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 
@@ -55,11 +55,11 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 * **Über eine auf reaktivem Text basierende oder die reguläre JSON-Schnittstelle** 
 
-* **Über eine reaktive JSON-Line-Oberfläche**, die in jeder Zeile ein separates JSON-Dokument generiert.
+* **Über die Oberfläche für reaktive JSON-Zeilen**, das in jeder Zeile ein separates JSON-Dokument generiert.
 
 Beide Methoden werden im Folgenden erläutert:
 
-## Reaktive Schnittstelle  {#reactive-interface}
+## Reaktive Schnittstelle {#reactive-interface}
 
 Mit einer reaktiven Schnittstelle kann der Bericht zu den Verstößen verarbeitet werden, sobald ein Problem erkannt wird.
 
@@ -68,7 +68,7 @@ Die Ausgabe ist zurzeit unter 2 URLs verfügbar:
 1. Nur-Text-Schnittstelle 
 1. JSON-Schnittstelle
 
-## Handhabung der Nur-Text-Schnittstelle  {#handling-the-plain-text-interface}
+## Handhabung der Nur-Text-Schnittstelle {#handling-the-plain-text-interface}
 
 Die in der Ausgabe enthaltenen Informationen sind als Serie von Ereigniseinträgen formatiert. Es gibt zwei Kanäle - einen für die Veröffentlichung von Verstößen und einen zweiten für die Veröffentlichung des aktuellen Fortschritts.
 
@@ -98,7 +98,7 @@ Dies führt zur folgenden Ausgabe:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Behandlung der JSON-Schnittstelle  {#handling-the-json-interface}
+## Behandlung der JSON-Schnittstelle {#handling-the-json-interface}
 
 JSON kann auf ähnliche Weise mit dem Tool [jq](https://stedolan.github.io/jq/) verarbeitet werden, sobald die Veröffentlichung erfolgt ist.
 

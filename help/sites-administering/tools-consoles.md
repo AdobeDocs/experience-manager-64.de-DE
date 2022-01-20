@@ -1,5 +1,5 @@
 ---
-title: Die Tools-Konsolen
+title: 'Die Tools-Konsolen '
 description: Erfahren Sie mehr über die verschiedenen Tools-Konsolen in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ ht-degree: 95%
 
 ---
 
-# Die Tools-Konsolen{#tools-consoles}
+# Die Tools-Konsolen {#tools-consoles}
 
 Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Content-Repositorys verwalten können. Aktuell gibt es zwei Varianten der **Tools-Konsole** – abhängig von der verwendeten Benutzeroberfläche:
 
@@ -57,7 +57,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   <tr> 
    <td>DAM – Konsistenzprüfer<br /> </td> 
    <td> </td> 
-   <td>Vergleicht <code>/var/dam</code> und <code>/content/dam</code> und sucht nach<br /> Inkonsistenzen. Alle aufgeführten Dateien/Ordner können dann synchronisiert oder gelöscht werden. Die Knotentypen für den Ordnervergleich können Sie über die Web-Konsole konfigurieren.</td> 
+   <td>Vergleich <code>/var/dam</code> und <code>/content/dam</code> und Kontrollen<br /> Inkonsistenzen. Alle aufgeführten Dateien/Ordner können dann synchronisiert oder gelöscht werden. Die Knotentypen für den Ordnervergleich können Sie über die Web-Konsole konfigurieren.</td> 
   </tr> 
   <tr> 
    <td>DAM – Adobe InDesign<br /> </td> 
@@ -150,7 +150,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Ermöglicht Ihnen die Konfiguration der E-Mails, die Benutzer automatisch erhalten, wenn sie ein Konto erstellen oder ein Kennwort zurücksetzen und ein zurückgesetztes Kennwort bestätigen müssen</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentierung </a></td> 
+   <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentierung</a></td> 
    <td> </td> 
    <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing. Die Segmentierung unterstützt Sie durch die Analyse und Charakterisierung der Benutzerdetails dabei.<br /> </td> 
   </tr> 
@@ -192,7 +192,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
  </tbody> 
 </table>
 
-## Tools – Touch-optimierte Benutzeroberfläche  {#tools-touch-optimized-ui}
+## Tools – Touch-optimierte Benutzeroberfläche {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
@@ -202,7 +202,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <th>Zweck</th> 
   </tr> 
   <tr> 
-   <td>Authoring – </td> 
+   <td>Authoring –</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -263,7 +263,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-developing/hobbes.md">Tests</a></td> 
+   <td><a href="/help/sites-developing/hobbes.md">Testen</a></td> 
    <td>Für die Anwendung definierte Tests ausführen.</td> 
   </tr> 
   <tr> 

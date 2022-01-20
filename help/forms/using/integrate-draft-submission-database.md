@@ -1,8 +1,8 @@
 ---
 title: Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank
-seo-title: Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank
+seo-title: Sample for integrating drafts & submissions component with database
 description: Referenzimplementierung von benutzerdefinierten Daten- und Metadatendiensten zur Integration der Komponente für Entwurf und Übermittlung in eine Datenbank.
-seo-description: Referenzimplementierung von benutzerdefinierten Daten- und Metadatendiensten zur Integration der Komponente für Entwurf und Übermittlung in eine Datenbank.
+seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
 uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 4d13d69b-1fe6-4fb6-9e3e-3ad0c5ffb829
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 88%
+source-wordcount: '1467'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Das in diesem Dokument gezeigte Beispiel ist eine Referenzimplementierung benutz
 >[!NOTE]
 >
 >* Die Beispiele und Konfigurationen in diesem Dokument entsprechen MySQL 5.6.24 und Sie müssen sie für Ihr Datenbanksystem anpassen.
->* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms Add-On-Pakets installiert haben. Eine Liste der verfügbaren Pakete finden Sie im Artikel [AEM Forms Freigabe](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+>* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms Add-On-Pakets installiert haben. Eine Liste der verfügbaren Pakete finden Sie im Artikel [AEM Forms Freigabe](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
 >* Das Beispielpaket funktioniert nur mit Übermittlungsaktionen für adaptive Forms.
 
 
@@ -41,13 +41,13 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Gehen Sie zu AEM Paketmanager unter https://[*host*]:[*port*]/crx/packmgr/.
+1. Rufen Sie AEM Paketmanager unter https:// auf.[*Host*]:[*port*]/crx/packmgr/.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
-1. Gehen Sie zu **[!UICONTROL AEM Web Console Configuration]**
-Seite unter https://[*host*]:[*port*]/system/console/configMgr.
+1. Navigieren Sie zu **[!UICONTROL Konfiguration der Web-Konsole AEM]**
+Seite unter https://[*Host*]:[*port*]/system/console/configMgr.
 1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
 
 1. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
@@ -106,7 +106,7 @@ Seite unter https://[*host*]:[*port*]/system/console/configMgr.
   </tr> 
   <tr> 
    <td>JDBC-Verbindungs-URI<br /> </td> 
-   <td>jdbc:mysql://[<em>Host</em>]:[<em>Anschluss</em>]/[<em>Schemaname</em>]</td> 
+   <td>jdbc:mysql://[<em>Host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td> 
   </tr> 
   <tr> 
    <td>Benutzername</td> 
@@ -165,7 +165,6 @@ Seite unter https://[*host*]:[*port*]/system/console/configMgr.
 > * Zeigen Sie mit Ihren Autor- und Veröffentlichungsinstanzen, um dieselbe Datenbank zu verwenden. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
 
 >
-
 
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
@@ -304,7 +303,7 @@ Seite unter https://[*host*]:[*port*]/system/console/configMgr.
 
 Die Beispielimplementierung ist jetzt konfiguriert. Sie können sie verwenden, um Ihre Entwürfe und Übermittlungen aufzulisten, während Sie alle Daten und Metadaten in einer Datenbank speichern. Als Nächstes geht es darum, wie im Beispiel die Daten- und Metadatendienste konfiguriert werden.
 
-## Installieren der Datei mysql-connector-java-5.1.39-bin.jar{#install-mysql-connector-java-bin-jar-file}
+## Installieren der Datei mysql-connector-java-5.1.39-bin.jar {#install-mysql-connector-java-bin-jar-file}
 
 Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinstanzen aus, um die Datei mysql-connector-java-5.1.39-bin.jar zu installieren:
 
@@ -342,7 +341,7 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
     util.js
    ```
 
-   Im vorstehenden Code ist `util` der Name des Ordners und`util.js` der Name der Datei im `util`-Ordner. Der Ordner `util` und die Datei `util.js` werden in den nächsten Schritten erstellt.
+   Im vorstehenden Code ist `util` der Name des Ordners und`util.js` der Name der Datei im `util`-Ordner. Die `util` Ordner und `util.js` -Datei werden in den nächsten Schritten erstellt.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `cq:ClientLibraryFolder`, der in Schritt 2 erstellt wurde, wählen Sie „Erstellen“ > „Ordner erstellen“. Erstellen Sie einen Ordner mit dem Namen `util`. Klicken Sie auf **[!UICONTROL Alle speichern]**. Klicken Sie mit der rechten Maustaste auf den Ordner `util` und wählen Sie „Erstelle“ > „Ordner erstellen“. Erstellen Sie eine Datei mit dem Namen `util.js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -413,9 +412,9 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
 
    * **[!UICONTROL Multi-Option:]** Aktiviert
 
-1. Navigieren Sie zu `/libs/fd/af/runtime/clientlibs/guideRuntime`und hängen Sie den Wert `fp.validation` an die Eigenschaft **embed** an.
+1. Navigieren Sie zu `/libs/fd/af/runtime/clientlibs/guideRuntime`und hängen Sie die `fp.validation` -Wert **embed** -Eigenschaft.
 
-1. Navigieren Sie zu /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA und hängen Sie den Wert `fp.validation` an die Eigenschaft **embed** an.
+1. Navigieren Sie zu /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA und hängen Sie die `fp.validation` Wert zu **embed** -Eigenschaft.
 
    >[!NOTE]
    >

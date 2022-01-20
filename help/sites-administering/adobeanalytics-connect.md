@@ -1,8 +1,8 @@
 ---
 title: Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks
-seo-title: Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks
+seo-title: Connecting to Adobe Analytics and Creating Frameworks
 description: Erfahren Sie mehr dazu, wie AEM mit SiteCatalyst verbunden wird und wie Frameworks erstellt werden.
-seo-description: Erfahren Sie mehr dazu, wie AEM mit SiteCatalyst verbunden wird und wie Frameworks erstellt werden.
+seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
 uuid: 04325409-435c-4394-9ab7-c9022e19e085
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 exl-id: 654387e3-d837-4bde-a9e4-962862ad69e9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1556'
+source-wordcount: '1540'
 ht-degree: 66%
 
 ---
@@ -28,7 +28,7 @@ Wenn Sie eine Webseite mit einem Framework verknüpfen, führt das Framework das
 
 ## Voraussetzungen {#prerequisites}
 
-### Adobe Analytics-Konto  {#adobe-analytics-account}
+### Adobe Analytics-Konto {#adobe-analytics-account}
 
 Um AEM Daten in Adobe Analytics verfolgen zu können, benötigen Sie ein gültiges Adobe Marketing Cloud Adobe Analytics-Konto.
 
@@ -51,7 +51,7 @@ Bevor Sie fortfahren, stellen Sie sicher, dass Sie sich mit Ihren Anmeldedaten m
 
 ### Konfigurieren von AEM zur Verwendung Ihrer Adobe Analytics-Datenzentren {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [Rechenzentren](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) erfassen, verarbeiten und speichern Daten, die mit Ihrer Adobe Analytics Report Suite verknüpft sind. Sie müssen AEM konfigurieren, um das Rechenzentrum zu verwenden, in dem Ihre Adobe Analytics Report Suite gehostet wird. In der folgenden Tabelle sind die verfügbaren Datenzentren sowie deren URLs aufgeführt.
+Adobe Analytics [Rechenzentren](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) Daten erfassen, verarbeiten und speichern, die mit Ihrer Adobe Analytics Report Suite verknüpft sind. Sie müssen AEM konfigurieren, um das Rechenzentrum zu verwenden, in dem Ihre Adobe Analytics Report Suite gehostet wird. In der folgenden Tabelle sind die verfügbaren Datenzentren sowie deren URLs aufgeführt.
 
 | Rechenzentrum | URL |
 |---|---|
@@ -75,18 +75,18 @@ Verwenden Sie die [Web-Konsole zum Konfigurieren des OSGi-Bundles](/help/sites-d
    >Wenden Sie sich an Ihren Website-Administrator, um herauszufinden, ob Sie Zugriff auf diese Konsole haben.
 
 1. Wählen Sie das Konfigurationselement namens **Adobe AEM Analytics HTTP Client** aus.
-1. Um die URL für ein Rechenzentrum hinzuzufügen, drücken Sie die Schaltfläche + neben der Liste **Datenzentrum-URLs** und geben Sie die URL in das Feld ein.
+1. Um die URL für ein Rechenzentrum hinzuzufügen, drücken Sie die Taste + neben dem **Datenzentrum-URLs** und geben Sie die URL in das Feld ein.
 
 1. Klicken Sie zum Entfernen der URL aus der Liste auf die „-“-Schaltfläche neben der URL.
-1. Klicken Sie auf „Speichern“.
+1. Klicken Sie auf Speichern.
 
-## Konfigurieren der Verbindung zu Adobe Analytics  {#configuring-the-connection-to-adobe-analytics}
+## Konfigurieren der Verbindung zu Adobe Analytics {#configuring-the-connection-to-adobe-analytics}
 
 >[!CAUTION]
 >
 >Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.
 >
->Das [ActivityMap-Plugin, das von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) bereitgestellt wird, sollte jetzt verwendet werden.
+>Die [Von Adobe Analytics bereitgestelltes ActivityMap-Plugin](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) verwendet werden.
 
 ## Konfigurieren für die Activity Map {#configuring-for-the-activity-map}
 
@@ -94,7 +94,7 @@ Verwenden Sie die [Web-Konsole zum Konfigurieren des OSGi-Bundles](/help/sites-d
 >
 >Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.
 >
->Das [ActivityMap-Plugin, das von Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) bereitgestellt wird, sollte jetzt verwendet werden.
+>Die [Von Adobe Analytics bereitgestelltes ActivityMap-Plugin](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) verwendet werden.
 
 ## Erstellen eines Adobe Analytics-Framework {#creating-a-adobe-analytics-framework}
 
@@ -112,13 +112,13 @@ Für die von Ihnen verwendete Report Suite-ID (RSID) können Sie steuern, welche
 
 1. Wählen Sie unter **Navigation** die Option **Tools** > **Cloud Services** und dann **Legacy-Cloud-Services** aus.
 2. Scrollen Sie zu **Adobe Analytics** und klicken Sie auf **[+]** neben **Verfügbare Konfigurationen**.
-3. Klicken Sie auf den Link **[+]** neben Ihrer Adobe Analytics-Konfiguration.
+3. Klicken Sie auf **[+]** neben Ihrer Adobe Analytics-Konfiguration.
 
 4. Im Dialogfeld **Framework erstellen**:
 
    * einen **Titel** angeben,
    * Optional können Sie auch den **Namen** zu dem Knoten angeben, der die Framework-Details im Repository speichert.
-   * Wählen Sie **Adobe Analytics Framework**
+   * Auswählen **Adobe Analytics Framework**
 
    und klicken Sie auf **Erstellen**.
 
@@ -134,7 +134,7 @@ Für die von Ihnen verwendete Report Suite-ID (RSID) können Sie steuern, welche
 
    ![aa-framework-01](assets/aa-framework-01.png)
 
-7. Um das Framework in der Veröffentlichungsinstanz Ihrer Site verfügbar zu machen, klicken Sie auf der Registerkarte **Seite** des Sidekicks auf **Framework aktivieren.**
+7. Um das Framework in der Veröffentlichungsinstanz Ihrer Site verfügbar zu machen, klicken Sie auf **Seite** Registerkarte des Sidekicks, klicken Sie auf **Framework aktivieren.**
 
 ### Konfigurieren von Servereinstellungen für Adobe Analytics {#configuring-server-settings-for-adobe-analytics}
 
@@ -142,7 +142,7 @@ Mit dem Framework-System können Sie die Servereinstellungen in jedem Adobe Anal
 
 >[!CAUTION]
 >
->Diese Einstellungen bestimmen, wohin Ihre Daten gesendet werden und wie. Daher ist es wichtig, dass Sie *diese Einstellungen nicht ändern* und sie stattdessen von Ihrem Adobe Analytics-Support-Mitarbeiter einrichten lassen.
+>Diese Einstellungen bestimmen, wo und wie Ihre Daten gesendet werden. Daher müssen Sie unbedingt *Bearbeiten Sie diese Einstellungen nicht.* und lassen Sie ihn stattdessen von Ihrem Adobe Analytics-Support-Mitarbeiter einrichten.
 
 Beginnen Sie mit dem Öffnen des Bedienfelds. Klicken Sie auf den Pfeil nach unten neben **Server**:
 
@@ -164,7 +164,7 @@ Beginnen Sie mit dem Öffnen des Bedienfelds. Klicken Sie auf den Pfeil nach unt
 * **Besucher-Namespace**
 
    * Der Namespace bestimmt den ersten Teil der Tracking-URL.
-   * Wenn Sie beispielsweise den Namespace in **CNAME** ändern, sehen die Aufrufe an Adobe Analytics wie **CNAME.d1.omtrdc.net** und nicht wie der Standardwert aus.
+   * Ändern Sie beispielsweise den Namespace in **CNAME** führt dazu, dass die Aufrufe an Adobe Analytics wie folgt aussehen: **CNAME.d1.omtrdc.net** anstelle der Standardeinstellung.
 
 ## Verknüpfung einer Seite mit einem Adobe Analytics-Framework {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -176,14 +176,14 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 1. Öffnen Sie die **[Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md)** entweder direkt über die Konsole oder über den Seiten-Editor.
 1. Öffnen Sie die Registerkarte **Cloud-Services**.
 
-1. Verwenden Sie das Dropdown-Menü **Konfiguration hinzufügen** , um **Adobe Analytics** aus den verfügbaren Optionen auszuwählen. Wenn Vererbung verwendet wird, müssen Sie dies deaktivieren, bevor die Auswahl zur Verfügung gestellt wird.
+1. Verwenden Sie die **Konfiguration hinzufügen** Dropdown-Liste auswählen **Adobe Analytics** aus den verfügbaren Optionen. Wenn Vererbung verwendet wird, müssen Sie dies deaktivieren, bevor die Auswahl zur Verfügung gestellt wird.
 
 1. Die Dropdown-Auswahl zu **Adobe Analytics** wird an die verfügbaren Optionen angehängt. Verwenden Sie dies, um die erforderliche Framework-Konfiguration auszuwählen.
 
 1. Wählen Sie **Speichern und schließen** aus.
 1. **[Veröffentlichen](/help/sites-authoring/publishing-pages.md)** Sie die Seite, um die Seite und alle verbundenen Konfigurationen/Dateien zu aktivieren.
 1. Der letzte Schritt ist der Besuch der Seite in der Veröffentlichungsinstanz und die Suche nach Stichwort (z. B. Aubergine) mithilfe der Komponente **Suchen**.
-1. Anschließend können Sie die Aufrufe an Adobe Analytics mithilfe eines geeigneten Tools überprüfen. z. B. [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+1. Anschließend können Sie die Aufrufe an Adobe Analytics mithilfe eines entsprechenden Tools überprüfen. Beispiel: [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 1. In dem genannten Beispiel sollte der Aufruf den eingegebenen Wert (d. h. Aubergine) in eVar7 enthalten und die Ereignisliste sollte „event3“ enthalten.
 
 ### Seitenansichten {#page-views}
@@ -192,7 +192,7 @@ Wenn eine Seite mit einem Adobe Analytics-Framework verknüpft ist, kann die Anz
 
 Weitere Details finden Sie unter [Anzeigen von Seitenanalysedaten](/help/sites-authoring/pa-using.md).
 
-### Konfigurieren des Importintervalls  {#configuring-the-import-interval}
+### Konfigurieren des Importintervalls {#configuring-the-import-interval}
 
 Konfigurieren der passenden Instanz des Diensts **Adobe AEM Managed Polling Configurations**:
 
@@ -206,13 +206,13 @@ Konfigurieren der passenden Instanz des Diensts **Adobe AEM Managed Polling Conf
 
    Aktivieren oder deaktivieren Sie den Dienst. Standardmäßig ist der Dienst aktiviert.
 
-Um diesen OSGi-Dienst zu konfigurieren, können Sie entweder den Knoten [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder [osgiConfig im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) verwenden (die Dienst-PID lautet `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
+Zum Konfigurieren dieses OSGi-Dienstes können Sie entweder die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder [osgiConfig -Knoten im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (Die Dienst-PID lautet `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
 
 ## Die Bearbeitung der Adobe Analytics-Konfigurationen und/oder -Frameworks {#editing-adobe-analytics-configurations-and-or-frameworks}
 
 Navigieren Sie wie beim Erstellen einer Adobe Analytics-Konfiguration oder eines Adobe Analytics-Frameworks zum (veralteten) Bildschirm **Cloud-Services**. Wählen Sie **Konfigurationen anzeigen** aus und klicken Sie dann auf den Link zur spezifischen Konfiguration, die Sie aktualisieren möchten.
 
-Beim Bearbeiten einer Adobe Analytics-Konfiguration müssen Sie auch auf der Konfigurationsseite selbst auf die Schaltfläche **Bearbeiten** klicken, um das Dialogfeld **Komponente bearbeiten** zu öffnen.
+Beim Bearbeiten einer Adobe Analytics-Konfiguration müssen Sie auch die **Bearbeiten** Schaltfläche auf der Konfigurationsseite selbst, um die **Komponente bearbeiten** angezeigt.
 
 ## Löschen von Adobe Analytics-Frameworks {#deleting-adobe-analytics-frameworks}
 

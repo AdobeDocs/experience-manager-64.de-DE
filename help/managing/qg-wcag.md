@@ -1,8 +1,8 @@
 ---
 title: Kurzanleitung zu WCAG 2.0
-seo-title: Kurzanleitung zu WCAG 2.0
+seo-title: Quick Guide to WCAG 2.0
 description: Hier finden Sie einen kurzen Überblick über die WCAG 2.0-Richtlinien zur Barrierefreiheit.
-seo-description: Hier finden Sie einen kurzen Überblick über die WCAG 2.0-Richtlinien zur Barrierefreiheit.
+seo-description: Read a quick overview of the WCAG 2.0 accessibility guidelines.
 uuid: a5cf463e-89e9-4cc0-9c91-69a1fd3d8ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -12,7 +12,7 @@ discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
 exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1672'
 ht-degree: 92%
 
 ---
@@ -35,11 +35,11 @@ Daher ist das Verständnis der Ziele von WCAG 2.0 und der Struktur der Richtlini
 
 Absicht von WCAG 2.0 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen:
 
-* Sind **technologie-agnostisch:**
+* sind **technologieagnostisch:**
 
-   Anders ausgedrückt: Richtlinien, die auf eine Reihe von Web-Inhaltsformaten angewendet werden können, nicht nur auf HTML. So kann WCAG 2.0 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Web-Technologien generiert oder bereitgestellt werden. Damit soll eine erkannte Schwäche von WCAG 1.0 behoben werden, denn hier lag der Fokus auf HTML auf Kosten anderer Webinhaltsformate.
+   Anders gesagt, Richtlinien, die auf eine Reihe von Web-Inhaltsformaten angewendet werden können, nicht nur auf HTML. So kann WCAG 2.0 Inhalte abdecken, die in den Formaten PDF, Flash, JavaScript und anderen aktuellen und künftigen Web-Technologien generiert oder bereitgestellt werden. Damit soll eine erkannte Schwäche von WCAG 1.0 behoben werden, denn hier lag der Fokus auf HTML auf Kosten anderer Webinhaltsformate.
 
-* Sind **prüfbar:**
+* sind **prüfbar:**
 
    Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wurde. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht. WCAG 2.0 wurde mit dem Ziel verfasst, die Subjektivität zu reduzieren, die in einigen der WCAG 1.0-Richtlinien und -Kontrollpunkte vorhanden war.
 

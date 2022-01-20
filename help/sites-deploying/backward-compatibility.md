@@ -1,26 +1,26 @@
 ---
 title: Abwärtskompatibilität in AEM 6.4
-seo-title: Abwärtskompatibilität in AEM 6.4
+seo-title: Backward Compatibility in AEM 6.4
 description: Erfahren Sie, wie Sie Ihre Apps und Konfigurationen mit AEM 6.4 kompatibel machen.
-seo-description: Erfahren Sie, wie Sie Ihre Apps und Konfigurationen mit AEM 6.4 kompatibel machen.
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.4
 uuid: 2fa8525e-7f3b-4096-ac85-01c2c76bc9ac
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 5798100a-e03a-43f8-9189-ae51c06e192b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 77%
+source-wordcount: '486'
+ht-degree: 76%
 
 ---
 
 # Abwärtskompatibilität in AEM 6.4{#backward-compatibility-in-aem}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Der Legacy-Modus eignet sich für Kunden, die benutzerdefinierte Schnittstellen 
 
 ## Einrichtung {#how-to-set-up}
 
-Das AEM 6.3-Kompatibilitätspaket kann mit Package Manager als Paket installiert werden. Sie können das Kompatibilitätspaket [AEM 6.3 von der Website Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) herunterladen.
+Das AEM 6.3-Kompatibilitätspaket kann mit Package Manager als Paket installiert werden. Sie können die [AEM 6.3-Kompatibilitätspaket von der Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) Site.
 
 Sobald das Kompatibilitätspaket installiert wurde, können Sie das Routing über einen Schalter in der OSGi-Konfiguration aktivieren oder deaktivieren:
 

@@ -1,8 +1,8 @@
 ---
 title: Endpunkte hinzufügen aktivieren, ändern oder entfernen
-seo-title: Endpunkte hinzufügen aktivieren, ändern oder entfernen
+seo-title: Adding, enabling, modifying, or removing endpoints
 description: Erfahren Sie, wie Sie Endpunkte hinzufügen, aktivieren, ändern und entfernen.
-seo-description: Erfahren Sie, wie Sie Endpunkte hinzufügen, aktivieren, ändern und entfernen.
+seo-description: Learn how to add, enable, modify and remove endpoints.
 uuid: c53f225b-3d55-42f6-8982-0cd7dde0c4f5
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: 8aed1439-aa39-4f75-909b-6a7ad7840a08
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '371'
 ht-degree: 100%
 
 ---
@@ -40,9 +40,9 @@ Endpunkte können nur Diensten hinzugefügt werden. Ein Endpunkt kann nicht selb
 
 [Remoting-Endpunkteinstellungen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
-1. Klicken Sie auf „Hinzufügen“.
+1. Klicken Sie auf Hinzufügen.
 
-## Endpunkt aktivieren oder deaktivieren  {#enable-or-disable-an-endpoint}
+## Endpunkt aktivieren oder deaktivieren {#enable-or-disable-an-endpoint}
 
 Standardmäßig sind neue Endpunkte automatisch aktiviert. Wenn Sie aber einen Endpunkt deaktiviert haben, müssen Sie ihn aktivieren, damit er funktionsfähig ist.
 
@@ -51,7 +51,7 @@ Wenn mit Diensten Probleme auftreten, deaktivieren Sie die zugeordneten Endpunkt
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Endpunktverwaltung“.
 1. Aktivieren bzw. deaktivieren Sie auf der Seite „Endpunktverwaltung“ das Kontrollkästchen für den zu aktivierenden oder zu deaktivierenden Endpunkt und klicken Sie auf „Aktivieren“ oder „Deaktivieren“.
 
-## Endpunkt ändern  {#modify-an-endpoint}
+## Endpunkt ändern {#modify-an-endpoint}
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Wenn mit Diensten Probleme auftreten, deaktivieren Sie die zugeordneten Endpunkt
 
 Diese Aufgabe kann auch auf der Seite „Dienstverwaltung“ durchgeführt werden, indem Sie einen Dienst auswählen und dann auf die Registerkarte „Endpunkte“ klicken.
 
-## Endpunkt entfernen  {#remove-an-endpoint}
+## Endpunkt entfernen {#remove-an-endpoint}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Endpunktverwaltung“.
 1. Aktivieren Sie auf der Seite „Endpunktverwaltung“ das Kontrollkästchen für den zu entfernenden Endpunkt und klicken Sie auf „Entfernen“. Der Endpunkt wird nicht mehr angezeigt.

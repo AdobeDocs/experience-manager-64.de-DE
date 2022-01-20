@@ -1,8 +1,8 @@
 ---
 title: Überprüfungsmeldungen konfigurieren
-seo-title: Überprüfungsmeldungen konfigurieren
+seo-title: Configuring validation messages
 description: Erfahren Sie, wie Sie angeben, wie die Validierungsnachrichten und deren Position relativ zum im Webbrowser zurückgegebenen Formular angezeigt werden.
-seo-description: Erfahren Sie, wie Sie angeben, wie die Validierungsnachrichten und deren Position relativ zum im Webbrowser zurückgegebenen Formular angezeigt werden.
+seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
 uuid: f6bff4fa-f90f-4135-ae40-7ab3d3613122
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 2016ac85-12a1-42cb-bc03-fced94947010
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '350'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Für Formulare, die als HTML wiedergegeben werden, werden Formular-Überprüfungsfehler für den Benutzer angezeigt. Sie können die Darstellung von Überprüfungsmeldungen anpassen. In Abhängigkeit davon, wo die Überprüfungsmeldungen angezeigt werden, können Sie auch die Position der Meldung im Formular sowie die Rahmenstärke steuern.
 
-## Angeben, wie Überprüfungsmeldungen angezeigt werden  {#specify-how-validation-messages-are-displayed}
+## Angeben, wie Überprüfungsmeldungen angezeigt werden {#specify-how-validation-messages-are-displayed}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
 1. Wählen Sie unter „Überprüfungsausgabe“ in der Liste „Berichte“ eine der folgenden Optionen aus:
@@ -40,7 +40,7 @@ Für Formulare, die als HTML wiedergegeben werden, werden Formular-Überprüfung
 
 1. Klicken Sie auf Speichern.
 
-## Die Position der Überprüfungsmeldungen relativ zum im Webbrowser zurückgegebenen Formular angeben  {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
+## Die Position der Überprüfungsmeldungen relativ zum im Webbrowser zurückgegebenen Formular angeben {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
 Wenn „Berichte“ auf „Frame“ oder „Kein Frame“ festgelegt ist, können Sie die Position der Überprüfungsmeldungen angeben.
 
@@ -56,7 +56,7 @@ Wenn „Berichte“ auf „Frame“ oder „Kein Frame“ festgelegt ist, könne
 
 1. Klicken Sie auf Speichern.
 
-## Die Rahmenstärke angeben  {#specify-the-frame-border-size}
+## Die Rahmenstärke angeben {#specify-the-frame-border-size}
 
 Wenn „Berichte“ auf „Frame“ festgelegt ist, können Sie die Rahmenstärke angeben.
 

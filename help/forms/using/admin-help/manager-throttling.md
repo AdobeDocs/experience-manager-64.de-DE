@@ -1,8 +1,8 @@
 ---
 title: Work Manager und Einschränkungen
-seo-title: Work Manager und Einschränkungen
+seo-title: Work Manager and throttling
 description: Dieses Dokument stellt Hintergrundinformationen über Work Manager und Anweisungen zum Konfigurieren von Einschränkungsoptionen für Work Manager bereit.
-seo-description: Dieses Dokument stellt Hintergrundinformationen über Work Manager und Anweisungen zum Konfigurieren von Einschränkungsoptionen für Work Manager bereit.
+seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
 uuid: b90998bc-e3d4-493a-9371-55ccb44da20d
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 759cff3e-960a-4c38-a731-9fff21e739cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1026'
 ht-degree: 95%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 95%
 
 AEM Forms (und frühere Versionen) verwendeten JMS-Warteschlangen, um Vorgänge asynchron auszuführen. In AEM Forms wurden JMS-Warteschlangen durch Work Manager ersetzt. Dieses Dokument stellt Hintergrundinformationen über Work Manager und Anweisungen zum Konfigurieren von Einschränkungsoptionen für Work Manager bereit.
 
-## Informationen zu Vorgängen mit langer Lebensdauer (asynchron)  {#about-long-lived-asynchronous-operations}
+## Informationen zu Vorgängen mit langer Lebensdauer (asynchron) {#about-long-lived-asynchronous-operations}
 
 Die Vorgänge, die von Diensten in AEM Forms ausgeführt werden, können entweder Prozesse mit kurzer Lebensdauer (synchron) oder Prozesse mit langer Lebensdauer (asynchron) sein. Vorgänge mit kurzer Lebensdauer werden synchron mit demselben Thread ausgeführt, von dem sie aufgerufen wurden. Diese Vorgänge warten auf eine Antwort, bevor sie fortgesetzt werden.
 
 Vorgänge mit langer Lebensdauer umfassen möglicherweise Systeme oder gehen über das Unternehmen hinaus, beispielsweise wenn ein Kunde ein Antragsformular für eine Hypothek ausfüllen und einreichen muss und dies Teil einer umfangreicheren Lösung ist, die mehrere automatisierte und von Menschen durchgeführte Aufgaben umfasst. Solche Vorgänge müssen fortgesetzt werden, während auf eine Antwort gewartet wird. Vorgänge mit langer Lebensdauer führen die ihnen zugrunde liegenden Aufgaben asynchron aus, dadurch können Ressourcen anderweitig genutzt werden, während sie darauf warten, beendet zu werden. Im Gegensatz zu einem Vorgang mit kurzer Lebensdauer wird ein Vorgang mit langer Lebensdauer von Work Manager nicht als abgeschlossen betrachtet, sobald er aufgerufen wird. Es muss ein externer Auslöser, z. B. ein System, das einen anderen Vorgang bei demselben Dienst anfordert oder ein Benutzer, der ein Formular sendet, eintreten, um den Vorgang zu beenden.
 
-## Informationen zu Work Manager  {#about-work-manager}
+## Informationen zu Work Manager {#about-work-manager}
 
 AEM Forms (und frühere Versionen) verwendeten JMS-Warteschlangen, um Vorgänge asynchron auszuführen. AEM Forms verwendet Work Manager, um asynchrone Vorgänge über verwaltete Threads zu planen und auszuführen.
 
@@ -39,7 +39,7 @@ Asynchrone Vorgänge werden wie folgt verarbeitet:
 
 AEM Forms-Administratoren können außerdem Work Manager-Statistiken, z. B. die Anzahl der Arbeitselemente in der Warteschlange und ihren jeweiligen Status, mithilfe von Health Monitor anzeigen. Sie können Health Monitor außerdem verwenden, um Arbeitselemente anzuhalten, fortzusetzen, es erneut zu versuchen oder sie zu löschen. (Siehe [Statistiken mit Bezug auf Work Manager anzeigen](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
-## Einschränkungsoptionen für Work Manager konfigurieren  {#configuring-work-manager-throttling-options}
+## Einschränkungsoptionen für Work Manager konfigurieren {#configuring-work-manager-throttling-options}
 
 Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeitselemente nur geplant werden, wenn ausreichend Arbeitsspeicherressourcen vorhanden sind. Sie können Einschränkungen konfigurieren, indem Sie die folgenden JVM-Optionen für Ihren Anwendungsserver festlegen.
 
@@ -81,12 +81,12 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 **Java-Optionen zu JBoss hinzufügen**
 
 1. JBoss-Anwendungsserver beenden.
-1. Öffnen Sie den *[Anwendungsserver-Stammordner]*/bin/run.bat (Windows) oder run.sh (Linux oder UNIX) in einem Editor und fügen Sie die Java-Optionen nach Bedarf im Format `-Dproperty=value` hinzu.
+1. Öffnen Sie die *[Anwendungsserver-Stammordner]*/bin/run.bat (Windows) oder run.sh (Linux oder UNIX) in einem Editor verwenden und die Java-Optionen nach Bedarf im Format hinzufügen `-Dproperty=value`.
 1. Starten Sie den Server neu.
 
 **Java-Optionen zu WebLogic hinzufügen**
 
-1. Starten Sie WebLogic Administration Console, indem Sie in einem Webbrowser `https://`*[Hostname ]*`:`*[Port]* `/console` eingeben.
+1. Starten Sie WebLogic Administration Console, indem Sie `https://`*[Hostname ]*`:`*[port]* `/console` in einem Webbrowser.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.

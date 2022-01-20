@@ -1,8 +1,8 @@
 ---
 title: Anzeigen und Verstehen der Analytics-Berichte in AEM Forms
-seo-title: Anzeigen und Verstehen der Analytics-Berichte in AEM Forms
+seo-title: View and understand AEM Forms analytics reports
 description: AEM Forms ermöglicht die Integration in Adobe Analytics und stellt zusammenfassende und detaillierte Analysen zu Ihren veröffentlichten adaptiven Formularen bereit.
-seo-description: AEM Forms ermöglicht die Integration in Adobe Analytics und stellt zusammenfassende und detaillierte Analysen zu Ihren veröffentlichten adaptiven Formularen bereit.
+seo-description: AEM Forms integrates with Adobe Analytics and provides you summary and detailed analytics about your published adaptive forms.
 uuid: 193f472d-4aa3-4c31-b3c7-b5a2957dfb3d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,16 +11,16 @@ discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
 exl-id: 0483b6ed-676a-4272-a00e-23d53a979b07
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1050'
 ht-degree: 87%
 
 ---
 
-# Anzeigen und Verstehen der Analytics-Berichte in AEM Forms  {#view-and-understand-aem-forms-analytics-reports}
+# Anzeigen und Verstehen der Analytics-Berichte in AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms ermöglicht die Integration in Adobe Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
-## Einrichten von Analysen  {#setting-up-analytics}
+## Einrichten von Analysen {#setting-up-analytics}
 
 Die Analysefunktion in AEM Forms ist als Teil des AEM Forms-Add-On-Pakets verfügbar. Weitere Informationen zum Installieren des Add-On-Pakets finden Sie unter [Installieren und Konfigurieren von AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
@@ -28,7 +28,7 @@ Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto. Informati
 
 Nachdem Sie das AEM Forms-Add-On-Paket installiert und ein Adobe Analytics-Konto erstellt haben, integrieren Sie das Adobe Analytics-Konto in AEM Forms und aktivieren Sie in Ihren Formularen oder Dokumenten „Verfolgen“, wie in [Konfigurieren von Analysen und Berichten](/help/forms/using/configure-analytics-forms-documents.md) beschrieben.
 
-## Wie Benutzerinteraktionsinformationen aufgezeichnet werden  {#how-user-interaction-information-is-recorded}
+## Wie Benutzerinteraktionsinformationen aufgezeichnet werden {#how-user-interaction-information-is-recorded}
 
 Wenn ein Benutzer mit dem Formular interagiert, werden die Interaktionen aufgezeichnet und an den Analytics-Server gesendet. Folgende Liste zeigt Serveraufrufe für verschiedene Benutzeraktivitäten:
 
@@ -46,11 +46,11 @@ Wenn ein Benutzer mit dem Formular interagiert, werden die Interaktionen aufgeze
 >
 >Diese Liste ist nicht vollständig.
 
-## Anzeigen von Analyseberichten {#summary-report}
+## Anzeigen von Analytics-Berichten {#summary-report}
 
 Führen Sie die folgenden Schritte aus, um Analytics-Berichte anzuzeigen:
 
-1. Melden Sie sich beim AEM Portal unter `https://[hostname]:[port]` an.
+1. Melden Sie sich beim AEM Portal an unter `https://[hostname]:[port]`
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**.
 
 1. Wählen Sie das Formular aus, für das Sie die Analytics-Berichte anzeigen möchten.
@@ -64,7 +64,7 @@ AEM Forms zeigt Analytics-Berichte für das Formular und für jeden Bereich im F
 
 ![Zusammenfassungsbericht eines adaptiven Formulars](assets/analyticsdashboard_callout.png)
 
-**A.** Konversionen  **B.** Zusammenfassung auf Formularebene  **C.** Zusammenfassung auf Bereichsebene  **D.** Browser der Besucher - Filter  **E.** OS der Besucher - Filter  **F.** Sprache der Besucher - Filter
+**A.** Konversionen **B.** Zusammenfassung auf Formularebene **C.** Zusammenfassung auf Bereichsebene **D.** Browser der Besucher - Filter **E.** Betriebssystem der Besucher - Filter **F.** Sprache der Besucher - Filter
 
 Standardmäßig wird der Analytics-Bericht für die letzten sieben Tage angezeigt. Sie können Berichte für die letzten 15 Tage, den letzten Monat usw. anzeigen oder einen Datumsbereich angeben.
 
@@ -84,7 +84,7 @@ Mit dem Umrechnungswert auf Formularebene erhalten Sie einen Einblick in die Lei
 
 ![Konversionsdiagramm](assets/conversion-graph.png)
 
-## Analysebericht für adaptive und HTML5-Formulare {#analytics-report-for-adaptive-and-html-forms}
+## Analytics-Bericht für adaptive und HTML5-Formulare {#analytics-report-for-adaptive-and-html-forms}
 
 Mit der Zusammenfassung auf Formularebene erhalten Sie einen Einblick in die Leistung des Formulars in Bezug auf die folgenden wichtigen Leistungsindikatoren (KPIs):
 
@@ -118,7 +118,7 @@ Der detaillierte Bericht zeigt Werte für alle Felder im Bereich an.
 
 Der Bereichsbericht enthält drei Registerkarten:
 
-* **Zeitbericht**  (Standard): Zeigt die Zeit (in Sekunden) an, die mit dem Ausfüllen der einzelnen Felder im Bereich verbracht wurde
+* **Zeitbericht** (Standard): Zeigt die Zeit (in Sekunden) an, die mit dem Ausfüllen der einzelnen Felder im Bereich verbracht wurde
 * **Fehlerbericht**: Zeigt die Anzahl der Fehler, die von den Benutzern beim Ausfüllen der Felder gefunden wurden
 * **Hilfebericht**: Anzahl der Hilfeaufrufe für ein bestimmtes Feld
 

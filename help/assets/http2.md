@@ -60,7 +60,7 @@ Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfül
 
 Sie müssen den Wechsel auf HTTP/2 beantragen, da er nicht automatisch erfolgt.
 
-1. Senden Sie eine Anfrage an den technischen Support, um auf HTTP/2 umzustellen. Siehe [Zugriff auf das Portal des Kundendienstes](https://helpx.adobe.com/de/experience-manager/kb/accessing-aem-support-portal.html).
+1. Senden Sie eine Anfrage an den technischen Support, um auf HTTP/2 umzustellen. Siehe [Zugriff auf das Support-Portal](https://helpx.adobe.com/de/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. In der Anfrage geben Sie folgende Informationen an:
 

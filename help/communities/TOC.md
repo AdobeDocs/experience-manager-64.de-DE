@@ -9,7 +9,7 @@ feature: Communities
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '506'
 ht-degree: 30%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 30%
    + [Site-Vorlagen](sites.md)
    + [Gruppenvorlagen](tools-groups.md)
    + [Community-Funktionen](functions.md)
-   + [Speicher  Konfiguration](srp-config.md)
+   + [Speicherkonfiguration](srp-config.md)
    + [Badges Console](badges.md)
    + [Aktivierungsressourcen-Konsole](resources.md)
    + [Berichte-Konsole](reports.md)

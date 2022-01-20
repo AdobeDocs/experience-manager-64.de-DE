@@ -33,9 +33,9 @@ Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz 
 
 ## Grundlegendes zu [!DNL Experience Manager]-Suchergebnissen mit Smart-Tags {#understand-search-results-with-smart-tags}
 
-Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff aus den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das mit `woman` oder `running` mit Smart-Tags getaggt wurde, wird jedoch in einer solchen Suchabfrage angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig mit einer `AND`-Klausel. Dieses Standardverhalten ändert sich durch die Verwendung von Smart-Tags nicht. Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff aus den angewandten Smart-Tags gefunden. Suchen Sie beispielsweise nach `woman running`. Assets, die in den Metadaten nur das Keyword `woman`oder `running` aufweisen, werden standardmäßig nicht in den Suchergebnissen angezeigt. Ein Asset, das mit `woman` oder `running` die Verwendung von Smart-Tags wird in einer solchen Suchabfrage angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
-* Assets mit beiden Keywords `woman` und `running` in den Metadaten.
+* Assets mit beiden Keywords, `woman` und `running` in den Metadaten.
 * Assets, die über Smart-Tags mit einem der Keywords getaggt wurden.
 
 Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden zuerst angezeigt. Danach folgen die Suchergebnisse, die einem oder mehr Suchbegriffen in den Smart-Tags entsprechen. Im obigen Beispiel werden die Suchergebnisse ungefähr in dieser Reihenfolge angezeigt:

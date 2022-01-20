@@ -1,8 +1,8 @@
 ---
 title: Clientlibs für Communities-Komponenten
-seo-title: Clientlibs für Communities-Komponenten
+seo-title: Clientlibs for Communities Components
 description: Client-seitige Bibliotheken für Communities
-seo-description: Client-seitige Bibliotheken für Communities
+seo-description: Client-side libraries for Communities
 uuid: 0a62f629-e6af-4269-862e-0595824c329f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
 exl-id: 9b4ed16f-3c7c-478a-a897-9b4be086988b
 source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '382'
+ht-degree: 3%
 
 ---
 
@@ -25,16 +25,16 @@ In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie clientseitige Bi
 
 Grundlegende Informationen finden Sie unter:
 
-* [Verwendung clientseitiger ](../../help/sites-developing/clientlibs.md) Bibliotheken, die Nutzungsdetails sowie Debugging-Tools bereitstellt
-* [Clientlibs für ](client-customize.md#clientlibs) SCF, die nützliche Informationen beim Anpassen von SCF-Komponenten bereitstellen
+* [Verwenden Client-seitiger Bibliotheken](../../help/sites-developing/clientlibs.md) , das Nutzungsdetails sowie Debugging-Tools bereitstellt
+* [Clientlibs für SCF](client-customize.md#clientlibs) , die nützliche Informationen beim Anpassen von SCF-Komponenten bietet
 
 ## Warum Clientlibs erforderlich sind {#why-clientlibs-are-required}
 
 Clientlibs sind für die ordnungsgemäße Funktion (JavaScript) und Formatierung (CSS) einer Komponente erforderlich.
 
-Wenn für eine Funktion eine [Community-Funktion](functions.md) vorhanden ist, sind alle erforderlichen Komponenten und Konfigurationen, einschließlich der erforderlichen clientlibs, auf der Community-Site vorhanden. Nur wenn Autoren zusätzliche Komponenten zur Verfügung stehen sollen, müssen zusätzliche Client-Bibliotheken hinzugefügt werden.
+Wenn eine [Community-Funktion](functions.md) für eine Funktion sind alle erforderlichen Komponenten und Konfigurationen, einschließlich der erforderlichen clientlibs, auf der Community-Site vorhanden. Nur wenn Autoren zusätzliche Komponenten zur Verfügung stehen sollen, müssen zusätzliche Client-Bibliotheken hinzugefügt werden.
 
-Wenn die erforderlichen clientlibs fehlen, kann das Hinzufügen einer Communities-Komponente zu einer Seite](author-communities.md) zu JavaScript-Fehlern sowie zu einem unerwarteten Erscheinungsbild führen.[
+Wenn die erforderlichen clientlibs fehlen, [Hinzufügen einer Communities-Komponente zu einer Seite](author-communities.md) kann zu JavaScript-Fehlern sowie einem unerwarteten Erscheinungsbild führen.
 
 ### Beispiel: Platzierte Prüfungen ohne Clientlibs {#example-placed-reviews-without-clientlibs}
 
@@ -48,9 +48,9 @@ Wenn die erforderlichen clientlibs fehlen, kann das Hinzufügen einer Communitie
 
 Die grundlegenden Funktionsinformationen für Entwickler identifizieren die erforderlichen Clientlibs.
 
-Darüber hinaus bietet das Navigieren von einer AEM-Instanz zum [Community Components Guide](components-guide.md) Zugriff auf eine Liste von clientlib-Kategorien, die für eine Komponente erforderlich sind.
+Darüber hinaus navigieren Sie von einer AEM-Instanz zum [Handbuch zu Community-Komponenten](components-guide.md) bietet Zugriff auf eine Liste von clientlib-Kategorien, die für eine Komponente erforderlich sind.
 
-Am Anfang der [Seite &quot;Bewertungen&quot;](http://localhost:4502/content/community-components/en/reviews.html) sind die erforderlichen clientlibs aufgeführt.
+Beispiel: ganz oben im [Überprüfungsseite](http://localhost:4502/content/community-components/en/reviews.html) die aufgelisteten erforderlichen clientlibs
 
 * cq.ckeditor
 * cq.social.hbs.reviews
@@ -61,26 +61,26 @@ Am Anfang der [Seite &quot;Bewertungen&quot;](http://localhost:4502/content/comm
 
 Wenn Sie eine Communities-Komponente zu einer Seite hinzufügen möchten, müssen Sie die erforderlichen Clientlibs für die Komponente hinzufügen, falls diese noch nicht vorhanden ist.
 
-Verwenden Sie [CRXDE|Lite](#using-crxde-lite), um eine vorhandene Clientlibslist für eine Community-Site-Seite zu ändern.
+Verwendung [CRXDE|Lite](#using-crxde-lite) , um eine vorhandene Clientlibsliste für eine Community-Site-Seite zu ändern.
 
-So fügen Sie eine clientlib für eine Community-Site mit [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) hinzu:
+So fügen Sie eine Clientlib für eine Community-Site hinzu: [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
-* Suchen Sie den Knoten `clientlibslist` für die Seite, auf der Sie die Komponente hinzufügen möchten
+* Suchen Sie die `clientlibslist` Knoten für die Seite, auf der Sie die Komponente hinzufügen möchten
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* Mit dem ausgewählten Knoten `clientlibslist`
+* Mit `clientlibslist` Knoten ausgewählt
 
-   * Suchen Sie die Eigenschaft String[] `scg:requiredClientLibs` .
-   * Wählen Sie die zugehörige `Value` aus, um auf das Dialogfeld &quot;String-Array&quot;zuzugreifen
+   * Suchen Sie den String .[] property `scg:requiredClientLibs`
+   * Auswahl der `Value` , um auf das Dialogfeld String-Array zuzugreifen
 
       * Scrollen Sie bei Bedarf nach unten
-      * Wählen Sie `+` aus, um eine neue Client-Bibliothek einzugeben.
+      * Auswählen `+` , um eine neue Client-Bibliothek aufzurufen
 
          * Wiederholen Sie diesen Vorgang, um weitere Client-Bibliotheken hinzuzufügen.
-      * Wählen Sie **[!UICONTROL OK]** aus
-   * Wählen Sie **[!UICONTROL Alle speichern]**
+      * Klicken Sie auf **[!UICONTROL OK]**
+   * Wählen Sie **[!UICONTROL Alle speichern]** aus
 
 
 
@@ -88,6 +88,6 @@ So fügen Sie eine clientlib für eine Community-Site mit [CRXDE Lite](../../hel
 >
 >Wenn es sich bei der Site nicht um eine Community-Site handelt, müssen die Existenz oder der Speicherort der Client-Bibliotheken, die für die Site verwendet werden, ermittelt werden.
 
-Unter Verwendung des Beispiels [Erste Schritte mit AEM Communities](getting-started.md), in dem `site-name` *engage* ist, würde die clientliblist so angezeigt, wenn die Überprüfungskomponente hinzugefügt wird:
+Verwenden der [Erste Schritte mit AEM Communities](getting-started.md) Beispiel, wobei `site-name` is *interagieren* festgelegt ist, wird die clientliblist so angezeigt, wenn die Reviews-Komponente hinzugefügt wird:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)

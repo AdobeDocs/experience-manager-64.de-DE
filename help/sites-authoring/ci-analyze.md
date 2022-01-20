@@ -1,8 +1,8 @@
 ---
 title: Analysieren der Seitenleistung
-seo-title: Analysieren der Seitenleistung
+seo-title: Analyzing Page Performance
 description: Verwenden Sie die Inhaltseinblick-Seite, um die Leistung der erstellten Seite zu analysieren.
-seo-description: Verwenden Sie die Inhaltseinblick-Seite, um die Leistung der erstellten Seite zu analysieren.
+seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
 uuid: 6b8a489d-f262-495d-adff-125c9a2c49b9
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
 exl-id: dc24edaf-ca1d-4a6b-a2dc-86677267e18d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '662'
 ht-degree: 95%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 Öffnen Sie die Seite [Inhaltseinblick](/help/sites-authoring/content-insights.md), um die Leistung der Seite zu analysieren, die Sie bearbeiten. Konfigurieren Sie den Berichtszeitraum, um Ihre Analyse zu fokussieren.
 
-## Öffnen von Analytics und Empfehlungen für eine Seite  {#opening-analytics-and-recommendations-for-a-page}
+## Öffnen von Analytics und Empfehlungen für eine Seite {#opening-analytics-and-recommendations-for-a-page}
 
 Führen Sie die folgenden Schritte aus, um Analysen und Empfehlungen für eine Seite anzuzeigen:
 
@@ -61,7 +61,7 @@ So ändern Sie den Berichtszeitraum einer Inhaltseinblick-Seite:
 
 1. Um das Enddatum des Berichtszeitraums zu ändern, ziehen Sie den Kreis an der rechten Seite des schattierten Bereichs zum gewünschten Enddatum.
 
-### Ändern der Granularität des Berichtszeitraums  {#changing-the-granularity-of-the-reporting-period}
+### Ändern der Granularität des Berichtszeitraums {#changing-the-granularity-of-the-reporting-period}
 
 Ändern Sie die Zeitdauer für jeden Datenpunkt in einem Bericht. Beispiel: Wenn die Wochengranularität ausgewählt ist, stellt jeder Datenpunkt im Bericht „Ansichten“ die Anzahl der Ansichten für eine Woche dar.
 
@@ -75,7 +75,7 @@ Die Granularität wirkt sich auf die Berichte aus, die Daten in Bezug auf die Ze
 
 1. Klicken oder tippen Sie auf die gewünschte Granularität. Nach Auswahl wird der Bericht automatisch aktualisiert, um die Granularität widerzuspiegeln.
 
-## Zuweisen von Aufgaben für SEO-Empfehlungen  {#assigning-tasks-for-seo-recommendations}
+## Zuweisen von Aufgaben für SEO-Empfehlungen {#assigning-tasks-for-seo-recommendations}
 
 Verwenden Sie den Bericht „SEO-Empfehlungen“, um Aufgaben zur Verbesserung der Seitensichtbarkeit für Suchmaschinen zu erstellen. Für jede Empfehlung im Bericht ohne Häkchen können Sie eine Aufgabe erstellen, die Sie einem Benutzer zuweisen, um die erforderliche Arbeit auszuführen.
 

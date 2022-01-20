@@ -1,8 +1,8 @@
 ---
 title: Teaser und Strategien
-seo-title: Teaser und Strategien
+seo-title: Teasers and Strategies
 description: In Kampagnen werden häufig Teaser verwendet, um ein bestimmtes Besuchersegment zu Inhalten zu leiten, die genau auf dessen Interessen ausgerichtet sind. Für eine bestimmte Kampagne sind ein oder mehrere Teaser definiert.
-seo-description: In Kampagnen werden häufig Teaser verwendet, um ein bestimmtes Besuchersegment zu Inhalten zu leiten, die genau auf dessen Interessen ausgerichtet sind. Für eine bestimmte Kampagne sind ein oder mehrere Teaser definiert.
+seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
 uuid: 496caa14-2e91-4544-b3fc-12e0fe0da88d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
 exl-id: 311ffab4-8bc9-486b-9ca5-a958f13f16f8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1184'
 ht-degree: 89%
 
 ---
@@ -31,24 +31,24 @@ In Kampagnen werden häufig Teaser verwendet, um ein bestimmtes Besuchersegment 
 
 Teaser innerhalb von AEM bestehen aus mehreren Teilen:
 
-* **Teaser-** Seiten werden auf der entsprechenden Kampagnenseite gespeichert und enthalten die Definitionen der Teaser-Absätze, die für jede bestimmte Kampagne verfügbar sind. Diese Definitionen werden bei der Anzeige der Teaser-Absätze verwendet und enthalten auch Inhaltsänderungen, das für das Auswählen einer Änderung zu verwendende Segment sowie einen Verstärkungsfaktor.
-* Die **Teaser-Komponente** ist im Lieferumfang enthalten und ermöglicht Ihnen das Erstellen einer Instanz eines speziellen Teaser-Absatzes auf einer Inhaltsseite. Sie können die Teaser-Komponenten aus dem Sidekick ziehen und dann Ihre Teaser-Definition angeben, um einen eigenen Teaser-Absatz zu erstellen. **Hinweis:** Die Teaser-Komponente wird seit AEM 6.2 nicht mehr unterstützt.
+* **Teaser-Seiten** werden auf der entsprechenden Kampagnenseite gespeichert und enthalten die Definitionen der Teaser-Absätze, die für jede bestimmte Kampagne verfügbar sind. Diese Definitionen werden bei der Anzeige der Teaser-Absätze verwendet und enthalten auch Inhaltsänderungen, das für das Auswählen einer Änderung zu verwendende Segment sowie einen Verstärkungsfaktor.
+* Die **Teaser-Komponente** ist im Lieferumfang enthalten und ermöglicht Ihnen das Erstellen einer Instanz eines speziellen Teaser-Absatzes auf einer Inhaltsseite. Sie können die Teaser-Komponenten aus dem Sidekick ziehen und dann Ihre Teaser-Definition angeben, um einen eigenen Teaser-Absatz zu erstellen. **Hinweis:** Die Teaser-Komponente wird in AEM 6.2 nicht mehr unterstützt.
 
 * **Teaser-Absätze** sind tatsächliche Instanzen Ihres Teasers innerhalb einer Inhaltsseite. Dadurch wir ein Besuchersegment zu Inhalten geleitet, die auf ihre Interessen ausgerichtet sind.
 * Seiten, die den Kampagneninhalt für ein spezifisches Besuchersegment enthalten. Durch die Teaser-Absätze werden die Besucher in der Regel auf solche Seiten geleitet.
 
 ## Strategien {#strategies}
 
-Wenn Sie einen Teaser-Absatz zu einer Seite hinzufügen, müssen Sie die **Strategie** definieren.
+Beim Hinzufügen eines Teaser-Absatzes zu einer Seite müssen Sie die **Strategie**.
 
 Dies ist für den Fall, dass mehrere Teaser zur Auswahl stehen, wenn sich alle zugewiesenen Segmente erfolgreich auflösen. Die **Strategie** gibt dann ein zusätzliches Kriterium an, das zur Auswahl des angezeigten Teasers verwendet wird:
 
 * Das **Clickstream-Ergebnis** basiert auf den Tags und zugehörigen Tag-Treffern, die im ClientContext des Besuchers enthalten sind (der Client Context zeigt an, wie oft ein Besucher auf Seiten mit dem jeweiligen Tag geklickt hat). Die Trefferraten für Tags, die auf der Teaser-Seite definiert sind, werden verglichen.
-* **Zufällig** für &quot;zufällige&quot;Auswahl; verwendet den für eine Seite generierten Zufallsfaktor. Dies ist im  [Client-Kontext](/help/sites-administering/client-context.md) zu sehen.
+* **Random** für &quot;zufällige&quot; Auswahl; verwendet den für eine Seite generierten Zufallsfaktor. Dies ist bei der [Client-Kontext](/help/sites-administering/client-context.md).
 
-* **** Erstellen Sie zunächst die Liste der aufgelösten Segmente. Die Reihenfolge ist die gleiche wie die der Teaser in der Kampagnen-Containerseite.
+* **Erste** in der Liste aufgelöster Segmente. Die Reihenfolge ist die gleiche wie die der Teaser in der Kampagnen-Containerseite.
 
-Der [Verstärkungsfaktor](/help/sites-administering/campaign-segmentation.md#boost-factor) des Segments wirkt sich ebenfalls auf die Auswahl aus. Dabei handelt es sich um einen Gewichtungsfaktor, der einer Segmentdefinition hinzugefügt wird, um die relative Wahrscheinlichkeit, dass diese ausgewählt wird, zu erhöhen/verringern.
+Die [Verstärkungsfaktor](/help/sites-administering/campaign-segmentation.md#boost-factor) des Segments wirkt sich auch auf die Auswahl aus. Dabei handelt es sich um einen Gewichtungsfaktor, der einer Segmentdefinition hinzugefügt wird, um die relative Wahrscheinlichkeit, dass diese ausgewählt wird, zu erhöhen/verringern.
 
 Der Prozess und die Beziehungen zwischen den unterschiedlichen Auswahlkriterien werden am besten in einem Beispiel veranschaulicht (eine Methode, die auch verwendet werden kann, um sicherzustellen, dass Ihre Teaser die richtige Zielgruppe erreichen).
 
@@ -114,7 +114,7 @@ Und es werden die folgenden Teaser-Definitionen verwendet:
 
 Wenn dies auf einen Besucher angewendet wird, bei dem Folgendes gilt:
 
-* **S1**,  **S2** und  **S6**  wurden erfolgreich aufgelöst
+* **S1**, **S2** und **S6** erfolgreich auflösen
 
 * Das Tag **Marketing** hat 3 Treffer.
 * Das Tag **Business** hat 6 Treffer.

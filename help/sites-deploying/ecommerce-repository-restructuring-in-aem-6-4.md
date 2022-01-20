@@ -1,25 +1,25 @@
 ---
 title: E-Commerce-Repository-Neustrukturierung in AEM 6.4
-seo-title: E-Commerce-Repository-Neustrukturierung in AEM 6.4
+seo-title: E-Commerce Repository Restructuring in AEM 6.4
 description: Erfahren Sie, wie Sie die notwendigen Änderungen vornehmen können, um in AEM 6.4 für E-Commerce zur neuen Repository-Struktur zu migrieren.
-seo-description: Erfahren Sie, wie Sie die notwendigen Änderungen vornehmen können, um in AEM 6.4 für E-Commerce zur neuen Repository-Struktur zu migrieren.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 85%
+source-wordcount: '201'
+ht-degree: 84%
 
 ---
 
 # E-Commerce-Repository-Neustrukturierung in AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die AEM E-Commerce-Lösung auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
+Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) -Seite sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die E-Commerce-AEM auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
 
 ## Mit der Aktualisierung auf 6.4 {#with-upgrade}
 
@@ -52,7 +52,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
     </ul> <p>Für größere Kataloge wird empfohlen, die Commerce-Migration einzeln auszuführen, indem die folgende Java-Systemeigenschaft an AEM übergeben wird:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Nach der Migration muss AEM neu gestartet werden.</p> </td> 
   </tr>
   <tr>
-   <td><strong>Hinweise</strong></td> 
+   <td><strong>Anmerkungen</strong></td> 
    <td>Nicht zutreffend<br /> </td> 
   </tr>
  </tbody>

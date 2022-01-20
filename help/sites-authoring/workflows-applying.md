@@ -1,8 +1,8 @@
 ---
 title: Anwenden von Workflows auf Seiten
-seo-title: Anwenden von Workflows auf Seiten
+seo-title: Applying Workflows to Pages
 description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
-seo-description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
+seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
 uuid: 8a1d16f8-69fc-4e3a-b72a-b799ea381024
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 exl-id: 05c52802-adfd-4b5f-a273-d6a261a00659
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '647'
 ht-degree: 100%
 
 ---
 
-# Anwenden von Workflows auf Seiten  {#applying-workflows-to-pages}
+# Anwenden von Workflows auf Seiten{#applying-workflows-to-pages}
 
 Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
 
@@ -41,8 +41,8 @@ Workflows können wie folgt gestartet werden:
 >
 >* [Anwenden von Workflows auf DAM-Assets](/help/assets/assets-workflow.md).
 >* [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md).
->
 
+>
 
 
 >[!NOTE]
@@ -72,7 +72,7 @@ Sie können einen Workflow von der Symbolleiste der **Sites**-Konsole aus starte
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Starten eines Workflows aus der Timeline       {#starting-a-workflow-from-the-timeline}
+### Starten eines Workflows aus der Timeline {#starting-a-workflow-from-the-timeline}
 
 Aus der **Timeline** können Sie einen Workflow starten, der auf Ihre ausgewählte Ressource angewendet werden soll.
 
@@ -83,7 +83,7 @@ Aus der **Timeline** können Sie einen Workflow starten, der auf Ihre ausgewähl
 
 1. Der Assistent **Workflow erstellen** hilft Ihnen, [die Workflow-Details anzugeben](#specifying-workflow-details-in-the-create-workflow-wizard).
 
-### Angeben von Workflow-Details im Assistenten „Workflow erstellen“       {#specifying-workflow-details-in-the-create-workflow-wizard}
+### Angeben von Workflow-Details im Assistenten „Workflow erstellen“ {#specifying-workflow-details-in-the-create-workflow-wizard}
 
 Der Assistent **Workflow erstellen** hilft Ihnen, den Workflow auszuwählen und die erforderlichen Details anzugeben.
 
@@ -107,7 +107,6 @@ Anschließend können Sie Details angeben:
    * **Paketname**
 
       * Sie können einen Titel für das Paket festlegen, um die Identifizierung erleichtern.
-
    >[!NOTE]
    >
    >Die Option **Workflow-Paket behalten** ist verfügbar, wenn der Workflow für Unterstützung für mehrere Ressourcen konfiguriert wurde und mehrere Ressourcen ausgewählt wurden.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)

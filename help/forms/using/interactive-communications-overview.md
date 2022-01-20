@@ -1,8 +1,8 @@
 ---
 title: Interaktive Kommunikation - Übersicht
-seo-title: Interaktive Kommunikation - Übersicht
+seo-title: Interactive Communications Overview
 description: Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen Erstellungs-Workflow und Unterschiede zwischen der interaktiven Kommunikation und dem Brief.
-seo-description: Interaktive Kommunikationsfunktionen, Beispiele für Anwendungsfälle, Workflow für die Erstellung und Unterschiede zwischen der interaktiven Kommunikation und Correspondence Management
+seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
@@ -11,8 +11,8 @@ discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 77%
+source-wordcount: '506'
+ht-degree: 76%
 
 ---
 
@@ -35,9 +35,9 @@ Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufg
 * Benutzeroberfläche für Agenten zeigt Druck- und Webvorschau der interaktiven Kommunikation an
 * Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
 
-## Beispielanwendungsfall  {#sample-use-case}
+## Beispielanwendungsfall {#sample-use-case}
 
-Das [Begrüßungs-Kit für einen Kreditkartenkunden](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) Beispielanwendungsfall zeigt die Funktionen einer interaktiven Kommunikation.
+Die [Begrüßungs-Kit für einen Kreditkartenkunden](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) Beispielanwendungsfall zeigt die Funktionen einer interaktiven Kommunikation.
 
 ## Erstellung einer interaktiven Kommunikation  {#interactive-communication-creation}
 
@@ -45,9 +45,9 @@ Das [Begrüßungs-Kit für einen Kreditkartenkunden](/help/forms/using/finance-r
 
 ### Workflow {#workflow}
 
-Um eine interaktive Kommunikation zu erstellen, lassen Sie die [Bausteine](#buildingblocks) für interaktive Kommunikation bereit und führen Sie dann die folgenden Schritte aus:
+Um eine interaktive Kommunikation zu erstellen, legen Sie die [Bausteine](#buildingblocks) für interaktive Kommunikation bereit sind und dann die folgenden Schritte ausführen:
 
-1. Wählen Sie [Erstellen Sie eine interaktive Kommunikation](/help/forms/using/create-interactive-communication.md).
+1. Wählen Sie [Erstellen einer interaktiven Kommunikation](/help/forms/using/create-interactive-communication.md).
 
 1. Geben Sie das [Formulardatenmodell](/help/forms/using/data-integration.md), den Vorbefüllungs-Dienst und die [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md) an. Sie können den Webkanal über den Druckkanal generieren.
 
@@ -55,7 +55,7 @@ Um eine interaktive Kommunikation zu erstellen, lassen Sie die [Bausteine](#buil
 1. Konfigurieren Sie die Eigenschaften für die eingefügten Komponenten wie folgt:
 
    1. Bilder
-   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables)  (einschließlich Layout-Fragmente)
+   1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables) (Einschließlich Layout-Fragmente)
    1. [Diagramme](/help/forms/using/chart-component-interactive-communications.md)
    1. [Dokumentfragmente](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
@@ -70,7 +70,7 @@ Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstel
 * [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
 * [Dokumentfragmente](/help/forms/using/document-fragments.md)
 * Bilder
-* [](/help/forms/using/themes.md) Designs für den Webkanal
+* [Designs](/help/forms/using/themes.md) für den Webkanal
 
 ## Interaktive Kommunikation im Vergleich zu Correspondence Management {#interactive-communications-vs-correspondence-management}
 
@@ -108,7 +108,7 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz zur Ers
    <td>Keine Benutzeroberfläche für die Erstellung eines bedingten Ausdrucks</td> 
   </tr>
   <tr>
-   <td>Authoring – </td> 
+   <td>Authoring –</td> 
    <td>Drag-and-Drop-Benutzeroberfläche für Erstellung von Druck- und Webkanal</td> 
    <td>Kein Drag-and-Drop-Mechanismus </td> 
   </tr>

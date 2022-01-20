@@ -1,8 +1,8 @@
 ---
 title: 'Dynamisches Füllen von Dropdownlisten '
-seo-title: 'Dynamisches Füllen von Dropdownlisten '
+seo-title: Dynamically populating drop-down lists
 description: Verfahren zum dynamischen Füllen von Dropdownlisten basierend auf einer Logik
-seo-description: Verfahren zum dynamischen Füllen von Dropdownlisten basierend auf einer Logik
+seo-description: Procedure to dynamically populate drop-down lists based on some logic
 uuid: b58a184f-6c96-47ff-8a2e-829c93b63324
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,17 +11,17 @@ discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 82%
+source-wordcount: '332'
+ht-degree: 100%
 
 ---
 
-# Dynamisches Füllen von Dropdownlisten   {#dynamically-populating-drop-down-lists}
+# Dynamisches Füllen von Dropdownlisten  {#dynamically-populating-drop-down-lists}
 
 ## Voraussetzungen {#prerequisites}
 
-* [Erstellung von OSGI-Bundles](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
-* [Entwickeln von AEM-Komponenten ](/help/sites-developing/components.md)
+* [Erstellung von OSGI-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* [Entwickeln von AEM-Komponenten](/help/sites-developing/components.md)
 * [Erstellen von adaptiven Formularen](/help/forms/using/creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md)
 
@@ -145,16 +145,16 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
    }
    ```
 
-1. Erstellen Sie einen Dropdown-Knoten unter einer bestimmten Ordnerhierarchie in Apps (erstellen Sie beispielsweise einen Knoten unter /apps/myfolder/demo). Stellen Sie sicher, dass der Parameter `sling:resourceType` für den Knoten mit dem Parameter übereinstimmt, auf den das Servlet verweist (/apps/populatedropdown).
+1. Erstellen Sie einen Dropdown-Knoten unter einer bestimmten Ordnerhierarchie im Ordner „apps“ (erstellen Sie z. B. einen Knoten unter /apps/myfolder/demo). Stellen Sie sicher, dass der Parameter `sling:resourceType` für den Knoten mit dem, auf den das Servlet verweist (/apps/populatedropdown), identisch ist.
 
-   ![Erstellen eines Dropdownknotens](assets/dropdown-node.png)
+   ![Erstellen eines Dropdown-Knotens](assets/dropdown-node.png)
 
 1. Komprimieren Sie den Inhaltsknoten und betten Sie die .jar-Datei in einem bestimmten Verzeichnis ein (beispielsweise /apps/myfolder/demo/install/). Stellen Sie dieselbe Datei auf dem Server bereit.
 1. Erstellen Sie ein adaptives Formular und fügen Sie zwei Dropdownlisten, „Land“ und „Bundesland“, hinzu. Die Liste „Land“ kann die Namen von Ländern enthalten. Die Liste „Bundesland“ kann dynamisch die Namen der Bundesländer für das in der ersten Liste ausgewählte Land einfügen.
 
    Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste „Bundesland“ ein Skript hinzu, mit dem sie basierend auf dem in der Liste „Land“ gewählten Land gefüllt wird.
 
-   ![Hinzufügen ](assets/country-dropdown.png) ![von LändernamenHinzufügen von Skripten zum Ausfüllen von ](assets/state-dropdown.png) ![StatusnamenDropdown-Listen &quot;Land&quot;und &quot;Bundesland&quot;](assets/2dropdowns.png)
+   ![Hinzufügen von Ländernamen](assets/country-dropdown.png) ![Hinzufügen eines Skripts zum Ausfüllen mit Bundesländernamen](assets/state-dropdown.png) ![Dropdownlisten „Land“ und „Bundesland“](assets/2dropdowns.png)
 
    ```
    JSON.parse(

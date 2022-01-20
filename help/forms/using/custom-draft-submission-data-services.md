@@ -1,8 +1,8 @@
 ---
 title: Anpassen von Entwurfs- und Übermittlungsdatendiensten
-seo-title: Anpassen von Entwurfs- und Übermittlungsdatendiensten
+seo-title: Customizing Draft and Submission data services
 description: AEM Forms speichert standardmäßig Entwurfs- und adaptive gesendete Formulare in einem Standardknoten auf der Veröffentlichungsinstanz. Sie können die Entwurfs- und Übermittlungsdatendienste von AEM Forms allerdings konfigurieren, um die Speicherung von Entwurfs- und gesendeten adaptiven Formularen anzupassen.
-seo-description: AEM Forms speichert standardmäßig Entwurfs- und adaptive gesendete Formulare in einem Standardknoten auf der Veröffentlichungsinstanz. Sie können die Entwurfs- und Übermittlungsdatendienste von AEM Forms allerdings konfigurieren, um die Speicherung von Entwurfs- und gesendeten adaptiven Formularen anzupassen.
+seo-description: AEM Forms, by default, stores draft and submitted adaptive forms in a default node on the Publish instance. However, you can configure the draft and submission data services of AEM Forms to customize the storage of draft and submitted adaptive forms.
 uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,18 +11,18 @@ discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: c6243a1f-8f8f-48dc-af3b-b165f451ce73
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 80%
+source-wordcount: '276'
+ht-degree: 77%
 
 ---
 
-# Anpassen von Entwurfs- und Übermittlungsdatendiensten  {#customizing-draft-and-submission-data-services}
+# Anpassen von Entwurfs- und Übermittlungsdatendiensten {#customizing-draft-and-submission-data-services}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit AEM Forms können Benutzer ein adaptives Formular als Entwurf speichern. Die Entwurfsfunktion bietet Benutzern die Möglichkeit, ein Formular, an dem sie gerade arbeiten, beizubehalten. Ein Benutzer kann das Formular dann jederzeit von jedem beliebigen Gerät ausfüllen und senden.
 
-Standardmäßig speichert AEM Forms die mit dem Entwurf und der Übermittlung verknüpften Benutzerdaten auf der Veröffentlichungsinstanz im Knoten `/content/forms/fp` .
+Standardmäßig speichert AEM Forms die mit dem Entwurf und der Übermittlung verknüpften Benutzerdaten auf der Veröffentlichungsinstanz im `/content/forms/fp` Knoten.
 
 AEM Forms Portal-Komponenten bieten allerdings Datendienste, mit denen Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
 
@@ -30,10 +30,10 @@ Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste für [E
 
 ## Voraussetzungen {#prerequisites}
 
-* Aktivieren Sie [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* Aktivieren [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
 * Erstellen Sie eine [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
-* Aktivieren Sie [adaptive Formulare für das Formularportal](/help/forms/using/draft-submission-component.md)
-* Erfahren Sie mehr über [Implementierungsdetails des benutzerdefinierten Speichers](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Aktivieren [Adaptive Formulare für Forms Portal](/help/forms/using/draft-submission-component.md)
+* Lernen [Implementierungsdetails für benutzerdefinierten Speicher](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
@@ -82,9 +82,9 @@ public interface DraftAFDataService {
 }
 ```
 
-## Übermittlungsdatendienst  {#submission-data-service}
+## Übermittlungsdatendienst {#submission-data-service}
 
-Um die Speicherung von Benutzerübermittlungsdaten anzupassen, müssen Sie die Implementierung für alle Methoden der `SubmittedAFDataService`-Schnittstelle bereitstellen.
+Um die Speicherung von Benutzerübermittlungsdaten anzupassen, müssen Sie die Implementierung für alle Methoden des `SubmittedAFDataService` -Schnittstelle.
 
 Eine Beschreibung der Methoden und deren Argumente finden Sie im folgenden Codebeispiel der Schnittstelle:
 

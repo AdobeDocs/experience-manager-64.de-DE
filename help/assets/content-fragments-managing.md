@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Inhaltsfragmenten
-seo-title: Verwalten von Inhaltsfragmenten
+seo-title: Managing Content Fragments
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
-seo-description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
+seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1492'
 ht-degree: 97%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 97%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0 oder höher)](/help/release-notes/sp-release-notes.md).
 
 Inhaltsfragmente werden als **[!UICONTROL Assets]** gespeichert und daher hauptsächlich über die **[!UICONTROL Assets-Konsole]** verwaltet.
 
@@ -121,7 +121,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder das [Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de).
+>Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder [Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de).
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
@@ -144,9 +144,8 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    >[!NOTE]
    >
    >1. Es wird eine Benachrichtigung angezeigt, wenn das Fragment bereits auf einer Inhaltsseite referenziert wird.
-      >
-      >
-   2. Das seitliche Bedienfeld kann über das Symbol **[!UICONTROL Seitliches Bedienfeld ein/aus]** ein- oder ausgeblendet werden.
+   >
+   >2. Das seitliche Bedienfeld kann über das Symbol **[!UICONTROL Seitliches Bedienfeld ein/aus]** ein- oder ausgeblendet werden.
 
 
 1. Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die drei Modi:
@@ -154,7 +153,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    * Varianten: [Bearbeiten des Inhalts](#editing-the-content-of-your-fragment) und [Verwalten Ihrer Varianten](#creating-and-managing-variations-within-your-fragment)
    * [Anmerkungen](content-fragments-variations.md#annotating-a-content-fragment)
    * [Zugehörige Inhalte](#associating-content-with-your-fragment)
-   * [Metadaten  ](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+   * [Metadaten](#viewing-and-editing-the-metadata-properties-of-your-fragment)
 
    ![cfm-10](assets/cfm-10.png)
 
@@ -219,19 +218,19 @@ Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit
 
 Wenn Sie das Fragment geöffnet haben, können Sie die Registerkarte [Varianten](content-fragments-variations.md) verwenden, um Ihren Inhalt zu erstellen.
 
-## Erstellen und Verwalten von Varianten innerhalb Ihres Fragments  {#creating-and-managing-variations-within-your-fragment}
+## Erstellen und Verwalten von Varianten innerhalb Ihres Fragments {#creating-and-managing-variations-within-your-fragment}
 
 Sobald Sie den primären Inhalt erstellt haben, können Sie [Varianten](content-fragments-variations.md) dieses Inhalts erstellen und verwalten.
 
-## Verknüpfen von Inhalt mit Ihrem Fragment  {#associating-content-with-your-fragment}
+## Verknüpfen von Inhalt mit Ihrem Fragment {#associating-content-with-your-fragment}
 
 Sie können auch Inhalt mit einem Fragment [verknüpfen](content-fragments-assoc-content.md). So entsteht eine Verbindung, mit der Assets (d. h. Bilder) für ein Fragment verwendet werden können (falls gewünscht), wenn sie zu einer Inhaltsseite hinzugefügt werden.
 
-## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments  {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Sie können die Eigenschaften eines Fragments über die Registerkarte [[!UICONTROL Metadaten]](content-fragments-metadata.md) anzeigen und bearbeiten.
 
-## Zeitleiste für Inhaltsfragmente  {#timeline-for-content-fragments}
+## Zeitleiste für Inhaltsfragmente {#timeline-for-content-fragments}
 
 Neben den Standardoptionen enthält die [Zeitleiste](managing-assets-touch-ui.md#timeline) Informationen und Aktionen für Inhaltsfragmente.
 
@@ -256,8 +255,7 @@ Neben den Standardoptionen enthält die [Zeitleiste](managing-assets-touch-ui.md
 >* Mit dem Fragment-Asset verbunden
 
 >
->
-Anmerkungen (für Inhaltsfragmente) sind:
+>Anmerkungen (für Inhaltsfragmente) sind:
 >
 >* Im Fragmenteditor eingegeben worden
 >* Spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
@@ -295,7 +293,7 @@ Sie werden nebeneinander angezeigt:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Wiederherstellen einer früheren Version   {#reverting-to-a-version}
+## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 
 Sie können eine frühere Version wiederherstellen.
 

@@ -130,7 +130,7 @@ SQL Server bietet auch zwei Sicherungs- und Wiederherstellungswerkzeuge:
 * SQL Server Management Studio (grafische Benutzeroberfläche)
 * T-SQL (Befehlszeile)
 
-Weitere Informationen finden Sie unter [Backup and Restore](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -142,7 +142,7 @@ Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien unter Windows so, dass
 >
 >`binlog_format=mixed log-bin=logname`
 
-Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. Stellen Sie für eine inkrementelle Sicherung sicher, dass Sie den Server mit der Option - `log-bin` starten, wie im vorherigen Abschnitt beschrieben. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. Mit dem Befehl `FLUSH LOGS SQL` können Sie einen Wechsel manuell erzwingen. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
+Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. Um eine inkrementelle Sicherung durchzuführen, starten Sie den Server mit dem - `log-bin` wie im vorherigen Abschnitt beschrieben. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. Sie können einen Wechsel manuell erzwingen, indem Sie die `FLUSH LOGS SQL` Befehl. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
 
 Siehe [Backup Strategy Summary](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
@@ -159,7 +159,7 @@ Der Stammordner für Inhalte enthält das Repository für Content Services (nich
 
 Der Stammordner für Inhalte wird bei der Installation von Content Services (nicht mehr unterstützt) erstellt. Der Speicherort des Stammordners für Inhalte wird während des Installationsprozesses von AEM Forms bestimmt.
 
-Der Standardspeicherort für den Stammordner für Inhalte ist *[aem-forms root]*/lccs_data.
+Der Standardspeicherort für den Stammordner für Inhalte ist *[AEM-Forms-Stamm]*/lccs_data.
 
 Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
 
@@ -181,7 +181,7 @@ Bei der Installation von Content Services (nicht mehr unterstützt) in einer Clu
 
 **Indexstammordner:** Ein Ordner, der auf jedem Knoten im Cluster erstellt wird und immer denselben Pfad und Ordnernamen hat.
 
-Der Standardspeicherort für den Stammordner für Inhalte ist *[GDS-Stammordner]*/lccs_data, wobei *[GDS-Stammordner]* der unter [GDS-Speicherort](files-back-recover.md#gds-location) beschriebene Speicherort ist. Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
+Der Standardspeicherort für den Stammordner für Inhalte ist *[GDS-Stammordner]*/lccs_data, wobei *[GDS-Stammordner]* ist der Ort, der unter [GDS-Speicherort](files-back-recover.md#gds-location). Sichern Sie folgende Ordner, die sich im Stammordner für Inhalte befinden:
 
 /audit.contentstore
 
@@ -193,7 +193,7 @@ Der Standardspeicherort für den Stammordner für Inhalte ist *[GDS-Stammordner]
 
 Wenn der Ordner „/backup-lucene-indexes“ nicht vorhanden ist, sichern Sie den Ordner „/lucene-indexes“ (ebenfalls im Stammordner für Inhalte). Wenn der Ordner „/backup-lucene-indexes“ vorhanden ist, sichern Sie nicht den Ordner „/lucene-indexes“, weil dies zu Fehlern führen kann.
 
-Der Standardspeicherort für den Indexstammordner ist *[aem-forms root]*/lucene-indexes auf jedem Knoten.
+Der Standardspeicherort für den Indexstammordner ist *[AEM-Forms-Stamm]*/lucene-indexes auf jedem Knoten.
 
 ## Vom Kunden installierte Schriftarten {#customer-installed-fonts}
 
@@ -201,6 +201,6 @@ Wenn Sie zusätzliche Schriftarten in Ihrer AEM Forms-Umgebung installiert haben
 
 >[!NOTE]
 >
->Standardmäßig befinden sich die mit AEM Formularen installierten Adobe-Schriftarten im Ordner [aem-forms root]/fonts .
+>Standardmäßig befinden sich die mit AEM Formularen installierten Adobe-Schriftarten im [AEM-Forms-Stamm]Ordner &quot;/fonts&quot;.
 
 Wenn das Betriebssystem auf dem Hostcomputer neu initialisiert wird und Sie Schriftarten des vorherigen Betriebssystems verwenden möchten, muss der Inhalt des Ordners mit den Systemschriftarten ebenfalls gesichert werden. (Spezifische Anweisungen finden Sie in der Dokumentation zum Betriebssystem.)

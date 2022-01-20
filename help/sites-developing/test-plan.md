@@ -1,8 +1,8 @@
 ---
 title: Zusammenstellen des Testplans
-seo-title: Zusammenstellen des Testplans
+seo-title: Compiling your Test Plan
 description: Die einzelnen Testfälle werden in Ihrem Testplan zusammengeführt.
-seo-description: Die einzelnen Testfälle werden in Ihrem Testplan zusammengeführt.
+seo-description: The individual test cases are amalgamated into your Test Plan
 uuid: 99822b02-7b75-422d-ae21-16c4af742567
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 3a8302e8-bc61-402c-a9f2-5db3dfa6dd6d
 exl-id: 913e1fee-b071-4152-94c3-dd7b8900e5ed
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '193'
 ht-degree: 100%
 
 ---

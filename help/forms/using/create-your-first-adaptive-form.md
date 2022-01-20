@@ -1,17 +1,17 @@
 ---
 title: Erstellen Sie Ihr erstes adaptives Formular
-seo-title: Erstellen Sie Ihr erstes adaptives Formular
+seo-title: Create your first adaptive form
 description: 'Lernen Sie, wie Sie Business-Class-, interaktive und Responsive-Formulare erstellen. '
-seo-description: 'Lernen Sie, wie Sie Business-Class-, interaktive und Responsive-Formulare erstellen. '
+seo-description: Learn to create business class, interactive, and responsive forms.
 page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: f634a73a-e720-4a38-a459-6ddbe4fdc565
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '950'
 ht-degree: 86%
 
 ---
@@ -43,7 +43,7 @@ Die Website wird mit Adobe Experience Manager (AEM) ausgeführt und verwendet AE
 
 * Eine AEM Author-Instanz einrichten.
 * Installieren Sie das [AEM Forms-Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz.
-* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Beispiele im Tutorial basieren auf der SQL-Datenbank und verwenden den Oracle [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf der SQL-Datenbank und verwenden Oracle [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Richten Sie eine Datenbank mit Kundendaten in den unten gezeigten Feldern ein. Eine Datenbank ist nicht unbedingt notwendig zum Erstellen eines adaptiven Formulars. In diesem Lernprogramm wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM Forms verwendet.
 
@@ -80,7 +80,7 @@ Ziele:
 
 [ ](create-form-data-model.md)
 
-## Schritt 3: Wenden Sie Regeln auf adaptive Formularfelder an  {#step-apply-rules-to-adaptive-form-fields}
+## Schritt 3: Wenden Sie Regeln auf adaptive Formularfelder an {#step-apply-rules-to-adaptive-form-fields}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -95,7 +95,7 @@ Ziele:
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
-Adaptive Formulare stellen Designs und einen [Editor](/help/forms/using/themes.md) bereit, um Designs für adaptive Formulare zu erstellen. Ein Design umfasst Formatierungsdetails für Komponenten und Bereiche und Sie können ein Design in verschiedenen Formularen wiederverwenden. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie das Design auf ein Formular anwenden, wird der festgelegte Stil auf die entsprechenden Komponenten des Formulars angewendet. Adaptive Formulare unterstützen auch das Inline-Styling für Designs, die spezifisch für ein Formular sind.
+Adaptive Formulare bieten Designs und eine [editor](/help/forms/using/themes.md) , um Designs für die adaptiven Formulare zu erstellen. Ein Design umfasst Formatierungsdetails für Komponenten und Bereiche und Sie können ein Design in verschiedenen Formularen wiederverwenden. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie das Design auf ein Formular anwenden, wird der festgelegte Stil auf die entsprechenden Komponenten des Formulars angewendet. Adaptive Formulare unterstützen auch das Inline-Styling für Designs, die spezifisch für ein Formular sind.
 
 Ziele:
 

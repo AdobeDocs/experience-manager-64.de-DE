@@ -21,7 +21,7 @@ ht-degree: 71%
 
 # Migration der Assets und Dokumente von AEM Forms {#migrate-aem-forms-assets-and-documents}
 
-Das Migrationsdienstprogramm konvertiert die [Adaptive Forms Assets](/help/forms/using/introduction-forms-authoring.md), [Cloud-Konfigurationen](/help/sites-developing/extending-cloud-config.md) und [Correspondence Management-Assets](/help/forms/using/cm-overview.md) aus dem in früheren Versionen verwendeten Format in das in AEM 6.4 Forms verwendete Format. Wenn Sie das Migrationsdienstprogramm ausführen, werden folgende Elemente migriert:
+Das Migrationsdienstprogramm konvertiert die [Adaptive Forms-Assets](/help/forms/using/introduction-forms-authoring.md), [Cloud-Konfigurationen](/help/sites-developing/extending-cloud-config.md)und [Correspondence Management-Assets](/help/forms/using/cm-overview.md) von dem Format, das in früheren Versionen verwendet wurde, bis zum Format, das in AEM 6.4 Forms verwendet wird. Wenn Sie das Migrationsdienstprogramm ausführen, werden folgende Elemente migriert:
 
 * Benutzerdefiniert Komponenten für adaptive Formulare
 * Adaptive Formulare und Correspondence Management-Vorlagen
@@ -34,7 +34,7 @@ Das Migrationsdienstprogramm konvertiert die [Adaptive Forms Assets](/help/forms
 
 ## Verfahren zur Migration {#approach-to-migration}
 
-Sie können [Upgrade](/help/forms/using/upgrade.md) auf die neueste Version von AEM Forms 6.4 von AEM Forms 6.3 oder 6.2 durchführen oder eine Neuinstallation durchführen. Je nachdem, ob Sie die vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
+Sie können [Upgrade](/help/forms/using/upgrade.md) oder führen Sie eine Neuinstallation durch. Je nachdem, ob Sie die vorherige Installation aktualisiert oder eine Neuinstallation durchgeführt haben, müssen Sie einen der folgenden Schritte ausführen:
 
 **Im Falle eines direkten Upgrades**
 
@@ -44,9 +44,9 @@ Dann müssen Sie die Assets und Dokumente aktualisieren, indem Sie das [Migratio
 
 **Bei nicht ersetzender Installation**
 
-Wenn es sich um eine nicht ersetzende (neue) Installation handelt, müssen Sie das [AEMFD-Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) installieren, bevor Sie die Assets und Dokumente verwenden können (einschließlich Correspondence Management-Kompatibilitätspaket).
+Wenn es sich um eine nicht ersetzende (neue) Installation handelt, müssen Sie die Assets und Dokumente installieren, bevor Sie sie verwenden können. [AEMFD-Kompatibilitätspaket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) (enthält das Correspondence Management-Kompatibilitätspaket).
 
-Anschließend müssen Sie Ihr Asset-Paket (zip oder cmp) in das neue Setup importieren und dann die Assets und Dokumente aktualisieren, indem Sie [das Migrationsdienstprogramm](#runningmigrationutility) ausführen. Aufgrund der [Abwärtskompatibilität-bezogenen](/help/sites-deploying/backward-compatibility.md) Änderungen werden Speicherorte von einigen Ordnern im CRX-Repository geändert. Exportieren und importieren Sie Abhängigkeiten (benutzerdefinierte Bibliotheken und Assets) vom vorherigen Setup in eine neue Umgebung manuell.
+Anschließend müssen Sie Ihr Asset-Paket (ZIP oder CMP) in das neue Setup importieren und dann die Assets und Dokumente aktualisieren, indem Sie [Ausführen des Migrationsdienstprogramms](#runningmigrationutility). Aufgrund der [Abwärtskompatibilität-bezogenen](/help/sites-deploying/backward-compatibility.md) Änderungen werden Speicherorte von einigen Ordnern im CRX-Repository geändert. Exportieren und importieren Sie Abhängigkeiten (benutzerdefinierte Bibliotheken und Assets) vom vorherigen Setup in eine neue Umgebung manuell.
 
 ## Lesen Sie , bevor Sie mit der Migration fortfahren {#prerequisites}
 
@@ -116,16 +116,16 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
    >  * Neue Vorlagen - Vorlagen für adaptive Formulare, die mit dem Vorlageneditor unter /conf erstellt wurden. Das umfasst die Migration von Regeln und Skripten, die mithilfe des Regel-Editors erstellt wurden.
 
 
-   * Um benutzerdefinierte Komponenten des adaptiven Formulars zu migrieren, tippen Sie auf **Migration benutzerdefinierter Forms-Komponenten** und tippen Sie auf der Seite &quot;Migration benutzerdefinierter Komponenten&quot;auf **Migration starten**. Die folgenden Elemente werden migriert:
+   * Um benutzerdefinierte Komponenten für adaptive Formulare zu migrieren, tippen Sie auf **Migration benutzerdefinierter Forms-Komponenten** Tippen Sie auf der Seite &quot;Migration benutzerdefinierter Komponenten&quot;auf **Migration starten**. Die folgenden Elemente werden migriert:
 
       * Benutzerdefinierte Komponenten, die für adaptive Formulare geschrieben wurden
       * Komponentenüberlagerungen, falls vorhanden.
-   * Um Vorlagen für adaptive Formulare zu migrieren, tippen Sie auf **Adaptive Forms-Vorlagenmigration** und tippen Sie auf der Seite &quot;Migration benutzerdefinierter Komponenten&quot;auf **Migration starten**. Die folgenden Elemente werden migriert:
+   * Um adaptive Formularvorlagen zu migrieren, tippen Sie auf **Adaptive Forms-Vorlagenmigration** Tippen Sie auf der Seite &quot;Migration benutzerdefinierter Komponenten&quot;auf **Migration starten**. Die folgenden Elemente werden migriert:
 
       * Die adaptiven Formularvorlagen, die unter /Apps oder /Conf mit dem AEM-Vorlageneditor erstellt wurden.
    * Migrieren Sie die AEM Forms Cloud-Konfigurationsdienste, um das neue kontextbezogene Cloud-Dienst-Paradigma zu nutzen, das die Benutzeroberfläche mit Touch-Funktion (unter/conf) umfasst. Wenn Sie AEM Forms Cloud Configuration Services migrieren, werden die Cloud-Services in /etc nach /conf verschoben. Wenn Sie über keine Cloud-Services-Anpassungen verfügen, die von den veralteten Pfaden (/etc) abhängen, wird empfohlen, das Migrationsdienstprogramm direkt nach dem Upgrade auf 6.4 auszuführen und die Touch-Benutzeroberfläche der Cloud-Konfiguration für weitere Arbeiten zu verwenden. Wenn Sie über Anpassungen für die bereits vorhandene Cloud-Dienste verfügen, setzen Sie die klassische Benutzeroberfläche bei der Aktualisierung fort, bis die Anpassungen für die migrierten Pfaden (/conf) abgeschlossen sind, und führen Sie das Migrationshilfsprogramm aus.
 
-   Um **AEM Forms-Cloud-Services** zu migrieren, die Folgendes enthalten, tippen Sie auf AEM Forms Cloud-Konfigurationsmigration (Cloud-Konfigurationsmigration ist unabhängig vom AEMFD-Kompatibilitätspaket), tippen Sie auf AEM Forms Cloud-Konfigurationsmigration und tippen Sie dann auf der Seite &quot;Konfigurationsmigration&quot;auf **Migration starten**:
+   Zu migrieren **AEM Forms Cloud Services** Tippen Sie auf AEM Forms Cloud-Konfigurationsmigration (die Cloud-Konfigurationsmigration ist unabhängig vom AEMFD-Kompatibilitätspaket), tippen Sie auf AEM Forms Cloud-Konfigurationsmigration und tippen Sie dann auf der Seite &quot;Konfigurationsmigration&quot;auf **Migration starten**:
 
    * Cloud-Dienste für Formulardatenmodell
 

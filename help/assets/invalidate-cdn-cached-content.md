@@ -45,7 +45,7 @@ Siehe auch [Überblick über Caching in Dynamic Media Classic](https://helpx.ado
    Wenn die Vorlage ausschließlich `<ID>` enthält, füllt Dynamic Media die URL `https://<server>/is/image` auf. Dabei steht `<server>` für den Veröffentlichungs-Server-Namen, der in den allgemeinen Einstellungen definiert ist, und &lt;ID> für die Assets, die ungültig gemacht werden sollen.
 
 1. Klicken Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Schließen]**.
-1. Wählen Sie in der Benutzeroberfläche des Dynamic Media Classic-Desktop-Programms ein oder mehrere Assets aus und klicken Sie dann auf **[!UICONTROL Datei > Ungültiges CDN]**. Daraufhin wird eine Liste der URL(s) angezeigt, die anhand der von Ihnen erstellten Vorlage und ausgewählten Assets generiert wurde. Dabei werden die Server-URL-Einträge unter „Veröffentlichungs-Servername“ in den allgemeinen Programmeinstellungen verwendet.
+1. Wählen Sie in der Benutzeroberfläche des Dynamic Media Classic-Desktop-Programms ein oder mehrere Assets aus und klicken Sie auf **[!UICONTROL Datei > Ungültiges CDN]**. Daraufhin wird eine Liste der URL(s) angezeigt, die anhand der von Ihnen erstellten Vorlage und ausgewählten Assets generiert wurde. Dabei werden die Server-URL-Einträge unter „Veröffentlichungs-Servername“ in den allgemeinen Programmeinstellungen verwendet.
 
    Angenommen Sie haben mit der im vorherigen Schritt festgelegten Vorlage für CDN-Invalidierung ein Bild-Asset mit der Bezeichnung `Backpack_B` ausgewählt. Wenn Sie dann auf **[!UICONTROL Datei > Ungültiges CDN]** klicken, wird die folgende URL in der Benutzeroberfläche zur Invalidierung des CDN-Cache generiert:
 

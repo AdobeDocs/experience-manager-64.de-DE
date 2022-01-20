@@ -1,31 +1,31 @@
 ---
 title: NICHT VERÖFFENTLICHEN Erstellen des ersten adaptiven Dokuments
-seo-title: NICHT VERÖFFENTLICHEN Erstellen des ersten adaptiven Dokuments
+seo-title: DO NOT PUBLISH Create your first adaptive document
 description: NICHT VERÖFFENTLICHEN
-seo-description: NICHT VERÖFFENTLICHEN
+seo-description: DO NOT PUBLISH
 page-status-flag: de-activated
 uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '784'
 ht-degree: 16%
 
 ---
 
 
-# NICHT VERÖFFENTLICHEN Erstellen Sie Ihr erstes adaptives Dokument {#do-not-publish-create-your-first-adaptive-document}
+# NICHT VERÖFFENTLICHEN Erstellen des ersten adaptiven Dokuments {#do-not-publish-create-your-first-adaptive-document}
 
-## Nutzungsszenario   {#use-case}
+## Nutzungsszenario {#use-case}
 
 Wir Finance ist ein führendes Unternehmen im Bereich Finanzdienstleistungen, das umfassende und personalisierte Finanzlösungen anbietet, die den Anforderungen verschiedener Kundenprofile gerecht werden.
 
-Eine der Kfz-Versicherungspolicen ihrer Kunden läuft ab und sendet ihr eine interaktive Erinnerung mit einem PDF-Dokument und einem Verlängerungsangebot. Die Mitteilung enthält auch weitere Informationen, wie Loyalitätsbelohnungen und Rabattangebote.
+Eine Kfz-Versicherung läuft ab und sendet ihr eine interaktive Erinnerung mit einer PDF und einem Verlängerungsangebot. Die Mitteilung enthält auch weitere Informationen, wie Loyalitätsbelohnungen und Rabattangebote.
 
 Das Portal wird auf der AEM der Adobe ausgeführt. Die Web- und Print-Willkommenskanalausgabe wird mithilfe der Mehrkanalfunktionen des adaptiven Dokuments erstellt.
 
 Am Ende des Tutorials wird Ihnen ein adaptives Dokument ähnlich dem folgenden angezeigt:
-[ ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf)    [ ![ad-2](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)Das Erstellen Ihres ersten Tutorials für adaptive Dokumente wird in Schritte kategorisiert. Jeder Schritt ist ein vollständiger Artikel an sich.
+[ ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf)    [ ![ad-2](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)Das Erstellen Ihres ersten Tutorials für adaptive Dokumente ist in Schritte kategorisiert. Jeder Schritt ist ein vollständiger Artikel an sich.
 
 <table> 
  <tbody>
@@ -47,8 +47,8 @@ Am Ende des Tutorials wird Ihnen ein adaptives Dokument ähnlich dem folgenden a
      <li>AEM Forms-Add-on installieren. Detaillierte Informationen finden Sie unter <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">Installieren und Konfigurieren von AEM Forms</a>.</li> 
      <li>Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf der SQL-Datenbank und verwenden den Oracle MySQL JDBC-Datenbanktreiber. </li> 
      <li>Richten Sie eine Datenbank mit Kundendaten ein. Eine Datenbank ist für die Erstellung eines adaptiven Dokuments unerlässlich. In diesem Lernprogramm wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM Forms verwendet. </li> 
-     <li>Erstellen/importieren und aktivieren Sie <a href="/help/forms/using/web-channel-print-channel.md">Vorlagen für Druck- und Webkanäle</a>.</li> 
-     <li>Vergewissern Sie sich, dass die <a href="/help/forms/using/document-fragments.md">Dokumentfragmente auf Grundlage des FDM</a> vorhanden sind.</li> 
+     <li>Erstellen/importieren und aktivieren <a href="/help/forms/using/web-channel-print-channel.md">Vorlagen für Druck- und Webkanäle</a>.</li> 
+     <li>Vergewissern Sie sich, dass <a href="/help/forms/using/document-fragments.md">Dokumentfragmente basierend auf dem FDM</a>.</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -56,7 +56,7 @@ Am Ende des Tutorials wird Ihnen ein adaptives Dokument ähnlich dem folgenden a
 
 ## Schritt 1: Erstellen Sie ein Formulardatenmodell {#step-create-form-data-model}
 
-Ein Formulardatenmodell ermöglicht die Verbindung eines adaptiven Dokuments mit unterschiedlichen Datenquellen. Zum Beispiel AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einem adaptiven Dokument verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms Data Integration](/help/forms/using/data-integration.md).
+Ein Formulardatenmodell ermöglicht die Verbindung eines adaptiven Dokuments mit unterschiedlichen Datenquellen. Zum Beispiel AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einem adaptiven Dokument verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
 Ziele:
 
@@ -84,7 +84,7 @@ Ziele:
 
 ## Schritt 3: Regeln auf adaptive Dokumentfelder anwenden (nur Webkanal) {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
 
-Das adaptive Dokument bietet einen Editor zum Schreiben von Regeln für adaptive Dokumentobjekte. Diese Regeln definieren Aktionen zum Trigger von Dokumentobjekten auf der Grundlage von Vorgabebedingungen und Benutzeraktionen für das Dokument. Dies trägt zur Gewährleistung der Genauigkeit und Beschleunigung des Benutzererlebnisses in der Webversion des adaptiven Dokuments bei. Weitere Informationen zu Regeln für adaptive Dokumente und zum Regeleditor finden Sie unter [Regeleditor](/help/forms/using/rule-editor.md).
+Das adaptive Dokument bietet einen Editor zum Schreiben von Regeln für adaptive Dokumentobjekte. Diese Regeln definieren Aktionen zum Trigger von Dokumentobjekten auf der Grundlage von Vorgabebedingungen und Benutzeraktionen für das Dokument. Dies trägt zur Gewährleistung der Genauigkeit und Beschleunigung des Benutzererlebnisses in der Webversion des adaptiven Dokuments bei. Weitere Informationen zu adaptiven Dokumentregeln und zum Regeleditor finden Sie unter [Regeleditor](/help/forms/using/rule-editor.md).
 
 Ziele:
 
@@ -93,7 +93,7 @@ Ziele:
 
 ## Schritt 4: Adaptives Dokument formatieren (nur Webkanal) {#step-style-the-adaptive-document-web-channel-only}
 
-Adaptive Dokumente bieten einen Editor zum Erstellen von Designs für adaptive Dokumente und Inline-Stile. Ein Design enthält Stildetails für Komponenten und Bedienfelder und Sie können ein Design auf Webkanälen verschiedener Dokumente wiederverwenden. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie das Design auf Ihr Dokument anwenden, spiegelt der angegebene Stil die entsprechenden Komponenten des Dokuments wider. Weitere Informationen finden Sie unter [Designanpassung](/help/forms/using/themes.md).
+Adaptive Dokumente bieten einen Editor zum Erstellen von Designs für adaptive Dokumente und Inline-Stile. Ein Design enthält Stildetails für Komponenten und Bedienfelder und Sie können ein Design auf Webkanälen verschiedener Dokumente wiederverwenden. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie das Design auf Ihr Dokument anwenden, spiegelt der angegebene Stil die entsprechenden Komponenten des Dokuments wider. Weitere Informationen finden Sie unter [Designs](/help/forms/using/themes.md).
 
 Ziele:
 

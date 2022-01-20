@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren des Synchronisierungs-Scheduler
-seo-title: Konfigurieren des Synchronisierungs-Scheduler
+seo-title: Configuring the synchronization scheduler
 description: Erfahren Sie mehr dazu, wie Sie Elemente migrieren und synchronisieren, Synchronisierungs-Scheduler konfigurieren und Ordner zum Anordnen von Elementen verwenden können.
-seo-description: Erfahren Sie mehr dazu, wie Sie Elemente migrieren und synchronisieren, Synchronisierungs-Scheduler konfigurieren und Ordner zum Anordnen von Elementen verwenden können.
+seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
 uuid: a6445b45-9c1c-4483-a32e-453648c488c5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 79%
+source-wordcount: '286'
+ht-degree: 77%
 
 ---
 
@@ -25,7 +25,7 @@ Standardmäßig wird der Synchronisierungs-Scheduler alle 3 Minuten ausgeführt
 
 Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisierungs-Scheduler zu ändern:
 
-1. Melden Sie sich bei AEM Configuration Manager an. Die URL von Configuration Manager lautet `https://[Server]:[Port]/lc/system/console/configMgr` .
+1. Melden Sie sich bei AEM Configuration Manager an. Die URL von Configuration Manager lautet `https://[Server]:[Port]/lc/system/console/configMgr`
 
 1. Suchen Sie das Bundle **FormsManagerConfiguration** und öffnen Sie es.
 
@@ -43,7 +43,7 @@ Sie können die Option **Assets aus Repository synchronisieren** verwenden, um d
 
    **Abbildung:** *AEM Forms-Benutzeroberfläche*
 
-1. Klicken Sie in der Symbolleiste auf das Symbol ![aem6forms_sync](assets/aem6forms_sync.png) . Wenn im zuletzt konfigurierten Pfad keine Elemente vorhanden sind, wird das nachfolgende Dialogfeld angezeigt. Klicken Sie auf **Start**, um die Synchronisierung zu starten.
+1. Klicken Sie auf ![aem6forms_sync](assets/aem6forms_sync.png) in der Symbolleiste. Wenn im zuletzt konfigurierten Pfad keine Elemente vorhanden sind, wird das nachfolgende Dialogfeld angezeigt. Klicken Sie auf **Start**, um die Synchronisierung zu starten.
 
    ![Das Dialogfeld „Synchronisierung“](assets/migrate-and-syncronize.png)
 
@@ -53,7 +53,7 @@ Sie können die Option **Assets aus Repository synchronisieren** verwenden, um d
 
 Sie können neue Anwendungen im Workflow Designer (LiveCycle Workbench) erstellen. 
 
-Wenn die neu erstellte Anwendung und ein Ordner unter /content/dam/formsanddocuments identische Namen haben, ist der Fehler &quot;*Ein Asset mit demselben Namen wie diese Anwendung bereits auf der Stammebene vorhanden.*&quot; wird protokolliert.
+Wenn die neu erstellte Anwendung und ein Ordner unter /content/dam/formsanddocuments identische Namen haben, wird ein Fehler angezeigt.*Ein Asset mit demselben Namen wie diese Anwendung existiert bereits auf der Stammebene.*&quot; wird protokolliert.
 
 Benennen Sie zum Beheben des Konflikts die Anwendung um und synchronisieren Sie die Elemente manuell.
 

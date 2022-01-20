@@ -1,8 +1,8 @@
 ---
 title: Integration mit Adobe Sign | Umgang mit Benutzerdaten
-seo-title: Integration mit Adobe Sign | Umgang mit Benutzerdaten
+seo-title: Integration with Adobe Sign | Handling user data
 description: AEM Forms lässt sich in Adobe Sign integrieren, um E-Signatur-Workflows in adaptiven Formularen für die Verarbeitung von Formularen oder Vereinbarungen für Rechts-, Verkaufs-, Lohn- und Personalmanagement-Workflows zu ermöglichen. Detailliertere Informationen zu Benutzerdaten und Datenspeichern sowie zum Zugriff auf und Löschen von Benutzerdaten.
-seo-description: AEM Forms lässt sich in Adobe Sign integrieren, um E-Signatur-Workflows in adaptiven Formularen für die Verarbeitung von Formularen oder Vereinbarungen für Rechts-, Verkaufs-, Lohn- und Personalmanagement-Workflows zu ermöglichen. Detailliertere Informationen zu Benutzerdaten und Datenspeichern sowie zum Zugriff auf und Löschen von Benutzerdaten.
+seo-description: AEM Forms integrates with Adobe Sign to enable e-signature workflows in adaptive forms to process forms or agreements for legal, sales, payroll, human resource management workflows. Dig deeper on user data, data stores, and access and delete user data.
 uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: c2061de7-8627-4595-b96c-aa2d6abffddd
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 84%
+source-wordcount: '363'
+ht-degree: 86%
 
 ---
 
@@ -33,6 +33,6 @@ Das für Adobe Sign aktiviertes adaptives Formular enthält Informationen zu den
 
 Benutzerdaten werden innerhalb der Vereinbarung gesammelt, aber nicht in einer der Servicetabellen gespeichert. Mit Adobe Sign können Administratoren ihre eigenen Entscheidungen bei der Verwaltung von Daten treffen, die sie im Dienst steuern. Datenschutzadministratoren im Adobe Sign-Dienst können Vereinbarungen basierend auf der E-Mail-Adresse eines Anforderers auflisten oder entfernen.
 
-Adobe Sign bietet eine Webanwendung, mit der Teilnehmer nach Vereinbarungen suchen und diese gegebenenfalls löschen können. Weitere Informationen finden Sie unter [Adobe Sign - Funktion: Löschen Sie Benutzerinformationen](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
+Adobe Sign bietet eine Webanwendung, mit der Teilnehmer nach Vereinbarungen suchen und diese gegebenenfalls löschen können. Weitere Informationen finden Sie unter [Adobe Sign - Funktion: Benutzerinformationen löschen](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
 
 Vereinbarungsdaten für adaptive Formulare, die für die Verwendung der Forms-Portal-Sendeaktion konfiguriert sind, werden ebenfalls im Forms-Portal-Datenspeicher gespeichert. Informationen zum Zugreifen auf und Löschen von Daten aus dem Forms-Portal-Datenspeicher finden Sie unter [Forms-Portal | Umgang mit Benutzerdaten](/help/forms/using/forms-portal-handling-user-data.md).

@@ -1,19 +1,19 @@
 ---
 title: Best Practices für MSM
-seo-title: Best Practices für MSM
+seo-title: MSM Best Practices
 description: Hier finden Sie Best Practices für die Einrichtung und Verwendung von AEM MSM (Multi Site Manager) – zusammengestellt von Technik- und Beratungsteams von Adobe.
-seo-description: Hier finden Sie Best Practices für die Einrichtung und Verwendung von AEM MSM (Multi Site Manager) – zusammengestellt von Technik- und Beratungsteams von Adobe.
+seo-description: Find best practices compiled by Adobe engineering and consulting teams to help get up and running with the AEM Multi Site Manager.
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
-feature: Multi-Site-Manager
+feature: Multi Site Manager
 exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
 source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1524'
 ht-degree: 74%
 
 ---
@@ -26,9 +26,9 @@ MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsberei
 
 * **Planen Sie zunächst sorgfältig die Struktur und den Inhaltsfluss**, bevor Sie mit der Implementierung beginnen.
 * **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar ein hohes Maß an Anpassung (z. B. Rollout-Konfigurationen), doch ist es in der Regel die Best Practice für die Leistung, Zuverlässigkeit und Upgrade Ihrer Website, die Anpassung zu minimieren.
-* Etablieren Sie frühzeitig ein **Governance-Modell** und schulen Sie die Benutzer entsprechend. Eine Best Practice aus Governance-Sicht besteht darin, **die Autorität zu minimieren, über die lokale Inhaltsersteller** verfügen, um Inhalte anderen lokalen Benutzern und ihren jeweiligen Live Copies zuzuweisen/zu verbinden. Das liegt daran, dass nicht regulierte verkettete Vererbungen die Komplexität einer MSM-Struktur erheblich erhöhen und ihre Leistung und Zuverlässigkeit beeinträchtigen.
+* Etablieren Sie frühzeitig ein **Governance-Modell** und schulen Sie die Benutzer entsprechend. Eine Best Practice unter Governance-Gesichtspunkten besteht darin, **Minimierung der Autorität, die lokale Inhaltsersteller haben** , um anderen lokalen Benutzern und ihren jeweiligen Live Copies Inhalte zuzuweisen/zu verbinden. Das liegt daran, dass nicht regulierte verkettete Vererbungen die Komplexität einer MSM-Struktur erheblich erhöhen und ihre Leistung und Zuverlässigkeit beeinträchtigen.
 
-* Sobald ein Plan für Ihre Struktur, Inhaltsflüsse, Automatisierung und Governance besteht - **Prototyp und testen Sie Ihr System** gründlich, bevor Sie mit der Live-Implementierung beginnen.
+* Sobald ein Plan für Ihre Struktur, Inhaltsflüsse, Automatisierung und Governance vorhanden ist - **Prototypen erstellen und Ihr System gründlich testen**, bevor Sie die Live-Implementierung starten.
 * **Adobe Consulting und führende Systemintegratoren** sind bestens mit der Planung und Implementierung der Inhaltsautomatisierung mit MSM vertraut und können Sie sowohl bei den ersten Schritten mit Ihrem MSM-Projekt als auch im weiteren Verlauf der Implementierung unterstützen.
 
 >[!NOTE]
@@ -41,7 +41,6 @@ MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsberei
 >
 
 
-
 >[!NOTE]
 >
 >Sie können auch die [Bezugskomponente](/help/sites-authoring/default-components-foundation.md#reference) verwenden, um eine einzelne Seite oder einen Absatz wiederzuverwenden. Bedenken Sie Folgendes:
@@ -52,15 +51,14 @@ MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsberei
 >
 
 
-
 ## Live Copy-Quellen und Blueprint-Konfigurationen {#live-copy-sources-and-blueprint-configurations}
 
 Eine Live Copy kann entweder unter Verwendung [regulärer Seiten](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) oder unter Verwendung einer [Blueprint-Konfiguration](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) erstellt werden. Beide Varianten sind zulässig.
 
 Die Verwendung einer Blueprint-Konfiguration hat allerdings folgende Vorteile:
 
-* Erlauben Sie dem Autor, die Option **Rollout** auf einem Blueprint zu verwenden, um (explizit) Änderungen an Live Copies zu pushen, die von diesem Blueprint erben.
-* Lassen Sie den Autor zu, **Site erstellen** zu verwenden. Dadurch kann der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren.
+* Autor darf die **Rollout** -Option auf einem Blueprint - um (explizit) Änderungen an Live Copies zu pushen, die von diesem Blueprint übernehmen.
+* Autor darf **Site erstellen**; Dadurch kann der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren.
 * Sie definiert eine standardmäßige Rollout-Konfiguration für Live Copies, die über eine Beziehung mit dem Blueprint verfügen.
 
 Ohne Verweis auf eine Blueprint-Konfiguration können Rollouts nur von Live Copies selbst initiiert werden, wobei im Wesentlichen Inhalt aus der Quelle abgerufen wird.
@@ -71,7 +69,7 @@ Wenn Sie eine neue Website mit Live Copy erstellen, empfiehlt es sich, Blueprint
 >
 >CUG-Gruppen können nicht in Live Copies aus Blueprints bereitgestellt werden. Planen Sie dies ein, wenn Sie eine Live Copy konfigurieren.
 
-## Komponenten- und Containersynchronisierung {#components-and-container-synchronization}
+## Komponenten- und Container-Synchronisierung {#components-and-container-synchronization}
 
 Für die Synchronisierung von Komponenten gilt in MSM im Allgemeinen folgende Rollout-Regel:
 
@@ -90,11 +88,11 @@ Um die Schachtelung von Komponenten zu unterstützen, sodass lokal hinzugefügte
 
 Live Copies können mit AEM auf zwei Arten erstellt werden:
 
-* Wenn [eine Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) erstellt wird
+* Wann [Erstellen einer Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
    Dies kann als allgemeinerer Ansatz betrachtet werden, mit dem Sie Live Copies von jeder Seite aus erstellen können. Die Inhaltsstruktur einer Live Copy entspricht exakt der Quelle.
 
-* Wenn [eine Site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) erstellt wird
+* Wann [Erstellen einer Site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
    Dies ist ein speziellerer Ansatz, vor allem für die Erstellung von Websites mit mehrsprachiger Struktur.
 
@@ -102,7 +100,7 @@ Berücksichtigen Sie beim Erstellen einer Website folgende Punkte:
 
 * Für die Erstellung einer neuen Website benötigen Sie eine [Blueprint-Konfiguration](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Um das Auswählen von Sprachpfaden zu ermöglichen, die für eine neue Website erstellt werden sollen, muss der Blueprint (Quelle) die entsprechenden Sprachstämme enthalten.
-* Nachdem eine [neue Site als Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) erstellt wurde (mit **Erstellen** und **Site**), sind die ersten beiden Ebenen dieser Live Copy *flach*. Untergeordnete Elemente der Seite sind nicht Teil der Live-Beziehung, werden bei einem Rollout aber trotzdem berücksichtigt, wenn eine dem Auslöser entsprechende Live-Beziehung gefunden wird.
+* Einmal [neue Site wurde als Live Copy erstellt](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mithilfe von **Erstellen**, dann **Site**), sind die ersten beiden Ebenen dieser Live Copy *flach*. Untergeordnete Elemente der Seite sind nicht Teil der Live-Beziehung, werden bei einem Rollout aber trotzdem berücksichtigt, wenn eine dem Auslöser entsprechende Live-Beziehung gefunden wird.
 
    Dadurch lässt sich Folgendes vermeiden:
 
@@ -123,7 +121,7 @@ MSM kann Sie auf zwei Arten beim Erstellen mehrsprachiger Websites unterstützen
 
          Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
 
-      * Eine Alternative für die Erstellung und Übersetzung von Sprach-Mastern ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
+      * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
 
 * Beim Rollout von Inhalt auf der Grundlage von Sprach-Mastern
 
@@ -135,11 +133,11 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 Änderungen an der Inhaltsstruktur in einem Blueprint/einer Quellstruktur werden in einer Live Copy unterschiedlich umgesetzt. Dies ist abhängig von der Art der Änderung:
 
-* **** Das Erstellen neuer Seiten in einem Blueprint führt dazu, dass entsprechende Seiten in Live Copies nach dem Rollout mit der standardmäßigen Rollout-Konfiguration erstellt werden.
+* **Erstellen** Neue Seiten in einem Blueprint führen dazu, dass entsprechende Seiten in Live Copies nach dem Rollout mit der standardmäßigen Rollout-Konfiguration erstellt werden.
 
-* **** Das Löschen von Seiten in einem Blueprint führt dazu, dass die entsprechenden Seiten nach dem Rollout mit der standardmäßigen Rollout-Konfiguration aus den Live Copies gelöscht werden.
+* **Löschen** Seiten in einem Blueprint führen dazu, dass entsprechende Seiten nach dem Rollout mit der standardmäßigen Rollout-Konfiguration aus Live Copies gelöscht werden.
 
-* **** Das Verschieben von Seiten in einen Blueprint führt  **** nicht dazu, dass entsprechende Seiten nach dem Rollout mit standardmäßiger Rollout-Konfiguration in Live Copies verschoben werden:
+* **Verschieben** Seiten in einem Blueprint **not** führt dazu, dass entsprechende Seiten nach dem Rollout mit der standardmäßigen Rollout-Konfiguration in Live Copies verschoben werden:
 
    * Der Grund hierfür ist, dass eine Seitenverschiebung implizit eine Seitenlöschung beinhaltet. Dies kann bei der Veröffentlichung zu unerwartetem Verhalten führen, da das Löschen von Seiten im Rahmen der Bearbeitung zur Folge hat, dass der entsprechende Inhalt bei der Veröffentlichung automatisch deaktiviert wird. Dies kann sich wiederum auch auf verwandte Elemente wie etwa Links und Lesezeichen auswirken.
    * Die Inhaltsvererbung der jeweiligen Live Copy-Seiten wird aktualisiert, um den neuen Ort ihrer Quellen im Blueprint widerzuspiegeln.
@@ -147,7 +145,7 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 >[!NOTE]
 >
->Dies funktioniert nur mit dem Trigger [Bei Rollout](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
+>Dies funktioniert nur mit dem [Bei Rollout-Trigger](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
 
 * Erstellen Sie eine benutzerdefinierte Rollout-Konfiguration:
 
@@ -175,7 +173,7 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 Die Rollout-Konfigurationen von MSM sind in hohem Maße anpassbar. Beachten Sie, dass die Automatisierung von Rollouts weitreichende Folgen haben kann. Aus diesem Grund sollte unter anderem den folgenden Schritten eine *sehr* sorgfältige Planung vorausgehen:
 
-* Automatisierung von Rollouts; Beispielsweise mit [onModify-Triggern](#onmodify),
+* Automatisierung von Rollouts; zum Beispiel mit [onModify-Trigger](#onmodify),
 * Anpassen von [Knotentypen/-eigenschaften](#node-types-properties)
 * Starten nachfolgender Workflows,
 * und/oder die Aktivierung von Inhalten im Rahmen von Rollouts.
@@ -193,7 +191,7 @@ Beachten Sie bei Verwendung des [Rollout-Auslösers](/help/sites-administering/m
 
 * Die Verwendung einer solchen Rollout-Konfiguration kann im Falle von parallelen Aktualisierungen derselben Ressource zu Bestätigungskonflikten führen.
 
-Daher wird empfohlen, *nur* `onModify`-Trigger zu verwenden, wenn die Vorteile des automatischen Rollout-Starts gegenüber möglichen Leistungsproblemen überwiegen.
+Daher wird empfohlen, dass Sie *only* use `onModify` Trigger, wenn die Vorteile des automatischen Rollout-Starts mögliche Leistungsprobleme überwiegen.
 
 ### Knotentypen/-eigenschaften {#node-types-properties}
 

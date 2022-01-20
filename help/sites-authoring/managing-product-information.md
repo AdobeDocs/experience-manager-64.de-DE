@@ -1,8 +1,8 @@
 ---
 title: Creative Project und PIM-Integration
-seo-title: Creative Project und PIM-Integration
+seo-title: Creative Project and PIM Integration
 description: Creative Project optimiert den gesamten Fotoaufnahme-Workflow, einschließlich Generierung einer Fotoshooting-Anfrage, Hochladen eines Fotoshootings, Zusammenarbeit bei einem Fotoshooting und Verpackung von bestätigten Assets
-seo-description: Creative Project optimiert den gesamten Fotoaufnahme-Workflow, einschließlich Generierung einer Fotoshooting-Anfrage, Hochladen eines Fotoshootings, Zusammenarbeit bei einem Fotoshooting und Verpackung von bestätigten Assets
+seo-description: Creative Project streamlines the entire photo shoot workflow that including generating a photo shoot request, uploading a photo shoot, collaborating on a photo shoot, and packaging approved assets
 uuid: 09f27d36-e725-45cb-88d1-27383aedceed
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: b477d6ab-126a-489a-a13f-2b6f439ab85b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3013'
+source-wordcount: '2980'
 ht-degree: 68%
 
 ---
@@ -32,7 +32,7 @@ Insbesondere können Sie Creative Project zur Optimierung der folgenden Aufgaben
 >
 >Informationen zur Zuweisung von Benutzerrollen und Workflows zu bestimmen Benutzertypen finden Sie unter [Informationen zu Projekt-Benutzerrollen](/help/sites-authoring/projects.md#user-roles-in-a-project).
 
-## Erkunden von Workflows für Produkt-Fotoshootings   {#exploring-product-photo-shoot-workflows}
+## Erkunden von Workflows für Produkt-Fotoshootings  {#exploring-product-photo-shoot-workflows}
 
 Creative Project bietet mehrere Projektvorlagen, die unterschiedlichen Projektanforderungen gerecht werden. Die Vorlage &quot;Projekt für Produkt-Fotoshooting&quot;ist standardmäßig verfügbar. Diese Vorlage stellt Fotoshooting-Workflows bereit, mit denen Sie Anfragen für Produkt-Fotoshootings einleiten und verwalten können. Sie enthält darüber hinaus eine Reihe von Aufgaben, die es Ihnen ermöglichen, digitale Bilder für Produkte anhand geeigneter Bewertungs- und Bestätigungsabläufe zu erhalten.
 
@@ -45,9 +45,9 @@ Die Vorlage beinhaltet die folgenden Workflows:
 >
 >Die CSV-Datei, die in der Aufgabe „Aufnahmenliste hochladen“ des Workflows „Produkt-Fotoshooting“ hochgeladen wird, sollte den Namen „shotlist.csv“ haben.
 
-## Erstellen eines Projekts für Produkt-Fotoshootings  {#create-a-product-photo-shoot-project}
+## Erstellen eines Projekts für Produkt-Fotoshootings {#create-a-product-photo-shoot-project}
 
-1. Tippen/klicken Sie in der Konsole **Projekte** auf **Erstellen** und wählen Sie dann **Projekt erstellen** aus der Liste aus.
+1. Im **Projekte** Konsole, tippen/klicken **Erstellen** und wählen Sie dann **Projekt erstellen** aus der Liste.
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
 
@@ -60,7 +60,7 @@ Die Vorlage beinhaltet die folgenden Workflows:
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 1. Tippen oder klicken Sie auf **Erstellen**. Eine Bestätigungsmeldung informiert Sie, dass das Projekt erstellt wurde.
-1. Tippen/klicken Sie auf **Fertig** , um zur Konsole **Projekte** zurückzukehren. Tippen oder klicken Sie alternativ auf **Öffnen** , um die Assets im Fotoshooting-Projekt anzuzeigen.
+1. Tippen/klicken **Fertig** , um zur **Projekte** Konsole. Tippen/klicken Sie alternativ auf **Öffnen** , um die Assets im Fotoshooting-Projekt anzuzeigen.
 
 ## Beginn der Arbeit an einem Projekt für Produkt-Fotoshooting {#starting-work-in-a-product-photo-shoot-project}
 
@@ -101,7 +101,7 @@ Beide Workflows umfassen Schritte zur Verknüpfung von Produkten mit ihren best�
 * Starten eines Projekt-Workflows: Erläutert, wie ein Produkt-Fotoshooting gestartet wird
 * Workflow-Aufgabendetails: Stellt Details von Aufgaben bereit, die im Workflow zur Verfügung stehen
 
-## Verfolgen des Projektfortschritts    {#tracking-project-progress}
+## Verfolgen des Projektfortschritts {#tracking-project-progress}
 
 Sie können den Fortschritt eines Projekts verfolgen, indem Sie die aktiven/abgeschlossenen Aufgaben im Projekt überwachen.
 
@@ -130,12 +130,12 @@ Diese Aufgabe schließt die Zuweisung von Workflow-Schritten zu Benutzern auf Gr
 
 So konfigurieren Sie den Workflow **Produkt-Fotoshooting**:
 
-1. Navigieren Sie zu **Tools** > **Workflows** und tippen Sie dann auf die Kachel **Modelle** , um die Seite **Workflow-Modelle** zu öffnen.
-1. Wählen Sie den Workflow **Produkt-Fotoshooting** aus und tippen Sie in der Symbolleiste auf das Symbol **Bearbeiten** , um ihn im Bearbeitungsmodus zu öffnen.
+1. Navigieren Sie zu **Instrumente** > **Workflows** und tippen Sie dann auf **Modelle** -Kachel zum Öffnen **Workflow-Modelle** Seite.
+1. Wählen Sie die **Produkt-Fotoshooting** und tippen Sie auf **Bearbeiten** in der Symbolleiste, um sie im Bearbeitungsmodus zu öffnen.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
-1. Öffnen Sie auf der Seite **Workflow für Produkt-Fotoshooting** eine Projektaufgabe. Öffnen Sie z. B. die Aufgabe **Aufnahmenliste hochladen**.
+1. Im **Workflow für Produkt-Fotoshooting** Seite, öffnen Sie eine Projektaufgabe. Öffnen Sie z. B. die Aufgabe **Aufnahmenliste hochladen**.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -156,14 +156,14 @@ So konfigurieren Sie den Workflow **Produkt-Fotoshooting**:
    * Fotoshooting-Bewertung
    * In Produktion verschieben
 
-   Führen Sie ein ähnliches Verfahren aus, um die Aufgaben im Workflow **Produkt-Fotoshooting (Commerce-Integration)** zu konfigurieren.
+   Führen Sie ein ähnliches Verfahren aus, um die Aufgaben im **Workflow &quot;Produkt-Fotoshooting (Commerce-Integration)&quot;**.
 
 In diesem Abschnitt wird beschrieben, wie das Produktinformationsmanagement in Ihr Creative-Projekt integriert wird.
 
-## Starten eines Projekt-Workflows  {#starting-a-project-workflow}
+## Starten eines Projekt-Workflows {#starting-a-project-workflow}
 
-1. Navigieren Sie zu einem Projekt mit einem Produkt-Fotoshooting und tippen/klicken Sie auf das Symbol **Arbeit hinzufügen** auf der Karte **Workflows** .
-1. Wählen Sie die Workflow-Karte **Produkt-Fotoshooting (Commerce-Integration)** aus, um den entsprechenden Workflow zu starten. Wenn die Produktinformationen nicht unter /etc/commerce verfügbar sind, wählen Sie den Workflow **Produkt-Fotoshooting** aus und starten Sie den Workflow Produkt-Fotoshooting .
+1. Navigieren Sie zu einem Projekt mit einem Produkt-Fotoshooting und tippen/klicken Sie auf das **Arbeit hinzufügen** auf **Workflows** Karte.
+1. Wählen Sie die Workflow-Karte **Produkt-Fotoshooting (Commerce-Integration)** aus, um den entsprechenden Workflow zu starten. Wenn die Produktinformationen nicht unter /etc/commerce verfügbar sind, wählen Sie die **Produkt-Fotoshooting** und starten Sie den Workflow Produkt-Fotoshooting .
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
@@ -180,15 +180,15 @@ In diesem Abschnitt wird beschrieben, wie das Produktinformationsmanagement in I
 
 Der Fotoshooting-Workflow umfasst mehrere Aufgaben. Jede Aufgabe wird auf Grundlage der für die Aufgabe definierten Konfiguration einer Benutzergruppe zugewiesen.
 
-#### Aufnahmenlistenaufgabe erstellen  {#create-shot-list-task}
+#### Aufnahmenlistenaufgabe erstellen {#create-shot-list-task}
 
 Die Aufgabe **Aufnahmenliste erstellen** ermöglicht dem Projekteigentümer die Auswahl von Produkten, für die Bilder benötigt werden. Je nach vom Benutzer ausgewählter Option wird eine CSV-Datei generiert, die grundlegende Produktinformationen enthält.
 
-1. Tippen oder klicken Sie im Projektordner auf die Auslassungszeichen in der [Aufgabenkarte](#tracking-project-progress), um das Aufgabenelement im Workflow anzuzeigen.
+1. Tippen oder klicken Sie im Projektordner auf die Auslassungspunkte im [Aufgabenkarte](#tracking-project-progress) , um das Aufgabenelement im Workflow anzuzeigen.
 
    ![chlimage_1-143](assets/chlimage_1-143.png)
 
-1. Wählen Sie die Aufgabe **Aufnahmenliste erstellen** aus und tippen/klicken Sie dann in der Symbolleiste auf das Symbol **Öffnen** .
+1. Wählen Sie die **Aufnahmenliste erstellen** und tippen/klicken Sie dann auf die **Öffnen** in der Symbolleiste.
 
    ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -200,7 +200,7 @@ Die Aufgabe **Aufnahmenliste erstellen** ermöglicht dem Projekteigentümer die 
 
    ![chlimage_1-146](assets/chlimage_1-146.png)
 
-1. Tippen/klicken Sie auf das Symbol **Zur Aufnahmenliste hinzufügen** , um eine CSV-Datei zu erstellen, die eine Liste all dieser Produkte enthält. Eine Meldung betätigt, dass die Aufnahmenliste für die ausgewählten Produkte erstellt wird. Klicken Sie auf **Schließen**, um den Workflow abzuschließen.
+1. Tippen/klicken Sie auf **Zur Aufnahmenliste hinzufügen** -Symbol, um eine CSV-Datei zu erstellen, die eine Liste all dieser Produkte enthält. Eine Meldung betätigt, dass die Aufnahmenliste für die ausgewählten Produkte erstellt wird. Klicken Sie auf **Schließen**, um den Workflow abzuschließen.
 1. Nach dem Erstellen einer Aufnahmenliste wird der Link **Aufnahmenliste anzeigen** angezeigt. Um weitere Produkte zur Aufnahmenliste hinzuzufügen, tippen/klicken Sie auf **Zur Aufnahmenliste hinzufügen**. In diesem Fall werden die Daten an die anfangs erstellte Aufnahmenliste angehängt.
 
    ![chlimage_1-147](assets/chlimage_1-147.png)
@@ -209,13 +209,13 @@ Die Aufgabe **Aufnahmenliste erstellen** ermöglicht dem Projekteigentümer die 
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
-   Um die vorhandenen Daten zu bearbeiten oder neue Daten hinzuzufügen, tippen/klicken Sie in der Symbolleiste auf **Bearbeiten**. Nur die Felder **Produkt **und **Beschreibung** können bearbeitet werden.
+   Um die vorhandenen Daten zu bearbeiten oder neue Daten hinzuzufügen, tippen/klicken Sie in der Symbolleiste auf **Bearbeiten**. Nur das **Produkt **und **Beschreibung** -Felder können bearbeitet werden.
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
-   Tippen oder klicken Sie nach dem Aktualisieren der Datei in der Symbolleiste auf **Speichern**, um die Datei zu speichern.
+   Tippen/klicken Sie nach dem Aktualisieren der Datei auf **Speichern** in der Symbolleiste, um die Datei zu speichern.
 
-1. Tippen oder klicken Sie nach dem Hinzufügen der Produkte auf das Symbol **Complete** auf der Seite &quot;Aufnahmenliste erstellen&quot;, um die Aufgabe als abgeschlossen zu markieren. Sie können wahlweise einen Kommentar hinzufügen.
+1. Tippen/klicken Sie nach dem Hinzufügen der Produkte auf das **Fertig** auf der Seite &quot;Aufnahmenliste erstellen&quot;angezeigt, um die Aufgabe als abgeschlossen zu markieren. Sie können wahlweise einen Kommentar hinzufügen.
 
    Durch Abschluss der Aufgabe werden die folgenden Änderungen innerhalb des Projekts eingeführt:
 
@@ -225,7 +225,7 @@ Die Aufgabe **Aufnahmenliste erstellen** ermöglicht dem Projekteigentümer die 
 
    Für den Workflow „Produkt-Fotoshooting“ (ohne Commerce-Integration) ist „Aufnahmenliste hochladen“ die erste Aufgabe. Tippen/klicken Sie auf **Aufnahmenliste hochladen**, um eine Datei mit dem Namen **shotlist.csv** hochzuladen. Die CSV-Datei sollte die Produkt-ID enthalten. Die anderen Felder sind optional. Sie können sie für die Zuordnung von Assets zu Produkten verwenden.
 
-### Aufnahmenlistenaufgabe hochladen  {#upload-shot-list-task}
+### Aufnahmenlistenaufgabe hochladen {#upload-shot-list-task}
 
 Diese Aufgabe ist Teil des Produkt-Fotoshooting-Workflows. Diese Aufgabe führen Sie aus, wenn in AEM keine Produktinformationen verfügbar sind. In diesem Fall laden Sie eine Liste von Produkten in einer CSV-Datei hoch, für die Bild-Assets erforderlich sind. Basierend auf den Details in der CSV-Datei ordnen Sie Bild-Assets den Produkten zu.
 
@@ -237,52 +237,52 @@ Ein Produkt kann zu einer bestimmten Kategorie gehören. Die Produktkategorie ka
 
 >[!NOTE]
 >
->Der Name der Bilder, die hochgeladen werden sollen, sollte mit &quot;**&lt;ProductId>_&quot;** beginnen, wobei die Produkt-ID aus dem Feld **Id** in der Datei *shotlist.csv* referenziert wird. Beispielsweise können Sie für ein Produkt in der Aufnahmenliste mit **Id 397122** Dateien mit den Namen **397122_highcontrast.jpg**, **397122_lowlight.png** und auf.
+>Der Name der hochzuladenden Bilder sollte mit &quot;**&lt;productid>_&quot;** wobei die Produkt-ID über die **ID** im Feld *shotlist.csv* -Datei. Beispielsweise für ein Produkt in der Aufnahmenliste mit **Id 397122** können Sie Dateien mit Namen hochladen **397122_highcontrast.jpg**, **397122_lowlight.png** usw.
 
-1. Tippen oder klicken Sie im Projektordner auf die Auslassungspunkte in der [Aufgabenkarte](#tracking-project-progress), um die Liste der Aufgaben im Workflow anzuzeigen.
-1. Wählen Sie die Aufgabe **Aufnahmenliste hochladen** aus und tippen/klicken Sie dann in der Symbolleiste auf das Symbol **Öffnen** .
+1. Tippen oder klicken Sie im Projektordner auf die Auslassungspunkte im [Aufgabenkarte](#tracking-project-progress) um die Liste der Aufgaben im Workflow anzuzeigen.
+1. Wählen Sie die **Aufnahmenliste hochladen** und tippen/klicken Sie dann auf die **Öffnen** in der Symbolleiste.
 
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
-1. Überprüfen Sie die Aufgabendetails und tippen/klicken Sie dann auf die Schaltfläche **Aufnahmenliste hochladen** .
+1. Überprüfen Sie die Aufgabendetails und tippen/klicken Sie dann auf die **Aufnahmenliste hochladen** Schaltfläche.
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Tippen/klicken Sie auf die Schaltfläche **Aufnahmenliste hochladen** , um die CSV-Datei mit dem Dateinamen shotlist.csv hochzuladen. Der Workflow erkennt diese Datei als eine Quelle, die zum Extrahieren von Produktdaten für die nächste Aufgabe verwendet werden kann.
+1. Tippen/klicken Sie auf **Aufnahmenliste hochladen** Schaltfläche zum Hochladen der CSV-Datei mit dem Dateinamen shotlist.csv. Der Workflow erkennt diese Datei als eine Quelle, die zum Extrahieren von Produktdaten für die nächste Aufgabe verwendet werden kann.
 1. Laden Sie eine CSV-Datei hoch, die Produktinformationen im entsprechenden Format enthält. Der Link &quot;Hochgeladene Assets anzeigen&quot;wird unter der Karte angezeigt, nachdem die CSV-Datei hochgeladen wurde.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
    Klicken Sie auf das Symbol **Fertig stellen**, um diese Aufgabe abzuschließen.
 
-1. Tippen/klicken Sie auf das Symbol **Complete** , um die Aufgabe abzuschließen.
+1. Tippen/klicken Sie auf **Fertig** -Symbol, um die Aufgabe abzuschließen.
 
-### Aufgabe „Fotoshooting hochladen“{#upload-photo-shoot-task}
+### Aufgabe „Fotoshooting hochladen“ {#upload-photo-shoot-task}
 
-Als Editor können Sie Aufnahmen für die Produkte hochladen, die in der Datei **shotlist.csv** aufgeführt sind, die in der vorherigen Aufgabe erstellt oder hochgeladen wurde.
+Wenn Sie Bearbeiter sind, können Sie Aufnahmen für die Produkte hochladen, die im **shotlist.csv** -Datei, die in der vorherigen Aufgabe erstellt oder hochgeladen wurde.
 
-Der Name der Bilder, die hochgeladen werden sollen, sollte mit **&quot;&lt;productId>_&quot;** beginnen, wobei die Produkt-ID aus dem Feld **Id** in der Datei **shotlist.csv** referenziert wird. Beispiel: Für ein Produkt mit der **ID 397122** in der Aufnahmenliste können Sie Dateien mit den Namen **397122_highcontrast.jpg**,**397122_lowlight.png** usw. hochladen.
+Der Name der Bilder, die hochgeladen werden sollen, sollte mit **&quot;&lt;productid>_&quot;** wobei die Produkt-ID über die **ID** im Feld **shotlist.csv** -Datei. Beispiel: Für ein Produkt mit der **ID 397122** in der Aufnahmenliste können Sie Dateien mit den Namen **397122_highcontrast.jpg**,**397122_lowlight.png** usw. hochladen.
 
 Sie können entweder die Bilder direkt hochladen oder eine ZIP-Datei hochladen, die die Bilder enthält. Basierend auf ihren Namen werden die Bilder in entsprechenden Produktordnern innerhalb des Ordners **Fotoshooting** abgelegt.
 
-1. Tippen oder klicken Sie unter dem Projektordner auf die Auslassungspunkte im Ordner [Task Card](#tracking-project-progress), um das Aufgabenelement im Workflow anzuzeigen.
-1. Wählen Sie die Aufgabe **Fotoshooting** hochladen aus und tippen/klicken Sie dann in der Symbolleiste auf das Symbol **Öffnen** .
+1. Tippen/klicken Sie unter dem Projektordner auf die Auslassungspunkte im [Aufgabenkarte](#tracking-project-progress) , um das Aufgabenelement im Workflow anzuzeigen.
+1. Wählen Sie die **Fotoshooting hochladen** und tippen/klicken Sie dann auf die **Öffnen** in der Symbolleiste.
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
 1. Tippen/klicken Sie auf &quot;Fotoshooting hochladen&quot;und laden Sie die Fotoshooting-Bilder hoch.
 1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **Fertig stellen**, um die Aufgabe abzuschließen.
 
-### Aufgabe „Fotoaufnahme retuschieren“  {#retouch-photo-shoot-task}
+### Aufgabe „Fotoaufnahme retuschieren“ {#retouch-photo-shoot-task}
 
 Wenn Sie Bearbeitungsrechte haben, führen Sie die Aufgabe „Fotoaufnahme retuschieren“ aus, um die in den Ordner „Fotoshooting“ hochgeladenen Bilder zu bearbeiten.
 
-1. Tippen oder klicken Sie unter dem Projektordner auf die Auslassungspunkte im Ordner [Task Card](#tracking-project-progress), um das Aufgabenelement im Workflow anzuzeigen.
-1. Wählen Sie die Aufgabe **Fotoaufnahme retuschieren** aus und tippen/klicken Sie dann in der Symbolleiste auf das Symbol **Öffnen** .
+1. Tippen/klicken Sie unter dem Projektordner auf die Auslassungspunkte im [Aufgabenkarte](#tracking-project-progress) , um das Aufgabenelement im Workflow anzuzeigen.
+1. Wählen Sie die **Fotoaufnahme retuschieren** und tippen/klicken Sie dann auf die **Öffnen** in der Symbolleiste.
 
    ![chlimage_1-154](assets/chlimage_1-154.png)
 
-1. Tippen/klicken Sie auf den Link **Hochgeladene Assets anzeigen** auf der Seite **Fotoshooting wiederholen** , um die hochgeladenen Bilder zu durchsuchen.
+1. Tippen/klicken Sie auf **Hochgeladene Assets anzeigen** im **Fotoaufnahme retuschieren** Seite, um die hochgeladenen Bilder zu durchsuchen.
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -292,16 +292,16 @@ Wenn Sie Bearbeitungsrechte haben, führen Sie die Aufgabe „Fotoaufnahme retus
 
 1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **Fertig stellen**, um die Aufgabe abzuschließen.
 
-### Aufgabe „Überprüfen und bestätigen“{#review-and-approve-task}
+### Aufgabe „Überprüfen und bestätigen“ {#review-and-approve-task}
 
 In dieser Aufgabe prüfen Sie die Fotoaufnahmen, die von einem Fotografen hochgeladen wurden, und markieren die Aufnahmen als für die Nutzung freigegeben.
 
-1. Tippen oder klicken Sie unter dem Projektordner auf die Auslassungspunkte im Ordner [Task Card](#tracking-project-progress), um das Aufgabenelement im Workflow anzuzeigen.
-1. Wählen Sie die Aufgabe **Überprüfen und genehmigen** aus und tippen/klicken Sie dann in der Symbolleiste auf das Symbol **Öffnen** .
+1. Tippen/klicken Sie unter dem Projektordner auf die Auslassungspunkte im [Aufgabenkarte](#tracking-project-progress) , um das Aufgabenelement im Workflow anzuzeigen.
+1. Wählen Sie die **Überprüfen und genehmigen** und tippen/klicken Sie dann auf die **Öffnen** in der Symbolleiste.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Weisen Sie auf der Seite **Überprüfen und Genehmigen** die Prüfungsaufgabe einer Rolle zu, z. B. &quot;Prüfer&quot;, und tippen/klicken Sie dann auf &quot;Überprüfen&quot;, um mit der Überprüfung der hochgeladenen Produktbilder zu beginnen.
+1. Im **Überprüfen und genehmigen** , weisen Sie die Überprüfungsaufgabe einer Rolle zu, z. B. &quot;Überprüfer&quot;, und tippen/klicken Sie dann auf &quot;Überprüfen&quot;, um mit der Überprüfung der hochgeladenen Produktbilder zu beginnen.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -325,12 +325,12 @@ Creative Project verbindet bestätigte Assets mit dem referenzierten Produkt. Di
 >[!NOTE]
 Im Workflow „Produkt-Fotoshooting“ (ohne Commerce-Integration) sind die bestätigten Bilder mit keinen Produkten verbunden.
 
-### Zu Produktionsaufgabe wechseln  {#move-to-production-task}
+### Zu Produktionsaufgabe wechseln {#move-to-production-task}
 
 Mit dieser Aufgabe werden die bestätigten Assets in den produktionsbereiten Ordner verschoben, damit sie verwendet werden können.
 
-1. Tippen oder klicken Sie unter dem Projektordner auf die Auslassungspunkte im Ordner [Task Card](#tracking-project-progress), um das Aufgabenelement im Workflow anzuzeigen.
-1. Wählen Sie die Aufgabe **Zur Produktion wechseln** aus und tippen/klicken Sie dann in der Symbolleiste auf das Symbol **Öffnen** .
+1. Tippen/klicken Sie unter dem Projektordner auf die Auslassungspunkte im [Aufgabenkarte](#tracking-project-progress) , um das Aufgabenelement im Workflow anzuzeigen.
+1. Wählen Sie die **Zur Produktion wechseln** und tippen/klicken Sie dann auf die **Öffnen** in der Symbolleiste.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -338,15 +338,15 @@ Mit dieser Aufgabe werden die bestätigten Assets in den produktionsbereiten Ord
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
-1. Geben Sie den Pfad des produktionsbereiten Ordners im Feld **Verschieben nach** ein.
+1. Geben Sie den Pfad des Ordners für produktionsbereite Dateien im **Verschieben nach** -Feld.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-   Tippen/klicken Sie auf **Zur Produktion wechseln**. Schließen Sie die Bestätigungsmeldung. Die Assets werden in den angegebenen Pfad verschoben und es wird automatisch ein Rotationsset für die bestätigten Assets für jedes Produkt basierend auf der Ordnerhierarchie erstellt.
+   Tippen/klicken **Zur Produktion wechseln**. Schließen Sie die Bestätigungsmeldung. Die Assets werden in den angegebenen Pfad verschoben und es wird automatisch ein Rotationsset für die bestätigten Assets für jedes Produkt basierend auf der Ordnerhierarchie erstellt.
 
 1. Tippen/klicken Sie in der Symbolleiste auf das Symbol **Fertig stellen**. Der Workflow wird mit Kennzeichnung des letzten Schritts als fertig gestellt abgeschlossen.
 
-## Anzeigen von DAM-Asset-Metadaten  {#viewing-dam-asset-metadata}
+## Anzeigen von DAM-Asset-Metadaten {#viewing-dam-asset-metadata}
 
 Nach erfolgter Bestätigung werden die Assets mit den entsprechenden Produkten verknüpft. Die [Eigenschaftenseite](/help/assets/managing-assets-touch-ui.md#editing-properties) der bestätigten Assets weist nunmehr die zusätzliche Registerkarte **Produktdaten** (verknüpfte Produktinformationen) auf. Auf dieser Registerkarte werden die Produktdetails, SKU-Nummer und weitere produktbezogene Details angezeigt, die das Asset verknüpfen. Tippen/klicken Sie auf das Symbol **Bearbeiten**, um die Eigenschaften eines Assets zu aktualisieren. Die produktbezogenen Informationen sind stets schreibgeschützt.
 
@@ -356,13 +356,13 @@ Klicken Sie auf den angezeigten Link, um zur entsprechenden Produktdetailseite i
 
 Sie können die Workflows für Projekt-Fotoshootings je nach Anforderung anpassen. Dies ist eine optionale rollenbasierte Aufgabe, die zum Festlegen des Werts einer Variablen innerhalb des Projekts durchgeführt wird. Sie können danach den konfigurierten Wert zur Entscheidungsfindung heranziehen.
 
-1. Klicken/tippen Sie auf das AEM-Logo und navigieren Sie zu **Tools** > **Workflow** > **Modelle**, um die Seite &quot;Workflow-Modelle&quot;zu öffnen.
+1. Klicken/tippen Sie auf das AEM und navigieren Sie dann zu **Instrumente** > **Workflow** > **Modelle** , um die Seite &quot;Workflow-Modelle&quot;zu öffnen.
 1. Wählen Sie den Workflow **Produkt-Fotoshooting (Commerce-Integration)** oder **Produkt-Fotoshooting** aus und klicken/tippen Sie in der Symbolleiste auf **Bearbeiten**, um den Workflow im Bearbeitungsmodus zu öffnen.
 1. Öffnen Sie die Aufgaben **Projekte** im Sidekick und ziehen Sie den Schritt **Rollenbasierte Projektaufgabe erstellen** in den Workflow.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Öffnen Sie den Schritt **Rollenbasierte Aufgabe** .
+1. Öffnen Sie die **Rollenbasierte Aufgabe** Schritt.
 1. Geben Sie auf der Registerkarte **Aufgabe** einen Namen für die Aufgabe ein, der in der Liste **Aufgabe** angezeigt wird. Sie können die Aufgabe auch einer Rolle zuweisen, die Standardpriorität festlegen, eine Beschreibung angeben und einen Zeitpunkt angeben, zu dem die Aufgabe fällig ist.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
@@ -374,9 +374,9 @@ Sie können die Workflows für Projekt-Fotoshootings je nach Anforderung anpasse
 1. Klicken Sie nach dem Hinzufügen der Optionen auf **OK** , um die Änderungen zum Schritt hinzuzufügen.
 
    >[!NOTE]
-   Durch Tippen/Klicken auf **OK** werden die Änderungen im Workflow nicht gespeichert. Tippen/klicken Sie zum Speichern der Änderungen im Workflow auf **Speichern**.
+   Tippen/Klicken **OK** speichert die Änderungen nicht im Workflow. Tippen/klicken Sie zum Speichern der Änderungen im Workflow auf **Speichern**.
 
-1. Öffnen Sie die Aufgaben **Workflow** aus dem Sidekick und fügen Sie eine Aufgabe **Gehe zu** hinzu.
+1. Öffnen Sie die **Workflow** Aufgaben aus dem Sidekick und fügen Sie eine **Goto** Aufgabe.
 1. Öffnen Sie die Aufgabe **Gehe zu** und tippen/klicken Sie auf die Registerkarte **Prozess**.
 1. Geben Sie den folgenden Code im Feld **Skript** an:
 
@@ -407,11 +407,11 @@ Weitere Informationen zur Skripterstellung in Workflow-Schritten finden Sie unte
 
 1. Tippen/klicken Sie auf **OK**.
 
-1. Tippen/klicken Sie auf **Speichern**, um den Workflow zu speichern.
+1. Tippen/klicken **Speichern** , um den Workflow zu speichern.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Eine neue Aufgabe zur Projekteigentümerakzeptanz wird nun ausgeführt, nachdem die [Aufgabe &quot;Zur Produktion wechseln](#move-to-production-task)&quot;abgeschlossen und dem Eigentümer zugewiesen wurde.
+1. Nach der [Zur Produktionsaufgabe wechseln](#move-to-production-task) ist abgeschlossen und wird dem Eigentümer zugewiesen.
 
    Der Benutzer mit der Eigentümerrolle kann die Aufgabe abschließen und eine Aktion (in der Liste der in den Workflow-Schrittkonfigurationen hinzugefügten Aktionen) in der Liste im Kommentar-Popup auswählen.
 
@@ -420,4 +420,4 @@ Weitere Informationen zur Skripterstellung in Workflow-Schritten finden Sie unte
    Wählen Sie die geeignete Option aus und klicken Sie auf **Fertig stellen**, um den **Gehe-zu-Schritt** im Workflow auszuführen.
 
 >[!NOTE]
-Wenn Sie einen Server starten, speichert das Servlet für die Projektaufgabenliste die Zuordnungen zwischen Aufgabentypen und URLs zwischen, die unter `/libs/cq/core/content/projects/tasktypes` definiert sind. Anschließend können Sie die übliche Überlagerung durchführen und benutzerdefinierte Aufgabentypen hinzufügen, indem Sie sie unter `/apps/cq/core/content/projects/tasktypes` platzieren.
+Wenn Sie einen Server starten, speichert das Servlet für die Projektaufgabenliste die Zuordnungen zwischen Aufgabentypen und URLs zwischen, die unter `/libs/cq/core/content/projects/tasktypes`. Anschließend können Sie die übliche Überlagerung durchführen und benutzerdefinierte Aufgabentypen hinzufügen, indem Sie sie unter `/apps/cq/core/content/projects/tasktypes`.

@@ -1,8 +1,8 @@
 ---
 title: Anzeigen von Dynamic Media-Assets in der Vorschau
-seo-title: Anzeigen von Dynamic Media-Assets in der Vorschau
+seo-title: Previewing Dynamic Media assets
 description: Erfahren Sie, wie Sie Assets in Dynamic Media in einer Vorschau anzeigen.
-seo-description: Erfahren Sie, wie Sie Assets in Dynamic Media in einer Vorschau anzeigen.
+seo-description: Learn how to preview assets in Dynamic Media
 uuid: f0ff2fc4-a263-4dbe-ba46-b07077b49ae0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,18 +10,18 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 77296bff-8429-4240-af93-26076ae431ec
 exl-id: ec05569a-6449-4430-9b9f-7ab051f44970
-feature: Asset-Management,Ausgabeformate
+feature: Asset Management,Renditions
 role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1016'
 ht-degree: 90%
 
 ---
 
 # Anzeigen von Dynamic Media-Assets in der Vorschau {#previewing-assets}
 
-Sie können **[!UICONTROL Vorschau]** verwenden, um zu sehen, wie ein digitales Dynamic Media-Asset aussieht, wenn es von einem Kunden in seinem eigenen Webbrowser angezeigt wird. Der dem Asset zugewiesene standardmäßige eingebettete, geräteübergreifende Viewer wird für die **[!UICONTROL Vorschau]** verwendet.
+Sie können **[!UICONTROL Vorschau]** um zu sehen, wie ein digitales Dynamic Media-Asset aussieht, wenn es von einem Kunden in seinem eigenen Webbrowser angezeigt wird. Der dem Asset zugewiesene standardmäßige eingebettete, geräteübergreifende Viewer wird für die **[!UICONTROL Vorschau]**.
 
 Ein Viewer ist eine Sammlung aus verschiedenen Einstellungen oder „Vorgaben“, wie die Viewer-Anzeigegröße, das Zoom-Verhalten, die Farbschemata, Rahmen, Schriftarten usw., die bestimmen, wie Rich-Media-Assets auf den Computerbildschirmen und Mobilgeräten der Benutzer angezeigt werden.
 
@@ -36,7 +36,7 @@ Sie können die dedizierte Vorschaufunktion für Videos, Rotationssets und Bilds
 
 **So zeigen Sie die Asset-Vorschau an**:
 
-1. Tippen Sie in **Adobe Experience Manager** auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Asset]s** und dann auf **[!UICONTROL Dateien]**, um auf Assets zuzugreifen.
+1. Von **Adobe Experience Manager** auf **[!UICONTROL Navigation]** Seite, tippen Sie auf **[!UICONTROL Asset]s**, dann **[!UICONTROL Dateien]** , um auf Assets zuzugreifen.
 1. Tippen Sie rechts oben auf der Seite in der Dropdown-Liste **[!UICONTROL Ansicht]** auf **[!UICONTROL Listenansicht]**.
 1. (Optional) Sortieren Sie in der Spalte **[!UICONTROL Typ]** die Assets nach dem Typ, den Sie in einer Vorschau anzeigen möchten.
 1. Klicken Sie in der Spalte **[!UICONTROL Titel]** auf den Namen des Titels (nicht auf die Miniaturansicht) des Assets, das Sie in der Vorschau anzeigen möchten.

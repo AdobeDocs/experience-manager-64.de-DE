@@ -1,18 +1,18 @@
 ---
 title: Inhalt auf Seite Null in Designer ändern
-seo-title: Inhalt auf Seite Null in Designer ändern
+seo-title: Changing Page Zero content in Designer
 description: Wissen Sie, wie Sie die Meldung ändern können, die auf der Seite Null einer XFA-PDF-Datei angezeigt wird, wenn diese in einem PDF-Viewer angezeigt wird, der nicht von Adobe stammt?
-seo-description: Wissen Sie, wie Sie die Meldung ändern können, die auf der Seite Null einer XFA-PDF-Datei angezeigt wird, wenn diese in einem PDF-Viewer angezeigt wird, der nicht von Adobe stammt?
+seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
 uuid: 5697f203-bb24-437d-a692-bc4bc2609b88
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f458054e-885c-4c7a-afcd-ad1e4465e0c1
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 0ae34ddd-9a8d-48df-af2d-80c3fe6abd62
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 83%
+source-wordcount: '243'
+ht-degree: 87%
 
 ---
 
@@ -26,11 +26,11 @@ Mit AEM Forms Feature Pack 1 von Designer können Sie die auf Seite Null angezei
 
 1. Stellen Sie sicher, dass AEM Forms Feature Pack 1 von Designer auf Ihrem Computer installiert ist. Sie können die Version im Bildschirm „Info“ des Designers überprüfen.
 
-1. Öffnen Sie das Formular, in dem der Inhalt der Seite Null geändert werden soll.
+1. Öffnen Sie das Formular, in dem der Inhalt auf Seite Null geändert werden soll.
 
-1. Klicken Sie auf **„Datei“ > „Formulareigenschaften“.**
+1. Klicken Sie auf **Datei > Formulareigenschaften**.
 
-1. Klicken Sie im Dialogfeld &quot;Formulareigenschaften&quot;auf ![plus](assets/plus.png) (Plus-Symbol), um eine benutzerdefinierte Eigenschaft hinzuzufügen.
+1. Klicken Sie im Dialog Formulareigenschaften auf ![plus](assets/plus.png) (Plussymbol), um eine benutzerdefinierte Eigenschaft hinzuzufügen.
 
 1. Legen Sie **_pagezerocontent** als den Namen der Eigenschaft fest.
 1. Fügen Sie die Meldung auf Seite Null als Wert im Rich Text-Format hinzu. Beispiel:
@@ -41,7 +41,7 @@ Mit AEM Forms Feature Pack 1 von Designer können Sie die auf Seite Null angezei
 
 1. Zeigen Sie das PDF-Formular im Browser an, um sicherzustellen, dass die Meldung aktualisiert wurde. Der obige Beispielwert wird wie folgt angezeigt:
 
-   ![changeMessage](assets/changedmessage.png)
+   ![changedmessage](assets/changedmessage.png)
 
 >[!NOTE]
 >

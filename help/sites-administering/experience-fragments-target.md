@@ -1,8 +1,8 @@
 ---
 title: Target-Integration mit Experience Fragments
-seo-title: Target-Integration mit Experience Fragments
+seo-title: Target Integration with Experience Fragments
 description: Target-Integration mit Experience Fragments
-seo-description: Target-Integration mit Experience Fragments
+seo-description: Target Integration with Experience Fragments
 uuid: 621f57d4-3b8d-49ea-b193-8530c8fbd74e
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 6911c8e3-b12c-466e-8255-5dcd09557d35
 exl-id: dbde3cb6-4132-4462-bd4c-0e4439110e2e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '647'
 ht-degree: 78%
 
 ---
@@ -29,7 +29,7 @@ Sie können in Adobe Experience Manager (AEM) erstellte [Experience Fragments](/
 
 Verschiedene Aktionen sind erforderlich:
 
-1. Sie müssen AEM mit Target integrieren. Weitere Informationen finden Sie unter [Integration mit Adobe Target](/help/sites-administering/target.md) .
+1. Sie müssen AEM mit Target integrieren. Siehe [Integration mit Adobe Target](/help/sites-administering/target.md) für weitere Informationen.
 1. Experience Fragments werden aus der Autoreninstanz exportiert. Daher müssen Sie in der Autoreninstanz den [Link Externalizer konfigurieren](/help/sites-developing/externalizer.md), um sicherzustellen, dass alle Links für die Veröffentlichungsinstanz externalisiert sind.
 
 ## Hinzufügen der Cloud-Konfiguration {#add-the-cloud-configuration}
@@ -48,11 +48,11 @@ Bevor Sie ein Fragment exportieren, müssen Sie die **Cloud-Konfiguration** für
 1. Wählen Sie die Registerkarte **Cloud-Services** aus.
 
 1. Wählen Sie unter **Cloud Service-Konfiguration** in der Dropdown-Liste den Eintrag **Adobe Target**.
-1. Wählen Sie unter **Adobe Target** die entsprechende Konfiguration aus.
+1. under **Adobe Target**, wählen Sie die entsprechende Konfiguration aus.
 
 1. Klicken Sie auf **Speichern und schließen**.
 
-## Exportieren eines Experience Fragments in Target  {#exporting-an-experience-fragment-to-target}
+## Exportieren eines Experience Fragments in Target {#exporting-an-experience-fragment-to-target}
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
    >
    >Wenn Sie &quot;Veröffentlichen&quot;auswählen, wird das Experience Fragment sofort veröffentlicht und an Target gesendet.
 
-1. Tippen/klicken Sie im Bestätigungsdialogfeld auf **OK**.
+1. Tippen/klicken **OK** im Bestätigungsdialogfeld.
 
    Ihr Experience Fragment sollte jetzt in Target enthalten sein.
 
@@ -89,7 +89,7 @@ So exportieren Sie ein Experience Fragment von AEM nach Target (nach dem Angeben
 >
 >Alternativ können Sie den Export aus dem Seiteneditor mithilfe ähnlicher Befehle im Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) durchführen.
 
-## Verwenden Ihrer Experience Fragments in Target  {#using-your-experience-fragments-in-target}
+## Verwenden Ihrer Experience Fragments in Target {#using-your-experience-fragments-in-target}
 
 Nach dem Ausführen der vorherigen Aufgaben wird das Experience Fragment auf der Seite Angebote in Target angezeigt. In der [entsprechenden Target-Dokumentation](https://experiencecloud.adobe.com/resources/help/de_DE/target/target/aem-experience-fragments.html) erfahren Sie, was Sie dort erreichen können.
 
@@ -106,6 +106,6 @@ So vermeiden Sie solche Situationen:
 
    * Das Target-Angebot mit AEM Experience Fragment kann unerwünschtes Verhalten zeigen
 
-      * Das Angebot wird wahrscheinlich weiterhin gerendert, da die Experience Fragment-HTML an Target gesendet wurde
+      * Das Angebot wird wahrscheinlich weiterhin gerendert, da die Experience Fragment-HTML an Target gepusht wurde
       * Verweise im Experience Fragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
    * Natürlich sind alle weiteren Änderungen am Experience Fragment nicht möglich, da das Experience Fragment nicht mehr in AEM vorhanden ist.

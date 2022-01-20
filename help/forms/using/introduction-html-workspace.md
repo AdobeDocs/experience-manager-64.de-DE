@@ -1,8 +1,8 @@
 ---
 title: Einführung in AEM Forms Workspace
-seo-title: Einführung in AEM Forms Workspace
+seo-title: Introduction to AEM Forms workspace
 description: Erhöhen Sie die Effizienz Ihres Unternehmens und schaffen Sie ein papierloses Büro durch Geschäftsprozessautomatisierung mit LiveCycle AEM Forms Workspace.
-seo-description: Erhöhen Sie die Effizienz Ihres Unternehmens und schaffen Sie ein papierloses Büro durch Geschäftsprozessautomatisierung mit LiveCycle AEM Forms Workspace.
+seo-description: Increase org efficiency and create paperless office by business process automation using LiveCycle AEM Forms workspace.
 uuid: 6171d1e7-8d1f-4adb-be8f-49521cd4cc6f
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 7efc8ad6-2bb1-41a6-ac0b-7f8ddddbf2a6
 exl-id: d60462a7-b941-4d0c-b6c5-20289d553a25
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 88%
+source-wordcount: '205'
+ht-degree: 86%
 
 ---
 
-# Einführung in AEM Forms Workspace  {#introduction-to-aem-forms-workspace}
+# Einführung in AEM Forms Workspace {#introduction-to-aem-forms-workspace}
 
 Der Forms-Arbeitsablauf erhöht die Unternehmenseffizienz, indem kritische dokument- und formularbezogene Geschäftsprozesse automatisiert und transparent gemacht werden. Mit Process Management können Sie optimierte, durchgängige Workflows erstellen – einschließlich Personen, Systemen, Inhalt und Unternehmensregeln –, auf die online oder offline zugegriffen werden kann. Forms-Arbeitsablauf umfasst den AEM Forms Workspace. Mit AEM Forms Workspace kommen neue Funktionen zur Erweiterung, Integration und benutzerfreundlicheren Gestaltung von Workspace hinzu.
 

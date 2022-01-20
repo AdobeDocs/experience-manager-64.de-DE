@@ -1,8 +1,8 @@
 ---
 title: Analyse mit externen Anbietern
-seo-title: Analyse mit externen Anbietern
+seo-title: Analytics with External Providers
 description: Erfahren Sie mehr über Analyse mit externen Anbietern.
-seo-description: Erfahren Sie mehr über Analyse mit externen Anbietern.
+seo-description: Learn about Analytics with External Providers.
 uuid: bea8ec38-a190-46f9-a5fa-8d65321fdf20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
 exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 78%
+source-wordcount: '442'
+ht-degree: 77%
 
 ---
 
@@ -55,10 +55,10 @@ Diese Snippets ermöglichen die Erfassung von Daten und Generierung von Berichte
 
 >[!CAUTION]
 >
->Die Demosite &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode (direkt über dem Endtag `</html>`) im entsprechenden Skript `js` angehängt werden.
+>Die Demosite &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode angehängt werden (direkt über dem `</html>` endtag) in der entsprechenden `js` Skript.
 >
 >
->Wenn Ihr eigenes `/apps` nicht von der standardmäßigen Seitenkomponente ( `/libs/foundation/components/page`) erbt, müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js`-Skripte enthalten sind, z. B. durch Einschließen von `cq/cloudserviceconfigs/components/servicescomponents` oder durch Verwendung eines ähnlichen Mechanismus.
+>Wenn Ihre `/apps` nicht von der standardmäßigen Seitenkomponente übernehmen ( `/libs/foundation/components/page`) müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js` -Skripte enthalten sind, z. B. durch `cq/cloudserviceconfigs/components/servicescomponents`oder einen ähnlichen Mechanismus verwenden.
 >
 >
 >Ohne diese Komponente funktioniert keiner der Dienste (generisch, Analytics, Target usw.).
@@ -99,7 +99,7 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Das **generische Analytics-Snippet** wird jetzt mit der Meldung `Configuration reference missing` aufgeführt. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
+1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Die **Generisches Analytics-Snippet** wird jetzt mit der Meldung aufgeführt `Configuration reference missing`. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
 
    ![analytics_selectspecificservice](assets/analytics_selectspecificservice.png)
 

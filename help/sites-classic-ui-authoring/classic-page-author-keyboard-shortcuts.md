@@ -1,8 +1,8 @@
 ---
-title: Tastaturbefehle bei der Seitenbearbeitung
-seo-title: Tastaturbefehle für die Seitenbearbeitung
+title: Tastaturbefehle für die Seitenbearbeitung
+seo-title: Keyboard Shortcuts when Editing Pages
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die Verwendung von Konsolen.
-seo-description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die Verwendung von Konsolen.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 04075ed1-3a52-4371-aa4e-0c3d61c878ef
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '313'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->In den folgenden Tabellen funktionieren für die Tastenkombinationen in der Spalte **Tastaturbefehl** sowohl die Strg- als auch die Befehlstaste unter macOS.
+>In den folgenden Tabellen finden Sie die Schlüsselkombinationen in der **Tastaturbefehl** -Spalte verwenden, funktionieren die Strg- und Befehlstaste in macOS.
 
 >[!NOTE]
 >
@@ -35,14 +35,13 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >
 
 
-
 ## Tastaturbefehle für die Bearbeitung {#editing-keyboard-shortcuts}
 
 <table> 
  <tbody> 
   <tr> 
    <th>Standort</th> 
-   <th>Kürzel</th> 
+   <th>Tastaturbefehl</th> 
    <th>Beschreibung</th> 
   </tr> 
   <tr> 
@@ -154,9 +153,9 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
  </tbody> 
 </table>
 
-Desktop-Benutzern stehen bei Verwendung der ](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)Konsolen[ ebenfalls verschiedene Tastaturbefehle zur Verfügung.
+Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 
-## Tastaturbefehle für Entwickler  {#keyboard-shortcuts-for-development}
+## Tastaturbefehle für Entwickler {#keyboard-shortcuts-for-development}
 
 Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastaturbefehle zur Verfügung.
 
@@ -164,12 +163,12 @@ Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastatu
  <tbody> 
   <tr> 
    <th>Standort</th> 
-   <th>Kürzel</th> 
+   <th>Tastaturbefehl</th> 
    <th>Beschreibung</th> 
   </tr> 
   <tr> 
    <td>Modus Bearbeiten</td> 
-   <td>Legen Sie das folgende Suffix in der URL fest:<br /> <code>?debugClientLibs=true</code><br /> Verwenden Sie dann Folgendes:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Legen Sie das folgende Suffix in der URL fest:<br /> <code>?debugClientLibs=true</code><br /> Verwenden Sie dann:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Anzeige von zeitlichen Statistiken zum Laden von Seiten.</td> 
   </tr> 
  </tbody> 

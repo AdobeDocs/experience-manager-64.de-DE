@@ -1,8 +1,8 @@
 ---
 title: Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen
-seo-title: Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen
+seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Hier finden Sie Empfehlungen und Best Practices zum Schutz von AEM Forms auf einem OSGi-Server.
-seo-description: Hier finden Sie Empfehlungen und Best Practices zum Schutz von AEM Forms auf einem OSGi-Server.
+seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
@@ -10,7 +10,7 @@ role: Admin
 exl-id: ba3b380a-b391-44a0-884b-e57c3cb14013
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1443'
 ht-degree: 99%
 
 ---

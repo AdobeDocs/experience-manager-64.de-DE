@@ -1,8 +1,8 @@
 ---
-title: Connector for IBM Content Manager konfigurieren
-seo-title: Connector für IBM Content Manager konfigurieren
+title: Connector für IBM Content Manager konfigurieren
+seo-title: Configuring Connector for IBM Content Manager
 description: Connector für IBM Content Manager aktiviert die Kommunikation zwischen AEM Forms und IBM Content Manager.
-seo-description: Connector für IBM Content Manager aktiviert die Kommunikation zwischen AEM Forms und IBM Content Manager.
+seo-description: Configure the Connector for IBM Content Manager to enable communication between AEM forms and IBM Content Manager.
 uuid: 3d55169d-93e3-4d4e-b18b-2a3394e1de3b
 contentOwner: admin
 content-type: reference
@@ -12,16 +12,16 @@ discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 exl-id: 8c65531e-f4f0-4cc4-b328-eaefb5662cf1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 96%
+source-wordcount: '277'
+ht-degree: 97%
 
 ---
 
-# Connector für IBM Content Manager konfigurieren{#configuring-connector-for-ibm-content-manager}
+# Connector for IBM Content Manager konfigurieren{#configuring-connector-for-ibm-content-manager}
 
 Connector für IBM Content Manager aktiviert die Kommunikation zwischen AEM Forms und IBM Content Manager. Weitere Hintergrundinformationen finden Sie im Abschnitt über Connectors für ECM in [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## IBM Content Manager-Verbindung konfigurieren  {#configure-the-ibm-content-manager-connection}
+## IBM Content Manager-Verbindung konfigurieren {#configure-the-ibm-content-manager-connection}
 
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für IBM Content Manager“.
 1. Geben Sie in das Feld „Datenspeichername“ den Namen des IBM Content Manager-Datenspeichers ein, mit dem eine Verbindung hergestellt werden soll. Wenn es sich um eine lokale Datenbank handelt, geben Sie deren Namen ein. Wenn es sich um eine Remotedatenbank handelt, geben Sie deren Aliasnamen ein.
@@ -30,7 +30,7 @@ Connector für IBM Content Manager aktiviert die Kommunikation zwischen AEM Form
 1. (Optional) Geben Sie in das Feld „Alias-Verbindungszeichenfolge“ zusätzliche Verbindungsargumente ein. In den meisten Fällen sollte dieses Feld leer sein. Weitere Informationen finden Sie in der IMB-Dokumentation.
 1. Klicken Sie auf Speichern.
 
-## Diensteinstellungen überprüfen  {#validation-of-service-settings}
+## Diensteinstellungen überprüfen {#validation-of-service-settings}
 
 Wenn Sie einen falschen Aliasnamen für den Datenspeicher, einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhalten Sie in Abhängigkeit davon, ob der Content Repository Connector für IBM Content Manager-Dienst aktuell ausgeführt wird, folgende Ergebnisse:
 

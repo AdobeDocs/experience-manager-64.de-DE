@@ -1,8 +1,8 @@
 ---
 title: Aktualisieren von allgemeinen Einstellungen
-seo-title: Aktualisieren von allgemeinen Einstellungen
+seo-title: Updating general settings
 description: AEM Forms-App-Einstellungen wie den Startbildschirm aktualisieren und Optionen für Startpunkte und Anlagen abrufen
-seo-description: AEM Forms-App-Einstellungen wie den Startbildschirm aktualisieren und Optionen für Startpunkte und Anlagen abrufen
+seo-description: Update AEM Forms app settings such as the Home screen and fetch Startpoints and attachments options
 uuid: 234cd2da-2b47-4d60-82ed-68363d782632
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 exl-id: 5ca6212f-d3c7-4239-beba-9a0bdac4b1ec
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '385'
 ht-degree: 85%
 
 ---
 
-# Aktualisieren von allgemeinen Einstellungen  {#updating-general-settings}
+# Aktualisieren von allgemeinen Einstellungen {#updating-general-settings}
 
 Allgemeine Einstellungen des AEM Forms App können Sie die Einstellungen, z. B. Abrufen von Anlagen, running, von Landungsbildschirm, Standardkategorie und autsave Frequenz angeben.
 
@@ -57,9 +57,9 @@ Sie können folgende Änderungen an den Einstellungen der App vornehmen.
 
 * **Default category**: Wählen Sie hier die Kategorie der Formulare aus, die auf dem Startbildschirm angezeigt wird. Wenn Sie „All“ auswählen, können Sie alle Formulare auf dem Startbildschirm sehen. Kategorien werden basierend auf den Formularen ausgefüllt, die in der App geladen werden. Formulare sind in der App je nach den Formulareinstellungen im AEM Forms-Server verfügbar.
 
-* **Autosave Frequency**: So legen Sie fest, wie oft Ihre  [mobile App Formulardaten ](/help/forms/using/autosave-data-app.md) speichert.
+* **Autosave Frequency**: So legen Sie die Häufigkeit fest, mit der Ihre [Mobile App speichert Formulardaten](/help/forms/using/autosave-data-app.md) lokal.
 
-* **Synchronisierungshäufigkeit**: So legen Sie fest, wie oft Ihre  [App im Online-Modus mit dem AEM Forms-Server ](/help/forms/using/sync-app.md) synchronisiert wird.
+* **Synchronisierungshäufigkeit**: So legen Sie die Häufigkeit fest, mit der Ihre [mobile App ist synchronisiert](/help/forms/using/sync-app.md) mit dem AEM Forms-Server im Online-Modus.
 
 **Clear Local Data**: Löscht die Datenbank, einschließlich Einstellungen und lokaler Daten für alle Benutzer und Dateispeicher auf dem Gerät.
 

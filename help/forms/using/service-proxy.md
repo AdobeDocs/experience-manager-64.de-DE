@@ -1,8 +1,8 @@
 ---
 title: HTML5 forms Service Proxy
-seo-title: HTML5 forms Service Proxy
+seo-title: HTML5 forms service proxy
 description: HTML5 forms Service Proxy ist eine Konfiguration, um einen Proxy zum Sendedienst anzumelden. Um Service Proxy zu konfigurieren, geben Sie die URL des Sendedienstes über den Anforderungsparameter „submissionServiceProxy“ ein.
-seo-description: HTML5 forms Service Proxy ist eine Konfiguration, um einen Proxy zum Sendedienst anzumelden. Um Service Proxy zu konfigurieren, geben Sie die URL des Sendedienstes über den Anforderungsparameter „submissionServiceProxy“ ein.
+seo-description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
 uuid: 03ee7dea-d23e-4600-8b0a-698f4530b889
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ feature: Mobile Forms
 exl-id: 42da25de-7ad0-4e9a-8139-149954f9bd8e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 92%
+source-wordcount: '697'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ HTML5 forms Service Proxy-Topologien
 
 HTML5-Formulare stellen eine Verbindung zu den AEM-Servern her, um serverseitige Skripte, Webdienste und Sendevorgänge auszuführen. Die XFA-Laufzeitumgebung der HTML5-Formulare verwendet Ajax-Aufrufe am Endpunkt „//bin/xfaforms/submitaction“ mit verschiedenen Parametern, um eine Verbindung zu den AEM-Servern herzustellen. HTML5-Formulare stellen eine Verbindung zu den AEM-Servern für folgende Vorgänge her:
 
-### Ausführen von serverseitigen Skripten und Webdiensten  {#execute-server-sided-scripts-and-web-services}
+### Ausführen von serverseitigen Skripten und Webdiensten {#execute-server-sided-scripts-and-web-services}
 
 Die Skripte, die für eine Ausführung auf dem Server markiert sind, werden als serverseitige Skripte bezeichnet. In der folgenden Tabelle sind alle Parameter aufgeführt, die in serverseitigen Skripten und Webdiensten verwendet werden.
 
@@ -88,7 +88,7 @@ Die Skripte, die für eine Ausführung auf dem Server markiert sind, werden als 
  </tbody> 
 </table>
 
-### Daten senden  {#submit-data}
+### Daten senden {#submit-data}
 
 Wenn auf die Schaltfläche „Senden“ geklickt wird, senden HTML5-Formulare Daten zum Server. Die folgende Tabelle listet alle Parameter auf, die HTML5-Formulare an den Server senden.
 
@@ -125,13 +125,13 @@ Wenn auf die Schaltfläche „Senden“ geklickt wird, senden HTML5-Formulare Da
  </tbody> 
 </table>
 
-### Wie funktioniert der Sende-Proxy?  {#how-nbsp-the-nbsp-submit-proxy-works}
+### Wie funktioniert der Sende-Proxy? {#how-nbsp-the-nbsp-submit-proxy-works}
 
 Der Sendedienst-Proxy fungiert als Pass-Through, wenn die submitUrl nicht in den Anforderungsparametern enthalten ist. Er fungiert als Pass-Through. Er sendet die Anforderung zum Endpunkt „//bin/xfaforms/submitaction“ und die Antwort zur XFA-Laufzeitumgebung.
 
 Der Sendedienst-Proxy wählt eine Topologie, wenn die submitUrl in den Anforderungsparametern enthalten ist.
 
 * Wenn AEM-Server Daten senden, dient der Proxy-Dienst als Pass-Through. Er sendet die Anforderung zum Endpunkt „//bin/xfaforms/submitaction“ und die Antwort zur XFA-Laufzeitumgebung.
-* Wenn der Proxy die Daten sendet, übergibt der Proxy-Dienst alle Parameter außer submitUrl an den Endpunkt */bin/xfaforms/submitaction* und empfängt XML-Bytes im Antwort-Stream. Dann sendet der Proxy-Dienst die XML-Datenbytes an die submitUrl zur Verarbeitung.
+* Wenn der Proxy die Daten sendet, übergibt der Proxy-Dienst alle Parameter außer submitUrl an die */bin/xfaforms/submitaction* Endpunkt und empfängt XML-Bytes im Antwort-Stream. Dann sendet der Proxy-Dienst die XML-Datenbytes an die submitUrl zur Verarbeitung.
 
-* Vor dem Versenden der Daten (POST-Anforderung) an einen Server prüfen HTML5-Formulare die Verbindung und Verfügbarkeit des Servers. Um die Verbindung und Verfügbarkeit zu prüfen, senden HTML-Formulare eine leere HEAD-Anforderung an den Server. Wenn der Server verfügbar ist, sendet das HTML5-Formular Daten (POST-Anforderung) an den Server. Wenn der Server nicht verfügbar ist, wird eine Fehlermeldung angezeigt, *Verbindung zum Server konnte nicht hergestellt werden,*. Durch die erweiterte Erkennung müssen Benutzer das Formular nicht stets von Neuem ausfüllen. Das Proxy-Servlet verarbeitet HEAD-Anforderungen und löst keine Ausnahme aus.
+* Vor dem Versenden der Daten (POST-Anforderung) an einen Server prüfen HTML5-Formulare die Verbindung und Verfügbarkeit des Servers. Um die Verbindung und Verfügbarkeit zu prüfen, senden HTML-Formulare eine leere HEAD-Anforderung an den Server. Wenn der Server verfügbar ist, sendet das HTML5-Formular Daten (POST-Anforderung) an den Server. Wenn der Server nicht verfügbar ist, wird eine Fehlermeldung angezeigt, *Verbindung zum Server konnte nicht hergestellt werden,* angezeigt. Durch die erweiterte Erkennung müssen Benutzer das Formular nicht stets von Neuem ausfüllen. Das Proxy-Servlet verarbeitet HEAD-Anforderungen und löst keine Ausnahme aus.

@@ -46,11 +46,11 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 >[!NOTE]
 >
->Wenn Sie über eine benutzerdefinierte Komponente verfügen und SOAP- oder EJB-Protokolle zum Aufrufen von DSCs auf demselben lokalen Server verwenden und diese Aufrufe nach einem Upgrade nicht mehr funktionieren, verwenden Sie die Aufrufstrategie In-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)). Verwenden Sie die In-VM-DSC-Aufrufmethode mit dem standardmäßigen ServiceClientFactory und erstellen Sie ServiceClientFactory nicht mit SOAP- oder EJB-Protokollen.
+>Wenn Sie über eine benutzerdefinierte Komponente verfügen und SOAP- oder EJB-Protokolle zum Aufrufen von DSCs auf demselben lokalen Server verwenden und diese Aufrufe nach einer Aktualisierung nicht mehr funktionieren, verwenden Sie In-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html)) Aufrufstrategie. Verwenden Sie die In-VM-DSC-Aufrufmethode mit dem standardmäßigen ServiceClientFactory und erstellen Sie ServiceClientFactory nicht mit SOAP- oder EJB-Protokollen.
 
 ## Schnellstart (SOAP-Modus): Bereitstellen einer Komponente mit der Java-API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-Im folgenden Java-Beispiel wird eine Komponente bereitgestellt, die auf einer JAR-Datei mit dem Namen *adobe-emailSample-dsc.jar* basiert.
+Im folgenden Java-Beispiel wird eine Komponente bereitgestellt, die auf einer JAR-Datei mit dem Namen *adobe-emailSample-dsc.jar*.
 
 ```as3
  /* 
@@ -152,7 +152,7 @@ Im folgenden Java-Beispiel wird eine Komponente bereitgestellt, die auf einer JA
 
 ## Schnellstart (SOAP-Modus): Festlegen des Ausführungskontexts eines Dienstes mithilfe der Java-API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird der Ausführungskontext von &quot;Run-As Invoker&quot;auf einen Beispieldienst mit dem Namen *EncryptDocument* festgelegt.
+Im folgenden Java-Codebeispiel wird der Ausführungskontext &quot;Run-As-Aufrufer&quot;auf einen Beispieldienst mit dem Namen *EncryptDocument*.
 
 ```as3
  /* 
@@ -357,7 +357,7 @@ Im folgenden Java-Codebeispiel wird die Sicherheit für den Beispiel-EncryptDocu
 
 ## Schnellstart (SOAP-Modus): Starten eines Dienstes mit der Java-API {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein Dienst mit dem Namen *SendEmailService* gestartet.
+Im folgenden Java-Codebeispiel wird ein Dienst mit dem Namen *SendEmailService*.
 
 ```as3
  package com.adobe.sample.servicemanager; 

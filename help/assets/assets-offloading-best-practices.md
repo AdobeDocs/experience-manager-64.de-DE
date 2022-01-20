@@ -1,6 +1,6 @@
 ---
 title: Best Practices für die Assets-Abladung
-description: Empfohlene Anwendungsfälle und Best Practices für die Abladung von Workflows zur Asset-Aufnahme und -Replikation in  [!DNL Experience Manager] Assets.
+description: Empfohlene Anwendungsfälle und Best Practices für die Abladung von Asset-Aufnahme- und Replikations-Workflows in [!DNL Experience Manager] Assets.
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
@@ -16,7 +16,7 @@ ht-degree: 73%
 
 >[!WARNING]
 >
->Diese Funktion ist ab [!DNL Experience Manager] 6.4 veraltet und wird in [!DNL Experience Manager] 6.5 entfernt. Planen Sie entsprechend.
+>Diese Funktion wird nicht mehr unterstützt. [!DNL Experience Manager] Ab 6.4 und wird entfernt in [!DNL Experience Manager] 6.5. Entsprechende Planung.
 
 Die Verarbeitung großer Dateien und die Ausführung von Workflows in Adobe Experience Manager Assets können erhebliche CPU-, Speicher- und I/O-Ressourcen beanspruchen. Insbesondere die Größe der Assets, die Workflows, die Anzahl der Benutzer und die Häufigkeit der Asset-Aufnahme können sich auf die Gesamtleistung des Systems auswirken. Die ressourcenintensivsten Vorgänge sind Workflows zur Asset-Erfassung und -Replikation. Eine intensive Nutzung dieser Workflows auf einer einzelnen Authoring-Instanz kann die Authoring-Effizienz beeinträchtigen.
 
@@ -46,11 +46,11 @@ Das Abladeframework identifiziert Aufträge zur Workflow-Abladung, die Worker-In
 
 ### Job Consumer „Workflow-Abladung“ {#workflow-offloading-job-consumer}
 
-Sobald ein Auftrag auf den Worker geschrieben wurde, ruft der Job Manager den Job Consumer auf, der für das Thema *com/adobe/granite/workflow/offloading* verantwortlich ist. Der Job Consumer führt dann den Workflow „DAM-Update-Asset“ auf dem Asset aus.
+Sobald ein Job auf den Arbeitnehmer geschrieben wurde, ruft der Job Manager den Job Consumer auf, der für die *com/adobe/granite/workflow/offloading* Thema. Der Job Consumer führt dann den Workflow „DAM-Update-Asset“ auf dem Asset aus.
 
 ## Sling-Topologie {#sling-topology}
 
-Die Sling-Topologie gruppiert [!DNL Experience Manager]-Instanzen und ermöglicht es ihnen, sich gegenseitig zu kennen, unabhängig von der zugrunde liegenden Persistenz. Dank dieser Eigenschaft der Sling-Topologie können Sie Topologien für Nicht-Cluster-, Cluster- und Mischszenarien erstellen. Eine Instanz kann Eigenschaften gegenüber der gesamten Topologie offenlegen. Das Framework bietet Callbacks für das Listening auf Änderungen in der Topologie (Instanzen und Eigenschaften). Die Sling-Topologie bildet die Grundlage für Sling-verteilte Aufträge.
+Die Sling-Topologie-Gruppen [!DNL Experience Manager] -Instanzen und ermöglichen es ihnen, sich gegenseitig zu informieren, unabhängig von der zugrunde liegenden Persistenz. Dank dieser Eigenschaft der Sling-Topologie können Sie Topologien für Nicht-Cluster-, Cluster- und Mischszenarien erstellen. Eine Instanz kann Eigenschaften gegenüber der gesamten Topologie offenlegen. Das Framework bietet Callbacks für das Listening auf Änderungen in der Topologie (Instanzen und Eigenschaften). Die Sling-Topologie bildet die Grundlage für Sling-verteilte Aufträge.
 
 ### Sling-verteilte Aufträge {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Wenn Sie zu dem Schluss kommen, dass die Assets-Abladung ein für Sie geeigneter
 
 ### Empfohlene Bereitstellung zur Assets-Abladung {#recommended-assets-offloading-deployment}
 
-Bei [!DNL Experience Manager] und Oak gibt es mehrere Bereitstellungsszenarien. Zur Assets-Abladung wird eine TarMK-basierte Bereitstellung mit freigegebenem Datenspeicher empfohlen. Die folgende Grafik zeigt die empfohlene Bereitstellung:
+Mit [!DNL Experience Manager] und Oak gibt es mehrere Bereitstellungsszenarien. Zur Assets-Abladung wird eine TarMK-basierte Bereitstellung mit freigegebenem Datenspeicher empfohlen. Die folgende Grafik zeigt die empfohlene Bereitstellung:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -107,10 +107,10 @@ Adobe empfiehlt eine Deaktivierung der automatischen Agentenverwaltung, weil die
 
 Standardmäßig kommt beim Abladetransport die Rückwärtsreplikation zum Einsatz, um die abgeladenen Assets per Pull-Vorgang vom Worker zurück an die primäre Instanz zu übertragen. Die Agenten für die Rückwärtsreplikation bieten keine Unterstützung für die nicht binäre Replikation. Sie sollten die Abladung zur Nutzung der Vorwärtsreplikation konfigurieren, um die abgeladenen Assets per Push-Vorgang zurück vom Worker an die primäre Instanz zu übertragen.
 
-1. Wenn Sie von der Standardkonfiguration mit Rückwärtsreplikation migrieren, deaktivieren oder löschen Sie alle Agenten mit den Namen &quot; `offloading_outbox`&quot;und &quot; `offloading_reverse_*`&quot;auf Primär- und Worker, wobei &amp;ast; stellt die Sling-ID der Zielinstanz dar.
-1. Erstellen Sie auf jedem Worker einen Agenten für die Vorwärtsreplikation, der auf die primäre Instanz verweist. Das Verfahren entspricht dem Erstellen von Forward Agents von der primären zu der Worker-Aktivität. Anweisungen zum Einrichten von Replikationsagenten für die Abladung finden Sie unter [Erstellen von Replikationsagenten für die Abladung](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) .
-1. Öffnen Sie die Konfiguration für `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
-1. Ändern Sie den Wert der Eigenschaft `default.transport.agent-to-master.prefix` von `offloading_reverse` in `offloading`.
+1. Wenn Sie von der Standardkonfiguration mit Rückwärtsreplikation migrieren, deaktivieren oder löschen Sie alle Agenten mit dem Namen `offloading_outbox`&quot; und &quot; `offloading_reverse_*`&quot;auf Primär- und Worker, wobei &amp;ast; stellt die Sling-ID der Zielinstanz dar.
+1. Erstellen Sie auf jedem Worker einen Agenten für die Vorwärtsreplikation, der auf die primäre Instanz verweist. Das Verfahren entspricht dem Erstellen von Forward Agents von der primären zu der Worker-Aktivität. Siehe [Erstellen von Replikationsagenten für die Abladung](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) für Anweisungen zum Einrichten von Replikationsagenten zur Abladung.
+1. Öffnen Sie die Konfiguration für `OffloadingDefaultTransporter`  (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
+1. Wert der Eigenschaft ändern `default.transport.agent-to-master.prefix` von `offloading_reverse` nach `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
 TBD: Update the property in the last step when GRANITE-30586 is fixed.
@@ -124,18 +124,18 @@ Die Verwendung der Binärdatei-losen Replikation wird empfohlen, um den Transpor
 
 Standardmäßig wird beim Abladen ein Inhaltspaket erstellt, das den Abladeauftrag und die Auftragsnutzlast (das ursprüngliche Asset) enthält und dieses einzelne Abladepaket über eine einzige Replikationsanforderung transportiert. Die Erstellung dieser Abladepakete ist im Falle einer nicht binären Replikation kontraproduktiv, weil Binärdateien beim Erstellen des Pakets wieder in das Paket serialisiert werden. Die Verwendung dieser Transportpakete kann deaktiviert werden, was dazu führt, dass der Abladeauftrag und die Payload in mehreren Replikationsanfragen übertragen werden, eine für jeden Payload-Eintrag. Auf diese Weise können Sie die Vorteile der nicht binären Replikation nutzen. 
 
-1. Öffnen Sie die Komponentenkonfiguration der Komponente *OffloadingDefaultTransporter* unter [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
-1. Deaktivieren Sie die Eigenschaft *Replikationspaket (default.transport.contentpackage)*.
+1. Öffnen Sie die Komponentenkonfiguration von *OffloadingDefaultTransporter* Komponente bei [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
+1. Eigenschaft deaktivieren *Replikationspaket (default.transport.contentpackage)*.
 
 ### Deaktivieren des Transports von Workflow-Modellen {#disabling-the-transport-of-workflow-model}
 
-Standardmäßig fügt der Abladeworkflow *DAM-Update-Asset-Abladung* das Workflow-Modell hinzu, um den Worker zur Auftrags-Payload aufzurufen. Da dieser Workflow dem vordefinierten Modell *DAM Update Asset* folgt, kann diese zusätzliche Payload entfernt werden.
+Standardmäßig wird die *DAM-Update-Asset-Abladung* Abladungs-Workflow fügt das Workflow-Modell hinzu, um den Worker zur Auftrags-Payload aufzurufen. Da dieser Workflow dem vordefinierten *DAM-Update-Asset* -Modell können Sie diese zusätzliche Payload standardmäßig entfernen.
 
 Wenn das Workflow-Modell von der Auftragsnutzlast deaktiviert wird, achten Sie darauf, die Änderungen mithilfe anderer Tools, etwa Package Manager, an das referenzierte Workflow-Modell zu verteilen.
 
 Um den Transport des Workflow-Modells zu deaktivieren, ändern Sie den Worfklow „Asset-Abladung für DAM-Update“.
 
-1. Öffnen Sie die Workflow-Konsole unter [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
+1. Öffnen Sie die Workflow-Konsole über [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 1. Öffnen Sie die Registerkarte „Modelle“.
 1. Öffnen Sie das Workflow-Modell DAM-Update-Asset-Abladung .
 1. Öffnen Sie die Schritteigenschaften für den Schritt &quot;DAM-Workflow-Abladung&quot;.
@@ -146,7 +146,7 @@ Um den Transport des Workflow-Modells zu deaktivieren, ändern Sie den Worfklow 
 
 Die Workflow-Abladung wird mithilfe eines externen Workflows auf der primären Instanz implementiert, der den Abschluss des abgeladenen Workflows auf dem Worker abfragt. Das standardmäßige Abrufintervall für die externen Workflow-Prozesse beträgt fünf Sekunden. Adobe empfiehlt, dass Sie das Abrufintervall des Assets-Abladeschritts auf mindestens 15 Sekunden erhöhen, um den abladebezogenen Mehraufwand auf der primären Instanz zu reduzieren.
 
-1. Öffnen Sie die Workflow-Konsole unter [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
+1. Öffnen Sie die Workflow-Konsole über [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
 1. Öffnen Sie die Registerkarte „Modelle“.
 1. Öffnen Sie das Workflow-Modell DAM-Update-Asset-Abladung .

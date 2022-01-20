@@ -1,8 +1,8 @@
 ---
 title: 'Bearbeiten: Umgebung und Tools'
-seo-title: 'Bearbeiten: Umgebung und Tools'
+seo-title: Authoring - the Environment and Tools
 description: Die Websites-Konsole ermöglicht es Ihnen, Ihre Website zu verwalten und darin zu navigieren. Sie besteht aus zwei Bereichen, durch die Sie die Struktur der Website erweitern und die entsprechenden Elemente bearbeiten können.
-seo-description: Die Websites-Konsole ermöglicht es Ihnen, Ihre Website zu verwalten und darin zu navigieren. Sie besteht aus zwei Bereichen, durch die Sie die Struktur der Website erweitern und die entsprechenden Elemente bearbeiten können.
+seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
 uuid: ec4ccc63-a3b8-464c-9c1a-204fd5d3b121
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 exl-id: f073c876-94cd-405d-885f-bfe433817ff4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '899'
 ht-degree: 90%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 90%
 
 Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten. Die verfügbaren Tools können über verschiedene Konsolen und Seiteneditoren aufgerufen werden.
 
-## Site-Administration {#site-administration}
+## Website-Administration {#site-administration}
 
 Die **Websites-Konsole** ermöglicht es Ihnen, Ihre Website zu verwalten und darin zu navigieren. Sie besteht aus zwei Bereichen, durch die Sie die Struktur der Website erweitern und das gewünschte Element bearbeiten können.
 
@@ -35,7 +35,7 @@ Es gibt einen separaten Seiteneditor in der klassischen Benutzeroberfläche, der
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## Aufrufen der Hilfe {#accessing-help}
+## Aufrufen der Hilfe   {#accessing-help}
 
 Verschiedene **Hilfequellen** können direkt aus AEM aufgerufen werden:
 
@@ -68,7 +68,7 @@ Sie können die Inhaltssuche verwenden, um eine Reihe von Ressourcen zu ermittel
 
 Mit allen Optionen können Sie [nach bestimmten Elementen suchen](#the-content-finder).
 
-### Finding Images {#finding-images}
+### Suchen nach Bildern {#finding-images}
 
 Auf dieser Registerkarte sind alle Bilder aufgelistet, die im Repository gespeichert sind.
 
@@ -76,7 +76,7 @@ Nachdem Sie einen Absatz des Typs „Bild“ auf einer Seite erstellt haben, kö
 
 ![chlimage_1-156](assets/chlimage_1-156.png)
 
-### Finding Documents {#finding-documents}
+### Suchen nach Dokumenten {#finding-documents}
 
 Auf dieser Registerkarte sind alle Dokumente aufgelistet, die im Repository gespeichert sind.
 
@@ -84,7 +84,7 @@ Nachdem Sie einen Absatz des Typs „Download“ auf einer Seite erstellt haben,
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-### Finding Movies {#finding-movies}
+### Suchen nach Filmen {#finding-movies}
 
 In dieser Registerkarte werden sämtliche Filme im Repository aufgeführt (z. B. Flash-Elemente).
 
@@ -104,7 +104,7 @@ Auf dieser Registerkarte werden alle Seiten angezeigt. Doppelklicken Sie auf ein
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
-### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
+### Verweisen auf Absätze von anderen Seiten aus {#referencing-paragraphs-from-other-pages}
 
 Auf dieser Registerkarte können Sie nach anderen Seiten suchen. Alle Absätze der betreffenden Seite werden aufgelistet. Anschließend können Sie einen Absatz auf die aktuelle Seite ziehen. Dadurch wird ein Verweis auf den ursprünglichen Absatz erstellt.
 
@@ -144,7 +144,7 @@ wird dies mit dem folgenden Suchmuster gefunden (und ebenso alle anderen Bilder,
 
 >[!NOTE]
 >
->Sie können auch die Suche [SQL2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) verwenden.
+>Sie können auch [SQL2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) suchen.
 
 ## Anzeigen von Verweisen {#showing-references}
 
@@ -156,7 +156,7 @@ So zeigen Sie direkte Seitenverweise an:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Wählen Sie **Verweise anzeigen...** AEM öffnet das Fenster &quot;Verweise&quot;und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich der Pfade.
+1. Auswählen **Verweise anzeigen...** AEM öffnet das Fenster Verweise und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich der Pfade.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -169,7 +169,7 @@ In bestimmten Situationen sind weitere Aktionen im Sidekick verfügbar:
 
 Auf der Websites-Konsole sind weitere [Seitenbeziehungen](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) zu sehen.
 
-## Auditprotokoll  {#audit-log}
+## Auditprotokoll {#audit-log}
 
 Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekick aufgerufen werden. Dort werden die kürzlich durchgeführten Aktionen für die aktuelle Seite aufgeführt. Beispiel:
 
@@ -177,9 +177,9 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 ## Seiteninformationen {#page-information}
 
-Die Website-Konsole [enthält auch Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), z. B. Veröffentlichung, Änderung, gesperrt, Live Copy usw.
+Die Website-Konsole [liefert Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) wie Veröffentlichung, Änderung, gesperrt, Live Copy usw.
 
-## Seitenmodi  {#page-modes}
+## Seitenmodi {#page-modes}
 
 Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie verschiedene Modi über die Symbole unten im Sidekick aufrufen:
 
@@ -205,9 +205,9 @@ In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verf�
 >Es sind weitere Optionen verfügbar:
 >
 >* [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
-* [ClientContext](/help/sites-administering/client-context.md)
-* Websites - öffnet die Konsole „Websites“.
-* Neu laden - aktualisiert die Seite.
+>* [ClientContext](/help/sites-administering/client-context.md)
+>* Websites - öffnet die Konsole „Websites“.
+>* Neu laden - aktualisiert die Seite.
 
 
 ## Tastaturbefehle {#keyboard-shortcuts}

@@ -70,13 +70,13 @@ In der folgenden Tabelle werden gängige Prozesse beschrieben, die Schwachstelle
    <td><p>Nutzen Sie die folgenden Kriterien für die Auswahl einer Firewall-Lösung:</p> 
     <ul> 
      <li><p>Implementieren Sie Firewalls, die Proxy-Server und/oder die <em>statusbehaftete Inspektion</em> anstelle einfacher Paketfilterlösungen unterstützen.</p> </li> 
-     <li><p>Verwenden Sie eine Firewall, die <em>alle Dienste mit Ausnahme der explizit zulässigen</em> Sicherheitsparadigmen unterstützt.</p> </li> 
+     <li><p>Verwenden Sie eine Firewall, die eine <em>Alle Dienste mit Ausnahme der explizit zulässigen</em> Sicherheitsparadigmen.</p> </li> 
      <li><p>Implementieren Sie eine Dual-Homed- oder Multi-Homed-Firewall-Lösung. Diese Architektur bietet das größte Maß an Sicherheit und trägt dazu bei, ein Umgehen des Firewall-Schutzes durch nicht berechtigte Benutzer zu verhindern.</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>Datenbankanschlüsse</p> </td> 
-   <td><p>Verwenden Sie keine standardmäßigen Listening-Anschlüsse für Datenbanken (MySQL - 3306, Oracle - 1521, MS SQL - 1433). Informationen zum Ändern von Datenbankanschlüssen finden Sie in der Datenbankdokumentation.</p> <p>Die Verwendung eines anderen Datenbankports wirkt sich auf die AEM Forms on JEE-Gesamtkonfiguration aus. Wenn Sie die Standardports ändern, müssen Sie auch in anderen Bereichen der Konfiguration entsprechende Änderungen durchführen, z. B. bei den Datenquellen für AEM Forms on JEE.</p> <p>Informationen zum Konfigurieren von Datenquellen in AEM Forms on JEE finden Sie unter Installieren und Aktualisieren von AEM Forms on JEE oder Aktualisieren auf AEM Forms on JEE für Ihren Anwendungsserver im <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">AEM Forms-Benutzerhandbuch</a>.</p> </td> 
+   <td><p>Verwenden Sie keine standardmäßigen Listening-Anschlüsse für Datenbanken (MySQL - 3306, Oracle - 1521, MS SQL - 1433). Informationen zum Ändern von Datenbankanschlüssen finden Sie in der Datenbankdokumentation.</p> <p>Die Verwendung eines anderen Datenbankports wirkt sich auf die AEM Forms on JEE-Gesamtkonfiguration aus. Wenn Sie die Standardports ändern, müssen Sie auch in anderen Bereichen der Konfiguration entsprechende Änderungen durchführen, z. B. bei den Datenquellen für AEM Forms on JEE.</p> <p>Informationen zum Konfigurieren von Datenquellen in AEM Forms on JEE finden Sie unter Installieren und Aktualisieren von AEM Forms on JEE oder Aktualisieren auf AEM Forms on JEE für Ihren Anwendungsserver unter <a href="/help/forms/using/introduction-aem-forms.md" target="_blank">AEM Forms-Benutzerhandbuch</a>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,11 +140,11 @@ In diesem Abschnitt werden Verfahren beschrieben, die Sie während des AEM Forms
   </tr> 
   <tr> 
    <td><p>Domänenübergreifende Richtliniendatei</p> </td> 
-   <td><p>Das Vorhandensein einer Datei<code>crossdomain.xml</code> auf dem Server kann diesen Server unmittelbar schwächen. Es wird empfohlen, die Liste der Domänen so weit wie möglich einzuschränken. Platzieren Sie die während der Entwicklungsphase verwendete <code>crossdomain.xml</code>-Datei nicht in der Produktionsumgebung, wenn Sie Guides verwenden <em>(nicht mehr unterstützt)</em>. Bei einem Guide, der Webdienste verwendet, wird keine <code>crossdomain.xml</code>-Datei benötigt, wenn sich der Dienst auf demselben Server befindet wie der Server, der den Guide zur Verfügung gestellt hat. Wenn es sich jedoch um einen anderen Dienst handelt oder wenn Cluster betroffen sind, muss eine <code>crossdomain.xml</code>-Datei vorhanden sein. Weitere Informationen zur Datei "crossdomain.xml"finden Sie unter <a href="https://kb2.adobe.com/cps/142/tn_14213.html">https://kb2.adobe.com/cps/142/tn_14213.html</a>.</p> </td> 
+   <td><p>Das Vorhandensein einer Datei<code>crossdomain.xml</code> auf dem Server kann diesen Server unmittelbar schwächen. Es wird empfohlen, die Liste der Domänen so weit wie möglich einzuschränken. Platzieren Sie die während der Entwicklungsphase verwendete <code>crossdomain.xml</code>-Datei nicht in der Produktionsumgebung, wenn Sie Guides verwenden <em>(nicht mehr unterstützt)</em>. Bei einem Guide, der Webdienste verwendet, wird keine <code>crossdomain.xml</code>-Datei benötigt, wenn sich der Dienst auf demselben Server befindet wie der Server, der den Guide zur Verfügung gestellt hat. Wenn es sich jedoch um einen anderen Dienst handelt oder wenn Cluster betroffen sind, muss eine <code>crossdomain.xml</code>-Datei vorhanden sein. Siehe <a href="https://kb2.adobe.com/cps/142/tn_14213.html">https://kb2.adobe.com/cps/142/tn_14213.html</a>, um weitere Informationen zur Datei "crossdomain.xml"zu erhalten.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Sicherheitseinstellungen des Betriebssystems</p> </td> 
-   <td><p>Wenn Sie die 192-Bit- oder 256-Bit-XML-Verschlüsselung auf Solaris-Plattformen verwenden müssen, stellen Sie sicher, dass Sie <code>pkcs11_softtoken_extra.so</code> anstelle von <code>pkcs11_softtoken.so</code> installieren.</p> </td> 
+   <td><p>Wenn Sie die 192-Bit- oder 256-Bit-XML-Verschlüsselung auf Solaris-Plattformen verwenden müssen, stellen Sie sicher, dass Sie die Installation <code>pkcs11_softtoken_extra.so</code> anstelle von <code>pkcs11_softtoken.so</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -195,7 +195,7 @@ Um den Anwendungsserver, auf dem AEM Forms on JEE bereitgestellt wird, mit einem
 
 Configuration Manager verwendete ein auf Ihrem Anwendungsserver bereitgestelltes Servlet, um das Bootstrapping der AEM Forms on JEE-Datenbank durchzuführen. Da Configuration Manager vor Abschluss der Konfiguration auf dieses Servlet zugreift, wurde der Zugriff darauf für autorisierte Benutzer noch nicht gesichert, weshalb das Servlet deaktiviert werden sollte, nachdem Sie Configuration Manager erfolgreich für die Konfiguration von AEM Forms on JEE verwendet haben.
 
-1. Entpacken Sie die Datei &quot;adobe-livecycle-[appserver].ear&quot;.
+1. Dekomprimieren Sie die adobe-livecycle-[appserver].ear-Datei.
 1. Öffnen Sie die Datei „META-INF/application.xml“.
 1. Suchen Sie den Abschnitt „adobe-bootstrapper.war“:
 
@@ -282,9 +282,9 @@ Beim Installieren von AEM Forms on JEE wird ein Standardbenutzerkonto für den B
 
 Außerdem wird empfohlen, das Standardkennwort für den CRX-Administrator zu ändern, indem Sie folgende Schritte durchführen:
 
-1. Melden Sie sich bei `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` mit dem Standardbenutzernamen/Kennwort an.
+1. Anmelden `https://[server]:[port]/lc/libs/granite/security/content/useradmin.html` unter Verwendung des Standardbenutzernamens/-kennworts.
 1. Geben Sie „Administrator“ in das Suchfeld ein und klicken Sie auf **Suchen**.
-1. Wählen Sie **Administrator** aus dem Suchergebnis und klicken Sie auf das Symbol **Bearbeiten** unten rechts in der Benutzeroberfläche.
+1. Auswählen **Administrator** aus dem Suchergebnis aus und klicken Sie auf die Schaltfläche **Bearbeiten** rechts unten in der Benutzeroberfläche.
 1. Geben Sie das neue Kennwort in das Feld **Neues Kennwort** und das alte Kennwort in das Feld **Ihr Kennwort** ein.
 1. Klicken Sie auf das Symbol Speichern unten rechts in der Benutzeroberfläche.
 
@@ -299,7 +299,7 @@ Die WSDL-Generierung (Web Service Definition Language) sollte nur in Entwicklung
    ```
 
 1. Klicken Sie auf **Einstellungen > Core-Systemeinstellungen > Konfigurationen**.
-1. Deaktivieren Sie **Aktivieren Sie WSDL** und klicken Sie auf **OK**.
+1. Auswahl aufheben **WSDL aktivieren** und klicken Sie auf **OK**.
 
 ### Sicherheit des Anwendungsservers {#application-server-security}
 
@@ -319,7 +319,7 @@ In der folgenden Tabelle werden einige Verfahren zum Schützen des Anwendungsser
   </tr> 
   <tr> 
    <td><p>Cookie-Einstellungen des Anwendungsservers</p> </td> 
-   <td><p>Anwendungs-Cookies werden vom Anwendungsserver gesteuert. Beim Bereitstellen der Anwendung kann der Administrator des Anwendungsservers Cookie-Voreinstellungen serverweit oder anwendungsspezifisch festlegen. Standardmäßig haben die Servereinstellungen Vorrang.</p> <p>Alle vom Anwendungsserver erstellten Sitzungs-Cookies müssen das <code>HttpOnly</code>-Attribut enthalten. Bei Verwendung von JBoss Application Server können Sie beispielsweise das Element SessionCookie in der Datei <code>WEB-INF/web.xml</code> in <code>httpOnly="true"</code> ändern.</p> <p>Sie können festlegen, dass Cookies ausschließlich unter Verwendung von HTTPS gesendet werden. Dadurch wird verhindert, dass Cookies unverschlüsselt über HTTP gesendet werden. Anwendungsserveradministratoren sollten sichere Cookies für den Server global aktivieren. Bei Verwendung des JBoss-Anwendungsservers können Sie beispielsweise das Element „connector“ in der Datei <code>secure=true</code> in <code>server.xml</code> ändern.</p> <p>Ausführlichere Informationen zu Cookie-Einstellungen finden Sie in der Dokumentation zum Anwendungsserver.</p> </td> 
+   <td><p>Anwendungs-Cookies werden vom Anwendungsserver gesteuert. Beim Bereitstellen der Anwendung kann der Administrator des Anwendungsservers Cookie-Voreinstellungen serverweit oder anwendungsspezifisch festlegen. Standardmäßig haben die Servereinstellungen Vorrang.</p> <p>Alle vom Anwendungsserver erstellten Sitzungs-Cookies müssen das <code>HttpOnly</code>-Attribut enthalten. Bei Verwendung von JBoss Application Server können Sie beispielsweise das Element SessionCookie in <code>httpOnly="true"</code> im <code>WEB-INF/web.xml</code> -Datei.</p> <p>Sie können festlegen, dass Cookies ausschließlich unter Verwendung von HTTPS gesendet werden. Dadurch wird verhindert, dass Cookies unverschlüsselt über HTTP gesendet werden. Anwendungsserveradministratoren sollten sichere Cookies für den Server global aktivieren. Bei Verwendung des JBoss-Anwendungsservers können Sie beispielsweise das Element „connector“ in der Datei <code>secure=true</code> in <code>server.xml</code> ändern.</p> <p>Ausführlichere Informationen zu Cookie-Einstellungen finden Sie in der Dokumentation zum Anwendungsserver.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Directory Browsing</p> </td> 
@@ -336,7 +336,7 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
 
 #### Integrierte Sicherheit für SQL Server unter Windows für JBoss konfigurieren  {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
-1. Ändern Sie [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml}, um `integratedSecurity=true` zur Verbindungs-URL hinzuzufügen, wie in diesem Beispiel gezeigt:
+1. Ändern [JBOSS_HOME]\\standalone\configuration\lc_{datasource.xml} zum Hinzufügen `integratedSecurity=true` zur Verbindungs-URL hinzu, wie in diesem Beispiel gezeigt:
 
    ```as3
     jdbc:sqlserver://<serverhost>:<port>;databaseName=<dbname>;integratedSecurity=true
@@ -355,9 +355,9 @@ Unter Oracle benötigt das verwendete Datenbankkonto nur die Berechtigungen CONN
    ```
 
 1. Klicken Sie unter „Change Center“ auf **Lock &amp; Edit**.
-1. Klicken Sie unter &quot;Domain Structure&quot;auf *[base_domain]* > **Services** > **JDBC** > **Data Sources** und klicken Sie im rechten Bereich auf **IDP_DS**.
+1. Klicken Sie unter &quot;Domain Structure&quot;auf *[base_domain]* > **Dienste** > **JDBC** > **Data Sources** und klicken Sie im rechten Bereich auf **IDP_DS**.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarte **Configuration** und dann auf die Registerkarte **Connection Pool**. Geben Sie in das Feld **Properties** den Eintrag `integratedSecurity=true` ein.
-1. Klicken Sie unter &quot;Domain Structure&quot;auf **[base_domain]** > **Services** > **JDBC** > **Data Sources** und klicken Sie im rechten Bereich auf **RM_DS**.
+1. Klicken Sie unter &quot;Domain Structure&quot;auf **[base_domain]** > **Dienste** > **JDBC** > **Data Sources** und klicken Sie im rechten Bereich auf **RM_DS**.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarte **Configuration** und dann auf die Registerkarte **Connection Pool**. Geben Sie in das Feld **Properties** den Eintrag `integratedSecurity=true` ein.
 1. Fügen Sie die Datei „sqljdbc_auth.dll“ zum Windows-Systempfad (C:\Windows) auf dem Computer hinzu, auf dem der Anwendungsserver ausgeführt wird. Die Datei „sqljdbc_auth.dll“ wird zusammen mit dem Microsoft SQL JDBC 6.2.1.0-Treiber installiert.
 1. Ändern Sie die Sicherheitseinstellung von SQL Server von **Gemischt** in **Nur Windows-Authentifizierung**.
@@ -369,10 +369,10 @@ Unter WebSphere können Sie die integrierte Sicherheit nur konfigurieren, wenn S
 1. Melden Sie sich bei WebSphere Administrative Console an.
 1. Klicken Sie in der Navigationsstruktur auf **Resources** > **JDBC** > **Data Sources** und klicken Sie dann im rechten Bereich auf **IDP_DS**.
 1. Klicken Sie im rechten Bereich unter „Additional Properties“ auf **Custom Properties** und dann auf **New**.
-1. Geben Sie in das Feld **Name** den Wert `integratedSecurity` und in das Feld **Wert** den Wert `true` ein.
+1. Im **Name** Feld, Typ `integratedSecurity` und im **Wert** Feld, Typ `true`.
 1. Klicken Sie in der Navigationsstruktur auf **Resources** > **JDBC** > **Data Sources** und dann im rechten Bereich auf **IDP_DS**.
 1. Klicken Sie im rechten Bereich unter „Additional Properties“ auf **Custom Properties** und dann auf **New**.
-1. Geben Sie in das Feld **Name** den Wert `integratedSecurity` und in das Feld **Wert** den Wert `true` ein.
+1. Im **Name** Feld, Typ `integratedSecurity` und im **Wert** Feld, Typ `true`.
 1. Fügen Sie auf dem Computer, auf dem WebSphere installiert ist, die Datei „sqljdbc_auth.dll“ dem Windows-Systempfad (C:\Windows) hinzu. Die Datei &quot;sqljdbc_auth.dll&quot;befindet sich am selben Speicherort wie die Microsoft SQL JDBC 1.2-Treiberinstallation (standardmäßig unter *[InstallDir]*/sqljdbc_1.2/enu/auth/x86).
 1. Wählen Sie **Start** > **Systemsteuerung** > **Dienste** aus, klicken Sie mit der rechten Maustaste auf den Windows-Dienst für WebSphere (IBM WebSphere Application Server &lt;Version> - &lt;Knoten>) und wählen Sie **Eigenschaften** aus.
 1. Klicken Sie im Dialogfeld „Eigenschaften“ auf die Registerkarte **Anmelden**.
@@ -643,10 +643,10 @@ Die folgenden Merkmale sind für CSRF-Angriffe charakteristisch:
 
 AEM Forms on JEE verwendet die Funktion &quot;Referrer-Filter&quot;, um CSRF-Angriffe zu verhindern. In diesem Abschnitt werden die folgenden Begriffe zum Beschreiben des Referrer-Filtermechanismus verwendet:
 
-* **Zulässiger Referrer:** Ein Referrer ist die Adresse der Quellseite, die eine Anforderung an den Server sendet. Bei JSP-Seiten oder -Formularen ist der Referrer normalerweise die vorherige Seite im Browser-Verlauf. Referrer für Bilder sind normalerweise die Seiten, auf denen die Bilder angezeigt werden. Sie können den Referrer identifizieren, dem Zugriff auf Ihre Serverressourcen gewährt wird, indem Sie ihn zur Liste &quot;Zulässige Referrer&quot;hinzufügen.
-* **Zulässige Referrer - Ausnahmen:** Sie können den Umfang des Zugriffs für einen bestimmten Referrer in Ihrer Liste der zulässigen Referrer einschränken. Um diese Einschränkung zu erzwingen, können Sie einzelne Pfade dieses Referrers zur Liste &quot;Zulässige Referrer - Ausnahmen&quot;hinzufügen. Anforderungen, die von Pfaden in der Liste &quot;Zulässige Referrer - Ausnahmen&quot;stammen, können keine Ressourcen auf dem Formularserver aufrufen. Sie können Ausnahmen für zulässige Referrer für eine bestimmte Anwendung definieren und auch eine globale Liste von Ausnahmen verwenden, die für alle Anwendungen gelten.
+* **Zulässige verweisende Stelle:** Ein Referrer ist die Adresse der Quellseite, die eine Anforderung an den Server sendet. Bei JSP-Seiten oder -Formularen ist der Referrer normalerweise die vorherige Seite im Browser-Verlauf. Referrer für Bilder sind normalerweise die Seiten, auf denen die Bilder angezeigt werden. Sie können den Referrer identifizieren, dem Zugriff auf Ihre Serverressourcen gewährt wird, indem Sie ihn zur Liste &quot;Zulässige Referrer&quot;hinzufügen.
+* **Zulässige Referrer - Ausnahmen:** Sie können den Zugriffsbereich für einen bestimmten Referrer in Ihrer Liste der zulässigen Referrer einschränken. Um diese Einschränkung zu erzwingen, können Sie einzelne Pfade dieses Referrers zur Liste &quot;Zulässige Referrer - Ausnahmen&quot;hinzufügen. Anforderungen, die von Pfaden in der Liste &quot;Zulässige Referrer - Ausnahmen&quot;stammen, können keine Ressourcen auf dem Formularserver aufrufen. Sie können Ausnahmen für zulässige Referrer für eine bestimmte Anwendung definieren und auch eine globale Liste von Ausnahmen verwenden, die für alle Anwendungen gelten.
 * **Zulässige URIs:** Dies ist eine Liste von Ressourcen, die ohne Überprüfung der Referrer-Kopfzeile bereitgestellt werden sollen. Ressourcen, z. B. Hilfeseiten, die auf dem Server keine Statusänderungen hervorrufen, können zu dieser Liste hinzugefügt werden. Die Ressourcen in der Liste &quot;Zulässige URIs&quot;werden vom Referrer-Filter nie blockiert, unabhängig davon, wer der Referrer ist.
-* **Null Referrer:** Eine Serveranforderung, die nicht mit einer übergeordneten Webseite verknüpft ist oder nicht von einer übergeordneten Webseite stammt, gilt als Anforderung eines Null-Referrers. Wenn Sie beispielsweise ein neues Browser-Fenster öffnen, eine Adresse eingeben und die Eingabetaste drücken, ist der an den Server gesendete Referrer null. Ein Desktop-Programm (.NET oder SWING), das eine HTTP-Anforderung an einen Webserver sendet, sendet auch einen Null-Referrer an den Server.
+* **Null Referrer:** Eine Serveranforderung, die nicht mit einer übergeordneten Webseite verknüpft ist oder nicht von dieser stammt, gilt als Anforderung eines Null-Referrers. Wenn Sie beispielsweise ein neues Browser-Fenster öffnen, eine Adresse eingeben und die Eingabetaste drücken, ist der an den Server gesendete Referrer null. Ein Desktop-Programm (.NET oder SWING), das eine HTTP-Anforderung an einen Webserver sendet, sendet auch einen Null-Referrer an den Server.
 
 ### Referrer-Filter {#referer-filtering}
 
@@ -655,7 +655,7 @@ Der Referrer-Filterprozess kann wie folgt beschrieben werden:
 1. Der Formularserver prüft die für den Aufruf verwendete HTTP-Methode:
 
    1. Wenn es sich um eine POST handelt, führt der Formularserver die Überprüfung des Referrer-Headers durch.
-   1. Wenn dies der GET ist, umgeht der Formularserver die Referrer-Prüfung, es sei denn, *CSRF_CHECK_GETS* ist auf &quot;true&quot;festgelegt. In diesem Fall wird die Referrer-Kopfzeilenprüfung durchgeführt. *CSRF_CHECK_GETS* ist in der Datei *web.xml* für Ihre Anwendung festgelegt.
+   1. Wenn es sich um eine GET handelt, umgeht der Formularserver die Prüfung der verweisenden Stelle, es sei denn, *CSRF_CHECK_GETS* auf &quot;true&quot;gesetzt ist. In diesem Fall wird die Kopfzeilenprüfung des Referrers durchgeführt. *CSRF_CHECK_GETS* ist in der Datei *web.xml* für Ihre Anwendung festgelegt.
 
 1. Der Formularserver prüft, ob der angeforderte URI auf die Zulassungsliste gesetzt ist:
 
@@ -674,13 +674,13 @@ Der Referrer-Filterprozess kann wie folgt beschrieben werden:
 
 ### Verwalten des Referrer-Filters {#managing-referer-filtering}
 
-AEM Forms on JEE bietet einen Referrer-Filter, um Referrer anzugeben, denen der Zugriff auf Serverressourcen erlaubt ist. Standardmäßig filtert der Referrer-Filter keine Anforderungen, die eine sichere HTTP-Methode verwenden, z. B. GET, es sei denn, *CSRF_CHECK_GETS* ist auf &quot;true&quot;gesetzt. Wenn die Anschlussnummer für einen Eintrag des zulässigen Referrers auf 0 festgelegt ist, lässt AEM Forms on JEE alle Anfragen mit dem Referrer von diesem Host unabhängig von der Anschlussnummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Referrer-Filterung ist deaktiviert, wenn alle Einträge in der Liste &quot;Zulässige Referrer&quot;gelöscht werden.
+AEM Forms on JEE bietet einen Referrer-Filter, um Referrer anzugeben, denen der Zugriff auf Serverressourcen erlaubt ist. Standardmäßig filtert der Filter &quot;Referrer&quot;keine Anforderungen, die eine sichere HTTP-Methode verwenden, z. B. GET, es sei denn, *CSRF_CHECK_GETS* auf &quot;true&quot;gesetzt ist. Wenn die Anschlussnummer für einen Eintrag des zulässigen Referrers auf 0 festgelegt ist, lässt AEM Forms on JEE alle Anfragen mit dem Referrer von diesem Host unabhängig von der Anschlussnummer zu. Wenn keine Anschlussnummer angegeben wird, werden nur Anforderungen vom Standardanschluss 80 (HTTP) oder von Anschluss 443(HTTPS) zugelassen. Referrer-Filterung ist deaktiviert, wenn alle Einträge in der Liste &quot;Zulässige Referrer&quot;gelöscht werden.
 
 Bei der ersten Installation von Document Services wird die Liste der zulässigen Referrer mit der Adresse des Servers aktualisiert, auf dem Document Services installiert ist. Die Einträge für den Server enthalten den vollständig Servernamen, die IPv4-Adresse, die IPv6-Adresse, wenn IPv6 aktiviert ist, die Loopback-Adresse und einen „localhost“-Eintrag. Die Namen, die der Liste &quot;Zulässige Referrer&quot;hinzugefügt wurden, werden vom Host-Betriebssystem zurückgegeben. Beispielsweise enthält ein Server mit einer IP-Adresse von 10.40.54.187 die folgenden Einträge: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Für alle nicht qualifizierten Namen, die vom Host-Betriebssystem zurückgegeben werden (Namen, die keine IPv4-Adresse, IPv6-Adresse oder qualifizierten Domänennamen haben), wird die Zulassungsliste &quot;URL&quot;nicht aktualisiert. Ändern Sie die Liste der zulässigen Referrer entsprechend Ihrer Geschäftsumgebung. Stellen Sie den Formularserver nicht in der Produktionsumgebung mit der standardmäßigen Liste für zulässige Referrer bereit. Nachdem Sie einen der zulässigen Referrer, Referrer-Ausnahmen oder URIs geändert haben, müssen Sie den Server neu starten, damit die Änderungen wirksam werden.
 
 **Liste &quot;Zulässige verweisende Stelle&quot;verwalten**
 
-Sie können die Liste &quot;Zulässige Referrer&quot;über die User Management-Oberfläche von Administration Console verwalten. Die User Management-Oberfläche stellt Funktionen zum Erstellen, Bearbeiten oder Löschen der Liste bereit. Weitere Informationen zum Arbeiten mit der Liste &quot;Zulässige Referrer&quot;finden Sie im Abschnitt * [CSRF-Angriffe verhindern](/help/forms/using/admin-help/preventing-csrf-attacks.md)* der *Administration-Hilfe* .
+Sie können die Liste &quot;Zulässige Referrer&quot;über die User Management-Oberfläche von Administration Console verwalten. Die User Management-Oberfläche stellt Funktionen zum Erstellen, Bearbeiten oder Löschen der Liste bereit. Siehe * [CSRF-Angriffe verhindern](/help/forms/using/admin-help/preventing-csrf-attacks.md)* Abschnitt des *Administration-Hilfe* Weitere Informationen zum Arbeiten mit der Liste &quot;Zulässige verweisende Stelle&quot;.
 
 **Listen &quot;Zulässige Referrer - Ausnahmen&quot;und &quot;Zulässige URIs&quot;verwalten**
 
@@ -697,7 +697,7 @@ AEM Forms on JEE stellt APIs zum Verwalten der Liste &quot;Zulässige Referrer -
 
 Weitere Informationen zu den APIs finden Sie in der * AEM Forms on JEE API-Referenz* .
 
-Verwenden Sie die Liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** für &quot;Zulässige Referrer - Ausnahmen&quot;auf globaler Ebene, d. h. um Ausnahmen zu definieren, die für alle Anwendungen gelten. Diese Liste enthält nur URIs mit einem absoluten Pfad (z. B. `/index.html`) oder einem relativen Pfad (z. B. `/sample/`). Sie können auch einen regulären Ausdruck an das Ende eines relativen URI anhängen, z. B. `/sample/(.)*`.
+Verwenden Sie die ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** Liste zulässiger Referrer - Ausnahmen auf globaler Ebene, d. h. zur Definition von Ausnahmen, die für alle Anwendungen gelten. Diese Liste enthält nur URIs mit einem absoluten Pfad (z. B.  `/index.html`) oder einen relativen Pfad (z. B.  `/sample/`). Sie können auch einen regulären Ausdruck an das Ende eines relativen URI anhängen. Beispiel:  `/sample/(.)*`.
 
 Die Listen-ID ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTIONS*** wird als Konstante in der Klasse `UMConstants` des Namespace `com.adobe.idp.um.api` definiert, der in `adobe-usermanager-client.jar` zu finden ist. Sie können die AEM Forms-APIs zum Erstellen, Ändern oder Bearbeiten dieser Liste verwenden. Verwenden Sie beispielsweise zum Erstellen der Liste &quot;Globale zulässige Referrer - Ausnahmen&quot;Folgendes:
 
@@ -711,21 +711,21 @@ Verwenden Sie die Liste ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** für anwendungsspe
 
 Falls der Referrer-Filter den Zugriff auf den Formularserver vollständig blockiert und Sie die Liste &quot;Zulässige Referrer&quot;nicht bearbeiten können, können Sie das Startskript des Servers aktualisieren und die Referrer-Filterung deaktivieren.
 
-Fügen Sie das JAVA-Argument `-Dlc.um.csrffilter.disabled=true` in das Startskript ein und starten Sie den Server neu. Stellen Sie sicher, dass Sie das JAVA-Argument löschen, nachdem Sie die Liste &quot;Zulässige Referrer&quot;entsprechend neu konfiguriert haben.
+Fügen Sie die `-Dlc.um.csrffilter.disabled=true` JAVA-Argument im Startskript und starten Sie den Server neu. Stellen Sie sicher, dass Sie das JAVA-Argument löschen, nachdem Sie die Liste &quot;Zulässige Referrer&quot;entsprechend neu konfiguriert haben.
 
 **Referrer-Filter für benutzerdefinierte WAR-Dateien**
 
-Möglicherweise haben Sie benutzerdefinierte WAR-Dateien für die Verwendung mit AEM Forms on JEE speziell für Ihre Geschäftsanforderungen erstellt. Um den Referrer-Filter für Ihre benutzerdefinierten WAR-Dateien zu aktivieren, fügen Sie ***adobe-usermanager-client.jar*** in den Klassenpfad für die WAR ein und fügen Sie einen Filtereintrag in die Datei &quot;web.xml*&quot;mit den folgenden Parametern ein:
+Möglicherweise haben Sie benutzerdefinierte WAR-Dateien für die Verwendung mit AEM Forms on JEE speziell für Ihre Geschäftsanforderungen erstellt. Um den Referrer-Filter für Ihre benutzerdefinierten WAR-Dateien zu aktivieren, schließen Sie ***adobe-usermanager-client.jar*** in den Klassenpfad für die WAR und fügen Sie einen Filtereintrag in die Datei &quot;web.xml*&quot;mit den folgenden Parametern ein:
 
-**CSRF_CHECK_** GETSsteuert die Referrer-Prüfung bei GET-Anforderungen. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Fügen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anforderungen filtern möchten.
+**CSRF_CHECK_GETS** steuert die Prüfung der verweisenden Stelle bei GET-Anforderungen. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Fügen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anforderungen filtern möchten.
 
-**CSRF_ALLOWED_REFERER_** EXCEPTIONSist die ID der Liste &quot;Zulässige Referrer - Ausnahmen&quot;. Der Referrer-Filter verhindert, dass Anforderungen, die von Referrern in der durch die Listen-ID identifizierten Liste stammen, Ressourcen auf dem Formularserver aufrufen.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** ist die ID der Liste &quot;Zulässige Referrer - Ausnahmen&quot;. Der Referrer-Filter verhindert, dass Anforderungen, die von Referrern in der durch die Listen-ID identifizierten Liste stammen, Ressourcen auf dem Formularserver aufrufen.
 
 **CSRF_ALLOWED_URIS_LIST_NAME** ist die ID der Liste „Zulässige URIs“. Der Referrer-Filter blockiert keine Anforderungen für eine der Ressourcen in der Liste, die durch die Listen-ID identifiziert werden, unabhängig vom Wert des Referrer-Headers in der Anfrage.
 
-**CSRF_ALLOW_NULL_** REFERERsteuert das Verhalten des Referrer-Filters, wenn der Referrer null oder nicht vorhanden ist. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Schließen Sie diesen Parameter nur ein, wenn Sie Null-Referrer zulassen möchten. Das Zulassen von Null-Referrern kann einige Arten von Cross Site Request Forgery-Angriffen zulassen.
+**CSRF_ALLOW_NULL_REFERER** steuert das Verhalten des Referrer-Filters, wenn der Referrer null oder nicht vorhanden ist. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Schließen Sie diesen Parameter nur ein, wenn Sie Null-Referrer zulassen möchten. Das Zulassen von Null-Referrern kann einige Arten von Cross Site Request Forgery-Angriffen zulassen.
 
-**CSRF_NULL_REFERER_** EXCEPTIONSist eine Liste der URIs, für die keine Referrer-Prüfung durchgeführt wird, wenn der Referrer null ist. Dieser Parameter wird nur aktiviert, wenn für *CSRF_ALLOW_NULL_REFERER* „false“ festgelegt wird. Trennen Sie mehrere URIs in der Liste mit einem Komma.
+**CSRF_NULL_REFERER_EXCEPTIONS** ist eine Liste der URIs, für die keine Referrer-Prüfung durchgeführt wird, wenn der Referrer null ist. Dieser Parameter wird nur aktiviert, wenn für *CSRF_ALLOW_NULL_REFERER* „false“ festgelegt wird. Trennen Sie mehrere URIs in der Liste mit einem Komma.
 
 Im Folgenden finden Sie ein Beispiel für den Filtereintrag in der Datei *web.xml* für die WAR-Datei ***SAMPLE***:
 
@@ -871,7 +871,7 @@ In diesem Abschnitt werden die Standardanschlüsse (und alternativen Konfigurati
  <thead> 
   <tr> 
    <th><p>Zweck</p> </th> 
-   <th><p>Anschluss</p> </th> 
+   <th><p>Port</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -892,7 +892,7 @@ In diesem Abschnitt werden die Standardanschlüsse (und alternativen Konfigurati
  <thead> 
   <tr> 
    <th><p>Zweck</p> </th> 
-   <th><p>Anschluss</p> </th> 
+   <th><p>Port</p> </th> 
   </tr> 
  </thead> 
  <tbody>
@@ -923,7 +923,7 @@ Informationen zu WebSphere-Anschlüssen, die für AEM Forms on JEE erforderlich 
 
 ### Konfigurieren von SSL {#configuring-ssl}
 
-Bezüglich der physischen Architektur, die im Abschnitt [Physische Architektur von AEM Forms on JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture) beschrieben wird, sollten Sie SSL für alle Verbindungen konfigurieren, die Sie verwenden möchten. Besonders alle SOAP-Verbindungen müssen über SSL erfolgen, um die Offenlegung von Benutzerberechtigungen im Netzwerk zu verhindern.
+Bezug auf die physische Architektur, die im Abschnitt beschrieben wird [Physische Architektur von AEM Forms on JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)sollten Sie SSL für alle Verbindungen konfigurieren, die Sie verwenden möchten. Besonders alle SOAP-Verbindungen müssen über SSL erfolgen, um die Offenlegung von Benutzerberechtigungen im Netzwerk zu verhindern.
 
 Anleitungen für die Konfiguration von SSL unter JBoss, WebLogic und WebSphere finden Sie unter „Konfigurieren von SSL“ in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_64).
 
@@ -939,9 +939,9 @@ Informationen zum Konfigurieren der SSL-Umleitung für WebSphere oder WebLogic f
 
 1. Öffnen Sie die Datei JBOSS_HOME/standalone/configuration/standalone.xml zur Bearbeitung.
 
-   Fügen Sie nach dem Element &lt;subsystem xmlns=&quot;urn:jboss:domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> die folgenden Details hinzu:
+   Nach dem &lt;subsystem xmlns=&quot;urn&lt;span id=&quot; translate=&quot;no&quot; />domain:web:1.1&quot; native=&quot;false&quot; default-virtual-server=&quot;default-host&quot;> element, fügen Sie die folgenden Details hinzu::jboss:
 
-   &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot; />
+   &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;https&quot; enabled=&quot;true&quot; secure=&quot;true&quot;/>
 
 1. Fügen Sie den folgenden Code im Connector-Element https hinzu:
 
@@ -1032,12 +1032,12 @@ Dieser Abschnitt enthält Empfehlungen für die Anwendungsserverkonfiguration zu
 
 ### Directory Browsing deaktivieren {#disable_directory_browsing-2}
 
-Legen Sie die Eigenschaft `directoryBrowsingEnabled` in der Datei ibm-web-ext.xml auf `false` fest.
+Legen Sie die `directoryBrowsingEnabled` -Eigenschaft in der Datei &quot;ibm-web-ext.xml&quot;in `false`.
 
 ### Administrative Sicherheit in WebSphere aktivieren {#enable-websphere-administrative-security}
 
 1. Melden Sie sich bei WebSphere Administrative Console an.
-1. Navigieren Sie in der Navigationsstruktur zu **Security** > **Global Security**.
+1. Navigieren Sie in der Navigationsstruktur zu **Sicherheit** > **Globale Sicherheit**
 1. Wählen Sie **Enable administrative security** aus.
 1. Deaktivieren Sie sowohl **Enable application security** als auch **Use Java 2 security**.
 1. Klicken Sie auf **OK** oder auf **Apply**.

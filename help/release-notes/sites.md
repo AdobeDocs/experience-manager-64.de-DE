@@ -2,7 +2,7 @@
 title: Versionshinweise zu AEM Sites
 seo-title: AEM Sites
 description: Spezifische Versionshinweise für Adobe Experience Manager 6.4 Sites
-seo-description: Spezifische Versionshinweise für Adobe Experience Manager 6.4 Sites
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Sites.
 uuid: 593928ec-5d1a-4a88-bd73-897421c5984a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,7 +12,7 @@ discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
 exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1010'
 ht-degree: 80%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 80%
 
 Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt:
 
-### Site-Administration  {#site-administration}
+### Site-Administration {#site-administration}
 
 * Neue Inhaltsstrukturleiste zur schnellen Navigation in Site-Hierarchien. In Verbindung mit der Listenansicht steht damit wieder das Interaktionsmodell der klassischen Benutzeroberfläche zum Durchsuchen einer Site zur Verfügung.
 * Verbesserte Funktion zum Scrollen in der Karten- und Listenansicht großer Ordner.
@@ -103,7 +103,7 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 * Aktualisierungen der intelligenten Übersetzung erkennen jetzt neue Seiten, die zu einem Übergeordneten Zweig der Sprache hinzugefügt wurden.
 * Übersetzungsstatusberichte in der Sites-Admin-Listenansicht eingeführt.
 
-### Verwaltung mehrerer Websites  {#multi-site-management-msm}
+### Verwaltung mehrerer Websites {#multi-site-management-msm}
 
 * Verbesserte Skalierbarkeit der Verwaltung mehrerer Websites durch Verwendung eines Oak-basierten Index statt des speicherinternen Index (LiveCopyIndex)
 
@@ -118,22 +118,22 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 * Unterstützung von Ordnern zum Organisieren von Segmenten basierend auf Site/Kontext (CQ-94620)
 * Der standardmäßige Speicherort für Segmente wurde in „/conf“ verschoben, um standort- bzw. kontextspezifische Segmentlisten zu erhalten.
 
-### AEM und Adobe Target   {#aem-amp-adobe-target-nbsp}
+### AEM und Adobe Target  {#aem-amp-adobe-target-nbsp}
 
 * AEM-Erlebnisfragmente mit Adobe Target integriert. Durch das Synchronisieren von Erlebnisfragmenten mit Target werden Angebote in Adobe Target erstellt, die mit dem Visual Experience Composer von Target verwendet werden können, um sie in jedes für Target aktivierte Erlebnis zu integrieren.
 * Adobe Target mbox.js , Version 63 ist jetzt enthalten. Adobe empfiehlt, die Implementierung auf „at.js“ umzustellen.
-* „at.js“ Version 1.2.2 ist nun integriert. Adobe empfiehlt, entweder Dynamic Tag Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/de/enterprise/cloud-platform/launch.html) zu verwenden, um at.js für die Site bereitzustellen.
+* „at.js“ Version 1.2.2 ist nun integriert. Adobe empfiehlt die Verwendung von Dynamic Tag Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/de/enterprise/cloud-platform/launch.html) , um at.js in der Site bereitzustellen.
 
 ### AEM und Adobe Analytics {#aem-amp-adobe-analytics}
 
 * s_code.js H.27.5 ist jetzt enthalten. Adobe empfiehlt, die Implementierung auf AppMeasurement.js umzustellen
-* AppMeasurement.js 1.8.0 ist jetzt enthalten. Adobe empfiehlt, entweder das Dynamic Tag Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) zu verwenden, um AppMeasurement.js auf der Site bereitzustellen.
+* AppMeasurement.js 1.8.0 ist jetzt enthalten. Adobe empfiehlt die Verwendung von Dynamic Tag Management (DTM) oder [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) , um AppMeasurement.js auf der Site bereitzustellen.
 
 ## Communities-Add-on {#communities-add-on}
 
 Weitere Informationen hierzu finden Sie auf der [Seite mit Versionshinweisen für AEM Communities](/help/release-notes/communities-release-notes.md).
 
-## Screens-Add-on  {#screens-add-on}
+## Screens-Add-on {#screens-add-on}
 
 * Unterstützung für Screens-Player zur Verbindung mit AEM-Veröffentlichungsservern für Befehle und Steuerungen sowie den Download von Kanälen hinzugefügt (anstelle eines direkten Downloads in die Autoreninstanz von AEM).
 * Möglichkeit zum Gruppieren von Kanalzuweisungen in Zeitplänen hinzugefügt.

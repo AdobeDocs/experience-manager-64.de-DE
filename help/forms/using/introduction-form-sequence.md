@@ -1,18 +1,18 @@
 ---
 title: Einführung in die mehrteilige Formularsequenz
-seo-title: Einführung in die mehrteilige Formularsequenz
+seo-title: Introduction to multi-step form sequence
 description: Mit AEM Forms können Sie eine Sequenz für ein Formularbedienfeld definieren, nach der Benutzer in einem adaptiven Formular navigieren und es ausfüllen sollen.
-seo-description: Mit AEM Forms können Sie eine Sequenz für ein Formularbedienfeld definieren, nach der Benutzer in einem adaptiven Formular navigieren und es ausfüllen sollen.
+seo-description: With AEM Forms, you can define a sequence of form panel in which you want users to navigate and fill an adaptive form.
 uuid: b2b94e4c-0c28-47ba-8e23-fd8742baf71c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: eec8bcbe-e2ba-42f1-98ea-08a4ca723e48
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '509'
 ht-degree: 100%
 
 ---
@@ -35,9 +35,9 @@ Nehmen wir ein Fallbeispiel, bei dem Sie für ein Formular eine Sequenz der Schr
    * **Verify**: Enthält die Komponente **Verify**, die in einem XFA-basierten adaptiven Formular verwendet werden kann. Es werden die Informationen angezeigt, die im Bedienfeld „Fill“ im schreibgeschützten Modus zur Überprüfung erfasst werden.
    * **E-sign**: Enthält die Komponente **Sign**, die in einem XFA-basierten adaptiven Formular verwendet werden kann. Es werden die folgenden Dienste zum Signieren bereitgestellt:
 
-      * Adobe Document Cloud eSignature-Dienste
+      * Adobe Document Cloud eSignature-Services
       * Scribble-Signatur
-   * **Confirmation**: Enthält die Komponente **Summary**, in der die Übermittlung bestätigt wird, nachdem der Benutzer das Formular signiert hat und in der Sequenz beim Bestätigungsschritt angekommen ist. Autoren können den Text der Summary-Komponente konfigurieren oder eine Dankesmeldung, einen Link zur erstellten PDF-Datei anzeigen usw.
+   * **Bestätigung**: Enthält die Komponente **Zusammenfassung**, in der die Übermittlung in einer Meldung bestätigt wird, nachdem der Benutzer das Formular signiert hat und in der Sequenz den Bestätigungsschritt (Zusammenfassung) erreicht hat. Autoren können den Text der Komponente Zusammenfassung konfigurieren, eine Dankesmeldung oder einen Link zur erstellten PDF-Datei anzeigen usw.
 
 
 1. Wählen Sie für das Layout des Stammbedienfelds **[!UICONTROL Assistent]** aus.

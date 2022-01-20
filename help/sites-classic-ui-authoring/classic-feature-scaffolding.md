@@ -1,8 +1,8 @@
 ---
 title: Strukturvorlage
-seo-title: Strukturvorlage
+seo-title: Scaffolding
 description: Oftmals muss eine große Zahl von Seiten erstellt werden, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen. Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.
-seo-description: Oftmals muss eine große Zahl von Seiten erstellt werden, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen. Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.
+seo-description: Sometimes you may need to create a large set of pages that share the same structure but have differing content. With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
 uuid: b1fdf2c0-e6d0-488a-96e5-dfbd6beb7610
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 exl-id: 9f57087f-895d-43b9-9b6a-9cfb4c794c7b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 78%
+source-wordcount: '1453'
+ht-degree: 77%
 
 ---
 
@@ -38,7 +38,7 @@ Strukturvorlagen sind über die **Tools-Konsole** des SiteAdmin-Bereichs verfüg
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-Die Grundlage besteht aus einem Formular mit einem Feld für jedes Inhaltselement, aus dem die zu erstellende Seite besteht, und vier wichtigen Parametern, auf die über die Seite **Seiteneigenschaften** der Strukturseite zugegriffen wird.
+Die Grundlage besteht aus einem Formular mit einem Feld für jeden Inhalt, aus dem die zu erstellende Seite besteht, und vier wichtigen Parametern, auf die über die **Seiteneigenschaften** der Strukturseite.
 
 ![pageprops](assets/pageprops.png)
 
@@ -59,17 +59,17 @@ Der Textkörper der Grundlage ist das Formular. Wenn ein Benutzer eine Seite mit
 
 * **Bild/erweitert**: **ALT-Text**: Der Alt-Text des Bildes.
 
-* **Bild/Erweitert**:  **Beschreibung**: Die Beschreibung des Bildes.
+* **Bild/Erweitert**: **Beschreibung**: Die Beschreibung des Bildes.
 
 * **Bild/erweitert**: **Größe**: Die Größe des Bildes.
 
 * **Tags/Keywords**: Metadaten, die der jeweiligen Seite zugeordnet werden sollen. Dieses Feld ist für jede Grundlage vorhanden.
 
-## Erstellen von Grundlagen  {#creating-a-scaffold}
+## Erstellen von Grundlagen {#creating-a-scaffold}
 
-Um eine neue Grundlage zu erstellen, wechseln Sie zur Konsole **Tools**, dann zu **Standardseiten-Strukturvorlage** und erstellen Sie eine neue Seite. Ein einseitiger Vorlagentyp ist verfügbar, die *Strukturvorlagen-Vorlage.*
+Um eine neue Grundlage zu erstellen, gehen Sie zu **Instrumente** Console, dann **Strukturvorlage der Standardseite** und erstellen Sie eine neue Seite. Ein einseitiger Vorlagentyp ist verfügbar, die *Strukturvorlage.*
 
-*Wechseln Sie zu den **Seiteneigenschaften**der neuen Seite und legen Sie den* Titeltext *, die* Beschreibung *, die* Zielvorlage *und den* Zielpfad *wie oben beschrieben fest.*
+*Navigieren Sie zu **Seiteneigenschaften**der neuen Seite und legen Sie die* Titeltext *,* Beschreibung *,* Zielvorlage *und* Zielpfad *, wie oben beschrieben.*
 
 *Als Nächstes müssen Sie die Struktur der Seite definieren, die von dieser Grundlage erstellt wird. Gehen Sie dazu in den Designmodus auf der Strukturvorlagenseite. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Grundlage im **Dialog-Editor** bearbeiten können.
 
@@ -85,7 +85,7 @@ Die Dialogdefinition einer Strukturvorlage wird ähnlich wie bei einer Komponent
 
 Ein Blick auf das für **Nachrichten** im Dialog-Editor hilft bei der Erläuterung dieser Vorgehensweise. Wechseln Sie auf der Grundlagenseite in den Designmodus und klicken Sie auf den Link für den Dialog-Editor.
 
-Klicken Sie nun auf das Dialogfeld **Dialogfeld > Registerkartenfeld > Text > Text**, wie in diesem Beispiel:
+Klicken Sie nun auf das Dialogfeld **Dialogfeld > Registerkartenfeld > Text > Text**, wie folgt:
 
 ![textedit](assets/textedit.png)
 
@@ -106,7 +106,7 @@ Dadurch wird der Speicherort für den Inhalt festgelegt, der in dieses Feld eing
 
 Beachten Sie, dass Sie diese Informationen in einem normalen Komponentendialogfeld nicht angeben müssen, weil sie durch die Tatsache, dass das Dialogfeld an eine bestimmte Komponente gebunden ist, bereits vorgegeben sind.
 
-Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Klicken Sie auf das erste ausgeblendete Feld **Dialogfeld > Registerkartenfeld > Text > Ausgeblendet** wie folgt:
+Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Klicken Sie auf das erste ausgeblendete Feld. **Dialogfeld > Registerkartenfeld > Text > Ausgeblendet**, wie folgt:
 
 ![hidden](assets/hidden.png)
 
@@ -118,13 +118,13 @@ Die Namenseigenschaft dieses ausgeblendeten Felds lautet:
 
 `./jcr:content/par/text/textIsRich`
 
-Dies ist eine boolesche Eigenschaft, mit der die unter `./jcr:content/par/text/text.` gespeicherte Textzeichenfolge interpretiert wird.
+Dies ist eine boolesche Eigenschaft, mit der die unter gespeicherte Textzeichenfolge interpretiert wird. `./jcr:content/par/text/text.`
 
 Da wir wissen, dass der Text als Rich-Text ausgewertet werden soll, setzen wir die Eigenschaft `value` dieses Felds auf `true`.
 
 >[!CAUTION]
 >
->Der Dialog-Editor ermöglicht es dem Benutzer, die Werte von *vorhandenen* Eigenschaften in der Dialogfelddefinition zu ändern. Um eine neue Eigenschaft hinzuzufügen, muss der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wird beispielsweise einer Dialogdefinition mit dem Dialog-Editor ein neues ausgeblendetes Feld hinzugefügt, weist dieses keine Eigenschaft *value* auf (d. h. keine Eigenschaft mit diesem Namen). Wenn für das betreffende ausgeblendete Feld standardmäßig eine Eigenschaft *value* festgelegt werden muss, kann dies nur manuell mithilfe eines der CRX-Werkzeuge erfolgen. Der Wert kann nicht im Dialog-Editor selbst hinzugefügt werden. Sobald allerdings die Eigenschaft vorhanden ist, kann der Wert im Dialog-Editor geändert werden.
+>Der Dialog-Editor ermöglicht es dem Benutzer, die Werte von *vorhandene* Eigenschaften in der Dialogfelddefinition. Um eine neue Eigenschaft hinzuzufügen, muss der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wird beispielsweise einer Dialogdefinition mit dem Dialog-Editor ein neues ausgeblendetes Feld hinzugefügt, weist dieses keine Eigenschaft *value* auf (d. h. keine Eigenschaft mit diesem Namen). Wenn für das betreffende ausgeblendete Feld standardmäßig eine Eigenschaft *value* festgelegt werden muss, kann dies nur manuell mithilfe eines der CRX-Werkzeuge erfolgen. Der Wert kann nicht im Dialog-Editor selbst hinzugefügt werden. Sobald allerdings die Eigenschaft vorhanden ist, kann der Wert im Dialog-Editor geändert werden.
 
 Das zweite ausgeblendete Feld kann angezeigt werden, indem Sie wie folgt darauf klicken:
 
@@ -142,9 +142,9 @@ Der feste Wert für diese Eigenschaft lautet:
 
 `foundation/components/textimage`
 
-&quot;Dies gibt an, dass die zum Rendern des Textinhalts dieses Absatzes zu verwendende Komponente die Komponente *Textbild* ist. Mit dem booleschen Wert `isRichText`, der im anderen ausgeblendeten Feld angegeben ist, kann die Komponente die unter `./jcr:content/par/text/text` gespeicherte tatsächliche Textzeichenfolge auf die gewünschte Weise rendern.
+&quot;Dies gibt an, dass die Komponente, die zum Rendern des Textinhalts dieses Absatzes verwendet werden soll, die *Textbild* -Komponente. Verwenden mit der `isRichText` boolesch angegeben im anderen ausgeblendeten Feld kann die Komponente die tatsächliche Textzeichenfolge rendern, die unter `./jcr:content/par/text/text` auf die gewünschte Weise.
 
-## Scaffolding with MSM Inheritance {#scaffolding-with-msm-inheritance}
+## Strukturvorlagen mit MSM-Vererbung {#scaffolding-with-msm-inheritance}
 
 Auf der klassischen Benutzeroberfläche sind Strukturvorlagen vollständig in die MSM-Vererbung integriert (sofern verfügbar).
 
@@ -172,4 +172,4 @@ Nach dem Entsperren können Sie die Vererbung wiederherstellen, indem Sie auf da
 
 >[!NOTE]
 >
->Wenn die Vererbung auf Seitenebene abgebrochen wird (über die Registerkarte Live Copy der Seiteneigenschaften), sind alle Komponenten im Modus **Strukturvorlage** bearbeitbar (sie werden im entsperrten Status angezeigt).
+>Wenn die Vererbung auf Seitenebene abgebrochen wird (über die Registerkarte Live Copy der Seiteneigenschaften), sind alle Komponenten in **Strukturvorlage** -Modus (sie werden im entsperrten Status angezeigt).

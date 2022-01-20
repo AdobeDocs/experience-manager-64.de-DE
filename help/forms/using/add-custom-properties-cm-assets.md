@@ -1,25 +1,25 @@
 ---
 title: Fügen Sie benutzerdefinierte Eigenschaften den Correspondence Management-Assets hinzu
-seo-title: Fügen Sie benutzerdefinierte Eigenschaften den Correspondence Management-Assets hinzu
+seo-title: Add custom properties to Correspondence Management assets
 description: Erfahren Sie, wie Sie benutzerdefinierte Eigenschaften zu Correspondence Management-Assets hinzufügen.
-seo-description: Erfahren Sie, wie Sie benutzerdefinierte Eigenschaften zu Correspondence Management-Assets hinzufügen.
+seo-description: Learn how to add custom properties to Correspondence Management assets.
 uuid: 64b3f92b-6144-4633-b61d-b1a33e263148
 content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 601108d8-f432-4a6b-9ec9-831cf054e52f
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: d58c2468-3e77-41a0-a2ba-c19912c77f73
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '4462'
+source-wordcount: '4443'
 ht-degree: 70%
 
 ---
 
 # Fügen Sie benutzerdefinierte Eigenschaften den Correspondence Management-Assets hinzu {#add-custom-properties-to-correspondence-management-assets}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können die Correspondence Management-Benutzeroberfläche anpassen und Benutzern ein angepasstes Set an Eigenschaften und Registerkarten bieten. Diese Anpassung umfasst das Hinzufügen benutzerdefinierter Felder/Eigenschaften und Registerkarten zu bestimmten Asset-Typen/Briefen oder allen Asset-Typen und Briefen.
 
@@ -33,7 +33,7 @@ Die folgenden Fälle zeigen, wie Sie Eigenschaften/Registerkarten zu Corresponde
 
 Durch Anpassen der Eigenschaften, Pfade und Werte in diesen Szenarios können Sie benutzerdefinierte Eigenschaften und Registerkarten zu einem anderen Assetsset gemäß Ihren Anforderungen hinzufügen.
 
-### Szenario: Hinzufügen eines allgemeinen Felds (Eigenschaft) zu allen Assettypen  {#scenario-adding-a-common-field-property-to-all-the-asset-types}
+### Szenario: Hinzufügen eines allgemeinen Felds (Eigenschaft) zu allen Assettypen {#scenario-adding-a-common-field-property-to-all-the-asset-types}
 
 Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Eigenschaft allen Assettypen (Text, Liste, Bedingung und Layout-Fragmente) und Briefen hinzufügen können. Mithilfe dieses Szenarios können Sie allen Assets und Briefen eine Eigenschaft, den Ort der Empfänger, hinzufügen. Die Eigenschaft &quot;Position der Empfänger&quot;hilft dabei herauszufinden, für welches geografische Gebiet ein Asset oder Brief bereitgestellt werden muss.
 
@@ -45,7 +45,7 @@ Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Eigenschaft allen Assetty
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Eigenschaft zu allen Assettypen und Briefen hinzuzufügen:
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen css mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der css-Ordner (der sich im ccrui-Ordner befindet), indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner items im folgenden Pfad und wählen Sie **Überlagerungsknoten**:
@@ -56,9 +56,9 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Eigenschaft z
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:**  /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
+      **Pfad:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
 
-      **Speicherort:** /apps/
+      **Ort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -89,7 +89,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Eigenschaft z
       |---|---|---|
       | fieldLabel | Zeichenfolge | Der Name, den Sie dem Feld/der Eigenschaft geben möchten. (Hier: Ort des Empfängers) |
       | name | Zeichenfolge | `./extendedproperties/GeoLocation` (Behalten Sie den Wert bei, den Sie unter dem Elementknoten erstellt haben.) |
-      | renderReadOnly | Boolesch | true |
+      | renderReadOnly | Boolesch | Ja |
       | sling:resourceType | Zeichenfolge | granite/ui/components/coral/foundation/form/textfield |
 
    1. Klicken Sie auf **Alle speichern**.
@@ -104,7 +104,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Eigenschaft z
 
    >[!NOTE]
    >
-   >Die gängigsten Eigenschaften für alle Assets, die Sie hinzufügen, werden auf der Registerkarte „Grundeinstellungen“ der Asset-Eigenschaften angezeigt. Standardmäßig werden die allgemeinen Eigenschaften, die für alle Assets hinzugefügt werden, auf der Seite „Eigenschaften“ sowie auf der Seite „Erstellung“ angezeigt. Um die allgemeinen Eigenschaften auszublenden, müssen Sie `[link to show / hide properties]` auswählen.
+   >Die gängigsten Eigenschaften für alle Assets, die Sie hinzufügen, werden auf der Registerkarte „Grundeinstellungen“ der Asset-Eigenschaften angezeigt. Standardmäßig werden die allgemeinen Eigenschaften, die für alle Assets hinzugefügt werden, auf der Seite „Eigenschaften“ sowie auf der Seite „Erstellung“ angezeigt. Um die allgemeinen Eigenschaften auszublenden, müssen Sie `[link to show / hide properties]`.
 
 ### Szenario: Hinzufügen eines benutzerdefinierte Dropdown-Menüs und von Werten zu einer benutzerdefinierten Eigenschaft/einem benutzerdefinierten Feld {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
@@ -116,7 +116,7 @@ Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Eigenschaft allen Asset-T
 
 1. Unter dem neu erstellten Überlagerungsknoten (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items)
 
-   Erstellen Sie für jede Eigenschaft (Felder) einen Knoten, für den Sie eine Dropdown-Liste (hier `geographicallocation`) des Typs nt:unstructured erstellen müssen.
+   Erstellen Sie für jede Eigenschaft (Felder) einen Knoten, für den Sie eine Dropdown-Liste erstellen müssen (hier) `geographicallocation`) des Typs nt:unstructured.
 
 1. Fügen Sie dem Knoten (hier: geographicallocation) die folgenden Eigenschaften hinzu und klicken Sie auf **Alle speichern**:
 
@@ -124,13 +124,13 @@ Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Eigenschaft allen Asset-T
    |--- |--- |---|
    | fieldLabel | Zeichenfolge | Der Name, den Sie dem Feld/der Eigenschaft geben möchten. (Hier: geographicallocation) |
    | name | Zeichenfolge | `./extendedproperties/geographicallocation` (Behalten Sie den Wert bei, den Sie unter dem Elementknoten erstellt haben.) |
-   | renderReadOnly | Boolesch | true |
+   | renderReadOnly | Boolesch | Ja |
    | sling:resourceType | Zeichenfolge | granite/ui/components/coral/foundation/form/select |
 
 1. Fügen Sie unter dem property-Knoten (hier geographicallocation) einen neuen Knoten mit dem Namen `items` hinzu. Fügen Sie unter dem items-Knoten jeweils einen Knoten für die Werte im Dropdown-Menü hinzu. Als bewährte Methode fügen Sie den ersten Knoten als leer hinzu, um als Standardwert des Dropdown-Menüs zu dienen und eine Option für den Benutzer, damit dieser einen Wert für das Feld angeben kann. Um mehrere Optionen/Drop-Down-Werte hinzuzufügen, wiederholen Sie die folgenden Schritte:
 
    1. Klicken Sie auf den property-Knoten, (hier: geographicallocation) mit der rechten Maustaste und wählen Sie **Erstellen** >**Knoten erstellen**.
-   1. Geben Sie den Namen des Felds als `item1,` beibehalten als nt:unstructured ein und klicken Sie auf **OK**.
+   1. Geben Sie den Namen des Felds als `item1,` den Typ als nt:unstructured beibehalten und auf **OK**.
    1. Fügen Sie die folgenden Eigenschaften dem neu erstellten Knoten (hier: item1) hinzu und klicken Sie auf **Alle speichern**:
 
       | Name | Typ | Wert |
@@ -152,10 +152,10 @@ Dieses Beispiel zeigt, wie Sie eine benutzerdefinierte Registerkarte, Empfänger
 
 Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld zu allen Assets hinzufügen:
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen cmmetadataproperties mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner cmmetadataproperties (der sich im Inhaltsordner befindet), indem Sie folgende Schritte durchführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner cmmetadataproperties im folgenden Pfad und wählen Sie **Überlagerungsknoten** aus:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner cmmetadataproperties im folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties`
 
@@ -163,9 +163,9 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:**  /libs/fd/cm/ma/gui/content/cmmetadataproperties
+      **Pfad:** /libs/fd/cm/ma/gui/content/cmmetadataproperties
 
-      **Speicherort:** /apps/
+      **Ort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -213,11 +213,11 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner items und wählen Sie **Erstellen** > **Knoten erstellen**.
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 
-      **Name:** Column1 (oder der Name, den Sie dem Knoten geben möchten - dieser Name wird nicht in der Benutzeroberfläche angezeigt.)
+      **Name:** Column1 (Oder der Name, den Sie dem Knoten geben möchten - dieser Name wird nicht in der Benutzeroberfläche angezeigt.)
 
       **Typ:** nt:unstructured
 
-   1. Fügen Sie dem Knoten (hier Column1) die folgende Eigenschaft hinzu und klicken Sie auf **Save All**:
+   1. Fügen Sie dem Knoten (hier Column1) die folgende Eigenschaft hinzu und klicken Sie auf **Alle speichern**:
 
       | Name | Typ | Wert |
       |--- |--- |--- |
@@ -249,14 +249,14 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
       |---|---|---|
       | fieldLabel | Zeichenfolge | Ort der Empfänger (oder der Name, den Sie dem Feld geben möchten.) |
       | name | Zeichenfolge | ./extendedproperties/GeographicalLocation |
-      | renderReadOnly | Boolesch | true |
+      | renderReadOnly | Boolesch | Ja |
       | sling:resourceType | Zeichenfolge | /libs/granite/ui/components/coral/foundation/form/textfield |
 
 1. Um diese Registerkarte für Briefe hinzuzufügen, erstellen Sie einen Überlagerungsordner mit dem Pfad/der Struktur ähnlich dem folgenden items-Ordner unter folgendem Pfad:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
-   Um eine Überlagerung für einen Brief oder ein anderes Asset zu erstellen, verwenden Sie den folgenden Pfad, indem Sie [assettype] durch Text, Bedingung, Liste, Datenwörterbuch oder Fragment ersetzen:
+   Um Überlagerungen für Briefe oder andere Assets zu erstellen, verwenden Sie den folgenden Pfad, indem Sie [assettype] mit Text, Bedingung, Liste, Datenwörterbuch oder Fragment:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[assettype]/items/tabs/items`
 
@@ -266,9 +266,9 @@ Mithilfe des folgenden Verfahrens können Sie eine Registerkarte mit einem Feld 
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:**  /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items
+      **Pfad:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items
 
-      **Speicherort:** /apps/
+      **Ort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -316,12 +316,12 @@ Beispielsweise möchten Sie nur zu den Text-Assets eine Eigenschaft, den Ort der
 
 Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schritte aus:
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Um eine Registerkarte in einem Asset-Typ (z. B. Text) zu erstellen, erstellen Sie die folgende Ordnerstruktur im Apps-Ordner:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
-   [AssetType]  = Text, Bedingung, Liste, Brief, Datenwörterbuch oder Fragment
+   [AssetType] = Text, Bedingung, Liste, Brief, Datenwörterbuch oder Fragment
 
    Führen Sie die folgenden Schritte aus, um diese Ordnerstruktur zu erstellen:
 
@@ -339,7 +339,7 @@ Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schr
 
       **Pfad:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
 
-      **Speicherort:** /apps/
+      **Ort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -408,7 +408,7 @@ Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schr
    1. Klicken Sie mit der rechten Maustaste auf die entsprechenden Knoten (hier items unter Column1) und wählen Sie **Erstellen** >**Knoten erstellen**.
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 
-      **Name:** Ein Name Ihrer Wahl (hier: GeoLocation)
+      **Name:** Name Ihrer Wahl (hier: GeoLocation)
 
       **Typ:** nt:unstructured
 
@@ -418,7 +418,7 @@ Um eine Eigenschaft einem Assettyp hinzuzufügen, führen Sie die folgenden Schr
       |---|---|---|
       | fieldLabel | Zeichenfolge | Ort der Empfänger (oder der Name, den Sie dem Feld geben möchten.) |
       | name | Zeichenfolge | ./extendedproperties/GeoLocation |
-      | renderReadOnly | Boolesch | true |
+      | renderReadOnly | Boolesch | Ja |
       | sling:resourceType | Zeichenfolge | granite/ui/components/coral/foundation/form/textfield |
 
 1. Um Ihre Anpassungen anzuzeigen, bewegen Sie den Mauszeiger über das entsprechende Asset (hier: ein Text), klicken Sie auf „Eigenschaften anzeigen“ und klicken Sie auf **Bearbeiten**. Die neue Registerkarte und das Feld (Ort der Empfänger) werden auf der Benutzeroberfläche angezeigt.
@@ -439,9 +439,9 @@ Standardmäßig sind die benutzerdefinierten Eigenschaften, die neuen Registerka
 
 1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte für Brief enthält: Bei anderen Assettypen ist der Pfad in der folgenden Tabelle vorgegeben:
 
-   **Pfad:**  /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/properties/items/letterproperties/items
+   **Pfad:** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
 
-   **Speicherort:** /apps/
+   **Ort:** /apps/
 
    **Knotentypen abgleichen:** Ausgewählt
 
@@ -457,7 +457,7 @@ Standardmäßig sind die benutzerdefinierten Eigenschaften, die neuen Registerka
 
 1. Klicken Sie auf **OK**. Die Ordnerstruktur wird im Apps-Ordner erstellt.
 
-1. Erstellen Sie unter dem von Ihnen erstellten Überlagerungselement-Knoten einen Knoten des Namens col4 (oder eines anderen Namens) und klicken Sie auf **Alle speichern**.
+1. Erstellen Sie unter dem von Ihnen erstellten Überlagerungselement-Knoten einen Knoten mit dem Namen col4 (oder einem anderen Namen) und klicken Sie auf **Alle speichern**.
 
    Beispielsweise ist Folgendes der Überlagerungsknoten, der für Briefe erstellt wird.
 
@@ -493,13 +493,13 @@ Standardmäßig sind die benutzerdefinierten Eigenschaften, die neuen Registerka
 
    Benutzerdefinierte Eigenschaft, Sprache, die auf der Benutzeroberfläche für die Erstellung eines Briefs angezeigt werden
 
-## Anpassen der Listenansicht, um benutzerdefinierte Eigenschaften anzuzeigen  {#customize-the-list-view-to-show-custom-properties}
+## Anpassen der Listenansicht, um benutzerdefinierte Eigenschaften anzuzeigen {#customize-the-list-view-to-show-custom-properties}
 
 Nachdem Sie eine benutzerdefinierte Eigenschaft zu Correspondence Management-Assets hinzugefügt haben, müssen Sie weitere Änderungen in CRX/DE vornehmen, um sicherzustellen, dass die benutzerdefinierte Eigenschaft auf der Correspondence Management-Benutzeroberfläche angezeigt wird.
 
 Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in der Benutzeroberfläche der Correspondence Management-Asset-Liste anzuzeigen:
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie die folgende Ordnerstruktur im Apps-Ordner:
 
    `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns`
@@ -512,9 +512,9 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:**  /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
+      **Pfad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
 
-      **Speicherort:** /apps/
+      **Ort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -527,7 +527,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
    1. Klicken Sie mit der rechten Maustaste auf den entsprechenden Knoten (Spalten) und wählen Sie **Erstellen** >**Knoten erstellen**.
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
 
-      **Name:** Ein Name Ihrer Wahl (hier: GeographicalLocation)
+      **Name:** Name Ihrer Wahl (hier: GeographicalLocation)
 
       **Typ:** nt:unstructured
 
@@ -551,9 +551,9 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:**  /libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage
+      **Pfad:** /libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage
 
-      **Speicherort:** /apps/
+      **Ort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -593,7 +593,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
       %>
       ```
 
-   1. Fügen Sie vor dem Start des &lt;tr> -Tags (&lt;tr &lt;%= attrs.build() %>) Folgendes hinzu:
+   1. Fügen Sie Folgendes vor dem Start des &lt;tr> Tag (&lt;tr attrs.build=&quot;&quot;>>):
 
       ```
       <%
@@ -631,7 +631,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
 
    | Name | Typ | Wert |
    |--- |--- |--- |
-   | sling:orderBefore | Zeichenfolge | Der Name des Spaltenknotens im Pfad &quot;`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns`&quot;, vor dem die benutzerdefinierte Spalte in der Benutzeroberfläche angezeigt werden muss. Wenn die Spalte &quot;Geografischer Standort&quot;vor der Spalte &quot;Version&quot;angezeigt werden soll (links davon), fügen Sie die Eigenschaft `sling:orderBefore` zum Knoten GeoLocation unter dem Pfad &quot;`/apps/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns/GeoLocation`&quot;hinzu und legen Sie den Wert der Eigenschaft auf Version fest. |
+   | sling:orderBefore | Zeichenfolge | Der Name des Spaltenknotens im Pfad &quot;`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns`&quot;, vor der die benutzerdefinierte Spalte in der Benutzeroberfläche angezeigt werden muss. Wenn die Spalte &quot;Geografischer Standort&quot;vor der Spalte &quot;Version&quot;angezeigt werden soll, fügen Sie hier die Eigenschaft hinzu `sling:orderBefore` zum GeoLocation-Knoten unter Pfad &quot;`/apps/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns/GeoLocation`und legen Sie den Wert der Eigenschaft auf Version fest. |
 
    Wenn Sie die Eigenschaft „sling:orderBefore“ hinzufüge, um die Spalte „Standort“ anzugeben, müssen Sie auch die Reihenfolge des entsprechenden &lt;td>-Tags aktualisieren, was in Schritt 6.4 dieses Verfahrens erklärt wird. Beispiel: In diesem Fall müssen Sie sicherstellen, dass der &lt;td>-Tag des geografischen Standorts vor &lt;td>-Tag der Spalte „Version“ platziert wird:
 
@@ -640,7 +640,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Eigenschaft in
    <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(version) %>"><%= xssAPI.encodeForHTML(version) %></td>
    ```
 
-## Aktivieren der Suche nach benutzerdefinierten Eigenschaften  {#enable-search-for-custom-properties}
+## Aktivieren der Suche nach benutzerdefinierten Eigenschaften {#enable-search-for-custom-properties}
 
 Standardmäßig enthält die Volltextsuche keine benutzerdefinierten Eigenschaften, die Sie zur Benutzeroberfläche mit CRX/DE hinzufügen.
 
@@ -648,8 +648,8 @@ Um die benutzerdefinierten Eigenschaften in die Suche einzubeziehen, müssen Sie
 
 Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, führen Sie die folgenden Schritte aus:
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Gehen Sie zu `/oak:index/cmLucene`und fügen Sie einen Knoten mit dem Namen **aggregates** hinzu.
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Navigieren Sie zu `/oak:index/cmLucene`und fügen Sie einen Knoten mit dem Namen **Aggregate** darunter.
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner „cmLucene“ und wählen Sie **Erstellen** > **Knoten erstellen**.
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **OK**:
@@ -698,10 +698,10 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
       | **Name** | **Typ** | **Wert** |
       |---|---|---|
-      | analyzed | Zeichenfolge | true |
+      | analyzed | Zeichenfolge | Ja |
       | name | Zeichenfolge | extendedProperties/location (oder der Name der Eigenschaft, die Sie zur Suche hinzufügen möchten) |
-      | propertyIndex | Boolesch | true |
-      | useInSuggest | Boolesch | true |
+      | propertyIndex | Boolesch | Ja |
+      | useInSuggest | Boolesch | Ja |
 
    1. Klicken Sie auf **Alle speichern**.
 
@@ -713,9 +713,9 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 >
 >/oak:index/cmLucene“ und ändern Sie den Wert der Eigenschaft
 
-## Ändern Sie die Standardanzeige der Seite „Suche“  {#change-default-view-of-the-search-page}
+## Ändern Sie die Standardanzeige der Seite „Suche“ {#change-default-view-of-the-search-page}
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen list mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Listenordner unter /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner items im folgenden Pfad und wählen Sie **Überlagerungsknoten**:
@@ -724,9 +724,9 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:**  /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list
+      **Pfad:** /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list
 
-      **Speicherort:** /apps/
+      **Ort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -742,13 +742,13 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
 1. Die Anpassung zeigt Suchergebnisse in der Listenansicht für alle Konsolen, einschließlich Formulare und Dokumente, Assets und Websites.
 
-## Ändern Sie die Standardanzeige der Seite „Assets“{#change-default-view-of-the-assets-page}
+## Ändern Sie die Standardanzeige der Seite „Assets“ {#change-default-view-of-the-assets-page}
 
 >[!NOTE]
 >
 >Diese Schritte ändern die Standardansicht aller Konsolen wie Formulare und Dokumente, Assets und Websites.
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen list mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Listenordner unter:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
@@ -761,7 +761,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
       **Pfad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
 
-      **Speicherort:** /apps/
+      **Ort:** /apps/
 
       **Knotentypen abgleichen:** Ausgewählt
 
@@ -777,7 +777,7 @@ Um die Indexerstellung von benutzerdefinierten Eigenschaften zu ermöglichen, f�
 
 1. Löschen Sie die Browser-Cookies oder verwenden Sie den Inkognitomodus Ihres Browsers, um die Elemente anzuzeigen. Die Assets-Seite wird standardmäßig im Kartenlayout angezeigt.
 
-## Einblenden/Ausblenden benutzerdefinierter Eigenschaften auf den Seiten „Asseterstellung“ und „Eigenschaften“  {#show-hide-custom-properties-on-asset-creation-and-properties-pages}
+## Einblenden/Ausblenden benutzerdefinierter Eigenschaften auf den Seiten „Asseterstellung“ und „Eigenschaften“ {#show-hide-custom-properties-on-asset-creation-and-properties-pages}
 
 Um die benutzerdefinierten Eigenschaften ein- bzw. auszublenden, führen Sie die folgenden Schritte aus:
 
@@ -792,12 +792,12 @@ Um die benutzerdefinierten Eigenschaften ein- bzw. auszublenden, führen Sie die
 
    | Name | Typ | Wert |
    |---|---|---|
-   | hideOnCreate | Boolesch | true |
+   | hideOnCreate | Boolesch | Ja |
 
 1. Um die benutzerdefinierte Eigenschaft auf der Seite „Eigenschaften“ von Asets auszublenden, fügen Sie folgende Eigenschaft dazu und klicken Sie auf **Alle speichern**:
 
    | Name | Typ | Wert |
    |---|---|---|
-   | hideOnEdit | Boolesch | true |
+   | hideOnEdit | Boolesch | Ja |
 
    Wenn Sie die Werte wieder anzeigen möchten, legen Sie die Eigenschaftswerte wieder auf`false`   fest oder löschen Sie die entsprechenden Eigenschafteneinträge.

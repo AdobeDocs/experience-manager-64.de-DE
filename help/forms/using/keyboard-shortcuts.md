@@ -1,18 +1,18 @@
 ---
 title: Tastaturbefehle für AEM Forms
-seo-title: Tastaturbefehle für AEM Forms
+seo-title: AEM Forms Keyboard Shortcuts
 description: In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für adaptive Formulare, im Design-Editor, im Inhaltsbrowser und in Correspondence Management für Windows und Macintosh verwendet werden können.
-seo-description: In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für adaptive Formulare, im Design-Editor, im Inhaltsbrowser und in Correspondence Management verwendet werden können.
+seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 08cf95bc-3417-48d4-9df2-5bd56797bc5d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1147'
 ht-degree: 79%
 
 ---
@@ -33,10 +33,10 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z&amp;ast; |
 | Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
 | Mehrere Komponenten auswählen | Umschalt+Klick | Umschalt+Klick |
-| Ausgewählte Komponente kopieren | Strg-C | Strg+C&amp;Zurück |
+| Ausgewählte Komponente kopieren | Strg-C | Strg+C&amp;ast; |
 | Ausgewählte Komponente(n) ausschneiden. Die ausgeschnittene Komponente verschwindet erst, wenn sie an der neuen Position eingefügt wurde. | Strg-X | Strg-X&amp;ast; |
 | Einfügen von Komponenten | Strg+V | Strg+V |
-| Ausgewählte Komponente(n) löschen | Strg+Entf | Strg+Entf&amp;Letzte |
+| Ausgewählte Komponente(n) löschen | Strg+Entf | Strg+Entf&amp;ast; |
 | Ausgewählte Komponente(n) löschen | Strg+Rücktaste | Strg+Rücktaste&amp;ast; |
 | Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&amp;ast; |
 | Kuratieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+I | Strg+I&amp;ast; |
@@ -54,7 +54,6 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 >* Mac OS: Befehlstaste+Klick auf benötigte Komponenten
 
 >
-
 
 
 ## Themen-Editor  {#themeeditor}
@@ -77,9 +76,9 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 |---|---|---|
 | Alle Akkordeons in der Formularobjektstruktur anzeigen, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann Pfeil nach rechts zum Erweitern | Befehl+A zur Auswahl aller Akkordeons, gefolgt von dem Pfeil nach rechts zum Erweitern |
 | Alle Akkordeons in der Formularobjektstruktur ausblenden, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann Pfeil nach links zum Reduzieren | Befehl+A zur Auswahl aller Akkordeons, gefolgt von dem nach links gerichteten Pfeil zum Reduzieren |
-| Ausgewähltes Akkordeon in der Formularobjektstruktur erweitern | Rechtspfeil | Rechtspfeil |
+| Ausgewähltes Akkordeon in der Formularobjektstruktur erweitern | Nach-rechts-Taste | Nach-rechts-Taste |
 | Ausgewähltes Akkordeon in der Formularobjektstruktur ausblenden | Nach-links-Taste | Nach-links-Taste |
-| Nächsten Eintrag in der Formularobjektstruktur auswählen | Nach-unten-Pfeil | Nach-unten-Pfeil |
+| Nächsten Eintrag in der Formularobjektstruktur auswählen | Nach-unten-Taste | Nach-unten-Taste |
 | Vorherigen Eintrag in der Formularobjektstruktur auswählen | Nach-oben-Taste | Nach-oben-Taste |
 
 [1] Ersetzt Strg + Rechtspfeil für Windows und Befehl + Rechtspfeil für Mac OS.\
@@ -89,8 +88,8 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tastaturbefehl aufgeführt, die Sie im Correspondence Management-Texteditor verwenden können. Diese Tastaturkürzel können Sie wie folgt verwenden:
 
-* Erstellen oder Bearbeiten eines [Text](document-fragments.md)-Assets
-* Bearbeiten eines Textmoduls nach dem Tippen auf das relevante Bearbeitungssymbol ( ![edittextmodule](assets/edittextmodule.png)) beim Erstellen einer Korrespondenz [a3/>.](/help/forms/using/create-correspondence.md)
+* Erstellen oder Bearbeiten von [Text](document-fragments.md) Asset
+* Bearbeiten eines Textmoduls nach dem Tippen auf das relevante Symbol &quot;Bearbeiten&quot;( ![edittextmodule](assets/edittextmodule.png)) when [Korrespondenz erstellen](/help/forms/using/create-correspondence.md).
 
 ### Textauswahl und Bewegen des Cursors {#text-selection-and-moving-the-cursor-around}
 
@@ -148,13 +147,13 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
   </tr>
   <tr>
    <td><p>Wählen Sie Text ein Zeichen nach dem anderen in Rückwärtsrichtung</p> </td> 
-   <td><p>Umschalt+Linkspfeil</p> </td> 
-   <td>Umschalt+Linkspfeil</td> 
+   <td><p>Umsch+Nach-links-Taste</p> </td> 
+   <td>Umsch+Nach-links-Taste</td> 
   </tr>
   <tr>
    <td><p>Wählen Sie Text ein Zeichen nach dem anderen in Vorwärtsrichtung</p> </td> 
-   <td><p>Umschalt+Rechtspfeil</p> </td> 
-   <td>Umschalt+Rechtspfeil</td> 
+   <td><p>Umsch+Nach-rechts-Taste</p> </td> 
+   <td>Umsch+Nach-rechts-Taste</td> 
   </tr>
   <tr>
    <td><p>Wählen Sie Text ein Absatz nach dem anderen in Rückwärtsrichtung</p> </td> 
@@ -242,7 +241,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
  </tbody>
 </table>
 
-### Aktionen für Rückgängig und Wiederherstellen  {#undo-and-redo-actions}
+### Aktionen für Rückgängig und Wiederherstellen {#undo-and-redo-actions}
 
 <table> 
  <tbody>
@@ -264,7 +263,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
  </tbody>
 </table>
 
-### Ändern der Schriftgröße  {#changing-font-size}
+### Ändern der Schriftgröße {#changing-font-size}
 
 <table> 
  <tbody>
@@ -286,7 +285,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
  </tbody>
 </table>
 
-### Löschen eines Wortes  {#deleting-a-word}
+### Löschen eines Wortes {#deleting-a-word}
 
 <table> 
  <tbody>
@@ -308,7 +307,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
  </tbody>
 </table>
 
-### Kopieren und einfügen  {#copy-and-paste}
+### Kopieren und einfügen {#copy-and-paste}
 
 <table> 
  <tbody>

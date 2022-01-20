@@ -1,8 +1,8 @@
 ---
 title: Connector für IBM FileNet konfigurieren
-seo-title: Connector für IBM FileNet konfigurieren
+seo-title: Configuring Connector for IBM FileNet
 description: Erfahren Sie, wie Sie den Connector für IBM FileNet konfiguriert, um die Kommunikation zwischen AEM Forms und IBM FileNet zu aktivieren.
-seo-description: Erfahren Sie, wie Sie den Connector für IBM FileNet konfiguriert, um die Kommunikation zwischen AEM Forms und IBM FileNet zu aktivieren.
+seo-description: Learn how to configure the Connector for IBM FileNet to enable communication between AEM forms and IBM FileNet.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 exl-id: 3a3d59c2-6811-4513-8384-aa77fdc38686
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '735'
 ht-degree: 94%
 
 ---
@@ -25,7 +25,7 @@ Connector für IBM FileNet aktiviert die Kommunikation zwischen AEM Forms und IB
 >
 >In früheren Versionen konnten Elemente in einem ECM-Repository gespeichert werden. In dieser Version werden Elemente im systemeigenen AEM Forms-Repository gespeichert und die Repository Provider-Dienste werden nicht mehr unterstützt. Die Migration von Elementen aus einem ECM-Repository zum AEM Forms-Repository erfolgt, wenn Sie eine Aktualisierung auf AEM Forms vornehmen. Weitere Informationen hierzu finden Sie im AEM Forms-Aktualisierungshandbuch für Ihren Anwendungsserver.
 
-## Verbindung zu Content Engine konfigurieren  {#configure-the-connection-to-the-content-engine}
+## Verbindung zu Content Engine konfigurieren {#configure-the-connection-to-the-content-engine}
 
 Die IBM FileNet P8 Content Engine bietet Softwaredienste zum Verwalten von Unternehmensinhalten und kundendefinierten Geschäftsobjekten in FileNet-Inhalts-Repositorys.
 
@@ -54,7 +54,7 @@ Die IBM FileNet P8 Content Engine bietet Softwaredienste zum Verwalten von Unter
 1. Geben Sie in das Feld „Benutzername“ den Benutzernamen eines Benutzers ein, der über Zugriffsrechte auf den Standard-Objektspeicher, den Sie im vorherigen Schritt angegeben haben, verfügt.
 1. Geben Sie in das Feld „Kennwort“ das Kennwort für den Benutzer ein, und klicken Sie auf „Speichern“.
 
-## Prozess-Engine-Einstellungen konfigurieren  {#configure-the-process-engine-settings}
+## Prozess-Engine-Einstellungen konfigurieren {#configure-the-process-engine-settings}
 
 Connector für IBM FileNet enthält den Process Engine Connector für IBM FileNet-Dienst, mit dessen Hilfe mit der IBM FileNet Process Engine interagiert wird. Sie können Einstellungen für diesen Dienst konfigurieren.
 
@@ -67,14 +67,14 @@ Connector für IBM FileNet enthält den Process Engine Connector für IBM FileNe
 1. Geben Sie in das Feld „Benutzername“ den Benutzernamen ein, mit dessen Hilfe eine Verbindung mit der Prozess-Engine hergestellt wird.
 1. Geben Sie in das Feld „Kennwort“ das Kennwort ein, mit dessen Hilfe eine Verbindung mit der Prozess-Engine hergestellt wird, und klicken Sie auf „Speichern“.
 
-## Diensteinstellungen überprüfen  {#validation-of-service-settings}
+## Diensteinstellungen überprüfen {#validation-of-service-settings}
 
 Wenn Sie beim Konfigurieren der Verbindung mit Content Engine oder beim Konfigurieren der Prozess-Engine-Einstellungen einen falschen Benutzernamen oder ein falsches Kennwort eingeben, erhalten Sie in Abhängigkeit davon, ob die Dienste aktuell ausgeführt werden, folgende Ergebnisse:
 
 * Wenn der Repository Provider-Dienst für IBM FileNet und der Content Repository Connector for IBM FileNet-Dienst beim Speichern der Dienstkonfigurationsinformationen beendet sind, tritt kein Fehler auf. Beim nächsten Start des Dienstes wird jedoch eine Ausnahme ausgelöst und der Dienst startet nicht.
 * Wenn der Content Repository Provider-Dienst für IBM FileNet oder der Repository Connector for IBM FileNet-Dienst beim Speichern der Dienstkonfigurationsinformationen gestartet ist, versucht der Dienst sofort, die Anmeldeinformationen zu überprüfen. In diesem Fall tritt ein Fehler auf und die Konfigurationsinformationen werden nicht gespeichert.
 
-## Repository Service Provider ändern  {#change-the-repository-service-provider}
+## Repository Service Provider ändern {#change-the-repository-service-provider}
 
 Sie können konfigurieren, welcher Repository Service Provider mit FileNet verwendet werden soll. Aufrufe des Repository-Dienstes werden an den konfigurierten Provider delegiert.
 
@@ -82,9 +82,9 @@ Die folgenden Optionen sind verfügbar:
 
 **Aktueller Repository Provider-Name:** Der Name des aktuellen Repository Service Providers
 
-**IBM FileNet Repository Provider:** Stellt den FileNet Repository Provider zum Provider des Repositorys dar. Diese Option ist veraltet.
+**IBM FileNet Repository Provider:** Legt den FileNet-Repository-Provider als Provider für das Repository fest. Diese Option ist veraltet.
 
-**Repository-Anbieter:** Legt den nativen Repository-Provider als Provider für das Repository fest.
+**Repository Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
 
 >[!NOTE]
 >

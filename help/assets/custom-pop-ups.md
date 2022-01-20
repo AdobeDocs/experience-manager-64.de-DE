@@ -1,8 +1,8 @@
 ---
 title: Erstellen benutzerdefinierter Popups mithilfe von Schnellansichten
-seo-title: Verwenden von Schnellansichten zum Erstellen benutzerdefinierter Popups
+seo-title: Using Quickviews to create custom pop-ups
 description: Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
-seo-description: Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
+seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,18 +10,18 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
-feature: Konfiguration
+feature: Configuration
 role: Admin,User,Developer
 source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1010'
 ht-degree: 97%
 
 ---
 
 # Erstellen benutzerdefinierter Popups mithilfe von Schnellansichten {#using-quickviews-to-create-custom-pop-ups}
 
-Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden. Abhängig von dem von Ihnen verwendeten Viewer, können Benutzer mit dieser Funktion auf einen Hotspot, ein Miniaturbild oder auf eine Imagemap klicken, um Informationen oder zugehörige Inhalte anzuzeigen.
+Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können jedoch benutzerdefinierte Inhalte auslösen, die in Popup-Fenstern angezeigt werden. Abhängig von dem von Ihnen verwendeten Viewer, können Benutzer mit dieser Funktion auf einen Hotspot, ein Miniaturbild oder auf eine Imagemap klicken, um Informationen oder zugehörige Inhalte anzuzeigen.
 
 Schnellansichten werden in Dynamic Media von folgenden Viewern unterstützt:
 
@@ -167,7 +167,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
 
 
-1. Sie können jetzt eine Funktion verwenden, um ein einfaches Popup in der Schnellansicht aufzurufen. Im folgenden Beispiel wird ein `DIV` für ein Popup verwendet.
+1. Sie können jetzt eine Funktion verwenden, um ein einfaches Popup in der Schnellansicht aufzurufen. Im folgenden Beispiel wird ein `DIV` für ein Popup-Fenster verwendet.
 1. Gestalten Sie das Popup-`DIV` wie folgt. Fügen Sie gegebenenfalls Ihren eigenen Stil hinzu.
 
    ```xml
@@ -239,7 +239,7 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
    * Unser benutzerdefiniertes Popup-Fenster identifiziert.
    * Es aus dem DOM entfernt.
    * Den Viewer-Container identifiziert.
-   * Das Popup mit dem Viewer-Container verbunden.
+   * Das Popup-Fenster ist mit dem Viewer-Container verbunden.
 
 1. Ihr fertiger setHandlers-Code sollte nun etwa wie folgt aussehen (für den interaktiven Video-Viewer):
 

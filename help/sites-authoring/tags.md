@@ -1,8 +1,8 @@
 ---
 title: Verwenden von Tags
-seo-title: Verwenden von Tags
+seo-title: Using Tags
 description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
-seo-description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website
+seo-description: Tags are a quick and easy method of classifying content within a website
 uuid: a91f8724-fc35-4f40-b21c-bee90429765b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
 exl-id: 846a925a-673e-4051-a673-1a9236701f0a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '675'
 ht-degree: 85%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 85%
 
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Keywords oder Beschriftungen betrachtet werden, die einer Seite, einem Asset oder einem anderen Inhalt zugeordnet werden können, um Suchen zu ermöglichen und dadurch Inhalte und verwandte Inhalte zu finden.
 
-* Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden, finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md) .
+* Siehe [Verwalten von Tags](/help/sites-administering/tags.md) Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden.
 * Unter [Tagging für Entwickler](/help/sites-developing/tags.md) finden Sie Informationen über das Tagging-Framework sowie die Einbeziehung und Erweiterung von Tags in benutzerdefinierten Anwendungen.
 
 ## Zehn Gründe für das Verwenden von Tags {#ten-reasons-to-use-tagging}
@@ -48,11 +48,11 @@ Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten 
 
 Wenn Sie die Inhaltsstruktur für eine Website oder das Metadatenschema für Assets entwerfen, sollten Sie den leichten und zugänglichen Ansatz berücksichtigen, den Tagging bietet.
 
-## Anwenden von Tags   {#applying-tags}
+## Anwenden von Tags {#applying-tags}
 
 In der Autorenumgebung wenden Autoren möglicherweise Tags an, indem sie auf die Seiteneigenschaften zugreifen und ein oder mehrere Tags im Feld **Tags/Keywords** eingeben.
 
-Um [vordefinierte Tags](/help/sites-administering/tags.md) anzuwenden, verwenden Sie im Fenster **Seiteneigenschaften** das Feld **Tags** und das Fenster **Tags auswählen** . Die Registerkarte **Standard-Tags** ist der Standard-Namespace, was bedeutet, dass es kein Präfix `namespace-string:` in der Taxonomie gibt.
+Zur Anwendung [vordefinierte Tags](/help/sites-administering/tags.md)in der **Seiteneigenschaften** -Fenster verwenden Sie die **Tags** und **Tags auswählen** Fenster. Die Registerkarte **Standard-Tags** ist der Standard-Namespace, was bedeutet, dass es kein Präfix `namespace-string:` in der Taxonomie gibt.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -80,12 +80,12 @@ Tag-Clouds zeigen eine Cloud von Tags, entweder für die aktuelle Seite, die ges
 
 Die [Tag-Cloud](/help/sites-authoring/default-components-foundation.md#tag-cloud)-Komponente (allgemeine Komponentengruppe) wird verwendet, um der Seite eine Tag-Cloud hinzuzufügen.
 
-## Suchen nach Tags  {#searching-on-tags}
+## Suchen nach Tags {#searching-on-tags}
 
 Sie können sowohl in der Autoren- als auch in der Veröffentlichungsumgebung nach Tags suchen.
 
-### Verwenden der Suchkomponente  {#using-search-component}
+### Verwenden der Suchkomponente {#using-search-component}
 
-Das Hinzufügen einer [Suchkomponente](/help/sites-authoring/default-components-foundation.md#search) zu einer Seite bietet eine Suchfunktion, die Tags enthält und sowohl in der Autoren- als auch in der Veröffentlichungsumgebung verwendet werden kann.
+Hinzufügen einer [Suchkomponente](/help/sites-authoring/default-components-foundation.md#search) zu einer Seite bietet eine Suchfunktion, die Tags enthält und sowohl in der Autoren- als auch in der Veröffentlichungsumgebung verwendet werden kann.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)

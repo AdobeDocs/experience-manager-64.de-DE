@@ -1,8 +1,8 @@
 ---
 title: Entwickeln mit CRXDE Lite
-seo-title: Entwickeln mit CRXDE Lite
+seo-title: Developing with CRXDE Lite
 description: CRXDE Lite ist in AEM integriert und ermöglicht Ihnen die Durchführung von Standardentwicklungsaufgaben im Browser
-seo-description: CRXDE Lite ist in AEM integriert und ermöglicht Ihnen die Durchführung von Standardentwicklungsaufgaben im Browser
+seo-description: CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser
 uuid: a5eafc8c-f9fa-49ba-ad2f-0cccc427ca49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: 19cb3946-32ba-4f0b-89f0-f9272f2373d2
 exl-id: 40e24cc6-95a9-4efd-b812-4144ba44b071
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2131'
 ht-degree: 92%
 
 ---
 
-# Entwickeln mit CRXDE Lite  {#developing-with-crxde-lite}
+# Entwickeln mit CRXDE Lite {#developing-with-crxde-lite}
 
 In diesem Abschnitt wird beschrieben, wie Sie Ihre AEM-Anwendung mit CRXDE Lite entwickeln.
 
@@ -41,8 +41,8 @@ CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den AEM-Server h
 Um mit CRXDE Lite zu beginnen, gehen Sie wie folgt vor:
 
 1. Installieren Sie AEM.
-1. Geben Sie in Ihren Browser https://`<host>`:`<port>`/crx/de ein. Standardmäßig ist dies `http://localhost:4502/crx/de`.
-1. Geben Sie Ihren **Benutzernamen** und Ihr **Kennwort** ein. Standardmäßig sind es `admin` und `admin`.
+1. Geben Sie in Ihren Browser https:// ein.`<host>`:`<port>`/crx/de. Standardmäßig ist `http://localhost:4502/crx/de`.
+1. Geben Sie Ihren **Benutzernamen** und Ihr **Kennwort** ein. Standardmäßig ist `admin` und `admin`.
 
 1. Klicken Sie auf **OK**.
 
@@ -104,7 +104,7 @@ CRXDE Lite bietet folgende Funktionen:
   </tr> 
   <tr> 
    <td>Erstellen ...<br /> </td> 
-   <td><p>Dropdown-Menü, um Folgendes unter dem ausgewählten Knoten zu erstellen:<br /> </p> <p>- <strong>Knoten</strong>: ein Knoten mit einem beliebigen Knotentyp<br /> </p> <p>- <strong>File</strong>: nt:file-Knoten und sein nt:resource-Unterknoten</p> <p>- <strong>Ordner</strong>: nt:folder-Knoten</p> <p>- <strong>Vorlage</strong>: AEM-Vorlage</p> <p>- <strong>Komponente</strong>: AEM-Komponente</p> <p>- <strong>Dialog</strong>: AEM-Dialogfeld</p> </td> 
+   <td><p>Dropdown-Menü, um Folgendes unter dem ausgewählten Knoten zu erstellen:<br /> </p> <p>- <strong>Knoten</strong>: ein Knoten mit einem beliebigen Knotentyp<br /> </p> <p>- <strong>Datei</strong>: nt:file-Knoten und sein nt:resource-Unterknoten</p> <p>- <strong>Ordner</strong>: nt:folder-Knoten</p> <p>- <strong>Vorlage</strong>: AEM-Vorlage</p> <p>- <strong>Komponente</strong>: AEM-Komponente</p> <p>- <strong>Dialog</strong>: AEM-Dialogfeld</p> </td> 
   </tr> 
   <tr> 
    <td>Löschen<br /> </td> 
@@ -152,7 +152,7 @@ So erstellen Sie einen Ordner mit CRXDE Lite:
 
 1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
 
-### Erstellen einer Vorlage  {#creating-a-template}
+### Erstellen einer Vorlage {#creating-a-template}
 
 So erstellen Sie eine Vorlage mit CRXDE Lite:
 
@@ -163,9 +163,9 @@ So erstellen Sie eine Vorlage mit CRXDE Lite:
 
 1. Dieser Schritt ist optional: Legen Sie die **zugelassenen Pfade** fest. Klicken Sie auf **Weiter**
 
-1. Dieser Schritt ist optional: Legen Sie die **Zulässige übergeordnete Elemente** fest. Klicken Sie auf **Weiter**.
+1. Dieser Schritt ist optional: legen Sie die **Zugelassene übergeordnete Elemente**. Klicken Sie auf **Weiter**.
 
-1. Dieser Schritt ist optional: Legen Sie **Zulässige Kinder** fest. Klicken Sie auf **OK**.
+1. Dieser Schritt ist optional: legen Sie die **Zugelassene Kinder**. Klicken Sie auf **OK**.
 
 1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
 
@@ -177,9 +177,9 @@ Folgendes wird erstellt:
 
 Sie können Ihrer Vorlage Eigenschaften hinzufügen: weitere Informationen finden Sie unter [Erstellen einer Eigenschaft](#creating-a-property).
 
-### Erstellen einer Komponente  {#creating-a-component}
+### Erstellen einer Komponente {#creating-a-component}
 
-Die hier beschriebene Funktion ist nur verfügbar, wenn der Knotentyp `cq:Component` im Repository verfügbar ist.
+Die hier beschriebene Funktion ist nur verfügbar, wenn der Knotentyp `cq:Component` ist im Repository verfügbar.
 
 So erstellen Sie eine Komponente mit CRXDE Lite:
 
@@ -202,12 +202,12 @@ Folgendes wird erstellt:
 * Komponenteneigenschaften
 * Ein Komponenten-.jsp-Skript
 
-### Erstellen eines Dialogfelds  {#creating-a-dialog}
+### Erstellen eines Dialogfelds {#creating-a-dialog}
 
 So erstellen Sie ein Dialogfeld mit CRXDE Lite:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Browser.
-1. Klicken Sie im Navigationsfenster mit der rechten Maustaste auf die Komponente, in der Sie das Dialogfeld erstellen möchten, und wählen Sie **Erstellen ...**, dann **Dialogfeld erstellen ...**.
+1. Klicken Sie im Navigationsfenster mit der rechten Maustaste auf die Komponente, in der Sie das Dialogfeld erstellen möchten, und wählen Sie **Erstellen ...**, dann **Dialogfeld erstellen...**.
 
 1. Geben Sie **Beschriftung** und **Titel** ein. Klicken Sie auf **OK**.
 
@@ -250,7 +250,7 @@ So erstellen Sie eine Eigenschaft mit CRXDE Lite:
 
 1. Klicken Sie auf **Alle speichern**, um die Änderungen auf dem Server zu speichern.
 
-### Erstellen eines Skripts  {#creating-a-script}
+### Erstellen eines Skripts {#creating-a-script}
 
 So erstellen Sie ein neues Skript:
 
@@ -265,7 +265,7 @@ So erstellen Sie ein neues Skript:
 
 ### Exportieren und Importieren von Knotentypen {#exporting-and-importing-node-types}
 
-Mit CRXDE Lite können Sie Knotentypdefinitionen in die [CND-Notation (Compact Namespace and Node Type Definition)](http://jackrabbit.apache.org/jcr/node-type-notation.html) importieren und/oder exportieren.
+Mit CRXDE Lite können Sie Knotentypdefinitionen importieren und/oder exportieren in [CND-Notation (Compact Namespace and Node Type Definition)](http://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 So exportieren Sie eine Knotentypdefinition:
 

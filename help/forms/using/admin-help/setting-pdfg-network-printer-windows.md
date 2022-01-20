@@ -1,8 +1,8 @@
 ---
 title: Einrichten eines PDFG-Netzwerkdruckers (nur Windows)
-seo-title: Einrichten eines PDFG-Netzwerkdruckers (nur Windows)
+seo-title: Setting up a PDFG Network Printer (Windows only)
 description: Erfahren Sie, wie Sie einen PDFG-Netzwerkdrucker (nur Windows) einrichten
-seo-description: Erfahren Sie, wie Sie einen PDFG-Netzwerkdrucker (nur Windows) einrichten
+seo-description: Learn how to set up a PDFG Network Printer ( Windows only )
 uuid: 13b8481e-5ef0-4a07-9602-7bc4d9e05dd4
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ feature: PDF Generator
 exl-id: 0b7642c3-d616-44e8-a5d9-3cdd362fedb5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '608'
 ht-degree: 97%
 
 ---
@@ -32,12 +32,12 @@ Zum Einrichten eines PDFG-Netzwerkdruckers sind folgende Schritte erforderlich:
 1. Stellen Sie sicher, dass 32-Bit-JRE6 auf den Computern der Benutzer installiert ist.
 1. Installieren Sie den Drucker auf den Computern der Benutzer. (Siehe [PDFG-Netzwerkdrucker auf dem Computer des Benutzers installieren](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
-## E-Mail-Einstellungen für den PDFG-Netzwerkdrucker konfigurieren  {#configure-email-settings-for-pdfg-network-printer}
+## E-Mail-Einstellungen für den PDFG-Netzwerkdrucker konfigurieren {#configure-email-settings-for-pdfg-network-printer}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf „provider.email_sendmail_service“, geben Sie die SMTP-Einstellungen an und klicken Sie auf „Speichern“.
 
-## Einstellungen für den PDFG-Netzwerkdrucker konfigurieren  {#configure-the-pdfg-network-printer-settings}
+## Einstellungen für den PDFG-Netzwerkdrucker konfigurieren {#configure-the-pdfg-network-printer-settings}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „PDFG-Netzwerkdrucker“.
 1. Wählen Sie in der Liste „Adobe PDF-Einstellungen und Sicherheitseinstellungen“ die Optionen aus, die auf die erstellte PDF-Datei angewendet werden sollen. Genauere Informationen zu diesen Einstellungen finden Sie unter [Adobe PDF-Einstellungen konfigurieren](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) und [Sicherheitseinstellungen konfigurieren](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
@@ -57,7 +57,7 @@ Zum Einrichten eines PDFG-Netzwerkdruckers sind folgende Schritte erforderlich:
 
 Wenn Sie den ursprünglichen Standardtext in der E-Mail wiederherstellen möchten, klicken Sie auf „E-Mail-Inhalt wiederherstellen“.
 
-## PDFG-Netzwerkdrucker auf dem Computer des Benutzers installieren  {#install-pdfg-network-printer-on-a-user-s-computer}
+## PDFG-Netzwerkdrucker auf dem Computer des Benutzers installieren {#install-pdfg-network-printer-on-a-user-s-computer}
 
 Benutzer, die entweder über die Rolle „PDFG-Administrator“ oder über die Rolle „PDFG-Benutzer“ verfügen, können einen PDFG-Netzwerkdrucker installieren. Sie müssen ein 32-Bit JDK auf dem Computer installiert haben.
 

@@ -1,8 +1,8 @@
 ---
 title: Verwenden eines adaptiven Formulars in HTML Workspace
-seo-title: Verwenden eines adaptiven Formulars in HTML Workspace
+seo-title: Using an adaptive form in HTML Workspace
 description: Verwenden eines adaptiven Formulars in HTML Workspace
-seo-description: Verwenden eines adaptiven Formulars in HTML Workspace
+seo-description: Using an adaptive form in HTML Workspace
 uuid: 1ebe81ae-5c0b-4c07-8cd1-86efdf8415be
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 2f514072-81d9-48de-8369-cca94a330f1d
 exl-id: 88fa9c80-4eae-4663-a6c8-abbf1921444e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '677'
 ht-degree: 67%
 
 ---
 
-# Verwenden eines adaptiven Formulars in HTML Workspace  {#using-an-adaptive-form-in-html-workspace}
+# Verwenden eines adaptiven Formulars in HTML Workspace {#using-an-adaptive-form-in-html-workspace}
 
 AEM Forms on JEE bietet die Möglichkeit, ein adaptives Formular in HTML Workspace zu verwenden.
 
@@ -30,11 +30,11 @@ Führen Sie folgende Schritte durch, damit adaptive Formulare im Prozessdesign v
 * Sie können im Eigenschaftenblatt „Aufgabe zuweisen/Ausgangspunkt“ die Symbolleiste der obersten Ebene/die globale Symbolleiste eines adaptiven Formulars ausblenden.
 * Sie können neue Aktionsprofile für Wiedergabe- und Sendeaktionen in adaptiven Formularen verwenden.
 
-### LiveCycle-Anwendung importieren und exportieren  {#livecycle-application-export-and-import}
+### LiveCycle-Anwendung importieren und exportieren {#livecycle-application-export-and-import}
 
 Da adaptive Formulare im AEM-Repository vorhanden sind, enthält der Export der LiveCycle-Anwendung nur die Verweise für die verwendeten adaptiven Formulare. Daher erfolgt der Export und Import der LiveCycle-Anwendung in zwei Schritten. Die LiveCycle-Anwendung enthält Prozessdefinitionen usw. Ein separates Paket, das adaptive Formulare enthält, wird als ZIP-Datei aus AEM exportiert. Beim Importieren wird die LiveCycle-Anwendung über Workbench importiert und adaptive Formulare werden über AEM importiert.
 
-## Benutzerfreundlichkeit adaptiver Formulare in HTML Workspace  {#user-experience-of-adaptive-form-in-html-workspace}
+## Benutzerfreundlichkeit adaptiver Formulare in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
 HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu den Steuerelementen, die für Mobile Forms verfügbar sind. Ein Benutzer kann Anlagen hinzufügen, die adaptiven Formulare im HTML Workspace speichern, signieren, senden und navigieren, wenn der Benutzer eine Aufgabe oder einen Ausgangspunkt öffnet. Spezifikationen:
 
@@ -48,7 +48,7 @@ HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu
 
 1. **Workspace-Navigationssteuerelemente für adaptive Forms**: Die Schaltflächen &quot;Weiter/Zurück&quot;stehen zusammen mit den Schaltflächen &quot;Speichern&quot;, &quot;Senden&quot;und &quot;Route-Aktion&quot;für ein adaptives Formular in HTML Workspace zur Verfügung. Klicken Sie auf die Schaltflächen „Weiter/Zurück“, um zwischen den Bereichen der adaptiven Formulare in HTML Workspace zu navigieren. Die Schaltflächen „Weiter/Zurück“ ermöglichen die Navigation, ähnlich der Navigationssteuerelemente in der Ansicht „Mobil“ der adaptiven Formulare.
 
-1. **eSign-Dienste und die Übersichtskomponente des adaptiven Formulars**: Die Zusammenfassungskomponente ist in HTML Workspace nicht funktionsfähig. Das heißt, wenn ein adaptives Formular eine Übersichtkomponente beinhaltet, ist sie im Arbeitsbereich nicht sichtbar. Klicken Sie in der Esign-Komponente anstelle von „Automatisch senden“ auf „Senden“ oder eine Route-Aktion in HTML Workspace. Nach der Unterzeichnung des Dokuments ist es als reduziertes signiertes Dokument sichtbar. Klicken Sie auf **Senden** oder eine Route-Aktion, um die Aufgabe oder den Ausgangspunkt zu schließen/abzuschließen.
+1. **eSign-Dienste und Zusammenfassungskomponente des adaptiven Formulars**: Die Zusammenfassungskomponente ist in HTML Workspace nicht funktionsfähig. Das heißt, wenn ein adaptives Formular eine Übersichtkomponente beinhaltet, ist sie im Arbeitsbereich nicht sichtbar. Klicken Sie in der Esign-Komponente anstelle von „Automatisch senden“ auf „Senden“ oder eine Route-Aktion in HTML Workspace. Nach der Unterzeichnung des Dokuments ist es als reduziertes signiertes Dokument sichtbar. Klicken Sie auf **Senden** oder eine Route-Aktion, um die Aufgabe oder den Ausgangspunkt zu schließen/abzuschließen.
 
    Das signierte Dokument wird vom eSign-Dienste-Server erfasst und die Daten-XML-Datei wird im nächsten Schritt weitergeleitet.
 
@@ -56,7 +56,7 @@ HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu
 
 1. Öffnen Sie Adobe Experience Manager Forms Workbench.
 
-1. Gehen Sie zu **Datei > Neu > Anwendung** oder verwenden Sie die vorhandene Anwendung, um eine Anwendung zu erstellen.
+1. Navigieren Sie zu **Datei > Neu > Anwendung** oder verwenden Sie die vorhandene Anwendung, um eine Anwendung zu erstellen.
 
    ![Neue Anwendung erstellen](assets/create_new_appl.png)
 
@@ -77,4 +77,4 @@ HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu
    >
    >Weitere Informationen zur Erstellung eines adaptiven Formulars, finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
    >
-   >Weitere Informationen zum Erstellen eines Prozesses finden Sie unter [Erstellen und Verwalten von Prozessen](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
+   >Weitere Informationen zum Erstellen eines Prozesses finden Sie unter [Prozesse erstellen und verwalten](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

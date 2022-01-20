@@ -1,6 +1,6 @@
 ---
 title: Überlegungen zum Assets-Netzwerk
-description: Erläutert Netzwerküberlegungen bei der Erstellung einer  [!DNL Experience Manager] Assets-Bereitstellung.
+description: Erläutert Netzwerküberlegungen beim Entwurf eines [!DNL Experience Manager] Assets-Bereitstellung.
 contentOwner: AG
 feature: Developer Tools
 role: Architect,Admin
@@ -20,10 +20,10 @@ Stellen Sie sicher, dass Sie Folgendes in Ihre Netzwerkgrafik einbeziehen:
 
 * Möglichkeit der Verbindung des Client-Geräts (z. B. Computer, Mobilgerät oder Tablet) mit dem Netzwerk
 * Topologie des Unternehmensnetzwerks
-* Uplink zum Internet vom Unternehmensnetzwerk und der [!DNL Experience Manager]-Umgebung
-* Topologie der [!DNL Experience Manager]-Umgebung
-* Definieren Sie gleichzeitige Verbraucher der [!DNL Experience Manager]-Netzwerkschnittstelle
-* Definierte Workflows der [!DNL Experience Manager]-Instanz
+* Uplink zum Internet vom Unternehmensnetzwerk und dem [!DNL Experience Manager] Umgebung
+* Topologie der [!DNL Experience Manager] Umgebung
+* Definieren Sie gleichzeitige Verbraucher der [!DNL Experience Manager] Netzwerkschnittstelle
+* Definierte Workflows der [!DNL Experience Manager] instance
 
 ## Möglichkeit der Verbindung des Client-Geräts mit dem Unternehmensnetzwerk {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -47,13 +47,13 @@ Der rechts gezeigte Computer hat einen begrenzten Upstream zum Unternehmensnetzw
 
 Das Diagramm zeigt höhere Uplinkgeschwindigkeiten innerhalb des Unternehmensnetzwerks, als im Allgemeinen üblich sind. Diese Leitungen sind freigegebene Ressourcen. Wenn erwartet wird, dass ein freigegebener Switch die Vorgänge von 50 Clients abwickelt, kann es möglicherweise zu einem Engpass kommen. Im anfangs gezeigten Diagramm nutzen nur zwei Computer die betreffende Verbindung.
 
-## Uplink zum Internet vom Unternehmensnetzwerk und der [!DNL Experience Manager] Umgebung {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Uplink zum Internet vom Unternehmensnetzwerk und [!DNL Experience Manager] Umgebung {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 Es ist wichtig, unbekannte Faktoren des Internets und der VPC-Verbindung zu berücksichtigen, da die Bandbreite im Internet durch Spitzenlasten oder umfangreiche Anbieterausfälle verringert werden kann. Im Allgemeinen ist eine Internetverbindung zuverlässig. Manchmal kann es allerdings zu Engpässen kommen.
 
-Am Uplink von einem Unternehmensnetzwerk zum Internet können andere Dienste die Bandbreite nutzen. Es ist wichtig zu verstehen, wie viel Bandbreite für [!DNL Assets] reserviert oder priorisiert werden kann. Wenn beispielsweise eine 1 Gbit/s-Verbindung bereits zu 80 % genutzt wird, können Sie für [!DNL Experience Manager]-Assets nur maximal 20 % der Bandbreite zuweisen.
+Am Uplink von einem Unternehmensnetzwerk zum Internet können andere Dienste die Bandbreite nutzen. Es ist wichtig zu verstehen, wie viel Bandbreite zugewiesen oder priorisiert werden kann für [!DNL Assets]. Wenn beispielsweise eine 1 Gbit/s-Verbindung bereits zu 80 % genutzt wird, können Sie nur maximal 20 % der Bandbreite für [!DNL Experience Manager] Assets.
 
 Unternehmens-Firewalls und Proxys können Bandbreite zudem auf vielfältige Weise anpassen. Diese Geräteart kann Bandbreite mithilfe der Dienstgüte, der Bandbreitenbeschränkungen pro Benutzer oder der Bitratenbeschränkungen pro Host priorisieren. Dies sind wichtige Engpässe, die zu untersuchen sind, da sie das Assets-Benutzererlebnis erheblich beeinträchtigen können.
 
@@ -63,21 +63,21 @@ Dies ist der kleinste Engpass in Bezug auf Clients. Sie können jedoch die für 
 
 Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptionellen, 10 MBit/s schnellen Kanal gemeinsam nutzen. Je nach Größe der genutzten Assets reicht dies möglicherweise aus, um die Erwartungen der Benutzer zu erfüllen.
 
-## Topologie der [!DNL Experience Manager]-Umgebung {#topology-of-the-aem-environment}
+## Topologie der [!DNL Experience Manager] Umgebung {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-Die Erstellung der Topologie der [!DNL Experience Manager]-Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration und der Art und Weise, wie das Netzwerk in der Benutzerumgebung verbunden ist.
+Topologie der [!DNL Experience Manager] -Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration und der Art und Weise, wie das Netzwerk in der Benutzerumgebung verbunden ist.
 
 Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen binären S3-Speicher und konfigurierte dynamische Medien.
 
-Der Dispatcher teilt seine 100 MBit/s-Verbindung mit zwei Entitäten, der Außenwelt und der [!DNL Experience Manager]-Instanz. Für gleichzeitiges Hoch- und Herunterladen sollten Sie diesen Wert durch zwei teilen. Der zugeordnete externe Speicher verwendet eine separate Verbindung.
+Der Dispatcher teilt seine 100 MBit/s-Verbindung mit zwei Entitäten, der Außenwelt und der [!DNL Experience Manager] -Instanz. Für gleichzeitiges Hoch- und Herunterladen sollten Sie diesen Wert durch zwei teilen. Der zugeordnete externe Speicher verwendet eine separate Verbindung.
 
-Die [!DNL Experience Manager]-Instanz teilt ihre 1 Gbit/s-Verbindung mit mehreren Diensten. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
+Die [!DNL Experience Manager] -Instanz teilt die 1 Gbit/s-Verbindung mit mehreren Diensten. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
 
-Wenn Sie sich das Netzwerk vom Client-Gerät zur [!DNL Experience Manager]-Instanz ansehen, scheint der kleinste Engpass die 10-Mbit-Firewall-Drosselklappe des Unternehmens zu sein. Sie können diese Werte in der in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
+Überprüfen Sie das Netzwerk vom Client-Gerät zum [!DNL Experience Manager] Beispielsweise scheint der kleinste Engpass die Firewall-Drosselklappe von 10 Mbit für Unternehmen zu sein. Sie können diese Werte in der in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
 
-## Definierte Workflows der [!DNL Experience Manager]-Instanz {#defined-workflows-of-the-aem-instance}
+## Definierte Workflows der [!DNL Experience Manager] instance {#defined-workflows-of-the-aem-instance}
 
 Bei Überlegungen zur Netzwerkleistung ist es möglicherweise wichtig, die Workflows und die im System stattfindenden Veröffentlichungen zu berücksichtigen. Außerdem beanspruchen S3 oder Speicher, der im Netzwerk zugeteilt ist und von Ihnen verwendet wird, und I/O-Anforderungen Netzwerkbandbreite. Daher wird die Leistung selbst in einem voll optimierten Netzwerk durch die Anzahl der Datenträger-I/O beschränkt.
 

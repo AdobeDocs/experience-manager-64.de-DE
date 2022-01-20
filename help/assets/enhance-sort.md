@@ -1,6 +1,6 @@
 ---
 title: Optimierte Sortierung von Assets in AEM
-description: Erfahren Sie, wie [!DNL Experience Manager] Assets eine serverseitige Sortierung bereitstellt, um Ordner-Assets oder eine Suchabfrage auf einmal zu sortieren, anstatt sie in Stapeln auf der Clientseite zu sortieren.
+description: Erfahren Sie mehr [!DNL Experience Manager] Assets stellt eine serverseitige Sortierung bereit, um Ordner-Assets oder Suchabfragen auf einmal zu sortieren, anstatt sie in Stapeln auf der Clientseite zu sortieren.
 contentOwner: AG
 feature: Search
 role: User
@@ -14,7 +14,7 @@ ht-degree: 74%
 
 # Optimierte Sortierung von Assets in [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Erfahren Sie, wie [!DNL Experience Manager] Assets eine serverseitige Sortierung bereitstellt, um Ordner-Assets oder Suchabfragen auf einmal zu sortieren, anstatt sie in Stapeln auf der Clientseite zu sortieren.
+Erfahren Sie mehr [!DNL Experience Manager] Assets stellt eine serverseitige Sortierung bereit, um Ordner-Assets oder Suchabfragen auf einmal zu sortieren, anstatt sie in Stapeln auf der Clientseite zu sortieren.
 
 Die Suchfunktion von Adobe Experience Manager Assets wurde verbessert, um eine große Anzahl von Assets in der Ordnerlistenansicht und den Suchergebnisseiten effizient zu sortieren. Timeline-Einträge können ebenfalls sortiert werden. 
 
@@ -51,7 +51,7 @@ Die Suchfunktion von Adobe Experience Manager Assets wurde verbessert, um eine g
 
 >[!NOTE]
 >
->Um die Werte in den Spalten `Name` oder `Title`zu sortieren, überlagern Sie `/libs/dam/gui/content/commons/availablecolumns` und ändern Sie den Wert von `sortable` in `True`.
+>So sortieren Sie die Werte im `Name` oder `Title`Spalten, Überlagerung `/libs/dam/gui/content/commons/availablecolumns` und ändern Sie den Wert von `sortable` nach `True`.
 
 ## Sortieren von Assets in Suchergebnissen {#sorting-assets-in-search-results}
 
@@ -82,7 +82,7 @@ Sie können die Suchergebnisse basierend auf den folgenden Feldern sortieren:
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. Wählen Sie in der Timeline einen Eintrag in der Liste aus.  Wählen Sie beispielsweise **[!UICONTROL Kommentare]** aus, um die Liste der mit dem Asset verknüpften Anmerkungen anzuzeigen.
+1. Wählen Sie in der Timeline einen Eintrag in der Liste aus.  Wählen Sie beispielsweise **[!UICONTROL Kommentare]** , um die Liste der mit dem Asset verknüpften Anmerkungen anzuzeigen.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 

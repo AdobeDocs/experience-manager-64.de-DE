@@ -29,7 +29,7 @@ AEM sendet E-Mail-Benachrichtigungen an Benutzer, die:
 Voraussetzungen:
 
 * Benutzer müssen über eine in ihrem Profil festgelegte, gültige E-Mail-Adresse verfügen.
-* Der **Day CQ Mail Service** muss ordnungsgemäß konfiguriert sein.
+* Die **Day CQ Mail Service** muss ordnungsgemäß konfiguriert sein.
 
 Wenn ein Benutzer benachrichtigt wird, erhält er eine E-Mail in der Sprache, die in seinem Profil festgelegt ist. Jede Sprache verfügt über eine eigene, anpassbare Vorlage. Für neue Sprachen können neue E-Mail-Vorlagen hinzugefügt werden.
 
@@ -45,7 +45,7 @@ Es gelten die folgenden Beschränkungen:
 
 * Der **SMTP-Server-Anschluss** muss 25 oder höher sein.
 
-* Der Hostname des **SMTP-Servers** darf nicht leer sein.
+* Die **Hostname des SMTP-Servers** darf nicht leer sein.
 * Die **„Von“-Adresse** darf nicht leer sein.
 
 Zum Debuggen eines Problems mit dem **Day CQ Mail Service** können Sie die Protokolle des Diensts betrachten:
@@ -67,13 +67,13 @@ Fügen Sie zum Konfigurieren der „Von“-E-Mail-Adresse einen `sling:OsgiConfi
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ `sling:OsgiConfig`
 
-1. Fügen Sie dem Knoten `email.from` eine `String` -Eigenschaft hinzu. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
+1. Hinzufügen einer `String` -Eigenschaft auf den Knoten `email.from`. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
 
 1. Klicken Sie auf **Alle speichern**.
 
 Gehen Sie wie folgt vor, um den Knoten in den Inhaltspaketen Ihrer Quellordner festzulegen:
 
-1. Erstellen Sie in `jcr_root/apps/*app_name*/config folder` eine Datei mit dem Namen `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. In `jcr_root/apps/*app_name*/config folder`erstellen Sie eine Datei mit dem Namen `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
 
 1. Fügen Sie die folgende XML für den Knoten hinzu:
 
@@ -144,9 +144,9 @@ Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Stringvariabl
 * `${userId}`, die ID des Benutzers, der das Ereignis ausgelöst hat.
 * `${modifications}`beschreibt den Typ des Seitenereignisses und den Seitenpfad im folgenden Format:
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> =>  &lt;page path=&quot;&quot;>
+   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
-   Zum Beispiel:
+   Beispiel:
 
    PageModified => /content/geometrixx/en/products
 
@@ -193,7 +193,7 @@ Die Vorlage muss folgendes Format aufweisen:
  footer=<text_4>
 ```
 
-Dabei kann `<text_x>` eine Mischung aus statischem Text und dynamischen Zeichenfolgenvariablen sein.
+Wo `<text_x>` kann eine Mischung aus statischem Text und dynamischen Zeichenfolgenvariablen sein.
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Forumsbenachrichtigungen verwendet werden:
 
@@ -250,11 +250,11 @@ subject=<text_1>
 
 >[!NOTE]
 >
->Dabei kann `<text_x>` eine Mischung aus statischem Text und dynamischen Zeichenfolgenvariablen sein. Jede Zeile eines Elements `<text_x>` muss mit einem umgekehrten Schrägstrich ( `\`) enden, mit Ausnahme der letzten Instanz, wenn das Fehlen des umgekehrten Schrägstrichs das Ende der String-Variable `<text_x>` anzeigt.
+>Wo `<text_x>` kann eine Mischung aus statischem Text und dynamischen Zeichenfolgenvariablen sein. Jede Zeile eines `<text_x>` -Element mit einem umgekehrten Schrägstrich ( `\`), außer für die letzte Instanz, wenn das Fehlen des umgekehrten Schrägstrichs das Ende der `<text_x>` Zeichenfolgen-Variable.
 >
 >Weitere Informationen zum Vorlagenformat werden von der Methode [javadocs der Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)-Methode bereitgestellt.
 
-Die Methode `${payload.path.open}` zeigt den Pfad zur Payload des Arbeitselements an. Für eine Seite in Sites wäre `payload.path.open` beispielsweise `/bin/wcmcommand?cmd=open&path=…` ähnlich wie .; Dies ist ohne den Servernamen, weshalb der Vorlage `${host.prefix}` vorangestellt wird.
+Die Methode `${payload.path.open}` zeigt den Pfad zur Payload des Arbeitselements an. Beispiel: Bei einer Seite in Sites folgt dann `payload.path.open` ähnelt `/bin/wcmcommand?cmd=open&path=…`.; Dies ist ohne den Servernamen, weshalb die Vorlage diesem mit `${host.prefix}`.
 
 Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
@@ -290,7 +290,7 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
 Sie können wie folgt eine Vorlage in einer neuen Sprache hinzufügen:
 
-1. Fügen Sie in CRXDE eine Datei `<language-code>.txt` unten hinzu:
+1. Fügen Sie in CRXDE eine Datei hinzu `<language-code>.txt` unten:
 
    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : für Seitenbenachrichtigungen
    * `/etc/notification/email/default/com.day.cq.collab.forum` : für Forumsbenachrichtigungen
@@ -301,7 +301,7 @@ Sie können wie folgt eine Vorlage in einer neuen Sprache hinzufügen:
 
 >[!NOTE]
 >
->`<language-code>`, der als Dateiname für die E-Mail-Vorlage verwendet wird, muss ein aus zwei Buchstaben bestehender untergeordneter Sprachcode sein, der von AEM erkannt wird. AEM nutzt die Sprachcodes gemäß ISO-639-1.
+>Die `<language-code>` als Dateiname für die E-Mail-Vorlage verwendet wird, muss ein aus zwei Buchstaben bestehender untergeordneter Sprachcode sein, der von AEM erkannt wird. AEM nutzt die Sprachcodes gemäß ISO-639-1.
 
 ## Konfigurieren von E-Mail-Benachrichtigungen für AEM Assets {#assetsconfig}
 

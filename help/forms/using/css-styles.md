@@ -1,8 +1,8 @@
 ---
 title: Erstellen von CSS-Stilen für HTML5-Formulare
-seo-title: Erstellen von CSS-Stilen für HTML5-Formulare
+seo-title: Creating CSS styles for HTML5 forms
 description: 'Erfahren Sie, wie Sie das Erscheinungsbild von HTML5-Formularen ändern, indem Sie die CSS-Klasse ändern, die mit dem HTML-Formularelement verknüpft ist. '
-seo-description: 'Erfahren Sie, wie Sie das Erscheinungsbild von HTML5-Formularen ändern, indem Sie die CSS-Klasse ändern, die mit dem HTML-Formularelement verknüpft ist. '
+seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
 uuid: 43c689b4-243c-43de-a8be-1eef10d75295
 contentOwner: robhagat
 content-type: reference
@@ -13,7 +13,7 @@ feature: Mobile Forms
 exl-id: 9e381e71-63ff-41ab-a6ec-9f92447b65a0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '812'
 ht-degree: 90%
 
 ---
@@ -26,7 +26,7 @@ HTML5-Wiedergabe eines XFA-basierten Formularvorlage besteht aus mehreren HTML-E
 >
 >In den CSS-Klassen dürfen die Werte der Attribute für Breite, Höhe, Rahmenstärke, oberen Bereich, linken Bereich, rechten Bereich, unteren Bereich, Abstand und Rand nicht geändert werden. Änderungen an der Position und den Größenattributen ziehen Änderungen am Layout des Formulars nach sich.
 
-## CSS-Klassen für Elemente   {#css-classes-nbsp-for-elements-nbsp}
+## CSS-Klassen für Elemente  {#css-classes-nbsp-for-elements-nbsp}
 
 Jedes Element enthält klar definierte CSS-Klassen. Die Klassen können geändert werden, um das Aussehen eines Elements zu ändern. Mit Ausnahme des Feld- und Zeichenelements hat jedes Element zwei CSS-Klassen: Type-Klasse und Name-Klasse.
 
@@ -50,7 +50,7 @@ Das Widget-Element enthält das Element der Benutzeroberfläche für die Interak
 
 * **Widget**: Jedes Widget hat diese Klasse.
 * **name**: Alle Widgets, die mit AEM ausgeliefert werden, enthalten die name-Klasse des Widgets. Für benutzerdefinierte Widgets stellt der Widget-Entwickler die name-Klasse bereit.
-* **Typ**: Jedes Widget verfügt über ein Element der Benutzeroberfläche. Diese Klasse definiert den Typ des Elements der Benutzeroberfläche.
+* **type**: Jedes Widget verfügt über ein Element der Benutzeroberfläche. Diese Klasse definiert den Typ des Elements der Benutzeroberfläche.
 
 ```xml
 <!--field with caption-->
@@ -71,7 +71,7 @@ Das Widget-Element enthält das Element der Benutzeroberfläche für die Interak
 
 Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine weitere CSS-Klasse: **subtype**. Eine subtype-Klasse zeigt an, welcher Feldtyp es ist, z. B. NumericField, DateField, TextField. Sie können die subtype-Klasse außer Kraft setzen, um die Stile aller Felder des Typs „subtype“ zu ändern.
 
-## CSS-Klassen für verschiedene Komponenten  {#css-classes-for-different-components}
+## CSS-Klassen für verschiedene Komponenten {#css-classes-for-different-components}
 
 <table> 
  <tbody> 
@@ -81,7 +81,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
    <td><strong>Name</strong></td> 
   </tr> 
   <tr> 
-   <td>Seite </td> 
+   <td>Seite</td> 
    <td>page</td> 
    <td>Benutzerdefinierter Name<br /> oder<br /> Seite&lt;Seitenzahl&gt; (Standard)</td> 
   </tr> 
@@ -123,7 +123,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
  </tbody> 
 </table>
 
-## CSS-Klassen für verschiedene Felder  {#css-classes-for-different-fields}
+## CSS-Klassen für verschiedene Felder {#css-classes-for-different-fields}
 
 Der AEM Forms Designer unterstützt unterschiedliche Typen von Feldern in einem Formular wie NumericField, DecimalField und DateField. All diese Felder enthalten in HTML die oben genannten CSS-Klassen. Je nach Typ des Feldes enthalten sie auch ein paar zusätzliche Klassen.
 
@@ -157,21 +157,21 @@ Jedes Feld verfügt über ein zugehöriges Widget, das das Benutzeroberflächen-
    <td>datefield<br type="_moz" /> </td> 
    <td>dateField<br type="_moz" /> </td> 
    <td>datefieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>DateTimeField<br type="_moz" /> </td> 
    <td>textfield<br type="_moz" /> </td> 
    <td>textField<br type="_moz" /> </td> 
    <td>textfieldwidget</td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>DecimalField<br type="_moz" /> </td> 
    <td>numericfield<br type="_moz" /> </td> 
    <td>numericInput<br type="_moz" /> </td> 
    <td>numericfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>DropDown<br type="_moz" /> </td> 
@@ -192,7 +192,7 @@ Jedes Feld verfügt über ein zugehöriges Widget, das das Benutzeroberflächen-
    <td>numericfield<br type="_moz" /> </td> 
    <td>numericInput<br type="_moz" /> </td> 
    <td>numericfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>PasswordField<br type="_moz" /> </td> 
@@ -213,14 +213,14 @@ Jedes Feld verfügt über ein zugehöriges Widget, das das Benutzeroberflächen-
    <td>textfield<br type="_moz" /> </td> 
    <td>textField<br type="_moz" /> </td> 
    <td>textfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
   <tr> 
    <td>TimeField<br type="_moz" /> </td> 
    <td>textfield<br type="_moz" /> </td> 
    <td>textField<br type="_moz" /> </td> 
    <td>textfieldwidget<br type="_moz" /> </td> 
-   <td>input type=text<br type="_moz" /> </td> 
+   <td>inputtype = text<br type="_moz" /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,7 +238,7 @@ Mithilfe des AEM Forms Designer können Sie statische Zeichenelemente wie Text u
 
 ## Gestalten des Stils anderer Formularteile {#styling-other-parts-of-the-form}
 
-Neben dem Erscheinungsbild von Benutzeroberflächen-Komponenten im HTML-Formular können Sie den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
+Neben dem Erscheinungsbild von Benutzeroberflächenkomponenten im HTML-Formular können Sie den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
 
 `Styling Inline Errors`
 
@@ -250,4 +250,4 @@ Wenn die Überprüfung eines Feldes eine Warnung ergibt, wird eine Inline-Warnun
 
 `Styling Fields with Validation Errors`
 
-Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf die Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die Klasse **widgetError** .
+Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf der Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die **widgetError** -Klasse.

@@ -18,7 +18,7 @@ Die folgende Referenz enthält Informationen zu bestimmten Metadatenschemata (in
 
 ## Dublin Core {#dublin-core}
 
-Dublin Core-Metadaten bieten ein standardisiertes Set aus Konventionen für die Beschreibung von Assets, um die Suche nach ihnen zu erleichtern. In [!DNL Experience Manager] Assets beschreibt der Dublin Core digitale Assets wie Video, Ton, Bilder und Dokumente.
+Dublin Core-Metadaten bieten ein standardisiertes Set aus Konventionen für die Beschreibung von Assets, um die Suche nach ihnen zu erleichtern. In [!DNL Experience Manager] Assets, Dublin Core, beschreibt digitale Assets, einschließlich Video, Ton, Bildern und Dokumenten.
 
 Das einfache Dublin Core Metadata Element Set (DCMES) enthält 15 Metadatenelemente, die in der folgenden Tabelle aufgeführt werden. Jedes Dublin Core-Element ist optional und kann wiederholt werden. Sie können Dublin Core-Metadateninformationen genauso wie solche für medientypspezifische Metadaten hinzufügen oder löschen.
 

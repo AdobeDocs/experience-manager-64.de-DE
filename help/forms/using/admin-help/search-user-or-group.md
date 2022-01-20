@@ -1,8 +1,8 @@
 ---
 title: Einen Benutzer bzw. eine Gruppe suchen
-seo-title: Einen Benutzer bzw. eine Gruppe suchen
+seo-title: Search for a user or group
 description: Erfahren Sie, wie Sie nach einem Benutzer oder einer Gruppe mit den User Management-Einstellungen in Administration Console suchen.
-seo-description: Erfahren Sie, wie Sie nach einem Benutzer oder einer Gruppe mit den User Management-Einstellungen in Administration Console suchen.
+seo-description: Learn how to search for a user or group using the User Management settings in the administration console.
 uuid: 8d85e1af-9977-489d-9969-c4d2661b38c3
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: f345e42c-82d9-4970-9169-156ea4505097
 exl-id: 53aa6c11-0d73-4d95-a0b3-cf369883abe8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '80'
 ht-degree: 100%
 
 ---

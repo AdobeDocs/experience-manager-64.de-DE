@@ -193,9 +193,9 @@ Nur für Aufgabenbenachrichtigungen: Der Arbeitsablauf für Formulare enthält z
 >
 >Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
 
-Wenn Ihre Lösung in einer Clusterumgebung bereitgestellt ist, ersetzen Sie `@@notification-host@@` durch die Clusteradresse.
+Wenn Ihre Lösung in einer Clusterumgebung bereitgestellt ist, ersetzen Sie `@@notification-host@@` mit der Clusteradresse.
 
-`<`** `>` PORTist die Anschlussnummer des HTTP-Listeners für den Anwendungsserver. Der Standardanschluss für HTTP-Listener für die unterstützten Anwendungsserver lautet wie folgt:
+`<`*PORT* `>` ist die Anschlussnummer des HTTP-Listeners für den Anwendungsserver. Der Standardanschluss für HTTP-Listener für die unterstützten Anwendungsserver lautet wie folgt:
 
 **JBoss:** 8080
 
@@ -203,7 +203,7 @@ Wenn Ihre Lösung in einer Clusterumgebung bereitgestellt ist, ersetzen Sie `@@n
 
 **IBM WebSphere:** 9080
 
-Damit diese URLs ordnungsgemäß funktionieren, ersetzen Sie `<`*PORT* `>` durch die für Ihre Umgebung geeignete Anschlussnummer.
+Damit diese URLs ordnungsgemäß funktionieren, ersetzen Sie `<`*PORT* `>` mit der für Ihre Umgebung geeigneten Portnummer.
 
 >[!NOTE]
 >
@@ -211,27 +211,27 @@ Damit diese URLs ordnungsgemäß funktionieren, ersetzen Sie `<`*PORT* `>` durch
 
 ### Variablenauswahl {#variable-picker}
 
-Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder „Betreff“ und „Benachrichtigungsvorlage“ gezogen und dort abgelegt werden können. Wenn Sie eine Variable in die Felder &quot;Betreff&quot;oder &quot;Benachrichtigungsvorlage&quot;ziehen, wird sie zum tatsächlichen Namen der Variablen des Arbeitsablaufs für Formulare geändert, wobei sich auf beiden Seiten zwei @-Symbole befinden, z. B. `@@taskid@@`.
+Die Liste „Variablenauswahl“ bietet nützliche Variablen, die in die Felder „Betreff“ und „Benachrichtigungsvorlage“ gezogen und dort abgelegt werden können. Wenn Sie eine Variable in die Felder &quot;Betreff&quot;oder &quot;Benachrichtigungsvorlage&quot;ablegen, wird sie zum tatsächlichen Namen der Variablen des Arbeitsablaufs für Formulare geändert, wobei sich auf beiden Seiten zwei @-Symbole befinden, z. B. `@@taskid@@`.
 
 Für Erinnerungen, Aufgabenzuweisungen und Termine für Benutzer und Gruppen können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
-**** descriptionDer Inhalt der Eigenschaft &quot;Description&quot;, wie im Benutzerschritt (Startpunkt, Vorgang &quot;Assign Task&quot;oder Vorgang &quot;Assign Multiple Tasks&quot;) des Prozesses in Workbench definiert.
+**description** Der Inhalt der Eigenschaft &quot;Description&quot;, wie im Benutzerschritt (Startpunkt, Vorgang &quot;Assign Task&quot;oder Vorgang &quot;Assign Multiple Tasks&quot;) des Prozesses in Workbench definiert.
 
-**** instructionsDer Inhalt der Eigenschaft &quot;Task Instructions&quot;, wie im Benutzerschritt des Prozesses in Workbench definiert.
+**instructions** Der Inhalt der Eigenschaft &quot;Task Instructions&quot;, wie im Benutzerschritt des Prozesses in Workbench definiert.
 
-**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
+**notification-host** Der Hostname des AEM forms-Anwendungsservers .
 
-**process-** nameDer Name des Prozesses.
+**process-name** Der Name des Prozesses.
 
-**operation-** nameDer Name des Schritts.
+**operation-name** Der Name des Schritts.
 
-**** taskidDie eindeutige Kennung für die aktuelle Aufgabe.
+**taskid** Die eindeutige Kennung für die aktuelle Aufgabe.
 
-**** actionsErzeugt eine nummerierte Liste gültiger Routen (z. B. Genehmigen, Ablehnen), auf die der Empfänger klicken kann.
+**Aktionen** Erstellt eine nummerierte Liste gültiger Routen (z. B. Genehmigen, Ablehnen), auf die der Empfänger klicken kann.
 
 Zusätzlich können für Gruppenerinnerungen, Gruppenaufgabenzuweisungen und Gruppentermine folgende Variablen verwendet werden:
 
-**group-** nameDer Name der Gruppe, der das Arbeitselement zugewiesen ist.
+**group-name** Der Name der Gruppe, der das Arbeitselement zugewiesen ist.
 
 >[!NOTE]
 >
@@ -239,21 +239,21 @@ Zusätzlich können für Gruppenerinnerungen, Gruppenaufgabenzuweisungen und Gru
 
 Für angehaltene Zweige können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
-**branch-** idDie Zweigkennung.
+**branch-id** Die Zweigkennung.
 
-**process-** idDie Kennung der Prozessinstanz.
+**process-id** Die Kennung der Prozessinstanz.
 
-**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
+**notification-host** Der Hostname des AEM forms-Anwendungsservers .
 
 Für angehaltene Vorgänge können Sie die folgenden Variablen in den Feldern „Betreff“ und „Benachrichtigungsvorlage“ verwenden:
 
-**action-** idDie Vorgangskennung.
+**action-id** Die Vorgangskennung.
 
-**branch-** idDie Zweigkennung.
+**branch-id** Die Zweigkennung.
 
-**process-** idDie Kennung der Prozessinstanz.
+**process-id** Die Kennung der Prozessinstanz.
 
-**notification-** hostDer Hostname des AEM forms-Anwendungsservers .
+**notification-host** Der Hostname des AEM forms-Anwendungsservers .
 
 ### Variable im Feld „Betreff“ verwenden {#using-a-variable-in-the-subject-box}
 

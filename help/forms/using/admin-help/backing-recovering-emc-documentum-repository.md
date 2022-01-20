@@ -1,8 +1,8 @@
 ---
 title: EMC Documentum-Repository sichern und wiederherstellen
-seo-title: EMC Documentum-Repository sichern und wiederherstellen
+seo-title: Backing up and recovering the EMC Documentum repository
 description: In diesem Dokument werden die Aufgaben zum Sichern und Wiederherstellen des EMC Documentum-Repositorys beschrieben, das für Ihre AEM Forms-Umgebung konfiguriert ist.
-seo-description: In diesem Dokument werden die Aufgaben zum Sichern und Wiederherstellen des EMC Documentum-Repositorys beschrieben, das für Ihre AEM Forms-Umgebung konfiguriert ist.
+seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
 uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: 89d7b2e1-1d88-4392-89d3-484a98f07121
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '833'
 ht-degree: 85%
 
 ---
@@ -46,7 +46,7 @@ Sie benötigen die folgenden EMC NetWorker-Module:
 * NetWorker Module für den von Ihrem Content Server verwendeten Datenbanktyp
 * NetWorker Module for Documentum
 
-## EMC Document Content Server-Sicherung und -Wiederherstellung vorbereiten  {#preparing-the-emc-document-content-server-for-backup-and-recovery}
+## EMC Document Content Server-Sicherung und -Wiederherstellung vorbereiten {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
 In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-Software auf dem Server mit Content Server beschrieben.
 
@@ -187,34 +187,34 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Lassen Sie das Kennwortfeld für die Konfigurationsdatei `NMDDE_DM_PASSWD` leer. Das Kennwort wird im nächsten Schritt festgelegt.
+   Kennwortfeld der Konfigurationsdatei beibehalten `NMDDE_DM_PASSWD` leer. Das Kennwort wird im nächsten Schritt festgelegt.
 
 1. Legen Sie das Kennwort wie folgt in der Konfigurationsdatei fest:
 
-   * Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu *[NetWorker_root]*\Legato\nsr\bin.
+   * Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu *[NetWorker-Stammordner]*\Legato\nsr\bin
    * Führen Sie den folgenden Befehl aus: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
 1. Erstellen Sie die ausführbaren Batch-Dateien (.bat) zum Sichern der Datenbank. (Weitere Informationen finden Sie in der NetWorker-Dokumentation.) Legen Sie die Details in den Batch-Dateien gemäß Ihrer Installation fest.
 
    * Vollständige Datenbanksicherung (nsrnmddbf.bat):
 
-      *[NetWorker_database_module_]* `-s`*&lt;networker_server_name>* `-U`*[]*`-P`*[rootusernamepassword]* `-l full`*&lt;database_name>*
+      *[NetWorker-Datenbankmodul-Stammordner]* `-s`*&lt;networker_server_name>* `-U`*[Benutzername ]*`-P`*[password]* `-l full`*&lt;database_name>*
 
    * Inkrementelle Datenbanksicherung (nsrnmddbi.bat):
 
-      *[NetWorker_database_module_]* `-s`*&lt;networker_server_name>* `-U`*[]*`-P`*[rootusernamepassword]* `-l 1 -R`*&lt;database_name>*
+      *[NetWorker-Datenbankmodul-Stammordner]* `-s`*&lt;networker_server_name>* `-U`*[Benutzername ]*`-P`*[password]* `-l 1 -R`*&lt;database_name>*
 
    * Datenbankprotokollsicherung (nsrnmddbl.bat):
 
-      *[NetWorker_database_module_]* `-s`*&lt;networker_server_name>* `-U`*[]*`-P`*[rootusernamepassword]* `-l incr -R`*&lt;database_name>*
+      *[NetWorker-Datenbankmodul-Stammordner]* `-s`*&lt;networker_server_name>* `-U`*[Benutzername ]*`-P`*[password]* `-l incr -R`*&lt;database_name>*
 
-      wobei:
+      Dabei gilt:
 
       `[NetWorker_database_module_root]` ist der Installationsordner des NetWorker-Moduls. Der standardmäßige Installationsordner von NetWorker Module für SQL Server heißt „C:\Programme\Legato\nsr\bin\nsrsqlsv“.
 
       `NetWorker_Server_Name` ist der Server, auf dem NetWorker installiert ist.
 
-      `username` &amp;  `password` sind der Benutzername und das Kennwort des Datenbankadministrator-Benutzers.
+      `username` &amp; `password` sind der Benutzername und das Kennwort des Datenbankadministratorbenutzers.
 
       `database_name` ist der Name der zu sichernden Datenbank.
 
@@ -234,7 +234,7 @@ In diesem Abschnitt wird die Installation und Konfiguration der EMC NetWorker-So
 
 Ein Gerät wird hinzugefügt, auf dem die gesicherten Dateien gespeichert werden. Sie können mehrere Geräte mit verschiedenen Formaten hinzufügen.
 
-## EMC Documentum Content Server sichern  {#back-up-the-emc-documentum-content-server}
+## EMC Documentum Content Server sichern {#back-up-the-emc-documentum-content-server}
 
 Führen Sie die folgenden Schritte aus, nachdem Sie eine vollständige Sicherung Ihrer AEM Forms-Daten erstellt haben. (Siehe [Sichern der AEM Forms-Daten](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
@@ -242,14 +242,14 @@ Führen Sie die folgenden Schritte aus, nachdem Sie eine vollständige Sicherung
 >
 >Für die Befehlsskripts ist der vollständige Pfad der Datei „nsrnmd_win.cfg“ erforderlich, die Sie unter [EMC Document Content Server-Sicherung und -Wiederherstellung vorbereiten](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery) erstellt haben.
 
-1. Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu *[NetWorker_root]*\Legato\nsr\bin.
-1. Führen Sie folgenden Befehl aus:
+1. Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu *[NetWorker-Stammordner]*\Legato\nsr\bin
+1. Führen Sie den folgenden Befehl aus:
 
    ```as3
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
-## EMC Documentum Content Server wiederherstellen  {#restore-the-emc-documentum-content-server}
+## EMC Documentum Content Server wiederherstellen {#restore-the-emc-documentum-content-server}
 
 Führen Sie vor der Wiederherstellung der AEM Forms-Daten die folgenden Aufgaben aus: (Siehe[ Wiederherstellen der AEM Forms-Daten](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
@@ -262,8 +262,8 @@ Führen Sie vor der Wiederherstellung der AEM Forms-Daten die folgenden Aufgaben
 1. Klicken Sie auf die Option „Restore“ und wählen Sie „Normal“ aus.
 1. Wählen Sie auf der linken Bildschirmseite die Datenbank für Ihren Docbase-Dienst aus und klicken Sie in der Symbolleiste auf „Start“.
 1. Starten Sie, nachdem die Datenbank wiederhergestellt wurde, den Docbase-Dienst.
-1. Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu *[NetWorker_root]*\Legato\nsr\bin
-1. Führen Sie folgenden Befehl aus:
+1. Öffnen Sie eine Eingabeaufforderung und wechseln Sie zu *[NetWorker-Stammordner]*\Legato\nsr\bin
+1. Führen Sie den folgenden Befehl aus:
 
    ```as3
     - nsrnmdrs.exe -B <docbase_name> -f <path_to_cfg_file> -C SA

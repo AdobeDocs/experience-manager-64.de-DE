@@ -1,13 +1,13 @@
 ---
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
-source-git-commit: 016bfb5454f184ced6e40e48d6ee26dfb9256f79
+exl-id: c7e0c8d4-a0e9-4e98-b356-dad9e31ac3fb
+source-git-commit: 657bb7df01a7b8e03d39c3bda868d87253b81b2a
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 100%
 
 ---
-
 
 # Konfigurationen und der Konfigurations-Browser {#configuration-browser}
 
@@ -76,7 +76,7 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
 
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Namenskonventionen](/help/sites-developing/naming-conventions.md) angepasst.
+      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/sites-developing/naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 1. Markieren Sie die Art der Konfigurationen, die Sie zulassen möchten.
    * [Cloud-Konfigurationen](/help/sites-administering/configurations.md)

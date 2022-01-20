@@ -1,8 +1,8 @@
 ---
 title: Status der Funktionen der Touch-optimierten Benutzeroberfläche
-seo-title: Status der Funktionen der Touch-optimierten Benutzeroberfläche
+seo-title: Touch UI Feature Status
 description: Spezifische Versionshinweise zur Touch-optimierten Benutzeroberfläche von Adobe Experience Manager 6.3
-seo-description: Spezifische Versionshinweise zur Touch-optimierten Benutzeroberfläche von Adobe Experience Manager 6.3
+seo-description: Release notes specific to Adobe Experience Manager 6.3 Touch UI.
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,8 +12,8 @@ discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 exl-id: e1422581-143b-4fce-976e-e5aa3360e2d0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 65%
+source-wordcount: '1060'
+ht-degree: 64%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 65%
 
 >[!CAUTION]
 >
->Ab Version 6.4 von AEM ist die [Klassische Benutzeroberfläche veraltet](/help/release-notes/deprecated-removed-features.md). Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. Es wird empfohlen, die leistungsstarken neuen Funktionen der Touch-optimierten Benutzeroberfläche zu nutzen.
+>Mit Version 6.4 von AEM [Die klassische Benutzeroberfläche ist veraltet](/help/release-notes/deprecated-removed-features.md). Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. Es wird empfohlen, die leistungsstarken neuen Funktionen der Touch-optimierten Benutzeroberfläche zu nutzen.
 
 Seit Einführung von Version 6.0 verfügt AEM über eine neue, Touch-optimierte Benutzeroberfläche, die auf Adobe Marketing Cloud und die allgemeinen Richtlinien für Adobe-Benutzeroberflächen abgestimmt ist. Da sich die Funktionalitäten der beiden Benutzeroberflächen inzwischen nahezu entsprechen, ist dies nun die Standardbenutzeroberfläche von AEM. Die alte, Desktop-artige Benutzeroberfläche wird hingegen als „klassische Benutzeroberfläche“ bezeichnet.
 
@@ -29,7 +29,7 @@ Die meisten Funktionen sind zwar in der Touch-optimierten Benutzeroberfläche vo
 
 Die folgende Liste zeigt den aktuellen Status der in AEM 6.4 implementierten Funktionen.
 
-Empfehlungen für Kunden, die auf AEM 6.4 aktualisieren, finden Sie unter [Benutzeroberfläche, Recommendations für Kunden](/help/sites-deploying/ui-recommendations.md).
+Empfehlungen für Kunden, die auf AEM 6.4 aktualisieren, finden Sie unter [Recommendations für Kunden](/help/sites-deploying/ui-recommendations.md) für Details.
 
 >[!NOTE]
 >
@@ -44,14 +44,14 @@ Empfehlungen für Kunden, die auf AEM 6.4 aktualisieren, finden Sie unter [Benut
 ## Legende {#legend}
 
 * **Umfassend**: Die Funktion ist in vollem Umfang in der Touch-optimierten Benutzeroberfläche verfügbar.
-* **Hauptsächlich**: Die Funktion ist größtenteils in der Touch-optimierten Benutzeroberfläche verfügbar.
+* **Meist**: Die Funktion ist größtenteils in der Touch-optimierten Benutzeroberfläche verfügbar.
 * **Fehlt**: Die Funktion ist nicht in der Touch-optimierten Benutzeroberfläche verfügbar. Um die entsprechende Aktion durchzuführen, müssen Sie die klassische Benutzeroberfläche verwenden.
 * **Ersetzt**: Diese Funktion wurde durch eine neue Implementierung ersetzt, die anders funktioniert.
 * **Entfernt**: Die Funktion ist nicht mehr in der Touch-optimierten Benutzeroberfläche verfügbar und wird nicht ersetzt.
 
 ## Funktionsstatus: Sites Admin {#feature-status-sites-admin}
 
-Dies ist eine Liste der Funktionen, die der Site-Administrator der klassischen Benutzeroberfläche ( `/siteadmin`) hat und den Status in der Touch-optimierten Benutzeroberfläche ( `/sites.html`).
+Dies ist eine Liste der Funktionen der klassischen Benutzeroberfläche Site Admin ( `/siteadmin`) hat und den Status in der Touch-optimierten Benutzeroberfläche ( `/sites.html`).
 
 <table> 
  <tbody>
@@ -63,7 +63,7 @@ Dies ist eine Liste der Funktionen, die der Site-Administrator der klassischen B
   <tr>
    <td>Site-Hierarchie navigieren</td> 
    <td>Fertig stellen<br /> </td> 
-   <td>AEM 6.4 wurde eine <a href="/help/sites-authoring/basic-handling.md#content-tree">Inhaltsbaumansicht</a> eingeführt.</td> 
+   <td>Mit AEM 6.4 wurde eine <a href="/help/sites-authoring/basic-handling.md#content-tree">Inhaltsbaumansicht</a>.</td> 
   </tr>
   <tr>
    <td>Workflow starten</td> 
@@ -220,7 +220,7 @@ Dies ist eine Liste der Funktionen, die der Site-Administrator der klassischen B
 
 ## Funktionsstatus: Seiten-Editor {#feature-status-page-editor}
 
-Dies ist eine Liste der Funktionen, die der Seiten-Editor der klassischen Benutzeroberfläche ( `/cf#`) aufweist, und der Status in der Touch-optimierten Benutzeroberfläche ( `/editor.html`).
+Dies ist eine Liste der Funktionen des Seiten-Editors der klassischen Benutzeroberfläche ( `/cf#`) hat und den Status in der Touch-optimierten ( `/editor.html`).
 
 <table> 
  <tbody>
@@ -300,7 +300,7 @@ Dies ist eine Liste der Funktionen, die der Seiten-Editor der klassischen Benutz
    <td> </td> 
   </tr>
   <tr>
-   <td>Eigenschaften bearbeiten<br /> </td> 
+   <td>Bearbeiten von Eigenschaften<br /> </td> 
    <td>Fertig stellen</td> 
    <td> </td> 
   </tr>
@@ -330,7 +330,7 @@ Dies ist eine Liste der Funktionen, die der Seiten-Editor der klassischen Benutz
    <td> </td> 
   </tr>
   <tr>
-   <td>Veröffentlichen einer Seite rückgängig machen</td> 
+   <td>Veröffentlichen einer Seite aufheben</td> 
    <td>Fertig stellen</td> 
    <td> </td> 
   </tr>
@@ -426,7 +426,7 @@ Dies ist eine Liste der Funktionen, die der Seiten-Editor der klassischen Benutz
   </tr>
   <tr>
    <td>Inhalte mit der automatischen Komponentenerstellung direkt per Drag-and-Drop in den ParSys-Platzhalter einfügen<br /> </td> 
-   <td>Umfassend</td> 
+   <td>Fertig stellen</td> 
    <td> </td> 
   </tr>
  </tbody>
@@ -451,7 +451,7 @@ Dies ist eine Liste der Funktionen des Text-, Tabellen- und Bild-Editors der kla
   <tr>
    <td>RTE-Plug-ins aktivieren/deaktivieren</td> 
    <td>Fertig stellen<br /> </td> 
-   <td>Kann mit dem <a href="/help/sites-authoring/templates.md">Vorlagen-Editor</a> durchgeführt werden.</td> 
+   <td>Kann mithilfe der <a href="/help/sites-authoring/templates.md">Vorlagen-Editor</a>.</td> 
   </tr>
   <tr>
    <td>RTE für Nur-Text verwenden</td> 
@@ -529,7 +529,7 @@ Dies ist eine Liste der Funktionen des Text-, Tabellen- und Bild-Editors der kla
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE-Plug-in: Rückgängig/Wiederholen<br /> </td> 
+   <td>RTE-Plug-in: Rückgängig/Wiederherstellen<br /> </td> 
    <td>Fertig stellen</td> 
    <td> </td> 
   </tr>
@@ -544,7 +544,7 @@ Dies ist eine Liste der Funktionen des Text-, Tabellen- und Bild-Editors der kla
    <td>Verwendbar im Kontext, im Dialogfeld und im Vollbildmodus.<br /> </td> 
   </tr>
   <tr>
-   <td>Bild per Drag &amp; Drop in Tabellenzelle verschieben<br /> </td> 
+   <td>Bild in Tabellenzelle ziehen und ablegen<br /> </td> 
    <td>Fertig stellen</td> 
    <td>In-line-Funktion</td> 
   </tr>
@@ -556,7 +556,7 @@ Dies ist eine Liste der Funktionen des Text-, Tabellen- und Bild-Editors der kla
   <tr>
    <td>IPE-Plug-ins aktivieren/deaktivieren</td> 
    <td>Fertig stellen</td> 
-   <td>Im <a href="/help/sites-authoring/templates.md">Vorlagen-Editor</a> gibt es jetzt eine Benutzeroberfläche.</td> 
+   <td>Es gibt jetzt eine Benutzeroberfläche in der <a href="/help/sites-authoring/templates.md">Vorlagen-Editor</a>.</td> 
   </tr>
   <tr>
    <td>IPE-Plug-in: Zuschneiden</td> 
@@ -613,7 +613,7 @@ Dies ist eine Liste der verschiedenen Werkzeuge der klassischen Benutzeroberflä
    <td> </td> 
   </tr>
   <tr>
-   <td>Workflow zur Konfiguration der Seitenvorlage (<code>/etc/workflow/wcm/templates.html</code>)</td> 
+   <td>Konfiguration der Workflow-zu-Seitenvorlage (<code>/etc/workflow/wcm/templates.html</code>)</td> 
    <td>Fehlt<br /> </td> 
    <td>Verwenden Sie die klassische Benutzeroberfläche.</td> 
   </tr>
@@ -640,7 +640,7 @@ Dies ist eine Liste der verschiedenen Werkzeuge der klassischen Benutzeroberflä
   <tr>
    <td>Benutzeroberfläche für Benutzer, Gruppen und Berechtigungen<br /> </td> 
    <td>Nahezu umfassend<br /> </td> 
-   <td>Verwenden Sie für erweiterte Berechtigungsbearbeitung die klassische Benutzeroberfläche.<br /> </td> 
+   <td>Verwenden Sie die klassische Benutzeroberfläche für die erweiterte Bearbeitung von Berechtigungen.<br /> </td> 
   </tr>
   <tr>
    <td>Versionen bereinigen (<code>/etc/versioning/purge.html</code>)</td> 

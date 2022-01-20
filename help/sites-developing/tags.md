@@ -2,7 +2,7 @@
 title: Tagging
 seo-title: Tagging
 description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten
-seo-description: Tagging ermöglicht die Kategorisierung und Organisation von Inhalten
+seo-description: Tagging allows content to be categorized and organized
 uuid: fbbce525-ebc4-484b-bec9-2d68314cf15a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,8 +13,8 @@ feature: Tagging
 exl-id: 634fecc8-5132-4e8f-a2dd-7e8c9b74c79b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 40%
+source-wordcount: '100'
+ht-degree: 35%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 40%
 
 Tagging ermöglicht die Kategorisierung und Organisation von Inhalten. Tags können anhand eines Namespace und einer Taxonomie klassifiziert werden.
 
-* Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden, finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md) .
-* Informationen zum Tagging von Inhalten finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md) .
+* Siehe [Verwalten von Tags](/help/sites-administering/tags.md) Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden.
+* Siehe [Verwenden von Tags](/help/sites-authoring/tags.md) für Informationen zum Tagging von Inhalten.
 
 Die folgenden Informationen sind für Entwickler verfügbar:
 
-* [AEM Tagging Framework](/help/sites-developing/framework.md)  - Eine Beschreibung der Knoten und Eigenschaften, die für das Tagging verwendet werden
+* [AEM-Tagging-Framework](/help/sites-developing/framework.md) - Eine Beschreibung der Knoten und Eigenschaften, die für das Tagging verwendet werden
 
-* [Erstellen von Tagging in einer AEM App](/help/sites-developing/building.md)  - Eine Beschreibung der APIs, die mit dem Tagging-Framework von Client- und Server-seitigem Code aus funktionieren
+* [Erstellen von Tags in einer AEM](/help/sites-developing/building.md) - Eine Beschreibung der APIs, die mit dem Tagging-Framework von Client- und Server-seitigem Code aus funktionieren

@@ -1,13 +1,13 @@
 ---
 title: AEM 6.4-Verwaltungsanleitung
-seo-title: AEM 6.4-Verwaltungsanleitung
+seo-title: AEM 6.4 Managing User Guide
 description: 'In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten '
-seo-description: Behandelt die erfolgreiche Verwaltung eines AEM Projekts
+seo-description: Covers how to manage an AEM project successfully
 exl-id: 4fa34d1f-c41e-4b9b-98d3-8c364a60776d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 40%
+source-wordcount: '335'
+ht-degree: 41%
 
 ---
 
@@ -17,7 +17,7 @@ In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalt
 
 ## Wichtige AEM
 
-* [Erste Schritte mit AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/home.html?lang=de)
+* [Erste Schritte mit AEM](https://helpx.adobe.com/de/experience-manager/get-started.html)
 * [Versionshinweise zu AEM 6.4](/help/release-notes/home.md)
 * [Aktuelle Aktualisierungen der Dokumentation](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md)
@@ -33,7 +33,7 @@ In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalt
 | [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von AEM |
 | [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM erläutert. |
 | [Authoring-Handbuch für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in AEM der klassischen Benutzeroberfläche erläutert. |
-| [Screens-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Beschilderung zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
+| [Benutzerhandbuch für Screens](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Beschilderung zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
 | [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | In diesem Handbuch werden die Grundlagen von AEM erläutert. |
 | [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre AEM-Instanz erstellen. |
 | [Benutzerhandbuch verwalten](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten. |
@@ -45,8 +45,8 @@ In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalt
 * [AEM Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
-* [Benutzerhandbuch zu Kernkomponenten](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Benutzerhandbuch zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

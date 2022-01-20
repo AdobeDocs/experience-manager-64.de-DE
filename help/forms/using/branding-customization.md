@@ -1,8 +1,8 @@
 ---
 title: Branding-Anpassung
-seo-title: Branding-Anpassung
+seo-title: Branding Customization
 description: Passen Sie das Symbol und den Namen der Anwendung, Startbilder und die Anmeldeseite an und gestalten Sie ein charakteristisches Erscheinungsbild für Ihre Organisation in AEM Forms-App.
-seo-description: Passen Sie das Symbol und den Namen der Anwendung, Startbilder und die Anmeldeseite an und gestalten Sie ein charakteristisches Erscheinungsbild für Ihre Organisation in AEM Forms-App.
+seo-description: Customize the application icon, application name, launch images, and login page to provide a distinct organization-specific look and feel to AEM Forms app.
 uuid: fece0fa8-c417-45eb-93f1-a91b49835fa0
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 exl-id: 5c5cdfe6-37f2-45c7-b679-23e3592842b2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 79%
+source-wordcount: '886'
+ht-degree: 78%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können das Symbol und den Namen der Anwendung, Startbilder und die Anmeldes
 * Anpassen von Bildern auf der Anmeldeseite
 * Anpassen des Logos im Appmenü
 
-## Anpassen von Symbolen und Startbildern  {#customizing-icon-and-launch-images}
+## Anpassen von Symbolen und Startbildern {#customizing-icon-and-launch-images}
 
 Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das Startbild der AEM Forms-App anzupassen:
 
@@ -34,7 +34,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 >
 >Verwenden Sie für alle Symbole und Bilder das PNG-Format ohne Zeilensprung (non-interlaced).
 
-### So passen Sie Symbole und Startbilder an  {#to-customize-icon-and-launch-images}
+### So passen Sie Symbole und Startbilder an {#to-customize-icon-and-launch-images}
 
 #### iOS {#for-ios}
 
@@ -96,7 +96,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
 1. Navigieren Sie in der Navigatoransicht von Capture zu **[!UICONTROL Capture > Capture > Unterstützende Dateien > InfoPlist.strings]**.
 
-   Aktualisieren Sie den Wert für das Attribut `CFBundleDisplayName` auf einen Namen, den Sie für die App anzeigen möchten.
+   Aktualisieren Sie den Wert für `CFBundleDisplayName` einem Namen zuordnen, den Sie für die App anzeigen möchten.
 
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
 
@@ -108,7 +108,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 
    `[User_Home]/Projects/[your-project]/src/android/res/values/strings.xml and android/res/values-en/strings.xml`
 
-1. Aktualisieren Sie den Wert für den Schlüssel `app_name`.
+1. Wert für den Schlüssel aktualisieren `app_name`.
 1. Erstellen Sie die AEM Forms-App neu.
 
    Informationen zum Erstellen der App für Android finden Sie unter [Einrichten des Eclipse-Projekts und Erstellen der Android-App](/help/forms/using/setup-eclipse-project-build-installer.md).
@@ -119,12 +119,12 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. Aktualisieren Sie den Wert im Tag `<name>...</name>` .
+1. Aktualisieren Sie den Wert im `<name>...</name>` -Tag.
 1. Erstellen Sie die AEM Forms-App neu.
 
    Informationen zum Erstellen der App für Windows finden Sie unter [Einrichten des Eclipse-Projekts und Erstellen der Android-App](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
-## Anpassen von Bildern auf der Anmeldeseite  {#customizing-images-on-the-login-page}
+## Anpassen von Bildern auf der Anmeldeseite {#customizing-images-on-the-login-page}
 
 Die Anmeldeseite der AEM Forms-App enthält Logo- und Hintergrundbilder. Das Logo befindet sich über dem Dialogfeld für die Anmeldung und das Hintergrundbild befindet sich unter dem Dialogfeld für die Anmeldung. Führen Sie die folgenden Schritte aus, um das Standardbild auf der Anmeldeseite anzupassen:
 
@@ -158,28 +158,28 @@ Stellen Sie sicher, dass Sie die folgenden Bilder haben:
 
 1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
-1. Um den Hintergrund zu ändern, ersetzen Sie die Standarddatei `Landing_bg.jpeg` durch die benutzerdefinierte Datei `Landing_bg.jpeg`.
+1. Um den Hintergrund zu ändern, ersetzen Sie die Standardeinstellung `Landing_bg.jpeg` Datei mit der benutzerdefinierten `Landing_bg.jpeg`-Datei.
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
 
-### So passen Sie Bilder auf der Anmeldeseite mit Eclipse an  {#to-customize-images-on-the-login-pages-using-eclipse}
+### So passen Sie Bilder auf der Anmeldeseite mit Eclipse an {#to-customize-images-on-the-login-pages-using-eclipse}
 
 1. Öffnen Sie das Android-Projekt in Eclipse.
 
 1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`. 
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
-1. Um den Hintergrund zu ändern, ersetzen Sie die Standarddatei `Landing_bg.jpeg` durch die benutzerdefinierte Datei `Landing_bg.jpeg`.
+1. Um den Hintergrund zu ändern, ersetzen Sie die Standardeinstellung `Landing_bg.jpeg` Datei mit der benutzerdefinierten `Landing_bg.jpeg`-Datei.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Android-Gerät.
 
-### So passen Sie Bilder auf den Anmeldeseiten mithilfe von Visual Studio an  {#to-customize-images-on-the-login-pages-using-visual-studio}
+### So passen Sie Bilder auf den Anmeldeseiten mithilfe von Visual Studio an {#to-customize-images-on-the-login-pages-using-visual-studio}
 
-1. Öffnen Sie das Projekt `MWSWindows.sln` in Visual Studio.
+1. Öffnen Sie die `MWSWindows.sln` Projekt in Visual Studio.
 
 1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`. 
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
-1. Um den Hintergrund zu ändern, ersetzen Sie die Standarddatei `Landing_bg.jpeg` durch die benutzerdefinierte Datei `Landing_bg.jpeg`.
+1. Um den Hintergrund zu ändern, ersetzen Sie die Standardeinstellung `Landing_bg.jpeg` Datei mit der benutzerdefinierten `Landing_bg.jpeg`-Datei.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Windows-Gerät.
 
-## Anpassen des Logos im Appmenü  {#customizing_images_on_the_login_page-1}
+## Anpassen des Logos im Appmenü {#customizing_images_on_the_login_page-1}
 
 Wenn Sie sich in der AEM Forms-App anmelden und auf „Menü“ tippen, können Sie das Logo über dem Menü sehen. Führen Sie die folgenden Schritte aus, um das Standardlogo anzupassen:
 
@@ -207,21 +207,21 @@ Stellen Sie sicher, dass Sie das folgende Bild haben:
 1. Öffnen Sie das Projekt `Capture.xcodeproj` in Xcode.
 
 1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
-1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png` .
+1. Um das Logo zu ändern, ersetzen Sie die Standardeinstellung `aem_icon.png` Datei mit der benutzerdefinierten `aem_icon.png` -Datei.
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
 
-### So passen Sie Bilder auf der Anmeldeseite mit Eclipse an  {#to-customize-images-on-the-login-pages-using-eclipse-1}
+### So passen Sie Bilder auf der Anmeldeseite mit Eclipse an {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
 1. Öffnen Sie das Android-Projekt in Eclipse.
 
 1. Navigieren Sie zum Ordner `assets/www/wsmobile/images`. 
-1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png` .
+1. Um das Logo zu ändern, ersetzen Sie die Standardeinstellung `aem_icon.png` Datei mit der benutzerdefinierten `aem_icon.png` -Datei.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Android-Gerät.
 
-### So passen Sie Bilder auf den Anmeldeseiten mithilfe von Visual Studio an  {#to-customize-images-on-the-login-pages-using-visual-studio-1}
+### So passen Sie Bilder auf den Anmeldeseiten mithilfe von Visual Studio an {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
-1. Öffnen Sie das Projekt `MWSWindows.sln` in Visual Studio.
+1. Öffnen Sie die `MWSWindows.sln` Projekt in Visual Studio.
 
 1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`. 
-1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png` .
+1. Um das Logo zu ändern, ersetzen Sie die Standardeinstellung `aem_icon.png` Datei mit der benutzerdefinierten `aem_icon.png` -Datei.
 1. Erstellen und wählen Sie „AEM Forms App“ auf dem Windows-Gerät.

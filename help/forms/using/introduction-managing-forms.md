@@ -1,8 +1,8 @@
 ---
 title: Einführung in das Verwalten von Formularen
-seo-title: Einführung in das Verwalten von Formularen
+seo-title: Introduction to managing forms
 description: AEM Forms bietet Tools zum Verwalten adaptiver Formulare und zugehöriger Assets. Dieser Artikel stellt Ihnen die wichtigsten Formularverwaltungsfunktionen und Elemente der Benutzeroberfläche vor.
-seo-description: AEM Forms bietet Tools zum Verwalten adaptiver Formulare und zugehöriger Assets. Dieser Artikel stellt Ihnen die wichtigsten Formularverwaltungsfunktionen und Elemente der Benutzeroberfläche vor.
+seo-description: AEM Forms provides tools to manage Adaptive Forms and related assets. This article introduces you to the key forms management capabilities and user interface elements.
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 exl-id: 08686ad6-85cc-4de5-86d8-05d55acec418
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1576'
 ht-degree: 80%
 
 ---
 
-# Einführung in das Verwalten von Formularen  {#introduction-to-managing-forms}
+# Einführung in das Verwalten von Formularen {#introduction-to-managing-forms}
 
 AEM Forms bietet eine vereinfachte und gleichzeitig leistungsstarke Benutzeroberfläche, in der Formular-Administratoren und -Entwickler Dokumente, Themen, Briefe Dokumentfragmente, Datenwörterbücher und damit zusammenhängende Assets erstellen und verwalten können. Sie hilft beim Verwalten des gesamten Lebenszyklus von Formularen, Dokumenten und zugehörigen Assets - vom Desktop eines Entwicklers bis zum Angebot\
 es auf einem Portal-Server für Endbenutzer. Sie können die Benutzeroberfläche von AEM Forms für folgende Vorgänge verwenden:
@@ -30,7 +30,7 @@ es auf einem Portal-Server für Endbenutzer. Sie können die Benutzeroberfläche
 
 ## Auf AEM Forms-Komponenten zugreifen {#access-aem-forms-components}
 
-Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Asstes, zum Verwalten einer AEM-Instanz und mehr. Sie können auf das Experience Manager-Logo ![adobeexperiencemanager](assets/adobeexperiencemanager.png) klicken, um zu allen verfügbaren Tools zu navigieren. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM Forms. Um zu AEM Forms zu navigieren, klicken Sie auf das **Experience Manager-Logo** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **navigation** ![compass](assets/compass.png) > **Forms**. Links der folgenden Konsolen werden angezeigt:
+Neben anderen Optionen zum Erstellen von Formularen, Dokumenten und verknüpften Asstes bietet AEM Optionen zum Erstellen von Sites, Asstes, zum Verwalten einer AEM-Instanz und mehr. Sie können auf die ![adobeexperiencemanager](assets/adobeexperiencemanager.png) Experience Manager-Logo, um zu allen verfügbaren Tools zu navigieren. Zusätzlich zu Konsolen von anderen Komponenten enthält es auch Links zu AEM Forms. Um zu AEM Forms zu navigieren, klicken Sie auf das **Logo des Experience Managers** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **Navigation** ![Kompass](assets/compass.png) > **Forms**. Links der folgenden Konsolen werden angezeigt:
 
 * Formulare und Dokumente
 * Designs
@@ -46,7 +46,7 @@ Formulare und Dokumente bietet Optionen zum Erstellen einer interaktiven Kommuni
 
 Die Schaltfläche zum Erstellen ist der Startpunkt des Prozesses zur Erstellung oder zum Hochladen von AEM Forms-Assets. Sie bietet Ihnen Optionen zum Erstellen:
 
-* **Interaktive Kommunikation**: Eine interaktive Kommunikation ist eine personalisierte, interaktive und gerätefreundliche HTML-basierte digitale Korrespondenz, Anweisung oder Dokument. Interaktive Kommunikationen sind responsiv, d. h., ihr Layout und Design passt sich automatisch an das Gerät und die Einstellungen des Benutzers an. Detaillierte Informationen finden Sie unter [Interaktive Kommunikation - Übersicht](/help/forms/using/interactive-communications-overview.md).
+* **Interaktive Kommunikation**: Eine interaktive Kommunikation ist eine personalisierte, interaktive und gerätefreundliche HTML-basierte digitale Korrespondenz, Anweisung oder ein Dokument. Interaktive Kommunikationen sind responsiv, d. h., ihr Layout und Design passt sich automatisch an das Gerät und die Einstellungen des Benutzers an. Detaillierte Informationen finden Sie unter [Interaktive Kommunikation - Übersicht](/help/forms/using/interactive-communications-overview.md).
 
 * **Adaptives Formular:** Ein adaptives Formular ist ein ansprechendes und interaktives Formular. Sie können adaptive Formulare erstellen, die sich dynamisch an Benutzereingaben anpassen, indem Felder oder Abschnitte je nach Antwort, Gerät oder Arbeitsumgebung des Benutzers hinzugefügt oder entfernt werden. Weitere Informationen zu adaptiven Formularen finden Sie unter [Einführung zum Erstellen adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
 
@@ -61,7 +61,7 @@ Die Schaltfläche zum Erstellen ist der Startpunkt des Prozesses zur Erstellung 
 
 ![Ordner](assets/folders.png)
 
-**A.** Ordner &quot;Allgemeiner&quot;Ordner  **B.** Forms Workflow
+**A.** Allgemeiner Ordner **B.** Ordner &quot;Forms Workflow&quot;
 
 Der Formular &amp; Dokumente-Bereich bietet auch Optionen für Folgendes:
 
@@ -91,13 +91,13 @@ In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstell
 
 Detaillierte Informationen zum Erstellen und Verwenden von Datenwörterbüchern finden Sie unter [Erstellen von Datenwörterbüchern](/help/forms/using/data-dictionary.md).
 
-## Zugriff auf AEM Forms-Konfigurationen  {#accessing-aem-forms-configurations}
+## Zugriff auf AEM Forms-Konfigurationen {#accessing-aem-forms-configurations}
 
-AEM Tools-Bereich enthält Tools für verschiedene Komponenten. Um zu AEM Forms-spezifischen Tools zu navigieren, klicken Sie auf das **Experience Manager-Logo** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **tools** ![hammer](assets/hammer.png) > **Forms**. Tools zum Durchführen folgender Funktionen werden angezeigt:
+AEM Tools-Bereich enthält Tools für verschiedene Komponenten. Um zu AEM Forms-spezifischen Tools zu navigieren, klicken Sie auf die Schaltfläche **Logo des Experience Managers** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **tools** ![Hammer](assets/hammer.png) > **Forms**. Tools zum Durchführen folgender Funktionen werden angezeigt:
 
 * **Konfigurieren eines überwachten Ordners:** Ein Administrator kann einen Netzwerkordner konfigurieren, der als überwachter Ordner bezeichnet wird, sodass ein vorkonfigurierter Dienstvorgang zur Verarbeitung einer Datei gestartet wird, wenn ein Benutzer eine Datei (z. B. eine PDF-Datei) in diesem überwachten Ordner ablegt. <!-- Fix broken link For detailed information, see Create and Configure a watched folder. -->
 
-* **Offline-Dienst für die Forms App konfigurieren:** Der Offlinedienst für die AEM Forms-App speichert die Pfade oder URLs der in einem Formular verwendeten Ressourcen zwischen. Durch das Zwischenspeichern der Pfa oder URLs der in einem Formular verwendeten Ressourcen wird die serverseitige Leistung verbessert. Informationen zum Konfigurieren der serverseitigen Offline-Komponente der AEM Forms-App finden Sie unter [Arbeiten im Offline-Modus](/help/forms/using/work-offline-mode.md).
+* **Konfigurieren des Forms App Offline-Dienstes:** Der Offlinedienst für die AEM Forms-App speichert die Pfade oder URLs der in einem Formular verwendeten Ressourcen zwischen. Durch das Zwischenspeichern der Pfa oder URLs der in einem Formular verwendeten Ressourcen wird die serverseitige Leistung verbessert. Informationen zum Konfigurieren der serverseitigen Offlinekomponente der AEM Forms-App finden Sie unter [Arbeiten im Offline-Modus](/help/forms/using/work-offline-mode.md).
 
 ![aem-forms-tools](assets/aem-forms-tools.png)
 
@@ -107,14 +107,14 @@ AEM Tools-Bereich enthält Tools für verschiedene Komponenten. Um zu AEM Forms-
 
 ## Häufige Elemente der Benutzeroberfläche {#commonelements}
 
-* **Linke Leiste:** Sie können auf das linke Schienensymbol klicken,  ![](assets/railleftpng.png) um die Timeline- und Verweisfunktionen von AEM Forms anzuzeigen.
+* **Linke Leiste:** Sie können auf das Symbol in der linken Leiste klicken ![railFTPPng](assets/railleftpng.png) , um die Funktionen Timeline und Verweise von AEM Forms anzuzeigen.
 
    * **Zeitleiste:** Sie können Kommentare zu einem Asset hinzufügen, das für Review in der Zeitleiste verfügbar ist. Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Überprüfungen von Assets in Formularen](/help/forms/using/create-reviews-forms.md).
    * **Referenzen:** Ein AEM Forms-Asset kann in mehreren AEM Forms-Assets verwendet werden. Ein Dokumentfragment kann beispielsweise in mehreren Briefen verwendet werden. Referenzen sind eine Liste von Assets (andere Formulare oder Ressourcen), in denen das ausgewählte Asset verwendet wird, sowie die Liste anderer Assets, die das ausgewählte Asset verwendet.
 
 * **Breadcrumbs:** Ein Breadcrumb gibt den Titel der aktuellen Konsole oder des Ordners an. Sie können auf die Breadcrumb-Option klicken, um zwischen den Ordnerebenen, die höher in der Hierarchie sind, zu navigieren.
-* **Ansichtschalter:** Sie können auf den Ansichtschalter klicken, um  ![](assets/viewlist.png) den Viewer oder  ![](assets/viewcard.png) den Viewer zu öffnen und schnell zwischen Listen- und Kartenansicht zu wechseln. Weitere Informationen zu häufigen Benutzeroberflächenkomponenten finden Sie unter [Arbeiten mit der Autorenumgebung](/help/sites-authoring/basic-handling.md).
-* **Suche:** Die Suche nach der  ![](assets/search.png) Suchoption bietet die Möglichkeit, schnell nach den benötigten Inhalten und Tools zu suchen und diese aufzurufen. Geben Sie den Namen des Inhalts oder Produkts ein und wählen Sie aus den Vorschlägen, geben Sie z. B. „Dokumente“ ein, um Formulare und Dokumente oder Dokumentfragmente schnell zu suchen. Weitere Informationen zu  finden Sie im AEM 6.2-Artikel [Suche](/help/sites-authoring/search.md)
+* **Ansichtsschalter:** Sie können auf das Symbol Umschalter anzeigen klicken ![viewlist](assets/viewlist.png) oder ![Viewcard](assets/viewcard.png) um schnell zwischen Listen- und Kartenansicht zu wechseln. Weitere Informationen zu häufigen Benutzeroberflächenkomponenten finden Sie unter [Arbeiten mit der Autorenumgebung](/help/sites-authoring/basic-handling.md).
+* **Suchen:** Die Suchoption ![suchen](assets/search.png) bietet die Möglichkeit, schnell die benötigten Inhalte und Tools zu finden und zu ihnen zu springen. Geben Sie den Namen des Inhalts oder Produkts ein und wählen Sie aus den Vorschlägen, geben Sie z. B. „Dokumente“ ein, um Formulare und Dokumente oder Dokumentfragmente schnell zu suchen. Weitere Informationen zu  finden Sie im AEM 6.2-Artikel [Suche](/help/sites-authoring/search.md)
 * **Aktionssymbolleiste**: Bei der Auswahl eines Assets wird die Aktionssymbolleiste über der Liste von Assets angezeigt. Sie enthält alle Management-Tools für das ausgewählte Asset. Sie können die Maus über ein Symbol bewegen, um die QuickInfo anzuzeigen, die die zugehörige Funktion beschreibt
 
 >[!NOTE]

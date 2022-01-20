@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4 Authoring-Benutzeranleitung
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie mehr über die wichtigsten Konzepte zum Erstellen von Inhalten und Authoring in AEM.
-feature: 'Authoring – '
+feature: Authoring
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 88%
+source-wordcount: '292'
+ht-degree: 87%
 
 ---
 
@@ -19,15 +19,15 @@ ht-degree: 88%
 # AEM 6.4 Authoring-Benutzeranleitung {#authoring}
 
 + [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Wesentliche Aufgaben, Tools und Konzepte für AEM Authoring {#essentials}
++ Wesentliche Aufgaben, Tools und Konzepte für die AEM {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
    + [Konzept der Inhaltserstellung](author.md)
    + [Grundlegende Handhabung](basic-handling.md)
-   + [Suche](search.md)
+   + [Suchen](search.md)
    + [Konfigurieren der Kontoumgebung](user-properties.md)
    + [Ihr Posteingang](inbox.md)
-   + [Tastaturbefehle für Konsolen  ](keyboard-shortcuts.md)
+   + [Tastaturbefehle für Konsolen](keyboard-shortcuts.md)
    + [Auswahl der Benutzeroberfläche](select-ui.md)
 + Authoring {#authoring}
    + [Autorenumgebung und Tools](author-environment-tools.md)
@@ -39,7 +39,7 @@ ht-degree: 88%
    + [Veröffentlichen von Seiten](publishing-pages.md)
    + [Seitenbearbeitung mit Inhaltsfragmenten](content-fragments.md)
    + [Experience Fragments](experience-fragments.md)
-   + [Exportieren in CSV ](csv-export.md)
+   + [Exportieren in CSV](csv-export.md)
    + [Komponenten](default-components.md)
    + [Verfassen einer Seite für Mobilgeräte](mobile.md)
    + [Fehlerbehebung in AEM beim Authoring](troubleshooting.md)
@@ -47,12 +47,12 @@ ht-degree: 88%
    + [Best Practices](best-practices.md)
 + Site- und Seitenfunktionen {#siteandpage}
    + [Verwenden von Tags](tags.md)
-   + [Erstellen von Seitenvorlagen ](templates.md)
+   + [Erstellen von Seitenvorlagen](templates.md)
    + [Stilsystem](style-system.md)
    + [Arbeiten mit Seitenversionen](working-with-page-versions.md)
    + [Seitenvergleich](page-diff.md)
    + [Komponentenkonsole](default-components-console.md)
-   + [Responsives Layout  ](responsive-layout.md)
+   + [Responsives Layout](responsive-layout.md)
    + [Inhaltseinblick ](content-insights.md)
    + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](creating-accessible-content.md)
    + [Strukturvorlage](scaffolding.md)
@@ -85,9 +85,9 @@ ht-degree: 88%
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)
    + [Strukturierung von Multisite-Management für zielgerichtete Inhalte](technical-multisite-targeted.md)
-   + [Verwalten von Aktivitäten   ](activitylib.md)
+   + [Verwalten von Aktivitäten](activitylib.md)
    + [Verwalten von Zielgruppen](managing-audiences.md)
-   + [Erstellen und Verwalten von Angeboten  ](offerlib.md)
+   + [Erstellen und Verwalten von Angeboten](offerlib.md)
    + [Grundlegendes zur Segmentierung](segmentation-overview.md)
 + AEM und Adobe Campaign {#aem-adobe-campaign}
    + [Arbeiten mit Adobe Campaign](adobe-campaign.md)

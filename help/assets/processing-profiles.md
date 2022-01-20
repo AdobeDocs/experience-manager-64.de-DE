@@ -29,7 +29,7 @@ Um Metadaten-, Bild- oder Videoprofile erstellen, bearbeiten oder löschen zu k�
 
 Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Assets verwenden.
 
-Ein wichtiges Konzept für die Verwendung von Profilen in [!DNL Experience Manager] Assets besteht darin, dass sie Ordnern zugewiesen sind. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden. Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden. Ein Beispiel finden Sie unter [Organisieren von Assets mit Ordnern](organize-assets.md#organize-using-folders).
+Ein wichtiges Konzept für die Verwendung von Profilen in [!DNL Experience Manager] Bei Assets werden sie Ordnern zugewiesen. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden. Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden. Ein Beispiel finden Sie unter [Organisieren von Assets mit Ordnern](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Ein wichtiges Konzept für die Verwendung von Profilen in [!DNL Experience Manag
 
 >[!NOTE]
 >
->Gilt nur für *Dynamic Media - Scene7 mode* nur in [!DNL Experience Manager] 6.4.7.0 oder höher.
+>Gilt für *Dynamic Media - Scene7-Modus* nur in [!DNL Experience Manager] 6.4.7.0 oder höher.
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
@@ -84,11 +84,11 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 1. Klicken Sie auf **[!UICONTROL Starten]** und dann auf **[!UICONTROL Bestätigen]**.
 
-   Um den Workflow zu überwachen oder seinen Fortschritt zu überprüfen, klicken Sie auf der Hauptseite [!DNL Experience Manager] auf **[!UICONTROL Tools > Workflow]**. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
+   So überwachen Sie den Workflow oder überprüfen seinen Fortschritt im [!DNL Experience Manager] Hauptseite der Konsole, klicken Sie auf **[!UICONTROL Tools > Workflow]**. Wählen Sie auf der Seite „Workflow-Instanzen“ einen Workflow aus. Klicken Sie in der Menüleiste auf **[!UICONTROL Offener Verlauf]**. Sie können einen ausgewählten Workflow auch auf derselben Seite „Workflow-Instanzen“ beenden, aussetzen oder umbenennen.
 
 ### Anpassen der Batch-Größe des Neuverarbeitungs-Workflows {#adjusting-load}
 
-(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die Mime-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Dementsprechend bleibt das Verarbeitungsbanner länger bei [!DNL Experience Manager]-Assets. Wenn die durchschnittliche Dateigröße jedoch nur 1 MB oder weniger beträgt, empfiehlt Adobe, den Wert auf mehrere Hundert, aber niemals mehr als 1.000 zu erhöhen. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Batch-Größe auf bis zu 10 zu reduzieren.
+(Optional) Die standardmäßige Batch-Größe im Neuverarbeitungs-Workflow beträgt 50 Assets pro Auftrag. Diese optimale Batch-Größe wird durch die durchschnittliche Asset-Größe und die Mime-Typen der Assets bestimmt, bei denen die Neuverarbeitung ausgeführt wird. Ein höherer Wert bedeutet, dass ein Neuverarbeitungsauftrag viele Dateien enthalten wird. Dementsprechend bleibt das Verarbeitungsbanner aktiviert [!DNL Experience Manager] Assets für einen längeren Zeitraum. Wenn die durchschnittliche Dateigröße jedoch nur 1 MB oder weniger beträgt, empfiehlt Adobe, den Wert auf mehrere Hundert, aber niemals mehr als 1.000 zu erhöhen. Wenn die durchschnittliche Dateigröße Hunderte von Megabyte beträgt, empfiehlt Adobe, die Batch-Größe auf bis zu 10 zu reduzieren.
 
 **Anpassen der Batch-Größe des Neuverarbeitungs-Workflows**
 
@@ -103,7 +103,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Legen Sie im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7-Schritt-Eigenschaften]** Folgendes fest:
+1. Im **[!UICONTROL Batch-Upload in Scene7-Schritt-Eigenschaften]** festzulegen, legen Sie Folgendes fest:
    * Geben Sie in die Textfelder **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** einen neuen Titel und eine neue Beschreibung für den Auftrag ein, falls gewünscht.
    * Wählen Sie **[!UICONTROL Handler-Modus]** aus, wenn der Handler mit dem nächsten Schritt fortfahren soll.
    * Geben Sie im Feld **[!UICONTROL Timeout]** den externen Prozess-Timeout (Sekunden) ein.
@@ -115,7 +115,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
 1. Tippen Sie oben rechts im Dialogfeld **[!UICONTROL Batch-Upload zu Scene7 - Schritt-Eigenschaften]** auf **[!UICONTROL Fertig]**.
 
-1. Tippen Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. Wenn Sie **[!UICONTROL Synchronisiert]** sehen, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
+1. Tippen Sie oben rechts auf der Workflow-Modellseite „Scene7: Assets erneut verarbeiten“ auf **[!UICONTROL Synchronisieren]**. Wenn **[!UICONTROL Synchronisiert]**, ist das Workflow-Laufzeitmodell erfolgreich synchronisiert und bereit, Assets in einem Ordner erneut zu verarbeiten.
 
    ![Synchronisieren des Workflow-Modells](/help/assets/assets-dm/reprocess-assets1.png)
 

@@ -1,8 +1,8 @@
 ---
 title: Personalisierung
-seo-title: Personalisierung
+seo-title: Personalization
 description: Erfahren Sie mehr über die Personalisierung in AEM.
-seo-description: Erfahren Sie mehr über die Personalisierung in AEM.
+seo-description: Learn about personalization in AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 841f54da-962a-4fa7-a295-571e2178ed23
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1687'
 ht-degree: 73%
 
 ---
 
 # Personalisierung {#personalization}
 
-## Was ist Personalisierung?  {#what-is-personalization}
+## Was ist Personalisierung? {#what-is-personalization}
 
 Heute steht eine immer größere Menge an Inhalten zur Verfügung – sei es auf Websites im Internet, im Extranet oder im Intranet.
 
@@ -54,7 +54,7 @@ Es gibt zwei Arten von Personalisierung:
 * Einfaches Filtern: Die Auswahlen werden basierend auf vordefinierten Profilen auf Benutzer- und/oder Gruppenebene vorgenommen.
 * Kollaboratives Filtern/Empfehlungsfiltern: Das Benutzerverhalten wird unter Einhaltung vordefinierter Regeln registriert. Diese Regeln basieren auf dem Verhalten, das bei Personen mit ähnlichen Interessen beobachtet wurde. Die erfassten Informationen werden dazu verwendet, die angezeigten Informationen benutzerspezifisch anzupassen – vor allem in Form von Empfehlungen.
 
-## Wie und wann kann die Personalisierung verwendet werden?  {#how-and-when-can-personalization-be-used}
+## Wie und wann kann die Personalisierung verwendet werden? {#how-and-when-can-personalization-be-used}
 
 Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 
@@ -70,11 +70,11 @@ Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 * Unternehmen, die Websites für einen hochgradig spezialisierten Bereich ihres Markts bereitstellen, zum Beispiel Pharmaunternehmen, die Ärzten eine spezialisierte Website bereitstellen.
 * Unternehmen, die Websites bereitstellen, mit denen ihre Kunden aktuelle Konto- und Rechnungsinformationen anzeigen können, so zum Beispiel Telekommunikationsanbieter.
 
-### Vertriebs- und Vertriebs-Website {#sales-site}
+### Verkaufs- und Vertriebswebsite {#sales-site}
 
 * Verkaufs- und Vertriebswebsites wie Amazon können ein Benutzerprofil mit der Kauf- und Suchhistorie des Benutzers kombinieren, um Empfehlungen dazu auszusprechen, was den Benutzer als Nächstes interessieren könnte.
 
-### Suchwebsites {#search-site}
+### Websites durchsuchen {#search-site}
 
 * Viele große Suchmaschinenwebsites verfügen über leistungsstarke Analysetools, die das Benutzerverhalten, die eingegebenen Suchbegriffe und die tatsächlich besuchten Websites aufzeichnen. Dies wird dann verwendet, um den bereitgestellten Inhalt anzupassen, insbesondere im Hinblick auf die Anzeige von Werbung.
 
@@ -107,7 +107,7 @@ Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 
 >[!TIP]
 >
->Die Auswirkungen der Personalisierung auf die Leistung und die damit zusammenhängenden Zwischenspeicherungsthemen werden im Dokument [Leistungsoptimierung.](/help/sites-deploying/configuring-performance.md) genauer erläutert.
+>Die Auswirkungen der Personalisierung auf die Leistung und damit zusammenhängende Themen zum Zwischenspeichern werden im Dokument näher erläutert. [Leistungsoptimierung.](/help/sites-deploying/configuring-performance.md)
 
 ##### Genauigkeit der Regeln {#accuracy}
 
@@ -115,7 +115,7 @@ Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 * Es gibt für Benutzer nichts Frustrierenderes, als nur aufgrund der ungenauen Logik einer Regel Inhalte aufgezwungen oder vorenthalten zu bekommen.
 * Daher müssen Regeln gut durchdacht sein - mit den Anforderungen des Benutzers im Vordergrund. Dies kann sehr mühsam sein und darf nicht unterschätzt werden. Die Festlegung der geschäftlichen Regeln ist häufig aufwendiger als die technischen Maßnahmen bei der Implementierung der Personalisierung.
 
-#### Verwendung von {#when-to-use}
+#### Verwendungsbereiche {#when-to-use}
 
 * Wie viele Funktionen im Internet ist auch Personalisierung mit Vorsicht einzusetzen. Ist Ihr Einsatz wirklich von Vorteil für den Benutzer? Dies sollte immer die erste Überlegung sein. Darüber hinaus sollte ergründet werden, ob das gewünschte Ziel mit einer anderen Methode mit geringerem Aufwand erreicht werden kann. Bei der Personalisierung besteht die Gefahr, dass sie nur einmal von Benutzern konfiguriert wird (um zu sehen, wie sie funktionieren) und nur einmal - da sie keine echten Vorteile bringt.
 * Personalisierung ist nur dann sinnvoll, wenn der Inhalt dynamisch ist - abhängig vom Benutzer in irgendeiner Weise. Werden allen Benutzern dieselben Inhalte angezeigt, ist die Personalisierung redundant.
@@ -124,7 +124,7 @@ Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 
 * Viele Benutzer machen sich Sorgen um Datenschutz und -sicherheit. Insbesondere gilt dies für Daten, die bei der Rückverfolgung ihres Verhaltens beim Surfen im Internet abgerufen werden.
 
-## Personalisierung und Zugriff  {#personalization-and-access}
+## Personalisierung und Zugriff {#personalization-and-access}
 
 Personalisierung sollte separat von der Zugriffssteuerung betrachtet werden, allerdings gibt es einen Zusammenhang zwischen beidem.
 
@@ -132,7 +132,7 @@ Personalisierung selbst sorgt für keinerlei Form der Zugriffssteuerung. Es hand
 
 Allerdings kann die Zugangskontrolle verwendet werden, um eine Art der Personalisierung zu entwickeln. Wenn Sie einem Benutzer den Zugriff auf Inhalte gewähren oder untersagen, hat dies unvermeidlich Auswirkungen auf die Auswahl der Inhalte, die zur Verfügung stehen – wodurch das Weberlebnis der Benutzer personalisiert wird.
 
-## Verfügbare Komponenten für die Personalisierung  {#components-available-for-personalization}
+## Verfügbare Komponenten für die Personalisierung {#components-available-for-personalization}
 
 Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt. Manche ermöglichen es den Benutzern, sich anzumelden und ihre Profile zu bearbeiten, andere (wie My Gadgets) dagegen ermöglichen den Benutzern die Konfiguration einer bestimmten Seite:
 
@@ -171,7 +171,7 @@ Mit AEM werden verschiedene Komponenten für die Personalisierung bereitgestellt
 
 Community-Funktionen wie Blogs, Foren und Kalender generieren Community-Inhalte, die gemeinhin als benutzergenerierte Inhalte bezeichnet werden. Wurden benutzergenerierte Inhalte in eine aus mehreren AEM-Instanzen bestehende Veröffentlichungsumgebung eingegeben (eine [Veröffentlichungsfarm](/help/communities/topologies.md)), war hierbei eines der größten Probleme die instanzenübergreifende Synchronisierung der benutzergenerierten Inhalte.
 
-Mit der Erweiterung [AEM Communities 6.1](/help/communities/overview.md) wird dieses Problem gelöst, indem ein [gemeinsamer Speicher für UGC](/help/communities/working-with-srp.md) verwendet wird. Was die Personalisierung anbelangt, so umfasst Communities [Social Login](/help/communities/social-login.md) - die Möglichkeit, Site-Besuchern die Möglichkeit zu geben, sich bei Facebook und Twitter anzumelden.
+Mit [AEM Communities 6.1](/help/communities/overview.md) -Erweiterung verwenden, wird dieses Problem durch die Verwendung einer [gemeinsamer Speicher für benutzergenerierte Inhalte](/help/communities/working-with-srp.md). Im Hinblick auf die Personalisierung schließt Communities [Anmeldung über soziale Netzwerke](/help/communities/social-login.md) - die Möglichkeit, Site-Besuchern die Möglichkeit zu geben, sich bei Facebook und Twitter anzumelden.
 
 Ohne Communities-Erweiterung gibt es verschiedene Methoden, das Problem der Konsistenz des benutzergenerierten Inhalts anzugehen:
 

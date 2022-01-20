@@ -1,20 +1,20 @@
 ---
 title: Versionsbereinigung
-seo-title: Versionsbereinigung
+seo-title: Version Purging
 description: In diesem Artikel werden die verfügbaren Optionen für die Versionsbereinigung beschrieben.
-seo-description: In diesem Artikel werden die verfügbaren Optionen für die Versionsbereinigung beschrieben.
+seo-description: This article describes the available options for version purging.
 uuid: 6140c87e-ae1c-409d-bdbb-71b397f0b738
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
-feature: Konfiguration
+feature: Configuring
 exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 64%
+source-wordcount: '716'
+ht-degree: 63%
 
 ---
 
@@ -32,11 +32,11 @@ Diese Versionen werden nie bereinigt. Daher wächst die Größe des Repositorys 
 
 AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfügung:
 
-* [Version Manager](#version-manager)
+* die [Version Manager](#version-manager)
 
    Dies kann so konfiguriert werden, dass alte Versionen bei der Erstellung neuer Versionen bereinigt werden.
 
-* das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
+* die [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) Tool
 
    Dies wird im Rahmen der Überwachung und Wartung Ihres Repositorys verwendet.
 
@@ -50,7 +50,7 @@ AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfü
 
       Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
 
-* die Wartungsaufgabe [Versionsbereinigung](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die Notwendigkeit minimiert, die Tools zur Versionsbereinigung manuell zu verwenden.
+* die [Wartungsaufgabe für Versionsbereinigung](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die Notwendigkeit minimiert, die Tools zur Versionsbereinigung manuell zu verwenden.
 
 >[!CAUTION]
 >
@@ -104,7 +104,7 @@ Die folgenden Optionen sind verfügbar:
 
 ### Kombinieren von Aufbewahrungsoptionen {#combining-retention-options}
 
-Die Optionen, die definieren, wie welche Versionen beibehalten werden sollen ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), können je nach Ihren Anforderungen kombiniert werden.
+Die Optionen, die festlegen, wie welche Versionen beibehalten werden sollen ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), kann je nach Ihren Anforderungen kombiniert werden.
 
 Wenn Sie z. B. die Anzahl der Versionen, die maximal aufbewahrt werden, UND die älteste aufzubewahrende Version definieren:
 
@@ -138,6 +138,6 @@ Wenn Sie z. B. die maximale UND die minimale Anzahl von Versionen, die aufbewahr
 
    * 3 Versionen aufbewahrt werden.
 
-## Tool „Versionen bereinigen“{#purge-versions-tool}
+## Tool „Versionen bereinigen“ {#purge-versions-tool}
 
 Das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) dient zum Bereinigen der Versionen eines Knotens oder einer Hierarchie von Knoten in Ihrem Repository. Der Hauptzweck ist die Verkleinerung des Repositorys durch Löschen alter Knotenversionen.

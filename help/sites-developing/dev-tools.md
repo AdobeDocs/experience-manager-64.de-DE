@@ -1,8 +1,8 @@
 ---
 title: Entwicklungstools
-seo-title: Entwicklungstools
+seo-title: Development Tools
 description: Für die Entwicklung Ihrer JCR-, Apache Sling- oder AEM-Anwendungen stehen Ihnen eine Reihe von Toolsets zur Verfügung.
-seo-description: Für die Entwicklung Ihrer JCR-, Apache Sling- oder AEM-Anwendungen stehen Ihnen eine Reihe von Toolsets zur Verfügung.
+seo-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
 uuid: 1bee3a52-5d76-4b0c-a222-a02e12ff3a43
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 exl-id: 3c18feab-97a6-49f2-96be-7e7458199f5d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 62%
+source-wordcount: '392'
+ht-degree: 60%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 62%
 
 Für die Entwicklung Ihrer JCR-, Apache Sling- oder AEM-Anwendungen stehen die folgenden Toolsets zur Verfügung:
 
-* einen Satz, der aus [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) und WebDAV besteht. CRXDE Lite ist in CRX/AEM integriert und ermöglicht es Ihnen, gängige Entwicklungstätigkeiten im Browser vorzunehmen. Mit CRXDE Lite können Sie Dateien (etwa JSP- und JAVA-Dateien), Ordner, Vorlagen, Komponenten, Dialoge, Knoten, Eigenschaften und Pakete erstellen und bearbeiten, während eine Protokollierung und Integration mit SVN erfolgt.
+* ein Satz aus [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) und WebDAV. CRXDE Lite ist in CRX/AEM integriert und ermöglicht es Ihnen, gängige Entwicklungstätigkeiten im Browser vorzunehmen. Mit CRXDE Lite können Sie Dateien (etwa JSP- und JAVA-Dateien), Ordner, Vorlagen, Komponenten, Dialoge, Knoten, Eigenschaften und Pakete erstellen und bearbeiten, während eine Protokollierung und Integration mit SVN erfolgt.
 
    CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den CRX-/AEM-Server haben, wenn Sie eine Anwendung entwickeln, indem Sie die vordefinierten Komponenten und Java-Bundles erweitern oder ändern oder wenn Sie keinen dedizierten Debugger, keine Codevervollständigung und keine Syntaxhervorhebung benötigen.
 
@@ -37,7 +37,7 @@ Adobe hat die folgenden Erweiterungen veröffentlicht:
 * [AEM Brackets-Erweiterung](/help/sites-developing/aem-brackets.md)
 * [AEM IntelliJ-Erweiterung](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) (von Headwire)
 
-### Weitere Tools  {#other-tools}
+### Weitere Tools {#other-tools}
 
 AEM wird mit weiteren Tools für die Entwicklung bereitgestellt:
 

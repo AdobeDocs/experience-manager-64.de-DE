@@ -1,8 +1,8 @@
 ---
 title: Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen
-seo-title: Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen
+seo-title: Customize layout and positioning of error messages of an adaptive form
 description: 'Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen. '
-seo-description: 'Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen. '
+seo-description: You can customize layout and positioning of the error messages of an adaptive for.
 uuid: 18b6d770-8b68-4aa0-b866-6325a6ceabcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
 exl-id: a57bd3c4-2d50-4089-8279-1e403e9469bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 89%
+source-wordcount: '524'
+ht-degree: 91%
 
 ---
 
@@ -25,16 +25,16 @@ Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formul
 * Inhalt der dynamischen Hilfeanzeige anpassen
 * Position der Feldkomponenten (Beschriftung, Widget, Kurzbeschreibung, Langbeschreibung und Komponenten der Hilfeanzeige) ohne Ändern der entsprechenden CSS-Eigenschaften anpassen
 
-## Layout von Feldern anpassen  {#customize-layout-of-fields}
+## Layout von Feldern anpassen {#customize-layout-of-fields}
 
 Sie können das Layout eines einzelnen Felds oder aller Felder anpassen, um die Position von Beschriftungen und Fehlermeldungen anzupassen. Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Layout auf ein Feld anzuwenden:
 
-### Layout eines einzelnen Felds anpassen  {#customize-layout-of-a-single-field}
+### Layout eines einzelnen Felds anpassen {#customize-layout-of-a-single-field}
 
 Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Layout auf ein einzelnes Feld anzuwenden:
 
-1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Style**.
-1. Wählen Sie in der Seitenleiste unter **Formularobjekte** das Feld aus und tippen Sie auf die Bearbeitungsschaltfläche ![edit-button](assets/edit-button.png).
+1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, tippen Sie in der Seitensymbolleiste auf ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Stil**.
+1. In der Seitenleiste unter **Formularobjekte**, wählen Sie das Feld aus und tippen Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit-button.png).
 1. Wählen Sie den Status des Feldes, das Sie anpassen möchten, und geben Sie den Stil für diesen Status an.
 
    ![Festlegen des Inline-Stils für ein Feld](assets/edit-error-state.png)
@@ -46,10 +46,10 @@ Mit AEM Forms können Sie jetzt ein Design erstellen und auf Ihr Formular anwend
 Indem Sie Designs im Design-Editor erstellen, könen Sie das Layout aller Felder im Formular anpassen. Nachdem Sie ein Design erstellt haben, führen Sie die folgenden Schritte aus, um es auf ein Formular anzuwenden:
 
 1. Öffnen Sie das Formular im Bearbeitungsmodus.
-1. Wählen Sie im Bearbeitungsmodus eine Komponente aus, tippen Sie auf ![Feldebene](assets/field-level.png) > **Container für adaptive Formulare** und tippen Sie dann auf ![cmppr](assets/cmppr.png).
+1. Wählen Sie im Bearbeitungsmodus eine Komponente aus und tippen Sie anschließend auf ![field-level](assets/field-level.png) > **Container für ein adaptives Formular** und dann auf ![cmppr](assets/cmppr.png).
 1. Wählen Sie in der Seitenleiste unter „Adaptives Formulardesign“ das Design, das Sie im Design-Editor erstellt haben.
 
-## Benutzerdefiniertes Feldlayout definieren  {#create-a-custom-field-layout}
+## Benutzerdefiniertes Feldlayout definieren {#create-a-custom-field-layout}
 
 1. Öffnen Sie CRXDE Lite. Die Standardeinstellung ist `https://[Server]:[Port]/crx/de`.
 1. Kopieren Sie ein Feldlayout vom Knoten „/libs/fd/af/layouts/field“ (z. B. defaultFieldLayout) in den Knoten „/apps“ (z. B. „/apps/af-field-layout“).

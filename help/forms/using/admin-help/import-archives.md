@@ -1,8 +1,8 @@
 ---
 title: Archive importieren und verwalten
-seo-title: Archive importieren und verwalten
+seo-title: Import and manage archives
 description: Erfahren Sie, wie Sie Archive importieren und verwalten.
-seo-description: Erfahren Sie, wie Sie Archive importieren und verwalten.
+seo-description: Learn how to import and manage archives.
 uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 12183806-5e00-46e8-bf25-5379a07a56a4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1454'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstellt wurden, zu importieren und zu verwalten.
 
-## Ein Archiv importieren  {#import-an-archive}
+## Ein Archiv importieren {#import-an-archive}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Anwendungsverwaltung“ und klicken Sie dann auf die Registerkarte „Archive“.
 1. Wählen Sie Importieren.
@@ -93,14 +93,14 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
 1. Klicken Sie auf „Fertig stellen“, um die Konfiguration abzuschließen.
 
-## Konfigurieren Sie die AEM Forms, die Teil von Archivdateien sind.  {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Konfigurieren Sie die AEM Forms, die Teil von Archivdateien sind. {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Anwendungsverwaltung“ und klicken Sie dann auf die Registerkarte „Archive“.
 1. Wählen Sie auf der Seite „Archivverwaltung“ die zu konfigurierende Archivdatei aus.
 1. Wählen Sie auf der Seite „Archiv anzeigen“ die hervorgehobene Archivressource aus.
 1. Konfigurieren Sie die importierte Prozessarchivdatei.
 
-## Den Konfigurationsassistenten zum Konfigurieren die AEM Forms, die Teil von Archivdateien sind, verwenden  {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## Den Konfigurationsassistenten zum Konfigurieren die AEM Forms, die Teil von Archivdateien sind, verwenden {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Anwendungsverwaltung“ und klicken Sie dann auf die Registerkarte „Archive“.
 1. Klicken Sie zum Konfigurieren neben der Archivdatei auf „Konfigurieren“.
@@ -158,7 +158,7 @@ Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstell
 
       Klicken Sie auf „Fertig gestellt“, um den Prinzipal dem Sicherheitsprofil hinzuzufügen.
 
-## Ein Archiv entfernen  {#remove-an-archive}
+## Ein Archiv entfernen {#remove-an-archive}
 
 >[!NOTE]
 >

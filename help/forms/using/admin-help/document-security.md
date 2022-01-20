@@ -1,19 +1,19 @@
 ---
 title: 'Informationen zu Document Security '
-seo-title: 'Informationen zu Document Security '
+seo-title: About document security
 description: Erfahren Sie, wie Sie mit Document Security vordefinierte Vertraulichkeitseinstellungen mühelos erstellen, speichern und auf Dokumente anwenden.
-seo-description: Erfahren Sie, wie Sie mit Document Security vordefinierte Vertraulichkeitseinstellungen mühelos erstellen, speichern und auf Dokumente anwenden.
+seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
 uuid: 31b0c24f-a588-44f7-a9ba-e9780e82c066
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
-feature: Dokumentensicherheit
+feature: Document Security
 exl-id: fa62a521-1a0b-4856-acc6-71c51ad9e527
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2524'
 ht-degree: 99%
 
 ---
@@ -60,7 +60,7 @@ Die Abbildung zeigt die folgenden Schritte:
 1. Der Empfänger öffnet das Dokument in der entsprechenden Clientanwendung. Der Empfänger kann das Dokument gemäß der geltenden Richtlinie nutzen.
 1. Der Dokumenteigentümer, Richtliniensatzkoordinator oder Administrator kann Dokumente nachverfolgen und den Zugriff darauf auf den Webseiten ändern.
 
-## Informationen zu Document Security-Benutzern  {#about-document-security-users}
+## Informationen zu Document Security-Benutzern {#about-document-security-users}
 
 Mit Document Security arbeiten verschiedene Benutzer, um unterschiedliche Aufgaben zu erledigen:
 
@@ -146,13 +146,13 @@ Document Security-Administratoren können unter Verwendung der folgenden Berecht
 * Document Security – Serverereignisse anzeigen
 * Document Security – Richtlinieneigentümer ändern
 
-## Informationen zu Richtlinien und richtliniengeschützten Dokumenten  {#policies-and-policy-protected-documents}
+## Informationen zu Richtlinien und richtliniengeschützten Dokumenten {#policies-and-policy-protected-documents}
 
 Eine *Richtlinie* definiert einen Satz von Vertraulichkeitseinstellungen und Benutzern, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Eine Richtlinie ermöglicht auch eine dynamische Änderung der für ein Dokument geltenden Berechtigungen. Sie berechtigt den Benutzer, der das Dokument absichert, zum Ändern der Vertraulichkeitseinstellungen, um den Zugriff auf das Dokument zu sperren, oder das Wechseln der Richtlinie.
 
 Der Richtlinienschutz kann über Adobe Acrobat® Pro und Acrobat Standard für ein PDF-Dokument aktiviert werden. Der Richtlinienschutz kann auch für andere Dateitypen, z. B. Microsoft Word-, Excel- und PowerPoint-Dateien aktiviert werden. Verwenden Sie hierfür die Clientanwendung, wobei die entsprechende Acrobat Reader DC Extensions installiert sein muss.
 
-### Funktionsweise von Richtlinien  {#how-policies-work}
+### Funktionsweise von Richtlinien {#how-policies-work}
 
 Richtlinien enthalten Informationen zu den autorisierten Benutzern und den Vertraulichkeitseinstellungen, die auf Dokumente angewendet werden sollen. Bei den Benutzern kann es sich um unternehmensinterne Personen oder externe Personen mit einem Konto handeln. Wenn der Administrator die Benutzereinladungsfunktion aktiviert, können sogar neu eingeladene Benutzer zu Richtlinien hinzugefügt werden, wodurch ein E-Mail-basierter Einladungsprozess zur Registrierung eingeleitet wird.
 
@@ -181,7 +181,7 @@ Wenn Sie eine Richtlinie auf ein Dokument anwenden, werden die im Dokument entha
 
 Wenn die Offline-Nutzung aktiviert ist, können Empfänger auch offline (ohne aktive Internet- oder Netzwerkverbindung) für die in der Richtlinie angegebene Dauer mit richtliniengeschützten Dokumenten arbeiten.
 
-### Funktionsweise richtliniengeschützter Dokumente  {#how-policy-protected-documents-work}
+### Funktionsweise richtliniengeschützter Dokumente {#how-policy-protected-documents-work}
 
 Um richtliniengeschützte Dokumente öffnen und verwenden zu können, muss die Richtlinie Ihren Namen als Empfänger enthalten. Außerdem müssen Sie ein gültiges Document Security-Konto haben. Für PDF-Dokumente benötigen Sie Acrobat oder Adobe Reader®. Für andere Dateitypen müssen sowohl die entsprechende Anwendung als auch die Acrobat Reader DC Extensions für diese Anwendung installiert sein.
 
@@ -206,7 +206,7 @@ Nach Ende der Offline-Nutzungsdauer muss der Benutzer das Dokument wieder mit Do
 
 Wenn Sie eine Kopie eines richtliniengeschützten Dokuments mit dem Menübefehl „Speichern“ oder „Speichern unter“ speichern, wird die Richtlinie automatisch angewendet und für das neue Dokument erzwungen. Ereignisse, z. B. Versuche, das neue Dokument zu öffnen, werden für das ursprüngliche Dokument geprüft und aufgezeichnet.
 
-## Richtliniensätze  {#policy-sets}
+## Richtliniensätze {#policy-sets}
 
 *Richtliniensätze* dienen zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck.  Diese Richtliniensätze werden meist einer Teilmenge der Benutzer im System zur Verfügung gestellt.
 

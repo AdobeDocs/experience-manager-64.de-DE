@@ -20,7 +20,7 @@ Lösen Sie zum Erstellen einer Sprachkopie einen der folgenden Sprachkopie-Workf
 
 Bei diesem Workflow werden die zu übersetzenden Assets in den Sprachstamm der Sprache kopiert, in die übersetzt werden soll. Darüber hinaus wird je nach gewählten Optionen ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Je nach Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wurde.
 
-**Sprachkopien aktualisieren**
+**Aktualisieren von Sprachkopien**
 
 Diesen Workflow führen Sie aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält.
 
@@ -194,7 +194,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 
 1. Nach Abschluss des Übersetzungsvorgangs ändert sich der Status in „Bereit für Überprüfung“. Navigieren Sie zur Benutzeroberfläche „Assets“ und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
-## Sprachkopien aktualisieren {#update-language-copies}
+## Aktualisieren von Sprachkopien {#update-language-copies}
 
 Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält. Abhängig von den gewählten Optionen wird ein Übersetzungsprojekt erstellt oder ein vorhandenes Übersetzungsprojekt für die neuen Assets aktualisiert. Der Workflow zum Aktualisieren der Sprachkopien umfasst die folgenden Optionen:
 
@@ -313,4 +313,4 @@ Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbe
 
 1. Navigieren Sie zur Konsole „Assets“ und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
-Tipps zur effizienten Übersetzung von Metadaten für Assets finden Sie auf dieser archivierten Seite über die [5 Schritte zum effizienten Übersetzen von Metadaten](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).
+Tipps zum effizienten Übersetzen von Metadaten finden Sie auf dieser archivierten Seite über [5 Schritte zur effizienten Übersetzung von Metadaten](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/).

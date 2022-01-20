@@ -1,25 +1,25 @@
 ---
-title: Verwalten von Agentenunterschriftbildern
-seo-title: Verwalten von Agentsignaturbildern
+title: Verwalten von Agentsignaturbildern
+seo-title: Manage agent signature images
 description: Nachdem Sie eine Briefvorlage erstellt haben, können Sie diese verwenden, um Korrespondenz in AEM Forms zu erstellen, indem Sie Daten, Inhalte und Anhänge verwalten.
-seo-description: Nachdem Sie eine Briefvorlage erstellt haben, können Sie diese verwenden, um Korrespondenz in AEM Forms zu erstellen, indem Sie Daten, Inhalte und Anhänge verwalten.
+seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
 uuid: 720dd075-9059-4311-ad52-70e2f7c76c58
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: 4e261228-14a4-4983-97ac-6ca476bee126
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 71%
+source-wordcount: '690'
+ht-degree: 70%
 
 ---
 
-# Verwalten von Agentenunterschriftbildern {#manage-agent-signature-images}
+# Verwalten von Agentsignaturbildern {#manage-agent-signature-images}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In der Correspondence Management können Sie ein Bild für die Agentunterzeichnung in Briefen verwenden. Nachdem Sie das Agentsignaturbild eingerichtet haben, können Sie beim Erstellen eines Briefs das Agentsignaturbild im Brief als Signatur des Absenderagenten rendern.
 
@@ -45,7 +45,7 @@ Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum A
 
       >[!NOTE]
       >
-      >cmUserRoot ist der Standardspeicherort, unter dem AEM nach dem Agentsignaturbild sucht. Sie können sie jedoch ändern, indem Sie die Eigenschaft &quot;CM User Root&quot;in den Konfigurationseigenschaften [Correspondence Management](/help/forms/using/cm-configuration-properties.md) bearbeiten.
+      >cmUserRoot ist der Standardspeicherort, unter dem AEM nach dem Agentsignaturbild sucht. Sie können dies jedoch ändern, indem Sie die Eigenschaft &quot;CM User Root&quot;im [Konfigurationseigenschaften von Correspondence Management](/help/forms/using/cm-configuration-properties.md).
 
 1. Navigieren Sie in Content Explorer zum cmUserRoot-Ordner und fügen Sie das Agentsignaturbild hinzu.
 
@@ -61,17 +61,17 @@ Sie können die Standardfunktion auch überschreiben, um eine eigene Logik zum A
 
       **Typ:** nt:file
 
-      Im Ordner `cmUserRoot` wird ein neuer Ordner mit dem Namen `JohnDoe` (oder dem Namen, den Sie im vorherigen Schritt angegeben haben) erstellt.
+      Unter dem `cmUserRoot` Ordner, ein neuer Ordner namens `JohnDoe` (oder der Name, den Sie im vorherigen Schritt angegeben haben) erstellt.
 
    1. Klicken Sie auf den neu erstellten Ordner (hier `JohnDoe`). Der Content Explorer zeigt den Inhalt des Ordners abgeblendet an.
 
-   1. Doppelklicken Sie auf die Eigenschaft **jcr:content**, legen Sie den Typ auf **nt:resource** fest und klicken Sie dann auf das grüne Häkchen, um den Eintrag zu speichern.
+   1. Doppelklicken Sie auf die **jcr:content** Eigenschaft, setzen Sie den Typ auf **nt:resource** und klicken Sie dann auf das grüne Häkchen, um den Eintrag zu speichern.
 
       Wenn die Eigenschaft nicht vorhanden ist, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“. 
 
       ![Eigenschaft „jcr:content“](assets/3_jcrcontentntresource.png)
 
-      Zu den Untereigenschaften von „jcr:content“ gehört die abgeblendet dargestellte Eigenschaft „jcr:data“. Doppelklicken Sie auf „jcr:data“. Die Eigenschaft kann bearbeitet werden und die Schaltfläche Datei auswählen wird im Eintrag angezeigt. Klicken Sie auf **Datei** auswählen und wählen Sie die Bilddatei aus, die Sie als Logo verwenden möchten. Für die Bilddatei wird keine Erweiterung benötigt.
+      Zu den Untereigenschaften von „jcr:content“ gehört die abgeblendet dargestellte Eigenschaft „jcr:data“. Doppelklicken Sie auf „jcr:data“. Die Eigenschaft kann bearbeitet werden und die Schaltfläche Datei auswählen wird im Eintrag angezeigt. Klicken **Datei auswählen** und wählen Sie die Bilddatei aus, die Sie als Logo verwenden möchten. Für die Bilddatei wird keine Erweiterung benötigt.
 
       ![JCR-Daten](assets/5_jcrdata.png)
    Klicken Sie auf **Alle speichern**.

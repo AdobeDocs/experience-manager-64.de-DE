@@ -23,7 +23,7 @@ ht-degree: 95%
 
 Verwenden Sie die Funktion **[!UICONTROL Einbettungs-Code]**, wenn Sie ein Video wiedergeben oder ein Asset anzeigen möchten, das auf einer Web-Seite eingebettet wurde. Kopieren Sie den Einbettungs-Code in die Zwischenablage, damit Sie ihn in die Web-Seiten einfügen können. Der Code kann im Dialogfeld **[!UICONTROL Einbettungs-Code]** nicht bearbeitet werden.
 
-Betten Sie URLs nur dann ein, wenn Sie _nicht_ als Ihr WCM verwenden. [!DNL Experience Manager] Wenn Sie [!DNL Experience Manager] als WCM verwenden, [fügen Sie die Assets direkt auf Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
+Betten Sie URLs nur dann ein, wenn Sie _nicht_ als Ihr WCM verwenden. [!DNL Experience Manager] Wenn Sie [!DNL Experience Manager] als WCM verwenden, [Sie fügen die Assets direkt auf Ihrer Seite hinzu.](adding-dynamic-media-assets-to-pages.md)
 
 Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 

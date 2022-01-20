@@ -1,8 +1,8 @@
 ---
 title: Erweiterte Systemattribute konfigurieren
-seo-title: Erweiterte Systemattribute konfigurieren
+seo-title: Configure advanced system attributes
 description: Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „Erweiterte Systemattribute konfigurieren“ ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen.
-seo-description: Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „Erweiterte Systemattribute konfigurieren“ ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen.
+seo-description: Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file.
 uuid: 6bcfbaa9-f492-46aa-97d2-00fc3e67d0d7
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 exl-id: f47c543d-6136-482b-915f-b4e13f83fa69
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '475'
 ht-degree: 94%
 
 ---
@@ -42,7 +42,7 @@ Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „
 
    **Cluster Job Lock Timeout In Minutes:** Wird in Clusterumgebungen verwendet. Wenn die Synchronisation auf einem Knoten fehlschlägt und die Clustersperre nicht beendet wurde, gibt dieser Wert die Anzahl der Minuten an, die ein anderer Knoten wartet, bevor er die Sperre erzwingt. Der Standardwert ist `15` Minuten. Gültig sind Werte von `1` bis `1440` Minuten.
 
-1. (Optional) Ändern Sie die folgenden Attribute und klicken Sie dann auf **[!UICONTROL OK]**:
+1. (Optional) Ändern Sie die folgenden Attribute und klicken Sie auf **[!UICONTROL OK]**:
 
    **User Manager-Ereignisprüfung:** Wählen Sie diese Option, um die Prüfung von Ordnersynchronisierungsereignissen sowie von Authentifizierungsereignissen wie Erfolg, Fehler und Sperrung zu aktivieren. Standardmäßig ist diese Option nur aktiviert, wenn eine Komponente installiert ist, die Prüfungen erfordert, z. B Rights Management. Diese Einstellung aktualisiert den Eintragsschlüssel `APSAuditService` in der Konfigurationsdatei.
 

@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Geschäftskalendern
-seo-title: Konfigurieren von Geschäftskalendern
+seo-title: Configuring Business Calendars
 description: Geschäftskalender definieren Geschäftstage und geschäftsfreie Tage für Ihre Organisation. Erfahren Sie, wie Sie die Geschäftskalender konfigurieren.
-seo-description: Geschäftskalender definieren Geschäftstage und geschäftsfreie Tage für Ihre Organisation. Erfahren Sie, wie Sie die Geschäftskalender konfigurieren.
+seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
 uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: d29e1b1e-62df-4b0d-aa64-ad98568cf4a6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1914'
 ht-degree: 94%
 
 ---
 
-# Konfigurieren von Geschäftskalendern {#configuring-business-calendars}
+# Geschäftskalender konfigurieren {#configuring-business-calendars}
 
 *Geschäftskalender* definieren Geschäftstage und geschäftsfreie Tage (z. B. gesetzliche Feiertage, Wochenenden und Betriebsferien) für Ihre Organisation. Bei Verwendung von Geschäftskalendern lässt AEM Forms geschäftsfreie Tage aus, wenn bestimmte Datumsberechnungen angestellt werden. In Workbench können Sie festlegen, ob Geschäftskalender für Benutzern zugeordnete Ereignisse wie z. B. Aufgabenerinnerungen, Termine und Eskalationen oder für nicht Benutzern zugeordnete Aktionen wie Timer-Ereignisse oder den Wait-Dienst verwendet werden sollen.
 
@@ -27,15 +27,15 @@ Eine Aufgabenerinnerung kann beispielsweise so konfiguriert sein, dass sie drei 
 >
 >Beim Berechnen von Daten und Uhrzeiten unter Verwendung von Geschäftskalendern verwendet AEM Forms das Datum und die Uhrzeit des Servers, auf dem es ausgeführt wird, und führt keine Anpassung aufgrund von Zeitzonendifferenzen durch. Wird beispielsweise die Anzeige einer Aufgabenerinnerung für 10:00 Uhr vormittags auf einem Server geplant, der in London ausgeführt wird, während sich der Benutzer, der die Erinnerung erhält, aber in New York City befindet, erhält dieser die Erinnerung um 5:00 Uhr morgens Ortszeit.
 
-## Standardgeschäftskalender verwenden  {#using-the-default-business-calendar}
+## Standardgeschäftskalender verwenden {#using-the-default-business-calendar}
 
 AEM Forms bietet einen Standardgeschäftskalender (namens *Integrierter Kalender*), in dem Samstage und Sonntage als geschäftsfreie Tage festgelegt sind. Wenn für alle Benutzer in Ihrer Organisation dieselben geschäftsfreien Tage gelten, können Sie den Standardgeschäftskalender dementsprechend aktualisieren. Wird nur der Standardgeschäftskalender verwendet, müssen in User Management keine Geschäftskalender aktiviert oder Zuordnungen bereitgestellt werden. Sind keine anderen Geschäftskalender definiert, verwendet AEM Forms den Standardgeschäftskalender.
 
-## Mehrere Geschäftskalender einrichten  {#setting-up-multiple-business-calendars}
+## Mehrere Geschäftskalender einrichten {#setting-up-multiple-business-calendars}
 
 Wenn für einige der Benutzer in Ihrer Organisation abweichende geschäftsfreie Tage gelten, können Sie mehrere Geschäftskalender definieren und Zuordnungen konfigurieren, die die Auflösung eines Geschäftskalenders für einen Benutzer zur Laufzeit erlauben.
 
-### Mehrere Geschäftskalender definieren  {#define-multiple-business-calendars}
+### Mehrere Geschäftskalender definieren {#define-multiple-business-calendars}
 
 1. Entscheiden Sie, wie Benutzern geeignete Geschäftskalender zugewiesen werden sollen. Es gibt zwei Methoden, um einem Benutzer einen Geschäftskalender zuzuordnen.
 
@@ -59,7 +59,7 @@ Wenn für einige der Benutzer in Ihrer Organisation abweichende geschäftsfreie 
 
    Wenn der Prozessentwickler keine Geschäftskalender verwendet, werden alle geschäftsfreien Tage bei der Datumsberechnung für das Ereignis als Geschäftstage behandelt. Ein Aufgabentermin kann beispielsweise so konfiguriert sein, dass er drei Tage nach der Zuweisung der Aufgabe zu einem Benutzer fällig wird. Die Aufgabe wird am Donnerstag zugewiesen. Der Aufgabentermin wird trotz des Wochenendes am Sonntag fällig.
 
-## Einen Geschäftskalender erstellen oder aktualisieren  {#create-or-update-a-business-calendar}
+## Einen Geschäftskalender erstellen oder aktualisieren {#create-or-update-a-business-calendar}
 
 Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen geschäftsfreien Tagen vorhanden sind, können Sie mehrere Geschäftskalender definieren. Sie können auch an vorhandenen Kalendern Änderungen vornehmen, einschließlich des von AEM Forms bereitgestellten integrierten Standardkalenders.
 
@@ -73,7 +73,7 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
    Wählen Sie zum Bearbeiten eines vorhandenen Geschäftskalenders diesen aus der Dropdown-Liste aus.
 
 1. Wählen Sie unter „Geschäftsfreier Standardtag“ alle geschäftsfreien Wochentage aus, wie z. B. Wochenenden.
-1. [] Optional: Wählen Sie Geschäftszeiten verwenden aus und geben Sie die Start- und Endzeiten für die Geschäftstage an.
+1. [Optional] Wählen Sie Geschäftszeiten verwenden aus und geben Sie die Start- und Endzeiten für die Geschäftstage an.
 
    Wenn Sie diese Option wählen, wird ein Ereignis, das vor dem angegebenen Zeitraum eintritt, an den Anfang des Zeitraums verschoben, und ein Ereignis, das nach dem Zeitraum eintritt, wird an die Anfangszeit des nächsten Geschäftstages verschoben.
 
@@ -81,9 +81,9 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
 
 1. Doppelklicken Sie im Kalender auf der linken Seite auf alle weiteren geschäftsfreien Tage, wie z. B. Feiertage. Tage, die in der Vergangenheit liegen, können nicht ausgewählt werden. Die von Ihnen ausgewählten geschäftsfreien Tage werden in einer Liste auf der rechten Seite angezeigt, wobei das Datum zweimal pro Zeile angezeigt wird. Wählen Sie das linke Datum aus, um einen Namen oder eine Beschreibung für den geschäftsfreien Tag einzugeben.
 
-   Um einen geschäftsfreien Tag aus der Liste zu entfernen, klicken Sie neben dem Tag auf ![bus_cal_trash](assets/bus_cal_trash.png) .
+   Um einen geschäftsfreien Tag aus der Liste zu entfernen, klicken Sie auf ![bus_cal_trash](assets/bus_cal_trash.png) neben dem Tag.
 
-1. [] OptionalWenn dieser Kalender der Standardkalender sein soll, wählen Sie &quot;Standardkalender&quot;. Der Standardkalender wird verwendet, wenn keine anderen Kalenderzuordnungen für Benutzern zugeordnete Ereignisse vorhanden sind oder wenn kein Geschäftskalender für das Timer-Ereignis oder den Wait-Dienst festgelegt ist. Der Standardkalender kann nicht gelöscht werden.
+1. [Optional] Wenn dieser Kalender der Standardkalender sein soll, wählen Sie &quot;Standardkalender&quot;. Der Standardkalender wird verwendet, wenn keine anderen Kalenderzuordnungen für Benutzern zugeordnete Ereignisse vorhanden sind oder wenn kein Geschäftskalender für das Timer-Ereignis oder den Wait-Dienst festgelegt ist. Der Standardkalender kann nicht gelöscht werden.
 1. Wenn die Definition der geschäftsfreien Tage fertig gestellt ist, wählen Sie „Kalender aktiviert“, um den Kalender zu aktivieren, und klicken dann auf „Speichern“.
 
    Wenn Sie einen vorhandenen Kalender aktualisieren, wird die neue Version sofort gültig und wird für alle Geschäftskalenderberechnungen verwendet, einschließlich Aufgaben, die bereits ausgeführt werden.
@@ -92,11 +92,11 @@ Wenn in Ihrer Organisation verschiedene Benutzergruppen mit unterschiedlichen ge
    >
    >Wird der Kalender nicht aktiviert, wird der Standardkalender verwendet.
 
-## Benutzer und Gruppen einem Geschäftskalender zuordnen  {#mapping-users-and-groups-to-a-business-calendar}
+## Benutzer und Gruppen einem Geschäftskalender zuordnen {#mapping-users-and-groups-to-a-business-calendar}
 
 Es gibt zwei Methoden, um einem Benutzer einen Geschäftskalender zuzuordnen. Sie können Geschäftskalender Benutzern auf Grundlage eines Geschäftskalenderschlüssels zuweisen oder auf Basis der Ordnergruppe, der der jeweilige Benutzer angehört. Die von AEM Forms zu verwendende Methode wird auf der Registerkarte „Zuordnung“ festgelegt, wo auch die Geschäftskalenderschlüssel und Gruppen den Geschäftskalendern zugeordnet werden. Detaillierte Informationen zum Verknüpfen von Geschäftskalendern mit Benutzern finden Sie unter [Mehrere Geschäftskalender einrichten](configuring-business-calendars.md#setting-up-multiple-business-calendars).
 
-### Benutzern Geschäftskalender auf Grundlage von Geschäftskalenderschlüsseln zuordnen  {#associate-business-calendars-with-users-based-on-business-calendar-keys}
+### Benutzern Geschäftskalender auf Grundlage von Geschäftskalenderschlüsseln zuordnen {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“, und klicken Sie dann auf die Registerkarte „Zuordnung“.
 1. Wählen Sie in der Liste „Das System verwendet“ den Eintrag „User Manager-Geschäftskalenderschlüssel-Auflösung“ aus.
@@ -109,7 +109,7 @@ Es gibt zwei Methoden, um einem Benutzer einen Geschäftskalender zuzuordnen. Si
 1. Wählen Sie für jedes Element in der Liste UM-Geschäftskalenderschlüssel einen Kalender aus.
 1. Klicken Sie auf Speichern.
 
-### Benutzern und Gruppen Geschäftskalender auf Grundlage von Ordnerdienstgruppen zuordnen  {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
+### Benutzern und Gruppen Geschäftskalender auf Grundlage von Ordnerdienstgruppen zuordnen {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“, und klicken Sie dann auf die Registerkarte „Zuordnung“.
 1. Wählen Sie in der Liste „Das System verwendet“ den Eintrag „vom Verzeichnisdienst definierte Gruppen“ aus.
@@ -122,7 +122,7 @@ Es gibt zwei Methoden, um einem Benutzer einen Geschäftskalender zuzuordnen. Si
 1. Wählen Sie für jedes Element in der Liste „Verzeichnisdienstgruppe“ einen Kalender aus.
 1. Klicken Sie auf Speichern.
 
-## Geschäftskalender exportieren und importieren  {#exporting-and-importing-business-calendars}
+## Geschäftskalender exportieren und importieren {#exporting-and-importing-business-calendars}
 
 AEM Forms ermöglicht Ihnen das Exportieren und Importieren Ihrer Geschäftskalender als XML-Dateien. Mithilfe dieser Funktion können Sie Kalender aus einem Testsystem in ein Produktionssystem verschieben.
 
@@ -130,18 +130,18 @@ AEM Forms ermöglicht Ihnen das Exportieren und Importieren Ihrer Geschäftskale
 >
 >Diese Funktion exportiert und importiert alle definierten Geschäftskalender, einschließlich des von AEM Forms bereitgestellten Standardgeschäftskalenders. Ein importierter Geschäftskalender mit demselben Namen wie ein bereits vorhandener Kalender überschreibt den vorhandenen Kalender.
 
-### Geschäftskalender exportieren  {#export-business-calendars}
+### Geschäftskalender exportieren {#export-business-calendars}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“.
 1. Klicken Sie auf „Exportieren“ und speichern Sie die XML-Datei.
 
-### Geschäftskalender importieren  {#import-business-calendars}
+### Geschäftskalender importieren {#import-business-calendars}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Geschäftskalender“.
 1. Wählen Sie Importieren.
 1. Wählen Sie die XML-Datei aus, die die exportierten Geschäftskalender enthält, und klicken Sie auf „Öffnen“.
 
-## Einen Geschäftskalender löschen  {#delete-a-business-calendar}
+## Einen Geschäftskalender löschen {#delete-a-business-calendar}
 
 Alle Geschäftskalender, die in Ihrer Organisation nicht mehr benötigt werden, können entfernt werden. Wird ein Geschäftskalender gelöscht, der noch Benutzern oder Gruppen zugeordnet ist, wird der Standardkalender verwendet.
 

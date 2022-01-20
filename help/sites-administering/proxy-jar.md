@@ -1,8 +1,8 @@
 ---
 title: Proxyserver-Tool (proxy.jar)
-seo-title: Proxyserver-Tool (proxy.jar)
+seo-title: Proxy Server Tool (proxy.jar)
 description: Erfahren Sie mehr über das Proxyserver-Tool in AEM.
-seo-description: Erfahren Sie mehr über das Proxyserver-Tool in AEM.
+seo-description: Learn about the Proxy Server Tool in AEM.
 uuid: 9a095b12-1d54-4b79-b0c5-d973f16479d3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 exl-id: fb96ed26-b5b6-4afc-a820-3ef45a9f3abd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1161'
 ht-degree: 95%
 
 ---
@@ -35,7 +35,7 @@ Sie können den Proxyserver verwenden, um alle Interaktionen zwischen Client und
 
 Sie können den Proxyserver zum Beispiel zwischen zwei Anwendungen schalten, die über ein TCP/IP-Netzwerk kommunizieren, etwa einem Webbrowser und AEM. So können Sie genau überprüfen, was passiert, wenn Sie eine AEM-Seite anfordern.
 
-## Starten des Proxyservertools  {#starting-the-proxy-server-tool}
+## Starten des Proxyservertools {#starting-the-proxy-server-tool}
 
 Das Tool befindet sich im Ordner /opt/helpers Ihrer AEM Installation. Geben Sie Folgendes ein, um es zu starten:
 
@@ -51,7 +51,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 * **logfile &lt;Dateiname> (In Protokolldatei schreiben):** Verwenden Sie diese Option, um die Konversation zwischen Client und Server in eine Protokolldatei zu schreiben. Dieser Parameter kann auch im stillen Modus genutzt werden.
 * **i &lt;numIndentions> (Einzug hinzufügen)**: Verwenden Sie diese Option, um jede aktive Verbindung der Lesbarkeit halber einzurücken. Der Standardwert beträgt 16 Ebenen. (Neu in der proxy.jar-Version 1.16).
 
-## Einsatzzwecke für das Proxyserver-Tool  {#uses-of-the-proxy-server-tool}
+## Einsatzzwecke für das Proxyserver-Tool {#uses-of-the-proxy-server-tool}
 
 In den folgenden Szenarien werden ein paar Einsatzzwecke demonstriert, für die das Proxyserver-Tool eingesetzt werden können:
 
@@ -99,7 +99,7 @@ Gehen Sie wie folgt vor, wenn gelegentlich hängende Anforderungen auftreten:
 1. Warten Sie oder schreiben Sie das Zugriffsprotokoll in eine Datei, in der jeder Eintrag einen Zeitstempel aufweist.
 1. Wenn hängende Anforderungen auftreten, können Sie sehen, wie viele Verbindungen offen waren und welche Anforderung dafür verantwortlich ist.
 
-## Das Format von Protokollmeldungen  {#the-format-of-log-messages}
+## Das Format von Protokollmeldungen {#the-format-of-log-messages}
 
 Die von proxy.jar erstellten Protokolleinträge haben das folgende Format:
 
@@ -116,7 +116,7 @@ C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]
 * „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anforderung einer Webseite).
 * „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
 * # 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
-* [GET  &lt;?>] ist der Inhalt der Anfrage, im Beispiel einer der HTTP-Header (URL).
+* [GET &lt;?>] ist der Inhalt der Anfrage, im Beispiel einer der HTTP-Header (URL).
 
 Wenn eine Verbindung geschlossen wird, werden die folgenden Informationen protokolliert:
 
@@ -127,7 +127,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 Hier werden die Anzahl der Bytes, die zwischen dem Client und dem Server bei der 6. Verbindung übertragen wurden, und die durchschnittliche Geschwindigkeit angegeben.
 
-## Beispiel für eine Protokollausgabe  {#an-example-of-log-output}
+## Beispiel für eine Protokollausgabe {#an-example-of-log-output}
 
 Lassen Sie uns eine einfache Vorlage durchgehen, die bei Anforderung folgenden Code erzeugt:
 

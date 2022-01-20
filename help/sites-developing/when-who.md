@@ -1,8 +1,8 @@
 ---
 title: Testen – wann und mit wem?
-seo-title: Testen – wann und mit wem?
+seo-title: Testing - when and with whom?
 description: Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Projektentwicklung involviert sein.
-seo-description: Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Projektentwicklung involviert sein.
+seo-description: Various roles can be involved in testing and at various stages of project development
 uuid: 431e8f06-80eb-4fb3-a4c7-2580608b0a1c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 exl-id: cba4a814-052b-4b9f-96f2-8c80b2766ecc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 51%
+source-wordcount: '274'
+ht-degree: 47%
 
 ---
 
@@ -44,7 +44,7 @@ Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Proje
     <ul> 
      <li><p>Bietet dem Kunden Erfahrung mit dem Projekt, das entwickelt wird.</p> </li> 
      <li><p>Bietet frühzeitiges Feedback vom Kunden.</p> </li> 
-     <li><p>Benutzer drücken ihre Anforderungen häufig aus, wenn sie über Erfahrungen der Vergangenheit verfügen; Die Einbeziehung der Kunden in Tests so früh wie möglich verbessert ihre Erfahrung mit dem neuen Projekt im Hinblick auf <i>praxisorientierte</i> Erlebnisse.</p> </li> 
+     <li><p>Benutzer drücken ihre Anforderungen häufig aus, wenn sie über Erfahrungen der Vergangenheit verfügen; Die frühestmögliche Einbeziehung der Kunden in Tests steigert ihre Erfahrung mit dem neuen Projekt im Hinblick auf <i>Handon</i> Erlebnis.</p> </li> 
     </ul> </td> 
    <td><p>Auch hier ist eine frühzeitige Einbindung gut, obwohl jede Version, die die Kunden verwenden, stabil und mit angemessener Funktionalität sein sollte.</p> <p>Erste Impressionen sind immer wichtig.</p> </td> 
   </tr> 

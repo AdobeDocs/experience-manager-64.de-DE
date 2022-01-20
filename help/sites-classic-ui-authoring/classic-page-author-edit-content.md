@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten des Seiteninhalts
-seo-title: Bearbeiten des Seiteninhalts
+seo-title: Editing Page Content
 description: Inhalt wird hinzugefügt, indem Komponenten auf die Seite gezogen werden. Dort können sie dann bearbeitet, verschoben oder gelöscht werden.
-seo-description: Inhalt wird hinzugefügt, indem Komponenten auf die Seite gezogen werden. Dort können sie dann bearbeitet, verschoben oder gelöscht werden.
+seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: 0b34fb45-286a-4acb-b5d1-efc3d0e4ab70
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 exl-id: 2d0f11ac-f24b-431e-9076-3e6099eab4ac
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1755'
 ht-degree: 99%
 
 ---
 
-# Bearbeiten des Seiteninhalts {#editing-page-content}
+# Bearbeiten des Seiteninhalts{#editing-page-content}
 
 Sobald Ihre Seite erstellt ist (neu oder im Rahmen eines Launch oder einer Live Copy), können Sie den Inhalt bearbeiten und die erforderlichen Aktualisierungen vornehmen.
 
@@ -35,8 +35,8 @@ Beim Sidekick handelt es sich um ein wichtiges Tool für die Bearbeitung von Sei
 
 Unter anderem sind folgende Registerkarten und Symbole verfügbar:
 
-* Komponenten 
-* Seite 
+* Komponenten
+* Seite
 * Informationen
 * Versionierung
 * Workflow
@@ -85,7 +85,7 @@ So fügen Sie eine neue Komponente ein:
 
 1. Fügen Sie die gewünschte Komponente in die Seite ein. Doppelklicken Sie dann auf den Absatz, und ein Fenster wird geöffnet, in dem Sie den Absatz konfigurieren und Inhalte einfügen können.
 
-### Einfügen einer Komponente mit dem Content Finder  {#inserting-a-component-using-the-content-finder}
+### Einfügen einer Komponente mit dem Content Finder {#inserting-a-component-using-the-content-finder}
 
 Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) ziehen. Dadurch wird automatisch eine neue Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
@@ -110,9 +110,9 @@ So erstellen Sie eine Komponente, indem Sie einen der obigen Asset-Typen ziehen:
 
    Am entsprechenden Ort wird eine zum Asset-Typ passende Komponente erstellt, die das ausgewählte Asset enthält.
 
-1. [Bearbeiten](#editmovecopypastedelete) Sie die Komponente.
+1. [Bearbeiten](#editmovecopypastedelete) Sie bei Bedarf die Komponente.
 
-## Bearbeiten einer Komponente (Inhalt und Eigenschaften)  {#editing-a-component-content-and-properties}
+## Bearbeiten einer Komponente (Inhalt und Eigenschaften) {#editing-a-component-content-and-properties}
 
 Um einen bestehenden Absatz zu bearbeiten, führen Sie eine der folgenden Aktionen aus:
 
@@ -173,7 +173,7 @@ Wie beim [Löschen einer Komponente](#deleting-a-component) können Sie das Kont
 
 Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 
-* [Multi-Site-Management](/help/sites-administering/msm.md); auch in Kombination mit [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Multi-Site-Management](/help/sites-administering/msm.md); auch in Kombination mit [scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Launch](/help/sites-classic-ui-authoring/classic-launches.md) (wenn er auf Live Copy basiert).
 * Spezifische Komponenten, z. B. das Vererbungs-Absatzsystem in Geometrixx.
@@ -202,7 +202,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 [Anmerkungen](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) bieten anderen Autoren die Möglichkeit Feedback zu Ihrem Inhalt zu erteilen. Dies wird häufig zu Korrektur- oder Überprüfungszwecken verwendet.
 
-## Anzeigen einer Seitenvorschau  {#previewing-pages}
+## Anzeigen einer Seitenvorschau {#previewing-pages}
 
 Für die Vorschau von Seiten sind zwei Symbole am unteren Rand des Sidekicks von Bedeutung:
 
@@ -286,7 +286,6 @@ Das Rückgängigmachen und Wiederholen von Befehlen funktioniert ähnlich wie in
 >* Für das Rückgängigmachen und Wiederholen stehen auch verschiedene [Tastaturbefehle](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zur Verfügung.
 
 >
-
 
 
 Die können die folgenden Arten von Seitenbearbeitungen rückgängig machen bzw. wiederholen:

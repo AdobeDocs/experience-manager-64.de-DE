@@ -1,8 +1,8 @@
 ---
 title: Ad-hoc-Abfragen in Prozessberichten
-seo-title: Ad-hoc-Abfragen in Prozessberichten
-description: Erstellen Sie benutzerdefinierte Abfragen, um in Process Reporting nach AEM Forms on JEE-Prozess- und Aufgabendetails zu suchen
-seo-description: Erstellen Sie benutzerdefinierte Abfragen, um in Process Reporting nach AEM Forms on JEE-Prozess- und Aufgabendetails zu suchen
+seo-title: Ad-hoc Queries in Process Reporting
+description: Erstellen Sie benutzerdefinierte Abfragen, um nach AEM Forms on JEE-Prozess- und Aufgabendetails in Process Reporting zu suchen.
+seo-description: Create custom queries to search for AEM Forms on JEE  process and task details in Process Reporting
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
@@ -11,7 +11,7 @@ discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 exl-id: a5ac05b2-076a-4d3d-8325-32813657a7b3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1668'
 ht-degree: 0%
 
 ---
@@ -44,20 +44,20 @@ Sie verwenden die Prozess-/Aufgabensuche, um Filter zum Abfragen von Prozess-/Au
 
 ### So erstellen Sie eine Prozess-/Aufgabensuchabfrage {#to-create-a-process-task-search-query}
 
-1. Um die gespeicherten Prozess-/Aufgabensuchabfragen anzuzeigen oder eine Abfrage zu erstellen, klicken Sie auf **Adhoc-Abfragen** und dann auf **Prozess-/Aufgabensuche**.
+1. Um die gespeicherten Prozess-/Aufgabensuchabfragen anzuzeigen oder eine Abfrage zu erstellen, klicken Sie auf **Ad-hoc-Abfragen** und klicken Sie anschließend auf **Prozess-/Aufgabensuche**.
 
    ![search_nodes](assets/search_nodes.png)
 
-   Das Bedienfeld **Meine Filter** wird rechts neben der Baumansicht angezeigt.
+   Die **Meine Filter** wird rechts neben der Baumansicht angezeigt.
 
-   Im Bedienfeld **Meine Filter** können Sie neue Ad-hoc-Abfragen erstellen und auf klicken, um zuvor gespeicherte Abfragen auszuführen.
+   Im **Meine Filter** können Sie neue Ad-hoc-Abfragen erstellen und auf klicken, um zuvor gespeicherte Abfragen auszuführen.
 
    ![my_filters_panel](assets/my_filters_panel.png)
 
-1. Um eine vorhandene Abfrage auszuführen, klicken Sie einfach auf die Abfrage im Bedienfeld **Meine Filter** .
+1. Um eine vorhandene Abfrage auszuführen, klicken Sie einfach auf die Abfrage im **Meine Filter** Bereich.
 1. Um eine Abfrage zu erstellen, klicken Sie auf **Hinzufügen** (+).
 
-   Das Bedienfeld **Filter erstellen** wird angezeigt.
+   Die **Filter erstellen** angezeigt.
 
    ![create_filter_panel](assets/create_filter_panel.png)
 
@@ -87,28 +87,28 @@ Sie verwenden die Prozess-/Aufgabensuche, um Filter zum Abfragen von Prozess-/Au
 
    1. Um der Abfrage einen weiteren Filter hinzuzufügen, klicken Sie auf **Add(+)** rechts neben der Filterzeile.
 
-      Um einen Filter aus der Abfrage zu entfernen, klicken Sie rechts neben der Filterzeile auf **Delete(-)** .
+      Um einen Filter aus der Abfrage zu entfernen, klicken Sie auf **Löschen(-)** rechts neben der Filterzeile.
 
       ![filter_add_del](assets/filter_add_del.png)
 
-Nachdem Sie eine Abfrage erstellt haben, verwenden Sie die Optionen in der oberen rechten Ecke des Bedienfelds **Filter erstellen** , um:
+Nachdem Sie eine Abfrage erstellt haben, verwenden Sie die Optionen oben rechts im **Filter erstellen** -Bedienfeld zu:
 
-* **Abbrechen**: Abbrechen Sie die Änderungen und gehen Sie zurück zum  **Fenster Mein** Filter .
+* **Abbrechen**: Abbrechen Sie die Änderungen und kehren Sie zur **Meine Filter** Bereich.
 
 * **Ausführen**: Führen Sie die aktuelle Abfrage aus, um die Ergebnisse anzuzeigen bzw. zu überprüfen. In diesem Fall müssen Sie die Abfrage nicht speichern, bevor Sie die Abfrage ausführen. Sie können die Ergebnisse überprüfen, bei Bedarf Änderungen vornehmen und dann die Abfrage speichern, wenn Sie mit der Ausgabe zufrieden sind.
 
-* **Speichern**: Speichern Sie den Filter. Der Filter kann dann über das Bedienfeld **Meine Filter** angezeigt und ausgeführt werden.
+* **Speichern**: Speichern Sie den Filter. Der Filter kann dann über die **Meine Filter** Bereich.
 
-### Optionen im Bereich &quot;Meine Filter&quot;{#options-in-my-filters-panel}
+### Optionen im Bereich &quot;Meine Filter&quot; {#options-in-my-filters-panel}
 
-Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zu **Hinzufügen** ![lc_pr_add_filter](assets/lc_pr_add_filter.png), **Bearbeiten** ![lc_pr_delete_filter](assets/lc_pr_delete_filter.png) oder **Löschen** a12/>lc_pr_edit_filter](assets/lc_pr_edit_filter.png)eine Ad-hoc-Abfrage.![
+Verwenden Sie die Optionen in der **Meine Filter** Bedienfeld zu **Hinzufügen** ![lc_pr_add_filter](assets/lc_pr_add_filter.png), **Bearbeiten** ![lc_pr_delete_filter](assets/lc_pr_delete_filter.png)oder **Löschen** ![lc_pr_edit_filter](assets/lc_pr_edit_filter.png)eine Ad-hoc-Abfrage.
 
 ![my_filters_options](assets/my_filters_options.png)
 
 ### So führen Sie eine Suchabfrage aus {#to-execute-a-search-query}
 
-1. Um eine Abfrage auszuführen, klicken Sie auf den Filter im Bedienfeld **Meine Filter** oder auf die Schaltfläche **Ausführen** , wenn Sie einen Filter erstellen oder bearbeiten.
-1. Die Ergebnisse der Abfrage werden im Bereich **Bericht** des Fensters **Prozessberichte** angezeigt.
+1. Um eine Abfrage auszuführen, klicken Sie auf den Filter im **Meine Filter** oder klicken Sie auf **Ausführen** -Schaltfläche, wenn Sie einen Filter erstellen oder bearbeiten.
+1. Die Ergebnisse der Abfrage werden in der **Bericht** -Bedienfeld der **Prozessberichterstellung** Fenster.
 
    ![process_search_result](assets/process_search_result.png)
 
@@ -116,15 +116,15 @@ Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zu **Hinzufügen** ![l
 
    ![process_result_pgn](assets/process_result_pgn.png)
 
-   Wählen Sie in der Dropdownliste **Anzeige** die Anzahl der Ergebnisse aus, die pro Seite angezeigt werden sollen.
+   Im **Anzeige** die Anzahl der Ergebnisse wählen, die pro Seite angezeigt werden sollen.
 
-   Geben Sie im Textfeld **Seite** eine Seitennummer ein, um direkt zu dieser Seite zu gelangen.
+   Im **Seite** eingeben, geben Sie eine Seitenzahl ein, um direkt zu dieser Seite zu gelangen.
 
 1. Die folgenden Felder werden in einem Prozesssuchergebnis angezeigt:
 
-   * **Prozess-ID**: Die Kennung des Prozesses. Das Feld ist per Hyperlink gekennzeichnet. Wenn Sie in diesem Feld auf eine Prozess-ID klicken, werden Sie zum Bereich **[!UICONTROL Prozessdetails]** für den Prozess weitergeleitet.
+   * **Prozess-ID**: Die Kennung des Prozesses. Das Feld ist per Hyperlink gekennzeichnet. Wenn Sie in diesem Feld auf eine Prozess-ID klicken, werden Sie zum **[!UICONTROL Prozessdetails]** -Bedienfeld für den Prozess.
    * **Initiator**: Der AEM Forms-Benutzer, der die Prozessinstanz gestartet hat
-   * **Erstellungszeit**: Datum und Uhrzeit des Starts der Prozessinstanz
+   * **Erstellte Zeit**: Datum und Uhrzeit des Starts der Prozessinstanz
    * **Abgeschlossene Zeit**: Datum und Uhrzeit des Abschlusses der Prozessinstanz
    * **Dauer**: Die Dauer von Beginn bis Ende der Prozessinstanz
    * **Status**: Der aktuelle Status der Prozessinstanz.
@@ -135,9 +135,9 @@ Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zu **Hinzufügen** ![l
 
    Gleichermaßen werden die folgenden Felder in einem Task Search-Ergebnis angezeigt:
 
-   * **Aufgaben-ID**: Die ID der Aufgabe. Das Feld ist per Hyperlink gekennzeichnet. Wenn Sie in diesem Feld auf eine Aufgaben-ID klicken, werden Sie zum Bereich **[!UICONTROL Aufgabendetails]** für die Aufgabe weitergeleitet.
+   * **Task-ID**: Die ID der Aufgabe. Das Feld ist per Hyperlink gekennzeichnet. Wenn Sie in diesem Feld auf eine Aufgaben-ID klicken, werden Sie zum **[!UICONTROL Aufgabendetails]** -Bedienfeld für die Aufgabe.
    * **Initiator**: Der AEM Forms-Benutzer, der die Prozessinstanz gestartet hat
-   * **Erstellungszeit**: Datum und Uhrzeit des Starts der Prozessinstanz
+   * **Erstellte Zeit**: Datum und Uhrzeit des Starts der Prozessinstanz
 
    * **Abgeschlossene Zeit**: Datum und Uhrzeit des Abschlusses der Prozessinstanz
    * **Dauer**: Die Dauer von Beginn bis Ende der Prozessinstanz
@@ -149,8 +149,8 @@ Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zu **Hinzufügen** ![l
 
    ![task_search_result](assets/task_search_result.png)
 
-1. Klicken Sie oben links auf die Leiste ![lc_pr_rail_button](assets/lc_pr_rail_button.png) , um den Bereich **Meine Filter** zu reduzieren und den für das Bedienfeld **Bericht** verfügbaren Platz zu erweitern.
-1. Verwenden Sie die Optionen in der oberen rechten Ecke des Bedienfelds **Bericht** , um Vorgänge am Abfrageergebnis durchzuführen.
+1. Klicken Sie auf die Schaltfläche in der Leiste ![lc_pr_rail_button](assets/lc_pr_rail_button.png) oben links zum Reduzieren der **Meine Filter** und erweitert den für die **Bericht** Bereich.
+1. Verwenden Sie die Optionen oben rechts im **Bericht** -Bedienfeld, um Vorgänge für das Abfrageergebnis durchzuführen.
 
    * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten im Speicher
    * **Exportieren in CSV**: Exportieren Sie die Berichtsdaten in eine kommagetrennte Datei.
@@ -161,11 +161,11 @@ Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zu **Hinzufügen** ![l
 
 ## Prozess-/Aufgabendetails {#process-task-details}
 
-Im Bedienfeld **Prozessdetails** können Sie die Details eines bestimmten Prozesses anzeigen.
+Sie verwenden die **Prozessdetails** -Bereich, um die Details eines bestimmten Prozesses anzuzeigen.
 
-Gleichermaßen verwenden Sie das Bedienfeld **Aufgabendetails**, um die Details einer bestimmten Aufgabe anzuzeigen.
+Auf ähnliche Weise verwenden Sie die **Aufgabendetails** um die Details einer bestimmten Aufgabe anzuzeigen.
 
-### Anzeigen von Prozess-/Aufgabendetails {#to-view-process-task-details}
+### So zeigen Sie Prozess-/Aufgabendetails an {#to-view-process-task-details}
 
 Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten Aufgabe anzeigen:
 
@@ -174,15 +174,15 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten Au
 
 #### Aus einem Prozess-/Aufgabensuchergebnis {#from-a-process-task-search-result}
 
-1. Führen Sie eine Prozess-/Aufgabensuche aus. Weitere Informationen finden Sie unter [So führen Sie eine Prozesssuchabfrage](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-to-execute-a-search-query-p) aus.
+1. Führen Sie eine Prozess-/Aufgabensuche aus. Weitere Informationen finden Sie unter [So führen Sie eine Prozesssuchabfrage aus](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md#p-to-execute-a-search-query-p).
 
    Beachten Sie, dass die im Ergebnis zurückgegebenen Prozess-IDs per Hyperlink verknüpft sind.
 
    ![process_id_list](assets/process_id_list.png)
 
-1. Klicken Sie auf eine Prozess-ID in der Liste, um die Details dieses Prozesses im Bedienfeld **Prozessdetails** anzuzeigen.
+1. Klicken Sie auf eine Prozess-ID in der Liste, um die Details dieses Prozesses im **Prozessdetails** Bereich.
 
-   Das Abfrageergebnis **Prozess-/Aufgabendetails** zeigt Details zu den Aufgaben/Formularen an, die in dem Prozess/der Aufgabe enthalten sind.
+   Die **Prozess-/Aufgabendetails** Das Abfrageergebnis zeigt Details zu den Aufgaben/Formularen an, die in dem Prozess/der Aufgabe enthalten sind.
 
    Standardmäßig wird das Ergebnis nach Aufgabe/Formular-ID sortiert. Um das Ergebnis jedoch nach einem der Felder zu sortieren, klicken Sie auf den Feldtitel. Die Spalte, nach der das Ergebnis sortiert wird, wird durch einen dunklen Pfeil neben der Spaltenüberschrift angezeigt.
 
@@ -212,7 +212,7 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten Au
    * Aufgabendauer
    * Aufgabenstatus
 
-   **Bereich unten rechts:** Zeigt die folgenden Details des Prozessverlaufs des ausgewählten Prozesses an:
+   **Bereich unten rechts:** Zeigt die folgenden Details zum Prozessverlauf des ausgewählten Prozesses an:
 
    * Prozessname
    * Prozessinitiator
@@ -224,7 +224,7 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten Au
 
    ![Aufgabendetails](assets/task_details.png)
 
-   **Linker Bereich:** Zeigt die folgenden Details der ausgewählten Aufgabe an:
+   **Linke Leiste:** Zeigt die folgenden Details der ausgewählten Aufgabe an:
 
    * Aufgabenname
    * Kennung des Prozesses, zu dem diese Aufgabe gehört
@@ -242,7 +242,7 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten Au
    * Datum der Formularaktualisierung
    * Formularvorlagen-URL
 
-   **Bereich unten rechts:** Zeigt die folgenden Details des Prozessverlaufs der ausgewählten Aufgabe an:
+   **Bereich unten rechts:** Zeigt die folgenden Details zum Prozessverlauf der ausgewählten Aufgabe an:
 
    * Aufgabenzuweisungstyp
    * Aufgabenbesitzer
@@ -254,15 +254,15 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten Au
 
 
 
-1. Klicken Sie auf **Zurück zu Prozess/Aufgabensuche** , um zum Suchergebnis zurückzukehren, aus dem die Prozess-/Aufgabendetails heruntergefahren wurden.
+1. Klicken **Zurück zur Prozess-/Aufgabensuche** , um zum Suchergebnis zurückzukehren, aus dem die Prozess-/Aufgabendetails heruntergefahren wurden.
 
    ![back_to_search](assets/back_to_search.png)
 
-   Wenn die Prozess-/Aufgabendetails jedoch durch Eingabe einer bestimmten Prozess-/Aufgabenkennung gefunden wurden, führt das Klicken auf Zurück zum Prozess/Aufgabensuche zurück zu **Prozess/Aufgabensuche**, ohne Suchergebnisse anzuzeigen.
+   Wenn die Prozess-/Aufgabendetails jedoch durch Eingabe einer bestimmten Prozess-/Aufgabenkennung gefunden wurden, werden Sie durch Klicken auf Zurück zum Prozess/Aufgabensuche zurück zu **Prozess-/Aufgabensuche**, ohne Suchergebnisse anzuzeigen.
 
-#### Durch Eingabe der Prozess-/Aufgaben-ID in das Bedienfeld &quot;Prozess-/Aufgabendetails&quot; {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
+#### Durch Eingabe der Prozess-/Aufgaben-ID im Bereich &quot;Prozess-/Aufgabendetails&quot; {#by-entering-the-process-task-id-in-the-process-task-details-panel-br}
 
-1. Wechseln Sie zum Bereich **Prozess-/Aufgabendetails** .
+1. Navigieren Sie zu **Prozess-/Aufgabendetails** Bereich.
 
    ![details_nodes](assets/details_nodes.png)
 
@@ -270,7 +270,7 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses/einer bestimmten Au
 
    ![process_details-1](assets/process_details-1.png)
 
-   Die Felder im Abfrageergebnis **Prozess-/Aufgabendetails** sind Felder, die für einen AEM Forms-Prozess/eine-Aufgabe spezifisch sind.
+   Die Felder im **Prozess-/Aufgabendetails** Abfrageergebnisse sind Felder, die für einen AEM Forms-Prozess/eine Aufgabe spezifisch sind.
 
    Für einen Prozess zeigt das Abfrageergebnis die Details der im Prozess enthaltenen Aufgaben an.
 

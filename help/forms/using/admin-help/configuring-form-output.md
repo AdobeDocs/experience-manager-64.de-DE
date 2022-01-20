@@ -1,8 +1,8 @@
 ---
 title: Formularausgabe konfigurieren
-seo-title: Formularausgabe konfigurieren
+seo-title: Configuring form output
 description: Erfahren Sie, wie Sie die Formularausgabe konfigurieren.
-seo-description: Erfahren Sie, wie Sie die Formularausgabe konfigurieren.
+seo-description: Learn how to configure form output.
 uuid: 70aad14e-c845-4ef3-a751-ad8860d5d505
 contentOwner: admin
 content-type: reference
@@ -12,25 +12,25 @@ discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 exl-id: b19cae88-a549-41ba-b4a6-4b065a995296
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 94%
 
 ---
 
 # Formularausgabe konfigurieren{#configuring-form-output}
 
-## Den Typ der HTML-Ausgabe angeben, der an den Webbrowser zurückgegeben wird.{#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Den Typ der HTML-Ausgabe angeben, der an den Webbrowser zurückgegeben wird. {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
 1. Wählen Sie unter „Formularausgabe“ in der Liste „Ausgabetyp“ eine der folgenden Optionen aus:
 
    **Voll-HTML**, um das Formular mit vollständigen HTML-Tags wiederzugeben (eine vollständige HTML-Seite). Dies ist der Standardwert.
 
-   **Formulartext:** Zum Rendern des Formulars innerhalb von  `<BODY>` Tags (keine vollständige HTML-Seite).
+   **Formulartext:** So rendern Sie das Formular in `<BODY>` Tags (keine vollständige HTML-Seite).
 
 1. Klicken Sie auf Speichern.
 
-## Den Ort angeben, an dem PDF-Inhalt wiedergegeben wird.  {#specify-the-location-where-pdf-content-is-rendered}
+## Den Ort angeben, an dem PDF-Inhalt wiedergegeben wird. {#specify-the-location-where-pdf-content-is-rendered}
 
 1. Wählen Sie unter „Formularausgabe“ in der Liste „Wiedergeben“ eine der folgenden Optionen aus:
 
@@ -42,7 +42,7 @@ ht-degree: 94%
 
 1. Klicken Sie auf Speichern.
 
-## Aufrufe von benutzerdefinierten Skripten konfigurieren, bevor das Formular eingereicht wird  {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Aufrufe von benutzerdefinierten Skripten konfigurieren, bevor das Formular eingereicht wird {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Führen Sie zum Aktivieren der Funktion folgende Schritte durch:
 

@@ -1,8 +1,8 @@
 ---
 title: Grundlagen der Konfiguration von Formularen
-seo-title: Grundlagen der Konfiguration von Formularen
+seo-title: Basics of configuring forms
 description: Erfahren Sie mehr über die verschiedenen Formulardienste, mit denen Sie interaktive Datenerfassungsanwendungen erstellen können.
-seo-description: Erfahren Sie mehr über die verschiedenen Formulardienste, mit denen Sie interaktive Datenerfassungsanwendungen erstellen können.
+seo-description: Learn about the various forms services that help you create interactive data capture applications.
 uuid: f495c170-2d17-45b0-b09d-22cce101131e
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e87c7379-28ed-4fda-aef1-970d2b54f30d
 exl-id: 616cd550-c3bd-4daf-887d-0470f1b08389
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '201'
 ht-degree: 97%
 
 ---

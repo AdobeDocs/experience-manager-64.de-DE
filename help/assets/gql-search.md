@@ -24,12 +24,12 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
 ## Suchen nach Assets {#searching-assets}
 
-1. Klicken oder tippen Sie in der Symbolleiste der Assets-Benutzeroberfläche auf das Symbol **[!UICONTROL Suchen]** , um das Omnisearch-Feld anzuzeigen.
+1. Klicken oder tippen Sie in der Symbolleiste der Assets-Benutzeroberfläche auf die **[!UICONTROL Suche]** zum Anzeigen des Omnisearch-Suchfelds.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Drücken Sie die Eingabetaste, während sich der Cursor im OmniSearch-Feld befindet.
-1. Klicken oder tippen Sie auf das GlobalNav-Symbol, um das Bedienfeld **[!UICONTROL Filter]** anzuzeigen.
+1. Klicken oder tippen Sie auf das GlobalNav-Symbol, um die **[!UICONTROL Filter]** Bereich.
 1. Geben Sie im OmniSearch-Feld den Wert „Ziel“ an. Um Ihre Suche auf einen bestimmten Ordner zu beschränken, klicken oder tippen Sie auf das Symbol „Durchsuchen“ im Bedienfeld „Filter“ und wählen Sie den Ordner aus. In diesem Fall wird die Übereinstimmung nur innerhalb des Ordners und in den untergeordneten Ordner gesucht.
 
    >[!NOTE]
@@ -38,7 +38,7 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
    ![gql_search](assets/gql_search.png)
 
-1. Drücken Sie **[!UICONTROL Enter]**. Die [!DNL Assets]-Benutzeroberfläche zeigt nur die Assets an, deren Titel genau mit &quot;Target&quot;übereinstimmt.
+1. Presse **[!UICONTROL Eingabe]**. Die [!DNL Assets] -Benutzeroberfläche zeigt nur die Assets an, deren Titel genau mit &quot;Target&quot;übereinstimmt.
 
 Mit der Funktion für die GQL-Volltextsuche können Sie Assets anhand der folgenden Elemente durchsuchen:
 
@@ -57,7 +57,7 @@ Mit der Volltextsuchfunktion GQL können Sie anhand der folgenden Metadateneigen
 | [!UICONTROL Titel] | title:John |
 | [!UICONTROL Ersteller] | creator:John |
 | [!UICONTROL Mitarbeiter] | contributor:John |
-| [!UICONTROL Standort] | location:India |
+| [!UICONTROL Speicherort] | location:India |
 | [!UICONTROL Beschreibung] | description:&quot;Sample Image&quot; |
 | [!UICONTROL Erstellungswerkzeug] | creatortool:„Adobe Photoshop 7.0“ |
 | [!UICONTROL Urheberrechtsbesitzer] | copyrightowner:&quot;Adobe Systems&quot; |
@@ -66,9 +66,9 @@ Mit der Volltextsuchfunktion GQL können Sie anhand der folgenden Metadateneigen
 | [!UICONTROL Erstellt] | created:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Ablaufdatum] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Einschaltzeit] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Ausschaltzeit] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Zeitraum]  (läuft dateontime,offtime ab) | facet field : lowerbound.upperbound |
-| [!UICONTROL Pfad] | /content/dam/&lt;Ordnername> |
+| [!UICONTROL Ausschaltzeit] | Offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Zeitraum] (expires dateontime,offtime) | facet field : lowerbound.upperbound |
+| [!UICONTROL Pfad] | /content/dam/&lt;folder name> |
 | [!UICONTROL PDF-Titel] | pdftitle:„Adobe Document“ |
 | [!UICONTROL Betreff] | subject:„Training“ |
 | [!UICONTROL Tags] | tags:„Location And Travel“ |

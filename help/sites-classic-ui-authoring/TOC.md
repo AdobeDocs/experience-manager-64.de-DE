@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: AEM 6.4 Classic UI Authoring-Benutzerhandbuch
 breadcrumb-title: Authoring-Handbuch für die klassische Benutzeroberfläche
 user-guide-description: In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt.
-feature: 'Authoring – '
+feature: Authoring
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 80%
 
 ---
@@ -19,16 +19,16 @@ ht-degree: 80%
 # AEM 6.4 Classic UI Authoring-Benutzerhandbuch {#classic-ui}
 
 + [Übersicht über das Authoring-Handbuch für die klassische Benutzeroberfläche](home.md)
-+ Einführung in die klassische Benutzeroberflächen-Bearbeitung {#introduction}
++ Einführung in das Authoring mit der klassischen Benutzeroberfläche {#introduction}
    + [Erste Schritte für Autoren](classic-page-author-first-steps.md)
    + [Bearbeiten in der klassischen Benutzeroberfläche](classicui.md)
    + [Arbeiten mit der Autorenumgebung](author-env.md)
    + [Grundlegende Handhabung](author-env-basic-handling.md)
    + [Konfigurieren der Kontoumgebung](author-env-user-props.md)
    + [Auswahl der Benutzeroberfläche](author-env-select-ui.md)
-   + [Suche](author-env-search.md)
+   + [Suchen](author-env-search.md)
    + [Ihr Posteingang](author-env-inbox.md)
-   + [Tastaturbefehle für Konsolen  ](author-env-keyboard-shortcuts.md)
+   + [Tastaturbefehle für Konsolen](author-env-keyboard-shortcuts.md)
 + Authoring {#authoring}
    + [Bearbeiten von Seiten (Authoring)](classic-page-author.md)
    + [Bearbeiten: Umgebung und Tools](classic-page-author-env-tools.md)
@@ -45,7 +45,7 @@ ht-degree: 80%
    + [Tastaturbefehle für die Seitenbearbeitung](classic-page-author-keyboard-shortcuts.md)
 + Site- und Seitenfunktionen {#siteandpage}
    + [Seitenbearbeitung mit Inhaltsfragmenten](classic-page-author-content-fragments.md)
-   + [Responsives Layout  ](classic-page-author-responsive-layout.md)
+   + [Responsives Layout](classic-page-author-responsive-layout.md)
    + [Arbeiten mit Seitenversionen](classic-page-author-work-with-versions.md)
    + [Verwenden von Tags](classic-feature-tags.md)
    + [Strukturvorlage](classic-feature-scaffolding.md)

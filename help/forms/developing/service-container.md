@@ -1,8 +1,8 @@
 ---
 title: Dienstcontainer
-seo-title: Dienstcontainer
+seo-title: Service container
 description: Erfahren Sie mehr über die Funktionen des Dienstcontainers. Darüber hinaus werden in diesem Artikel auch die verschiedenen Möglichkeiten beschrieben, wie Sie AEM Forms-Dienste programmgesteuert aufrufen können.
-seo-description: Erfahren Sie mehr über die Funktionen des Dienstcontainers. Darüber hinaus werden in diesem Artikel auch die verschiedenen Möglichkeiten beschrieben, wie Sie AEM Forms-Dienste programmgesteuert aufrufen können.
+seo-description: Learn more about the functionalities of service container. In addition, the article also describes the different ways in which you can programmatically invoke AEM Forms services.
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: 92351e2d-1928-4bc4-aaff-d557ee09d1ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '931'
 ht-degree: 2%
 
 ---
@@ -34,19 +34,19 @@ In der folgenden Tabelle werden die verschiedenen Methoden zum programmgesteuert
  <tbody>
   <tr>
    <td><p>Remote-Integration</p></td> 
-   <td><p>Die Remote-Integration bietet Flex-Clients die Möglichkeit, Dienstvorgänge aufzurufen. (Siehe <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Aufrufen von AEM Forms mithilfe von (für AEM Formulare nicht mehr unterstützt) AEM Forms Remoting</a>.)</p></td> 
+   <td><p>Die Remote-Integration bietet Flex-Clients die Möglichkeit, Dienstvorgänge aufzurufen. (Siehe <a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">Aufrufen von AEM Forms mithilfe von (für AEM Formulare nicht mehr unterstützt) AEM Forms Remoting</a>.</p></td> 
   </tr> 
   <tr>
    <td><p>Java-API</p></td> 
-   <td><p>Eine Java-API kann einen AEM Forms-Dienst aufrufen. Die Java-API ist in Client-Bibliotheken und die Java-Aufruf-API unterteilt. (Siehe <a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">AEM Forms mithilfe der Java-API aufrufen</a>.)</p></td> 
+   <td><p>Eine Java-API kann einen AEM Forms-Dienst aufrufen. Die Java-API ist in Client-Bibliotheken und die Java-Aufruf-API unterteilt. (Siehe <a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api">AEM Forms mithilfe der Java-API aufrufen</a>.</p></td> 
   </tr> 
   <tr>
    <td><p>Webdienste</p></td> 
-   <td><p>AEM Forms unterstützt Webdienststandards wie SOAP/HTTP. Ein Dienst kann als Webdienst verfügbar gemacht werden, wobei die WSDL den vom W3C definierten Webdienststandards entspricht.</p><p>Ein Dienst kann von jedem Webdienststapel aus aufgerufen werden, einschließlich .NET Framework und Sun™ Web Services SDK. (Siehe <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Aufrufen von AEM Forms mithilfe von Web Services</a>.)</p></td> 
+   <td><p>AEM Forms unterstützt Webdienststandards wie SOAP/HTTP. Ein Dienst kann als Webdienst verfügbar gemacht werden, wobei die WSDL den vom W3C definierten Webdienststandards entspricht.</p><p>Ein Dienst kann von jedem Webdienststapel aus aufgerufen werden, einschließlich .NET Framework und Sun™ Web Services SDK. (Siehe <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">Aufrufen von AEM Forms mithilfe von Webdiensten</a>.</p></td> 
   </tr> 
   <tr>
    <td><p>REST-Anforderungen</p></td> 
-   <td><p>AEM Forms unterstützt REST-Anfragen. Ein Dienst kann direkt von einer HTML-Seite aus aufgerufen werden. (Siehe <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Aufrufen von AEM Forms mithilfe von REST Requests</a>.)</p></td> 
+   <td><p>AEM Forms unterstützt REST-Anfragen. Ein Dienst kann direkt von einer HTML-Seite aus aufgerufen werden. (Siehe <a href="/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests">Aufrufen von AEM Forms mithilfe von REST-Anforderungen</a>.</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,16 +55,16 @@ Die folgende Abbildung zeigt die verschiedenen Möglichkeiten, wie AEM Forms-Die
 
 >[!NOTE]
 >
->Zusätzlich zur Verwendung des AEM Forms SDK zum Erstellen von Clientanwendungen, die AEM Forms-Dienste aufrufen können, können Sie auch Komponenten erstellen, die im Dienstcontainer bereitgestellt werden können. Sie können beispielsweise eine Bankkomponente erstellen, die benutzerdefinierte Datentypen enthält, die in Prozessen verwendet werden können. Das heißt, Sie können einen Datentyp wie `com.adobe.idp.BankAccount` erstellen. Anschließend können Sie `com.adobe.idp.BankAccount`-Instanzen in Ihren Clientanwendungen erstellen.
+>Zusätzlich zur Verwendung des AEM Forms SDK zum Erstellen von Clientanwendungen, die AEM Forms-Dienste aufrufen können, können Sie auch Komponenten erstellen, die im Dienstcontainer bereitgestellt werden können. Sie können beispielsweise eine Bankkomponente erstellen, die benutzerdefinierte Datentypen enthält, die in Prozessen verwendet werden können. Das heißt, Sie können einen Datentyp erstellen, z. B. `com.adobe.idp.BankAccount`. Anschließend können Sie `com.adobe.idp.BankAccount` Instanzen in Ihren Clientanwendungen.
 
 Der Dienstcontainer bietet die folgenden Funktionen:
 
-* Ermöglicht den Aufruf von AEM Forms-Diensten mit verschiedenen Methoden. Sie können einen Dienst konfigurieren, indem Sie Endpunkte festlegen, damit er mit allen Methoden aufgerufen werden kann: Remoting, die Java-API, Webdienste und REST. (Siehe [Programmgesteuerte Verwaltung von Endpunkten](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).)
+* Ermöglicht den Aufruf von AEM Forms-Diensten mit verschiedenen Methoden. Sie können einen Dienst konfigurieren, indem Sie Endpunkte festlegen, damit er mit allen Methoden aufgerufen werden kann: Remoting, die Java-API, Webdienste und REST. (Siehe [Programmgesteuertes Verwalten von Endpunkten](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints).
 * Konvertiert eine Nachricht in ein normalisiertes Format, das als Aufrufanforderung bezeichnet wird. Eine Aufrufanforderung wird von einer Client-Anwendung (oder einem anderen Dienst) an einen Dienst gesendet, der sich im Dienstcontainer befindet. Eine Aufrufanforderung enthält Informationen wie den Namen des aufzurufenden Dienstes und Datenwerte, die für die Durchführung des Vorgangs erforderlich sind. Viele Dienste benötigen ein Dokument, um einen Vorgang auszuführen. Daher enthält eine Aufrufanforderung normalerweise ein Dokument, bei dem es sich um PDF-Daten, XDP-Daten, XML-Daten usw. handeln kann.
 * Sendet Aufrufanforderungen an entsprechende Dienste (der Name des aufzurufenden Dienstes ist Teil der Aufrufanforderung).
 * Führt Aufgaben wie die Bestimmung durch, ob der Aufrufer berechtigt ist, den angegebenen Dienstvorgang aufzurufen. Die Aufrufanforderung muss einen gültigen Benutzernamen und ein gültiges Kennwort für AEM Formulare enthalten.
 
-   Es gibt verschiedene Möglichkeiten, eine Aufrufanforderung an einen Dienst zu senden. Außerdem gibt es verschiedene Möglichkeiten, erforderliche Eingabewerte an den Dienst zu senden. Angenommen, Sie verwenden die Java-API zum Aufrufen eines Dienstes, für den ein PDF-Dokument erforderlich ist. Die entsprechende Java-Methode enthält einen Parameter, der ein PDF-Dokument akzeptiert. In diesem Fall ist der Datentyp des Parameters `com.adobe.idp.Document`. (Siehe [Übergeben von Daten an AEM Forms-Dienste mithilfe der Java-API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+   Es gibt verschiedene Möglichkeiten, eine Aufrufanforderung an einen Dienst zu senden. Außerdem gibt es verschiedene Möglichkeiten, erforderliche Eingabewerte an den Dienst zu senden. Angenommen, Sie verwenden die Java-API zum Aufrufen eines Dienstes, für den ein PDF-Dokument erforderlich ist. Die entsprechende Java-Methode enthält einen Parameter, der ein PDF-Dokument akzeptiert. In diesem Fall lautet der Datentyp des Parameters . `com.adobe.idp.Document`. (Siehe [Übergeben von Daten an AEM Forms-Dienste mithilfe der Java-API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).
 
    Wenn Sie einen Dienst mit überwachten Ordnern aufrufen, wird eine Aufrufanforderung gesendet, wenn Sie eine Datei in einem konfigurierten überwachten Ordner platzieren. Wenn Sie einen Dienst per E-Mail aufrufen, wird eine Aufrufanforderung an einen Dienst gesendet, wenn eine E-Mail-Nachricht in einem konfigurierten Posteingang eingeht.
 

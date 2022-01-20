@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Startpunkten
-seo-title: Arbeiten mit Startpunkten
+seo-title: Working with Startpoints
 description: Schritte zum Arbeiten mit einem AEM Forms-Prozess von Ihrem in Workbench definierten Mobilgerät aus.
-seo-description: Schritte zum Arbeiten mit einem AEM Forms-Prozess von Ihrem in Workbench definierten Mobilgerät aus.
+seo-description: Steps to work with a AEM Forms process from your Mobile device defined in Workbench.
 uuid: 9c51ce52-e7ba-43d3-a85c-67067f680ccb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 exl-id: ef9352c7-c164-4cbf-8f18-5b97aa5f56be
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 81%
+source-wordcount: '244'
+ht-degree: 80%
 
 ---
 
@@ -24,14 +24,14 @@ Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit e
 >
 >Die Begriffe „Startpunkte“, „Startprozess“ und „Formular“ werden wechselweise verwendet, wenn von diesem Konzept die Rede ist.
 
-Um einen Prozess über die AEM Forms-App zu initiieren, muss Ihr Prozess einen Startpunkt vom Typ **Workspace** enthalten. Außerdem müssen Sie für den Startpunkt die Option **[!UICONTROL Visible in Mobile Workspace]** auswählen.
+Um einen Prozess über die AEM Forms-App zu initiieren, benötigen Sie einen Startpunkt vom Typ **Arbeitsbereich** in Ihrem Prozess. Außerdem müssen Sie für den Startpunkt die Option **[!UICONTROL Visible in Mobile Workspace]** auswählen.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Starten eines in Workbench definierten Prozesses**
 
 1. Um die in der AEM Forms-App verfügbaren Startpunkte anzuzeigen, gehen Sie zum [Startbildschirm](/help/forms/using/home-screen.md).
-1. Auf dem Bildschirm **[!UICONTROL Home]** wird standardmäßig die Liste **[!UICONTROL Alle Forms]** angezeigt.
+1. Im **[!UICONTROL Startseite]** -Bildschirm, standardmäßig wird die **[!UICONTROL Alle Forms]** angezeigt.
 
    Der Startpunkt ist mit einem Formular verknüpft. Tippen Sie in der Liste auf das mit dem Startpunkt verknüpfte Formular, um es zu öffnen.
 

@@ -1,8 +1,8 @@
 ---
 title: Sicherheit
-seo-title: Sicherheit
+seo-title: Security
 description: Anwendungssicherheit beginnt während der Entwicklung
-seo-description: Anwendungssicherheit beginnt während der Entwicklung
+seo-description: Application Security starts during the development phase
 uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 exl-id: 22c48f8c-38df-4c9b-88cf-67f6ae46e7e1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 76%
+source-wordcount: '426'
+ht-degree: 75%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 76%
 
 Anwendungssicherheit beginnt während der Entwicklung. Adobe empfiehlt die folgenden Best Practices, um die Sicherheit zu verbessern.
 
-## Verwenden Sie Sitzungsanfragen  {#use-request-session}
+## Verwenden Sie Sitzungsanfragen {#use-request-session}
 
 Gemäß dem Grundsatz der geringsten Berechtigungen empfiehlt Adobe, dass jeder Repository-Zugriff über die mit der Benutzeranfrage verknüpfte Sitzung und eine ordnungsgemäße Zugriffskontrolle erfolgt.
 
@@ -41,7 +41,7 @@ Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforder
 >
 >Wir empfehlen Ihnen dringend, immer mit der [von AEM bereitgestellten XSSAPI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html) auf die XSS-Schutz-API zuzugreifen.
 
-Darüber hinaus kann eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://www.modsecurity.org), eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
+Außerdem eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://www.modsecurity.org)kann eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
 
 ## Zugriff auf Cloud-Service-Informationen {#access-to-cloud-service-information}
 

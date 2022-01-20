@@ -1,15 +1,15 @@
 ---
 title: Die AEM-Community
-seo-title: Die AEM-Community
+seo-title: The AEM Community
 description: Die AEM-Community
-seo-description: Die AEM-Community
+seo-description: The AEM Community
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: 537f6fe5-011b-4d4a-ac71-71708fd72b85
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 40%
+source-wordcount: '324'
+ht-degree: 39%
 
 ---
 
@@ -23,9 +23,9 @@ Die AEM Gemeinschaft hat Tausende von Mitgliedern auf der ganzen Welt. Darunter 
 
 ## Welche Veranstaltungen gibt es für AEM Mitglieder der Gemeinschaft? {#events}
 
-Es gibt eine ganze Reihe von Veranstaltungen für Mitglieder! Jeden Monat veranstalten wir Sitzungen, in denen Sie den Experten zu bestimmten AEM Fragen befragen können. Außerdem informieren wir Sie über wichtige Veranstaltungen wie [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) oder [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other) oder sogar über Benutzergruppenereignisse in Ihrer Region.
+Es gibt eine ganze Reihe von Veranstaltungen für Mitglieder! Jeden Monat veranstalten wir Sitzungen, in denen Sie den Experten zu bestimmten AEM Fragen befragen können. Wir informieren Sie auch über wichtige Ereignisse wie [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) oder [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other)oder sogar Benutzergruppenereignisse in Ihrer Region.
 
-Das Beste, was Sie tun sollten, ist [Besuchen Sie die AEM Community heute und sehen Sie, was los ist.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+Am besten ist es, [Besuchen Sie die AEM Community heute und sehen Sie, was los ist.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
 ## Kann ich Code-Beispiele erhalten, um mir zu helfen? {#code-samples}
 

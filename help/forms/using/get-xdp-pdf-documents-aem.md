@@ -1,8 +1,8 @@
 ---
 title: XDP- und PDF-Dokumente in AEM Forms übernehmen
-seo-title: XDP- und PDF-Dokumente in AEM Forms übernehmen
+seo-title: Getting XDP and PDF documents in AEM Forms
 description: Mit AEM Forms können Sie Formulare und unterstützte Assets hochladen, um sie mit adaptiven Formularen zu verwenden. Sie können Formulare und zugehörige Ressourcen im Stapel als ZIP-Datei hochladen.
-seo-description: Mit AEM Forms können Sie Formulare und unterstützte Assets hochladen, um sie mit adaptiven Formularen zu verwenden. Sie können Formulare und zugehörige Ressourcen im Stapel als ZIP-Datei hochladen.
+seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '667'
 ht-degree: 92%
 
 ---
@@ -27,15 +27,15 @@ Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository import
 * PDF-Formulare
 * Dokumente (reduzierte PDF-Dokumente)
 
-Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset vom Typ `Resource` nur zusammen mit einem XFA-Formular in einem ZIP-Archiv hochladen.
+Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset vom Typ `Resource`, nur zusammen mit einem XFA-Formular in einem ZIP-Archiv.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie Mitglied der Gruppe `form-power-users` sind, um XDP-Dateien hochladen zu können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
+>Stellen Sie sicher, dass Sie Mitglied der `form-power-users` -Gruppe, um XDP-Dateien hochladen zu können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
 
 ## Hochladen von Formularen {#uploading-forms}
 
-1. Melden Sie sich über `https://[server]:[port]/aem/forms.html` bei der AEM Forms-Benutzeroberfläche an.
+1. Melden Sie sich über die AEM Forms-Benutzeroberfläche an. `https://[server]:[port]/aem/forms.html`.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder die Ordner mit Formularen hochladen möchten.
 1. Auf der Aktionensymbolleiste klicken Sie auf **Erstellen > Datei hochladen**.
 
@@ -85,6 +85,6 @@ Wenn eine Formularvorlage entfernt wird, wird das abhängige adaptive Formular b
 
 ![Warnung für ein unsynchronisiertes adaptives Formular nach dem Aktualisieren der zugehörigen XFA](assets/dirtyaf.png)
 
-Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich neben den Metadaten auf der Seite mit den Formulareigenschaften. Nur bei schmutzigen adaptiven Formularen zeigt die Metadateneigenschaft `Model Refresh` den Wert `Recommended` an.
+Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich neben den Metadaten auf der Seite mit den Formulareigenschaften. Nur für schmutzige adaptive Formulare, eine Metadateneigenschaft `Model Refresh` Displays `Recommended` -Wert.
 
 ![Kennzeichnung eines adaptiven Formular, das mit dem XFA-Modell nicht synchronisiert ist](assets/model-refresh.png)

@@ -1,8 +1,8 @@
 ---
 title: Lokale Berechtigungen verwalten
-seo-title: Lokale Berechtigungen verwalten
+seo-title: Managing local credentials
 description: Erfahren Sie, wie Sie lokale Berechtigungen verwalten.
-seo-description: Erfahren Sie, wie Sie lokale Berechtigungen verwalten.
+seo-description: Learn how to manage local credentials.
 uuid: 3c4358e0-aaff-4e94-a6b2-04b463fca260
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: f8c6f4e3-4c2d-4843-8f29-6d3297e57c89
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '501'
 ht-degree: 98%
 
 ---
@@ -27,7 +27,7 @@ Sie können eine beliebige Anzahl von Berechtigungen im- und exportieren. Wenn S
 
 Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie unter [Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).
 
-## Berechtigung importieren  {#import-a-credential}
+## Berechtigung importieren {#import-a-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Klicken Sie auf „Importieren“. Wählen Sie unter „Trust Store-Typ“ eine der folgenden Optionen:
@@ -48,7 +48,7 @@ Weitere Informationen und Anweisungen zu Acrobat Reader DC Extensions finden Sie
 
    Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist.
 
-## Berechtigung exportieren  {#export-a-credential}
+## Berechtigung exportieren {#export-a-credential}
 
 Berechtigungen werden als P12-Dateien im PKCS#12-Format exportiert.
 
@@ -57,7 +57,7 @@ Berechtigungen werden als P12-Dateien im PKCS#12-Format exportiert.
 1. Geben Sie in das Feld „Kennwort“ das Kennwort ein. Dieses Kennwort ist neu und dient zum Verschlüsseln der exportierten Berechtigung.
 1. Klicken Sie auf „Exportieren“, befolgen Sie die Anweisungen zum Exportieren der Berechtigung und klicken Sie anschließend auf „OK“.
 
-## Alias oder Trust Store-Typ einer Berechtigung bearbeiten  {#edit-a-credential-s-alias-or-trust-store-type}
+## Alias oder Trust Store-Typ einer Berechtigung bearbeiten {#edit-a-credential-s-alias-or-trust-store-type}
 
 Nachdem eine Berechtigung importiert wurde, können der Aliasname und der Trust Store-Typ bearbeitet werden.
 
@@ -66,7 +66,7 @@ Nachdem eine Berechtigung importiert wurde, können der Aliasname und der Trust 
 1. Klicken Sie auf „Berechtigung aktualisieren“.
 1. Bearbeiten Sie den Aliasnamen und den Trust Store-Typ nach Bedarf und klicken Sie auf „OK“.
 
-## Berechtigung löschen  {#delete-a-credential}
+## Berechtigung löschen {#delete-a-credential}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Aktivieren Sie die Kontrollkästchen der Berechtigungen, die gelöscht werden sollen.

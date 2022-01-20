@@ -43,7 +43,7 @@ Mittels gewisser Änderungen an Workflows und am Framework für die Übersetzung
 
 1. Aktivieren Sie den Workflow *Letztes Änderungsdatum des Sets*.
 
-   Mit dem Workflow *DAM-Metadaten-Writeback* wird das Datum der letzten Änderung eines Assets konfiguriert. Da Sie diesen Workflow in Schritt 2 deaktivieren, kann [!DNL Experience Manager Assets] das Datum der letzten Änderung von Assets nicht mehr auf dem neuesten Stand halten. Aktivieren Sie daher den Workflow *Letztes Änderungsdatum des Sets*, um sicherzustellen, dass die Datumsangaben für die letzten Asset-Änderungen aktuell sind. Assets mit veralteten Datumsangaben für letzte Änderungen können Fehler verursachen.
+   Mit dem Workflow *DAM-Metadaten-Writeback* wird das Datum der letzten Änderung eines Assets konfiguriert. Da Sie diesen Workflow in Schritt 2 deaktivieren, [!DNL Experience Manager Assets] kann das Datum der letzten Änderung von Assets nicht mehr auf dem neuesten Stand halten. Aktivieren Sie daher den Workflow *Letztes Änderungsdatum des Sets*, um sicherzustellen, dass die Datumsangaben für die letzten Asset-Änderungen aktuell sind. Assets mit veralteten Datumsangaben für letzte Änderungen können Fehler verursachen.
 
 1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md), damit Asset-Binärdateien nicht mehr übersetzt werden. Deaktivieren Sie auf der Registerkarte „Assets“ die Option „Assets übersetzen“, um eine Übersetzung von Asset-Binärdateien auszuschließen. 
 1. Übersetzen Sie Asset-Metadaten/-Tags mithilfe [mehrsprachiger Asset-Workflows](multilingual-assets.md).

@@ -1,8 +1,8 @@
 ---
 title: Messen und Verbessern der Effektivität und Konvertierung von Formularen
-seo-title: Messen und Verbessern der Effektivität und Konvertierung von Formularen
+seo-title: Measure and improve effectiveness and conversion of forms
 description: AEM Forms ermöglicht die Integration in Adobe Target und Adobe Analytics, sodass Sie die Leistung und Konvertierungsrate Ihrer Formulare messen und verbessern können.
-seo-description: AEM Forms ermöglicht die Integration in Adobe Target und Adobe Analytics, sodass Sie die Leistung und Konvertierungsrate Ihrer Formulare messen und verbessern können.
+seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
 uuid: 5876f2f3-1c97-4fb9-a032-b869ee3c6a45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,7 +11,7 @@ discoiquuid: 6b62b280-d101-410a-ba8c-02940f766c32
 exl-id: 364dd7f3-9009-440e-8aff-28e2dac08fe7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1278'
 ht-degree: 93%
 
 ---
@@ -32,7 +32,7 @@ Um die ROI zu maximieren, müssen Unternehmen überwachen, wie ihre Kunden mit D
 
 ## Die Lösung {#the-solution}
 
-AEM Forms ist mit [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)-Lösungen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) und [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) integriert, die Ihnen dabei helfen können, die Leistung Ihrer Formulare zu überwachen und zu analysieren und Ihnen das Experiment und die Identifizierung des Erlebnisses zu ermöglichen, das zu einer besseren Konversionsrate führt.
+AEM Forms ist mit [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) Lösungen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) und [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - die Ihnen dabei helfen können, die Leistung Ihrer Formulare zu überwachen und zu analysieren und Ihnen das Experimentieren und Identifizieren des Erlebnisses zu ermöglichen, das zu einer besseren Konversionsrate führt.
 
 ## Der Arbeitsablauf {#the-workflow}
 
@@ -43,7 +43,7 @@ Kommen wir zur genauen Vorgehensweise, wie Sie die Leistung messen und Konvertie
 * Geschäftskunden und Analysten verantwortlich für Marketingstrategien und Erfolg
 * IT-Teams, die für Einrichtung und Wartung von Infrastruktur und Lösungen verantwortlich sind
 
-### Beteiligte AEM Forms-Komponenten und -Funktionen  {#aem-forms-components-and-features-involved}
+### Beteiligte AEM Forms-Komponenten und -Funktionen {#aem-forms-components-and-features-involved}
 
 * Adaptive Formulare
 * Integration in Adobe Analytics zum Erfassen, Organisieren und Berichten von Kundeninteraktionen mit Ihren adaptiven Formularen
@@ -68,11 +68,11 @@ Um detaillierte Einblicke in die Interaktionen Ihrer Kunden mit Ihren Formularen
 1. AEM Forms-Analytics-Konfigurationsdienst konfigurieren
 1. Analytics im Formular in AEM aktivieren
 
-Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analyse und Berichten für adaptive Formulare](/help/forms/using/configure-analytics-forms-documents.md).
+Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analysen und Berichten für adaptive Formulare](/help/forms/using/configure-analytics-forms-documents.md).
 
 **Target konfigurieren**
 
-Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und auszuführen, konfigurieren Sie Target in AEM Forms, wie unter [Einrichten und Integrieren von Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p) beschrieben.
+Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und durchzuführen, konfigurieren Sie Target in AEM Forms, wie unter [Target einrichten und in AEM Forms integrieren](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
 #### Schritt 2: Anzeigen des Analyseberichts {#step-view-analytics-report-br}
 
@@ -126,7 +126,7 @@ In diesem Schritt analysieren Sie Datenpunkte im Analysebericht und schließen a
 
 Nachdem Sie diese Datenpunkte analysiert und eine Hypothese ermittelt haben, nehmen Sie die erforderlichen Änderungen im Formular vor.
 
-#### Schritt 4: Validieren Ihrer Analyse und Korrekturen  {#step-validate-your-analysis-and-fixes}
+#### Schritt 4: Validieren Ihrer Analyse und Korrekturen {#step-validate-your-analysis-and-fixes}
 
 In diesem Schritt validieren Sie die Änderungen, die Sie im Formular vorgenommen haben, und überprüfen, ob sie Auswirkungen auf die Konversionsrate haben.
 

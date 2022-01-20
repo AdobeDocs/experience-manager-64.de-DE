@@ -1,8 +1,8 @@
 ---
 title: Erweitern des Multi-Site-Managers
-seo-title: Erweitern des Multi-Site-Managers
+seo-title: Extending the Multi Site Manager
 description: Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erweitern können.
-seo-description: Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erweitern können.
+seo-description: This page helps you extend the functionalities of the Multi Site Manager
 uuid: 9e8155d5-2aaf-4d7c-aeb5-016562838e10
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 exl-id: 6a531a61-39f2-4bf7-8250-4264942c0981
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2588'
+source-wordcount: '2571'
 ht-degree: 69%
 
 ---
@@ -32,15 +32,15 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers er
 >Diese Seite sollte in Verbindung mit folgenden Elementen gelesen werden:
 >* [Wiederverwenden von Inhalten: Multi-Site-Manager](/help/sites-administering/msm.md).
 >* Repository-Neustrukturierung in AEM 6.4:
->   * [Blueprint-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
->   * [Rollout-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
+   >   * [Blueprint-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
+   >   * [Rollout-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
 >
 >Multi Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Autorenumgebung gedacht.
 
-## Überblick über die Java-API  {#overview-of-the-java-api}
+## Überblick über die Java-API {#overview-of-the-java-api}
 
 Multi Site Manager umfasst die folgenden Pakete:
 
@@ -52,26 +52,26 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch: [Verwendete 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
 * **`Blueprint`**
-Ein  `Blueprint` (wie in der  [Blueprint-Konfiguration](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) gibt die Seiten an, von denen eine Live Copy Inhalte übernehmen kann.
+A `Blueprint` (wie in [Blueprint-Konfiguration](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) gibt die Seiten an, von denen eine Live Copy Inhalte übernehmen kann.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
    * Die Verwendung einer Blueprint-Konfiguration (`Blueprint`) ist optional, aber sie:
 
-      * Ermöglicht dem Autor die Verwendung der Option **Rollout** für die Quelle (zum (expliziten) Push von Änderungen an Live Copies, die von dieser Quelle übernehmen).
+      * Ermöglicht dem Autor die Verwendung der **Rollout** -Option in der Quelle (um (explizit) Änderungen an Live Copies zu pushen, die von dieser Quelle erben).
       * ermöglicht es dem Autor, **Site erstellen** zu nutzen, wodurch der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren kann
       * definiert die standardmäßige Rollout-Konfiguration für alle entstehenden Live Copies.
 
 * **`LiveRelationship`** Die `LiveRelationship` legt die Verbindung (Beziehung) zwischen einer Ressource im Live Copy-Zweig und der entsprechenden Quelle/Blueprint-Ressource fest.
 
    * Die Beziehungen werden bei der Umsetzung der Vererbung und des Rollouts genutzt.
-   * `LiveRelationship` -Objekte bieten Zugriff (Verweise) auf die Rollout-Konfigurationen (  `RolloutConfig`),  `LiveCopy`und  `LiveStatus` Objekte, die sich auf die Beziehung beziehen.
-   * Beispiel: Eine Live Copy wird in `/content/copy/us` aus der Quelle/dem Blueprint unter `/content/we-retail/language-masters` erstellt. Die Ressourcen `/content/we.retail/language-masters/en/jcr:content` und `/content/copy/us/en/jcr:content` bilden eine Beziehung.
+   * `LiveRelationship` -Objekte bieten Zugriff (Verweise) auf die Rollout-Konfigurationen ( `RolloutConfig`), `LiveCopy`und `LiveStatus` Objekte, die mit der Beziehung zusammenhängen.
+   * Beispielsweise wird eine Live Copy in `/content/copy/us` aus der Quelle/dem Blueprint unter `/content/we-retail/language-masters`. Die Ressourcen `/content/we.retail/language-masters/en/jcr:content` und `/content/copy/us/en/jcr:content` eine Beziehung bilden.
 
-* **`LiveCopy`** enthält die Konfigurationsdetails für die Beziehungen (  `LiveRelationship`) zwischen den Live Copy-Ressourcen und ihren Quell-/Blueprint-Ressourcen.
+* **`LiveCopy`** enthält Konfigurationsdetails für die Beziehungen ( `LiveRelationship`) zwischen den Live Copy-Ressourcen und ihren Quell-/Blueprint-Ressourcen.
 
-   * Verwenden Sie die Klasse `LiveCopy` , um auf den Pfad der Seite, den Pfad der Quell-/Blueprint-Seite, die Rollout-Konfigurationen und darauf zuzugreifen, ob auch untergeordnete Seiten in `LiveCopy` enthalten sind.
-   * Ein `LiveCopy` -Knoten wird jedes Mal erstellt, wenn **Site erstellen** oder **Live Copy erstellen** verwendet wird.
+   * Verwenden Sie die `LiveCopy` -Klasse, um auf den Pfad der Seite, den Pfad der Quell-/Blueprint-Seite, die Rollout-Konfigurationen und die Frage zuzugreifen, ob auch untergeordnete Seiten in der `LiveCopy`.
+   * A `LiveCopy` Knoten wird jedes Mal erstellt, wenn **Site erstellen** oder **Erstellen einer Live Copy** verwendet.
 
 * **`LiveStatus`**-Objekte bieten Zugriff auf den Laufzeitstatus einer `LiveRelationship`. Sie können damit den Synchronisierungsstatus einer Live Copy abfragen.
 
@@ -79,20 +79,20 @@ Ein  `Blueprint` (wie in der  [Blueprint-Konfiguration](/help/sites-administerin
 
    * LiveActions werden nur von RolloutConfigs erzeugt.
 
-* **`LiveActionFactory`** erstellt  `LiveAction` Objekte, die einer  `LiveAction` Konfiguration unterliegen. Konfigurationen werden als Ressourcen im Repository gespeichert.
+* **`LiveActionFactory`** erstellt `LiveAction` Objekte, die `LiveAction` Konfiguration. Konfigurationen werden als Ressourcen im Repository gespeichert.
 
-* **`RolloutConfig`** enthält eine Liste von  `LiveActions`, die beim Auslösen verwendet werden soll. `LiveCopy` übernimmt `RolloutConfig` und das Ergebnis ist im `LiveRelationship` vorhanden.
+* **`RolloutConfig`** enthält eine Liste von `LiveActions`, das bei Auslösung verwendet werden soll. Die `LiveCopy` erbt die `RolloutConfig` und das Ergebnis in der `LiveRelationship`.
 
    * Beim erstmaligen Einrichten einer Live Copy wird ebenfalls eine RolloutConfig genutzt (die die LiveActions auslöst).
 
-## Erstellen einer neuen Synchronisierungsaktion  {#creating-a-new-synchronization-action}
+## Erstellen einer neuen Synchronisierungsaktion {#creating-a-new-synchronization-action}
 
 Erstellen Sie benutzerdefinierte Synchronisierungsaktionen für die Nutzung mit Ihren Rollout-Konfigurationen. Wenn die [installierten Aktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) Ihre spezifischen Anwendungsanforderungen nicht erfüllen, können Sie eine Synchronisierungsaktion erstellen. Hierfür erstellen Sie zwei Klassen:
 
-* Eine Implementierung der [`com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html)-Schnittstelle, die die Aktion ausführt.
+* Eine Umsetzung der [`com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) -Schnittstelle, die die Aktion ausführt.
 * eine OSGi-Komponente, die die Schnittstelle [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) implementiert und Instanzen der Klasse `LiveAction` erstellt.
 
-`LiveActionFactory` erstellt Instanzen der `LiveAction`-Klasse für eine bestimmte Konfiguration:
+Die `LiveActionFactory` erstellt Instanzen der `LiveAction` -Klasse für eine bestimmte Konfiguration:
 
 * `LiveAction`-Klassen umfassen die folgenden Methoden:
 
@@ -101,9 +101,9 @@ Erstellen Sie benutzerdefinierte Synchronisierungsaktionen für die Nutzung mit 
 
 * `LiveActionFactory`-Klassen umfassen die folgenden Mitglieder:
 
-   * `LIVE_ACTION_NAME`: Ein Feld, das den Namen des zugeordneten  `LiveAction`Felds enthält. Dieser Name muss mit dem Wert übereinstimmen, der von der Methode `getName` der Klasse `LiveAction` zurückgegeben wird.
-   * `createAction`: Erstellt eine Instanz von  `LiveAction`. Der optionale Parameter `Resource` kann verwendet werden, um Konfigurationsdaten bereitzustellen.
-   * `createsAction`: Gibt den Namen der verknüpften  `LiveAction`zurück.
+   * `LIVE_ACTION_NAME`: Ein Feld, das den Namen des zugehörigen `LiveAction`. Dieser Name muss mit dem Wert übereinstimmen, der von der Methode `getName` der Klasse `LiveAction` zurückgegeben wird.
+   * `createAction`: Erstellt eine Instanz der `LiveAction`. Der optionale Parameter `Resource` kann verwendet werden, um Konfigurationsdaten bereitzustellen.
+   * `createsAction`: Gibt den Namen der verknüpften `LiveAction`.
 
 ### Zugreifen auf den LiveAction-Konfigurationsknoten {#accessing-the-liveaction-configuration-node}
 
@@ -111,7 +111,7 @@ Mit dem `LiveAction`-Konfigurationsknoten im Repository können Sie Daten speich
 
 Beispielsweise muss eine `LiveAction` den Namen eines Blueprint-Autors speichern. Eine Eigenschaft des Konfigurationsknotens umfasst den Eigenschaftsnamen der Blueprint-Seite, in der die Informationen gespeichert werden. Zur Laufzeit ruft die `LiveAction` den Eigenschaftsnamen von der Konfiguration ab und erhält dann den Eigenschaftswert.
 
-Der Parameter der [`LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html)`.createAction`-Methode ist ein `Resource`-Objekt. Dieses `Resource`-Objekt repräsentiert den Knoten `cq:LiveSyncAction` für diese Live-Aktion in der Rollout-Konfiguration; siehe: [Erstellen einer Rollout-Konfiguration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Wie bei Konfigurationsknoten gewohnt, sollten Sie ihn an ein `ValueMap`-Objekt anpassen:
+Der -Parameter der [`LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html)`.createAction` -Methode ist `Resource` -Objekt. Dieses `Resource`-Objekt repräsentiert den Knoten `cq:LiveSyncAction` für diese Live-Aktion in der Rollout-Konfiguration; siehe: [Erstellen einer Rollout-Konfiguration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Wie bei Konfigurationsknoten gewohnt, sollten Sie ihn an ein `ValueMap`-Objekt anpassen:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -136,7 +136,7 @@ Die folgenden Objekte sind als Parameter der `execute`-Methode vom `LiveAction`-
 
 * Der Wert für das Zurücksetzen legt den Rollout-Modus für das Zurücksetzen fest.
 
-Über diese Objekte können Sie alle Daten zur `LiveCopy` abrufen. Sie können auch die `Resource`-Objekte verwenden, um `ResourceResolver`-, `Session`- und `Node`-Objekte abzurufen. Diese Objekte sind bei der Bearbeitung der Repository-Inhalte hilfreich:
+Über diese Objekte können Sie alle Daten zur `LiveCopy` abrufen. Sie können auch die `Resource` Objekte abrufen `ResourceResolver`, `Session`und `Node` Objekte. Diese Objekte sind bei der Bearbeitung der Repository-Inhalte hilfreich:
 
 In der ersten Zeile des folgenden Codes ist das `Resource`-Objekt der Quellseite die Quelle:
 
@@ -148,7 +148,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Die `Resource`-Argumente können `null`- oder `Resources`-Objekte sein, die sich nicht an `Node`-Objekte anpassen, z. B. [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html)-Objekte.
+>Die `Resource` -Argumente `null` oder `Resources` Objekte, die sich nicht an `Node` Objekte, z. B. [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) Objekte.
 
 ## Erstellen einer neuen Rollout-Konfiguration {#creating-a-new-rollout-configuration}
 
@@ -163,22 +163,20 @@ Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-K
 >
 >Informationen hierzu finden Sie auch unter [Best Practices zum Anpassen von Rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-### Erstellen der Rollout-Konfiguration  {#create-the-rollout-configuration}
+### Erstellen der Rollout-Konfiguration {#create-the-rollout-configuration}
 
 So erstellen Sie eine neue Rollout-Konfiguration:
 
 1. Offene CRXDE Lite; Beispiel:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Navigieren Sie zu :
+1. Gehen Sie zu :
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
-   >
    >Dies ist die benutzerdefinierte Version Ihres Projekts von:
    >`/libs/msm/wcm/rolloutconfigs`
-
-Muss erstellt werden, wenn dies Ihre erste Konfiguration ist.
+   >Muss erstellt werden, wenn dies Ihre erste Konfiguration ist.
 
    >[!NOTE]
    >
@@ -189,9 +187,9 @@ Muss erstellt werden, wenn dies Ihre erste Konfiguration ist.
    >* Nehmen Sie die gewünschten Änderungen in /apps vor.
 
 
-1. Erstellen Sie unter diesem **Erstellen** einen Knoten mit den folgenden Eigenschaften:
+1. Im Folgenden **Erstellen** einen Knoten mit den folgenden Eigenschaften:
 
-   * **Name**: Der Knotenname der Rollout-Konfiguration. md#installed-sync-actions), z. B. `contentCopy` oder `workflow`.
+   * **Name**: Der Knotenname der Rollout-Konfiguration. md#installed-sync-actions), zum Beispiel `contentCopy` oder `workflow`.
    * **Typ**: `cq:RolloutConfig`
 
 1. Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:
@@ -199,14 +197,14 @@ Muss erstellt werden, wenn dies Ihre erste Konfiguration ist.
 
       **Typ**: `String`
       **Wert**: Ein Titel, der in der Benutzeroberfläche angezeigt wird.
-   * **Name**:  `jcr:description`
+   * **Name**: `jcr:description`
 
       **Typ**: `String`
       **Wert**: Eine optionale Beschreibung.
-   * **Name**:  `cq:trigger`
+   * **Name**: `cq:trigger`
 
       **Typ**: `String`
-      **Wert**: Der zu verwendende  [Rollout-](/help/sites-administering/msm-sync.md#rollout-triggers) Trigger. Die folgenden Optionen stehen zur Auswahl:
+      **Wert**: Die [Rollout-Trigger](/help/sites-administering/msm-sync.md#rollout-triggers) verwendet werden. Die folgenden Optionen stehen zur Auswahl:
       * `rollout`
       * `modification`
       * `publish`
@@ -216,26 +214,26 @@ Muss erstellt werden, wenn dies Ihre erste Konfiguration ist.
 
 ### Hinzufügen von Synchronisierungsaktionen zur Rollout-Konfiguration {#add-synchronization-actions-to-the-rollout-configuration}
 
-Rollout-Konfigurationen werden unter dem [Rollout-Konfigurationsknoten](#create-the-rollout-configuration) gespeichert, den Sie unter dem Knoten `/apps/msm/<your-project>/rolloutconfigs` erstellt haben.
+Rollout-Konfigurationen werden unter dem [Rollout-Konfigurationsknoten](#create-the-rollout-configuration) , die Sie unter `/apps/msm/<your-project>/rolloutconfigs` Knoten.
 
-Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchronisierungsaktionen zur Rollout-Konfiguration hinzuzufügen. Die Reihenfolge der Synchronisierungsaktionsknoten bestimmt die Reihenfolge, in der die Aktionen durchgeführt werden.
+Untergeordnete Knoten des Typs hinzufügen `cq:LiveSyncAction` , um Synchronisierungsaktionen zur Rollout-Konfiguration hinzuzufügen. Die Reihenfolge der Synchronisierungsaktionsknoten bestimmt die Reihenfolge, in der die Aktionen durchgeführt werden.
 
-1. Wählen Sie noch in der CRXDE Lite den Knoten [Rollout-Konfiguration](#create-the-rollout-configuration) aus.
+1. Wählen Sie noch in der CRXDE Lite Ihre [Rollout-Konfiguration](#create-the-rollout-configuration) Knoten.
 
    Beispiel:
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. **** Erstellen Sie einen Knoten mit den folgenden Knoteneigenschaften:
+1. **Erstellen** ein Knoten mit den folgenden Knoteneigenschaften:
 
    * **Name**: Der Knotenname der Synchronisierungsaktion.
-Der Name muss mit dem **Aktionsnamen** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) übereinstimmen, z. B. `contentCopy` oder `workflow`.
+Der Name muss mit dem **Aktionsname** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions)beispielsweise `contentCopy` oder `workflow`.
    * **Typ**: `cq:LiveSyncAction`
 
 1. Fügen Sie so viele Synchronisierungsaktionsknoten hinzu wie erforderlich. Ordnen Sie die Aktionen so an, dass sie die Reihenfolge aufweisen, in der sie ausgeführt werden sollen. Der oberste Aktionsknoten wird zuerst ausgeführt.
 
 1. Klicken Sie auf **Alle speichern**.
 
-## Erstellen und Verwenden einer einfachen LiveActionFactory-Klasse  {#creating-and-using-a-simple-liveactionfactory-class}
+## Erstellen und Verwenden einer einfachen LiveActionFactory-Klasse {#creating-and-using-a-simple-liveactionfactory-class}
 
 Mit den Verfahren, die in diesem Abschnitt erläutert werden, können Sie eine `LiveActionFactory` entwickeln und in einer Rollout-Konfiguration verwenden. Für die Entwicklung und Bereitstellung der `LiveActionFactory` werden Maven und Eclipse verwendet:
 
@@ -271,16 +269,16 @@ Das folgende Verfahren setzt voraus, dass Sie das adobe-public-Profil zu Ihrer M
 1. Legen Sie auf interaktive Aufforderung die folgenden Werte fest:
 
    * `groupId`: `com.adobe.example.msm`
-   * `artifactId`:  `MyLiveActionFactory`
-   * `version`:  `1.0-SNAPSHOT`
-   * `package`:  `MyPackage`
-   * `appsFolderName`:  `myapp`
-   * `artifactName`:  `MyLiveActionFactory package`
-   * `packageGroup`:  `myPackages`
+   * `artifactId`: `MyLiveActionFactory`
+   * `version`: `1.0-SNAPSHOT`
+   * `package`: `MyPackage`
+   * `appsFolderName`: `myapp`
+   * `artifactName`: `MyLiveActionFactory package`
+   * `packageGroup`: `myPackages`
 
 1. Starten Sie Eclipse und [importieren Sie das Maven-Projekt](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
-### Hinzufügen von Abhängigkeiten zur POM-Datei  {#add-dependencies-to-the-pom-file}
+### Hinzufügen von Abhängigkeiten zur POM-Datei {#add-dependencies-to-the-pom-file}
 
 Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen verweisen kann, die im `LiveActionFactory`-Code verwendet werden.
 
@@ -288,7 +286,7 @@ Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen ver
 
    `MyLiveActionFactory/pom.xml`
 
-1. Klicken Sie im Editor auf die Registerkarte `pom.xml` und suchen Sie den Abschnitt `project/dependencyManagement/dependencies` .
+1. Klicken Sie im Editor auf das `pom.xml` und suchen Sie nach `project/dependencyManagement/dependencies` Abschnitt.
 1. Fügen Sie den folgenden XML-Code zum Element `dependencyManagement` hinzu und speichern Sie dann die Datei.
 
    ```xml
@@ -370,11 +368,11 @@ Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen ver
     </dependency>
    ```
 
-### Implementieren von LiveActionFactory  {#implement-liveactionfactory}
+### Implementieren von LiveActionFactory {#implement-liveactionfactory}
 
-Die folgende `LiveActionFactory`-Klasse implementiert eine `LiveAction`, die Nachrichten zu Quell- und Zielseiten protokolliert und die Eigenschaft `cq:lastModifiedBy` vom Quell- zum Zielknoten kopiert. Der Name der Live-Aktion ist `exampleLiveAction`.
+Die folgende `LiveActionFactory`-Klasse implementiert eine `LiveAction`, die Nachrichten zu Quell- und Zielseiten protokolliert und die Eigenschaft `cq:lastModifiedBy` vom Quell- zum Zielknoten kopiert. Der Name der Live-Aktion lautet `exampleLiveAction`.
 
-1. Klicken Sie im Eclipse Project Explorer mit der rechten Maustaste auf das Paket `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` und klicken Sie auf **Neu** > **Klasse**. Geben Sie als **Name** den Wert `ExampleLiveActionFactory` ein und klicken Sie dann auf **Fertig**.
+1. Klicken Sie im Eclipse Project Explorer mit der rechten Maustaste auf die `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` Paket und klicken Sie auf **Neu** > **Klasse**. Geben Sie als **Name** den Wert `ExampleLiveActionFactory` ein und klicken Sie dann auf **Fertig**.
 1. Öffnen Sie die Datei `ExampleLiveActionFactory.java`, ersetzen Sie den Inhalt durch den folgenden Code und speichern Sie die Datei.
 
    ```java
@@ -536,7 +534,7 @@ Die folgende `LiveActionFactory`-Klasse implementiert eine `LiveAction`, die Nac
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-### Erstellen der Rollout-Beispielkonfiguration  {#create-the-example-rollout-configuration}
+### Erstellen der Rollout-Beispielkonfiguration {#create-the-example-rollout-configuration}
 
 Erstellen Sie die MSM-Rollout-Konfiguration, die die von Ihnen erstellte `LiveActionFactory` nutzt:
 
@@ -544,7 +542,7 @@ Erstellen Sie die MSM-Rollout-Konfiguration, die die von Ihnen erstellte `LiveAc
 
    * **Titel**: Rollout-Beispielkonfiguration
    * **Name**: examplerolloutconfig
-   * **cq:Trigger**:  `publish`
+   * **cq:Trigger**: `publish`
 
 ### Hinzufügen der Live-Aktion zur Rollout-Beispielkonfiguration {#add-the-live-action-to-the-example-rollout-configuration}
 
@@ -553,13 +551,13 @@ Konfigurieren Sie die beim vorhergehenden Verfahren erstellte Rollout-Konfigurat
 1. Öffnen Sie CRXDE Lite; z. B. [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
 1. Erstellen Sie den folgenden Knoten unter `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
-   * **Name**:  `exampleLiveAction`
+   * **Name**: `exampleLiveAction`
    * **Typ**: `cq:LiveSyncAction`
 
 1. Klicken Sie auf **Alle speichern**.
 1. Wählen Sie den Knoten `exampleLiveAction` aus und fügen Sie die folgende Eigenschaft hinzu:
 
-   * **Name**:  `repLastModBy`
+   * **Name**: `repLastModBy`
    * **Typ**: `Boolean`
    * **Wert**: `true`
 
@@ -567,7 +565,7 @@ Konfigurieren Sie die beim vorhergehenden Verfahren erstellte Rollout-Konfigurat
 
 1. Klicken Sie auf **Alle speichern**.
 
-### Erstellen der Live Copy  {#create-the-live-copy}
+### Erstellen der Live Copy {#create-the-live-copy}
 
 [Erstellen Sie eine Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) des English/Products-Zweigs der We.Retail-Referenzwebsite mit Ihrer Rollout-Konfiguration:
 
@@ -613,32 +611,32 @@ MSM bestimmt anhand einer gespeicherten Liste von Sprach- und Ländercodes den N
 
 * Sprachtitel
 * Ländernamen
-* Standardländer für Sprachen (unter anderem für Codes wie `en`, `de`)
+* Standardländer für Sprachen (für Codes wie `en`, `de`, unter anderem)
 
-Die Sprachliste wird unter dem Knoten `/libs/wcm/core/resources/languages` gespeichert. Jeder untergeordnete Knoten steht für eine Sprache oder ein Sprachland:
+Die Sprachliste wird unter dem `/libs/wcm/core/resources/languages` Knoten. Jeder untergeordnete Knoten steht für eine Sprache oder ein Sprachland:
 
-* Der Name des Knotens ist der Sprachcode (z. B. `en` oder `de`) oder der Sprach_Ländercode (z. B. `en_us` oder `de_ch`).
+* Der Name des Knotens ist der Sprachcode (z. B. `en` oder `de`) oder dem Sprachcode_country (z. B. `en_us` oder `de_ch`).
 
 * In der Eigenschaft `language` des Knotens wird der volle Name der Sprache für den Code gespeichert.
 * In der Eigenschaft `country` des Knotens wird der volle Name des Landes für den Code gespeichert.
-* Wenn der Knotenname nur aus einem Sprachcode besteht (z. B. `en`), ist die Eigenschaft country `*` und eine zusätzliche Eigenschaft `defaultCountry` speichert den Code des Sprachenlandes, um das zu verwendende Land anzugeben.
+* Wenn der Knotenname nur aus einem Sprachcode besteht (z. B. `en`), lautet die Ländereigenschaft . `*`, sowie eine zusätzliche `defaultCountry` -Eigenschaft speichert den Code des Sprache-Landes, um das zu verwendende Land anzugeben.
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
 So bearbeiten Sie die Sprachen:
 
 1. Öffnen Sie CRXDE Lite in Ihrem Webbrowser; z. B. [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
-1. Wählen Sie den Ordner `/apps` aus und klicken Sie auf **Erstellen**, dann auf **Ordner erstellen**.
+1. Wählen Sie die `/apps` Ordner und klicken Sie auf **Erstellen**, dann **Ordner erstellen.**
 
-   Benennen Sie den neuen Ordner `wcm`.
+   Benennen Sie den neuen Ordner. `wcm`.
 
-1. Wiederholen Sie den vorherigen Schritt, um die Ordnerstruktur `/apps/wcm/core` zu erstellen. Erstellen Sie einen Knoten des Typs `sling:Folder` im Kern mit dem Namen `resources`. <!-- ![chlimage_1-39](assets/chlimage_1-39.png) -->
+1. Wiederholen Sie den vorherigen Schritt, um die `/apps/wcm/core` Ordnerstruktur. Erstellen Sie einen Knoten des Typs `sling:Folder` im Kern `resources`. <!-- ![chlimage_1-39](assets/chlimage_1-39.png) -->
 
-1. Klicken Sie mit der rechten Maustaste auf den Knoten `/libs/wcm/core/resources/languages` und klicken Sie auf **Kopieren**.
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/wcm/core/resources` und klicken Sie auf **Einfügen**. Bearbeiten Sie die untergeordneten Knoten nach Bedarf.
+1. Klicken Sie mit der rechten Maustaste auf die `/libs/wcm/core/resources/languages` Knoten und klicken Sie auf **Kopieren**.
+1. Klicken Sie mit der rechten Maustaste auf die `/apps/wcm/core/resources` Ordner und klicken Sie auf **Einfügen**. Bearbeiten Sie die untergeordneten Knoten nach Bedarf.
 1. Klicken Sie auf **Alle speichern**.
 1. Klicken Sie auf **Tools** > **Vorgänge** > **Web-Konsole**. Klicken Sie in dieser Konsole auf **OSGi** > **Konfiguration**.
-1. Suchen Sie nach **Day CQ WCM Language Manager**, klicken Sie auf **Language List** und ändern Sie den Wert von `/apps/wcm/core/resources/languages`. Klicken Sie dann auf **Save**.
+1. Suchen und klicken Sie auf **Day CQ WCM Language Manager** und ändern Sie den Wert von **Sprachliste** nach `/apps/wcm/core/resources/languages`Klicken Sie auf **Speichern**.
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
@@ -675,20 +673,20 @@ Ob eine Seiteneigenschaft bereitgestellt werden soll und daher bei der Bearbeitu
    * lässt die Bearbeitung nur zu, wenn die Vererbung abgebrochen wird (also der Ketten-Link gebrochen ist)
    * nur für die erste untergeordnete Ebene der Ressource
    * **Typ**: `String`
-   * **Wert**: den Namen der betreffenden Immobilie besitzt (und mit dem Wert der Immobilie vergleichbar ist  `name`; Siehe beispielsweise
+   * **Wert**: den Namen der betreffenden Immobilie trägt (und mit dem Wert der Immobilie vergleichbar ist `name`; Siehe beispielsweise
 
       `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:
 
-* wenn der Wert von `cq-msm-lockable`:
+* wenn der Wert von `cq-msm-lockable` ist:
 
-   * **Relativ**  (z. B.  `myProperty` oder  `./myProperty`)
+   * **Relativ** (z. B. `myProperty` oder `./myProperty`)
 
-      * wird die Eigenschaft von `cq:propertyInheritanceCancelled` hinzugefügt und entfernt.
-   * **Absolut**  (z. B.  `/image`)
+      * fügt die Eigenschaft hinzu und entfernt sie aus `cq:propertyInheritanceCancelled`.
+   * **Absolut** (z. B. `/image`)
 
-      * Wenn Sie die Kette brechen, wird die Vererbung abgebrochen, indem das `cq:LiveSyncCancelled`-Mixin zu `./image` hinzugefügt und `cq:isCancelledForChildren` auf `true` gesetzt wird.
+      * Wenn Sie die Kette brechen, wird die Vererbung durch Hinzufügen der `cq:LiveSyncCancelled` Mixin zu `./image` und Einstellung `cq:isCancelledForChildren` nach `true`.
       * führt das Schließen der Kette zu einer erneuten Aktivierung der Vererbung
 
 

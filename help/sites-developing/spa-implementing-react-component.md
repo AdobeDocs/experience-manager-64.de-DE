@@ -1,8 +1,8 @@
 ---
 title: Implementieren einer Reaktionskomponente für SPA
-seo-title: Implementieren einer Reaktionskomponente für SPA
+seo-title: Implementing a React Component for SPA
 description: In diesem Artikel wird ein Beispiel dafür vorgestellt, wie eine einfache, vorhandene React-Komponente für die Verwendung mit dem AEM-SPA-Editor angepasst werden kann.
-seo-description: In diesem Artikel wird ein Beispiel dafür vorgestellt, wie eine einfache, vorhandene React-Komponente für die Verwendung mit dem AEM-SPA-Editor angepasst werden kann.
+seo-description: This article presents an example of how to adapt a simple, existing React component to work with the AEM SPA Editor.
 uuid: aebca2ea-a020-45e1-8043-f8c21154c660
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 exl-id: da0e076b-afb7-4ebe-8e5e-48c00750e453
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '560'
 ht-degree: 19%
 
 ---
@@ -34,10 +34,10 @@ Dank des einfachen und leichten Vertrags, der von AEM benötigt und zwischen dem
 
 Dieser Artikel veranschaulicht das Beispiel der Wetterkomponente im Beispiel-SPA &quot;We.Retail Journal&quot;.
 
-Sie sollten mit der [Struktur einer SPA Anwendung für AEM](/help/sites-developing/spa-getting-started-react.md) vertraut sein, bevor Sie diesen Artikel lesen.
+Sie sollten mit dem [Struktur einer SPA Anwendung für AEM](/help/sites-developing/spa-getting-started-react.md) vor dem Lesen dieses Artikels.
 
 >[!CAUTION]
->In diesem Dokument wird die [We.Retail Journal-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) nur zu Demonstrationszwecken verwendet. Sie sollte nicht für Projektaufgaben verwendet werden.
+>Dieses Dokument verwendet die [We.Retail Journal-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) nur zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
 >
 >Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA SDK verwendet.
 
@@ -63,7 +63,7 @@ Die Änderung wird beibehalten und die Komponente wird automatisch mit neuen Wet
 
 ### Implementierung der Wetterkomponente {#weather-component-implementation}
 
-Die Wetterkomponente basiert tatsächlich auf einer öffentlich verfügbaren React-Komponente namens [React Open Weather](https://www.npmjs.com/package/react-open-weather), die für die Verwendung als Komponente in der We.Retail Journal-SPA-Beispielanwendung angepasst wurde.
+Die Wetterkomponente basiert tatsächlich auf einer öffentlich zugänglichen React-Komponente namens [React Open Weather](https://www.npmjs.com/package/react-open-weather), das an die Verwendung als Komponente in der SPA &quot;We.Retail Journal&quot;angepasst wurde.
 
 Im Folgenden finden Sie Ausschnitte aus der NPM-Dokumentation zur Verwendung der React Open Weather-Komponente.
 
@@ -72,11 +72,11 @@ Im Folgenden finden Sie Ausschnitte aus der NPM-Dokumentation zur Verwendung der
 Überprüfen des Codes der angepassten Wetterkomponente ( `Weather.js`) in der Anwendung &quot;We.Retail Journal&quot;:
 
 * **Zeile 16**: Das React Open Weather-Widget wird nach Bedarf geladen.
-* **Zeile 46**: Die  `MapTo` Funktion ordnet diese React-Komponente einer entsprechenden AEM-Komponente zu, damit sie im SPA Editor bearbeitet werden kann.
+* **Zeile 46**: Die `MapTo` -Funktion verknüpft diese React-Komponente mit einer entsprechenden AEM, sodass sie im SPA Editor bearbeitet werden kann.
 
-* **Zeilen 22-29**: Der  `EditConfig` wird definiert, wobei geprüft wird, ob die Stadt ausgefüllt wurde, und der Wert definiert wird, wenn er leer ist.
+* **Zeilen 22-29**: Die `EditConfig` definiert ist, wird überprüft, ob die Stadt ausgefüllt wurde, und der Wert wird definiert, wenn leer.
 
-* **Zeilen 31-44**: Die Wetterkomponente erweitert die  `Component` Klasse und stellt die erforderlichen Daten bereit, wie in der NPM-Nutzungsdokumentation für die React Open Weather-Komponente definiert, und rendert die Komponente.
+* **Zeilen 31-44**: Die Wetterkomponente erweitert die `Component` -Klasse und stellt die erforderlichen Daten bereit, wie in der NPM-Nutzungsdokumentation für die React Open Weather-Komponente definiert, und rendert die Komponente.
 
 ```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -131,4 +131,4 @@ Obwohl bereits eine Back-End-Komponente vorhanden sein muss, kann der Frontend-E
 
 ## Nächster Schritt {#next-step}
 
-Weitere Informationen zur Entwicklung von SPA für AEM finden Sie im Artikel [Entwickeln von SPA für AEM](/help/sites-developing/spa-architecture.md).
+Weitere Informationen zur Entwicklung von SPA für AEM finden Sie in diesem Artikel [Entwickeln von SPA für AEM](/help/sites-developing/spa-architecture.md).

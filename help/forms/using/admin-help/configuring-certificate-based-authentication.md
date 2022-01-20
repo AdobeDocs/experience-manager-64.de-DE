@@ -1,8 +1,8 @@
 ---
 title: Zertifikatbasierte Authentifizierung konfigurieren
-seo-title: Zertifikatbasierte Authentifizierung konfigurieren
+seo-title: Configuring certificate-based authentication
 description: Importieren Sie eine Zertifizierungsstelle (Certificate Authority, CA) in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung für zertifikatbasierte Authentifizierung.
-seo-description: Importieren Sie eine Zertifizierungsstelle (Certificate Authority, CA) in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung für zertifikatbasierte Authentifizierung.
+seo-description: Import a Certificate Authority (CA) certificate into the Trust Store and create a certificate mapping for certificate-based authentication.
 uuid: 9802a969-6d29-4b80-a4ed-06eb6e66e046
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 exl-id: 88932b5b-2acc-4f21-8ce3-b819a990ad30
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '726'
 ht-degree: 94%
 
 ---
@@ -23,11 +23,11 @@ User Management führt in der Regel die Authentifizierung mithilfe eines Benutze
 
 Zum Verwenden der zertifikatbasierten Authentifizierung importieren Sie eine Zertifizierungsstelle (Certificate Authority, CA), der Sie vertrauen, in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung.
 
-## CA-Zertifikat importieren  {#import-the-ca-certificate}
+## CA-Zertifikat importieren {#import-the-ca-certificate}
 
 Wählen Sie beim Importieren des Zertifikats die Optionen „Trust für Zertifikatauthentifizierung“ und „Trust für Identität“ sowie weitere erforderliche Optionen aus. Einzelheiten zum Importieren von Zertifikaten finden Sie unter [Zertifikate verwalten](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
-## Zertifikatzuordnung konfigurieren  {#configuring-certificate-mapping}
+## Zertifikatzuordnung konfigurieren {#configuring-certificate-mapping}
 
 Um die zertifikatbasierte Authentifizierung für Benutzer zu aktivieren, erstellen Sie eine Zertifikatzuordnung. Eine *Zertifikatzuordnung* definiert eine Zuordnung zwischen den Attributen eines Zertifikats und den Attributen von Benutzern in einer Domäne. Sie können derselben Domäne mehr als ein Zertifikat zuordnen.
 
@@ -50,7 +50,7 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
 
    Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der User Management-Datenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, regex) verwenden, der mit den beiden Attributen übereinstimmen soll. Wenn beispielsweise die allgemeinen Namen der Zertifikate in etwa *Alex Pink (Authentifizierung)* und *Alex Pink (Signieren)* lauten und der allgemeine Name in der User Management-Datenbank *Alex Pink* lautet, sollten Sie einen Regex verwenden, um den erforderlichen Teil des Zertifikatattributs (in diesem Beispiel *Alex Pink* zu extrahieren.) Der von Ihnen angegebene reguläre Ausdruck muss mit der Java-Regex-Spezifikation übereinstimmen.
 
-   Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der `java.util.regex.Matcher.replaceAll()`-Methode verwendet. Das Verhalten entspricht dem Verhalten der Methode und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
+   Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der `java.util.regex.Matcher.replaceAll()` -Methode. Das Verhalten entspricht dem Verhalten der Methode und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
 
    Um den Regex zu testen, geben Sie einen Wert in das Feld „Parameter testen“ ein und klicken Sie auf „Testen“.
 

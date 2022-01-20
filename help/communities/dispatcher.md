@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren des Dispatchers für Communities
-seo-title: Konfigurieren des Dispatchers für Communities
+seo-title: Configuring Dispatcher for Communities
 description: Konfigurieren des Dispatchers für AEM Communities
-seo-description: Konfigurieren des Dispatchers für AEM Communities
+seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 exl-id: dc4e27dd-fb2e-485d-8c7f-ab830bde1d3d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 8%
+source-wordcount: '627'
+ht-degree: 9%
 
 ---
 
@@ -21,17 +21,17 @@ ht-degree: 8%
 
 ## AEM Communities {#aem-communities}
 
-Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um das ordnungsgemäße Funktionieren von [Community-Sites](overview.md#community-sites) sicherzustellen. Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie die Aktivierung von Communities und die Anmeldung in sozialen Netzwerken einbezogen werden.
+Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um das ordnungsgemäße Funktionieren von [Community-Sites](overview.md#community-sites). Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie die Aktivierung von Communities und die Anmeldung in sozialen Netzwerken einbezogen werden.
 
 So erfahren Sie, was für Ihre spezifische Implementierung und Ihr Site-Design erforderlich ist
 
 * Kontakt [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
 
-Siehe auch die Hauptdokumentation [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Siehe auch die [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 ## Dispatcher-Caching {#dispatcher-caching}
 
-### Überblick {#overview}
+### Übersicht {#overview}
 
 Das Dispatcher-Caching für AEM Communities ermöglicht es dem Dispatcher, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
 
@@ -51,13 +51,13 @@ Wenn dies zur Unterstützung der Dispatcher-Zwischenspeicherung konfiguriert ist
 
 ### Konfiguration {#configuration}
 
-Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** legt den Ablauf zwischengespeicherter Seiten fest, die unter einem angegebenen Pfad angezeigt werden.
+Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max. Alter** legt den Ablauf zwischengespeicherter Seiten fest, die unter einem angegebenen Pfad angezeigt werden.
 
-* Von der [Web-Konsole](../../help/sites-deploying/configuring-osgi.md)
+* Aus dem [Web-Konsole](../../help/sites-deploying/configuring-osgi.md)
 
    * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* Suchen Sie `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` .
+* Suchen `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Wählen Sie das Symbol &quot;+&quot;aus, um eine neue Verbindungskonfiguration zu erstellen
 
 ![chlimage_1-339](assets/chlimage_1-339.png)
@@ -68,15 +68,15 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 
 * **Max. Alter der Cache-Steuerung**
 
-   *(erforderlich)* Das maximale Alter (in Sekunden), das zum Cache Control-Header hinzugefügt werden soll. Der Wert muss größer als null (0) sein.
+   *(erforderlich)* Das maximale Alter (in Sekunden), das zum Header &quot;Cache Control&quot;hinzugefügt werden soll. Der Wert muss größer als null (0) sein.
 
-## Dispatcher-Client-Header {#dispatcher-client-headers}
+## Dispatcher Client-Kopfzeilen {#dispatcher-client-headers}
 
-Wenn Sie im Abschnitt /clientheaders von `dispatcher.any` einen bestimmten Satz von Kopfzeilen auflisten, müssen Sie `"CSRF-Token"` einbeziehen, damit die [Aktivierungsfunktion](enablement.md) ordnungsgemäß funktioniert.
+Im Abschnitt /clientheaders von `dispatcher.any`Wenn Sie einen bestimmten Satz von Kopfzeilen auflisten, müssen Sie `"CSRF-Token"` für die [Aktivierungsfunktion](enablement.md) ordnungsgemäß funktionieren.
 
 ## Dispatcher-Filter {#dispatcher-filters}
 
-Der Abschnitt /filter der Datei `dispatcher.any` ist in [Konfigurieren des Zugriffs auf Inhalte - /filter](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#filter) dokumentiert.
+Der /filter -Abschnitt der `dispatcher.any` -Datei dokumentiert in [Konfigurieren des Zugriffs auf Inhalte - /filter](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
 In diesem Abschnitt werden Einträge beschrieben, die wahrscheinlich für das ordnungsgemäße Funktionieren der Communities-Funktionen erforderlich sind.
 
@@ -91,7 +91,7 @@ Siehe auch
 >[!NOTE]
 >
 >**Beispiele für Eigenschaftsnamen**
->Alle angezeigten Eigenschaftsnamen wie **/0050** und **/0170** sollten so angepasst werden, dass sie in eine vorhandene Konfigurationsdatei dispatcher.any passen.
+>Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollte an eine vorhandene dispatcher.any-Konfigurationsdatei angepasst werden.
 
 Die folgenden Einträge sollten am Ende des /filter -Abschnitts hinzugefügt werden, insbesondere nach allen Einträgen, die verweigert werden.
 
@@ -165,9 +165,9 @@ Die folgenden Einträge sollten am Ende des /filter -Abschnitts hinzugefügt wer
 /7001 { /type "allow" /glob "GET /libs/cq/security/userinfo.json?cq_ck=*"
 ```
 
-## Dispatcher Rules {#dispatcher-rules}
+## Dispatcher-Regeln {#dispatcher-rules}
 
-Im Regelabschnitt von `dispatcher.any` wird definiert, welche Antworten basierend auf der angeforderten URL zwischengespeichert werden sollen. Für Communities wird der Regelabschnitt verwendet, um zu definieren, was nie zwischengespeichert werden soll.
+Der Regelabschnitt von `dispatcher.any` definiert, welche Antworten basierend auf der angeforderten URL zwischengespeichert werden sollen. Für Communities wird der Regelabschnitt verwendet, um zu definieren, was nie zwischengespeichert werden soll.
 
 ```shell
 # Never cache the client-side .social.json calls
@@ -196,7 +196,7 @@ Das allererste Filtermuster wird häufig verwendet, um alles zu verweigern, soda
 
 ## Beispiel für dispatcher.any {#sample-dispatcher-any}
 
-Im Folgenden finden Sie eine Beispieldatei `dispatcher.any` mit den Communities /filters und /rules.
+Im Folgenden finden Sie ein Beispiel `dispatcher.any` -Datei, die die Communities /filters und /rules enthält.
 
 ```shell
 # Each farm configures a set of load balanced renders (i.e. remote servers)

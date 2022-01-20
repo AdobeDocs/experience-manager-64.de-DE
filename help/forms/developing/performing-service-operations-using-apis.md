@@ -1,8 +1,8 @@
 ---
 title: Ausführen von Dienstvorgängen mithilfe von APIs
-seo-title: Ausführen von Dienstvorgängen mithilfe von APIs
+seo-title: Performing Service Operations Using APIs
 description: Entwickeln Sie Clientanwendungen mithilfe der AEM Forms-APIs.
-seo-description: Entwickeln Sie Clientanwendungen mithilfe der AEM Forms-APIs.
+seo-description: Develop client applications using the AEM Forms APIs.
 uuid: a5697c91-d643-4265-973c-18467ca0437a
 contentOwner: admin
 content-type: reference
@@ -13,14 +13,14 @@ role: Developer
 exl-id: a7c60be2-4a58-4f0a-a90e-386ef91c3335
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
 
-# Durchführen von Dienstvorgängen mit APIs {#performing-service-operations-using-apis}
+# Ausführen von Dienstvorgängen mithilfe von APIs {#performing-service-operations-using-apis}
 
-Bevor Sie mit der Entwicklung von Clientanwendungen mithilfe der AEM Forms-APIs beginnen, sollten Sie zuerst AEM Forms aufrufen lesen, in dem die verschiedenen Methoden zum Aufrufen von Diensten beschrieben werden. (Siehe [Dienstcontainer](/help/forms/developing/service-container.md#service-container).)
+Bevor Sie mit der Entwicklung von Clientanwendungen mithilfe der AEM Forms-APIs beginnen, sollten Sie zuerst AEM Forms aufrufen lesen, in dem die verschiedenen Methoden zum Aufrufen von Diensten beschrieben werden. (Siehe [Dienstcontainer](/help/forms/developing/service-container.md#service-container).
 
 Nachdem Sie sich mit den verschiedenen Aufrufmethoden vertraut gemacht haben, können Sie lernen, wie Sie programmatisch mit jedem Dienst interagieren können. Sie können eine Clientanwendung in Adobe Flex® Builder™, in einer Java-Entwicklungsumgebung oder in einer Umgebung wie Microsoft Visual Studio .NET entwickeln, die die Verwendung der bereitgestellten WSDL für die Verwendung auf einem nativen SOAP-Stapel ermöglicht.
 

@@ -1,8 +1,8 @@
 ---
 title: Beschreibung wiederverwendbarer Komponenten
-seo-title: Beschreibung wiederverwendbarer Komponenten
+seo-title: Description of reusable components
 description: Eine vollständige Liste von wiederverwendbaren Komponenten mit Dateinamen und Abhängigkeiten, die Sie bei der Integration von AEM Forms Workspace-Komponenten in Ihre Webanwendungen unterstützen.
-seo-description: Eine vollständige Liste von wiederverwendbaren Komponenten mit Dateinamen und Abhängigkeiten, die Sie bei der Integration von AEM Forms Workspace-Komponenten in Ihre Webanwendungen unterstützen.
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
@@ -12,14 +12,14 @@ discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: 2790a2d3-444a-4c13-99b0-ea31923fc547
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1231'
 ht-degree: 88%
 
 ---
 
-# Beschreibung wiederverwendbarer Komponenten  {#description-of-reusable-components}
+# Beschreibung wiederverwendbarer Komponenten {#description-of-reusable-components}
 
-AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrating-html-ws-components-web.md)-Komponenten, die in einer bestimmten [Ordnerstruktur](/help/forms/using/folder-structure.md) in CRX™ organisiert sind. Für jede Komponente sind Modell-, Ansichts- und Vorlagendateien in der Ordnerstruktur angegeben, außerdem sind JavaScript™-Abhängigkeiten von anderen Komponentendateien, Listener-Ereignisse der Komponente und JavaScript-Objekte, die diese Ereignisse in HTML Workspace auslösen. Die vollständige Liste der wiederverwendbaren Komponenten mit den einzelnen Dateinamen und Abhängigkeiten ist im Folgenden aufgeführt.
+AEM Forms Workspace besteht aus [wiederverwendbar](/help/forms/using/integrating-html-ws-components-web.md) Komponenten, die in einer bestimmten [Ordnerstruktur](/help/forms/using/folder-structure.md) in CRX™. Für jede Komponente sind Modell-, Ansichts- und Vorlagendateien in der Ordnerstruktur angegeben, außerdem sind JavaScript™-Abhängigkeiten von anderen Komponentendateien, Listener-Ereignisse der Komponente und JavaScript-Objekte, die diese Ereignisse in HTML Workspace auslösen. Die vollständige Liste der wiederverwendbaren Komponenten mit den einzelnen Dateinamen und Abhängigkeiten ist im Folgenden aufgeführt.
 
 ## TaskList {#tasklist}
 
@@ -924,7 +924,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
    <td> 
     <ul> 
      <li>userImageUrlFetched – UserInfo-Modell</li> 
-     <li>sessionRenewed – userinfo-Modell  <br /> </li> 
+     <li>sessionRenewed – userinfo-Modell <br /> </li> 
      <li>sessionExpired – userinfo-Modell </li> 
     </ul> </td> 
   </tr> 
@@ -1085,7 +1085,7 @@ AEM Forms Workspace besteht aus [wiederverwendbaren](/help/forms/using/integrati
   </tr> 
   <tr> 
    <td><p>JS-Abhängigkeiten</p> </td> 
-   <td>nicht vorhanden<br /> </td> 
+   <td>Nicht vorhanden<br /> </td> 
   </tr> 
   <tr> 
    <td><p>Listener-Ereignisse (Ereignisname - Trigger)</p> </td> 

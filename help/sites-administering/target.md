@@ -1,8 +1,8 @@
 ---
 title: Integrieren mit Adobe Target
-seo-title: Integrieren mit Adobe Target
+seo-title: Integrating with Adobe Target
 description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target.
-seo-description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target.
+seo-description: Learn about integrating AEM with Adobe Target.
 uuid: b90346e8-9757-4272-a870-bbe5e647303f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 10c40e33-e62f-451f-b5d4-e34081f4340e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '600'
 ht-degree: 97%
 
 ---
@@ -53,10 +53,9 @@ Führen Sie zur Integration mit Target die folgenden Aufgaben durch:
 >
 
 
-
 >[!CAUTION]
 >
->Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+>Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 >
 >Detaillierte Informationen finden Sie unter [Voraussetzungen für die Integration in Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node).
 
@@ -64,9 +63,9 @@ Wenn die Integration abgeschlossen ist, können Sie [gezielte Inhalte verfassen]
 
 >[!NOTE]
 >
->Wenn Sie eine Komponente in AEM Author anvisieren, führt die Komponente eine Reihe von serverseitigen Aufrufen an Adobe Target durch, um die Kampagne zu registrieren, Angebote einzurichten und Adobe Target-Segmente abzurufen (falls konfiguriert). Es werden keine serverseitigen Aufrufe von AEM Publish an Adobe Target vorgenommen.
+>Wenn Sie eine Komponente in AEM Author anvisieren, führt die Komponente eine Reihe von Server-seitigen Aufrufen an Adobe Target durch, um die Kampagne zu registrieren, Angebote einzurichten und Adobe Target-Segmente abzurufen (falls konfiguriert). Es werden keine Server-seitigen Aufrufe von AEM Publish an Adobe Target vorgenommen.
 
-## Quellen für Hintergrundinformationen        {#background-information-sources}
+## Quellen für Hintergrundinformationen {#background-information-sources}
 
 Die Integration von AEM in Adobe Target erfordert Kenntnisse zu Adobe Target, AEM-Aktivitätenmanagement und AEM-Zielgruppenmanagement. Sie sollten mit den folgenden Informationen vertraut sein:
 
@@ -82,7 +81,5 @@ Die Integration von AEM in Adobe Target erfordert Kenntnisse zu Adobe Target, AE
 >* 2.000 Erlebnisse
 >* 50 Metriken
 >* 50 Berichtssegmente
-
 >
-
 

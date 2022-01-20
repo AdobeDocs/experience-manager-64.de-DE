@@ -1,8 +1,8 @@
 ---
 title: Erste Schritte für Autoren
-seo-title: Erste Schritte für Autoren
+seo-title: First Steps for Authors
 description: Überblick über die wesentlichen Aufgaben, die Sie nutzen, wenn Sie mit der Inhaltsbearbeitung mit AEM beginnen
-seo-description: Überblick über die wesentlichen Aufgaben, die Sie nutzen, wenn Sie mit der Inhaltsbearbeitung mit AEM beginnen
+seo-description: An overview of the main tasks that you will be using when starting to author content with AEM
 uuid: 13aec50b-f902-4b5e-9e8b-bc94810d7b88
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
 exl-id: c4b0211f-aaaf-44e5-89bb-6b951dbdb98f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 93%
+source-wordcount: '440'
+ht-degree: 92%
 
 ---
 
@@ -23,11 +23,11 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 
 Er deckt folgende Themen ab:
 
-* [Erste Schritte](#getting-started)  - Erläuterung der grundlegenden Ereignisabfolge für die Erstellung und Veröffentlichung Ihrer ersten Seite.
+* [Erste Schritte](#getting-started) - Erläuterung der grundlegenden Ereignisabfolge für die Erstellung und Veröffentlichung der ersten Seite.
 
-* [Weitere Aktionen](#further-actions)  - Hier finden Sie die vielen weiteren Aktionen, die Sie beim Authoring verwenden können.
+* [Weitere Maßnahmen](#further-actions) - Im Anschluss an die vielen anderen Aktionen, die Sie beim Authoring verwenden können.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Diese Bildschirmpräsentation (Clickthrough) bietet einen schnellen visuellen Überblick darüber, wie Sie mit AEM Ihre erste Seite bearbeiten. Links zu Details zu den einzelnen Schritten finden Sie dann unter [Einstieg](#getting-started).
 
@@ -43,11 +43,11 @@ Der Inhalt Ihrer Website wird in einer Baumstruktur archiviert. Wenn Sie eine Se
 
 Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
-### Öffnen einer Seite  {#opening-a-page}
+### Öffnen einer Seite {#opening-a-page}
 
 Bei vielen Aktionen, wie beim Bearbeiten, müssen Sie [eine Seite öffnen](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
-### Bearbeiten einer Seite  {#editing-a-page}
+### Bearbeiten einer Seite {#editing-a-page}
 
 Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, haben Sie folgende Möglichkeiten für die [Bearbeitung einer Seite](/help/sites-authoring/editing-content.md):
 
@@ -58,13 +58,13 @@ Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder
 
 * [Rückgängigmachen und Wiederholen von Seitenbearbeitungen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Verwenden des Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode) (um die Darstellung der Seite bei der Veröffentlichung zu prüfen)
-* [Sperren einer Seite  ](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Veröffentlichen einer Seite {#publishing-a-page}
 
 Wenn Sie die Bearbeitung der Seite abgeschlossen haben, möchten Sie [den Inhalt sicherlich veröffentlichen (bzw. aktivieren)](/help/sites-authoring/publishing-pages.md), damit er für Besucher Ihrer Website verfügbar ist.
 
-## Weitere Aktionen  {#further-actions}
+## Weitere Aktionen {#further-actions}
 
 Neben den allgemeinen Schritten gibt es viele weitere Aktionen, die Sie bei der Bearbeitung verwenden können.
 
@@ -76,7 +76,7 @@ Gelegentlich bietet es sich an, [eine Seite zu kopieren](/help/sites-authoring/m
 
 [Für das Verschieben und das Umbenennen von Seiten verwenden Sie im Allgemeinen dieselbe Aktion.](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)
 
-### Veröffentlichen einer Seite rückgängig machen  {#unpublishing-a-page}
+### Veröffentlichen einer Seite rückgängig machen {#unpublishing-a-page}
 
 Um zuvor veröffentlichte (oder aktivierte) Inhalte von Ihrer öffentlichen Website wieder zu entfernen, [machen Sie die Veröffentlichung rückgängig (bzw. deaktivieren Sie die Seite)](/help/sites-authoring/publishing-pages.md).
 
@@ -84,14 +84,14 @@ Um zuvor veröffentlichte (oder aktivierte) Inhalte von Ihrer öffentlichen Webs
 
 Wenn eine Seite nicht mehr benötigt wird, [können Sie sie löschen](/help/sites-authoring/managing-pages.md#deleting-a-page).
 
-### Festlegen von Seiteneigenschaften  {#setting-the-page-properties}
+### Festlegen von Seiteneigenschaften {#setting-the-page-properties}
 
 Jede [Seite verfügt über Eigenschaften](/help/sites-authoring/editing-page-properties.md), die Sie definieren können, um damit Aspekte ihrer Verwendung zu bestimmen. Diese Eigenschaften können in jeder der beiden Benutzeroberflächen aktualisiert werden.
 
-### Erstellen einer Seitenversion  {#creating-a-version-of-a-page}
+### Erstellen einer Seitenversion {#creating-a-version-of-a-page}
 
 Sie können eine [Version einer Seite erstellen](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) und diese bei Bedarf [wiederherstellen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version),
 
-## Weitere Informationen  {#more-information}
+## Weitere Informationen {#more-information}
 
 Unter [Seitenbearbeitung](/help/sites-authoring/author-environment-tools.md) und [Arbeiten mit der Autorenumgebung](/help/sites-authoring/home.md) finden Sie weitere Informationen zur Bearbeitung.

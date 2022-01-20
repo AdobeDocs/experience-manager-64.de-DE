@@ -1,8 +1,8 @@
 ---
 title: Rendern von Rights-aktiviertem Forms
-seo-title: Rendern von Rights-aktiviertem Forms
+seo-title: Rendering Rights-Enabled Forms
 description: Verwenden Sie den Forms-Dienst zum Rendern von Formularen, für die Verwendungsrechte angewendet wurden. Sie können Formulare mit aktivierten Rechten mithilfe der Java-API und der Web Service-API rendern.
-seo-description: Verwenden Sie den Forms-Dienst zum Rendern von Formularen, für die Verwendungsrechte angewendet wurden. Sie können Formulare mit aktivierten Rechten mithilfe der Java-API und der Web Service-API rendern.
+seo-description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
 uuid: ce5e4be6-d9b0-4989-a0e1-a8c3b98aed77
 contentOwner: admin
 content-type: reference
@@ -14,7 +14,7 @@ role: Developer
 exl-id: 0cee94ba-1a72-4021-b606-8fa945312483
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1463'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 5%
 
 Der Forms-Dienst kann Formulare wiedergeben, auf die Verwendungsrechte angewendet wurden. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. Forms, auf die Verwendungsrechte angewendet wurden, werden als Formulare mit aktivierten Verwendungsrechten bezeichnet. Ein Benutzer, der ein Formular mit aktivierten Benutzerrechten in Adobe Reader öffnet, kann Vorgänge durchführen, die für dieses Formular aktiviert sind.
 
-Um Verwendungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC Extensions-Dienst Teil Ihrer AEM Forms-Installation sein. Außerdem müssen Sie über gültige Berechtigungen verfügen, mit denen Sie Verwendungsrechte auf PDF-Dokumente anwenden können. Das heißt, Sie müssen den Acrobat Reader DC Extensions-Dienst ordnungsgemäß konfigurieren, bevor Sie ein Formular mit aktivierten Rechten wiedergeben können. (Siehe [Informationen zum Acrobat Reader DC Extensions-Dienst](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Um Verwendungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC Extensions-Dienst Teil Ihrer AEM Forms-Installation sein. Außerdem müssen Sie über gültige Berechtigungen verfügen, mit denen Sie Verwendungsrechte auf PDF-Dokumente anwenden können. Das heißt, Sie müssen den Acrobat Reader DC Extensions-Dienst ordnungsgemäß konfigurieren, bevor Sie ein Formular mit aktivierten Rechten wiedergeben können. (Siehe [Informationen zum Acrobat Reader DC Extensions-Dienst](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Um Verwendungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC Ext
 
 >[!NOTE]
 >
->Sie können ein Formular nicht mit XML-Daten vorab ausfüllen, wenn Sie die folgenden Verwendungsrechte angeben: `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles` oder `enableDigitalSignatures`. (Siehe [Vorausfüllen von Forms mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+>Sie können ein Formular nicht mit XML-Daten vorab ausfüllen, wenn Sie die folgenden Verwendungsrechte angeben: `enableComments`, `enableCommentsOnline`, `enableEmbeddedFiles`oder `enableDigitalSignatures`. (Siehe [Vorausfüllen von Forms mit flexiblen Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md).
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Wenn der Forms-Dienst ein Formular mit aktivierten Benutzerrechten rendert, wird
 
 [Erstellen von Webanwendungen, die Forms rendern](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Für Rechte aktivierte Formulare mithilfe der Java-API rendern {#render-rights-enabled-forms-using-the-java-api}
+### Rendern von Formularen mit aktivierten Rechten mithilfe der Java-API {#render-rights-enabled-forms-using-the-java-api}
 
 Rendern Sie ein Formular mit aktivierten Rechten mithilfe der Forms API (Java):
 
@@ -98,39 +98,39 @@ Rendern Sie ein Formular mit aktivierten Rechten mithilfe der Forms API (Java):
 1. Erstellen eines Forms Client-API-Objekts
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
-   * Erstellen Sie ein `FormsServiceClient` -Objekt, indem Sie dessen Konstruktor verwenden und das `ServiceClientFactory` -Objekt übergeben.
+   * Erstellen Sie eine `FormsServiceClient` -Objekt durch Verwendung seines Konstruktors und Übergabe des `ServiceClientFactory` -Objekt.
 
 1. Laufzeitoptionen für Verwendungsrechte festlegen
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Alias der Berechtigung an, indem Sie die `setReCredentialAlias` -Methode des Objekts `ReaderExtensionSpec` aufrufen und einen Zeichenfolgenwert angeben, der den Aliaswert darstellt.
-   * Legen Sie die einzelnen Verwendungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec` -Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Verwendungsrechte festlegen, wenn die Berechtigung es Ihnen nicht erlaubt, sie festzulegen. Beispiel. um die Verwendungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `setReFillIn` -Methode des Objekts auf und übergeben Sie `true`.`ReaderExtensionSpec`
+   * Geben Sie den Alias der Berechtigung an, indem Sie die `ReaderExtensionSpec` -Objekt `setReCredentialAlias` -Methode und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
+   * Legen Sie die einzelnen Verwendungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec` -Objekt. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Verwendungsrechte festlegen, wenn die Berechtigung es Ihnen nicht erlaubt, sie festzulegen. Beispiel. Um die Verwendungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `ReaderExtensionSpec` -Objekt `setReFillIn` -Methode und -übergabe `true`.
 
    >[!NOTE]
    >
-   >Es ist nicht erforderlich, die `setReCredentialPassword`-Methode des `ReaderExtensionSpec`-Objekts aufzurufen. Diese Methode wird vom Forms-Dienst nicht verwendet. *
+   >Es ist nicht erforderlich, die `ReaderExtensionSpec` -Objekt `setReCredentialPassword`* Methode. Diese Methode wird vom Forms-Dienst nicht verwendet. *
 
 1. Wiedergabe eines Formulars mit aktivierten Verwendungsrechten
 
-   Rufen Sie die `renderPDFFormWithUsageRights` -Methode des Objekts `FormsServiceClient` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsServiceClient` -Objekt `renderPDFFormWithUsageRights` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein string -Wert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `com.adobe.idp.Document` -Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document` -Objekt.
-   * Ein `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert.
-   * Ein `ReaderExtensionSpec` -Objekt, das Nutzungsrechte für Laufzeitoptionen speichert.
-   * Ein `URLSpec` -Objekt, das URI-Werte enthält, die für den Forms-Dienst erforderlich sind.
+   * A `com.adobe.idp.Document` -Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie einen leeren `com.adobe.idp.Document` -Objekt.
+   * A `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert.
+   * A `ReaderExtensionSpec` -Objekt, das Laufzeitoptionen für Nutzungsrechte speichert.
+   * A `URLSpec` -Objekt, das URI-Werte enthält, die für den Forms-Dienst erforderlich sind.
 
-   Die `renderPDFFormWithUsageRights`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die `renderPDFFormWithUsageRights` -Methode gibt eine `FormsResult` -Objekt, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben Sie den Formulardaten-Stream in den Client-Webbrowser
 
-   * Erstellen Sie ein `com.adobe.idp.Document` -Objekt, indem Sie die `FormsResult` -Methode des Objekts &quot;s `getOutputContent` aufrufen.
-   * Rufen Sie den Inhaltstyp des Objekts `com.adobe.idp.Document` ab, indem Sie dessen Methode `getContentType` aufrufen.
-   * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie seine `setContentType`-Methode aufrufen und den Inhaltstyp des Objekts `com.adobe.idp.Document` übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Methode des Objekts `getOutputStream` verwendet wird.
-   * Erstellen Sie ein `java.io.InputStream` -Objekt, indem Sie die `getInputStream` -Methode des Objekts `com.adobe.idp.Document` aufrufen.
-   * Erstellen Sie ein Byte-Array, das mit dem Formulardatenstream gefüllt wird, indem Sie die `read` -Methode des Objekts `InputStream` aufrufen und das Byte-Array als Argument übergeben.
-   * Rufen Sie die `write` -Methode des Objekts `javax.servlet.ServletOutputStream` auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die `write`-Methode.
+   * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` object ‘s `getOutputContent` -Methode.
+   * Abrufen des Inhaltstyps der `com.adobe.idp.Document` -Objekt durch Aufrufen seiner `getContentType` -Methode.
+   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode und Übergabe des Inhaltstyps der `com.adobe.idp.Document` -Objekt.
+   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
+   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Byte-Array, das mit dem Formulardatenstream gefüllt wird, indem Sie die `InputStream` -Objekt `read` -Methode verwenden und das Byte-Array als Argument übergeben.
+   * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardaten-Streams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die `write` -Methode.
 
 **Siehe auch**
 
@@ -140,7 +140,7 @@ Rendern Sie ein Formular mit aktivierten Rechten mithilfe der Forms API (Java):
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Rendern von Formularen mit aktivierten Rechten mithilfe der Webdienst-API {#render-rights-enabled-forms-using-the-web-service-api}
+## Rendern von Formularen mit aktivierten Verwendungsrechten mithilfe der Webdienst-API {#render-rights-enabled-forms-using-the-web-service-api}
 
 Rendern Sie ein Formular mit aktivierten Rechten mithilfe der Forms-API (Webdienst):
 
@@ -151,37 +151,37 @@ Rendern Sie ein Formular mit aktivierten Rechten mithilfe der Forms-API (Webdien
 
 1. Erstellen eines Forms Client-API-Objekts
 
-   Erstellen Sie ein `FormsService` -Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie eine `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
 1. Laufzeitoptionen für Verwendungsrechte festlegen
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
-   * Geben Sie den Alias der Berechtigung an, indem Sie die `setReCredentialAlias` -Methode des Objekts `ReaderExtensionSpec` aufrufen und einen Zeichenfolgenwert angeben, der den Aliaswert darstellt.
-   * Legen Sie die einzelnen Verwendungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec` -Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Verwendungsrechte festlegen, wenn die Berechtigung es Ihnen nicht erlaubt, sie festzulegen. Um die Verwendungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `setReFillIn` -Methode des Objekts auf und übergeben Sie `true`.`ReaderExtensionSpec`
+   * Geben Sie den Alias der Berechtigung an, indem Sie die `ReaderExtensionSpec` -Objekt `setReCredentialAlias` -Methode und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
+   * Legen Sie die einzelnen Verwendungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec` -Objekt. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können keine Verwendungsrechte festlegen, wenn die Berechtigung es Ihnen nicht erlaubt, sie festzulegen. Um die Verwendungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `ReaderExtensionSpec` -Objekt `setReFillIn` -Methode und -übergabe `true`.
 
 1. Wiedergabe eines Formulars mit aktivierten Verwendungsrechten
 
-   Rufen Sie die `renderPDFFormWithUsageRights` -Methode des Objekts `FormsService` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsService` -Objekt `renderPDFFormWithUsageRights` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein string -Wert, der den Namen des Formularentwurfs einschließlich der Dateinamenerweiterung angibt. Wenn Sie auf einen Formularentwurf verweisen, der Teil einer Forms-Anwendung ist, stellen Sie sicher, dass Sie den vollständigen Pfad angeben, z. B. `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Ein `BLOB` -Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten mit dem Formular zusammenführen möchten, müssen Sie ein `BLOB`-Objekt übergeben, das auf einer leeren XML-Datenquelle basiert. Sie können kein `BLOB`-Objekt übergeben, das null ist. Andernfalls wird eine Ausnahme ausgelöst.
-   * Ein `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert.
-   * Ein `ReaderExtensionSpec` -Objekt, das Nutzungsrechte für Laufzeitoptionen speichert.
-   * Ein `URLSpec` -Objekt, das URI-Werte enthält, die für den Forms-Dienst erforderlich sind.
+   * A `BLOB` -Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten mit dem Formular zusammenführen möchten, müssen Sie eine `BLOB` -Objekt, das auf einer leeren XML-Datenquelle basiert. Sie können keine `BLOB` Objekt, das null ist; Andernfalls wird eine Ausnahme ausgelöst.
+   * A `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert.
+   * A `ReaderExtensionSpec` -Objekt, das Laufzeitoptionen für Nutzungsrechte speichert.
+   * A `URLSpec` -Objekt, das URI-Werte enthält, die für den Forms-Dienst erforderlich sind.
 
-   Die `renderPDFFormWithUsageRights`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die `renderPDFFormWithUsageRights` -Methode gibt eine `FormsResult` -Objekt, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben Sie den Formulardaten-Stream in den Client-Webbrowser
 
-   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die `getOutputContent` -Methode des Objekts `FormsResult` aufrufen.
-   * Rufen Sie den Inhaltstyp des Objekts `BLOB` ab, indem Sie dessen Methode `getContentType` aufrufen.
-   * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie seine `setContentType`-Methode aufrufen und den Inhaltstyp des Objekts `BLOB` übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Methode des Objekts `getOutputStream` verwendet wird.
-   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `getBinaryData`-Methode des Objekts `BLOB`. Diese Aufgabe weist den Inhalt des Objekts `FormsResult` dem Byte-Array zu.
-   * Rufen Sie die `write` -Methode des Objekts `javax.servlet.http.HttpServletResponse` auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die `write`-Methode.
+   * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
+   * Abrufen des Inhaltstyps der `BLOB` -Objekt durch Aufrufen seiner `getContentType` -Methode.
+   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode und Übergabe des Inhaltstyps der `BLOB` -Objekt.
+   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
+   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `BLOB` -Objekt `getBinaryData` -Methode. Diese Aufgabe weist den Inhalt des `FormsResult` -Objekt zum Byte-Array hinzu.
+   * Rufen Sie die `javax.servlet.http.HttpServletResponse` -Objekt `write` -Methode zum Senden des Formulardaten-Streams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die `write` -Methode.
 
 **Siehe auch**
 
 [Rendern von Rights-aktiviertem Forms](#rendering-rights-enabled-forms)
 
-[Aufrufen von AEM Forms mit der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

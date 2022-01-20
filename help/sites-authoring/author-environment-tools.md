@@ -1,8 +1,8 @@
 ---
 title: Autorenumgebung und Tools
-seo-title: Autorenumgebung und Tools
+seo-title: Authoring Environment and Tools
 description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
-seo-description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
+seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 uuid: 2fe17bbf-f431-49bc-9d27-7a95f1f76252
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 exl-id: 5bb5f984-f741-4185-acb0-ffcf7e116875
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2124'
 ht-degree: 93%
 
 ---
@@ -43,7 +43,7 @@ Sie können eine Seite mit dem Seiteneditor bearbeiten. Beispiel:
 >
 >Sie können diese Tour überspringen und jederzeit wiederholen, indem Sie sie im Menü **Seiteninformationen** auswählen.
 
-## Aufrufen der Hilfe {#accessing-help}
+## Aufrufen der Hilfe   {#accessing-help}
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
@@ -52,7 +52,7 @@ Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zu
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-authoring/basic-handling.md#accessing-help).
 
-## Komponenten-Browser  {#components-browser}
+## Komponenten-Browser {#components-browser}
 
 Der Komponenten-Browser enthält alle Komponenten, die zur Verwendung auf der aktuellen Seite verfügbar sind. Sie können diese an die gewünschte Position ziehen und dann bearbeiten, um Inhalte hinzuzufügen.
 
@@ -169,7 +169,7 @@ Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den 
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Inhaltsstruktur  {#content-tree}
+## Inhaltsstruktur {#content-tree}
 
 Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwendeten Komponenten in einer hierarchischen Darstellung, sodass Sie direkt feststellen können, wie die Seite aufgebaut ist.
 
@@ -260,7 +260,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 * [Workflow starten](/help/sites-authoring/workflows-applying.md#starting-a-workflow-from-the-page-editor)
 * [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page)
 * [Seite veröffentlichen](/help/sites-authoring/publishing-pages.md#publishing-pages)
-* [Veröffentlichen einer Seite rückgängig machen](/help/sites-authoring/publishing-pages.md#unpublishing-pages)
+* [Veröffentlichen einer Seite aufheben](/help/sites-authoring/publishing-pages.md#unpublishing-pages)
 * [Als veröffentlicht anzeigen](/help/sites-authoring/editing-content.md#view-as-published)
 * [In Admin anzeigen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Hilfe](/help/sites-authoring/basic-handling.md#accessing-help)
@@ -268,13 +268,13 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen zur Verfügung:
 
 * [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist.
-* [Vorlage bearbeiten ](/help/sites-authoring/templates.md) , wenn die Seite auf einer  [bearbeitbaren Vorlage basiert](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [Vorlage bearbeiten](/help/sites-authoring/templates.md) wenn die Seite auf einer [bearbeitbare Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates)
 
-* [In klassischer ](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) Benutzeroberfläche öffnen, wenn diese Optionen von einem Administrator  [aktiviert wurden](/help/sites-administering/enable-classic-ui-editor.md)
+* [In klassischer Benutzeroberfläche öffnen](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) ob diese Optionen [von einem Administrator aktiviert](/help/sites-administering/enable-classic-ui-editor.md)
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
-## Seitenmodi  {#page-modes}
+## Seitenmodi {#page-modes}
 
 Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über die jeweils unterschiedliche Aktionen durchgeführt werden können:
 
@@ -309,7 +309,6 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >
 
 
-
 ## Pfadauswahl {#path-selection}
 
 Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](/help/sites-authoring/author-environment-tools.md#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) zur Verfügung.
@@ -326,7 +325,7 @@ Durch Klicken auf die Schaltfläche **Auswahl-Dialogfeld öffnen** auf dem Pfadf
 
 ![](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-### Pfad-Browser {#path-browser}
+### Pfad   Browser {#path-browser}
 
 Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) der Sites-Konsole aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
 
@@ -346,7 +345,7 @@ Darüber hinaus können Sie auch jederzeit das Suchfeld oben im Dialogfeld verwe
 
 ![chlimage_1-296](assets/chlimage_1-296.png)
 
-Klicken Sie im Suchfeld auf „X“, wenn Sie die Suche löschen möchten.
+Klicken Sie im Suchfeld auf X, wenn Sie die Suche löschen möchten.
 
 Sie können Ihre Suche auch eingrenzen, indem Sie die Filteroptionen einblenden und die Ergebnisse nach Pfad filtern.
 

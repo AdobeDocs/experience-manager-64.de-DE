@@ -23,7 +23,7 @@ AEM Form bietet die Möglichkeit, die Erstellung, Zusammenstellung, Verwaltung u
 
 Sie können die interaktive Kommunikationsfunktion verwenden, um Kommunikation in mehreren Formaten zu erstellen. Zum Beispiel Web und PDF. Sie können interaktive Kommunikation mit AEM Workflow integrieren, um die zusammengestellte Kommunikation auf dem Kanal ihrer Wahl zu verarbeiten und an Kunden zu liefern. Zum Beispiel Senden einer Nachricht an Endbenutzer per E-Mail.
 
-Wenn Sie ein Upgrade von einer früheren Version durchführen und bereits in Correspondence Management investiert haben, können Sie das [Kompatibilitätspaket](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) installieren, um das Correspondence Management weiterhin zu verwenden. Informationen zu den Unterschieden zwischen interaktiver Kommunikation und Korrespondenzverwaltung finden Sie unter [Übersicht über interaktive Kommunikation](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
+Wenn Sie ein Upgrade von einer früheren Version durchführen und bereits in Correspondence Management investiert haben, können Sie die [Kompatibilitätspaket](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) , um weiterhin Correspondence Management zu verwenden. Informationen zu den Unterschieden zwischen interaktiver Kommunikation und Korrespondenzverwaltung finden Sie unter [Übersicht über interaktive Kommunikation](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
 AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse. Interaktive Kommunikation ist nur eine der Möglichkeiten von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
@@ -92,14 +92,14 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads suchen]** verwenden, um die Ergebnisse zu filtern.
-1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem, wählen Sie **[!UICONTROL Endbenutzer-Lizenzbedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die **[!UICONTROL Suchdownloads]** Option zum Filtern der Ergebnisse.
+1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+   Sie können das Paket auch über den direkten Link herunterladen, der im Abschnitt [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) Artikel.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der Datei  [AEM-Installation-Directory]/crx-quickstart/logs/error.log angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der [AEM-Installationsverzeichnis]/crx-quickstart/logs/error.log und das Protokoll ist stabil.
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
@@ -113,9 +113,9 @@ AEM Forms verfügt über einige obligatorische und optionale Konfigurationen. Zu
 Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz folgende Schritte zum Boot-Delegate der Bibliotheken aus:
 
 1. Beenden Sie die zugrunde liegenden AEM-Instanz.
-1. Öffnen Sie die Datei [AEM Installationsverzeichnis]\crx-quickstart\conf\sling.properties zur Bearbeitung.
+1. Öffnen Sie die [AEM Installationsverzeichnis]\crx-quickstart\conf\sling.properties Datei zur Bearbeitung.
 
-   Wenn Sie [AEM Installationsordner]\crx-quickstart\bin\start.bat zum Starten von AEM verwendet haben, bearbeiten Sie die sling.properties-Datei unter [AEM_root]\crx-quickstart\.
+   Wenn Sie [AEM Installationsverzeichnis]\crx-quickstart\bin\start.bat , um AEM zu starten, und bearbeiten Sie dann die sling.properties-Datei unter [AEM_root]\crx-quickstart\.
 
 1. Fügen Sie die folgenden Eigenschaften der sling.properties-Datei hinzu:
 
@@ -139,7 +139,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. Die Standardeinstellung ist `https://[server]:[port]/system/console/configMgr`.
 1. Suchen und öffnen Sie die **Deserialisierungs-Firewallkonfiguration**.
-1. Fügen Sie das Paket **sun.util.calendar** zum Feld **Zulassungsliste** hinzu. Klicken Sie auf Speichern.
+1. Fügen Sie die **sun.util.calendar** -Paket zu **Zulassungsliste** -Feld. Klicken Sie auf Speichern.
 1. Wiederholen Sie Schritten 1-3 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}

@@ -1,8 +1,8 @@
 ---
 title: 'Benutzer hinzufügen und konfigurieren '
-seo-title: 'Benutzer hinzufügen und konfigurieren '
+seo-title: Adding and configuring users
 description: Mit den Benutzerverwaltungs-Einstellungen in der Administration Console können Sie Benutzer erstellen oder löschen sowie weitere Benutzereinstellungen konfigurieren.
-seo-description: Mit den Benutzerverwaltungs-Einstellungen in der Administration Console können Sie Benutzer erstellen oder löschen sowie weitere Benutzereinstellungen konfigurieren.
+seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
 uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
@@ -10,8 +10,8 @@ discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: c81dfb71-8901-49fd-b448-a7afdbae24fd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 73%
+source-wordcount: '1739'
+ht-degree: 72%
 
 ---
 
@@ -19,22 +19,21 @@ ht-degree: 73%
 
 Benutzer- und Gruppeninformationen werden in einem Speichersystem von Drittanbietern (z. B. einem LDAP-Ordner) verwaltet. User Management schreibt nicht in das Speichersystem von Drittanbietern. Statt dessen synchronisiert User Management die Benutzer- und Gruppeninformationen mit seiner Datenbank
 
-## Benutzer erstellen  {#create-a-user}
+## Benutzer erstellen {#create-a-user}
 
 Beim Erstellen von Benutzern können Sie diese Gruppen hinzufügen und ihnen Rollen zuweisen.
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]** und klicken Sie auf **[!UICONTROL Neuer Benutzer]**.
-.
-1. Geben Sie unter **[!UICONTROL Allgemeine Einstellungen]** die erforderlichen Informationen ein und klicken Sie dann auf **[!UICONTROL Weiter]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings).
-1. (Optional) Um den Benutzer einer Gruppe hinzuzufügen, klicken Sie auf **[!UICONTROL Gruppen suchen]** und führen Sie die folgenden Aufgaben aus:
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Benutzerverwaltung > Benutzer und Gruppen]** und klicken Sie auf **[!UICONTROL Neuer Benutzer]**. .
+1. under **[!UICONTROL Allgemeine Einstellungen]**, geben Sie die erforderlichen Informationen ein und klicken Sie dann auf **[!UICONTROL Nächste]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings).
+1. (Optional) Um den Benutzer einer Gruppe hinzuzufügen, klicken Sie auf **[!UICONTROL Gruppen suchen]** und führen diese Aufgaben aus:
 
-   * Geben Sie in das Feld **[!UICONTROL Find]** den gesamten oder einen Teil des Gruppennamen ein.
+   * Im **[!UICONTROL Suchen]** den Namen der Gruppe eingeben.
    * Wählen Sie die zu suchende Domäne aus, wählen Sie die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf **[!UICONTROL Suchen]**.
-   * (Optional) Um Gruppendetails anzuzeigen, wählen Sie den Gruppennamen aus und klicken Sie dann auf **[!UICONTROL OK]**, um zur Suchergebnisseite zurückzukehren.
+   * (Optional) Um Gruppendetails anzuzeigen, wählen Sie den Gruppennamen aus und klicken Sie auf **[!UICONTROL OK]** , um zur Suchergebnisseite zurückzukehren.
    * Aktivieren Sie das Kontrollkästchen für die Gruppe und klicken Sie auf **[!UICONTROL OK]**.
    * Klicken Sie auf **[!UICONTROL Weiter]**.
 
-1. (Optional) Um dem Benutzer Rollen zuzuweisen, klicken Sie auf **[!UICONTROL Rollen suchen]**, aktivieren Sie das Kontrollkästchen der zuzuweisenden Rollen und klicken Sie dann auf **[!UICONTROL OK]**.
+1. (Optional) Um dem Benutzer Rollen zuzuweisen, klicken Sie auf **[!UICONTROL Rollen suchen]** aktivieren Sie das Kontrollkästchen der zuzuweisenden Rollen und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie auf **[!UICONTROL Beenden]**.
 
    >[!NOTE]
@@ -83,7 +82,7 @@ Der Name darf nicht länger als 53 Zeichen sein. Ein kürzerer Name verhindert P
 
 **Benutzer-ID**: (Obligatorisch) Benutzer-ID, mit dem sich der Benutzer anmeldet. Bei der Benutzer-ID muss die Groß-/Kleinschreibung zwar nicht beachtet werden, aber sie muss innerhalb der Domäne eindeutig sein.
 
-Verwenden Sie bei Unternehmensdomänen als Benutzer-ID ein Nicht-DN-Attribut, da sich der definierte Name (DN) eines Benutzers ändern kann, wenn er in einen anderen Unternehmensbereich wechselt. Diese Einstellung hängt vom Ordnerserver ab. Der Wert ist `objectGUID` für Active Directory 2003, `nsuniqueID` für Sun™ One und `guid` für eDirectory.
+Verwenden Sie bei Unternehmensdomänen als Benutzer-ID ein Nicht-DN-Attribut, da sich der definierte Name (DN) eines Benutzers ändern kann, wenn er in einen anderen Unternehmensbereich wechselt. Diese Einstellung hängt vom Ordnerserver ab. Der Wert lautet `objectGUID` für Active Directory 2003, `nsuniqueID` für Sun™ One und `guid` für eDirectory.
 
 Stellen Sie sicher, dass die Benutzer-ID eindeutig ist. Verwenden Sie keine Benutzer-ID, die einem gelöschten Benutzer zugewiesen war.
 
@@ -91,13 +90,13 @@ AEM Forms kann nicht zwischen Benutzerkonten aus verschiedenen Domänen mit iden
 
 Wenn Sie eine SQL Server-Datenbank nutzen, darf die Benutzer-ID nicht mehr als 255 Zeichen lang sein.
 
-Bei Verwendung von MySQL darf die Benutzer-ID erweiterte Zeichen enthalten. Bei einem Vergleich zwischen zwei derartigen Zeichenfolgen, wie z. B. „abcde“ und „âbcdè“, werden sie aber als identisch bewertet. Wenn der Datenbank ein neuer Benutzer hinzugefügt wurde, wird beispielsweise beim Synchronisieren ein Vergleich ausgeführt, um festzustellen, ob ein Benutzer mit derselben Benutzer-ID in der Datenbank vorhanden ist. Wenn der Benutzer *abcde* bereits in der Datenbank vorhanden ist, wenn der neue Benutzer *âbcdè * hinzugefügt wird, kann der Vergleich nicht zwischen den beiden Namen unterscheiden. Es wird angenommen, dass der Benutzer bereits in der Datenbank vorhanden ist, weshalb der neue Benutzer ignoriert und nicht hinzugefügt wird.
+Bei Verwendung von MySQL darf die Benutzer-ID erweiterte Zeichen enthalten. Bei einem Vergleich zwischen zwei derartigen Zeichenfolgen, wie z. B. „abcde“ und „âbcdè“, werden sie aber als identisch bewertet. Wenn der Datenbank ein neuer Benutzer hinzugefügt wurde, wird beispielsweise beim Synchronisieren ein Vergleich ausgeführt, um festzustellen, ob ein Benutzer mit derselben Benutzer-ID in der Datenbank vorhanden ist. Wenn Benutzer *abcde* bereits in der Datenbank vorhanden ist, wenn der neue Benutzer *âbcdè * hinzugefügt wird, kann der Vergleich nicht zwischen den beiden Namen unterscheiden. Es wird angenommen, dass der Benutzer bereits in der Datenbank vorhanden ist, weshalb der neue Benutzer ignoriert und nicht hinzugefügt wird.
 
 Vermeiden Sie das Erstellen von Benutzernamen, die mit einem Nummernzeichen beginnen (#). Beim Suchen nach Aufgaben werden keine Ergebnisse für diese Benutzernamen ausgegeben. (Siehe [Mit Aufgaben arbeiten](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
 **Kennwort und Kennwort bestätigen**: Kennwort, das der Benutzer zum Anmelden verwendet. Es muss mindestens acht Zeichen lang sein. Für Benutzer in einer Hybriddomäne ist kein Kennwort erforderlich.
 
-## Details zu Benutzern anzeigen  {#view-details-about-a-user}
+## Details zu Benutzern anzeigen {#view-details-about-a-user}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
 1. Geben Sie Informationen zum Eingrenzen der Suche ein, wählen Sie in der Liste „in“ die Option „Benutzer“ aus und klicken Sie dann auf „Suchen“. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
@@ -107,60 +106,60 @@ Vermeiden Sie das Erstellen von Benutzernamen, die mit einem Nummernzeichen begi
    * Dem Benutzer zugewiesene Rollen
    * Gruppen, bei denen der Benutzer Mitglied ist
 
-## Kennwörter für lokale Benutzer ändern  {#change-the-password-for-a-local-user}
+## Kennwörter für lokale Benutzer ändern {#change-the-password-for-a-local-user}
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Benutzerverwaltung > Benutzer und Gruppen]**.
 1. Geben Sie Informationen an, um die Suche für einen bestimmten Benutzer einzuschränken, und klicken Sie auf **[!UICONTROL Suchen]**. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
 1. Klicken Sie auf den Namen des Benutzers und dann auf **[!UICONTROL Kennwort ändern]**.
-1. Geben Sie das neue Kennwort ein, bestätigen Sie es und klicken Sie auf **[!UICONTROL OK]**. Das Kennwort muss mindestens acht Zeichen lang sein.
+1. Geben Sie das neue Kennwort ein und bestätigen Sie es, und klicken Sie auf **[!UICONTROL OK]**. Das Kennwort muss mindestens acht Zeichen lang sein.
 
-## Eigenschaften eines Benutzers bearbeiten  {#edit-a-user-s-properties}
+## Eigenschaften eines Benutzers bearbeiten {#edit-a-user-s-properties}
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Benutzerverwaltung > Benutzer und Gruppen]**.
 1. Führen Sie zum Suchen des zu bearbeitenden Benutzers die folgenden Schritte aus:
 
-   * Geben Sie im Feld **[!UICONTROL Find]** Ihre Suchkriterien ein.
-   * Wählen Sie in der Liste **[!UICONTROL Verwenden von]** **[!UICONTROL Name]**, **[!UICONTROL E-Mail]** oder **[!UICONTROL Benutzer-ID]**.
-   * Wählen Sie in der Liste **** **[!UICONTROL Benutzer]** aus.
+   * Im **[!UICONTROL Suchen]** eingeben.
+   * Im **[!UICONTROL Verwenden]** Liste auswählen **[!UICONTROL Name]**, **[!UICONTROL Email]** oder **[!UICONTROL Benutzer-ID]**.
+   * Im **[!UICONTROL In Liste]** auswählen **[!UICONTROL Benutzer]**.
    * Wählen Sie die Domäne aus, wählen Sie die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf **[!UICONTROL Suchen]**.
 
 1. Klicken Sie auf den zu bearbeitenden Benutzer.
-1. Bearbeiten Sie für einen Benutzer, der Teil einer lokalen oder Hybriddomäne ist, auf der Registerkarte **[!UICONTROL Detail]** die **[!UICONTROL allgemeinen Einstellungen]** und **[!UICONTROL Anmeldeeinstellungen]** und klicken Sie auf **[!UICONTROL Speichern]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings). Die allgemeinen und Anmeldeeinstellungen von Benutzern, die zu einer Unternehmensdomäne gehören, können nicht bearbeitet werden.
-1. Um die Gruppeneinstellungen für den Benutzer zu bearbeiten, klicken Sie auf den Tab **[!UICONTROL Gruppenmitgliedschaft]** und führen Sie die folgenden Aufgaben aus:
+1. Für einen Benutzer, der Teil einer lokalen oder Hybriddomäne ist, wird im **[!UICONTROL Detail]** bearbeiten Sie die **[!UICONTROL Allgemeine Einstellungen]** und **[!UICONTROL Anmeldeeinstellungen]** und klicken Sie auf **[!UICONTROL Speichern]**. Informationen zu diesen Einstellungen finden Sie unter [Benutzereinstellungen](adding-configuring-users.md#user-settings). Die allgemeinen und Anmeldeeinstellungen von Benutzern, die zu einer Unternehmensdomäne gehören, können nicht bearbeitet werden.
+1. Um die Gruppeneinstellungen für den Benutzer zu bearbeiten, klicken Sie auf das **[!UICONTROL Gruppenmitgliedschaft]** und führen Sie die folgenden Aufgaben aus:
 
-   * Klicken Sie auf **[!UICONTROL Gruppe suchen]** und füllen Sie die Suchinformationen aus.
-   * Um den Benutzer einer neuen Gruppe hinzuzufügen, aktivieren Sie das Kontrollkästchen für die Gruppe, klicken Sie auf **[!UICONTROL OK]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
+   * Klicken **[!UICONTROL Gruppe suchen]** und füllen Sie die Suchinformationen aus.
+   * Um den Benutzer einer neuen Gruppe hinzuzufügen, aktivieren Sie das Kontrollkästchen für die Gruppe und klicken Sie auf **[!UICONTROL OK]** und klicken Sie anschließend auf **[!UICONTROL Speichern]**.
 
    >[!NOTE]
    >
    >Lokale Benutzer können keinen Ordnergruppen hinzugefügt werden. Ordnerbenutzer können jedoch lokalen Gruppen hinzugefügt werden.
 
-   * Um den Benutzer aus einer Gruppe zu entfernen, aktivieren Sie das Kontrollkästchen für die Gruppe, klicken Sie auf **[!UICONTROL Löschen]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
+   * Um den Benutzer aus einer Gruppe zu entfernen, aktivieren Sie das Kontrollkästchen für die Gruppe und klicken Sie auf **[!UICONTROL Löschen]** und klicken Sie anschließend auf **[!UICONTROL Speichern]**.
 
 
-1. Um die Benutzerrollen zu bearbeiten, klicken Sie auf die Registerkarte **[!UICONTROL Rollenzuweisungen]** und führen die folgenden Aufgaben aus:
+1. Um die Benutzerrollen zu bearbeiten, klicken Sie auf die **[!UICONTROL Rollenzuweisungen]** und führen Sie die folgenden Aufgaben aus:
 
    * Um eine Liste der Rollen anzuzeigen, klicken Sie auf **[!UICONTROL Rollen suchen]**.
-   * Um eine Rolle hinzuzufügen, aktivieren Sie das Kontrollkästchen für die Rolle, klicken Sie auf **[!UICONTROL OK]** und dann auf **[!UICONTROL Speichern]**.
-   * Um eine Rolle zu entfernen, aktivieren Sie das Kontrollkästchen für die Rolle, klicken Sie auf **[!UICONTROL Zuweisung aufheben]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
+   * Um eine Rolle hinzuzufügen, aktivieren Sie das Kontrollkästchen für die Rolle und klicken Sie auf **[!UICONTROL OK]** und klicken Sie anschließend auf **[!UICONTROL Speichern]**.
+   * Um eine Rolle zu entfernen, aktivieren Sie das Kontrollkästchen für die Rolle und klicken Sie auf **[!UICONTROL Zuweisung aufheben]** und klicken Sie anschließend auf **[!UICONTROL Speichern]**.
 
 ## Benutzer löschen {#delete-a-user}
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > User Management > Benutzer und Gruppen]**.
+1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Benutzerverwaltung > Benutzer und Gruppen]**.
 1. Führen Sie zum Suchen des zu löschenden Benutzers die folgenden Schritte aus:
 
-   * Geben Sie im Feld **[!UICONTROL Find]** Ihre Suchkriterien ein.
-   * Wählen Sie in der Liste **[!UICONTROL Verwenden von]** **[!UICONTROL Name]**, **[!UICONTROL E-Mail]** oder **[!UICONTROL Benutzer-ID]**.
-   * Wählen Sie in der Liste **** **[!UICONTROL Benutzer]** aus.
+   * Im **[!UICONTROL Suchen]** eingeben.
+   * Im **[!UICONTROL Verwenden]** Liste auswählen **[!UICONTROL Name]**, **[!UICONTROL Email]** oder **[!UICONTROL Benutzer-ID]**.
+   * Im **[!UICONTROL In Liste]** auswählen **[!UICONTROL Benutzer]**.
    * Wählen Sie die Domäne aus, wählen Sie die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf **[!UICONTROL Suchen]**.
 
-1. Aktivieren Sie das Kontrollkästchen des Benutzers, klicken Sie auf **[!UICONTROL Löschen]** und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Aktivieren Sie das Kontrollkästchen für den Benutzer und klicken Sie auf **[!UICONTROL Löschen]** und klicken Sie anschließend auf **[!UICONTROL OK]**.
 
 >[!NOTE]
 >
 >Mit AEM Forms on JEE können Benutzer des AEM-Forms-Add-Ons, die auf OSGi ausgeführt werden, als AEM-Benutzer erkannt werden. Dies ist in Fällen erforderlich, in denen eine einmalige Anmeldung für AEM Forms on JEE und AEM Forms-Add-On auf OSGi erforderlich ist (z. B. HTML Workspace). Der oben genannte Löschvorgang entfernt einen Benutzer nur von AEM Forms on JEE. Der Benutzer wird nicht aus dem AEM Forms Add-On auf der OSGi-Umgebung gelöscht. Aber jeder Anmeldeversuch nach dem Löschen des Benutzers (ein Anmeldeversuch bei AEM Forms Add-On-JEE-Server oder AEM Forms-Add-On auf einer OSGi-Umgebung), wird verweigert.
 
-## Benutzerdefinierten Anmeldungsfehlerhandler erstellen  {#create-custom-login-error-handler}
+## Benutzerdefinierten Anmeldungsfehlerhandler erstellen {#create-custom-login-error-handler}
 
 Wenn ein Benutzer ohne die erforderlichen - und CQ-Berechtigungen versucht, sich bei den folgenden in CQ eingebetteten AEM Forms-Anwendungen anzumelden, wird er auf die standardmäßige CQ-Seite mit dem Fehler 404 und dem Fehlerprotokoll weitergeleitet:
 

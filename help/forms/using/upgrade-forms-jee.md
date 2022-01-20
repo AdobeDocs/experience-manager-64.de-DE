@@ -1,8 +1,8 @@
 ---
 title: Aktualisierung auf AEM 6.4 Forms
-seo-title: Aktualisierung auf AEM 6.4 Forms
+seo-title: Upgrade to AEM 6.4 Forms
 description: 'Sie können direkt von AEM 6.1 Forms, AEM 6.2 Forms und LiveCycle ES4 SP1 auf AEM 6.3 Forms aktualisieren. '
-seo-description: 'Sie können direkt von AEM 6.1 Forms, AEM 6.2 Forms und LiveCycle ES4 SP1 auf AEM 6.3 Forms aktualisieren. '
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1680'
 ht-degree: 80%
 
 ---
@@ -27,8 +27,8 @@ Verwenden Sie einen der folgenden Aktualisierungspfade wie für Ihre Umgebung be
 Führen Sie folgendes Verfahren durch um von der vorhandenen AEM 6.2 Forms on JEE oder AEM 6.3 Forms on JEE auf AEM 6.4 Forms on JEE zu aktualisieren:
 
 1. Laden Sie das Installationsprogramm für AEM 6.4 Forms on JEE von der [Adobe Licensing-Website (LWS)](https://licensing.adobe.com/) herunter. Sie benötigen einen gültigen Vertrag für Wartung und Support, um das Installationsprogramm herunterzuladen.
-1. Informationen zu den Prüfungen, die durchgeführt werden müssen, um eine erfolgreiche Aktualisierung sicherzustellen, finden Sie unter [Checkliste für die Aktualisierung und Planung](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_63).
-1. Siehe [Vorbereiten der Aktualisierung auf AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_63) , um zu erfahren, wie Sie die Aufgaben durchführen, die sicherstellen, dass die Aktualisierung ordnungsgemäß und mit minimalem Serverausfall ausgeführt wird.
+1. Siehe [Checkliste für die Aktualisierung und Planung](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_63) , um mehr über die Prüfungen zu erfahren, die durchgeführt werden müssen, um eine erfolgreiche Aktualisierung sicherzustellen.
+1. Siehe [Vorbereiten der Aktualisierung auf AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_63) , um zu erfahren, wie Sie die Aufgaben durchführen, die sicherstellen, dass das Upgrade ordnungsgemäß und mit minimalem Serverausfall ausgeführt wird.
 1. Wählen Sie je nach vorhandener Umgebung und Anwendungsserver eines der folgenden Dokumente und befolgen Sie die Anweisungen.
 
    * [Upgrade von AEM 6.2 oder AEM 6.3 Forms auf AEM 6.4 Forms for JBoss ](assets/upgrade-jboss.pdf)
@@ -77,7 +77,7 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
 
       >[!NOTE]
       >
-      >Wählen Sie im Bildschirm &quot;Auswahl der Aktualisierungsaufgaben&quot;die Option **[!UICONTROL Von Adobe Experience Manager Forms 6.2.0]** aktualisieren . Mit der Option **[!UICONTROL Upgrade von Adobe Experience Manager Forms 6.2.0]** kann der Konfigurationsmanager von LiveCycle ES4 SP1 auf AEM 6.4 Forms aktualisieren.
+      >Wählen Sie im Bildschirm &quot;Auswahl der Aktualisierungsaufgaben&quot;die **[!UICONTROL Upgrade von Adobe Experience Manager Forms 6.2.0]** -Option. Die **[!UICONTROL Upgrade von Adobe Experience Manager Forms 6.2.0]** ermöglicht dem Konfigurationsmanager ein Upgrade von LiveCycle ES4 SP1 auf AEM 6.4 Forms.
 
    1. (Nicht erforderlich für AEM Forms-Dokumentsicherheitsmodul) Importieren Sie Inhalte in das Content Repository (CRX-Repository) in den AEM 6.4 Forms-Server.
 
@@ -137,7 +137,7 @@ Im Folgenden finden Sie eine Übersicht über das Verfahren zum Aktualisieren ei
 
       >[!NOTE]
       >
-      >Wählen Sie im Bildschirm &quot;Auswahl der Aktualisierungsaufgaben&quot;die Option **[!UICONTROL Von Adobe Experience Manager Forms 6.2.0]** aktualisieren . Mit der Option **[!UICONTROL Upgrade von Adobe Experience Manager Forms 6.2.0]** kann der Konfigurationsmanager von LiveCycle ES3 auf AEM 6.4 Forms aktualisieren.
+      >Wählen Sie im Bildschirm &quot;Auswahl der Aktualisierungsaufgaben&quot;die **[!UICONTROL Upgrade von Adobe Experience Manager Forms 6.2.0]** -Option. Die **[!UICONTROL Upgrade von Adobe Experience Manager Forms 6.2.0]** ermöglicht es dem Konfigurationsmanager, von LiveCycle ES3 auf AEM 6.4 Forms zu aktualisieren.
 
    1. (Für das AEM Forms Document Security-Modul nicht erforderlich) Aktualisieren und importieren Sie das CRX-Repository auf den AEM 6.4 Forms-Server.
 

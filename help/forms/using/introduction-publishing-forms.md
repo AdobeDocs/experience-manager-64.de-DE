@@ -1,8 +1,8 @@
 ---
 title: Einführung in das Veröffentlichen von Formularen in einem Portal
-seo-title: Einführung in das Veröffentlichen von Formularen in einem Portal
+seo-title: Introduction to publishing forms on a portal
 description: AEM Forms bietet Komponenten, mit denen Sie Ihr Formularportal erstellen können. In diesem Artikel werden die verfügbaren Forms Portal-Komponenten vorgestellt.
-seo-description: AEM Forms bietet Komponenten, mit denen Sie Ihr Formularportal erstellen können. In diesem Artikel werden die verfügbaren Forms Portal-Komponenten vorgestellt.
+seo-description: AEM Forms provides with components that you can use to build your forms portal. This articles introduces you to the available forms portal components.
 uuid: 96aa4fe2-a111-4675-a33c-7dee8b82cbc2
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,13 @@ topic-tags: publish
 discoiquuid: 44871fe1-ddc9-492c-8784-5df3ca392f9b
 source-git-commit: da7691a64cebd8c279ec72eca2a41c468a79f9fb
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 61%
+source-wordcount: '1055'
+ht-degree: 60%
 
 ---
 
 
-# Einführung in das Veröffentlichen von Formularen in einem Portal  {#introduction-to-publishing-forms-on-a-portal}
+# Einführung in das Veröffentlichen von Formularen in einem Portal {#introduction-to-publishing-forms-on-a-portal}
 
 ## Überblick über die AEM Forms Portal-Komponenten {#aem-forms-portal-components-overview}
 
@@ -41,7 +41,7 @@ Die Formularportalkomponenten ermöglichen es Ihnen, die folgende Funktion hinzu
 * Erstellen von Links zu Formularen.
 * Auflisten von n und Übermittlungen für das vom Benutzer erstellte adaptive Formular.
 
-## Verfügbare AEM Forms Portal-Komponenten  {#available-aem-forms-portal-components}
+## Verfügbare AEM Forms Portal-Komponenten {#available-aem-forms-portal-components}
 
 AEM Forms bietet standardmäßig die folgenden Portalkomponenten, die in die Komponentengruppen **** und **Dokumentdienst-Eigenschaften** unterteilt sind:
 
@@ -61,20 +61,20 @@ Mithilfe der Komponente „Link“ können Sie einen Link zu einem Formular an j
 
 Mit dem Forms-Portal können Sie Formulare aus dem Formular-Repository auf Ihrer Portalseite auflisten. Außerdem können Sie mit der Komponente Suchkriterien angeben, damit die Portalbenutzer die gesamte Liste der Formulare durchsuchen können. Sie können die Komponente &quot;Drafts &amp; Submissions&quot;auch verwenden, um Formulare anzuzeigen, die als Entwurf zum Ausfüllen späterer und gesendeter Formulare gespeichert wurden. Sie müssen bestimmte Vorgänge ausführen, bevor diese Funktionen auf einer Sites-Seite verfügbar werden. Führen Sie die Schritte in der angegebenen Reihenfolge aus, um die Komponenten und die entsprechenden Funktionen auf einer Siteseite verfügbar zu machen:
 
-1. **Aktivieren Sie Forms Portal-Komponenten**: Standardmäßig sind Forms Portal-Komponenten nicht verfügbar. [Aktivieren Sie die Komponenten in AEM ](/help/forms/using/enabling-forms-portal-components.md) Sidekickers für eine AEM Sites-Seite.
-1. **Formulare auf einer Seite auflisten (Forms Portal-Seite erstellen):**  Sie können Formulare auf AEM Sites- und Nicht-AEM-Seiten auflisten. Die Liste enthält Formulare, die in der Veröffentlichungsinstanz verfügbar sind. Ein Benutzer kann Formulare öffnen und diese ausfüllen. Wenn ein Benutzer ein Formular öffnet, wird eine neue Instanz des Formulars erstellt:
+1. **Aktivieren von Forms Portal-Komponenten**: Standardmäßig sind Forms Portal-Komponenten nicht verfügbar. [Komponenten über AEM Sidekick aktivieren](/help/forms/using/enabling-forms-portal-components.md) für eine AEM Sites-Seite.
+1. **Auflisten von Formularen auf einer Seite (Erstellen der Forms Portal-Seite):** Sie können Formulare auf AEM Sites- und Nicht-AEM-Seiten auflisten. Die Liste enthält Formulare, die in der Veröffentlichungsinstanz verfügbar sind. Ein Benutzer kann Formulare öffnen und diese ausfüllen. Wenn ein Benutzer ein Formular öffnet, wird eine neue Instanz des Formulars erstellt:
 
-   1. **Auflisten von Formularen auf einer AEM Sites-Seite**: Fügen Sie die  **[Komponente &quot;Search &amp;](/help/forms/using/creating-form-portal-page.md)** Lister&quot;zur Seite hinzu und konfigurieren Sie den  **[Listenbereich](/help/forms/using/creating-form-portal-page.md#p-list-pane-p)** darin, um Formulare auf einer Seite aufzulisten. Fügen Sie die Komponente **[Suchbereich](/help/forms/using/creating-form-portal-page.md#search-pane)** zur Komponente **Search &amp; Lister** hinzu und konfigurieren Sie sie, um der Seite Suchfunktionen hinzuzufügen. Die Seite mit der Forms Portal-Komponente wird als [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md) bezeichnet.
-   1. **Auflisten von Formularen auf einer Nicht-AEM Sites-Seite:** Verwenden Sie die  [Forms Portal-Such-](/help/forms/using/listing-forms-webpage-using-apis.md) APIs, um Formulare auf Nicht-AEM Sites-Seiten abzufragen, abzurufen und aufzulisten.
+   1. **Auflisten von Formularen auf einer AEM Sites-Seite**: Fügen Sie die **[Search &amp; Lister](/help/forms/using/creating-form-portal-page.md)** -Komponente auf der Seite hinzufügen und die **[Listenbereich](/help/forms/using/creating-form-portal-page.md#p-list-pane-p)** darin, um Formulare auf einer Seite aufzulisten. Hinzufügen und Konfigurieren der **[Suchbereich](/help/forms/using/creating-form-portal-page.md#search-pane)** -Komponente **Search &amp; Lister** -Komponente auch, um der Seite Suchfunktionen hinzuzufügen. Die Seite mit der Forms Portal-Komponente wird als [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md).
+   1. **Auflisten von Formularen auf einer Nicht-AEM Sites-Seite:** Verwenden Sie die [Forms Portal-Such-APIs](/help/forms/using/listing-forms-webpage-using-apis.md) , um Formulare auf Nicht-AEM Sites-Seiten abzufragen, abzurufen und aufzulisten.
 
 1. **Auflisten von Entwurfs- und gesendeten Formularen auf einer Forms Portal-Seite**: Fügen Sie die Komponente Drafts &amp; Submissions zur Forms Portal-Seite hinzu und konfigurieren Sie sie. Mit der Komponente „“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden.
 
-   Damit ein gesendetes adaptives Formular auf der Registerkarte für Übermittlungen angezeigt werden kann, setzen Sie die **Übermittlungsaktion** auf **[Forms Portal-Übermittlungsaktion](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/configuring-submit-actions.html).** Alternativ können Sie die Option &quot;Forms Portal Submit&quot;aktivieren. Jedes Mal, wenn ein Benutzer das Formular sendet, wird das Formular zur Registerkarte &quot;Übermittlungen&quot;hinzugefügt.
+   Damit ein gesendetes adaptives Formular auf der Registerkarte &quot;Übermittlungen&quot;angezeigt werden kann, legen Sie die **Übermittlungsaktion** nach **[Übermittlungsaktion für Forms Portal](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/configuring-submit-actions.html).** Alternativ können Sie die Option &quot;Forms Portal Submit&quot;aktivieren. Jedes Mal, wenn ein Benutzer das Formular sendet, wird das Formular zur Registerkarte &quot;Übermittlungen&quot;hinzugefügt.
 
-1. **Konfigurieren Sie den Speicher für die Entwurfs- und gesendeten Formulardaten:** Standardmäßig werden Entwurfs- und Sendedaten im AEM-Repository gespeichert. In einer Produktionsumgebung wird empfohlen, keine Entwurfs- oder gesendete Formulardaten nicht im AEM-Repository zu speichern. [Konfigurieren Sie die Forms Portal-Komponente, um Daten an einem sicheren Speicherort](/help/forms/using/draft-submission-component.md#customizing-the-storage) zu speichern.
-1. **(Optional) Anpassen der Forms Portal-Komponenten:**  [Passen Sie Ihre Forms Portal-](/help/forms/using/customizing-templates-forms-portal-components.md) Seitenvorlagen an, um den Komponenten ein charakteristisches Erscheinungsbild zu verleihen.
-1. **(Optional) Fügen Sie benutzerdefinierte Metadaten zu Formularen hinzu:** [Fügen Sie benutzerdefinierte Metadaten zu ](/help/forms/using/customizing-templates-forms-portal-components.md) Formularen hinzu, um die Liste zu verbessern und das Sucherlebnis zu verbessern.
-1. **Veröffentlichen Sie die Forms Portal-Seite:**  Ihre Forms Portal-Seite ist jetzt bereit. Veröffentlichen Sie die Seite.
+1. **Konfigurieren Sie den Speicher für die Entwurfs- und gesendeten Formulardaten:** Standardmäßig werden Entwurfs- und Sendedaten im AEM Repository gespeichert. In einer Produktionsumgebung wird empfohlen, keine Entwurfs- oder gesendete Formulardaten nicht im AEM-Repository zu speichern. [Konfigurieren der Forms Portal-Komponente zum Speichern von Daten an einem sicheren Speicherort](/help/forms/using/draft-submission-component.md#customizing-the-storage).
+1. **(Optional) Anpassen der Forms Portal-Komponenten:**  [Anpassen der Seitenvorlagen für Forms Portal](/help/forms/using/customizing-templates-forms-portal-components.md) um den Komponenten ein charakteristisches Erscheinungsbild zu verleihen.
+1. **(Optional) Fügen Sie benutzerdefinierte Metadaten zu Formularen hinzu:** [Hinzufügen benutzerdefinierter Metadaten zu Formularen](/help/forms/using/customizing-templates-forms-portal-components.md) , um die Auflistung und das Sucherlebnis zu verbessern.
+1. **Veröffentlichen Sie die Forms Portal-Seite:** Ihre Forms Portal-Seite ist jetzt bereit. Veröffentlichen Sie die Seite.
 
 ## Verwandte Artikel {#related-articles}
 

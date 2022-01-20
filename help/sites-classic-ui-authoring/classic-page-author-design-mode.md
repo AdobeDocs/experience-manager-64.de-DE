@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren von Komponenten im Designmodus
-seo-title: Konfigurieren von Komponenten im Designmodus
+seo-title: Configuring Components in Design Mode
 description: 'Wenn die AEM-Instanz direkt installiert wird, steht im Sidekick umgehend eine Auswahl von Komponenten zur Verfügung. Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem Designmodus können Sie diese Komponenten aktivieren/deaktivieren. '
-seo-description: 'Wenn die AEM-Instanz direkt installiert wird, steht im Sidekick umgehend eine Auswahl von Komponenten zur Verfügung. Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem Designmodus können Sie diese Komponenten aktivieren/deaktivieren. '
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 page-status-flag: de-activated
 uuid: 57249965-3a30-49ce-9fb0-864c5daaa262
 contentOwner: User
@@ -13,7 +13,7 @@ discoiquuid: 93f98f7b-7ab8-4d9c-b179-dc99b80ffc91
 exl-id: af6c383b-f8fd-442c-8fc5-3cdd40657c6a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '500'
 ht-degree: 94%
 
 ---
@@ -49,7 +49,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Klicken Sie im Absatzsystem (**Design von par**) auf **Bearbeiten**.
+1. Klicken **Bearbeiten** über das Absatzsystem (**Gestaltung von par**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -63,7 +63,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Konfigurieren des Designs von Komponenten  {#configuring-the-design-of-a-component}
+## Konfigurieren des Designs von Komponenten {#configuring-the-design-of-a-component}
 
 Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigurieren. Jede Komponente verfügt über eigene Parameter. Im folgenden Beispiel wird die **Bildkomponente** gezeigt:
 
@@ -73,7 +73,7 @@ Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigu
 
 1. Sie können das Design von Komponenten konfigurieren.
 
-   Wenn Sie beispielsweise auf **Bearbeiten** in der Bildkomponente (**Bilddesign**) klicken, können Sie die komponentenspezifischen Parameter konfigurieren:
+   Wenn Sie beispielsweise auf **Bearbeiten** auf der Bildkomponente (**Bilddesign**) können Sie komponentenspezifische Parameter konfigurieren:
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 

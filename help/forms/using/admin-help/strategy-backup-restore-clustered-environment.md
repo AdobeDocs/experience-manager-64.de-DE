@@ -1,8 +1,8 @@
 ---
 title: Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung
-seo-title: Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung
+seo-title: Strategy for backup and restore in a clustered environment
 description: Wenn in Ihrer AEM Forms-Implementierung zusätzliche benutzerdefinierte Daten in einer anderen Datenbank gespeichert werden, müssen Sie eine Strategie zum Sichern dieser Daten implementieren und sicherstellen, dass diese mit den AEM Forms-Daten synchronisiert bleiben.
-seo-description: Wenn in Ihrer AEM Forms-Implementierung zusätzliche benutzerdefinierte Daten in einer anderen Datenbank gespeichert werden, müssen Sie eine Strategie zum Sichern dieser Daten implementieren und sicherstellen, dass diese mit den AEM Forms-Daten synchronisiert bleiben.
+seo-description: If your AEM forms implementation stores additional custom data in a different database, you must implement a strategy to back up this data ensuring that it remains in sync with the AEM forms data.
 uuid: c29b989c-30ed-4a8e-bab8-9b7746291a33
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 exl-id: 432221c9-4b78-4d0d-bf22-b56810bf4256
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 73%
+source-wordcount: '1476'
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ Sie müssen die folgenden Teile des AEM Forms-Systems sichern, um es bei einem F
 >
 >Sie müssen alle weiteren Daten sichern, die von Ihrer AEM Forms-Konfiguration verwendet werden, beispielsweise Kundenschriftarten, Connectors-Daten usw.
 
-## Sichern einer Clusterumgebung  {#back-up-a-clustered-environment}
+## Sichern einer Clusterumgebung {#back-up-a-clustered-environment}
 
 Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Clusterumgebung zu sichern:
 
@@ -42,7 +42,7 @@ Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Cluster
 * Onlinesicherung ohne Ausfallzeiten aber mit verzögerter Antwort
 * Sichern der Bootstrap-Eigenschaftendatei
 
-### Offlinesicherung mit Ausfallzeiten  {#offline-backup-with-downtime}
+### Offlinesicherung mit Ausfallzeiten {#offline-backup-with-downtime}
 
 1. Deaktivieren Sie den gesamten Cluster und damit zusammenhängende Dienste. (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Sichern Sie von jedem Knoten Datenbank, GDS und Connectors. (siehe [Zu sichernde und wiederherzustellende Dateien](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
@@ -57,7 +57,7 @@ Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Cluster
 1. Sichern Sie alle weiteren Daten, z. B. Kundenschriftarten.
 1. Starten Sie den Cluster neu.
 
-### Offlinesicherung ohne Ausfallzeiten  {#offline-backup-with-no-downtime}
+### Offlinesicherung ohne Ausfallzeiten {#offline-backup-with-no-downtime}
 
 1. Starten Sie den kontinuierlichen Sicherungsmodus. (siehe [In den Sicherungsmodus wechseln](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
@@ -76,7 +76,7 @@ Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Cluster
 1. Sichern Sie alle weiteren Daten, z. B. Kundenschriftarten.
 1. Starten Sie den Cluster neu.
 
-### Onlinesicherung ohne Ausfallzeiten aber mit verzögerter Antwort  {#online-backup-with-no-downtime-but-delay-in-response}
+### Onlinesicherung ohne Ausfallzeiten aber mit verzögerter Antwort {#online-backup-with-no-downtime-but-delay-in-response}
 
 1. Starten Sie den kontinuierlichen Sicherungsmodus. (siehe [In den Sicherungsmodus wechseln](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
@@ -93,7 +93,7 @@ Dieses Thema behandelte die folgenden Vorgehensweisen, um eine AEM Forms-Cluster
 1. Sichern Sie alle weiteren Daten, z. B. Kundenschriftarten.
 1. Starten Sie den Cluster neu.
 
-### Sichern der Bootstrap-Eigenschaftendatei  {#back-up-the-bootstrap-properties-file}
+### Sichern der Bootstrap-Eigenschaftendatei {#back-up-the-bootstrap-properties-file}
 
 Wenn wir einen AEM-Cluster erstellen, wird eine Eigenschaftendatei für alle sekundären Knoten auf dem Anwendungsserver erstellt. Es wird empfohlen, die Bootstrap-Eigenschaftendatei zu sichern. Sie finden die Datei im folgenden Verzeichnis auf Ihrem Anwendungsserver:
 
@@ -111,7 +111,7 @@ Für die Wiederherstellung eines einzelnen Knotens, müssen Sie nur den Knoten a
 
 Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, ausfällt, müssen Sie die folgenden Schritte ausführen. Die Wiederherstellung hängt von der verwendeten Sicherungsmethode ab.
 
-### Wiederherstellung eines einzelnen Knotens  {#restoring-a-single-node}
+### Wiederherstellung eines einzelnen Knotens {#restoring-a-single-node}
 
 1. Schalten Sie den beschädigten Knoten ab.
 
@@ -179,13 +179,13 @@ Falls der gesamte Cluster aufgrund eines Fehler, wie dem Ausfall der Datenbank, 
 
 Der Veröffentlichungsknoten weist in einer Clusterumgebung keine primäre sekundäre Beziehung auf. Sie können einen beliebigen Veröffentlichungsknoten sichern, indem Sie diese Anweisungen befolgen: [Sicherung und Wiederherstellung](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
-### Wiederherstellen eines einzelnen Veröffentlichungsknotens  {#recover-a-single-publisher-node}
+### Wiederherstellen eines einzelnen Veröffentlichungsknotens {#recover-a-single-publisher-node}
 
 1. Beenden Sie den Knoten, der wiederhergestellt werden muss, und vermeiden Sie jede Veröffentlichungsaktivität, bis der Knoten wieder bereit ist.
-1. Stellen Sie den Veröffentlichungsknoten mit [Wiederherstellen des Backups] (https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup) wieder her.
+1. Wiederherstellen des Veröffentlichungsknotens mithilfe von [Wiederherstellen des Backups](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup).
 
 ### Wiederherstellen eines Clusters {#recover-a-cluster}
 
 1. Beenden Sie den Cluster.
-1. Stellen Sie den Veröffentlichungsknoten mit [Wiederherstellen des Backups] (https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup) wieder her.
+1. Wiederherstellen des Veröffentlichungsknotens mithilfe von [Wiederherstellen des Backups](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup).
 1. Starten Sie den primären Knoten, gefolgt vom sekundären Knoten des Autoren-Clusters.

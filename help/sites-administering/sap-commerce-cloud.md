@@ -1,8 +1,8 @@
 ---
 title: SAP Commerce Cloud
-seo-title: SAP-Commerce Cloud
+seo-title: SAP Commerce Cloud
 description: Hier erfahren Sie, wie Sie AEM mit SAP Commerce Cloud nutzen.
-seo-description: Hier erfahren Sie, wie Sie AEM mit SAP Commerce Cloud nutzen.
+seo-description: Learn how to use AEM with SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -14,12 +14,12 @@ feature: Commerce Integration Framework
 exl-id: 27537d62-f032-4fb5-b2cf-003579b61ea8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1714'
 ht-degree: 89%
 
 ---
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# SAP-Commerce Cloud{#sap-commerce-cloud}
 
 Nach der Installation können Sie Ihre Instanz konfigurieren:
 
@@ -31,7 +31,7 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 1. [Konfigurieren Sie das Katalog-Importtool](#configure-the-catalog-importer).
 1. [Importieren Sie den Katalog mit dem Importtool](#catalog-import) zu einem bestimmten Ort in AEM.
 
-## Konfigurieren der Facettensuche für Geometrixx Outdoors  {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Konfigurieren der Facettensuche für Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -56,9 +56,9 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 
    >[!NOTE]
    >
-   >Verwenden Sie das Kontextmenü (in der Regel Rechtsklick), um `Create Solr sort` auszuwählen.
+   >Verwenden Sie das Kontextmenü (in der Regel Rechtsklick), um `Create Solr sort`.
    >
-   >Öffnen Sie für Hybris 5.0.0 die Registerkarte `Indexed Types`, doppelklicken Sie auf `ClothesVariantProduct` und dann auf die Registerkarte `SOLR Sort`.
+   >Öffnen Sie für Hybris 5.0.0 den `Indexed Types` Registerkarte, doppelklicken Sie auf `ClothesVariantProduct`, dann die Registerkarte `SOLR Sort`.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -102,8 +102,8 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
 1. **Speichern** Sie die Änderungen.
 1. Öffnen Sie **System**, **Facettensuche** und dann den **Indexervorgangsassistenten**. Starten Sie einen Cronjob:
 
-   * **Indexervorgang**:  `full`
-   * **Solr-Konfiguration**:  `Sample Solr Config for Clothes`
+   * **Indexvorgang**: `full`
+   * **Solr-Konfiguration**: `Sample Solr Config for Clothes`
 
 ## Konfigurieren der Katalogversion {#configure-the-catalog-version}
 
@@ -120,7 +120,7 @@ Sie können die importierte **Katalogversion** (`hybris.catalog.version`) für d
 
 Die Protokollausgabe bietet Feedback zu den erstellten Seiten und Komponenten und zeigt potenzielle Fehler auf.
 
-## Konfigurieren der Importstruktur  {#configure-the-import-structure}
+## Konfigurieren der Importstruktur {#configure-the-import-structure}
 
 Die folgende Auflistung zeigt eine Beispielstruktur (von Assets, Seiten und Komponenten), die standardmäßig erstellt wird:
 
@@ -170,7 +170,7 @@ Die beim Importieren zu erstellende Struktur können Sie konfigurieren für:
 
 In AEM können Sie die Konfigurationseinstellungen für solche Dienste auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi. ](/help/sites-deploying/configuring-osgi.md) Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
 
-## Konfigurieren der zu ladenden Produktattribute  {#configure-the-product-attributes-to-load}
+## Konfigurieren der zu ladenden Produktattribute {#configure-the-product-attributes-to-load}
 
 Sie können den Reaktionsparser so konfigurieren, dass er die Eigenschaften und Attribute definiert, die für (verschiedene) Produkte geladen werden sollen:
 
@@ -209,7 +209,7 @@ Die folgenden Eigenschaften geben die Verknüpfung mit hybris an:
 >
 >Immer, wenn Daten zu einem Produkt angefordert werden, wird auf den hybris-Server verwiesen.
 
-### Vollständiger Import  {#full-import}
+### Vollständiger Import {#full-import}
 
 1. Löschen Sie bei Bedarf alle vorhandenen Produktdaten mit CRXDE Lite.
 
@@ -374,12 +374,12 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
    [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-1. Entfernen Sie das Produkt in der hybris-Konsole. Verwenden Sie die Option **Genehmigungsstatus ändern** , um den Status auf `unapproved` festzulegen. Das Produkt wird aus dem Live-Feed entfernt.
+1. Entfernen Sie das Produkt in der hybris-Konsole. Option verwenden **Genehmigungsstatus ändern** , um den Status auf `unapproved`. Das Produkt wird aus dem Live-Feed entfernt.
 
    Beispiel:
 
    * Öffnen Sie die Seite [http://localhost:9001/productcockpit](http://localhost:9001/productcockpit).
-   * Wählen Sie den Katalog `Outdoors Staged` aus.
+   * Katalog auswählen `Outdoors Staged`
    * Suchen Sie nach `Cajamara`
    * Wählen Sie dieses Produkt aus und ändern Sie den Genehmigungsstatus in `unapproved`
 
@@ -392,12 +392,12 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
 
       [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
-   * Rollout des Katalogs `Hybris Base`
+   * Rollout `Hybris Base` Katalog
    * Öffnen Sie:
 
       [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * Das Produkt `Cajamara` wurde aus der Kategorie `Bike` entfernt
+   * Die `Cajamara` Das Produkt wurde aus dem `Bike` category
 
 1. So instanziieren Sie das Produkt:
 
@@ -408,13 +408,13 @@ So entfernen Sie mindestens ein Produkt aus dem Katalog:
       1. Führen Sie erneut den Rollout des entsprechenden Katalogs durch.
       1. Aktualisieren Sie die entsprechende Produktseite.
 
-## Hinzufügen der Auftragsverlaufs-Eigenschaft zum Client Context  {#add-order-history-trait-to-the-client-context}
+## Hinzufügen der Auftragsverlaufs-Eigenschaft zum Client Context {#add-order-history-trait-to-the-client-context}
 
 So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/client-context.md) hinzu:
 
 1. Öffnen Sie die [Client Context-Designseite](/help/sites-administering/client-context.md) auf eine der folgenden Arten:
 
-   * Öffnen Sie eine Seite zur Bearbeitung und öffnen Sie dann den Client-Kontext mit **Strg-Alt-c** (Windows) oder **control-option-c** (Mac). Klicken Sie in der linken oberen Ecke von Client Context auf das Stiftsymbol, um **die ClientContext-Designseite zu öffnen**.
+   * Öffnen Sie eine Seite zur Bearbeitung und öffnen Sie dann den Client-Kontext mit **Strg+Alt+C** (Fenster) oder **control-option-c** (Mac). Klicken Sie in der linken oberen Ecke von Client Context auf das Stiftsymbol, um **die ClientContext-Designseite zu öffnen**.
    * Navigieren Sie direkt zu [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html).
 
 1. [Fügen Sie die Komponente **Auftragsverlauf** zur](/help/sites-administering/client-context.md#adding-a-property-component) Komponente **Warenkorb** von Client Context hinzu.
@@ -438,8 +438,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
    >
    >  Die Kampagne besteht aus einem Erlebnis.
    >
-   >* Klicken Sie auf das Segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html)).
-      >
-      >
-   * Das Segment basiert auf der Eigenschaft **Order History Property**.
+   >* Klicken Sie auf das Segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
+   >
+   >* Das Segment basiert auf der Eigenschaft **Order History Property**.
 

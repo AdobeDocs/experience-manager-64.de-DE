@@ -1,8 +1,8 @@
 ---
 title: Konzepte der Touch-optimierten Benutzeroberfläche von AEM
-seo-title: Konzepte der Touch-optimierten Benutzeroberfläche von AEM
+seo-title: Concepts of the AEM Touch-Enabled UI
 description: Mit AEM 5.6 hat Adobe eine neue Touch-optimierte Benutzeroberfläche mit responsivem Design für die Autorenumgebung eingeführt.
-seo-description: Mit AEM 5.6 hat Adobe eine neue Touch-optimierte Benutzeroberfläche mit responsivem Design für die Autorenumgebung eingeführt.
+seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
 uuid: 8ec6514e-f623-40be-a7bf-2e85bf4385ca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 exl-id: a89cf964-cc9f-46d7-afd8-150d48948513
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2197'
 ht-degree: 93%
 
 ---
@@ -185,7 +185,7 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
    <td><strong>Granite-Benutzeroberfläche</strong></td> 
   </tr> 
   <tr> 
-   <td>Remoteprozeduraufruf<br /> </td> 
+   <td>Remote-Prozessaufruf<br /> </td> 
    <td>Staatliche Übergänge</td> 
   </tr> 
   <tr> 
@@ -282,7 +282,7 @@ Implementierung:
 * Vordefinierte Komponenten, die die Foundation-Komponenten verwenden
 * Anpassung von Komponenten
 
-## Coral-Benutzeroberfläche  {#coral-ui}
+## Coral-Benutzeroberfläche {#coral-ui}
 
 Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils von Adobe für die Touch-optimierte Benutzeroberfläche. Sie wurde entworfen, um produktübergreifend die Einheitlichkeit des Anwendererlebnisses sicherzustellen. Mit der Coral-Benutzeroberfläche werden alle Elemente bereitgestellt, die Sie zur Übernahme des visuellen Stils der Autorenumgebung benötigen.
 
@@ -299,15 +299,13 @@ Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils
 >* Geringe Anpassungen
 
 >
->
-Die Nutzung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden werden:
+>Die Nutzung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden werden:
 >
 >* Dokumente und andere Elemente, die sich nicht auf Adobe beziehen
 >* Umgebungen für die Inhaltserstellung (in denen die Ausgangselemente von Dritten generiert werden)
 >* Anwendungen/Komponenten/Webseiten, die nicht eindeutig mit Adobe verknüpft sind
 
 >
-
 
 
 Die Coral-Benutzeroberfläche ist eine Sammlung von Bausteinen für die Entwicklung von Web-Anwendungen.
@@ -318,7 +316,7 @@ Sie ist vollständig modular konzipiert und jedes Modul stellt basierend auf sei
 
 Für die Coral-Benutzeroberfläche muss kein bestimmtes Entwicklungsmodell bzw. keine bestimmte Plattform verwendet werden. Hauptziel von Coral ist es, einheitlichen und sauberen HTML5-Markup-Code bereitzustellen, und zwar unabhängig von der eigentlichen Methode, die zum Ausgeben des Markup-Codes verwendet wird. Er kann für client- oder serverseitiges Rendering, Vorlagen, JSP, PHP oder auch Adobe Flash-RIA-Anwendungen verwendet werden, um nur einige zu nennen.
 
-### HTML-Elemente – Markup-Ebene  {#html-elements-the-markup-layer}
+### HTML-Elemente – Markup-Ebene {#html-elements-the-markup-layer}
 
 Über die HTML-Elemente wird ein einheitliches Erscheinungsbild für alle Basiselemente der Benutzeroberfläche (z. B. Navigationsleiste, Schaltfläche, Menü, Leiste usw.) erzielt.
 
@@ -374,20 +372,20 @@ Viele der HTML-Elemente müssen ein bestimmtes dynamisches Verhalten aufweisen, 
 
 Für ein Plug-in gilt einer der folgenden Fälle:
 
-* Es ist für ein spezifisches DOM-Element ausgelegt. Beispielsweise erwartet ein Dialog-Plugin, `DIV class=dialog` zu finden
+* Es ist für ein spezifisches DOM-Element ausgelegt. Beispielsweise erwartet ein Dialog-Plug-in, dass `DIV class=dialog`
 * Es ist generischer Art. Über einen Layout-Manager wird beispielsweise das Layout für eine Liste mit `DIV`- oder `LI`-Elementen bereitgestellt.
 
 Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
 
 * Übergeben der Parameter per JavaScript-Aufruf
-* Verwenden dedizierter `data-*`-Attribute, die mit dem HTML-Markup verknüpft sind
+* Verwendung dedizierter `data-*` -Attribute, die mit dem HTML-Markup verknüpft sind
 
 Entwickler können für jedes Plug-in den besten Ansatz wählen, aber die Faustregel lautet:
 
 * `data-*` -Attribute für Optionen im Zusammenhang mit dem HTML-Layout. Beispielsweise zum Angeben der Anzahl von Spalten.
 * API-Optionen/-Klassen für Funktionalität in Verbindung mit Daten. Beispiel: Erstellung der Liste mit den anzuzeigenden Elementen.
 
-Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabeformular als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
+Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabeformular als benutzerdefinierten `data-*` -Attribut. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
 
 >[!NOTE]
 >
@@ -403,7 +401,7 @@ Zweck:
 Implementierung:
 
 * jQuery-Plug-in, an ein spezifisches DOM-Element (auch mehrere) gebunden
-* Verwenden von `data-*`-Attributen zum Anpassen des Verhaltens
+* Verwenden `data-*` Attribute zur Verhaltensanpassung
 
 Ein Auszug aus Beispielmarkup (beachten Sie die Optionen, die als data-&amp;ast angegeben sind); -Attribute):
 

@@ -11,7 +11,7 @@ role: Developer
 source-git-commit: f6024ad5d213af0e726d95a5ab83ac3a271e8c18
 workflow-type: tm+mt
 source-wordcount: '886'
-ht-degree: 81%
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 81%
 
 + [Entwicklerhandbuch - Übersicht](home.md)
 + Einführung für Entwickler{#introduction}
-   + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial](getting-started.md)
+   + [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial ](getting-started.md)
    + [Grundlegende AEM-Konzepte](the-basics.md)
    + [Struktur der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-structure.md)
    + [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](touch-ui-concepts.md)
@@ -45,7 +45,7 @@ ht-degree: 81%
       + [Seitenvorlagen – statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)
-   + [Verwenden des Sling Resource Merger in AEM](sling-resource-merger.md)
+   + [Verwenden des Sling Resource Merger in AEM  ](sling-resource-merger.md)
    + [Überlagerungen](overlays.md)
    + [Benennungskonventionen](naming-conventions.md)
    + [Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche](granite-ui-component.md)
@@ -109,7 +109,7 @@ ht-degree: 81%
       + [Erste Schritte mit SPA in AEM - Angular](spa-getting-started-angular.md)
       + [Implementieren einer Reaktionskomponente für SPA](spa-implementing-react-component.md)
       + [Einzelheiten zu SPAs](spa-deep-dives.md)
-      + [SPA-Editor – Überblick](spa-overview.md)
+      + [SPA-Editor – Übersicht](spa-overview.md)
       + [Entwickeln von SPAs für AEM](spa-architecture.md)
       + [SPA-Blueprint](spa-blueprint.md)
       + [SPA-Seitenkomponente](spa-page-component.md)

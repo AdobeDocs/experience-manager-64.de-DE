@@ -1,42 +1,42 @@
 ---
 title: Wasserzeichen in der PDF-Briefvorschau
-seo-title: Wasserzeichen in der PDF-Briefvorschau
+seo-title: Custom watermark in letter PDF preview
 description: Erfahren Sie, wie Sie benutzerdefinierte Wasserzeichen in der PDF-Briefvorschau erstellen.
-seo-description: Erfahren Sie, wie Sie benutzerdefinierte Wasserzeichen in der PDF-Briefvorschau erstellen.
+seo-description: Learn how to create custom watermark in letter PDF preview.
 uuid: f406de81-af94-40dd-97ec-9ca95620f961
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: 8aeabd95-948d-4a54-b593-1eda8ddd731b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 59%
+source-wordcount: '335'
+ht-degree: 57%
 
 ---
 
 # Wasserzeichen in der PDF-Briefvorschau {#custom-watermark-in-letter-pdf-preview}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Agent-Benutzer zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. für E-Mails oder zum Drucken.
 
 Um die nicht autorisierte Verwendung dieser Daten zu verhindern, können Unternehmen der PDF-Vorschau ein Wasserzeichen hinzufügen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
 
-Um das Wasserzeichen in der Vorschau-PDF zu aktivieren, wählen Sie die Option **[!UICONTROL Wasserzeichen]** Während der Vorschau in **[!UICONTROL Correspondence Management-Konfigurationen]** unter `https://[server]:[port]/system/console/configMgr` aus.
+Um das Wasserzeichen in der Vorschau-PDF zu aktivieren, wählen Sie die **[!UICONTROL Wasserzeichen anwenden]** Option &quot;Während der Vorschau&quot;in **[!UICONTROL Correspondence Management-Konfigurationen]** at `https://[server]:[port]/system/console/configMgr`.
 
 ![default-watermark](assets/default-watermark.png)
 
 Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild des Wasserzeichens anzupassen:
 
-## Passen Sie die Benutzeroberfläche „Korrespondenz erstellen“ an  {#customizewatermark-}
+## Passen Sie die Benutzeroberfläche „Korrespondenz erstellen“ an {#customizewatermark-}
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen **[!UICONTROL previewwatermark]** mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner previewwatermark im Ordner libs :
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen **[!UICONTROL previewwatermark]** mit Pfad/Struktur, die dem Ordner previewwatermark im Ordner libs ähnelt:
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner **previewwatermark **im folgenden Pfad und wählen Sie **Überlagerungsknoten** aus:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner &quot;previewwatermark&quot;unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
       `/libs/fd/cm/configFiles/previewwatermark`
 
@@ -46,7 +46,7 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
       **Überlagerungsspeicherort:** /apps/
 
-      **Knotentypen abgleichen:** Überprüft
+      **Knotentypen abgleichen:** Aktiviert
 
       >[!NOTE]
       >
@@ -57,7 +57,7 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
       >* Ein Feature Pack installieren
 
 
-   1. Klicken Sie auf **OK** und dann auf **Alle speichern**. Der Ordner **[!UICONTROL previewwatermark]** wird im angegebenen Pfad erstellt.
+   1. Klicken Sie auf **OK** und dann auf **Alle speichern**. Die **[!UICONTROL previewwatermark]** -Ordner wird im angegebenen Pfad erstellt.
 
 1. Kopieren Sie die ddx-Datei aus dem Ordner &quot;/libs/fd/cm/configFiles/previewwatermark&quot;in den Ordner &quot;/apps/fd/cm/configFiles/previewwatermark&quot;und klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Nehmen Sie in der ddx-Datei unter „/apps/fd/cm/configFiles/previewwatermark/“ die gewünschten Änderungen vor.
@@ -77,7 +77,7 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
    </DDX>
    ```
 
-   Informationen zum Anpassen des Erscheinungsbilds, des Texts und der Ausrichtung von Wasserzeichen finden Sie unter Hinzufügen und Entfernen von Wasserzeichen und Hintergründen im Dokument [Assembler-Dienst und DDX-Referenz](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) .
+   Informationen zum Anpassen des Erscheinungsbilds, des Texts und der Ausrichtung von Wasserzeichen finden Sie unter Hinzufügen und Entfernen von Wasserzeichen und Hintergründen im [Assembler-Dienst und DDX-Referenz](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) Dokument.
 
    >[!NOTE]
    >

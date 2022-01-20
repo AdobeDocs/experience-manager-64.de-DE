@@ -1,8 +1,8 @@
 ---
 title: Häufig gestellte Fragen (FAQ) für HTML5-Formulare
-seo-title: Häufig gestellte Fragen (FAQ) für HTML5-Formulare
+seo-title: Frequently asked questions (FAQ) for HTML5 forms
 description: Häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung und dem Umfang von HTML5-Formularen.
-seo-description: Häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung und dem Umfang von HTML5-Formularen.
+seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of HTML5 forms.
 uuid: 55d8cc65-ddf1-48bd-8307-06f562ee8c3a
 contentOwner: robhagat
 content-type: reference
@@ -13,7 +13,7 @@ feature: Mobile Forms
 exl-id: b7f0b209-3970-49ad-a1d8-5a053be0d2bc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1875'
 ht-degree: 85%
 
 ---
@@ -88,7 +88,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    Antwort: Ein ausgeblendetes Teilformular mit einer komplexen Hierarchie, die auf mehrere Seiten aufgeteilt ist, führt zu Problemen mit dem Layout. Eine Option besteht darin, das Teilformular am Anfang als sichtbar zu markieren und es anschließend in einem auf Logik oder Daten basierenden Initialisierungsskript auszublenden.
 
-1. Warum sind einige Texte in HTML5 abgeschnitten oder werden falsch angezeigt?
+1. Warum sind Textteile abgeschnitten oder werden in HTML5 falsch angezeigt?
 
    Antwort: Wenn nicht genügend Platz zum Anzeigen des Inhalts eines Zeichnungs- oder Beschriftungs-Textelements vorhanden ist, werden manche Texte im Rendering von Mobile Forms abgeschnitten angezeigt. Diese Kürzung ist auch in der Designansicht von AEM Forms Designer sichtbar. Zwar kann eine solche Kürzung im PDF-Format bearbeitet werden, in HTML5-Formularen ist dies jedoch nicht möglich. Wenn Sie dieses Problem vermeiden möchten, stellen Sie genügend Platz zum Zeichnen oder für Beschriftungen zur Verfügung, damit der Text im Designmodus von AEM Forms Designer nicht abgeschnitten wird.
 
@@ -178,7 +178,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Gibt es eine empfohlene Benennungskonvention und gibt es reservierte Schlüsselwörter, die vermieden werden sollten?
 
-   * In AEM Forms Designer wird empfohlen, den Namen eines Objekts (z. B. ein Teilformular oder ein Textfeld) nicht mit einem Unterstrich (_) zu beginnen. Um einen Unterstrich am Anfang des Namens zu verwenden, fügen Sie nach dem Unterstrich ein Präfix hinzu: *_&lt;prefix>&lt;objectname>. *
+   * In AEM Forms Designer wird empfohlen, den Namen eines Objekts (z. B. eines Teilformulars oder eines Textfelds) nicht mit einem Unterstrich (_). Um Unterstriche am Anfang des Namens zu verwenden, fügen Sie nach dem Unterstrich ein Präfix hinzu: *_&lt;prefix>&lt;objectname>. *
    * Alle HTML5-Formular-APIs sind reservierte Schlüsselwörter. Bei benutzerdefinierten APIs/Funktionen müssen Sie einen Namen verwenden, der nicht mit den [HTML5 Forms APIs](/help/forms/using/scripting-support.md) identisch ist.
 
 1. Unterstützen HTML5-Formulare schwebende Felder?
@@ -189,8 +189,8 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
    >
    >Standardmäßig werden die Felder nicht als schwebende Felder aktiviert. Sie können den Forms Designer verwenden, um die schwebenden Eigenschaften der Felder festzulegen.
 
-   1. Öffnen Sie CRXde lite und navigieren Sie zum Knoten `/content/xfaforms/profiles/default` .
-   1. Fügen Sie die Eigenschaft `mfDataDependentFloatingField` des Typs String hinzu und legen Sie den Wert der Eigenschaft auf `true`**fest.**
+   1. Öffnen Sie CRXde Lite und navigieren Sie zum `/content/xfaforms/profiles/default` Knoten.
+   1. Hinzufügen einer Eigenschaft `mfDataDependentFloatingField` vom Typ String und legen Sie den Wert der Eigenschaft auf `true`**.**
    1. Klicken Sie auf **Alle speichern**. Jetzt sind die schwebenden Felder für die HTML-Formulare mit dem aktualisierten Renderprofil aktiviert.
 
       >[!NOTE]

@@ -2,7 +2,7 @@
 title: LiveCycleProcess Java API(SOAP)Quick Start
 seo-title: LiveCycleProcess Java API(SOAP)Quick Start
 description: Verwenden Sie den Schnellstart der LiveCycleProcess Java API (SOAP), um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, ausgesetzte Prozessinstanzen zu starten, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Status eines Auftrags abzurufen.
-seo-description: Verwenden Sie den Schnellstart der LiveCycleProcess Java API (SOAP), um nach Prozessinstanzen zu suchen, Prozessinstanzen auszusetzen, ausgesetzte Prozessinstanzen zu starten, Prozessinstanzen zu beenden, Prozessdaten zu bereinigen und den Status eines Auftrags abzurufen.
+seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -13,14 +13,14 @@ role: Developer
 exl-id: ee8f5f16-218a-41eb-be42-fda4537b2b4e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 # Schnellstart für LiveCycleProcess Java API (SOAP) {#livecycleprocess-java-api-soap-quick-start}
 
-Der Schnellstart für Java-API (SOAP) ist für Prozesse verfügbar. Eine *Prozessinstanz* ist ein Vorkommen eines bestimmten Prozesses, der von einer Aufrufmethode wie der Aufruf-API oder aus Workspace heraus gestartet wurde.
+Der Schnellstart für Java-API (SOAP) ist für Prozesse verfügbar. A *Prozessinstanz* ist ein Vorkommen eines bestimmten Prozesses, der von einer Aufrufmethode wie der Aufruf-API oder aus Workspace gestartet wurde.
 
 [Schnellstart (SOAP-Modus): Suchen nach Prozessinstanzen mithilfe der Java-API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -42,7 +42,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 ## Schnellstart (SOAP-Modus): Suchen nach Prozessinstanzen mithilfe der Java-API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird nach Prozessinstanzen gesucht, die auf dem Prozess *MortgageLoan - Prebuilt* basieren.
+Im folgenden Java-Codebeispiel wird nach Prozessinstanzen gesucht, die auf dem *Hypothekendarlehen - vorkonfiguriert* Prozess.
 
 ```as3
  /* 
@@ -338,7 +338,7 @@ Im folgenden Java-Codebeispiel wird eine ausgesetzte Prozessinstanz gestartet.
  
 ```
 
-## Schnellstart (SOAP-Modus): Beenden von Prozessinstanzen mit der Java-API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Schnellstart (SOAP-Modus): Prozessinstanzen mit der Java-API beenden {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 Im folgenden Java-Codebeispiel wird eine Prozessinstanz mit dem Kennungswert 756c22860a242fb101ec7a5bc0977fd6 beendet.
 
@@ -429,9 +429,9 @@ Im folgenden Java-Codebeispiel wird eine Prozessinstanz mit dem Kennungswert 756
  
 ```
 
-## Schnellstart (SOAP-Modus): Bereinigen von Prozessdaten mithilfe der Java-API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Schnellstart (SOAP-Modus): Prozessdaten mithilfe der Java-API bereinigen {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-Der folgende Java-Code löscht Daten aus einem Prozess namens *SecureDocument*. Es wird ein Filter verwendet, der angibt, Daten für jene Prozessinstanzen zu bereinigen, bei denen die Prozessvariable *inValue* größer als 200 ist.
+Der folgende Java-Code löscht Daten aus einem Prozess mit dem Namen *SecureDocument*. Es wird ein Filter verwendet, der angibt, Daten für die Prozessinstanzen zu bereinigen, in denen die Prozessvariable mit *inValue* ist größer als 200.
 
 ```as3
  /* 

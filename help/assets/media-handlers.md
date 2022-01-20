@@ -2,12 +2,12 @@
 title: Verarbeiten von Assets mit Medien-Handlern und Workflows
 description: Informieren Sie sich über verschiedene Medien-Handler und wie diese in Workflows verwendet werden, um Aufgaben an Assets durchzuführen.
 contentOwner: AG
-feature: Workflow,Ausgabedarstellungen
+feature: Workflow,Renditions
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
 source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2225'
 ht-degree: 45%
 
 ---
@@ -16,9 +16,9 @@ ht-degree: 45%
 
 Adobe Experience Manager Assets bietet eine Reihe von Standard-Workflows und Medien-Handlern zur Verarbeitung von Assets. Ein Workflow definiert eine typische Asset-Management- und -Verarbeitungsaufgabe und delegiert dann die spezifischen Aufgaben an die Medien-Handler, z. B. die Erstellung von Miniaturbildern oder die Metadatenextraktion.
 
-Es kann ein Workflow definiert werden, der automatisch ausgeführt wird, wenn ein Asset eines bestimmten Typs oder Formats auf den Server hochgeladen wird. Die Verarbeitungsschritte sind als eine Reihe von Medien-Handlern von Experience Manager Assets definiert. Adobe Experience Manager bietet einige [integrierte Handler,](#default-media-handlers) und mehr können entweder [benutzerdefiniert](#creating-a-new-media-handler) sein oder definiert werden, indem der Prozess an ein [Befehlszeilen-Tool](#command-line-based-media-handler) delegiert wird.
+Es kann ein Workflow definiert werden, der automatisch ausgeführt wird, wenn ein Asset eines bestimmten Typs oder Formats auf den Server hochgeladen wird. Die Verarbeitungsschritte sind als eine Reihe von Medien-Handlern von Experience Manager Assets definiert. Adobe Experience Manager bietet einige [integrierte Handler,](#default-media-handlers) und mehr können entweder [benutzerspezifisch entwickelt](#creating-a-new-media-handler) oder definiert durch Delegieren des Prozesses an eine [Befehlszeilen-Tool](#command-line-based-media-handler).
 
-Medien-Handler sind Dienste innerhalb von Experience Manager Assets, die bestimmte Aktionen für Assets ausführen. Wenn beispielsweise eine MP3-Audiodatei in Experience Manager hochgeladen wird, wird in einem Workflow ein MP3-Handler Trigger, der die Metadaten extrahiert und eine Miniaturansicht generiert. Medien-Handler werden mit Workflows verwendet. Die häufigsten MIME-Typen werden in Experience Manager unterstützt. Sie können bestimmte Aufgaben für Assets ausführen, indem Sie einen der folgenden Schritte ausführen:
+Medien-Handler sind Dienste innerhalb von Experience Manager Assets, die bestimmte Aktionen an Assets durchführen. Wenn beispielsweise eine MP3-Audiodatei in Experience Manager hochgeladen wird, wird in einem Workflow ein MP3-Handler Trigger, der die Metadaten extrahiert und eine Miniaturansicht generiert. Medien-Handler werden mit Workflows verwendet. Die häufigsten MIME-Typen werden in Experience Manager unterstützt. Sie können bestimmte Aufgaben für Assets ausführen, indem Sie einen der folgenden Schritte ausführen:
 
 * Erweitern oder Erstellen von Workflows
 * Erweitern oder Erstellen von Medien-Handlern.
@@ -26,7 +26,7 @@ Medien-Handler sind Dienste innerhalb von Experience Manager Assets, die bestimm
 
 >[!NOTE]
 >
->Eine Beschreibung aller Formate, die von Experience Manager Assets und Funktionen unterstützt werden, finden Sie auf der Seite [Von Assets unterstützte Formate](assets-formats.md) .
+>Siehe [Von Assets unterstützte Formate](assets-formats.md) eine Beschreibung aller Formate, die von Experience Manager Assets unterstützt werden, sowie Funktionen, die für jedes Format unterstützt werden.
 
 ## Standard-Medien-Handler {#default-media-handlers}
 
@@ -37,7 +37,7 @@ Die folgenden Medien-Handler sind in Experience Manager Assets verfügbar und ve
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Wichtig</b>  - Wenn Sie eine MP3-Datei hochladen, wird sie mithilfe einer Bibliothek [ eines Drittanbieters ](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html)verarbeitet. Die Bibliothek berechnet eine ungenaue ungefähre ungefähre Länge, wenn das MP3 über eine variable Bitrate (VBR) verfügt. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Wichtig</b> - Wenn Sie eine MP3-Datei hochladen, ist es [mit einer Drittanbieterbibliothek verarbeitet werden](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). Die Bibliothek berechnet eine ungenaue ungefähre ungefähre Länge, wenn das MP3 über eine variable Bitrate (VBR) verfügt. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -64,11 +64,11 @@ Es ist möglich, die aktiven Medien-Handler anzuzeigen:
 
 Medien-Handler sind Dienste, die mit Workflows verwendet werden.
 
-Experience Manager verfügt über einige standardmäßige Workflows zur Verarbeitung von Assets. Um sie anzuzeigen, öffnen Sie die Workflow-Konsole und klicken Sie auf die Registerkarte **[!UICONTROL Modelle]** : Bei den Workflow-Titeln, die mit Experience Manager Assets beginnen, handelt es sich um Asset-spezifische Workflows.
+Experience Manager verfügt über einige standardmäßige Workflows zur Verarbeitung von Assets. Um sie anzuzeigen, öffnen Sie die Workflow-Konsole und klicken Sie auf **[!UICONTROL Modelle]** tab: Bei den Workflow-Titeln, die mit Experience Manager Assets beginnen, handelt es sich um Asset-spezifische Workflows.
 
 Bereits bestehende Workflows können erweitert und neue Workflows können erstellt werden, um Assets nach spezifischen Anforderungen zu bearbeiten.
 
-Das folgende Beispiel zeigt, wie der Workflow **[!UICONTROL AEM Assets-Synchronisierung]** erweitert werden kann, damit Teil-Assets für alle Assets außer PDF-Dokumente generiert werden.
+Das folgende Beispiel zeigt, wie Sie die **[!UICONTROL AEM Assets-Synchronisierung]** -Arbeitsablauf, damit Teil-Assets für alle Assets außer PDF-Dokumenten generiert werden.
 
 ### Deaktivieren/Aktivieren eines Medien-Handlers {#disabling-enabling-a-media-handler}
 
@@ -132,15 +132,15 @@ In diesem Abschnitt erstellen Sie einen bestimmten Text-Handler, der Miniaturans
 
 Gehen Sie wie folgt vor:
 
-Unter [Entwicklungs-Tools](../sites-developing/dev-tools.md) finden Sie Informationen zum Installieren und Einrichten von Eclipse mit einem Maven-Plug-in und zum Einrichten der Abhängigkeiten, die für das Maven-Projekt benötigt werden.
+Siehe [Entwicklungstools](../sites-developing/dev-tools.md) um Eclipse mit einem Maven-Plug-in zu installieren und einzurichten und die Abhängigkeiten einzurichten, die für das Maven-Projekt erforderlich sind.
 
 Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen einer Textdatei in Experience Manager die Metadaten der Datei extrahiert und zwei Miniaturansichten mit einem Wasserzeichen generiert.
 
-1. Erstellen Sie in Eclipse das Maven-Projekt `myBundle`:
+1. Erstellen Sie in Eclipse `myBundle` Maven-Projekt:
 
    1. Klicken Sie in der Menüleiste auf **[!UICONTROL Datei > Neu > Sonstige]**.
-   1. Erweitern Sie im Dialogfeld den Ordner Maven , wählen Sie Maven Project und klicken Sie dann auf **[!UICONTROL Next]**.
-   1. Aktivieren Sie die Option **[!UICONTROL Einfaches Projekt erstellen]** und das Feld **[!UICONTROL Standardspeicherorte für Workspace verwenden]** und klicken Sie dann auf **[!UICONTROL Weiter]**.
+   1. Erweitern Sie im Dialogfeld den Ordner Maven , wählen Sie Maven Project und klicken Sie auf **[!UICONTROL Nächste]**.
+   1. Überprüfen Sie die **[!UICONTROL Einfaches Projekt erstellen]** und **[!UICONTROL Standard-Workspace-Standorte verwenden]** und klicken Sie auf **[!UICONTROL Nächste]**.
    1. Definieren Sie das Maven-Projekt mit den folgenden Werten:
 
       * Gruppen-ID: com.day.cq5.myhandler
@@ -152,7 +152,7 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
 
 1. Setzen Sie den Java™ Compiler auf Version 1.5:
 
-   1. Klicken Sie mit der rechten Maustaste auf das Projekt `myBundle` und wählen Sie Eigenschaften aus.
+   1. Klicken Sie mit der rechten Maustaste auf die `myBundle` Projekt, wählen Sie Eigenschaften aus.
    1. Wählen Sie Java™ Compiler aus und legen Sie die folgenden Eigenschaften auf 1.5 fest:
 
       * Compiler-Kompatibilitätsstufe
@@ -278,16 +278,16 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
     </dependencies>
    ```
 
-1. Erstellen Sie das Paket `com.day.cq5.myhandler`, das die Java™-Klassen unter `myBundle/src/main/java` enthält:
+1. Package erstellen `com.day.cq5.myhandler` , die die Java™-Klassen unter `myBundle/src/main/java`:
 
-   1. Klicken Sie unter myBundle mit der rechten Maustaste auf `src/main/java`, wählen Sie New und dann Package.
-   1. Benennen Sie ihn `com.day.cq5.myhandler` und klicken Sie auf &quot;Fertig stellen&quot;.
+   1. Klicken Sie unter myBundle mit der rechten Maustaste auf `src/main/java`, wählen Sie Neu und dann Paket aus.
+   1. Benennen Sie ihn `com.day.cq5.myhandler` und klicken Sie auf Beenden.
 
-1. Erstellen Sie die Java™-Klasse `MyHandler`:
+1. Java™-Klasse erstellen `MyHandler`:
 
-   1. Klicken Sie in Eclipse unter `myBundle/src/main/java` mit der rechten Maustaste auf das Paket `com.day.cq5.myhandler`, wählen Sie New und dann Class aus.
+   1. In Eclipse, under `myBundle/src/main/java`klicken Sie mit der rechten Maustaste auf die `com.day.cq5.myhandler` -Paket, wählen Sie &quot;Neu&quot;und dann &quot;Klasse&quot;.
    1. Benennen Sie im Dialogfenster den Java™ Class MyHandler und klicken Sie auf Finish. Eclipse erstellt und öffnet die Datei MyHandler.java.
-   1. Ersetzen Sie in `MyHandler.java` den vorhandenen Code durch den folgenden und speichern Sie dann die Änderungen:
+   1. In `MyHandler.java` ersetzen Sie den vorhandenen Code durch den folgenden und speichern Sie dann die Änderungen:
 
    ```java
    package com.day.cq5.myhandler; 
@@ -431,8 +431,8 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
 
 1. Kompilieren Sie die Java™-Klasse und erstellen Sie das Bundle:
 
-   1. Klicken Sie mit der rechten Maustaste auf das myBundle-Projekt, wählen Sie **[!UICONTROL Ausführen als]** und dann **[!UICONTROL Maven-Installation]**.
-   1. Das Bundle `myBundle-0.0.1-SNAPSHOT.jar` (das die kompilierte Klasse enthält) wird unter `myBundle/target` erstellt.
+   1. Klicken Sie mit der rechten Maustaste auf das myBundle-Projekt und wählen Sie **[!UICONTROL Ausführen als]**, dann **[!UICONTROL Maven-Installation]**.
+   1. Das Bundle `myBundle-0.0.1-SNAPSHOT.jar` (die die kompilierte Klasse enthält) wird unter erstellt. `myBundle/target`.
 
 1. Erstellen Sie in CRX Explorer einen Knoten unter `/apps/myApp`. Name = `install`, Typ = `nt:folder`.
 1. Kopieren Sie das Bundle `myBundle-0.0.1-SNAPSHOT.jar` und speichern Sie es unter `/apps/myApp/install` (z. B. mit WebDAV). Der neue Text-Handler ist jetzt in Experience Manager aktiv.
@@ -440,9 +440,9 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
 
 ## Befehlszeilenbasierter Medien-Handler {#command-line-based-media-handler}
 
-Mit Experience Manager können Sie ein beliebiges Befehlszeilen-Tool innerhalb eines Workflows ausführen, um Assets (z. B. ImageMagick) zu konvertieren und das neue Ausgabeformat zum Asset hinzuzufügen. Installieren Sie das Befehlszeilen-Tool auf dem Datenträger, der den Experience Manager-Server hostet, und fügen Sie einen Prozessschritt zum Workflow hinzu und konfigurieren Sie ihn. Der aufgerufene Prozess `CommandLineProcess` filtert nach bestimmten MIME-Typen und erstellt basierend auf der neuen Ausgabedarstellung mehrere Miniaturansichten.
+Mit Experience Manager können Sie ein beliebiges Befehlszeilen-Tool innerhalb eines Workflows ausführen, um Assets (z. B. ImageMagick) zu konvertieren und das neue Ausgabeformat zum Asset hinzuzufügen. Installieren Sie das Befehlszeilen-Tool auf dem Datenträger, der den Experience Manager-Server hostet, und fügen Sie einen Prozessschritt zum Workflow hinzu und konfigurieren Sie ihn. Der aufgerufene Prozess `CommandLineProcess`, filtert nach bestimmten MIME-Typen und erstellt basierend auf der neuen Ausgabedarstellung mehrere Miniaturansichten.
 
-Die folgenden Konvertierungen können automatisch ausgeführt und in [!DNL Experience Manager Assets] gespeichert werden:
+Die folgenden Konvertierungen können automatisch ausgeführt und in [!DNL Experience Manager Assets]:
 
 * EPS- und AI-Umwandlung mithilfe von [ImageMagick](https://www.imagemagick.org/script/index.php) und [Ghostscript](https://www.ghostscript.com/)
 * FLV-Videotranskodierung mithilfe von [FFmpeg](https://ffmpeg.org/)
@@ -465,12 +465,12 @@ Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Re
 
 ### Beispiel mit ImageMagick {#an-example-using-imagemagick}
 
-Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt einrichten. Jedes Mal, wenn ein Asset mit dem MIME-Typ gif oder tiff zu `/content/dam` auf dem Experience Manager-Server hinzugefügt wird, wird ein gespiegeltes Bild des Originals zusammen mit drei weiteren Miniaturansichten (140 x 100, 48 x 48 und 10 x 250) erstellt.
+Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt einrichten. Jedes Mal, wenn ein Asset mit dem MIME-Typ &quot;gif&quot;oder &quot;tiff&quot;hinzugefügt wird `/content/dam` Auf dem Experience Manager-Server wird ein gespiegeltes Originalbild mit drei weiteren Miniaturansichten (140 x 100, 48 x 48 und 10 x 250) erstellt.
 
 Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf dem Datenträger, der den Experience Manager-Server hostet:
 
-1. Installieren von ImageMagick. Weitere Informationen finden Sie in der [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php) .
-1. Richten Sie das Tool ein, damit Sie `convert` in der Befehlszeile ausführen können.
+1. Installieren von ImageMagick. Siehe [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php) für weitere Informationen.
+1. Richten Sie das Tool ein, damit Sie `convert` in der Befehlszeile.
 1. Um festzustellen, ob das Tool ordnungsgemäß installiert wurde, führen Sie den Befehl `convert -h` über die Befehlszeile aus.
 
    Es wird ein Hilfebildschirm mit allen möglichen Optionen des Konvertierungs-Tools angezeigt.
@@ -479,7 +479,7 @@ Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf dem Datenträge
    >
    >In einigen Versionen von Windows® (z. B. Windows® SE) kann der Konvertierungsbefehl nicht ausgeführt werden, da er im Konflikt mit dem nativen Konvertierungsprogramm steht, das Teil der Windows®-Installation ist. In diesem Fall verwenden Sie den vollständigen Pfad für das ImageMagick-Dienstprogramm, das verwendet wird, um Bilddateien in Miniaturbilder zu konvertieren. Beispiel: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Um festzustellen, ob das Tool ordnungsgemäß ausgeführt wird, fügen Sie ein JPG-Bild zum Arbeitsverzeichnis hinzu und führen Sie den Befehl `convert <image-name>.jpg -flip <image-name>-flipped.jpg` in der Befehlszeile aus.
+1. Um zu überprüfen, ob das Tool ordnungsgemäß ausgeführt wird, fügen Sie ein JPG-Bild zum Arbeitsverzeichnis hinzu und führen Sie den Befehl aus `convert <image-name>.jpg -flip <image-name>-flipped.jpg` in der Befehlszeile.
 
    Ein gespiegeltes Bild wird dem Verzeichnis hinzugefügt.
 
@@ -501,15 +501,15 @@ Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam` hinz
 
 #### Prozessschritt &quot;CommandLineProcess&quot;konfigurieren {#configuring-the-commandlineprocess-process-step}
 
-In diesem Abschnitt wird beschrieben, wie die **[!UICONTROL Prozess-Argumente]** des `CommandLineProcess` festgelegt werden. Trennen Sie die Werte von [!UICONTROL Prozess-Argumente] durch ein Komma und beginnen Sie keinen Wert mit einem Leerzeichen.
+In diesem Abschnitt wird beschrieben, wie die **[!UICONTROL Prozess-Argumente]** des `CommandLineProcess` festgelegt werden. Trennen Sie die Werte von [!UICONTROL Prozess-Argumente] Verwenden Sie ein Komma und beginnen Sie keinen Wert mit einem Leerzeichen.
 
 | Argument-Format | Beschreibung |
 |---|---|
 | mime:&lt;MIME-Typ> | Optionales Argument. Der Prozess wird angewendet, wenn das Asset denselben MIME-Typ wie das Argument hat. <br>Es können mehrere MIME-Typen definiert werden. |
 | tn:&lt;Breite>:&lt;Höhe> | Optionales Argument. Der Prozess erstellt ein Miniaturbild mit den Abmessungen, die im Argument definiert sind. <br>Es können mehrere Miniaturbilder definiert werden. |
-| cmd: &lt;Befehl> | Definiert den ausgeführten Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg  <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg  <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp  <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. original  <br>`${extension}`: Erweiterung der Eingabedatei, z. B. jpg |
+| cmd: &lt;Befehl> | Definiert den ausgeführten Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. original <br>`${extension}`: Erweiterung der Eingabedatei, z. B. jpg |
 
-Wenn beispielsweise ImageMagick auf dem Datenträger installiert ist, der den Experience Manager-Server hostet, und Sie einen Prozessschritt mit **CommandLineProcess** als Implementierung erstellen und die folgenden Werte als **Prozessargumente** verwenden:
+Wenn beispielsweise ImageMagick auf dem Datenträger installiert ist, der den Experience Manager-Server hostet, und Sie einen Prozessschritt mit **CommandLineProcess** als Implementierung und die folgenden Werte als **Prozess-Argumente**:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
@@ -525,4 +525,4 @@ Verwenden Sie die folgenden [!UICONTROL Prozess-Argumente], um die Web-fähige A
 
 >[!NOTE]
 >
->Der Schritt `CommandLineProcess` gilt nur für Assets (Knoten des Typs `dam:Asset`) oder untergeordnete Elemente eines Assets.
+>Die `CommandLineProcess` Schritt gilt nur für Assets (Knoten des Typs `dam:Asset`) oder untergeordneten Elementen eines Assets.

@@ -1,8 +1,8 @@
 ---
 title: Gestenanpassung
-seo-title: Gestenanpassung
+seo-title: Gesture customization
 description: Anpassen der Gesten in Ihrer AEM Forms-App
-seo-description: Anpassen der Gesten in Ihrer AEM Forms-App
+seo-description: Customize the gestures on your AEM Forms app
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 238410e0-1623-49dc-b2fc-b5b2d5fb362b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 46%
+source-wordcount: '296'
+ht-degree: 45%
 
 ---
 
@@ -27,15 +27,15 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
 1. Öffnen Sie Ihr Projekt.
 
-   * Öffnen Sie für iOS `Capture.xcodeproj` in Xcode.
+   * Öffnen Sie für iOS `Capture.xcodeproj` in Xcode
    * In Android öffnen Sie das Android-Projekt in Eclipse.
-   * Öffnen Sie für Windows `MWSWindows.sln` in Visual Studio.
+   * Für Windows öffnen Sie `MWSWindows.sln` in Visual Studio.
 
-1. Navigieren Sie zum Ordner &quot;views&quot;und öffnen Sie die Datei `task.js` zur Bearbeitung.
+1. Navigieren Sie zum Ordner &quot;views&quot;und öffnen Sie die `task.js` Datei zur Bearbeitung.
 
-   * Navigieren Sie in Xcode zum Ordner **Capture > www > wsmobile > js > runtime > views** .
-   * Navigieren Sie in Eclipse zum Ordner **assets > www > wsmobile > js > runtime > views** .
-   * Navigieren Sie in Visual Studio zum Ordner **MWSWindows > www > wsmobile > js > runtime > views** .
+   * Navigieren Sie in Xcode zum **Capture > www > wsmobile > js > runtime > views** Ordner.
+   * Navigieren Sie in Eclipse zum **assets > www > wsmobile > js > runtime > views** Ordner.
+   * Navigieren Sie in Visual Studio zum **MWSWindows > www > wsmobile > js > runtime > views** Ordner.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
    `"EventName Selector": "Function"`
 
-   Wenn Sie ein JavaScript-Ereignis mit dem Namen `EventName`für ein von `Selector` angegebenes HTML-Element Trigger haben, wird `Function`aufgerufen.
+   Beim Trigger eines JavaScript-Ereignisses mit dem Namen `EventName`auf einem HTML-Element, das von `Selector`, die `Function`aufgerufen wird.
 
 1. Suchen
 

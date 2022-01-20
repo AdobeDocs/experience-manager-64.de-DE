@@ -1,8 +1,8 @@
 ---
 title: Zugehörige Inhalte
-seo-title: Zugehörige Inhalte
+seo-title: Associated Content
 description: Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden.
-seo-description: Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden.
+seo-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
 uuid: 1bc1eefa-7a7c-43be-a8a8-0d153d60c5c4
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 exl-id: af4f25d4-a784-47fe-bca4-75c8d373f7d2
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '229'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0 oder höher)](/help/release-notes/sp-release-notes.md).
 
 Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragment verwendet werden können (falls gewünscht), wenn sie einer Inhaltsseite hinzugefügt werden. Dies bietet Ihnen mehr Flexibilität, wenn es darum geht, [eine Reihe von Assets bereitzustellen, auf die bei der Verwendung des Inhaltsfragments auf einer Seite zugegriffen werden soll](/help/sites-authoring/content-fragments.md#using-associated-content). Darüber hinaus wird so der Zeitaufwand für die Suche nach dem passenden Asset reduziert.
 

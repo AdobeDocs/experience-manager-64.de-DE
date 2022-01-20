@@ -1,8 +1,8 @@
 ---
 title: Aktualisierung von Code und Anpassungen
-seo-title: Aktualisierung von Code und Anpassungen
+seo-title: Upgrading Code and Customizations
 description: Erfahren Sie mehr über das Aktualisieren von benutzerdefiniertem Code in AEM.
-seo-description: Erfahren Sie mehr über das Aktualisieren von benutzerdefiniertem Code in AEM.
+seo-description: Learn more about upgrading custom code in AEM.
 uuid: d4b6717c-41da-4dcc-b85c-51842192ca8d
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba8efc24-a34c-477b-8c6d-6e8f893eb999
 targetaudience: target-audience upgrader
-feature: Aktualisieren
+feature: Upgrading
 exl-id: ed67e664-3be0-4337-85bd-cd042915b021
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2227'
+source-wordcount: '2214'
 ht-degree: 79%
 
 ---
@@ -28,22 +28,22 @@ Beim Planen einer Aktualisierung sollten folgende Bereiche der Implementierung u
 * [AEM-Anpassungen](#aem-customizations)
 * [Testverfahren](#testing-procedure)
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-1. **Musterdetektor** – Führen Sie den Musterdetektor aus, wie in der Aktualisierungsplanung und detailliert auf [dieser Seite](/help/sites-deploying/pattern-detector.md) beschrieben, um einen Musterdetektorbericht zu erhalten, der weitere Informationen über Bereiche enthält, in denen zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM Probleme behoben werden müssen. Der Mustererkennungsbericht sollte Hinweise auf Inkompatibilitäten in Ihrem Code enthalten. Wenn keine vorhanden sind, ist Ihre Bereitstellung bereits mit 6.4 kompatibel. Sie können dennoch eine neue Entwicklung für die Verwendung von 6.4-Funktionen durchführen, aber Sie benötigen sie nicht nur zur Erhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.4-Funktionen oder Kompatibilität verschieben, b) nach der Aktualisierung eine Entwicklung durchführen und zu Schritt 2 wechseln. Weitere Informationen finden Sie unter [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md).
+1. **Musterdetektor** – Führen Sie den Musterdetektor aus, wie in der Aktualisierungsplanung und detailliert auf [dieser Seite](/help/sites-deploying/pattern-detector.md) beschrieben, um einen Musterdetektorbericht zu erhalten, der weitere Informationen über Bereiche enthält, in denen zusätzlich zu den nicht verfügbaren APIs/Bundles in der Zielversion von AEM Probleme behoben werden müssen. Der Mustererkennungsbericht sollte Hinweise auf Inkompatibilitäten in Ihrem Code enthalten. Wenn keine vorhanden sind, ist Ihre Bereitstellung bereits mit 6.4 kompatibel. Sie können dennoch eine neue Entwicklung für die Verwendung von 6.4-Funktionen durchführen, aber Sie benötigen sie nicht nur zur Erhaltung der Kompatibilität. Wenn Inkompatibilitäten gemeldet werden, können Sie entweder a) Im Kompatibilitätsmodus ausführen und Ihre Entwicklung auf neue 6.4-Funktionen oder Kompatibilität verschieben, b) nach der Aktualisierung eine Entwicklung durchführen und zu Schritt 2 wechseln. Siehe [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md) für weitere Details.
 
-1. **Entwickeln einer Codebasis für 6.4**  - Erstellen Sie eine dedizierte Verzweigung oder ein dediziertes Repository für die Codebasis der Target-Version. Nutzen Sie bei der Kompatibilitätsprüfung die vor der Aktualisierung erfassten Daten, um die Codebereiche zu planen, die aktualisiert werden sollen.
-1. **Kompilieren Sie mit 6.4 UberJar**  - Aktualisieren Sie die POMs der Codebasis, um auf 6.4 uberJar zu verweisen, und kompilieren Sie Code dafür.
-1. **Aktualisierung AEM Anpassungen**  - Alle Anpassungen oder Erweiterungen, die AEM vorgenommen werden sollen, sollten aktualisiert/validiert werden, damit sie in 6.4 funktionieren, und zur Codebasis von 6.4 hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
+1. **Entwickeln einer Codebasis für 6.4** - Erstellen Sie eine dedizierte Verzweigung oder ein dediziertes Repository für die Codebasis der Target-Version. Nutzen Sie bei der Kompatibilitätsprüfung die vor der Aktualisierung erfassten Daten, um die Codebereiche zu planen, die aktualisiert werden sollen.
+1. **Kompilieren mit 6.4 UberJar** - Aktualisieren Sie Code-Basis-POMs so, dass sie auf 6.4 uber jar verweisen, und kompilieren Sie Code dafür.
+1. **AEM aktualisieren** - Alle Anpassungen oder Erweiterungen, die AEM vorgenommen werden sollen, sollten aktualisiert/validiert werden, damit sie in 6.4 funktionieren, und zur Codebasis von 6.4 hinzugefügt werden. Dies beinhaltet Benutzeroberflächen-Suchformulare, Asset-Anpassungen und alle Komponenten, die „/mnt/overlay“ verwenden.
 
-1. **Bereitstellung in der 6.4-Umgebung**  - In einer Entwicklungs-/QA-Umgebung sollte eine saubere Instanz von AEM 6.4 (Autor und Veröffentlichung) eingerichtet werden. Stellen Sie die aktualisierte Codebasis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
-1. **QA-Validierung und Fehlerbehebung**  - QA sollte die Anwendung auf der Autoren- und Veröffentlichungsinstanz von 6.4 validieren. Alle gefundenen Fehler sollten behoben und an die Codebasis von 6.4 übertragen werden. Wiederholen Sie den Entwicklungszyklus, falls erforderlich, bis alle Fehler korrigiert sind.
+1. **Bereitstellen in der 6.4-Umgebung** - Eine saubere Instanz von AEM 6.4 (Autor + Veröffentlichung) sollte in einer Entwicklungs-/QA-Umgebung eingerichtet werden. Stellen Sie die aktualisierte Codebasis und ein repräsentatives Inhaltsbeispiel (aus der aktuellen Produktion) bereit.
+1. **QA-Validierung und Fehlerbehebung** - QA sollte die Anwendung auf der Autoren- und Veröffentlichungsinstanz von 6.4 validieren. Alle gefundenen Fehler sollten behoben und an die Codebasis von 6.4 übertragen werden. Wiederholen Sie den Entwicklungszyklus, falls erforderlich, bis alle Fehler korrigiert sind.
 
 Bevor Sie mit der Aktualisierung beginnen, benötigen Sie eine stabile Anwendungscodebasis, die sorgfältig gegen die Zielversion von AEM getestet wurde. Basierend auf den im Rahmen der Tests gemachten Beobachtungen kann möglicherweise der benutzerdefinierte Code optimiert werden. Dazu können die Umgestaltung des Codes zum Durchsuchen des Repositorys, die benutzerdefinierte Indizierung für optimierte Suchabfragen, die Verwendung von unsortierten Knoten in JCR und andere Optimierungen gehören.
 
 AEM 6.4 bietet Ihnen die Option, Ihre Codebasis und Ihre Anpassungen für die Zusammenarbeit mit der neuen AEM-Version zu aktualisieren. Außerdem hilft Ihnen AEM 6.4, Ihre Anpassungen mit der Abwärtskompatibilitätsfunktion effizienter zu verwalten, was [auf dieser Seite](/help/sites-deploying/backward-compatibility.md) beschrieben wird.
 
-Wie oben bereits erwähnt und im folgenden Diagramm dargestellt, hilft Ihnen das Ausführen des [Musterdetektors](/help/sites-deploying/pattern-detector.md) im ersten Schritt, die gesamte Komplexität der Aktualisierung zu beurteilen und zu entscheiden, ob Sie den Kompatibilitätsmodus nutzen oder Ihre Anpassungen aktualisieren möchten, um alle neuen Funktionen von AEM 6.4 zu verwenden. Weitere Informationen finden Sie auf der Seite [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md) .
+Wie oben bereits erwähnt und im folgenden Diagramm dargestellt, hilft Ihnen das Ausführen des [Musterdetektors](/help/sites-deploying/pattern-detector.md) im ersten Schritt, die gesamte Komplexität der Aktualisierung zu beurteilen und zu entscheiden, ob Sie den Kompatibilitätsmodus nutzen oder Ihre Anpassungen aktualisieren möchten, um alle neuen Funktionen von AEM 6.4 zu verwenden. Siehe [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md) für weitere Details.
 [ ![screen_shot_2018-03-30at175257](assets/screen_shot_2018-03-30at175257.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Aktualisieren der Codebasis {#upgrade-code-base}
@@ -66,11 +66,11 @@ AEM-UberJar beinhaltet alle AEM-APIs als einzelne Abhängigkeiten in der Datei `
 </dependency>
 ```
 
-### Einstellen der Verwendung des administrativen Ressourcen-Resolver  {#phase-out-use-of-administrative-resource-resolver}
+### Einstellen der Verwendung des administrativen Ressourcen-Resolver {#phase-out-use-of-administrative-resource-resolver}
 
-Die Verwendung einer Verwaltungssitzung über `SlingRepository.loginAdministrative()` und `ResourceResolverFactory.getAdministrativeResourceResolver()` war in Codedatenbanken vor AEM 6.0 weit verbreitet. Diese Methoden werden aus Sicherheitsgründen nicht mehr unterstützt, da sie zu weit gefasst sind. [In künftigen Versionen von Sling ist diese Methode nicht mehr enthalten](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Es wird dringend empfohlen, stattdessen „Dienstbenutzer“ für den Code zu verwenden. Weitere Informationen zu Dienstbenutzern und dazu, [wie Sie die Verwendung von administrativen Sessions einstellen, finden Sie hier](/help/sites-administering/security-service-users.md#how-to-phase-out-admin-sessions).
+Verwendung einer Verwaltungssitzung durch `SlingRepository.loginAdministrative()` und `ResourceResolverFactory.getAdministrativeResourceResolver()` war vor AEM 6.0 in Codebasis ziemlich weit verbreitet. Diese Methoden werden aus Sicherheitsgründen nicht mehr unterstützt, da sie zu weit gefasst sind. [In künftigen Versionen von Sling ist diese Methode nicht mehr enthalten](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Es wird dringend empfohlen, stattdessen „Dienstbenutzer“ für den Code zu verwenden. Weitere Informationen zu Dienstbenutzern und dazu, [wie Sie die Verwendung von administrativen Sessions einstellen, finden Sie hier](/help/sites-administering/security-service-users.md#how-to-phase-out-admin-sessions).
 
-### Abfragen und Oak-Indizes  {#queries-and-oak-indexes}
+### Abfragen und Oak-Indizes {#queries-and-oak-indexes}
 
 Abfragen in der Codebasis müssen im Rahmen der Aktualisierung sorgfältig getestet werden. Für Kunden, die von Jackrabbit 2 (ältere Versionen als AEM 6.0) aus eine Aktualisierung durchführen, ist dies besonders wichtig, da Inhalt von Oak nicht automatisch indiziert wird und möglicherweise benutzerdefinierte Indizes erstellt werden müssen. Falls Sie von einer AEM 6.x-Version aus eine Aktualisierung durchführen, haben sich die vorkonfigurierten Oak-Indexdefinitionen möglicherweise geändert, was sich auf vorhandene Abfragen auswirken kann.
 
@@ -82,19 +82,19 @@ Es sind mehrere Tools zum Analysieren und Überprüfen der Abfrageleistung verf�
 
 * [Oak-Dienstprogramme](https://oakutils.appspot.com/). Hierbei handelt es sich um Open-Source-Tools, die nicht von Adobe stammen.
 
-### Klassisches UI-Authoring  {#classic-ui-authoring}
+### Klassisches UI-Authoring {#classic-ui-authoring}
 
 Das klassische UI-Authoring ist in AEM 6.4 weiterhin verfügbar, ist jedoch veraltet. Weitere Informationen finden Sie [hier](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Falls die Anwendung derzeit in einer Umgebung mit klassischem UI-Authoring ausgeführt wird, wird empfohlen, auf AEM 6.4 zu aktualisieren und die klassische Benutzeroberfläche weiterhin zu verwenden. Die Migration zur Touch-optimierten Benutzeroberfläche kann als separates Projekt geplant und in mehreren Entwicklungszyklen abgeschlossen werden. Um die klassische Benutzeroberfläche in AEM 6.4 zu verwenden, sind mehrere OSGi-Konfigurationen erforderlich, die in der Codebasis gespeichert werden müssen. Einzelheiten zur Konfiguration finden Sie [hier](/help/sites-administering/enable-classic-ui.md).
 
 >[!NOTE]
 >
->Wenn Sie die klassische Benutzeroberfläche verlassen und die neuesten AEM nutzen möchten, sollten Sie die [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) nutzen, um die Migration zu vereinfachen.
+>Wenn Sie die klassische Benutzeroberfläche verlassen und die neuesten AEM nutzen möchten, sollten Sie die [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) um die Migration zu vereinfachen.
 
-## Anpassung an die 6.4-Repository-Struktur {#align-repository-structure}
+## Ausrichten auf die 6.4-Repository-Struktur {#align-repository-structure}
 
 Um Upgrades zu vereinfachen und sicherzustellen, dass Konfigurationen während einer Aktualisierung nicht überschrieben werden, wird das Repository in 6.4 neu strukturiert, um Inhalt und Konfiguration voneinander zu trennen.
 
-Daher müssen einige Einstellungen verschoben werden, damit sie sich nicht mehr wie bisher unter `/etc` befinden. Um die vollständigen Bedenken hinsichtlich der Repository-Umstrukturierung zu überprüfen, die in der Aktualisierung auf AEM 6.4 zu berücksichtigen sind, lesen Sie [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+Daher müssen einige Einstellungen verschoben werden, um sich nicht mehr unter `/etc` wie es in der Vergangenheit der Fall war. Um die vollständigen Bedenken hinsichtlich der Repository-Umstrukturierung zu überprüfen, die in der Aktualisierung auf AEM 6.4 zu berücksichtigen sind, siehe [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## AEM-Anpassungen  {#aem-customizations}
 
@@ -104,7 +104,7 @@ Alle Anpassungen der AEM-Authoring-Umgebung in der Quellversion von AEM müssen 
 
 Es ist üblich, vorkonfigurierte AEM-Funktionen durch Überlagerung von Knoten und/oder Dateien unter /libs mit zusätzlichen Knoten unter /apps zu erweitern. Diese Überlagerungen sollten in der Versionskontrolle nachverfolgt und für die Zielversion von AEM getestet werden. Falls eine Datei (z. B. JS, JSP, HTL) überlagert wird, wird empfohlen, einen Kommentar mit Informationen zu speichern, welche Funktionalität erweitert wurde. Dies erleichtert Regressionstests auf der Zielversion von AEM. Weitere allgemeine Informationen zu Überlagerungen finden Sie [hier](/help/sites-developing/overlays.md). Anweisungen für spezifische AEM-Überlagerungen finden Sie unten.
 
-### Aktualisieren von benutzerdefinierten Suchformularen  {#upgrading-custom-search-forms}
+### Aktualisieren von benutzerdefinierten Suchformularen {#upgrading-custom-search-forms}
 
 Benutzerdefinierte Suchfacetten müssen nach der Aktualisierung teilweise manuell angepasst werden, damit sie ordnungsgemäß funktionieren. Weitere Einzelheiten finden Sie unter [Aktualisieren von benutzerdefinierten Suchformularen](/help/sites-deploying/upgrading-custom-search-forms.md).
 
@@ -118,7 +118,7 @@ Instanzen mit benutzerdefinierten bereitgestellten Assets müssen für die Aktua
 
 Sie können Anpassungen der Assets-Benutzeroberfläche wie folgt vorbereiten:
 
-1. Öffnen Sie in der Instanz, die aktualisiert werden muss, die CRXDE Lite, indem Sie zu `https://server:port/crx/de/index.jsp` navigieren.
+1. Öffnen Sie in der Instanz, die aktualisiert werden muss, die CRXDE Lite, indem Sie `https://server:port/crx/de/index.jsp`
 
 1. Navigieren Sie zum folgenden Knoten:
 
@@ -126,13 +126,13 @@ Sie können Anpassungen der Assets-Benutzeroberfläche wie folgt vorbereiten:
 
 1. Benennen Sie den Knoten content in **content_backup** um. Hierzu können Sie mit der rechten Maustaste auf den Explorer-Bereich links im Fenster klicken und **Umbenennen** auswählen.
 
-1. Nachdem der Knoten umbenannt wurde, erstellen Sie einen neuen Knoten mit dem Namen content unter `/apps/dam` mit dem Namen **content** und legen Sie dessen Knotentyp auf **sling:Folder** fest.
+1. Nachdem der Knoten umbenannt wurde, erstellen Sie einen neuen Knoten mit dem Namen content unter `/apps/dam` benannt **content** und legen Sie den Knotentyp auf **sling:Folder**.
 
 1. Verschieben Sie alle untergeordneten Knoten von **content_backup** in den neu erstellten Knoten content. Hierzu können Sie mit der rechten Maustaste auf die einzelnen untergeordneten Knoten im Explorer-Bereich klicken und **Verschieben** auswählen.
 
 1. Löschen Sie den Knoten **content_backup**.
 
-1. Die aktualisierten Knoten unter `/apps/dam` mit dem richtigen Knotentyp `sling:Folder` sollten idealerweise in der Versionskontrolle gespeichert und mit der Codebasis oder mindestens als Inhaltspaket gesichert werden.
+1. Die aktualisierten Knoten unter `/apps/dam` mit dem richtigen Knotentyp von `sling:Folder` sollte idealerweise in der Versionskontrolle gespeichert und mit der Codebasis oder mindestens als Inhaltspaket gesichert werden.
 
 ### Generieren von Asset-IDs für vorhandene Assets {#generating-asset-ids-for-existing-assets}
 
@@ -144,13 +144,13 @@ Um Assets zu aktualisieren, konfigurieren Sie das Paket „Associate Asset IDs�
 
 Falls Sie Asset-IDs für eine Untermenge Ihrer gesamten Assets benötigen, verwenden Sie die API `migrateAssetsAtPath`.
 
-Verwenden Sie für alle anderen Zwecke die API `migrateAllAssets()` .
+Verwenden Sie für alle anderen Zwecke die `migrateAllAssets()` API.
 
 ### InDesign-Skript-Anpassungen {#indesign-script-customizations}
 
-Adobe empfiehlt, benutzerdefinierte Skripte an `/apps/settings/dam/indesign/scripts`-Speicherort einzufügen. Weitere Informationen zu InDesign-Skript-Anpassungen finden Sie [hier](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
+Adobe empfiehlt, benutzerdefinierte Skripte unter `/apps/settings/dam/indesign/scripts` Standort. Weitere Informationen zu InDesign-Skript-Anpassungen finden Sie [hier](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
 
-### Wiederherstellen von ContextHub-Konfigurationen  {#recovering-contexthub-configurations}
+### Wiederherstellen von ContextHub-Konfigurationen {#recovering-contexthub-configurations}
 
 Aktualisierungen wirken sich auf ContextHub-Konfigurationen aus. Anweisungen, wie Sie vorhandene ContextHub-Konfigurationen wiederherstellen, finden Sie [hier](/help/sites-administering/contexthub-config.md#recovering-contexthub-configurations-after-upgrading).
 
@@ -166,19 +166,19 @@ Vorkonfigurierte Workflows werden häufig angepasst, um Funktionen hinzuzufügen
 
 Die Struktur bearbeitbarer Vorlagen in AEM 6.2 wurde in Version 6.3 geändert. Wenn Sie ein Upgrade von 6.2 oder älter durchführen und wenn Sie Site-Inhalt mit bearbeitbaren Vorlagen erstellt haben, müssen Sie das [Responsive Nodes Clean Up-Tool](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration) verwenden. Das Tool muss **_nach_** einer Aktualisierung ausgeführt werden, um Inhalt zu bereinigen. Es muss auf der Autoren- und der Veröffentlichungsschicht ausgeführt werden.
 
-### Änderungen der CUG-Implementierung  {#cug-implementation-changes}
+### Änderungen der CUG-Implementierung {#cug-implementation-changes}
 
-Die Implementierung geschlossener Benutzergruppen (Closed User Groups, CUG) wurde weitgehend geändert, um die Leistungs- und Skalierbarkeitsbeschränkungen früherer AEM-Versionen zu beheben. Die vorherige Version von CUG ist in 6.3 nicht mehr enthalten. Die neue Implementierung wird nur in der Touch-optimierten Benutzeroberfläche unterstützt. Wenn Sie ein Upgrade von 6.2 oder früher durchführen, finden Sie Anweisungen zum Migrieren zur neuen CUG-Implementierung [hier](/help/sites-administering/closed-user-groups.md#upgrade-cug).
+Die Implementierung geschlossener Benutzergruppen (Closed User Groups, CUG) wurde weitgehend geändert, um die Leistungs- und Skalierbarkeitsbeschränkungen früherer AEM-Versionen zu beheben. Die vorherige Version von CUG ist in 6.3 nicht mehr enthalten. Die neue Implementierung wird nur in der Touch-optimierten Benutzeroberfläche unterstützt. Wenn Sie ein Upgrade von 6.2 oder früher durchführen, finden Sie Anweisungen zum Migrieren zur neuen CUG-Implementierung [here](/help/sites-administering/closed-user-groups.md#upgrade-cug).
 
 ## Testverfahren {#testing-procedure}
 
 Zum Testen von Aktualisierungen sollte ein umfassender Testplan erstellt werden. Das Testen der aktualisierten Codebasis und Anwendung muss zuerst in Umgebungen auf niedrigerer Ebene erfolgen. Alle Fehler müssen iterativ korrigiert werden, bis die Codebasis stabil ist. Aktualisieren Sie erst dann Umgebungen auf höherer Ebene.
 
-### Testen des Aktualisierungsverfahrens  {#testing-the-upgrade-procedure}
+### Testen des Aktualisierungsverfahrens {#testing-the-upgrade-procedure}
 
 Testen Sie das hier beschriebene Aktualisierungsverfahren in Entwicklungs- und QA-Umgebungen, wie im benutzerdefinierten Runbook dokumentiert (siehe [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md)). Das Aktualisierungsverfahren muss wiederholt werden, bis alle Schritte im Aktualisierungs-Runbook dokumentiert sind und das Aktualisierungsverfahren reibungslos läuft.
 
-### Testbereiche der Implementierung   {#implementation-test-areas-}
+### Testbereiche der Implementierung  {#implementation-test-areas-}
 
 Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom Testplan abgedeckt sein müssen, sobald die Umgebung aktualisiert und die aktualisierte Codebasis bereitgestellt wurde.
 
@@ -193,7 +193,7 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
    <td>Testen von AEM-Implementierung und zugehörigem Code auf der Veröffentlichungsschicht<br /> durch den Dispatcher. Muss Kriterien für Seitenaktualisierungen und<br /> Cache-Invalidierungen enthalten.</td> 
   </tr> 
   <tr> 
-   <td>Authoring – </td> 
+   <td>Authoring –</td> 
    <td>Testen von AEM-Implementierung und zugehörigem Code auf der Autorenschicht. Dabei sollten Seiten, Komponenten-Authoring und Dialoge berücksichtigt werden.</td> 
   </tr> 
   <tr> 
@@ -227,6 +227,6 @@ Im Folgenden sind wichtige Bereiche einer AEM-Implementierung genannt, die vom T
  </tbody> 
 </table>
 
-### Dokumentieren von Testplänen und Ergebnissen  {#document-test-plan-and-results}
+### Dokumentieren von Testplänen und Ergebnissen {#document-test-plan-and-results}
 
 Erstellen Sie einen Testplan, der die oben genannten Testbereiche der Implementierung abdeckt. In vielen Fällen ist es sinnvoll, den Testplan nach Aufgabenlisten für Autoren- und Veröffentlichungsumgebungen zu trennen. Dieser Testplan muss auf Entwicklungs-, QA- und Staging-Umgebung ausgeführt werden, bevor Produktionsumgebungen aktualisiert werden. Erfassen Sie die Testergebnisse und Leistungsmetriken aus Umgebungen niedrigerer Ebenen als Referenzwerte für die Aktualisierung der Staging- und Produktionsumgebungen.

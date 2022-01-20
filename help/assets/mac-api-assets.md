@@ -2,13 +2,13 @@
 title: Assets-HTTP-API   in  [!DNL Adobe Experience Manager].
 description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-feature: APIs,Assets-HTTP-API,Entwicklertools
+feature: APIs,Assets HTTP API,Developer Tools
 role: Developer
 exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 86%
+source-wordcount: '1552'
+ht-degree: 87%
 
 ---
 
@@ -27,7 +27,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!CAUTION]
 >
->[Die HTTP-API aktualisiert die Metadateneigenschaften ](#update-asset-metadata) im  `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im Namespace `dc` .
+>[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
 
 ## Datenmodell {#data-model}
 
@@ -89,8 +89,8 @@ Die Assets-HTTP-API bietet die folgenden Funktionen:
 **Voraussetzungen**
 
 * Greife Sie auf `https://[aem_server]:[port]/system/console/configMgr` zu.
-* Navigieren Sie zu **[!UICONTROL Adobe Granite CSRF Filter]**.
-* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** Folgendes enthält: `POST`, `PUT`, `DELETE`.
+* Navigieren Sie zu **[!UICONTROL Adobe Granite CSRF-Filter]**.
+* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** umfasst: `POST`, `PUT`, `DELETE`.
 
 ## Abrufen von Ordnerauflistungen {#retrieve-a-folder-listing}
 
@@ -128,9 +128,9 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn anstelle eines Knotennamens `*` ein  angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
+Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn eine `*` anstelle eines Knotennamens angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
 
-**Parameter**: Die Parameter sind  `name` für den Asset-Namen und  `file` für die Dateireferenz.
+**Parameter**: Die Parameter sind `name` für den Asset-Namen und `file` für die Dateireferenz.
 
 **Anfrage**
 
@@ -170,9 +170,9 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-### Synchronisieren von Metadaten-Updates zwischen `dc` und `jcr` Namespace {#sync-metadata-between-namespaces}
+### Metadaten-Update synchronisieren zwischen `dc` und `jcr` namespace {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im Namespace `jcr` . Die mithilfe der Touch-optimierten Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im Namespace `dc` . Um die Metadatenwerte zwischen `dc` und dem `jcr`-Namespace zu synchronisieren, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namespace. Die mithilfe der Touch-optimierten Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namespace. So synchronisieren Sie die Metadatenwerte zwischen `dc` und `jcr` -Namespace erstellen, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -191,7 +191,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 }
 ```
 
-## Erstellen von Asset-Ausgabedarstellungen {#create-an-asset-rendition}
+## Erstellen von Asset-Ausgabeformaten {#create-an-asset-rendition}
 
 Erstellt eine neue Asset-Ausgabedarstellung für ein Asset. Wenn der Name nicht als Anfrageparameter angegeben wurde, wird der Dateiname als Ausgabedarstellungsname verwendet.
 
@@ -209,7 +209,7 @@ Erstellt eine neue Asset-Ausgabedarstellung für ein Asset. Wenn der Name nicht 
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-## Aktualisieren von Asset-Ausgabedarstellungen {#update-an-asset-rendition}
+## Aktualisieren von Asset-Ausgabeformaten {#update-an-asset-rendition}
 
 Aktualisiert bzw. ersetzt eine Asset-Ausgabedarstellung durch die neuen Binärdaten.
 
@@ -226,7 +226,7 @@ Aktualisiert bzw. ersetzt eine Asset-Ausgabedarstellung durch die neuen Binärda
 
 Erstellt einen neuen Asset-Kommentar.
 
-**Parameter**: Die Parameter sind `message` für den Nachrichtentext des Kommentars und `annotationData` für die Anmerkungsdaten im JSON-Format bestimmt.
+**Parameter**: Die Parameter sind `message` für den Nachrichtentext des Kommentars und `annotationData` für die Anmerkungsdaten im JSON-Format.
 
 **Anfrage**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 

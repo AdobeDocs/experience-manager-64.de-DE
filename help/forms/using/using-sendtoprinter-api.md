@@ -1,8 +1,8 @@
 ---
 title: Verwenden der SendToPrinter-API
-seo-title: Verwenden der SendToPrinter-API
+seo-title: Using the sendToPrinter API
 description: Verwenden des sendToPrinter-Dienstes, um ein Dokument an den Drucker zu senden.
-seo-description: Verwenden des sendToPrinter-Dienstes, um ein Dokument an den Drucker zu senden.
+seo-description: Using the sendToPrinter service to send a document to printer.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,14 +11,14 @@ discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 70%
+source-wordcount: '362'
+ht-degree: 69%
 
 ---
 
-# Verwenden der SendToPrinter-API  {#using-the-sendtoprinter-api}
+# Verwenden der SendToPrinter-API {#using-the-sendtoprinter-api}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Sie können in AEM Forms den sendToPrinter-Dienst verwenden, um ein Dokument an den Drucker zu senden. Der SendToPrinter-Dienst unterstützt die folgenden Druckerzugriffsmechanismen:
 
@@ -65,7 +65,7 @@ In nachstehender Tabelle wird Folgendes aufgelistet:
 
 Authentifizierung wird nur für CIFS-Druck unterstützt. Um sich zu authentifizieren, geben Sie den Benutzernamen/das Kennwort/die Domäne in PrinterSpec an. Sie können ein Kennwort mit AEM Granite CyprtoSupport Service verschlüsseln, indem Sie die folgenden Schritte ausführen:
 
-1. Wechseln Sie zu https://&lt;Server>:&lt;Port>/system/console.
+1. Gehen Sie zu https://&lt;server>:&lt;port>/system/console.
 
 1. Rufen Sie **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]** auf.
 

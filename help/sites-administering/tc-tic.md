@@ -137,7 +137,7 @@ Die Communities-Eigenschaften steuern, wie die Übersetzung von benutzergenerier
 |---|---|
 | Übersetzungsanbieter | Wählen Sie den Übersetzungsanbieter aus, um die Übersetzung durchzuführen. Die Anbieter, für die Cloudkonfigurationen erstellt wurden, werden in der Liste angezeigt. |
 | Inhaltskategorie | Eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
-| Auswählen eines Gebietsschemas zur Verwendung als globaler Freigabespeicher | (Optional) Wenn Sie ein Gebietsschema zum Speichern von benutzergenerierten Inhalten auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) der Website. Wenn Sie Kein gemeinsamer Speicher auswählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
+| Auswählen eines Gebietsschemas zur Verwendung als globaler Freigabespeicher | (Optional) Wenn Sie ein Gebietsschema zum Speichern von benutzergenerierten Inhalten auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) für die Website. Wenn Sie Kein gemeinsamer Speicher auswählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
 
 ### Assets-Konfigurationseigenschaften {#assets-configuration-properties}
 
@@ -207,7 +207,7 @@ Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die unterge
 
 Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um das Thema Bekleidung. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. Die Stammseite der Website ist mit einem Framework für die Übersetzungsintegration verknüpft, das vorgibt, dass maschinelle Übersetzung mit der Kategorie „Bekleidung“ angewendet werden soll. Der Zweig, der das Unternehmen beschreibt, nutzt dagegen ein Framework, bei dem maschinelle Übersetzung mit der Kategorie „Allgemein“ angewendet wird.
 
-Darüber hinaus bietet der benutzergenerierte Inhalt (UGC) für alle Communities [SCF-Komponenten](/help/communities/scf.md) auf den Seiten die Möglichkeit, dass Benutzer Inhalte übersetzen können. Weitere Informationen finden Sie unter [Übersetzung benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
+Für alle Gemeinden [SCF-Komponenten](/help/communities/scf.md) Auf den Seiten bietet der benutzergenerierte Inhalt (UGC) Benutzern die Möglichkeit, Inhalte zu übersetzen. Weitere Informationen finden Sie unter [Übersetzung benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
 
 ### Verknüpfen einer Seite mit einem Übersetzungsdienstleister {#associating-a-page-with-a-translation-provider}
 

@@ -35,7 +35,7 @@ Die folgenden Einschränkungen gelten, wenn ein Formularentwurf vom Wert überge
 
 * Relativer verknüpfter Inhalt kann nicht im Formularentwurf enthalten sein. Alle Bilder und Fragmente müssen in den Formularentwurf eingebettet oder auf den unbedingt verwiesen werden.
 * Serverseitige Berechnungen können nach der Wiedergabe des Formulars nicht mehr ausgeführt werden. Wenn das Formular an den Forms-Dienst zurückgesendet wird, werden die Daten extrahiert und ohne serverseitige Berechnungen zurückgegeben.
-* Da HTML nur verknüpfte Bilder zur Laufzeit verwenden kann, ist es nicht möglich, HTML mit eingebetteten Bildern zu generieren. Dies liegt daran, dass der Forms-Dienst eingebettete Bilder mit HTML unterstützt, indem er die Bilder von einem referenzierten Formularentwurf abruft. Da ein Formularentwurf, der vom Wert übergeben wird, keinen referenzierten Speicherort hat, können eingebettete Bilder nicht extrahiert werden, wenn die HTML-Seite angezeigt wird. Daher müssen Bildverweise absolute Pfade sein, die in HTML gerendert werden sollen.
+* Da HTML nur verknüpfte Bilder zur Laufzeit verwenden kann, ist es nicht möglich, HTML mit eingebetteten Bildern zu generieren. Dies liegt daran, dass der Forms-Dienst eingebettete Bilder mit HTML unterstützt, indem er die Bilder von einem referenzierten Formularentwurf abruft. Da ein Formularentwurf, der vom Wert übergeben wird, keinen referenzierten Speicherort hat, können eingebettete Bilder nicht extrahiert werden, wenn die HTML-Seite angezeigt wird. Daher müssen Bildverweise absolute Pfade sein, die im HTML gerendert werden sollen.
 
 >[!NOTE]
 >
@@ -61,11 +61,11 @@ Fügen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie e
 
 **Erstellen eines Forms Client-API-Objekts**
 
-Bevor Sie Daten programmgesteuert in eine Client-API für PDF-Formulare importieren können, müssen Sie einen Client für den Datenintegrationsdienst erstellen. Beim Erstellen eines Service-Clients definieren Sie Verbindungseinstellungen, die zum Aufrufen eines Dienstes erforderlich sind.
+Bevor Sie Daten programmgesteuert in eine PDF Form Client API importieren können, müssen Sie einen Client für den Datenintegrationsdienst erstellen. Beim Erstellen eines Service-Clients definieren Sie Verbindungseinstellungen, die zum Aufrufen eines Dienstes erforderlich sind.
 
 **Referenzieren des Formularentwurfs**
 
-Beim Rendern eines Formulars nach Wert müssen Sie ein `com.adobe.idp.Document`-Objekt erstellen, das den wiederzugebenden Formularentwurf enthält. Sie können auf eine vorhandene XDP-Datei verweisen oder einen Formularentwurf zur Laufzeit dynamisch erstellen und `com.adobe.idp.Document` mit diesen Daten ausfüllen.
+Beim Rendern eines Formulars nach Wert müssen Sie eine `com.adobe.idp.Document` -Objekt, das den wiederzugebenden Formularentwurf enthält. Sie können auf eine vorhandene XDP-Datei verweisen oder einen Formularentwurf zur Laufzeit dynamisch erstellen und eine `com.adobe.idp.Document` mit diesen Daten.
 
 >[!NOTE]
 >
@@ -73,11 +73,11 @@ Beim Rendern eines Formulars nach Wert müssen Sie ein `com.adobe.idp.Document`-
 
 **Formular nach Wert rendern**
 
-Um ein Formular nach Wert wiederzugeben, übergeben Sie eine `com.adobe.idp.Document`-Instanz, die den Formularentwurf enthält, an den Parameter `inDataDoc` der Rendermethode (kann eine der Rendermethoden des Objekts `FormsServiceClient` sein, z. B. `renderPDFForm`, `(Deprecated) renderHTMLForm` usw.). Dieser Parameterwert ist normalerweise für Daten reserviert, die mit dem Formular zusammengeführt werden. Übergeben Sie auf ähnliche Weise einen leeren Zeichenfolgenwert an den Parameter `formQuery` . Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.
+Übergeben Sie eine `com.adobe.idp.Document` -Instanz, die den Formularentwurf für die Render-Methode enthält `inDataDoc` -Parameter (kann einer der `FormsServiceClient` Rendermethoden des Objekts, z. B. `renderPDFForm`, `(Deprecated) renderHTMLForm`usw.). Dieser Parameterwert ist normalerweise für Daten reserviert, die mit dem Formular zusammengeführt werden. Übergeben Sie einen leeren Zeichenfolgenwert an die `formQuery` Parameter. Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.
 
 >[!NOTE]
 >
->Wenn Sie Daten im Formular anzeigen möchten, müssen diese im Element `xfa:datasets` angegeben werden. Informationen zur XFA-Architektur finden Sie unter [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
+>Wenn Sie Daten im Formular anzeigen möchten, müssen diese im `xfa:datasets` -Element. Informationen zur XFA-Architektur finden Sie unter [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **Schreiben Sie den Formulardaten-Stream in den Client-Webbrowser**
 
@@ -110,35 +110,35 @@ Wiedergabe eines Formulars nach Wert mithilfe der Forms-API (Java):
 1. Erstellen eines Forms Client-API-Objekts
 
    * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält.
-   * Erstellen Sie ein `FormsServiceClient` -Objekt, indem Sie dessen Konstruktor verwenden und das `ServiceClientFactory` -Objekt übergeben.
+   * Erstellen Sie eine `FormsServiceClient` -Objekt durch Verwendung seines Konstruktors und Übergabe des `ServiceClientFactory` -Objekt.
 
 1. Referenzieren des Formularentwurfs
 
-   * Erstellen Sie ein `java.io.FileInputStream` -Objekt, das den Formularentwurf darstellt, der durch Verwendung des zugehörigen Konstruktors wiedergegeben werden soll, und übergeben Sie einen string -Wert, der den Speicherort der XDP-Datei angibt.
+   * Erstellen Sie eine `java.io.FileInputStream` -Objekt, das den Formularentwurf darstellt, der mithilfe des Konstruktors wiedergegeben werden soll, und einen Zeichenfolgenwert übergibt, der den Speicherort der XDP-Datei angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
 1. Formular nach Wert rendern
 
-   Rufen Sie die `renderPDFForm` -Methode des Objekts `FormsServiceClient` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsServiceClient` -Objekt `renderPDFForm` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein leerer Zeichenfolgenwert. (Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.)
-   * Ein `com.adobe.idp.Document` -Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
-   * Ein `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter. Sie können `null` angeben, wenn Sie keine Laufzeitoptionen angeben möchten.
-   * Ein `URLSpec` -Objekt, das URI-Werte enthält, die für den Forms-Dienst erforderlich sind.
-   * Ein `java.util.HashMap` -Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * A `com.adobe.idp.Document` -Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
+   * A `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie `null` , wenn Sie keine Laufzeitoptionen festlegen möchten.
+   * A `URLSpec` -Objekt, das URI-Werte enthält, die für den Forms-Dienst erforderlich sind.
+   * A `java.util.HashMap` -Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie `null` , wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die `renderPDFForm`-Methode gibt ein `FormsResult`-Objekt zurück, das einen Formulardatenstream enthält, der in den Client-Webbrowser geschrieben werden kann.
+   Die `renderPDFForm` -Methode gibt eine `FormsResult` -Objekt, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden kann.
 
 1. Schreiben Sie den Formulardaten-Stream in den Client-Webbrowser
 
-   * Erstellen Sie ein `com.adobe.idp.Document` -Objekt, indem Sie die `FormsResult` -Methode des Objekts &quot;s `getOutputContent` aufrufen.
-   * Rufen Sie den Inhaltstyp des Objekts `com.adobe.idp.Document` ab, indem Sie dessen Methode `getContentType` aufrufen.
-   * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie seine `setContentType`-Methode aufrufen und den Inhaltstyp des Objekts `com.adobe.idp.Document` übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Methode des Objekts `getOutputStream` verwendet wird.
-   * Erstellen Sie ein `java.io.InputStream` -Objekt, indem Sie die `getInputStream` -Methode des Objekts `com.adobe.idp.Document` aufrufen.
-   * Erstellen Sie ein Byte-Array und weisen Sie die Größe des `InputStream` -Objekts zu. Rufen Sie die `available` -Methode des Objekts `InputStream` auf, um die Größe des `InputStream` -Objekts zu erhalten.
-   * Füllen Sie das Byte-Array mit dem Formulardatenstream, indem Sie die `read` -Methode des Objekts `InputStream` aufrufen und das Byte-Array als Argument übergeben.
-   * Rufen Sie die `write` -Methode des Objekts `javax.servlet.ServletOutputStream` auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die `write`-Methode.
+   * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` object ‘s `getOutputContent` -Methode.
+   * Abrufen des Inhaltstyps der `com.adobe.idp.Document` -Objekt durch Aufrufen seiner `getContentType` -Methode.
+   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode und Übergabe des Inhaltstyps der `com.adobe.idp.Document` -Objekt.
+   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
+   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
+   * Erstellen Sie ein Byte-Array und weisen Sie die Größe der `InputStream` -Objekt. Rufen Sie die `InputStream` -Objekt `available` -Methode, um die Größe der `InputStream` -Objekt.
+   * Füllen Sie das Byte-Array mit dem Formulardatenstream, indem Sie die `InputStream` -Objekt `read`-Methode verwenden und das Byte-Array als Argument übergeben.
+   * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardaten-Streams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die `write` -Methode.
 
 **Siehe auch**
 
@@ -161,44 +161,44 @@ Wiedergabe eines Formulars nach Wert mithilfe der Forms-API (Webdienst):
 
 1. Erstellen eines Forms Client-API-Objekts
 
-   Erstellen Sie ein `FormsService` -Objekt und legen Sie Authentifizierungswerte fest.
+   Erstellen Sie eine `FormsService` Objekt und legen Sie Authentifizierungswerte fest.
 
 1. Referenzieren des Formularentwurfs
 
    * Erstellen Sie ein Objekt `java.io.FileInputStream`, indem Sie den Konstruktor verwenden. Übergeben Sie einen string -Wert, der den Speicherort der XDP-Datei angibt.
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines mit einem Kennwort verschlüsselten PDF-Dokuments verwendet.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des Objekts `java.io.FileInputStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Größe des `java.io.FileInputStream`-Objekts mit der `available`-Methode abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `read` -Methode des Objekts `java.io.FileInputStream` aufrufen und das Byte-Array übergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie seine `setBinaryData`-Methode aufrufen und das Byte-Array übergeben.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Die `BLOB` -Objekt wird verwendet, um ein mit einem Kennwort verschlüsseltes PDF-Dokument zu speichern.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `java.io.FileInputStream` -Objekt. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `java.io.FileInputStream` Größe des Objekts anhand seiner `available` -Methode.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `java.io.FileInputStream` -Objekt `read` -Methode verwenden und das Byte-Array übergeben.
+   * Füllen Sie die `BLOB` -Objekt durch Aufrufen seiner `setBinaryData` -Methode verwenden und das Byte-Array übergeben.
 
 1. Formular nach Wert rendern
 
-   Rufen Sie die `renderPDFForm` -Methode des Objekts `FormsService` auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `FormsService` -Objekt `renderPDFForm` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein leerer Zeichenfolgenwert. (Normalerweise erfordert dieser Parameter einen Zeichenfolgenwert, der den Namen des Formularentwurfs angibt.)
-   * Ein `BLOB` -Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
-   * Ein `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter. Sie können `null` angeben, wenn Sie keine Laufzeitoptionen angeben möchten.
-   * Ein `URLSpec` -Objekt, das URI-Werte enthält, die für den Forms-Dienst erforderlich sind.
-   * Ein `java.util.HashMap` -Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter. Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
-   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder` -Objekt, das von der -Methode ausgefüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
-   * Ein leeres `javax.xml.rpc.holders.LongHolder` -Objekt, das von der -Methode ausgefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular.)
-   * Ein leeres `javax.xml.rpc.holders.StringHolder` -Objekt, das von der -Methode ausgefüllt wird. (Dieses Argument speichert den Gebietsschemawert.)
+   * A `BLOB` -Objekt, das den Formularentwurf enthält. Normalerweise ist dieser Parameterwert für Daten reserviert, die mit dem Formular zusammengeführt werden.
+   * A `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert. Dies ist ein optionaler Parameter, den Sie `null` , wenn Sie keine Laufzeitoptionen festlegen möchten.
+   * A `URLSpec` -Objekt, das URI-Werte enthält, die für den Forms-Dienst erforderlich sind.
+   * A `java.util.HashMap` -Objekt, das Dateianlagen speichert. Dies ist ein optionaler Parameter, den Sie `null` , wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein leeres `com.adobe.idp.services.holders.BLOBHolder` -Objekt, das von der -Methode aufgefüllt wird. Damit wird das wiedergegebene PDF-Formular gespeichert.
+   * Ein leeres `javax.xml.rpc.holders.LongHolder` -Objekt, das von der -Methode aufgefüllt wird. (Dieses Argument speichert die Anzahl der Seiten im Formular.)
+   * Ein leeres `javax.xml.rpc.holders.StringHolder` -Objekt, das von der -Methode aufgefüllt wird. (Dieses Argument speichert den Gebietsschemawert.)
    * Ein leeres `com.adobe.idp.services.holders.FormsResultHolder` -Objekt, das die Ergebnisse dieses Vorgangs enthält.
 
-   Die `renderPDFForm`-Methode füllt das `com.adobe.idp.services.holders.FormsResultHolder`-Objekt, das als letzter Argumentwert übergeben wird, mit einem Formulardatenstream, der in den Client-Webbrowser geschrieben werden muss.
+   Die `renderPDFForm` -Methode füllt die `com.adobe.idp.services.holders.FormsResultHolder` -Objekt, das als letzter Argumentwert mit einem Formulardatenstream übergeben wird, der in den Client-Webbrowser geschrieben werden muss.
 
 1. Schreiben Sie den Formulardaten-Stream in den Client-Webbrowser
 
-   * Erstellen Sie ein `FormResult` -Objekt, indem Sie den Wert des `com.adobe.idp.services.holders.FormsResultHolder` -Datenelements des Objekts `value` abrufen.
-   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie die `getOutputContent` -Methode des Objekts `FormsResult` aufrufen.
-   * Rufen Sie den Inhaltstyp des Objekts `BLOB` ab, indem Sie dessen Methode `getContentType` aufrufen.
-   * Legen Sie den Inhaltstyp des Objekts `javax.servlet.http.HttpServletResponse` fest, indem Sie seine `setContentType`-Methode aufrufen und den Inhaltstyp des Objekts `BLOB` übergeben.
-   * Erstellen Sie ein `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardatenstreams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Methode des Objekts `getOutputStream` verwendet wird.
-   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `getBinaryData`-Methode des Objekts `BLOB`. Diese Aufgabe weist den Inhalt des Objekts `FormsResult` dem Byte-Array zu.
-   * Rufen Sie die `write` -Methode des Objekts `javax.servlet.http.HttpServletResponse` auf, um den Formulardatenstream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die `write`-Methode.
+   * Erstellen Sie eine `FormResult` -Objekt durch Abrufen des Werts der `com.adobe.idp.services.holders.FormsResultHolder` -Objekt `value` Datenelement.
+   * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, durch Aufrufen der `FormsResult` -Objekt `getOutputContent` -Methode.
+   * Abrufen des Inhaltstyps der `BLOB` -Objekt durch Aufrufen seiner `getContentType` -Methode.
+   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode und Übergabe des Inhaltstyps der `BLOB` -Objekt.
+   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
+   * Erstellen Sie ein Byte-Array und füllen Sie es durch Aufrufen der `BLOB` -Objekt `getBinaryData` -Methode. Diese Aufgabe weist den Inhalt des `FormsResult` -Objekt zum Byte-Array hinzu.
+   * Rufen Sie die `javax.servlet.http.HttpServletResponse` -Objekt `write` -Methode zum Senden des Formulardaten-Streams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die `write` -Methode.
 
 **Siehe auch**
 
 [Rendern von Forms nach Wert](#rendering-forms-by-value)
 
-[Aufrufen von AEM Forms mit der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

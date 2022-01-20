@@ -1,8 +1,8 @@
 ---
 title: Das Seiten-Exporttool
-seo-title: Das Seiten-Exporttool
+seo-title: The Page Exporter
 description: Erfahren Sie, wie Sie das AEM-Seiten-Exporttool verwenden.
-seo-description: Erfahren Sie, wie Sie das AEM-Seiten-Exporttool verwenden.
+seo-description: Learn how to use the AEM Page Exporter.
 uuid: 2ca2b8f1-c723-4e6b-8c3d-f5886cd0d3f1
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
 exl-id: a5cb3b7b-d40f-4d86-8473-fb584f1d486c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1008'
 ht-degree: 63%
 
 ---
@@ -25,7 +25,7 @@ Wenn Sie den Export konfiguriert haben, können Sie einfach eine Seite im Browse
 
 ## Exportieren einer Seite {#exporting-a-page}
 
-Die folgenden Schritte beschreiben, wie Sie eine Seite exportieren können. Vorausgesetzt wird, dass für Ihre Website eine Vorlage für die Exportkonfiguration vorliegt: Eine Konfigurationsvorlage legt fest, wie eine Seite exportiert wird, und gilt speziell für Ihre Website. Informationen zum Erstellen einer Konfigurationsvorlage finden Sie im Abschnitt [Erstellen einer Page Exporter-Konfiguration für Ihre Site](#creating-a-page-exporter-configuration-for-your-site) .
+Die folgenden Schritte beschreiben, wie Sie eine Seite exportieren können. Vorausgesetzt wird, dass für Ihre Website eine Vorlage für die Exportkonfiguration vorliegt: Eine Konfigurationsvorlage legt fest, wie eine Seite exportiert wird, und gilt speziell für Ihre Website. Informationen zum Erstellen einer Konfigurationsvorlage finden Sie im Abschnitt [Erstellen einer Seiten-Exporter-Konfiguration für Ihre Site](#creating-a-page-exporter-configuration-for-your-site) Abschnitt.
 
 So exportieren Sie eine Seite:
 
@@ -36,16 +36,16 @@ So exportieren Sie eine Seite:
 1. Klicken Sie auf das Lupensymbol und wählen Sie eine Konfigurationsvorlage aus. Wählen Sie die **geometrixx**-Vorlage aus; sie ist die standardmäßige Vorlage für die Geometrixx-Website. Klicken Sie auf **OK**.
 
 1. Klicken Sie auf **OK**, um das Dialogfeld „Seiteneigenschaften“ zu schließen.
-1. Fordern Sie die Seite an, indem Sie `html` in der URL durch `export.zip` ersetzen.
+1. Anfordern der Seite durch Ersetzen `html` mit `export.zip` in der URL.
 
-1. Laden Sie die Datei `<page-name>.export.zip` in Ihr Dateisystem herunter.
+1. Laden Sie die `<page-name>.export.zip` in Ihr Dateisystem.
 
 1. Entpacken Sie in Ihrem Dateisystem die Datei:
 
-   * Die HTML-Datei der Seite ( `<page-name>.html`) ist unter `<unzip-dir>/<page-path>` verfügbar.
-   * Die anderen Ressourcen (JS- und CSS-Dateien, Grafiken usw.) befinden sich in den in der Exportvorlage festgelegten Verzeichnissen. In diesem Beispiel befinden sich einige Ressourcen unter `<unzip-dir>/etc`, einige unter `<unzip-dir>/<page-path>`.
+   * die HTML-Datei der Seite ( `<page-name>.html`) ist unten verfügbar `<unzip-dir>/<page-path>`
+   * Die anderen Ressourcen (JS- und CSS-Dateien, Grafiken usw.) befinden sich in den in der Exportvorlage festgelegten Verzeichnissen. In diesem Beispiel finden Sie einige Ressourcen unter `<unzip-dir>/etc`, einige unten `<unzip-dir>/<page-path>`.
 
-1. Öffnen Sie die HTML-Datei der Seite ( `<unzip-dir>/<page-path>.html`) in Ihrem Browser, um das Rendering zu überprüfen.
+1. Öffnen Sie die HTML-Datei der Seite ( `<unzip-dir>/<page-path>.html`), um das Rendering zu überprüfen.
 
 ## Erstellen einer Seiten-Exporttoolkonfiguration für Ihre Website {#creating-a-page-exporter-configuration-for-your-site}
 
@@ -58,11 +58,11 @@ AEM bettet einige Vorlagen ein, darunter eine:
    * Dient als Fallback-Vorlage, wenn keine Konfigurationsvorlage im Repository gefunden wird
    * Kann als Grundlage für eine neue Konfigurationsvorlage dienen.
 
-* Eine für die Site **Geometrixx** unter `/etc/contentsync/templates/geometrixx` reservierte Seite. Diese Vorlage kann als Beispiel verwendet werden, um eine neue zu erstellen.
+* Eine für die **Geometrixx** Site, `/etc/contentsync/templates/geometrixx`. Diese Vorlage kann als Beispiel verwendet werden, um eine neue zu erstellen.
 
 So erstellen Sie eine Konfigurationsvorlage für das Seiten-Exporttool:
 
-1. Erstellen Sie in **CRXDE Lite** einen Knoten unter `/etc/contentsync/templates`:
+1. In **CRXDE Lite**, erstellen Sie einen Knoten unter `/etc/contentsync/templates`:
 
    * Name: z. B. `mysite`. Der Name wird im Dialogfeld &quot;Seiteneigenschaften&quot;angezeigt, wenn Sie die Vorlage &quot;Seitenexporteur&quot;auswählen.
    * Typ: `nt:unstructured`
@@ -75,45 +75,45 @@ Die Konfigurationsvorlage besteht aus einer Knotenstruktur. Jeder Knoten verfüg
 
 Mit den folgenden Knoten können Sie eine Export-Konfigurationsvorlage erstellen:
 
-**page** nodeDer Seitenknoten wird zum Kopieren des Seiten-HTML-Codes in die ZIP-Datei verwendet. Er weist die folgenden Eigenschaften auf:
+**Seitenknoten** Der Seitenknoten wird zum Kopieren des Seiten-HTML-Codes in die ZIP-Datei verwendet. Er weist die folgenden Eigenschaften auf:
 
 * Er ist ein obligatorischer Knoten.
-* Befindet sich unter `/etc/contentsync/templates/<sitename>`.
-* Sein Name ist `page`.
+* befindet sich unten `/etc/contentsync/templates/<sitename>`.
+* Der Name lautet `page`.
 * Sein Knotentyp ist `nt:unstructured`
 
 Der Knoten `page` hat folgende Eigenschaften:
 
-* Eine `type` -Eigenschaft mit dem Wert `pages`.
+* A `type` -Eigenschaft mit dem Wert `pages`.
 
 * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
 
 * Die anderen Eigenschaften werden im Abschnitt Übersicht der Konfigurationstypen des Content Sync-Frameworks beschrieben.
 
-**rewrite-** Knoten Der rewrite-Knoten definiert, wie die Links auf der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
+**rewrite-Knoten** Der Knoten rewrite definiert, wie die Links auf der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
 
 Auf der Seite Inhaltssynchronisierung finden Sie eine vollständige Beschreibung des Knotens `rewrite`.
 
-**design** nodeDer Designknoten wird zum Kopieren des für die exportierte Seite verwendeten Designs verwendet. Er weist die folgenden Eigenschaften auf:
+**design node** Der Knoten &quot;design&quot;wird zum Kopieren des für die exportierte Seite verwendeten Designs verwendet. Er weist die folgenden Eigenschaften auf:
 
 * Er ist optional.
-* Befindet sich unter `/etc/contentsync/templates/<sitename>`.
-* Sein Name ist `design`.
+* befindet sich unten `/etc/contentsync/templates/<sitename>`.
+* Der Name lautet `design`.
 * Sein Knotentyp ist `nt:unstructured`.
 
 Der Knoten `design` hat folgende Eigenschaften:
 
-* Eine `type` -Eigenschaft, die auf den Wert `copy` gesetzt ist.
+* A `type` Eigenschaft auf den Wert eingestellt `copy`.
 
 * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
 
-**generic** nodeEin generischer Knoten wird verwendet, um Ressourcen wie clientlibs .js - oder .css -Dateien in die ZIP-Datei zu kopieren. Er weist die folgenden Eigenschaften auf:
+**generic Knoten** Ein generischer Knoten wird verwendet, um Ressourcen wie .js- oder .css-Dateien clientlibs in die ZIP-Datei zu kopieren. Er weist die folgenden Eigenschaften auf:
 
 * Er ist optional.
-* Befindet sich unter `/etc/contentsync/templates/<sitename>`.
+* befindet sich unten `/etc/contentsync/templates/<sitename>`.
 * Er weist keinen bestimmten Namen auf.
 * Sein Knotentyp ist `nt:unstructured`.
-* Hat eine `type`-Eigenschaft und alle `type` zugehörigen Eigenschaften, wie im Abschnitt Übersicht über Konfigurationstypen des Framework zur Inhaltssynchronisierung definiert.
+* Hat eine `type` -Eigenschaft und `type` verwandte Eigenschaften, wie im Abschnitt Übersicht über Konfigurationstypen des Content Sync-Frameworks definiert.
 
 Beispielsweise kopiert der folgende Konfigurationsknoten die JS-Dateien der Geometrixx-Clientlibs in die ZIP-Datei:
 
@@ -141,8 +141,8 @@ Um eine Seite programmatisch zu exportieren, können Sie den OSGi-Dienst [PageEx
 * eine Seite exportieren und in die HTTP-Servlet-Antwort schreiben
 * eine Seite exportieren und die ZIP-Datei an einem bestimmten Ort speichern
 
-Das Servlet, das an den Selektor `export` und die Erweiterung `zip` gebunden ist, verwendet den PageExporter-Dienst.
+Das Servlet, das an die `export` und `zip` -Erweiterung verwendet den PageExporter-Dienst.
 
 ## Fehlerbehebung {#troubleshooting}
 
-Wenn beim Herunterladen der ZIP-Datei ein Problem auftritt, können Sie den Knoten `/var/contentsync` im Repository löschen und die Exportanfrage erneut senden.
+Wenn beim Herunterladen der ZIP-Datei Probleme auftreten, können Sie die `/var/contentsync` -Knoten im Repository und senden Sie die Exportanfrage erneut.

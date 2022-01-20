@@ -1,8 +1,8 @@
 ---
 title: Anzeigen von Komponenten basierend auf der verwendeten Vorlage
-seo-title: Anzeigen von Komponenten basierend auf der verwendeten Vorlage
+seo-title: Displaying components based on the template used
 description: Erfahren Sie, wie Sie bei der Erstellung eines Formulars Komponenten in der Seitenleiste basierend auf der ausgewählten Vorlage aktivieren können.
-seo-description: Erfahren Sie, wie Sie bei der Erstellung eines Formulars Komponenten in der Seitenleiste basierend auf der ausgewählten Vorlage aktivieren können.
+seo-description: When you create a form, learn how you can enable components in the sidebar based on the template selected.
 uuid: 4e87f400-fb45-413d-9be8-72edbe99f210
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 exl-id: a4cee2e6-a56f-4355-8176-b3ed7478a775
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 76%
+source-wordcount: '352'
+ht-degree: 74%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 76%
 
 Wenn ein Formularersteller ein adaptives Formular anhand einer [Vorlage](/help/forms/using/template-editor.md) erstellt, kann der Formularersteller basierend auf der Vorlagenrichtlinie bestimmte Komponenten sehen und verwenden. Sie können eine Content-Richtlinie für Vorlagen angeben, mit der Sie eine Gruppe von Komponenten auswählen können, die Formularverfassern beim Formular-Authoring angezeigt wird.
 
-## Ändern der Content-Richtlinie einer Vorlage  {#changing-the-content-policy-of-a-template}
+## Ändern der Content-Richtlinie einer Vorlage {#changing-the-content-policy-of-a-template}
 
-Wenn Sie eine Vorlage erstellen, wird sie unter `/conf` im Inhalts-Repository erstellt. Basierend auf den Ordnern, die Sie im Verzeichnis `/conf` erstellt haben, lautet der Pfad zu Ihrer Vorlage: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Wenn Sie eine Vorlage erstellen, wird sie unter `/conf` im Inhalts-Repository. Basierend auf den Ordnern, die Sie in der `/conf` -Verzeichnis, lautet der Pfad zu Ihrer Vorlage: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Content-Richtlinie einer Vorlage in der Seitenleiste anzuzeigen:
 
@@ -45,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
    ![Kopieren von Standardrichtlinien](assets/crx-default1.png)
 
-1. Wählen Sie die neue Richtlinie aus, die Sie erstellen, und wählen Sie die Eigenschaft **components** im rechten Bereich mit dem Typ `string[]` aus.
+1. Wählen Sie die neue Richtlinie aus, die Sie erstellen, und wählen Sie die **Komponenten** Eigenschaft im rechten Bereich mit Typ `string[]`.
 
    Wenn Sie die Komponenteneigenschaft auswählen und öffnen, erscheint das Dialogfeld „Komponenten bearbeiten“. Im Dialogfeld „Komponenten bearbeiten“ können Sie Komponentengruppen mit den Tasten **+** und **-** hinzufügen oder entfernen. Sie können Komponentengruppen hinzufügen, die Komponenten enthalten, die von Autoren verwendet werden sollen.
 
@@ -53,11 +53,11 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
    Nachdem Sie eine Komponentengruppe hinzugefügt haben, klicken Sie auf **„OK“**, um die Liste zu aktualisieren, und klicken Sie dann auf **Alle speichern** über der CRXDE-Adressleiste und aktualisieren Sie.
 
-1. Ändern Sie die Content-Richtlinie in der Vorlage vom Standard zu der neu erstellten Richtlinie. ( `myPolicy` in diesem Beispiel)
+1. Ändern Sie die Content-Richtlinie in der Vorlage vom Standard zu der neu erstellten Richtlinie. ( `myPolicy` in diesem Beispiel.)
 
    Um die Richtlinie zu ändern, navigieren Sie in CRXDE zu `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
-   Ändern Sie in der Eigenschaft `cq:policy` `default` in den neuen Richtliniennamen ( `myPolicy`).
+   Im `cq:policy` Eigenschaft, ändern `default` zum neuen Richtliniennamen ( `myPolicy`).
 
    ![Aktualisierte Content-Richtlinie für Vorlagen](assets/updated-policy.png)
 

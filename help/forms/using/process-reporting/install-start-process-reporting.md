@@ -1,8 +1,8 @@
 ---
 title: Erste Schritte mit Prozessberichten
-seo-title: Erste Schritte mit Prozessberichten
+seo-title: Getting Started with Process Reporting
 description: Die Schritte, die Sie für die ersten Schritte mit AEM Forms on JEE Process Reporting ausführen müssen
-seo-description: Die Schritte, die Sie für die ersten Schritte mit AEM Forms on JEE Process Reporting ausführen müssen
+seo-description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
 uuid: 86ba17da-57e5-4e7a-a864-583d8c0f830e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,20 +11,20 @@ discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 exl-id: 0af2e992-6670-4e31-9d26-ab74c5b9df8e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 3%
+source-wordcount: '1716'
+ht-degree: 4%
 
 ---
 
 # Erste Schritte mit Prozessberichten {#getting-started-with-process-reporting}
 
-Mit der Prozessberichterstellung können AEM Forms-Benutzer Informationen zu AEM Forms-Prozessen abfragen, die derzeit in der AEM Forms-Implementierung definiert sind. Die Prozessberichterstellung greift jedoch nicht direkt aus dem AEM Forms-Repository auf Daten zu. Die Daten werden zunächst vom ProcessDataPublisher &amp; ProcessDataStorage-Dienst *s im Process Reporting-Repository veröffentlicht (* s). Die Berichte und Abfragen in Process Reporting werden dann aus den im Repository veröffentlichten Process Reporting-Daten generiert. Process Reporting wird als Bestandteil des Forms Workflow-Moduls installiert.
+Mit der Prozessberichterstellung können AEM Forms-Benutzer Informationen zu AEM Forms-Prozessen abfragen, die derzeit in der AEM Forms-Implementierung definiert sind. Die Prozessberichterstellung greift jedoch nicht direkt aus dem AEM Forms-Repository auf Daten zu. Die Daten werden zunächst auf geplanter Basis im Process Reporting-Repository veröffentlicht (*vom ProcessDataPublisher &amp; ProcessDataStorage-Dienst* s). Die Berichte und Abfragen in Process Reporting werden dann aus den im Repository veröffentlichten Process Reporting-Daten generiert. Process Reporting wird als Bestandteil des Forms Workflow-Moduls installiert.
 
 In diesem Artikel werden die Schritte zum Aktivieren der Veröffentlichung von AEM Forms-Daten in das Process Reporting-Repository beschrieben. Danach können Sie Process Reporting verwenden, um Berichte und Abfragen auszuführen. Der Artikel behandelt auch die verfügbaren Optionen zum Konfigurieren der Process Reporting-Dienste.
 
 ## Voraussetzungen für die Prozessberichterstellung {#process-reporting-pre-requisites}
 
-### Nicht wesentliche Prozesse bereinigen {#purge-non-essential-processes}
+### Bereinigen nicht wesentlicher Prozesse {#purge-non-essential-processes}
 
 Wenn Sie derzeit Forms Workflow verwenden, kann die AEM Forms-Datenbank möglicherweise eine große Datenmenge enthalten
 
@@ -38,7 +38,7 @@ Weitere Informationen zum Bereinigen von AEM Forms-Prozessdaten finden Sie unter
 
 ## Konfigurieren von Process Reporting Services {#configuring-process-reporting-services}
 
-### Planen der Veröffentlichung von Prozessdaten {#schedule-process-data-publishing}
+### Veröffentlichung von Prozessdaten planen {#schedule-process-data-publishing}
 
 Die Process Reporting Services veröffentlichen Daten aus der AEM Forms-Datenbank auf geplanter Basis in das Process Reporting-Repository.
 
@@ -55,10 +55,10 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 #### JBoss Application Server {#jboss-application-server}
 
 1. Beenden Sie die AEM Forms-Serverinstanz.
-   * (Für Windows) Öffnen Sie die Datei `[*JBoss root*]/bin/run.conf.bat` in einem Editor.
+   * (Für Windows) Öffnen Sie die `[*JBoss root*]/bin/run.conf.bat` in einem Editor.
    * (Für Linux, AIX und Solaris) `[*JBoss root*]/bin/run.conf.sh` in einem Editor.
 
-1. JVM-Argument `-Dreporting.publisher.cron = <expression>.` hinzufügen
+1. JVM-Argument hinzufügen `-Dreporting.publisher.cron = <expression>.`
 
    Beispiel: Der folgende Cron-Ausdruck bewirkt, dass Process Reporting alle 5 Stunden AEM Forms-Daten im Process Reporting-Repository veröffentlicht:
 
@@ -71,19 +71,19 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 #### WebSphere Application Server {#websphere-application-server}
 
 1. Beenden Sie die AEM Forms-Serverinstanz.
-1. Melden Sie sich bei WebSphere Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Servers** > **Application servers** und klicken Sie anschließend im rechten Bereich auf den Servernamen.
+1. Melden Sie sich bei WebSphere Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Server** >  **Anwendungsserver** und klicken Sie dann im rechten Bereich auf den Servernamen.
 
 1. Klicken Sie unter „Server Infrastructure“ auf **Java and Process Management** > **Process Definition**.
 
 1. Klicken Sie unter „Additional Properties“ auf **Java Virtual Machine**.
 
-   Fügen Sie im Feld Generic JVM arguments das Argument `-Dreporting.publisher.cron = <expression>.` hinzu.
+   Fügen Sie im Feld Generic JVM arguments das -Argument hinzu. `-Dreporting.publisher.cron = <expression>.`
 
    **Beispiel**: Der folgende Cron-Ausdruck bewirkt, dass Process Reporting alle 5 Stunden AEM Forms-Daten im Process Reporting-Repository veröffentlicht:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Klicken Sie auf **Apply**, klicken Sie auf OK und dann auf **Save directly to the Übergeordnet configuration**.
+1. Klicken **Anwenden**, klicken Sie auf &quot;OK&quot;und dann auf **Direktes Speichern in der Übergeordneten Konfiguration**.
 
 1. Starten Sie die AEM Forms-Serverinstanz neu.
 
@@ -98,7 +98,7 @@ Führen Sie die folgenden Schritte aus, um den Veröffentlichungszeitplan zu än
 
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten **Configuration** > **Server Start**.
 
-1. Fügen Sie im Feld Arguments das JVM-Argument `-Dreporting.publisher.cron = <expression>` hinzu.
+1. Fügen Sie im Feld Arguments das JVM-Argument hinzu `-Dreporting.publisher.cron = <expression>`.
 
    **Beispiel**: Der folgende Cron-Ausdruck bewirkt, dass Process Reporting alle 5 Stunden AEM Forms-Daten im Process Reporting-Repository veröffentlicht:
 
@@ -120,8 +120,8 @@ Sie können die Administration Console verwenden, um den Stamm (**default**: `/c
 
 #### So konfigurieren Sie die Repository-Speicherorte für Prozessberichte {#to-configure-the-process-reporting-repository-locations}
 
-1. Melden Sie sich bei **Administration Console** mit Administratorberechtigungen an. Die Standard-URL von Administration Console lautet `https://[server]:[port]/adminui`
-1. Navigieren Sie zu **Home** > **Services** > **Anwendungen und Dienste** > **Dienstverwaltung** und öffnen Sie den Dienst **ProcessDataStorageProvider**.
+1. Anmelden bei **Administrationskonsole** mit Administratorberechtigungen. Die Standard-URL von Administration Console lautet `https://[server]:[port]/adminui`
+1. Navigieren Sie zu **Startseite** >  **Dienste** >  **Anwendungen und Dienste** > **Dienstverwaltung** und öffnen Sie die **ProcessDataStorageProvider** Dienst.
 
    ![process-data-storage-service](assets/process-data-storage-service.png)
 
@@ -135,7 +135,7 @@ Sie können die Administration Console verwenden, um den Stamm (**default**: `/c
 
    Die Ordnerhierarchie, in der die Prozessdaten basierend auf der Erstellungszeit des Prozesses gespeichert werden.
 
-   `Default`:  `/yyyy/mm/dd/hh/mi/ss`
+   `Default`: `/yyyy/mm/dd/hh/mi/ss`
 
 1. Klicken Sie auf **Speichern**.
 
@@ -145,29 +145,29 @@ Der ReportConfiguration-Dienst wird von Process Reporting zum Konfigurieren des 
 
 #### So konfigurieren Sie den ReportingConfiguration-Dienst {#to-configure-the-reportingconfiguration-service}
 
-1. Melden Sie sich bei **Configuration Manager** mit CRX-Administratorberechtigungen an. Die Standard-URL von Configuration Manager lautet `https://[*server*]:[*port*]/lc/system/console/configMgr` .
-1. Öffnen Sie den Dienst **ReportingConfiguration** .
+1. Anmelden bei **Configuration Manager** mit CRX-Administratorberechtigungen. Die Standard-URL von Configuration Manager lautet `https://[*server*]:[*port*]/lc/system/console/configMgr`
+1. Öffnen Sie die **ReportingConfiguration** Dienst.
 1. **Anzahl Datensätze**
 
    Beim Ausführen einer Abfrage im Repository kann ein Ergebnis möglicherweise eine große Anzahl von Datensätzen enthalten. Wenn die Ergebnismenge groß ist, kann die Ausführung der Abfrage Serverressourcen beanspruchen.
 
    Um große Ergebnisse zu verarbeiten, teilt der ReportConfiguration-Dienst die Abfrageverarbeitung in Datensätze-Batches auf. Dadurch wird die Systemlast reduziert.
 
-   `Default`:  `1000`
+   `Default`: `1000`
 
    **CRX-Speicherpfad**
 
    Der CRX-Speicherort, in dem die Prozessdaten für die Berichterstellung gespeichert werden sollen.
 
-   `Default`:  `/content/reporting/pm`
+   `Default`: `/content/reporting/pm`
 
    >[!NOTE]
    >
-   >Dies ist der gleiche Speicherort, der in der Konfigurationsoption ProcessDataStorage **Stammordner** angegeben ist.
+   >Dies ist der gleiche Speicherort, der in der Konfigurationsoption ProcessDataStorage angegeben ist. **Stammordner**.
    >
    >Wenn Sie die Option &quot;Stammordner&quot;in der ProcessDataStorage-Konfiguration aktualisieren, müssen Sie den Speicherort des CRX-Speicherpfads im ReportConfiguration-Dienst aktualisieren.
 
-1. Klicken Sie auf **Save** und schließen Sie **CQ Configuration Manager**.
+1. Klicken **Speichern** und schließen **CQ Configuration Manager**.
 
 ### ProcessDataPublisher-Dienst {#processdatapublisher-service}
 
@@ -175,11 +175,11 @@ Der ProcessDataPublisher-Dienst importiert Prozessdaten aus der AEM Forms-Datenb
 
 #### Konfigurieren des ProcessDataPublisher-Dienstes   {#to-configure-processdatapublisher-service-nbsp}
 
-1. Melden Sie sich bei **Administration Console** mit Administratorberechtigungen an.
+1. Anmelden bei **Administrationskonsole** mit Administratorberechtigungen.
 
    Die Standardeinstellung ist `https://[server]:port]/adminui/`.
 
-1. Navigieren Sie zu **Home** > **Services** > **Anwendungen und Dienste** > **Dienstverwaltung** und öffnen Sie den Dienst **ProcessDataPublisher**.
+1. Navigieren Sie zu **Startseite** >  **Dienste** >  **Anwendungen und Dienste** > **Dienstverwaltung** und öffnen Sie die **ProcessDataPublisher** Dienst.
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
@@ -191,7 +191,7 @@ Aktivieren Sie die Prozessberichterstellung nur, wenn alle Konfigurationen im Zu
 
 Alternativ können Sie diese Option verwenden, um die Veröffentlichung von Prozessdaten zu deaktivieren, wenn sie nicht mehr erforderlich ist.
 
-`Default`:  `Off`
+`Default`: `Off`
 
 **Batch-Intervall (Sek.)**
 
@@ -201,9 +201,9 @@ Dies hilft bei der Steuerung der Datengröße, die der Publisher während jeder 
 
 Wenn der Herausgeber beispielsweise täglich ausgeführt wird, teilt er die Verarbeitung standardmäßig in 24 Batches mit jeweils einer Stunde auf, anstatt die gesamten Daten für einen Tag in einer einzigen Ausführung zu verarbeiten.
 
-`Default`:  `3600`
+`Default`: `3600`
 
-`Unit`:  `Seconds`
+`Unit`: `Seconds`
 
 **Zeitüberschreitung sperren (Sek.)**
 
@@ -211,9 +211,9 @@ Der Publisher-Dienst erwirbt eine Sperre, wenn er mit der Verarbeitung von Daten
 
 Wenn ein Publisher-Dienst, der eine Sperre erworben hat, für die vom Wert &quot;Timeout sperren&quot;definierte Anzahl von Sekunden inaktiv ist, wird die Sperre aufgehoben, damit andere Publisher-Dienstinstanzen die Verarbeitung fortsetzen können.
 
-`Default`:  `3600`
+`Default`: `3600`
 
-`Unit`:  `Seconds`
+`Unit`: `Seconds`
 
 **Veröffentlichen von Daten aus**
 
@@ -223,21 +223,21 @@ Standardmäßig importiert der ProcessDataPublisher-Dienst alle Daten aus der AE
 
 Wenn Sie nach einem bestimmten Datum und zu einer bestimmten Uhrzeit Berichte und Abfragen zu Daten ausführen möchten, empfiehlt es sich, Datum und Uhrzeit anzugeben. Der Veröffentlichungsdienst veröffentlicht dann das Datum ab diesem Zeitpunkt.
 
-`Default`:  `01-01-1970 00:00:00`
+`Default`: `01-01-1970 00:00:00`
 
-`Format`:  `dd-MM-yyyy HH:mm:ss`
+`Format`: `dd-MM-yyyy HH:mm:ss`
 
-## Zugriff auf die Benutzeroberfläche für die Prozessberichterstellung {#accessing-the-process-reporting-user-interface}
+## Zugriff auf die Benutzeroberfläche &quot;Process Reporting&quot; {#accessing-the-process-reporting-user-interface}
 
 Die Benutzeroberfläche für Process Reporting ist browserbasiert.
 
-Nachdem Sie Prozessberichte eingerichtet haben, können Sie mit Prozessberichten an folgendem Speicherort in Ihrer AEM Forms-Installation beginnen:
+Nachdem Sie die Prozessberichterstellung eingerichtet haben, können Sie mit der Arbeit mit Prozessberichten an folgendem Speicherort in Ihrer AEM Forms-Installation beginnen:
 
 `https://<server>:<port>/lc/pr`
 
-### Anmelden bei Process Reporting {#log-in-to-process-reporting}
+### Bei der Prozessberichterstellung anmelden {#log-in-to-process-reporting}
 
-Wenn Sie zur Prozess-Berichterstellungs-URL (https://&lt;Server>:&lt;Port>/lc/pr) navigieren, wird der Anmeldebildschirm angezeigt.
+Wenn Sie zur Prozess-Berichterstellungs-URL navigieren (https://&lt;server>:&lt;port>/lc/pr), wird der Anmeldebildschirm angezeigt.
 
 Geben Sie Ihre Anmeldedaten an, um sich beim Modul &quot;Process Reporting&quot;anzumelden.
 
@@ -249,43 +249,43 @@ Geben Sie Ihre Anmeldedaten an, um sich beim Modul &quot;Process Reporting&quot;
 
 ![erfassen](assets/capture.png)
 
-Wenn Sie sich bei der Prozessberichterstellung anmelden, wird der Bildschirm **[!UICONTROL Home]** angezeigt.
+Wenn Sie sich bei der Prozessberichterstellung anmelden, wird die **[!UICONTROL Startseite]** angezeigt.
 
-### Startseite der Prozessberichterstellung {#process-reporting-home-screen}
+### Startbildschirm für Prozessberichte {#process-reporting-home-screen}
 
 ![process-reporting-home-screen](assets/process-reporting-home-screen.png)
 
-**Prozessberichterstellungs-Baumansicht:**  Die Baumansicht auf der linken Seite des Startbildschirms enthält die Elemente für die Prozessberichterstellungsmodule.
+**Ansicht der Prozessberichterstellungsstruktur:** Die Baumansicht auf der linken Seite des Startbildschirms enthält die Elemente für die Process Reporting-Module.
 
 Die Baumansicht besteht aus den folgenden Elementen der obersten Ebene:
 
-**Berichte:** Dieses Element enthält die nativen Berichte, die im Lieferumfang von Prozessberichten enthalten sind.
+**Berichte:** Dieses Element enthält die vordefinierten Berichte, die im Lieferumfang von Prozessberichten enthalten sind.
 
-Weitere Informationen zu den vordefinierten Berichten finden Sie unter [Vordefinierte Berichte in Process Reporting](pre-defined-reports-in-process-reporting.md).
+Einzelheiten zu den vordefinierten Berichten finden Sie unter [Vordefinierte Berichte in Prozessberichten](pre-defined-reports-in-process-reporting.md).
 
-**Ad-hoc-Abfragen:** Dieses Element enthält Optionen zum Durchführen einer filterbasierten Suche für Prozesse und Aufgaben.
+**Ad-hoc-Abfragen:** Dieses Element enthält Optionen zum Durchführen einer filterbasierten Suche nach Prozessen und Aufgaben.
 
 Weitere Informationen zu Ad-hoc-Abfragen finden Sie unter [Ad-hoc-Abfragen in Prozessberichten](adhoc-queries-in-process-reporting.md).
 
-**Benutzerspezifisch:** Der Knoten Benutzerdefiniert zeigt benutzerdefinierte Berichte an, die Sie erstellen.
+**Benutzerdefiniert:** Der Knoten Benutzerdefiniert zeigt benutzerdefinierte Berichte an, die Sie erstellen.
 
-Eine Anleitung zum Erstellen und Anzeigen benutzerdefinierter Berichte finden Sie unter [Benutzerspezifische Berichte in Prozessberichten](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Eine Anleitung zum Erstellen und Anzeigen benutzerdefinierter Berichte finden Sie unter [Benutzerdefinierte Berichte in Prozessberichten](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
-**Titelleiste für Prozessberichte:**  Die Titelleiste für Prozessberichte enthält einige allgemeine Optionen, die Sie beim Arbeiten in der Benutzeroberfläche verwenden können.
+**Titelleiste für Prozessberichte:** Die Titelleiste &quot;Process Reporting&quot;enthält einige allgemeine Optionen, die Sie beim Arbeiten in der Benutzeroberfläche verwenden können.
 
-**Titel der Prozessberichte:** Der Titel der Prozessberichte wird links in der Titelleiste angezeigt.
+**Process Reporting-Titel:** Der Titel Process Reporting wird in der linken Ecke der Titelleiste angezeigt.
 
 Klicken Sie jederzeit auf den Titel, um zum Startbildschirm zurückzukehren.
 
-**Letzte Aktualisierungszeit:**  Die Prozessdaten werden auf geplanter Basis aus der AEM Forms-Datenbank in das Repository für Prozessberichte veröffentlicht.
+**Letzte Aktualisierungszeit:** Die Prozessdaten werden auf geplanter Basis aus der AEM Forms-Datenbank in das Repository für Prozessberichte veröffentlicht.
 
 Die Zeit der letzten Aktualisierung zeigt das letzte Datum und die letzte Uhrzeit an, zu der die Datenaktualisierungen an das Repository für Prozessberichte gesendet wurden.
 
-Weitere Informationen zum Datenveröffentlichungsdienst und dazu, wie Sie diesen Dienst planen, finden Sie unter [Veröffentlichung von Prozessdaten planen](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) im Artikel Erste Schritte mit Prozessberichten.
+Weitere Informationen zum Datenveröffentlichungsdienst und zur Planung dieses Dienstes finden Sie unter [Veröffentlichung von Prozessdaten planen](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) im Artikel Erste Schritte mit Prozessberichten.
 
-**Benutzer für die Prozessberichterstellung:** Der angemeldete Benutzername wird rechts neben der Zeit für die letzte Aktualisierung angezeigt.
+**Process Reporting-Benutzer:** Der angemeldete Benutzername wird rechts neben der Zeit der letzten Aktualisierung angezeigt.
 
-**Dropdown-Liste der Titel-Leiste für Prozessberichte:**  Die Dropdownliste rechts in der Titelleiste für Prozessberichte enthält die folgenden Optionen:
+**Dropdown-Liste der Titel der Prozessberichtsleiste:** Die Dropdownliste rechts in der Titelleiste &quot;Process Reporting&quot;enthält die folgenden Optionen:
 
 * **[!UICONTROL Synchronisieren]**: Synchronisieren Sie das eingebettete Process Reporting-Repository mit der AEM Forms-Datenbank.
 * **[!UICONTROL Hilfe]**: Zeigen Sie die Hilfedokumentation zu Prozessberichten an.

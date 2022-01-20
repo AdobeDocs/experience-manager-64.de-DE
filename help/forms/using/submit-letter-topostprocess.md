@@ -1,19 +1,19 @@
 ---
 title: Nachbearbeitung von Briefen und interaktiver Kommunikation
-seo-title: Nachbearbeitung von Briefen
-description: Nachbearbeitung Briefe in Correspondence Management können Sie AEM und Forms-Nachbearbeitungsprozesse wie Drucken und E-Mail erstellen und in Ihre Briefe integrieren.
-seo-description: Durch die Nachbearbeitung von Briefen in Correspondence Management können Sie die für AEM und Formular Nachbearbeitungsprozesse wie Drucken und E-Mail erstellen und sie in Ihre Briefe integrieren.
+seo-title: Post Processing of Letters
+description: Durch die Nachbearbeitung von Briefen in Correspondence Management können Sie die für AEM und Formular Nachbearbeitungsprozesse wie Drucken und E-Mail erstellen und sie in Ihre Briefe integrieren.
+seo-description: Post Processing of Letters in Correspondence Management lets you create AEM and Forms post processes, such as print and email, and integrate them with your letters.
 uuid: 4163bba9-e82b-4d3e-b1df-909855413a9e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: d2dfdab8-815e-4378-b287-81e31c9d9333
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 70%
+source-wordcount: '832'
+ht-degree: 71%
 
 ---
 
@@ -27,9 +27,9 @@ Agenten können Arbeitsabläufe für Nachbearbeitungsprozesse in Briefen und int
 
 Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Briefen oder interaktiver Kommunikation verknüpfen. Für abgesendete Briefe können zwei Typen von Arbeitsabläufen ausgeführt werden:
 
-1. **Forms Workflow:**  Dies sind die Workflows für die Prozessverwaltung in AEM Forms on JEE. Anweisungen zum Einrichten von [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** Dies sind die Workflows für die Prozessverwaltung in AEM Forms on JEE. Anleitung zur Einrichtung [Forms Workflow](#formsworkflow).
 
-1. **AEM Workflow:** AEM Workflows können auch als Nachbearbeitungsprozesse für gesendete Briefe verwendet werden. Anweisungen zum Einrichten von [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
+1. **AEM Workflow:** AEM Workflows können auch als Nachbearbeitungsprozesse für gesendete Briefe verwendet werden. Anleitung zur Einrichtung [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
 ## Formular-Workflow {#formsworkflow}
 
@@ -53,29 +53,29 @@ Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Br
 
 1. Kopieren Sie zum Authentifizieren eines Prozesses/Dienstes den Namen des Prozesses und gehen Sie zurück zur Seite „Adobe Experience Manager Web Console Configurations“ > „Adobe AEM Forms Client SDK-Konfiguration“ und fügen Sie den Prozess als neuen Dienst hinzu. 
 
-   Wenn beispielsweise die Dropdown-Liste auf der Seite Eigenschaften des Briefs den Prozessnamen als Forms Workflow -> ValidCCPostProcess/SaveXML anzeigt, fügen Sie einen Dienstnamen als `ValidCCPostProcess/SaveXML` hinzu.
+   Wenn beispielsweise die Dropdown-Liste auf der Seite Eigenschaften des Briefs den Prozessnamen als Forms Workflow -> ValidCCPostProcess/SaveXML anzeigt, fügen Sie einen Dienstnamen als `ValidCCPostProcess/SaveXML`.
 
 1. Richten Sie die erforderlichen Parameter und Ausgaben ein, um die AEM Forms on JEE-Arbeitsabläufe für die Nachbearbeitung zu verwenden. Die Standardwerte der Parameter werden nachfolgend angezeigt.
 
-   Gehen Sie zur Seite &quot;Adobe Experience Manager Web Console Configurations&quot;> **[!UICONTROL Correspondence Management Configurations]** und richten Sie die folgenden Parameter ein:
+   Navigieren Sie zur Seite Adobe Experience Manager Web Console-Konfigurationen > **[!UICONTROL Correspondence Management-Konfigurationen]** und richten Sie die folgenden Parameter ein:
 
    1. **inPDFDoc (PDF-Dokumentparameter):** Ein PDF-Dokument als Eingabe. Diese Eingabe enthält den gerenderten Brief als Eingabe. Die angegebenen Parameternamen können konfiguriert werden. Sie können über die Correspondence Management-Konfigurationen in „Konfiguration“ konfiguriert werden.
-   1. **inXMLDoc (XML-Datenparameter):**  Ein XML-Dokument als Eingabe. Diese Eingabe enthält Daten, die vom Benutzer im XML-Formular eingegeben wurden.
-   1. **inXDPDoc (XDP-Dokumentparameter):**  Ein XML-Dokument als Eingabe. Diese Eingabe enthält das zugrunde liegende Layout (XDP).
-   1. **inAttachmentDocs (Parameter &quot;Attachment Documents&quot;):** Ein Listeneingabeparameter. Diese Eingabe enthält alle Anlagen als Eingabe.
+   1. **inXMLDoc (XML-Datenparameter):** Ein XML-Dokument als Eingabe. Diese Eingabe enthält Daten, die vom Benutzer im XML-Formular eingegeben wurden.
+   1. **inXDPDoc (XDP-Dokumentparameter):** Ein XML-Dokument als Eingabe. Diese Eingabe enthält das zugrunde liegende Layout (XDP).
+   1. **inAttachmentDocs (Parameter für Anlagendokumente):** Ein Listeneingabeparameter. Diese Eingabe enthält alle Anlagen als Eingabe.
    1. **redirectURL (Umleitungs-URL-Ausgabe):** Ein Ausgabetyp, der die URL angibt, zu der umgeleitet werden soll.
 
    Ihr Formular-Workflow muss entweder einen PDF-Dokumentparameter oder einen XML-Datenparameter als Eingabe mit demselben Namen enthalten, der in den **[!UICONTROL Correspondence Management-Konfigurationen]** angegeben ist. Das ist erforderlich, damit der Prozess in der Dropdown-Liste „Nachbearbeitung“ aufgelistet wird.
 
 ## Einstellungen für die Veröffentlichungsinstanz {#settings-on-the-publish-instance}
 
-1. Melden Sie sich bei `http://localhost:publishport/aem/forms` an.
+1. Anmelden bei `http://localhost:publishport/aem/forms`.
 1. Navigieren Sie zu **[!UICONTROL Briefe]**, um den in der Veröffentlichungsinstanz verfügbaren veröffentlichten Brief anzuzeigen.
 1. Konfigurieren Sie die Einstellungen für AEM DS. Weitere Informationen finden Sie unter [Konfigurieren von Einstellungen für AEM DS](/help/forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
->Wenn Sie Forms oder AEM-Workflows verwenden, müssen Sie den DS-Einstellungsdienst konfigurieren, bevor Sie Übermittlungen vom Veröffentlichungsserver durchführen. Andernfalls schlägt die Übermittlung eines Formulars fehlgeschlagen.
+>Wenn Sie Forms oder AEM-Workflows verwenden, müssen Sie den DS-Einstellungsdienst konfigurieren, bevor Sie Übermittlungen vom Veröffentlichungsserver durchführen. Andernfalls schlägt die Übermittlung in Forms fehl.
 
 ## Abrufen von Briefinstanzen {#letter-instances-retrieval}
 

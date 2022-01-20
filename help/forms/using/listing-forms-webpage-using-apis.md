@@ -1,8 +1,8 @@
 ---
 title: Auflisten von Formularen auf einer Webseite mithilfe von APIs
-seo-title: Auflisten von Formularen auf einer Webseite mithilfe von APIs
+seo-title: Listing forms on a web page using APIs
 description: Führen Sie in Forms Manager programmgesteuerte Abfragen durch, um eine gefilterte Liste mit Formularen abzurufen und sie auf Ihren Webseiten anzuzeigen.
-seo-description: Führen Sie in Forms Manager programmgesteuerte Abfragen durch, um eine gefilterte Liste mit Formularen abzurufen und sie auf Ihren Webseiten anzuzeigen.
+seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,17 @@ topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '693'
 ht-degree: 86%
 
 ---
 
 
-# Auflisten von Formularen auf einer Webseite mithilfe von APIs  {#listing-forms-on-a-web-page-using-apis}
+# Auflisten von Formularen auf einer Webseite mithilfe von APIs {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms stellt eine REST-basierte Such-API bereit, die Web-Entwickler verwenden können, um Abfragen in Formularsätzen durchzuführen und Formularsätze abzurufen, die die Suchkriterien erfüllen. Sie können APIs zum Durchsuchen von Formularen auf Basis verschiedener Filter verwenden. Das Antwortobjekt enthält Formularattribute, -Eigenschaften und Render-Endpunkte der Formulare.
 
-Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage unter `https://[server]:[port]/libs/fd/fm/content/manage.json` mit den unten beschriebenen Abfrageparametern an den Server.
+Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage an den Server unter `https://[server]:[port]/libs/fd/fm/content/manage.json` mit den unten beschriebenen Abfrageparametern.
 
 ## Abfrageparameter {#query-parameters}
 
@@ -115,7 +115,7 @@ Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage unter 
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Gibt an, ob der binäre Inhalt abgerufen werden soll oder nicht. Das Attribut <code>includeXdp</code> gilt für Assets des Typs <code>FORM</code>, <code>PDFFORM</code> und <code>PRINTFORM</code>.</td>
+   <td>Gibt an, ob der binäre Inhalt abgerufen werden soll oder nicht. Die <code>includeXdp</code> -Attribut für Assets des Typs <code>FORM</code>, <code>PDFFORM</code>und <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -124,7 +124,7 @@ Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage unter 
  </tbody>
 </table>
 
-## Musteranforderung  {#sample-request}
+## Musteranforderung {#sample-request}
 
 ```
 func : searchForms
@@ -168,7 +168,7 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 ]
 ```
 
-## Verwandte Artikel
+## Ähnliche Artikel
 
 * [Aktivieren von Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
 * [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)

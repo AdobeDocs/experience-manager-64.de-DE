@@ -1,8 +1,8 @@
 ---
 title: Bildeditor
-seo-title: Bildeditor
+seo-title: Image Editor
 description: Der Bildeditor ist ein Kernstück von AEM und kann von Komponenten genutzt werden, um eine Bearbeitung von Bildern durch Inhaltsautoren zu erlauben.
-seo-description: Der Bildeditor ist ein Kernstück von AEM und kann von Komponenten genutzt werden, um eine Bearbeitung von Bildern durch Inhaltsautoren zu erlauben.
+seo-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: 843c67d6-dda1-448f-a992-19574066e1c3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '305'
 ht-degree: 94%
 
 ---
@@ -23,7 +23,7 @@ Der Bildeditor ist ein Kernstück von AEM und kann von Komponenten genutzt werde
 
 >[!CAUTION]
 >
->Um die in diesem Artikel beschriebenen Funktionen des Bildeditors verwenden zu können, muss [Feature Pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) installiert sein.
+>So verwenden Sie die in diesem Artikel beschriebenen Funktionen des Bildeditors: [Feature Pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) muss installiert sein.
 
 ## Relative Einheiten für Imagemap {#relative-units-for-image-map}
 

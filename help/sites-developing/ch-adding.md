@@ -1,8 +1,8 @@
 ---
-title: 'Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher '
-seo-title: 'Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher '
+title: Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher
+seo-title: Adding ContextHub to Pages and Accessing Stores
 description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
-seo-description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
+seo-description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries
 uuid: ade37960-21c4-4d64-a525-68f0d199f955
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 exl-id: 99efe308-bf8a-41ad-8203-b57fce20820c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1008'
 ht-degree: 97%
 
 ---
 
-# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher   {#adding-contexthub-to-pages-and-accessing-stores}
+# Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher {#adding-contexthub-to-pages-and-accessing-stores}
 
 Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 
@@ -35,7 +35,7 @@ Schließen Sie die contexthub-Komponente in den Bereich `head` Ihrer Seite ein, 
 
 Beachten Sie, dass Sie auch konfigurieren müssen, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt werden soll. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui).
 
-## Informationen zu ContextHub-Speichern   {#about-contexthub-stores}
+## Informationen zu ContextHub-Speichern {#about-contexthub-stores}
 
 Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bietet folgende Arten von Speichern, die die Grundlage für alle Speichertypen bilden:
 
@@ -46,7 +46,7 @@ Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bie
 
 Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core). Weitere Informationen zur Erstellung eines neuen Speichertyps finden Sie unter [Erstellen benutzerdefinierter Speicher](/help/sites-developing/ch-extend.md#creating-custom-store-candidates). Weitere Informationen zu Beispielspeichertypen finden Sie unter [Beispielkandidaten für ContextHub-Speicher](/help/sites-developing/ch-samplestores.md).
 
-### Beibehaltungsmodi   {#persistence-modes}
+### Beibehaltungsmodi {#persistence-modes}
 
 ContextHub-Speicher verwenden einen der folgenden Beibehaltungsmodi:
 
@@ -167,7 +167,7 @@ Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 * „female“ oder „male“ wird auf der Grundlage des Datenelements `gender` des Stores [profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) bestimmt.
 
 * Das Alter wird auf der Grundlage des Datenelements „age“ des Stores „profile“ bestimmt.
-* Die Staffel wird aus dem Datenelement &quot;latitude&quot;des Stores [geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) und dem Datenelement &quot;month&quot;des Stores &quot;surferinfo&quot;bestimmt.
+* Die Staffel wird aus dem Datenelement &quot;latitude&quot;des [Geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) speichern und das Monatsdatenelement des surferinfo -Stores.
 
 >[!WARNING]
 >

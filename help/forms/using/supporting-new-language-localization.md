@@ -1,20 +1,20 @@
 ---
 title: Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen
-seo-title: Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen
+seo-title: Supporting new locales for adaptive forms localization
 description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren von adaptiven Formularen hinzufügen. Die unterstützten Gebietsschemas sind standardmäßig Englisch, Französisch, Deutsch und Japanisch.
-seo-description: Mit AEM Forms können Sie neue Gebietsschemata zum Lokalisieren von adaptiven Formularen hinzufügen. Die unterstützten Gebietsschemas sind standardmäßig Englisch, Französisch, Deutsch und Japanisch.
+seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
 uuid: d4cee51b-c555-4544-9ae9-4aa8d38b2b17
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
-feature: Adaptive Formulare
+feature: Adaptive Forms
 role: Admin
 exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 88%
+source-wordcount: '691'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 88%
 
 Die Lokalisierung von adaptiven Formularen beruht auf zwei Arten von Gebietsschemawörterbüchern:
 
-**Formularspezifische** Wörterbücher Enthält Zeichenfolgen, die in adaptiven Formularen verwendet werden. Zum Beispiel Beschriftungen, Feldnamen, Fehlermeldungen, Hilfebeschreibungen usw. Es wird als Satz von XLIFF-Dateien für jedes Gebietsschema verwaltet und Sie können darauf unter https://`<host>`:`<port>`/libs/cq/i18n/translator.html zugreifen.
+**Formularspezifisches Wörterbuch** Enthält Zeichenfolgen, die in adaptiven Formularen verwendet werden. Zum Beispiel Beschriftungen, Feldnamen, Fehlermeldungen, Hilfebeschreibungen usw. Es wird für jedes Gebietsschema als Satz von XLIFF-Dateien verwaltet und Sie können darauf unter https:// zugreifen.`<host>`:`<port>`/libs/cq/i18n/translator.html
 
 **Globale Wörterbücher** In der AEM-Client-Bibliothek gibt es zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Diese Wörterbücher finden Sie in CRXDe Lite unter /libs/fd/xfaforms/clientlibs/I18N. Diese Speicherorte enthalten für jedes Gebietsschema separate Ordner. Da globale Wörterbücher in der Regel nicht oft aktualisiert werden, können Browser separate JavaScript-Dateien für jedes Gebietsschema im Cache zwischenspeichern und die Beanspruchung der Netzwerkbandbreite reduzieren, wenn auf demselben Server auf verschiedene adaptive Formulare zugegriffen wird.
 
@@ -34,7 +34,7 @@ Wenn ein adaptives Formular wiedergegeben wird, identifiziert es das angefordert
 
 * Anforderungsparameter `afAcceptLang`
 
-   Um das Browsergebietsschema der Benutzer zu überschreiben, können Sie den Anforderungsparameter `afAcceptLang` übergeben, um das Gebietsschema zu erzwingen. Beispielsweise erzwingt die folgende URL die Wiedergabe des Formulars im japanischen Gebietsschema:
+   Um das Browsergebietsschema der Benutzer zu überschreiben, können Sie die `afAcceptLang` -Anfrageparameter, um das Gebietsschema zu erzwingen. Beispielsweise erzwingt die folgende URL die Wiedergabe des Formulars im japanischen Gebietsschema:
 
    `https://[*server*]:[*port*]/<*contextPath*>/<*formFolder*>/<*formName*>.html?wcmmode=disabled&afAcceptLang=ja`
 

@@ -1,8 +1,8 @@
 ---
 title: Integrieren von Form Bridge in das benutzerdefinierte Portal für HTML5-Formulare
-seo-title: Integrieren von Form Bridge in das benutzerdefinierte Portal für HTML5-Formulare
+seo-title: Integrating Form Bridge with custom portal for HTML5 forms
 description: Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu versenden.
-seo-description: Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu versenden.
+seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
 uuid: 09f2189f-d584-4b84-895e-22833b6b17e3
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,20 +12,20 @@ feature: Mobile Forms
 exl-id: bf4ae163-5d89-48fb-9bc4-182281b28f35
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 81%
+source-wordcount: '393'
+ht-degree: 79%
 
 ---
 
 # Integrieren von Form Bridge in das benutzerdefinierte Portal für HTML5-Formulare {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge ist eine Brücken-API für HTML5-Formulare, die es Ihnen ermöglicht, mit einem Formular zu interagieren. Die FormBridge-API-Referenz finden Sie unter [FormBridge-API-Referenz](/help/forms/using/form-bridge-apis.md).
+FormBridge ist eine Brücken-API für HTML5-Formulare, die es Ihnen ermöglicht, mit einem Formular zu interagieren. Informationen zur FormBridge-API-Referenz finden Sie unter [FormBridge-API-Referenz](/help/forms/using/form-bridge-apis.md).
 
 Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu versenden. Beispielsweise können Sie die API verwenden, um eine assistentenähnliche Erfahrung zu erstellen.
 
 Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Formular zu interagieren und es in die HTML-Seite einzubetten. Sie können folgende Schritte verwenden, um den Wert eines Felds mithilfe der Form Bridge-API festzulegen.
 
-## Integrieren von HTML5-Formularen in eine Webseite  {#integrating-html-forms-to-a-web-page}
+## Integrieren von HTML5-Formularen in eine Webseite {#integrating-html-forms-to-a-web-page}
 
 1. **Wählen oder erstellen Sie ein Profil.**
 
@@ -75,7 +75,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
    >[!NOTE]
    >
-   >Die **Zeile 9** enthält zusätzliche JSP-Referenz für CSS-Stile und JavaScript-Dateien, um die Seite zu entwerfen.
+   >Die **Linie 9** enthält eine zusätzliche JSP-Referenz für CSS-Stile und JavaScript-Dateien zum Entwerfen der Seite.
    >
    >Das Tag &lt;div id=&quot;rightdiv&quot;> in **Zeile 18** bezeichnet das HTML-Fragment des XFA-Formulars.
    Die Seite wird in zwei Container unterteilt: **links** und **rechts**. Der rechte Container enthält das Formular. Der linke Container enthält zwei Eingabefelder und einen Teil der externen HTML-Seite.
@@ -89,7 +89,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
    Nachstehend finden Sie ein Beispielskript, das Sie hinzufügen können, um Werte in einem Formularfeld festzulegen.
 
-   Wenn Sie beispielsweise **EmployeeName** mithilfe der Werte in den Feldern **Vorname** und **Nachname** festlegen möchten, rufen Sie die Funktion **window.formBridge.setFieldValue** auf.
+   Wenn Sie beispielsweise die **EmployeeName** Verwendung der Werte in den Feldern **Vorname** und **Nachname**, rufen Sie die **window.formBridge.setFieldValue** -Funktion.
 
    Auf ähnliche Weise können Sie den Wert lesen, indem Sie die API **window.formBridge.getFieldValue**aufrufen.
 

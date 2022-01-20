@@ -1,19 +1,19 @@
 ---
 title: Verbesserungen an der Übersetzung
-seo-title: Verbesserungen an der Übersetzung
+seo-title: Translation Enhancements
 description: Verbesserungen an der Übersetzung in AEM.
-seo-description: Verbesserungen an der Übersetzung in AEM.
+seo-description: Translation enhancements in AEM.
 uuid: 0563603f-327b-48f1-ac14-6777c06734b9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
-feature: Sprachkopie
+feature: Language Copy
 exl-id: 57a77cec-e228-4ec7-8502-e6e23baddd92
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 85%
+source-wordcount: '552'
+ht-degree: 84%
 
 ---
 
@@ -49,7 +49,7 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Wechseln Sie zur Registerkarte **Erweitert**. Sie können unter **Zielsprache** mehrere Sprachen hinzufügen.
+1. Wechseln Sie zur Registerkarte **Erweitert**. Sie können unter mehrere Sprachen hinzufügen. **Zielsprache**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -65,11 +65,11 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
 Für manuelle Bearbeitungen von übersetzten Inhalten kann wieder eine Synchronisierung mit dem System für die Übersetzungsverwaltung (Translation Management System, TMS) durchgeführt werden, um das Translation Memory zu trainieren.
 
-1. Wählen Sie in der Sites-Konsole nach der Aktualisierung des Textinhalts auf einer übersetzten Seite **Translation Memory aktualisieren**.
+1. Wählen Sie in der Sites-Konsole nach der Aktualisierung des Textinhalts auf einer übersetzten Seite die Option **Translation Memory aktualisieren**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. In einer Listenansicht werden die Quelle und die Übersetzung für jede bearbeitete Textkomponente nebeneinander verglichen. Wählen Sie aus, welche Übersetzungsaktualisierungen mit dem Translation Memory synchronisiert werden sollen, und wählen Sie **Speicher aktualisieren** aus.
+1. In einer Listenansicht werden die Quelle und die Übersetzung für jede bearbeitete Textkomponente nebeneinander verglichen. Wählen Sie aus, welche Übersetzungsaktualisierungen mit dem Translation Memory synchronisiert werden sollen, und wählen Sie **Speicher aktualisieren**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -91,8 +91,7 @@ Sie können Sprach-Stämme jetzt unter Knoten gruppieren, z. B. nach Region. Di
 >* `/content/we-retail/language-masters/americas/central-america/es`
 
 >
->
-Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (americas/central-america) vom Knoten `en` entfernt ist.
+>Die Sprachkopie `es` wird nicht erkannt, da sie zwei Ebenen (americas/central-america) vom Knoten `en` entfernt ist.
 
 >[!NOTE]
 >

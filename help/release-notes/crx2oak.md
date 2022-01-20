@@ -1,8 +1,8 @@
 ---
 title: CRX2OAK-Migrations-Tool
-seo-title: CRX2OAK-Migrations-Tool
+seo-title: CRX2OAK Migration Tool
 description: 'Spezifische Versionshinweise zum 6.4 CRX2OAK-Migrations-Tool für Adobe Experience Manager '
-seo-description: 'Spezifische Versionshinweise zum 6.4 CRX2OAK-Migrations-Tool für Adobe Experience Manager '
+seo-description: Release notes specific to the Adobe Experience Manager 6.4 CRX2OAK Migration tool.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,8 +12,8 @@ discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 exl-id: 441c8ba0-f8b2-4c2c-b7be-cfdad9e1e498
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 66%
+source-wordcount: '252'
+ht-degree: 64%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 66%
 * OAK-3844/GRANITE-10730 Bessere Unterstützung für versionierbare Knoten ohne Versionsverläufe
 * OAK-3846 SNS-Knoten umbenennen, wenn sie gegen Knotentypbeschränkungen verstoßen
 
-### Version 1.3.2 (Dezember 2015)  {#version-december}
+### Version 1.3.2 (Dezember 2015) {#version-december}
 
 * Oak-Version auf 1.3.12 aktualisieren
 * Datenspeicherverzeichnis sollte nach der Migration nicht verschoben werden (GRANITE-10447)

@@ -1,8 +1,8 @@
 ---
 title: Erstellen einer benutzerdefinierten adaptiven Formularvorlage
-seo-title: Erstellen einer benutzerdefinierten adaptiven Formularvorlage
+seo-title: Creating a custom adaptive form template
 description: Dieser Artikel beschreibt die Erstellung benutzerdefinierter adaptiver Formularvorlagen.
-seo-description: Dieser Artikel beschreibt die Erstellung benutzerdefinierter adaptiver Formularvorlagen.
+seo-description: This article describes how to create custom adaptive form templates.
 uuid: 8f8c770f-984c-48e8-978c-7cdfcd1af95b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,20 +11,20 @@ discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 exl-id: 83f978ca-d451-4d27-820f-3620331285cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1145'
 ht-degree: 76%
 
 ---
 
-# Erstellen einer benutzerdefinierten adaptiven Formularvorlage  {#creating-a-custom-adaptive-form-template}
+# Erstellen einer benutzerdefinierten adaptiven Formularvorlage {#creating-a-custom-adaptive-form-template}
 
 ## Voraussetzungen {#prerequisites}
 
-* Grundlagen zu AEM [Seitenvorlage](/help/sites-authoring/templates.md) und [Authoring adaptiver Formulare](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Grundlegendes zu AEM [Seitenvorlage](/help/sites-authoring/templates.md) und [Authoring adaptiver Formulare](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
 * Grundlagen zu den [clientseitigen Bibliotheken](/help/sites-developing/clientlibs.md) in AEM
 
-## Adaptive Formularvorlage  {#adaptive-form-template}
+## Adaptive Formularvorlage {#adaptive-form-template}
 
 Eine adaptive Formularvorlage ist eine spezielle AEM-Seitenvorlage mit bestimmten Eigenschaften und einer vorgegebenen Inhaltsstruktur, aus denen ein adaptives Formular erstellt wird. Die Vorlage hat vorkonfigurierte Layouts, Stile und eine einfache, bereits vorgegebene Inhaltsstruktur.
 
@@ -46,7 +46,7 @@ Folgende Tabelle zeigt die Zuordnung zwischen Vorlagen und Seitenkomponenten:
  <tbody> 
   <tr> 
    <td><p><strong>Vorlage</strong></p> </td> 
-   <td><p><strong>Seitenkomponente</strong></p> </td> 
+   <td><p><strong>Seitenkomponente </strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>/libs/fd/af/templates/surveyTemplate</p> </td> 
@@ -67,7 +67,7 @@ Folgende Tabelle zeigt die Zuordnung zwischen Vorlagen und Seitenkomponenten:
  </tbody> 
 </table>
 
-## Erstellen einer Vorlage für ein adaptives Formular mithilfe des Vorlageneditors  {#creating-an-adaptive-form-template-using-template-editor}
+## Erstellen einer Vorlage für ein adaptives Formular mithilfe des Vorlageneditors {#creating-an-adaptive-form-template-using-template-editor}
 
 Sie können die Struktur und den anfänglichen Inhalt eines adaptiven Formulars mithilfe des Vorlagen-Editors angeben. Beispiel: Sie möchten, dass alle Formularersteller in einem Registrierungsformular einige Textfelder, Navigationsschaltflächen und eine Schaltfläche zum Senden verwenden. Sie können eine Vorlage erstellen, die Formularersteller verwenden können, damit ihr Formular konsistent mit anderen Registrierungsformularen ist. Mit dem AEM-Vorlagen-Editor können Sie:
 
@@ -91,15 +91,15 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage wie d
 1. Erstellen Sie im Verzeichnis „/apps“ die Ordnerstruktur für Ihre Anwendung. Lautet der Anwendungsname beispielsweise „mycompany“, so erstellen Sie einen Ordner mit diesem Namen. In der Regel enthält das Anwendungsverzeichnis die Ordner „components“, „configuration“, „templates“, „src“ und „installation“. Für dieses Beispiel reicht es aus, wenn Sie die Ordner „components“, „configuration“ und „templates“ erstellen.
 
 1. Navigieren Sie zum Ordner „/libs/fd/af/templates“.
-1. Kopieren Sie den Knoten `simpleEnrollmentTemplate` .
+1. Kopieren Sie die `simpleEnrollmentTemplate` Knoten.
 1. Navigieren Sie zum Ordner „/apps/mycompany/templates“. Klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]** aus.
 1. Benennen Sie den kopierten Vorlagenknoten gegebenenfalls um. Nennen Sie ihn zum Beispiel „enrollment-template“. 
 
 1. Navigieren Sie zu „/apps/mycompany/templates/enrollment-template.
 
-1. Ändern Sie die Eigenschaften `jcr:title` und `jcr:description` für den Knoten `jcr:content` , um die Vorlage von der kopierten Vorlage zu unterscheiden.
+1. Ändern Sie die `jcr:title` und `jcr:description` -Eigenschaften für `jcr:content` -Knoten, um die Vorlage von der kopierten Vorlage zu unterscheiden.
 
-1. Der Knoten `jcr:content` der modifizierten Vorlage enthält die Komponenten `guideContainer` und `guideformtitle`. Der Container `guideContainer` enthält das adaptive Formular. Die Komponente `guideformtitle` zeigt den Anwendungsnamen, die Beschreibung und ähnliche Details an.
+1. Die `jcr:content` Der Knoten der modifizierten Vorlage enthält die `guideContainer` und `guideformtitle` Komponenten. Der Container `guideContainer` enthält das adaptive Formular. Die Komponente `guideformtitle` zeigt den Anwendungsnamen, die Beschreibung und ähnliche Details an.
 
    Statt der Komponente `guideformtitle` können Sie eine benutzerdefinierte Komponente oder die Komponente `parsys` einfügen. Entfernen Sie zum Beispiel `guideformtitle` und fügen Sie eine benutzerdefinierte Komponente oder den Komponentenknoten `parsys` hinzu. Vergewissern Sie sich, dass die Eigenschaft `sling:resourceType` der Komponente auf die Komponente verweist und das Gleiche auch in der Datei `component.jsp` der Seite definiert ist.
 
@@ -113,14 +113,14 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage wie d
 
 Die benutzerdefinierte Vorlage hat den gleichen Stil wie die Standardvorlage, da die Vorlage auf die Seitenkomponente „/libs/fd/af/components/page/base“ verweist. Der Komponentenverweis befindet sich in der Eigenschaft `sling:resourceType` unter dem Knoten „/apps/mycompany/templates/enrollment-template/jcr:content“. Da base eine Kernproduktkomponente ist, dürfen Sie diese Komponente nicht ändern.
 
-1. Navigieren Sie zum Knoten /apps/mycompany/templates/enrollment-template/jcr:content und ändern Sie den Wert der Eigenschaft `sling:resourceType` in /apps/mycompany/components/page/enrollmentpage
+1. Navigieren Sie zum Knoten /apps/mycompany/templates/enrollment-template/jcr:content und ändern Sie den Wert der Eigenschaft `sling:resourceType` nach /apps/mycompany/components/page/enrollmentpage
 1. Kopieren Sie den Knoten „/libs/fd/af/components/page/base“ in den Ordner „/apps/mycompany/components/page“. 
 
 1. Benennen Sie die kopierte Komponente in `enrollmentpage` um.
 
-1. **(Nur wenn Sie bereits über eine Inhaltsseite verfügen)** Führen Sie die folgenden Schritte aus (a-d), wenn Sie eine vorhandene  `contentpage`Komponente für Ihre Website haben. Wenn die Komponente `contentpage` noch nicht für Ihre Website vorhanden ist, können Sie die Eigenschaft `resourceSuperType` so einstellen, dass sie auf die OOTB-Basisseite verweist.
+1. **(Nur wenn Sie bereits über eine Inhaltsseite verfügen)** Führen Sie die folgenden Schritte aus (a-d), falls Sie bereits über eine `contentpage`-Komponente für Ihre Website. Wenn die Komponente `contentpage` noch nicht für Ihre Website vorhanden ist, können Sie die Eigenschaft `resourceSuperType` so einstellen, dass sie auf die OOTB-Basisseite verweist.
 
-   1. Setzen Sie für den Knoten `enrollmentpage` den Wert der Eigenschaft `sling:resourceSuperType` auf &quot;mycompany/components/page/contentpage&quot;. Die Komponente `contentpage` ist die Basisseitenkomponente Ihrer Site. Sie kann durch andere Seitenkomponenten erweitert werden. Entfernen Sie Skriptdateien unter `enrollmentpage`, mit Ausnahme von `head.jsp`, `content.jsp` und `library.jsp`. Die Komponente `sling:resourceSuperType`, in diesem Fall `contentpage`, enthält alle diese Skripte. Kopf- und Fußzeile sowie Navigationsleiste werden aus der Komponente `contentpage` übernommen.
+   1. Für `enrollmentpage` node, legen Sie den Wert der Eigenschaft fest `sling:resourceSuperType` zu &quot;mycompany/components/page/contentpage&quot;. Die Komponente `contentpage` ist die Basisseitenkomponente Ihrer Site. Sie kann durch andere Seitenkomponenten erweitert werden. Entfernen Sie Skriptdateien unter `enrollmentpage`, außer `head.jsp`, `content.jsp`und `library.jsp`. Die `sling:resourceSuperType` Komponente, die `contentpage` in diesem Fall enthält alle solchen Skripte. Kopf- und Fußzeile sowie Navigationsleiste werden aus der Komponente `contentpage` übernommen.
 
    1. Öffnen Sie die Datei `head.jsp`.
 
@@ -128,9 +128,9 @@ Die benutzerdefinierte Vorlage hat den gleichen Stil wie die Standardvorlage, da
 
       Die Datei `library.jsp` enthält die Client-Bibliothek `guide.theme.simpleEnrollment`, die wiederum den Stil für das adaptive Formular enthält.
 
-      Die Seitenkomponente `enrollmentpage` verfügt über eine exklusive `head.jsp`-Datei, die die `head.jsp`-Datei der `contentpage`-Komponente überschreibt.
+      Die Seitenkomponente `enrollmentpage` verfügt über eine exklusive `head.jsp` -Datei, die die `head.jsp` der `contentpage` -Komponente.
 
-   1. Schließen Sie alle Skripte in der Datei `head.jsp` für die Komponente `contentpage` in die Datei `head.jsp` für die Komponente `enrollmentpage` ein.
+   1. Schließen Sie alle Skripte in die `head.jsp` -Datei für `contentpage` -Komponente `head.jsp` -Datei für `enrollmentpage` -Komponente.
    1. Dem Skript `content.jsp` können Sie weiteren Seiteninhalt oder Verweise auf andere Komponenten hinzufügen, die beim Rendern einer Seite wiedergegeben werden. Beispiel: Wenn Sie die benutzerdefinierte Komponente `applicationformheader` hinzufügen, fügen Sie der Komponente den folgenden Verweis in der JSP-Datei hinzu:
 
       `<cq:include path="applicationformheader" resourceType="mycompany/components/applicationformheader"/>`
@@ -139,7 +139,7 @@ Die benutzerdefinierte Vorlage hat den gleichen Stil wie die Standardvorlage, da
 
 ## Erstellen einer Client-Bibliothek für adaptive Formulare {#creating-an-adaptive-form-client-library}
 
-Die `head.jsp`-Datei der `enrollmentpage`-Komponente für die neue Vorlage enthält eine Client-Bibliothek `guide.theme.simpleEnrollment`. Diese Client-Bibliothek wird auch von der Standardvorlage verwendet. Den Stil in der neuen Vorlage können Sie mit einer der folgenden Methoden ändern:
+Die `head.jsp` der `enrollmentpage` -Komponente für die neue Vorlage enthält eine Client-Bibliothek `guide.theme.simpleEnrollment`. Diese Client-Bibliothek wird auch von der Standardvorlage verwendet. Den Stil in der neuen Vorlage können Sie mit einer der folgenden Methoden ändern:
 
 * Definieren Sie ein benutzerdefiniertes Design, durch das Sie das Standarddesign`guide.theme.simpleEnrollment` ersetzen. 
 * Definieren Sie unter „/etc/designs/mycompany“ eine neue Client-Bibliothek. Schließen Sie die Client-Bibliothek nach dem Eintrag des Standarddesigns in der JSP-Seite ein. Schließen Sie alle überschriebenen Stile und zusätzlichen JavaScript-Dateien in diese Client-Bibliothek ein.

@@ -1,8 +1,8 @@
 ---
 title: Anmerkungen beim Bearbeiten einer Seite
-seo-title: Anmerkungen beim Bearbeiten einer Seite
+seo-title: Annotations when Editing a Page
 description: Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Zur Erleichterung dieses Vorgangs können Sie in vielen Komponenten, die in direkter Verbindung mit dem Inhalt stehen, Anmerkungen hinzufügen.
-seo-description: Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Zur Erleichterung dieses Vorgangs können Sie in vielen Komponenten, die in direkter Verbindung mit dem Inhalt stehen, Anmerkungen hinzufügen.
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -13,7 +13,7 @@ discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '782'
 ht-degree: 95%
 
 ---
@@ -81,7 +81,6 @@ Wenn Sie die Anmerkung löschen möchten, müssen Sie den Vorgang bestätigen (d
 >* Werden vorhandene Zeichnungen, die in anderen Browsern erstellt wurden, nicht angezeigt.
 
 >
-
 
 
 Zeichnungen sind eine Funktion von Anmerkungen, über die Sie einfache Liniengrafiken an einer beliebigen Stelle im Browserfenster (sichtbarer Bereich) erstellen können:

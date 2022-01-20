@@ -4,13 +4,13 @@ description: Konfigurieren Sie Experience Manager Assets für die Verwendung mit
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: 227b929c7eecb4fa65f5c50fffc5d9ed802411e1
+exl-id: 6d9a954f-433d-41ec-9bb9-45e857890aba
+source-git-commit: 657bb7df01a7b8e03d39c3bda868d87253b81b2a
 workflow-type: tm+mt
 source-wordcount: '3135'
 ht-degree: 5%
 
 ---
-
 
 # Experience Manager Assets für Adobe Asset Link konfigurieren {#adobe-asset-link}
 
@@ -293,10 +293,5 @@ Wenn beim Konfigurieren oder Verwenden von Adobe Asset Link Probleme auftreten, 
 >
 >* [Über Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Verwenden von Asset Link im Creative Cloud-Desktop-Programm und Verwalten von Assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Konfigurieren von Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
+>* [Konfigurieren von Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html).
 

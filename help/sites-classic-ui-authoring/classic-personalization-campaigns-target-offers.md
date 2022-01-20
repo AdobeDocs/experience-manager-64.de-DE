@@ -1,8 +1,8 @@
 ---
-title: Target-Angebote
-seo-title: Adobe Target-Angebote
+title: Adobe Target-Angebote
+seo-title: Target offers
 description: Target-Angebote erstellen
-seo-description: Target-Angebote erstellen
+seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: ca9c6fd1-7f2e-4c99-ba6e-0a064274ac24
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 71%
+source-wordcount: '91'
+ht-degree: 70%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 71%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. Klicken Sie auf **Neu ...**
-1. Sie können den **Titel**, **Name** und den Typ des zu erstellenden Erlebnisses angeben. in diesem Fall Test&amp;Target-Angebot.
+1. Sie können die **Titel**, **Name** und Art des zu erstellenden Erlebnisses; in diesem Fall Test&amp;Target-Angebot.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -39,4 +39,4 @@ ht-degree: 71%
 
 ## Integrieren mit Adobe Target {#integrating-with-adobe-target}
 
-Ausführliche Informationen finden Sie unter [Integrieren mit Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) .
+Siehe [Integration mit Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) für ausführliche Informationen.

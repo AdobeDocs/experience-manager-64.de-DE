@@ -1,6 +1,6 @@
 ---
 title: Wiederverwenden von Assets mit MSM
-description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus übergeordneten Assets abgeleitet und mit diesen verknüpft sind. Die Assets bleiben mit einer Primärkopie synchronisiert und erhalten mit wenigen Klicks die Aktualisierungen von übergeordneten Assets.
+description: Sie können Assets für mehrere Seiten/Ordner verwenden, die aus übergeordneten Assets abgeleitet und mit diesen verknüpft sind. Die Assets bleiben mit einer primären Kopie synchronisiert und mit nur wenigen Klicks erhalten Sie Aktualisierungen von übergeordneten Assets.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Multi Site Manager
@@ -9,27 +9,27 @@ exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '3159'
-ht-degree: 76%
+ht-degree: 93%
 
 ---
 
 # Wiederverwenden von mit MSM für Assets[!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
-Mit der Funktion &quot;Multi Site Manager&quot;(MSM) in [!DNL Adobe Experience Manager] können Benutzer Inhalte wiederverwenden, die einmal erstellt und über mehrere Webspeicherorte hinweg wiederverwendet werden. Dasselbe gilt für digitale Assets wie MSM für die Funktion [!DNL Assets]. Mit MSM für [!DNL Assets] können Sie:
+Funktionen für Multi-Site-Manager (MSM) in [!DNL Adobe Experience Manager] ermöglicht Benutzern die Wiederverwendung von einmalig erstellten und über mehrere Webspeicherorte hinweg wiederverwendeten Inhalten. Dasselbe gilt für digitale Assets wie MSM für [!DNL Assets] Funktionalität. Mit MSM für [!DNL Assets] können Sie:
 
 * Einmal Assets anlegen und dann Kopien dieser Assets erstellen, um sie in anderen Bereichen der Site wiederzuverwenden.
-* Halten Sie mehrere Kopien in Synchronisierung und aktualisieren Sie die ursprüngliche primäre Kopie einmal, um die Änderungen an die untergeordneten Kopien zu übertragen.
+* Mehrere Kopien synchron halten und die ursprüngliche primäre Kopie einmal aktualisieren, um die Änderungen an die untergeordneten Kopien zu übertragen.
 * Lokale Änderungen vornehmen, indem Sie die Verknüpfung zwischen übergeordneten und untergeordneten Assets vorübergehend oder dauerhaft unterbrechen.
 
 ## Voraussetzungen {#msm-prerequisites}
 
-Um MSM für [!DNL Assets] zu verwenden, installieren Sie mindestens [!DNL Experience Manager] 6.4 Service Pack 5. Weitere Informationen finden Sie unter [Versionshinweise des neuesten Service Packs](/help/release-notes/sp-release-notes.md).
+Verwenden von MSM für [!DNL Assets], installieren Sie mindestens [!DNL Experience Manager] 6.4 Service Pack 5. Weitere Informationen finden Sie unter [Versionshinweise zum neuesten Service Pack](/help/release-notes/sp-release-notes.md).
 
 ## Wissenswertes über Vorteile und Konzepte {#understand-benefits-concepts}
 
 ### Funktionsweise und Vorteile {#how-it-works-the-benefits}
 
-Weitere Informationen zu Nutzungsszenarien einer Wiederverwendung identischer Inhalte (Text und Assets) über mehrere Web-Speicherorte hinweg finden Sie unter [Mögliche MSM-Szenarien](/help/sites-administering/msm.md). [!DNL Experience Manager] unterhält einen Link zwischen dem ursprünglichen Asset und dessen verknüpften Kopien, die als Live Copies (LCs) bezeichnet werden. Diese bestehende Verknüpfung ermöglicht Push-Übertragungen zentraler Änderungen an eine große Zahl von Live Copies. Auf diese Weise werden schnellere Aktualisierungen ermöglicht, während die mit der Verwaltung doppelter Kopien einhergehenden Beschränkungen entfallen. Die Übertragung von Änderungen erfolgt fehlerfrei und zentralisiert. Die Funktion lässt Raum für Aktualisierungen, die auf ausgewählte Live Copies beschränkt sind. Benutzer können die Verknüpfung trennen, d. h. die Vererbung unterbrechen, und lokale Bearbeitungen vornehmen, die nicht überschrieben werden, wenn die primäre Kopie das nächste Mal aktualisiert und Änderungen eingeführt werden. Die Trennung kann für einige ausgewählte Metadatenfelder oder für ein vollständiges Asset vorgenommen werden. Dies ermöglicht eine flexible lokale Aktualisierung von Assets, die ursprünglich von einer Primärkopie übernommen wurden.
+Weitere Informationen zu Nutzungsszenarien einer Wiederverwendung identischer Inhalte (Text und Assets) über mehrere Web-Speicherorte hinweg finden Sie unter [Mögliche MSM-Szenarien](/help/sites-administering/msm.md). [!DNL Experience Manager] unterhält einen Link zwischen dem ursprünglichen Asset und dessen verknüpften Kopien, die als Live Copies (LCs) bezeichnet werden. Diese bestehende Verknüpfung ermöglicht Push-Übertragungen zentraler Änderungen an eine große Zahl von Live Copies. Auf diese Weise werden schnellere Aktualisierungen ermöglicht, während die mit der Verwaltung doppelter Kopien einhergehenden Beschränkungen entfallen. Die Übertragung von Änderungen erfolgt fehlerfrei und zentralisiert. Die Funktion lässt Raum für Aktualisierungen, die auf ausgewählte Live Copies beschränkt sind. Benutzer können die Verknüpfung trennen, also die Vererbung unterbrechen, und lokale Bearbeitungen vornehmen, die beim nächsten Aktualisieren der primären Kopie und Rollout der Änderungen nicht überschrieben werden. Die Trennung kann für einige ausgewählte Metadatenfelder oder für ein vollständiges Asset vorgenommen werden. Sie ermöglicht es, lokale Assets zu aktualisieren, die ursprünglich von einer primären Kopie übernommen wurden.
 
 MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copies bei, sodass:
 
@@ -39,32 +39,32 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 
 ### Glossar der Begriffe in MSM für Assets   {#glossary-msm-for-assets}
 
-* **Quelle:** Die ursprünglichen Assets oder Ordner. Primäre Kopie, von der Live Copies abgeleitet werden.
+* **Quelle**: Die ursprünglichen Assets oder Ordner. Primäre Kopie, aus der Live Copys abgeleitet werden.
 
-* **Live Copy:** Die Kopie der Quell-Assets/-Ordner, die mit der zugehörigen Quelle synchronisiert wird. Live Copies können eine Quelle für weitere Live Copies sein. Siehe [Erstellen von LCs](#create-live-copy-asset).
+* **Live Copy**: Die Kopie der Quell-Assets/-Ordner, die mit der zugehörigen Quelle synchronisiert wird. Live Copies können eine Quelle für weitere Live Copies sein. Siehe [Erstellen von LCs](#create-live-copy-asset).
 
-* **Vererbung:** Ein Link/Verweis zwischen einem Live Copy-Asset/-Ordner und seiner Quelle, mit dem das System speichert, wo die Aktualisierungen gesendet werden. Eine Vererbung existiert für Metadatenfelder auf granularer Ebene. Die Vererbung kann für ausgewählte Metadatenfelder entfernt werden, während die Live-Beziehung zwischen Quelle und zugehöriger Live Copy beibehalten wird.
+* **Vererbung**: Ein Link/Verweis zwischen einem Live Copy-Asset/Ordner und seiner Quelle, die das System verwendet, um sich zu merken, wohin es die Aktualisierungen senden soll. Eine Vererbung existiert für Metadatenfelder auf granularer Ebene. Die Vererbung kann für ausgewählte Metadatenfelder entfernt werden, während die Live-Beziehung zwischen Quelle und zugehöriger Live Copy beibehalten wird.
 
 * **Rollout**: Eine Aktion, durch die die Änderungen an der Quelle nachgelagert an die Live Copies weitergegeben werden. Es ist möglich, mithilfe der Aktion „Rollout“ eine oder mehrere Live Copies in einem Schritt zu aktualisieren. Siehe [Rollout](#rollout-action).
 
-* **Rollout-Konfiguration:**  Regeln, die bestimmen, welche Eigenschaften wie und wann synchronisiert werden. Diese Konfigurationen werden beim Erstellen von Live Copies angewendet und können später bearbeitet werden. Dabei kann ein untergeordnetes Element die Rollout-Konfiguration vom zugehörigen übergeordneten Asset übernehmen. Verwenden Sie für MSM für [!DNL Assets] nur die standardmäßige Rollout-Konfiguration. Die anderen Rollout-Konfigurationen sind für MSM für [!DNL Assets] nicht verfügbar.
+* **Rollout-Konfiguration**: Regeln, die bestimmen, welche Eigenschaften wie und wann synchronisiert werden. Diese Konfigurationen werden beim Erstellen von Live Copies angewendet und können später bearbeitet werden. Dabei kann ein untergeordnetes Element die Rollout-Konfiguration vom zugehörigen übergeordneten Asset übernehmen. Verwenden Sie für MSM für [!DNL Assets] nur die standardmäßige Rollout-Konfiguration. Die anderen Rollout-Konfigurationen sind für MSM für [!DNL Assets] nicht verfügbar.
 
-* **Synchronisieren:** Eine weitere Aktion, die zusätzlich zum Rollout für Parität zwischen Quelle und deren Live Copy sorgt, indem Aktualisierungen von der Quelle an Live Copies gesendet werden. Eine Synchronisierung wird für eine bestimmte Live Copy initiiert und die Aktion ruft die Änderungen von der Quelle ab. Mit dieser Aktion können Sie nur eine der Live Copies aktualisieren. Siehe [Aktion „Synchronisieren“](#about-synchronize-action).
+* **Synchronisieren**: Eine weitere Aktion, die zusätzlich zum Rollout für Parität zwischen Quelle und deren Live Copy sorgt, indem Aktualisierungen von der Quelle an die Live Copys gesendet werden. Eine Synchronisierung wird für eine bestimmte Live Copy initiiert und die Aktion ruft die Änderungen von der Quelle ab. Mit dieser Aktion können Sie nur eine der Live Copies aktualisieren. Siehe [Aktion „Synchronisieren“](#about-synchronize-action).
 
-* **Aussetzen:** Entfernt vorübergehend die Live-Beziehung zwischen einer Live Copy und dem zugehörigen Quell-Asset/-Ordner. Sie können die Beziehung wieder aufnehmen. Siehe [Aktion „Aussetzen“](#suspend-and-resume-relationship).
+* **Aussetzen**: Entfernt vorübergehend die Live-Beziehung zwischen einer Live Copy und dem zugehörigen Quell-Asset/-Ordner. Sie können die Beziehung wieder aufnehmen. Siehe [Aktion „Aussetzen“](#suspend-and-resume-relationship).
 
-* **Fortsetzen:** Setzt die Live-Beziehung fort, damit eine Live Copy erneut Aktualisierungen von der Quelle erhält. Siehe [Aktion „Fortsetzen“](#suspend-and-resume-relationship).
+* **Fortsetzen**: Setzt die Live-Beziehung fort, damit eine Live Copy erneut Aktualisierungen von der Quelle empfangen kann. Siehe [Aktion „Fortsetzen“](#suspend-and-resume-relationship).
 
-* **Zurücksetzen:** Durch die Aktion &quot;Zurücksetzen&quot;wird die Live Copy wieder zu einer Replikation der Quelle, indem lokale Änderungen überschrieben werden. Außerdem werden abgebrochene Vererbungsvorgänge entfernt und Vererbungen in allen Metadatenfeldern zurückgesetzt. Für zukünftige lokale Änderungen müssen Sie die Vererbung bestimmter Felder erneut abbrechen. Siehe [Lokale Änderungen an LC](#make-local-modifications-to-live-copy).
+* **Zurücksetzen**: Durch die Aktion „Zurücksetzen“ wird die Live Copy wieder eine Replikation der Quelle. Dazu werden lokale Änderungen überschrieben. Außerdem werden abgebrochene Vererbungsvorgänge entfernt und Vererbungen in allen Metadatenfeldern zurückgesetzt. Für zukünftige lokale Änderungen müssen Sie die Vererbung bestimmter Felder erneut abbrechen. Siehe [Lokale Änderungen an LC](#make-local-modifications-to-live-copy).
 
-* **Trennen:** Entfernt unwiderruflich die Live-Beziehung eines Live Copy-Assets/-Ordners. Nach der Aktion „Trennen“ können Live Copies niemals Aktualisierungen aus der Quelle empfangen und sie haben keinen Live Copy-Status mehr. Siehe [Entfernen von Beziehungen](#remove-live-relationship).
+* **Trennen**: Entfernt unwiderruflich die Live-Beziehung eines Live Copy-Assets/-Ordners. Nach der Aktion „Trennen“ können Live Copies niemals Aktualisierungen aus der Quelle empfangen und sie haben keinen Live Copy-Status mehr. Siehe [Entfernen von Beziehungen](#remove-live-relationship).
 
 ## Erstellen von Live Copies eines Assets {#create-live-copy-asset}
 
 Führen Sie einen der folgenden Schritte aus, um eine Live Copy aus einem oder mehreren Quell-Assets oder -Ordnern zu erstellen:
 
-* **Methode 1**: Wählen Sie die Quell-Assets aus und klicken Sie oben in der Symbolleiste auf  **[!UICONTROL Erstellen]**  >  **[!UICONTROL Live]** Copy .
-* **Methode 2**: Klicken Sie in der  [!DNL Experience Manager] Benutzeroberfläche oben rechts auf der Benutzeroberfläche auf  **[!UICONTROL Erstellen > Live]** Copy .
+* **** Methode 1: Wählen Sie die Quell-Assets aus und klicken Sie oben in der Symbolleiste auf **[!UICONTROL Erstellen]** > **[!UICONTROL Live Copy]**.
+* **** Methode 2: Klicken Sie oben rechts in der [!DNL Experience Manager]-Benutzeroberfläche auf **[!UICONTROL Erstellen > Live Copy]**.
 
 Sie können Live Copies eines Assets oder Ordners einzeln erstellen. Sie können Live Copies erstellen, die aus einem Asset oder Ordner abgeleitet werden, der ebenfalls eine Live Copy ist.
 
@@ -73,15 +73,15 @@ Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie v
 Führen Sie folgende Schritte aus, um Live Copies mit der ersten Methode zu erstellen:
 
 1. Wählen Sie Quell-Assets oder -ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen > Live Copy]**.
-   ![Erstellen einer Live Copy über die  [!DNL Experience Manager] Benutzeroberfläche](assets/lc_create1.png)
+   ![Erstellen einer Live Copy über die [!DNL Experience Manager]-Oberfläche](assets/lc_create1.png)
 1. Wählen Sie Quell-Asset oder -ordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Titel und Namen an. Assets haben keine untergeordneten Elemente. Wenn Sie eine Live Copy von Ordnern erstellen, können Sie die untergeordneten Elemente ein- oder ausschließen.
 1. Wählen Sie eine Rollout-Konfiguration aus. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
 Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu erstellen:
 
-1. Klicken Sie in der [!DNL Experience Manager]-Benutzeroberfläche oben rechts auf **[!UICONTROL Erstellen > Live Copy]**.
-   ![Erstellen einer Live Copy über die  [!DNL Experience Manager] Benutzeroberfläche](assets/lc_create2.png)
+1. Klicken Sie oben rechts in der [!DNL Experience Manager]-Oberfläche auf **[!UICONTROL Erstellen > Live Copy]**.
+   ![Erstellen einer Live Copy über die [!DNL Experience Manager]-Oberfläche](assets/lc_create2.png)
 1. Wählen Sie Quell-Asset oder -ordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Wählen Sie einen Zielordner aus. Klicken Sie auf **[!UICONTROL Weiter]**.
 1. Geben Sie einen Titel und Namen an. Assets haben keine untergeordneten Elemente. Wenn Sie eine Live Copy von Ordnern erstellen, können Sie die untergeordneten Elemente ein- oder ausschließen.
@@ -93,14 +93,14 @@ Führen Sie folgende Schritte aus, um Live Copies mit der zweiten Methode zu er
 
 ## Anzeigen verschiedener Eigenschaften und Status von Quelle und Live Copy {#view-properties-statuses-source-and-lc}
 
-Sie können die Informationen und MSM-bezogenen Status von Live Copies wie Beziehung, Synchronisierung, Rollouts und mehr aus den verschiedenen Bereichen der [!DNL Experience Manager]-Benutzeroberfläche anzeigen. Die folgenden beiden Methoden funktionieren für Assets und Ordner:
+Sie können Informationen und MSM-bezogene Status der Live Copy wie Beziehung, Synchronisierung, Rollouts usw. in verschiedenen Bereichen der [!DNL Experience Manager]-Benutzeroberfläche anzeigen. Die folgenden beiden Methoden funktionieren für Assets und Ordner:
 
-* Wählen Sie ein Live Copy-Asset aus und suchen Sie die Informationen auf seiner Seite **[!UICONTROL Eigenschaften]** .
-* Wählen Sie den Quellordner aus und suchen Sie die detaillierten Informationen zu den einzelnen Live Copies über die **[!UICONTROL Live Copy-Konsole]**.
+* Wählen Sie ein Live Copy-Asset aus und suchen Sie die Informationen in dessen **[!UICONTROL Eigenschaften]** Seite.
+* Wählen Sie den Quellordner aus und suchen Sie detaillierte Informationen für jede Live Copy über die **[!UICONTROL Live Copy-Konsole]**.
 
 >[!TIP]
 >
->Um den Status einiger separater Live Copies zu überprüfen, verwenden Sie die erste Methode, um die Seite **[!UICONTROL Eigenschaften]** zu überprüfen. Um den Status vieler Live Copies zu überprüfen, verwenden Sie die zweite Methode, um die Seite **[!UICONTROL Beziehungsstatus]** zu überprüfen.
+>Tipp: Um den Status einiger separater Live Copy zu überprüfen, verwenden Sie die erste Methode, die die Seite **[!UICONTROL Eigenschaften]** anzeigt. Um den Status vieler Live Copies zu überprüfen, verwenden Sie die zweite Methode, um **[!UICONTROL Beziehungsstatus]** Seite.
 
 ### Informationen und Status von Live Copies   {#information-status-of-one-lc}
 
@@ -124,14 +124,14 @@ Führen Sie folgende Schritte aus, um Informationen und Status eines Live Copy-A
 
 >[!TIP]
 >
->Sie können die Status von Live Copies anderer Ordner schnell sehen, ohne zu viel durchsuchen zu müssen. Ändern Sie den Ordner im oberen mittleren Teil der **[!UICONTROL Live Copy-Übersicht]**-Benutzeroberfläche.
+>Tipp: Sie können die Status von Live Copys anderer Ordner ohne großen Navigationsaufwand schnell einsehen. Ändern Sie den Ordner aus dem oberen mittleren Teil der Oberfläche **[!UICONTROL Live Copy-Übersicht]**.
 
 ### Schnellaktionen in der Leiste „Verweise“ für Quellen {#quick-actions-from-references-rail-for-source}
 
 Für Quell-Assets oder -ordner können Sie die folgenden Informationen über die Leiste „Verweise“ anzeigen und die folgenden Aktionen von dort aus direkt ausführen:
 
 * Anzeigen der Pfade von Live Copies
-* Öffnen oder zeigen Sie eine bestimmte Live Copy in der [!DNL Experience Manager]-Benutzeroberfläche an.
+* Öffnen und Anzeigen einer bestimmten Live Copy in der [!DNL Experience Manager]-Benutzeroberfläche
 * Synchronisieren von Aktualisierungen mit einer bestimmten Live Copy
 * Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration für eine bestimmte Live Copy
 * Zugreifen auf die Konsole „Live Copy-Übersicht“
@@ -142,14 +142,14 @@ Wählen Sie Quell-Asset oder -ordner aus, öffnen Sie die linke Leiste und klick
 
 Klicken Sie für eine bestimmte Live Copy auf **[!UICONTROL Live Copy bearbeiten]**, um die Beziehung auszusetzen oder die Rollout-Konfiguration zu ändern.
 
-![Für eine bestimmte Live Copy ist die Option zum Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration über die Leiste &quot;Verweise&quot;verfügbar, wenn das Quell-Asset ausgewählt ist.](assets/lc_edit_referencerail.png)
+![Für eine bestimmte Live Copy kann die Option zum Aussetzen der Beziehung oder Ändern der Rollout-Konfiguration bei ausgewähltem Quell-Asset über die Leiste „Verweise“ aufgerufen werden.](assets/lc_edit_referencerail.png)
 
 ### Schnellaktionen in der Leiste „Verweise“ für Live Copies   {#quick-actions-from-references-rail-for-live-copy}
 
 Für Live Copy-Assets oder -Ordner können Sie die folgenden Informationen über die Leiste „Verweise“ anzeigen und die folgenden Aktionen von dort aus direkt ausführen:
 
 * Anzeigen des Pfads der zugehörigen Quelle.
-* Öffnen oder zeigen Sie eine bestimmte Live Copy in der [!DNL Experience Manager]-Benutzeroberfläche an.
+* Öffnen und Anzeigen einer bestimmten Live Copy in der [!DNL Experience Manager]-Benutzeroberfläche
 * Stellen Sie die Aktualisierungen bereit.
 
 Wählen Sie Live Copy-Asset oder -Ordner aus, öffnen Sie die linke Leiste und klicken Sie auf **[!UICONTROL Verweise]**. Sie können auch ein Asset oder einen Ordner auswählen und den Tastaturbefehl `Alt + 4` verwenden.
@@ -165,7 +165,7 @@ Nach der Bearbeitung einer Quelle können die Änderungen entweder mithilfe eine
 Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle oder einige ausgewählte Live Copies aktualisieren.
 
 1. Wählen Sie ein Live Copy-Asset oder einen Ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]** Sie können auch den Tastaturbefehl `p` verwenden.
-1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Klicken Sie in der Symbolleiste auf **[!UICONTROL Rollout]** .
+1. Klicken Sie auf **[!UICONTROL Live Copy-Quelle]**. Klicken Sie in der Symbolleiste auf **[!UICONTROL Rollout]**.
 1. Wählen Sie die zu aktualisierenden Live Copies aus. Klicken Sie auf **[!UICONTROL Rollout]**.
 1. Um ein Rollout der an den untergeordneten Assets vorgenommenen Aktualisierungen durchzuführen, wählen Sie **[!UICONTROL Rollout von Quelle und allen untergeordneten Elementen]** aus.
    ![Rollout von Quelländerungen an einige oder alle Live Copies](assets/lc_rollout_page.png)
@@ -174,7 +174,7 @@ Sie können eine Aktion „Rollout“ über das Quell-Asset initiieren und alle 
 >
 >Änderungen an einem Quell-Asset werden nur den Live Copies mit einem direkten Verweis bereitgestellt. Wenn eine Live Copy von einer anderen Live Copy abgeleitet wird, werden die Änderungen nicht der abgeleiteten Live Copy bereitgestellt.
 
-Alternativ können Sie eine Rollout-Aktion über die Leiste [!UICONTROL Verweise] starten, nachdem Sie eine bestimmte Live Copy ausgewählt haben. Weitere Informationen finden Sie unter [Schnellaktionen in der Leiste „Verweise“ für Live Copies](#quick-actions-from-references-rail-for-live-copy). Bei dieser Rollout-Methode werden nur die ausgewählte Live Copy und optional deren untergeordnete Elemente aktualisiert.
+Alternativ können Sie eine Rollout-Aktion über die [!UICONTROL Verweise] nach Auswahl einer bestimmten Live Copy angezeigt. Weitere Informationen finden Sie unter [Schnellaktionen in der Leiste „Verweise“ für Live Copies](#quick-actions-from-references-rail-for-live-copy). Bei dieser Rollout-Methode werden nur die ausgewählte Live Copy und optional deren untergeordnete Elemente aktualisiert.
 
 ![Rollout von Quelländerungen an die ausgewählte Live Copy](assets/lc_rollout_dialog.png)
 
@@ -182,23 +182,23 @@ Alternativ können Sie eine Rollout-Aktion über die Leiste [!UICONTROL Verweise
 
 Durch eine Aktion „Synchronisieren“ werden die Änderungen einer Quelle nur an die ausgewählte Live Copy übertragen. Die Aktion „Synchronisieren“ respektiert und bewahrt die lokalen Änderungen, die nach dem Abbrechen der Vererbung vorgenommen wurden. Die lokalen Änderungen werden nicht überschrieben und die abgebrochene Vererbung wird nicht wiederhergestellt. Sie haben drei Möglichkeiten, um eine Aktion „Synchronisieren“ zu initiieren.
 
-| Wo in der [!DNL Experience Manager]-Benutzeroberfläche | Zeitpunkt und Grund für die Verwendung | Informationen zur Verwendung |
+| Wo in der [!DNL Experience Manager]-Oberfläche | Zeitpunkt und Grund für die Verwendung | Informationen zur Verwendung |
 |---|---|---|
 | [!UICONTROL Leiste „Verweise“] | Schnelles Synchronisieren bei bereits ausgewählter Quelle | Siehe [Schnellaktionen in der Leiste „Verweise“ für Quellen](#quick-actions-from-references-rail-for-source) |
 | Symbolleiste auf der Seite [!UICONTROL Eigenschaften] | Initiieren von Synchronisationen bei bereits öffneten Live Copy-Eigenschaften | Siehe [Synchronisieren von Live Copies](#synchronize-live-copy) |
-| [!UICONTROL Konsole „Live Copy-Übersicht“] | Schnelles Synchronisieren mehrerer Assets (nicht notwendigerweise aller), wenn der Quellordner ausgewählt ist oder die Konsole [!UICONTROL Live Copy-Übersicht] bereits geöffnet ist. Initiieren der Aktion „Synchronisieren“ für jeweils ein Asset, aber eine schnellere Methode, um mehrere Assets auf einmal zu synchronisieren | Siehe [Aktionen für viele Assets in einem Live Copy-Ordner](#take-actions-on-many-assets-in-lcfolder) |
+| [!UICONTROL Konsole „Live Copy-Übersicht“] | Schnelles Synchronisieren mehrerer Assets (nicht unbedingt von allen), wenn der Quellordner ausgewählt oder die Konsole [!UICONTROL Live Copy-Übersicht] bereits geöffnet ist; Initiieren der Aktion „Synchronisieren“ für jeweils ein Asset, aber eine schnellere Methode, um mehrere Assets auf einmal zu synchronisieren | Siehe [Aktionen für viele Assets in einem Live Copy-Ordner](#take-actions-on-many-assets-in-lcfolder) |
 
 ### Synchronisieren von Live Copies   {#synchronize-live-copy}
 
 Um eine Aktion „Synchronisieren“ zu starten, öffnen Sie die Seite **[!UICONTROL Eigenschaften]** einer Live Copy, klicken Sie auf **[!UICONTROL Live Copy]** und dann auf die gewünschte Aktion in der Symbolleiste.
 
-Informationen zu den Status und Informationen einer Aktion &quot;Synchronisieren&quot;finden Sie unter [Informationen und Status aller Live Copies eines Ordners](#information-status-of-all-lcs-of-folder).
+Informationen zu den Status und Informationen im Zusammenhang mit einer Aktion &quot;Synchronisieren&quot;finden Sie unter [Informationen und Status aller Live Copies eines Ordners](#information-status-of-all-lcs-of-folder).
 
 ![Aktion „Synchronisieren“ – Abrufen von Quelländerungen](assets/lc_sync.png)
 
 >[!NOTE]
 >
->Wenn die Beziehung ausgesetzt ist, ist die Aktion „Synchronisieren“ in der Symbolleiste nicht verfügbar. Während die Aktion &quot;Synchronisieren&quot;in der Leiste [!UICONTROL Verweise] verfügbar ist, werden die Änderungen auch bei einem erfolgreichen Rollout nicht weitergeleitet.
+>Wenn die Beziehung ausgesetzt ist, ist die Aktion „Synchronisieren“ in der Symbolleiste nicht verfügbar. Während die Aktion &quot;Synchronisieren&quot;verfügbar ist, finden Sie sie im [!UICONTROL Verweise] -Leiste werden die Änderungen auch bei einem erfolgreichen Rollout nicht übertragen.
 
 ## Aussetzen und Fortsetzen der Beziehung {#suspend-and-resume-relationship}
 
@@ -212,7 +212,7 @@ Beziehungen von mehreren Assets in einem Live Copy-Ordner können auch schnell 
 
 Eine Live Copy ist eine Replikation der ursprünglichen Quelle zum Zeitpunkt ihrer Erstellung. Die Metadatenwerte einer Live Copy werden von der Quelle übernommen. Die Metadatenfelder halten einzeln die Vererbung mit den entsprechenden Feldern des Quell-Assets aufrecht.
 
-Sie haben jedoch die Flexibilität, lokale Änderungen an einer Live Copy vorzunehmen, um einige ausgewählte Eigenschaften zu ändern. Um lokale Änderungen vorzunehmen, brechen Sie die Vererbung der gewünschten Eigenschaft ab. Wenn die Vererbung von mindestens einem Metadatenfeld abgebrochen wird, werden Live-Beziehung des Assets und Vererbung der anderen Metadatenfelder beibehalten. Bei einer Synchronisierung oder einem Rollout werden die lokalen Änderungen nicht überschrieben. Öffnen Sie dazu die Seite **[!UICONTROL Eigenschaften]** eines Live Copy-Assets und klicken Sie auf die Option **[!UICONTROL Vererbung abbrechen]** neben einem Metadatenfeld.
+Sie haben jedoch die Flexibilität, lokale Änderungen an einer Live Copy vorzunehmen, um einige ausgewählte Eigenschaften zu ändern. Um lokale Änderungen vorzunehmen, brechen Sie die Vererbung der gewünschten Eigenschaft ab. Wenn die Vererbung von mindestens einem Metadatenfeld abgebrochen wird, werden Live-Beziehung des Assets und Vererbung der anderen Metadatenfelder beibehalten. Bei einer Synchronisierung oder einem Rollout werden die lokalen Änderungen nicht überschrieben. Öffnen Sie dazu die Seite **[!UICONTROL Eigenschaften]** eines Live Copy-Assets und klicken Sie auf die Option **[!UICONTROL Vererbung abbrechen]** neben einem Metadatenfeld.
 
 Sie können alle lokalen Änderungen rückgängig machen und das Asset auf den Status seiner Quelle zurücksetzen. Setzen Sie die Aktion unwiderruflich zurück, überschreiben Sie sofort alle lokalen Änderungen und stellen Sie die Vererbung bei allen Metadatenfeldern wieder her. Zwecks Wiederherstellung klicken Sie auf der Seite **[!UICONTROL Eigenschaften]** eines Live Copy-Assets in der Symbolleiste auf **[!UICONTROL Zurücksetzen]**.
 
@@ -220,7 +220,7 @@ Sie können alle lokalen Änderungen rückgängig machen und das Asset auf den S
 
 ## Entfernen von Live-Beziehungen   {#remove-live-relationship}
 
-Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trennen“ vollständig entfernen. Nach dem Trennen wird die Live Copy zu einem eigenständigen Asset oder Ordner. Sie wird unmittelbar nach dem Trennen in der [!DNL Experience Manager]-Benutzeroberfläche als neues Asset angezeigt. Führen Sie die folgenden Schritte aus, um eine Live Copy von ihrer Quelle zu trennen.
+Sie können die Beziehung zwischen Quelle und Live Copy mit der Aktion „Trennen“ vollständig entfernen. Nach dem Trennen wird die Live Copy zu einem eigenständigen Asset oder Ordner. Sie wird unmittelbar nach dem Trennen als neues Asset in der [!DNL Experience Manager]-Oberfläche angezeigt. Führen Sie die folgenden Schritte aus, um eine Live Copy von ihrer Quelle zu trennen.
 
 1. Wählen Sie ein Live Copy-Asset oder einen Ordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]** Sie können auch den Tastaturbefehl `p` verwenden.
 1. Klicken Sie auf **[!UICONTROL Live Copy]**. Klicken Sie in der Symbolleiste auf **[!UICONTROL Trennen]**. Klicken Sie im angezeigten Dialogfeld auf **[!UICONTROL Trennen]**.
@@ -259,7 +259,7 @@ Wenn mehrere Assets in einem Live Copy-Ordner vorhanden sind, kann das Initiier
 
 ## Auswirkungen von Asset-Management-Aufgaben auf Live Copies {#impact-of-asset-management-tasks-on-live-copies}
 
-Live Copies und Quellen sind Assets oder Ordner, die in gewissem Umfang als digitale Assets verwaltet werden können. Einige Asset-Management-Aufgaben in [!DNL Experience Manager] wirken sich spezifisch auf die Live Copies aus.
+Live Copies und Quellen sind Assets oder Ordner, die in gewissem Umfang als digitale Assets verwaltet werden können. Einige Asset-Management-Aufgaben in [!DNL Experience Manager] haben eine spezifische Auswirkung auf Live Copys.
 
 * Beim Kopieren einer Live Copy wird ein Live Copy-Asset mit derselben Quelle wie bei der ersten Live Copy erstellt.
 * Wenn Sie eine Quelle oder eine Live Copy verschieben, wird die Live-Beziehung beibehalten.

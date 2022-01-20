@@ -1,18 +1,18 @@
 ---
 title: 'Adaptive Formulare gestalten '
-seo-title: 'Adaptive Formulare gestalten '
+seo-title: Style your adaptive form
 description: 'Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, einzelne Komponenten formatieren und Webfonts in einem Design verwenden '
-seo-description: 'Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, einzelne Komponenten formatieren und Webfonts in einem Design verwenden '
+seo-description: Learn to create a custom theme, style individual components, and use web fonts in a theme
 page-status-flag: de-activated
 uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 0ccf43eb-f0c6-4204-8325-f891caa8f5af
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2071'
-ht-degree: 71%
+source-wordcount: '2049'
+ht-degree: 72%
 
 ---
 
@@ -24,7 +24,7 @@ Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, einzelne Kompone
 
 Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](create-your-first-adaptive-form.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
-## Über die Schulung   {#about-the-tutorial}
+## Über die Schulung  {#about-the-tutorial}
 
 Sie können Themen verwenden, um einem adaptiven Formular eine eindeutige Darstellung und einen einzigartigen Stil zu geben. Sie können Standarddesigns anwenden, die mit dem adaptiven Formulareditor bereitgestellt werden, oder eigene Designs erstellen. AEM Forms bietet einen [Design-Editor zum Erstellen benutzerdefinierter Designs](themes.md). Ein einzelnes Design kann das gleiche Aussehen auf Mobilgeräten, Tablets oder Desktops bieten. Vorkenntnisse von CSS oder LESS sind nicht erforderlich, um den Designeditor zu verwenden, aber sie sind erwünscht.
 
@@ -43,9 +43,9 @@ Nach dem Abschließen des Lernprogramms sieht das Formular wie folgt aus:
 
 Laden Sie die unten abgebildeten kopfzeilenartigen und Logo-Bilder auf Ihrem lokalen Computer herunter. Die Kopfzeile des adaptiven Formulars `shipping-address-add-update-form` verwendet die kopfzeilenartigen und Logo-Bilder. Das kopfzeilenartige Bild erscheint auf der rechten Seite der Kopfzeile.
 
-[Datei laden](assets/header-style.png)
+[Datei abrufen](assets/header-style.png)
 
-[Datei laden](assets/logo-1.png)
+[Datei abrufen](assets/logo-1.png)
 
 ## Schritt 1: Wenden Sie ein Design auf Ihr adaptives Formular an {#step-apply-a-theme-to-your-adaptive-form}
 
@@ -56,7 +56,7 @@ Der Adaptive Forms Editor bietet mehrere Standarddesigns. Wenn Sie beabsichtigen
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
 1. Öffnen Sie die Eigenschaften von **Adaptive Form - Container**. Navigieren Sie im Eigenschaften-Browser zu **Standard** > **Adaptives Formulardesign**. Das Feld **Adaptives Formulardesign** listet alle vordefinierten und benutzerdefinierten Designs auf. Standardmäßig wird das Canvas-Design angewendet.
-1. Wählen Sie ein Design aus dem Feld **Adaptives Formulardesign**. Zum Beispiel: **Umfragedesign**. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) , um das ausgewählte Design anzuwenden.
+1. Wählen Sie ein Design aus dem Feld **Adaptives Formulardesign**. Zum Beispiel: **Umfragedesign**. Tippen ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) , um das ausgewählte Design anzuwenden.
 
 ![Adaptives Formular mit dem Standarddesign](assets/default-adaptive-form.png)
 
@@ -76,17 +76,17 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und Logo des
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-   1. Tippen Sie auf das Logo-Bild in der Kopfzeilenkomponente und tippen Sie auf die Eigenschaften ![cmppr](assets/cmppr.png) . Tippen Sie in der Bildeigenschaft auf X, um das vorhandene Logobild zu entfernen.
-   1. Tippen Sie auf &quot;Hochladen&quot;, wählen Sie logo.png aus und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), um die Änderungen zu speichern. Das Bild wurde im Abschnitt [Vor dem Start](/help/forms/using/style-your-adaptive-form.md#before-you-start) heruntergeladen.
-   1. Tippen Sie auf den Kopfzeilentext `We.Retail` und dann auf ![aem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Ändern Sie den Kopfzeilentext in `we retail`. Fettformatierung nur auf `we`in `we retail` anwenden.
+   1. Tippen Sie auf das Logo-Bild in der Kopfzeilenkomponente und tippen Sie auf ![cmppr](assets/cmppr.png) Eigenschaften. Tippen Sie in der Bildeigenschaft auf X, um das vorhandene Logobild zu entfernen.
+   1. Tippen Sie auf &quot;Hochladen&quot;, wählen Sie logo.png aus und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) , um die Änderungen zu speichern. Das Bild wurde im [Vorbereitung](/help/forms/using/style-your-adaptive-form.md#before-you-start) Abschnitt.
+   1. Tippen auf Kopfzeilentext, `We.Retail`und tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Ändern des Kopfzeilentextes in `we retail`. Fettformatierung nur auf anwenden `we`in `we retail`.
 
    ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Entfernen Sie Titel und fügen Sie Platzhaltertext hinzu:
 
-   1. Tippen Sie auf das Feld Kunden-ID und dann auf die Eigenschaften ![cmppr](assets/cmppr.png) .
+   1. Tippen Sie auf das Feld Kunden-ID und dann auf ![cmppr](assets/cmppr.png) Eigenschaften.
    1. Kopieren Sie den Inhalt des Felds **Titel** in das Feld **Platzhaltertext**.
-   1. Löschen Sie den Inhalt des Felds **Titel** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Inhalt der **Titel** Feld und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Wiederholen Sie die vorherigen drei Schritte für alle Textfelder, das numerische Feld und das E-Mail-Feld im Formular.
 
    ![updated-adaptive-form](assets/updated-adaptive-form.png)
@@ -99,7 +99,7 @@ Ein Design ist eine separate Entität wie adaptive Formulare. Es enthält Stile 
 
 In diesem Lernprogramm werden Kopf- und Fußzeilen, Text- und numerische Komponenten, Anhangskomponenten und Schaltflächen formatiert. Beginnen wir mit dem Erstellen eines Designs: 
 
-### Designs erstellen {#create-a-theme}
+### Erstellen von Designs {#create-a-theme}
 
 1. Melden Sie sich bei der AEM-Autoreninstanz an und navigieren Sie zu **Adobe Experience Manager** > **Forms** > **Designs**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Design]**. Die Seite „Design erstellen“ mit den Feldern zum Erstellen eines Designs wird angezeigt. Die Felder „Titel“ und „Name“ sind obligatorisch.
@@ -107,11 +107,11 @@ In diesem Lernprogramm werden Kopf- und Fußzeilen, Text- und numerische Kompone
    * **Titel:** Geben Sie einen Titel des Designs an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
    * **Name:** Geben Sie den Namen des Designs an. Zum Beispiel: **Globales-Design.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
 
-1. Tippen Sie auf **Erstellen**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tippen Sie auf **Öffnen** , um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Design wird im Design-Editor geöffnet. Zum Formatieren verwendet der Design-Editor ein Standardformular, das mit AEM Forms geliefert wird.
+1. Tippen Sie auf **Erstellen**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tippen **Öffnen** , um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Design wird im Design-Editor geöffnet. Zum Formatieren verwendet der Design-Editor ein Standardformular, das mit AEM Forms geliefert wird.
 
    Informationen zur Verwendung der Benutzeroberfläche des Design-Editors finden Sie unter [Über den Design-Editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
-1. Tippen Sie auf **Themenoptionen** ![theme-options](assets/theme-options.png) > **Konfigurieren**. Wählen Sie im Feld **Vorschau des Formulars** das adaptive Formular **shipping-address-add-update-form** aus, tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) und tippen Sie auf **Speichern**. Jetzt ist der Design-Editor konfiguriert, um Ihr eigenes adaptives Formular anstelle des adaptiven Standardformulars zu benutzen. Tippen Sie auf **Abbrechen**, um zum Design-Editor zurückzukehren.
+1. Tippen **Designoptionen** ![theme-options](assets/theme-options.png) > **Konfigurieren**. Im **Vorschau des Formulars** ein, wählen Sie die **shipping-address-add-update-form** Adaptives Formular, tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)Tippen Sie auf **Speichern**. Jetzt ist der Design-Editor konfiguriert, um Ihr eigenes adaptives Formular anstelle des adaptiven Standardformulars zu benutzen. Tippen Sie auf **Abbrechen**, um zum Design-Editor zurückzukehren.
 
    ![custom-theme](assets/custom-theme.png)
 
@@ -127,7 +127,7 @@ Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwe
 
 1. Navigieren Sie im Bereich „Auswahl“ zur Option **Kopfzeile** > **Text**. Der Bereich „Auswahl“ befindet sich auf der linken Seite des Design-Editors. Wenn das Bedienfeld nicht sichtbar ist, tippen Sie auf ![Seitliches Bedienfeld ein/aus](assets/toggle-side-panel.png) Seitliches Bedienfeld ein/aus.
 
-1. Legen Sie die folgenden Eigenschaften im Akkordeon **Text** fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Legen Sie die folgenden Eigenschaften in der **Text** Akkordeon und tippen ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschaft | Wert |
    |---|---|
@@ -135,27 +135,27 @@ Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwe
    | Schriftfarbe | FFFFFF |
    | Schriftgrad | 54px |
 
-1. Tippen Sie auf das Kopfzeilen-Widget und tippen Sie auf **Kopfzeile**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Erweitern Sie das Akkordeon **Dimensionen und Position**, setzen Sie **Höhe** auf `120px` und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie auf das Kopfzeilen-Widget und tippen Sie auf **Kopfzeile**. Die Optionen zum Formatieren des Kopfzeilen-Widgets werden auf der linken Seite angezeigt. Erweitern Sie die **Dimensionen und Position** Akkordeon festlegen **Höhe** nach `120px`und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Erweitern Sie das Akkordeon „Hintergrund“-des Kopfzeilen-Widgets und stellen Sie die **Hintergrundfarbe** auf `F6921E.` ein.
 
-   Bewegen Sie den Mauszeiger über **Bild und Verlauf** > **+ Hinzufügen** und tippen Sie auf **Bild**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   Bewegen **Bild und Verlauf** > **+ Hinzufügen** Tippen Sie auf **Bild**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    | Eigenschaft | Wert |
    |---|---|
-   | image | Laden Sie header-style.png hoch. Das Bild wurde im Abschnitt [Vor dem Start](/help/forms/using/style-your-adaptive-form.md#before-you-start) heruntergeladen. |
+   | image | Laden Sie header-style.png hoch. Das Bild wurde im [Vorbereitung](/help/forms/using/style-your-adaptive-form.md#before-you-start) Abschnitt. |
    | Position | Rechts unten |
    | Anordnung | Keine Wiederholung |
 
-1. Tippen Sie im Design-Editor auf das Logo in der Kopfzeile und tippen Sie auf **Kopfzeilen-Logo**. Erweitern Sie das Akkordeon Dimensionen &amp; Position , legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie im Design-Editor auf das Logo in der Kopfzeile und tippen Sie auf **Kopfzeilen-Logo**. Erweitern Sie das Akkordeon Dimensionen und Position , legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
   <tr> 
-   <td>Marge</td> 
+   <td>Rand</td> 
    <td>Wert</td> 
   </tr> 
   <tr> 
-   <td>Marge</td> 
+   <td>Rand</td> 
    <td> 
     <ul> 
      <li>Oben: 1.5rem</li> 
@@ -170,9 +170,9 @@ Kopf- und Fußzeile bieten einem adaptiven Formular ein konsistentes und unverwe
  </tbody> 
 </table>
 
-1. Tippen Sie auf das Fußzeilen-Widget und tippen Sie auf **Fußzeile**. Erweitern Sie das Akkordeon **Hintergrund**, setzen Sie die **Hintergrundfarbe** auf `F6921E` und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie auf das Fußzeilen-Widget und tippen Sie auf **Fußzeile**. Erweitern Sie die **Hintergrund** Akkordeon festlegen **Hintergrundfarbe** nach `F6921E`und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-### Formatieren Sie die Datenerfassungskomponente und wenden Sie einen Hintergrund auf das adaptive Formular an.{#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
+### Formatieren Sie die Datenerfassungskomponente und wenden Sie einen Hintergrund auf das adaptive Formular an. {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
 Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen. Zum Beispiel Textfeld und Zahlenfeld. Sie können für jede Komponente einen identischen Stil wie alle Datenerfassungskomponenten oder einen separaten Stil bereitstellen. In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Lieferadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
 
@@ -223,7 +223,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
   </tr> 
   <tr> 
    <td>Abmessungen und Position</td> 
-   <td>Marge</td> 
+   <td>Rand</td> 
    <td> 
     <ul> 
      <li>Links: 10rem</li> 
@@ -232,13 +232,13 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
  </tbody> 
 </table>
 
-1. Tippen Sie auf den leeren Bereich über dem Feld Kunden-ID und tippen Sie auf **Responsive Bereichscontainer**. Legen Sie den **Hintergrund** > **Hintergrundfarbe** auf F1F2F2 fest. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen Sie auf den leeren Bereich über dem Feld Kunden-ID und tippen Sie auf **Responsive Bereichscontainer**. Legen Sie den **Hintergrund** > **Hintergrundfarbe** auf F1F2F2 fest. Tippen ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    ![](do-not-localize/responsive-panel-container.png)
 
 ### Gestalten Sie die Schaltflächen {#style-the-buttons}
 
-Sie können ein benutzerdefiniertes Design verwenden, um einen identischen Stil auf alle Schaltflächen des adaptiven Formulars anzuwenden, und [Inline-Stil](/help/forms/using/inline-style-adaptive-forms.md), um einen Stil auf eine bestimmte Schaltfläche anzuwenden. So gestalten Sie die Schaltflächen:
+Sie können ein benutzerdefiniertes Design verwenden, um einen identischen Stil auf alle Schaltflächen des adaptiven Formulars anzuwenden und [Inline-Stil](/help/forms/using/inline-style-adaptive-forms.md) , um einen Stil auf eine bestimmte Schaltfläche anzuwenden. So gestalten Sie die Schaltflächen:
 
 1. Tippen Sie auf **Senden** und dann auf **Option**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -301,14 +301,14 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
 
    ![style-option](assets/style-option.png)
 
-1. Tippen Sie auf die Schaltfläche **Attach** und tippen Sie auf das Symbol ![aem_6_3_edit](assets/aem_6_3_edit.png)aem_6_3_edit. Legen Sie die folgenden Eigenschaften im Akkordeon **Dimensionen und Position** fest:
+1. Tippen Sie auf **Attach** und tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png)Symbol. Legen Sie die folgenden Eigenschaften in der **Dimensionen und Position** Akkordeon:
 
    | Eigenschaft | Wert |
    |---|---|
    | Gleitkomma | Links |
    | Breite | 10% |
 
-1. Tippen Sie auf die Option **Von der Regierung genehmigter Adressnachweis** und dann auf das Symbol ![aem_6_3_edit](assets/aem_6_3_edit.png)aem_6_3_edit. Legen Sie die folgenden Eigenschaften fest:
+1. Tippen Sie auf **Von Behörden anerkannter Adressnachweis** und tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png)Symbol. Legen Sie die folgenden Eigenschaften fest:
 
 <table> 
  <tbody> 
@@ -342,7 +342,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
   </tr> 
   <tr> 
    <td>Abmessungen und Position<br /> </td> 
-   <td>Marge</td> 
+   <td>Rand</td> 
    <td><br /> 
     <ul> 
      <li>Rechts: 2rem</li> 
@@ -397,7 +397,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
  </tbody> 
 </table>
 
-1. Tippen Sie auf die Schaltfläche **Submit** und dann auf das Symbol ![aem_6_3_edit](assets/aem_6_3_edit.png). Legen Sie die folgenden Eigenschaften fest:
+1. Tippen Sie auf **Einsenden** und tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png) Symbol. Legen Sie die folgenden Eigenschaften fest:
 
 <table> 
  <tbody> 
@@ -413,7 +413,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
   </tr> 
   <tr> 
    <td>Abmessungen und Position</td> 
-   <td>Marge</td> 
+   <td>Rand</td> 
    <td> 
     <ul> 
      <li>Oben: 5rem</li> 
@@ -445,13 +445,13 @@ Adobe Typekit ist ein Webschriftartdienst. Sie können den Dienst mit adaptiven 
 
 >[!NOTE]
 >
->![typekit-to-adobe-](assets/typekit-to-adobe-fonts.png) fontsTypekit wird jetzt als Adobe Fonts bezeichnet und ist mit Creative Cloud- und anderen Abonnements enthalten. [Weitere Informationen](https://fonts.adobe.com/)
+>![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit wird jetzt als Adobe Fonts bezeichnet und ist in Creative Cloud- und anderen Abonnements enthalten. [Weitere Informationen](https://fonts.adobe.com/)
 
-1. Erstellen Sie ein [Adobe Typekit](https://typekit.com/)-Konto, erstellen Sie ein Kit, fügen Sie dem Kit die Schriftart Myriad Pro hinzu, veröffentlichen Sie das Kit und erhalten Sie die Kit-ID. Es ist erforderlich, Adobe Typekit-Schriftarten (Webfonts) in einem adaptiven Formular zu verwenden.
-1. Navigieren Sie auf dem AEM Forms-Server zu ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Tools** ![Hammer](assets/hammer.png) > **Bereitstellung** > **Cloud Services**. Navigieren Sie auf der Cloud Services-Seite zu **Services von Drittanbietern** > **Typekit** und klicken Sie unter &quot;Typekit&quot;auf **Konfigurieren**. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche +, um eine neue Instanz zu erstellen.
+1. Erstellen Sie eine [Adobe Typekit](https://typekit.com/) , erstellen Sie ein Kit, fügen Sie dem Kit die Schriftart Myriad Pro hinzu, veröffentlichen Sie das Kit und erhalten Sie die Kit-ID. Es ist erforderlich, Adobe Typekit-Schriftarten (Webfonts) in einem adaptiven Formular zu verwenden.
+1. Navigieren Sie auf dem AEM Forms-Server zu ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **Adobe Experience Manager** > **Instrumente** ![Hammer](assets/hammer.png) > **Implementierung** > **Cloud Services**. Navigieren Sie auf der Seite &quot;Cloud Services&quot;zu **Drittanbieterdienste** > **Typekit** und klicken Sie auf **Konfigurieren** Jetzt unter &quot;Typekit&quot;. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche +, um eine neue Instanz zu erstellen.
 
-   Geben Sie im Dialogfeld &quot;Konfiguration erstellen&quot;einen **Titel** für die Konfiguration ein und klicken Sie auf **Erstellen**. Daraufhin werden Sie zur Seite „Konfiguration“ geleitet. Geben Sie im Dialogfeld &quot;Komponente bearbeiten&quot;Ihre **Kit-ID** ein und klicken Sie auf **OK**.
+   Geben Sie im Dialogfeld &quot;Konfiguration erstellen&quot;eine **Titel** für die Konfiguration und klicken Sie auf **Erstellen**. Daraufhin werden Sie zur Seite „Konfiguration“ geleitet. Geben Sie im angezeigten Dialogfeld Komponente bearbeiten Ihre **Kit-ID** und klicken Sie auf **OK**.
 
-1. Konfigurieren Sie Ihr Design für die Verwendung der TypeKit-Konfiguration. Öffnen Sie in der Autoreninstanz **Globales Design** im Design-Editor. Navigieren Sie im Design-Editor zu Designoptionen ![theme-options](assets/theme-options.png) > Konfigurieren. Wählen Sie im Feld **Typekit Configuration** das Kit aus und klicken Sie auf **Save**.
+1. Konfigurieren Sie Ihr Design für die Verwendung der TypeKit-Konfiguration. Öffnen Sie in der Autoreninstanz **Globales Design** im Design-Editor. Navigieren Sie im Design-Editor zu Themenoptionen![ Themenoptionen](assets/theme-options.png) > Konfigurieren. In **Typekit-Konfiguration** ein, wählen Sie das Kit aus und klicken Sie auf **Speichern**.
 
-   Die Schriftarten, die zum Typekit hinzugefügt wurden, können im Akkordeon **Text** aller Komponenten ausgewählt werden.
+   Die Schriftarten, die dem Typekit hinzugefügt wurden, können im Abschnitt **Text** Akkordeon aller Komponenten.

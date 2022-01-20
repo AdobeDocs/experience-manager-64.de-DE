@@ -1,8 +1,8 @@
 ---
 title: Komponenten für die Seitenbearbeitung
-seo-title: Komponenten für die Seitenbearbeitung
+seo-title: Components for Page Authoring
 description: Die Komponenten stehen beim Bearbeiten einer Seite über die Registerkarte „Komponenten“ des Sidekicks und die Auswahl „Neue Komponente einfügen“ zur Verfügung (wenn Sie im Bereich „Komponenten oder Assets hierhin ziehen“ doppelklicken).
-seo-description: Die Komponenten stehen beim Bearbeiten einer Seite über die Registerkarte „Komponenten“ des Sidekicks und die Auswahl „Neue Komponente einfügen“ zur Verfügung (wenn Sie im Bereich „Komponenten oder Assets hierhin ziehen“ doppelklicken).
+seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
 uuid: 6e4db6b1-af52-4b54-88a5-b82634f264fa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 exl-id: b6c8c2b8-78d1-43a3-80b5-3535183ebf20
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '6177'
-ht-degree: 86%
+source-wordcount: '6141'
+ht-degree: 85%
 
 ---
 
@@ -29,7 +29,7 @@ Einige sind direkt im Sidekick verfügbar, viele andere können außerdem im [De
 >
 >Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
 
-Die Komponenten sind verfügbar, wenn Sie [eine Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) auf der Registerkarte **Komponenten** des Sidekicks und der Auswahl **Neue Komponente einfügen** bearbeiten (wenn Sie auf den Bereich **Komponenten oder Assets hierher ziehen** doppelklicken).
+Die Komponenten sind verfügbar, wenn [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) von **Komponenten** Registerkarte des Sidekicks und **Neue Komponente einfügen** Selektor (wenn Sie auf die **Komponenten oder Assets hierher ziehen** Bereich).
 
 Sie können eine Komponente auswählen und an die gewünschte Position auf Ihrer Seite ziehen und dann [Inhalt und Eigenschaften bearbeiten](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
@@ -43,13 +43,13 @@ Komponenten werden nach verschiedenen Kategorien (Komponentengruppen) sortiert, 
 
 Die allgemeinen Komponenten sind die grundlegenden Komponenten, mit denen Sie Inhalte erstellen.
 
-### Kontoelement  {#account-item}
+### Kontoelement {#account-item}
 
 Sie können einen Link mit Titel und Beschreibung definieren.
 
 ![](do-not-localize/chlimage_1-4.png)
 
-### Adaptives Bild  {#adaptive-image}
+### Adaptives Bild {#adaptive-image}
 
 Die Komponente der Adaptive Image Foundation erzeugt Bilder, die in das Fenster eingepasst werden, in dem die Webseite geöffnet wird. Um die Komponente zu verwenden, geben Sie eine Bildressource entweder im Dateisystem oder im DAM an. Wenn die Webseite geöffnet wird, lädt der Webbrowser eine Kopie des Bildes herunter, die so in der Größe angepasst wurde, dass sie in das aktuelle Fenster passt.
 
@@ -184,7 +184,7 @@ Hier legen Sie fest, wie Seiten in Ihr Karussell eingeschlossen werden:
 
          * **Seiten**
 
-            Wählen Sie eine Liste von Seiten aus. Verwenden Sie `+`, um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
+            Wählen Sie eine Liste von Seiten aus. Verwendung `+` um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -202,7 +202,7 @@ Sie können eine Textsuchanfrage eingeben.
             Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
    * **Sortieren nach**
 
-      Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü aus.
+      Auswählen `jcr:title`, `jcr:created`, `cq:lastModified`oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Beschränkung**
 
@@ -370,7 +370,7 @@ Sie können ein Bild aus dem [Content Finder](/help/sites-classic-ui-authoring/c
 >
 >Benutzer von Internet Explorer müssen das Bild hochladen und auf **OK** klicken und anschließend das Bild erneut öffnen, um die hochgeladene Datei in der Vorschau sehen und Änderungen (z. B. Zuschneiden) vornehmen zu können.
 >
->Weitere Informationen zu den von AEM verwendeten HTML5-Funktionen finden Sie im Abschnitt [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms) .
+>Siehe [Zertifizierte Plattformen](/help/release-notes/release-notes.md#certifiedplatforms) für weitere Informationen über von AEM verwendete HTML5-Funktionen.
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
@@ -438,20 +438,20 @@ Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste
 
       * **Optionen für untergeordnete Seiten**
 
-         * **Untergeordnete Elemente von**  (übergeordnete Seite)
+         * **Kinder von** (Übergeordnete Seite)
 
             Geben Sie einen Pfad entweder manuell oder mithilfe des Selektors an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
       * **Optionen für Liste fester Werte**
 
-         * **Seiten**  - Wählen Sie eine Liste von Seiten aus. Verwenden Sie + , um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
+         * **Seiten** - Wählen Sie eine Liste von Seiten aus. Verwenden Sie + , um weitere Einträge hinzuzufügen, und die Nach-oben-/Nach-unten-Schaltflächen, um die Reihenfolge anzupassen.
       * **Optionen für die Suche**
 
-         * **Starten in**  - Geben Sie einen Startpfad ein, entweder manuell oder mithilfe des Selektors. Suchanfrage
+         * **Einstieg** - Geben Sie einen Startpfad ein, entweder manuell oder mithilfe des Selektors. Suchanfrage
 Sie können eine Textsuchanfrage eingeben.
       * **Optionen für die erweiterte Suche**
 
-         * **Querybuilder-Eigenschafts-Notation**  - Sie können eine Suchabfrage mit der Querybuilder-Eigenschafts-Notation eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden. Eine vollständige Erläuterung der Abfrageausdrücke und weitere Beispiele finden Sie unter  [QueryBuilder-](/help/sites-developing/querybuilder-api.md) API .
-      * **Tags**  - Geben Sie die  **übergeordnete Seite**,  **Tags/** Keywords und Ihre erforderlichen Übereinstimmungskriterien an.
+         * **Querybuilder-Eigenschafts-Notation** - Sie können eine Suchabfrage mit der Querybuilder-Eigenschafts-Notation eingeben. Sie können beispielsweise &quot;fulltext=Marketing&quot;eingeben, damit alle Seiten mit &quot;Marketing&quot;in ihrem Inhalt im Karussell angezeigt werden. Siehe [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) für eine ausführliche Diskussion der Abfrageausdrücke und weiterer Beispiele.
+      * **Tags** - Geben Sie die **Übergeordnete Seite**, **Tags/Keywords** und Ihre erforderlichen Übereinstimmungskriterien.
    * **Anzeigen als**
 
       Angabe, wie die Elemente aufgeführt werden sollen; umfasst Links, Teaser und Nachrichten.
@@ -536,7 +536,7 @@ Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werd
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
-### Verweis  {#reference}
+### Verweis {#reference}
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (u. U. ist eine Seitenaktualisierung erforderlich).
 
@@ -566,9 +566,9 @@ Nach der Konfiguration wird der Inhalt exakt so angezeigt wie auf der Quellseite
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-### Suche {#search-features}
+### Suchen {#search-features}
 
-Die Komponente „Suche“ stellt für Ihre Seite eine Suchfunktion zur Verfügung.
+Die Suchkomponente stellt für Ihre Seite eine Suchfunktion zur Verfügung.
 
 Sie können Folgendes konfigurieren:
 
@@ -576,7 +576,7 @@ Sie können Folgendes konfigurieren:
 
    * **Knotentypen**
 
-      Wenn die Suche auf bestimmte Knotentypen beschränkt werden soll, können Sie sie hier auflisten. z. B. `cq:Page`.
+      Wenn die Suche auf bestimmte Knotentypen beschränkt werden soll, können Sie sie hier auflisten. Beispiel: `cq:Page`.
 
    * **Suchpfad**
 
@@ -655,7 +655,7 @@ Sie können Folgendes konfigurieren:
 
    * **Neue Folie**
 
-      Mithilfe der Schaltflächen **Hinzufügen** (und **Entfernen**) können Sie eine Auswahl an Folien angeben.
+      Sie können eine Auswahl an Folien mithilfe der Variablen **Hinzufügen** und **Entfernen**).
 
    * **Titel**
 
@@ -747,11 +747,11 @@ Mit der Komponente „Text und Bild“ werden ein Textblock und ein Bild hinzuge
 
 Sie können Folgendes konfigurieren:
 
-* **Komponentenstile**  (**Stile**)
+* **Komponentenstile** (**Stile**)
 
    Mit dieser Option können Sie das Bild rechts- oder linksbündig ausrichten. Standardmäßig wird das Bild **linksbündig** ausgerichtet.
 
-* **Bildeigenschaften**  (**Erweiterte Bildeigenschaften**)
+* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
    Dies ermöglicht die Festlegung des Folgenden:
 
@@ -818,8 +818,8 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 
 * Video
 
-   * **Video-Asset**  - Laden Sie Ihr Video-Asset hoch oder legen Sie es ab.
-   * **Größe**  - Die native Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben &quot;Größe&quot;angezeigt (siehe oben). Geben Sie hier manuell Breite und Höhe-Dimensionen ein, wenn Sie die nativen Abmessungen des Videos überschreiben möchten. Klicken Sie auf  **** OK , um das Dialogfeld zu schließen.
+   * **Video-Asset** - Laden Sie Ihr Video-Asset hoch oder legen Sie es ab.
+   * **Größe** - Die native Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben &quot;Größe&quot;angezeigt (siehe oben). Geben Sie hier manuell Breite und Höhe-Dimensionen ein, wenn Sie die nativen Abmessungen des Videos überschreiben möchten. Klicken **OK** , um den Dialog zu schließen.
 
 >[!NOTE]
 >
@@ -830,7 +830,6 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 >* `FLV` (Flash video)
 
 >
-
 
 
 ## Spalten {#columns}
@@ -845,7 +844,7 @@ Das folgende Beispiel zeigt die Komponenten für zwei und drei Spalten im Einsat
 
 Eine Spalten-Steuerung-Komponente mit standardmäßig 2 gleich großen Spalten.
 
-### 3 Spalten  {#columns-2}
+### 3 Spalten {#columns-2}
 
 Eine Spalten-Steuerung-Komponente mit standardmäßig 3 gleich großen Spalten.
 
@@ -869,7 +868,7 @@ Mit Formular-Komponenten können Sie Formulare erstellen, damit Besucher Eingabe
 
 Formulare bestehen aus mehreren verschiedenen Komponenten:
 
-* **Form**
+* **Formular**
 
    Die Formular-Komponente definiert den Beginn und das Ende eines neuen Formulars auf einer Seite. Andere Komponenten können dann zwischen diesen Elementen eingefügt werden, z.&amp;nbsp;B. Tabellen, Downloads usw.
 
@@ -903,7 +902,7 @@ Wenn Sie eine beliebige Formular-Komponente konfigurieren, sind im Dialogfeld di
 
    Ermöglicht Ihnen das Festlegen eines Standardwerts.
 
-* **Beschränkungen**
+* **Begrenzungen**
 
    Hier können Sie angeben, ob ein Feld erforderlich ist, und diese Beschränkungen für dieses Feld platzieren (z.&amp;nbsp;B. ob nur numerische Werte zulässig sind).
 
@@ -946,14 +945,14 @@ Diese Registerkarten stellen die erforderlichen Parameter bereit. Diese können 
 
       Die beim Öffnen des Formulars im Feld angezeigten Werte, also bevor der Benutzer seine Eingabe vornimmt.
 
-* **Beschränkungen**
+* **Begrenzungen**
 
    * **Erforderlich**
 
       Dies hängt vom Typ der Formularkomponente ab, bietet jedoch ein oder mehrere Klickfelder, um anzuzeigen, dass dieses Feld oder bestimmte Teile dieses Felds erforderlich sind.
 
-   * **Erforderliche Nachricht**  - Eine Meldung, die Benutzer darüber informiert, dass dieses Feld erforderlich ist. Ein erforderliches Feld wird ebenfalls mit und mit einem Sternchen gekennzeichnet.
-   * **Einschränkung**  - Die zur Auswahl verfügbaren Begrenzungen hängen vom FormularKomponententyp ab.
+   * **Erforderliche Nachricht** - eine Meldung, die Benutzer darüber informiert, dass dieses Feld erforderlich ist; Ein erforderliches Feld wird ebenfalls mit und mit einem Sternchen gekennzeichnet.
+   * **Einschränkung** - Die für die Auswahl verfügbaren Begrenzungen hängen vom Formularkomponententyp ab.
    * **Beschränkungsmeldung**
 Eine Meldung, die den Benutzer über erforderliche Eingaben informiert.
 
@@ -969,7 +968,7 @@ Eine Meldung, die den Benutzer über erforderliche Eingaben informiert.
 
    * **CSS**
 
-### Formular (Komponente)  {#form-component}
+### Formular (Komponente) {#form-component}
 
 Die Formular-Komponente definiert den Beginn und das Ende eines Formulars mithilfe der Elemente **Formular-Start** und **Formular-Ende**. Diese treten immer gemeinsam auf, damit das Formular ordnungsgemäß definiert wird.
 
@@ -977,7 +976,7 @@ Die Formular-Komponente definiert den Beginn und das Ende eines Formulars mithil
 
 Zwischen dem Start und dem Ende eines Formulars können Sie Formular-Komponenten hinzufügen, die die eigentlichen Eingabefelder für die Benutzer definieren.
 
-#### Beginn des Formulars  {#start-of-form}
+#### Beginn des Formulars {#start-of-form}
 
 Diese Komponente ist erforderlich, um den Beginn eines neuen Formulars auf einer Seite zu definieren. Sie können Folgendes konfigurieren:
 
@@ -1048,7 +1047,7 @@ Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wir
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **Aktionskonfiguration**
 
-      Die in **Aktionskonfiguration** verfügbaren Optionen hängen vom ausgewählten **Aktionstyp** ab:
+      Die in **Aktionskonfiguration** hängt von der **Aktionstyp** selected:
 
       * **Kontoabfrage**
 
@@ -1058,7 +1057,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * Inhalts-Pfad
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich `/` endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Pfad eingeben, der mit einem Schrägstrich endet `/`. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
 
             `/forms/feedback/`
 
@@ -1076,7 +1075,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Ressourcentyp**
 
-            Wenn festgelegt, wird dies zu jedem Kommentar als `sling:resourceType` hinzugefügt.
+            Wenn festgelegt, wird dies zu jedem Kommentar als `sling:resourceType`
 
          * **Ansichtselektor**
       * **Lead erstellen**
@@ -1100,7 +1099,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Daten anzeigen...**
 
-            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv` (tabulatorgetrennte) Datei exportieren (z. B. in eine Excel-Tabelle).
+            Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine `.tsv` (tabulatorgetrennte) Datei (z. B. zur Verwendung in einer Excel-Tabelle).
       * **E-Mail**
 
          * **From**
@@ -1131,7 +1130,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
 
          * **Inhalts-Pfad**
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich `/` endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Pfad eingeben, der mit einem Schrägstrich endet `/`. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
 
             `/forms/feedback/`
 
@@ -1140,7 +1139,7 @@ Die Seite, die beim Erstellen eines neuen Kontos verwendet wird.
             Klicken Sie auf diese Schaltfläche, um in der Massenbearbeitung auf die Informationen zu den Formularergebnissen zuzugreifen. Von hier aus können Sie die Informationen in eine TSV-Datei (durch Tabulatoren getrennt) exportieren, die Sie z. B. in einer Excel-Tabelle öffnen können.
       * **Inhalt mit Uploads speichern**
 
-         Dies hat dieselben Optionen wie **Inhalt speichern**.
+         Dies hat die gleichen Optionen wie **Inhalt speichern**.
 
       * **Abonnenten löschen**
 
@@ -1209,7 +1208,7 @@ Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge e
 
 Sie können verschiedene Parameter für diese Komponente konfigurieren, darunter eine Meldung, die bei einer ungültigen Captcha-Zeichenfolge angezeigt wird.
 
-### Kontrollkästchen-Gruppe  {#checkbox-group}
+### Kontrollkästchen-Gruppe {#checkbox-group}
 
 Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
 
@@ -1245,7 +1244,7 @@ Sie können einen Titel und Elemente angeben, die in der Liste angezeigt werden.
 
 ### Datei-Upload {#file-upload}
 
-Die Komponente „Datei-Upload“ bietet Benutzern die Möglichkeit, eine Datei auszuwählen und hochzuladen.
+Die Datei-Upload-Komponente bietet Benutzern die Möglichkeit, eine Datei auszuwählen und hochzuladen.
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
@@ -1265,7 +1264,7 @@ Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld ka
 >
 >Siehe [Einblenden und Ausblenden von Formularkomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
-### Bild-Schaltfläche  {#image-button}
+### Bild-Schaltfläche {#image-button}
 
 Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bild und Text erstellen:
 
@@ -1285,7 +1284,7 @@ Im Link-Feld können Benutzer eine URL angeben:
 
 Dies wird am häufigsten für das Kalenderereignis-Formular verwendet, wo es für das URL/Link-Feld eines Ereignisses verwendet wird.
 
-### Kennwort-Feld {#password-field}
+### Kennwortfeld {#password-field}
 
 Dieses Feld ermöglicht dem Benutzer die Eingabe seines Kennworts:
 
@@ -1316,7 +1315,7 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung fes
 >
 >Siehe [Vorabladen von Formularfeldern mit mehreren Werten](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
-### Schaltfläche „Übermitteln“{#submit-button}
+### Senden-Schaltfläche {#submit-button}
 
 Mit dieser Komponente können Sie eine Schaltfläche „Übermitteln“ mit Standardtext erstellen:
 
@@ -1326,7 +1325,7 @@ Oder Sie können Ihren eigenen Text eingeben:
 
 ![dc_form_submit_buttonuse](assets/dc_form_submitbuttonuse.png)
 
-### Feld „Tags“{#tags-field}
+### Feld „Tags“ {#tags-field}
 
 Über dieses Feld können Sie Tags auswählen:
 

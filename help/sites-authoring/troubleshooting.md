@@ -1,8 +1,8 @@
 ---
 title: Fehlerbehebung in AEM beim Authoring
-seo-title: Fehlerbehebung in AEM beim Authoring
+seo-title: Troubleshooting AEM when Authoring
 description: Probleme, die bei der Verwendung mit AEM auftreten können
-seo-description: Probleme, die bei der Verwendung mit AEM auftreten können
+seo-description: Some issues that you might encounter when using AEM
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: b0890070-c9e8-4ce4-9149-00c8c38298ce
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '294'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem**:
 
-   * Sämtliche entsprechenden Komponentenaktionen sind nicht sichtbar, wenn eine Seite in der Autorenumgebung bearbeitet wird. 
+   * Sämtliche entsprechenden Komponentenaktionen sind nicht sichtbar, wenn eine Seite in der Autorenumgebung bearbeitet wird.
 
 * **Grund**:
 

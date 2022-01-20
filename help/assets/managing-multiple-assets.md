@@ -35,8 +35,8 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]** , um die Eigenschaftenseite für die ausgewählten Assets zu öffnen.
 1. Ändern Sie die Metadateneigenschaften für ausgewählte Assets auf den verschiedenen Registerkarten.
-1. Um die Metadaten eines bestimmten Assets anzuzeigen, brechen Sie die Auswahl der verbleibenden Assets in der Liste ab. Wenn Sie die Auswahl einiger Assets auf der Seite [!UICONTROL Eigenschaften] abbrechen, werden die Metadaten solcher Assets nicht aktualisiert.
-1. Um ein anderes Metadatenschema für die Assets auszuwählen, klicken Sie in der Symbolleiste auf **[!UICONTROL Einstellungen]** und wählen Sie ein Schema aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+1. Um die Metadaten eines bestimmten Assets anzuzeigen, brechen Sie die Auswahl der verbleibenden Assets in der Liste ab. Wenn Sie die Auswahl einiger Assets auf der [!UICONTROL Eigenschaften] -Seite, werden die Metadaten dieser Assets nicht aktualisiert.
+1. Um ein anderes Metadatenschema für die Assets auszuwählen, klicken Sie auf **[!UICONTROL Einstellungen]** und wählen Sie in der Symbolleiste ein Schema aus. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 1. Um die neuen Metadaten mit den vorhandenen Metadatenfeldern, die mehrere Werte enthalten, anzuhängen, wählen Sie den **[!UICONTROL Anlagenmodus]**. Wenn Sie diese Option nicht auswählen, ersetzen die neuen Metadaten die vorhandenen Metadaten in den entsprechenden Feldern. Klicken Sie auf **[!UICONTROL Senden]**.
 
 ![Metadatenschema-Bulk wird auf mehrere Assets angewendet](assets/metadata-schema-bulk-edit.gif)
@@ -47,11 +47,11 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 
 ## Konfigurieren des Grenzwerts für die Metadaten-Massenaktualisierung {#configure-limit-for-bulk-metadata-update}
 
-Um DOS-ähnliche Situationen zu vermeiden, beschränkt [!DNL Experience Manager] die Anzahl der Parameter, die in einer Sling-Anfrage unterstützt werden. Wenn Sie die Metadaten vieler Assets auf einmal aktualisieren, erreichen Sie möglicherweise den Grenzwert, sodass die Metadaten für weitere Assets nicht aktualisiert werden können. [!DNL Experience Manager] generiert die folgende Warnung in den Protokollen:
+Um DOS-ähnliche Situationen zu vermeiden, [!DNL Experience Manager] begrenzt die Anzahl der in einer Sling-Anfrage unterstützten Parameter. Wenn Sie die Metadaten vieler Assets auf einmal aktualisieren, erreichen Sie möglicherweise den Grenzwert, sodass die Metadaten für weitere Assets nicht aktualisiert werden können. [!DNL Experience Manager] generiert die folgende Warnung in den Protokollen:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Um den Grenzwert zu ändern, greifen Sie auf **[!UICONTROL Tools > Vorgänge > Web Console]** zu und ändern Sie den Wert von [!UICONTROL Maximale POST Parameters] in der OSGi-Konfiguration [!UICONTROL Apache Sling Request Parameter Handling].
+Um die Begrenzung zu ändern, greifen Sie auf **[!UICONTROL Tools > Vorgänge > Web-Konsole]** und ändern Sie den Wert von [!UICONTROL Maximale POST] in [!UICONTROL Umgang mit Apache Sling-Anforderungsparametern] OSGi-Konfiguration.
 
 >[!MORELIKETHIS]
 >

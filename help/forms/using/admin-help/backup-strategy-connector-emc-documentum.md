@@ -1,8 +1,8 @@
 ---
 title: Sicherungsstrategie für Connector für EMC Documentum-Benutzer
-seo-title: Sicherungsstrategie für Connector für EMC Documentum-Benutzer
+seo-title: Backup strategy for Connector for EMC Documentum users
 description: Erfahren Sie, wie Sie eine Sicherungsstrategie für Connector for EMC Documentum-Benutzer erstellen.
-seo-description: Erfahren Sie, wie Sie eine Sicherungsstrategie für Connector for EMC Documentum-Benutzer erstellen.
+seo-description: Check how to create a backup strategy for Connector for EMC Documentum users.
 uuid: 5d8a0476-5231-4e1d-96c4-ae3df68e09f0
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
 exl-id: 933c3903-2040-41f4-b803-4d672ce9a2dc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '156'
 ht-degree: 100%
 
 ---
 
-# Sicherungsstrategie für Connector für EMC Documentum-Benutzer {#backup-strategy-for-connector-for-emc-documentum-users}
+# Sicherungsstrategie für Connector für EMC Documentum-Benutzer {#backup-strategy-for-connector-for-emc-documentum-users}
 
 Wenn Sie Connector für EMC Documentum installiert haben, muss Ihre Sicherungs- und Wiederherstellungsstrategie zusätzlich zu den Anweisungen in diesem Kapitel die Sicherung (bzw. Wiederherstellung) des Computers einschließen, auf dem das betreffende ECM-System installiert ist. (Weitere Informationen finden Sie in der ECM Documentum-Dokumentation.)
 

@@ -1,8 +1,8 @@
 ---
 title: Seitenbearbeitung mit Inhaltsfragmenten
-seo-title: Seitenbearbeitung mit Inhaltsfragmenten
+seo-title: Page Authoring with Content Fragments
 description: Inhaltsfragmente in AEM ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten.
-seo-description: Inhaltsfragmente in AEM ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten.
+seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
 uuid: 66ccdff8-1658-4374-8562-97f81f434488
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
 exl-id: bbe4ae86-e9b8-4c3f-ada3-82470e371c4e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1153'
 ht-degree: 98%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0 oder höher)](/help/release-notes/sp-release-notes.md).
 
 Content Fragments für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments.md).
 
@@ -35,6 +35,7 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 >
 >* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
+
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
 
@@ -44,11 +45,11 @@ In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhalts
 
 Inhaltsfragmente ermöglichen:
 
-* **Marketing- und Kampagnenstrategie** 
+* **Marketing- und Kampagnenstrategie**
 
    * Überprüfen Sie Inhalte über zentral verwaltete Inhaltsfragmente.
 
-* **Creative Pro** 
+* **Creative Pro**
 
    * Verfolgen Sie kreative Assets über Sammlungen, die mit Inhaltsfragmenten verbunden sind.
 
@@ -61,14 +62,14 @@ Inhaltsfragmente ermöglichen:
    * Kann Inhaltsfragmente freigeben.
    * Kann Übersetzungen zentral verwalten.
 
-* **Produzenten und Journey-Manager** 
+* **Produzenten und Journey-Manager**
 
    * Wählen Sie bei der Erstellung in AEM aus vordefinierten Fragmenten und Varianten aus.
    * Kann darauf vertrauen, dass Fragment- und zugehörige Inhalte immer auf dem neuesten Stand sind, da Copy Writer und Kreative ihre Aktualisierungen in zentral verwalteten Fragmenten und Assets vornehmen.
    * Kann darauf vertrauen, dass zugehörige Medieninhalte auf Relevanz geprüft werden.
    * Kann Ad-hoc-Inhaltsvarianten direkt vornehmen und gleichzeitig sicherstellen, dass diese Varianten im Fragment weiter zentral verwaltet werden.
 
-## Hinzufügen eines Inhaltsfragments zu Ihrer Seite          {#adding-a-content-fragment-to-your-page}
+## Hinzufügen eines Inhaltsfragments zu Ihrer Seite {#adding-a-content-fragment-to-your-page}
 
 1. Öffnen Sie Ihre Seite zum Bearbeiten.
 
@@ -83,7 +84,7 @@ Inhaltsfragmente ermöglichen:
    >
    >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
 
-1. Anfangs wird der Inhalt aus den Elementen **[!UICONTROL Allgemein]** und **[!UICONTROL Master]** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
+1. Anfangs wird der Inhalt aus den Elementen **[!UICONTROL Allgemein]** und **[!UICONTROL Primär]** (Variante) angezeigt. Sie können nach Bedarf aber [auch andere Elemente und/oder Varianten auswählen](#selecting-the-element-or-variation).
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -91,7 +92,7 @@ Inhaltsfragmente ermöglichen:
    >
    >Weitere Informationen zur Bearbeitungsfunktion finden Sie unter:
    >
-   >* [Responsives Layout  ](/help/sites-authoring/responsive-layout.md)
+   >* [Responsives Layout](/help/sites-authoring/responsive-layout.md)
    >* [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md)
 
 
@@ -121,8 +122,8 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 
 * **[!UICONTROL Variante]**
 
-   * Der Standard-**[!UICONTROL Master]** ist immer verfügbar.
-   * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden. 
+   * Die Standardversion **[!UICONTROL Primär]** ist immer verfügbar.
+   * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
 * **[!UICONTROL Absätze]**: Geben Sie den Bereich der einzubeziehenden Absätze an:
 
@@ -133,7 +134,7 @@ Im entsprechenden Konfigurationsdialog können Sie die verfügbaren Parameter au
 
 * **[!UICONTROL Überschriften als separate Absätze behandeln]**
 
-## Schnelle Verbindung zum Fragmenteditor      {#quick-connection-to-fragment-editor}
+## Schnelle Verbindung zum Fragmenteditor     {#quick-connection-to-fragment-editor}
 
 Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **[!UICONTROL Bearbeiten]** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments.md).
 
@@ -141,7 +142,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 >
 >Wie immer hat die Bearbeitung der Fragmentquelle Auswirkungen auf alle Seiten, auf die diese Inhaltsfragmente verweisen.
 
-## Hinzufügen von Zwischeninhalten          {#adding-in-between-content}
+## Hinzufügen von Zwischeninhalten {#adding-in-between-content}
 
 Wenn ein bestimmtes Inhaltsfragment der Seite hinzugefügt wird, wird der Platzhalter **[!UICONTROL Komponenten hierher ziehen]** zwischen allen HTML-Absätzen des Fragments (und oberhalb/unterhalb) eingefügt.
 
@@ -162,19 +163,23 @@ Bei Zwischeninhalten können Sie:
 >[!NOTE]
 >
 >Sie können auch [visuelle Assets (Bilder) zum Fragment hinzufügen](/help/assets/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>
 >Die in das Fragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz im Fragment verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
 
 >[!CAUTION]
 >
 >Wenn Sie Zwischeninhalte zu einem Inhaltsfragment auf Ihrer Seite hinzugefügt haben, kann das Ändern der Struktur des zugrunde liegenden Inhaltsfragments (im Fragment-Editor) zu fehlerhaften/unerwarteten Ergebnissen führen.
+>
 >Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
+>
 >* Zwischenkomponenten besitzen innerhalb der Abfolge der Komponenten im Fragmentfluss eine absolute Position. Diese Position ändert sich nicht, selbst wenn der Inhalt in den Absätzen des Fragments geändert wird.\
->  Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
+   >  Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
 >* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
+
 >
 
 
-## Verwenden von zugehörigen Inhalten          {#using-associated-content}
+## Verwenden von zugehörigen Inhalten {#using-associated-content}
 
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](#adding-in-between-content).
 

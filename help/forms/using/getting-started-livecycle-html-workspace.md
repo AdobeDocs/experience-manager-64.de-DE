@@ -1,8 +1,8 @@
 ---
 title: Erste Schritte mit AEM Forms Workspace
-seo-title: Erste Schritte mit AEM Forms Workspace
+seo-title: Getting started with AEM Forms workspace
 description: In diesem Artikel werden die ersten Schritte zur Verwaltung der Automatisierung Ihrer Geschäftsprozesse mit LiveCycle AEM Forms Workspace beschrieben.
-seo-description: In diesem Artikel werden die ersten Schritte zur Verwaltung der Automatisierung Ihrer Geschäftsprozesse mit LiveCycle AEM Forms Workspace beschrieben.
+seo-description: How to get started with using the LiveCycle AEM Forms workspace to manage your business automation processes.
 uuid: 35ca1a51-92c3-40d8-8de3-604be8704752
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 exl-id: 8c45f145-1729-4e5c-b391-6b1bbd50494b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '993'
 ht-degree: 82%
 
 ---
 
-# Erste Schritte mit AEM Forms Workspace  {#getting-started-with-aem-forms-workspace}
+# Erste Schritte mit AEM Forms Workspace {#getting-started-with-aem-forms-workspace}
 
 Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 
@@ -25,7 +25,7 @@ Mit AEM Forms Workspace können Sie die folgenden Aufgaben durchführen:
 * Anzeigen und Ausführen von Aufgaben, die Ihnen oder Aufgabenlisten, auf die Sie Zugriff haben, zugewiesen sind
 * Verfolgen von Aufgaben, die Teil der Prozesse sind, die von Ihnen gestartet wurden bzw. an denen Sie teilnehmen
 
-## Navigieren in AEM Forms Workspace  {#navigating-html-workspace}
+## Navigieren in AEM Forms Workspace {#navigating-html-workspace}
 
 Je nach dem Prozess und der Aufgabe, an der Sie arbeiten, werden in der Benutzeroberfläche von AEM Forms Workspace verschiedene Elemente angezeigt. Möglicherweise werden die Registerkarten „Zusammenfassung“, „Formulare“, „Details“, „Verlauf“, „Anlagen“ oder „Notizen“ nicht alle jederzeit angezeigt oder Sie sehen nicht alle in dieser Hilfe erwähnten Schaltflächen.
 
@@ -49,9 +49,9 @@ Beachten Sie die folgenden Punkte, um AEM Forms Workspace mit einer Bildschirmle
 * Die gesamte Navigation in AEM Forms Workspace erfolgt über Anker-Tags, auf die über Registerkarten einfach zugegriffen werden kann.
 * Das Laden von Formularen kann einige Sekunden dauern. Die Bildschirmlesehilfe zeigt nicht akustisch an, dass das Formular lädt und der Benutzer warten muss.
 
-## Navigieren in AEM Forms Workspace über die Tastatur  {#navigating-html-workspace-using-a-keyboard}
+## Navigieren in AEM Forms Workspace über die Tastatur {#navigating-html-workspace-using-a-keyboard}
 
-Wenn Sie mit einer Tastatur in AEM Forms Workspace navigieren, entspricht die Navigation den HTML-Richtlinien für Barrierefreiheit. Unter bestimmten Umständen entspricht die Aktivierreihenfolge von Schaltflächen nicht den herkömmlichen Konventionen. Die folgenden Tipps erleichtern Ihnen die Navigation in der Benutzeroberfläche:
+Wenn Sie mit einer Tastatur in AEM Forms Workspace navigieren, entspricht die Navigation den Konventionen für HTML-Barrierefreiheit. Unter bestimmten Umständen entspricht die Aktivierreihenfolge von Schaltflächen nicht den herkömmlichen Konventionen. Die folgenden Tipps erleichtern Ihnen die Navigation in der Benutzeroberfläche:
 
 * Wenn Sie Probleme haben, die Symbolleisten oben im Browser durch Drücken der Tabulatortaste zu verlassen, drücken Sie Strg+Tabulatortaste, um in den Inhalt des Browserfensters zu gelangen.
 * Die AEM Forms Workspace-Hilfe wird in einem separaten Browserfenster geöffnet. Verschieben Sie nach dem Anzeigen der Hilfe den Fokus wieder in das Browserfenster, das AEM Forms Workspace enthält. Das Hilfemenü behält den Fokus, wenn der Fokus zurückgegeben wird.
@@ -69,7 +69,7 @@ Sie können die verschiedenen AEM Forms Workspace-Voreinstellungen in den folgen
 
 **Benutzeroberflächeneinstellungen:** Legen Sie Voreinstellungen für die Arbeit mit AEM Forms Workspace fest. Siehe [Festlegen von Benutzeroberflächeneinstellungen](#set-user-interface-preferences).
 
-### Benutzeroberflächen-Voreinstellungen festlegen  {#set-user-interface-preferences}
+### Benutzeroberflächen-Voreinstellungen festlegen {#set-user-interface-preferences}
 
 Legen Sie die Benutzeroberflächenvoreinstellungen auf der Registerkarte „UI-Einstellungen“ fest. Die folgenden Voreinstellungen sind verfügbar.
 

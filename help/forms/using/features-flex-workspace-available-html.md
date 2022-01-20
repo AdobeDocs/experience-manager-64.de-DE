@@ -1,8 +1,8 @@
 ---
 title: In AEM Forms nicht verfügbare Funktionen von Flex Workspace
-seo-title: In AEM Forms nicht verfügbare Funktionen von Flex Workspace
+seo-title: Features of Flex workspace not available in AEM Forms workspace
 description: Die Innovationen von AEM Forms Workspace gehen über den Flex-basierten Arbeitsbereich hinaus. Lesen Sie mehr über die Unterschiede in Features und Funktionen.
-seo-description: Die Innovationen von AEM Forms Workspace gehen über den Flex-basierten Arbeitsbereich hinaus. Lesen Sie mehr über die Unterschiede in Features und Funktionen.
+seo-description: AEM Forms workspace innovates beyond Flex-based Workspace. Read about the differences in features and capabilities.
 uuid: 128729b3-2367-42e8-8159-a080595e8455
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 exl-id: d3125110-1098-413b-ba09-50c182797d27
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '218'
 ht-degree: 96%
 
 ---
 
-# In AEM Forms nicht verfügbare Funktionen von Flex Workspace  {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
+# In AEM Forms nicht verfügbare Funktionen von Flex Workspace {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
 AEM Forms Workspace ist der brandneue Arbeitsbereich. Im Folgenden werden einige Funktionen des Flex-basierten Arbeitsbereichs beschrieben, die nicht in AEM Forms Workspace verfügbar sind.
 

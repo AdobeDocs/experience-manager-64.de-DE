@@ -2,7 +2,7 @@
 title: XMP Utilities Service Java APIQuick Start(SOAP)
 seo-title: XMP Utilities Service Java APIQuick Start(SOAP)
 description: Verwenden Sie den XMP Utilities-Dienst, um XMP Metadaten zu exportieren und zu importieren.
-seo-description: Verwenden Sie den XMP Utilities-Dienst, um XMP Metadaten zu exportieren und zu importieren.
+seo-description: Use the XMP Utilities service to export and import XMP metadata.
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
 contentOwner: admin
 content-type: reference
@@ -13,12 +13,12 @@ role: Developer
 exl-id: fdbf9942-7e4d-4b76-971f-d26d89c4c4cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '233'
 ht-degree: 1%
 
 ---
 
-# XMP Utilities Service Java API Schnellstart (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
+# Schnellstart für XMP Utilities Service Java API (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
 Die folgenden Schnellstarts sind für den XMP Utilities-Dienst verfügbar.
 
@@ -34,7 +34,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 ## Schnellstart (SOAP-Modus): Exportieren XMP Metadaten mithilfe der Java-API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-Im folgenden Codebeispiel werden XMP Metadaten abgerufen, geprüft und gespeichert. (Siehe [Exportieren von Metadaten aus PDF-Dokumenten](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+Im folgenden Codebeispiel werden XMP Metadaten abgerufen, geprüft und gespeichert. (Siehe [Exportieren von Metadaten aus PDF-Dokumenten](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).
 
 ```as3
  /* 
@@ -139,7 +139,7 @@ Im folgenden Codebeispiel werden XMP Metadaten abgerufen, geprüft und gespeiche
 
 ## Schnellstart (SOAP-Modus): Importieren XMP Metadaten mit der Java-API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-Im folgenden Codebeispiel werden XMP Metadaten importiert und die neue PDF-Datei auf der Festplatte gespeichert. Das PDF-Dokument basiert auf einer PDF-Datei namens &quot;Loan.pdf&quot;. Das XML-Dokument, das die Metadaten enthält, die in das PDF-Dokument importiert werden sollen, basiert auf einer XML-Datei namens *LoanMetaData.xml*. Weitere Informationen zu dieser XML-Datei finden Sie unter [Importieren von Metadaten in PDF-Dokumente](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+Im folgenden Codebeispiel werden XMP Metadaten importiert und die neue PDF-Datei auf der Festplatte gespeichert. Das PDF-Dokument basiert auf einer PDF-Datei namens &quot;Loan.pdf&quot;. Das XML-Dokument, das die Metadaten enthält, die in das PDF-Dokument importiert werden sollen, basiert auf einer XML-Datei mit dem Namen *LoanMetaData.xml*. Weitere Informationen zu dieser XML-Datei finden Sie unter [Importieren von Metadaten in PDF-Dokumente](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```as3
  /* 

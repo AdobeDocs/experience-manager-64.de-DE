@@ -1,8 +1,8 @@
 ---
 title: Community-Site-Grundlagen
-seo-title: Community-Site-Grundlagen
+seo-title: Community Site Essentials
 description: Exportieren und Löschen von Community-Sites und Erstellen benutzerdefinierter Site-Vorlagen
-seo-description: Exportieren und Löschen von Community-Sites und Erstellen benutzerdefinierter Site-Vorlagen
+seo-description: Exporting and deleting community sites and creating custom site templates
 uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 2b26d937-4ebf-4a67-9715-a21c8fc45e1e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '610'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Gehen Sie dazu wie folgt vor,
 * Benutzerdefinierte Vorlage erstellen
 * Überlagern des Standardpfads der Site-Vorlage
 * Fügen Sie die benutzerdefinierte Vorlage zum Überlagerungspfad hinzu.
-* Geben Sie die benutzerdefinierte Vorlage an, indem Sie dem Knoten `configuration` die Eigenschaft `page-template` hinzufügen
+* Geben Sie die benutzerdefinierte Vorlage an, indem Sie eine `page-template` -Eigenschaft auf `configuration` Knoten
 
 **Standardvorlage**:
 
@@ -36,54 +36,54 @@ Gehen Sie dazu wie folgt vor,
 
 **Benutzerdefinierte Vorlage im Überlagerungspfad**:
 
-/**apps**/social/console/components/hbs/sitepage/**&lt;*Vorlagenname***.hbs
+/**apps**/social/console/components/hbs/sitepage/**&lt;*template-name*>**.hbs
 
 **Eigenschaft**: page-template\
 **Typ**: String\
-**Wert**:  &lt;>template-name *> (keine Erweiterung)*
+**Wert**: &lt;*template-name*> (keine Erweiterung)
 
 **Konfigurationsknoten**:
 
-/content/&lt;*Community-Site-Pfad*/&lt;*lang*/configuration
+/content/&lt;*Community-Site-Pfad*>/&lt;*lang*>/configuration
 
 Beispiel: /content/sites/engage/en/configuration
 
 >[!NOTE]
 >
->Alle Knoten im überlagerten Pfad müssen nur vom Typ `Folder` sein.
+>Alle Knoten im überlagerten Pfad müssen nur vom Typ `Folder`.
 
 >[!CAUTION]
 >
->Wenn die benutzerdefinierte Vorlage den Namen *sitepage.hbs,* erhält, werden alle Community-Sites angepasst.
+>Wenn die benutzerdefinierte Vorlage den Namen erhält *sitepage.hbs,* dann werden alle Community-Sites angepasst.
 
-### Beispiel für benutzerdefinierte Site-Vorlage {#custom-site-template-example}
+### Beispiel für eine benutzerdefinierte Site-Vorlage {#custom-site-template-example}
 
-`vertical-sitepage.hbs` ist beispielsweise eine Site-Vorlage, die dazu führt, dass Menülinks unten auf der Seite und nicht horizontal unter dem Banner platziert werden.
+Beispiel: `vertical-sitepage.hbs` ist eine Site-Vorlage, die dazu führt, dass Menülinks unten auf der Seite vertikal platziert werden, anstatt horizontal unter dem Banner.
 
-[Datei ](assets/vertical-sitepage.hbs)
-abrufen Platzieren Sie die benutzerdefinierte Site-Vorlage im Überlagerungsordner:
+[Datei abrufen](assets/vertical-sitepage.hbs)
+Platzieren Sie die benutzerdefinierte Site-Vorlage im Überlagerungsordner:
 
-/**apps**/social/console/components/hbs/sitepage/**vertical-site**.hbs
+/**apps**/social/console/components/hbs/sitepage/**vertical-sitepage**.hbs
 
-Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie dem Konfigurationsknoten die Eigenschaft `page-template` hinzufügen:
+Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie eine `page-template` Eigenschaft zum Konfigurationsknoten:
 
 /content/sites/sample/en/configuration
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Stellen Sie sicher, dass Sie **Alle speichern** verwenden und benutzerdefinierten Code für alle AEM-Instanzen replizieren (benutzerspezifischer Code ist nicht enthalten, wenn der Community-Site-Inhalt über die Konsole veröffentlicht wird).
+Stellen Sie sicher, dass **Alle speichern** und replizieren benutzerspezifischen Code für alle AEM Instanzen (benutzerspezifischer Code ist nicht enthalten, wenn der Community-Site-Inhalt über die Konsole veröffentlicht wird).
 
-Die empfohlene Vorgehensweise zum Replizieren von benutzerdefiniertem Code ist [Erstellen eines Pakets](../../help/sites-administering/package-manager.md#creating-a-new-package) und Bereitstellen dieses Pakets auf allen Instanzen.
+Es wird empfohlen, benutzerdefinierten Code zu replizieren, indem Sie [Package erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) und stellen Sie sie auf allen Instanzen bereit.
 
 ## Exportieren einer Community-Site {#exporting-a-community-site}
 
 Nachdem eine Community-Site erstellt wurde, ist es möglich, die Site als AEM Package zu exportieren, das im Paketmanager gespeichert und zum Herunterladen und Hochladen verfügbar ist.
 
-Dies ist in der [Communities Sites-Konsole](sites-console.md#exporting-the-site) verfügbar.
+Dies ist im Abschnitt [Communities Sites-Konsole](sites-console.md#exporting-the-site).
 
 Beachten Sie, dass benutzerspezifischer Code und benutzerspezifischer Code nicht im Community-Site-Paket enthalten sind.
 
-Verwenden Sie zum Exportieren von benutzergenerierten Inhalten das [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), ein Open-Source-Migrationstool, das auf GitHub verfügbar ist.
+Verwenden Sie zum Exportieren von benutzergenerierten Inhalten die [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), ein Open-Source-Migrationstool, das auf GitHub verfügbar ist.
 
 ## Löschen einer Community-Site {#deleting-a-community-site}
 
@@ -100,15 +100,15 @@ So identifizieren Sie die eindeutige Site-ID, die mit der Community-Site verknü
 
 * Navigieren Sie zum Sprachstamm der Site, z. B. `/content/sites/*<site name>*/en/rep:policy`
 
-* Suchen Sie den Knoten `allow<#>` mit einem `rep:principalName` in diesem Format `rep:principalName = *community-enable-nrh9h-members*` .
+* Suchen Sie die `allow<#>` Knoten mit `rep:principalName` in diesem Format `rep:principalName = *community-enable-nrh9h-members*`
 
 * Die Site-ID ist die dritte Komponente von `rep:principalName`
 Wenn beispielsweise 
 `rep:principalName = community-enable-nrh9h-members`
 
-   * **site name**  =  *enable*
-   * **Site-ID**  =  *nrh9h*
-   * **eindeutige Site-ID**  =  *enable-nrh9h*
+   * **Site-Name** = *enable*
+   * **Site-ID** = *nrh9h*
+   * **eindeutige Site-ID** = *enable-nrh9h*
 
 ### Benutzergenerierte Inhalte {#user-generated-content}
 
@@ -122,25 +122,25 @@ Alle benutzergenerierten Inhalte können entfernt werden oder für eine bestimmt
 
 * path=/content/usergenerated/asi/mongo/content/sites/engage
 
-Dadurch werden nur benutzergenerierte Inhalte (in der Veröffentlichungsinstanz eingegeben) und nicht erstellte Inhalte (in der Autoreninstanz eingegeben) entfernt. Daher sind [Shadow-Knoten](srp.md#shadownodes) nicht betroffen.
+Dadurch werden nur benutzergenerierte Inhalte (in der Veröffentlichungsinstanz eingegeben) und nicht erstellte Inhalte (in der Autoreninstanz eingegeben) entfernt. Daher [Shadow-Knoten](srp.md#shadownodes) nicht betroffen sind.
 
 ### Community-Benutzergruppen {#community-user-groups}
 
-Suchen und entfernen Sie in allen Autoren- und Veröffentlichungsinstanzen in der [Sicherheitskonsole](../../help/sites-administering/security.md) die [Benutzergruppen](users.md), die:
+In allen Autoren- und Veröffentlichungsinstanzen von der [Sicherheitskonsole](../../help/sites-administering/security.md), suchen und entfernen Sie die [Benutzergruppen](users.md) die sind:
 
-* Mit dem Präfix `community`
-* Gefolgt von [eindeutiger Site-ID](#community-unique-site-id)
+* Präfix mit `community`
+* Gefolgt von [eindeutige Site-ID](#community-unique-site-id)
 
 Beispiel: `community-engage-x0e11-members`.
 
-### Aktivierungselemente {#enablement-assets}
+### Aktivierung von Assets {#enablement-assets}
 
 In der Hauptkonsole:
 
-* Wählen Sie **[!UICONTROL Assets]**
-* Modus **[!UICONTROL Auswahl]**
-* Wählen Sie den Ordner mit dem Namen [eindeutige Site-ID](#community-unique-site-id) aus.
-* Wählen Sie **[!UICONTROL Löschen]** (möglicherweise müssen Sie unter **[!UICONTROL Mehr..]**)
+* Auswählen **[!UICONTROL Assets]**
+* Eingabe **[!UICONTROL Auswählen]** mode
+* Wählen Sie den Ordner mit dem Namen [eindeutige Site-ID](#community-unique-site-id)
+* Auswählen **[!UICONTROL Löschen]** (kann aus **[!UICONTROL Mehr ...]**)
 
 ### Datenbankdatensätze {#database-records}
 

@@ -1,8 +1,8 @@
 ---
 title: AEM Forms Workspace JSON-Objektbeschreibung
-seo-title: AEM Forms Workspace JSON-Objektbeschreibung
+seo-title: AEM Forms workspace JSON object description
 description: Grundlegende Informationen zu JSON JavaScript-Objekten, die in LiveCycle AEM Forms Workspace zur Anpassung, Erweiterung, Änderung und erneuten Verwendung dienen.
-seo-description: Grundlegende Informationen zu JSON JavaScript-Objekten, die in LiveCycle AEM Forms Workspace zur Anpassung, Erweiterung, Änderung und erneuten Verwendung dienen.
+seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: 8c7e1ee2-0f7f-427e-aca2-d4bf523fd7f1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2109'
 ht-degree: 93%
 
 ---
 
-# AEM Forms Workspace JSON-Objektbeschreibung  {#aem-forms-workspace-json-object-description}
+# AEM Forms Workspace JSON-Objektbeschreibung {#aem-forms-workspace-json-object-description}
 
 JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschrieben.
 
@@ -27,7 +27,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
 <table> 
  <tbody>
   <tr>
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Nur Client</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr>
@@ -411,7 +411,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
    <td>ID der Warteschlange.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>type</td> 
+   <td>Typ</td> 
    <td>F</td> 
    <td>Dieser enthält den Typ der Warteschlange.<br /> 0 – Benutzerwarteschlange.<br /> 1. Freigegebene Warteschlange.<br /> 2. Gruppenwarteschlange.<br type="_moz" /> </td> 
   </tr>
@@ -442,7 +442,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Startdatum des Zeitplans und endDate das Enddatum des Zeitplans. Wenn endDate im Zeitplan null ist, bedeutet dies, dass der Benutzer das Enddatum des Abwesenheitszeitplans nicht geplant hat.<br type="_moz" /> </td> 
+   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Startdatum des Zeitplans und endDate das Enddatum des Zeitplans. Wenn endDate planmäßig null ist, bedeutet dies, dass der Benutzer das Enddatum des Abwesenheitszeitplans nicht geplant hat.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -541,7 +541,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>processVariables<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Array von Objekten aus Prozessvariablen Jedes Objekt einer Prozessvariable enthält name, den Namen der Prozessvariable, value, den Wert der Prozessvariable und type, den Typ der Prozessvariable.<br type="_moz" /> </td> 
+   <td>Array von Objekten aus Prozessvariablen Jedes Objekt einer Prozessvariable enthält name, den Namen der Prozessvariablen, value, den Wert der Prozessvariablen und type, den Typ der Prozessvariablen.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>tasklist<br type="_moz" /> </td> 
@@ -730,7 +730,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>Berechtigungen<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Berechtigungen, die mit einer Anlage verknüpft sind allowRead -Feld dient als Leseberechtigung, allowWrite ist für Schreibberechtigung, allowDelete steht für Löschberechtigung.<br type="_moz" /> </td> 
+   <td>Berechtigungen, die mit einer Anlage verknüpft sind Das Feld allowRead steht für Leseberechtigung, allowWrite für Schreibberechtigung und allowDelete für Löschberechtigung.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>size<br type="_moz" /> </td> 
@@ -743,7 +743,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
    <td>ID der Aufgabe, der die Anlage hinzugefügt wird.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>type<br type="_moz" /> </td> 
+   <td>Typ<br type="_moz" /> </td> 
    <td>F</td> 
    <td>Typ ist Anhang für Dateien und Typ ist Notiz für Notizen.<br type="_moz" /> </td> 
   </tr>

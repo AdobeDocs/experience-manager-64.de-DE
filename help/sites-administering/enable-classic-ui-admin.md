@@ -1,8 +1,8 @@
 ---
 title: Admin Consoles
-seo-title: Admin Consolen
+seo-title: Admin Consoles
 description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
-seo-description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
+seo-description: Lear how to use the Admin Consoles available in AEM.
 uuid: 701dc57c-f7b4-421e-a847-577ae2585e80
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
 exl-id: f3c03562-aaeb-4d43-aee1-d92d661ee329
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 72%
+source-wordcount: '227'
+ht-degree: 70%
 
 ---
 
@@ -23,7 +23,7 @@ In der Standardeinstellung ist die Option zum Wechseln zur klassischen Benutzero
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Jede Konsole, die über eine klassische Benutzeroberflächenversion in `/libs/cq/core/content/nav` verfügt, kann einzeln wieder aktiviert werden, sodass die Option **Klassische Benutzeroberfläche** erneut über das Konsolensymbol angezeigt wird, wenn die Maus darauf bewegt wird.
+Jede Konsole mit einer klassischen UI-Version in `/libs/cq/core/content/nav` kann einzeln wieder aktiviert werden, sodass die **Klassische Benutzeroberfläche** wird das Konsolensymbol erneut angezeigt, wenn der Mauszeiger darüber bewegt wird.
 
 In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
@@ -39,7 +39,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    `/libs/cq/core/content/nav/sites`
 
-1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten** . Beispiel:
+1. Erstellen Sie eine Überlagerung mit der **Überlagerungsknoten** Option; Beispiel:
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`

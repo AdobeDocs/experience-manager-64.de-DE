@@ -51,14 +51,14 @@ Zu berücksichtigende Grundfaktoren sind (in dieser Reihenfolge):
 
 ## Architektur {#architecture}
 
-Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsumgebung. Diese Umgebungen haben unterschiedliche Anforderungen bezüglich der zugrunde liegenden Hardwaregröße und der Systemkonfiguration. Detaillierte Überlegungen zu beiden Umgebungen finden Sie in den Abschnitten [Autorenumgebung](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) und [Veröffentlichungsumgebung](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) .
+Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsumgebung. Diese Umgebungen haben unterschiedliche Anforderungen bezüglich der zugrunde liegenden Hardwaregröße und der Systemkonfiguration. Detaillierte Überlegungen zu beiden Umgebungen finden Sie im Abschnitt [Autorenumgebung](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) und [Veröffentlichungsumgebung](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) Abschnitte.
 
 In einem typischen Projekt-Setup stehen Ihnen mehrere Umgebungen zur Verfügung, in denen Sie Projektphasen inszenieren können:
 
 * **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Am besten arbeitet man mit einer Entwicklungsumgebung pro Entwickler (in der Regel lokale Installationen auf dem individuellen System).
 
-* **Autorentest-**
-UmgebungÜberprüfen von Änderungen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
+* **Autorentestumgebung**
+Um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
 
 * **Veröffentlichungs-Testumgebung** Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
 
@@ -109,7 +109,7 @@ Eine ausfallsichere Website wird auf mindestens zwei getrennten Systemen eingese
 
 #### Skalierbarkeit der Systemressourcen {#system-resources-scalability}
 
-Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung. Diese zusätzliche Leistung ist nicht unbedingt linear mit der Anzahl der Clusterknoten, da die Beziehung in hohem Maße von der technischen Umgebung abhängig ist. Weitere Informationen finden Sie in der [Cluster-Dokumentation](/help/sites-deploying/recommended-deploys.md) .
+Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung. Diese zusätzliche Leistung ist nicht unbedingt linear mit der Anzahl der Clusterknoten, da die Beziehung in hohem Maße von der technischen Umgebung abhängig ist. siehe [Clusterdokumentation](/help/sites-deploying/recommended-deploys.md) für weitere Informationen.
 
 Die Abschätzung, wie viele Cluster-Knoten notwendig sind, basiert auf den grundlegenden Anforderungen und spezifischen Anwendungsfällen des jeweiligen Webprojektes:
 
@@ -183,7 +183,7 @@ Sie können die Anzahl der Computer (oder CPUs), die für die Autorenumgebung er
 
 Diese Formel kann als allgemeine Richtlinie für die Skalierung von CPUs dienen, wenn Autoren grundlegende Operationen mit AEM durchführen. Es wird davon ausgegangen, dass das System und die Anwendung optimiert sind. Die Formel gilt jedoch nicht für erweiterte Funktionen wie MSM oder Assets (siehe unten).
 
-Weitere Informationen finden Sie in den zusätzlichen Kommentaren zu [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) und [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
+Weitere Informationen finden Sie unter [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) und [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
 
 ### Hardware-Empfehlungen {#hardware-recommendations}
 

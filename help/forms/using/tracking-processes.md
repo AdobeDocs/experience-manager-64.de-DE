@@ -1,8 +1,8 @@
 ---
 title: Verfolgen von Prozessen
-seo-title: Verfolgen von Prozessen
+seo-title: Tracking processes
 description: Verfolgen Ihrer Prozesse durch Suchen nach diesen und Anzeigen der Details.
-seo-description: Verfolgen Ihrer Prozesse durch Suchen nach diesen und Anzeigen der Details.
+seo-description: How to track your processes by searching for them and viewing their details.
 uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
 contentOwner: robhagat
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 exl-id: e7eae36b-39e0-4550-b18b-a1ac1a5c3015
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '406'
 ht-degree: 95%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 Auf der Seite „Verfolgung“ können Sie aktive oder abgeschlossene Prozesse suchen, die Sie gestartet haben oder an denen Sie beteiligt waren, und die Prozessdetails anzeigen. In den Prozessdetails werden die Aufgaben, Zuweisungen und Formulare angezeigt, die Teil des Prozesses waren. Zudem können Sie neue Prozesse mit Formulardaten aus einem zuvor gestarteten Prozess starten.
 
-## Nach Prozessen und Aufgaben suchen  {#search-for-processes-and-tasks}
+## Nach Prozessen und Aufgaben suchen {#search-for-processes-and-tasks}
 
 Sie können nach Prozessinstanzen und zugehörigen Aufgaben basierend auf dem Prozessnamen oder vom AEM Forms Workspace-Administrator eingerichteten Suchvorlagen suchen.
 
@@ -31,17 +31,17 @@ Sie können festlegen, welche Spalten in den Suchergebnissen angezeigt werden so
 >
 >Die Suchergebnisse enthalten keine Aufgaben, die zu einer Gruppen- oder freigegebenen Aufgabenliste gehörten, auf die Sie Zugriff haben, es sei denn, Sie waren tatsächlich an den Aufgaben beteiligt. Die Ergebnisse enthalten keine abgeschlossenen Prozessinstanzen, die der Administrator entfernt hat.
 
-### Suchen anhand des Prozessnamens  {#search-by-process-name}
+### Suchen anhand des Prozessnamens {#search-by-process-name}
 
 1. Wählen Sie auf der Seite „Verfolgung“ im linken Bereich einen Prozessnamen aus. Im Hauptbereich werden alle Instanzen des Prozesses angezeigt, für den Sie eine Aufgabe gestartet oder abgeschlossen haben.
 1. Klicken Sie auf eine Prozessinstanz, um weitere Informationen dazu anzuzeigen.
 
-### Suchen nach Aufgaben mithilfe von Suchvorlagen  {#search-for-a-task-using-a-search-template}
+### Suchen nach Aufgaben mithilfe von Suchvorlagen {#search-for-a-task-using-a-search-template}
 
 1. Wählen Sie auf der Seite „Verfolgung“ in der Liste auf der linken Seite **Suchen die Option Vorlagen** aus und wählen Sie eine Suchvorlage aus.
 1. Wenn die Vorlage Suchparameter unterstützt, füllen Sie zur Eingrenzung der Suchparameter die Vorlagenfelder aus und klicken Sie auf **Suchen**. Zeigt eine Liste aller Aufgaben an, an denen Sie teilgenommen haben und die den Suchkriterien entsprechen.
 
-## Prozessdetails anzeigen  {#view-process-details}
+## Prozessdetails anzeigen {#view-process-details}
 
 Auf der Seite „Verfolgung“ können Sie einen Prozess auswählen und seine Details anzeigen. Sie können die Prozesse basierend auf verschiedenen Parametern suchen, um die Aufgabendetails anzuzeigen. Sie können auch die Registerkarte „Status“ für Prozesse anzeigen, bei denen mehrere Benutzer parallel Aufgaben erhalten und bei denen die Werkzeuge zur Überprüfung von Dokumenten aktiviert sind.
 

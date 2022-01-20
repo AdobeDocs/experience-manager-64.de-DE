@@ -1,8 +1,8 @@
 ---
 title: Fehlerbehebung
-seo-title: Fehlerbehebung
+seo-title: Troubleshooting
 description: Fehlerbehebung in der Community einschließlich bekannter Probleme
-seo-description: Fehlerbehebung in der Community einschließlich bekannter Probleme
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
 source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '367'
 ht-degree: 1%
 
 ---
@@ -54,7 +54,7 @@ Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet,
 
 Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. Beim Autor schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
 
-Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Siehe [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API für weitere Informationen.
 
 ## Häufige Bedenken {#common-concerns}
 
@@ -62,9 +62,9 @@ Weitere Informationen finden Sie in der API [com.day.cq.commons.date.RelativeTim
 
 Während des Starts (nicht der 1., sondern alle darauf folgenden) kann die folgende Warnung in den Protokollen angezeigt werden:
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; wurde ersetzt durch &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;.
+* 11.04.2014 08:38:07 223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; wurde durch &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39; ersetzt.
 
-Diese Warnung kann sicher ignoriert werden, da jknack.handlebars.Handlebars, verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), mit einem eigenen i18n-Hilfsprogramm geliefert wird. Beim Start wird er durch einen AEM spezifischen [i18n-Helfer](handlebars-helpers.md#i-n) ersetzt. Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
+Diese Warnung kann sicher ignoriert werden als jknack.handlebars.Handlebars, verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), ist mit einem eigenen i18n Helper-Dienstprogramm ausgestattet. Beim Start wird er durch eine AEM spezifische [i18n Helper](handlebars-helpers.md#i-n). Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
 
 ### Warnung in Protokollen: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

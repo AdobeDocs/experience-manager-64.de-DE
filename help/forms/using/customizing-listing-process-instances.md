@@ -1,8 +1,8 @@
 ---
 title: Anpassen der Auflistung von Prozessinstanzen
-seo-title: Anpassen der Auflistung von Prozessinstanzen
+seo-title: Customizing the listing of process instances
 description: Gehen Sie wie folgt vor, um die Eigenschaften anzupassen, die in der Prozessinstanz in AEM Forms Workspace angezeigt werden.
-seo-description: Gehen Sie wie folgt vor, um die Eigenschaften anzupassen, die in der Prozessinstanz in AEM Forms Workspace angezeigt werden.
+seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: e7b8206c-bac2-48a6-b353-d06bc73b29f9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 88%
+source-wordcount: '284'
+ht-degree: 87%
 
 ---
 
-# Anpassen der Auflistung von Prozessinstanzen  {#customizing-the-listing-of-process-instances}
+# Anpassen der Auflistung von Prozessinstanzen {#customizing-the-listing-of-process-instances}
 
 Die Prozessinstanzliste wird auf der Registerkarte „Verfolgung“ von AEM Forms Workspace angezeigt.
 
@@ -25,7 +25,7 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Property</strong></td> 
+   <td><strong>Eigenschaft</strong></td> 
    <td><strong>Kommentare</strong></td> 
   </tr> 
   <tr> 
@@ -69,7 +69,7 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
 
 **Beispiel:**
 
-Um die Eigenschaft `description` der Prozessinstanz auf der Prozessinstanzkarte anzuzeigen, führen Sie die folgenden Schritte aus.
+So zeigen Sie die `description` -Eigenschaft der Prozessinstanz auf der Prozessinstanzkarte ausführen, führen Sie die folgenden Schritte aus.
 
 1. Befolgen Sie die [generischen Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Gehen Sie folgendermaßen vor:
@@ -84,7 +84,7 @@ Um die Eigenschaft `description` der Prozessinstanz auf der Prozessinstanzkarte 
 1. Gehen Sie folgendermaßen vor:
 
    1. Öffnen Sie /apps/ws/js/registry.js zur Bearbeitung.
-   1. Suchen und ersetzen Sie `text!/lc/libs/ws/js/runtime/templates/processinstance.html`durch `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
+   1. Suchen und Ersetzen `text!/lc/libs/ws/js/runtime/templates/processinstance.html`mit `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html
 
 1. Die oben genannten Änderungen erfordern möglicherweise ein Update der CSS-Datei, indem Sie wie folgt einen Eintrag im Stylesheet /apps/ws/css/newStyle.css hinzufügen:
 

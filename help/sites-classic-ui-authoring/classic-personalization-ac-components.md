@@ -1,8 +1,8 @@
 ---
 title: Adobe Campaign-Komponenten
-seo-title: Adobe Campaign-Komponenten
+seo-title: Adobe Campaign Components
 description: Bei einer Integration mit Adobe Campaign stehen Ihnen für die Arbeit mit Newslettern und Formularen Komponenten zur Verfügung.
-seo-description: Bei einer Integration mit Adobe Campaign stehen Ihnen für die Arbeit mit Newslettern und Formularen Komponenten zur Verfügung.
+seo-description: When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms.
 uuid: 5c75c216-dc28-4d3b-b6f7-3c4726143c8b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
 exl-id: 66fc7691-1c93-4714-b75f-ae03512261e9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2454'
 ht-degree: 80%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 80%
 
 Bei einer Integration mit Adobe Campaign stehen Ihnen für die Arbeit mit Newslettern und Formularen Komponenten zur Verfügung. Beide Optionen, Newsletter und Formulare, werden in diesem Dokument näher beschrieben.
 
-## Adobe Campaign-Newsletter-Komponenten  {#adobe-campaign-newsletter-components}
+## Adobe Campaign-Newsletter-Komponenten {#adobe-campaign-newsletter-components}
 
 Folgen Sie in den Campaign-Komponenten den Best Practices, die Sie unter [Best Practices für E-Mail-Vorlagen](/help/sites-administering/best-practices-for-email-templates.md) finden und die auf der Adobe-Markupsprache [HTL](https://helpx.adobe.com/de/experience-manager/htl/using/overview.html) basieren.
 
@@ -60,7 +60,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Überschrift (Kampagne)�
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
-### Image (Campaign) {#image-campaign}
+### Bild (Kampagne) {#image-campaign}
 
 Die Komponente „Bild (Kampagne)“ zeigt ein Bild und begleitenden Text gemäß den festgelegten Parametern an.
 
@@ -114,7 +114,6 @@ Damit entfernen Sie das aktuelle Bild.
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
 Im folgenden Beispiel sehen Sie, wie die Komponente „Bild (Kampagne)“ dargestellt wird.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
@@ -131,18 +130,17 @@ Folgendes können Sie in den Registerkarten **Anzeige**, **URL-Info** oder **Erw
 
 * **Link-QuickInfo** Mit dieser Option werden weitere Informationen zur Verwendung des Links hinzugefügt.
 
-* ****
-LinkTypeWählen Sie in der Dropdown-Liste zwischen einem 
-**Benutzerdefinierte** URLs und ein  **adaptives Dokument**. Dieses Feld ist obligatorisch. Entscheiden Sie sich für eine benutzerdefinierte URL, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
+* **LinkType**
+Wählen Sie in der Dropdown-Liste zwischen einer 
+**Benutzerspezifische URL** und **Adaptives Dokument**. Dieses Feld ist obligatorisch. Entscheiden Sie sich für eine benutzerdefinierte URL, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
 
 * **Zusätzlicher URL-Parameter** Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
 
 >[!NOTE]
 >
->Sie müssen Informationen im Feld **Link-Typ** auf der Registerkarte **URL Info** eingeben, da die Komponente nicht gespeichert werden kann und folgende Fehlermeldung angezeigt wird:
+>Sie müssen Informationen in das Feld **Link-Typ** im Feld **URL-Info** oder die Komponente kann nicht gespeichert werden. Die folgende Fehlermeldung wird angezeigt:
 >
 >`Validation failed. Verify the values of the marked fields.`
-
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Link (Kampagne)“ dargestellt wird.
 
@@ -156,7 +154,7 @@ Navigieren Sie in der Komponente zum gewünschten zielgerichteten Abschnitt, um 
 
 Klicken Sie auf das Dropdown-Menü, um zu dem Abschnitt zu navigieren, auf den Sie verweisen möchten. Wenn Sie fertig sind, klicken Sie auf **OK**.
 
-### Text und Bild (Kampagne)  {#text-image-campaign}
+### Text und Bild (Kampagne) {#text-image-campaign}
 
 Mit der Komponente „Text und Bild (Kampagne)“ werden ein Textblock und ein Bild hinzugefügt.
 
@@ -170,7 +168,7 @@ Geben Sie einen Text ein. Verwenden Sie die Symbolleiste, um die Formatierung zu
 * **Bild**
 Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu navigieren. Schneiden Sie es gegebenenfalls zu oder drehen Sie es.
 
-* **Bildeigenschaften**  (**Erweiterte Bildeigenschaften**)
+* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
    Dies ermöglicht die Festlegung des Folgenden:
 
@@ -200,14 +198,13 @@ Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu
 >
 >`Validation failed. Verify the values of the marked fields.`
 
-
 Im folgenden Beispiel sehen Sie, wie die Komponente „Text und Bild (Kampagne)“ dargestellt wird.
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
 ### Text und Personalisierung (Kampagne) {#text-personalization-campaign}
 
-Mit der Komponente &quot;Text und Personalisierung (Kampagne)&quot;können Sie mithilfe eines WYSIWYG-Editors einen Textblock eingeben, wobei die Funktionen vom [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitgestellt werden. Darüber hinaus können Sie mithilfe dieser Komponente Kontextfelder und Personalisierungsblöcke aus Adobe Campaign verwenden. Weitere Informationen hierzu finden Sie unter [Personalisierungen einfügen](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+Mit der Komponente &quot;Text und Personalisierung (Kampagne)&quot;können Sie mithilfe eines WYSIWYG-Editors einen Textblock eingeben, der durch die Funktion [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md). Darüber hinaus können Sie mithilfe dieser Komponente Kontextfelder und Personalisierungsblöcke aus Adobe Campaign verwenden. Weitere Informationen hierzu finden Sie unter [Personalisierungen einfügen](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
 Über mehrere Symbole können Sie den Text formatieren, darunter Schriftmerkmale, Ausrichtung, Links, Listen und Einzüge: 
 
@@ -227,7 +224,7 @@ Sie können mithilfe der Adobe Campaign-Komponenten Formulare erstellen, die Be
 
 Jedes Komponentenfeld kann mit einem Adobe Campaign-Datenbankfeld verknüpft werden. Die verfügbaren Felder variieren je nach dem enthaltenen Datentyp. Eine genauere Beschreibung finden Sie im Abschnitt [Komponenten und Datentyp](#components-and-data-type). Wenn Sie Ihr Empfängerschema in Adobe Campaign erweitern, werden die neuen Felder in den Komponenten zur Verfügung gestellt, deren Datentypen mit denen der Felder übereinstimmen.
 
-Wenn Sie ein Formular öffnen, das für die Integration mit Adobe Campaign konfiguriert ist, sehen Sie die folgenden Komponenten im Abschnitt **Adobe Campaign**:
+Wenn Sie ein Formular öffnen, das für die Integration mit Adobe Campaign konfiguriert ist, sehen Sie die folgenden Komponenten in der **Adobe Campaign** Abschnitt:
 
 * Kontrollkästchen (Kampagne)
 * „Datumsfeld (Kampagne)“ und „Datumsfeld/HTML5 (Kampagne)“
@@ -241,7 +238,7 @@ Wenn Sie ein Formular öffnen, das für die Integration mit Adobe Campaign konfi
 
 In diesem Abschnitt werden die Komponenten im Detail beschrieben.
 
-### Komponenten und Datentyp  {#components-and-data-type}
+### Komponenten und Datentyp {#components-and-data-type}
 
 In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind und mit denen Adobe Campaign-Profildaten angezeigt und bearbeitet werden können. Jede Komponente kann einem Adobe Campaign-Profil zugeordnet werden, um dessen Feldwerte anzuzeigen und beim Absenden des Formulars das entsprechende Feld zu aktualisieren. Die unterschiedlichen Komponenten können nur Feldern mit entsprechendem Datentyp zugewiesen werden.
 
@@ -254,7 +251,7 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind
   </tr> 
   <tr> 
    <td><p>Kontrollkästchen (Kampagne)</p> </td> 
-   <td><p>Boolesch</p> </td> 
+   <td><p>Boolean (Boolesch)</p> </td> 
    <td><p>Nicht mehr kontaktieren (auf beliebigem Kanal)</p> </td> 
   </tr> 
   <tr> 
@@ -274,19 +271,19 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die verfügbar sind
   </tr> 
   <tr> 
    <td><p>Textfeld (Kampagne)</p> </td> 
-   <td><p>Zeichenfolge</p> </td> 
+   <td><p>String (Zeichenfolge)</p> </td> 
    <td><p>E-Mail</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Von den meisten Komponenten genutzte Einstellungen  {#settings-common-to-most-components}
+### Von den meisten Komponenten genutzte Einstellungen {#settings-common-to-most-components}
 
 Die Adobe Campaign-Komponenten verfügen über Einstellungen, die von allen Komponenten genutzt werden (mit Ausnahme des verschlüsselten Primärschlüssels und des ausgeblendeten Abstimmschlüssels).
 
 Für die meisten Komponenten können Sie Folgendes konfigurieren:
 
-#### Titel und Text  {#title-and-text}
+#### Titel und Text {#title-and-text}
 
 * **Titel**
 
@@ -316,7 +313,7 @@ Sie können Folgendes konfigurieren:
 
    Aktivieren Sie dieses Kontrollkästchen, wenn dieses Feld Teil des Abstimmschlüssels ist.
 
-#### Beschränkungen {#constraints}
+#### Begrenzungen {#constraints}
 
 * **Erforderlich**
 
@@ -342,15 +339,15 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Kontrollkästchen (Kampag
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### Datumsfeld (Kampagne) und Datumsfeld/HTML 5 (Kampagne) {#date-field-campaign-and-date-field-html-campaign}
+### „Datumsfeld (Kampagne)“ und „Datumsfeld/HTML 5 (Kampagne)“ {#date-field-campaign-and-date-field-html-campaign}
 
 Verwenden Sie das Datumsfeld, damit Empfänger ein Datum (beispielsweise das Geburtsdatum) angeben können. Das Datumsformat entspricht dem Format, das in Ihrer Adobe Campaign-Instanz verwendet wird.
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
-* **Einschränkungen - Dropdown-Liste** für Begrenzungen
+* **Einschränkungen - Einschränkungen** Dropdown
 
-   Sie können - **Keine** oder **Datum** - auswählen, um die Beschränkung eines Datums oder keine Beschränkung hinzuzufügen. Wählen Sie „Datum“ aus, müssen Benutzer ihre Angaben im Datumsformat machen.
+   Sie können auswählen: **Keines** oder **Datum** - um die Beschränkung eines Datums oder keine Beschränkung hinzuzufügen. Wählen Sie „Datum“ aus, müssen Benutzer ihre Angaben im Datumsformat machen.
 
 * **Beschränkungsmeldung**
 
@@ -358,7 +355,7 @@ Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](
 
 * **Stil - Breite**
 
-   Passen Sie die Breite des Felds an, indem Sie auf die Symbole **+** und **-** klicken oder tippen oder eine Zahl eingeben.
+   Passen Sie die Breite des Felds an, indem Sie auf die **+** und **-** oder eine Zahl eingeben.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Datumsfeld (Kampagne)“ mit angepasster Breite angezeigt wird.
 
@@ -413,16 +410,16 @@ Mit dem numerischen Feld können Sie es Empfängern ermöglichen, Zahlen (beispi
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
-* **Einschränkungen - Dropdown-Liste** für Begrenzungen
+* **Einschränkungen - Einschränkungen** Dropdown
 
-   Sie können - **Keine** oder **Numerisch** - auswählen, um die Beschränkung einer Zahl oder ohne Einschränkung hinzuzufügen. Wählen Sie die numerische Beschränkung, können Benutzer ausschließlich Zahlen in das Feld eingeben.
+   Sie können auswählen: **Keines** oder **Numerisch** - um die Beschränkung einer Zahl oder keiner Einschränkung hinzuzufügen. Wählen Sie die numerische Beschränkung, können Benutzer ausschließlich Zahlen in das Feld eingeben.
 
 * **Beschränkungsmeldung**
 
    Darüber hinaus können Sie eine Beschränkungsmeldung hinzufügen, damit Benutzer wissen, wie sie ihre Antworten richtig formatieren können.
-* **Stile -**
-BreitePassen Sie die Breite des Felds an, indem Sie auf die 
-**+** und  **-** Symbole oder Eingabe einer Zahl.
+* **Stil - Breite**
+Passen Sie die Breite des Felds an, indem Sie auf die 
+**+** und **-** oder eine Zahl eingeben.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Numerisches Feld (Kampagne)“ mit konfigurierter Breite angezeigt wird.
 
@@ -442,7 +439,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Optionsfeld (Kampagne)“
 
 Mithilfe der Komponente **Abonnement-Checkliste (Kampagne)** können Sie die mit einem Adobe Campaign-Profil verknüpften Abonnements bearbeiten.
 
-Wird die Komponente einem Formular hinzugefügt, werden alle verfügbaren Abonnements als Kontrollkästchen angezeigt, aus denen die Benutzer das gewünschte auswählen können. Wenn Benutzer das Formular senden, meldet diese Komponente den Benutzer an oder kündigt ihn von den ausgewählten Diensten ab, je nach dem Formularaktionstyp (**Adobe Campaign: Abonnieren Sie Services** oder **Adobe Campaign: Abmeldung von Services**).
+Wird die Komponente einem Formular hinzugefügt, werden alle verfügbaren Abonnements als Kontrollkästchen angezeigt, aus denen die Benutzer das gewünschte auswählen können. Wenn Benutzer das Formular übermitteln, meldet diese Komponente den Benutzer je nach Aktionstyp (**Adobe Campaign: Abonnieren von Diensten** oder **Adobe Campaign: Abmeldung von Diensten**).
 
 >[!NOTE]
 >
@@ -460,9 +457,9 @@ Die Komponente „Textfeld (Kampagne)“ ermöglicht Ihnen die Eingabe von Daten
 
 Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](#settings-common-to-most-components) können Sie auch Folgendes konfigurieren:
 
-* **Einschränkungen - Dropdown-Liste** für Begrenzungen
+* **Einschränkungen - Einschränkungen** Dropdown
 
-   Sie können - **Keine, E-Mail,** oder **Name (keine Umlaute)** - auswählen, um die Einschränkung einer E-Mail-Adresse, eines Namens oder einer Einschränkung hinzuzufügen. Entscheiden Sie sich für „E-Mail“, können Benutzer ausschließlich E-Mail-Adressen in das Feld eingeben. Entscheiden Sie sich für „Name“, muss ein Name eingegeben werden (hierbei sind jedoch keine Umlaute gestattet).
+   Sie können auswählen: **None, E-Mail,** oder **Name (keine Umlaute)** - um die Beschränkung einer E-Mail-Adresse, eines Namens oder einer Einschränkung hinzuzufügen. Entscheiden Sie sich für „E-Mail“, können Benutzer ausschließlich E-Mail-Adressen in das Feld eingeben. Entscheiden Sie sich für „Name“, muss ein Name eingegeben werden (hierbei sind jedoch keine Umlaute gestattet).
 
 * **Beschränkungsmeldung**
 
@@ -470,7 +467,7 @@ Neben den [von den meisten Adobe Campaign-Komponenten genutzten Einstellungen](
 
 * **Stil - Breite**
 
-   Passen Sie die Breite des Felds an, indem Sie auf die Symbole **+** und **-** klicken oder tippen oder eine Zahl eingeben.
+   Passen Sie die Breite des Felds an, indem Sie auf die **+** und **-** oder eine Zahl eingeben.
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Textfeld (Kampagne)“ dargestellt wird.
 

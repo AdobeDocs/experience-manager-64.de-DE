@@ -1,8 +1,8 @@
 ---
 title: SocialUtils-Refaktorierung
-seo-title: SocialUtils-Refaktorierung
+seo-title: SocialUtils Refactoring
 description: Das Paket com.adobe.cq.social.ugcbase.SocialUtils wurde in AEM 6.1 nicht mehr unterstützt.
-seo-description: Das Paket com.adobe.cq.social.ugcbase.SocialUtils wurde in AEM 6.1 nicht mehr unterstützt.
+seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 exl-id: ba23188b-a72a-4349-b3e5-0fb50fd6312f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ Das Paket **com.adobe.cq.social.ugcbase.SocialUtils** wurde in AEM 6.1 nicht meh
 
 In den folgenden Tabellen sind die Methoden aufgeführt, die anstelle der SocialUtils-Methoden verwendet werden sollen.
 
-## SocialResourceUtilities-Paket {#socialresourceutilities-package}
+## SocialResourceUtilities-Paket  {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|

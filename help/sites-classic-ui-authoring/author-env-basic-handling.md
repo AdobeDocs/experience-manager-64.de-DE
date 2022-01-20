@@ -1,8 +1,8 @@
 ---
 title: Grundlegende Handhabung
-seo-title: Grundlegende Handhabung
+seo-title: Basic Handling
 description: Überblick über die grundlegende Handhabung bei der Verwendung der AEM-Autorenumgebung. Als Grundlage wird die Sites-Konsole verwendet.
-seo-description: Überblick über die grundlegende Handhabung bei der Verwendung der AEM-Autorenumgebung. Als Grundlage wird die Sites-Konsole verwendet.
+seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 49bf3e19-d299-4c99-896c-b12135f33fb7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1194'
 ht-degree: 94%
 
 ---
@@ -22,13 +22,11 @@ ht-degree: 94%
 >[!NOTE]
 >
 >* Diese Seite soll einen Überblick über die grundlegende Handhabung der AEM-Autorenumgebung geben. Als Grundlage wird die **Sites-Konsole** verwendet.
-   >
-   >
-* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung bzw. in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
+>
+>* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung bzw. in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >
-
 
 
 ## Der Startbildschirm {#the-welcome-screen}
@@ -108,7 +106,7 @@ Hier können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-pages.md
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-## Aufrufen der Hilfe {#accessing-help}
+## Aufrufen der Hilfe   {#accessing-help}
 
 In verschiedenen Konsolen (z. B. „Websites“) finden Sie auch die Schaltfläche **Hilfe**, mit der Sie entweder Package Share oder die Dokumentations-Website öffnen können.
 
@@ -118,7 +116,7 @@ Beim Bearbeiten einer Seite enthält der [Sidekick ebenfalls eine Schaltfläche,
 
 ## Navigieren mit der Websites-Konsole {#navigating-with-the-websites-console}
 
-In der Konsole **Websites** werden die Inhaltsseiten im linken Fenster in einer Baumstruktur aufgelistet. Um die Navigation zu vereinfachen, können einzelne Abschnitte der Baumstruktur je nach Bedarf eingeblendet (+) bzw. ausgeblendet (-) werden:
+In der **Websites**-Konsole werden die Inhaltsseiten im linken Fenster in einer Baumstruktur aufgelistet. Um die Navigation zu vereinfachen, können einzelne Abschnitte der Baumstruktur je nach Bedarf eingeblendet (+) bzw. ausgeblendet (-) werden:
 
 * Ein einfacher Klick auf den Namen einer Seite im linken Fenster hat folgende Auswirkungen:
 
@@ -163,7 +161,7 @@ Die folgenden sind verfügbar, ein Teil dieser Felder wird standardmäßig angez
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
-   <td>Miniaturansicht</td> 
+   <td>Miniatur</td> 
    <td>Zeigt eine Miniatur der Seite an.</td> 
   </tr> 
   <tr> 
@@ -228,7 +226,7 @@ Die Farben neben den Seiten in den Spalten **Veröffentlicht** und **Geändert**
 | Geändert | Blau | Seite wurde seit der letzten Veröffentlichung geändert. |
 | Geändert | *leer* | Diese Seite wurde noch nie geändert, auch nicht seit der letzten Veröffentlichung. |
 
-## Context Menus {#context-menus}
+## Kontextmenüs {#context-menus}
 
 Die klassische Benutzeroberfläche nutzt für die Navigation und für das Starten von Aktionen vertraute Mechanismen wie Klicks oder Doppelklicks. Abhängig von der aktuellen Situation ist außerdem eine Reihe von Kontextmenüs verfügbar (diese werden im Allgemeinen per Rechtsklick aufgerufen):
 

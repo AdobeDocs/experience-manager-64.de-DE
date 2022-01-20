@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
-feature: Rotationssets
+feature: Spin Sets
 role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1845'
+source-wordcount: '1843'
 ht-degree: 68%
 
 ---
@@ -37,37 +37,37 @@ Gehen Sie wie folgt vor, um die Arbeit mit Rotationssets zu beschleunigen:
 
    Sie benötigen mindestens 8 bis 12 Aufnahmen eines Artikels für ein eindimensionales Rotationsset und 16 bis 24 Aufnahmen für ein zweidimensionales Rotationsset. Die Aufnahmen müssen in regelmäßigen Abständen gemacht werden, um den Eindruck zu erwecken, dass der Artikel gedreht wird. Beispiel: Wenn ein eindimensionales Rotationsset 12 Aufnahmen umfasst, drehen Sie den Artikel für jede Aufnahme um 30 Grad (360/12).
 
-1. [Erstellen Sie Rotationssets.](#creating-spin-sets)
+1. [Erstellen von Rotationssets.](#creating-spin-sets)
 
-   Um ein Rotationsset zu erstellen, wählen Sie **[!UICONTROL Erstellen > Rotationsset]** und benennen Sie das Set, wählen Sie die Assets und sortieren Sie dann die Bilder in der Reihenfolge, in der sie angezeigt werden.
+   Um ein Rotationsset zu erstellen, wählen Sie **[!UICONTROL Erstellen > Rotationsset]** Benennen Sie das Set, wählen Sie die Assets aus und sortieren Sie dann die Bilder in der Reihenfolge, in der sie angezeigt werden.
 
    Siehe [Arbeiten mit Selektoren](working-with-selectors.md).
 
    >[!NOTE]
    >
-   >Sie können Rotationssets auch automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen.
+   >Sie können Rotationssets auch automatisch erstellen über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
    >
-   >*Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt und sind nur im Dynamic Media-Scene7-Modus* verfügbar.
+   >*Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Erfassung erstellt und sind nur im Modus Dynamic Media - Scene7 verfügbar*.
 
 1. Richten Sie [Rotationsset-Viewer-Vorgaben](managing-viewer-presets.md) nach Bedarf ein.
 
-   Administratoren können Rotationsset-Viewer-Vorgaben erstellen oder ändern. Um das Rotationsset mit einer Viewer-Vorgabe anzuzeigen, wählen Sie das Rotationsset aus und wählen Sie im Dropdownmenü links die Option **[!UICONTROL Viewer]**.
+   Administratoren können Rotationsset-Viewer-Vorgaben erstellen oder ändern. Um das Rotationsset mit einer Viewer-Vorgabe anzuzeigen, wählen Sie das Rotationsset aus und wählen Sie im Dropdown-Menü in der linken Seitenleiste die Option **[!UICONTROL Viewer]**.
 
    Um Viewer-Vorgaben zu erstellen oder zu bearbeiten, wählen Sie **[!UICONTROL Tools > Assets > Viewer-Vorgaben]**.
 
    Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben.](managing-viewer-presets.md)
 
-1. [Zeigen Sie Rotationssets an](#viewing-spin-sets).
+1. [Anzeigen von Rotationssets](#viewing-spin-sets).
 
    Es gibt drei verschiedene Arten, über Stapelsatzvorgaben erstellte Sätze anzuzeigen und darauf zuzugreifen. (In der Benutzeroberfläche werden *keine* mit Stapelsatzvorgaben erstellten Sets angezeigt.)
 
-1. [Zeigen Sie eine Vorschau der Rotationssets an.](previewing-assets.md)
+1. [Anzeigen von Rotationssets in der Vorschau.](previewing-assets.md)
 
    Wählen Sie das Rotationsset aus, um dessen Vorschau anzuzeigen. Drehen Sie das Rotationsset. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
-1. [Veröffentlichen Sie Rotationssets.](publishing-dynamicmedia-assets.md)
+1. [Veröffentlichen von Rotationssets.](publishing-dynamicmedia-assets.md)
 
-   Beim Veröffentlichen eines Rotationssets wird die Reihenfolge aktiviert, in der Bilder in einem Rotationsset angezeigt werden. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.**** URLsund  **** Einbettungszeichenfolge. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](managing-viewer-presets.md).
+   Beim Veröffentlichen eines Rotationssets wird die Reihenfolge aktiviert, in der Bilder in einem Rotationsset angezeigt werden. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.**[!UICONTROL URL]** und **[!UICONTROL Einbetten]** Zeichenfolge. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](managing-viewer-presets.md).
 
 1. [Verknüpfen Sie URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md) oder [betten Sie den Video- oder Bild-Viewer ein](embed-code.md).
 
@@ -77,7 +77,7 @@ Gehen Sie wie folgt vor, um die Arbeit mit Rotationssets zu beschleunigen:
 
    Siehe [Verknüpfen von Rotationssets mit Web-Seiten](linking-urls-to-yourwebapplication.md) und [Einbetten des Video- oder Bild-Viewers](embed-code.md).
 
-Bei Bedarf können Sie [Rotationssets bearbeiten](#editing-spin-sets). Darüber hinaus können Sie [Eigenschaften von Rotationssets](managing-assets-touch-ui.md#editing-properties) anzeigen und bearbeiten.
+Bei Bedarf können Sie [Rotationssets bearbeiten](#editing-spin-sets). Darüber hinaus können Sie [Eigenschaften von Rotationssets](managing-assets-touch-ui.md#editing-properties).
 
 ## Hochladen von Assets für Rotationssets {#uploading-assets-for-spin-sets}
 
@@ -109,11 +109,11 @@ Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf,
 
 **So erstellen Sie Rotationssets:**
 
-1. Navigieren Sie in Assets an die Stelle, an der Sie ein Rotationsset erstellen möchten, tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Rotationsset]** aus. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält.
+1. Navigieren Sie in Assets an die Stelle, an der Sie ein Rotationsset erstellen möchten, und tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Rotationsset]**. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält.
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-1. Geben Sie auf der Seite **[!UICONTROL Rotationsset-Editor]** im Feld **[!UICONTROL Titel]** einen Namen für das Rotationsset ein. Der Name wird im Banner über dem Rotationsset angezeigt. Geben Sie optional eine Beschreibung ein.
+1. Im **[!UICONTROL Rotationsset-Editor]** in der **[!UICONTROL Titel]** Geben Sie einen Namen für das Rotationsset ein. Der Name wird im Banner über dem Rotationsset angezeigt. Geben Sie optional eine Beschreibung ein.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
@@ -121,29 +121,29 @@ Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf,
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
-   * Tippen Sie in der linken oberen Ecke der Seite **[!UICONTROL Rotationsset-Editor]** auf **[!UICONTROL Asset hinzufügen]**.
-   * Tippen Sie in der Mitte der Seite **[!UICONTROL Rotationsset-Editor]** auf **[!UICONTROL Tippen, um die Asset-Auswahl]** zu öffnen.
+   * In der linken oberen Ecke des **[!UICONTROL Rotationsset-Editor]** Seite, tippen Sie auf **[!UICONTROL Asset hinzufügen]**.
+   * In der Mitte des **[!UICONTROL Rotationsset-Editor]** Seite, tippen Sie auf **[!UICONTROL Tippen, um den Asset-Selektor zu öffnen]**.
 
    Tippen Sie, um die gewünschten Assets für das Rotationsset auszuwählen. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen]**.
 
-   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Um die Ansicht zu ändern, tippen Sie oben rechts auf der Seite auf das Symbol **[!UICONTROL Ansicht]** und dann auf **[!UICONTROL Spaltenansicht]**, **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Listenansicht]**.
+   Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Um die Ansicht zu ändern, tippen Sie oben rechts auf der Seite auf die **[!UICONTROL Ansicht]** Symbol und tippen Sie dann auf **[!UICONTROL Spaltenansicht]**, **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Listenansicht]**.
 
    Siehe [Arbeiten mit Selektoren](working-with-selectors.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Assets nach dem Hinzufügen manuell neu anordnen oder sortieren. Ziehen Sie bei Bedarf das Symbol **[!UICONTROL Neu anordnen]** eines Assets rechts vom Dateinamen des Assets, um die Bilder in der Setliste nach oben oder unten anzuordnen.
+1. Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Assets nach dem Hinzufügen manuell neu anordnen oder sortieren. Ziehen Sie bei Bedarf die **[!UICONTROL Neu anordnen]** rechts neben dem Dateinamen des Assets, um Bilder in der Setliste nach oben oder unten anzuordnen.
 
    ![spin_set_assets6-4](assets/spin_set_assets6-4.png)
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
-   * Um ein Bild zu löschen, wählen Sie das Bild aus und tippen Sie dann auf **[!UICONTROL Asset löschen]**.
+   * Um ein Bild zu löschen, wählen Sie das Bild aus und tippen Sie auf **[!UICONTROL Asset löschen]**.
    * Wenn Sie eine Vorgabe anwenden möchten, tippen Sie oben rechts auf **[!UICONTROL Voreingestellt]**. Wählen Sie anschließend eine Vorgabe aus, um sie auf alle Elemente gleichzeitig anzuwenden.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Das neu erstellte Rotationsset wird in dem Ordner angezeigt, in dem es erstellt wurde.
 
-## Anzeigen von Rotationssets  {#viewing-spin-sets}
+## Anzeigen von Rotationssets {#viewing-spin-sets}
 
 Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen. Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberfläche angezeigt. Es gibt drei verschiedene Arten, auf über Stapelsatzvorgaben erstellte Sätze zuzugreifen. (Diese Methoden sind auch dann verfügbar, wenn Sie die Rotationssets in der Benutzeroberfläche erstellt haben.)
 
@@ -159,9 +159,9 @@ Sets können auch über die Benutzeroberfläche angezeigt werden, wie unter [Bea
 
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
-1. Über die Suche können Sie **[!UICONTROL Filter]** auswählen, dann **[!UICONTROL Dynamic Media]** erweitern und **[!UICONTROL Sets]** auswählen.
+1. Über die Suche können Sie **[!UICONTROL Filter]**, dann erweitern **[!UICONTROL Dynamic Media]** und wählen Sie **[!UICONTROL Sets]**.
 
-   Die Suche gibt übereinstimmende Sets zurück, die manuell in der Benutzeroberfläche erstellt oder automatisch über Stapelsatzvorgaben erstellt wurden. Bei automatisierten Sets wird die Suchabfrage mithilfe von **[!UICONTROL Beginnt mit]** Suchkriterien durchgeführt, die sich von AEM Suche unterscheidet, die auf der Verwendung von **[!UICONTROL Enthält]** Suchkriterien basiert. Automatisierte Sets können nur durchsucht werden, wenn der Filter auf **[!UICONTROL Sets]** eingestellt ist.
+   Die Suche gibt übereinstimmende Sets zurück, die manuell in der Benutzeroberfläche erstellt oder automatisch über Stapelsatzvorgaben erstellt wurden. Bei automatisierten Sets wird die Suchabfrage mithilfe von **[!UICONTROL Beginnt mit]** Suchkriterien, die sich von AEM Suche unterscheiden, die auf der Verwendung von **[!UICONTROL Enthält]** Suchkriterien. Automatisierte Sets können nur durchsucht werden, wenn der Filter auf **[!UICONTROL Sets]** eingestellt ist.
 
    ![chlimage_1-386](assets/chlimage_1-386.png)
 
@@ -190,19 +190,19 @@ Sie können mehrere Bearbeitungsaufgaben für Rotationssets ausführen, z. B. d
    * Um ein Asset hinzuzufügen oder ein vorhandenes Asset zu aktualisieren, tippen Sie auf **[!UICONTROL Asset hinzufügen]**. Navigieren Sie zu einem Element, wählen Sie es aus und tippen Sie oben rechts auf **[!UICONTROL Auswählen]**.
 Wenn Sie das in AEM als Miniaturansicht verwendete Bild löschen und durch ein anderes ersetzen, wird das Original-Asset weiterhin angezeigt.
    * Um ein Asset zu löschen, wählen Sie es aus und tippen Sie auf **[!UICONTROL Asset löschen]**.
-   * Um eine Vorgabe anzuwenden, tippen Sie auf das Symbol **[!UICONTROL Vorgabe]** und wählen Sie eine Vorgabe aus.
+   * Um eine Vorgabe anzuwenden, tippen Sie auf **[!UICONTROL Vorgabe]** und wählen Sie eine Vorgabe aus.
    * Navigieren Sie zum Löschen eines ganzen Rotationssets zu diesem Rotationsset, wählen Sie es aus und wählen Sie **[!UICONTROL Löschen]**.
 
       >[!NOTE]
-      >* Sie können die Bilder in einem Rotationsset bearbeiten, indem Sie zu diesem Set navigieren, in der linken Leiste auf **[!UICONTROL Mitglieder des Sets]** tippen und dann auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol) auf ein einzelnes Asset tippen, um das Bearbeitungsfenster zu öffnen.
+      >* Sie können die Bilder in einem Rotationsset bearbeiten, indem Sie zu dem Set navigieren und auf **[!UICONTROL Festlegen von Mitgliedern]** in der linken Leiste und tippen Sie dann auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol) auf ein einzelnes Asset klicken, um das Bearbeitungsfenster zu öffnen.
 
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, wenn Sie fertig mit der Bearbeitung sind.
 
-## Anzeigen der Vorschau von Rotationssets  {#previewing-spin-sets}
+## Anzeigen der Vorschau von Rotationssets {#previewing-spin-sets}
 
 Weitere Informationen finden Sie im Abschnitt [Asset-Vorschau](previewing-assets.md).
 
-## Veröffentlichen von Rotationssets  {#publishing-spin-sets}
+## Veröffentlichen von Rotationssets {#publishing-spin-sets}
 
 Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).

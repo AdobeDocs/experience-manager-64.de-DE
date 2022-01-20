@@ -1,8 +1,8 @@
 ---
 title: Komponentenkonsole
-seo-title: Komponentenkonsole
+seo-title: Components Console
 description: Komponentenkonsole
-seo-description: 'null'
+seo-description: null
 uuid: 308b7fa1-9525-43f3-8c15-1076485b3f8c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 exl-id: fa583a06-e75c-41de-a977-7e459ab8bca9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '260'
 ht-degree: 95%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen. 
 
-Der Zugriff erfolgt über **Tools** -> **Allgemein** -> **Komponenten**. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
+Der Zugriff erfolgt über **Instrumente** -> **Allgemein** -> **Komponenten**. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -29,9 +29,9 @@ Der Zugriff erfolgt über **Tools** -> **Allgemein** -> **Komponenten**. In der 
 >
 >In der Komponentenkonsole werden alle im System vorhandenen Komponenten angezeigt. Im [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) werden Komponenten angezeigt, die Autoren zur Verfügung stehen, und alle Komponentengruppen verborgen, die mit einem Punkt beginnen (`.`).
 
-## Suche {#search-features}
+## Suchen {#search-features}
 
-Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffnen, um die Komponenten zu durchsuchen und/oder zu filtern: 
+Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffnen, um die Komponenten zu durchsuchen und/oder zu filtern:
 
 ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -66,7 +66,7 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
 
    >[!CAUTION]
    >
-   >Aufgrund der Art der Informationen, die für diese Ansicht erfasst werden, kann es eine Weile dauern, bis sie zusammengestellt/angezeigt wird. 
+   >Aufgrund der Art der Informationen, die für diese Ansicht erfasst werden, kann es eine Weile dauern, bis sie zusammengestellt/angezeigt wird.
 
 * **Dokumentation**
 

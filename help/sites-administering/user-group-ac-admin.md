@@ -53,7 +53,7 @@ In CRX verfügt eine Gruppe über die folgenden Eigenschaften:
 
 * Sie können die Zugriffsrechte für alle Gruppenmitglieder definieren.
 
-**Access** RightsCRX verwendet Zugriffsrechte, um den Zugriff auf bestimmte Bereiche des Repositorys zu steuern.
+**Zugriffsberechtigungen** CRX verwendet Zugriffsrechte, um den Zugriff auf bestimmte Bereiche des Repositorys zu steuern.
 
 Dies erfolgt über die Zuweisung von Berechtigungen, um den Zugriff auf eine Ressource (Knoten oder Pfad) im Repository zuzulassen oder abzulehnen. Da zahlreiche Berechtigungen zugewiesen werden können, müssen sie ausgewertet werden, um festzustellen, welche Kombination für die aktuelle Anfrage relevant ist.
 
@@ -118,7 +118,7 @@ Die Liste der Zugriffsrechte, die für das Objekt relevant sind, wird erstellt a
 
 Wenn CRX die Anfrage verarbeitet, vergleicht es die Zugriffsanfrage des Objekts mit der Liste der Zugriffssteuerung im Repository-Knoten:
 
-Wenn Linda also eine Aktualisierung des Knotens `/features` in der folgenden Repository-Struktur anfordert:
+Wenn Linda also eine Aktualisierung der `/features` Knoten in der folgenden Repository-Struktur:
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -151,7 +151,7 @@ Nachfolgend sehen Sie zwei Beispiele, in denen der Benutzer `aUser` Mitglied der
 
 Im obigen Fall:
 
-* `aUser` keine Schreibberechtigung für  `grandChildNode`.
+* `aUser` keine Schreibberechtigung für `grandChildNode`.
 
 ```xml
    + parentNode
@@ -166,7 +166,7 @@ Im obigen Fall:
 
 In diesem Fall:
 
-* `aUser` keine Schreibberechtigung für  `grandChildNode`.
+* `aUser` keine Schreibberechtigung für `grandChildNode`.
 
 * Der zweite ACE-Eintrag für den Benutzer `aUser` ist redundant.
 
@@ -234,11 +234,11 @@ Sie müssen sich beim jeweiligen Workspace anmelden und können dann wie folgt a
 
 * Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für jede neue Eigenschaft.
 
-**Gruppenmitgliedschaft** Zeigt alle Gruppen an, zu denen das Konto gehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
+**Gruppenmitgliedschaft** Dadurch werden alle Gruppen angezeigt, zu denen das Konto gehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
 Durch Klicken auf eine Gruppen-ID (falls verfügbar) wird die [Gruppenverwaltung](#group-administration) für diese Gruppe geöffnet.
 
-**** DarstellerMit der Funktion &quot;Identität annehmen&quot;kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
+**Darsteller** Mit der Funktion &quot;Identität annehmen&quot;kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
 Dies bedeutet, dass über ein Benutzerkonto andere Konten (Benutzer oder Gruppe) festgelegt werden können, die mit ihrem Konto arbeiten können. Anders ausgedrückt: Wenn Benutzer B stellvertretend für Benutzer A agieren darf, kann Benutzer B Aktionen unter Verwendung aller Kontodetails des Benutzers A (einschließlich ID, Name und Zugriffsrechte) ausführen.
 
@@ -347,17 +347,17 @@ Sie müssen sich beim jeweiligen Workspace anmelden und können dann wie folgt a
 * Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für jede neue Eigenschaft.
 * **Mitglieder** Sie können Benutzer oder andere Gruppen als Mitglieder dieser Gruppe hinzufügen.
 
-**Gruppenmitgliedschaft** Dies zeigt alle Gruppen an, zu denen das aktuelle Gruppenkonto gehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
+**Gruppenmitgliedschaft** Dadurch werden alle Gruppen angezeigt, zu denen das aktuelle Gruppenkonto gehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
 Wenn Sie auf eine Gruppen-ID klicken, wird das Dialogfeld für diese Gruppe geöffnet.
 
-**** MitgliederListet alle Konten (Benutzer und/oder Gruppen) auf, die Mitglieder der aktuellen Gruppe sind.
+**Mitglieder** Listet alle Konten (Benutzer und/oder Gruppen) auf, die Mitglieder der aktuellen Gruppe sind.
 
 Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
 >[!NOTE]
 >
->Wenn die Eigentümer-, Bearbeiter- oder Betrachterrolle einem Benutzer in einem beliebigen Asset-Ordner zugewiesen wird, wird eine neue Gruppe erstellt. Der Gruppenname hat das Format `mac-default-<foldername>` für jeden Ordner, für den die Rollen definiert sind.
+>Wenn die Eigentümer-, Bearbeiter- oder Betrachterrolle einem Benutzer in einem beliebigen Asset-Ordner zugewiesen wird, wird eine neue Gruppe erstellt. Der Gruppenname entspricht dem Format `mac-default-<foldername>` für jeden Ordner, für den die Rollen definiert sind.
 
 ### Erstellen von Gruppenkonten {#creating-a-group-account}
 
@@ -425,7 +425,7 @@ Alternativ können Sie ein vorhandenes Mitglied über das Papierkorb-Symbol lös
 
 ## Verwalten von Zugriffsrechten {#access-right-management}
 
-Im Tab **Zugriffssteuerung** der CRXDE Lite können Sie die Zugriffskontrollrichtlinien definieren und die zugehörigen Berechtigungen zuweisen.
+Mit dem **Zugriffssteuerung** -Registerkarte der CRXDE Lite können Sie die Zugriffssteuerungsrichtlinien definieren und die entsprechenden Berechtigungen zuweisen.
 
 Wählen Sie beispielsweise auf der Registerkarte „Zugangssteuerung“ im unteren rechten Bereich für die Option **Aktueller Pfad** die gewünschte Ressource im linken Bereich aus:
 

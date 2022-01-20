@@ -1,8 +1,8 @@
 ---
 title: Suchen
-seo-title: Suchen
+seo-title: Search
 description: Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Möglichkeiten zur Inhaltssuche.
-seo-description: Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Möglichkeiten zur Inhaltssuche.
+seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 uuid: b50c8144-1993-441d-8303-fcb6b0f24376
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 exl-id: 9c1d8969-6aa6-41b9-a797-3e6431475fc6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '470'
 ht-degree: 87%
 
 ---
 
-# Suche{#search-features}
+# Suchen{#search-features}
 
 Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Möglichkeiten zur Inhaltssuche.
 
@@ -44,15 +44,12 @@ Um den Suchbereich aufzurufen, klicken Sie in der jeweiligen Konsole im linken B
 >
 >* [Platzhalter](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches) 
 >* [Boolesche Operatoren](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
-
-   >
-   >
-* [Reguläre Ausdrücke](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
+>
+>* [Reguläre Ausdrücke](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Feld-Gruppierung](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping) 
 >* [Verstärkung](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term) 
 
 >
-
 
 
 Starten Sie die Suche, indem Sie unten im Bereich auf **Suchen** klicken. Klicken Sie auf **Zurücksetzen**, um die Suchkriterien zu löschen.
@@ -80,7 +77,7 @@ In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Erset
    * Angabe, ob Groß -und Kleinschreibung beachtet werden sollen
    * Angabe, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Wortteile von der Suche erfasst)
 
-   Wenn Sie auf **Vorschau** klicken, wird angezeigt, wo der Begriff gefunden wurde. Sie können bestimmte Instanzen auswählen/löschen, die ersetzt werden sollen:
+   Klicken **Vorschau** listet auf, wo der Begriff gefunden wurde. Sie können bestimmte Instanzen auswählen/löschen, die ersetzt werden sollen:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -93,7 +90,7 @@ Der Standardbereich für das Servlet „Suchen und Ersetzen“ deckt die folgend
 * `jcr:text`
 * `text`
 
-Der Umfang kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter `http://localhost:4502/system/console/configMgr`). Wählen Sie `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` aus und konfigurieren Sie den Umfang nach Bedarf.
+Der Umfang kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter `http://localhost:4502/system/console/configMgr`). Auswählen `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` und konfigurieren Sie den Umfang nach Bedarf.
 
 >[!NOTE]
 >

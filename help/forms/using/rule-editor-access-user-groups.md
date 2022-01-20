@@ -1,43 +1,43 @@
 ---
 title: Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren
-seo-title: Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren
+seo-title: Grant rule editor access to select user groups
 description: Gewähren Sie ausgewählten Benutzergruppen eingeschränkten Zugriff auf den Regel-Editor.
-seo-description: Gewähren Sie ausgewählten Benutzergruppen eingeschränkten Zugriff auf den Regel-Editor.
+seo-description: Grant restricted access to rule editor to select user groups.
 uuid: 3d982858-b2b5-4370-a9d7-5a95842a7897
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 5e2960f2-b172-48a7-bba3-4561a5f9c7bc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 74%
+source-wordcount: '316'
+ht-degree: 76%
 
 ---
 
 # Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren {#grant-rule-editor-access-to-select-user-groups}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Möglicherweise sind unterschiedliche Typen von Benutzern mit unterschiedlichen Fähigkeiten vorhanden, die mit adaptiven Formularen arbeiten. Während professionelle Benutzer möglicherweise über die nötigen Kenntnisse zum Arbeiten mit Skripten und komplexen Regeln verfügen, genügt es für Benutzer, die nur über Grundkenntnisse verfügen, mit dem Layout und einfachen Eigenschaften adaptiver Formulare zu arbeiten.
 
-AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Rolle oder Funktion der Benutzer einzuschränken. In den Einstellungen für den Adaptive Forms Configuration Service können Sie festlegen, welche [Benutzergruppen](/help/sites-administering/security.md) den Regel-Editor anzeigen und auf ihn zugreifen können.
+AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Rolle oder Funktion der Benutzer einzuschränken. In den Einstellungen für den Konfigurations-Service für adaptive Formular können Sie festlegen, welche [Benutzergruppen](/help/sites-administering/security.md) den Regeleditor anzeigen und auf ihn zugreifen können.
 
-## Benutzergruppen für Zugriff auf Regel-Editor angeben {#specify-user-groups-that-can-access-rule-editor}
+## Angeben von Benutzergruppen für Zugriff auf Regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Melden Sie sich bei AEM Forms als Administrator an.
-1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![Hammer](assets/hammer.png) > Vorgänge > Web-Konsole. Die Web-Konsole wird in einem neuen Fenster geöffnet.
+1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Tools ![Hammer](assets/hammer.png) > Vorgänge > Web-Konsole. Die Webkonsole wird in einem neuen Fenster geöffnet.
 
    ![1](assets/1.png)
 
-1. Suchen Sie im Web Console-Fenster **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]** und klicken Sie darauf. **[!UICONTROL Das Dialogfeld Webkanal-]** Konfiguration für adaptives Formular und interaktive Kommunikation wird angezeigt. Behalten Sie die Werte bei und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Suchen Sie im Fenster der Web-Konsole nach und klicken Sie auf **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]**. **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]** angezeigt. Behalten Sie die Werte bei und klicken Sie auf **[!UICONTROL Speichern]**.
 
    Die Datei „/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config“ im CRX-Repository wird erstellt.
 
-1. Melden Sie sich bei CRXDE als Administrator an. Öffnen Sie die Datei „/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config“ zum Bearbeiten.
-1. Geben Sie mithilfe der folgenden Eigenschaft den Namen einer Gruppe an, die auf den Regel-Editor zugreifen kann (z. B. RuleEditorsUserGroup) und klicken Sie auf **Alle speichern**.
+1. Melden Sie sich als Administrator bei CRXDE an. Öffnen Sie die Datei „/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config“ zum Bearbeiten.
+1. Geben Sie mithilfe folgender Eigenschaft den Namen einer Gruppe an, die auf den Regeleditor zugreifen kann (z. B. RuleEditorsUserGroup), und klicken Sie auf **Alle speichern**.
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
@@ -47,14 +47,14 @@ AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Roll
 
    ![create-user](assets/create-user.png)
 
-   Wenn nun ein Benutzer, der nicht zur angegebenen Benutzergruppe (hier RuleEditorsUserGroup) gehört, auf ein Feld tippt, ist das Symbol &quot;Regel bearbeiten&quot;( ![edit-rules1](assets/edit-rules1.png)) nicht für ihn in der Komponenten-Symbolleiste verfügbar:
+   Wenn nun ein Benutzer, der nicht zur angegebenen Benutzergruppe (hier RuleEditorsUserGroup) gehört, auf ein Feld tippt, wird das Symbol Regel bearbeiten ( ![edit-rules1](assets/edit-rules1.png)) ist für sie nicht in der Komponenten-Symbolleiste verfügbar:
 
-   ![componentstoolbarwith](assets/componentstoolbarwithre.png)
+   ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 
-   Komponentensymbolleiste für Benutzer mit Zugriff auf Regel-Editor
+   Komponentensymbolleiste für Benutzer mit Zugriff auf Regeleditor
 
-   ![componentstoolbarwithouver](assets/componentstoolbarwithoutre.png)
+   ![componentstoolbarwithoutre](assets/componentstoolbarwithoutre.png)
 
-   Komponentensymbolleiste für Benutzer ohne Zugriff auf Regel-Editor
+   Komponentensymbolleiste für Benutzer ohne Zugriff auf Regeleditor:
 
    Anweisungen zum Hinzufügen von Benutzern zu Gruppen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).

@@ -1,8 +1,8 @@
 ---
 title: Verwenden von HSM, um Dokumente digital zu signieren oder zertifizieren
-seo-title: Verwenden von HSM zum Zertifizieren von eSigned-Dokumenten
+seo-title: Use HSM to certify eSigned documents
 description: Verwenden von HSM oder eToken-Geräten zum Zertifizieren von eSigned-Dokumenten
-seo-description: Verwenden von HSM oder eToken-Geräten zum Zertifizieren von eSigned-Dokumenten
+seo-description: Use HSM or etoken devices to certify eSigned documents
 uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
 contentOwner: vishgupt
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 exl-id: ab5233dd-182e-4871-997f-b2142901bce7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '996'
 ht-degree: 86%
 
 ---
@@ -30,7 +30,7 @@ Adobe Experience Manager Forms kann auf einem HSM oder eToken gespeicherte Berec
 
 ## Bevor Sie die HSM oder eToken-Geräte mit AEM Forms konfigurieren {#configurehsmetoken}
 
-* Installieren Sie das [Add-On-Paket für AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+* Installieren Sie das [Add-On-Paket für AEM Forms](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
 * Installieren und konfigurieren Sie HSM- oder eToken-Clientsoftware auf demselben Computer wie AEM Die Clientsoftware ist für die Kommunikation mit dem HSM und eToken-Geräten erforderlich.
 * (Nur Microsoft Windows) Legen Sie die Umgebungsvariable JAVA_HOME_32 so fest, dass sie auf den Ordner verweist, in dem die 32-Bit-Version von Java 8 Development Kit (JDK 8) installiert ist. Der Standardpfad des Ordners ist C:\Programme(x86)\Java\jdk&lt;Version>
 * (Nur AEM Forms auf OSGi) Installieren Sie das Stammzertifikat im Trust Store. Angabe ist erforderlich zur Verifizierung des signierten PDF.
@@ -45,11 +45,11 @@ Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie die fol
 
 1. Beenden Sie die Autoreninstanz Ihrer AEM Forms-Umgebung.
 
-1. Öffnen Sie die Datei [AEM_root]\crx-quickstart\conf\sling.properties zur Bearbeitung.
+1. Öffnen Sie die [AEM_root]\crx-quickstart\conf\sling.properties Datei zur Bearbeitung.
 
    >[!NOTE]
    >
-   >Wenn Sie die Datei [AEM_root]\crx-quickstart\bin\start.bat zum Starten der AEM-Instanz verwendet haben, öffnen Sie die Datei [AEM_root]\crx-quickstart\sling.properties zur Bearbeitung.
+   >Wenn Sie die [AEM_root]\crx-quickstart\bin\start.bat , um die AEM-Instanz zu starten, und öffnen Sie dann die [AEM_root]\crx-quickstart\sling.properties zur Bearbeitung.
 
 1. Fügen Sie der Datei „sling.properties“ die folgenden Eigenschaften hinzu oder ersetzen Sie sie:
 
@@ -75,13 +75,13 @@ Führen Sie die folgenden Schritte aus, um Zertifikate einzurichten:
 
 1. Klicken Sie auf der Seite **Edit User Settings** (Benutzereinstellungen bearbeiten) auf **KeyStore verwalten**.
 
-1. Erweitern Sie im Dialogfeld &quot;KeyStore-Verwaltung&quot;die Option **Privaten Schlüssel aus Key Store-Datei hinzufügen** und geben Sie einen Alias an. Der Aliasname wird verwendet, um den Reader Extensions-Vorgang durchzuführen.
-1. Um die Zertifikatdatei hochzuladen, klicken Sie auf **Wählen Sie Key Store File** und laden Sie eine `.pfx`-Datei hoch.
-1. Fügen Sie die Werte für **Key Store Password** (KeyStore-Kennwort),**Private Key Password** (Kennwort für privaten Schlüssel)  und **Private Key Alias**(Alias des privaten Schlüssels) für das Zertifikat in den jeweiligen Feldern hinzu. Klicken Sie auf **Übermitteln**.
+1. Erweitern Sie im Dialogfeld &quot;KeyStore-Verwaltung&quot;den **Privaten Schlüssel aus Key Store-Datei hinzufügen** und geben Sie einen Alias an. Der Aliasname wird verwendet, um den Reader Extensions-Vorgang durchzuführen.
+1. Um die Zertifikatdatei hochzuladen, klicken Sie auf **Key Store File auswählen** und laden Sie eine `.pfx` -Datei.
+1. Fügen Sie die Werte für **Key Store Password** (KeyStore-Kennwort),**Private Key Password** (Kennwort für privaten Schlüssel)  und **Private Key Alias**(Alias des privaten Schlüssels) für das Zertifikat in den jeweiligen Feldern hinzu. Klicken Sie auf **Senden**.
 
    >[!NOTE]
    >
-   >Um den P **Private Key Alias** eines Zertifikats zu bestimmen, können Sie den Java-Keytool-Befehl verwenden: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+   >So bestimmen Sie das P **Alias des privaten Schlüssels** eines Zertifikats können Sie den Java-Keytool-Befehl verwenden: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
    >[!NOTE]
    >
@@ -99,7 +99,7 @@ Führen Sie die folgenden Schritte aus, um Zertifikate einzurichten:
 
 Der Aliasname enthält alle Parameter, die ein HSM oder eToken erfordert. Befolgen Sie die nachfolgenden Anweisungen, um einen Aliasnamen für jede HSM- oder eToken-Berechtigung zu erstellen, die eSign oder Digital Signatures verwendet:
 
-1. Öffnen Sie die AEM-Konsole. Die Standard-URL der AEM Console lautet https://&lt;Host>:&lt;Port>/system/console/configMgr
+1. Öffnen Sie die AEM-Konsole. Die Standard-URL AEM Konsole lautet https://&lt;host>:&lt;port>/system/console/configMgr
 1. Öffnen Sie den **HSM Credentials Configuration Service** und geben Sie Werte in die folgenden Felder ein:
 
    * **Berechtigungsalias**: Geben Sie eine Zeichenfolge ein, die verwendet wird, um den Aliasnamen zu identifizieren. Dieser Wert wird als Eigenschaft für einige Digital Signatures-Vorgänge wie etwa das Signieren eines Signaturfelds verwendet.

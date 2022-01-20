@@ -1,8 +1,8 @@
 ---
 title: Öffnen und Ausfüllen veröffentlichter Formulare
-seo-title: Öffnen und Ausfüllen veröffentlichter Formulare
+seo-title: Accessing and filling published forms
 description: Forms Portal bietet Webentwicklern Komponenten zum Erstellen und Anpassen von Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites.
-seo-description: Forms Portal bietet Webentwicklern Komponenten zum Erstellen und Anpassen von Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites.
+seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: dd03a9de-b412-4d7b-befe-981cb3aa8d0a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 0452062d-cf85-4009-a0a5-a1e891192ea8
 exl-id: d68806f8-8ed8-4aff-9724-bafbe2b1f18e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 92%
+source-wordcount: '939'
+ht-degree: 91%
 
 ---
 
-# Öffnen und Ausfüllen veröffentlichter Formulare  {#accessing-and-filling-published-forms}
+# Öffnen und Ausfüllen veröffentlichter Formulare {#accessing-and-filling-published-forms}
 
 In einer formularzentrierten Bereitstellung sind die Entwicklung von Formularen und die Entwicklung von Portalen zwei verschiedene Aktivitäten. Während Formularentwickler Formulare in einem Repository erstellen und speichern, erstellen Webentwickler eine Webanwendung, um Formulare aufzulisten und gesendete Formulare zu verarbeiten. Formulare werden dann in die Webstufe kopiert, da keine Kommunikation zwischen dem Formular-Repository und der Webanwendung besteht.
 
@@ -32,8 +32,8 @@ Navigieren Sie zur veröffentlichten Forms Portal-Seite. Weitere Informationen z
 
 Die Komponente „Search &amp; Lister“ von Forms Portal zeigt die in der Veröffentlichungsinstanz des AEM-Servers verfügbaren Formulare. Diese Liste enthält alle Formulare oder die im Filter angegebenen Formulare zum Zeitpunkt der Bearbeitung der Forms Portal-Seite. Eine Forms Portal-Seite ist ähnlich der in der folgenden Abbildung gezeigten:
 
-![Beispiel für eine Forms Portal-Seite  ](assets/forms-portal-page.png)
-**Abbildung:** *Eine Beispiel-Forms Portal-Seite*
+![Beispiel einer Forms Portal-Seite ](assets/forms-portal-page.png)
+**Abbildung:** *Beispiel einer Forms Portal-Seite*
 
 ### Search &amp; Lister {#search-and-lister}
 
@@ -54,23 +54,23 @@ Sie können mithilfe der folgenden Optionen auf der Forms Portal-Seite nach Form
 
 Mit der Volltextsuche können Sie anhand der angegebenen Schlüsselwörter Formulare suchen und auflisten.
 
-![Dialogfeld für erweiterte Suche ](assets/search-panel.png)
+![Dialogfeld für erweiterte Suche](assets/search-panel.png)
 **Abbildung:** *Dialogfeld für erweiterte Suche*
 
 Die erweiterte Suche ermöglicht das Suchen nach Formularen anhand der festgelegten Formulareigenschaften. Sie bietet genauere Ergebnisse als die Volltextsuche. Die erweiterte Suche umfasst die Suche auf Basis von Tags, Eigenschaften (wie Autor, Beschreibung und Titel), Änderungsdatum und Volltext.
 
 Lister zeigt Formulare anhand der Suchparameter. Jedes Formular im Suchergebnis wird mit einem Symbol angezeigt, das mit einem Hyperlink zum dazugehörigen Formular versehen ist. Klicken Sie auf das Symbol, um das Formular zu öffnen und damit zu arbeiten.
 
-### Ausfüllen eines Formulars  {#filling-a-form}
+### Ausfüllen eines Formulars {#filling-a-form}
 
-![Beispiel für ein adaptives ](assets/filling_a_form.png)
-**Formular Abbildung:** *Beispiel für ein adaptives Formular*
+![Beispiel für ein adaptives Formular](assets/filling_a_form.png)
+**Abbildung:** *Beispiel für ein adaptives Formular*
 
 Der Zugriff auf die Formulare ist über den Link möglich, der in der Komponente „Search &amp; Lister“ der Seite neben dem Formular zur Verfügung steht.
 
 Jedes Formular enthält Hilfeinformationen, mit denen Benutzer das Formular ausfüllen können.
 
-#### Formular und übermittelte Formulare  {#drafts-and-submission}
+#### Formular und übermittelte Formulare {#drafts-and-submission}
 
 Benutzer haben die Möglichkeit, den Entwurf eines Formulars zu speichern, indem sie auf die Schaltfläche „Speichern“ klicken. Dadurch können sie über einen längeren Zeitraum an einem Formular arbeiten, bevor sie es übermitteln.
 
@@ -82,8 +82,8 @@ Nach dem Ausfüllen des Formulars versenden Benutzer die Formulare, indem sie au
 >
 >Gesendete Formulare werden auf der Registerkarte &quot;Gesendete Forms&quot;nur angezeigt, wenn die Sendeaktion für das adaptive Formular als Forms Portal-Sendeaktion konfiguriert ist. Weitere Informationen zu Sendeaktionen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md).
 
-![Komponente &quot;Drafts &amp; Submissions ](assets/draft-submission.png)
-**Abbildung:** *Komponente &quot;Drafts &amp; Submissions&quot;*
+![Komponente &quot;Drafts and Submissions&quot;](assets/draft-submission.png)
+**Abbildung:** *Komponente &quot;Drafts and Submissions&quot;*
 
 ## Erstellen ein neues Formular mit den gesendeten Formulardaten {#start-a-new-form-using-submitted-form-data}
 

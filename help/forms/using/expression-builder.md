@@ -1,19 +1,19 @@
 ---
 title: Remote-Funktionen im Ausdrucksgenerator
-seo-title: Ausdrucksgenerator
+seo-title: Expression Builder
 description: Mit dem Ausdrucksgenerator können Sie in Correspondence Management Ausdrücke und Remote-Funktionen erstellen.
-seo-description: Mit dem Ausdrucksgenerator können Sie in Correspondence Management Ausdrücke und Remote-Funktionen erstellen.
+seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 uuid: 998f7ec9-2645-431e-b483-c68d24ef49cb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: cd565ec5-f453-4692-83f8-e1fb06dc28c7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 83%
+source-wordcount: '783'
+ht-degree: 82%
 
 ---
 
@@ -41,7 +41,7 @@ Im Folgenden werden einige Beispiele für häufige JSP-EL-Verwendungszwecke geze
 
 Weitere Informationen finden Sie in der [JSP-EL-Spezifikation](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). Der clientseitige Expression Manager unterstützt nicht alle Variablen und Funktionen in der JSP-EL-Spezifikation. Dabei gilt:
 
-* Sammlungsindizes und Zuordnungsschlüssel (unter Verwendung der []-Notation) werden in Variablennamen für Ausdrücke, die clientseitig ausgewertet werden, nicht unterstützt.
+* Sammlungsindizes und Zuordnungsschlüssel (mithilfe der [] -Notation) werden in Variablennamen für Ausdrücke, die clientseitig ausgewertet werden, nicht unterstützt.
 * Die folgenden Parameter sind als Parametertypen oder Rückgabetypen für in Ausdrücken verwendete Funktionen unterstützt:
 
    * java.lang.String
@@ -156,7 +156,7 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Nachfolgend finden Sie Beispiel-Archive:
 
-* **GoodFunctions.jar.** zip ist die JAR-Datei mit dem Bundle, das eine Definition für eine Beispiel-Remote-Funktion enthält. Laden Sie die GoodFunctions.jar.zip-Datei herunter und dekomprimieren Sie diese, um die JAR-Datei zu erhalten.
+* **GoodFunctions.jar.zip** ist die JAR-Datei mit dem Bundle, das eine Definition für Remote-Beispielfunktionen enthält. Laden Sie die GoodFunctions.jar.zip-Datei herunter und dekomprimieren Sie diese, um die JAR-Datei zu erhalten.
 * **GoodFunctions.zip** ist das Paket des Quellcodes zum Definieren einer benutzerdefinierten Remote-Funktion und eines Bundles dafür.
 
 GoodFunctions.jar.zip

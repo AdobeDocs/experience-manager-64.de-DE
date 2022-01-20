@@ -1,8 +1,8 @@
 ---
 title: Entwicklermodus
-seo-title: Entwicklermodus
+seo-title: Developer Mode
 description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
-seo-description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite.
+seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
 uuid: 2ff0d85e-fe49-4506-b6d6-74cc060d7ea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 86%
+source-wordcount: '687'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ Beim Bearbeiten von Seiten in AEM sind diverse [Modi](/help/sites-authoring/auth
 Diese Informationen unterstützen Entwickler bei Folgendem:
 
 * Identifizieren, welche Komponenten Seiten beinhalten.
-* Debuggen, was an welcher Stelle und zu welchem Zeitpunkt geschieht und wie Probleme gelöst werden können. 
+* Debuggen Sie, was an welcher Stelle und zu welchem Zeitpunkt geschieht und wie Probleme gelöst werden können.
 * Testen, ob sich die Anwendung wie erwartet verhält.
 
 >[!CAUTION]
@@ -51,8 +51,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >* auf einer Veröffentlichungsinstanz
 
 >
->
-Der Modus sollte nach der Verwendung wieder deaktiviert werden.
+>Der Modus sollte nach der Verwendung wieder deaktiviert werden.
 
 >[!NOTE]
 >
@@ -62,7 +61,7 @@ Der Modus sollte nach der Verwendung wieder deaktiviert werden.
 >* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 
-## Öffnen des Entwicklermodus  {#opening-developer-mode}
+## Öffnen des Entwicklermodus {#opening-developer-mode}
 
 Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den Bereich zu öffnen, wählen Sie in der Symbolleiste des Seiten-Editors aus der Modusauswahl die Option **Entwickler** aus:
 
@@ -70,18 +69,18 @@ Der Entwicklermodus ist als Seitenbereich im Seiten-Editor implementiert. Um den
 
 Der Bereich ist in zwei Registerkarten unterteilt:
 
-* **[Komponenten](/help/sites-developing/developer-mode.md#components)**  - Zeigt eine Komponentenstruktur an, ähnlich der  [Inhaltsstruktur ](/help/sites-authoring/author-environment-tools.md#content-tree) für Autoren
+* **[Komponenten](/help/sites-developing/developer-mode.md#components)** – Hier sehen Sie die Komponentenstruktur, die der [Inhaltsstruktur](/help/sites-authoring/author-environment-tools.md#content-tree) für Autoren ähnelt.
 
 * **[Fehler](/help/sites-developing/developer-mode.md#errors)** – Wenn ein Problem auftritt, werden hier die Details für die jeweilige Komponente angezeigt.
 
-### Komponenten  {#components}
+### Komponenten {#components}
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
 Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 
 * Zeigt die Kette der Komponenten und Vorlagen, die auf dieser Seite gerendert wurden (SLY, JSP usw.). Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
-* Zeigt die serverseitige Verarbeitungszeit, die zum Rendern der Komponente benötigt wird.
+* Zeigt die Server-seitige Verarbeitungszeit, die zum Rendern der Komponente benötigt wird.
 * Sie können die Struktur erweitern und spezifische Komponenten innerhalb der Struktur auswählen. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
 
    * Repository-Pfad
@@ -113,13 +112,13 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 * Wenn Sie einen Komponenteneintrag erweitern, wird u. U. außerdem Folgendes angezeigt:
 
    * Die Hierarchie innerhalb der ausgewählten Komponente.
-   * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt. 
+   * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt.
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Diese dienen jedoch nur als Referenz. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da Ihre Änderungen möglicherweise verloren gehen. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` vorgenommen werden, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese dienen jedoch nur als Referenz. **darf nicht** Alles bearbeiten unter `/libs`, da alle Änderungen, die Sie vornehmen, verloren gehen können. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps`, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 

@@ -22,7 +22,7 @@ Dieser Prozess räumt Kunden mindestens einen Veröffentlichungszyklus ein, um i
 
 ## Veraltete Funktionen {#deprecated-features}
 
-In der folgenden Tabelle sind die Funktionen aufgeführt, die in AEM 6.4 als veraltet gekennzeichnet wurden. Im Allgemeinen werden Funktionen, die in einer zukünftigen Version entfernt werden sollen, zuerst als veraltet gekennzeichnet und es wird eine Alternative bereitgestellt.
+In der folgenden Tabelle sind die Funktionen aufgeführt, die in AEM 6.4 als veraltet gekennzeichnet wurden. Im Allgemeinen werden Funktionen, die in einer zukünftigen Version entfernt werden sollen, zunächst als veraltet gekennzeichnet und es wird eine Alternative bereitgestellt.
 
 Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Implementierung nutzen, und Pläne zur Änderung ihrer Implementierung zu erstellen, um die bereitgestellte Alternative nutzen zu können.
 
@@ -36,7 +36,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 | Portal Director | Das Portal Director ist eine Reihe von Funktionen, die das Hosting AEM Inhalte über Portlet auf Drittanbieter-Servern ermöglichen. Adobe plant keine weiteren Verbesserungen an der Funktion Portal Director unter dem unten aufgeführten Speicherort. In AEM 6.4 ist das Portal Director enthalten, und Kunden, die ein Upgrade von früheren Versionen durchführen, können es weiterhin unverändert verwenden. Beachten Sie, dass Portal Direct auch weiterhin vollständig unterstützt wird, wenn es nicht mehr unterstützt wird. <ul><li>/libs/portal/director</li></ul> | Adobe plant keine Ersatzlieferung. |
 | Portlet-Komponente | Portlet-Komponenten unter /foundation/components/portlet ermöglichen das Hosting von JSR-Portlets in AEM als Komponenten. Adobe plant keine weiteren Verbesserungen an der Portlet-Komponenten-Funktion. AEM 6.4 ist die Portlet-Komponente enthalten, und Kunden, die von früheren Versionen aktualisieren, können sie weiterhin wie bisher verwenden. Beachten Sie, dass die Portlet-Komponente weiterhin vollständig unterstützt wird, obwohl sie nicht mehr unterstützt wird. | Adobe plant keine Ersatzlieferung. |
 | Formulare | Die Unterstützung für den Adobe Central Migration Bridge-Service wird eingestellt, da Adobe Central nicht länger unterstützt wird. | Kein Ersatz vorhanden. |
-| Formulare | Veraltete Verwendung von JSONObject in Query and OperationOptions. Die folgenden APIs werden nicht mehr unterstützt: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Verwenden der `IValueMap`-API |
+| Formulare | Veraltete Verwendung von JSONObject in Query and OperationOptions. Die folgenden APIs werden nicht mehr unterstützt: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | Verwenden Sie die `IValueMap` API |
 | Formulare | Veralteter Central Migration Bridge-Dienst. | Es wird kein Ersatz angeboten. |
 | Assets | Die Asset-Abladung wird ab AEM 6.4 nicht mehr unterstützt. |  |
 | Entwickler | Client-Bibliothek laden/unterstreichen. Adobe plant nicht, die Lodash-/Unterstrich-Client-Bibliothek, die im Rahmen der Distribution (Quickstart) bereitgestellt wird, weiter zu pflegen und zu aktualisieren. | Adobe empfiehlt Kunden, die für ihren Code weiterhin einen Bindestrich/Unterstrich benötigen, diesen zur Projektcodebasis hinzuzufügen. |
@@ -146,13 +146,12 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 ## Entfernte Funktionen {#removed-features}
 
-In der folgenden Tabelle sind die Funktionen aufgeführt, die aus AEM 6.4 entfernt wurden. Frühere Versionen hatten diese Funktionen als
-veraltet.
+In der folgenden Tabelle sind die Funktionen aufgeführt, die aus AEM 6.4 entfernt wurden. Frühere Versionen hatten diese Funktionen als veraltet gekennzeichnet.
 
 | Bereich | Funktion | Ersatz |
 |---|---|---|
-| Integration mit [!DNL Experience Cloud] | Sie können Ihre Assets mit [!DNL Experience Cloud] mithilfe einer Konfiguration über [!DNL Adobe I/O] synchronisieren. [!DNL Adobe Experience Cloud] wurde früher  [!DNL Adobe Marketing Cloud]genannt. | Wenden Sie sich bei Fragen an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=General#support). |
-| Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Das [ActivityMap-Plugin, das von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) bereitgestellt wird, sollte jetzt verwendet werden. |
+| Integration mit [!DNL Experience Cloud] | Sie können Ihre Assets mit synchronisieren. [!DNL Experience Cloud] mithilfe einer Konfiguration über [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] zuvor [!DNL Adobe Marketing Cloud]. | Bei Fragen wenden Sie sich an [Adobe-Kundensupport](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support). |
+| Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Die [Von Adobe Analytics bereitgestelltes ActivityMap-Plugin](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) verwendet werden. |
 | Components-Forms | Captcha-Formularkomponente (foundation/components/form/captcha) | Verwenden Sie stattdessen reCAPTCHA von Google. |
 | Komponenten | Bildschirmpräsentation (foundation/components/slideshow) | Kein Ersatz |
 | Komponenten | Flash (foundation/components/flash) | Kein Ersatz |
@@ -179,4 +178,4 @@ Die nachstehende Tabelle enthält eine Liste der Änderungen für die künftige 
 | Bereich | Funktion | Mitteilung |
 |---|---|---|
 | Browser-Unterstützung | Microsoft Internet Explorer | AEM 6.4 ist die letzte Version, die Microsoft Internet Explorer 11 unterstützt. |
-| Foundation | UI-Framework | Die Coral UI 2-Komponenten von Adobe werden 2019 nicht mehr unterstützt. AEM 6.4 basiert vollständig auf Coral UI 3 (eingeführt mit AEM 6.2). Adobe empfiehlt seinen Kunden und Partnern, die benutzerdefinierte Benutzeroberflächen mit Coral 2 erstellt haben, diese in Coral 3 umzuwandeln. Adobe bietet ein Tool zum Konvertieren von Coral 2-Dialogfeldern in Coral 3 - [mehr dazu.](/help/sites-developing/modernization-tools.md) |
+| Foundation | UI-Framework | Die Coral UI 2-Komponenten von Adobe werden 2019 nicht mehr unterstützt. AEM 6.4 basiert vollständig auf Coral UI 3 (eingeführt mit AEM 6.2). Adobe empfiehlt seinen Kunden und Partnern, die benutzerdefinierte Benutzeroberflächen mit Coral 2 erstellt haben, diese in Coral 3 umzuwandeln. Adobe bietet ein Tool zum Konvertieren von Coral 2-Dialogfeldern in Coral 3 - [Mehr dazu.](/help/sites-developing/modernization-tools.md) |

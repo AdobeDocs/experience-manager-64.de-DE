@@ -1,8 +1,8 @@
 ---
 title: Versionshinweise zu Livefyre Feature Pack 2.0.6
-seo-title: Versionshinweise zu Livefyre Feature Pack 2.0.6
+seo-title: Livefyre Feature Pack 2.0.6 Release Notes
 description: Versionshinweise zu Livefyre Feature Pack 2.0.6
-seo-description: Versionshinweise zu Livefyre Feature Pack 2.0.6
+seo-description: Livefyre Feature Pack 2.0.6 Release Notes
 uuid: 81ee0527-72c3-4530-80f1-c802ddbe62d0
 products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
@@ -10,7 +10,7 @@ discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '647'
 ht-degree: 5%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 5%
 | Kompatibilität (*) | AEM 6.4 SP1, 6.4, 6.3 GA und 6.2 SP1 |
 | Beschreibung | Mit diesem Package können Sie die branchenführenden Kuratierungsfunktionen von Livefyre in Ihre AEM integrieren, sodass Sie wertvolle benutzergenerierte Inhalte (UGC) aus sozialen Netzwerken in Minutenschnelle auf Ihrer Site veröffentlichen können. |
 
-## Was ist in Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack} enthalten?
+## Was ist in Livefyre Feature Pack 2.0.6 enthalten? {#what-is-included-in-livefyre-feature-pack}
 
 Dieses Paket integriert die branchenführenden Kuratierungsfunktionen von Livefyre in Ihre AEM-Instanz, sodass Sie wertvolle benutzergenerierte Inhalte (UGC) in Minutenschnelle von sozialen Netzwerken auf Ihrer Site veröffentlichen können. Dieses Paket umfasst drei verschiedene Komponenten:
 
@@ -62,7 +62,7 @@ Aufgrund von Aktualisierungen, die sich auf die Aggregation von Inhalten aus Nic
 #### Neue Funktion oder Verbesserung {#new-feature-or-improvement}
 
 * Es wurde die Möglichkeit hinzugefügt, benutzergenerierte Inhalte zu durchsuchen, bevor in Livefyre soziale Konten für Rechteanforderungen eingerichtet werden. Sie müssen soziale Konten einrichten, um Berechtigungen anzufordern, oder die Rechteanforderung überschreiben, wenn Sie Eigentümer des Inhalts sind.
-* Instagram und Twitter [Der Workflow für UGC-Rechteanforderungen](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) wurde aktualisiert, um die neuesten APIs zu erfüllen.
+* Instagram und Twitter [Workflow für UGC-Rechteanforderungen](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) wurde aktualisiert, um den neuesten APIs zu entsprechen.
 * Der Berechtigungsstatus und die entsprechenden Aktionen werden jetzt auf dem Bildschirm mit den Rechteanforderungen angezeigt.
 
 #### Fehlerbehebungen {#bug-fixes}

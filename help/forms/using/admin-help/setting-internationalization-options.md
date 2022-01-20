@@ -1,8 +1,8 @@
 ---
 title: Internationalisierungsoptionen festlegen
-seo-title: Internationalisierungsoptionen festlegen
+seo-title: Setting internationalization options
 description: Erfahren Sie, wie Sie das Gebietsschema angeben, das verwendet wird, um Formulare zu rendern, und wie Sie den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird.
-seo-description: Erfahren Sie, wie Sie das Gebietsschema angeben, das verwendet wird, um Formulare zu rendern, und wie Sie den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird.
+seo-description: Learn how to specify the locale used to render forms and how to specify the character set used to encode the output stream.
 uuid: bb77f5f3-634f-4285-9b10-c4dd40085e69
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
 exl-id: 1fb51e4a-e0e8-4a58-8877-98337fe29fac
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '222'
 ht-degree: 100%
 
 ---
@@ -27,7 +27,7 @@ Sie können das Gebietsschema angeben, dass beim Wiedergeben eines PDF-Formulars
 1. Wählen Sie unter „Internationalisierung“ in der Liste „Sprachen“ das Gebietsschema, das zum Wiedergeben eines Formulars verwendet wird. Der Standardwert ist „Deutsch (Deutschland)“.
 1. Klicken Sie auf Speichern.
 
-## Den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird  {#specify-the-character-set-used-to-encode-the-output-stream}
+## Den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird {#specify-the-character-set-used-to-encode-the-output-stream}
 
 1. Wählen Sie unter „Internationalisierung“ in der Liste „Zeichensatz“ einen Zeichensatz aus. Diese Einstellung hängt von der verwendeten API ab, entweder „renderHTMLForm“ oder „renderPDFForm“. Um einen anderen Zeichensatz als die aufgelisteten anzugeben, wählen Sie „Benutzerdefiniert“ aus und geben Sie in dem angezeigten Feld einen kodierten Wert ein.
 

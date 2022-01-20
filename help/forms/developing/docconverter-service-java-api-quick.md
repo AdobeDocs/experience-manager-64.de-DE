@@ -2,7 +2,7 @@
 title: DocConverter Service Java API QuickStart(SOAP)
 seo-title: DocConverter Service Java API QuickStart(SOAP)
 description: Verwenden Sie die Java-API des DocConverter-Dienstes, um die PDF/A-Konformität zu ermitteln und ein Dokument in ein PDF/A-Dokument zu konvertieren.
-seo-description: Verwenden Sie die Java-API des DocConverter-Dienstes, um die PDF/A-Konformität zu ermitteln und ein Dokument in ein PDF/A-Dokument zu konvertieren.
+seo-description: Use the DocConverter Service Java API to determine PDF/A compliance and to convert a document to a PDF/A document.
 uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
 contentOwner: admin
 content-type: reference
@@ -13,12 +13,12 @@ role: Developer
 exl-id: 0a418016-f61a-485d-a87a-a3d48651e0d7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
 
-# DocConverter Service Java API Schnellstart (SOAP) {#docconverter-service-java-api-quickstart-soap}
+# DocConverter Service Java API-Schnellstart (SOAP) {#docconverter-service-java-api-quickstart-soap}
 
 Java API Quick Start (SOAP) ist für den DocConverter-Dienst verfügbar.
 
@@ -30,11 +30,11 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 >[!NOTE]
 >
->Schnellstarts, die unter Programmieren mit AEM Forms zu finden sind, basieren auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellstarts, die unter Programmieren mit AEM Forms zu finden sind, basieren auf dem Forms-Server, der auf JBoss Application Server und dem Windows-Betriebssystem Microsoft bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Schnellstart (SOAP-Modus): Konvertieren eines Dokuments in ein PDF/A-Dokument mithilfe der Java-API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein PDF/A-Dokument konvertiert, das als PDF-Datei mit dem Namen *LoanArchive.pdf* gespeichert wird. (Siehe [Konvertieren von Dokumenten in PDF/A-Dokumente](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
+Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* zu einem PDF/A-Dokument hinzu, das als PDF-Datei mit dem Namen *LoanArchive.pdf*. (Siehe [Konvertieren von Dokumenten in PDF/A-Dokumente](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).
 
 ```as3
  /* 
@@ -137,7 +137,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in
 
 ## Schnellstart (SOAP-Modus): Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API {#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api}
 
-Das folgende Java-Codebeispiel bestimmt, ob das PDF-Eingabedokument PDF/A-kompatibel ist. Das PDF-Eingabedokument, das an den DocConverter-Dienst übergeben wird, heißt *LoanArchive.pdf*. Überprüfungsergebnisse werden in eine XML-Datei mit dem Namen *ValidationResults.xml* geschrieben. (Siehe [Programmatische Bestimmung der PDF/A-Kompatibilität](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+Im folgenden Java-Codebeispiel wird bestimmt, ob das PDF-Eingabedokument PDF/A-kompatibel ist. Das Eingabedokument, das an den DocConverter-Dienst übergeben wird, erhält den PDF-Namen *LoanArchive.pdf*. Die Überprüfungsergebnisse werden in eine XML-Datei mit dem Namen *ValidationResults.xml*. (Siehe [Programmatische Bestimmung der PDF/A-Kompatibilität](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).
 
 ```as3
  /* 

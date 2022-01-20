@@ -1,8 +1,8 @@
 ---
 title: Entwickeln von Sandbox-Anwendungen
-seo-title: Entwickeln von Sandbox-Anwendungen
+seo-title: Develop Sandbox Application
 description: Entwickeln von Anwendungen mithilfe von Foundation-Skripten
-seo-description: Entwickeln von Anwendungen mithilfe von Foundation-Skripten
+seo-description: Develop application using foundation scripts
 uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,14 +12,14 @@ discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: cd036e4a-0884-4ba0-83e9-7013583bbbae
 source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '565'
 ht-degree: 8%
 
 ---
 
 # Entwickeln von Sandbox-Anwendungen {#develop-sandbox-application}
 
-In diesem Abschnitt kann die Anwendung jetzt, da die Vorlage im Abschnitt [Initial Application](initial-app.md) eingerichtet wurde und die ersten Seiten im Abschnitt [Initialinhalt](initial-content.md) erstellt wurden, mithilfe von Foundation-Skripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionieren.
+In diesem Abschnitt wurde die Vorlage jetzt im [Erstanwendung](initial-app.md) und den in der [anfänglicher Inhalt](initial-content.md) kann die Anwendung mithilfe von Foundation-Skripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionieren.
 
 ## Verwenden von Foundation-Seitenskripten {#using-foundation-page-scripts}
 
@@ -27,7 +27,7 @@ Das Standardskript, das erstellt wird, wenn die Komponente, die die PayPage-Vorl
 
 ### Superressourcentyp {#super-resource-type}
 
-Der erste Schritt besteht darin, dem Knoten `/apps/an-scf-sandbox/components/playpage` eine Eigenschaft vom Typ resource super hinzuzufügen, damit er die Skripte und Eigenschaften des Supertyps übernimmt.
+Der erste Schritt besteht darin, der Eigenschaft `/apps/an-scf-sandbox/components/playpage` -Knoten, damit er die Skripte und Eigenschaften des Supertyps übernimmt.
 
 Verwenden von CRXDE Lite:
 
@@ -37,14 +37,14 @@ Verwenden von CRXDE Lite:
 * Typ: `String`
 * Wert: `foundation/components/page`
 
-1. Klicken Sie auf das grüne **[!UICONTROL [+] Hinzufügen]**
+1. Klicken Sie auf Grün **[!UICONTROL [+] Hinzufügen]**
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Kopf- und Textskripte {#head-and-body-scripts}
 
-1. Navigieren Sie im Explorer-Bereich **CRXDE Lite** zu `/apps/an-scf-sandbox/components/playpage` und doppelklicken Sie auf die Datei `playpage.jsp` , um sie im Bearbeitungsfenster zu öffnen.
+1. In **CRXDE Lite** Explorer-Bereich, navigieren Sie zu `/apps/an-scf-sandbox/components/playpage` und doppelklicken Sie auf die Datei `playpage.jsp` , um es im Bearbeitungsfenster zu öffnen.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
 
@@ -65,7 +65,7 @@ Verwenden von CRXDE Lite:
 
 1. Da Sie Skript-Tags zum Öffnen/Schließen kennen, ersetzen Sie &quot; // TODO ...&quot;. mit Skripten für die Kopf- und Körperteile von &lt;html>.
 
-   Mit dem Supertyp `foundation/components/page` wird jedes Skript, das nicht in diesem Ordner definiert ist, in ein Skript im Ordner `/apps/foundation/components/page` aufgelöst (sofern vorhanden), andernfalls in ein Skript im Ordner `/libs/foundation/components/page`.
+   Mit einem Supertyp von `foundation/components/page`, wird jedes Skript, das nicht in diesem Ordner definiert ist, in ein Skript in `/apps/foundation/components/page` Ordner (sofern vorhanden), andernfalls ein Skript in `/libs/foundation/components/page` Ordner.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp-1}
 
@@ -85,18 +85,18 @@ Verwenden von CRXDE Lite:
 </html>
 ```
 
-1. Das Foundation-Skript `head.jsp` muss nicht überlagert werden, aber das Foundation-Skript `body.jsp` ist leer.
+1. Das Foundation-Skript `head.jsp` müssen nicht überlagert werden, aber das Foundation-Skript `body.jsp` leer ist.
 
-   Überlagern Sie zum Einrichten für die Bearbeitung `body.jsp` mit einem lokalen Skript und fügen Sie ein Absatzsystem (parsys) in den Text ein:
+   So richten Sie für das Authoring eine Überlagerung ein `body.jsp` mit einem lokalen Skript und ein Absatzsystem (parsys) im Text einschließen:
 
-   1. Navigieren Sie zu `/apps/an-scf-sandbox/components`
-   1. Wählen Sie den Knoten `playpage`aus.
-   1. Klicken Sie mit der rechten Maustaste und wählen Sie `Create > Create File...` aus.
+   1. navigieren zu `/apps/an-scf-sandbox/components`
+   1. wählen Sie die `playpage`Knoten
+   1. Rechtsklick und Auswahl `Create > Create File...`
 
       * Name: **body.jsp**
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 
-   Öffnen Sie `/apps/an-scf-sandbox/components/playpage/body.jsp` und fügen Sie Folgendes ein:
+   Öffnen `/apps/an-scf-sandbox/components/playpage/body.jsp` und fügen Sie Folgendes ein:
 
    ```xml
    <%--
@@ -120,7 +120,7 @@ Verwenden von CRXDE Lite:
 
 * Standard-Benutzeroberfläche: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
-Sie sollten nicht nur die Überschrift **Community Play** sehen, sondern auch die Benutzeroberfläche zum Bearbeiten von Seiteninhalten.
+Sie sollten nicht nur die Überschrift sehen **Community Play**, aber auch die Benutzeroberfläche zum Bearbeiten des Seiteninhalts.
 
 Das seitliche Bedienfeld &quot;Assets/Komponente&quot;wird angezeigt, wenn das seitliche Bedienfeld geöffnet ist und das Fenster breit genug ist, um sowohl den Seiteninhalt als auch den Seiteninhalt anzuzeigen.
 
@@ -138,7 +138,7 @@ Um Communities-Komponenten für das Authoring zu aktivieren, befolgen Sie die fo
 
 * [Auf Communities-Komponenten zugreifen](basics.md#accessing-communities-components)
 
-Beginnen Sie für diese Sandbox mit den folgenden **Communities**-Komponenten (aktivieren Sie durch Aktivieren des Kontrollkästchens):
+Beginnen Sie für diese Sandbox mit diesen **Communities** Komponenten (aktivieren, indem Sie das Kontrollkästchen aktivieren):
 
 * Kommentare
 * Forum
@@ -147,7 +147,7 @@ Beginnen Sie für diese Sandbox mit den folgenden **Communities**-Komponenten (a
 * Bewertungszusammenfassung (Anzeige)
 * Abstimmung
 
-Wählen Sie außerdem die Komponenten **[!UICONTROL Allgemein]** aus, z. B.
+Wählen Sie außerdem **[!UICONTROL Allgemein]** Komponenten wie
 
 * Bild
 * Tabelle
@@ -156,7 +156,7 @@ Wählen Sie außerdem die Komponenten **[!UICONTROL Allgemein]** aus, z. B.
 
 >[!NOTE]
 >
->Die für die Seitenpar aktivierten Komponenten werden im Repository als Wert der Eigenschaft `components` der\
+>Die für die Seitenpar aktivierten Komponenten werden im Repository als Wert der Variablen `components` -Eigenschaft der\
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
 
 ## Landingpage {#landing-page}
@@ -168,14 +168,14 @@ In diesem einfachen Beispiel wird die Stammseite statisch so eingestellt, dass s
 Ändern Sie die Browser-URL in die Stammseite: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * Symbol Seiteninformationen auswählen
-* Wählen Sie **[!UICONTROL Eigenschaften öffnen]**
+* Auswählen **[!UICONTROL Eigenschaften öffnen]**
 * Auf der Registerkarte ERWEITERT
 
-   * Navigieren Sie für den Umleitungs-Eintrag zu **[!UICONTROL Websites > SCF Sandbox Site > SCF Sandbox]**
+   * Navigieren Sie zum Eintrag Umleiten zu **[!UICONTROL Websites > SCF-Sandbox-Site > SCF-Sandbox]**
    * Klicken Sie auf **[!UICONTROL OK]**
 
 * Klicken Sie auf **[!UICONTROL OK]**
 
 Sobald die Site veröffentlicht wurde, wird das Browsen zur Stammseite in einer Veröffentlichungsinstanz zur englischen Seite weitergeleitet.
 
-Der letzte Schritt vor dem Abspielen mit den SCF-Communities-Komponenten besteht darin, einen Client-Bibliotheksordner (clientlibs) hinzuzufügen .... **[](add-clientlibs.md)**
+Der letzte Schritt vor dem Abspielen mit den SCF-Communities-Komponenten besteht darin, einen Client-Bibliotheksordner (clientlibs) hinzuzufügen .... **[imetrisch](add-clientlibs.md)**

@@ -1,8 +1,8 @@
 ---
 title: AEM Forms für OSGi-Gruppen und -Berechtigungen
-seo-title: AEM Forms für OSGi-Gruppen und -Berechtigungen
+seo-title: AEM Forms on OSGi Groups and Privileges
 description: Weisen Sie den Gruppen Benutzer zu, um AEM Forms auf OSGi zu verwalten
-seo-description: Weisen Sie den Gruppen Benutzer zu, um AEM Forms auf OSGi zu verwalten
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '254'
 ht-degree: 99%
 
 ---
@@ -88,7 +88,7 @@ Sobald Sie [AEM Forms Add-On-Paket](/help/forms/using/installing-configuring-aem
    <td>
     <ul> 
      <li>Erstellen einer Posteingangs-Anwendung</li> 
-     <li>Erstellen eines Workflow-Modells</li> 
+     <li>Erstellen Sie ein Workflow-Modell</li> 
     </ul> </td> 
   </tr>
   <tr>

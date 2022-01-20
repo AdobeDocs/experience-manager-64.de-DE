@@ -1,8 +1,8 @@
 ---
 title: Erstellen einer benutzerdefinierten Symbolleistenaktion
-seo-title: Erstellen einer benutzerdefinierten Symbolleistenaktion
+seo-title: Creating a custom toolbar action
 description: Formularentwickler können benutzerdefinierte Symbolleistenaktionen für adaptive Formulare in AEM Forms erstellen. Mit benutzerdefinierten Aktionen können Formularautoren den Endbenutzern mehr Workflows und Optionen bereitstellen.
-seo-description: Formularentwickler können benutzerdefinierte Symbolleistenaktionen für adaptive Formulare in AEM Forms erstellen. Mit benutzerdefinierten Aktionen können Formularautoren den Endbenutzern mehr Workflows und Optionen bereitstellen.
+seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
 uuid: 6761f389-1baa-4a59-a6e0-0f86f70fc692
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: b80a2bfe-6f57-4229-a9ee-1ec87f3c3306
 exl-id: bb0abe28-843a-4195-afd5-5ee7f0a279be
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 86%
+source-wordcount: '496'
+ht-degree: 85%
 
 ---
 
-# Erstellen einer benutzerdefinierten Symbolleistenaktion  {#creating-a-custom-toolbar-action}
+# Erstellen einer benutzerdefinierten Symbolleistenaktion {#creating-a-custom-toolbar-action}
 
 ## Voraussetzungen {#prerequisite}
 
@@ -34,22 +34,22 @@ Neben den standardmäßig bereitgestellten Aktionen können Sie auch benutzerdef
 
 Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenaktion erstellen Sie mit den folgenden Schritten eine Schaltfläche, über die Endbenutzer alle adaptiven Formularfelder überprüfen können, bevor Sie ein ausgefülltes Formular senden.
 
-1. Alle von adaptiven Formularen unterstützten Standardaktionen sind im Ordner `/libs/fd/af/components/actions` vorhanden. Kopieren Sie in CRXDE den Knoten `fileattachmentlisting` von `/libs/fd/af/components/actions/fileattachmentlisting` in `/apps/customaction`.
+1. Alle von adaptiven Formularen unterstützten Standardaktionen sind in `/libs/fd/af/components/actions` Ordner. Kopieren Sie in CRXDE die `fileattachmentlisting` Knoten von `/libs/fd/af/components/actions/fileattachmentlisting` nach `/apps/customaction`.
 
-1. Benennen Sie nach dem Kopieren des Knotens in den Ordner `apps/customaction` den Knotennamen in `reviewbeforesubmit` um. Ändern Sie außerdem die Eigenschaften `jcr:title` und `jcr:description` des Knotens.
+1. Nach dem Kopieren des Knotens in `apps/customaction` Ordner, benennen Sie den Knotennamen in `reviewbeforesubmit`. Ändern Sie außerdem die `jcr:title` und `jcr:description` Eigenschaften des Knotens.
 
    Die Eigenschaft `jcr:title` enthält den Namen der Aktion, die Symbolleisten-Dialogfeld angezeigt wird. Die Eigenschaft `jcr:description` enthält weitere Informationen, die angezeigt werden, wenn ein Benutzer den Mauszeiger über der Aktion bewegt.
 
    ![Hierarchie der Knoten zur Anpassung der Symbolleiste](assets/action3.png)
 
-1. Wählen Sie den Knoten `cq:template` im Knoten `reviewbeforesubmit` aus. Stellen Sie sicher, dass der Wert der Eigenschaft `guideNodeClass` `guideButton` ist, und ändern Sie die Eigenschaft `jcr:title` entsprechend.
-1. Ändern Sie die Eigenschaft type im Knoten `cq:Template` . Für das aktuelle Beispiel ändern Sie die Typeigenschaft in „button“.
+1. Auswählen `cq:template` Knoten in `reviewbeforesubmit` Knoten. Stellen Sie sicher, dass der Wert von `guideNodeClass` Eigenschaft ist `guideButton` und ändern `jcr:title` -Eigenschaft.
+1. Ändern Sie die Eigenschaft type in der `cq:Template` Knoten. Für das aktuelle Beispiel ändern Sie die Typeigenschaft in „button“.
 
    Der Typwert wird als CSS-Klasse in der generierten HTML für die Komponente hinzugefügt. Benutzer können diese CSS-Klasse verwenden, um ihre Aktionen zu formatieren. Die Standardstile für mobile und Desktopgeräte werden für die Typwerte „button“, „submit“, „reset“ und „save“ bereitgestellt.
 
 1. Wählen Sie die benutzerdefinierte Aktion aus dem Dialogfeld zur Symbolleistenbearbeitung des adaptiven Formulars. Eine Überprüfungsschaltfläche wird in der Symbolleiste für den Bereich angezeigt.
 
-   ![Benutzerdefinierte Aktion ist in der ](assets/custom_action_available_in_toolbar.png) ![Symbolleiste verfügbarAnzeigen der benutzerdefinierten Symbolleistenaktion](assets/action7.png)
+   ![Benutzerdefinierte Aktion ist in der Symbolleiste verfügbar](assets/custom_action_available_in_toolbar.png) ![Anzeigen der benutzerdefinierten Symbolleistenaktion](assets/action7.png)
 
 1. Um die Überprüfungsschaltfläche mit einer Funktion zu versehen, fügen Sie JavaScript- und CSS-Code und serverseitigen Code in der Datei init.jsp hinzu, die sich im Knoten `reviewbeforesubmit` befindet.
 

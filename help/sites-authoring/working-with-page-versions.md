@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Seitenversionen
-seo-title: Arbeiten mit Seitenversionen
+seo-title: Working with Page Versions
 description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
-seo-description: Sie können verschiedene Versionen einer Seite erstellen, vergleichen und wiederherstellen.
+seo-description: Create, compare, and restore versions of a page
 uuid: b0328431-c2cf-48f4-b358-261238338241
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
 exl-id: 2df7c08f-db17-4666-ba39-e81cc2e656d7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1075'
 ht-degree: 96%
 
 ---
@@ -25,7 +25,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
 
-## Erstellen einer neuen Version    {#creating-a-new-version}
+## Erstellen einer neuen Version   {#creating-a-new-version}
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
@@ -61,7 +61,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 1. Bestätigen Sie die neue Version, indem Sie auf **Erstellen** klicken.
 
-   Die Informationen in der Timeline werden entsprechend der neuen Version aktualisiert.
+   Die Informationen in der Zeitleiste werden entsprechend der neuen Version aktualisiert.
 
 ## Wiederherstellen einer früheren Seitenversion {#reverting-to-a-page-version}
 
@@ -82,7 +82,6 @@ Nachdem eine Version erstellt wurde, können Sie diese Version bei Bedarf wieder
 >
 
 
-
 So stellen Sie eine frühere Version wieder her:
 
 1. Navigieren Sie zu der Seite, für die Sie eine frühere Version wiederherstellen möchten.
@@ -94,7 +93,7 @@ So stellen Sie eine frühere Version wieder her:
 
 1. Wählen Sie **Auf diese Version zurück**. Die ausgewählte Version wird wiederhergestellt und die Informationen in der Zeitleiste werden aktualisiert.
 
-## Vorschau einer Version    {#previewing-a-version}
+## Vorschau einer Version   {#previewing-a-version}
 
 Sie können eine Vorschau einer bestimmten Version anzeigen:
 
@@ -126,7 +125,7 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 
 1. Wählen Sie **Mit akt. Version vergleichen** aus. Die Seite [Differenz](/help/sites-authoring/page-diff.md) wird geöffnet. Sie enthält alle vorhandenen Unterschiede.
 
-## Timewarp  {#timewarp}
+## Timewarp {#timewarp}
 
 Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 

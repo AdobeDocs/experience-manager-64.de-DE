@@ -1,19 +1,19 @@
 ---
 title: Konfigurieren der Synchronisierung von Live Copies
-seo-title: Konfigurieren der Synchronisierung von Live Copies
+seo-title: Configuring Live Copy Synchronization
 description: Erfahren Sie, wie Sie die Live Copy-Synchronisierung konfigurieren.
-seo-description: Erfahren Sie, wie Sie die Live Copy-Synchronisierung konfigurieren.
+seo-description: Learn about configuring Live Copy Synchronization.
 uuid: a14fab89-fd1c-4fec-a9e0-9f6511f764a6
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
-feature: Multi-Site-Manager
+feature: Multi Site Manager
 exl-id: 42b92993-abde-4ae4-8f0d-44166a3ea22e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2695'
 ht-degree: 89%
 
 ---
@@ -31,7 +31,7 @@ In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfig
 
 >[!CAUTION]
 >
->Das Aktualisieren oder Ändern einer vordefinierten (installierten) Rollout-Konfiguration wird **nicht** empfohlen. Wenn eine benutzerdefinierte Live-Aktion erforderlich ist, sollte sie in einer benutzerdefinierten Rollout-Konfiguration hinzugefügt werden.
+>Die Aktualisierung oder Änderung einer vordefinierten (installierten) Rollout-Konfiguration **not** empfohlen. Wenn eine benutzerdefinierte Live-Aktion erforderlich ist, sollte sie in einer benutzerdefinierten Rollout-Konfiguration hinzugefügt werden.
 
 ### Rollout-Auslöser {#rollout-triggers}
 
@@ -49,7 +49,7 @@ Jede Rollout-Konfiguration nutzt einen Rollout-Auslöser, der den Rollout auslö
 >
 >Die Verwendung des Auslösers Bei Modifizierung kann die Leistung beeinträchtigen. Weitere Informationen finden Sie in den [Best Practices für MSM](/help/sites-administering/msm-best-practices.md#onmodify).
 
-### Installierte Rollout-Konfigurationen  {#installed-rollout-configurations}
+### Installierte Rollout-Konfigurationen {#installed-rollout-configurations}
 
 In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit AEM installiert werden. Auslöser und Synchronisierungsaktionen jeder Rollout-Konfigurationen werden ebenfalls angegeben. Wenn die Aktionen der installierten Rollout-Konfigurationen Ihre Anforderungen nicht erfüllen, können Sie [eine neue Rollout-Konfiguration erstellen](#creating-a-rollout-configuration).
 
@@ -124,9 +124,9 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
  </tbody> 
 </table>
 
-### Installierte Synchronisierungsaktionen  {#installed-synchronization-actions}
+### Installierte Synchronisierungsaktionen {#installed-synchronization-actions}
 
-In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit AEM installiert werden. Wenn die installierten Aktionen nicht Ihren Anforderungen entsprechen, können Sie [eine neue Synchronisierungsaktion ](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) erstellen.
+In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit AEM installiert werden. Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie [Erstellen einer neuen Synchronisierungsaktion](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
 
 <table> 
  <tbody> 
@@ -152,10 +152,10 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr> 
   <tr> 
    <td>editProperties</td> 
-   <td><p>Bearbeitet die Eigenschaften der Live Copy. Die editMap-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der editMap-Eigenschaft muss das folgende Format verwenden:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>Die Elemente <code>current_value</code> und <code>new_value</code> sind reguläre Ausdrücke. <br /> </p> <p>Betrachten Sie beispielsweise den folgenden Wert für editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt:</p> 
+   <td><p>Bearbeitet die Eigenschaften der Live Copy. Die editMap-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der editMap-Eigenschaft muss das folgende Format verwenden:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>Die <code>current_value</code> und <code>new_value</code> -Elemente sind reguläre Ausdrücke. <br /> </p> <p>Betrachten Sie beispielsweise den folgenden Wert für editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt:</p> 
     <ul> 
-     <li>Die <code>sling:resourceType</code>-Eigenschaften, die entweder auf <code>contentpage</code> oder auf <code>homepage</code> festgelegt sind, werden auf <code>mobilecontentpage.</code></li> 
-     <li>Die <code>cq:template</code>-Eigenschaften, die auf <code>contentpage</code> festgelegt sind, sind auf <code>mobilecontentpage.</code></li> 
+     <li>Die <code>sling:resourceType</code> Eigenschaften, die entweder auf <code>contentpage</code> oder <code>homepage</code> auf <code>mobilecontentpage.</code></li> 
+     <li>Die <code>cq:template</code> Eigenschaften, die auf <code>contentpage</code> auf <code>mobilecontentpage.</code></li> 
     </ul> </td> 
    <td><p> </p> <p>editMap: (String) Identifiziert die Eigenschaft, den aktuellen Wert und den neuen Wert. Weitere Informationen finden Sie in der Beschreibung.<br /> </p> </td> 
   </tr> 
@@ -313,7 +313,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfiguri
 
 >[!NOTE]
 >
->Informationen zur Touch-optimierten Benutzeroberfläche finden Sie auch unter [Konfigurieren von MSM-Sperren für Seiteneigenschaften)](/help/sites-developing/extending-msm.md).
+>In der Touch-optimierten Benutzeroberfläche finden Sie auch [Konfigurieren von MSM-Sperren für Seiteneigenschaften)](/help/sites-developing/extending-msm.md).
 
 #### CQ MSM Content Update Action – Ausschlüsse {#cq-msm-content-update-action-exclusions}
 
@@ -349,7 +349,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für di
   </tr> 
   <tr> 
    <td><p>Verweisende Seiten aktualisieren</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td> 
-   <td>Nur für CQ MSM Page Move Action verfügbar. Wählen Sie diese Option (Web-Konsole) oder legen Sie diese boolesche Eigenschaft auf <code>true</code> (Repository-Konfiguration) fest, um alle Verweise zu aktualisieren, sodass die Originalseite verwendet wird, um stattdessen auf die LiveCopy-Seite zu verweisen.</td> 
+   <td>Nur für CQ MSM Page Move Action verfügbar. Wählen Sie diese Option (Web-Konsole) oder legen Sie diese boolesche Eigenschaft auf <code>true</code> (Repository-Konfiguration), um alle Verweise zu aktualisieren, sodass die Originalseite verwendet wird, um stattdessen auf die LiveCopy-Seite zu verweisen.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,7 +362,7 @@ Die folgende Liste der Orte, unter denen Sie die zu verwendenden Rollout-Konfigu
 
 * **[Eigenschaften der Live Copy-Seite](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** Wenn eine Live Copy-Seite so konfiguriert ist, dass sie mindestens eine Rollout-Konfiguration verwenden soll, nutzt MSM diese Rollout-Konfigurationen.
 * **[Eigenschaften der Blueprint-Seiten](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** Wenn eine Live Copy auf einem Blueprint basiert und die Live Copy-Seite nicht mit einer Rollout-Konfiguration konfiguriert ist, wird die Rollout-Konfiguration genutzt, die mit der Blueprint-Quellseite verknüpft ist.
-* **Eigenschaften der übergeordneten Live Copy-Seite:**  Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert sind, wird die Rollout-Konfiguration verwendet, die für die übergeordnete Seite der Live Copy-Seite gilt.
+* **Eigenschaften der übergeordneten Live Copy-Seite:** Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert sind, wird die Rollout-Konfiguration verwendet, die für die übergeordnete Seite der Live Copy-Seite gilt.
 * **[Systemstandard](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** Wenn die Rollout-Konfiguration der übergeordneten Seite der Live Copy nicht ermittelt werden kann, wird die standardmäßige Rollout-Konfiguration des Systems verwendet.
 
 Beispielsweise nutzt ein Blueprint die We.Retail-Referenzwebsite als Quellinhalt. Aus dem Blueprint wird eine Website erstellt. Jedes Element der folgenden Liste beschreibt ein anderes Szenario hinsichtlich der Nutzung von Rollout-Konfigurationen:

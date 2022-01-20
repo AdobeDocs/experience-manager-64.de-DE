@@ -1,8 +1,8 @@
 ---
 title: Nachverfolgen nicht zugestellter E-Mails
-seo-title: Nachverfolgen nicht zugestellter E-Mails
+seo-title: Tracking Bounced Emails
 description: Wenn Sie einen Newsletter an viele Benutzer senden, sind in der Liste im Allgemeinen einige ungültige E-Mail-Adressen enthalten. Newsletter, die an diese Adressen gesendet werden, können nicht zugestellt werden. AEM kann diese nicht zugestellten E-Mails verwalten und den Versand von Newslettern an diese Adressen einstellen, wenn die festgelegte Anzahl nicht erfolgreicher Zustellversuche überschritten wird.
-seo-description: Wenn Sie einen Newsletter an viele Benutzer senden, sind in der Liste im Allgemeinen einige ungültige E-Mail-Adressen enthalten. Newsletter, die an diese Adressen gesendet werden, können nicht zugestellt werden. AEM kann diese nicht zugestellten E-Mails verwalten und den Versand von Newslettern an diese Adressen einstellen, wenn die festgelegte Anzahl nicht erfolgreicher Zustellversuche überschritten wird.
+seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 exl-id: 3be35bb8-3485-42a6-8195-c3e95d097856
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '711'
 ht-degree: 90%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 90%
 >
 >Adobe plant nicht, das Tracking geöffneter/Bounce-E-Mails, die von AEM SMTP-Dienst gesendet werden, weiter zu verbessern.
 >
->Es wird empfohlen, [Adobe Campaign und seine AEM-Integration](/help/sites-administering/campaign.md) zu nutzen.
+>Die Empfehlung lautet: [Nutzung von Adobe Campaign und seiner AEM](/help/sites-administering/campaign.md).
 
 Wenn Sie einen Newsletter an viele Benutzer senden, sind in der Liste im Allgemeinen einige ungültige E-Mail-Adressen enthalten. Newsletter, die an diese Adressen gesendet werden, können nicht zugestellt werden. AEM kann diese nicht zugestellten E-Mails verwalten und den Versand von Newslettern an diese Adressen einstellen, wenn die festgelegte Anzahl nicht erfolgreicher Zustellversuche überschritten wird. Der Standardwert für fehlgeschlagene Zustellversuche beträgt 3, er kann jedoch angepasst werden.
 
 Wenn Sie AEM so einrichten möchten, dass nicht zugestellte E-Mails nachverfolgt werden, müssen Sie festlegen, dass AEM vorhandene Postfächer abfragt, an die E-Mails nicht zugestellt werden können (im Allgemeinen handelt es sich dabei um die E-Mail-Adresse, die Sie für den Versand des Newsletters angegeben haben). AEM fragt diesen Posteingang ab und importiert alle E-Mails in das in den Abrufeinstellungen festgelegte Verzeichnis. Dann wird ein Workflow gestartet, bei dem in den Benutzern nach den E-Mail-Adressen gesucht wird, an die keine Zustellung erfolgen konnte, und der Eigenschaftwert „bounceCounter“ des Benutzers entsprechend aktualisiert wird. Wenn der festgelegte Maximalwert für fehlgeschlagene Zustellversuche überschritten wird, wird der Benutzer aus der Newsletter-Liste gelöscht.
 
-## Konfigurieren des Feed Importers  {#configuring-the-feed-importer}
+## Konfigurieren des Feed Importers {#configuring-the-feed-importer}
 
 Mit dem Feed Importer können Sie wiederholt Inhalte aus externen Quellen in Ihr Repository importieren. Bei dieser Konfiguration des Feed Importers prüft AEM den Posteingang des Absenders auf nicht zugestellte E-Mails.
 
@@ -67,7 +67,7 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    `imap.flag.SEEN`:Wählen Sie „false“ für eine neue/nicht gelesene Nachricht und „true“ für bereits gelesene Nachrichten
 
-   Eine vollständige Liste der Flags finden Sie unter [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) .
+   Siehe [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) für die vollständige Liste der Flaggen.
 
    **IMAP-Beispiele:**
 
@@ -78,13 +78,13 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
 1. Speichern Sie die Konfiguration.
 
-## Konfigurieren der Newsletter-Dienstkomponente  {#configuring-the-newsletter-service-component}
+## Konfigurieren der Newsletter-Dienstkomponente {#configuring-the-newsletter-service-component}
 
 Nachdem Sie den Feed Importer konfiguriert haben, müssen Sie die Absenderadresse und den Zähler für nicht erfolgreiche Zustellversuche konfigurieren.
 
 So konfigurieren Sie den Newsletter-Dienst:
 
-1. Navigieren Sie in der OSGi-Konsole unter `<host>:<port>/system/console/configMgr` zu **MCM-Newsletter**.
+1. In der OSGi-Konsole unter `<host>:<port>/system/console/configMgr` und navigieren Sie zu **MCM-Newsletter**.
 
 1. Konfigurieren Sie den Dienst und speichern Sie anschließend die Änderungen.
 

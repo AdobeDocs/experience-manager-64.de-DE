@@ -1,8 +1,8 @@
 ---
 title: Anpassen von Verfolgungstabellen
-seo-title: Anpassen von Verfolgungstabellen
+seo-title: Customize tracking tables
 description: Gehen Sie wie folgt vor, um die Anzeige der Details von Benutzerprozessen in der Aufgabentabelle zu speichern, die auf der Registerkarte „Verfolgung“ in AEM Forms Workspace angezeigt wird.
-seo-description: Gehen Sie wie folgt vor, um die Anzeige der Details von Benutzerprozessen in der Aufgabentabelle zu speichern, die auf der Registerkarte „Verfolgung“ in AEM Forms Workspace angezeigt wird.
+seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 5f925f47-3123-4a27-aea1-0a1c1fba7bb6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 79%
+source-wordcount: '330'
+ht-degree: 78%
 
 ---
 
@@ -115,7 +115,7 @@ Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabenta
  </tbody> 
 </table>
 
-Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. Siehe [Einführung in das Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md), wie Sie semantische Änderungen mit dem Workspace-SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
+Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. Siehe [Einführung in das Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) Hier erfahren Sie, wie Sie semantische Änderungen mithilfe des Workspace-SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
 
 ## Ändern von Tabellenspalten und ihrer Reihenfolge {#changing-table-columns-and-their-order}
 
@@ -153,7 +153,7 @@ Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Ä
    </table>
    ```
 
-## Sortieren einer Verfolgungstabelle  {#sorting-a-tracking-table}
+## Sortieren einer Verfolgungstabelle {#sorting-a-tracking-table}
 
 So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenüberschrift:
 
@@ -167,7 +167,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
    }
    ```
 
-   Rufen Sie im -Handler die Funktion `onTaskTableHeaderClick` von `js/runtime/util/history.js` auf.
+   Rufen Sie im -Handler die `onTaskTableHeaderClick` Funktion von `js/runtime/util/history.js`.
 
    ```as3
    onTaskTableHeaderClick: function (event) {
@@ -175,7 +175,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
    }
    ```
 
-1. Zeigen Sie die `TaskTableHeaderClick`-Methode in `js/runtime/util/history.js` an.
+1. Stellen Sie die `TaskTableHeaderClick` -Methode in `js/runtime/util/history.js`.
 
    Die Methode sucht nach dem task-Attribut im Klick-Ereignis, sortiert die tasklist nach diesem Attribut und gibt die Aufgabentabelle mit der sortierten tasklist aus.
 

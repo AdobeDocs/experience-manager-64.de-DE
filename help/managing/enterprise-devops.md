@@ -1,8 +1,8 @@
 ---
 title: DevOp-Strategien für Unternehmen
-seo-title: DevOp-Strategien für Unternehmen
+seo-title: Enterprise DevOps
 description: Erfahren Sie mehr über die notwendigen Prozesse, Methoden und die Kommunikation, die zur Erleichterung von Entwicklung und Zusammenarbeit nötig sind.
-seo-description: Erfahren Sie mehr über die notwendigen Prozesse, Methoden und die Kommunikation, die zur Erleichterung von Entwicklung und Zusammenarbeit nötig sind.
+seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
 uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -12,7 +12,7 @@ discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
 exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '989'
 ht-degree: 98%
 
 ---
@@ -62,7 +62,7 @@ Je nach Größe Ihres Systems kann die Entwicklungsumgebung sowohl über Autoren
 
 ### Qualitätssicherung {#quality-assurance}
 
-Diese Umgebung wird vom Qualitätssicherungsteam verwendet, um [test](/help/sites-developing/test-plan.md) Ihr neues System umfassend zu testen. Design und Funktion. Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
+Diese Umgebung wird vom Qualitätssicherungsteam für eine umfassende [test](/help/sites-developing/test-plan.md) Ihr neues System; Design und Funktion. Sie sollte über eine Autoren- und eine Veröffentlichungsumgebung mit geeignetem Inhalt verfügen und sämtliche notwendigen Dienste zur Durchführung einer Reihe von Tests bereitstellen.
 
 ### Staging   {#staging}
 
@@ -72,7 +72,7 @@ Die Staging-Umgebung sollte ein Spiegelbild der Produktionsumgebung sein - Konfi
 * Sie kann für abschließende Tests (Design, Funktionalität und Schnittstellen) vor der Bereitstellung für die Produktionsumgebungen verwendet werden.
 * Obwohl es nicht immer möglich ist, die Staging-Umgebung völlig identisch mit der Produktionsumgebung zu gestalten, sollten die beiden so ähnlich wie möglich sein, um Leistungs- und Belastungstests zu ermöglichen.
 
-### Produktion - Autoren- und Veröffentlichungsumgebung    {#production-author-and-publish}
+### Produktion - Autoren- und Veröffentlichungsumgebung   {#production-author-and-publish}
 
 Die Produktionsumgebung besteht aus den für das tatsächliche [Verfassen und Veröffentlichen](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) der Implementierung notwendigen Umgebungen.
 
@@ -107,7 +107,7 @@ Die Veröffentlichungsumgebung befindet sich normalerweise innerhalb der demilit
 
 Die Veröffentlichungsumgebung erzeugt Ihren Inhalt dynamisch in Echtzeit und ermöglicht die Personalisierung des Inhalts für jeden einzelnen Benutzer.
 
-## Code-Verschiebung    {#code-movement}
+## Code-Verschiebung   {#code-movement}
 
 Der Code sollte immer von unten nach oben propagiert werden:
 

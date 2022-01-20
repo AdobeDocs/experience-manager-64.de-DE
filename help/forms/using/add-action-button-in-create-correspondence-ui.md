@@ -23,7 +23,7 @@ ht-degree: 53%
 
 Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen.
 
-Das Szenario in diesem Dokument erläutert, wie Sie eine Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;erstellen können, um einen Brief als Review-PDF freizugeben, das an eine E-Mail angehängt ist.
+In diesem Dokument wird erläutert, wie Sie eine Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;erstellen können, um einen Brief als Review-PDF an eine E-Mail anzuhängen.
 
 ### Voraussetzungen {#prerequisites}
 
@@ -42,10 +42,10 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
 ### Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche  {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. Gehen Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen `defaultApp` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner defaultApp (der sich im config -Ordner befindet). Mit den folgenden Schritten können Sie den Ordner erstellen:
+1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen `defaultApp` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner defaultApp (der sich im Konfigurationsordner befindet). Mit den folgenden Schritten können Sie den Ordner erstellen:
 
-   * Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL defaultApp]** im folgenden Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]** aus:
+   * Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL defaultApp]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**:
 
       /libs/fd/cm/config/defaultApp/
 
@@ -57,7 +57,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
       **[!UICONTROL Überlagerungsspeicherort:]** /apps/
 
-      **[!UICONTROL Knotentypen abgleichen:]** Überprüft
+      **[!UICONTROL Knotentypen abgleichen:]** Aktiviert
 
       ![Überlagerungsknoten](assets/2_defaultappoverlaynode.png)
 
@@ -68,7 +68,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
    * Wechseln Sie zu „/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml“
 
-   * Klicken Sie mit der rechten Maustaste auf die Datei acmExtensionsConfig.xml und wählen Sie **[!UICONTROL Copy]** aus.
+   * Klicken Sie mit der rechten Maustaste auf die Datei &quot;acmExtensionsConfig.xml&quot;und wählen Sie **[!UICONTROL Kopieren]**.
 
       ![Kopieren Sie acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
@@ -110,7 +110,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
    | label | Die Beschriftung der Aktionsschaltfläche |
    | tooltip | QuickInfo-Text der Schaltfläche, der angezeigt wird, wenn der Benutzer den Cursor auf der Schaltfläche bewegt. |
    | styleName | Name des benutzerdefinierten Stils, der auf die Aktionsschaltfläche angewendet wird. |
-   | permissionName | Die entsprechende Aktion wird nur angezeigt, wenn der Benutzer über die von permissionName angegebene Berechtigung verfügt. Wenn Sie permissionName als `forms-users` angeben, erhalten alle Benutzer Zugriff auf diese Option. |
+   | permissionName | Die entsprechende Aktion wird nur angezeigt, wenn der Benutzer über die von permissionName angegebene Berechtigung verfügt. Wenn Sie permissionName als `forms-users`, erhalten alle Benutzer Zugriff auf diese Option. |
    | actionHandler | Vollqualifizierter Name der ActionHandler-Klasse, die aufgerufen wird, wenn der Benutzer auf die Schaltfläche klickt. |
 
    Neben den oben genannten Parametern kann es weitere Konfigurationen geben, die mit einer customAction verknüpft sind. Diese zusätzlichen Konfigurationen werden dem Handler über das CustomAction -Objekt zur Verfügung gestellt.
@@ -127,7 +127,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
 Die Datei ACMExtensionsMessages.properties enthält Beschriftungen und QuickInfo-Meldungen verschiedener Felder in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;. Damit die benutzerdefinierten Aktionen/Schaltflächen funktionieren, müssen Sie eine Kopie dieser Datei in der /apps-Verzweigung erstellen.
 
-1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL locale]** im folgenden Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]** aus:
+1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL locale]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**:
 
    /libs/fd/cm/config/defaultApp/locale
 
@@ -137,7 +137,7 @@ Die Datei ACMExtensionsMessages.properties enthält Beschriftungen und QuickInfo
 
    **[!UICONTROL Überlagerungsspeicherort:]** /apps/
 
-   **[!UICONTROL Knotentypen abgleichen:]** Überprüft
+   **[!UICONTROL Knotentypen abgleichen:]** Aktiviert
 
 1. Klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
@@ -199,24 +199,24 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
 
    Mit den folgenden Schritten können Sie den Ordner erstellen:
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL js]** im folgenden Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]** aus:
+   1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL js]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**:
 
       `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **[!UICONTROL Pfad:]**  /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
+      **[!UICONTROL Pfad:]** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js
 
       **[!UICONTROL Überlagerungsspeicherort:]** /apps/
 
-      **[!UICONTROL Knotentypen abgleichen:]** Überprüft
+      **[!UICONTROL Knotentypen abgleichen:]** Aktiviert
 
    1. Klicken Sie auf **[!UICONTROL OK]**.
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Erstellen Sie im Ordner js eine Datei mit dem Namen ccrcustomization.js mit dem Code für die Aktionsbearbeitung der Schaltfläche, indem Sie die folgenden Schritte durchführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL js]** im folgenden Pfad und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]** aus:
+   1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL js]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]**:
 
       `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -327,9 +327,9 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
 Aktivieren Sie in diesem Szenario die folgenden Komponenten, die Teil der angehängten Datei components.zip sind:
 
 * DSC-Komponente jar (`DSCSample.jar`)
-* Brief zum Review-Prozess senden LCA (`SendLetterForReview.lca`)
+* Brief an LCA für Review-Prozess senden (`SendLetterForReview.lca`)
 
-Laden Sie die Datei `components.zip` herunter und dekomprimieren Sie sie, um `DSCSample.jar`- und `SendLetterForReview.lca`-Dateien abzurufen. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
+Laden Sie die `components.zip` abzurufende Datei `DSCSample.jar` und `SendLetterForReview.lca` Dateien. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
 
 [Datei laden](assets/components.zip)
 
@@ -341,10 +341,10 @@ Laden Sie die Datei `components.zip` herunter und dekomprimieren Sie sie, um `DS
 
 Der LCA-Vorgang wird auf dem LiveCycle-Server ausgeführt und erfordert die Serveradresse und die Anmeldeinformationen.
 
-1. Gehen Sie zu `https://[server]:[port]/system/console/configMgr` und melden Sie sich als Administrator an.
+1. Navigieren Sie zu `https://[server]:[port]/system/console/configMgr` und melden Sie sich als Administrator an.
 1. Suchen Sie nach Adobe LiveCycle Client SDK-Konfiguration und klicken Sie auf **[!UICONTROL Bearbeiten]** (Bearbeiten-Symbol). Das Konfigurationsfenster öffnet sich.
 
-1. Geben Sie die folgenden Details ein und klicken Sie auf **[!UICONTROL Save]**:
+1. Geben Sie die folgenden Details ein und klicken Sie auf **[!UICONTROL Speichern]**:
 
    * **[!UICONTROL Server-URL]**: URL des LC-Servers, dessen Dienst &quot;Send For Review&quot;vom Aktionsbearbeitungscode verwendet wird.
    * **[!UICONTROL Benutzername]**: Administratorbenutzername des LC-Servers
@@ -360,7 +360,7 @@ Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienstprozess aktiviert.
 >
 >Wenn Sie sehen möchten, wie dieser Vorgang funktioniert oder wenn Sie ähnliche Vorgänge selbst erstellen möchten, benötigen Sie Workbench.
 
-1. Melden Sie sich unter `https:/[lc server]/:[lc port]/adminui` als Administrator bei der LiveCycle-Server-Administration an.
+1. Melden Sie sich als Administrator bei der LiveCycle-Server-Administration an unter `https:/[lc server]/:[lc port]/adminui`.
 
 1. Navigieren Sie zu **[!UICONTROL Startseite > Dienste > Anwendungen und Dienste > Anwendungsverwaltung]**.
 
@@ -370,13 +370,13 @@ Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienstprozess aktiviert.
 
 1. Wählen Sie **[!UICONTROL Importieren]**.
 
-1. Klicken Sie auf **[!UICONTROL Wählen Sie Datei]** und wählen Sie **[!UICONTROL SendLetterForReview.lca]** aus.
+1. Klicken **[!UICONTROL Datei auswählen]** und wählen Sie **[!UICONTROL SendLetterForReview.lca]**.
 
    ![Wählen Sie die SendLetterForReview.lca-Datei](assets/14_sendletterforreview_lca.png)
 
 1. Klicken Sie auf **[!UICONTROL Vorschau]**.  
 
-1. Wählen Sie **[!UICONTROL Bereitstellen von Assets zur Laufzeit, wenn der Import abgeschlossen ist]**.
+1. Auswählen **[!UICONTROL Bereitstellen von Assets zur Laufzeit nach Abschluss des Imports]**.
 
 1. Wählen Sie **[!UICONTROL Importieren]**.
 
@@ -384,10 +384,10 @@ Der erforderliche LiveCycle-Prozess, der den E-Mail-Dienstprozess aktiviert.
 
 Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server zugreifen möchten.
 
-1. Melden Sie sich als Administrator bei `https:/[host]/:[port]/system/console/configMgr` an.
+1. Melden Sie sich als Administrator an `https:/[host]/:[port]/system/console/configMgr`.
 
-1. Suchen und klicken Sie auf **[!UICONTROL Adobe LiveCycle Client SDK Configuration]**. Das Bedienfeld Adobe LiveCycle Client SDK-Konfiguration wird angezeigt.
-1. Klicken Sie in der Liste Dienstname auf das Symbol + und fügen Sie einen serviceName **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]** hinzu.
+1. Suchen und klicken Sie auf **[!UICONTROL Adobe LiveCycle Client SDK-Konfiguration]**. Das Bedienfeld Adobe LiveCycle Client SDK-Konfiguration wird angezeigt.
+1. Klicken Sie in der Liste &quot;Dienstname&quot;auf das Symbol + und fügen Sie einen serviceName hinzu. **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -395,50 +395,50 @@ Erwähnen Sie im AEM-Server der LiveCycle-Dienste, dass Sie auf den AEM-Server z
 
 In diesem Szenario müssen Sie den E-Mail-Dienst im LifeCycle-Server konfigurieren, damit Correspondence Management eine E-Mail senden kann.
 
-1. Melden Sie sich unter `https:/[lc server]:[lc port]/adminui` mit Administratorberechtigungen bei der LiveCycle-Server-Administration an.
+1. Melden Sie sich mit Administratorberechtigungen bei der LiveCycle-Server-Administration an unter `https:/[lc server]:[lc port]/adminui`.
 
 1. Navigieren Sie zu **[!UICONTROL Startseite > Dienste > Anwendungen und Dienste > Dienstverwaltung]**.
 
 1. Suchen Sie nach der Option **[!UICONTROL EmailService]** und klicken Sie darauf.
 
-1. Konfigurieren Sie in **[!UICONTROL SMTP Host]** den E-Mail-Dienst.
+1. In **[!UICONTROL SMTP Host]**, konfigurieren Sie den E-Mail-Dienst.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 #### DSC-Dienst konfigurieren {#configure-the-dsc-service}
 
-Um die Correspondence Management-API zu verwenden, laden Sie das `DSCSample.jar` (angehängt in diesem Dokument als Teil von `components.zip`) herunter und laden Sie es auf den LiveCycle-Server hoch. Nachdem die Datei `DSCSample.jar` auf den LiveCycle-Server hochgeladen wurde, verwendet der AEM-Server die Datei `DSCSample.jar`, um auf die renderLetter-API zuzugreifen.
+Um die Correspondence Management-API zu verwenden, laden Sie die `DSCSample.jar` (in diesem Dokument als Teil von `components.zip`) und laden Sie es auf den LiveCycle-Server hoch. Nach dem `DSCSample.jar` auf den LiveCycle-Server hochgeladen wird, verwendet der AEM die `DSCSample.jar` -Datei, um auf die renderLetter-API zuzugreifen.
 
-Weitere Informationen finden Sie unter [Verbinden von AEM Forms mit der Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
+Weitere Informationen finden Sie unter [Verbinden von AEM Forms mit Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
-1. Aktualisieren Sie die AEM-Server-URL in cmsa.properties in `DSCSample.jar`, die sich am folgenden Speicherort befindet:
+1. Aktualisieren Sie die AEM-Server-URL in cmsa.properties in `DSCSample.jar`, der sich am folgenden Speicherort befindet:
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. Stellen Sie die folgenden Parameter in der Konfigurationsdatei bereit:
 
-   * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
+   * **crx.serverUrl**=https:/[Host]/:[port]/[Kontextpfad]/[AEM URL]
    * **crx.username** = AEM-Benutzername
-   * **crx.password** = AEM Kennwort
+   * **crx.password**= AEM
    * **crx.appRoot** = /content/apps/cm
 
    >[!NOTE]
    >
    >Jedes Mal, wenn Sie serverseitig Änderungen vornehmen, starten Sie den Server neu.
 
-   Die `DSCSample.jar`-Datei verwendet die `renderLetter`-API. Weitere Informationen zur renderLetter-API finden Sie unter [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Die `DSCSample.jar` -Datei verwendet die `renderLetter` API. Weitere Informationen zur renderLetter-API finden Sie unter [Schnittstelle LetterRenderService](https://helpx.adobe.com/aem-forms/6-1/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Importieren von DSC in AEM Forms on JEE {#import-dsc-to-livecyle}
 
-`DSCSample.jar` -Datei verwendet die  `renderLetter` API zum Rendern von Briefen als PDF-Bytes aus XML-Daten, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+`DSCSample.jar` -Datei verwendet die `renderLetter` API zum Rendern von Briefen als PDF-Bytes aus XML-Daten, die C als Eingabe gibt. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Anfang Workbench und melden Sie sich an.
-1. Wählen Sie **[!UICONTROL Fenster > Ansichten anzeigen > Komponenten]** aus. Die Ansicht &quot;Components&quot;wird zu Workbench ES2 hinzugefügt.
+1. Auswählen **[!UICONTROL Fenster > Ansichten anzeigen > Komponenten]**. Die Ansicht &quot;Components&quot;wird zu Workbench ES2 hinzugefügt.
 
-1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Komponente installieren]**.
+1. Rechtsklick **[!UICONTROL Komponenten]** und wählen Sie **[!UICONTROL Komponente installieren]**.
 
-1. Wählen Sie die Datei `DSCSample.jar` über den Dateibrowser aus und klicken Sie auf **[!UICONTROL Öffnen]**.
-1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL RenderWrapper]** und wählen Sie **[!UICONTROL Start Component]** aus. Wenn die Komponente gestartet wird, erscheint ein grüner Pfeil neben dem Komponentennamen.
+1. Wählen Sie die `DSCSample.jar` Datei über den Dateibrowser und klicken Sie auf **[!UICONTROL Öffnen]**.
+1. Rechtsklick **[!UICONTROL RenderWrapper]** und wählen Sie **[!UICONTROL Komponente starten]**. Wenn die Komponente gestartet wird, erscheint ein grüner Pfeil neben dem Komponentennamen.
 
 ## Schreiben an Review senden {#send-letter-for-review}
 

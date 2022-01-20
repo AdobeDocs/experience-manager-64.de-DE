@@ -1,19 +1,19 @@
 ---
 title: Verwalten von Übersetzungsprojekten
-seo-title: Verwalten von Übersetzungsprojekten
+seo-title: Managing Translation Projects
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM verwalten.
-seo-description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM verwalten.
+seo-description: Learn how to manage translation projects in AEM.
 uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
-feature: Sprachkopie
+feature: Language Copy
 exl-id: 191b9aff-3acd-4272-8683-d3e6899fe78c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3431'
+source-wordcount: '3418'
 ht-degree: 94%
 
 ---
@@ -40,7 +40,7 @@ Wenn einem Übersetzungsprojekt Ressourcen hinzugefügt werden, wird ein Überse
 
 >[!NOTE]
 >
->Die Option 3 bezieht sich nicht auf ein Übersetzungsauftrag/-projekt. Sie bietet Ihnen die Möglichkeit, Inhalte und Strukturänderungen im Sprach-Master in (nicht übersetzte) Sprachkopien zu kopieren. Sie können diese Option verwenden, um Ihre Sprach-Master auch ohne Übersetzung zu synchronisieren.
+>Die Option 3 bezieht sich nicht auf ein Übersetzungsauftrag/-projekt. Sie bietet Ihnen die Möglichkeit, Inhalte und Strukturänderungen im Sprach-Master in (nicht übersetzte) Sprachkopien zu kopieren. Sie können diese Option verwenden, um Ihren Sprachstamm auch ohne Übersetzung zu synchronisieren.
 
 ## Durchführen von Erstübersetzungen und Aktualisieren von vorhandenen Übersetzungen {#performing-initial-translations-and-updating-existing-translations}
 
@@ -156,7 +156,7 @@ So wie beim Erstellen eines neuen Projekts werden beim Hinzufügen von Seiten be
 
 1. Klicken oder tippen Sie auf „Starten“.
 
-## Hinzufügen von Seiten/Assets zu einem Übersetzungsauftrag  {#adding-pages-assets-to-a-translation-job}
+## Hinzufügen von Seiten/Assets zu einem Übersetzungsauftrag {#adding-pages-assets-to-a-translation-job}
 
 Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftrag Ihres Übersetzungsprojektes hinzufügen. So fügen Sie Seiten oder Assets hinzu:
 
@@ -178,7 +178,7 @@ Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftr
 
 Die Seiten und/oder Assets werden dem Übersetzungsauftrag hinzugefügt.
 
-## Hinzufügen von i18n-Wörterbüchern zu einem Übersetzungsauftrag  {#adding-i-n-dictionaries-to-a-translation-job}
+## Hinzufügen von i18n-Wörterbüchern zu einem Übersetzungsauftrag {#adding-i-n-dictionaries-to-a-translation-job}
 
 Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftrag Ihres Übersetzungsprojektes hinzufügen. So fügen Sie ein i18n-Wörterbuch hinzu:
 
@@ -200,7 +200,7 @@ Ihr Wörterbuch befindet sich nun in Ihrem Übersetzungsauftrag.
 
 >[!NOTE]
 >
->Weitere Informationen zu i18n-Wörterbüchern finden Sie unter [Verwenden des Übersetzers zum Verwalten von Wörterbüchern](/help/sites-developing/i18n-translator.md).
+>Weitere Informationen zu i18n-Wörterbüchern finden Sie unter [Verwenden von Übersetzern zum Verwalten von Wörterbüchern](/help/sites-developing/i18n-translator.md).
 
 ## Hinzufügen von Tags zu einem Übersetzungsauftrag {#adding-tags-to-a-translation-job}
 
@@ -260,9 +260,9 @@ Die folgende Tabelle beschreibt die einzelnen Status, die ein Auftrag oder ein E
 | Fehler beim Update | Beim Übertragen von Dateien zwischen AEM und dem Übersetzungs-Service ist ein Fehler aufgetreten. |
 | Unbekannter Status | Ein unbekannter Fehler ist aufgetreten. |
 
-Klicken oder tippen Sie auf die Ellipse am unteren Rand der Kachel, um den Status der einzelnen Dateien im Auftrag anzuzeigen.
+Klicken oder tippen Sie auf die Auslassungspunkte am unteren Rand der Kachel, um den Status der einzelnen Dateien im Auftrag anzuzeigen.
 
-## Festlegen des Fälligkeitsdatums von Übersetzungsaufträgen  {#setting-the-due-date-of-translation-jobs}
+## Festlegen des Fälligkeitsdatums von Übersetzungsaufträgen {#setting-the-due-date-of-translation-jobs}
 
 Geben Sie das Datum an, bis zu dem Ihr Übersetzungsanbieter die übersetzten Dateien zurückgeben muss. Sie können das Fälligkeitsdatum für ein Projekt oder für einen bestimmten Auftrag festlegen:
 
@@ -303,7 +303,7 @@ Weitere Informationen zu den Umfangsberechnungsergebnissen erhalten Sie von Ihre
 >
 >Die Berechnung des Umfangs ist optional. Sie können einen Übersetzungsauftrag auch ohne Berechnung des Umfangs starten.
 
-Wenn Sie einen Übersetzungsauftrag erfassen, lautet der Status des Auftrags `Scope Requested`. Wenn der Übersetzungsanbieter den Umfang zurückgibt, wird der Status in `Scope Completed` geändert. Ist die Berechnung des Umfangs abgeschlossen, können Sie den Befehl Berechnung anzeigen zur Überprüfung der Ergebnisse der Umfangsberechnung verwenden.
+Wenn Sie einen Übersetzungsauftrag erfassen, lautet der Status des Auftrags `Scope Requested`. Wenn der Übersetzungsanbieter den Umfang zurückgibt, wird der Status in `Scope Completed`. Ist die Berechnung des Umfangs abgeschlossen, können Sie den Befehl Berechnung anzeigen zur Überprüfung der Ergebnisse der Umfangsberechnung verwenden.
 
 Die Umfangsberechnung funktioniert nur dann richtig, wenn der Übersetzungsanbieter diese Funktion unterstützt.
 
@@ -314,7 +314,7 @@ Die Umfangsberechnung funktioniert nur dann richtig, wenn der Übersetzungsanbie
 
 1. Wenn der Auftragsstatus zu BERECHNUNG_ABGESCHLOSSEN wechselt, klicken oder tippen Sie in der Kachel „Übersetzungsauftrag“ auf das Menü „Befehle“ und dann auf „Berechnung anzeigen“.
 
-## Starten von Übersetzungsaufträgen  {#starting-a-translation-job}
+## Starten von Übersetzungsaufträgen {#starting-a-translation-job}
 
 Starten Sie einen Übersetzungsauftrag, um die Quellseiten in die Zielsprache zu übersetzen. Die Übersetzung wird gemäß den Eigenschaftswerten der Kachel „Zusammenfassung der Übersetzung“ durchgeführt.
 
@@ -331,13 +331,13 @@ Nachdem Sie den Übersetzungsauftrag gestartet haben, wird in der Kachel „Übe
 
 ## Abbrechen von Übersetzungsaufträgen {#canceling-a-translation-job}
 
-Brechen Sie einen Übersetzungsauftrag ab, um den Übersetzungsprozess anzuhalten und den Übersetzungsanbieter daran zu hindern, weitere Übersetzungen auszuführen. Sie können einen Auftrag abbrechen, wenn der Auftrag den Status `Committed For Translation` oder `Translation In Progress` aufweist.
+Brechen Sie einen Übersetzungsauftrag ab, um den Übersetzungsprozess anzuhalten und den Übersetzungsanbieter daran zu hindern, weitere Übersetzungen auszuführen. Sie können einen Auftrag abbrechen, wenn der Auftrag die `Committed For Translation` oder `Translation In Progress` Status.
 
 1. Öffnen Sie in der Projektekonsole das Übersetzungsprojekt.
 1. Klicken oder tippen Sie in der Kachel „Übersetzungsauftrag“ auf das Menü „Befehle“ und dann auf „Abbrechen“.
 1. Klicken Sie im Dialogfeld „Aktion“, das den Abbruch der Übersetzung bestätigt, auf „OK“.
 
-## Workflow für das Akzeptieren/Ablehnen  {#accept-reject-workflow}
+## Workflow für das Akzeptieren/Ablehnen {#accept-reject-workflow}
 
 Wenn die Inhalte nach der Übersetzung zurückgegeben werden und den Status Bereit für Überprüfung aufweisen, können Sie den Übersetzungsauftrag aufrufen und die Inhalte akzeptieren bzw. ablehnen.
 
@@ -349,7 +349,7 @@ Falls Sie die Option Übersetzung ablehnen auswählen, haben Sie die Möglichkei
 
 Bei Ablehnung der Inhalte werden diese an den Übersetzungsanbieter zurückgesendet und der Anbieter kann dann den Kommentar einsehen.
 
-## Überprüfen und Weiterleiten von aktualisierten Inhalten  {#reviewing-and-promoting-updated-content}
+## Überprüfen und Weiterleiten von aktualisierten Inhalten {#reviewing-and-promoting-updated-content}
 
 Wenn Inhalte für eine vorhandene Sprachkopie übersetzt werden, überprüfen Sie die Übersetzungen, nehmen Sie bei Bedarf Änderungen vor und leiten Sie dann die Übersetzungen weiter, um die Übersetzungen in die Sprachkopie zu verschieben. Sie können übersetzte Dateien überprüfen, wenn der Übersetzungsauftrag den Status Bereit für Überprüfung aufweist.
 

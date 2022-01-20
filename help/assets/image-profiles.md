@@ -1,8 +1,8 @@
 ---
 title: Dynamic Media-Bildprofile
-seo-title: Dynamic Media-Bildprofile
+seo-title: Dynamic Media image profiles
 description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken, smartes Zuschneiden oder smarte Farb-/Bildmuster (oder beides) enthalten, und wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
-seo-description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken, smartes Zuschneiden oder smarte Farb-/Bildmuster (oder beides) enthalten, und wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
+seo-description: Create image profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
-feature: Bildprofile
+feature: Image Profiles
 role: Admin,User
 source-git-commit: ec0770120d04a1393c69786c0a46bb216dd67300
 workflow-type: tm+mt
-source-wordcount: '2719'
-ht-degree: 90%
+source-wordcount: '2686'
+ht-degree: 92%
 
 ---
 
@@ -77,7 +77,7 @@ Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Außerdem können Sie 
 
 ## Unschärfemaske {#unsharp-mask}
 
-Sie verwenden **Unschärfemaske**, um einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild zu optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Kontrastschwellenwert festlegen, der ignoriert wird. Bei diesem Effekt werden dieselben Optionen wie im Adobe Photoshop-Filter &quot;Unschärfemaske&quot;verwendet.
+Sie verwenden **Unschärfemaske** , um einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild zu optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Kontrastschwellenwert festlegen, der ignoriert wird. Bei diesem Effekt werden dieselben Optionen wie im Adobe Photoshop-Filter &quot;Unschärfemaske&quot;verwendet.
 
 >[!NOTE]
 >
@@ -106,8 +106,7 @@ In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
  </tbody> 
 </table>
 
-Das Scharfzeichnen wird unter
-     [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf) beschrieben.
+Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf) beschrieben.
 
 ## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
@@ -130,7 +129,7 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 ## Bearbeiten oder Löschen von Dynamic Media-Bildprofilen {#editing-or-deleting-image-profiles}
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Bildprofile]**.
-1. Wählen Sie das Bildprofil aus, das Sie bearbeiten oder entfernen möchten. Um sie zu bearbeiten, wählen Sie **[!UICONTROL Bildverarbeitungsprofil bearbeiten]** aus. Wählen Sie **[!UICONTROL Bildverarbeitungsprofil löschen]** aus, um es zu entfernen.
+1. Wählen Sie das Bildprofil aus, das Sie bearbeiten oder entfernen möchten. Um sie zu bearbeiten, wählen Sie **[!UICONTROL Bildverarbeitungsprofil bearbeiten]**. Wählen Sie **[!UICONTROL Bildverarbeitungsprofil löschen]** aus, um es zu entfernen.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -165,7 +164,7 @@ Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Pr
 
 #### Anwenden von Bildprofilen für Dynamic Media auf Ordner über „Eigenschaften“ {#applying-image-profiles-to-folders-from-properties}
 
-1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Assets]**. Navigieren Sie dann zum übergeordneten Ordner des Ordners, auf den Sie ein Bildprofil anwenden möchten.
+1. Tippen Sie auf das AEM und navigieren Sie zu **[!UICONTROL Assets]**. Navigieren Sie dann zum übergeordneten Ordner des Ordners, auf den Sie ein Bildprofil anwenden möchten.
 1. Tippen Sie im Ordner auf das Kontrollkästchen, um es zu aktivieren, und tippen Sie anschließend auf **[!UICONTROL Eigenschaften]**.
 1. Tippen Sie auf die Registerkarte **[!UICONTROL Bildprofile]**. Wählen Sie in der Dropdown-Liste **[!UICONTROL Profilname]** das gewünschte Profil aus und klicken Sie auf **[!UICONTROL Speichern und schließen]**. Ordner, denen bereits ein Profil zugewiesen ist, werden durch die Anzeige des Profilnamens direkt unter dem Ordnernamen gekennzeichnet.
 
@@ -179,7 +178,7 @@ Profile können nicht nur auf einzelne Ordner, sondern auch global angewendet we
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Navigieren Sie zu **https://&lt;AEM-Server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam**, wenden Sie das entsprechende Profil an und tippen Sie auf **Speichern**.
+   * Navigieren Sie zu **https://&lt;aem server=&quot;&quot;>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** und wenden Sie das entsprechende Profil an und tippen Sie auf **Speichern**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 

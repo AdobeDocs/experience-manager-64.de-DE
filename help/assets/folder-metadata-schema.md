@@ -1,6 +1,6 @@
 ---
 title: Ordner-Metadatenschema
-description: In diesem Artikel wird beschrieben, wie Sie ein Metadatenschema für Asset-Ordner in [!DNL Experience Manager] Assets erstellen
+description: In diesem Artikel wird beschrieben, wie Sie ein Metadatenschema für Asset-Ordner in [!DNL Experience Manager] Assets
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
@@ -16,13 +16,13 @@ ht-degree: 93%
 
 # Ordner-Metadatenschema {#folder-metadata-schema}
 
-In diesem Artikel wird beschrieben, wie Sie ein Metadatenschema für Asset-Ordner in [!DNL Experience Manager] Assets erstellen.
+In diesem Artikel wird beschrieben, wie Sie ein Metadatenschema für Asset-Ordner in [!DNL Experience Manager] Assets.
 
 Mit Adobe Experience Manager Assets können Sie Metadatenschemata für Asset-Ordner erstellen, die das Layout und die Metadaten definieren, die auf den Seiten mit Ordnereigenschaften angezeigt werden.
 
 >[!NOTE]
 >
->Diese Funktion erfordert [!DNL Experience Manager] 6.4, wobei mindestens Service Pack 2 bereitgestellt ist. Weitere Informationen zu [!DNL Experience Manager] 6.4 Service Pack finden Sie in den [Versionshinweisen](/help/release-notes/sp-release-notes.md).
+>Diese Funktion erfordert [!DNL Experience Manager] 6.4 mit mindestens Service Pack 2 bereitgestellt. Für [!DNL Experience Manager] 6.4 Service Pack-Details, siehe diese [Versionshinweise](/help/release-notes/sp-release-notes.md).
 
 ## Hinzufügen von Ordner-Metadatenschema-Formularen {#add-a-folder-metadata-schema-form}
 
@@ -109,7 +109,7 @@ Sie können Ordner-Metadatenschema-Formulare über die Seite „Ordner-Metadaten
 
 ![delete_form](assets/delete_form.png)
 
-## Zuordnen eines Ordner-Metadatenschemas {#assign-a-folder-metadata-schema}
+## Zuweisen eines Ordner-Metadatenschemas {#assign-a-folder-metadata-schema}
 
 Sie können ein Ordner-Metadatenschema über die Seite „Ordner-Metadatenschema-Formulare“ oder bei der Ordnererstellung einem Ordner zuordnen.
 

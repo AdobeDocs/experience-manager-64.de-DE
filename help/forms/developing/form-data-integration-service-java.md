@@ -1,8 +1,8 @@
 ---
 title: JavaAPI-Schnellstart für den Formulardatenintegrationsdienst (SOAP)
-seo-title: JavaAPI-Schnellstart für den Formulardatenintegrationsdienst (SOAP)
-description: Verwenden Sie den Form Data Integration-Dienst, um Daten in ein PDF-Formular zu importieren und mithilfe der Java-API Daten aus einem PDF-Formular zu exportieren.
-seo-description: Verwenden Sie den Form Data Integration-Dienst, um Daten in ein PDF-Formular zu importieren und mithilfe der Java-API Daten aus einem PDF-Formular zu exportieren.
+seo-title: Form Data Integration Service JavaAPI Quick Start(SOAP)
+description: Verwenden Sie den Formulardatenintegrationsdienst, um Daten in ein PDF-Formular zu importieren und mithilfe der Java-API Daten aus einem PDF-Formular zu exportieren.
+seo-description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: c60ef25a-26a0-4421-b635-ced54baa324d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '254'
 ht-degree: 1%
 
 ---
@@ -30,11 +30,11 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 >[!NOTE]
 >
->Schnellstart, der unter Programmieren mit AEM Formularen zu finden ist, basiert auf dem Forms-Server, der auf JBoss Application Server und dem Microsoft Windows-Betriebssystem bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellstart, der unter Programmieren mit AEM Formularen zu finden ist, basiert auf dem Forms-Server, der auf JBoss Application Server und dem Windows-Betriebssystem Microsoft bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Schnellstart (SOAP-Modus): Importieren von Formulardaten mit der Java-API {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Daten in ein PDF-Formular importiert. Die Daten befinden sich in einer XML-Datei mit dem Namen *Loan_data.xml* und das PDF-Formular wird als PDF-Datei mit dem Namen *ResultLoanForm.pdf* gespeichert. (Siehe [Importieren von Formulardaten](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
+Im folgenden Java-Codebeispiel werden Daten in ein PDF-Formular importiert. Die Daten befinden sich in einer XML-Datei mit dem Namen *Loan_data.xml* und das PDF-Formular als PDF-Datei mit dem Namen *ResultLoanForm.pdf*. (Siehe [Importieren von Formulardaten](/help/forms/developing/importing-exporting-data.md#importing-form-data).
 
 ```as3
  /* 
@@ -136,7 +136,7 @@ Im folgenden Java-Codebeispiel werden Daten in ein PDF-Formular importiert. Die 
 
 ## Schnellstart (SOAP-Modus): Exportieren von Formulardaten mit der Java-API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Daten aus einem PDF-Formular exportiert. Die Formulardaten werden als XML-Datei mit dem Namen *Loan_data.xml* gespeichert. (Siehe [Exportieren von Formulardaten](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+Das folgende Java-Codebeispiel exportiert Daten aus einem PDF-Formular. Die Formulardaten werden als XML-Datei mit dem Namen *Loan_data.xml*. (Siehe [Exportieren von Formulardaten](/help/forms/developing/importing-exporting-data.md#exporting-form-data).
 
 ```as3
  /* 

@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
-seo-title: Konfigurieren sicherer Verwaltungseinstellungen für AEM Forms on JEE
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht erforderlich sind.
-seo-description: Erfahren Sie, wie Sie Benutzerkonten und Dienste verwalten, die zwar in einer privaten Entwicklungsumgebung erforderlich sind, aber in einer Produktionsumgebung von AEM Forms on JEE nicht erforderlich sind.
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -12,8 +12,8 @@ role: Admin
 exl-id: 980d420c-a768-4634-9b8c-3f1d7327285d
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '847'
+ht-degree: 84%
 
 ---
 
@@ -78,7 +78,7 @@ Einige Formularserverdienste lassen den nicht authentifizierten (anonymen) Aufru
 
 1. Klicken Sie auf **Dienste > Anwendungen und Dienste > Dienstverwaltung**.
 1. Klicken Sie auf den Namen des zu deaktivierenden Dienstes (z. B. AuthenticationManagerService).
-1. Klicken Sie auf die Registerkarte **Sicherheit**, deaktivieren Sie die Option **Anonymer Zugriff erlaubt** und klicken Sie auf **Speichern**.
+1. Klicken Sie auf **Registerkarte Sicherheit**, Auswahl aufheben **Anonymer Zugriff erlaubt** und klicken Sie auf **Speichern**.
 1. Wiederholen Sie die Schritte 3 und 4 für die folgenden Dienste:
 
    * AuthenticationManagerService

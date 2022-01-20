@@ -1,8 +1,8 @@
 ---
 title: Modelle im Repository
-seo-title: Modelle im Repository
+seo-title: Models in Repository
 description: 'null'
-seo-description: 'null'
+seo-description: null
 uuid: 54f81180-4178-4e33-a6f0-e9e6ea50798e
 contentOwner: User
 content-type: reference
@@ -11,7 +11,7 @@ noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/mobile/using/administer-mobile-apps
 source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
 workflow-type: tm+mt
-source-wordcount: '1332'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
@@ -29,19 +29,19 @@ Als Entwickler sollten Sie mit der Modellstruktur im Repository vertraut sein. S
 
 ## Erstellen von Modelltypen {#creating-model-types}
 
-Es gibt zwei vom System bereitgestellte Modelltypen unter */libs/settings/mobileapps/model-types*. Wenn Sie die Systemmodelltypen überschreiben möchten, muss ein Knoten *mobileapps/model-types* unter dem Konfigurationsknoten erstellt werden, unter dem die Überschreibung erfolgen soll.
+Es gibt zwei vom System bereitgestellte Modelltypen unter */libs/settings/mobileapps/model-types*. Wenn Sie die Systemmodelltypen außer Kraft setzen möchten, wird eine *mobileapps/model-types* -Knoten muss unter dem Konfigurationsknoten erstellt werden, unter dem die Überschreibung erfolgen soll.
 
-Wenn Sie beispielsweise Konfigurationen unter */conf/myconf1* und */conf/myconf2* erstellt haben und die Systemmodelltypen nur unter *conf1* überschreiben möchten, erstellen Sie einen *mobileapps/model-types* -Knoten unter den Einstellungen von &lt;a 8/>conf1 *.*
+Wenn Sie beispielsweise Konfigurationen unter */conf/myconf1* und */conf/myconf2* und die Systemmodelltypen überschreiben möchten, auf *conf1* erstellen Sie nur eine *mobileapps/model-types* Knoten unter den Einstellungen von *conf1*.
 
-Wenn Sie zulassen möchten, dass einem Modell Datentypen hinzugefügt werden, muss der Modelltyp einen untergeordneten Knoten namens &quot;scaffolding&quot;vom Typ &quot;cq:Page&quot;und einen Ressourcentyp von *wcm/scaffolding/components/scaffolding* haben.
+Wenn Sie zulassen möchten, dass einem Modell Datentypen hinzugefügt werden, muss der Modelltyp einen untergeordneten Knoten namens &quot;scaffolding&quot;vom Typ &quot;cq:Page&quot;und einen Ressourcentyp von *wcm/scaffolding/components/scaffolding*.
 
-Die Strukturvorlagen-Seite muss auch eine *dataTypesConfig* -Eigenschaft auf dem Knoten PageContent enthalten, die angibt, welche Datentypmodelle von diesem Typ erstellt werden dürfen.
+Die Strukturvorlagen-Seite muss auch eine *dataTypesConfig* -Eigenschaft auf dem Knoten PageContent , die angibt, dass die von diesem Typ erstellten Datentypmodelle verwendet werden dürfen.
 
 >[!NOTE]
 >
->Eine **Strukturvorlage** ist eine Seite, die die Datentypen definiert, die von einer Entität basierend auf dem Modell bearbeitet werden können. Jeder Datentyp kann auch so konfiguriert werden, dass er definiert, wie das Feld in der Benutzeroberfläche angezeigt wird und wie der Datenwert beibehalten wird.
+>A **Strukturvorlage** ist eine Seite, die die Datentypen definiert, die von einer Entität basierend auf dem Modell bearbeitet werden können. Jeder Datentyp kann auch so konfiguriert werden, dass er definiert, wie das Feld in der Benutzeroberfläche angezeigt wird und wie der Datenwert beibehalten wird.
 
-### Konfiguration der Datentypen {#data-types-config}
+### Konfiguration von Datentypen {#data-types-config}
 
 Der Knoten &quot;data types config&quot;enthält eine Liste von Datentypelementen. Jedes Datentypelement gibt an, wie ein Datentyp im Modell-Editor angezeigt wird und wie er für die spätere Wiedergabe durch eine Entität beibehalten werden muss.
 
@@ -49,7 +49,7 @@ Der Knoten &quot;data types config&quot;enthält eine Liste von Datentypelemente
 |---|---|
 | fieldIcon | Klasse des CoralUI-Symbols zur Darstellung des Datentyps |
 | fieldPropResourceType | -Komponente, die alle Eigenschaften zum Konfigurieren des Datentyps rendert |
-| fieldProperties | Liste mit mehreren Werten für Eigenschaftskomponenten, die verwendet werden, wenn fieldPropResourceType *mobileapps/caas/gui/components/models/editor/datatypes/field* ist |
+| fieldProperties | Liste mit mehreren Werten für Eigenschaftenkomponenten, die verwendet werden, wenn fieldPropResourceType *mobileapps/caas/gui/components/models/editor/datatypes/field* |
 | fieldResourceType | resourceType des persistenten Knotens für den Datentyp (d. h. die Komponente, die die Eigenschaft im Entitäts-Editor rendert) |
 | fieldViewResourceType | Komponente, die zum Rendern des Datentyps in der Ansicht des Modell-Editors verwendet wird (fieldResourceType wird verwendet, wenn diese Eigenschaft weggelassen wird) |
 | fieldTitle | Name des Datentyps, der im Modell-Editor angezeigt wird |
@@ -60,7 +60,7 @@ Der Knoten &quot;data types config&quot;enthält eine Liste von Datentypelemente
 
 Die Eigenschaft &quot;dataTypesConfig&quot;unterstützt die Zusammenführung von Sling-Ressourcen. Dies bedeutet, dass die von den Systemmodelltypen (oder sogar von benutzerdefinierten Modelltypen) verwendeten Datentypen mithilfe von Überlagerungsknoten angepasst werden können.
 
-Eine Überlagerung von */libs/settings/mobileapps/models/formbuilderconfig/datatypes* muss erstellt und dann nach Bedarf angepasst werden.
+Eine Überlagerung von */libs/settings/mobileapps/models/formbuilderconfig/datatypes* erstellt und anschließend nach Bedarf angepasst werden.
 
 Beispielsweise könnte eine Überlagerung für den Datentyp String hinzugefügt werden, um fieldResourceType in eine benutzerdefinierte Komponente zu ändern.
 
@@ -84,7 +84,7 @@ Sie können Modelle erstellen, sobald alle gewünschten Modelltypen und Datentyp
 
 Das Erstellen eines Modells besteht darin, einen zulässigen Modelltyp basierend auf der aktuellen Konfiguration auszuwählen und dann einen Titel und eine Beschreibung anzugeben.
 
-Weitere Informationen zum Erstellen und Verwalten eines Modells über das Dashboard finden Sie unter [Erstellen eines Modells](/help/mobile/administer-mobile-apps.md) im Abschnitt zum Erstellen für mobile Apps.
+Weitere Informationen zum Erstellen und Verwalten eines Modells über das Dashboard finden Sie unter [Modell erstellen](/help/mobile/administer-mobile-apps.md) im Abschnitt &quot;Authoring&quot;für mobile Apps.
 
 ### Eigenschaften eines Modells {#properties-of-a-model}
 
@@ -94,18 +94,18 @@ Die folgende Tabelle zeigt die für ein Modell definierten Eigenschaften:
 |---|---|
 | Modelltitel | Name des Modells |
 | Beschreibung | Beschreibung des Modells |
-| Miniaturansicht | Miniaturbild des Modells |
+| Miniatur | Miniaturbild des Modells |
 | Modelltyp | Modelltyp (dies kann eine einfache Zeichenfolge oder ein Pfad zu einer tatsächlichen Komponente sein) |
 | Zugelassene untergeordnete Elemente | Pfad einer Vorlage, die dieser Vorlage untergeordnet sein darf |
 | Zugelassene übergeordnete Elemente | Pfad einer Vorlage, die dieser Vorlage übergeordnet sein darf |
 
 >[!NOTE]
 >
->Die Eigenschaften *Zulässige untergeordnete Elemente* und *zulässige übergeordnete Elemente* folgen denselben Regeln wie Seitenvorlagen. Weitere Informationen finden Sie unter [Seitenvorlagen](/help/sites-developing/page-templates-static.md).
+>Die *Zulässige Kinder* und *zulässige Eltern* -Eigenschaften folgen denselben Regeln wie Seitenvorlagen. Weitere Informationen finden Sie unter [Seitenvorlagen](/help/sites-developing/page-templates-static.md).
 >
->Unter Bezugnahme auf die Eigenschaft *Modelltyp* müssen alle Modelle über einen Supertyp von *mobileapps/caas/components/data/entity* verfügen, jedoch über einen Untertyp verfügen, der die Anpassung der Inhaltsbereitstellung ermöglicht. Wenn Sie sicherstellen, dass alle Modelltypen eindeutig sind, können Clients von Content Services auch dabei helfen, zwischen Objekten in den Daten zu unterscheiden.
+>Unter Bezugnahme auf *Modelltyp* -Eigenschaft verwenden, müssen alle Modelle einen Supertyp von *mobileapps/caas/components/data/entity* kann jedoch einen Untertyp aufweisen, der die Anpassung der Inhaltsbereitstellung ermöglicht. Wenn Sie sicherstellen, dass alle Modelltypen eindeutig sind, können Clients von Content Services auch dabei helfen, zwischen Objekten in den Daten zu unterscheiden.
 
-### Bearbeiten eines Modells {#editing-a-model}
+### Modell bearbeiten {#editing-a-model}
 
 Das Bearbeiten eines Modells umfasst das Öffnen des mit einem Modell zur Bearbeitung verknüpften Dialogfelds für die Strukturvorlage. Im Allgemeinen ist die Strukturvorlage ein untergeordneter Knoten des Modells, kann sich jedoch bei Bedarf außerhalb des Modells befinden, indem der Pfad mithilfe der Eigenschaft &quot;cq:scaffolding&quot;angegeben wird. Dies ist nützlich, wenn Sie dieselbe Strukturvorlage für mehrere Modelle freigeben möchten, für die unterschiedliche Eigenschaften erforderlich sind.
 
@@ -113,26 +113,26 @@ Wenn sich die Strukturvorlage für das Modell befindet, rendert der Modell-Edito
 
 >[!NOTE]
 >
->Alle Modelle sind Vorlagen, sodass sie allen Vorlagenregeln AEM. Dies ermöglicht die Verwendung von Eigenschaften wie *allowedParents* und *allowedChildren* -Eigenschaften. Diese sind beim Erstellen neuer Entitäten basierend auf einem Modell effektiv. Die Vorlagenregeln stellen sicher, dass Entitäten je nach Hierarchie nur auf bestimmten Modellen basieren können.
+>Alle Modelle sind Vorlagen, sodass sie allen Vorlagenregeln AEM. Dies ermöglicht die Verwendung von Eigenschaften wie *allowedParents* und *allowedChildren* Eigenschaften. Diese sind beim Erstellen neuer Entitäten, die auf einem Modell basieren, effektiv. Die Vorlagenregeln stellen sicher, dass Entitäten je nach Hierarchie nur auf bestimmten Modellen basieren können.
 >
->Weitere Informationen zum Bearbeiten eines Modells über das Dashboard finden Sie unter [Erstellen eines Modells](/help/mobile/administer-mobile-apps.md) im Abschnitt zum Erstellen für mobile Apps.
+>Weitere Informationen zum Bearbeiten eines Modells über das Dashboard finden Sie unter [Modell erstellen](/help/mobile/administer-mobile-apps.md) im Abschnitt &quot;Authoring&quot;für mobile Apps.
 
 ### Systemmodelle {#system-models}
 
 Für die einfache Wiederverwendung von Inhalten stehen zwei Arten vordefinierter Systemmodelle zur Verfügung. Diese Modelle können nicht bearbeitet werden.
 
-**Seitenmodell** Das Seitenmodell bietet eine schnelle Methode zur Wiederverwendung vorhandener Inhalte von Sites zur Bereitstellung durch Inhaltsdienste.
+**Seitenmodell** Das Seitenmodell bietet eine schnelle Methode zur Wiederverwendung vorhandener Inhalte von Sites für die Bereitstellung durch Inhaltsdienste.
 
 Der resourceType der Entitäten, die auf dem Seitenmodell basieren, lautet: mobileapps/caas/components/data/pages
 
 Pfad: Pfad zu einer Sites-Seite. Inhalte aus diesem Pfad (und seinen untergeordneten Elementen) werden von Content Service-Handlern gerendert.
 
-**Asset-** ModellDas Asset-Modell bietet eine schnelle Methode zur Wiederverwendung vorhandener Inhalte aus Assets für die Bereitstellung durch Inhaltsdienste.
+**Asset-Modell** Das Asset-Modell bietet eine schnelle Methode zur Wiederverwendung vorhandener Inhalte aus Assets für die Bereitstellung durch Content Services.
 
 Der resourceType der Entitäten, die auf dem Seitenmodell basieren, lautet: *mobileapps/caas/components/data/assets.*
 
-Asset-Liste: Liste der Pfade aus Assets. Jedes Asset wird als untergeordneter Entitätsknoten mit dem Ressourcentyp *wcm/foundation/components/image* hinzugefügt.
+Asset-Liste: Liste der Pfade aus Assets. Jedes Asset wird als untergeordneter Entitätsknoten mit einem resourceType von *wcm/foundation/components/image*.
 
 >[!NOTE]
 >
->Weitere Informationen zur Verwendung dieser Vorlagen zum Erstellen von Modellen über das Dashboard finden Sie unter [Erstellen eines Modells](/help/mobile/administer-mobile-apps.md) im Abschnitt &quot;Authoring&quot;für mobile Apps.
+>Weitere Informationen zur Verwendung dieser Vorlagen zum Erstellen von Modellen über das Dashboard finden Sie unter [Modell erstellen](/help/mobile/administer-mobile-apps.md) im Abschnitt &quot;Authoring&quot;für mobile Apps.

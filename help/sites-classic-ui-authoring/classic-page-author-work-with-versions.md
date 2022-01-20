@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Seitenversionen
-seo-title: Arbeiten mit Seitenversionen
+seo-title: Working with Page Versions
 description: Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten.
-seo-description: Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten.
+seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: b8412922-3dd5-44e3-a7fa-3e357c89a4ff
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
 exl-id: 407287cf-8096-40ee-971c-006d876ba4e4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1362'
 ht-degree: 91%
 
 ---
@@ -25,7 +25,7 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 * Wiederherstellen einer früheren Seitenversion, um z. B. eine Änderung rückgängig zu machen
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version, wobei die Unterschiede in Text und Bildern hervorgehoben sind
 
-## Erstellen einer neuen Version    {#creating-a-new-version}
+## Erstellen einer neuen Version   {#creating-a-new-version}
 
 So erstellen Sie die neue Version einer Seite:
 
@@ -35,8 +35,8 @@ So erstellen Sie die neue Version einer Seite:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Geben Sie einen **Kommentar** ein (optional).
-1. Um eine Bezeichnung für die Version festzulegen (optional), klicken Sie auf die Schaltfläche **Mehr >>** und legen Sie die **Beschriftung** fest, um die Version zu benennen. Wenn der Titel nicht festgelegt ist, ist die Version eine automatisch inkrementierte Zahl.
-1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau hinterlegte Nachricht eingeblendet, z. B.:
+1. Um einen Titel für die Version festzulegen (optional), klicken Sie auf die **Mehr >** und legen Sie die **Titel** , um die Version zu benennen. Wenn der Titel nicht festgelegt ist, ist die Version eine automatisch inkrementierte Zahl.
+1. Klicken **Version erstellen**. Auf der Seite wird eine grau hinterlegte Nachricht eingeblendet, z. B.:
 
    Version 1.2 erstellt für: Hemden.
 
@@ -44,7 +44,7 @@ So erstellen Sie die neue Version einer Seite:
 >
 >Eine Version wird automatisch bei Aktivierung einer Seite erstellt.
 
-## Wiederherstellen einer Seitenversion über den Sidekick  {#restoring-a-page-version-from-sidekick}
+## Wiederherstellen einer Seitenversion über den Sidekick {#restoring-a-page-version-from-sidekick}
 
 So stellen Sie die frühere Version einer Seite wieder her:
 
@@ -70,7 +70,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 
 1. Wählen Sie die Version, die Sie wiederherstellen möchten, und wählen Sie **Wiederherstellen**. AEM stellt die Version(en) bzw. den Baum/die Bäume wieder her, die Sie ausgewählt haben.
 
-### Wiederherstellen einer Baumstruktur über die Konsole  {#restoring-a-tree-from-the-console}
+### Wiederherstellen einer Baumstruktur über die Konsole {#restoring-a-tree-from-the-console}
 
 Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. Sie können sie außerdem verwenden, um Seiten wiederherzustellen, die gelöscht wurden.
 
@@ -87,7 +87,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 1. Öffnen Sie im Browser die Seite, die mit einer früheren Version verglichen werden soll.
-1. Wählen Sie im Sidekick die Registerkarte **Versionierung** und dann die Unterregisterkarte **Version wiederherstellen** n aus.
+1. Wählen Sie im Sidekick die **Versionierung** Registerkarte, dann die **Version wiederherstellen** auf einer Unterregisterkarte.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -102,7 +102,7 @@ So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 1. Wählen Sie im Sidekick die Unter-Registerkarte **Version wiederherstellen** aus und klicken Sie auf **&lt;&lt;Zurück**, um die aktuelle Version anzuzeigen.
 
-## Timewarp  {#timewarp}
+## Timewarp {#timewarp}
 
 Timewarp ist eine Funktion, die den ***Veröffentlichungsstatus*** einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
@@ -119,7 +119,7 @@ Gehen Sie hierfür wie folgt vor:
 >
 >Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen. Außerdem unterscheidet sich die Ansicht von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Bilder usw.) für die Anzeige der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
 
-### Verwenden des Timewarp-Kalenders  {#using-the-timewarp-calendar}
+### Verwenden des Timewarp-Kalenders {#using-the-timewarp-calendar}
 
 Timewarp ist im Sidekick verfügbar.
 

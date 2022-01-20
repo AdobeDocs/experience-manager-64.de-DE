@@ -1,8 +1,8 @@
 ---
 title: Arbeiten im Offlinemodus
-seo-title: Arbeiten im Offlinemodus
+seo-title: Working in the offline mode
 description: Arbeiten Sie auf Ihrem Mobilgerät offline in der AEM Forms-App, wenn Sie sich außerhalb der Reichweite Ihres AEM Forms-Netzwerks oder vollständig im Offlinemodus befinden.
-seo-description: Arbeiten Sie auf Ihrem Mobilgerät offline in der AEM Forms-App, wenn Sie sich außerhalb der Reichweite Ihres AEM Forms-Netzwerks oder vollständig im Offlinemodus befinden.
+seo-description: Take your mobile device offline outside your AEM Forms network range or in a completely offline mode and work on the AEM Forms app
 uuid: b900a0f8-90ce-486a-bde6-6cdf11bd2801
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 exl-id: 14303b8f-40a7-4bc5-8282-7526e0319264
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 84%
+source-wordcount: '532'
+ht-degree: 83%
 
 ---
 
-# Arbeiten im Offlinemodus  {#working-in-the-offline-mode}
+# Arbeiten im Offlinemodus {#working-in-the-offline-mode}
 
 Mit dem Offline-Modus der AEM Forms-App können Sie nahtlos arbeiten, selbst wenn die App offline geht. Sie können ein Formular öffnen, aktualisieren und senden, ohne dass eine Netzwerkverbindung erforderlich ist.
 
@@ -24,13 +24,13 @@ Sie beginnen mit der Arbeit an der AEM Forms-App, indem Sie Ihre App mit dem AEM
 
 Ausführliche Informationen zum Synchronisieren der App finden Sie unter [Synchronisieren der App](/help/forms/using/sync-app.md).
 
-## Offline-Verfügbarkeit von Formularen  {#making-forms-available-offline}
+## Offline-Verfügbarkeit von Formularen {#making-forms-available-offline}
 
 Wenn Sie die App mit dem AEM Forms-Server synchronisieren, werden die Formulare auf Ihr mobiles Gerät heruntergeladen. Die mit der Aufgabe verknüpften Anhänge werden jedoch standardmäßig nicht heruntergeladen. Dies bedeutet, dass Sie die Anhänge anzeigen können, wenn Sie online sind. Um jedoch sicherzustellen, dass Sie die Anhänge im Offline-Modus anzeigen können, ändern Sie die Standardeinstellungen der App.
 
 Damit die verknüpften Anlagen mit jedem Formular heruntergeladen werden, müssen Sie die Option zum Abrufen der Anhänge auf „ON“ setzen. Ausführliche Informationen finden Sie unter [Aktualisieren von allgemeinen Einstellungen](/help/forms/using/update-general-settings.md).
 
-Da das Herunterladen von Daten die Leistung des mobilen Geräts beeinträchtigen kann, ist die Option „Fetch attachments“ standardmäßig auf „OFF“ gesetzt. Wenn diese Einstellung auf „ON“ gesetzt wird, werden die Anlagen für alle Aufgaben, die danach vom Server heruntergeladen werden, auf das mobile Gerät geladen. Im Offline-Modus kann ein Benutzer dann an allen Aufgaben arbeiten, die auf das Gerät heruntergeladen werden, nachdem die Optionen **Fetch attachments** auf ON gesetzt wurden.
+Da das Herunterladen von Daten die Leistung des mobilen Geräts beeinträchtigen kann, ist die Option „Fetch attachments“ standardmäßig auf „OFF“ gesetzt. Wenn diese Einstellung auf „ON“ gesetzt wird, werden die Anlagen für alle Aufgaben, die danach vom Server heruntergeladen werden, auf das mobile Gerät geladen. Im Offline-Modus kann ein Benutzer dann an allen Aufgaben arbeiten, die auf das Gerät heruntergeladen werden, nachdem die **Fetch attachments** Optionen auf EIN.
 
 ## Konfiguration des Offlinedienstes für die AEM Forms-App {#configuring-offline-service-for-aem-forms-app-br}
 
@@ -38,7 +38,7 @@ Der Dienst für die AEM Forms Offline-App identifiziert die in einem Formular ve
 
 Serverseitige Offlinekomponente der AEM Forms-App konfigurieren:
 
-1. Navigieren Sie in der Autoreninstanz zu **Adobe Experience Manager** >**Tools** > **Forms** > **Forms App-Offlinedienst konfigurieren**.
+1. Navigieren Sie in der Autoreninstanz zu **Adobe Experience Manager** >**Instrumente** > **Forms** > **Konfigurieren des Offline-Dienstes für Forms App**.
 
    URL: `https://<server>:<port>/<context-path>/libs/fd/workspace-offline/gui/content/config.html`
 

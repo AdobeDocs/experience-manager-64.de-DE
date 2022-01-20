@@ -1,8 +1,8 @@
 ---
 title: Benennungskonventionen
-seo-title: Benennungskonventionen
+seo-title: Naming Conventions
 description: Knoten im Repository unterliegen Benennungskonventionen des Java Content Repository
-seo-description: Knoten im Repository unterliegen Benennungskonventionen des Java Content Repository
+seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 741043c7-2ebb-455d-8163-a246b874a7b3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '301'
 ht-degree: 100%
 
 ---

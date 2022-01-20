@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Workflows
-seo-title: Verwalten von Workflows
+seo-title: Administering Workflows
 description: Erfahren Sie, wie Workflows in AEM verwaltet werden.
-seo-description: Erfahren Sie, wie Workflows in AEM verwaltet werden.
+seo-description: Learn how to administer workflows in AEM.
 uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: e57b7a69-6e25-4066-ad7a-917969cebbe8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '764'
 ht-degree: 93%
 
 ---
@@ -31,7 +31,7 @@ Workflows ermöglichen Ihnen die Automatisierung von Adobe Experience Manager (A
 Die von Ihrer Organisation etablierten Geschäftsprozesse können als Workflows dargestellt werden. Der Prozess der Veröffentlichung von Website-Inhalten umfasst z. B. in der Regel Schritte wie die Genehmigung und Abnahme durch verschiedene beteiligte Personen. Diese Prozesse können als AEM-Workflows implementiert und auf Inhaltsseiten und Assets angewandt werden.
 
 * [Starten von Workflows](/help/sites-administering/workflows-starting.md)
-* [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md)
+* [Verwalten der Workflow-Instanzen](/help/sites-administering/workflows-administering.md)
 * [Verwalten des Zugriffs auf Workflows](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
@@ -45,8 +45,7 @@ Die von Ihrer Organisation etablierten Geschäftsprozesse können als Workflows 
 >
 
 
-
-## Workflow-Modelle und -Instanzen  {#workflow-models-and-instances}
+## Workflow-Modelle und -Instanzen {#workflow-models-and-instances}
 
 [Workflow-Modelle](/help/sites-developing/workflows.md#model) in AEM sind die Darstellung und Implementierung von Geschäftsprozessen:
 
@@ -59,7 +58,7 @@ Wenn ein Workflow-Modell gestartet (ausgeführt) wird, wird eine Workflow-Instan
 
 >[!CAUTION]
 >
->Die Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Weitere Informationen finden Sie unter [Entwickeln von Workflows](/help/sites-developing/workflows.md#model) .
+>Die Schritte sind diejenigen, die vom Workflow-Modell *zum Zeitpunkt der Generierung der Instanz* festgelegt wurden. Siehe [Entwickeln von Workflows](/help/sites-developing/workflows.md#model) für weitere Informationen.
 
 Workflow-Instanzen durchlaufen den folgenden Lebenszyklus:
 
@@ -89,7 +88,7 @@ Workflow-Schritte werden je nach Art des jeweiligen Schritts entweder von einem 
 >
 >Wenn ein Fehler auftritt, sollte die Implementierung des Diensts/Schritts das Verhalten bei einem Fehlerszenario handhaben. Die Workflow-Engine selbst wiederholt die Ausführung des Auftrags und protokolliert dann einen Fehler und hält die Instanz an.
 
-## Workflow-Status und -Aktionen  {#workflow-status-and-actions}
+## Workflow-Status und -Aktionen {#workflow-status-and-actions}
 
 Ein Workflow kann einen der folgenden Status aufweisen:
 
@@ -108,4 +107,4 @@ Je nach dem aktuellen Status können Sie Aktionen zur Ausführung von Workflow-I
 
 * **Aussetzen**: Hält die Ausführung des Workflows vorübergehend an. Das Aussetzen ist in Ausnahmefällen nützlich, wenn Sie nicht möchten, dass der Workflow fortgeführt wird – so zum Beispiel bei der Wartung. Durch das Aussetzen ändert sich der Workflow-Status zu „Unterbrochen“.
 * **Fortsetzen**: Startet einen ausgesetzten Workflow an der Stelle der Ausführung neu, an der er ausgesetzt wurde, und verwendet dabei dieselbe Konfiguration.
-* **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in  **ABGEBROCHEN**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.
+* **Beenden**: Beendet die Workflow-Ausführung und ändert den Status in **ABORTED**. Eine abgebrochene Workflow-Instanz kann nicht neu gestartet werden.

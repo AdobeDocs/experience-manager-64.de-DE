@@ -1,8 +1,8 @@
 ---
 title: Hinzufügen von Dynamic Media-Assets zu Seiten
-seo-title: Hinzufügen von Dynamic Media-Assets zu Seiten
+seo-title: Adding Dynamic Media Assets to Pages
 description: Erfahren Sie, wie Sie in AEM einer Seite Komponenten für Dynamic Media hinzufügen können.
-seo-description: Erfahren Sie, wie Sie in AEM einer Seite Komponenten für Dynamic Media hinzufügen können.
+seo-description: How to add Dynamic Media components to a page in AEM
 uuid: 77abcb87-2df7-449b-be52-540d749890b6
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,18 +10,18 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 exl-id: bb97b649-a50d-49c8-97aa-18c32f18d527
-feature: Komponenten
+feature: Components
 role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '2826'
-ht-degree: 62%
+source-wordcount: '2808'
+ht-degree: 61%
 
 ---
 
 # Hinzufügen von Dynamic Media-Assets zu Seiten {#adding-dynamic-media-assets-to-pages}
 
-Um die Funktion für dynamische Medien zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die Komponente **Dynamic Media** oder **Interaktive Medien** direkt auf der Seite hinzufügen. Wechseln Sie dazu in den Layoutmodus und aktivieren Sie die Komponenten vom Typ „Dynamische Medien“. Anschließend können Sie der Seite diese Komponenten und der Komponente Assets hinzufügen. „Dynamische Medien“ und „Interaktive Medien“ sind intelligente Komponenten, die erkennen, ob Sie ein Bild oder ein Video hinzufügen. Die verfügbaren Optionen werden entsprechend angepasst.
+Um die Funktion für dynamische Medien zu Assets hinzuzufügen, die Sie auf Ihren Websites verwenden, können Sie die **Dynamic Media** oder **Interaktive Medien** direkt auf der Seite. Wechseln Sie dazu in den Layoutmodus und aktivieren Sie die Komponenten vom Typ „Dynamische Medien“. Anschließend können Sie der Seite diese Komponenten und der Komponente Assets hinzufügen. „Dynamische Medien“ und „Interaktive Medien“ sind intelligente Komponenten, die erkennen, ob Sie ein Bild oder ein Video hinzufügen. Die verfügbaren Optionen werden entsprechend angepasst.
 
 Sie fügen Dynamic Media-Assets direkt zur Seite hinzu, wenn Sie AEM als WCM verwenden. Wenn Sie einen Drittanbieter für Ihr WCM verwenden, [verknüpfen](linking-urls-to-yourwebapplication.md) Sie Ihre Assets oder [betten](embed-code.md) Sie sie ein. Eine responsive Website von Drittanbietern finden Sie unter [Bereitstellen optimierter Bilder für eine responsive Site](responsive-site.md).
 
@@ -40,14 +40,14 @@ Das Hinzufügen einer Dynamic Media-Komponente zu einer Seite entspricht dem Hin
 >Um dieses Problem zu vermeiden, stellen Sie sicher, dass AEM Sites-Benutzer über die erforderlichen Berechtigungen für den Zugriff auf die Assets verfügen.
 
 1. Öffnen Sie in AEM die Seite, auf der Sie die Dynamic Media-Komponente hinzufügen möchten.
-1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (Sie müssen ggf. die Anzeige des Seitenbedienfelds umschalten) auf das Symbol **[!UICONTROL Komponenten]**.
-1. Wählen Sie unter der Überschrift **[!UICONTROL Komponenten]** in der Dropdown-Liste **[!UICONTROL Dynamic Media]** aus. Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
+1. Klicken Sie im Bedienfeld auf der linken Seite der Seite (Sie müssen ggf. die Anzeige des Seitenbedienfelds umschalten) auf die **[!UICONTROL Komponenten]** Symbol.
+1. Unter dem **[!UICONTROL Komponenten]** -Überschrift in der Dropdown-Liste wählen Sie **[!UICONTROL Dynamic Media]**. Wenn keine Liste der Dynamic Media-Komponenten verfügbar ist, müssen Sie wahrscheinlich die zu verwendenden Dynamic Media-Komponenten aktivieren. Informationen hierzu finden Sie unter [Aktivieren von Dynamic Media-Komponenten](#enabling-dynamic-media-components).
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Ziehen Sie eine Dynamic Media-Komponente, die Sie verwenden möchten, an die gewünschte Position auf der Seite.
 1. Bewegen Sie den Mauszeiger direkt über die Komponente. Wenn die Komponente blau hervorgehoben wird, tippen Sie einmal darauf, um die Symbolleiste der Komponente anzuzeigen. Tippen Sie auf das Symbol **** Konfiguration (Schraubenschlüssel).
-1. [Bearbeiten Sie die ](#dynamic-media-components) Komponenten nach Bedarf und klicken Sie auf das Häkchen, um die Änderungen zu speichern.
+1. [Komponenten bearbeiten](#dynamic-media-components) und klicken Sie auf das Häkchen, um die Änderungen zu speichern.
 
 ### Aktivieren von Dynamic Media-Komponenten {#enabling-dynamic-media-components}
 
@@ -92,7 +92,7 @@ Zum Lokalisieren von Dynamic Media-Komponenten stehen Ihnen zwei Möglichkeiten 
 
 ## Dynamic Media-Komponenten {#dynamic-media-components}
 
-Dynamic Media und interaktive Medien sind auf der Registerkarte [!UICONTROL Dynamic Media] unter [!UICONTROL Komponenten] verfügbar. Verwenden Sie die Komponente [!UICONTROL Interaktive Medien] für beliebige interaktive Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets. Verwenden Sie für alle anderen Komponenten vom Typ „Dynamische Medien“ die Komponente Dynamische Medien.
+Dynamic Media und interaktive Medien sind im [!UICONTROL Dynamic Media] Registerkarte in [!UICONTROL Komponenten]. Verwenden Sie die Komponente [!UICONTROL Interaktive Medien] für beliebige interaktive Assets wie interaktive Videos, interaktive Bilder oder Karussell-Sets. Verwenden Sie für alle anderen Komponenten vom Typ „Dynamische Medien“ die Komponente Dynamische Medien.
 
 >[!NOTE]
 >
@@ -120,54 +120,53 @@ Die Dynamic Media-Komponente ist intelligent. Je nachdem, ob Sie ein Bild oder V
 >
 
 
-
 #### Arbeiten mit Bildern  {#when-working-with-images}
 
 Mit der Komponente „Dynamic Media“ können Sie dynamische Bilder, einschließlich Bildsets, Rotationssets und Sets für gemischte Medien, hinzufügen. Sie können Vergrößerungen sowie Verkleinerungen vornehmen und (sofern zutreffend) ein Bild in einem Rotationsset drehen oder ein Bild aus einem anderen Set auswählen.
 
 Sie können zudem die Viewer-Vorgabe, Bildvorgabe oder das Bildformat direkt in der Komponente konfigurieren. Um ein Bild dynamisch zu machen, können Sie die Haltepunkte festlegen oder eine dynamische Bildvorgabe anwenden.
 
-Sie müssen die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in der Komponente auf das Symbol **[!UICONTROL Bearbeiten]** und dann auf **[!UICONTROL Dynamic Media-Einstellungen]** klicken.
+Sie müssen die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie auf **[!UICONTROL Bearbeiten]** Symbol in der Komponente und dann **[!UICONTROL Dynamic Media-Einstellungen]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe festlegen möchten, legen Sie sie in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit den Einstellungen **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** fest.
+>Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe festlegen möchten, legen Sie sie in der Komponente im **[!UICONTROL Erweitert]** mit dem **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** -Einstellungen.
 
-* **[!UICONTROL Viewer-]**
-Vorgabe: Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
+* **[!UICONTROL Viewer-Vorgabe]**
+Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 Dies ist die einzig verfügbare Option beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien. Die angezeigten Viewer-Vorgaben sind ebenfalls intelligent – es werden nur relevante Viewer-Vorgaben angezeigt.
 
-* **[!UICONTROL Viewer-]**
-Modifikatoren Viewer-Modifikatoren haben die Form &quot;name=value pair with a &amp; delimiter&quot;und ermöglichen eine Viewer-Bearbeitung, wie im Viewer-Referenzhandbuch beschrieben. Ein Beispiel für einen Viewer-Modifikator ist posterimage=img.jpg&amp;caption=text.vtt,1 , das ein anderes Bild für die Videominiatur festlegt und dem Video eine Untertiteldatei zuordnet.
+* **[!UICONTROL Viewer-Modifikatoren]**
+Viewer-Modifikatoren haben die Form &quot;name=value pair with a &amp; delimiter&quot;und ermöglichen eine Viewer-Bearbeitung, wie im Viewer-Referenzhandbuch beschrieben. Ein Beispiel für einen Viewer-Modifikator ist posterimage=img.jpg&amp;caption=text.vtt,1 , das ein anderes Bild für die Videominiatur festlegt und dem Video eine Untertiteldatei zuordnet.
 
 * **[!UICONTROL Bildvorgabe]**
 Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-* **[!UICONTROL Bild-]**
-ModifikatorenSie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
+* **[!UICONTROL Bild-Modifikatoren]**
+Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-* ****
-HaltepunkteWenn Sie dieses Asset auf einer responsiven Site verwenden, müssen Sie die Bildhaltepunkte hinzufügen. Bildhaltepunkte müssen durch Kommas (,) voneinander getrennt werden. Diese Option kann verwendet werden, wenn in einer Bildvorgabe keine Höhe oder Breite festgelegt ist.
+* **[!UICONTROL Haltepunkte]**
+Wenn Sie dieses Asset auf einer responsiven Site verwenden, müssen Sie die Bildhaltepunkte hinzufügen. Bildhaltepunkte müssen durch Kommas (,) voneinander getrennt werden. Diese Option kann verwendet werden, wenn in einer Bildvorgabe keine Höhe oder Breite festgelegt ist.
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
-* ****
-TitelÄndern Sie den Titel des Bildes.
+* **[!UICONTROL Titel]**
+Ändern Sie den Titel des Bildes.
 
-* **[!UICONTROL Alt]**
-TextFügen Sie dem Bild einen Titel für die Benutzer hinzu, deren Grafiken deaktiviert sind.
+* **[!UICONTROL Alternativtext]**
+Fügen Sie dem Bild einen Titel für die Benutzer hinzu, deren Grafiken deaktiviert sind.
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-* **[!UICONTROL URL, Öffnen]**
-in: Sie können ein Asset so einrichten, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
+* **[!UICONTROL URL, Öffnen in]**
+Sie können ein Asset so einrichten, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-* **** Breite und  ****
-HöheGeben Sie den Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
+* **[!UICONTROL Breite]** und **[!UICONTROL Höhe]**
+Geben Sie einen Wert in Pixel an, wenn das Bild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, ist das Asset adaptiv.
 
 #### Arbeiten mit Videos {#when-working-with-video}
 
@@ -175,30 +174,30 @@ Verwenden Sie die Dynamic Media-Komponente, um Ihren Web-Seiten dynamische Video
 
 ![chlimage_1-540](assets/chlimage_1-540.png)
 
-Sie müssen die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+Sie müssen die folgenden Dynamic Media-Einstellungen bearbeiten, indem Sie auf **[!UICONTROL Bearbeiten]** in der Komponente.
 
 >[!NOTE]
 >
 >Die Videokomponente für Dynamic Media ist standardmäßig adaptiv. Wenn sie eine feste Größe aufweisen soll, müssen Sie dies in der Komponente auf der Registerkarte **[!UICONTROL Erweitert]** mit **[!UICONTROL Breite]** und [!UICONTROL Höhe] festlegen.
 
-* **[!UICONTROL Viewer-]**
-Vorgabe: Wählen Sie eine vorhandene Video-Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“.
+* **[!UICONTROL Viewer-Vorgabe]**
+Wählen Sie eine vorhandene Video-Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“.
 
-* **[!UICONTROL Viewer-]**
-Modifikatoren Viewer-Modifikatoren haben die Form &quot;name=value pair with a &amp; delimiter&quot;und ermöglichen eine Viewer-Bearbeitung, wie im Referenzhandbuch für Adobe-Viewer beschrieben. Ein Beispiel für einen Viewer-Modifikator ist posterimage=img.jpg&amp;caption=text.vtt,1.
+* **[!UICONTROL Viewer-Modifikatoren]**
+Viewer-Modifikatoren haben die Form &quot;name=value pair with a &amp; delimiter&quot;und ermöglichen eine Viewer-Bearbeitung, wie im Adobe Viewer-Referenzhandbuch beschrieben. Ein Beispiel für einen Viewer-Modifikator ist posterimage=img.jpg&amp;caption=text.vtt,1.
 
    Mit Viewer-Modifikatoren können Sie beispielsweise Folgendes tun:
 
-   * Verknüpfen Sie eine Untertiteldatei mit einem Video [caption.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=de)
-   * Verknüpfen Sie eine Navigationsdatei mit einem Video [Navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=de)
+   * Verknüpfen einer Untertiteldatei mit einem Video [Beschriftung.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=de)
+   * Verknüpfen einer Navigationsdatei mit einem Video [Navigation.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=de)
 
-Sie können die folgenden [!UICONTROL Erweiterte Einstellungen] bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+Sie können Folgendes bearbeiten: [!UICONTROL Erweiterte Einstellungen] durch Klicken auf **[!UICONTROL Bearbeiten]** in der Komponente.
 
-* ****
-TitelÄndern Sie den Titel des Videos.
+* **[!UICONTROL Titel]**
+Ändern Sie den Titel des Videos.
 
-* **** Breite und  ****
-HöheGeben Sie den Wert in Pixel an, wenn das Video eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
+* **[!UICONTROL Breite]** und **[!UICONTROL Höhe]**
+Geben Sie einen Wert in Pixel an, wenn das Video eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
 
 #### Bei der Arbeit mit smartem Zuschneiden {#when-working-with-smart-crop}
 
@@ -208,31 +207,31 @@ Weitere Informationen finden Sie unter [Bildprofile](image-profiles.md).
 
 ![dm-settings-smart-cut](assets/dm-settings-smart-crop.png)
 
-Sie können die folgenden [!UICONTROL Dynamic Media-Einstellungen] bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+Sie können Folgendes bearbeiten: [!UICONTROL Dynamic Media-Einstellungen] durch Klicken auf **[!UICONTROL Bearbeiten]** in der Komponente.
 
 >[!NOTE]
 >
 >Standardmäßig ist die Bildkomponente für Dynamic Media adaptiv. Wenn Sie eine feste Größe einrichten möchten, legen Sie sie auf der Registerkarte [!UICONTROL Erweitert] in der Komponente mit der **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** fest.
 
-* **[!UICONTROL Bild-]**
-ModifikatorenSie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
+* **[!UICONTROL Bild-Modifikatoren]**
+Sie können Bildeffekte anwenden, indem Sie zusätzliche Bildbefehle bereitstellen. Diese werden unter „Bildvorgaben“ und in der Referenz zum Image-Serving-Befehl beschrieben.
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-Sie können die folgenden **[!UICONTROL Erweitert]**-Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
+Sie können Folgendes bearbeiten: **[!UICONTROL Erweitert]** Einstellungen durch Klicken auf **[!UICONTROL Bearbeiten]** in der Komponente.
 
-* ****
-TitelÄndern Sie den Titel des Smart-Zuschnitt-Bildes.
+* **[!UICONTROL Titel]**
+Ändern Sie den Titel des Smart Crop-Bildes.
 
-* **[!UICONTROL Alt]**
-TextFügen Sie dem Smart-Zuschnitt-Bild einen Titel für die Benutzer hinzu, deren Grafiken deaktiviert sind.
+* **[!UICONTROL Alternativtext]**
+Fügen Sie dem smarten Zuschnittbild einen Titel für die Benutzer hinzu, deren Grafiken deaktiviert sind.
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-* **[!UICONTROL URL, Öffnen]**
-in: Sie können ein Asset so einrichten, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
+* **[!UICONTROL URL, Öffnen in]**
+Sie können ein Asset so einrichten, dass ein Link geöffnet wird. Legen Sie die URL fest. Geben Sie in „Öffnen in“ an, ob der Link im selben oder einem neuen Fenster geöffnet werden soll.
 Diese Option ist beim Anzeigen von Bildsets, Rotationssets oder Sets für gemischte Medien nicht verfügbar.
 
-* **** Höhe und  ****
-BreiteGeben Sie den Wert in Pixel an, wenn das smarte Zuschnittbild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
+* **[!UICONTROL Höhe]** und **[!UICONTROL Breite]**
+Geben Sie einen Wert in Pixel an, wenn das smarte Zuschnittbild eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
 
 ### Interaktive Medienkomponente {#interactive-media-component}
 
@@ -250,25 +249,25 @@ Die interaktive Medienkomponente ist intelligent. Je nachdem, ob Sie ein Bild od
 
 Sie können die folgenden allgemeinen Einstellungen **** bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
-* **[!UICONTROL Viewer-]**
-Vorgabe: Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Viewer-Vorgaben müssen veröffentlicht werden, bevor sie verwendet werden können. Siehe „Verwalten von Viewer-Vorgaben“.
+* **[!UICONTROL Viewer-Vorgabe]**
+Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Viewer-Vorgaben müssen veröffentlicht werden, bevor sie verwendet werden können. Siehe „Verwalten von Viewer-Vorgaben“.
 
-* ****
-TitelÄndern Sie den Titel des Videos.
+* **[!UICONTROL Titel]**
+Ändern Sie den Titel des Videos.
 
-* **** Breite und  ****
-HöheGeben Sie den Wert in Pixel an, wenn das Video eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
+* **[!UICONTROL Breite]** und **[!UICONTROL Höhe]**
+Geben Sie einen Wert in Pixel an, wenn das Video eine feste Größe aufweisen soll. Wenn die Werte leer gelassen werden, wird es adaptiv.
 
 Sie können die folgenden Einstellungen von **[!UICONTROL Zu Warenkorb hinzufügen]** bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Bearbeiten]** klicken.
 
-* **[!UICONTROL Produkt-]**
-Asset anzeigen Standardmäßig ist dieser Wert ausgewählt. Das Produkt-Asset zeigt ein Bild des Produkts, wie im Commerce-Modul definiert. Deaktivieren Sie das Kontrollkästchen, um das Produkt-Asset nicht anzuzeigen.
+* **[!UICONTROL Produkt-Asset anzeigen]**
+Standardmäßig ist dieser Wert ausgewählt. Das Produkt-Asset zeigt ein Bild des Produkts, wie im Commerce-Modul definiert. Deaktivieren Sie das Kontrollkästchen, um das Produkt-Asset nicht anzuzeigen.
 
 * **[!UICONTROL Produktpreis anzeigen]**
 Standardmäßig ist dieser Wert ausgewählt. Der Produktpreis gibt den Preis des Artikels an, wie im Commerce-Modul definiert. Deaktivieren Sie das Kontrollkästchen, um den Produktpreis nicht anzuzeigen.
 
-* **[!UICONTROL Produkt-]**
-Formular anzeigen Standardmäßig ist dieser Wert nicht ausgewählt. Das Produktformular beinhaltet jegliche Produktvarianten, etwa hinsichtlich der Größe und der Farbe. Deaktivieren Sie das Kontrollkästchen, um die Produktvarianten nicht anzuzeigen.
+* **[!UICONTROL Produktformular anzeigen]**
+Standardmäßig ist dieser Wert nicht ausgewählt. Das Produktformular beinhaltet jegliche Produktvarianten, etwa hinsichtlich der Größe und der Farbe. Deaktivieren Sie das Kontrollkästchen, um die Produktvarianten nicht anzuzeigen.
 
 ### Komponente für Panoramamedien {#panoramic-media-component}
 
@@ -283,8 +282,8 @@ Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama
 
 Sie können die folgenden erweiterten Einstellungen bearbeiten, indem Sie in der Komponente auf **[!UICONTROL Konfigurieren]** tippen.
 
-* **[!UICONTROL Viewer-]**
-Vorgabe: Wählen Sie einen vorhandenen Viewer aus dem Dropdown-Menü &quot;Viewer-Vorgabe&quot;aus.
+* **[!UICONTROL Viewer-Vorgabe]**
+Wählen Sie einen vorhandenen Viewer aus dem Dropdown-Menü &quot;Viewer-Vorgabe&quot;aus.
 
 Wenn die gesuchte Viewer-Vorgabe nicht angezeigt wird, stellen Sie sicher, dass sie veröffentlicht wurde. Sie müssen Viewer-Vorgaben veröffentlichen, bevor Sie sie verwenden können. Siehe [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md).
 

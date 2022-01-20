@@ -1,8 +1,8 @@
 ---
 title: Zuweisungsgrundlagen
-seo-title: Zuweisungsgrundlagen
+seo-title: Assignments Essentials
 description: Übersicht über Zuweisungsfunktionen für Aktivierungs-Communities
-seo-description: Übersicht über Zuweisungsfunktionen für Aktivierungs-Communities
+seo-description: Assignments feature overview for enablement communities
 uuid: 8310decf-174d-4e93-8c92-4a9583077b7a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,18 +12,18 @@ discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
 exl-id: 310d9086-36b6-42ea-835f-c77d75e880cb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '213'
 ht-degree: 14%
 
 ---
 
 # Zuweisungsgrundlagen {#assignments-essentials}
 
-Diese Seite enthält die wesentlichen Informationen für die Arbeit mit der Zuweisungsfunktion von [Aktivierungs-Community](overview.md#enablement-community)-Sites.
+Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der Zuweisungsfunktion von [Aktivierungs-Community](overview.md#enablement-community) Sites.
 
 Die Zuweisungsfunktion ist die Möglichkeit, Aktivierungsressourcen und Lernpfade Mitgliedern von Aktivierungsgemeinschaften zuzuweisen.
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -80,11 +80,11 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 | Fertig stellen | Bestanden |
 | Fertig stellen | Fehler |
 
-## Grundlagen für serverseitige {#essentials-for-server-side}
+## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 ### Zuweisungsfunktion {#assignments-function}
 
-Eine Community-Site-Struktur, die die [Zuweisungsfunktion](functions.md#assignments-function) enthält, enthält eine konfigurierte ` [assignments](assignments.md)`-Komponente.
+Eine Community-Site-Struktur mit [Zuweisungsfunktion](functions.md#assignments-function)enthält eine konfigurierte ` [assignments](assignments.md)` -Komponente.
 
 ### Referenz-APIs {#reference-apis}
 

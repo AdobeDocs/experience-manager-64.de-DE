@@ -1,8 +1,8 @@
 ---
 title: JavaAPI-Schnellstart für den Application Manager-Dienst (SOAP)
-seo-title: JavaAPI-Schnellstart für den Application Manager-Dienst (SOAP)
+seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Verwenden Sie den Application Manager-Dienst, um Anwendungen mithilfe des Schnellstarts zur Java-API bereitzustellen und zu entfernen.
-seo-description: Verwenden Sie den Application Manager-Dienst, um Anwendungen mithilfe des Schnellstarts zur Java-API bereitzustellen und zu entfernen.
+seo-description: Use the Application Manager service to deploy and remove applications using the Java API Quick Start.
 uuid: 01a9bce3-868b-495b-bdee-bc60f029129e
 contentOwner: admin
 content-type: reference
@@ -13,12 +13,12 @@ role: Developer
 exl-id: 1d93a7c2-631a-4cf7-938f-0133536c7e09
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '211'
 ht-degree: 1%
 
 ---
 
-# Application Manager Service JavaAPI-Schnellstart (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# Schnellstart JavaAPI für den Application Manager-Dienst (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
 Java API Quick Start (SOAP) ist für den Application Manager-Dienst verfügbar.
 
@@ -38,7 +38,7 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 ## Schnellstart (SOAP-Modus): Bereitstellen von Anwendungen mit der Java-API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Anwendung basierend auf einer vorhandenen LCA-Datei namens *EncryptDocument.lca* importiert.
+Das folgende Java-Codebeispiel importiert eine Anwendung basierend auf einer vorhandenen LCA-Datei mit dem Namen *EncryptDocument.lca*.
 
 ```as3
  /* 
@@ -140,7 +140,7 @@ Im folgenden Java-Codebeispiel wird eine Anwendung basierend auf einer vorhanden
 
 ## Schnellstart (SOAP-Modus): Entfernen einer Anwendung mit der Java-API {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Anwendung mit dem Namen *EncryptDocument* entfernt.
+Im folgenden Java-Codebeispiel wird eine Anwendung mit dem Namen *EncryptDocument*.
 
 ```as3
  /* 

@@ -1,19 +1,19 @@
 ---
 title: Siehe Reader Extending richtliniengeschützter PDF-Dokumente mit Portable Protection Library
-seo-title: Siehe Reader Extending richtliniengeschützter PDF-Dokumente mit Portable Protection Library
+seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
 description: 'Reader Extensions aktivieren interaktive Funktionen in Adobe PDF-Dokumenten über Acrobat Reader. Sie können die Portable Protection Library (PPL) zum Reader Extending von durch DRM geschützten PDF-Dokumenten verwenden. '
-seo-description: 'Reader Extensions aktivieren interaktive Funktionen in Adobe PDF-Dokumenten über Acrobat Reader. Sie können die Portable Protection Library (PPL) zum Reader Extending von durch DRM geschützten PDF-Dokumenten verwenden. '
+seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
 uuid: 0da17641-d24c-43c2-b918-8b5abe1e5473
 contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
-feature: Dokumentensicherheit
+feature: Document Security
 exl-id: aa32050e-fe52-4823-b826-66ea06e1a6bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '796'
 ht-degree: 94%
 
 ---
@@ -28,7 +28,7 @@ Verwenden Sie Reader Extensions, um interaktive Funktionen in Adobe PDF-Dokument
 
 Sie können die Portable Protection Library verwenden, um Richtlinien auf das Dokument anzuwenden, ohne dass das Dokument über das Netzwerk gesendet werden muss. Über das Netzwerk werden nur Sicherheitsberechtigungen und Details zu Schutzrichtlinien übertragen. Das Originaldokument verlässt den Client nicht und und die Schutzrichtlinien werden lokal auf dem Client angewendet.
 
-## Reader Extending von durch Document Security richtliniengeschützten Dokumenten  {#reader-extending-document-security-policy-protected-pdf-documents}
+## Reader Extending von durch Document Security richtliniengeschützten Dokumenten {#reader-extending-document-security-policy-protected-pdf-documents}
 
 Die richtliniengeschützten Dokumente sind verschlüsselte Dokumente. Sie können keine standardmäßigen Reader Extension-APIs verwenden, um Verwendungsrechte für richtliniengeschützte PDF-Dokumente anzuwenden, zu entfernen und abzurufen. Nur der Reader Extensions-Dienst von Portable Protection Library bietet APIs, um Verwendungsrechte für durch Document Security richtliniengeschützte PDF-Dokumente anzuwenden, zu entfernen und abzurufen.
 
@@ -77,7 +77,7 @@ Mit der Java-API `applyUsageRights` können Sie Verwendungsrechte für PDF-Dokum
 
 ### Abrufen von angewendeten Verwendungsrechten für ein richtliniengeschütztes PDF-Dokument   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
 
-Sie können die Java-API `getDocumentUsageRights`verwenden, um die auf ein richtliniengeschütztes PDF-Dokument angewendeten Verwendungsrechte für die Reader-Erweiterung abzurufen. Durch Abrufen von Informationen zu Verwendungsrechten erfahren Sie, welche Funktionen Reader Extension für das richtliniengeschützte PDF-Dokument aktiviert hat.
+Sie können die `getDocumentUsageRights`Java-API zum Abrufen der auf ein richtliniengeschütztes PDF-Dokument angewendeten Verwendungsrechte für die Reader-Erweiterung. Durch Abrufen von Informationen zu Verwendungsrechten erfahren Sie, welche Funktionen Reader Extension für das richtliniengeschützte PDF-Dokument aktiviert hat.
 
 **Syntax:** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
 

@@ -1,8 +1,8 @@
 ---
 title: Das Arbeiten mit Formularsätzen in AEM Forms Workspace
-seo-title: Das Arbeiten mit Formularsätzen in AEM Forms Workspace
+seo-title: Working with Formsets in AEM Forms workspace
 description: Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die gruppiert sind und als einzelner Formularsatz dem Endbenutzern präsentiert wird. Erfahren Sie, wie Sie mit Formularsätzen in AEM Forms Workspace arbeiten können.
-seo-description: Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die gruppiert sind und als einzelner Formularsatz dem Endbenutzern präsentiert wird. Erfahren Sie, wie Sie mit Formularsätzen in AEM Forms Workspace arbeiten können.
+seo-description: A formset is a collection of HTML5 forms grouped and presented as a single set of forms to end users. Learn how you can work with formsets in AEM Forms workspace.
 uuid: 77f81465-bd60-4aee-8507-585fe08adb78
 contentOwner: vishgupt
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
 exl-id: 4e39f6dd-b7a3-4c6c-be1f-66b9a5743352
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 73%
+source-wordcount: '346'
+ht-degree: 70%
 
 ---
 
@@ -23,18 +23,18 @@ Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die gruppiert sind und 
 
 AEM Forms Workspace unterstützt Formularsätze. Mit Formularsätzen können mehrere Formulare, die zu einem Dienst oder Prozess gehören, gruppiert werden, um einen Geschäftsprozess zu automatisieren und sie den Endbenutzern zu präsentieren. In einem solchen Fall können die Benutzer den gesamten Formularsatz als einzelnes Formular ausfüllen und es besteht keine Notwendigkeit, einzelne Formulare oder Prozesse zu archivieren, zu versenden oder nachzuverfolgen.
 
-## Ein Formularsatz in der AEM Forms Workspace-App dem Startpunkt zuweisen{#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br} 
+## Ein Formularsatz in der AEM Forms Workspace-App dem Startpunkt zuweisen  {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
 1. Erstellen Sie den Geschäftsprozess-Arbeitsablauf in Workbench. Weitere Informationen finden Sie unter [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63).
-1. Wählen Sie in den Prozesseigenschaften des Startpunkts **Verwenden Sie ein CRX-Asset** in Präsentation und Daten.
+1. Wählen Sie in den Prozesseigenschaften des Startpunkts die Option **Verwenden eines CRX-Assets** in Präsentation und Daten.
 
-   ![3-1](assets/1-1.png)
+   ![1-1](assets/1-1.png)
 
-1. Klicken Sie neben dem CRX-Asset-Pfad auf ![Durchsuchen](assets/browse.png) (Durchsuchen). Das Dialogfeld „Formularelement“ wird angezeigt.
+1. Klicken ![durchsuchen](assets/browse.png) (Durchsuchen) neben dem CRX-Asset-Pfad. Das Dialogfeld „Formularelement“ wird angezeigt.
 
    ![2](assets/2.png)
 
-1. Klicken Sie auf die Registerkarte **Formularsatz**, wählen Sie den entsprechenden Formularsatz aus der Liste aus und klicken Sie dann auf **OK**.
+1. Klicken Sie auf **Formularsatz** , wählen Sie den gewünschten Formularsatz aus der Liste aus und klicken Sie auf **OK**.
 
 1. Stellen Sie die Anwendung bereit, nachdem Sie andere relevante Prozesseigenschaften aktualisiert haben.
 

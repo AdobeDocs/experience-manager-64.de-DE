@@ -1,8 +1,8 @@
 ---
 title: Hinzufügen benutzerdefinierter Aktionen zu Elementen im Formularauflister
-seo-title: Hinzufügen benutzerdefinierter Aktionen zu Elementen im Formularauflister
+seo-title: Adding custom action on form lister items
 description: Formularentwickler können der Auflistung von Formularen auf der Forms Portal-Seite weitere Aktionen hinzufügen. Standardmäßig können Sie über die Formularauflistung auf das Formular zugreifen, es ausfüllen und versenden.
-seo-description: Formularentwickler können der Auflistung von Formularen auf der Forms Portal-Seite weitere Aktionen hinzufügen. Standardmäßig können Sie über die Formularauflistung auf das Formular zugreifen, es ausfüllen und versenden.
+seo-description: Form developers can add more actions to the listing of forms on the forms portal page. By default, the form listing allows you to access the form, fill it, and submit it.
 uuid: 02c64f7d-f726-4a5b-a303-ec96934e9c01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 0e0a9b6b-fd2f-4cec-b233-500c940ee4d5
 exl-id: d8f60be3-474a-4dd1-aaa5-7b6a97e1a9bd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '265'
 ht-degree: 100%
 
 ---
 
-# Hinzufügen benutzerdefinierter Aktionen zu Elementen im Formularauflister  {#adding-custom-action-on-form-lister-items}
+# Hinzufügen benutzerdefinierter Aktionen zu Elementen im Formularauflister {#adding-custom-action-on-form-lister-items}
 
 In AEM Forms können Sie eine Portalseite erstellen, in der die verfügbaren Formulare aufgelistet werden. Standardmäßig können Sie auf einer Portalseite nach Formularen suchen und sie auflisten. Sie können Formulare öffnen, um ihre Daten einzutragen und zu versenden. Bei Formularen, die auf einer Portalseite gelistet sind, stehen für den sofortigen Einsatz nur Render-Aktionen zur Verfügung. Weitere Informationen über die verfügbaren Aktionen auf einer Portalseite finden Sie unter [Erstellen einer Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md).
 

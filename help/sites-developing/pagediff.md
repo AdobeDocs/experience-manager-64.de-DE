@@ -1,8 +1,8 @@
 ---
 title: Entwicklung und Seitenvergleich
-seo-title: Entwicklung und Seitenvergleich
+seo-title: Developing and Page Diff
 description: Entwicklung und Seitenvergleich
-seo-description: 'null'
+seo-description: null
 uuid: 48bbeca3-fe16-48ef-bb4d-ac605fe0ca76
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '479'
 ht-degree: 73%
 
 ---
@@ -43,7 +43,7 @@ Da bei Verwendung des Seitenvergleichsmechanismus AEM die vorherige Version der 
 
 >[!CAUTION]
 >
->Um die Seitenvergleichsfunktion verwenden zu können, muss der Benutzer über die Berechtigung **Ändern/Erstellen/Löschen** für den Knoten `/content/versionhistory` verfügen.
+>Um die Seitenvergleichsfunktion verwenden zu können, muss der Benutzer über die **Ändern/Erstellen/Löschen** Berechtigung auf dem Knoten `/content/versionhistory`.
 
 ### Ab AEM 6.4.3 {#as-of-aem}
 
@@ -57,7 +57,7 @@ Es wird automatisch eine Bereinigungsaufgabe ausgeführt, um diesen temporären 
 
 ## Entwicklerbeschränkungen {#developer-limitations}
 
-Zuvor musste in der klassischen Benutzeroberfläche bei der Entwicklung besonders berücksichtigt werden, um die AEM zu vereinfachen (z. B. die Verwendung der Tag-Bibliothek `cq:text` oder die benutzerdefinierte Integration des `DiffService`-OSGi-Dienstes in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
+Zuvor musste in der klassischen Benutzeroberfläche bei der Entwicklung besondere Aufmerksamkeit geschenkt werden, um die AEM (z. B. `cq:text` Tag-Bibliothek oder benutzerdefinierte Integration der `DiffService` OSGi-Dienst in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
 
 Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
 

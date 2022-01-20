@@ -1,8 +1,8 @@
 ---
 title: Correspondence Management | Umgang mit Benutzerdaten
-seo-title: Correspondence Management | Umgang mit Benutzerdaten
+seo-title: Correspondence Management | Handling user data
 description: Mit Correspondence Management von AEM Forms können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Erfahren Sie, wie Sie das Speichern von Daten für Entwurf- und gesendete Briefe im AEM Repository konfigurieren, auf gespeicherte Daten zugreifen und gespeicherte Daten löschen.
-seo-description: Mit Correspondence Management von AEM Forms können Sie sichere und personalisierte Kundenkorrespondenzen erstellen, verwalten und optimieren. Erfahren Sie, wie Sie das Speichern von Daten für Entwurf- und gesendete Briefe im AEM Repository konfigurieren, auf gespeicherte Daten zugreifen und gespeicherte Daten löschen.
+seo-description: AEM Forms Correspondence Management enables you to create, manage, and streamline secure and personalized customer correspondences. Learn how to configure storing data for draft and submitted letters in AEM repository, access stored data, and delete stored data.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ role: Admin
 exl-id: 4a6b3403-2941-4098-bb30-769281adedc2
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 83%
+source-wordcount: '572'
+ht-degree: 86%
 
 ---
 
@@ -40,7 +40,7 @@ Abhängig von der für Ihre AEM-Bereitstellung konfigurierten Datenspeicherpersi
    <td><p><strong>Speicherort</strong></p> </td> 
   </tr>
   <tr>
-   <td><p>Default</p> </td> 
+   <td><p>Standard</p> </td> 
    <td><p>AEM-Repository der Veröffentlichungsinstanz und der Author-Instanzen, die in der umgekehrten Replikationskonfiguration angegeben wurden</p> </td> 
    <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code> </p> </td> 
   </tr>
@@ -58,7 +58,7 @@ Im oben angegebenen AEM-Repository-Speicherort:
 * `[node-id]` ist die ID, die dem Ordner mit dem Brief zugewiesen wurde
 * `[letter-instance-name]` ist der Name, der beim Speichern oder Senden eines Briefes angegeben wurde
 
-Unter dem Knoten [letter-instance-name] wird die folgende Knotenstruktur erstellt und die Daten für jede Briefinstanz werden im AEM Repository gespeichert:
+Unter dem [letter-instance-name] -Knoten wird die folgende Knotenstruktur erstellt und die Daten für jede Briefinstanz werden im AEM-Repository gespeichert:
 
 | Knoten | Beschreibung |
 |---|---|

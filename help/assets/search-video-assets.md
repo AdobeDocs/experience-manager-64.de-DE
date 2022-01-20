@@ -1,6 +1,6 @@
 ---
 title: Suchen nach Video-Assets
-description: Verwenden Sie Suchbegriffe, Dateieigenschaften wie MIME-Typ, Größe oder kürzlich geänderten Zeitstempel, um Ihre Datei schnell in [!DNL Experience Manager] Assets zu finden.
+description: Verwenden Sie Keywords, Dateieigenschaften wie MIME-Typ, Größe oder kürzlich geänderten Zeitstempel, um Ihre Datei schnell in [!DNL Experience Manager] Assets.
 contentOwner: AG
 feature: Video,Search
 role: User
@@ -22,8 +22,8 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 
 | Suchfeld | Sucheigenschaftswerte |
 |---|---|
-| MIME-Typen | [!UICONTROL Bilder],  [!UICONTROL Dokumente],  [!UICONTROL Multimedia],  [!UICONTROL Archive] oder Sonstige. |
-| [!UICONTROL Letzte Änderung] | Stunde, Tag, Woche, Monat oder Jahr |
+| MIME-Typen | [!UICONTROL Bilder], [!UICONTROL Dokumente], [!UICONTROL Multimedia], [!UICONTROL Archive]oder Sonstige. |
+| [!UICONTROL Zuletzt geändert] | Stunde, Tag, Woche, Monat oder Jahr |
 | [!UICONTROL Dateigröße] | Klein, Mittel oder Groß |
 | [!UICONTROL Veröffentlichungsstatus] | Veröffentlicht oder Veröffentlichung rückgängig gemacht |
 | [!UICONTROL Genehmigungsstatus] | Genehmigt oder Abgelehnt |

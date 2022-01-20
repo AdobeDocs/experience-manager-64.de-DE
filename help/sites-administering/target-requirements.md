@@ -1,8 +1,8 @@
 ---
 title: Voraussetzungen für die Integration mit Adobe Target
-seo-title: Voraussetzungen für die Integration mit Adobe Target
+seo-title: Prerequisites for Integrating with Adobe Target
 description: Hier finden Sie alle Informationen über die Voraussetzungen für die Integration mit Adobe Target.
-seo-description: Hier finden Sie alle Informationen über die Voraussetzungen für die Integration mit Adobe Target.
+seo-description: Find out about the prerequisites for integrating with Adobe Target.
 uuid: 88be6a97-c964-4e42-a3a2-ed9b2c9ee49e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 exl-id: f47e5c6a-ed52-4493-83bd-73e5e693d117
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 75%
+source-wordcount: '524'
+ht-degree: 74%
 
 ---
 
@@ -36,7 +36,7 @@ Der Clientcode identifiziert beim Aufrufen des Adobe Target-Servers das Adobe 
 
 ## Aktivieren des Target-Replikationsagenten {#enabling-the-target-replication-agent}
 
-Der Test- und Target-[Replikationsagent](/help/sites-deploying/replication.md) muss in der Autoreninstanz aktiviert sein. Beachten Sie, dass dieser Replikationsagent nicht standardmäßig aktiviert ist, wenn Sie den Ausführungsmodus [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) zum Installieren von AEM verwendet haben. Weitere Informationen zum Speichern Ihrer Produktionsumgebung finden Sie in der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
+Test und Target [Replikationsagent](/help/sites-deploying/replication.md) muss in der Autoreninstanz aktiviert sein. Beachten Sie, dass dieser Replikationsagent nicht standardmäßig aktiviert ist, wenn Sie die [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) Ausführungsmodus zum Installieren von AEM. Weitere Informationen zum Speichern Ihrer Produktionsumgebung finden Sie in der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
 
 1. Klicken oder tippen Sie auf der AEM-Homepage auf **Tools** > **Bereitstellung** > **Replikation**.
 1. Klicken oder tippen Sie auf **Agenten für Autor**.
@@ -47,21 +47,21 @@ Der Test- und Target-[Replikationsagent](/help/sites-deploying/replication.md) m
    >
    >Bei der Konfiguration des Test &amp; Target-Replikationsagenten wird auf der Registerkarte **Transport** für den URI standardmäßig **tnt:///** festgelegt. Ersetzen Sie diesen URI nicht durch **https://admin.testandtarget.omniture.com**.
    >
-   >Beim Testen der Verbindung mit **tnt:///** wird ein Fehler ausgegeben. Dieses Verhalten wird erwartet, da dieser URI nur für die interne Verwendung vorgesehen ist und nicht mit **Testverbindung** verwendet werden sollte.
+   >Beim Testen der Verbindung mit **tnt:///** wird ein Fehler ausgegeben. Dies ist erwartungsgemäß, da dieser URI nur für die interne Verwendung vorgesehen ist und nicht mit **Verbindung testen**.
 
 ## Sichern des Aktivitätseinstellungsknotens {#securing-the-activity-settings-node}
 
-Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Dienst zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 
-Der Knoten **cq:ActivitySettings** ist in CRXDE Lite unter `/content/campaigns/*nameofbrand*`* *unter dem Aktivitätsknoten jcr:content verfügbar;* *z. B. `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
+Die **cq:ActivitySettings** -Knoten ist in CRXDE Lite verfügbar unter `/content/campaigns/*nameofbrand*`* *unter dem Aktivitäts-Knoten jcr:content ;* *Beispiel `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
 
-Der Knoten **cq:ActivitySettings** unter dem jcr:content der Aktivität wird durch die folgenden ACLs geschützt:
+Die **cq:ActivitySettings** -Knoten unter &quot;jcr:content&quot;der Aktivität wird durch die folgenden ACLs geschützt:
 
 * Alles für jeden verweigern
 * „jcr:read,rep:write“ für „target-activity-authors“ zulassen („author“ ist standardmäßig ein Mitglied dieser Gruppe)
 * „jcr:read,rep:write“ für „targetservice“ zulassen
 
-Diese Einstellungen gewährleisten, dass normale Benutzer keinen Zugriff auf die Knoteneigenschaften haben. Verwenden Sie dieselben ACLs für „author“ und „publish“. Weitere Informationen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) .
+Diese Einstellungen gewährleisten, dass normale Benutzer keinen Zugriff auf die Knoteneigenschaften haben. Verwenden Sie dieselben ACLs für „author“ und „publish“. Siehe [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) für weitere Informationen.
 
 ## Konfigurieren des AEM-Externalizer {#configuring-the-aem-externalizer}
 

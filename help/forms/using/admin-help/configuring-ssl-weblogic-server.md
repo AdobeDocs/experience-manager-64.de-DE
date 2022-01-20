@@ -1,8 +1,8 @@
 ---
 title: SSL für WebLogic Server konfigurieren
-seo-title: SSL für WebLogic Server konfigurieren
+seo-title: Configuring SSL for WebLogic Server
 description: Erfahren Sie, wie Sie eine SSL-Berechtigung für die Verwendung auf dem WebLogic Server erstellen und wie Sie SSL für WebLogic Server konfigurieren.
-seo-description: Erfahren Sie, wie Sie eine SSL-Berechtigung für die Verwendung auf dem WebLogic Server erstellen und wie Sie SSL für WebLogic Server konfigurieren.
+seo-description: Learn how to create an SSL credential for use on WebLogic server and how to configure SSL for WebLogic Server.
 uuid: 8ee979fd-2615-451b-a607-4f73ecfed4f9
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 exl-id: 5bbb51d8-db91-458a-bfdd-e3f874ef1723
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1049'
 ht-degree: 74%
 
 ---
@@ -26,7 +26,7 @@ Zum Konfigurieren von SSL unter WebLogic Server benötigen Sie eine SSL-Berechti
 
 Konfigurieren Sie WebLogic anschließend so, dass Ihr benutzerdefinierter Identitäts-Keystore und Ihr benutzerdefinierter Trust-Keystore verwendet werden. Deaktivieren Sie außerdem die Überprüfungsfunktion des Hostnamens in WebLogic, da der Name des Computers, der als Host für WebLogic dient, nicht in dem eindeutigen Namen enthalten ist, mit dem die Keystore-Dateien erstellt wurden.
 
-## SSL-Berechtigung für die Verwendung unter WebLogic Server erstellen  {#creating-an-ssl-credential-for-use-on-weblogic-server}
+## SSL-Berechtigung für die Verwendung unter WebLogic Server erstellen {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
 Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und muss mehrere Optionen und Optionswerte enthalten, die in der folgenden Tabelle aufgeführt sind.
 
@@ -84,7 +84,7 @@ Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und m
   <tr> 
    <td><p>-keypass</p></td> 
    <td><p>Das Kennwort, das den privaten Schlüssel des Schlüsselpaars schützt.</p></td> 
-   <td><p>Verwenden Sie dasselbe Kennwort wie für die Option <code>-storepass</code> . Das Schlüsselkennwort muss mindestens sechs Zeichen aufweisen.</p></td> 
+   <td><p>Verwenden Sie dasselbe Kennwort wie für <code>-storepass</code> -Option. Das Schlüsselkennwort muss mindestens sechs Zeichen aufweisen.</p></td> 
   </tr> 
   <tr> 
    <td><p>-dname</p></td> 
@@ -104,16 +104,16 @@ Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und m
 
 Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei „keytool.html“, die sich in der JDK-Dokumentation befindet.
 
-## Benutzerdefinierte Identitäts- und Trust-Keystores erstellen  {#create-the-custom-identity-and-trust-keystores}
+## Benutzerdefinierte Identitäts- und Trust-Keystores erstellen {#create-the-custom-identity-and-trust-keystores}
 
-1. Navigieren Sie an einer Eingabeaufforderung zu *[appserverdomain]*/adobe/*[Servername]*.
+1. Wechseln Sie an einer Eingabeaufforderung zum *[appserverdomain]*/adobe/*[Servername]*.
 1. Geben Sie den folgenden Befehl ein:
 
    `[JAVA_HOME]/bin/keytool -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass store_password -keypass key_password -dname "CN=Hostname, OU=Group Name, O=Company Name, L=City Name, S=State,C=Country Code`
 
    >[!NOTE]
    >
-   >Ersetzen Sie `[JAVA_HOME]`*durch den Ordner, in dem das JDK installiert ist, und ersetzen Sie kursiv den Text durch die Werte, die Ihrer Umgebung entsprechen.*
+   >Ersetzen `[JAVA_HOME]`*durch den Ordner, in dem das JDK installiert ist, und ersetzen Sie kursiv den Text durch die Werte, die Ihrer Umgebung entsprechen.*
 
    Beispiel:
 
@@ -121,7 +121,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   Die Custom Identity Keystore-Datei mit dem Namen &quot;ads-credentials.jks&quot;wird im Verzeichnis [appserverdomain]/adobe/[Servername] erstellt.
+   Die Custom Identity Keystore-Datei mit dem Namen &quot;ads-credentials.jks&quot;wird im [appserverdomain]/adobe/[Servername] Verzeichnis.
 
 1. Extrahieren Sie das Zertifikat aus dem Keystore „ads-credentials“, indem Sie den folgenden Befehl eingeben:
 
@@ -133,7 +133,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
 
    >[!NOTE]
    >
-   >Ersetzen Sie `[JAVA_HOME]` durch den Ordner, in dem das JDK installiert ist, und ersetzen Sie `store`*_* `password`* durch das Kennwort für den benutzerdefinierten Identitäts-Keystore.*
+   >Ersetzen `[JAVA_HOME]` durch den Ordner, in dem das JDK installiert ist, und ersetzen Sie `store`*_* `password`* mit dem Kennwort für den benutzerdefinierten Identitäts-Keystore.*
 
    Beispiel:
 
@@ -141,7 +141,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   Die Zertifikatdatei &quot;ads-ca.cer&quot;wird im Verzeichnis [appserverdomain]/adobe/[*Servername*] erstellt.
+   Die Zertifikatdatei &quot;ads-ca.cer&quot;wird im [appserverdomain]/adobe/[*Servername*] Verzeichnis.
 
 1. Kopieren Sie die Datei „ads-ca.cer“ auf alle Hostcomputer, für die eine sichere Kommunikation mit dem Anwendungsserver erforderlich ist.
 1. Fügen Sie das Zertifikat mit dem folgenden Befehl in eine neue Keystore-Datei ein (d. h. in den benutzerdefinierten Trust-Keystore):
@@ -150,7 +150,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
 
    >[!NOTE]
    >
-   >Ersetzen Sie `[JAVA_HOME]` durch den Ordner, in dem das JDK installiert ist, und ersetzen Sie `store`*_* `password` und `key`*_* `password` *durch Ihre eigenen Kennwörter.*
+   >Ersetzen `[JAVA_HOME]` durch den Ordner, in dem das JDK installiert ist, und ersetzen Sie `store`*_* `password` und `key`*_* `password` *mit eigenen Passwörtern.*
 
    Beispiel:
 
@@ -158,14 +158,14 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass Password1 -keypass Password1
    ```
 
-Die Custom Trust-Keystore-Datei mit dem Namen &quot;ads-ca.jks&quot;wird im Verzeichnis [appserverdomain]/adobe/[server] erstellt.
+Die Custom Trust-Keystore-Datei mit dem Namen &quot;ads-ca.jks&quot;wird im [appserverdomain]/adobe/[server] Verzeichnis.
 
 Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore und Ihr benutzerdefinierter Trust-Keystore verwendet werden. Deaktivieren Sie außerdem die Überprüfungsfunktion des Hostnamens in WebLogic, da der Name des Computers, der als Host für WebLogic Server dient, nicht in dem eindeutigen Namen enthalten ist, mit dem die Keystore-Dateien erstellt wurden.
 
-## WebLogic zur Verwendung mit SSL konfigurieren  {#configure-weblogic-to-use-ssl}
+## WebLogic zur Verwendung mit SSL konfigurieren {#configure-weblogic-to-use-ssl}
 
-1. Starten Sie WebLogic Server Administration Console, indem Sie in die Adresszeile eines Webbrowsers `https://`*[Hostname ]*`:7001/console` eingeben.
-1. Wählen Sie unter &quot;Environment&quot;in Domain Configurations **Servers > [server] > Configuration > General**.
+1. Starten Sie WebLogic Server Administration Console, indem Sie `https://`*[Hostname ]*`:7001/console` in der Adresszeile eines Webbrowsers.
+1. Wählen Sie unter &quot;Umgebung&quot;unter &quot;Domain Configurations&quot;die Option **Server > [server] > Konfiguration > Allgemein**.
 1. Vergewissern Sie sich, dass unter „General“ im Bereich „Configuration“die Optionen **Listen Port Enabled** und **SSL Listen Port Enabled** ausgewählt sind. Ist es nicht aktiviert, führen Sie folgende Schritte aus:
 
    1. Klicken Sie im Change Center auf **Lock &amp; Edit**, um Auswahlen und Werte zu ändern.
@@ -173,13 +173,13 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
 1. Wenn es sich hierbei um einen Managed Server handelt, ändern Sie den Wert für „Listen Port“ in einen nicht verwendeten Anschlusswert (z. B. 8001) und „SSL Listen Port“ in einen nicht verwendeten Anschlusswert (z. B. 8002). Bei einem eigenständigen Server ist der standardmäßige SSL-Anschluss 7002.
 1. Klicken Sie auf **Release Configuration**.
-1. Klicken Sie unter &quot;Environment&quot;in Domain Configurations auf **Servers > [*Managed Server*] > Configuration > General**.
+1. Klicken Sie unter &quot;Umgebung&quot;in &quot;Domain Configurations&quot;auf **Server > [*Verwalteter Server*] > Konfiguration > Allgemein**.
 1. Wählen Sie in den Konfigurationen unter „General“ **Keystores**.
 1. Klicken Sie im Change Center auf **Lock &amp; Edit**, um Auswahlen und Werte zu ändern.
 1. Klicken Sie auf **Change**, um eine Keystore-Liste als Dropdown-Liste anzuzeigen und wählen Sie **Custom Identity And Custom Trust**.
 1. Geben Sie unter „Identity“ die folgenden Werte an:
 
-   **Custom Identity Keystore**:  *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, wobei *[appserverdomain] *der tatsächliche Pfad und der  *[Server-]* Name der Name des Anwendungsservers ist.
+   **Benutzerdefinierter Identitäts-Keystore**: *[appserverdomain]*/adobe/*[Servername]*/ads-credentials.jks, wobei *[appserverdomain] *ist der tatsächliche Pfad und *[Servername]* ist der Name des Anwendungsservers.
 
    **Custom Identity Keystore Type**: JKS
 
@@ -187,7 +187,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
 1. Geben Sie unter „Trust“ die folgenden Werte an:
 
-   **Custom Trust Keystore File Name**:  `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, wobei  `*[appserverdomain]*` der tatsächliche Pfad ist
+   **Benutzerdefinierter Trust Keystore-Dateiname**: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, wobei `*[appserverdomain]*` ist der tatsächliche Pfad
 
    **Custom Trust Keystore Type**: JKS
 
@@ -203,7 +203,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
 1. Klicken Sie auf **Release Configuration**.
 
-## Überprüfungsfunktion des Hostnamens deaktivieren  {#disable-the-hostname-verification-feature}
+## Überprüfungsfunktion des Hostnamens deaktivieren {#disable-the-hostname-verification-feature}
 
 1. Klicken Sie auf der Registerkarte „Configuration“ auf „SSL“.
 1. Wählen Sie unter „Advanced“ in der Liste „Hostname Verification“ den Eintrag „None“.

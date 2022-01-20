@@ -16,7 +16,7 @@ ht-degree: 72%
 
 Der Asset-Editor ist der primäre Zugriffspunkt, den Benutzer einer Adobe Enterprise Manager-Website verwenden, um die digitalen Assets in Ihrem Repository zu finden, anzuzeigen und zu bearbeiten.
 
-Als Entwickler von [!DNL Experience Manager] können Sie den Asset-Editor auf verschiedene Arten anpassen und erweitern, indem Sie Benutzern eine speziell auf sie zugeschnittene Benutzeroberfläche und eine Reihe von Funktionen präsentieren.
+Als [!DNL Experience Manager] Sie können den Asset-Editor auf verschiedene Arten anpassen und erweitern, indem Sie Benutzern eine speziell auf sie zugeschnittene Benutzeroberfläche und eine Reihe von Funktionen zur Verfügung stellen.
 
 Die folgenden Funktionen können angepasst bzw. verbessert werden:
 
@@ -37,6 +37,6 @@ Die folgenden Aspekte des Erscheinungsbilds des Asset-Editors sind anpassbar:
 
 ## Anpassen von Ausgabeformaten {#customizing-renditions}
 
-In der [!DNL Experience Manager Assets]-Terminologie ist eine Ausgabedarstellung das Formular, in dem ein Asset angezeigt wird. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
+In [!DNL Experience Manager Assets] Terminologie Ein Ausgabeformat ist das Formular, in dem ein Asset angezeigt wird. Im Allgemeinen kann ein Asset mehrere Ausgabeformate haben. Z. B. kann ein Farbbild in seiner Originalgröße ausgegeben, verkleinert oder verkleinert und in Graustufen konvertiert sein.
 
 Die Ausgabeformate, in denen ein bestimmtes Asset verfügbar ist, können angepasst werden und es können neue Ausgaben erstellt haben.

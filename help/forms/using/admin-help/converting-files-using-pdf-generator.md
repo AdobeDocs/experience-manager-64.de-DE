@@ -1,8 +1,8 @@
 ---
 title: Dateien mithilfe von PDF Generator konvertieren
-seo-title: Dateien mithilfe von PDF Generator konvertieren
+seo-title: Converting files using PDF Generator
 description: Erfahren Sie, wie Sie Dateien mithilfe von PDF Generator konvertieren.
-seo-description: Erfahren Sie, wie Sie Dateien mithilfe von PDF Generator konvertieren.
+seo-description: Learn how to convert files using PDF Generator.
 uuid: 295afb8f-130a-44f5-b0ab-e4c93c0c9e52
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ feature: PDF Generator
 exl-id: 3eecff45-405f-482f-b0de-acf6557a7813
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1117'
 ht-degree: 98%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 Sie können die PDF Generator-Webseiten verwenden, um Dateien zu konvertieren.
 
-## PDF-Datei erstellen  {#create-a-pdf-file}
+## PDF-Datei erstellen {#create-a-pdf-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „PDF erstellen“.
 1. Klicken Sie auf „Durchsuchen“, um die Datei zu suchen und auszuwählen.
@@ -40,10 +40,10 @@ Sie können die PDF Generator-Webseiten verwenden, um Dateien zu konvertieren.
    * Wenn Sie eine Einstellungsdatei hochladen, geben Sie deren Pfad und Namen in das Feld ein oder klicken Sie auf „Durchsuchen“, um die Datei zu suchen und auszuwählen.
 
 1. (Optional) Geben Sie unter „XMP-Metadatendatei“ den Pfad und den Namen der XMP-Datei ein oder klicken Sie auf „Durchsuchen“, um die Datei zu suchen und auszuwählen. Eine XMP-Datei dient zum Hinzufügen standardmäßiger Metadateninformationen. (Siehe [Informationen zu XMP-Dateien](converting-files-using-pdf-generator.md#about-xmp-files).)
-1. Klicken Sie auf Erstellen. Nach der Erstellung wird ein Link zur Datei angezeigt. Tritt während der Konvertierung ein Fehler auf, wird eine Warnung angezeigt. Wenn Sie eine Postcript-Datei erstellen, enthält die Warnung auch einen Link zur Protokolldatei.
+1. Klicken Sie auf „Erstellen“. Nach der Erstellung wird ein Link zur Datei angezeigt. Tritt während der Konvertierung ein Fehler auf, wird eine Warnung angezeigt. Wenn Sie eine Postcript-Datei erstellen, enthält die Warnung auch einen Link zur Protokolldatei.
 1. Klicken Sie auf den Link zur PDF-Datei. Die Datei wird in Acrobat geöffnet.
 
-### Informationen zu XMP-Dateien  {#about-xmp-files}
+### Informationen zu XMP-Dateien {#about-xmp-files}
 
 PDF-Dokumente, die PDF Generator in Acrobat 5.0 oder höher erstellt, enthalten Dokumentmetadaten im XML-Format. *Metadaten sind Informationen zum Dokument und seinem Inhalt, z. B. der Name des Autors, Schlüsselwörter und Copyright-Informationen, die Suchprogramme verwenden können.*
 
@@ -53,7 +53,7 @@ Adobe Extensible Metadata Platform (XMP) stellt Adobe-Anwendungen eine allgemein
 
 Sie können XMP-Dateien in Acrobat erstellen.
 
-## HTML- oder ZIP-Datei ins PDF-Format konvertieren  {#convert-an-html-file-or-zip-file-to-pdf}
+## HTML- oder ZIP-Datei ins PDF-Format konvertieren {#convert-an-html-file-or-zip-file-to-pdf}
 
 Sie können mithilfe von PDF Generator die folgenden Dateitypen in das Adobe PDF-Format konvertieren:
 
@@ -91,10 +91,10 @@ Wenn die ZIP-Datei auf der untersten Ebene der Ordnerhierarchie mehr als eine HT
 
 
 1. Um eine XMP-Datei hochzuladen, klicken Sie auf „Durchsuchen“ und wechseln Sie zum Speicherort der Datei. Eine XMP-Datei dient zum Hinzufügen standardmäßiger Metadateninformationen. (Siehe [Informationen zu XMP-Dateien](converting-files-using-pdf-generator.md#about-xmp-files).)
-1. Klicken Sie auf Erstellen. Nach der Erstellung wird ein Link zur PDF-Datei angezeigt.
+1. Klicken Sie auf „Erstellen“. Nach der Erstellung wird ein Link zur PDF-Datei angezeigt.
 1. Klicken Sie auf den Link, um die PDF-Datei in Acrobat anzuzeigen.
 
-## Eine PDF-Datei in ein anderes Dateiformat (nur Windows) exportieren  {#export-a-pdf-file-to-another-file-format-windows-only}
+## Eine PDF-Datei in ein anderes Dateiformat (nur Windows) exportieren {#export-a-pdf-file-to-another-file-format-windows-only}
 
 Sie können PDF-Dateien in verschiedene Dateiformate exportieren, wie im Kapitel zum Generate PDF-Dienst in der [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_63) beschrieben.
 
@@ -124,4 +124,4 @@ PDF Generator unterstützt die Funktion zum Reduzieren der Größe von PDF-Date
    * Um benutzerdefinierte Einstellungen zu verwenden, wählen Sie „Benutzerdefinierte Einstellungen verwenden“ aus, geben Sie die Dateitypeinstellungen an und legen Sie einen Zeitlimitwert fest. Der Standardwert ist 270 Sekunden.
    * Um eine vorhandene Einstellungsdatei zu verwenden, wählen Sie „Einstellungsdatei hochladen“ aus und klicken Sie auf „Durchsuchen“, um zum Speicherort der Datei zu wechseln.
 
-1. Klicken Sie auf Erstellen.
+1. Klicken Sie auf „Erstellen“.

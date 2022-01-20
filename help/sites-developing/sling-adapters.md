@@ -13,7 +13,7 @@ exl-id: 7780d04d-418e-494c-85c3-76bef5f35690
 source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
 source-wordcount: '1717'
-ht-degree: 79%
+ht-degree: 87%
 
 ---
 
@@ -83,7 +83,7 @@ Im ersten Fall kann über javadocs angegeben werden, welche `adaptTo-targets` m�
 
 ### Sling {#sling}
 
-Adaptierung von [**Resource**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) für:
+Adaption von [**Resource**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) für:
 
 <table> 
  <tbody> 
@@ -92,7 +92,7 @@ Adaptierung von [**Resource**](https://helpx.adobe.com/experience-manager/6-4/si
    <td>Wenn dies eine auf einem JCR-Knoten basierende Ressource oder eine JCR-Eigenschaft mit Verweis auf einen Knoten ist.</td> 
   </tr> 
   <tr> 
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Property</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Property.html">Eigenschaft</a></td> 
    <td>Wenn dies eine auf einer JCR-Eigenschaft basierende Ressource ist.</td> 
   </tr> 
   <tr> 
@@ -259,7 +259,7 @@ Adaption von [**Template**](https://helpx.adobe.com/experience-manager/6-4/sites
 
 #### Sicherheit {#security}
 
-[**Authorizable**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html),  [****](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) Userand  [****](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) Groupadapt to:
+[**Authorizable**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html), [**Benutzer**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) und [**Gruppe**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) angepasst an:
 
 | [Knoten](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Stammknoten des Benutzers/der Gruppe zurück. |
 |---|---|

@@ -1,8 +1,8 @@
 ---
-title: 'Verwenden des Sling Resource Merger in AEM    '
-seo-title: 'Verwenden des Sling Resource Merger in AEM    '
+title: 'Verwenden des Sling Resource Merger in AEM  '
+seo-title: Using the Sling Resource Merger in AEM
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
-seo-description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
+seo-description: The Sling Resource Merger provides services to access and merge resources
 uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 4ddbdba8-073b-42ed-b4c9-d97d20b4739b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1254'
 ht-degree: 99%
 
 ---
 
-# Verwenden des Sling Resource Merger in AEM    {#using-the-sling-resource-merger-in-aem}
+# Verwenden des Sling Resource Merger in AEM  {#using-the-sling-resource-merger-in-aem}
 
 ## Zweck {#purpose}
 
@@ -62,13 +62,11 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >
 >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in `/libs` vorhanden ist) unter `/apps` neu.
-   >
-   >
-1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+>1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
+>
+>1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 >
-
 
 
 ### Eigenschaften {#properties}
@@ -91,7 +89,7 @@ Der Resource Merger stellt die folgenden Eigenschaften zur Verfügung:
 
    Der Platzhalter `*` blendet alles aus.
 
-* `sling:orderBefore` (  `String`)
+* `sling:orderBefore` ( `String`)
 
    Enthält den Namen des gleichrangigen Knotens, vor dem der aktuelle Knoten platziert werden soll.
 
@@ -140,7 +138,7 @@ Somit werden im obigen Überlagerungsbeispiel die folgenden Knoten benötigt:
 >
 >Bei Verwendung des Sling Resource Merger (d. h. bei Verwendung der standardmäßigen, Touch-optimierten Benutzeroberfläche) ist es nicht empfehlenswert, die gesamte Struktur aus `/libs` zu kopieren, da so zu viele Daten in `/apps` gespeichert würden. Dies führt u. U. zu Problemen, wenn für das System ein Upgrade jedweder Art durchgeführt wird.
 
-### Nutzungsszenarien {#use-cases}
+### Anwendungsfälle {#use-cases}
 
 Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
@@ -270,6 +268,6 @@ Einige Beispiele sind enthalten:
    * [Anpassen der Konsolen](/help/sites-developing/customizing-consoles-touch.md)
    * [Anpassung des Seiten-Authorings](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* Überschreiben:
+* Überschreibung:
 
    * [Konfiguration von Seiteneigenschaften](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)

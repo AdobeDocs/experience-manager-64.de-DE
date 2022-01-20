@@ -1,8 +1,8 @@
 ---
 title: Application Manager Client JavaAPI-Schnellstart (SOAP)
-seo-title: Application Manager Client JavaAPI-Schnellstart (SOAP)
+seo-title: Application Manager Client JavaAPI Quick Start(SOAP)
 description: Verwenden Sie den Application Manager-Client, um eine Anwendungsversion zu erstellen, Anwendungen zu exportieren, Anwendungen zu importieren, eine AEM Forms-Anwendung abzurufen, Anwendungen abzurufen, den Status von Anwendungen abzurufen, eine Vorschau von AEM Forms und einem späteren Anwendungsarchiv anzuzeigen und das AEM Forms-Anwendungsarchiv zu löschen.
-seo-description: Verwenden Sie den Application Manager-Client, um eine Anwendungsversion zu erstellen, Anwendungen zu exportieren, Anwendungen zu importieren, eine AEM Forms-Anwendung abzurufen, Anwendungen abzurufen, den Status von Anwendungen abzurufen, eine Vorschau von AEM Forms und einem späteren Anwendungsarchiv anzuzeigen und das AEM Forms-Anwendungsarchiv zu löschen.
+seo-description: Use the Application Manager Client to create an application version, export applications, import applications, get an AEM Forms application, get applications, get status of applications, preview AEM Forms and later application archive, and delete AEM Forms application archive.
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
@@ -13,12 +13,12 @@ role: Developer
 exl-id: 8369beeb-4628-40ea-9167-717f112768da
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-# Application Manager Client JavaAPI-Schnellstart (SOAP) {#application-manager-client-javaapi-quick-start-soap}
+# Schnellstart für Anwendungs-Manager Client JavaAPI (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
 Die folgenden Java API-Schnellstarts (SOAP) sind für den Application Manager-Client verfügbar.
 
@@ -440,11 +440,11 @@ public class GetApplication_SOAP {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Abrufen der Anwendungen mit der Java-API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
+## Schnellstart (SOAP-Modus): Anwendungen mithilfe der Java-API abrufen {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
 
 Im folgenden Java-Codebeispiel werden die Anwendungen mithilfe der Java-API abgerufen.
 
-***note**: Beim Abrufen der AEM Forms-Anwendungs-API getApplications() werden nur bereitgestellte Anwendungen zurückgegeben. *
+***Hinweis**: Beim Abrufen der AEM Forms-Anwendungs-API getApplications() werden nur bereitgestellte Anwendungen zurückgegeben. *
 
 ```as3
 /* 
@@ -539,7 +539,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Abrufen des Status von Anwendungen mit Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
+## Schnellstart (SOAP-Modus): Abrufen des Status von Anwendungen mit der Java-API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
 ```as3
 /* 

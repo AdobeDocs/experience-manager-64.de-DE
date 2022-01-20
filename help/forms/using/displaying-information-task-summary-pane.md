@@ -1,8 +1,8 @@
 ---
 title: Anzeigen von Informationen in der Aufgabenzusammenfassung
-seo-title: Anzeigen von Informationen in der Aufgabenzusammenfassung
+seo-title: Displaying information in the Task Summary pane
 description: In AEM Forms Workspace kann ein Bedienfeld zur Aufgabenzusammenfassung konfiguriert werden, um die Aufgabe zusammenzufassen oder eine beliebige Website anzuzeigen.
-seo-description: In AEM Forms Workspace kann ein Bedienfeld zur Aufgabenzusammenfassung konfiguriert werden, um die Aufgabe zusammenzufassen oder eine beliebige Website anzuzeigen.
+seo-description: In AEM Forms workspace, a Task Summary pane can be configured to summarize the task or display any other web page.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 exl-id: cb9de2d7-04ad-4221-8db7-403464c9888b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 68%
+source-wordcount: '277'
+ht-degree: 65%
 
 ---
 
-# Anzeigen von Informationen in der Aufgabenzusammenfassung  {#displaying-information-in-the-task-summary-pane}
+# Anzeigen von Informationen in der Aufgabenzusammenfassung {#displaying-information-in-the-task-summary-pane}
 
 Wenn Sie eine Aufgabe in AEM Forms Workspace öffnen, kann eine Zusammenfassung der Aufgabe in einem entsprechenden Fenster angezeigt werden. Diese zusätzlichen und wichtigen Informationen zu einer Aufgabe sind nützlich für den Endbenutzer von AEM Forms Workspace.
 
@@ -32,10 +32,10 @@ Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich &quot;Au
 1. Konfigurieren Sie das URL-Feld für die Aufgabenzusammenfassung. Sie können einen Literalwert, eine Vorlage, eine Variable oder einen XPath-Ausdruck angeben.
 1. Nachfolgend finden Sie ein Beispiel für die Anzeige von Informationen auf der Aufgabenzusammenfassungsseite.
 
-   * Melden Sie sich bei der CRXDE Lite-Umgebung unter `https://[server]:[port]/lc/crx/de` an.
-   * `Create a node`**SampleSummary** ` under `/` with type `contentnt:`. In the properties of this node, add `unstructuredsling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
-   * `Create a folder`**** SampleSummaryunder  `/apps`. Fügen Sie in der Zugriffssteuerungsliste von `/apps/SampleSummary` einen Eintrag für `PERM_WORKSPACE_USER` hinzu, der `jcr:readprivileges` zulässt.
-   * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
+   * Melden Sie sich bei der CRXDE Lite-Umgebung an unter `https://[server]:[port]/lc/crx/de`.
+   * `Create a node`**SampleSummary** ` under `/content` with type `nt:unstructured`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:read` privileges.`
+   * `Create a folder`**SampleSummary** under `/apps`. In der Zugriffssteuerungsliste von `/apps/SampleSummary`, fügen Sie einen Eintrag für `PERM_WORKSPACE_USER` Zulassen `jcr:readprivileges`.
+   * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`
 
    ```
    <html>
@@ -50,5 +50,5 @@ Mit AEM Forms Workspace können Sie eine Webseite Ihrer Wahl im Bereich &quot;Au
    </html>
    ```
 
-   * Legen Sie den Wert der Aufgabenzusammenfassungs-URL im Schritt &quot;Aufgabe zuweisen&quot;auf `/lc/content/SampleSummary.html` fest.
-   * Wenn die mit diesem Schritt &quot;Aufgabe zuweisen&quot;verknüpfte Aufgabe in AEM Forms Workspace geöffnet wird, wird `html.esp` unter `/apps/SampleSummary` in der Aufgabenzusammenfassung gerendert.
+   * Legen Sie den Wert der Aufgabenzusammenfassungs-URL auf `/lc/content/SampleSummary.html` im Schritt &quot;Aufgabe zuweisen&quot;.
+   * Wenn die Aufgabe, die diesem Schritt &quot;Aufgabe zuweisen&quot;zugeordnet ist, in AEM Forms Workspace geöffnet wird, wird die `html.esp` at `/apps/SampleSummary` wird im Bereich mit der Aufgabenzusammenfassung gerendert.

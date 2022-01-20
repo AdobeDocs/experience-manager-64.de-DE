@@ -1,8 +1,8 @@
 ---
 title: SPA-Editor – Überblick
-seo-title: SPA-Editor – Überblick
+seo-title: SPA Editor Overview
 description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
-seo-description: Dieser Artikel gibt einen umfassenden Überblick über den SPA-Editor und seine Funktionsweise, einschließlich detaillierter Workflows zur Interaktion des SPA-Editors innerhalb AEM.
+seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
 uuid: 600f1100-5cfa-4b75-a58c-f773395b5e05
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 exl-id: 5145b6ab-588a-458f-946f-b730ae319f61
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1675'
 ht-degree: 90%
 
 ---
 
-# SPA-Editor – Überblick{#spa-editor-overview}
+# SPA-Editor – Übersicht{#spa-editor-overview}
 
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA-Frameworks erstellen und Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
 
@@ -25,7 +25,7 @@ Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM
 
 >[!NOTE]
 >
->Die Funktion &quot;Single Page Application (SPA) Editor&quot;erfordert [AEM 6.4 Service Pack 2](/help/release-notes/sp-release-notes.md) oder höher.
+>Die Funktion für den SPA (Single Page Application Editor) erfordert [AEM 6.4 Service Pack 2](/help/release-notes/sp-release-notes.md) oder neuer.
 >
 >Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
@@ -46,7 +46,7 @@ Weitere Informationen zu SPAs in AEM finden Sie in den folgenden Dokumenten:
 
 Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten oder von Modellen wird als JSON-Datenstruktur von JCR abgerufen. Die SPA-Komponenten werden dann entsprechend dieser Struktur zur Seite hinzugefügt. Durch dieses Verhalten unterscheidet sich die anfängliche Hauptteilkomposition der Seitenkomponente von entsprechenden Kompositionen, bei denen es sich nicht um SPA-Komponenten handelt.
 
-### Seitenmodellverwaltung {#page-model-management}
+### Seitenmodellverwaltung  {#page-model-management}
 
 Die Auflösung und Verwaltung des Seitenmodells wird an eine bereitgestellte `PageModel`-Bibliothek delegiert. Die SPA muss die PageModel-Bibliothek verwenden, um vom SPA-Editor initialisiert und erstellt zu werden. Die PageModel-Bibliothek wird der AEM-Seitenkomponente indirekt über den NPM `aem-react-editable-components` bereitgestellt. Das Seitenmodell fungiert als Interpreter zwischen AEM und der SPA und muss daher immer vorhanden sein. Bei der Erstellung der Seite muss eine zusätzliche Bibliothek `cq.authoring.pagemodel.messaging` hinzugefügt werden, um die Kommunikation mit dem Seiteneditor zu ermöglichen.
 
@@ -105,7 +105,6 @@ Unter Berücksichtigung der Schlüsselelemente des SPA-Editors erscheint der Wor
 >* In der Produktion (Veröffentlichung) wird der SPA-Editor nie geladen.
 
 >
-
 
 
 ### Client-Server-Workflow zur Seitenbearbeitung {#client-server-page-editing-workflow}
@@ -188,7 +187,7 @@ Dies ist ein detaillierterer Überblick, der sich auf das Autorenerlebnis konzen
 
 ## Anforderungen und Einschränkungen {#requirements-limitations}
 
-Damit der Autor den Seiteneditor zum Bearbeiten von Inhalten in einer SPA verwenden kann, muss die SPA für die Interaktion mit dem AEM SPA Editor SDK implementiert sein. Im Dokument [Erste Schritte mit SPA in AEM](/help/sites-developing/spa-getting-started-react.md) finden Sie Informationen dazu, wie Sie Ihr Projekt zum Laufen bringen können.
+Damit der Autor den Seiteneditor zum Bearbeiten von Inhalten in einer SPA verwenden kann, muss die SPA für die Interaktion mit dem AEM SPA Editor SDK implementiert sein. Siehe [Erste Schritte mit SPA in AEM](/help/sites-developing/spa-getting-started-react.md) für das Minimum, das Sie wissen müssen, um Ihre Arbeit zu starten.
 
 ### Unterstützte Frameworks {#supported-frameworks}
 
@@ -211,10 +210,10 @@ Zusätzliche benutzerdefinierte Selektoren können als Teil eines für das AEM S
 
 Wenn Sie den Editor einer Textkomponente verwenden möchten, die in der SPA erstellt wurde, ist eine zusätzliche Konfiguration erforderlich.
 
-1. Legen Sie ein Attribut (das beliebig sein kann) für das Container-Wrapper-Element fest, das die Text-HTML enthält. Im Falle des WKND Journal-Beispielinhalts handelt es sich um ein `<div>` -Element und der verwendete Selektor ist `data-rte-editelement`.
+1. Legen Sie ein Attribut (das beliebig sein kann) für das Container-Wrapper-Element fest, das die Text-HTML enthält. Im Fall des WKND-Journal-Beispielinhalts handelt es sich um einen `<div>` -Element und der verwendete Selektor `data-rte-editelement`.
 1. Legen Sie die Konfiguration `editElementQuery` für die entsprechende AEM-Textkomponente `cq:InplaceEditingConfig` fest, die auf diesen Selektor verweist, z. B. `data-rte-editelement`. Dadurch weiß der Editor, welches HTML-Element den HTML-Text umschließt.
 
-Ein Beispiel dafür finden Sie im Beispielinhalt für das WKND-Journal [WKND-Journal.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Ein Beispiel dafür finden Sie unter [WKND Journal-Beispielinhalt.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 Weitere Informationen zur `editElementQuery`-Eigenschaft und Konfiguration des Rich-Text-Editors finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
 

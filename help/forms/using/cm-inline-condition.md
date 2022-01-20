@@ -1,18 +1,18 @@
 ---
 title: Inline-Bedingung und Wiederholung in der interaktiven Kommunikation und in Briefen
-seo-title: Inline-Bedingung und Wiederholung in der interaktiven Kommunikation und in Briefen
+seo-title: Inline condition and repeat in Interactive Communications and letters
 description: 'Mithilfe der Inline-Bedingung und der Wiederholung in der interaktiven Kommunikation und in Briefen können Sie sehr kontextbezogene und gut strukturierte Kommunikationen erstellen. '
-seo-description: 'Mithilfe der Inline-Bedingung und der Wiederholung in der interaktiven Kommunikation und in Briefen können Sie sehr kontextbezogene und gut strukturierte Kommunikationen erstellen. '
+seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 16e38929-f81b-4582-9daf-6c756a4390e9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: 1b669f86-5090-4618-9bd2-85fcec44d51a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1685'
 ht-degree: 92%
 
 ---
@@ -37,7 +37,7 @@ Weitere Informationen finden Sie unter:
 
 Um einen Satz, einen Absatz oder eine Textzeichenfolge in einer interaktiven Kommunikation mit Bedingungen zu versehen, können Sie im entsprechenden Textdokumentfragment eine Regel erstellen. Im folgenden Beispiel wird eine Regel verwendet, um eine gebührenfreie Nummer nur für die US-Empfänger der interaktiven Kommunikation anzuzeigen.
 
-Weitere Informationen finden Sie unter Erstellen einer Regel im Text in [Texte in interaktiven Kommunikationen](/help/forms/using/texts-interactive-communications.md).
+Weitere Informationen finden Sie unter Erstellen einer Regel im Text in [Texte in interaktiver Kommunikation](/help/forms/using/texts-interactive-communications.md).
 
 Nachdem Sie das Textfragment in eine interaktive Kommunikation eingefügt haben und der Agent die Benutzeroberfläche &quot;Agent&quot;zur Vorbereitung einer interaktiven Kommunikation verwendet, werden die Daten (Formulardatenmodell) für die Empfänger ausgewertet und der Text wird nur den Empfängern in den USA angezeigt.
 
@@ -59,7 +59,7 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
    >[!NOTE]
    >
-   >Leerer oder ungültiger Bedingungsausdruck kann nicht gespeichert werden. Es muss einen gültigen bedingten Ausdruck in `${}` geben, um den Ausdruck zu speichern.
+   >Leerer oder ungültiger Bedingungsausdruck kann nicht gespeichert werden. Es muss einen gültigen bedingten Ausdruck in `${}` , um den Ausdruck zu speichern.
 
 1. Führen Sie folgende Schritte aus, um eine Bedingung für die Bewertung zu konstruieren, ob ausgewählter Text oder Text, für den Bedingungen erstellt werden, im Brief angezeigt wird, und tippen Sie auf das Häkchen, um den Ausdruck zu speichern:
 
@@ -73,9 +73,9 @@ Sie können Inline-Bedingungen in einen Brief einfügen, indem Sie die Inline-Be
 
    Nachdem Sie die Bedingung eingefügt haben, können Sie den Mauszeiger über den Ziehgriff links neben der Bedingung bewegen, um die Bedingung anzuzeigen. Alternativ dazu können Sie auf den Ziehgriff tippen, um das Popupmenü der Bedingung anzuzeigen, die es Ihnen ermöglicht, die Bedingung zu bearbeiten oder zu entfernen.
 
-   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
+   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editcondition_removeconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
-1. Fügen Sie eine ähnliche Bedingung ein, indem Sie den Text `Ma'am` auswählen.
+1. Fügen Sie eine ähnliche Bedingung ein, indem Sie den Text auswählen `Ma'am`.
 
    ```java
    ${DD_creditcard_Gender == "Female"}
@@ -213,7 +213,7 @@ Das folgende Beispiel zeigt die Schritte für die Verwendung der Wiederholen-Fun
    >
    >Sie können die Bedingung und Wiederholung nur beim Erstellen oder Bearbeiten des relevanten Textmoduls einfügen. Beim Anzeigen des Briefs in der Vorschau können Sie keine Bedingung oder Wiederholung einfügen, obwohl Sie Bearbeitungen am Textmodul durchführen können.
 
-## Verwenden der Inline-Bedingung und Wiederholung - einige Anwendungsfälle   {#using-inline-condition-and-repeat-some-use-cases}
+## Verwenden der Inline-Bedingung und Wiederholung - einige Anwendungsfälle  {#using-inline-condition-and-repeat-some-use-cases}
 
 ### Wiederholen innerhalb der Bedingung {#repeat-within-condition}
 
@@ -231,7 +231,7 @@ Entsprechend Ihren Anforderungen können Sie auch Folgendes erstellen:
 * Eine oder mehrere Bedingungen innerhalb einer Wiederholung
 * Eine Kombination von Bedingungen und Wiederholungen innerhalb einer Bedingung oder Wiederholung
 
-### Leere Inline-Bedingung  {#empty-inline-condition}
+### Leere Inline-Bedingung {#empty-inline-condition}
 
 Möglicherweise müssen Sie leere Inline-Bedingungen einfügen und Text und DD-Elemente später einbetten. Correspondence Management ermöglicht es Ihnen.
 

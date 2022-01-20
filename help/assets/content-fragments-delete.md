@@ -1,8 +1,8 @@
 ---
 title: Inhaltsfragmente – Überlegungen zum Löschen
-seo-title: Inhaltsfragmente – Überlegungen zum Löschen
+seo-title: Content Fragments - Delete Considerations
 description: Inhaltsfragmente – Überlegungen zum Löschen
-seo-description: Inhaltsfragmente – Überlegungen zum Löschen
+seo-description: Content Fragments - Delete Considerations
 uuid: b4161a0e-7e17-4547-9bdd-cf3b1d0d7d63
 contentOwner: aheimoz
 topic-tags: content-fragments
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '460'
 ht-degree: 88%
 
 ---
@@ -23,20 +23,20 @@ ht-degree: 88%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0 oder höher)](/help/release-notes/sp-release-notes.md).
 
 ## Berechtigungen – Löschen oder nicht löschen {#permissions-delete-or-not-delete}
 
-Die Möglichkeit, Inhalt zu löschen, ist wirkungsvoll, muss aber mit Bedacht verwendet werden, da viele Branchen die Erteilung dieser Berechtigungen einschränken und kontrollieren müssen. 
+Die Möglichkeit, Inhalt zu löschen, ist wirkungsvoll, muss aber mit Bedacht verwendet werden, da viele Branchen die Erteilung dieser Berechtigungen einschränken und kontrollieren müssen.
 
 In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Perspektiven betrachtet werden:
 
 1. **Das Inhaltsfragment als einzelne Entität.**
 
-   * **Nutzungsszenario:** Ein Benutzer, der ein Inhaltsfragment bearbeiten oder aktualisieren und **ein ganzes Fragment löschen muss**. 
+   * **Nutzungsszenario:** Ein Benutzer, der ein Inhaltsfragment bearbeiten oder aktualisieren und **ein ganzes Fragment löschen muss**.
    * **Berechtigungen:**[](/help/sites-administering/security.md#actions)[ Die Berechtigung zum Löschen kann über die Benutzer- und/oder Gruppenverwaltung zugewiesen werden](/help/sites-administering/security.md#managing-permissions).
 
-1. **Die verschiedenen Unterentitäten, die ein Inhaltsfragment bilden. Z. B. Varianten, Unterknoten.** 
+1. **Die verschiedenen Unterentitäten, die ein Inhaltsfragment bilden. Z. B. Varianten, Unterknoten.**
 
    Die grundlegende Funktionsweise des Inhaltsfragmente-Editors erfordert, dass diese temporären Unterelemente gelöscht werden können. Beispielsweise wenn Varianten bearbeitet oder Metadaten oder verknüpfte Inhalte verwaltet werden.
 
@@ -91,10 +91,10 @@ Damit einem bestimmten Benutzer und/oder einer bestimmten Benutzergruppe das Bea
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
 
-Diese `remove` -Berechtigungen müssen [über Zugriffssteuerungslisten in CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management) verwaltet werden.
+Diese `remove` -Berechtigungen müssen [über Zugriffssteuerungslisten in CRXDE Lite verwaltet werden](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Die Berechtigungen `add` und `modify` können auch in CRXDE Lite oder über die User Management Console verwaltet werden.
+Die `add` und `modify` -Berechtigungen können auch in CRXDE Lite oder über die User Management Console verwaltet werden.
 
-Beispielsweise die Definition der `remove`-Berechtigungen für eine Gruppe `content-authors-no-delete`:
+Beispielsweise die Definition der `remove` Berechtigungen für eine Gruppe `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)

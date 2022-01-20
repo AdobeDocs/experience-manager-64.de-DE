@@ -1,8 +1,8 @@
 ---
 title: ClientContext
-seo-title: ClientContext
+seo-title: Client Context
 description: Erfahren Sie, wie Sie ClientContext in AEM verwenden.
-seo-description: Erfahren Sie, wie Sie ClientContext in AEM verwenden.
+seo-description: Learn how to use the Client Context in AEM.
 uuid: c3881210-32c7-4f78-84f4-5d378d4d3d99
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: d13c68ba-be49-440b-8bbe-a10edbfb9b9b
 exl-id: 3f6d3b30-b1d5-4142-8b9f-7c5594686ae7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1907'
 ht-degree: 79%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 79%
 >
 >ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der entsprechenden [Konfigurations-](/help/sites-administering/contexthub-config.md) und [Entwicklerdokumentation](/help/sites-developing/contexthub.md).
 
-ClientContext ist ein Mechanismus, der Ihnen bestimmte Informationen über die aktuelle Seite und den aktuellen Besucher bereitstellt. Sie kann mit **Strg-Alt-c** (Windows) oder **control-option-c** (Mac) geöffnet werden:
+ClientContext ist ein Mechanismus, der Ihnen bestimmte Informationen über die aktuelle Seite und den aktuellen Besucher bereitstellt. Er kann mit **Strg+Alt+C** (Fenster) oder **control-option-c** (Mac):
 
 ![clientcontext_alisonparker](assets/clientcontext_alisonparker.png)
 
@@ -49,35 +49,35 @@ In der Veröffentlichungs- und in der Autorenumgebung werden Informationen zu Fo
 
 ClientContext kann die folgenden Eigenschaften anzeigen ([abhängig von der mit „Bearbeiten“ getroffenen Auswahl](#adding-a-property-component)):
 
-**Surfer** InformationZeigt die folgenden clientseitigen Informationen an:
+**Surfer-Informationen** Zeigt die folgenden clientseitigen Informationen an:
 
-* **IP-Adresse**
-* **** Suchbegriffe, die für Suchmaschinenverweise verwendet werden
-* der verwendete **Browser**
-* das verwendete **OS** (Betriebssystem)
+* die **IP-Adresse**
+* **Schlüsselwörter** wird für Suchmaschinenreferenz verwendet
+* die **browser** verwendet werden
+* die **BS** (Betriebssystem) verwendet wird
 * den Bildschirm **resolution**
-* die Position **Maus X**
-* die Position **Maus Y**
+* die **Maus X** position
+* die **Maus Y** position
 
-**Aktivitäts-** StreamHier finden Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. z. B. die AEM Foren, Blogs, Bewertungen usw.
+**Aktivitäts-Stream** Hier erhalten Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. z. B. die AEM Foren, Blogs, Bewertungen usw.
 
-**** CampaignErmöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
+**Kampagne** Ermöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
 
 Die Kampagnenauflösung basiert normalerweise auf der Eigenschaft priority der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
 
-**** WarenkorbZeigt Informationen zum Warenkorb, einschließlich Produkteinträgen (Titel, Menge, PreisFormatiert usw.), aufgelösten Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
+**Warenkorb** Zeigt Informationen zum Warenkorb an, einschließlich Produkteinträgen (Titel, Menge, PreisFormatiert usw.), aufgelösten Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
 
 Der Warenkorbsitzungsstore benachrichtigt mit dem ClientContextCartServlet zudem den Server über aufgelöste Promotionsänderungen (basierend auf Segmentierungsänderungen).
 
-**Generischer** StoreEine generische Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine untergeordnete Version der Komponente „Generische Store-Eigenschaften“.
+**Allgemeiner Store** ist eine generische Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine untergeordnete Version der Komponente „Generische Store-Eigenschaften“.
 
 Der generische Store muss mit einem JS-Renderer konfiguriert werden, der die Daten benutzerdefiniert anzeigt.
 
-**Generische Store-** EigenschaftenEine generische Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine übergeordnete Version der Komponente „Generischer Store“.
+**Allgemeine Store-Eigenschaften** ist eine generische Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine übergeordnete Version der Komponente „Generischer Store“.
 
 Die Komponente „Generische Store-Eigenschaften“ beinhaltet einen Standardrenderer, der die konfigurierten Eigenschaften (mit einer Miniatur) auflistet.
 
-**** GeolocationZeigt den Breiten- und Längengrad des Clients an. Über die HTML5-Geolocation-API wird der aktuelle Standort vom Browser abgefragt. Dabei wird eine Popup-Meldung angezeigt, über die der Besucher gebeten wird, seine Standortdaten freizugeben.
+**Geolocation** Zeigt den Breiten- und Längengrad des Clients an. Über die HTML5-Geolocation-API wird der aktuelle Standort vom Browser abgefragt. Dabei wird eine Popup-Meldung angezeigt, über die der Besucher gebeten wird, seine Standortdaten freizugeben.
 
 Bei Anzeige in der Kontext-Cloud nutzt die Komponente eine Google-API, um eine Karte als Miniatur darzustellen. Die Komponente unterliegt den [Nutzungsbeschränkungen](https://developers.google.com/maps/documentation/staticmaps/intro#Limits) der Google-API.
 
@@ -85,7 +85,7 @@ Bei Anzeige in der Kontext-Cloud nutzt die Komponente eine Google-API, um eine K
 >
 >In AEM 6.1 bietet der Geolocation-Store nicht länger die Reverse Geocoding-Funktion. Deshalb ruf der Geolocation-Store nicht mehr Details zum aktuellen Standort ab, etwa Ortsnamen oder Ländercodes. Segmente, die diesen Store verwenden, funktionieren nicht ordnungsgemäß. Der Geolocation-Store enthält nur den Breiten- und Längengrad eines Standorts.
 
-**JSONP** StoreEine Komponente, die Inhalte anzeigt, die von Ihrer Installation abhängig sind.
+**JSONP Store** Eine Komponente, die Inhalte anzeigt, die von Ihrer Installation abhängig sind.
 
 Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-App mit Servern in einer anderen Domäne kommunizieren kann). Es besteht darin, das JSON-Objekt in einen Funktionsaufruf einzuschließen, um es als von der anderen Domäne laden zu können (was eine zulässige Ausnahme von derselben Ursprungsrichtlinie ist).
 
@@ -95,13 +95,13 @@ Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Information
 >
 >Der JSONP-Store speichert die Informationen nicht im Cookie zwischen, ruft aber die Daten bei jedem Seitenladevorgang ab.
 
-**Profil** DataZeigt Informationen an, die im Benutzerprofil erfasst wurden. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
+**Profildaten** Zeigt die im Benutzerprofil erfassten Informationen an. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
 
-**Gelöste** Segmente Zeigt an, welche Segmente derzeit aufgelöst werden (häufig abhängig von anderen im Client-Kontext angezeigten Informationen). Dies ist beim Konfigurieren von Kampagnen von Interesse.
+**Gelöste Segmente** Zeigt, welche Segmente derzeit aufgelöst werden (häufig abhängig von anderen im ClientContext angezeigten Informationen). Dies ist beim Konfigurieren von Kampagnen von Interesse.
 
 Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbereich befindet. Dieses Segment wird hauptsächlich zum Testen verwendet, da Änderungen sofort sichtbar sind.
 
-**Social** GraphZeigt das soziale Diagramm der Freunde und Follower des Benutzers an.
+**Sozialdiagramm** Zeigt das soziale Diagramm der Freunde und Follower des Benutzers an.
 
 >[!NOTE]
 >
@@ -109,14 +109,14 @@ Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbere
 >
 >`/home/users/geometrixx/aparker@geometrixx.info/profile` => Eigenschaft &quot;Freunde&quot;
 
-**Tag** CloudZeigt Tags an, die auf der aktuellen Seite gesetzt sind und die beim Surfen auf der Site erfasst wurden. Wenn Sie mit der Maus auf ein Tag zeigen, sehen Sie, wie oft der aktuelle Benutzer auf Seiten mit diesem bestimmten Tag zugegriffen hat.
+**Tag Cloud** Zeigt Tags an, die auf der aktuellen Seite gesetzt wurden, sowie Tags, die beim Surfen auf der Site erfasst wurden. Wenn Sie mit der Maus auf ein Tag zeigen, sehen Sie, wie oft der aktuelle Benutzer auf Seiten mit diesem bestimmten Tag zugegriffen hat.
 
 >[!NOTE]
 Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
 
-**Technografikspeicher** Diese Komponente hängt von Ihrer Installation ab.
+**Technografik-Store** Diese Komponente hängt von Ihrer Installation ab.
 
-**** ViewedProductsHält die vom Käufer angezeigten Produkte im Auge. Es kann das zuletzt angesehene Produkt oder das zuletzt angesehene Produkt, das sich nicht bereits im Warenkorb befindet, abgerufen werden.
+**ViewedProducts** Verfolgt die vom Kunden angezeigten Produkte. Es kann das zuletzt angesehene Produkt oder das zuletzt angesehene Produkt, das sich nicht bereits im Warenkorb befindet, abgerufen werden.
 
 Dieser Sitzungsstore verfügt über keine standardmäßige ClientContext-Komponente.
 
@@ -141,7 +141,7 @@ Sie können ein Profil wie folgt ändern:
 
 Wenn Sie fertig sind, können Sie das [Profil zurücksetzen](#resetting-the-profile-to-the-current-user).
 
-#### Laden neuer Besucherprofile mit dem Symbol „Profil laden“  {#loading-a-new-visitor-profile-with-the-load-profile-icon}
+#### Laden neuer Besucherprofile mit dem Symbol „Profil laden“ {#loading-a-new-visitor-profile-with-the-load-profile-icon}
 
 1. Klicken Sie auf das Symbol „Profil laden“:
 
@@ -177,7 +177,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 1. Klicken Sie auf den zu ladenden Plattformbrowser. Wenn die Details geladen wurden, klicken Sie auf eine Stelle außerhalb der Auswahl, um diese zu schließen.
 
-### Ändern der Geolocation  {#changing-the-geolocation}
+### Ändern der Geolocation {#changing-the-geolocation}
 
 1. Doppelklicken Sie auf das Geolocation-Symbol. Daraufhin wird eine erweiterte Karte geöffnet. Hier können Sie die Markierung an einen neuen Standort ziehen:
 
@@ -185,7 +185,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 1. Klicken Sie auf eine Stelle außerhalb der Karte, um sie zu schließen.
 
-### Ändern der Tag-Auswahl  {#changing-the-tag-selection}
+### Ändern der Tag-Auswahl {#changing-the-tag-selection}
 
 1. Doppelklicken Sie auf den ClientContext-Abschnitt „Tag-Cloud“. Daraufhin wird das zugehörige Dialogfeld geöffnet. Hier können Sie Tags auswählen:
 
@@ -193,11 +193,11 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 1. Klicken Sie auf „OK“, um Ihre Auswahl in ClientContext zu laden.
 
-## Bearbeiten von ClientContext  {#editing-the-client-context}
+## Bearbeiten von ClientContext {#editing-the-client-context}
 
 Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften festgelegt (zurückgesetzt), neue Eigenschaften hinzugefügt oder nicht mehr benötigte Eigenschaften entfernt werden.
 
-### Bearbeiten von Eigenschaftsdetails  {#editing-property-details}
+### Bearbeiten von Eigenschaftsdetails {#editing-property-details}
 
 Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften festgelegt (zurückgesetzt) werden. Auf diese Weise können Sie bestimmte Szenarien testen (besonders nützlich für [Segmentierung](/help/sites-administering/campaign-segmentation.md) und [Kampagnen](/help/sites-authoring/personalization.md)).
 
@@ -205,7 +205,7 @@ Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften fes
 
 ### Hinzufügen von Eigenschaftskomponenten {#adding-a-property-component}
 
-Nachdem Sie die **ClientContext-Designseite** geöffnet haben, können Sie auch **eine vollständig neue Eigenschaft hinzufügen, indem Sie die verfügbaren Komponenten verwenden (die Komponenten werden sowohl im Sidekick als auch im Dialogfeld** Neue Komponente einfügen **aufgelistet, das nach einem Doppelklick auf das Feld** Komponenten oder Assets hierhin ziehen **geöffnet wird):**
+Nachdem Sie die **ClientContext-Designseite** können Sie auch **Hinzufügen** eine vollständig neue Eigenschaft mit den verfügbaren Komponenten (die Komponenten werden sowohl im Sidekick als auch aus dem **Neue Komponente einfügen** Dialogfeld, das nach einem Doppelklick auf die **Komponenten oder Assets hierher ziehen** -Feld):
 
 ![clientcontext_alisonparker_new](assets/clientcontext_alisonparker_new.png)
 
@@ -213,13 +213,13 @@ Nachdem Sie die **ClientContext-Designseite** geöffnet haben, können Sie auch 
 
 Nach dem Öffnen der **ClientContext-Designseite** haben Sie außerdem die Möglichkeit, nicht mehr benötigte Eigenschaften zu **entfernen**, auch standardmäßig vorhandene Eigenschaften. Wurden diese entfernt, können Sie sie mit **Zurücksetzen** reaktivieren.
 
-## Speichern von Daten in ClientContext über JSON  {#storing-data-in-client-context-via-jsonp}
+## Speichern von Daten in ClientContext über JSON {#storing-data-in-client-context-via-jsonp}
 
 Folgen Sie diesem Beispiel, um die Context-Store-Komponente „JSONP-Store“ zum Hinzufügen externer Daten zu ClientContext zu verwenden. Erstellen Sie dann ein Segment basierend auf den Informationen aus diesen Daten. Im Beispiel wird der JSONP-Service von WIPmania.com verwendet. Der Service gibt Geolocation-Informationen anhand der IP-Adresse des Webclients zurück.
 
 In diesem Beispiel wird die Beispiel-Website Geometrixx Outdoors verwendet, um auf ClientContext zuzugreifen und das erstellte Segment zu testen. Sie können eine andere Website verwenden, sofern für die Seite ClientContext aktiviert ist. (Siehe [Hinzufügen von ClientContext zu Seiten](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
-### Hinzufügen der Komponente „JSONP-Store“  {#add-the-jsonp-store-component}
+### Hinzufügen der Komponente „JSONP-Store“ {#add-the-jsonp-store-component}
 
 Fügen Sie die Komponente „JSONP-Store“ zu ClientContext hinzu und nutzen Sie diese zum Abrufen und Speichern von Geolocation-Informationen zum Webclient.
 
@@ -261,7 +261,7 @@ Verwenden Sie die Daten aus dem Sitzungsstore, den Sie mit der Komponente „JSO
 
    1. Geben Sie „Winter“ als Titel ein.
    1. Wählen Sie die Vorlage „Segment“ aus.
-   1. Klicken Sie auf Erstellen.
+   1. Klicken Sie auf „Erstellen“.
 
 1. Klicken Sie mit der rechten Maustaste auf das Segment „Winter“ und dann auf „Öffnen“.
 1. Ziehen Sie „Generische Store-Eigenschaft“ in den standardmäßigen UND-Container.

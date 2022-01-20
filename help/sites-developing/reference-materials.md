@@ -14,7 +14,7 @@ exl-id: 0c80ee60-d2dd-49ad-a283-81fdb1fd201e
 source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 80%
+ht-degree: 85%
 
 ---
 
@@ -47,7 +47,7 @@ APIs für AEM-Bereitstellung und Content Management:
 
 * Kernkomponenten (JSON)
 
-   * [JSON Exporter](/help/sites-developing/json-exporter.md)
+   * [JSON Exporter](/help/sites-developing/json-exporter.md)
    * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
    * Weitere Informationen finden Sie im [Abschnitt „Komponenten“ des Benutzerhandbuchs für Entwickler](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js).
 

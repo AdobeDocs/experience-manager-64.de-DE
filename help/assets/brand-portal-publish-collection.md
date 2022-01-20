@@ -14,19 +14,19 @@ ht-degree: 41%
 
 # Veröffentlichen von Sammlungen in Brand Portal {#publish-collections-to-brand-portal}
 
-Als Adobe Experience Manager Assets-Administrator können Sie Sammlungen in der [!DNL Experience Manager Assets Brand Portal]-Instanz für Ihr Unternehmen veröffentlichen. Allerdings müssen Sie zunächst Assets mit Brand Portal integrieren. Weitere Informationen finden Sie unter [Konfigurieren der von  Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md).
+Als Adobe Experience Manager Assets-Administrator können Sie Sammlungen in der [!DNL Experience Manager Assets Brand Portal] -Instanz für Ihr Unternehmen. Allerdings müssen Sie zunächst Assets mit Brand Portal integrieren. Weitere Informationen finden Sie unter [Konfigurieren der von  Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md).
 
 Wenn Sie nachfolgende Änderungen an der ursprünglichen Sammlung in Assets vornehmen, werden die Änderungen erst dann in Brand Portal übernommen, wenn Sie die Sammlung erneut veröffentlichen. Diese Eigenschaft stellt sicher, dass laufende Änderungen in Brand Portal nicht verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
 >[!NOTE]
 >
->Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie daher Inhaltsfragmente in der [!DNL Experience Manager] -Autoreninstanz auswählen, ist die Aktion **[In Brand Portal veröffentlichen]** nicht verfügbar.
+>Inhaltsfragmente können nicht in Brand Portal veröffentlicht werden. Wenn Sie daher Inhaltsfragmente auf [!DNL Experience Manager] Autor, dann **[In Brand Portal veröffentlichen]** -Aktion nicht verfügbar ist.
 >
->Wenn Sammlungen, die Inhaltsfragmente enthalten, aus dem Ordner [!DNL Experience Manager] Autor in Brand Portal veröffentlicht werden, werden alle Inhalte des Ordners mit Ausnahme der Inhaltsfragmente auf der Brand Portal-Benutzeroberfläche repliziert.
+>Wenn Sammlungen, die Inhaltsfragmente enthalten, aus veröffentlicht werden [!DNL Experience Manager] Erstellen Sie Brand Portal und dann werden alle Inhalte des Ordners mit Ausnahme der Inhaltsfragmente auf die Brand Portal-Benutzeroberfläche repliziert.
 
 ## Veröffentlichen einer Sammlung in Brand Portal {#publish-a-collection-to-brand-portal}
 
-1. Tippen/klicken Sie in der Assets-Benutzeroberfläche auf das [!DNL Experience Manager]-Logo. Wechseln Sie dann zu **[!UICONTROL Assets > Sammlungen]** auf der Seite **[!UICONTROL Navigation]**.
+1. Tippen/klicken Sie in der Assets-Benutzeroberfläche auf die [!DNL Experience Manager] Logo. Wechseln Sie dann zu **[!UICONTROL Assets > Sammlungen]** auf der Seite **[!UICONTROL Navigation]**.
 2. Wählen Sie in der Konsole &quot;Sammlungen&quot;die Sammlung aus, die Sie in Brand Portal veröffentlichen möchten.
 
    ![Sammlung auswählen](assets/select_collection.png)
@@ -45,11 +45,11 @@ Wenn Sie nachfolgende Änderungen an der ursprünglichen Sammlung in Assets vorn
 
 Sie können die Veröffentlichung von Sammlungen, die Sie aus Assets in Brand Portal veröffentlichen, rückgängig machen. Nachdem Sie die Veröffentlichung der ursprünglichen Sammlung rückgängig gemacht haben, ist die Kopie nicht mehr für Brand Portal-Benutzer verfügbar.
 
-1. Wählen Sie in der Konsole &quot;Sammlungen&quot;Ihrer [!DNL Assets]-Instanz die Sammlung aus, deren Veröffentlichung Sie rückgängig machen möchten.
+1. In der Konsole &quot;Sammlungen&quot;Ihrer [!DNL Assets] und wählen Sie die Sammlung aus, deren Veröffentlichung Sie rückgängig machen möchten.
 
    ![select_collection-1](assets/select_collection-1.png)
 
-2. Tippen oder klicken Sie in der Symbolleiste auf das Symbol **[!UICONTROL Aus Brand Portal entfernen]** .
+2. Tippen/klicken Sie in der Symbolleiste auf die **[!UICONTROL Aus Brand Portal entfernen]** Symbol.
 
    ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
 

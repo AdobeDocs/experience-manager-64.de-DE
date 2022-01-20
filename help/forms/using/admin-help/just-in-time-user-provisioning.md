@@ -1,8 +1,8 @@
 ---
 title: Just-in-time-Benutzerbereitstellung
-seo-title: Just-in-time-Benutzerbereitstellung
+seo-title: Just-in-time user provisioning
 description: Verwenden Sie die Just-in-time-Bereitstellung, um Benutzer dem User Management nach erfolgreicher Authentifizierung hinzuzufügen und um relevante Rollen und Gruppen dynamisch dem neuen Benutzer zuzuweisen.
-seo-description: Verwenden Sie die Just-in-time-Bereitstellung, um Benutzer dem User Management nach erfolgreicher Authentifizierung hinzuzufügen und um relevante Rollen und Gruppen dynamisch dem neuen Benutzer zuzuweisen.
+seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
 uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 8c205d1d-d17e-4810-8ef9-a8bdcd9aa1c2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '573'
 ht-degree: 95%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 AEM Forms unterstützt die Just-in-time-Bereitstellung von Benutzern, die noch nicht in User Management vorhanden sind. Mit der Just-in-time-Bereitstellung werden Benutzer automatisch User Management hinzugefügt, nachdem die Benutzeranmeldeinformationen erfolgreich authentifiziert wurden. Darüber hinaus werden relevante Rollen und Gruppen dynamisch dem neuen Benutzer zugewiesen.
 
-## Bedarf an Just-in-time-Benutzerbereitstellung  {#need-for-just-in-time-user-provisioning}
+## Bedarf an Just-in-time-Benutzerbereitstellung {#need-for-just-in-time-user-provisioning}
 
 So funktioniert die herkömmliche Authentifizierung:
 
@@ -31,7 +31,7 @@ So funktioniert die herkömmliche Authentifizierung:
 
    **Vorhanden:** Wenn der Benutzer aktuell und entsperrt ist, gibt User Management den Authentifizierungserfolg zurück. Wenn der Benutzer nicht aktuell oder gesperrt ist, gibt User Management an, dass die Authentifizierung nicht erfolgreich war.
 
-   **Nicht vorhanden:** User Management gibt Authentifizierungsfehler zurück.
+   **Existiert nicht:** User Management gibt Authentifizierungsfehler zurück.
 
    **Ungültig:** User Management gibt Authentifizierungsfehler zurück.
 
@@ -40,7 +40,7 @@ So funktioniert die herkömmliche Authentifizierung:
 
 Wenn Just-in-time-Bereitstellung implementiert ist, werden neue Benutzer dynamisch in User Management erstellt, wenn einer der Authentifizierungsanbieter deren Anmeldedaten überprüft. (Nach Schritt 3 im obigen herkömmlichen Authentifizierungsverfahren.)
 
-## Just-in-time-Benutzerbereitstellung implementieren  {#implement-just-in-time-user-provisioning}
+## Just-in-time-Benutzerbereitstellung implementieren {#implement-just-in-time-user-provisioning}
 
 ### API für Just-in-time-Bereitstellung {#apis-for-just-in-time-provisioning}
 
@@ -81,12 +81,12 @@ public Boolean assign(User user);
 }
 ```
 
-### Überlegungen beim Erstellen einer Just-in-time-Domäne  {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Überlegungen beim Erstellen einer Just-in-time-Domäne {#considerations-while-creating-a-just-in-time-enabled-domain}
 
 * Beim Erstellen eines benutzerdefinierten`IdentityCreator`   für eine Hybrid-Domäne stellen Sie sicher, dass für den lokalen Benutzer ein Platzhalter-Kennwort angegeben wird. Lassen Sie das Kennwortfeld nicht leer.
 * Empfehlung: Verwenden Sie`DomainSpecificAuthentication` , , um die Benutzerinformationen für eine bestimmte Domäne zu überprüfen.
 
-### Erstellen Sie ein Just-in-time-Domäne {#create-a-just-in-time-enabled-domain}
+### Just-in-time-Domäne erstellen {#create-a-just-in-time-enabled-domain}
 
 1. Schreiben Sie ein DSC, das die API im Abschnitt „API für Just-in-time-Bereitstellung“ implementiert.
 1. Stellen Sie das DSC auf dem Formularserver bereit.
@@ -98,13 +98,13 @@ public Boolean assign(User user);
 
 1. Speichern Sie die neue Domäne.
 
-## Hinter den Kulissen  {#behind-the-scenes}
+## Hinter den Kulissen {#behind-the-scenes}
 
 Angenommen, ein Benutzer versucht, sich bei AEM Forms anzumelden und ein Authentifizierungsanbieter akzeptiert seine Benutzerdaten. Wenn der Benutzer noch nicht in der User Management-Datenbank vorhanden ist, schlägt die Identitätsprüfung für den Benutzer fehl. AEM Forms führt jetzt folgende Aktionen durch:
 
 1. `UserProvisioningBO` --Objekt mit den Authentifizierungsdaten erstellen und in einer Benutzerdatenzuordnung ablegen.
 1. Basierend auf den von `UserProvisioningBO` zurückgegebenen Domänendaten `IdentityCreator` und `AssignmentProvider` für die Domäne laden und aufrufen.
-1. Rufen Sie `IdentityCreator` auf. Wenn ein erfolgreiches`AuthResponse`   zurückgegeben wird, `UserInfo` aus der Benutzerdatenzuordnung extrahieren. An `AssignmentProvider`   für Gruppen-/Rollenzuweisung und andere Nachbearbeitungsvorgänge übergeben, nachdem der Benutzer erstellt wurde.
+1. Aufrufen `IdentityCreator`. Wenn ein erfolgreiches`AuthResponse`   zurückgegeben wird, `UserInfo` aus der Benutzerdatenzuordnung extrahieren. An `AssignmentProvider`   für Gruppen-/Rollenzuweisung und andere Nachbearbeitungsvorgänge übergeben, nachdem der Benutzer erstellt wurde.
 1. Wenn der Benutzer erfolgreich erstellt wurde, den Anmeldeversuch des Benutzers als erfolgreich zurückgeben.
 1. Bei Hybrid-Domänen Benutzerdaten aus den Authentifizierungsdaten extrahieren, die vom Authentifizierungsanbieter bereitgestellt wurden. Wenn diese Daten erfolgreich geladen werden, Benutzer spontan erstellen.
 

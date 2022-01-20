@@ -1,8 +1,8 @@
 ---
 title: ConvertPDF-Dienst
-seo-title: ConvertPDF-Dienst
+seo-title: ConvertPDF Service
 description: 'Mithilfe des ConvertPDF-Dienstes von AEM Forms werden PDF-Dokumente in PostScript- oder Bilddateien konvertiert. '
-seo-description: 'Mithilfe des ConvertPDF-Dienstes von AEM Forms werden PDF-Dokumente in PostScript- oder Bilddateien konvertiert. '
+seo-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,14 +11,14 @@ discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 exl-id: a6fe7794-3c31-4706-9e23-fe63a506b0bc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '398'
 ht-degree: 91%
 
 ---
 
 # ConvertPDF-Dienst {#convertpdf-service}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Der Convert PDF-Dienst konvertiert PDF-Dokumente in PostScript oder Bilddateien (JPEG, JPEG 2000, PNG und TIFF). Das Konvertieren eines PDF-Dokuments in PostScript ist nützlich für die unbeaufsichtigte serverbasierte Druckausgabe auf PostScript-Druckern. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist beim Archivieren von Dokumenten in Content Management-Systemen praktisch, die PDF-Dokumente nicht unterstützen.
 

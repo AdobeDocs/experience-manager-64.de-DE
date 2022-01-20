@@ -1,8 +1,8 @@
 ---
 title: Erstellen und Organisieren von Seiten
-seo-title: Erstellen und Organisieren von Seiten
+seo-title: Creating and Organizing Pages
 description: So erstellen und verwalten Sie neue Seiten mit AEM
-seo-description: So erstellen und verwalten Sie neue Seiten mit AEM
+seo-description: How to create and manage pages with AEM
 uuid: 9bdc3222-6a0c-48a2-be1d-79ceb3bbc828
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 exl-id: 0182155a-0156-458c-b89b-35ab3e27819e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2295'
 ht-degree: 95%
 
 ---
@@ -42,13 +42,13 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-Im folgenden Beispiel sehen Sie ein Beispiel von der Site &quot;We.Retail&quot;, auf die eine Shortseite für Wanderungen ( `desert-sky-shorts`) aufgerufen wird:
+Im Folgenden sehen Sie ein Beispiel von der Site &quot;We.Retail&quot;, bei der eine Seite mit Kurzwürfen ( `desert-sky-shorts`) aufgerufen wird:
 
 * Autorenumgebung: `http://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Veröffentlichungsumgebung: `http://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Je nach Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
+Je nach Konfiguration Ihrer Instanz verwenden Sie `/content` kann in der Veröffentlichungsumgebung optional sein.
 
 ```xml
  /content
@@ -96,7 +96,7 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet. Weitere Informationen finden Sie unter [Seitennamen-Einschränkungen und Best Practices](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices).
 
-#### Seitennamen-Einschränkungen und Best Practices {#page-name-restrictions-and-best-practices}
+#### Einschränkungen und Best Practices bei der Seitenbenennung {#page-name-restrictions-and-best-practices}
 
 Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind aber verwandt:
 
@@ -151,7 +151,7 @@ Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben
 
 In AEM sind bestimmte Seitentypen in Vorlagen gespeichert. Eine Vorlage wird als Basis für jede neue erstellte Seite verwendet.
 
-Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
+Die Vorlage definiert die Seitenstruktur, u. a. eine Miniatur und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
 Im Lieferumfang von AEM sind diverse Vorlagen enthalten. Welche Vorlagen verfügbar sind, hängt von der jeweiligen Website ab. Die wichtigsten Felder sind:
 
@@ -168,9 +168,9 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 >
 >Sofern auf Ihrer Instanz konfiguriert, [können Vorlagenautoren Vorlagen mit dem Vorlageneditor erstellen](/help/sites-authoring/templates.md).
 
-### Komponenten  {#components}
+### Komponenten {#components}
 
-Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierten Komponenten](/help/sites-authoring/default-components-console.md), die umfassende Funktionen bieten. Dazu gehören:
+Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierte Komponenten](/help/sites-authoring/default-components-console.md) , die eine umfassende Funktionalität bieten. Dazu gehören:
 
 * Text
 * Bild
@@ -264,7 +264,7 @@ Wenn Sie eine Seite erstellt haben bzw. in der Konsole zu einer bereits vorhande
 >
 >Das Navigieren zu anderen Seiten ist im Seiteneditor nur im Vorschaumodus möglich, da Links im Bearbeitungsmodus des Seiteneditors nicht aktiv sind.
 
-### Kopieren und Einfügen einer Seite  {#copying-and-pasting-a-page}
+### Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
 
 Sie können eine Seite und alle zugehörigen Unterseiten an einen neuen Speicherort kopieren:
 
@@ -340,7 +340,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die auf die Seite v
 
    * Die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) verwenden, um zum neuen Speicherort der Seite zu navigieren:
 
-      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniaturansicht des Ziels klicken.
+      * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniatur des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
    * Mit **Zurück** zur Angabe des Asset-Namens zurückkehren.
 
@@ -412,7 +412,6 @@ Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 >* Ordner sind in einer Live Copy nicht als Auswahl verfügbar.
 
 >
-
 
 
 1. Öffnen Sie die **Sites-Konsole** und navigieren Sie zum gewünschten Ort.

@@ -1,8 +1,8 @@
 ---
 title: Entwickeln von AEM-Komponenten – Codebeispiele
-seo-title: Entwickeln von AEM-Komponenten – Codebeispiele
+seo-title: Developing AEM Components - Code Samples
 description: In diesem Abschnitt sind einige Beispiele dazu aufgeführt, wie Sie eigene Komponenten für AEM erstellen können.
-seo-description: In diesem Abschnitt sind einige Beispiele dazu aufgeführt, wie Sie eigene Komponenten für AEM erstellen können.
+seo-description: This section provides some examples on how to create your own components for AEM.
 uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: c205046f-9e60-4010-9ae3-be7d02d45248
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '217'
 ht-degree: 97%
 
 ---
@@ -34,8 +34,9 @@ Informationen zur klassischen Benutzeroberfläche finden Sie unter [AEM-Komponen
 >Um Ihnen das Analysieren, Testen und Debuggen Ihrer Komponenten zu erleichtern, stellt AEM Folgendes bereit:
 >
 >* [Entwicklermodus](/help/sites-developing/developer-mode.md)
-* ein [Framework zum Automatisieren von Tests, basierend auf der Hobbes.js-Bibliothek](/help/sites-developing/hobbes.md)
+>* ein [Framework zum Automatisieren von Tests, basierend auf der Hobbes.js-Bibliothek](/help/sites-developing/hobbes.md)
 
+>
 
 
 ## Codebeispiel – So passen Sie Dialogfelder an {#code-sample-how-to-customize-dialog-fields}
@@ -48,7 +49,8 @@ Den Code dieser Seite finden Sie auf GitHub.
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip) herunter.
 
 >[!NOTE]
-Dieses Codebeispiel bezieht sich auf die AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>
+>Dieses Codebeispiel bezieht sich auf die AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ## Verwandte Ressourcen {#related-resources}
 

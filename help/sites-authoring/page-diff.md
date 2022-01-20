@@ -1,8 +1,8 @@
 ---
 title: Seitenvergleich
-seo-title: Seitenvergleich
+seo-title: Page Diff
 description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
-seo-description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 96%
+source-wordcount: '672'
+ht-degree: 95%
 
 ---
 
@@ -27,7 +27,7 @@ Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seite
 
 >[!CAUTION]
 >
->Wenn Sie eine Version vor AEM 6.4.3 ausführen, muss der Benutzer über die Berechtigung **Ändern/Erstellen/Löschen** auf dem Knoten `/content/versionhistory` verfügen, um die Funktion verwenden zu können.
+>Wenn Sie eine Version vor AEM 6.4.3 ausführen, muss der Benutzer über die **Ändern/Erstellen/Löschen** Berechtigung auf dem Knoten `/content/versionhistory` , um die Funktion zu verwenden.
 >
 >Weitere Informationen zu dieser Funktion finden Sie unter [Entwicklung und Seitenvergleich](/help/sites-developing/pagediff.md#operation-details).
 
@@ -42,7 +42,7 @@ Folgendes kann verglichen werden:
 
 Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im gegebenen Zusammenhang verwendet wird.
 
-### Darstellung von Unterschieden  {#presentation-of-differences}
+### Darstellung von Unterschieden {#presentation-of-differences}
 
 Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede gleich.
 
@@ -75,7 +75,7 @@ Hinweis: Die Farben für geänderte und verschobene Elemente sind identisch.
 >
 >Beim Vergleich von Sprachkopien ist die Hervorhebung deaktiviert, da sich in einer Übersetzung alles ändert und Hervorhebung nutzlos wäre.
 
-### Vollbild und Beenden  {#fullscreen-and-exiting}
+### Vollbild und Beenden {#fullscreen-and-exiting}
 
 Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die Möglichkeit, auf jeder Seite des Seitenvergleichs auf das Vollbildsymbol zu klicken, um die Ansicht auf das ganze Browser-Fenster zu vergrößern.
 

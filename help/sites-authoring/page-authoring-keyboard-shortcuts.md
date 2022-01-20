@@ -1,8 +1,8 @@
 ---
-title: Tastaturbefehle bei der Seitenbearbeitung
-seo-title: Tastaturbefehle für die Seitenbearbeitung
+title: Tastaturbefehle für die Seitenbearbeitung
+seo-title: Keyboard Shortcuts when Editing Pages
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch Befehle für die Bearbeitung von Seiten.
-seo-description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch für die Bearbeitung von Seiten
+seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: 15734120-16b2-4c51-a387-d3d4508eb0b7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 91%
+source-wordcount: '221'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 ## Tastaturbefehle für die Bearbeitung {#editing-keyboard-shortcuts}
 
-| Standort | Kürzel | Beschreibung |
+| Standort | Tastaturbefehl | Beschreibung |
 |---|---|---|
 | Beliebiger Fenstermodus „Bearbeiten“ | `Ctrl-Shift-m` | Zwischen **Vorschau** und dem aktuell ausgewählten [Modus](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (z. B. **Bearbeiten**, **Layout** usw.) wechseln* |
 | Modus **Bearbeiten** | `Ctrl-z` | [Letzte Änderung rückgängig machen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
@@ -43,7 +43,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->&amp;ast; Sobald der Benutzer im Vorschaumodus mit der Seite interagiert, ist der Tastaturbefehl `Ctrl-Shift-m` nicht mehr verfügbar. Der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
+>&amp;ast; Sobald der Benutzer im Vorschaumodus mit der Seite interagiert, wird die `Ctrl-Shift-m` Der Tastaturbefehl ist nicht mehr verfügbar. Der Benutzer muss auf die obere Editor-Leiste klicken oder wieder in den Bearbeitungsmodus wechseln, damit der Tastaturbefehl erneut verfügbar wird.
 
 Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-authoring/keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 

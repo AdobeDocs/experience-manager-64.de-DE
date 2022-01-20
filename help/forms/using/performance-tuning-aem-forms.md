@@ -1,8 +1,8 @@
 ---
 title: Leistungsoptimierung für AEM Forms-Server
-seo-title: Leistungsoptimierung für AEM Forms-Server
+seo-title: Performance tuning of AEM Forms server
 description: Damit AEM Forms optimal funktioniert, können Sie die Cacheeinstellungen und JVM-Parameter anpassen. Durch die Verwendung eines Webservers kann auch die Leistung der AEM Forms-Bereitstellung verbessert werden.
-seo-description: Damit AEM Forms optimal funktioniert, können Sie die Cacheeinstellungen und JVM-Parameter anpassen. Durch die Verwendung eines Webservers kann auch die Leistung der AEM Forms-Bereitstellung verbessert werden.
+seo-description: For AEM Forms to perform optimally, you can fine-tune the cache settings and JVM parameters. Also, using a web server can enhance the performance of AEM Forms deployment.
 uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '866'
 ht-degree: 81%
 
 ---
@@ -48,7 +48,7 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 
 ## JVM-Parameter   {#jvm-parameters}
 
-Für eine optimale Leistung wird empfohlen, die folgenden JVM-Argumente `init` zu verwenden, um `Java heap` und `PermGen` zu konfigurieren.
+Für eine optimale Leistung wird empfohlen, die folgende JVM zu verwenden `init` Argumente zum Konfigurieren der `Java heap` und `PermGen`.
 
 ```java
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -81,7 +81,7 @@ Die folgenden Schritte demonstrieren die Änderungen, die erforderlich sind, um 
 
 Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfigurationen zur optimierten Nutzung von HTTP.
 
-1. Heben Sie die Auskommentierung der folgenden Modulkonfigurationen in der Datei `APACHE_HOME/conf/httpd.conf` auf.
+1. Entfernen Sie die Auskommentierung der folgenden Modulkonfigurationen in `APACHE_HOME/conf/httpd.conf` -Datei.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -91,18 +91,18 @@ Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfiguration
 
    >[!NOTE]
    >
-   >Unter Linux ist der Standardwert `APACHE_HOME` `/etc/httpd/`.
+   >Für Linux ist die Standardeinstellung `APACHE_HOME` is `/etc/httpd/`.
 
 1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
 
-   Fügen Sie die folgende Konfiguration in die Konfigurationsdatei `APACHE_HOME/conf/httpd.conf` ein.
+   Fügen Sie die folgende Konfiguration hinzu in `APACHE_HOME/conf/httpd.conf` Konfigurationsdatei.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Aktivieren Sie die Komprimierung. Fügen Sie die folgende Konfiguration in die Konfigurationsdatei `APACHE_HOME/conf/httpd.conf` ein.
+1. Aktivieren Sie die Komprimierung. Fügen Sie die folgende Konfiguration hinzu in `APACHE_HOME/conf/httpd.conf` Konfigurationsdatei.
 
    **Für HTML5-Formulare**
 
@@ -148,13 +148,13 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 * AEM-Installationsverzeichnis. Wenn es nicht möglich ist, das gesamte Verzeichnis auszuschließen, schließen Sie die folgenden Ordner aus:
 
-   * [AEM Installationsordner]\crx-repository\temp
-   * [AEM Installationsordner]\crx-repository\repository
-   * [AEM Installationsordner]\crx-repository\launchpad
+   * [AEM Installationsverzeichnis]\crx-repository\temp
+   * [AEM Installationsverzeichnis]\crx-repository\repository
+   * [AEM Installationsverzeichnis]\crx-repository\launchpad
 
 * Temporärer Ordner des Anwendungsservers. Der Standardspeicherort lautet:
 
-   * (Jboss) [AEM Installationsordner]\jboss\standalone\tmp
+   * (Jboss) [AEM Installationsverzeichnis]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Websphere) \Programme\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
@@ -167,12 +167,10 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 * **(Nur AEM Forms unter JEE),** AEM Forms-Serverprotokolle und temporäres Verzeichnis. Der Standardspeicherort lautet:
 
    * Serverprotokolle - `[AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs`
-   * Temporärer Ordner - [AEM Forms-Installationsordner]\temp
+   * Temporärer Ordner - [Installationsordner von AEM Forms]\temp
 
 >[!NOTE]
 >
->* Wenn Sie einen anderen Speicherort für den globalen Dokumentenspeicher und den temporären Ordner verwenden, öffnen Sie die AdminUI unter `https://[server]:[port]/adminui)`, navigieren Sie zu **Startseite > Einstellungen > Core-Systemeinstellungen > Core-Konfigurationen**, um den verwendeten Speicherort zu bestätigen.
-
+>* Wenn Sie einen anderen Speicherort für den globalen Dokumentenspeicher und den temporären Ordner verwenden, öffnen Sie die AdminUI unter `https://[server]:[port]/adminui)`, navigieren Sie zu **Startseite > Einstellungen > Core-Systemeinstellungen > Core-Konfigurationen** zur Bestätigung des verwendeten Standorts.
 * Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Verzeichnisse langsam funktioniert, schließen Sie auch die ausführbare Java-Datei (java.exe) aus.
-
 

@@ -1,19 +1,19 @@
 ---
 title: Erstellen und Synchronisieren von Live Copies
-seo-title: Erstellen und Synchronisieren von Live Copies
+seo-title: Creating and Synchronizing Live Copies
 description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren können.
-seo-description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren können.
+seo-description: Learn how to create and synchronize Live Copies.
 uuid: f6f410d4-8c72-48b7-a217-afd6076b512d
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
-feature: Multi-Site-Manager
+feature: Multi Site Manager
 exl-id: 13d044bd-fa61-4e24-ac1d-69a6f10847a4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '4022'
+source-wordcount: '4006'
 ht-degree: 92%
 
 ---
@@ -48,7 +48,7 @@ Nachdem Sie die Blueprint-Konfiguration erstellt haben, können Sie die folgende
 
 Wird Ihre Blueprint-Konfiguration verwendet, können Sie sie mit einer Rollout-Konfiguration verknüpfen, die bestimmt, wie die Live Copies der Quelle/Blueprint synchronisiert werden. Siehe [Angeben der zu verwendenden Rollout-Konfigurationen](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
 
-### Erstellen von Blueprint-Konfigurationen  {#creating-a-blueprint-configuration}
+### Erstellen von Blueprint-Konfigurationen {#creating-a-blueprint-configuration}
 
 So erstellen Sie eine Blueprint-Konfiguration:
 
@@ -67,7 +67,7 @@ So erstellen Sie eine Blueprint-Konfiguration:
 
 1. Mit **Erstellen** wird die Blueprint-Konfiguration basierend auf Ihren Angaben erstellt.
 
-### Bearbeiten oder Löschen von Blueprint-Konfigurationen  {#editing-or-deleting-a-blueprint-configuration}
+### Lokales Bearbeiten oder Löschen {#editing-or-deleting-a-blueprint-configuration}
 
 Sie können eine vorhandene Blueprint-Konfiguration bearbeiten oder löschen:
 
@@ -92,7 +92,7 @@ Sie können eine Live Copy einer Seite oder eines Zweigs erstellen. Beim Erstel
 
 Sie können Live Copies für beliebige Seite erstellen:
 
-* Seiten, die durch eine [Blueprint-Konfiguration](#creating-a-blueprint-configuration) referenziert werden.
+* Seiten, die durch eine [Blueprint-Konfiguration](#creating-a-blueprint-configuration).
 * Seiten ohne verbundene Konfiguration.
 * AEM unterstützt zudem die Erstellung einer Live Copy innerhalb der Seiten einer anderen Live Copy.
 
@@ -134,11 +134,11 @@ So erstellen Sie eine Live Copy:
 1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy anzugeben, wählen Sie diese über die Dropdown-Liste **Rollout-Konfigurationen** aus. Ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
 1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsmeldung wird angezeigt. Hierüber können Sie entweder **Öffnen** oder **Fertig** auswählen.
 
-### Erstellen von Live Copies einer Site über eine Blueprint-Konfiguration  {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
+### Erstellen von Live Copies einer Site über eine Blueprint-Konfiguration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 Erstellen Sie eine Live Copy mit einer Blueprint-Konfiguration, um eine Site basierend auf dem Blueprint(Quell)-Inhalt anzulegen. Wenn Sie eine Live Copy über eine Blueprint-Konfiguration erstellen, wählen Sie einen oder mehrere Sprachzweige der zu kopierenden Blueprint-Quelle aus. Wählen Sie dann die Kapitel aus, aus denen die Sprachzweige kopiert werden sollen. Siehe [Erstellen von Blueprint-Konfigurationen](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
-Wenn Sie einige Sprachzweige oder Kapitel aus der Live Copy auslassen, können Sie sie später hinzufügen. Siehe [Erstellen einer Live Copy innerhalb einer Live Copy (Blueprint-Konfiguration)](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
+Wenn Sie einige Sprachzweige oder Kapitel aus der Live Copy auslassen, können Sie sie später hinzufügen. see [Erstellen einer Live Copy innerhalb einer Live Copy (Blueprint-Konfiguration)](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
 
 >[!CAUTION]
 >
@@ -153,7 +153,7 @@ Geben Sie beim Erstellen der Site Werte für die folgenden Eigenschaften an:
 * **Name**: (Optional) Name des JCR-Knotens, in dem die Stammseite der Live Copy gespeichert wird. Der Standardwert basiert auf dem Titel.
 * **Website-Besitzer**: (Optional)
 * **Live Copy**: Wählen Sie diese Option aus, um eine Live-Beziehung zur Quell-Site herzustellen. Wenn Sie diese Option nicht auswählen, wird zwar eine Blueprint-Kopie erstellt, aber sie wird nachfolgend nicht mit der Quelle synchronisiert.
-* **Rollout-Konfigurationen**: (Optional) Wählen Sie eine oder mehrere Rollout-Konfigurationen für die Synchronisierung der Live Copy aus. Standardmäßig werden die Rollout-Konfigurationen vom Blueprint übernommen. Weitere Informationen finden Sie unter [Festlegen der zu verwendenden Rollout-Konfigurationen](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) .
+* **Rollout-Konfigurationen**: (Optional) Wählen Sie eine oder mehrere Rollout-Konfigurationen für die Synchronisierung der Live Copy aus. Standardmäßig werden die Rollout-Konfigurationen vom Blueprint übernommen. see [Festlegen der zu verwendenden Rollout-Konfigurationen](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) für weitere Details.
 
 So erstellen Sie die Live Copy einer Site über eine Blueprint-Konfiguration:
 
@@ -173,7 +173,7 @@ So erstellen Sie die Live Copy einer Site über eine Blueprint-Konfiguration:
 1. Wählen Sie die in die Live Copy einzuschließenden Blueprint-Abschnitte über das Dropdown-Menü **Anfangskapitel** aus. Wieder sind alle verfügbaren Kapitel standardmäßig enthalten; sie können aber entfernt werden.
 1. Geben Sie Werte für die übrigen Eigenschaften ein und wählen Sie dann **Erstellen**. Wählen Sie im Bestätigungsdialogfeld die Option **Fertig** aus, um zur **Sites-Konsole** zurückzukehren, oder wählen Sie **Site öffnen** aus, um die Stammseite der Site zu öffnen.
 
-### Erstellen von Live Copies in einer Live Copy (Blueprint-Konfiguration)  {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
+### Erstellen von Live Copies in einer Live Copy (Blueprint-Konfiguration) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
 Wenn Sie eine Live Copy in der bereits vorhandenen (mit einer Blueprint-Konfiguration angelegten) Live Copy erstellen, können Sie beliebige Sprachkopien oder Kapitel einfügen, die bei der ursprünglichen Erstellung der Live Copy nicht einbezogen wurden.
 
@@ -222,8 +222,7 @@ Führen Sie den Rollout für eine Blueprint-Seite durch, um Inhaltsänderungen a
 >
 >Solche [Konflikte müssen beim Rollout gehandhabt und aufgelöst werden](/help/sites-administering/msm-rollout-conflicts.md).
 
-
-#### Durchführen von Blueprint-Rollouts über Seiteneigenschaften  {#rolling-out-a-blueprint-from-page-properties}
+#### Durchführen von Blueprint-Rollouts über Seiteneigenschaften {#rolling-out-a-blueprint-from-page-properties}
 
 1. Wählen Sie in der **Sites-Konsole** die Seite aus und öffnen Sie die Eigenschaften.
 1. Öffnen Sie die Registerkarte **Blueprint**.
@@ -284,7 +283,7 @@ Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf d
 
    Sie werden zur Bestätigung aufgefordert. Verwenden Sie **Sync**, um fortzufahren.
 
-#### Synchronisieren von Live Copies über die Live Copy-Übersicht  {#synchronize-a-live-copy-from-the-live-copy-overview}
+#### Synchronisieren von Live Copies über die Live Copy-Übersicht {#synchronize-a-live-copy-from-the-live-copy-overview}
 
 Die [Synchronisierungsaktion ist auch über die Live Copy-Übersicht verfügbar](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wenn eine Live Copy-Seite ausgewählt wird.
 
@@ -316,8 +315,7 @@ Zum Ändern von Live Copy-Inhalt haben Sie folgende Möglichkeiten:
 >
 >Solche [Konflikte müssen beim Rollout gehandhabt und aufgelöst werden](/help/sites-administering/msm-rollout-conflicts.md).
 
-
-### Hinzufügen von Komponenten zu einer Live Copy-Seite  {#adding-components-to-a-live-copy-page}
+### Hinzufügen von Komponenten zu einer Live Copy-Seite {#adding-components-to-a-live-copy-page}
 
 Sie können einer Live Copy-Seite jederzeit Komponenten hinzufügen. Der Vererbungsstatus der Live Copy und des zugehörigen Absatzsystems hat keine Kontrolle über Ihre Fähigkeit, Komponenten hinzuzufügen.
 
@@ -339,7 +337,7 @@ Sie können die Live Copy-Vererbung für eine Live Copy-Seite aussetzen, damit
 
 >[!NOTE]
 >
->Wenn die Komponente als Container markiert ist, gelten die Aktionen zum Abbrechen und Aussetzen nicht für die untergeordneten Komponenten. Weitere Informationen finden Sie unter [Best Practices für MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization).
+>Wenn die Komponente als Container markiert ist, gelten die Aktionen zum Abbrechen und Aussetzen nicht für die untergeordneten Komponenten. Siehe auch [Best Practices für MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) für weitere Informationen.
 
 #### Aussetzen der Vererbung über Seiteneigenschaften {#suspending-inheritance-from-page-properties}
 
@@ -367,7 +365,7 @@ Die [Aussetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](/hel
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. Bestätigen Sie die Aktion **Suspend** im Dialogfeld **Live Copy aussetzen**:
+1. Bestätigen Sie die **Aussetzen** Aktion im Dialogfeld &quot;Live Copy aussetzen&quot;:
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -401,7 +399,7 @@ Die [Fortsetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](/he
 
 1. Öffnen Sie die [Live Copy-Übersicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) und wählen Sie eine ausgesetzte Live Copy-Seite aus. Für diese wird **VERERBUNG ABGEBROCHEN** angezeigt.
 1. Wählen Sie in der Symbolleiste die Option **Fortsetzen** aus.
-1. Geben Sie an, ob Sie die Seite nach dem Wiederherstellen der Vererbung synchronisieren möchten, und bestätigen Sie dann die Aktion **Fortsetzen** im Dialogfeld **Live Copy fortsetzen**.
+1. Geben Sie an, ob Sie die Seite nach dem Wiederherstellen der Vererbung synchronisieren möchten, und bestätigen Sie dann die **Fortsetzen** Aktion im Dialogfeld &quot;Live Copy fortsetzen&quot;angezeigt.
 
 ### Ändern der Vererbungstiefe (flach/tief) {#changing-inheritance-depth-shallow-deep}
 
@@ -422,7 +420,7 @@ Sie können bei einer vorhandenen Live Copy die Tiefe für eine Seite ändern, 
 
 * Wechseln zu einer flachen und dann wieder zu einer tiefen Live Copy:
 
-   * Alle untergeordneten Elemente der (ehemals) flachen Live Copy werden so behandelt, als wären sie manuell erstellt worden, und werden daher mit `[oldname]_msm_moved name` entfernt.
+   * Alle untergeordneten Elemente der (ehemals) flachen Live Copy werden so behandelt, als wären sie manuell erstellt worden, und werden daher mithilfe von `[oldname]_msm_moved name`.
 
 So geben Sie die Tiefe an oder ändern diese:
 
@@ -441,13 +439,13 @@ So geben Sie die Tiefe an oder ändern diese:
 
 1. Klicken oder tippen Sie auf **Speichern**, um Updates beizubehalten.
 
-### Abbrechen der Vererbung für Komponenten  {#cancelling-inheritance-for-a-component}
+### Abbrechen der Vererbung für Komponenten {#cancelling-inheritance-for-a-component}
 
 Brechen Sie die Live Copy-Vererbung für eine Komponente ab, sodass die Komponente nicht länger mit der Quellkomponente synchronisiert wird. Sie können die Vererbung ggf. zu einem späteren Zeitpunkt aktivieren.
 
 >[!NOTE]
 >
->Wenn die Komponente als Container markiert ist, gelten die Aktionen zum Abbrechen und Aussetzen nicht für die untergeordneten Komponenten. Weitere Informationen finden Sie unter [Best Practices für MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization).
+>Wenn die Komponente als Container markiert ist, gelten die Aktionen zum Abbrechen und Aussetzen nicht für die untergeordneten Komponenten. Siehe auch [Best Practices für MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) für weitere Informationen.
 
 >[!NOTE]
 >
@@ -467,7 +465,7 @@ Brechen Sie die Vererbung ab, um den Komponenteninhalt zu ändern oder die Kompo
 
    Die Symbolleiste „Komponente“ wird um alle (entsprechenden) Bearbeitungsbefehle aktualisiert.
 
-### Erneutes Aktivieren der Vererbung für eine Komponente  {#re-enabling-inheritance-for-a-component}
+### Erneutes Aktivieren der Vererbung für eine Komponente {#re-enabling-inheritance-for-a-component}
 
 Um die Vererbung für eine Komponente zu aktivieren, klicken oder tippen Sie in der Symbolleiste „Komponente“ auf das Symbol **Vererbung erneut aktivieren**.
 
@@ -491,7 +489,7 @@ Gehen Sie wie folgt vor, um die Vererbung des Absatzsystems abzubrechen.
 1. Ziehen Sie eine bereits vorhandene Komponente an eine neue Position auf der Seite.
 1. Bestätigen Sie die Aktion im Dialogfeld **Vererbung abbrechen** mit **Ja**.
 
-### Außerkraftsetzen der Eigenschaften einer Live Copy-Seite  {#overriding-properties-of-a-live-copy-page}
+### Außerkraftsetzen der Eigenschaften einer Live Copy-Seite {#overriding-properties-of-a-live-copy-page}
 
 Die Seiteneigenschaften einer Live Copy-Seite werden standardmäßig von der Quellseite übernommen (und sind nicht bearbeitbar).
 
@@ -516,7 +514,7 @@ Sie können später ggf. die Vererbung für eine Eigenschaft erneut aktivieren.
 
 1. Klicken oder tippen Sie im Bestätigungsdialogfeld **Vererbung abbrechen** auf **Ja**.
 
-### Wiederherstellen der Eigenschaften einer Live Copy-Seite  {#revert-properties-of-a-live-copy-page}
+### Wiederherstellen der Eigenschaften einer Live Copy-Seite {#revert-properties-of-a-live-copy-page}
 
 Um die Vererbung für eine Eigenschaft zu aktivieren, klicken oder tippen Sie auf das Symbol **Vererbung wiederherstellen** neben der entsprechenden Eigenschaft.
 
@@ -541,7 +539,7 @@ Eine Rücksetzung wirkt sich auf die von Ihnen durchgeführten Änderungen an de
 
 1. Bestätigen Sie den Vorgang im Dialogfeld **Live Copy zurücksetzen** mit **Zurücksetzen**.
 
-#### Zurücksetzen von Live Copy-Seiten über die Live Copy-Übersicht  {#reset-a-live-copy-page-from-the-live-copy-overview}
+#### Zurücksetzen von Live Copy-Seiten über die Live Copy-Übersicht {#reset-a-live-copy-page-from-the-live-copy-overview}
 
 Die [Rücksetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wenn eine Live Copy-Seite ausgewählt wird.
 
@@ -553,18 +551,18 @@ Die [Rücksetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](/h
 
 ## Vergleichen von Live Copy-Seiten mit Blueprint-Seiten {#comparing-a-live-copy-page-with-a-blueprint-page}
 
-Um die vorgenommenen Änderungen zu verfolgen, können Sie die Blueprint-Seite in **Verweise** anzeigen und mit der zugehörigen Live Copy-Seite vergleichen:
+Um die vorgenommenen Änderungen zu verfolgen, können Sie die Blueprint-Seite in **Verweise** und vergleichen sie mit der zugehörigen Live Copy-Seite:
 
 1. Navigieren Sie in der **Sites-Konsole** [zu einer Blueprint- oder Live Copy-Seite und wählen Sie diese aus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-authoring/basic-handling.md#references)** und wählen Sie aus den folgenden Optionen:
 
-   * **Blueprint**  (wenn eine Live Copy-Seite ausgewählt ist)
-   * **Live Copies**  (bei Auswahl einer Blueprint-Seite)
+   * **Blueprint** (bei Auswahl einer Live Copy-Seite)
+   * **Live Copies** (bei Auswahl einer Blueprint-Seite)
 
 1. Wählen Sie eine bestimmte Live Copy aus und aktivieren Sie dann eine der folgenden Optionen:
 
    * **Mit Blueprint vergleichen** (bei Auswahl einer Live Copy-Seite)
-   * **Mit Live Copy vergleichen**  (wenn eine Blueprint-Seite ausgewählt ist)
+   * **Mit Live Copy vergleichen** (bei Auswahl einer Blueprint-Seite)
 
    Beispiel:
 
@@ -622,7 +620,7 @@ So trennen Sie eine Live Copy:
 
 1. Wählen Sie im daraufhin angezeigten Bestätigungsdialogfeld die Option **Trennen** aus, um die Aktion abzuschließen.
 
-### Trennen von Live Copy-Seiten über die Live Copy-Übersicht  {#detach-a-live-copy-page-from-the-live-copy-overview}
+### Trennen von Live Copy-Seiten über die Live Copy-Übersicht {#detach-a-live-copy-page-from-the-live-copy-overview}
 
 Die [Trennaktion ist auch über die Live Copy-Übersicht verfügbar](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wenn eine Live Copy-Seite ausgewählt wird.
 

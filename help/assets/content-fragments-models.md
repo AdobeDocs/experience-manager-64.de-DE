@@ -1,19 +1,19 @@
 ---
 title: Inhaltsfragmentmodelle
-seo-title: Inhaltsfragmentmodelle
+seo-title: Content Fragment Models
 description: Inhaltsfragmentmodelle werden verwendet, um Inhaltsfragmente mit strukturierten Inhalten zu erstellen.
-seo-description: Inhaltsfragmentmodelle werden verwendet, um Inhaltsfragmente mit strukturierten Inhalten zu erstellen.
+seo-description: Content Fragment Models are used to create content fragments with structured content.
 uuid: 59176a32-1255-4a46-ad00-344bde843ea6
 content-type: reference
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '689'
 ht-degree: 92%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 92%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](../release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0 oder höher)](../release-notes/sp-release-notes.md).
 
 Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfragmente](content-fragments.md).
 
@@ -30,7 +30,7 @@ Inhaltsfragmentmodelle definieren die Struktur des Inhalts für Ihre [Inhaltsfra
 
 >[!CAUTION]
 >
->Wenn Sie **[!UICONTROL Inhaltsfragmentmodelle]** nicht aktivieren, steht die Option **[!UICONTROL Erstellen]** nicht zum Erstellen neuer Modelle zur Verfügung.
+>Wenn Sie nicht aktivieren **[!UICONTROL Inhaltsfragmentmodelle]**, die **[!UICONTROL Erstellen]** ist nicht für die Erstellung neuer Modelle verfügbar.
 
 Gehen Sie wie folgt vor, um Inhaltsfragmentmodelle zu aktivieren:
 
@@ -53,7 +53,7 @@ Um [ein neues Inhaltsfragmentmodell zu erstellen](#creating-a-content-fragment-m
 
 1. Wählen Sie **[!UICONTROL Erstellen]** aus, um die Definition zu speichern.
 
-### Wenden Sie die Konfiguration auf Ihren Assets-Ordner an {#apply-the-configuration-to-your-assets-folder}
+### Anwenden der Konfiguration auf Ihren Assets-Ordner {#apply-the-configuration-to-your-assets-folder}
 
 Wenn die Konfiguration **[!UICONTROL Global]** für Inhaltsfragmentmodelle aktiviert wurde, können alle von Benutzern erstellten Modelle in jedem beliebigen Assets-Ordner verwendet werden.
 
@@ -75,7 +75,7 @@ Um eine andere Konfiguration (d. h. nicht „Global“) mit einem vergleichbare
 
 1. Speichern Sie das leere Modell über **[!UICONTROL Erstellen]**. Eine Benachrichtigung zeigt an, dass der Vorgang erfolgreich abgeschlossen wurde. Daraufhin können Sie das Modell über die Option **[!UICONTROL Öffnen]** direkt bearbeiten oder über **[!UICONTROL Fertig]** zur Konsole zurückkehren.
 
-## Definieren des Inhaltsfragmentmodells  {#defining-your-content-fragment-model}
+## Definieren des Inhaltsfragmentmodells {#defining-your-content-fragment-model}
 
 Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehenden Inhaltsmodells. Mit dem Modell-Editor können Sie die erforderlichen Felder hinzufügen und konfigurieren:
 
@@ -95,7 +95,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur des daraus entstehende
 
    >[!NOTE]
    >
-   >Wenn ein Feld **Erforderlich** ist, wird die im linken Bereich angegebene **Beschriftung** mit einem Sternchen (**&amp;ast;**) gekennzeichnet.
+   >Wenn ein Feld **Erforderlich**, die **Titel** im linken Bereich angezeigt wird, wird mit einem Sternchen (**&amp;ast;**).
 
    ![cfm-6420-12](assets/cfm-6420-12.png)
 
@@ -136,7 +136,7 @@ So löschen Sie ein Inhaltsfragmentmodell:
    >
    >Wenn es Verweise auf das Modell gibt, wird Ihnen ein Warnhinweis angezeigt. Ergreifen Sie die entsprechenden Maßnahmen.
 
-## Veröffentlichen eines Inhaltsfragmentmodells  {#publishing-a-content-fragment-model}
+## Veröffentlichen eines Inhaltsfragmentmodells {#publishing-a-content-fragment-model}
 
 Inhaltsfragmentmodelle müssen zeitgleich mit oder im Vorfeld der Veröffentlichung abhängiger Inhaltsfragmente veröffentlicht werden.
 

@@ -71,9 +71,9 @@ Weitere Informationen finden Sie unter[ Erstellen eines adaptiven Formulars](/he
 * Die AEM Forms-Installation bietet verschiedene integrierte Vorlagen für adaptive Formulare, die Sie verwenden können, um adaptive Formulare zu erstellen. Sie können auch Ihre eigenen Vorlagen erstellen. AEM bietet die statischen und bearbeitbaren Vorlagen.
 
    * Statische Vorlagen werden von den Entwicklern definiert und konfiguriert.
-   * Bearbeitbare Vorlagen werden von Autoren mit Hilfe des Vorlageneditors erstellt. Mit dem Vorlageneditor können Sie eine Grundstruktur und den anfänglichen Inhalt einer Vorlage definieren. Jede Änderung in der Strukturebene wird in allen Formularen, die diese Vorlage verwenden, berücksichtigt. Der anfängliche Inhalt kann vorkonfigurierte Designs, Vorfülldienste, Sendeaktionen usw. umfassen. Diese Einstellungen können jedoch mit dem Formular-Editor für ein Formular geändert werden. Weitere Informationen finden Sie unter [Vorlagen für adaptive Formulare](/help/forms/using/template-editor.md).
+   * Bearbeitbare Vorlagen werden von Autoren mit Hilfe des Vorlageneditors erstellt. Mit dem Vorlageneditor können Sie eine Grundstruktur und den anfänglichen Inhalt einer Vorlage definieren. Jede Änderung in der Strukturebene wird in allen Formularen, die diese Vorlage verwenden, berücksichtigt. Der anfängliche Inhalt kann vorkonfigurierte Designs, Vorfülldienste, Sendeaktionen usw. umfassen. Diese Einstellungen können jedoch mit dem Formular-Editor für ein Formular geändert werden. Weitere Informationen finden Sie unter [Adaptive Formularvorlagen](/help/forms/using/template-editor.md).
 
-* Verwenden Sie zum Formatieren einer bestimmten Feld- oder Bedienfeldinstanz [Inline-Styling](/help/forms/using/inline-style-adaptive-forms.md). Alternativ dazu können Sie eine Klasse in einer CSS-Datei definieren und den Klassennamen in der CSS-Klasseneigenschaft der Komponente angeben.
+* Verwenden Sie zum Formatieren einer bestimmten Feld- oder Bedienfeldinstanz [Inline-Stil](/help/forms/using/inline-style-adaptive-forms.md). Alternativ dazu können Sie eine Klasse in einer CSS-Datei definieren und den Klassennamen in der CSS-Klasseneigenschaft der Komponente angeben.
 * Verknüpfen Sie eine Client-Bibliothek in einer Komponente, um Stile in allen adaptiven Formularen oder Fragmenten konsistent anzuwenden, die diese Komponente verwenden. Weitere Informationen finden Sie unter[ Erstellen einer adaptiven Formularseitenkomponente](/help/forms/using/custom-adaptive-forms-templates.md).
 * Wenden Sie die Stile an, die in einer Client-Bibliothek definiert werden, um adaptive Formulare auszuwählen, indem Sie den Pfad zur Client-Bibliothek im CSS-Datei-Pfadfeld in den Eigenschaften für den adaptiven Forrmularcontainer angeben.
 * Um eine Client-Bibliothek ihrer Stile zu erstellen, können Sie die benutzerdefinierte CSS-Datei im Design-Editor oder im Formularcontainer konfigurieren.
@@ -92,7 +92,7 @@ Weitere Informationen finden Sie unter[ Erstellen eines adaptiven Formulars](/he
 
 * Verwenden Sie den Objektbrowser in der Seitenleiste, um schnell auf Felder in der Formularhierarchie zuzugreifen. Sie können im Suchfeld nach Objekten in der Formular- oder Objektstruktur, um von einem Objekt zu einem anderen zu navigieren.
 * Um die Eigenschaften einer Komponente im Komponenten-Browser in der Seitenleiste anzuzeigen und zu bearbeiten, wählen Sie die Komponente aus und klicken Sie auf ![cmppr-1](assets/cmppr-1.png). Sie können auch auf eine Komponente doppelkicken, um ihre Eigenschaften im Eigenschaftenbrowser anzuzeigen.
-* Verwenden Sie die Tastaturkürzel, um schnelle Aktionen in Ihren Formularen durchzuführen. Siehe [AEM Forms-Tastaturbefehle](/help/forms/using/keyboard-shortcuts.md).
+* Verwenden Sie die Tastaturkürzel, um schnelle Aktionen in Ihren Formularen durchzuführen. Siehe [Tastaturbefehle für AEM Forms](/help/forms/using/keyboard-shortcuts.md).
 
 * Adaptive Formularkomponenten werden für die Verwendung nur in adaptiven Formularseiten empfohlen. Die Komponenten haben Abhängigkeiten von ihrer übergeordneten Hierarchie. Daher dürfen Sie diese nicht auf der AEM-Seite verwenden.
 
@@ -105,13 +105,13 @@ AEM Forms bietet einen [Regeleditor](/help/forms/using/rule-editor.md), der es I
 Der Regeleditor bietet einen visuellen Editor und einen Code-Editor für Schreibregeln. Achten Sie auf Folgendes, wenn Sie Schreibregeln mit dem Code-Editormodus verwenden:
 
 * Verwenden Sie eindeutige Namen aussagekräftig und Formularfelder und Komponenten, damit alle möglichen Konflikten während Schreibregeln vermeiden.
-* Verwenden Sie den Operator `this` für eine Komponente, um in einem Regelausdruck auf sich selbst zu verweisen. Es wird sichergestellt, dass die Regel gültig bleibt, selbst wenn sich der Komponentenname ändert. Beispiel: `field1.valueCommit script: this.value > 10`.
+* Verwendung `this` -Operator für eine Komponente, um in einem Regelausdruck auf sich selbst zu verweisen. Es wird sichergestellt, dass die Regel gültig bleibt, selbst wenn sich der Komponentenname ändert. Beispiel: `field1.valueCommit script: this.value > 10`.
 
-* Verwenden Sie Komponentennamen, wenn Sie auf verschiedene Formularkomponenten verweisen. Verwenden Sie die Eigenschaft `value` , um den Wert eines Felds oder einer Komponente abzurufen. Beispiel: `field1.value`.
+* Verwenden Sie Komponentennamen, wenn Sie auf verschiedene Formularkomponenten verweisen. Verwenden Sie die `value` -Eigenschaft, um den Wert eines Felds oder einer Komponente abzurufen. Beispiel: `field1.value`.
 
 * Verweisen Sie auf Komponenten durch die relative eindeutige Hierarchie, um Konflikte zu vermeiden. Beispiel: `parentName.fieldName`.
 
-* Wenn Sie komplexe oder häufig verwendete Regeln verarbeiten, sollten Sie in Erwägung ziehen, Geschäftslogik als Funktionen in einer separaten Client-Bibliothek zu schreiben, die Sie über adaptive Formulare hinweg angeben und wiederverwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. Sie können die Client-Bibliothek auch verwenden, um die [serverseitige erneute Überprüfung](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) der gesendeten Formulardaten zu erzwingen.
+* Wenn Sie komplexe oder häufig verwendete Regeln verarbeiten, sollten Sie in Erwägung ziehen, Geschäftslogik als Funktionen in einer separaten Client-Bibliothek zu schreiben, die Sie über adaptive Formulare hinweg angeben und wiederverwenden können. Die Client-Bibliothek sollte eine eigenständige Bibliothek sein und darf keine externen Abhängigkeiten, außer von jQuery und Underscore.js haben. Sie können auch die Client-Bibliothek verwenden, um [serverseitige erneute Validierung](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form) der übermittelten Formulardaten.
 * Adaptive Formulare bieten eine Reihe von APIs, die Sie verwenden können, um zu kommunizieren und Aktionen auf adaptiven Formularen anzuzeigen. Einige Schlüssel-APIs lauten wie folgt: Weitere Informationen finden Sie unter[ JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://adobe.com/go/learn_aemforms_documentation_63_de).
 
    * `guideBridge.reset()`: Setzt ein Formular zurück.
@@ -150,7 +150,7 @@ Beachten Sie die folgenden bewährten Verfahren, um, Leistungsprobleme mit groß
 
 * Es wird empfohlen, adaptive Formulare mithilfe von XSD-Formulardatenmodellen zu erstellen, selbst bei Konvertierung einer XFA in ein adaptives Formular. 
 * Schließen Sie nur die Felder und Bereiche in adaptiven Formularen, die Informationen vom Benutzer erfassen. Beachten Sie, dass statischer Inhalt gering gehalten werden muss oder verwenden Sie URLs, um sie in einem separaten Fenster zu öffnen.
-* Während jedes Formular für einen bestimmten Zweck entwickelt wurde, gibt es einige häufige Segmente in den meisten Formularen. Beispielsweise persönliche Details, Adressen, Beschäftigungsdetails usw. Erstellen Sie [adaptive Formularfragmente](/help/forms/using/adaptive-form-fragments.md) für allgemeine Formularelemente und -abschnitte und verwenden Sie sie formularübergreifend. Sie können auch einen Bereich in einem vorhandenen Formular als Fragment speichern. Jede Änderung in einem Fragment wird in allen zugehörigen adaptiven Formularen dargestellt. Es unterstützt gemeinsames Authoring, da mehrere Verfasser an verschiedenen Fragmenten, die ein Formular bilden, gleichzeitig arbeiten können.
+* Während jedes Formular für einen bestimmten Zweck entwickelt wurde, gibt es einige häufige Segmente in den meisten Formularen. Beispielsweise persönliche Details, Adressen, Beschäftigungsdetails usw. Erstellen [adaptive Formularfragmente](/help/forms/using/adaptive-form-fragments.md) für allgemeine Formularelemente und -abschnitte verwenden und sie formularübergreifend verwenden. Sie können auch einen Bereich in einem vorhandenen Formular als Fragment speichern. Jede Änderung in einem Fragment wird in allen zugehörigen adaptiven Formularen dargestellt. Es unterstützt gemeinsames Authoring, da mehrere Verfasser an verschiedenen Fragmenten, die ein Formular bilden, gleichzeitig arbeiten können.
 
    * Ähnlich wie in adaptiven Formularen, wird empfohlen, dass alle fragmentspezifischen Stile und benutzerdefinierte Skripte in der Client-Bibliothek mithilfe des Dialogfelds „Fragmentcontainer“ definiert werden. Außerdem sollten Sie eigenständige Fragmente erstellen, die nicht von Objekten außerhalb der Komponente abhängen.
    * Außerdem sollten Sie Cross-Fragments-Skripterstellung vermeiden. Wenn es ein Objekt außerhalb des Fragments gibt, auf das Sie verweisen möchten, müssen Sie das Objekt als Teil des übergeordneten Formulars einarbeiten. Wenn das Objekt in einem anderen Fragmente bleiben muss, verweisen Sie darauf durch seinen Namen in dem Skript..
@@ -204,7 +204,7 @@ Ein Dokument aus Datensatz (DoR) ist eine komprimierte PDF-Version eines adaptiv
 * Konfigurieren Sie Kopf- und Fußzeile, Bilder, Farbe, Schriftart usw. direkt auf der Registerkarte „Datensatzdokument“ des adaptiven Formular-Editors.
 * Verwenden Sie`DoRService` , , um das DoR programmatisch zu generieren.
 * Ausgeblendete Felder aus DoR ausschließen.
-* Verwenden Sie den Anforderungsparameter `afAcceptLang`, um DoR in einem anderen Gebietsschema anzuzeigen.
+* Verwendung `afAcceptLang` -Anfrageparameter zum Anzeigen von DoR in einem anderen Gebietsschema.
 
 ### Debuggen und Testen von adaptiven Formularen {#debugging-and-testing-adaptive-forms}
 
@@ -274,9 +274,9 @@ Oft müssen Sie AEM-Projekte aus einer Umgebung in eine andere verschieben. Eini
 Im Folgenden werden einige bewährte Verfahren zum Konfigurieren von AEM zur Verbesserung der Gesamtleistung gezeigt:
 
 * Aktivieren Sie HTML-Client-Bibliothekskomprimierung für JavaScript und CSS-Code aus der Felix-Konsole.
-* Zwischenspeichern Sie alle Client-Bibliotheken unter `/etc.clientlibs/fd` und alle zusätzlichen benutzerdefinierten Client-Bibliotheken auf AEM Dispatcher, um die Reaktionsfähigkeit und Sicherheit Ihrer veröffentlichten Formulare zu erhöhen. Weitere Informationen finden Sie unter [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
+* Alle Client-Bibliotheken zwischenspeichern unter `/etc.clientlibs/fd` und weiteren benutzerdefinierten Client-Bibliotheken auf AEM Dispatcher, um die Reaktionsfähigkeit und Sicherheit Ihrer veröffentlichten Formulare zu erhöhen. Weitere Informationen finden Sie unter [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)
 
-* Zwischenspeichern Sie die Pfade `/content/forms/af/` und `/content/dam/formsanddocuments/*` nicht. Detaillierte Informationen zum Konfigurieren der Zwischenspeicherung adaptiver Formulare finden Sie unter [Zwischenspeichern adaptiver Formulare](/help/forms/using/configure-adaptive-forms-cache.md).
+* Nicht zwischenspeichern `/content/forms/af/` und `/content/dam/formsanddocuments/*` Pfade. Detaillierte Informationen zum Konfigurieren der Zwischenspeicherung adaptiver Formulare finden Sie unter [Zwischenspeichern adaptiver Formulare](/help/forms/using/configure-adaptive-forms-cache.md).
 
 * Aktivieren Sie HTML über das Webserverkomprimierungsmodul. Weitere Informationen finden Sie im Abschnitt [Leistungsoptimierung des AEM-Forms-Servers](/help/forms/using/performance-tuning-aem-forms.md).
 * Erhöhen Sie Aufrufe für die Anforderungskonfiguration für große Formulare. Siehe[ Optimieren der Leistung von großen und komplexen Formularen](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
@@ -296,13 +296,13 @@ In einer Produktionsumgebung wird empfohlen, eingereichte Formulardaten nicht im
 
 * **Speichern von Entwurfsdaten**: Wenn Sie die Funktion „Entwurf“ in ein adaptiven Formularen verwenden, müssen Sie eine benutzerdefinierte Service Provide Interface (Dienstanbieterbenutzeroberfläche, SPI) verwenden, um Entwurfsdaten in einem sichereren Speicher wie in einer Datenbank zu speichern. Weitere Informationen finden Sie unter [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md).
 
-* **Speichern von Sendedaten**: Wenn Sie den Forms Portal Submit Store verwenden, sollten Sie eine benutzerdefinierte SPI implementieren, um Sendedaten in einer Datenbank zu speichern. Eine Beispielintegration finden Sie unter [Beispiel für die Integration der Komponente &quot;Drafts &amp; Submissions&quot;in die Datenbank](/help/forms/using/integrate-draft-submission-database.md) .
+* **Speichern von Sendedaten**: Wenn Sie den Forms Portal Submit Store verwenden, sollten Sie eine benutzerdefinierte SPI implementieren, um Sendedaten in einer Datenbank zu speichern. Siehe [Beispiel für die Integration der Komponente &quot;Drafts &amp; Submissions&quot;in die Datenbank](/help/forms/using/integrate-draft-submission-database.md) für eine Beispielintegration.
 
-   Sie können auch eine benutzerdefinierte Übermittlungsaktion schreiben, die Formulardaten und Anhänge in einem sicheren Speicher speichert. Weitere Informationen finden Sie unter [Schreiben einer benutzerdefinierten Übermittlungsaktion für adaptive Formulare](/help/forms/using/custom-submit-action-form.md) .
+   Sie können auch eine benutzerdefinierte Übermittlungsaktion schreiben, die Formulardaten und Anhänge in einem sicheren Speicher speichert. Siehe [Schreiben benutzerdefinierter Übermittlungsaktionen für adaptive Formulare](/help/forms/using/custom-submit-action-form.md) für weitere Informationen.
 
 ### Bearbeiten von persönlichen identifizierbaren Informationen {#handling-personally-identifiable-information}
 
 Eine der Hauptherausforderungen für Unternehmen ist es, wie persönliche identifizierbare Informationen (PII) bearbeitet werden. Einige bewährte Verfahren, die Ihnen dabei helfen, diese Daten zu bearbeiten, lauten wie folgt:
 
-* Verwenden Sie einen sicheren externen Speicherort wie eine Datenbank, um Daten aus dem Entwurf und dem übermittelten Formular zu speichern. Siehe [Konfigurieren des externen Speichers für Entwürfe und übermittelte Formulardaten](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
+* Verwenden Sie einen sicheren externen Speicherort wie eine Datenbank, um Daten aus dem Entwurf und dem übermittelten Formular zu speichern. Siehe [Externen Speicher für Entwürfe und gesendete Formulardaten konfigurieren](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Verwenden Sie die Formularkomponente „Bedingungen“, um die ausdrückliche Zustimmung des Benutzers zu erhalten, bevor die automatische Speicherung aktiviert wird. In diesem Fall können Sie die automatische Speicherung nur aktivieren, wenn der Benutzer den Bedingungen in der Komponente zustimmt.

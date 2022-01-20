@@ -1,19 +1,19 @@
 ---
 title: Nachhaltige Aktualisierungen
-seo-title: Nachhaltige Aktualisierungen
+seo-title: Sustainable Upgrades
 description: Erfahren Sie mehr über nachhaltige Aktualisierungen in AEM 6.4.
-seo-description: Erfahren Sie mehr über nachhaltige Aktualisierungen in AEM 6.4.
+seo-description: Learn about sustainable upgrades in AEM 6.4.
 uuid: 59d64af5-6ee0-40c8-b24a-c06848f70daa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 5ca8dd7a-4efd-493e-8022-d2f10903b0a2
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 765efa8d-1548-4db3-ba87-baa02075eaf6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '805'
 ht-degree: 84%
 
 ---
@@ -28,19 +28,19 @@ Das Anpassungs-Framework hilft Ihnen, Verstöße in nicht erweiterbaren Bereiche
 
 Das Anpassungs-Framework besteht aus zwei Komponenten: **API-Oberfläche** und **Inhaltsklassifizierung**.
 
-#### API-Oberfläche  {#api-surface}
+#### API-Oberfläche {#api-surface}
 
 In früheren Versionen von AEM wurden viele APIs über das Uber JAR verfügbar gemacht. Einige dieser APIs sollten nicht von Kunden verwendet werden, wurden jedoch verfügbar gemacht, um AEM-Funktionen der Pakete zu unterstützen. In Zukunft werden Java-APIs als „Öffentlich“ oder „Privat“ gekennzeichnet, damit Kunden erkennen, welche APIs im Hinblick auf Aktualisierungen sicher verwendet werden können. Weitere Besonderheiten:
 
-* Als `Public` markierte Java-APIs können von benutzerdefinierten Implementierungspaketen verwendet und referenziert werden.
+* Java-APIs, die als `Public` kann von benutzerdefinierten Implementierungspaketen verwendet und referenziert werden.
 
 * Die öffentlichen APIs werden durch die Installation eines Kompatibilitätspakets abwärtskompatibel sein. 
 * Das Kompatibilitätspaket wird ein Kompatibilitäts-Uber JAR enthalten, um die Abwärtskompatibilität sicherzustellen. 
-* Java-APIs, die als `Private` gekennzeichnet sind, sind nur für die Verwendung AEM internen Bundles vorgesehen und sollten nicht von benutzerdefinierten Bundles verwendet werden.
+* Java-APIs, die als `Private` sind nur für die Verwendung AEM internen Bundles vorgesehen und sollten nicht von benutzerdefinierten Bundles verwendet werden.
 
 >[!NOTE]
 >
->Das Konzept von `Private` und `Public` in diesem Kontext sollte nicht mit Java-Konzepten öffentlicher und privater Klassen verwechselt werden.
+>Der Begriff `Private` und `Public` in diesem Kontext nicht mit Java-Konzepten öffentlicher und privater Klassen verwechselt werden.
 
 ![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
@@ -52,9 +52,9 @@ Um dies sicherer zu machen und für Kunden deutlicher zu kennzeichnen, welche Be
 
 * **Öffentlich (granite:PublicArea)** - Definiert einen Knoten als „Öffentlich“, damit er überlagert, vererbt (`sling:resourceSuperType`) oder direkt verwendet (`sling:resourceType`) werden kann. Als „Öffentlich“ gekennzeichnete Knoten unter /libs können sicher aktualisiert werden, indem ein Kompatibilitätspaket hinzugefügt wird. Kunden sollten grundsätzlich nur Knoten nutzen, die als „Öffentlich“ gekennzeichnet sind. 
 
-* **Abstrakt (granite:AbstractArea)** - Definiert einen Knoten als „Abstrakt“. Knoten können überlagert oder vererbt werden ( `sling:resourceSupertype`), dürfen jedoch nicht direkt verwendet werden ( `sling:resourceType`).
+* **Abstrakt (granite:AbstractArea)** - Definiert einen Knoten als „Abstrakt“. Knoten können überlagert oder vererbt werden ( `sling:resourceSupertype`), darf jedoch nicht direkt verwendet werden ( `sling:resourceType`).
 
-* **Endgültig (granite:FinalArea)** - Definiert einen Knoten als „Endgültig“. Knoten, die als „Endgültig“ klassifiziert sind, können nicht überlagert oder vererbt werden. Endgültige Knoten können direkt über `sling:resourceType` verwendet werden. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft 
+* **Endgültig (granite:FinalArea)** - Definiert einen Knoten als „Endgültig“. Knoten, die als „Endgültig“ klassifiziert sind, können nicht überlagert oder vererbt werden. Endgültige Knoten können direkt über `sling:resourceType`. Unterknoten der endgültigen Knoten werden standardmäßig als intern eingestuft 
 
 * **Intern (granite:InternalArea)** - Definiert einen Knoten als „Intern“. Als „Intern“ klassifizierte Knoten können nicht überlagert, vererbt oder direkt verwendet werden. Diese Knoten sind ausschließlich für interne Funktionen von AEM vorgesehen.
 
@@ -62,11 +62,11 @@ Um dies sicherer zu machen und für Kunden deutlicher zu kennzeichnen, welche Be
 
 >[!NOTE]
 >
->Diese Richtlinien werden nur für Mechanismen erzwungen, die auf dem Sling-Suchpfad basieren. Andere Bereiche von **/libs** wie eine Client-seitige Bibliothek können als `Internal` markiert werden, können aber dennoch mit der standardmäßigen clientlib-Einbindung verwendet werden. Es ist wichtig, dass Kunden in diesen Fällen die Klassifizierung „Intern“ beachten.
+>Diese Richtlinien werden nur für Mechanismen erzwungen, die auf dem Sling-Suchpfad basieren. Andere Bereiche **/libs** wie eine clientseitige Bibliothek als `Internal`, kann jedoch weiterhin mit der standardmäßigen clientlib-Einbindung verwendet werden. Es ist wichtig, dass Kunden in diesen Fällen die Klassifizierung „Intern“ beachten.
 
-#### CRXDE Lite-Inhaltstypindikatoren   {#crxde-lite-content-type-indicators}
+#### CRXDE Lite-Inhaltstypindikatoren  {#crxde-lite-content-type-indicators}
 
-In CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und Bäume, die als `INTERNAL` markiert sind, als grau ausgeblendet an. Für `FINAL` ist nur das Symbol grau ausgeblendet. Die untergeordneten Elemente dieser Knoten werden ebenfalls grau angezeigt. Die Überlagerungsknotenfunktion ist in beiden Fällen deaktiviert.
+In CRXDE Lite angewendete Mixins zeigen Inhaltsknoten und -bäume, die als `INTERNAL` als ausgegraut. Für `FINAL` Nur das Symbol ist ausgegraut. Die untergeordneten Elemente dieser Knoten werden ebenfalls grau angezeigt. Die Überlagerungsknotenfunktion ist in beiden Fällen deaktiviert.
 
 **Öffentlich**
 

@@ -1,18 +1,18 @@
 ---
 title: APIs zum Arbeiten mit gesendeten Formularen in Forms Portal
-seo-title: APIs zum Arbeiten mit gesendeten Formularen in Forms Portal
+seo-title: APIs to work with submitted forms on forms portal
 description: 'AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Formulardaten abfragen und Aktionen für sie durchführen können. '
-seo-description: 'AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Formulardaten abfragen und Aktionen für sie durchführen können. '
+seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish, developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
-feature: Formularportal
+feature: Forms Portal
 exl-id: 6d860fe3-6884-4141-ad3a-5315c514c843
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '541'
 ht-degree: 95%
 
 ---
@@ -23,7 +23,7 @@ AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Fo
 
 >[!NOTE]
 >
->Benutzer, die die APIs aufrufen, müssen zur Gruppe der Überprüfer hinzugefügt werden, wie unter [Verknüpfen von Reviewer mit einem Formular](/help/forms/using/adding-reviewers-form.md) beschrieben.
+>Benutzer, die die APIs aufrufen, müssen zur Reviewer-Gruppe hinzugefügt werden, wie hier beschrieben: [Verknüpfen von Reviewer mit einem Formular für die Übermittlung](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -59,7 +59,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
 [{"formPath":"/content/dam/formsanddocuments/forms-review/form2","formName":"form2"},{"formPath":"/content/dam/formsanddocuments/forms-review/form1","formName":"form1"}]
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getAllSubmissions  {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
+## GET /content/forms/portal/submission.review.json?func=getAllSubmissions {#get-content-forms-portal-submission-review-json-func-getallsubmissions}
 
 Gibt Details zu allen gesendeten Formularen zurück. Sie können die Ergebnisse jedoch mithilfe der URL-Parameter einschränken.
 
@@ -160,7 +160,7 @@ https://[host:[port]/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments    {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Gibt  alle für die angegebene Sendeinstanz veröffentlichten Kommentare zurück.
 

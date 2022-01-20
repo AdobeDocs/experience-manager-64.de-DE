@@ -1,8 +1,8 @@
 ---
 title: Grundlegende Handhabung
-seo-title: Grundlegende Handhabung
+seo-title: Basic Handling
 description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
-seo-description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
+seo-description: Get comfortable with navigating AEM and its basic usage
 uuid: 12958209-6a49-41ad-8a8e-b112503d26b1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 exl-id: 9abef452-b435-4419-895c-083cae6cd7d2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2753'
 ht-degree: 93%
 
 ---
@@ -22,13 +22,11 @@ ht-degree: 93%
 >[!NOTE]
 >
 >* Diese Seite soll einen Überblick über die grundlegende Handhabung der AEM-Autorenumgebung geben. Als Grundlage wird die **Sites-Konsole** verwendet.
-   >
-   >
-* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
+>
+>* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >
-
 
 
 ## Erste Schritte {#getting-started}
@@ -53,7 +51,7 @@ Wenn ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zu
 
 ![chlimage_1-357](assets/chlimage_1-357.png)
 
-Klicken oder tippen Sie auf **Verschaffen Sie sich das!**, um zur nächsten Seite der Übersicht zu gelangen. Klicken oder tippen Sie auf **Schließen** oder klicken oder tippen Sie außerhalb des Übersichtsdialogfelds, um es zu schließen.
+Klicken oder tippen Sie auf **Gut!**, um zur nächsten Seite der Übersicht zu gelangen. Klicken oder tippen Sie auf **Schließen** oder klicken oder tippen Sie außerhalb des Übersichtsdialogfelds, um das Dialogfeld zu schließen.
 
 Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestartet, sofern Sie nicht die Option **Nicht mehr zeigen** aktivieren.
 
@@ -106,7 +104,7 @@ Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
   </tr>
   <tr>
    <td>Formulare</td> 
-   <td>Diese Konsole ermöglicht Ihnen das Erstellen, Verwalten und Verarbeiten Ihrer <a href="/help/forms/using/introduction-aem-forms.md">Formulare und Dokumente</a>.</td> 
+   <td>In dieser Konsole können Sie Ihre <a href="/help/forms/using/introduction-aem-forms.md">Formulare und Dokumente</a>&gt;.</td> 
   </tr>
   <tr>
    <td>Personalisierung</td> 
@@ -189,7 +187,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen finden Sie unter [Listenansicht](#list-view) .
+   Diese Option ist nur in der Listenansicht verfügbar. Siehe [Listenansicht](#list-view) für weitere Informationen.
 
 * Schaltfläche **Erstellen**
 
@@ -245,7 +243,7 @@ Entwicklungsressourcen und Downloads
    >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
    >
    >* [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
+   >* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Aktionssymbolleiste {#actions-toolbar}
@@ -265,9 +263,10 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 ![screen_shot_2018-03-23at104827](assets/screen_shot_2018-03-23at104827.png)
 
 >[!NOTE]
-Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
+>
+>Die einzelnen verfügbaren Symbole werden gemäß der/des jeweils zutreffenden Konsole/Funktion/Szenarios dokumentiert.
 
-## Schnellaktionen  {#quick-actions}
+## Schnellaktionen {#quick-actions}
 
 In der [Kartenansicht](#quick-actions) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
 
@@ -287,9 +286,10 @@ Sie können Ressourcen in jeder der verfügbaren Ansichten anzeigen, darin navig
 * [Listenansicht](#list-view)
 
 >[!NOTE]
-Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniaturansicht in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
+>
+>Standardmäßig zeigt AEM Assets in keiner der Ansichten die ursprüngliche Ausgabedarstellung von Assets als Miniatur in der Benutzeroberfläche an. Administratoren können mithilfe von Überlagerungen AEM Assets so konfigurieren, dass ursprüngliche Ausgabedarstellungen als Miniaturen angezeigt werden.
 
-### Auswählen von Ressourcen  {#selecting-resources}
+### Auswählen von Ressourcen {#selecting-resources}
 
 Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht und des Geräts ab:
 
@@ -317,7 +317,7 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
    <td>Kartenansicht<br /> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Bewegen Sie den Mauszeiger über die und verwenden Sie dann die Schnellaktion mit Häkchen .</li> 
+     <li>Desktop:<br /> Bewegen Sie den Mauszeiger und verwenden Sie dann die Schnellaktion mit Häkchen .</li> 
      <li>Mobilgerät: <br /> Tippen und halten Sie die Karte</li> 
     </ul> </td> 
    <td>
@@ -360,7 +360,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 1. Nach Auswahl einer Ressource wird die obere Kopfzeile von der [Aktionssymbolleiste](#actions-toolbar) überdeckt, die Zugriff auf die Aktionen bietet, die für die ausgewählte Ressource verfügbar sind.
 
-   Um den Auswahlmodus zu beenden, wählen Sie **X** oben rechts aus.
+   Um den Auswahlmodus zu beenden, wählen Sie **X** oben rechts.
 
 ### Spaltenansicht {#column-view}
 
@@ -380,7 +380,7 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
    * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
 
 
-* Durch Tippen oder Klicken auf die Miniaturansicht wird die Ressource ausgewählt.
+* Durch Tippen oder Klicken auf die Miniatur wird die Ressource ausgewählt.
 
    * Dann erscheint ein Häkchen auf der Miniaturansicht und der Ressourcenname wird hervorgehoben dargestellt.
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
@@ -455,7 +455,8 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
 >[!NOTE]
-Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
+>
+>Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
 ![screen_shot_2018-03-23at110113](assets/screen_shot_2018-03-23at110113.png)
 
@@ -480,7 +481,8 @@ So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Z
 Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezeigt. Bei Auswahl einer anderen Option wird der Optionsname neben dem Schienensymbol angezeigt.
 
 >[!NOTE]
-[Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md) sind verfügbar, um schnell zwischen Optionen zur Schienenanzeige wechseln zu können.
+>
+>[Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md) sind verfügbar, um schnell zwischen Optionen zur Schienenanzeige wechseln zu können.
 
 ### Inhaltsstruktur {#content-tree}
 
@@ -491,8 +493,10 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 ![screen_shot_2018-03-21at100858](assets/screen_shot_2018-03-21at100858.png)
 
 >[!NOTE]
-Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
-Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md).
+>
+>Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
+>
+>Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md).
 
 ### Zeitleiste {#timeline}
 
@@ -506,7 +510,7 @@ Die Zeitleisten-Spalte bietet folgende Möglichkeiten:
 
       * [Kommentare](#TimelineAddingandViewingComments)
       * Anmerkungen
-      * Aktivitäten 
+      * Aktivitäten
       * [Launches](/help/sites-authoring/launches.md)
       * [Versionen](/help/sites-authoring/working-with-page-versions.md)
       * [Workflows](/help/sites-authoring/workflows-applying.md)

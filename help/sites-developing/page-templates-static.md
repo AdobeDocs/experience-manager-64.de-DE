@@ -1,8 +1,8 @@
 ---
 title: Seitenvorlagen – statisch
-seo-title: Seitenvorlagen – statisch
+seo-title: Page Templates - Static
 description: Eine Vorlage wird verwendet, um eine Seite zu erstellen. Sie definiert, welche Komponenten im ausgewählten Umfang genutzt werden können.
-seo-description: Eine Vorlage wird verwendet, um eine Seite zu erstellen. Sie definiert, welche Komponenten im ausgewählten Umfang genutzt werden können.
+seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
 uuid: 86a8ecf8-e0c5-422e-9227-7a24bb5774e3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
 exl-id: f313b955-c561-4827-aefc-850e45922f26
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1662'
-ht-degree: 68%
+source-wordcount: '1640'
+ht-degree: 67%
 
 ---
 
-# Seitenvorlagen - statisch{#page-templates-static}
+# Seitenvorlagen – statisch{#page-templates-static}
 
 Eine Vorlage wird verwendet, um eine Seite zu erstellen. Sie definiert, welche Komponenten im ausgewählten Umfang genutzt werden können. Eine Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur aufweist wie die zu erstellende Seite, aber keine Inhalte.
 
@@ -28,7 +28,7 @@ Jede Vorlage stellt Ihnen eine Auswahl an Komponenten bereit, die Sie verwenden 
 
 >[!NOTE]
 >
->[Bearbeitbare ](/help/sites-developing/page-templates-editable.md) Vorlagen sind ebenfalls verfügbar. Sie sind der empfohlene Typ von Vorlagen für größtmögliche Flexibilität und die neuesten Funktionen.
+>[Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) sind auch verfügbar und sind der empfohlene Typ von Vorlagen für die größte Flexibilität und die neuesten Funktionen.
 
 ## Eigenschaften und untergeordnete Knoten einer Vorlage {#properties-and-child-nodes-of-a-template}
 
@@ -101,18 +101,18 @@ Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften
 
 Eine Vorlage ist die Basis einer Seite.
 
-Um eine Seite zu erstellen, muss die Vorlage kopiert werden (node-tree `/apps/<myapp>/template/<mytemplate>`) und an die entsprechende Position im Site-Baum kopiert werden: Dies geschieht, wenn eine Seite auf der Registerkarte **Websites** erstellt wird.
+Um eine Seite zu erstellen, muss die Vorlage kopiert werden (Knotenbaum `/apps/<myapp>/template/<mytemplate>`) an die entsprechende Position im Site-Baum: Dies geschieht, wenn eine Seite mit dem **Websites** Registerkarte.
 
 Über diesen Kopiervorgang erhält die Seite auch ihren anfänglichen Inhalt (in der Regel nur den Inhalt der obersten Ebene) und die Eigenschaft sling:resourceType, den Pfad zur Seitenkomponente, die zum Rendern der Seite genutzt wird (alles im untergeordneten Knoten jcr:content).
 
-## Struktur von Vorlagen  {#how-templates-are-structured}
+## Struktur von Vorlagen {#how-templates-are-structured}
 
 Zwei Aspekte müssen berücksichtigt werden:
 
 * die Struktur der Vorlage selbst
 * die Struktur des Inhalts, der bei Verwendung einer Vorlage erstellt wird
 
-### Die Struktur einer Vorlage  {#the-structure-of-a-template}
+### Die Struktur einer Vorlage {#the-structure-of-a-template}
 
 Eine Vorlage wird unter einem Knoten des Typs **cq:Template** erstellt.
 
@@ -145,7 +145,7 @@ AEM bietet eine Reihe von Standardvorlagen, die standardmäßig verfügbar sind.
 
 AEM enthält beispielsweise verschiedene Vorlagen, darunter eine Inhaltsseite und eine Homepage.
 
-| **Titel** | **Komponente** | **Standort** | **Zweck** |
+| **Titel** | **Komponente** | **Speicherort** | **Zweck** |
 |---|---|---|---|
 | Startseite | homepage | geometrixx | Die Vorlage für die Geometrixx-Homepage. |
 | Inhalts-Seite | contentpage | geometrixx | Die Vorlage für die Geometrixx-Inhaltsseite. |
@@ -166,25 +166,25 @@ Eine Liste aller Vorlagen im Repository können Sie mit dem folgenden Verfahren 
 
 In den meisten Fällen können Sie eine vorhandene Vorlage verwenden und auf dieser Basis eine neue Vorlage zur eigenen Verwendung entwickeln. Weitere Informationen finden Sie unter [Entwickeln von Seitenvorlagen](#developing-page-templates).
 
-Um eine vorhandene Vorlage für Ihre Website zu aktivieren und sie im Dialogfeld **Seite erstellen** anzuzeigen, wenn Sie eine Seite direkt unter **Websites** in der Konsole **Websites** erstellen, legen Sie die Eigenschaft allowedPaths des Vorlagenknotens auf Folgendes fest: **/content(/.&amp;ast;)?**
+Um eine vorhandene Vorlage für Ihre Website zu aktivieren und sie im **Seite erstellen** Dialogfeld beim Erstellen einer Seite direkt unter **Websites** von **Websites** -Konsole, setzen Sie die Eigenschaft allowedPaths des Vorlagenknotens auf: **/content(/.&amp;ast;)?**
 
 ## Anwenden von Vorlagendesigns {#how-template-designs-are-applied}
 
-Wenn Stile in der Benutzeroberfläche mit [Designmodus](/help/sites-authoring/default-components-designmode.md) definiert werden, wird das Design am exakten Pfad des Inhaltsknotens persistiert, für den der Stil definiert wird.
+Wenn Stile in der Benutzeroberfläche definiert werden mithilfe von [Designmodus](/help/sites-authoring/default-components-designmode.md), wird das Design am genauen Pfad des Inhaltsknotens persistiert, für den der Stil definiert wird.
 
 >[!CAUTION]
 >
->Adobe empfiehlt nur die Anwendung von Designs über [Designmodus](/help/sites-authoring/default-components-designmode.md).
+>Adobe empfiehlt nur die Anwendung von Designs durch [Designmodus](/help/sites-authoring/default-components-designmode.md).
 >
 >Das Ändern von Designs in CRX DE ist beispielsweise nicht ratsam und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen.
 
-Wenn Designs nur im Designmodus angewendet werden, sind die folgenden Abschnitte, [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution), [Decision Tree](/help/sites-developing/page-templates-static.md#decision-tree) und die [Beispiel](/help/sites-developing/page-templates-static.md#example) nicht anwendbar.
+Wenn Designs nur im Designmodus angewendet werden, dann folgen die folgenden Abschnitte: [Designpfad-Auflösung](/help/sites-developing/page-templates-static.md#design-path-resolution), [Entscheidungsbaum](/help/sites-developing/page-templates-static.md#decision-tree)und die [Beispiel](/help/sites-developing/page-templates-static.md#example) nicht anwendbar sind.
 
 >[!NOTE]
 >
 >In diesem Abschnitt wird das Auflösungsverhalten von Designpfaden ab AEM 6.4.2.0 beschrieben.
 
-### Design Path Resolution {#design-path-resolution}
+### Designpfad-Auflösung {#design-path-resolution}
 
 Beim Rendern von Inhalten, die auf einer statischen Vorlage basieren, versucht AEM, das relevanteste Design und die relevantesten Stile auf den Inhalt anzuwenden, basierend auf einer Umkehrung der Inhaltshierarchie.
 
@@ -198,7 +198,7 @@ Wenn es in den letzten beiden Fällen mehr als einen geeigneten Entwurf gibt, ve
 
 ### Entscheidungsbaum {#decision-tree}
 
-Dies ist eine grafische Darstellung der [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution)-Logik.
+Dies ist eine grafische Darstellung der [Designpfad-Auflösung](/help/sites-developing/page-templates-static.md#design-path-resolution) Logik.
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
@@ -223,7 +223,7 @@ In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählen.
       </code></td> 
    <td><p><code>root</code></p> <p><code>branch</code></p> <p><code>leaf</code></p> </td> 
    <td><code>leaf</code></td> 
-   <td>Die genaueste Übereinstimmung wird immer getroffen.<br /> </td> 
+   <td>Die genaueste Übereinstimmung wird immer gewählt.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>leaf</code></td> 
@@ -235,7 +235,7 @@ In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählen.
    <td><code>leaf</code></td> 
    <td><code>root</code></td> 
    <td><code>root</code></td> 
-   <td>Wenn alles andere fehlschlägt, nehmen Sie den Rest.<br /> </td> 
+   <td>Wenn alles andere fehlschlägt, nehmen Sie, was übrig ist.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>branch</code></td> 
@@ -262,7 +262,7 @@ In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählen.
    <td><p><code>root</code></p> <p><code class="code">leaf
        </code></p> </td> 
    <td><code>root</code></td> 
-   <td><p>Wenn es keine exakte Übereinstimmung gibt, nehmen Sie die untere im Baum.</p> <p>Die Annahme ist, dass dies immer anwendbar sein wird, aber weiter oben im Baum kann der Baum zu spezifisch sein.<br /> </p> </td> 
+   <td><p>Wenn es keine exakte Übereinstimmung gibt, nehmen Sie die untere im Baum.</p> <p>Es wird davon ausgegangen, dass dies immer anwendbar sein wird, aber weiter oben im Baum kann der Baum zu spezifisch sein.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -271,7 +271,7 @@ In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählen.
 
 AEM-Seitenvorlagen sind schlicht Modelle, die zum Erstellen neuer Seiten genutzt werden. Sie können anfänglich so wenig oder viel Inhalt enthalten, wie erforderlich ist. Ihre Aufgabe besteht darin, die korrekten anfänglichen Knotenstrukturen zu erstellen, wobei die benötigten Eigenschaften (v. a. sling:resourceType) so eingestellt werden, dass sie die Bearbeitung und das Rendering zulassen.
 
-### Erstellen einer neuen Vorlage (basierend auf einer vorhandenen Vorlage)  {#creating-a-new-template-based-on-an-existing-template}
+### Erstellen einer neuen Vorlage (basierend auf einer vorhandenen Vorlage) {#creating-a-new-template-based-on-an-existing-template}
 
 Selbstverständlich können Sie eine Vorlage komplett von Anfang an neu erstellen. Um Zeit und Aufwand zu reduzieren, können Sie aber auch eine vorhandene Vorlage kopieren und aktualisieren. So können Sie z. B. zum Einstieg die Vorlagen von Geometrixx nutzen.
 
@@ -316,9 +316,9 @@ Weitere Informationen finden Sie unter [Verwendung Client-seitiger Bibliotheken]
 
 ## Bereitstellen einer vorhandenen Vorlage {#making-an-existing-template-available}
 
-Dieses Beispiel erklärt, wie Sie zulassen können, dass eine Vorlage für bestimmte Inhaltspfade genutzt werden kann. Die Vorlagen, die dem Seitenautor beim Erstellen neuer Seiten zur Verfügung stehen, werden durch die in [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability) definierte Logik bestimmt.
+Dieses Beispiel erklärt, wie Sie zulassen können, dass eine Vorlage für bestimmte Inhaltspfade genutzt werden kann. Die Vorlagen, die dem Seitenautor beim Erstellen neuer Seiten zur Verfügung stehen, werden durch die Logik bestimmt, die in [Formularverfügbarkeit](/help/sites-developing/templates.md#template-availability).
 
 1. Navigieren Sie in CRXDE Lite zu der Vorlage, die Sie für Ihre Seite verwenden möchten, z. B. zur Newsletter-Vorlage.
-1. Ändern Sie die Eigenschaft `allowedPaths` und andere Eigenschaften, die für die [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability) genutzt werden. Beispiel: `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` bedeutet, dass diese Vorlage in jedem Pfad unter `/content/geometrixx-outdoors` zulässig ist.
+1. Ändern Sie die Eigenschaft `allowedPaths` und andere Eigenschaften, die für die [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability) genutzt werden. Beispiel: `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` bedeutet, dass diese Vorlage in jedem Pfad unter `/content/geometrixx-outdoors`.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)

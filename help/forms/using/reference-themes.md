@@ -17,7 +17,7 @@ ht-degree: 79%
 
 # Referenzthemen {#reference-themes}
 
-[Designs](/help/forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Designs abrufen, indem Sie das [AEM Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) installieren:
+[Designs](/help/forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Designs abrufen, indem Sie die[AEM Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * Beryl
 * Exec
@@ -39,8 +39,8 @@ Weitere Informationen zur Installation des Pakets finden Sie unter [Arbeiten mit
 ## Beryl {#beryl}
 
 Das Beryl-Design wird vom [adaptiven We.Gov-Formular](/help/forms/using/gov-reference-site-walkthrough.md) verwendet, und hebt die Verwendung von Hintergrundbildern, Transparenz und großen und flachen Symbolen hervor. Im Screenshot unten können Sie sehen, wie das Beryl-Design angezeigt wird und wie es das Formatieren des Formulars verbessern kann.
-![Beryl ](assets/beryl.png)
-[themeClick zum Vergrößern](assets/beryl-1.png)
+![Beryl-Design](assets/beryl.png)
+[Klicken Sie zum Vergrößern auf](assets/beryl-1.png)
 
 ## Exec {#exec}
 

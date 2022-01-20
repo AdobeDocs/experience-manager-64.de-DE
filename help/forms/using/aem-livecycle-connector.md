@@ -1,8 +1,8 @@
 ---
 title: Verbinden von AEM Forms mit Adobe LiveCycle
-seo-title: Verbinden von AEM Forms mit Adobe LiveCycle
+seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: AEM LiveCycle Connector ermöglicht das Starten von LiveCycle ES4 Document Services aus AEM-Apps und -Workflows.
-seo-description: AEM LiveCycle Connector ermöglicht das Starten von LiveCycle ES4 Document Services aus AEM-Apps und -Workflows.
+seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: f40674c1-a1dd-41ef-8a19-82ece3103bcc
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1006'
 ht-degree: 95%
 
 ---
@@ -54,7 +54,7 @@ Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java AP
 
 AEM LiveCycle Connector vereinfacht den Ablauf, indem diese Client-Instanzen als OSGi-Dienste offengelegt werden, auf die über standardmäßige OSGi-Methoden zugegriffen werden kann. LiveCycle Connector umfasst die folgenden Funktionen:
 
-* Client-Instanzen als OSGi-Dienst: Die als OSGI-Bundles verpackten Clients sind im Abschnitt [Document Services list](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der OSGi Service Registry.
+* Client-Instanzen als OSGi-Dienst: Die als OSGI-Bundles verpackten Clients sind im Abschnitt [Document Services-Liste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) Abschnitt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der OSGi Service Registry.
 * Weitergabe von Benutzerinformationen: Die erforderlichen Verbindungsdetails für die Verbindung mit dem LiveCycle-Server werden an einem zentralen Speicherort verwaltet.
 * ServiceClientFactory-Dienst: Zum Starten der Prozesse kann die Client-Anwendung auf die ServiceClientFactory-Instanz zugreifen.
 

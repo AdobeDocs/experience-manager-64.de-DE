@@ -1,8 +1,8 @@
 ---
 title: Testen der globalisierten Site-Struktur von We.Retail
-seo-title: Testen der globalisierten Site-Struktur von We.Retail
+seo-title: Trying out the Globalized Site Structure in We.Retail
 description: Testen der globalisierten Site-Struktur von We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 exl-id: e26e8e58-3aa4-4e7a-ac9e-f274c4af0041
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 92%
+source-wordcount: '421'
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 We.Retail verfügt über eine globalisierte Site-Struktur, die Sprach-Master aufweist, die live in länderspezifische Websites kopiert werden können. Alles ist standardmäßig eingerichtet, sodass Sie mit dieser Struktur und den integrierten Übersetzungsfunktionen experimentieren können.
 
-## Testen  {#trying-it-out}
+## Testen {#trying-it-out}
 
 1. Öffnen Sie die Sites-Konsole unter **Globale Navigation > Sites**.
 1. Wechseln Sie zur Spaltenansicht (falls diese nicht bereits aktiviert ist) und wählen Sie „We.Retail“ aus. Beachten Sie die Beispiellandstruktur mit der Schweiz, den Vereinigten Staaten, Frankreich usw. neben den Sprach-Mastern.
@@ -72,4 +72,4 @@ We.Retail verfügt über eine globalisierte Site-Struktur, die Sprach-Master auf
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen finden Sie im Authoring-Dokument [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) mit vollständigen technischen Details.
+Weiterführende Informationen finden Sie im Authoring-Dokument . [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) für vollständige technische Details.

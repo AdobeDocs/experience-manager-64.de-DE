@@ -1,8 +1,8 @@
 ---
 title: Erweiterte Scoring- und Badges
-seo-title: Erweiterte Scoring- und Badges
+seo-title: Advanced Scoring and Badges
 description: Einrichten der erweiterten Auswertung
-seo-description: Einrichten der erweiterten Auswertung
+seo-description: Setting up advanced scoring
 uuid: 3854b668-729a-42b8-b7cd-5d5ec1ca8380
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
 source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1149'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
@@ -22,35 +22,35 @@ ht-degree: 1%
 
 ## Übersicht {#overview}
 
-Die erweiterte Bewertung ermöglicht die Vergabe von Abzeichen, um Mitglieder als Experten zu identifizieren. Bei der erweiterten Auswertung werden Punkte anhand der von einem Mitglied erstellten Menge *und* Qualität des Inhalts zugewiesen, während bei der einfachen Auswertung Punkte einfach auf der Grundlage der erstellten Inhaltsmenge zugewiesen werden.
+Die erweiterte Bewertung ermöglicht die Vergabe von Abzeichen, um Mitglieder als Experten zu identifizieren. Bei der erweiterten Auswertung werden Punkte basierend auf der Menge zugewiesen. *und* Qualität des Inhalts, der von einem Mitglied erstellt wurde, während bei der einfachen Auswertung Punkte einfach anhand der Menge des erstellten Inhalts zugewiesen werden.
 
 Dieser Unterschied beruht auf der Scoring-Engine, die zur Berechnung der Werte verwendet wird. Die grundlegende Scoring-Engine wendet einfache Mathematik an. Die erweiterte Scoring-Engine ist ein adaptiver Algorithmus, der aktive Mitglieder belohnt, die wertvolle und relevante Inhalte beisteuern, die durch die natürliche Sprachverarbeitung (NLP) eines Themas abgeleitet werden.
 
 Neben der Inhaltsrelevanz berücksichtigen die Scoring-Algorithmen Mitgliederaktivitäten wie Abstimmung und Prozentsatz der Antworten. Während die grundlegende Bewertung sie quantitativ beinhaltet, verwendet die erweiterte Auswertung sie algorithmisch.
 
-Daher benötigt die erweiterte Scoring-Engine genügend Daten, um die Analyse sinnvoll zu gestalten. Die Erfolgsschwelle für die Expertenaktivität wird ständig neu bewertet, da sich der Algorithmus kontinuierlich an die Menge und Qualität der erstellten Inhalte anpasst. Es gibt auch ein Konzept von *decay* für ältere Beiträge eines Mitglieds. Wenn ein Expertenmitglied nicht mehr an der Materie teilnimmt, in der er einen Expertenstatus erlangt hat, könnte es an einem bestimmten Punkt (siehe [Konfiguration der Scoring-Engine](#configurable-scoring-engine)) seinen Status als Experte verlieren.
+Daher benötigt die erweiterte Scoring-Engine genügend Daten, um die Analyse sinnvoll zu gestalten. Die Erfolgsschwelle für die Expertenaktivität wird ständig neu bewertet, da sich der Algorithmus kontinuierlich an die Menge und Qualität der erstellten Inhalte anpasst. Es gibt auch ein Konzept von *Abfall* der älteren Beiträge eines Mitglieds. Wenn ein Expertenmitglied nicht mehr an dem Gegenstand teilnimmt, in dem es einen Sachverständigenstatus erlangt hat, zu einem bestimmten Zeitpunkt (siehe [Konfiguration der Scoring-Engine](#configurable-scoring-engine)) könnten sie ihren Status als Experte verlieren.
 
 Die Einrichtung der erweiterten Auswertung ist praktisch identisch mit der grundlegenden Auswertung:
 
-* Grundlegende und erweiterte Scoring- und Badging-Regeln werden [auf Inhalte](implementing-scoring.md#apply-rules-to-content) auf die gleiche Weise angewendet
+* Grundlegende und erweiterte Scoring- und Badging-Regeln sind [auf Inhalt angewendet](implementing-scoring.md#apply-rules-to-content) in gleicher Weise
    * Einfache und erweiterte Scoring- und Badging-Regeln können auf denselben Inhalt angewendet werden
-* [Aktivieren von Abzeichen für ](implementing-scoring.md#enable-badges-for-component) Komponenten - generisch
+* [Aktivieren von Abzeichen für Komponenten](implementing-scoring.md#enable-badges-for-component) ist generisch
 
 Bei der Einrichtung der Scoring- und Badging-Regeln gibt es folgende Unterschiede:
 
 * Konfigurierbare erweiterte Scoring-Engine
 * Erweiterte Scoring-Regeln:
-   * `scoringType` auf  **[!UICONTROL erweitert festlegen]**
+   * `scoringType` auf **[!UICONTROL advanced]**
    * Erfordert Stoppwörter
 
 * Erweiterte Badging-Regeln:
-   * `badgingType` auf  **[!UICONTROL erweitert festlegen]**
+   * `badgingType` auf **[!UICONTROL advanced]**
    * `badgingLevels` Anzahl der zu vergebenden Expertenebenen
-   * Erfordert das `badgingPaths`-Array von Badges anstelle von Schwellengruppen-Array-Zuordnungspunkten zu Badges
+   * Erfordert `badgingPaths` Array von Abzeichen anstelle von Schwellenwerten Array-Zuordnungspunkten zu Abzeichen
 
 >[!NOTE]
 >
->Um erweiterte Scoring- und Badging-Funktionen zu verwenden, installieren Sie das [Expertenerkennungspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq610%2Fsocial%2Ffeaturepack%2Fcq-social-expert-identification-pkg).
+>Um erweiterte Scoring- und Badging-Funktionen zu verwenden, installieren Sie die [Expertenkennungspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq610%2Fsocial%2Ffeaturepack%2Fcq-social-expert-identification-pkg).
 
 ## Konfigurierbare Scoring-Engine {#configurable-scoring-engine}
 
@@ -58,10 +58,10 @@ Die erweiterte Scoring-Engine bietet eine OSGi-Konfiguration mit Parametern, die
 
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
-* **[!UICONTROL Scoring-]**
-GewichtungenGeben Sie für ein Thema das Verb an, dem bei der Berechnung des Punktwerts die höchste Priorität eingeräumt werden soll. Es können ein oder mehrere Themen eingegeben werden, jedoch auf **ein Verb pro Thema** beschränkt. Siehe [Themen und Verben](implementing-scoring.md#topics-and-verbs).
+* **[!UICONTROL Scoring-Gewichtungen]**
+Geben Sie für ein Thema das Verb an, dem bei der Berechnung des Ergebnisses die höchste Priorität eingeräumt werden soll. Ein oder mehrere Themen können eingegeben werden, jedoch auf **ein Verb pro Thema**. Siehe [Themen und Verben](implementing-scoring.md#topics-and-verbs).
 
-   Wird als `topic,verb` mit Escapezeichen eingegeben. Beispiel:
+   Eingestiegen als `topic,verb` mit Escapezeichen. Beispiel:
 
    `/social/forum/hbs/social/forum\,ADD`
 
@@ -98,9 +98,9 @@ Wenn ein Mitglied ein Expertenabzeichen für ein Thema erhält, das nicht mehr a
 
 ### ScoringType {#scoringtype}
 
-Eine Scoring-Regel ist ein Satz von Scoring-Unterregeln, von denen jede den Wert `scoringType` deklariert.
+Eine Scoring-Regel ist ein Satz von Scoring-Unterregeln, von denen jede die `scoringType`.
 
-Um die erweiterte Scoring-Engine aufzurufen, sollte `scoringType`auf `advanced` eingestellt sein.
+Um die erweiterte Scoring-Engine aufzurufen, muss die `scoringType`auf `advanced`.
 
 Siehe [Scoring-Unterregeln](implementing-scoring.md#scoring-sub-rules).
 
@@ -120,7 +120,7 @@ Wenn die Stoppwörter-Datei fehlt, gibt die erweiterte Scoring-Engine einen Fehl
 
 ## Erweiterte Badging-Regeln {#advanced-badging-rules}
 
-Die Eigenschaften der erweiterten Badging-Regel unterscheiden sich von den Eigenschaften der [grundlegenden Badging-Regel](implementing-scoring.md#badging-rules).
+Die Eigenschaften der erweiterten Badging-Regel unterscheiden sich von der [Grundlegende Eigenschaften von Badging-Regeln](implementing-scoring.md#badging-rules).
 
 Anstatt Punkte mit einem Badge-Bild zu verknüpfen, ist es nur erforderlich, die Anzahl der zulässigen Experten und das zu vergebende Badge-Bild zu identifizieren.
 
@@ -157,7 +157,7 @@ Siehe die grundlegenden Informationen für:
 
 ### Einbezogene Scoring-Regeln und Unterregeln {#included-scoring-rules-and-sub-rules}
 
-In der Beta-Version sind zwei erweiterte Scoring-Regeln für die [Forenfunktion](functions.md#forum-function) enthalten (jeweils eine für die Foren- und Kommentarkomponenten der Forumsfunktion):
+In der Beta-Version sind zwei erweiterte Scoring-Regeln für die [Forumsfunktion](functions.md#forum-function) (jeweils eine für die Foren- und Kommentarkomponenten der Forumsfunktion):
 
 1. /etc/community/scoring/rules/adv-comments-scoring
 
@@ -181,21 +181,21 @@ In der Beta-Version sind zwei erweiterte Scoring-Regeln für die [Forenfunktion]
 
 **Anmerkungen:**
 
-* Die Knoten `rules`und `sub-rules` sind vom Typ `cq:Page`
-* `subRules` ist ein Attribut vom Typ [] Stringon des  `jcr:content` Knotens der Regel
+* Beide `rules`und `sub-rules` Knoten sind vom Typ `cq:Page`
+* `subRules` ist ein Attribut des Typs String[] zur Regel `jcr:content` Knoten
 * `sub-rules` kann für verschiedene Scoring-Regeln freigegeben werden
 * `rules` sollte sich in einem Repository-Speicherort mit Leserechte für alle befinden
    * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.
 
 ### Einbezogene Badging-Regeln {#included-badging-rules}
 
-In der Version sind zwei erweiterte Badging-Regeln enthalten, die den [erweiterten Foren und Kommentar-Scoring-Regeln](#included-scoring-rules-and-sub-rules) entsprechen.
+In der Version sind zwei erweiterte Badging-Regeln enthalten, die dem [erweiterte Foren und Regeln zur Kommentarbewertung](#included-scoring-rules-and-sub-rules).
 
 * /etc/community/badging/rules/adv-comments-badging
 * /etc/community/badging/rules/adv-forums-badging
 
 **Anmerkungen:**
 
-* `rules` Knoten sind vom Typ  `cq:Page`
+* `rules` Knoten sind vom Typ `cq:Page`
 * `rules`sollte sich in einem Repository-Speicherort mit Leserechte für alle befinden
    * Regelnamen müssen unabhängig vom Speicherort eindeutig sein.

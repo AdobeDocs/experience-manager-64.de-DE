@@ -17,7 +17,7 @@ ht-degree: 39%
 
 # Panoramabilder {#panoramic-images}
 
-In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein immersives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
+In diesem Abschnitt wird beschrieben, wie Sie mit dem Viewer für Panoramabilder Kugelpanoramen für ein intensives 360°-Betrachtungserlebnis eines Zimmers, einer Immobilie, eines Ortes oder einer Landschaft ausgeben können.
 
 Informationen hierzu finden Sie unter [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md).
 
@@ -29,13 +29,13 @@ Damit hochgeladene Assets als Kreispanoramen gelten und mit dem Viewer für Pano
 
 * Ein Seitenverhältnis von 2.
 
-   Sie können die standardmäßige Seitenverhältniseinstellung von 2 in **[!UICONTROL CRXDE Lite]** wie folgt überschreiben:
+   Sie können die standardmäßige Seitenverhältniseinstellung von 2 in **[!UICONTROL CRXDE Lite]** unter:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Mit den Keywords `equirectangular` oder `spherical` und `panorama` oder `spherical` und `panoramic` als Tags versehen. Weitere Informationen finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
 
-Sowohl das Seitenverhältnis als auch die Keywordkriterien gelten für Panorama-Assets für die Asset-Detailseite und die Komponente **[!UICONTROL Panoramamedien]** .
+Die Kriterien für das Seitenverhältnis und die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die **[!UICONTROL Panoramamedien]** -Komponente.
 
 Weitere Informationen über den Upload von Assets für die Verwendung mit dem Viewer für Panoramabilder finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
 
@@ -43,13 +43,13 @@ Weitere Informationen über den Upload von Assets für die Verwendung mit dem Vi
 
 Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müssen Sie die Viewer-Vorgaben für Panoramabilder mit Dynamic Media Classic und Dynamic Media Classic-spezifischen Metadaten synchronisieren, damit die Viewer-Vorgaben im JCR aktualisiert werden. Konfigurieren Sie dazu Dynamic Media Classic wie folgt:
 
-1. [Melden Sie sich für jedes Unternehmenskonto bei Ihrer Dynamic Media Classic-Desktop-](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) Anwendung an.
+1. [Bei Ihrer Dynamic Media Classic-Desktop-Applikation anmelden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) für jedes Unternehmenskonto.
 
 1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Einstellungen > Anwendungseinstellungen > Veröffentlichungseinrichtung > Image-Server]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Image-Server-Veröffentlichung]** aus dem Dropdown-Menü **[!UICONTROL Veröffentlichungskontext]** oben die Option **[!UICONTROL Image-Serving]**.
+1. Im **[!UICONTROL Veröffentlichung zum Image-Server]** von der Seite **[!UICONTROL Veröffentlichungskontext]** Dropdown-Menü oben auswählen **[!UICONTROL Image Serving]**.
 
-1. Suchen Sie auf derselben Seite **[!UICONTROL Image Server Publish]** die Überschrift **[!UICONTROL Request Attributes]**.
-1. Suchen Sie unter der Überschrift **[!UICONTROL Request Attributes]** die Option **[!UICONTROL Response Image Size Limit]**. Erhöhen Sie dann in den verknüpften Feldern **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** die maximal zulässige Bildgröße für Panoramabilder.
+1. Im selben **[!UICONTROL Veröffentlichung zum Image-Server]** Seite, suchen Sie die Überschrift **[!UICONTROL Anforderungsattribute]**.
+1. Unter dem **[!UICONTROL Anforderungsattribute]** Überschrift, suchen **[!UICONTROL Maximale Antwortbildgröße]**. Dann in der zugehörigen **[!UICONTROL Breite]** und **[!UICONTROL Höhe]** erhöhen Sie die maximal zulässige Bildgröße für Panoramabilder.
 
    Dynamic Media Classic ist auf 25.000.000 Pixel begrenzt. Die maximal zulässige Größe für Bilder mit einem Seitenverhältnis von 2:1 beträgt 7000 x 3500. In der Regel ist für Desktopbildschirme jedoch eine Größe von 4096 x 2048 Pixel ausreichend.
 
@@ -57,26 +57,26 @@ Damit der Viewer für Panoramabilder in AEM ordnungsgemäß funktioniert, müsse
    >
    >Es werden nur Bilder innerhalb der zulässigen Maximalgröße unterstützt. Anfragen zu Bildern oberhalb der Obergrenze geben einen „403“-Fehler zurück.
 
-1. Gehen Sie unter der Überschrift **[Request Attributes]** wie folgt vor:
+1. Unter dem **[Anforderungsattribute]** -Überschrift, führen Sie folgende Schritte aus:
 
-   * Setzen Sie **[!UICONTROL Anforderungsverschleierungsmodus]** auf **[!UICONTROL Deaktiviert]**.
-   * Setzen Sie **[!UICONTROL Request Locking Mode]** auf **[!UICONTROL Disabled]**.
+   * Satz **[!UICONTROL Verschleierungsmodus für Anfragen]** nach **[!UICONTROL Behinderte]**.
+   * Satz **[!UICONTROL Sperrmodus für Anfragen]** nach **[!UICONTROL Behinderte]**.
 
-   Diese Einstellungen sind für die Verwendung der Komponente **[!UICONTROL Panoramamedien]** in AEM erforderlich.
+   Diese Einstellungen sind für die Verwendung der **[!UICONTROL Panoramamedien]** -Komponente in AEM.
 
-1. Tippen Sie unten auf der Seite **[!UICONTROL Image-Server Publish]** auf der linken Seite auf **[!UICONTROL Speichern]**.
+1. Am unteren Rand des **[!UICONTROL Veröffentlichung zum Image-Server]** Seite auf der linken Seite tippen Sie auf **[!UICONTROL Speichern]**.
 
-1. Tippen Sie in der rechten unteren Ecke auf **[!UICONTROL Close]**.
+1. Tippen Sie unten rechts auf **[!UICONTROL Schließen]**.
 
 ### Fehlerbehebung für die Komponente &quot;Panoramamedien&quot; {#troubleshooting-the-panoramic-media-wcm-component}
 
-Wenn Sie ein Bild in der Komponente **[!UICONTROL Panoramamedien]** in Ihrem WCM abgelegt haben und der Komponenten-Platzhalter ausgeblendet ist, sollten Sie eine Fehlerbehebung für Folgendes durchführen:
+Wenn Sie ein Bild in der **[!UICONTROL Panoramamedien]** -Komponente in Ihrem WCM und der Komponenten-Platzhalter ausgeblendet sind, sollten Sie eine Fehlerbehebung für Folgendes durchführen:
 
-* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die Einstellungen *Maximale Antwortbildgröße* unter [Konfigurieren von Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
+* Wenn Ihnen ein 403-Fehler (Forbidden) angezeigt wird, liegt es möglicherweise daran, dass die angefragte Bildgröße den Grenzwert überschreitet. Überprüfen Sie die *Maximale Antwortbildgröße* Einstellungen in [Konfigurieren von Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
-* Für ein *Ungültiges Schloss* für das Asset oder *Parsing-Fehler*, das auf der Seite angezeigt wird, aktivieren Sie die Optionen **[!UICONTROL Anforderungsverschleierungsmodus]** und **[!UICONTROL Anforderungssperrmodus]**, um sicherzustellen, dass sie deaktiviert sind.
-* Richten Sie für einen Fehler mit beschädigter Arbeitsfläche einen **[!UICONTROL File Path für Regeldefinitionen und Invalidate CTN]** für die vorherigen Anforderungen für das Bild-Asset ein.
-* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Sie finden die Einstellung auf der Seite **[!UICONTROL Image Server Publish]** . Informationen zum Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
+* Für *Ungültige Sperre* im Asset oder *Parsing-Fehler* auf der Seite angezeigt werden, prüfen Sie **[!UICONTROL Verschleierungsmodus für Anfragen]** und **[!UICONTROL Sperrmodus für Anfragen]** , um sicherzustellen, dass sie deaktiviert sind.
+* Richten Sie für einen Fehler mit einer beschädigten Arbeitsfläche einen **[!UICONTROL Pfad der Regeldefinitionsdatei und ungültige CTN]** für die vorherigen Anforderungen für das Bild-Asset.
+* Wenn die Bildqualität infolge einer Bildanforderung mit einer Größe, die den unterstützten Bereich überschreitet, sehr gering wird, stellen Sie sicher, dass die Einstellung **[!UICONTROL JPEG-Codierungsattribute > Qualität]** nicht leer ist. Eine typische Einstellung für das Feld **[!UICONTROL Qualität]** ist `95`. Sie finden die Einstellung auf der **[!UICONTROL Veröffentlichung zum Image-Server]** Seite. Informationen zum Zugriff auf die Seite finden Sie unter [Konfigurieren von Dynamic Media Classic](#configuring-dynamic-media-classic-scene).
 
 ## Anzeigen einer Vorschau für Panoramabilder {#previewing-panoramic-images}
 

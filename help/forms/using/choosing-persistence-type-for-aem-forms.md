@@ -1,8 +1,8 @@
 ---
 title: Wählen eines Persistenztyps für eine AEM Forms-Installation
-seo-title: Wählen eines Persistenztyps für eine AEM Forms-Installation
+seo-title: Choosing a persistence type for an AEM Forms installation
 description: 'Wählen Sie einen Persistenztyp mit Bedacht aus. Diese Funktion ermöglicht Ihnen, eine leistungsstarke und skalierbare AEM Forms-Umgebung zu erstellen. '
-seo-description: 'Wählen Sie einen Persistenztyp mit Bedacht aus. Diese Funktion ermöglicht Ihnen, eine leistungsstarke und skalierbare AEM Forms-Umgebung zu erstellen. '
+seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
 uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: ef486673-30fe-410a-83cf-c55be6064ce4
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '372'
 ht-degree: 100%
 
 ---

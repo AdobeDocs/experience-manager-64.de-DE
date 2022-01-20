@@ -1,8 +1,8 @@
 ---
 title: Nach Prozessinstanzen suchen
-seo-title: Nach Prozessinstanzen suchen
+seo-title: Searching for process instances
 description: Verwenden Sie die Seite „Prozesssuche“, um Suchkriterien zum Auffinden einer Prozessinstanz einzugeben.
-seo-description: Verwenden Sie die Seite „Prozesssuche“, um Suchkriterien zum Auffinden einer Prozessinstanz einzugeben.
+seo-description: Use the Process Search page to enter search criteria for finding a process instance.
 uuid: 4a9c5b05-add5-4278-9c6f-d1928b6860d2
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 98%
+source-wordcount: '449'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Verwenden Sie die Seite „Prozesssuche“, um Suchkriterien zum Auffinden einer
 
 Sie können grundlegende Kriterien zur Durchführung einer allgemeinen Suche eingeben, spezifische Attribute zur Durchführung einer Detailsuche oder eine Kombination aus grundlegenden Kriterien und spezifischen Attributen zur Durchführung einer kombinierten Suche.
 
-## Eine allgemeine Suche durchführen  {#perform-a-general-search}
+## Eine allgemeine Suche durchführen {#perform-a-general-search}
 
 Eine allgemeine Suche nach einem Prozess eignet sich optimal, wenn Sie die Prozess-ID der Prozessinstanz kennen, wenn Sie versuchen, eine Gruppe verwandter Prozessinstanzen zu finden oder wenn nur wenige Prozessinstanzen ausgeführt werden.
 
@@ -39,7 +39,7 @@ Geben Sie zum Durchführen einer allgemeinen Suche grundlegende Kriterien ein. W
 
 1. Klicken Sie auf Suchen. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
 
-## Eine Detailsuche nach einem Prozess durchführen  {#perform-a-detailed-search-for-a-process}
+## Eine Detailsuche nach einem Prozess durchführen {#perform-a-detailed-search-for-a-process}
 
 Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Detailsuche eignet sich optimal, wenn zahlreiche Prozessinstanzen ausgeführt werden und Sie die möglichen Suchergebnisse durch bestimmte Kriterien einschränken müssen.
 

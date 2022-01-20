@@ -1,8 +1,8 @@
 ---
 title: Veröffentlichen von Seiten
-seo-title: Veröffentlichen von Seiten
+seo-title: Publishing Pages
 description: Nachdem Sie Ihren Inhalt in der Autorenumgebung erstellt und geprüft haben, muss dieser auf der öffentlichen Website verfügbar gemacht werden.
-seo-description: Nachdem Sie Ihren Inhalt in der Autorenumgebung erstellt und geprüft haben, muss dieser auf der öffentlichen Website verfügbar gemacht werden.
+seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
 uuid: 2b1cb08b-dbe9-4032-8527-15a11aa59d51
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 exl-id: 7b3f58df-036e-46a8-913e-e695de34ddd7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 82%
+source-wordcount: '1046'
+ht-degree: 81%
 
 ---
 
@@ -30,17 +30,14 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten künftigen Zeitp
 >Manche Begriffe im Zusammenhang mit dem Veröffentlichen können leicht verwechselt werden:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
-   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Publishing-Umgebung verfügbar machen (oder dies rückgängig machen).
-   >
-   >
-* **Aktivieren/Deaktivieren**
+   >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
+>
+>* **Aktivieren/Deaktivieren**
    >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
-   >
-   >
-* **Replizieren/Replikation**
+>
+>* **Replizieren/Replikation**
    >  Dies sind die technischen Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, z. B. bei der Veröffentlichung oder umgekehrten Replizierung von Benutzerkommentaren.
 >
-
 
 
 >[!NOTE]
@@ -52,8 +49,7 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten künftigen Zeitp
 >
 
 
-
-## Veröffentlichen einer Seite  {#publishing-a-page}
+## Veröffentlichen einer Seite {#publishing-a-page}
 
 Es gibt zwei Möglichkeiten, eine Seite zu veröffentlichen:
 
@@ -64,9 +60,9 @@ Es gibt zwei Möglichkeiten, eine Seite zu veröffentlichen:
 >
 >Mit [Tree aktivieren](#howtoactivateacompletesectiontreeofyourwebsite) in der Tools-Konsole können Sie auch eine Unterbaumstruktur mit mehreren Seiten aktivieren.
 
-### Activating a Page from the Websites Console {#activating-a-page-from-the-websites-console}
+### Aktivieren einer Seite in der Websites-Konsole {#activating-a-page-from-the-websites-console}
 
-Sie können Seiten in der Konsole „Websites“ aktivieren. Nachdem Sie eine Seite geöffnet und die zugehörigen Inhalte geändert haben, kehren Sie zur Konsole „Websites“ zurück:
+Sie können Seiten in der Websites-Konsole aktivieren. Nachdem Sie eine Seite geöffnet und die zugehörigen Inhalte geändert haben, kehren Sie zur Konsole „Websites“ zurück:
 
 1. Wählen Sie in der Konsole „Websites“ die zu aktivierende Seite.
 1. Wählen Sie entweder im oberen Menü oder im Dropdown-Menü für das ausgewählte Seitenelement die Option **Aktivieren**.
@@ -87,7 +83,7 @@ Sie können Seiten in der Konsole „Websites“ aktivieren. Nachdem Sie eine Se
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
-### Activating a Page from Sidekick {#activating-a-page-from-sidekick}
+### Aktivieren einer Seite mithilfe des Sidekicks {#activating-a-page-from-sidekick}
 
 Sie können eine Seite außerdem aktivieren, wenn Sie sie zur Bearbeitung geöffnet haben.
 
@@ -120,7 +116,7 @@ So deaktivieren Sie eine Seite:
 So planen Sie die Aktivierung einer Seite für einen späteren Zeitpunkt:
 
 1. Öffnen Sie in der Websites-Konsole das Menü **Aktivieren** und wählen Sie die Option **Später aktivieren**.
-1. Geben Sie in dem sich öffnenden Dialogfeld das Datum und die Uhrzeit für die Aktivierung ein und klicken Sie auf **OK**. Dadurch wird eine Version der Seite erstellt, die zum angegebenen Zeitpunkt aktiviert wird.
+1. Geben Sie im sich öffnenden Dialogfeld das Datum und die Uhrzeit für die Aktivierung ein und klicken Sie auf **OK**. Dadurch wird eine Version der Seite erstellt, die zum angegebenen Zeitpunkt aktiviert wird.
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
@@ -128,11 +124,11 @@ Die Wahl von „Später aktivieren“ startet einen Workflow zur Aktivierung der
 
 Wenn Sie diese Aktivierung/Deaktivierung abbrechen möchten, gehen Sie zur [Workflow-Konsole](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd), um den entsprechenden Workflow zu beenden.
 
-### Später deaktivieren  {#deactivate-later}
+### Später deaktivieren {#deactivate-later}
 
 So planen Sie die Deaktivierung einer Seite für einen späteren Zeitpunkt:
 
-1. Wechseln Sie in der Website-Konsole zum Menü **Deaktivieren** und wählen Sie **Später deaktivieren**.
+1. Wechseln Sie in der Website-Konsole zum **Deaktivieren** und wählen Sie **Später deaktivieren**.
 
 1. Geben Sie im daraufhin angezeigten Dialogfeld Datum und Uhrzeit für die Deaktivierung ein und klicken Sie auf **OK**.
 
@@ -142,7 +138,7 @@ Die Wahl von **Später deaktivieren** startet einen Workflow zur Deaktivierung d
 
 Wenn Sie diese Deaktivierung abbrechen möchten, gehen Sie zur [Workflow-Konsole](/help/sites-administering/workflows-administering.md#main-pars-title-3-yjqslz-refd), um den entsprechenden Workflow zu beenden.
 
-## Aktivieren bzw. Deaktivieren zu einer festgelegten Zeit (Einschalt- bzw. Ausschaltzeit)  {#scheduled-activation-deactivation-on-off-time}
+## Aktivieren bzw. Deaktivieren zu einer festgelegten Zeit (Einschalt- bzw. Ausschaltzeit) {#scheduled-activation-deactivation-on-off-time}
 
 Über die Optionen **Einschaltzeit** und **Ausschaltzeit** können Sie Zeiten wählen, zu denen eine Seite veröffentlicht bzw. ihre Veröffentlichung rückgängig gemacht werden soll. Diese Optionen können in den [Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) definiert werden.
 
@@ -150,21 +146,21 @@ Wenn Sie diese Deaktivierung abbrechen möchten, gehen Sie zur [Workflow-Konsole
 
 Der Status ist in der Konsole [Websites](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) sichtbar. Die Farben kennzeichnen den Veröffentlichungsstatus.
 
-## Aktivieren einer kompletten Baumstruktur der Website  {#activating-a-complete-section-tree-of-your-website}
+## Aktivieren einer kompletten Baumstruktur der Website {#activating-a-complete-section-tree-of-your-website}
 
 Von der Registerkarte **Websites** aus können Sie einzelne Seiten aktivieren. Wenn Sie allerdings eine große Anzahl von Inhaltsseiten erstellt bzw. aktualisiert haben, die sich alle unter derselben Stammseite befinden, kann es praktischer sein, mit einer einzigen Aktion den gesamten Baum zu aktivieren. Sie können auch einen Probelauf durchführen, um eine Aktivierung zu emulieren und die Seiten hervorzuheben, die aktiviert werden würden.
 
-1. Öffnen Sie die Konsole **Tools** , indem Sie sie auf der Seite **Willkommen** auswählen und dann auf **Replikation** doppelklicken, um die Konsole ( `http://localhost:4502/etc/replication.html`) zu öffnen.
+1. Öffnen Sie die **Instrumente** Konsole durch Auswahl aus **Willkommen** und dann doppelt klicken **Replikation** , um die Konsole zu öffnen ( `http://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
 1. Klicken Sie in der **Replikations-Konsole** auf **Tree aktivieren**.
 
-   Das folgende Fenster ( `http://localhost:4502/etc/replication/treeactivation.html`) wird angezeigt.
+   Das folgende Fenster ( `http://localhost:4502/etc/replication/treeactivation.html`) angezeigt.
 
    ![screen_shot_2012-02-08at125033pm-1](assets/screen_shot_2012-02-08at125033pm-1.png)
 
-1. Geben Sie den **Startpfad** ein. Gibt den Pfad zum Stammverzeichnis des Abschnitts an, den Sie aktivieren (veröffentlichen) möchten. Diese Seite und alle darunter liegenden Seiten werden für die Aktivierung berücksichtigt (oder in der Emulation verwendet, wenn ein Trockenlauf ausgewählt ist).
+1. Geben Sie die **Startpfad**. Gibt den Pfad zum Stammverzeichnis des Abschnitts an, den Sie aktivieren (veröffentlichen) möchten. Diese Seite und alle darunter liegenden Seiten werden für die Aktivierung berücksichtigt (oder in der Emulation verwendet, wenn ein Trockenlauf ausgewählt ist).
 1. Aktivieren Sie je nach Bedarf die Auswahlkriterien:
 
    * **Nur geänderte**: nur Seiten aktivieren, die geändert wurden.
@@ -173,5 +169,5 @@ Von der Registerkarte **Websites** aus können Sie einzelne Seiten aktivieren. W
 
 1. Wählen Sie die gewünschte Aktion:
 
-   1. Wählen Sie **Trockenlauf** aus, wenn Sie überprüfen möchten, welche Seiten *aktiviert werden sollen. Dies ist nur eine Emulation, es werden keine Seiten aktiviert.*
-   1. Wählen Sie **Aktivieren** aus, wenn Sie die Seiten aktivieren möchten.
+   1. Auswählen **Trockenlauf** , wenn Sie überprüfen möchten, welche Seiten *würde* aktiviert werden. Dies ist nur eine Emulation, es werden keine Seiten aktiviert.
+   1. Auswählen **Aktivieren** , wenn Sie die Seiten aktivieren möchten.

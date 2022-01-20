@@ -1,8 +1,8 @@
 ---
 title: Konzeption einer Kampagne
-seo-title: Konzeption einer Kampagne
+seo-title: Setting up your campaign
 description: Zum Einrichten einer neuen Kampagne muss zuerst eine Marke für die Kampagnen und dann eine Kampagne für die Erlebnisse geschaffen werden – und zu guter Letzt müssen die Eigenschaften dieser neuen Kampagne festgelegt werden.
-seo-description: Zum Einrichten einer neuen Kampagne muss zuerst eine Marke für die Kampagnen und dann eine Kampagne für die Erlebnisse geschaffen werden – und zu guter Letzt müssen die Eigenschaften dieser neuen Kampagne festgelegt werden.
+seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
 uuid: 86fcd398-803e-4aa5-998c-7624afa7e839
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
 exl-id: 41727155-2a67-44b6-b925-22001891a348
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2257'
 ht-degree: 98%
 
 ---
@@ -51,7 +51,7 @@ Anschließend müssen Sie, abhängig vom Typ des Erlebnisses, das Sie erstellen,
 >
 >Detaillierte Anweisungen zum Definieren der Segmente finden Sie unter [Segmentierung](/help/sites-administering/campaign-segmentation.md).
 
-## Creating a New Brand {#creating-a-new-brand}
+## Erstellen einer neuen Marke {#creating-a-new-brand}
 
 So erstellen Sie einen neue Marke:
 
@@ -63,7 +63,7 @@ So erstellen Sie einen neue Marke:
 
 1. Klicken Sie auf **Erstellen**. Ihre neue Marke wird im MCM angezeigt (mit einem Standardsymbol).
 
-### Definieren der Eigenschaften für die neue Marke  {#defining-the-properties-for-your-new-brand}
+### Definieren der Eigenschaften für die neue Marke {#defining-the-properties-for-your-new-brand}
 
 1. Wählen Sie im linken Bereich **Kampagnen**, wählen Sie im rechten Bereich das Symbol der neuen Marke und klicken Sie auf **Eigenschaften...**
 
@@ -73,7 +73,7 @@ So erstellen Sie einen neue Marke:
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-## Erstellen einer neuen Kampagne  {#creating-a-new-campaign}
+## Erstellen einer neuen Kampagne {#creating-a-new-campaign}
 
 So erstellen Sie einen neue Kampagne:
 
@@ -87,7 +87,7 @@ So erstellen Sie einen neue Kampagne:
 
 1. Klicken Sie auf **Erstellen**. Ihre neue Kampagne wird im MCM angezeigt.
 
-### Definieren der Eigenschaften für die neue Kampagne  {#defining-the-properties-for-your-new-campaign}
+### Definieren der Eigenschaften für die neue Kampagne {#defining-the-properties-for-your-new-campaign}
 
 Konfigurieren Sie Kampagneneigenschaften, die das Verhalten beeinflussen:
 
@@ -106,7 +106,7 @@ Konfigurieren Sie Kampagneneigenschaften, die das Verhalten beeinflussen:
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-## Erstellen eines neuen Erlebnisses  {#creating-a-new-experience}
+## Erstellen eines neuen Erlebnisses {#creating-a-new-experience}
 
 Die Vorgehensweise beim Erstellen eines neuen Erlebnisses hängt vom Erlebnistyp ab.
 
@@ -120,7 +120,7 @@ Die Vorgehensweise beim Erstellen eines neuen Erlebnisses hängt vom Erlebnistyp
 >
 >Es wird jedoch empfohlen, jetzt den MCM für das Erstellen von Erlebnissen zu verwenden.
 
-## Konfigurieren des neuen Erlebnisses  {#configuring-your-new-experience}
+## Konfigurieren des neuen Erlebnisses {#configuring-your-new-experience}
 
 Nachdem Sie das Grundgerüst für Ihr Erlebnis erstellt haben, müssen Sie jetzt abhängig vom Erlebnistyp die folgenden Schritte ausführen:
 
@@ -171,7 +171,7 @@ Leads werden im Allgemeinen in Kategorien eingeteilt und in Listen gruppiert, so
 >
 >Um die Avatare von Benutzern hinzuzufügen oder zu ändern, müssen Sie die Clickstream-Cloud (Strg+Alt+C) öffnen, das Profil laden und dann auf **Bearbeiten** klicken.
 
-### Erstellen neuer Leads  {#creating-new-leads}
+### Erstellen neuer Leads {#creating-new-leads}
 
 Denken Sie daran, die Leads nach dem Erstellen zu [aktivieren](#activating-or-deactivating-leads), damit Sie deren Aktivitäten auf der Veröffentlichungsinstanz verfolgen und das Benutzererlebnis personalisieren können.
 
@@ -192,7 +192,7 @@ So erstellen Sie einen neuen Lead manuell:
 
    ![screen_shot_2012-02-21at120307pm](assets/screen_shot_2012-02-21at120307pm.png)
 
-### Activating or deactivating leads {#activating-or-deactivating-leads}
+### Aktivieren oder Deaktivieren von Leads {#activating-or-deactivating-leads}
 
 Durch Aktivieren des Leads können Sie dessen Aktivitäten auf der Veröffentlichungsinstanz verfolgen und das Benutzererlebnis personalisieren. Wenn Sie die Aktivitäten nicht mehr verfolgen möchten, können Sie den Lead deaktivieren.
 
@@ -231,7 +231,7 @@ So importieren Sie Leads aus einer kommagetrennten Liste:
    >
    >Bei der ersten Zeile in der CSV-Liste handelt es sich um vordefinierte Etiketten, die genau wie im Beispiel angegeben geschrieben werden müssen:
    >
-   >`email,givenName,familyName` - wenn es beispielsweise als  `givenname`Beispiel geschrieben wurde, wird das System es nicht erkennen.
+   >`email,givenName,familyName` - wenn es `givenname`beispielsweise erkennt das System dies nicht.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -245,7 +245,7 @@ So importieren Sie Leads aus einer kommagetrennten Liste:
 
    Der neue Lead wird im Bereich „Leads“ angezeigt. Wenn Sie auf den Eintrag klicken, werden alle eingegebenen Informationen im rechten Bereich angezeigt. Sobald Sie den Lead erstellt haben, können Sie ihn einer Liste hinzufügen.
 
-### Hinzufügen von Leads zu Listen  {#adding-leads-to-lists}
+### Hinzufügen von Leads zu Listen {#adding-leads-to-lists}
 
 So fügen Sie schon bestehenden Listen Leads hinzu:
 
@@ -261,7 +261,7 @@ So fügen Sie schon bestehenden Listen Leads hinzu:
 
 1. Wählen Sie aus, welcher Liste Sie die Leads hinzufügen möchten und klicken Sie auf **OK**. Die Leads werden den entsprechenden Listen hinzugefügt.
 
-### Anzeigen von Lead-Informationen  {#viewing-lead-information}
+### Anzeigen von Lead-Informationen {#viewing-lead-information}
 
 Um Lead-Informationen im MCM anzuzeigen, klicken Sie auf das Kontrollkästchen neben dem Lead. Rechts wird ein Bereich geöffnet mit allen Informationen zum Lead, darunter auch die Listenzugehörigkeit.
 
@@ -289,7 +289,7 @@ So ändern Sie bestehende Lead-Informationen:
    >
    >Gehen Sie zum Benutzerprofil, um den Lead-Avatar zu ändern. Über Strg+Alt+C können Sie das Profil in die Clickstream Cloud laden. Klicken Sie dann auf **Laden** und wählen Sie dann das Profil aus.
 
-### Löschen vorhandener Leads  {#deleting-existing-leads}
+### Löschen vorhandener Leads {#deleting-existing-leads}
 
 Wählen Sie zum Löschen von bestehenden Leads im MCM das Kontrollkästchen neben dem Lead aus und klicken Sie auf **Löschen**. Der Lead wird aus der Lead-Liste und allen zugehörigen Listen entfernt.
 
@@ -297,7 +297,7 @@ Wählen Sie zum Löschen von bestehenden Leads im MCM das Kontrollkästchen nebe
 >
 >Vor dem Löschen fragt AEM noch einmal nach, ob Sie den bestehenden Lead wirklich löschen möchten. Nach dem Löschen kann er nicht wiederhergestellt werden.
 
-## Arbeiten mit Listen  {#working-with-lists}
+## Arbeiten mit Listen {#working-with-lists}
 
 >[!NOTE]
 >
@@ -312,7 +312,7 @@ Wenn Sie auf **Listen** klicken, können Sie auch sehen, ob die Liste Mitglied e
 
 ![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 
-### Erstellen neuer Listen {#creating-new-lists}
+### Erstellen neuer Listen  {#creating-new-lists}
 
 So erstellen Sie eine neue Liste (Gruppe):
 
@@ -340,7 +340,7 @@ So ändern Sie eine bestehende Liste:
 
 1. Nehmen Sie die gewünschten Änderungen vor und klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
-### Löschen vorhandener Listen  {#deleting-existing-lists}
+### Löschen vorhandener Listen {#deleting-existing-lists}
 
 Wählen Sie zum Löschen von bestehenden Listen im MCM das Kontrollkästchen neben der Liste aus und klicken Sie auf **Löschen**. Die Liste wird gelöscht. Leads, die der Liste zugeordnet waren, werden nicht entfernt; es wird nur die Zugehörigkeit zur Liste entfernt.
 
@@ -348,7 +348,7 @@ Wählen Sie zum Löschen von bestehenden Listen im MCM das Kontrollkästchen neb
 >
 >Vor dem Löschen fragt AEM noch einmal nach, ob Sie die bestehende Liste wirklich löschen möchten. Nach dem Löschen kann er nicht wiederhergestellt werden.
 
-### Zusammenführen von Listen  {#merging-lists}
+### Zusammenführen von Listen {#merging-lists}
 
 Sie können eine bestehende Liste mit einer anderen zusammenführen. Dabei wird die Liste, die Sie zusammenführen, Mitglied der anderen Liste. Sie besteht weiterhin als eigenständige Liste und sollte nicht gelöscht werden.
 
@@ -380,7 +380,7 @@ So führen Sie bestehende Listen zusammen:
 >
 >Das Entfernen einer zusammengeführten Liste aus der Mitgliedschaft entspricht dem Entfernen von Leads aus einer Liste. Öffnen Sie die Registerkarte **Listen**, wählen Sie die Liste aus, die die zusammengeführte Liste enthält, und entfernen Sie diese Mitgliedschaft, indem Sie neben der Liste auf den roten Kreis klicken.
 
-### Anzeigen von Leads in Listen  {#viewing-leads-in-lists}
+### Anzeigen von Leads in Listen {#viewing-leads-in-lists}
 
 Sie können jederzeit anzeigen, welche Leads einer bestimmten Liste angehören, indem Sie nach den Mitgliedern suchen oder die Liste durchsuchen.
 

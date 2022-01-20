@@ -1,8 +1,8 @@
 ---
 title: Entwicklungspraktiken
-seo-title: Entwicklungspraktiken
+seo-title: Development Practices
 description: Best Practices für die Entwicklung in AEM
-seo-description: Best Practices für die Entwicklung in AEM
+seo-description: Best practices for developing on AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 32fb6479-ae53-4bb3-8827-db15d7f5705e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '629'
 ht-degree: 100%
 
 ---
 
 # Entwicklungspraktiken{#development-practices}
 
-## Arbeit anhand einer Definition von „Fertig“{#work-according-to-a-definition-of-done}
+## Arbeit anhand einer Definition von „Fertig“ {#work-according-to-a-definition-of-done}
 
 Jedes Team hat ein eigenes Verständnis davon, was „fertig“ bedeutet, aber es ist wichtig, eines zu haben und sicherzustellen, dass eine Story die definierten Kriterien erfüllt, bevor sie akzeptiert wird.
 
@@ -34,7 +34,7 @@ Einige häufig von Teams angegebene Kriterien sind:
 
 Ohne eine entsprechende Definition treten häufig Situationen auf, in denen vieles halbfertig, aber nichts abgeschlossen ist.
 
-### Programmier- und Formatierungskonventionen definieren und einhalten  {#define-and-adhere-to-coding-and-formatting-conventions}
+### Programmier- und Formatierungskonventionen definieren und einhalten {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Dinge wie Einzüge und Leerräume erscheinen möglicherweise nicht wichtig, aber korrekt formatierter Code trägt erheblich zur Lesbarkeit und Pflegeleichtigkeit bei. Konventionen sollten im Team abgesprochen und beim Programmieren befolgt werden.
 
@@ -46,7 +46,7 @@ Entwickler sollten TDD praktizieren und fehlschlagende Einheitstests vor dem Pro
 
 Es gibt benutzerdefinierte Frameworks, z. B. Jackalope und Prosper, um die Imitation von JCR-APIs zu vereinfachen und so die Produktivität der Entwickler beim Schreiben von Einheitstests zu gewährleisten.
 
-### Immer bereit für Demos sein  {#stay-demo-ready}
+### Immer bereit für Demos sein {#stay-demo-ready}
 
 Das System sollte am Ende jeder Iteration für Demos im Unternehmen zur Verfügung stehen. Indem das System immer bereit für Demos gehalten wird, ist das Team immer nur eine Iteration von Produktionsbereitschaft entfernt und technische Rückstände werden auf ein vertretbares Maß beschränkt.
 
@@ -58,7 +58,7 @@ Das Implementieren einer kontinuierlichen Integrationsumgebung ermöglicht das e
 
 Wenn Einheitstests zu viel Zeit beanspruchen, lassen Entwickler sie aus, wodurch sie ihren Wert verlieren. Wenn es viel Zeit in Anspruch nimmt, den Code zu erstellen und bereitzustellen, werden diese Aufgaben seltener durchgeführt. Indem Sie kurze Erstellungszeiten zur Priorität machen, wird sichergestellt, dass die Zeit, die wir in unsere Testabdeckung und CI-Infrastruktur investiert haben, weiterhin der Produktivität des Teams zugutekommt.
 
-### „Sonar“ sowie andere statische Codeanalysewerkzeuge optimieren und ihre Berichte verwerten{#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### „Sonar“ sowie andere statische Codeanalysewerkzeuge optimieren und ihre Berichte verwerten {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
 Codeanalysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwicklerteam verwertet werden. Ohne die Optimierung der Analysen, die diese Tools bieten, sind die generierten Empfehlungen nicht relevant und verlieren ihren Wert.
 

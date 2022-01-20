@@ -30,7 +30,7 @@ Die Suchfacetten, die im Bedienfeld „Filter“ angezeigt werden, werden im zug
 
 Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat „Volltext“ hinzu. Mit dem Eigenschaftsprädikat können Sie nach Assets suchen, die mit einer einzelnen von Ihnen angegebenen Eigenschaft übereinstimmen. Mit dem Options-Prädikat können Sie nach Assets suchen, die mit einem oder mehreren Werten für eine bestimmte Eigenschaft übereinstimmen. Fügen Sie das Datumsbereichs-Prädikat hinzu, um nach Assets zu suchen, die innerhalb eines bestimmten Datumsbereichs erstellt wurden.
 
-1. Tippen/klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Forms durchsuchen]**.
+1. Tippen/klicken Sie auf [!DNL Experience Manager] -Logo und navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Forms durchsuchen]**.
 1. Wählen Sie auf der Seite „Suchformulare“ die Option **[!UICONTROL Asset-Admin-Suchschiene]** und tippen Sie dann auf **Bearbeiten** von ![aemassets_edit](assets/aemassets_edit.png).
 
    ![Suchen und Auswählen der Asset-Admin-Suchschiene](assets/assets_admin_searchrail.png)
@@ -39,10 +39,10 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat „V
 
    >[!NOTE]
    >
-   >Führen Sie die folgenden Schritte aus, um die Ordnersuchfunktion aus der vorkonfigurierten **Asset-Admin-Suchschiene** aus einer früheren [!DNL Experience Manager]-Version zu verwenden:
+   >So verwenden Sie die Ordnersuchfunktion aus der vorkonfigurierten **Asset-Admin-Suchleiste** von einem früheren [!DNL Experience Manager] führen Sie die folgenden Schritte aus:
    > 
-   >1. Navigieren Sie in CRX-DE zu */conf/global/settings/dam/search/facets/assets/jcr:content/items*.
-   >1. Löschen Sie den Knoten **type** .
+   >1. Navigieren Sie zu */conf/global/settings/dam/search/facets/assets/jcr:content/items* in CRX-DE.
+   >1. Löschen Sie die **type** Knoten.
    >1. Kopieren Sie aus dem Pfad */libs/settings/dam/search/facets/assets/jcr:content/items* die Knoten **asset, directory, typeor, excludepaths** und **searchtype** in den in Schritt 1 erwähnten Pfad.
    >1. Speichern Sie die Änderungen.
 
@@ -117,14 +117,14 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 >
 >Das Options-Prädikat ist ein benutzerdefinierter Wrapper, der Eigenschaftsprädikate umfasst, um das beschriebene Verhalten zu erreichen. Derzeit ist kein REST-Endpunkt verfügbar, um die Funktionalität nativ zu unterstützen.
 
-1. Tippen Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools > Allgemein > Forms suchen]**.
+1. Tippen Sie auf [!DNL Experience Manager] -Logo und navigieren Sie zu **[!UICONTROL Tools > Allgemein > Forms durchsuchen]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Suchformulare]** die Option **[!UICONTROL Asset-Admin-Suchschiene]** aus und tippen Sie dann auf das Symbol „Bearbeiten“.
 1. Ziehen Sie auf der Seite **[!UICONTROL Suchformular bearbeiten]** den Eintrag **[!UICONTROL Options-Eigenschaft]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Namen für die Eigenschaft ein. Beispiel: Um Assets basierend auf dem Format zu suchen, geben Sie einen aussagekräftigen Namen als Beschriftung ein, wie **[!UICONTROL Dateityp]**. Geben Sie die Eigenschaft, anhand derer die Suche durchgeführt werden soll, im Eigenschaftsfeld an, wie beispielsweise `jcr:content/metadata/dc:format.`
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Geben Sie im Feld **[!UICONTROL Eigenschaftsname]** den Pfad der JSON-Datei an, in der Sie die Knoten für die Optionen und entsprechende Schlüssel-Wert-Paare definiert haben.
-   * Tippen Sie auf ![Symbol](assets/do-not-localize/aem_assets_add_icon.png) neben dem Feld &quot;Optionen&quot;, um den Anzeigetext und den Wert für die Optionen anzugeben, die Sie im Bedienfeld &quot;Filter&quot;bereitstellen möchten. Um eine weitere Option hinzuzufügen, tippen/klicken Sie auf ![Symbol hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) und wiederholen Sie den Schritt.
+   * Tippen ![Symbol hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) neben dem Feld Optionen , um den Anzeigetext und den Wert für die Optionen anzugeben, die Sie im Bedienfeld Filter bereitstellen möchten. Um eine weitere Option hinzuzufügen, tippen/klicken Sie auf ![Symbol hinzufügen](assets/do-not-localize/aem_assets_add_icon.png) und wiederholen Sie den Schritt.
 
 1. Stellen Sie sicher, dass **[!UICONTROL Einzelauswahl]** deaktiviert ist, damit Benutzer mehrere Optionen für Dateitypen gleichzeitig auswählen können (z. B. Bilder, Dokumente, Multimedia und Archive). Wenn Sie **[!UICONTROL Einzelauswahl]** aktivieren, können Benutzer jeweils nur eine Option für Dateitypen auswählen.
 
@@ -137,9 +137,9 @@ Wenn Sie einen vorhandenen Knoten verwenden möchten, legen Sie diesen über das
 
 ## Mehrwert-Eigenschaftsprädikat hinzufügen {#adding-a-multi-value-property-predicate}
 
-Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Stellen Sie sich ein Szenario vor, in dem Sie Bilder von mehreren Produkten in [!DNL Experience Manager] Assets haben und die Metadaten für jedes Bild eine SKU-Nummer enthalten, die mit dem Produkt verknüpft ist. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
+Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Assets suchen. Stellen Sie sich ein Szenario vor, in dem Sie Bilder von mehreren Produkten in [!DNL Experience Manager] Assets und die Metadaten für jedes Bild enthalten eine SKU-Nummer, die dem Produkt zugeordnet ist. Sie können diese Eigenschaft nutzen, um anhand mehrerer Artikelnummern nach Produktbildern zu suchen.
 
-1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Forms durchsuchen]**.
+1. Klicken Sie auf [!DNL Experience Manager] -Logo und navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Forms durchsuchen]**.
 1. Wählen Sie auf der Seite „Suchformulare“ die Option **[!UICONTROL Asset-Admin-Suchschiene]** und tippen Sie dann auf **Bearbeiten** von ![aemassets_edit](assets/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Mehrwert-Eigenschaftsprädikat]** von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** eine Beschriftung und einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise `jcr:content/metadata/dc:value`. Sie können auch das Auswahl-Dialogfeld verwenden, um einen Knoten auszuwählen.
@@ -150,9 +150,9 @@ Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Asset
 
 ## Hinzufügen eines Tag-Prädikats {#adding-a-tags-predicate}
 
-Mit dem Tag-Prädikat können Sie anhand von Tags nach Assets suchen. Standardmäßig sucht [!DNL Experience Manager] Assets basierend auf den angegebenen Tags nach Assets, die nach einem oder mehreren Tags suchen. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
+Mit dem Tag-Prädikat können Sie anhand von Tags nach Assets suchen. Standardmäßig [!DNL Experience Manager] Assets durchsucht Assets basierend auf den angegebenen Tags nach einer oder mehreren Übereinstimmungen. Das heißt, die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ nutzen, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
-1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Forms durchsuchen]**.
+1. Klicken Sie auf [!DNL Experience Manager] -Logo und navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Forms durchsuchen]**.
 1. Wählen Sie auf der Seite „Suchformulare“ die Option **[!UICONTROL Asset-Admin-Suchschiene]** und tippen Sie dann auf **Bearbeiten** von ![aemassets_edit](assets/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Tag-Eigenschaft]** von der Registerkarte „Eigenschaft auswählen“ in den Hauptbereich.
 1. Geben Sie auf der Registerkarte „Einstellungen“ einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise *jcr:content/metadata/cq:tags*. Alternativ können Sie einen Knoten in CRXDE aus dem Auswahldialogfeld auswählen.
@@ -205,7 +205,7 @@ Das Sperrsymbol für eine Option auf der Seite „Suchformulare“ gibt an, dass
 Führen Sie die folgenden Schritte aus, um die standardmäßige Suchfacette wiederherzustellen:
 
 1. Wählen Sie **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** aus.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen]** ![Löschen-Umriss](assets/deleteoutline.png) .
+1. Tippen **[!UICONTROL Löschen]** ![deleteentwurf](assets/deleteoutline.png) in der Symbolleiste.
 1. Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Löschen]**, um die benutzerdefinierten Änderungen zu entfernen.
 
    Nach dem Löschen der benutzerdefinierten Anpassungen der Suchfacetten wird das Sperrsymbol vor **[!UICONTROL Asset-Admin-Suchschiene]** auf der Seite **[!UICONTROL Suchformulare]** erneut angezeigt.

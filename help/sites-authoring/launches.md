@@ -1,8 +1,8 @@
 ---
 title: Launches - Übersicht
-seo-title: Launches - Übersicht
-description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
-seo-description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. Sie sind in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
+seo-title: Launches Overview
+description: Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln. So sind Sie in der Lage, Änderungen für eine spätere Veröffentlichung vorzunehmen – unter Beibehaltung der aktuellen Seiten.
+seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 uuid: ff6a2898-7a77-4315-bb1f-efa9caa5f3b2
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,18 +12,18 @@ discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 exl-id: a6dca5d7-21b5-4a7f-9e83-b0f5ea77bc88
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '812'
 ht-degree: 99%
 
 ---
 
-# Launches - Übersicht{#launches}
+# Launches Übersicht{#launches}
 
 Mithilfe von Launches können Sie effizient Inhalte für eine künftige Version entwickeln.
 
 Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Änderungen für eine spätere Veröffentlichung vornehmen können. Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch das Weiterleiten (Bewerben) wird der Launch-Inhalt auf den Quellseiten dupliziert. Dieser Vorgang kann entweder manuell oder automatisch erfolgen. (Dies hängt davon ab, welche Felder beim Erstellen und Bearbeiten des Launches festgelegt werden.)
 
-Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Webseiten erstellen. Während des Quartals werden die folgenden Änderungen in der Launch-Kopie gesammelt:
+Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Web-Seiten erstellen. Während des Quartals werden die folgenden Änderungen in der Launch-Kopie gesammelt:
 
 * Änderungen an den Quellseiten, die die Folge normaler Wartungsarbeiten sind. Diese Änderungen werden automatisch in den Launch-Seiten dupliziert.
 * Bearbeitungen, die in Vorbereitung auf das nächste Quartal direkt an den Launch-Seiten vorgenommen werden.
@@ -43,7 +43,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-
 
 ## Der Ablauf eines Launches {#launches-the-order-of-events}
 
-Mit Launches können Sie effizient den Inhalt für eine zukünftige Veröffentlichung einer oder mehrerer aktivierter Webseiten entwickeln.
+Mit Launches können Sie effizient den Inhalt für eine zukünftige Veröffentlichung einer oder mehrerer aktivierter Web-Seiten entwickeln.
 
 Launches ermöglichen Folgendes:
 
@@ -104,7 +104,7 @@ Launches ermöglichen Folgendes:
 >
 >Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
-### Die Konsole „Launches“ {#the-launches-console}
+### Die Konsole „Launches“  {#the-launches-console}
 
 Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, die aufgeführten Aktionen auszuführen. Auf die Konsole kann wie folgt zugegriffen werden:
 

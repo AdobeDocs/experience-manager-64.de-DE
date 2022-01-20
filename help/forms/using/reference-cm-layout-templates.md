@@ -20,7 +20,7 @@ ht-degree: 89%
 
 In Correspondence Management enthält eine Briefvorlage typische typische Formularfelder, Layoutmerkmale wie Kopf- und Fußzeilen sowie leere „Zielbereiche“ zum Einfügen des Inhalts.
 
-Correspondence Management stellt Briefvorlagen im AEM Forms-Paket [AEM Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) bereit. Informationen zum Installieren eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md). Sie können die Vorlagen in Designer entsprechend Ihren Branding- und Geschäftsanforderungen anpassen. Das Paket enthält die folgenden Vorlagen:
+Correspondence Management stellt Briefvorlagen im AEM Forms-Paket bereit [AEM Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Informationen zum Installieren eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md). Sie können die Vorlagen in Designer entsprechend Ihren Branding- und Geschäftsanforderungen anpassen. Das Paket enthält die folgenden Vorlagen:
 
 * Klassisch
 * Klassisch einfach

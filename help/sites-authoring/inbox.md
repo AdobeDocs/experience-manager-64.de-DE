@@ -1,8 +1,8 @@
 ---
 title: Ihr Posteingang
-seo-title: Ihr Posteingang
+seo-title: Your Inbox
 description: Verwalten Ihrer Aufgaben mit dem Posteingang
-seo-description: Verwalten Ihrer Aufgaben mit dem Posteingang
+seo-description: Managing your tasks with the inbox
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,12 +12,12 @@ discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 9037f21c-5392-4322-af0d-7e220c810954
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '888'
 ht-degree: 99%
 
 ---
 
-# Ihr Posteingang {#your-inbox}
+# Ihr Posteingang{#your-inbox}
 
 Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (darunter auch aus Workflows und Projekten), z. B. Benachrichtigungen bezüglich:
 
@@ -45,10 +45,11 @@ Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie die
 >Weitere Informationen zu den Elementtypen finden Sie außerdem unter:
 >
 >* [Projekte](/help/sites-authoring/touch-ui-managing-projects.md)
-* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
-* [Workflows](/help/sites-authoring/workflows.md)
-* [Formulare](/help/forms/home.md)
+>* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
+>* [Workflows](/help/sites-authoring/workflows.md)
+>* [Formulare](/help/forms/home.md)
 
+>
 
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
@@ -58,9 +59,10 @@ In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Po
 ![wf-80](assets/wf-80.png)
 
 >[!NOTE]
-Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-authoring/basic-handling.md#card-view) angezeigt.
+>
+>Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-authoring/basic-handling.md#card-view) angezeigt.
 
-## Standardmäßige Verwaltungsaufgaben   {#out-of-the-box-administrative-tasks}
+## Standardmäßige Verwaltungsaufgaben  {#out-of-the-box-administrative-tasks}
 
 AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrator-Benutzergruppe zugewiesen sind.
 
@@ -69,7 +71,7 @@ AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrato
 * Aggregierte Sammlung von Nutzungsstatistiken aktivieren
 * [HTTPS konfigurieren](/help/sites-administering/ssl-by-default.md)
 
-## Öffnen des Posteingangs      {#opening-the-inbox}
+## Öffnen des Posteingangs {#opening-the-inbox}
 
 So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
@@ -83,7 +85,8 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
    ![wf-79](assets/wf-79.png)
 
 >[!NOTE]
-Der Posteingang fungiert als Konsole. Verwenden Sie daher die [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation) oder die [Suche](/help/sites-authoring/search.md), um zu einer anderen Position zu navigieren, wenn Sie fertig sind.
+>
+>Der Posteingang fungiert als Konsole. Verwenden Sie daher die [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation) oder die [Suche](/help/sites-authoring/search.md), um zu einer anderen Position zu navigieren, wenn Sie fertig sind.
 
 ### Posteingang – Listenansicht {#inbox-list-view}
 
@@ -151,8 +154,10 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    * Erstellen eines Projekts auf Basis des Elements.
 
    >[!NOTE]
-   Weitere Informationen finden Sie unter:
-   * Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
+   >
+   >Weitere Informationen finden Sie unter:
+   >
+   >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
 
 
 1. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
@@ -207,8 +212,10 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
 1. Wählen Sie die gewünschte Aufgabe aus, indem Sie auf die Miniatur tippen/klicken.
 
    >[!NOTE]
-   Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
-   Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
+   >
+   >Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
+   >
+   >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
 
 1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
 1. Wählen Sie die gewünschte Vorlage und klicken Sie auf **Weiter**.
@@ -225,7 +232,8 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
 
       * **Name**
    >[!NOTE]
-   Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).
+   >
+   >Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).
 
 1. Klicken Sie auf **Erstellen**, um die Aktion zu bestätigen.
 
@@ -244,4 +252,5 @@ Sie können die aufgeführten Elemente filtern:
    ![wf-89](assets/wf-89.png)
 
    >[!NOTE]
-   Bei Verwendung der [Listenansicht](#inbox-list-view) können Sie außerdem über die [Anzeigeeinstellungen](#inbox-view-settings) die Sortierreihenfolge festlegen.
+   >
+   >Bei Verwendung der [Listenansicht](#inbox-list-view) können Sie außerdem über die [Anzeigeeinstellungen](#inbox-view-settings) die Sortierreihenfolge festlegen.

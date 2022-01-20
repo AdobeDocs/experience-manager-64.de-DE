@@ -44,9 +44,9 @@ Sie können einen privaten Ordner in der Benutzeroberfläche von Adobe Experienc
    >
    >Sie können dem Benutzer, für den Sie den Ordner freigeben, verschiedene Rollen zuweisen, wie Bearbeiter, Eigentümer oder Betrachter. Wenn Sie dem Benutzer eine Eigentümerrolle zuweisen, hat der Benutzer Editor-Berechtigungen für den Ordner. Darüber hinaus kann der Benutzer den Ordner für andere freigeben. Wenn Sie die Rolle „Editor“ zuweisen, kann der Benutzer die Assets in Ihrem privaten Ordner bearbeiten. Wenn Sie die Rolle „Betrachter“ zuweisen, kann der Benutzer die Assets im privaten Ordner lediglich anzeigen.
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**. Je nach der zugewiesenen Rolle erhält der Benutzer eine Reihe von Berechtigungen für Ihren privaten Ordner, wenn sich der Benutzer bei [!DNL Experience Manager] Assets anmeldet.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Je nach der zugewiesenen Rolle erhält der Benutzer eine Reihe von Berechtigungen für Ihren privaten Ordner, wenn sich der Benutzer bei anmeldet. [!DNL Experience Manager] Assets.
 1. Klicken Sie auf **[!UICONTROL OK]** zum Schließen der Bestätigungsmeldung.
-1. Der Benutzer, für den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Melden Sie sich bei [!DNL Experience Manager] Assets mit den Anmeldeinformationen des Benutzers an, um die Benachrichtigung anzuzeigen.
+1. Der Benutzer, für den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Anmelden bei [!DNL Experience Manager] Assets mit den Anmeldeinformationen des Benutzers zum Anzeigen der Benachrichtigung.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

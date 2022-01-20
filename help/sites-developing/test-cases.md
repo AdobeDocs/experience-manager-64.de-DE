@@ -1,8 +1,8 @@
 ---
 title: Definieren von Testfällen
-seo-title: Definieren von Testfällen
+seo-title: Defining your Test Cases
 description: Ihre Testfälle sollten auf den Anwendungsfällen und der detaillierten Anforderungsspezifikation basieren
-seo-description: Ihre Testfälle sollten auf den Anwendungsfällen und der detaillierten Anforderungsspezifikation basieren
+seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
 uuid: 82dff825-da58-49a2-bf35-f5bb905e523d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 exl-id: ad529be3-9d31-492f-943f-ef3e99e13586
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 77%
+source-wordcount: '529'
+ht-degree: 76%
 
 ---
 
@@ -39,7 +39,7 @@ Die Tests sollten eindeutig definieren:
 
 Die Aussicht, Testfälle zu automatisieren, ist offensichtlich attraktiv, da dadurch repetititve Aufgaben eliminiert werden können.
 
-## Manuelle und automatisierte Tests  {#manual-versus-automated-tests}
+## Manuelle und automatisierte Tests {#manual-versus-automated-tests}
 
 Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, daher sollten bestimmte Aspekte berücksichtigt werden:
 
@@ -48,18 +48,17 @@ Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, dahe
 * Nur tatsächlich praktikabel für große Projekte.
 * Gut, wenn mehrere Versionen entweder zum Testen oder im langfristigen Freigabeplan generiert werden.
 
-## Testen spezifischer Aspekte {#testing-specific-aspects}
+## Spezifische Aspekte testen {#testing-specific-aspects}
 
 Beim Testen AEM einige spezifische Details von besonderem Interesse sind:
 
 Autor- und Veröffentlichungsumgebung
 
-Obwohl dies unter [Umgebungen](/help/sites-developing/the-basics.md#environments) behandelt wird, ist es sinnvoll, einen entscheidenden AEM in Bezug auf Tests hervorzuheben.
+Obwohl unter [Umgebungen](/help/sites-developing/the-basics.md#environments) Es ist angebracht, einen entscheidenden AEM in Bezug auf die Tests hervorzuheben.
 
 Sie müssen AEM als zwei Anwendungen betrachten:
 
-* die Umgebung **Author**
-Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
+* die **Autor** Umgebung Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
 Sie hat einen klein(er)en, vorhersehbaren Benutzerkreis, für den spezielle Funktionen und Leistung äußerst wichtig sind.
 * die **Veröffentlichungsumgebung**
 Diese Instanz stellt die Website in veröffentlichter Form dar, auf die Besucher zugreifen können.
@@ -89,11 +88,11 @@ Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in vers
 
 * **Genauigkeit**; stellen sicher, dass der Besucher der Website Inhaltsaktualisierungen sieht.
 * **Kontinuität**; Stellen Sie sicher, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
-* **** ClusterClusters werden verwendet, um Folgendes bereitzustellen:
-   * ****
-FailoverWenn ein Server fehlschlägt, übernehmen andere Server im Cluster die Verarbeitung.
-   * ****
-Leistungs-Lastenausgleich mit vollständigem Failover erhöht die Leistung eines Clusters.
+* **Cluster** Cluster werden verwendet, um Folgendes bereitzustellen:
+   * **Failover**
+Wenn ein Server fehlschlägt, übernehmen andere Server im Cluster die Verarbeitung.
+   * **Leistung**
+Lastenausgleich mit vollständigem Failover erhöht die Leistung eines Clusters.
 
 Wenn dies für ein Kundenprojekt verwendet wird, muss der Cluster getestet werden, um den korrekten Ablauf der Konfiguration zu bestätigen.
 

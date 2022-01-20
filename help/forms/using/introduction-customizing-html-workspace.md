@@ -1,8 +1,8 @@
 ---
 title: Einführung zur Anpassung des AEM Forms Workspace
-seo-title: Einführung zur Anpassung des AEM Forms Workspace
+seo-title: Introduction to Customizing AEM form workspace
 description: Eine kurze Einführung mit konzeptuellen und technischen Informationen zur Anpassung von LiveCycle AEM Forms Workspace für die Prozessverwaltung.
-seo-description: Eine kurze Einführung mit konzeptuellen und technischen Informationen zur Anpassung von LiveCycle AEM Forms Workspace für die Prozessverwaltung.
+seo-description: A quick introduction, with conceptual and technical information, to customize LiveCycle AEM Forms workspace for process management.
 uuid: 23d19629-b94a-46cc-bb44-9c6088669ec5
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 exl-id: 4831abe0-7d82-4cdd-8579-9736aa6a94d6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1761'
 ht-degree: 84%
 
 ---
 
-# Einführung zur Anpassung des AEM Forms Workspace  {#introduction-to-customizing-aem-form-workspace}
+# Einführung zur Anpassung des AEM Forms Workspace {#introduction-to-customizing-aem-form-workspace}
 
 AEM Formulararbeitsbereich bietet Funktionen zum Ändern der Darstellungssemantik und der Funktionalität der zugehörigen Benutzeroberfläche. Die Anpassungen zum Ändern des Stils, des Layouts, der Formatierung, des Branding und der Kernfunktion werden unten beschrieben.
 
@@ -35,9 +35,9 @@ AEM Forms Workspace unterstützt viele Anpassungen, mit denen das Layout, die Da
 
 Sie können das Aussehen, Layout und andere Darstellungsfaktoren von AEM Forms Workspace ändern. Ändern Sie den Workspace durch Anpassen der CSS- und HTML-Vorlagen und JavaScript™-Dateien. Alle Standarddateien werden in der Standardinstallation bereitgestellt.
 
-Die am häufigsten anwendbaren Schritte werden unter [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) beschrieben. Einzelne Beispiele für Anpassungen, einschließlich der ausführlichen Schritte, finden Sie in den jeweiligen Artikeln am Ende des Artikels.
+Die am häufigsten anwendbaren Schritte werden unter [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md). Einzelne Beispiele für Anpassungen, einschließlich der ausführlichen Schritte, finden Sie in den jeweiligen Artikeln am Ende des Artikels.
 
-#### Grundlagen des Stylesheet  {#understanding-the-style-sheet}
+#### Grundlagen des Stylesheet {#understanding-the-style-sheet}
 
 Bevor Sie Workspace anpassen, machen Sie sich mit dem Standard-Stylesheet vertraut, das mit AEM Forms unter /libs/ws/css/style.css bereitgestellt wird.
 
@@ -124,7 +124,7 @@ Die wesentlichen Schritte für die CSS-Anpassung sind:
 
 * Erstellen Sie die eine CSS-Datei.
 * Fügen Sie der CSS-Datei Stilelemente hinzu. Weiteren Informationen finden Sie im entsprechenden Artikel zum Thema CSS-Stile.
-* Aktualisieren Sie die Verweise in `html.jsp`.
+* Aktualisieren Sie die Referenzen in `html.jsp`.
 
 Die genauen Schritte für diese Anpassungen finden Sie unter [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md). Die mit AEM Forms Workspace bereitgestellte CSS-Datei befindet sich unter /libs/ws/css/. Verwenden Sie für diese CSS-Anpassungen das [Ship-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Einzelne Beispiele für CSS-Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
 
@@ -139,11 +139,11 @@ Die wesentlichen Schritte für die Anpassungen der Bilder sind:
 * Fügen Sie neue Stile entsprechend den hinzugefügten Bildern hinzu.
 * Stellen Sie eine Verknüpfung zu der neuen CSS-Datei in der Datei `html.jsp` her.
 
-Um mit dem Anpassen der Bilder in AEM Forms Workspace zu beginnen, führen Sie die [Generischen Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) aus. Einzelne Beispiele für Bildanpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
+Gehen Sie wie folgt vor, um mit der Anpassung der Bilder in AEM Forms Workspace zu beginnen: [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md). Einzelne Beispiele für Bildanpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels.
 
 #### HTML-Vorlage {#html-template}
 
-HTML-Vorlagen helfen dabei, das Erscheinungsbild und Layout der Workspace-Benutzeroberfläche zu definieren. Indem Sie die Standard-HTML-Vorlagen aktualisieren, können Sie das Layout der Standard-Benutzeroberfläche anpassen.
+Mit HTML-Vorlagen können Sie das Erscheinungsbild und Layout der Workspace-Benutzeroberfläche definieren. Indem Sie die Standard-HTML-Vorlagen aktualisieren, können Sie das Layout der Standard-Benutzeroberfläche anpassen.
 
 Die wesentlichen Schritte für die Anpassungen der HTML-Vorlagen sind:
 
@@ -153,7 +153,7 @@ Die wesentlichen Schritte für die Anpassungen der HTML-Vorlagen sind:
 
 Einzelne Beispiele für diese Anpassungen finden Sie in den jeweiligen Hilfethemen am Ende des Artikels. Wählen Sie je nach der anzupassenden Vorlage das [Ship-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) oder das [Dev-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
-### Änderung der Semantik  {#semantic-changes}
+### Änderung der Semantik {#semantic-changes}
 
 Um die AEM Forms Workspace-Funktion zu ändern, ändern Sie den JavaScript-Quellcode. Änderungen in der Kernfunktion werden als Semantikänderungen bezeichnet. Ändern Sie Modelle, Ansichten und Vorlagen, die als Teil des Quellcodes von AEM Forms Workspace bereitgestellt werden.
 
@@ -170,20 +170,20 @@ Weitere grundlegende Informationen zu den Komponenten, die Teil des Quellcodes s
 
 Da AEM Forms Workspace eine komponentenbasierte Software ist, kann es einfach angepasst und wiederverwendet werden. Integrieren Sie mühelos die Workspace-Komponenten in Ihre Webanwendungen.
 
-Weitere grundlegende Informationen finden Sie unter [Beschreibung der wiederverwendbaren Komponenten](/help/forms/using/description-reusable-components.md) und Anweisungen zur Verwendung der Komponenten finden Sie unter [Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen](/help/forms/using/description-reusable-components.md).
+Weitere grundlegende Informationen finden Sie unter [Beschreibung wiederverwendbarer Komponenten](/help/forms/using/description-reusable-components.md) und Anweisungen zur Verwendung der Komponenten finden Sie unter [Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen](/help/forms/using/description-reusable-components.md).
 
 ## Erstellen von AEM Forms Workspace-Code {#building-html-workspace-code}
 
 ### SDK-Paket {#sdk-package}
 
-Das Paket enthält den Quellcode von AEM Forms Workspace. Das Paket ist unter `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip` verfügbar.
+Das Paket enthält den Quellcode von AEM Forms Workspace. Das Paket ist verfügbar unter `[*LC root*]\sdk\html-workspace\adobe-lc-workspace-src.zip`.
 
 Es dient vor allem für Anpassungen, denn es bietet Funktionen um Folgendes zu generieren:
 
 * CRX-Pakete für Ship-, Debug- und Dev-Profile (siehe unten unter [CRX-Pakete](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
 * Minimierte Version des benutzerspezifischen Codes (für Semantikänderungen).
 
-#### WS-Inhalt  {#ws-content}
+#### WS-Inhalt {#ws-content}
 
 * client-pkg:
 
@@ -229,9 +229,9 @@ Es dient vor allem für Anpassungen, denn es bietet Funktionen um Folgendes zu g
 
 
 
-### CRX-Paket  {#crx-package}
+### CRX-Paket {#crx-package}
 
-Das CRX-Paket kann auf dem CRX™-Repository bereitgestellt werden. Sie ist unter `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip` verfügbar.
+Das CRX-Paket kann auf dem CRX™-Repository bereitgestellt werden. Sie ist abrufbar unter `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
 
 Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachstehend beschrieben werden.
 
@@ -241,7 +241,7 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 | Debug-Profil | Dieses Profil erstellt ein mitteleffizientes CRX-Paket. Die Größe des Pakets ist etwas größer als die Größe eines Pakets, das mit dem Ship-Profil erstellt wird. Dieses Paket fasst die meisten JavaScript-Dateien in einer JS-Datei zusammen. | Verwenden Sie dieses Profil für das Debuggen. |
 | Dev-Profil | Dieses Profil erstellt ein CRX-Paket der größtmöglichen Größe. Alle JavaScript-Dateien sind separat verfügbar, wie im SDK-Paket. | Verwenden Sie dieses Profil, wenn Semantikänderungen notwendig sin. |
 
-#### Ship-Profil  {#ship-profile}
+#### Ship-Profil {#ship-profile}
 
 #### Befehl {#command}
 
@@ -337,7 +337,7 @@ Dieses Paket kann mithilfe der drei folgenden Profile erstellt werden, die nachs
 
 mvn clean -P Dev-Installation auf Client-Paket
 
-#### WS-Inhalt  {#ws-content-3}
+#### WS-Inhalt {#ws-content-3}
 
 * css - Enthält style.css, ie.css und jqueri-ui.css.
 * images - Enthält alle Bilder.

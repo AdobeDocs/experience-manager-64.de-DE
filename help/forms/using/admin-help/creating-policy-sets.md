@@ -1,19 +1,19 @@
 ---
 title: Richtliniensätzen erstellen und verwalten
-seo-title: Richtliniensätzen erstellen und verwalten
+seo-title: Creating and managing policy sets
 description: Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Zweck. Sie können Richtlinien in einem Richtliniensatz erstellen, bearbeiten und löschen.
-seo-description: Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Zweck. Sie können Richtlinien in einem Richtliniensatz erstellen, bearbeiten und löschen.
+seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
 uuid: 11faf67c-b9b7-4394-8672-d43cace131ad
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
-feature: Dokumentensicherheit
+feature: Document Security
 exl-id: e17ab7de-9f4a-4456-be80-43ab9663940e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1295'
 ht-degree: 99%
 
 ---
@@ -44,14 +44,14 @@ Beim Erstellen von Richtliniensätzen weisen Sie Benutzern die Rolle des Dokumen
 
 Bei der Installation von Document Security wird standardmäßig ein so genannter *globaler Richtliniensatz* erstellt. Dieser Richtliniensatz wird von dem Administrator, der die Software installiert hat, oder dem für diesen Richtliniensatz festgelegten Richtliniensatzkoordinator verwaltet.
 
-## Einen Richtliniensatz erstellen  {#create-a-policy-set}
+## Einen Richtliniensatz erstellen {#create-a-policy-set}
 
 Der Richtliniensatz „Global“ ist der einzige Standardrichtliniensatz, der bei der Installation erstellt wird. Sie können weitere Richtliniensätze erstellen und dabei Richtlinien, Benutzer, Richtliniensatzkoordinatoren und Dokumentherausgeber hinzufügen. Nach Erstellen eines Richtliniensatzes können Sie Richtlinien im Satz erstellen.
 
 Klicken Sie bei der Richtliniensatzerstellung auf die Schaltfläche „Zurück“, um zum vorherigen Bildschirm zurückzukehren. Um den Richtliniensatz zu speichern, klicken Sie zu einem beliebigen Zeitpunkt auf die Schaltfläche „Speichern“.
 
 1. Klicken Sie auf der Document Security-Seite auf „Richtlinien“, auf die Registerkarte „Richtliniensätze“ und anschließend auf „Neu“.
-1. Geben Sie in das Feld „Name“ einen Namen für den Richtliniensatz und optional in das Feld „Beschreibung“ eine Beschreibung ein. Klicken Sie danach auf „Weiter“. Der Name darf keinen Doppelpunkt **:** enthalten.
+1. Geben Sie in das Feld „Name“ einen Namen für den Richtliniensatz und optional in das Feld „Beschreibung“ eine Beschreibung ein. Klicken Sie danach auf „Weiter“. Der Name darf keinen Doppelpunkt enthalten **:**.
 
    >[!NOTE]
    >
@@ -89,7 +89,7 @@ Klicken Sie bei der Richtliniensatzerstellung auf die Schaltfläche „Zurück�
 
 Sie können nun dem Richtliniensatz Richtlinien hinzufügen. (Siehe [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
-## Einen Richtliniensatz bearbeiten  {#edit-a-policy-set}
+## Einen Richtliniensatz bearbeiten {#edit-a-policy-set}
 
 1. Klicken Sie auf der Document Security-Seite auf „Richtlinien“, anschließend auf die Registerkarte „Richtliniensätze“ und dann auf den zu bearbeitenden Richtliniensatz.
 1. Klicken Sie auf die gewünschte Registerkarte und führen Sie die Bearbeitung durch:
@@ -107,7 +107,7 @@ Sie können nun dem Richtliniensatz Richtlinien hinzufügen. (Siehe [Richtlinien
    * Um eine Richtlinie zu suchen, wählen Sie „Richtlinien-ID“ oder „Richtlinienname“ aus, geben den gewünschten Wert ein, wählen die Anzahl anzuzeigender Elemente aus und klicken auf „Suchen“.
    * Informationen zum Erstellen einer neuen Richtlinie finden Sie unter [Richtlinien erstellen und bearbeiten](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
-## Einen Richtliniensatz löschen  {#delete-a-policy-set}
+## Einen Richtliniensatz löschen {#delete-a-policy-set}
 
 Beim Löschen eines Richtliniensatzes können Richtlinien, die Bestandteil des Satzes waren, nicht mehr auf neue Dokumente angewendet werden. Sie können die Richtlinieninformationen aber sowohl in Administration Console als auch auf den Webseiten für Endbenutzer für Richtlinien, die noch in Benutzung sind, anzeigen. Sie können die Richtlinieninformationen über die Seite „Dokumentdetails“ jedes von dieser Richtlinie geschützten Dokuments anzeigen. Richtlinien, die noch verwendet werden, können bearbeitet werden.
 

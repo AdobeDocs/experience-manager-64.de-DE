@@ -1,26 +1,26 @@
 ---
 title: RDBMS-Unterstützung in AEM 6.4
-seo-title: RDBMS-Unterstützung in AEM 6.4
+seo-title: RDBMS Support in AEM 6.4
 description: Erfahren Sie mehr über die Unterstützung der RDBMS-Persistenz in AEM 6.4 sowie die verfügbaren Konfigurationsoptionen.
-seo-description: Erfahren Sie mehr über die Unterstützung der RDBMS-Persistenz in AEM 6.4 sowie die verfügbaren Konfigurationsoptionen.
+seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 uuid: 599d3e61-99eb-4a1c-868b-52b20a615500
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
-feature: Konfiguration
+feature: Configuring
 exl-id: 89523bb4-e4c4-469c-802b-6fe27c816a2e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 74%
+source-wordcount: '700'
+ht-degree: 73%
 
 ---
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Die Unterstützung für RDBMS-Persistenz in AEM wird mithilfe des Document-Mikrokernels implementiert. Der Document-Mikrokernel bildet die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
 
@@ -54,7 +54,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
 1. Stellen Sie sicher, dass der Datenbank-Daemon gestartet ist und eine aktive Datenbank für die Verwendung mit AEM vorhanden ist.
 1. Kopieren Sie die AEM 6.3-JAR-Datei in das Installationsverzeichnis.
-1. Erstellen Sie im Installationsverzeichnis einen Ordner mit dem Namen `crx-quickstart\install`.
+1. Erstellen Sie einen Ordner mit dem Namen `crx-quickstart\install` im Installationsverzeichnis.
 1. Konfigurieren Sie den Document-Knotenspeicher, indem Sie eine Konfigurationsdatei mit dem folgenden Namen im Verzeichnis `crx-quickstart\install` erstellen:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
@@ -70,14 +70,14 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
    1. Laden Sie das ZIP-Archiv von https://dev.mysql.com/downloads/connector/j/ herunter.
       * Version muss >= 5.1.38 sein.
-   1. Extrahieren Sie `mysql-connector-java-version-bin.jar` (Bundle) aus dem Archiv
+   1. Extrahieren Sie die `mysql-connector-java-version-bin.jar` (Bundle) aus dem Archiv
    1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und zu starten:
-      * Gehen Sie zu *http://serveraddress:serverport/system/console/bundles*
-      * Wählen Sie **Installieren/Aktualisieren**
+      * Navigieren Sie zu *http://serveraddress:serverport/system/console/bundles*
+      * Auswählen **Installieren/Aktualisieren**
       * Navigieren Sie zum Paket, das aus dem heruntergeladenen ZIP-Archiv extrahiert wurde.
-      * Überprüfen Sie, ob der JDBC-Treiber der Oracle Corporation für MySQLcom.mysql.jdbc **aktiv ist, und starten Sie ihn.**
+      * Vergewissern Sie sich, dass **JDBC-Treiber der oracle Corporation für MySQLcom.mysql.jdbc** aktiv ist, und starten Sie es.
 
-1. Beginnen Sie AEM mit den Ausführungsmodi `crx3` und `crx3rdb`:
+1. Beginnen Sie AEM schließlich mit der `crx3` und `crx3rdb` runmodes:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb

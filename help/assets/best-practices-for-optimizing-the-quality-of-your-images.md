@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
-feature: Asset-Management,Ausgabeformate
+feature: Asset Management,Renditions
 role: User
 source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1461'
 ht-degree: 93%
 
 ---
@@ -43,9 +43,9 @@ Verwenden Sie als Best Practice für die Bildgröße `&wid=<value>&hei=<value>&r
 
 ## Best Practices für Bild-Scharfzeichnung {#best-practices-for-image-sharpening}
 
-Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit, um mehr über die Funktionsweise von Scharfzeichnen und Unschärfemaske in AEM zu erfahren, indem Sie auf das Handbuch [Adobe Dynamic Media Classic - Bildqualität und Scharfzeichnen - Best Practices](/help/assets/assets/sharpening_images.pdf) verweisen, das auch für AEM gilt.
+Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bildern auf Websites dar. Hier werden viele Fehler gemacht. Nehmen Sie sich die Zeit, um mehr über die Funktionsweise von Scharfzeichnen und Unschärfemaske in AEM zu erfahren, indem Sie auf die [Best Practices für Bildqualität und Scharfzeichnen in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) -Handbuch, das auch für AEM gilt.
 
-Siehe auch [Scharfzeichnen eines Bildes mit einer Unschärfemaske](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html).
+Siehe auch [Scharfzeichnen eines Bildes mit der Unschärfemaske](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html).
 
 In AEM können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder an beiden Zeitpunkten scharfzeichnen. In den meisten Fällen sollten Sie Bilder aber nur mit einer Methode, nicht mit beiden scharfzeichnen. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
 
@@ -65,7 +65,7 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
 
              Dieser Parameter bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und vom Filter scharfgezeichnet werden. Mit dem Parameter **[!UICONTROL Schwellenwert]** können Sie übermäßiges Scharfzeichnen von Bereichen mit ähnlichen Farben, z. B. Hauttönen, vermeiden. Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um kein „Rauschen“ zu erzeugen, trotzdem wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.
          
-         Weitere Informationen dazu, wie Sie diese drei Parameter festlegen, einschließlich Best Practices für die Verwendung mit dem Filter, finden Sie im Handbuch [Adobe Dynamic Media Classic - Bildqualität und Scharfzeichnen - Best Practices](/help/assets/assets/sharpening_images.pdf) (gilt auch für Dynamic Media auf AEM).
+         Weitere Informationen zum Festlegen dieser drei Parameter, einschließlich der Best Practices für die Verwendung mit dem Filter, finden Sie unter [Best Practices für Bildqualität und Scharfzeichnen in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) Handbuch (gilt auch für Dynamic Media auf AEM).
    * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
 
@@ -80,7 +80,7 @@ Erhöhen Sie den Wert schrittweise von 1,75 auf maximal 4. Wenn die Scharfzeichn
 
 Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 
-### Best Practices für die JPEG-Komprimierung (&amp;qlt=) {#best-practices-for-compression-qlt}
+### Best Practices für JPEG-Komprimierung (&amp;qlt=) {#best-practices-for-compression-qlt}
 
 * Dieser Parameter steuert die JPG-Kodierungsqualität. Ein höherer Wert führt zu einer höheren Bildqualität, aber auch zu einer größeren Datei. Ein niedrigerer Wert dagegen bedeutet eine niedrigere Bildqualität, aber auch eine kleinere Datei. Der Bereich für diesen Parameter beträgt 0–100.
 * Um die Qualität zu optimieren, setzen Sie den Parameterwert nicht auf 100. Die Unterschiede zwischen einer Einstellung von 90 oder 95 und 100 sind fast nicht wahrnehmbar, aber die Einstellung 100 erhöht die Größe der Bilddatei unnötigerweise. Um die Qualität zu optimieren, aber zu vermeiden, dass Bilddateien zu groß werden, setzen Sie daher den Wert von `qlt=<value>` auf 90 oder 95.

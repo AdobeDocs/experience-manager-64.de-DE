@@ -1,19 +1,19 @@
 ---
 title: AEM 6.4-Implementierungs-Benutzerhandbuch
-seo-title: AEM 6.4-Implementierungs-Benutzerhandbuch
+seo-title: AEM 6.4 Implementation User Guide
 description: Eine Übersicht über die Implementierung von AEM 6.4
-seo-description: Eine Übersicht über die Implementierung von AEM 6.4
+seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 40%
+source-wordcount: '108'
+ht-degree: 44%
 
 ---
 
-# AEM 6.4 Benutzerhandbücher für die Implementierung {#aem-64-implementation-user-guides}
+# Benutzerhandbücher zur Implementierung von AEM 6.4 {#aem-64-implementation-user-guides}
 
 ## Entwickeln für AEM {#developing-on-aem}
 
@@ -25,7 +25,7 @@ Bist du AEM Entwickler? [Beginnen Sie mit der Entwicklung auf AEM.](/help/sites-
 
 ## HTL (HTML-Vorlagensprache) für AEM {#htl-for-aem}
 
-[Verwenden Sie die HTML-Vorlagensprache, um für AEM zu entwickeln.](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
+[Verwenden Sie HTML Template Language , um für AEM zu entwickeln.](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 
 ## Cloud Manager für AEM {#cloud-manager-for-aem}
 

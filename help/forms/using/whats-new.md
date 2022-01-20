@@ -1,8 +1,8 @@
 ---
 title: Übersicht über die neuen Funktionen | AEM 6.4 Forms
-seo-title: Übersicht über die neuen Funktionen | AEM 6.4 Forms
+seo-title: New features summary | AEM 6.4 Forms
 description: Übersicht über die neuen Funktionen und Verbesserungen in AEM 6.4 Forms.
-seo-description: Übersicht über die neuen Funktionen und Verbesserungen in AEM 6.4 Forms.
+seo-description: Summary of new features and enhancements in AEM 6.4 Forms.
 uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 exl-id: 21b8ed83-9c0c-41ee-9fbb-56ccebaee132
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2016'
-ht-degree: 81%
+source-wordcount: '2002'
+ht-degree: 82%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 81%
 
 AEM Forms beinhaltet verschiedene neue Funktionen und Verbesserungen, die die Erstellung, Verwaltung und die Benutzererfahrung von adaptiven Formularen und interaktiver Kommunikation weiter optimieren.
 
-In diesem Abschnitt erhalten Sie eine kurze Einführung in die neuen Funktionen und Verbesserungen. Rufen Sie Dokumentation mit Ressourcen für Detailinformationen auf. Siehe auch die [Versionshinweise](/help/release-notes/forms.md) zu AEM 6.4 Forms. Die vollständige AEM 6.4 Forms-Dokumentation finden Sie unter [AEM 6.4 Forms Guide](/help/forms/home.md).
+In diesem Abschnitt erhalten Sie eine kurze Einführung in die neuen Funktionen und Verbesserungen. Rufen Sie Dokumentation mit Ressourcen für Detailinformationen auf. Siehe auch die [Versionshinweise](/help/release-notes/forms.md) zu AEM 6.4 Forms. Die vollständige AEM 6.4 Forms-Dokumentation finden Sie unter [Handbuch zu AEM 6.4 Forms](/help/forms/home.md).
 
 ## Interaktive Kommunikation {#interactive-communications}
 
@@ -40,12 +40,12 @@ Interaktive Kommunikation bietet wesentliche Vorteile:
 
 Interaktive Kommunikation ist der Standard und empfohlene Ansatz, um Kundenkommunikation zu erstellen. Um die Briefe in AEM 6.3 Forms und AEM 6.2 Forms weiterhin zu verwenden, müssen Sie ein Kompatibilitätspaket installieren.
 
-### Interaktive Mehrkanal-Kommunikations-Erstellung  {#multi-channel-interactive-communication-authoring}
+### Interaktive Mehrkanal-Kommunikations-Erstellung {#multi-channel-interactive-communication-authoring}
 
 Mithilfe der interaktiven Kommunikation können Sie Druck- und Webdokumente in einem einzigen Dokumenteditor erstellen und bearbeiten. Indem Sie dieselben Dokumentfragmente verwenden, um Darstellungen beider Kanäle zu erstellen, können Sie doppelten Aufwand vermeiden.
 ![printweb_2](assets/printweb_2.png)
 
-Weitere Informationen finden Sie unter [Interaktive Kommunikation - Übersicht](/help/forms/using/interactive-communications-overview.md).
+Weitere Informationen finden Sie unter [Interaktive Kommunikation - Überblick](/help/forms/using/interactive-communications-overview.md).
 
 ### WYSIWYG Dokumenteditor {#wysiwyg-document-editor}
 
@@ -75,13 +75,13 @@ Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/
 
 Die Benutzeroberfläche des Agenten unterstützt nun die Druck- und Webvorschau der interaktiven Kommunikation. Über dieselbe Benutzeroberfläche für Agenten können Sie den Druckkanal bearbeiten und den Webkanal Ihrer interaktiven mehrkanaligen Kommunikation in der Vorschau anzeigen. Felder, Variablen, FDM-Elemente und Dokumentfragmente im Druckkanal können so konfiguriert werden, dass sie vom Agenten in der Benutzeroberfläche des Agenten geändert werden. Die Unterstützung von Formulardatenmodellen ermöglicht die Erstellung von Vorschaubildern mit vorgefüllten Beispieldaten.
 
-Weitere Informationen finden Sie unter [Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Benutzeroberfläche für Agenten](/help/forms/using/prepare-send-interactive-communication.md).
+Weitere Informationen finden Sie unter [Vorbereiten und Senden der interaktiven Kommunikation über die Benutzeroberfläche für Agenten](/help/forms/using/prepare-send-interactive-communication.md).
 
 ### Präsentieren von Informationen in Diagrammen {#present-information-in-charts}
 
 Interaktive Kommunikation unterstützt Diagramme in Web- und Druckkanälen für eine bessere Kommunikation. Mithilfe von Diagrammen wie Torten-, Kreis-, Balken- und Spaltendiagrammen können Sie große Mengen an Informationen für eine einfache Interpretation und Analyse zusammenfassen und visuell präsentieren.
 
-![chart-2](assets/chart-2.png) ![-chart](assets/chart.png)
+![chart-2](assets/chart-2.png) ![Diagramm](assets/chart.png)
 
 Weitere Informationen finden Sie unter [Verwenden von Diagrammen in interaktiver Kommunikation](/help/forms/using/chart-component-interactive-communications.md).
 
@@ -111,7 +111,7 @@ Weitere Informationen finden Sie unter:
 
 Standardmäßig werden Brief-Assets aus früheren Versionen von AEM Forms in dieser Version nicht unterstützt. Um die Briefe in AEM 6.3 Forms und AEM 6.2 Forms weiterhin zu verwenden, müssen Sie ein Kompatibilitätspaket installieren.
 
-## Datenintegration  {#data-integration}
+## -Datenintegration {#data-integration}
 
 ![](do-not-localize/data-integeration-1.png)
 
@@ -125,15 +125,15 @@ Geschäftsbenutzer und Formularautoren können jetzt ein Formulardatenmodell ein
 
 Ebenso können Sie Entitäten sowie die untergeordneten Eigenschaften in einem vorhandenen Formulardatenmodell erstellen und sie an entsprechende Entitäten und Eigenschaften in einer späteren Datenquelle binden.
 
-Weitere Informationen finden Sie unter [Formulardatenmodell erstellen](/help/forms/using/create-form-data-models.md).
+Weitere Informationen finden Sie unter [Erstellen des Formulardatenmodells](/help/forms/using/create-form-data-models.md).
 
-### Berechnete Eigenschaften erstellen {#create-computed-properties}
+### Erstellen berechneter Eigenschaften {#create-computed-properties}
 
 Formularautoren und -entwickler können berechnete Eigenschaften im Formulardatenmodell erstellen. Sie ermöglichen es Ihnen, einen Wert für die Eigenschaft zu berechnen, indem Sie Regeln oder Logik für Daten erstellen, die in konfigurierten Datenquellen verfügbar sind. Eine Regel ist ein Ausdruck, der ausgewertet wird, wenn sich die Daten im Formulardatenmodell laden oder die Werte der Eigenschaften im Ausdruck ändern. Eine berechnete Eigenschaft namens „Raten“ berechnet beispielsweise den monatlich zu zahlenden Betrag für ein Darlehen basierend auf dem in der Datenquelle angegebenen Zinssatz und dem vom Benutzer im Formular angegebenen Betrag und der Höhe des Darlehens.
 
 Eine berechnete Eigenschaft befindet sich lokal in einem Formulardatenmodell und ist nicht in einer Datenquelle vorhanden. Sie können berechnete Eigenschaften in adaptiven Formularen und interaktiver Kommunikationen verwenden.
 
-Weitere Informationen finden Sie unter [Arbeiten mit dem Formulardatenmodell](/help/forms/using/work-with-form-data-model.md).
+Weitere Informationen finden Sie unter [Arbeiten mit einem Formulardatenmodell](/help/forms/using/work-with-form-data-model.md).
 
 ### Vorschau von Formularen und Dokumenten mit Beispieldaten {#preview-forms-and-documents-with-sample-data}
 
@@ -145,11 +145,11 @@ Weitere Informationen finden Sie unter [Formulardatenmodell verwenden](/help/for
 
 ### Datenquellendefinitionen aktualisieren {#refresh-data-source-definitions}
 
-Aktualisierungen in Datenquellenentitäten oder Eigenschaften spiegeln sich nicht automatisch in zugeordneten Formulardatenmodellen wider. Der Formulardatenmodelleditor verfügt jetzt über ![refresh_forms_di](assets/refresh_forms_di.png) (Datenquellendefinitionen aktualisieren), die den Server-Cache ungültig machen und aktualisiertes Schema aus der Datenquelle abrufen, damit es sofort im Formulardatenmodell angezeigt wird.
+Aktualisierungen in Datenquellenentitäten oder Eigenschaften spiegeln sich nicht automatisch in zugeordneten Formulardatenmodellen wider. Der Editor für Formulardatenmodelle bietet jetzt Funktionen ![refresh_forms_di](assets/refresh_forms_di.png) (Datenquellendefinitionen aktualisieren), die den Server-Cache ungültig machen und aktualisiertes Schema aus der Datenquelle abrufen, um es sofort im Formulardatenmodell widerzuspiegeln.
 
 ### Konfigurieren von Datenquellen mit der Touch-Benutzeroberfläche {#configure-data-sources-using-touch-user-interface}
 
-In dieser Version ist die Konfiguration der Cloud-Dienste für Datenquellen in der Touch-Benutzeroberfläche verfügbar. Außerdem wurde der Speicherort für die Konfiguration von Cloud-Services in **[!UICONTROL Tools > Cloud Services > Data Sources]** geändert. Siehe [Konfigurieren von Datenquellen](/help/forms/using/configure-data-sources.md).
+In dieser Version ist die Konfiguration der Cloud-Dienste für Datenquellen in der Touch-Benutzeroberfläche verfügbar. Außerdem wurde der Speicherort für die Konfiguration von Cloud-Services in **[!UICONTROL Tools > Cloud Services > Data Sources]**. Siehe [Datenquellen konfigurieren](/help/forms/using/configure-data-sources.md).
 
 ## Adaptive Formulare {#adaptive-forms}
 
@@ -165,7 +165,7 @@ Es gibt verschiedene Verbesserungen für die Lazy Loading-Funktion in dieser Ver
 * Adaptive Formularfragmente mit aktiviertem Lazy Loading werden in wiederholbaren Bereichen unterstützt.
 * Adaptive Formulare mit Lazy Loading-aktivierten Fragmenten werden in der AEM Forms-App unterstützt.
 
-## Formularzentrierte AEM-Workflows  {#forms-centric-aem-workflows}
+## Formularzentrierte AEM-Workflows {#forms-centric-aem-workflows}
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
@@ -188,7 +188,7 @@ Die folgenden Verbesserungen wurden in der AEM Forms-App vorgenommen:
 * Adaptive Formulare mit Lazy Loading-aktivierten Fragmenten werden in der AEM Forms-App unterstützt.
 * Adaptive Formulare mit Formulardatenmodell werden in der AEM Forms-App unterstützt.
 
-## Dokumentensicherheit {#document-security}
+## Document Security {#document-security}
 
 ![aem-forms-document-security-](assets/aem-forms-document-security-.png)
 

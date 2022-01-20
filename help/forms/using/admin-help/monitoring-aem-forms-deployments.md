@@ -1,8 +1,8 @@
 ---
 title: Überwachung der AEM Forms-Bereitstellung
-seo-title: Überwachung der AEM Forms-Bereitstellung
+seo-title: Monitoring AEM forms deployments
 description: Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Erfahren Sie mehr über das Überwachen von AEM-Forms-Bereitstellungen für dieses Dokument.
-seo-description: Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Erfahren Sie mehr über das Überwachen von AEM-Forms-Bereitstellungen für dieses Dokument.
+seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: d2cd532b-4086-4553-ac26-f311da6d5ca9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 75%
+source-wordcount: '614'
+ht-degree: 73%
 
 ---
 
@@ -23,14 +23,14 @@ Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf inter
 
 Weitere Informationen zum Überwachen von AEM Forms-Bereitstellungen finden Sie im [technischen Handbuch zur AEM Forms-Bereitstellung](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
 
-## Überwachung mithilfe von MBeans  {#monitoring-using-mbeans}
+## Überwachung mithilfe von MBeans {#monitoring-using-mbeans}
 
 AEM Forms stellt zwei registrierte MBeans bereit, die Informationen zur Navigation und statistische Informationen enthalten. Die folgenden MBeans sind die einzigen, die für die Integration und Inspektion unterstützt werden:
 
 * **ServiceStatistic:** Diese MBean stellt Informationen über den Dienstnamen und die Version bereit.
 * **OperationStatistic:** Diese MBean stellt die Statistik jedes Formularserverdienstes bereit. Hier können Administratoren Informationen zu bestimmten Diensten erhalten, z. B. Aufrufzeit, Anzahl der Fehler usw.
 
-### Öffentliche ServiceStatisticMbean-Schnittstellen  {#servicestatisticmbean-public-interfaces}
+### Öffentliche ServiceStatisticMbean-Schnittstellen {#servicestatisticmbean-public-interfaces}
 
 Auf diese öffentlichen ServiceStatisticMBean-Schnittstellen kann zu Testzwecken zugegriffen werden:
 
@@ -40,7 +40,7 @@ Auf diese öffentlichen ServiceStatisticMBean-Schnittstellen kann zu Testzwecken
  public int getMinorVersion();
 ```
 
-### Öffentliche OperationStatisticMbean-Schnittstellen  {#operationstatisticmbean-public-interfaces}
+### Öffentliche OperationStatisticMbean-Schnittstellen {#operationstatisticmbean-public-interfaces}
 
 Auf diese öffentlichen OperationStatistic MBean-Schnittstellen kann zu Testzwecken zugegriffen werden:
 
@@ -68,13 +68,13 @@ Auf diese öffentlichen OperationStatistic MBean-Schnittstellen kann zu Testzwec
  public void setExceptionMessage(String errorMessage);
 ```
 
-### MBean Struktur- &amp; Vorgangsstatistiken  {#mbean-tree-operation-statistics}
+### MBean Struktur- &amp; Vorgangsstatistiken {#mbean-tree-operation-statistics}
 
 Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean bereitgestellt. Diese Statistiken sind Attribute von MBean und können unter der folgenden Hierarchiestruktur gefunden werden:
 
 **MBean-Struktur**
 
-**Domänenname der Adobe:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
+**Adobe Domain Name:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
 
 **ServiceType:** AdobeService ist der Name, der zum Auflisten aller Dienste verwendet wird.
 
@@ -84,17 +84,17 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **Vorgangsstatistiken**
 
-**Aufrufzeit:** Zeit, die für die Ausführung der Methode benötigt wird. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
+**Aufrufzeit:** Zeit für die Ausführung der Methode. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
 
 **Anzahl der Aufrufe:** Die Häufigkeit, mit der der Dienst aufgerufen wird.
 
-**Durchschnittliche Aufrufzeit:**  Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
+**Durchschnittliche Aufrufzeit:** Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
 
 **Max. Aufrufzeit:** Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
 **Min. Aufrufzeit:** Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**Ausnahmeanzahl:** Anzahl der Aufrufe, die zu Fehlern geführt haben.
+**Ausnahmeanzahl:** Anzahl der Aufrufe, bei denen Fehler aufgetreten sind.
 
 **Ausnahmemeldung:** Die Fehlermeldung der letzten aufgetretenen Ausnahme.
 
@@ -104,7 +104,7 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 Zum Aktivieren der JMX-Überwachung müssen Anwendungsserver in der Regel konfiguriert werden. Weitere Informationen dazu erhalten Sie in der Dokumentation für Ihren Anwendungsserver.
 
-### Beispiele zum Einrichten eines offenen JMX-Zugriffs  {#examples-of-how-to-set-up-open-jmx-access}
+### Beispiele zum Einrichten eines offenen JMX-Zugriffs {#examples-of-how-to-set-up-open-jmx-access}
 
 **JBoss 4.0.3/4.2.0 – JVM-Start konfigurieren**
 
@@ -119,7 +119,7 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
 
 **WebLogic 9.2 /10 – JVM-Start konfigurieren**
 
-1. Bearbeiten Sie die Datei &quot;startWebLogic.bat&quot;, die sich unter &quot;[WebLogic home]*/user_projects/domains/Adobe_Live_Cycle/bin&quot;befindet.
+1. Bearbeiten Sie die Datei &quot;startWebLogic.bat&quot;, die sich unter &quot;*&quot;befindet. [WebLogic-Homepage]*/user_projects/domains/Adobe_Live_Cycle/bin.
 1. Suchen Sie die Zeile JAVA_OPTS und fügen Sie Folgendes hinzu:
 
    ```as3

@@ -1,8 +1,8 @@
 ---
 title: PDF Generator-Konfigurationsdateien importieren und exportieren
-seo-title: PDF Generator-Konfigurationsdateien importieren und exportieren
+seo-title: Importing and exporting PDF Generator configuration files
 description: Erfahren Sie, wie Sie PDF Generator-Konfigurationsdateien importieren und exportieren.
-seo-description: Erfahren Sie, wie Sie PDF Generator-Konfigurationsdateien importieren und exportieren.
+seo-description: Learn how to import and export PDF Generator configuration files.
 uuid: 3367253b-d222-4c5f-9455-a1810d96112e
 contentOwner: admin
 content-type: reference
@@ -13,12 +13,12 @@ feature: PDF Generator
 exl-id: 57673410-b8f1-494e-b4a0-c6724bab643c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '378'
 ht-degree: 98%
 
 ---
 
-# PDF Generator-Konfigurationsdateien importieren und exportieren {#importing-and-exporting-pdf-generator-configuration-files}
+# PDF Generator-Konfigurationsdateien importieren und exportieren {#importing-and-exporting-pdf-generator-configuration-files}
 
 Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen, einschließlich der PDF-, Dateityp- und Sicherheitseinstellungen.
 
@@ -26,7 +26,7 @@ Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen,
 >
 >Sie können die Zeitlimiteinstellung für PDF Generator nicht durch Importieren einer benutzerdefinierten Datei „native2pdfconfig.xml“ ändern. Die Zeitlimiteinstellung in dieser Datei dient nur zu Informationszwecken und zeigt die aktuelle Einstellung in PDF Generator an. Informationen zum Ändern der Zeitlimiteinstellung finden Sie unter „Festlegen von Leistungsparametern für überwachte Ordner in PDF Generator“ unter [deInstallieren und Bereitstellen von AEM Forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
-## Eine aktuelle Konfigurationsdatei exportieren  {#export-your-current-configuration-file}
+## Eine aktuelle Konfigurationsdatei exportieren {#export-your-current-configuration-file}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
 1. Wählen Sie zum Exportieren von Einstellungen die passende Option aus:
@@ -38,7 +38,7 @@ Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen,
 
 1. Klicken Sie auf „Herunterladen“ und speichern Sie die XML-Datei am gewünschten Speicherort.
 
-## Eine Konfigurationsdatei importieren  {#import-a-configuration-file}
+## Eine Konfigurationsdatei importieren {#import-a-configuration-file}
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen,
 1. Wählen Sie „Vorhandene Konfigurationsdatei importieren“ aus.
 1. Um den Dateispeicherort im Feld „Konfigurationsdatei“ anzugeben, klicken Sie zuerst auf „Durchsuchen“, um die Datei zu lokalisieren und auszuwählen, und dann auf **Importieren**.
 
-## Alle Ebenen in der AutoCAD-Datei konvertieren  {#convert-all-layers-within-autocad-files}
+## Alle Ebenen in der AutoCAD-Datei konvertieren {#convert-all-layers-within-autocad-files}
 
 Standardmäßig konvertiert PDF Generator nicht alle in AutoCAD-Dateien enthaltenen Ebenen, sondern nur die Standardebene der Datei in PDF. Um alle Ebenen zu konvertieren, führen Sie folgendes Verfahren aus.
 
@@ -60,7 +60,7 @@ Standardmäßig konvertiert PDF Generator nicht alle in AutoCAD-Dateien enthalt
 
    Bei allen AutoCAD-Dateien, die mit der geänderten Konfigurationsdatei konvertiert werden, werden alle Ebenen konvertiert.
 
-## Konfiguration auf die ursprünglichen, mit PDF Generator installierten Einstellungen zurücksetzen  {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
+## Konfiguration auf die ursprünglichen, mit PDF Generator installierten Einstellungen zurücksetzen {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
 1. Wählen Sie „Konfiguration auf Standardeinstellungen zurücksetzen“ und klicken Sie auf „Importieren“.

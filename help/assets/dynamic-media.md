@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Dynamic Media
-seo-title: Arbeiten mit Dynamic Media
+seo-title: Working with Dynamic Media
 description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
-seo-description: Informationen zur Verwendung von Dynamic Media zum Bereitstellen von Assets für den Gebrauch in Web, Mobile und Social Media
+seo-description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
-feature: Asset-Management,Ausgabeformate
+feature: Asset Management,Renditions
 role: Admin,User
 source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '416'
 ht-degree: 90%
 
 ---
@@ -29,7 +29,7 @@ Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse, wie Zoom, Drehen u
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Einsatzmöglichkeiten für Dynamic Media   {#what-you-can-do-with-dynamic-media}
+## Einsatzmöglichkeiten für Dynamic Media {#what-you-can-do-with-dynamic-media}
 
 Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](managing-assets-touch-ui.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
 
@@ -52,7 +52,7 @@ Siehe auch [Einrichten von Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Informationen zu den Unterschieden zwischen der Verwendung von Dynamic Media und der Integration von Dynamic Media Classic mit AEM finden Sie unter [Dynamic Media Classic-Integration versus Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Informationen zu den Unterschieden zwischen der Verwendung von Dynamic Media und der Integration von Dynamic Media Classic in AEM finden Sie unter [Dynamic Media Classic-Integration versus Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Aktivierte und deaktivierte Dynamic Media-Funktion im Vergleich {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -62,7 +62,7 @@ Anhand der folgenden Merkmale können Sie erkennen, ob Dynamic Media aktiviert i
 * Bildsets, Rotationssets und Sets für gemischte Medien sind verfügbar.
 * PTIFF-Ausgabedarstellungen werden erstellt.
 
-Wenn Sie auf ein Bild-Asset klicken, unterscheidet sich die Ansicht des Assets von der von Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
+Wenn Sie auf ein Bild-Asset klicken, sieht die Ansicht des Assets in Dynamic Media anders aus [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media nutzt die On-Demand-HTML5-Viewer.
 
 ### Dynamische Ausgabedarstellungen {#dynamic-renditions}
 

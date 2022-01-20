@@ -1,6 +1,6 @@
 ---
 title: Assets-Anleitung
-description: In diesem Handbuch werden alle Aufgaben von  [!DNL Experience Manager] Assets behandelt, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
+description: Dieses Handbuch behandelt alle [!DNL Experience Manager] Asset-Aufgaben, wie das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 user-guide-title: Assets-Anleitung
 feature: Asset Management
 role: User,Architect,Admin
@@ -8,13 +8,13 @@ exl-id: 72b5e053-9307-4333-84e5-d4cc2b6bdecc
 source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 34%
+ht-degree: 35%
 
 ---
 
 # Assets-Anleitung
 
-In diesem Handbuch werden alle Aufgaben für [!DNL Experience Manager] Assets behandelt, z. B. das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
+Dieses Handbuch behandelt alle [!DNL Experience Manager] Asset-Aufgaben, wie das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 
 ## Wichtige [!DNL Experience Manager]-Artikel
 
@@ -30,16 +30,16 @@ In diesem Handbuch werden alle Aufgaben für [!DNL Experience Manager] Assets be
 | [Forms-Benutzerhandbuch](/help/forms/home.md) | In diesem Handbuch wird beschrieben, wie Sie digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren. |
 | [Communities-Benutzerhandbuch](/help/communities/home.md) | Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. |
 | [Administratorenanleitung](/help/sites-administering/home.md) | Wissenswertes zur Verwaltung von [!DNL Experience Manager] |
-| [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in [!DNL Experience Manager] erläutert. |
-| [Authoring-Handbuch für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in [!DNL Experience Manager] in der klassischen Benutzeroberfläche erläutert. |
-| [Screens-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Beschilderung zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
-| [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | Dieses Handbuch zeigt Ihnen die Grundlagen von [!DNL Experience Manager] . |
-| [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre [!DNL Experience Manager]-Instanz erstellen. |
-| [Benutzerhandbuch verwalten](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein [!DNL Experience Manager]-Projekt erfolgreich verwalten. |
+| [Authoring-Handbuch](/help/sites-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in [!DNL Experience Manager] . |
+| [Authoring-Handbuch für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) | In diesem Handbuch werden die Konzepte des Authoring in [!DNL Experience Manager]  in der klassischen Benutzeroberfläche. |
+| [Benutzerhandbuch für Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Erfahren Sie mehr über die Lösung für digitale Beschilderung zur Veröffentlichung dynamischer und interaktiver digitaler Erlebnisse. |
+| [Bereitstellungshandbuch für Benutzer](/help/sites-deploying/home.md) | In diesem Handbuch werden die Grundlagen von [!DNL Experience Manager] . |
+| [Benutzerhandbuch für Entwickler](/help/sites-developing/home.md) | Erfahren Sie, wie Sie Ihre [!DNL Experience Manager]  -Instanz. |
+| [Benutzerhandbuch verwalten](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie eine [!DNL Experience Manager]  Projekt erfolgreich. |
 | [Mobile-Benutzerhandbuch](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
 | [[!DNL Experience Manager]  Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In diesem Handbuch erfahren Sie, wie Sie benutzergenerierte Inhalte für Livefyre freigeben. |
 
-## Schlüssel [!DNL Experience Manager] Ressourcen
+## Schlüssel [!DNL Experience Manager]  resources
 
 * [[!DNL Experience Manager]  Tutorials](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html?lang=de)
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)

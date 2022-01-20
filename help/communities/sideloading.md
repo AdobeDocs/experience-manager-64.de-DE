@@ -1,8 +1,8 @@
 ---
 title: Komponenten-Sideloading
-seo-title: Komponenten-Sideloading
+seo-title: Component Sideloading
 description: Das Sideloading von Communities-Komponenten ist nützlich, wenn eine Webseite als einfache Einzelseitenanwendung konzipiert ist, die die Anzeige dynamisch ändert, je nachdem, was der Besucher der Site auswählt.
-seo-description: Das Sideloading von Communities-Komponenten ist nützlich, wenn eine Webseite als einfache Einzelseitenanwendung konzipiert ist, die die Anzeige dynamisch ändert, je nachdem, was der Besucher der Site auswählt.
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,14 +12,14 @@ discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 12fdc503-29b6-4970-a883-c22162f7a9eb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # Komponenten-Sideloading {#component-sideloading}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Das Sideloading von Communities-Komponenten ist nützlich, wenn eine Webseite als einfache Einzelseitenanwendung konzipiert ist, die die Anzeige dynamisch ändert, je nachdem, was der Besucher der Site ausgewählt hat.
 
@@ -33,7 +33,7 @@ Die Schritte zum dynamischen Hinzufügen von SCF-Komponenten sind:
 
 1. [Komponente zum DOM hinzufügen](#dynamically-add-component-to-dom)
 
-1. [Laden Sie die ](#sideload-by-invoking-scf) Komponente mit einer der beiden Methoden um:
+1. [Sideloaden der Komponente](#sideload-by-invoking-scf) Verwendung einer von zwei Methoden:
 
 * [Dynamische Integration](#dynamic-inclusion)
    * Alle dynamisch hinzugefügten Komponenten verstärken
@@ -42,7 +42,7 @@ Die Schritte zum dynamischen Hinzufügen von SCF-Komponenten sind:
 
 >[!NOTE]
 >
->Das Sideloading von [nicht vorhandenen Ressourcen](scf.md#add-or-include-a-communities-component) wird nicht unterstützt.
+>Sideloading [nicht vorhandene Ressourcen](scf.md#add-or-include-a-communities-component) wird nicht unterstützt.
 
 ## Dynamisches Hinzufügen einer Komponente zu DOM {#dynamically-add-component-to-dom}
 
@@ -52,11 +52,11 @@ Beim Hinzufügen der SCF-Komponente ist das am häufigsten zu verwendende Tag da
 
 Welches Tag verwendet wird, mindestens muss das Element dem normalen SCF-Stammelementmuster entsprechen, indem es die beiden folgenden Attribute enthält:
 
-* **data-component-**
-idDer effektive Pfad zur hinzugefügten Komponente
+* **data-component-id**
+Der effektive Pfad zur hinzugefügten Komponente
 
-* **data-scf-**
-componentDer resourceType der Komponente
+* **data-scf-component**
+Der resourceType der Komponente
 
 Im Folgenden finden Sie ein Beispiel einer hinzugefügten Kommentarkomponente:
 
@@ -85,6 +85,6 @@ Dynamisches Laden bietet Kontrolle über das Laden von SCF-Komponenten.
 
 Anstatt alle im DOM gefundenen SCF-Komponenten per Bootstrapping durchzuführen, können Sie eine bestimmte SCF-Komponente angeben, die mit dieser JavaScript-Methode geladen werden soll:
 
-SCF.addComponent(document.getElementById(*someId*));
+SCF.addComponent(document.getElementById(*someId*);
 
-Dabei ist *someId* der Wert des Attributs **data-component-id**.
+Wo *someId* ist der Wert der **data-component-id** -Attribut.

@@ -1,8 +1,8 @@
 ---
 title: Verknüpfen von URLs mit einer Web-Anwendung
-seo-title: Verknüpfen von URLs mit einer Web-Anwendung
+seo-title: Linking URLs to your Web Application
 description: Verknüpfen von URLs mit einer Web-Anwendung in Dynamic Media
-seo-description: Verknüpfen von URLs mit einer Web-Anwendung in Dynamic Media
+seo-description: How to link URLs to your web application in dynamic media
 uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 exl-id: e076349d-8b1a-487f-b982-9440d7de13b9
-feature: Konfiguration
+feature: Configuration
 role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1272'
 ht-degree: 96%
 
 ---
@@ -140,7 +140,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    Beispiel: Für die Registrierungs-ID `87654321|MyCompany` lautet der Name des Kunden `MyCompany`.
 
-1. Tippen Sie oben links auf der Seite auf **[!UICONTROL Cloud Service]s**, tippen Sie dann auf das AEM-Symbol und navigieren Sie zu **[!UICONTROL Allgemein > CRXDE Lite]**.
+1. Tippen Sie oben links auf der Seite auf **[!UICONTROL Cloud Service]s**, tippen Sie auf das AEM und navigieren Sie zu **[!UICONTROL Allgemein > CRXDE Lite]**.
 1. Kopieren Sie den gesamten Pfad für die Videoausgabedarstellung aus dem JCR (Java Content Repository).
 
    Der Pfad für die Videoausgabedarstellung kann zum Beispiel folgendermaßen aussehen:
@@ -181,7 +181,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    | Von Ihnen verwendetes Videobereitstellungsprotokoll | Zu verwendender Protokollselektor |
    |---|---|
-   | HTTP  <br> Wenn Sie HTTP (nicht sichere Videobereitstellung) verwenden, stellen Sie sicher, dass Sie in der Videodienst-URL, die Sie zuvor kopiert haben, HTTPS in HTTP ändern. | `public/` |
+   | HTTP <br> Wenn Sie HTTP (nicht sichere Videobereitstellung) verwenden, stellen Sie sicher, dass Sie in der Videodienst-URL, die Sie zuvor kopiert haben, HTTPS in HTTP ändern. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Kopieren Sie den vollständigen Video-Asset-Pfad in AEM, wie mit Dynamic Media verarbeitet. Der kopierte Video-Asset-Pfad wird in den nachfolgenden Schritten benötigt.

@@ -1,8 +1,8 @@
 ---
 title: Leistung des Anwendungsservers verbessern
-seo-title: Leistung des Anwendungsservers verbessern
+seo-title: Enhancing application server performance
 description: In diesem Dokument werden die optionalen Einstellungen beschrieben, die Sie zum Verbessern der Leistung des AEM Forms-Anwendungsservers konfigurieren können.
-seo-description: In diesem Dokument werden die optionalen Einstellungen beschrieben, die Sie zum Verbessern der Leistung des AEM Forms-Anwendungsservers konfigurieren können.
+seo-description: This document describes optional settings that you can configure to improve the performance of your AEM forms application server.
 uuid: 88d2f96a-3b59-410d-8160-20581d27acad
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 88f692de-f88b-4459-97e9-73506bf87525
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1863'
 ht-degree: 95%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 In diesem Abschnitt werden die optionalen Einstellungen beschrieben, die Sie zum Verbessern der Leistung des AEM Forms-Anwendungsservers konfigurieren können.
 
-## Datenquellen für Anwendungsserver konfigurieren  {#configuring-application-server-data-sources}
+## Datenquellen für Anwendungsserver konfigurieren {#configuring-application-server-data-sources}
 
 AEM Forms verwendet das AEM Forms-Repository als Datenquelle. Das AEM Forms-Repository speichert Anwendungselemente und zur Laufzeit können Dienste bei der Ausführung automatisierter Geschäftsprozesses Elemente aus dem Repository abrufen.
 
@@ -35,7 +35,7 @@ Sie können eine Vielzahl verschiedener Statistiken für jede JDBC-Datenquelleni
 
 Wenn der Administrator des Anwendungsservers die richtigen Einstellungen für den Verbindungspool ermittelt hat, sollten diese Angaben auch dem Datenbankadministrator mitgeteilt werden. Der Datenbankadministrator benötigt diese Informationen, da die Anzahl der Datenbankverbindungen gleich der Anzahl der Verbindungen im Verbindungspool für die Datenquelle ist. Führen Sie anschließend die nachfolgend beschriebenen Schritte zum Konfigurieren der Einstellungen für den Verbindungspool für Ihren Anwendungsserver und ihren Datenquellentyp durch.
 
-### Einstellungen für den Verbindungspool für WebLogic für Oracle und MySQL konfigurieren  {#configure-connection-pool-settings-for-weblogic-for-oracle-and-mysql}
+### Einstellungen für den Verbindungspool für WebLogic für Oracle und MySQL konfigurieren {#configure-connection-pool-settings-for-weblogic-for-oracle-and-mysql}
 
 1. Klicken Sie unter „Domain Structure“ auf Services > JDBC > Data Sources und anschließend im rechten Bereich auf IDP_DS.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarte „Configuration“ > „Connection Pool“ und geben Sie Werte in die folgenden Felder ein:
@@ -48,7 +48,7 @@ Wenn der Administrator des Anwendungsservers die richtigen Einstellungen für de
 1. Klicken Sie auf Save und dann auf Activate Changes.
 1. Starten Sie WebLogic Managed Server neu.
 
-### Einstellungen für den Verbindungspool für WebLogic für SQLServer konfigurieren  {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
+### Einstellungen für den Verbindungspool für WebLogic für SQLServer konfigurieren {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
 
 1. Klicken Sie unter „Change Center“ auf Lock &amp; Edit.
 1. Klicken Sie unter „Domain Structure“ auf „Services“ > „JDBC“ > „Data Sources“ und klicken Sie dann im rechten Bereich auf „EDC_DS“.
@@ -62,28 +62,28 @@ Wenn der Administrator des Anwendungsservers die richtigen Einstellungen für de
 1. Klicken Sie auf Save und dann auf Activate Changes.
 1. Starten Sie WebLogic Managed Server neu.
 
-### Einstellungen für den Verbindungspool für WebSphere für DB2 konfigurieren  {#configure-connection-pool-settings-for-websphere-for-db2}
+### Einstellungen für den Verbindungspool für WebSphere für DB2 konfigurieren {#configure-connection-pool-settings-for-websphere-for-db2}
 
 1. Klicken Sie in der Navigationsstruktur auf Resources > JDBC > JDBC Providers. Klicken Sie im rechten Bereich auf die von Ihnen erstellte Datenquelle – entweder DB2 Universal JDBC Driver Provider oder LiveCycle – db2 – IDP_DS.
 1. Klicken Sie unter „Additional Properties“ auf „Data sources“ und klicken Sie dann auf „IDP_DS“.
 1. Klicken Sie im nächsten Bildschirm unter „Additional Properties“ auf „Connection Pool Properties“ und geben Sie einen Wert in das Feld „Maximum Connections“ und in das Feld „Minimum Connections“ ein.
 1. Klicken Sie auf „OK“ oder „Apply“ und klicken Sie dann auf „Save directly to Master Configuration“.
 
-### Einstellungen für den Verbindungspool für WebSphere für Oracle konfigurieren  {#configure-connection-pool-settings-for-websphere-for-oracle}
+### Einstellungen für den Verbindungspool für WebSphere für Oracle konfigurieren {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. Klicken Sie in der Navigationsstruktur auf Resources > JDBC > JDBC Providers. Klicken Sie im rechten Bereich auf die von Ihnen erstellte Oracle JDBC Driver-Datenquelle.
 1. Klicken Sie unter „Additional Properties“ auf „Data sources“ und klicken Sie dann auf „IDP_DS“.
 1. Klicken Sie im nächsten Bildschirm unter „Additional Properties“ auf „Connection Pool Properties“ und geben Sie einen Wert in das Feld „Maximum Connections“ und in das Feld „Minimum Connections“ ein.
 1. Klicken Sie auf „OK“ oder „Apply“ und klicken Sie dann auf „Save directly to Master Configuration“.
 
-### Einstellungen für den Verbindungspool für WebSphere für SQLServer konfigurieren  {#configure-connection-pool-settings-for-websphere-for-sqlserver}
+### Einstellungen für den Verbindungspool für WebSphere für SQLServer konfigurieren {#configure-connection-pool-settings-for-websphere-for-sqlserver}
 
 1. Klicken Sie in der Navigationsstruktur auf „Resources“ > „JDBC“ > „JDBC Providers“ und anschließend im rechten Bereich auf die erstellte Datenquelle „User-Defined JDBC Driver“.
 1. Klicken Sie unter „Additional Properties“ auf „Data sources“ und klicken Sie dann auf „IDP_DS“.
 1. Klicken Sie im nächsten Bildschirm unter „Additional Properties“ auf „Connection Pool Properties“ und geben Sie einen Wert in das Feld „Maximum Connections“ und in das Feld „Minimum Connections“ ein:
 1. Klicken Sie auf „OK“ oder „Apply“ und klicken Sie dann auf „Save directly to Master Configuration“.
 
-## Optimieren von Inline-Dokumenten und Auswirkungen auf den JVM-Speicher  {#optimizing-inline-documents-and-impact-on-jvm-memory}
+## Optimieren von Inline-Dokumenten und Auswirkungen auf den JVM-Speicher {#optimizing-inline-documents-and-impact-on-jvm-memory}
 
 Wenn Sie in der Regel relativ kleine Dokumente verarbeiten, können Sie die Leistung in Bezug auf die Übertragungsgeschwindigkeit von Dokumenten und den Speicherplatz optimieren. Implementieren Sie zu diesem Zweck die nachfolgenden AEM Forms-Produktkonfigurationen:
 
@@ -92,7 +92,7 @@ Wenn Sie in der Regel relativ kleine Dokumente verarbeiten, können Sie die Leis
 
 Die Inline-Maximalgröße und die Speicherordner (AEM Forms-Speicherordner für temporäre Dateien und Ordner des globalen Dokumentenspeichers) werden in Administration Console konfiguriert.
 
-### Dokumentgröße und Inline-Maximalgröße  {#document-size-and-maximum-inline-size}
+### Dokumentgröße und Inline-Maximalgröße {#document-size-and-maximum-inline-size}
 
 Wenn die Größe eines Dokuments, das von AEM Forms zur Verarbeitung gesendet wird, kleiner gleich der standardmäßigen Maximalgröße für Inline-Dokumente ist, wird es als Inline-Dokument auf dem Server gespeichert und als Adobe-Dokumentobjekt serialisiert. Die Inline-Speicherung von Dokumenten kann die Leistung erheblich steigern. Wenn Sie jedoch den Arbeitsablauf für Formulare verwenden, wird der Inhalt möglicherweise zur einfacheren Verfolgung auch in der Datenbank gespeichert. Eine Erhöhung der Inline-Maximalgröße kann sich also auf die Datenbankgröße auswirken.
 
@@ -121,7 +121,7 @@ Wenn der Dokumentinhalt kleiner als die Inline-Maximalgröße ist, wird er in de
 >
 >Der Standardwert für die Inline-Maximalgröße beträgt 65.536 Bytes.
 
-### Maximale JVM-Heap-Größe  {#jvm-maximum-heap-size}
+### Maximale JVM-Heap-Größe {#jvm-maximum-heap-size}
 
 Wenn die Inline-Maximalgröße erhöht wird, ist mehr Speicher zum Ablegen der serialisierten Dokumente erforderlich. Daher muss in der Regel auch die JVM-Einstellung „Maximale Heap-Größe“ erhöht werden.
 
@@ -149,20 +149,20 @@ Dies kann beispielsweise der Fall sein, wenn sich der JVM-Heap nach der Ausführ
 
 Um die Heap-Fragmentierung zu berücksichtigen, darf die Inline-Dokumentgröße auf nicht mehr als 0,1 % der gesamten Heap-Größe eingestellt werden. Mit einer maximalen JVM-Heap-Größe von 512 MB kann beispielsweise eine Inline-Maximalgröße von 512 MB x 0,001 = 0,512 MB oder 512 KB unterstützt werden.
 
-## Optimierungen für den WebSphere Application Server  {#websphere-application-server-enhancements}
+## Optimierungen für den WebSphere Application Server {#websphere-application-server-enhancements}
 
 In diesem Abschnitt werden Einstellungen beschrieben, die spezifisch für eine WebSphere Application Server-Umgebung gelten.
 
-### JVM zugewiesenen maximalen Arbeitsspeicher erhöhen  {#increasing-the-maximum-memory-allocated-to-the-jvm}
+### JVM zugewiesenen maximalen Arbeitsspeicher erhöhen {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
 Wenn Sie Configuration Manager ausführen oder versuchen, Enterprise JavaBeans-(EJB-)Bereitstellungscode über das Befehlszeilen-Dienstprogramm *ejbdeploy* zu erstellen und ein Fehler wegen ungenügenden Arbeitsspeichers auftritt, erhöhen Sie die Größe des Speichers, welcher der JVM zugewiesen ist.
 
-1. Bearbeiten Sie das Skript ejbdeploy im Ordner *[appserver root]*/deploytool/itp/ :
+1. Bearbeiten Sie das ejbdeploy-Skript im *[Anwendungsserver-Stammordner]* Ordner /deploytool/itp/ :
 
    * (Windows) `ejbdeploy.bat`
    * (Linux und UNIX) `ejbdeploy.sh`
 
-1. Suchen Sie den Parameter `-Xmx256M` und ändern Sie ihn in einen höheren Wert, z. B. `-Xmx1024M`.
+1. Suchen Sie die `-Xmx256M` -Parameter und ändern Sie ihn in einen höheren Wert, z. B. `-Xmx1024M`.
 1. Speichern Sie die Datei.
 1. Führen Sie den Befehl `ejbdeploy` aus oder führen Sie mit dem Configuration Manager eine erneute Bereitstellung aus.
 
@@ -172,16 +172,16 @@ In diesem Abschnitt werden Einstellungen beschrieben, die spezifisch für eine M
 
 Durch die Verwendung von Verbindungspools bei der Suchverbindung kann die Anzahl der benötigten Anschlüsse um bis zu 50 % verringert werden. Der Grund dafür ist, dass diese Verbindung immer dieselben Berechtigungen für eine bestimmte Domäne verwendet und darüber hinaus der Kontext und die entsprechenden Objekte ausdrücklich geschlossen werden.
 
-### Windows Server für die Verwendung von Verbindungspools konfigurieren  {#configure-your-windows-server-for-connection-pooling}
+### Windows Server für die Verwendung von Verbindungspools konfigurieren {#configure-your-windows-server-for-connection-pooling}
 
 1. Klicken Sie auf „Start“ > „Ausführen“, um den Registrierungs-Editor zu starten. Geben Sie dann in das Feld „Öffnen“ den Befehl `regedit` ein und klicken Sie auf „OK“.
-1. Navigieren Sie zum Registrierungsschlüssel `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters` .
+1. Wechseln Sie zum Registrierungsschlüssel `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
 1. Suchen Sie im rechten Bereich des Registrierungs-Editors den Wertnamen „TcpTimedWaitDelay“. Falls der Name fehlt, wählen Sie in der Menüleiste den Befehl „Bearbeiten“ > „Neu“ > „DWORD-Wert“ aus, um den Namen hinzuzufügen.
 1. Geben Sie in das Feld „Name“`TcpTimedWaitDelay`
 
    >[!NOTE]
    >
-   >Wenn kein blinkender Cursor und `New Value #` im Feld angezeigt werden, klicken Sie mit der rechten Maustaste in das rechte Bedienfeld, wählen Sie &quot;Umbenennen&quot;und geben Sie im Feld &quot;Name&quot;`TcpTimedWaitDelay`*.* ein.
+   >Wenn kein blinkender Cursor angezeigt wird und `New Value #` Klicken Sie im Feld mit der rechten Maustaste in das rechte Bedienfeld, wählen Sie Umbenennen und geben Sie im Feld &quot;Name&quot;Folgendes ein: `TcpTimedWaitDelay`*.*
 
 1. Wiederholen Sie Schritt 4 für die Wertnamen „MaxUserPort“, „MaxHashTableSize“ und „MaxFreeTcbs“.
 1. Doppelklicken Sie im rechten Bereich, um den Wert „TcpTimedWaitDelay“ festzulegen. Wählen Sie unter „Basis“ die Option „Dezimal“ und geben Sie in das Feld „Wert“ den Wert `30`.

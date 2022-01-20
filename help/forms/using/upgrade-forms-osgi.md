@@ -1,8 +1,8 @@
 ---
 title: Aktualisierung auf AEM 6.4 Forms
-seo-title: Aktualisierung auf AEM 6.4 Forms
+seo-title: Upgrade to AEM 6.4 Forms
 description: 'Sie können direkt von AEM 6.1 Forms, AEM 6.2 Forms und LiveCycle ES4 SP1 auf AEM 6.3 Forms aktualisieren. '
-seo-description: 'Sie können direkt von AEM 6.1 Forms, AEM 6.2 Forms und LiveCycle ES4 SP1 auf AEM 6.3 Forms aktualisieren. '
+seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '827'
 ht-degree: 86%
 
 ---
@@ -31,7 +31,7 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
    1. Installieren Sie das aktuelle Service Pack und Patches für AEM 6.2 Forms bzw. AEM 6.3 Forms. Weitere Details finden Sie unter:
 
       * [AEM 6.2 – Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html)
-      * [AEM 6.3 – Versionshinweise](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
+      * [AEM 6.3 – Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html)
       * [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)
    1. Bereiten Sie die Quellinstanz für die Aktualisierung vor. Ausführliche Anweisungen finden Sie im Artikel [Aktualisieren auf AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance).
    1. Laden Sie [AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software) herunter.
@@ -39,13 +39,13 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. Aktualisieren Sie Ihre AEM-Instanz auf AEM 6.3. Eine schrittweise Anleitung finden Sie unter [Aktualisieren auf AEM 6.4](/help/sites-deploying/upgrade.md).
+   1. Aktualisieren Sie Ihre AEM-Instanz auf AEM 6.3. Eine schrittweise Anleitung finden Sie unter [Upgrade auf AEM 6.4](/help/sites-deploying/upgrade.md).
 
       Bevor Sie mit den nächsten Schritten fortfahren, warten Sie, bis die Nachrichten ServiceEvent REGISTERED und ServiceEvent UNREGISTERED ServiceEvent nicht mehr in der Datei &lt;crx-repository>/error.log angezeigt werden.
 
       >[!NOTE]
       >
-      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. Die Bundles sind unter `https://[server]:[port]/system/console/` aufgeführt.
+      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. Die Bundles sind unter `https://[server]:[port]/system/console/`.
 
 
 1. Installieren des AEM Forms-Add-on-Pakets. Dies umfasst die folgenden Schritte:
@@ -54,12 +54,12 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
    1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
    1. Im Abschnitt **[!UICONTROL Filter]**:
       1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-      1. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads suchen]** verwenden, um die Ergebnisse zu filtern.
-   1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem, wählen Sie **[!UICONTROL Endbenutzer-Lizenzbedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
+      1. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die **[!UICONTROL Suchdownloads]** Option zum Filtern der Ergebnisse.
+   1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
    1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
    1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-      Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+      Sie können das Paket auch über den direkten Link herunterladen, der unter [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) Artikel.
 
       >[!NOTE]
       >
@@ -115,4 +115,4 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
 
 ## AEM 6.0 Forms und AEM 6.1 Forms > AEM 6.4 Forms {#upgrade-aem-forms-60-61-to-64}
 
-Die direkte Aktualisierung von **AEM 6.0 Forms** und **AEM 6.1 Forms** auf AEM 6.4 Forms ist nicht verfügbar.  Führen Sie ein Zwischenupgrade von [auf AEM 6.2 Forms](/help/forms/using/upgrade.md) oder [durch, um auf AEM 6.3 Forms](/help/forms/using/upgrade.md) zu aktualisieren und dann von AEM 6.2 Forms oder AEM 6.3 Forms auf AEM 6.4 zu aktualisieren.
+Die direkte Aktualisierung von **AEM 6.0 Forms** und **AEM 6.1 Forms** auf AEM 6.4 Forms ist nicht verfügbar.  Zwischenergebnis [Upgrade auf AEM 6.2 Forms](/help/forms/using/upgrade.md) oder [Upgrade auf AEM 6.3 Forms](/help/forms/using/upgrade.md) und dann von AEM 6.2 Forms oder AEM 6.3 Forms auf AEM 6.4 Forms aktualisieren.

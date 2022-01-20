@@ -13,7 +13,7 @@ exl-id: b0e579a4-f5bd-4a55-a003-0496224bc940
 source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
 source-wordcount: '1789'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -92,7 +92,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Ermöglicht die Eingabe einer Vanity-URL für diese Seite, sodass Sie eine kürzere bzw. aussagekräftigere URL verwenden können.
 
-   Wenn die Vanity-URL beispielsweise auf w `elcome`auf die Seite gesetzt ist, die durch den Pfad / `v1.0/startpage`für die Website h `ttp://example.com,` identifiziert wird, wäre h `ttp://example.com/welcome`die Vanity-URL von h `ttp://example.com/content/v1.0/startpage`
+   Wenn die Vanity-URL beispielsweise auf w `elcome`zur Seite, die durch den Pfad identifiziert wird / `v1.0/startpage`für die Website h `ttp://example.com,` dann h `ttp://example.com/welcome`wäre die Vanity-URL von h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -124,10 +124,10 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Geben Sie einen Alias an, der für diese Seite verwendet werden soll.
 
-   * Wenn Sie beispielsweise den Alias `private` für die Seite `/content/wknd/us/en/magazine/members-only` definieren, kann auf diese Seite auch über `/content/wknd/us/en/magazine/private` zugegriffen werden.
-   * Beim Erstellen eines Alias wird die `sling:alias`-Eigenschaft auf dem Seitenknoten festgelegt, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt.
-   * Seiten, auf die über Alias im Editor zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen ](/help/sites-authoring/publishing-pages.md) im Editor sind nur für Seiten verfügbar, die über ihre tatsächlichen Pfade aufgerufen werden.
-   * Weitere Informationen finden Sie unter [Lokalisierte Seitennamen unter SEO und URL-Verwaltung Best Practices](/help/managing/seo-and-url-management.md#localized-page-names)
+   * Wenn Sie beispielsweise einen Alias von `private` für die Seite `/content/wknd/us/en/magazine/members-only`, kann diese Seite auch über `/content/wknd/us/en/magazine/private`.
+   * Durch die Erstellung eines Alias wird die Eigenschaft `sling:alias`, die sich nur auf die Ressource und nicht auf den Repository-Pfad auswirkt, auf dem Seitenknoten festgelegt.
+   * Seiten, auf die im Editor über Aliasnamen zugegriffen wird, können nicht veröffentlicht werden. [Veröffentlichungsoptionen](/help/sites-authoring/publishing-pages.md) im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
+   * Weitere Informationen finden Sie unter [Lokalisierte Seitennamen unter Best Practices für SEO und URL-Verwaltung](/help/managing/seo-and-url-management.md#localized-page-names)
 
 * **Zugelassene Vorlagen**
 
@@ -141,7 +141,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    >[!CAUTION]
    >
-   >Die Registerkarte **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions)** ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem Vorhandensein des `granite:AuthenticationRequired`-Mixins. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft cq:cugEnabled basieren, wird unter **Authentifizierungspflicht** eine Warnmeldung angezeigt und die Option kann nicht bearbeitet werden. Die [Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions) sind auch nicht bearbeitbar.
+   >Die **[Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions)** -Registerkarte ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem Vorhandensein der `granite:AuthenticationRequired` Mixin. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft cq:cugEnabled basieren, wird eine Warnmeldung unter **Authentifizierungspflicht** und die Option nicht bearbeitbar ist, wird die [Berechtigungen](/help/sites-authoring/editing-page-properties.md#permissions) bearbeitbar sein.
    >
    >
    >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
@@ -203,14 +203,14 @@ Definieren Sie die Experience Fragment-Variante, die zum Generieren von Metadate
 
    >[!CAUTION]
    >
-   >Die Registerkarte **Berechtigungen** ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem Vorhandensein des `granite:AuthenticationRequired`-Mixins. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt und die CUG-Berechtigungen sind nicht bearbeitbar, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
+   >Die **Berechtigungen** -Registerkarte ermöglicht die Bearbeitung von CUG-Konfigurationen basierend auf dem Vorhandensein der `granite:AuthenticationRequired` Mixin. Wenn Seitenberechtigungen mit veralteten CUG-Konfigurationen konfiguriert werden, die auf dem Vorhandensein der Eigenschaft `cq:cugEnabled` basieren, wird eine Warnmeldung angezeigt und die CUG-Berechtigungen sind nicht bearbeitbar, ebenso wenig wie die Authentifizierungspflicht auf der Registerkarte [Erweitert](/help/sites-authoring/editing-page-properties.md#advanced).
    >
    >
    >In diesem Fall müssen die CUG-Berechtigungen in der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) bearbeitet werden.
 
    >[!NOTE]
    >
-   >Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzern den Zugriff zu verwehren. Verwenden Sie dazu stattdessen den CRX-Explorer. Weitere Informationen finden Sie im Dokument [Administration für Benutzer-, Gruppen- und Zugriffsberechtigungen](/help/sites-administering/user-group-ac-admin.md) .
+   >Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzern den Zugriff zu verwehren. Verwenden Sie dazu stattdessen den CRX-Explorer. Siehe Dokument . [Administration von Benutzern, Gruppen und Zugriffsberechtigungen](/help/sites-administering/user-group-ac-admin.md) für weitere Informationen.
 
 ### Blueprint {#blueprint}
 
@@ -244,7 +244,7 @@ Sie können Seiteneigenschaften an folgenden Stellen definieren:
 
    * mithilfe der Option **Seiteninformationen** (anschließend **Eigenschaften öffnen**)
 
-### In der Sites-Konsole (einzelne Seite)  {#from-the-sites-console-single-page}
+### In der Sites-Konsole (einzelne Seite) {#from-the-sites-console-single-page}
 
 durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften festzulegen:
 
@@ -271,14 +271,14 @@ Beim Bearbeiten einer Seite können Sie mithilfe von **Seiteninformationen** die
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Wählen Sie **Eigenschaften öffnen** aus. Daraufhin wird ein Dialogfeld geöffnet, in dem Sie die Eigenschaften bearbeiten können, sortiert nach der entsprechenden Registerkarte. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
+1. Auswählen **Eigenschaften öffnen** und ein Dialogfeld wird geöffnet, in dem Sie die Eigenschaften bearbeiten können, sortiert nach der entsprechenden Registerkarte. Die folgenden Schaltflächen stehen rechts in der Symbolleiste zur Verfügung:
 
    * **Abbrechen**
    * **Speichern und schließen**
 
 1. Mit der Schaltfläche **Speichern und schließen** können Sie Änderungen speichern.
 
-### In der Sites-Konsole (mehrere Seiten)  {#from-the-sites-console-multiple-pages}
+### In der Sites-Konsole (mehrere Seiten) {#from-the-sites-console-multiple-pages}
 
 In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seiteneigenschaften mithilfe der **Ansichtseigenschaften** anzeigen und/oder bearbeiten. Dies wird als Massenbearbeitung von Seiteneigenschaften bezeichnet.
 
@@ -295,7 +295,7 @@ Sie können mehrere Seiten zur Massenbearbeitung auf verschiedene Arten auswähl
 
 ![screen_shot_2018-03-22at100039](assets/screen_shot_2018-03-22at100039.png)
 
-Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
+Nach Auswahl der Seiten und anschließendes Klicken oder Tippen auf die **Eigenschaften** -Option werden die Masseneigenschaften angezeigt:
 
 ![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 

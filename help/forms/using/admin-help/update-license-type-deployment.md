@@ -1,8 +1,8 @@
 ---
 title: Lizenztyp für die Bereitstellung aktualisieren
-seo-title: Lizenztyp für die Bereitstellung aktualisieren
+seo-title: Update the license type for the deployment
 description: Aktualisieren Sie den Lizenztyp für die Bereitstellung, indem Sie die Seite „Lizenz ändern“ in der Administration Console verwenden.
-seo-description: Aktualisieren Sie den Lizenztyp für die Bereitstellung, indem Sie die Seite „Lizenz ändern“ in der Administration Console verwenden.
+seo-description: Update the license type for the deployment by using the Change License page in administration console.
 uuid: 0152635e-2c00-4944-b9b6-64b368589a91
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
 exl-id: 07671470-59dd-4290-be9a-465fcd89ac2d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '270'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Auf der Seite „Lizenz ändern“ werden Informationen über Ihre Lizenz angeze
 >
 >Die Änderung der Lizenz wird auf alle bereitgestellten Module angewendet. Bevor Sie den Lizenztyp ändern, heben Sie die Bereitstellung aller nicht lizenzierten Module auf. Wählen Sie nicht den Lizenztyp „Produktion“ aus, wenn die Liste bereitgestellter Module andere Module enthält als die, die Sie von Adobe erworben haben.
 
-## Aktualisieren des Lizenztyps  {#update-the-license-type}
+## Aktualisieren des Lizenztyps {#update-the-license-type}
 
 1. Klicken Sie in Administration Console auf „Lizenzieren“.
 1. Lesen Sie den AEM Forms-Endbenutzerlizenzvertrag, wählen Sie, wenn Sie zustimmen, „Ich akzeptiere die Bedingungen der Lizenzvereinbarung“ und klicken Sie auf „Weiter“.

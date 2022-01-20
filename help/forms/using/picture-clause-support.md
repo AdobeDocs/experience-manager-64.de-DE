@@ -1,8 +1,8 @@
 ---
 title: Unterstützung der Picture-Klausel für HTML5-Formulare
-seo-title: Unterstützung der Picture-Klausel für HTML5-Formulare
+seo-title: Picture clause support for HTML5 forms
 description: HTML5-Formulare unterstützen die XFA-Picture-Klausel für Anzeigewerte und formatierte Werte für Datumsangaben, Text und numerische Symbole.
-seo-description: HTML5-Formulare unterstützen die XFA-Picture-Klausel für Anzeigewerte und formatierte Werte für Datumsangaben, Text und numerische Symbole.
+seo-description: HTML5 forms supports XFA Picture clause for display value and formatted value for date, text, and numeric symbols.
 uuid: ca5074ce-8219-4f27-a37c-b1f0dca4ce03
 contentOwner: robhagat
 content-type: reference
@@ -13,8 +13,8 @@ feature: Mobile Forms
 exl-id: b63758f1-b375-4c05-bd53-69e0346733c6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 96%
+source-wordcount: '612'
+ht-degree: 95%
 
 ---
 
@@ -93,7 +93,7 @@ Unterstützter Ausdruck für Datums-Picture-Klausel:
  </tbody>
 </table>
 
-## Numerische Picture-Klausel  {#numeric-picture-clause}
+## Numerische Picture-Klausel {#numeric-picture-clause}
 
 HTML5-Formulare unterstützen numerische Picture-Symbole. Bei dieser Unterstützung besteht allerdings ein Unterschied zwischen PDF-Formularen und HTML-Formularen.
 
@@ -200,7 +200,7 @@ Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML Forms** s
  </tbody>
 </table>
 
-## Text-Picture-Klausel  {#text-picture-clause}
+## Text-Picture-Klausel {#text-picture-clause}
 
 HTML5-Formulare unterstützen die folgenden Text-Picture-Klausel-Ausdrücke:
 

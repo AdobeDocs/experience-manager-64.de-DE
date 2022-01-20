@@ -1,19 +1,19 @@
 ---
 title: Adaptive Formulare mithilfe des XML-Schemas erstellen
-seo-title: Adaptive Formulare mithilfe des XML-Schemas erstellen
+seo-title: Creating adaptive forms using XML Schema
 description: Adaptive Formulare können ein XML-Schema als Formularmodell verwenden, sodass Sie vorhandene XSD-Vorlagen nutzen können, um adaptive Formulare zu erstellen. Sie können Schemaelemente per Drag & Drop von XSD in Ihr adaptives Formular verschieben.
-seo-description: Adaptive Formulare können ein XML-Schema als Formularmodell verwenden, sodass Sie vorhandene XSD-Vorlagen nutzen können, um adaptive Formulare zu erstellen. Sie können Schemaelemente per Drag & Drop von XSD in Ihr adaptives Formular verschieben.
+seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 92%
+source-wordcount: '1044'
+ht-degree: 93%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 ## Voraussetzungen {#prerequisites}
 
-Für das Authoring eines adaptiven Formulars mit einem XML-Schema als Formularmodell sind grundlegende Kenntnisse zu XML-Schemata erforderlich. Außerdem wird empfohlen, den folgenden Inhalt vor diesem Artikel durchzulesen.
+Für das Authoring eines adaptiven Formulars mit einem XML-Schema als Formularmodell sind grundlegende Kenntnisse zu XML-Schemata erforderlich. Außerdem wird empfohlen, folgenden Inhalt vor diesem Artikel durchzulesen.
 
 * [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md)
 * [XML-Schema](https://www.w3.org/TR/xmlschema-2/)
@@ -76,7 +76,7 @@ Diese Zuordnung von XML-Elementen zu Komponenten adaptiver Formulare sieht wie f
   </tr> 
   <tr> 
    <td>Jedes Element mit komplexem Typ</td> 
-   <td>Fenster</td> 
+   <td>Bedienfeld</td> 
   </tr> 
  </tbody> 
 </table>
@@ -129,7 +129,7 @@ Im Folgenden finden Sie ein Beispiel eines XML-Schemas.
 >
 >Stellen Sie sicher, dass das XML-Schema nur ein Stammelement hat. Ein XML-Schema mit mehreren Stammelementen wird nicht unterstützt.
 
-## Hinzufügen von speziellen Eigenschaften zu Feldern mit dem XML-Schema {#adding-special-properties-to-fields-using-xml-schema}
+## Hinzufügen spezieller Eigenschaften zu Feldern mithilfe eines XML-Schemas {#adding-special-properties-to-fields-using-xml-schema}
 
 Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezielle Eigenschaften zu den Feldern des zugehörigen adaptiven Formulars hinzuzufügen.
 
@@ -142,7 +142,7 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
   </tr> 
   <tr> 
    <td><code>use=required </code></td> 
-   <td>Markiert ein Pflichtfeld<br /> </td> 
+   <td>Markiert ein Feld als Pflichtfeld<br /> </td> 
    <td>Attribut</td> 
   </tr> 
   <tr> 
@@ -172,8 +172,7 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
 >* Einfügen eines Leerzeichens bei Binnenmajuskeln.
 
 >
->
-Wenn Sie beispielsweise das Schemaelement `userFirstName` hinzufügen, lautet die im adaptiven Formular generierte Beschriftung `User First Name`.
+>Wenn Sie beispielsweise die `userFirstName` Schemaelement, wird die im adaptiven Formular generierte Beschriftung `User First Name`.
 
 ## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -244,7 +243,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
   <tr> 
    <td><p><code>minLength</code></p> </td> 
    <td><p>Zeichenfolge</p> </td> 
-   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich Null sein.</p> </td> 
+   <td><p>Legt die zulässige Mindestanzahl von Zeichen in einer Komponente fest. Die minimale Länge muss größer oder gleich null sein.</p> </td> 
    <td> 
     <ul> 
      <li>Textfeld</li> 
@@ -274,7 +273,7 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
    <td><p>Legt die zulässige Höchstzahl von Dezimalstellen in einer Komponente fest. fractionDigits muss größer oder gleich null sein.</p> </td> 
    <td> 
     <ul> 
-     <li> Numerisches Feld mit Datentyp "float"oder "decimal"</li> 
+     <li> Numerisches Feld mit Datentyp „Gleitkomma“ oder „Dezimal“.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -289,31 +288,31 @@ Sie können die folgenden Einschränkungen zu XML-Schemaelementen hinzufügen, u
  </tbody> 
 </table>
 
-## Häufig gestellte Fragen {#frequently-asked-questions}
+## Häufig gestellte Fragen  {#frequently-asked-questions}
 
 **Woher weiß ich, welches Element in der Baumstruktur mit welchem XML-Element verknüpft ist?**
 
-Wenn Sie in der Inhaltssuche auf ein Element doppelklicken, zeigt ein Popup-Fenster einen Feldnamen und eine Eigenschaft mit der Bezeichnung `bindRef` an. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
+Wenn Sie in der Inhaltssuche auf ein Element doppelklicken, wird in einem Popup-Fenster ein Feldname und eine Eigenschaft mit dem Namen `bindRef`. Diese Eigenschaft ordnet das Baumstrukturelement dem Element oder Attribut im Schema zu.
 
 ![Ein bindref-Feld eines XML-Schemaelements](assets/dblclick.png)
 
-Das Feld bindRef</code> zeigt die Verknüpfung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
+bindRef</code> zeigt die Verknüpfung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
 
 >[!NOTE]
 >
->Attribute haben ein `@` -Symbol in ihrem `bindRef`Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
+>Attribute haben eine `@` in ihrem `bindRef`-Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
 
-**Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von minOccours oder maxOccurs ist größer als 1)?**
+**Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von „minOccurs“ oder „maxOccurs“ ist größer als 1)?**
 
-In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
+In einem wiederholbaren Teilformular müssen Sie das gesamte Teilformular verwenden. Wenn Sie nur einzelne Felder nutzen möchten, verwenden Sie die gesamte Struktur und löschen Sie unerwünschte Felder.
 
 **Ich habe eine lange komplexe Struktur in der Inhaltssuche. Wie kann ich ein bestimmtes Element suchen?**
 
 Es gibt zwei Optionen:
 
-* Blättern Sie durch die Baumstruktur
+* Scrollen Sie durch die Baumstruktur
 * Verwenden Sie das Suchfeld, um ein Element zu finden
 
 **Was ist bindRef?**
 
-`bindRef` ist die Verbindung zwischen einer Komponente eines adaptiven Formulars und einem Schemaelement oder -attribut. Dieses Element gibt den `XPath` vor, in dem der Wert, der von dieser Komponente oder diesem Feld erfasst wird, in der Ausgabe-XML verfügbar ist. Ein `bindRef` wird auch verwendet, wenn ein Feldwert aus vorausgefüllter XML im Voraus gefüllt wird.
+`bindRef` ist die Verbindung zwischen einer Komponente eines adaptiven Formulars und einem Schemaelement oder -attribut. Dieses Element gibt den `XPath` vor, in dem der Wert, der von dieser Komponente oder diesem Feld erfasst wird, in der Ausgabe-XML verfügbar ist. Ein `bindRef` wird auch verwendet, wenn ein Feldwert aus (vorausgefüllter) XML im Voraus gefüllt wird.

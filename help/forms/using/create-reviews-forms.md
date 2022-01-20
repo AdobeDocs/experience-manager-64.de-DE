@@ -1,106 +1,106 @@
 ---
-title: Erstellen und Verwalten von Überprüfungen von Assets in Formularen
-seo-title: Erstellen und Verwalten von Überprüfungen von Assets in Formularen
-description: 'Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder mehrere Überprüfer zu einem Asset, das in einem Formular verfügbar ist, Kommentare abgeben können. '
-seo-description: 'Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder mehrere Überprüfer zu einem Asset, das in einem Formular verfügbar ist, Kommentare abgeben können. '
+title: Erstellen und Verwalten von Assetüberprüfungen in Formularen
+seo-title: Creating and managing reviews for assets in forms
+description: 'Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Reviewer Kommentare zu einem Asset machen kann, das in einem Formular verfügbar ist. '
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 6b1aa54f-d03c-483a-a398-6522b285194c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: ff113288-a69a-4083-82a6-4c65c5062411
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 85%
+source-wordcount: '659'
+ht-degree: 97%
 
 ---
 
-# Erstellen und Verwalten von Überprüfungen von Assets in Formularen {#creating-and-managing-reviews-for-assets-in-forms}
+# Erstellen und Verwalten von Assetüberprüfungen in Formularen {#creating-and-managing-reviews-for-assets-in-forms}
 
 ## Überprüfung {#review}
 
-Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem ein oder mehrere Überprüfer zu einem Asset, das in einem Formular verfügbar ist, Kommentare abgeben können.
+Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens ein Reviewer Kommentare zu einem Asset machen kann, das in einem Formular verfügbar ist.
 
 ## Einrichten einer Überprüfung {#setting-up-a-review}
 
-1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
-1. Wenn für das Asset keine Überprüfung ausgeführt wird, wird in der Aktionsleiste das Symbol zum Starten einer Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Klicken Sie auf das Symbol Überprüfung starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
-1. Geben Sie die folgenden Informationen ein:
+1. Gehen Sie zur Registerkarte „Formulare“ und wählen Sie ein Formular aus.
+1. Wenn für das Asset derzeit keine Überprüfung durchgeführt wird, wird in der Aktionsleiste das Symbol ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) zum Starten einer Überprüfung angezeigt. Klicken Sie auf das Symbol zum Starten einer Überprüfung (![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)).
+1. Geben Sie folgende Informationen ein:
 
-   * Überprüfungsname: obligatorisch – kann alphanumerische Zeichen, Bindestriche oder Unterstriche enthalten.
-   * Überprüfungsbeschreibung: optional – Beschreibung des Zwecks/des Inhalts der Überprüfung.
-   * Überprüfungstermin: optional – Datum, an dem die Überprüfung beendet wird. Wenn der Termin bereits abgelaufen ist, wird die Aufgabe als „überfällig“ angezeigt.
-   * Überprüfer: Es ist mindestens 1 erforderlich. Verwenden Sie das Kombinationsfeld, um Überprüfer hinzuzufügen. Beim Eingeben eines Namens werden alle passenden Namen angezeigt. Wählen Sie einen Namen aus und klicken Sie auf „Hinzufügen“.
+   * Überprüfungsname (erforderlich): Darf alphanumerische Zeichen, Bindestriche oder Unterstriche enthalten.
+   * Überprüfungsbeschreibung (optional): Beschreibung des Zwecks/Inhalts der Überprüfung.
+   * Überprüfungstermin (optional): Datum, an dem die Überprüfung beendet wird. Wenn der Termin bereits abgelaufen ist, wird die Aufgabe als „überfällig“ angezeigt.
+   * Reviewer: Es muss mindestens ein Reviewer angegeben werden. Verwenden Sie das Kombinationsfeld, um Reviewer hinzuzufügen. Beim Eingeben eines Namens werden alle passenden Namen angezeigt. Wählen Sie einen Namen aus und klicken Sie auf „Hinzufügen“.
 
 1. Füllen Sie alle weiteren Details und klicken Sie dann auf „Start“.
 
-### Aktionen beim Einrichten von Überprüfungen  {#actions-that-occur-when-a-review-is-set-up}
+### Aktionen beim Einrichten von Überprüfungen {#actions-that-occur-when-a-review-is-set-up}
 
 In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erstellt bzw. eingerichtet wird.
 
 1. Eine neue Überprüfungsaufgabe wird erstellt und dem Initiator der Überprüfung zugewiesen.
-1. Allen Überprüfern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird in ihrem Benachrichtigungsabschnitt angezeigt. Überprüfer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Überprüfer können klicken, um die Überprüfungsaufgabe zu öffnen, das Formular anzuzeigen und Kommentare hinzuzufügen.
+1. Allen Reviewern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird in ihrem Benachrichtigungsabschnitt angezeigt. Reviewer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Reviewer können per Klick die Überprüfungsaufgabe öffnen, das Formular anzeigen und Kommentare hinzufügen.
 
-   ![Warnung bei Überprüferbenachrichtigungen](assets/noti.png)
-   **Abbildung: Warnung zur** *Benachrichtigung über Prüfer*
+   ![Warnung bei Reviewerbenachrichtigungen](assets/noti.png)
+   **Abbildung:** *Warnung zur Reviewer-Benachrichtigung*
 
-1. Das Kommentarfeld ist für den Initiator und die Überprüfer der Assets verfügbar. Andere können die Kommentare anzeigen, jedoch keine Kommentare schreiben.
+1. Das Kommentarfeld ist für den Initiator und die Reviewer der Assets verfügbar. Andere können die Kommentare anzeigen, jedoch keine Kommentare schreiben.
 
-## Verwalten von Überprüfungen {#managing-a-review}
+## Verwalten einer Überprüfung {#managing-a-review}
 
 >[!NOTE]
 >
 >Es können nur Überprüfungen geändert werden, die noch nicht abgeschlossen sind. Abgeschlossene Überprüfungen können nicht geändert werden.
 
-1. Navigieren Sie zur Formularregisterkarte und wählen Sie ein Formular aus.
+1. Gehen Sie zur Registerkarte „Formulare“ und wählen Sie ein Formular aus.
 
-1. Wenn für ein Asset eine Überprüfung ausgeführt wird und Sie der Initiator der Überprüfung sind, werden in der Aktionsleiste die Symbole Überprüfung verwalten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) angezeigt. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
+1. Wenn bei einem Asset eine Überprüfung in Bearbeitung ist und Sie der Initiator der Überprüfung sind, wird in der Aktionsleiste das Symbol ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) zum Verwalten von Überprüfungen angezeigt. Nur Initiatoren von Überprüfungen können die Überprüfung verwalten (aktualisieren/beenden).
 
-   Klicken Sie auf das Symbol zum Verwalten der Überprüfung ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+   Klicken Sie auf das Symbol ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) zum Verwalten der Überprüfung.
 
    Für Benutzer, die nicht der Initiator sind, ist das Symbol zum Verwalten von Überprüfungen deaktiviert.
 
-1. Es wird ein Bildschirm mit den folgenden Informationen anzeigt:
+1. Es wird ein Bildschirm mit folgenden Informationen anzeigt:
 
    * **Überprüfungsname**: Kann nicht bearbeitet werden.
    * **Überprüfungsbeschreibung**: Kann bearbeitet werden.
    * **Überprüfungstermin**: Kann bearbeitet werden. Die Werte für Datum und Uhrzeit des Termins können geändert werden, wenn sie in der Zukunft liegen.
-   * **Überprüfer**: Kann bearbeitet werden. Sie können Überprüfer hinzufügen oder entfernen. Wenn eine Aufgabe überfällig ist, können Sie Überprüfer erst hinzufügen, wenn Sie den Termin verlängern und er über das aktuelle Datum hinausgeht.
+   * **Reviewer**: Kann bearbeitet werden. Sie können Reviewer hinzufügen oder entfernen. Wenn eine Aufgabe überfällig ist, können Sie Reviewer erst hinzufügen, wenn Sie den Termin verlängern und er über das aktuelle Datum hinausgeht.
 
 1. Bearbeiten Sie die erforderlichen Felder und klicken Sie dann auf „Aktualisieren“.
 
    ![Überprüfen des aktuellen Status im Task Manager](assets/tskmgr.png)
-   **Abbildung:** *Überprüfen des aktualisierten Status im Task Manager*
+   **Abbildung:** *Aktualisierten Status in Task Manager überprüfen*
 
-1. Zum Beenden der Überprüfung klicken auf „Ende“.
+1. Zum Beenden der Überprüfung klicken Sie auf „Beenden“.
 
-### Aktionen beim Bearbeiten von Überprüfungen  {#actions-that-occur-when-a-review-is-modified}
+### Aktionen beim Bearbeiten einer Überprüfung {#actions-that-occur-when-a-review-is-modified}
 
 In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüfungen passiert:
 
-1. Wenn die Überprüfungsbeschreibung geändert wird, wird die entsprechende Aufgabe der Überprüfer und des Initiators aktualisiert.
-1. Wenn der Überprüfungstermin geändert wird, wird zugehörige jeweilige Aufgabe der Überprüfer mit dem neuen Datum aktualisiert.
+1. Wenn die Überprüfungsbeschreibung geändert wird, wird die entsprechende Aufgabe der Reviewer und des Initiators aktualisiert.
+1. Wenn der Überprüfungstermin geändert wird, wird die entsprechende Aufgabe der Reviewer mit dem neuen Datum aktualisiert.
 
-1. Wenn ein Überprüfer entfernt wird:
+1. Wenn ein Reviewer entfernt wird:
 
-   ![Entfernen von Überprüfern](assets/removeduser.png)
-   **Abbildung:** *Entfernen eines Validierers*
+   ![Entfernen eines Reviewers](assets/removeduser.png)
+   **Abbildung:** *Validierer entfernen*
 
    1. Falls die zugewiesene Aufgabe unvollständig ist, wird sie beendet.
-   1. Der Überprüfer kann das Asset nicht mehr kommentieren.
+   1. Der Reviewer kann das Asset nicht mehr kommentieren.
 
-1. Wenn ein Überprüfer hinzugefügt wird:
+1. Wenn ein Reviewer hinzugefügt wird:
 
-   ![Hinzufügen von Überprüfern](assets/addedreviewer.png)
-   **Abbildung:** *Hinzufügen eines Validierers*
+   ![Hinzufügen eines Reviewers](assets/addedreviewer.png)
+   **Abbildung:** *Validierungsverantwortliche hinzufügen*
 
-   1. Eine Überprüfungsaufgabe wird erstellt und dem neu hinzugefügten Überprüfer zugewiesen.
-   1. Der neu hinzugefügte Überprüfer kann Kommentare zu Assets hinzufügen.
+   1. Eine Überprüfungsaufgabe wird erstellt und dem neu hinzugefügten Reviewer zugewiesen.
+   1. Der neu hinzugefügte Reviewer kann dem Asset Kommentare hinzufügen.
 
 1. Wenn eine Überprüfung abgeschlossen wird:
 
-   1. **Überprüfer**: Bei allen Überprüfern werden zugewiesene Aufgaben, die unvollständig sind, beendet. Die Aufgabe wird im Benachrichtigungsabschnitt des Überprüfers nicht mehr als „Ausstehend“ angezeigt.
+   1. **Reviewer**: Bei allen Reviewern werden zugewiesene unvollständige Aufgaben beendet. Die Aufgabe wird im Benachrichtigungsabschnitt des Reviewers nicht mehr als „Ausstehend“ angezeigt.
    1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe wird als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators von Überprüfungen entfernt.
    1. **Alle**: Die Überprüfung wird im Abschnitt für die vorherigen Überprüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.

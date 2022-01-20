@@ -1,6 +1,6 @@
 ---
 title: Verbesserungen beim Benutzererlebnis von Assets
-description: In diesem Artikel werden die Verbesserungen beim Benutzererlebnis in  [!DNL Experience Manager] 6.4 Assets beschrieben.
+description: In diesem Artikel werden die Verbesserungen beim Benutzererlebnis in [!DNL Experience Manager] 6.4 Assets.
 contentOwner: AG
 feature: Release Information
 role: Leader,User
@@ -22,7 +22,7 @@ Sie können die verschiedenen Ansichten personalisieren – Karten-, Listen- und
 
 ## Lazy Loading (langsames Laden) {#lazy-loading}
 
-Wenn Sie Assets in [!DNL Experience Manager] 6.4 Assets durchsuchen/suchen, werden bis zu 200 Assets gleichzeitig angezeigt. Sie können schneller durch die Ergebnisse scrollen. Das ist besonders hilfreich, wenn Sie eine lange Liste von Ergebnissen durchsuchen. Da eine bedeutende Menge von Assets gleichzeitig geladen wird, verläuft das Durchsuchen reibungsloser.
+Beim Durchsuchen/Suchen nach Assets in [!DNL Experience Manager] 6.4 Assets, bis zu 200 Assets werden gleichzeitig angezeigt. Sie können schneller durch die Ergebnisse scrollen. Das ist besonders hilfreich, wenn Sie eine lange Liste von Ergebnissen durchsuchen. Da eine bedeutende Menge von Assets gleichzeitig geladen wird, verläuft das Durchsuchen reibungsloser.
 
 Wenn Sie auf ein Asset tippen/klicken, um die Detailseite dafür anzuzeigen, können Sie zur Ergebnisseite zurückkehren, indem Sie in der Symbolleiste einfach auf die Schaltfläche „Zurück“ tippen/klicken.
 
@@ -32,11 +32,11 @@ Je nach dem verwendeten Gerät und der erforderlichen Dateitiefe können Sie die
 
 Gehen Sie wie folgt vor, um die Größe von Miniaturen in der Kartenansicht anzupassen:
 
-1. Tippen/klicken Sie in der Symbolleiste auf das Symbol Layout und wählen Sie dann die Option **[!UICONTROL Anzeigeeinstellungen]** aus.
+1. Tippen/klicken Sie in der Symbolleiste auf das Symbol Layout und wählen Sie dann die **[!UICONTROL Anzeigeeinstellungen]** -Option.
 
    ![view_settings](assets/view_settings.png)
 
-1. Wählen Sie im Dialogfeld **[!UICONTROL Anzeigeeinstellungen]** die gewünschte Größe der Miniaturansicht aus und tippen/klicken Sie dann auf **[!UICONTROL Aktualisieren]**.
+1. Aus dem **[!UICONTROL Anzeigeeinstellungen]** wählen Sie die gewünschte Größe der Miniaturansicht aus und tippen/klicken Sie auf **[!UICONTROL Aktualisieren]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -68,7 +68,7 @@ Zusätzlich zur Karten- und Listenansicht können Sie jetzt über die Spaltenans
 
 [!DNL Experience Manager] 6.4 Assets enthält eine Baumansicht, mit der Sie schnell und einfach Ihre Asset-Hierarchie durchsuchen und zum gewünschten Asset oder Ordner navigieren können.
 
-Um die Baumansicht zu öffnen, tippen/klicken Sie auf das GlobalNav-Symbol in `Assets UI` und wählen Sie **[!UICONTROL Inhaltsstruktur]** aus dem Menü aus.
+Um die Baumansicht zu öffnen, tippen/klicken Sie auf das GlobalNav-Symbol im `Assets UI`und wählen Sie **[!UICONTROL Inhaltsstruktur]** aus dem Menü.
 
 ![content_tree](assets/content_tree.png)
 

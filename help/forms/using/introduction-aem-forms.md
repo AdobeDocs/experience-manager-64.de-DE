@@ -1,18 +1,18 @@
 ---
 title: Einführung in AEM Forms
-seo-title: Einführung in AEM Forms
+seo-title: Introduction to AEM Forms
 description: Mit Adobe Experience Manager Forms können Benutzer interessante, reaktionsfähige und adaptive Formulare in Web- und mobile Sites integrieren, die digitale Registrierung vereinfachen und Kundenkonversionsraten erhöhen.
-seo-description: Mit Adobe Experience Manager Forms können Benutzer interessante, reaktionsfähige und adaptive Formulare in Web- und mobile Sites integrieren, die digitale Registrierung vereinfachen und Kundenkonversionsraten erhöhen.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: 9e9a164a-4a74-4096-98b8-800ea610edd8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 0a79111d-e42f-4eb6-8bc4-ab97424e7f90
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '910'
 ht-degree: 99%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 Informationen zu neuesten Funktionen und Verbesserungen in AEM Forms finden Sie unter [Neue Funktionen in AEM Forms](/help/forms/using/whats-new.md).
 
-## Info zu AEM Forms  {#about-aem-forms}
+## Info zu AEM Forms {#about-aem-forms}
 
 Adobe Experience Manager (AEM) ist eine benutzerfreundliche Lösung, mit der Sie komplexe digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren und dabei in Back-End-Prozesse, Geschäftsregeln und Daten integrieren können.
 
@@ -47,7 +47,7 @@ Zusammenfassend lässt sich sagen, dass AEM Forms leistungsstarke Formularverwal
 * Integration mit Adobe Document Cloud-eSign-Diensten oder Scribble zur elektronischen Verschlüsselung von Dokumenten mit vertraulichen Informationen
 * Automatisierte Formularveröffentlichungsfunktionen und die Möglichkeit, zeitnahe, personalisierte und konsistente Kommunikation über mehrere Kanäle bereitzustellen
 
-## AEM-Formulartypen  {#aem-form-types}
+## AEM-Formulartypen {#aem-form-types}
 
 Mit AEM Forms können Sie neue und vorhandene Formulare erweitern, um Folgendes zu erstellen:
 

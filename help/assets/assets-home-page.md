@@ -14,30 +14,30 @@ ht-degree: 45%
 
 # [!DNL Adobe Experience Manager Assets] Startseiten-Erlebnis {#aem-assets-home-page-experience}
 
-Personalisieren Sie die Startseite [!DNL Experience Manager Assets] für ein umfangreiches Begrüßungsbildschirm-Erlebnis, einschließlich einer Momentaufnahme der aktuellen Aktivitäten rund um Assets.
+Personalisieren Sie die [!DNL Experience Manager Assets] Startseite für ein umfangreiches Begrüßungsbildschirm-Erlebnis, einschließlich einer Momentaufnahme der letzten Aktivitäten rund um Assets.
 
-Die Startseite [!DNL Adobe Experience Manager Assets] bietet ein umfangreiches und personalisiertes Begrüßungsbildschirm-Erlebnis, das eine Momentaufnahme aktueller Aktivitäten enthält, z. B. Assets, die kürzlich angezeigt oder hochgeladen wurden.
+Die [!DNL Adobe Experience Manager Assets] Die Startseite bietet ein umfangreiches und personalisiertes Begrüßungsbildschirm-Erlebnis, das eine Momentaufnahme der letzten Aktivitäten enthält, z. B. der kürzlich angezeigten oder hochgeladenen Assets.
 
 Die Assets-Startseite ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um sie zu aktivieren:
 
-1. Um auf [!DNL Experience Manager] Configuration Manager zuzugreifen, klicken Sie auf **[!UICONTROL Tools > Vorgang > Web Console]**.
-1. Öffnen Sie den Dienst **Day CQ DAM Event Recorder** .
-1. Wählen Sie **[!UICONTROL Aktivieren Sie diesen Dienst]**, um die Aktivitätsaufzeichnung zu aktivieren.
+1. So greifen Sie auf [!DNL Experience Manager] Configuration Manager, klicken Sie auf **[!UICONTROL Tools > Vorgang > Web-Konsole]**.
+1. Öffnen Sie die **Day CQ DAM Event Recorder** Dienst.
+1. Wählen Sie die **[!UICONTROL Aktivieren dieses Dienstes]** zur Aktivierung der Aktivitätsaufzeichnung.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Wählen Sie in der Liste **Ereignistypen** die Ereignisse aus, die aufgezeichnet werden sollen, und speichern Sie die Änderungen.
+1. Aus dem **Ereignistypen** , wählen Sie die Ereignisse aus, die aufgezeichnet werden sollen, und speichern Sie die Änderungen.
 
    >[!CAUTION]
    >
    >Die Aktivierung der Optionen „Angezeigte Assets“, „Angezeigte Projekte“ und „Angezeigte Sammlungen“ erhöht die Anzahl der aufgezeichneten Ereignisse erheblich.
 
-1. Öffnen Sie den Dienst **[!UICONTROL DAM Asset Home Page Feature Flag]** im Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Wählen Sie die Option **[!UICONTROL isEnabled.name]** aus, um die Funktion &quot;Assets-Homepage&quot;zu aktivieren. Speichern Sie die Änderungen.
+1. Öffnen Sie die **[!UICONTROL Feature Flag &quot;DAM Asset Home Page&quot;]** Dienst von Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Wählen Sie die **[!UICONTROL isEnabled.name]** -Option, um die Funktion &quot;Assets-Startseite&quot;zu aktivieren. Speichern Sie die Änderungen.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Öffnen Sie das Dialogfeld **[!UICONTROL Benutzereinstellungen]** und wählen Sie **[!UICONTROL Asset-Homepage aktivieren]** aus. Speichern Sie die Änderungen.
+1. Öffnen Sie die **[!UICONTROL Benutzereinstellungen]** und wählen Sie **[!UICONTROL Asset-Homepage aktivieren]**. Speichern Sie die Änderungen.
 
    ![user_Preferences](assets/user_preferences.png)
 
@@ -45,7 +45,7 @@ Navigieren Sie nach Aktivierung der Assets-Startseite von der Navigationsseite z
 
 ![home_page](assets/home_page.png)
 
-Tippen/klicken Sie auf **[!UICONTROL Klicken Sie hier , um Ihren Erlebnislink]** zu konfigurieren und Ihren Benutzernamen, Ihr Hintergrundbild und Ihr Profilbild hinzuzufügen.
+Tippen/klicken Sie auf **[!UICONTROL Klicken Sie hier , um Ihren Erlebnislink zu konfigurieren.]** um Ihren Benutzernamen, Ihr Hintergrundbild und Ihr Profilbild hinzuzufügen.
 
 Die Assets-Startseite enthält die folgenden Abschnitte:
 
@@ -66,19 +66,19 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 * Aktuell
 * Entdecken
 
-**Aktivität**: Unter diesem Abschnitt zeigt das Widget  **Meine** Aktivität die letzten Aktivitäten an, die der angemeldete Benutzer mit Assets ausgeführt hat (einschließlich Assets ohne Ausgabedarstellungen), z. B. Asset-Uploads, -Downloads, Asset-Erstellung, -Bearbeitungen, Kommentare, Anmerkungen und &quot;Teilen&quot;-Klicks.
+**Aktivität**: Unter diesem Abschnitt wird die **Meine Aktivität** Widget zeigt die letzten Aktivitäten an, die der angemeldete Benutzer mit Assets ausgeführt hat (einschließlich Assets ohne Ausgabedarstellungen), z. B. Asset-Uploads, -Downloads, Asset-Erstellung, Bearbeitungen, Kommentare, Anmerkungen und Teilen-Vorgänge.
 
-**Zuletzt**: Das Widget  **Kürzlich** angezeigte Anzeigen unter diesem Abschnitt zeigt kürzlich aufgerufene Entitäten, auf die der angemeldete Benutzer zugegriffen hat, einschließlich Ordnern, Sammlungen und Projekten.
+**Zuletzt**: Die **Kürzlich angezeigt** -Widget unter diesem Abschnitt zeigt die kürzlich vom angemeldeten Benutzer aufgerufenen Entitäten an, darunter Ordner, Sammlungen und Projekte.
 
-**Discover**: Das  **** Newwidget unter diesem Abschnitt zeigt die Assets und Ausgabedarstellungen an, die kürzlich in die  [!DNL Assets] Instanz hochgeladen wurden.
+**Discover**: Die **Neu** Widget unter diesem Abschnitt zeigt die Assets und Ausgabedarstellungen an, die kürzlich in die [!DNL Assets] -Instanz.
 
-Um die Bereinigung der Benutzeraktivitätsdaten zu aktivieren, aktivieren Sie den **DAM-Ereignisbereinigungsdienst** in Configuration Manager. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
+Um die Bereinigung der Benutzeraktivitätsdaten zu ermöglichen, aktivieren Sie die **DAM-Ereignisbereinigungsdienst** von Configuration Manager aus. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
 
 Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in der Symbolleiste für das Zugreifen auf Ordner, Sammlungen und Kataloge.
 
 >[!NOTE]
 >
->Durch die Aktivierung der Day CQ DAM Event Recorder- und DAM Event Purge-Dienste werden Schreibvorgänge in JCR und die Suchindizierung erhöht, wodurch die Last auf dem [!DNL Experience Manager]-Server deutlich erhöht wird. Die zusätzliche Belastung des [!DNL Experience Manager]-Servers kann sich auf seine Leistung auswirken.
+>Durch die Aktivierung der Day CQ DAM Event Recorder- und DAM Event Purge-Dienste werden Schreibvorgänge in JCR und die Suchindizierung erhöht, was die Belastung der [!DNL Experience Manager] Server. Die zusätzliche Belastung der [!DNL Experience Manager] -Server kann sich auf seine Leistung auswirken.
 
 >[!CAUTION]
 >

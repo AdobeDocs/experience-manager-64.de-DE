@@ -1,8 +1,8 @@
 ---
 title: Erscheinungsbild-Framework für adaptive und HTML5-Formulare
-seo-title: Erscheinungsbild-Framework für adaptive und HTML5-Formulare
+seo-title: Appearance framework for adaptive and HTML5 forms
 description: 'Mobile Forms rendert Formularvorlagen als HTML5-Formulare. Diese Formulare verwenden jQuery, Backbone.js- und Underscore.js-Dateien für das Erscheinungsbild und um Skripten zu aktivieren. '
-seo-description: 'Mobile Forms rendert Formularvorlagen als HTML5-Formulare. Diese Formulare verwenden jQuery, Backbone.js- und Underscore.js-Dateien für das Erscheinungsbild und um Skripten zu aktivieren. '
+seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,12 +11,12 @@ discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 exl-id: 272d3ec1-7f92-4f4a-9e98-954136b20b27
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 93%
+source-wordcount: '1170'
+ht-degree: 92%
 
 ---
 
-# Erscheinungsbild-Framework für adaptive und HTML5-Formulare  {#appearance-framework-for-adaptive-and-html-forms}
+# Erscheinungsbild-Framework für adaptive und HTML5-Formulare {#appearance-framework-for-adaptive-and-html-forms}
 
 Formulare (adaptive Formulare und HTML5-Formulare) verwenden [jQuery](https://jquery.com/)-, [Backbone.js](https://backbonejs.org/)- und [Underscore.js](https://underscorejs.org/)-Bibliotheken für das Erscheinungsbild und die Skripterstellung. Die Formulare verwenden auch die Architektur von [jQuery UI](https://jqueryui.com/)-**Widgets** für alle interaktiven Elemente (beispielsweise Felder und Schaltflächen) im Formular. Durch diese Architektur stehen Formularentwicklern eine umfangreiche Auswahl von jQuery-Widgets und -Plug-Ins in Formularen zur Verfügung. Sie können ebenfalls formularspezifische Logik beim Erfassen von Benutzerdaten implementieren, wie etwa „leadDigits/trailDigits“-Einschränkungen, oder Bildklassen implementieren. Formularentwickler können benutzerdefinierte Erscheinungsbilder erstellen und verwenden, um die Datenerfassungserfahrung zu verbessern und sie benutzerfreundlicher zu gestalten.
 
@@ -28,7 +28,7 @@ Das Erscheinungsbild-Framework stützt sich bei der Erfassung von Benutzerintera
 * Das Erscheinungsbild löst als Teil des Kontrakts eine Reihe von Ereignissen wie „enter“, „exit“ und so weiter aus.
 * Das Erscheinungsbild muss einen Funktionssatz implementieren. Einige der Funktionen sind allgemein, während andere spezifisch für die Feldtypfunktion sind.
 
-## Allgemeine Optionen  {#common-options}
+## Allgemeine Optionen {#common-options}
 
 Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügbar.
 
@@ -67,7 +67,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
    <td>Die Höhe des Widgets. Sie wird in Pixeln angegeben. </td> 
   </tr>
   <tr>
-   <td>Breite</td> 
+   <td>width</td> 
    <td>Die Breite des Widgets. Sie wird in Pixeln angegeben.</td> 
   </tr>
   <tr>
@@ -87,11 +87,11 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
 
 Zusätzlich zu diesen Optionen stellt das Framework einige andere Optionen bereit, die je nach Typ des Felds variieren. Die Details zu den feldspezifischen Optionen sind unten aufgeführt.
 
-### Interaktion mit Formularframework  {#interaction-with-forms-framework}
+### Interaktion mit Formularframework {#interaction-with-forms-framework}
 
 Um mit dem Formularframework zu interagieren, löst ein Widget einige Ereignisse aus, die das Formularskript aktivieren. Wenn das Widget diese Ereignisse nicht erzeugt, funktionieren einige der Skripte nicht, die im Formular für dieses Feld eingegeben wurden.
 
-#### Vom Widget ausgelöste Ereignisse  {#events-triggered-by-widget}
+#### Vom Widget ausgelöste Ereignisse {#events-triggered-by-widget}
 
 <table> 
  <tbody>
@@ -137,7 +137,7 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
    <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EVENT wird aufgerufen.</td> 
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>der den Fehler<br /> <em>errorType darstellt: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: Zeichenfolge </em>den Fehler darstellen<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td> 
    <td>Sendet Fehlermeldung und Fehlertyp an das Widget. Das Widget zeigt den Fehler an.</td> 
   </tr>
   <tr>
@@ -147,7 +147,7 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
  </tbody>
 </table>
 
-## Optionen je nach Feldtyp  {#options-specific-to-type-of-field}
+## Optionen je nach Feldtyp {#options-specific-to-type-of-field}
 
 Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen übereinstimmen. Um die Funktionen von verschiedenen Feldern zu nutzen, muss das Widget den Richtlinien des jeweiligen Felds entsprechen.
 
@@ -174,7 +174,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
  </tbody>
 </table>
 
-### ChoiceList: DropDownList, ListBox  {#choicelist-dropdownlist-listbox}
+### ChoiceList: DropDownList, ListBox {#choicelist-dropdownlist-listbox}
 
 <table> 
  <tbody>
@@ -228,7 +228,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
  </tbody>
 </table>
 
-### NumericEdit: NumericField, DecimalField  {#numericedit-numericfield-decimalfield}
+### NumericEdit: NumericField, DecimalField {#numericedit-numericfield-decimalfield}
 
 | Optionen | Beschreibung |
 |---|---|
@@ -238,7 +238,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
 | zero | Die Zeichenfolgendarstellung von Null im Gebietsschema des Felds. |
 | decimal | Die Zeichenfolgendarstellung von Dezimalzahlen im Gebietsschema des Felds. |
 
-### CheckButton: RadioButton, CheckBox  {#checkbutton-radiobutton-checkbox}
+### CheckButton: RadioButton, CheckBox {#checkbutton-radiobutton-checkbox}
 
 <table> 
  <tbody>

@@ -1,8 +1,8 @@
 ---
 title: Installieren und Konfigurieren eines Forms-zentrierten Workflows auf OSGi
-seo-title: Installieren und Konfigurieren eines Forms-zentrierten Workflows auf OSGi
+seo-title: Installing and Configuring Forms-centric workflow on OSGi
 description: 'Installieren und konfigurieren Sie AEM Forms Interaktive Kommunikation, um Geschäftskorrespondenzen, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-E-Mails, Rechnungen und Willkommenskits zu erstellen. '
-seo-description: 'Installieren und konfigurieren Sie AEM Forms Interaktive Kommunikation, um Geschäftskorrespondenzen, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-E-Mails, Rechnungen und Willkommenskits zu erstellen. '
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
@@ -10,7 +10,7 @@ role: Admin
 exl-id: 308b106f-4c5a-49d6-a7f6-c1e8a0bf62e9
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1611'
 ht-degree: 59%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 59%
 
 ## Einführung {#introduction}
 
-Unternehmen erfassen und verarbeiten Daten aus mehreren Formularen, Back-End-Systemen und anderen Datenquellen. Die Datenverarbeitung umfasst Überprüfungs- und Validierungsverfahren, sich wiederholende Aufgaben und die Datenarchivierung. Beispiel: Überprüfen eines Formulars und Konvertieren in ein PDF-Dokument. Wenn die sich wiederholenden Aufgaben manuell durchgeführt werden, kann es viel Zeit und Ressourcen in Anspruch nehmen.
+Unternehmen erfassen und verarbeiten Daten aus mehreren Formularen, Back-End-Systemen und anderen Datenquellen. Die Datenverarbeitung umfasst Überprüfungs- und Validierungsverfahren, sich wiederholende Aufgaben und die Datenarchivierung. Überprüfen Sie beispielsweise ein Formular und konvertieren Sie es in ein PDF-Dokument. Wenn die sich wiederholenden Aufgaben manuell durchgeführt werden, kann es viel Zeit und Ressourcen in Anspruch nehmen.
 
-Sie können [Forms-zentrierten Workflow unter OSGi](/help/forms/using/aem-forms-workflow.md) verwenden, um schnell adaptive formularbasierte Workflows zu erstellen. Diese Workflows können Ihnen dabei helfen, Prüfungs- und Genehmigungs-Workflows, Geschäftsprozess-Workflows und andere sich wiederholende Aufgaben zu automatisieren. Diese Workflows helfen auch bei der Verarbeitung von Dokumenten (Erstellen, Zusammenführen, Verteilen und Archivieren von PDF-Dokumenten, Hinzufügen digitaler Signaturen, um den Zugriff auf Dokumente zu beschränken, Dekodierung von mit Strichcode versehenen Formularen und mehr) sowie bei der Verwendung des Adobe Sign-Signatur-Workflows mit Formularen und Dokumenten.
+Sie können [Forms-orientierter Workflow auf OSGi](/help/forms/using/aem-forms-workflow.md) um schnell adaptive formularbasierte Workflows zu erstellen. Diese Workflows können Ihnen dabei helfen, Prüfungs- und Genehmigungs-Workflows, Geschäftsprozess-Workflows und andere sich wiederholende Aufgaben zu automatisieren. Diese Workflows helfen auch bei der Verarbeitung von Dokumenten (Erstellen, Zusammenführen, Verteilen und Archivieren von PDF-Dokumenten, Hinzufügen digitaler Signaturen, um den Zugriff auf-Dokumente zu beschränken, Dekodierung von mit Strichcode versehenen Formularen und mehr) sowie bei der Verwendung des Adobe Sign-Signatur-Workflows mit Formularen und Dokumenten.
 
 Nach der Einrichtung können diese Workflows manuell ausgelöst werden, um einen definierten Prozess abzuschließen oder programmgesteuert auszuführen, wenn Benutzer ein Formular oder eine interaktive Kommunikation senden. Die Funktion ist im AEM Forms Add-On-Paket enthalten.
 
@@ -29,13 +29,13 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse. Forms-zentri
 
 >[!NOTE]
 >
->Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. Weitere Informationen zu den Unterschieden und Ähnlichkeiten in den Funktionen finden Sie in einem [Vergleich](/help/forms/using/capabilities-osgi-jee-workflows.md) der Forms-orientierten AEM-Workflows unter OSGi und Process Management on JEE .
+>Mit formularzentrierten Workflows in OSGi können Sie schnell Workflows für verschiedene Aufgaben auf dem OSGi-Stapel erstellen und bereitstellen, ohne die komplette Prozessverwaltungsfunktion auf dem JEE-Stapel zu installieren. Siehe [Vergleich](/help/forms/using/capabilities-osgi-jee-workflows.md) der Forms-orientierten AEM Workflows für OSGi und Process Management on JEE, um die Unterschiede und Ähnlichkeiten in den Funktionen zu ermitteln.
 >
->Nach dem Vergleich finden Sie unter [Installieren oder Aktualisieren von AEM Forms on JEE](/help/forms/home.md) ausführliche Informationen zum Installieren und Konfigurieren des JEE-Stacks und zu den Prozessverwaltungsfunktionen, wenn Sie die Process Management-Funktion auf dem JEE-Stack installieren.
+>Wenn Sie nach dem Vergleich die Prozessverwaltungsfunktion auf dem JEE-Stapel installieren möchten, lesen Sie [Installieren oder Aktualisieren von AEM Forms on JEE](/help/forms/home.md) für detaillierte Informationen zum Installieren und Konfigurieren des JEE-Stacks und der Prozessverwaltungsfunktionen.
 
 ## Bereitstellungstopologie {#deployment-topology}
 
-AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur mindestens eine AEM-Autoren- oder Verarbeitungsinstanz (Produktionsautor), um den Forms-orientierten Workflow für die OSGi-Funktion auszuführen. Eine Verarbeitungsinstanz ist eine [gehärtete AEM-Autoreninstanz](/help/forms/using/hardening-securing-aem-forms-environment.md). Führen Sie auf dem Produktionsautor keine tatsächlichen Authoring durch, z. B. keine Workflows oder adaptiven Formulare.
+AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen nur mindestens eine AEM-Autoren- oder Verarbeitungsinstanz (Produktionsautor), um den Forms-orientierten Workflow für die OSGi-Funktion auszuführen. Eine Verarbeitungsinstanz ist [gehärtete AEM-Autoreninstanz](/help/forms/using/hardening-securing-aem-forms-environment.md) -Instanz. Führen Sie auf dem Produktionsautor keine tatsächlichen Authoring durch, z. B. keine Workflows oder adaptiven Formulare.
 
 Die folgende Topologie ist eine indikative Topologie zum Ausführen von AEM Forms Interactive Communications, Correspondence Management, AEM Forms-Datenerfassung und Forms-Centric-Workflow für OSGi-Funktionen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -47,7 +47,7 @@ AEM Forms Forms-zentrierte Workflows in OSGi werden AEM Benutzeroberfläche für
 
 >[!NOTE]
 >
->Wechseln Sie zum Abschnitt [Nächste Schritte](#next-steps) des Dokuments, wenn Sie AEM Forms bereits auf OSGi installiert haben, wie im Artikel [Installieren und Konfigurieren von Datenerfassungsfunktionen](/help/forms/using/installing-configuring-aem-forms-osgi.md) beschrieben.
+>Zum [Nächste Schritte](#next-steps) Abschnitt des Dokuments, wenn Sie AEM Forms bereits auf OSGi installiert haben, wie im Abschnitt [Datenerfassungsfunktionen installieren und konfigurieren](/help/forms/using/installing-configuring-aem-forms-osgi.md) Artikel.
 
 Bevor Sie mit der Installation und Konfiguration eines Forms-zentrierten Workflows auf OSGi beginnen, stellen Sie Folgendes sicher:
 
@@ -104,14 +104,14 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads suchen]** verwenden, um die Ergebnisse zu filtern.
-1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem, wählen Sie **[!UICONTROL Endbenutzer-Lizenzbedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die **[!UICONTROL Suchdownloads]** Option zum Filtern der Ergebnisse.
+1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-   Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms releases](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
+   Sie können das Paket auch über den direkten Link herunterladen, der im Abschnitt [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) Artikel.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der Datei  [AEM-Installation-Directory]/crx-quickstart/logs/error.log angezeigt werden und das Protokoll stabil ist.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Starten Sie den Server nicht sofort neu.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der [AEM-Installationsverzeichnis]/crx-quickstart/logs/error.log und das Protokoll ist stabil.
 1. Wiederholen Sie Schritten 1-7 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
@@ -125,9 +125,9 @@ AEM Forms verfügt über einige obligatorische und optionale Konfigurationen. Zu
 Führen Sie sowohl auf der Autor- als auch auf der Veröffentlichungsinstanz folgende Schritte zum Boot-Delegate der Bibliotheken aus:
 
 1. Beenden Sie die zugrunde liegenden AEM-Instanz.
-1. Öffnen Sie die Datei [AEM Installationsverzeichnis]\crx-quickstart\conf\sling.properties zur Bearbeitung.
+1. Öffnen Sie die [AEM Installationsverzeichnis]\crx-quickstart\conf\sling.properties Datei zur Bearbeitung.
 
-   Wenn Sie [AEM Installationsordner]\crx-quickstart\bin\start.bat zum Starten von AEM verwendet haben, bearbeiten Sie die sling.properties-Datei unter [AEM_root]\crx-quickstart\.
+   Wenn Sie [AEM Installationsverzeichnis]\crx-quickstart\bin\start.bat , um AEM zu starten, und bearbeiten Sie dann die sling.properties-Datei unter [AEM_root]\crx-quickstart\.
 
 1. Fügen Sie die folgenden Eigenschaften der sling.properties-Datei hinzu:
 
@@ -151,7 +151,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 1. Öffnen Sie AEM Configuration Manager in einem Browserfenster. Die Standardeinstellung ist `https://[server]:[port]/system/console/configMgr`.
 1. Suchen und öffnen Sie die **Deserialisierungs-Firewallkonfiguration**.
-1. Fügen Sie das Paket **sun.util.calendar** zum Feld **Zulassungsliste** hinzu. Klicken Sie auf Speichern.
+1. Fügen Sie die **sun.util.calendar** -Paket zu **Zulassungsliste** -Feld. Klicken Sie auf Speichern.
 1. Wiederholen Sie Schritten 1-3 für alle Autor- und Veröffentlichungsinstanzen.  
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
@@ -181,8 +181,8 @@ Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu 
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
-1. Wechseln Sie zum AEM Web Console Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
-1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiven Kommunikations-Web-Kanal]**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl adaptiver Forms** zwischenspeichern kann. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
+1. Wechseln Sie zum Konfigurations-Manager der AEM-Web-Konsole unter `https://[server]:[port]/system/console/configMgr`.
+1. Klicken Sie auf **[!UICONTROL Konfiguration für adaptive Formulare und interaktiven Kommunikations-Web-Kanal]**, um die Konfigurationswerte zu bearbeiten. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im **Anzahl der adaptiven Forms** -Feld. Der Standardwert ist 100. Klicken Sie auf **Speichern**.
 
    >[!NOTE]
    >

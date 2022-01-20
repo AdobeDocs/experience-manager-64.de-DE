@@ -1,8 +1,8 @@
 ---
 title: Projekte
-seo-title: Projekte
+seo-title: Projects
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
-seo-description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert.
+seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: c279fa04-05ef-4a4c-9295-2194879a6271
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 exl-id: 70a70f56-1d33-4d8a-984a-a3e6f8deedeb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1374'
 ht-degree: 95%
 
 ---
@@ -23,7 +23,7 @@ Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren. Eine 
 
 >[!CAUTION]
 >
->Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie die Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups** haben. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
+>Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups**. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
 
 Als Benutzer haben Sie folgende Möglichkeiten:
 
@@ -51,7 +51,7 @@ In der Projektekonsole können Sie innerhalb von AEM auf Ihre Projekte zugreifen
 * Mit **Aktive Projekte ein/aus** können Sie zwischen allen Projekten und nur den aktiven wechseln.
 * Mit **Statistikansicht anzeigen** können Sie die Projektstatistiken zu Aufgabenabschlüssen anzeigen.
 
-## Projektkacheln  {#project-tiles}
+## Projektkacheln {#project-tiles}
 
 Sie können verschiedene Arten von Informationen mit Ihren Projekten verknüpfen. Diese werden als **Kacheln** bezeichnet. In diesem Abschnitt werden die einzelnen Kacheln und die enthaltenen Informationen beschrieben.
 
@@ -68,7 +68,7 @@ Sie können die folgenden Kacheln mit Ihrem Projekt verknüpfen. Sie werden in d
 * Launches
 * Aufgaben
 
-### Assets  {#assets}
+### Assets {#assets}
 
 In der Kachel **Assets** können Sie alle Assets zusammenstellen, die Sie für ein bestimmtes Projekt verwenden.
 
@@ -86,7 +86,7 @@ Laden Sie Assets direkt in die Kachel hoch. Darüber hinaus können Sie Bildsets
 
 Fügen Sie eine Sammlung hinzu, indem Sie auf **Sammlung hinzufügen** klicken und die entsprechende Sammlung in der Liste auswählen.
 
-### Erlebnisse   {#experiences}
+### Erlebnisse {#experiences}
 
 Über die Kachel **Erlebnisse** können Sie eine Mobile App, eine Website oder eine Veröffentlichung zum Projekt hinzufügen.
 
@@ -96,7 +96,7 @@ Die Symbole geben an, welche Art von Erlebnis dargestellt wird: Website, Mobile 
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-Wählen Sie den Pfad für die Miniaturansichten aus und, falls zutreffend, ändern Sie die Miniaturansicht für das Erlebnis. Erlebnisse werden in der Kachel **Erlebnisse** gruppiert.
+Wählen Sie den Pfad für die Miniaturen aus und, falls zutreffend, ändern Sie die Miniatur für das Erlebnis. Erlebnisse werden in der Kachel **Erlebnisse** gruppiert.
 
 ### Links {#links}
 
@@ -104,13 +104,13 @@ Wählen Sie den Pfad für die Miniaturansichten aus und, falls zutreffend, ände
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
-Sie können dem Link einen aussagekräftigen Namen geben und die Miniaturansicht ändern.
+Sie können dem Link einen aussagekräftigen Namen geben und die Miniatur ändern.
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
 ### Projektinformationen {#project-info}
 
-Die Kachel „Projektinformationen“ enthält allgemeine Informationen zum Projekt, einschließlich einer Beschreibung, des Projektstatus (inaktiv oder aktiv), eines Fälligkeitsdatums und der Mitglieder. Darüber hinaus können Sie eine Projektminiaturansicht hinzufügen, die auf der Hauptprojektseite angezeigt wird.
+Die Kachel „Projektinformationen“ enthält allgemeine Informationen zum Projekt, einschließlich einer Beschreibung, des Projektstatus (inaktiv oder aktiv), eines Fälligkeitsdatums und der Mitglieder. Darüber hinaus können Sie eine ProjektMiniatur hinzufügen, die auf der Hauptprojektseite angezeigt wird.
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
@@ -182,12 +182,12 @@ Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 * Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
 * Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
-* [Produkt-Fotoshooting-Projekt](/help/sites-authoring/managing-product-information.md)  - Ein Referenzbeispiel für die Verwaltung von eCommerce-bezogenen Produktfotos. Es enthält Rollen für Fotografen, Bearbeiter, Fotoretoucheure, Inhaber, Creative Directors, Social-Media-Marketer, Marketing-Manager, Prüfer und Beobachter.
+* [Projekt für Produkt-Fotoshooting](/help/sites-authoring/managing-product-information.md) - Ein Referenzbeispiel für die Verwaltung der eCommerce-bezogenen Produktfotografie. Es enthält Rollen für Fotografen, Bearbeiter, Fotoretoucheure, Inhaber, Creative Directors, Social-Media-Marketer, Marketing-Manager, Prüfer und Beobachter.
 * [Ein Übersetzungsprojekt](/help/sites-administering/translation.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
 
-## Benutzerrollen in einem Projekt  {#user-roles-in-a-project}
+## Benutzerrollen in einem Projekt {#user-roles-in-a-project}
 
 Die verschiedenen Benutzerrollen werden in einer Projektvorlage festgelegt und sind vor allem für die folgenden beiden Bereiche wichtig:
 

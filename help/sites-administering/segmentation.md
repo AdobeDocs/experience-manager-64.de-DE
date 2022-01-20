@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren der Segmentierung mit ContextHub
-seo-title: Konfigurieren der Segmentierung mit ContextHub
+seo-title: Configuring Segmentation with ContextHub
 description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren können.
-seo-description: Erfahren Sie, wie Sie die Segmentierung mit ContextHub konfigurieren können.
+seo-description: Learn how to configure segmentation with Context Hub.
 uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,17 +12,16 @@ discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 83e73a5d-c6fa-426a-8476-78769ae7a8c1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1447'
 ht-degree: 97%
 
 ---
 
-# Konfigurieren der Segmentierung mit ContextHub {#configuring-segmentation-with-contexthub}
+# Konfigurieren der Segmentierung mit ContextHub{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
 >
 >Dieser Abschnitt beschreibt das Konfigurieren der Segmentierung unter Verwendung von ContextHub. Wenn Sie die ClientContext-Funktion verwenden, rufen Sie die entsprechende Dokumentation zum [Konfigurieren der Segmentierung für ClientContext](/help/sites-administering/campaign-segmentation.md) auf.
-
 
 Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Unter [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
 
@@ -48,7 +47,7 @@ Der **Segmenteditor** ermöglicht Ihnen die einfache Veränderung eines Segment
 
 Mithilfe des Komponenten-Browsers können Sie **UND**- und **ODER**-Container zur Festlegung der Segmentlogik und anschließend zusätzliche Komponenten zum Vergleich von Eigenschaften und Werten oder Referenzskripts oder anderen Segmenten zur Definition der Auswahlkriterien (siehe [Erstellen eines neuen Segments](#creating-a-new-segment)) hinzufügen, um das genaue Szenario für die Auswahl des Segments festzulegen.
 
-Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Weitere Informationen zum Faktor [Verstärken finden Sie unter ](/help/sites-administering/campaign-segmentation.md#boost-factor) unter Erstellen eines neuen Segments](#creating-a-new-segment) .[
+Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird das Segment aufgelöst. Falls mehrere Segmente zutreffen, wird außerdem der Faktor **Verstärken** verwendet. Siehe [Erstellen eines neuen Segments](#creating-a-new-segment) Einzelheiten zu den [Verstärkungsfaktor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -154,7 +153,7 @@ So legen Sie Ihr neues Segment fest:
 1. Klicken Sie auf **OK**, um Ihre Definition zu speichern:
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu. Sie können boolesche Ausdrücke anhand der Containerkomponenten für UND- und ODER-Vergleiche formulieren (siehe [Verwenden von UND- und ODER-Containern](/help/sites-administering/segmentation.md#using-and-and-or-containers) weiter unten). Mit dem Segmenteditor können Sie nicht mehr benötigte Komponenten löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
 
-### Verwenden von UND- und ODER-Containern   {#using-and-and-or-containers}
+### Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
 Mithilfe von UND- und ODER-Containerkomponenten können Sie komplexe Segmente in AEM erstellen. Hierbei ist es hilfreich, sich einige grundlegende Punkte bewusst zu machen:
 
@@ -177,7 +176,7 @@ Beginnen Sie damit, eine ODER-Container-Komponente innerhalb des standardmäßig
 
 Durch die Verwendung der Skript-Referenzkomponente kann die Bewertung einer Segmenteigenschaft an ein externes Skript delegiert werden. Sobald das Skript ordnungsgemäß konfiguriert ist, kann es als eine beliebige andere Komponente einer Segmentbedingung verwendet werden.
 
-#### Definieren eines Skripts für einen Verweis   {#defining-a-script-to-reference}
+#### Definieren eines Skripts für einen Verweis {#defining-a-script-to-reference}
 
 1. Fügen Sie die Datei zur clientlib `contexthub.segment-engine.scripts` hinzu.
 1. Implementieren Sie eine Funktion, durch die ein Wert ausgegeben wird. Beispiel:
@@ -225,7 +224,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. Fügen Sie eine **Skript-Referenz**-Komponente an der gewünschten Stelle des Segments hinzu.
 1. Öffnen Sie das Dialogfeld der **Skript-Referenz**-Komponente. Ist das Skript [ordnungsgemäß konfiguriert](/help/sites-administering/segmentation.md#defining-a-script-to-reference), sollte es im Dropdown-Menü **Skriptname** verfügbar sein.
 
-## Testen der Anwendung eines Segments   {#testing-the-application-of-a-segment}
+## Testen der Anwendung eines Segments  {#testing-the-application-of-a-segment}
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe von **[ContextHub](/help/sites-authoring/ch-previewing.md) getestet werden.**
 
@@ -262,6 +261,6 @@ Wenn Sie mithilfe des obigen Beispiels zum Segment zur wichtigsten Alterszielgru
 
    ![chlimage_1-315](assets/chlimage_1-315.png)
 
-## Verwenden Ihres Segments   {#using-your-segment}
+## Verwenden Ihres Segments {#using-your-segment}
 
 Segmente werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. Unter [Verwalten von Zielgruppen](/help/sites-authoring/managing-audiences.md) finden Sie weitere Informationen zu Zielgruppen und Segmenten; unter [Bearbeiten gezielter Inhalte](/help/sites-authoring/content-targeting-touch.md) finden Sie weitere Informationen zur Nutzung von Zielgruppen und Segmenten zur gezielten Platzierung von Inhalten.

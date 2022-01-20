@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren der Kontoumgebung
-seo-title: Konfigurieren der Kontoumgebung
+seo-title: Configuring your account environment
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
-seo-description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: 01e76771-9ac8-4919-9e50-0a63826177d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 95%
+source-wordcount: '481'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 95%
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
-Mit der Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) im [Header](/help/sites-authoring/basic-handling.md#the-header) und dem zugehörigen Dialogfeld [Meine Voreinstellungen](#my-preferences) können Sie Ihre Benutzeroptionen ändern.
+Verwenden der [Benutzer](/help/sites-authoring/user-properties.md#user-settings) in der [header](/help/sites-authoring/basic-handling.md#the-header) und die zugehörigen [Benutzereinstellungen](#my-preferences) -Dialogfeld können Sie Ihre Benutzeroptionen ändern.
 
 ## Benutzereinstellungen {#user-settings}
 
@@ -41,7 +41,7 @@ Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
 
 ![screen_shot_2018-03-20at103808](assets/screen_shot_2018-03-20at103808.png)
 
-## Benutzereinstellungen{#my-preferences}
+## Benutzereinstellungen {#my-preferences}
 
 Auf das Dialogfeld **Benutzereinstellungen** kann über die Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) in der Kopfzeile zugegriffen werden.
 

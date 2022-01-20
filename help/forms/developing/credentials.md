@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Anmeldeinformationen
-seo-title: Arbeiten mit Anmeldeinformationen
+seo-title: Working with Credentials
 description: Importieren Sie Anmeldeinformationen mithilfe der Trust Manager-API und der Java-API in AEM Forms. Erfahren Sie außerdem, wie Sie Berechtigungen mithilfe der Trust Manager-API und der Java-API löschen.
-seo-description: Importieren Sie Anmeldeinformationen mithilfe der Trust Manager-API und der Java-API in AEM Forms. Erfahren Sie außerdem, wie Sie Berechtigungen mithilfe der Trust Manager-API und der Java-API löschen.
+seo-description: Import credentials into AEM Forms using the Trust Manager API and Java API. In addition, learn how to delete credentials using the Trust Manager API and Java API.
 uuid: b794428f-49bf-4a91-bc5f-d855881f4f38
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: 7dcfcee1-998e-41d8-badc-3106055e6ba7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1071'
 ht-degree: 12%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 12%
 
 Eine Berechtigung enthält Informationen zu Ihrem privaten Schlüssel, der zum Signieren bzw. Identifizieren von Dokumenten benötigt wird. Ein Zertifikat enthält Informationen zum öffentlichen Schlüssel, den Sie für die Trust Store-Verwaltung konfigurieren. AEM Forms verwendet Zertifikate und Berechtigungen für verschiedene Zwecke:
 
-* Acrobat Reader DC Extensions verwendet eine Berechtigung zur Aktivierung von Adobe Reader-Verwendungsrechten in PDF-Dokumenten. (Siehe [Anwenden von Verwendungsrechten auf PDF-Dokumente](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
-* Der Signature-Dienst greift beim Ausführen von Vorgängen wie dem digitalen Signieren von PDF-Dokumenten auf Zertifikate und Berechtigungen zu. (Siehe [PDF-Dokumente digital signieren](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+* Acrobat Reader DC Extensions verwendet eine Berechtigung zur Aktivierung von Adobe Reader-Verwendungsrechten in PDF-Dokumenten. (Siehe [Anwenden von Nutzungsrechten auf PDF-Dokumente](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+* Der Signature-Dienst greift beim Ausführen von Vorgängen wie dem digitalen Signieren von PDF-Dokumenten auf Zertifikate und Berechtigungen zu. (Siehe [Digitales Signieren von PDF-Dokumenten](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).
 
 Sie können programmgesteuert mit dem Berechtigungsdienst über die Java-API von Trust Manager interagieren. Sie können die folgenden Aufgaben ausführen:
 
@@ -34,13 +34,13 @@ Sie können programmgesteuert mit dem Berechtigungsdienst über die Java-API von
 
 >[!NOTE]
 >
->Sie können Zertifikate auch über Administration Console importieren und löschen. (Siehe [Administration-Hilfe.](https://www.adobe.com/go/learn_aemforms_admin_63))
+>Sie können Zertifikate auch über Administration Console importieren und löschen. (Siehe [Hilfe zur Administration.](https://www.adobe.com/go/learn_aemforms_admin_63))
 
-## Importing Credentials by using the Trust Manager API {#importing-credentials-by-using-the-trust-manager-api}
+## Importieren von Anmeldeinformationen mithilfe der Trust Manager-API {#importing-credentials-by-using-the-trust-manager-api}
 
-Sie können eine Berechtigung programmgesteuert mit der Trust Manager-API in AEM Forms importieren. Sie können beispielsweise eine Berechtigung importieren, die zum Signieren eines PDF-Dokuments verwendet wird. (Siehe [PDF-Dokumente digital signieren](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
+Sie können eine Berechtigung programmgesteuert mit der Trust Manager-API in AEM Forms importieren. Sie können beispielsweise eine Berechtigung importieren, die zum Signieren eines PDF-Dokuments verwendet wird. (Siehe [Digitales Signieren von PDF-Dokumenten](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
-Beim Importieren einer Berechtigung geben Sie einen Alias für die Berechtigung an. Der Alias wird verwendet, um einen Forms-Vorgang auszuführen, für den eine Berechtigung erforderlich ist. Nach dem Import kann eine Berechtigung in Administration Console angezeigt werden, wie in der folgenden Abbildung dargestellt. Beachten Sie, dass der Alias für die Berechtigung *Secure* lautet.
+Beim Importieren einer Berechtigung geben Sie einen Alias für die Berechtigung an. Der Alias wird verwendet, um einen Forms-Vorgang auszuführen, für den eine Berechtigung erforderlich ist. Nach dem Import kann eine Berechtigung in Administration Console angezeigt werden, wie in der folgenden Abbildung dargestellt. Beachten Sie, dass der Alias für die Berechtigung *Secure*.
 
 ![ww_ww_truststore](assets/ww_ww_truststore.png)
 
@@ -69,11 +69,11 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines Berechtigungsdienstclients**
 
-Bevor Sie eine Berechtigung programmgesteuert in AEM Forms importieren können, erstellen Sie einen Berechtigungsdienstclient. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Bevor Sie eine Berechtigung programmgesteuert in AEM Forms importieren können, erstellen Sie einen Berechtigungsdienstclient. Weitere Informationen finden Sie unter [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Referenz: Berechtigung**
 
@@ -95,7 +95,7 @@ Nachdem Sie auf die Berechtigung verwiesen haben, importieren Sie die Berechtigu
 
 [Löschen von Anmeldeinformationen mithilfe der Trust Manager-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-### Importieren Sie Anmeldeinformationen mit der Java-API {#import-credentials-using-the-java-api}
+### Importieren von Anmeldeinformationen mit der Java-API {#import-credentials-using-the-java-api}
 
 Importieren Sie eine Berechtigung mithilfe der Trust Manager-API (Java) in AEM Forms:
 
@@ -111,17 +111,17 @@ Importieren Sie eine Berechtigung mithilfe der Trust Manager-API (Java) in AEM F
 1. Referenz: Berechtigung
 
    * Erstellen Sie ein Objekt `java.io.FileInputStream`, indem Sie den Konstruktor verwenden. Übergeben Sie einen string -Wert, der den Speicherort der Berechtigung angibt.
-   * Erstellen Sie ein `com.adobe.idp.Document` -Objekt, das die Berechtigung mithilfe des Konstruktors `com.adobe.idp.Document` speichert. Übergeben Sie das `java.io.FileInputStream`-Objekt, das die Berechtigung enthält, an den Konstruktor.
+   * Erstellen Sie eine `com.adobe.idp.Document` -Objekt, das die Berechtigung mithilfe der `com.adobe.idp.Document` -Konstruktor. Übergeben Sie die `java.io.FileInputStream` -Objekt, das die Berechtigung für den Konstruktor enthält.
 
 1. Importvorgang durchführen
 
-   * Erstellen Sie ein Zeichenfolgen-Array, das ein Element enthält. Weisen Sie dem Element den Wert `truststore.usage.type.sign` zu.
-   * Rufen Sie die `importCredential` -Methode des Objekts `CredentialServiceClient` auf und übergeben Sie die folgenden Werte:
+   * Erstellen Sie ein Zeichenfolgen-Array, das ein Element enthält. Wert zuweisen `truststore.usage.type.sign` zum Element hinzu.
+   * Rufen Sie die `CredentialServiceClient` -Objekt `importCredential` -Methode verwenden und die folgenden Werte übergeben:
 
       * Ein string -Wert, der den Alias-Wert für die Berechtigung angibt.
-      * Die `com.adobe.idp.Document`-Instanz, in der die Berechtigung gespeichert wird.
+      * Die `com.adobe.idp.Document` -Instanz, die die Berechtigung speichert.
       * Ein string -Wert, der das Kennwort angibt, das mit der Berechtigung verknüpft ist.
-      * Das Zeichenfolgen-Array, das den Nutzungswert enthält. Sie können beispielsweise den Wert `truststore.usage.type.sign` angeben. Um eine Berechtigung für die Reader-Erweiterung zu importieren, geben Sie `truststore.usage.type.lcre` an.
+      * Das Zeichenfolgen-Array, das den Nutzungswert enthält. Sie können diesen Wert beispielsweise angeben `truststore.usage.type.sign`. Um eine Berechtigung für die Reader-Erweiterung zu importieren, geben Sie `truststore.usage.type.lcre`.
 
 **Siehe auch**
 
@@ -159,11 +159,11 @@ Fügen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie e
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines Berechtigungsdienstclients**
 
-Bevor Sie eine Berechtigung programmgesteuert löschen können, erstellen Sie einen Client des Data Integration Service. Beim Erstellen eines Service-Clients definieren Sie Verbindungseinstellungen, die zum Aufrufen eines Dienstes erforderlich sind. Weitere Informationen finden Sie unter [Festlegen von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+Bevor Sie eine Berechtigung programmgesteuert löschen können, erstellen Sie einen Client des Data Integration Service. Beim Erstellen eines Service-Clients definieren Sie Verbindungseinstellungen, die zum Aufrufen eines Dienstes erforderlich sind. Weitere Informationen finden Sie unter [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Löschvorgang durchführen**
 
@@ -194,7 +194,7 @@ Löschen Sie mithilfe der Trust Manager-API (Java) eine Berechtigung aus AEM For
 
 1. Löschvorgang durchführen
 
-   Rufen Sie die `deleteCredential` -Methode des Objekts `CredentialServiceClient` auf und übergeben Sie einen string -Wert, der den Aliaswert angibt.
+   Rufen Sie die `CredentialServiceClient` -Objekt `deleteCredential` -Methode und übergeben Sie einen string -Wert, der den Alias-Wert angibt.
 
 **Siehe auch**
 

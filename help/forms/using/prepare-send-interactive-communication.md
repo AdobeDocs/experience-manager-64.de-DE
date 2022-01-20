@@ -1,17 +1,17 @@
 ---
 title: Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten vorbereiten und senden
-seo-title: Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten vorbereiten und senden
+seo-title: Prepare and send Interactive Communication using the Agent UI
 description: 'Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck. '
-seo-description: Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten vorbereiten und senden
+seo-description: Prepare and send Interactive Communication using the Agent UI
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
-feature: Interaktive Kommunikation
+feature: Interactive Communication
 exl-id: 5ec33ef5-1722-4d29-9979-d8da32923e66
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1340'
 ht-degree: 55%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 55%
 
 Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Nachdem eine interaktive Kommunikation erstellt wurde, kann der Agent die interaktive Kommunikation in der Benutzeroberfläche für Agenten öffnen und eine empfängerspezifische Kopie vorbereiten, indem er Daten eingibt und Inhalte und Anlagen verwaltet. Schließlich kann der Agent die interaktive Kommunikation an einen Nachbearbeitungsprozess senden.
 
@@ -30,7 +30,7 @@ Beim Vorbereiten der interaktiven Kommunikation mithilfe der Benutzeroberfläche
 * **Inhalt**: Auf der Registerkarte „Inhalt“ verwalten Sie den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation. Der Agent kann die Änderungen im Dokumentfragment so vornehmen, wie es beim Erstellen der interaktiven Kommunikation in den Eigenschaften dieser Dokumentfragmente zulässig ist. Der Agent kann auch ein Dokumentfragment neu anordnen, hinzufügen/entfernen und Seitenumbrüche hinzufügen, sofern dies zulässig ist.
 * **Anhänge**: Die Registerkarte &quot;Anlagen&quot;wird nur dann in der Benutzeroberfläche für Agenten angezeigt, wenn die interaktive Kommunikation über Anlagen verfügt oder der Agent über Bibliothekszugriff verfügt. Der Agent darf die Anlagen ändern oder bearbeiten.
 
-## Vorbereiten der interaktiven Kommunikation mithilfe der Benutzeroberfläche für Agenten {#prepare-interactive-communication-using-the-agent-ui}
+## Vorbereiten der interaktiven Kommunikation über die Benutzeroberfläche für Agenten {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare &amp; Dokumente]**.
 1. Wählen Sie die entsprechende interaktive Kommunikation aus und tippen Sie auf **[!UICONTROL Benutzeroberfläche für Agenten öffnen]**.
@@ -49,7 +49,7 @@ Beim Vorbereiten der interaktiven Kommunikation mithilfe der Benutzeroberfläche
 
 ### Daten eingeben {#enter-data}
 
-1. Geben Sie auf der Registerkarte „Daten“ die erforderlichen Daten für Variablen, Formulardatenmodelleigenschaften und Druckvorlagenfelder (XDP) ein. Füllen Sie alle Pflichtfelder aus, die mit einem Sternchen (&amp;ast;) gekennzeichnet sind, um die Schaltfläche **Submit** zu aktivieren.
+1. Geben Sie auf der Registerkarte „Daten“ die erforderlichen Daten für Variablen, Formulardatenmodelleigenschaften und Druckvorlagenfelder (XDP) ein. Füllen Sie alle Pflichtfelder aus, die mit einem Sternchen (&amp;ast;) gekennzeichnet sind, um die **Einsenden** Schaltfläche.
 
    Tippen Sie auf einen Datenfeldwert in der Vorschau der interaktiven Kommunikation, um das entsprechende Datenfeld auf der Registerkarte Daten zu markieren oder umgekehrt.
 
@@ -67,9 +67,9 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   Auf der Registerkarte &quot;Inhalt&quot;oder &quot;Daten&quot;können Sie durch Tippen auf &quot;Markieren Sie ausgewählte Module im Inhalt&quot;( ![marklightsselectedModulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) oben links in der Vorschau eine Funktion aktivieren oder deaktivieren, die bewirkt, dass beim Tippen auf den relevanten Text oder Absatz bzw. das Datenfeld in der Vorschau die gewünschten Module aufgerufen werden.
+   Tippen Sie auf der Registerkarte Inhalt oder Daten auf Markieren Sie ausgewählte Module im Inhalt ( ![highlightselektedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) oben links in der Vorschau können Sie die Funktion aktivieren oder deaktivieren, die bewirkt, dass das Dokumentfragment aufgerufen wird, wenn in der Vorschau auf den relevanten Text, Absatz oder das Datenfeld getippt/ausgewählt wird.
 
-   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden dürfen, haben das Symbol Ausgewählten Inhalt bearbeiten ( ![iconeditsselectedContent](assets/iconeditselectedcontent.png)) . Tippen Sie auf das Symbol „Ausgewählten Inhalt bearbeiten“, um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
+   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden dürfen, haben die Option Ausgewählten Inhalt bearbeiten ( ![iconeditsselectedContent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol „Ausgewählten Inhalt bearbeiten“, um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
 
    * [Formatierungsoptionen](#formattingtext)
 
@@ -78,9 +78,9 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
    * [Sonderzeichen](#specialcharacters)
    * [Tastaturbefehle](/help/forms/using/keyboard-shortcuts.md)
 
-   Weitere Informationen zu den Aktionen, die für verschiedene Dokumentfragmente in der Benutzeroberfläche für Agenten verfügbar sind, finden Sie unter [Aktionen und Informationen, die in der Benutzeroberfläche für Agenten](#actionsagentui) verfügbar sind.
+   Weitere Informationen zu den Aktionen, die für verschiedene Dokumentfragmente in der Benutzeroberfläche &quot;Agent&quot;verfügbar sind, finden Sie unter [Auf der Benutzeroberfläche &quot;Agent&quot;verfügbare Aktionen und Informationen](#actionsagentui).
 
-1. Um der Druckausgabe der interaktiven Kommunikation einen Seitenumbruch hinzuzufügen, platzieren Sie den Cursor an die Stelle, an der Sie einen Seitenumbruch einfügen möchten, und wählen Sie &quot;Seitenumbruch vor&quot;oder &quot;Seitenumbruch nach&quot;( ![pageBreak before](assets/pagebreakbeforeafter.png)).
+1. Um der Druckausgabe der interaktiven Kommunikation einen Seitenumbruch hinzuzufügen, platzieren Sie den Cursor an die Stelle, an der Sie einen Seitenumbruch einfügen möchten, und wählen Sie &quot;Seitenumbruch vor&quot;oder &quot;Seitenumbruch nach&quot;( ![pageEventAfter](assets/pagebreakbeforeafter.png)).
 
    Ein Platzhalter für einen expliziten Seitenumbruch wird in der interaktiven Kommunikation eingefügt. Sie können in der Druckvorschau anzeigen, wie sich ein expliziter Seitenumbruch auf die interaktive Kommunikation auswirkt.
 
@@ -88,15 +88,15 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    Fahren Sie mit der Verwaltung der Anlagen der interaktiven Kommunikation fort.
 
-### Anlagen verwalten  {#manage-attachments}
+### Anlagen verwalten {#manage-attachments}
 
-1. Wählen Sie **[!UICONTROL Attachment]** aus. Die Benutzeroberfläche für Agenten zeigt die verfügbaren Anlagen so an, wie sie beim Erstellen der interaktiven Kommunikation eingerichtet wurden.
+1. Auswählen **[!UICONTROL Anhang]**. Die Benutzeroberfläche für Agenten zeigt die verfügbaren Anlagen so an, wie sie beim Erstellen der interaktiven Kommunikation eingerichtet wurden.
 
    Sie können festlegen, dass keine Anlage zusammen mit der interaktiven Kommunikation gesendet werden soll, indem Sie auf das Ansichtssymbol tippen. Sie können dann auf das Kreuz in der Anlage tippen, um sie aus der interaktiven Kommunikation zu löschen (wenn der Agent die Anlage löschen oder ausblenden darf). Für die Anhänge, die beim Erstellen der interaktiven Kommunikation als obligatorisch festgelegt wurden, sind die Symbole „Anzeigen“ und „Löschen“ deaktiviert.
 
    ![attachmentsagentui](assets/attachmentsagentui.png)
 
-1. Tippen Sie auf das Symbol Bibliothekszugriff ( ![Bibliothekszugriff](assets/libraryaccess.png)), um auf die Inhaltsbibliothek zuzugreifen und DAM-Assets als Anhänge einzufügen.
+1. Tippen Sie auf den Bibliothekszugriff ( ![Bibliothekszugriff](assets/libraryaccess.png)), um auf die Inhaltsbibliothek zuzugreifen und DAM-Assets als Anhänge einzufügen.
 
    >[!NOTE]
    >
@@ -105,13 +105,13 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 1. Wenn die Reihenfolge der Anhänge beim Erstellen der interaktiven Kommunikation nicht gesperrt war, können Sie die Reihenfolge der Anhänge neu anordnen, indem Sie einen Anhang auswählen und auf die Pfeile nach unten oder nach oben tippen.
 1. Verwenden Sie Webvorschau und Druckvorschau, um zu sehen, ob die beiden Ausgaben Ihren Anforderungen entsprechen.
 
-   Wenn die Vorschau Ihren Vorstellungen entspricht, tippen Sie auf **[!UICONTROL Senden]** , um die interaktive Kommunikation an einen Nachbearbeitungsprozess zu senden/zu senden. Oder um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den vorgenommenen Änderungen zurückzukehren.
+   Wenn die Vorschau Ihren Vorstellungen entspricht, tippen Sie auf . **[!UICONTROL Einsenden]** , um die interaktive Kommunikation an einen Nachbearbeitungsprozess zu senden. Oder um Änderungen vorzunehmen, beenden Sie die Vorschau, um zu den vorgenommenen Änderungen zurückzukehren.
 
 ## Text formatieren {#formattingtext}
 
 Beim Bearbeiten eines Textfragments in der Benutzeroberfläche für Agenten ändert sich die Symbolleiste abhängig vom Typ der von Ihnen vorgenommenen Änderungen: Schriftart, Absatz oder Liste:
 
-![](assets/typeofformattingtoolbar.png) ![typeofformattingtoolbarFont-Symbolleiste](do-not-localize/fonttoolbar.png)
+![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Schrift-Symbolleiste](do-not-localize/fonttoolbar.png)
 
 Schriftart-Symbolleiste
 
@@ -135,12 +135,12 @@ Um Teile eines Textes in einem bearbeitbaren Fragment hervorzuheben, wählen Sie
 
 ### Sonderzeichen in Text einfügen {#specialcharacters}
 
-Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung](/help/forms/using/custom-special-characters.md) hinzufügen.
+Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](/help/forms/using/custom-special-characters.md).
 
 #### Anlagenübermittlung {#attachmentdelivery}
 
-* Wenn die interaktive Kommunikation mit serverseitigen APIs als interaktive oder nicht interaktive PDF gerendert wird, enthält die gerenderte PDF-Datei Anlagen als PDF-Anlagen.
-* Wenn ein mit einer interaktiven Kommunikation verknüpfter Nachbearbeitungsprozess als Teil des Sendevorgangs mit der Benutzeroberfläche für Agenten geladen wird, werden Anlagen als Parameter List&lt;com.adobe.idp.Document> inAttachmentDocs übergeben.
+* Wenn die interaktive Kommunikation mit serverseitigen APIs als interaktive oder nicht interaktive PDF gerendert wird, enthält die gerenderte PDF Anlagen als PDF-Anhänge.
+* Wenn ein mit einer interaktiven Kommunikation verknüpfter Nachbearbeitungsprozess als Teil des Sendevorgangs mit der Benutzeroberfläche für Agenten geladen wird, werden Anlagen als Liste übergeben&lt;com.adobe.idp.document> inAttachmentDocs -Parameter.
 * Vordefinierte Übermittlungsmechanismen, wie z. B. E-Mail und Drucken, übermitteln auch Anlagen zusammen mit einer PDF-Datei der interaktiven Kommunikation.
 
 ## Aktionen und Informationen, die auf der Benutzeroberfläche für Agenten verfügbar sind {#actionsagentui}
@@ -153,7 +153,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * **Löschen**: Wenn zulässig, löschen Sie das Dokumentfragment aus der interaktiven Kommunikation.
 * **Seitenumbruch vor** (anwendbar für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch vor dem Dokumentfragment ein.
 * **Einzug:** Einzug eines Dokumentenfragments vergrößern oder verkleinern.
-* **Seitenumbruch nach**  (gilt für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch nach dem Dokumentfragment ein.
+* **Seitenumbruch nach** (gilt für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch nach dem Dokumentfragment ein.
 
 ![docfragoptions](assets/docfragoptions.png)
 
@@ -162,7 +162,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein/schließt sie daraus aus.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Dokumentfragment an.
 
-### Listendokumentfragmente  {#list-document-fragments}
+### Listendokumentfragmente {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 

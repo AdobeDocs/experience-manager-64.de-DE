@@ -13,7 +13,7 @@ exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
 source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 46%
+ht-degree: 47%
 
 ---
 
@@ -54,7 +54,7 @@ Wenn Sie Microsoft Edge als Browser verwenden:
 * **Cloud-Einstellungen:** Konsole wird nach der Bearbeitung des Konfigurations-Containers beschädigt. (GRANITE-20726)
 * **Sicherheit:** Die IMS-Integration schlägt mit dem benutzerdefinierten Kontextpfad fehl. (GRANITE-20639)
 * **Sicherheit:** Verbessern der standardmäßigen JAAS-Rangfolge von SSO, externen und standardmäßigen Anmeldemodulen (GRANITE-20590)
-* **Tooling - CRX DE Lite:** Der Rand der Ansicht &quot;Properties&quot;bewegt sich weiter nach oben (GRANITE-12040)
+* **Tooling - CRX DE Lite:** Die Ansicht &quot;Ridge of Properties&quot;bewegt sich weiter nach oben (GRANITE-12040)
 * **Tooling - CRX DE Lite:** Änderungen an &quot;Long&quot;-Werttypen können nur gespeichert werden, wenn Sie auf Eigenschaftsname doppelklicken. (GRANITE-12351)
 
 * **Tooling - CRX DE Lite:** Strg+F-Suche in geöffneten Textdateien hängt bei der RegExp-Suche hängen (GRANITE-5996).
@@ -142,5 +142,5 @@ Wenn Sie Microsoft Edge als Browser verwenden:
 * In adaptiven Formularen nimmt die Diagramm-Komponente mehr Platz ein, als es normalerweise der Fall ist.
 * Beim Speichern von Eigenschaften für adaptive Formulare, adaptive Formularfragmente oder interaktive Kommunikation in der Forms Manager-Benutzeroberfläche wird eine Ausnahme zurückgegeben.
 * Die angegebene maximale Zeichenanzahl für ein adaptives Formulartextfeld wird auf Samsung-Geräten mit Android 6.0 nicht berücksichtigt. (Referenznummer CQ-4235205)
-* Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird jetzt der Inhalt der Datei zuverlässig gesendet und am anderen Ende wird keine Datei mit 0 Byte mehr empfangen. Apple iOS 15.1 bietet eine Fehlerbehebung.
+* Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird der Inhalt der Datei jetzt zuverlässig gesendet. Apple iOS 15.1 bietet eine Korrektur für das Problem.
 

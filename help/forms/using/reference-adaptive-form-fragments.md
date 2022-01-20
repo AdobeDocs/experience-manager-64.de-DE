@@ -19,7 +19,7 @@ ht-degree: 92%
 
 [Adaptives Formularfragment](/help/forms/using/adaptive-form-fragments.md) ist eine Gruppe von Feldern oder ein Fenster, das eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment per Drag &amp; Drop in ein Formular mit dem Asset-Browser in der Seitenleiste einfügen und Sie können es im Formulareditor bearbeiten.
 
-Für Autoren adaptiver Formulare werden Referenzfragmente im Add-On-Paket [AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) bereitgestellt. Es beinhaltet folgende Fragmente:
+Für Autoren adaptiver Formulare werden Referenzfragmente im [AEM Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Es beinhaltet folgende Fragmente:
 
 * Adresse
 * Kontaktangaben

@@ -1,8 +1,8 @@
 ---
 title: Bereitstellen von Dynamic Media-Assets
-seo-title: Bereitstellen von Dynamic Media-Assets
+seo-title: Delivering Dynamic Media Assets
 description: Informationen zum Bereitstellen von Dynamic Media-Assets
-seo-description: Informationen zum Bereitstellen von Dynamic Media-Assets
+seo-description: Learn how to deliver dynamic media assets
 uuid: e87754a9-4c34-4658-9971-cd7ceb26523f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
-feature: Asset-Management
+feature: Asset Management
 role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '317'
 ht-degree: 91%
 
 ---
@@ -48,7 +48,7 @@ Weitere Informationen finden Sie in den folgenden Themen:
 * [Ungültigmachen von Inhalten im CDN-Cache  ](invalidate-cdn-cached-content.md)
 * [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)
 
-## Bereitstellung von Dynamic Media-Assets über HTTP/2   {#http-delivery-of-dynamic-media-assets}
+## Bereitstellung von Dynamic Media-Assets über HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
 AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
 

@@ -17,8 +17,8 @@ AEM 6.4 befolgt die neuesten Best Practices für Paketverwaltung und Projektstru
 >
 >Weitere Informationen finden Sie unter:
 >
->* Der Artikel [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service Dokumentation zur Strukturierung moderner AEM.
->* Die [AEM Dokumentation zum Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) zum Starten eines neuen AEM mit dem Archetyp.
->* Der Artikel [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) in der AEM as a Cloud Service Dokumentation zur Bereitstellung AEM Anwendungen.
+>* Die [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service Dokumentation für die Strukturierung moderner AEM.
+>* Die [AEM Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) Dokumentation zum Starten eines neuen AEM mit dem Archetyp.
+>* Die [Adobe Content Package Maven-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) in der AEM as a Cloud Service Dokumentation für die Bereitstellung AEM Anwendungen.
 >
 >Alle drei Dokumente gelten für AEM 6.4.

@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Launches
-seo-title: Erstellen von Launches
+seo-title: Creating Launches
 description: Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben.
-seo-description: Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben.
+seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,8 +13,8 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2f5c022e-bd98-4912-9409-d08137a1caf1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 96%
+source-wordcount: '370'
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 Erstellen Sie einen Launch, um die Aktualisierung einer neuen Version bestehender Web-Seiten für die zukünftige Aktivierung zu aktivieren. Wenn Sie einen Launch erstellen, können Sie einen Titel und die Quellseite angeben:
 
-* Der Titel wird im **Sidekick** angezeigt, von wo aus Autoren darauf zugreifen können, um daran zu arbeiten.
+* Der Titel wird im **Sidekick**, von wo aus Autoren darauf zugreifen können, um an ihnen zu arbeiten.
 * Die untergeordneten Seiten der Quellseiten werden standardmäßig in den Launch eingeschlossen. Sie können bei Bedarf nur die Quellseite verwenden.
 * Standardmäßig aktualisiert [Live Copy](/help/sites-administering/msm.md) automatisch die Launch-Seiten, wenn sich die Quellseiten ändern. Zur Vermeidung automatischer Änderungen können Sie festlegen, dass eine statische Kopie erstellt wird.
 

@@ -1,8 +1,8 @@
 ---
 title: In-Context-Moderation
-seo-title: In-Context-Moderation
+seo-title: In-Context Moderation
 description: So führen Sie Moderatoraktionen durch
-seo-description: So führen Sie Moderatoraktionen durch
+seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '789'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 Für AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite erfolgen, auf der die Community-Inhalte veröffentlicht wurden.
 
-Bei Verwendung einer [Moderationskonsole](moderation.md) enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die beim Moderieren im Kontext verfügbar sind.
+Bei Verwendung von [Moderationskonsole](moderation.md)enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die bei der Moderation im Kontext verfügbar sind.
 
 ## Moderationsaktionen {#moderation-actions}
 
-In der Moderationsübersicht finden Sie eine Beschreibung von [Moderationsaktionen](moderate-ugc.md#moderation-actions).
+Eine Beschreibung der [Moderationsaktionen](moderate-ugc.md#moderation-actions).
 
 ## Moderationsbenutzeroberfläche {#moderation-ui}
 
@@ -40,11 +40,11 @@ Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz ang
 
 ## Beispiel {#example}
 
-Mithilfe der Site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) , die beim [Erste Schritte mit AEM Communities](getting-started.md) erstellt wurde, ist es möglich, schnell einen Thread in einem Forum einzurichten, in dem verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung erleben können, wie unten dargestellt.
+Verwenden der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) Site erstellt, wenn [Erste Schritte mit AEM Communities](getting-started.md)können Sie schnell einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung erleben können, wie unten dargestellt.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Website zur Community-Interaktion-Moderatoren-Gruppe hinzufügte.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) kann mithilfe der [Members console](members.md) als Mitglied der Community-Interaktionsmitgliedergruppe hinzugefügt werden.
+Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied der Community-Engagement-Mitgliedergruppe hinzugefügt werden, indem die [Mitgliederkonsole](members.md).
 
 Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
@@ -96,9 +96,9 @@ Ein anonymer Site-Besucher kann nur das Forum anzeigen, jedoch keine Inhalte pos
 
 ### Neues Mitglied (#4) {#new-member}
 
-Melden Sie sich beim Autor als Administrator an und fügen Sie Boyd Larsen (boyd.larsen@dodgit.com) als neues Mitglied der Gruppe &quot;community-engage-members&quot;hinzu, indem Sie die [Mitglieder Console](members.md) verwenden und dann abmelden.
+Melden Sie sich auf der Autoreninstanz als Administrator an und fügen Sie Boyd Larsen (boyd.larsen@dodgit.com) als neues Mitglied der Community-Interaktionsmitgliedern-Gruppe hinzu, indem Sie die [Mitgliederkonsole](members.md)und dann abmelden.
 
-Melden Sie sich bei der Veröffentlichung als Boyd Larsen an und greifen Sie auf den Thread zu, indem Sie `Forum` und dann `Read more` für den Kohlingvogelpost auswählen.
+Melden Sie sich bei der Veröffentlichung als Boyd Larsen an und greifen Sie auf den Thread zu, indem Sie `Forum`, und dann `Read more` für den Kolibris Post.
 
 Hinweis
 
@@ -123,7 +123,7 @@ Hinweis
 
 ![Community-Admin-Forum](assets/communityadmin-forum.png)
 
-Wählen Sie das Menüelement Administration aus, um in der Veröffentlichungsumgebung auf die [Moderationskonsole](moderation.md) zuzugreifen.
+Wählen Sie das Menüelement Administration aus, um auf [Moderationskonsole](moderation.md) aus der Veröffentlichungsumgebung.
 
 Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Community-Site &quot;Geometrixx Engage&quot;.
 
@@ -146,7 +146,7 @@ Hinweis
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-Wählen Sie das Menüelement Administration aus, um in der Veröffentlichungsumgebung auf die [Moderationskonsole](moderation.md) zuzugreifen.
+Wählen Sie das Menüelement Administration aus, um auf [Moderationskonsole](moderation.md) aus der Veröffentlichungsumgebung.
 
 Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage Community-Site angezeigt werden.
 

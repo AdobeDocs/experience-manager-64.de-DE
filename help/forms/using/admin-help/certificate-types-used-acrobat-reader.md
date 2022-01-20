@@ -1,8 +1,8 @@
 ---
 title: 'Von Acrobat Reader DC Extensions verwendete Zertifikatstypen '
-seo-title: 'Von Acrobat Reader DC Extensions verwendete Zertifikatstypen '
+seo-title: Certificate types used by Acrobat Reader DC extensions
 description: Erfahren Sie mehr über die Zertifikatstypen, die in Acrobat Reader DC-Erweiterungen verwendet werden.
-seo-description: Erfahren Sie mehr über die Zertifikatstypen, die in Acrobat Reader DC-Erweiterungen verwendet werden.
+seo-description: Learn about the certificate types used by Acrobat Reader DC extensions.
 uuid: 93c02abc-2d5a-44ed-b93c-981afbd0553d
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
 exl-id: 8a65d9cc-33d0-4176-97e1-70ad67cbb982
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '936'
 ht-degree: 89%
 
 ---
@@ -26,7 +26,7 @@ Die Zertifikatsanzeige enthält die folgenden Informationen zum Zertifikat:
 * Gültigkeitsdauer
 * Acrobat Reader DC Extensions-Verwendungsrechte
 
-## Anzeigenamen des Zertifikats  {#certificate-friendly-name}
+## Anzeigenamen des Zertifikats {#certificate-friendly-name}
 
 Der Anzeigename eines Acrobat Reader DC Extensions-Zertifikats ist eine Zeichenfolge mit den Eigenschaften des Zertifikats (siehe folgendes Beispiel):
 
@@ -34,7 +34,7 @@ ARE 2D Barcode Full Production V6.1 P8 0002054
 
 Die Zeichenfolge enthält folgende Elemente:
 
-**Zertifikatstyp:** Beschreibt die AEM Formularmodule, die vom Zertifikat aktiviert werden, und den Aktivierungsgrad, z. B. ARE 2D Barcode Full. Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
+**Zertifikatstyp:** Beschreibt die AEM Formularmodule, die das Zertifikat aktiviert, und den Aktivierungsgrad, z. B. ARE 2D Barcode Full. Eine Liste der verfügbaren Zertifikatstypen finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Typ“.
 
 **Bereitstellungstyp:** Gibt die vorgesehene Verwendung des Zertifikats an, z. B. Produktion. Der Wert kann „Test“ oder „Produktion“ lauten. Eine Liste der Bereitstellungstypen für jeden Zertifikatstyp finden Sie im Abschnitt „Zertifikatprofile“ in der Tabelle in der Spalte „Bereitstellungstyp“.
 
@@ -44,7 +44,7 @@ Die Zeichenfolge enthält folgende Elemente:
 
 **Seriennummer:** Jedem von der Adobe ausgestellten Zertifikat wird eine Seriennummer zugewiesen, z. B. 0002054. Der Support von Adobe Enterprise oder ein Adobe Enterprise-Kundenbetreuer kann anhand dieser Seriennummer das Zertifikat einer bestimmten Produktbestellung oder einem OEM-Vertrag zuordnen.
 
-## Zertifikatprofile  {#certificate-profiles}
+## Zertifikatprofile {#certificate-profiles}
 
 Die folgende Tabelle enthält die Zertifikatprofile, die Sie beim Analysieren von Acrobat Reader DC Extensions-Zertifikaten vorfinden können.
 
@@ -145,7 +145,7 @@ Die folgende Tabelle enthält die Zertifikatprofile, die Sie beim Analysieren vo
  </tbody> 
 </table>
 
-## Gültigkeitsdauer  {#validity-period}
+## Gültigkeitsdauer {#validity-period}
 
 Testzertifikate werden Kunden und Entwicklern ausgestellt, damit diese Beispielanwendungen für Produkte entwickeln und testen können. Die Gültigkeitsdauer dieser Zertifikate ist 60 bis 90 Tage. Der Ablauf erfolgt am Ende des zweiten Monats nach dem Datum der Ausstellung.
 
@@ -155,7 +155,7 @@ Zertifikate für die interne Verwendung bei Adobe werden innerhalb des Unternehm
 
 Produktionszertifikate werden an Kunden, die Acrobat Reader DC Extensions erworben haben, ausgegeben. Diese Zertifikate sind für den von der Zertifizierungsstelle maximal zugelassenen Zeitraum gültig (siehe die Spalte „*Maximal*“ in der Tabelle „Zertifikatprofile“).
 
-## Acrobat Reader DC Extensions-Verwendungsrechte  {#acrobat-reader-dc-extensions-usage-rights}
+## Acrobat Reader DC Extensions-Verwendungsrechte {#acrobat-reader-dc-extensions-usage-rights}
 
 Wenn Sie das Acrobat Reader DC Extensions-Zertifikat in der Zertifikatanzeige untersuchen, können Sie das Element „Verwendungsrechte“ auf der Registerkarte „Details“ auswählen (falls konfiguriert), um eine in Elemente untergliederte Liste der Adobe Reader-Verwendungsrechte anzuzeigen, die vom Zertifikat aktiviert werden können. Die für ein bestimmtes Dokument aktivierten Verwendungsrechte stellen eine Teilmenge der vom Zertifikat aktivierten Rechte dar.
 

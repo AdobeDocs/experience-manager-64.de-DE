@@ -1,8 +1,8 @@
 ---
 title: Form Bridge APIs für HTML5-Formulare
-seo-title: Form Bridge APIs für HTML5-Formulare
+seo-title: Form Bridge APIs for HTML5 forms
 description: Externe Anwendungen verwenden die FormBridge-APIs, um eine Verbindung mit dem XFA Mobile Form herzustellen. Die API löst ein FormBridgeInitialized-Ereignis auf dem übergeordneten Fenster aus.
-seo-description: Externe Anwendungen verwenden die FormBridge-APIs, um eine Verbindung mit dem XFA Mobile Form herzustellen. Die API löst ein FormBridgeInitialized-Ereignis auf dem übergeordneten Fenster aus.
+seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
 uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,16 +11,16 @@ discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: ad669f3b-2bda-4c41-8032-cf25a192ce12
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 42%
+source-wordcount: '939'
+ht-degree: 40%
 
 ---
 
-# Form Bridge APIs für HTML5-Formulare  {#form-bridge-apis-for-html-forms}
+# Form Bridge APIs für HTML5-Formulare {#form-bridge-apis-for-html-forms}
 
-Sie können die Form Bridge-APIs verwenden, um einen Kommunikationskanal zwischen XFA-basierten HTML5-Formularen und Ihren Anwendungen zu öffnen. Die Form Bridge-APIs bieten eine **connect**-API zum Erstellen der Verbindung.
+Sie können die Form Bridge-APIs verwenden, um einen Kommunikationskanal zwischen XFA-basierten HTML5-Formularen und Ihren Anwendungen zu öffnen. Die Form Bridge-APIs bieten eine **connect** API zum Erstellen der Verbindung.
 
-Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine erfolgreiche Verbindung zwischen XFA-basierten HTML5-Formularen und Form Bridge erstellt wurde, wird der Handle aufgerufen.
+Die **Verbindungs**-API akzeptiert einen Handler als ein Argument. Nachdem eine erfolgreiche Verbindung zwischen XFA-basiertem HTML5-Formular und Form Bridge erstellt wurde, wird der Handle aufgerufen.
 
 Sie können den folgenden Beispielcode verwenden, um die Verbindung zu erstellen.
 
@@ -49,14 +49,14 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 * **Ausgabe**: Versionsnummer der Skriptbibliothek
 * **Fehler:** keine
 
-**isConnected()**  Prüft, ob der Formularstatus initialisiert wurde
+**isConnected()** Prüft, ob der Formularstatus initialisiert wurde
 
 * **Eingabe:** keine
-* **Ausgabe**:  **** Überprüfen des XFA-Formularstatus auf seine Initialisierung
+* **Ausgabe**: **True** , wenn der XFA-Formularstatus initialisiert wurde
 
 * **Fehler:** keine
 
-**connect(handler, context)** Stellt eine Verbindung zu FormBridge her und führt die Funktion aus, nachdem die Verbindung hergestellt und der Formularstatus initialisiert wurde
+**connect(handler, context)** Stellt eine Verbindung zu FormBridge her und führt die Funktion aus, nachdem die Verbindung hergestellt und der Formularstatus initialisiert wurde.
 
 * **Eingabe**:
 
@@ -66,7 +66,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 * **Ausgabe:** keine
 * **Fehler:** keine
 
-**getDataXML(options)** Gibt die aktuellen Formulardaten im XML-Format zurück
+**getDataXML(options)** Gibt die aktuellen Formulardaten im XML-Format aus
 
 * **Eingabe:**
 
@@ -85,7 +85,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 * **Eingabe:**
 
-   * **configName:** Name der Konfiguration, die überschrieben werden soll
+   * **configName:** Name der zu überschreibenden Konfiguration
 
       * **widgetConfig:** Ermöglicht dem Benutzer, die Standard-Widgets im Formular mit benutzerdefinierten Widgets zu überschreiben. Die Konfiguration wird überschrieben wie folgt:
 
@@ -109,7 +109,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
         }
       ```
 
-      * **SubmitServiceProxyConfig:** Erlauben Sie Benutzern, die Sendedienste und Logger-Proxy-Dienste zu registrieren.
+      * **SubmitServiceProxyConfig:** Erlauben Sie Benutzern, die Proxy-Dienste für Übermittlung und Protokollierung zu registrieren.
 
          ```css
          window.formBridge.registerConfig("submitServiceProxyConfig",  
@@ -127,7 +127,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 * **Fehler:** keine
 
-**hideFields(fieldArray)**  Blendet die Felder aus, deren SOM-Ausdrücke im fieldArray bereitgestellt werden. Setzt diepresence-Eigenschaft der angegebenen Felder auf invisible
+**hideFields(fieldArray)** Blendet die Felder aus, deren SOM-Ausdrücke im fieldArray bereitgestellt werden. Setzt diepresence-Eigenschaft der angegebenen Felder auf invisible
 
 * **Eingabe:**
 
@@ -145,34 +145,34 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 * **Ausgabe:** keine
 * **Fehler:** keine
 
-**hideSubmitButtons()**  Blendet alle Senden-Schaltflächen im Formular aus.
+**hideSubmitButtons()** Blendet alle Senden-Schaltflächen im Formular aus
 
 * **Eingabe:** keine
 * **Ausgabe:** keine
 * **Fehler:** Gibt einen Ausnahmefehler aus, wenn Formularstatus nicht initialisiert wurde.
 
-**getFormState()** Gibt die JSON-Datei zurück, die den Formularstatus darstellt
+**getFormState()** Gibt die JSON-Datei aus, die den Formularstatus darstellt
 
 * **Eingabe:** keine
-* **Ausgabe:** Objekt, das JSON enthält, das den aktuellen Formularstatus in der  ** Dateneigenschaft darstellt.
+* **Ausgabe:** Objekt, das JSON enthält, das den aktuellen Formularstatus in *data* -Eigenschaft.
 
 * **Fehler:** keine
 
-**restoreFormState(options)** Stellt den Formularstatus aus dem bereitgestellten JSON-Status im Optionsobjekt wieder her. Der Status wird angewendet und Erfolgs- oder Fehlerhandler werden aufgerufen, nachdem der Vorgang ist abgeschlossen ist.
+**restoreFormState(options)** Stellt den Formularstatus im bereitgestellten JSON-Status im Optionsobjekt wieder her. Der Status wird angewendet und Erfolgs- oder Fehlerhandler werden aufgerufen, nachdem der Vorgang ist abgeschlossen ist.
 
 * **Eingabe:**
 
-   * **Optionen:**  JavaScript-Objekt, das die folgenden Eigenschaften enthält:
+   * **Optionen:** JavaScript-Objekt, das die folgenden Eigenschaften enthält:
 
       * **Error:** Fehlerhandler-Funktion
       * **success:** Erfolgshandler-Funktion
-      * **context**: Das Objekt, auf das der Kontext (dies) der  ** Funktion &quot;success&quot;festgelegt wird.
+      * **context**: Das Objekt, dem der Kontext (dies) des *success* -Funktion festgelegt
       * **formState:** JSON-Status des Formulars. Das Formular wird im JSON-Status wiederhergestellt.
 
 * **Ausgabe:** keine
 * **Fehler:** keine
 
-**setFocus (som)** Legt den Fokus auf das im SOM-Ausdruck angegebene Feld.
+**setFocus (som)** Legt den Fokus auf das im SOM-Ausdruck angegebene Feld
 
 * **Eingabe:** SOM-Ausdruck des Felds, auf das der Fokus gesetzt werden soll
 * **Ausgabe:** keine
@@ -183,19 +183,19 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 * **Eingabe:**
 
    * **som:** Array, das SOM-Ausdrücke des Felds enthält. Der SOM-Ausdruck, der den Wert der Felder festlegt.
-   * **value:** Array, das Werte enthält, die den in einem  **** somarray bereitgestellten SOM-Ausdrücken entsprechen. Wenn der Datentyp des Werts nicht mit fieldType übereinstimmt, wird der Wert nicht geändert.
+   * **Wert:** Array mit Werten, die den in einer **som** Array. Wenn der Datentyp des Werts nicht mit fieldType übereinstimmt, wird der Wert nicht geändert.
 
 * **Ausgabe:** keine
 * **Fehler:** Löst im Fall eines falschen SOM-Ausdrucks eine Ausnahme aus
 
-**getFieldValue (som)** Gibt den Wert der Felder für die angegebenen SOM-Ausdrücke zurück
+**getFieldValue (som)** Gibt den Wert der Felder für die angegebenen SOM-Ausdrücke aus
 
-* **Eingabe:** Array, das SOM-Ausdrücke der Felder enthält, deren Wert abgerufen werden soll
-* **Ausgabe:** Objekt, das das Ergebnis als Array in der  **** dataproperty enthält.
+* **Eingabe:** Array mit SOM-Ausdrücken der Felder, deren Wert abgerufen werden soll
+* **Ausgabe:** Objekt, das das Ergebnis als Array in **data** -Eigenschaft.
 
 * **Fehler:** keine
 
-### Beispiel für API „getFieldValue()“{#example-of-nbsp-getfieldvalue-api}
+### Beispiel für API „getFieldValue()“ {#example-of-nbsp-getfieldvalue-api}
 
 ```JavaScript
 var a =  formBridge.getFieldValue(“xfa.form.form1.Subform1.TextField”);
@@ -208,14 +208,14 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, property)**  Rufen Sie die Liste der Werte für die angegebene Eigenschaft der in SOM-Ausdrücken angegebenen Felder ab.
+**getFieldProperties(som, property)** Rufen Sie die Liste der Werte für die angegebene Eigenschaft der in SOM-Ausdrücken angegebenen Felder ab.
 
 * **Eingabe:**
 
    * **som:** Array, das SOM-Ausdrücke für die Felder enthält.
    * **property:** Name der Eigenschaft, deren Wert erforderlich ist.
 
-* **Ausgabe:** Objekt, das das Ergebnis als Array in der Eigenschaft *data *property enthält
+* **Ausgabe:** Objekt, das das Ergebnis als Array in *data *property enthält
 
 * **Fehler:** keine
 
@@ -223,14 +223,14 @@ if(a.errors) {
 
 * **Eingabe:**
 
-   * **som:** Array, das SOM-Ausdrücke der Felder enthält, deren Wert festgelegt werden muss
+   * **som:** Array mit SOM-Ausdrücken der Felder, deren Wert festgelegt werden muss
    * **property:** Eigenschaft, deren Wert festgelegt werden soll.
-   * **value:**  Array, das die Werte der angegebenen Eigenschaft für die in SOM-Ausdrücken angegebenen Felder enthält
+   * **Wert:** Array, das die Werte der angegebenen Eigenschaft für die in SOM-Ausdrücken angegebenen Felder enthält
 
 * **Ausgabe:** keine
 * **Fehler:** keine
 
-## Beispielverwendung der Form Bridge-API:{#sample-usage-of-form-bridge-api}
+## Beispielverwendung der Form Bridge-API: {#sample-usage-of-form-bridge-api}
 
 ```JavaScript
 // Example 1: FormBridge.restoreFormState

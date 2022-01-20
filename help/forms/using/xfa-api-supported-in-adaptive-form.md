@@ -1,18 +1,18 @@
 ---
 title: XFA-Unterstützung in XDP-basierten adaptiven Formularen
-seo-title: XFA-Unterstützung in XDP-basierten adaptiven Formularen
+seo-title: XFA support in XDP-based adaptive forms
 description: Listet unterstützte XFA-Ereignisse, -Eigenschaften, -Skripten und -überprüfung in adaptiven Formularen auf.
-seo-description: Listet unterstützte XFA-Ereignisse, -Eigenschaften, -Skripten und -überprüfung in adaptiven Formularen auf.
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 86596819-8108-409e-af14-4634e8a1959d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 89%
+source-wordcount: '683'
+ht-degree: 93%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 89%
 
 Adaptive Formulare bieten Unterstützung für verschiedene XFA-Ereignisse, Eigenschaften, Skripten und Überprüfungen, die in einer XDP-Datei definiert sind, darunter: 
 
-* Ausführung von Skripten, die für Ereignisse in der XDP-Datei definiert wurden. 
-* Erfassen von Standardwerten und Verhaltenseigenschaften für Felder in der XDP-Datei. 
+* Ausführung von Skripten, die für Ereignisse in der XDP-Datei definiert wurden.
+* Erfassen von Standardwerten und Verhaltenseigenschaften für Felder in der XDP-Datei.
 * Ausführung von Überprüfungsskripten, die in der XDP-Datei definiert wurden.
 
-Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, werden die Eigenschaften, Ereignisse und Überprüfungen in der Benutzeroberfläche für Authoring adaptiver Formulare automatisch ausgefüllt. Allerdings können Formularautoren einige dieser Elemente außer Kraft setzen, um ein anderes Erlebnis zu erstellen. 
+Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, werden die Eigenschaften, Ereignisse und Überprüfungen in der Benutzeroberfläche für Authoring adaptiver Formulare automatisch ausgefüllt. Allerdings können Formularautoren einige dieser Elemente überschreiben, um ein anderes Erlebnis bereitzustellen.
 
 Dieser Artikel erläutert die unterstützten XFA-Ereignisse, Eigenschaften und Überprüfungen, die in adaptiven Formularen berücksichtigt werden, und beschreibt, wie sie dort überschrieben werden können. 
 
@@ -52,15 +52,15 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, können Sie a
   </tr>
   <tr>
    <td><p>Listenfeld </p> </td> 
-   <td><p>Dropdown-Liste</p> </td> 
+   <td><p>Dropdownliste</p> </td> 
   </tr>
   <tr>
    <td><p>Datum-/Uhrzeitfeld </p> </td> 
    <td><p>Datumsauswahl</p> </td> 
   </tr>
   <tr>
-   <td><p>Scribble-Signatur</p> </td> 
-   <td><p>Scribble-Signatur</p> </td> 
+   <td><p>Unterschrift freihändig</p> </td> 
+   <td><p>Freihändige Unterschrift</p> </td> 
   </tr>
   <tr>
    <td><p>Numerisches Feld </p> </td> 
@@ -75,7 +75,7 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, können Sie a
    <td><p>Textfeld</p> </td> 
   </tr>
   <tr>
-   <td><p>Kennwort-Feld </p> </td> 
+   <td><p>Kennwortfeld </p> </td> 
    <td><p>Kennwortfeld</p> </td> 
   </tr>
   <tr>
@@ -88,15 +88,15 @@ Wenn ein adaptives Formular anhand einer XDP-Datei erstellt wurde, können Sie a
   </tr>
   <tr>
    <td><p>Teilformular </p> </td> 
-   <td><p>Fenster</p> </td> 
+   <td><p>Bereich</p> </td> 
   </tr>
   <tr>
    <td><p>Bereich (Gruppe)</p> </td> 
-   <td><p>Fenster</p> </td> 
+   <td><p>Bereich</p> </td> 
   </tr>
   <tr>
    <td><p>Teilformularsatz </p> </td> 
-   <td><p>Fenster</p> </td> 
+   <td><p>Bereich</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -124,19 +124,19 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
    <td><p>Der enabled-Eigenschaft im adaptiven Formular zugeordnet. Sie können sie mit dem Zugriffsausdruck überschreiben.</p> </td> 
   </tr>
   <tr>
-   <td><p>Ein-/Ausgabehilfe: Rolle </p> </td> 
+   <td><p>Barrierefreiheit: role </p> </td> 
    <td><p>Der role-Eigenschaft im adaptiven Formular zugeordnet.</p> </td> 
   </tr>
   <tr>
-   <td><p>Ein-/Ausgabehilfe: speakPriority </p> </td> 
+   <td><p>Barrierefreiheit: speakPriority </p> </td> 
    <td><p>Der speakPriority-Eigenschaft im adaptiven Formular zugeordnet.</p> </td> 
   </tr>
   <tr>
-   <td><p>Barrierefreiheit: speakText</p> </td> 
+   <td><p>Barrierefreiheit: speakText</p> </td> 
    <td><p>Dem benutzerdefinierten barrierefreien Text im adaptiven Formular zugeordnet.</p> </td> 
   </tr>
   <tr>
-   <td><p>Ein-/Ausgabehilfe: QuickInfo </p> </td> 
+   <td><p>Barrierefreiheit: toolTip </p> </td> 
    <td><p>Der short description-Eigenschaft im adaptiven Formular zugeordnet.</p> </td> 
   </tr>
   <tr>
@@ -209,15 +209,15 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripten, die in der XDP-Date
    <td><p>Dieses Skript wird zur Laufzeit ausgeführt und kann im adaptiven Formular nicht außer Kraft gesetzt werden.</p> </td> 
   </tr>
   <tr>
-   <td><p>click (Schaltflächenfelder)</p> </td> 
+   <td><p>click (Schaltflächen)</p> </td> 
    <td><p>Dem Ausdruck für ein Klickereignis der Schaltfläche zugeordnet.</p> </td> 
   </tr>
   <tr>
-   <td><p>Unterstützung für serverseitiges Skript</p> </td> 
+   <td><p>Unterstützung für Server-seitiges Skript</p> </td> 
    <td><p>Dieses Skript wird zur Laufzeit ausgeführt und kann im adaptiven Formular nicht außer Kraft gesetzt werden.</p> </td> 
   </tr>
   <tr>
-   <td><p>Unterstützung für Webdienste</p> </td> 
+   <td><p>Unterstützung für Web-Dienste</p> </td> 
    <td><p>Dieses Skript wird zur Laufzeit ausgeführt und kann im adaptiven Formular nicht außer Kraft gesetzt werden.</p> </td> 
   </tr>
   <tr>
@@ -234,19 +234,19 @@ Die folgende Tabelle erfasst, wie XFA-Überprüfungen den Überprüfungen in ada
 <table> 
  <tbody>
   <tr>
-   <td><p><strong>XFA-Überprüfung</strong></p> </td> 
+   <td><p><strong>XFA-Validierung</strong></p> </td> 
    <td><p><strong>Entsprechende Überprüfungen im adaptiven Formular</strong></p> </td> 
   </tr>
   <tr>
-   <td><p>Überprüfungsmuster (formatTest)</p> </td> 
+   <td><p>Validierungsmuster (formatTest)</p> </td> 
    <td><p>validatePictureClause</p> </td> 
   </tr>
   <tr>
-   <td><p>Überprüfungsmuster-Meldung (formatTestMessage)</p> </td> 
+   <td><p>Validierungsmuster-Meldung (formatTestMessage)</p> </td> 
    <td><p>validatePictureMessage</p> </td> 
   </tr>
   <tr>
-   <td><p>Erforderlich (nullTest )</p> </td> 
+   <td><p>Erforderlich (nullTest)</p> </td> 
    <td><p>mandatory </p> </td> 
   </tr>
   <tr>
@@ -254,7 +254,7 @@ Die folgende Tabelle erfasst, wie XFA-Überprüfungen den Überprüfungen in ada
    <td><p>mandatoryMessage</p> </td> 
   </tr>
   <tr>
-   <td><p>Skript überprüfen (scriptTest)</p> </td> 
+   <td><p>Skript validieren (scriptTest)</p> </td> 
    <td><p>validateExp</p> </td> 
   </tr>
   <tr>

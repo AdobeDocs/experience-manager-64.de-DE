@@ -1,8 +1,8 @@
 ---
 title: Fehlerbehebung in AEM beim Authoring
-seo-title: Fehlerbehebung in AEM beim Authoring
+seo-title: Troubleshooting AEM when Authoring
 description: Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
-seo-description: Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 09409631-c579-4b1f-9193-1348896f6a09
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '430'
 ht-degree: 95%
 
 ---
@@ -70,7 +70,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem:**
 
-   * Bei Verwendung der Option **Suchen und Ersetzen** kann es vorkommen, dass nicht alle Instanzen des Begriffs `find` auf einer Seite ersetzt werden.
+   * Bei Verwendung von **Suchen und Ersetzen** Option kann es vorkommen, dass nicht alle Instanzen der `find` auf einer Seite ersetzt werden.
 
 * **Grund**:
 

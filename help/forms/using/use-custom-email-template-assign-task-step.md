@@ -1,15 +1,15 @@
 ---
 title: Benutzerdefinierte E-Mail-Vorlagen im Schritt „Aufgabe zuweisen“ verwenden
-seo-title: Benutzerdefinierte E-Mail-Vorlagen im Schritt „Aufgabe zuweisen“ verwenden
+seo-title: Use custom email templates in an Assign Task step
 description: 'Benutzerdefinierte E-Mail-Vorlagen für E-Mail-Benachrichtigungen in Forms-Workflow '
-seo-description: 'Benutzerdefinierte E-Mail-Vorlagen für E-Mail-Benachrichtigungen in Forms-Workflow '
+seo-description: Custom email templates for forms workflow email notifications
 uuid: bc2af94d-d4ad-417e-b3d2-bcfffc1b306d
 topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 exl-id: 5af73823-2c32-41b3-9ab8-a7ad9fd9532f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '531'
 ht-degree: 96%
 
 ---
@@ -66,12 +66,12 @@ In AEM Forms steht eine vorkonfigurierte Vorlage für E-Mail-Benachrichtigungen 
 
 Der Schritt „Aufgabe zuweisen“ ist standardmäßig so konfiguriert, dass die Standardvorlage „htmlEmailTemplate.txt“ verwendet wird. Sie können stattdessen eine benutzerdefinierte Vorlage zu verwenden. Vorlage ändern
 
-1. Öffnen Sie den Schritt **[!UICONTROL Aufgabe zuweisen]** .
+1. Öffnen Sie die **[!UICONTROL Aufgabe zuweisen]** Schritt.
 
-1. Navigieren Sie zu **[!UICONTROL Zuweisung > HTML-E-Mail-Vorlage]**.
+1. Navigieren Sie zu **[!UICONTROL Assignee > HTML Email Template]**.
 
 1. Wählen Sie die neu erstellte HTML-E-Mail-Vorlage aus. 
 
 1. Klicken Sie auf **[!UICONTROL OK]**. Die Vorlage wird geändert.
 
-In E-Mail-Benachrichtigungen werden außerdem [Metadaten](/help/forms/using/use-metadata-in-email-notifications.md) verwendet. Dies können beispielsweise Fälligkeitsdatum, Priorität, Workflow-Name und mehr sein. Sie können die Vorlage auch so konfigurieren, dass [benutzerdefinierte Metadaten](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification) verwendet werden.
+In E-Mail-Benachrichtigungen werden außerdem [Metadaten](/help/forms/using/use-metadata-in-email-notifications.md) verwendet. Dies können beispielsweise Fälligkeitsdatum, Priorität, Workflow-Name und mehr sein. Sie können auch die zu verwendende Vorlage konfigurieren [benutzerdefinierte Metadaten](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

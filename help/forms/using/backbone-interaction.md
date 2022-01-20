@@ -1,8 +1,8 @@
 ---
 title: Interaktion mit Backbone
-seo-title: Interaktion mit Backbone
+seo-title: Backbone interaction
 description: Grundlegende Informationen zur Verwendung von Backbone JavaScript-Modellen in AEM Forms Workspace.
-seo-description: Grundlegende Informationen zur Verwendung von Backbone JavaScript-Modellen in AEM Forms Workspace.
+seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 uuid: c70da848-e514-42bc-a59b-44a7c00aa529
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,8 +11,8 @@ discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 exl-id: f726cb73-732c-4893-bdb5-10ddcf4a340a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 81%
+source-wordcount: '434'
+ht-degree: 80%
 
 ---
 
@@ -22,13 +22,13 @@ Backbone ist eine Bibliothek, die das Erstellen und Verfolgen von MVC-Architektu
 
 Einige Hauptkonzepte sind die folgenden:
 
-**Backbone** modelEnthält Daten und den Großteil der Logik, die sich auf diese Daten bezieht.
+**Backbone-Modell** Enthält Daten und den Großteil der mit diesen Daten verbundenen Logik.
 
-**Backbone** viewWird verwendet, um den Status des entsprechenden Modells darzustellen. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
+**Backbone-Ansicht** Wird verwendet, um den Status des entsprechenden Modells darzustellen. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
 
-**HTML** templateEine Wrapper-Vorlage mit Platzhaltern, die vom Modell aufgefüllt werden.
+**HTML-Vorlage** Eine Wrapper-Vorlage mit Platzhaltern, die vom Modell gefüllt werden.
 
-**AEM Forms** WorkspaceEnthält mehrere einzelne Komponenten. Jede Komponente:
+**AEM Forms Workspace** Enthält mehrere einzelne Komponenten. Jede Komponente:
 
 * Stellt ein einzelnes logischen Element der Benutzeroberfläche dar.
 * Kann eine Sammlung ähnlicher Komponenten sein.

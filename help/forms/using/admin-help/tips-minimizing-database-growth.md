@@ -1,8 +1,8 @@
 ---
 title: Tipps zum Minimieren des Datenbankwachstums
-seo-title: Tipps zum Minimieren des Datenbankwachstums
+seo-title: Tips for minimizing database growth
 description: Prozesse mit langer Lebensdauer speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden.
-seo-description: Prozesse mit langer Lebensdauer speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden.
+seo-description: Long-lived processes store process data in the AEM forms database. The growth of the AEM forms database can be minimized using a few easy process design and product configuration strategies.
 uuid: 13f99d4f-848e-451e-90d9-55e202dc0bdb
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 exl-id: 7b266170-c7e2-42e7-8ee0-153e1e73a901
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '408'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Prozesse mit langer Lebensdauer speichern Prozessdaten in der AEM Forms-Datenbank. Das Wachstum der AEM Forms-Datenbank kann mithilfe weniger einfacher Prozessentwurfs- und Produktkonfigurationsstrategien minimiert werden.
 
-## Tipps zum Prozessentwurf  {#process-design-tips}
+## Tipps zum Prozessentwurf {#process-design-tips}
 
 Verwenden Sie, wann immer möglich, Prozesse mit kurzer Lebensdauer. Prozesse mit kurzer Lebensdauer speichern keine Prozessdaten in der Datenbank. Der Nachteil beim Verwenden von Prozessen mit kurzer Lebensdauer besteht darin, dass ihr Status und Zustand nicht in Administration Console nachvollzogen wird und es keinen Verlauf des Prozesses und keine BAM-Berichte gibt.
 
@@ -31,7 +31,7 @@ Verwenden Sie Variablen nur sparsam. Wenn Sie Prozesse mit langer Lebensdauer ve
 
 Verwenden Sie einfache Variablentypen (z. B. String oder Int) und vermeiden Sie es, wo immer möglich, komplexe Variablentypen zu verwenden. Speicherplatz in der Datenbank wird Variablen auch dann zugewiesen, wenn diese keinen Wert enthalten. Komplexe Variablen erfordern in der Regel mehr Speicherplatz als einfache Variablen.
 
-## Tipps zur Produktverwaltung  {#product-administration-tips}
+## Tipps zur Produktverwaltung {#product-administration-tips}
 
 Verwenden Sie den Stammordner des globalen Dokumentenspeichers (GDS) effizient. Der GDS-Stammordner auf dem Forms-Server wird unter anderem zum Speichern von Dateien, die an Dienste übergeben werden, die Teil von AEM Forms in Prozessen sind, verwendet. Zum Verbessern der Leistung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und bleiben in der Datenbank erhalten.
 

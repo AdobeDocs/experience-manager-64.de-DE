@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit PDF/A-Dokumenten
-seo-title: Arbeiten mit PDF/A-Dokumenten
+seo-title: Working with PDF/A Documents
 description: Verwenden Sie den DocConverter-Dienst, um zu ermitteln, ob ein PDF-Dokument ein PDF/A-Dokument ist, und um PDF-Dokumente in PDF/A-Dokumente zu konvertieren.
-seo-description: Verwenden Sie den DocConverter-Dienst, um zu ermitteln, ob ein PDF-Dokument ein PDF/A-Dokument ist, und um PDF-Dokumente in PDF/A-Dokumente zu konvertieren.
+seo-description: Use the  DocConverter service to determine if a PDF document is a PDF/A document and convert PDF documents to PDF/A documents.
 uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: fbf6c225-5351-4589-97d3-9faf9c5939bc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2358'
 ht-degree: 7%
 
 ---
@@ -22,10 +22,10 @@ ht-degree: 7%
 
 **Über den DocConverter-Dienst**
 
-Der DocConverter-Dienst kann PDF-Dokumente in PDF/A-Dokumente konvertieren. Sie können diese Aufgaben mit diesem Dienst ausführen:
+Der DocConverter-Dienst kann PDF-Dokumente in PDA/A-Dokumente konvertieren. Sie können diese Aufgaben mit diesem Dienst ausführen:
 
-* Konvertieren von PDF-Dokumenten in PDF/A-Dokumente. (Siehe [Konvertieren von Dokumenten in PDF/A-Dokumente](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
-* Bestimmen Sie, ob PDF-Dokumente PDF/A-Dokumente sind. (Siehe [Programmatische Bestimmung der PDF/A-Kompatibilität](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+* Konvertieren Sie PDF-Dokumente in PDF/A-Dokumente. (Siehe [Konvertieren von Dokumenten in PDF/A-Dokumente](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
+* Stellen Sie fest, ob PDF-Dokumente PDF/A-Dokumente sind. (Siehe [Programmatische Bestimmung der PDF/A-Kompatibilität](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).
 
 >[!NOTE]
 >
@@ -35,9 +35,9 @@ Der DocConverter-Dienst kann PDF-Dokumente in PDF/A-Dokumente konvertieren. Sie 
 
 Sie können den DocConverter-Dienst verwenden, um ein PDF-Dokument in ein PDF/A-Dokument zu konvertieren. Da PDF/A ein Archivierungsformat für die langfristige Beibehaltung des Dokumentinhalts ist, werden alle Schriftarten eingebettet und die Datei unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte. Bevor Sie ein PDF-Dokument in ein PDF/A-Dokument konvertieren, stellen Sie sicher, dass das PDF-Dokument kein PDF/A-Dokument ist.
 
-Die PDF/A-1-Spezifikation besteht aus zwei Konformitätsstufen, nämlich A und B. Der Hauptunterschied zwischen den beiden besteht in der Unterstützung der logischen Struktur (Barrierefreiheit), die nicht für Konformitätsstufe B erforderlich ist. Unabhängig von der Konformitätsstufe bestimmt PDF/A-1, dass alle Schriftarten in das generierte PDF/A-Dokument eingebettet sind. Derzeit wird bei der Validierung (und Konvertierung) nur PDF/A-1b unterstützt.
+Die PDF/A-1-Spezifikation besteht aus zwei Konformitätsstufen, nämlich A und B. Der Hauptunterschied zwischen den beiden besteht in Bezug auf die Unterstützung der logischen Struktur (Barrierefreiheit), die nicht für Konformitätsstufe B erforderlich ist. Unabhängig von der Konformitätsstufe bestimmt PDF/A-1, dass alle Schriftarten in das generierte PDF/A-Dokument eingebettet sind. Derzeit wird nur PDF/A-1b bei der Validierung (und Konvertierung) unterstützt.
 
-Während PDF/A der Standard für die Archivierung von PDF-Dokumenten ist, ist es nicht erforderlich, PDF/A zur Archivierung zu verwenden, wenn ein standardmäßiges PDF-Dokument die Anforderungen Ihres Unternehmens erfüllt. Der PDF/A-Standard dient der Erstellung einer PDF-Datei, die für die langfristige Archivierung und Dokumentenerhaltung gedacht ist.
+PDF/A ist zwar der Standard für die Archivierung von PDF-Dokumenten, es ist jedoch nicht erforderlich, dass PDF/A zur Archivierung verwendet wird, wenn ein Standarddokument für die PDF den Anforderungen Ihres Unternehmens entspricht. Der PDF/A-Standard dient der Erstellung einer PDF-Datei, die für die langfristige Archivierung und Dokumentenerhaltung bestimmt ist.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Während PDF/A der Standard für die Archivierung von PDF-Dokumenten ist, ist es
 
 ### Zusammenfassung der Schritte {#summary-of-steps}
 
-So konvertieren Sie ein PDF-Dokument in ein PDF/A-Dokument:
+Gehen Sie wie folgt vor, um ein PDF-Dokument in ein PDF/A-Dokument zu konvertieren:
 
 1. Projektdateien einschließen.
 1. Erstellen eines DocConvert-Clients
@@ -66,11 +66,11 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines DocConvert-Clients**
 
-Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müssen Sie einen DocConverter-Client erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocConverterServiceClient` -Objekt. Wenn Sie die DocConverter-Webdienst-API verwenden, erstellen Sie ein `DocConverterServiceService` -Objekt.
+Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müssen Sie einen DocConverter-Client erstellen. Wenn Sie die Java-API verwenden, erstellen Sie eine `DocConverterServiceClient` -Objekt. Wenn Sie die DocConverter-Webdienst-API verwenden, erstellen Sie eine `DocConverterServiceService` -Objekt.
 
 **Referenzieren eines PDF-Dokuments zur Konvertierung in ein PDF/A-Dokument**
 
@@ -78,11 +78,11 @@ Rufen Sie ein PDF-Dokument ab, das in ein PDF/A-Dokument konvertiert werden soll
 
 **Tracking-Informationen festlegen**
 
-Sie können eine Laufzeitoption festlegen, die bestimmt, wie viele Informationen während des Konvertierungsprozesses verfolgt werden. Das heißt, Sie können neun verschiedene Ebenen festlegen, die angeben, wie viele Informationen der DocConverter-Dienst beim Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument verfolgt.
+Sie können eine Laufzeitoption festlegen, die bestimmt, wie viele Informationen während des Konvertierungsprozesses verfolgt werden. Das heißt, Sie können neun verschiedene Ebenen festlegen, die angeben, wie viele Informationen der DocConverter-Dienst verfolgt, wenn ein PDF-Dokument in ein PDF/A-Dokument konvertiert wird.
 
 **Dokument konvertieren**
 
-Nachdem Sie den DocConverter-Dienst-Client erstellt haben, referenzieren Sie das zu konvertierende PDF-Dokument und legen Sie die Laufzeitoption fest, die angibt, wie viele Informationen verfolgt werden, und konvertieren Sie das PDF-Dokument in ein PDF/A-Dokument.
+Nachdem Sie den DocConverter-Dienst-Client erstellt haben, referenzieren Sie das PDF-Dokument zum Konvertieren und legen Sie die Laufzeitoption fest, die angibt, wie viele Informationen verfolgt werden, und konvertieren Sie das PDF-Dokument in ein PDF/A-Dokument.
 
 **PDF/A-Dokument speichern**
 
@@ -98,11 +98,11 @@ Sie können das PDF/A-Dokument als PDF-Datei speichern.
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Programmgesteuerte Bestimmung der PDF/A-Kompatibilität](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)
+[Programmatische Bestimmung der PDF/A-Kompatibilität](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)
 
 ### Konvertieren von Dokumenten in PDF/A-Dokumente mithilfe der Java-API {#convert-documents-to-pdf-a-documents-using-the-java-api}
 
-Konvertieren eines PDF-Dokuments mithilfe der Java-API in ein PDF/A-Dokument:
+Konvertieren Sie ein PDF-Dokument mithilfe der Java-API in ein PDF/A-Dokument:
 
 1. Projektdateien einschließen
 
@@ -115,28 +115,28 @@ Konvertieren eines PDF-Dokuments mithilfe der Java-API in ein PDF/A-Dokument:
 
 1. Referenzieren eines PDF-Dokuments zur Konvertierung in ein PDF/A-Dokument
 
-   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das zu konvertierende PDF-Dokument mithilfe des zugehörigen Konstruktors darstellt und einen Zeichenfolgenwert übergibt, der den Speicherort der PDF-Datei angibt.
+   * Erstellen Sie eine `java.io.FileInputStream` -Objekt, das das zu konvertierende PDF-Dokument mithilfe des Konstruktors darstellt und einen Zeichenfolgenwert übergibt, der den Speicherort der PDF-Datei angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
 1. Tracking-Informationen festlegen
 
    * Erstellen Sie ein Objekt `PDFAConversionOptionSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie die `setLogLevel` -Methode des Objekts `PDFAConversionOptionSpec` aufrufen und einen Zeichenfolgenwert übergeben, der die Tracking-Ebene angibt. Übergeben Sie beispielsweise den Wert `FINE`. Informationen zu den verschiedenen Werten finden Sie in der `setLogLevel`-Methode in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie die `PDFAConversionOptionSpec` -Objekt `setLogLevel` -Methode verwenden und einen string -Wert übergeben, der die Tracking-Ebene angibt. Übergeben Sie beispielsweise den Wert `FINE`. Weitere Informationen zu den verschiedenen Werten finden Sie unter `setLogLevel` -Methode [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Dokument konvertieren
 
-   Konvertieren Sie das PDF-Dokument in ein PDF/A-Dokument, indem Sie die `toPDFA` -Methode des Objekts `DocConverterServiceClient` aufrufen und die folgenden Werte übergeben:
+   Konvertieren Sie das PDF-Dokument in ein PDF/A-Dokument, indem Sie die `DocConverterServiceClient` -Objekt `toPDFA` -Methode verwenden und die folgenden Werte übergeben:
 
-   * Das `com.adobe.idp.Document`-Objekt, das das zu konvertierende PDF-Dokument enthält
-   * Das `PDFAConversionOptionSpec`-Objekt, das Tracking-Informationen angibt
+   * Die `com.adobe.idp.Document` -Objekt, das das zu konvertierende PDF-Dokument enthält
+   * Die `PDFAConversionOptionSpec` Objekt, das Tracking-Informationen angibt
 
-   Die `toPDFA`-Methode gibt ein `PDFAConversionResult`-Objekt zurück, das das PDF/A-Dokument enthält.
+   Die `toPDFA` -Methode gibt eine `PDFAConversionResult` -Objekt, das das PDF/A-Dokument enthält.
 
 1. PDF/A-Dokument speichern
 
-   * Rufen Sie das PDF/A-Dokument ab, indem Sie die `getPDFA` -Methode des Objekts `PDFAConversionResult` aufrufen. Diese Methode gibt ein `com.adobe.idp.Document` -Objekt zurück, das das PDF/A-Dokument darstellt.
-   * Erstellen Sie ein `java.io.File`-Objekt, das die PDF/A-Datei darstellt. Stellen Sie sicher, dass die Dateinamenerweiterung .pdf lautet.
-   * Füllen Sie die Datei mit PDF/A-Daten, indem Sie die `copyToFile` -Methode des Objekts `com.adobe.idp.Document` aufrufen und das `java.io.File` -Objekt übergeben.
+   * Rufen Sie das PDF/A-Dokument ab, indem Sie die `PDFAConversionResult` -Objekt `getPDFA` -Methode. Diese Methode gibt eine `com.adobe.idp.Document` -Objekt, das das PDF/A-Dokument darstellt.
+   * Erstellen Sie eine `java.io.File` -Objekt, das die PDF/A-Datei darstellt. Stellen Sie sicher, dass die Dateinamenerweiterung .pdf lautet.
+   * Füllen Sie die Datei mit PDF/A-Daten, indem Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode und Übergabe der `java.io.File` -Objekt.
 
 **Siehe auch**
 
@@ -150,7 +150,7 @@ Konvertieren eines PDF-Dokuments mithilfe der Java-API in ein PDF/A-Dokument:
 
 ### Konvertieren von Dokumenten in PDF/A-Dokumente mithilfe der Webdienst-API {#convert-documents-to-pdf-a-documents-using-the-web-service-api}
 
-Konvertieren eines PDF-Dokuments mithilfe der DocConverter-API (Webdienst) in ein PDF/A-Dokument:
+Konvertieren Sie ein PDF-Dokument mithilfe der DocConverter-API (Webdienst) in ein PDF/A-Dokument:
 
 1. Projektdateien einschließen
 
@@ -159,50 +159,50 @@ Konvertieren eines PDF-Dokuments mithilfe der DocConverter-API (Webdienst) in ei
 
 1. Erstellen eines DocConvert-Clients
 
-   * Erstellen Sie mit der Microsoft .NET-Clientassembly ein `DocConverterServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen.
-   * Legen Sie das `DocConverterServiceService`-Datenelement des `Credentials`-Objekts mit dem Wert `System.Net.NetworkCredential` fest, der den Benutzernamen und den Kennwortwert angibt.
+   * Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly eine `DocConverterServiceService` -Objekt durch Aufrufen des Standardkonstruktors.
+   * Legen Sie die `DocConverterServiceService` -Objekt `Credentials` Datenelement mit `System.Net.NetworkCredential` -Wert, der den Benutzernamen und den Kennwortwert angibt.
 
 1. Referenzieren eines PDF-Dokuments zur Konvertierung in ein PDF/A-Dokument
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
-   * Erstellen Sie ein `System.IO.FileStream` -Objekt, indem Sie seinen Konstruktor aufrufen und einen string -Wert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length` -Eigenschaft des Objekts `System.IO.FileStream` abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read` -Methode des Objekts `System.IO.FileStream` aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `binaryData`-Eigenschaft dem Inhalt des Byte-Arrays zuweisen.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Die `BLOB` -Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
+   * Erstellen Sie eine `System.IO.FileStream` -Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream` -Objekt. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Füllen Sie die `BLOB` Objekt durch Zuweisen seiner `binaryData` -Eigenschaft mit dem Inhalt des Byte-Arrays.
 
 1. Tracking-Informationen festlegen
 
    * Erstellen Sie ein Objekt `PDFAConversionOptionSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie dem `logLevel` -Datenelement des Objekts `PDFAConversionOptionSpec` einen Wert zuweisen, der die Tracking-Ebene angibt. Weisen Sie diesem Datenelement beispielsweise den Wert `FINE` zu.
+   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie einen Wert zuweisen, der die Tracking-Ebene der `PDFAConversionOptionSpec` -Objekt `logLevel` Datenelement. Weisen Sie beispielsweise den Wert zu `FINE` zu diesem Datenelement hinzu.
 
 1. Dokument konvertieren
 
-   Konvertieren Sie das PDF-Dokument in ein PDF/A-Dokument, indem Sie die `toPDFA` -Methode des Objekts `DocConverterServiceService` aufrufen und die folgenden Werte übergeben:
+   Konvertieren Sie das PDF-Dokument in ein PDF/A-Dokument, indem Sie die `DocConverterServiceService` -Objekt `toPDFA` -Methode verwenden und die folgenden Werte übergeben:
 
-   * Das `BLOB`-Objekt, das das zu konvertierende PDF-Dokument enthält
-   * Das `PDFAConversionOptionSpec`-Objekt, das Tracking-Informationen angibt
+   * Die `BLOB` -Objekt, das das zu konvertierende PDF-Dokument enthält
+   * Die `PDFAConversionOptionSpec` Objekt, das Tracking-Informationen angibt
 
-   Die `toPDFA`-Methode gibt ein `PDFAConversionResult`-Objekt zurück, das das PDF/A-Dokument enthält.
+   Die `toPDFA` -Methode gibt eine `PDFAConversionResult` -Objekt, das das PDF/A-Dokument enthält.
 
 1. PDF/A-Dokument speichern
 
-   * Erstellen Sie ein `BLOB` -Objekt, das das PDF/A-Dokument speichert, indem Sie den Wert des `PDFAConversionResult` -Datenelements des `PDFADocument` -Objekts abrufen.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB` -Objekts speichert, das mithilfe des `PDFAConversionResult` -Objekts zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `BLOB` -Datenelements des Objekts `binaryData` abrufen.
-   * Erstellen Sie ein `System.IO.FileStream` -Objekt, indem Sie seinen Konstruktor aufrufen und einen string -Wert übergeben, der den Dateispeicherort des PDF/A-Dokuments darstellt.
-   * Erstellen Sie ein `System.IO.BinaryWriter` -Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream` -Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write` -Methode des Objekts `System.IO.BinaryWriter` aufrufen und das Byte-Array übergeben.
+   * Erstellen Sie eine `BLOB` -Objekt, das das PDF/A-Dokument speichert, indem der Wert des `PDFAConversionResult` -Objekt `PDFADocument` Datenelement.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB` -Objekt, das mithilfe der `PDFAConversionResult` -Objekt. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `binaryData` Datenelement.
+   * Erstellen Sie eine `System.IO.FileStream` -Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF/A-Dokuments darstellt.
+   * Erstellen Sie eine `System.IO.BinaryWriter` -Objekt durch Aufrufen des Konstruktors und Übergeben des `System.IO.FileStream` -Objekt.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
 **Siehe auch**
 
 [Arbeiten mit PDF/A-Dokumenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Aufrufen von AEM Forms mit der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Erstellen einer .NET-Client-Assembly, die die Base64-Kodierung verwendet](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
-## Programmgesteuerte Bestimmung der PDF/A-Kompatibilität {#programmatically-determining-pdf-a-compliancy}
+## Programmatische Bestimmung der PDF/A-Kompatibilität {#programmatically-determining-pdf-a-compliancy}
 
-Mit dem DocConverter-Dienst können Sie ermitteln, ob ein PDF-Dokument PDF/A-kompatibel ist. Informationen zu PDF/A-Dokumenten und zum Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument finden Sie unter [Konvertieren von Dokumenten in PDF/A-Dokumente](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
+Mit dem DocConverter-Dienst können Sie ermitteln, ob ein PDF-Dokument PDF/A-konform ist. Informationen zu einem PDF/A-Dokument und zum Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument finden Sie unter [Konvertieren von Dokumenten in PDF/A-Dokumente](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
 
 >[!NOTE]
 >
@@ -230,11 +230,11 @@ Die folgenden JAR-Dateien müssen zum Klassenpfad Ihres Projekts hinzugefügt we
 * adobe-utilities.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 * jbossall-client.jar (erforderlich, wenn AEM Forms auf JBoss Application Server bereitgestellt wird)
 
-Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Informationen zum Speicherort dieser JAR-Dateien finden Sie unter [Einschließen von AEM Forms-Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Erstellen eines DocConvert-Clients**
 
-Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müssen Sie einen DocConverter-Client erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `DocConverterServiceClient` -Objekt. Wenn Sie die DocConverter-Webdienst-API verwenden, erstellen Sie ein `DocConverterServiceService` -Objekt.
+Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müssen Sie einen DocConverter-Client erstellen. Wenn Sie die Java-API verwenden, erstellen Sie eine `DocConverterServiceClient` -Objekt. Wenn Sie die DocConverter-Webdienst-API verwenden, erstellen Sie eine `DocConverterServiceService` -Objekt.
 
 **Referenzieren eines PDF-Dokuments zur Bestimmung der PDF/A-Kompatibilität**
 
@@ -244,23 +244,23 @@ Ein PDF-Dokument muss referenziert und an den DocConverter-Dienst übergeben wer
 
 Sie können eine Laufzeitoption festlegen, die bestimmt, wie viele Informationen während des Konvertierungsprozesses verfolgt werden. Das heißt, Sie können neun verschiedene Ebenen festlegen, die angeben, wie viele Informationen der DocConverter-Dienst beim Konvertieren eines PDF-Dokuments in ein PDF/A-Dokument verfolgt.
 
-**Abrufen von Informationen zum PDF-Dokument**
+**Informationen zum PDF-Dokument abrufen**
 
-Nachdem Sie den DocConverter-Dienstclient erstellt, auf das PDF-Dokument verwiesen und die Laufzeitoptionen festgelegt haben, können Sie ermitteln, ob das PDF-Dokument ein PDF/A-kompatibles Dokument ist.
+Nachdem Sie den DocConverter-Dienstclient erstellt, auf das PDF-Dokument verwiesen und die Laufzeitoptionen festgelegt haben, können Sie bestimmen, ob das PDF-Dokument ein PDF/A-kompatibles Dokument ist.
 
 **Siehe auch**
 
-[Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
+[PDF/A-Kompatibilität mithilfe der Java-API ermitteln](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
 
-[Bestimmen der PDF/A-Kompatibilität mithilfe der Webdienst-API](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
+[PDF/A-Kompatibilität mithilfe der Webdienst-API ermitteln](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Bestimmen der PDF/A-Kompatibilität mithilfe der Java-API {#determine-pdf-a-compliancy-using-the-java-api}
+### PDF/A-Kompatibilität mithilfe der Java-API ermitteln {#determine-pdf-a-compliancy-using-the-java-api}
 
-Bestimmen Sie mithilfe der Java-API die PDF/A-Kompatibilität:
+Bestimmen Sie mithilfe der Java-API die Kompatibilität von PDF/A:
 
 1. Projektdateien einschließen
 
@@ -273,23 +273,23 @@ Bestimmen Sie mithilfe der Java-API die PDF/A-Kompatibilität:
 
 1. Referenzieren eines PDF-Dokuments zur Bestimmung der PDF/A-Kompatibilität
 
-   * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das zu konvertierende PDF-Dokument mithilfe des zugehörigen Konstruktors darstellt und einen Zeichenfolgenwert übergibt, der den Speicherort der PDF-Datei angibt.
+   * Erstellen Sie eine `java.io.FileInputStream` -Objekt, das das zu konvertierende PDF-Dokument mithilfe des Konstruktors darstellt und einen Zeichenfolgenwert übergibt, der den Speicherort der PDF-Datei angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
 
 1. Laufzeitoptionen festlegen
 
    * Erstellen Sie ein Objekt `PDFAValidationOptionSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Konformitätsstufe fest, indem Sie die `setCompliance` -Methode des Objekts `PDFAValidationOptionSpec` aufrufen und `PDFAValidationOptionSpec.Compliance.PDFA_1B` übergeben.
-   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie die `setLogLevel` -Methode des Objekts `PDFAValidationOptionSpec` aufrufen und einen Zeichenfolgenwert übergeben, der die Tracking-Ebene angibt. Übergeben Sie beispielsweise den Wert `FINE`. Informationen zu den verschiedenen Werten finden Sie in der `setLogLevel`-Methode in der [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Legen Sie die Konformitätsstufe fest, indem Sie die `PDFAValidationOptionSpec` -Objekt `setCompliance` Methode und Übergabe `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
+   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie die `PDFAValidationOptionSpec` -Objekt `setLogLevel` -Methode verwenden und einen string -Wert übergeben, der die Tracking-Ebene angibt. Übergeben Sie beispielsweise den Wert `FINE`. Weitere Informationen zu den verschiedenen Werten finden Sie unter `setLogLevel` -Methode [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-1. Abrufen von Informationen zum PDF-Dokument
+1. Informationen zum PDF-Dokument abrufen
 
-   Bestimmen Sie die PDF/A-Kompatibilität, indem Sie die `isPDFA` -Methode des Objekts `DocConverterServiceClient` aufrufen und die folgenden Werte übergeben:
+   PDF/A-Kompatibilität durch Aufrufen der `DocConverterServiceClient` -Objekt `isPDFA` -Methode verwenden und die folgenden Werte übergeben:
 
-   * Das `com.adobe.idp.Document`-Objekt, das das PDF-Dokument enthält.
-   * Das `PDFAValidationOptionSpec`-Objekt, das Laufzeitoptionen angibt.
+   * Die `com.adobe.idp.Document` -Objekt, das das PDF-Dokument enthält.
+   * Die `PDFAValidationOptionSpec` -Objekt, das Laufzeitoptionen angibt.
 
-   Die `isPDFA`-Methode gibt ein `PDFAValidationResult`-Objekt zurück, das die Ergebnisse dieses Vorgangs enthält.
+   Die `isPDFA` -Methode gibt eine `PDFAValidationResult` -Objekt, das die Ergebnisse dieses Vorgangs enthält.
 
 **Siehe auch**
 
@@ -301,9 +301,9 @@ Bestimmen Sie mithilfe der Java-API die PDF/A-Kompatibilität:
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Bestimmen der PDF/A-Kompatibilität mithilfe der Webdienst-API {#determine-pdf-a-compliancy-using-the-web-service-api}
+### PDF/A-Kompatibilität mithilfe der Webdienst-API ermitteln {#determine-pdf-a-compliancy-using-the-web-service-api}
 
-Bestimmen der PDF/A-Kompatibilität mithilfe der Webdienst-API:
+Bestimmen Sie mithilfe der Webdienst-API die Kompatibilität von PDF/A:
 
 1. Projektdateien einschließen
 
@@ -312,36 +312,36 @@ Bestimmen der PDF/A-Kompatibilität mithilfe der Webdienst-API:
 
 1. Erstellen eines DocConvert-Clients
 
-   * Erstellen Sie mit der Microsoft .NET-Clientassembly ein `DocConverterServiceService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen.
-   * Legen Sie das `DocConverterServiceService`-Datenelement des `Credentials`-Objekts mit dem Wert `System.Net.NetworkCredential` fest, der den Benutzernamen und den Kennwortwert angibt.
+   * Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly eine `DocConverterServiceService` -Objekt durch Aufrufen des Standardkonstruktors.
+   * Legen Sie die `DocConverterServiceService` -Objekt `Credentials` Datenelement mit `System.Net.NetworkCredential` -Wert, der den Benutzernamen und den Kennwortwert angibt.
 
 1. Referenzieren eines PDF-Dokuments zur Bestimmung der PDF/A-Kompatibilität
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
-   * Erstellen Sie ein `System.IO.FileStream` -Objekt, indem Sie seinen Konstruktor aufrufen und einen string -Wert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des Objekts `System.IO.FileStream` speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length` -Eigenschaft des Objekts `System.IO.FileStream` abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read` -Methode des Objekts `System.IO.FileStream` aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `binaryData`-Eigenschaft dem Inhalt des Byte-Arrays zuweisen.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Die `BLOB` -Objekt wird zum Speichern des PDF-Dokuments verwendet, das in ein PDF/A-Dokument konvertiert wird.
+   * Erstellen Sie eine `System.IO.FileStream` -Objekt durch Aufrufen des Konstruktors und Übergeben eines Zeichenfolgenwerts, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream` -Objekt. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Füllen Sie die `BLOB` Objekt durch Zuweisen seiner `binaryData` -Eigenschaft mit dem Inhalt des Byte-Arrays.
 
 1. Laufzeitoptionen festlegen
 
    * Erstellen Sie ein Objekt `PDFAValidationOptionSpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie die Konformitätsstufe fest, indem Sie dem `compliance`-Datenelement des `PDFAValidationOptionSpec`-Objekts den Wert `PDFAConversionOptionSpec_Compliance.PDFA_1B` zuweisen.
-   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie dem `resultLevel`-Datenelement des `PDFAValidationOptionSpec_ResultLevel.DETAILED`-Objekts den Wert `PDFAValidationOptionSpec` zuweisen.
+   * Legen Sie die Konformitätsstufe fest, indem Sie die `PDFAValidationOptionSpec` -Objekt `compliance` Datenelement mit dem Wert `PDFAConversionOptionSpec_Compliance.PDFA_1B`.
+   * Legen Sie die Tracking-Ebene für Informationen fest, indem Sie die `PDFAValidationOptionSpec` -Objekt `resultLevel` Datenelement mit dem Wert `PDFAValidationOptionSpec_ResultLevel.DETAILED`.
 
-1. Abrufen von Informationen zum PDF-Dokument
+1. Informationen zum PDF-Dokument abrufen
 
-   Bestimmen Sie die PDF/A-Kompatibilität, indem Sie die `isPDFA` -Methode des Objekts `DocConverterServiceService` aufrufen und die folgenden Werte übergeben:
+   PDF/A-Kompatibilität durch Aufrufen der `DocConverterServiceService` -Objekt `isPDFA` -Methode verwenden und die folgenden Werte übergeben:
 
-   * Das `BLOB`-Objekt, das das PDF-Dokument enthält.
-   * Das `PDFAValidationOptionSpec`-Objekt, das Laufzeitoptionen enthält.
+   * Die `BLOB` -Objekt, das das PDF-Dokument enthält.
+   * Die `PDFAValidationOptionSpec` -Objekt, das Laufzeitoptionen enthält.
 
-   Die `isPDFA`-Methode gibt ein `PDFAValidationResult`-Objekt zurück, das die Ergebnisse dieses Vorgangs enthält.
+   Die `isPDFA` -Methode gibt eine `PDFAValidationResult` -Objekt, das die Ergebnisse dieses Vorgangs enthält.
 
 **Siehe auch**
 
 [Arbeiten mit PDF/A-Dokumenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Aufrufen von AEM Forms mit der Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Erstellen einer .NET-Client-Assembly, die die Base64-Kodierung verwendet](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)

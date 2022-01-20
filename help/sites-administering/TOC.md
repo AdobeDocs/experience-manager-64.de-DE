@@ -6,11 +6,11 @@ audience: admin-user
 user-guide-title: AEM 6.4-Administratorenanleitung
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
-feature: Verwalten
+feature: Administering
 role: Admin
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '648'
 ht-degree: 94%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 94%
    + [Erstellen und Synchronisieren von Live Copies](msm-livecopy.md)
    + [MSM-Rollout-Konflikte](msm-rollout-conflicts.md)
    + [Best Practices für MSM](msm-best-practices.md)
-   + [Übersetzen von Inhalten für mehrsprachige Websites](translation.md)
+   + [Übersetzen von Inhalten für mehrsprachige Sites](translation.md)
    + [Verwalten von Übersetzungsprojekten](tc-manage.md)
    + [Identifizieren zu übersetzender Inhalte](tc-rules.md)
    + [Vorbereiten von Inhalten für die Übersetzung](tc-prep.md)
@@ -62,13 +62,13 @@ ht-degree: 94%
    + [Konfigurieren von AEM-Apps](config-apps.md)
    + [Verwalten von Workflows](workflows.md)
    + [Konfigurieren von Suchformularen](search-forms.md)
-   + [Die Tools-Konsolen](tools-consoles.md)
+   + [Die Tools-Konsolen ](tools-consoles.md)
    + [Berichterstellung](reporting.md)
-   + [Verwalten von Workflow-Instanzen](workflows-administering.md)
+   + [Verwalten der Workflow-Instanzen](workflows-administering.md)
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
    + [Aktivierung des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
    + [Starten von Workflows](workflows-starting.md)
-   + [Konfigurieren der Rich-Text-Editor-Plug-ins ](configure-rich-text-editor-plug-ins.md)
+   + [Konfigurieren der Rich-Text-Editor-Plug-ins](configure-rich-text-editor-plug-ins.md)
    + [Admin Consoles](enable-classic-ui-admin.md)
 + Sicherheit {#security}
    + [Benutzerverwaltung und Sicherheit](security.md)
@@ -97,7 +97,7 @@ ht-degree: 94%
    + [Content-Disposition-Filter](content-disposition-filter.md)
 + Personalisierung {#personalization}
    + [Personalisierung](personalization.md)
-   + [Konfigurieren von ContextHub ](contexthub-config.md)
+   + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
    + [Konfigurieren der Segmentierung mit ContextHub](segmentation.md)
@@ -106,7 +106,7 @@ ht-degree: 94%
    + [Integrieren von Einstiegsseiten in Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + E-Commerce {#ecommerce}
    + [E-Commerce](ecommerce.md)
-   + [Konzepte ](concepts.md)
+   + [Konzepte](concepts.md)
    + [Verwalten des generischen eCommerce](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)

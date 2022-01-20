@@ -2,7 +2,7 @@
 title: Best Practices
 seo-title: Best Practices
 description: Wie AEM am effizientesten und effektivsten verwendet wird
-seo-description: Wie AEM am effizientesten und effektivsten verwendet wird
+seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 84db73b0-1bc3-4c39-9bc2-0840e24832b0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 80%
+source-wordcount: '285'
+ht-degree: 78%
 
 ---
 

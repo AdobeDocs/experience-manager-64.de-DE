@@ -1,17 +1,17 @@
 ---
 title: Erstellen einer interaktiven Kommunikation
-seo-title: Erstellen einer interaktiven Kommunikation
+seo-title: Create an Interactive Communication
 description: 'Erstellen Sie eine interaktive Kommunikation mit dem Editor für interaktive Kommunikation. Verwenden Sie die Drag-and-Drop-Funktionalität, um die interaktive Kommunikation zu erstellen und eine Vorschau der Druck- und Webausgaben für verschiedene Gerätetypen anzuzeigen. '
-seo-description: 'Erstellen Sie eine interaktive Kommunikation mit dem Editor für interaktive Kommunikation. Verwenden Sie die Drag-and-Drop-Funktionalität, um die interaktive Kommunikation zu erstellen und eine Vorschau der Druck- und Webausgaben für verschiedene Gerätetypen anzuzeigen. '
+seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
 uuid: b98e9a49-cef2-42f2-b484-8765b859895b
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
-feature: Interaktive Kommunikation
+feature: Interactive Communication
 exl-id: a65b775d-040c-4069-b43a-6815be959b31
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3154'
+source-wordcount: '3120'
 ht-degree: 58%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 58%
 
 Erstellen Sie eine interaktive Kommunikation mit dem Editor für interaktive Kommunikation. Verwenden Sie die Drag-and-Drop-Funktionalität, um die interaktive Kommunikation zu erstellen und eine Vorschau der Druck- und Webausgaben für verschiedene Gerätetypen anzuzeigen.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Mit der interaktiven Kommunikation lässt sich die Generierung, Zusammenstellung und Verteilung sicherer, personalisierter und interaktiver Schriftstücke zentralisieren und verwalten. Wenn Sie den Druck als Master-Kanal für das Web verwenden, können Sie die Aufwandsduplikation beim Erstellen der Webausgabe der interaktiven Kommunikation minimieren.
 
@@ -29,24 +29,24 @@ Mit der interaktiven Kommunikation lässt sich die Generierung, Zusammenstellung
 Die folgenden Voraussetzungen sind Voraussetzung für die Erstellung einer interaktiven Kommunikation:
 
 * Richten Sie ein [Formulardatenmodell](/help/forms/using/data-integration.md) ein, das Testdaten oder eine tatsächliche Datenquelle enthält, z. B. eine Instanz von Microsoft® Dynamics.
-* Stellen Sie sicher, dass Sie über die [Dokumentfragmente](/help/forms/using/document-fragments.md) verfügen.
-* Stellen Sie sicher, dass Sie [Vorlagen für Druck- und Webkanal](/help/forms/using/web-channel-print-channel.md) haben.
+* Stellen Sie sicher, dass Sie über die [Dokumentfragmente](/help/forms/using/document-fragments.md).
+* Stellen Sie sicher, dass Sie [Vorlagen für Druck- und Webkanäle](/help/forms/using/web-channel-print-channel.md).
 * Stellen Sie sicher, dass Sie das erforderliche [Design](/help/forms/using/themes.md) für den Webkanal haben.
 
 ## Erstellen einer interaktiven Kommunikation {#createic}
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]**.
-1. Tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Interaktive Kommunikation]** aus. Die Seite &quot;Interaktive Kommunikation erstellen&quot;wird angezeigt.
+1. Tippen **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Interaktive Kommunikation]**. Die Seite &quot;Interaktive Kommunikation erstellen&quot;wird angezeigt.
 
    ![create-interactive-communication](assets/create-interactive-communication.png)
 
-1. Geben Sie die folgenden Informationen ein. :
+1. Geben Sie folgende Informationen ein. :
 
    * **[!UICONTROL Titel]**: Geben Sie den Titel der interaktiven Kommunikation ein.
    * **[!UICONTROL Name*]**: Der Name der interaktiven Kommunikation wird aus dem eingegebenen Titel abgeleitet. Bearbeiten Sie ihn gegebenenfalls.
    * **[!UICONTROL Beschreibung]**: Geben Sie eine Beschreibung der interaktiven Kommunikation ein.
-   * **[!UICONTROL Formulardatenmodell*]**: Durchsuchen und wählen Sie das Formulardatenmodell aus. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms Data Integration](/help/forms/using/data-integration.md).
-   * **[!UICONTROL Vorbefüllungsdienst]**: Wählen Sie den Vorbefüllungs-Dienst aus, um die Daten abzurufen und die interaktive Kommunikation vorab auszufüllen.
+   * **[!UICONTROL Formulardatenmodell*]**: Durchsuchen und wählen Sie das Formulardatenmodell aus. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
+   * **[!UICONTROL Vorbefüllungs-Dienst]**: Wählen Sie den Vorbefüllungs-Dienst aus, um die Daten abzurufen und die interaktive Kommunikation vorab auszufüllen.
    * **[!UICONTROL Nachbearbeitungstyp]**: Sie können AEM oder Forms-Workflow auswählen, der beim Senden der interaktiven Kommunikation ausgelöst werden soll. Wählen Sie den Typ des auszulösenden Workflows aus.
    * **[!UICONTROL Nachbearbeitung]**: Wählen Sie den Namen des Workflows aus, der ausgelöst werden soll. Wenn Sie AEM Workflow auswählen, geben Sie Anlagenpfad, Layoutpfad, PDF-Pfad, Druckdatenpfad und Webdatenpfad an.
    * **[!UICONTROL Tags]**: Wählen Sie die Tags aus, die auf die interaktive Kommunikation angewendet werden sollen. Sie können auch einen neuen/benutzerdefinierten Tag-Namen eingeben und die Eingabetaste drücken, um ihn zu erstellen.
@@ -58,26 +58,26 @@ Die folgenden Voraussetzungen sind Voraussetzung für die Erstellung einer inter
 1. Geben Sie Folgendes ein:
 
    * **[!UICONTROL Drucken]**: Wählen Sie diese Option, um den Druckkanal der interaktiven Kommunikation zu generieren.
-   * **[!UICONTROL Druckvorlage*:]** Suchen Sie nach einer XDP-Datei als Druckvorlage und wählen Sie sie aus.
-   * **[!UICONTROL Use Print As Übergeordnet For Web Channel:]** Wählen Sie diese Option, um den Webkanal synchron mit dem Druckkanal zu erstellen. Die Verwendung des Druckkanals als Master für den Webkanal stellt sicher, dass der Inhalt und die Datenbindung des Webkanals aus dem Druckkanal abgeleitet werden und dass die im Druckkanal vorgenommenen Änderungen im Webkanal widergespiegelt werden können, wenn Sie auf „Synchronisieren“ tippen. Die Autoren dürfen jedoch ggf. die Vererbung für bestimmte Komponenten im Webkanal aufheben. Weitere Informationen finden Sie unter [Synchronisieren des Webkanals mit dem Druckkanal](/help/forms/using/create-interactive-communication.md#synchronize).
+   * **[!UICONTROL Druckvorlage*:]** Suchen Sie nach einer XDP als Druckvorlage und wählen Sie sie aus.
+   * **[!UICONTROL Verwenden Sie für Webkanal &quot;Druck wie Übergeordnet&quot;:]** Wählen Sie diese Option, um den Webkanal synchron mit dem Druckkanal zu erstellen. Die Verwendung des Druckkanals als Master für den Webkanal stellt sicher, dass der Inhalt und die Datenbindung des Webkanals aus dem Druckkanal abgeleitet werden und dass die im Druckkanal vorgenommenen Änderungen im Webkanal widergespiegelt werden können, wenn Sie auf „Synchronisieren“ tippen. Die Autoren dürfen jedoch ggf. die Vererbung für bestimmte Komponenten im Webkanal aufheben. Weitere Informationen finden Sie unter [Synchronisieren des Webkanals mit dem Druckkanal](/help/forms/using/create-interactive-communication.md#synchronize).
    * **[!UICONTROL Web:]** Wählen Sie diese Option, um den Webkanal oder die responsive Ausgabe der interaktiven Kommunikation zu generieren.
    * **[!UICONTROL Webvorlage für interaktive Kommunikation*:]** Durchsuchen Sie die Webvorlage und wählen Sie sie aus.
-   * **** Design und Design  **[!UICONTROL auswählen*]**: Suchen Sie das Design und wählen Sie es aus, um den Webkanal der interaktiven Kommunikation zu gestalten. Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md).
+   * **[!UICONTROL Design]** und **[!UICONTROL Design auswählen*]**: Suchen Sie das Design und wählen Sie es aus, um den Webkanal der interaktiven Kommunikation zu gestalten. Weitere Informationen finden Sie unter [Designs in AEM Forms](/help/forms/using/themes.md).
    Weitere Informationen zu Druckkanälen und Webkanälen finden Sie unter [Druckkanal und Webkanal](/help/forms/using/web-channel-print-channel.md).
 
-1. Tippen Sie auf **[!UICONTROL Erstellen]**. Die interaktive Kommunikation wird erstellt und ein Warnhinweis wird angezeigt. Tippen Sie auf **[!UICONTROL Bearbeiten]**, um mit der Erstellung des Inhalts der interaktiven Kommunikation zu beginnen, wie unter [Hinzufügen von Inhalten mithilfe der Benutzeroberfläche zum Erstellen der interaktiven Kommunikation](#step2) beschrieben. Alternativ können Sie auf **[!UICONTROL Fertig]** tippen und die interaktive Kommunikation später bearbeiten.
+1. Tippen Sie auf **[!UICONTROL Erstellen]**. Die interaktive Kommunikation wird erstellt und ein Warnhinweis wird angezeigt. Tippen **[!UICONTROL Bearbeiten]** , um mit der Erstellung des Inhalts der interaktiven Kommunikation zu beginnen, wie hier beschrieben: [Hinzufügen von Inhalten über die Benutzeroberfläche zum Erstellen interaktiver Kommunikation](#step2). Alternativ können Sie auf **[!UICONTROL Fertig]** und wählen Sie die Option, die interaktive Kommunikation später zu bearbeiten.
 
 ## Fügen Sie der interaktiven Kommunikation Inhalte hinzu {#step2}
 
 Nachdem Sie eine interaktive Kommunikation erstellt haben, können Sie die Authoring-Oberfläche für interaktive Kommunikation verwenden, um deren Inhalte zu erstellen.
 
-Weitere Informationen zur Authoring-Oberfläche für interaktive Kommunikation finden Sie unter [Einführung in die Erstellung interaktiver Kommunikation](/help/forms/using/introduction-interactive-communication-authoring.md).
+Weitere Informationen zur Authoring-Benutzeroberfläche für interaktive Kommunikation finden Sie unter [Einführung in das Authoring interaktiver Kommunikation](/help/forms/using/introduction-interactive-communication-authoring.md).
 
-1. Die Authoring-Benutzeroberfläche für interaktive Kommunikation wird gestartet, wenn Sie auf Bearbeiten tippen, wie unter [Interaktive Kommunikation erstellen](#createic) beschrieben. Alternativ können Sie zu einem vorhandenen Asset für interaktive Kommunikation auf AEM navigieren, es auswählen und auf **[!UICONTROL Bearbeiten]** tippen, um die Authoring-Oberfläche für interaktive Kommunikation zu starten.
+1. Die Authoring-Benutzeroberfläche für interaktive Kommunikation wird gestartet, wenn Sie auf Bearbeiten tippen, wie unter [Interaktive Kommunikation erstellen](#createic). Alternativ können Sie zu einem vorhandenen interaktiven Kommunikationsasset auf AEM navigieren, es auswählen und auf **[!UICONTROL Bearbeiten]** , um die Authoring-Oberfläche für interaktive Kommunikation zu starten.
 
    Standardmäßig wird der Druckkanal der interaktiven Kommunikation angezeigt, es sei denn, die interaktive Kommunikation ist nur Web-Kanal. Der Druckkanal der interaktiven Kommunikation zeigt Zielbereiche an, wie in der ausgewählten XDP-/Druckkanalvorlage verfügbar. In diesen Zielbereichen und Feldern können Sie Komponenten oder Assets hinzufügen.
 
-1. Wählen Sie bei ausgewähltem Druckkanal die Registerkarte **[!UICONTROL Komponenten]** aus. Folgende Komponenten sind im Druckkanal verfügbar:
+1. Wählen Sie bei ausgewähltem Druckkanal die **[!UICONTROL Komponenten]** Registerkarte. Folgende Komponenten sind im Druckkanal verfügbar:
 
    | **Komponente** | **Funktion** |
    |---|---|
@@ -118,12 +118,12 @@ Weitere Informationen zur Authoring-Oberfläche für interaktive Kommunikation f
 
 Weitere Informationen zu Dokumentfragmenten finden Sie unter [Dokumentfragmente](/help/forms/using/document-fragments.md).
 
-1. Um die Bindung von Variablen einzurichten, tippen Sie auf eine Variable, wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren) und richten Sie dann die Bindungseigenschaften im Bereich Eigenschaften in der Seitenleiste ein.
+1. Um die Bindung von Variablen einzurichten, tippen Sie auf eine Variable und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren) und richten Sie dann die Bindungseigenschaften im Bereich Eigenschaften in der Seitenleiste ein.
 
    * **[!UICONTROL Keine:]** Agent füllt hier den Wert für die Variable aus.
    * **[!UICONTROL Textfragment]**: Wenn ausgewählt, können Sie ein Textdokumentfragment durchsuchen und auswählen, dessen Inhalt in dem Feld gerendert wird. Nur die Textdokumentfragmente können an Variablen gebunden werden, die keine Variablen enthalten.
    * **[!UICONTROL Datenmodellobjekt]**: Wählen Sie eine Formulardatenmodell-Eigenschaft aus, deren Wert in das Feld gefüllt wird.
-   Sie können auch das relevante Textdokumentfragment konfigurieren. Das Eigenschaftenfenster zeigt die Liste der Variablen im Textdokumentfragment an. Sie können auf ![edit](assets/edit.png) (Bearbeiten) neben einem Variablennamen tippen, um die Einstellungen dieser Variablen zur Bearbeitung anzuzeigen.
+   Sie können auch das relevante Textdokumentfragment konfigurieren. Das Eigenschaftenfenster zeigt die Liste der Variablen im Textdokumentfragment an. Sie können auf ![edit](assets/edit.png) (Bearbeiten) neben einem Variablennamen, um die Einstellungen dieser Variablen zur Bearbeitung anzuzeigen.
 
 1. Um eine Tabelle hinzuzufügen, verwenden Sie bei ausgewähltem Druckkanal auf der Registerkarte **[!UICONTROL Assets]** den Filter, um nur die Layout-Fragmente anzuzeigen. Ziehen Sie das gewünschte Layoutfragment per Drag-and-Drop in die interaktive Kommunikation. Ein Layout-Fragment basiert auf einer XDP und kann verwendet werden, um grafische Layouts oder statische und dynamische Tabellen in der interaktiven Kommunikation zu erstellen, die mit dynamischen Daten gefüllt werden.
 
@@ -147,7 +147,7 @@ Weitere Informationen zu Dokumentfragmenten finden Sie unter [Dokumentfragmente]
    * [Fügen Sie Regeln zu Komponenten hinzu](/help/forms/using/create-interactive-communication.md#rules)
 
 
-1. Wechseln Sie zu **[!UICONTROL Webkanal]**. Der Webkanal wird im Editor für interaktive Kommunikation angezeigt. Wenn Sie zum ersten Mal vom Druckkanal zum Webkanal wechseln, erfolgt die automatische Synchronisierung. Weitere Informationen finden Sie unter [Synchronisieren des Webkanals vom Druckkanal](/help/forms/using/create-interactive-communication.md#synchronize).
+1. Wechseln zu **[!UICONTROL Webkanal]**. Der Webkanal wird im Editor für interaktive Kommunikation angezeigt. Wenn Sie zum ersten Mal vom Druckkanal zum Webkanal wechseln, erfolgt die automatische Synchronisierung. Weitere Informationen finden Sie unter [Synchronisieren des Webkanals vom Druckkanal](/help/forms/using/create-interactive-communication.md#synchronize).
 
    Da wir in diesem Beispiel Druck als Master für das Web verwenden, werden die Platzhalter, der Inhalt und die Datenbindung des Druckkanals mit dem Webkanal synchronisiert. Sie können jedoch bestimmte Inhalte im Webkanal nach Bedarf ändern und anpassen.
 
@@ -155,35 +155,35 @@ Weitere Informationen zu Dokumentfragmenten finden Sie unter [Dokumentfragmente]
 
 1. Um weitere Komponenten im Webkanal hinzuzufügen, tippen Sie bei dem ausgewählten Webkanal auf **[!UICONTROL Komponenten]**. Ziehen Sie Komponenten per Drag-and-Drop in den Webkanal Ihrer interaktiven Kommunikation und fahren Sie mit der Konfiguration fort.
 
-   | Komponenten  | Funktion |
+   | Komponenten | Funktion |
    |---|---|
    | Diagramm | Fügt ein Diagramm hinzu, das Sie in der interaktiven Kommunikation für die visuelle Darstellung zweidimensionaler Daten verwenden können, die aus einer Formulardatenmodellsammlung abgerufen werden. Weitere Informationen finden Sie unter [Verwenden der Diagrammkomponente](/help/forms/using/chart-component-interactive-communications.md). |
    | Dokumentfragment | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Texts, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder auf einem Formulardatenmodell oder ohne Formulardatenmodell basieren. |
    | Bild | Ermöglicht es Ihnen, ein Bild einzufügen. |
-   | Fenster | Die Bereichskomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bereichskomponente können Sie auch eine Gruppe von Komponenten für den Endbenutzer wiederholbar machen, z. B. mehrere Einträge zum Ausfüllen von Bildungsnachweisen. |
+   | Bereich | Die Bereichskomponente ist ein Platzhalter zum Gruppieren anderer Komponenten und steuert, wie eine Gruppe von Komponenten in einer interaktiven Kommunikation angeordnet wird. Mit einer Bereichskomponente können Sie auch eine Gruppe von Komponenten für den Endbenutzer wiederholbar machen, z. B. mehrere Einträge zum Ausfüllen von Bildungsnachweisen. |
    | Tabelle | Fügt eine Tabelle hinzu, mit der Sie Daten in Zeilen und Spalten organisieren können. |
    | Zielbereich | Fügt einen Zielbereich in einen Webkanal ein, um die webkanalspezifischen Komponenten zu organisieren. Zielbereich ist ein einfacher Container, in dem Sie webkanalspezifische Komponenten gruppieren können. |
    | Text | Fügt dem Webkanal einer interaktiven Kommunikation Rich Text hinzu. Text kann auch Formulardatenmodellobjekte verwenden, um den Inhalt dynamisch zu gestalten. |
 
 1. Fügen Sie nach Bedarf Assets in Ihren Webkanal ein.
 
-   Sie können [Ihre interaktive Kommunikation in der Vorschau anzeigen](#previewic), um zu sehen, wie die Druck- und Webausgaben der interaktiven Kommunikation aussehen, und nach Bedarf weitere Änderungen vornehmen.
+   Sie können [Vorschau der interaktiven Kommunikation anzeigen](#previewic) um zu sehen, wie die Druck- und Webausgaben der interaktiven Kommunikation aussehen, und nach Bedarf weitere Änderungen vorzunehmen.
 
 ## Interaktive Kommunikation in der Vorschau anzeigen {#previewic}
 
-Sie können die Option **[!UICONTROL Vorschau]** verwenden, um das Erscheinungsbild der interaktiven Kommunikation zu bewerten. Der Webkanal der interaktiven Kommunikation bietet außerdem eine Option zum Emulieren des Erlebnisses einer interaktiven Kommunikation für verschiedene Geräte. Beispiel: iPhone, iPad und Desktop. Sie können die Optionen **[!UICONTROL Vorschau]** und **[!UICONTROL Emulator]** ![Lineal](assets/ruler.png) gemeinsam verwenden, um die Webausgaben für Geräte mit unterschiedlichen Bildschirmgrößen in der Vorschau anzuzeigen. Die Beispieldaten in der Vorschau werden aus dem angegebenen Formulardatenmodell gefüllt.
+Sie können die **[!UICONTROL Vorschau]** -Option zum Auswerten der Darstellung der interaktiven Kommunikation. Der Webkanal der interaktiven Kommunikation bietet außerdem eine Option zum Emulieren des Erlebnisses einer interaktiven Kommunikation für verschiedene Geräte. Beispiel: iPhone, iPad und Desktop. Sie können beide **[!UICONTROL Vorschau]** und **[!UICONTROL Emulator]** ![Lineal](assets/ruler.png) Optionen zusammen, um die Webausgaben für Geräte unterschiedlicher Bildschirmgrößen in der Vorschau anzuzeigen. Die Beispieldaten in der Vorschau werden aus dem angegebenen Formulardatenmodell gefüllt.
 
 1. Wählen Sie den (Druck- oder Web-)Kanal aus, um eine Vorschau anzuzeigen und auf die Vorschau zu tippen. Die interaktive Kommunikation wird angezeigt.
 
    >[!NOTE]
    >
-   >Die Vorschau wird mit den Beispieldaten des Formulardatenmodells befüllt. Weitere Informationen zur Vorschau der interaktiven Kommunikation mit anderen Daten oder zur Verwendung des Vorbefüllungs-Dienstes finden Sie unter [Verwenden des Formulardatenmodells](/help/forms/using/using-form-data-model.md) und [Arbeiten mit dem Formulardatenmodell](/help/forms/using/work-with-form-data-model.md).
+   >Die Vorschau wird mit den Beispieldaten des Formulardatenmodells befüllt. Weitere Informationen zur Vorschau der interaktiven Kommunikation mit anderen Daten oder zur Verwendung des Vorbefüllungs-Dienstes finden Sie unter [Formulardatenmodell verwenden](/help/forms/using/using-form-data-model.md) und [Arbeiten mit dem Formulardatenmodell](/help/forms/using/work-with-form-data-model.md).
 
-1. Verwenden Sie für den Webkanal ![Lineal](assets/ruler.png), um zu sehen, wie die interaktive Kommunikation auf verschiedenen Geräten aussieht.
+1. Verwenden Sie für den Webkanal ![Lineal](assets/ruler.png) um zu sehen, wie die interaktive Kommunikation auf verschiedenen Geräten aussieht.
 
    ![webchannelpreview](assets/webchannelpreview.png)
 
-Außerdem können Sie [Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten](/help/forms/using/prepare-send-interactive-communication.md) vorbereiten und senden.
+Darüber hinaus können Sie [Vorbereiten und Senden der interaktiven Kommunikation über die Benutzeroberfläche für Agenten](/help/forms/using/prepare-send-interactive-communication.md).
 
 ## Konfigurieren von Eigenschaften in der interaktiven Kommunikation  {#configuring-properties-in-interactive-communication}
 
@@ -204,7 +204,7 @@ Im Druckkanal können Sie die Anhänge und den Bibliothekszugriff so konfigurier
    * **[!UICONTROL Bibliothekszugriff zulassen]**: Wählen Sie diese Option, um den Bibliothekszugriff für den Agenten in der Benutzeroberfläche für Agenten zu aktivieren. Wenn diese Option aktiviert ist, kann der Agent während der Vorbereitung der interaktiven Kommunikation Dateien aus der Bibliothek hinzufügen.
    * **[!UICONTROL Neuanordnung von Anlagen zulassen]**: Wählen Sie diese Option, damit der Agent die Anlagen mit der interaktiven Kommunikation neu ordnen kann.
    * **[!UICONTROL Maximale Anzahl der zulässigen Anlagen]**: Geben Sie die maximale Anzahl der Anhänge an, die mit der interaktiven Kommunikation zulässig sind.
-   * **[!UICONTROL Anzuhängende]** Dateien: Tippen Sie auf  **** Hinzufügen , wählen Sie die anzuhängenden Dateien aus und geben Sie Folgendes an:
+   * **[!UICONTROL Anzuhängende Dateien]**: Tippen **[!UICONTROL Hinzufügen]** und wählen Sie die anzuhängenden Dateien aus und geben Sie Folgendes an:
 
       * **[!UICONTROL Diese Datei standardmäßig an das Dokument anhängen]**: Sie können diese Option ändern, wenn nur der Anhang nicht zwingend ist.
       * **[!UICONTROL Obligatorisch:]** Der Agent kann den Anhang nicht in der Benutzeroberfläche für Agenten entfernen.
@@ -237,7 +237,7 @@ Im Druckkanal können Sie die Anhänge und den Bibliothekszugriff so konfigurier
    * **[!UICONTROL Mehrere Zeilen zulassen]**: Wählen Sie dieses Feld aus, um mehrere Textzeilen als Eingabe in das Feld zuzulassen. Diese Einstellung ist nicht anwendbar, wenn der Bindungstyp „Textfragment“ ist.
 
 
-1. Tippen Sie auf ![done_icon](assets/done_icon.png).
+1. Tippen ![done_icon](assets/done_icon.png).
 
 ## Regeln auf interaktive Kommunikationskomponenten anwenden {#rules}
 
@@ -250,7 +250,7 @@ Weitere Informationen finden Sie unter:
 
 ## Tabellen verwenden {#tables}
 
-### Dynamische Tabellen in interaktiver Kommunikation  {#dynamic-tables-in-interactive-communication}
+### Dynamische Tabellen in interaktiver Kommunikation {#dynamic-tables-in-interactive-communication}
 
 Sie können dynamische Tabellen in der interaktiven Kommunikation mithilfe von Layout-Fragmenten hinzufügen. In den folgenden Schritten wird anhand eines Beispiels einer Kreditkartenabrechnung die Verwendung eines Layout-Fragments zum Erstellen einer dynamischen Tabelle in einer interaktiven Kommunikation veranschaulicht.
 
@@ -277,12 +277,12 @@ Sie können dynamische Tabellen in der interaktiven Kommunikation mithilfe von L
       * **[!UICONTROL Titel]**: Geben Sie einen Titel ein, der im Editor für interaktive Kommunikation sichtbar ist.
       * **[!UICONTROL Bindungstyp]**&amp;ast;: Wählen Sie einen der folgenden Bindungstypen für das Feld aus.
 
-         * **[!UICONTROL Kein]**
+         * **[!UICONTROL Ohne]**
          * **[!UICONTROL Datenmodellobjekt]**: Wählen Sie eine Formulardatenmodell-Eigenschaft aus, deren Wert in das Feld gefüllt wird.
       * **[!UICONTROL Datenmodellobjekt]**: Die Eigenschaft des Formulardatenmodells, deren Wert in das Feld eingefügt wird.
       * **[!UICONTROL Standardwert]**: Der Standardwert stellt sicher, dass das Feld nicht leer ist, wenn vom angegebenen Datenmodellobjekt kein Wert bereitgestellt wird. Der Standardwert wird vorab in das Feld eingefügt.
       * **[!UICONTROL Bearbeitbar nach Agent]**: Wählen Sie diese Option aus, damit der Agent den Wert in dem Feld in der Benutzeroberfläche für Agenten bearbeiten kann.
-   1. Tippen Sie auf ![done_icon](assets/done_icon.png).
+   1. Tippen ![done_icon](assets/done_icon.png).
 
 
 
@@ -307,7 +307,7 @@ Die Verwendung von Druck als Master für den Webkanal stellt sicher, dass der In
 
 Die Autoren dürfen jedoch ggf. die Vererbung für Komponenten im Webkanal aufheben.
 ![printweb_2-3](assets/printweb_2-3.png)
-[Zum Vergrößern klicken](assets/printweb_2-3.png)
+[Klicken Sie zum Vergrößern auf](assets/printweb_2-3.png)
 
 ![Druck- und Webkanäle im Editor für interaktive Kommunikation](assets/printweb_2-1.png)
 
@@ -323,13 +323,13 @@ Wenn Sie Druckkanal als Master für den Webkanal verwenden und Sie zum Webkanal 
 
 Im Webkanal sind die Komponenten in den Zielbereichen eingebettet.
 
-Bewegen Sie den Mauszeiger über den relevanten Zielbereich im Webkanal, wählen Sie ![cancelinheritance](assets/cancelinheritance.png) (Vererbung abbrechen) und tippen Sie dann im Dialogfeld &quot;Vererbung abbrechen&quot;auf **[!UICONTROL Ja]**.
+Bewegen Sie den Mauszeiger über den relevanten Zielbereich im Webkanal und wählen Sie ![abgebrochene Vererbung](assets/cancelinheritance.png) (Vererbung abbrechen) und tippen Sie dann im Dialogfeld Vererbung abbrechen auf **[!UICONTROL Ja]**.
 
-Die Vererbung der Komponenten innerhalb des Zielbereichs wird abgebrochen und jetzt können Sie sie nach Bedarf bearbeiten.
+Die Vererbung der Komponenten im Zielbereich wird abgebrochen und jetzt können Sie sie nach Bedarf bearbeiten.
 
 ### Vererbung erneut aktivieren {#re-enable-inheritance}
 
-Wenn Sie im Webkanal die Vererbung einer Komponente abgebrochen haben, können Sie sie erneut aktivieren. Um die Vererbung erneut zu aktivieren, bewegen Sie den Mauszeiger über die Grenze des relevanten Zielbereichs, der die Komponente enthält, und tippen Sie auf ![Erneutes Aktivieren der Vererbung](assets/reenableinheritance.png).
+Wenn Sie im Webkanal die Vererbung einer Komponente abgebrochen haben, können Sie sie erneut aktivieren. Um die Vererbung erneut zu aktivieren, bewegen Sie den Mauszeiger über die Grenze des relevanten Zielbereichs, der die Komponente enthält, und tippen Sie auf ![reaktivierte Vererbung](assets/reenableinheritance.png).
 
 Das Dialogfeld „Vererbung zurücksetzen“ wird angezeigt.
 

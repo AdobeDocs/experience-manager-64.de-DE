@@ -1,8 +1,8 @@
 ---
 title: Integrieren mit Adobe Dynamic Tag Management
-seo-title: Integrieren mit Adobe Dynamic Tag Management
+seo-title: Integrating with Adobe Dynamic Tag Management
 description: Erfahren Sie mehr über die Integration mit Adobe Dynamic Tag Management.
-seo-description: Erfahren Sie mehr über die Integration mit Adobe Dynamic Tag Management.
+seo-description: Learn about integration with Adobe Dynamic Tag Management.
 uuid: cbb9f942-44e3-4cd5-b07d-4298a7a08376
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,16 +12,16 @@ discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: d7108d54-cb87-4587-9b52-6711ba38bed2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2210'
 ht-degree: 74%
 
 ---
 
-# Integrieren mit Adobe Dynamic Tag Management  {#integrating-with-adobe-dynamic-tag-management}
+# Integrieren mit Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 Integrieren Sie [Adobe Dynamic Tag Management](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) mit AEM, sodass Sie Ihre Dynamic Tag Management-Webeigenschaften für das Tracking von AEM Sites verwenden können. Dynamic Tag Management ermöglicht Marketingexperten die Verwaltung von Tags für die Datensammlung und die Verteilung von Daten auf Systeme für Digital Marketing. Verwenden Sie Dynamic Tag Management zum Beispiel für die Erfassung der Nutzungsdaten zu Ihrer AEM-Website und die Verteilung der Daten für die Analyse in Adobe Analytics oder Adobe Target.
 
-Vor der Integration müssen Sie die Dynamic Tag Management-[Webeigenschaft](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) erstellen, die für das Tracking der Domäne Ihrer AEM-Site zuständig ist. Die [Hosting-Optionen](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) der Webeigenschaft müssen so konfiguriert werden, dass Sie AEM für den Zugriff auf die Dynamic Tag Management-Bibliotheken konfigurieren können.
+Vor der Integration müssen Sie die Dynamic Tag Management-[Webeigenschaft](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) erstellen, die für das Tracking der Domäne Ihrer AEM-Site zuständig ist. Die [Hosting-Optionen](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) der Webeigenschaft konfiguriert werden, damit Sie AEM für den Zugriff auf die Dynamic Tag Management-Bibliotheken konfigurieren können.
 
 Nach der Konfiguration der Integration erfordern Änderungen an den Dynamic Tag Management-Bereitstellungstools sowie an Regeln keine Änderungen mehr an der Dynamic Tag Management-Konfiguration in AEM. Die Änderungen stehen AEM automatisch zur Verfügung.
 
@@ -30,17 +30,16 @@ Nach der Konfiguration der Integration erfordern Änderungen an den Dynamic Tag 
 >Wenn Sie DTM mit einer benutzerdefinierten Proxy-Konfiguration verwenden, müssen Sie beide HTTP-Client-Proxy-Konfigurationen vornehmen, da manche Funktionen von AEM 3.x-APIs verwenden und andere wiederum 4.x-APIs:
 >
 >* 3.x wird mit [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient) konfiguriert.
->* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)  konfiguriert.
+>* 4.x wird mit [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator) konfiguriert.
 
 >
 
 
-
-## Bereitstellungsoptionen  {#deployment-options}
+## Bereitstellungsoptionen {#deployment-options}
 
 Die folgenden Bereitstellungsoptionen beeinflussen die Konfiguration der Integration mit Dynamic Tag Management.
 
-### Hosting von Dynamic Tag Management  {#dynamic-tag-management-hosting}
+### Hosting von Dynamic Tag Management {#dynamic-tag-management-hosting}
 
 AEM unterstützt Dynamic Tag Management, das in der Cloud oder in AEM gehostet wird.
 
@@ -49,7 +48,7 @@ AEM unterstützt Dynamic Tag Management, das in der Cloud oder in AEM gehostet w
 
 Die von Ihrer Implementierung verwendete Art des Hostings bestimmt einige der von Ihnen durchgeführten Konfigurations- und Implementierungsaufgaben. Weitere Informationen zu den Hostingoptionen finden Sie unter [Hosting – Registerkarte „Einbetten“](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) in der Hilfe zu Dynamic Tag Management.
 
-### Staging- und Produktionsbibliothek  {#staging-and-production-library}
+### Staging- und Produktionsbibliothek {#staging-and-production-library}
 
 Entscheiden Sie, ob Ihre AEM-Autoreninstanz den Staging- oder Produktionscode von Dynamic Tag Management verwenden soll.
 
@@ -61,11 +60,11 @@ Bei Bedarf kann Ihre Autoreninstanz die Produktionsbibliotheken nutzen. Es sind 
 
 Wenn AEM die Dynamic Tag Management-Bibliotheken hostet, können Sie den Bereitstellungs-Hook-Service verwenden, um Bibliotheksaktualisierungen automatisch auf AEM zu pushen. Bibliotheksaktualisierungen werden übertragen, wenn Änderungen an den Bibliotheken vorgenommen werden, z. B. wenn die Webeigenschaftseigenschaften des Dynamic Tag Management bearbeitet werden.
 
-Um den Bereitstellungs-Hook zu verwenden, muss Dynamic Tag Management eine Verbindung zur AEM-Instanz herstellen können, die die Bibliotheken hostet. Sie müssen [den Zugriff auf AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) für die Dynamic Tag Management-Server aktivieren.
+Um den Bereitstellungs-Hook zu verwenden, muss Dynamic Tag Management eine Verbindung zur AEM-Instanz herstellen können, die die Bibliotheken hostet. Sie müssen [Zugriff auf AEM aktivieren](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) für die Dynamic Tag Management-Server.
 
 Unter manchen Umständen kann AEM nicht erreichbar sein, so zum Beispiel, wenn AEM sich hinter einer Firewall befindet. In diesen Fällen können Sie die Option Abruf-Importtool von AEM verwenden, um die Bibliotheken regelmäßig abzurufen. Ein Cron-Auftragsausdruck gibt den Plan für Bibliotheksdownloads vor.
 
-## Aktivieren des Zugriffs auf den Bereitstellungs-Hook-Service  {#enabling-access-for-the-deployment-hook-service}
+## Aktivieren des Zugriffs auf den Bereitstellungs-Hook-Service {#enabling-access-for-the-deployment-hook-service}
 
 Aktivieren Sie den Bereitstellungs-Hook-Service für Dynamic Tag Management, um auf AEM zuzugreifen, damit der Service die in AEM gehosteten Bibliotheken aktualisieren kann. Geben Sie die IP-Adresse der Dynamic Tag Management-Server an, die die Staging- und Produktionsbibliotheken nach Bedarf aktualisieren:
 
@@ -90,7 +89,7 @@ Erstellen Sie eine Cloud-Konfiguration, sodass die AEM-Instanz sich mit Dynamic 
 
 >[!NOTE]
 >
->Vermeiden Sie die Integration von zwei Adobe Analytics-Trackingcodes auf Ihren Seiten, wenn Ihre DTM-Webeigenschaft das Adobe Analytics-Tool umfasst und Sie zudem den [Inhaltseinblick](/help/sites-authoring/content-insights.md) verwenden. Wählen Sie in Ihrer [Adobe Analytics-Cloud-Konfiguration](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics) die Option &quot;Tracking-Code nicht einschließen&quot;.
+>Vermeiden Sie die Integration von zwei Adobe Analytics-Trackingcodes auf Ihren Seiten, wenn Ihre DTM-Webeigenschaft das Adobe Analytics-Tool umfasst und Sie zudem den [Inhaltseinblick](/help/sites-authoring/content-insights.md) verwenden. In [Adobe Analytics-Cloud-Konfiguration](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)wählen Sie die Option &quot;Rückverfolgungscode nicht einschließen&quot;.
 
 ### Allgemeine Einstellungen {#general-settings}
 
@@ -151,15 +150,15 @@ Beim Hosten der Dynamic Tag Management-Bibliotheken in AEM konfiguriert AEM auto
   </tr> 
   <tr> 
    <td>Domänen-Hinweis</td> 
-   <td><p>(Optional) Die Domäne des AEM-Servers, der die Dynamic Tag Management-Bibliothek hostet. Geben Sie einen Wert an, um die Standarddomäne zu überschreiben, die für den <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer-Dienst</a> konfiguriert ist.</p> <p>Wenn AEM mit Dynamic Tag Management verbunden ist, nutzt es diesen Wert zum Konfigurieren des Staging-HTTP-Pfads oder des Produktions-HTTP-Pfads der Eigenschaften zum Herunterladen von Bibliotheken der Dynamic Tag Management-Webeigenschaft.</p> </td> 
+   <td><p>(Optional) Die Domäne des AEM-Servers, der die Dynamic Tag Management-Bibliothek hostet. Geben Sie einen Wert an, um die Standarddomäne zu überschreiben, die für die <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer-Dienst</a>.</p> <p>Wenn AEM mit Dynamic Tag Management verbunden ist, nutzt es diesen Wert zum Konfigurieren des Staging-HTTP-Pfads oder des Produktions-HTTP-Pfads der Eigenschaften zum Herunterladen von Bibliotheken der Dynamic Tag Management-Webeigenschaft.</p> </td> 
   </tr> 
   <tr> 
    <td>Hinweis für sichere Domäne</td> 
-   <td><p>(Optional) Die Domäne des AEM-Servers, der die Dynamic Tag Management-Bibliothek über HTTPS hostet. Geben Sie einen Wert an, um die Standarddomäne zu überschreiben, die für den <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer-Dienst</a> konfiguriert ist.</p> <p>Wenn AEM mit Dynamic Tag Management verbunden ist, nutzt es diesen Wert zum Konfigurieren des Staging-HTTPS-Pfads oder des Produktions-HTTPS-Pfads der Eigenschaften zum Herunterladen von Bibliotheken der Dynamic Tag Management-Webeigenschaft.</p> </td> 
+   <td><p>(Optional) Die Domäne des AEM-Servers, der die Dynamic Tag Management-Bibliothek über HTTPS hostet. Geben Sie einen Wert an, um die Standarddomäne zu überschreiben, die für die <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer-Dienst</a>.</p> <p>Wenn AEM mit Dynamic Tag Management verbunden ist, nutzt es diesen Wert zum Konfigurieren des Staging-HTTPS-Pfads oder des Produktions-HTTPS-Pfads der Eigenschaften zum Herunterladen von Bibliotheken der Dynamic Tag Management-Webeigenschaft.</p> </td> 
   </tr> 
   <tr> 
    <td>Gemeinsamer geheimer Schlüssel</td> 
-   <td><p>(Optional) Der gemeinsam genutzte geheime Schlüssel, der zum Entschlüsseln des Downloads verwendet werden soll. Rufen Sie diesen Wert im Feld "Gemeinsamer geheimer Schlüssel"auf der Seite "Bibliotheksdownload"des Dynamic Tag Management ab.</p> <p><strong>Hinweis:</strong> Sie müssen die  <a href="https://www.openssl.org/docs/apps/openssl.html"></a> OpenSSL-Bibliotheken auf dem Computer installiert haben, auf dem AEM installiert ist, damit AEM die heruntergeladenen Bibliotheken entschlüsseln können.</p> </td> 
+   <td><p>(Optional) Der gemeinsam genutzte geheime Schlüssel, der zum Entschlüsseln des Downloads verwendet werden soll. Rufen Sie diesen Wert im Feld "Gemeinsamer geheimer Schlüssel"auf der Seite "Bibliotheksdownload"des Dynamic Tag Management ab.</p> <p><strong>Hinweis:</strong> Sie müssen über die <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> -Bibliotheken, die auf dem Computer installiert sind, auf dem AEM installiert ist, sodass AEM die heruntergeladenen Bibliotheken entschlüsseln können.</p> </td> 
   </tr> 
   <tr> 
    <td>Abruf-Importtool aktivieren</td> 
@@ -227,7 +226,7 @@ Bei der folgenden Vorgehensweise wird die Touch-optimierte Benutzeroberfläche f
 1. Wenn Sie den Staging-Code oder die Autoreninstanz verwenden, heben Sie die Auswahl „Produktionscode bei Autor mit angeben“ auf.
 1. Stellen Sie je nach Bedarf Werte für die Registerkarte „Staging-Einstellungen“ und die Registerkarte „Produktionseinstellungen“ bereit und klicken Sie dann auf „OK“.
 
-## Manuelles Herunterladen der Dynamic Tag Management-Bibliothek  {#manually-downloading-the-dynamic-tag-management-library}
+## Manuelles Herunterladen der Dynamic Tag Management-Bibliothek {#manually-downloading-the-dynamic-tag-management-library}
 
 Laden Sie die Dynamic Tag Management-Bibliotheken bei Bedarf manuell herunter, um sie unmittelbar auf AEM zu aktualisieren. Führen Sie zum Beispiel einen manuellen Download durch, wenn Sie eine aktualisierte Bibliothek testen möchten, bevor das Abruf-Importtool einen geplanten automatischen Download der Bibliothek durchführt.
 
@@ -239,7 +238,7 @@ Laden Sie die Dynamic Tag Management-Bibliotheken bei Bedarf manuell herunter, u
 
 >[!NOTE]
 >
->Die heruntergeladenen Dateien werden unter `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype` gespeichert.
+>Die heruntergeladenen Dateien werden unter `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`.
 >
 >Folgendes wird direkt Ihrer [DTM-Konfiguration](#creating-the-dynamic-tag-management-configuration) entnommen:
 >
@@ -249,7 +248,6 @@ Laden Sie die Dynamic Tag Management-Bibliotheken bei Bedarf manuell herunter, u
 >* `servertype`
 
 >
-
 
 
 ## Verknüpfen einer Dynamic Tag Management-Konfiguration mit Ihrer Website {#associating-a-dynamic-tag-management-configuration-with-your-site}

@@ -1,8 +1,8 @@
 ---
 title: Berichterstellung
-seo-title: Berichterstellung
+seo-title: Reporting
 description: Erfahren Sie, wie Sie mit der Berichterstellung in AEM arbeiten können.
-seo-description: Erfahren Sie, wie Sie mit der Berichterstellung in AEM arbeiten können.
+seo-description: Learn how to work with Reporting in AEM.
 uuid: d6105d54-4d38-40a4-bd60-00057b84f7b8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
 source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2862'
 ht-degree: 81%
 
 ---
@@ -32,7 +32,7 @@ Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, st
 
 >[!NOTE]
 >
->Diese Berichte sind nur in der klassischen Benutzeroberfläche verfügbar. Informationen zur Systemüberwachung und -berichterstellung in der modernen Benutzeroberfläche finden Sie im [Vorgangs-Dashboard.](/help/sites-administering/operations-dashboard.md)
+>Diese Berichte sind nur in der klassischen Benutzeroberfläche verfügbar. Informationen zur Systemüberwachung und -berichterstellung in der modernen Benutzeroberfläche finden Sie in der [Vorgangs-Dashboard.](/help/sites-administering/operations-dashboard.md)
 
 Über die Konsole **Tools** kann auf alle Berichte zugegriffen werden. Wählen Sie im linken Bereich **Berichte** aus und doppelklicken Sie dann im rechten Bereich auf den benötigten Bericht, um ihn zur Anzeige und/oder Konfiguration zu öffnen.
 
@@ -42,7 +42,7 @@ Neue Instanzen eines Berichts können auch über die Konsole **Tools** erstellt 
 >
 >Zusätzlich zu den standardmäßigen AEM-Berichten können Sie auch [Ihren eigenen (vollständig neuen) Bericht entwickeln](/help/sites-developing/dev-reports.md).
 
-## Die Grundlagen der Berichtsanpassung.  {#the-basics-of-report-customization}
+## Die Grundlagen der Berichtsanpassung. {#the-basics-of-report-customization}
 
 Es stehen verschiedene Berichtsformate zur Verfügung. Die folgenden Berichte nutzen alle Spalten, die wie in den folgenden Abschnitten beschrieben angepasst werden können.
 
@@ -62,10 +62,9 @@ Es stehen verschiedene Berichtsformate zur Verfügung. Die folgenden Berichte nu
 >* Der [Workflow-Bericht](/help/sites-administering/reporting.md#workflow-report) bietet einen Überblick über die Workflows, die auf Ihrer Instanz ausgeführt werden.
 
 >
->
-Die folgenden Verfahren zur Spaltenkonfiguration sind also nicht geeignet. Weitere Informationen finden Sie in den Beschreibungen der einzelnen Berichte.
+>Die folgenden Verfahren zur Spaltenkonfiguration sind also nicht geeignet. Weitere Informationen finden Sie in den Beschreibungen der einzelnen Berichte.
 
-### Auswählen und Positionieren der Datenspalten  {#selecting-and-positioning-the-data-columns}
+### Auswählen und Positionieren der Datenspalten {#selecting-and-positioning-the-data-columns}
 
 Spalten können in allen Berichten hinzugefügt, neu positioniert oder entfernt werden – sowohl in standardmäßigen als auch in angepassten Berichten.
 
@@ -81,7 +80,7 @@ Zum Ändern der Datenauswahl gehen Sie wie folgt vor:
 * Um eine Spalte zu verschieben, klicken Sie auf die Kopfzeile, halten Sie sie gedrückt und ziehen Sie sie an die neue Position.
 * Um eine Spalte zu entfernen, klicken Sie auf den Spaltentitel, halten Sie ihn gedrückt und ziehen Sie ihn nach oben in den Bereich der Berichtskopfzeile (ein rotes Minussymbol zeigt an, dass die Position gültig ist) und lassen Sie die Maustaste los. Das Dialogfeld „Komponente(n) löschen“ fordert Sie nun auf, die Löschung der Spalte zu bestätigen.
 
-### Dropdown-Menü der Spalte  {#column-drop-down-menu}
+### Dropdown-Menü der Spalte {#column-drop-down-menu}
 
 Jede Spalte des Berichts verfügt über ein Dropdown-Menü. Es wird angezeigt, wenn der Mauszeiger über die Zelle mit dem Spaltentitel bewegt wird.
 
@@ -98,7 +97,7 @@ Die Daten können mithilfe folgender Möglichkeiten nach einer bestimmten Spalte
 * Durch das Klicken auf die jeweilige Spaltenkopfzeile wechselt die Sortierung von einer aufsteigenden zu einer absteigenden Sortierung, was durch eine Pfeilspitze direkt neben dem Titeltext angezeigt wird.
 * Verwenden Sie das [Dropdown-Menü der Spalte](#column-drop-down-menu), um zwischen **Aufsteigend sortieren** und **Absteigend sortieren** auszuwählen. Dies wird erneut durch eine Pfeilspitze direkt neben dem Titeltext angezeigt.
 
-### Gruppen und das aktuelle Datendiagramm  {#groups-and-the-current-data-chart}
+### Gruppen und das aktuelle Datendiagramm {#groups-and-the-current-data-chart}
 
 In geeigneten Spalten können Sie **Nach Spalte gruppieren** im [Dropdown-Menü der Spalte](#column-drop-down-menu) auswählen. Hierdurch werden die Daten nach jedem einzelnen Wert innerhalb dieser Spalte gruppiert. Sie können mehrere Spalten für die Gruppierung auswählen. Die Option werden ausgegraut, wenn in der Spalte nicht geeignete Daten vorhanden sind, d. h. wenn jeder Eintrag einzeln zu betrachten und einzigartig ist, sodass keine Gruppen gebildet werden können. Dies gilt zum Beispiel für die Spalte mit der Benutzer-ID im Benutzerbericht.
 
@@ -175,8 +174,8 @@ Sobald die Datenerfassung begonnen hat, können Sie Folgendes auswählen:
 
    Wenn zum Beispiel für Februar 2011 tägliche Momentaufnahmen verfügbar sind:
 
-   * Wenn das Intervall auf `Day` festgelegt ist, wird jeder Schnappschuss als einzelner Wert im Diagramm angezeigt.
-   * Wenn das Intervall auf `Month` festgelegt ist, werden alle Momentaufnahmen für Februar in einem einzigen Wert zusammengefasst (in der Grafik als einzelner &quot;Punkt&quot; angezeigt).
+   * Wenn das Intervall auf `Day`, wird jeder Schnappschuss als einzelner Wert im Diagramm angezeigt.
+   * Wenn das Intervall auf `Month`, werden alle Momentaufnahmen für Februar in einem einzigen Wert zusammengefasst (in der Grafik als einzelner &quot;Punkt&quot;angezeigt).
 
 Wählen Sie Ihre Anforderungen aus und klicken Sie dann auf **Los**, um sie auf den Bericht anzuwenden. Um die Anzeige nach der Anfertigung weiterer Momentaufnahmen zu aktualisieren, klicken Sie erneut auf **Los**.
 
@@ -194,14 +193,14 @@ Wenn die Momentaufnahmen erfasst werden, können Sie:
 
 >[!NOTE]
 >
->Momentaufnahmen werden unter `/var/reports/...` gespeichert, wobei der Rest des Pfads dem Pfad des entsprechenden Berichts und der ID entspricht, die beim Abschluss des Berichts erstellt wurden.
+>Schnappschüsse werden unter `/var/reports/...` wobei der Rest des Pfads dem Pfad des entsprechenden Berichts und der ID entspricht, die beim Abschluss des Berichts erstellt wurden.
 >
 >
 >Alte Momentaufnahmen können manuell gelöscht werden, wenn Sie vollkommen sicher sind, dass Sie diese Instanzen nicht mehr benötigen.
 
 >[!NOTE]
 >
->Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch dennoch empfohlen, tägliche Momentaufnahmen in einer Produktionsumgebung zu verwenden. Führen Sie diese täglichen Momentaufnahmen nach Möglichkeit zu einer Tageszeit aus, zu der auf Ihrer Website nicht viel Aktivität stattfindet. Dies kann mit dem Parameter `Daily snapshots (repconf.hourofday)` für **Day CQ Reporting Configuration** definiert werden. Weitere Informationen zur Konfiguration finden Sie unter [OSGI-Konfiguration](/help/sites-deploying/configuring-osgi.md) .
+>Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch dennoch empfohlen, tägliche Momentaufnahmen in einer Produktionsumgebung zu verwenden. Führen Sie diese täglichen Momentaufnahmen nach Möglichkeit zu einer Tageszeit aus, zu der auf Ihrer Website nicht viel Aktivität stattfindet. Dies kann mit der `Daily snapshots (repconf.hourofday)` Parameter für **Day CQ-Berichtkonfiguration**; see [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) für weitere Informationen zur Konfiguration.
 
 #### Anzeigelimits {#display-limits}
 
@@ -246,7 +245,7 @@ Dies ist ein Speicherort, an dem der Zeitraum für die Erfassung [früherer Date
 
    Sie können eine eigene Beschreibung definieren.
 
-* **Stammpfad**  (*nur aktiv für bestimmte Berichte*)
+* **Stammpfad** (*nur aktiv für bestimmte Berichte*)
 
    Verwenden Sie dies, um den Bericht auf einen (Unter-)Abschnitt des Repositorys zu beschränken.
 
@@ -282,7 +281,7 @@ Die Auswahl von „Daten manuell aktualisieren“ bedeutet Folgendes:
 
 1. Wenn Sie möchten, dass die Berichtsdaten erneut angezeigt werden, müssen Sie zum erneuten Laden der Daten auf **Daten laden** klicken.
 
-### Beenden (Bericht)  {#finish-report}
+### Beenden (Bericht) {#finish-report}
 
 Wenn Sie den Bericht **beenden**, geschieht Folgendes:
 
@@ -305,8 +304,8 @@ Der Komponentenbericht stellt Informationen dazu bereit, wie Ihre Website die Ko
 * Autor
 * Komponentenpfad
 * Komponententyp
-* Letzte Änderung
-* Seite 
+* Zuletzt geändert
+* Seite
 
 Bedeutet, dass Sie zum Beispiel Folgendes sehen können:
 
@@ -323,7 +322,7 @@ Bedeutet, dass Sie zum Beispiel Folgendes sehen können:
 
 Alle Komponenten werden als Produktstandard und projektspezifisch einbezogen. Mithilfe des Dialogfelds **Bearbeiten** kann der Benutzer auch ein **Stammverzeichnis** festlegen, das den Startpunkt des Berichts definiert. Alle Komponenten unter diesem Stammverzeichnis werden für den Bericht berücksichtigt.
 
-![](assets/reportcomponent.png) ![reportcomponentreportcompentall](assets/reportcompentall.png)
+![reportcomponent](assets/reportcomponent.png) ![reportcompentall](assets/reportcompentall.png)
 
 ### Speichernutzung {#disk-usage}
 
@@ -351,7 +350,7 @@ Zum Generieren des Berichts können Sie Folgendes Festlegen:
 
    Die Anzahl der zu analysierenden Stunden (Vergangenheit).
 
-   Default: `24`
+   Standard: `24`
 
 * **max. Ergebnisse**
 
@@ -385,7 +384,7 @@ Im Seitenaktivitätsbericht werden die Seiten und die auf ihnen vorgenommenen Ak
 
 [Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
 
-* Seite 
+* Seite
 * Zeit
 * Typ
 * User
@@ -398,7 +397,7 @@ Bedeutet, dass Sie Folgendes überwachen können:
 * Seiten, die am häufigsten/seltensten geändert wurden
 * Aktivste/am wenigsten aktive Benutzer
 
-Der Seitenaktivitätsbericht bezieht alle Informationen aus dem Auditprotokoll. Standardmäßig ist der Stammpfad im Auditprotokoll unter `/var/audit/com.day.cq.wcm.core.page` konfiguriert.
+Der Seitenaktivitätsbericht bezieht alle Informationen aus dem Auditprotokoll. Standardmäßig ist der Stammpfad für das Prüfprotokoll unter `/var/audit/com.day.cq.wcm.core.page`.
 
 ![reportpageActivity](assets/reportpageactivity.png)
 
@@ -410,7 +409,7 @@ Dieser Bericht stellt Informationen zu benutzergenerierten Inhalten bereit – s
 
 * Datum
 * IP-Adresse
-* Seite 
+* Seite
 * Referrer
 * Typ
 * Benutzerkennung
@@ -473,7 +472,7 @@ Das Dialogfeld „Generische Spalte“ wird geöffnet, wenn Sie entweder:
 
 * **Pfad**
 
-   Normalerweise wird die Eigenschaft aus `profile` übernommen.
+   Normalerweise wird die Eigenschaft aus dem `profile`.
 
 * **Typ**
 
@@ -481,9 +480,9 @@ Das Dialogfeld „Generische Spalte“ wird geöffnet, wenn Sie entweder:
 
 * **Standardaggregat**
 
-   Dies definiert das standardmäßig verwendete Aggregat, wenn die Gruppierung der Spalte in einem Bericht mit mindestens einer gruppierten Spalte aufgehoben wird. Wählen Sie das erforderliche Aggregat aus `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Dies definiert das standardmäßig verwendete Aggregat, wenn die Gruppierung der Spalte in einem Bericht mit mindestens einer gruppierten Spalte aufgehoben wird. Wählen Sie das gewünschte Aggregat aus `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Beispielsweise bedeutet *Count* für ein `String`-Feld, dass die Anzahl unterschiedlicher `String`-Werte für die Spalte im aggregierten Status angezeigt wird.
+   Beispiel: *Count* für `String` -Feld bedeutet, dass die Anzahl der einzelnen `String` -Werte für die Spalte im aggregierten Status angezeigt.
 
 In der Spalte **Erweitert** können Sie außerdem die verfügbaren Zusammenfassungen und Filter festlegen:
 
@@ -499,7 +498,7 @@ Dies bietet Ihnen einen knappen Überblick und stellt Ihnen Informationen zu den
 * Dauer
 * Initiator
 * Modell
-* Payload
+* Nutzlast
 * Gestartet
 * Status
 
@@ -539,7 +538,7 @@ Da in der Veröffentlichungsumgebung keine Berichtskonfiguration zulässig ist, 
 
 >[!CAUTION]
 >
->Der Zugriff auf diese Berichte kann ein Sicherheitsproblem sein. Daher empfehlen wir, den Dispatcher so zu konfigurieren, dass `/etc/reports` nicht für externe Besucher verfügbar ist. Weitere Informationen finden Sie unter [Sicherheitscheckliste](security-checklist.md).
+>Der Zugriff auf diese Berichte kann ein Sicherheitsproblem sein. Daher empfehlen wir, den Dispatcher so zu konfigurieren, dass `/etc/reports` steht externen Besuchern nicht zur Verfügung. Weitere Informationen finden Sie unter [Sicherheitscheckliste](security-checklist.md).
 
 ## Für die Ausführung von Berichten benötigte Berechtigungen {#permissions-needed-for-running-reports}
 

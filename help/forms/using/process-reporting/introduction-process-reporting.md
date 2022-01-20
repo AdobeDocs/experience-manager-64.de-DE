@@ -1,8 +1,8 @@
 ---
 title: Einführung in die Prozessberichterstellung
-seo-title: Einführung in die Prozessberichterstellung
+seo-title: Introduction to Process Reporting
 description: Einführung und wichtige Funktionen von AEM Forms on JEE Process Reporting
-seo-description: Einführung und wichtige Funktionen von AEM Forms on JEE Process Reporting
+seo-description: Introduction and key capabilities of AEM Forms on JEE Process Reporting
 uuid: a33ea729-7e1f-4093-bdb6-b8dc3afd59a7
 content-type: reference
 topic-tags: process-reporting
@@ -11,7 +11,7 @@ discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 exl-id: 279b2f89-5b91-4b8f-ab0f-8ade9b9f3932
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Die Prozessberichterstellung bietet eine Reihe vordefinierter Berichte, mit dene
 
 Darüber hinaus bietet die Prozessberichterstellung eine Schnittstelle zum Ausführen von Ad-hoc-Abfragen und zum Integrieren benutzerdefinierter Berichtsansichten in die Benutzeroberfläche für die Prozessberichterstellung.
 
-Eine Liste der unterstützten Browser finden Sie unter [Unterstützte Plattformen für AEM Forms](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Eine Liste der unterstützten Browser finden Sie unter [Von AEM Forms unterstützte Plattformen](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Prozessberichte basieren auf Modulen, die:
 
@@ -36,7 +36,7 @@ Prozessberichte basieren auf Modulen, die:
 
 ## Schlüsselfunktionen {#key-capabilities}
 
-### Always-on Reporting {#always-on-reporting}
+### Always-on-Reporting {#always-on-reporting}
 
 ![Site-Management](assets/site-management.png)
 
@@ -44,7 +44,7 @@ Zeigen Sie die Liste der Prozesse mit langer Laufzeit an, erstellen Sie Diagramm
 
 Die Prozessberichterstellung bietet außerdem die Möglichkeit, die Berichts- und Abfragedaten im CSV-Format zu exportieren.
 
-### Adhoc-Berichte {#adhoc-reports}
+### Ad-hoc-Berichte {#adhoc-reports}
 
 ![print-&amp;-color](assets/print-&-colour.png)
 

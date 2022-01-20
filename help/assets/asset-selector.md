@@ -16,17 +16,17 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->Der Asset-Wähler wurde in früheren Versionen von [!DNL Experience Manager] als [Asset-Wähler](https://helpx.adobe.com/de/experience-manager/6-2/assets/using/asset-picker.html) bezeichnet.
+>Der Asset-Selektor wurde als [Asset-Auswahl](https://helpx.adobe.com/de/experience-manager/6-2/assets/using/asset-picker.html) in früheren Versionen von [!DNL Experience Manager].
 
-Mit dem Asset-Wähler können Sie Assets in [!DNL Adobe Experience Manager] Assets durchsuchen, suchen und filtern. Außerdem können Sie die Metadaten der Assets abrufen, die Sie über den Asset-Wähler auswählen. Sie können die Benutzeroberfläche des Asset-Wählers mit unterstützten Anforderungsparametern starten, um sie anzupassen. Mit diesen Parametern wird der Kontext des Asset-Wählers für ein bestimmtes Szenario festgelegt.
+Mit der Asset-Auswahl können Sie Assets in [!DNL Adobe Experience Manager] Assets. Außerdem können Sie die Metadaten der Assets abrufen, die Sie über den Asset-Wähler auswählen. Sie können die Benutzeroberfläche des Asset-Wählers mit unterstützten Anforderungsparametern starten, um sie anzupassen. Mit diesen Parametern wird der Kontext des Asset-Wählers für ein bestimmtes Szenario festgelegt.
 
-Derzeit können Sie die Anforderungsparameter `assettype` (*Bild/Video/Text*) übergeben und `mode` (*Einfach/Mehrere*) als Kontextinformationen für die Asset-Auswahl auswählen, die während der Auswahl intakt bleiben.
+Derzeit können Sie die Anforderungsparameter übergeben `assettype` (*Bild/Video/Text*) und Auswahl `mode` (*Einfach/Mehrere*) als Kontextinformationen für die Asset-Auswahl, die während der Auswahl intakt bleiben.
 
-Der Asset-Wähler verwendet die HTML5-Meldung **Window.postMessage**, um Daten für das ausgewählte Asset an den Empfänger zu senden.
+Der Asset-Selektor verwendet HTML5 **Window.postMessage** -Meldung, um Daten für das ausgewählte Asset an den Empfänger zu senden.
 
 Der Asset-Wähler basiert auf dem Vokabular der Foundation-Auswahl von Granite. Standardmäßig befindet sich der Asset-Wähler im Suchmodus. Sie können jedoch mithilfe des Omnisearch-Erlebnisses Filter anwenden, um Ihre Suche nach bestimmten Assets zu verfeinern.
 
-Sie können jede Web-Seite (unabhängig davon, ob sie Teil des CQ-Containers ist) mit der Asset-Auswahl (`https://[AEM_server]:[port]/aem/assetpicker.html`) integrieren.
+Sie können jede Web-Seite (unabhängig davon, ob sie Teil des CQ-Containers ist) mit der Asset-Auswahl (`https://[AEM_server]:[port]/aem/assetpicker.html`).
 
 ## Kontextparameter {#contextual-parameters}
 
@@ -57,4 +57,4 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
-1. Tippen/klicken Sie in der Symbolleiste auf **[!UICONTROL Wählen Sie]** aus.
+1. Tippen/klicken **[!UICONTROL Auswählen]** aus der Symbolleiste.

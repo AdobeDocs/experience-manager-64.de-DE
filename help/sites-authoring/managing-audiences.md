@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Zielgruppen
-seo-title: Verwalten von Zielgruppen
+seo-title: Managing Audiences
 description: Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub oder ClientContext
-seo-description: Die Zielgruppen-Konsole ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub oder ClientContext
+seo-description: The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context
 uuid: 7112a192-5f58-47ce-95fa-90638c7cdb18
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,19 +12,19 @@ discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
 exl-id: dcd54a52-f610-4c68-8547-39562c062d84
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '989'
 ht-degree: 94%
 
 ---
 
 # Verwalten von Zielgruppen{#managing-audiences}
 
-Mithilfe der Zielgruppenkonsole können Sie Zielgruppen für Ihr Adobe Target-Konto erstellen, organisieren und verwalten oder Segmente für ContextHub oder Client Context verwalten:
+Die Konsole „Zielgruppen“ ermöglicht das Erstellen, Organisieren und Verwalten von Zielgruppen für Ihr Adobe Target-Konto und das Verwalten von Segmenten für ContextHub oder ClientContext:
 
 * Fügen Sie Zielgruppen hinzu – entweder Adobe Target-Zielgruppen oder ContextHub-Segmente.
 * Verwalten Sie Zielgruppen.
 
-Zielgruppen, in ContextHub und ClientContext als *Segment* bezeichnet, sind Besuchergruppen, die durch bestimmte Kriterien definiert werden und mit denen bestimmt wird, wer welche zielgerichteten Aktivitäten sieht. Beim Targeting von Aktivitäten können Zielgruppen entweder direkt während des Targeting-Verfahrens ausgewählt oder neue Zielgruppen in der Konsole „Zielgruppen“ erstellt werden.
+Eine Zielgruppe namens *Segment* in ContextHub und ClientContext ist eine Besuchergruppe, die durch bestimmte Kriterien definiert wird und mit der bestimmt wird, wer welche zielgerichteten Aktivitäten sieht. Beim Targeting von Aktivitäten können Zielgruppen entweder direkt während des Targeting-Verfahrens ausgewählt oder neue Zielgruppen in der Konsole „Zielgruppen“ erstellt werden.
 
 In der Konsole „Zielgruppen“ werden Zielgruppen nach Marken geordnet.
 
@@ -36,7 +36,7 @@ Zielgruppen werden mit einer Beschriftung versehen, die beschreibt, um welche Zi
 * CC – Client Context-Segment
 * AT – Adobe Target-Zielgruppe
 
-## Erstellen von ContextHub-Segmenten mit der Konsole „Zielgruppen“   {#creating-a-contexthub-segment-in-the-audiences-console}
+## Erstellen von ContextHub-Segmenten mit der Konsole „Zielgruppen“ {#creating-a-contexthub-segment-in-the-audiences-console}
 
 Sie können ContextHub-Segmente entweder in der Konsole „Zielgruppen“ oder während des Targeting-Verfahrens erstellen.
 
@@ -65,7 +65,7 @@ Arbeiten Sie mit mehr als einer Regel, werden diese Regeln durch den booleschen 
 
 >[!NOTE]
 >
->Wird Ihnen die Option **Target-Zielgruppe erstellen** unter **Erstellen** nicht angezeigt, verfügen Sie nicht über die nötigen Berechtigungen zur Erstellung von Zielgruppen. Sie benötigen Schreibberechtigungen unter **/etc/segmentation** , um Zielgruppen erstellen zu können. Inhaltsautoren der Gruppe verfügen standardmäßig über Schreibrechte.
+>Wird Ihnen die Option **Target-Zielgruppe erstellen** unter **Erstellen** nicht angezeigt, verfügen Sie nicht über die nötigen Berechtigungen zur Erstellung von Zielgruppen. Sie benötigen Schreibberechtigungen unter **/etc/segmentation** um Zielgruppen erstellen zu können. Inhaltsautoren der Gruppe verfügen standardmäßig über Schreibrechte.
 
 So erstellen Sie eine Adobe Target-Zielgruppe:
 
@@ -84,7 +84,7 @@ So erstellen Sie eine Adobe Target-Zielgruppe:
 1. Geben Sie einen Namen für die Zielgruppe ein und tippen oder klicken Sie auf **Speichern**.
 1. Tippen oder klicken Sie auf **Speichern**. Ihre Zielgruppe wird nun in der Zielgruppenliste angezeigt.
 
-### Attribute und zugehörige Optionen   {#attributes-and-their-options}
+### Attribute und zugehörige Optionen {#attributes-and-their-options}
 
 Sie können Targeting-Regeln für jedes der folgenden Attribute erstellen:
 

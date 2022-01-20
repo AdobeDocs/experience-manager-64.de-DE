@@ -1,8 +1,8 @@
 ---
 title: Einrichten der Website-Struktur
-seo-title: Einrichten der Website-Struktur
+seo-title: Setup Website Structure
 description: Einrichten von Ordnern
-seo-description: Einrichten von Ordnern
+seo-description: Set up directories
 uuid: a31edcd5-dab8-4a42-953b-1d076c2182b2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 exl-id: 6d2226da-f691-4e8b-9494-a25e1c3d4b85
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
+source-wordcount: '543'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +30,7 @@ Hier befinden sich herunterladbare Design-Elemente
 * `/content/an-scf-sandbox`
 Hier befinden sich die herunterladbaren Webseiten
 
-Der Code in diesem Tutorial setzt voraus, dass der Hauptordnername für Anwendung, Design und Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie `an-scf-sandbox` immer durch den von Ihnen ausgewählten Namen.
+Der Code in diesem Tutorial setzt voraus, dass der Hauptordnername für Anwendung, Design und Inhalt identisch ist. Wenn Sie einen anderen Namen für Ihre Website wählen, ersetzen Sie immer `an-scf-sandbox` mit dem Namen, den Sie gewählt haben.
 
 >[!NOTE]
 >
@@ -39,10 +39,8 @@ Der Code in diesem Tutorial setzt voraus, dass der Hauptordnername für Anwendun
 >* Die in CRXDE angezeigten Namen sind Knotennamen, die den Pfad zu adressierbaren Inhalten bilden.
 >* Knotennamen können Leerzeichen enthalten. Bei Verwendung in einem URI muss das Leerzeichen jedoch entweder als &#39;%20&#39; oder als &#39;+&#39; kodiert werden
 >* Knotennamen können Bindestriche und Unterstriche enthalten, müssen jedoch kodiert werden, wenn sie in einer Java-Datei als Paketname referenziert werden. Sowohl Bindestriche als auch Unterstriche sind mit einem Unterstrich gefolgt von ihrem Unicode-Wert maskiert:
-
    >
-   >   
-   * Bindestrich wird zu &quot;_002d&quot;
+   >   * Bindestrich wird zu &quot;_002d&quot;
    >   * Unterstrich wird zu &#39;_005f&#39;
 
 
@@ -52,31 +50,31 @@ Das Verzeichnis /apps im Repository enthält den Code mit implementiert das Verh
 
 Der Ordner /apps ist geschützt und nicht öffentlich zugänglich wie die Ordner /content und /etc/designs.
 
-1. Erstellen Sie den Ordner `/apps/an-scf-sandbox` .
+1. Erstellen `/apps/an-scf-sandbox` Ordner.
 
-   Verwenden von **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
+   Verwenden **[!UICONTROL CRXDE Lite]** im Explorer-Bereich
 
-   1. Wählen Sie den Ordner `/apps` aus
-   1. Klicken Sie mit der rechten Maustaste auf **[!UICONTROL Erstellen]**... oder ziehen Sie die **[!UICONTROL Erstellen...Menü]**
-   1. Wählen Sie **[!UICONTROL Ordner erstellen...]** .
-   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** `an-scf-sandbox` ein.
+   1. Wählen Sie die `/apps` Ordner
+   1. Rechtsklick **[!UICONTROL Erstellen]**... oder ziehen Sie die **[!UICONTROL Erstellen...]** Menü
+   1. Auswählen **[!UICONTROL Ordner erstellen...]** .
+   1. Im **[!UICONTROL Ordner erstellen]** dialog, enter `an-scf-sandbox`
    1. Klicken Sie auf **[!UICONTROL OK]**
 
-1. Erstellen Sie den Unterordner **[!UICONTROL components]** .
+1. Erstellen **[!UICONTROL Komponenten]** Unterordner.
 
-   1. Wählen Sie den Ordner `/apps/an-scf-sandbox` aus
-   1. Klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**
-   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** **[!UICONTROL Komponenten]** ein.
+   1. Wählen Sie die `/apps/an-scf-sandbox` Ordner
+   1. Klicken **[!UICONTROL Erstellen > Ordner erstellen]**
+   1. Im **[!UICONTROL Ordner erstellen]** dialog, enter **[!UICONTROL Komponenten]**
    1. Klicken Sie auf **[!UICONTROL OK]**
 
-1. Erstellen Sie den Unterordner **[!UICONTROL templates]** .
+1. Erstellen **[!UICONTROL templates]** Unterordner.
 
-   1. Wählen Sie den Ordner `/apps/an-scf-sandbox` aus
-   1. Klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**
-   1. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** **[!UICONTROL Vorlagen]** ein.
+   1. Wählen Sie die `/apps/an-scf-sandbox` Ordner
+   1. Klicken **[!UICONTROL Erstellen > Ordner erstellen]**
+   1. Im **[!UICONTROL Ordner erstellen]** dialog, enter **[!UICONTROL templates]**
    1. Klicken Sie auf **[!UICONTROL OK]**
-   1. Wählen Sie `/apps/an-scf-sandbox` erneut aus.
-   1. Wählen Sie **[!UICONTROL Alle speichern]**
+   1. Neu auswählen `/apps/an-scf-sandbox`
+   1. Wählen Sie **[!UICONTROL Alle speichern]** aus
 
    Speichern Sie wie bei jedem Bearbeitungsprozess häufig. Wenn Probleme bei der Dateneingabe auftreten, kann dies entweder daran liegen, dass Ihre Anmeldung abgelaufen ist, oder Sie müssen frühere Bearbeitungen speichern.
 
@@ -90,15 +88,15 @@ Der Ordner /etc/designs enthält die Bilder, Skripte und Stylesheets, die zusamm
 
 1. Um das Designer-Tool in der klassischen Benutzeroberfläche zu verwenden, navigieren Sie zu [https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin).
 
-   Hinweis: Wenn Sie CRXDE Lite zum Erstellen eines Knotens vom Typ `cq:Page` verwenden, werden die Einstellungen für die Zugriffssteuerung und Replikation nicht auf die Standardeinstellungen für eine Seite festgelegt.
+   Hinweis: Wenn Sie CRXDE Lite verwenden, um einen Knoten vom Typ `cq:Page`festgelegt ist, würden die Zugriffssteuerung und Replikation nicht auf Standardeinstellungen für eine Seite festgelegt.
 
-1. Wählen Sie im Explorer-Bereich den Ordner **[!UICONTROL Designs]** und klicken Sie dann auf **[!UICONTROL Neu > Neue Seite]**.
+1. Wählen Sie im Explorer-Bereich die **[!UICONTROL Designs]** Ordner und klicken Sie dann auf **[!UICONTROL Neu > Neue Seite]**.
 
    Geben Sie Folgendes ein:
 
    * Titel: **Eine SCF-Sandbox**
    * Name: **an-scf-sandbox**
-   * Wählen Sie **Design Page Template**
+   * Auswählen **Design Page Template**
 
    Klicken Sie auf **[!UICONTROL Erstellen]**.
 
@@ -116,4 +114,4 @@ Der Ordner /etc/designs enthält die Bilder, Skripte und Stylesheets, die zusamm
 
 Das Verzeichnis /content im Repository befindet sich dort, wo sich der Website-Inhalt befindet. Die Pfade unter /content umfassen die Pfade der URL für Browseranforderungen.
 
-** Nachdem die  [Seitenvorlagen als Teil der ursprünglichen Anwendung erstellt ](initial-app.md#createthepagetemplate) wurden, kann der anfängliche Seiteninhalt anhand der Vorlage erstellt werden....  [**.**](initial-app.md)
+*Nachher* die [Seitenvorlage](initial-app.md#createthepagetemplate) als Teil der ursprünglichen Anwendung erstellt wurde, kann der anfängliche Seiteninhalt basierend auf der Vorlage erstellt werden.... [**imetrisch**](initial-app.md)

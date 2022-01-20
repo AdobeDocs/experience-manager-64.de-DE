@@ -1,8 +1,8 @@
 ---
 title: Verwenden von xtypes (klassische Benutzeroberfläche)
-seo-title: Verwenden von xtypes (klassische Benutzeroberfläche)
+seo-title: Using xtypes (Classic UI)
 description: Erfahren Sie mehr über die xtypes, die im Lieferumfang von AEM enthalten sind.
-seo-description: Erfahren Sie mehr über die xtypes, die im Lieferumfang von AEM enthalten sind.
+seo-description: Learn about all the xtypes that are available with AEM
 uuid: 6497caa4-2f9b-4f21-9023-88d485fd1d78
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 exl-id: 81d7fa0c-86db-47a1-8fac-44941d3affde
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '6414'
+source-wordcount: '6400'
 ht-degree: 52%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 52%
 
 Diese Seite beschreibt die xtypes, die im Lieferumfang von Adobe Experience Manager (AEM) enthalten sind.
 
-In der ExtJS-Sprache ist ein xtype ein symbolischer Name, der einer Klasse zugewiesen wird. Sie können den Absatz &quot;Komponenten-XTypes&quot;im Abschnitt [Überblick über ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) lesen, um eine detaillierte Erläuterung zu erhalten, was ein xtype ist und wie er verwendet werden kann.
+In der ExtJS-Sprache ist ein xtype ein symbolischer Name, der einer Klasse zugewiesen wird. Sie können den Absatz &quot;Komponenten-XTypes&quot;der [Übersicht über ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) für eine ausführliche Erläuterung dessen, was ein xtype ist und wie er verwendet werden kann.
 
 Informationen zu allen in AEM verfügbaren Widgets finden Sie in der [Dokumentation zur Widgets-API](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -33,7 +33,7 @@ Sie können die folgende Xpath-Abfrage in CRXDE verwenden, um herausfinden, in w
 >
 >Diese Seite beschreibt die Verwendung von ExtJS-xtypes in der klassischen Benutzeroberfläche.
 >
->Adobe empfiehlt die Verwendung der standardmäßigen, modernen [Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) basierend auf [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) und [Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
+>Adobe empfiehlt, die standardmäßige, moderne [Touch-optimierte Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) auf [Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui) und [Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components).
 
 ## xtypes {#xtypes}
 
@@ -95,7 +95,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    [CQ.form.BrowseField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField)
 
-   **Veraltet: Verwenden Sie stattdessen  [CQ.form.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) PathField .**
+   **Veraltet: Verwendung [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) anstelle**
 
 * bulkeditor
 
@@ -111,7 +111,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    BulkEditorForm stellt [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) umgeben von einem HTML-Formular bereit. Dies ist die eigenständige Version von [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor). Daher ist das HTML-Formular für die Import-Schaltfläche erforderlich.
 
-* button
+* Schaltfläche
 
    [CQ.Ext.Button](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 
@@ -261,7 +261,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    [CQ.Ext.CycleButton](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)
 
-   Ein spezieller SplitButton, der ein Menü mit [CQ.Ext.menu.CheckItem](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem)-Elementen enthält. Die Schaltfläche durchläuft bei einem Klick automatisch jedes Menüelement, indem sie das [change](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)-Ereignis der Schaltfläche (oder ggf. die [changeHandler](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton)-Funktion der Schaltfläche) für das aktive Menüelement auslöst.
+   Ein spezieller SplitButton, der ein Menü mit [CQ.Ext.menu.CheckItem](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.CheckItem)-Elementen enthält. Die Schaltfläche durchläuft bei einem Klick automatisch jedes Menüelement, wodurch die Schaltfläche [change](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) -Ereignis (oder das [changeHandler](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.CycleButton) -Funktion (sofern verfügbar) für das aktive Menüelement.
 
 * dataview
 
@@ -545,7 +545,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    Fügt eine statische Textzeichenfolge zu einem Menü hinzu; wird in der Regel entweder als Überschrift oder als Gruppentrennzeichen verwendet.
 
-* metadata
+* Metadaten
 
    [CQ.dam.form.Metadata](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.dam.form.Metadata)
 
@@ -619,7 +619,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    [CQ.form.PathCompletion](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathCompletion)
 
-   **Veraltet: Verwenden Sie stattdessen  [CQ.form.](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) PathField .**
+   **Veraltet: Verwendung [CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField) anstelle**
 
 * pathfield
 
@@ -821,7 +821,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    [CQ.form.TableEdit](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit)
 
-   **Veraltet: Verwenden Sie stattdessen  [CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2) .**
+   **Veraltet: Verwendung [CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2) anstatt.**
 
 * tableedit2
 
@@ -833,7 +833,7 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel)
 
-   Ein allgemeiner Container für Registerkarten. TabPanels können für Layoutzwecke genauso wie ein Standard [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) verwendet werden, haben aber auch besondere Unterstützung für die Verwendung von untergeordneten Komponenten ([`items`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
+   Ein allgemeiner Container für Registerkarten. TabPanels kann genau wie ein Standard verwendet werden [CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel) für Layoutzwecke, aber auch besondere Unterstützung für die Verwendung untergeordneter Komponenten ([`items`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)).
 
 * tags
 
@@ -949,4 +949,4 @@ Nachstehend finden Sie eine Liste der in Adobe Experience Manager verfügbaren x
 
    Eine kleine Helper-Klasse, die das Erstellen von [CQ.Ext.data.Stores](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) aus XML-Daten vereinfacht. XmlStore wird automatisch mit einem [CQ.Ext.data.XmlReader](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader) konfiguriert.
 
-   **** cqincludePseudo xtype, der Widget-Definitionen aus einem anderen Pfad im Repository enthält. Es wird in der Regel in Seitendialogfeldern verwendet. Es gibt keine tatsächliche JavaScript-Widget-Klasse für dieses xtype. Es wird durch die formatData()-Funktion der CQ.Util-Klasse verarbeitet. Weitere Informationen finden Sie in diesem Knowledge Base-Artikel.
+   **cqinclude** Pseudo xtype , der Widget-Definitionen aus einem anderen Pfad im Repository enthält. Es wird in der Regel in Seitendialogfeldern verwendet. Es gibt keine tatsächliche JavaScript-Widget-Klasse für dieses xtype. Es wird durch die formatData()-Funktion der CQ.Util-Klasse verarbeitet. Weitere Informationen finden Sie in diesem Knowledge Base-Artikel.

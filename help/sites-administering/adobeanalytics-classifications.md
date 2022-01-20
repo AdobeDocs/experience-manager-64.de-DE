@@ -2,7 +2,7 @@
 title: Adobe Classifications
 seo-title: Adobe Classifications
 description: Erfahren Sie mehr über Adobe Classifications.
-seo-description: Erfahren Sie mehr über Adobe Classifications.
+seo-description: Learn about Adobe Classifications.
 uuid: 57fb59f4-da90-4fe7-a5b1-c3bd51159a16
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,14 +12,14 @@ discoiquuid: 6787511a-2ce0-421a-bcfb-90d5f32ad35e
 exl-id: 25e58c68-5c67-4894-9a54-1717d90d7831
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '573'
 ht-degree: 71%
 
 ---
 
 # Adobe Classifications{#adobe-classifications}
 
-Adobe Classifications exportiert Classification-Daten planmäßig in [Adobe Analytics](/help/sites-administering/adobeanalytics.md). Der Exporter ist eine Implementierung von **com.adobe.cq.scheduled.exporter.Exporter**.
+Adobe Classifications exportiert Classification-Daten nach [Adobe Analytics](/help/sites-administering/adobeanalytics.md) in geplanter Weise. Der Exporter ist eine Implementierung von **com.adobe.cq.scheduled.exporter.Exporter**.
 
 So konfigurieren Sie diese Komponente:
 
@@ -49,7 +49,7 @@ So konfigurieren Sie diese Komponente:
 
 1. Klicken Sie auf **OK**, um Ihre Einstellungen zu speichern.
 
-## Ändern der Seitengröße  {#modifying-page-size}
+## Ändern der Seitengröße {#modifying-page-size}
 
 Datensätze werden seitenweise verarbeitet. Standardmäßig erstellt Adobe Classifications Seiten mit einer Seitengröße von 1000.
 
@@ -57,7 +57,7 @@ Eine Adobe kann maximal 25000 Seitengrößen aufweisen, je nach Definition in Cl
 
 So ändern Sie die Seitengröße:
 
-1. Navigieren Sie zur OSGi-Konsole unter **https://&lt;host>:&lt;port>/system/console/configMgr** und wählen Sie **Adobe AEM Classifications Exporter** aus.
+1. Navigieren Sie zur OSGi-Konsole unter **https://&lt;host>:&lt;port>/system/console/configMgr** und wählen Sie **Adobe AEM Classifications Exporter**.
 
    ![aa-26](assets/aa-26.png)
 
@@ -69,7 +69,7 @@ So ändern Sie die Seitengröße:
 >
 >Adobe Classifications wurde früher als SAINT-Exporter bezeichnet.
 
-Ein Exporter kann einen Transformator verwenden, um die Exportdaten in ein bestimmtes Format zu konvertieren. Für Adobe Classifications wurde eine Subschnittstelle `SAINTTransformer<String[]>` bereitgestellt, die die Transformatorschnittstelle implementiert. Diese Schnittstelle wird verwendet, um den Datentyp auf `String[]` zu beschränken, der von der SAINT-API verwendet wird, und um eine Marker-Schnittstelle zu haben, über die solche Dienste zur Auswahl gefunden werden können.
+Ein Exporter kann einen Transformator verwenden, um die Exportdaten in ein bestimmtes Format zu konvertieren. Eine Unterschnittstelle für Adobe Classifications `SAINTTransformer<String[]>` Die Implementierung der Transformatorschnittstelle wurde bereitgestellt. Diese Schnittstelle wird verwendet, um den Datentyp auf `String[]` , die von der SAINT-API verwendet wird, um eine Marker-Oberfläche zu haben, über die solche Dienste zur Auswahl gefunden werden können.
 
 In der Standardimplementierung SAINTDefaultTransformer werden die untergeordneten Ressourcen der Exporterquelle als Datensätze mit Eigenschaftsnamen als Schlüssel und Eigenschaftswerten als Werte behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Namespace-Eigenschaften (enthalten :) werden nicht berücksichtigt.
 
@@ -134,6 +134,6 @@ Die Eigenschaften umfassen Folgendes:
  </tbody> 
 </table>
 
-## Automatisieren des Adobe Classifications-Exports  {#automating-adobe-classifications-export}
+## Automatisieren des Adobe Classifications-Exports {#automating-adobe-classifications-export}
 
 Sie können einen eigenen Workflow erstellen, damit bei jedem neuen Import der Workflow gestartet wird, um geeignete und korrekt strukturierte Daten in **/var/export/** zu erstellen und diese so in Adobe Classifications exportieren zu können.

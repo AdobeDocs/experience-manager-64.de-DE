@@ -1,32 +1,32 @@
 ---
 title: API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen
-seo-title: API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen
+seo-title: API to invoke form data model service from adaptive forms
 description: 'Hier wird die invokeWebServices-API beschrieben, mit deren Hilfe Sie Webdienste aufrufen können, die in einem Feld eines adaptiven Formulars in WSDL geschrieben wurden. '
-seo-description: 'Hier wird die invokeWebServices-API beschrieben, mit deren Hilfe Sie Webdienste aufrufen können, die in einem Feld eines adaptiven Formulars in WSDL geschrieben wurden. '
+seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 61%
+source-wordcount: '351'
+ht-degree: 88%
 
 ---
 
 # API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
-AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodelldienst aufzurufen, können Sie entweder eine Regel im Visual Editor erstellen oder mithilfe der `guidelib.dataIntegrationUtils.executeOperation`-API im Code-Editor des [Regel-Editors](/help/forms/using/rule-editor.md) ein JavaScript angeben.
+AEM Forms ermöglicht es Formularautoren, das Ausfüllen von Formularen weiter zu vereinfachen und zu verbessern, indem sie Dienste, die in einem Formulardatenmodell konfiguriert sind, aus einem adaptiven Formularfeld heraus aufrufen. Um einen Datenmodell-Service aufzurufen, können Sie entweder eine Regel im visuellen Editor anlegen oder ein JavaScript mit der `guidelib.dataIntegrationUtils.executeOperation`-API im Code-Editor des [Regeleditors](/help/forms/using/rule-editor.md) angeben.
 
-In diesem Dokument wird das Schreiben von JavaScript im API`guidelib.dataIntegrationUtils.executeOperation` für den Aufruf eines Dienst beschrieben.
+In diesem Dokument wird das Schreiben von JavaScript in der `guidelib.dataIntegrationUtils.executeOperation`-API für den Aufruf eines Service beschrieben.
 
 ## Verwenden der API {#using-the-api}
 
-Die `guidelib.dataIntegrationUtils.executeOperation`-API ruft einen Dienst aus einem Feld in einem adaptiven Formular auf. Für die API gilt die folgende Syntax:
+Die `guidelib.dataIntegrationUtils.executeOperation` API ruft einen Dienst aus einem Feld in einem adaptiven Formular auf. Für die API gilt folgende Syntax:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -40,7 +40,7 @@ Für die API sind die folgenden Parameter erforderlich.
 | `inputs` | Struktur zum Angeben von Formularobjekten, deren Werte in den Dienstvorgang eingegeben werden |
 | `outputs` | Struktur zum Angeben von Formularobjekten, die mit den vom Dienstvorgang zurückgegebenen Werten gefüllt werden |
 
-Die Struktur der API `guidelib.dataIntegrationUtils.executeOperation` gibt Details zum Dienstvorgang an. Die Struktur weist die folgende Syntax auf.
+Die Struktur der `guidelib.dataIntegrationUtils.executeOperation`-API gibt Details zum Service-Vorgang an. Die Struktur weist die folgende Syntax auf.
 
 ```
 var operationInfo = {
@@ -58,7 +58,7 @@ outputFieldN
 }
 ```
 
-Die API-Struktur gibt die folgenden Informationen zum Webdienst-Vorgang an.
+Die API-Struktur gibt folgende Informationen zum Service-Vorgang an.
 
 <table> 
  <tbody> 
@@ -85,11 +85,11 @@ Die API-Struktur gibt die folgenden Informationen zum Webdienst-Vorgang an.
  </tbody> 
 </table>
 
-## Beispielskript zum Erstellen eines Dienstes  {#sample-script-to-invoke-a-service}
+## Beispielskript zum Aufrufen eines Service {#sample-script-to-invoke-a-service}
 
-Das folgende Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation`-API, um den im Formulardatenmodell `employeeAccount` konfigurierten Dienstvorgang `getAccountById` aufzurufen.
+Folgendes Beispielskript verwendet die `guidelib.dataIntegrationUtils.executeOperation`-API, um den `getAccountById`-Service-Vorgang aufzurufen, der im Formulardatenmodell `employeeAccount` konfiguriert ist.
 
-Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das `empId`-Argument und gibt den Mitarbeiternamen, die Kontonummer und den Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` und der Wert für das Argument `accountNumber` im Formularelement `account` eingetragen.
+Der Vorgang `getAccountById` nimmt den Wert im Formularfeld `employeeID` als Eingabe für das Argument `empId` und gibt den Mitarbeiternamen, die Kontonummer und den Kontostand für den entsprechenden Mitarbeiter zurück. Die Ausgabewerte werden in den angegebenen Formularfeldern befüllt. Beispielsweise wird der Wert im Argument `name` im Formularelement `fullName` befüllt und der Wert für das Argument `accountNumber` im Formularelement `account`.
 
 ```
 var operationInfo = {

@@ -1,20 +1,20 @@
 ---
 title: Assistent „Sprachkopie erstellen“
-seo-title: Assistent „Sprachkopie erstellen“
+seo-title: Language Copy Wizard
 description: Erfahren Sie mehr über die Verwendung des Assistenten „Sprachkopie erstellen“ in AEM.
-seo-description: Erfahren Sie mehr über die Verwendung des Assistenten „Sprachkopie erstellen“ in AEM.
+seo-description: Learn about using the Language Copy Wizard in AEM.
 uuid: 4a664568-30cf-42d2-b07e-68d5f451328e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: dc185a75-84a0-4075-ae1e-8bb78d414aa8
-feature: Sprachkopie
+feature: Language Copy
 exl-id: a3ac6b7e-8a18-4432-9e56-1f9bd7cf0548
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 81%
+source-wordcount: '214'
+ht-degree: 80%
 
 ---
 
@@ -40,7 +40,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 
    ![chlimage_1-50](assets/chlimage_1-50.jpeg)
 
-1. Mit der Schaltfläche **Weiter** gelangen Sie zum Schritt **Konfigurieren** des Assistenten. Hier können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen.
+1. Die **Nächste** -Schaltfläche zum **Konfigurieren** Schritt des Assistenten. Hier können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen.
 
    ![chlimage_1-51](assets/chlimage_1-51.jpeg)
 
@@ -48,7 +48,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
    >
    >Standardmäßig gibt es nur eine Übersetzungs-Einstellung. Um die Auswahl anderer Einstellungen zu ermöglichen, müssen Sie zuerst die Cloud-Einstellungen konfigurieren. Siehe [Konfigurieren des Übersetzungsintegrations-Frameworks](/help/sites-administering/tc-tic.md).
 
-1. Mit der Schaltfläche **Weiter** gelangen Sie zum Schritt **Übersetzen** des Assistenten. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
+1. Die **Nächste** -Schaltfläche zum **Übersetzen** Schritt des Assistenten. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
 
    >[!NOTE]
    >

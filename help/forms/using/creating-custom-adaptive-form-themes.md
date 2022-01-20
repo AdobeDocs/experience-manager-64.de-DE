@@ -1,8 +1,8 @@
 ---
-title: Erstellen benutzerdefinierter Themen für adaptive Formulare
-seo-title: Erstellen benutzerdefinierter Designs für adaptive Formulare
+title: Erstellen benutzerdefinierter Designs für adaptive Formulare
+seo-title: Creating custom adaptive form themes
 description: Ein Design für adaptives Formular ist eine AEM-Clientbibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren. Erfahren Sie, wie Sie benutzerdefinierter Designs für adaptive Formulare erstellen können.
-seo-description: Ein Design für adaptives Formular ist eine AEM-Clientbibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren. Erfahren Sie, wie Sie benutzerdefinierter Designs für adaptive Formulare erstellen können.
+seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
 uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
 content-type: reference
 topic-tags: customization
@@ -11,8 +11,8 @@ discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: e6aa866f-3483-4db1-abaa-01ee585928dc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '825'
-ht-degree: 82%
+source-wordcount: '788'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 82%
 
 >[!CAUTION]
 >
->AEM Forms bietet die Funktion [Design-Editor](/help/forms/using/themes.md) zum Erstellen und Ändern adaptiver Formulare [Designs](/help/forms/using/themes.md). Führen Sie die in diesem Artikel aufgelisteten Schritte nur aus, wenn Sie ein Upgrade von einer Version durchgeführt haben, die nicht über [Design-Editor](/help/forms/using/themes.md) verfügt, und Sie eine vorhandene Investition in Designs haben, die mit Less-/CSS-Dateien erstellt wurden (Pre-Design-Editor-Methode).
+>AEM Forms stellt die [Design-Editor](/help/forms/using/themes.md) Funktion zum Erstellen und Ändern adaptiver Formulare [themes](/help/forms/using/themes.md). Führen Sie die in diesem Artikel aufgeführten Schritte nur aus, wenn Sie ein Upgrade von einer Version vorgenommen haben, die nicht über [Design-Editor](/help/forms/using/themes.md) und Sie bereits in Designs investiert haben, die mit Less-/CSS-Dateien erstellt wurden (Pre-Theme-Editor-Methode).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -28,7 +28,7 @@ ht-degree: 82%
 * Erstellen einer Client-Bibliothek in Adobe Experience Manager
 * [Erstellen einer adaptiven Formularvorlage](/help/forms/using/custom-adaptive-forms-templates.md) zur Verwendung des Designs, das Sie erstellen
 
-## Design für adaptives Formular  {#adaptive-form-theme}
+## Design für adaptives Formular {#adaptive-form-theme}
 
 Ein **Design für adaptives Formular** ist eine AEM-Clientbibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren.
 
@@ -36,7 +36,7 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
 
 ![Adaptives Formular und Clientbibliothek](assets/hierarchy.png)
 
-## So erstellen Sie ein Thema für ein adaptives Formular {#to-create-an-adaptive-form-theme}
+## So erstellen Sie ein Design für ein adaptives Formular {#to-create-an-adaptive-form-theme}
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
 >
 >Wenn Sie diesen Schritten mithilfe der Namen folgen, sollte die resultierende Vorlage in etwa dem folgenden Snapshot ähneln:
 
-![Beispiel für ein adaptives Formular für Wälder - ](assets/thumbnail.png)
-**MomentaufnahmeAbbildung** *: Beispiel für Waldthemen*
+![Momentaufnahme des adaptiven Formulars mit Waldthemen](assets/thumbnail.png)
+**Abbildung:** *Beispiel für Waldthemen*
 
-1. Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter dem Knoten `/apps`.
+1. Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` unter `/apps`Knoten.
 
    Erstellen Sie beispielsweise den folgenden Knoten:
 
@@ -59,9 +59,9 @@ Sie erstellen ein **adaptives Formular** und wenden das Design auf das Formular 
 
    ![Snapshot zum CRX-Repository](assets/3-2.png)
 
-1. Fügen Sie dem in Schritt 1 erstellten Knoten zwei Ordner `less` und `css` sowie eine Datei `css.txt` hinzu:
+1. Fügen Sie zwei Ordner hinzu, `less` und `css`und einer Datei `css.txt` zum in Schritt 1 erstellten Knoten:
 
-   * `less` Ordner: Enthält die  `less` Variablendateien, in denen Sie die  `less` Variablen definieren und  `less mixins` die zur Verwaltung der CSS-Stile verwendet werden.
+   * `less` Ordner: Enthält die `less` Variablendateien, in denen Sie die `less` Variablen und `less mixins` die zum Verwalten der CSS-Stile verwendet werden.
 
       Dieser Ordner besteht aus den Variablendateien `less`, mixin-Dateien `less` und den Dateien `less`, mit deren Hilfe Stile mit mit Mixins und Variablen definiert werden. Diese Dateien werden dann alle in „styles.less“ importiert.
 
@@ -212,7 +212,7 @@ Nachdem Sie das Thema für adaptives Formular erstellt haben, führen Sie die fo
 
    Beispiel: `/apps/myAfCustomizations/myAfPages/forestPage`
 
-   1. Fügen Sie eine `sling:resourceSuperType` -Eigenschaft hinzu und legen Sie den Wert auf `fd/af/components/page/base` fest.
+   1. Hinzufügen einer `sling:resourceSuperType` Eigenschaft und legen Sie den Wert als `fd/af/components/page/base`.
 
       ![Snapshot zum CRX-Repository](assets/1-2.png)
 

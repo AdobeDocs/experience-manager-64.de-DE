@@ -1,8 +1,8 @@
 ---
 title: AEM Foundation und Repository
-seo-title: AEM Foundation und Repository
+seo-title: AEM Foundation & Repository
 description: Spezifische Versionshinweise zur Plattform und zum Repository von Adobe Experience Manager 6.3
-seo-description: Spezifische Versionshinweise zur Plattform und zum Repository von Adobe Experience Manager 6.3
+seo-description: Release notes specific to Adobe Experience Manager 6.3 AEM Platform and Repository.
 uuid: 147b38d0-cf87-467c-a52d-3399d4af7e6e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,14 +12,14 @@ discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
 exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '719'
 ht-degree: 83%
 
 ---
 
-# AEM Foundation und Repository  {#aem-foundation-repository}
+# AEM Foundation und Repository {#aem-foundation-repository}
 
-## Liste der Änderungen  {#list-of-changes}
+## Liste der Änderungen {#list-of-changes}
 
 ### Repository {#repository}
 
@@ -35,14 +35,13 @@ ht-degree: 83%
    * Fortlaufende Revisionsbereinigung für MongoMK ersetzt geplante Revisionsbereinigung.
 
 * Verbesserte Effizienz bei der Revisionsbereinigung von Dokument-Knotenspeichern.
-* Unter [Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) und [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) finden Sie einen vollständigen Überblick über behobene Probleme.
+* Siehe [Apache Jackrabbit Oak Jira v 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) und [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) für einen vollständigen Überblick über behobene Probleme.
 
 >[!CAUTION]
 >
 >* Aufgrund der neuen Version von Oak Segment Tar, die mit AEM 6.3 eingeführt wurde, ist eine Repository-Migration erforderlich. Dieser Schritt ist obligatorisch, wenn Sie eine Aktualisierung von einer älteren TarMK-Version durchführen oder von einem anderen Persistenztyp zum neuen Segment-TAR-Format wechseln möchten. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie unter [Migration auf Oak-Segment-TAR – Häufig gestellte Fragen (FAQ)](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 >
-
 
 
 ### Suche und Indizierung {#search-amp-indexing}
@@ -71,10 +70,9 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. In AEM 6.4 ist die klassische Benutzeroberfläche integriert und Kunden, die ein Upgrade auf diese Version durchführen, können diese wie gehabt verwenden. Beachten Sie, dass die klassische Benutzeroberfläche weiterhin vollständig unterstützt wird, obwohl sie veraltet ist [mehr dazu](/help/sites-deploying/ui-recommendations.md).
+>* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. In AEM 6.4 ist die klassische Benutzeroberfläche integriert und Kunden, die ein Upgrade auf diese Version durchführen, können diese wie gehabt verwenden. Beachten Sie, dass die klassische Benutzeroberfläche weiterhin vollständig unterstützt wird, obwohl sie veraltet ist. [Mehr dazu](/help/sites-deploying/ui-recommendations.md).
 
 >
-
 
 
 ### Inhaltsverteilung {#content-distribution}
@@ -113,7 +111,7 @@ ht-degree: 83%
 * Analyse der Upgrade-Komplexität: Ein neues Mustererkennungstool analysiert die Komplexität von Upgrades.
 * Nachhaltige Upgrades: Die eingeführte API-Oberfläche und Inhaltsklassifizierung erleichtert Ihnen die Umsetzung von Best Practices für effiziente und nahtlose Upgrades auf die nächste Version während Ihres gesamten Entwicklungszyklus.
 * Repository-Neustrukturierung: Erhebliche Umstrukturierung (in erster Linie /etc) zur Erleichterung von Upgrades und zur Förderung der Best Practices bei der Implementierung. [Weitere Informationen.](/help/sites-deploying/repository-restructuring.md)
-* Weitere Informationen zu diesen Funktionen finden Sie in der [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md) .
+* Siehe [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md) Weitere Informationen zu diesen Funktionen.
 
 ### Cloud Services {#cloud-services}
 

@@ -1,8 +1,8 @@
 ---
 title: Empfohlene Vorgehensweisen für HTML5-Formulare
-seo-title: Empfohlene Vorgehensweisen für HTML5-Formulare
+seo-title: Best practices for HTML5 forms
 description: 'Stimmen Sie Ihre XFA-basierten HTML5-Formulare für optimale Leistung ab. '
-seo-description: 'Erfahren Sie, wie Sie Ihre XFA-basierten HTML5-Formulare für beste Leistung optimieren. '
+seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
 uuid: 739700c7-4f88-4b53-9453-1be6d5bc8432
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -13,8 +13,8 @@ feature: Mobile Forms
 exl-id: 5f85882c-f7a7-448e-9946-e04a0d74dee1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 87%
+source-wordcount: '1426'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 87%
 
 Stimmen Sie Ihre XFA-basierten HTML5-Formulare für optimale Leistung ab.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 AEM Forms bieten eine Komponente, die HTML5-Formulare genannt wird. Auf diese Weise können Sie vorhandene XFA-basierte PDF-Formulare (XDP-Dateien) im HTML5-Format rendern. Dieses Dokument enthält Richtlinien und Empfehlungen, um die Ladezeit zu verkürzen und die Leistung von HTML5-Formularen auf mobilen Geräten zu verbessern.
 
@@ -30,7 +30,7 @@ Die meisten Mobilgeräte haben eine begrenzten Verarbeitungsleistung und Arbeits
 
 Obwohl die Empfehlungen, die in diesem Artikel diskutiert werden, auf HTML5-Formulare abzielen, gelten diese aber auch für XFA-basierte PDF-Formulare. Diese bewährten Verfahren tragen zusammen zur Gesamtleistung von HTML5-Formularen bei. Es erfordert eine sorgfältige Planung, um effiziente und produktive Formulare zu entwickeln. Erste Schritte:
 
-## Knoten sind Währung der HTML5-Formulare, nutzen Sie diese sinnvoll  {#nodes-are-currency-of-html-forms-spend-them-wisely}
+## Knoten sind Währung der HTML5-Formulare, nutzen Sie diese sinnvoll {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
 Im Allgemeinen hat ein XFA-Formular mehrere Elemente. Beispiel: Tabelle, Text und Bilder. Jedes Element hat einige Eigenschaften, um das Verhalten und das Erscheinungsbild des Elements zu steuern. Wenn ein XFA-Formular im HTML5-Format wiedergegeben wird, werden alle XFA-Elemente und die entsprechenden Eigenschaften in Modell- oder HTML DOM-Knoten konvertiert. Diese Knoten werden zur Größe und Komplexität von DOM hinzugerechnet. HTML5-Formular langsamerer für die Wiedergabe machen.
 
@@ -39,7 +39,7 @@ Es ist einfacher für die Browser, schlanke DOM wiederzugeben. Sie können die f
 * Mit der Titel-Eigenschaft können Sie einem Feld eine Beschriftung hinzuzufügen. Verwenden Sie kein separates Textelement, um eine Beschriftung hinzuzufügen. Es unterstützt zusätzliche Gewichtung loszuwerden, was zur Leistungssteigerung führt. Es werden außerdem Layout-Probleme vermieden.
 * Halten Sie die Anzahl von Zeichen-Textelementen in einem Formular auf einem absoluten Minimum. Zeichenelemente sind hilfreich beim Verbessern der Lesbarkeit und des Erscheinungsbilds, aber haben keine Informationen zu Speicherfunktionen. Es wird empfohlen, mehrere Zeichen-Textelemente in ein einzelnes Zeichen-Textelement zusammenzuführen. Nutzen Sie alle Möglichkeiten, um ein Formular schlanker zu machen.
 
-## Lite-Formulare funktionieren besser und komprimieren die Ressourcen  {#lite-forms-perform-better-keep-the-resources-compressed}
+## Lite-Formulare funktionieren besser und komprimieren die Ressourcen {#lite-forms-perform-better-keep-the-resources-compressed}
 
 Ein HTML5-Formular kann mehrere externe Ressourcen, z. B. Bilder, JavaScript- und CSS-Dateien, enthalten. Jedes Mal, wenn ein Browser ein Formular anfordert, werden die externen Ressourcen über das Netzwerk übertragen. Die Zeit, die benötigt wird, um die Übertragung über das Netzwerk durchzuführen, ist direkt zur Größe der Dateien proportional.
 
@@ -49,7 +49,7 @@ Deshalb ist die Reduzierung der Größe der externen Ressourcen und die Verwendu
 * Verwenden Sie die minify-Option im AEM Configuration Manager an (Day CQ HTML Library Manager), um JavaScript- und CSS-Dateien zu komprimieren. Weitere Informationen finden Sie unter[ OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).
 * Netzkompression aktivieren. Die Größe der Anforderungen und Antworten von einem Formular werden reduziert. Für andere Details finden Sie weitere Informationen im Abschnitt [Leistungsoptimierung des AEM-Forms-Servers](https://helpx.adobe.com/de/aem-forms/6-3/performance-tuning-aem-forms.html).
 
-## Halten Sie das Interesse wach, zeigen Sie nur erforderliche Felder   {#keep-the-interest-alive-show-only-required-fields}
+## Halten Sie das Interesse wach, zeigen Sie nur erforderliche Felder  {#keep-the-interest-alive-show-only-required-fields}
 
 Ein HTML5-Formular kann hunderte von Seiten umfassen. Ein Formular mit vielen Feldern lädt langsam im Browser. Sie können die folgenden Optimierungen in einem XFA-Formular durchführen, um die Formulare mit vielen Feldern und Seiten zu optimieren:
 
@@ -57,7 +57,7 @@ Ein HTML5-Formular kann hunderte von Seiten umfassen. Ein Formular mit vielen Fe
 * Erwägen Sie Abschnitte zu teilen und jeden Abschnitt auf eine andere Seite zu verschieben. HTML5-Formulare laden dynamisch jede Seite auf Seitenrollenantrag. Nur gescrollte Seiten (Seiten, die angezeigt werden, und die Seiten, die vorausgehen) werden im Arbeitsspeicher gespeichert. Die übrigen Seiten werden bei Bedarf geladen. Deshalb reduziert die Verringerung und das Verschieben eines Abschnitts auf eine Seite die Zeit, die zum Laden eines Formulars erforderlich ist. Sie können die erste Seite des Formulars als Einstiegsseite verwenden. Es ist mit dem Inhaltsverzeichnis eines Buchs vergleichbar. Eine Einstiegsseite des Formulars enthält nur Links zu den anderen Abschnitten des Formulars. Es verbessert deutlich die Ladezeit der ersten Seite des Formulars und führt zu einer Verbesserung der Benutzerfreundlichkeit.
 * Halten Sie bedingte Bereiche, standardmäßig ausgeblendet. Machen Sie diese Abschnitte nur sichtbar, wenn eine bestimmte Bedingung erfüllt wird. Auf diese Weise können Sie die Größe des DOM auf ein Minimum beschränken. Sie können auch Navigation mit Registerkarten verwenden, um nur einen Abschnitt auf einmal anzuzeigen.
 
-## Weniger ist mehr, reduzieren Sie die Anzahl der Seiten  {#less-is-more-reduce-the-number-of-pages}
+## Weniger ist mehr, reduzieren Sie die Anzahl der Seiten {#less-is-more-reduce-the-number-of-pages}
 
 HTML5-Formulare können datenbasierte Felder enthalten (Tabellen und Unterformulare). Diese Felder erweitern die Größe des Formulars in der Laufzeitumgebung. So kann zum Beispiel eine datenbasierte Tabelle in einem HTML5-Formular tausende von Zeilen umfassen. Diese Tabellen können zu Layout- und Leistungsverringerung führen. Mit unten vorgeschlagenen Optimierungen können Sie die Ladezeiten von HTML5-Formularen mit datengesteuerten Felder verringern:
 
@@ -70,7 +70,7 @@ HTML5-Formulare können datenbasierte Felder enthalten (Tabellen und Unterformul
 
 Ein XFA-Formular kann viele Abschnitte enthalten, die nur für Datensatzdokumente (DOR) verwendet werden. Um die Anzahl der Knoten zu reduzieren und die Leistung eines solchen Formulars zu verbessern, können Sie verschiedene Kopien des Formulars verwalten - eine Kopie zum Ausfüllen des Formulars und eine andere zum Generieren des Datensatzdokuments auf dem Server. Zeigen Sie Felder in der Kopie, die nur zum Erfassen von Daten erforderlich sind. Behalten Sie Felder, die nur in der gedruckten Ausgabe des Formulars erforderlich sind, im Datensatzdokumente-XFA bei. Bevor Sie den vorgeschlagene Ansatz wählen, bewerten Sie die Leistungssteigerung und die Wartung.
 
-## Weiterführende Informationen   {#recommended-reads}
+## Weiterführende Informationen  {#recommended-reads}
 
 Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in einfache, beeindruckende digitale Erlebnisse umwandeln. Es bedarf jedoch gemeinsamer Bemühungen, um effiziente und produktive Formulare zu entwickeln. Zusätzlich zu HTML5-Formularen finden Sie hier einige Informationen für bewährte Verfahren zu AEM:
 
@@ -83,5 +83,5 @@ Mit Adobe Experience Manager (AEM) Forms können Sie komplexe Transaktionen in e
 
 ## Schnellnachweiskarte {#quick-reference-card}
 
-Sie können folgende Karte drucken (klicken Sie auf eine Karte, um eine hochauflösende Version herunterzuladen) und auf Ihrem Schreibtisch behalten, um eine kurze Referenz zu erhalten:
-[ ![Best Practices für HTML5 Forms-Schnellreferenzkarte](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+Sie können die folgende Karte (Klicken Sie auf „Karte“, um eine Version mit hoher Auflösung herunterzuladen) drucken, und auf Ihrem Schreibtisch als Referenz behalten.
+[ ![Bewährte Verfahren für HTML5-Formular-Schnellnachweiskarte](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

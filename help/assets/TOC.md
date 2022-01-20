@@ -9,7 +9,7 @@ user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digital
 source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 

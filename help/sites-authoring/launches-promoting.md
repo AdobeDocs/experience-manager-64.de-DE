@@ -1,8 +1,8 @@
 ---
 title: Weiterleiten von Launches
-seo-title: Weiterleiten von Launches
-description: 'Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. '
-seo-description: 'Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. '
+seo-title: Promoting Launches
+description: 'Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. '
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 56483f8f-d66e-4677-a7bd-3b1425625b2b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,14 +13,14 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2a790f7d-03a1-4f60-a59e-0a5f15c44fa5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '723'
 ht-degree: 98%
 
 ---
 
 # Weiterleiten von Launches{#promoting-launches}
 
-Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. Beim Weiterleiten einer Launch-Seite wird die entsprechende Seite der Quellseiten mit dem Inhalt der weitergeleiteten Seite aktualisiert. Die folgenden Optionen sind beim Weiterleiten einer Launch-Seite verfügbar:
+Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. Beim Weiterleiten einer Launch-Seite wird die entsprechende Seite der Quellseiten mit dem Inhalt der weitergeleiteten Seite aktualisiert. Die folgenden Optionen sind beim Weiterleiten einer Launch-Seite verfügbar:
 
 * Soll nur die aktuelle Seite weitergeleitet werden oder der gesamte Launch?
 * Sollen die untergeordneten Seiten der aktuellen Seite weitergeleitet werden?
@@ -48,7 +48,6 @@ Sie müssen Launch-Seiten weiterleiten (bewerben), damit der Inhalt vor der Ver�
 >* [Der Ablauf eines Launches](/help/sites-authoring/launches.md#launches-the-order-of-events) für weitere Informationen zur automatischen Weiterleitung und Veröffentlichung.
 
 >
-
 
 
 Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Launches** weiterleiten:
@@ -90,7 +89,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
 
 1. Wählen Sie **Bewerben** aus.
 
-## Weiterleiten von Launch-Seiten bei der Bearbeitung   {#promoting-launch-pages-when-editing}
+## Weiterleiten von Launch-Seiten bei der Bearbeitung {#promoting-launch-pages-when-editing}
 
 Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch im Bereich **Seiteninformationen** zur Verfügung. Dadurch wird der Assistent geöffnet, um die benötigten Informationen zusammenzustellen.
 
@@ -100,7 +99,7 @@ Wenn Sie eine Launch-Seite bearbeiten, steht die Aktion **Launch bewerben** auch
 >
 >Diese Option steht für einzelne und [verschachtelte Launches](#promoting-a-nested-launch) zur Verfügung.
 
-## Weiterleiten eines verschachtelten Launches   {#promoting-a-nested-launch}
+## Weiterleiten eines verschachtelten Launches {#promoting-a-nested-launch}
 
 Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an jede der Quellen weiterleiten, auch an die Stammquelle (Produktion).
 

@@ -1,8 +1,8 @@
 ---
 title: Ausführen von AEM Forms im Wartungsmodus
-seo-title: Ausführen von AEM Forms im Wartungsmodus
+seo-title: Running AEM forms in maintenance mode
 description: Der Wartungsmodus bietet sich beim Ausführen von Aufgaben wie dem Hinzufügen von Patches zu DSC, dem Aktualisieren von AEM Forms oder dem Anwenden eines Service Packs an. Erfahren Sie mehr über die Ausführung von AEM Forms im Wartungsmodus.
-seo-description: Der Wartungsmodus bietet sich beim Ausführen von Aufgaben wie dem Hinzufügen von Patches zu DSC, dem Aktualisieren von AEM Forms oder dem Anwenden eines Service Packs an. Erfahren Sie mehr über die Ausführung von AEM Forms im Wartungsmodus.
+seo-description: Maintenance mode is useful when performing tasks such as patching a DSC, upgrading AEM forms, or applying a service pack. Learn more about running AEM forms in maintenance mode.
 uuid: 9aa3be20-f17e-4384-b4ce-daaee2898c96
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 exl-id: 2f56bbc7-5e23-4c84-ac0a-03f0b01150b3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 95%
+source-wordcount: '274'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[hostnamportadministrator ]*`&password=`*[usernamepassword]*
+   `https://`*[hostname ]*`:`*[port]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[Administrator-Benutzername ]*`&password=`*[password]*
 
    Die Meldung „Jetzt angehalten“ wird im Browserfenster angezeigt.
 
@@ -42,7 +42,7 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname]: []*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
+   `https://`*[hostname]:[port ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[Administrator-Benutzername]* `&password=`*[password ]*
 
    Der Status wird im Browserfenster angezeigt. Der Status „true“ zeigt an, dass der Server im Wartungsmodus ausgeführt wird, und „false“ zeigt an, dass sich der Server nicht im Wartungsmodus befindet.
 
@@ -50,6 +50,6 @@ Es sollten keine Prozesse aufgerufen werden, während sich der Server im Wartung
 
 1. Geben Sie in einem Webbrowser Folgendes ein:
 
-   `https://`*[Hostname]: []*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
+   `https://`*[hostname]:[port ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[Administrator-Benutzername]* `&password=`*[password ]*
 
    Die Meldung „Wird ausgeführt“ wird im Browserfenster angezeigt.

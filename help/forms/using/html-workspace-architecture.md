@@ -1,8 +1,8 @@
 ---
 title: AEM Forms Workspace-Architektur
-seo-title: AEM Forms Workspace-Architektur
+seo-title: AEM Forms Workspace Architecture
 description: Grundlegende Informationen und Überblick über die Architektur von LiveCycle AEM Forms workspace.
-seo-description: Grundlegende Informationen und Überblick über die Architektur von LiveCycle AEM Forms workspace.
+seo-description: Conceptual information and overview of the architecture of LiveCycle AEM Forms workspace.
 uuid: e1a48452-ed44-4ea7-ba38-d961c8faafa5
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 exl-id: 30bde8d6-7959-4e4b-a6f4-faf52444e67a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 81%
+source-wordcount: '219'
+ht-degree: 79%
 
 ---
 
-# AEM Forms Workspace-Architektur  {#aem-forms-workspace-architecture}
+# AEM Forms Workspace-Architektur {#aem-forms-workspace-architecture}
 
 AEM Forms Workspace ist eine Webanwendung, die auf CRX™ gehostet wird. Wenn Workspace in einem Browser geöffnet wird, wird auf eine CRX-Ressource zugegriffen und die Anwendung als HTML-Seite im Browser angezeigt.
 

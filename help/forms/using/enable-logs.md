@@ -1,8 +1,8 @@
 ---
 title: Aktivieren der Protokollierung für HTML5-Formulare
-seo-title: Aktivieren der Protokollierung für HTML5-Formulare
+seo-title: Enable logging for HTML5 forms
 description: Das Dienstprogramm der Protokollfunktion aktiviert die Protokollierung von Formularen und hilft beim Debugging von Problemen mit Formularen.
-seo-description: Das Dienstprogramm der Protokollfunktion aktiviert die Protokollierung von Formularen und hilft beim Debugging von Problemen mit Formularen.
+seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
 uuid: d6279092-57f3-4fc6-b41b-9caf65459d4d
 contentOwner: robhagat
 content-type: reference
@@ -13,8 +13,8 @@ feature: Mobile Forms
 exl-id: c7953d1b-a332-4138-b744-516f3881cd4d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 71%
+source-wordcount: '627'
+ht-degree: 70%
 
 ---
 
@@ -26,7 +26,7 @@ Sie können das Dienstprogramm der Protokollfunktion konfigurieren, um mit der E
 
 Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfigurieren:
 
-1. Rufen Sie `https://[server]:[port]/system/console/configMgr` auf. Suchen und öffnen Sie die Option *Apache Sling Logging Logger configuration* . Das folgende Dialogfeld wird angezeigt:
+1. Rufen Sie `https://[server]:[port]/system/console/configMgr` auf. Suchen und öffnen Sie die *Apache Sling Logging Logger-Konfiguration* -Option. Folgendes Dialogfeld wird angezeigt:
 
    ![ Dialogfeld mit Apache Sling Logging Logger-Konfigurations-Optionen](assets/logconfig.png)
 
@@ -34,7 +34,7 @@ Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfiguri
 
 1. Ändern Sie die **Protokollierungsstufe** in **Debug**.
 
-1. Geben Sie den Namen und Pfad der **Protokolldatei** an.
+1. Geben Sie den Namen und Pfad der **Protokolldatei**.
 
    >[!NOTE]
    >
@@ -49,7 +49,7 @@ Um die clientseitige Protokollierung in HTML5-Formularen zu aktivieren, können 
 * Mithilfe des Anforderungsparameters `log`
 * Mithilfe des CQ Configuration Managers
 
-### Aktivieren der Protokollierung mithilfe des Anforderungsparameters  {#enabling-logging-using-request-parameter}
+### Aktivieren der Protokollierung mithilfe des Anforderungsparameters {#enabling-logging-using-request-parameter}
 
 Mit dieser Methode können Sie Protokolle für eine bestimmte Anforderung generieren. Der Name des Anforderungsparameters ist **log**. Die Protokoll-URL lautet wie folgt:
 
@@ -71,7 +71,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
   </tr> 
   <tr> 
    <td>2</td> 
-   <td>Protokolle werden in einem JavaScript-Objekt auf Clientseite erfasst und können unter <strong>Server</strong> veröffentlicht werden </td> 
+   <td>Protokolle werden in einem JavaScript-Objekt auf Clientseite erfasst und können an <strong>Server</strong> </td> 
   </tr> 
   <tr> 
    <td>3</td> 
@@ -80,7 +80,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
  </tbody> 
 </table>
 
-#### Protokollebenen  {#log-levels}
+#### Protokollebenen {#log-levels}
 
 <table> 
  <tbody> 
@@ -101,7 +101,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
    <td>ERROR<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>1</td> 
+   <td>3</td> 
    <td>WARN<br type="_moz" /> </td> 
   </tr> 
   <tr> 
@@ -146,7 +146,7 @@ Die Protokollkonfiguration besteht aus der Protokollebene und der Protokollfunkt
  </tbody> 
 </table>
 
-#### Protokollkonfiguration  {#log-configuration}
+#### Protokollkonfiguration {#log-configuration}
 
 In der Protokoll-URL wird der Abfragezeichenfolgen-Parameter zur Protokollkonfiguration wie folgt definiert:
 
@@ -178,7 +178,7 @@ Beispiel:
 
 Wenn Sie Configuration Manager zum Aktivieren der Protokollierung verwenden, werden Protokolle für jede Rendering-Anforderung generiert, bis die Protokollierung erneut deaktiviert wird.
 
-1. Melden Sie sich bei CQ Configuration Manager unter `https://[server]:[port]/system/console/configMgr` an und melden Sie sich mit Administratorberechtigungen an.
+1. Melden Sie sich bei CQ Configuration Manager unter an. `https://[server]:[port]/system/console/configMgr` und melden Sie sich mit Administratorberechtigungen an.
 1. Suchen Sie nach **Mobile Forms Configurations** und klicken Sie darauf.
 1. Geben Sie im Textfeld &quot;Debug Options&quot; die Protokollkonfigurationen ein, wie sie im letzten Abschnitt beschrieben sind, z. B. **2a4-b5-c6**
 
@@ -188,23 +188,23 @@ Wenn Sie Configuration Manager zum Aktivieren der Protokollierung verwenden, wer
 
 ## Hochladen von Protokollen {#uploading-logs}
 
-Wenn als Ziel 1 eingestellt ist, werden alle clientseitigen Skriptprotokollmeldungen an die Konsole geleitet. Wenn ein Administrator diese Protokolle zusammen mit Serverprotokollen benötigt, setzen Sie die Zielebene auf 2. Auf dieser Ebene werden alle Protokolle in einem JS-Objekt auf Clientseite erfasst. Wenn das Formular mit dem Standardprofil wiedergegeben wird, wird links neben der Schaltfläche **Vorhandene Felder markieren** die Schaltfläche **Protokolle senden** angezeigt. Wenn der Benutzer auf den Link klickt, werden alle erfassten Protokolle an den Server gesendet und in der konfigurierten Fehlerprotokolldatei auf dem Server protokolliert.
+Wenn als Ziel 1 eingestellt ist, werden alle clientseitigen Skriptprotokollmeldungen an die Konsole geleitet. Wenn ein Administrator diese Protokolle zusammen mit Serverprotokollen benötigt, setzen Sie die Zielebene auf 2. Auf dieser Ebene werden alle Protokolle in einem JS-Objekt auf Clientseite erfasst. Wenn das Formular mit dem Standardprofil wiedergegeben wird, wird ein **Protokolle senden** Schaltfläche links von **Vorhandene Felder markieren** in der Symbolleiste. Wenn der Benutzer auf den Link klickt, werden alle erfassten Protokolle an den Server gesendet und in der konfigurierten Fehlerprotokolldatei auf dem Server protokolliert.
 
 Standardmäßig werden alle Daten der Datei „error.log“ im Ordner „/crx-repository/logs/“ hinzugefügt.
 
 Speicherort und Namen der Protokolldatei ändern:
 
 1. Melden Sie sich beim Configuration Manager als Administrator an. Die Standard-URL von Configuration Manager lautet `https://[*Server*]:[*Port*]/system/console/configMgr`.
-1. Klicken Sie auf **Apache Sling Logging Logger-Konfiguration**. Das folgende Dialogfeld wird angezeigt.
+1. Klicken Sie auf **Apache Sling Logging Logger-Konfiguration**. Folgendes Dialogfeld wird angezeigt.
 
    ![logconfig-1](assets/logconfig-1.png)
 
 1. Ändern Sie die **Protokollierungsstufe** in Debug.
 
-1. Geben Sie den Pfad und den Namen der **Protokolldatei** an.
+1. Pfad und Namen der **Protokolldatei**.
 
    >[!NOTE]
    >
    >Um Protokolle im selben Ordner zu erstellen, in dem bereits andere Protokolldateien enthalten sind, geben Sie in den Eigenschaften der Protokolldateien ../logs/&lt;filename> an.
 
-1. Ändern Sie **Logger** in **HTMLFormsPerfLogger** und klicken Sie auf **Save**.
+1. Ändern Sie die **Logger** nach **HTMLFormsPerfLogger** und klicken Sie auf **Speichern**.

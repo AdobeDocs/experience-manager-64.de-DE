@@ -1,19 +1,19 @@
 ---
 title: Liste der nach dem Upgrade deinstallierten veralteten Bundles
-seo-title: Liste der nach dem Upgrade deinstallierten veralteten Bundles
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: Eine Liste der Bundles, die beim Upgrade auf AEM 6.3 automatisch deinstalliert werden.
-seo-description: Eine Liste der Bundles, die beim Upgrade auf AEM 6.3 automatisch deinstalliert werden.
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
-feature: Aktualisieren
+feature: Upgrading
 exl-id: 0f075a01-f286-4e16-9061-4e902c553eb9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '167'
 ht-degree: 100%
 
 ---

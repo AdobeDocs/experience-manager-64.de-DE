@@ -1,8 +1,8 @@
 ---
 title: Erstellen eines benutzerdefinierten Profils für HTML5-Formulare
-seo-title: Erstellen eines benutzerdefinierten Profils für HTML5-Formulare
+seo-title: Creating a custom profile for HTML5 forms
 description: Ein HTML5-Formularprofil ist ein Ressourcenknoten in Apache Sling. Es enthält eine benutzerdefinierte Version von HTML5-Formularen-Render-Diensten.
-seo-description: Ein HTML5-Formularprofil ist ein Ressourcenknoten in Apache Sling. Es enthält eine benutzerdefinierte Version von HTML5-Formularen-Render-Diensten.
+seo-description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
 uuid: b9938280-a92c-4dde-b465-04372db3ca8d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,14 +12,14 @@ feature: Mobile Forms
 exl-id: 4630c43f-5b47-435c-8ce5-b4e0d986ec02
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 65%
+source-wordcount: '661'
+ht-degree: 63%
 
 ---
 
 # Erstellen eines benutzerdefinierten Profils für HTML5-Formulare {#creating-a-custom-profile-for-html-forms}
 
-Ein Profil ist ein Ressourcenknoten in [Apache Sling](https://sling.apache.org/). Es enthält eine benutzerdefinierte Version des HTML5-Formularen-Render-Dienstes. Sie können den Rendition-Dienst für HTML5-Formulare verwenden, um Erscheinungsbild, Verhalten und Interaktionen der HTML5-Formulare anzupassen. Ein Profilknoten ist im Ordner `/content` im JCR-Repository vorhanden. Sie können den Knoten direkt im Ordner `/content` oder in einem beliebigen Unterordner des Ordners `/content` platzieren.
+Ein Profil ist ein Ressourcenknoten in [Apache Sling](https://sling.apache.org/). Es enthält eine benutzerdefinierte Version des HTML5-Formularen-Render-Dienstes. Sie können den HTML5 forms Rendition-Dienst verwenden, um Erscheinungsbild, Verhalten und Interaktionen der HTML5-Formulare anzupassen. Ein Profilknoten ist in der `/content` Ordner im JCR-Repository. Sie können den Knoten direkt unter dem `/content` Ordner oder Unterordner des `/content` Ordner.
 
 Der Profilknoten hat die **sling:resourceSuperType**-Eigenschaft und der Standardwert ist **xfaforms/profile**. Das Render-Skript für den Knoten ist unter /libs/xfaforms/profile verfügbar.
 
@@ -41,7 +41,7 @@ Das config.jsp-Modul enthält verschiedene Konfigurationen wie Protokollierung, 
 
 Die toolbar.jsp enthält Code zum Erstellen einer farbigen Symbolleiste. Um die Symbolleiste zu entfernen, müssen Sie toolbar.jsp aus der html.jsp entfernen.
 
-## formBody.jsp  {#formbody-jsp}
+## formBody.jsp {#formbody-jsp}
 
 Das formBody.jsp-Modul dient zur HTML-Darstellung des XFA-Formulars.
 
@@ -73,14 +73,14 @@ Um ein benutzerdefiniertes Profil zu erstellen, führen Sie die folgenden Schrit
 
 Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie Render-Informationen zu diesem Profil hinzu. Nach Erhalt einer Anfrage für das neue Profil prüft CRX das Vorhandensein des Ordners „/apps“, damit die JSP-Seite wiedergegeben werden kann. Erstellen Sie die JSP-Seite im Ordner „/apps“.
 
-1. Navigieren Sie im linken Bereich zum Ordner `/apps` .
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und wählen Sie die Erstellung eines Ordners mit dem Namen **hrform**.
-1. Erstellen Sie im Ordner **hrform** einen Ordner mit dem Namen **demo**.
+1. Navigieren Sie im linken Bereich zum `/apps` Ordner.
+1. Klicken Sie mit der rechten Maustaste auf die `/apps` Ordner erstellen und einen Ordner mit dem Namen erstellen **hrform**.
+1. Im **hrform** Ordner erstellen Sie einen Ordner mit dem Namen **Demo**.
 1. Klicken Sie auf die Schaltfläche **Alle speichern**.
 1. Navigieren Sie zu `/libs/xfaforms/profile/html.jsp` und kopieren Sie den Knoten **html.jsp**.
-1. Fügen Sie den Knoten **html.jsp** in den oben erstellten Ordner `/apps/hrform/demo` mit demselben Namen **html.jsp** ein und klicken Sie auf **Speichern**.
+1. Einfügen **html.jsp** Knoten in `/apps/hrform/demo` Ordner, der oben mit demselben Namen erstellt wurde **html.jsp** und klicken Sie auf **Speichern**.
 1. Wenn Sie andere Profil-Skript-Komponenten haben, führen Sie die Schritte 1-6 aus, um die Komponenten in den Ordner „/apps/hrform/demo“ zu kopieren.
 
-1. Um zu überprüfen, ob das Profil erstellt wurde, öffnen Sie die URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
+1. Um zu überprüfen, ob das Profil erstellt wurde, öffnen Sie die URL . `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
 Um Ihre Formulare zu überprüfen,[ Importieren Sie Ihre Formulare ](/help/forms/using/get-xdp-pdf-documents-aem.md)aus Ihrem lokalen Dateisystem in AEM Forms und[ zeigen Sie eine Vorschau des Formulars](/help/forms/using/previewing-forms.md) in der Autoreninstanz des AEM-Servers an.

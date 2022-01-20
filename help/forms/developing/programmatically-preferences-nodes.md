@@ -1,8 +1,8 @@
 ---
 title: Programmgesteuerte Verwaltung der PreferencesNodes
-seo-title: Programmgesteuerte Verwaltung der PreferencesNodes
+seo-title: Programmatically managing the PreferencesNodes
 description: Verwenden Sie die Voreinstellungs-Manager-Dienst-API (Java), um die Voreinstellungsknoten programmgesteuert zu verwalten.
-seo-description: Verwenden Sie die Voreinstellungs-Manager-Dienst-API (Java), um die Voreinstellungsknoten programmgesteuert zu verwalten.
+seo-description: Use the Preferences Manager Service API (Java) to programmatically manage the Preferences Nodes.
 uuid: f0cb117a-a6cc-4ca5-8511-b3bc9f6738e9
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ role: Developer
 exl-id: d580b32c-a344-4a8c-bd61-0949da76d981
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 In diesem Thema wird beschrieben, wie Sie die Voreinstellungs-Manager-Dienst-API (Java) verwenden können, um die Voreinstellungsknoten programmgesteuert zu verwalten.
 
-Sie können die Konfigurationseinstellungen über die Administrator-Benutzeroberfläche manuell ändern. Um die Optionen zu ändern, navigieren Sie zu `Home>Settings>User Management> Configuration>Manual Configuration`. Importieren Sie `config.xml`, nachdem Sie die Änderungen vorgenommen haben. Sie werden feststellen, dass alle Änderungen außer den Änderungen am Knoten `/Adobe/Adobe Experience Manager Forms/Config/UM persist` verloren gehen. Die Vorschau von User Management Import und Export unterstützt keine Änderung der Konfigurationseinstellungen für andere Komponenten. Jetzt können diese Änderungen mit `PreferencesManagerServiceClient` APIs vorgenommen werden.
+Sie können die Konfigurationseinstellungen über die Administrator-Benutzeroberfläche manuell ändern. Um die Optionen zu ändern, navigieren Sie zu `Home>Settings>User Management> Configuration>Manual Configuration`. Import `config.xml` Nachdem Sie die Änderungen vorgenommen haben, würden Sie feststellen, dass alle Änderungen außer den am Knoten vorgenommenen Änderungen `/Adobe/Adobe Experience Manager Forms/Config/UM persist` verloren. Die Vorschau von User Management Import und Export unterstützt keine Änderung der Konfigurationseinstellungen für andere Komponenten. Diese Änderungen können nun mithilfe von `PreferencesManagerServiceClient` APIs.
 
-**Zusammenfassung der** SchritteFühren Sie die folgenden Schritte aus, um die Voreinstellungsknoten programmgesteuert zu verwalten:
+**Zusammenfassung der Schritte** Um die Voreinstellungsknoten programmgesteuert zu verwalten, führen Sie die folgenden Schritte aus:
 
 1. Projektdateien einschließen.
 1. Erstellen eines PreferencesManagerService-Clients

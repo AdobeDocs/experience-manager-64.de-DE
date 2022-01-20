@@ -74,15 +74,15 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
 [Videoausgabedarstellungen verwalten](managing-assets-touch-ui.md#managing-renditions)
 
-      * [Viewer-Vorgaben verwalten](managing-viewer-presets.md)
+      * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
       * [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md)
-   * Mit Videometadaten arbeiten
+   * Arbeiten mit Videometadaten
 
       * Zeigen Sie die Eigenschaften einer kodierten Videoausgabedarstellung wie Framerate, Audio- und Video-Bitrate und Codec an:
 
          [Anzeigen der Eigenschaften von Videoausgabeformaten](video-renditions.md)
 
-      * Bearbeiten Sie die Eigenschaften des Videos, wie den Titel, die Beschreibung, die Tags und die benutzerdefinierten Metadatenfelder:
+      * Bearbeiten Sie die Eigenschaften von Videos, beispielsweise Titel, Beschreibung, Tags und benutzerdefinierte Metadatenfelder:
 
 [Bearbeiten von Videoeigenschaften](managing-assets-touch-ui.md#editing-properties)
 
@@ -90,9 +90,9 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
       * [Metadatenschemas](metadata-schemas.md)
    * Videos überprüfen, genehmigen und kommentieren
 
-      * [Anmerkungen zu Videos](managing-video-assets.md#annotating-video-assets) oder [Anmerkungen zu Assets](managing-assets-touch-ui.md#annotating)
+      * [Anmerkungen zu Videos](managing-video-assets.md#annotating-video-assets) oder [Anmerkungen zu Assets](managing-assets-touch-ui.md#annotating)
       * [Anwenden von Workflows auf Assets](assets-workflow.md) oder [Starten eines Workflows für ein Asset](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)
-      * [Ordner-Assets prüfen](bulk-approval.md)
+      * [Prüfen von Ordner-Assets](bulk-approval.md)
       * [Projekte](/help/sites-authoring/projects.md)
 
 
@@ -223,7 +223,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr> 
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS-Video-Streaming.</td>
+   <td>HLS Video-Streaming.</td>
   </tr>
   <tr> 
    <td>Desktop</td>

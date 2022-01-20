@@ -1,8 +1,8 @@
 ---
 title: Dateibibliothek
-seo-title: Dateibibliothek
+seo-title: File Library Feature
 description: Mit der Funktion "Dateibibliothek"können angemeldete Site-Besucher Dateien hochladen, verwalten und herunterladen
-seo-description: Mit der Funktion "Dateibibliothek"können angemeldete Site-Besucher Dateien hochladen, verwalten und herunterladen
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: 7da94703-8334-4c02-ba2a-55b5cde22e6c
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: cdcae09f-c3cb-471e-863f-b33130e9df0f
 exl-id: c72b246d-442e-4841-810d-1045e83f60f9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 68%
+source-wordcount: '660'
+ht-degree: 70%
 
 ---
 
@@ -26,29 +26,29 @@ Mithilfe der Dateibibliothek können angemeldete Besucher der Site (Community-Mi
 In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen der Dateibibliotheksfunktion zu einer AEM Site
-* Konfigurationseinstellungen für die Komponente `File Library`
+* Konfigurationseinstellungen für `File Library` component
 
 ## Hinzufügen einer Dateibibliothek zu einer Seite {#adding-a-file-library-to-a-page}
 
-Um eine `File Library`-Komponente zu einer Seite im Autorenmodus hinzuzufügen, suchen Sie die Komponente
+So fügen Sie eine `File Library` Komponente auf einer Seite im Autorenmodus zu finden, die Komponente
 
 * `Communities / File Library`
 
 und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `File Library` so angezeigt:
+Wenn die [erforderliche clientseitige Bibliotheken](essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die `File Library` wird angezeigt:
 
 ![chlimage_1-430](assets/chlimage_1-430.png)
 
 ## Konfigurieren der Dateibibliothek {#configuring-file-library}
 
-Wählen Sie die platzierte Komponente `File Library` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `File Library` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![chlimage_1-431](assets/chlimage_1-431.png) ![chlimage_1-432](assets/chlimage_1-432.png)
 
-### Registerkarte &quot;Kommentare&quot;{#comments-tab}
+### Registerkarte &quot;Kommentare&quot; {#comments-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
 
@@ -66,25 +66,25 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, ob und wie Kom
 * **[!UICONTROL Rich-Text-Editor]** Ist diese Option aktiviert, können Kommentare mit Markup versehen werden. Diese Option ist standardmäßig deaktiviert.
 
 * **[!UICONTROL Kommentare löschen]**
-Ist diese Option aktiviert, können Benutzer eigene Kommentare löschen. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, können Benutzer ihre eigenen Kommentare löschen. Diese Option ist standardmäßig aktiviert.
 
 * **[!UICONTROL Tagging zulassen]** Ist diese Option aktiviert, können Dateien Kennzeichnungen zugewiesen werden. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Zulässige]**
-NamespacesWenn die Option Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keines aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
+* **[!UICONTROL Zulässige Namespaces]**
+Wenn die Option Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keines aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
 
 * **[!UICONTROL Empfehlungsgrenze]** Ist die Option „Tagging zulassen“ aktiviert, wird mit dieser Einstellung die Anzahl der vorgeschlagenen Tags eingegrenzt. Wurde der Wert „-1“ festgelegt, werden beliebig viele Tags eingeblendet. Der Standardwert ist -1.
 
 * **[!UICONTROL Abstimmung zulassen]**
-Ist diese Option aktiviert, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Zulassen]**
-Folgende Funktion ist aktiviert. Fügen Sie die folgende Funktion für Blogartikel hinzu, damit Mitglieder über neue Beiträge  [](notifications.md) benachrichtigt werden können. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Folgende erlauben]**
+Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](notifications.md) von neuen Stellen. Diese Option ist standardmäßig deaktiviert.
 
-* **[!UICONTROL Threaded]**
-Replies zulassenIst diese Option aktiviert, können Antworten auf gepostete Kommentare zugelassen werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Threaded-Antworten zulassen]**
+Ist diese Option aktiviert, können Antworten auf gepostete Kommentare zugelassen werden. Diese Option ist standardmäßig deaktiviert.
 
-### Registerkarte Benutzermoderation {#user-moderation-tab}
+### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
 Legen Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** fest, wie Kommentare moderiert werden sollen, falls diese zugelassen sind:
 
@@ -110,7 +110,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** fest, wie Ko
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Dateibibliothek-Grundlagen](essentials-file-library.md) für Entwickler.
+Weitere Informationen finden Sie unter [Grundlagen zur Dateibibliothek](essentials-file-library.md) für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
 

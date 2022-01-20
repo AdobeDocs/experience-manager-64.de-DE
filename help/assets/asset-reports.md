@@ -1,13 +1,13 @@
 ---
 title: Berichte zur Verwendung und Freigabe Ihrer digitalen Assets.
-description: Berichte zu Ihren Assets in  [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
+description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
 contentOwner: AG
-feature: Asset-Berichte,Asset-Management
+feature: Asset Reports,Asset Management
 role: User,Admin
 exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1061'
 ht-degree: 89%
 
 ---
@@ -28,12 +28,12 @@ Wenn ein Bericht generiert wird, werden Sie mit einer E-Mail (optional) und eine
 
 Um Berichte zu erstellen, stellen Sie Folgendes sicher:
 
-* Aktivieren Sie den Dienst [!UICONTROL Day CQ DAM Event Recorder] unter **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web Console]**.
-* Wählen Sie die Aktivitäten oder Ereignisse aus, für die Sie Berichte erstellen möchten. Um beispielsweise einen Bericht zu heruntergeladenen Assets zu generieren, wählen Sie [!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)] aus.
+* Aktivieren [!UICONTROL Day CQ DAM Event Recorder] Dienst von **[!UICONTROL Instrumente]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Web-Konsole]**.
+* Wählen Sie die Aktivitäten oder Ereignisse aus, für die Sie Berichte erstellen möchten. Um beispielsweise einen Bericht zu heruntergeladenen Assets zu generieren, wählen Sie [!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)].
 
 ![Aktivieren der Asset-Berichterstellung in der Web-Konsole](assets/reports-config-day-cq-dam-event-recorder.png)
 
-## Erstellen von Berichten {#generate-reports}
+## Erzeugen von Berichten {#generate-reports}
 
 [!DNL Experience Manager Assets] generiert die folgenden standardmäßigen Berichte für Sie:
 
@@ -54,19 +54,19 @@ Um Berichte zu erstellen, stellen Sie Folgendes sicher:
    ![Tools-Seite zum Navigieren in Asset-Berichten](assets/navigation.png)
 
 1. Klicken Sie auf der Seite [!UICONTROL Asset-Berichte] in der Symbolleiste auf **[!UICONTROL Erstellen]**.
-1. Wählen Sie auf der Seite **[!UICONTROL Berichtseite erstellen]** den Bericht aus, den Sie erstellen möchten, und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Aus dem **[!UICONTROL Berichtsseite erstellen]** Seite, wählen Sie den Bericht aus, den Sie erstellen möchten, und klicken Sie auf **[!UICONTROL Nächste]**.
 
    ![Berichtstyp auswählen](assets/choose_report.png)
 
    >[!NOTE]
    >
-   >Standardmäßig sind die Inhaltsfragmente und Linkfreigaben im Asset [!UICONTROL Heruntergeladener Bericht] enthalten. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Download-Bericht auszuschließen.
+   >Standardmäßig sind die Inhaltsfragmente und Linkfreigaben im Asset enthalten [!UICONTROL Heruntergeladener Bericht]. Wählen Sie die passende Option aus, um einen Bericht zu Linkfreigaben zu erstellen oder Inhaltsfragmente aus dem Download-Bericht auszuschließen.
 
    >[!NOTE]
    >
-   >Der Bericht [!UICONTROL Download] zeigt nur Details zu den Assets an, die einzeln ausgewählt und mit der Schnellaktion heruntergeladen oder heruntergeladen wurden. Er enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befanden.
+   >Die [!UICONTROL Download] zeigt nur Details zu den Assets an, die einzeln ausgewählt und mit der Schnellaktion heruntergeladen oder heruntergeladen wurden. Er enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befanden.
 
-1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniaturansicht sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der standardmäßige Ordnerpfad lautet `/content/dam`. Sie können auch einen anderen Pfad festlegen.
+1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniatur sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der standardmäßige Ordnerpfad lautet `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
    ![Seite zum Hinzufügen von Berichtsdetails](assets/report_configuration.png)
 
@@ -113,7 +113,7 @@ Um Berichte zu erstellen, stellen Sie Folgendes sicher:
 
    Klicken Sie in der Symbolleiste auf **[!UICONTROL Download]**, um den Bericht im CSV-Format herunterzuladen.
 
-## Hinzufügen benutzerdefinierter Spalten   {#add-custom-columns}
+## Hinzufügen benutzerdefinierter Spalten {#add-custom-columns}
 
 Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 

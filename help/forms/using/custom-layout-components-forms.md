@@ -1,8 +1,8 @@
 ---
 title: Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare
-seo-title: Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare
+seo-title: Creating custom layout components for adaptive forms
 description: Verfahren zum Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare.
-seo-description: Verfahren zum Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare.
+seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: 09a0cacc-d693-46dc-90a3-254d1878a68a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,34 +11,34 @@ discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 exl-id: ea21b47f-25fc-48cb-a5dc-d0433146b40d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 63%
+source-wordcount: '269'
+ht-degree: 61%
 
 ---
 
-# Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare  {#creating-custom-layout-components-for-adaptive-forms}
+# Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare {#creating-custom-layout-components-for-adaptive-forms}
 
 ## Voraussetzung {#prerequisite}
 
 Wissen bezüglich Layouts, das für das Erstellen/Verwenden benutzerdefinierter Layouts nötig ist. Siehe [Ändern des Bedienfeldlayouts](/help/forms/using/layout-capabilities-adaptive-forms.md).
 
-## Komponente für das Bedienfeldlayout für adaptiven Formulare  {#adaptive-form-panel-layout-component}
+## Komponente für das Bedienfeldlayout für adaptiven Formulare {#adaptive-form-panel-layout-component}
 
 Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteuert, wie die Komponenten des adaptiven Formulars in einem Bedienfeld im Verhältnis zur Benutzeroberfläche angelegt werden.
 
-## Erstellen eines benutzerdefinierten Bedienfeldlayouts  {#creating-a-custom-panel-layout}
+## Erstellen eines benutzerdefinierten Bedienfeldlayouts {#creating-a-custom-panel-layout}
 
-1. Navigieren Sie zum Speicherort `/crx/de`.
-1. Kopieren Sie ein Bedienfeldlayout von der Position `/libs/fd/af/layouts/panel` (z. B. `tabbedPanelLayout`) nach `/apps` (z. B. `/apps/af-custom-layout`).
-1. Benennen Sie das kopierte Layout in `customPanelLayout` um. Ändern Sie die Eigenschaften der Knoten `qtip` und `jcr:description`. Ändern Sie sie beispielsweise in `Custom layout - Toggle tabs`.
+1. Navigieren zum Speicherort `/crx/de`.
+1. Kopieren eines Bedienfeldlayouts von der Position aus `/libs/fd/af/layouts/panel` (z. B. `tabbedPanelLayout`) zu `/apps` (z. B. `/apps/af-custom-layout`).
+1. Umbenennen des Layouts, in das Sie kopiert haben `customPanelLayout`. Ändern der Eigenschaften der Knoten `qtip` und `jcr:description`. Ändern Sie sie beispielsweise in `Custom layout - Toggle tabs`.
 
 ![Abbildung des benutzerdefinierten Bedienfeldlayouts CRX DE](assets/custom.png)
 
 >[!NOTE]
 >
->Durch Festlegen der Eigenschaft `guideComponentType`auf den Wert `fd/af/layouts/panel` wird bestimmt, dass das Layout ein Bedienfeldlayout ist.
+>Festlegen der Eigenschaft `guideComponentType`zum Wert `fd/af/layouts/panel` bestimmt, dass das Layout ein Bedienfeldlayout ist.
 
-1. Benennen Sie die Datei `tabbedPanelLayout.jsp` unter dem neuen Layout in customPanelLayout.jsp um.
+1. Datei umbenennen `tabbedPanelLayout.jsp` unter dem neuen Layout auf customPanelLayout.jsp.
 1. Um neue Stile und Verhaltensweisen einzuführen, erstellen Sie eine Client-Bibliothek unter dem Knoten `etc`. Erstellen Sie z. B. im Verzeichnis /etc/af-custom-layout-clientlib den Knoten client-library. Weisen Sie dem Knoten die Kategorieneigenschaft af.panel.custom zu. Sie verfügt über folgende .css- und .js-Dateien:
 
    ```css
@@ -111,9 +111,9 @@ Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteu
    });
    ```
 
-1. Um das Erscheinungsbild und das Verhalten zu verbessern, können Sie einen `client library` einfügen.
+1. Um das Erscheinungsbild und Verhalten zu verbessern, können Sie eine `client library`.
 
-   Aktualisieren Sie außerdem die Pfade der in .jsp-Dateien eingeschlossenen Skripts. Aktualisieren Sie beispielsweise die Datei `customPanelLayout.jsp` wie folgt:
+   Aktualisieren Sie außerdem die Pfade der in .jsp-Dateien eingeschlossenen Skripts. Aktualisieren Sie beispielsweise die `customPanelLayout.jsp` Datei wie folgt:
 
    ```
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -142,7 +142,7 @@ Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteu
    </div>
    ```
 
-   Die Datei `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` :
+   Die `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` Datei:
 
    ```
    <%-- jsp governing the navigation part --%>
@@ -171,7 +171,7 @@ Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteu
    </ul>
    ```
 
-   Die aktualisierte `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
+   Die aktualisierten `/apps/af-custom-layout/customPanelLayout/panelContainer.jsp`:
 
    ```
    <%-- jsp governing the panel content --%>
@@ -200,7 +200,7 @@ Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteu
 
 1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus. Das Bedienfeldlayout, das Sie definiert haben, wird der Liste zur Konfiguration der Bereichslayouts hinzugefügt.
 
-   ![Das benutzerdefinierte Bedienfeldlayout wird im Bedienfeldlayout ](assets/auth-layt.png) ![listScreenshot des adaptiven Formulars angezeigt. Dabei wird das benutzerdefinierte Bedienfeldlayout verwendet. Screenshot zeigt den Umschalter ](assets/s1.png) ![des benutzerdefinierten Layouts](assets/s2.png)
+   ![Das benutzerdefinierte Bedienfeldlayout wird in der Liste mit dem Bedienfeldlayout angezeigt](assets/auth-layt.png) ![Screenshot des adaptiven Formulars mit benutzerdefiniertem Bedienfeldlayout](assets/s1.png) ![Screenshot mit der Umschaltfunktion des benutzerdefinierten Layouts](assets/s2.png)
 
 Beispiel-ZIP-Datei für ein benutzerdefiniertes Bedienfeldlayout und ein adaptives Formular, das dieses verwendet.
 

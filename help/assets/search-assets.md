@@ -35,7 +35,7 @@ Sie können eine Suche basierend auf folgenden Optionen (Prädikaten) durchführ
 
 Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](search-facets.md) hinzufügen/entfernen. Führen Sie folgende Schritte aus, um das Bedienfeld „Filter“ anzuzeigen:
 
-1. Tippen/klicken Sie in der Assets-Benutzeroberfläche in der Symbolleiste auf ![search_icon](assets/search_icon.png) , um das Omnisearch-Feld anzuzeigen.
+1. Tippen/klicken Sie in der Assets-Benutzeroberfläche auf ![search_icon](assets/search_icon.png) aus der Symbolleiste, um das OmniSearch-Feld anzuzeigen.
 1. Geben Sie Ihren Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie einfach die Eingabetaste drücken, ohne einen Suchbegriff einzugeben. Geben Sie keine vorangestellten Leerzeichen ein, da die Suche sonst nicht funktioniert.
 
 1. Tippen/klicken Sie auf das GlobalNav-Symbol. Das Bedienfeld „Filter“ wird angezeigt.

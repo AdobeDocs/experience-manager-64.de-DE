@@ -1,8 +1,8 @@
 ---
 title: Anpassung der Willkommens-Konsole (klassische Benutzeroberfläche)
-seo-title: Anpassung der Willkommens-Konsole (klassische Benutzeroberfläche)
+seo-title: Customizing the Welcome Console (Classic UI)
 description: Die Willkommens-Konsole bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM
-seo-description: Die Willkommens-Konsole bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM
+seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 11b791f6-b14f-4f50-a64a-27a9501adeb7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 79%
+source-wordcount: '464'
+ht-degree: 78%
 
 ---
 
@@ -34,7 +34,7 @@ Sie können die sichtbaren Links konfigurieren. Sie können diese Konfiguration 
 * [Hauptkonsolen](#links-in-main-console-left-pane) – Links in der Hauptkonsole (linker Bereich)
 * [Ressourcen, Dokumentation und Verweis, Eigenschaften](#links-in-sidebar-right-pane) – Links in der Seitenleiste (rechter Bereich)
 
-## Links in der Hauptkonsole (linker Bereich)  {#links-in-main-console-left-pane}
+## Links in der Hauptkonsole (linker Bereich) {#links-in-main-console-left-pane}
 
 Dies sind die Hauptkonsolen von AEM.
 
@@ -62,13 +62,13 @@ Berechtigungen auf Knotenebene legen fest, ob der Link sichtbar ist. Die betreff
 
 Beispiel:
 
-* Um den Zugriff auf **Tools** zu beschränken, entfernen Sie den Lesezugriff von
+* So beschränken Sie den Zugriff auf **Instrumente**, den Lesezugriff aus
 
    `/libs/wcm/core/content/misc`
 
 Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Sie weitere Informationen zum Festlegen der gewünschten Berechtigungen.
 
-### Links in der Seitenleiste (rechter Bereich)  {#links-in-sidebar-right-pane}
+### Links in der Seitenleiste (rechter Bereich) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
@@ -177,21 +177,21 @@ Sie können einen Link für bestimmte Benutzer oder Gruppen ausblenden, indem Si
 
 Beispiel:
 
-* Um den Link zu **Berichten** zu entfernen, entfernen Sie den Lesezugriff von
+* So entfernen Sie den Link zu **Berichte**, den Lesezugriff aus
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* Um den Link zu **Packages** zu entfernen, entfernen Sie den Lesezugriff von
+* So entfernen Sie den Link zu **Pakete**, den Lesezugriff aus
 
    `/libs/cq/core/content/welcome/features/packages`
 
 Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Sie weitere Informationen zum Festlegen der gewünschten Berechtigungen.
 
-### Link-Auswahlmechanismus  {#link-selection-mechanism}
+### Link-Auswahlmechanismus {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` wird [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html) verwendet, was eine Abfrage für Knoten mit der Eigenschaft ausführt:
+In `/libs/cq/core/components/welcome/welcome.jsp` Verwendung von [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), wodurch eine Abfrage für Knoten mit der Eigenschaft ausgeführt wird:
 
-* `jcr:mixinTypes` durch den Wert:  `cq:Console`
+* `jcr:mixinTypes` durch den Wert: `cq:Console`
 
 >[!NOTE]
 >
@@ -202,13 +202,12 @@ In `/libs/cq/core/components/welcome/welcome.jsp` wird [ConsoleUtil](https://hel
 >
 
 
-
 Wenn ein Benutzer oder eine Gruppe keine Leseberechtigungen für einen Knoten mit dem Mixin `cq:Console` hat, wird dieser Knoten nicht mit der `ConsoleUtil`-Suche abgerufen und wird daher nicht in der Konsole aufgeführt.
 
 ### Hinzufügen eines benutzerdefinierten Elements {#adding-a-custom-item}
 
 Mit dem [Link-Auswahlmechanismus](#link-selection-mechanism) können Sie Ihr selbst definiertes Element zur Linkliste hinzufügen.
 
-Fügen Sie Ihr benutzerdefiniertes Element zur Liste hinzu, indem Sie das Mixin `cq:Console` zu Ihrem Widget oder Ihrer Ressource hinzufügen. Definieren Sie dazu die Eigenschaft:
+Fügen Sie Ihr benutzerdefiniertes Element zur Liste hinzu, indem Sie die `cq:Console` Mixin mit Ihrem Widget oder Ihrer Ressource. Definieren Sie dazu die Eigenschaft:
 
-* `jcr:mixinTypes` durch den Wert:  `cq:Console`
+* `jcr:mixinTypes` durch den Wert: `cq:Console`

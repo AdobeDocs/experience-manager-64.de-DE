@@ -1,8 +1,8 @@
 ---
 title: '"Datenbank DB2: Einen Prozess wöchentlich ausführen"'
-seo-title: '"Datenbank DB2: Einen Prozess wöchentlich ausführen"'
+seo-title: 'DB2 database: Running a process weekly'
 description: Erfahren Sie, wie Sie die Leistung Ihrer AEM Forms DB2-Datenbank verbessern können.
-seo-description: Erfahren Sie, wie Sie die Leistung Ihrer AEM Forms DB2-Datenbank verbessern können.
+seo-description: See how you can improve the performance of your AEM forms DB2 database.
 uuid: 36070087-c250-41df-a841-aa922e777697
 contentOwner: admin
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: fc0e8183-5d50-4fc0-997a-5f3168ba0d70
 exl-id: f40fcfab-63e0-4e43-aac5-95426e3dd1fb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '145'
 ht-degree: 100%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: Erstellen der Komponenten
-seo-title: Erstellen der Komponenten
+seo-title: Create the Components
 description: Erstellen der Komponente Kommentare
-seo-description: Erstellen der Komponente Kommentare
+seo-description: Create the Comments component
 uuid: ea6e00d4-1db7-40ef-ae49-9ec55df58adf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 exl-id: 48809969-5d14-41bb-bc6d-5857e679ceba
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 7%
+source-wordcount: '621'
+ht-degree: 11%
 
 ---
 
@@ -34,87 +34,87 @@ Beide Komponenten müssen eingerichtet werden, insbesondere wenn das Erscheinung
 
 ## Erstellen der Kommentarkomponente {#create-the-comments-component}
 
-In diesen Anweisungen wird ein anderer **Group**-Wert als `.hidden` angegeben, sodass die Komponente über den Komponenten-Browser (Sidekick) verfügbar gemacht werden kann.
+Diese Anweisungen geben eine **Gruppe** Wert, der `.hidden` sodass die Komponente über den Komponenten-Browser (Sidekick) verfügbar gemacht werden kann.
 
 Das Löschen der automatisch erstellten JSP-Datei erfolgt dadurch, dass stattdessen die standardmäßige HBS-Datei verwendet wird.
 
-1. Navigieren Sie zu **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)).
+1. Navigieren Sie zu **CRXDE|Lite** ([http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp))
 
 1. Erstellen Sie einen Speicherort für benutzerdefinierte Anwendungen:
 
-   * Wählen Sie den Knoten `/apps` aus.
+   * Wählen Sie die `/apps` Knoten
 
-      * **Erstellen von** Ordnern mit  **[!UICONTROL benutzerdefiniertem Namen]**
-   * Wählen Sie den Knoten `/apps/custom` aus.
+      * **Ordner erstellen** benannt **[!UICONTROL custom]**
+   * Wählen Sie die `/apps/custom` Knoten
 
-      * **Erstellen** von ordnerspezifischen  **[!UICONTROL Komponenten]**
+      * **Ordner erstellen** benannt **[!UICONTROL Komponenten]**
 
 
-1. Wählen Sie den Knoten `/apps/custom/components` aus.
+1. Wählen Sie die `/apps/custom/components` Knoten
 
    * **[!UICONTROL Erstellen > Komponente..]**
 
-      * **Titel**:  *Kommentare*
-      * **Titel**:  *Alt-Kommentare*
-      * **Beschreibung**:  *Alternativer Kommentar-Stil*
-      * **Supertyp**:  *social/commons/components/hbs/comments*
-      * **Gruppe**:  *Benutzerdefiniert*
+      * **Titel**: *Kommentare*
+      * **Titel**: *Alt-Kommentare*
+      * **Beschreibung**: *Alternativer Kommentar-Stil*
+      * **Supertyp**: *social/commons/components/hbs/comments*
+      * **Gruppe**: *Benutzerdefiniert*
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Wählen Sie **[!UICONTROL OK]** aus
+   * Klicken Sie auf **[!UICONTROL OK]**
 
 
 1. Erweitern Sie den soeben erstellten Knoten: `/apps/custom/components/comments`
-1. Wählen Sie **[!UICONTROL Alle speichern]**
+1. Wählen Sie **[!UICONTROL Alle speichern]** aus
 1. Klicken Sie mit der rechten Maustaste `comments.jsp`
 1. Wählen Sie **[!UICONTROL Löschen]** aus
-1. Wählen Sie **[!UICONTROL Alle speichern]**
+1. Wählen Sie **[!UICONTROL Alle speichern]** aus
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
-### Erstellen der untergeordneten Kommentarkomponente {#create-the-child-comment-component}
+### Erstellen der Komponente für untergeordnete Kommentare {#create-the-child-comment-component}
 
-In diesen Anweisungen wird **Gruppe** auf `.hidden` gesetzt, da nur die übergeordnete Komponente in eine Seite eingefügt werden sollte.
+Diese Anweisungen **Gruppe** nach `.hidden` da nur die übergeordnete Komponente in eine Seite einbezogen werden sollte.
 
 Das Löschen der automatisch erstellten JSP-Datei erfolgt dadurch, dass stattdessen die standardmäßige HBS-Datei verwendet wird.
 
-1. Navigieren Sie zum Knoten `/apps/custom/components/comments` .
+1. Navigieren Sie zum `/apps/custom/components/comments` Knoten
 1. Rechtsklick auf den Knoten
 
-   * Wählen Sie **[!UICONTROL Erstellen > Komponente...]**
+   * Auswählen **[!UICONTROL Erstellen > Komponente..]**
 
-      * **Titel**:  *comment*
-      * **Titel**:  *Alt-Kommentar*
-      * **Beschreibung**:  *Alternativer Kommentarstil*
-      * **Supertyp**:  *social/commons/components/hbs/comments/comment*
+      * **Titel**: *comment*
+      * **Titel**: *Alt-Kommentar*
+      * **Beschreibung**: *Alternativer Kommentarstil*
+      * **Supertyp**: *social/commons/components/hbs/comments/comment*
       * **Gruppe**: `*.hidden*`
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Wählen Sie **[!UICONTROL OK]** aus
+   * Klicken Sie auf **[!UICONTROL OK]**
 
 
 1. Erweitern Sie den soeben erstellten Knoten: `/apps/custom/components/comments/comment`
-1. Wählen Sie **[!UICONTROL Alle speichern]**
+1. Wählen Sie **[!UICONTROL Alle speichern]** aus
 1. Klicken Sie mit der rechten Maustaste `comment.jsp`
 1. Wählen Sie **[!UICONTROL Löschen]** aus
-1. Wählen Sie **[!UICONTROL Alle speichern]**
+1. Wählen Sie **[!UICONTROL Alle speichern]** aus
 
 ![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png)
 
 ### Kopieren und Ändern der standardmäßigen HBS-Skripte {#copy-and-modify-the-default-hbs-scripts}
 
-Verwenden von [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Kopieren `comments.hbs`
 
    * Von [/libs/social/commons/components/hbs/comments](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments)
-   * Nach [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
+   * nach [/apps/custom/components/comments](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments)
 
-* Bearbeiten Sie `comments.hbs`, bis:
+* Bearbeiten `comments.hbs` an:
 
-   * Ändern Sie den Wert des Attributs `data-scf-component` (~line 20):
+   * Ändern Sie den Wert der `data-scf-component` Attribut (~line 20):
 
       * Von `social/commons/components/hbs/comments`
       * An `/apps/custom/components/comments`
@@ -127,53 +127,53 @@ Verwenden von [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lit
 * Kopieren `comment.hbs`
 
    * Von [/libs/social/commons/components/hbs/comments/comment](http://localhost:4502/crx/de/index.jsp#/libs/social/commons/components/hbs/comments/comment)
-   * Nach [/apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
+   * nach [/apps/custom/components/comments/comment](http://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment)
 
-* Bearbeiten Sie `comment.hbs`, bis:
+* Bearbeiten `comment.hbs` an:
 
    * Ändern Sie den Wert des data-scf-component -Attributs (~ Zeile 19)
 
       * Von `social/commons/components/hbs/comments/comment`
       * An `/apps/custom/components/comments/comment`
 
-* Knoten `/apps/custom` auswählen
-* Wählen Sie **[!UICONTROL Alle speichern]**
+* Auswählen `/apps/custom` Knoten
+* Wählen Sie **[!UICONTROL Alle speichern]** aus
 
 ## Erstellen eines Client-Bibliotheksordners {#create-a-client-library-folder}
 
-Um zu vermeiden, dass diese Client-Bibliothek explizit einbezogen werden muss, könnte der Kategoriewert für die clientlib des Standard-Kommentarsystems verwendet werden ( `cq.social.author.hbs.comments`), aber dann würde diese clientlib auch für alle Instanzen der Standardkomponente enthalten sein.
+Um zu vermeiden, dass diese Client-Bibliothek explizit einbezogen werden muss, kann der Kategoriewert für die clientlib des Standard-Kommentarsystems verwendet werden ( `cq.social.author.hbs.comments`), aber dann würde diese clientlib auch für alle Instanzen der Standardkomponente einbezogen.
 
-Verwenden von [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
+Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* Knoten `/apps/custom/components/comments` auswählen
-* Wählen Sie **[!UICONTROL Knoten erstellen]**
+* Auswählen `/apps/custom/components/comments` Knoten
+* Auswählen **[!UICONTROL Knoten erstellen]**
 
    * **Name**: `clientlibs`
    * **Typ**: `cq:ClientLibraryFolder`
-   * Fügen Sie der Registerkarte **[!UICONTROL Eigenschaften]** hinzu:
+   * Hinzufügen zu **[!UICONTROL Eigenschaften]** tab:
 
-      * **** `categories` **** `String` **NameTypeValue** `cq.social.author.hbs.comments` `Multi`
-      * **** `dependencies` **** `String` **NameTypeValue** `cq.social.scf` `Multi`
+      * **Name** `categories` **Typ** `String` **Wert** `cq.social.author.hbs.comments` `Multi`
+      * **Name** `dependencies` **Typ** `String` **Wert** `cq.social.scf` `Multi`
 
-* Wählen Sie **[!UICONTROL Alle speichern]**
-* Erstellen Sie mit dem ausgewählten Knoten `/apps/custom/components/comments/clientlib`s drei Dateien:
+* Wählen Sie **[!UICONTROL Alle speichern]** aus
+* Mit `/apps/custom/components/comments/clientlib`Erstellen Sie als ausgewählten Knoten 3 Dateien:
 
-   * **Name**:  `css.txt`
-   * **Name**:  `js.txt`
+   * **Name**: `css.txt`
+   * **Name**: `js.txt`
    * **Name**: customkommentssystem.js
 
-* Geben Sie &quot;customkommentssystem.js&quot;als Inhalt von `js.txt` ein.
-* Wählen Sie **[!UICONTROL Alle speichern]**
+* Geben Sie &quot;customommentssystem.js&quot;als Inhalt von ein. `js.txt`
+* Wählen Sie **[!UICONTROL Alle speichern]** aus
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
-## Registrieren Sie das SCF-Modell und zeigen Sie {#register-the-scf-model-view}
+## Registrieren des SCF-Modells und Anzeigen {#register-the-scf-model-view}
 
-Beim Erweitern (Überschreiben) einer SCF-Komponente ist der resourceType anders (das Überlagern nutzt den relativen Suchmechanismus, der `/apps` vor `/libs` durchsucht, sodass der resourceType gleich bleibt). Daher ist es erforderlich, JavaScript (in der Client-Bibliothek) zu schreiben, um das SCF-JS-Modell zu registrieren und für den benutzerdefinierten resourceType anzuzeigen.
+Beim Erweitern (Überschreiben) einer SCF-Komponente ist resourceType anders (Überlagern nutzt den relativen Suchmechanismus, der durchsucht wird) `/apps` before `/libs` sodass der resourceType gleich bleibt). Daher ist es erforderlich, JavaScript (in der Client-Bibliothek) zu schreiben, um das SCF-JS-Modell zu registrieren und für den benutzerdefinierten resourceType anzuzeigen.
 
-Geben Sie folgenden Text als Inhalt von `customcommentsystem.js` ein:
+Geben Sie folgenden Text als Inhalt von ein `customcommentsystem.js`:
 
-### customommentssystem.js {#customcommentsystem-js}
+### customcommentsystem.js {#customcommentsystem-js}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -191,9 +191,9 @@ Geben Sie folgenden Text als Inhalt von `customcommentsystem.js` ein:
 })($CQ, _, Backbone, SCF);
 ```
 
-* Wählen Sie **[!UICONTROL Alle speichern]**
+* Wählen Sie **[!UICONTROL Alle speichern]** aus
 
-## Veröffentlichen der App {#publish-the-app}
+## App veröffentlichen {#publish-the-app}
 
 Um die erweiterte Komponente in der Veröffentlichungsumgebung zu erleben, muss die benutzerdefinierte Komponente repliziert werden.
 
@@ -201,8 +201,8 @@ Eine Möglichkeit ist, dies zu tun
 
 * Aus globaler Navigation
 
-   * Wählen Sie **[!UICONTROL Tools > Bereitstellung > Replikation]** aus.
+   * Auswählen **[!UICONTROL Tools > Bereitstellung > Replikation]**
    * Wählen Sie nun eine der folgenden Optionen aus `Activate Tree`
-   * Legen Sie `Start Path` fest: nach `/apps/custom`
-   * Deaktivieren Sie `Only Modified`
-   * Schaltfläche `Activate`auswählen
+   * Satz `Start Path`: nach `/apps/custom`
+   * Deaktivieren `Only Modified`
+   * Auswählen `Activate`button

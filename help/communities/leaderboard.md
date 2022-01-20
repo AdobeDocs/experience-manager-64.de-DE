@@ -1,8 +1,8 @@
 ---
 title: Leaderboard-Grundlagen
-seo-title: Leaderboard-Grundlagen
+seo-title: Leaderboard Essentials
 description: Übersicht über Leaderboard-Funktionen
-seo-description: Übersicht über Leaderboard-Funktionen
+seo-description: Leaderboard feature overview
 uuid: 815a6928-b147-496d-9751-13159ad1304d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 exl-id: 20c16e96-2ba8-4f2d-8cfa-8cd804e3441f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '95'
 ht-degree: 8%
 
 ---
@@ -21,9 +21,9 @@ ht-degree: 8%
 
 Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Leaderboard-Funktion.
 
-Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Communities-Scoring und -Badges](implementing-scoring.md) konfigurieren. Siehe auch [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
+Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Communities-Scoring und -Abzeichen](implementing-scoring.md). Siehe auch [Grundlagen zu Scoring und Abzeichen](configure-scoring.md).
 
-## Grundlagen für Client-seitige {#essentials-for-client-side}
+## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -58,4 +58,4 @@ Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Com
 
 ### Dateibibliotheksfunktion {#file-library-function}
 
-Eine Community-Site-Struktur, die die [Leaderboard-Funktion](functions.md#leaderboard-function) enthält, enthält eine konfigurierte `leaderboard`-Komponente.
+Eine Community-Site-Struktur mit [Leaderboard-Funktion](functions.md#leaderboard-function)enthält eine konfigurierte `leaderboard` -Komponente.

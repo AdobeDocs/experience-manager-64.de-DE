@@ -1,18 +1,18 @@
 ---
 title: '"Correspondence Management: Fehlerbehebung"'
-seo-title: Correspondence Management - Fehlerbehebung
+seo-title: Correspondence Management Troubleshooting
 description: Correspondence Management - Fehlerbehebung
-seo-description: Correspondence Management - Fehlerbehebung
+seo-description: Correspondence Management Troubleshooting
 uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: 82a35d81-13d0-435f-875e-6fd0a6d574d5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '199'
 ht-degree: 90%
 
 ---
@@ -49,8 +49,8 @@ Bei der Vorschau eines Briefs wird, selbst wenn ein zuvor unveröffentlichtes Te
 
 Setzen Sie den Brief-Cache für die Veröffentlichungs-Instanz zurück, indem Sie folgende Schritten durchführen. Versuchen Sie dann erneut den Brief anzuzeigen:
 
-1. Gehen Sie zu **`https://[server]:[port]/[contextPath]/system/console/configMgr`** und melden Sie sich als Administrator an.
-1. Wählen Sie **Correspondence Management-Konfigurationen** aus.
+1. Navigieren Sie zu **`https://[server]:[port]/[contextPath]/system/console/configMgr`** und melden Sie sich als Administrator an.
+1. Auswählen **Correspondence Management-Konfigurationen**.
 1. Deaktivieren Sie in **Correspondence Management-Konfigurationen** die Option **Briefcache aktivieren** und klicken Sie auf **Speichern.**
-1. Aktivieren Sie **Enable Letter Cache** und klicken Sie dann auf **Save**.
+1. Aktivieren **Briefcache aktivieren** und klicken Sie anschließend auf **Speichern**.
 1. Versuchen sie noch einmal, den Brief anzuzeigen.

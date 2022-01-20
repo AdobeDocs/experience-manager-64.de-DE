@@ -1,18 +1,18 @@
 ---
 title: Stilkonstrukte für adaptive Formulare
-seo-title: Stilkonstrukte für adaptive Formulare
+seo-title: Styling constructs for adaptive forms
 description: Verwenden Sie LESS-Framework, um das Erscheinungsbild der adaptiven Formulare anzupassen.
-seo-description: Verwenden Sie LESS-Framework, um das Erscheinungsbild der adaptiven Formulare anzupassen.
+seo-description: Use LESS framework to customize appearance of adaptive forms.
 uuid: 45590fd5-6438-4bb3-8ef8-f0b8f9da3ae9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 8d7d4a7a-8899-4ad5-9ca8-b961f3f15528
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2186'
-ht-degree: 90%
+source-wordcount: '2170'
+ht-degree: 96%
 
 ---
 
@@ -20,22 +20,22 @@ ht-degree: 90%
 
 ## Voraussetzungen {#prerequisites}
 
-Kenntnisse im Umgang mit CSS und von LESS-Framework.
+Kenntnisse im Umgang mit CSS und dem LESS-Framework.
 
-## Was angepasst werden kann  {#what-can-be-customized}
+## Was angepasst werden kann {#what-can-be-customized}
 
-Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu gestalten. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, gehen über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder früher) nur dann zu erstellen, wenn Sie mit dem [Design- Editor ](themes.md)keine Komponenten formatieren können.
+Der Artikel listet öffentlich verfügbare CSS-Klassen von adaptiven Formularen. Sie können diese Klassen nutzen, um verschiedene Komponenten eines adaptiven Formulars zu gestalten. Der Stil von Authoring-Komponenten, wie Dialogfelder und Statusleisten, die Warnungen anzeigen, gehen über den Rahmen dieses Artikels hinaus. Verwenden Sie diese Stilkonstrukte, um Stile (mit CSS oder LESS) nur dann zu erstellen, wenn Sie mit dem [Designeditor](themes.md) keine Komponenten formatieren können.
 
 ## Anpassen von Stilen in adaptiven Formularen {#customizing-styles-in-adaptive-forms}
 
-Das LESS-Framework vereinfacht das Anwendungsbeispiel, um Stile in adaptiven Formularen anzupassen. Mit dem Framework können Sie Stile mit einem Set von Variablen und Funktionen (mixins) definieren. Mit dem LESS-Framework können Sie die Größe des enthaltenen Codes reduzieren und dessen Wiederverwendbarkeit verbessern.
+Das LESS-Framework vereinfacht das Anwendungsbeispiel, um Stile in adaptiven Formularen anzupassen. Mit dem Framework können Sie Stile mit einem Satz von Variablen und Funktionen (Mixins) definieren. Mit dem LESS-Framework können Sie die Größe des enthaltenen Codes reduzieren und dessen Wiederverwendbarkeit verbessern.
 
 Sie können adaptive Formularstile wie folgt anpassen:
 
 * Design ändern
-* Ändern Sie den Stil der Komponente
+* Stil der Komponente ändern
 
-## Designänderung  {#changing-theme}
+## Design ändern {#changing-theme}
 
 Sie können das Design eines adaptiven Formulars ändern, um sicherzustellen, dass sein Erscheinungsbild mit den Webseiten konsistent ist, auf denen das adaptive Formular eingebettet ist.
 
@@ -47,25 +47,25 @@ Basierend auf dem Bootstrap, definiert der folgende Satz von CSS-Eigenschaften d
 * Rahmen (Typ, Farbe, Stärke)
 * Schriftfarbe
 * Erweiterte Umrandung
-* Marge
+* Rand
 * Schriftgrad
-* LineHeight
+* Zeilenhöhe
 
 Derzeit sind LESS-Variablen nur für diese Eigenschaften der verschiedenen Elemente in einem adaptiven Formular definiert.
 
-## Änderung des Komponentenstils  {#changing-component-style}
+## Änderung des Komponentenstils {#changing-component-style}
 
-Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien, um die in diesem Artikel aufgelisteten Stilkonstrukte einzuschließen.
+Sie können Änderungen an Aussehen, Layout, Positionierung und Sichtbarkeit von Elementen vornehmen. Erstellen oder aktualisieren Sie dazu Ihre benutzerdefinierten CSS-Dateien und beziehen sie dabei die in diesem Artikel aufgeführten Designkonstrukte ein.
 
 Um ein Design auf ein adaptives Formular anzuwenden, öffnen Sie das adaptive Formular zum Bearbeiten, öffnen Sie den Container mit den Eigenschaften des adaptiven Formulars und geben Sie im Basisregister den Pfad der benutzerdefinierten CSS-Datei ein. Standard-Designkonstrukte des adaptiven Formulars und mit den in der benutzerdefinierten CSS-Datei aufgeführten Konstrukten überschriebene Konstrukte.
 
-## Komponenten  {#components}
+## Komponenten {#components}
 
 Komponenten, die in diesem Artikel behandelt werden, verfügen über vordefinierte CSS-Klassen. Sie können die Variablen bearbeiten, um die Stile in den CSS-Klassen zu ändern. Alternativ dazu können Sie die gesamte Klasse neu definieren. In diesem Abschnitt werden die Klassen in den Komponenten und Stile, die Sie mithilfe von Variablen ändern können, beschrieben.
 
-## Container-Stile {#container-styling}
+## Containerstile {#container-styling}
 
-Ein Container ist die Komponente der obersten Ebene. Andere Bedienfelder und Felder befinden sich unter der Container-Komponente.
+Ein Container ist die Komponente der obersten Ebene. Andere Bedienfelder und Felder befinden sich unterhalb der Containerkomponente.
 
 <table> 
  <tbody> 
@@ -88,7 +88,7 @@ Ein Container ist die Komponente der obersten Ebene. Andere Bedienfelder und Fel
   </tr> 
   <tr> 
    <td><p><code>container-padding</code></p> </td> 
-   <td><p>Füllbereich für den Containers</p> </td> 
+   <td><p>Auffüllung für den Container</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>container-margin</code></p> </td> 
@@ -103,9 +103,9 @@ Ein Container ist die Komponente der obersten Ebene. Andere Bedienfelder und Fel
 
 ## Feldstile {#field-styling}
 
-Adaptive Formulare enthalten verschiedene Arten von Feldern. Jedes Feld verfügt über einen eindeutigen Klassennamen, der der Name des Feldes ist. Das Feld hat auch einen gemeinsamen Klassennamen `guideFieldNode`.
+Adaptive Formulare enthalten verschiedene Arten von Feldern. Jedes Feld verfügt über einen eindeutigen Klassennamen, der der Name des Feldes ist. Das Feld enthält außerdem den gemeinsamen Klassennamen `guideFieldNode`.
 
-Felder enthalten Beschriftungen, Widgets, Hilfebeschreibung (lange und kurze Beschreibungen) und Feldhilfesymbole (Fragezeichen).
+Felder enthalten Bezeichnungen, Widgets, Hilfebeschreibung (lange und kurze) sowie Feldhilfesymbole (Fragezeichen).
 
 <table> 
  <tbody> 
@@ -139,7 +139,7 @@ Felder enthalten Beschriftungen, Widgets, Hilfebeschreibung (lange und kurze Bes
 
 ## Beschriftungsstile {#label-styling}
 
-Das für das Feld verwendete HTML-Element **label** enthält die Klassen **left** oder **top**, je nachdem, ob sich die Beschriftung oben oder links befindet.
+Das HTML-Element **Bezeichnung**, das für das Feld verwendet wird, enthält die Klassen **links** oder **oben**, je nachdem, ob die Beschriftung sich oben oder links befindet.
 
 <table> 
  <tbody> 
@@ -158,28 +158,28 @@ Das für das Feld verwendete HTML-Element **label** enthält die Klassen **left*
   </tr> 
   <tr> 
    <td><p><code>label-font-color</code></p> </td> 
-   <td><p>Schriftfarbe für die Feldbeschriftung</p> </td> 
+   <td><p>Schriftfarbe für die Feldbezeichnung</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>label-font-size</code></p> </td> 
-   <td><p>Schriftgröße für die Feldbeschriftung</p> </td> 
+   <td><p>Schriftgröße für die Feldbezeichnung</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>label-line-height</code></p> </td> 
-   <td>CSS-Zeilenhöheneigenschaft für die Feldbeschriftung </td> 
+   <td>CSS-Zeilenhöheneigenschaft für die Feldbezeichnung </td> 
   </tr> 
   <tr> 
    <td><p><code>label-font-weight</code></p> </td> 
-   <td>CSS-Schriftbreiteneigenschaft für die Feldbeschriftung </td> 
+   <td>CSS-Schriftbreiteneigenschaft für die Feldbezeichnung </td> 
   </tr> 
   <tr> 
    <td><p><code>label-margin</code></p> </td> 
-   <td><p>Rand für die Feldbeschriftung</p> </td> 
+   <td><p>Rand für die Feldbezeichnung</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Die CSS-Regeln für die Beschriftung werden mit der Beschriftung **guideFieldLabel** angewendet. Wenn Sie ein Verfasser sind, überschreiben Sie diese Regel, um Ihre benutzerdefinierten Änderungen vorzunehmen.
+Die CSS-Regeln für die Bezeichnung werden mithilfe der **guideFieldLabel**-Bezeichnung angewendet. Wenn Sie Autor sind, überschreiben Sie diese Regel, um Ihre benutzerdefinierten Änderungen sichtbar zu machen.
 
 ## Widget-Stile {#widgets-styling}
 
@@ -206,7 +206,7 @@ Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die
   </tr> 
   <tr> 
    <td><p><code>widgets-border-color</code></p> </td> 
-   <td><p>Rahmenfarbe für dieses Widget</p> </td> 
+   <td><p>Rahmenfarbe für die Widgets</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-border-thickness</code></p> </td> 
@@ -234,11 +234,11 @@ Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die
   </tr> 
   <tr> 
    <td><p><code>widgets-font-size</code></p> </td> 
-   <td><p>Größe des Textes innerhalb des Widgets</p> </td> 
+   <td><p>Größe des Textes im Widget</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-line-height</code></p> </td> 
-   <td>CSS-Zeilenhöhen-Eigenschaft für das Widget </td> 
+   <td>CSS-Zeilenhöheneigenschaft für das Widget </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-padding</code></p> </td> 
@@ -250,7 +250,7 @@ Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die
   </tr> 
   <tr> 
    <td><p><code>widgets-mandatory-border-color</code></p> </td> 
-   <td><p>Randfarbe des Widgets für die Pflichtfelder</p> </td> 
+   <td><p>Rahmenfarbe des Widgets für die Pflichtfelder</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-mandatory-bg-color</code></p> </td> 
@@ -283,13 +283,13 @@ Je nach Typ enthalten Widgets auch Klassen. Normalerweise beinhalten Widgets die
  </tbody> 
 </table>
 
-### Einschränkungen beim Widget-Stil  {#limitations-in-widget-styling}
+### Einschränkungen beim Widget-Stil {#limitations-in-widget-styling}
 
-Der Stil für fokussierte, deaktivierte und Pflichtfelder ist auf Variablen eingeschränkt. Sie können diese jedoch ändern, indem Sie die Stile überschreiben. Einschränkungen mithilfe von Variablen wird hauptsächlich dazu verwendet, um die Anzahl der Variablen zu kontrollieren. Die Einschränkung kann gelockert werden, wenn sich das Erscheinungsbild eines Felds drastisch ändert, da es sich in einem der zuvor erwähnten Status befindet.
+Der Stil für fokussierte, deaktivierte und Pflichtfelder ist auf Variablen eingeschränkt. Sie können diese jedoch ändern, indem Sie die Stile überschreiben. Einschränkungen mithilfe von Variablen wird hauptsächlich dazu verwendet, um die Anzahl der Variablen zu kontrollieren. Die Einschränkungen können abgeschwächt werden, wenn sich das Erscheinungsbild eines Felds drastisch ändert, da es sich in einem der oben genannten Status befindet.
 
 ## Hilfebeschreibung {#help-description}
 
-Der Verfasser kann den Hilfeinhalt in den Feldern unter Verwendung der kurzen und langen Beschreibung angeben. Beide Komponenten haben eine gemeinsame Klasse `.guideHelpDescription` und eine andere Klasse `.long`/ `.short`, je nach Typ der Beschreibung. Der Hilfeinhalt wird in einem Absatzelement eingeschlossen, um den Stil der Beschreibung zu überschreiben. Die Hilfebeschreibung (lang und kurz) wird mithilfe der Variablen geändert. Angefangen wird mit Widgets-Hilfe, wie in der nachfolgenden Tabelle angegeben:
+Ein Autor kann den Hilfeinhalt in den Feldern unter Verwendung der Komponenten für kurze und lange Beschreibungen angeben. Beide Komponenten haben die gemeinsame Klasse `.guideHelpDescription` und eine weitere Klasse `.long`/`.short`, je nach Typ der Beschreibung. Der Hilfeinhalt wird in einem Absatzelement eingeschlossen, um den Stil der Beschreibung zu überschreiben. Die Hilfebeschreibung (lang und kurz) wird mithilfe der Variablen geändert. Angefangen wird mit Widgets-Hilfe, wie in der nachfolgenden Tabelle angegeben:
 
 <table> 
  <tbody> 
@@ -299,38 +299,38 @@ Der Verfasser kann den Hilfeinhalt in den Feldern unter Verwendung der kurzen un
   </tr> 
   <tr> 
    <td><p><code>widgets-help-long-bg-color</code></p> </td> 
-   <td><p>Hintergrundfarbe der langen Hilfe der Widgets</p> </td> 
+   <td><p>Hintergrundfarbe der langen Widget-Hilfe</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-long-border-color</code></p> </td> 
-   <td><p>Rahmenfarbe der langen Hilfe der Widgets</p> </td> 
+   <td><p>Rahmenfarbe der langen Widget-Hilfe</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-long-border-indicator-color</code></p> </td> 
-   <td><p>Rahmenfarbe für linken Indikator der langen Hilfe der Widgets</p> </td> 
+   <td><p>Rahmenfarbe für linken Indikator der langen Widget-Hilfe</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-bg-color</code></p> </td> 
-   <td><p>Hintergrundfarbe der kurzen Hilfe der Widgets</p> </td> 
+   <td><p>Hintergrundfarbe der kurzen Widget-Hilfe</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-color</code></p> </td> 
-   <td><p>Schriftfarbe der kurzen Hilfe der Widgets</p> </td> 
+   <td><p>Schriftfarbe der kurzen Widget-Hilfe</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-tooltip-bg-color</code></p> </td> 
-   <td><p>Hintergrundfarbe der kurzen QuickInfo des Widgets Hilfe</p> </td> 
+   <td><p>Hintergrundfarbe der kurzen QuickInfo-Hilfe der Widgets</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>widgets-help-short-tooltip-color</code></p> </td> 
-   <td><p>Schriftfarbe der kurzen QuickInfo-Hilfe·der Widgets</p> </td> 
+   <td><p>Schriftfarbe der kurzen QuickInfo-Hilfe der Widgets</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Geschäftsbedingungen  {#terms-and-conditions}
+## Geschäftsbedingungen {#terms-and-conditions}
 
-Mit dem Bedingungs-(TnC`` ``)Widget können Sie Bedingungen angeben. Sie können das Widget mithilfe von Variablen, die in der folgenden Tabelle beschrieben sind, anpassen.
+Mit dem Geschäftsbedingungs-(TnC `` ``)-Widget können Sie Geschäftsbedingungen angeben. Sie können das Widget mithilfe der Variablen anpassen, die in folgender Tabelle beschrieben sind.
 
 <table> 
  <tbody> 
@@ -340,11 +340,11 @@ Mit dem Bedingungs-(TnC`` ``)Widget können Sie Bedingungen angeben. Sie können
   </tr> 
   <tr> 
    <td><code>tnc-unvisited</code></td> 
-   <td>Schriftfarbe des ungeöffneten tnc-Links.</td> 
+   <td>Schriftfarbe des ungeöffneten Geschäftsbedingungs-Links</td> 
   </tr> 
   <tr> 
    <td><code>tnc-visited</code></td> 
-   <td>Schriftfarbe des geöffneten tnc-Links.</td> 
+   <td>Schriftfarbe des geöffneten Geschäftsbedingungs-Links</td> 
   </tr> 
  </tbody> 
 </table>
@@ -354,7 +354,7 @@ Mit dem Bedingungs-(TnC`` ``)Widget können Sie Bedingungen angeben. Sie können
 Schaltflächen sind auch Widgets. Allerdings unterscheidet sich deren Stil von Widgets. In den adaptiven Formularen bildet Folgendes eine Schaltflächen:
 
 * input[type = text]
-* button
+* Schaltfläche
 * Element mit Klasse .button
 
 HTML-Code für Schaltfläche:
@@ -383,7 +383,7 @@ HTML-Code für Schaltfläche:
   </tr> 
   <tr> 
    <td><p><code>iconButton-label</code></p> </td> 
-   <td><p>Stilschaltflächen-Bezeichnung/Beschriftung</p> </td> 
+   <td><p>Bestimmt den Stil der Schaltflächenbezeichnung/-beschriftung</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -404,7 +404,7 @@ HTML-Code für Schaltfläche:
   </tr> 
   <tr> 
    <td><p><code>button-padding</code></p> </td> 
-   <td><p>CSS-Auffüllung für die Schaltfläche</p> </td> 
+   <td><p>CSS-Auffülleigenschaft für die Schaltfläche</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-font-size</code></p> </td> 
@@ -452,15 +452,15 @@ HTML-Code für Schaltfläche:
   </tr> 
   <tr> 
    <td><p><code>button-warning-background-color</code></p> </td> 
-   <td><p>Hintergrundfarbe für Warnungstilschaltflächen (Schaltflächen mit Klasse .buttonwarning)</p> </td> 
+   <td><p>Hintergrundfarbe für Warnungsstilschaltflächen (Schaltflächen mit Klasse .buttonwarning)</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-warning-font-color</code></p> </td> 
-   <td><p>Schriftfarbe für Warnungstilschaltflächen</p> </td> 
+   <td><p>Schriftfarbe für Warnungsstilschaltflächen</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-warning-border-color</code></p> </td> 
-   <td><p>Rahmenfarbe für Warnungstilschaltflächen</p> </td> 
+   <td><p>Rahmenfarbe für Warnungsstilschaltflächen</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-alert-background-color</code></p> </td> 
@@ -468,11 +468,11 @@ HTML-Code für Schaltfläche:
   </tr> 
   <tr> 
    <td><p><code>button-alert-font-color</code></p> </td> 
-   <td><p>Schriftfarbe für Warnschaltflächen) </p> </td> 
+   <td><p>Schriftfarbe für Warnschaltflächen</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>button-alert-border-color</code></p> </td> 
-   <td><p>Rahmenfarbe für Warnschaltflächen) </p> </td> 
+   <td><p>Rahmenfarbe für Warnschaltflächen</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -509,7 +509,7 @@ Für die Widgets wird ein Fragezeichen angezeigt, wenn ein Verfasser eine lange 
 
 ## Tabelle {#table}
 
-Sie können das Farbthema für Kopf- und Textzeilen in einer Tabelle ändern, indem Sie die folgenden Variablen verwenden.
+Sie können das Farbschema für Kopf- und Textzeilen in einer Tabelle ändern, indem Sie folgende Variablen verwenden.
 
 <table> 
  <tbody> 
@@ -523,11 +523,11 @@ Sie können das Farbthema für Kopf- und Textzeilen in einer Tabelle ändern, in
   </tr> 
   <tr> 
    <td><p><code>table-odd-row-bg-color</code></p> </td> 
-   <td><p>Hintergrundfarbe für die ungeraden Textzeile. Der Standardwert ist <code>rgb(255, 255, 255)</code>.</p> </td> 
+   <td><p>Hintergrundfarbe für die ungeraden Textzeilen. Der Standardwert ist <code>rgb(255, 255, 255)</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>table-even-row-bg-color</code></p> </td> 
-   <td><p>Hintergrundfarbe für gerade Textzeile. Der Standardwert ist <code>#eee</code>.</p> </td> 
+   <td><p>Hintergrundfarbe für gerade Textzeilen. Der Standardwert ist <code>#eee</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -569,7 +569,7 @@ Mit dem Dateianhangswidget von adaptiven Formularen können Sie Dateien hochlade
  </tbody> 
 </table>
 
-## Navigatorstile  {#navigator-styles}
+## Navigatorstile {#navigator-styles}
 
 Es gibt vier Arten von Navigatorregisterkarten. Dazu gehören Registerkarten links, oben, im Assistenten und im Akkordeon. Jeder Navigator beinhaltet eine andere Klasse.
 
@@ -640,7 +640,7 @@ Im Folgenden wird der HTML-Code für das Registerkartennavigatorelement gezeigt 
 
 `</div>`
 
-Sie können den Stil des Navigators mithilfe der CSS-Regeln, die die Elemente mithilfe der **untergeordneten** Selektoren auswählen, ändern. Wenn Sie beispielsweise einen textDecoration-Stil im Anker-Tag hinzufügen:
+Sie können den Stil des Navigators mithilfe der CSS-Regeln ändern, anhand derer die Elemente mithilfe der **untergeordneten** Selektoren ausgewählt werden. Wenn Sie beispielsweise einen Textdekorationsstil im Anker-Tag hinzufügen:
 
 Registerkartennavigator oben:
 
@@ -688,7 +688,7 @@ Registerkartennavigator oben:
 
 `}`
 
-Zusätzlich, gibt es Klassen für Stilregisterkartennavigatoren (links und oben), abhängig davon, ob sie verschachtelte/untergeordnete/Unter-Navigatoren haben.
+Zusätzlich gibt es Klassen für Stilregisterkarten-Navigatoren (links und oben), abhängig davon, ob sie verschachtelte/untergeordnete/Unternavigatoren haben.
 
 <table> 
  <tbody> 
@@ -698,16 +698,16 @@ Zusätzlich, gibt es Klassen für Stilregisterkartennavigatoren (links und oben)
   </tr> 
   <tr> 
    <td><p><code>nested_true</code></p> </td> 
-   <td><p>Registerkartennavigatoren (links und oben) mit verschachtelten/untergeordneten/Unter-Navigatoren</p> </td> 
+   <td><p>Registerkartennavigatoren (links und oben) mit verschachtelten/untergeordneten/Unternavigatoren</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>nested_false</code></p> </td> 
-   <td><p>Registerkartennavigatoren (links und oben) mit verschachtelten/untergeordneten/Unter-Navigatoren</p> </td> 
+   <td><p>Registerkartennavigatoren (links und oben) ohne verschachtelte/untergeordnete/Unternavigatoren</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Die guideNavIcon-Klasse bietet ein Standardsymbol für Registerkartennavigatoren (links und oben) und Assistentennavigatoren.
+Die guideNavIcon-Klasse stellt ein Standardsymbol für Registerkartennavigatoren (links und oben) und Assistentennavigatoren bereit.
 
 <table> 
  <tbody> 
@@ -734,7 +734,7 @@ Die guideNavIcon-Klasse bietet ein Standardsymbol für Registerkartennavigatoren
   </tr> 
   <tr> 
    <td><p><code>navigator-bg-color</code></p> </td> 
-   <td><p>Hintergrundfarbe für den gesamten Registerkartenavigator</p> </td> 
+   <td><p>Hintergrundfarbe für den gesamten Registerkartennavigator</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-bg-color</code></p> </td> 
@@ -746,11 +746,11 @@ Die guideNavIcon-Klasse bietet ein Standardsymbol für Registerkartennavigatoren
   </tr> 
   <tr> 
    <td><p><code>tabs-hover-bg-color</code></p> </td> 
-   <td><p>Hintergrundfarbe für die Registerkarte beim Maushover</p> </td> 
+   <td><p>Hintergrundfarbe für die Registerkarte, wenn mit der Maus darauf gezeigt wird</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-hover-font-color</code></p> </td> 
-   <td><p>Schriftfarbe für die Registerkarte beim Maushover</p> </td> 
+   <td><p>Schriftfarbe für die Registerkarte, wenn mit der Maus darauf gezeigt wird</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-active-bg-color</code></p> </td> 
@@ -766,15 +766,15 @@ Die guideNavIcon-Klasse bietet ein Standardsymbol für Registerkartennavigatoren
   </tr> 
   <tr> 
    <td><p><code>tabs-completed-font-color</code></p> </td> 
-   <td><p>Schriftfarbe, wenn der Abschlussausdruck für das Bedienfelds „true“ zurückgibt</p> </td> 
+   <td><p>Schriftfarbe, wenn der Abschlussausdruck des Bedienfelds „true“ zurückgibt</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-stepped-bg-color</code></p> </td> 
-   <td>Hintergrundfarbe, wenn das Bedienfeld einmal im Fokus war, aber der Abschlussausdruck „false“ zurückgibt </td> 
+   <td>Hintergrundfarbe, wenn das Bedienfeld im Fokus war, aber der Abschlussausdruck „false“ zurückgibt </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-stepped-font-color</code></p> </td> 
-   <td>Schriftartfarbe, wenn das Bedienfeld einmal im Fokus war, aber der Abschlussausdruck „false“ zurückgibt </td> 
+   <td>Schriftartfarbe, wenn das Bedienfeld im Fokus war, aber der Abschlussausdruck „false“ zurückgibt </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-border-color</code></p> </td> 
@@ -838,15 +838,15 @@ Die guideNavIcon-Klasse bietet ein Standardsymbol für Registerkartennavigatoren
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-completed-font-color</code></p> </td> 
-   <td><p>Schriftfarbe, wenn der Abschlussausdruck für das Bedienfelds „true“ zurückgibt</p> </td> 
+   <td><p>Schriftfarbe, wenn der Abschlussausdruck des Bedienfelds „true“ zurückgibt</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-bg-color</code></p> </td> 
-   <td>Hintergrundfarbe, wenn das Bedienfeld einmal im Fokus war, aber der Abschlussausdruck „false“ zurückgibt</td> 
+   <td>Hintergrundfarbe, wenn das Bedienfeld im Fokus war, aber der Abschlussausdruck „false“ zurückgibt</td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-stepped-font-color</code></p> </td> 
-   <td><p>Schriftartfarbe, wenn das Bedienfeld einmal im Fokus war, aber der Abschlussausdruck „false“ zurückgibt </p> </td> 
+   <td><p>Schriftartfarbe, wenn das Bedienfeld im Fokus war, aber der Abschlussausdruck „false“ zurückgibt</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-tabs-border-color</code></p> </td> 
@@ -870,11 +870,11 @@ Die guideNavIcon-Klasse bietet ein Standardsymbol für Registerkartennavigatoren
   </tr> 
   <tr> 
    <td><p><code>wizard-progress-bg-color</code></p> </td> 
-   <td><p>Hintergrundfarbe der Statusanzeige des Assistentennavigators</p> </td> 
+   <td><p>Hintergrundfarbe der Statusleiste des Assistentennavigators</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>wizard-progress-color</code></p> </td> 
-   <td><p>Die Füllfarbe für die Statusanzeige</p> </td> 
+   <td><p>Füllfarbe für die Statusleiste</p> </td> 
   </tr> 
   <tr> 
    <td><p><strong>Akkordeonnavigatoren</strong></p> </td> 
@@ -916,7 +916,7 @@ Ein Bedienfeld enthält eine optionale Symbolleiste und entsprechenden Inhalt.
   </tr> 
   <tr> 
    <td><p><code>panel-font-color</code></p> </td> 
-   <td><p>Schriftfarbe für den Bedienfeldtext<br />  </p> </td> 
+   <td><p>Schriftfarbe für den Bedienfeldtext<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p><code>panel-padding</code></p> </td> 
@@ -941,15 +941,15 @@ Ein Bedienfeld enthält eine optionale Symbolleiste und entsprechenden Inhalt.
  </tbody> 
 </table>
 
-Der Bedienfeldknoten wird in Navigatoren und Inhalt unterteilt. Es`` `` gibt keine separate Stilkomponente für den Inhalt. Die beschriebenen Variablen werden auf den Navigator sowie Inhalte angewendet.
+Der Bedienfeldknoten wird in Navigatoren und Inhalt unterteilt. Es `` `` gibt keine separate Stilkomponente für den Inhalt. Die beschriebenen Variablen werden auf den Navigator sowie Inhalte angewendet.
 
 &amp;ast;Das oberste Bedienfeld (RootPanel) verfügt nicht über diese Klasse.
 
-## Mobile Stile {#mobile-styling}
+## Mobilstile {#mobile-styling}
 
 ## Kopfzeilenleiste {#header-bar}
 
-Diese Variablen beeinflussen die Überschriftenleiste, die auf einem Mobilgerät oder Geräten mit kleinem Bildschirm, die Bedienfeldtitel und Navigatoren „Weiter“ und „Zurück“ beinhalten, sichtbar ist.
+Diese Variablen beeinflussen die Kopfzeilenleiste, die auf einem Mobilgerät oder Geräten mit kleinem Bildschirm sichtbar ist, die Bedienfeldtitel und die Navigatoren „Weiter“ und „Zurück“ beinhalten.
 
 <table> 
  <tbody> 
@@ -981,7 +981,7 @@ Diese Variablen beeinflussen die Überschriftenleiste, die auf einem Mobilgerät
  </tbody> 
 </table>
 
-## Scroll-Indikator  {#scroll-indicator}
+## Scroll-Indikator {#scroll-indicator}
 
 Diese Variablen beeinflussen den Scroll-Indikator, der als orangefarbener Pfeil auf einem Mobilgerät oder auf Geräten mit kleinem Bildschirm angezeigt wird. Der Scroll-Indikator zeigt an, dass es Inhalt gibt, der über den sichtbaren Bereich des Bildschirms hinausgeht. Sie können nach unten blättern, um diesen Inhalt anzuzeigen. Wenn Sie das Ende des Inhalts erreichen, wird der Pfeil nicht mehr angezeigt.
 
@@ -1019,9 +1019,9 @@ Diese Variablen beeinflussen den Scroll-Indikator, der als orangefarbener Pfeil 
  </tbody> 
 </table>
 
-## Feste spezifische Variablen für das Symbolleistenlayout für Mobilgeräte  {#mobile-fixed-toolbar-layout-specific-variables}
+## Feste Symbolleisten-Layout-spezifische Variablen für Mobilgeräte {#mobile-fixed-toolbar-layout-specific-variables}
 
-Diese Variablen in der folgenden Tabelle beeinflussen das feste Symbolleistenlayout für Mobilgeräte.
+Diese Variablen in folgender Tabelle beeinflussen das feste Symbolleisten-Layout für Mobilgeräte.
 
 <table> 
  <tbody> 
@@ -1056,11 +1056,11 @@ Diese Variablen in der folgenden Tabelle beeinflussen das feste Symbolleistenlay
   </tr> 
   <tr> 
    <td><p><code>mobileButtonIconTopMargin</code></p> </td> 
-   <td><p>Feste Position der Schaltflächensymbole auf der Symbolleiste von oben</p> </td> 
+   <td><p>Feste Position von Schaltflächensymbolen auf der Symbolleiste von oben</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>mobileButtonIconWidth</code></p> </td> 
-   <td><p>Die Breite der Schaltflächensymbole auf der Symbolleiste auf einem Mobilgerät</p> </td> 
+   <td><p>Breite von Schaltflächensymbolen auf der Symbolleiste auf einem Mobilgerät</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>mobileButtonIconHeight</code></p> </td> 

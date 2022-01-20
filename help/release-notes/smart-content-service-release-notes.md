@@ -1,8 +1,8 @@
 ---
 title: Versionshinweise zu Smart Content Service
-seo-title: Versionshinweise zu Smart Content Service
+seo-title: Smart Content Service Release Notes
 description: Überblick über den Smart Content Service und bekannte Probleme rund um den Service.
-seo-description: Überblick über den Smart Content Service und bekannte Probleme rund um den Service.
+seo-description: Overview of the Smart Content Service and known issues around the service.
 uuid: 5f474b36-3451-48ea-8669-b2d793638b06
 content-type: reference
 products: SG_EXPERIENCEMANAGER
@@ -10,8 +10,8 @@ discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
 source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 16%
+source-wordcount: '511'
+ht-degree: 17%
 
 ---
 
@@ -93,5 +93,5 @@ Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff ben
 
 * [Produktzugriff](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/).
-* Produktaktualisierungen, Patches und Pakete für zusätzliche Funktionen auf [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Kundensupport über Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Neues Kundenunterstützungs-Erlebnis für Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* Produktaktualisierungen, Patches und Pakete für zusätzliche Funktionen in [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Kundensupport über Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Neues Adobe-Supporterlebnis](https://docs.adobe.com/content/help/en/customer-one/using/home.html).

@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit Projekt-Workflows
-seo-title: Arbeiten mit Projekt-Workflows
+seo-title: Working with Project Workflows
 description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
-seo-description: Eine Vielzahl von Projekt-Workflows ist bereits vorkonfiguriert.
+seo-description: A variety of project workflows are available out of the box.
 uuid: 376922ca-e09e-4ac8-88c8-23dac2b49dbe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 9d7e9d46-9f38-44a0-9c83-4bc4fceb17c8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '724'
 ht-degree: 97%
 
 ---
@@ -58,7 +58,7 @@ Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie unter:
 
 Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
 
-## Workflow „Kopie anfordern“  {#request-copy-workflow}
+## Workflow „Kopie anfordern“ {#request-copy-workflow}
 
 Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfordern und es dann genehmigen. So starten Sie den Workflow „Kopie anfordern“:
 
@@ -71,7 +71,7 @@ Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfordern und 
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-## Workflow „Produkt-Fotoshooting“{#product-photo-shoot-workflow}
+## Workflow „Produkt-Fotoshooting“ {#product-photo-shoot-workflow}
 
 Die Workflows „Produkt-Fotoshooting“ (mit oder ohne Commerce) werden in [Kreatives Projekt](/help/sites-authoring/managing-product-information.md) im Detail behandelt.
 
@@ -79,7 +79,7 @@ Die Workflows „Produkt-Fotoshooting“ (mit oder ohne Commerce) werden in [Kre
 
 Im Workflow für Projektbestätigung weisen Sie Inhalte einem Benutzer zu, überprüfen diese und genehmigen sie dann.
 
-1. Wählen Sie in Ihrem einfachen Projekt das ****+**-Symbol in der Kachel **Workflows** aus und wählen Sie **Workflow für Projektbestätigung** aus.
+1. Wählen Sie in Ihrem einfachen Projekt ** aus.**+** anmelden **Workflows** Kachel und wählen Sie **Workflow für Projektbestätigung**.
 1. Geben Sie einen Titel ein und wählen Sie aus, welchem Mitglied der Teamliste Sie den Workflow zuweisen möchten. Geben Sie bei Bedarf eine Beschreibung, einen Inhaltspfad, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -99,7 +99,7 @@ Mit diesem Workflow können Sie einen Launch anfordern.
 
 1. Klicken Sie auf **Erstellen**. Der Workflow startet. Der Workflow wird in der Liste **Workflows** angezeigt (klicken Sie auf das Auslassungszeichen **…** auf der Kachel **Workflows**, um auf diese Liste zugreifen).
 
-## Workflow „Einstiegsseite anfordern“{#request-landing-page-workflow}
+## Workflow „Einstiegsseite anfordern“ {#request-landing-page-workflow}
 
 Mit diesem Workflow können Sie eine Einstiegsseite anfordern.
 
@@ -108,9 +108,9 @@ Mit diesem Workflow können Sie eine Einstiegsseite anfordern.
 
    ![chlimage_1-326](assets/chlimage_1-326.png)
 
-1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgabe** angezeigt.
+1. Klicken Sie auf **Erstellen**. Der Workflow startet. Die Aufgabe wird in der Kachel **Aufgaben** angezeigt.
 
-## Workflow „E-Mail anfordern“  {#request-email-workflow}
+## Workflow „E-Mail anfordern“ {#request-email-workflow}
 
 Mit diesem Workflow können Sie eine E-Mail anfordern. Es ist der derselbe Workflow, der in der Kachel **E-Mails** angezeigt wird.
 

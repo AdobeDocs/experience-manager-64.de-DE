@@ -1,8 +1,8 @@
 ---
 title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
-seo-title: Verwenden des Rich-Text-Editors zum Erstellen von Inhalten
+seo-title: Using the Rich Text Editor to Author Content
 description: Verwenden des Rich-Text-Editors, um Text in AEM zu erstellen.
-seo-description: Verwenden des Rich-Text-Editors, um Text in AEM zu erstellen.
+seo-description: Using the Rich Text Editor to author text in AEM.
 uuid: d8dc5989-7a1c-4bab-88fd-040c2c9aa69f
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
 exl-id: 26d912e1-d8ee-44fc-8c82-ccc66551ddc1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 33%
+source-wordcount: '289'
+ht-degree: 32%
 
 ---
 
@@ -27,7 +27,7 @@ Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Textbearbeitu
 
 ## Bearbeitung im Kontext {#in-place-editing}
 
-Wenn Sie eine textbasierte Komponente mit einem einzigen Tippen oder Klicken auswählen, wird die [Komponenten-Symbolleiste](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) angezeigt.
+Wenn Sie eine textbasierte Komponente mit einem einzigen Tippen oder Klicken auswählen, wird die [Komponenten-Symbolleiste](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste).
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -57,7 +57,7 @@ Bei textbasierten Komponenten wird durch Auswahl des Vollbildmodus in der Symbol
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-Der Vollbildmodus zeigt alle Optionen Ihres Rich-Text-Editors an, die von Ihrem Administrator konfiguriert wurden. Diese können je nach AEM von Instanzen [abhängig von der Konfiguration](../sites-administering/rich-text-editor.md) variieren, die von den Administratoren oder AEM Entwicklern bereitgestellt wird. Wenn eine Option fehlt, bitten Sie Ihren Administrator, sie verfügbar zu machen.
+Der Vollbildmodus zeigt alle Optionen Ihres Rich-Text-Editors an, die von Ihrem Administrator konfiguriert wurden. Diese können AEM Instanzen variieren [je nach Konfiguration](../sites-administering/rich-text-editor.md) bereitgestellt von den Administratoren oder AEM Entwicklern. Wenn eine Option fehlt, bitten Sie Ihren Administrator, sie verfügbar zu machen.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 

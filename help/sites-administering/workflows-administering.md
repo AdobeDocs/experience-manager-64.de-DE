@@ -1,8 +1,8 @@
 ---
-title: Verwalten von Workflow-Instanzen
-seo-title: Verwalten von Workflow-Instanzen
+title: Verwalten der Workflow-Instanzen
+seo-title: Administering Workflow Instances
 description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden.
-seo-description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden.
+seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '818'
 ht-degree: 95%
 
 ---
@@ -150,9 +150,9 @@ Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deployi
  </tbody> 
 </table>
 
-## Einstellen der maximalen Größe des Posteingangs   {#setting-the-maximum-size-of-the-inbox}
+## Einstellen der maximalen Größe des Posteingangs {#setting-the-maximum-size-of-the-inbox}
 
-Sie können die Maximalgröße des Posteingangs festlegen, indem Sie den **Adobe Granite Workflow Service** mithilfe der [Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder [eine OSGi-Konfiguration zum Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) konfigurieren. In der folgenden Tabelle ist die Eigenschaft beschrieben, die Sie für jede Methode konfigurieren.
+Sie können die maximale Größe des Posteingangs festlegen, indem Sie die Variable **Adobe Granite Workflow-Dienst**, wobei [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder [Hinzufügen einer OSGi-Konfiguration zum Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). In der folgenden Tabelle ist die Eigenschaft beschrieben, die Sie für jede Methode konfigurieren.
 
 >[!NOTE]
 >

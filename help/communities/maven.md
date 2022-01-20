@@ -1,8 +1,8 @@
 ---
 title: Verwenden von Maven für Communities
-seo-title: Verwenden von Maven für Communities
+seo-title: Using Maven for Communities
 description: AEM Communities API-JAR und AEM Uber API-JAR
-seo-description: AEM Communities API-JAR und AEM Uber API-JAR
+seo-description: AEM Communities API jar and AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,14 +12,14 @@ discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 exl-id: d86411b9-6ed1-4091-bf5c-d46b4e518da4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
 
 # Verwenden von Maven für Communities {#using-maven-for-communities}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Dieser Abschnitt der AEM Communities-Dokumentation umfasst zusätzlich:
 
@@ -35,9 +35,9 @@ Es gibt nur ein &quot;uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
 >
 >Es wird empfohlen, mit der neuesten Version von Communities auf dem Laufenden zu bleiben.
 >
->Siehe Abschnitt [Neueste Versionen](deploy-communities.md#latest-releases) , um die neueste Version zu ermitteln.
+>Siehe [Neueste Versionen](deploy-communities.md#latest-releases) -Abschnitt, um die neueste Version zu ermitteln.
 
-## Beispiel für eine Maven-Abhängigkeit {#maven-dependency-example}
+## Beispiel einer Maven-Abhängigkeit {#maven-dependency-example}
 
 ```xml
 <dependency>
@@ -50,7 +50,7 @@ Es gibt nur ein &quot;uber&quot;-Artefakt, das einzelne Artefakte ersetzt:
 
 >[!NOTE]
 >
->Siehe [AEM UberJar-Repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar), um das neueste UberJar-Artefakt zu identifizieren.
+>Siehe [AEM Uber JAR-Repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) , um das neueste UberJar-Artefakt zu identifizieren.
 
 <!--
 # Using Maven for Communities {#using-maven-for-communities}

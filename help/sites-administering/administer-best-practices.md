@@ -32,7 +32,7 @@ Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Best Practices für Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
+Best Practices rund um Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table> 
  <tbody>
@@ -48,7 +48,7 @@ Best Practices für Assets, einschließlich der Dynamic Media-Funktion und der D
   </tr>
   <tr>
    <td>Integrieren von Dynamic Media Classic und AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Best Practices für die Integration von Dynamic Media Classic mit AEM</a></td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Best Practices für die Integration von Dynamic Media Classic in AEM</a></td> 
    <td><p>Beschreibt, wann das Abfrage-Importtool aktiviert, wie Ihre Integration getestet und wann der Inhalts-Browser im Vergleich zu direktem Uploads zu Assets verwendet werden soll.</p> </td> 
   </tr>
   <tr>
@@ -58,7 +58,7 @@ Best Practices für Assets, einschließlich der Dynamic Media-Funktion und der D
   </tr>
   <tr>
    <td>Dynamic Media im Vergleich zur direkten Integration mit Dynamic Media Classic</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Integration von Dynamic Media Classic/AEM mit Dynamic Media</a></td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media Classic/AEM-Integration versus Dynamic Media</a></td> 
    <td>Beschreibt, wann sich die Verwendung der Lösung „Dynamische Medien“ am ehesten empfiehlt, wann S7 in AEM integriert wird und wann beide Lösungen verwendet werden.</td> 
   </tr>
  </tbody>

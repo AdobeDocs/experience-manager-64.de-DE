@@ -1,26 +1,26 @@
 ---
 title: Bedingungen in interaktiven Kommunikationen
-seo-title: Bedingungen in interaktiven Kommunikationen
+seo-title: Conditions in Interactive Communications
 description: 'Erstellen und Bearbeiten von Bedingungsfragmenten zur Verwendung in interaktiver Kommunikation. Bedingung ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktiver Kommunikation verwendet werden. Die anderen drei sind Texte, Listen und Layoutfragmente.  '
-seo-description: Erstellen und Bearbeiten von Bedingungen für die interaktive Kommunikation
+seo-description: Creating and editing conditions to be used in Interactive Communications
 uuid: 93d69398-aead-4e23-8db3-b3e890477113
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3ade2a54-cb9a-4e34-808c-c6feec23cfe1
-feature: Interaktive Kommunikation
+feature: Interactive Communication
 exl-id: 0ffb297f-8c5a-4909-b4c0-2d8253548640
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1492'
 ht-degree: 81%
 
 ---
 
-# Bedingungen in interaktiver Kommunikation {#conditions-in-interactive-communications}
+# Bedingungen in interaktiven Kommunikationen {#conditions-in-interactive-communications}
 
 Erstellen und Bearbeiten von Bedingungsfragmenten zur Verwendung in interaktiver Kommunikation. Bedingung ist eine der vier Arten von Dokumentfragmenten, die zum Erstellen von interaktiver Kommunikation verwendet werden. Die anderen drei sind Texte, Listen und Layoutfragmente.
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 Bedingung ist ein Dokumentfragment, das Sie in eine interaktive Kommunikation einfügen können. Die anderen Dokumentfragmente sind [Text](/help/forms/using/texts-interactive-communications.md), Liste und Layout-Fragment. Mithilfe von Bedingungen können Sie ein oder mehrere kontextbezogene Assets definieren, die basierend auf den bereitgestellten Daten und Regeln in eine interaktive Kommunikation einbezogen werden.
 
@@ -87,7 +87,7 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
    Sie können mithilfe der folgenden Optionen festlegen, wie sich die Bedingung zur Laufzeit verhält:
 
    * **Bewertung mehrerer Ergebnisse deaktiviert/Bewertung mehrerer Ergebnisse aktiviert**: Wenn diese Option aktiviert ist (angezeigt als „Bewertung mehrerer Ergebnisse aktiviert”), werden alle Bedingungen ausgewertet und das Ergebnis ist die Summe aller Bedingungen, die den Status „true“ haben. Wenn diese Option deaktiviert ist (angezeigt als „Bewertung mehrerer Ergebnisse deaktiviert“), wird nur die erste Bedingung, die „true“ ergibt, ausgewertet und wird zur Ausgabe der Bedingung.
-   * **Seitenumbruch**: Wählen Sie diese Option (  ![Umbruch](assets/break.png)) aus, um zwischen den Assets der Bedingungen einen Seitenumbruch hinzuzufügen. Wenn diese Option nicht ausgewählt ist ( ![nobreak](assets/nobreak.png)) und eine Bedingung in der Druckausgabe zur nächsten Seite überläuft, wird die gesamte Bedingung auf die nächste Seite verschoben, anstatt in der Seite zwischen den Assets in der Bedingung umzubrechen.
+   * **Seitenumbruch**: Wählen Sie diese Option ( ![break](assets/break.png)), um zwischen den Assets der Bedingungen einen Seitenumbruch hinzuzufügen. Wenn diese Option nicht ausgewählt ist ( ![nobreak](assets/nobreak.png)), wenn eine Bedingung in der Druckausgabe auf die nächste Seite überläuft, wird die gesamte Bedingung auf die nächste Seite verschoben, anstatt in der Seite zwischen den Assets in der Bedingung zu wechseln.
 
 1. Tippen Sie auf **[!UICONTROL Regel erstellen]**, um Regeln hinzuzufügen, um die Assets nach Bedarf ein- oder auszublenden. Um Variablen in den Regeln zu verwenden, siehe [Erstellen von Variablen](#variables). Weitere Informationen finden Sie unter: [Hinzufügen von Regeln zur Bedingung](#ruleeditor).
 
@@ -107,7 +107,7 @@ Die Assets in den Bedingungen, die basierend auf den angewendeten Regeln und den
    >
    >Um eine neue oder bearbeitete Bedingung zu speichern, müssen Sie mindestens eine Regel für jedes der in der Bedingung hinzugefügten Assets haben.
 
-## Bearbeiten einer Bedingung  {#edit-a-condition}
+## Bearbeiten einer Bedingung {#edit-a-condition}
 
 Sie können eine Bedingung mithilfe der folgenden Schritte bearbeiten. Sie können eine Bedingung auch in einer interaktiven Kommunikation bearbeiten, indem Sie im Popup-Menü die Option Fragment bearbeiten auswählen.
 
@@ -128,9 +128,9 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
 * Eigenschaft des zugeordneten Formulardatenmodells
 * Beliebige [Variablen](#variables), die Sie erstellt haben.
 
-### Regel in der Bedingung erstellen  {#create-rule-in-condition}
+### Regel in der Bedingung erstellen {#create-rule-in-condition}
 
-1. Tippen Sie beim Erstellen oder Bearbeiten einer Bedingung auf das Symbol ![ruleeditoricon](assets/ruleeditoricon.png) (Regeleditor) für das relevante Asset.
+1. Tippen Sie beim Erstellen oder Bearbeiten einer Bedingung auf ![ruleeditoricon](assets/ruleeditoricon.png) (Regeleditor) für das relevante Asset.
 
    Das Dialogfeld zum Erstellen der Regel wird angezeigt. Zusätzlich zu Zeichenfolge, Zahl, mathematischem Ausdruck und Datum stehen im Regeleditor folgende Regeln zum Erstellen von Anweisungen der Regeln zur Verfügung:
 
@@ -152,7 +152,7 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
 
    Regel, um ein Asset anzuzeigen, wenn der Richtlinientyp „Standard“ ist
 
-   * Beim Erstellen oder Bearbeiten einer Regel können Sie auch auf ![icon_resize](assets/icon_resize.png) (Größe ändern) tippen, um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Der erweiterte Vollbildansichtsdialog ermöglicht das Erstellen von [Variablen](#variables) zum Erstellen von Regeln. Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Regel erstellen“ zurückzukehren.
+   * Beim Erstellen oder Bearbeiten einer Regel können Sie auch auf ![icon_resize](assets/icon_resize.png) (Größe ändern), um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Der erweiterte Vollbildansichtsdialog ermöglicht das Erstellen von [Variablen](#variables) zum Erstellen von Regeln. Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Regel erstellen“ zurückzukehren.
    * Sie können auch mehrere Bedingungen in einer Regel erstellen.
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**.
@@ -161,7 +161,7 @@ Wenn Sie den Regeleditor in einer Bedingung verwenden, können Sie Regeln zum An
 
 ## Erstellen und Verwenden von Variablen in einer Bedingung {#variables}
 
-Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie auf ![icon_resize](assets/icon_resize.png) (Größe ändern) tippen, um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Der erweiterte Vollbildansichtsdialog ermöglicht Folgendes:
+Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie auf ![icon_resize](assets/icon_resize.png) (Größe ändern), um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern. Der erweiterte Vollbildansichtsdialog ermöglicht Folgendes:
 
 * Erstellen und Verwenden von Variablen in der Regel
 * Ziehen der Eigenschaften und Variablen des Datenmodells per Drag-and-Drop in die Regel
@@ -170,7 +170,7 @@ Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Reg
 
 ### Variablen erstellen {#create-variables}
 
-1. Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie auf ![icon_resize](assets/icon_resize.png) (Größe ändern) tippen, um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern.
+1. Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie auf ![icon_resize](assets/icon_resize.png) (Größe ändern), um das Dialogfeld Regel erstellen/Regel bearbeiten zu erweitern.
 
    Der erweiterte Vollbildansichtsdialog erscheint.
 

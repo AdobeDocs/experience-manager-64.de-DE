@@ -1,41 +1,41 @@
 ---
 title: Verwenden von AEM-Übersetzungs-Workflow zum Lokalisieren von adaptiven Formularen und DoR
-seo-title: Verwenden von AEM-Übersetzungs-Workflow zum Lokalisieren von adaptiven Formularen und DoR
+seo-title: Using AEM translation workflow to localize adaptive forms and document of record
 description: Erfahren Sie, wie Sie AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und DoR verwenden.
-seo-description: Erfahren Sie, wie Sie AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und DoR verwenden.
+seo-description: Learn to use AEM translation workflows to localize adaptive forms and document of record.
 uuid: 6c87a283-0203-4cf7-989a-3770ddbbbd6e
 content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
-feature: Adaptive Formulare
+feature: Adaptive Forms
 exl-id: 5d0dcf4d-8995-4547-acb1-4917696af95e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '781'
-ht-degree: 88%
+source-wordcount: '753'
+ht-degree: 94%
 
 ---
 
 # Verwenden von AEM-Übersetzungs-Workflow zum Lokalisieren von adaptiven Formularen und DoR {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-Lokalisierte Formulare helfen Ihnen, eine größere Zielgruppe über Ländergrenzen hinweg anzusprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und ihre DoR lokalisieren. Sie können zum Lokalisieren von adaptiven Formularen **maschinelle Übersetzung** nutzen oder **Übersetzer** beauftragen.
+Mit lokalisierten Formularen können Sie eine größere Zielgruppe über Ländergrenzen hinweg ansprechen. Mit den Adobe Experience Manager-Übersetzungs-Workflows können Sie adaptive Formulare und ihre DoR lokalisieren. Sie können zum Lokalisieren von adaptiven Formularen **maschinelle Übersetzung** nutzen oder **Übersetzer** beauftragen.
 
 In diesem Artikel wird die Vorgehensweise zum Nutzen des AEM-Übersetzungsarbeitsablaufs in Verbindung mit adaptiven Formularen und DoR erläutert.
 
-## Lokalisieren von adaptiven Formulars und DoR mithilfe der maschinellen Übersetzung  {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
+## Lokalisieren von adaptiven Formulars und DoR mithilfe der maschinellen Übersetzung {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und DoR. AEM Forms ist für die Verwendung einer Testversion von Microsoft Translator für die maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren des Dienstes für Ihre adaptiven Formulare und DoR folgende Schritte durch:
+Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiven Formulare und DoR. AEM Forms ist für die Verwendung einer Testversion von Microsoft Translator für maschinelle Übersetzung vorkonfiguriert. Führen Sie zum Aktivieren des Dienstes für Ihre adaptiven Formulare und DoR folgende Schritte durch:
 
 1. Wählen Sie auf der Benutzeroberfläche von AEM Forms ein Formular aus und tippen Sie auf die Option **Wörterbuch hinzufügen**.
 1. Wählen Sie auf dem Bildschirm **Wörterbuch zum Übersetzungsprojekt hinzufügen** die Option **Neues Übersetzungsprojekt erstellen** oder **Zu vorhandenem Übersetzungsprojekt hinzufügen**.
 1. Geben Sie im Feld **Projekttitel** den Titel an. Beispiel: `Government Reference Site - German locale.`
-1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (z. B. `German(de)`) und klicken Sie auf **Fertig**. Sie können mehrere Gebietsschemata angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemata übersetzt.
+1. Geben Sie im Feld **Zielsprachen** ein Gebietsschema an (beispielsweise `German(de)`) und klicken Sie auf **Fertig**. Sie können mehrere Gebietsschemas angeben. Das Formular wird in alle im Feld **Zielsprachen** angegebenen Gebietsschemas übersetzt.
 1. Klicken Sie im Dialogfeld „Wörterbuch hinzugefügt“ auf **Projekte öffnen**. Öffnen Sie auf dem Bildschirm „Projekte“ das neu erstellte Projekt.
 1. Klicken Sie unten auf der Kachel **Übersetzungszusammenfassung** auf die **Auslassungspunkte**. Der Bildschirm „Übersetzungszusammenfassung“ wird geöffnet.
-1. Klicken Sie am oberen Rand des Bildschirms **Übersetzungszusammenfassung** auf das Symbol **Bearbeiten**. Öffnen Sie die Registerkarte **Übersetzung** und wählen Sie auf dem Bildschirm **Übersetzungsmethode** die Option „Maschinelle Übersetzung“. Wählen Sie den entsprechenden **Übersetzungsanbieter** und die entsprechende **Cloud-Konfiguration**. Klicken Sie am oberen Rand des Bildschirms auf das Symbol **Fertig**.
-1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und klicken Sie auf **Start**. Der Status der Kachel ändert sich in „Entwurf“. Bei Fertigstellung der Übersetzung ändert sich der Status in **Bereit für Überprüfung**. Aktualisieren Sie die Seite nach einigen Minuten und überprüfen Sie den Status.
-1. Nachdem der Status auf der Kachel **Übersetzungsauftrag** in **Bereit für Überprüfung** geändert wurde, öffnen Sie das Formular in einem Browserfenster. Eine lokalisierte Version des Formulars wird angezeigt.
+1. Klicken Sie am oberen Rand des Bildschirms **Übersetzungszusammenfassung** auf das Symbol **Bearbeiten**. Öffnen Sie die Registerkarte **Übersetzung** und wählen Sie auf dem Bildschirm **Übersetzungsmethode** die Option „Maschinelle Übersetzung“. Wählen Sie den entsprechenden **Übersetzungsanbieter** und die entsprechende **Cloudkonfiguration**. Klicken Sie am oberen Rand des Bildschirms auf das Symbol **Fertig**.
+1. Klicken Sie auf der Kachel **Übersetzungsauftrag** auf das Symbol ![aem62forms_downarrow](assets/aem62forms_downarrow.png) und dann auf **Start**. Der Status der Kachel ändert sich in „Entwurf“. Bei Fertigstellung der Übersetzung ändert sich der Status in **Bereit für Überprüfung**. Aktualisieren Sie die Seite nach einigen Minuten und überprüfen Sie den Status.
+1. Nachdem sich der Status auf der Kachel **Übersetzungsauftrag** in **Bereit für Überprüfung** geändert hat, öffnen Sie das Formular in einem Browserfenster. Eine lokalisierte Version des Formulars wird angezeigt.
 
    >[!NOTE]
    >
@@ -45,14 +45,14 @@ Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiv
 
    Zusammen mit dem adaptiven Formular wird das automatisch generierte DoR auch lokalisiert.
 
-   Weitere Informationen zu Einstellungen und Konfigurationen zu DoR finden Sie unter:
+   Weitere Informationen zu Einstellungen und Konfigurationen für Datensatzdokumente finden Sie unter:
 
-[Konfiguration von Dokument aus Datensatzvorlage](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+[Konfiguration von Vorlagen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
-[Datensatzdokument-Einstellungen](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+[Einstellungen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Passen Sie die Branding-Informationen des Datensatzdokuments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) an und stellen Sie sicher, dass das Gebietsschema des Browsers auf die Sprache eingestellt ist, in der Sie das adaptive Formular mithilfe der Maschinensprache lokalisiert haben. Das Browsergebietsschema hilft beim Lokalisieren der Branding-Informationen im Datensatzdokument.
-1. Um das lokalisierte Datensatzdokument anzuzeigen, tippen Sie auf „Vorschau generieren“. Das PDF-Dokument aus Datensatz wird in Ihrem Browser auf einer neuen Registerkarte generiert und geöffnet.
+1. Um das lokalisierte Datensatzdokument anzuzeigen, tippen Sie auf „Vorschau generieren“. Das Datensatzdokument-PDF wird in einer neuen Registerkarte in Ihrem Browser erstellt und geöffnet.
 
 ## Lokalisieren von adaptiven Formulars und seines DoR mithilfe professioneller Übersetzung {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
@@ -77,7 +77,5 @@ Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines D
 >[!NOTE]
 >
 >* Adaptive Formularkomponenten unterstützen keine RTL-Sprachen (Rechts-nach-links). Zum Beispiel Hebräisch.
-
 >
-
 

@@ -2,7 +2,7 @@
 title: Versionshinweise zu AEM Communities
 seo-title: AEM Communities
 description: Spezifische Versionshinweise zu Adobe Experience Manager 6.4. Communities
-seo-description: Spezifische Versionshinweise zu Adobe Experience Manager 6.4. Communities
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Communities.
 uuid: 2de9f511-2a61-4003-9b2c-d6728bc9d57a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -12,7 +12,7 @@ discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 exl-id: 3a341e72-01c5-4c63-8942-6320e5b08440
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '317'
 ht-degree: 88%
 
 ---
@@ -60,12 +60,12 @@ Moderation:
 
 Allgemeine Kompatibilität mit grundlegenden Änderungen in AEM 6.4.
 
-Hinweis: alle diese Funktionen sind auch für AEM 6.3 verfügbar. Lesen Sie die AEM Communities-Versionshinweise für [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
+Hinweis: Alle diese Funktionen sind auch für AEM 6.3 verfügbar. Weitere Informationen finden Sie in den AEM Communities-Versionshinweisen unter [6,3](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html).
 
 ## Bekannte Probleme {#known-issues}
 
 * **Moderation**: Es ist nicht möglich, den übergeordneten Beitrag in einem einzelnen Löschvorgang aus der Massenmoderationsoberfläche zu löschen. (CQ-4236797)
-* **Konsole**  - Der Link &quot;Benutzername vergessen&quot;oder &quot;Kennwort vergessen&quot;leitet zur Anmeldeseite um, anstatt zum entsprechenden Kennwortabfrageformular. (CQ-4237682)
+* **Konsole** - Der Link &quot;Benutzername vergessen&quot;oder &quot;Passwort vergessen&quot;leitet zur Anmeldeseite um, anstatt zum entsprechenden Kennwortabfrageformular. (CQ-4237682)
 
 ## Ausgewählte Funktionen {#select-features}
 

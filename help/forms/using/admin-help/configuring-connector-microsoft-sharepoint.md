@@ -1,8 +1,8 @@
 ---
 title: Connector für Microsoft SharePoint konfigurieren
-seo-title: Connector für Microsoft SharePoint konfigurieren
+seo-title: Configuring Connector for Microsoft SharePoint
 description: Konfigurieren Sie Connector für Microsoft SharePoint, um die Kommunikation zwischen AEM Forms und Microsoft SharePoint zu aktualisieren.
-seo-description: Konfigurieren Sie Connector für Microsoft SharePoint, um die Kommunikation zwischen AEM Forms und Microsoft SharePoint zu aktualisieren.
+seo-description: Configure Connector for Microsoft SharePoint to enable communication between AEM forms and Microsoft SharePoint.
 uuid: f1561b41-da20-4220-b13a-e78472a9449f
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 exl-id: 9bd396a3-5da9-4355-ad76-e7132ac8aed8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 63%
+source-wordcount: '213'
+ht-degree: 60%
 
 ---
 
@@ -24,9 +24,9 @@ Connector für Microsoft SharePoint aktiviert die Kommunikation zwischen AEM For
 1. Wählen Sie in Administration Console „Dienste“ > „Connector für Microsoft SharePoint“.
 1. Geben Sie die folgenden Einstellungen für Ihren SharePoint-Server an:
 
-   **SharePoint Server Host Name:** Die Hostname-Anschlussnummer der Webanwendung auf dem SharePoint Server im Format  `[hostname]:[port]`.
+   **SharePoint Server Host Name:** Die Hostname-Anschlussnummer der Webanwendung auf dem SharePoint-Server im Format `[hostname]:[port]`.
 
-   **Benutzername:** Das Benutzerkonto, mit dem eine Verbindung zum SharePoint-Server hergestellt wird.
+   **Benutzername:** Das Benutzerkonto, über das eine Verbindung zum SharePoint-Server hergestellt wird.
 
    **Kennwort:** Kennwort für das Benutzerkonto, mit dem eine Verbindung zum SharePoint-Server hergestellt wird
 
@@ -34,9 +34,9 @@ Connector für Microsoft SharePoint aktiviert die Kommunikation zwischen AEM For
 
 1. Klicken Sie auf Speichern.
 
-## Microsoft SharePoint-Konfigurationsdienst  {#microsoft-sharepoint-configuration-service}
+## Microsoft SharePoint-Konfigurationsdienst {#microsoft-sharepoint-configuration-service}
 
-Mit dem Microsoft SharePoint-Konfigurationsdienst `(MSSharePointConfigService)` können Sie Anmeldedaten für den AEM forms-Benutzer angeben, der über die Berechtigung zum Identitätswechsel verfügt. Weitere Informationen zu Berechtigungen zum Identitätswechsel finden Sie unter [Connector für Microsoft SharePoint konfigurieren](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Führen Sie folgende Schritte aus, um die Einstellungen für `MSSharePointConfigService` anzugeben:
+Der Microsoft SharePoint-Konfigurationsdienst `(MSSharePointConfigService)` können Sie Anmeldedaten für den AEM forms-Benutzer angeben, der über die Berechtigung zum Identitätswechsel verfügt. Weitere Informationen zu Berechtigungen zum Identitätswechsel finden Sie unter [Connector für Microsoft SharePoint konfigurieren](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Führen Sie folgende Schritte aus, um die Einstellungen für `MSSharePointConfigService` anzugeben:
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Durchlaufen Sie die Liste der Dienste und klicken Sie auf `MSSharePointConfigService`.

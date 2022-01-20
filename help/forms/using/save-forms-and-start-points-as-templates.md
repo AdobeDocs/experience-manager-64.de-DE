@@ -1,8 +1,8 @@
 ---
 title: Speichern von Formularen als Vorlagen
-seo-title: Speichern von Formularen als Vorlagen
+seo-title: Save forms as templates
 description: 'Informationen zum Erstellen von Vorlagen aus Formularen mit häufig benötigten Daten. '
-seo-description: 'Informationen zum Erstellen von Vorlagen aus Formularen mit häufig benötigten Daten. '
+seo-description: Learn how to create templates from forms with data required repeatedly.
 uuid: 090c6271-4061-4adc-a063-9df4953b47ce
 contentOwner: khsingh
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 exl-id: 355c4810-6e45-41cb-9b60-73225bd53526
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '328'
 ht-degree: 85%
 
 ---
@@ -24,7 +24,7 @@ Wenn Benutzer ein Formular ausfüllen, müssen Eingaben in manchen Felder zuweil
 Führen Sie die folgenden Schritte aus, um eine Vorlage zu erstellen:
 
 1. Öffnen Sie ein Formular und wählen Sie die Felder aus, für bei jeder Verwendung gleichbleibende Werte verwendet werden sollen, bzw. geben Sie diese Werte dort ein. Sie eine Anlage in die Vorlage einbeziehen, die normalerweise beim Ausfüllen des Formulars hinzugefügt wird.
-1. Tippen Sie auf das Symbol **Als Vorlage speichern** ![save_as_template](assets/save_as_template.png). Ein Dialogfeld, in dem Sie den Namen der Vorlage eingeben können, wird angezeigt.
+1. Tippen Sie auf **Als Vorlage speichern** ![save_as_template](assets/save_as_template.png)Symbol. Ein Dialogfeld, in dem Sie den Namen der Vorlage eingeben können, wird angezeigt.
 1. Geben Sie den Namen der Vorlage an und tippen Sie auf **Speichern**. Die Vorlage wird im Vorlagenordner angezeigt.
 
    Wenn Sie eine Vorlage mit demselben Namen vorhanden ist, wird ein Dialogfeld angezeigt, in dem Sie bestätigen müssen, dass die vorhandene Vorlage überschrieben werden soll. Um die vorhandene Vorlage durch die neue Vorlage zu ersetzen, tippen Sie auf **Weiter**, um die Vorlage unter einem anderen Namen zu speichern, tippen Sie auf **Abbrechen**.

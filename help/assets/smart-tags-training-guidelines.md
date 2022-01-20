@@ -23,7 +23,7 @@ Um Ihre Markenbilder effektiv mit Tags versehen zu können, erfordert der Smart 
 
 Für optimale Ergebnisse sollten Bilder im Trainingssatz folgende Richtlinien einhalten:
 
-**Menge und Größe:** Mindestens  **30 Bilder pro Tag**. Mindestens 500 Pixel auf der längeren Seite.
+**Menge und Größe:** Minimum **30 Bilder pro Tag**. Mindestens 500 Pixel auf der längeren Seite.
 
 **Kohärenz**: Bilder für ein Tag sollten visuell ähnlich sein.
 
@@ -53,7 +53,7 @@ Optimierte Smart-Tags basieren auf Lernmodellen von Markenbildern und den zugeh�
 
 * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
 * Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
-* Tagging wird in den Gebietsschemata unterstützt, in denen [!DNL Experience Manager] unterstützt wird. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
+* Tagging wird in den Gebietsschemata unterstützt, die [!DNL Experience Manager] wird in unterstützt. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
 
 Verwenden Sie die Asset-OmniSearch, um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
 

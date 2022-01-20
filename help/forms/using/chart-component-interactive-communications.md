@@ -1,19 +1,19 @@
 ---
 title: Verwenden von Diagrammen mit interaktiver Kommunikation
-seo-title: Diagrammkomponente in interaktiver Kommunikation
+seo-title: Chart component in Interactive Communications
 description: 'Mithilfe von Diagrammen in einer interaktiven Kommunikation können Sie große Informationsmengen zu einem einfach zu analysierenden und zu verstehenden visuellen Format zusammenfassen  '
-seo-description: AEM Forms bietet eine Diagrammkomponente, die Sie verwenden können, um Diagramme in Ihrer interaktiven Kommunikation zu erstellen. In diesem Dokument werden die grundlegenden und Agentenkonfigurationen der Diagrammkomponente erläutert.
+seo-description: AEM Forms provides a chart component that you can use to create charts in your Interactive Communication. This document explains basic and agent configurations of the chart component.
 uuid: dedd670c-030b-4497-bbcb-3ad935cebcda
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
-feature: Interaktive Kommunikation
+feature: Interactive Communication
 exl-id: 99077042-cba9-4429-b1e0-830739de5939
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 53%
+source-wordcount: '2390'
+ht-degree: 52%
 
 ---
 
@@ -45,7 +45,7 @@ Führen Sie die folgenden Schritte aus, um ein Diagramm zu einer interaktiven Ko
 
    Die abgelegte Diagrammkomponente erstellt einen Platzhalter für ein Diagramm.
 
-1. Tippen Sie auf die Diagrammkomponente im Editor für interaktive Kommunikation und wählen Sie in der Komponenten-Symbolleiste **[!UICONTROL Konfigurieren (]** ![configure_icon](assets/configure_icon.png)).
+1. Tippen Sie auf die Diagrammkomponente im Editor für interaktive Kommunikation und wählen Sie in der Komponenten-Symbolleiste die Option **[!UICONTROL Konfigurieren (]** ![configure_icon](assets/configure_icon.png)).
 
    Die Eigenschaften-Seitenleiste wird mit den Grundeigenschaften des Diagramms im Fokus angezeigt.
 
@@ -53,7 +53,7 @@ Führen Sie die folgenden Schritte aus, um ein Diagramm zu einer interaktiven Ko
    **Abbildung:** *Grundlegende Eigenschaften eines Liniendiagramms im Druckkanal*
 
    ![Grundlegende Eigenschaften eines Zeilentypdiagramms im Webkanal](assets/basicpropertieswebchannel.png)
-   **Abbildung:** *Grundlegende Eigenschaften eines Liniendiagramms im Webkanal*
+   **Abbildung:** *Grundlegende Eigenschaften eines Linientypdiagramms im Webkanal*
 
 1. Konfigurieren Sie die grundlegenden Eigenschaften des Diagramms für Druckkanal und Webkanal. Neben den allgemeinen Eigenschaften gibt es Eigenschaften, die für den Druck- und Webkanal und den Diagrammtyp spezifisch sind.
 
@@ -64,7 +64,7 @@ Führen Sie die folgenden Schritte aus, um ein Diagramm zu einer interaktiven Ko
 
       * **[!UICONTROL Titel]**: Geben Sie die Titel für die X- und Y-Achse an, die in der interaktiven Kommunikation angezeigt werden sollen.
       * **[!UICONTROL Datenmodellobjekt*]**: Klicken Sie auf „Durchsuchen“ und wählen Sie die Datenmodellobjekte für die X- und Y-Achse des Diagramms aus dem Formulardatenmodell, das beim Erstellen der interaktiven Kommunikation angegeben wurden. Wählen Sie zwei Sammlungs-/Array-Typ-Eigenschaften desselben übergeordneten Datenmodellobjekts, die in Bezug zueinander bedeutungsvoll sind, um sie auf der X- und Y-Achse eines Diagramms darzustellen.
-      * **[!UICONTROL Funktion]**: Um die Werte auf der Achse mithilfe statistischer Funktionen zu berechnen, wählen Sie Funktion für die X/Y-Achse. Weitere Informationen zu Funktionen finden Sie unter [Funktionen in Diagramm](#usefunction) und [Beispiel 2: Anwendung der Summen- und Mittelfunktionen in einem Liniendiagramm](#applicationsumfrequency).
+      * **[!UICONTROL Funktion]**: Um die Werte auf der Achse mithilfe statistischer Funktionen zu berechnen, wählen Sie Funktion für die X/Y-Achse. Weitere Informationen zu Funktionen finden Sie unter [Funktionen im Diagramm verwenden](#usefunction) und [Beispiel 2: Anwendung der Summen- und Mittelfunktionen in einem Liniendiagramm](#applicationsumfrequency).
 
    >[!NOTE]
    >
@@ -72,7 +72,7 @@ Führen Sie die folgenden Schritte aus, um ein Diagramm zu einer interaktiven Ko
 
    Weitere Informationen zu Diagrammeigenschaften finden Sie unter [Grundlegende Eigenschaften in Diagrammen](#basicpropertiescharts).
 
-1. (Nur Druckkanal) Legen Sie in den Agenteneinstellungen fest, ob der Agent dieses Diagramm verwenden muss. Wenn die Option **[!UICONTROL t ist erforderlich, damit der Agent dieses Diagramm verwenden kann]** nicht ausgewählt ist, kann der Agent auf das Augensymbol für das Diagramm auf der Registerkarte &quot;Inhalt&quot;der Benutzeroberfläche für Agenten tippen, um das Diagramm ein-/auszublenden.
+1. (Nur Druckkanal) Legen Sie in den Agenteneinstellungen fest, ob der Agent dieses Diagramm verwenden muss. Wenn i **[!UICONTROL Es ist erforderlich, dass der Agent dieses Diagramm verwendet]** nicht ausgewählt ist, kann der Agent auf das Augensymbol für das Diagramm auf der Registerkarte Inhalt der Benutzeroberfläche des Agenten tippen, um das Diagramm ein-/auszublenden.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
@@ -93,26 +93,26 @@ Um dies zu erreichen, müssen Sie Folgendes angeben:
 * **[!UICONTROL Diagrammtyp]** - in diesem Beispiel Spalte für den Druckkanal und Kreis für den Webkanal
 * **[!UICONTROL Datenmodellobjekte]** als Quelle für die X- und Y-Achse des Diagramms - in diesem Beispiel Transaktionsbetrag für X-Achse und Ausgabenname für die Y-Achse
 * **[!UICONTROL Titel]** für die X- und Y-Achse (nur für das Spaltendiagramm im Druckkanal in diesem Beispiel) - in diesem Beispiel Betrag ($) für die X-Achse und Ausgabe für die Y-Achse.
-* **[!UICONTROL Beschriftungsrichtung]**  (nur in diesem Beispiel für eine Spaltentypgrafik im Druckkanal) - in diesem Beispiel  `Tilt Left`
+* **[!UICONTROL Beschriftungsrichtung]** (nur für das Diagramm vom Typ Spalte im Druckkanal in diesem Beispiel) - in diesem Beispiel `Tilt Left`
 
-* **** Tooltipto, das beim Bewegen der Maus über eine Ausgabe angezeigt wird (nur Webkanal) - in diesem Beispiel  `${x}: $ ${y}`wird dies als  `[Expense Label: $ Amount]` (Beispiel: Besuch des Themenparks: $ 315)
+* **[!UICONTROL QuickInfo]** zur Anzeige bei der Maus über eine Ausgabe (nur Webkanal) - in diesem Beispiel `${x}: $ ${y}`, das als `[Expense Label: $ Amount]` (Beispiel: Besuch des Themenparks: $ 315)
 
-![Spaltendiagramm in der Druckausgabe einer interaktiven ](assets/chartprintchannel.png)
-**KommunikationAbbildung:** *Spaltendiagramm in der Druckausgabe einer interaktiven Kommunikation*
+![Spaltendiagramm in der Druckausgabe einer interaktiven Kommunikation](assets/chartprintchannel.png)
+**Abbildung:** *Spaltendiagramm in der Druckausgabe einer interaktiven Kommunikation*
 
-**A.** Y-Achse - Aus der Eigenschaft des Formulardatenmodells abgerufener Betrag und die Eigenschaft Titel auf Betrag ($)  **B.** Beschriftungsrichtung der X-Achse auf Tilt Left  **C.** X Achse - Ausgabenbeschreibung abgerufen aus der Eigenschaft des Formulardatenmodells und der Eigenschaft Titel auf Spesen
+**A.** Y-Achse - Aus der Eigenschaft des Formulardatenmodells abgerufener Betrag und die Eigenschaft Titel auf Betrag ($) **B.** Beschriftungsrichtung der X-Achse auf Linksbündig eingestellt **C.** X-Achse - Ausgabenbeschreibung, die aus der Eigenschaft des Formulardatenmodells und der Eigenschaft Titel abgerufen wird, die auf &quot;Spesenkonto&quot;eingestellt ist
 
-![Ringdiagramm in der Web-Ausgabe einer interaktiven ](assets/chartwebchannel.png)
-**KommunikationAbbildung:** *Ringdiagramm in der Web-Ausgabe einer interaktiven Kommunikation*
+![Ringdiagramm in der Webausgabe einer interaktiven Kommunikation](assets/chartwebchannel.png)
+**Abbildung:** *Ringdiagramm in der Webausgabe einer interaktiven Kommunikation*
 
-**A.** Die Eigenschaft &quot;Innerer Radius&quot;des Donuts ist auf  **B eingestellt.** Die Eigenschaft &quot;Legende anzeigen&quot;ist ausgewählt und die Eigenschaft &quot;Legendenposition&quot;auf &quot;Rechts&quot;festgelegt  **C.** QuickInfo zeigt die Details des Elements beim Bewegen der Maus an - Tooltip ist auf ${x} eingestellt: $ ${y}
+**A.** Die Eigenschaft &quot;Innerer Radius&quot;des Donuts ist festgelegt. **B.** Die Eigenschaft &quot;Legende anzeigen&quot;ist ausgewählt und die Eigenschaft &quot;Legendenposition&quot;ist auf &quot;Rechts&quot;festgelegt. **C.** QuickInfo zeigt die Details des Elements beim Bewegen der Maus an - QuickInfo ist auf ${x} festgelegt: $ ${y}
 
 ## Beispiel 2: Anwendung von Summen- und Häufigkeitsfunktionen in einem Liniendiagramm {#applicationsumfrequency}
 
 Durch Anwenden von Funktionen in einem Diagramm können Sie Daten darstellen, die nicht direkt vom Formulardatenmodell bereitgestellt werden. In diesem Beispiel verwenden wir ein Beispiel für einen Kreditkartenauszug, um zu verstehen, wie Summen- und Häufigkeitsfunktionen auf das Diagramm angewendet werden können.
 
-![Liniendiagramm ohne Funktion mit drei &quot;Bed and Breakfast&quot;-](assets/creditcarddatalinechartcopy.png)
-**TransaktionenAbbildung:** *Liniendiagramm ohne Funktion mit drei &quot;Bed and Breakfast&quot;-Transaktionen*
+![Liniendiagramm ohne Funktion mit drei &quot;Bed and Breakfast&quot;-Transaktionen](assets/creditcarddatalinechartcopy.png)
+**Abbildung:** *Liniendiagramm ohne Funktion mit drei &quot;Bed and Breakfast&quot;-Transaktionen*
 
 ### Summenfunktion {#sum-function}
 
@@ -132,29 +132,29 @@ Gibt die Anzahl der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf
 
 Auf der Registerkarte „Standard“ können Sie die folgenden Eigenschaften konfigurieren:
 
-**** NameEine Kennung für das Diagrammelement. Der Name ist im Diagramm nicht sichtbar, jedoch nützlich, wenn von anderen Komponenten, Skripts und SOM-Ausdrücken auf das Element verwiesen wird.
+**Name** Eine Kennung für das Diagrammelement. Der Name ist im Diagramm nicht sichtbar, jedoch nützlich, wenn von anderen Komponenten, Skripts und SOM-Ausdrücken auf das Element verwiesen wird.
 
 **Titel (nur Druckkanal)** Gibt den Titel des Diagramms an.
 
 **Diagrammtyp** Gibt den Typ des Diagramms an, das Sie generieren möchten. Die verfügbaren Optionen sind Torten-, Spalten-, Ring-, Linien-, Linien- und Punktdiagramme, Punkt- und Bereichsdiagramme und Balkendiagramme (Webkanal). Weitere Informationen finden Sie unter Beispiel 1: Diagrammausgabe in Druck und Web.
 
-**X-Achse >** TitelGibt den Titel für die X-Achse an.
+**X-Achse > Titel** Gibt den Titel für die X-Achse an.
 
-**X-Achse > Datenmodellobjekt &amp;ast;**  Geben Sie den Namen des Formulardatenmodellsammlungselements an, das auf der X-Achse dargestellt werden soll.
+**X-Achse > Datenmodellobjekt &amp;ast;** Geben Sie den Namen des Formulardatenmodellsammlungselements an, das auf der X-Achse dargestellt werden soll.
 
-**X-Achse >** FunktionGibt die statistische/benutzerdefinierte Funktion an, die für die Berechnung der Werte auf der X-Achse verwendet werden soll. Weitere Informationen zu Funktionen finden Sie unter Verwenden von Funktionen in Grafik und Beispiel 2: Anwendung der Summen- und Mittelfunktionen in einem Liniendiagramm.
+**X-Achse > Funktion** Gibt die statistische/benutzerdefinierte Funktion an, die für die Berechnung der Werte auf der X-Achse verwendet werden soll. Weitere Informationen zu Funktionen finden Sie unter Verwenden von Funktionen in Grafik und Beispiel 2: Anwendung der Summen- und Mittelfunktionen in einem Liniendiagramm.
 
 **X-Achse > Beschriftungsrichtung** Richtung des Titels auf dem Diagramm im Druckkanal. Wenn Sie die Richtung der Beschriftung als &quot;Benutzerdefinierte Drehung&quot;wählen, wird das Feld &quot;Benutzerdefinierter Drehwinkel (Grad)&quot;angezeigt. Im Feld „Benutzerdefinierter Drehwinkel (Grad)“ können Sie den Drehwinkel in Schritten von 15 Grad wählen.
 
-**Y-Achse >** TitelGibt den Titel für die Y-Achse an.
+**Y-Achse > Titel** Gibt den Titel für die Y-Achse an.
 
 **Y-Achse > Datenmodellobjekt &amp;ast;** Gibt das Formulardatenmodellsammlungselement an, das auf der y-Achse dargestellt werden soll. Im Druckkanal sollte das Datenmodellobjekt für die Y-Achse vom Typ Zahl sein.
 
-**Y-Achse >** FunktionGibt die statistische/benutzerdefinierte Funktion an, die für die Berechnung der Werte auf der Y-Achse verwendet werden soll. Weitere Informationen zu Funktionen finden Sie unter Verwenden von Funktionen in Grafik und Beispiel 2: Anwendung der Summen- und Mittelfunktionen in einem Liniendiagramm.
+**Y-Achse > Funktion** Gibt die statistische/benutzerdefinierte Funktion an, die für die Berechnung der Werte auf der Y-Achse verwendet werden soll. Weitere Informationen zu Funktionen finden Sie unter Verwenden von Funktionen in Grafik und Beispiel 2: Anwendung der Summen- und Mittelfunktionen in einem Liniendiagramm.
 
-**Legende** anzeigenZeigt eine Legende für das Torten- oder Ringdiagramm an, wenn diese aktiviert ist.
+**Legende anzeigen** Zeigt eine Legende für das Torten- oder Ringdiagramm an, wenn diese Option aktiviert ist.
 
-**Legende** positionGibt die Position der Legende in Bezug auf das Diagramm an. Die verfügbaren Optionen sind rechts, links, oben und unten.
+**Legendenposition** Gibt die Position der Legende in Bezug auf das Diagramm an. Die verfügbaren Optionen sind rechts, links, oben und unten.
 
 **Höhe (nur Druckkanal)** Höhe des Diagramms in Pixel.
 
@@ -164,19 +164,19 @@ Auf der Registerkarte „Standard“ können Sie die folgenden Eigenschaften kon
 >
 >Sie können die Breite des Diagramms im Webkanal mithilfe der Stil-Ebene oder durch Anwenden eines Designs steuern.
 
-**QuickInfo (nur Webkanal)** Gibt das Format an, in dem die QuickInfo beim Bewegen des Mauszeigers über einen Datenpunkt in der Grafik im Webkanal angezeigt wird. Der Standardwert ist \${x}(\${y}). Je nach Diagrammtyp werden die Variablen \${x} und \${y} dynamisch durch die entsprechenden Werte auf der X-Achse und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie den Mauszeiger auf einen Punkt, ein Balken oder einen Ausschnitt im Diagramm bewegen.
+**QuickInfo (nur Webkanal)** Gibt das Format an, in dem die QuickInfo beim Bewegen des Mauszeigers auf einem Datenpunkt im Diagramm im Webkanal angezeigt wird. Der Standardwert ist \${x}(\${y}). Je nach Diagrammtyp werden die Variablen \${x} und \${y} dynamisch durch die entsprechenden Werte auf der X-Achse und Y-Achse ersetzt und in der QuickInfo angezeigt, wenn Sie den Mauszeiger auf einen Punkt, ein Balken oder einen Ausschnitt im Diagramm bewegen.
 
 Wenn Sie QuickInfos deaktivieren möchten, lassen Sie das Feld „Quickinfo“ leer. Diese Option ist nicht auf Linien- und Bereichsdiagramme anwendbar. Siehe beispielsweise [Beispiel 1: Diagrammausgabe in Druck und Web](#chartoutputprintweb).
 
-**CSS-Klasse (nur Webkanal)**  Geben Sie den Namen einer CSS-Klasse im CSS-Klassenfeld an, um benutzerdefinierte Stile auf das Diagramm anzuwenden.
+**CSS-Klasse (nur Webkanal)** Geben Sie den Namen einer CSS-Klasse im CSS-Klassenfeld an, um benutzerdefinierte Stile auf das Diagramm anzuwenden.
 
-**Obligatorischer Seitenumbruch vor (nur Druckkanal)** Wählen Sie diese Option aus, um einen obligatorischen Seitenumbruch vor dem Diagramm hinzuzufügen und das Diagramm auf eine neue Seite zu setzen.
+**Obligatorischer Seitenumbruch vor (nur Druckkanal)** Wählen Sie diese Option aus, um vor dem Diagramm einen obligatorischen Seitenumbruch hinzuzufügen und das Diagramm auf eine neue Seite zu setzen.
 
-**Obligatorischer Seitenumbruch nach (nur Druckkanal)** Wählen Sie diese Option aus, um einen obligatorischen Seitenumbruch nach dem Diagramm hinzuzufügen und den Inhalt nach dem Diagramm auf eine neue Seite zu setzen.
+**Obligatorischer Seitenumbruch nach (nur Druckkanal)** Wählen Sie diese Option aus, um dem Diagramm einen obligatorischen Seitenumbruch hinzuzufügen und den Inhalt dem Diagramm auf einer neuen Seite anzuzeigen.
 
 **Einzug (nur Druckkanal)** Geben Sie den Einzug des Diagramms links auf der Seite an.
 
-**Diagrammspezifische** KonfigurationenZusätzlich zu allgemeinen Konfigurationen ist die folgende Diagrammkonfiguration verfügbar:
+**Diagrammspezifische Konfigurationen** Zusätzlich zu den allgemeinen Konfigurationen ist die folgende Diagrammkonfiguration verfügbar:
 
 * **Innerer Radius**: Für Ringdiagramme verfügbar, um den Radius (in Pixeln) für den inneren Kreis des Diagramms anzugeben.
 * **Linienfarbe**: Verfügbar für Linien-, Linien- und Punkt- sowie Bereichsdiagramme, um den hexadezimalen Farbwert für die Linie im Diagramm anzugeben.
@@ -200,21 +200,21 @@ Die Diagrammkomponente verfügt bereits über einige integrierte Funktionen, all
 
 Die folgenden Funktionen sind standardmäßig in der Diagrammkomponente verfügbar:
 
-**Mittelwert (Durchschnitt)** Gibt den Durchschnittswert der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
+**Mittel (Durchschnitt)** Gibt den Durchschnittswert der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
 
-**** SumGibt die Summe aller Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
+**Summe** Gibt die Summe aller Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
 
-**** MaximumGibt das Maximum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
+**Maximum** Gibt das Maximum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
 
-**** FrequencyGibt die Anzahl der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
+**Häufigkeit** Gibt die Anzahl der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
 
-**** RangeGibt die Differenz zwischen dem Maximum und Minimum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
+**Bereich** Gibt die Differenz zwischen dem Maximum und Minimum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
 
-**** MedianGibt den Wert zurück, der auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse die höheren und niedrigeren Werte in der Hälfte trennt.
+**Median** Gibt den Wert zurück, der auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse die höheren und niedrigeren Werte in der Hälfte trennt.
 
-**** MinimumGibt das Minimum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
+**Minimum** Gibt das Minimum der Werte auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse an.
 
-**** ModeGibt den Wert mit den meisten Vorkommen auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse zurück
+**Modus** Gibt den Wert mit den meisten Vorkommen auf der X- oder Y-Achse für einen bestimmten Wert auf der anderen Achse aus
 
 ### Benutzerdefinierte Funktionen im Webkanal {#custom-functions-in-web-channel}
 
@@ -236,12 +236,12 @@ Wenn Sie eine benutzerdefinierte Funktion geschrieben haben, können Sie die fol
 
 1. Fügen Sie die benutzerdefinierte Funktion in der Client-Bibliothek hinzu, die mit der entsprechenden interaktiven Kommunikation verknüpft ist. Weitere Informationen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md) und [Verwenden Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md).
 
-1. Um die benutzerdefinierte Funktion in der Dropdown-Liste &quot;Funktion&quot;anzuzeigen, erstellen Sie in CRXDe Lite einen Knoten `nt:unstructured` im Ordner &quot;apps&quot;mit den folgenden Eigenschaften:
+1. Um die benutzerdefinierte Funktion in der Dropdown-Liste &quot;Funktion&quot;anzuzeigen, erstellen Sie in CRXDe Lite eine `nt:unstructured` -Knoten im Ordner &quot;apps&quot;mit den folgenden Eigenschaften:
 
-   * Fügen Sie die Eigenschaft `guideComponentType` mit dem Wert `fd/af/reducer` hinzu. (mandatory)
-   * Fügen Sie die Eigenschaft `value` zu einem vollständig qualifizierten Namen der benutzerdefinierten JavaScript™-Funktion hinzu. (obligatorisch) und setzen Sie den Wert auf den Namen der benutzerdefinierten Funktion, z. B. Multiplizieren, fest.
-   * Fügen Sie die Eigenschaft `jcr:description` mit dem Wert hinzu, der als Name der benutzerdefinierten Funktion angezeigt werden soll, der in der Dropdown-Liste Funktion angezeigt wird. Beispiel:**Multiplizieren**. 
-   * Fügen Sie die Eigenschaft `qtip` mit dem Wert hinzu, der eine kurze Beschreibung der benutzerdefinierten Funktion darstellt. Es wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste **Funktion** bewegt wird.
+   * Eigenschaft hinzufügen `guideComponentType` mit dem Wert `fd/af/reducer`. (mandatory)
+   * Eigenschaft hinzufügen `value` zu einem vollständig qualifizierten Namen der benutzerdefinierten JavaScript™-Funktion. (obligatorisch) und setzen Sie den Wert auf den Namen der benutzerdefinierten Funktion, z. B. Multiplizieren, fest.
+   * Eigenschaft hinzufügen `jcr:description` mit dem Wert, den Sie als Namen der benutzerdefinierten Funktion anzeigen möchten, der in der Dropdown-Liste Funktion angezeigt wird. Beispiel:**Multiplizieren**. 
+   * Eigenschaft hinzufügen `qtip` mit -Wert, der eine kurze Beschreibung der benutzerdefinierten Funktion darstellt. Es wird als QuickInfo angezeigt, wenn der Mauszeiger über den Funktionsnamen in der Dropdown-Liste **Funktion** bewegt wird.
 
 1. Klicken Sie auf **Alle speichern**, um die Konfiguration zu speichern.
 

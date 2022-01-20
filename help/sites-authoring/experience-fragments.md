@@ -2,7 +2,7 @@
 title: Experience Fragments
 seo-title: Experience Fragments
 description: Experience Fragments
-seo-description: 'null'
+seo-description: null
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 exl-id: 8906b3ab-cb08-4b3e-8796-334e36b1e491
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1309'
 ht-degree: 90%
 
 ---
@@ -45,7 +45,7 @@ Experience Fragments können in folgenden Fällen verwendet werden:
 >
 >Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
-## Wann ist die Verwendung von Experience Fragments sinnvoll?    {#when-should-you-use-experience-fragments}
+## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
 
 Experience Fragments sollten in folgenden Fällen verwendet werden:
 
@@ -89,11 +89,11 @@ Mit dem Erstellen von Ordnern können Sie:
    >
    >Verwenden Sie den [Vorlagen-Editor](/help/sites-authoring/templates.md), wenn Sie eine eigene Vorlage erstellen möchten.
 
-Das folgende Beispiel zeigt Experience Fragments, die nach `Contributors` strukturiert sind. Die verwendete Struktur zeigt auch, wie andere Funktionen, wie Multi-Site-Management (einschließlich Sprachkopien), verwendet werden können.
+Das folgende Beispiel zeigt Experience Fragments, die nach `Contributors`. Die verwendete Struktur zeigt auch, wie andere Funktionen, wie Multi-Site-Management (einschließlich Sprachkopien), verwendet werden können.
 
 >[!CAUTION]
 >
->Der folgende Screenshot wurde von der WKND-Site mit Adobe Experience Manager als Cloud Service aufgenommen.
+>Der folgende Screenshot wurde von der WKND-Site mit Adobe Experience Manager as a Cloud Service aufgenommen.
 
 ![Ordner für Experience Fragments](assets/xf-folders.png)
 
@@ -107,7 +107,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
 >[!NOTE]
 >
->Es ist auch möglich, die [Zulässigen Vorlagen für Ihre Instanz](#configure-allowed-templates-instance) zu konfigurieren. Diese Methode wird jedoch **nicht** empfohlen, da die Werte bei der Aktualisierung möglicherweise überschrieben werden.
+>Es ist auch möglich, die [Zulässige Vorlagen für Ihre Instanz](#configure-allowed-templates-instance), aber diese Methode ist **not** empfohlen, da die Werte bei der Aktualisierung möglicherweise überschrieben werden.
 
 ### Konfigurieren zulässiger Vorlagen für Ihren Ordner {#configure-allowed-templates-folder}
 
@@ -126,13 +126,13 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
    ![Experience Fragment-Eigenschaften – Zulässige Vorlagen](assets/xf-folders-templates.png)
 
-1. Wählen Sie **[!UICONTROL Speichern und schließen]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
 ### Konfigurieren zulässiger Vorlagen für Ihre Instanz {#configure-allowed-templates-instance}
 
 >[!CAUTION]
 >
->Es wird nicht empfohlen, die **[!UICONTROL Zulässige Vorlagen]** durch diese Methode zu ändern, da die angegebenen Vorlagen bei der Aktualisierung möglicherweise überschrieben werden.
+>Es wird nicht empfohlen, die **[!UICONTROL Zulässige Vorlagen]** durch diese Methode, da die angegebenen Vorlagen bei der Aktualisierung überschrieben werden können.
 >
 >Verwenden Sie diesen Dialog nur zu Informationszwecken.
 
@@ -156,11 +156,11 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigieren Sie zum gewünschten Ordner und wählen Sie **[!UICONTROL Erstellen]** aus.
+1. Navigieren Sie zum gewünschten Ordner und wählen Sie **[!UICONTROL Erstellen]**.
 
 1. Wählen Sie **[!UICONTROL Experience Fragment]** aus, um den Assistenten zum **[!UICONTROL Erstellen von Experience Fragments]** zu öffnen.
 
-   Wählen Sie die gewünschte Vorlage **** aus und klicken Sie auf **[!UICONTROL Weiter]**:
+   Wählen Sie die gewünschte **[!UICONTROL Vorlage]** aus und klicken Sie auf **[!UICONTROL Weiter]**:
 
    ![xf-authoring-02](assets/xf-authoring-02.png)
 
@@ -180,7 +180,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 ## Bearbeiten eines Experience Fragment {#editing-your-experience-fragment}
 
-Der Editor für Erlebnisfragmente bietet ähnliche Funktionen wie der normale Seiten-Editor. Weitere Informationen zur Verwendung finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md) .
+Der Editor für Erlebnisfragmente bietet ähnliche Funktionen wie der normale Seiten-Editor. Siehe [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md) für weitere Informationen zur Verwendung.
 
 Die folgende Beispielvorgehensweise veranschaulicht, wie Sie Teaser für Produkte erstellen:
 
@@ -264,7 +264,7 @@ So erstellen Sie einen neuen Baustein:
 
    ![xf-authoring-13](assets/xf-authoring-13.png)
 
-1. Geben Sie den Namen des Bausteins **** ein und bestätigen Sie ihn mit der Option **[!UICONTROL Konvertieren]**:
+1. Geben Sie den **[!UICONTROL Namen des Bausteins]** ein und bestätigen Sie ihn mit der Option **[!UICONTROL Konvertieren]**:
 
    ![xf-authoring-14](assets/xf-authoring-14.png)
 
@@ -276,7 +276,7 @@ So erstellen Sie einen neuen Baustein:
 
 Der Baustein wird auf der Registerkarte **[!UICONTROL Bausteine]** angezeigt. Für jeden Baustein sind die folgenden Aktionen verfügbar:
 
-* Zum Master wechseln: zum Öffnen der Master-Variante in einer neuen Registerkarte
+* Zur Hauptvariante wechseln: zum Öffnen der Hauptvariante in einer neuen Registerkarte
 * Umbenennen
 * Löschen
 
@@ -308,8 +308,8 @@ Beispiel:
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## Exportieren von Experience Fragments    {#exporting-experience-fragments}
+## Exportieren von Experience Fragments {#exporting-experience-fragments}
 
 Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies kann von AEM und Drittkanalanbietern gleichermaßen verwendet werden.
 
-Für den Export in Adobe Target wird HTML verwendet. Vollständige Informationen finden Sie unter [Target-Integration mit Experience Fragments](/help/sites-administering/experience-fragments-target.md).
+Für den Export nach Adobe Target wird HTML verwendet. Vollständige Informationen finden Sie unter [Target-Integration mit Experience Fragments](/help/sites-administering/experience-fragments-target.md).

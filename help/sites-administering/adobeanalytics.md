@@ -1,8 +1,8 @@
 ---
 title: Integration mit Adobe Analytics
-seo-title: Integration mit Adobe Analytics
+seo-title: Integrating with Adobe Analytics
 description: Hier erfahren Sie, wie Sie AEM mit Adobe Analytics integrieren.
-seo-description: Hier erfahren Sie, wie Sie AEM mit Adobe Analytics integrieren.
+seo-description: Learn how to integrate AEM with Adobe Analytics.
 uuid: 8329d891-1897-46f6-80ee-40244b079c0e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
 exl-id: ca11bfcd-06d1-4ca9-9069-afa91d8a6610
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '290'
 ht-degree: 94%
 
 ---
@@ -57,9 +57,7 @@ Siehe:
 >
 >* **Day Commons HTTP Client 3.1** zum Konfigurieren der 3.x-API;\
    >  Beispiel: [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
-   >
-   >
-* **Apache HTTP Components Proxy Configuration** zum Konfigurieren der 4.x-API;
 >
->  
-Beispiel: [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>* **Apache HTTP Components Proxy Configuration** zum Konfigurieren der 4.x-API;
+>
+>  Beispiel: [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)

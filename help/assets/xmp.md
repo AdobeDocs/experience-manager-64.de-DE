@@ -1,6 +1,6 @@
 ---
 title: XMP-Metadaten
-description: Erfahren Sie mehr über den XMP (Extensible Metadata Platform)-Metadatenstandard, der von [!DNL Experience Manager] Assets für die Metadatenverwaltung verwendet wird. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
+description: Erfahren Sie mehr über den XMP (Extensible Metadata Platform)-Metadatenstandard, der von [!DNL Experience Manager] Assets für die Metadatenverwaltung. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -14,7 +14,7 @@ ht-degree: 86%
 
 # XMP-Metadaten {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) ist der Metadatenstandard, der von [!DNL Experience Manager] Assets für die gesamte Metadatenverwaltung verwendet wird. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
+XMP (Extensible Metadata Platform) ist der Metadatenstandard, der von [!DNL Experience Manager] Assets für die gesamte Metadatenverwaltung. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
 
 XMP bietet nicht nur universelle Metadatenkodierung, die in alle Dateiformate eingebettet werden kann, sondern auch ein [Rich-Content-Modell](xmp.md#xmp-core-concepts). Außerdem wird XMP [von Adobe](xmp.md#advantages-of-xmp) und anderen Unternehmen unterstützt, sodass Benutzer, die XMP in Kombination mit  Assets einsetzen, über eine leistungsstarke Plattform verfügen.[!DNL Experience Manager]
 
@@ -24,7 +24,7 @@ Die [XMP-Spezifikation](https://www.adobe.com/devnet/xmp.html) wird von Adobe zu
 
 [!DNL Experience Manager] Assets unterstützt nativ XMP (die Extensible Metadata Platform von Adobe). XMP ist ein Standard für die Verarbeitung und Speicherung von standardisierten und proprietären Metadaten in digitalen Assets. XMP ist als der gemeinsame Standard konzipiert, dank dem mehrere Programme effektiv mit Metadaten arbeiten können.
 
-Produktionsexperten nutzen beispielsweise die integrierte XMP-Unterstützung innerhalb der Adobe-Programme, um Informationen über mehrere Dateiformate hinweg zu übergeben. Das [!DNL Experience Manager] Assets-Repository extrahiert die XMP-Metadaten und verwendet sie zur Verwaltung des Inhaltslebenszyklus und bietet die Möglichkeit, Automatisierungs-Workflows zu erstellen.
+Produktionsexperten nutzen beispielsweise die integrierte XMP-Unterstützung innerhalb der Adobe-Programme, um Informationen über mehrere Dateiformate hinweg zu übergeben. Die [!DNL Experience Manager] Das Assets-Repository extrahiert die XMP-Metadaten, verwendet sie zur Verwaltung des Inhaltslebenszyklus und bietet die Möglichkeit, Automatisierungs-Workflows zu erstellen.
 
 XMP standardisiert die Art, wie Metadaten definiert, erstellt und verarbeitet werden, indem ein Datenmodell, ein Speichermodell und Schemata bereitgestellt werden. Diese Grundlagen werden alle in diesem Abschnitt behandelt.
 

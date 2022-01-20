@@ -16,7 +16,7 @@ ht-degree: 62%
 
 [!DNL Experience Manager Assets] unterstützt eine breite Palette von Dateiformaten und jede Funktionalität bietet unterschiedliche Unterstützung für verschiedene MIME-Typen.
 
-Um [!DNL Assets] in andere standardkonforme DAM-Lösungen (Digital Asset Management) und Desktop-Software zu integrieren, verwenden Sie die Extensible Metadata Platform (XMP) von Adobe.
+Integration [!DNL Assets] Verwenden Sie zusammen mit anderen standardkonformen DAM-Lösungen (Digital Asset Management) und Desktop-Software die Extensible Metadata Platform (XMP) von Adobe.
 
 Die Legende gibt den Grad der Unterstützung an.
 
@@ -30,40 +30,40 @@ Die Legende gibt den Grad der Unterstützung an.
 
 Folgende Rasterbildformate werden für Asset-Management-Funktionen unterstützt:
 
-| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | Interaktive Bearbeitung | Metadaten-Writeback | Insights |
+| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturen | Interaktive Bearbeitung | Metadaten-Writeback | Insights |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| PNG | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| GIF | verwalten | verwalten | verwalten | verwalten | verwalten |  | verwalten |
-| TIFF | verwalten | verwalten | verwalten | verwalten |  | verwalten | verwalten |
-| JPEG | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| BMP | verwalten | verwalten | verwalten | verwalten | verwalten |  | verwalten |
-| PNM | verwalten | verwalten |  |  |  |  | verwalten |
-| PGM | verwalten | verwalten |  |  |  |  | verwalten |
-| PBM | verwalten | verwalten |  |  |  |  | verwalten |
-| PPM | verwalten | verwalten |  |  |  |  | verwalten |
-| PSD **‡** | verwalten | verwalten | verwalten | verwalten |  |  | verwalten |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | verwalten | verwalten |  | verwalten |  |
-| PICT |  |  |  |  |  |  | verwalten |
-| PSB | verwalten | verwalten | verwalten | verwalten |  |  |  |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
+| PNM | ✓ | ✓ |  |  |  |  | ✓ |
+| PGM | ✓ | ✓ |  |  |  |  | ✓ |
+| PBM | ✓ | ✓ |  |  |  |  | ✓ |
+| PPM | ✓ | ✓ |  |  |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
+| PICT |  |  |  |  |  |  | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
 **‡** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 Folgende Rasterbildformate werden für Dynamic Media-Funktionen unterstützt:
 
-| Format | Upload<br> (Eingabeformat) | Erstellen<br> image<br> preset<br> (Ausgabeformat) | Vorschau<br> dynamische<br> Ausgabedarstellung | Bereitstellung<br> dynamischer<br> Ausgabedarstellung | Download<br> dynamische<br> Ausgabedarstellung |
+| Format | Hochladen<br> (Eingabeformat) | Erstellen<br> image<br> preset<br> (Ausgabeformat) | Vorschau<br> dynamisch<br> Ausgabedarstellung | Versand<br> dynamisch<br> Ausgabedarstellung | Download<br> dynamisch<br> Ausgabedarstellung |
 |---|:---:|:---:|:---:|:---:|:---:|
-| PNG | verwalten | verwalten | verwalten | verwalten | verwalten |
-| GIF | verwalten | verwalten | verwalten | verwalten | verwalten |
-| TIFF | verwalten | verwalten | verwalten | verwalten | verwalten |
-| JPEG | verwalten | verwalten | verwalten | verwalten | verwalten |
-| BMP | verwalten |  |  |  |  |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
+| BMP | ✓ |  |  |  |  |
 | PNM |  |  |  |  |  |
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **‡** | verwalten |  |  |  |  |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | verwalten | verwalten | verwalten |
-| PICT | verwalten |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
 **‡** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
@@ -72,7 +72,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 * Die Unterstützung für EPS-Dateien gilt nur für Rasterbilder. Zum Beispiel wird die Erstellung von Miniaturansichten für Vektorbilder im EPS-Format nicht standardmäßig unterstützt. Um die Unterstützung hinzuzufügen, [konfigurieren Sie ImageMagick](best-practices-for-imagemagick.md). Informationen zur Integration von Drittanbieter-Tools zur Aktivierung zusätzlicher Funktionen finden Sie unter [Befehlszeilenbasierter Medien-Handler](media-handlers.md#command-line-based-media-handler).
 
-* Metadaten-Writeback funktioniert für das PSB-Dateiformat, wenn es zum Handler `NComm` hinzugefügt wird.
+* Metadaten-Writeback funktioniert für das PSB-Dateiformat, wenn es zum `NComm` Handler.
 
 * Um mithilfe von Dynamic Media dynamische Ausgaben für EPS-Dateien in der Vorschau anzuzeigen und zu generieren, informieren Sie sich unter [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
@@ -80,7 +80,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 ## Nicht unterstützte Rasterbildformate in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-In der folgenden Liste werden die Untertypen der Rasterbilddateiformate beschrieben, die in Dynamic Media nicht von *a1/> unterstützt werden.*
+In der folgenden Liste werden die Untertypen von Rasterbilddateiformaten beschrieben, die *not* unterstützt in Dynamic Media.
 
 Siehe auch [Erkennung nicht unterstützter Dateiformate für Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
@@ -111,42 +111,42 @@ Siehe [Imaging Transcoding Library](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-Die Adobe Camera Raw-Bibliothek ermöglicht [!DNL Assets] die Aufnahme von Rohbildern. Siehe [Camera Raw Unterstützung](camera-raw.md).
+Die Adobe Camera Raw-Bibliothek aktiviert [!DNL Assets] , um Rohbilder aufzunehmen. Siehe [Camera Raw Unterstützung](camera-raw.md).
 
 ## Dokumentenformate {#supported-document-formats}
 
 Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
-| Format | Speicherung | Verwaltung von Metadaten<br> | Volltext<br> Extraktion | Extraktion von Metadaten<br> | Generierung von Miniaturansichten<br> | Extraktion von Subasset<br> | Metadaten<br> Writeback |
+| Format | Speicherung | Metadaten<br> management | Volltext<br> Extraktion | Metadaten<br> Extraktion | Miniatur<br> generation | Teil-Asset<br> Extraktion | Metadaten<br> Writeback |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten |  | verwalten | verwalten | verwalten | verwalten |
-| DOC | verwalten | verwalten | verwalten | verwalten |  |  |  |
-| DOCX | verwalten | verwalten | verwalten | verwalten |  |  |  |
-| ODT | verwalten | verwalten | verwalten |  |  |  |  |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| HTML | verwalten | verwalten | verwalten |  |  |  |  |
-| RTF | verwalten | verwalten | verwalten |  |  |  |  |
-| TXT | verwalten | verwalten | verwalten |  |  |  |  |
-| XLS | verwalten | verwalten | verwalten |  |  |  |  |
-| XLSX | verwalten | verwalten | verwalten | verwalten |  |  |  |
-| ODS | verwalten | verwalten | verwalten |  |  |  |  |
-| PPT | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |  |
-| PPTX | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |  |
-| ODP | verwalten | verwalten | verwalten |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | verwalten | verwalten |  | verwalten | verwalten | verwalten | verwalten |
-| PS | verwalten | verwalten |  |  |  |  |  |
-| QXP | verwalten | verwalten |  |  |  |  |  |
-| EPUB | verwalten | verwalten |  | verwalten | verwalten |  |  |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
+| DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| DOCX | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| ODT | ✓ | ✓ | ✓ |  |  |  |  |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| HTML | ✓ | ✓ | ✓ |  |  |  |  |
+| RTF | ✓ | ✓ | ✓ |  |  |  |  |
+| TXT | ✓ | ✓ | ✓ |  |  |  |  |
+| XLS | ✓ | ✓ | ✓ |  |  |  |  |
+| XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  |
+| ODS | ✓ | ✓ | ✓ |  |  |  |  |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| ODP | ✓ | ✓ | ✓ |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
+| PS | ✓ | ✓ |  |  |  |  |  |
+| QXP | ✓ | ✓ |  |  |  |  |  |
+| EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
 Folgende Dokumentenformate werden für Dynamic Media-Funktionen unterstützt:
 
-| Format | Upload<br> (Eingabeformat) | Erstellen<br> image<br> preset<br> (Ausgabeformat) | Vorschau<br> dynamische<br> Ausgabedarstellung | Bereitstellung<br> dynamischer<br> Ausgabedarstellung | Download<br> dynamische<br> Ausgabedarstellung |
+| Format | Hochladen<br> (Eingabeformat) | Erstellen<br> image<br> preset<br> (Ausgabeformat) | Vorschau<br> dynamisch<br> Ausgabedarstellung | Versand<br> dynamisch<br> Ausgabedarstellung | Download<br> dynamisch<br> Ausgabedarstellung |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [KI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten |  |  |  |  |
+| [KI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
 | DOC |  |  |  |  |  |
 | DOCX |  |  |  |  |  |
 | ODT |  |  |  |  |  |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | verwalten | verwalten | verwalten | verwalten | verwalten |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML |  |  |  |  |  |
 | RTF |  |  |  |  |  |
 | TXT |  |  |  |  |  |
@@ -156,10 +156,10 @@ Folgende Dokumentenformate werden für Dynamic Media-Funktionen unterstützt:
 | PPT |  |  |  |  |  |
 | PPTX |  |  |  |  |  |
 | ODP |  |  |  |  |  |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | verwalten |  |  |  |  |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ |  |  |  |  |
 | PS |  |  |  |  |  |
 | QXP |  |  |  |  |  |
-| EPUB |  |  |  |  |  |
+| ePub |  |  |  |  |  |
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
@@ -167,30 +167,30 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
 * Um mithilfe von Dynamic Media dynamische Ausgaben für AI-Dateien in der Vorschau anzuzeigen und zu generieren, informieren Sie sich unter [Adobe Illustrator (AI)-, PostScript (EPS)- und PDF-Dateiformate.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) 
 
-* Informationen zum Generieren dynamischer Ausgabeformate für INDD-Dateien mit Dynamic Media finden Sie unter [InDesign (INDD)-Dateiformat](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Informationen zum Generieren dynamischer Ausgabeformate für INDD-Dateien mit Dynamic Media finden Sie unter [Dateiformat InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## Multimediaformate {#supported-multimedia-formats}
 
-| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturansichten | FFMPEG-Transkodierung |
+| Format | Speicherung | Metadatenverwaltung | Metadatenextraktion | Generierung von Miniaturen | FFMPEG-Transkodierung |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | verwalten | verwalten |  | - | * |
-| MIDI | verwalten | verwalten |  | - | * |
-| 3GP | verwalten | verwalten |  | - | * |
-| MP3 | verwalten | verwalten | verwalten | - | * |
-| MPG | verwalten | verwalten |  | - | * |
-| OGA | verwalten | verwalten |  | - | * |
-| OGG | verwalten | verwalten |  | - | * |
-| RA | verwalten | verwalten |  | - | * |
-| WAV | verwalten | verwalten |  | - | * |
-| WMA | verwalten | verwalten |  | - | * |
-| DVI | verwalten | verwalten |  | * | * |
-| FLV | verwalten | verwalten |  | * | * |
-| M4V | verwalten | verwalten |  | * | * |
-| MPEG | verwalten | verwalten |  | * | * |
-| OGV | verwalten | verwalten |  | * | * |
-| MOV | verwalten | verwalten |  | * | * |
-| WMV | verwalten | verwalten |  | * | * |
-| SWF | verwalten | verwalten |  |  |  |
+| AAC | ✓ | ✓ |  | - | * |
+| MIDI | ✓ | ✓ |  | - | * |
+| 3GP | ✓ | ✓ |  | - | * |
+| MP3 | ✓ | ✓ | ✓ | - | * |
+| MPG | ✓ | ✓ |  | - | * |
+| OGA | ✓ | ✓ |  | - | * |
+| OGG | ✓ | ✓ |  | - | * |
+| RA | ✓ | ✓ |  | - | * |
+| WAV | ✓ | ✓ |  | - | * |
+| WMA | ✓ | ✓ |  | - | * |
+| DVI | ✓ | ✓ |  | * | * |
+| FLV | ✓ | ✓ |  | * | * |
+| M4V | ✓ | ✓ |  | * | * |
+| MPEG | ✓ | ✓ |  | * | * |
+| OGV | ✓ | ✓ |  | * | * |
+| MOV | ✓ | ✓ |  | * | * |
+| WMV | ✓ | ✓ |  | * | * |
+| SWF | ✓ | ✓ |  |  |  |
 
 ## Eingabevideoformate für die Dynamic Media-Transkodierung {#supported-input-video-formats-for-dynamic-media-transcoding}
 
@@ -219,11 +219,11 @@ Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | verwalten | verwalten | verwalten | verwalten | verwalten |  |
-| JAR | verwalten | verwalten | verwalten | verwalten | verwalten |  |
-| RAR | verwalten | verwalten | verwalten | verwalten | verwalten |  |
-| TAR | verwalten | verwalten | verwalten | verwalten | verwalten |  |
-| ZIP **†** | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 **†** Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht. Die ZIP-Archive, die unter Verwendung des `Deflate64`-Algorithmus erstellt werden, werden in AEM nur begrenzt unterstützt. Archivierungs- und Archivierungsvorgänge werden nicht unterstützt. Jedoch werden Operationen wie das Laden, Navigieren und Herunterladen unterstützt.
 
@@ -233,20 +233,20 @@ Die Anwendbarkeit allgemeiner DAM-Workflows für einige weitere Dateiformate wir
 
 | Format | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung dynamischer Medien |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **#** | verwalten | verwalten | verwalten | verwalten | verwalten |  |
-| SVG | verwalten | verwalten | verwalten | verwalten | verwalten |  |
-| CSS | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| VTT | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| XML | verwalten | verwalten | verwalten | verwalten | verwalten | verwalten |
-| Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) |  |  |  |  |  | verwalten |
+| **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Javascript (wenn mit eigener Bereitstellungsdomäne konfiguriert) |  |  |  |  |  | ✓ |
 
 **#** Die anderen Formate werden in DAM für Speicher, Versionierung, ACL, Workflow, Veröffentlichung und Metadatenverwaltung unterstützt.
 
 ## Unterstützte MIME-Typen {#supported-mime-types}
 
-Standardmäßig erkennt [!DNL Experience Manager] den Dateityp mit der Dateierweiterung . [!DNL Experience Manager] kann es aus dem Inhalt der Dateien erkennen. Wählen Sie für letztere die Option [!UICONTROL MIME aus Inhalt erkennen] in [!UICONTROL Day CQ DAM Mime Type Service] in der Web-Konsole [!DNL Experience Manager].
+Standardmäßig [!DNL Experience Manager] erkennt den Dateityp mithilfe der Dateierweiterung. [!DNL Experience Manager] kann es aus dem Inhalt der Dateien erkennen. Wählen Sie für letztere die Option [!UICONTROL MIME aus Inhalt erkennen] Option in [!UICONTROL Day CQ DAM Mime Type Service] im [!DNL Experience Manager] Web-Konsole.
 
-Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes` verfügbar.
+Eine Liste der unterstützten MIME-Typen finden Sie in CRXDE Lite unter `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | Dateierweiterung | MIME-Typ/Internetmedientyp | Standardmäßiger jobParam-Wert | Zulässiger jobParam-Wert |
 |---|---|---|---|
@@ -308,6 +308,6 @@ Eine Liste der unterstützten MIME-Typen ist in CRXDE Lite unter `/conf/global/s
 
 >[!MORELIKETHIS]
 >
->* [Aktivieren Sie die Unterstützung](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) von MIME-typbasierten Assets/Dynamic Media Classic-Upload-Auftragsparametern.
->* [Konfigurieren Sie die Unterstützung](config-dynamic.md) von MIME-typbasierten Upload-Auftragsparametern.
+>* [Unterstützung von MIME-typbasierten Assets/Dynamic Media Classic-Upload-Auftragsparametern aktivieren](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+>* [Konfigurieren der Unterstützung von MIME-Typen für Upload-Auftragsparametern](config-dynamic.md).
 

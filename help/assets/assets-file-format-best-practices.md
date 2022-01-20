@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Best Practices für Dateiformate in Assets {#assets-file-format-best-practices}
 
-[!DNL Experience Manager Assets] unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. Zu den unterstützten Adobe-Bibliotheken zählen Adobe Camera Raw, Gibson, Adobe PDF Rasterizer und Adobe InDesign Server. Darüber hinaus unterstützt [!DNL Assets] Drittanbieterbibliotheken, einschließlich ImageMagick, TzwölfMonkeys usw.
+[!DNL Experience Manager Assets] unterstützt viele proprietäre und Drittanbieter-Dateiformatbibliotheken, um benutzerseitigen Bedarf an Dateiunterstützung zu decken. Zu den unterstützten Adobe-Bibliotheken zählen Adobe Camera Raw, Gibson, Adobe PDF Rasterizer und Adobe InDesign Server. Darüber hinaus [!DNL Assets] unterstützt Bibliotheken von Drittanbietern, einschließlich ImageMagick, TformerMonkeys usw.
 
 Eine vollständige Liste der unterstützten Dateiformate finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).
 
@@ -41,7 +41,7 @@ Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, habe
 
 ## Adobe InDesign Server {#adobe-indesign-cc-server}
 
-Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. Weitere Informationen finden Sie unter [Hinzufügen von [!DNL Experience Manager] Assets als Referenzen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe empfiehlt, InDesign Server zu verwenden, um die InDesign-spezifischen Ausgaben von Adobe, darunter IDML und HTML, zu extrahieren. Weitere Informationen finden Sie unter [Hinzufügen [!DNL Experience Manager] Assets als Referenzen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -58,7 +58,7 @@ Adobe empfiehlt, die ImageMagick-Bibliothek für folgende Zwecke zu verwenden:
 * Beibehaltung von Transparenz
 * Verarbeitung von PSD- und PSB-Dateien
 
-Informationen zum Einrichten der ImageMagic-Bibliothek in [!DNL Experience Manager] finden Sie unter [Verwenden von ImageMagick](media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](best-practices-for-imagemagick.md).
+Informationen zum Einrichten der ImageMagic-Bibliothek in [!DNL Experience Manager], siehe [Verwenden von ImageMagick](media-handlers.md#an-example-using-imagemagick). Hinweise zur optimalen Verwendung finden Sie unter [Best Practices zur Konfiguration von ImageMagick](best-practices-for-imagemagick.md).
 
 ## Imaging Transcoding Library {#image-transcoding-library}
 

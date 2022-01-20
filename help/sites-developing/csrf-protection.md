@@ -1,8 +1,8 @@
 ---
 title: Das CSRF Protection Framework
-seo-title: Das CSRF Protection Framework
+seo-title: The CSRF Protection Framework
 description: Das Framework verwendet Tokens, um sicherzustellen, dass die Client-Anfrage legitim ist
-seo-description: Das Framework verwendet Tokens, um sicherzustellen, dass die Client-Anfrage legitim ist
+seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
 uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: 533c348e-517f-4d70-a89c-bfc87f71a633
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 72%
+source-wordcount: '282'
+ht-degree: 70%
 
 ---
 
@@ -35,7 +35,7 @@ Jede Komponente, die sich auf die Abhängigkeit `granite.jquery` stützt, profit
 
 ### Replizieren des Crypto-Schlüssels {#replicating-crypto-keys}
 
-Um die Token zu nutzen, müssen Sie die `/etc/keys/hmac` -Binärdatei für alle Instanzen in Ihrer Implementierung replizieren. Eine bequeme Möglichkeit, den HMAC-Schlüssel in alle Instanzen zu kopieren, besteht darin, ein Paket zu erstellen, das den Schlüssel enthält, und ihn über Package Manager auf alle Instanzen zu installieren.
+Um die Token zu nutzen, müssen Sie die `/etc/keys/hmac` Binärdatei für alle Instanzen in Ihrer Implementierung verwenden. Eine bequeme Möglichkeit, den HMAC-Schlüssel in alle Instanzen zu kopieren, besteht darin, ein Paket zu erstellen, das den Schlüssel enthält, und ihn über Package Manager auf alle Instanzen zu installieren.
 
 >[!NOTE]
 >
@@ -43,6 +43,6 @@ Um die Token zu nutzen, müssen Sie die `/etc/keys/hmac` -Binärdatei für alle 
 
 >[!NOTE]
 >
->Wenn Sie den Manifestcache mit Ihrer Webanwendung verwenden, stellen Sie sicher, dass Sie &quot;**&amp;ast;**&quot;zum Manifest hinzufügen, um sicherzustellen, dass das Token den Aufruf zur Erstellung von CSRF-Token nicht offline nimmt. Weitere Informationen finden Sie unter diesem [Link](https://www.w3.org/TR/offline-webapps/).
+>Wenn Sie den Manifestcache mit Ihrer Webanwendung verwenden, stellen Sie sicher, dass Sie &quot;**&amp;ast;**&quot; in das Manifest ein, um sicherzustellen, dass das Token den CSRF-Token-Generierungsaufruf nicht offline nimmt. Weitere Informationen finden Sie unter diesem [Link](https://www.w3.org/TR/offline-webapps/).
 >
 >Weitere Informationen zu CSRF-Angriffen und Möglichkeiten, sie abzuschwächen, finden Sie auf der Seite [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).

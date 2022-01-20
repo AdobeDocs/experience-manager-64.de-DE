@@ -1,19 +1,19 @@
 ---
 title: Leistungsrichtlinien
-seo-title: Leistungsrichtlinien
+seo-title: Performance Guidelines
 description: Dieser Artikel erhält allgemeine Richtlinien zur Optimierung der Leistung Ihrer AEM-Installation.
-seo-description: Dieser Artikel erhält allgemeine Richtlinien zur Optimierung der Leistung Ihrer AEM-Installation.
+seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
 uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
-feature: Konfiguration
+feature: Configuring
 exl-id: ee86b1b9-68fb-4311-bf5f-6151dd94d3b0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2994'
+source-wordcount: '2976'
 ht-degree: 84%
 
 ---
@@ -54,7 +54,7 @@ Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (
    <td><p>LDAP</p> </td> 
    <td><p>Tar</p> </td> 
    <td><p>Segment</p> </td> 
-   <td><p>Property</p> </td> 
+   <td><p>Eigenschaft</p> </td> 
    <td><p>Apache</p> </td> 
    <td><p>Edge</p> </td> 
    <td><p>Target</p> </td> 
@@ -71,7 +71,7 @@ Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (
    <td><p>Lucene</p> </td> 
    <td><p>IIS</p> </td> 
    <td><p>IE</p> </td> 
-   <td><p>Analytics</p> </td> 
+   <td><p>Analyse</p> </td> 
   </tr> 
   <tr> 
    <td><p>Communities</p> </td> 
@@ -113,7 +113,7 @@ Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (
    <td><p> </p> </td> 
    <td><p> </p> </td> 
    <td><p>Safari</p> </td> 
-   <td><p>Audience</p> </td> 
+   <td><p>Zielgruppe</p> </td> 
   </tr> 
   <tr> 
    <td><p>Multi-Site</p> </td> 
@@ -262,7 +262,7 @@ Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (
 >
 >Die Leistungsrichtlinien gelten hauptsächlich für AEM Sites.
 
-## Nutzung der Leistungsrichtlinien  {#when-to-use-the-performance-guidelines}
+## Nutzung der Leistungsrichtlinien {#when-to-use-the-performance-guidelines}
 
 Die Leistungsrichtlinien sollten in den folgenden Situationen Einsatz finden:
 
@@ -276,7 +276,7 @@ Die Leistungsrichtlinien sollten in den folgenden Situationen Einsatz finden:
 
 Dieses Kapitel gibt einen allgemeinen Überblick über die AEM-Architektur und ihre wichtigsten Komponenten. Darüber hinaus werden Entwicklungsrichtlinien bereitgestellt und Testszenarien beschrieben, die für die TarMK- und MongoMK-Benchmarktests genutzt wurden.
 
-### Die AEM-Plattform  {#the-aem-platform}
+### Die AEM-Plattform {#the-aem-platform}
 
 Die AEM-Plattform besteht aus folgenden Komponenten:
 
@@ -286,13 +286,13 @@ Weitere Informationen zur AEM finden Sie unter [Was ist AEM](/help/sites-deployi
 
 ### Die AEM-Architektur {#the-aem-architecture}
 
-Eine AEM-Bereitstellung umfasst drei wichtige Bausteine. Die **Autoreninstanz**, die von Inhaltsautoren, Redakteuren und Genehmigungsberechtigten zum Erstellen und Überprüfen von Inhalten verwendet wird. Wenn Inhalte genehmigt werden, werden sie auf einem zweiten Instanztyp, der **Veröffentlichungsinstanz** veröffentlicht, über die Endbenutzer auf die Inhalte zugreifen können. Der dritte Baustein ist der **Dispatcher**, ein Modul, das das Caching und URL-Filtern verarbeitet und auf dem Webserver installiert ist. Weitere Informationen zur AEM-Architektur finden Sie unter [Typische Bereitstellungsszenarien](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
+Eine AEM-Bereitstellung umfasst drei wichtige Bausteine. Die **Autoreninstanz**, die von Inhaltsautoren, Redakteuren und Genehmigungsberechtigten zum Erstellen und Überprüfen von Inhalten verwendet wird. Wenn Inhalte genehmigt werden, werden sie auf einem zweiten Instanztyp, der **Veröffentlichungsinstanz** veröffentlicht, über die Endbenutzer auf die Inhalte zugreifen können. Der dritte Baustein ist die **Dispatcher** ist ein Modul, das die Zwischenspeicherung und URL-Filterung verarbeitet und auf dem Webserver installiert ist. Weitere Informationen zur AEM-Architektur finden Sie unter [Typische Bereitstellungsszenarien](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
 
 ### Mikrokernels {#micro-kernels}
 
-Mikrokernels fungieren als Persistenzmanager in AEM. Es gibt drei Arten von Mikrokernels, die mit AEM verwendet werden: TarMK, MongoDB und relationale Datenbank (unter eingeschränkter Unterstützung). Welcher Mikrokernel Ihre Anforderungen erfüllt, hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab. Weitere Informationen zu Mikrokernels finden Sie auf der Seite [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md) .
+Mikrokernels fungieren als Persistenzmanager in AEM. Es gibt drei Arten von Mikrokernels, die mit AEM verwendet werden: TarMK, MongoDB und relationale Datenbank (unter eingeschränkter Unterstützung). Welcher Mikrokernel Ihre Anforderungen erfüllt, hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab. Weitere Informationen zu Mikrokernels finden Sie im [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md) Seite.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -318,13 +318,13 @@ Weitere Informationen zu den verfügbaren Konfigurationsoptionen finden Sie unte
 
 >[!NOTE]
 >
->Adobe empfiehlt folgende Bereitstellungsoption: AEM auf Azure oder Amazon Web Services (AWS) mit Adobe Managed Services. Dadurch profitieren Kunden vom Zugang zu einem Expertenteam, das Erfahrung mit der Bereitstellung und dem Betrieb von AEM in diesen Cloud-Computing-Umgebungen hat. Weitere Informationen finden Sie in der [zusätzlichen Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+>Adobe empfiehlt folgende Bereitstellungsoption: AEM auf Azure oder Amazon Web Services (AWS) mit Adobe Managed Services. Dadurch profitieren Kunden vom Zugang zu einem Expertenteam, das Erfahrung mit der Bereitstellung und dem Betrieb von AEM in diesen Cloud-Computing-Umgebungen hat. Bitte sehen Sie sich unsere [Zusätzliche Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 >
 >Für die Bereitstellung von AEM auf Azure oder AWS ohne Adobe Managed Services wird dringend empfohlen, direkt mit dem Cloud-Anbieter oder einem unserer Partner, der die Bereitstellung von AEM in der gewünschten Cloud-Umgebung unterstützt, zusammenzuarbeiten. Der ausgewählte Cloud-Anbieter oder Partner ist für die Größenspezifikation, das Design und die Implementierung der von ihm unterstützten Architektur verantwortlich, um Ihre spezifischen Anforderungen an Leistung, Last, Skalierbarkeit und Sicherheit zu erfüllen.
 >
->Weitere Informationen finden Sie auch auf der Seite [Technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms) .
+>Weitere Informationen finden Sie unter [technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms) Seite.
 
-### Suche {#search-features}
+### Suchen {#search-features}
 
 In diesem Abschnitt sind die in AEM verwendeten benutzerdefinierten Index-Provider aufgeführt. Weitere Informationen zur Indizierung finden Sie unter [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md).
 
@@ -365,13 +365,13 @@ Bei der Entwicklung für AEM sollten **Leistung und Skalierbarkeit** im Mittelpu
 
 Weitere Einzelheiten zur Entwicklung in AEM finden Sie unter [Entwicklung – Grundlagen](/help/sites-developing/the-basics.md). Weitere Best Practices finden Sie unter [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md).
 
-### Benchmark-Szenarien  {#benchmark-scenarios}
+### Benchmark-Szenarien {#benchmark-scenarios}
 
 >[!NOTE]
 >
 >Alle auf dieser Seite gezeigten Benchmarktests wurden in einer Lab-Umgebung durchgeführt.
 
-Die unten beschriebenen Testszenarien werden für die Abschnitte mit den Benchmarktests der Kapitel „TarMK“, „MongoMK“ und „TarMK im Vergleich zu MongoMK“ verwendet. Um zu sehen, welches Szenario für einen bestimmten Benchmarktest verwendet wurde, lesen Sie das Feld Szenario aus der Tabelle [Technische Spezifikationen](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) .
+Die unten beschriebenen Testszenarien werden für die Abschnitte mit den Benchmarktests der Kapitel „TarMK“, „MongoMK“ und „TarMK im Vergleich zu MongoMK“ verwendet. Um zu sehen, welches Szenario für einen bestimmten Benchmarktest verwendet wurde, lesen Sie das Feld Szenario aus dem [Technische Spezifikationen](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) Tabelle.
 
 **Einzelprodukt-Szenario**
 
@@ -401,13 +401,13 @@ Dieses Kapitel enthält allgemeine Leistungsrichtlinien für TarMK sowie die Min
 
 Adobe empfiehlt Kunden, TarMK als Standard-Persistenztechnologie in allen Bereitstellungsszenarien zu verwenden, sowohl für die Autoren- als auch die Veröffentlichungsinstanz von AEM.
 
-Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarios](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [Tar-Speicher](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
+Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [Tar-Speicher](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
 ### Mindestarchitektur für TarMK – Richtlinien {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
 >
->Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Sites mit einem hohen Traffic-Volumen. Dies sind **nicht** die [minimalen Spezifikationen](/help/sites-deploying/technical-requirements.md#prerequisites), die zum Ausführen von AEM erforderlich sind.
+>Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Sites mit einem hohen Traffic-Volumen. Diese **not** die [Mindestanforderungen](/help/sites-deploying/technical-requirements.md#prerequisites) benötigt, um AEM auszuführen.
 
 Um bei Verwendung von TarMK eine optimale Leistung zu erzielen, sollten Sie als Ausgangspunkt eine Architektur mit folgenden Komponenten nutzen:
 
@@ -431,7 +431,7 @@ Nachfolgend sind die Architekturrichtlinien für AEM Sites und AEM Assets beschr
 
 ### TarMK-Einstellungen – Richtlinien {#tarmk-settings-guideline}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie auf dieser Seite](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).[
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie unter [diese Seite anzeigen](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 <table> 
  <tbody> 
@@ -486,7 +486,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellung
  </tbody> 
 </table>
 
-### Leistungsbenchmarktest für TarMK  {#tarmk-performance-benchmark}
+### Leistungsbenchmarktest für TarMK {#tarmk-performance-benchmark}
 
 #### Technische Spezifikationen {#technical-specifications}
 
@@ -541,14 +541,14 @@ Um bei Verwendung von MongoMK eine optimale Leistung zu erzielen, sollten Sie al
 
 ### MongoMK-Einstellungen – Richtlinien {#mongomk-settings-guidelines}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie auf dieser Seite](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).[
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie unter [diese Seite anzeigen](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
 
 <table> 
  <tbody> 
   <tr> 
    <td><strong>Einstellung</strong></td> 
    <td><strong>Parameter</strong></td> 
-   <td><strong>Wert (default)</strong></td> 
+   <td><strong>Wert (Standard) </strong></td> 
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
@@ -632,13 +632,13 @@ Der Hauptgrund dafür, warum anstatt des TarMK der MongoMK als Persistenz-Backen
 
 Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md#microkernels-which-one-to-use).
 
-### MongoMK im Vergleich zu TarMK – Richtlinien  {#tarmk-vs-mongomk-guidelines}
+### MongoMK im Vergleich zu TarMK – Richtlinien {#tarmk-vs-mongomk-guidelines}
 
 **Vorteile von TarMK** 
 
 * Wurde speziell für Content-Management-Anwendungen entwickelt
 * Dateien sind immer konsistent und können mit einem beliebigen dateibasierten Sicherungstool gesichert werden
-* Stellt einen Failover-Mechanismus bereit - weitere Informationen finden Sie unter [Cold Standby](/help/sites-deploying/tarmk-cold-standby.md) .
+* Stellt einen Failover-Mechanismus bereit - siehe [Cold Standby](/help/sites-deploying/tarmk-cold-standby.md) für weitere Details
 * Bietet hohe Leistung und zuverlässige Datenspeicherung bei minimalem Betriebsaufwand
 * Niedrige Gesamtbetriebskosten
 
@@ -650,13 +650,13 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
 * Volumen der Seitenbearbeitungen pro Tag: Hunderttausende oder mehr
 * Volumen der Suchvorgänge pro Tag: Zehntausende oder mehr
 
-### MongoMK im Vergleich zu TarMK – Benchmarktests  {#tarmk-vs-mongomk-benchmarks}
+### MongoMK im Vergleich zu TarMK – Benchmarktests {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
 >
 >Die unten angegebenen Zahlen wurden mit 1 als Basislinie normiert und sind keine tatsächlichen Durchsatzzahlen.
 
-### Szenario 1 – Technische Spezifikationen  {#scenario-technical-specifications}
+### Szenario 1 – Technische Spezifikationen {#scenario-technical-specifications}
 
 <table> 
  <tbody> 
@@ -855,6 +855,6 @@ Die auf dieser Seite beschriebenen Richtlinien können wie folgt zusammengefasst
 
    * Für die benutzerdefinierten Indizes sollten Lucene-Indizes verwendet werden
 
-* **Die Anpassung des Workflows kann die Leistung** erheblich verbessern, z. B. das Entfernen des Videoschritts im Workflow &quot;Asset aktualisieren&quot;, das Deaktivieren von nicht verwendeten Listenern usw.
+* **Die Anpassung des Workflows kann die Leistung erheblich verbessern**, beispielsweise das Entfernen des Videoschritts im Workflow &quot;Asset aktualisieren&quot;, das Deaktivieren von nicht verwendeten Listenern usw.
 
 Weitere Einzelheiten finden Sie auch auf der Seite [Empfohlen Bereitstellungen](/help/sites-deploying/recommended-deploys.md).

@@ -1,8 +1,8 @@
 ---
 title: Allgemeine Sicherheitsaspekte für AEM Forms on JEE
-seo-title: Allgemeine Sicherheitsaspekte für AEM Forms on JEE
+seo-title: General Security Considerations for AEM Forms on JEE
 description: Erfahren Sie, wie Sie sich auf die Härtung Ihrer AEM Forms on JEE-Umgebung vorbereiten.
-seo-description: Erfahren Sie, wie Sie sich auf die Härtung Ihrer AEM Forms on JEE-Umgebung vorbereiten.
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: c5f6ffc7-b987-4541-ab60-e97b4ff5b2a4
 content-type: reference
 topic-tags: Security
@@ -12,8 +12,8 @@ role: Admin
 exl-id: cde40670-ce9d-4b96-92d3-9e56cb15bdce
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 58%
+source-wordcount: '1091'
+ht-degree: 59%
 
 ---
 
@@ -103,7 +103,7 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Anwendungsserver
  <tbody>
   <tr> 
    <td><p>Oracle WebLogic®</p> </td> 
-   <td><p>Suchen Sie unter <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a> nach "Understanding WebLogic Security".</p> </td> 
+   <td><p>Suchen Sie nach WebLogic Security unter <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><p>IBM WebSphere®</p> </td> 
@@ -217,13 +217,13 @@ Der JBoss-Anwendungsserver verwendet 8080 als HTTP-Standardanschluss. JBoss verf
 
 1. Öffnen Sie die folgende Datei zur Bearbeitung:
 
-   Einzelserverinstallation: [JBoss root]/standalone/configuration/standalone.xml
+   Einzelserverinstallation: [JBoss-Stamm]/standalone/configuration/standalone.xml
 
-   Cluster-Installationen: [JBoss root]/domain/configuration/domain.xml
+   Cluster-Installationen: [JBoss-Stamm]/domain/configuration/domain.xml
 
-1. Ändern Sie den Wert des Attributs **port** im Tag **&lt;socket-binding>** in eine benutzerdefinierte Portnummer. Im Folgenden wird beispielsweise Port 8090 verwendet:
+1. Ändern des Werts von **port** -Attribut im **&lt;socket-binding>** -Tag an eine benutzerdefinierte Portnummer. Im Folgenden wird beispielsweise Port 8090 verwendet:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Speichern und schließen Sie die Datei.
 1. Starten Sie JBoss Application Server neu.
@@ -244,7 +244,7 @@ AEM Forms on JEE verwendet die AEM Forms on JEE-Datenbank, um vertrauliche Infor
 
 Der zum Ausführen von AEM Forms on JEE verwendete Anwendungsserver benötigt seine eigene Konfiguration, um über eine auf dem Anwendungsserver konfigurierte Datenquelle auf Ihre Datenbank zuzugreifen. Stellen Sie sicher, dass Ihr Anwendungsserver Ihr Datenbankkennwort nicht in der Datenquellenkonfigurationsdatei im Klartext verfügbar macht.
 
-Die Datei &quot;lc_[database].xml&quot;sollte kein Kennwort im Klartextformat enthalten. Fragen Sie beim Hersteller des Anwendungsservers nach, wie Sie diese Kennwörter für Ihren Anwendungsserver verschlüsseln sollen.
+lc_[Datenbank].xml-Datei sollte kein Kennwort im Klartextformat enthalten. Fragen Sie beim Hersteller des Anwendungsservers nach, wie Sie diese Kennwörter für Ihren Anwendungsserver verschlüsseln sollen.
 
 >[!NOTE]
 >

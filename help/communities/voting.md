@@ -1,8 +1,8 @@
 ---
 title: Verwenden einer Abstimmung
-seo-title: Verwenden einer Abstimmung
+seo-title: Using Voting
 description: Hinzufügen der Komponente "Abstimmung"zu einer Seite
-seo-description: Hinzufügen der Komponente "Abstimmung"zu einer Seite
+seo-description: Adding the Voting component to a page
 uuid: 56e6cced-2f2d-434a-8fde-92a6c2478a04
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -12,32 +12,32 @@ discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 exl-id: 660a7106-0c21-4073-8319-4d6d20b9bc49
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '235'
 ht-degree: 26%
 
 ---
 
 # Verwenden einer Abstimmung {#using-voting}
 
-Die Komponente `Voting` ist ein nützliches Tool, mit dem Community-Mitglieder bestimmte Inhalte bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Mit der Komponente `Voting` wählen die Mitglieder Pfeile nach oben oder unten aus, um ihre Meinung anzugeben.
+Die `Voting` -Komponente ist ein nützliches Tool, mit dem Community-Mitglieder einen bestimmten Inhalt bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Mit dem `Voting` -Komponente, wählen die Mitglieder Pfeile nach oben oder unten aus, um ihre Meinung zu äußern.
 
 ## Hinzufügen einer Abstimmung zu einer Seite {#adding-voting-to-a-page}
 
-Um eine Komponente `Voting` im Autorenmodus zu einer Seite hinzuzufügen, suchen Sie im Komponenten-Browser nach `Communities / Voting` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an eine Position relativ zur Funktion, über die Benutzer abstimmen können.
+So fügen Sie eine `Voting` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um `Communities / Voting` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an eine Position relativ zur Funktion, über die Benutzer abstimmen können.
 
-Die erforderlichen Informationen finden Sie unter [Grundlagen der Communities-Komponenten](basics.md).
+Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderlichen clientseitigen Bibliotheken](essentials-voting.md#essentials-for-client-side) eingeschlossen sind, wird die Komponente `Voting` so angezeigt.
+Wenn die [erforderliche clientseitige Bibliotheken](essentials-voting.md#essentials-for-client-side) eingeschlossen sind, wird die `Voting` wird angezeigt.
 
 ![chlimage_1-307](assets/chlimage_1-307.png)
 
 ## Konfigurieren einer Abstimmung {#configuring-voting}
 
-Wählen Sie die platzierte Komponente `Voting` aus, um auf das Symbol `Configure` zuzugreifen, mit dem das Bearbeitungsdialogfeld geöffnet wird.
+Wählen Sie die platzierte `Voting` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
-Geben Sie auf der Registerkarte **[!UICONTROL Texte und Beschriftungen]** die Eigenschaften an, die zum Aufzeichnen von Stimmen verwendet werden.
+Unter dem **[!UICONTROL Texte und Beschriftungen]** -Registerkarte die Eigenschaften für die Aufzeichnung von Abstimmungen angeben.
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
@@ -65,4 +65,4 @@ Eine anonyme Abstimmung wird nicht unterstützt. Besucher der Website müssen si
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Seite [Grundlagen der Abstimmung](essentials-voting.md) für Entwickler.
+Weitere Informationen finden Sie unter [Abstimmungsgrundlagen](essentials-voting.md) für Entwickler.

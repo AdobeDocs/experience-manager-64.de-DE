@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # Ein- und Auschecken von Dateien in Assets {#check-in-and-check-out-files-in-assets}
 
-Mit Adobe Experience Manager Assets können Sie Assets zur Bearbeitung auschecken und wieder einchecken, nachdem Sie die Änderungen vorgenommen haben. Nachdem Sie ein Asset ausgecheckt haben, können nur Sie es bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in [!DNL Experience Manager] Assets einchecken. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
+Mit Adobe Experience Manager Assets können Sie Assets zur Bearbeitung auschecken und wieder einchecken, nachdem Sie die Änderungen vorgenommen haben. Nachdem Sie ein Asset ausgecheckt haben, können nur Sie es bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in [!DNL Experience Manager] Assets. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
 Um Assets ein- oder auschecken zu können, benötigen Sie Schreibzugriff auf sie.
 

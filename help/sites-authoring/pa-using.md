@@ -1,8 +1,8 @@
 ---
 title: Anzeigen von Seitenanalysedaten
-seo-title: Anzeigen von Seitenanalysedaten
+seo-title: Seeing Page Analytics Data
 description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
-seo-description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,7 +12,7 @@ discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '441'
 ht-degree: 93%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
 
-## In der Konsole sichtbare Analysedaten  {#analytics-visible-from-the-console}
+## In der Konsole sichtbare Analysedaten {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
@@ -75,17 +75,17 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 
 ### Öffnen von Inhaltseinblicken mithilfe von Sites {#opening-content-insights-from-sites}
 
-Öffnen Sie [Content Insight](/help/sites-authoring/content-insights.md) in der Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
+Öffnen [Content Insight](/help/sites-authoring/content-insights.md) über die Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
 
 1. Wählen Sie in der Konsole „Sites“ die Seite aus, für die Sie Inhaltseinblicke sehen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analyse und Empfehlungen“.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## Im Seiteneditor sichtbare Analysedaten (Activity Map)  {#analytics-visible-from-the-page-editor-activity-map}
+## Im Seiteneditor sichtbare Analysedaten (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.
 >
->Das [ActivityMap-Plugin, das von Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) bereitgestellt wird, sollte jetzt verwendet werden.
+>Die [Von Adobe Analytics bereitgestelltes ActivityMap-Plugin](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) verwendet werden.

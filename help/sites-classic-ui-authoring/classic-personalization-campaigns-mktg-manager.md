@@ -1,8 +1,8 @@
 ---
 title: Arbeiten mit dem Marketing Campaign Manager
-seo-title: Arbeiten mit dem Marketing Campaign Manager
+seo-title: Working with the Marketing Campaign Manager
 description: Der Marketing Campaign Manager (MCM) ist eine Konsole, mit der Sie Multi-Channel-Kampagnen verwalten können. Mit dieser Software zur Marketing-Automatisierung können Sie sämtliche Marken, Kampagnen und Erlebnisse gemeinsam mit den damit zusammenhängenden Segmenten, Listen, Leads und Berichten verwalten.
-seo-description: Der Marketing Campaign Manager (MCM) ist eine Konsole, mit der Sie Multi-Channel-Kampagnen verwalten können. Mit dieser Software zur Marketing-Automatisierung können Sie sämtliche Marken, Kampagnen und Erlebnisse gemeinsam mit den damit zusammenhängenden Segmenten, Listen, Leads und Berichten verwalten.
+seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 uuid: 3df6c0b8-dc0a-4a02-a38c-8250fb829404
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 exl-id: 63bf891c-572a-40e0-945f-d20a0a029224
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1218'
-ht-degree: 95%
+source-wordcount: '1175'
+ht-degree: 94%
 
 ---
 
@@ -54,7 +54,7 @@ Aus dem MCM können Sie auf folgende Komponenten zugreifen:
 
    * [Kampagnen](#campaigns)
 
-      In diesem Bereich werden Ihre Kampagnenerlebnisse wie [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) und [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) aufgelistet.
+      In diesem Bereich werden Ihre Kampagnenerlebnisse aufgeführt, z. B. [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) und [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers).
 
 * **[Leads](#leads)**
 
@@ -135,7 +135,7 @@ Klicken Sie im MCM auf **Kampagnen**, um auf die bestehenden Kampagnen zuzugreif
 
    Sie können darauf doppelklicken, um die Markenübersicht anzuzeigen.
 
-#### Markenübersicht  {#brand-overview}
+#### Markenübersicht {#brand-overview}
 
 ![mcm_brandoverview](assets/mcm_brandoverview.png)
 
@@ -153,7 +153,7 @@ Hier können Sie folgende Aktionen durchführen:
 
 * Öffnen der Kampagnenübersicht (doppelklicken Sie im rechten Bereich auf eine Kampagne oder klicken Sie im linken Bereich einmal).
 
-#### Kampagnenübersicht  {#campaign-overview}
+#### Kampagnenübersicht {#campaign-overview}
 
 Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
@@ -185,7 +185,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
    Hier können Sie folgende Aktionen durchführen:
 
-   * Erstellen Sie eine **Neu...** Erlebnis; z. B. Adobe Target-Angebote, Teaser und Newsletter.
+   * Erstellen Sie eine **Neu...** Erfahrung; z. B. Adobe Target-Angebote, Teaser und Newsletter.
    * **Bearbeiten** der Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (auch per Doppelklick möglich).
    * Definieren der **Eigenschaften** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
    * **Simulieren** des Aussehens eines Erlebnisses (Teaser-Seite oder Newsletter).
@@ -197,7 +197,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
    * **Suchen** nach Text (das Feld „Titel“ des Erlebnisses wird durchsucht).
    * Verwenden der **erweiterten** Suche, um Filter auf die Suche anzuwenden.
 
-### Simulieren von Kampagnen-Erlebnissen  {#simulating-your-campaign-experiences}
+### Simulieren von Kampagnen-Erlebnissen {#simulating-your-campaign-experiences}
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Simulieren**. Der Touchpoint (Teaser- oder Newsletter-Seite) wird geöffnet und das gewählte Erlebnis wird angezeigt (so, wie der Besucher es sieht).
 
@@ -205,7 +205,7 @@ Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie si
 
 Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen Pfeil nach unten), um zum Bearbeitungsmodus zu wechseln und die Seite zu aktualisieren.
 
-### Analysieren von Kampagnen-Erlebnissen  {#analyzing-your-campaign-experiences}
+### Analysieren von Kampagnen-Erlebnissen {#analyzing-your-campaign-experiences}
 
 Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm mit den Seiten-Impressions im Zeitverlauf wird angezeigt.
 

@@ -1,20 +1,20 @@
 ---
 title: Ablauf statischer Objekte
-seo-title: Ablauf statischer Objekte
+seo-title: Expiration of Static Objects
 description: Erfahren Sie, wie Sie AEM konfigurieren können, damit statische Objekte (über einen angemessenen Zeitraum) nicht ablaufen.
-seo-description: Erfahren Sie, wie Sie AEM konfigurieren können, damit statische Objekte (über einen angemessenen Zeitraum) nicht ablaufen.
+seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
-feature: Konfiguration
+feature: Configuring
 exl-id: 3551d25c-c852-4f59-84fe-5e62f57ae63f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 95%
+source-wordcount: '414'
+ht-degree: 94%
 
 ---
 
@@ -75,7 +75,7 @@ Alle Dateien, die nicht dynamisch sind und im Laufe der Zeit nicht geändert wer
    </Location>
    ```
 
-   Hierdurch wird ermöglicht, dass der temporäre Cache (etwa der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien einen Tag lang in Clientcaches speichert. Obwohl dieses Beispiel die globalen Einstellungen für alles unterhalb von `/content` und `/etc/designs` veranschaulicht, sollten Sie es detaillierter gestalten.
+   Hierdurch wird ermöglicht, dass der temporäre Cache (etwa der Browsercache) CSS-, JavaScript-, PNG- und GIF-Dateien einen Tag lang in Clientcaches speichert. Obwohl dieses Beispiel die globalen Einstellungen für alles unten veranschaulicht `/content` und `/etc/designs`, sollten Sie es detaillierter gestalten.
 
    Abhängig vom Aktualisierungsintervall der Website käme für Sie ggf. auch das Caching von HTML-Seiten in Frage. Ein angemessener Zeitraum wäre etwa 1 Stunde:
 

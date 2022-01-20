@@ -1,8 +1,8 @@
 ---
 title: Speicherorte für Forms konfigurieren
-seo-title: Speicherorte für Forms konfigurieren
+seo-title: Configuring locations for Forms
 description: Erfahren Sie, wie Sie einen Speicherort für Forms konfigurieren.
-seo-description: Erfahren Sie, wie Sie einen Speicherort für Forms konfigurieren.
+seo-description: Learn how to configure location for Forms.
 uuid: ba35888b-492c-4678-890b-160b53e7d659
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 283ef073-b71d-4b48-882f-15f05581c1de
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 75%
+source-wordcount: '804'
+ht-degree: 74%
 
 ---
 
@@ -49,7 +49,7 @@ Wenn ein Abhängigkeitspfad absolut ist, wird der Basis-URL-Wert ignoriert. Ande
 
 `https://<host name>:<port>/FormServer`
 
-Dabei sind `host name`und `port` der Servername und die Anschlussnummer des Servers, der als Host für die Forms-Webanwendung dient.
+Wo `host name`und `port` sind der Servername und die Anschlussnummer des Servers, auf dem die Forms-Webanwendung gehostet wird.
 
  Der Standardwert ist eine leere Zeichenfolge.
 
@@ -61,11 +61,11 @@ Dabei sind `host name`und `port` der Servername und die Anschlussnummer des Serv
 
  Der Standardwert ist eine leere Zeichenfolge.
 
-**XCI Configuration URI:** Der relative oder absolute Speicherort, an dem die für die Wiedergabe verwendete XCI-Datei gefunden wird. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet. 
+**XCI Configuration URI:** Der relative oder absolute Speicherort, an dem sich die für die Wiedergabe verwendete XCI-Datei befindet. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet. 
 
 Der Standardwert ist `com/adobe/formServer/PA/pa.xci`.
 
-**Schriftartzuordnungs-URI:** Der relative oder absolute Speicherort der Schriftzuordnungsdatei. Bei einem relativen Wert wird vorausgesetzt, dass sich diese Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet.
+**Schriftzuordnungs-URI:** Der relative oder absolute Speicherort der Schriftzuordnungsdatei. Bei einem relativen Wert wird vorausgesetzt, dass sich diese Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet.
 
 Die Schriftartzuordnungsdatei wird verwendet, um benutzerdefinierte Schriftartzuordnungen für HTML-Transformationen in Forms zu erstellen. Auf diese Weise können Sie dann angeben, welche Schriftart ersetzt wird, wenn diese auf dem Clientcomputer nicht verfügbar ist.
 
@@ -75,7 +75,7 @@ Im Folgenden finden Sie ein Beispiel für einen Eintrag in der Schriftartzuordnu
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Seed-PDF-Datei:** Die ursprüngliche PDF-Datei, die in einer PDFForm-Transformation zur Optimierung der Bereitstellung verwendet wird. Die Seed-PDF-Datei ist eine angepasste PDF-Datei (die nur XFA-Stream-, Bild- und Schriftartressourcen enthält), die dem Formularentwurf und den Formulardaten angehängt wird. Das Formular wird in Acrobat 7 oder höher wiedergegeben und findet bei der PDFForm-Transformation Anwendung. 
+**Seed-PDF-Datei:** Die anfängliche PDF-Datei, die in einer PDFForm-Transformation verwendet wird, um die Bereitstellung zu optimieren. Die Seed-PDF-Datei ist eine angepasste PDF-Datei (die nur XFA-Stream-, Bild- und Schriftartressourcen enthält), die dem Formularentwurf und den Formulardaten angehängt wird. Das Formular wird in Acrobat 7 oder höher wiedergegeben und findet bei der PDFForm-Transformation Anwendung. 
 
 Der Standardwert ist eine leere Zeichenfolge.
 
@@ -83,11 +83,11 @@ Der Standardwert ist eine leere Zeichenfolge.
 
 **Standardspeicherort:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
 
-* **JBoss:** [JBoss-Startseite]\server\[Installationstyp]\svcdata\FormServer\Cache
-* **WebLogic:** [WebLogic-Startseite]\user_projects\domains\[aem-forms-Domänenname]\adobe\[Name des Formularservers]\FormServer\Cache
-* **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
+* **JBoss:** [JBoss-Startseite]\server\[install type]\svcdata\FormServer\Cache
+* **WebLogic:** [WebLogic-Startseite]\user_projects\domains\[aem-forms Domain Name]\adobe\[forms server name]\FormServer\Cache
+* **WebSphere:** [IBM - Startseite]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**LC Temp Directory:**  Der Cache wird in einem Unterverzeichnis des temporären Ordners für AEM Formulare erstellt, das in der Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. Der Unterordner heißt adobeform_[servername].
+**LC Temp Directory:** Der Cache wird in einem Unterverzeichnis des temporären Ordners für AEM Formulare erstellt, das in der Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. Der Unterordner heißt adobeform_[Servername].
 
 >[!NOTE]
 >

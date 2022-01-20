@@ -2,7 +2,7 @@
 title: Markdown
 seo-title: Markdown
 description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
-seo-description: Wenn Sie Inhalt erstellen oder bearbeiten, verwendet der Inhaltsfragment-Editor die Markdown-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern.
+seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
-feature: Inhaltsfragmente
+feature: Content Fragments
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '556'
-ht-degree: 95%
+source-wordcount: '535'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 >[!CAUTION]
 >
->Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0) oder höher](/help/release-notes/sp-release-notes.md).
+>Einige Inhaltsfragmentfunktionen erfordern die Anwendung von [AEM 6.4 Service Pack 2 (6.4.2.0 oder höher)](/help/release-notes/sp-release-notes.md).
 
 Wenn Sie [Inhalt erstellen oder bearbeiten](content-fragments-variations.md#authoring-your-content), verwendet der Inhaltsfragment-Editor die *Markdown*-Syntax, um Ihnen die Erstellung oder Bearbeitung von Inhalt zu erleichtern:
 
@@ -177,7 +177,7 @@ Sie können Text wie folgt fett formatieren:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Um einen Codebereich anzugeben, schließen Sie ihn mit Backtick-Anführungszeichen (&amp;grave;) ein. Anders als ein vorformatierten Codeblock zeigt ein Codebereich Code in einem normal Absatz an.
+Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Anders als ein vorformatierten Codeblock zeigt ein Codebereich Code in einem normal Absatz an.
 
 Beispiel:
 

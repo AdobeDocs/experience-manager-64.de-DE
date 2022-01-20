@@ -1,29 +1,29 @@
 ---
 title: Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal
-seo-title: Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Erfahren Sie, wie Sie die Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal integrieren.
-seo-description: Erfahren Sie, wie Sie die Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal integrieren.
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 4ae9c5fb-bb9d-46d8-be84-455f386ab443
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
-feature: Korrespondenzverwaltung
+feature: Correspondence Management
 exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 78%
+source-wordcount: '478'
+ht-degree: 77%
 
 ---
 
 # Integrieren der Benutzeroberfläche „Korrespondenz erstellen“ in Ihr benutzerdefiniertes Portal {#integrating-create-correspondence-ui-with-your-custom-portal}
 
-## Überblick {#overview}
+## Übersicht {#overview}
 
 In diesem Artikel wird erläutert, wie Sie die Lösung „Korrespondenz erstellen“ in Ihre Umgebung integrieren können.
 
-## URL-basierter Aufruf  {#url-based-invocation}
+## URL-basierter Aufruf {#url-based-invocation}
 
 Eine Möglichkeit, die Anwendung „Korrespondenz erstellen“ von einem Clusterportal aufzurufen, ist die URL mit folgenden Anforderungsparametern vorzubereiten:
 
@@ -44,11 +44,11 @@ Wenn das Portal den Namen der Briefvorlage enthält, kann die URL\
 >
 >Bevor Sie die Anwendung „Korrespondenz erstellen“ aufrufen, speichern und laden Sie die Daten, um die Benutzeroberfläche „Korrespondenz erstellen“ unter der angegebenen URL aufzurufen. Dies kann entweder vom benutzerdefinierten Portal aus oder über einen anderen Vorgang im Back-End ausgeführt werden.
 
-## Auf Daten basierter Inline-Aufruf  {#inline-data-based-invocation}
+## Auf Daten basierter Inline-Aufruf {#inline-data-based-invocation}
 
-Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz erstellen&quot;aufzurufen, besteht darin, einfach die URL unter `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html` zu drücken und gleichzeitig die Parameter und Daten zu senden, um die Anwendung &quot;Korrespondenz erstellen&quot;als POST-Anfrage aufzurufen (diese werden vom Endbenutzer ausgeblendet). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
+Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz erstellen&quot;aufzurufen, besteht darin, einfach die URL unter `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, während die Parameter und Daten gesendet werden, um die Anwendung &quot;Korrespondenz erstellen&quot;als POST-Anfrage aufzurufen (diese für den Endbenutzer auszublenden). Dies bedeutet auch, dass Sie jetzt die XML-Datei für die Anwendung „Korrespondenz erstellen“ „inline“ (als Teil der gleichen Anforderung, unter Verwendung des cmData-Parameters) übergeben können, was bei der vorigen Herangehensweise nicht möglich/ideal war.
 
-### Parameter für das Festlegen des Briefs  {#parameters-for-specifying-letter}
+### Parameter für das Festlegen des Briefs {#parameters-for-specifying-letter}
 
 <table> 
  <tbody>
@@ -77,7 +77,7 @@ Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz ers
 
 Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Parametern an, die zum Laden des Briefs verwendet werden.
 
-### Parameter für die Angabe der XML-Datenquelle  {#parameters-for-specifying-the-xml-data-source}
+### Parameter für die Angabe der XML-Datenquelle {#parameters-for-specifying-the-xml-data-source}
 
 <table> 
  <tbody>
@@ -106,7 +106,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
 
 Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Parametern an, die zum Laden der XML-Daten verwendet werden.
 
-### Andere Parameter  {#other-parameters}
+### Andere Parameter {#other-parameters}
 
 <table> 
  <tbody>

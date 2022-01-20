@@ -54,11 +54,11 @@ Adobe empfiehlt dringend, dass Sie das Kennwort für die mit allen Berechtigunge
 
 Diese Konten beinhalten:
 
-* AEM `admin`-Konto
+* Die AEM `admin` account
 
    Nachdem Sie das Kennwort für das AEM-Administratorkonto geändert haben, müssen Sie beim Zugriff auf CRX das neue Kennwort verwenden.
 
-* Das `admin`-Kennwort für die OSGi-Web-Konsole
+* Die `admin` Kennwort für die OSGi-Web-Konsole
 
    Diese Änderung wird auch auf das Administratorkonto angewendet, das für den Zugriff auf die Web-Konsole verwendet wird. Daher müssen Sie beim Zugriff darauf dasselbe Kennwort verwenden.
 
@@ -92,8 +92,8 @@ Das Kennwort muss nach der ersten Installation geändert werden, damit die Siche
 
 Gehen Sie hierfür wie folgt vor:
 
-1. Navigieren Sie zur Web-Konsole unter `<server>:<port>/system/console/configMgr`.
-1. Navigieren Sie zu &quot;Apache Felix OSGi Management Console&quot;und ändern Sie den **Benutzernamen** und das **Kennwort**.
+1. Navigieren Sie zur Webkonsole unter `<server>:<port>/system/console/configMgr`.
+1. Navigieren Sie zu &quot;Apache Felix OSGi Management Console&quot;und ändern Sie die **Benutzername** und **password**.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -177,32 +177,32 @@ Der Referrer-Filter-Dienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurie
 
 So konfigurieren Sie den Referrer-Filterdienst:
 
-1. Öffnen Sie die Apache Felix-Konsole (**Konfigurationen**) unter:
+1. Öffnen Sie die Apache Felix-Konsole (**Konfigurationen**) bei:
 
    `https://<server>:<port_number>/system/console/configMgr`
 
-1. Melden Sie sich als `admin` an.
+1. Anmelden als `admin`.
 1. Wählen Sie im Menü **Konfigurationen** folgende Option aus:
 
    `Apache Sling Referrer Filter`
 
-1. Geben Sie im Feld `Allow Hosts` alle Hosts ein, die als Referrer zulässig sind. Jeder Eintrag muss vom Formular sein
+1. Im `Allow Hosts` Geben Sie alle Hosts ein, die als Referrer zulässig sind. Jeder Eintrag muss vom Formular sein
 
    &lt;protocol>://&lt;server>:&lt;port>
 
-   Zum Beispiel:
+   Beispiel:
 
    * `https://allowed.server:80`: Alle Anfragen von diesem Server mit dem angegebenen Port sind zugelassen.
    * Wenn Sie auch HTTPS-Anfragen zulassen wollen, müssen Sie eine zweite Zeile eingeben.
    * Falls Sie alle Ports dieses Servers zulassen wollen, können Sie als Portnummer eine `0` eingeben.
 
-1. Überprüfen Sie das Feld `Allow Empty` , wenn Sie leere/fehlende Referrer-Header zulassen möchten.
+1. Überprüfen Sie die `Allow Empty` -Feld, wenn Sie leere/fehlende Referrer-Header zulassen möchten.
 
    >[!CAUTION]
    >
    >Es wird empfohlen, einen Referrer bereitzustellen, wenn Sie Befehlszeilen-Tools wie `cURL` verwenden, anstatt einen leeren Wert zuzulassen, da andernfalls das Risiko besteht, dass Ihr System CSRF-Angriffen ausgesetzt ist.
 
-1. Bearbeiten Sie die Methoden, die dieser Filter für Prüfungen verwenden soll, mit dem Feld `Filter Methods` .
+1. Bearbeiten Sie die Methoden, die dieser Filter für Prüfungen mit der `Filter Methods` -Feld.
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
@@ -257,7 +257,7 @@ Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computerressource für
 
 * Wenn eine Seite mit einer unbegrenzten Anzahl an URLs angefordert wird, kann die URL einen Handler, einige Selektoren, eine Erweiterung und einen Suffix enthalten. Diese Elemente können alle geändert werden.
 
-   Beispielsweise kann `.../en.html` auch wie folgt angefordert werden:
+   Beispiel: `.../en.html` kann auch wie folgt angefordert werden:
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
@@ -299,9 +299,9 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 
       könnte das gesamte Repository in einer JSON-Darstellung ablegen. Dies würde zu erheblichen Serverproblemen führen. Aus diesem Grund beschränkt Sling die Anzahl an maximalen Ergebnissen. Um die Tiefe des JSON-Renderings zu begrenzen, können Sie den Wert für festlegen:
 
-      **Max. JSON-Ergebnisse**  (  `json.maximumresults`)
+      **Max. JSON-Ergebnisse** ( `json.maximumresults`)
 
-      in der Konfiguration für das Apache Sling GET Servlet ](/help/sites-deploying/osgi-configuration-settings.md). [ Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `1000`.
+      in der Konfiguration für die [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `1000`.
 
    * Deaktivieren Sie als Präventivmaßnahme die anderen Standard-Renderer (HTML, Nur Text, XML). Konfigurieren Sie dazu ebenfalls das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
@@ -318,11 +318,11 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 >
 >Diese Abmilderung sollte nur für AEM-Umgebungen durchgeführt werden, die keine Formulare verwenden.
 
-Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Formularauswahl kann durch das Vorhandensein von **&amp;ast;.form erkannt werden.&amp;ast;** Zeichenfolge in Abfragen.
+Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Formularauswahl kann durch das Vorhandensein von **&amp;ast;.form.&amp;ast;** in Abfragen.
 
 Führen Sie zum Beheben dieses Problems die folgenden Schritte aus:
 
-1. Wechseln Sie zur Web-Konsole, indem Sie Ihren Browser auf *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr* verweisen.
+1. Navigieren Sie zur Web-Konsole , indem Sie Ihren Browser auf *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 
 1. Suchen nach **Day CQ WCM Form Chooser Servlet**
 1. Klicken Sie auf den Eintrag, deaktivieren Sie im folgenden Fenster die Option **Advanced Search Require** (Erweiterte Suche erforderlich).
@@ -373,7 +373,7 @@ Es ist keine Konfiguration erforderlich, um sie zu aktivieren, da dies nun die S
 
 Obwohl dies nicht empfohlen wird, können Sie sie deaktivieren, wenn Sie die alte Implementierung aus Gründen der Abwärtskompatibilität mit vorhandenen Anwendungen benötigen. Gehen Sie dazu wie folgt vor:
 
-1. Wechseln Sie zur Web-Konsole und entfernen Sie den Eintrag &quot;org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName**&quot;aus der Eigenschaft **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
+1. Navigieren Sie zur Web-Konsole und entfernen Sie den Eintrag &quot;org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName**&quot;aus der Eigenschaft **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
    Sie können den Oak Security Provider auch finden, indem Sie in den OSGi-Konfigurationen nach der PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** suchen.
 
@@ -414,12 +414,12 @@ Genauer gesagt, müssen Sie Folgendes tun:
 
    Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
 
-1. Navigieren Sie zum Ordner „data“. Zum Beispiel:
+1. Navigieren Sie zum Ordner „data“. Beispiel:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Kopieren Sie die HMAC- und die Master-Dateien.
-1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Zum Beispiel:
+1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Beispiel:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
@@ -435,12 +435,12 @@ Genauer gesagt, müssen Sie Folgendes tun:
 
 #### Replizieren von Schlüsseln in AEM 6.2 und älteren Versionen {#replicating-keys-for-aem-and-older-versions}
 
-In AEM 6.2 und älteren Versionen werden die Schlüssel im Repository unter dem Knoten `/etc/key` gespeichert.
+In AEM 6.2 und älteren Versionen werden die Schlüssel im Repository unter dem `/etc/key` Knoten.
 
 Für eine sichere Replikation der Schlüssel auf Ihren Instanzen wird empfohlen, nur diesen Knoten zu replizieren. Sie können Knoten in CRXDE Lite selektiv replizieren:
 
-1. Öffnen Sie die CRXDE Lite, indem Sie zu *https://&lt;serverAddress>:4502/crx/de/index.jsp* navigieren.
-1. Wählen Sie den Knoten `/etc/key` aus.
+1. Öffnen Sie die CRXDE Lite, indem Sie *https://&lt;serrveraddress>:4502/crx/de/index.jsp*
+1. Wählen Sie die `/etc/key` Knoten.
 1. Wechseln Sie zur Registerkarte **Replikation**.
 1. Klicken Sie auf die Schaltfläche **Replikation**.
 

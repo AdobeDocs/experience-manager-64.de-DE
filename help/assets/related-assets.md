@@ -65,11 +65,11 @@ Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z
 
 ## Übersetzen von zugehörigen Assets {#translating-related-assets}
 
-Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen/abgeleiteten Beziehungen zwischen Assets mit der Funktion „Zugehörige Assets“ nützlich. Wenn Sie einen Übersetzungs-Workflow für ein abgeleitetes Asset ausführen, ruft [!DNL Experience Manager] Assets automatisch jedes Asset ab, auf das die Quelldatei verweist, und fügt es zur Übersetzung hinzu. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
+Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen/abgeleiteten Beziehungen zwischen Assets mit der Funktion „Zugehörige Assets“ nützlich. Wenn Sie einen Übersetzungs-Workflow für ein abgeleitetes Asset ausführen, [!DNL Experience Manager] Assets ruft automatisch alle Assets ab, auf die die Quelldatei verweist, und schließt sie zur Übersetzung ein. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Wenn die Quelldatei mit einem anderen Asset verknüpft ist, ruft [!DNL Experience Manager] Assets das referenzierte Asset ab und fügt es zur Übersetzung hinzu.
+Wenn die Quelldatei mit einem anderen Asset verknüpft ist, [!DNL Experience Manager] Assets ruft das referenzierte Asset ab und fügt es zur Übersetzung hinzu.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 

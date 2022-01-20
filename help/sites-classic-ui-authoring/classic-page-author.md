@@ -1,8 +1,8 @@
 ---
 title: Bearbeiten von Seiten (Authoring)
-seo-title: Bearbeiten von Seiten (Authoring)
+seo-title: Authoring Pages
 description: Es gibt zwei Übersichten zum Authoring mit AEM. (1) Erste Schritte für Autoren - eine Einführung für neue Autoren und (2) Kurzanleitung zur Bearbeitung von Seiten - eine (allgemeine) Kurzanleitung zu den wichtigsten Aktionen.
-seo-description: Es gibt zwei Übersichten zum Authoring mit AEM. (1) Erste Schritte für Autoren - eine Einführung für neue Autoren und (2) Kurzanleitung zur Bearbeitung von Seiten - eine (allgemeine) Kurzanleitung zu den wichtigsten Aktionen.
+seo-description: There are two overviews to authoring with AEM. (1) First Steps for Authors - an introduction for new authors, and (2) Quick Guide to Authoring Pages - a quick guide (high-level) to the main actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,8 +12,8 @@ discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: be2465a5-8875-4c9c-bd0d-32631b0fe294
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 78%
+source-wordcount: '298'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ Im Folgenden finden Sie eine Übersicht zum Authoring mit AEM:
 >
 >Dieser Abschnitt enthält die Aufgaben, die bei der Bearbeitung von Inhaltsseiten ausgeführt werden.<!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
 
-## Kurze Übersicht der Funktionen zur Seitenbearbeitung (Authoring){#quick-overview-of-features-used-for-authoring-pages}
+## Kurze Übersicht der Funktionen zur Seitenbearbeitung (Authoring) {#quick-overview-of-features-used-for-authoring-pages}
 
 Zur Unterstützung der Seitenbearbeitung enthält die Autorenumgebung unter anderem folgende Funktionen:
 

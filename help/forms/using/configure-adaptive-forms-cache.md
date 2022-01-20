@@ -1,8 +1,8 @@
 ---
 title: Cache für adaptive Formulare konfigurieren
-seo-title: Cache für adaptive Formulare konfigurieren
+seo-title: Configure adaptive forms cache
 description: 'Der Cache für adaptive Formulare wurde speziell für adaptive Formulare und Dokumente entworfen. Adaptive Formulare und adaptive Dokumente werden zwischengespeichert, um die Zeit zu minimieren, die zum Rendern eines adaptiven Formulars oder Dokuments auf dem Client notwendig ist. '
-seo-description: 'Der Cache für adaptive Formulare wurde speziell für adaptive Formulare und Dokumente entworfen. Adaptive Formulare und adaptive Dokumente werden zwischengespeichert, um die Zeit zu minimieren, die zum Rendern eines adaptiven Formulars oder Dokuments auf dem Client notwendig ist. '
+seo-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client.
 uuid: 3bd4e405-1eab-4e02-95cd-eb6ac25d18e3
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,8 +12,8 @@ role: Admin
 exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 90%
+source-wordcount: '270'
+ht-degree: 88%
 
 ---
 
@@ -33,9 +33,9 @@ Cachen ist ein Mechanismus zum Verkürzen von Datenzugriffszeiten, zur Reduktion
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
-1. Wechseln Sie zum AEM Web Console Configuration Manager unter `https://[server]:[port]/system/console/configMgr`.
+1. Wechseln Sie zum Konfigurations-Manager der AEM-Web-Konsole unter `https://[server]:[port]/system/console/configMgr`.
 1. Klicken Sie auf **Konfiguration für adaptive Formulare und interaktiven Kommunikations-Web-Kanal**, um die Konfigurationswerte zu bearbeiten.
-1. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im Feld **Anzahl adaptiver Forms** zwischenspeichern kann. Der Standardwert ist 100.
+1. Geben Sie im Dialogfeld &quot;Konfigurationswerte bearbeiten&quot;die maximale Anzahl von Formularen oder Dokumenten an, die eine Instanz des AEM Forms-Servers im **Anzahl der adaptiven Forms** -Feld. Der Standardwert ist 100.
 
    >[!NOTE]
    >

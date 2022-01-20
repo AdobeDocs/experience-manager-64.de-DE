@@ -5,11 +5,11 @@ audience: end-user
 user-guide-title: AEM 6.4-Verwaltungsanleitung
 breadcrumb-title: Bedieneranleitung
 user-guide-description: Erfahren Sie, wie Sie ein AEM-Projekt verwalten können.
-feature: Bereitstellen
+feature: Deploying
 role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '72'
 ht-degree: 93%
 
 ---
