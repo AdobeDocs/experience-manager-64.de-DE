@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1859'
 ht-degree: 10%
 
 ---
@@ -492,7 +492,7 @@ Weisen Sie die Schritte &quot;Aufgaben&quot;und &quot;Document Services&quot;von
 
 ## Aufzeichnen von abrechnungsfähigen APIs als Transaktionen für benutzerspezifischen Code {#recording-billable-apis-as-transactions-for-custom-code}
 
-Aktionen wie das Senden eines PDF-Formulars, die Verwendung der Benutzeroberfläche für Agenten zur Vorschau einer interaktiven Kommunikation, die Verwendung nicht standardmäßiger Formularübermittlung und benutzerdefinierte Implementierungen werden nicht als Transaktionen berücksichtigt. AEM Forms bietet eine API zum Aufzeichnen von Aktionen wie Transaktionen. Sie können die API von Ihren benutzerdefinierten Implementierungen in aufrufen, um [Transaktionsaufzeichnung](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg).
+Aktionen wie das Senden eines PDF-Formulars, die Verwendung der Benutzeroberfläche für Agenten zur Vorschau einer interaktiven Kommunikation, die Verwendung nicht standardmäßiger Formularübermittlung und benutzerdefinierte Implementierungen werden nicht als Transaktionen berücksichtigt. AEM Forms bietet eine API zum Aufzeichnen von Aktionen wie Transaktionen. Sie können die API von Ihren benutzerdefinierten Implementierungen in aufrufen, um [Transaktionsaufzeichnung](record-transaction-custom-implementation.md).
 
 ## Ähnliche Artikel {#related-articles}
 
