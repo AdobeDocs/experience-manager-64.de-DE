@@ -28,7 +28,6 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich e
 >* Windows: **Strg** + **Klick** auf die erforderlichen Komponenten.
 >
 >* Mac: **Befehl** + **Klick** auf die erforderlichen Komponenten.
-
 >
 
 
