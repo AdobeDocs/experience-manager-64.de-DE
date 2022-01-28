@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
-source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 75%
 
 ---
@@ -49,7 +49,6 @@ ht-degree: 75%
    + [Dynamic Media-Bildprofile](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Hinzufügen von Dynamic Media Classic-Funktionen zu Ihrer Seite](scene7.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
@@ -65,6 +64,7 @@ ht-degree: 75%
    + [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md)
    + [Anzeigen von Dynamic Media-Assets in der Vorschau](previewing-assets.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](adding-dynamic-media-assets-to-pages.md)
+   + [Hinzufügen von Dynamic Media Classic-Komponenten zu Seiten](scene7.md)
    + [Einbetten des dynamischen Video- oder Bild-Viewers auf einer Web-Seite](embed-code.md)
    + [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md)
    + [Verwenden von Regelsätzen zum Konvertieren von URLs](using-rulesets-to-transform-urls.md)

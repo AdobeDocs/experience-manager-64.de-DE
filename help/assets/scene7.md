@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen von Dynamic Media Classic-Funktionen zu Ihrer Seite
-description: Erfahren Sie mehr über Dynamic Media Classic-Komponenten und wie Sie sie zu Ihrer AEM hinzufügen.
+title: Hinzufügen von Dynamic Media Classic-Komponenten zu Seiten
+description: Hinzufügen von Dynamic Media Classic-Funktionen und -Komponenten zu Seiten in Adobe Experience Manager.
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
@@ -8,14 +8,14 @@ topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2824'
 ht-degree: 32%
 
 ---
 
-# Hinzufügen von Dynamic Media Classic-Funktionen zu Ihrer Seite {#adding-scene-features-to-your-page}
+# Hinzufügen von Dynamic Media Classic-Komponenten zu Seiten {#adding-scene-features-to-your-page}
 
 Adobe Dynamic Media Classic ist eine gehostete Lösung für die Verwaltung, Erweiterung, Veröffentlichung und Bereitstellung von Rich-Media-Assets für Web-, Mobile-, E-Mail- und Internet-verbundene Anzeigen und Drucken.
 
