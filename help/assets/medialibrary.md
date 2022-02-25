@@ -1,11 +1,11 @@
 ---
 title: Media Library für grundlegende Verwaltung von digitalen Assets verwenden
-description: '[!DNL Experience Manager Assets] und Media Library für das Asset-Management.'
+description: '"[!DNL Experience Manager Assets] und Media Library für das Asset-Management."'
 contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: 50ba3937ef5d3f6e5b56df99ebdca337e5e9eac9
+source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 98%
