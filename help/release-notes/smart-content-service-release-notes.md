@@ -8,10 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+source-git-commit: 354e3fcd747b7b0490599c3b84b8e58dac39ed05
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 17%
+source-wordcount: '307'
+ht-degree: 20%
 
 ---
 
@@ -32,55 +32,7 @@ Der Smart Content Service basiert auf der Adobe Sensei-Plattform, mit der Sie de
 Der Smart Content Service umfasst die folgenden wichtigen Verbesserungen:
 
 * Algorithmusoptimierungen zur weiteren Verbesserung der Modellgenauigkeit und zum Rückruf von Werten
-* Unterstützung für das Zurücksetzen der Modellschulung für alle Tags auf Mandantenebene
-* Unterstützung für optimierte Smart-Tags-Namespaces zur Vermeidung von Konflikten
-* Neue Modell-Ersatzrichtlinie zur Vermeidung von Beeinträchtigungen durch Umschulung
-* Mandantenweises Monitoring für die Dienstverwendung
 * Fehlerbehebungen für Probleme im Zusammenhang mit Clustering und Verbindung, die die Stabilität des Dienstes verbessern
-
-## Behobene Probleme {#fixed-issues}
-
-Die folgenden Probleme wurden in dieser Version behoben:
-
-* Arbeitsprozesse für Tagging- und Trainings-Workflows werden beendet, wenn keine Verbindung zum MySQL-Server hergestellt werden kann. CQ-4242886
-
-* Präzisionsverzerrungen werden nicht richtig berechnet. CQ-4241797
-
-* Falsche PR-Berechnung für Modell. CQ-4241381
-
-* Beim Trainings-Workflow werden Beispiel-Assets bei der Verarbeitung aus der Warteschlange CQ-4240901 nicht berücksichtigt
-
-* Verbesserte Genauigkeit beim Rückruf. CQ-4239895
-
-* Modell-Ersatzrichtlinie. CQ-4239886
-
-* Bilder für Herrenhemden sind mit dem Damenjacke-Tag versehen. CQ-4239650
-
-* Schulungsbeispiele werden bei der Staging-Implementierung verpasst. CQ-4239483
-
-* Die Validierung im Trainings-Auftrag sollte für eine Reihe von Assets erfolgen, die für die Schulung eingereicht werden. CQ-4238834
-
-* Die Modellerstellung schlägt für die negative Nachbildung fehl, selbst wenn für ein Tag minimale positive/negative Werte vorhanden sind. CQ-4240741
-
-* Irreführende Einträge für negative Futtermittel in Trainer-Logs. CQ-4240738
-
-* Problem bei der Erstausbildung, wenn zur Schulung eingereichte Tags zufällige Negative voneinander sind. CQ-4240118
-
-* Verbessern Sie die Protokolle zur Überwachung der Dienstnutzung pro Mandant. CQ-4239781
-
-## Sprachen {#languages}
-
-Der Smart Content Service ist für folgende Gebietsschemata verfügbar:
-
-* Englisch
-* Deutsch
-* Französisch
-* Spanisch
-* Italienisch
-* Portugiesisch
-* Japanisch
-* Vereinfachtes Chinesisch
-* Koreanisch
 
 ## Links {#links}
 
