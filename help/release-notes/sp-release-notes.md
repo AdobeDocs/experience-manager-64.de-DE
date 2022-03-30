@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: 1537055fd88cbc3b01e4df7855a99f993f2052e4
 workflow-type: tm+mt
-source-wordcount: '21557'
+source-wordcount: '21547'
 ht-degree: 27%
 
 ---
@@ -1185,7 +1185,7 @@ Einige der wichtigsten Highlights von AEM 6.4.3.0 sind:
 * Änderungen an AEM Erlebnissen, die über die Targeting-Engine erstellt wurden, werden nicht veröffentlicht. NPR-24869: Hotfix für CQ-4247832
 * Es können nicht mehrere Aktivitäten und Erlebnisse erstellt werden, wenn deren Namen japanische Zeichen enthalten. NPR-27271: Hotfix für CQ-4256857
 * Aktualisieren Sie den Launch-API-Endpunkt. NPR-26790: Hotfix für CQ-4254380
-* (Personalisierung) BrandsRetriever führt den gesamten Baum durch. NPR-27060: Hotfix für CQ-4255790
+* (Personalization) BrandsRetriever führt durch den gesamten Baum. NPR-27060: Hotfix für CQ-4255790
 
 **WCM - Administrator-Benutzeroberfläche**
 
@@ -1568,14 +1568,14 @@ Zu den wichtigsten Merkmalen von AEM 6.4.2.0 Forms gehören:
 
 * (HTML Workspace) Wenn ein Benutzer eine Aufgabe beansprucht, wird die Anzahl der Warteschlangen für den betreffenden Benutzer aktualisiert, nicht jedoch für andere Benutzer, es sei denn, die Seite wird aktualisiert. Dieses Problem wurde durch eine neue Eigenschaft behoben. Informationen zum Konfigurieren dieser neuen Eigenschaft für Ihre AEM-Instanz finden Sie in den Konfigurationseinstellungen. NPR-24536: Hotfix für CQ-4233665
 * Große Formulare können nicht in die AEM Forms App unter 6.4 geladen werden. NPR-24463: Hotfix für CQ-4245091
-* Problem in der Mobile Workspace-App beim Versuch, die freigegebene Aufgabe anzuzeigen. NPR-25177: Hotfix für CQ-4248733
+* Problem in der Mobile Workspace-App, wenn versucht wird, die freigegebene Aufgabe anzuzeigen. NPR-25177: Hotfix für CQ-4248733
 * Inkonsistentes Validierungsverhalten zwischen Web und APK. NPR-25670: Hotfix für CQ-4248178
 * Wenn ein Webdienst aufgerufen wird und ein HTML5-Formular im Client geöffnet wird, schlägt dies fehl und es wird eine Fehlermeldung zurückgegeben. NPR-26048: Hotfix für CQ-4244716
 * Problem beim Aufrufen des Dienstes in AEM Forms Windows App 6.3. NPR-26468: Hotfix für CQ-4252341
 
 **Mobile Forms**
 
-* (Formularsatz) Validierungsproblem bei SSN- und mobilen Feldern bei der Vorschau. NPR-24458: Hotfix für CQ-4244983
+* (Formularsatz) Probleme bei der SSN- und Mobile-Feldvalidierung bei der Vorschau. NPR-24458: Hotfix für CQ-4244983
 * In der HTML-Vorschau werden keine Daten angezeigt, wenn mehrzeilige Felder vorausgefüllt sind. NPR-24549: Hotfix für CQ-4244212
 * Daten gehen verloren, wenn das Skript in einem mehrzeiligen Feld ausgewertet wird. NPR-25333, Hotfix für CQ-4249610
 
@@ -1752,15 +1752,15 @@ AEM 6.4.1.0 kann auf AEM 6.4 GA installiert werden. Zu den wichtigsten Merkmalen
 * TargetContentImpl verlangsamt AEM bei langwierigen Abfragen. NPR-22359: Hotfix für CQ-4236907
 * Die Target-Engine (mbox.js, at.js) verwendet keine verwalteten URLs, und sie verwendet URLs mit Doppelpunkten, die bei bestimmten Bereitstellungen fehlschlagen können. NPR-22434: Hotfix für CQ-4237854
 * Im Target-Modus können Autoren eine aus der Blueprint geerbte Komponente ändern, ohne die Vererbung abzubrechen. NPR-22865: Hotfix für CQ-4237907
-* (Personalisierung) Beim Wechseln zur Kartenansicht werden Symbole angezeigt. NPR-23373, NPR-23374: Hotfix für CQ-4240018, CQ-4240019
+* (Personalization) Beim Wechseln zur Kartenansicht werden Symbole deformiert. NPR-23373, NPR-23374: Hotfix für CQ-4240018, CQ-4240019
 * (Personalisierung) Die Zielgruppenkonsole zeigt keine nt:folder-Typen an. NPR-23375: Hotfix für CQ-4242293
 * Wenn eine Komponente auf eine Veröffentlichungsinstanz ausgerichtet ist, erscheint ein Flackern, das das Standarderlebnis vor dem zielgerichteten anzeigt. NPR-23415: Hotfix für CQ-4242038
 * (Adobe IMS-Konsole) Die OSGi-Dienstkonfiguration AccessTokenProvider wird nach dem Löschen erneut angezeigt. NPR-23520: Hotfix für CQ-4208250
 * Die Replikation der Konfigurationsreferenzen mit der Zwischenordnerstruktur schlägt fehl. NPR-23485: Hotfix für CQ-4242751
-* clientlib (Personalisierung), die vom Proxy-Servlet blockiert wird. NPR-23521: Hotfix für CQ-4240995
+* (Personalization) clientlib vom Proxy-Servlet blockiert. NPR-23521: Hotfix für CQ-4240995
 * (Adobe IMS-Konsole) Registrierte Cloud-Lösungen werden nicht im Konfigurationsassistenten abgerufen. NPR-23977: Hotfix für CQ-4244549
 * Endlosschleife beim Laden zielgerichteter Inhalte auf Seiten ohne HTML-Erweiterung. NPR-23522: Hotfix für CQ-4223600
-* Die Aktivierung schlägt für eine Seite mit vererbten Konfigurationsverweisen für das Dynamic Tag Management fehl. NPR-23485: Hotfix für CQ-4242751
+* Die Aktivierung schlägt für eine Seite mit vererbten Dynamic Tag Management-Konfigurationsverweisen fehl. NPR-23485: Hotfix für CQ-4242751
 
 **Plattform**
 
@@ -2133,7 +2133,7 @@ Es gibt zwei Möglichkeiten, AEM 6.4.8.0 automatisch in einer laufenden Instanz
 
 A. Platzieren Sie das Paket in ..Ordner */crx-quickstart/install*, während der Server läuft. Das Paket wird automatisch installiert.
 
-B. Verwenden Sie die [HTTP-API von Package Manager](https://helpx.adobe.com/de/experience-manager/aem-previous-versions.html) - Stellen Sie sicher, dass Sie `cmd=install&recursive=true` - damit das verschachtelte Paket installiert wird.
+B. Verwenden Sie die [HTTP-API von Package Manager](/help/sites-administering/package-manager.md) - Stellen Sie sicher, dass Sie `cmd=install&recursive=true` - damit das verschachtelte Paket installiert wird.
 
 >[!NOTE]
 >
