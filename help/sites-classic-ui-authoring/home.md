@@ -1,15 +1,15 @@
 ---
 title: AEM 6.4 Classic UI Authoring-Benutzerhandbuch
 seo-title: AEM 6.4 Classic UI Authoring User Guide
-description: 'In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt. '
+description: In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt.
 seo-description: Covers the concepts of authoring in AEM in the classic UI.
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: 56522aaf-9a8d-48b8-b748-3b57d5e9c8ef
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 37%
 
 ---
-
 
 # AEM 6.4 Classic UI Authoring-Benutzerhandbuch
 
@@ -46,7 +46,7 @@ In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzer
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)
+* [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)

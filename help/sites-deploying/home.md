@@ -1,15 +1,15 @@
 ---
 title: AEM 6.4 Bereitstellen des Benutzerhandbuchs
 seo-title: AEM 6.4 Deploying User Guide
-description: 'Dieses Handbuch behandelt alle AEM Bereitstellungsaufgaben, z. B. die Installation und Bereitstellung von AEM. '
+description: Dieses Handbuch behandelt alle AEM Bereitstellungsaufgaben, z. B. die Installation und Bereitstellung von AEM.
 seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+exl-id: ff85787a-1203-4620-bf14-1b09893c3be8
+source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 38%
 
 ---
-
 
 # AEM 6.4 Bereitstellen des Benutzerhandbuchs
 
@@ -46,7 +46,7 @@ Dieses Handbuch behandelt alle AEM Bereitstellungsaufgaben, z. B. die Installati
 * [Dispatcher-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
 * [Benutzerhandbuch zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=de)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM-Community-Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)
+* [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)
