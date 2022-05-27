@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digitale Assets.
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '646'
 ht-degree: 75%
 
 ---
@@ -48,7 +48,8 @@ ht-degree: 75%
    + [Dynamic Media-Videoprofile](video-profiles.md)
    + [Dynamic Media-Bildprofile](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
-   + [Video](s7-video.md)
+   + [Intelligente Bildbearbeitung mit clientseitigem Gerätepixelverhältnis](client-side-dpr.md)
+   + [Video ](s7-video.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
@@ -56,7 +57,7 @@ ht-degree: 75%
    + [Gemischte Mediensets](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
    + [Panoramabilder](panoramic-images.md)
-   + [Video](video.md)
+   + [Video ](video.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
    + [Karussellbanner](carousel-banners.md)
@@ -168,5 +169,5 @@ ht-degree: 75%
    + [Videoausgabeformate](video-renditions.md)
 + Integration mit anderen Lösungen {#integrations}
    + [Integrationen mit [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Installieren [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-install.md)
-   + [Konfigurieren [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-configure.md)
+   + [Installieren von [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-install.md)
+   + [Konfigurieren von [!DNL enhanced connector] für [!DNL Workfront]](workfront-connector-configure.md)
