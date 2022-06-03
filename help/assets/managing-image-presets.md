@@ -9,7 +9,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Image Presets
 role: Admin,User
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: 78e187855845046071bc7f22cd7d491d48568336
 workflow-type: tm+mt
 source-wordcount: '3835'
 ht-degree: 80%
@@ -192,7 +192,6 @@ Die Größe der Miniaturansichten wird im folgenden Format definiert: **width:he
 >* Die Größe der Miniaturansichten für EPS-Dateien wird im Schritt **[!UICONTROL EPS-Miniaturen]** auf der Registerkarte **[!UICONTROL Argumente]****[!UICONTROL unter „Miniaturansichten“ konfiguriert]**.
 >
 >* Die Größe der Miniaturansichten für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
-
 >
 
 
@@ -287,7 +286,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
 
 * **[!UICONTROL Format]** (**[!UICONTROL Allgemein]** tab) - Auswählen **[!UICONTROL JPEG]** oder ein anderes Format, das Ihren Anforderungen entspricht. Alle Webbrowser unterstützen das JPEG-Bildformat. Es bietet ein gutes Gleichgewicht zwischen kleinen Dateigrößen und Bildqualität. Bilder im JPEG-Format verwenden jedoch ein verlustbehaftetes Komprimierungsschema, das unerwünschte Bildartefakte hervorrufen kann, wenn die Komprimierungseinstellung zu niedrig ist. Aus diesem Grund empfiehlt Adobe, die Komprimierungsqualität auf 75 einzustellen. Diese Einstellung bietet einen angemessenen Ausgleich zwischen Bildqualität und kleiner Dateigröße.
 * **[!UICONTROL Einfaches Scharfzeichnen aktivieren]** - Nicht auswählen **[!UICONTROL Einfaches Scharfzeichnen aktivieren]** (Dieser Scharfzeichnungsfilter bietet weniger Kontrolle als die Einstellungen für die Unschärfemaske).
-* **[!UICONTROL Scharfzeichnen: Resamplingmodus]** - Auswählen **[!UICONTROL Bikubisch]**.
+* **[!UICONTROL Scharfzeichnen: Resamplingmodus]** - Auswählen **[!UICONTROL Scharf2]**.
 
 #### Optionen auf der Registerkarte „Standard“ {#basic-tab-options}
 
