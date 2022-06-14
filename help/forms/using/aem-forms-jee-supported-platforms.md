@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 role: Admin
 exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
-source-git-commit: 393f665774a482e953e2594404ab22f7ce0bb259
+source-git-commit: 727dddccd7b7cdff29a00ef6f0f2e82f14e5c851
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3330'
 ht-degree: 85%
 
 ---
@@ -31,7 +31,6 @@ In diesem Dokument werden die unterstützten Client- und Serverplattformen für 
 >
 >* Eine vollständige Liste der Ausnahmen für unterstütze Serverplattformen finden Sie unter [Ausnahmen für unterstützte Serverplattformen](#exceptions-to-supported-server-platforms).
 >* AEM Forms on JEE unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
-
 >
 
 
@@ -95,7 +94,6 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
 >
 >* AEM Forms on JEE wird nur von 64-Bit-JVMs für Produktionsumgebungen unterstützt.
 >* Es wird empfohlen, die Sicherheitsbulletins vom Java-Anbieter zu verfolgen, um den Schutz und die Sicherheit von Produktionsumgebungen sicherzustellen und die neuesten Java-Aktualisierungen zu installieren.
-
 >
 
 
@@ -197,13 +195,18 @@ Adobe Experience Manager Forms erfordert eine Java Virtual Machine, die durch di
   </tr> 
   <tr> 
    <td>MySQL</td> 
-   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.30-bin.jar (Version 5.1.30)</p> </td> 
+   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar (Version 5.1.44)</p> </td> 
    <td><p>AEM Forms on JEE-Installation im Paket enthalten</p> </td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server<br /> </td> 
-   <td><p>Microsoft® SQL Server JDBC-Treiber 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Microsoft® SQL Server JDBC-Treiber 6.2.1.0 (veraltet) <br /> </p> <p>sqljdbc6.jar</p> </td> 
    <td><p>AEM Forms on JEE-Installation im Paket enthalten.</p> </td> 
+  </tr> 
+  <tr> 
+   <td>Microsoft SQL Server<br /> </td> 
+   <td><p>Microsoft® SQL Server JDBC-Treiber 6.2.2.0<br /> </p> <p>sqljdbc6.jar</p> </td> 
+   <td><p>Laden Sie von der Microsoft-Website herunter.</p> </td> 
   </tr> 
   <tr> 
    <td>Oracle</td> 
@@ -332,7 +335,6 @@ Sie können AEM Forms on JEE auf einem physischen Computer oder in einer virtuel
 >
 >* AEM Forms on JEE wird nur von 64-Bit-Betriebssystemen unterstützt.
 >* PDF Generator-Dienst wird unter Windows 10 nicht unterstützt. 
-
 >
 
 
@@ -520,7 +522,6 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >* Der HTML2PDF-Dienst wird unter AIX nicht mehr unterstützt.
 >* Die Funktionen von OCR PDF, Optimize PDF und Export PDF werden nur unter Windows unterstützt.
 >* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung entsprechend Ihrer Implementierung ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-
 >
 
 
@@ -738,7 +739,6 @@ Für zusätzliche Anforderungen siehe:
 >[!NOTE]
 >
 >* Forms Portal wird nur auf einem iPad nur in Safari unterstützt.
-
 >
 
 
