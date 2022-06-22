@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: de466dda2dcafd4c7ba002e91133e975e07b392e
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '163'
 ht-degree: 3%
 
 ---
@@ -34,9 +34,11 @@ Wenn Sie ein Rotationsset oder Bildset erstellen oder PDF zur Seitenextrahierung
 | **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
 | **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
 | **Rotationsset** - Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
-| **PDF** - Maximale Seitenzahl für eine PDF, die für die Extraktion berücksichtigt werden soll |  | 5000 (für neue Uploads) | 100 |
 
+<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
+
+
 
 <!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
 
