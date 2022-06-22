@@ -8,10 +8,10 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 68%
+source-wordcount: '1923'
+ht-degree: 65%
 
 ---
 
@@ -29,7 +29,15 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 >
 >Weitere Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](managing-assets-touch-ui.md).
 
-## Schnellstart: Rotationssets  {#quick-start-spin-sets}
+Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
+
+| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| --- | --- | --- |
+| Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+
+Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
+
+## Schnellstart: Rotationssets {#quick-start-spin-sets}
 
 Gehen Sie wie folgt vor, um die Arbeit mit Rotationssets zu beschleunigen:
 
@@ -106,6 +114,14 @@ Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf,
 >Stapelsätze werden vom IPS (Image Production System) bei der Asset-Erfassung erstellt und sind nur im Modus Dynamic Media - Scene7 verfügbar.
 >
 >Siehe „Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets“ in [Konfigurieren von Dynamic Media – Scene7-Modus](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+
+Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
+
+| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| --- | --- | --- |
+| Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+
+Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 **So erstellen Sie Rotationssets:**
 

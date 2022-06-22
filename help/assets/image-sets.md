@@ -12,10 +12,10 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: Image Sets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
-source-wordcount: '2052'
-ht-degree: 81%
+source-wordcount: '2166'
+ht-degree: 77%
 
 ---
 
@@ -36,6 +36,15 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 >[!NOTE]
 >
 >Weitere Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](managing-assets-touch-ui.md).
+
+Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
+
+| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
+| --- | --- | --- | --- |
+| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
+| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+
+Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 ## Schnellstart: Bildsets {#quick-start-image-sets}
 
@@ -110,7 +119,6 @@ Stellen Sie sicher, dass die Bilder in Bildsets mindestens 2.000 Pixel in der gr
 >
 >* eine schwarze, braune und grüne Aufnahme der Jacke,
 >* eine schwarze, braune und grüne Miniatur
-
 >
 
 
@@ -129,6 +137,15 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 >[!NOTE]
 >
 >Bildsets werden für Assets mit `,` (Komma) im Dateinamen.
+
+Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
+
+| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
+| --- | --- | --- | --- |
+| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
+| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+
+Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 **So erstellen Sie ein Bildset**:
 
