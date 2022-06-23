@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 65%
@@ -31,7 +31,7 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 
 Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
 | --- | --- | --- |
 | Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
 
@@ -117,7 +117,7 @@ Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf,
 
 Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Implementierte Beschränkung |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
 | --- | --- | --- |
 | Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
 

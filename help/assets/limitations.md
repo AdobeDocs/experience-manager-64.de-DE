@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: de466dda2dcafd4c7ba002e91133e975e07b392e
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 3%
+source-wordcount: '189'
+ht-degree: 6%
 
 ---
 
@@ -28,12 +28,13 @@ Dieses Thema enthält die folgenden Abschnitte:
 
 Wenn Sie ein Rotationsset oder Bildset erstellen oder PDF zur Seitenextrahierung hochladen, empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
 
-| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
+| Asset - Limit-Typ | Best Practice | Begrenzung auferlegt | Änderung der Beschränkung am 31. Dezember 2022 |
 | --- | --- | --- | --- |
-| **Bild** - Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |  |
-| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
-| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
-| **Rotationsset** - Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+| **Bild** - Anzahl der smarten Zuschnitte pro Bild | 5 | 100 | 20 |
+| **Alle Sets** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 20 | Nicht zutreffend |
+| **Alle Sets** - Maximale Anzahl von Assets pro Satz | 5 - 10 Bilder pro Set | 1000 | Nicht zutreffend |
+| **Rotationsset** - Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 | Nicht zutreffend |
+| **PDF** - Maximale Seitenzahl für eine PDF, die für die Extraktion berücksichtigt werden soll |  | 5000 (für neue Uploads) | 100 (für alle PDF) |
 
 <!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->

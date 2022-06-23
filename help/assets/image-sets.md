@@ -12,10 +12,10 @@ discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: Image Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
-source-wordcount: '2166'
-ht-degree: 77%
+source-wordcount: '2146'
+ht-degree: 78%
 
 ---
 
@@ -39,10 +39,10 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 
 Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
 
-| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
-| --- | --- | --- | --- |
-| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
-| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| --- | --- | --- |
+| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
+| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
@@ -140,10 +140,10 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 
 Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
 
-| Asset - Limit-Typ | Best Practice | Implementierte Beschränkung | Änderungen an der Beschränkung vom 31. Dezember 2022 |
-| --- | --- | --- | --- |
-| **Bildset** - Anzahl doppelter Assets pro Satz | Keine Duplikate | 100 | 20 |
-| **Bildset** - Maximale Anzahl von Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| --- | --- | --- |
+| Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
+| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
 
 Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
