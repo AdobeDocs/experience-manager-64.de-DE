@@ -13,7 +13,7 @@ exl-id: e7eae36b-39e0-4550-b18b-a1ac1a5c3015
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '406'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Sie können festlegen, welche Spalten in den Suchergebnissen angezeigt werden so
 
 Auf der Seite „Verfolgung“ können Sie einen Prozess auswählen und seine Details anzeigen. Sie können die Prozesse basierend auf verschiedenen Parametern suchen, um die Aufgabendetails anzuzeigen. Sie können auch die Registerkarte „Status“ für Prozesse anzeigen, bei denen mehrere Benutzer parallel Aufgaben erhalten und bei denen die Werkzeuge zur Überprüfung von Dokumenten aktiviert sind.
 
-**Status:** Der Status der Aufgaben in einem Prozess wird in der Spalte &quot;Ausgewählte Aktion&quot;angezeigt, wenn Sie auf eine Aufgabe klicken. Allerdings ist der Zustand des Prozesses nicht verfügbar.
+**Status**: Der Status von Aufgaben in einem Prozess wird in der Spalte „Ausgewählte Aktion“ angezeigt, wenn Sie auf eine Aufgabe klicken. Allerdings ist der Zustand des Prozesses nicht verfügbar.
 
 1. Wählen Sie die Prozessinstanz von der Suchergebnisliste aus, um Details zu den Aufgaben anzuzeigen, die Teil der Prozessinstanz sind.
 1. Um weitere Informationen über eine Aufgabe anzuzeigen, führen Sie eine oder mehrere der folgenden Aktionen durch:

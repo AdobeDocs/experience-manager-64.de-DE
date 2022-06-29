@@ -13,7 +13,7 @@ exl-id: 2c0dab68-d77e-46fb-832d-90edea510750
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 49%
+ht-degree: 96%
 
 ---
 
@@ -21,19 +21,19 @@ ht-degree: 49%
 
 Für jede Anpassung gelten die folgenden generischen Schritte:
 
-1. Bei CRXDE Lite anmelden über `https://[server]:[port]/lc/crx/de/index.jsp`.
-1. Erstellen Sie einen Ordner mit dem Namen `ws`at `/apps`, wenn sie nicht vorhanden ist. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. Navigieren Sie zu `/apps/ws`und navigieren Sie zum **[!UICONTROL Zugriffssteuerung]** Registerkarte.
-1. Im **[!UICONTROL Zugriffssteuerung]** Liste, klicken Sie auf **[!UICONTROL +]** , um einen neuen Eintrag hinzuzufügen. Klicken Sie erneut auf **[!UICONTROL +]**.
-1. Suchen und wählen Sie die **[!UICONTROL PERM_WORKSPACE_USER]** Prinzipal.
+1. Melden Sie sich bei CRXDE Lite an, indem Sie auf `https://[server]:[port]/lc/crx/de/index.jsp` zugreifen.
+1. Erstellen Sie einen -Ordner mit dem Namen `ws` unter `/apps`, falls er noch nicht existiert. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Wechseln Sie zu `/apps/ws` und navigieren Sie zur Registerkarte **[!UICONTROL Zugriffssteuerung]**.
+1. Klicken Sie in der Liste **[!UICONTROL Zugriffssteuerung]** auf **[!UICONTROL +]**, um einen neuen Eintrag hinzuzufügen. Klicken Sie erneut auf **[!UICONTROL +]**.
+1. Suchen Sie den Prinzipal **[!UICONTROL PERM_WORKSPACE_USER]** und wählen Sie ihn aus.
 
    ![Wählen Sie PERM_WORKSPACE_USER als Teil von allgemeinen Schritten, um HTML Workspace anzupassen](assets/perm_workspace_user.png)
 
-1. geben `jcr:read` Berechtigung für den Prinzipal.
+1. Erteilen Sie dem Prinzipal die Berechtigung `jcr:read`.
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Kopieren Sie die `GET.jsp` und `html.jsp`-Dateien aus `/libs/ws`Ordner in `/apps/ws` Ordner.
-1. Kopieren Sie die `/libs/ws/locales` im Ordner `/apps/ws` Ordner. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. Aktualisieren Sie die Verweise und relativen Pfade im `GET.jsp` wie unten gezeigt, und klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Kopieren Sie den Ordner `/libs/ws/locales` in den Ordner `/apps/ws`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Aktualisieren Sie die Verweise und relativen Pfade in der Datei `GET.jsp`, wie unten gezeigt, und klicken Sie auf **[!UICONTROL Alles speichern]**.
 
    ```
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -41,9 +41,9 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
 1. Führen Sie die folgenden Schritte für CSS-Anpassungen aus:
 
-   1. Navigieren Sie zum `/apps/ws` und erstellen Sie einen neuen Ordner mit dem Namen `css`.
+   1. Navigieren Sie zum Ordner `/apps/ws` und erstellen Sie einen neuen Ordner mit dem Namen `css`.
    1. Erstellen Sie im Ordner `css` eine neue Datei mit dem Namen `newStyle.css`.
-   1. Öffnen `/apps/ws/html`.jsp und ändern Sie von
+   1. Öffnen Sie `/apps/ws/html`.jsp und ändern Sie von
 
    ```css
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
@@ -76,18 +76,18 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
 1. Gehen Sie folgendermaßen vor:
 
-   1. Erstellen Sie einen Ordner mit dem Namen `js`at `/apps/ws`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-   1. Erstellen Sie einen Ordner mit dem Namen `libs`at `/apps/ws/js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-   1. Erstellen Sie einen Ordner mit dem Namen `jqueryui`at `/apps/ws/js/libs`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Erstellen Sie in `/apps/ws` einen Ordner mit dem Namen `js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Erstellen Sie in `/apps/ws/js` einen Ordner mit dem Namen `libs`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Erstellen Sie in `/apps/ws/js/libs` einen Ordner mit dem Namen `jqueryui`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
    1. Kopieren Sie `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` nach `/apps/ws/js/libs/jqueryui`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Führen Sie die folgenden Schritte für HTML-Anpassungen aus:
 
-   1. under `/apps/ws/js`erstellen Sie einen Ordner mit dem Namen `runtime`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-   1. under `/apps/ws/js/runtime`erstellen Sie einen Ordner mit dem Namen `templates`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Erstellen Sie unter `/apps/ws/js` einen Ordner mit dem Namen `runtime`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+   1. Erstellen Sie unter `/apps/ws/js/runtime` einen Ordner mit dem Namen `templates`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
    1. Kopieren Sie `/libs/ws/js/main.js` nach `/apps/ws/js/main.js`.
-   1. Kopieren Sie /libs/ws/js/registry.js in `/apps/ws/js/registry.js`.
+   1. Kopieren Sie /libs/ws/js/registry.js nach `/apps/ws/js/registry.js`.
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**, löschen Sie den Cache und aktualisieren Sie AEM Forms Workspace.
 
-   Zugriff auf die URL `https://[server]:[port]/lc/ws` und melden Sie sich mit Administrator-/Passwortdaten an. Der Browser leitet zu `https://[server]:[port]/lc/apps/ws/index.html`.
+   Greifen Sie auf die URL `https://[server]:[port]/lc/ws` zu und melden Sie sich mit Administrator/Kennwort-Anmeldeinformationen an. Der Browser leitet Sie zu `https://[server]:[port]/lc/apps/ws/index.html` weiter.

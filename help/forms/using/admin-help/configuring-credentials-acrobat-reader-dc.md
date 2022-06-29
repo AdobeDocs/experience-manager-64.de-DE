@@ -13,7 +13,7 @@ exl-id: 40c2e205-0115-4ebe-ab24-66c8ee0663fa
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Um Verwendungsrechte in PDF-Dokumenten anzuwenden, konfigurieren Sie AEM Forms m
 
 Wenn Sie eine Testberechtigung verwenden, müssen Sie diese nach dem Wechsel in die Produktionsumgebung durch eine Produktionsberechtigung ersetzen. Um eine abgelaufene oder Testberechtigung zu aktualisieren, müssen Sie zunächst die alte Acrobat Reader DC Extensions-Berechtigung löschen.
 
-Weitere Informationen zum Abrufen einer Berechtigung finden Sie unter [Vorbereiten der Installation von AEM Forms (Einzelserver)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Weitere Informationen zum Abrufen einer Berechtigung finden Sie unter [Vorbereiten der Installation von AEM Forms (Einzelserver)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_de).
 
 Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensions-Berechtigung. Sie müssen eine dieser Berechtigungen als Standardberechtigung für Reader Extensions festlegen. Die Standardberechtigung wird verwendet, wenn ein Workbench-Benutzer nicht entscheiden kann, welche Berechtigung bei der Prozesserstellung verwendet werden soll. Diese Regeln gelten für Standardberechtigungen:
 
@@ -34,7 +34,7 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 
 >[!NOTE]
 >
->Sie können Berechtigungen auch importieren und programmgesteuert löschen. (Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
+>Sie können Berechtigungen auch importieren und programmgesteuert löschen. (Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).)
 
 ## Acrobat Reader DC Extensions-Berechtigungen importieren {#import-a-acrobat-reader-dc-extensions-credential}
 
@@ -53,11 +53,11 @@ Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensio
 
 ## Acrobat Reader DC Extensions-Berechtigungen entfernen {#remove-a-acrobat-reader-dc-extensions-credential}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Wählen Sie die Berechtigung und klicken Sie auf „Löschen“.
 
 ## Acrobat Reader DC Extensions-Berechtigungen ersetzen {#replace-a-acrobat-reader-dc-extensions-credential}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
 1. Notieren Sie sich den Alias der vorhandenen Berechtigung, wählen Sie ihn aus und klicken Sie auf „Löschen“.
 1. Importieren Sie die neue Berechtigung unter Verwendung von exakt demselben Aliasnamen.

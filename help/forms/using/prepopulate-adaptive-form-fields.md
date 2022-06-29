@@ -8,13 +8,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
 feature: Adaptive Forms
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 67bb208a-042b-4fa1-9ab1-23325e0c7e4c
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '2001'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
-
 
 # Vorbefüllen von Feldern in adaptiven Formularen {#prefill-adaptive-form-fields}
 
@@ -80,7 +80,7 @@ Im Fall von gebundenen Feldern mit demselben „bindref“ oder ungebundenen Fel
 
 ## Adaptives Formular mit XFA-Formularvorlage {#xfa-based-af}
 
-Die Struktur der XML zum Vorbefüllen und der gesendeten XML für XFA-basierte adaptive Formulare lautet wie folgt:
+Die Struktur der vorausgefüllten XML-Datei und der übermittelten XML-Datei für XFA-basierte adaptive Formulare ist wie folgt:
 
 * **XML-Struktur zum Vorbefüllen**: Die XML zum Vorausfüllen für XFA-basierte adaptive Formulare muss mit dem Datenschema der XFA-Formularvorlage konform sein. Um ungebundene Felder vorzubefüllen, umschließen Sie die XML-Struktur zum Vorbefüllen in das Tag `/afData/afBoundData`.
 
@@ -202,7 +202,7 @@ Im Folgenden finden Sie ein Beispiel ohne `afData/afBoundData`-Wrapper:
 
 ## Adaptives Formular ohne Formularmodell {#adaptive-form-with-no-form-model}
 
-Bei adaptiven Formularen ohne Formularmodell befinden sich die Daten für alle Felder unter der `<data>` Tag von `<afUnboundData> tag`.
+Bei adaptiven Formularen ohne Formularmodell befinden sich die Daten für alle Felder unter dem Tag `<data>` von `<afUnboundData> tag`.
 
 Außerdem sollten Sie Folgendes beachten:
 
@@ -243,7 +243,7 @@ Um den Vorbefüllungs-Service zu aktivieren, müssen Sie die standardmäßige Vo
 
 1. Geben Sie den Datenspeicherort oder einen Regex (regulärer Ausdruck) für die **[!UICONTROL Datendateispeicherorte]** ein. Beispiele für gültige Datendateispeicherorte:
 
-   * file:///C:/Users/public/Document/Prefill/.&amp;ast;
+   * file:///C:/Users/public/Document/Prefill/.*
    * http://localhost:8000/somesamplexmlfile.xml
 
    >[!NOTE]
@@ -371,4 +371,3 @@ Um den Vorbefüllungsdienst zu starten, laden Sie die JAR-Datei in die AEM Forms
 1. Öffnen Sie das adaptive Formular im Forms-Editor und öffnen Sie den Bereich „Eigenschaften“ für den Formularcontainer.
 1. Navigieren Sie in der Eigenschaftenkonsole zu **[!UICONTROL AEM Forms-Container > Einfach > Vorbefüllungs-Dienst]**.
 1. Wählen Sie den Vorbefüllungs-Service und klicken Sie auf **[!UICONTROL Speichern]**. Dieser Service ist mit dem Formular verknüpft.
-

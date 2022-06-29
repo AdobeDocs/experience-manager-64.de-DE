@@ -14,7 +14,7 @@ exl-id: fa62a521-1a0b-4856-acc6-71c51ad9e527
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2524'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Auf den Document Security-Webseiten können Benutzer und Administratoren Richtli
 
 In der Clientanwendung kann eine Richtlinie aus einem Dokument entfernt werden.
 
-![rm_sonline_policy](assets/rm_psonline_policy.png)
+![rm_psonline_policy](assets/rm_psonline_policy.png)
 
 Die Abbildung zeigt die folgenden Schritte:
 
@@ -208,7 +208,7 @@ Wenn Sie eine Kopie eines richtliniengeschützten Dokuments mit dem Menübefehl 
 
 ## Richtliniensätze {#policy-sets}
 
-*Richtliniensätze* dienen zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck.  Diese Richtliniensätze werden meist einer Teilmenge der Benutzer im System zur Verfügung gestellt.
+*Richtliniensätze* dienen zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden meist einer Teilmenge der Benutzer im System zur Verfügung gestellt.
 
 Jedem Richtliniensatz ist mindestens ein Richtliniensatzkoordinator zugeordnet. Der Richtliniensatzkoordinator ist ein Administrator oder Benutzer mit zusätzlichen Berechtigungen. Der *Richtliniensatzkoordinator* ist in der Regel ein Spezialist im Unternehmen, der die Richtlinien in einem bestimmten Richtliniensatz am besten verwalten kann.
 
@@ -224,6 +224,6 @@ Richtliniensatzkoordinatoren können diese Aufgaben ausführen:
 
 Richtliniensätze werden auf den Document Security-Administrationswebseiten von Administratoren und Richtliniensatzkoordinatoren erstellt und gelöscht, denen die entsprechenden Berechtigungen erteilt wurden.
 
-Richtliniensätze werden meist einer begrenzten Anzahl von Benutzern zur Verfügung gestellt, indem die Benutzer oder Gruppen in einer Domäne angegeben werden, die Richtlinien im Richtliniensatz zum Schützen von Dokumenten verwenden dürfen.
+Richtliniensätze werden meist einer begrenzten Anzahl von Benutzern zur Verfügung gestellt, indem die Benutzer oder Gruppen in einer Domain angegeben werden, die Richtlinien im Richtliniensatz zum Schützen von Dokumenten verwenden dürfen.
 
 Bei der Installation von Document Security wird standardmäßig ein so genannter *globaler Richtliniensatz* erstellt. Dieser Richtliniensatz wird von dem Administrator verwaltet, der die Software installiert hat.

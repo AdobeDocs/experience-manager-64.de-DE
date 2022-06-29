@@ -13,7 +13,7 @@ exl-id: 8394151e-e9cf-4f68-97a3-ba1d1dd6a2d2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ Durch die Minimierung werden die redundanten Zeichen im Quellcode, wie Leerzeich
 
 Um minimierten Code für semantische Änderungen zu generieren, führen Sie folgende Schritte aus.
 
-1. Kopieren `client-html/src/main/webapp/js` von src-package im Dateisystem.
+1. Kopieren Sie `client-html/src/main/webapp/js` von „src-package“ nach „filesystem“.
 
    >[!NOTE]
    >
    >Weitere Informationen finden Sie unter [Einführung zum Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) finden Sie weitere Informationen über die Pakete.
 
-1. Pfade in aktualisieren `main.js` befindet sich unter client-html/src/main/webapp/js, für hinzugefügte/aktualisierte Modelle/Ansichten.
+1. Aktualisieren Sie die Pfade in `main.js`, die sich unter client-html/src/main/webapp/js befinden, für hinzugefügte bzw. aktualisierte Modelle oder Ansichten.
 
    Ändern Sie zum Beispiel nach Hinzufügen eines neuen Sharequeue-Modells mySharequeue:
 
@@ -41,7 +41,7 @@ Um minimierten Code für semantische Änderungen zu generieren, führen Sie folg
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Aktualisieren `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` falls es eine Änderung/Hinzufügung des Alias in `main.js`.
+1. Aktualisieren Sie `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,`, falls es eine Änderung/Hinzufügung des Alias in `main.js` gibt.
 
    Ändern Sie zum Beispiel nach Hinzufügen eines neuen Sharequeue-Modells mySharequeue:
 

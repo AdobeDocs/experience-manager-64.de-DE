@@ -1,5 +1,5 @@
 ---
-title: JavaAPI-Schnellstart für den Application Manager-Dienst (SOAP)
+title: Java API-Schnellstart (SOAP) für den Application Manager-Dienst
 seo-title: Application Manager Service JavaAPI Quick Start(SOAP)
 description: Verwenden Sie den Application Manager-Dienst, um Anwendungen mithilfe des Schnellstarts zur Java-API bereitzustellen und zu entfernen.
 seo-description: Use the Application Manager service to deploy and remove applications using the Java API Quick Start.
@@ -14,17 +14,17 @@ exl-id: 1d93a7c2-631a-4cf7-938f-0133536c7e09
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 1%
+ht-degree: 92%
 
 ---
 
-# Schnellstart JavaAPI für den Application Manager-Dienst (SOAP) {#application-manager-service-javaapi-quick-start-soap}
+# JavaAPI Quick Start (SOAP) für den Application Manager-Service {#application-manager-service-javaapi-quick-start-soap}
 
-Java API Quick Start (SOAP) ist für den Application Manager-Dienst verfügbar.
+Java API Quick Start (SOAP) ist für den Application Manager-Service verfügbar.
 
-[Schnellstart: Bereitstellen von Anwendungen mit der Java-API (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
+[Quick Start: Bereitstellen von Anwendungen mit der Java-API (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Schnellstart: Entfernen einer Anwendung mit der Java-API (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
+[Quick Start: Entfernen einer Anwendung mit der Java-API (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt 
 
 >[!NOTE]
 >
->Schnellstart für Java-API (SOAP) im Bereich Programmieren mit AEM Formularen basiert auf Forms, wenn Sie ein anderes Betriebssystem wie Unix verwenden. Ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start für Java-API (SOAP) im Bereich Programmieren mit AEM Forms basiert auf Forms, wenn Sie ein anderes Betriebssystem wie Unix verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Schnellstart (SOAP-Modus): Bereitstellen von Anwendungen mit der Java-API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## Quick Start (SOAP-Modus): Bereitstellen von Anwendungen mit der Java-API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-Das folgende Java-Codebeispiel importiert eine Anwendung basierend auf einer vorhandenen LCA-Datei mit dem Namen *EncryptDocument.lca*.
+Das folgende Java-Code-Beispiel importiert eine Anwendung basierend auf einer vorhandenen LCA-Datei mit dem Namen *EncryptDocument.lca*.
 
 ```as3
  /* 
@@ -138,9 +138,9 @@ Das folgende Java-Codebeispiel importiert eine Anwendung basierend auf einer vor
  
 ```
 
-## Schnellstart (SOAP-Modus): Entfernen einer Anwendung mit der Java-API {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Quick Start (SOAP-Modus): Entfernen einer Anwendung mit der Java-API {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Anwendung mit dem Namen *EncryptDocument*.
+Das folgende Java-Code-Beispiel entfernt eine Anwendung mit dem Namen *EncryptDocument*.
 
 ```as3
  /* 

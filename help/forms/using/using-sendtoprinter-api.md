@@ -12,7 +12,7 @@ exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -29,10 +29,10 @@ Sie können in AEM Forms den sendToPrinter-Dienst verwenden, um ein Dokument an 
    Geben Sie eines der folgenden Druckprotokolle an, wenn Sie ein Dokument an einen Drucker senden:
 
    * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**: Der Output-Dienst unterstützt das CIFS-Druckprotokoll (Common Internet File System).
+   * **CIFS**: Der Output-Service unterstützt das CIFS-Druckprotokoll (Common Internet File System).
 
 ## Verwenden des SendToPrinter-Service {#using-sendtoprinter-service}
 
@@ -43,29 +43,29 @@ In nachstehender Tabelle wird Folgendes aufgelistet:
 
 | Protokoll (Zugriffsmechanismus) | Drucker-Server-URI (PrinterSpec.printServer) | Name des Druckers (PrinterSpec.printerName) | Ergebnis |
 |--- |--- |--- |--- |
-| SharedPrinter | Alle | Leer | Ausnahme: Das erforderliche Argument sPrinterName darf nicht leer sein. |
+| SharedPrinter | Alle | Leer | Ausnahme: Das erforderliche Argument sPrinterName darf nicht leer sein. |
 | SharedPrinter | Alle | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
 | SharedPrinter | Alle | Valid | Druckauftrag wird erfolgreich ausgeführt. |
-| LPD | Leer | Alle | Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
+| LPD | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 | LPD | Ungültig | Leer | Ausnahmefehler, der besagt, dass das erforderliche sPrinterName-Argument nicht leer sein darf. |
-| LPD | Ungültig | Nicht leer | Ausnahmefehler, der besagt, dass sPrintServerUri nicht gefunden wurde. |
+| LPD | Ungültig | Nicht leer | Ausnahmefehler, der besagt, dass sPrintServerUri nicht gefunden wurde. |
 | LPD | Gültig | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
 | LPD | Gültig | Gültig | Druckauftrag wird erfolgreich ausgeführt. |
-| CUPS | Leer | Alle | Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
+| CUPS | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 | CUPS | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
 | CUPS | Gültig | Alle | Druckauftrag wird erfolgreich ausgeführt. |
-| DirectIP | Leer | Alle | Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
+| DirectIP | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 | DirectIP | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
 | DirectIP | Gültig | Alle | Druckauftrag wird erfolgreich ausgeführt. |
 | CIFS | Gültig | Leer | Druckauftrag wird erfolgreich ausgeführt. |
 | CIFS | Ungültig | Alle | Beim Drucken einen unbekannten Fehler bei Verwendung von CIFS aus. |
-| CIFS | Leer | Alle | Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
+| CIFS | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 
 ## Authentifizierungsunterstützung {#authentication-support}
 
-Authentifizierung wird nur für CIFS-Druck unterstützt. Um sich zu authentifizieren, geben Sie den Benutzernamen/das Kennwort/die Domäne in PrinterSpec an. Sie können ein Kennwort mit AEM Granite CyprtoSupport Service verschlüsseln, indem Sie die folgenden Schritte ausführen:
+Authentifizierung wird nur für CIFS-Druck unterstützt. Geben Sie zur Authentifizierung in PrinterSpec Benutzername/Kennwort/Domain ein. Sie können ein Kennwort mit AEM Granite CyprtoSupport Service verschlüsseln, indem Sie die folgenden Schritte ausführen:
 
-1. Gehen Sie zu https://&lt;server>:&lt;port>/system/console.
+1. Wechseln Sie zu https://&lt;server>:&lt;port>/system/console.
 
 1. Rufen Sie **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]** auf.
 

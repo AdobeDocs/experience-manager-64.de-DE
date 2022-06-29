@@ -12,7 +12,7 @@ exl-id: f726cb73-732c-4893-bdb5-10ddcf4a340a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ Backbone ist eine Bibliothek, die das Erstellen und Verfolgen von MVC-Architektu
 
 Einige Hauptkonzepte sind die folgenden:
 
-**Backbone-Modell** Enthält Daten und den Großteil der mit diesen Daten verbundenen Logik.
+**Backbone-Modell**: Enthält Daten und die meiste mit diesen Daten verknüpfte Logik.
 
-**Backbone-Ansicht** Wird verwendet, um den Status des entsprechenden Modells darzustellen. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
+**Backbone-Ansicht**: Wird verwendet, um den Status des jeweiligen Modells darzustellen. Eine Backbone-Ansicht verhält sich im Prinzip wie ein Controller, der Benutzeroberflächenereignisse wie Benutzerklicks oder Modellereignisse (wie Datenänderungen) erfasst und die Benutzeroberfläche entsprechend ändert.
 
-**HTML-Vorlage** Eine Wrapper-Vorlage mit Platzhaltern, die vom Modell gefüllt werden.
+**HTML-Vorlage**: Eine Wrapper-Vorlage mit Platzhaltern, die durch das Modell gefüllt werden.
 
-**AEM Forms Workspace** Enthält mehrere einzelne Komponenten. Jede Komponente:
+**AEM Forms-Arbeitsbereich**: Enthält mehrere einzelne Komponenten. Jede Komponente:
 
 * Stellt ein einzelnes logischen Element der Benutzeroberfläche dar.
 * Kann eine Sammlung ähnlicher Komponenten sein.
@@ -52,8 +52,8 @@ Ein Beispiel:
 
 1. Benutzer klickt in der Aufgabenliste auf eine Aufgabenvorlage.
 1. Aufgabenansicht erfasst den Klick und ruft Renderfunktion im Aufgabenmodell auf.
-1. Das Aufgabenmodell ruft anschließend den Dienst auf, der ein gemeinsamer Punkt für die gesamte Kommunikation mit dem AEM Forms-Server ist.
-1. Die Dienstklasse ruft den AEM Forms REST-Endpunkt für die Rendermethode über Ajax auf.
+1. Das Task-Modell ruft daraufhin den Service auf, der ein gemeinsamer Punkt für die gesamte Kommunikation mit dem AEM Forms-Server ist.
+1. Die Service-Klasse ruft den AEM Forms-REST-Endpunkt für die Render-Methode über Ajax auf.
 1. Der Erfolgsrückruf für diesen Ajax-Aufruf wird im Aufgabenmodell definiert.
 1. Aufgabenmodell erstellt ein Backbone-Ereignis als Benachrichtigung, dass der Renderaufruf abgeschlossen ist.
 1. Eine andere Ansicht, die Aufgabendetailansicht, überwacht dieses Ereignis des Aufgabenmodells.

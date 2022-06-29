@@ -12,7 +12,7 @@ exl-id: 42d8472d-0eab-4cf9-a7c3-bf2775ee6bec
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -32,10 +32,10 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
 
 ## Anzeigen von Informationen über eine Aufgabe {#displaying-information-on-a-task}
 
-1. Befolgen Sie die [generischen Schritte für die Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Befolgen Sie die [generischen Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Um zusätzliche Information für eine Aufgabe anzuzeigen, müssen die entsprechenden Schlüssel-Wert-Paare innerhalb des Aufgabenblocks von `translation.json` hinzugefügt werden.
 
-   Beispiel ändern `/apps/ws/locales/en-US/translation.json` für Englisch:
+   Ändern Sie zum Beispiel `/apps/ws/locales/en-US/translation.json` für Englisch:
 
    ```
    "task" : {
@@ -122,7 +122,7 @@ Weitere Informationen über die JSON-Objektbeschreibung finden Sie in [diesem](/
 
 ## Definieren von CSS für die neue Eigenschaft {#defining-css-for-the-new-property}
 
-1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die zu `/apps/ws/css/newStyle.css`.
+1. Sie können einen Stil auf die einer Aufgabe hinzugefügten Informationen (Eigenschaft) anwenden. Dazu müssen Sie Stilinformationen für die neue Eigenschaft hinzufügen, die `/apps/ws/css/newStyle.css` hinzugefügt wurde.
 
    Fügen Sie beispielsweise ein:
 
@@ -143,9 +143,9 @@ Schließlich müssen Sie für jede Eigenschaft, die Sie der Aufgabe hinzufügen 
    * von: `/libs/ws/js/runtime/templates/`
    * in: `/apps/ws/js/runtime/templates/`
 
-1. Fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/task.html`.
+1. Fügen Sie `/apps/ws/js/runtime/templates/task.html` die neuen Informationen hinzu.
 
-   Fügen Sie beispielsweise unter `div class="taskProperties"`:
+   Fügen Sie beispielsweise Folgendes unter `div class="taskProperties"` hinzu:
 
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

@@ -13,7 +13,7 @@ exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,12 +32,12 @@ Geben Sie zum Durchführen einer allgemeinen Suche grundlegende Kriterien ein. W
 1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Prozesssuche“.
 1. Geben Sie auf der Seite „Prozesssuche“ unter „Allgemeine Suche“ die folgenden Kriterien ein:
 
-   * **Prozess-ID:** Die positive ganze Zahl, die jede eindeutige Prozessinstanz identifiziert.
+   * **Prozess-ID:** Die positive Ganzzahl, die jede eindeutige Prozessinstanz identifiziert.
    * **Prozessstatus:** Wählen Sie den gewünschten Status in der Liste.
-   * **Anwendung:** Wählen Sie die gewünschte Anwendung in der Liste. Nur bereitgestellte Anwendungen werden angezeigt.
+   * **Programm:** Wählen Sie das gewünschte Programm in der Liste. Nur bereitgestellte Programme werden angezeigt.
    * **Prozessname/-version:** Wählen Sie einen Prozessnamen im Menü. Nur bereitgestellte Prozesse werden angezeigt.
 
-1. Klicken Sie auf Suchen. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
+1. Klicken Sie auf „Suchen“. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
 
 ## Eine Detailsuche nach einem Prozess durchführen {#perform-a-detailed-search-for-a-process}
 
@@ -53,7 +53,7 @@ Zum Durchführen einer Detailsuche geben Sie spezifische Attribute ein. Eine Det
 1. Klicken Sie zum Hinzufügen einer weiteren Zeile auf „Mehr Filter“. Ein weiterer Satz von „Attribut“-, „Filter“- und „Wert“-Listen sowie die Liste „Bedingung“ werden angezeigt.
 1. Wählen Sie unter „Bedingung“ UND oder ODER. Wiederholen Sie die Schritte 1 bis 3 nach Bedarf, um die Suche weiter einzuschränken.
 1. Klicken Sie zum Hinzufügen oder Löschen von Zeilen auf „Mehr Filter“ oder „Weniger Filter“. Es können eine bis vier Zeilen verwendet werden.
-1. Klicken Sie auf Suchen. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
+1. Klicken Sie auf „Suchen“. Die Seite „Prozessinstanz“ wird mit einer Liste der gefundenen Instanzen angezeigt.
 
 [Informationen zum Status von Prozessinstanzen](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 

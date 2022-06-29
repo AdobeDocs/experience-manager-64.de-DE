@@ -13,7 +13,7 @@ exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '559'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,14 +36,14 @@ Verteilte, modulare Systeme bieten ihre Vorteile, die Herausforderung besteht je
 AEM Forms-Datenintegration ermöglicht die Konfiguration und Verbindung verschiedener Datenquellen mit AEM Forms. In der intuitiven Benutzeroberfläche können Sie eine einheitliche Datendarstellung der Geschäftsbereiche und Services für sämtliche verbundenen Datenquellen erstellen. Diese einheitliche Darstellung wird als Formulardatenmodell bezeichnet. Es handelt sich um eine Erweiterung des JSON-Schemas. Die Entitäten in einem Formulardatenmodell werden als Datenmodellobjekte bezeichnet. Ein Formulardatenmodell gibt Ihnen folgende Möglichkeiten:
 
 * Zugreifen auf Datenmodellobjekte, Eigenschaften und Services aus verbundenen Datenquellen.
-* Erstellen benutzerdefinierter Datenmodellobjekten und -eigenschaften
+* Erstellen benutzerdefinierter Datenmodellobjekten und -eigenschaften.
 * Erstellen von Verknüpfungen zwischen Datenmodellobjekten innerhalb und zwischen Datenquellen.
 * Aufrufen von Services für Datenmodellobjekte zum Abfragen von Daten aus und Schreiben von Daten in Datenquellen.
 
 Nachdem Sie ein Formulardatenmodell erstellt haben, können Sie es in verschiedenen Workflows für adaptive Formulare und interaktive Kommunikation verwenden, zum Beispiel:
 
 * Erstellen adaptiver Formulare und interaktiver Kommunikation basierend auf dem Formulardatenmodell
-* Vorausfüllen adaptiver Formulare und interaktiver Kommunikation aus konfigurierten Datenquellen
+* Ausfüllen adaptiver Formulare und interaktiver Kommunikation aus konfigurierten Datenquellen 
 * Aufrufen von Datenquellendiensten/-vorgängen mit Regeln für adaptive Formulare
 * Übermittelte Formulardaten in Datenquellen schreiben
 

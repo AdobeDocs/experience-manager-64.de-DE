@@ -12,7 +12,7 @@ exl-id: 7efc657e-b662-47db-8e70-62a37f3a3051
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 81%
+ht-degree: 95%
 
 ---
 
@@ -34,10 +34,10 @@ Sie müssen das Xcode-Projekt für AEM Forms-App archivieren, um das Installatio
 1. Laden Sie das Profil für die Bereitstellung herunter und fügen Sie es zum Xcode und iPad hinzu.
 1. Melden Sie sich bei Ihrem Mac-Computer an, auf dem Xcode und iOS SDK installiert und konfiguriert sind.
 1. Öffnen Sie das Projekt `AEM Forms.xcodeproj` in Xcode.
-1. Klicken Sie auf **[!UICONTROL AEM Forms]** und wählen Sie unter **[!UICONTROL TARGETS]****[!UICONTROL AEM Forms]**. Wählen Sie die **[!UICONTROL Build-Einstellungen]** Registerkarte, suchen Sie die **[!UICONTROL Berechtigung für Code-Signatur]** und wählen Sie im Dropdown-Menü Entitäten die **[!UICONTROL LC Enterprise]** -Option.
+1. Klicken Sie auf **[!UICONTROL AEM Forms]** und wählen Sie unter **[!UICONTROL TARGETS]** die Option **[!UICONTROL AEM Forms]**. Wählen Sie die Registerkarte **[!UICONTROL Build-Einstellungen]**, suchen Sie den Abschnitt **[!UICONTROL Code Signing- Berechtigung]** und wählen Sie in der Dropdown-Liste „Berechtigungen“ die Option **[!UICONTROL LC Enterprise]**.
 1. Suchen und öffnen Sie die Datei `LC Enterprise.entitlements` im Xcode zur Bearbeitung. Fügen Sie unter &quot;XCode-Berechtigungen&quot;dasselbe Schlüssel-Wert-Paar hinzu, das auch in Ihrem Bereitstellungsprofil vorhanden ist.
 1. Klicken Sie auf der Registerkarte **[!UICONTROL Build Settings]** auf **[!UICONTROL All]** und anschließend auf **[!UICONTROL Combined]**.
 1. Erweitern Sie in der Liste **[!UICONTROL Settings]** das Element **[!UICONTROL Code Signing]**.
 1. Wählen Sie für **[!UICONTROL Code Signing Identity]** die entsprechende Signatur. Achten Sie darauf, dass dieselbe Signatur für die Optionen **[!UICONTROL Debug]**, **[!UICONTROL Release]** und **[!UICONTROL Any iOS SDK]** ausgewählt wird.
-1. under **[!UICONTROL PROJEKT]** auswählen **[!UICONTROL AEM Forms]** und stellen sicher, dass die entsprechende Signatur für **[!UICONTROL Code Signing Identity]**, **[!UICONTROL Debuggen]**, **[!UICONTROL Version]** und **[!UICONTROL Beliebiges iOS SDK]**.
+1. Wählen Sie unter **[!UICONTROL PROJEKT]** die Option **[!UICONTROL AEM Forms]** und stellen Sie sicher, dass die entsprechende Signatur für **[!UICONTROL Code Signing Identity]**, **[!UICONTROL Debug]**, **[!UICONTROL Release]** und **[!UICONTROL Any iOS SDK]** ausgewählt ist.
 1. Erstellen Sie die AEM Forms-App und stellen Sie sie bereit. Detaillierte Anweisungen zur Erstellung und Bereitstellung der AEM Forms-App finden Sie unter [Erstellen des Installationsprogramms für die AEM Forms-App](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app).

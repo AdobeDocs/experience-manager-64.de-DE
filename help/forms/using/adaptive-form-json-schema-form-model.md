@@ -12,7 +12,7 @@ exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1207'
-ht-degree: 85%
+ht-degree: 86%
 
 ---
 
@@ -319,7 +319,7 @@ Das obige Beispiel definiert einen Kundendatensatz, bei dem jeder Kunde über ei
 
 ## Vorkonfigurieren von Feldern in JSON-Schemadefinitionen {#pre-configuring-fields-in-json-schema-definition}
 
-Sie können die **aem:afProperties** -Eigenschaft zum Vorkonfigurieren des JSON-Schema-Felds für die Zuordnung zu einer benutzerdefinierten adaptiven Formularkomponente. Ein Beispiel wird unten angezeigt:
+Mit der Eigenschaft **aem:afProperties** können Sie ein JSON-Schemafeld so vorkonfigurieren, dass es einer benutzerdefinierten Komponente des adaptiven Formulars zugeordnet wird. Ein Beispiel wird unten angezeigt:
 
 ```
 {

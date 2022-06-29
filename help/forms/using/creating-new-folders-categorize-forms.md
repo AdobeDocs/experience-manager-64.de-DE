@@ -13,7 +13,7 @@ exl-id: 6c989701-10c7-466e-b3e5-008a6d377574
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ In AEM Forms können Sie den Titel eines Ordners ändern. Der Titel ist nicht mi
 
 Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
 
-* Laden Sie eine ZIP-Datei hoch, die Assets in der gewünschten Ordnerstruktur enthält (siehe [Einbinden von XDP- und PDF-Dokumenten in AEF Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
+* Laden Sie eine ZIP-Datei hoch, die Assets in der gewünschten Ordnerstruktur enthält (siehe [Einbinden von XDP- und PDF-Dokumenten in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md))
 
 * Erstellen eines neuen leeren Ordners
 
 1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche unter `https://<server>:<port>/aem/forms.html` an.
 1. Navigieren Sie zu dem Speicherort, unter dem Sie einen Ordner erstellen möchten.
-1. Klicken Sie auf ![aem6forms_add](assets/aem6forms_add.png) in der Symbolleiste ein und wählen Sie dann **[!UICONTROL Ordner erstellen]**.
+1. Klicken Sie auf das Symbol ![aem6forms_add](assets/aem6forms_add.png) in der Symbolleiste und wählen Sie **[!UICONTROL Ordner erstellen]** aus.
 
 1. Geben Sie die folgenden Details ein:
 
@@ -53,6 +53,6 @@ Sie können einen Ordner in AEM Forms auf eine der folgenden Arten erstellen:
 ### Bearbeiten des Ordnertitels {#edit-the-folder-title-br}
 
 1. Wählen Sie den Ordner aus, dessen Namen Sie bearbeiten möchten.
-1. Klicken Sie auf Bearbeiten ![aem6forms_edit](assets/aem6forms_edit.png) in der Symbolleiste.
+1. Klicken Sie auf das Symbol ![aem6forms_edit](assets/aem6forms_edit.png) in der Symbolleiste.
 1. Geben Sie den neuen Titel ein. Das Textfeld wird vorab mit dem aktuellen Wert des Ordnertitels gefüllt. Sie können diesen in einen neuen Wert ändern.
 1. Klicken Sie auf **[!UICONTROL Senden].**

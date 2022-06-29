@@ -14,7 +14,7 @@ exl-id: 9e381e71-63ff-41ab-a6ec-9f92447b65a0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ Das Feldelement enthält zwei verschachtelte Elemente: Widget und Beschriftung.
 
 Das Widget-Element enthält das Element der Benutzeroberfläche für die Interaktion mit dem Benutzer. Es enthält drei CSS-Klassen:
 
-* **Widget**: Jedes Widget hat diese Klasse.
-* **name**: Alle Widgets, die mit AEM ausgeliefert werden, enthalten die name-Klasse des Widgets. Für benutzerdefinierte Widgets stellt der Widget-Entwickler die name-Klasse bereit.
-* **type**: Jedes Widget verfügt über ein Element der Benutzeroberfläche. Diese Klasse definiert den Typ des Elements der Benutzeroberfläche.
+* **Widget:** Diese Klasse hat jedes Widget.
+* **name**: Die „name“-Klasse enthalten alle Widgets von AEM. Für benutzerdefinierte Widgets stellt der Widget-Entwickler die name-Klasse bereit.
+* **type**: Jedes Widget hat ein Benutzeroberflächenelement. Diese Klasse definiert den Typ des Elements der Benutzeroberfläche.
 
 ```xml
 <!--field with caption-->
@@ -238,7 +238,7 @@ Mithilfe des AEM Forms Designer können Sie statische Zeichenelemente wie Text u
 
 ## Gestalten des Stils anderer Formularteile {#styling-other-parts-of-the-form}
 
-Neben dem Erscheinungsbild von Benutzeroberflächenkomponenten im HTML-Formular können Sie den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
+Neben dem Aussehen der Benutzerflächen-Komponenten im HTML-Formular können Sie auch den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
 
 `Styling Inline Errors`
 
@@ -250,4 +250,4 @@ Wenn die Überprüfung eines Feldes eine Warnung ergibt, wird eine Inline-Warnun
 
 `Styling Fields with Validation Errors`
 
-Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Stiländerung erfolgt durch Anwenden einer CSS-Klasse **widgetError** auf der Widget-Komponente. Um den Standardstil zu ändern, überschreiben Sie die **widgetError** -Klasse.
+Wenn die Überprüfung eines Feldes fehlschlägt, wird der Stil des Widgets geändert. Diese Änderung des Stils wird ausgeführt, indem die CSS-Klasse **widgetError** auf die Widget-Komponente angewendet wird. Um den Standardstil zu ändern, muss die Klasse **widgetError** außer Kraft gesetzt werden.

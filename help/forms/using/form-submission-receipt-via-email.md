@@ -60,7 +60,7 @@ Mit der E-Mail-Aktion kann ein Autor automatisch eine E-Mail an einen oder mehre
 
    Sie können auch variable Platzhalter in den Feldern angeben. In diesem Fall werden die Feldwerte verarbeitet, wenn das Formular erfolgreich von einem Endbenutzer gesendet wurde. Weitere Informationen finden Sie unter [Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen](/help/forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
-   Aktivieren Sie „Anlagen einschließen“, wenn das Formular Dateianhänge enthält und Sie diese Dateien an die E-Mail anhängen möchten.
+   Aktivieren Sie Anhänge einschließen, wenn das Formular Dateianhänge enthält und Sie diese Dateien in der E-Mail anhängen möchten.
 
    >[!NOTE]
    >

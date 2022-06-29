@@ -13,7 +13,7 @@ exl-id: 5230222b-53f8-414c-aaa1-848d6e9369e8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '856'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -46,9 +46,9 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
 
    * Wählen Sie oben in der Registerkarte „Kriterien“ ein Prozess- oder Aufgabenelement aus.
 
-      **Tipp**: *Wenn Sie zuvor das Element &quot;Process Name&quot;ausgewählt und einen Prozess angegeben haben, können auch alle in diesem Prozess definierten Prozessvariablen ausgewählt werden.*
+      **Tipp**: *Wenn Sie zuvor das Element „Prozessname“ ausgewählt und einen Prozess angegeben haben, sind alle in diesem Prozess definierten Prozessvariablen ebenfalls zur Auswahl verfügbar.*
 
-      **Tipp**: *Wenn Sie das Element &quot;Aufgabe eingeblendet&quot;auswählen, können Benutzer abgeschlossene Aufgaben aus den Suchergebnissen entfernen.*
+      **Tipp**: *IWenn Sie das Element „Aufgabe sichtbar“ auswählen, können Benutzer abgeschlossene Aufgaben aus den Suchergebnissen entfernen.*
 
       Die Suchkriterienfelder für das ausgewählte Element werden am unteren Rand der Registerkarte angezeigt.
 
@@ -58,15 +58,15 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
       * (Optional) Damit Benutzer den Operandenwert in Workspace ändern können, aktivieren Sie „Dem Benutzer das Ändern des Operanden gestatten“.
       * (Optional) Damit Benutzer den Wert des relationalen Operators in Workspace ES ändern können, aktivieren Sie „Dem Benutzer das Auswählen eines anderen relationalen Operators gestatten“. Wählen Sie in der angezeigten Liste die Operatoren, die für den Benutzer verfügbar sein sollen.
 
-      **Tipp**: *Wenn Sie Prozessname als Element ausgewählt haben, können Sie auf das Symbol neben dem Operandenfeld klicken, um eine Liste anzuzeigen, in der Sie einen Prozess auswählen können, der auf dem Formularserver ausgeführt wird. Nachdem Sie einen Vorgang ausgewählt haben, sind alle in diesem Prozess definierten Prozessvariablen im oberen Bereich der Registerkarte „Kriterien“ unter „Prozessvariablen“ verfügbar.*
+      **Tipp**: *Wenn Sie den Prozessnamen als Element ausgewählt haben, können Sie auf das Symbol neben dem Operandenfeld klicken, um eine Liste anzuzeigen, in der Sie einen Prozess auswählen können, der auf dem Formular-Server ausgeführt wird. Nachdem Sie einen Vorgang ausgewählt haben, sind alle in diesem Prozess definierten Prozessvariablen im oberen Bereich der Registerkarte „Kriterien“ unter „Prozessvariablen“ verfügbar.*
 
-      **Tipp**: *Sie können ein Element aus der Suchvorlage löschen, indem Sie auf das Symbol Löschen neben den Suchkriterien des Elements klicken.*
+      **Tipp**: *Ein Element der Suchvorlage kann gelöscht werden, indem Sie auf das Löschen-Symbol neben den Suchkriterien des Elements klicken.*
 
 
 1. (Optional) Klicken Sie für jede Spaltenüberschrift, die in den Suchergebnissen angezeigt werden soll, auf die Registerkarte „Layout“ und führen Sie folgende Schritte aus:
 
-   * Wählen Sie ein Prozess- oder Aufgabenelement aus und klicken Sie auf den Pfeil  , um es in die Liste „Anzuzeigende Spalten“ zu übernehmen.
-   * Wählen Sie in der Liste „Anzuzeigende Spalten“ das Prozess- oder Aufgabenelement aus und klicken Sie auf den Nach-oben- oder Nach-unten-Pfeil´ , um es an die gewünschte Position in der Spaltenreihenfolge zu verschieben. Die Spaltenüberschriften der Suchergebnisse werden in der hier aufgeführten Reihenfolge angezeigt.
+   * Wählen Sie ein Prozess- oder Aufgabenelement aus und klicken Sie auf den Pfeil, um es in die Liste „Anzuzeigende Spalten“ zu übernehmen.
+   * Wählen Sie in der Liste „Anzuzeigende Spalten“ das Prozess- oder Aufgabenelement aus und klicken Sie auf den Nach-oben- oder Nach-unten-Pfeil´, um es an die gewünschte Position in der Spaltenreihenfolge zu verschieben. Die Spaltenüberschriften der Suchergebnisse werden in der hier aufgeführten Reihenfolge angezeigt.
    * (Optional) Wählen Sie zum Ändern des Namens des Elements für die Spaltenüberschrift das Element in der Liste „Anzuzeigende Spalten“ aus und geben Sie den neuen Namen an.
 
    >[!NOTE]
@@ -75,7 +75,7 @@ Sie können ganz nach Bedarf beliebig viele Suchvorlagen erstellen.
 
 1. (Optional) Klicken Sie für jede Spalte, die in den Suchergebnissen sortiert werden soll, auf die Registerkarte „Sortierung“ und führen Sie folgende Schritte aus:
 
-   * Wählen Sie ein Prozess- oder Aufgabenelement aus und klicken Sie auf den Pfeil  , um es in die Liste „Sortierreihenfolge“ zu übernehmen.
+   * Wählen Sie ein Prozess- oder Aufgabenelement aus und klicken Sie auf den Pfeil, um es in die Liste „Sortierreihenfolge“ zu übernehmen.
    * Wählen Sie in der Liste „Sortierreihenfolge“ das Prozess- oder Aufgabenelement aus und klicken Sie auf den Nach-oben- oder Nach-unten-Pfeil, um es an die gewünschte Position in der Sortierreihenfolge zu verschieben. Die Spalten der Suchergebnisse werden auf Grundlage der Reihenfolge, in der sie hier aufgeführt sind, sortiert.
    * (Optional) Aktivieren Sie zum absteigenden Sortieren einer Spalte das Kontrollkästchen neben dem jeweiligen Elementnamen. Ist das Kontrollkästchen nicht aktiviert, wird in die Spalte in aufsteigender Reihenfolge sortiert.
 

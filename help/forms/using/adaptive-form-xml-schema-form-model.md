@@ -13,7 +13,7 @@ exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1044'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -170,9 +170,8 @@ Sie können die folgenden Attribute zu XML-Schemaelementen hinzufügen, um spezi
 >
 >* Großschreibung des ersten Zeichens des Elementnamens
 >* Einfügen eines Leerzeichens bei Binnenmajuskeln.
-
 >
->Wenn Sie beispielsweise die `userFirstName` Schemaelement, wird die im adaptiven Formular generierte Beschriftung `User First Name`.
+>Wenn Sie beispielsweise das Schemaelement `userFirstName` hinzufügen, wird `User First Name` als Beschriftung im adaptiven Formular erstellt.
 
 ## Einschränken der gültigen Werte für eine Komponente eines adaptiven Formulars {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -296,11 +295,11 @@ Wenn Sie in der Inhaltssuche auf ein Element doppelklicken, wird in einem Popup-
 
 ![Ein bindref-Feld eines XML-Schemaelements](assets/dblclick.png)
 
-bindRef</code> zeigt die Verknüpfung zwischen einem Baumstrukturelement und einem Element oder Attribut in einem Schema an.
+Das Feld bindRef</code> zeigt die Verknüpfung zwischen einem Element der Baumstruktur und einem Element oder Attribut in einem Schema an.
 
 >[!NOTE]
 >
->Attribute haben eine `@` in ihrem `bindRef`-Wert, um sie von Elementen zu unterscheiden. Beispiel: `/config/projectDetails/@duration`.
+>Attribute weisen ein `@`-Symbol in ihrem `bindRef`-Wert auf, wodurch sie von Elementen unterschieden werden können. Beispiel: `/config/projectDetails/@duration`.
 
 **Warum kann ich nicht einzelne Elemente eines Teilformulars (Struktur aus einem komplexen Typ generiert) für wiederholbare Teilformulare ziehen (Wert von „minOccurs“ oder „maxOccurs“ ist größer als 1)?**
 
@@ -315,4 +314,4 @@ Es gibt zwei Optionen:
 
 **Was ist bindRef?**
 
-`bindRef` ist die Verbindung zwischen einer Komponente eines adaptiven Formulars und einem Schemaelement oder -attribut. Dieses Element gibt den `XPath` vor, in dem der Wert, der von dieser Komponente oder diesem Feld erfasst wird, in der Ausgabe-XML verfügbar ist. Ein `bindRef` wird auch verwendet, wenn ein Feldwert aus (vorausgefüllter) XML im Voraus gefüllt wird.
+`bindRef` ist die Verbindung zwischen einer Komponente eines adaptiven Formulars und einem Schemaelement oder -attribut. Dieses Element gibt den `XPath` vor, in dem der Wert, der von dieser Komponente oder diesem Feld erfasst wird, in der Ausgabe-XML verfügbar ist. Ein `bindRef`wird auch verwendet, wenn ein Feldwert aus (vorausgefüllter) XML im Voraus gefüllt wird.

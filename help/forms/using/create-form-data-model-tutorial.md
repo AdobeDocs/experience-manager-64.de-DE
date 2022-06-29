@@ -12,7 +12,7 @@ exl-id: f767e47c-f5a6-478c-ac56-00d519a627cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2724'
-ht-degree: 64%
+ht-degree: 95%
 
 ---
 
@@ -22,11 +22,11 @@ Erstellen Sie ein Formulardatenmodell für interaktive Kommunikation
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Dieses Tutorial ist ein Schritt im [Erstellen der ersten interaktiven Kommunikation](/help/forms/using/create-your-first-interactive-communication.md) Reihe. Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
 ## Über die Schulung {#about-the-tutorial}
 
-Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Backend-Datenquellen wie AEM Benutzerprofil, RESTful-Webservices, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -Dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
+Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus verschiedenen Backend-Datenquellen wie AEM-Benutzerprofil, RESTful-Webservices, SOAP-basierten Web-Services, OData-Services und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -Dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](data-integration.md).
 
@@ -42,23 +42,23 @@ Das Formulardatenmodell sieht etwa wie folgt aus:
 
 ![form_data_model_callouts](assets/form_data_model_callouts.png)
 
-**A.** Konfigurierte Datenquellen **B.** Datenquellenschemata **C.** Verfügbare Dienste **D.** Datenmodellobjekte **E.** Konfigurierte Dienste
+**A.** Konfigurierte Datenquellen **B.** Datenquellenschemata **C.** Verfügbare Services **D.** Datenmodellobjekte **E.** Konfigurierte Services
 
 ## Voraussetzungen {#prerequisites}
 
 Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
 * MySQL-Datenbank mit Beispieldaten wie im Abschnitt [Einrichten der Datenbank](#step-set-up-the-database) beschrieben.
-* OSGi-Bundle für den MySQL JDBC-Treiber, wie hier beschrieben: [Bundling des JDBC-Datenbanktreibers](https://helpx.adobe.com/experience-manager/6-3/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)
+* OSGi-Bündel für MySQL JDBC-Treiber wie unter [Bündeln der JDBC-Datenbanktreiber](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/jdbc.html#bundling-the-jdbc-database-driver) erläutert
 
 ## Schritt 1: Richten Sie die Datenbank ein {#step-set-up-the-database}
 
-Eine Datenbank ist für die Erstellung einer interaktiven Kommunikation unerlässlich. In diesem Tutorial wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM Forms verwendet. Richten Sie eine Datenbank mit Tabellen für Kunden, Rechnungen und Aufrufe ein.\
+Eine Datenbank ist für die Erstellung einer interaktiven Kommunikation unerlässlich. In diesem Tutorial wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM Forms verwendet. Richten Sie eine Datenbank ein, die Kunden-, Rechnungs- und Anruftabellen enthält.\
 Die folgende Abbildung zeigt Beispieldaten für die Kundentabelle:
 
 ![sample_data_cust](assets/sample_data_cust.png)
 
-Verwenden Sie die folgende DDL-Anweisung, um die **customer** in der Datenbank.
+Mit der folgenden DDL-Anweisung können Sie die Tabelle **customer** in der Datenbank erstellen.
 
 ```sql
 CREATE TABLE `customer` (
@@ -73,7 +73,7 @@ CREATE TABLE `customer` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Verwenden Sie die folgende DDL-Anweisung, um die **Rechnungen** in der Datenbank.
+Mit der folgenden DDL-Anweisung können Sie die Tabelle **bills** in der Datenbank erstellen.
 
 ```sql
 CREATE TABLE `bills` (
@@ -96,7 +96,7 @@ CREATE TABLE `bills` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Verwenden Sie die folgende DDL-Anweisung, um die **Aufrufe** in der Datenbank.
+Mit der folgenden DDL-Anweisung können Sie die Tabelle **calls** in der Datenbank erstellen.
 
 ```sql
 CREATE TABLE `calls` (
@@ -110,9 +110,9 @@ CREATE TABLE `calls` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Die **Aufrufe** enthält die Anrufdetails wie Anrufdatum, Anrufzeit, Anrufnummer, Anrufdauer und Anrufgebühren. Die **customer** -Tabelle über das Feld Mobiltelefonnummer (mobilenum) mit der Anruftabelle verknüpft. Für jede Mobilfunknummer, die im Abschnitt **customer** -Tabelle, gibt es mehrere Datensätze in der **Aufrufe** Tabelle. Sie können beispielsweise die Anrufdetails für die Mobilfunknummer **1457892541** abrufen, indem Sie sich auf die Anruftabelle beziehen.****
+Die Tabelle **calls** enthält die Anrufdetails wie Anrufdatum, Anrufzeit, Anrufnummer, Anrufdauer und Anrufkosten. Die Tabelle **customer** ist mit der Anruftabelle über das Feld „Mobilfunknummer (mobilenum)“ verknüpft. Für jede in der Tabelle **customer** aufgeführte Mobilfunknummer gibt es mehrere Datensätze in der Tabelle **calls**. Sie können beispielsweise die Anrufdetails für die Mobilfunknummer **1457892541** abrufen, indem Sie sich auf die **Anruftabelle** beziehen.
 
-Die **Rechnungen** Die Tabelle enthält die Rechnungsdetails wie Rechnungsdatum, Rechnungszeitraum, monatliche Gebühren und Anrufgebühren. Die **customer** -Tabelle ist mit der **Rechnungen** -Tabelle mithilfe des Felds &quot;Rechnungsplan&quot;. Jedem Kunden ist ein Plan im **customer** Tabelle. Die **Rechnungen** enthält die Preisdetails für alle bestehenden Pläne. Sie können beispielsweise die Plandetails für **Sarah** aus der Kundentabelle abrufen und diese Details verwenden, um Preisdetails aus der Rechnungstabelle abzurufen.********
+Die Tabelle **bills** enthält die Rechnungsdetails wie Rechnungsdatum, Rechnungszeitraum, monatliche Gebühren und Gesprächsgebühren. Die Tabelle **customer** ist mit der Tabelle **bills** über das Feld „Rechnungsplan“ verknüpft. Jedem Kunden ist in der Tabelle **customer** ein Plan zugeordnet. Die Tabelle **bills** enthält die Preisangaben für alle vorhandenen Pläne. Sie können beispielsweise die Plandetails für **Sarah** aus der **Kundentabelle** abrufen und diese Details verwenden, um Preisdetails aus der Rec **hnungstabelle** abzurufen.
 
 ## Schritt 2: Konfigurieren der MySQL-Datenbank als Datenquelle {#step-configure-mysql-database-as-data-source}
 
@@ -123,8 +123,8 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 1. Installieren Sie den JDBC-Treiber für die MySQL-Datenbank als OSGi-Bundle:
 
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Webkonsolen-Paketen. Die Standard-URL lautet [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
-   1. Tippen **Installieren/Aktualisieren**. Ein Dialogfeld **Pakete hochladen/installieren** wird angezeigt.
-   1. Tippen Sie auf **Datei auswählen**, um das OSBi-Paket für den MySQL-JDBC-Treiber auszuwählen. Auswählen **Paket starten** und **Aktualisieren von Paketen** und tippen Sie auf **Installieren** oder **Aktualisieren**. Stellen Sie sicher, dass der JDBC-Treiber der Oracle Corporation für MySQL aktiv ist. Der Treiber wird installiert.
+   1. Tippen Sie auf **Installieren/Aktualisieren**. Ein Dialogfeld **Pakete hochladen/installieren** wird angezeigt.
+   1. Tippen Sie auf **Datei auswählen**, um das OSBi-Paket für den MySQL-JDBC-Treiber auszuwählen. Wählen Sie **Bundle starten** und **Pakete aktualisieren**, und tippen Sie auf **Installieren** oder **Aktualisieren**. Stellen Sie sicher, dass der JDBC-Treiber der Oracle Corporation für MySQL aktiv ist. Der Treiber wird installiert.
 
 1. Konfigurieren der MySQL-Datenbank als Datenquelle:
 
@@ -132,18 +132,18 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
    1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Tippen Sie, um die Konfiguration im Bearbeitungsmodus zu öffnen.
    1. Geben Sie im Konfigurationsdialog die folgenden Details an:
 
-      * **Datenquellenname:** Sie können einen beliebigen Namen angeben, Geben Sie beispielsweise **MySQL**.
+      * **Datenquellenname:** Sie können einen beliebigen Namen angeben, Geben Sie beispielsweise **MySQL** an.
       * **Name der DataSource-Diensteigenschaft**: Geben Sie den Namen der Diensteigenschaft an, die den DataSource-Namen enthält. Er wird beim Registrieren der Datenquelleninstanz als OSGi-Dienst angegeben. Zum Beispiel: **datasource.name**.
-      * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. Geben Sie für die MySQL-Datenbank **com.mysql.jdbc.Driver**.
-      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. Für MySQL-Datenbanken, die auf Port 3306 und Schema Teleca ausgeführt werden, lautet die URL: `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. Geben Sie für die MySQL-Datenbank **com.mysql.jdbc.Driver** an.
+      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. Für MySQL-Datenbanken, die auf Port 3306 und Schema Teleca ausgeführt werden, lautet die URL `jdbc:mysql://[server]:3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`.
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
-      * **Test on Borrow:** Aktivieren Sie die **Borgentest** -Option.
+      * **Test on Borrow**: Aktivieren Sie die Option **Test on Borrow**.
       * **Test on Return:** Aktivieren Sie die Option **Test on Return.**
       * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **select &amp;ast; vom Kunden**.
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
 
-   Belassen Sie andere Eigenschaften standardmäßig [values](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen **Speichern**.
+   Belassen Sie die anderen Eigenschaften auf den [Standardwerten](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **Speichern**.
 
    Eine Konfiguration ähnlich der folgenden wird erstellt.
 
@@ -151,18 +151,18 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
 ## Schritt 3: Erstellen eines Formulardatenmodells {#step-create-form-data-model}
 
-AEM Forms bietet eine intuitive Benutzeroberfläche für [Formulardatenmodus erstellen](data-integration.md)l aus konfigurierten Datenquellen. Sie können mehrere Datenquellen in einem Formulardatenmodell verwenden. Für den Anwendungsfall in diesem Tutorial verwenden Sie MySQL als Datenquelle.
+AEM Forms bietet eine intuitive Benutzeroberfläche zum [Erstellen eines Formulardatenmodells](data-integration.md) aus konfigurierten Datenquellen. Sie können mehrere Datenquellen in einem Formulardatenmodell verwenden. Für den Anwendungsfall in diesem Tutorial verwenden Sie MySQL als Datenquelle.
 
 Gehen Sie folgendermaßen vor, um ein Formulardatenmodell zu erstellen:
 
 1. Navigieren Sie in der AEM-Autoreninstanz zu **Formulare** > **Datenintegration**.
 1. Tippen Sie auf **Erstellen** > **Formulardatenmodell**.
-1. Geben Sie im Assistenten Formulardatenmodell erstellen eine **name** für das Formulardatenmodell. Beispiel: **FDM_Create_First_IC**. Tippen Sie auf **Weiter**.
-1. Im Bildschirm „Datenquelle auswählen“ werden alle konfigurierten Datenquellen angezeigt. Auswählen **MySQL** Datenquelle und tippen Sie auf **Erstellen**.
+1. Geben Sie im Dialogfeld „Formulardatenmodell erstellen“ einen **Namen** für das Formulardatenmodell ein. Zum Beispiel **FDM_Create_First_IC**. Tippen Sie auf **Weiter**.
+1. Im Bildschirm „Datenquelle auswählen“ werden alle konfigurierten Datenquellen angezeigt. Wählen Sie **MySQL** als Datenquelle und tippen Sie auf **Erstellen**.
 
    ![fdm_mysql_data_source](assets/fdm_mysql_data_source.png)
 
-1. Klicken Sie auf **Fertig**. Die **FDM_Create_First_IC** Formulardatenmodell erstellt wird.
+1. Klicken Sie auf **Fertig**. Das Formulardatenmodell **FDM_Create_First_IC** wird erstellt.
 
 ## Schritt 4: Konfigurieren eines Formulardatenmodells {#step-configure-form-data-model}
 
@@ -176,14 +176,14 @@ Konfigurieren eines Formulardatenmodells umfasst Folgendes:
 
 ### Hinzufügen von Datenmodellobjekten und Services {#add-data-model-objects-and-services}
 
-1. Navigieren Sie in AEM Autoreninstanz zu **Forms** > **Datenintegrationen**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. Die **FDM_Create_First_IC** Das zuvor erstellte Formulardatenmodell ist hier aufgeführt. Wählen Sie es aus und tippen Sie auf **Bearbeiten**.
+1. Navigieren Sie in der AEM-Autoreninstanz zu **Formulare** > **Datenintegrationen**. Die Standard-URL lautet [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Das Formulardatenmodell **FDM_Create_First_IC**, dass Sie zuvor erstellt haben, ist hier aufgeführt. Wählen Sie es aus und tippen Sie auf **Bearbeiten**.
 
-   Die ausgewählte Datenquelle **MySQL** wird im **Data Sources** -Bereich.
+   Die ausgewählte Datenquelle **MySQL** wird im Bereich **Datenquellen** angezeigt.
 
    ![mysql_fdm](assets/mysql_fdm.png)
 
-1. Erweitern Sie die Datenquellstruktur **MySQL**. Wählen Sie die folgenden Datenmodellobjekte und Dienste aus **Teleka** schema:
+1. Erweitern Sie die Datenquellstruktur **MySQL**. Wählen Sie die folgenden Datenmodellobjekte und -Services aus dem Schema **teleca** aus:
 
    * **Datenmodellobjekte**:
 
@@ -215,29 +215,29 @@ Basierend auf dem Anwendungsfall, erstellen Sie die untergeordnete berechnete Ei
 
 Führen Sie die folgenden Schritte durch, um untergeordnete berechnete Eigenschaften für das Datenmodellobjekt „Rechnungen“ zu erstellen:
 
-1. Aktivieren Sie das Kontrollkästchen oben im **Rechnungen** Datenmodellobjekt, das ausgewählt werden soll, und tippen Sie auf **Untergeordnete Eigenschaft erstellen**.
+1. Aktivieren Sie das Kontrollkästchen oben in dem Datenmodellobjekt **bills** und tippen Sie auf **Untergeordnete Eigenschaft erstellen**. 
 1. Im Bereich **Untergeordnete Eigenschaft erstellen**:
 
    1. Geben Sie als Namen der untergeordneten Eigenschaft **usagecharges** ein.
    1. Aktivieren Sie **Berechnete**.
-   1. Auswählen **Float** als Typ und tippen Sie auf **Fertig** , um die untergeordnete Eigenschaft zum **Rechnungen** Datenmodellobjekt.
+   1. Wählen Sie **Float** als Typ und tippen Sie auf **Fertig**, um die untergeordnete Eigenschaft zum Datenmodellobjekt **bills** hinzuzufügen.
 
    ![create_child_property_float](assets/create_child_property_float.png)
 
-1. Tippen **Regel bearbeiten** , um den Regeleditor zu öffnen.
-1. Tippen Sie auf **Erstellen**. Die **Wert einstellen** Regelfenster geöffnet.
+1. Tippen Sie auf **Regel bearbeiten**, um den Regel-Editor zu öffnen.
+1. Tippen Sie auf **Erstellen**. Ein Regelfenster **Wert festlegen** wird geöffnet.
 1. Wählen Sie in der Dropdownliste **Mathematischer Ausdruck**.
 
    ![usage_charges_rule_editor](assets/usage_charges_rule_editor.png)
 
-1. Wählen Sie im mathematischen Ausdruck **callcharges** und **concallcharges** als erste bzw. zweite Objekte. Wählen Sie **plus** als Operator. Tippen Sie innerhalb des mathematischen Ausdrucks auf **Ausdruck erweitern**, um die Objekte **smscharges**, **internetcharges**, **roamingnational**, **roamingintnl** und **vas** hinzuzufügen.
+1. Wählen Sie in dem mathematischen Ausdruck **callcharges** und **confcallcharges** als erstes bzw. zweites Objekt aus. Wählen Sie **plus** als Operator. Tippen Sie innerhalb des mathematischen Ausdrucks auf **Ausdruck erweitern**, um die Objekte **smscharges**, **internetcharges**, **roamingnational**, **roamingintnl** und **vas** hinzuzufügen.
 
    Das folgende Bild zeigt den mathematischen Ausdruck im Regeleditor:
 
    ![usage_charges_rule_all](assets/usage_charges_rule_all.png)
 
-1. Tippen Sie auf **Fertig**. Die Regel wird im Regeleditor erstellt.
-1. Tippen **Schließen** , um das Fenster des Regeleditors zu schließen.
+1. Tippen Sie auf **Fertig**. Die Regel wird im Regel-Editor erstellt.
+1. Tippen Sie auf **Schließen**, um das Fenster des Regel-Editors zu schließen.
 
 ### Hinzufügen von Assoziationen zwischen Datenmodellobjekten {#add-associations-between-data-model-objects}
 
@@ -254,20 +254,20 @@ Erstellen Sie basierend auf dem Anwendungsfall die folgenden Verknüpfungen zwis
 
 Führen Sie die folgenden Schritte aus, um Verknüpfungen zwischen Datenmodellobjekten zu erstellen:
 
-1. Aktivieren Sie das Kontrollkästchen oben im **customer** Datenmodellobjekt, das ausgewählt werden soll, und tippen Sie auf **Verknüpfung hinzufügen**. Die **Verknüpfung hinzufügen** Eigenschaftenbereich geöffnet.
+1. Aktivieren Sie das Kontrollkästchen oben in einem Datenmodellobjekt **customer**, um dieses auszuwählen, und tippen Sie auf **Verknüpfung hinzufügen**. Der Eigenschaftsbereich **Verknüpfung hinzufügen** wird geöffnet.
 1. Im Bereich **Verknüpfung hinzufügen**:
 
    * Geben Sie einen Titel für die Verknüpfung an. Dies ist ein optionales Feld.
    * Wählen Sie **1:n** aus der **Typ** Dropdown-Liste.
    * Wählen Sie **Anrufe** aus der Dropdown-Liste **Modellobjekt**.
-   * Wählen Sie **get** aus der Dropdown-Liste **Service**.
-   * Tippen **Hinzufügen** , um die **customer** Datenmodellobjekt zu **Aufrufe** Datenmodellobjekt, das eine Eigenschaft verwendet. Basierend auf dem Anwendungsfall muss das Datenmodellobjekt „call“ mit der Eigenschaft der Mobilfunknummer im Datenmodellobjekt „customer“ verknüpft sein. Die **Argument hinzufügen** wird geöffnet.
+   * Wählen Sie **get** aus der Dropdown-Liste **Service.**
+   * Tippen Sie auf **Hinzufügen**, um das Datenmodellobjekt **customer** mit dem Datenmodellobjekt **calls** mithilfe einer Eigenschaft zu verknüpfen. Basierend auf dem Anwendungsfall muss das Datenmodellobjekt „call“ mit der Eigenschaft der Mobilfunknummer im Datenmodellobjekt „customer“ verknüpft sein. Das Dialogfeld **Argument hinzufügen** wird geöffnet.
 
    ![add_relation](assets/add_association.png)
 
 1. Im Dialogfeld **Argument hinzufügen**:
 
-   * Wählen Sie **mobilenum** aus der Dropdown-Liste **Name** aus . Die Mobilfunknummer ist eine allgemeine Eigenschaft, die in Datenmodellobjekten „customer“ und „calls“ verfügbar ist. Infolgedessen wird eine Verbindung zwischen Datenmodellobjekten „customer“ und „calls“ erstellt.
+   * Wählen Sie **mobilenum** aus der Dropdown-Liste **Name** aus. Die Mobilfunknummer ist eine allgemeine Eigenschaft, die in Datenmodellobjekten „customer“ und „calls“ verfügbar ist. Infolgedessen wird eine Verbindung zwischen Datenmodellobjekten „customer“ und „calls“ erstellt.
 
       Für jede im Datenmodellobjekt „customer“ verfügbare Mobilfunknummer stehen mehrere „call“-Datensätze in der Anruftabelle zur Verfügung.
 
@@ -282,35 +282,35 @@ Führen Sie die folgenden Schritte aus, um Verknüpfungen zwischen Datenmodellob
 
    ![add_argument_relation](assets/add_argument_association.png)
 
-1. Tippen **Fertig** , um eine 1:n-Zuordnung zwischen Datenmodellobjekten &quot;customer&quot;und &quot;calls&quot;zu erstellen.
+1. Tippen Sie auf **Fertig**, um eine 1:n-Verknüpfung zwischen Datenmodellobjekten „customer“ und „calls“ zu erstellen.
 
    Nachdem Sie eine Zuordnung zwischen Kunden- und Anrufdatenmodellobjekten erstellt haben, erstellen Sie eine 1:1-Verknüpfung zwischen den Datenmodellobjekten „customer“ und „bills“.
 
-1. Aktivieren Sie das Kontrollkästchen oben im **customer** Datenmodellobjekt, das ausgewählt werden soll, und tippen Sie auf **Verknüpfung hinzufügen**. Die **Verknüpfung hinzufügen** Eigenschaftenbereich geöffnet.
+1. Aktivieren Sie das Kontrollkästchen am oberen Rand des Datenmodellobjekts **customer**, um es auszuwählen, und tippen Sie auf **Verknüpfung hinzufügen**. Der Eigenschaftsbereich **Verknüpfung hinzufügen** wird geöffnet.
 1. Im Bereich **Verknüpfung hinzufügen**:
 
    * Geben Sie einen Titel für die Verknüpfung an. Dies ist ein optionales Feld.
-   * Auswählen **Eins bis Eins** von **Typ** Dropdown-Liste.
-   * Auswählen **Rechnungen** von **Modellobjekt** Dropdown-Liste.
-   * Wählen Sie **get** aus der Dropdown-Liste **Service.** Die **billplan** -Eigenschaft, die den Primärschlüssel für die Tabelle &quot;Rechnungen&quot;darstellt, ist bereits im **Argumente** Abschnitt.
+   * Wählen Sie **1:1** aus der Dropdown-Liste **Typ** aus.
+   * Wählen Sie **bills** aus der Dropdown-Liste **Modellobjekt** aus.
+   * Wählen Sie **get** aus der Dropdown-Liste **Service.** Die Eigenschaft **billplan**, die den Primärschlüssel für die Rechnungstabelle darstellt, ist bereits im Abschnitt **Argumente** verfügbar.
 
-      Die Datenmodellobjekte „bills“ und „customer“ werden jeweils mit den Eigenschaften „billplan“ (Rechnungen und „customerplan“ (Kunde) verknüpft. Erstellen Sie eine Bindung zwischen diesen Eigenschaften, um die Plandetails für jeden in der MySQL-Datenbank verfügbaren Kunden abzurufen.
+      Die Datenmodellobjekte „bills“ und „customer“ werden jeweils mit den Eigenschaften „billplan“ Rechnungen und „customerplan“ (Kunde) verknüpft. Erstellen Sie eine Bindung zwischen diesen Eigenschaften, um die Plandetails für jeden in der MySQL-Datenbank verfügbaren Kunden abzurufen.
 
    * Wählen Sie **customer** aus der Dropdown-Liste **Bindung an** aus.
    * Wählen Sie **customerplan** aus der Dropdown-Liste **Bindungswert**.
-   * Tippen **Fertig** , um eine Bindung zwischen den Eigenschaften des Abo-Plans und des Kundenplans zu erstellen.
+   * Tippen Sie auf **Fertig**, um eine Verbindung zwischen den Eigenschaften „billplan“ und „customerplan“ herzustellen.
 
    ![add_relation_customer_bills](assets/add_association_customer_bills.png)
 
    Das folgende Bild zeigt die Zuordnungen zwischen den Datenmodellobjekten und den Eigenschaften, die zum Erstellen von Zuordnungen zwischen ihnen verwendet werden:
 
-   ![fdm_connections](assets/fdm_associations.gif)
+   ![fdm_associations](assets/fdm_associations.gif)
 
 ### Eigenschaften des Datenmodellobjekts bearbeiten {#edit-data-model-object-properties}
 
 Bearbeiten Sie nach dem Erstellen von Zuordnungen zwischen den Datenmodellobjekten „customer“ und anderen Datenmodellobjekten die Kundeneigenschaften, um die Eigenschaft zu definieren, auf deren Grundlage die Daten aus dem Datenmodellobjekt abgerufen werden. Basierend auf dem Anwendungsfall wird die Mobilfunknummer als Eigenschaft zum Abrufen von Daten aus dem Datenmodellobjekt „customer“ verwendet.
 
-1. Aktivieren Sie das Kontrollkästchen oben im **customer** Datenmodellobjekt, das ausgewählt werden soll, und tippen Sie auf **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
+1. Aktivieren Sie das Kontrollkästchen am oberen Rand des Datenmodellobjekts **customer**, um es auszuwählen, und tippen Sie auf **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
 1. Geben Sie **customer** als **Modellobjekt der obersten Ebene** an.
 1. Wählen Sie **get** aus der Dropdown-Liste **Lese-Service**.
 1. Im Abschnitt **Argumente**:
@@ -324,11 +324,11 @@ Bearbeiten Sie nach dem Erstellen von Zuordnungen zwischen den Datenmodellobjekt
    * Wählen Sie die Eigenschaft **mobilenum**, wählen Sie **customer** aus der Dropdown-Liste **Bindung an** aus.
    * Wählen Sie **mobilenum** aus der Dropdown-Liste **Bindungswert** aus.
 
-1. Tippen **Fertig** , um die Eigenschaften zu speichern.
+1. Tippen Sie auf **Fertig**, um die Eigenschaften zu speichern.
 
    ![configure_services_customer](assets/configure_services_customer.png)
 
-1. Aktivieren Sie das Kontrollkästchen oben im **Aufrufe** Datenmodellobjekt, das ausgewählt werden soll, und tippen Sie auf **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
+1. Aktivieren Sie das Kontrollkästchen am oberen Rand des Datenmodellobjekts **calls**, um es auszuwählen, und tippen Sie auf **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
 1. Deaktivieren Sie das **Modellobjekt der obersten Ebene** für das Datenmodellobjekt **calls**.
 1. Tippen Sie auf **Fertig**.
 
@@ -337,20 +337,20 @@ Bearbeiten Sie nach dem Erstellen von Zuordnungen zwischen den Datenmodellobjekt
 ### Konfigurieren von Services {#configure-services}
 
 1. Wechseln Sie zur Registerkarte **Services**.
-1. Wählen Sie die **get** Dienst und tippen Sie auf **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
+1. Wählen Sie den Service **get** aus und tippen Sie auf **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
 1. Im Bereich **Eigenschaften bearbeiten**:
 
    * Geben Sie optional einen Titel und eine Beschreibung ein.
    * Wählen Sie **customer** aus der Dropdown-Liste **Ausgabemodellobjekt**.
-   * Tippen **Fertig** , um die Eigenschaften zu speichern.
+   * Tippen Sie auf **Fertig**, um die Eigenschaften zu speichern.
 
    ![edit_properties_get_details](assets/edit_properties_get_details.png)
 
-1. Wählen Sie die **update** Dienst und tippen Sie auf **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
+1. Wählen Sie den Service **Aktualisierung** aus und tippen Sie auf **Eigenschaften bearbeiten**. Der Bereich **Eigenschaften bearbeiten** wird geöffnet.
 1. Im Bereich **Eigenschaften bearbeiten**:
 
    * Geben Sie optional einen Titel und eine Beschreibung ein.
-   * Auswählen **customer** von **Input Model Object** Dropdown-Liste.
+   * Wählen Sie **customer** aus der Dropdown-Liste **Eingabemodellobjekt** aus.
    * Tippen Sie auf **Fertig**.
    * Tippen Sie auf **Speichern**, um das Formulardatenmodell zu speichern.
 
@@ -358,23 +358,23 @@ Bearbeiten Sie nach dem Erstellen von Zuordnungen zwischen den Datenmodellobjekt
 
 ## Schritt 5: Testen von Formulardatenmodellen und Services  {#step-test-form-data-model-and-services}
 
-Sie können das Datenmodellobjekt und die Dienste testen, um zu überprüfen, ob das Formulardatenmodell ordnungsgemäß konfiguriert ist.
+Sie können das Datenmodellobjekt und die Services testen, um zu überprüfen, ob das Formulardatenmodell ordnungsgemäß konfiguriert ist.
 
 Führen Sie folgende Schritte aus, um den Test durchzuführen:
 
-1. Navigieren Sie zu **Modell** auswählen, wählen Sie die **customer** Datenmodellobjekt und tippen Sie auf **Testmodell-Objekt**.
-1. Im **Formulardatenmodell testen** auswählen **Modellobjekt lesen** von **Modell/Dienst auswählen** Dropdown-Liste.
-1. Im **Eingabe** -Abschnitt einen Wert für **mobilenum** -Eigenschaft, die in der konfigurierten MySQL-Datenbank vorhanden ist, und tippen Sie auf **Test**.
+1. Wechseln Sie zur Registerkarte **Modell**, wählen Sie das Datenmodellobjekt **customer** und tippen Sie auf **Modellobjekt testen**.
+1. Wählen Sie im Fenster **Formulardatenmodellobjekt testen** **Lese-Modellobjekt** aus der Dropdown-Liste **Modell/Service auswählen**.
+1. Geben Sie im Abschnitt **Eingabe** einen Wert für die Eigenschaft **mobilenum** ein, die in der konfigurierten MySQL-Datenbank existiert, und tippen Sie auf **Testen**.
 
-   Die Kundendetails, die mit der angegebenen Eigenschaft mobilenum verknüpft sind, werden abgerufen und im Abschnitt &quot;Ausgabe&quot;angezeigt, wie unten dargestellt. Schließen Sie das Dialogfeld.
+   Die Kundendetails, die der angegebenen Eigenschaft „mobilenum“ zugeordnet sind, werden abgerufen und im Ausgabeabschnitt angezeigt, wie unten gezeigt. Schließen Sie das Dialogfeld.
 
    ![test_data_model](assets/test_data_model.png)
 
 1. Wechseln Sie zur Registerkarte **Services**.
-1. Wählen Sie die **get** Dienst und tippen Sie auf **Testdienst.**
-1. Im **Eingabe** -Abschnitt einen Wert für **mobilenum** -Eigenschaft, die in der konfigurierten MySQL-Datenbank vorhanden ist, und tippen Sie auf **Test**.
+1. Wählen Sie den Service **get** aus und tippen Sie auf **Service testen**. 
+1. Geben Sie im Abschnitt **Eingabe** einen Wert für die Eigenschaft **mobilenum** ein, die in der konfigurierten MySQL-Datenbank existiert, und tippen Sie auf **Testen**.
 
-   Die Kundendetails, die mit der angegebenen Eigenschaft mobilenum verknüpft sind, werden abgerufen und im Abschnitt &quot;Ausgabe&quot;angezeigt, wie unten dargestellt. Schließen Sie das Dialogfeld.
+   Die Kundendetails, die der angegebenen Eigenschaft „mobilenum“ zugeordnet sind, werden abgerufen und im Ausgabeabschnitt angezeigt, wie unten gezeigt. Schließen Sie das Dialogfeld.
 
    ![test_service](assets/test_service.png)
 
@@ -384,7 +384,7 @@ Mit dem Formulardatenmodell-Editor können Sie Beispieldaten für alle Datenmode
 
 Gehen Sie folgendermaßen vor, um Beispieldaten zu generieren, zu bearbeiten und zu speichern:
 
-1. Tippen Sie auf der Formulardatenmodellseite auf **Beispieldaten bearbeiten**. Es werden Beispieldaten im Fenster „Beispieldaten bearbeiten“ generiert und angezeigt.
+1. Tippen Sie auf der Seite des Formulardatenmodells auf **Beispieldaten bearbeiten**. Es werden Beispieldaten im Fenster „Beispieldaten bearbeiten“ generiert und angezeigt.
 
    ![edit_sample_data](assets/edit_sample_data.png)
 

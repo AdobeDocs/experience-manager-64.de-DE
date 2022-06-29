@@ -13,7 +13,7 @@ exl-id: e7c27623-a889-4bd5-bfff-cfe513cd1a35
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '967'
-ht-degree: 78%
+ht-degree: 93%
 
 ---
 
@@ -44,17 +44,17 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    * Weitere Informationen finden Sie in der Dokumentation zum [](/help/sites-administering/configurations.md)Konfigurationsbrowser.
 1. Tippen Sie auf der Seite **[!UICONTROL Konfigurations-Browser]** auf **[!UICONTROL Erstellen]**.
 1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen **[!UICONTROL Titel]** für die Konfiguration fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**. Anschließend tippen Sie auf **[!UICONTROL Erstellen]**. Es wird ein Konfigurationscontainer für Cloud-Dienste erstellt.
-1. Navigieren Sie zu **Instrumente** ![Hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign** und wählen Sie den Konfigurationscontainer aus, den Sie im obigen Schritt erstellt haben.
+1. Navigieren Sie zu **Tools** ![hammer](assets/hammer.png) > **Cloud-Services** > **Adobe Sign** und wählen Sie den Konfigurationscontainer aus, den Sie im obigen Schritt erstellt haben.
 
    >[!NOTE]
    >
-   >Sie können entweder die Schritte 1 bis 4 ausführen, um einen neuen Konfigurationscontainer zu erstellen und eine Adobe Sign-Konfiguration im Container zu erstellen, oder die vorhandene `global` Ordner in **Instrumente** ![Hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign**. Wenn Sie die Konfiguration im neuen Konfigurationscontainer erstellen, stellen Sie sicher, dass Sie den Container-Namen im **[!UICONTROL Konfigurations-Container]** Feld beim Erstellen eines adaptiven Formulars.
+   >Sie können entweder die Schritte 1 bis 4 ausführen, um einen neuen Konfigurationscontainer zu erstellen und eine Adobe Sign-Konfiguration im Container zu erstellen, oder die vorhandene `global` Ordner in **Instrumente** ![Hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign**. Wenn Sie die Konfiguration im neuen Konfigurations-Container erstellen, dürfen Sie beim Erstellen eines adaptiven Formulars nicht vergessen, den Container-Namen im Feld **[!UICONTROL Konfigurations-Container]** anzugeben.
 
    >[!NOTE]
    Vergewissern Sie sich, dass die URL der Cloud-Dienste-Konfigurationsseite mit **HTTPS** beginnt. Ist dies nicht der Fall, [aktivieren Sie SSL](/help/sites-administering/ssl-by-default.md) für AEM Forms-Server.
 
 1. Tippen Sie auf der Konfigurationsseite auf **[!UICONTROL Erstellen]** , um die Adobe Sign-Konfiguration in AEM Forms zu erstellen.
-1. Im **[!UICONTROL Allgemein]** des **[!UICONTROL Adobe Sign-Konfiguration erstellen]** Seite, geben Sie eine **Name** für die Konfiguration und tippen Sie auf **Nächste**. Sie können optional einen Titel angeben und durchsuchen, um ein Miniaturbild für die Konfiguration auszuwählen.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Allgemein]** auf der Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** einen **Namen** für die Konfiguration an und tippen Sie auf **Weiter**. Sie können optional einen Titel angeben und durchsuchen, um ein Miniaturbild für die Konfiguration auszuwählen.
 
 1. Kopieren Sie die URL im aktuellen Browser-Fenster in einen Texteditor. Es ist erforderlich, die Adobe Sign-Anwendung mit AEM Forms zu konfigurieren.
 
@@ -91,27 +91,27 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    Tippen Sie auf **[!UICONTROL Erstellen]**, um die Adobe Sign-Konfiguration zu erstellen.
 
 1. Öffnen Sie die AEM Web-Konsole. Die URL lautet `https://'[server]:[port]'/system/console/configMgr`.
-1. Öffnen Sie **Forms Common-Konfigurationsdienst.** 
-1. Im **Zulassen** -Feld, **select** Alle Benutzer - Alle Benutzer, anonym oder angemeldet, können Anlagen in der Vorschau anzeigen, Formulare überprüfen und signieren und auf **Speichern.** Autoreninstanz ist konfiguriert, um Aobe Sign zu verwenden.
-1. Verwendung [Replikation](/help/sites-deploying/replication.md) , um eine identische Konfiguration für die entsprechenden Veröffentlichungsinstanzen zu erstellen.
+1. Öffnen Sie **Forms Common-Konfigurations-Service.**
+1. Wählen Sie im Feld **Zulassen** **Alle Benutzer** – alle Benutzer, anonym oder angemeldet, können Anhänge in der Vorschau ansehen, Formulare überprüfen und unterzeichnen – und klicken Sie auf **Speichern.** Autoreninstanz ist konfiguriert, um Aobe Sign zu verwenden.
+1. Verwenden Sie [Replikation](/help/sites-deploying/replication.md), um eine identische Konfiguration für die entsprechenden Veröffentlichungsinstanzen zu erstellen.
 
 Jetzt ist Adobe Sign in AEM Forms integriert und kann in adaptiven Formularen verwendet werden. Um [Adobe Sign service in einem adaptiven Formular zu nutzen](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), geben Sie den Konfigurationscontainer an, der oben in den Einstellungen für adaptive Formulare erstellt wurde.
 
 ## Konfigurieren Sie den Adobe Sign-Scheduler-Dienst, um den Signaturstatus zu synchronisieren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-Ein Adobe Sign-aktivirtes adaptives Formular wird nur gesendet, nachdem alle Unterzeichner den Unterzeichnungsvorgang abgeschlossen haben. Standardmäßig werden die Adobe Sign-Scheduler-Dienste geplant, um die Unterzeichnerantwort alle 24 Stunden zu überprüfen. Sie können das Standardintervall für Ihre Umgebung ändern. Führen Sie die folgenden Schritte aus, um das Standardintervall zu ändern:
+Ein Adobe Sign-aktivirtes adaptives Formular wird nur gesendet, nachdem alle Unterzeichner den Unterzeichnungsvorgang abgeschlossen haben. Standardmäßig werden die Adobe Sign-Scheduler-Dienste geplant, um die Unterzeichnerantwort alle 24 Stunden zu überprüfen. Sie können das Standardintervall für Ihre Umgebung ändern. Führen Sie zum Anpassen des Standardintervalls folgende Schritte durch:
 
 1. Melden Sie sich beim AEM Forms-Server mit den Admin-Anmeldedaten an und navigieren Sie zu **Tools**> **Vorgänge**> **Web-Konsole**.
 
-   Sie können auch die folgende URL in einem Browserfenster öffnen:
+   Sie können auch folgende URL in einem Browser-Fenster öffnen:
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. Suchen und öffnen Sie die Option **Adobe Sign-Konfigurationsdienst**. Geben Sie einen[ Cron-Ausdruck](https://en.wikipedia.org/wiki/Cron#CRON_expression) in das Feld **Status-Aktualisierungs-Scheduler-Ausdruck** und klicken Sie auf **Speichern**. Um beispielsweise den Konfigurationsdienst täglich um 00:00 Uhr auszuführen, geben Sie `0 0 0 1/1 * ? *` im **Ausdruck für Status-Update-Planung** -Feld.
+1. Suchen und öffnen Sie die Option **Adobe Sign-Konfigurationsdienst**. Geben Sie einen [Cron-Ausdruck](https://en.wikipedia.org/wiki/Cron#CRON_expression) in das Feld **Status-Aktualisierungs-Scheduler-Ausdruck** und klicken Sie auf **Speichern**. Um beispielsweise den Konfigurations-Service täglich um 00:00 Uhr auszuführen, geben Sie `0 0 0 1/1 * ? *` im Feld **Ausdruck für Status-Update-Planung** an.
 
 Das Standardintervall für den Synchronisationsstatus von Adobe Sign wurde geändert.
 
 ## Ähnliche Artikel {#related-articles}
 
 * [Verwenden von Adobe Sign in einem adaptiven Formular](../../forms/using/working-with-adobe-sign.md)
-* [Verwenden von Adobe Sign mit AEM Forms (Video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
+* [Verwenden von Adobe Sign mit AEM Forms (Video)](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html?lang=de)
 * [Integrieren von Adobe Sign mit AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)

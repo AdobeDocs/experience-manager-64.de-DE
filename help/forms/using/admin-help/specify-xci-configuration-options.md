@@ -28,6 +28,6 @@ Output ermöglicht Ihnen, eine benutzerdefinierte XCI-Datei anzugeben, die für 
 
 Sie können Optionen auswählen, die das Außerkraftsetzen der oben angegebenen Optionen verhindern. In diesem Fall verwendet Output die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Output“.
+1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
 1. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen „XCI-Systemstandardoptionen verwenden“. Wenn diese Option ausgewählt ist, verwendet Output seine Standardwerte für die packets-, creator-, producer- und compressObjectStream-Einstellungen. Bei deaktivierter Option verwendet Output die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 1. Klicken Sie auf Speichern.

@@ -13,7 +13,7 @@ exl-id: d2dfdab8-815e-4378-b287-81e31c9d9333
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 71%
+ht-degree: 98%
 
 ---
 
@@ -27,43 +27,43 @@ Agenten können Arbeitsabläufe für Nachbearbeitungsprozesse in Briefen und int
 
 Sie müssen die Nachbearbeitungsprozesse zuerst einrichten, bevor Sie sie mit Briefen oder interaktiver Kommunikation verknüpfen. Für abgesendete Briefe können zwei Typen von Arbeitsabläufen ausgeführt werden:
 
-1. **Forms Workflow:** Dies sind die Workflows für die Prozessverwaltung in AEM Forms on JEE. Anleitung zur Einrichtung [Forms Workflow](#formsworkflow).
+1. **Forms Workflow:** Dies sind die Workflows für AEM Forms in JEE-Prozessverwaltung. Anweisungen zum Einrichten des [Forms Workflows](#formsworkflow).
 
-1. **AEM Workflow:** AEM Workflows können auch als Nachbearbeitungsprozesse für gesendete Briefe verwendet werden. Anleitung zur Einrichtung [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
+1. **AEM-Workflow: ** AEM-Workflows können auch als Nachbearbeitungsprozesss für gesendete Briefe verwendet werden. Anweisungen zum Einrichten von [AEM-Workflows](/help/forms/using/aem-forms-workflow.md).
 
 ## Formular-Workflow {#formsworkflow}
 
-1. Öffnen Sie AEM die Adobe Experience Manager Web Console Configuration für Ihren Server mithilfe der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Öffnen Sie in AEM die Web-Konsolen-Konfiguration für Adobe Experience Manager für Ihren Server mithilfe der folgenden URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
    ![Configuration Manager](assets/2configmanager-1.png)
 
 1. Suchen Sie auf dieser Seite AEM Forms Client SDK-Konfiguration und erweitern Sie sie, indem Sie darauf klicken.
-1. Geben Sie in der Server-URL den Namen Ihres AEM Forms on JEE-Servers sowie die Anmeldeinformationen ein und klicken Sie auf **Speichern**.
+1. Geben Sie unter der Server-URL den Namen Ihres AEM Forms-JEE-Servers und die Anmeldedaten ein und klicken Sie dann auf **Speichern**.
 
    ![Name des LiveCycle-Servers eingeben](assets/1cofigmanager.png)
 
 1. Geben Sie den Benutzernamen und das Kennwort ein.
-1. Stellen Sie sicher, dass sun.util.calendar der Deserialisierungs-Firewall-Konfiguration hinzugefügt wird.
+1. Stellen Sie sicher, dass „sun.util.calendar“ zur Deserialisierungs-Firewallkonfiguration hinzugefügt wird.
 
    Gehen Sie zur Deserialisierungs-Firewall-Konfiguration und fügen Sie unter Klassen von Paketpräfixen aus der Whitelist sun.util.calendar hinzu.
 
-1. Jetzt sind Ihre Server zugeordnet und die Nachbearbeitungsprozesse in AEM Forms on JEE sind beim Erstellen von Briefen in der AEM-Benutzeroberfläche verfügbar.
+1. Jetzt sind Ihre Server zugeordnet und die Nachbearbeitungsprozesse in AEM Forms auf JEE sind auf der AEM-Benutzeroberfläche beim Erstellen von Briefen verfügbar.
 
    ![Erstellen des Briefbildschirms mit aufgelisteten Nachbearbeitungsprozessen](assets/0configmanager.png)
 
 1. Kopieren Sie zum Authentifizieren eines Prozesses/Dienstes den Namen des Prozesses und gehen Sie zurück zur Seite „Adobe Experience Manager Web Console Configurations“ > „Adobe AEM Forms Client SDK-Konfiguration“ und fügen Sie den Prozess als neuen Dienst hinzu. 
 
-   Wenn beispielsweise die Dropdown-Liste auf der Seite Eigenschaften des Briefs den Prozessnamen als Forms Workflow -> ValidCCPostProcess/SaveXML anzeigt, fügen Sie einen Dienstnamen als `ValidCCPostProcess/SaveXML`.
+   Beispiel: Wenn die Dropdown-Liste auf der Seite „Eigenschaften“ des Briefes den Namen des Prozesses als Forms Workflow -> ValidCCPostProcess/SaveXML anzeigt, fügen Sie einen Service-Namen als `ValidCCPostProcess/SaveXML` hinzu.
 
 1. Richten Sie die erforderlichen Parameter und Ausgaben ein, um die AEM Forms on JEE-Arbeitsabläufe für die Nachbearbeitung zu verwenden. Die Standardwerte der Parameter werden nachfolgend angezeigt.
 
-   Navigieren Sie zur Seite Adobe Experience Manager Web Console-Konfigurationen > **[!UICONTROL Correspondence Management-Konfigurationen]** und richten Sie die folgenden Parameter ein:
+   Gehen Sie zur Seite „Konfiguration der Adobe Experience Manager Web Console“ > **[!UICONTROL Correspondence Management-Konfigurationen]** und richten Sie die folgenden Parameter ein:
 
-   1. **inPDFDoc (PDF-Dokumentparameter):** Ein PDF-Dokument als Eingabe. Diese Eingabe enthält den gerenderten Brief als Eingabe. Die angegebenen Parameternamen können konfiguriert werden. Sie können über die Correspondence Management-Konfigurationen in „Konfiguration“ konfiguriert werden.
+   1. **inPDFDoc (PDF-Dokumentparameter): ** Ein PDF-Dokument als Eingabe. Diese Eingabe enthält den gerenderten Brief als Eingabe. Die angegebenen Parameternamen können konfiguriert werden. Sie können über die Correspondence Management-Konfigurationen in „Konfiguration“ konfiguriert werden.
    1. **inXMLDoc (XML-Datenparameter):** Ein XML-Dokument als Eingabe. Diese Eingabe enthält Daten, die vom Benutzer im XML-Formular eingegeben wurden.
    1. **inXDPDoc (XDP-Dokumentparameter):** Ein XML-Dokument als Eingabe. Diese Eingabe enthält das zugrunde liegende Layout (XDP).
-   1. **inAttachmentDocs (Parameter für Anlagendokumente):** Ein Listeneingabeparameter. Diese Eingabe enthält alle Anlagen als Eingabe.
-   1. **redirectURL (Umleitungs-URL-Ausgabe):** Ein Ausgabetyp, der die URL angibt, zu der umgeleitet werden soll.
+   1. **inAttachmentDocs (Parameter für Anlagendokumente):** Ein Listeneingabenparameter. Diese Eingabe enthält alle Anlagen als Eingabe.
+   1. **redirectURL (Ausgabe einer Redirect-URL):** Ein Ausgabentyp, der die URL angibt, auf die umgeleitet wird.
 
    Ihr Formular-Workflow muss entweder einen PDF-Dokumentparameter oder einen XML-Datenparameter als Eingabe mit demselben Namen enthalten, der in den **[!UICONTROL Correspondence Management-Konfigurationen]** angegeben ist. Das ist erforderlich, damit der Prozess in der Dropdown-Liste „Nachbearbeitung“ aufgelistet wird.
 
@@ -101,7 +101,7 @@ Gespeicherte Briefinstanzen können weiter bearbeitet werden, beispielsweise dur
   <tr> 
    <td>List getAllLetterInstances(Query) throws ICCException; </td> 
    <td>getAllLetterInstances </td> 
-   <td>Diese API ruft Briefinstanzen basierend auf dem Eingabeabfrageparameter ab. Um alle Briefinstanzen abzurufen, können Abfrageparameter als Null weitergeleitet werden.<br /> </td> 
+   <td>Diese API ruft Briefinstanzen anhand des Eingabeabfrageparameters ab. Um alle Briefinstanzen abzurufen, können Abfrageparameter als Null weitergeleitet werden.<br /> </td> 
   </tr> 
   <tr> 
    <td>Public Boolean letterInstanceExists(String letterInstanceName) throws ICCException; </td> 
@@ -115,7 +115,7 @@ Gespeicherte Briefinstanzen können weiter bearbeitet werden, beispielsweise dur
 
 Führen Sie auf der CCR-Benutzeroberfläche die folgenden Schritte durch, um einen Nachbearbeitungsprozess mit einem Brief zu verknüpfen:
 
-1. Bewegen Sie den Mauszeiger über einen Brief und tippen Sie auf **Eigenschaften anzeigen**.
+1. Bewegen Sie die Maus über einen Brief und tippen Sie auf **Eigenschaften anzeigen**.
 1. Wählen Sie **Bearbeiten** aus.
 1. Wählen Sie in den „Allgemeine Eigenschaften“ über die Dropdown-Liste „Nachbearbeitung“ den mit Brief zu verknüpfenden Nachbearbeitungsprozess aus. Sowohl die AEM- als auch die Forms-bezogenen Nachbearbeitungsprozesse werden in der Dropdown-Liste aufgelistet.
 1. Tippen Sie auf **Speichern**.

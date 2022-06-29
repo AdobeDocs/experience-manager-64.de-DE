@@ -88,7 +88,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
   </tr> 
   <tr> 
    <td><a href="#xss">Außerkraftsetzen der standardmäßigen XSS-Konfiguration</a></td> 
-   <td>Veröffentlichen  </td> 
+   <td>Veröffentlichen </td> 
    <td>Wird verwendet, um $-, {- und }-Zeichen zu überschreiben, die von xss security blockiert werden.</td> 
   </tr> 
   <tr> 
@@ -123,7 +123,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Re
   </tr> 
   <tr> 
    <td><a href="#anonymous">Allgemeinen Forms-Konfigurationsdienst für anonyme Benutzer konfigurieren</a></td> 
-   <td>Veröffentlichen  </td> 
+   <td>Veröffentlichen </td> 
    <td>Die Konfiguration ermöglicht die Erstellung von Signaturen und Dokumenten aus Datensätzen für anonyme Benutzer.</td> 
   </tr> 
   <tr> 
@@ -372,7 +372,7 @@ Um die Integration auf der Referenz-Website zu testen, führen Sie folgende Schr
 1. Geben Sie Ihren Client-Code, die E-Mail und das Kennwort an, die mit Ihrem Target-Konto verknüpft sind. Wählen Sie den API-Typ als **[!UICONTROL REST]**.
 1. Klicken Sie auf **[!UICONTROL Verbindung mit Adobe-Target herstellen]**. Nachdem das Target-Konto erfolgreich konfiguriert wurde, klicken Sie auf **[!UICONTROL OK]**. Sie können sehen, dass die gepackte Konfiguration über ein Target Framework verfügt.
 
-1. Gehen Sie zu https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
+1. Wechseln Sie zu „https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr“.
 
 1. Klicken Sie auf **[!UICONTROL AEM Forms Target-Konfiguration]**.
 1. Wählen Sie ein Target-Framework aus.

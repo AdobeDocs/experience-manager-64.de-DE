@@ -12,7 +12,7 @@ exl-id: 6ae70f02-a86d-4514-abc5-1ed08e484852
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1119'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -92,11 +92,11 @@ Sie können wiederholbare Bereiche mit einer der folgenden Methoden erstellen:
 
       >[!NOTE]
       >
-      >Wenn alle Instanzen eines Bedienfelds aus einem adaptiven Formular entfernt werden, verwenden Sie zum Hinzufügen einer Instanz des entfernten Bedienfelds die Syntax _panelName , um den Instanzmanager des Bedienfelds zu erfassen, und verwenden Sie die API addInstance des Instanzmanagers, um die gelöschte Instanz hinzuzufügen. Beispiel: _panelName.addInstance(). Dies fügt eine Instanz der entfernten Bereichs hinzu.
+      >Wenn alle Instanzen eines Bereichs aus einem adaptiven Formular entfernt werden, erfassen Sie zum Hinzufügen einer Instanz des entfernten Bereichs die _panelName-Syntax, um den Instanzmanager des Bereichs zu erfassen, und verwenden Sie die addInstance-API des Instanzmanagers, um die gelöschte Instanz hinzuzufügen. Beispiel: _panelName.addInstance(). Dies fügt eine Instanz der entfernten Bereichs hinzu.
 
 
 
-## Verwenden des Akkordeon-Layouts für den übergeordneten Bereich  {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## Verwenden des Akkordeon-Layouts für den übergeordneten Bereich   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 Ein Bereich weist verschiedene Layout-Optionen auf. Die Option zum Layout für das Akkordeon-Design bietet standardmäßig Unterstützung für wiederholbare Bereiche. Führen Sie die folgenden Schritte aus, um einen wiederholbaren Bereich mit der Option zum Layout für das Akkordeon-Design zu erstellen:
 
@@ -107,7 +107,7 @@ Ein Bereich weist verschiedene Layout-Optionen auf. Die Option zum Layout für d
 
 ## Verwenden von wiederholten Teilformularen aus der Formularvorlage (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
-Wiederholbare Teilformulare ähneln den wiederholbaren Bereichen in adaptiven Formularen. Führen Sie in AEM Forms Designer die folgenden Schritte aus, um ein sich wiederholendes Teilformular zu erstellen:
+Wiederholbare Teilformulare ähneln den wiederholbaren Bedienfeldern in adaptiven Formularen. Führen Sie in AEM Forms Designer die folgenden Schritte aus, um ein sich wiederholendes Teilformular zu erstellen:
 
 1. Wählen Sie das übergeordnete Teilformular des zu wiederholenden Teilformulars in der Palette „Hierarchie“ aus.
 1. Klicken Sie in der Palette „Objekt“ auf die Registerkarte „Teilformular“ und wählen Sie in der Liste „Inhalt“ die Option „Textfluss“ aus.
@@ -129,7 +129,7 @@ Die angehängte ZIP-Datei enthält ein Beispiel für ein wiederholbares Teilform
 
 Sie können wiederholbare Bereiche aus einem XML-Schema mit den Eigenschaften „minOccurs“ und „maxOccurs“ eines beliebigen Elements eines komplexen Typs erstellen. Ausführliche Informationen zum XML-Schema finden Sie unter [Erstellen adaptiver Formulare mit XML-Schema als Formularmodell](/help/forms/using/adaptive-form-xml-schema-form-model.md).
 
-Im folgenden Code verwendet der Bereich `SampleType` die Eigenschaften „minOccurs“ und „maxOccurs“.
+Im folgenden Code verwendet der `SampleType`Bereich die Eigenschaften „minOccurs“ und „maxOccurs“.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 

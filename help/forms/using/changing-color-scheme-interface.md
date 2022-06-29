@@ -13,13 +13,13 @@ exl-id: efbb9a9e-0ddf-49f2-bcb8-14cd0c6de5ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Ändern des Farbschemas der Benutzeroberfläche {#changing-the-color-scheme-of-the-interface}
 
-Sie können das Farbschema von Bereichen der Benutzeroberfläche von AEM Forms Workspace Ihren Anforderungen entsprechend ändern. Im Folgenden sehen Sie einige Beispiele für repräsentative Anpassungen des Farbschemas. Lesen Sie zusätzlich zu den Schritten, die in diesem Artikel beschrieben werden, [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
+Sie können das Farbschema von Bereichen der Benutzeroberfläche von AEM Forms Workspace Ihren Anforderungen entsprechend ändern. Im Folgenden sehen Sie einige Beispiele für repräsentative Anpassungen des Farbschemas. Zusätzlich zu den in diesem Artikel besprochenen Schritten finden Sie mehr unter [Generische Schritte für die Anpassung des AEM Forms-Arbeitsbereichs](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Navigationsleiste oben {#top-navigation-bar}
 
@@ -32,7 +32,7 @@ Aktualisieren der Navigationsleiste oben in AEM Forms Workspace.
 
    >[!NOTE]
    >
-   >Weitere Informationen zum WebDAV-Zugriff finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Weitere Informationen zum WebDAV-Zugriff finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/de/crx/current/how_to/webdav_access.html).
 
 1. Verweisen Sie in /apps/ws/css/newStyle.css auf das neue Hintergrundbild, indem Sie folgenden Stil hinzufügen.
 
@@ -55,7 +55,7 @@ Aktualisieren der Navigationsleiste oben in AEM Forms Workspace.
 
 ## Category-Komponente {#category-component}
 
-In der Category-Komponente werden die verschiedenen Kategorien Ihrer Aufgaben im linken Fenster angezeigt. Um die Farbe zu ändern, definieren Sie die Hintergrundfarbe in `.category` -Element der CSS-Datei.
+In der Category-Komponente werden die verschiedenen Kategorien Ihrer Aufgaben im linken Fenster angezeigt. Um die Farbe zu ändern, definieren Sie die Hintergrundfarbe im `.category`-Element der CSS-Datei.
 
 ## Task-Komponente {#task-component}
 

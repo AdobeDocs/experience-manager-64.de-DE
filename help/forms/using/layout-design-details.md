@@ -13,7 +13,7 @@ exl-id: 92f90e7f-2869-4201-a927-47de1fc08f5c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1285'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -26,7 +26,7 @@ XFA-Formularvorlagen oder XDPs sind die Vorlagen für:
 
 * Layout-Fragmente
 
-Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Details zum Entwerfen Ihrer XDPs für die Erstellung effektiver Korrespondenzen/interaktiver Kommunikation, z. B. wo Formularfelder oder Zielbereiche verwendet werden und wann Layout-Fragmente verwendet werden.
+Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie Informationen zum Erstellen von XDPs und zum Erstellen einer effektiven Korrespondenz/interaktiven Kommunikation, z. B. wo Formularfelder oder Zielbereiche verwendet werden und wann Layout-Fragmente verwendet werden sollten.
 
 ## Erstellen eines Layouts für Briefe oder für den Druckkanal von interaktiver Kommunikation {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
@@ -62,7 +62,7 @@ Standardmäßig werden alle Felder als verknüpfungsfähig mit vielen anderen Da
 
 Ein verknüpfungsfähiges Feld muss folgende Voraussetzungen erfüllen:
 
-* als XFA &lt;field> oder &lt;exclgroup>
+* es muss ein XFA &lt;field> oder &lt;exclGroup> sein
 * Es muss einen XFA-Bindungsverweis haben.
 * Wenn es sich um &lt;exclGroup> handelt, muss es über mindestens ein untergeordnetes Feld für ein Optionsfeld verfügen, andernfalls kann die Art des Wertes nicht ermittelt werden.
 
@@ -74,7 +74,7 @@ Auf ein verknüpfungsfähiges Feld darf Folgendes NICHT zutreffen:
 
 * An den Namen ist das Suffix „_int“ angehängt.
 * Das Feld „binding“ ist auf „none“ eingestellt.
-* ein Kind sein &lt;exclgroup> element
+* es muss ein untergeordnetes Element eines &lt;exclGroup>-Elements sein
 
 Solange ein verknüpfungsfähiges Feld die oben genannten Kriterien erfüllt, kann es sich im Layout an jeder beliebigen Position und in jeder Verschachtelungstiefe befinden. Verknüpfungsfähige Felder lassen sich auf Masterseiten verwenden.
 

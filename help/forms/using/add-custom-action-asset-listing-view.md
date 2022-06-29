@@ -13,7 +13,7 @@ exl-id: 00b3efc5-ef1c-4b9d-957d-2eda01c0b985
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1360'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können eine benutzerdefinierte Aktion für folgende Zwecken der Ansicht „
 * Ein oder mehr Asset-Typen oder Briefe
 * Ausführung (Aktion/Befehl wird aktiv) bei Auswahl eines einzelnen Assets/Briefs oder mehrerer Assets/Briefe oder ohne Auswahl
 
-Diese Anpassung wird anhand des Szenarios zum Hinzufügen eines Befehls „Einfache PDF herunterladen“ zur Ansicht „Asset-Auflistung“ für Briefe erläutert. Mit diesem Anpassungsszenario können Ihre Benutzer einfache PDF eines einzelnen ausgewählten Briefs herunterladen.
+Diese Anpassung wird anhand des Szenarios zum Hinzufügen eines Befehls „Einfache PDF herunterladen“ zur Ansicht „Asset-Auflistung“ für Briefe erläutert. Mit diesem Anpassungsszenario können Ihre Benutzer eine einfache PDF eines einzelnen ausgewählten Briefs herunterladen.
 
 ### Voraussetzungen {#prerequisites}
 
@@ -44,11 +44,11 @@ In den nachstehenden Schritten wird der Ansicht „Asset-Auflistung“ für Brie
 
 Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF von Briefen herunterladen können, führen Sie folgende Schritte aus:
 
-1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
+1. Wechseln Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen &quot;items&quot;mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner &quot;items&quot;im Auswahlordner, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „items“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner „items“, der sich im Auswahlordner befindet, indem Sie folgende Schritte durchführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL items]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL items]** unter dem folgenden Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -63,11 +63,11 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **[!UICONTROL Pfad:]** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **[!UICONTROL Pfad]**: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **[!UICONTROL Ort:]** /apps/
+      **[!UICONTROL Speicherort]**: /apps/
 
-      **[!UICONTROL Knotentypen abgleichen:]** Ausgewählt
+      **[!UICONTROL Knotentypen abgleichen]**: Ausgewählt
 
       ![Überlagerungsknoten](assets/2_createnodedownloadflatpdf.png)
 
@@ -75,13 +75,13 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
       Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-1. Fügen Sie unter dem neu erstellten Ordner &quot;items&quot;einen Knoten für die benutzerdefinierte Schaltfläche/Aktion in einem bestimmten Asset hinzu (Beispiel: downloadFlatPDF) mit den folgenden Schritten:
+1. Fügen Sie unter dem neu erstellten Ordner „items“ einen Knoten für die benutzerdefinierte Schaltfläche/Aktion in einem bestimmten Asset hinzu (Beispiel: downloadFlatPDF), indem Sie folgende Schritte durchführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL items]** Ordner und wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Knoten erstellen]**.
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL items]** und wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Knoten erstellen]**.
 
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **[!UICONTROL OK]**:
 
-      **[!UICONTROL Name:]** downloadFlatPDF (oder der Name, den Sie dieser Eigenschaft geben möchten)
+      **[!UICONTROL Name]**: downloadFlatPDF (oder der Name, den Sie dieser Eigenschaft geben möchten)
 
       **[!UICONTROL Typ:]** nt:unstructured
 
@@ -103,12 +103,12 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
     <tr> 
     <td>foundation-collection-action</td> 
     <td>Zeichenfolge</td> 
-    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kann einzeln oder mehrfach sein, um die Auswahl einzelner oder mehrerer Assets zu ermöglichen, für die die benutzerdefinierte Aktion ausgeführt wird.</p> <p><strong>type</strong> kann ein oder mehrere der folgenden sein (durch Kommas getrennte Einträge): LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td> 
+    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kann sich auf einzelne oder mehrere Assets beziehen, und es können ein einzelnes oder mehrere Assets für die Durchführung von benutzerdefinierten Aktionen ausgewählt werden.</p> <p><strong>type</strong> kann einen oder mehrere der folgenden Typen enthalten (mehrere Einträge werden durch Komma getrennt): LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td> 
     </tr> 
     <tr> 
     <td>icon</td> 
     <td>Zeichenfolge</td> 
-    <td>icon-download<br /> <br /> Das Symbol, das Correspondence Management auf der linken Seite Ihres Befehls/Menüs anzeigt. Informationen zu den verfügbaren Symbolen und Einstellungen finden Sie in der <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI Icons-Dokumentation</a>.<br /> </td> 
+    <td>icon-download<br /> <br /> Das Symbol, das Correspondence Management auf der linken Seite Ihres Befehls/Menüs anzeigt. Informationen zu den verfügbaren Symbolen und Einstellungen finden Sie in der <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de" target="_blank">CoralUI Icons-Dokumentation</a>.<br /> </td> 
     </tr> 
     <tr> 
     <td>jcr:primaryType</td> 
@@ -138,9 +138,9 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
     </tbody> 
     </table>
 
-1. Erstellen Sie im Apps-Ordner einen Ordner mit dem Namen js mit einem ähnlichen Pfad/einer ähnlichen Struktur zum items-Ordner im Admin-Ordner, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „js“ mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner „items“, der sich im Administratorordner befindet, indem Sie folgende Schritte durchführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL js]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**: &quot;
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL js]** unter dem folgenden Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**: &quot;
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -148,26 +148,26 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
       **[!UICONTROL Pfad:]** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **[!UICONTROL Ort:]** /apps/
+      **[!UICONTROL Speicherort]**: /apps/
 
-      **[!UICONTROL Knotentypen abgleichen:]** Ausgewählt
+      **[!UICONTROL Übereinstimmende Knotentypen:]** Ausgewählt
 
    1. Klicken Sie auf **[!UICONTROL OK]**. Die Ordnerstruktur wird im Apps-Ordner erstellt. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 1. Erstellen Sie im Ordner „js“ eine Datei mit dem Namen „formaction.js“ mit dem Code für Aktionsbearbeitung der Schaltfläche, indem Sie folgende Schritte durchführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL js]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL js]** mit dem folgenden Pfad und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
-      Benennen Sie die Datei mit &quot;formaction.js&quot;.
+      Benennen Sie die Datei als „formaction.js“.
 
    1. Doppelklicken Sie auf die Datei, um sie in CRX zu öffnen.
    1. Kopieren Sie in der Datei „formaction.js“ (unter der /apps-Verzweigung), den Code aus der Datei „formaction.js“ am folgenden Speicherort:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
 
-      Hängen Sie dann den folgenden Code an das Ende der Datei &quot;formaction.js&quot;(unter der /apps-Verzweigung) an und klicken Sie auf **[!UICONTROL Alle speichern]**:
+      Hängen Sie dann den folgenden Code an das Ende der Datei „formaction.js“ (unter der /apps-Verzweigung) an und klicken Sie auf **[!UICONTROL Alle speichern]**:
 
       ```
       /* Action url for xml file to be added.*/
@@ -228,31 +228,31 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
       Der oben genannte Code ist für die briefspezifische Aktionsbearbeitung des in diesem Verfahren erstellten Befehls vorgesehen. Zur Aktionsbearbeitung anderer Assets müssen Sie den JavaScript-Code ändern.
 
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen &quot;items&quot;mit einem ähnlichen Pfad/einer ähnlichen Struktur zum Ordner &quot;items&quot;im Ordner &quot;actionhandlers&quot;, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „items“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner „items“, der sich im Ordner „actionhandlers“ befindet, indem Sie folgende Schritte durchführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL items]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL items]** unter dem folgenden Pfad und wählen Sie **[!UICONTROL Überlagerungsknoten]**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **[!UICONTROL Pfad:]** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **[!UICONTROL Pfad]**: /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **[!UICONTROL Ort:]** /apps/
+      **[!UICONTROL Speicherort]**: /apps/
 
-      **[!UICONTROL Knotentypen abgleichen:]** Ausgewählt
+      **[!UICONTROL Übereinstimmende Knotentypen:]** Ausgewählt
 
    1. Klicken Sie auf **[!UICONTROL OK]**. Die Ordnerstruktur wird im Apps-Ordner erstellt.
 
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-1. Fügen Sie unter dem neu erstellten Knoten &quot;items&quot;einen Knoten für die benutzerdefinierte Schaltfläche/Aktion in einem bestimmten Asset hinzu (Beispiel: letterpdfdownloader) verwenden, die die folgenden Schritte ausführen:
+1. Fügen Sie unter dem neu erstellten Ordner „items“ einen Knoten für die benutzerdefinierte Schaltfläche/Aktion in einem bestimmten Asset hinzu (Beispiel: letterpdfdownloader), indem Sie folgende Schritte durchführen:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner „items“ und wählen Sie **[!UICONTROL Erstellen > Knoten erstellen]**.
 
    1. Stellen Sie sicher, dass das Dialogfeld „Knoten erstellen“ folgende Werte aufweist und klicken Sie auf **[!UICONTROL OK]**:
 
-      **[!UICONTROL Name:]** letterpdfdownloader (oder der Name, den Sie dieser Eigenschaft geben möchten - muss eindeutig sein. Wenn Sie hier einen anderen Namen verwenden, geben Sie denselben auch in der Variablen ACTION_URL der Datei &quot;formaction.js&quot;an.)
+      **[!UICONTROL Name]**: letterpdfdownloader (oder der Name, den Sie dieser Eigenschaft geben möchten – muss eindeutig sein. Wenn Sie hier einen anderen Namen verwenden, geben Sie denselben Namen auch in der Variablen ACTION_URL der Datei „formaction.js“ an.)
 
       **[!UICONTROL Typ:]** nt:unstructured
 
@@ -264,11 +264,11 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
       |---|---|---|
       | sling:resourceType | Zeichenfolge | fd/cm/ma/gui/components/admin/clientlibs/admin |
 
-1. Erstellen Sie eine Datei mit dem Namen POST.jsp mit dem Code für die Aktionsbearbeitung des Befehls am folgenden Speicherort:
+1. Erstellen Sie eine Datei mit dem Namen „POST.jsp“ mit dem Code für die Aktionsbearbeitung des Befehls im folgenden Speicherort:
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL admin]** Ordner unter folgendem Pfad und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]**:
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL admin]** unter dem folgenden Pfad und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -350,21 +350,21 @@ Um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF
 
 Nachdem Sie eine benutzerdefinierte Funktion zum Herunterladen einer einfachen PDF Ihrer Briefe hinzugefügt haben, können Sie eine einfache PDF-Version des von Ihnen ausgewählten Briefs herunterladen, indem Sie folgende Schritte durchführen:
 
-1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/projects.html` und melden Sie sich an.
+1. Wechseln Sie zu `https://[server]:[port]/[ContextPath]/projects.html` und melden Sie sich an.
 
 1. Wählen Sie **[!UICONTROL Formulare > Briefe]**. Correspondence Management listet die im System verfügbaren Briefe auf.
-1. Klicken **[!UICONTROL Auswählen]** und klicken Sie dann auf einen Brief, um ihn auszuwählen.
-1. Auswählen **[!UICONTROL Mehr]** > &lt;download flat=&quot;&quot; pdf=&quot;&quot;> (Die benutzerdefinierte Funktion, die mit den Anweisungen in diesem Artikel erstellt wurde). Das Dialogfeld „Brief als PDF herunterladen“ wird angezeigt.
+1. Klicken Sie auf **[!UICONTROL Auswählen]** und dann auf einen Brief, um diesen auszuwählen.
+1. Wählen Sie **[!UICONTROL Mehr]** > &lt;Einfache PDF herunterladen> (die anhand der Informationen in diesem Artikel erstellte benutzerdefinierte Funktion). Das Dialogfeld „Brief als PDF herunterladen“ wird angezeigt.
 
-   Der Name, die Funktionalität und der Alternativtext des Menüelements entsprechen der unter [Szenario: Fügen Sie der Benutzeroberfläche der Brieferliste einen Befehl hinzu, um eine einfache PDF-Version eines Briefs herunterzuladen.](#addcommandtoletters)
+   Der Name des Menüelements, die Funktionalität und der Alternativtext entsprechen der Anpassung, die im [Szenario: Hinzufügen eines Befehls zur Benutzeroberfläche der Liste „Briefe“, um eine einfache PDF-Version eines Briefs herunterzuladen](#addcommandtoletters) erstellt wurde.
 
    ![Benutzerdefinierte Funktion: Einfache PDF herunterladen](assets/5_downloadflatpdf.png)
 
-1. Wählen Sie im Dialogfeld Brief als PDF herunterladen die entsprechende XML-Datei aus, aus der Sie die Daten auf der PDF ausfüllen möchten.
+1. Wählen Sie im Dialogfeld „Brief als PDF herunterladen“ die entsprechende XML-Datei aus, anhand derer die Daten in der PDF ausgefüllt werden sollen.
 
    >[!NOTE]
    >
-   >Bevor Sie den Brief als einfache PDF herunterladen, können Sie die XML-Datei mit den Daten im Brief erstellen, indem Sie die **[!UICONTROL Bericht erstellen]** -Option.
+   >Vor dem Herunterladen des Briefs als einfache PDF können Sie mithilfe der Option **[!UICONTROL Bericht erstellen]** die XML-Datei mit den Daten für den Brief erstellen.
 
    ![Brief als PDF herunterladen](assets/6_downloadflatpdf.png)
 

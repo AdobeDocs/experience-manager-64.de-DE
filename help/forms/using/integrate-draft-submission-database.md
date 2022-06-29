@@ -12,7 +12,7 @@ exl-id: 4d13d69b-1fe6-4fb6-9e3e-3ad0c5ffb829
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1467'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Das in diesem Dokument gezeigte Beispiel ist eine Referenzimplementierung benutz
 >
 >* Die Beispiele und Konfigurationen in diesem Dokument entsprechen MySQL 5.6.24 und Sie müssen sie für Ihr Datenbanksystem anpassen.
 >* Stellen Sie sicher, dass Sie die neueste Version des AEM Forms Add-On-Pakets installiert haben. Eine Liste der verfügbaren Pakete finden Sie im Artikel [AEM Forms Freigabe](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
->* Das Beispielpaket funktioniert nur mit Übermittlungsaktionen für adaptive Forms.
+>* Das Beispielpaket funktioniert nur mit Übermittlungsaktionen für adaptive Formulare.
 
 
 ## Beispiel installieren und konfigurieren {#set-up-and-configure-the-sample}
@@ -41,13 +41,13 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Rufen Sie AEM Paketmanager unter https:// auf.[*Host*]:[*port*]/crx/packmgr/.
+1. Gehen Sie zu AEM Package Manager unter https://[*host*]:[*port*]/crx/packmgr/.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
-1. Navigieren Sie zu **[!UICONTROL Konfiguration der Web-Konsole AEM]**
-Seite unter https://[*Host*]:[*port*]/system/console/configMgr.
+1. Gehen Sie zur Seite **[!UICONTROL Konfiguration der AEM-Webkonsole]**
+unter https://[*host*]:[*port*]/system/console/configMgr.
 1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
 
 1. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
@@ -83,11 +83,11 @@ Seite unter https://[*Host*]:[*port*]/system/console/configMgr.
    * Auf der Seite zur Web-Konsolenkonfiguration klicken Sie auf die Beispielimplementierung des Forms Portal-Datenservice. Sie können die Werte der Datenquelle und Datentabellennamen ändern.
    >[!NOTE]
    >
-   >Wenn Sie die Tabellennamen ändern, geben Sie sie in der Forms Portal-Konfiguration an.
+   >Wenn Sie die Tabellennamen ändern, geben Sie sie in der Formularportal-Konfiguration an.
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
 
-1. Die Datenbankverbindung kann über die Datenquelle Apache Sling Connection Pooled erfolgen.
+1. Die Datenbankverbindung kann über die Apache Sling Connection Pooled Datenquelle erfolgen.
 1. Klicken Sie für die Apache Sling-Verbindung auf **[!UICONTROL Apache Sling-Verbindung Datenquellpool]** im Bearbeitungsmodus in der Web Console-Konfiguration. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
 <table> 
@@ -106,7 +106,7 @@ Seite unter https://[*Host*]:[*port*]/system/console/configMgr.
   </tr> 
   <tr> 
    <td>JDBC-Verbindungs-URI<br /> </td> 
-   <td>jdbc:mysql://[<em>Host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td> 
+   <td>jdbc:mysql://[<em>host</em>]:[<em>port</em>]/[<em>schema_name</em>]</td> 
   </tr> 
   <tr> 
    <td>Benutzername</td> 
@@ -163,8 +163,7 @@ Seite unter https://[*Host*]:[*port*]/system/console/configMgr.
 >
 > * Der JDBC-Treiber für MySQL wird nicht mit dem Beispiel geliefert. Stellen Sie sicher, dass Sie ihn bereitgestellt haben, und geben Sie die erforderlichen Informationen ein, um den JDBC-Verbindungspool zu konfigurieren.
 > * Zeigen Sie mit Ihren Autor- und Veröffentlichungsinstanzen, um dieselbe Datenbank zu verwenden. Der Wert des URI-Feldes für die JDBC-Verbindung muss für alle Autoren- und Veröffentlichungsinstanzen gleich sein.
-
->
+   >
 
 
 1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
@@ -319,7 +318,7 @@ Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinst
 
 ## Beispielcode für Formularportaldaten und Metadatendienst {#sample-code-for-forms-portal-data-and-metadata-service}
 
-Die folgende Zip enthält`FormsPortalSampleDataServiceImpl`   und`FormsPortalSampleMetadataServiceImpl`  ( (Implementierungsklassen) für Benutzeroberflächen für Daten- und Metadatendienste. Zusätzlich enthält es alle Klassen, die für die Kompilierung der oben genannten Implementierungsklassen benötigt werden.
+Die folgende Zip enthält`FormsPortalSampleDataServiceImpl` und`FormsPortalSampleMetadataServiceImpl` (Implementierungsklassen) für Benutzeroberflächen für Daten- und Metadatendienste. Zusätzlich enthält es alle Klassen, die für die Kompilierung der oben genannten Implementierungsklassen benötigt werden.
 
 [Datei laden](assets/sample_package.zip)
 
@@ -341,11 +340,11 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
     util.js
    ```
 
-   Im vorstehenden Code ist `util` der Name des Ordners und`util.js` der Name der Datei im `util`-Ordner. Die `util` Ordner und `util.js` -Datei werden in den nächsten Schritten erstellt.
+   Im vorstehenden Code ist `util` der Name des Ordners und`util.js` der Name der Datei im `util`-Ordner. Der Ordner `util` und die Datei `util.js` werden in aufeinanderfolgenden Schritten erstellt.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `cq:ClientLibraryFolder`, der in Schritt 2 erstellt wurde, wählen Sie „Erstellen“ > „Ordner erstellen“. Erstellen Sie einen Ordner mit dem Namen `util`. Klicken Sie auf **[!UICONTROL Alle speichern]**. Klicken Sie mit der rechten Maustaste auf den Ordner `util` und wählen Sie „Erstelle“ > „Ordner erstellen“. Erstellen Sie eine Datei mit dem Namen `util.js`. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-1. Fügen Sie der Datei „POST.jsp“ folgenden Code hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**. Der Code validiert die Länge des Dateinamens.
+1. Fügen Sie der Datei „POST.jsp“ folgenden Code hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**. Die Code-Validierungslänge des Dateinamens.
 
    ```
    /*
@@ -400,7 +399,7 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
 
    >[!NOTE]
    >
-   >Das Skript ist für eine sofort einsetzbare (OOTB) Anlagen-Widgetkomponente.  Wenn Sie das OOTB-Anlage-Widget angepasst haben, ändern Sie das obige Skript, um entsprechende Änderungen zu implementieren.
+   >Das Skript ist für eine sofort einsetzbare (OOTB) Anlagen-Widgetkomponente. Wenn Sie das OOTB-Anlage-Widget angepasst haben, ändern Sie das obige Skript, um entsprechende Änderungen zu implementieren.
 
 1. Fügen Sie dem in Schritt 2 erstellten Ordner die folgende Eigenschaft hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**.
 
@@ -412,12 +411,12 @@ Führen Sie die folgenden Schritte aus, um eine[ Client-Bibliothek zu erstellen]
 
    * **[!UICONTROL Multi-Option:]** Aktiviert
 
-1. Navigieren Sie zu `/libs/fd/af/runtime/clientlibs/guideRuntime`und hängen Sie die `fp.validation` -Wert **embed** -Eigenschaft.
+1. Navigieren Sie zu `/libs/fd/af/runtime/clientlibs/guideRuntime`und fügen Sie den Wert `fp.validation` an die Eigenschaft embed an.****
 
-1. Navigieren Sie zu /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA und hängen Sie die `fp.validation` Wert zu **embed** -Eigenschaft.
+1. Navigieren Sie zu /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA und hängen Sie den Wert `fp.validation` an die Eigenschaft embed an.****
 
    >[!NOTE]
    >
-   >Wenn Sie benutzerdefinierte Client-Bibliotheken anstelle der guideRuntime- und guideRuntimeWithXfa-Client-Bibliotheken verwenden, verwenden Sie den Kategorienamen, um die in diesem Verfahren erstellte Client-Bibliothek in Ihre zur Laufzeit geladenen benutzerdefinierten Bibliotheken einzubetten.
+   >Wenn Sie anstelle der Client-Bibliotheken guideRuntime und guideRuntimeWithXfa benutzerdefinierte Client-Bibliotheken verwenden, verwenden Sie den Kategorienamen, um die in diesem Verfahren erstellte Client-Bibliothek in Ihre zur Laufzeit geladenen benutzerdefinierten Bibliotheken einzubetten.
 
-1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname größer als 150 Zeichen (einschließlich der Erweiterung) ist, wird eine Meldung angezeigt.
+1. Klicken Sie auf **[!UICONTROL Alle speichern.]** Wenn der Dateiname größer als 150 (einschließlich Erweiterung) Zeichen ist, wird eine Meldung angezeigt. 

@@ -13,29 +13,29 @@ exl-id: 238410e0-1623-49dc-b2fc-b5b2d5fb362b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Gestenanpassung {#gesture-customization}
 
-Sie können die Gesten der AEM Forms-App anpassen, um eine unterschiedliche Methode zur Interaktion mit der App bereitzustellen. Beispielsweise können Sie neue Gesten zum Öffnen oder Schließen einer Aufgabe bzw. eines Startpunkts hinzufügen.
+Sie können die Gesten der AEM Forms-App anpassen, um eine individuelle Methode der Interaktion mit der App bereitzustellen. Beispielsweise können Sie neue Gesten zum Öffnen oder Schließen einer Aufgabe bzw. eines Startpunkts hinzufügen.
 
 ## So passen Sie Gesten in der AEM Forms-App an {#to-customize-gestures-in-aem-forms-app}
 
-In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ein neuer Startpunkt geöffnet, während beim Wischen nach rechts nichts passiert. Im folgenden Beispiel werden Schritte zum Öffnen einer neuen Aufgabe oder eines neuen Startpunkts zum Ausführen der Wischgesten nach rechts in der AEM Forms-App beschrieben.
+In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ein neuer Startpunkt geöffnet, während beim Wischen nach rechts nichts passiert. Das folgende Beispiel zeigt Schritte zum Öffnen einer neuen Aufgabe oder eines neuen Startpunkts mittels Wischen nach rechts in der AEM Forms-App.
 
-1. Öffnen Sie Ihr Projekt.
+1. Öffnen Sie Ihr Projekt.
 
-   * Öffnen Sie für iOS `Capture.xcodeproj` in Xcode
+   * In iOS öffnen Sie `Capture.xcodeproj` in Xcode
    * In Android öffnen Sie das Android-Projekt in Eclipse.
-   * Für Windows öffnen Sie `MWSWindows.sln` in Visual Studio.
+   * In Windows öffnen Sie `MWSWindows.sln` in Visual Studio.
 
-1. Navigieren Sie zum Ordner &quot;views&quot;und öffnen Sie die `task.js` Datei zur Bearbeitung.
+1. Navigieren Sie zum Ansichtsordner und öffnen Sie die Datei `task.js` zur Bearbeitung.
 
-   * Navigieren Sie in Xcode zum **Capture > www > wsmobile > js > runtime > views** Ordner.
-   * Navigieren Sie in Eclipse zum **assets > www > wsmobile > js > runtime > views** Ordner.
-   * Navigieren Sie in Visual Studio zum **MWSWindows > www > wsmobile > js > runtime > views** Ordner.
+   * In Xcode navigieren Sie zum Ordner **Capture > www > wsmobile > js > runtime > views**.
+   * In Eclipse navigieren Sie zum Ordner **assets > www > wsmobile > js > runtime > views**.
+   * In Visual Studio navigieren Sie zum Ordner **MWSWindows > www > wsmobile > js > runtime > views**.
 
    >[!NOTE]
    >
@@ -47,26 +47,26 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
    `"EventName Selector": "Function"`
 
-   Beim Trigger eines JavaScript-Ereignisses mit dem Namen `EventName`auf einem HTML-Element, das von `Selector`, die `Function`aufgerufen wird.
+   Wenn Sie ein Javascript-Ereignis mit dem Namen `EventName` für ein von `Selector` festgelegtes HTML-Element auslösen, wird `Function` aufgerufen.
 
 1. Suchen
 
-   * &quot;Tippen Sie auf .taskContentArea&quot;: &quot;onTaskClick&quot;,
+   * „tap .taskContentArea“ : „onTaskClick“,
 
-      &quot;Tippen Sie auf .taskOpenArea&quot;: &quot;onTaskClick&quot;,
+      „tap .taskOpenArea“ : „onTaskClick“,
 
-      &quot;Tippen Sie auf .task-content&quot;: &quot;onTaskClick&quot;,
+      „tap .task-content“ : „onTaskClick“,
 
-      &quot;Tippen Sie auf .last_empty_div : &quot;onTaskClick&quot;,
+      „tap .last_empty_div“ : „onTaskClick“,
    und ersetzen Sie diese durch
 
-   * &quot;swipe .taskContentArea&quot; : &quot;onTaskClick&quot;,
+   * „swipe .taskContentArea“ : „onTaskClick“,
 
-      &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+      „swipe .taskOpenArea“ : „onTaskClick“,
 
-      &quot;swipe .task-content&quot;: &quot;onTaskClick&quot;,
+      „swipe .task-content“ : „onTaskClick“,
 
-      &quot;swipe .last_empty_div&quot;: &quot;onTaskClick&quot;,
+      „swipe .last_empty_div“ : „onTaskClick“,
 
 
 1. Speichern und schließen Sie die Datei `task.js`.

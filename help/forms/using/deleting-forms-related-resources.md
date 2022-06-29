@@ -13,7 +13,7 @@ exl-id: 94a66d83-b359-4be6-b668-4b4ba024b1e7
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ Wenn Sie ein Asset aus der Authoring-Instanz löschen, wird das Asset auch aus d
 
 ## Löschen eines Formulars {#how-to-delete-a-form}
 
-1. Melden Sie sich über die AEM Forms-Benutzeroberfläche an. `https://[hostname]:[portport]/aem/forms.html.`
-1. Navigieren Sie zum Formular, das Sie löschen möchten, und wählen Sie es aus. Klicken Sie auf Löschen ![aem6forms_delete2](assets/aem6forms_delete2.png) über die Symbolleiste und bestätigen Sie den Löschvorgang.
+1. Melden Sie sich bei der AEM Forms-Benutzeroberfläche an, indem Sie auf `https://[hostname]:[portport]/aem/forms.html.` zugreifen
+1. Navigieren Sie zum Formular, das Sie löschen möchten, und wählen Sie es aus. Klicken Sie in der Symbolleiste auf „Löschen“ ![aem6forms_delete2](assets/aem6forms_delete2.png) und bestätigen Sie den Löschvorgang.
 
    >[!NOTE]
    >

@@ -13,7 +13,7 @@ exl-id: fb1e0bec-c943-4468-920d-8ef360a01365
 source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -27,19 +27,19 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
 ## Schritte {#steps}
 
-1. Öffnen Sie Ihr Projekt.
+1. Öffnen Sie Ihr Projekt.
 
-   * Öffnen Sie für iOS `Capture.xcodeproj` in Xcode
+   * In iOS öffnen Sie `Capture.xcodeproj` in Xcode
    * In Android öffnen Sie das Android-Projekt in Eclipse.
-   * Für Windows öffnen Sie `MWSWindows.sln` in Visual Studio.
+   * In Windows öffnen Sie `MWSWindows.sln` in Visual Studio.
 
 1. Navigieren Sie zum Ordner „templates“.
 
-   * Navigieren Sie in Xcode zum **Capture > www > wsmobile > js > runtime > templates** Ordner.
-   * Navigieren Sie in Eclipse zum **assets > www > wsmobile > js > runtime > templates** Ordner.
-   * Navigieren Sie in Visual Studio zum **MWSWindows > www > wsmobile > js > runtime > templates** Ordner.
+   * In Xcode navigieren Sie zum Ordner **Capture > www > wsmobile > js > runtime > templates**.
+   * In Eclipse navigieren Sie zum Ordner **assets > www > wsmobile > js > runtime > templates**.
+   * In Visual Studio navigieren Sie zum Ordner **MWSWindows > www > wsmobile > js > runtime > templates**.
 
-1. Öffnen Sie die `template.html` Datei zur Bearbeitung.
+1. Öffnen Sie die Datei „`template.html`“, um sie zu bearbeiten.
 1. Suchen Sie die folgende Zeichenfolge:
 
    ```
@@ -74,13 +74,13 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 
 1. Navigieren Sie zum Ordner „css“.
 
-   * Navigieren Sie in Xcode zu **Capture > www > wsmobile > css**.
-   * Navigieren Sie in Eclipse zu **assets > www > wsmobile > css**.
-   * Navigieren Sie in Visual Studio zu **MWSWindows > www > wsmobile > css**.
+   * In Xcode navigieren Sie zu **Capture > www > wsmobile > css**.
+   * In Eclipse navigieren Sie zu **assets > www > wsmobile > css**.
+   * In Visual Studio navigieren Sie zu **MWSWindows > www > wsmobile > css**.
 
-1. Öffnen Sie die `_style.css` Datei zur Bearbeitung.
-1. Für Hintergrundbilder ändern Sie `#323232` nach `#fff`.
-1. Speichern und schließen Sie die Änderungen `_style.css` -Datei.
+1. Öffnen Sie die Datei „`_style.css`“, um sie zu bearbeiten.
+1. Ändern Sie für das Hintergrundbild `#323232` auf `#fff`.
+1. Speichern Sie die Änderungen und schließen Sie die Datei `_style.css`.
 1. Öffnen Sie die AEM Forms-App.
 
    Die AEM Forms-App zeigt jetzt Anweisungen anstelle einer Beschreibung an.

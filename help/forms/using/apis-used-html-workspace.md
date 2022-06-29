@@ -1,5 +1,5 @@
 ---
-title: APIs im AEM-Formulararbeitsbereich
+title: APIs im AEM Forms-arbeitsbereich
 seo-title: APIs used in AEM Forms workspace
 description: Öffentliche Java- und JavaScript-APIs und Methoden von LiveCycle AEM Forms Workspace zur Anpassung und Automatisierung.
 seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ---
 
-# APIs im AEM-Formulararbeitsbereich {#apis-used-in-aem-forms-workspace}
+# APIs im AEM Forms-arbeitsbereich {#apis-used-in-aem-forms-workspace}
 
 Die folgenden APIs werden in AEM FormsWorkspace verwendet.
 

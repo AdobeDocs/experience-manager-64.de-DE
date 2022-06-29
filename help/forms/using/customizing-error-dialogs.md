@@ -12,17 +12,17 @@ exl-id: e45f7f79-a5c3-439c-bf6c-7b14590cd3fc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '148'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
 # Anpassen von Fehlerdialogen {#customizing-error-dialogs}
 
-AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) gefolgt von den folgenden Schritten, um Fehlerdialogfelder anzupassen.
+AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie [Generische Schritte zur Anpassung von AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) durch und anschließend die unten aufgeführten Schritte zum Anpassen von Fehlerdialogen.
 
 ## Text anpassen {#customizing-text}
 
-1. Im `/apps/ws/locales/en-US/translation.json` ändern Sie die Werte von `wserror` auf die benutzerdefinierten Werte. Beispiel:
+1. Ändern Sie in der Datei `/apps/ws/locales/en-US/translation.json` die Werte von `wserror` auf die benutzerdefinierten Werte. Beispiel:
 
    ```
    "wserror" : {
@@ -49,7 +49,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
 
 ## CSS anpassen {#customizing-css}
 
-1. Sie können Dialogfeld, Kopfzeile, Inhaltsbereich, Fußleiste, Fußleisten-Schaltflächen und andere Besicherungen aktualisieren, indem Sie das folgende Fragment zum `/apps/ws/css/newStyle.css` Datei:
+1. Sie können Dialogfeld, Kopfzeile, Inhaltsbereich, Fußleiste, Fußleisten-Buttons und andere Zusätze ändern, indem Sie das folgende Snippet in der Datei `/apps/ws/css/newStyle.css` hinzufügen:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -184,7 +184,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
    }
    ```
 
-1. Trennen Sie für die Fußleistenschaltfläche die `.error-dialog` und `.foot-bar` -Schaltflächen werden von der zusammengesetzten Liste übernommen. Um diese Änderung vorzunehmen, fügen Sie der Datei „newStyle.css“ Folgendes hinzu:
+1. Für den Bereich mit den Fußleisten-Buttons trennen Sie die Button-Bereiche `.error-dialog` und `.foot-bar` von der Composite-Liste. Um diese Änderung vorzunehmen, fügen Sie der Datei „newStyle.css“ Folgendes hinzu:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -219,7 +219,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie die
 
 >[!NOTE]
 >
->Wenn Sie auf zusätzliche Bilder verweisen, fügen Sie sie in der gewünschten Hierarchie unter `/apps/ws/images`.
+>Wenn Sie auf weitere Bilder verweisen, fügen Sie sie in der gewünschten Hierarchie unter `/apps/ws/images` hinzu.
 
 ## Beispiele {#examples}
 

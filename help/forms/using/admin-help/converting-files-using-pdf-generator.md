@@ -14,7 +14,7 @@ exl-id: 3eecff45-405f-482f-b0de-acf6557a7813
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ PDF-Dokumente, die PDF Generator in Acrobat 5.0 oder höher erstellt, enthalte
 
 Die Metadaten eines Dokuments enthalten u. a. Informationen, die auch in Acrobat im Dialogfeld „Dokumenteigenschaften“ auf der Registerkarte „Beschreibung“ angezeigt werden. Auf der Registerkarte „Beschreibung“ vorgenommene Änderungen werden von den Dokumentmetadaten übernommen. Dokumentmetadaten können mit Produkten anderer Anbieter erweitert und geändert werden.
 
-Adobe Extensible Metadata Platform (XMP) stellt Adobe-Anwendungen eine allgemeine XML-Plattform zur Verfügung, die zur Standardisierung der Erstellung, Verarbeitung und des Austauschs von Dokumentmetadaten zwischen Veröffentlichungs-Workflows dient. Sie können den XML-Quellcode der Dokumentmetadaten im XMP-Format speichern und importieren, wodurch Metadaten von verschiedenen Dokumenten gemeinsam genutzt werden können. Weitere Informationen zu XMP-Dateien finden Sie unter[ Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) und [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
+Adobe Extensible Metadata Platform (XMP) stellt Adobe-Anwendungen eine allgemeine XML-Plattform zur Verfügung, die zur Standardisierung der Erstellung, Verarbeitung und des Austauschs von Dokumentmetadaten zwischen Veröffentlichungs-Workflows dient. Sie können den XML-Quellcode der Dokumentmetadaten im XMP-Format speichern und importieren, wodurch Metadaten von verschiedenen Dokumenten gemeinsam genutzt werden können. Weitere Informationen zu XMP-Dateien finden Sie unter[ Extensible Metadata Platform (XMP)](https://www.adobe.com/de/products/xmp/) und [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html).
 
 Sie können XMP-Dateien in Acrobat erstellen.
 
@@ -105,11 +105,11 @@ Sie können PDF-Dateien in verschiedene Dateiformate exportieren, wie im Kapitel
 
    Die Konvertierungsdauer, die bei der Konvertierung der Datei angezeigt wird, ist möglicherweise größer als der von Ihnen hier angegebene Wert. Die Konvertierungsdauer schließt die Wartezeit für den Prozess oder Vorgang, die Zeit zum Konvertieren der Datei und die Zeit des Ersatzkonverters (sofern erforderlich) ein. time. Der Wert „Timeout festlegen“ bezieht sich nur auf die Zeit, die zum Konvertieren der Datei erforderlich ist.
 
-1. (Optional) Klicken Sie in der Option **Benutzerdefiniertes PreFlight-Profil angeben** auf „Durchsuchen“ und wählen Sie ein [benutzerdefiniertes PreFlight-Profil](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html) aus. PreFlight-Profile werden nur beim Konvertieren von Dokumenten in das PDF-Archivformat (PDF/A) verwendet.
+1. (Optional) Klicken Sie in der Option **Benutzerdefiniertes PreFlight-Profil angeben** auf „Durchsuchen“ und wählen Sie ein [benutzerdefiniertes PreFlight-Profil](https://helpx.adobe.com/de/acrobat/using/preflight-profiles-acrobat-pro.html) aus. PreFlight-Profile werden nur beim Konvertieren von Dokumenten in das PDF-Archivformat (PDF/A) verwendet.
 1. Klicken Sie auf „Exportieren“. Nach der Konvertierung wird ein Link zur exportierten Datei angezeigt.
 1. Klicken Sie auf den Link, um die konvertierte Datei anzuzeigen.
 
-## PDF-Datei optimieren (Nur Windows) {#optimize-a-pdf}
+## PDF-Datei optimieren  (Nur Windows) {#optimize-a-pdf}
 
 PDF Generator unterstützt die Funktion zum Reduzieren der Größe von PDF-Dateien.
 

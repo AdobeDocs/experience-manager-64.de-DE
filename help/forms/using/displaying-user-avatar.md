@@ -13,19 +13,19 @@ exl-id: 2bc70cd6-1ea6-4594-9b42-ab3d3000a0c5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '192'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Anzeigen des Benutzeravatars {#displaying-the-user-avatar}
 
-Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Forms Workspace angezeigt. Auch die Avatare von direkten Berichten in der hierarchischen Struktur werden in der Manageransicht angezeigt. Sie können AEM Forms Workspace so konfigurieren, dass die Benutzerbilder aus Ihrer Datenbank, z. B. vom LDAP-Server, ausgewählt werden.
+Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Forms Workspace angezeigt. Auch die Avatare von direkten Berichten in der hierarchischen Struktur werden in der Manageransicht angezeigt. Sie können AEM Forms Workspace so konfigurieren, dass die Benutzerbilder aus Ihrer Datenbank, z. B. vom LDAP-Server, abgerufen werden.
 
 >[!NOTE]
 >
 >Für Benutzerbilder wird nur das Seitenverhältnis 1:1 unterstützt.
 
-1. Erstellen Sie ein DSC mithilfe der Informationen, die im nächsten Schritt angegeben werden. Weitere Informationen finden Sie unter &quot;Entwickeln von Komponenten für AEM Forms&quot;in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) Handbuch.
+1. Erstellen Sie ein DSC mithilfe der Informationen, die im nächsten Schritt angegeben werden. Weitere Informationen erhalten Sie unter „Entwickeln von Komponenten für AEM Forms“ im Handbuch [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 1. Definieren Sie im DSC eine neue SPI, die mithilfe der Methoden getCurrentUserImageUrl und getUserImageUrl eine Bild-URL für einen AEM Forms-Benutzer abruft. Im Folgenden finden Sie ein Java™-Beispielcodefragment:
 
    ```as3
@@ -83,5 +83,5 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
    </component>
    ```
 
-1. Stellen Sie das DSC über Workbench bereit. Neu starten `ProcessManagementClientSessionService` Dienst.
+1. Stellen Sie das DSC über Workbench bereit. Starten Sie den Service `ProcessManagementClientSessionService` neu.
 1. Möglicherweise müssen Sie den Browser aktualisieren oder sich für den Benutzer erneut abmelden/anmelden.

@@ -13,13 +13,13 @@ exl-id: bf4ae163-5d89-48fb-9bc4-182281b28f35
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '393'
-ht-degree: 79%
+ht-degree: 97%
 
 ---
 
 # Integrieren von Form Bridge in das benutzerdefinierte Portal für HTML5-Formulare {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge ist eine Brücken-API für HTML5-Formulare, die es Ihnen ermöglicht, mit einem Formular zu interagieren. Informationen zur FormBridge-API-Referenz finden Sie unter [FormBridge-API-Referenz](/help/forms/using/form-bridge-apis.md).
+FormBridge ist eine Brücken-API für HTML5-Formulare, die es Ihnen ermöglicht, mit einem Formular zu interagieren. Die FormBridge-API-Referenz finden Sie unter [FormBridge-API-Referenz](/help/forms/using/form-bridge-apis.md).
 
 Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu versenden. Beispielsweise können Sie die API verwenden, um eine assistentenähnliche Erfahrung zu erstellen.
 
@@ -29,7 +29,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
 1. **Wählen oder erstellen Sie ein Profil.**
 
-   1. Navigieren Sie in der CRX DE-Benutzeroberfläche zu: `https://[server]:[port]/crx/de`.
+   1. Navigieren Sie in der CRX DE-Benutzeroberfläche zu `https://[server]:[port]/crx/de`.
    1. Melden Sie sich mit Administratorberechtigungen an.
    1. Erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil aus.
 
@@ -75,7 +75,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
    >[!NOTE]
    >
-   >Die **Linie 9** enthält eine zusätzliche JSP-Referenz für CSS-Stile und JavaScript-Dateien zum Entwerfen der Seite.
+   >In **Zeile 9** befinden sich zusätzliche JSP-Verweise für CSS-Stile und JavaScript-Dateien für das Seiten-Design.
    >
    >Das Tag &lt;div id=&quot;rightdiv&quot;> in **Zeile 18** bezeichnet das HTML-Fragment des XFA-Formulars.
    Die Seite wird in zwei Container unterteilt: **links** und **rechts**. Der rechte Container enthält das Formular. Der linke Container enthält zwei Eingabefelder und einen Teil der externen HTML-Seite.
@@ -89,7 +89,7 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
    Nachstehend finden Sie ein Beispielskript, das Sie hinzufügen können, um Werte in einem Formularfeld festzulegen.
 
-   Wenn Sie beispielsweise die **EmployeeName** Verwendung der Werte in den Feldern **Vorname** und **Nachname**, rufen Sie die **window.formBridge.setFieldValue** -Funktion.
+   Wenn Sie beispielsweise den **Mitarbeiternamen** anhand der Werte in den Feldern **Vorname** und **Nachname** festlegen möchten, rufen Sie die Funktion **window.formBridge.setFieldValue** auf.
 
    Auf ähnliche Weise können Sie den Wert lesen, indem Sie die API **window.formBridge.getFieldValue**aufrufen.
 

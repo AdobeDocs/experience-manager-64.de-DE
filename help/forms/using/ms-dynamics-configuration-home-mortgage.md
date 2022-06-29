@@ -11,7 +11,7 @@ exl-id: 7e1f417e-6a6b-4ef2-a453-866331fe3e96
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 74%
+ht-degree: 97%
 
 ---
 
@@ -21,9 +21,9 @@ In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste ü
 
 ## Übersicht {#overview}
 
-Microsoft® Dynamics 365 ist eine Software für Customer Relationship Management (CRM) und Enterprise Resource Planning (ERP), die Enterprise-Lösungen für die Erstellung und Verwaltung von Kundenkonten, Kontakten, Leads, Chancen und Fällen bietet.
+Microsoft® Dynamics 365 ist eine Customer Relationship Management(CRM)- und Enterprise Resource Planning(ERP)-Software, die Enterprise-Lösungen zum Erstellen und Verwalten von Kundenkonten, Kontakten, Leads, Chancen und Fällen bereitstellt.
 
-AEM Forms bietet einen Cloud-Service zur Integration von Dynamics 365 mit [Forms-Datenintegration](/help/forms/using/data-integration.md) -Modul. Das Szenario [Schrittweise Anleitung Hypothekantrag mit Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics), stellt dar, wie ein Kunde die We.Finance-Referenzwebsite für einen Hypothekantrag verwendet, wenn die Website Microsoft® Dynamics für die Integration von Formulardaten nutzt. Bevor Sie die Anleitung zur Hypothekenanwendung mit Microsoft® Dynamics verwenden können, müssen Sie Microsoft® Dynamics 365 für die Verwendung mit der We.Finance-Referenz-Website konfigurieren.
+AEM Forms bietet einen Cloud-Service zur Integration von Dynamics 365 mit dem Modul [Datenintegration für AEM Forms](/help/forms/using/data-integration.md) an. Das Szenario [Schrittweise Anleitung Hypothekantrag mit Microsoft® Dynamics](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics), stellt dar, wie ein Kunde die We.Finance-Referenzwebsite für einen Hypothekantrag verwendet, wenn die Website Microsoft® Dynamics für die Integration von Formulardaten nutzt. Bevor Sie die schrittweise Anleitung zum Hypothekantrag mit Microsoft® Dynamics verwenden können, müssen Sie Microsoft® Dynamics 365 konfigurieren, damit es mit der We.Finance-Referenzwebsite verwendet werden kann.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -33,8 +33,8 @@ Bevor Sie mit dem Einrichten und Konfigurieren von Dynamics 365 beginnen, stell
 
 * AEM Forms 6.3 Service Pack 1 und höher
 * Microsoft® Dynamics 365-Konto
-* Registrierte Anwendung für den Dynamics 365-Dienst mit Microsoft® Azure Active Directory
-* Client-ID und Client-Geheimnis für die registrierte Anwendung
+* Registrierte Anwendung für den Dynamics 365-Dienst mit Microsoft® Azure Active Directory
+* Client-ID und Client-Geheimnis für die registrierte Anwendung
 
 ## Verknüpfen des Hypothekrechners mit Ihrer Site-Homepage {#link-the-home-mortgage-calculator-with-your-site-home-page}
 
@@ -74,4 +74,4 @@ Bevor Sie mit dem Einrichten und Konfigurieren von Dynamics 365 beginnen, stell
 
       `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importieren Sie das Paket in Ihre Microsoft® Dynamics-Instanz. Wechseln Sie in Ihrer Microsoft® Dynamics-Instanz zu **Vertrieb** > **Kontakte** und tippen Sie dann auf **Daten importieren**.
+   1. Importieren Sie das Paket in Ihre Microsoft® Dynamics-Instanz. Wechseln Sie in Ihrer Microsoft® Dynamics-Instanz zu **Verkauf** > **Kontakte** und tippen Sie dann auf **Daten importieren**.

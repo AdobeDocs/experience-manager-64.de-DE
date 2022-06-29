@@ -1,7 +1,7 @@
 ---
 title: Job Manager-Datenbank um Aufzeichnungen bereinigen
 seo-title: Purge records from the Job Manager database
-description: Große Prozessdaten können zu niedrigerer AEM-Forms-Leistung führen. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn die Aufzeichnungen nicht mehr gebraucht werden.
+description: Große Prozessdaten können zu niedrigerer AEM Forms-Leistung führen. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn die Aufzeichnungen nicht mehr gebraucht werden.
 seo-description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
 uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
@@ -54,7 +54,7 @@ Weitere Informationen zu aktuell geplanten Bereinigungen werden im Informationsf
 **Einen automatischen Bereinigungszeitplan konfigurieren**
 
 1. Wählen Sie die Option „Wiederholen alle“ aus und geben Sie die Anzahl der Tage oder Wochen an, die zwischen den Bereinigungsvorgängen liegen sollen.
-1. Geben Sie im Bereich „Abgeschlossene Aufzeichnungen bereinigen“ die Anzahl der Tage oder Wochen an, nach denen ein Datensatz als veraltet gelten soll und bereinigt werden kann. Sie können den Wert nicht auf `0`   einstellen.
+1. Geben Sie im Bereich „Abgeschlossene Aufzeichnungen bereinigen“ die Anzahl der Tage oder Wochen an, nach denen ein Datensatz als veraltet gelten soll und bereinigt werden kann. Sie können den Wert nicht auf `0` einstellen.
 
    >[!NOTE]
    >

@@ -12,7 +12,7 @@ exl-id: 40f6297d-7238-4e56-9fd1-6df3a6362724
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '654'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Planen Sie Ihre interaktive Kommunikation
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Dieses Tutorial ist ein Schritt im [Erstellen der ersten interaktiven Kommunikation](/help/forms/using/create-your-first-interactive-communication.md) Reihe. Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
 Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin, den Inhalt der interaktiven Kommunikation abzuschließen. Fachexperten aus Abteilungen wie Recht, Finanzen, Support oder Marketing können Ihnen dabei helfen, die Inhalte zu finalisieren. Nachdem der Inhalt abgeschlossen ist, müssen Sie ihn analysieren, um die verschiedenen Asset-Typen zu ermitteln, die zum Erstellen der interaktiven Kommunikation erforderlich sind.
 
@@ -33,8 +33,8 @@ Eine interaktive Kommunikation enthält die folgenden Elemente:
 * **Statischer Text** umfasst im Wesentlichen die generischen Teile der interaktiven Kommunikation, die in die Kommunikation mit allen Kunden einbezogen werden. Zum Beispiel Kopfzeile, Fußzeile, Anrede oder Haftungsausschluss.
 * **Daten aus einem Backend-System (Formulardatenmodell)** sind kundenspezifisch und werden dynamisch mit der interaktiven Kommunikation zusammengeführt. Beispielsweise kann die Richtliniennummer oder Adresse mithilfe eines Formulardatenmodells bezogen werden.
 * **Layout oder Vorlagen** für die Print- und Webversion der interaktiven Kommunikation.
-* **Reihenfolge**, in der die verschiedenen Textabsätze in der interaktiven Kommunikation angezeigt werden .
-* **Von einem Frontend-Mitarbeiter eingegebene Daten (Benutzeroberfläche für Agenten)** , der die Kommunikation vor dem Versand anpasst. Zum Beispiel das Fälligkeitsdatum der Zahlung.
+* **Reihenfolge**, in der die verschiedenen Textabsätze in der interaktiven Kommunikation angezeigt werden.
+* **Daten, die von einem Frontline-Mitarbeiter eingegeben wurden (Agent UI)**, der die Kommunikation vor dem Versenden anpasst. Zum Beispiel das Fälligkeitsdatum der Zahlung.
 
 * **Bedingte Daten**, die basierend auf vordefinierten Bedingungen befüllt werden. Beispielsweise das Datum, an dem die interaktive Kommunikation generiert wird.
 * **In einem Repository gespeicherte Bilder** wie Logos und Signaturbilder. Bilder wie das Unternehmenslogo sind in den meisten oder in jeder interaktiven Kommunikation unverändert enthalten.
@@ -99,7 +99,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
   <tr>
    <td>Rechnungszusammenfassung</td> 
    <td><p>Vorheriger Saldo</p> <p>Zahlungen</p> <p>Anpassungen</p> <p>Gebühren des aktuellen Rechnungszeitraums</p> <p>Fälliger Betrag</p> <p>Fälligkeitsdatum</p> </td> 
-   <td><p>Wert für <strong>Gebühren für den laufenden Rechnungszeitraum </strong> field</p> <p>Tabelle - Rechnungen</p> </td> 
+   <td><p>Wert für das Feld <strong>Gebühren des aktuellen Rechnungszeitraums</strong></p> <p>Tabelle - Rechnungen</p> </td> 
    <td><p>Werte für die folgenden Felder:</p> 
     <ul> 
      <li>Vorheriger Saldo</li> 
@@ -112,7 +112,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
   </tr>
   <tr>
    <td>Zusammenfassung der Gebühren</td> 
-   <td><p>Anrufgebühren</p> <p>Gebühren für Telefonkonferenz</p> <p>SMS-Gebühren </p> <p>Mobile Internetgebühren</p> <p>Nationale Roaming-Gebühren</p> <p>Internationale Roaming-Gebühren</p> <p>Mehrwert - Service-Gebühren</p> <p>Gesamgebühren</p> <p>GESAMT ZAHLBAR</p> <p>Bedingung für das Feld Mehrwert für Service-Gebühren</p> </td> 
+   <td><p>Anrufgebühren</p> <p>Gebühren für Telefonkonferenz</p> <p>SMS-Gebühren </p> <p>Mobile Internetgebühren</p> <p>Nationale Roaming-Gebühren</p> <p>Internationale Roaming-Gebühren</p> <p>Mehrwert - Service-Gebühren</p> <p>Gesamgebühren</p> <p>GESAMT ZAHLBAR</p> <p>Bedingung im Feld „Mehrwert Service-Gebühren“</p> </td> 
    <td><p>Werte für die folgenden Felder:</p> 
     <ul> 
      <li>Anrufgebühren</li> 
@@ -123,7 +123,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Internationale Roaming-Gebühren</li> 
      <li>Mehrwert - Service-Gebühren</li> 
      <li>Gesamtkosten (Feld für berechnete Nutzungsgebühren)</li> 
-     <li>GESAMT ZAHLBAR (Feld für berechnete Benutzergebühren)</li> 
+     <li>GESAMT ZAHLBAR (Feld für berechnete Nutzungsgebühren)</li> 
     </ul> <p>Tabelle - Rechnungen</p> </td> 
    <td>Keine Felder</td> 
    <td>—</td> 

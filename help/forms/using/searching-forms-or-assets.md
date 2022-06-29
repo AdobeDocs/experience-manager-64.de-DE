@@ -13,7 +13,7 @@ exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '684'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können über eine Textzeichenfolge oder eine Textzeichenfolge mit Platzhalt
 
 Wenn Sie eines oder mehrere Kriterien auswählen und eine Textzeichenfolge angeben, wird die Schnittmenge von Text und Kriterien als Suchergebnis zurückgegeben. Die Suchergebnisse sind so gut wie die zur Verfügung gestellten Formular- und Asset-Metadaten.
 
-Klicken ![aem6forms_search](assets/aem6forms_search.png), um das Suchfeld ein- oder auszublenden.
+Klicken Sie auf ![aem6forms_search](assets/aem6forms_search.png), um das Suchfeld ein- oder auszublenden.
 
 ## Einfache Suche {#basic-search}
 
@@ -37,10 +37,10 @@ Beachten Sie bei der einfachen Suche die folgenden Punkte:
 
 * Die Suche wird mithilfe der Formular- und Asset-Metadaten durchgeführt.
 * Wenn Sie mehr als ein Wort eingeben, wird beim Suchvorgang für den gesamten Text nach Übereinstimmungen gesucht. 
-* Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie beispielsweise `geometrixx`, Assets mit Titeln `Geometrixx`, `GEOMETRIXX`und `GeoMetRixx` werden in den Suchergebnissen angezeigt.
+* Bei der Suche wird die Groß-/Kleinschreibung nicht beachtet. Wenn Sie z. B. `geometrixx` eingeben, werden Assets mit den Titeln `Geometrixx`, `GEOMETRIXX` und `GeoMetRixx` in den Suchergebnissen angezeigt.
 
 * Unvollständige Übereinstimmungen mit einem Wort werden nicht unterstützt. Verwenden Sie &amp;ast, um mithilfe von Teilzeichenfolgen zu suchen. Platzhalter. Wenn bei der Suchanfrage jedoch eine Übereinstimmung mit einem vollständigen Wort vorliegt, wird das entsprechende Formular bzw. Asset angezeigt.
-* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. Beispiel: `My form` ist nicht dieselbe Suchabfrage wie `My form`.
+* Zusätzliche Leerzeichen werden berücksichtigt und während der Suche nicht entfernt. Zum Beispiel ist `My form` nicht die gleiche Suchanfrage wie `My form`.
 
 * Wenn sich die Daten von den Anzeigewerten der Felder in den Metadateneigenschaften abweichen, können Sie Anzeigewerte als Suchparameter nicht verwenden. Beispielsweise können Sie keine Suche auf Basis eines Status, z. B. geändert oder veröffentlicht, durchführen, da diese Eigenschaften in einem anderen Format gespeichert werden.
 

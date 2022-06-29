@@ -12,7 +12,7 @@ exl-id: 1e772376-d25a-4471-bf7c-5a8a8cdeb543
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '680'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -33,17 +33,17 @@ Die Abschnitte in diesem Artikel behandeln Folgendes:
 
 AEM Forms-App für iOS, die zur Synchronisierung mit AEM Forms unter OSGi konfiguriert ist, unterstützt nur Anlagen auf Feldebene. Alle Anlagen müssen eindeutige Namen haben. Wenn mehrere Anlagen denselben Namen haben, wird nur eine Anlage beibehalten und alle anderen mit identischem Namen gehen verloren. Führen Sie die folgenden Schritte aus, um Benutzer auf iOS-Geräten vor Datenverlust zu bewahren:
 
-1. Navigieren Sie auf dem verbundenen Server zu **Adobe Experience Manager > Tools > Vorgänge > Web-Konsole**.
-1. Suchen und Klicken **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]**.
-1. Im [!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation] dialog, aktivieren **Dateinamen individualisieren**.
+1. Auf dem verbundenen Server navigieren Sie zu: **Adobe Experience Manager > Werkzeuge > Vorgänge > Webkonsole**.
+1. Suchen Sie nach **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** und klicken Sie darauf.
+1. Aktivieren Sie im Dialog [!UICONTROL Adaptives Formular und interaktive Kommunikation Webkanal-Konfiguration] die Option **Dateinamen individualisieren**.
 
-   Wenn **Dateinamen individualisieren** -Einstellung deaktiviert ist, kann es bei Benutzern zu Datenverlusten kommen, wenn sie versuchen, adaptive Formulare mit mehreren Anhängen zu senden.
+   Wenn die Einstellung **Dateinamen individualisieren** deaktiviert ist, können die Benutzer Daten verlieren, wenn sie versuchen, adaptive Formulare mit mehreren Anlagen zu versenden.
 
 1. Klicken Sie auf **Speichern**.
 
 ## Entwürfe von HTML5 -Formularen, die von Workspace-Benutzern eingesendet wurden, werden nicht auf dem Portal angezeigt {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-Für HTML5 Formulare, die in der AEM Forms-App mit **Als Entwurf speichern** HTML Render Profile, die gespeicherten Entwürfe sind für Workspace-Benutzer nicht sichtbar. So zeigen Sie gespeicherte Entwürfe von HTML5-Formularen an, die von Workspace-Benutzern im Portal übermittelt wurden:
+Bei HTML5-Formularen, die in der AEM Forms-Anwendung mit dem HTML-Renderprofil **Als Entwurf speichern** aktiviert sind, sind die gespeicherten Entwürfe für Arbeitsbereichsbenutzer nicht sichtbar. Führen Sie die folgenden Schritte aus, um gespeicherte Entwürfe von HTML5-Formularen anzuzeigen, die von Arbeitsbereichsbenutzern im Portal übermittelt wurden:
 
 1. Öffnen Sie CRXDE und melden Sie sich als Administrator an.
 
@@ -51,11 +51,11 @@ Für HTML5 Formulare, die in der AEM Forms-App mit **Als Entwurf speichern** HTM
 
 1. Im Stammpfad von CRXDE, in der Zugriffssteuerungsliste unter Zugriffssteuerung klicken Sie auf **+**.
 1. Klicken Sie im Dialogfeld **Neuen Eintrag hinzufügen** auf die Gruppensuche-Schaltfläche im Feld „Prinzipal“.
-1. Geben Sie im Feld &quot;Name&quot;des Dialogfelds &quot;Prinzipal auswählen&quot;Folgendes ein: `PERM_WORKSPACE_USER` und klicken Sie auf **Suche**.
-1. Auswählen `PERM_WORKSPACE_USER` Gruppe im Dialogfeld &quot;Prinzipal auswählen&quot;und klicken Sie auf **OK**.
+1. Geben Sie im Feld „Name“ des Dialogfelds „Prinzipal auswählen“ `PERM_WORKSPACE_USER` ein und klicken Sie auf **„Suchen“**. 
+1. Wählen Sie `PERM_WORKSPACE_USER`-Gruppe im Dialogfeld „Prinzipal wählen“ und klicken Sie auf **OK**.
 1. Im Dialogfeld „Neuen Eintrag hinzufügen“ wird `PERM_WORKSPACE_USER`-Gruppe im Feld „Prinzipal“ ausgewählt.
 
-   Aktivieren `jcr:read` Berechtigungen für die Benutzergruppe.
+    Aktivieren Sie `jcr:read`-Berechtigungen für die Benutzergruppe.
 
 1. Klicken Sie auf **OK**.
 
@@ -71,7 +71,7 @@ Führen Sie zur Behebung dieses Problems folgende Schritte durch:
    URL: https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
 
 1. Im **manuellen Ressourcen-Cache** klicken Sie auf die Schaltfläche **+**, um einen CRX-Pfad hinzuzufügen.
-1. Im **Neue Ressource hinzufügen** -Feld, Typ: /etc.clientlibs/fd/xfaforms/I18N/en_US.js und klicken Sie auf **Hinzufügen**.
+1. Geben Sie in das Feld **Neue Ressourcen hinzufügen** ein: /etc.clientlibs/fd/xfaforms/I18N/en_US.js und klicken Sie auf **Hinzufügen**.
 1. Klicken Sie auf **Speichern**.
 
 ## AEM Forms werden unter Windows nicht synchronisiert {#aem-forms-do-not-sync-on-windows}
@@ -86,22 +86,22 @@ Modifizieren Sie den Pfad des Formulars und seine Ressourcen, um die Anzahl der 
 
 Die Fehlermeldung wird angezeigt, wenn Sie die AEM Forms-App in Android Studio erstellen. Das Problem tritt aufgrund einer nicht unterstützten Version von Gradle auf, die vom System unterstützt wird.
 
-**Auflösung:** Klicken **Gradle Wrapper- und Neu-Import-Projekt reparieren** um das Problem zu beheben.
+**Lösung:** Klicken Sie auf **Gradle-Wrapper reparieren und Projekt erneut importieren**, um das Problem zu lösen.
 
 ![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
 ## Kompatibilitätsprobleme mit Gradle und Android Gradle Plug-In {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
-**Fehlermeldung:** Die Versionen des Android Gradle-Plug-ins und Gradle sind nicht kompatibel.
+**Fehlermeldung:** Die Versionen des Android Gradle Plug-Ins und Gradle sind nicht kompatibel.
 
-Die Fehlermeldung wird angezeigt, wenn Sie **Build-APK** -Option **Build** auf der Benutzeroberfläche von Android Studio.
+Die Fehlermeldung wird angezeigt, wenn Sie die Option **APK erstellen** aus dem Menü **Erstellen** auf der Android Studio-Benutzeroberfläche wählen.
 
 ![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 
-**Auflösung:** Öffnen **Gradle Scripts** > **gradle-wrapper.properties** und bearbeiten Sie die **distributionUrl** -Eigenschaft.
+**Lösung:** Öffnen Sie die Datei **Gradle Scripts** > **gradle-wrapper.properties** und bearbeiten Sie die Eigenschaft **distributionUrl**.
 
-Beispielsweise empfiehlt die Android Studio-Konsole, die Gradle-Version auf 3.5 herabzustufen. Bearbeiten Sie die Version in **distributionUrl** von **gradle-wrapper.properties** -Datei.
+Beispielsweise empfiehlt die Android Studio-Konsole ein Downgrade der Gradle-Version auf 3.5. Bearbeiten Sie die Version in **distributionUrl** der **gradle-wrapper.properties**-Datei.
 
-Auswählen **Build** > **Build-APK** erneut, um den Fehler zu beheben und die .apk-Datei zu generieren.
+Wählen Sie erneut **Erstellen** > **APK erstellen**, um den Fehler zu beheben und die .apk-Datei zu generieren.
 
 ![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)

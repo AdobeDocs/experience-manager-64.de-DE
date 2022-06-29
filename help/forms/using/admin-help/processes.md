@@ -13,7 +13,7 @@ exl-id: 322cc7c2-0f24-4ed9-9af2-61b036324f46
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von einem Be
 
    **Anwendung:** Die Anwendung, zu der der Prozess gehört, wie in Workbench definiert.
 
-   **Status:** Aktiv bedeutet, dass der Prozess der für die Prozessversion aktivierte ist. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
+   **Status:** Aktiv bedeutet, dass es sich um den Prozess handelt, der für die Prozessversion aktiviert wurde. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
 
    **Erstellungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
 
@@ -39,13 +39,13 @@ Wenn Sie über die Seite „Prozessliste“ auf die Seite „Prozessinstanz“ z
 
 Für jede Prozessinstanz werden in der Liste die folgenden Informationen angezeigt:
 
-**Prozess-ID:** Die Kennung, die der Arbeitsablauf für Formulare zuweist, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
+**Prozess-ID:** Dieser Bezeichner wird vom Formular-Workflow zugewiesen, wenn der Prozess instanziiert (d. h. von einem Benutzer oder einem automatisierten Schritt initiiert) wird. Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
 **Prozessname - Version:** Der Name des Prozesses, wie in Workbench definiert.
 
-**Status:** Gibt an, ob die Prozessinstanz normal ausgeführt wird, den Status ändert oder angehalten wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
-**Erstellungsdatum:** Datum und Uhrzeit der Erstellung der Prozessinstanz.
+**Erstellungsdatum:** Datum und die Uhrzeit, zu der die Prozessinstanz erstellt wurde.
 
 **Aktualisierungsdatum:** Datum und Uhrzeit der letzten Änderung des Status der Prozessinstanz.
 
@@ -59,23 +59,23 @@ Sie können folgende Aufgaben auf der Seite „Prozessinstanz“ ausführen:
 
 Eine Prozessinstanz, einschließlich ihrer Teilprozesse, kann folgende Status haben:
 
-**ABGESCHLOSSEN:** Alle Zweige und Vorgänge in der Prozessinstanz sind abgeschlossen. Dies ist der endgültige Status einer Prozessinstanz.
+**ABGESCHLOSSEN:** Alle Zweige und Vorgänge in der Prozessinstanz wurden abgeschlossen. Dies ist der endgültige Status einer Prozessinstanz.
 
-**ABSCHLUSS:** Der Status der Prozessinstanz ändert sich in &quot;COMPLETE&quot;.
+**ABSCHLIESSEND:** Der Status der Prozessinstanz ist dabei, auf ABGESCHLOSSEN zu wechseln.
 
-**INITIIERT:** Die Prozessinstanz wurde erstellt, wird jedoch noch nicht ausgeführt. Dies ist der erste Status einer Prozessinstanz.
+**INITIALISIERT:** Die Prozessinstanz wurde erstellt, wird aber noch nicht ausgeführt. Dies ist der erste Status einer Prozessinstanz.
 
 **WIRD AUSGEFÜHRT:** Die Prozessinstanz wird normal ausgeführt. Möglicherweise ist ein automatischer Schritt aktiv oder die Prozessinstanz empfängt eventuell Benutzereingaben bzw. wartet auf Benutzerinteraktion.
 
 **AUSGESETZT:** Die Prozessinstanz wurde von einem Administrator oder einem Schritt im Prozess ausgesetzt. Bis zur Änderung des Status werden keine weiteren Vorgänge ausgeführt.
 
-**AUSSETZEN:** Der Status ändert sich in AUSGESETZT. Wenn ein Vorgang so angelegt wurde, dass er Aussetzanforderungen ignoriert, und dieser noch nicht abgeschlossen ist, muss dieser Vorgang zuerst abgeschlossen werden, damit die Prozessinstanz ausgesetzt werden kann.
+**AUSSETZEND:** Der Status ist dabei, auf AUSGESETZT zu wechseln. Wenn ein Vorgang so angelegt wurde, dass er Aussetzanforderungen ignoriert, und dieser noch nicht abgeschlossen ist, muss dieser Vorgang zuerst abgeschlossen werden, damit die Prozessinstanz ausgesetzt werden kann.
 
 **BEENDET:** Die Prozessinstanz wurde von einem Administrator beendet.
 
-**BEENDEN:** Der Status ändert sich in BEENDET. Wenn ein Vorgang so angelegt wurde, dass er Beenden-Anforderungen ignoriert, und dieser noch nicht abgeschlossen ist, muss dieser Vorgang zuerst abgeschlossen werden, damit die Prozessinstanz beendet werden kann.
+**ABSCHLIESSEND:** Der Status ist dabei, auf BEENDET zu wechseln. Wenn ein Vorgang so angelegt wurde, dass er Beenden-Anforderungen ignoriert, und dieser noch nicht abgeschlossen ist, muss dieser Vorgang zuerst abgeschlossen werden, damit die Prozessinstanz beendet werden kann.
 
-**AUSSETZEN:** Der Status wechselt nach AUSSETZUNG in WIRD AUSGEFÜHRT.
+**AUSSETZUNG WIRD AUFGEHOBEN:** Der Status ist dabei, von AUSGESETZT auf WIRD AUSGEFÜHRT zu wechseln.
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Wenn Sie die Aussetzung einer Prozessinstanz aufheben, wechselt deren Status auf
 
 Wenn Sie eine Prozessinstanz aussetzen, die andere (untergeordnete) Prozesse mithilfe ihres jeweiligen Aufrufvorgangs aufgerufen hat, werden die untergeordneten Prozesse ebenfalls ausgesetzt.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“.
+1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Aussetzen“ oder „Aussetzen aufheben“.
 
 ### Prozessinstanzen beenden {#terminate-a-process-instances}
@@ -106,7 +106,7 @@ Sie können Prozessinstanzen mit beliebigem Status beenden.
 
 Wenn Sie eine Prozessinstanz beenden, wechselt deren Status zuerst auf WIRD BEENDET, dann auf BEENDET, und der Prozess wird an der aktuellen Position beendet. Es werden keine weiteren Vorgänge ausgeführt und alle zugeordneten Vorgänge und Aufgaben werden beendet.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“.
+1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Beenden“.
 
 ## Mit Prozessinstanzdetails arbeiten {#working-with-process-instance-details}
@@ -117,11 +117,11 @@ Im Bereich „Zusammenfassung“ werden grundlegende Informationen zur Prozessin
 
 Auf der Registerkarte „Vorgänge“ werden die Vorgänge für die Prozessinstanz beginnend mit dem ersten nacheinander in der Reihenfolge angezeigt, in der sie abgeschlossen wurden. Die folgenden Informationen werden angezeigt:
 
-**Vorgangsname:** Der Name des Vorgangs, wie in Workbench definiert.
+**Vorgangsnamen:** Der Name des Vorgangs, wie in Workbench definiert.
 
-**Status:** Gibt an, ob der Vorgang normal ausgeführt wird oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob der Vorgang normal ausgeführt wird oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
-**Zweigname:** Der Name der Verzweigung, wie in Workbench definiert.
+**Zweigname:** Der Name des Zweigs, wie in Workbench definiert.
 
 **Startdatum:** Datum und Uhrzeit des Starts des Vorgangs.
 
@@ -129,15 +129,15 @@ Auf der Registerkarte „Vorgänge“ werden die Vorgänge für die Prozessinsta
 
 Ein Teilprozess ist eine Prozessinstanz, die von einem anderen Prozess gestartet und unabhängig von diesem anderen Prozess ausgeführt wird. Teilprozesse werden nur angezeigt, wenn sie als Teil des Prozesses in Workbench angelegt wurden. Auf der Registerkarte „Teilprozesse“ wird jeder Teilprozess mit den folgenden Informationen angezeigt:
 
-**Prozess-ID:** Diese positive Ganzzahl, die der Arbeitsablauf für Formulare zuweist, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt den Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
+**Prozess-ID:** Diese positive Ganzzahl wird vom Formular-Workflow zugewiesen, wenn der Prozess instanziiert (d. h. von einem Benutzer oder einem automatisierten Schritt initiiert) wird. Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
-**Prozessname - Version:** Der Name des Prozesses, wie in Designer definiert.
+**Prozessname - Version:** Der Prozessname, wie in Designer definiert.
 
-**Status:** Gibt an, ob die Prozessinstanz normal ausgeführt wird, den Status ändert oder angehalten wird. (Siehe Informationen zum Status von Prozessinstanzen.)
+**Status:** Zeigt an, ob die Prozessinstanz normal ausgeführt wird, den Status wechselt oder beendet wurde. (Siehe Informationen zum Status von Prozessinstanzen.)
 
 **Erstellungsdatum:** Datum und Uhrzeit der Erstellung des Teilprozesses.
 
-**Aktualisierungsdatum:** Datum und Uhrzeit der letzten Änderung des Status des Teilprozesses.
+**Aktualisierungsdatum:** Datum und Uhrzeit, zu der der Status des Unterprozesses zuletzt geändert wurde.
 
 Sie können folgende Aufgaben auf der Seite „Prozessinstanzdetail“ ausführen:
 
@@ -153,7 +153,7 @@ Ein Vorgang (ein Schritt in einem Prozess) kann folgende Status haben:
 
 **WIRD AUSGEFÜHRT:** Der Vorgang wird normal ausgeführt. Möglicherweise empfängt er Benutzereingaben oder wartet auf Benutzerinteraktion oder ein automatischer Schritt kann aktiv sein.
 
-**ANGEHALTEN:** Während der Verarbeitung des Vorgangs ist ein Problem aufgetreten. Auf der Seite „Angehaltene Vorgänge“ können Sie den Fehler oder die Ausnahme überprüfen.
+**VERZÖGERT:** Während der Verarbeitung des Prozesses ist ein Problem aufgetreten. Auf der Seite „Angehaltene Vorgänge“ können Sie den Fehler oder die Ausnahme überprüfen.
 
 **BEENDET:** Der Vorgang wurde von einem Administrator beendet.
 
@@ -187,7 +187,7 @@ Wenn Sie einen Vorgang wiederholen, wird eine Anforderung zum erneuten Starten d
 
 Auf der Seite „Vorgangsdetails“ wird die Zusammenfassung eines in einem Prozess enthaltenen Vorgangs mit seinen aktuellen Benutzerzuweisungen angezeigt.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“.
+1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
 1. Durch Klicken auf den Namen eines Prozesses können Sie die dazugehörigen Prozessinstanzen anzeigen. Klicken Sie auf eine Prozessinstanz, um die Seite „Prozessinstanzdetails“ anzuzeigen, und wählen Sie einen Vorgang aus, um die Seite „Vorgangsdetails“ anzuzeigen.
 
    Für jede Aufgabe werden in der Liste die folgenden Informationen angezeigt:
@@ -196,6 +196,6 @@ Auf der Seite „Vorgangsdetails“ wird die Zusammenfassung eines in einem Proz
 
    **Anwendung:** Die Anwendung, zu der der Prozess gehört, wie in Workbench definiert.
 
-   **Status:** Aktiv bedeutet, dass der Prozess der für die Prozessversion aktivierte ist. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
+   **Status:** Aktiv bedeutet, dass es sich um den Prozess handelt, der für die Prozessversion aktiviert wurde. Inaktiv bedeutet, dass der Prozess eine alte Version ist, von der immer noch Prozessinstanzen vorhanden sind.
 
-   **Erstellungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
+   **Ertsllungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.

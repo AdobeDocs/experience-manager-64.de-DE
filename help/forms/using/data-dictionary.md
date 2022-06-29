@@ -12,7 +12,7 @@ exl-id: 6b53f47c-9333-43a3-8db9-8737d9610110
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3845'
-ht-degree: 87%
+ht-degree: 98%
 
 ---
 
@@ -34,35 +34,35 @@ In der Regel müssen Geschäftsbenutzer keine Kenntnisse über Metadatendarstell
 
 1. Ein Autor [erstellt das Datenwörterbuch](#createdatadictionary) entweder durch Importieren eines Schemas oder durch vollständige Neuerstellung.
 1. Der Verfasser erstellt Briefe und interaktive Kommunikation auf Grundlage des Datenwörterbuchs und verknüpft gegebenenfalls Datenwörterbuchelemente in Briefen und adaptiven Dokumenten.
-1. Ein Verfasser kann Beispieldaten-XML-Dateien herunterladen, die auf einem Datenwörterbuchschema basieren. Der Autor kann die XML-Musterdatendatei ändern, die als Testdaten mit dem Datenwörterbuch verknüpft werden kann. Diese wird während der Briefvorschau verwendet.
-1. Bei der [Vorschau eines Briefs](/help/forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p) wählt ein Verfasser den Brief mit den Daten (benutzerdefinierte Vorschau). Der Brief wird mit den vom Autor bereitgestellten Daten geöffnet. Er wird in „Korrespondenz erstellen“ geöffnet. Der Agent, der diesen Brief in der Vorschau anzeigt, kann den Inhalt, die Daten und die Anlagen in diesem Brief ändern und den fertigen Brief übermitteln. Weitere Informationen zum Erstellen von Briefen finden Sie unter [Korrespondenz erstellen](/help/forms/using/create-letter.md).
+1. Ein Verfasser kann Beispieldaten-XML-Dateien herunterladen, die auf einem Datenwörterbuchschema basieren. Der Verfasser kann die Beispieldaten-XML-Dateien ändern, welche als Testdaten mit dem Datenwörterbuch verknüpft werden können. Diese wird während der Briefvorschau verwendet.
+1. Bei der [Vorschau eines Briefs](/help/forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p) wählt ein Verfasser den Brief mit den Daten (benutzerdefinierte Vorschau). Der Brief wird mit den vom Verfasser vorbefüllten Daten geöffnet. Er wird in „Korrespondenz erstellen“ geöffnet. Der Agent, der diesen Brief in der Vorschau anzeigt, kann den Inhalt, die Daten und die Anlagen in diesem Brief ändern und den fertigen Brief übermitteln. Weitere Informationen zum Erstellen von Briefen finden Sie unter [Korrespondenz erstellen](/help/forms/using/create-letter.md).
 
 ## Voraussetzung {#prerequisite}
 
-Installieren Sie die [Kompatibilitätspaket](https://helpx.adobe.com/de/experience-manager/6-4/forms/using/compatibility-package.html) , um die **Datenwörterbücher** -Option auf **Forms** Seite.
+Installieren Sie das [Kompatibilitätspaket](https://helpx.adobe.com/de/experience-manager/6-4/forms/using/compatibility-package.html), um die Option **Datenwörterbücher** auf der Seite **Formulare** anzuzeigen.
 
 ## Datenwörterbuch erstellen {#createdatadictionary}
 
-Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs oder laden Sie eine XSD-Schemadatei hoch, um ein Datenwörterbuch auf dieser Grundlage zu erstellen. Anschließend können Sie das Datenwörterbuch durch Hinzufügen weiterer erforderlicher Informationen, einschließlich Felder, erweitern. Unabhängig davon, wie ein Datenwörterbuch erstellt wurde, muss der Eigentümer des Geschäftsprozesses keine Kenntnisse über Back-End-Systeme haben. Er muss nur über Kenntnisse zu Domänenobjekten und deren Definitionen verfügen.
+Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs oder laden Sie eine XSD-Schemadatei hoch, um ein Datenwörterbuch auf dieser Grundlage zu erstellen. Anschließend können Sie das Datenwörterbuch durch Hinzufügen weiterer erforderlicher Informationen, einschließlich Felder, erweitern. Unabhängig davon, wie ein Datenwörterbuch erstellt wurde, muss der Eigentümer des Geschäftsprozesses keine Kenntnisse über Back-End-Systeme haben. Er muss nur über Kenntnisse zu Domain-Objekten und deren Definitionen verfügen.
 
 >[!NOTE]
 >
 >Bei mehreren Briefe, die ähnliche Elemente erfordern, können Sie ein allgemeines Datenwörterbuch erstellen. Ein großes Datenwörterbuch mit vielen Elementen kann jedoch Leistungseinbußen bei der Verwendung des Datenwörterbuchs und beim Laden der Elemente verursachen, etwa in Briefen und Dokumentfragmenten. Falls Leistungsprobleme auftreten, erstellen Sie separate Datenwörterbücher für verschiedene Briefe.
 
 1. Wählen Sie **Formulare** > **Datenwörterbücher**.
-1. Tippen **Datenwörterbuch erstellen**.
+1. Tippen Sie auf **Datenwörterbuch erstellen**.
 1. Fügen Sie im Bildschirm „Eigenschaften“ Folgendes hinzu:
 
-   * **Titel:** (Optional) Geben Sie den Titel für das Datenwörterbuch ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Briefe und andere Dokumentfragmente werden durch ihren Titel (falls verfügbar) referenziert, z. B. in Miniaturansichten und Asset-Eigenschaften. Auf Datenwörterbücher wird nicht über ihre Titel, sondern über ihre Namen verwiesen.
+   * **Titel**: (Optional) Geben Sie den Titel für das Datenwörterbuch ein. Titel müssen nicht eindeutig sein und dürfen Sonderzeichen und nichtenglische Zeichen enthalten. Briefe und andere Dokumentfragmente werden durch ihren Titel (falls verfügbar) referenziert, z. B. in Miniaturansichten und Asset-Eigenschaften. Auf Datenwörterbücher wird nicht über ihre Titel, sondern über ihre Namen verwiesen.
    * **Name**: Der eindeutige Name des Datenwörterbuchs. Im Feld „Name“ können Sie nur englische Sprachzeichen, Zahlen und Bindestriche eingeben. Das Feld „Name“ wird automatisch basierend auf dem Feld „Titel“ ausgefüllt, wobei Sonderzeichen, Leerzeichen, Zahlen und nichtenglische Zeichen aus dem Feld „Titel“ durch Bindestriche ersetzt werden. Obwohl der Wert im Feld „Titel“ automatisch in das Feld „Name“ kopiert wird, können Sie den Wert bearbeiten.
 
    * **Beschreibung**: (Optional) Beschreibung des Datenwörterbuchs.
-   * **Tags:** (Optional) Um ein benutzerdefiniertes Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden die neu hinzugefügten Tags auch erstellt.
-   * **Erweiterte Eigenschaften**: (Optional) Tippen Sie auf **Feld hinzufügen** , um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte „Eigenschaftsname“ einen eindeutigen Namen für die Eigenschaft ein. Geben Sie in der Spalte „Wert“ einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
+   * **Tags:**(Optional) Um einen benutzerdefinierten Tag zu erstellen, geben Sie einen Wert in das Textfeld ein und drücken Sie die Eingabetaste. Sie können den Tag unterhalb des Textfeldes der Tags sehen. Wenn Sie diesen Text speichern, werden die neu hinzugefügten Tags auch erstellt.
+   * **Erweiterte Eigenschaften**: (Optional) Klicken Sie auf **Feld hinzufügen**, um Metadatenattribute für Ihr Datenwörterbuch anzugeben. Geben Sie in der Spalte „Eigenschaftsname“ einen eindeutigen Namen für die Eigenschaft ein. Geben Sie in der Spalte „Wert“ einen Wert ein, der mit der Eigenschaft verknüpft werden soll.
 
    ![Eigenschaften des Datenwörterbuchs auf Deutsch](do-not-localize/1_ddproperties.png)
 
-1. (Optional) Um eine XSD-Schemadefinition für Ihr Datenwörterbuch hochzuladen, tippen Sie im Bereich &quot;Datenwörterbuchstruktur&quot;auf **Hochladen des XML-Schemas**. Navigieren Sie zur XSD-Datei, wählen Sie sie aus und tippen Sie auf **Öffnen**. Ein Datenwörterbuch wird basierend auf dem hochgeladenen XML-Schema erstellt. Sie müssen die Anzeigenamen und Beschreibungen des Elements im Datenwörterbuch anpassen. Dazu müssen Sie die Namen der Elemente wählen, indem Sie darauf tippen und dann ihre Beschreibungen, Anzeigenamen und andere Details in den Feldern im rechten Bereich ändern.
+1. (Optional) Wenn Sie eine XSD-Schemadefinition für Ihr Datenwörterbuch hochladen möchten, klicken Sie im Bereich „Datenwörterbuchstruktur“ auf **XML-Schema hochladen**. Navigieren Sie zu der gewünschten XSD-Datei, wählen Sie diese aus und klicken Sie auf **Öffnen**. Ein Datenwörterbuch wird basierend auf dem hochgeladenen XML-Schema erstellt. Sie müssen die Anzeigenamen und Beschreibungen des Elements im Datenwörterbuch anpassen. Dazu müssen Sie die Namen der Elemente wählen, indem Sie darauf tippen und dann ihre Beschreibungen, Anzeigenamen und andere Details in den Feldern im rechten Bereich ändern.
 
    Weitere Informationen zu berechneten DD-Elementen finden Sie unter [Berechnete Datenwörterbuchelemente](#computedddelements).
 
@@ -75,7 +75,7 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
 
    Sie können auf die drei Punkte auf der rechten Seite eines Elements tippen und der Datenwörterbuchstruktur ein Element hinzufügen.
 
-   ![1_2_create_anelement](assets/1_2_createanelement.png)
+   ![1_2_createanelement](assets/1_2_createanelement.png)
 
    Wählen Sie entweder Composite-Element, Collection-Element oder Primitive-Element aus.
 
@@ -86,22 +86,22 @@ Verwenden Sie den Datenwörterbucheditor zum Erstellen eines Datenwörterbuchs o
    Nachfolgend finden Sie einige Regeln zu Erstellen eines Datenwörterbuchs:
 
    * Nur der Composite-Typ ist als DDE der obersten Ebene in einem Datenwörterbuch zulässig.
-   * Name, Referenzname und Elementtyp sind erforderliche Felder für ein Datenwörterbuch und DDEs.
+   * Name, Referenzname und Elementtypen sind obligatorische Felder für Datenwörterbücher und DDEs.
    * Der Referenzname muss eindeutig sein.
    * Ein übergeordnetes DDE (Composite) darf nicht zwei untergeordnete DDE mit demselben Namen haben.
    * „Enums“ enthalten nur Primitive-Zeichenfolgentypen.
 
-   Weitere Informationen zu Composite-, Collection- und Primitive-Elementen sowie zum Arbeiten mit Datenwörterbuchelementen finden Sie unter [Zuordnen von Datenwörterbuchelementen zum XML-Schema](#mappingddetoschema).
+   Weitere Informationen zu Composite-, Collection- und Primitive-Elementen und zum Arbeiten mit Datenwörterbuchelementen finden Sie unter [Zuordnen von Datenwörterbuchelementen zum XML-Schema](#mappingddetoschema).
 
-   Informationen zu Überprüfungen im Datenwörterbuch finden Sie unter [Validierungen des Datenwörterbucheditors](#ddvalidations).
+   Weitere Informationen zu Überprüfungen im Datenwörterbuch finden Sie unter [Überprüfungen des Datenwörterbucheditors](#ddvalidations).
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Optional) Nach der Auswahl eines Elements können Sie auf der Registerkarte „Erweitert“ Eigenschaften (Attribute) hinzufügen. Sie können auch auf **Feld hinzufügen** und erweitern Sie die Eigenschaften eines DD-Elements.
+1. (Optional) Nach der Auswahl eines Elements können Sie auf der Registerkarte „Erweitert“ Eigenschaften (Attribute) hinzufügen. Sie können auch auf **Feld hinzufügen** tippen und die Eigenschaften eines DD-Elements erweitern.
 
-   ![3_addpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
+   ![3_addddpropertiesadvanced](assets/3_addddpropertiesadvanced.png)
 
-1. (Optional) Sie können ein Element entfernen, indem Sie auf die drei Punkte auf der rechten Seite eines Elements tippen und **Löschen**.
+1. (Optional) Sie können ein Element durch Tippen auf die drei Punkte auf der rechten Seite eines Elements und durch Auswahl von **Löschen** entfernen.
 
    ![4_deleteelement](assets/4_deleteelement.png)
 
@@ -151,9 +151,9 @@ Beim Bearbeiten oder Anzeigen des Datenwörterbuchs sehen Sie, welche Elemente d
 
 ## Arbeiten mit Testdaten {#working-with-test-data}
 
-1. Tippen Sie auf der Seite &quot;Datenwörterbücher&quot;auf **Auswählen**.
+1. Tippen Sie auf der Seite „Datenwörterbücher“ auf **Auswählen**.
 1. Tippen Sie auf ein Datenwörterbuch, für das Sie Testdaten herunterladen möchten, und tippen Sie dann auf **XML-Beispieldaten herunterladen**.
-1. Tippen **OK** in der Warnmeldung. Eine XML-Datei wird heruntergeladen.
+1. Tippen Sie bei der Warnmeldung auf **OK**. Eine XML-Datei wird heruntergeladen.
 1. Öffnen Sie die XML-Datei mit Notepad oder einem anderen XML-Editor. Die XML-Datei hat dieselbe Struktur wie das Datenwörterbuch und die Platzhalterzeichenfolgen in den Elementen. Ersetzen Sie die Platzhalterzeichenfolgen mit den Daten, mit denen Sie einen Brief testen wollen.
 
    ```xml
@@ -195,7 +195,7 @@ Beim Bearbeiten oder Anzeigen des Datenwörterbuchs sehen Sie, welche Elemente d
 
    >[!NOTE]
    >
-   >In diesem Beispiel erstellt XML Platz für drei Werte für ein Kollektionselement, aber die Anzahl der Werte kann gemäß den Anforderungen erhöht/verringert werden.
+   >In diesem Beispiel erstellt XML Platz für drei Werte für ein Collection-Element, aber die Anzahl der Werte kann je nach Anforderung reduziert bzw. erhöht werden.
 
 1. Nachdem die Dateneinträge vorgenommen wurden, können Sie diese XML-Datei verwenden, wenn Sie einen Brief mit Testdaten in der Vorschau anzeigen.
 
@@ -310,7 +310,7 @@ In der folgenden Tabelle werden allgemeine Attribute, die mit einem DDE verknüp
   <tr> 
    <td>Berechnet</td> 
    <td>Boolesch</td> 
-   <td>Ein boolesches Feld, um anzuzeigen, ob ein DDE berechnet wurde. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte. Standardmäßig werden JSP-Ausdrücke unterstützt.</td> 
+   <td>Ein boolesches Feld, um anzuzeigen, ob ein DDE berechnet wurde. Ein berechneter DDE-Wert ist eine Funktion anderer DDE-Werte. JSP-Ausdrücke werden standardmäßig unterstützt.</td> 
   </tr> 
   <tr> 
    <td>Ausdruck</td> 
@@ -368,7 +368,7 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
    <td>java.util.List<br /> </td> 
   </tr> 
   <tr> 
-   <td><p>Attribut des Typs "xs:id" <br /> </p> </td> 
+   <td><p>Attribut des Typs „xs:ID“ <br /> </p> </td> 
    <td>DDE des Typs STRING <br /> </td> 
    <td>java.lang.String<br /> </td> 
   </tr> 
@@ -378,17 +378,17 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
    <td>java.lang.String<br /> </td> 
   </tr> 
   <tr> 
-   <td>xs:attribute/xs:element des Typs "xs": boolean <br /> </td> 
-   <td>DDE des Typs Boolesch <br /> </td> 
+   <td>xs:attribute/xs:element des Typs „xs: boolean“ <br />  </td> 
+   <td>DDE des Typs „Boolean“ <br />  </td> 
    <td>java.lang.Boolean<br /> </td> 
   </tr> 
   <tr> 
-   <td>xs:attribute/xs:element des Typs "xs:date" </td> 
+   <td>xs:attribute/xs:element des Typs „xs:date“  </td> 
    <td>DDE des Typs DATE </td> 
    <td>java.lang.String</td> 
   </tr> 
   <tr> 
-   <td>xs:attribute/xs:element des Typs "xs:integer" </td> 
+   <td>xs:attribute/xs:element des Typs „xs:integer“  </td> 
    <td>DDE des Typs NUMBER </td> 
    <td>java.lang.Double</td> 
   </tr> 
@@ -412,13 +412,13 @@ Das Exportieren einer XSD-Datei erfordert eine bestimmte Datenzuordnung, die in 
 
 ## Beispieldatendatei aus einem Datenwörterbuch herunterladen {#download-a-sample-data-file-from-a-data-dictionary}
 
-Nachdem Sie ein Datenwörterbuch erstellt haben, können Sie es als XML-Beispieldatendatei herunterladen, um darin Texteinträge vorzunehmen.
+Nachdem Sie ein Datenwörterbuch erstellt haben, können Sie es in eine XML-Beispieldatendatei herunterladen, um darin Texteinträge vorzunehmen.
 
-1. Tippen Sie auf der Seite &quot;Datenwörterbücher&quot;auf **Auswählen** und tippen Sie dann auf ein Datenwörterbuch, um es auszuwählen.
-1. Auswählen **XML-Beispieldaten herunterladen**.
-1. Tippen **OK** in der Warnmeldung.
+1. Tippen Sie auf der Seite „Datenwörterbücher“ auf **Auswählen** und tippen Sie dann auf ein Datenwörterbuch, um es auszuwählen.
+1. Wählen Sie **XML-Beispieldaten herunterladen**. 
+1. Tippen Sie bei der Warnmeldung auf **OK**.
 
-   Correspondence Management erstellt eine XML-Datei, die auf der ausgewählten Datenwörterbuchstruktur basiert und lädt sie auf Ihren Computer mit dem Namen &lt;data-dictionary-name>-SampleData. Jetzt können Sie diese Datei in XML oder einem Texteditor bearbeiten, um Dateneinträge vorzunehmen, während Sie [Erstellen eines Briefs](/help/forms/using/create-letter.md).
+   Correspondence Management erstellt eine XML-Datei, die auf der ausgewählten Datenwörterbuchstruktur basiert und lädt sie auf Ihren Computer mit dem Namen &lt;data-dictionary-name>-SampleData. Jetzt können Sie diese Datei in einem XML- oder einem Texteditor bearbeiten, um beim [Erstellen eines Briefs](/help/forms/using/create-letter.md) Dateneinträge vorzunehmen.
 
 ## Internationalisierung von Metadaten {#internationalization-of-meta-data}
 
@@ -426,9 +426,9 @@ Wenn Sie denselben Brief in unterschiedlichen Sprachen senden möchten, können 
 
 ### Datenwörterbuch lokalisieren {#localize-data-dictionary}
 
-1. Tippen Sie auf der Seite &quot;Datenwörterbücher&quot;auf **Auswählen** und tippen Sie dann auf ein Datenwörterbuch, um es auszuwählen.
-1. Tippen **Herunterladen von Lokalisierungsdaten**.
-1. Tippen **OK** in der Warnung angezeigt. Correspondence Management lädt eine ZIP-Datei auf Ihrem Computer mit dem Namen DataDictionary-&lt;DDname>.zip herunter.
+1. Tippen Sie auf der Seite „Datenwörterbücher“ auf **Auswählen** und tippen Sie dann zum Auswählen auf ein Datenwörterbuch.
+1. Tippen Sie auf **Lokalisierungsdaten herunterladen**.
+1. Tippen Sie bei der Warnmeldung auf **OK**. Correspondence Management lädt eine ZIP-Datei auf Ihrem Computer mit dem Namen DataDictionary-&lt;DDname>.zip herunter.
 1. Die ZIP-Datei enthält eine Datei des Typs „.properties“. Diese Datei definiert das heruntergeladene Datenwörterbuch. Der Inhalt dieser Datei ist ähnliche wie folgender Inhalt:
 
    ```
@@ -445,7 +445,7 @@ Wenn Sie denselben Brief in unterschiedlichen Sprachen senden möchten, können 
 
 1. Um die .properties-Datei in einem anderen Gebietsschema zu aktualisieren, aktualisieren Sie die Anzeigenamen- und Beschreibungswerte in der Datei. Erstellen Sie weitere Instanzen der Datei für jede Sprache, die Sie lokalisieren wollen. Nur Französisch, Deutsch, Japanisch und Englisch werden unterstützt.
 
-1. Speichern Sie die verschiedenen aktualisierten Eigenschaftendateien mit den folgenden Namen:
+1. Speichern Sie die verschiedenen aktualisierten Eigenschaftsdateien unter den folgenden Namen:
 
    _fr_FR.properties Französisch
 

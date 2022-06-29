@@ -12,7 +12,7 @@ exl-id: a8f200ac-cf9f-47b7-9856-e62aa8b229eb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1399'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -36,7 +36,7 @@ Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OA
 
 Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration konfigurieren. Gehen Sie folgendermaßen vor:
 
-1. Rufen Sie AEM Webkonsole auf unter `https://[server]:[host]/system/console/configMgr`.
+1. Wechseln Sie zur AEM-Web-Konsole unter `https://[server]:[host]/system/console/configMgr`.
 1. Suchen Sie die Konfiguration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Tippen Sie, um die Konfiguration im Bearbeitungsmodus zu öffnen.
 1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
 
@@ -54,7 +54,7 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    >1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort bzw. die zu verschlüsselnde Zeichenfolge ein und klicken Sie auf **[!UICONTROL Protect]**.
 
    >
-   >Der verschlüsselte Text wird im Feld Geschützter Text angezeigt, das Sie in der Konfiguration angeben können.
+   >Der verschlüsselte Text wird im Feld „Protected Text“ angezeigt, das Sie in der Konfiguration angeben können.
 
 1. Aktivieren Sie **[!UICONTROL Test on Borrow]** oder **[!UICONTROL Test on Return]**, um festzulegen, dass die Objekte vor der Entnahme oder bei der Rückgabe aus dem bzw. in den Pool validiert werden sollen.
 1. Geben Sie eine SQL SELECT-Abfrage in das Feld **[!UICONTROL Validation Query]** ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie die für Ihre Datenbank geeignete Option fest:
@@ -62,14 +62,14 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    * SELECT 1 (MySQL und MS SQL)
    * SELECT 1 from dual (Oracle)
 
-1. Tippen **[!UICONTROL Speichern]** , um die Konfiguration zu speichern.
+1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
 ## AEM-Benutzerprofil konfigurieren {#configure-aem-user-profile}
 
 Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfiguration in der AEM-Webkonsole konfigurieren. Gehen Sie folgendermaßen vor:
 
-1. Rufen Sie AEM Webkonsole auf unter `https://[server]:[host]/system/console/configMgr`.
-1. Suchen nach **[!UICONTROL AEM Forms-Datenintegrationen - Benutzerprofil-Connector-Konfiguration]** und tippen Sie auf , um die Konfiguration im Bearbeitungsmodus zu öffnen.
+1. Wechseln Sie zur AEM-Web-Konsole unter `https://[server]:[host]/system/console/configMgr`.
+1. Suchen Sie nach **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** und tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
 1. Im Dialogfeld für die Benutzerprofil-Connector-Konfiguration können Sie Benutzerprofileigenschaften hinzufügen, entfernen oder aktualisieren. Die angegebenen Eigenschaften sind zur Verwendung im Formulardatenmodell verfügbar. Verwenden Sie das folgende Format, um Benutzerprofileigenschaften festzulegen:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
@@ -81,9 +81,9 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
    >[!NOTE]
    >
-   >Die **&amp;ast;** im obigen Beispiel bedeutet, dass alle Knoten unter `profile/empLocation/` Knoten in AEM Benutzerprofil in der CRXDE-Struktur. Das bedeutet, dass das Formulardatenmodell auf die `city` Eigenschaft des Typs `string` in jedem Knoten unter `profile/empLocation/` Knoten. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
+   >Die **&amp;ast;** im obigen Beispiel bedeutet, dass alle Knoten unter `profile/empLocation/` Knoten in AEM Benutzerprofil in der CRXDE-Struktur. Das bedeutet, dass das Formulardatenmodell auf die Eigenschaft `city` des Typs `string` in jedem Knoten unter dem `profile/empLocation/`-Knoten zugreifen kann. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
 
-1. Tippen **[!UICONTROL Speichern]** , um die Konfiguration zu speichern.
+1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
 ## Einstellen des Ordners für Cloud-Service-Konfigurationen {#cloud-folder}
 
@@ -91,7 +91,7 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 >
 >Die Konfiguration des Cloud Services-Ordners ist erforderlich, um Cloud Services für RESTful-, SOAP- und OData-Services zu konfigurieren.
 
-Alle Cloud Service-Konfigurationen in AEM werden im `/conf` Ordner in AEM Repository. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud Service-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud Service-Konfigurationen zu erstellen und zu organisieren.
+Alle Cloud-Service-Konfigurationen in AEM werden im Ordner `/conf` im AEM-Repository zusammengefasst. Standardmäßig enthält der Ordner `conf` den Ordner `global`, in dem Sie Cloud Service-Konfigurationen erstellen können. Sie müssen ihn jedoch manuell für Cloud-Konfigurationen aktivieren. Sie können auch zusätzliche Ordner in `conf` erstellen, um Cloud Service-Konfigurationen zu erstellen und zu organisieren.
 
 Konfigurieren des Ordners für Cloud Service-Konfigurationen:
 
@@ -109,7 +109,7 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
 
 ## Konfigurieren von RESTful-Webservices {#configure-restful-web-services}
 
-Der RESTful-Webdienst kann mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/) im JSON- oder YAML-Format in einer Swagger-Definitionsdatei. Um den RESTful-Webdienst in den AEM-Cloud-Services zu konfigurieren, müssen Sie entweder über die Swagger-Datei auf Ihrem System oder über die URL verfügen, unter der die Datei gehostet wird.
+Der RESTful-Webservice kann mithilfe von [Swagger-Spezifikationen](https://swagger.io/specification/) im JSON- oder YAML-Format in einer -Definitionsdatei beschrieben werden. Um den RESTful-Webdienst in den AEM-Cloud-Services zu konfigurieren, müssen Sie entweder über die Swagger-Datei auf Ihrem System oder über die URL verfügen, unter der die Datei gehostet wird.
 
 Gehen Sie wie folgt vor, um RESTful-Services zu konfigurieren:
 
@@ -127,7 +127,7 @@ Gehen Sie wie folgt vor, um RESTful-Services zu konfigurieren:
 
 ## SOAP-Webservices konfigurieren {#configure-soap-web-services}
 
-SOAP-basierte Webservices werden mithilfe von [WSDL-Spezifikationen (Web Services Description Language)](https://www.w3.org/TR/wsdl) beschrieben. Um den SOAP-basiertenWebdienst in den AEM-Cloud-Services zu konfigurieren, benötigen Sie die WSDL-URL für den Webdienst. Gehen Sie dann wie folgt vor:
+SOAP-basierte Webservices werden mithilfe von [WSDL-Spezifikationen (Web Services Description Language)](https://www.w3.org/TR/wsdl) beschrieben. Um den SOAP-basierten Web-dienst in den AEM-Cloud-Services zu konfigurieren, benötigen Sie die WSDL-URL für den Webdienst. Gehen Sie dann wie folgt vor:
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
@@ -140,8 +140,8 @@ SOAP-basierte Webservices werden mithilfe von [WSDL-Spezifikationen (Web Service
    * Service-Endpunkt. Geben Sie in diesem Feld einen Wert ein, um den in WSDL erwähnten Service-Endpunkt zu überschreiben.
    * Wählen Sie den Authentifizierungstyp - Keine, OAuth2.0, Standardauthentifizierung, Benutzerdefinierte Authentifizierung oder X509-Token - für den Zugriff auf den SOAP-Dienst aus und geben Sie dementsprechend die Details für die Authentifizierung an.
 
-      Wenn Sie &quot;X509 Token&quot;als Authentifizierungstyp auswählen, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Einrichten von Zertifikaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
-Geben Sie den KeyStore-Alias für das X509-Zertifikat im **[!UICONTROL Schlüsselalias]** -Feld. Geben Sie die Zeit in Sekunden, bis die Authentifizierungsanforderung gültig bleibt, im **[!UICONTROL Time to Live]** -Feld. Optional können Sie den Nachrichtentext oder die Kopfzeile des Zeitstempels oder beides signieren.
+      Wenn Sie X509-Token als Authentifizierungstyp verwenden, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Einrichten von Zertifikaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+Geben Sie im Feld **[!UICONTROL Schlüssel-Alias]** den KeyStore-Alias für das X509-Zertifikat an. Geben Sie im Feld **[!UICONTROL Gültigkeitsdauer]** die Zeit in Sekunden an, während der die Authentifizierungsanfrage gültig bleibt. Optional können Sie den Nachrichtentext oder die Kopfzeile des Zeitstempels oder beides signieren.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die Cloud-Konfiguration für den SOAP-Webservice zu erstellen.
 
@@ -151,7 +151,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 
 >[!NOTE]
 >
->Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online oder On-Premise, finden Sie unter [Microsoft Dynamics OData-Konfiguration ](/help/forms/using/ms-dynamics-odata-configuration.md).
+>Eine schrittweise Anleitung zum Konfigurieren von Microsoft Dynamics 365, online oder On-Premise, finden Sie unter [Microsoft Dynamics OData-Konfiguration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Wechseln Sie zu **[!UICONTROL Tools > Cloud Services > Datenquellen]**. Tippen Sie, um den Ordner auszuwählen, in dem Sie eine Cloud-Konfiguration erstellen möchten.
 
@@ -161,7 +161,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 1. Geben Sie folgende Details für den OData-Service an:
 
    * Service-Stamm-URL für den zu konfigurierenden OData-Service.
-   * Wählen Sie den Authentifizierungstyp - Keine, OAuth2.0, Standardauthentifizierung oder Benutzerdefinierte Authentifizierung - für den Zugriff auf den OData-Dienst aus und geben Sie dementsprechend die Details für die Authentifizierung an.
+   * Wählen Sie den Authentifizierungstyp – Keine, OAuth2.0, Standardauthentifizierung oder benutzerdefinierte Authentifizierung – für den Zugriff auf den OData-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
 
    >[!NOTE]
    >

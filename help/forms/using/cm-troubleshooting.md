@@ -13,7 +13,7 @@ exl-id: 82a35d81-13d0-435f-875e-6fd0a6d574d5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Bei der Vorschau eines Briefs wird, selbst wenn ein zuvor unveröffentlichtes Te
 Setzen Sie den Brief-Cache für die Veröffentlichungs-Instanz zurück, indem Sie folgende Schritten durchführen. Versuchen Sie dann erneut den Brief anzuzeigen:
 
 1. Navigieren Sie zu **`https://[server]:[port]/[contextPath]/system/console/configMgr`** und melden Sie sich als Administrator an.
-1. Auswählen **Correspondence Management-Konfigurationen**.
+1. Wählen Sie **Correspondence Management-Konfigurationens**.
 1. Deaktivieren Sie in **Correspondence Management-Konfigurationen** die Option **Briefcache aktivieren** und klicken Sie auf **Speichern.**
-1. Aktivieren **Briefcache aktivieren** und klicken Sie anschließend auf **Speichern**.
+1. Aktivieren Sie **Brief-Cache aktivieren** und klicken Sie dann auf **Speichern**.
 1. Versuchen sie noch einmal, den Brief anzuzeigen.

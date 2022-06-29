@@ -13,13 +13,13 @@ exl-id: 109adc91-2291-4a10-af7b-e93ae8947258
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '381'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # In Flex Workspace nicht verfügbare Funktionen von AEM Forms {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
-AEM Forms Workspace bietet über den Flex-basierten Arbeitsbereich hinaus neue Funktionen und Funktionen, die zur Verbesserung der Unternehmensintegration und der Benutzerproduktivität beitragen.
+Der AEM Forms-Arbeitsbereich geht über den Flex-basierten Arbeitsbereich hinaus und bietet Funktionen und Möglichkeiten zur Verbesserung der Geschäftsintegration und der Benutzerproduktivität.
 
 Im Folgenden sehen Sie einen kurzen Überblick über diese Funktionen. Weitere Informationen finden Sie in den jeweiligen Artikeln, die am Ende dieses Artikels aufgeführt sind.
 
@@ -37,8 +37,8 @@ Bilder oder Avatare für angemeldete Benutzer können nun rechts oben in AEM For
 
 ## Unterstützung zum Integrieren von Drittanbieteranwendungen {#support-for-integrating-third-party-applications}
 
-Über die Funktion der Integration mit Anwendungen von Drittanbietern können Ihre Workflows vollständig in AEM Forms Workspace integriert werden. Beispielsweise können Sie Correspondence Management-Briefvorlagen als Aufgaben im AEM Forms Workspace-Fenster selbst rendern. So können Sie die Aufgabe abschließen, ohne AEM Forms Workspace zu verlassen. Siehe [Integrieren von Correspondence Management in AEM Forms Workspace](/help/forms/using/integrating-correspondence-management-html-workspace.md) für detaillierte Anweisungen.
+Über die Funktion der Integration mit Anwendungen von Drittanbietern können Ihre Workflows vollständig in AEM Forms Workspace integriert werden. Beispielsweise können Sie Correspondence Management-Briefvorlagen als Aufgaben innerhalb des Arbeitsbereichsfensters von AEM Forms rendern. So können Sie die Aufgabe abschließen, ohne AEM Forms Workspace zu verlassen. Unter [Integrieren von Correspondence Management in AEM Forms Workspace](/help/forms/using/integrating-correspondence-management-html-workspace.md) finden Sie detaillierte Anweisungen.
 
 ## Unterstützung für benutzerdefinierte Aufgabenerstellung basierend auf dem Gerät des Endanwenders {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-AEM Forms Workspace unterstützt die HTML-Wiedergabe von XDP-Formularen. In einem Wiedergabevorgang, der basierend auf dem Gerät oder dem Benutzer-Agenten auf verschiedene Darstellungen von XDP weiterleitet, ermöglicht diese Unterstützung es dem Benutzer, ein XDP-Formular auf den mobilen Geräten als HTML und auf einem Desktop als PDF-Datei anzuzeigen. Dies ermöglicht nahtloses Process Management für Benutzer, die in verschiedenen Umgebungen auf unterschiedlichen Geräten arbeiten.
+Der Arbeitsbereich von AEM Forms bietet Unterstützung für die HTML-Darstellung von XDP-Formularen. In einem Wiedergabevorgang, der basierend auf dem Gerät oder dem Benutzer-Agenten auf verschiedene Darstellungen von XDP weiterleitet, ermöglicht diese Unterstützung es dem Benutzer, ein XDP-Formular auf den mobilen Geräten als HTML und auf einem Desktop als PDF-Datei anzuzeigen. Dies ermöglicht nahtloses Process Management für Benutzer, die in verschiedenen Umgebungen auf unterschiedlichen Geräten arbeiten.

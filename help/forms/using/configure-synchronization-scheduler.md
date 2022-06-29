@@ -13,7 +13,7 @@ exl-id: 7f1c4bac-accf-43e4-9439-89c5420d50f2
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Standardmäßig wird der Synchronisierungs-Scheduler alle 3 Minuten ausgeführt
 
 Führen Sie die folgenden Schritte durch, um das Intervall für den Synchronisierungs-Scheduler zu ändern:
 
-1. Melden Sie sich bei AEM Configuration Manager an. Die URL von Configuration Manager lautet `https://[Server]:[Port]/lc/system/console/configMgr`
+1. Melden Sie sich bei AEM Configuration Manager an. Die URL des Configuration Managers lautet `https://[Server]:[Port]/lc/system/console/configMgr`
 
 1. Suchen Sie das Bundle **FormsManagerConfiguration** und öffnen Sie es.
 
@@ -41,22 +41,22 @@ Sie können die Option **Assets aus Repository synchronisieren** verwenden, um d
 
    ![AEM Forms-Benutzeroberfläche](assets/aem_forms_ui.png)
 
-   **Abbildung:** *AEM Forms-Benutzeroberfläche*
+   **Abbildung:** *Benutzeroberfläche von AEM Forms*
 
-1. Klicken Sie auf ![aem6forms_sync](assets/aem6forms_sync.png) in der Symbolleiste. Wenn im zuletzt konfigurierten Pfad keine Elemente vorhanden sind, wird das nachfolgende Dialogfeld angezeigt. Klicken Sie auf **Start**, um die Synchronisierung zu starten.
+1. Klicken Sie auf das Symbol ![aem6forms_sync](assets/aem6forms_sync.png) in der Symbolleiste. Wenn im zuletzt konfigurierten Pfad keine Elemente vorhanden sind, wird das nachfolgende Dialogfeld angezeigt. Klicken Sie auf **Start**, um die Synchronisierung zu starten.
 
    ![Das Dialogfeld „Synchronisierung“](assets/migrate-and-syncronize.png)
 
-   **Abbildung:** *Dialogfeld &quot;Synchronisierung&quot;*
+   **Abbildung:** *Dialogfeld „Synchronisierung“*
 
 ## Fehlerbehebung von Snchronisierungsfehler {#troubleshooting-synchronization-error}
 
 Sie können neue Anwendungen im Workflow Designer (LiveCycle Workbench) erstellen. 
 
-Wenn die neu erstellte Anwendung und ein Ordner unter /content/dam/formsanddocuments identische Namen haben, wird ein Fehler angezeigt.*Ein Asset mit demselben Namen wie diese Anwendung existiert bereits auf der Stammebene.*&quot; wird protokolliert.
+Wenn eine neu erstellte Anwendung und ein Ordner unter /content/dam/formsanddocuments identische Namen haben, wird der Fehler „*Ein Element mit demselben Namen wie diese Anwendung ist bereits auf der Stammebene vorhanden.*“ protokolliert. 
 
 Benennen Sie zum Beheben des Konflikts die Anwendung um und synchronisieren Sie die Elemente manuell.
 
 ![Das Dialogfeld „Konflikte bei der Synchronisierung von Elementen“](assets/sync-conflict.png)
 
-**Abbildung:** *Dialogfeld &quot;Konflikte bei der Asset-Synchronisierung&quot;*
+**Abbildung:** *Dialogfeld „Konflikte bei der Synchronisierung von Elementen“*

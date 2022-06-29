@@ -12,7 +12,7 @@ exl-id: 014c735e-84f8-4cdb-979e-bfab24b3f666
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 93%
 
 ## Einführung {#introduction}
 
-Sie können ein adaptives Formular basierend auf einer XFA-Formularvorlage erstellen ( `*.XDP` -Datei). Diese Wiederverwendung ermöglicht es Ihnen, Ihre in vorhandene XFA-Formulare getätigten Investitionen mehrmals zu nutzen. Informationen zur Verwendung einer XFA-Formularvorlage zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
+Sie können adaptive Formulare basierend auf einer XFA-Formularvorlage (`*.XDP`-Datei) erstellen. Diese Wiederverwendung ermöglicht es Ihnen, Ihre in vorhandene XFA-Formulare getätigten Investitionen mehrmals zu nutzen. Informationen dazu, wie Sie eine XFA-Formularvorlage zum Erstellen eines adaptiven Formulars verwenden, finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](/help/forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
 Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden auch als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (wie Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können sich auch dafür entscheiden, die Werte einiger dieser Eigenschaften zu überschreiben.
 
@@ -99,13 +99,13 @@ Durch Klicken auf die Meldung werden die Felder im adaptiven Formular mit den en
 
 Alle Eigenschaften, die aus der XDP-Datei in das adaptive Formular kopiert wurden, werden aktualisiert, mit Ausnahme der Eigenschaften, die explizit im adaptiven Formular (aus dem Komponentendialogfeld) vom Autor überschrieben wurden. Die Liste der Eigenschaften, die aktualisiert wurden, ist in den Serverprotokollen verfügbar.
 
-Um die Eigenschaften im adaptiven Beispielformular zu aktualisieren, klicken Sie auf den Link (mit der Bezeichnung `"Click Here"`) in der Nachricht. Der Titel von „TextField1“ ändert sich von **Textfeld** zu **Mein Textfeld**.
+Um die Eigenschaften im adaptiven Formular des Beispiels zu aktualisieren, klicken Sie auf den Link (mit `"Click Here"` gekennzeichnet) in der Nachricht. Der Titel von „TextField1“ ändert sich von **Textfeld** zu **Mein Textfeld**.
 
 ![update-property](assets/update-property.png)
 
 >[!NOTE]
 >
->Die Beschriftung &quot;AF Numeric Field&quot;wurde nicht geändert, da Sie diese Eigenschaft im Dialogfeld &quot;Komponenteneigenschaften&quot;überschrieben haben, wie unter [Hinzufügen von Inhalten zu adaptiven Formularen](#p-add-content-to-adaptive-form-br-p).
+>Die Beschriftung „AF Numeric Field“ wurde nicht geändert, da Sie diese Eigenschaft im Dialogfeld für die Komponenteneigenschaften überschrieben haben, wie in [Hinzufügen von Inhalten zu adaptiven Formularen](#p-add-content-to-adaptive-form-br-p) beschrieben.
 
 ### Hinzufügen neuer Felder aus einer XDP-Datei in ein adaptives Formular   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 

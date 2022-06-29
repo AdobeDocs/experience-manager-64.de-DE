@@ -13,7 +13,7 @@ exl-id: 5c60d1a6-a4a2-4131-81e6-e39a5ab07dcf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -38,10 +38,10 @@ Sie benötigen folgende Hardware, Software und Lizenzen, um die AEM Forms-App er
 
 ## Für Android-Geräte {#for-android-devices}
 
-* Android Development Toolkit (ADT bundle), das heruntergeladen werden kann von [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html)
+* Android Development Toolkit (ADT-Bundle), das von [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html) heruntergeladen werden kann
 * Wenn diese Umgebung auf einem MAC-System eingerichtet wird, sollte die ADT im Anwendungsordner installiert werden.
-* Wenn die ADT an einem anderen Speicherort auf MAC installiert ist oder die Umgebung auf einem Windows-System eingerichtet ist, muss der ADT SDK-Pfad in aktualisiert werden. `local.properties` Datei, die in verfügbar ist `src\android` Ordner im extrahierten Quellarchiv `mobileworkspace-src.zip`. Zeigen Sie in dieser Datei die Variable `sdk.dir` auf den ADT SDK-Speicherort auf Ihrem Desktop.
+* Wenn das ADT auf dem Mac auf einem anderen Speicherort installiert ist, oder wenn die Umgebung auf einem Windows-System eingerichtet ist, muss der ADT SDK-Pfad in der Datei `local.properties` aktualisiert werden, die im Ordner `src\android` im extrahierten Quellarchiv `mobileworkspace-src.zip` verfügbar ist. Zeigen Sie in dieser Datei die Variable `sdk.dir` auf den ADT SDK-Speicherort auf Ihrem Desktop.
 
 >[!NOTE]
 >
->Die Datei adobe-lc-mobileworkspace-src.zip enthält PhoneGap SDK 5.0. Stellen Sie sicher, dass PhoneGap SDK nicht vorinstalliert ist.
+>Die Datei „adobe-lc-mobileworkspace-src.zip“ enthält PhoneGap SDK 5.0. Vergewissern Sie sich, dass PhoneGap SDK nicht vorinstalliert ist.

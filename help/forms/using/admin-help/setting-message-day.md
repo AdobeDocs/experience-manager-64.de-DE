@@ -13,7 +13,7 @@ exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '174'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Erforderlichenfalls können Sie mithilfe der von Adobe Flash® Player unterstüt
 * &lt;textformat> Textformat-Tag
 * &lt;u> Unterstreichen-Tag
 
-Weitere Informationen zu den unterstützten Tags finden Sie in der Definition der `htmlText`-Eigenschaft für die &quot;TextField&quot;-Klasse in der [Flex Language Reference](https://flex.apache.org/).
+Weitere Informationen zu den unterstützten Tags finden Sie in der Definition der `htmlText`-Eigenschaft für die „TextField“-Klasse in der [Flex Language Reference](https://flex.apache.org/de/).
 
 ## Nachricht des Tages festlegen {#set-the-message-of-the-day}
 

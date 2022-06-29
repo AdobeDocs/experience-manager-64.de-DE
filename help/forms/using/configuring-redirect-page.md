@@ -12,7 +12,7 @@ exl-id: bbe10952-d6a7-4adc-bab9-388c1ee8e56a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -30,11 +30,11 @@ Formularersteller können für jedes Formular eine Seite konfigurieren, zu der d
 ![Konfigurieren der Umleitungsseite](assets/thank-you-setting-1.png)
 **Abbildung:** *Konfiguration der Umleitungsseite*
 
-Formularersteller können folgende Parameter verwenden, die zur Dankeseite weitergeleitet werden. Für alle verfügbaren Übermittlungsaktionen: `status` und `owner` -Parameter übergeben werden. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter weitergeleitet:
+Formularersteller können folgende Parameter verwenden, die zur Dankeseite weitergeleitet werden. Bei allen verfügbaren Übermittlungsaktionen werden `status`- und `owner`-Parameter übergeben. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter weitergeleitet:
 
-* **Aktion zum Speichern von Inhalten** (veraltet) : `contentPath`—der Pfad des Knotens im Repository, in dem die gesendeten Daten gespeichert werden, weitergegeben wird.
+* **Aktion für Inhaltsspeicherung** (veraltet): `contentPath` – der Pfad des Knotens im Repository, in dem gesendete Daten gespeichert werden – wird weitergeleitet.
 
-* **PDF-Aktion speichern** (veraltet) : `contentPath`- der übermittelten Daten und des Pfads zum Knoten, der die PDF-Datei im Repository speichert, wird übergeben.
+* **Aktion zum Speichern einer PDF** (veraltet): `contentPath` – die gesendeten Daten und der Pfad des Knoten im Repository, in dem die PDF-Datei gespeichert wird, werden weitergeleitet.
 
 * **An Formular-Workflow übermitteln**: Ausgabeparameter, die aus dem Formular-Workflow zurückgegeben wurden, werden weitergeleitet.
 

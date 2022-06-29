@@ -12,7 +12,7 @@ exl-id: 86596819-8108-409e-af14-4634e8a1959d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Die folgende Tabelle erfasst, wie verschiedene XFA-Skripte, die in den XDP-Datei
   </tr>
   <tr>
    <td><p>Barrierefreiheit: toolTip </p> </td> 
-   <td><p>Der short description-Eigenschaft im adaptiven Formular zugeordnet.</p> </td> 
+   <td><p>Der short-description-Eigenschaft im adaptiven Formular zugeordnet.</p> </td> 
   </tr>
   <tr>
    <td><p>caption<em> (alle Feldtypen)</em></p> </td> 

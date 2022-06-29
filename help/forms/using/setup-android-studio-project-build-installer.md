@@ -12,15 +12,15 @@ exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '592'
-ht-degree: 62%
+ht-degree: 98%
 
 ---
 
 # Richten Sie das Android-Studioprojekt ein und erstellen Sie eine Android-App {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Dieser Artikel gilt für das Erstellen der AEM Forms App 6.3.1.1 und höheren Versionen. Informationen zum Erstellen einer App aus dem Quellcode des Quellcodes der AEM Forms App 6.3 finden Sie unter [Einrichten des Eclipse-Projekts und Erstellen der Android™-App](/help/forms/using/setup-eclipse-project-build-installer.md).
+Dieser Artikel gilt für das Erstellen der AEM Forms App 6.3.1.1 und höheren Versionen. Zum Erstellen einer Mobile App aus dem Quell-Code der Mobile App 6.3 von AEM Forms, siehe [Einrichten des Eclipse-Projekts und Erstellen der Android™-App](/help/forms/using/setup-eclipse-project-build-installer.md).
 
-In AEM Forms wird der vollständige Quellcode der AEM Forms-App bereitgestellt. Die Quelle enthält alle Komponenten, die für eine benutzerdefinierte AEM Forms-App erforderlich sind. Quellcode-Archiv, `adobe-lc-mobileworkspace-src-<version>.zip` ist Teil der `adobe-aemfd-forms-app-src-pkg-<version>.zip` Paket auf Softwareverteilung.
+In AEM Forms wird der vollständige Quellcode der AEM Forms-App bereitgestellt. Die Quelle enthält alle Komponenten, die für eine benutzerdefinierte AEM Forms-App erforderlich sind. Das Quell-Code-Archiv `adobe-lc-mobileworkspace-src-<version>.zip` ist Bestandteil des Pakets `adobe-aemfd-forms-app-src-pkg-<version>.zip` in Software Distribution.
 
 Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
@@ -28,16 +28,16 @@ Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
 1. Im Abschnitt **[!UICONTROL Filter]**:
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die **[!UICONTROL Suchdownloads]** Option zum Filtern der Ergebnisse.
-1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
+   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
+1. Tippen Sie auf den für Ihr Betriebssystem zutreffenden Paketnamen, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
 1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-Die folgende Abbildung zeigt den extrahierten Inhalt der `adobe-lc-mobileworkspace-src-<version>.zip`.
+Die folgende Abbildung zeigt den extrahierten Inhalt von `adobe-lc-mobileworkspace-src-<version>.zip`.
 
 ![Extrahierter Inhalt der komprimierten Android™-Quelle](assets/mws-content-1.png)
 
-Die folgende Abbildung zeigt die Verzeichnisstruktur der `android`im Ordner `src`Ordner.
+Die folgende Abbildung zeigt die Verzeichnisstruktur des Ordners `android` im Ordner `src` an.
 
 ![Ordnerstruktur des Android Ordner in src](assets/android-folder.png)
 
@@ -47,7 +47,7 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur der `android`im Ordner `src
 
    Melden Sie sich bei einem Computer an, auf dem Android™ Studio installiert und konfiguriert ist.
 
-1. Kopieren Sie die heruntergeladenen `adobe-lc-mobileworkspace-src-<version>.zip` Archiv für:
+1. Kopieren Sie das heruntergeladene Archiv `adobe-lc-mobileworkspace-src-<version>.zip` zu:
 
    **Für MAC-Benutzer**: `[User_Home]/Projects`
 
@@ -69,9 +69,9 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur der `android`im Ordner `src
 
 1. Starten Sie Android™ Studio.
 
-   **Für MAC-Benutzer**: Aktualisieren Sie die `local.properties` -Datei im `[User_Home]/Projects/[your-project]/android` und zeigen Sie auf `sdk.dir` zu `SDK` auf Ihrem Desktop.
+   **Für MAC-Benutzer**: Aktualisieren Sie die Datei `local.properties` im Ordner `[User_Home]/Projects/[your-project]/android` und lassen Sie die Variable `sdk.dir` auf den Speicherort `SDK` auf Ihrem Desktop verweisen.
 
-   **Für Windows®-Benutzer**: Aktualisieren Sie die `local.properties` -Datei im `%HOMEPATH%\Projects\[your-project]\android` und zeigen Sie auf `sdk.dir` zu `SDK` auf Ihrem Desktop.
+   **Für Windows®-Benutzer**: Aktualisieren Sie die Datei `local.properties` im Ordner `%HOMEPATH%\Projects\[your-project]\android` und lassen Sie die Variable `sdk.dir` auf den Speicherort `SDK` auf Ihrem Desktop verweisen.
 
 1. Klicken Sie auf **[!UICONTROL Beenden]**um das Projekt zu erstellen.
 
@@ -80,17 +80,17 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur der `android`im Ordner `src
    ![Eclipse-Projekt nach Erstellen der App](assets/eclipsebuildmws.png)
 
 1. Wählen Sie in Android™ Studio **[!UICONTROL Projekt importieren (Eclipse ADT, Gradle, etc.)]**.
-1. Wählen Sie im Projekt-Explorer das Stammverzeichnis des Projekts aus, das Sie im **Stammverzeichnis** Textfeld:
+1. Wählen Sie im Project Explorer den Stammordner des zu erstellenden Projekts im Textfeld **Stammordner** aus:
 
-   **Für Benutzer von Mac:** [user_home]/Projects/MobileWorkspace/src/android
+   **Für Mac-Benutzer:** [Benutzer_Home]/Projects/MobileWorkspace/src/android
 
    **Für Windows®-Benutzer:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
 1. Nachdem das Projekt importiert wurde, erscheint ein Popup mit der Option zum Aktualisieren des Android™ Plugin Gradle. Klicken Sie wie für Ihre Zwecke benötigt auf die entsprechende Schaltfläche.
 
-   ![dontrerichtemagainrisproject](assets/dontremindmeagainforthisproject.png)
+   ![dontremindmeagainforthisproject](assets/dontremindmeagainforthisproject.png)
 
-1. Nach dem erfolgreichen Erstellen des Gradle erscheint der folgende Bildschirm. Verbinden Sie das entsprechende Gerät oder den Emulator mit dem System und klicken Sie auf **[!UICONTROL Android™ ausführen]**.
+1. Nach dem erfolgreichen Erstellen des Gradle erscheint der folgende Bildschirm. Verbinden Sie das entsprechende Gerät oder den entsprechenden Emulator mit dem System und klicken Sie auf **[!UICONTROL Android™ ausführen]**.
 
    ![gradleconsole](assets/gradleconsole.png)
 

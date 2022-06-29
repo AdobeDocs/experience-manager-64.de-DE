@@ -1,7 +1,7 @@
 ---
-title: Übergeben von Dokumenten an den FormsService
+title: Übergeben von Dokumenten an den Forms-Service
 seo-title: Passing Documents to the FormsService
-description: Übergeben Sie ein com.adobe.idp.Document -Objekt, das den Formularentwurf enthält, an den Forms-Dienst. Der Forms-Dienst rendert den Formularentwurf im Objekt com.adobe.idp.Document .
+description: Übergeben Sie ein com.adobe.idp.Document-Objekt, das den Formularentwurf enthält, an den Forms-Service. Der Forms-Service gibt den Formularentwurf wieder, der sich im com.adobe.idp.Document-Objekt befindet.
 seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object.
 uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
 contentOwner: admin
@@ -15,55 +15,55 @@ exl-id: fe19e9b3-d662-4df2-b372-5006b794cde8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1670'
-ht-degree: 3%
+ht-degree: 98%
 
 ---
 
-# Übergeben von Dokumenten an den Forms-Dienst {#passing-documents-to-the-formsservice}
+# Übergeben von Dokumenten an den Forms-Service {#passing-documents-to-the-formsservice}
 
-Der AEM Forms-Dienst rendert interaktive PDF forms an Client-Geräte, normalerweise Webbrowser, um Benutzerinformationen zu erfassen. Ein interaktives PDF-Formular basiert auf einem Formularentwurf, der normalerweise als XDP--Datei gespeichert und in Designer erstellt wird. Ab AEM Forms können Sie eine `com.adobe.idp.Document` -Objekt, das den Formularentwurf für den Forms-Dienst enthält. Der Forms-Dienst rendert dann den Formularentwurf im `com.adobe.idp.Document` -Objekt.
+Der AEM Forms-Service gibt interaktive PDF-Formulare an Client-Geräte aus, in der Regel Webbrowser, um Informationen von Benutzern zu erfassen. Ein interaktives PDF-Formular basiert auf einem Formularentwurf, der normalerweise in Designer erstellt und als XDP-Datei gespeichert wird. Was AEM Forms betrifft, können Sie ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält, an den Forms-Service übergeben. Der Forms-Service gibt dann den Formularentwurf wieder, der sich im `com.adobe.idp.Document`-Objekt befindet.
 
-Der Vorteil der Übergabe eines `com.adobe.idp.Document` -Objekt für den Forms-Dienst ist, dass andere Dienstvorgänge eine `com.adobe.idp.Document` -Instanz. Das heißt, Sie können eine `com.adobe.idp.Document` -Instanz von einem anderen Dienstvorgang aus und rendern Sie ihn. Angenommen, eine XDP-Datei wird in einem Knoten von Content Services (veraltet) gespeichert, der `/Company Home/Form Designs`, wie in der folgenden Abbildung dargestellt.
+Ein Vorteil der Übergabe eines `com.adobe.idp.Document`-Objekts an den Forms-Service ist, dass andere Service-Vorgänge eine `com.adobe.idp.Document`-Instanz zurückgeben. Das heißt, Sie können eine `com.adobe.idp.Document`-Instanz von einem anderen Service-Vorgang erhalten und sie wiedergeben. Nehmen Sie zum Beispiel an, dass eine XDP-Datei in einem Knoten von Content Services (veraltet) mit dem Namen `/Company Home/Form Designs` gespeichert ist, wie in der folgenden Abbildung gezeigt.
 
-Sie können Loan.xdp programmgesteuert aus Content Services (nicht mehr unterstützt) abrufen und die XDP-Datei in einer `com.adobe.idp.Document` -Objekt.
+Sie können Loan.xdp programmgesteuert von Content Services (veraltet) abrufen und die XDP-Datei in einem `com.adobe.idp.Document`-Objekt an den Forms-Service übergeben.
 
 >[!NOTE]
 >
->Weitere Informationen zum Forms-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Weitere Informationen zum Forms-Service finden Sie in der [Service-Referenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
-Führen Sie die folgenden Aufgaben aus, um ein Dokument aus Content Services (nicht mehr unterstützt) an den Forms-Dienst zu übergeben:
+Führen Sie die folgenden Aufgaben aus, um ein Dokument aus Content Services (veraltet) an den Forms-Service zu übergeben:
 
-1. Projektdateien einschließen.
+1. Schließen Sie Projektdateien ein.
 1. Erstellen Sie ein Forms- und ein Document Management Client-API-Objekt.
-1. Rufen Sie den Formularentwurf aus Content Services ab (nicht mehr unterstützt).
-1. Rendern Sie das interaktive PDF-Formular.
-1. Führen Sie eine Aktion mit dem Formulardatenstream aus.
+1. Rufen Sie den Formularentwurf aus Content Services ab (veraltet).
+1. Geben Sie das interaktive PDF-Formular wieder.
+1. Führen Sie eine Aktion mit dem Formulardaten-Stream aus.
 
-**Projektdateien einschließen**
+**Einschließen von Projektdateien**
 
-Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Webdienste verwenden, schließen Sie die Proxy-Dateien ein.
+Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn Sie eine Clientanwendung mit Java erstellen, schließen Sie die erforderlichen JAR-Dateien ein. Wenn Sie Web-Services verwenden, schließen Sie die Proxy-Dateien ein.
 
-**Forms und ein Client-API-Objekt für Document Management erstellen**
+**Erstellen eines Forms- und eines Document Management Client-API-Objekts**
 
-Bevor Sie einen Forms-Dienst-API-Vorgang programmgesteuert ausführen können, erstellen Sie ein Forms Client-API-Objekt. Da mit diesem Workflow eine XDP-Datei aus Content Services (nicht mehr unterstützt) abgerufen wird, erstellen Sie ein Document Management-API-Objekt.
+Bevor Sie einen Forms-Service-API-Vorgang programmgesteuert durchführen können, erstellen Sie ein Forms-Client-API-Objekt. Da mit diesem Workflow eine XDP-Datei aus Content Services (veraltet) abgerufen wird, erstellen Sie ein Document Management-API-Objekt.
 
-**Abrufen des Formularentwurfs aus Content Services (nicht mehr unterstützt)**
+**Abrufen des Formularentwurfs aus Content Services (veraltet)**
 
-Rufen Sie die XDP-Datei aus Content Services (nicht mehr unterstützt) ab, indem Sie die Java- oder Webdienst-API verwenden. Die XDP-Datei wird innerhalb einer `com.adobe.idp.Document` Instanz (oder `BLOB` -Instanz, wenn Sie Webdienste verwenden). Anschließend können Sie die `com.adobe.idp.Document` -Instanz auf den Forms-Dienst.
+Rufen Sie die XDP-Datei aus Content Services (veraltet) ab, indem Sie die Java- oder Webservice-API verwenden. Die XDP-Datei wird in einer `com.adobe.idp.Document`-Instanz zurückgegeben (oder in einer `BLOB`-Instanz, wenn Sie Web-Services verwenden). Sie können dann die `com.adobe.idp.Document`-Instanz an den Forms-Service übergeben.
 
-**Rendern eines interaktiven PDF-Formulars**
+**Wiedergeben eines interaktiven PDF-Formulars**
 
-Übergeben Sie zum Rendern eines interaktiven Formulars die `com.adobe.idp.Document` -Instanz, die von Content Services (nicht mehr unterstützt) an den Forms-Dienst zurückgegeben wurde.
+Um ein interaktives Formular zu rendern, übergeben Sie die `com.adobe.idp.Document`-Instanz, die von Content Services (veraltet) an den Forms-Service zurückgegeben wurde.
 
 >[!NOTE]
 >
->Sie können eine `com.adobe.idp.Document` , der den Formularentwurf für den Forms-Dienst enthält. Zwei neue Methoden namens `renderPDFForm2` und `renderHTMLForm2` akzeptieren `com.adobe.idp.Document` -Objekt, das einen Formularentwurf enthält.
+>Sie können ein `com.adobe.idp.Document`, das den Formularentwurf enthält, an den Forms-Service übergeben. Zwei neue Methoden namens `renderPDFForm2` und `renderHTMLForm2` akzeptieren ein `com.adobe.idp.Document`-Objekt, das einen Formularentwurf enthält.
 
-**Ausführen einer Aktion mit dem Formulardatenstream**
+**Ausführen einer Aktion mit dem Formulardaten-Stream**
 
-Je nach Typ der Clientanwendung können Sie das Formular in einen Client-Webbrowser schreiben oder es als PDF-Datei speichern. Eine webbasierte Anwendung schreibt das Formular normalerweise in den Webbrowser. Eine Desktop-Applikation speichert das Formular jedoch normalerweise als PDF-Datei.
+Je nach Art des Client-Programms können Sie das Formular in einen Client-Webbrowser schreiben oder das Formular als PDF-Datei speichern. Bei einem Web-basierten Programm wird das Formular normalerweise in den Webbrowser geschrieben. Ein Desktop-Programm hingegen speichert das Formular in der Regel als PDF-Datei.
 
 **Siehe auch**
 
@@ -71,90 +71,90 @@ Je nach Typ der Clientanwendung können Sie das Formular in einen Client-Webbrow
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Schnellstarts zur Forms Service-API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Schnellstart mit der Forms Service-API](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-## Übergeben von Dokumenten an den Forms-Dienst mithilfe der Java-API {#pass-documents-to-the-forms-service-using-the-java-api}
+## Übergeben von Dokumenten an den Forms-Service mithilfe der Java-API {#pass-documents-to-the-forms-service-using-the-java-api}
 
-Übergeben Sie ein Dokument, das von Content Services (nicht mehr unterstützt) mithilfe der Forms-Dienst- und Content Services-API (nicht mehr unterstützt) erhalten wurde:
+Übergeben Sie ein Dokument, das von Content Services (veraltet) mithilfe der Forms-Service- und Content Services-API (veraltet) erhalten wurde:
 
 1. Projektdateien einschließen
 
-   Schließen Sie Client-JAR-Dateien wie adobe-forms-client.jar und adobe-contentservices-client.jar in den Klassenpfad Ihres Java-Projekts ein.
+   Fügen Sie Client-JAR-Dateien wie „adobe-forms-client.jar“ oder „adobe-contentservices-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
 
-1. Forms und ein Client-API-Objekt für Document Management erstellen
+1. Erstellen eines Forms- und eines Document Management Client-API-Objekts
 
-   * Erstellen Sie ein `ServiceClientFactory`-&quot; -Objekt, das Verbindungseigenschaften enthält. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Erstellen Sie eine `FormsServiceClient` -Objekt durch Verwendung seines Konstruktors und Übergabe des `ServiceClientFactory` -Objekt.
+   * Erstellen Sie ein `ServiceClientFactory`-Objekt, das Verbindungseigenschaften enthält. (Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
    * Erstellen Sie ein `DocumentManagementServiceClientImpl`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben.
 
 1. Abrufen des Formularentwurfs aus Content Services (nicht mehr unterstützt)
 
-   Rufen Sie die `DocumentManagementServiceClientImpl` -Objekt `retrieveContent` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `retrieveContent` des `DocumentManagementServiceClientImpl`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * Ein string -Wert, der den Store angibt, in dem der Inhalt hinzugefügt wird. Der Standardspeicher lautet `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
-   * Ein string -Wert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
-   * Ein string -Wert, der die Version angibt. Dieser Wert ist ein optionaler Parameter und Sie können eine leere Zeichenfolge übergeben. In diesem Fall wird die neueste Version abgerufen.
+   * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Der Standardspeicherort ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgenwert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgenwert, der die Version angibt. Dieser Wert ist ein optionaler Parameter, und Sie können auch eine leere Zeichenfolge übergeben. In diesem Fall wird die neueste Version abgerufen.
 
-   Die `retrieveContent` -Methode gibt eine `CRCResult` -Objekt, das die XDP-Datei enthält. Abrufen einer `com.adobe.idp.Document` -Instanz durch Aufrufen der `CRCResult` -Objekt `getDocument` -Methode.
+   Die Methode `retrieveContent` gibt ein `CRCResult`-Objekt zurück, das die XDP-Datei enthält. Sie können eine `com.adobe.idp.Document`-Instanz erhalten, indem Sie die Methode `getDocument` des `CRCResult`-Objekts aufrufen.
 
-1. Rendern eines interaktiven PDF-Formulars
+1. Wiedergeben eines interaktiven PDF-Formulars
 
-   Rufen Sie die `FormsServiceClient` -Objekt `renderPDFForm2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `renderPDFForm2` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * A `com.adobe.idp.Document` -Objekt, das den Formularentwurf enthält, der von Content Services abgerufen wurde (nicht mehr unterstützt).
-   * A `com.adobe.idp.Document` -Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie einen leeren `com.adobe.idp.Document` -Objekt.
-   * A `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert. Dieser Wert ist ein optionaler Parameter und Sie können `null` , wenn Sie keine Laufzeitoptionen festlegen möchten.
-   * A `URLSpec` -Objekt, das URI-Werte enthält. Dieser Wert ist ein optionaler Parameter und Sie können `null`.
-   * A `java.util.HashMap` -Objekt, das Dateianlagen speichert. Dieser Wert ist ein optionaler Parameter und Sie können `null` , wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein `com.adobe.idp.Document`-Objekt, das den Formularentwurf enthält, der von Content Services (veraltet) abgerufen wurde.
+   * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `com.adobe.idp.Document`-Objekt.
+   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Dieser Wert ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Laufzeitoptionen angeben möchten.
+   * Ein `URLSpec`-Objekt, das URI-Werte enthält. Dieser Wert ist ein optionaler Parameter, für den Sie auch `null` angeben können.
+   * Ein `java.util.HashMap`-Objekt, das Dateianlagen speichert. Dieser Wert ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Dateien an das Formular anhängen möchten.
 
-   Die `renderPDFForm` -Methode gibt eine `FormsResult` -Objekt, das einen Formulardatenstrom enthält, der in den Client-Webbrowser geschrieben werden muss.
+   Die Methode `renderPDFForm` gibt ein `FormsResult`-Objekt zurück, das einen Formulardaten-Stream enthält, der in den Client-Webbrowser geschrieben werden muss.
 
-1. Ausführen einer Aktion mit dem Formulardatenstream
+1. Ausführen einer Aktion mit dem Formulardaten-Stream
 
-   * Erstellen Sie eine `com.adobe.idp.Document` -Objekt durch Aufrufen der `FormsResult` object ‘s `getOutputContent` -Methode.
-   * Abrufen des Inhaltstyps der `com.adobe.idp.Document` -Objekt durch Aufrufen seiner `getContentType` -Methode.
-   * Legen Sie die `javax.servlet.http.HttpServletResponse` Inhaltstyp des Objekts durch Aufrufen seiner `setContentType` -Methode und Übergabe des Inhaltstyps der `com.adobe.idp.Document` -Objekt.
-   * Erstellen Sie eine `javax.servlet.ServletOutputStream` -Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser durch Aufrufen der `javax.servlet.http.HttpServletResponse` -Objekt `getOutputStream` -Methode.
-   * Erstellen Sie eine `java.io.InputStream` -Objekt durch Aufrufen der `com.adobe.idp.Document` -Objekt `getInputStream` -Methode.
-   * Erstellen Sie ein Byte-Array und füllen Sie es mit dem Formulardatenstream, indem Sie die `InputStream` -Objekt `read` -Methode. Übergeben Sie das Byte-Array als Argument.
-   * Rufen Sie die `javax.servlet.ServletOutputStream` -Objekt `write` -Methode zum Senden des Formulardaten-Streams an den Client-Webbrowser. Übergeben Sie das Byte-Array an die `write` -Methode.
+   * Sie können ein `com.adobe.idp.Document`-Objekt erstellen, indem Sie die Methode `getOutputContent` des `FormsResult`-Objekts aufrufen.
+   * Ermitteln Sie den Content-Typ des `com.adobe.idp.Document`-Objekts, indem Sie seine Methode `getContentType` aufrufen.
+   * Legen Sie den Content-Typ des `javax.servlet.http.HttpServletResponse`-Objekts fest, indem Sie seine Methode `setContentType` aufrufen und den Content-Typ des `com.adobe.idp.Document`-Objekts übergeben.
+   * Erstellen Sie ein `javax.servlet.ServletOutputStream`-Objekt, das zum Schreiben des Formulardaten-Streams in den Client-Webbrowser verwendet wird, indem Sie die Methode `getOutputStream` des `javax.servlet.http.HttpServletResponse`-Objekts aufrufen.
+   * Sie können ein `java.io.InputStream`-Objekt erstellen, indem Sie die Methode `getInputStream` des `com.adobe.idp.Document`-Objekts aufrufen.
+   * Sie können ein Byte-Array erstellen und es mit dem Formulardaten-Stream füllen, indem Sie die Methode `read` des `InputStream`-Objekts aufrufen. Übergeben Sie das Byte-Array als Argument.
+   * Rufen Sie die Methode `write` des `javax.servlet.ServletOutputStream`-Objekts auf, um den Formulardaten-Stream an den Client-Webbrowser zu senden. Übergeben Sie das Byte-Array an die Methode `write`.
 
 **Siehe auch**
 
-[Schnellstart (SOAP-Modus): Übergeben von Dokumenten an den Forms-Dienst mithilfe der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Kurzanleitung (SOAP-Modus): Übergeben von Dokumenten an den Forms-Service mithilfe der Java-API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindungseigenschaften festlegen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Übergeben von Dokumenten an den Forms-Dienst mithilfe der Webdienst-API {#pass-documents-to-the-forms-service-using-the-web-service-api}
+## Übergeben von Dokumenten an den Forms-Service mithilfe der Webservice-API {#pass-documents-to-the-forms-service-using-the-web-service-api}
 
-Übergeben Sie ein Dokument, das von Content Services (nicht mehr unterstützt) mithilfe der Forms-Dienst- und Content Services-API (nicht mehr unterstützt) abgerufen wurde:
+Übergeben Sie ein Dokument, das von Content Services (veraltet) mithilfe der Forms-Service- und Content Services-API (veraltet) abgerufen wurde:
 
 1. Projektdateien einschließen
 
-   Erstellen Sie ein Microsoft .NET-Projekt, das MTOM verwendet. Da diese Client-Anwendung zwei AEM Forms-Dienste aufruft, erstellen Sie zwei Dienstverweise. Verwenden Sie die folgende WSDL-Definition für die Dienstreferenz, die mit dem Forms-Dienst verknüpft ist: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
+   Erstellen Sie ein Microsoft .NET-Projekt, das MTOM verwendet. Da dieses Client-Programm zwei AEM Forms-Services aufruft, erstellen Sie zwei Service-Verweise. Verwenden Sie die folgende WSDL-Definition für den Service-Verweis, der mit dem Forms-Service verknüpft ist: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
-   Verwenden Sie die folgende WSDL-Definition für die Dienstreferenz, die mit dem Document Management-Dienst verknüpft ist: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
+   Verwenden Sie die folgende WSDL-Definition für den Service-Verweis, der mit dem Document Management-Service verknüpft ist: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Da die `BLOB` Datentyp für beide Dienstverweise verwendet wird, müssen Sie die `BLOB` Datentyp bei der Verwendung. Im entsprechenden Webdienst-Schnellstart werden alle `BLOB` -Instanzen sind vollständig qualifiziert.
+   Da der `BLOB`-Datentyp für beide Service-Referenzen verwendet wird, müssen Sie den `BLOB`-Datentyp vollständig qualifizieren, wenn Sie ihn verwenden. Im entsprechenden Webservice-Schnellstart sind alle `BLOB`-Instanzen vollständig qualifiziert.
 
    >[!NOTE]
    >
    >Ersetzen `localhost`* mit der IP-Adresse des Servers, auf dem AEM Forms gehostet wird. *
 
-1. Forms und ein Client-API-Objekt für Document Management erstellen
+1. Erstellen eines Forms- und eines Document Management Client-API-Objekts
 
-   * Erstellen Sie eine `FormsServiceClient` -Objekt mithilfe des Standardkonstruktors.
-   * Erstellen Sie eine `FormsServiceClient.Endpoint.Address` -Objekt mithilfe der `System.ServiceModel.EndpointAddress` -Konstruktor. Übergeben Sie einen string -Wert, der die WSDL an den AEM Forms-Dienst angibt (z. B. `http://localhost:8080/soap/services/FormsService?WSDL`). Sie müssen die `lc_version` -Attribut. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.)
-   * Erstellen Sie eine `System.ServiceModel.BasicHttpBinding` -Objekt durch Abrufen des Werts der `FormsServiceClient.Endpoint.Binding` -Feld. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
-   * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
+   * Erstellen Sie ein `FormsServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
+   * Erstellen Sie mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors ein `FormsServiceClient.Endpoint.Address`-Objekt. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/FormsService?WSDL`). Das Attribut `lc_version` muss nicht verwendet werden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `FormsServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld den Benutzernamen AEM Formulare zu `FormsServiceClient.ClientCredentials.UserName.UserName`.
-      * Weisen Sie dem Feld den entsprechenden Kennwortwert zu `FormsServiceClient.ClientCredentials.UserName.Password`.
-      * Konstantenwert zuweisen `HttpClientCredentialType.Basic` zum Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Konstantenwert zuweisen `BasicHttpSecurityMode.TransportCredentialOnly` zum Feld `BasicHttpBindingSecurity.Security.Mode`.
+      * Weisen Sie dem Feld `FormsServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+      * Weisen Sie dem Feld `FormsServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
    >[!NOTE]
    >
@@ -162,38 +162,38 @@ Je nach Typ der Clientanwendung können Sie das Formular in einen Client-Webbrow
 
 1. Abrufen des Formularentwurfs aus Content Services (nicht mehr unterstützt)
 
-   Abrufen von Inhalten durch Aufrufen der `DocumentManagementServiceClient` -Objekt `retrieveContent` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie den Inhalt ab, indem Sie die `retrieveContent`-Methode des `DocumentManagementServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
-   * Ein string -Wert, der den Store angibt, in dem der Inhalt hinzugefügt wird. Der Standardspeicher lautet `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
-   * Ein string -Wert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
-   * Ein string -Wert, der die Version angibt. Dieser Wert ist ein optionaler Parameter und Sie können eine leere Zeichenfolge übergeben. In diesem Fall wird die neueste Version abgerufen.
-   * Ein string -Ausgabeparameter, der den Wert des Durchsuchen-Links speichert.
-   * A `BLOB` Ausgabeparameter, der den Inhalt speichert. Sie können diesen Ausgabeparameter verwenden, um den Inhalt abzurufen.
-   * A `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` Ausgabeparameter, der Inhaltsattribute speichert.
-   * A `CRCResult` Ausgabeparameter. Anstatt dieses Objekt zu verwenden, können Sie die `BLOB` Ausgabeparameter zum Abrufen des Inhalts.
+   * Ein Zeichenfolgewert, der den Speicher angibt, dem der Inhalt hinzugefügt wird. Der Standardspeicherort ist `SpacesStore`. Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgenwert, der den vollständig qualifizierten Pfad des abzurufenden Inhalts angibt (z. B. `/Company Home/Form Designs/Loan.xdp`). Dieser Wert ist ein obligatorischer Parameter.
+   * Ein Zeichenfolgenwert, der die Version angibt. Dieser Wert ist ein optionaler Parameter, und Sie können auch eine leere Zeichenfolge übergeben. In diesem Fall wird die neueste Version abgerufen.
+   * Der Ausgabeparameter einer Kennzeichenfolge, der den Wert des Browse-Links speichert.
+   * Ein `BLOB`-Ausgabeparameter, der den Inhalt speichert. Sie können diesen Ausgabeparameter verwenden, um den Inhalt abzurufen.
+   * Ein `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType`-Ausgabeparameter, der Inhaltsattribute speichert.
+   * Ein `CRCResult`-Ausgabeparameter. Anstatt dieses Objekt zu verwenden, können Sie den `BLOB`-Ausgabeparameter zum Abrufen des Inhalts verwenden.
 
-1. Rendern eines interaktiven PDF-Formulars
+1. Wiedergeben eines interaktiven PDF-Formulars
 
-   Rufen Sie die `FormsServiceClient` -Objekt `renderPDFForm2` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `renderPDFForm2` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * A `BLOB` -Objekt, das den Formularentwurf enthält, der von Content Services abgerufen wurde (nicht mehr unterstützt).
-   * A `BLOB` -Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie einen leeren `BLOB` -Objekt.
-   * A `PDFFormRenderSpec` -Objekt, das Laufzeitoptionen speichert. Dieser Wert ist ein optionaler Parameter und Sie können `null` , wenn Sie keine Laufzeitoptionen festlegen möchten.
-   * A `URLSpec` -Objekt, das URI-Werte enthält. Dieser Wert ist ein optionaler Parameter und Sie können `null`.
-   * A `Map` -Objekt, das Dateianlagen speichert. Dieser Wert ist ein optionaler Parameter und Sie können `null` , wenn Sie keine Dateien an das Formular anhängen möchten.
-   * Ein long -Ausgabeparameter, der zum Speichern der Seitenzahl verwendet wird.
-   * Ein string -Ausgabeparameter, der zum Speichern des Gebietsschemawerts verwendet wird.
-   * A `FormsResult` Ausgabeparameter, der zum Speichern des interaktiven PDF-Formulars verwendet wird `.`
+   * Ein `BLOB`-Objekt, das den Formularentwurf enthält, der von Content Services (veraltet) abgerufen wurde.
+   * Ein `BLOB`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen. Wenn Sie keine Daten zusammenführen möchten, übergeben Sie ein leeres `BLOB`-Objekt.
+   * Ein `PDFFormRenderSpec`-Objekt, das Laufzeitoptionen speichert. Dieser Wert ist ein optionaler Parameter, für den Sie `null` angeben können, wenn Sie keine Laufzeitoptionen angeben möchten.
+   * Ein `URLSpec`-Objekt, das URI-Werte enthält. Dieser Wert ist ein optionaler Parameter, für den Sie auch `null` angeben können.
+   * Ein `Map`-Objekt, das Dateianlagen speichert. Dieser Wert ist ein optionaler Parameter und Sie können `null` angeben, wenn Sie keine Dateien an das Formular anhängen möchten.
+   * Ein langer Ausgabeparameter, der zum Speichern der Seitenzahl verwendet wird.
+   * Ein Ausgabeparameter der Kennzeichenfolge, der zum Speichern des Gebietsschemawerts verwendet wird.
+   * Ein `FormsResult`-Ausgabeparameter, der zum Speichern des interaktiven PDF-Formulars verwendet wird `.`
 
-   Die `renderPDFForm2` -Methode gibt eine `FormsResult` -Objekt, das das interaktive PDF-Formular enthält.
+   Die `renderPDFForm2`-Methode gibt ein `FormsResult`-Objekt aus, das das interaktive PDF-Formular enthält.
 
-1. Ausführen einer Aktion mit dem Formulardatenstream
+1. Ausführen einer Aktion mit dem Formulardaten-Stream
 
-   * Erstellen Sie eine `BLOB` -Objekt, das Formulardaten enthält, indem der Wert der `FormsResult` -Objekt `outputContent` -Feld.
-   * Erstellen Sie eine `System.IO.FileStream` -Objekt durch Aufrufen seines Konstruktors. Übergeben Sie einen string -Wert, der den Dateispeicherort des interaktiven PDF-Dokuments und den Dateimodus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB` -Objekt, das aus dem `FormsResult` -Objekt. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
-   * Erstellen Sie eine `System.IO.BinaryWriter` -Objekt durch Aufrufen des Konstruktors und Übergeben des `System.IO.FileStream` -Objekt.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Erstellen Sie ein `BLOB`-Objekt, das Formulardaten enthält, indem Sie den Wert des `outputContent`-Feldes des `FormsResult`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Kennzeichenfolgewert, der den Dateispeicherort des interaktiven PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB`-Objekts speichert, das aus dem `FormsResult`-Objekt abgerufen wurde. Füllen Sie das Byte-Array, indem Sie den Wert des Datenelements `MTOM` des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
 
 **Siehe auch**
 

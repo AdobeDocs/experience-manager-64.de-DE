@@ -13,7 +13,7 @@ exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1253'
-ht-degree: 80%
+ht-degree: 97%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 80%
 
 ## Übersicht {#overview}
 
-Adaptive Formulare sind für die Interaktion mit Ihren Kunden von wesentlicher Bedeutung. Es ist wichtig, Ihre adaptiven Formulare bei jeder Änderung zu testen, die Sie daran vornehmen, z. B. beim Rollout eines neuen Fixpack oder beim Ändern einer Regel im Formular. Allerdings kann das funktionelle Testen adaptiver Formen und jedes Feld in ihnen mühsam sein.
+Adaptive Formulare sind für die Interaktion mit Ihren Kunden von wesentlicher Bedeutung. Es ist wichtig, Ihre adaptiven Formulare bei jeder Änderung, die Sie an ihnen vornehmen, zu testen, z. B. beim Verwenden eines neuen Pakets oder beim Ändern einer Regel im Formular. Allerdings kann das funktionelle Testen adaptiver Formen und jedes Feld in ihnen mühsam sein.
 
-Calvin ermöglicht es Ihnen das automatische Testen der adaptiven Formulare im Webbrowser. Calvin nutzt [Hobbes](/help/sites-developing/hobbes.md)ist die Benutzeroberfläche zum Ausführen der Tests und stellt die folgenden Tools bereit:
+Calvin ermöglicht es Ihnen das automatische Testen der adaptiven Formulare im Webbrowser. Calvin verwendet die Benutzeroberfläche von [Hobbes](/help/sites-developing/hobbes.md) für das Erstellen von Tests und bietet die folgenden Werkzeuge:
 
 * Ein JavaScript-API für die Erstellung von Tests.
 * Eine Benutzeroberfläche für das Ausführen von Tests.
@@ -88,7 +88,7 @@ Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webb
 
 Bevor Sie diesen Artikel verwenden, um Ihre Testfälle zu erstellen, müssen Sie Folgendes wissen:
 
-* Erstellen von Test-Suites und Ausführen von Testfällen mithilfe von [Hobbes](https://docs.adobe.com/docs/de/aem/6-3/develop/components/hobbes.html)
+* Erstellen von Test-Suites und Ausführen von Testfällen mit [Hobbes](https://docs.adobe.com/docs/de/aem/6-3/develop/components/hobbes.html)
 * [Hobbes-Javascript-APIs](https://docs.adobe.com/docs/de/aem/6-2/develop/ref/test-api/index.html)
 * [Calvin JavaScript-APIs](https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
@@ -96,7 +96,7 @@ Bevor Sie diesen Artikel verwenden, um Ihre Testfälle zu erstellen, müssen Sie
 
 Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen mehrerer adaptiver Formulare. Sie müssen einen separaten Testfall für jedes Formular erstellen, das Sie testen wollen. Wenn Sie die folgenden Schritte befolgen und den JavaScript-Code in Schritt 11 ändern, können Sie Ihre eigenen Testfälle erstellen, um Ihre adaptiven Formulare zu testen.
 
-1. Navigieren Sie in Ihrem Webbrowser zur CRXDE Lite: `https://[server]:[port]/crx/de`.
+1. Navigieren Sie zu CRXDE Lite in Ihrem Webbrowser: `https://[server]:[port]/crx/de`.
 1. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **[!UICONTROL Erstellen > Knoten erstellen]**. Geben Sie einen Namen (hier afTestRegistration) ein, geben Sie den Knotentyp als cq:ClientLibraryFolder an und klicken Sie auf **[!UICONTROL OK]**.
 
    Der Ordner „clientlibs“ enthält den Ausrichtungsaspekt Ihrer Anwendung (JS und Init). Es wird empfohlen, dass Sie alle Hobbes Test-Objekte, die für ein Formular spezifisch sind, im Clientlibs-Ordner registrieren.
@@ -118,7 +118,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
   <tr> 
    <td><p>dependencies</p> </td> 
    <td><p>Zeichenfolge[]</p> </td> 
-   <td><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td> 
+   <td><p>granite.testing.hobbes.testrunner, granite.testing.calvin, apps.testframework.all</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -129,7 +129,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. Klicken Sie mit der rechten Maustaste auf den Testknoten (hier) **afTestRegistration)** und klicken Sie anschließend auf **[!UICONTROL Erstellen > Datei erstellen]**. Nennen Sie die Datei js.txt und klicken Sie auf **[!UICONTROL OK]**.
+1. Klicken Sie mit der rechten Maustaste auf den Testknoten (hier **afTestRegistration)** und klicken Sie anschließend auf **[!UICONTROL Erstellen > Datei erstellen]**. Nennen Sie die Datei js.txt und klicken Sie auf **[!UICONTROL OK]**.
 1. In der js.txt-Datei fügen Sie den folgenden Text ein:
 
    ```
@@ -138,8 +138,8 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
    ```
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]** und schließen Sie dann die Datei js.txt.
-1. Klicken Sie mit der rechten Maustaste auf den Testknoten (hier) **afTestRegistration)** und klicken Sie auf **[!UICONTROL Erstellen > Datei erstellen]**. Nennen Sie die Datei init.js und klicken Sie auf **[!UICONTROL OK]**.
-1. Kopieren Sie den folgenden Code in die Datei init.js und klicken Sie auf **[!UICONTROL Alle speichern]**:
+1. Klicken Sie mit der rechten Maustaste auf den Testknoten (hier **afTestRegistration)** und klicken Sie anschließend Sie auf **[!UICONTROL Erstellen > Datei erstellen]**. Nennen Sie die Datei init.js und klicken Sie auf **[!UICONTROL OK]**.
+1. Kopieren Sie folgenden Code in die Datei „init.js“ und klicken Sie auf **[!UICONTROL Alle speichern]**: 
 
    ```
    (function(window, hobs) {
@@ -157,21 +157,21 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
    Der obige Code erstellt Testfälle, die **Adaptives Formular- Demo Test** heißen. Um Testfälle mit einem anderen Namen anzulegen, ändern Sie den Namen entsprechend.
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]** >**Knoten erstellen**, um einen Knoten unter dem clientlib-Ordner für jedes Formular zu erstellen, das Sie testen möchten. In diesem Beispiel wird ein Knoten mit dem Namen **testForm** zum Testen eines adaptiven Formulars mit dem Namen **testForm** `.`Geben Sie die folgenden Eigenschaften an und klicken Sie auf **[!UICONTROL OK]**:
+1. Klicken Sie auf **[!UICONTROL Erstellen]** > **Knoten erstellen**, um einen Knoten unter dem clientlib-Ordner für jedes Formular zu erstellen, das Sie testen möchten. In diesem Beispiel wird ein Knoten mit dem Namen **testForm** zum Testen eines adaptiven Formulars mit dem Namen **testForm** `.`Geben Sie die folgenden Eigenschaften an und klicken Sie auf **[!UICONTROL OK]**:
 
    * Name: testForm (Ihr Formularname)
    * Typ: cq:ClientLibraryFolder
 
-1. Fügen Sie die folgenden Eigenschaften zum neu erstellten Knoten (hier testForm) hinzu, um ein adaptives Formular zu testen:
+1. Fügen Sie dem neu erstellten Knoten (hier testForm) die folgenden Eigenschaften hinzu, um ein adaptives Formular zu testen:
 
    | **Eigenschaft** | **Typ** | **Wert** |
    |---|---|---|
-   | categories | Zeichenfolge[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
+   | categories | Zeichenfolge[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
    | dependencies | Zeichenfolge[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
-   >In diesem Beispiel wird eine Abhängigkeit von der Client-Bibliothek granite.testing.calvin.tests verwendet, um eine bessere Verwaltung zu gewährleisten. Dieses Beispiel fügt auch eine Client-Lib-Kategorie, „granite.testing.hobbes.tests.testForm“ hinzu, um diese Client-Lib, falls erforderlich, wiederzuverwenden.
+   >In diesem Beispiel wird für ein besseres Management eine Abhängigkeit von der Clien-Bibliothek „granite.testing.calvin.tests“ verwendet. Dieses Beispiel fügt auch eine Client-Lib-Kategorie, „granite.testing.hobbes.tests.testForm“ hinzu, um diese Client-Lib, falls erforderlich, wiederzuverwenden.
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
@@ -271,7 +271,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
     }(window, window.hobs));
    ```
 
-   Der Testfall wird erstellt. Fahren Sie fort, um den Testfall auszuführen, um adaptive Formulare über Hobbes zu testen. Anweisungen zum Ausführen der Testfälle finden Sie unter [Ausführen von Tests beim Testen der Benutzeroberfläche mit automatisierten Tests](/help/sites-developing/hobbes.md).
+   Der Testfall wird erstellt. Führen Sie den Testfall aus, um adaptive Formulare über Hobbes zu testen. Eine Anleitung zum Ausführen von Testfällen finden Sie unter [„Ausführen von Tests“ in „Testen der Benutzeroberfläche mit automatischen Tests“](/help/sites-developing/hobbes.md).
 
 Sie können das Paket auch in der angehängten Datei SampleTestPackage.zip installieren, um dieselben Ergebnisse zu erzielen wie im Beispiel: Erstellen einer Testsuite für ein adaptives Formular mit Hobbes als Testrahmen.
 
@@ -283,17 +283,17 @@ Sie können das Paket auch in der angehängten Datei SampleTestPackage.zip insta
 
 Test-Suites können einzeln ausgeführt werden. Wenn Sie eine Test-Suite ausführen, ändert sich die Seite, während die Testfälle und ihre Aktion ausgeführt werden, und die Ergebnisse werden nach dem Abschluss des Tests angezeigt. Symbole zeigen die Ergebnisse an.
 
-Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test: ![checkmark](assets/checkmark.png)
+Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test:  ![checkmark](assets/checkmark.png)
 
-Ein X-Symbol weist auf einen fehlgeschlagenen Test hin: ![cross](assets/cross.png)
+Ein Symbol „X“ zeigt einen fehlgeschlagenen Test an: ![Kreuz](assets/cross.png)
 
 So führen Sie eine Test-Suite aus:
 
 1. Klicken oder tippen Sie im Testfeld auf den Namen des Testfalls, den Sie ausführen möchten, um die Details zu den Aktionen anzuzeigen.
 
-   ![1_tapnamoftestcase](assets/1_tapnameoftestcase.png)
+   ![1_tapnameoftestcase](assets/1_tapnameoftestcase.png)
 
-1. Klicken oder tippen Sie auf die Schaltfläche Tests ausführen . ![runtestcase](assets/runtestcase.png)
+1. Klicken oder tippen Sie auf die Schaltfläche „Tests ausführen“. ![runtestcase](assets/runtestcase.png)
 
    ![2_clickrun](assets/2_clickrun.png)
 
@@ -305,7 +305,7 @@ So führen Sie eine Test-Suite aus:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritten zum Testen Ihrer AEM-Benutzeroberfläche. Weitere Informationen zum Testen der adaptiven Formulare finden Sie unter den folgenden Themen [Benutzeroberfläche testen](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
+Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritten zum Testen Ihrer AEM-Benutzeroberfläche. Weitere Informationen zum Testen der adaptiven Formulare finden Sie unter den folgenden Themen [Benutzeroberfläche testen](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/hobbes.html):
 
 * Anzeigen von Test-Suites
 * Ausführen mehrerer Tests

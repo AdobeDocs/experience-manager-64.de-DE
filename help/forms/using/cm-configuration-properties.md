@@ -13,13 +13,13 @@ exl-id: 102e4f39-192e-4cc1-a249-4b6bc641919d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Eogenschaften der Correspondence Management-Konfiguration {#correspondence-management-configuration-properties}
 
-Um diese Eigenschaften zu konfigurieren, öffnen Sie die folgende URL in einem Browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` und wählen Sie **Correspondence Management-Konfigurationen**.
+Öffnen Sie folgende URL einem Browser, um diese Eigenschaftenin zu konfigurieren: `https://<server>:<port>/<contextPath>/system/console/configMgr` und wählen Sie **Correspondence Management-Konfigurationen**.
 
 Correspondence Management verfügt über die folgenden Konfigurationseigenschaften:
 
@@ -64,7 +64,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   <tr> 
    <td><p>Typ der Zielhervorhebung</p> </td> 
    <td><p>Typ der Zielhervorhebung in der Anwendung „Korrespondenz erstellen“</p> </td> 
-   <td><p>Rahmen</p> </td> 
+   <td><p>border</p> </td> 
    <td><p>Rahmen/Füllung/keine</p> </td> 
   </tr> 
   <tr> 
@@ -243,7 +243,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr> 
   <tr> 
    <td><p>URL für CM-Benutzerelemente</p> </td> 
-   <td><p>URL des Ordners, der alle Correspondence Management-Benutzer-Assets enthält</p> </td> 
+   <td><p>URL des Ordners mit allen Correspondence Management-Benutzerelementen</p> </td> 
    <td><p>—</p> </td> 
    <td><p>Zulässiger Ordnerpfad</p> </td> 
   </tr> 
@@ -255,7 +255,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr> 
   <tr> 
    <td><p>Briefcache aktivieren</p> </td> 
-   <td><p>Briefcache aktivieren/deaktivieren</p> <p>Das Ändern dieses Werts führt zur Bereinigung  <code>in-memory </code> zwischenspeichern.</p> </td> 
+   <td><p>Briefcache aktivieren/deaktivieren</p> <p>Das Ändern dieses Werts führt zur Bereinigung  <code>in-memory </code> cache.</p> </td> 
    <td><p>Ja</p> </td> 
    <td><p>true/false</p> </td> 
   </tr> 
@@ -272,7 +272,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
    <td><p>true/false</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td>Temporärer Ordner  </td> 
+   <td>Temporärer Ordner </td> 
    <td>Pfad des Temp-Ordners.</td> 
    <td>acm.tpmFolder</td> 
    <td> </td> 
@@ -291,7 +291,7 @@ Correspondence Management verfügt über die folgenden Konfigurationseigenschaft
   </tr> 
   <tr> 
    <td><p>Debug-Ordner </p> <p> </p> </td> 
-   <td>Ordnerpfad im Dateisystem für das Debugging. Ist der Ordner nicht  <code>exists</code>, werden keine Debug-Dumps generiert.</td> 
+   <td>Ordnerpfad im Dateisystem für das Debugging. Ist der Ordner nicht  <code>exists</code>, es werden keine Debug-Dumps generiert.</td> 
    <td>acm.debugDirectory</td> 
    <td> </td> 
   </tr> 

@@ -13,7 +13,7 @@ exl-id: d86cf58f-6595-4f37-977f-09437a7f89f9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1540'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -47,14 +47,14 @@ Sie müssen AEM Forms entweder in den abgesicherten Sicherungsmodus (Snapshot-Mo
 Zusätzlich dazu sollten Sie die folgenden Richtlinien für den Sicherungs-/Wiederherstellungsprozess beachten.
 
 * Sichern Sie den Ordner des globalen Dokumentenspeichers mithilfe eines Sicherungsprogramms des Betriebssystems oder eines anderen Anbieters. (Siehe [GDS-Speicherort](/help/forms/using/admin-help/files-back-recover.md#gds-location).)
-* (Optional) Sichern Sie den Stammordner für Inhalte mithilfe eines Sicherungsprogramms des Betriebssystems oder eines anderen Anbieters. (Siehe [Speicherort des Stammordners für Inhalte (eigenständige Umgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment)) oder [Speicherort des Stammordners für Inhalte (Clusterumgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
-* Sichern Sie   Autoren- und Veröffentlichungsinstanzen ( crx -repository backup).
+* (Optional) Sichern Sie den Stammordner für Inhalte mithilfe eines Sicherungsprogramms des Betriebssystems oder eines anderen Anbieters. (Siehe [Speicherort des Stammordners für Inhalte (eigenständige Umgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment) oder [Speicherort des Stammordners für Inhalte (Clusterumgebung)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment).)
+* Sichern Sie  Autor- und Veröffentlichungsinstanzen (Sicherungskopie des CRX-Repository).
 
    Um die Correspondence Management Solution zu sichern, führen Sie die Schritte für Autor- und Veröffentlichungsinstanzen durch wie hier beschrieben: [Backup and Restore](/help/sites-administering/backup-and-restore.md).
 
    Berücksichtigen Sie folgende Punkte, wenn Sie Autor- und Veröffentlichungsinstanzen sichern:
 
-   * Stellen Sie sicher, dass die Sicherung für  Autoren- und Veröffentlichungsinstanzen werden synchronisiert, um gleichzeitig zu starten. Obwohl Sie Autoren- und Veröffentlichungsinstanzen während der Sicherung weiterhin verwenden können, wird empfohlen, während des Backups kein Asset zu veröffentlichen, um nicht erfasste Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
+   * Stellen Sie sicher, dass die Sicherung für Die Sicherung von Autor- und Veröffentlichungsinstanzen wird synchronisiert, um gleichzeitig zu starten. Obwohl Sie Autor- und Veröffentlichungsinstanzen während der Sicherung weiter verwenden können, wird empfohlen, währenddessen kein Element zu veröffentlichen, um nicht gespeicherte Änderungen zu vermeiden. Warten Sie bis die Sicherung der Autor- und Veröffentlichungsinstanzen beendet ist, bevor Sie neue Elemente veröffentlichen.
    * Die vollständige Sicherung des Autorknotens umfasst die Sicherung der Daten von Forms Manager und AEM Forms Workspace.
    * Workbench-Entwickler können an ihre Prozesse weiterhin lokal bearbeiten. Sie sollten während der Sicherung jedoch keine neuen Prozesse bereitstellen.
    * Die Entscheidung über die Dauer der einzelnen Sicherungssitzungen (für den kontinuierlichen Sicherungsmodus) sollte auf der Gesamtzeit basieren, die zum Sichern aller Daten in AEM Forms erforderlich ist (DB, GDS, AEM-Repository und alle anderen zusätzlichen benutzerdefinierten Daten).
@@ -93,12 +93,12 @@ Sie können entweder Administration Console, den Befehl „LCBackupMode“ oder 
 Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehlszeilenschnittstelle in den abgesicherten Sicherungsmodus zu versetzen.
 
 1. Legen Sie „ADOBE_LIVECYCLE“ fest und starten Sie den Anwendungsserver.
-1. Navigieren Sie zu `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` Ordner.
+1. Zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` wechseln.
 1. Bearbeiten Sie je nach Betriebssystem das Skript `LCBackupMode.cmd` oder `LCBackupMode.sh`, um für Ihr System geeignete Standardwerte anzugeben.
 1. Führen Sie an der Befehlszeile den folgenden Befehl in einer einzelnen Zeile aus:
 
-   * (Windows) `LCBackupMode.cmd enter [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*Benutzername* `] [-password=`*password* `] [-label=`*labelname* `] [-timeout=`*Sekunden* `]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostname* `] [-port=`*portnumber* `] [-user=`*Benutzername* `] [-password=`*password* `] [-label=`*labelname* `]`
+   * (Windows) `LCBackupMode.cmd enter [-Host=`*Host-Name* `] [-port=`*Port-Nummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `] [-label=`*Label-Name* `] [-timeout=`*Sekunden* `]`
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*Host-Name* `] [-port=`*Port-Nummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `] [-label=`*Label-Name* `]`
 
    Die Parameter in den vorherigen Befehlen sind wie folgt definiert:
 
@@ -112,7 +112,7 @@ Sie können die `LCBackupMode`-Skripte verwenden, um AEM Forms über die Befehls
 
    `label` ist die Textbeschriftung dieser Sicherung (kann eine beliebige Zeichenfolge sein).
 
-   `timeout` ist die Anzahl der Sekunden, nach denen der Sicherungsmodus automatisch beendet wird. Es kann zwischen 0 und 10.080 liegen. Bei 0 gibt es für den Sicherungsmodus kein Zeitlimit (Standardeinstellung).
+   `timeout` ist die Anzahl der Sekunden, nach denen der Backup-Modus automatisch beendet wird. Sie kann zwischen 0 und 10.080 liegen. Bei 0 gibt es für den Sicherungsmodus kein Zeitlimit (Standardeinstellung).
 
    Weitere Informationen zum Wechseln in den Sicherungsmodus über die Befehlszeilenschnittstelle finden Sie in der Datei „Bitte-lesen“ im Ordner „BackupRestoreCommandline“.
 
@@ -132,17 +132,17 @@ Führen Sie die folgenden Schritte aus, um AEM Forms über Administration Consol
 
 Sie können die Befehlszeilenschnittstelle verwenden, um den abgesicherten Sicherungsmodus (Snapshot-Modus) für AEM Forms zu deaktivieren bzw. die aktuelle Sicherungsmodussitzung (kontinuierlicher Modus) zu beenden. Beachten Sie, dass Sie Administration Console nicht verwenden können, um den kontinuierlichen Sicherungsmodus zu deaktivieren. Während des kontinuierlichen Sicherungsmodus sind die Steuerungen der Sicherungsdienstprogramme in Administration Console deaktiviert. Sie müssen entweder den API-Aufruf oder den „LCBackupMode“-Befehl verwenden.
 
-1. Navigieren Sie zu `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` Ordner.
+1. Zum Ordner `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` wechseln.
 1. Bearbeiten Sie je nach Betriebssystem das Skript `LCBackupMode.cmd` oder `LCBackupMode.sh`, um für Ihr System geeignete Standardwerte anzugeben.
 
    >[!NOTE]
    >
-   >Sie müssen den Ordner „JAVA_HOME“ so festlegen, wie es im entsprechenden Kapitel für Ihren Anwendungsserver in [Vorbereiten der AEM Forms-Installation beschrieben ist](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Sie müssen den Ordner „JAVA_HOME“ so festlegen, wie es im entsprechenden Kapitel für Ihren Anwendungsserver in [Vorbereiten der AEM Forms-Installation beschrieben ist](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_de)*.*
 
 1. Rufen Sie den folgenden Befehl in einer einzelnen Zeile auf:
 
-   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*Benutzername* `] [-password=`*password* `]`
-   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*hostname* `] [-port=`*portnumber* `] [-user=`*Benutzername* `] [-password=`*password* `]`
+   * (Windows) `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*Host-Name* `] [-port=`*Port-Nummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `]`
+   * (Linux, UNIX) `LCBackupMode.sh leaveContinuousCoverage [-Host=`*Host-Name* `] [-port=`*Port-Nummer* `] [-user=`*Benutzername* `] [-password=`*Kennwort* `]`
 
       Die Parameter in den vorherigen Befehlen sind wie folgt definiert:
 

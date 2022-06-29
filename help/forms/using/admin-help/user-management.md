@@ -31,23 +31,23 @@ Wenn Sie einen SSL-aktivierten LDAP-Server verwenden, konfigurieren Sie User Man
 
 Erstellen Sie einen administrativen Benutzer, der über die benötigten Berechtigungen zum Erstellen von Benutzern und Gruppen verfügt. Wenn Ihre AEM Forms-Umgebung Document Security enthält, gewähren Sie die Berechtigung zum Verwalten von eingeladenen und lokalen Benutzern einem Benutzer, der der Administrator für diese Benutzer ist. Weisen Sie außerdem die Administration Console-Benutzerrolle zu, um dem Benutzer Zugriff auf Administration Console zu ermöglichen. (Siehe [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
-Um bei Suchen anhand von Benutzerrichtlinien Benutzer und Gruppen in ausgewählten Domänen anzuzeigen, muss ein Superadministrator oder Richtliniensatzadministrator (in User Management erstellte) Domänen auswählen und der für jeden Richtliniensatz erstellten Liste der sichtbaren Benutzer und Gruppen hinzufügen.
+Um bei Suchen anhand von Benutzerrichtlinien Benutzer und Gruppen in ausgewählten Domains anzuzeigen, muss ein Superadministrator oder Richtliniensatzadministrator (in User Management erstellte) Domains auswählen und der für jeden Richtliniensatz erstellten Liste der sichtbaren Benutzer und Gruppen hinzufügen.
 
-Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschränken der Domänen, die der Endbenutzer beim Auswählen von Benutzern oder Gruppen durchsuchen kann, die Richtlinien hinzugefügt werden sollen. Wird dieser Schritt nicht durchgeführt, kann der Richtliniensatzkoordinator keine der Richtlinie hinzuzufügenden Benutzer oder Gruppen finden. Es kann mehrere Richtliniensatzkoordinatoren für einen Richtliniensatz geben.
+Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Einschränken der Domains, die der Endbenutzer beim Auswählen von Benutzern oder Gruppen durchsuchen kann, die Richtlinien hinzugefügt werden sollen. Wird dieser Schritt nicht durchgeführt, kann der Richtliniensatzkoordinator keine der Richtlinie hinzuzufügenden Benutzer oder Gruppen finden. Es kann mehrere Richtliniensatzkoordinatoren für einen Richtliniensatz geben.
 
 >[!NOTE]
 >
->Das Erstellen von Domänen muss vor dem Erstellen von Richtlinien erfolgen.
+>Das Erstellen von Domains muss vor dem Erstellen von Richtlinien erfolgen.
 
 ### Sichtbare Benutzer und Gruppen festlegen {#set-visible-users-and-groups}
 
-Richten Sie nach der Installation und Konfiguration der AEM Forms-Umgebung mit Document Security alle gewünschten Domänen in User Management ein.
+Richten Sie nach der Installation und Konfiguration der AEM Forms-Umgebung mit Document Security alle gewünschten Domains in User Management ein.
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“, und klicken Sie dann auf die Registerkarte „Richtliniensätze“.
 1. Wählen Sie den globalen Richtliniensatz aus und klicken Sie auf die Registerkarte „Sichtbare Benutzer und Gruppen“.
-1. Klicken Sie auf „Domäne(n) hinzufügen“ und fügen Sie den Anforderungen entsprechend vorhandene Domänen hinzu.
+1. Klicken Sie auf „Domain(s) hinzufügen“ und fügen Sie den Anforderungen entsprechend vorhandene Domains hinzu.
 1. Wechseln Sie zu „Dienste“ > „Document Security“ > „Meine Richtlinien“ und klicken Sie auf die Registerkarte „Sichtbare Benutzer und Gruppen“.
-1. Klicken Sie auf „Domäne(n) hinzufügen“ und fügen Sie den Anforderungen entsprechend vorhandene Domänen hinzu.
+1. Klicken Sie auf „Domain(s) hinzufügen“ und fügen Sie den Anforderungen entsprechend vorhandene Domains hinzu.
 
 ## Für den administrativen Benutzer geltende Einschränkungen {#administrator-user-restrictions}
 

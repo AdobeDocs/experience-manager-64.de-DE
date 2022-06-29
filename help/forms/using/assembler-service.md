@@ -12,7 +12,7 @@ exl-id: 3997b034-fa24-4366-b22f-0abf2b6d1e64
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2139'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ Mithilfe des Assembler-Dienstes können Sie mindestens zwei PDF-Dokumente in ein
 
 Die folgende Abbildung zeigt, wie drei Quelldokumente zu einem einzelnen Zieldokument zusammengeführt werden.
 
-![Assemblieren eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten](assets/as_document_assembly.png)
+![Assemblieren eines einzelnen PDF-Dokuments aus mehreren PDF-Dokumenten](assets/as_document_assembly.png)
 **Abbildung:** *Assemblieren eines einfachen PDF-Dokuments aus mehreren PDF-Dokumenten*
 
 Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenführen des Dokuments verwendet wird. Er gibt den Namen der Quelldokumente, mit deren Hilfe das Zieldokument generiert werden soll, sowie den Namen des Zieldokuments an.
@@ -43,8 +43,8 @@ Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenfü
 </PDF>
 ```
 
-Die Dokumentzusammenführung erzeugt ein Zieldokument, das den folgenden Inhalt enthält und\
-Merkmale:
+Die Dokumentzusammenführung erstellt ein Zieldokument mit folgendem Inhalt und folgenden\
+Eigenschaften:
 
 * Allen Quelldokumenten (vollständig oder teilweise).
 * Lesezeichen aller Quelldokumente (vollständig oder teilweise), die für das zusammengeführte Zieldokument normalisiert wurden.
@@ -86,12 +86,12 @@ Beim Zusammenführen eines Dokuments können Sie die Bates-Nummerierung verwende
 
 Die folgende Illustration zeigt ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet.
 
-![Ein PDF-Dokument, das eine eindeutige Kennung enthält, die sich in der Kopfzeile des Dokuments befindet](do-not-localize/as_batesnumber.png)
+![Ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet](do-not-localize/as_batesnumber.png)
 **Abbildung:** *Ein PDF-Dokument, das eine eindeutige Kennung enthält, die sich in der Kopfzeile des Dokuments befindet*
 
 ### Reduzieren und Zusammenführen von Dokumenten {#flatten-and-assemble-documents}
 
-Mit dem Assembler-Dienst können Sie interaktive PDF-Dokumente (z. B. Formulare) in nicht interaktive PDF-Dokumente umwandeln. Interaktive PDF-Dokumente ermöglichen dem Benutzer, Daten in die PDF-Dokumentfelder einzugeben bzw. darin zu ändern. Die Umwandlung eines interaktiven PDF-Dokuments in ein nicht interaktives PDF-Dokument bezeichnet man als Reduzieren. Beim Reduzieren eines PDF-Dokuments behalten Formularfelder ihr grafisches Aussehen, sind aber nicht mehr interaktiv. Dies kann ein Grund dafür sein, PDF-Dokumente zu reduzieren. Darüber hinaus funktionieren den Feldern zugeordnete Skripte nicht mehr.
+Mit dem Assembler-Dienst können Sie interaktive PDF-Dokumente (z. B. Formulare) in nicht interaktive PDF-Dokumente umwandeln. Interaktive PDF-Dokumente ermöglichen dem Benutzer, Daten in die PDF-Dokumentfelder einzugeben bzw. darin zu ändern. Der Prozess der Umwandlung eines interaktiven PDF-Dokuments in ein nicht interaktives PDF-Dokument wird als Reduzieren bezeichnet. Beim Reduzieren eines PDF-Dokuments behalten Formularfelder ihr grafisches Aussehen, sind aber nicht mehr interaktiv. Dies kann ein Grund dafür sein, PDF-Dokumente zu reduzieren. Darüber hinaus funktionieren den Feldern zugeordnete Skripte nicht mehr.
 
 Wenn Sie ein PDF-Dokument erstellen, das aus interaktiven PDF-Dokumenten zusammengeführt wurde, reduziert der Assembler-Dienst diese Formulare, bevor er sie in dem Zieldokument zusammenführt.
 
@@ -109,7 +109,7 @@ Im Folgenden finden Sie einige Möglichkeiten, wie Sie XDP-Dokumente zusammenfü
 
 Die folgende Abbildung zeigt, wie drei XDP-Quelldokumente zu einem einzelnen XDP-Zieldokument zusammengeführt werden. Das XDP-Zieldokument enthält drei XDP-Quelldokumente und die dazugehörigen Daten. Das Zieldokument ruft grundlegende Basisattribute von dem Basisdokument ab, bei dem es sich um das erste XDP-Quelldokument handelt.
 
-![Assemblieren eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten](assets/as_assembler_xdpassembly.png)
+![Assemblieren eines einzelnen XDP-Dokuments aus mehreren XDP-Dokumenten](assets/as_assembler_xdpassembly.png)
 **Abbildung:** *Assemblieren eines einfachen XDP-Dokuments aus mehreren XDP-Dokumenten*
 
 Nachfolgend finden Sie ein DDX-Dokument, das das oben gezeigte Ergebnis erzeugt.
@@ -159,8 +159,8 @@ Sie können den Wert des resolveAssets-Attributs entweder im XDP-Quell-Tag oder 
 
 #### Alle Quellverweise in einem XDP-Dokument auflösen {#resolve-all-source-references-in-an-xdp-document}
 
-Um alle Verweise in den Quell-XDP-Dokumenten aufzulösen, geben Sie das Attribut resolveAssets für die\
-Zieldokument für alle, wie im Beispiel unten gezeigt:
+Um alle Verweise in den Quell-XDP-Dokumenten aufzulösen, geben Sie das Attribut resolveAssets für das\
+aus allen resultierend Dokument wie im nachstehenden Beispiel gezeigt an:
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -172,7 +172,7 @@ Zieldokument für alle, wie im Beispiel unten gezeigt:
 </DDX
 ```
 
-Sie können auch das -Attribut für alle Quell-XDP-Dokumente unabhängig voneinander angeben, um dasselbe zu erhalten\
+Sie können das Attribut auch für alle Quell-XDP-Dokumente separat festlegen, um das gleiche Ergebnis zu erzielen\
 Ergebnis.
 
 ```xml
@@ -263,7 +263,7 @@ Mit dem Assembler-Dienst können Sie PDF-Dokumente aufteilen. Der Dienst kann Se
 
 In den folgenden Abbildungen werden die Seiten 1 bis 3 aus dem Quelldokument extrahiert und in einem neuen Zieldokument abgelegt.
 
-![Extrahieren bestimmter Seiten aus einem Quelldokument](assets/as_intro_page_extraction.png)
+![Extrahieren von bestimmten Seiten aus einem Quelldokument](assets/as_intro_page_extraction.png)
 **Abbildung:** *Extrahieren bestimmter Seiten aus einem Quelldokument*
 
 Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokuments verwendet wird.
@@ -276,7 +276,7 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokumen
 
 ### Aufteilen eines Quelldokuments basierend auf Lesezeichen {#divide-a-source-document-based-on-bookmarks}
 
-In der folgenden Abbildung wird DocA in mehrere Zieldokumente aufgeteilt. Dabei gibt das erste Lesezeichen auf Ebene 1 auf einer Seite den Anfang eines neuen Zieldokuments an.
+In der folgenden Abbildung ist DocA in mehrere Zieldokumente unterteilt. Das Lesezeichen der ersten Ebene 1 auf einer Seite identifiziert den Beginn eines neuen Zieldokuments.
 
 ![Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere Dokumente](assets/as_intro_pdfsfrombookmarks.png)
 **Abbildung:** *Aufteilen eines Quelldokuments basierend auf Lesezeichen in mehrere Dokumente*
@@ -291,7 +291,7 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen eines Quell
 
 ## Bestimmen der PDF/A-Kompatibilität von Dokumenten {#determine-whether-documents-are-pdf-a-compliant}
 
-Mit dem Assembler-Dienst können Sie ermitteln, ob ein PDF-Dokument PDF/A-kompatibel ist. PDF/A ist ein Archivierungsformat für die langfristige Speicherung von Dokumentinhalten.  Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
+Mit dem Assembler-Dienst können Sie ermitteln, ob ein PDF-Dokument PDF/A-kompatibel ist. PDF/A ist ein Archivierungsformat für die langfristige Speicherung von Dokumentinhalten. Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
 
 ## Abrufen von Informationen zu PDF-Dokumenten {#obtain-information-about-a-pdf-document}
 
@@ -305,7 +305,7 @@ Mit dem Assembler-Dienst können Sie die folgenden Informationen über PDF-Dokum
 
 * Lesezeichen, einschließlich der Seitenanzahl, des Titels, Ziels und Erscheinung. Sie können diese Daten aus einem PDF-Dokument exportieren und in ein PDF-Dokument importieren.
 
-* Dateianlagen, einschließlich Dateiinformationen. Für Anlagen auf Seitenebene ist auch der Speicherort der Dateianlageanmerkung enthalten. Sie können diese Daten aus einem PDF-Dokument exportieren und in ein PDF-Dokument importieren.
+* Dateianlagen, einschließlich Dateiinformationen. Bei Anlagen auf Seitenebene ist auch der Speicherort der Dateianlageanmerkung enthalten. Sie können diese Daten aus einem PDF-Dokument exportieren und in ein PDF-Dokument importieren.
 
 * Paketdateien, einschließlich Dateiinformationen, Ordner-, Paket-, Schema- und Felddaten. Sie können diese Daten aus einem PDF-Dokument exportieren und in ein PDF-Dokument importieren.
 

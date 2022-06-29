@@ -13,7 +13,7 @@ exl-id: 283ef073-b71d-4b48-882f-15f05581c1de
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '804'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 74%
 
 Sie können die URL-, URI- und Dateispeicherorte von Attributen wie dem Webstamm sowie den Speicherort der abzurufenden Formulare und die bei PDF-Transformationen verwendete Seed-PDF-Datei und den Cache-Speicherort angeben.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
+1. Klicken Sie in der Administration-Console auf Services > Forms.
 1. Geben Sie unter „Speicherorte“ die entsprechenden Optionen an. Die Optionen sind im Folgenden beschrieben.
 1. Klicken Sie auf Speichern.
 
 ## Speicherorteinstellungen {#locations-settings}
 
-**Basis-URL:** Die Basis-URL, unter der sich Formularressourcen wie Bilder und Skripte befinden. Dieser Wert ist für HTML-Transformationen erforderlich, die HREF-Verweise auf externe Abhängigkeiten enthalten, wie z. B. Bilder oder Skripte. Ein solches Skript ist „xfasubset.js“, das erforderlich ist, damit HTML-Formulare intelligente XFA-Funktionen ausführen können. Dieser Wert muss die HTTP-Entsprechung des Inhaltsstamm-URI sein.
+**Basis-URL:** Die Basis-URL, an der sich Formularressourcen, z. B. Bilder und Skripte, befinden. Dieser Wert ist für HTML-Transformationen erforderlich, die HREF-Verweise auf externe Abhängigkeiten enthalten, wie z. B. Bilder oder Skripte. Ein solches Skript ist „xfasubset.js“, das erforderlich ist, damit HTML-Formulare intelligente XFA-Funktionen ausführen können. Dieser Wert muss die HTTP-Entsprechung des Inhaltsstamm-URI sein.
 
 >[!NOTE]
 >
@@ -49,19 +49,19 @@ Wenn ein Abhängigkeitspfad absolut ist, wird der Basis-URL-Wert ignoriert. Ande
 
 `https://<host name>:<port>/FormServer`
 
-Wo `host name`und `port` sind der Servername und die Anschlussnummer des Servers, auf dem die Forms-Webanwendung gehostet wird.
+ `host name`und `port` sind der Server-Name bzw. die Port-Nummer des Servers, der als Host der Forms-Webanwendung dient.
 
  Der Standardwert ist eine leere Zeichenfolge.
 
-**Web Root URI:** Der Webstamm der Anwendung. Dieser Wert wird mit dem sTargetURL-Parameter (wenn sTargetURL relativ angegeben ist) kombiniert, der über das AEM Forms SDK angegeben wird, um eine absolute URL für den Zugriff auf anwendungsspezifische Webinhalte zu erzeugen.
+**Webstamm-URI:** Der Webstamm des Programms. Dieser Wert wird mit dem sTargetURL-Parameter (wenn sTargetURL relativ angegeben ist) kombiniert, der über das AEM Forms SDK angegeben wird, um eine absolute URL für den Zugriff auf anwendungsspezifische Webinhalte zu erzeugen.
 
  Der Standardwert ist eine leere Zeichenfolge.
 
-**Inhaltsstamm-URI:** Der URI oder der absolute Speicherort, aus dem Formulare abgerufen werden. Dieser Wert wird mit dem sFormQuery-Parameter kombiniert, der über die API angegeben wird, um den absoluten Pfad zu dem Formular zu erzeugen, das abgerufen wird. Dieser Wert kann auf einen Ordner oder einen Webspeicherort verweisen, auf den über HTTP zugegriffen werden kann. 
+**Inhaltsstamm-URI:** Der URI oder der absolute Speicherort, von dem Formulare abgerufen werden. Dieser Wert wird mit dem sFormQuery-Parameter kombiniert, der über die API angegeben wird, um den absoluten Pfad zu dem Formular zu erzeugen, das abgerufen wird. Dieser Wert kann auf einen Ordner oder einen Webspeicherort verweisen, auf den über HTTP zugegriffen werden kann. 
 
  Der Standardwert ist eine leere Zeichenfolge.
 
-**XCI Configuration URI:** Der relative oder absolute Speicherort, an dem sich die für die Wiedergabe verwendete XCI-Datei befindet. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet. 
+**XCI-Konfigurationsdatei-URI:** Der relative oder absolute Speicherort, an dem sich die für die Wiedergabe verwendete XCI-Konfigurationsdatei befindet. Bei einem relativen Wert wird vorausgesetzt, dass sich die XCI-Datei in der bereitstellbaren AEM Forms-EAR-Datei befindet. 
 
 Der Standardwert ist `com/adobe/formServer/PA/pa.xci`.
 
@@ -75,19 +75,19 @@ Im Folgenden finden Sie ein Beispiel für einen Eintrag in der Schriftartzuordnu
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Seed-PDF-Datei:** Die anfängliche PDF-Datei, die in einer PDFForm-Transformation verwendet wird, um die Bereitstellung zu optimieren. Die Seed-PDF-Datei ist eine angepasste PDF-Datei (die nur XFA-Stream-, Bild- und Schriftartressourcen enthält), die dem Formularentwurf und den Formulardaten angehängt wird. Das Formular wird in Acrobat 7 oder höher wiedergegeben und findet bei der PDFForm-Transformation Anwendung. 
+**Seed-PDF-Datei:** Die anfängliche PDF-Datei, die bei einer PDFForm-Transformation zur Optimierung der Übermittlung verwendet wird. Die Seed-PDF-Datei ist eine angepasste PDF-Datei (die nur XFA-Stream-, Bild- und Schriftartressourcen enthält), die dem Formularentwurf und den Formulardaten angehängt wird. Das Formular wird in Acrobat 7 oder höher wiedergegeben und findet bei der PDFForm-Transformation Anwendung. 
 
-Der Standardwert ist eine leere Zeichenfolge.
+ Der Standardwert ist eine leere Zeichenfolge.
 
-**Cache-Speicherort:** Gibt den Speicherort des Forms-Datenträgercache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
+**Cache-Speicherort:** Gibt den Speicherort des Forms-Datenträger-Cache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
 
 **Standardspeicherort:** Dies ist die Standardauswahl. Wenn diese Option ausgewählt ist, wird der Zwischenspeicher an einem Speicherort erstellt, der von dem von Ihnen verwendeten Anwendungsserver abhängig ist:
 
 * **JBoss:** [JBoss-Startseite]\server\[install type]\svcdata\FormServer\Cache
-* **WebLogic:** [WebLogic-Startseite]\user_projects\domains\[aem-forms Domain Name]\adobe\[forms server name]\FormServer\Cache
-* **WebSphere:** [IBM - Startseite]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
+* **WebLogic:** [WebLogic-Startseite]\user_projects\domains\[AEM Forms-Domain-Name]\adobe\[Name des Formular-Servers]\FormServer\Cache
+* **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**LC Temp Directory:** Der Cache wird in einem Unterverzeichnis des temporären Ordners für AEM Formulare erstellt, das in der Administration Console unter &quot;Einstellungen&quot;> &quot;Core-Systemeinstellungen&quot;> &quot;Konfigurationen&quot;> &quot;Speicherort des temporären Ordners&quot;angegeben ist. Der Unterordner heißt adobeform_[Servername].
+**Temporärer LC-Ordner:** Der Zwischenspeicher wird in einem Unterordner des temporären Ordners von AEM Forms erstellt, der in der Administration-Console unter „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“ > „Speicherort des temporären Verzeichnisses“ angegeben ist. Der Unterordner heißt adobeform_[Servername].
 
 >[!NOTE]
 >

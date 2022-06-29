@@ -12,7 +12,7 @@ exl-id: eb816a35-0773-4eda-95b2-1d351c71be8b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '408'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -38,17 +38,17 @@ Gehen Sie wie folgt vor, um der Seite eine Komponente des Typs „Link“ hinzuz
    * **Link Tooltip**: QuickInfo für den Link.
    * **Layout Template**: Vorlage für das Layout der Komponente „Link“.
 
-1. Öffnen Sie die Registerkarte **Asset Info** und geben Sie den Typ des Assets an. Ein Asset kann **Formular**. Je nach ausgewähltem Assettyp können die unten aufgeführten Optionen angezeigt werden:
+1. Öffnen Sie die Registerkarte **Asset Info** und geben Sie den Typ des Assets an. Ein Asset kann ein **Formular** sein. Je nach ausgewähltem Assettyp können die unten aufgeführten Optionen angezeigt werden:
 
    * **Asset Path**: Pfad für das Repository, in dem das Asset gespeichert ist.
    * **Render Type**: Das Wiedergabeformat – PDF, HTML oder Auto Der Wiedergabetyp „Auto“ erkennt die Benutzerumgebung und gibt das Formular entsprechend im HTML- oder PDF-Format wieder. Wenn das Formular beispielsweise auf einem Mobilgerät aufgerufen wird, gibt der Wiedergabetyp „Auto“ das Formular im HTML-Format wieder.
-   * **Sende-URL:**  URL zum Servlet, an das die Formulardaten gesendet werden.
+   * **Sende-URL**: URL zu dem Servlet, an das die Formulardaten gesendet werden.
    * **HTML Profile**: Profil für die Wiedergabe des Formulars im HTML-Format.
    * **PDF Profile**: Profil für die Wiedergabe des Formulars als PDF-Dokument.
 
-1. Öffnen Sie die Registerkarte **Erweitert**. Sie können zusätzliche Parameter in Form von Schlüssel-Wert-Paaren angeben. Wenn der Link angeklickt wird, werden diese zusätzlichen Parameter zusammen mit dem Formular übergeben.
+1. Öffnen Sie die Registerkarte **Erweitert**. Sie können zusätzliche Parameter in Form von Schlüssel-Wert-Paaren angeben. Wenn auf den Link geklickt wird, werden diese zusätzlichen Parameter zusammen mit dem Formular übergeben.
 
-   Tippen **Fertig** , um die Konfiguration zu speichern.
+   Tippen Sie auf **Fertig**, um die Konfiguration zu speichern.
 
 ## Best Practices für die Verwendung der Komponente „Link“  {#best-practices-for-using-link-component-br}
 

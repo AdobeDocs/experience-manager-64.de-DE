@@ -12,13 +12,13 @@ exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
 # Konfigurieren der Sendeaktion {#configuring-the-submit-action}
 
-## Einführung in Übermittlungsaktionen {#introduction-to-submit-actions}
+## Einführung in die Übermittlungsaktionen {#introduction-to-submit-actions}
 
 Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können die Übermittlungsaktion in einem adaptiven Formular konfigurieren. Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz. Sie können die standardmäßige Übermittlungsaktion kopieren und erweitern und so eine eigene Übermittlungsaktion erstellen. Basierend auf Ihre Anforderungen können Sie eine eigene Übermittlungsaktion schreiben und registrieren, um Daten im gesendeten Formular zu verarbeiten.
 
@@ -26,7 +26,7 @@ Wenn ein Formular vorausgefüllt oder übermittelt wird, werden die gesendeten D
 
 Sie können eine Sendeaktion in der Seitenleiste im Bereich **[!UICONTROL Senden]** des „Container für adaptive Formulare“ konfigurieren.
 
-![Konfigurieren der Sendeaktion](assets/thank-you-setting.png)
+![Konfigurieren der Übermittlungsaktion](assets/thank-you-setting.png)
 **Abbildung:** *Konfigurieren der Sendeaktion*
 
 Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmäßig zur Verfügung:
@@ -45,11 +45,11 @@ Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmä�
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass [AEM_Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM folder exists Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn.
+>Stellen Sie sicher, dass der Ordner „[AEM-Installationsverzeichnis]\crx-quickstart\temp\datamanager\ASM“ vorhanden ist. vorhanden. Das Verzeichnis wird benötigt, um Anhänge vorübergehend zu speichern. Wenn das Verzeichnis nicht vorhanden ist, erstellen Sie es.
 
 >[!CAUTION]
 >
->Wenn Sie [prefill](/help/forms/using/prepopulate-adaptive-form-fields.md) eine Formularvorlage, ein Formulardatenmodell oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten, die sich auf ein Schema (XML-Schema, JSON-Schema, Formularvorlage oder Formulardatenmodell) beziehen, das keine Daten enthält &lt;afdata>, &lt;afbounddata>und &lt;/afunbounddata> Tags, dann sind die Daten von nicht gebundenen Feldern (ungebundene Felder sind adaptive Formularfelder ohne [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md) -Eigenschaft) des adaptiven Formulars verloren.
+>Wenn Sie eine Formularvorlage, ein Formulardatenmodell oder ein schemabasiertes adaptives Formular mit XML- oder JSON-Daten [vorbefüllen](/help/forms/using/prepopulate-adaptive-form-fields.md), die einem Schema (XML-Schema, JSON-Schema, Formularvorlage oder Formulardatenmodell) entsprechen, d.h. die Daten enthalten keine &lt;afData>-, &lt;afBoundData>- und &lt;/afUnboundData>-Tags, dann gehen die Daten von nicht gebundenen Feldern (nicht gebundene Felder sind adaptive Formularfelder ohne die Eigenschaft [bindref](/help/forms/using/prepopulate-adaptive-form-fields.md)) des adaptiven Formulars verloren.
 
 Sie können eine benutzerdefinierte Übermittlungsaktion für adaptive Formulare entsprechend des Anwendungsfalls schreiben. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](/help/forms/using/custom-submit-action-form.md).
 
@@ -76,7 +76,7 @@ Verwenden Sie die Aktion **[!UICONTROL An REST-Endpunkt übermitteln]**, um die 
 
 Stellen Sie den Pfad der Ressource bereit, um Daten an einen internen Server zu veröffentlichen. Die Daten werden an den Pfad der Ressource veröffentlicht. Beispiel: /content/restEndPoint. Für diese POST-Anforderungen werden die Authentifizierungsinformationen der Versandanfrage verwendet.
 
-Stellen Sie die URL bereit, um Daten an einen externen Server zu veröffentlichen. Das Format der URL ist https:// host:port/path_to_rest_end_point. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
+Stellen Sie die URL bereit, um Daten an einen externen Server zu veröffentlichen. Das Format der URL ist https://host:port/path_to_rest_end_point. Stellen Sie sicher, dass Sie den Pfad zum Handhaben der POST-Anforderung anonym konfigurieren.
 
 ![Zuordnung zur Weitergabe von Feldwerten als Anforderungsparameter für die Dankeseite](assets/post-enabled-actionconfig.png)
 
@@ -95,7 +95,7 @@ In diesem Beispiel speichert `data` die XML-Daten, und `att` speichert Anlagenda
 
 ## E-Mail senden {#send-email}
 
-Die **[!UICONTROL E-Mail senden]** bei erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger gesendet wird. Die generierte E-Mail kann Formulardaten in einem vordefinierten Format enthalten.
+Bei der Übermittlungsaktion **[!UICONTROL E-Mail senden]** wird nach erfolgreicher Übermittlung des Formulars eine E-Mail an einen oder mehrere Empfänger gesendet. Die generierte E-Mail kann Formulardaten in einem vordefinierten Format enthalten.
 
 >[!NOTE]
 Alle Formularfelder müssen über verschiedene Elementnamen verfügen, auch wenn sie in verschiedene Fenster platziert werden, um in eine E-Mail Formulardaten einzubinden.
@@ -114,7 +114,7 @@ Weitere Informationen zum Konfigurieren der Sendeaktion „An Formular-Workflow 
 
 ## Senden mit Formulardatenmodell {#submit-using-form-data-model}
 
-Die **[!UICONTROL Senden mit Formulardatenmodell]** Aktion &quot;submit&quot;schreibt gesendete adaptive Formulardaten für das angegebene Datenmodellobjekt in einem Formulardatenmodell in seine Datenquelle. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
+Die Übermittlungsaktion **[!UICONTROL Senden mit Formulardatenmodell]** schreibt gesendete Daten eines adaptiven Formulars für das angegebene Datenmodellobjekt in einem Formulardatenmodell in seine Datenquelle. Beim Konfigurieren der Übermittlungsaktion können Sie ein Datenmodellobjekt auswählen, dessen übermittelte Daten in die Datenquelle zurückgeschrieben werden sollen.
 
 Darüber hinaus können Sie einen Formularanhang mit einem Formulardatenmodell und einem Datensatzdokument (Document of Record) an die Datenquelle senden.
 
@@ -168,4 +168,4 @@ Autor kann benutzerdefinierte JavaScript-Bibliothek pro adaptivem Formular konfi
 
 Konfigurieren Sie im Rahmen der AEM-Richtlinie für Sicherheit und Beschränkungen benutzerdefinierte Seiten für die Fehler 404.jsp und 500.jsp. Diese Handler werden aufgerufen, wenn beim Übermitteln des Formulars 404 oder 500 Fehler auftreten. Die Handler werden auch aufgerufen, wenn diese Fehler-Codes auf einem Veröffentlichungsknoten ausgelöst werden.
 
-Weitere Informationen finden Sie unter [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md).
+Weitere Informationen finden Sie unter [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md).

@@ -13,7 +13,7 @@ exl-id: bd7ec9d6-b1d2-4f01-8cef-05e5e1eceda1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 71%
+ht-degree: 92%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 71%
 
 Sie können die Schriftart ändern, die in AEM Forms Workspace angezeigt wird. Schriftarten, die in einem bestimmten Bereich der Benutzeroberfläche verwendet werden, werden im entsprechenden Abschnitt des Stylesheets definiert. Sie können die Schriftarten auf der Benutzeroberfläche selektiv ändern.
 
-Befolgen Sie die [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) und je nach Ihren Anforderungen die Schritte zum Anpassen von CSS, HTML oder beidem ausführen.
+Führen Sie die Anweisungen unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) aus. Befolgen Sie bei Bedarf außerdem die Schritte zum Anpassen von CSS, HTML oder beidem.
 
 1. Ändern Sie die Schriftfamilie in einem vorhandenen Stil oder fügen Sie sie hinzu.
 1. Ändern Sie die Schriftfamilie inline für das HTML-Element oder fügen Sie sie hinzu.
@@ -29,7 +29,7 @@ Befolgen Sie die [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/he
 
 Um beispielsweise die Schriftart für den Anker-Text in der Navigationsleiste oben in Courier New zu ändern, führen Sie die folgenden Schritte aus:
 
-1. Bei CRXDE Lite anmelden über `https://[server]:[port]/lc/crx/de/index.jsp`.
+1. Melden Sie sich bei CRXDE Lite an, indem Sie auf `https://[server]:[port]/lc/crx/de/index.jsp` zugreifen.
 1. Führen Sie einen der folgenden Schritte aus:
 
    1. Um die Schriftfamilie in einem vorhandenen Stil zu ändern, fügen Sie Folgendes in der Datei „newStyle.css“ bei „/apps/ws/css“ hinzu.
@@ -40,7 +40,7 @@ Um beispielsweise die Schriftart für den Anker-Text in der Navigationsleiste ob
       }
       ```
 
-   1. Um die Schriftfamilie für das HTML-Element inline hinzuzufügen, kopieren Sie die `/libs/ws/js/runtime/templates/appnavigation.html` Datei in `/apps/ws/js/runtime/templates/appnavigation.html`.
+   1. Um die Schriftfamilie für das HTML-Element inline hinzuzufügen, kopieren Sie die Datei `/libs/ws/js/runtime/templates/appnavigation.html` nach`/apps/ws/js/runtime/templates/appnavigation.html`.
 
       aktualisieren Sie die Datei „/apps/ws/js/runtime/templates/appnavigation.html“ wie folgt:
 
@@ -51,7 +51,7 @@ Um beispielsweise die Schriftart für den Anker-Text in der Navigationsleiste ob
       <li class="preference"><a href="#/preferences" title="<%= $.t('index.header.topnav.preferences.detail')%>" style="font-family:Courier New;" ><%= $.t('index.header.topnav.preferences.name')%></a></li>
       ```
 
-      Öffnen Sie die Datei /apps/ws/js/registry.js zur Bearbeitung und ersetzen Sie sie. `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` mit `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
+      Öffnen Sie die Datei „/apps/ws/js/registry.js“ zur Bearbeitung und ersetzen Sie `text!/lc/libs/ws/js/runtime/templates/appnavigation.html` durch `text!/lc/apps/ws/js/runtime/templates/appnavigation.html`.
 
    1. Um einen Stil hinzuzufügen, der die Schriftfamilie definiert, fügen Sie Folgendes in der Datei „newStyle.css“ bei „/apps/ws/css“ hinzu.
 

@@ -14,7 +14,7 @@ exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -24,28 +24,28 @@ Verwenden Sie einen der folgenden Aktualisierungspfade wie für Ihre Umgebung be
 
 ## AEM 6.2 Forms oder AEM 6.3 Forms > AEM 6.4 Forms {#upgrade-aem-forms-62-63-to-64}
 
-Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktualisieren. Gehen Sie folgendermaßen vor:
+Sie können direkt von AEM 6.2 Forms oder AEM 6.3 Forms auf AEM 6.4 Forms aktualisieren. Gehen Sie folgendermaßen vor:
 
 1. Aktualisieren Sie die bestehende AEM-Instanz auf AEM 6.4. Dies umfasst die folgenden Schritte:
 
-   1. Installieren Sie das aktuelle Service Pack und Patches für AEM 6.2 Forms bzw. AEM 6.3 Forms. Weitere Details finden Sie unter:
+   1. Installieren Sie das aktuelle Service Pack und die Patches für AEM 6.2 Forms bzw. AEM 6.3 Forms. Weitere Details finden Sie unter:
 
       * [AEM 6.2 – Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html)
       * [AEM 6.3 – Versionshinweise](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html)
-      * [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de)
-   1. Bereiten Sie die Quellinstanz für die Aktualisierung vor. Ausführliche Anweisungen finden Sie im Artikel [Aktualisieren auf AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance).
+      * [AEM Sustenance Hub](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html)
+   1. Bereiten Sie die Quellinstanz für die Aktualisierung vor. Ausführliche Anweisungen finden Sie unter [Aktualisieren auf AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance).
    1. Laden Sie [AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software) herunter.
    1. **(Nur Unix/Linux-basierte Installationen)** Wenn Sie UNIX oder Linux als Betriebssystem verwenden, öffnen Sie das Terminalfenster, um zu dem Ordner mit „crx-quickstart“ zu navigieren, und führen Sie den folgenden Befehl aus:
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. Aktualisieren Sie Ihre AEM-Instanz auf AEM 6.3. Eine schrittweise Anleitung finden Sie unter [Upgrade auf AEM 6.4](/help/sites-deploying/upgrade.md).
+   1. Aktualisieren Sie Ihre AEM-Instanz auf AEM 6.3. Anweisungen in Einzelschritten finden Sie unter [Aktualisieren auf AEM 6.4](/help/sites-deploying/upgrade.md).
 
-      Bevor Sie mit den nächsten Schritten fortfahren, warten Sie, bis die Nachrichten ServiceEvent REGISTERED und ServiceEvent UNREGISTERED ServiceEvent nicht mehr in der Datei &lt;crx-repository>/error.log angezeigt werden.
+      Bevor Sie mit den nächsten Schritten fortfahren, warten Sie, bis die Nachrichten ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der Datei &lt;crx-repository>/error.log angezeigt werden.
 
       >[!NOTE]
       >
-      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. Die Bundles sind unter `https://[server]:[port]/system/console/`.
+      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. Die Bundles sind unter `https://[server]:[port]/system/console/` aufgeführt. 
 
 
 1. Installieren des AEM Forms-Add-on-Pakets. Dies umfasst die folgenden Schritte:
@@ -54,12 +54,12 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
    1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
    1. Im Abschnitt **[!UICONTROL Filter]**:
       1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-      1. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die **[!UICONTROL Suchdownloads]** Option zum Filtern der Ergebnisse.
-   1. Tippen Sie auf den Paketnamen für Ihr Betriebssystem und wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
+      1. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
+   1. Tippen Sie auf den für Ihr Betriebssystem zutreffenden Paketnamen, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
    1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
    1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
-      Sie können das Paket auch über den direkten Link herunterladen, der unter [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) Artikel.
+      Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) aufgeführt ist.
 
       >[!NOTE]
       >
@@ -76,7 +76,7 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
 
    * **Migrationsdienstprogramm ausführen**
 
-      Das Migrationsdienstprogramm macht die adaptiven Formulare und Correspondence Management-Assets aus früheren Versionen kompatibel mit AEM 6.4 Forms. Sie können das Dienstprogramm von AEM Software Distribution herunterladen. Informationen in Einzelschritten zur Konfiguration und Verwendung des Migrationsdienstprogramms finden Sie in der Dokumentation zum [Migrationsdienstprogramm](/help/forms/using/migration-utility.md).
+      Das Migrationsdienstprogramm macht die adaptiven Formulare und Korrespondenzmanagement-Assets aus früheren Versionen kompatibel mit AEM 6.4 Forms. Sie können das Dienstprogramm von der AEM Software Distribution herunterladen. Informationen in Einzelschritten zur Konfiguration und Verwendung des Migrationsdienstprogramms finden Sie in der Dokumentation zum [Migrationsdienstprogramm](/help/forms/using/migration-utility.md).
 
       Wenn Sie [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung](integrate-draft-submission-database.md) mit der Datenbank verwenden und von einer früheren Version aktualisieren, führen Sie nach der Aktualisierung die folgenden SQL-Abfragen aus:
 
@@ -92,9 +92,9 @@ Sie können direkt von AEM 6.2 Forms und AEM 6.3 Forms auf AEM 6.4 Forms aktuali
       WHERE `key` = 'dataType'
       ```
 
-   * **(Nur bei Aktualisierung von AEM 6.2 Forms oder früheren Versionen) Konfigurieren Sie Adobe Sign neu**
+   * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Adobe Sign neu**
 
-      Wenn Adobe Sign in der vorherigen Version von AEM Forms konfiguriert war, müssen Sie Adobe Sign über die AEM-Cloud-Services erneut konfigurieren. Weitere Informationen finden Sie unter [Adobe-Zeichen mit AEM Forms integrieren](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+      Wenn Adobe Sign in der vorherigen Version von AEM Forms konfiguriert war, müssen Sie Adobe Sign über die AEM-Cloud-Services erneut konfigurieren. Weitere Informationen finden Sie unter [Adobe Sign mit AEM Forms integrieren](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
    * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Analysen und Berichte neu**
 

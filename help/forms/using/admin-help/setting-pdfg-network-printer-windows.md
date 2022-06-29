@@ -14,7 +14,7 @@ exl-id: 0b7642c3-d616-44e8-a5d9-3cdd362fedb5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Benutzer, die entweder über die Rolle „PDFG-Administrator“ oder über die R
 
 1. (PDFG-Administratoren) Klicken Sie in Administration Console auf „Dienste“ > „ PDF Generator “ > „PDFG-Netzwerkdrucker“.
 
-   (PDFG-Benutzer) Wechseln Sie zu `http(s)://[host]:[port]/pdfgui` und klicken Sie auf den Link unter &quot;Installation des PDFG-Netzwerkdruckers&quot;.
+   (PDFG-Benutzer) Gehen Sie zu `http(s)://[host]:[port]/pdfgui` und klicken Sie auf den Link unter PDFG Netzwerkdrucker-Installation.
 
 1. Klicken Sie unter „Installation des PDFG-Netzwerkdruckers“ auf den Link. Wenn Sie zur Eingabe der Benutzerkontoinformationen aufgefordert werden, geben Sie den Benutzernamen und das Kennwort an, das Sie in Schritt 1 bei der Anmeldung verwendet haben. Es wird eine Nachricht angezeigt, dass der Drucker erfolgreich installiert wurde.
 

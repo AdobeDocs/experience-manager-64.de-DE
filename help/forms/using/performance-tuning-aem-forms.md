@@ -13,7 +13,7 @@ exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '866'
-ht-degree: 81%
+ht-degree: 96%
 
 ---
 
@@ -46,9 +46,9 @@ Die standardmäßigen Cacheeinstellungen für AEM Forms erweisen sich für eine 
 >
 >Wenn Sie AEM Dispatcher zum Zwischenspeichern adaptiver Formulare verwenden, werden dabei auch adaptive Formulare im Cache abgelegt, die Formulare mit vorausgefüllten Daten enthalten. Werden solche Formulare aus dem AEM Dispatcher-Cache bereitgestellt, erhalten die Benutzer eventuell vorausgefüllte oder veraltete Daten. Verwenden Sie AEM Dispatcher daher zum Zwischenspeichern von Formularen, die keine vorausgefüllten Daten enthalten. Darüber hinaus werden im Dispatcher-Cache abgelegte Fragmente nicht automatisch ungültig gemacht. Verwenden Sie dies daher nicht zum Zwischenspeichern von Formularfragmenten. Verwenden Sie für solche Formulare und Fragmente vielmehr den [Adaptive Forms-Cache](/help/forms/using/configure-adaptive-forms-cache.md).
 
-## JVM-Parameter   {#jvm-parameters}
+## JVM-Parameter  {#jvm-parameters}
 
-Für eine optimale Leistung wird empfohlen, die folgende JVM zu verwenden `init` Argumente zum Konfigurieren der `Java heap` und `PermGen`.
+Zur optimal Leistung wird die Verwendung der folgenden JVM-`init`-Argumenten empfohlen, um `Java heap` und `PermGen` zu konfigurieren.
 
 ```java
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -59,7 +59,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 >[!NOTE]
 >
->Die empfohlenen Einstellungen gelten für Windows 2008 R2 8 Core und Oracle HotSpot 1.7 (64 Bit) JDK und sollten gemäß Ihrer Systemkonfiguration skaliert werden.
+>Die empfohlenen Einstellungen gelten für Windows 2008 R2 8 Core und Oracle HotSpot 1.7 (64-bit) JDK und sollten gemäß Ihrer Systemkonfiguration angepasst werden.
 
 ## Verwenden eines Webservers {#using-a-web-server}
 
@@ -69,7 +69,7 @@ Führen Sie beispielsweise die folgenden Schritte durch, um die Komprimierung au
 
 >[!NOTE]
 >
->Die folgenden Anweisungen gelten nicht für andere Server als den 32-Bit-Apache-Webserver 2.0. Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
+>Die folgenden Anweisungen gelten für keine anderen Server als Apache Web Server 2.0 32 Bit.  Informationen über spezielle Schritte für andere Server finden Sie in der entsprechenden Produktdokumentation.
 
 Die folgenden Schritte demonstrieren die Änderungen, die erforderlich sind, um die Komprimierung mit Apache Web Server zu aktivieren
 
@@ -81,7 +81,7 @@ Die folgenden Schritte demonstrieren die Änderungen, die erforderlich sind, um 
 
 Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfigurationen zur optimierten Nutzung von HTTP.
 
-1. Entfernen Sie die Auskommentierung der folgenden Modulkonfigurationen in `APACHE_HOME/conf/httpd.conf` -Datei.
+1. Entfernen Sie den Kommentar für folgende Modulkonfigurationen in der Datei `APACHE_HOME/conf/httpd.conf`.
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -91,18 +91,18 @@ Apache können über das HTTP-Protokoll mit CRX kommunizieren. Die Konfiguration
 
    >[!NOTE]
    >
-   >Für Linux ist die Standardeinstellung `APACHE_HOME` is `/etc/httpd/`.
+   >Für Linux lautet der Standard für `APACHE_HOME` `/etc/httpd/`.
 
 1. Konfigurieren Sie das Proxys auf Port 4502 von crx.
 
-   Fügen Sie die folgende Konfiguration hinzu in `APACHE_HOME/conf/httpd.conf` Konfigurationsdatei.
+   Fügen Sie in die `APACHE_HOME/conf/httpd.conf`-Konfigurationsdatei folgende Konfiguration ein.
 
    ```java
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. Aktivieren Sie die Komprimierung. Fügen Sie die folgende Konfiguration hinzu in `APACHE_HOME/conf/httpd.conf` Konfigurationsdatei.
+1. Aktivieren Sie die Komprimierung. Fügen Sie in die `APACHE_HOME/conf/httpd.conf`-Konfigurationsdatei folgende Konfiguration ein.
 
    **Für HTML5-Formulare**
 
@@ -148,13 +148,13 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 
 * AEM-Installationsverzeichnis. Wenn es nicht möglich ist, das gesamte Verzeichnis auszuschließen, schließen Sie die folgenden Ordner aus:
 
-   * [AEM Installationsverzeichnis]\crx-repository\temp
-   * [AEM Installationsverzeichnis]\crx-repository\repository
-   * [AEM Installationsverzeichnis]\crx-repository\launchpad
+   * [AEM-Installationsverzeichnis]\crx-repository\temp
+   * [AEM-Installationsverzeichnis]\crx-repository\repository
+   * [AEM-Installationsverzeichnis]\crx-repository\launchpad
 
 * Temporärer Ordner des Anwendungsservers. Der Standardspeicherort lautet:
 
-   * (Jboss) [AEM Installationsverzeichnis]\jboss\standalone\tmp
+   * (Jboss) [AEM-Installationsverzeichnis]\jboss\standalone\tmp
    * (Weblogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (Websphere) \Programme\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
@@ -167,10 +167,11 @@ Um die Leistung zu verbessern, können Sie die Antivirensoftware anweisen, die f
 * **(Nur AEM Forms unter JEE),** AEM Forms-Serverprotokolle und temporäres Verzeichnis. Der Standardspeicherort lautet:
 
    * Serverprotokolle - `[AEM Forms installation directory]\Adobe\AEM forms\[app-server]\server\all\logs`
-   * Temporärer Ordner - [Installationsordner von AEM Forms]\temp
+   * Temporäres Verzeichnis: [AEM Forms-Installationsverzeichnis]\temp
 
 >[!NOTE]
 >
 >* Wenn Sie einen anderen Speicherort für den globalen Dokumentenspeicher und den temporären Ordner verwenden, öffnen Sie die AdminUI unter `https://[server]:[port]/adminui)`, navigieren Sie zu **Startseite > Einstellungen > Core-Systemeinstellungen > Core-Konfigurationen** zur Bestätigung des verwendeten Standorts.
-* Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Verzeichnisse langsam funktioniert, schließen Sie auch die ausführbare Java-Datei (java.exe) aus.
+* Wenn der AEM Forms-Server auch nach dem Ausschließen der vorgeschlagenen Ordner langsam arbeitet, schließen Sie die ausführbare Java-Datei (java.exe) ebenfalls aus. 
+>
 

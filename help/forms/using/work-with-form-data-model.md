@@ -12,7 +12,7 @@ exl-id: 2dcbc459-5fa3-4712-a72e-159bdbad0a61
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3130'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -38,7 +38,7 @@ Erfahren Sie weitere Details zu verschiedenen Aufgaben und Konfigurationen, die 
 
 ## Hinzufügen von Datenmodellobjekten und Services {#add-data-model-objects-and-services}
 
-Wenn Sie ein Formulardatenmodell mit Datenquellen erstellt haben, können Sie den Formulardatenmodell-Editor verwenden, um Datenmodellobjekte und -dienste hinzuzufügen, deren Eigenschaften zu konfigurieren, Verknüpfungen zwischen Datenmodellobjekten zu erstellen und das Formulardatenmodell und die Formulardienste zu testen.
+Nachdem Sie ein Formulardatenmodell mit Datenquellen erstellt haben, können Sie mit dem Formulardatenmodell-Editor Datenmodellobjekte und -Services hinzufügen, ihre Eigenschaften konfigurieren, Verknüpfungen zwischen Datenmodellobjekten erstellen sowie das Formulardatenmodell und die Services testen.
 
 Sie können Datenmodellobjekte und Services aus verfügbaren Datenquellen zum Formulardatenmodell hinzufügen. Dabei werden hinzugefügte Datenmodellobjekte auf der Registerkarte „Modell“ und hinzugefügte Services auf der Registerkarte „Services“ angezeigt.
 
@@ -103,11 +103,11 @@ Erstellen einer untergeordneten Eigenschaft:
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**, um die untergeordnete Eigenschaft zu speichern, und dann auf **[!UICONTROL Speichern]**, um das Formulardatenmodell zu speichern. Die untergeordnete Eigenschaft wird jetzt zum Datenmodellobjekt hinzugefügt.
 
-Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin basierend auf dem Formulardatenmodell adaptive Formulare und interaktive Kommunikationen erstellen. Später, wenn Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikation mithilfe des Formulardatenmodells finden Sie unter [Formulardatenmodell verwenden](/help/forms/using/using-form-data-model.md).
+Nachdem Sie Datenmodellobjekte und -eigenschaften erstellt haben, können Sie weiterhin basierend auf dem Formulardatenmodell adaptive Formulare und interaktive Kommunikationen erstellen. Später, wenn Datenquellen verfügbar und konfiguriert sind, können Sie das Formulardatenmodell mit Datenquellen verknüpfen. Die Bindung wird automatisch in zugeordneten adaptiven Formularen und interaktiver Kommunikation aktualisiert. Weitere Informationen zum Erstellen adaptiver Formulare und interaktiver Kommunikationen mithilfe des Formulardatenmodells finden Sie unter [Verwenden des Formulardatenmodells](/help/forms/using/using-form-data-model.md).
 
 ### Binden von Datenmodellobjekten und -eigenschaften {#bind-data-model-objects-and-properties}
 
-Wenn die Datenquellen verfügbar sind, die Sie in das Formulardatenmodell integrieren möchten, können Sie sie dem Formulardatenmodell hinzufügen, wie hier beschrieben: [Datenquellen aktualisieren](/help/forms/using/create-form-data-models.md#update). Führen Sie anschließend folgende Schritte durch, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
+Wenn die Datenquellen, die Sie in das Formulardatenmodell integrieren möchten, verfügbar sind, können Sie sie dem Formulardatenmodell hinzufügen, wie in [Aktualisieren von Datenquellen](/help/forms/using/create-form-data-models.md#update) beschrieben. Führen Sie anschließend folgende Schritte durch, um die ungebundenen Datenmodellobjekte und -eigenschaften zu binden:
 
 1. Wählen Sie im Formulardatenmodell die ungebundene Datenquelle aus, die Sie mit einer Datenquelle binden möchten.
 1. Tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.

@@ -12,7 +12,7 @@ exl-id: a2821338-f31d-4b08-91e6-7f934dc01384
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1171'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 91%
 
 ## Assembler {#assembler}
 
-AEM Forms bietet benutzerdefinierte Workflows zum Aufrufen der folgenden Assembler-Dienst-APIs:
+AEM Forms bietet benutzerdefinierte Workflows, um die folgenden Assembler Service-APIs aufzurufen:
 
 * **invoke**: Ruft die Prozesse auf, die in der Eingabe-DDX bei gelieferten Eingaben angegeben wurden.
 * **toPDFA**: Konvertiert Eingabe-PDF-Dokumente in PDF/A-Dokumente.
 
 ### Rufen Sie den DDX-Arbeitsablauf auf {#invoke-ddx-workflow}
 
-Die **DDX aufrufen** Workflow ruft die `Invoke` Assembler-Dienst-API, mit der Sie Dokumente zusammenstellen oder aufteilen, Wasserzeichen zu einer PDF hinzufügen usw.
+Der Workflow **DDX aufrufen** ruft die Assembler Service-API `Invoke` auf, mit der Sie Dokumente zusammenstellen oder aufteilen, ein Wasserzeichen zu einem PDF hinzufügen können usw.
 
 1. Ziehen Sie **[!UICONTROL Invoke DDX]** auf der Registerkarte „Forms Workflow“ in den Sidekick.
 1. Doppelklicken Sie auf „Hinzugefügt“, um die Komponente zu bearbeiten.
@@ -45,7 +45,7 @@ Der Arbeitsablauf „Invoke DDX“ erfordert folgende Eingabedokumente:
 
 * **Create Map from PayLoad**: Ist diese Option ausgewählt, werden alle Dokumente im Payload-Ordner zur Zuordnung des Eingabedokuments für die `invoke`-API im Assembler hinzugefügt. Der Knotenname für jedes Dokument wird als Schlüssel in der Zuordnung verwendet.
 
-* **Input Document&#39;s Map**: Gibt die Zuordnung des Eingabedokuments an. Sie können beliebig viele Einträge hinzufügen, wobei jeder Eintrag den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments angibt.
+* **Zuordnung des Eingabedokuments**: Legt die Zuordnung des Eingabedokuments fest. Sie können beliebig viele Einträge hinzufügen, wobei jeder Eintrag den Schlüssel des Dokuments in der Zuordnung und die Quelle des Dokuments angibt.
 
 #### Environment Options {#environment-options}
 
@@ -60,7 +60,7 @@ Auf der Registerkarte „Environment Options“ können Sie die verschiedenen Ve
 
 Je nach Eingabe-DDX kann das invoke-API mehrere Ausgabe-Dokumente erstellen. Auf der Registerkarte „Output Documents“ können Sie festlegen, wo Output Documents gespeichert werden.
 
-1. *Ausgabe in Payload speichern*: Speichert Ausgabedokumente im Payload-Ordner oder überschreibt die Payload, wenn es sich bei der Payload um eine Datei handelt.
+1. *Ausgabe in Payload speichern*: Speichert Ausgabedokumente unter dem Payload-Ordner oder überschreibt die Payload, wenn die Payload eine Datei ist.
 1. *Output Document&#39;s Map*: Hiermit können Sie explizit angeben, wo jedes output document gespeichert werden soll, indem ein Eintrag pro output document hinzugefügt wird. Jeder Eintrag gibt das Dokument und den entsprechenden Speicherort an. Ein Output Document kann die Payload überschreiben oder im Payload-Ordner speichern. Dies ist nützlich, wenn es mehrere Output Documents gibt.
 
 1. *Job Log*: Gibt an, wo das Auftragsprotokolldokument gespeichert werden soll, was bei Fehlerbehebungsfehlern hilfreich sein kann.
@@ -90,7 +90,7 @@ Mithilfe der Konvertierungsoptionen können Sie Optionen festlegen, die den Vorg
 * *Result Level *: Gibt die Protokollebene an, die für PDF/A-Konvertierungsprotokolle verwendet werden soll.
 * *Signatures*: Gibt an, wie die Signaturen im Eingabedokument während der Konvertierung verarbeitet werden müssen.
 * *Color Space*: Gibt den vordefinierten Farbraum, der für das PDF/A-Dokument verwendet werden soll, an.
-* *Überprüfen* Konversion: Gibt an, ob das konvertierte PDF/A-Dokument nach der Konvertierung auf PDF/A-Konformität überprüft werden soll.
+* *Konvertierung überprüfen*: Gibt an, ob das konvertierte PDF/A-Dokument nach der Konvertierung auf PDF/A-Konformität geprüft werden soll.
 * *Job Log Level*: Gibt die Protokollebene, die für die Verarbeitung von Protokollen verwendet werden soll, an.
 
 * *Metadata Extension Schema*: Gibt den Pfad zum Metadaten-Erweiterungsschema, der für XMP-Eigenschaften in den Metadaten des PDF-Dokuments verwendet werden soll, an.

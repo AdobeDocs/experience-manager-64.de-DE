@@ -13,7 +13,7 @@ exl-id: 8b1bbd85-66ba-4e96-917a-d768d84a417f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '478'
-ht-degree: 77%
+ht-degree: 86%
 
 ---
 
@@ -32,7 +32,7 @@ Eine Möglichkeit, die Anwendung „Korrespondenz erstellen“ von einem Cluster
 * die URL für die XML-Datei, die aus der gewünschten Datenquelle (unter Verwendung des cmDataUrl-Parameters) erfasst wurde
 
 Beispielsweise würde das benutzerdefinierte Portal die URL als\
-`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`, das die href eines Links im Portal sein könnte.\
+`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]` vorbereiten, wobei es sich um die href eines Links auf dem Portal handeln könnte.\
 Wenn das Portal den Namen der Briefvorlage enthält, kann die URL\
 `https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`.
 
@@ -60,7 +60,7 @@ Eine weitere (und sicherere) Möglichkeit, die Anwendung &quot;Korrespondenz ers
   <tr>
    <td>cmLetterInstanceId</td> 
    <td>Zeichenfolge</td> 
-   <td>Die Kennung für die Briefinstanz.</td> 
+   <td>Der Bezeichner für die Briefinstanz.</td> 
   </tr>
   <tr>
    <td>cmLetterName</td> 
@@ -128,4 +128,4 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
  </tbody>
 </table>
 
-Wenn Sie das HTTP- oder CQ-Protokoll für cmDataURL verwenden, sollte die URL von http/cq anonym zugänglich sein.
+Wenn Sie ein HTTP- oder CQ-Protokoll für cmDataURL verwenden, muss die HTTP/CQ-URL anonym zugänglich sein.

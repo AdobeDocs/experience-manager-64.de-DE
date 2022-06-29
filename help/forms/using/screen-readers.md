@@ -13,7 +13,7 @@ exl-id: c27eb771-d390-4534-8e67-f1277550e760
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -38,11 +38,11 @@ In HTML5-Formularen funktionieren alle standardmäßigen Tasteneingaben und Tast
 
 ### VoiceOver {#voiceover}
 
-HTML5-Formulare unterstützen alle Standard-Tasteneingaben und Gesten für VoiceOver. Weitere Informationen zum Einrichten und Verwenden von VoiceOver finden Sie unter [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
+HTML5-Formulare unterstützen alle Standard-Tasteneingaben und Gesten für VoiceOver. Weitere Informationen zum Einrichten und Verwenden von VoiceOver finden Sie unter [https://www.apple.com/accessibility/voiceover/](https://www.apple.com/accessibility/voiceover/).
 
 ## Bekannte Probleme {#known-issues}
 
-* **(Nur Interner Explorer 9)** In HTML5-Formularen werden die Seiten bei Bedarf (dynamisch) geladen. Das Laden von Seiten bei Bedarf verursacht Probleme mit Bildschirmlesehilfen. Wenn der Fokus der Bildschirmlesehilfe am letzten Seitenfeld angelangt ist und der Benutzer die Tabulator-Taste drückt, statt den Fokus auf das erste Feld der nächsten Seite zu legen, kehrt die Bildschirmlesehilfe auf das erste Feld der ersten Seite des Formulars zurück.
+* **(Ausschließlich Internet Explorer 9)** In HTML5-Formularen werden die Seiten bei Bedarf geladen (dynamisch). Das Laden von Seiten bei Bedarf verursacht Probleme mit Bildschirmlesehilfen. Wenn der Fokus der Bildschirmlesehilfe am letzten Seitenfeld angelangt ist und der Benutzer die Tabulator-Taste drückt, statt den Fokus auf das erste Feld der nächsten Seite zu legen, kehrt die Bildschirmlesehilfe auf das erste Feld der ersten Seite des Formulars zurück.
 * **(Ausschließlich Internet Explorer 9)** Das Datumsauswahl-Steuerelement in HTML5-Formularen lässt sich nicht vollständig über die Tastatur steuern. Wenn Sie im Datumsauswahl -Steuerelement die Bild-Auf/Bild-Ab-Tasten mehrmals hintereinander drücken, wird das Datumsauswahl-Steuerelement geschlossen und der Fokus wird auf das nächste/letzte Feld gerichtet.
 
 * VoiceOver kann Pfeiltasten auf dem Datumswidget auf iPad Safari nicht erkennen.

@@ -12,7 +12,7 @@ exl-id: ce6fa21c-aa83-4c5e-be7f-ad4f6e0811f8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2738'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Wiederholungsbereiche sind Instanzen eines Bereichs, die mithilfe einer Skripter
 * Öffnen Sie zum Erstellen eines Wiederholungsbereichs im Bereichsdialogfeld die Einstellungen und legen Sie den Wert des Felds für die maximale Anzahl auf einen Wert größer als 1 fest.
 * Der Wert für die minimale Anzahl der Feldwiederholungseinstellungen kann eins oder höher sein, er darf jedoch nicht über dem Wert für die maximale Anzahl liegen.
 * Wenn ein Ausdruck sich auf ein Feld eines Wiederholungsfelds bezieht, werden die Feldnamen im Ausdruck in das nächstgelegene Wiederholungselement aufgelöst.
-* Adaptive Formulare bieten einige spezifische Funktionen zum Vereinfachen der Berechnungen für die wiederholbaren Felder wie etwa „sum“, „count“, „min“, „max“, „filter“ und viele mehr. Eine vollständige Liste der Funktionen finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* Adaptive Formulare bieten einige spezifische Funktionen zum Vereinfachen der Berechnungen für die wiederholbaren Felder wie etwa „sum“, „count“, „min“, „max“, „filter“ und viele mehr. Eine vollständige Liste der Funktionen finden Sie unter [JavaScript Library API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/aem-forms/6/javascript-api/af.html)
 * Es gibt folgende APIs zum Manipulieren von Instanzen von Wiederholungsfeldern:
 
    * Zum Hinzufügen einer Bereichsinstanz: `panel1.instanceManager.addInstance()`
@@ -45,7 +45,7 @@ Wiederholungsbereiche sind Instanzen eines Bereichs, die mithilfe einer Skripter
 
 ## Ausdruckstypen {#expression-types}
 
-In adaptiven Formularen können Sie Ausdrücke schreiben, um Verhaltensweisen wie dynamische Ein-/Ausblendfelder und Bereiche hinzuzufügen. Sie können auch Ausdrücke schreiben, um berechnete Felder hinzuzufügen, Felder als schreibgeschützt festzulegen, Überprüfungslogik hinzuzufügen und vieles mehr. Adaptive Formulare unterstützen folgende Ausdrücke:
+In adaptiven Formularen können Sie Ausdrücke zum Hinzufügen von Verhaltensweisen schreiben, wie etwa dynamisches Einblenden/Ausblenden von Feldern und Fenstern. Sie können auch Ausdrücke schreiben, um berechnete Felder hinzuzufügen, Felder als schreibgeschützt festzulegen, Überprüfungslogik hinzuzufügen und vieles mehr. Adaptive Formulare unterstützen folgende Ausdrücke:
 
 * **[Ausdrücke für den Zugriff](#access-expression-enablement-expression)**: Zum Aktivieren/Deaktivieren eines Felds.
 * **[Ausdrücke für die Berechnung](/help/forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**: Zum automatischen Berechnen des Werts eines Felds.
@@ -72,7 +72,7 @@ Mit dem Ausdruck für den Zugriff können Sie ein Feld aktivieren oder deaktivie
 
 ### Ausdruck für Berechnungen {#calculate-expression}
 
-Der Ausdruck für Berechnungen wird verwendet, um den Wert eines Felds unter Verwendung eines Ausdrucks automatisch zu berechnen. Normalerweise verwendet ein Ausdruck dieser Art die Werteigenschaften anderer Felder. Beispiel: `field2.value + field3.value`. Sobald sich der Wert von `field2`oder `field3` ändert, wird der Ausdruck erneut ausgelöst und der Wert neu berechnet.
+Der Ausdruck für Berechnungen wird verwendet, um den Wert eines Felds unter Verwendung eines Ausdrucks automatisch zu berechnen. Normalerweise verwendet ein Ausdruck dieser Art die Werteigenschaften anderer Felder. Beispiel: `field2.value + field3.value`. Sobald sich der Wert von `field2` oder `field3` ändert, wird der Ausdruck erneut ausgelöst und der Wert neu berechnet.
 
 **Gilt für**: Felder
 
@@ -96,7 +96,7 @@ Der Ausdruck für ein Klickereignis verarbeitet die Aktionen, die beim Klicken a
 Das Initialisierungsskript wird ausgelöst, wenn ein adaptives Formular initialisiert wird. Je nach Szenario verhält sich das Initialisierungsskript wie folgt:
 
 * Wenn ein adaptives Formular ohne vorausgefüllte Daten wiedergegeben wird, wird das Initialisierungsskript nach der Initialisierung des Formulars ausgeführt.
-* Wenn ein adaptives Formular mit vorausgefüllten Daten wiedergegeben wird, wird das Skript nach Abschluss des Vorab-Ausfüllvorgangs ausgeführt.
+* Wenn ein adaptives Formular mit vorausgefüllten Daten wiedergegeben wird, wird das Skript ausgeführt, nachdem der Vorgang der Vorausfüllung abgeschlossen ist.
 * Wenn eine erneute serverseitige Überprüfung eines adaptiven Formulars ausgelöst wird, wird das Initialisierungsskript ausgeführt.
 
 **Gilt für:** Felder und Fenster
@@ -227,7 +227,7 @@ GuideBridge ist eine Sammlung von APIs, die für die Interaktion mit adaptiven F
 
 * Sie können die `setFocus()`-API verwenden, um den Fokus auf verschiedene Felder oder Bereiche zu legen (der Bereichsfokus ist automatisch auf das erste Feld festgelegt). `setFocus()` stellt eine große Auswahl von Optionen für Navigationszwecke bereit, wie zum Beispiel für das Navigieren über Bereiche hinweg, das Durchlaufen zum vorigen/nächsten Element, das Festlegen des Fokus auf ein bestimmtes Feld und vieles mehr. Wenn Sie beispielsweise in den nächsten Bereich wechseln möchten, können Sie den folgenden Ausdruck verwenden: `guideBridge.setFocus(this.panel.somExpression, 'nextItem').`
 
-* Verwenden Sie zum Überprüfen eines adaptiven Formulars oder seiner spezifischen Bedienfelder `guideBridge.validate(errorList, somExpression).`
+* Zum Validieren eines adaptiven Formulars oder seiner spezifischen Bereiche verwenden Sie `guideBridge.validate(errorList, somExpression).`
 
 #### Verwendung von GuideBridge außerhalb von Ausdrücken  {#using-guidebridge-outside-expressions-nbsp}
 
@@ -261,7 +261,7 @@ Um GuideBridge nach Initialisierung des Formulars zu verwenden (das `bridgeIniti
 
 #### GuideBridge-Ereignisse {#guidebridge-events}
 
-GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Weitere Informationen zu solchen Ereignissen finden Sie unter [JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Ausführliche Informationen zu solchen Ereignissen finden Sie in der [JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 
 Verwenden Sie folgenden Code zum Registrieren von Handlern:
 
@@ -275,7 +275,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### Erstellen benutzerdefinierter Muster für ein Feld {#creating-custom-patterns-for-a-field}
 
-Wie oben erwähnt lassen adaptive Formulare das Bereitstellen von Überprüfungsmustern oder Anzeigeformaten durch den Autor zu. Über die Verwendung von Mustern für den sofortigen Einsatz können Sie wiederverwendbare benutzerdefinierte Muster für eine Komponente eines adaptiven Formulars verwenden. Beispiel: Sie können ein Textfeld oder ein numerisches Feld definieren. Einmal definiert, können Sie diese Muster in allen Formularen für einen bestimmten Typ von Komponente verwenden. Sie können beispielsweise ein benutzerdefiniertes Muster für ein Textfeld erstellen und es in den Textfeldern in den adaptiven Formularen verwenden. Sie können das benutzerspezifische Muster auswählen, indem Sie im Dialogfeld „Bearbeiten“ einer Komponente auf den Abschnitt „Muster“ zugreifen. Ausführliche Informationen zu Musterdefinitionen oder -formaten finden Sie unter [Unterstützung für HTML5 Forms](/help/forms/using/picture-clause-support.md). 
+Wie oben erwähnt lassen adaptive Formulare das Bereitstellen von Überprüfungsmustern oder Anzeigeformaten durch den Autor zu. Über die Verwendung von Mustern für den sofortigen Einsatz können Sie wiederverwendbare benutzerdefinierte Muster für eine Komponente eines adaptiven Formulars verwenden. Beispiel: Sie können ein Textfeld oder ein numerisches Feld definieren. Einmal definiert, können Sie diese Muster in allen Formularen für einen bestimmten Typ von Komponente verwenden. Sie können zum Beispiel ein benutzerdefiniertes Muster für ein Textfeld erstellen und es in den Textfeldern in ihren adaptiven Formularen verwenden. Sie können das benutzerspezifische Muster auswählen, indem Sie im Dialogfeld „Bearbeiten“ einer Komponente auf den Abschnitt „Muster“ zugreifen. Ausführliche Informationen zu Musterdefinitionen oder -formaten finden Sie unter [Unterstützung für HTML5 Forms](/help/forms/using/picture-clause-support.md). 
 
 Führen Sie die folgenden Schritte durch, um ein benutzerspezifisches Muster für einen bestimmten Feldtyp zu erstellen und es dann für alle Felder desselben Typs wiederzuverwenden:
 

@@ -13,7 +13,7 @@ exl-id: a3337bb1-635c-4dc9-b438-3a829d4a9e03
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Die Standardimplementierung von Tabellen in den HTML5-Formularen verwendet HTML DIV-Elemente, um eine neue Tabelle zu rendern. Das Rendern involviert die Verwendung von ARIA-Rollen, um den Anforderungen für den barrierefreien Zugriff gerecht zu werden.
 
-Um Barrierefreiheitsprobleme mit Bildschirmlesehilfen zu vermeiden, die die ARIA-Rollen, die mit Datentabellen verwendet werden, nicht vollständig unterstützen, bietet HTML5 Forms eine alternative Darstellung für die Tabellen. Diese Tabellen basieren auf dem neuen Tabellenformat, das in Designer eingeführt wurde und das ebenfalls Folgendes unterstützt:
+Um Probleme mit der Barrierefreiheit mit Bildschirmsprachausgaben zu vermeiden, die ARIA-Rollen nicht voll unterstützen, die mit Datentabellen verwendet werden, bieten HTML5-Formulare eine alternative Darstellung für die Tabellen. Diese Tabellen basieren auf dem neuen Tabellenformat, das in Designer eingeführt wurde und das ebenfalls Folgendes unterstützt:
 
 * Zeilenkopf
 * Zeilenabschnitt
@@ -34,7 +34,7 @@ Um das neue Format in HTML5-Forms zu verwenden, markieren Sie die Tabelle als ko
  </extras>
 ```
 
-Die Tabellen, die als *complexTable* Folgen Sie der nativen HTML-Ausgabedarstellung und bieten Sie bestimmten Bildschirmlesehilfen eine bessere Barrierefreiheit.  Um einen Zeilenabschnitt zu erstellen, wählen Sie mehrere Zellen einer Tabelle in derselben Spalte, klicken Sie mit der rechten Maustaste auf die Auswahl und klicken Sie dann auf **[!UICONTROL Zellen verbinden]**.
+Die Tabellen, die als *complexTable* markiert werden, folgen der nativen HTML-Darstellung und bieten eine bessere Barrierefreiheit für bestimmte Bildschirmsprachausgaben.  Um einen Zeilenabschnitt zu erstellen, wählen Sie mehrere Zellen einer Tabelle in derselben Spalte, klicken Sie mit der rechten Maustaste auf die Auswahl und klicken Sie dann auf **[!UICONTROL Zellen verbinden]**.
 
 ***Hinweis:**Das Erstellen eines Zeilenabschnitts funktioniert nur für die am weitesten links liegenden Zellen.* 
 
@@ -42,7 +42,7 @@ Um eine Zeile als Zeilenkopf zu markieren, wählen Sie alle Zellen in der Zeile,
 
 Um eine Zelle als Spaltenkopf zu markieren, wählen Sie eine beliebige Zelle in der Spalte, klicken Sie mit der rechten Maustaste auf die Auswahl und klicken Sie dann auf **[!UICONTROL Kopf markieren]**.
 
-Einschränkungen in neuen *AccessibleTable* format:
+Einschränkungen im neuen *AccessibleTable*-Format:
 
 * Fehlende Unterstützung für vergrößerungsfähige Felder, wenn Zeilenabschnitt in der Tabelle verwendet wird
 * Keine Unterstützung für verschachtelte Tabellen (Tabellen in Tabellenzellen)

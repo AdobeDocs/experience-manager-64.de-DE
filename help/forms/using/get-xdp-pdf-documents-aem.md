@@ -13,7 +13,7 @@ exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '667'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,21 +27,21 @@ Sie können Formulare aus Ihrem lokalen Dateisystem in das CRX-Repository import
 * PDF-Formulare
 * Dokumente (reduzierte PDF-Dokumente)
 
-Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset vom Typ `Resource`, nur zusammen mit einem XFA-Formular in einem ZIP-Archiv.
+Sie können die unterstützten Assettypen einzeln oder als ZIP-Archiv hochladen. Sie können ein Asset des Typs `Resource` nur zusammen mit einem XFA-Formular in einem ZIP-Archiv hochladen.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie Mitglied der `form-power-users` -Gruppe, um XDP-Dateien hochladen zu können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
+>Vergewissern Sie sich, dass Sie Mitglied der Gruppe `form-power-users` sind, um XDP-Dateien hochladen zu können. Wenden Sie sich an Ihren Administrator, um Mitglied der Gruppe zu werden.
 
 ## Hochladen von Formularen {#uploading-forms}
 
-1. Melden Sie sich über die AEM Forms-Benutzeroberfläche an. `https://[server]:[port]/aem/forms.html`.
+1. Melden Sie sich bei der Benutzeroberfläche von AEM Forms an, indem Sie auf `https://[server]:[port]/aem/forms.html` zugreifen.
 1. Navigieren Sie zu dem Ordner, in den Sie das Formular oder die Ordner mit Formularen hochladen möchten.
 1. Auf der Aktionensymbolleiste klicken Sie auf **Erstellen > Datei hochladen**.
 
    ![Dateien von der Option „Lokaler Speicher“ unter „Erstellen“](assets/step.png)
 
-1. Mit dem Uploadformular- oder Paketdialogfeld können Sie dieDatei suchen und auswählen, die Sie hochladen möchten. Im Dateibrowser werden nur die unterstützten Dateiformate angezeigt (ZIP, XDP und PDF).
+1. Mit dem Uploadformular- oder Paketdialogfeld können Sie die Datei suchen und auswählen, die Sie hochladen möchten. Im Dateibrowser werden nur die unterstützten Dateiformate angezeigt (ZIP, XDP und PDF).
 
    >[!NOTE]
    >
@@ -85,6 +85,6 @@ Wenn eine Formularvorlage entfernt wird, wird das abhängige adaptive Formular b
 
 ![Warnung für ein unsynchronisiertes adaptives Formular nach dem Aktualisieren der zugehörigen XFA](assets/dirtyaf.png)
 
-Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich neben den Metadaten auf der Seite mit den Formulareigenschaften. Nur für schmutzige adaptive Formulare, eine Metadateneigenschaft `Model Refresh` Displays `Recommended` -Wert.
+Die Kennzeichnung bleibt bestehen, damit schmutzige adaptive Formulare erkannt werden. Diese Informationen befinden sich neben den Metadaten auf der Seite mit den Formulareigenschaften. Lediglich für unsaubere adaptive Formulare zeigt eine Metadateneigenschaft `Model Refresh` den Wert `Recommended` an.
 
 ![Kennzeichnung eines adaptiven Formular, das mit dem XFA-Modell nicht synchronisiert ist](assets/model-refresh.png)

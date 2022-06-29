@@ -13,7 +13,7 @@ exl-id: 00ca8bdf-77be-4f4c-a3d3-d61d13eeba7e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Mit Output können Sie XML-Daten mit einem in Designer erstellten Formularentwur
 
 Sie können die Output-Seite in Administration Console verwenden, um den Output-Dienst zu verwalten. Die von Ihnen konfigurierten Einstellungen werden zur Laufzeit verwendet, wenn die entsprechenden Einstellungen nicht über die API von AEM Forms festgelegt wurden. Die über das AEM Forms SDK vorgenommene Konfiguration setzt die mit Administration Console konfigurierten Einstellungen außer Kraft.
 
-Weitere Informationen zum Ausgabedienst finden Sie unter [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_61).
+Weitere Informationen zum Ausgabedienst finden Sie unter [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_61_de).
 
 Sie können auf den Output-Seiten in Administration Console mehrere Aufgaben durchführen:
 

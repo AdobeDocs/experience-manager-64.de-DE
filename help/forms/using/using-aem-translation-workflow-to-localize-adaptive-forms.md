@@ -13,7 +13,7 @@ exl-id: 5d0dcf4d-8995-4547-acb1-4917696af95e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiv
    >[!NOTE]
    >
    >* Stellen Sie vor dem Öffnen der lokalisierten Version des Formulars im Browserfenster sicher, dass das Gebietsschema des Browsers so eingestellt ist, dass es mit dem Gebietsschema des Formulars übereinstimmt. Wenn beispielsweise das Formular in die Sprache Deutsch(de) übersetzt wird, stellen Sie für das Gebietsschema des Browsers „Deutsch(de)“ ein.
-   >* Adaptive Formularkomponenten unterstützen keine RTL-Sprachen (Rechts-nach-links). Zum Beispiel Hebräisch.
+   >* Komponenten für adaptive Formulare unterstützen keine RTL-Sprachen (Right to Left – von rechts nach links). Zum Beispiel Hebräisch.
 
 
    Zusammen mit dem adaptiven Formular wird das automatisch generierte DoR auch lokalisiert.
@@ -52,7 +52,7 @@ Der Dienst für maschinelle Übersetzung übersetzt sofort Inhalte Ihrer adaptiv
 [Einstellungen für Datensatzdokumente](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [Passen Sie die Branding-Informationen des Datensatzdokuments](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) an und stellen Sie sicher, dass das Gebietsschema des Browsers auf die Sprache eingestellt ist, in der Sie das adaptive Formular mithilfe der Maschinensprache lokalisiert haben. Das Browsergebietsschema hilft beim Lokalisieren der Branding-Informationen im Datensatzdokument.
-1. Um das lokalisierte Datensatzdokument anzuzeigen, tippen Sie auf „Vorschau generieren“. Das Datensatzdokument-PDF wird in einer neuen Registerkarte in Ihrem Browser erstellt und geöffnet.
+1. Um das lokalisierte Datensatzdokument anzuzeigen, tippen Sie auf „Vorschau generieren“. Die PDF-Datei des Datensatzdokuments wird erstellt und in einer neuen Registerkarte im Browser geöffnet.
 
 ## Lokalisieren von adaptiven Formulars und seines DoR mithilfe professioneller Übersetzung {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
@@ -76,6 +76,6 @@ Führen Sie die folgenden Schritte zum Lokalisieren eines Formulars und seines D
 
 >[!NOTE]
 >
->* Adaptive Formularkomponenten unterstützen keine RTL-Sprachen (Rechts-nach-links). Zum Beispiel Hebräisch.
+>* Komponenten für adaptive Formulare unterstützen keine RTL-Sprachen (Right to Left – von rechts nach links). Zum Beispiel Hebräisch.
 >
 

@@ -11,7 +11,7 @@ exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,20 +19,20 @@ ht-degree: 92%
 
 [Adaptives Formularfragment](/help/forms/using/adaptive-form-fragments.md) ist eine Gruppe von Feldern oder ein Fenster, das eine Gruppe von Feldern beinhaltet, die Sie verwenden können, wenn Sie ein Formular erstellen. Damit lassen sich Formulare mühelos und schnell erstellen. Sie können ein adaptives Formularfragment per Drag &amp; Drop in ein Formular mit dem Asset-Browser in der Seitenleiste einfügen und Sie können es im Formulareditor bearbeiten.
 
-Für Autoren adaptiver Formulare werden Referenzfragmente im [AEM Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). Es beinhaltet folgende Fragmente:
+Für Autoren von adaptiven Formularen werden Referenzfragmente im [Add-on-Paket für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) bereitgestellt. Es beinhaltet folgende Fragmente:
 
 * Adresse
 * Kontaktangaben
 * Kreditkartenangaben
 * Aktuelle Beschäftigung
 * Informationen zu abhängigen Familienmitgliedern
-* Beschäftigungshintergrund
-* Umsatz und Ausgaben
+* Beschäftigungshistorie
+* Einkommen und Ausgaben
 * Name
 * Nutzungsbedingungen
 * Nutzungsbedingungen mit Scribble
 
-Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. Informationen zum Installieren eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
+Wenn Sie das Paket installieren, wird ein Referenzfragmentordner mit Referenzfragmenten unter „Formulare und Dokumente“ erstellt. Weitere Informationen zur Installation eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 ![Alle aufgeführten Fragmente](assets/ootb-frags.png)
 

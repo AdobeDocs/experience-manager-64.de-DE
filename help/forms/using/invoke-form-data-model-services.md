@@ -12,7 +12,7 @@ exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ In diesem Dokument wird das Schreiben von JavaScript in der `guidelib.dataIntegr
 
 ## Verwenden der API {#using-the-api}
 
-Die `guidelib.dataIntegrationUtils.executeOperation` API ruft einen Dienst aus einem Feld in einem adaptiven Formular auf. Für die API gilt folgende Syntax:
+Die `guidelib.dataIntegrationUtils.executeOperation`-API ruft einen Service über ein Feld in einem adaptiven Formular auf. Für die API gilt folgende Syntax:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)

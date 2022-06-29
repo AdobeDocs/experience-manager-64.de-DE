@@ -13,7 +13,7 @@ exl-id: 88f692de-f88b-4459-97e9-73506bf87525
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1863'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ In diesem Abschnitt werden die optionalen Einstellungen beschrieben, die Sie zum
 
 AEM Forms verwendet das AEM Forms-Repository als Datenquelle. Das AEM Forms-Repository speichert Anwendungselemente und zur Laufzeit können Dienste bei der Ausführung automatisierter Geschäftsprozesses Elemente aus dem Repository abrufen.
 
-Auf diese Datenquellen wird u. U. sehr häufig zugegriffen. Dies hängt davon ab, wie viele AEM Forms-Module ausgeführt werden und wie viele Benutzer gleichzeitig auf die Anwendung zugreifen. Der Zugriff auf die Datenquellen kann durch Verbindungspools optimiert werden. Durch *Verbindungspools* entfällt der Verarbeitungsaufwand für das Herstellen neuer Datenbankverbindungen, sobald eine Anwendung oder ein Serverobjekt Zugriff auf die Datenbank benötigt.  Verbindungspools werden in der Regel bei webbasierten Anwendungen und Unternehmensanwendungen verwendet und meist (aber nicht ausschließlich) von einem Anwendungsserver verarbeitet.
+Auf diese Datenquellen wird u. U. sehr häufig zugegriffen. Dies hängt davon ab, wie viele AEM Forms-Module ausgeführt werden und wie viele Benutzer gleichzeitig auf die Anwendung zugreifen. Der Zugriff auf die Datenquellen kann durch Verbindungspools optimiert werden. Durch *Verbindungspools* entfällt der Verarbeitungsaufwand für das Herstellen neuer Datenbankverbindungen, sobald eine Anwendung oder ein Serverobjekt Zugriff auf die Datenbank benötigt. Verbindungspools werden in der Regel bei webbasierten Anwendungen und Unternehmensanwendungen verwendet und meist (aber nicht ausschließlich) von einem Anwendungsserver verarbeitet.
 
 Sie müssen Ihre Parameter für den Verbindungspool ordnungsgemäß konfigurieren, damit immer Verbindungen zur Verfügung stehen, da ansonsten die Anwendungsleistung beeinträchtigt werden kann.
 
 Um die Einstellungen für den Verbindungspool richtig zu konfigurieren, muss der Anwendungsserveradministrator den Verbindungspool zu Spitzenbelastungszeiten während des Tages unbedingt überwachen. Die Überwachung stellt sicher, dass jederzeit genügend Verbindungen für Anwendungen und Benutzer zur Verfügung stehen. Die meisten Anwendungsserver bieten entsprechende Überwachungswerkzeuge.
 
-Sie können eine Vielzahl verschiedener Statistiken für jede JDBC-Datenquelleninstanz in Ihrer Domäne mithilfe von WebLogic Server Administration Console überwachen. Einzelheiten finden Sie in der WebLogic-Dokumentation.
+Sie können eine Vielzahl verschiedener Statistiken für jede JDBC-Datenquelleninstanz in Ihrer Domain mithilfe von WebLogic Server Administration Console überwachen. Einzelheiten finden Sie in der WebLogic-Dokumentation.
 
 Wenn der Administrator des Anwendungsservers die richtigen Einstellungen für den Verbindungspool ermittelt hat, sollten diese Angaben auch dem Datenbankadministrator mitgeteilt werden. Der Datenbankadministrator benötigt diese Informationen, da die Anzahl der Datenbankverbindungen gleich der Anzahl der Verbindungen im Verbindungspool für die Datenquelle ist. Führen Sie anschließend die nachfolgend beschriebenen Schritte zum Konfigurieren der Einstellungen für den Verbindungspool für Ihren Anwendungsserver und ihren Datenquellentyp durch.
 
@@ -102,12 +102,12 @@ Wenn der Dokumentinhalt kleiner als die Inline-Maximalgröße ist, wird er in de
 
 **Die Inline-Maximalgröße ändern**
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
+1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
 1. Geben Sie einen Wert in das Feld „Standardmäßige Maximalgröße für Inline-Dokumente“ ein.
 
    >[!NOTE]
    >
-   >Der Wert der Eigenschaft &quot;Max. Inline-Größe des Dokuments&quot;muss für die AEM Forms on JEE-Umgebung identisch sein und für AEM Forms im OSGi-Bundle, das die AEM Forms on JEE-Umgebung enthält. Diese Schritte sind nur aktualisierte Werte für die AEM Forms on JEE-Umgebung und nicht für AEM Forms on OSGi-Bundle in der AEM Forms on JEE-Umgebung.
+   >Der Wert der Eigenschaft „Maximalgröße für Inline-Dokumente“ muss für die Umgebung von AEM Forms auf JEE und die Umgebung von AEM Forms auf JEE, die das Bundle AEM Forms unter OSGi enthält, identisch sein. Diese Schritte sind nur aktualisierte Werte für die AEM Forms on JEE-Umgebung und nicht für AEM Forms on OSGi-Bundle in der AEM Forms on JEE-Umgebung.
 
 1. Starten Sie den Anwendungsserver mit folgenden Systemeigenschaft neu:
 
@@ -157,12 +157,12 @@ In diesem Abschnitt werden Einstellungen beschrieben, die spezifisch für eine W
 
 Wenn Sie Configuration Manager ausführen oder versuchen, Enterprise JavaBeans-(EJB-)Bereitstellungscode über das Befehlszeilen-Dienstprogramm *ejbdeploy* zu erstellen und ein Fehler wegen ungenügenden Arbeitsspeichers auftritt, erhöhen Sie die Größe des Speichers, welcher der JVM zugewiesen ist.
 
-1. Bearbeiten Sie das ejbdeploy-Skript im *[Anwendungsserver-Stammordner]* Ordner /deploytool/itp/ :
+1. Bearbeiten Sie im Ordner „*[Programm-Server-Stammordner]*/deploytool/itp/“ das Skript „ejbdeploy“:
 
    * (Windows) `ejbdeploy.bat`
    * (Linux und UNIX) `ejbdeploy.sh`
 
-1. Suchen Sie die `-Xmx256M` -Parameter und ändern Sie ihn in einen höheren Wert, z. B. `-Xmx1024M`.
+1. Suchen Sie den Parameter `-Xmx256M` und erhöhen Sie dessen Wert, z. B. auf `-Xmx1024M`.
 1. Speichern Sie die Datei.
 1. Führen Sie den Befehl `ejbdeploy` aus oder führen Sie mit dem Configuration Manager eine erneute Bereitstellung aus.
 
@@ -170,7 +170,7 @@ Wenn Sie Configuration Manager ausführen oder versuchen, Enterprise JavaBeans-(
 
 In diesem Abschnitt werden Einstellungen beschrieben, die spezifisch für eine Microsoft Windows Server 2003-Betriebssystemumgebung gelten.
 
-Durch die Verwendung von Verbindungspools bei der Suchverbindung kann die Anzahl der benötigten Anschlüsse um bis zu 50 % verringert werden. Der Grund dafür ist, dass diese Verbindung immer dieselben Berechtigungen für eine bestimmte Domäne verwendet und darüber hinaus der Kontext und die entsprechenden Objekte ausdrücklich geschlossen werden.
+Durch die Verwendung von Verbindungspools bei der Suchverbindung kann die Anzahl der benötigten Anschlüsse um bis zu 50 % verringert werden. Der Grund dafür ist, dass diese Verbindung immer dieselben Berechtigungen für eine bestimmte Domain verwendet und darüber hinaus der Kontext und die entsprechenden Objekte ausdrücklich geschlossen werden.
 
 ### Windows Server für die Verwendung von Verbindungspools konfigurieren {#configure-your-windows-server-for-connection-pooling}
 
@@ -181,7 +181,7 @@ Durch die Verwendung von Verbindungspools bei der Suchverbindung kann die Anzahl
 
    >[!NOTE]
    >
-   >Wenn kein blinkender Cursor angezeigt wird und `New Value #` Klicken Sie im Feld mit der rechten Maustaste in das rechte Bedienfeld, wählen Sie Umbenennen und geben Sie im Feld &quot;Name&quot;Folgendes ein: `TcpTimedWaitDelay`*.*
+   >Wenn in dem Feld weder ein blinkender Cursor noch der Text `New Value #` angezeigt wird, klicken Sie mit der rechten Maustaste in den rechten Bereich, wählen Sie „Umbenennen“ und geben Sie im Feld „Name“ `TcpTimedWaitDelay`*ein.*
 
 1. Wiederholen Sie Schritt 4 für die Wertnamen „MaxUserPort“, „MaxHashTableSize“ und „MaxFreeTcbs“.
 1. Doppelklicken Sie im rechten Bereich, um den Wert „TcpTimedWaitDelay“ festzulegen. Wählen Sie unter „Basis“ die Option „Dezimal“ und geben Sie in das Feld „Wert“ den Wert `30`.

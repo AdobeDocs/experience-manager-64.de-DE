@@ -11,11 +11,11 @@ exl-id: f07e3786-d396-47de-83cb-fc7afc423d09
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1433'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Mitarbeiterrekrutierung Schrittweise Anleitung zur Referenz-Website {#employee-recruitment-reference-site-walkthrough}
+# Schrittweise Anleitung zum Einrichten einer Referenz-Website für Mitarbeiterrekrutierung {#employee-recruitment-reference-site-walkthrough}
 
 ## Voraussetzung {#prerequisite}
 
@@ -23,7 +23,7 @@ Richten Sie die Referenz-Websites ein wie in [Einrichten und Konfigurieren von 
 
 ## Übersicht {#overview}
 
-We.Finance ist ein Unternehmen, das das Bewerben für eine Stelle über das Referenz-Website-Portal ermöglicht. Die Organisation nutzt das Portal auch zur Verwaltung der Terminplanung, der Kursauswahl und der internen Kommunikation der Kandidaten. Die Website verwaltet Folgendes:
+We.Finance ist ein Unternehmen, das das Bewerben für eine Stelle über das Referenz-Website-Portal ermöglicht. Die Organisation nutzt das Portal auch, um die Termine für Vorstellungsgespräche, die Liste der engeren Auswahl und die interne Kommunikation zu verwalten. Die Website verwaltet Folgendes:
 
 * Personen, die nach Arbeit suchen und sich bewerben
 * Vorauswahl und engere Auswahl von Bewerbern
@@ -40,8 +40,8 @@ We.Finance ist ein Unternehmen, das das Bewerben für eine Stelle über das Refe
 
 Der Anwendungsfall für die Mitarbeiterrekrutierung enthält zwei Workflows:
 
-* Vor dem Vorstellungsgespräch - Workflow für die Mitarbeiterrekrutierung in We Finance
-* Nach dem Vorstellungsgespräch - Workflow &quot;We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch&quot;
+* Vor dem Vorstellungsgespräch – Workflow „We Finance-Mitarbeiterrekrutierung“
+* Nach dem Vorstellungsgespräch – Workflow „We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch“
 
 Diese Workflows werden in AEM erstellt und sind verfügbar unter:
 
@@ -51,13 +51,13 @@ Diese Workflows werden in AEM erstellt und sind verfügbar unter:
 
 Im Folgenden ist das Modell des Workflows „We Finance-Mitarbeiterrekrutierung“ in diesem Dokument dargestellt.
 
-![we-finance-employee-rekruting-workflow](assets/we-finance-employee-recruiting-workflow.png)
+![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
 #### Workflow „We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch“ {#we-finance-employee-recruiting-post-interview-workflow}
 
 Im Folgenden ist das Modell des Workflows „We Finance-Mitarbeiterrekrutierung nach dem Vorstellungsgespräch“ in diesem Dokument dargestellt.
 
-![we-finance-employee-rekruting-post-interview-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
+![we-finance-employee-recruiting-post-interview-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
 ### Personen {#personas}
 
@@ -72,11 +72,11 @@ Das Szenario schließt folgende Personen ein:
 
 Sarah Rose sucht nach einem Stellenangebot im Unternehmen. Sie besucht sein Webportal und schaut sich die Stellenangebote an, die auf der Jobseite aufgeführt sind. Sie findet eine passende Ausschreibung und bewirbt sich.
 
-![Homepage](assets/home-page.png)
+![home-page](assets/home-page.png)
 
 Startseite von We.Finance
 
-![Berufsseite](assets/career-page.png)
+![career-page](assets/career-page.png)
 
 Jobseite von We.Finance
 
@@ -86,11 +86,11 @@ Sarah klickt in einem Stellenangebot auf „Bewerben“. Das Bewerbungsformular 
 
 ### Funktionsweise {#how-it-works}
 
-Die Startseite von We.Finance und die Jobseite sind AEM-Siteseiten. Die Jobseite bettet ein adaptives Formular ein, das einen wiederholbaren Bereich verwendet, um Stellenangebote mithilfe eines Dienstes abzurufen und aufzulisten. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+Die Startseite von We.Finance und die Jobseite sind AEM Sites-Seiten. Die Jobseite bettet ein adaptives Formular ein, das einen wiederholbaren Bereich verwendet, um Stellenangebote mithilfe eines Dienstes abzurufen und aufzulisten. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html` überprüfen.
 
 ### Sehen Sie selbst {#see-it-yourself}
 
-Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` und klicken Sie auf **[!UICONTROL Karriere]**. Klicken Sie auf **[!UICONTROL Search]** (Suchen), um die Jobliste aufzufüllen, und klicken Sie anschließend für ein Stellenangebot auf **[!UICONTROL Apply]** (Bewerben). Füllen Sie das Formular aus und senden Sie die Bewerbung.
+Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` und klicken Sie auf **[!UICONTROL Career]** (Jobs). Klicken Sie auf **[!UICONTROL Search]** (Suchen), um die Jobliste aufzufüllen, und klicken Sie anschließend für ein Stellenangebot auf **[!UICONTROL Apply]** (Bewerben). Füllen Sie das Formular aus und senden Sie die Bewerbung.
 
 Stellen Sie sicher, dass Sie eine gültige E-Mail-Adresse in der Bewerbung angeben, da jede Nachricht in dieser Anleitung an diese gesendet wird.
 
@@ -102,7 +102,7 @@ Das Unternehmen erhält die Bewerbung von Sarah. John Jacobs, ein Personalvermit
 
 Johns AEM-Posteingang
 
-![Kandidatenliste](assets/candidate-shortlist.png)
+![candidate-shortlist](assets/candidate-shortlist.png)
 
 John Jacobs empfiehlt Sarah Roses Profil für die Vorauswahl durch den Personalverantwortlichen
 
@@ -112,17 +112,17 @@ Die Übermittlungsaktion im Bewerbungsformular löst einen Workflow aus, mit dem
 
 ### Sehen Sie selbst {#see-it-yourself-1}
 
-Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`und melden Sie sich mit jjacobs/password als Benutzername/Kennwort für John Jacobs an. Öffnen Sie die Aufgabe zur Überprüfung des Bewerberprofils und nehmen Sie den Bewerber in die Vorauswahl auf.
+Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit „jjacobs“ und „password“ als Benutzername/Kennwort für John Jacobs an. Öffnen Sie die Aufgabe zur Überprüfung des Bewerberprofils und nehmen Sie den Bewerber in die Vorauswahl auf.
 
 ## Gloria überprüft die Bewerbung und genehmigt den Bewerber für ein Vorstellungsgespräch {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
 Gloria, die Personalverantwortliche, erhält das vorausgewählte Profil als Aufgabe in ihrem AEM-Posteingang. Sie überprüft es und genehmigt die Bewerberin, Sarah Rose, für das Vorstellungsgespräch.
 
-![Gloriainbox](assets/gloriainbox.png)
+![gloriainbox](assets/gloriainbox.png)
 
 Glorias AEM-Posteingang
 
-![gloriaschedulesview](assets/gloriaschedulesinterview.png)
+![gloriaschedulesinterview](assets/gloriaschedulesinterview.png)
 
 Gloria genehmigt Sarah Rose für ein Vorstellungsgespräch
 
@@ -132,9 +132,9 @@ Wenn Gloria den Kandidaten genehmigt, erstellt der Workflow eine Aufgabe im AEM-
 
 ### Sehen Sie selbst {#see-it-yourself-2}
 
-Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit jjacobs/password als Benutzername/Kennwort für John Jacobs an. Öffnen Sie die Aufgabe zur Überprüfung des Bewerberprofils und nehmen Sie den Bewerber in die Vorauswahl auf.
+Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit „jjacobs“ und „password“ als Benutzername/Kennwort für John Jacobs an. Öffnen Sie die Aufgabe zur Überprüfung des Bewerberprofils und nehmen Sie den Bewerber in die Vorauswahl auf.
 
-Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit grios/password als Benutzername/Kennwort für Gloria Rios an. Öffnen Sie die Aufgabe zur Überprüfung des Bewerberprofils und klicken Sie auf „Schedule Interview“ (Vorstellungsgespräch planen).
+Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit „grios“ und „password“ als Benutzername/Kennwort für Gloria Rios an. Öffnen Sie die Aufgabe zur Überprüfung des Bewerberprofils und klicken Sie auf „Schedule Interview“ (Vorstellungsgespräch planen).
 
 ## John Doe plant ein Vorstellungsgespräch {#john-doe-schedules-an-interview}
 
@@ -152,7 +152,7 @@ John Doe plant das Gespräch und sendet die Details an Sarah Rose
 
 Sarah Rose erhält die E-Mail mit zeitlichen Angaben, Ort und weiteren Details. Sie klickt auf „Accept“ (Akzeptieren), um ihr Einverständnis mit Zeit und Ort für das Gespräch zu geben. Anhand dieser genauen Informationen kommt Sarah zum Vorstellungsgespräch.
 
-![sarahrowterviewemail](assets/sarahroseinterviewemail.png)
+![sarahroseinterviewemail](assets/sarahroseinterviewemail.png)
 
 Sarah Rosé erhält den Zeitplan für das Vorstellungsgespräch
 
@@ -164,7 +164,7 @@ Nachdem Sarah Rose erfolgreich in den Vorstellungsgesprächen war, öffnet die P
 
 Glorias AEM-Posteingang
 
-![gloriarioselektierender Kandidat](assets/gloriariosselectcandidate.png)
+![gloriariosselectcandidate](assets/gloriariosselectcandidate.png)
 
 Gloria Rios wählt Sarah Rose nach den Gesprächen aus
 
@@ -202,7 +202,7 @@ Er wählt die Bewerberüberprüfungsanforderung aus und öffnet sie. Er sieht, d
 
 John Does AEM-Posteingang
 
-![johndoeadditionalinformation review-copy](assets/johndoeadditionalinformationreview-copy.png)
+![johndoeadditionalinformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
 
 John Doe überprüft die zusätzlichen Informationen von Sarah und genehmigt sie
 
@@ -226,19 +226,19 @@ John Doe erhält in seinem AEM-Postfach eine Anforderung zum Senden des Anstellu
 
 John Does AEM-Posteingang
 
-![johndoejoiningletterattachments und send](assets/johndoejoiningletterattachandsend.png)
+![johndoejoiningletterattachandsend](assets/johndoejoiningletterattachandsend.png)
 
 John Doe sendet das Anstellungsschreiben zur Unterschrift
 
 ## Sarah Rose erhält und unterschreibt das Anstellungsschreiben {#sarah-rose-receives-and-signs-the-joining-letter}
 
-Sarah Rose erhält das Anstellungsschreiben zur Unterschrift. Sarah klickt auf &quot;Click Here&quot;, um den Abschlussbrief zu überprüfen und zu unterschreiben. Die PDF-Datei mit dem Anstellungsschreiben wird geöffnet und enthält ein Feld für die Unterschrift.
+Sarah Rose erhält das Anstellungsschreiben zur Unterschrift. Sarah klickt auf „Click Here To Review And Sign Joining Letter“ (Hier klicken, um Anstellungsschreiben anzuzeigen und zu unterschreiben). Die PDF-Datei mit dem Anstellungsschreiben wird geöffnet und enthält ein Feld für die Unterschrift.
 
 ![sarahrosejoiningletteremail](assets/sarahrosejoiningletteremail.png)
 
 Sarah Rose erhält das Anstellungsschreiben zur Unterschrift
 
-Sarah kann wählen, ob sie ihre Unterschrift über die Tastatur oder mit der Zeichnenfunktion eingibt, ein Bild der Unterschrift einfügt oder den Touchscreen ihres Handys verwendet, um ihre Unterschrift zu zeichnen. Sarah gibt ihren Namen ein, klickt auf &quot;Click To Sign&quot;und lädt die signierte Kopie des Anstellungsschreibens herunter.
+Sarah kann wählen, ob sie ihre Unterschrift über die Tastatur oder mit der Zeichnenfunktion eingibt, ein Bild der Unterschrift einfügt oder den Touchscreen ihres Handys verwendet, um ihre Unterschrift zu zeichnen. Sarah gibt ihren Namen ein, klickt auf „Click To Sign“ (Zum Unterschreiben klicken) und lädt die unterschriebene Kopie des Anstellungsschreibens herunter.
 
 ![sarahrosejoininglettersign](assets/sarahrosejoininglettersign.png)
 
@@ -246,4 +246,4 @@ Sarah tippt ihren Namen ein, um das Anstellungsschreiben zu unterzeichnen
 
 ![sarahrosejoininglettersign2](assets/sarahrosejoininglettersign2.png)
 
-Sarah klickt auf &quot;Click To Sign&quot;, um die Unterzeichnung des Anstellungsschreibens abzuschließen
+Sarah klickt auf „Click To Sign“, um die Unterzeichnung des Anstellungsschreibens abzuschließen

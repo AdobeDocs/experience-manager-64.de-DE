@@ -12,7 +12,7 @@ exl-id: f80d006b-6970-4448-aa38-3ffec8b08c18
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 88%
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ In dieser Beispielorchestrierung reicht ein Mitarbeiter ein Urlaubsantragsformul
 
    >[!NOTE]
    >
-   >Dieser Renderer ist die Zusammenfassungsseitenvorlage.
+   >Dieser Renderer stellt die Übersichtsseitenvorlage dar.
 
    Der folgende Beispielcode für diesen Renderer ist enthalten in:
 

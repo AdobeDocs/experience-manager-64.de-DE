@@ -12,7 +12,7 @@ exl-id: c73fd1c5-6f3f-4c62-a8d6-fcd22f02c0ca
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '531'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Neben dem oben erwähnten Standardverfahren steht als Alternative eine Implement
 
 ## Konfigurieren von Forms Portal-Diensten für Entwürfe und Übermittlungen {#configuring-forms-portal-drafts-and-submissions-services}
 
-In der AEM Web Console-Konfiguration ( `https://[*host*]:[*port*]/system/console/configMgr`), klicken Sie zum Öffnen auf **Forms Portal-Konfiguration für Entwurf und Übermittlung** im Bearbeitungsmodus.
+Klicken Sie in der AEM-Web-Konsolenkonfiguration (`https://[*host*]:[*port*]/system/console/configMgr`), um die **Konfiguration des Formularportals für Entwurf und Übermittlung** im Bearbeitungsmodus zu öffnen.
 
 Geben Sie wie unten beschrieben die Werte für die Eigenschaften an wie für Ihre Zwecke benötigt:
 
@@ -104,8 +104,8 @@ Daten werden direkt an die konfigurierte Ferninstanz weitergeleitet.
 
 Geben Sie außer der oben angegebenen Konfiguration Informationen über die konfigurierte Fernverarbeitungsinstanz an.
 
-In der AEM Web Console-Konfiguration ( `https://[*host*]:[*port*]/system/console/configMgr`), klicken Sie zum Öffnen auf **AEM DS Settings Service** im Bearbeitungsmodus. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
+Klicken Sie in der AEM-Web-Konsolenkonfiguration (`https://[*host*]:[*port*]/system/console/configMgr`), um den **AEM DS-Einstellungen-Service** im Bearbeitungsmodus zu öffnen. Geben Sie im Dialogfeld des AEM DS-Einstellungsdienstes Informationen zu URL, Benutzername und Kennwort des Verarbeitungsservers an.
 
 >[!NOTE]
 >
->Eine Beispielimplementierung für die Speichern von Benutzerdaten in einer Datenbank wird ebenfalls bereitgestellt. Informationen zum Konfigurieren von Daten- und Metadatendiensten zum Speichern von Benutzerdaten in einer externen Datenbank finden Sie unter [Beispiel für die Integration der Komponente &quot;Drafts &amp; Submissions&quot;in die Datenbank](/help/forms/using/integrate-draft-submission-database.md).
+>Eine Beispielimplementierung für die Speichern von Benutzerdaten in einer Datenbank wird ebenfalls bereitgestellt. Um zu verstehen, wie Sie Daten- und Metadaten-Services konfigurieren, um Benutzerdaten in einer externen Datenbank zu speichern, siehe [Beispiel für die Integration der Komponente „Entwürfe und Übermittlungen“ mit der Datenbank](/help/forms/using/integrate-draft-submission-database.md).

@@ -1,7 +1,7 @@
 ---
 title: Referenzthemen
 seo-title: Reference Themes
-description: 'AEM Forms bietet Designs für adaptive Formulare, die Sie aus Softwareverteilung beziehen und zum Gestalten eines Formulars verwenden können. '
+description: 'AEM Forms bietet anpassungsfähige Formulardesigns, die Sie von Software Distribution beziehen und zur Gestaltung eines Formulars verwenden können. '
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,13 +11,13 @@ exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 79%
+ht-degree: 99%
 
 ---
 
 # Referenzthemen {#reference-themes}
 
-[Designs](/help/forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standarddesign können Sie die folgenden Designs abrufen, indem Sie die[AEM Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
+[Designs](/help/forms/using/themes.md) ermöglichen Ihnen, Ihre Formulare ohne fundierte Kenntnisse im Umgang mit CSS zu formatieren. Zusätzlich zum Standardthema können Sie die folgenden Themen erhalten, indem Sie das [AEM Forms Add-On-Pakete](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) installieren:
 
 * Beryl
 * Exec
@@ -34,7 +34,7 @@ Jedes Design enthält einen eindeutigen und eleganten Stil, den Sie verwenden k�
 
 Die Designs, die in diesem Paket enthalten sind, sind responsive und die Formatierung in diesen Themen ist definiert für Mobil- und Desktopanzeigen. Die meisten modernen Browser auf einer Vielzahl von Geräten können Formulare rendern, die mit einem dieser Designs mühelos angewendet werden.
 
-Weitere Informationen zur Installation des Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
+Weitere Informationen zur Installation eines Pakets finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 
@@ -77,14 +77,14 @@ Das Ultramarine-Design verwendet dunkelblaue Töne, um Komponenten wie Registerk
 
 ## Urbane {#urbane}
 
-Das Urbane-Design betont ein minimalistisches und funktionales Erscheinungsbild für Ihr Formular. Wenn Sie das Urbane-Design auf Ihr Formular anwenden, können Sie sehen, dass die Komponenten flach sind. Die Bedienfelder erhalten dünne Konturen, um einen modernen Look zu erzielen.
+Das Urban-Design betont einen minimalistischen und funktionalen Look für Ihr Formular. Wenn Sie das Urbane-Designs auf Ihr Formular anwenden, können Sie sehen, dass Komponenten reduziert sind. Die Bedienfelder erhalten dünne Konturen, um einen modernen Look zu erzielen.
 ![Urbane-Design](assets/urbane.png)
 
 [Zum Vergrößern hier klicken](assets/urbane-1.png)
 
 ## U.S. Web Design Standards {#u-s-web-design-standards}
 
-Wie der Name schon sagt, verwendet das Thema Web Design Standards in den USA Schriften und Stile, die auf der Website Draft U.S. Web Design Standards beschrieben sind. Der Webstandard wird von verschiedenen Bundesorganisationen verwendet, um konsistente Web-Erlebnisse für Bundesregierungswebsites zu erstellen.
+Das U.S. Webdesign Standard-Design, verwendet, wie der Name sagt, Schriftbilder und Stile, die auf der Seite „Draft U.S. Webdesign Standards“ beschrieben sind. Der Webstandard wird von verschiedenen Bundesorganisationen verwendet, um konsistente Web-Erlebnisse für Bundesregierungswebsites zu erstellen.
 ![U.S. Web Design Standards-Design](assets/us-web-standards.png)
 
 [Zum Vergrößern hier klicken](assets/usgov.png)

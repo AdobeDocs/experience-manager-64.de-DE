@@ -12,7 +12,7 @@ exl-id: 8c7e1ee2-0f7f-427e-aca2-d4bf523fd7f1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2109'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -194,7 +194,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>priority<br /> </td> 
    <td>F</td> 
-   <td>Es enthält die Priorität der Aufgabe.<br />1 = höchste Priorität<br /> 2 = Hohe Priorität<br /> 3 = Mittlere Priorität<br /> 4 = Niedrige Priorität<br /> 5 = Niedrigste Priorität<br />  </td> 
+   <td>Es enthält die Priorität der Aufgabe.<br /> 1 = höchste Priorität<br /> 2 = Hohe Priorität<br /> 3 = Mittlere Priorität<br /> 4 = Niedrige Priorität<br /> 5 = Niedrigste Priorität<br />  </td> 
   </tr>
   <tr>
    <td>processInstanceId</td> 
@@ -442,7 +442,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Startdatum des Zeitplans und endDate das Enddatum des Zeitplans. Wenn endDate planmäßig null ist, bedeutet dies, dass der Benutzer das Enddatum des Abwesenheitszeitplans nicht geplant hat.<br type="_moz" /> </td> 
+   <td>Es enthält Array-Objekte aus Abwesenheitszeitplänen eines Benutzers. In jedem Zeitplanobjekt enthält das Feld startDate das Startdatum des Zeitplans und endDate das Enddatum des Zeitplans. Wenn im Zeitplan das Feld endDate den Wert Null enthält, bedeutet dies, dass der Benutzer das Enddatum des Abwesenheitszeitplans nicht geplant hat.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -462,7 +462,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Es enthält ein Array von Objekten für prozessspezifische Vertreter für den Abwesenheitszeitraum. In jedem prozessspezifischen designierten Objekt enthält processName den Namen des Prozesses, isNotDesignated ist "true", wenn kein Benutzer für den entsprechenden Prozess zugewiesen ist, und userDesignated ist "null", wenn kein Benutzer weitere Details des für den entsprechenden Prozess zugewiesenen Benutzers zugewiesen hat.<br type="_moz" /> </td> 
+   <td>Es enthält ein Array von Objekten für prozessspezifische Vertreter für den Abwesenheitszeitraum. In jedem prozessspezifischen designierten Objekt enthält processName den Namen des Prozesses; isNotDesignated hat den Wert „true“, wenn dem entsprechenden Prozess kein Benutzer zugeordnet ist; userDesignated hat den Wert Null, wenn kein Benutzer Details dem Benutzer zugeordnet hat, der für den entsprechenden Vorgang vorgesehen war.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>Prozesse<br type="_moz" /> </td> 
@@ -541,7 +541,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>processVariables<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Array von Objekten aus Prozessvariablen Jedes Objekt einer Prozessvariable enthält name, den Namen der Prozessvariablen, value, den Wert der Prozessvariablen und type, den Typ der Prozessvariablen.<br type="_moz" /> </td> 
+   <td>Array von Objekten aus Prozessvariablen Jedes Objekt einer Prozessvariable enthält name, den Namen der Prozessvariable, value, den Wert der Prozessvariable und type, den Typ der Prozessvariable.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>tasklist<br type="_moz" /> </td> 
@@ -730,7 +730,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>Berechtigungen<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Berechtigungen, die mit einer Anlage verknüpft sind Das Feld allowRead steht für Leseberechtigung, allowWrite für Schreibberechtigung und allowDelete für Löschberechtigung.<br type="_moz" /> </td> 
+   <td>Berechtigungen, die mit einer Anlage verknüpft sind. Das Feld allowRead steht für die Leseberechtigung; allowWrite steht für die Schreibberechtigung, allowDelete steht für die Berechtigung zum Löschen.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>size<br type="_moz" /> </td> 
@@ -745,7 +745,7 @@ JSON-Objekte, die in AEM Forms Workspace verwendet werden, sind unten beschriebe
   <tr>
    <td>Typ<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Typ ist Anhang für Dateien und Typ ist Notiz für Notizen.<br type="_moz" /> </td> 
+   <td>Der Typ ist „attachment“ für Dateien und „note“ für Anmerkungen.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td> 

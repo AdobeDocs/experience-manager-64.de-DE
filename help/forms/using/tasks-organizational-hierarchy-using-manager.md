@@ -13,7 +13,7 @@ exl-id: 28877528-2f91-4ee0-b9d8-c7df364ed803
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -21,17 +21,17 @@ ht-degree: 77%
 
 In AEM Forms Workspace können Manager jetzt auf die Aufgaben zugreifen, die Benutzern in ihren Hierarchien – direkt oder indirekt unterstellten Mitarbeitern – zugewiesen sind, und dafür verschiedene Aktionen ausführen. Die Aufgaben sind in AEM Forms Workspace auf der Registerkarte „Aufgaben“ verfügbar. Die folgenden Aktionen werden für die Aufgaben direkt unterstellter Mitarbeiter unterstützt:
 
-**Weiterleiten** Leitet eine Aufgabe aus einem direkten Bericht an einen beliebigen Benutzer weiter.
+**Weiterleiten** Leitet eine Aufgabe von einem direkt unterstellten Mitarbeiter an einen beliebigen Benutzer weiter.
 
-**Anspruch** Fordert eine Aufgabe eines direkt unterstellten Mitarbeiters an.
+**Anfordern** Fordert eine Aufgabe von einem unterstellten Mitarbeiter an.
 
-**Anfordern und Öffnen** Fordert eine Aufgabe eines direkt unterstellten Mitarbeiters an und öffnet sie automatisch in der Aufgabenliste des Managers.
+**Anfordern und öffnen** Fordert eine Aufgabe von einem direkt unterstellten Mitarbeiter an und öffnet sie automatisch in der Aufgabenliste des Managers.
 
-**Ablehnen** Lehnen Sie eine Aufgabe ab, die von einem anderen Benutzer an einen direkt unterstellten Mitarbeiter weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
+**Ablehnen** Lehnt eine Aufgabe ab, die von einem anderen Benutzer an einen direkt unterstellten Mitarbeiter weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
 
 AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der Benutzer die Zugriffskontrolle (ACL) hat. Durch diese Überprüfung wird sichergestellt, dass ein Benutzer nur die Aufgaben abrufen kann, für die er Zugriffsberechtigungen hat. Eine Organisation kann die Hierarchie mit Webdiensten von Drittanbietern definieren und die Definition von Managern und direkt unterstellten Mitarbeitern an ihren Bedarf anpassen.
 
-1. Erstellen Sie ein DSC. Weitere Informationen finden Sie unter &quot;Entwickeln von Komponenten für AEM Forms&quot;in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) Handbuch.
+1. Erstellen Sie einen DSC. Weitere Informationen erhalten Sie unter „Entwickeln von Komponenten für AEM Forms“ im Handbuch [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 1. Definieren Sie in dem DSC eine neue SPI für das Hierarchiemanagement, um direkt unterstellte Mitarbeiter und Hierarchie unter den AEM Forms-Benutzern zu definieren. Im Folgenden finden Sie ein Java™-Beispielcodefragment.
 
    ```as3
@@ -111,7 +111,7 @@ AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der
    </component>
    ```
 
-1. Stellen Sie das DSC über Workbench bereit. Neu starten `ProcessManagementTeamTasksService` Dienst.
+1. Stellen Sie das DSC über Workbench bereit. Starten Sie den Service `ProcessManagementTeamTasksService` neu.
 1. Möglicherweise müssen Sie den Browser aktualisieren oder sich für den Benutzer erneut abmelden/anmelden.
 
 Der folgende Bildschirm veranschaulicht den Zugriff auf die Aufgaben direkt unterstellter Mitarbeiter und die verfügbaren Aktionen.

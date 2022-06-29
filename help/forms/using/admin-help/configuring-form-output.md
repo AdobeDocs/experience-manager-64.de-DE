@@ -13,7 +13,7 @@ exl-id: b19cae88-a549-41ba-b4a6-4b065a995296
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 94%
 
    **Voll-HTML**, um das Formular mit vollständigen HTML-Tags wiederzugeben (eine vollständige HTML-Seite). Dies ist der Standardwert.
 
-   **Formulartext:** So rendern Sie das Formular in `<BODY>` Tags (keine vollständige HTML-Seite).
+   **Formularhauptteil:** Um das Formular zwischen `<BODY>`-Tags wiederzugeben (keine vollständige HTML-Seite).
 
 1. Klicken Sie auf Speichern.
 

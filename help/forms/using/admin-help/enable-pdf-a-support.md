@@ -22,7 +22,7 @@ ht-degree: 100%
 
 PDF Generator unterstützt die Erstellung von PDF/A-kompatiblen Dateien aus Microsoft Excel-, Microsoft PowerPoint- und Microsoft Word-Dateien.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator “ > „Dateitypeinstellungen“.
+1. Klicken Sie in Administration Console auf Dienste > PDF Generator > Dateitypeinstellungen.
 1. Klicken Sie auf „Neu“ oder wählen Sie eine vorhandene Dateitypeinstellung aus.
 1. Klicken Sie auf „Microsoft Excel“, „Microsoft PowerPoint“ oder „Microsoft Word“, aktivieren Sie die Option „PDF/A-1a-kompatible Datei erstellen“ und speichern Sie Ihre Änderungen.
 1. Klicken Sie in der nativen Anwendung (z. B. Microsoft Word) auf „Adobe PDF“ > „Konvertierungseinstellungen ändern“ und wählen Sie „PDF/A-1b“ aus.

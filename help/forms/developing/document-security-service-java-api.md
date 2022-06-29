@@ -1,5 +1,5 @@
 ---
-title: Document Security Service JavaAPI-Schnellstart (SOAP)
+title: Java API-Schnellstart (SOAP) für den Document Security-Dienst
 seo-title: Document Security Service JavaAPI Quick Start(SOAP)
 description: 'Verwenden Sie die Java-API des Rights Management-Dienstes, um eine Richtlinie zu erstellen, eine Richtlinie zu ändern, eine Richtlinie zu löschen, eine Richtlinie auf ein PDF-Dokument anzuwenden, eine Richtlinie aus einem PDF-Dokument zu entfernen, ein Dokument zu sperren, den Zugriff auf ein gesperrtes Dokument erneut zu aktivieren, richtliniengeschützte PDF-Dokumente zu prüfen, ein Wasserzeichen zu erstellen, ein Wasserzeichen zu ändern, nach Ereignissen zu suchen und eine Richtlinie aus einem Word-Dokument zu entfernen. '
 seo-description: Use the Rights management service Java API to create a policy, modify a policy, delete a policy, apply a policy to a PDF document, remove a policy from  a PDF document, revoke a document, reinstate access to a revoked document, inspect policy protected PDF documents, create a watermark, modify a watermark, search for events, and remove a policy from a Word document.
@@ -14,29 +14,29 @@ exl-id: 982223c2-aa4a-4013-8136-0155a99f5eff
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 0%
+ht-degree: 94%
 
 ---
 
-# Schnellstart für die Java-API des Document Security-Dienstes (SOAP) {#document-security-service-javaapi-quick-start-soap}
+# Document Security-Dienste Java API-Schnellstart (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
-Java API Quick Start (SOAP) ist für den Rights Management-Dienst verfügbar:
+Der Java API-Schnellstart (SOAP) ist für den Rights Management-Dienst verfügbar:
 
 [Schnellstart (SOAP-Modus): Erstellen einer Richtlinie mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-creating-a-policy-using-the-java-api)
 
 [Schnellstart (SOAP-Modus): Ändern einer Richtlinie mit der Java-API](#quick-start-soap-mode-modifying-a-policy-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Löschen einer Richtlinie mithilfe der Java-API](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
+[Schnellstart (SOAP-Modus): Löschen einer Richtlinie mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-deleting-a-policy-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Java-API](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Anwenden einer Richtlinie auf ein PDF-Dokument mit der Java-API](#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem PDF-Dokument mithilfe der Java-API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem PDF-Dokument mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Sperren eines Dokuments mithilfe der Java-API](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Widerrufen eines Dokuments mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-revoking-a-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Zugriff auf ein gesperrtes Dokument mit der Java-API reaktivieren](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Wiederherstellen des Zugriffs auf ein widerrufenes Dokument mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Untersuchen richtliniengeschützter PDF-Dokumente mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
+[Schnellstart (SOAP-Modus): Überprüfung richtliniengeschützter PDF-Dokumente mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api)
 
 [Schnellstart (SOAP-Modus): Erstellen eines Wasserzeichens mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api)
 
@@ -44,17 +44,17 @@ Java API Quick Start (SOAP) ist für den Rights Management-Dienst verfügbar:
 
 [Schnellstart (SOAP-Modus): Suchen nach Ereignissen mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-searching-for-events-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem Word-Dokument mithilfe der Java-API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
+[Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem Word-Dokument mit der Java-API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Schnellstart, der unter Programmieren mit AEM Forms zu finden ist, basiert auf dem Forms-Server-Betriebssystem. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Der Schnellstart in „Programmieren mit AEM Forms“ basiert auf dem Forms Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Start (SOAP mode): Creating a policy using the Java API {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
+## Schnellstart (SOAP-Modus): Erstellen einer Richtlinie mit der Java-API {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-The following Java code example creates a new policy named *Allow Copy*. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt *Globaler Richtliniensatz*. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe [Erstellen von Richtlinien](/help/forms/developing/protecting-documents-policies.md#creating-policies).
+Das folgende Java-Codebeispiel erstellt eine neue Richtlinie mit dem Namen *Kopieren zulassen*. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt *Globaler Richtliniensatz*. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe [Erstellen von Richtlinien](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
 ```as3
  /* 
@@ -183,7 +183,7 @@ The following Java code example creates a new policy named *Allow Copy*. Der Ric
 
 ## Schnellstart (SOAP-Modus): Ändern einer Richtlinie mit der Java-API {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Kopieren zulassen* durch Festlegung der Offline-Nutzungsdauer auf 40 Tage. (Siehe [Ändern von Richtlinien](/help/forms/developing/protecting-documents-policies.md#modifying-policies).
+Das folgende Java-Codebeispiel ändert eine Richtlinie mit dem Namen *Kopieren zulassen*, indem es die Offline-Leasingdauer auf 40 Tage festlegt. (Siehe [Ändern von Richtlinien](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
 ```as3
  /* 
@@ -282,9 +282,9 @@ Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Kopieren zula
  }
 ```
 
-## Schnellstart (SOAP-Modus): Löschen einer Richtlinie mithilfe der Java-API {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
+## Schnellstart (SOAP-Modus): Löschen einer Richtlinie mit der Java-API {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Kopieren zulassen*. (Siehe [Löschen von Richtlinien](/help/forms/developing/protecting-documents-policies.md#deleting-policies).
+Das folgende Java-Codebeispiel löscht eine Richtlinie mit dem Namen *Kopieren zulassen*. (Siehe [Löschen von Richtlinien](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
 ```as3
  /* 
@@ -374,9 +374,9 @@ Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Kopieren zula
  
 ```
 
-## Schnellstart (SOAP-Modus): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
+## Schnellstart (SOAP-Modus): Anwenden einer Richtlinie auf ein PDF-Dokument mit der Java-API {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Kopieren zulassen* zu einem PDF-Dokument mit dem Namen *Loan.pdf*. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt *Globaler Richtliniensatz*. Das richtliniengeschützte Dokument wird als PDF-Datei mit dem Namen *PolicyProtectedLoanDoc.pdf gespeichert. *(Siehe [Anwenden von Richtlinien auf PDF-Dokumente](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).
+Das folgende Java-Codebeispiel wendet eine Richtlinie mit dem Namen *Kopieren zulassen* auf ein PDF-Dokument mit dem Namen *Loan.pdf* an. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt *Globaler Richtliniensatz*. Das richtliniengeschützte Dokument wird als PDF-Datei mit dem Namen *„PolicyProtectedLoanDoc.pdf“ gespeichert. *(Siehe [Anwenden von Richtlinien auf PDF-Dokumente](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
 ```as3
  /* 
@@ -480,9 +480,9 @@ Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Kopieren zula
  }
 ```
 
-## Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
+## Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem PDF-Dokument mit der Java-API {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-Im folgenden Codebeispiel wird eine Richtlinie aus einem PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf*. Das ungesicherte PDF-Dokument wird als *unProtectedLoan.pdf*. (Siehe [Entfernen von Richtlinien aus PDF-Dokumenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).
+Mit dem folgenden Codebeispiel wird eine Richtlinie aus einem PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf* entfernt. Das ungeschützte PDF-Dokument wird als *unProtectedLoan.pdf* gespeichert. (Siehe [Entfernen von Richtlinien aus PDF-Dokumenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
 
 ```as3
  /* 
@@ -587,9 +587,9 @@ Im folgenden Codebeispiel wird eine Richtlinie aus einem PDF-Dokument mit dem Na
  
 ```
 
-## Quick Start (SOAP mode): Revoking a document using the Java API {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
+## Schnellstart (SOAP-Modus): Widerrufen eines Dokuments mit der Java-API {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein richtliniengeschütztes Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf*. A revised PDF document is located at the following URL location `https://[server]:[port]/RightsManagement/UpdatedLoan.pdf`. (See [Revoking Access to Documents](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
+Das folgende Java-Codebeispiel hebt ein richtliniengeschütztes Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf* auf. Ein überarbeitetes PDF-Dokument befindet sich unter der folgenden URL-Adresse `https://[server]:[port]/RightsManagement/UpdatedLoan.pdf`. (Siehe [Widerruf des Zugriffs auf Dokumente](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
 ```as3
  /* 
@@ -701,9 +701,9 @@ Im folgenden Java-Codebeispiel wird ein richtliniengeschütztes Dokument mit dem
  
 ```
 
-## Schnellstart (SOAP-Modus): Untersuchen richtliniengeschützter PDF-Dokumente mit der Java-API {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
+## Schnellstart (SOAP-Modus): Überprüfung richtliniengeschützter PDF-Dokumente mit der Java-API {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-The following Java code example inspects a policy-protected PDF document named *PolicyProtectedLoanDoc.pd* f. (See [Inspecting Policy Protected PDF Documents](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
+Das folgende Java-Codebeispiel überprüft ein richtliniengeschütztes PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf*. (Siehe [Überprüfen von richtliniengeschützten PDF-Dokumenten](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
 
 ```as3
  /* 
@@ -819,9 +819,9 @@ The following Java code example inspects a policy-protected PDF document named *
  
 ```
 
-## Schnellstart (SOAP-Modus): Zugriff auf ein gesperrtes Dokument mit der Java-API reaktivieren {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
+## Schnellstart (SOAP-Modus): Wiederherstellen des Zugriffs auf ein widerrufenes Dokument mit der Java-API {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird der Zugriff auf ein gesperrtes PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf*. (See [Reinstating Access to Revoked Documents](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
+Das folgende Java-Codebeispiel stellt den Zugriff auf ein widerrufenes PDF-Dokument mit dem Namen *PolicyProtectedLoanDoc.pdf* wieder her. (Siehe [Wiederherstellung des Zugriffs auf widerrufene Dokumente](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
 
 ```as3
  /* 
@@ -925,9 +925,9 @@ Im folgenden Java-Codebeispiel wird der Zugriff auf ein gesperrtes PDF-Dokument 
  
 ```
 
-## Schnellstart (SOAP-Modus): Erstellen eines PDF-Wasserzeichens mithilfe der Java-API {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
+## Schnellstart (SOAP-Modus): Erstellen eines PDF-Wasserzeichens mit der Java-API {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein neues PDF-Wasserzeichen namens &quot;Sample PDF Watermark&quot;erstellt. Dieses Wasserzeichen enthält ein einzelnes Element (siehe [Wasserzeichen erstellen](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
+Das folgende Java-Codebeispiel erstellt ein neues PDF-Wasserzeichen mit dem Namen „Sample PDF Watermark“. Dieses Wasserzeichen enthält ein einzelnes Element (siehe [Wasserzeichen erstellen](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
 ```as3
 /* 
@@ -1058,9 +1058,9 @@ public class PDFWatermarksSOAPMode {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Erstellen eines Text-Wasserzeichens mithilfe der Java-API {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
+## Schnellstart (SOAP-Modus): Erstellen eines Text-Wasserzeichens mit der Java-API {#quick-start-soap-mode-creating-a-text-watermark-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein neues Text-Wasserzeichen mit dem Namen *Beispieltext-Wasserzeichen*. Dieses Wasserzeichen enthält ein einzelnes Element.
+Im folgenden Java-Codebeispiel wird ein neues Text-Wasserzeichen mit dem Namen *Sample Text Watermark*. Dieses Wasserzeichen enthält ein einzelnes Element.
 
 ```as3
 /* 
@@ -1207,9 +1207,9 @@ public class TextWatermarks {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Ändern eines Text-Wasserzeichens mithilfe der Java-API {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
+## Kurzanleitung (SOAP-Modus): Ändern eines Text-Wasserzeichens mithilfe der Java-API {#quick-start-soap-mode-modifying-a-text-watermark-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein Wasserzeichen namens &quot;Beispieltext-Wasserzeichen&quot;geändert und die Deckkraft des ersten Elements auf 100 gesetzt.
+Im folgenden Java-Code-Beispiel wird ein Wasserzeichen namens „Sample Text Watermark“ geändert und die Deckkraft des ersten Elements auf 100 gesetzt.
 
 ```as3
 /* 
@@ -1321,7 +1321,7 @@ public class ModifyWatermarks {
 
 ## Schnellstart (SOAP-Modus): Ändern eines Wasserzeichens mit der Java-API {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein Wasserzeichen mit dem Namen *Vertraulich* durch Änderung des Werts der `opacity` auf 80.
+Im folgenden Java-Code-Beispiel wird ein Wasserzeichen mit dem Namen *Confidential* geändert, indem der Wert des Attributs `opacity` auf 80 geändert wird.
 
 ```as3
  /* 
@@ -1419,7 +1419,7 @@ Im folgenden Java-Codebeispiel wird ein Wasserzeichen mit dem Namen *Vertraulich
 
 ## Schnellstart (SOAP-Modus): Suchen nach Ereignissen mit der Java-API {#quick-start-soap-mode-searching-for-events-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird nach dem Erstellungsrichtlinienereignis gesucht.
+Im folgenden Java-Code-Beispiel wird nach dem Ereignis der Richtlinienerstellung gesucht.
 
 ```as3
  /* 
@@ -1530,9 +1530,9 @@ Im folgenden Java-Codebeispiel wird nach dem Erstellungsrichtlinienereignis gesu
  
 ```
 
-## Schnellstart (SOAP): Anwenden einer Richtlinie auf ein Word-Dokument mithilfe der Java-API {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
+## Kurzanleitung (SOAP): Anwenden einer Richtlinie auf ein Word-Dokument mithilfe der Java-API {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Kopieren zulassen* in ein Word-Dokument mit dem Namen *Loan.doc*. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt *Globaler Richtliniensatz*. The policy-protected document is saved as a DOC file named *PolicyProtectedLoanDoc.doc. *(Siehe [Anwenden von Richtlinien auf PDF-Dokumente](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).
+Im folgenden Java-Code-Beispiel wird eine Richtlinie mit dem Namen *Allow Copy* (Kopieren zulassen) auf ein Word-Dokument mit dem Namen *Loan.doc* angewendet. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt *Globaler Richtliniensatz*. Das richtliniengeschützte Dokument wird als DOC-Datei mit dem Namen „PolicyProtectedLoanDoc.doc“ gespeichert. (Siehe [Anwenden von Richtlinien auf PDF-Dokumente](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
 ```as3
  /* 
@@ -1645,9 +1645,9 @@ Im folgenden Java-Codebeispiel wird eine Richtlinie mit dem Namen *Kopieren zula
  
 ```
 
-## Quick Start (SOAP mode): Removing a policy from a Word document using the Java API {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
+## Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem Word-Dokument mit der Java-API {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-The following code example removes a policy from a Word document named *PolicyProtectedLoanDoc.doc*. The unsecured Word document is saved as *unProtectedLoan.doc*. (See [Removing Policies from Word Documents](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
+Im folgenden Code-Beispiel wird eine Richtlinie aus einem Word-Dokument mit dem Namen *PolicyProtectedLoanDoc.doc* entfernt. Das ungeschützte Word-Dokument wird als *unProtectedLoan.doc* gespeichert. (Siehe [Entfernen von Richtlinien aus Word-Dokumenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
 
 ```as3
  /* 
@@ -1753,9 +1753,9 @@ The following code example removes a policy from a Word document named *PolicyPr
  
 ```
 
-## Schnellstart (SOAP-Modus): Erstellen einer abstrakten Richtlinie mit der Java-API {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
+## Kurzanleitung (SOAP-Modus): Erstellen einer abstrakten Richtlinie mithilfe der Java-API {#quick-start-soap-mode-creating-an-abstract-policy-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine neue abstrakte Richtlinie namens AllowCopy erstellt. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt &quot;Globaler Richtliniensatz&quot;. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe Erstellen von Richtlinien .)
+Im folgenden Java-Code-Beispiel wird eine neue abstrakte Richtlinie namens „AllowCopy“ erstellt. Der Richtliniensatz, dem die Richtlinie hinzugefügt wird, heißt „Globaler Richtliniensatz“. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe „Erstellen von Richtlinien“.)
 
 ```as3
 /* 
@@ -1870,9 +1870,9 @@ public class CreateAbstractPolicySoap {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Ändern einer abstrakten Richtlinie mithilfe der Java-API {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
+## Kurzanleitung (SOAP-Modus): Ändern einer abstrakten Richtlinie mithilfe der Java-API {#quick-start-soap-mode-modifying-an-abstract-policy-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine abstrakte Richtlinie namens AllowCopy geändert. Der Richtliniensatz, in dem die Richtlinie geändert wird, heißt &quot;Globaler Richtliniensatz&quot;. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe Erstellen von Richtlinien .)
+Im folgenden Java-Code-Beispiel wird eine abstrakte Richtlinie namens „AllowCopy“ geändert. Der Richtliniensatz, in dem die Richtlinie geändert wird, heißt „Globaler Richtliniensatz“. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe „Erstellen von Richtlinien“.)
 
 ```as3
 /* 
@@ -1969,9 +1969,9 @@ public class ModifyingAbstractPolicySoap {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Löschen einer abstrakten Richtlinie mithilfe der Java-API {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
+## Kurzanleitung (SOAP-Modus): Löschen einer abstrakten Richtlinie mithilfe der Java-API {#quick-start-soap-mode-deleting-an-abstract-policy-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird eine abstrakte Richtlinie mit dem Namen AllowCopy gelöscht. Der Richtliniensatz, aus dem die Richtlinie gelöscht wird, heißt &quot;Globaler Richtliniensatz&quot;. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe Erstellen von Richtlinien .)
+Im folgenden Java-Code-Beispiel wird eine abstrakte Richtlinie namens „AllowCopy“ gelöscht. Der Richtliniensatz, aus dem die Richtlinie gelöscht wird, heißt „Globaler Richtliniensatz“. Dieser Richtliniensatz ist standardmäßig vorhanden. (Siehe „Erstellen von Richtlinien“.)
 
 ```as3
 /* 
@@ -2056,9 +2056,9 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Schnellstart (SOAP-Modus): Protect einen PDF in Statement-Workflow für einen vorhandenen Benutzer mithilfe der Java-API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## Kurzanleitung (SOAP-Modus): Schützen einer PDF-Datei für einen vorhandenen Benutzer in einem Anweisungs-Workflow mithilfe der Java-API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
-Das folgende Java-Codebeispiel zeigt die Methode zum Schützen eines Dokuments im Anweisungs-Workflow für einen vorhandenen Benutzer.
+Das folgende Java-Code-Beispiel zeigt die Methode zum Schützen eines Dokuments für einen vorhandenen Benutzer in einem Anweisungs-Workflow.
 
 ```as3
 /* 
@@ -2164,12 +2164,12 @@ public class protectStatementWorkFlowExistingUserSoap {
 }
 ```
 
-## Quick Start (SOAP mode): Protect a PDF in Statement Workflow for a new User, using the Java API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
+## Kurzanleitung (SOAP-Modus): Schützen einer PDF-Datei für einen neuen Benutzer in einem Anweisungs-Workflow mithilfe der Java-API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-a-new-user-using-the-java-api}
 
-The following Java code example demonstrates how you can protect a document in Statement Workflow. Dies ist ein zweistufiger Prozess:
+Das folgende Java-Code-Beispiel zeigt, wie Sie ein Dokument in einem Anweisungs-Workflow schützen können. Dies ist ein zweistufiger Prozess:
 
-* A new User, License and Policy are created.
-* Der Benutzer ist mit der Lizenz und Richtlinie verknüpft und das Dokument ist geschützt.
+* Ein neuer Benutzer, eine neue Lizenz und eine neue Richtlinie werden erstellt.
+* Der Benutzer ist mit der Lizenz und Richtlinie verknüpft, und das Dokument ist geschützt.
 
 ```as3
 /* 

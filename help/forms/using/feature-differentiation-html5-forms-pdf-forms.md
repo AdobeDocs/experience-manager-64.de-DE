@@ -14,7 +14,7 @@ exl-id: 2b82e68c-ec11-417d-a8e2-769da9b35140
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -42,7 +42,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   <tr>
    <td>Datenzusammenführung</td> 
    <td>Unterstützt</td> 
-   <td>Unterstützt</td> 
+   <td>Unterstützt </td> 
   </tr>
   <tr>
    <td>Bilder</td> 
@@ -52,7 +52,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   <tr>
    <td>Seitenumbruch<br /> </td> 
    <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es wie ein PDF-Formular wirkt. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet und es wird kein Leerraum zwischen den Seiten angezeigt, die der leeren Seite vorangehen und folgen.</p> <p>Wird einer Seite durch Datenzusammenführung oder Skripte Inhalt hinzugefügt, wird die Seite verlängert, damit der neu hinzukommende Inhalt Platz findet. Dem Formular werden keine neuen Seiten für den neuen Inhalt hinzugefügt. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite zwischen der ersten und zweiten, nicht jedoch zwischen den weiteren Seiten sichtbar.</p> </td> 
-   <td>Die Paginierung in der PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab und die Seitenzahl wird je nach Inhalt erhöht/reduziert.</td> 
+   <td>Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab. Abhängig davon wird die Seitenanzahl erhöht bzw. verringert.</td> 
   </tr>
   <tr>
    <td>Kopf- und Fußzeilen </td> 
@@ -66,18 +66,18 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5- und PDF-Formu
   </tr>
   <tr>
    <td>XFA-Skript-API</td> 
-   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Eine detaillierte Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td> 
+   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Eine detaillierte Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Unterstützung der Skripterstellung</a>.</td> 
    <td>Unterstützt alle XFA-Skriptkonstrukte.</td> 
   </tr>
   <tr>
    <td>Acrobat-Skript-APIs </td> 
-   <td>HTML5-Formulare unterstützen die am häufigsten verwendeten APIs. Weitere Informationen finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td> 
+   <td>HTML5-Formulare unterstützen die am häufigsten verwendeten APIs. Weitere Informationen finden Sie unter <a href="/help/forms/using/scripting-support.md">Unterstützung für Skripterstellung</a>.</td> 
    <td>Wenn die PDF-Datei in Acrobat oder Reader geöffnet ist, unterstützt sie auch alle Skript-APIs, die Acrobat bereitstellt.</td> 
   </tr>
   <tr>
    <td>Unterstützung für Sprachen mit Rechts-nach-links-Schreibrichtung </td> 
    <td>Unterstützt</td> 
-   <td>Unterstützt</td> 
+   <td>Unterstützt </td> 
   </tr>
  </tbody>
 </table>

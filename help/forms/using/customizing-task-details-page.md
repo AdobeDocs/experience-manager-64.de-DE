@@ -12,7 +12,7 @@ exl-id: de97e6f7-25bf-462b-b67d-0d3fbd86a321
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 61%
+ht-degree: 91%
 
 ---
 
@@ -28,9 +28,9 @@ Sie können die folgenden Informationen der Aufgabendetailseite hinzufügen:
 So passen Sie die Aufgabendetailseite an:
 
 1. Folgen Sie den Anweisungen unter [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Um weitere Informationen anzuzeigen, fügen Sie entsprechende Schlüssel-Wert-Paare zum `translation.json` Datei unter `todo`block > `details`block > `app`block > [ `required`block].
+1. Wenn Sie zusätzliche Informationen anzeigen möchten, fügen Sie der Datei `translation.json` entsprechende Schlüssel-Wert-Paare an der Stelle `todo`-Block > `details`-Block > `app`-Block > [ `required`-Block] hinzu.
 
-   Die [ `required`block] bezieht sich auf verfügbare Bausteine, wie z. B. den Aufgabenblock für Aufgabeninformationen, den Prozessblock für Prozessinformationen und den derzeit ausstehenden Aufgabenblock für Informationen zu ausstehenden Aufgaben.
+   Der [ `required`-Block] verweist auf verfügbare Blöcke, wie den task-Block für Aufgabeninformationen, den process-Block für Prozessinformationen und den currentpendingtask-Block für Informationen zu ausstehenden Aufgaben.
 
    Um beispielsweise Informationen über „Routenauswahl erforderlich“ auf der Aufgabendetailseite hinzuzufügen, können Sie das folgende Schlüssel-Wert-Paar im Aufgabenblock hinzufügen:
 
@@ -57,7 +57,7 @@ So passen Sie die Aufgabendetailseite an:
 
 1. Kopieren Sie `/libs/ws/js/runtime/templates/taskdetails.html` nach `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/taskdetails.html`. Beispiel:
+   Fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/taskdetails.html` hinzu. Beispiel:
 
    ```css
    <div class="detailsContainer">
@@ -80,10 +80,10 @@ So passen Sie die Aufgabendetailseite an:
 
 1. Öffnen Sie /apps/ws/js/registry.js zur Bearbeitung.
 
-   Suchen und Ersetzen `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` mit `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
+   Suchen und ersetzen Sie `text!/lc/libs/ws/js/runtime/templates/taskdetails.html` durch `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
 
 >[!NOTE]
 >
 >Um die Aufgabendetailseite mit Aufgaben anzupassen, die auf der Registerkarte &quot;Startprozess&quot;in AEM Forms Workspace erstellt wurden, fügen Sie die neuen Informationen zu `/apps/ws/js/runtime/templates/startprocess.html`.
 >
->Um neue Stile für die auf der Detailseite hinzugefügten Informationen hinzuzufügen, ändern Sie die CSS-Datei mithilfe der *Änderungen an der Benutzeroberfläche* Abschnitt in [Workspace-Anpassung](/help/forms/using/changing-locale-user-interface.md).
+>Um neue Stile für die auf der Detailseite hinzugefügten Informationen hinzuzufügen, ändern Sie die CSS-Datei entsprechend dem Abschnitt *Änderungen der Benutzeroberfläche* in [Anpassung von Workspace](/help/forms/using/changing-locale-user-interface.md).

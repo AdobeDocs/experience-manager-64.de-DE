@@ -9,13 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 feature: Forms Portal
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 378e7e16-d22d-4fc3-93f4-fbfcdb28deb5
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '1233'
-ht-degree: 70%
+ht-degree: 92%
 
 ---
-
 
 # Anpassen von Vorlagen für Forms Portal-Komponenten {#customizing-templates-for-forms-portal-components}
 
@@ -39,8 +39,8 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für 
 
    Fügen Sie eine fpContentType-Eigenschaft hinzu. Geben Sie entsprechende Werte für die Eigenschaft abhängig von der Komponente an, für die Sie die benutzerdefinierte Vorlage definieren.
 
-   * Komponente „Search &amp; Lister“: &quot;/libs/fd/fp/formTemplate&quot;
-   * Komponente &quot;Drafts &amp; Submissions&quot;:
+   * Komponente „Search &amp; Lister“: „/libs/fd/fp/formTemplate“
+   * Komponente „Drafts &amp; Submissions“:
 
       * Bereich „Drafts“: /libs/fd/fp/draftsTemplate
       * Bereich „Submissions“: /libs/fd/fp/submissionsTemplate
@@ -78,17 +78,17 @@ Beim Folgenden Beispiel handelt es sich um eine Implementierung einer benutzerde
 
 ## Technische Spezifikationen für benutzerdefinierte Vorlagen {#technical-specifications-for-custom-templates}
 
-Eine benutzerdefinierte Vorlage für eine Forms Portal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind die grundlegenden Einheiten für die Auflistung. Beispiele für wiederholbare Einträge sind Komponenten des Typs „Search &amp; Lister“, „Drafts &amp; Submissions“ sowie „Link“.
+Eine benutzerdefinierte Vorlage für eine beliebige Formularportal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind die grundlegenden Einheiten für die Auflistung. Beispiele für wiederholbare Einträge sind Komponenten des Typs „Search &amp; Lister“, „Drafts &amp; Submissions“ sowie „Link“.
 
 Forms Portal bietet eine Syntax für Platzhalter zur Anzeige von benutzerdefinierten bzw. OOTB-Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse aus Formularen, Entwürfen oder Übermittlungen angezeigt.
 
-Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** nach **true**.
+Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** als **true**.
 
-*Im oben gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Die **data-repeatable** -Attribut im Div-Element hat den Wert **true**.
+*Im gezeigten Beispiel sind oben in der benutzerdefinierten Vorlage zwei Div-Elemente vorhanden. Das erste mit der CSS-Klasse „__FP_boxes-container“ fungiert als Containerelement für die aufgelisteten Formulare. Das zweite mit der CSS-Klasse „__FP_boxes“ ist eine Vorlage für die Basiseinheiten, in diesem Fall ein Formular. Das Attribut **data-repeatable** im Div-Element weist den Wert **true** auf.
 
 Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um benutzerdefinierte Metadaten an einer bestimmten Stelle im Formular anzuzeigen, fügen Sie die **$metadata_prop property** am Ort.
 
-*Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird beispielsweise in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der vorgeschriebenen Weise.*
+*Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
 
 ## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
 
@@ -99,10 +99,10 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 * **Title**: Titel des Formulars
 * **name**: Name des Formulars (meist identisch mit dem Titel)
 * **description**: Beschreibung des Formulars
-* **formUrl**: URL zum Rendern des Formulars als HTML
-* **pdfUrl**: URL zum Rendern des Formulars als PDF
-* **assetType**: Typ des Assets Gültige Werte sind **Formular**, **PDF-Formular**, **Formular ausdrucken** und **Adaptives Formular**
-* **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind &quot;**__FP_display_none**&quot; oder **blank**
+* **formUrl**: URL zur Ausgabe des Formulars als HTML
+* **pdfUrl**: URL zur Ausgabe des Formulars als PDF
+* **assetType**: Typ des Assets. Gültige Werte sind unter anderem **Form**,**PDF Form**,**Print Form** und **Adaptive Form**
+* **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind **__FP_display_none****oder Leerlassen**
 
    *Hinweis: Denken Sie daran, im benutzerdefinierten Stylesheet die Klasse „__FP_display_none“ zu verwenden*
 
@@ -123,13 +123,13 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 ### Komponente „Link“ {#link-component}
 
 * **Title**: Titel des Formulars
-* **formUrl**: URL zum Rendern des Formulars als HTML
+* **formUrl**: URL zur Ausgabe des Formulars als HTML
 * **target**: Zielattribut des Links. Gültige Werte sind „_blank“ und „_self“.
 * **linkText**: Beschriftung des Links
 
 ### Komponente „Drafts &amp; Submissions“ {#drafts-amp-submissions-component}
 
-* **Path**: Pfad des Entwurfs-/Übermittlungs-Metadatenknotens Verwenden Sie ihn mit der Erweiterung .HTML als URL, um einen Entwurf oder eine Übermittlung zu öffnen.
+* **Path**: Pfad des Entwurfs-/Übermittlungs-Metadatenknotens. Verwenden Sie ihn mit der Erweiterung .HTML als URL, um einen Entwurf oder eine Übermittlung zu öffnen.
 * **contextPath**: Kontextpfad der AEM-Instanz.
 * **firstLetter**: Erster Buchstabe (groß) des Titels des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
 * **formName**: Der Titel des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
@@ -140,12 +140,12 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 * **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ: Differenz zwischen der aktuellen Zeit und der letzten Übermittlungsaktion für die Übermittlung.
 * **iconClass**: CSS-Klasse zur Anzeige des ersten Buchstabens des Entwurfs/der Übermittlung. Forms Portal umfasst die folgenden Klassen, die Hintergründe in verschiedenen Farben bereitstellen.
 * **owner**: Benutzer, der den Entwurf/die Übermittlung erstellt hat.
-* **Heute**: Erstellungsdatum des Entwurfs oder der Übermittlung in DD:MM:Format JJJJ.
-* **TimeNow**: Zeitpunkt der Erstellung des Entwurfs oder der Übermittlung in der HH:MM:Format &quot;SS 24-Stunden&quot;
+* **Today**: Erstellungsdatum des Entwurfs/der Übermittlung im Format TT:MM:JJJJ.
+* **TimeNow**: Erstellungszeitpunkt des Entwurfs/der Übermittlung im 24-Stunden-Format HH:MM:SS.
 
 *Hinweis:*
 
-1. Geben Sie der CSS-Klasse für die Löschoption im Bereich „Drafts“ in der Komponente „Drafts &amp; Submissions“ den Namen „__FP_deleteDraft“. Schließen Sie außerdem das Attribut &quot;draftID&quot;mit dem Wert ein **${draftID}**, die die Entwurfs-ID des entsprechenden Entwurfs darstellt.
+1. Geben Sie der CSS-Klasse für die Löschoption im Bereich „Drafts“ in der Komponente „Drafts &amp; Submissions“ den Namen „__FP_deleteDraft“. Schließen Sie außerdem das Attribut „draftID“ mit dem Wert **${draftID}** ein, bei dem es sich um die Entwurfs-ID des entsprechenden Entwurfs handelt.
 
 1. Beim Erstellen von Links zu geöffneten Entwürfen und Übermittlungen können Sie **$path.html** als Wert der **href** -Attribut für das Anker-Tag.
 
@@ -153,31 +153,30 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 
 **A**. Container-Element
 
-**B.** &quot;path&quot;-Metadaten mit einer festen Hierarchie, um die für jedes Formular gespeicherte Miniaturansicht abzurufen.
+**B.** „path“-Metadaten mit einer festen Hierarchie zum Abruf der für jedes Formular gespeicherten Miniatur.
 
 **C.** Datenwiederholbares Attribut für den Vorlagenbereich jedes Formulars
 
-**D.** So lokalisieren Sie die Zeichenfolge &quot;Apply&quot;
+**D.** Zu lokalisierender String „Apply“ 
 
-**E.** Verwenden der Konfigurationseigenschaft &quot;pdfLinkText&quot;
+**E.** Verwenden der Konfigurationseigenschaft „pdfLinkText“ 
 
-**F.** Verwenden der Metadaten &quot;pdfUrl&quot;
+**F.** Verwenden der Metadaten „pdfUrl“
 
 ## Tipps, Tricks und bekannte Probleme {#tips-tricks-and-known-issues}
 
 1. Verwenden Sie in keiner benutzerdefinierten Vorlage einfache Anführungszeichen (&#39;).
-1. Bei benutzerdefinierten Metadaten speichern Sie diese Eigenschaft im **jcr:content/metadata** nur Knoten. Wenn Sie sie an einem anderen Ort speichern, kann Forms Portal die Metadaten nicht anzeigen.
+1. Bei benutzerdefinierten Metadaten speichern Sie diese Eigenschaft nur im Knoten **jcr:content/metadata**. Wenn Sie sie an einem anderen Ort speichern, kann das Formularportal die Metadaten nicht anzeigen.
 1. Stellen Sie sicher, dass der Name von benutzerdefinierten bzw. bereits vorhandenen Metadaten keinen Doppelpunkt (:) enthält. Wenn dies der Fall ist, können Sie ihn nicht auf der Benutzeroberfläche anzeigen.
-1. **data-repeatable** hat keine Bedeutung für **Link** -Komponente. Adobe empfiehlt, diese Eigenschaften in einer Vorlage für eine Komponente des Typs „Link“ zu vermeiden.
+1. **data-repeatable** hat keinerlei Bedeutung für eine Komponente des Typs **Link**. Adobe empfiehlt, diese Eigenschaften in einer Vorlage für eine Komponente des Typs „Link“ zu vermeiden.
 
 ## Ähnliche Artikel
 
-* [Aktivieren von Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
-* [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
+* [Aktivieren von Formularportalkomponenten](/help/forms/using/enabling-forms-portal-components.md)
+* [Erstellen einer Formularportalseite](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
-* [Komponente &quot;Drafts and Submissions&quot;verwenden](/help/forms/using/draft-submission-component.md)
+* [Verwenden der Komponente „Entwurf und Übermittlung“](/help/forms/using/draft-submission-component.md)
 * [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
 * [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)
-

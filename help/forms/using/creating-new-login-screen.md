@@ -12,7 +12,7 @@ exl-id: caa4f835-c353-49d5-b18c-4d0538c1136f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 62%
+ht-degree: 99%
 
 ---
 
@@ -22,31 +22,31 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 ## Voraussetzung {#prerequisite}
 
-1. Anmelden bei `/lc/crx/de` mit Administratorberechtigungen.
+1. Melden Sie sich mit Administratorberechtigungen bei `/lc/crx/de` an.
 1. Führen Sie die folgenden Aktionen durch:
 
-   1. Replizieren Sie die hierarchische Struktur: von `/libs/livecycle/core/content` at `/apps/livecycle/core/content`. Behalten Sie die Eigenschaften (Knoten/Ordner) und Zugriffssteuerung bei.
+   1. Replizieren Sie die hierarchische Struktur von `/libs/livecycle/core/content` in `/apps/livecycle/core/content`. Behalten Sie die Eigenschaften (Knoten/Ordner) und Zugriffssteuerung bei.
    1. Kopieren Sie den Inhaltsordner: von `/libs/livecycle/core` nach `/apps/livecycle/core`.
-   1. Löschen Sie den Inhalt von `/apps/livecycle/core` Ordner.
+   1. Löschen Sie den Inhalt des Ordners `/apps/livecycle/core`.
 
 1. Führen Sie die folgenden Aktionen durch:
 
-   1. Replizieren Sie die hierarchische Struktur: von `/libs/livecycle/core/components/login` at `/apps/livecycle/core/components/login`. Behalten Sie die Eigenschaften (Knoten/Ordner) und Zugriffssteuerung bei.
-   1. Kopieren Sie den Komponentenordner: von `/libs/livecycle/core` nach `/apps/livecycle/core`.
-   1. Löschen Sie den Inhalt des Ordners: `/apps/livecycle/core/components/login`.
+   1. Replizieren Sie die hierarchische Struktur von `/libs/livecycle/core/components/login` in `/apps/livecycle/core/components/login`. Behalten Sie die Eigenschaften (Knoten/Ordner) und Zugriffssteuerung bei.
+   1. Kopieren Sie den Komponentenordner von `/libs/livecycle/core` nach `/apps/livecycle/core`.
+   1. Löschen Sie den Inhalt des Ordners `/apps/livecycle/core/components/login`.
 
 ## Hinzufügen eines neuen Gebietsschemas {#adding-a-new-locale}
 
-1. Kopieren Sie die `i18n` Ordner:
+1. Kopieren Sie den Ordner `i18n`:
 
    * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
-1. Löschen Sie alle Ordner in `i18n` Außer eins, sagen `en`.
+1. Löschen Sie alle Ordner in `i18n` bis auf einem, beispielsweise `en`.
 1. Mit dem Ordner `en` führen Sie diese Schritte durch:
 
    1. Benennen Sie den Ordner nach dem Gebietsschema, das unterstützt werden soll. Beispiel: `ar`.
-   1. Eigenschaft ändern `jcr:language` Wert zu `ar`(für die `ar` Ordner).
+   1. Ändern Sie den Wert der Eigenschaft `jcr:language` in `ar` (für den Ordner `ar`).
 
    >[!NOTE]
    >
@@ -57,7 +57,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
    * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
 
-1. Ändern Sie das folgende Codefragment für `/apps/livecycle/core/components/login/login.jsp`:
+1. Ändern Sie das folgende Code-Fragment für `/apps/livecycle/core/components/login/login.jsp`:
 
    ***Gebietsschema ist Sprachcode***
 
@@ -181,7 +181,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 ## Hinzufügen von neuem Text oder Ändern des vorhandenen Texts {#adding-new-text-or-modifying-existing-text}
 
-1. Kopieren `i18n` Ordner:
+1. Kopieren Sie den Ordner `i18n`:
 
    * von `/libs/livecycle/core/components/login`
    * in `/apps/livecycle/core/components/login`
@@ -194,7 +194,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
       * von `/libs/livecycle/core/components/login`
       * in `/apps/livecycle/core/components/login`
-   1. Ändern `/apps/livecycle/core/components/login/login.jsp` , um den neu hinzugefügten Text einzufügen.
+   1. Ändern Sie `/apps/livecycle/core/components/login/login.jsp`, um den neu hinzugefügten Text einzubinden.
 
    ![erfassen](assets/capture.png)
 
@@ -217,21 +217,21 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 ## Hinzufügen eines neuen Stils oder Ändern des vorhandenen Stils {#adding-new-style-or-modifying-existing-style}
 
-1. Kopieren `login` node:
+1. Kopieren Sie den Knoten `login`:
 
    * von `/libs/livecycle/core/content`
    * in `/apps/livecycle/core/content`
 
-1. Dateien löschen `login.js` und `jquery-1.8.0.min.js`, vom Knoten `/apps/livecycle/core/content/login.`
+1. Löschen Sie die Dateien `login.js` und `jquery-1.8.0.min.js` vom Knoten `/apps/livecycle/core/content/login.`
 1. Ändern Sie die Stile in der CSS-Datei.
 1. Neue Stile hinzufügen:
 
-   1. Hinzufügen neuer Stile zu `/apps/livecycle/core/content/login/login.css`
+   1. Fügen Sie neue Stile zu `/apps/livecycle/core/content/login/login.css` hinzu
    1. Kopieren `login.jsp`
 
       * von `/libs/livecycle/core/components/login`
       * in `/apps/livecycle/core/components/login`
-   1. Ändern `/apps/livecycle/core/components/login/login.jsp` , um die neu hinzugefügten Stile zu integrieren.
+   1. Ändern Sie `/apps/livecycle/core/components/login/login.jsp`, um die neu hinzugefügten Stile einzubinden.
 
 
 1. Beispiel:
@@ -257,19 +257,19 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 >[!NOTE]
 >
->Wenn vorhandene Bilder in `/apps/livecycle/core/content/login` (kopiert von `/libs/livecycle/core/content/login`) entfernt werden, entfernen Sie dann die entsprechenden Verweise in CSS.
+>Wenn die vorhandenen Bilder in `/apps/livecycle/core/content/login` (kopiert von `/libs/livecycle/core/content/login`) gelöscht sind, löschen Sie auch die entsprechenden Verweise in CSS.
 
 ## Fügen Sie neue Bilder hinzu {#add-new-images}
 
-1. Befolgen Sie die Schritte unter Hinzufügen eines neuen Stils oder Ändern des vorhandenen Stils (siehe oben).
-1. Hinzufügen neuer Bilder in `/apps/livecycle/core/content/login`. Bild hinzufügen:
+1. Führen Sie die Schritte zum Hinzufügen eines neuen Stils oder Ändern des vorhandenen Stils durch (oben beschrieben).
+1. Fügen Sie neue Bilder in `/apps/livecycle/core/content/login` hinzu. Bild hinzufügen:
 
    1. Installieren Sie den WebDAV-Client.
-   1. Navigieren Sie zu `/apps/livecycle/core/content/login` Ordner mithilfe des WebDAV-Clients. Weitere Informationen finden Sie unter: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navigieren Sie mithilfe eines WebDAV-Clients zum Ordner `/apps/livecycle/core/content/login`. Weitere Informationen finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/de/crx/current/how_to/webdav_access.html).
    1. Fügen Sie neue Bilder hinzu.
 
-1. Hinzufügen neuer Stile in `/apps/livecycle/core/content/login/login.css,` , die neuen Bildern entsprechen, die in `/apps/livecycle/core/content/login`.
-1. Verwenden Sie die neuen Stile in `login.jsp` at `/apps/livecycle/core/components`.
+1. Fügen Sie neue Stile in `/apps/livecycle/core/content/login/login.css,` hinzu, die den in `/apps/livecycle/core/content/login` hinzugefügten neuen Bildern entsprechen.
+1. Verwenden Sie die neuen Stile in `login.jsp` unter `/apps/livecycle/core/components`.
 1. Beispiel:
 
    * Hinzufügen von Folgendem zu `/apps/livecycle/core/content/login/login.css`

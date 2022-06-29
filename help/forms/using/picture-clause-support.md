@@ -14,7 +14,7 @@ exl-id: b63758f1-b375-4c05-bd53-69e0346733c6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ HTML5-Formulare unterstützen die XFA-Picture-Klausel für Anzeigewerte und form
 
 >[!NOTE]
 >
->Mobile Forms unterstützt derzeit keine Edit-Picture-Klausel. Außerdem werden die Symbole der Datums- und Uhrzeit-Picture-Klausel nicht unterstützt.
+>Mobile Forms unterstützt derzeit keine Edit-Picture-Klausel. Außerdem werden die Klauselsymbole DateTime und Time Picture nicht unterstützt.
 
 ## Unterstützte Datumsfeldsymbole {#supported-date-field-symbols}
 
@@ -107,7 +107,7 @@ Die Zahl **10000** wird sowohl in HTML- als auch in PDF-Formularen als **10.000*
 
 Die Zahl 1000000 wird in PDF-Formularen als 1.000.000 formatiert. In HTML-Formularen bleibt diese Zahl jedoch unformatiert im Format 1000000.
 
-Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML Forms** sind:
+Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML-Formularen** sind:
 
 * num.integer{}
 * num.decimal{}
@@ -204,7 +204,7 @@ Unterstützte Ausdrücke für die numerische Picture-Klausel in **HTML Forms** s
 
 HTML5-Formulare unterstützen die folgenden Text-Picture-Klausel-Ausdrücke:
 
-* text{text Picture clause symbols}
+* text{text Picture clause symbols}
 
 | **Symbol** | **Interpretation** |
 |---|---|

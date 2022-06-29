@@ -13,13 +13,13 @@ exl-id: 40890db3-240c-4021-967a-b6b3eb1d4b7c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '652'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Freigegebene Warteschlangen konfigurieren{#configuring-shared-queues}
 
-Mithilfe von freigegebenen Warteschlangen können Sie Benutzerwarteschlangen effektiv konfigurieren und verwalten. Eine Benutzerwarteschlange sind alle einem Benutzer zugeordneten Aufgaben. Weitere Informationen finden Sie unter [Aufgabenlisten](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html). Sie können Benutzerwarteschlangen entsprechend den Anforderungen Ihres Unternehmens zuordnen, die Zuordnungen aufheben oder erneut zuordnen. Sie können freigegebene Warteschlangen auf zwei Arten verwalten:
+Mithilfe von freigegebenen Warteschlangen können Sie Benutzerwarteschlangen effektiv konfigurieren und verwalten. Eine Benutzerwarteschlange sind alle einem Benutzer zugeordneten Aufgaben. Weitere Informationen finden Sie unter [Aufgabenlisten](https://help.adobe.com/de_DE/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html). Sie können Benutzerwarteschlangen entsprechend den Anforderungen Ihres Unternehmens zuordnen, die Zuordnungen aufheben oder erneut zuordnen. Sie können freigegebene Warteschlangen auf zwei Arten verwalten:
 
 **Zugriff auf einen Benutzer verwalten**
 
@@ -45,7 +45,7 @@ Nachdem diese Aufgaben freigegeben wurden, können Sie vom Benutzer, der Zugriff
 1. Wählen **Dienste** > **Arbeitsablauf für Formulare** > **Freigegebene Warteschlange**.
 
 1. Wählen Sie auf der Registerkarte „Zugriff auf einen Benutzer verwalten“ den Benutzer aus, dessen Warteschlange sie freigeben möchten. Das untere rechte Fenster zeigt die Liste von Benutzern an, die Zugriff auf die ausgewählte Benutzerwarteschlange haben.
-1. Wählen Sie im unteren linken Fenster den Benutzer aus. Klicken Sie auf Freigeben.
+1. Wählen Sie im unteren linken Fenster den Benutzer aus. Klicken Sie auf „Freigeben“.
 1. Klicken Sie dann auf „Speichern“.
 
 ### Zugriff auf ausgewählte Benutzerwarteschlangen sperren {#revoking-access-to-a-selected-user-queue}
@@ -73,7 +73,7 @@ Nachdem diese Aufgaben zugewiesen wurden, können sie vom Benutzer, der Workspac
 1. Wählen **Dienste** > **Arbeitsablauf für Formulare** > **Freigegebene Warteschlange**.
 
 1. Wählen Sie auf der Registerkarte „Zugriff auf einen Benutzer verwalten“ den Benutzer aus, dessen Warteschlange sie freigeben möchten. Das untere rechte Fenster zeigt die Liste von Benutzern an, die Zugriff auf die ausgewählte Benutzerwarteschlange haben.
-1. Wählen Sie im unteren linken Fenster Benutzerwarteschlangen, die Sie für die ausgewählten Benutzer freigeben möchten. Klicken Sie auf Freigeben.
+1. Wählen Sie im unteren linken Fenster Benutzerwarteschlangen, die Sie für die ausgewählten Benutzer freigeben möchten. Klicken Sie auf „Freigeben“.
 1. Klicken Sie dann auf „Speichern“.
 
 ### Zugriff auf ausgewählte Benutzerwarteschlangen sperren {#revoking_access_to_a_selected_user_queue-1}

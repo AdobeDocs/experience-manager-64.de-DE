@@ -1,5 +1,5 @@
 ---
-title: '"Microsoft SQL Server-Datenbank : Konfiguration optimieren"'
+title: '"Microsoft SQL Server-Datenbank: Konfiguration optimieren"'
 seo-title: 'Microsoft SQL Server database: Fine-tuning the configuration'
 description: Erfahren Sie, wie Sie die Konfiguration Ihrer Microsoft SQL Server-Datenbank optimieren können.
 seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ---
 
-# Microsoft SQL Server-Datenbank : Konfiguration optimieren {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Microsoft SQL Server-Datenbank: Konfiguration optimieren {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
 Bei Verwendung von Microsoft SQL Server empfiehlt es sich, die Standardkonfigurationseinstellungen zu ändern. Klicken Sie in Oracle Enterprise Manager mit der rechten Maustaste auf den lokalen Server, um auf das Eigenschaftendialogfeld zuzugreifen.
 

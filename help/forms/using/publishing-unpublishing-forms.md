@@ -1,5 +1,5 @@
 ---
-title: Veröffentlichung von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen
+title: Veröffentlichen von Formularen und Dokumenten und Rückgängigmachen von Veröffentlichungen
 seo-title: Publishing and unpublishing forms and documents
 description: Sie können das Veröffentlichen und Rückgängigmachen von Veröffentlichungen bei Formularen planen. Veröffentlichte Formulare werden auf der Veröffentlichungsinstanz repliziert.
 seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.

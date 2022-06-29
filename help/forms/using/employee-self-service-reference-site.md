@@ -59,7 +59,7 @@ Das Unternehmensportal und das Mitarbeiter-Dashboard sind AEM-Sites. Das Dashboa
 
 Das adaptive Formular verwendet Regeln, um Informationen basierend auf der Antwort auf der Registerkarte „Fragen“ ein- oder auszublenden. Außerdem verwendet das Formular die Scribble-Komponente zum Signieren auf der Registerkarte „Deklaration“. Überprüfen Sie das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
 
-**Sehen Sie selbst** 
+**Sehen Sie selbst**
 
 Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` und melden Sie sich mit `srose/srose` als Benutzername/Kennwort für Sarah. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie anschließend auf **[!UICONTROL Beantragen]** im Fragebogen zu Interessenkonflikten. Überprüfen und übermitteln Sie den Fragebogen.
 
@@ -79,7 +79,7 @@ Die Übermittlungsaktion im Fragebogen „Interessenkonflikt“ löst einen Work
 
 ![employee-self-service-reference-site](assets/employee-self-service-reference-site.png)
 
-**Sehen Sie selbst** 
+**Sehen Sie selbst**
 
 Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios. Öffnen Sie die für den Fragebogen zu Interessenkonflikten erstellte Aufgabe und genehmigen Sie diese.
 
@@ -108,7 +108,7 @@ Das Unternehmensportal und das Mitarbeiter-Dashboard sind AEM-Sites. Das Dashboa
 Das adaptive Formular für einen Antrag auf eine Unternehmenskarte ist ein einfaches, einseitiges, interaktives adaptives Formular. Es verwendet grundlegende adaptive Formularkomponenten wie Text, Telefon, numerisches Feld und numerischen Stepper. Überprüfen Sie das adaptive Formular unter:\
 `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`.
 
-**Sehen Sie selbst** 
+**Sehen Sie selbst**
 
 Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` und melden Sie sich mit `srose/srose` als Benutzername/Kennwort für Sarah. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Übernehmen]** im Antrag auf die Unternehmenskarte. Geben Sie die Details ein und senden Sie den Antrag ab.
 
@@ -128,7 +128,7 @@ Der Workflow für die Einreichung auf dem Antrag auf eine Unternehmenskarte lös
 
 ![corporate-card-workflow-model](assets/corporate-card-workflow-model.png)
 
-**Sehen Sie selbst** 
+**Sehen Sie selbst**
 
 Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios. Öffnen Sie die Aufgabe, die für den Antrag auf eine Unternehmenskarte erstellt wurde, und genehmigen Sie sie.
 
@@ -158,7 +158,7 @@ Das Unternehmensportal und das Mitarbeiter-Dashboard sind AEM-Sites. Das Dashboa
 
 Die Registerkarten „Berichtsname“ und „Berichtsdetails“ im adaptiven Formular sind Bereichskomponenten. Der Bereich „Berichtdetails“ enthält den Bereich „Spesen“. Es ist einen wiederholbaren Bereich, mit dem mehrere Spesen im Bericht hinzugefügt werden können. Überprüfen Sie das adaptive Formular und seine Konfigurationen unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
 
-**Sehen Sie selbst** 
+**Sehen Sie selbst**
 
 Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` und melden Sie sich mit `srose/srose` als Benutzername/Kennwort für Sarah. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Beantragen]** im Spesenbericht. Geben Sie die Details ein und übermitteln Sie den Antrag.
 
@@ -178,7 +178,7 @@ Der Übermittlungs-Workflow Antrag für den Spesenbericht löst einen Formular-W
 
 ![corporate-card-cost-report-workflow-model](assets/corporate-card-expense-report-workflow-model.png)
 
-**Sehen Sie selbst** 
+**Sehen Sie selbst**
 
 Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios. Öffnen Sie die Aufgabe, die für den Antrag für den Spesenbericht erstellt wurde, und genehmigen Sie sie.
 
@@ -214,7 +214,7 @@ Sie können das adaptive Formular und das Formulardatenmodell an folgenden Stell
 
 `https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/db`
 
-**Sehen Sie selbst** 
+**Sehen Sie selbst**
 
 Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` und melden Sie sich mit `srose/srose` als Benutzername/Kennwort für Sarah. Klicken Sie auf **[!UICONTROL Mitarbeiter]**, um auf das Dashboard zuzugreifen, und klicken Sie dann auf **[!UICONTROL Beantragen]** im Urlaubsantrag. Geben Sie die Details ein und übermitteln Sie den Antrag.
 
@@ -234,6 +234,6 @@ Der Übermittlungs-Workflow im Urlaubsantrag löst einen Formular-Workflow aus, 
 
 ![corporate-card-leave-application-workflow-model](assets/corporate-card-leave-application-workflow-model.png)
 
-**Sehen Sie selbst** 
+**Sehen Sie selbst**
 
 Navigieren Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` und melden Sie sich mit `grios/password` als Benutzername/Kennwort für Gloria Rios. Öffnen Sie die Aufgabe, die für den Antrag auf Urlaub erstellt wurde, und genehmigen Sie sie.

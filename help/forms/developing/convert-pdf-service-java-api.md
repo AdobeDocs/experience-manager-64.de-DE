@@ -1,5 +1,5 @@
 ---
-title: PDF Service Java API QuickStart(SOAP) konvertieren
+title: Convert PDF Service Java-API Schnellstart(SOAP)
 seo-title: Convert PDF Service Java API QuickStart(SOAP)
 description: Verwenden Sie die Java-API des Convert PDF-Dienstes, um ein PDF-Dokument in PostScript- und JPEG-Dateien zu konvertieren.
 seo-description: Use the Convert PDF service Java API to convert a PDF document to PostScript and JPEG files.
@@ -14,11 +14,11 @@ exl-id: af0cb623-c29c-4b9e-9ffd-736047a45b8d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 1%
+ht-degree: 87%
 
 ---
 
-# PDF Service Java API Quick Start (SOAP) konvertieren {#convert-pdf-service-java-api-quickstart-soap}
+# Convert PDF Service Java-API Schnellstart(SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 Die folgenden Schnellstarts sind für die Convert PDF Service-API verfügbar.
 
@@ -26,15 +26,15 @@ Die folgenden Schnellstarts sind für die Convert PDF Service-API verfügbar.
 
 [Schnellstart (SOAP-Modus): Konvertieren eines PDF-Dokuments in JPEG-Dateien mithilfe der Java-API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Schnellstart, der unter Programmieren mit AEM Formularen zu finden ist, basiert auf dem Forms-Server, der auf JBoss Application Server und dem Windows-Betriebssystem Microsoft bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellstart, der unter Programmieren mit AEM Forms zu finden ist, basiert darauf, dass der Formular-Server auf einem JBoss-Anwendungs-Server und unter dem Betriebssystem Microsoft Windows bereitgestellt wird. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Schnellstart (SOAP-Modus): Konvertieren eines PDF-Dokuments in PostScript mithilfe der Java-API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein PostScript-Dokument namens *Darlehen.ps*. (Siehe [Konvertieren von PDF-Dokumenten in PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).
+Im folgenden Code-Beispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein PostScript-Dokument namens *Loan.ps* konvertiert. (Weitere Informationen unter [Konvertieren von PDF-Dokumenten in PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
 ```as3
  /* 
@@ -149,7 +149,7 @@ Im folgenden Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in ein 
 
 ## Schnellstart (SOAP-Modus): Konvertieren eines PDF-Dokuments in JPEG-Dateien mithilfe der Java-API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-Im folgenden Java-Codebeispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* auf eine Reihe von JPEG-Dateien zu setzen und sie im Ordner C:\Adobe directory zu speichern. Jede Datei trägt den Namen *tempFile[index].jpg*, wobei die erste Bilddatei *tempFile0.jpg*. (Siehe [Konvertieren von PDF-Dokumenten in Bildformate](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).
+Im folgenden Java-Code-Beispiel wird ein PDF-Dokument mit dem Namen *Loan.pdf* in eine Reihe von JPEG-Dateien konvertiert, die im Ordner C:\Adobe gespeichert werden. Jede Datei trägt den Namen *tempFile[index].jpg*, wobei die erste Bilddatei *tempFile0.jpg*. (Weitere Informationen unter [Konvertieren von PDF-Dokumenten in Bildformate](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```as3
  /* 

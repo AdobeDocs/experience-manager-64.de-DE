@@ -12,7 +12,7 @@ exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '9201'
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -145,7 +145,7 @@ Alternativ kann sie auf der Homepage von **[!UICONTROL Meine Formulare]** unter 
 
 Mithilfe der in der E-Mail angezeigten Schaltfläche „Fortsetzen“ gelangt Sarah zu dem Knoten, der ihren Antragsentwurf enthält.
 
-#### Sehen Sie selbst.  {#see-it-yourself-1}
+#### Sehen Sie selbst {#see-it-yourself-1}
 
 Sie müssen eine E-Mail mit einem Link zum Antragsentwurf in Ihrer E-Mail-ID erhalten haben, die Sie beim Ausfüllen des Antragsformulars angegeben haben. Füllen Sie die übrigen Abschnitte des Antrags aus und senden Sie ihn. 
 
@@ -167,7 +167,7 @@ Die folgende Abbildung zeigt den AEM-Workflow, der den Kreditkartenantrag verarb
 
 #### Sehen Sie selbst {#see-it-yourself-2}
 
-Sie können AEM Posteingang für die Site &quot;we.finance&quot;unter https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, wählen Sie die **[!UICONTROL Als Vertreter anmelden]** Kontrollkästchen aktivieren, melden Sie sich mit `grios/password` als Benutzernamen/Kennwort für Gloria Rios und genehmigen Sie den Kreditkartenantrag. Informationen zur Verwendung AEM Posteingangs für formularzentrierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben im AEM Posteingang](/help/forms/using/manage-applications-inbox.md).
+Sie können AEM Posteingang für die Site &quot;we.finance&quot;unter https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, wählen Sie die **[!UICONTROL Als Vertreter anmelden]** Kontrollkästchen aktivieren, melden Sie sich mit `grios/password` als Benutzernamen/Kennwort für Gloria Rios und genehmigen Sie den Kreditkartenantrag. Weitere Informationen zur Verwendung des AEM-Posteingangs für formularzentrierte Workflow-Aufgaben finden Sie unter [Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang](/help/forms/using/manage-applications-inbox.md).
 
 ![inbox-1](assets/inbox-1.png)
 
@@ -231,7 +231,7 @@ Sarah plant die Zahlung innerhalb des Auszugs. Sarah kann auch die Flexi Pay-Opt
 
 Der Kreditkartenauszug ist eine interaktive Kommunikation. Die detaillierte Ausgabentabelle im Auszug ist reagibel. Die Grafik zur Ausgabenanalyse ist eine Diagrammkomponente, liest die Ausgabentabelle und generiert das Kreisdiagramm.
 
-#### Sehen Sie selbst.  {#see-it-yourself-4}
+#### Sehen Sie selbst {#see-it-yourself-4}
 
 Sie können den interaktiven Kreditkartenauszug unter folgender URL einsehen: 
 
@@ -321,6 +321,7 @@ Führen Sie folgende Schritte aus, um die Erstellung eines A/B-Tests für das We
 ![ab-test-report-3](assets/ab-test-report-3.png)
 
 Um den A/B-Test zu beenden, klicken Sie im Berichts-Dashboard auf die Schaltfläche **A/B-Test beenden**. An diesem Punkt Sie aufgefordert, ein Erlebnis anzugeben. Wählen Sie einen Gewinner und bestätigen Sie, dass Sie den A/B-Test beenden möchten.
+ 
 
 Wenn Sie Erlebnis A als Gewinner auswählen, wird der A/B-Test beendet, und in Zukunft wird nur Erlebnis A für sämtliche Zielgruppen (einschließlich Chrome-Benutzer) angezeigt.
 
@@ -352,7 +353,7 @@ Sarah Rose plant, ein Haus zu kaufen und nach einem Hypotheksplan zu suchen. Sie
 
 Der Hypothekenrechner auf der Seite „Darlehen“ ist ein eingebettetes adaptives Formular in der AEM-Seite. Sie können die Seite Darlehen im Bearbeitungsmodus unter `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
 
-Der eingebettete Hypothekenrechner, bei dem es sich um ein adaptives Formular handelt, verwendet Regeln zur Berechnung des EMI-Betrags basierend auf den Kreditdetails, die in den Rechnerfeldern angegeben sind. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/hm-calc.html`.
+Der eingebettete Hypothekenrechner, bei dem es sich um ein adaptives Formular handelt, verwendet Regeln zur Berechnung des EMI-Betrags basierend auf den Kreditdetails, die in den Rechnerfeldern angegeben sind. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/hm-calc.html` überprüfen.
 
 #### Sehen Sie selbst {#see-it-yourself-5}
 
@@ -443,7 +444,7 @@ Das folgende Bild zeigt den AEM-Workflow, der mit dem Hypothekenantrag verknüpf
 
 Sie können auf den AEM-Posteingang unter https://&lt;***hostname***>:&lt;***AuthorPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Melden Sie sich mit dem AEM-Posteingang an. `grios/password` als Benutzername/Kennwort für Gloria Rios und `jdoe/jdoe` für John Doe verwenden und den Workflow für Hypothekenanträge durchsuchen.
 
-Informationen zur Verwendung AEM Posteingangs für formularzentrierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben im AEM Posteingang](/help/forms/using/manage-applications-inbox.md).
+Weitere Informationen zur Verwendung des AEM-Posteingangs für formularzentrierte Workflow-Aufgaben finden Sie unter [Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang](/help/forms/using/manage-applications-inbox.md).
 
 ### Sarah erhält das Begrüßungs-Kit {#sarah-receives-the-welcome-kit}
 
@@ -459,7 +460,7 @@ Das Begrüßungs-Kit ist eine interaktive Kommunikation, die im `cq-we-finance-c
 
 Die interaktiven Karten in der Desktopversion des Begrüßgungs-Kits haben ein benutzerdefiniertes Layout, das mithilfe des Standardkartenlayouts eines Dokumentfragments erstellt wird.
 
-#### Sehen Sie selbst.  {#see-it-yourself-8}
+#### Sehen Sie selbst {#see-it-yourself-8}
 
 Wenn Sie beim Ausfüllen des Hypothekenantrags Ihre E-Mail-ID angegeben haben, sollten Sie eine E-Mail mit einem Link zum Willkommenspaket erhalten haben. Überprüfen Sie Ihren Posteingang und schauen Sie sich das Willkommenspaket an.
 
@@ -488,7 +489,7 @@ Der in einer reagiblen Tabelle angezeigte detaillierte Auszug bietet die Möglic
 
 Der Hypothekenauszug ist eine interaktive Kommunikation. Es wird mithilfe des JSON-Batchprozesses generiert. Die detaillierte Ausgabentabelle im Auszug ist reagibel.
 
-#### Sehen Sie selbst.  {#see-it-yourself-9}
+#### Sehen Sie selbst {#see-it-yourself-9}
 
 Sie können den interaktiven Hypothekenkontoauszug unter folgender URL einsehen:
 
@@ -575,6 +576,7 @@ Führen Sie folgende Schritte im Autorenmodus aus, um A/B-Tests für das We.Fina
 ![ab-test-report-4](assets/ab-test-report-4.png)
 
 Um den A/B-Test zu beenden, klicken Sie im Berichts-Dashboard auf die Schaltfläche **A/B-Test beenden**. An diesem Punkt Sie aufgefordert, ein Erlebnis anzugeben. Wählen Sie einen Gewinner und bestätigen Sie, dass Sie den A/B-Test beenden möchten.
+ 
 
 Wenn Sie Erlebnis A als Gewinner auswählen, wird der A/B-Test beendet, und in Zukunft wird nur Erlebnis A für sämtliche Zielgruppen (einschließlich Chrome-Benutzer) angezeigt.
 
@@ -601,7 +603,7 @@ Sarah Rose plant, ein Haus zu kaufen und nach einem Hypotheksplan zu suchen. Sie
 
 Der Hypothekenrechner auf der Seite „Darlehen“ ist ein eingebettetes adaptives Formular in der AEM-Seite. Sie können die Seite Darlehen im Bearbeitungsmodus unter `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
 
-Der eingebettete Hypothekenrechner, bei dem es sich um ein adaptives Formular handelt, verwendet Regeln zur Berechnung des EMI-Betrags basierend auf den Kreditdetails, die in den Rechnerfeldern angegeben sind. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/ms-dynamics/home-mortgage-calculator.html`.
+Der eingebettete Hypothekenrechner, bei dem es sich um ein adaptives Formular handelt, verwendet Regeln zur Berechnung des EMI-Betrags basierend auf den Kreditdetails, die in den Rechnerfeldern angegeben sind. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/ms-dynamics/home-mortgage-calculator.html` überprüfen.
 
 #### Sehen Sie selbst {#see-it-yourself-10}
 
@@ -725,7 +727,7 @@ In der folgenden Dokumentation finden Sie weitere Informationen zu Funktionen, d
 
 Klicken Sie auf die Schaltfläche **Jetzt beantragen** im Newsletter, den Sie in Ihrer E-Mail erhalten haben. Alternativ können Sie zu `https://[publishHost]:[publishPort]/content/we-finance/global/en/all-forms.html` und klicken Sie auf **[!UICONTROL Anwenden]** über den Versicherungsantrag. Geben Sie`123456789`   im Feld „Sozialversicherungsnummer“ ein. Wenn Sie dazu aufgefordert werden, melden Sie sich mit `srose/srose` als Benutzername/Passwort an.
 
-Füllen Sie Details aus, untersuchen Sie verschiedene adaptive Formularkomponenten und senden Sie den Antrag. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
+Füllen Sie Details aus, untersuchen Sie verschiedene adaptive Formularkomponenten und senden Sie den Antrag. Sie können das adaptive Formular unter `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html` überprüfen.
 
 ### We.Finance genehmigt den Antrag und ein Vertrag wird unterschrieben {#we-finance-approves-the-application-and-a-contract-is-signed}
 
@@ -897,7 +899,7 @@ Melden Sie sich jetzt bei an. **We.Finance Auto Insurance Dashboard** als Conrad
 
 Sarah erhält eine E-Mail mit einer Anlage von We.Finance, die sie daran erinnert, dass ihre Kfz-Versicherungspolice bald abläuft. Der Anhang ist die Druckversion ihrer Details zur Erneuerung ihrer Kfz-Versicherungspolice.
 
-Sarah klickt **Jetzt erneuern** und wird zur Web-Version ihres Autoversicherungs-Briefes weitergeleitet. Zusätzlich zu diesem Brief findet Sarah noch einige Tage, bis ihre Richtlinie abläuft. Auf der Seite erhalten Sarah einen Überblick über ihre Details zu den Versicherungspolice, wie z. B. die Policennummer, den fälligen Betrag und andere Informationen wie Rabattangebote und Treuebelohnungen. Sarah klickt erneut **Jetzt erneuern** am Ende der Richtlinie.
+Sarah klickt **Jetzt erneuern** und wird zur Web-Version ihres Autoversicherungs-Briefes weitergeleitet. Zusätzlich zu diesem Brief findet Sarah noch einige Tage, bis ihre Richtlinie abläuft. Auf der Seite erhalten Sarah einen Überblick über ihre Details zu den Versicherungspolice, wie z. B. die Policennummer, den fälligen Betrag und andere Informationen wie Rabattangebote und Treuebelohnungen. Sarah klickt auf **Jetzt erneuern** am Ende der Police.
 
 ![auto-insurance-extending-email](assets/auto-insurance-renewal-email.png)
 
@@ -909,9 +911,9 @@ Die Web- und Druckausgaben Ihres Autoversicherungs-Briefs werden mithilfe der ka
 
 #### Sehen Sie selbst  {#see-it-yourself-19}
 
-Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF ist eine Druckversion Ihres Autoversicherungs-Briefes. Klicken **Jetzt erneuern** , um zur Webversion der Richtlinie zu gelangen. Überprüfen Sie Ihre personenbezogenen Daten und Richtliniendetails und klicken Sie auf **Jetzt erneuern**. Sie werden zum adaptiven Formular zur Zahlung weitergeleitet.
+Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF ist eine Druckversion Ihres Autoversicherungs-Briefes. Klicken Sie auf **Jetzt erneuern**, um zur Web-Version der Police zu gelangen. Überprüfen Sie Ihre personenbezogenen Daten und Richtliniendetails und klicken Sie auf **Jetzt erneuern**. Sie werden zum adaptiven Formular zur Zahlung weitergeleitet.
 
-Die **Jetzt erneuern** -Schaltfläche in der E-Mail leitet Sarah zur Webversion der Richtlinie weiter. Sie können folgende URL aufrufen:
+Die Schaltfläche **Jetzt erneuern** in der E-Mail leitet Sarah zur Web-Version der Police. Sie können folgende URL aufrufen:
 
 https://[publishServer]:[publishPort]/content/document.html?schema=fdm&amp;documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&amp;customerId=90001
 
@@ -919,17 +921,17 @@ Sie können die detaillierte Zusammenfassung der Erneuerung Ihrer Kfz-Versicheru
 
 ### Sarah öffnet die Zahlungsseite, nimmt die Zahlung vor und schließt den Prozess ab {#sarah-opens-the-payment-page-and-makes-the-payment-and-completes-the-process}
 
-Wenn Sarah klickt **Jetzt erneuern** in der Webversion der interaktiven Kommunikation wird die Zahlungsseite geöffnet. Sarah überprüft ihre Policennummer und ihr Ablaufdatum mit ihren Datensätzen. Auf der rechten Seite der Seite prüft sie die Zahlungszusammenfassung ihrer Verlängerung mit einem Prämienrabatt von 10 % auf den Gesamtbetrag. Sarah gibt ihre Kreditkartendetails ein und klickt auf **Zahlung ausführen**.
+Wenn Sarah klickt **Jetzt erneuern** in der Webversion der interaktiven Kommunikation wird die Zahlungsseite geöffnet. Sarah vergleicht ihre Police-Nummer und das Ablaufdatum mit ihren Unterlagen. Rechts auf der Seite prüft sie die Zahlungszusammenfassung ihrer Erneuerung mit 10 % Prämienrabatt auf den Gesamtbetrag. Sarah gibt ihre Kreditkartendetails ein und klickt auf **Zahlung ausführen**.
 
 ![payment-adaptive-form](assets/payment-adaptive-form.png)
 
 #### Funktionsweise  {#how-it-works-22}
 
-Über die Schaltfläche Jetzt erneuern gelangt Sarah zur Zahlungsseite. Die Zahlungsseite ist ein adaptives Formular. Sarah füllt die Kreditkartendetails aus und klickt auf **Einsenden**. Ihre Kreditkartenzahlung wird verarbeitet und eine im adaptiven Formular konfigurierte Dankesnachricht wird auf dem Bildschirm angezeigt.
+Die Schaltfläche „Jetzt erneuern“ leitet Sarah auf die Zahlungsseite. Die Zahlungsseite ist ein adaptives Formular. Sarah füllt die Kreditkartendetails aus und klickt auf **Einsenden**. Ihre Kreditkartenzahlung wird verarbeitet und eine im adaptiven Formular konfigurierte Dankesnachricht wird auf dem Bildschirm angezeigt.
 
 #### Sehen Sie selbst  {#see-it-yourself-20}
 
-Klicken Sie auf **Jetzt erneuern**, um zur Zahlungsseite zu gelangen. Geben Sie Ihre Kreditkarteninformationen ein und klicken Sie auf **Zahlung.** Sie können die Zahlungsseite in der Authoring-Instanz erreichen unter:
+Klicken Sie auf **Jetzt erneuern**, um zur Zahlungsseite zu gelangen. Geben Sie Ihre Kreditkarteninformationen ein und klicken Sie auf **Zahlung ausführen.** Sie können die Zahlungsseite in der Authoring-Instanz erreichen unter:
 
 https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&amp;schema=fdm&amp;customerId=90001
 

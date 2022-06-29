@@ -13,7 +13,7 @@ exl-id: acce13aa-864c-4999-be5c-6d49b99d5459
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 58%
+ht-degree: 65%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 58%
 
 Ereignisse wie Laufzeit- oder Startfehler werden in die Protokolldateien des Anwendungsservers geschrieben. Wenn bei der Bereitstellung auf dem Anwendungsserver Probleme auftreten, können Sie diese mithilfe der Protokolldateien ermitteln. Sie können die Protokolldateien in einem beliebigen Texteditor öffnen.
 
-(JBoss) Die folgenden Protokolldateien befinden sich im `*[appserver root]*/server/*[server]*/log` directory:
+(JBoss) Die folgenden Protokolldateien befinden sich im Verzeichnis `*[appserver root]*/server/*[server]*/log`:
 
 * boot.log
 * server.log.*[jjjj-mm-tt]*

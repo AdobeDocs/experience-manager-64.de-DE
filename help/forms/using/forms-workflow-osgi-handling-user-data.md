@@ -125,11 +125,11 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 >
 >Die AEM Forms-App speichert Daten auch im Offline-Modus. Es ist möglich, dass Daten für eine Workflow-Instanz lokal auf einzelnen Geräten gespeichert und an den Forms-Server gesendet werden, wenn die App mit dem Server synchronisiert wird.
 
-### Benutzerdaten löschen {#delete-user-data}
+### Löschen von Benutzerdaten {#delete-user-data}
 
 Sie müssen ein AEM-Administrator sein, um Benutzerdaten aus Workflow-Instanzen zu löschen, indem Sie die folgenden Schritte ausführen:
 
-1. Folgen Sie den Anweisungen in [ Auf Benutzerdaten zugreifen](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) und beachten Sie Folgendes:
+1. Folgen Sie den Anweisungen in [Auf Benutzerdaten zugreifen](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) und beachten Sie Folgendes:
 
    * Pfade zu Workflow-Instanzen, die dem Benutzer zugeordnet sind
    * Status der Workflow-Instanzen
@@ -160,4 +160,4 @@ Sie können auch APIs verwenden, um auf Knoten und Eigenschaften zuzugreifen und
 
 * [Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR](/help/sites-developing/access-jcr.md)
 * [Entfernen von Knoten und Eigenschaften](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [API-Referenz](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [API-Referenz](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

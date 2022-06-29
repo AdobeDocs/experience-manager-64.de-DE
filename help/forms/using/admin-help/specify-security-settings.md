@@ -23,6 +23,6 @@ Mit Output können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst
 
 **Die Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten verhindern**
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Output“.
+1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
 1. Deaktivieren Sie das Kontrollkästchen „Externe Entitäten auflösen“.
 1. Klicken Sie auf Speichern.

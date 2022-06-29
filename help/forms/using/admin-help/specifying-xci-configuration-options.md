@@ -28,6 +28,6 @@ Forms ermöglicht Ihnen, eine benutzerdefinierte XCI-Datei anzugeben, die für d
 
 Sie können Optionen auswählen, die das Außerkraftsetzen der oben angegebenen Optionen verhindern. In diesem Fall verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
+1. Klicken Sie in der Administration-Console auf Services > Forms.
 1. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen „XCI-Systemstandardoptionen verwenden“. Wenn diese Option ausgewählt ist, verwendet Forms seine Standardwerte für die packets-, creator-, producer- und compressObjectStream-Einstellungen. Bei deaktivierter Option verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 1. Klicken Sie auf Speichern.

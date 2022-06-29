@@ -12,7 +12,7 @@ exl-id: a1c7c90f-6b50-4bc1-9972-1d3bdf8887ce
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '685'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -28,15 +28,15 @@ Der Forms-Dienst bietet folgende Funktionen:
 
 * Wiedergabe von PDF-Formularen auf Basis einer Vorlage und den bereitgestellten XML-Daten
 * Möglichkeit der Formulardatenintegration für den Import bzw. die Extraktion von Daten in bzw. aus PDF-Formularen
-* Wiedergabe von Formularen basierend auf Fragmenten
+* Wiedergabe von Formularen basierend auf Fragmenten.
 
 ## Erstellen von PDF-Formularen  {#creating-pdf-forms-nbsp}
 
-Zur Erstellung von PDF-Formularen für die Datenerfassung verwenden Sie den Forms-Dienst. Als Grundlage verwenden Sie dazu in der Regel eine Adobe AEM Forms Designer-Vorlage. Mit dem Javadoc-Vorgang `renderPDFForm` des Forms-Dienstes konvertieren Sie diese Vorlage in ein PDF-Formular.
+Zur Erstellung von PDF-Formularen für die Datenerfassung verwenden Sie den Forms-Dienst. Als Grundlage verwenden Sie dazu in der Regel eine AEM Forms Designer-Vorlage. Mit dem Javadoc-Vorgang `renderPDFForm` des Forms-Dienstes konvertieren Sie diese Vorlage in ein PDF-Formular.
 
-Als ersten Parameter des Vorgangs `renderPDFForm` geben Sie den Namen der Vorlagendatei ein (z. B. `ExpenseClaim.xdp`). Sie können die Vorlagendatei in einem lokalen Dateisystem, CRX-Repository oder an einem HTTP- oder FTP-Speicherort speichern. Sie können den Speicherort der Vorlagendatei angeben, indem Sie den Inhaltsstamm im `PDFFormRenderOptions` Parameter der `renderPDFForm` Vorgang. In der Javadoc finden Sie Informationen zu weiteren Optionen, die Sie mit dem Parameter `PDFFormRenderOptions` angeben können.
+Als ersten Parameter des Vorgangs `renderPDFForm` geben Sie den Namen der Vorlagendatei ein (z. B. `ExpenseClaim.xdp`). Die Vorlagendatei kann in einem lokalen Dateisystem, in einem CRX-Repository oder auf einem HTTP- oder FTP-Server gespeichert sein. Den Speicherort der Vorlagendatei können Sie über den Inhaltsstamm im Parameter `PDFFormRenderOptions` des Vorgangs `renderPDFForm` festlegen. In der Javadoc finden Sie Informationen zu weiteren Optionen, die Sie mit dem Parameter `PDFFormRenderOptions` angeben können.
 
-Der Vorgang `renderPDFForm` akzeptiert auch XML-Daten. Die XML-Daten werden beim Erstellen eines PDF-Formulars mit der Vorlage zusammengeführt, sodass das generierte PDF-Formular die angegebenen Daten enthält. Der zweite Parameter des Vorgangs `renderPDFForm` akzeptiert ein Dokument- bzw. Javadoc-Objekt, das die gewünschten XML-Daten enthält.
+Der Vorgang `renderPDFForm` akzeptiert auch XML-Daten. Die XML-Daten werden bei der Erstellung eines PDF-Formulars mit der Vorlage zusammengeführt, sodass das generierte PDF-Formular die angegebenen Daten enthält. Der zweite Parameter des Vorgangs `renderPDFForm` akzeptiert ein Dokument- bzw. Javadoc-Objekt, das die gewünschten XML-Daten enthält.
 
 ## Extrahieren von Daten aus PDF-Formularen  {#extracting-data-from-pdf-forms-nbsp}
 
@@ -48,12 +48,12 @@ Mit dem Forms-Dienst können Sie ein mit AEM Forms Designer oder `renderPDFForm`
 
 ## Wiedergabe von Formularen basierend auf Fragmenten {#rendering-forms-based-on-fragments}
 
-Der Forms-Dienst kann Formulare auch basierend auf Fragmenten wiedergeben, die mit Adobe AEM Forms Designer erstellt wurden. Ein Fragment ist ein wiederverwendbarer Teil eines Formulars. Es wird als separate XDP-Datei gespeichert, die in verschiedene Formularentwürfe eingefügt werden kann. Beispielsweise kann ein Fragment einen Adressblock oder Copyright-Informationen enthalten.
+Der Forms-Dienst kann Formulare auch basierend auf Fragmenten wiedergeben, die mit AEM Forms Designer erstellt wurden. Ein Fragment ist ein wiederverwendbarer Teil eines Formulars. Es wird als separate XDP-Datei gespeichert, die in verschiedene Formularentwürfe eingefügt werden kann. Beispielsweise kann ein Fragment einen Adressblock oder Copyright-Informationen enthalten.
 
-Durch die Verwendung von Fragmenten wird die Erstellung und Pflege großer Formularbestände vereinfacht und beschleunigt. Fügen Sie beim Erstellen eines Formulars einen Verweis auf das erforderliche Fragment ein, damit das Fragment im Formular angezeigt wird. Der Fragmentverweis enthält ein Teilformular, das auf die eigentliche XDP-Datei verweist.
+Durch die Verwendung von Fragmenten wird die Erstellung und Pflege großer Formularbestände vereinfacht und beschleunigt. Fügen Sie beim Erstellen eines Formulars einen Verweis auf das erforderliche Fragment ein, damit das Fragment im Formular erscheint. Der Fragmentverweis enthält ein Teilformular, das auf die eigentliche XDP-Datei verweist.
 
 Die Verwendung von Fragmenten hat unter anderem folgende Vorteile:
 
 * **Wiederverwendbarkeit von Inhalten**: Sie können Inhalte in mehreren Formularentwürfen wiederverwenden. Am schnellsten können Sie Teile mit demselben Inhalt in mehreren Formularen wiederverwenden, indem Sie ein entsprechendes Fragment erstellen. Kopieren oder gar Neuerstellen des Inhalts dauert in jedem Fall länger. Durch die Verwendung von Fragmenten stellen Sie außerdem sicher, dass häufig verwendete Bestandteile eines Formularentwurfs in allen darauf verweisenden Formularen stets einen konsistenten Inhalt und ein einheitliches Erscheinungsbild besitzen.
 * **Globale Aktualisierungen**: Sie müssen globale Änderungen für mehrere Formulare nur einmal in einer Datei vornehmen. Sie können Inhalt, Skriptobjekte, Datenbindungen, Layout und Stile eines Fragments ändern. Alle XDP-Formulare, die auf dieses Fragment verweisen, spiegeln diese Änderungen wider.
-* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Erfahrung in der Skripterstellung oder anderen erweiterten Funktionen von AEM Forms Designer können Fragmente entwickeln und freigeben, die Skripterstellung und dynamische Eigenschaften verwenden. Formularentwickler können diese Fragmente zur Gestaltung ihrer Formulare verwenden. Neben der einfacheren Entwicklung stellen sie dadurch sicher, dass Aussehen und Funktionalität aller Formularteile in allen Formularen einheitlich sind.
+* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler, die mit Scripting oder anderen erweiterten Funktionen von AEM Forms Designer vertraut sind, können Fragmente, die Scripting und dynamische Eigenschaften nutzen, entwickeln und mit anderen teilen. Formularentwickler können diese Fragmente zur Gestaltung ihrer Formulare verwenden. Neben der einfacheren Entwicklung stellen sie dadurch sicher, dass Aussehen und Funktionalität aller Formularteile in allen Formularen einheitlich sind.

@@ -13,7 +13,7 @@ exl-id: 8aeabd95-948d-4a54-b593-1eda8ddd731b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 57%
+ht-degree: 90%
 
 ---
 
@@ -33,8 +33,8 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
 ## Passen Sie die Benutzeroberfläche „Korrespondenz erstellen“ an {#customizewatermark-}
 
-1. Navigieren Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen **[!UICONTROL previewwatermark]** mit Pfad/Struktur, die dem Ordner previewwatermark im Ordner libs ähnelt:
+1. Wechseln Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als „Administrator“ an.
+1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen **[!UICONTROL previewwatermark]**, dessen Pfad/Struktur der des Ordners „previewwatermark“ im Ordner „libs“ entspricht:
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner &quot;previewwatermark&quot;unter dem folgenden Pfad und wählen Sie **Überlagerungsknoten**:
 
@@ -44,22 +44,22 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
       **Pfad:** /libs/fd/cm/configFiles/previewwatermark
 
-      **Überlagerungsspeicherort:** /apps/
+      **Überlagerungsspeicherort:** /apps/
 
-      **Knotentypen abgleichen:** Aktiviert
+      **Knotentypen abgleichen:** Überprüft
 
       >[!NOTE]
       >
-      >Nehmen Sie keine Änderungen in der Verzweigung /libs vor. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
+      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
       >
       >* Ihre Instanz aktualisieren
       >* Ein Hotfix anwenden
       >* Ein Feature Pack installieren
 
 
-   1. Klicken Sie auf **OK** und dann auf **Alle speichern**. Die **[!UICONTROL previewwatermark]** -Ordner wird im angegebenen Pfad erstellt.
+   1. Klicken Sie auf **OK** und dann auf **Alle speichern**. Der Ordner **[!UICONTROL previewwatermark]** wird unter dem angegebenen Pfad erstellt.
 
-1. Kopieren Sie die ddx-Datei aus dem Ordner &quot;/libs/fd/cm/configFiles/previewwatermark&quot;in den Ordner &quot;/apps/fd/cm/configFiles/previewwatermark&quot;und klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Kopieren Sie die ddx-Datei aus dem Ordner „/libs/fd/cm/configFiles/previewwatermark“ in den Ordner „/apps/fd/cm/configFiles/previewwatermark“ und klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Nehmen Sie in der ddx-Datei unter „/apps/fd/cm/configFiles/previewwatermark/“ die gewünschten Änderungen vor.
 
    ```
@@ -77,7 +77,7 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
    </DDX>
    ```
 
-   Informationen zum Anpassen des Erscheinungsbilds, des Texts und der Ausrichtung von Wasserzeichen finden Sie unter Hinzufügen und Entfernen von Wasserzeichen und Hintergründen im [Assembler-Dienst und DDX-Referenz](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf) Dokument.
+   Informationen zum Anpassen des Erscheinungsbildes, des Textes und der Ausrichtung des Wasserzeichens finden Sie unter Hinzufügen und Entfernen von Wasserzeichen und Hintergründen im Dokument [Assembler Service und DDX-Referenz](https://help.adobe.com/de_DE/livecycle/11.0/ddxRef.pdf).
 
    >[!NOTE]
    >

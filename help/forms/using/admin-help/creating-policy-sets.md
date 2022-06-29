@@ -14,7 +14,7 @@ exl-id: e17ab7de-9f4a-4456-be80-43ab9663940e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1295'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,32 +38,32 @@ Richtliniensätze werden auf den Document Security-Administrationswebseiten von 
 
 Beim Löschen eines Richtliniensatzes können Richtlinien, die Bestandteil des Satzes waren, nicht mehr auf neue Dokumente angewendet werden. Sie können jedoch die Richtlinieninformationen für Richtlinien, die noch in Benutzung sind, sowohl in Administration Console als auch auf den Webseiten für Endbenutzer anzeigen. Sie können die Richtlinieninformationen über die Seite „Dokumentdetails“ jedes von dieser Richtlinie geschützten Dokuments anzeigen. Richtlinien, die noch verwendet werden, können bearbeitet werden.
 
-Der Hauptbenutzer oder Richtliniensatzkoordinator muss für jeden Richtliniensatz in User Management erstellte Domänen auswählen und zum sichtbaren Benutzer bzw. zur sichtbaren Gruppe hinzufügen. Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Eingrenzen der Domänen, die der Richtliniensatzkoordinator beim Auswählen von Benutzern durchsuchen kann, die Richtlinien hinzugefügt werden sollen.
+Der Hauptbenutzer oder Richtliniensatzkoordinator muss für jeden Richtliniensatz in User Management erstellte Domains auswählen und zum sichtbaren Benutzer bzw. zur sichtbaren Gruppe hinzufügen. Diese Liste wird dem Richtliniensatzkoordinator angezeigt und dient zum Eingrenzen der Domains, die der Richtliniensatzkoordinator beim Auswählen von Benutzern durchsuchen kann, die Richtlinien hinzugefügt werden sollen.
 
 Beim Erstellen von Richtliniensätzen weisen Sie Benutzern die Rolle des Dokumentherausgebers zu. Der *Dokumentherausgeber* ist der Benutzer, der das Dokument mit einer Richtlinie schützt. Dieser Benutzer wird stets standardmäßig in eine Richtlinie einbezogen und hat Vollzugriffsrechte, so auch zum Sperren des Dokumentzugriffs oder Wechseln der Richtlinie. Administratoren können jedoch die Zugriffsrechte des Dokumentherausgebers für freigegebene Richtlinien ändern. Beispielsweise kann der Administrator dem Dokumentherausgeber die Rechte zum Sperren des Dokumentzugriffs oder Wechseln der Richtlinie entziehen. Wenn ein Administrator die Richtlinie wechselt, die mit dem Dokument verknüpft ist, wird der Herausgeber-Name auf dem Namen des Eigentümers der Richtlinie aktualisiert, die zuletzt auf das Dokument angewendet wurde.
 
 Bei der Installation von Document Security wird standardmäßig ein so genannter *globaler Richtliniensatz* erstellt. Dieser Richtliniensatz wird von dem Administrator, der die Software installiert hat, oder dem für diesen Richtliniensatz festgelegten Richtliniensatzkoordinator verwaltet.
 
-## Einen Richtliniensatz erstellen {#create-a-policy-set}
+## Erstellen Sie einen Richtliniensatz {#create-a-policy-set}
 
 Der Richtliniensatz „Global“ ist der einzige Standardrichtliniensatz, der bei der Installation erstellt wird. Sie können weitere Richtliniensätze erstellen und dabei Richtlinien, Benutzer, Richtliniensatzkoordinatoren und Dokumentherausgeber hinzufügen. Nach Erstellen eines Richtliniensatzes können Sie Richtlinien im Satz erstellen.
 
 Klicken Sie bei der Richtliniensatzerstellung auf die Schaltfläche „Zurück“, um zum vorherigen Bildschirm zurückzukehren. Um den Richtliniensatz zu speichern, klicken Sie zu einem beliebigen Zeitpunkt auf die Schaltfläche „Speichern“.
 
 1. Klicken Sie auf der Document Security-Seite auf „Richtlinien“, auf die Registerkarte „Richtliniensätze“ und anschließend auf „Neu“.
-1. Geben Sie in das Feld „Name“ einen Namen für den Richtliniensatz und optional in das Feld „Beschreibung“ eine Beschreibung ein. Klicken Sie danach auf „Weiter“. Der Name darf keinen Doppelpunkt enthalten **:**.
+1. Geben Sie in das Feld „Name“ einen Namen für den Richtliniensatz und optional in das Feld „Beschreibung“ eine Beschreibung ein. Klicken Sie danach auf „Weiter“. Der Name darf keinen Doppelpunkt (**:**) enthalten.
 
    >[!NOTE]
    >
    >Sie können einen Richtliniensatznamen erstellen, der erweiterte Zeichen enthält. Bei einem Vergleich zwischen zwei derartigen Zeichenfolgen werden jedoch Zeichen mit und ohne Akzentzeichen, wie z. B. „e“ und „é“, als identisch bewertet. Beim Erstellen eines Richtliniensatzes wird ein Vergleich durchgeführt, um zu überprüfen, ob bereits ein Richtliniensatz mit demselben Namen vorhanden ist. Der Vergleich kann nicht zwischen Namen unterscheiden, die sich nur durch Akzentzeichen unterscheiden. Es wird angenommen, dass der Richtliniensatz bereits zur Datenbank hinzugefügt wurde, sodass der neue nicht hinzugefügt wird.
 
-1. (Optional) Um die Domänen festzulegen, die Herausgebern von Dokumenten beim Hinzufügen von Benutzern zu einer Richtlinie angezeigt werden, klicken Sie auf „Domänen hinzufügen“, wählen Sie anschließend die Domänen aus, die durchsuchbar sein sollen, klicken Sie auf „Hinzufügen“ und danach auf „OK“.
+1. (Optional) Um die Domains festzulegen, die Herausgebern von Dokumenten beim Hinzufügen von Benutzern zu einer Richtlinie angezeigt werden, klicken Sie auf „Domains hinzufügen“, wählen Sie anschließend die Domains aus, die durchsuchbar sein sollen, klicken Sie auf „Hinzufügen“ und danach auf „OK“.
 1. Klicken Sie auf der Seite „Benutzer und Gruppen hinzufügen“ auf „Weiter“.
 1. (Optional) Um einen Richtliniensatzkoordinator hinzuzufügen, klicken Sie auf „Benutzer und Gruppen hinzufügen“ (Schritt 3 von 4) und führen Sie die folgenden Schritte aus:
 
    * Geben Sie in das Feld „Suchen“ den Namen oder die E-Mail-Adresse ein.
    * Wählen Sie in der Liste „Verwendet“ die passende Option aus.
-   * Wählen Sie in der Liste „Typ“ die Option „Benutzer“ und in der Liste „In“ eine zu durchsuchende Domäne aus.
+   * Wählen Sie in der Liste „Typ“ die Option „Benutzer“ und in der Liste „In“ eine zu durchsuchende Domain aus.
    * Wählen Sie in der Liste „Anzeigen“ die Anzahl der pro Seite anzuzeigenden Suchergebnisse aus und klicken Sie auf „Suchen“.
    * Aktivieren Sie das Kontrollkästchen des Benutzers oder der Gruppe, der/die hinzugefügt werden soll, und klicken Sie auf „Weiter“.
    * Wählen Sie die Berechtigungen des Richtliniensatzkoordinators aus und klicken Sie auf „Hinzufügen“. Die folgenden Berechtigungen können festgelegt werden:
@@ -81,7 +81,7 @@ Klicken Sie bei der Richtliniensatzerstellung auf die Schaltfläche „Zurück�
 
    * Geben Sie in das Feld „Suchen“ den Namen oder die E-Mail-Adresse ein.
    * Wählen Sie in der Liste „Verwendet“ die passende Option aus.
-   * Wählen Sie in der Liste „Typ“ die Option „Benutzer“ und in der Liste „In“ eine zu durchsuchende Domäne aus.
+   * Wählen Sie in der Liste „Typ“ die Option „Benutzer“ und in der Liste „In“ eine zu durchsuchende Domain aus.
    * Wählen Sie in der Liste „Anzeigen“ die Anzahl der pro Seite anzuzeigenden Suchergebnisse aus und klicken Sie auf „Suchen“.
    * Aktivieren Sie die Kontrollkästchen der hinzuzufügenden Benutzer und Gruppen. Klicken Sie auf „Hinzufügen“ und danach auf „OK“.
 

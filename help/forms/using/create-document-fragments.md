@@ -1,7 +1,7 @@
 ---
-title: '"Tutorial: Erstellen Sie Dokumentfragmente"'
+title: '„Tutorial: Erstellen von Dokumentfragmenten“'
 seo-title: Create document fragments for Interactive Communication
-description: Erstellen Sie Dokumentfragmente für die interaktive Kommunikation
+description: Erstellen von Dokumentfragmenten für die interaktive Kommunikation
 seo-description: Create document fragments for Interactive Communication
 uuid: 215d09a6-949c-45ef-b2b0-88cd0cb4b99c
 contentOwner: anujkapo
@@ -12,25 +12,25 @@ exl-id: 50d93998-6393-4607-b89b-5b97aad530a3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1683'
-ht-degree: 57%
+ht-degree: 97%
 
 ---
 
-# Tutorial: Erstellen Sie Dokumentfragmente {#tutorial-create-document-fragments}
+# Tutorial: Erstellen von Dokumentfragmenten {#tutorial-create-document-fragments}
 
-Erstellen Sie Dokumentfragmente für die interaktive Kommunikation
+Erstellen von Dokumentfragmenten für die interaktive Kommunikation
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Dieses Tutorial ist ein Schritt im [Erstellen der ersten interaktiven Kommunikation](/help/forms/using/create-your-first-interactive-communication.md) Reihe. Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
 
 Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zum Erstellen einer interaktiven Kommunikation verwendet werden. Es gibt Dokumentfragmente der folgenden Typen:
 
-* Text - Ein Text-Asset ist ein Inhaltselement, das aus einem oder mehreren Textabsätzen besteht. Ein Absatz kann statisch oder dynamisch sein.
-* Liste - Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, Listen, Bedingungen und Bildern.
-* Bedingung - Mit Bedingungen können Sie festlegen, welche Inhalte in die interaktive Kommunikation basierend auf den vom Formulardatenmodell empfangenen Daten aufgenommen werden.
+* Text: Ein Text-Asset ist eine Inhaltskomponente, die aus einem oder mehreren Textabsätzen besteht. Ein Absatz kann statisch oder dynamisch sein.
+* Liste: Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, Listen, Bedingungen und Bildern.
+* Bedingung: Mithilfe von Bedingungen können Sie festlegen, welche Inhalte in die interaktive Kommunikation aufgenommen werden, und zwar basierend auf den Daten, die vom Formulardatenmodell empfangen werden.
 
-Dieses Tutorial führt Sie durch die Schritte zum Erstellen mehrerer Textdokumentfragmente basierend auf der Anatomie, die in [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) Abschnitt. Am Ende dieser Schulung können Sie Folgendes:
+In diesem Tutorial werden Sie durch die einzelnen Schritte geführt, um mehrere Textdokumentfragmente zu erstellen, die auf der Anatomie im Abschnitt [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) basieren. Am Ende dieser Schulung können Sie Folgendes:
 
 * Erstellen Sie Dokumentfragmente
 * Variablen erstellen
@@ -38,18 +38,18 @@ Dieses Tutorial führt Sie durch die Schritte zum Erstellen mehrerer Textdokumen
 
 ![text_document_fragments](assets/text_document_fragments.gif)
 
-Im Folgenden finden Sie eine Liste der Dokumentfragmente, die in diesem Lernprogramm erstellt werden:
+Im Folgenden finden Sie eine Liste der Dokumentfragmente, die in diesem Tutorial erstellt werden:
 
 * [Rechnungsdetails](/help/forms/using/create-document-fragments.md#step-create-bill-details-text-document-fragment)
 * [Kundendetails](/help/forms/using/create-document-fragments.md#step-create-customer-details-text-document-fragment)
 * [Rechnungszusammenfassung](/help/forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Zusammenfassung der Gebühren](/help/forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Jedes Dokumentfragment enthält Felder mit statischem Text, Daten, die vom Formulardatenmodell empfangen wurden, und Daten, die über die Agentenbenutzeroberfläche eingegeben wurden. Alle diese Felder wurden im [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) Abschnitt.
+Jedes Dokumentfragment enthält Felder mit statischem Text, Daten, die vom Formulardatenmodell empfangen wurden, und Daten, die über die Agentenbenutzeroberfläche eingegeben wurden. Alle diese Felder werden im Abschnitt [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) dargestellt.
 
 Beim Erstellen von Dokumentfragmenten in diesem Tutorial werden Variablen für Felder erstellt, die Daten über die Agentenbenutzeroberfläche empfangen.
 
-Verwendung **FDM_Create_First_IC**, wie im Abschnitt [Formulardatenmodell erstellen](create-form-data-model-tutorial.md) als Formulardatenmodell zum Erstellen von Dokumentfragmenten in diesem Tutorial.
+Verwenden Sie **FDM_Create_First_IC** wie im Abschnitt [Formulardatenmodell erstellen](create-form-data-model-tutorial.md) beschrieben, als Formulardatenmodell, um in diesem Tutorial Dokumentfragmente zu erstellen.
 
 ## Schritt 1: Erstellen Sie ein Textdokumentfragment für Rechnungsdetails {#step-create-bill-details-text-document-fragment}
 
@@ -99,11 +99,11 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
-1. Setzen Sie den Cursor neben dem Feld **Rechnungsnr.** und doppelklicken Sie auf die Variable **InvoiceNumber** auf der Registerkarte **Variablen** im linken Fensterbereich.
-1. Setzen Sie den Cursor neben dem **Rechnungszeitraum** und doppelklicken Sie auf das **billperiod** -Variable.
-1. Setzen Sie den Cursor neben dem **Rechnungsdatum** und doppelklicken Sie auf das **Rechnungsdatum** -Variable.
-1. Wählen Sie die Registerkarte **Datenmodellobjekte** im linken Fensterbereich.
-1. Setzen Sie den Cursor neben dem **Ihr Plan** und doppelklicken Sie auf das **customer** > **customerplan** -Eigenschaft.
+1. Setzen Sie den Cursor neben das Feld **Rechnungsnr.** und doppelklicken Sie auf der Registerkarte **Variablen** im linken Fensterbereich auf die Variable **InvoiceNumber**.
+1. Setzen Sie den Cursor neben das Feld **Rechnungszeitraum** und doppelklicken Sie auf die Variable **Billperiod**.
+1. Setzen Sie den Cursor neben das Feld **Rechnungsdatum** und doppelklicken Sie auf die Variable **Bill Date**.
+1. Wählen Sie die Registerkarte **Datenmodellobjekte** im linken Fensterbereich aus.
+1. Setzen Sie den Cursor neben das Feld **Ihr Plan** und doppelklicken Sie auf die Eigenschaft **Kunde** > **Kundenplan**.
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
@@ -130,7 +130,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
-   1. Eingabe **customer_details_first_ic** als Namen im **Titel** -Feld. Der Titel wird im Feld **Name** automatisch ausgefüllt.
+   1. Geben Sie **customer_details_first_ic** als Name im Feld **Titel** ein. Der Titel wird im Feld **Name** automatisch ausgefüllt.
    1. Wählen Sie **Formulardatenmodell** im Abschnitt **Datenmodell** aus.
    1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
    1. Tippen Sie auf **Weiter**.
@@ -138,7 +138,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 1. Wählen Sie die Registerkarte **Variablen** im linken Fensterbereich und tippen Sie auf **Erstellen**.
 1. Im Abschnitt **Variable erstellen**:
 
-   1. Eingabe **Placesupply** als Namen der Variablen.
+   1. Geben Sie als Name der Variablen **Placesupply** ein.
    1. Wählen Sie als Typ **String**.
    1. Tippen Sie auf **Erstellen**.
 
@@ -148,8 +148,8 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
    * Anzahl von Verbindungen: Nummerntyp
 
 
-1. Wählen Sie die **Datenmodellobjekte** -Registerkarte, platzieren Sie den Cursor im rechten Bereich und doppelklicken Sie auf die **customer** > **name** -Eigenschaft.
-1. Drücken Sie die Eingabetaste , um den Cursor zur nächsten Zeile zu bewegen, und doppelklicken Sie auf die **customer** > **Adresse** -Eigenschaft.
+1. Wählen Sie im linken Fensterbereich die Registerkarte **Datenmodellobjekte** aus, bewegen Sie den Cursor in den rechten Fensterbereich und doppelklicken Sie auf die Eigenschaft **Kunde** > **Name**.
+1. Drücken Sie die Eingabetaste, um den Cursor in die nächste Zeile zu bewegen, und doppelklicken Sie auf die Eigenschaft **Kunde** > **Adresse**.
 1. Erstellen Sie statischen Text für die folgenden Felder mit dem rechten Fensterbereich:
 
    * Mobilfunknummer
@@ -161,20 +161,20 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
-1. Setzen Sie den Cursor neben dem **Mobiltelefonnummer** und doppelklicken Sie auf das **customer** > **mobilenum** -Eigenschaft.
+1. Setzen Sie den Cursor neben das Feld **Mobilfunknummer** und doppelklicken Sie auf die Eigenschaft **Kunde** > **mobilenum**.
 1. Setzen Sie den Cursor neben dem **Alternative Kontaktnummer** und doppelklicken Sie auf das **customer** > **alternatemobilenumber** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **Beziehungsnummer** und doppelklicken Sie auf das **customer** > **relationNumber** -Eigenschaft.
-1. Wählen Sie die **Variablen** platzieren Sie den Cursor neben dem **Lieferort** und doppelklicken Sie auf das **Placesupply** -Variable.
-1. Setzen Sie den Cursor neben dem **Statuscode** und doppelklicken Sie auf das **Statecode** -Variable.
-1. Setzen Sie den Cursor neben dem **Anzahl der Verbindungen** und doppelklicken Sie auf das **Numberverbindungen** -Variable.
+1. Setzen Sie den Cursor neben das Feld **Verhältnis-Nummer** und doppelklicken Sie auf die Eigenschaft **Kunde** > **relationshipnumber**.
+1. Wählen Sie die Registerkarte **Variablen** und setzen Sie den Cursor neben dem Feld **Ort der Lieferung** und doppelklicken Sie auf die Variable **Placesupply**.
+1. Setzen Sie den Cursor neben das Feld **Status-Code** und doppelklicken Sie auf die Variable **Statecode**.
+1. Setzen Sie den Cursor neben das Feld **Anzahl der Verbindungen** und doppelklicken Sie auf die Variable **Numberconnections**.
 
    ![customer_details_df2](assets/customer_details_df2.png)
 
-1. Klicken **Speichern** , um das Textdokumentfragment &quot;Kundendetails&quot;zu erstellen.
+1. Klicken Sie auf **Speichern**, um das Textdokumentfragment „Kundendetails“ zu erstellen.
 
-## Schritt 3: Erstellen Sie ein Textdokumentfragment für Rechnungszusammenfassung {#step-create-bill-summary-text-document-fragment}
+## Schritt 3: Erstellen Sie ein Textdokumentfragment für die Rechnungszusammenfassung {#step-create-bill-summary-text-document-fragment}
 
-Das Dokumentfragment &quot;Rechnungszusammenfassung&quot;enthält die folgenden Felder:
+Das Dokumentfragment „Rechnungszusammenfassung“ enthält die folgenden Felder:
 
 | Feld | Datenquelle |
 |---|---|
@@ -191,7 +191,7 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
-   1. Eingabe **bill_summary_first_ic** als Namen im **Titel** -Feld. Der Titel wird im Feld **Name** automatisch ausgefüllt.
+   1. Geben Sie **bill_summary_first_ic** als Name in das Feld **Titel** ein. Der Titel wird im Feld **Name** automatisch ausgefüllt.
    1. Wählen Sie **Formulardatenmodell** im Abschnitt **Datenmodell** aus.
    1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
    1. Tippen Sie auf **Weiter**.
@@ -199,8 +199,8 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 1. Wählen Sie die Registerkarte **Variablen** im linken Fensterbereich und tippen Sie auf **Erstellen**.
 1. Im Abschnitt **Variable erstellen**:
 
-   1. Eingabe **Vorheriger Saldo** als Namen der Variablen.
-   1. Auswählen **Zahl** als Typ.
+   1. Geben Sie als Name der Variablen **Previousbalance** ein.
+   1. Wählen Sie als Typ **Zahl**.
    1. Tippen Sie auf **Erstellen**.
 
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
@@ -223,20 +223,20 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
    ![bill_summary_static](assets/bill_summary_static.png)
 
-1. Setzen Sie den Cursor neben dem **Vorheriger Saldo** und doppelklicken Sie auf das **Vorheriger Saldo** -Variable.
-1. Setzen Sie den Cursor neben dem **Zahlungen** und doppelklicken Sie auf das **Zahlungen** -Variable.
-1. Setzen Sie den Cursor neben dem **Anpassungen** und doppelklicken Sie auf das **Anpassungen** -Variable.
-1. Setzen Sie den Cursor neben dem **Fälliger Betrag** und doppelklicken Sie auf das **Fälliger Betrag** -Variable.
-1. Setzen Sie den Cursor neben dem **Fälligkeitsdatum** und doppelklicken Sie auf das **Duedate** -Variable.
-1. Wählen Sie die **Datenmodellobjekte** platzieren Sie den Cursor neben dem **Gebühren für den laufenden Rechnungszeitraum** im rechten Bereich ein und doppelklicken Sie auf die **Rechnungen** > **usagecharges** -Eigenschaft.
+1. Setzen Sie den Cursor neben das Feld **Vorheriger Saldo** und doppelklicken Sie auf die Variable **Previousbalance**.
+1. Setzen Sie den Cursor neben das Feld **Zahlungen** und doppelklicken Sie auf die Variable **Payments**.
+1. Setzen Sie den Cursor neben das Feld **Anpassungen** und doppelklicken Sie auf die Variable **Adjustments**.
+1. Setzen Sie den Cursor neben das Feld **Fälliger Betrag** und doppelklicken Sie auf die Variable **Amountdue**.
+1. Setzen Sie den Cursor neben das Feld **Fälligkeitsdatum** und doppelklicken Sie auf die Variable **Duedate**.
+1. Wählen Sie die Registerkarte **Datenmodellobjekte** im linken Bereich, platzieren Sie den Cursor in den rechten Bereich neben dem Feld **Gebühren für aktuelle Rechnungsperiode** und doppelklicken Sie auf die Eigenschaft **bills** > **usagecharges**.
 
    ![bill_summary_static_variables](assets/bill_summary_static_variables.png)
 
-1. Klicken **Speichern** , um das Textdokumentfragment &quot;Kundendetails&quot;zu erstellen.
+1. Klicken Sie auf **Speichern**, um das Textdokumentfragment „Kundendetails“ zu erstellen.
 
 ## Schritt 4: Erstellen Sie ein Textdokumentfragment für „Zusammenfassung der Kosten“ {#step-create-summary-of-charges-text-document-fragment}
 
-Das Dokumentfragment &quot;Zusammenfassung der Gebühren&quot;enthält die folgenden Felder:
+Das Dokumentfragment „Zusammenfassung der Gebühren“ enthält die folgenden Felder:
 
 | Feld | Datenquelle |
 |---|---|
@@ -256,7 +256,7 @@ Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Form
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
-   1. Eingabe **summary_charges_first_ic** als Namen im **Titel** -Feld. Der Titel wird im Feld Name automatisch ausgefüllt.
+   1. Geben Sie **summary_charges_first_ic** als Name im Feld **Titel** ein. Der Titel wird automatisch in das Feld „Name“ eingetragen.
    1. Wählen Sie **Formulardatenmodell** im Abschnitt **Datenmodell** aus.
    1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
    1. Tippen Sie auf **Weiter**.
@@ -276,19 +276,19 @@ Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Form
    ![summary_charges_static](assets/summary_charges_static.png)
 
 1. Wählen Sie die Registerkarte **Datenmodellobjekte**.
-1. Setzen Sie den Cursor neben dem **Anrufgebühren** und doppelklicken Sie auf das **Rechnungen** > **callcharges** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **Gebühren für Konferenzanrufe** und doppelklicken Sie auf das **Rechnungen** > **concallcharges** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **SMS-Gebühren** und doppelklicken Sie auf das **Rechnungen** > **smscharges** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **Gebühren für das mobile Internet** und doppelklicken Sie auf das **Rechnungen** > **internetcharges** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **Nationale Roaming-Gebühren** und doppelklicken Sie auf das **Rechnungen** > **roamingnational** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **Internationale Roaming-Gebühren** und doppelklicken Sie auf das **Rechnungen** > **roamingintnl** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **Mehrwert - Service-Gebühren** und doppelklicken Sie auf das **Rechnungen** > **vas** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **Gesamtkosten** und doppelklicken Sie auf das **Rechnungen** > **usagecharges** -Eigenschaft.
-1. Setzen Sie den Cursor neben dem **GESAMTZAHLBARER ZUSCHUSS** und doppelklicken Sie auf das **Rechnungen** > **usagecharges** -Eigenschaft.
+1. Setzen Sie den Cursor neben das Feld **Anrufgebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **callcharges**.
+1. Setzen Sie den Cursor neben das Feld **Konferenzanrufgebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **confcallcharges**.
+1. Setzen Sie den Cursor neben das Feld **SMS-Gebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **smscharges**.
+1. Setzen Sie den Cursor neben das Feld **Mobile Internetgebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **internetcharges**.
+1. Setzen Sie den Cursor neben das Feld **Nationale Roaming-Gebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **roamingnational**.
+1. Setzen Sie den Cursor neben das Feld **Internationale Roaming-Gebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **roamingintnl**.
+1. Setzen Sie den Cursor neben das Feld **Mehrwert - Service-Gebühren** und doppelklicken Sie auf die Eigenschaft **bills** > **vas**.
+1. Setzen Sie den Cursor neben das Feld **Gebühren insgesamt** und doppelklicken Sie auf die Eigenschaft **bills** > **usagecharges**.
+1. Setzen Sie den Cursor neben das Feld **GESAMT ZAHLBAR** und doppelklicken Sie auf die Eigenschaft **bills** > **usagecharges**. 
 
    ![summary_charges_static_fdm](assets/summary_charges_static_fdm.png)
 
-1. Wählen Sie den Text im **Mehrwert - Service-Gebühren** und tippen Sie auf **Regel erstellen** , um eine Bedingung zu erstellen, anhand derer die Zeile in der interaktiven Kommunikation angezeigt wird:
+1. Wählen Sie den Text in der Zeile **Mehrwert - Service-Gebühren** aus und tippen Sie auf **Regel erstellen**, um eine Bedingung zu erstellen, auf deren Grundlage die Zeile in der interaktiven Kommunikation angezeigt wird:
 1. Im Popup-Fenster **Regel erstellen**:
 
    1. Wählen Sie **Datenmodelle und Variablen** und dann **Rechnungen** > **callcharges**.
@@ -299,4 +299,4 @@ Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Form
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Klicken **Speichern** , um das Textdokumentfragment Zusammenfassung der Gebühren zu erstellen.
+1. Klicken Sie auf **Speichern**, um das Textdokumentfragment „Zusammenfassung der Gebühren“ zu erstellen.

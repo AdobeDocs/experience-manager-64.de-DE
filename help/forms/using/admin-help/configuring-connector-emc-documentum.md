@@ -1,5 +1,5 @@
 ---
-title: Connector für EMC Documentum konfigurieren
+title: Connector für EMC Documentum konfigurieren
 seo-title: Configuring Connector for EMC Documentum
 description: Erfahren Sie, wie Sie den Connector für EMC Documentum, um die Kommunikation zwischen AEM Forms und EMC Documentum zu aktivieren.
 seo-description: Learn how to configure the Connector for EMC Documentum to enable communication between AEM forms and EMC Documentum.
@@ -13,7 +13,7 @@ exl-id: 86cc01f0-b6c0-4beb-a203-96dc1989d8f0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Sie können festlegen, welcher Repository Service Provider mit Documentum verwen
 
 **ECM Documentum Repository Provider:** Legt den Documentum Repository Provider als Provider des Repositorys fest. Diese Option ist veraltet.
 
-**Repository Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository Provider:** Legt den nativen Repository-Provider als Provider des Repositorys fest.
 
 >[!NOTE]
 >

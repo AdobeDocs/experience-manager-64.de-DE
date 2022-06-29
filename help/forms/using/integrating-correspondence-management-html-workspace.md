@@ -11,7 +11,7 @@ exl-id: 4df9a16c-0853-4bbf-81bb-1856ab55c5ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '623'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -25,9 +25,9 @@ Beispiel: die Integration von Correspondence Management in AEM Forms Workspace. 
 
 ## Correspondence Management-Elemente erstellen {#create-correspondence-management-assets}
 
-Erstellen Sie zunächst eine Beispielvorlage für Correspondence Management, die in AEM Forms Workspace gerendert wird. Weitere Informationen finden Sie unter [Erstellen einer Briefvorlage](/help/forms/using/create-letter.md).
+Erstellen Sie zuerst eine Beispielvorlage für Correspondence Management, die in AEM Forms Workspace wiedergegeben wird. Weitere Informationen finden Sie unter [Erstellen einer Briefvorlage](/help/forms/using/create-letter.md).
 
-Greifen Sie über die URL auf die Correspondence Management-Vorlage zu, um zu überprüfen, ob die Correspondence Management-Vorlage erfolgreich wiedergegeben werden kann. Die URL weist ein ähnliches Muster auf `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+Greifen Sie auf die Correspondence Management-Vorlage über die URL zu, um zu überprüfen, ob die Correspondence Management-Vorlage abgerufen werden kann. Die URL weist ein Muster auf, das `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;` ähnlich sieht.
 
 Dabei ist `encodedLetterId` die URL-kodierte Brief-ID. Verwenden Sie die gleiche Brief-ID, wenn Sie den Wiedergabeprozess für eine Workspace-Aufgabe in der Workbench definieren.
 
@@ -44,7 +44,7 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
 
 1. Starten Sie die Workbench. Melden Sie sich beim localhost als Administrator an.
 1. Klicken Sie auf „Datei > Neu > Anwendung“. Geben Sie in das Feld „Anwendungsname“ `CMDemoSample` ein und klicken Sie dann auf „Fertig stellen“.
-1. Auswählen `CMDemoSample/1.0` und Rechtsklick `NewProcess`. Geben Sie in das Namensfeld `CMRenderer` ein und klicken Sie dann auf „Fertig stellen“.
+1. Wählen Sie `CMDemoSample/1.0` und klicken Sie mit der rechten Maustaste auf `NewProcess`. Geben Sie in das Namensfeld `CMRenderer` ein und klicken Sie dann auf „Fertig stellen“.
 1. Ziehen Sie die Startpunktaktivitätenauswahl und konfigurieren Sie sie:
 
    1. Wählen Sie in den Darstellungs-Daten „Ein CRX-Asset verwenden“.
@@ -100,8 +100,8 @@ Verwenden Sie folgende Schritte, um eine Aufgabe zu erstellen, um einen Brief in
    }
    ```
 
-   [Datei abrufen](assets/dscsample.zip)
-DSC herunterladen: Ein Beispiel-DSC ist im Abschnitt `DSCSample.zip` Datei angehängt. Laden Sie die `DSCSample.zip` -Datei. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Weitere Informationen finden Sie unter[ Konfigurieren des DSC-Service](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   [Datei laden](assets/dscsample.zip)`DSCSample.zip`
+DSC herunterladen: Ein Beispiel-DSC ist in der Datei „“ verfügbar, die oben angehängt ist. Laden Sie die `DSCSample.zip` -Datei. Bevor Sie den DSC-Service verwenden, müssen Sie ihn konfigurieren. Weitere Informationen finden Sie unter[ Konfigurieren des DSC-Service](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Wählen Sie im Dialogfeld „Aktivität definieren“ die entsprechende Aktivität wie getLetterInstanceInfo aus und klicken Sie auf **OK**.
 
@@ -111,7 +111,7 @@ DSC herunterladen: Ein Beispiel-DSC ist im Abschnitt `DSCSample.zip` Datei angeh
 
    ![cminworkspace](assets/cminworkspace.png)
 
-1. Geben Sie die erforderlichen Daten ein und senden Sie den Brief ab. Das Fenster schließt. In diesem Prozess wird die Aufgabe dem Benutzer zugewiesen, der im Arbeitsablauf in Schritt 9 angegeben wurde.
+1. Geben Sie die erforderlichen Daten ein und senden Sie den Brief ab. Das Fenster schließt sich. In diesem Prozess wird die Aufgabe dem Benutzer zugewiesen, der im Arbeitsablauf in Schritt 9 angegeben wurde.
 
    >[!NOTE]
    >

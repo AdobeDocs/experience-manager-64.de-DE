@@ -12,7 +12,7 @@ exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
 
    `/apps/ws/css/newStyle.css`
 
-   Beispiel: Fügen Sie einen neuen Stil mit dem Namen `myStyle1`wie unten gezeigt, und laden Sie die Bilddatei hoch `myStyleIcon1.png` der `/apps/ws/image`Ordner mit einem WebDAV-Client.
+   Ein Beispiel: Fügen Sie einen neuen Stil mit dem Namen `myStyle1` wie unten gezeigt hinzu und laden Sie die Grafikdatei `myStyleIcon1.png` mithilfe eines WebDAV-Clients in den Ordner `/apps/ws/image` hoch.
 
    >[!NOTE]
    >
-   >Weitere Informationen zum WebDAV-Zugriff finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Weitere Informationen zum Zugriff über WebDAV finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/de/crx/current/how_to/webdav_access.html).
 
    >[!NOTE]
    >
@@ -46,11 +46,11 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
 
 ## Popup bei Tasklist-Aufgabenaktion {#task-list-task-action-popup}
 
-1. Erstellen Sie ein Tasklisten-Aktionspopup (siehe [Erstellen von AEM Forms Workspace-Code](introduction-customizing-html-workspace.md#building-html-workspace-code). Dazu muss ein Dev-Paket verwendet werden.)
+1. Erstellen Sie ein Tasklisten-Aktionspopup siehe [Erstellen von AEM Forms Workspace-Code](introduction-customizing-html-workspace.md#building-html-workspace-code). Dazu muss ein Dev-Paket verwendet werden.
 
 1. Kopieren Sie `/libs/ws/js/runtime/templates/task.html` nach `/apps/ws/js/runtime/templates/task.html`.
 
-1. Wenn der Name des CSS-Stils mit dem Route-Aktionsnamen vom Server übereinstimmt, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/task.html`:
+1. Wenn der Name des CSS-Stils mit dem Namen der vom Server kommenden Route-Aktion übereinstimmt, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/task.html`:
 
    ```
    <%if(routeList == null){%>
@@ -80,7 +80,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
                <%}%>
    ```
 
-1. Wenn der Name des CSS-Stils sich vom Route-Aktionsnamen des Servers unterscheidet, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/task.html`. Er fügt einen Stapel der `if-else`-Servlet-Bedingungen hinzu, um den Stil dem Route-Aktionsnamen zuzuordnen.
+1. Wenn der Name des CSS-Stils nicht mit dem Namen der vom Server kommenden Route-Aktion übereinstimmt, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/task.html`. Er fügt einen Stapel der `if-else`-Servlet-Bedingungen hinzu, um den Stil dem Route-Aktionsnamen zuzuordnen.
 
 ```
 <%if(routeList == null){%>
@@ -120,7 +120,7 @@ To
 
 1. Kopieren Sie `/libs/ws/js/runtime/templates/taskdetails.html` nach `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. Wenn der Name des CSS-Stils mit dem Route-Aktionsnamen vom Server übereinstimmt, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/taskdetails.html`:
+1. Wenn der Name des CSS-Stils mit dem Namen der vom Server kommenden Route-Aktion übereinstimmt, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -140,7 +140,7 @@ To
                        <%}%>
    ```
 
-1. Wenn der Name des CSS-Stils sich vom Route-Aktionsnamen des Servers unterscheidet, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/taskdetails.html`. Er fügt einen Stapel der `if-else`-Servlet-Bedingungen hinzu, um den Stil dem Route-Aktionsnamen zuzuordnen.
+1. Wenn der Name des CSS-Stils nicht mit dem Namen der vom Server kommenden Route-Aktion übereinstimmt, ändern Sie den folgenden Code in `/apps/ws/js/runtime/templates/taskdetails.html`. Er fügt einen Stapel der `if-else`-Servlet-Bedingungen hinzu, um den Stil dem Route-Aktionsnamen zuzuordnen.
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -168,7 +168,7 @@ To
                <%}%>
    ```
 
-1. Öffnen `/apps/ws/js/registry.js` zum Bearbeiten und suchen Sie nach folgendem Text:\
+1. Öffnen Sie `/apps/ws/js/registry.js` zur Bearbeitung und suchen Sie den folgenden Text:\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. Ersetzen Sie den Text durch Folgendes:\

@@ -1,5 +1,5 @@
 ---
-title: Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur
+title: 'Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur '
 seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signieren von Formularen mit Freihandsignaturen
 seo-description: Signing forms using scribble
@@ -12,11 +12,11 @@ exl-id: a870c4b7-4040-4bd8-b477-286ebe6a4b01
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '498'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur {#apply-electronic-signatures-to-a-form-using-scribble-signatures}
+# Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur  {#apply-electronic-signatures-to-a-form-using-scribble-signatures}
 
 Sie können die Komponente **Freihandsignatur** und die Komponente **Signaturschritt** verwenden, um eine Signatur in ein adaptives Formular zu zeichnen. Die Signaturschritt-Komponente zeigt eine PDF-Version des adaptiven Formulars an. Sie benötigen ein Formular mit aktivierter Option „Datensatzdokument“ oder auf Vorlagen basierende adaptive Formulare, um die Signaturschritt-Komponente zu verwenden.
 
@@ -26,8 +26,8 @@ Wie unten dargestellt stellen beide Komponenten ein Fenster zum Signieren eines 
 
 ## Adaptives Formular konfigurieren, um Freihandsignatur zu verwenden {#configure-an-adaptive-form-to-use-scribble-signature}
 
-1. Erstellen Sie ein adaptives Formular mit aktivierter Option „Datensatzdokument“ oder basierend auf eine Formularvorlage. Schrittweise Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
-1. Ziehen Sie die **Scribble-Signatur** -Komponente vom Komponenten-Browser in das adaptive Formular.
+1. Erstellen Sie ein adaptives Formular mit aktivierter Option „Datensatzdokument“ oder basierend auf eine Formularvorlage. Einzelschritte finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
+1. Ziehen Sie die Komponente **Freihandsignatur** aus dem Komponenten-Browser in das adaptive Formular.
 1. Tippen Sie auf das Symbol **Konfigurieren** (![configure](assets/configure.png)). Dadurch wird der Eigenschaftenbrowser geöffnet und Eigenschaften der Komponente „Freihandsignatur“ angezeigt. Konfigurieren Sie die Eigenschaften der Komponente „Freihandsignatur“.
 1. Ziehen Sie die Signaturschritt-Komponente aus dem Komponenten-Browser in das adaptive Formular.
 
@@ -51,7 +51,7 @@ Wie unten dargestellt stellen beide Komponenten ein Fenster zum Signieren eines 
 
    Tippen Sie auf das Symbol Fertig ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), um die Änderungen zu speichern. Die Signatur wurde erfolgreich konfiguriert.
 
-   Wenn Sie jetzt ein Formular ausfüllen, wird eine PDF-Version des adaptiven Formulars angezeigt und es sind Optionen zum Signieren des PDF-Dokuments verfügbar. Detaillierte Informationen finden Sie unter [Signieren eines adaptiven Formulars mit Freihandsignatur](/help/forms/using/signing-forms-using-scribble.md#p-sign-an-adaptive-form-using-scribble-signature-p).
+   Wenn Sie jetzt ein Formular ausfüllen, wird eine PDF-Version des adaptiven Formulars angezeigt und es sind Optionen zum Signieren des PDF-Dokuments verfügbar. Weitere Informationen finden Sie unter [Unterschreiben eines adaptiven Formulars mit Freihandsignatur](/help/forms/using/signing-forms-using-scribble.md#p-sign-an-adaptive-form-using-scribble-signature-p). 
 
 ## Unterschreiben eines adaptiven Formulars mit Freihandsignatur {#sign-an-adaptive-form-using-scribble-signature}
 

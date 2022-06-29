@@ -13,13 +13,13 @@ exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '980'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Ordner synchronisieren {#synchronizing-directories}
 
-Für die Synchronisierung von Domänen haben Sie die Wahl zwischen manueller und geplanter Synchronisierung. Bei *der manuellen Synchronisierung werden* ausgewählte Domänen synchronisiert. Die *geplante Synchronisierung* synchronisiert alle Domänen.
+Für die Synchronisierung von Domains haben Sie die Wahl zwischen manueller und geplanter Synchronisierung. Bei *der manuellen Synchronisierung werden* ausgewählte Domains synchronisiert. Die *geplante Synchronisierung* synchronisiert alle Domains.
 
 Durch die Ordnersynchronisierung werden Details aus den Ordnerservern, die Sie in Ihren Ordnereinstellungen angegeben haben, in die User Management-Datenbank abgerufen. Später können Sie auch eine manuelle Synchronisierung durchführen, falls Änderungen oder Aktualisierungen der Ordnerserver erfolgt sind. Sie können beispielsweise eine manuelle Synchronisierung durchführen, wenn Benutzer und Gruppen hinzugefügt oder Änderungen an einem Benutzerkonto vorgenommen wurden.
 
@@ -31,11 +31,11 @@ Sie können außerdem einen täglichen Synchronisierungszeitplan einrichten, um 
 
 >[!NOTE]
 >
->Wird der Domänensynchronisierungsprozess unterbrochen (z. B. wenn der Anwendungsserver während des Prozesses heruntergefahren wird), warten Sie kurze Zeit, bevor Sie die die Synchronisierung der Domäne erneut versuchen. Prüfen Sie den Status der Synchronisierung. Falls User Management vor dem Herunterfahren eine Sperre aktiviert hatte, warten Sie 10 Minuten nach dem Neustart des Servers bis zur Freigabe der Sperre. Lautet der Synchronisierungsstatus „Wird ausgeführt“, obwohl die Synchronisierung unterbrochen oder angehalten wurde, unternimmt User Management nach 3 Minuten einen erneuten Versuch. Nach drei fehlgeschlagenen Versuchen erklärt User Management die Synchronisierung für gescheitert und gibt die Sperre frei.
+>Wird der Domain-Namenssynchronisierungsprozess unterbrochen (z. B. wenn der Anwendungsserver während des Prozesses heruntergefahren wird), warten Sie kurze Zeit, bevor Sie die die Synchronisierung der Domain erneut versuchen. Prüfen Sie den Status der Synchronisierung. Falls User Management vor dem Herunterfahren eine Sperre aktiviert hatte, warten Sie 10 Minuten nach dem Neustart des Servers bis zur Freigabe der Sperre. Lautet der Synchronisierungsstatus „Wird ausgeführt“, obwohl die Synchronisierung unterbrochen oder angehalten wurde, unternimmt User Management nach 3 Minuten einen erneuten Versuch. Nach drei fehlgeschlagenen Versuchen erklärt User Management die Synchronisierung für gescheitert und gibt die Sperre frei.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe [Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
 
 ## Delta-Ordnersynchronisierung aktivieren {#enable-delta-directory-synchronization}
 
@@ -51,37 +51,37 @@ User Management führt folgende Schritte aus, wenn Delta-Ordnersynchronisierung 
 >
 >Benutzer und Gruppen, die aus dem Ordner gelöscht wurden, werden erst beim Ausführen einer vollständigen Ordnersynchronisierung aus der User Management-Datenbank gelöscht.
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
+1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Aktivieren Sie unter „Delta-Synchronisation“ das Kontrollkästchen und klicken Sie auf „Speichern“.
-1. Bearbeiten Sie die Ordnereinstellungen für jede Unternehmensdomäne, die die Delta-Ordnersynchronisierungsfunktion verwenden soll. Suchen Sie auf der Seite „Benutzereinstellungen“ und auf der Seite „Gruppeneinstellungen“ die Einstellung „Zeitstempel ändern“ und geben Sie den Wert `modify TimeStamp` ein. Weitere Einzelheiten über das Bearbeiten von Unternehmensdomänen finden Sie unter [Bestehende Domänen bearbeiten und konvertieren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. Bearbeiten Sie die Ordnereinstellungen für jede Unternehmens-Domain, die die Delta-Ordnersynchronisierungsfunktion verwenden soll. Suchen Sie auf der Seite „Benutzereinstellungen“ und auf der Seite „Gruppeneinstellungen“ die Einstellung „Zeitstempel ändern“ und geben Sie den Wert `modify TimeStamp` ein. Weitere Einzelheiten über das Bearbeiten von Unternehmens-Domains finden Sie unter [Bestehende Domains bearbeiten und konvertieren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Detaillierte Protokollierung während der Synchronisierung aktivieren oder deaktivieren {#enable-or-disable-detailed-logging-during-synchronization}
 
 Standardmäßig protokolliert User Management während des Synchronisierungsprozesses detaillierte Statistiken.
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Deaktivieren Sie unter „Protokollierung der Synchronisationsstatistiken“ das Kontrollkästchen, um die detaillierte Protokollierung zu deaktivieren, oder aktivieren Sie das Kontrollkästchen, um die detaillierte Protokollierung zu aktivieren. Klicken Sie dann auf „Speichern“.
 
 ## Die Wiederholungsoptionen für die Ordnersynchronisierung konfigurieren {#configure-the-directory-synchronization-retry-option}
 
 Sie können User Management so konfigurieren, dass regelmäßige Prüfungen auf fehlgeschlagene Versuche zur Ordnersynchronisierung erfolgen. User Management versucht dann, die fehlgeschlagenen Synchronisierungen fertigzustellen.
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Geben Sie unter „Synchronisations-Finisher Cron Expression“ einen Cron-Ausdruck ein, der das Intervall, in dem User Management die fehlgeschlagenen Synchronisierungen erneut auszuführen versucht, angibt. Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssystem Quartz, Version 1.4.0.
 
-   Der Standardwert ist 0/13 &amp;ast; ? &amp;ast; , was bedeutet, dass die Prüfung alle 13 Minuten durchgeführt wird.
+   Der Standardwert ist 0 0/13 &amp;ast; ? &amp;ast;, was bedeutet, dass die Prüfung alle 13 Minuten durchgeführt wird.
 
 ## Ordner manuell synchronisieren {#manually-synchronize-directories}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
+1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. (Optional) Um Benutzer- und Gruppeninformationen im Push-Verfahren an Content Services (nicht mehr unterstützt) zu senden, wählen Sie die Option „Wählen Sie diese Option, um für Benutzer und Gruppen ein Pushing in registrierte externe Prinzipalspeicheranbieter durchzuführen“. Diese Option gilt auch, wenn neue Benutzer und Gruppen über die Seite „Benutzer und Gruppen“ hinzugefügt werden.
-1. Aktivieren Sie die Kontrollkästchen der zu synchronisierenden Unternehmensdomänen und klicken Sie auf „Jetzt synchronisieren“.
+1. Aktivieren Sie die Kontrollkästchen der zu synchronisierenden Unternehmens-Domains und klicken Sie auf „Jetzt synchronisieren“.
 
-   Wenn Sie mehrere Domänen auswählen, wird die Domänensynchronisierung für alle Domänen gleichzeitig ausgeführt. Wählen Sie die Domänen dagegen einzeln aus, wird nur jeweils eine Domänensynchronisierung ausgeführt.
+   Wenn Sie mehrere Domains auswählen, wird die Domain-Synchronisierung für alle Domains gleichzeitig ausgeführt. Wählen Sie die Domains dagegen einzeln aus, wird nur jeweils eine Domain-Synchronisierung ausgeführt.
 
 ## Ordnersynchronisierung planen {#schedule-directory-synchronization}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
+1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Synchronisierungsprobleme:
 
    * Wählen Sie zum Aktivieren der automatischen täglichen Synchronisierung unter „Zeitplaner“ die Option „Häufigkeit“ aus. Wählen Sie aus der Liste die Option „Täglich“ aus und geben Sie in das entsprechende Feld die Zeit im 24-Stunden-Format ein. Wenn Sie die Einstellungen speichern, wird dieser Wert in einen Cron-Ausdruck konvertiert, der im Feld „Cron-Ausdruck“ angezeigt wird.
@@ -95,5 +95,5 @@ Die Verwendung des Cron-Ausdrucks basiert auf dem Open-Source-Auftragsplanungssy
 
 ## Alle aktiven Ordnersynchronisierungsprozesse beenden {#stop-all-directory-synchronizations-currently-in-progress}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domänenverwaltung“.
+1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf „Beenden“. Diese Schaltfläche wird nur während einer aktiven Ordnersynchronisierung angezeigt.

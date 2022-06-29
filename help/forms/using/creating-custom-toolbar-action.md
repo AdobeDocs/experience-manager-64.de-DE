@@ -12,7 +12,7 @@ exl-id: bb0abe28-843a-4195-afd5-5ee7f0a279be
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -34,22 +34,22 @@ Neben den standardmäßig bereitgestellten Aktionen können Sie auch benutzerdef
 
 Zur Veranschaulichung der Erstellung einer benutzerdefinierten Symbolleistenaktion erstellen Sie mit den folgenden Schritten eine Schaltfläche, über die Endbenutzer alle adaptiven Formularfelder überprüfen können, bevor Sie ein ausgefülltes Formular senden.
 
-1. Alle von adaptiven Formularen unterstützten Standardaktionen sind in `/libs/fd/af/components/actions` Ordner. Kopieren Sie in CRXDE die `fileattachmentlisting` Knoten von `/libs/fd/af/components/actions/fileattachmentlisting` nach `/apps/customaction`.
+1. Alle von adaptiven Formularen unterstützten Standardaktionen sind im Ordner `/libs/fd/af/components/actions` vorhanden. Kopieren Sie in CRXDE den `fileattachmentlisting`-Knoten von `/libs/fd/af/components/actions/fileattachmentlisting` nach `/apps/customaction`.
 
-1. Nach dem Kopieren des Knotens in `apps/customaction` Ordner, benennen Sie den Knotennamen in `reviewbeforesubmit`. Ändern Sie außerdem die `jcr:title` und `jcr:description` Eigenschaften des Knotens.
+1. Nachdem Sie den Knoten in den Ordner `apps/customaction` kopiert haben, benennen Sie den Knoten in `reviewbeforesubmit` um. Ändern Sie außerdem die Eigenschaften `jcr:title` und `jcr:description` des Knotens.
 
    Die Eigenschaft `jcr:title` enthält den Namen der Aktion, die Symbolleisten-Dialogfeld angezeigt wird. Die Eigenschaft `jcr:description` enthält weitere Informationen, die angezeigt werden, wenn ein Benutzer den Mauszeiger über der Aktion bewegt.
 
    ![Hierarchie der Knoten zur Anpassung der Symbolleiste](assets/action3.png)
 
-1. Auswählen `cq:template` Knoten in `reviewbeforesubmit` Knoten. Stellen Sie sicher, dass der Wert von `guideNodeClass` Eigenschaft ist `guideButton` und ändern `jcr:title` -Eigenschaft.
-1. Ändern Sie die Eigenschaft type in der `cq:Template` Knoten. Für das aktuelle Beispiel ändern Sie die Typeigenschaft in „button“.
+1. Wählen Sie den `cq:template`-Knoten im `reviewbeforesubmit`-Knoten. Stellen Sie sicher, dass der Wert der Eigenschaft `guideNodeClass` `guideButton` lautet, und ändern Sie die Eigenschaft `jcr:title` entsprechend.
+1. Ändern Sie die Typeigenschaft im Knoten `cq:Template`. Für das aktuelle Beispiel ändern Sie die Typeigenschaft in „button“.
 
    Der Typwert wird als CSS-Klasse in der generierten HTML für die Komponente hinzugefügt. Benutzer können diese CSS-Klasse verwenden, um ihre Aktionen zu formatieren. Die Standardstile für mobile und Desktopgeräte werden für die Typwerte „button“, „submit“, „reset“ und „save“ bereitgestellt.
 
 1. Wählen Sie die benutzerdefinierte Aktion aus dem Dialogfeld zur Symbolleistenbearbeitung des adaptiven Formulars. Eine Überprüfungsschaltfläche wird in der Symbolleiste für den Bereich angezeigt.
 
-   ![Benutzerdefinierte Aktion ist in der Symbolleiste verfügbar](assets/custom_action_available_in_toolbar.png) ![Anzeigen der benutzerdefinierten Symbolleistenaktion](assets/action7.png)
+   ![Benutzerdefinierte Aktion in der Symbolleiste verfügbar](assets/custom_action_available_in_toolbar.png) ![Anzeigen der benutzerdefinierten Symbolleistenaktion](assets/action7.png)
 
 1. Um die Überprüfungsschaltfläche mit einer Funktion zu versehen, fügen Sie JavaScript- und CSS-Code und serverseitigen Code in der Datei init.jsp hinzu, die sich im Knoten `reviewbeforesubmit` befindet.
 

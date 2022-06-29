@@ -12,7 +12,7 @@ exl-id: 192ba4c4-a133-4e16-9882-98005f25ba7f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -27,25 +27,25 @@ In AEM Forms Workspace werden mehrere Formulartypen nahtlos unterstützt. Dazu g
 * Bilder
 * Drittanbieteranwendungen (zum Beispiel Correspondence Management)
 
-In diesem Dokument wird die Verwendung dieser Renderer aus der Perspektive der semantischen Anpassung bzw. der Komponentenwiederverwendung erläutert, sodass Kundenanforderungen erfüllt werden, ohne eine Darstellung zu beeinträchtigen. AEM Forms Workspace ermöglicht zwar alle Änderungen der Benutzeroberfläche/Semantik, es wird jedoch empfohlen, die Renderlogik verschiedener Formulartypen nicht zu ändern. Andernfalls können die Ergebnisse unvorhersehbar sein. Dieses Dokument dient zur Anleitung und zum Verständnis für das Rendering desselben Formulars mit den gleichen Workspace-Komponenten auf verschiedenen Portalen, nicht zum Ändern der Renderlogik selbst.
+In diesem Dokument wird die Verwendung dieser Renderer aus der Perspektive der semantischen Anpassung bzw. der Komponentenwiederverwendung erläutert, sodass Kundenanforderungen erfüllt werden, ohne eine Darstellung zu beeinträchtigen. Obwohl der Arbeitsbereich von AEM Forms beliebige Änderungen der Benutzeroberfläche oder der Bedeutung zulässt, wird empfohlen, die Rendering-Logik von verschiedenen Formulartypen nicht zu ändern. Andernfalls können die Ergebnisse unvorhersehbar sein. Dieses Dokument dient zur Anleitung und zum Verständnis für das Rendering desselben Formulars mit den gleichen Workspace-Komponenten auf verschiedenen Portalen, nicht zum Ändern der Renderlogik selbst.
 
 ## PDF-Formulare {#pdf-forms}
 
-PDF forms werden gerendert durch `PdfTaskForm View`.
+PDF-Formulare werden von `PdfTaskForm View` gerendert.
 
-Wenn ein XDP-Formular als PDF-Datei gerendert wird, wird ein `FormBridge` JavaScript™ vom FormsAugmenter-Dienst hinzugefügt. Dieses JavaScript™ (innerhalb des PDF-Formulars) hilft bei Aktionen wie dem Senden und Speichern von Formularen oder dem Offlineschalten des Formulars.
+Wenn ein XDP-Formular als PDF-Datei gerendert wird, wird vom FormsAugmenter-Service ein `FormBridge`-JavaScript™ hinzugefügt. Dieses JavaScript™ (innerhalb des PDF-Formulars) hilft bei Aktionen wie dem Senden und Speichern von Formularen oder dem Offline-Schalten des Formulars.
 
-In AEM Forms Workspace kommuniziert die Ansicht PDFTaskForm mit dem `FormBridge`JavaScript über eine zwischengeschaltete HTML unter `/lc/libs/ws/libs/ws/pdf.html`. Der Fluss verläuft wie folgt:
+Im Arbeitsbereich von AEM Forms kommuniziert die Ansicht „PDFTaskForm“ über einen HTML-Zwischen-Code, der unter `/lc/libs/ws/libs/ws/pdf.html` gespeichert ist, mit dem `FormBridge`-Javascript. Der Fluss verläuft wie folgt:
 
 **PDFTaskForm-Ansicht – pdf.html**
 
-Kommunikation über `window.postMessage` / `window.attachEvent('message')`
+Kommunikation über `window.postMessage`/`window.attachEvent('message')`
 
 Diese Methode ist das Standardverfahren zur Kommunikation zwischen einem übergeordneten Frame und einem iframe. Die vorhandenen Ereignis-Listener von zuvor geöffneten PDF-Formularen werden entfernt, bevor ein neuer hinzugefügt wird. Bei dieser Löschung wird auch der Wechsel zwischen Formular-Registerkarte und Verlaufs-Registerkarte in der Aufgabendetailansicht berücksichtigt.
 
 **pdf.html – `FormBridge`-Javascript innerhalb der gerenderten PDF-Datei**
 
-Kommunikation über `pdfObject.postMessage` / `pdfObject.messageHandler`
+Kommunikation über `pdfObject.postMessage`/`pdfObject.messageHandler`
 
 Diese Methode ist das Standardverfahren zur Kommunikation aus HTML mit einem PDF-Javascript. Die PdfTaskForm-Ansicht behandelt auch flaches PDF und rendert es einfach.
 
@@ -63,15 +63,15 @@ Dieses Javascript unterscheidet sich von dem, auf das oben unter „PDF-Formular
 
 >[!NOTE]
 >
->Es wird nicht empfohlen, den Inhalt der Ansicht NewHTMLTaskForm zu ändern.
+>Es wird nicht empfohlen, den Inhalt der NewHTMLTaskForm-Ansicht zu ändern.
 
 ## Flex-Formulare und Guides {#flex-forms-and-guides}
 
 Flex-Formulare werden durch die Ansicht SwfTaskForm gerendert, Guides durch die Ansicht HtmlTaskForm.
 
-In AEM Forms Workspace kommunizieren diese Ansichten mit dem tatsächlichen SWF, aus dem das Flex-Formular/Handbuch besteht, und verwenden dazu eine zwischengeschaltete SWF, die unter `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+Im Arbeitsbereich von AEM Forms kommunizieren diese Ansichten mit dem tatsächlichen SWF, aus dem das Flex-Formular bzw. der Form/Guide besteht, über einen Zwischen-SWF-Code, der in `/lc/libs/ws/libs/ws/WSNextAdapter.swf` gespeichert ist.
 
-Die Kommunikation geschieht mithilfe von `swfObject.postMessage` / `window.flexMessageHandler`.
+Die Kommunikation erfolgt mithilfe von `swfObject.postMessage`/`window.flexMessageHandler`.
 
 Dieses Protokoll wird durch `WsNextAdapter.swf` definiert. Die vorhandenen `flexMessageHandlers` im window-Objekt von zuvor geöffneten SWF-Formularen werden entfernt, bevor ein neuer hinzugefügt wird. Bei dieser Logik wird auch der Wechsel zwischen Formular-Registerkarte und Verlaufs-Registerkarte in der Aufgabendetailansicht berücksichtigt. `WsNextAdapter.swf` wird zum Ausführen verschiedener Formularaktionen wie Speichern oder Senden verwendet.
 
@@ -83,16 +83,16 @@ Dieses Protokoll wird durch `WsNextAdapter.swf` definiert. Die vorhandenen `flex
 
 Drittanbieteranwendungen werden mithilfe der ExtAppTaskForm-Ansicht gerendert.
 
-**Kommunikation zwischen Drittanbieteranwendungen und AEM Forms Workspace**
+**Kommunikation zwischen Drittanbieterprogrammen und dem Arbeitsbereich von AEM Forms**
 
-AEM Forms Workspace überwacht `window.global.postMessage([Message],[Payload])`
+Der Arbeitsbereich von AEM Forms ruft von `window.global.postMessage([Message],[Payload])` ab.
 
-[Nachricht] kann eine Zeichenfolge sein, die als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`im `runtimeMap`. Drittanbieteranwendungen müssen diese Schnittstelle verwenden, um AEM Forms Workspace bei Bedarf darüber zu benachrichtigen. Die Verwendung dieser Benutzeroberfläche ist obligatorisch, da der AEM Forms-Arbeitsbereich dies beim Senden der Aufgabe wissen muss, damit das Aufgabenfenster bereinigt werden kann.
+[Nachricht] kann eine in `runtimeMap` als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage` angegebene Zeichenfolge sein. Drittanbieterprogramme müssen diese Schnittstelle verwenden, um den Arbeitsbereich von AEM Forms bei Bedarf zu benachrichtigen. Die Verwendung dieser Schnittstelle ist obligatorisch, da der Arbeitsbereich von AEM Forms wissen muss, wann die Aufgabe gesendet wird, damit das Aufgabefenster bereinigt werden kann.
 
-**Kommunikation zwischen AEM Forms Workspace und Drittanbieteranwendungen**
+**Kommunikation zwischen dem Arbeitsbereich von AEM Forms und Drittanbieterprogrammen**
 
-Wenn die direkten Aktionsschaltflächen von AEM Forms Workspace sichtbar sind, wird `window.[External-App-Name].getMessage([Action])`, wobei `[Action]` wird aus dem `routeActionMap`. Die Drittanbieteranwendung muss diese Schnittstelle überwachen und dann AEM Forms Workspace über die `postMessage ()` API.
+Wenn die direkten Aktionsschaltflächen des Arbeitsbereichs von AEM Forms sichtbar sind, wird `window.[External-App-Name].getMessage([Action])` aufgerufen, wobei `[Action]` aus `routeActionMap` gelesen wird. Das Drittanbieterprogramm muss von dieser Schnittstelle abrufen und dann den Arbeitsbereich von AEM Forms über die API `postMessage ()` benachrichtigen.
 
-Beispielsweise kann eine Flex-Anwendung `ExternalInterface.addCallback('getMessage', listener)` Unterstützung dieser Mitteilung. Wenn die Drittanbieteranwendung die Formularübermittlung über eigene Schaltflächen verarbeiten möchte, sollten Sie `hideDirectActions = true() in the runtimeMap` und Sie können diesen Listener überspringen. Daher ist dieses Konstrukt optional.
+Beispielsweise kann ein Flex-Programm `ExternalInterface.addCallback('getMessage', listener)` definieren, um diese Kommunikation zu unterstützen. Wenn im Drittanbieterprogramm das Senden von Formularen über eigene Schaltflächen behandelt wird, sollten Sie `hideDirectActions = true() in the runtimeMap` angeben, und Sie können diesen Listener überspringen. Daher ist dieses Konstrukt optional.
 
 Weitere Informationen zur Integration von Drittanbieteranwendungen in Bezug auf Correspondence Management finden Sie unter [Integrieren von Correspondence Management in AEM Forms Workspace](/help/forms/using/integrating-correspondence-management-html-workspace.md).

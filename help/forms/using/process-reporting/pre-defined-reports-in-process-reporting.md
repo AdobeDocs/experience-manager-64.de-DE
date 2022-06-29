@@ -1,7 +1,7 @@
 ---
-title: Vordefinierte Berichte in Prozessberichten
+title: Vordefinierte Berichte in Process Reporting
 seo-title: Pre-defined reports in Process Reporting
-description: Abfragen von AEM Forms on JEE-Prozessdaten zum Erstellen von Berichten zu langwierigen Prozessen, Prozessdauer und Workflow-Volumen
+description: Abfrage von AEM Forms zu JEE-Prozessdaten zum Erstellen von Berichten zu lange laufenden Prozessen, Prozessdauer und Workflow-Volumen
 seo-description: Query for AEM Forms on JEE process data to create reports on long running processes, Process duration, and Workflow volume
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
@@ -12,113 +12,113 @@ exl-id: 21f5fb7e-53b3-485d-9b6a-813182f14781
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Vordefinierte Berichte in Prozessberichten {#pre-defined-reports-in-process-reporting}
+# Vordefinierte Berichte in Process Reporting {#pre-defined-reports-in-process-reporting}
 
-AEM Forms Process Reporting wird mit folgenden Komponenten bereitgestellt: *vorkonfiguriert* Berichte:
+AEM Forms Process Reporting wird mit folgenden *vorkonfigurierten* Berichte ausgeliefert:
 
-* **[Lange laufende Prozesse](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: Ein Bericht über alle AEM Forms-Prozesse, deren Abschluss länger als eine bestimmte Zeit dauerte
+* **[Lange laufende Prozesse](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: Bericht über alle AEM Forms-Prozesse, deren Abschluss länger als eine bestimmte Zeit dauerte
 
-* **[Diagramm zur Prozessdauer](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: Ein Bericht eines bestimmten AEM Forms-Prozesses nach Dauer
+* **[Diagramm zur Prozessdauer](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: Bericht zu einem bestimmten AEM Forms-Prozess nach Dauer
 
-* **[Workflow-Volumen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: Ein Bericht der ausgeführten und abgeschlossenen Instanzen des angegebenen Prozesses nach Datum
+* **[Workflow-Volumen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: Bericht der ausgeführten und abgeschlossenen Instanzen des angegebenen Prozesses nach Datum
 
 ## Lange laufende Prozesse {#long-running-processes}
 
-Der Bericht &quot;Lange laufende Prozesse&quot;zeigt die AEM Forms-Prozesse an, deren Abschluss länger als eine bestimmte Zeit in Anspruch genommen hat.
+Der Bericht „Lange laufende Prozesse“ zeigt die AEM Forms-Prozesse an, deren Abschluss länger als eine bestimmte Zeit in Anspruch genommen hat.
 
-### So führen Sie einen Bericht zu einem langwierigen Prozess aus {#to-execute-a-long-running-process-report-br}
+### So führen Sie einen Bericht zu einem lange laufenden Prozess aus {#to-execute-a-long-running-process-report-br}
 
-1. Um die Liste der vordefinierten Berichte in der Prozessberichterstellung anzuzeigen, klicken Sie auf **Prozessberichterstellung** Baumansicht, klicken Sie auf die **Berichte** Knoten.
-1. Klicken Sie auf **Lange laufende Prozesse** Berichtsknoten.
+1. Um die Liste der vordefinierten Berichte in Process Reporting anzuzeigen, klicken Sie auf Baumansicht in **Process Reporting** und klicken Sie dann auf den Knoten **Berichte**.
+1. Klicken Sie auf den Berichtsknoten **Lange laufende Prozesse**.
 
    ![long_running_node](assets/long_running_node.png)
 
-   Wenn Sie einen Bericht auswählen, wird die **Berichtsparameter** wird rechts neben der Baumansicht angezeigt.
+   Wenn Sie einen Bericht auswählen, wird das Bedienfeld **Berichtsparameter** rechts neben der Baumansicht angezeigt.
 
-   ![Berichtsparameter für langlaufende Prozesse](assets/report_parameters_panel.png)
+   ![Berichtsparameter für lange laufende Prozesse](assets/report_parameters_panel.png)
 
    Parameter:
 
-   * **Dauer**(*mandatory*): Geben Sie eine Dauer und eine Zeiteinheit an. Zeigt alle AEM Forms-Prozesse an, die länger als die angegebene Dauer ausgeführt wurden.
-   * **Started After** (*optional*): Wählen Sie ein Datum aus. Filtern Sie den Bericht, um Prozessinstanzen anzuzeigen, die nach dem angegebenen Datum gestartet wurden.
-   * **Started Before** (*optional*): Wählen Sie ein Datum aus. Filtern Sie den Bericht, um Prozessinstanzen anzuzeigen, die vor dem angegebenen Datum gestartet wurden.
+   * **Dauer** (*obligatorisch*): Geben Sie eine Dauer und eine Zeiteinheit an. Zeigt alle AEM Forms-Prozesse an, deren Ausführung länger als die angegebene Dauer dauerte.
+   * **Gestartet nach** (*optional*): Wählen Sie ein Datum aus. Filtern Sie den Bericht, um Prozessinstanzen anzuzeigen, die nach dem angegebenen Datum gestartet wurden.
+   * **Gestartet vor** (*optional*): Wählen Sie ein Datum aus. Filtern Sie den Bericht, um Prozessinstanzen anzuzeigen, die vor dem angegebenen Datum gestartet wurden.
 
-1. Klicken **Los** , um den Bericht auszuführen.
+1. Klicken Sie auf **Los**, um den Bericht auszuführen.
 
-   Der Bericht wird im **Bericht** -Bedienfeld rechts neben dem **Prozessberichterstellung** Fenster.
+   Der Bericht wird im Bedienfeld **Bericht** rechts neben dem Fenster **Process Reporting** angezeigt.
 
    ![long_running_processes](assets/long_running_processes.png)
 
-   Verwenden Sie die Optionen oben rechts im **Bericht** -Bedienfeld, um die folgenden Vorgänge für den Bericht auszuführen.
+   Verwenden Sie die Optionen oben rechts im Bedienfeld **Bericht**, um die folgenden Vorgänge für den Bericht auszuführen.
 
-   * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten im Speicher
-   * **Farbe der Legende ändern**: Auswählen und Ändern der Farbe der Berichtslegende
-   * **Exportieren in CSV**: Daten aus dem Bericht exportieren und in eine kommagetrennte Datei herunterladen
+   * **Aktualisieren**: Der Bericht wird mit den neuesten Daten im Speicher aktualisiert.
+   * **Farbe der Legende ändern**: Wählen Sie die Farbe der Berichtslegende aus bzw. ändern Sie diese.
+   * **Exportieren in CSV**: Exportieren Sie die Daten aus dem Bericht und laden Sie sie in einer durch Kommas getrennten Datei (CSV) herunter.
 
 ## Bericht zur Prozessdauer {#process-duration-report-br}
 
-Der Bericht &quot;Prozessdauer&quot;zeigt die Anzahl der Instanzen eines Forms-Prozesses nach Anzahl der Tage an, die jede Instanz ausgeführt wurde.
+Der Bericht „Prozessdauer“ zeigt die Anzahl der Instanzen eines Forms-Prozesses nach Anzahl der Tage an, die jede Instanz ausgeführt wurde.
 
 ### So führen Sie einen Bericht zur Prozessdauer aus {#to-execute-a-process-duration-report-br}
 
-1. So zeigen Sie die vordefinierten Berichte in der Prozessberichterstellung im **Prozessberichterstellung** Baumansicht, klicken Sie auf die **Berichte** Knoten.
-1. Klicken Sie auf **Verarbeitungsdauer** Berichtsknoten.
+1. Um die vordefinierten Berichte in Process Reporting anzuzeigen, klicken Sie in der Baumansicht von **Process Reporting** auf den Knoten **Berichte**.
+1. Klicken Sie auf den Berichtsknoten **Dauer der Prozesse**.
 
    ![process_duration_node](assets/process_duration_node.png)
 
-   Wenn Sie einen Bericht auswählen, wird die **Berichtsparameter** wird rechts neben der Baumansicht angezeigt.
+   Wenn Sie einen Bericht auswählen, wird das Bedienfeld **Berichtsparameter** rechts neben der Baumansicht angezeigt.
 
-   ![Berichtsparameter für langlaufende Prozesse](assets/process_duration_params.png)
+   ![Berichtsparameter für lange laufende Prozesse](assets/process_duration_params.png)
 
    Parameter:
 
-   * **Prozess auswählen** (*mandatory*): Wählen Sie einen AEM Forms-Prozess aus.
+   * **Prozess auswählen** (*obligatorisch*): Wählen Sie einen AEM Forms-Prozess aus.
 
-1. Klicken **Los** , um den Bericht auszuführen.
+1. Klicken Sie auf **Los**, um den Bericht auszuführen.
 
-   Der Bericht wird im **Bericht** auf der rechten Seite des Fensters &quot;Process Reporting&quot;.
+   Der Bericht wird im Bedienfeld **Bericht** auf der rechten Seite des Fensters „Processing Report“ angezeigt.
 
    ![process_duration_report](assets/process_duration_report.png)
 
-   Verwenden Sie die Optionen oben rechts im **Bericht** -Bedienfeld, um die folgenden Vorgänge für den Bericht auszuführen.
+   Verwenden Sie die Optionen oben rechts im Bedienfeld **Bericht**, um die folgenden Vorgänge für den Bericht auszuführen.
 
-   * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten im Speicher
-   * **Farbe der Legende ändern**: Auswählen und Ändern der Farbe der Berichtslegende
-   * **Exportieren in CSV**: Daten aus dem Bericht exportieren und in eine kommagetrennte Datei herunterladen
+   * **Aktualisieren**: Der Bericht wird mit den neuesten Daten im Speicher aktualisiert.
+   * **Farbe der Legende ändern**: Wählen Sie die Farbe der Berichtslegende aus bzw. ändern Sie diese.
+   * **Exportieren in CSV**: Exportieren Sie die Daten aus dem Bericht und lagen Sie sie in einer durch Komma getrennten Datei (CSV) herunter.
 
-## Workflow-Volumenbericht {#workflow-volume-report}
+## Bericht zum Workflow-Volumen {#workflow-volume-report}
 
-Der Bericht &quot;Workflow-Volumen&quot;zeigt die Anzahl der derzeit ausgeführten und abgeschlossenen Instanzen eines AEM Forms-Prozesses nach Kalendertagen an.
+Der Bericht „Workflow-Volumen“ zeigt die Anzahl der derzeit ausgeführten und abgeschlossenen Instanzen eines AEM Forms-Prozesses nach Kalendertagen an.
 
-### So führen Sie einen Workflow-Volumenbericht aus {#to-execute-a-workflow-volume-report-br}
+### So führen Sie einen Bericht zum Workflow-Volumen aus {#to-execute-a-workflow-volume-report-br}
 
-1. So zeigen Sie die vordefinierten Berichte in der Prozessberichterstellung im **Prozessberichterstellung** Baumansicht, klicken Sie auf die **Berichte** Knoten.
-1. Klicken Sie auf **Workflow-Volumen** Berichtsknoten.
+1. Wenn Sie die vordefinierten Berichte im Prozess-Reporting anzeigen möchten, klicken Sie in der Baumansicht **Prozess-Reporting** auf den Knoten **Berichte**.
+1. Klicken Sie auf den Berichtsknoten **Workflow-Volumen**.
 
    ![workflow_volumen_node](assets/workflow_volume_node.png)
 
-   Wenn Sie einen Bericht auswählen, wird die **Berichtsparameter** wird rechts neben der Baumansicht angezeigt.
+   Wenn Sie einen Bericht auswählen, wird das Bedienfeld **Berichtsparameter** rechts neben der Baumansicht angezeigt.
 
-   ![Berichtsparameter für langlaufende Prozesse](assets/workflow_volume_params.png)
+   ![Berichtsparameter für lange laufende Prozesse](assets/workflow_volume_params.png)
 
    Parameter:
 
-   * **Prozess auswählen**(*mandatory*): Wählen Sie einen AEM Forms-Prozess aus.
-   * **Started After** (*optional*): Wählen Sie ein Datum aus. Filtert den Bericht, um Prozessinstanzen anzuzeigen, die nach dem angegebenen Datum gestartet wurden.
-   * **Started Before** (*optional*): Wählen Sie ein Datum aus. Filtert den Bericht, um Prozessinstanzen anzuzeigen, die vor dem angegebenen Datum gestartet wurden.
+   * **Prozess auswählen** (*obligatorisch*): Wählen Sie einen AEM Forms-Prozess aus.
+   * **Gestartet nach dem** (*optional*): Wählen Sie ein Datum aus. Filtert den Bericht nach Prozessinstanzen, die nach dem angegebenen Datum gestartet wurden.
+   * **Gestartet vor dem** (*optional*): Wählen Sie ein Datum aus. Filtert den Bericht nach Prozessinstanzen, die vor dem angegebenen Datum gestartet wurden.
 
-1. Klicken **Los** , um den Bericht auszuführen.
+1. Klicken Sie auf **Los**, um den Bericht auszuführen.
 
-   Der Bericht wird im **Bericht** -Bedienfeld rechts neben dem **Prozessberichterstellung** Fenster.
+   Der Bericht wird im Bedienfeld **Bericht** rechts neben dem Fenster **Prozess-Reporting** angezeigt.
 
    ![workflow_volumen_report](assets/workflow_volume_report.png)
 
-   Verwenden Sie die Optionen oben rechts im **Bericht** -Bedienfeld, um die folgenden Vorgänge für den Bericht auszuführen.
+   Verwenden Sie die Optionen oben rechts im Bedienfeld **Bericht**, um die folgenden Vorgänge für den Bericht auszuführen.
 
-   * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten im Speicher
-   * **Farbe der Legende ändern**: Auswählen und Ändern der Farbe der Berichtslegende
-   * **Exportieren in CSV**: Daten aus dem Bericht exportieren und in eine kommagetrennte Datei herunterladen
+   * **Aktualisieren**: Der Bericht wird mit den neuesten Daten im Speicher aktualisiert.
+   * **Farbe der Legende ändern**: Wählen Sie die Farbe der Berichtslegende aus bzw. ändern Sie diese.
+   * **Exportieren in CSV**: Daten aus dem Bericht exportieren und als kommagetrennte Datei herunterladen

@@ -14,7 +14,7 @@ exl-id: 0c4a846f-4e31-435b-a6f6-d0b7c4cd1259
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '958'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 73%
 
 Wenn die Prüffunktion aktiviert ist, können Sie mithilfe von Document Security bestimmte Arten von Ereignissen überwachen. Die Ereignisse, die Sie anzeigen können, hängen von Ihrer Rolle ab:
 
-**Benutzer:** Können geprüfte Ereignisse für ihre richtliniengeschützten Dokumente und für alle geschützten Dokumente anzeigen, die sie empfangen und verwenden.
+**Benutzer:** Sind in der Lage, geprüfte Ereignisse für ihre richtliniengeschützten Dokumente sowie andere geschützte Dokumente, die sie erhalten und verwenden, anzuzeigen.
 
-**Richtliniensatzkoordinatoren:** Kann geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzeigen, die durch Richtlinien in ihren Richtliniensätzen geschützt sind.
+**Richtliniensatzkoordinatoren:** Sind in der Lage, geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzuzeigen, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
 
-**Administratoren:** Kann geprüfte Ereignisse anzeigen, die sich auf alle richtliniengeschützten Dokumente und Benutzer beziehen. Administratoren können darüber hinaus andere Ereignistypen nachverfolgen, z. B. Benutzer-, Dokument-, Richtlinien- und Systemereignisse.
+**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Administratoren können darüber hinaus andere Ereignistypen nachverfolgen, z. B. Benutzer-, Dokument-, Richtlinien- und Systemereignisse.
 
 >[!NOTE]
 >
@@ -58,25 +58,27 @@ Sie können die Ereignisliste durchsuchen und detaillierte Beschreibungen von Er
 
 Auf der Seite „Ereignisse“ können Sie über eine Kombination aus Ereignissuchkriterien und Datumsangaben nach Ereignissen suchen. Die Ereignisse, nach denen Sie suchen können, hängen von Ihrer Rolle ab:
 
-**Benutzer:** Können geprüfte Ereignisse für ihre richtliniengeschützten Dokumente und für alle geschützten Dokumente anzeigen, die sie empfangen und verwenden. Die folgenden Suchoptionen sind verfügbar:
+**Benutzer:** Sind in der Lage, geprüfte Ereignisse für ihre richtliniengeschützten Dokumente sowie andere geschützte Dokumente, die sie erhalten und verwenden, anzuzeigen. Die folgenden Suchoptionen sind verfügbar:
 
-**Ereignisse für mich:** Benutzer können Ereignisse für jedes richtliniengeschützte Dokument finden, das sie erstellt oder empfangen haben. Wenn ein Benutzer beispielsweise ein Dokument öffnet, anzeigt oder druckt, das von einer anderen Person geschützt wurde, werden dem Benutzer diese Ereignisse nur für dieses Dokument angezeigt.
+**Ereignisse, die mich 
+betreffen:** Benutzer können nach Ereignissen für die richtliniengeschützten Dokumente suchen, die sie erstellt oder empfangen haben. Wenn ein Benutzer beispielsweise ein Dokument öffnet, anzeigt oder druckt, das von einer anderen Person geschützt wurde, werden dem Benutzer diese Ereignisse nur für dieses Dokument angezeigt.
 
-**Ereignisse im Zusammenhang mit meinen Dokumenten:** Benutzer können alle Ereignisse finden, die sich auf ihre eigenen richtliniengeschützten Dokumente beziehen. Der Benutzer sieht die Ereignisse, die von allen Personen generiert wurden, die Umgang mit seinen Dokumenten hatten.
+**Ereignisse, die meine Dokumente betreffen:** Benutzer können alle Ereignisse finden, die im Zusammenhang mit ihren eigenen richtliniengeschützten Dokumenten stehen. Der Benutzer sieht die Ereignisse, die von allen Personen generiert wurden, die Umgang mit seinen Dokumenten hatten.
 
-**Richtliniensatzkoordinatoren:** Kann geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzeigen, die durch Richtlinien in ihren Richtliniensätzen geschützt sind. Die folgenden Optionen stehen zur Auswahl:  
+**Richtliniensatzkoordinatoren:** Sind in der Lage, geprüfte Ereignisse, einschließlich Dokument- und Richtlinienereignissen, für Dokumente anzuzeigen, die von Richtlinien in ihren Richtliniensätzen geschützt werden. Die folgenden Optionen stehen zur Auswahl:  
 
-**Dokumentereignisse, bei denen ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse im Zusammenhang mit Dokumenten finden, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
+**Dokumentereignisse,
+wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die Dokumente betreffen, die von Richtlinien in ihren Richtliniensätzen geschützt werden.
 
-**Richtlinienereignisse, für die ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die sich auf Richtlinien in ihren Richtliniensätzen beziehen.
+**Richtlinienereignisse, wenn ich Richtliniensatzkoordinator bin:** Richtliniensatzkoordinatoren mit der Berechtigung zum Anzeigen von Ereignissen können Ereignisse finden, die mit Richtlinien in ihren Richtliniensätzen in Zusammenhang stehen.
 
-**Administratoren:** Kann geprüfte Ereignisse anzeigen, die sich auf alle richtliniengeschützten Dokumente und Benutzer beziehen. Administratoren können darüber hinaus andere Typen nachverfolgen. Administratoren können außerdem Ereignissuchen gemäß dem Benutzertyp unterteilen:
+**Administratoren:** Sind in der Lage, geprüfte Ereignisse im Zusammenhang mit allen richtliniengeschützten Dokumenten und Benutzern anzuzeigen. Administratoren können darüber hinaus andere Typen nachverfolgen. Administratoren können außerdem Ereignissuchen gemäß dem Benutzertyp unterteilen:
 
-**Bekannte Benutzer:** Benutzer befinden sich in den Quellordnern oder sind als externe Benutzer registriert.
+**Bekannte Benutzer:** Benutzer, die in den Quellordnern gefunden werden können oder als externe Benutzer registriert sind.
 
-**Anonyme Benutzer:** Unbekannte Benutzer, die auf ein Dokument zugreifen, das durch eine Richtlinie geschützt ist, die den anonymen Zugriff zulässt.
+**Anonyme Benutzer:** Benutzer, die auf ein Dokument zugreifen, das durch eine Richtlinie geschützt ist, die den anonymen Zugriff erlaubt.
 
-**Systembenutzer:** Vom Server initiierte Ereignisse, z. B. eine Ordnersynchronisierung.
+**Systembenutzer:** Vom Server ausgelöste Ereignisse, z. B. eine Ordnersynchronisierung.
 
 1. Klicken Sie auf der Document Security-Seite auf „Ereignisse“.
 1. Wählen Sie in der Liste „Suchen“ die gewünschten Suchkriterien aus. Abhängig von der Auswahl in der Liste „Suchen“ wird eine zweite Liste mit weiteren Suchkriterien angezeigt. Geben Sie, falls möglich, in das Textfeld die Suchkriterien ein.
@@ -86,7 +88,7 @@ Auf der Seite „Ereignisse“ können Sie über eine Kombination aus Ereignissu
 1. Wählen Sie in der Liste „Benutzer“ den Benutzertyp aus, der das Ereignis verursacht hat.
 
    * Wenn Sie „Bekannter Benutzer“ auswählen, wird ein zweites Suchfeld angezeigt, in das Sie den Benutzernamen und die E-Mail-Adresse des Benutzers eingeben müssen.
-   * Wenn Sie diese Angaben nicht kennen, klicken Sie auf das Adressbuchsymbol , um den Benutzer anhand des Benutzernamens oder der E-Mail-Adresse zu suchen.
+   * Wenn Sie diese Angaben nicht kennen, klicken Sie auf das Adressbuchsymbol, um den Benutzer anhand des Benutzernamens oder der E-Mail-Adresse zu suchen.
 
 1. Wählen Sie in der Liste „Datum“ eine Datumsbereichsoption aus. Wenn Sie „Eigene Daten“ auswählen, werden Felder eingeblendet, in die Sie das Datum im Format TTMMJJJJ eingeben, oder Sie können über die Datumsauswahl den Datumsbereich angeben:
 
@@ -96,7 +98,7 @@ Auf der Seite „Ereignisse“ können Sie über eine Kombination aus Ereignissu
    * Klicken Sie auf „OK“, um die Datumsauswahl zu schließen.
 
 1. Wählen Sie in der Liste „Anzeigen“ die Anzahl der pro Seite anzuzeigenden Suchergebnisse aus.
-1. Klicken Sie auf &quot;Suchen &quot;.
+1. Klicken Sie auf „Suchen“.
 
    Fehlgeschlagene Ereignisse werden in der Liste mit dem Symbol „Verweigert“ gekennzeichnet.
 

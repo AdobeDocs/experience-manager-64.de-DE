@@ -13,21 +13,21 @@ exl-id: 9968f399-454b-4cb2-b6af-2c16428ca7b4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 57%
+ht-degree: 95%
 
 ---
 
 # Ändern des Gebietsschemas der AEM Forms Workspace-Benutzeroberfläche {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-AEM Forms Workspace unterstützt standardmäßig Englisch, Französisch, Deutsch und Japanisch. Darüber hinaus bietet es die Möglichkeit, die Benutzeroberfläche von AEM Forms Workspace in eine andere Sprache zu lokalisieren.
+AEM Forms Workspace unterstützt standardmäßig die Sprachen Englisch, Französisch, Deutsch und Japanisch. Darüber hinaus besteht die Möglichkeit, die AEM Forms Workspace-Benutzeroberfläche in einer beliebigen anderen Sprache zu lokalisieren.
 
-So lokalisieren Sie die Benutzeroberfläche von AEM Forms Workspace in eine Sprache Ihrer Wahl:
+So lokalisieren Sie die AEM Forms Workspace-Benutzeroberfläche in einer Sprache Ihrer Wahl:
 
 * Lokalisieren des Texts von AEM Forms Workspace
 * Lokalisieren von ausgeblendeten Kategorien, Warteschlangen und Prozessen
 * Lokalisieren der Datumsauswahl
 
-Bevor Sie die oben genannten Schritte ausführen, müssen Sie die unter [Allgemeine Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
+Bevor Sie die obengenannten Schritte ausführen, achten Sie darauf, die hier aufgeführten Schritte durchzuführen: [Generische Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
@@ -35,15 +35,15 @@ Bevor Sie die oben genannten Schritte ausführen, müssen Sie die unter [Allgeme
 
 ## Text lokalisieren {#localizing-text}
 
-Führen Sie die folgenden Schritte aus, um Unterstützung für eine Sprache hinzuzufügen *Neu* und dem Gebietsschema-Code des Browsers *nw*.
+Führen Sie die folgenden Schritte aus, um Unterstützung für eine Sprache *Neu* und den Browser-Gebietsschema-Code *nw* hinzuzufügen.
 
 1. Melden Sie sich bei CRXDE Lite an.
 
-   Die Standard-URL der CRXDE Lite lautet `https://[server]:[port]/lc/crx/de/index.jsp`.
+   Die Standard-URL von CRXDE Lite lautet `https://[server]:[port]/lc/crx/de/index.jsp`.
 
-1. Navigieren zum Speicherort `apps/ws/locales` und erstellen Sie einen neuen Ordner `nw.`
-1. Datei kopieren `translation.json`vom Speicherort `/apps/ws/locales/en-US` zum Speicherort `/apps/ws/locales/nw`.
-1. Navigieren Sie zu `/apps/ws/locales/nw` und öffnen `translation.json` zur Bearbeitung. Nehmen Sie gebietsschemaspezifische Änderungen an der Datei „translation.json“ vor.
+1. Navigieren Sie zum Speicherort `apps/ws/locales` und erstellen Sie einen neuen Ordner `nw.`
+1. Kopieren Sie die Datei `translation.json` vom Speicherort `/apps/ws/locales/en-US` zum Speicherort `/apps/ws/locales/nw`.
+1. Navigieren Sie zu `/apps/ws/locales/nw` und öffnen Sie `translation.json` zur Bearbeitung. Nehmen Sie gebietsschemaspezifische Änderungen an der Datei „translation.json“ vor.
 
    Die folgenden Beispiele enthalten die Datei „translation.json“ für die englischen und französischen Gebietsschemata von AEM Forms Workspace.
 
@@ -51,15 +51,15 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für eine Sprache hinz
 
 ## Lokalisieren von ausgeblendeten Kategorien, Warteschlangen und Prozessen {#localizing-collapsed-categories-queues-and-processes}
 
-AEM Forms Workspace verwendet Bilder, um Kopfzeilen von Kategorien, Warteschlangen und Prozessen anzuzeigen. Sie benötigen das Entwicklungspaket um diese Kopfzeilen zu lokalisieren. Detaillierte Informationen zum Erstellen eines Entwicklungspakets finden Sie unter [Erstellen von AEM Forms Workspace-Code.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+AEM Forms Workspace verwendet Bilder, um Kopfzeilen von Kategorien, Warteschlangen und Prozessen anzuzeigen. Sie benötigen das Entwicklungspaket um diese Kopfzeilen zu lokalisieren. Ausführliche Informationen zum Erstellen des Entwicklungspakets finden Sie unter [AEM Forms Workspace-Code erstellen.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 In den folgenden Schritten wird davon ausgegangen, dass es sich bei den neuen lokalisierten Bilddateien um *Categories_nw.png*, *Queue_nw.png* und *Processes_nw.png* handelt. Die empfohlene Breite der Bilder ist 19 px.
 
 >[!NOTE]
 >
->Den Browser-Sprachschema-Code Ihres Browsers finden Öffnen Sie `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>Den Browser-Sprachschema-Code Ihres Browsers finden. Öffnen Sie `https://[server]:[port]/lc/libs/ws/Locale.html`.
 
-![collapse_panels_image](assets/collapsing_panels_image.png)
+![collapsing_panels_image](assets/collapsing_panels_image.png)
 
 Führen Sie die folgenden Schritte aus, um die Bilder zu lokalisieren:
 
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um die Bilder zu lokalisieren:
    }
    ```
 
-1. Führen Sie alle semantischen Änderungen durch, die im Abschnitt [Workspace-Anpassung](/help/forms/using/introduction-customizing-html-workspace.md) Artikel.
+1. Führen Sie alle semantischen Änderungen durch, die im Artikel [Anpassung von Workspace](/help/forms/using/introduction-customizing-html-workspace.md) aufgeführt sind.
 1. Navigieren Sie zum *js/runtime/utility* und öffnen Sie die Datei &quot;usersession.js*&quot;zur Bearbeitung.
 1. Suchen Sie den Code, der im ursprünglichen Codeblock aufgeführt ist und fügen Sie die folgende Bedingung hinzu: *lang !== &#39;nw&#39;* to the if statement:
 
@@ -110,18 +110,18 @@ Führen Sie die folgenden Schritte aus, um die Bilder zu lokalisieren:
 
 ## Datumsauswahl lokalisieren {#localizing-date-picker}
 
-Sie benötigen ein Entwicklungspaket, um die *datepicker *API zu lokalisieren. Detaillierte Informationen zum Erstellen eines Entwicklungspakets finden Sie unter [Erstellen von AEM Forms Workspace-Code](introduction-customizing-html-workspace.md#building-html-workspace-code).
+Sie benötigen ein Entwicklungspaket, um die *datepicker *API zu lokalisieren. Ausführliche Informationen zum Erstellen des Entwicklungspakets finden Sie unter [AEM Forms Workspace-Code erstellen](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Laden Sie das [jQuery UI Package](https://jqueryui.com/download/all/) herunter und extrahieren Sie es, navigieren Sie zu *&lt;extrahiertes jQuery UI Package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Kopieren Sie die Datei „jquery.ui.datepicker-nw.js“ für Gebietsschema-Code „nw“ nach „apps/ws/js/libs/jqueryui“ und nehmen Sie gebietsschemaspezifische Änderungen an der Datei vor.
-1. Navigieren Sie zu `apps/ws/js` und öffnen Sie die `jquery.ui.datepicker-nw.js` Datei zur Bearbeitung.
-1. Erstellen Sie in der Datei &quot;main.js&quot;einen Alias für `jquery.ui.datepicker-nw.js.` Der Code zum Erstellen eines Alias für die `jquery.ui.datepicker-nw.js` Datei ist:
+1. Navigieren Sie zu `apps/ws/js` und öffnen Sie die Datei`jquery.ui.datepicker-nw.js` zur Bearbeitung.
+1. Erstellen Sie in der Datei main.js einen Alias für `jquery.ui.datepicker-nw.js.`. Der Code zum Erstellen eines Alias für die Datei `jquery.ui.datepicker-nw.js` ist:
 
    ```
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'
    ```
 
-1. Alias verwenden `jqueryuidatepickernw` , um `jquery.ui.datepicker-nw.js` in allen Dateien, die datepicker verwenden. Die Datumsauswahl wird in den folgenden Dateien verwendet:
+1. Verwenden Sie den Alias `jqueryuidatepickernw`, um die Datei `jquery.ui.datepicker-nw.js` in allen Dateien einzubinden, die die Datumsauswahl verwenden. Die Datumsauswahl wird in den folgenden Dateien verwendet:
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`

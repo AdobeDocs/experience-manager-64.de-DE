@@ -12,7 +12,7 @@ exl-id: 3269aab9-ac39-4adc-9a6b-9fe9f4276b29
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2140'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -68,13 +68,13 @@ Die Dropdown-Liste für die Zeile enthält auch die Option „Bearbeiten“ zum 
 >
 >Sie können zwar eine beliebige Anzahl von Zeilen einer Tabelle hinzufügen, aber nur maximal sechs Spalten. Die Überschriftzeile der Tabelle kann nicht gelöscht werden.
 
-### Spaltenbreite für eine Tabelle festlegen {#set-column-width}
+### Die Spaltenbreite einer Tabelle einstellen {#set-column-width}
 
 Führen Sie die folgenden Schritte aus, um die Spaltenbreite für eine Tabelle festzulegen:
 
-1. Im **[!UICONTROL Inhalt]** Registerkarte tippen Sie auf **[!UICONTROL Verzeichnis]** und tippen Sie auf Konfigurieren (![Konfigurieren](assets/configure-icon.svg)).
+1. Tippen Sie auf der **[!UICONTROL Inhalt]**-Registerkarte auf die Komponente **[!UICONTROL Tabelle]** und tippen Sie auf das Konfigurieren-Symbol (![Konfigurieren](assets/configure-icon.svg)).
 
-1. Geben Sie die kommagetrennte Liste von Werten in die **[!UICONTROL Spaltenbreite]** -Feld, um die proportionale Breite jeder Spalte in der Tabelle anzugeben. Beispiel: Für eine Tabelle mit 3 Spalten, wobei 2,4,6 als Wert im **[!UICONTROL Spaltenbreite]** -Feld ergibt, dass die Breite der Spalten für die erste Spalte auf 2/12, für die zweite Spalte auf 4/12 und für die dritte Spalte auf 6/12 eingestellt wird. 2/12, da sich die Breite für die erste Spalte auf ein Sechstel der Tabellenbreite bezieht. Gleichermaßen setzt 4/12 die zweite Spaltenbreite auf ein Drittel der Tabellenbreite und 6/12 legt die dritte Spaltenbreite als Hälfte der Tabellenbreite fest.
+1. Um die proportionale Breite der einzelnen Spalten der Tabelle festzulegen, geben Sie die jeweiligen Werte als kommagetrennte Liste in das **[!UICONTROL Spaltenbreite]**-Feld ein. Beispiel: Für eine Tabelle mit 3 Spalten führt die Eingabe des Werts „2,4,6“ in das **[!UICONTROL Spaltenbreite]**-Feld dazu, dass die Spaltenbreite für die erste Spalte auf 2/12, für die zweite auf 4/12 und für die dritte auf 6/12 eingestellt wird. 2/12 als Spaltenbreite für die erste Spalte entspricht einem Sechstel der Tabellenbreite. Parallel dazu wird mit dem Wert 4/12 die Breite der zweiten Spalte auf ein Drittel der Tabellenbreite und mit 6/12 die Breite der dritten Spalte auf die Hälfte der Tabellenbreite eingestellt.
 
 ### Hinzufügen einer Tabellenbeschreibung {#add-table-description}
 

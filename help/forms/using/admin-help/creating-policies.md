@@ -14,7 +14,7 @@ exl-id: a4e69794-ea83-4cb6-a3da-cef0ceb6892a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4718'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Wenn Sie Document Security zum ersten Mal installieren, enthält das Programm ei
 
 **Microsoft Outlook, automatisch generierte Richtlinien**
 
-Acrobat ermöglicht Ihnen das Anwenden von Richtlinien auf Dokumente, die Sie aus Microsoft Outlook als E-Mail-Anlagen senden. In Outlook können Sie ein Dokument schützen, indem Sie eine vorhandene Richtlinie oder eine automatisch generierte Richtlinie verwenden, die von Acrobat mit Standardvertraulichkeitseinstellungen erzeugt und auf das Dokument angewendet wird, das an die E-Mail-Nachricht angehängt ist. (Siehe * [Hilfe zu Acrobat](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
+Acrobat ermöglicht Ihnen das Anwenden von Richtlinien auf Dokumente, die Sie aus Microsoft Outlook als E-Mail-Anlagen senden. In Outlook können Sie ein Dokument schützen, indem Sie eine vorhandene Richtlinie oder eine automatisch generierte Richtlinie verwenden, die von Acrobat mit Standardvertraulichkeitseinstellungen erzeugt und auf das Dokument angewendet wird, das an die E-Mail-Nachricht angehängt ist. (Siehe * [Hilfe zu Acrobat](https://help.adobe.com/de_DE/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ Wie Sie mit Richtlinien und Richtliniensätzen interagieren, hängt von Ihrer Ro
 
 **Benutzer:** Benutzer können ihre persönlichen Richtlinien erstellen, bearbeiten und löschen. Eingeladene Benutzer können ebenfalls persönliche Richtlinien erstellen, falls der Administrator diese Funktionalität aktiviert hat.
 
-**Richtliniensatzkoordinatoren:** Richtliniensatzkoordinatoren können freigegebene Richtlinien in den Richtliniensätzen erstellen und verwalten, in denen sie als Koordinator benannt sind. Ein Richtliniensatzkoordinator ist in der Regel ein Spezialist im Unternehmen, der die Richtlinien in einem bestimmten Richtliniensatz am besten verwalten kann.
+**Richtliniensatzkoordinatoren:** Richtliniensatzkoordinatoren können freigegebene Richtlinien innerhalb von Richtliniensätzen, für die sie als Koordinator angegeben sind, erstellen und verwalten. Ein Richtliniensatzkoordinator ist in der Regel ein Spezialist im Unternehmen, der die Richtlinien in einem bestimmten Richtliniensatz am besten verwalten kann.
 
-**Administratoren:** Administratoren können die persönlichen Richtlinien aller Benutzer bearbeiten. Sie können freigegebene Richtlinien erstellen. Sie können ebenfalls Richtliniensätze erstellen, bearbeiten und löschen und Richtliniensatzkoordinatoren angeben. 
+**Administratoren:** Administratoren können die persönlichen Richtlinien jedes Benutzers bearbeiten. Sie können freigegebene Richtlinien erstellen. Sie können ebenfalls Richtliniensätze erstellen, bearbeiten und löschen und Richtliniensatzkoordinatoren angeben. 
 
 Weitere Informationen zu den verschiedenen Document Security-Rollen finden Sie unter [Informationen zu Document Security-Benutzern](/help/forms/using/admin-help/document-security.md#about-document-security-users).
 
@@ -132,23 +132,23 @@ Geben Sie im Bereich „Benutzer und Gruppen“ die Benutzer an, die Zugriff auf
 >
 >Der Dokumentherausgeber ist der Benutzer, der das Dokument mit der Richtlinie schützt. Dieser Benutzer wird stets standardmäßig in eine Richtlinie einbezogen und hat Vollzugriffsrechte, so auch zum Sperren des Dokumentzugriffs oder Wechseln der Richtlinie. Administratoren können jedoch die Zugriffsrechte des Dokumentherausgebers für freigegebene Richtlinien ändern. Beispielsweise kann der Administrator dem Dokumentherausgeber die Rechte zum Sperren des Dokumentzugriffs oder Wechseln der Richtlinie entziehen.
 
-**Benutzer oder Gruppe hinzufügen:** Um einen Benutzer oder eine Benutzergruppe hinzuzufügen, klicken Sie auf Benutzer oder Gruppe hinzufügen und dann auf Erweiterte Suche , um Benutzer oder Gruppen zu suchen. Zu Benutzern zählen firmeninterne sowie eingeladene Benutzer, die sich bei Document Security registriert haben. Wenn Sie diese Option auswählen, wird die Seite „Benutzer oder Gruppe hinzufügen“ angezeigt.
+**Benutzer oder Gruppe hinzufügen:** Um einen Benutzer oder eine Gruppe von Benutzern hinzuzufügen, klicken Sie auf „Benutzer oder Gruppe hinzufügen“ und anschließend auf „Erweiterte Suche“, um Benutzer oder Gruppen zu suchen. Zu Benutzern zählen firmeninterne sowie eingeladene Benutzer, die sich bei Document Security registriert haben. Wenn Sie diese Option auswählen, wird die Seite „Benutzer oder Gruppe hinzufügen“ angezeigt.
 
 * Geben Sie in das Feld „Suchen“ den Namen oder die E-Mail-Adresse ein.
 * Wählen Sie in der Liste „Verwendet“ den Suchparameter „Name“ oder „E-Mail“ aus.
 * Wählen Sie in der Liste „Typ“ entweder „Benutzer“ oder „Gruppe“ aus.
-* Wählen Sie in der Liste „In“ die zu durchsuchende Domäne aus und klicken Sie auf „Suchen“.
+* Wählen Sie in der Liste „In“ die zu durchsuchende Domain aus und klicken Sie auf „Suchen“.
 * Wenn die Ergebnisse zurückgegeben werden, wählen Sie den Benutzer oder die Gruppe, der/die hinzugefügt werden soll, aus und klicken Sie auf „Hinzufügen“.
 
 >[!NOTE]
 >
 >Wenn Sie einen Namen eines eingeladenen Benutzers oder eine E-Mail-Adresse ordnungsgemäß eingeben, ohne dass ein Ergebnis zurückgegeben wird, wurde der Benutzer ggf. noch nicht registriert oder sein Konto gelöscht. Sie können versuchen, den Benutzer als eingeladenen Benutzer hinzuzufügen, oder wenden Sie sich an den Administrator.
 
-**Neuen Benutzer einladen:** Um einen eingeladenen Benutzer hinzuzufügen, klicken Sie auf &quot;Neuen Benutzer einladen&quot;, geben Sie die E-Mail-Adresse des Benutzers in das angezeigte Feld ein und klicken Sie auf &quot;Einladen&quot;. Diese Option ist nur verfügbar, wenn der Administrator sie aktiviert hat. Wenn Sie einer Richtlinie neu eingeladene Benutzer hinzufügen, sendet Document Security eine Einladungs-E-Mail zur Registrierung, wenn die Benutzer nicht bereits zur Registrierung eingeladen wurden. Die Benutzer müssen auf den Link in der E-Mail klicken, um ein Konto zu erstellen, und das Konto anschließend aktivieren. 
+**Neuen Benutzer einladen:** Um einen eingeladenen Benutzer hinzuzufügen, klicken Sie auf „Neuen Benutzer einladen“, geben Sie die E-Mail-Adresse des Benutzers in das Feld ein und klicken Sie auf „Einladen“. Diese Option ist nur verfügbar, wenn der Administrator sie aktiviert hat. Wenn Sie einer Richtlinie neu eingeladene Benutzer hinzufügen, sendet Document Security eine Einladungs-E-Mail zur Registrierung, wenn die Benutzer nicht bereits zur Registrierung eingeladen wurden. Die Benutzer müssen auf den Link in der E-Mail klicken, um ein Konto zu erstellen, und das Konto anschließend aktivieren. 
 
 Nach der Registrierung können eingeladene Benutzer richtliniengeschützte Dokumente nutzen, für die sie autorisiert sind. Abhängig von den Funktionen, die der Administrator aktiviert, sind externe Benutzer eventuell auch dazu berechtigt, Richtlinien auf Dokumente anzuwenden, Richtlinien zu erstellen, zu bearbeiten und zu löschen sowie weitere externe Benutzer zu Richtlinien hinzuzufügen.
 
-**Anonymen Benutzer hinzufügen:** Um den anonymen Benutzerzugriff zuzulassen, klicken Sie auf Anonymen Benutzer hinzufügen . Diese Option ist nur verfügbar, wenn der Administrator den anonymen Benutzerzugriff für Document Security aktiviert hat. (Siehe Document Security-Server konfigurieren.) Diese Option erlaubt allen Benutzern die Verwendung eines von dieser Richtlinie geschützten Dokuments, auch wenn sie kein Document Security-Konto haben. Bei Aktivierung dieser Option können Sie dieser Richtlinie keine anderen Benutzertypen hinzufügen.
+**Anonymen Benutzer hinzufügen:** Um den anonymen Benutzerzugriff zuzulassen, klicken Sie auf „Anonymen Benutzer hinzufügen“. Diese Option ist nur verfügbar, wenn der Administrator den anonymen Benutzerzugriff für Document Security aktiviert hat. (Siehe Document Security-Server konfigurieren.) Diese Option erlaubt allen Benutzern die Verwendung eines von dieser Richtlinie geschützten Dokuments, auch wenn sie kein Document Security-Konto haben. Bei Aktivierung dieser Option können Sie dieser Richtlinie keine anderen Benutzertypen hinzufügen.
 
 >[!NOTE]
 >
@@ -164,41 +164,41 @@ Die Registerkarten „Berechtigungen“ und „Optionen“ werden in Document Se
 
 Diese Dokumentberechtigungen sind auf der Registerkarte „Berechtigungen“ verfügbar. Sie können diese Berechtigungen auf PDF-, PTC Pro/E- und Microsoft Office-Dateien anwenden.
 
-**Drucken:** Erlaubt dem Benutzer das Drucken eines mit dieser Richtlinie geschützten Dokuments. Für Office- und Pro/E-Dateien können Sie das Kontrollkästchen „Drucken“ aktivieren, um Drucken zuzulassen, oder deaktivieren Sie es, um Drucken zu verhindern. Wenn Sie das Kontrollkästchen „Benutzerdefinierte Berechtigungen für PDF-Datei anzeigen“ aktivieren, können Sie aus folgenden Optionen auswählen:
+**Drucken:** Erlaubt dem Benutzer das Drucken eines durch diese Richtlinie geschützten Dokuments. Für Office- und Pro/E-Dateien können Sie das Kontrollkästchen „Drucken“ aktivieren, um Drucken zuzulassen, oder deaktivieren Sie es, um Drucken zu verhindern. Wenn Sie das Kontrollkästchen „Benutzerdefinierte Berechtigungen für PDF-Datei anzeigen“ aktivieren, können Sie aus folgenden Optionen auswählen:
 
-**Nicht zulässig:** Der Benutzer darf die PDF nicht drucken.
+**Nicht zulässig:** Der Benutzer darf die PDF-Datei nicht drucken.
 
-**Zulässig:** Der Benutzer darf die PDF drucken.
+**Zugelassen:** Der Benutzer darf die PDF-Datei drucken.
 
-**Geringe Auflösung. nur:** Der Benutzer darf die PDF mit niedriger Auflösung drucken.
+**Nur niedrige Auflösung:** Der Benutzer darf die PDF-Datei in niedriger Auflösung drucken.
 
-**Ändern:** Erlaubt dem Benutzer das Ändern eines mit dieser Richtlinie geschützten Dokuments. Für Office- und Pro/E-Dateien können Sie das Kontrollkästchen „Ändern“ aktivieren, um Änderungen zuzulassen, oder deaktivieren Sie es, um Änderungen zu verhindern. Wenn Sie das Kontrollkästchen „Benutzerdefinierte Berechtigungen für PDF-Datei anzeigen“ aktivieren, können Sie aus folgenden Optionen auswählen:
+**Verändern:** Erlaubt dem Benutzer, ein durch diese Richtlinie geschütztes Dokument zu verändern. Für Office- und Pro/E-Dateien können Sie das Kontrollkästchen „Ändern“ aktivieren, um Änderungen zuzulassen, oder deaktivieren Sie es, um Änderungen zu verhindern. Wenn Sie das Kontrollkästchen „Benutzerdefinierte Berechtigungen für PDF-Datei anzeigen“ aktivieren, können Sie aus folgenden Optionen auswählen:
 
-**Nicht zulässig:** Der Benutzer darf die PDF nicht ändern.
+**Nicht zulässig:** Der Benutzer darf die PDF-Datei nicht ändern.
 
-**Any:** Der Benutzer kann die PDF ändern.
+**Beliebig:** Der Benutzer kann die PDF-Datei ändern.
 
-**Zusammenarbeit:** Benutzer können mit anderen mithilfe der Optionen für die Zusammenarbeit in Adobe Acrobat zusammenarbeiten. Mit dieser Berechtigung kann der Benutzer Formulardaten kopieren, auch wenn die Kopierberechtigung nicht ausdrücklich in der Richtlinie erteilt wurde.
+**Zusammenarbeiten:** Benutzer darf mithilfe der Optionen „Zusammenarbeiten“ in Adobe Acrobat mit anderen zusammenarbeiten. Mit dieser Berechtigung kann der Benutzer Formulardaten kopieren, auch wenn die Kopierberechtigung nicht ausdrücklich in der Richtlinie erteilt wurde.
 
-**Seiten ändern:** Der Benutzer darf Seiten hinzufügen und entfernen und Inhalte im PDF bearbeiten.
+**Seiten ändern:** Der Benutzer darf Seiten hinzufügen und entfernen und den Inhalt der PDF-Datei bearbeiten.
 
-**Fill &amp; Sign:** Der Benutzer darf Formularfelder auf der PDF ausfüllen und unterschreiben.
+**Ausfüllen und Signieren:** Der Benutzer darf Formularfelder in der PDF-Datei ausfüllen und die Datei signieren.
 
-**Kopieren:** Ermöglicht dem Benutzer das Kopieren von Text aus einem Dokument, das durch diese Richtlinie geschützt ist.
+**Kopieren:** Erlaubt dem Benutzer das Kopieren eines durch diese Richtlinie geschützten Textes.
 
-**Screen Reader:** Diese Berechtigung wird angezeigt, wenn Sie das Kontrollkästchen &quot;Benutzerdefinierte Berechtigungen für PDF anzeigen&quot;aktivieren. Wenn diese Option aktiviert ist, verfügt Adobe Acrobat über die Berechtigung zum Hinzufügen von temporären Tags zu der PDF-Datei, um die Lesbarkeit mit einer Bildschirmlesehilfe zu verbessern. 
+**Bildschirmlesehilfe:** Diese Berechtigung wird angezeigt, wenn Sie das Kontrollkästchen „Benutzerdefinierte Berechtigungen für PDF-Datei anzeigen“ aktivieren. Wenn diese Option aktiviert ist, verfügt Adobe Acrobat über die Berechtigung zum Hinzufügen von temporären Tags zu der PDF-Datei, um die Lesbarkeit mit einer Bildschirmlesehilfe zu verbessern. 
 
 Diese Dokumentberechtigungen sind auf der Registerkarte „Optionen“ verfügbar. Sie können diese Berechtigungen auf PDF-, PTC Pro/E- und Microsoft Office-Dateien anwenden:
 
-**Offline:** Erlaubt dem Benutzer, ein mit dieser Richtlinie geschütztes Dokument offline anzuzeigen.
+**Offline:** Erlaubt dem Benutzer die Offline-Anzeige eines durch diese Richtlinie geschützten Dokuments.
 
-**Gültigkeit der Berechtigung:** Wählen Sie Berechtigungen sind immer gültig aus oder legen Sie einen Gültigkeitszeitraum für Dokumentberechtigungen fest. Wenn Sie eine Gültigkeitsdauer auswählen, klicken Sie auf das Kalendersymbol und wählen Sie ein Datum aus. Verwenden Sie die Pfeiltasten, um eine Uhrzeit im 24-Stunden-Format auszuwählen.
+**Gültigkeit der Berechtigung:** Wählen Sie „Berechtigungen sind immer gültig“ aus oder legen Sie eine Gültigkeitsdauer für Dokumentberechtigungen fest. Wenn Sie eine Gültigkeitsdauer auswählen, klicken Sie auf das Kalendersymbol und wählen Sie ein Datum aus. Verwenden Sie die Pfeiltasten, um eine Uhrzeit im 24-Stunden-Format auszuwählen.
 
 Für freigegebene Richtlinien können Administratoren dem Dokumentherausgeber (dem Benutzer, der die Richtlinie auf ein Dokument anwendet) die folgenden Berechtigungen entziehen:
 
-**Sperren:** Erlaubt dem Dokumentherausgeber, Dokumentzugriffsberechtigungen zu sperren.
+**Sperren:** Erlaubt dem Herausgeber des Dokuments, die Dokumentzugriffsberechtigungen zu sperren.
 
-**Switch:** Erlaubt dem Dokumentherausgeber, Richtlinienberechtigungen zu wechseln.
+**Wechseln:** Erlaubt dem Herausgeber des Dokuments, Richtlinienberechtigungen zu wechseln. 
 
 ### Allgemeine Einstellungen {#general-settings}
 
@@ -206,11 +206,11 @@ Der Bereich „Allgemeine Einstellungen“ enthält folgende Einstellungen:
 
 **Gültigkeitszeitraum:** Der Zeitraum, in dem autorisierte Empfänger auf das richtliniengeschützte Dokument zugreifen können. Sie können aus den folgenden Optionen für die Gültigkeitsdauer auswählen:
 
-**Das Dokument ist nicht gültig nach:** Das Dokument kann ab dem Zeitpunkt, zu dem das Dokument gesichert wurde, für die angegebene Anzahl von Tagen aufgerufen werden.
+**Das Dokument ist nicht gültig nach:** Das Dokument ist für die angegebene Anzahl von Tagen ab dem Zeitpunkt der Sicherung des Dokuments zugänglich.
 
 **Das Dokument ist nach diesem Datum nicht mehr gültig:** Das Dokument gilt ab dem Datum, an dem die Richtlinie auf das Dokument angewendet wird, bis zum angegebenen Enddatum.
 
-**Gültig von, bis:** Das Dokument gilt für die von Ihnen angegebenen Daten. Sie können, falls das Kalendersymbol angezeigt wird, ein Datum im Kalender auswählen.
+**Gültig von, bis:** Das Dokument gilt während der von Ihnen angegebenen Daten gültig. Sie können, falls das Kalendersymbol angezeigt wird, ein Datum im Kalender auswählen.
 
 **Dokument ist immer gültig:** Der Gültigkeitszeitraum des Dokuments läuft nicht ab.
 
@@ -218,7 +218,7 @@ Der Bereich „Allgemeine Einstellungen“ enthält folgende Einstellungen:
 >
 >Der Gültigkeitszeitraum basiert auf der Zeitzone des Document Security-Systems und nicht auf der Zeitzone des lokalen Computers.
 
-**Auditing:** Aktivieren oder deaktivieren Sie die Prüfung der Ereignisse, die mit einem richtliniengeschützten Dokument verknüpft sind. Document Security kann beispielsweise Ereignisse wie Versuche, ein Dokument zu öffnen, aufzeichnen. Geprüfte Ereignisse werden in der Liste auf der Seite „Ereignisse“ angezeigt. Wenn Sie diese Option nicht aktivieren, zeichnet Document Security keine Ereignisse für Dokumente auf, die der Richtlinie zugeordnet sind.
+**Prüfung:** Sie können die Prüfung auf Ereignisse im Zusammenhang mit einem richtliniengeschützten Dokument aktivieren oder deaktivieren. Document Security kann beispielsweise Ereignisse wie Versuche, ein Dokument zu öffnen, aufzeichnen. Geprüfte Ereignisse werden in der Liste auf der Seite „Ereignisse“ angezeigt. Wenn Sie diese Option nicht aktivieren, zeichnet Document Security keine Ereignisse für Dokumente auf, die der Richtlinie zugeordnet sind.
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ Der Bereich „Allgemeine Einstellungen“ enthält folgende Einstellungen:
 
 **Erweiterte Nutzungsverfolgung:** Aktivieren oder deaktivieren Sie die erweiterte Nutzungsverfolgung. Document Security unterstützt die Verfolgung von Benutzerereignissen im Zusammenhang mit verschiedenen Vorgängen, die an einer PDF-Datei durchgeführt werden. Auf das Document Security-Objekt kann mithilfe eines Java-Skriptes zugegriffen werden. Beispiele für die Ereignisse, die von einem richtliniengeschützten PDF ausgelöst werden können, sind das Anklicken einer Schaltfläche, das Anzeigen einer Multimedia-Datei oder das Speichern einer Datei. Mit dem Document Security-Objekt können Sie auch Benutzerinformationen abrufen. Die Ereignisverfolgung kann über den Document Security-Server auf globaler oder auf Richtlinienebene aktiviert werden.
 
-**Automatische Offline-Nutzungsdauer:** Die maximale Anzahl von Tagen, in denen der Empfänger das richtliniengeschützte Dokument offline verwenden kann (ohne aktive Internet- oder Netzwerkverbindung). Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument erneut synchronisieren, um es weiter verwenden zu können.
+**Automatische Offline-Nutzungsdauer:** Die maximale Anzahl von Tagen, die der Empfänger das richtliniengeschützte Dokument offline (ohne aktive Internet- oder Netzwerkverbindung) nutzen darf. Nach Ablauf der Nutzungsdauer muss der Empfänger das Dokument erneut synchronisieren, um es weiter verwenden zu können.
 
 ### Externe Autorisierungsanbieter {#external-authorization-providers}
 
@@ -236,13 +236,13 @@ Wählen Sie die externen Authentifizierungsanbieter aus, wenn bereits Anbieter k
 
 Sie können die Authentifizierungseinstellungen überschreiben, die Sie auf dem Server konfiguriert haben, und die Authentifizierungsoptionen angeben, die für diese Richtlinie relevant sind. Wählen Sie „Globale Authentifizierungseinstellungen außer Kraft setzen“, und wählen Sie dann die Authentifizierungsoptionen, die für diese Richtlinie relevant sind. Die folgenden Authentifizierungsptionen sind verfügbar:
 
-**Authentifizierung für Benutzername-Kennwort zulassen:** Aktivieren Sie diese Option, damit Clientanwendungen beim Herstellen einer Verbindung zum Server die Authentifizierung mit Benutzername und Kennwort verwenden können.
+**Benutzername/Kennwort-Authentifizierung zulassen:** Aktivieren Sie diese Option, um zu bestimmen, ob Client-Anwendungen beim Herstellen einer Server-Verbindung die Benutzername/Kennwort-Authentifizierung zulassen.
 
-**Kerberos-Authentifizierung zulassen:** Aktivieren Sie diese Option, damit Clientanwendungen beim Herstellen einer Verbindung zum Server die Kerberos-Authentifizierung verwenden können.
+**Kerberos-Authentifizierung gestatten:** Aktivieren Sie diese Option, um zu bestimmen, ob Clientanwendungen beim Herstellen einer Serververbindung die Kerberos-Authentifizierung zulassen.
 
-**Client-Zertifikatauthentifizierung zulassen:** Aktivieren Sie diese Option, damit Clientanwendungen beim Herstellen einer Verbindung zum Server die Zertifikatauthentifizierung verwenden können.
+**Zertifikat-Authentifizierung zulassen:** Aktivieren Sie diese Option, um zu bestimmen, ob Client-Anwendungen beim Herstellen einer Server-Verbindung die Zertifikat-Authentifizierung zulassen.
 
-**Erweiterte Authentifizierung zulassen** Aktivieren Sie diese Option, um die erweiterte Authentifizierung zu aktivieren. Durch Auswahl dieser Option wird für Clientanwendungen die Verwendung der erweiterten Authentifizierung aktiviert. Mit erweiterter Authentifizierung können auf dem Document Security-Server angepasste Authentifizierungsprozesse und verschiedene Authentifizierungsoptionen konfiguriert werden.
+**Erweiterte Authentifizierung zulassen** Wählen Sie diese Option aus, um die erweiterte Authentifizierung zu aktivieren. Durch Auswahl dieser Option wird für Clientanwendungen die Verwendung der erweiterten Authentifizierung aktiviert. Mit erweiterter Authentifizierung können auf dem Document Security-Server angepasste Authentifizierungsprozesse und verschiedene Authentifizierungsoptionen konfiguriert werden.
 
 Wenn Sie die globalen Authentifizierungseinstellungen überschreiben, können Sie die Authentifizierungsoptionen auswählen, die für diese Richtlinie relevant sind. Wenn Sie z. B. auf dem Server drei Authentifizierungsoptionen aktiviert haben (Benutzername und Kennwort, Client-Zertifikat und erweiterte Authentifizierung), dann können Sie diese globale Einstellung überschreiben und für diese Richtlinie nur erweiterte Authentifizierung auswählen. Sie müssen sicherstellen, dass die Authentifizierungsoption, die Sie hier auswählen, bereits auf dem Server konfiguriert ist. In diesem Beispiel können Sie Kerberos nicht als Authentifizierungsoption wählen, da sie nicht auf dem Server konfiguriert ist.
 
@@ -254,7 +254,7 @@ Wenn Sie die globalen Authentifizierungseinstellungen überschreiben, können Si
 
 Der Bereich „Erweiterte Einstellungen“ enthält folgende Einstellungen:
 
-**Dynamisches Wasserzeichen:** Wählen Sie ein Wasserzeichen aus, das dynamisch auf den Seiten eines Dokuments angezeigt werden soll (z. B. wenn ein Empfänger das Dokument druckt). Dynamische Wasserzeichen kennzeichnen ein Dokument eindeutig und sorgen so dafür, dass die Vertraulichkeit des Dokuments gewährleistet bleibt und Copyright-Verstöße verhindert werden. Der Administrator kann beispielsweise ein dynamisches Wasserzeichen konfigurieren, welches das aktuelle Datum oder den Namen oder die ID der Person anzeigt, die das Dokument verwendet, oder den Namen der Richtlinie, die zum Schutz des Dokuments verwendet wird. Ein Wasserzeichen kann auch einen benutzerdeinierten Text oder ein grafisches Element enthalten, wenn es entsprechend konfiguriert ist. Administratoren konfigurieren die Wasserzeichenoptionen und sowohl Administratoren als auch Benutzer können diese auf Richtlinien anwenden. 
+**Dynamisches Wasserzeichen:** Wählen Sie ein Wasserzeichen aus, das dynamisch auf den Seiten eines Dokuments angezeigt werden soll (z. B. wenn ein Empfänger das Dokument druckt). Dynamische Wasserzeichen kennzeichnen ein Dokument eindeutig und sorgen so dafür, dass die Vertraulichkeit des Dokuments gewährleistet bleibt und Copyright-Verstöße verhindert werden. Der Administrator kann beispielsweise ein dynamisches Wasserzeichen konfigurieren, welches das aktuelle Datum oder den Namen oder die ID der Person anzeigt, die das Dokument verwendet, oder den Namen der Richtlinie, die zum Schutz des Dokuments verwendet wird. Ein Wasserzeichen kann auch einen benutzerdeinierten Text oder ein grafisches Element enthalten, wenn es entsprechend konfiguriert ist. Administratoren konfigurieren die Wasserzeichenoptionen und sowohl Administratoren als auch Benutzer können diese auf Richtlinien anwenden. 
 
 (Siehe [Dynamische Wasserzeichen konfigurieren](/help/forms/using/admin-help/configuring-client-server-options.md#configure-dynamic-watermarks).) 
 
@@ -264,7 +264,7 @@ Wenn Sie eine Richtlinie bearbeiten und der Administrator ein konfiguriertes Was
 >
 >Bei Richtlinien, die einen anonymen Benutzerzugriff zulassen, werden der Benutzername und die ID eines anonymen Benutzers nicht als Wasserzeichen angezeigt, auch wenn Sie diesen Typ von Wasserzeichen auswählen.
 
-**Verwenden Sie nur zertifizierte Acrobat-Plug-ins für PDF:** Wenn diese Option für eine Richtlinie ausgewählt ist, bedeutet dies, dass Acrobat 8.0 und höher beim Öffnen von mit der Richtlinie gesicherten Dokumenten im zertifizierten Modus ausgeführt werden muss. Wird Acrobat im zertifizierten Modus ausgeführt, werden keine Drittanbieter-Plug-Ins geladen.
+**Nur zertifizierte Acrobat-Plug-Ins für PDF-Datei verwenden:** Bei Auswahl dieser Option für eine Richtlinie wird festgelegt, dass Acrobat 8.0 und höher im zertifizierten Modus ausgeführt werden muss, wenn durch die Richtlinie geschützte Dokumente geöffnet werden. Wird Acrobat im zertifizierten Modus ausgeführt, werden keine Drittanbieter-Plug-Ins geladen.
 
 Wählen Sie diese Option aus, wenn Sie befürchten, dass ein Dokumentempfänger ein Plug-In schreibt, das die Dokumentschutzmaßnahmen in Acrobat 8.0 oder höher umgehen könnte. Aktivieren Sie diese Option nicht, wenn die Dokumentempfänger in Acrobat Plug-Ins von Drittanbietern für die Interaktion mit Dokumenten verwenden müssen.
 
@@ -274,7 +274,7 @@ Diese Option aktiviert den zertifizierten Modus nur in Acrobat 8.0 oder höher. 
 
 Diese Option gilt nicht für Adobe Reader.
 
-**Fehlermeldung Zugriff verweigert :** Eine Meldung, die allen Benutzern angezeigt wird, die versuchen, ein richtliniengeschütztes Dokument ohne Berechtigung zu öffnen. Diese Meldung wird in Acrobat angezeigt. Clients, die diese Meldung nicht anzeigen können, zeigen die Standardmeldung an, dass der Zugriff verweigert wird.
+**Fehlermeldung „Zugriff verweigert“:** Eine Meldung, die immer dann angezeigt wird, wenn jemand versucht, ein richtliniengeschütztes Dokument ohne Zugriffsberechtigung zu öffnen. Diese Meldung wird in Acrobat angezeigt. Clients, die diese Meldung nicht anzeigen können, zeigen die Standardmeldung an, dass der Zugriff verweigert wird.
 
 ### Unveränderliche erweiterte Einstellungen {#unchangeable-advanced-settings}
 
@@ -283,10 +283,10 @@ Der Bereich „Unveränderliche erweiterte Einstellungen“ enthält folgende Ei
 **Verschlüsselungsalgorithmus und Schlüssellänge:** Dient zum Schutz Ihrer Dokumente. Sie können aus den folgenden Optionen auswählen:
 
 * AES 128-Bit
-* AES 256-Bit. Diese Option wird nur von Acrobat 9.0 und höher unterstützt. Zur Verwendung der AES 256-Verschlüsselung für PDF-Dateien laden Sie die Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy-Dateien herunter und installieren Sie sie. Diese Dateien ersetzen die Dateien &quot;local_policy.jar&quot;und &quot;US_export_policy.jar&quot;im [JAVE_HOME]Ordner /lib/security . Wenn Sie beispielsweise Sun JDK 1.6 verwenden, kopieren Sie die heruntergeladenen Dateien in die [dep root]Ordner /Java/jdk1.6.0_26/lib/security . Sie können diese Dateien von der Seite [Java SE Downloads](https://java.sun.com/javase/downloads/index.jsp) herunterladen.
+* AES 256-Bit. Diese Option wird nur von Acrobat 9.0 und höher unterstützt. Zur Verwendung der AES 256-Verschlüsselung für PDF-Dateien laden Sie die Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy-Dateien herunter und installieren Sie sie. Diese Dateien ersetzen die Dateien „local_policy.jar“ und „US_export_policy.jar“ im Ordner „[JAVE_HOME] /lib/security“. Falls Sie beispielsweise Sun JDK 1.6 verwenden, kopieren Sie die heruntergeladenen Dateien in den Ordner „[dep-Stammordner]/Java/jdk1.6.0_26/lib/security“. Sie können diese Dateien von der Seite [Java SE Downloads](https://java.sun.com/javase/downloads/index.jsp) herunterladen.
 * Keine Verschlüsselung. Diese Option wird gegenwärtig von Acrobat 9.0 und höher unterstützt. Bei Wahl dieser Option sind die Optionen von „Dokumenteinschränkung“ deaktiviert. Diese Option ist ggf. nützlich, wenn Sie Document Security für die Dokumentprüfung oder Versionskontrolle, nicht jedoch zum Verschlüsseln des Dokuments nutzen möchten.
 
-**Dokumentbeschränkungen:** Wählen Sie die zu verschlüsselnden PDF-Dokumentkomponenten aus. Andere Clientanwendungen verschlüsseln das gesamte Dokument, jedoch keine verknüpften oder eingebetteten Dateien. Sie können aus den folgenden Optionen auswählen:
+**Dokumenteinschränkungen:** Wählen Sie PDF-Dokumentkomponenten aus, die verschlüsselt werden sollen. Andere Clientanwendungen verschlüsseln das gesamte Dokument, jedoch keine verknüpften oder eingebetteten Dateien. Sie können aus den folgenden Optionen auswählen:
 
 * Das gesamte Dokument, einschließlich Anlagen und Metadaten. *Metadata* sind Informationen zum Dokument und seinem Inhalt, die Sie im Dialogfeld „Eigenschaften“ oder im Acrobat-Menü „Erweitert“ anzeigen können. In Acrobat können Sie Dateien verschiedener Typen an PDF-Dokumente anhängen, z. B. Text-, Audio- und Videodateien.
 * Das Dokument und seine Anlagen ohne Metadaten.
@@ -343,7 +343,7 @@ Administratoren können nach freigegebenen Richtlinien und nach persönlichen Ri
 
 1. Wählen Sie in der Liste „Suchen“ eine dieser Optionen aus:
 
-   **Richtlinien-ID:** Die Identifikationsnummer der Richtlinie, die beim Erstellen der Richtlinie durch den Benutzer generiert wird. Sie müssen die genaue Richtlinien-ID eingeben.
+   **Richtlinien-ID** Die Richtlinienidentifikationsnummer, die generiert wird, wenn ein Benutzer eine Richtlinie erstellt. Sie müssen die genaue Richtlinien-ID eingeben.
 
    **Richtlinienname:** Der Name der Richtlinie. Sie können nach dem vollständigen Namen oder einem Teil des Richtliniennamens suchen.
 

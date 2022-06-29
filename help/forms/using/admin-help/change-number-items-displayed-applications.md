@@ -1,5 +1,5 @@
 ---
-title: Die Anzahl der Elemente, die auf den Seiten „Anwendungen“ und „Dienste“ angezeigt werden, ändern
+title: Ändern der Anzahl von Elementen, die auf den Seiten „Anwendungen“ und „Dienste“ angezeigt werden
 seo-title: Change the number of items displayed on the Applications and Services pages
 description: Erfahren Sie, wie Sie die Anzahl der Elemente, die auf den Seiten „Anwendungen“ und „Dienste“ angezeigt werden, ändern.
 seo-description: Learn how to change the number of items displayed on the Applications and Services pages.
@@ -13,13 +13,13 @@ exl-id: b0a7ab02-04ea-4b5d-8ad4-0c451d47b39e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
-# Die Anzahl der Elemente, die auf den Seiten „Anwendungen“ und „Dienste“ angezeigt werden, ändern {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
+# Ändern der Anzahl von Elementen, die auf den Seiten „Anwendungen“ und „Dienste“ angezeigt werden {#change-the-number-of-items-displayed-on-the-applications-and-services-pages}
 
 Auf der Seite „Voreinstellungen“ können Sie die Anzahl der Dienste, Endpunkte, Kategorien und Archive steuern, die pro Webseite von Anwendungen und Dienste angezeigt werden.
 
-1. In Administration Console **[!UICONTROL Klicken Sie auf Dienste > Anwendungen und Dienste > Voreinstellungen .]**.
-1. Geben Sie auf der Seite &quot;Voreinstellungen&quot;die Anzahl der Dienste, Endpunkte, Kategorien und Archive ein, die auf jeder Seite angezeigt werden können, und klicken Sie dann auf **[!UICONTROL Speichern]**.
+1. **[!UICONTROL Klicken Sie in Administration Console auf „Services“ > „Programme und Services“ > „Voreinstellungen“]**.
+1. Geben Sie auf der Seite „Voreinstellungen“ die Anzahl der Services, Endpunkte, Kategorien und Archive ein, die pro Seite angezeigt werden können sollen, und klicken Sie auf **[!UICONTROL Speichern]**.

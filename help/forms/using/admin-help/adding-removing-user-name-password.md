@@ -13,7 +13,7 @@ exl-id: 67537323-e9c8-4eec-bcec-dc5bac4b623c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '150'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ Auf der Seite „Trust Store-Verwaltung“ können Sie Benutzer- und Kennwortber
 
 ## Benutzernamen- und Kennwortberechtigung hinzufügen {#add-a-user-name-and-password-credential}
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Benutzer- und Kennwortberechtigungen]** und klicken Sie anschließend auf **[!UICONTROL Hinzufügen]**.
-1. Im **[!UICONTROL Profilname]** ein, geben Sie einen Namen für die Berechtigung ein.
-1. Im **[!UICONTROL Benutzername]** ein, geben Sie einen eindeutigen Benutzernamen ein.
-1. Im **[!UICONTROL Passwort]** Geben Sie ein Kennwort für den Benutzer ein und klicken Sie auf **[!UICONTROL OK]**.
+1. Klicken Sie in Administration-Console auf **[!UICONTROL „Einstellungen“> „Trust Store-Verwaltung“ > „Benutzer- und Kennwortberechtigungen“]** und anschließend auf **[!UICONTROL „Hinzufügen“]**.
+1. Geben Sie in das Feld **[!UICONTROL „Profilname“]** einen Namen für die Berechtigung ein.
+1. Geben Sie in das Feld **[!UICONTROL „Benutzername“]** einen eindeutigen Benutzernamen ein.
+1. Geben Sie in das Feld **[!UICONTROL „Kennwort“]** ein Kennwort für den Benutzer ein und klicken Sie dann auf **[!UICONTROL „OK“]**.
 
 ## Benutzernamen- und Kennwortberechtigung löschen {#delete-a-user-name-and-password-credential}
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Einstellungen > Trust Store-Verwaltung > Benutzer- und Kennwortberechtigungen]**.
-1. Aktivieren Sie die Kontrollkästchen der Berechtigungen, die Sie löschen möchten, und klicken Sie auf **[!UICONTROL Löschen]** und klicken Sie anschließend auf **[!UICONTROL OK]**.
+1. Klicken Sie in der Administration-Console auf **[!UICONTROL „Einstellungen“> „Trust Store-Verwaltung“> „Benutzer- und Kennwortberechtigungen“]**.
+1. Aktivieren Sie die Kontrollkästchen der zu löschenden Berechtigungen und klicken Sie erst auf **[!UICONTROL „Löschen“]** und anschließend auf **[!UICONTROL „OK“]**.

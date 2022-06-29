@@ -12,7 +12,7 @@ exl-id: f63478c5-1798-428e-a662-f3db692b27fc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2056'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -112,7 +112,7 @@ Alle Fragmente, die Sie in adaptive Formulare einfügen, werden als Platzhalterb
 Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen anzuzeigen:
 
 1. Wechseln Sie zur Seite zur Konfiguration der AEM-Web-Konsole unter https://[*Host*]:[*Port*]/system/console/configMgr.
-1. Suchen und Klicken **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]** , um sie im Bearbeitungsmodus zu öffnen.
+1. Suchen und klicken Sie auf **[!UICONTROL Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation]**, um sie im Bearbeitungsmodus zu öffnen.
 1. Deaktivieren Sie das Kontrollkästchen **[!UICONTROL Platzhalter anstelle von Fragment aktivieren]**, um das vollständige Fragment anstelle des Platzhalterbildes anzuzeigen.
 
 ### Einfügen eines Formularfragments in ein adaptives Formular {#insert-a-fragment-in-an-adaptive-form}
@@ -192,15 +192,15 @@ Sie können mehrere Vorgänge auf adaptive Formularfragmente mithilfe von AEM Fo
   </tr> 
   <tr> 
    <td><p>Vorschau</p> </td> 
-   <td><p>Enthält Optionen zum Anzeigen einer HTML- oder benutzerdefinierten Vorschau des Fragments durch Zusammenführen von Daten aus einer XML-Datei und dem Fragment. Weitere Informationen finden Sie unter <a href="/help/forms/using/previewing-forms.md" target="_blank">Erstellen einer Vorschau für ein Formular</a>.<br /><br /> </p> </td> 
+   <td><p>Enthält Optionen zum Anzeigen einer HTML- oder benutzerdefinierten Vorschau des Fragments durch Zusammenführen von Daten aus einer XML-Datei und dem Fragment. Weitere Informationen finden Sie unter <a href="/help/forms/using/previewing-forms.md" target="_blank">Erstellen einer Vorschau für ein Formular</a>. <br /><br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Review starten/verwalten</p> </td> 
-   <td><p>Initiieren und Verwalten einer Review des ausgewählten Fragments. Weitere Informationen finden Sie unter <a href="/help/forms/using/create-reviews-forms.md" target="_blank">Erstellen und Verwalten von Reviews</a>.<br /><br /> </p> </td> 
+   <td><p>Initiieren und Verwalten einer Review des ausgewählten Fragments. Weitere Informationen finden Sie unter <a href="/help/forms/using/create-reviews-forms.md" target="_blank">Erstellen und Verwalten von Reviews</a>. <br /><br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Wörterbuch erstellen</p> </td> 
-   <td><p>Erstellt ein Wörterbuch zum Lokalisieren des ausgewählten Fragments. Weitere Informationen finden Sie unter <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Lokalisieren adaptiver Formulare</a>.<br /><br /> </p> </td> 
+   <td><p>Erstellt ein Wörterbuch zum Lokalisieren des ausgewählten Fragments. Weitere Informationen finden Sie unter <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">Lokalisieren adaptiver Formulare</a>. <br /><br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Veröffentlichen/Veröffentlichung rückgängig machen</p> </td> 

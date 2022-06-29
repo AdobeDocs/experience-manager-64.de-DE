@@ -13,7 +13,7 @@ exl-id: 1ca492e9-9832-4e5d-8020-2690ac4f5505
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '655'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Im Folgenden finden Sie Details zu asynchronen Übermittlung in adaptiven Formul
 
 So konfigurieren Sie die asynchrone Übermittlung für eine adaptives Formular:
 
-1. Wählen Sie im Authoring-Modus des adaptiven Formulars das Formularcontainer-Objekt aus und tippen Sie auf ![cmppr1](assets/cmppr1.png) , um seine Eigenschaften zu öffnen.
+1. Wählen Sie im Authoring-Modus des adaptiven Formulars den Formular-Container aus und tippen Sie auf ![cmppr1](assets/cmppr1.png), um dessen Eigenschaften anzuzeigen.
 1. Aktivieren Sie im Eigenschaftenbereich **[!UICONTROL Übermittlung]** die Option **[!UICONTROL Asynchrone Übermittlung verwenden]**.
 1. Wählen Sie im Abschnitt **[!UICONTROL Beim Absenden]** eine der folgenden Optionen aus, die bei der erfolgreichen Übermittlung des Formulars ausgeführt werden soll.
 
@@ -96,7 +96,7 @@ Formularautoren und -entwickler können im Codeeditor formularspezifische Regeln
 
 Führen Sie die folgenden Schritte aus, um im Codeeditor Regeln zu schreiben, um die Erfolgs- und Fehlerereignisse zu verarbeiten.
 
-1. Öffnen Sie das adaptive Formular im Authoring-Modus, wählen Sie ein beliebiges Formularobjekt aus und tippen Sie auf ![edit-rules1](assets/edit-rules1.png) , um den Regeleditor zu öffnen.
+1. Öffnen Sie das adaptive Formular im Authoring-Modus, wählen Sie ein Formularobjekt aus und tippen Sie auf ![edit-rules1](assets/edit-rules1.png), um den Regeleditor zu öffnen.
 1. Wählen Sie **[!UICONTROL Formular]** in der Struktur „Formularobjekte“ und tippen Sie auf **[!UICONTROL Erstellen]**.
 1. Wählen Sie **[!UICONTROL Codeeditor]** aus der Dropdownliste zur Auswahl des Modus.
 1. Tippen Sie im Codeeditor auf **[!UICONTROL Code bearbeiten]**. Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Bearbeiten]**.

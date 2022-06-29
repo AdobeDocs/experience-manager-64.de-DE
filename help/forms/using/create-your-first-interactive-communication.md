@@ -1,5 +1,5 @@
 ---
-title: Tutorial - Erstellen Ihrer ersten interaktiven Kommunikation
+title: 'Tutorial: Erstellen Sie Ihre erste interaktive Kommunikation'
 seo-title: Create your first Interactive Communication
 description: Erfahren Sie, wie Sie Ihre erste interaktive Kommunikation erstellen.
 seo-description: Learn to create your first Interactive Communication.
@@ -13,7 +13,7 @@ exl-id: 4b2754dc-4b41-4d0d-a22c-d45595b36f84
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1043'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Die Reise beginnt mit dem Erlernen des Anwendungsfalls:
 Ein Telekommunikationsbetreiber sendet monatliche Rechnungen über die E-Mail an die Kunden. Die Rechnung ist eine interaktive Kommunikation. Die E-Mail enthält Folgendes:
 
 * Eine kennwortgeschützte PDF-Datei, in diesem Tutorial als Druckkanal bezeichnet. Sie enthält Kundendaten, Rechnungsdetails, eine Zusammenfassung der Gebühren, praktische Zahlungsmodi und Verwendungsdetails.
-* Ein Link zur Webversion der Rechnung, in diesem Tutorial als Webkanal bezeichnet. Die Webversion der Rechnung bietet zusätzlich zu den Details in der PDF-Version eine grafische Darstellung der Nutzungsdetails und personalisierter Angebote auf Basis von Adobe Target. Die Webversion enthält auch ein Online-Zahlungsformular. Online-Zahlungen werden dadurch erleichtert, ohne die IK zu verlassen.
+* Ein Link zur Webversion der Rechnung, in diesem Tutorial als Webkanal bezeichnet. Die Webversion der Rechnung bietet zusätzlich zu den Details in der PDF-Version eine grafische Darstellung der Nutzungsdetails und personalisierter Angebote auf Basis von Adobe Target. Die Web-Version enthält auch ein Online-Zahlungsformular. Online-Zahlungen werden dadurch erleichtert, ohne die IK zu verlassen.
 * Ein Link zu Mehrwert-Services wie Online-Speicher, Musikabonnements und Videoabonnements auf Abruf.
 
 ## Voraussetzungen {#prerequisites}
@@ -52,7 +52,7 @@ Ein Telekommunikationsbetreiber sendet monatliche Rechnungen über die E-Mail an
 * Richten Sie eine AEM-Author-Instanz ein.
 * Installieren Sie das [AEM Forms-Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz
 * Richten Sie die MYSQL-Datenbank ein
-* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf der SQL-Datenbank und verwenden Oracle [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele in diesem Tutorial basieren auf der MySQL-Datenbank und verwenden den [MySQL JDBC-Datenbanktreiber von Oracle](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 ## Schritt 1: Planen Sie die interaktive Kommunikation {#step-plan-the-interactive-communication}
 
@@ -62,7 +62,7 @@ Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin
 
 **Ziele:**
 
-So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgenden Eingabemodi:
+So erstellen Sie eine Anatomie für die interaktive Kommunikation mit den folgenden Arten der Dateneingabe:
 
 * Statischer Text
 * Formulardatenmodell
@@ -138,7 +138,7 @@ Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Sie k
 * Erstellen Sie interaktive Kommunikation für den Druck- und Webkanal mit Druck als Master
 * Erstellen Sie eine dynamische Tabelle in der Webversion der interaktiven Kommunikation
 * Erstellen Sie ein Diagramm in der Webversion der interaktiven Kommunikation
-* Erstellen von Hyperlinks in der Webversion der interaktiven Kommunikation
+* Erstellen von Hyperlinks in der Web-Version von interaktiver Kommunikation
 
 [ ](create-interactive-communication-tutorial.md)
 
@@ -146,7 +146,7 @@ Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Sie k
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
-Nachdem Sie eine interaktive Kommunikation erstellt haben, ist es wichtig, dass Sie jede Änderung testen, die Sie daran vornehmen. Das Testen aller Felder einer interaktiven Kommunikation ist mühsam. AEM Forms bietet ein SDK (Calvin SDK) zum automatischen Testen von adaptiven Formularen.
+Nachdem Sie eine interaktive Kommunikation erstellt haben, ist es wichtig, dass Sie jede Änderung testen, die Sie daran vornehmen. Es ist langwierig, jedes Feld einer interaktiven Kommunikation zu testen. AEM Forms bietet ein SDK (Calvin SDK) zum automatischen Testen von adaptiven Formularen.
 
 **Ziele:**
 

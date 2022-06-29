@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Abwesenheitseinstellungen
 seo-title: Configuring Out of Office Settings
-description: Die Abwesenheitsfunktion ermöglicht es Ihnen, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für Formulare zugewiesene Aufgaben auszuführen.
+description: Die Abwesenheitsfunktion ermöglicht es Ihnen, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für AEM Forms zugewiesene Aufgaben auszuführen.
 seo-description: The Out of Office feature enables you to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms.
 uuid: 0d01df0a-aa6a-40e5-bf24-423ed1c932cc
 contentOwner: admin
@@ -13,13 +13,13 @@ exl-id: 8787ffa9-9ddc-439d-9934-8913d1ed459e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '659'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von Abwesenheitseinstellungen {#configuring-out-of-office-settings}
 
-Die Abwesenheitsfunktion ermöglicht es Benutzern und Administratoren, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für Formulare zugewiesene Aufgaben auszuführen. Während ein Benutzer auf „Abwesenheit“ festgelegt ist, werden dessen Aufgaben einem oder mehreren anderen festgelegten Benutzern zugewiesen. Benutzer können ihre Abwesenheitseinstellungen in Workspace ändern oder Administratoren können die Einstellungen im Namen eines Benutzers im Arbeitsablauf für Formulare ändern.
+Die Abwesenheitsfunktion ermöglicht es Benutzern und Administratoren, Zeiträume anzugeben, in denen ein Benutzer nicht im Hause und deshalb nicht in der Lage ist, vom Arbeitsablauf für AEM Forms zugewiesene Aufgaben auszuführen. Während ein Benutzer auf „Abwesenheit“ festgelegt ist, werden dessen Aufgaben einem oder mehreren anderen festgelegten Benutzern zugewiesen. Benutzer können ihre Abwesenheitseinstellungen in Workspace ändern bzw. Administratoren können die Einstellungen im Auftrag eines Benutzers im Arbeitsablauf für Formulare ändern.
 
 Beim Erstellen eines Prozesses kann der Workbench-Benutzer festlegen, ob eine Aufgabe aufgrund von Abwesenheitseinstellungen weitergeleitet werden darf.
 
@@ -34,7 +34,7 @@ Beim Erstellen eines Prozesses kann der Workbench-Benutzer festlegen, ob eine Au
 
    **Suche nach Datumsbereich**
 
-   Wählen Sie die Option „Suche nach Datumsbereich“. Geben Sie die Daten „Von“ und „Bis“ und die gewünschten Zeitstempel ein, um die Suchergebnisse einzugrenzen. Klicken Sie auf &quot;Suchen &quot;.
+   Wählen Sie die Option „Suche nach Datumsbereich“. Geben Sie die Daten „Von“ und „Bis“ und die gewünschten Zeitstempel ein, um die Suchergebnisse einzugrenzen. Klicken Sie auf „Suchen“.
 
 1. Klicken Sie auf einen Benutzernamen, um die Abwesenheitsinformationen dieses Benutzers unterhalb der Liste der Benutzer anzuzeigen.
 

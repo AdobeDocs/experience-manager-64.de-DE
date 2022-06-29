@@ -14,7 +14,7 @@ exl-id: 2194bbbb-22d9-4422-aefb-9651fd795ca3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3894'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr> 
    <td><code>newtext</code></td> 
    <td>Gibt den Inhalt des Feldes nach einer Änderung aufgrund von Benutzeraktionen an.</td> 
-   <td><p>Die <code>newText</code> -Eigenschaft funktioniert in folgenden Fällen nicht ordnungsgemäß:</p> 
+   <td><p>Die Eigenschaft <code>newText</code> funktioniert in folgenden Fällen nicht ordnungsgemäß:</p> 
     <ul> 
      <li>Beim Markieren und Ersetzen von Texten</li> 
      <li>Beim Löschen, Kopieren und Einfügen von Texten</li> 
@@ -63,7 +63,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr> 
    <td>change</td> 
    <td>Gibt den Wert an, den ein Benutzer unmittelbar nach der Durchführung der Aktion in ein Feld eingibt oder einfügt. </td> 
-   <td><p>Die Eigenschaft "change"funktioniert in folgenden Fällen nicht ordnungsgemäß:</p> 
+   <td><p>Die Eigenschaft „Ändern“ funktioniert in folgenden Fällen nicht ordnungsgemäß:</p> 
     <ul> 
      <li>Beim Markieren und Ersetzen von Texten</li> 
      <li>Beim Löschen, Kopieren und Einfügen von Texten</li> 
@@ -102,7 +102,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   <tr> 
    <td><code>name</code></td> 
    <td>Gibt den Namen der aktuellen Anwendung zurück.</td> 
-   <td>Gibt den Browsernamen und die Version zurück. Im Chrome-Browser lautet der zurückgegebene Wert beispielsweise <code>Chrome &lt;version&gt;.</code></td> 
+   <td>Gibt den Browsernamen und die Version zurück. Beim Browser Chrome wird beispielsweise folgender Wert zurückgegeben: <code>Chrome &lt;version&gt;.</code></td> 
   </tr> 
   <tr> 
    <td><code>numPages</code></td> 
@@ -773,7 +773,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td> 
   </tr> 
   <tr> 
-   <td>Rahmen</td> 
+   <td>border</td> 
    <td>Das border-Objekt beschreibt den Rahmen, der das checkButton-Objekt umgibt. </td> 
    <td>Die Änderungen werden in Model angezeigt und sind zur Skripterstellung verfügbar, werden aber nicht mit HTML-Elementen synchronisiert. Daher werden die Änderungen nicht in der Benutzeroberfläche angezeigt.<br /> </td> 
   </tr> 
@@ -790,7 +790,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td> 
   </tr> 
   <tr> 
-   <td>Rahmen</td> 
+   <td>border</td> 
    <td>Das border-Objekt beschreibt den Rahmen, der das choiceList-Objekt umgibt.</td> 
    <td> </td> 
   </tr> 
@@ -801,7 +801,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| Rahmen | Das border-Objekt beschreibt den Rahmen, der das dateTimeEdit-Objekt umgibt. |  |
+| border | Das border-Objekt beschreibt den Rahmen, der das dateTimeEdit-Objekt umgibt. |  |
 
 ## Bild {#image}
 
@@ -829,13 +829,13 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| Rahmen | Das border-Objekt beschreibt den Rahmen, der das imageEdit-Objekt umgibt. |  |
+| border | Das border-Objekt beschreibt den Rahmen, der das imageEdit-Objekt umgibt. |  |
 
 ## numericEdit {#numericedit}
 
 | **Eigenschaft** | **Beschreibung** | **Ausnahme** |
 |---|---|---|
-| Rahmen | Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt. | keine |
+| border | Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt. | keine |
 
 ## Objekt {#object}
 
@@ -881,7 +881,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td> 
   </tr> 
   <tr> 
-   <td>Rahmen</td> 
+   <td>border</td> 
    <td>Das border-Objekt beschreibt den Rahmen, der ein Objekt umgibt.<br /> </td> 
    <td>Ohne</td> 
   </tr> 
@@ -1158,12 +1158,12 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
   <tr> 
    <td> für </td> 
    <td><br type="_moz" /> </td> 
-   <td>für i = 100 bis 1 <br /> do s = s + i endfor</td> 
+   <td>for i = 100 downto 1 <br /> do s = s + i endfor</td> 
   </tr> 
   <tr> 
    <td>for each</td> 
    <td><br type="_moz" /> </td> 
-   <td>für jede i in (1, 2, 3) <br /> do s = s + i endfor</td> 
+   <td>for each i in (1, 2, 3) <br /> do s = s + i endfor</td> 
   </tr> 
   <tr> 
    <td>Funktionsdeklaration</td> 
@@ -1344,9 +1344,9 @@ Folgende clientseitige XFA-Ereignisse werden unterstützt:
 
 * Initialisieren
 * Validieren
-* Berechnen
+* Calculate
 * Klicken Sie auf
-* Geben Sie  ein
+* Geben Sie ein
 * Beenden
 * Änderung
 * ValidationState

@@ -12,7 +12,7 @@ exl-id: a57bd3c4-2d50-4089-8279-1e403e9469bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -33,8 +33,8 @@ Sie können das Layout eines einzelnen Felds oder aller Felder anpassen, um die 
 
 Führen Sie die folgenden Schritte aus, um ein benutzerdefiniertes Layout auf ein einzelnes Feld anzuwenden:
 
-1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, tippen Sie in der Seitensymbolleiste auf ![Arbeitsfläche-Dropdown](assets/canvas-drop-down.png) > **Stil**.
-1. In der Seitenleiste unter **Formularobjekte**, wählen Sie das Feld aus und tippen Sie auf die Schaltfläche &quot;Bearbeiten&quot; ![edit-button](assets/edit-button.png).
+1. Öffnen Sie das Formular im **Stilmodus**. Um das Formular im Stilmodus zu öffnen, tippen Sie in der Seitensymbolleiste auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Stil**.
+1. Wählen Sie in der Randleiste unter **Formularobjekte** das Feld aus und tippen Sie auf die Bearbeiten-Schaltfläche ![edit-button](assets/edit-button.png).
 1. Wählen Sie den Status des Feldes, das Sie anpassen möchten, und geben Sie den Stil für diesen Status an.
 
    ![Festlegen des Inline-Stils für ein Feld](assets/edit-error-state.png)
@@ -55,7 +55,7 @@ Indem Sie Designs im Design-Editor erstellen, könen Sie das Layout aller Felder
 1. Kopieren Sie ein Feldlayout vom Knoten „/libs/fd/af/layouts/field“ (z. B. defaultFieldLayout) in den Knoten „/apps“ (z. B. „/apps/af-field-layout“).
 1. Benennen Sie den kopierten Knoten und die Datei „defaultFieldLayout.jsp“ um. Beispielsweise in „errorOnRight.jsp“. 
 
-1. Ändern Sie den Wert der Eigenschaften &quot;qtip&quot;und &quot;jcr:description&quot;des kopierten Knotens. Ändern Sie z. B. den Wert der Eigenschaften in „Error On Right“ 
+1. Ändern Sie die Werte der Eigenschaften „qtip“ und „jcr:description“ des kopierten Knotens. Ändern Sie z. B. den Wert der Eigenschaften in „Error On Right“ 
 
 1. Um neue Stile und Verhaltensweisen hinzuzufügen, erstellen Sie eine Clientbibliothek unter dem Knoten „/etc“.
 

@@ -13,7 +13,7 @@ exl-id: 82a843c4-5cb2-4f5e-ad4d-cf2e9ea6cdb8
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '319'
-ht-degree: 61%
+ht-degree: 78%
 
 ---
 
@@ -35,7 +35,7 @@ Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standar
    >
    >In Microsoft Internet Explorer 9 können Benutzer Dateien anfügen, die größer sind, als der angegebene Grenzwert. Hierbei handelt es sich um ein bekanntes Problem.
 
-1. Verwenden Sie die [Metadaten-Editor](/help/forms/using/manage-form-metadata.md) , um das benutzerdefinierte Profil auszuwählen, das Sie oben für HTML 5 Forms erstellt haben.
+1. Verwenden Sie den [Metadaten-Editor](/help/forms/using/manage-form-metadata.md), um das benutzerdefinierte Profil auszuwählen, das Sie oben für HTML-5-Formulare erstellt haben.
 1. Sie können die Formularvorlage mit dem benutzerdefinierten Profil wiedergeben und das Anlagensymbol würde in der Symbolleiste „Formulare“ angezeigt.
 
    >[!NOTE]
@@ -54,10 +54,10 @@ Sie können Anlagen mit HTML5-Formularen hochladen, anzeigen und senden. Standar
 
 ## Format der Anlage bei Einsendung {#attachment-submission-format}
 
-Wenn Anlagen aktiviert sind, sendet das HTML5-Formular mehrteilige Daten. Die mehrteiligen Sendedaten bestehen aus zwei Teilen **dataXml** und **Anlagen**.
+Wenn Anlagen aktiviert sind, sendet das HTML5-Formular mehrteilige Daten. Die mehrteiligen Übermittlungsdaten bestehen aus zwei Teilen **dataXml** und **Anhängen**.
 
 >[!NOTE]
 >
->Für Abwärtskompatibilität, wenn `mfAllowAttachments`deaktiviert ist, sendet das HTML5-Formular die mehrteiligen Daten nicht. Es sendet einfache Daten-XML in **application/xml** Format.
+>Wenn die Option `mfAllowAttachments` deaktiviert ist, senden die HTML5-Formulare aus Gründen der Abwärtskompatibilität keine mehrteiligen Daten. Es sendet einfache Daten-XML im Format **application/xml**.
 
 Wenn das Flag „mfAllowAttachments“ aktiviert ist, werden die mehrteiligen Daten vom [Sendedienst Proxydienst](/help/forms/using/service-proxy.md) mit dataXml und Anlagen gesendet.

@@ -13,7 +13,7 @@ exl-id: a062957d-a526-4c4b-bbc5-0cda8ab007a3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 71%
+ht-degree: 91%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 71%
 
 Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederherstellung der Autorinstanzversion:
 
-1. Navigieren Sie zu *https://:&lt;publishhost>:&lt;publishport>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
+1. Navigieren Sie zu *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
-1. Im **[!UICONTROL Autoren-URL für VersionRestoreManager]** Geben Sie die URL der Autoreninstanz von VersionRestoreManager an.
+1. Geben Sie im Feld **[!UICONTROL VersionRestoreManager Author-URL]** die URL der Autoreninstanz von VersionRestoreManager an.
 
    **URL-Zeichenfolge**:
 
@@ -33,7 +33,7 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
    >[!NOTE]
    >
-   >Wenn mehrere Autoreninstanzen (geclustert) mit einem Frontend für einen Lastenausgleich vorhanden sind, geben Sie die URL für den Lastenausgleich im **[!UICONTROL Autoren-URL für VersionRestoreManager]** -Feld.
+   >Wenn mehrere Instanzen im Autorenmodus (in Cluster) mit einem vorgeschalteten Lastenausgleich vorhanden sind, geben Sie die URL für den Lastenausgleich im Feld **[!UICONTROL Autor-URL von VersionRestoreManager]** an.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -41,9 +41,9 @@ Führen Sie die folgenden Schritte aus, um eine URL der Autorinstanz zur Wiederh
 
 Folgen Sie diesen Schritten, um die „URL-Instanz veröffentlichen“ für den Aktivierungsmanager der Veröffentlichungsinstanz zu definieren:
 
-1. Navigieren Sie zu *https://:&lt;authorhost>:&lt;authorport>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
+1. Navigieren Sie zu *https://:&lt;authorHost>:&lt;authorPort>/lc/system/console/configMgr*. Melden Sie sich mit den Anmeldedaten der OSGi Management Console an. Standardmäßig lauten die Anmeldedaten: admin/admin.
 1. Klicken Sie auf das **[!UICONTROL Bearbeitungs]** symbol neben der Einstellung **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]**.
-1. Geben Sie im Feld für die **[!UICONTROL Veröffentlichungs-URL von ActivationManage]** r die URL für den Zugriff auf die Instanz im Veröffentlichungsmodus in ActivationManager an. Sie können die folgenden URLs angeben.
+1. Geben Sie im Feld für die **[!UICONTROL Veröffentlichungs-URL von ActivationManager]** die URL für den Zugriff auf die Instanz im Veröffentlichungsmodus in ActivationManager an. Sie können die folgenden URLs angeben.
 
    * **Lastenausgleichs-URL (empfohlen)**: Geben Sie die Lastenausgleichs-URL an, wenn Sie einen Webserver haben, der gegenüber der Veröffentlichungsfarm (mehrere nicht geclusterte Instanzen im Veröffentlichungsmodus) als Lastenausgleich fungiert.
    * **URL der Instanz im Veröffentlichungsmodus**: Geben Sie die URL einer beliebigen Instanz im Veröffentlichungsmodus an, wenn Sie nur eine Instanz im Veröffentlichungsmodus haben oder ein Zugriff auf den der Veröffentlichungsfarm vorgeschalteten Webserver von der Autorumgebung aus aufgrund von gegebenen falls vorhandenen Beschränkungen nicht möglich ist. Wenn die angegebene Instanz im Veröffentlichungsmodus nicht bereit ist, gibt es einen Fallback-Mechanismus, damit autorseitig etwas zur Behebung unternommen werden kann.
@@ -53,4 +53,4 @@ Folgen Sie diesen Schritten, um die „URL-Instanz veröffentlichen“ für den 
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-Weitere Informationen zum Konfigurieren von Correspondence Management finden Sie unter [Correspondence Management Configuration-Eigenschaften](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).
+Weitere Informationen zum Konfigurieren von Correspondence Management finden Sie unter [Correspondence Management Configuration-Eigenschaften](https://helpx.adobe.com/de/aem-forms/6-2/aem-forms-architecture-deployment.html).

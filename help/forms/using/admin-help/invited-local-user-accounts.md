@@ -46,7 +46,7 @@ Sie können Document Security ein oder mehrere Konten für eingeladene Benutzer 
 
 ## Informationen zu lokalen Benutzern anzeigen {#view-information-about-a-local-user}
 
-Sie können Informationen zu lokalen Benutzern (Name, E-Mail-Adresse, Firma, Registrierungsstatus und Domäne) anzeigen.
+Sie können Informationen zu lokalen Benutzern (Name, E-Mail-Adresse, Firma, Registrierungsstatus und Domain) anzeigen.
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“ > „Konfiguration“ > „Eingeladene und lokale Benutzer“ und dann auf die Registerkarte „Neuen Benutzer einladen“.
 1. Klicken Sie auf die Registerkarte „Lokale Benutzer“ und auf der Seite „Lokale Benutzer verwalten“ auf die E-Mail-Adresse des Benutzers, den Sie anzeigen möchten.
@@ -111,7 +111,7 @@ Sie können über eine E-Mail-Adresse nach Konten eingeladener Benutzer suchen.
 
 ## Nach einem Konto für lokale Benutzer suchen {#search-for-a-local-user-account}
 
-Sie können über die E-Mail-Adresse, den Namen oder die Domäne eines Benutzers nach lokalen Benutzern suchen.
+Sie können über die E-Mail-Adresse, den Namen oder die Domain eines Benutzers nach lokalen Benutzern suchen.
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Document Security“ > „Eingeladene und lokale Benutzer“ und dann auf die Registerkarte „Lokale Benutzer“.
 1. Geben Sie die Suchkriterien in das Feld „Suchen“ ein, wählen Sie „Name“ oder „E-Mail“ aus und klicken Sie auf „Suchen“.

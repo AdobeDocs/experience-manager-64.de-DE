@@ -13,7 +13,7 @@ exl-id: 74e54d96-e418-40aa-9b93-561fbdd6312d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 75%
 
 HTML5-Formulare werden mithilfe von HTML5-Funktionen gerendert. Der Stil des gerenderten Formulars wird mit CSS festgelegt. Das Standarderscheinungsbild von HTML5-Formularen ist der PDF-Darstellung ähnlich. Entwickler können benutzerdefinierte CSS verwenden, um das Standarderscheinungsbild von HTML5-Formularen zu ändern.
 
-Dieser Artikel enthält Schritt-für-Schritt-Informationen zum Ändern des Stils eines HTML5-Formulars und [Einführung in Stile](/help/forms/using/css-styles.md) Der Artikel enthält detaillierte Informationen zu verschiedenen Stilaspekten von HTML5-Formularen. Stellen Sie sicher, dass Sie den Artikel Einführung zu Stilen gelesen haben, bevor Sie die in diesem Artikel erwähnten Schritte ausführen.
+Dieser Artikel enthält Schritt-für-Schritt-Anleitungen, um den Stil eines HTML5-Formulars zu ändern, und der Artikel [Einführung in Stile](/help/forms/using/css-styles.md) enthält detaillierte Informationen zu den verschiedenen Gestaltungsaspekten von HTML5-Formularen. Stellen Sie sicher, dass Sie den Artikel „Einführung in Stile“ gelesen haben, bevor Sie die in diesem Artikel aufgeführten Schritte ausführen.
 
 Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutzerdefiniertem Stil.
 
@@ -31,7 +31,7 @@ Die folgenden beiden Bilder zeigen den Unterschied zwischen Standard- und benutz
 
 1. **Wählen Sie ein Profil, um benutzerdefinierte Stile hinzufügen**
 
-   Greifen Sie auf die CRX DE-Schnittstelle unter der URL zu: **https://&lt;server>:&lt;port>/crx/de** und erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil aus. Informationen zum Erstellen eines Profils finden Sie unter [Erstellen eines neuen Profils](/help/forms/using/custom-profile.md)
+   Rufen Sie die CRX DE-Schnittstelle unter der URL **https://&lt;Server>:&lt;Port>/crx/de** auf und erstellen Sie ein Profil oder wählen Sie ein vorhandenes Profil. Wie Sie ein Profil erstellen, erfahren Sie hier: [Erstellen eines neuen Profils](/help/forms/using/custom-profile.md).
 
 1. **Erstellen Sie ein CSS-Stylesheet zum Gestalten der HTML5-Formulare**
 

@@ -13,7 +13,7 @@ exl-id: 8bb350f2-a160-4943-bd6a-00f87f4e6cbc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1963'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestim
 
 Sie können über das Menü „Werkzeuge“ auf den Vorlagen-Editor zugreifen: Navigieren Sie zu **[!UICONTROL Adobe Experience Manager > Werkzeuge > Vorlagen]**. Hier befinden sich die Vorlagen in Ordnern für bearbeitbare Vorlagen. In AEM steht ein globaler Ordner zum Organisieren von Vorlagen zur Verfügung. Er ist jedoch nicht standardmäßig aktiviert. Sie können Ihren Administrator bitten, den globalen Ordner zu aktivieren oder einen neuen Ordner für Vorlagen zu erstellen. Weitere Informationen zum Erstellen von Ordnern finden Sie unter [Vorlagenordner](/help/sites-developing/page-templates-editable.md).
 
-Wenn Sie auf tippen, um einen Ordner zu öffnen, finden Sie die Schaltfläche Erstellen , mit der Sie eine neue Vorlage für adaptive Formulare erstellen können.
+Sobald Sie auf einen Ordner tippen, um ihn zu öffnen, wird eine Schaltfläche „Erstellen“ angezeigt, mit der Sie eine neue Vorlage für adaptive Formulare erstellen können.
 
 ### Erstellen einer Vorlage {#create-template}
 
@@ -54,9 +54,9 @@ Wenn Sie eine Vorlage zum Bearbeiten öffnen, können Sie die folgenden AEM-Edit
    * **Seitliches Bedienfeld ein/aus**: Hier können Sie die Seitenleiste ein- oder ausblenden.
    * **Seiteninformationen**: Ermöglicht Ihnen die Angabe von Informationen wie dem Zeitpunkt der Veröffentlichung oder der Zurücknahme der Veröffentlichung, Miniaturen, Client-seitigen Bibliotheken, einer Seitenrichtlinie und dem Seiten-Design einer Client-seitigen Bibliothek.
    * **Emulator**: Hier können Sie das Erscheinungsbild für verschiedene Geräte simulieren und anpassen.
-   * **Ebenenauswahl:** Hiermit können Sie die Ebene ändern.
+   * **Ebenenselektor**: Hiermit können Sie die Ebene ändern.
 
-      Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. Mit der Strukturebene können Sie Kopf- und Fußzeilen hinzufügen und anpassen. Mit der Ebene &quot;Anfänglicher Inhalt&quot;können Sie den Formularinhalt anpassen.
+      Sie können die Ebene **Struktur** oder die Ebene **Anfänglicher Inhalt** auswählen. In der Ebene „Struktur“ können Sie die Kopf- und Fußzeile hinzufügen und anpassen. In der Ebene „Anfänglicher Inhalt“ können Sie den Formularinhalt anpassen.
 
    * **Vorschau**: Hier können Sie das Aussehen der Vorlage bei Veröffentlichung in einer Vorschau simulieren. Sie können den Ebenenselektor und die Vorschau verwenden, um zwischen Bearbeitungs- und Vorschau-Modus zu wechseln.
 
@@ -178,7 +178,7 @@ Sie können benutzerdefinierte Vorlagen für adaptive Formulare erstellen, um di
 
 Führen Sie die folgenden Schritte aus, um Vorlagen anzuzeigen bzw. auszublenden:
 
-1. Melden Sie sich bei der Autor-Instanz von AEM Forms an und navigieren Sie zu **[!UICONTROL Tools > Vorgänge > Web-Konsole]**.
+1. Melden Sie sich bei der Autor-Instanz von AEM Forms an und navigieren Sie zu **[!UICONTROL Tools >  Vorgänge >  Web-Konsole]**.
 
    >[!NOTE]
    >

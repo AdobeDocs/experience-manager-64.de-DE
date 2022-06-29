@@ -13,7 +13,7 @@ exl-id: f60beaae-4082-4165-8a37-9d9c94e360b2
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '240'
-ht-degree: 68%
+ht-degree: 94%
 
 ---
 
@@ -30,13 +30,13 @@ Dieser Artikel beschreibt, wie Sie den **AEM DS-Einstellungen-Dienst** konfiguri
 
 Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellungen]** zu konfigurieren:
 
-1. Öffnen Sie Configuration Manager mithilfe der URL auf der Veröffentlichungsinstanz:
+1. Öffnen Sie den Konfigurations-Manager unter der Veröffentlichungsinstanz mit der URL:
 
    *http://localhost:port/system/console/configMgr*.
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. Im **[!UICONTROL Konfiguration der Adobe Experience Manager-Web-Konsole]** -Fenster, suchen und klicken Sie auf **[!UICONTROL AEM DS-Einstellungen]** -Option.
+1. Klicken Sie im Fenster **[!UICONTROL Adobe Experience Manager Web-Konsolenkonfiguration]** auf die Option **[!UICONTROL AEM DS-Einstellungen]**.
 
    ![ds_settings](assets/ds_settings.png)
 
@@ -46,9 +46,9 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
 
 1. Fügen Sie die folgenden Informationen in die entsprechenden Felder ein:
 
-   **[!UICONTROL Verarbeitungsserver-URL]**: Der Verarbeitungsserver ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der AEM-Autoreninstanz oder der anderen Server-URL übereinstimmen (d. h. http://localhost:port/).
+   **[!UICONTROL Verarbeitungs-Server-URL]**: Der Verarbeitungs-Server ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der AEM-Autoreninstanz oder der anderen Server-URL übereinstimmen (d. h. http://localhost:port/).
 
-   **[!UICONTROL Verarbeitungsserver-Benutzername]**: Benutzername des Workflow-Benutzers [basierend auf der verwendeten Server-URL]
+   **[!UICONTROL Verarbeitungs-Server-Benutzername]**: Benutzername des Workflow-Benutzers [basiert auf der verwendeten Server-URL]
 
    **[!UICONTROL Verarbeitungs-Serverkennwort]**: Das Kennwort des Workflow-Benutzers
 

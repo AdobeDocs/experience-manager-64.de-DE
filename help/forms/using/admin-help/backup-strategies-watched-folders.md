@@ -12,8 +12,8 @@ discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: ae6b4caa-5bd0-4a09-9ccf-077405ea3868
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 95%
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ In diesem Abschnitt werden überwachte Ordner unter dem Aspekt der Sicherung und
 * Failure
 * Preserve
 
-Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingabeordner ab. Im Rahmen des Dienstvorgangs wird die Datei dann zur Verarbeitung in den Ordner „Stage“ verschoben. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei im Ordner „Output“ gespeichert. Erfolgreich verarbeitete Quelldateien werden in den Ordner „Preserve“, nicht verarbeitete Dateien in den Ordner „Failure“ verschoben. Wenn die `Preserve On Failure` -Attribut für den überwachten Ordner aktiviert ist, werden fehlgeschlagene verarbeitete Quelldateien in den Ordner &quot;Preserve&quot;verschoben. (Siehe [Endpunkte für überwachte Ordner konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
+Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingabeordner ab. Im Rahmen des Dienstvorgangs wird die Datei dann zur Verarbeitung in den Ordner „Stage“ verschoben. Nachdem der Dienst den vorgesehenen Vorgang ausgeführt hat, wird die geänderte Datei im Ordner „Output“ gespeichert. Erfolgreich verarbeitete Quelldateien werden in den Ordner „Preserve“, nicht verarbeitete Dateien in den Ordner „Failure“ verschoben. Wenn das Attribut `Preserve On Failure` für den überwachten Ordner aktiviert ist, werden fehlerhaft verarbeitete Quelldateien in den Aufbewahrungsordner verschoben. (Siehe [Endpunkte für überwachte Ordner konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints).)
 
 Überwachte Ordner können durch Sichern des Dateisystems gesichert werden.
 
@@ -39,7 +39,7 @@ Ein Benutzer oder eine Clientanwendung legt zuerst Dateien oder Ordner im Eingab
 
 ## Funktionsweise überwachter Ordner {#how-watched-folders-work}
 
-In diesem Abschnitt wird der Dateiverarbeitungsprozess für überwachte Ordner beschrieben. Sie müssen mit diesem Prozess vertraut sein, bevor Sie einen Wiederherstellungsplan entwickeln. In diesem Beispiel wird die `Preserve On Failure` -Attribut für den überwachten Ordner aktiviert ist. Die Dateien werden in der Reihenfolge ihres Eingangs verarbeitet.
+In diesem Abschnitt wird der Dateiverarbeitungsprozess für überwachte Ordner beschrieben. Sie müssen mit diesem Prozess vertraut sein, bevor Sie einen Wiederherstellungsplan entwickeln. In diesem Beispiel ist das Attribut `Preserve On Failure` für den überwachten Ordner aktiviert. Die Dateien werden in der Reihenfolge ihres Eingangs verarbeitet.
 
 In der folgenden Tabelle wird die Dateiverarbeitung von fünf Beispieldateien (Datei1, Datei2, Datei3, Datei4, Datei5) im gesamten Prozess beschrieben. In der Tabelle werden auf der X-Achse die Zeit (z. B. Zeit 1 oder Z1) und auf der Y-Achse die Ordner in der Hierarchie öffentlicher Ordner abgebildet, z. B. „Eingabe“.
 
@@ -155,7 +155,7 @@ Wenn eine spätere Sicherung erfolgte, können Sie die Dateien wiederherstellen.
 * Sichern Sie Ein- und Ausgabeordner regelmäßig, z. B. stündlich, um den Verlust von Ergebnis- und Fehlerdateien zu vermeiden.
 * Sichern Sie die Eingabedateien in einem anderen Ordner als dem überwachten Ordner. Dies gewährleistet die Verfügbarkeit der Dateien nach der Wiederherstellung, sollten Sie die Dateien weder im Ordner „Output“ noch im Ordner „Failure“ finden. Vergewissern Sie sich, dass das Dateibenennungsschema einheitlich ist.
 
-   Wenn Sie beispielsweise die Ausgabe mit `%F.`*Erweiterung*, hat die Ausgabedatei denselben Namen wie die Eingabedatei. Auf diese Weise können Sie leichter bestimmen, welche Eingabedateien verarbeitet wurden und welche erneut zur Verarbeitung übergeben werden müssen. Wenn im Ordner „Result“ nur die Datei Datei1_out angezeigt wird, aber weder Datei2_out noch Datei3_out noch Datei4_out, bedeutet dies, dass die Dateien Datei2, Datei3 und Datei4 erneut zur Verarbeitung übergeben werden müssen.
+   Wenn Sie die Ausgabe beispielsweise mit `%F.`*extension* speichern, hat die Ausgabedatei denselben Namen wie die Eingabedatei. Auf diese Weise können Sie leichter bestimmen, welche Eingabedateien verarbeitet wurden und welche erneut zur Verarbeitung übergeben werden müssen. Wenn im Ordner „Result“ nur die Datei Datei1_out angezeigt wird, aber weder Datei2_out noch Datei3_out noch Datei4_out, bedeutet dies, dass die Dateien Datei2, Datei3 und Datei4 erneut zur Verarbeitung übergeben werden müssen.
 
 * Ist die verfügbare Sicherung des überwachten Ordners älter als der Zeitraum, der zur Verarbeitung des Auftrags erforderlich ist, ist es besser, das System automatisch einen neuen überwachten Ordner erstellen zu lassen und dann die Dateien im Ordner „Input“ abzulegen.
 * Wenn die letzte verfügbare Sicherung nicht neu genug ist, die Sicherungsdauer kürzer als die für die Verarbeitung der Dateien benötigte Zeit ist und der überwachte Ordner wiederhergestellt wurde, wurde die Datei in einer folgenden Phasen verarbeitet:

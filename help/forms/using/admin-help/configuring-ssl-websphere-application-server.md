@@ -13,7 +13,7 @@ exl-id: 653daaa4-9e35-40eb-a61e-274109f5f0d2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1227'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -72,7 +72,7 @@ Zum Aktivieren von SSL muss WebSphere in der Benutzerregistrierung des lokalen B
 1. Wählen Sie unter „Administrative security“ **Administrative user roles**.
 1. Klicken Sie auf „Add“ und führen Sie folgende Schritte aus:
 
-   1. Typ **&amp;ast;** in das Suchfeld ein und klicken Sie auf &quot;Suchen&quot;.
+   1. Geben Sie im Suchfeld ***** ein und klicken Sie auf „Suchen“.
    1. Klicken Sie unter „Roles“ auf **Administrator**.
    1. Fügen Sie den neu erstellten Benutzer zu „Mapped to role“ hinzu und ordnen Sie ihn zu „Administrator“ zu.
 
@@ -107,7 +107,7 @@ Truststores und Keystores können mithilfe ides Dienstprogramms „ikeyman“ od
 1. Wenn Sie bereits einen mithilfe von „ikeyman“ erstellten Keystore hinzugefügt haben, wird Ihr Zertifikat angezeigt. Andernfalls müssen Sie ein neues selbst-unterzeichnetes Zertifikat hinzufügen, indem Sie die folgenden Schritte ausführen:
 
    1. Wählen Sie **Create > Self-signed Certificate**.
-   1. Geben Sie entsprechende Werte im Zertifikatsformular an. Behalten Sie den Alias und den allgemeinen Namen als vollständig qualifizierten Domänennamen des Computers bei.
+   1. Geben Sie entsprechende Werte im Zertifikatsformular an. Behalten Sie den Alias und den allgemeinen Namen als vollständig qualifizierten Domain-Namen des Computers bei.
    1. Klicken Sie auf **Übernehmen**.
 
 1. Wiederholen Sie die Schritte 2 bis 10 zum Erstellen eines Truststore.
@@ -158,7 +158,7 @@ Die Konvertierung von HTML in PDF von der Site, deren Zertifikat hinzugefügt wu
 
 ## Konfigurieren von dynamischen Ports {#configuring-dynamic-ports}
 
-IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Sie können über die permanente Einschränkung unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704 nachlesen.
+IBM WebSphere erlaubt nicht mehrere Aufrufe von ORB.init (), wenn die globale Sicherheit aktiviert wurde. Informationen über die dauerhafte Einschränkung finden Sie unter https://www-01.ibm.com/support/docview.wss?uid=swg1PK58704.
 
 Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen und das Problem zu lösen:
 
@@ -175,7 +175,7 @@ Führen Sie die folgenden Schritte aus, um den Port als dynamisch festzulegen un
 ## Konfigurieren der sling.properties-Datei {#configure-the-sling-properties-file}
 
 1. Öffnen [aem-forms_root]\crx-repository\launchpad\sling.properties Datei zur Bearbeitung.
-1. Suchen Sie die `sling.bootdelegation.ibm` Eigenschaft und Hinzufügen `com.ibm.websphere.ssl.*`auf das zugehörige Wertefeld. Das aktualisierte Feld sieht wie folgt aus:
+1. Suchen Sie die Eigenschaft `sling.bootdelegation.ibm` und fügen Sie `com.ibm.websphere.ssl.*` zu ihrem Wertfeld hinzu. Das aktualisierte Feld sieht wie folgt aus:
 
    ```as3
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*

@@ -11,7 +11,7 @@ exl-id: db416cbc-27a7-4a2c-b4b3-43e8963faf22
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 34%
+ht-degree: 92%
 
 ---
 
@@ -23,9 +23,9 @@ Richten Sie die Referenz-Website ein, wie unter [Einrichten und Konfigurieren AE
 
 ## Szenario für We.Finance-Referenz-Site  {#we-finance-reference-site-scenario}
 
-Die Website We.Finance ist eine Website für Finanzdienstleistungen, die Ihnen dabei hilft, die interaktiven Kommunikationsfunktionen von AEM Forms zu erlernen.
+Die Website von We.Finance ist eine Website für Finanzdienstleistungen, mit der Sie interaktive Kommunikationsfunktionen von AEM Forms erlernen können.
 
-Lesen Sie die ausführliche exemplarische Vorgehensweise des We.Finance-Anwendungsbeispiels für Kfz-Versicherungen, in dem erläutert wird, wie AEM Formulare und seine Integration mit Microsoft Dynamics dazu beitragen, das Kundenerlebnis in einem Finanzdienstleistungsunternehmen zu personalisieren. Die interaktive exemplarische Vorgehensweise soll die Implementierung komplexer digitaler Transaktionen und die Kundenkommunikation in einem Finanzunternehmen erleichtern.
+Erfahren Sie mehr über die detaillierte Anleitung des Anwendungsfalls zur Kfz-Versicherung von We.Finance, der zeigt, wie Sie AEM Forms und die Integration in Microsoft Dynamics nutzen können, um die Kundenerfahrung in einem Finanzdienstleistungsunternehmen zu personalisieren. Die interaktive Anleitung hat das Ziel, die Implementierung komplexer digitaler Transaktionen und Kundenkommunikationen in einem Finanzunternehmen zu erleichtern.
 
 **Das Ganze beginnt mit dem Benutzerszenario:** 
 
@@ -33,62 +33,62 @@ Sarah Rose ist bereits We.Finance-Kundin und hat eine Kfz-Versicherungspolice er
 
 ## Anleitung für einen Antrag auf eine Kfz-Versicherung {#auto-insurance-application-walkthrough}
 
-Das Szenario der Anwendung &quot;We.Finance Auto Insurance&quot;ist ein visueller Hinweis für den Benutzer und basiert auf zwei Personen:
+Das Szenario für den Antrag auf Kfz-Versicherung von We.Finance ist eine visuelle Schilderung für den Benutzer und basiert auf zwei Personen:
 
 * Sarah Rose, einen We.Finance-Kunden
 * Gloria Rios, Versicherungsmitarbeiterin, We.Finance
 
 ### Gloria sendet eine Mitteilung zur Erneuerung der Versicherungspolice von We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria meldet sich in AEM Instanz an, klickt auf **Erneuerung der Kfz-Versicherung,** und dann auf **Öffnen Sie die Benutzeroberfläche für Agenten.** Der Klick füllt das Versicherungsdokument mit den Richtliniendetails von Sarah Rose. Gloria-Klicks **Einsenden** und eine Meldung auf dem Bildschirm &quot;Sendung initiiert&quot;und dann in wenigen Sekunden &quot;Gesendet erfolgreich&quot; angezeigt.
+Gloria meldet sich bei der AEM-Instanz an, klickt auf **Erneuerung der Kfz-Versicherung** und dann auf **Agent-Benutzeroberfläche öffnen.** Durch das Klicken wird das Versicherungsdokument mit den Vertragsdetails von Sarah Rose vorausgefüllt. Gloria klickt auf **Senden**, woraufhin auf dem Bildschirm die Meldung „Submission Initiated (Absenden eingeleitet)“ und dann wenige Sekunden danach „Submitted Successfully (Erfolgreich abgesendet)“ erscheint.
 
-Sarah erhält eine E-Mail mit dem Betreff &quot;Erneuerung Ihrer Kfz-Versicherung&quot;.
+Sarah erhält eine E-Mail mit dem Betreff „Die Erneuerung Ihrer Kfz-Versicherung“.
 
 ![agent_ui_email](assets/agent_ui_email.png)
 
 #### Sehen Sie selbst {#see-it-yourself}
 
-Navigieren Sie zu **Adobe Experience Manager** > **Forms** > **Forms und Dokumente** > **We.Finance** > **Kfz-Versicherung**. Wählen Sie die **Erneuerung der Kfz-Versicherung** interaktive Kommunikation und Klicken **Benutzeroberfläche für Agenten öffnen**. Die interaktive Kommunikation wird in der Agent UI geöffnet. Geben Sie eine gültige E-Mail-Adresse ein, an die die E-Mail mit dem angehängten Richtliniendokument gesendet werden soll, und klicken Sie auf &quot;Senden&quot;.
+Wechseln Sie zu **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente** > **We.Finance** > **Kfz-Versicherung**. Wählen Sie die **Erneuerung der Kfz-Versicherung** interaktive Kommunikation und Klicken **Benutzeroberfläche für Agenten öffnen**. Die interaktive Kommunikation wird in der Agent UI geöffnet. Geben Sie eine gültige E-Mail-Adresse ein, um die E-Mail mit dem angehängten Dokument zur Police zu erhalten, und klicken Sie auf „Senden“.
 
-Sie können die interaktive Kommunikation zur Erneuerung der Kfz-Versicherung direkt über `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
+Sie können direkt unter `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.` auf die interaktive Kommunikation zur Erneuerung der Kfz-Versicherung zugreifen und sie dort überprüfen.
 
 ### Sarah erhält von We.Finance eine Mitteilung zur Erneuerung der Kfz-Versicherung und entscheidet sich für eine Erneuerung. {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
-Sarah erhält eine E-Mail mit einer Anlage von We.Finance, die sie daran erinnert, dass ihre Kfz-Versicherungspolice bald abläuft. Der Anhang ist die Druckversion ihres Kfz-Versicherungsbriefs.
+Sarah erhält eine E-Mail mit einem Anhang von We.Finance, die sie daran erinnert, dass ihre Kfz-Versicherungspolice bald abläuft. Der Anhang ist die Druckversion des Schreibens zu ihrer Kfz-Versicherung.
 
-Sarah klickt **Jetzt erneuern** und wird zur Webversion ihres Kfz-Versicherungsbriefs weitergeleitet. Zusätzlich zu diesem Brief findet Sarah noch eine Anzahl von Tagen, bis ihre Richtlinie abläuft. Die Seite bietet Sarah einen grundlegenden Überblick über ihre Details zur Versicherungspolice, wie z. B. die Versicherungsnummer, den fälligen Betrag und andere Informationen wie Rabattangebote und Treuebelohnungen. Sarah klickt erneut **Jetzt erneuern** am Ende der Richtlinie.
+Sarah klickt auf **Jetzt erneuern** und wird zur Web-Version des Schreibens zu ihrer Kfz-Versicherung weitergeleitet. Oben im Schreiben sieht Sarah die Anzahl der Tage bis zum Ablauf ihrer Police. Die Seite bietet Sarah einen grundlegenden Überblick über die Details ihrer Versicherungspolice wie die Nummer der Police, den fälligen Betrag und andere Informationen wie Rabattangebote und Treueprämien. Sarah klickt auf **Jetzt erneuern** am Ende der Police.
 
 ![ref1](assets/ref1.png)
 
 #### Funktionsweise {#how-it-works}
 
-Die Web- und Druckausgabe Ihres Kfz-Versicherungsbriefs wird mithilfe der kanalübergreifenden Funktionen der interaktiven Kommunikation erstellt.
+Die Web- und Druckausgabe Ihres Schreibens zur Kfz-Versicherung wird mithilfe der Mehrkanalfunktionen der interaktiven Kommunikation erstellt.
 
 Die Schaltfläche „Jetzt erneuern“ in der E-Mail ist mit der Anwendung „Kfz-Versicherung erneuern“ verknüpft, die eine interaktive Kommunikation auf einer Veröffentlichungsinstanz ist.
 
 #### Sehen Sie selbst {#see-it-yourself-1}
 
-Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF ist eine Druckversion Ihres Kfz-Versicherungsbriefs. Klicken **Jetzt erneuern** , um zur Webversion der Richtlinie zu gelangen. Überprüfen Sie Ihre personenbezogenen Daten und Richtliniendetails und klicken Sie auf **Jetzt erneuern** , wodurch Sie zu einer anderen interaktiven Kommunikation gelangen.
+Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF-Datei ist eine Druckversion dieses Schreibens zur Kfz-Versicherung. Klicken Sie auf **Jetzt erneuern**, um zur Web-Version der Police zu gelangen. Überprüfen Sie Ihre persönlichen Angaben und Details der Police und klicken Sie auf **Jetzt erneuern**, um zu einer anderen interaktiven Kommunikation zu gelangen.
 
-Die **Jetzt erneuern** -Schaltfläche in der E-Mail leitet Sarah zur Webversion der Richtlinie weiter. Sie können folgende URL aufrufen:
+Die Schaltfläche **Jetzt erneuern** in der E-Mail leitet Sarah zur Web-Version der Police. Sie können folgende URL aufrufen:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 
-Sie können die detaillierte Zusammenfassung Ihrer Kfz-Versicherung überprüfen und auf **Jetzt erneuern** unten auf der Seite.
+Sie können die detaillierte Zusammenfassung der Erneuerung Ihrer Kfz-Versicherung überprüfen und auf **Jetzt erneuern** unten auf der Seite klicken.
 
 ### Sarah wird auf die Zahlungsseite geleitet. {#sarah-reaches-the-payment-page}
 
-We.Finance leitet Sarah zur Zahlungsseite. Sarah überprüft ihre Policennummer und ihr Ablaufdatum mit ihren Datensätzen. Auf der rechten Seite der Seite prüft sie die Zahlungszusammenfassung ihrer Verlängerung mit einem Prämienrabatt von 10 % auf den Gesamtbetrag.
+We.Finance leitet Sarah zur Zahlungsseite. Sarah vergleicht ihre Police-Nummer und das Ablaufdatum mit ihren Unterlagen. Rechts auf der Seite prüft sie die Zahlungszusammenfassung ihrer Erneuerung mit 10 % Prämienrabatt auf den Gesamtbetrag.
 
 #### Funktionsweise {#how-it-works-1}
 
-Über die Schaltfläche Jetzt erneuern gelangt Sarah zur Zahlungsseite. Die Zahlungsseite ist ein adaptives Formular.
+Die Schaltfläche „Jetzt erneuern“ leitet Sarah auf die Zahlungsseite. Die Zahlungsseite ist ein adaptives Formular.
 
 #### Sehen Sie selbst {#see-it-yourself-2}
 
-Klicken Sie auf **Jetzt erneuern**, um zur Zahlungsseite zu gelangen. Geben Sie Ihre Kreditkarteninformationen ein und klicken Sie auf **Zahlung.**
+Klicken Sie auf **Jetzt erneuern**, um zur Zahlungsseite zu gelangen. Geben Sie Ihre Kreditkarteninformationen ein und klicken Sie auf **Zahlung ausführen.**
 
-Sie können die Zahlungsseite in der Authoring-Instanz erreichen unter
+Sie werden zur Zahlungsseite in der Authoring-Instanz geleitet:
 
 `https://[authorServer]:[authorPort]/content/document.html?documentId=/content/forms/af/we-finance/credit-card/ccbillpayment.html&schema=fdm&customerId=1`
 

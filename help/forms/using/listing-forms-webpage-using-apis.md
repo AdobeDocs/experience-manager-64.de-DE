@@ -8,19 +8,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+exl-id: e42b7cdf-9a70-4ff6-8283-7bbc3690ca05
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '693'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
-
 
 # Auflisten von Formularen auf einer Webseite mithilfe von APIs {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms stellt eine REST-basierte Such-API bereit, die Web-Entwickler verwenden können, um Abfragen in Formularsätzen durchzuführen und Formularsätze abzurufen, die die Suchkriterien erfüllen. Sie können APIs zum Durchsuchen von Formularen auf Basis verschiedener Filter verwenden. Das Antwortobjekt enthält Formularattribute, -Eigenschaften und Render-Endpunkte der Formulare.
 
-Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage an den Server unter `https://[server]:[port]/libs/fd/fm/content/manage.json` mit den unten beschriebenen Abfrageparametern.
+Um Formulare mit der REST API zu suchen, senden Sie an den Server unter `https://[server]:[port]/libs/fd/fm/content/manage.json` eine GET-Anfrage mit den unten beschriebenen Abfrageparametern.
 
 ## Abfrageparameter {#query-parameters}
 
@@ -32,20 +32,20 @@ Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage an den
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Gibt die Funktion zum Aufrufen an. Legen Sie zur Suche nach Formularen für den Wert des <code>func </code>-Attributs <code>searchForms</code> fest.</p> <p>Beispiel: <code class="code">
+   <td><p>Gibt die Funktion zum Aufrufen an. Legen Sie zur Suche nach Formularen den Wert des <code>func </code>-Attributs auf <code>searchForms</code> fest.</p> <p>Beispiel: <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>Hinweis:</strong> <em>Dieser Parameter ist obligatorisch.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
-   <td><p>Gibt den Anwendungspfad für die Suche nach Formularen an. Standardmäßig durchsucht das appPath-Attribut alle Anwendungen, die auf der Ebene des Stammknotens verfügbar sind.<br /> </p> <p>Sie können bei einer einzelnen Suchabfrage mehrere Anwendungspfade angeben. Trennen Sie mehrere Pfade mit einem senkrechten Strich (|).  </p> </td>
+   <td><p>Gibt den Anwendungspfad für die Suche nach Formularen an. Standardmäßig durchsucht das appPath-Attribut alle Anwendungen, die auf der Ebene des Stammknotens verfügbar sind.<br /> </p> <p>Sie können bei einer einzelnen Suchabfrage mehrere Anwendungspfade angeben. Trennen Sie mehrere Pfade durch einen senkrechten Strich (|).  </p> </td>
   </tr>
   <tr>
    <td>cutPoints<br /> </td>
    <td><p>Gibt die Eigenschaften an, die mit den Elementen abgerufen werden sollen. Sie können Sternchen (*) verwenden, um alle Eigenschaften gleichzeitig abzurufen. Verwenden Sie den senkrechten Strich (|), um mehrere Eigenschaften anzugeben. </p> <p>Beispiel: <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>Hinweis</strong>: </p>
     <ul>
      <li><em>Eigenschaften wie ID, Pfad und Name werden immer abgerufen. </em></li>
-     <li><em>Jedes Element verfügt über einen anderen Satz an Eigenschaften. Eigenschaften wie formUrl, pdfUrl und guideUrl hängen nicht vom cutpoints-Attribut ab. Diese Eigenschaften hängen vom Asset-Typ ab und werden entsprechend abgerufen. </em></li>
+     <li><em>Jedes Asset verfügt über einen anderen Satz an Eigenschaften. Eigenschaften wie formUrl, pdfUrl und guideUrl hängen nicht vom cutpoints-Attribut ab. Diese Eigenschaften sind vom Asset-Typ abhängig und werden entsprechend abgerufen. </em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -67,7 +67,7 @@ Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage an den
   </tr>
   <tr>
    <td>returnCount</td>
-   <td>Gibt an, ob die Suchergebnisse zurückgegeben werden sollen, die den angegebenen Kriterien entsprechen oder nicht. </td>
+   <td>Gibt an, ob die Suchergebnisse zurückgegeben werden, die den angegebenen Kriterien entsprechen oder nicht. </td>
   </tr>
   <tr>
    <td>statements</td>
@@ -75,13 +75,13 @@ Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage an den
        JSONObject statement=new JSONObject();
        statement.put("name", "title");
        statement.put("value", "SimpleSurveyAF");
-       statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>Im obigen Beispiel </p>
+       statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>Im oben genannten Beispiel gilt Folgendes:  </p>
     <ul>
      <li><strong>name</strong>: gibt den Namen der Eigenschaft an, nach der gesucht werden soll.</li>
      <li><strong>value</strong>: gibt den Wert der Eigenschaft an, nach der gesucht werden soll.</li>
      <li><strong>operator</strong>: gibt den Operator an, der bei der Suche angewendet werden soll. Die folgende Operatoren werden unterstützt:
       <ul>
-       <li>EQ - Gleich </li>
+       <li>EQ (equal to – gleich)  </li>
        <li>NEQ (not equal to – ungleich)</li>
        <li>GT (greater than – größer als)</li>
        <li>LT (less than – kleiner als)</li>
@@ -106,16 +106,16 @@ Um Formulare mithilfe der REST-API zu suchen, senden Sie eine GET-Anfrage an den
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
      <li><strong>name</strong>: Gibt den Namen der Eigenschaft an, die zum Sortieren der Suchergebnisse verwendet werden soll.</li>
-     <li><strong>criteria</strong>: Gibt die Reihenfolge der Ergebnisse an. Das Bestellattribut akzeptiert die folgenden Werte:
+     <li><strong>criteria</strong>: Gibt die Reihenfolge der Ergebnisse an. Das Sortierattribut akzeptiert die folgenden Werte:
       <ul>
-       <li>ASC – verwenden Sie ASC, um die Ergebnisse in aufsteigender Reihenfolge anzuordnen.<br /> </li>
-       <li>DES - Verwenden Sie DES, um die Ergebnisse in absteigender Reihenfolge anzuordnen.</li>
+       <li>ASC: Verwenden Sie ASC, um die Ergebnisse in aufsteigender Reihenfolge anzuordnen.<br /> </li>
+       <li>DES: Verwenden Sie DES, um die Ergebnisse in absteigender Reihenfolge anzuordnen.</li>
       </ul> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Gibt an, ob der binäre Inhalt abgerufen werden soll oder nicht. Die <code>includeXdp</code> -Attribut für Assets des Typs <code>FORM</code>, <code>PDFFORM</code>und <code>PRINTFORM</code>.</td>
+   <td>Gibt an, ob der binäre Inhalt abgerufen werden soll oder nicht. Das Attribut <code>includeXdp</code> gilt für Assets vom Typ <code>FORM</code>, <code>PDFFORM</code> und <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -168,12 +168,12 @@ orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 ]
 ```
 
-## Ähnliche Artikel
+## Verwandte Artikel
 
-* [Aktivieren von Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
-* [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
+* [Aktivieren von Formularportalkomponenten](/help/forms/using/enabling-forms-portal-components.md)
+* [Erstellen einer Formularportalseite](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
-* [Komponente &quot;Drafts and Submissions&quot;verwenden](/help/forms/using/draft-submission-component.md)
+* [Verwenden der Komponente „Entwurf und Übermittlung“](/help/forms/using/draft-submission-component.md)
 * [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
 * [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)

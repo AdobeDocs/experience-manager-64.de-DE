@@ -13,23 +13,23 @@ exl-id: eb7afdd3-0901-4dfb-b23c-88c46b5a4fb5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 # Single Sign-On und Zeitüberschreitungshandler {#single-sign-on-and-timeout-handlers}
 
-AEM Forms Workspace ist SSO-fähig. Wenn sich ein Benutzer bei einer AEM Forms-Anwendung wie Forms Manager oder PDF Generator angemeldet hat und in derselben Browsersitzung auf AEM Forms Workspace zugreift, wird der Benutzer bei AEM Forms Workspace angemeldet und umgekehrt.
+AEM Forms Workspace ist SSO-fähig. Wenn sich ein Benutzer bei einer AEM Forms-Anwendung wie Forms Manager, der PDF Generator-Benutzeroberfläche oder AEM Forms-Arbeitsbereich angemeldet hat und in derselben Browsersitzung auf AEM Forms-Arbeitsbereich zugreift, wird der Benutzer bei AEM Forms-Arbeitsbereich angemeldet und umgekehrt.
 
 ## Das Bearbeiten des Serverzeitlimits in AEM Forms bildet Arbeitsbereich {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 
 Sitzungs-Timeouts für einen Benutzer können in der Administration Console konfiguriert werden.
 
-Um die Zeitüberschreitung festzulegen, melden Sie sich bei an `https://[server]:[port]/adminui`, navigieren Sie zu **Einstellungen > User Management > Konfiguration > Erweiterte Systemattribute konfigurieren** und nehmen Sie die gewünschten Einstellungen vor.
+Um den Timeout festzulegen, melden Sie sich bei `https://[server]:[port]/adminui` an, navigieren zu **Einstellungen > Benutzerverwaltung > Konfiguration > Erweiterte Systemattribute konfigurieren** und nehmen die gewünschten Einstellungen vor.
 
-Die Zeitüberschreitung in AEM Forms Workspace wird wie folgt gehandhabt:
+In AEM Forms wird die Zeitüberschreitung im Arbeitsbereich wie folgt behandelt:
 
-* Sitzungsdauer für einen Benutzer ist als Antwort auf `initialize` -Aufruf, der die Benutzersitzung initialisiert.
+* Die Sitzungsdauer für einen Benutzer ist in der Antwort auf den Aufruf `initialize` verfügbar, der die Benutzersitzung initialisiert.
 * Ein Popup-Fenster informiert den Benutzer 15 Sekunden im Voraus, dass die Sitzung gleich ablaufen wird.
 
 In diesem Popup-Dialog:
@@ -39,4 +39,4 @@ In diesem Popup-Dialog:
 
 >[!NOTE]
 >
->Wenn keine Aktion ausgeführt wird, wird der Benutzer drei Sekunden vor Ablauf der Sitzung automatisch von AEM Forms Workspace abgemeldet.
+>Wird keine Aktion ausgeführt, wird der Benutzer drei Sekunden vor Ablauf der Sitzung automatisch vom AEM Forms-Arbeitsbereich abgemeldet.

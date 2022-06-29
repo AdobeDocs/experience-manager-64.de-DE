@@ -12,7 +12,7 @@ exl-id: 364dd7f3-9009-440e-8aff-28e2dac08fe7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1278'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Um die ROI zu maximieren, müssen Unternehmen überwachen, wie ihre Kunden mit D
 
 ## Die Lösung {#the-solution}
 
-AEM Forms ist mit [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) Lösungen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) und [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - die Ihnen dabei helfen können, die Leistung Ihrer Formulare zu überwachen und zu analysieren und Ihnen das Experimentieren und Identifizieren des Erlebnisses zu ermöglichen, das zu einer besseren Konversionsrate führt.
+AEM Forms ermöglicht die Integration in [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)-Lösungen – [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) und [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) – die Ihnen helfen, die Leistung Ihrer Formulare zu überwachen und zu analysieren und ein Vorgehen zu ermitteln, das zu einer besseren Konversionsrate führt.
 
 ## Der Arbeitsablauf {#the-workflow}
 
@@ -72,7 +72,7 @@ Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analysen und Beric
 
 **Target konfigurieren**
 
-Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und durchzuführen, konfigurieren Sie Target in AEM Forms, wie unter [Target einrichten und in AEM Forms integrieren](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Um A/B-Tests für Ihre adaptiven Formulare zu erstellen und durchzuführen, konfigurieren Sie Target in AEM Forms, wie unter [Einrichten und Integrieren von Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p) beschrieben. 
 
 #### Schritt 2: Anzeigen des Analyseberichts {#step-view-analytics-report-br}
 

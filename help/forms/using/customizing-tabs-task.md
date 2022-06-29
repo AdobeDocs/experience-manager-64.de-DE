@@ -12,20 +12,20 @@ exl-id: 42671435-e0f0-41db-af83-182b01742954
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 # Anpassen von Registerkarten für eine Aufgabe {#customizing-tabs-for-a-task}
 
-Sie können die Registerkartennamen für die `Start Process` -Komponente in `Start Process` Uber-Ansicht und `Task Details` -Komponente in `ToDo` Uber-Ansicht.
+Sie können benutzerdefinierte Registerkartennamen für die `Start Process`-Komponente in der Uber-Ansicht von `Start Process` und für die `Task Details`-Komponente in der Uber-Ansicht von `ToDo` festlegen.
 
 1. Befolgen Sie die [generischen Schritte zur Anpassung von AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Ändern Sie den Wert von `tabname`im `translation.json` -Datei.
+1. Ändern Sie den Wert von `tabname` in der Datei `translation.json`.
 
-   Ändern Sie beispielsweise `/apps/ws/locales/en-US/translation.json` für Englisch an Folgendes.
+   Ändern Sie zum Beispiel für Englisch folgende Änderungen an „`/apps/ws/locales/en-US/translation.json`/“ vor.
 
-   * Für Aufgaben, die im Startprozess initiiert werden, verwenden Sie das folgende Snippet aus dem `"startprocess" : {}` blockieren.
+   * Für Aufgaben, die im Startprozess initiiert werden, verwenden Sie folgenden Code-Ausschnitt aus dem Block `"startprocess" : {}`.
 
    ```
    "tabname" : {
@@ -36,7 +36,7 @@ Sie können die Registerkartennamen für die `Start Process` -Komponente in `Sta
            }
    ```
 
-   * Verwenden Sie für Aufgaben in &quot;Aufgaben&quot;das folgende Snippet aus dem `"todo" : {}` blockieren.
+   * Für Aufgaben in „Aufgaben“ verwenden Sie folgenden Code-Ausschnitt aus dem Block `"todo" : {}`.
 
    ```
    "tabname" : {

@@ -12,7 +12,7 @@ exl-id: 272d3ec1-7f92-4f4a-9e98-954136b20b27
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1170'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Im Folgenden die globalen Optionen. Diese Optionen sind für jedes Feld verfügb
   </tr>
   <tr>
    <td>screenReaderText</td> 
-   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular stellt den Wert bereit und Sie können den Wert überschreiben.<br /> </td> 
+   <td>Bildschirmlesehilfen verwenden diesen Wert, um Informationen über das Feld vorzulesen. Das Formular gibt den Wert an. Sie können diesen Wert überschreiben.<br /> </td> 
   </tr>
   <tr>
    <td>tabIndex</td> 
@@ -129,15 +129,15 @@ Die Erscheinungsbild-Framework ruft einige Funktionen des Widgets auf, die in de
    <th>Beschreibung</th> 
   </tr>
   <tr>
-   <td>focus : function()</td> 
+   <td>focus: function()</td> 
    <td>Fokus wird auf das gelegt.</td> 
   </tr>
   <tr>
-   <td>click : function()</td> 
-   <td>Fokus wird auf das Feld gelegt und XFA_CLICK_EVENT wird aufgerufen.</td> 
+   <td>click: function()</td> 
+   <td>Setzt den Fokus auf das Feld und ruft XFA_CLICK_EVENT auf.</td> 
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: Zeichenfolge </em>den Fehler darstellen<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: string </em>steht für den Fehler<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.</p> </td> 
    <td>Sendet Fehlermeldung und Fehlertyp an das Widget. Das Widget zeigt den Fehler an.</td> 
   </tr>
   <tr>
@@ -188,7 +188,7 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
   </tr>
   <tr>
    <td>items<br /> </td> 
-   <td>Array von Objekten, die als Optionen angezeigt werden sollen. Jedes Objekt enthält zwei Eigenschaften:<br />„save“ (zu speichernder Wert), „display“ (anzuzeigender Wert).<br /> <br />  </td> 
+   <td>Array von Objekten, die als Optionen angezeigt werden sollen. Jedes Objekt enthält zwei Eigenschaften:<br /> „save“ (zu speichernder Wert), „display“ (anzuzeigender Wert).<br /> <br />  </td> 
   </tr>
   <tr>
    <td><p>standardmäßig als bearbeitbar</p> <p><strong>Hinweis</strong>: Gilt nur für HTML5-Formulare.<br /> </p> </td> 
@@ -252,11 +252,11 @@ Alle benutzerdefinierten Widgets sollten mit den oben genannten Spezifikationen 
   </tr>
   <tr>
    <td>states</td> 
-   <td><p>Zahl der zulässigen Zustände. </p> <p>Zwei für adaptive Formulare (Ein, Aus) und drei für HTML5-Formulare (Ein, Aus, Neutral).</p> </td> 
+   <td><p>Zahl der zulässigen Zustände. </p> <p>Zwei für adaptive Formulare (Ein, Aus) und drei für HTML5-Formulare (Ein, Aus, Neutral).</p> </td> 
   </tr>
   <tr>
    <td>state</td> 
-   <td><p>Aktueller Status des Elements.</p> <p>Zwei für adaptive Formulare (Ein, Aus) und drei für HTML5-Formulare (Ein, Aus, Neutral).</p> </td> 
+   <td><p>Aktueller Status des Elements.</p> <p>Zwei für adaptive Formulare (Ein, Aus) und drei für HTML5-Formulare (Ein, Aus, Neutral).</p> </td> 
   </tr>
  </tbody>
 </table>

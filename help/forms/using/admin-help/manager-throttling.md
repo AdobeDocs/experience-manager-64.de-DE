@@ -13,7 +13,7 @@ exl-id: 759cff3e-960a-4c38-a731-9fff21e739cf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1026'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Forms-Administratoren können außerdem Work Manager-Statistiken, z. B. die 
 
 ## Einschränkungsoptionen für Work Manager konfigurieren {#configuring-work-manager-throttling-options}
 
-Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeitselemente nur geplant werden, wenn ausreichend Arbeitsspeicherressourcen vorhanden sind. Sie können Einschränkungen konfigurieren, indem Sie die folgenden JVM-Optionen für Ihren Anwendungsserver festlegen.
+Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeitselemente nur geplant werden, wenn ausreichend Arbeitsspeicherressourcen vorhanden sind. Sie können Einschränkungen konfigurieren, indem Sie die folgenden JVM-Optionen für Ihren Anwendungs-Server festlegen.
 
 <table> 
  <thead> 
@@ -81,18 +81,18 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 **Java-Optionen zu JBoss hinzufügen**
 
 1. JBoss-Anwendungsserver beenden.
-1. Öffnen Sie die *[Anwendungsserver-Stammordner]*/bin/run.bat (Windows) oder run.sh (Linux oder UNIX) in einem Editor verwenden und die Java-Optionen nach Bedarf im Format hinzufügen `-Dproperty=value`.
+1. Öffnen Sie den Ordner „*[Anwendungs-Server-Stammordner]*/bin/run.bat“ (Windows) oder „run.sh“ (Linux oder UNIX) in einem Texteditor und fügen Sie die erforderlichen Java-Optionen im Format `-Dproperty=value` hinzu.
 1. Starten Sie den Server neu.
 
 **Java-Optionen zu WebLogic hinzufügen**
 
 1. Starten Sie WebLogic Administration Console, indem Sie `https://`*[Hostname ]*`:`*[port]* `/console` in einem Webbrowser.
-1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Serverdomäne ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
-1. Klicken Sie unter „Domain Structure“ auf Environment> Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
+1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Server-Domain ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
+1. Klicken Sie unter „Domain Structure“ auf Environment > Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
 1. Fügen Sie im Feld „Arguments“ die erforderlichen Informationen am Ende des aktuellen Inhalts hinzu. Zum Deaktivieren von Health Monitor fügen Sie beispielsweise Folgendes hinzu:
 
-   `-Dadobe.healthmonitor.enabled=false` Deaktiviert Health Monitor.
+   `-Dadobe.healthmonitor.enabled=false` deaktiviert den Health Monitor.
 
 1. Klicken Sie auf Save und dann auf Activate Changes.
 1. Starten Sie WebLogic Managed Server neu.

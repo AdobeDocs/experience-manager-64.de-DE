@@ -12,7 +12,7 @@ exl-id: 43149456-8ff8-4ce1-9c51-1d950f60ff5d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 79%
+ht-degree: 85%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 79%
 
 **- Voraussetzungen**
 
-**Vorausgesetztes Wissen**
-Bevor Sie AEM Forms Workspace zum SharePoint-Server hinzufügen können, müssen Sie Zugriff auf SharePoint Server mit den entsprechenden Berechtigungen haben und über die URL für den Zugriff auf Workspace verfügen. In den folgenden Schritten wird davon ausgegangen, dass Sie mit SharePoint Server vertraut sind. Weitere Informationen zu Webparts in SharePoint Server Webparte finden Sie unter „Webparts in Windows SharePoint-Diensten“.
+**Vorausgesetztes Wissen** 
+Bevor Sie AEM Forms Workspace zu SharePoint Server hinzufügen können, benötigen Sie Zugriff auf SharePoint Server mit den entsprechenden Berechtigungen. Außerdem müssen Sie die URL für den Zugriff auf Workspace kennen. In den folgenden Schritten wird davon ausgegangen, dass Sie mit SharePoint Server vertraut sind. Weitere Informationen zu Webparts in SharePoint Server Webparte finden Sie unter „Webparts in Windows SharePoint-Diensten“.
 
 **Benutzerebene** Erste Schritte
 
-Sie können AEM Forms Workspace als Webpart in Microsoft Office SharePoint Server (z. B. Microsoft Office SharePoint Server 2007) verwenden. Benutzer können auf AEM-Formular Workspace zugreifen, indem sie mithilfe eines Webbrowsers eine Verbindung zu Ihrem SharePoint Server herstellen und so eine einheitliche Plattform erhalten. In diesem Artikel lernen Sie die grundlegenden Schritte, um AEM Forms Workspace als Webpart in Microsoft Office SharePoint Server anzuzeigen. Sie können die Schritte ausführen, die in diesem Artikel beschrieben werden, um eine einheitliche Plattform zu bieten, damit Benutzer, die eine Verbindung mit dem SharePoint Server herstellen, auf AEM Forms Workspace vom gleichen Port aus zugreifen können.
+Sie können AEM Forms Workspace als Webpart in Microsoft Office SharePoint Server (z. B. Microsoft Office SharePoint Server 2007) verwenden. Benutzer können auf AEM Forms Workspace zugreifen, indem sie mithilfe eines Webbrowsers eine Verbindung zu Ihrem SharePoint Server herstellen und so eine einheitliche Plattform erhalten. In diesem Artikel lernen Sie die grundlegenden Schritte, um AEM Forms Workspace als Webpart in Microsoft Office SharePoint Server anzuzeigen. Sie können die Schritte ausführen, die in diesem Artikel beschrieben werden, um eine einheitliche Plattform zu bieten, damit Benutzer, die eine Verbindung mit dem SharePoint Server herstellen, auf AEM Forms Workspace vom gleichen Port aus zugreifen können.
 
 >[!NOTE]
 >

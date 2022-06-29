@@ -83,7 +83,7 @@ Interaktive Kommunikation unterstützt Diagramme in Web- und Druckkanälen für 
 
 ![chart-2](assets/chart-2.png) ![Diagramm](assets/chart.png)
 
-Weitere Informationen finden Sie unter [Verwenden von Diagrammen in interaktiver Kommunikation](/help/forms/using/chart-component-interactive-communications.md).
+Weitere Informationen finden Sie unter [Verwenden von Diagrammen mit interaktiver Kommunikation](/help/forms/using/chart-component-interactive-communications.md).
 
 ### Vorkonfigurierte Datenkonnektoren zum Vorbefüllen von Dokumenten {#out-of-the-box-data-connectors-to-prefill-documents}
 
@@ -199,7 +199,7 @@ Mithilfe von Document Security können Sie Informationen sicher verteilen, die S
 
 ## Unterstützte Plattformen {#supported-platforms}
 
-AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssystemen, Anwendungsservern, Datenbanken, Datenbanktreibern, JDK-, LDAP-Servern und E-Mail-Servern eingerichtet werden. Im Folgenden sind die wichtigsten Änderungen auf den unterstützten Plattformen aufgeführt:
+AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssystemen, Anwendungsservern, Datenbanken, Datenbanktreibern, JDK-, LDAP-Servern und E-Mail-Servern eingerichtet werden. Im Folgenden sind die wichtigsten Änderungen bei den unterstützten Plattformen aufgeführt:
 
 <table> 
  <tbody> 

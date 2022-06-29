@@ -13,7 +13,7 @@ exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ ht-degree: 73%
 
 Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein aktuelles Formular beibehalten, welches Sie zu einem späteren Zeitpunkt auf einem anderen Gerät abschließen und senden können.
 
-Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars verknüpft sind, im `/content/forms/fp` -Knoten in der Veröffentlichungsinstanz. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
+Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars verknüpft sind, im `/content/forms/fp`-Knoten in der Publish-Instanz. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
 
 ## Voraussetzungen  {#prerequisites}
 
-* Aktivieren [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
-* Erstellen Sie eine [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
-* Aktivieren [Adaptive Formulare für Forms Portal](/help/forms/using/draft-submission-component.md)
-* Lernen [Implementierungsdetails für benutzerdefinierten Speicher](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Aktivieren von [Formularportalkomponenten](/help/forms/using/enabling-forms-portal-components.md)
+* Erstellen einer [Formularportalseite](/help/forms/using/creating-form-portal-page.md)
+* Aktivieren von [adaptiven Formularen für das Formularportal](/help/forms/using/draft-submission-component.md)
+* Erfahren Sie mehr über [Implementierungsdetails für benutzerdefiniertes Speichern](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
@@ -184,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal verwendet das Konzept eines UUID (Universally Unique Identifier), um eine eindeutige ID für die einzelnen Entwürfe und übermittelten Formulare zu generieren. Sie können auch selbst eine eindeutige ID generieren. Sie können die Schnittstelle FPKeyGeneratorService implementieren, deren Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes gesendete Formular zu generieren. Legen Sie außerdem den Dienstrang der benutzerdefinierten ID-Generierungsimplementierung auf einen Wert über 0. Dies stellt sicher, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
+Forms Portal verwendet das Konzept eines UUID (Universally Unique Identifier), um eine eindeutige ID für die einzelnen Entwürfe und übermittelten Formulare zu generieren. Sie können auch selbst eine eindeutige ID generieren. Sie können die FPKeyGeneratorService-Schnittstelle implementieren, ihre Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes übermittelte Formular zu generieren. Legen Sie außerdem den Dienstrang der benutzerdefinierten ID-Generierungsimplementierung auf einen Wert über 0. Dies stellt sicher, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -203,7 +203,7 @@ Mit der folgenden Anmerkung können Sie die Servicebewertung für die mit dem ob
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Um die obige Anmerkung zu verwenden, importiert Folgendes in Ihr Projekt:
+Um die obige Anmerkung zu verwenden, importieren Sie das Folgende in Ihr Projekt: 
 
 ```
 import org.apache.felix.scr.annotations.Properties;
