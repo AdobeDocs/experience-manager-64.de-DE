@@ -7,7 +7,7 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: 0da4d864af8982b7faced50035f6bed376d8cd01
+source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
 workflow-type: tm+mt
 source-wordcount: '4637'
 ht-degree: 95%
@@ -124,7 +124,7 @@ Der Schritt „Datensatzdokument generieren“ hat folgende Eigenschaften:
 
 **Pfad für Eingabedaten:** Pfad der Eingabedaten für das adaptive Formular. Sie können die Daten relativ zur Payload an einem Speicherort belassen oder einen absoluten Pfad für die Daten angeben. Die Eingabedaten werden mit dem adaptiven Formular zusammengeführt, um ein Datensatzdokument zu erstellen.
 
-**Pfad Eingabeanlage:** Pfad Eingabeanlage: Pfad der Anlagen. Diese Anhänge sind im Datensatzdokument enthalten. Sie können die Anlagen relativ zur Payload an einem Speicherort belassen oder einen absoluten Pfad für die Anlagen angeben.
+**Pfad für Eingabeanlage:** Pfad für Eingabeanlage: Pfad der Anlagen. Diese Anhänge sind im Datensatzdokument enthalten. Sie können die Anlagen relativ zur Payload an einem Speicherort belassen oder einen absoluten Pfad für die Anlagen angeben.
 
 Wenn Sie den Pfad eines Ordners angeben, z. B. Anhänge, werden alle Dateien, die direkt im Ordner verfügbar sind, an das Datensatzdokument angehängt. Wenn Dateien in den Ordnern verfügbar sind, die im angegebenen Pfad für den Anhang direkt verfügbar sind, werden die Dateien im Datensatzdokument als Anhänge aufgenommen. Wenn sich Ordner in direkt verfügbaren Ordnern befinden, werden diese übersprungen.
 
