@@ -7,10 +7,10 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0da4d864af8982b7faced50035f6bed376d8cd01
 workflow-type: tm+mt
-source-wordcount: '4542'
-ht-degree: 96%
+source-wordcount: '4637'
+ht-degree: 95%
 
 ---
 
@@ -221,6 +221,9 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 * **Cloud-Konfiguration für Adobe Sign**: Wählen Sie eine Adobe Sign Cloud-Konfiguration. Wenn Sie Adobe Sign für AEM Forms nicht konfiguriert haben, lesen Sie den Abschnitt [Adobe Sign in AEM Forms integrieren](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Zu signierendes Dokument:** Sie können ein Dokument an einem Speicherort relativ zur Payload auswählen, Nutzdaten als Dokument verwenden oder einen absoluten Pfad für das Dokument angeben.
+* **Pfad für Eingabeanlage:** Wählen Sie eine Anlage aus. Diese Anlagen sind im Signaturdokument enthalten. Sie können die Anlagen relativ zur Payload an einem Speicherort belassen oder einen absoluten Pfad für die Anlagen angeben.
+
+   Wenn Sie den Pfad eines Ordners angeben, z. B. Anhänge, werden alle Dateien, die direkt im Ordner verfügbar sind, an das Datensatzdokument angehängt. Wenn Dateien in den Ordnern verfügbar sind, die direkt im angegebenen Anlagenpfad verfügbar sind, werden die Dateien in &quot;Signing Document&quot;als Anhänge aufgenommen. Wenn sich Ordner in direkt verfügbaren Ordnern befinden, werden diese übersprungen.
 * **Tage bis Abgabetermin:** Ein Dokument wird als „fällig“ (Abgabetermin überschritten) gekennzeichnet, nachdem für die im Feld **Tage bis Abgabetermin** angegebene Anzahl von Tagen keine Aktivität für die Aufgabe ermittelt wurde. Die Anzahl der Tage wird gezählt, nachdem das Dokument einem Benutzer zur Unterzeichnung zugewiesen wurde.
 
 * **Häufigkeit der E-Mail-Erinnerung:** Sie können eine Erinnerungs-E-Mail im täglichen oder wöchentlichen Intervall senden. Die Woche wird ab dem Tag gezählt, an dem das Dokument einem Benutzer zum Signieren zugewiesen wurde.
