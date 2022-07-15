@@ -10,14 +10,14 @@ role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
 
 # AEM 6.4-Verwaltungsanleitung {#managing}
 
-+ [Benutzerhandbuch verwalten](home.md)
++ [Benutzerhandbuch Verwaltung](home.md)
 + Verwalten - Checkliste mit Best Practices {#managing-best-practices-checklist}
    + [Verwalten von Projekten - Checkliste mit Best Practices](best-practices.md)
    + [Die Checkliste](best-practices-checklist.md)

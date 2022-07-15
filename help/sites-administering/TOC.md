@@ -63,7 +63,7 @@ ht-degree: 94%
    + [Verwalten von Workflows](workflows.md)
    + [Konfigurieren von Suchformularen](search-forms.md)
    + [Die Tools-Konsolen ](tools-consoles.md)
-   + [Berichterstellung](reporting.md)
+   + [Reporting](reporting.md)
    + [Verwalten der Workflow-Instanzen](workflows-administering.md)
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
    + [Aktivierung des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
@@ -95,8 +95,8 @@ ht-degree: 94%
    + [Verschlüsselungsunterstützung für Konfigurationseigenschaften](encryption-support-for-configuration-properties.md)
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
-+ Personalisierung {#personalization}
-   + [Personalisierung](personalization.md)
++ Personalisierung  {#personalization}
+   + [Personalisierung ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
