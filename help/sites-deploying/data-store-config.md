@@ -12,16 +12,16 @@ discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: 89b8e8a7-103b-472e-8c29-3b6e5b7273b1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 28bfeff17c8f753f4f0d3f23a0e3843f159060cc
 workflow-type: tm+mt
-source-wordcount: '3414'
+source-wordcount: '3406'
 ht-degree: 72%
 
 ---
 
 # Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 In Adobe Experience Manager (AEM) können Binärdaten unabhängig von den Inhaltsknoten gespeichert werden. Die Binärdaten werden in einem Datenspeicher abgelegt, Inhaltsknoten in einem Knotenspeicher.
 
@@ -213,7 +213,7 @@ Wenn Sie auf eine neue Version des 1.8.x S3-Connectors aktualisieren müssen (z.
 Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 
 * accessKey: Der AWS-Zugriffsschlüssel.
-* secretKey: Der geheime AWS-Zugriffsschlüssel. **Hinweis:** Alternativ: [IAM-Rollen](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) kann für die Authentifizierung verwendet werden. Wenn Sie IAM-Rollen verwenden, müssen Sie nicht mehr die `accessKey` und `secretKey`.
+* secretKey: Der geheime AWS-Zugriffsschlüssel. **Hinweis:** Wenn die `accessKey` oder `secretKey` nicht angegeben ist, wird die [IAM-Rolle](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) wird für die Authentifizierung verwendet.
 * s3Bucket: Der Eimername.
 * s3Region: Die Eimerregion.
 * path: Der Pfad des Datenspeichers. Der Standardwert ist **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
@@ -413,7 +413,7 @@ Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass das Zeichen &#39;=&#39; wie &#39;\=&#39; mit Escape-Zeichen versehen ist.
 * container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
 * maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert ist 1.
-* maxErrorRetry=&quot;&quot;: Anzahl weiterer Versuche pro Anfrage. Der Standardwert ist 3.
+* maxErrorRetry=&quot;&quot;: Anzahl weiterer Versuche pro Anfrage. Der Standardwert ist 3.
 * socketTimeout=&quot;&quot;: Das Zeitüberschreitungsintervall (in Millisekunden), das für die Anfrage verwendet wird. Der Standardwert ist 5 Minuten.
 
 Neben den oben aufgeführten Einstellungen können auch die folgenden Einstellungen konfiguriert werden:
