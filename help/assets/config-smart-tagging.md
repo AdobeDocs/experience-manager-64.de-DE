@@ -5,16 +5,23 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: bd65633e85226659df99da1d3834fa18a89de11e
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 49%
+source-wordcount: '1304'
+ht-degree: 46%
 
 ---
 
 # Konfigurieren von Asset-Tags mit dem Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
 Sie können [!DNL Adobe Experience Manager] mit dem Smart Content Service mit [!DNL Adobe Developer Console]. Verwenden Sie diese Konfiguration, um von aus auf den Smart Content Service zuzugreifen [!DNL Experience Manager].
+
+>[!NOTE]
+>
+>* Smart Content Services ist nicht mehr für neue [!DNL Experience Manager Assets] On-Premise-Kunden. Vorhandene On-Premise-Kunden, für die diese Funktion bereits aktiviert ist, können weiterhin Smart Content Services verwenden.
+>* Smart Content Services ist für bestehende verfügbar [!DNL Experience Manager Assets] Managed Services-Kunden, für die diese Funktion bereits aktiviert ist.
+>* Neu [!DNL Experience Manager Assets] Managed Services-Kunden können die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services befolgen.
+
 
 Der Artikel beschreibt die folgenden Hauptaufgaben, die zum Konfigurieren des Smart Content Service erforderlich sind. Am Backend wird die [!DNL Experience Manager] -Server authentifiziert Ihre Dienstanmeldeinformationen mit dem [!DNL Adobe Developer Console] Gateway vor der Weiterleitung Ihrer Anforderung an den Smart Content Service.
 
@@ -36,7 +43,7 @@ Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher, um 
 
 * Der Smart Content ist für Ihre Organisation aktiviert.
 
-Um optimierte Smart-Tags zu aktivieren, installieren Sie zusätzlich zu den oben genannten auch die neuesten [Experience Manager Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
+Um optimierte Smart-Tags zu aktivieren, installieren Sie zusätzlich zu den oben genannten auch die neuesten [Experience Manager Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html).
 
 ## Erstellen der Konfiguration des Smart Content Service zum Abrufen eines öffentlichen Zertifikats {#obtain-public-certificate}
 
@@ -50,7 +57,14 @@ Mit einem öffentlichen Zertifikat können Sie Ihr Profil bei [!DNL Adobe Develo
 
 1. Verwenden Sie im Dialogfeld **[!UICONTROL AEM Smart Content Service]** die folgenden Werte:
 
-   **[!UICONTROL Service-URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
+   **[!UICONTROL Service-URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+
+   Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea`oder `apac` als die Regionen, in denen Ihre Experience Manager-Autoreninstanz gehostet wird.
+
+   >[!NOTE]
+   >
+   >Wenn der Experience Manager Managed Service vor dem 1. September 2022 bereitgestellt wurde, verwenden Sie die folgende Dienst-URL:
+   >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Autorisierungsserver]**: `https://ims-na1.adobelogin.com`
 
@@ -94,7 +108,7 @@ Nachdem ein Zertifikat abgelaufen ist, wird es nicht mehr als vertrauenswürdig 
 
 ## Integration der Adobe Developer Console erstellen {#create-adobe-i-o-integration}
 
-Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um [!UICONTROL API-Schlüssel] (generiert in [!UICONTROL CLIENT-ID] Adobe Developer Console-Integration), [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL ORGANISATIONS-ID]und [!UICONTROL CLIENT SECRET] für [!UICONTROL Einstellungen für den Smart-Tagging-Dienst für Assets] der Cloud-Konfiguration in [!DNL Experience Manager].
+Um Smart Content Service-APIs zu verwenden, erstellen Sie eine Integration in der Adobe Developer Console, um [!UICONTROL API-Schlüssel] (generiert in [!UICONTROL CLIENT-ID] -Feld für die Adobe Developer Console-Integration), [!UICONTROL TECHNISCHE KONTO-ID], [!UICONTROL ORGANISATIONS-ID]und [!UICONTROL CLIENT SECRET] für [!UICONTROL Einstellungen für den Smart-Tagging-Dienst für Assets] der Cloud-Konfiguration in [!DNL Experience Manager].
 
 1. Rufen Sie [https://console.adobe.io](https://console.adobe.io/) in einem Browser auf. Wählen Sie das entsprechende Konto aus und vergewissern Sie sich, dass die zugehörige Organisationsrolle „Systemadministrator“ ist.
 
