@@ -8,10 +8,10 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
+source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
 workflow-type: tm+mt
-source-wordcount: '5589'
-ht-degree: 57%
+source-wordcount: '5614'
+ht-degree: 56%
 
 ---
 
@@ -23,9 +23,9 @@ Wenn Sie Adobe Experience Manager für verschiedene Umgebungen (wie Entwicklung,
 
 Die folgende Architekturgrafik beschreibt die Funktionsweise von Dynamic Media – Scene7-Modus.
 
-Mit der neuen Architektur ist Experience Manager für Übergeordnete Assets und Synchronisierungen mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets verantwortlich:
+Mit der neuen Architektur ist Experience Manager für primäre Assets und Synchronisierungen mit Dynamic Media für die Verarbeitung und Veröffentlichung von Assets verantwortlich:
 
-1. Wenn das Übergeordnete Asset in Experience Manager hochgeladen wird, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und die Erstellung von Ausgabedarstellungen, z. B. Videokodierung und dynamische Varianten eines Bilds.
+1. Wenn das primäre Asset in Experience Manager hochgeladen wird, wird es in Dynamic Media repliziert. Ab diesem Punkt übernimmt Dynamic Media die gesamte Asset-Verarbeitung und die Erstellung von Ausgabedarstellungen, z. B. Videokodierung und dynamische Varianten eines Bilds.
 1. Nachdem die Ausgabedarstellungen generiert wurden, kann der Experience Manager sicher auf die Dynamic Media-Remote-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
 1. Nachdem der Inhalt bereit zur Genehmigung und Veröffentlichung ist, wird der Dynamic Media-Service ausgelöst und pusht Inhalt an Bereitstellungs-Server und Cache-Inhalt in das CDN.
 
@@ -33,13 +33,13 @@ Mit der neuen Architektur ist Experience Manager für Übergeordnete Assets und 
 
 ## Aktivieren von Dynamic Media im Scene7-Modus {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media ist standardmäßig deaktiviert. ](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie sie aktivieren.
+[Dynamic Media ist standardmäßig deaktiviert. ](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html) Um die Funktionen von Dynamic Media nutzen zu können, müssen Sie sie aktivieren.
 
 >[!WARNING]
 >
 >Der Modus Dynamic Media - Scene7 ist für die *Nur Experience Manager-Autoreninstanz*. Konfigurieren Sie daher `runmode=dynamicmedia_scene7`in der Experience Manager-Autoreninstanz, *not* die Experience Manager-Veröffentlichungsinstanz.
 
-Um Dynamic Media zu aktivieren, müssen Sie den Experience Manager mit dem `dynamicmedia_scene7` Führen Sie den Ausführungsmodus über die Befehlszeile aus, indem Sie Folgendes in ein Terminal-Fenster eingeben (als Beispielanschluss wird 4502 verwendet):
+Um Dynamic Media zu aktivieren, müssen Sie Experience Manager mit dem `dynamicmedia_scene7` Führen Sie den Ausführungsmodus über die Befehlszeile aus, indem Sie Folgendes in ein Terminal-Fenster eingeben (als Beispielanschluss wird 4502 verwendet):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -89,7 +89,11 @@ Siehe [Installieren von Feature Pack 18912 für die Massenmigration von Assets](
 
 1. Wenn die Verbindung hergestellt wurde, können Sie auch folgende Einstellungen festlegen:
 
-   * **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos. Es ist möglich, mehrere Dynamic Media-Konten für verschiedene Untermarken, Abteilungen oder verschiedene Staging-/Produktionsumgebungen zu verwenden.
+   * **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos.
+
+      >[!IMPORTANT]
+      >
+      >In einer Instanz von Experience Manager wird nur eine Dynamic Media-Konfiguration in Cloud Services unterstützt. nicht mehr als eine Konfiguration hinzufügen. Mehrere Dynamic Media-Konfigurationen auf einer Experience Manager-Instanz sind _not_ unterstützt oder von Adobe empfohlen wird.<!-- CQDOC-19579 and CQDOC-19612 -->
    * **[!UICONTROL Firmen-Root-Ordnerpfad]**
    * **[!UICONTROL Veröffentlichung von Assets]** – Die Option **[!UICONTROL Sofort]** bedeutet, dass das System hochgeladene Assets aufnimmt und umgehend die URL/den Link zur Einbettung bereitstellt. Zum Veröffentlichen von Assets ist kein Benutzereingriff erforderlich. Die Option **[!UICONTROL Bei Aktivierung]** bedeutet, dass Sie das Asset zuerst explizit veröffentlichen müssen, bevor eine URL/ein Link zur Einbettung bereitgestellt wird.
    * **[!UICONTROL Sicherer Vorschau-Server]** – bietet Ihnen die Möglichkeit, den URL-Pfad zu Ihrem Vorschau-Server für sichere Ausgaben anzugeben. Das heißt, dass Experience Manager nach der Generierung von Ausgabedarstellungen sicher auf die Dynamic Media-Remote-Ausgabedarstellungen zugreifen und eine Vorschau davon anzeigen können (es werden keine Binärdateien an die Experience Manager-Instanz zurückgesendet).
@@ -233,7 +237,7 @@ Informationen hierzu finden Sie unter [Hochladen von Assets](managing-assets-tou
 1. Im rechten unteren Bereich der Seite „CRXDE Lite“:
 
    * Doppelklicken Sie auf das Feld **[!UICONTROL Aktiviert]**. Standardmäßig sind alle Asset-MIME-Typen aktiviert (auf **[!UICONTROL true]**), was bedeutet, dass die Assets zur Verarbeitung mit Dynamic Media synchronisiert werden. Wenn Sie diesen Asset-MIME-Typ von der Verarbeitung ausschließen möchten, ändern Sie diese Einstellung in **[!UICONTROL false]**.
-   * Doppelklicken Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Unter [Unterstützte MIME-Typen](assets-formats.md#supported-mime-types) finden Sie eine Liste mit zulässigen Werten für Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
+   * Doppelklicken Sie auf **[!UICONTROL jobParam]**, um das zugehörige Textfeld zu öffnen. Siehe [Unterstützte MIME-Typen](assets-formats.md#supported-mime-types) für eine Liste der zulässigen Verarbeitungsparameter, die Sie für einen bestimmten MIME-Typ verwenden können.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -258,7 +262,7 @@ Sie können in Experience Manager Assets benutzerdefinierte MIME-Typen für nich
 
 1. Scrollen Sie auf der Seite nach unten zum Namen **[!UICONTROL Adobe CQ Scene7 Asset MIME type Service]**. Tippen Sie rechts neben dem Namen auf **[!UICONTROL Konfigurationswerte bearbeiten]** (Bleistiftsymbol).
 
-   ![Bearbeiten Sie die Konfigurationswerte](assets/2019-08-02_16-44-56.png)
+   ![Bearbeiten der Konfigurationswerte](assets/2019-08-02_16-44-56.png)
 
 1. Klicken Sie auf der Seite **[!UICONTROL Adobe CQ Scene7 Asset MIME type Service]** auf ein beliebiges Pluszeichen `+`. Die Position in der Tabelle, an der Sie auf das Pluszeichen klicken, um den neuen MIME-Typ hinzuzufügen, ist unerheblich.
 
@@ -327,7 +331,7 @@ Zwei Elemente stehen zur Definition zur Verfügung: **[!UICONTROL Übereinstimmu
 
    >[!NOTE]
    >
-   >Bei deaktivierten Formularfeldern erfolgt keine Überprüfung, ob Ihre regelmäßigen Ausdrücke korrekt sind. Ergebnisse des regelmäßigen Ausdrucks, den Sie für jedes Element erstellen, werden nach der Zeile „Ergebnis“ angezeigt. Der vollständige regelmäßige Ausdruck wird am unteren Seitenrand angezeigt.
+   >Bei deaktivierten Formularfeldern erfolgt keine Überprüfung, ob Ihre regelmäßigen Ausdrücke korrekt sind. Sie sehen die Ergebnisse des regulären Ausdrucks, den Sie für jedes Element nach der Zeile &quot;Ergebnis&quot;erstellen. Der vollständige regelmäßige Ausdruck wird am unteren Seitenrand angezeigt.
 
 1. Erweitern Sie die Elemente bei Bedarf und geben Sie die zu verwendenden Benennungsregeln ein.
 1. Führen Sie ggf. einen der folgenden Schritte aus:
