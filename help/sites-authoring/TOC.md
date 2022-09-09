@@ -8,9 +8,9 @@ breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie mehr über die wichtigsten Konzepte zum Erstellen von Inhalten und Authoring in AEM.
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '285'
 ht-degree: 87%
 
 ---
@@ -78,9 +78,8 @@ ht-degree: 87%
    + [Inhaltseinblick ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
-   + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](search-and-promote.md)
-+ Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
++ Personalisierung    {#personalization}
+   + [Personalisierung   ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)

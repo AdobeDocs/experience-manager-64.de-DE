@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 87%
+source-wordcount: '2912'
+ht-degree: 86%
 
 ---
 
@@ -345,16 +345,16 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 
    Die Produktinformationen werden entsprechend veröffentlicht oder die Veröffentlichung wird rückgängig gemacht.
 
-### Produkt-Feed {#product-feed}
+<!-- Search&Promote was end of life September 1, 2022. ### Product Feed {#product-feed} -->
 
-Die Search&amp;Promote-Integration ermöglicht Ihnen Folgendes:
+<!-- Search&Promote was end of life September 1, 2022. The Search&Promote integration allows you to: -->
 
-* Verwenden der eCommerce-API, unabhängig von der zugrunde liegenden Repository-Struktur und Commerce-Plattform
-* Nutzen der Index-Connector-Funktion von Search&amp;Promote zur Bereitstellung eines Produkt-Feeds im XML-Format
-* Nutzen der Fernsteuerungsfunktion von Search&amp;Promote zur bedarfsabhängigen bzw. planmäßigen Durchführung von Anfragen des Produkt-Feeds
-* Erstellen von Feeds für verschiedene Search&amp;Promote-Konten, konfiguriert als Cloud Service-Konfigurationen
+<!-- Search&Promote was end of life September 1, 2022. * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
+<!-- Search&Promote was end of life September 1, 2022. * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
+<!-- Search&Promote was end of life September 1, 2022. * leverage the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed -->
+<!-- Search&Promote was end of life September 1, 2022. * feed generation for different Search&Promote accounts, configured as cloud services configurations. -->
 
-Weitere Informationen finden Sie unter [Produkt-Feed](/help/sites-administering/product-feed.md).
+<!-- Search&Promote was end of life September 1, 2022. For more information, read [Product Feed](/help/sites-administering/product-feed.md). -->
 
 ### Ereignis-Handler für Produktaktualisierungen {#event-handler-for-product-updates}
 

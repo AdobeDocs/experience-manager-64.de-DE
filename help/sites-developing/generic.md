@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 exl-id: 3faf9d09-8899-4916-b768-8ff39900b959
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 84%
+source-wordcount: '1862'
+ht-degree: 82%
 
 ---
 
@@ -34,7 +34,7 @@ Für die Verwendung der Integrationsschicht stehen eine Reihe vordefinierter AEM
 * Kasse
 * Suchen
 
-Für die Suche wird ein Integrations-Hook zur Verfügung gestellt, mit dem Sie die AEM-Suche, eine Suche Dritter (wie Search&amp;Promote) oder eine Kombination daraus verwenden können.
+Für die Suche wird ein Integrations-Hook bereitgestellt, mit dem Sie die AEM, eine Drittanbietersuche oder eine Kombination daraus verwenden können.
 
 ## Auswählen der eCommerce-Engine {#ecommerce-engine-selection}
 

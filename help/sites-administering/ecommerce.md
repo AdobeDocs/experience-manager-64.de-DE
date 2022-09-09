@@ -1,7 +1,7 @@
 ---
 title: E-Commerce
 seo-title: eCommerce
-description: 'Mit AEM eCommerce können Marketingexperten personalisierte Marken-Einkaufserlebnisse über Web-, Mobile- und Social-Touchpoints bereitstellen. '
+description: Mit AEM eCommerce können Marketingexperten personalisierte Marken-Einkaufserlebnisse über Web-, Mobile- und Social-Touchpoints bereitstellen.
 seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
 uuid: 14af7a3a-7211-4a56-aeef-1603128d5d8a
 contentOwner: Guillaume Carlino
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
 exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 79%
+source-wordcount: '756'
+ht-degree: 78%
 
 ---
 
@@ -90,7 +90,7 @@ AEM eCommerce bietet Folgendes:
 
    * die AEM-Suche
    * die Suche des eCommerce-Systems
-   * die Suche eines Drittanbieters (z. B. Search&amp;Promote)
+   * Suche von Drittanbietern
    * oder eine Kombination aus diesen Suchmöglichkeiten
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
@@ -133,7 +133,7 @@ Im Abschnitt [Konzepte](/help/sites-administering/concepts.md) finden Sie detail
 * Das Framework ist erweiterbar.
 * Das Framework stellt keine vorkonfigurierte, sofort verwendbare Website bereit. Ein gewisses Maß an Entwicklungsarbeit ist immer erforderlich, um das Framework an Ihre Vorgaben anzupassen.
 
-### Vorteile {#why}
+### Warum? {#why}
 
 * Bereitstellung der grundlegenden Mechanismen, um schnell eine benutzerdefinierte eCommerce-Website zu erstellen
 * Flexibilität, die für die Entwicklung einer echten eCommerce-Website nötig ist

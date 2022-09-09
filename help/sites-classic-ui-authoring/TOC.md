@@ -4,14 +4,14 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Classic UI Authoring-Benutzerhandbuch
-breadcrumb-title: Authoring-Handbuch für die klassische Benutzeroberfläche
+breadcrumb-title: Erstellungsleitfaden für die klassische Benutzeroberfläche
 user-guide-description: In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt.
 feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 80%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,6 @@ ht-degree: 80%
    + [Verwenden von Tags](classic-feature-tags.md)
    + [Strukturvorlage](classic-feature-scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](classic-page-author-design-mode.md)
-   + [Hinzufügen von Search&amp;Promote-Funktionen zu Ihrer Seite](classic-feature-search-promote.md)
    + [Komponenten](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Teilnehmen an Workflows](classic-workflows-participating.md)
@@ -61,7 +60,7 @@ ht-degree: 80%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung {#personalization}
++ Personalisierung    {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnenmanagement](classic-personalization-campaigns.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
@@ -85,5 +84,5 @@ ht-degree: 80%
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
    + [Hinzufügen von Dynamic Media Classic (Scene7)-Funktionen zu Ihrer Seite](manage-assets-classic-s7.md)
    + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
-   + [Video](manage-assets-classic-s7-video.md)
+   + [Video   ](manage-assets-classic-s7-video.md)
    + [Benennungskonventionen für Assets-Tests](asset-naming-conventions.md)

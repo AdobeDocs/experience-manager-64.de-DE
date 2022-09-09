@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '564'
 ht-degree: 65%
 
 ---
@@ -216,7 +216,6 @@ Diese Dienste werden standardmäßig bereitgestellt:
 * [Tracker Snippets](/help/sites-administering/external-providers.md) (Google, WebTrends usw.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-* [Search&amp;Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]

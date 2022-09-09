@@ -8,9 +8,9 @@ breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Administering
 role: Admin
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '641'
 ht-degree: 94%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 94%
    + [Sicherheitscheckliste](security-checklist.md)
    + [OWASP – Top 10](owasp-top10.md)
    + [Ausführung von AEM im produktionsbereiten Modus](production-ready.md)
-   + [Identitäts-Management](identity-management.md)
+   + [Identity Management](identity-management.md)
    + [Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services](ims-config-and-admin-console.md)
    + [Erstellen von geschlossenen Benutzergruppen](cug.md)
    + [Beheben von Serialisierungsproblemen in AEM](mitigating-serialization-issues.md)
@@ -95,8 +95,8 @@ ht-degree: 94%
    + [Verschlüsselungsunterstützung für Konfigurationseigenschaften](encryption-support-for-configuration-properties.md)
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
-+ Personalisierung  {#personalization}
-   + [Personalisierung ](personalization.md)
++ Personalisierung    {#personalization}
+   + [Personalisierung   ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
@@ -132,7 +132,6 @@ ht-degree: 94%
    + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
    + [Hinweis zum End of Life von Flash-Viewern](flash-viewers-eol.md)
    + [Integrieren mit Adobe Creative Cloud](https://docs.adobe.com/content/help/de-DE/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
-   + [Produkt-Feed](product-feed.md)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
    + [Opt-in für Adobe Analytics und Adobe Target](opt-in.md)
    + [AEM-Portale und Portlets](aem-as-portal.md)
@@ -150,7 +149,6 @@ ht-degree: 94%
    + [Manuelles Konfigurieren der Integration mit Adobe Target](target-configuring.md)
    + [Voraussetzungen für die Integration mit Adobe Target](target-requirements.md)
    + [Adobe Classifications](adobeanalytics-classifications.md)
-   + [Integrieren mit Adobe Search&amp;Promote](search-and-promote.md)
    + [Lösungsintegration](integration.md)
    + [Target-Integration mit Experience Fragments](experience-fragments-target.md)
 + Best Practices {#bestpractices}
