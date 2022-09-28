@@ -1,7 +1,7 @@
 ---
 title: OSGi-Konfigurationseinstellungen
 seo-title: OSGi Configuration Settings
-description: 'In diesem Artikel werden die OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) beschrieben, die für die Projektimplementierung relevant sind. Die Liste dient als Leitfaden und ist nicht vollständig. '
+description: In diesem Artikel werden die OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) beschrieben, die für die Projektimplementierung relevant sind. Die Liste dient als Leitfaden und ist nicht vollständig.
 seo-description: This article details the OSGi configuration settings (listed according to bundle) that are relevant to project implementation. The list acts as a guideline and it is not exhaustive.
 uuid: 817de76e-7ba6-4502-94f5-09046b878cfb
 contentOwner: User
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 1242b301d82402c28a9c070fad024b823f8cef45
+source-git-commit: b2888dd2d523488b416550d5826f8cf077a25e32
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3483'
 ht-degree: 65%
 
 ---
@@ -59,8 +59,6 @@ Die folgenden OSGi-Konfigurationseinstellungen (nach Bundle aufgelistet) sind f�
 * Die **Administratorkennwort** nach der Installation geändert werden, um sicherzustellen, dass die [security](/help/sites-administering/security-checklist.md) Ihrer Instanz.
 
 * Andere Änderungen sollten nicht erforderlich sein und müssen mit Vorsicht erfolgen, da sie den Zugriff auf das Repository beeinträchtigen können.
-
-**Wiki Mail Service** Konfigurieren Sie die E-Mail-Einstellungen für E-Mails, die von einem Wiki gesendet werden.
 
 **Apache Felix OSGi Management Console** Konfigurieren:
 
@@ -443,10 +441,6 @@ Steuert den HTML-Parser für den CQ-Rewriter.
 **Day Commons JDBC Connections Pool** Konfigurieren Sie den Zugriff auf eine externe Datenbank, die als Quelle für Inhalte verwendet wird.
 
 Dies ist eine Factory-Konfiguration, sodass mehrere Instanzen konfiguriert werden. 
-
-**Adobe CQ Media DPS-Sitzungsdienst** Verwalten von DPS-Sitzungen zur Verwendung mit Veröffentlichungen.
-
-Insbesondere können Sie `dps.session.service.url.name` konfigurieren. Die Standardeinstellung ist [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **CDN Rewriter** Die Kommunikation zwischen AEM und einem CDN muss sichergestellt sein, damit Assets/Binärdateien auf sichere Weise an den Endbenutzer bereitgestellt werden. Dies beinhaltet zwei Aufgaben:
 

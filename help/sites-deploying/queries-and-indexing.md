@@ -12,9 +12,9 @@ discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: 5f43de8d-9d26-456e-b695-3ffa71a4f3bf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3101fab64f6b9fbe2fdeed5fe28d650b84bcdef5
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2657'
 ht-degree: 89%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 89%
 >
 >In diesem Artikel wird die Konfiguration von Indizes in AEM 6 beschrieben. Informationen zur besten Vorgehensweise beim Optimieren von Abfragen- und Indizierungsleistung finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Anders als bei Jackrabbit 2 wird Inhalt in Oak nicht standardmäßig indiziert. Indizes müssen daher bei Bedarf vom Benutzer erstellt werden, ähnlich wie bei herkömmlichen relationalen Datenbanken. Falls für eine spezifische Abfrage kein Index vorhanden ist, werden möglicherweise viele Knoten durchsucht. Die Abfrage kann zwar erfolgreich sein, wird jedoch sehr langsam verarbeitet.
 
@@ -121,7 +121,7 @@ Sie können einen Lucene-Volltext-Index wie folgt konfigurieren:
 
 1. Öffnen Sie CRXDE und erstellen Sie einen neuen Knoten unter **oak:index**.
 1. Nennen Sie den Knoten **LuceneIndex** und legen Sie als Knotentyp **oak:QueryIndexDefinition** fest.
-1. Fügen Sie dem Knoten  folgende Eigenschaften hinzu:
+1. Fügen Sie dem Knoten folgende Eigenschaften hinzu:
 
    * **Typ:**  `lucene` (vom Typ String)
    * **async:**  `async` (vom Typ String)
@@ -288,39 +288,6 @@ Der Solr-Index dient der Volltextsuche. Er kann jedoch auch für die Index-Suche
 
 Die Integration in AEM erfolgt auf Repository-Ebene, damit Solr als möglicher Index in Oak, der neuen mit AEM ausgelieferten Repository-Implementierung, verwendet werden kann.
 
-Die Konfiguration als in die AEM-Instanz eingebetteter Server oder als Remote-Server ist möglich.
-
-### Konfigurieren von AEM mit einem eingebetteten Solr-Server {#configuring-aem-with-an-embedded-solr-server}
-
->[!CAUTION]
->
->Verwenden Sie in einer Produktionsumgebung keinen eingebetteten Solr-Server. Dieser sollte nur in einer Entwicklungsumgebung verwendet werden.
-
-AEM kann mit einem eingebetteten, über die Web-Konsole konfigurierten Solr-Server verwendet werden. In diesem Fall wird der Solr-Server in derselben JVM ausgeführt wie die AEM-Instanz, in die er eingebettet ist.
-
-Sie können den eingebetteten Solr-Server wie folgt konfigurieren:
-
-1. Wechseln Sie zur Web-Konsole unter `https://serveraddress:4502/system/console/configMgr`
-1. Suchen Sie nach **Oak Solr server provider**.
-1. Klicken Sie auf die Schaltfläche zum Bearbeiten und legen Sie im nächsten Fenster in der Dropdown-Liste den Servertyp als **Embedded Solr** fest.
-
-1. Bearbeiten Sie dann **Oak Solr embedded server configuration** und erstellen Sie eine Konfiguration. Weitere Informationen zu den Konfigurationsoptionen finden Sie auf der [Apache Solr-Website](https://lucene.apache.org/solr/documentation.html).
-
-   >[!NOTE]
-   >
-   >Die Konfiguration des Solr-Basisverzeichnisses (solr.home.path) sucht nach einem Ordner mit demselben Namen im AEM-Installationsordner.
-
-1. Öffnen Sie CRXDE und melden Sie sich mit „Admin“ an.
-1. Fügen Sie einen Knoten **solrlndex** vom Typ **oak:QueryIndexDefinition** unter **oak:index** mit folgenden Eigenschaften hinzu:
-
-   * **Typ:** `solr`(vom Typ String)
-   * **async:** `async`(vom Typ String)
-   * **reindex:** `true`(vom Typ Boolesch)
-
-1. Speichern Sie die Änderungen.
-
-### Konfigurieren von AEM mit einem einzelnen Remote-Solr-Server {#configuring-aem-with-a-single-remote-solr-server}
-
 AEM kann auch mit einer remoten Solr-Server-Instanz konfiguriert werden:
 
 1. Laden Sie die neueste Version von Solr herunter und extrahieren Sie diese. Weitere Informationen zur Vorgehensweise finden Sie in der Dokumentation zur [Apache Solr-Installation](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
@@ -390,7 +357,7 @@ Für die richtige Verwendung müssen Sie die Inhalte im Archiv direkt im Solr-Ba
 
 Empfohlene Solr-Konfigurationsdateien
 
-[Datei laden](assets/recommended-conf.zip)
+[Datei herunterladen](assets/recommended-conf.zip)
 
 ### AEM-Indizierungs-Tools {#aem-indexing-tools}
 
