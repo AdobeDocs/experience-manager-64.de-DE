@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
+source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
 workflow-type: tm+mt
-source-wordcount: '3459'
-ht-degree: 66%
+source-wordcount: '3461'
+ht-degree: 65%
 
 ---
 
@@ -284,7 +284,7 @@ Nehmen Sie beim Erstellen einer neuen Konfiguration keine Änderungen an der Wer
 
 >[!CAUTION]
 >
->Wenn Sie die Einstellung für **Minimieren** oder **Gzip** Sie müssen auch den Inhalt von `/var/clientlibs`. Dies ist eine zwischengespeicherte Version der Client-Bibliotheken, die bei der nächsten Anforderung neu erstellt werden.
+>Wenn Sie die Einstellung für **Minimieren** oder **Gzip** Sie müssen auch den Inhalt des Zwischenspeichers clientlibs löschen. Siehe hierzu [Knowledge Base-Artikel](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) für Details.
 
 >[!NOTE]
 >
