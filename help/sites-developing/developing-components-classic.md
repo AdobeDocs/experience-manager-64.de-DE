@@ -3,15 +3,8 @@ title: Entwickeln von AEM-Komponenten (klassische Benutzeroberfläche)
 seo-title: Developing AEM Components (Classic UI)
 description: Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das Erscheinungsbild der Komponenten angeben. HTL ist nicht die empfohlene Skriptsprache für AEM.
 seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
-uuid: ed53d7c6-5996-4892-81a4-4ac30df85f04
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
-legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 725e4f82-7019-4365-9c01-b5d95ea2a8fa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 72%
@@ -280,14 +273,14 @@ Um die neue Komponente zu erstellen, verwenden wir die standardmäßige textimag
 
    * Komponentenname
 
-      * Satz `jcr:description` nach `Text Image Component (Extended)`
-      * Satz `jcr:title` nach `Text Image (Extended)`
+      * Setzen Sie `jcr:description` auf `Text Image Component (Extended)`
+      * Setzen Sie `jcr:title` auf `Text Image (Extended)`
    * Gruppe, in der die Komponente im Sidekick aufgelistet ist (unverändert lassen)
 
       * Urlaub `componentGroup` auf `General`
    * Übergeordnete Komponente für die neue Komponente (die standardmäßige textimage-Komponente)
 
-      * Satz `sling:resourceSuperType` nach `foundation/components/textimage`
+      * Setzen Sie `sling:resourceSuperType` auf `foundation/components/textimage`
 
    Nach diesem Schritt sieht der Komponentenknoten wie folgt aus:
 

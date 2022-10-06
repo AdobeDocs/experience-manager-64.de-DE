@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -273,7 +273,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr> 
    <td><strong>Schritte 37 und 38</strong></td> 
    <td>Lazy Loading</td> 
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Weitere Informationen finden Sie in der Gem-Sitzung „AEM Web Performance“.</a><br /> </td> 
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">Weitere Informationen finden Sie in der Gem-Sitzung „AEM Web Performance“.</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Schritt 39</strong></td> 
@@ -293,7 +293,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr> 
    <td><strong>Schritt 49</strong></td> 
    <td>Reduzierung der Payload-Größe</td> 
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Aktivieren von Gzip</a> und <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Reduzieren der Bildgröße</a>.<br /> </td> 
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Aktivieren von Gzip</a> und <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">Reduzieren der Bildgröße</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Schritte 42 und 43</strong></td> 
@@ -325,7 +325,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr> 
    <td><strong>Schritte 50 und 51</strong></td> 
    <td>Blockierung von JS-Code</td> 
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td> 
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">AEM-Web-Performance</a></td> 
   </tr> 
  </tbody> 
 </table>

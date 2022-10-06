@@ -10,7 +10,7 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: d561bb0a-352f-4be2-95ed-32dd1e2b4019
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '3741'
 ht-degree: 88%
@@ -33,14 +33,14 @@ Bei der Implementierung von AEM (insbesondere zum ersten Mal) müssen Sie die [F
 
 Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkungen auf Ihr Design, zum Beispiel:
 
-* [Commerce](/help/sites-administering/ecommerce.md)
-* [Screens](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Commerce ](/help/sites-administering/ecommerce.md)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Multi-Site-Management und Übersetzung](/help/sites-administering/msm-and-translation.md)
-* [Formulare](/help/forms/home.md)
+* [Forms](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
-* [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
+* [Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
 
 Überprüfen Sie außerdem die [Versionshinweise](/help/release-notes/release-notes.md) für die verschiedenen Versionen von AEM, um zu sehen, wann neue Funktionen hinzugefügt wurden.
 
@@ -115,7 +115,7 @@ Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzu
    * das gesamte Projekt, einschließlich der Software von Drittanbietern, deren Auswirkungen auf Tests, organisatorische Fragen und viele andere.
    * Für bestimmte Aspekte kann es auch sinnvoll sein anzugeben, was *nicht* im Umfang des Projekts liegt. Dies kann dazu beitragen, Verwirrung und falsche Annahmen zu vermeiden, sollte sich aber auf das Wesentliche beschränken.
 
-* **Berichterstellung**
+* **Reporting**
 
    Definieren Sie klar, welche Informationen Sie in welcher Form, wie oft und an wen melden werden.
 
@@ -389,7 +389,6 @@ Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) be
 >* Bietet einen Überblick über die *first* Implementierung eines AEM Projekts.
 >* Ist als abstrakte Übersicht gedacht; siehe [Projekt-Checkliste](/help/managing/best-practices.md) für bestimmte Phasen/Milestones/Aufgaben.
 >* Jede Zeitskala ist theoretisch.
-
 >
 
 

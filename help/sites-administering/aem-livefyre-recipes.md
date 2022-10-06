@@ -1,7 +1,7 @@
 ---
 title: AEM Livefyre-Rezepte
 seo-title: AEM Livefyre Recipes
-description: 'Schrittweise Anweisungen zu allgemeinen Adobe Experience Manager Livefyre-Anwendungsfällen. '
+description: Schrittweise Anweisungen zu allgemeinen Adobe Experience Manager Livefyre-Anwendungsfällen.
 seo-description: Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.
 uuid: 78695a63-fca6-4990-9755-0aeaae4a7f64
 contentOwner: alba
@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 exl-id: 2e06d1c8-e7c0-41ce-8799-9e762663eded
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1488'
 ht-degree: 75%
 
 ---
@@ -29,9 +29,9 @@ Das AEM Livefyre-Paket bietet eine vorab konfigurierte Implementierungsmöglichk
 
 ### AEM-Integration {#aem-integration}
 
-Das Livefyre Adobe Experience Manager-Paket ist für AEM 6.1, 6.2 SP1, 6.3, 6.4 und 6.4 SP1 verfügbar. AEM 5.x und 6.0 werden nicht unterstützt. Detaillierte Anweisungen finden Sie unter [Integrieren mit Livefyre](https://helpx.adobe.com/de/experience-manager/6-4/sites/administering/using/livefyre.html).
+Das Livefyre Adobe Experience Manager-Paket ist für AEM 6.1, 6.2 SP1, 6.3, 6.4 und 6.4 SP1 verfügbar. AEM 5.x und 6.0 werden nicht unterstützt. Detaillierte Anweisungen finden Sie unter [Integrieren mit Livefyre](/help/sites-administering/livefyre.md).
 
-Welche Livefyre-Apps unterstützt werden, erfahren Sie im Abschnitt [AEM-Unterstützungsmatrix für Livefyre-Apps](https://helpx.adobe.com/de/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+Welche Livefyre-Apps unterstützt werden, erfahren Sie im Abschnitt [AEM-Unterstützungsmatrix für Livefyre-Apps](/help/sites-administering/livefyre.md#aem-support-matrix-for-livefyre-apps).
 
 ### Herkömmliche Implementierung (für benutzerdefinierte AEM-Komponenten) {#traditional-implementation-for-customized-aem-components}
 
@@ -96,7 +96,7 @@ Informationen zu Livefyre-Apps, für die eine Authentifizierung erforderlich ist
 
 ### AEM-Integration {#aem-integration-1}
 
-Das Livefyre Adobe Experience Manager-Paket ist für AEM 6.1, 6.2 SP1, 6.3, 6.4 und 6.4 SP1 verfügbar. AEM 5.x und 6.0 werden nicht unterstützt. Detaillierte Anweisungen finden Sie unter [Integrieren mit Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
+Das Livefyre Adobe Experience Manager-Paket ist für AEM 6.1, 6.2 SP1, 6.3, 6.4 und 6.4 SP1 verfügbar. AEM 5.x und 6.0 werden nicht unterstützt. Detaillierte Anweisungen finden Sie unter [Integrieren mit Livefyre](https://helpx.adobe.com/de/experience-manager/6-4/sites/administering/using/livefyre.html).
 
 ### Herkömmliche Implementierung (für benutzerdefinierte AEM-Komponenten) {#traditional-implementation-for-customized-aem-components-1}
 
@@ -131,29 +131,26 @@ Informationen zu erweiterten Anpassungen mit dem SDK finden Sie unter [StreamHub
 * [Anpassen der Single Sign-on-Integration](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) für AEM Identity Management
 * [Identitätsintegration](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) für Authentifizierungsplattformen von Drittanbietern
 
-### Kundenbeispiele {#customer-examples-1}
-
-* [Poise (Kimberly Klark)](https://www.poise.com/en-us/advice-and-support/blog-and-podcast/blog/5-holiday-party-tips-for-managing-lbl)
 
 ## Verwenden der Livefyre AEM Assets-Integration zum Importieren von UGC in AEM Assets {#use-livefyre-aem-assets-integration-to-import-ugc-in-aem-assets}
 
 **Livefyre-Einrichtung (für UGC-Kuration und Rights Management):**
 
-1. [Konfigurieren von Streams und Hinzufügen von Regeln zum Kuratieren von UGC für Livefyre Asset-Bibliotheksordner](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
+1. [Konfigurieren von Streams und Hinzufügen von Regeln zum Kuratieren von UGC für Livefyre Asset-Bibliotheksordner](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html)
 
    1. Schulungsvideos zum Streaming von benutzergenerierten Inhalten finden Sie unter [Erstellen automatischer Inhalts-Streams und Suchen nach Social-Inhalten in Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-1. [Erfassen, Organisieren und Verwalten kuratierter UGC in Livefyre Asset-Bibliotheksordnern](https://docs.adobe.com/content/help/en/livefyre/using/library/assets/c-assets.html)
+1. [Erfassen, Organisieren und Verwalten kuratierter UGC in Livefyre Asset-Bibliotheksordnern](https://experienceleague.adobe.com/docs/livefyre/using/library/assets/c-assets.html)
 
    1. Schulungsvideos zum Erstellen und Verwalten von Ordnern in der Asset-Bibliothek von Livefyre Studio finden Sie unter [Arbeiten mit Assets in Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
 
-1. [Anfordern von Berechtigungen für kuratierten UGC mithilfe von Livefyre Studio](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html)
+1. [Anfordern von Berechtigungen für kuratierten UGC mithilfe von Livefyre Studio](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html)
 
 **AEM-Einrichtung (zum Importieren von UGC in AEM Assets):**
 
-1. [Erste Schritte](https://helpx.adobe.com/de/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
-1. [Konfigurieren von AEM für Livefyre](https://helpx.adobe.com/de/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
-1. [Importieren von UGC, der von Livefyre in AEM Assets kuratiert wurde](https://helpx.adobe.com/de/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
+1. [Erste Schritte](/help/sites-administering/livefyre.md#getting-started)
+1. [Konfigurieren von AEM für Livefyre](/help/sites-administering/livefyre.md#configure-aem-to-use-livefyre-create-a-configuration-folder)
+1. [Importieren von UGC, der von Livefyre in AEM Assets kuratiert wurde](/help/sites-administering/livefyre.md#use-livefyre-with-aem-assets)
 
 * [Tourism Australia](https://www.australia.com/de-de)
 
@@ -163,7 +160,7 @@ Informationen zu erweiterten Anpassungen mit dem SDK finden Sie unter [StreamHub
 
 Das Livefyre Adobe Experience Manager-Paket ist für AEM 6.1, 6.2 SP1, 6.3, 6.4 und 6.4 SP1 verfügbar. AEM 5.x und 6.0 werden nicht unterstützt. Detaillierte Anweisungen finden Sie unter [Integrieren mit Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-Die Reviews-Komponente wird in AEM 6.1 nicht unterstützt. Weitere Informationen finden Sie in der [AEM-Unterstützungsmatrix für alle Livefyre-Apps](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+Die Reviews-Komponente wird in AEM 6.1 nicht unterstützt. Weitere Informationen finden Sie in der [AEM-Unterstützungsmatrix für alle Livefyre-Apps](https://helpx.adobe.com/de/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
 ### Herkömmliche Implementierung (für benutzerdefinierte AEM-Komponenten) {#traditional-implementation-for-customized-aem-components-2}
 

@@ -3,19 +3,11 @@ title: Query Builder-API
 seo-title: Query Builder API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java-API und eine REST-API verfügbar gemacht.
 seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
-uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: platform
-content-type: reference
-discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
-pagetitle: Query Builder API
-tagskeywords: querybuilder
 exl-id: ff305c6d-c11e-4e1c-b262-4802b4f54592
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 91%
+source-wordcount: '2312'
+ht-degree: 90%
 
 ---
 
@@ -37,11 +29,11 @@ Die REST-API ermöglicht den Zugriff auf genau die gleichen Funktionen per HTTP,
 
 ## Gem-Sitzung {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-index.html) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten. Diese Sitzung zum Query Builder ist sehr nützlich, um einen allgemeinen Überblick und Informationen zum Tool zu erhalten.
+[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten. Diese Sitzung zum Query Builder ist sehr nützlich, um einen allgemeinen Überblick und Informationen zum Tool zu erhalten.
 
 >[!NOTE]
 >
->Siehe AEM Gem-Sitzung [Suchformulare, die mit QueryBuilder AEM wurden](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) für einen detaillierten Überblick über den Query Builder.
+>Siehe AEM Gem-Sitzung [Suchformulare, die mit QueryBuilder AEM wurden](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) für einen detaillierten Überblick über den Query Builder.
 
 ## Beispielabfragen {#sample-queries}
 

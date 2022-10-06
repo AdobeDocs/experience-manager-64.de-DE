@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '678'
 ht-degree: 76%
 
 ---
@@ -42,9 +42,8 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 >* Verwenden und Erstellen von [Clientbibliotheken](/help/sites-developing/clientlibs.md).
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
-
 >
->Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)-Sitzung [Anpassung der Benutzeroberfläche für AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html) behandelt.
+>Dieses Thema wird auch in der [AEM Gems-Sitzung Anpassung der Benutzeroberfläche für AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-user-interface-customization-for-aem6.html) behandelt.
 
 >[!CAUTION]
 >
@@ -391,7 +390,7 @@ Anpassen von Spalten in der Listenansicht:
 
    * Wenn Sie zusätzliche Daten einbinden möchten, müssen Sie eine ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` mit
 
-      `pageInfoProviderType` property.
+      `pageInfoProviderType`.
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
 
 1. Sie können jetzt die Spalte im Spaltenkonfigurator der Listenansicht auswählen.

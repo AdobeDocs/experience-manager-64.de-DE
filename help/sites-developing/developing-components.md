@@ -3,15 +3,8 @@ title: Entwickeln von AEM-Komponenten
 seo-title: Developing AEM Components
 description: AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten bereitstellen, zu speichern, zu formatieren und zu rendern.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
-uuid: bf789fb8-0bb8-406c-b4d6-c360b02a46d8
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: components
-content-type: reference
-discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
-legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: eb84030434ef7e11362f259a802832eb98959b5f
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '3477'
 ht-degree: 90%
@@ -42,7 +35,7 @@ AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten be
 >
 >Komponenten unten `/libs/cq/gui/components/authoring/dialog` sind nur für die Verwendung im Editor vorgesehen (Komponentendialogfelder in der Bearbeitung). Wenn sie an anderer Stelle verwendet werden (z. B. in einem Assistentendialogfeld), verhalten sie sich möglicherweise nicht wie erwartet.
 
-## Codebeispiele {#code-samples}
+## Code-Beispiele {#code-samples}
 
 Diese Seite enthält die Referenzdokumentation (oder Links zur Referenzdokumentation) die für die Entwicklung neuer Komponenten für AEM erforderlich sind. Einige praktische Beispiele finden Sie unter [Entwickeln von AEM-Komponenten - Codebeispiele](/help/sites-developing/developing-components-samples.md).
 
@@ -199,9 +192,8 @@ Beispiele finden Sie hier:
 >
 >Siehe:
 >
->* AEM-Gems-Session zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>* AEM-Gems-Session zum [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* Der zugehörige Beispielcode wird unter [Codebeispiel – So passen Sie Dialogfelder an](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields) behandelt.
-
 >
 
 
@@ -469,9 +461,9 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
    * Sie müssen ein neues Dialogfeld zur Verwendung in der Touch-optimierten Benutzeroberfläche erstellen. Aus Kompatibilitätsgründen kann die Touch-optimierte Benutzeroberfläche jedoch die Definition eines Dialogfelds der klassischen Benutzeroberfläche verwenden, wenn für die Touch-optimierte Benutzeroberfläche kein Dialogfeld definiert wurde.
    * Die [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) wird bereitgestellt, um Sie beim Erweitern vorhandener Komponenten zu unterstützen.
    * Das [Zuordnen von ExtJS zu Granite-UI-Komponenten](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) bietet einen praktischen Überblick über ExtJS-Xtypes und Knotentypen mit ihren entsprechenden Ressourcentypen in der Granite-Benutzeroberfläche.
-   * Weitere Informationen finden Sie in der AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+   * Weitere Informationen finden Sie in der AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
    * Migrieren von vtypes zur [Überprüfung in der Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Weitere Informationen zum Verwenden von JS-Listenern finden Sie unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung zum [Anpassung von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+   * Weitere Informationen zum Verwenden von JS-Listenern finden Sie unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung zum [Anpassung von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrieren von cq:listener-Code {#migrating-cq-listener-code}
 

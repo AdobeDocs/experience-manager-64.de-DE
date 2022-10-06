@@ -10,10 +10,10 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 119023a24d5f21fd003439992fe5a520f48b6861
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1894'
-ht-degree: 52%
+source-wordcount: '1895'
+ht-degree: 51%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 52%
 
 ## Was ist Tough Day 2? {#what-is-tough-day}
 
-Tough Day 2 ist eine Anwendung, mit der Sie die Grenzen Ihrer AEM testen können. Sie können ihn direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://docs.adobe.com/ddc/de/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) sehen Sie eine Präsentation der Anwendung.
+Tough Day 2 ist eine Anwendung, mit der Sie die Grenzen Ihrer AEM testen können. Sie können ihn direkt mit der standardmäßigen Test-Suite ausführen oder an Ihre Testanforderungen anpassen. In [dieser Aufnahme](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) sehen Sie eine Präsentation der Anwendung.
 
 ## Ausführen von Tough Day 2 {#how-to-run-tough-day}
 

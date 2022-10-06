@@ -10,9 +10,9 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '686'
 ht-degree: 89%
 
 ---
@@ -49,7 +49,6 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* auf einer Autoreninstanz im Ausführungsmodus nosamplecontent
 >* auf einer Veröffentlichungsinstanz
-
 >
 >Der Modus sollte nach der Verwendung wieder deaktiviert werden.
 
@@ -58,7 +57,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >Weitere Tipps und Informationen zu Tools finden Sie:
 >
 >* im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
->* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+>* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 
 ## Öffnen des Entwicklermodus {#opening-developer-mode}

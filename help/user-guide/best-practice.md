@@ -6,10 +6,10 @@ seo-description: Resources for best practices, troubleshooting and training for 
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: ba222869-1268-481d-b342-27ea12b15999
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 54%
+source-wordcount: '409'
+ht-degree: 52%
 
 ---
 
@@ -24,8 +24,7 @@ Adobe bietet hilfreiche Ressourcen, die Ihnen dabei helfen, AEM optimal zu nutze
 
 Die AEM-Community erstellt ständig Beispielarbeitsabläufe, Übungen und Codebeispiele aus Empfehlungen und gemeinschaftlichen Projekten.
 
-* [Eine vollständige Liste der AEM 6.4 Tutorials und Videos finden Sie hier.](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Eine vollständige Liste AEM Community-Anleitungsartikel finden Sie hier.](https://helpx.adobe.com/de/experience-manager/topics/how-to.html)
+* [Eine vollständige Liste der AEM 6.4 Tutorials und Videos finden Sie hier.](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html#videos-and-tutorials)
 * [Eine vollständige Liste AEM Knowledgebase-Artikel finden Sie hier.](https://helpx.adobe.com/de/experience-manager/kb/index/full_kb_list.html)
 
 ## Best Practices für AEM {#best-practices}
@@ -46,9 +45,9 @@ AEM wird vielseitig in Unternehmen eingesetzt und verfügt über vielfältige Fu
 * [Erste Schritte mit AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Erste Schritte mit AEM Communities](/help/communities/getting-started.md)
-* [Erste Schritte mit AEM Livefyre](https://answers.livefyre.com/developers/getting-started/)
+* [Erste Schritte mit AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
 
-Wir haben auch eine neue [WKND-Tutorial, eine schrittweise Anleitung zur Erstellung Ihrer ersten Website mit AEM](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) sowie [schrittweises Rezept für die Bereitstellung unserer Digital Foundation-Lösung](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), für die AEM ein wichtiger Baustein ist.
+Wir haben auch eine neue [WKND-Tutorial, eine schrittweise Anleitung zur Erstellung Ihrer ersten Website mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) sowie [schrittweises Rezept für die Bereitstellung unserer Digital Foundation-Lösung](https://experienceleague.adobe.com/#courses), für die AEM ein wichtiger Baustein ist.
 
 ## Empfohlene Bereitstellungen für AEM {#deployments}
 

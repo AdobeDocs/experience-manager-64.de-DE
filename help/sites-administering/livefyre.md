@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 exl-id: 39ecacda-2941-4b57-a001-e7ad1349723c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1619'
 ht-degree: 67%
 
 ---
@@ -46,7 +46,6 @@ In AEM 6.4 ist das Livefyre-Feature Pack 1.2.6 vorinstalliert. Dieses Paket bein
 
    Ihr Livefyre-AEM-Paket ist jetzt installiert. Vor Nutzung der Integrationsfunktionen müssen Sie AEM für Livefyre konfigurieren.
 
-   Weitere Informationen und Versionshinweise zu Feature Packs finden Sie unter [Feature Packs](https://helpx.adobe.com/de/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
 ### AEM für die Verwendung von Livefyre konfigurieren: Erstellen eines Konfigurationsordners {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
@@ -99,9 +98,9 @@ Die integrierte Standardauthentifizierung ist ggf. nicht für alle Sites ideal g
 1. Mit CRXDE Lite kopieren */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* nach */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib*.
 1. Bearbeiten und Speichern */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* , um einen Livefyre-Auth-Delegaten zu implementieren, der Ihren Anforderungen entspricht.
 
-   Weitere Informationen zum Anpassen eines Authentifizierungsdelegats finden Sie unter [Identitätsintegration](https://answers.livefyre.com/developers/identity-integration/).
+   Weitere Informationen zum Anpassen eines Authentifizierungsdelegats finden Sie unter [Identitätsintegration](https://experienceleague.adobe.com/docs/livefyre/implementation/identity-integration/t-about-identity-integration.html).
 
-   Weitere Informationen zu AEM Clientlibs finden Sie unter [Verwenden Client-seitiger Bibliotheken](https://helpx.adobe.com/de/experience-manager/6-3/sites/developing/using/clientlibs.html).
+   Weitere Informationen zu AEM Clientlibs finden Sie unter [Verwenden Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md).
 
 ## Verwenden von Livefyre mit AEM Sites {#use-livefyre-with-aem-sites}
 
@@ -109,7 +108,7 @@ Die integrierte Standardauthentifizierung ist ggf. nicht für alle Sites ideal g
 
 Bevor Sie Livefyre-Komponenten einer Seite in Sites hinzufügen, müssen Sie Livefyre für die Seite aktivieren, indem Sie entweder eine Livefyre-Cloud-Konfiguration von einer übergeordneten Seite übernehmen oder indem Sie der Seite die Konfiguration direkt hinzufügen. Sie können Ihrer Implementierung entnehmen, wie Cloud-Services für Ihre Site aufgenommen werden.
 
-Sobald Livefyre für die Seite aktiviert ist, müssen Container so konfiguriert werden, dass Livefyre-Komponenten zugelassen werden. Siehe [Konfigurieren von Komponenten im Designmodus](https://helpx.adobe.com/de/experience-manager/6-3/sites/authoring/using/default-components-designmode.html) für Anweisungen zum Aktivieren verschiedener Komponenten.
+Sobald Livefyre für die Seite aktiviert ist, müssen Container so konfiguriert werden, dass Livefyre-Komponenten zugelassen werden. Siehe [Konfigurieren von Komponenten im Designmodus](/help/sites-authoring/default-components-designmode.md) für Anweisungen zum Aktivieren verschiedener Komponenten.
 
 >[!NOTE]
 >
@@ -124,7 +123,7 @@ Sobald Livefyre für die Seite aktiviert ist, müssen Container so konfiguriert 
 
    Beim Integrieren einer bereits vorhandenen App fordert AEM Sie zur Auswahl der App auf. Beim Erstellen einer neuen App muss die App aufgefüllt werden, damit Inhalt angezeigt wird. Die App wird auf der Livefyre-Site erstellt; das Netzwerk wird beim Aktivieren der Livefyre-Cloud-Konfiguration für die Seite ausgewählt.
 
-   Weitere Informationen zum Einfügen von Komponenten finden Sie unter [Bearbeiten des Seiteninhalts](https://helpx.adobe.com/de/experience-manager/6-3/sites/authoring/using/editing-content.html).
+   Weitere Informationen zum Einfügen von Komponenten finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md).
 
 ### Bearbeiten von Livefyre-Komponenten für eine AEM-Seite {#edit-a-livefyre-component-for-an-aem-page}
 
@@ -143,7 +142,7 @@ Sie können benutzergenerierten Twitter- und Instagram-Inhalt mit dem Importtool
 
 >[!NOTE]
 >
->Bevor Sie mit Assets benutzergenerierten Inhalt importieren können, müssen Sie in Livefyre Studio Konten für Social Media und zur Anforderung von Rechten einrichten. Siehe [Einstellung: Berechtigungsanfragen](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) für weitere Informationen.
+>Bevor Sie mit Assets benutzergenerierten Inhalt importieren können, müssen Sie in Livefyre Studio Konten für Social Media und zur Anforderung von Rechten einrichten. Siehe [Einstellung: Berechtigungsanfragen](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) für weitere Informationen.
 
 So importieren Sie benutzergenerierten Inhalt in AEM Assets:
 

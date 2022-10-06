@@ -3,23 +3,17 @@ title: Best Practices für Leistungstests
 seo-title: Best Practices for Performance Testing
 description: In diesem Artikel werden Gesamtstrategien und Methoden für Leistungstests sowie verschiedene hierfür verfügbare Tools beschrieben.
 seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
-uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-content-type: reference
-topic-tags: best-practices
-discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: 8d0863be-108d-49d8-8243-ea5e404ed64c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1892'
 ht-degree: 94%
 
 ---
 
 # Best Practices für Leistungstests{#best-practices-for-performance-testing}
 
-## Einführung {#introduction}
+## Einführung    {#introduction}
 
 Leistungstests stellen einen wichtigen Teil von AEM-Bereitstellungen dar. Je nach Kundenanforderungen können Leistungstests in Veröffentlichungsinstanzen und/oder Autoreninstanzen durchgeführt werden.
 
@@ -76,7 +70,7 @@ Das Dokument [Überwachen der Leistung](/help/sites-deploying/monitoring-and-mai
 
 **Entwicklermodus in der Touch-Benutzeroberfläche**
 
-Eine der neuen Funktionen in der Touch-Benutzeroberfläche von AEM 6 ist der Entwicklermodus. So wie Autoren zwischen Bearbeitungs- und Vorschaumodi wechseln können, können Entwickler den Entwicklermodus in der Autor-Benutzeroberfläche aufrufen, um die Renderzeit für jede Komponente auf der Seite sowie Stapelnachverfolgungen von Fehlern anzuzeigen. Weitere Informationen zum Entwicklermodus finden Sie in dieser [CQ Gems-Präsentation](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+Eine der neuen Funktionen in der Touch-Benutzeroberfläche von AEM 6 ist der Entwicklermodus. So wie Autoren zwischen Bearbeitungs- und Vorschaumodi wechseln können, können Entwickler den Entwicklermodus in der Autor-Benutzeroberfläche aufrufen, um die Renderzeit für jede Komponente auf der Seite sowie Stapelnachverfolgungen von Fehlern anzuzeigen. Weitere Informationen zum Entwicklermodus finden Sie in dieser [CQ Gems-Präsentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 **Lesen von Anforderungsprotokollen mit rlog.jar**
 

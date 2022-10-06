@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 61%
+source-wordcount: '888'
+ht-degree: 60%
 
 ---
 
@@ -105,6 +105,6 @@ Informationen zur Integration von Adobe Experience Manager mit Adobe Campaign fi
 
 Informationen zu Adobe Experience Manager und Livefyre:
 
-* [Erste Schritte mit Livefyre](https://answers.livefyre.com/developers/getting-started)
+* [Erste Schritte mit Livefyre](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
 
-* [Livefyre und Adobe Experience Manager](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
+* [Livefyre und Adobe Experience Manager](/help/sites-administering/livefyre.md)

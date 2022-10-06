@@ -1,7 +1,7 @@
 ---
 title: AEM Mobile-Einrichtung
 seo-title: AEM Mobile SetUp
-description: 'Auf dieser Seite erfahren Sie, wie Sie AEM Mobile einrichten und damit Benutzer Inhalte in AEM erstellen und verwalten können. Auf dieser Seite finden Sie Informationen zur Integration der AEM-Instanz mit dem Cloud-basierten AEM Mobile On-demand Services-Konto und den entsprechenden Projekten. '
+description: Auf dieser Seite erfahren Sie, wie Sie AEM Mobile einrichten und damit Benutzer Inhalte in AEM erstellen und verwalten können. Auf dieser Seite finden Sie Informationen zur Integration der AEM-Instanz mit dem Cloud-basierten AEM Mobile On-demand Services-Konto und den entsprechenden Projekten.
 seo-description: Follow this page for setting up AEM Mobile and thus allowing the user to create and manage the content within AEM. This page provides information on integrating the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s).
 uuid: 03bf5b56-7750-4f76-b079-43761367655a
 contentOwner: User
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 8f608465-7d0d-48d2-8105-ee2d4ceb727a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '943'
 ht-degree: 4%
 
 ---
@@ -35,9 +35,9 @@ Führen Sie die folgenden Schritte aus, um AEM Mobile einzurichten und es dem Be
 
 Gehen Sie wie folgt vor, um AEM Mobile einzurichten:
 
-* **API-Schlüssel anfordern**: Für den Zugriff auf die On-Demand Services API müssen Sie einen API-Schlüssel anfordern. Um den API-Schlüssel anzufordern, führen Sie die [PDF-Formular](https://helpx.adobe.com/de/digital-publishing-solution/help/integrating-dps.html). Senden Sie das ausgefüllte Formular an den Adobe Developer Support: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **API-Schlüssel anfordern**: Für den Zugriff auf die On-Demand Services API müssen Sie einen API-Schlüssel anfordern. Um den API-Schlüssel anzufordern, führen Sie die [PDF-Formular](https://helpx.adobe.com/de/digital-publishing-solution/help/integrating-dps.html). Senden Sie das ausgefüllte Formular an den Adobe Developer-Support: [wwds@adobe.com](mailto:wwds@adobe.com)
 
-* **Generieren der Geräte-ID und des Geräte-Tokens**: Nachdem Sie Ihren API-Schlüssel erhalten haben, können Sie die Geräte-ID und das Geräte-Token generieren. Navigieren Sie zu [https://aex.aemmobile.adobe.com](https://aex.aemmobile.adobe.com/) und gehen Sie wie folgt vor:
+* **Generieren der Geräte-ID und des Geräte-Tokens**: Nachdem Sie Ihren API-Schlüssel erhalten haben, können Sie die Geräte-ID und das Geräte-Token generieren. Gehen Sie zu aex.aemmobile.adobe.com und führen Sie folgende Schritte aus:
 
    * API-Schlüssel angeben
    * Melden Sie sich mit einer Adobe ID an, die Sie einem AEM Mobile-Projekt mit den folgenden Berechtigungen hinzugefügt haben (siehe die folgenden Schritte zum Erstellen eines Projekts)
