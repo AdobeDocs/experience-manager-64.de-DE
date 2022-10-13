@@ -9,10 +9,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: b46f0325ddbf68b65270c8e741e06469c584ae4d
 workflow-type: tm+mt
-source-wordcount: '2099'
-ht-degree: 91%
+source-wordcount: '2090'
+ht-degree: 92%
 
 ---
 
@@ -109,7 +109,7 @@ NPM-Modul: [@adobe/aem-response-editable-components](https://www.npmjs.com/packa
 
 #### Angular {#angular}
 
-npm-Modul: bald
+NPM-Modul: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Haupt-Services und -komponenten {#main-services-and-components}
 
@@ -168,8 +168,6 @@ Die Komponente „Responsives Raster“ sollte vorab ihrem AEM-Gegenstück zugeo
 * `gridClassNames:` stellt Klassennamen für das responsive Raster bereit
 * `columnClassNames:` stellt Klassennamen für die responsive Spalte bereit
 
-Siehe auch npm-Ressource [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
-
 #### Platzhalter des responsiven Rasters {#placeholder-of-the-reponsive-grid}
 
 Die SPA-Komponente ist einem grafischen Container wie dem responsiven Raster zugeordnet und muss einen virtuellen untergeordneten Platzhalter hinzufügen, wenn der Inhalt bearbeitet wird. Wenn der Inhalt der SPA im Seiteneditor bearbeitet wird, wird dieser Inhalt mit einem iFrame in den Editor eingebettet und das Attribut `data-cq-editor` wird dem document-Knoten des Inhalts hinzugefügt. Wenn das `data-cq-editor`-Attribut vorhanden ist, muss der Container ein HTML-Element enthalten, das den Bereich darstellt, mit dem der Autor beim Einfügen einer neuen Komponente in die Seite interagiert.
@@ -186,7 +184,6 @@ Beispiel:
 >
 >* `"new section"`: Zeigt an, dass das aktuelle Element der Platzhalter des Containers ist
 >* `"aem-Grid-newComponent"`: Normalisiert die Komponente für die Layout-Bearbeitung
-
 >
 
 
