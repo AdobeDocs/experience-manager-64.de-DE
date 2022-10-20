@@ -53,7 +53,7 @@ ht-degree: 93%
    + [Ablauf statischer Objekte](expiration-static-objects.md)
    + [Versionsbereinigung](version-purging.md)
    + [Überwachung und Wartung der AEM-Instanz](monitoring-and-maintaining.md)
-   + [Abladen von Aufträgen](offloading.md)
+   + [Abladung von Aufträgen](offloading.md)
    + [Single Sign-On](single-sign-on.md)
    + [Ressourcenzuordnung](resource-mapping.md)
    + [Aktivieren von HTTP über SSL](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html)

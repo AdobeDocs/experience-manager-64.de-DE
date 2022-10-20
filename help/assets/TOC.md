@@ -9,7 +9,7 @@ user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digital
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -48,17 +48,17 @@ ht-degree: 75%
    + [Dynamic Media-Videoprofile](video-profiles.md)
    + [Dynamic Media-Bildprofile](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
-   + [Intelligente Bildbearbeitung mit clientseitigem Gerätepixelverhältnis](client-side-dpr.md)
-   + [Video ](s7-video.md)
+   + [Intelligente Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis](client-side-dpr.md)
+   + [Video   ](s7-video.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
    + [Einschränkungen bei Dynamic Media](limitations.md)
    + [Bildsets](image-sets.md)
-   + [Gemischte Mediensets](mixed-media-sets.md)
+   + [Sets mit gemischten Medien](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
    + [Panoramabilder](panoramic-images.md)
-   + [Video ](video.md)
+   + [Video   ](video.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
    + [Karussellbanner](carousel-banners.md)

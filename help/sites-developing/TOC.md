@@ -137,7 +137,7 @@ ht-degree: 83%
    + [AEM Brackets-Erweiterung](aem-brackets.md)
    + [AEM Developer Tools for Eclipse](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
-+ Personalisierung {#personlization}
++ Personalisierung   {#personlization}
    + [ContextHub](contexthub.md)
    + [Referenz zur ContextHub-JavaScript-API](contexthub-api.md)
    + [Erweitern von ContextHub](ch-extend.md)
