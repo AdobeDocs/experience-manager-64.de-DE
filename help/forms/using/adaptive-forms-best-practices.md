@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4108'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -185,9 +185,9 @@ Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der v
 * Sie können eine benutzerdefinierte Sendeaktion schreiben, wenn die standardmäßigen Sendeaktionen Ihren Anwendungsfall nicht erfüllen. Weitere Informationen finden Sie unter[ Schreiben von benutzerdefinierten Übermittlungsaktionen für ein adaptives Formular](/help/forms/using/custom-submit-action-form.md).
 * Beziehen Sie serverseitige Validierungen ein, um zu verhindern, dass ungültige Daten übermittelt werden. 
 
-Sie können die Funktion der mehrfachen Signaturen von Adobe Sign in adaptiven Formularen nutzen. Beachten Sie die folgenden Punkte bei der Konfiguration von Adobe Sign in adaptiven Formularen. Weitere Informationen finden Sie unter [Verwenden von Adobe Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
+Sie können Acrobat Sign in adaptiven Formularen mit mehreren Signaturen nutzen. Beachten Sie Folgendes bei der Konfiguration von Acrobat Sign in adaptiven Formularen. Weitere Informationen finden Sie unter [Verwenden von Acrobat Sign in einem adaptiven Formular](/help/forms/using/working-with-adobe-sign.md).
 
-* Adobe Sign-aktiviertes Formular wird nur gesendet, nachdem alle Unterzeichner das Formular unterzeichnet haben. Formulare werden im Status „Ausstehende Signatur“ angezeigt, bis das Formular von allen Signierern unterzeichnet wurde.
+* Acrobat Sign-aktiviertes adaptives Formular wird nur gesendet, nachdem alle Unterzeichner das Formular signiert haben. Formulare werden im Status „Ausstehende Signatur“ angezeigt, bis das Formular von allen Signierern unterzeichnet wurde.
 * Sie können die Funktion des Unterzeichnens im Formular konfigurieren oder Unterzeichner auf eine neue Signaturseite beim Senden umleiten.
 * Konfigurieren Sie je nach Bedarf sequentielle oder parallele Signaturfunktionen.
 

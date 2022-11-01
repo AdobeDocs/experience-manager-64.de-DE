@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 feature: Adaptive Forms
 exl-id: 4b6d3533-cd1f-4944-b580-49fd90fcf87a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '2017'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -154,7 +154,7 @@ Darüber hinaus können Sie den Vorlageneditor verwenden, um eigene Vorlagen zu 
 
 >[!NOTE]
 >
->Wenn Sie ein adaptives Formular öffnen, das mit einer erweiterten Vorlage zur Bearbeitung erstellt wurde, wird eine Fehlermeldung angezeigt. Die erweiterte Vorlage verfügt über eine Komponente für den Unterzeichnungs-Schritt, und Adobe Sign ist für diesen standardmäßig aktiviert. Um den Fehler zu beheben, erstellen Sie eine [Adobe Sign Cloud-Konfiguration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) und [konfigurieren Sie einen Unterzeichner](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform).
+>Wenn Sie ein adaptives Formular öffnen, das mit einer erweiterten Vorlage zur Bearbeitung erstellt wurde, wird eine Fehlermeldung angezeigt. Die erweiterte Vorlage verfügt über eine Signaturschritt-Komponente und Acrobat Sign ist dafür standardmäßig aktiviert. Erstellen und wählen Sie eine [Acrobat Sign-Cloud-Konfiguration](/help/forms/using/adobe-sign-integration-adaptive-forms.md) und [Signierer konfigurieren](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) um den Fehler zu beheben.
 
 ## Formularmodelleigenschaften eines adaptiven Formulars bearbeiten {#edit-form-model}
 

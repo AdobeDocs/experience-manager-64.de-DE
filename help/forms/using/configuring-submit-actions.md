@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 feature: Adaptive Forms
 exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 93%
@@ -22,7 +22,7 @@ ht-degree: 93%
 
 Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können die Übermittlungsaktion in einem adaptiven Formular konfigurieren. Adaptive Formulare umfassen auch einige Übermittlungsaktionen für den sofortigen Einsatz. Sie können die standardmäßige Übermittlungsaktion kopieren und erweitern und so eine eigene Übermittlungsaktion erstellen. Basierend auf Ihre Anforderungen können Sie eine eigene Übermittlungsaktion schreiben und registrieren, um Daten im gesendeten Formular zu verarbeiten.
 
-Wenn ein Formular vorausgefüllt oder übermittelt wird, werden die gesendeten Daten durch AEM zur Datenmassage in Zwischenformate weitergeleitet. Daten werden nicht in einer AEM-Instanz gespeichert, es sei denn, das adaptive Formular verwendet Adobe Sign, überprüft, Formularportalentwürfe, -übermittlungen oder AEM Workflows.
+Wenn ein Formular vorausgefüllt oder übermittelt wird, werden die gesendeten Daten durch AEM zur Datenmassage in Zwischenformate weitergeleitet. Daten werden nicht in einer AEM-Instanz gespeichert, es sei denn, das adaptive Formular verwendet Acrobat Sign, überprüft, Formularportalentwürfe, -übermittlungen oder AEM Workflows.
 
 Sie können eine Sendeaktion in der Seitenleiste im Bereich **[!UICONTROL Senden]** des „Container für adaptive Formulare“ konfigurieren.
 

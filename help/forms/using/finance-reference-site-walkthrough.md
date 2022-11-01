@@ -1,7 +1,7 @@
 ---
 title: Anleitung zur We.Finance-Referenz-Site
 seo-title: We.Finance reference site walkthrough
-description: 'Sehen Sie sich die We.Finance-Referenz-Website an, um zu verstehen, wie sie implementiert wurde. We.Finance ist eine Beispielimplementierung, die wichtige Funktionen von AEM Forms zeigt. '
+description: Sehen Sie sich die We.Finance-Referenz-Website an, um zu verstehen, wie sie implementiert wurde. We.Finance ist eine Beispielimplementierung, die wichtige Funktionen von AEM Forms zeigt.
 seo-description: Explore the We.Finance reference site and understand how it has been implemented. We.Finance is a sample implementation to showcase key features and functionalities of AEM Forms.
 uuid: cbcedba4-6151-475d-b6c2-9859e0382768
 content-type: reference
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '9201'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
@@ -116,7 +116,7 @@ In der folgenden Dokumentation finden Sie weitere Informationen zu Funktionen, d
 * [Regeleditor](/help/forms/using/rule-editor.md)
 * [Designs](/help/forms/using/themes.md)
 * [-Datenintegration](/help/forms/using/data-integration.md)
-* [Verwenden von Adobe Sign in adaptiven Formularen ](/help/forms/using/working-with-adobe-sign.md)
+* [Verwenden von Acrobat Sign in adaptiven Formularen](/help/forms/using/working-with-adobe-sign.md)
 * [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md)
 
 ### Sehen Sie selbst {#a-see-it-yourself}
@@ -159,7 +159,7 @@ We.Finance erhält den Kreditkartenantrag von Sarah. Eine Aufgabe wird Gloria Ri
 
 Wenn Sarah den Kreditkartenantrag ausfüllt und abschickt, wird ein Formularworkflow ausgelöst und eine Aufgabe in Glorias AEM-Posteingang erstellt.
 
-AEM Forms on OSGi bietet formularbasierte Workflows, mit denen Sie adaptive formularbasierte Workflows erstellen können. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, zum Starten von Dokumentdiensten, zur Integration mit Adobe Sign-Signatur-Workflows usw. verwendet werden. Weitere Informationen finden Sie unter [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms on OSGi bietet formularbasierte Workflows, mit denen Sie adaptive formularbasierte Workflows erstellen können. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, den Start von Document Services, die Integration in den Acrobat Sign-Signatur-Workflow usw. verwendet werden. Weitere Informationen finden Sie unter [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Die folgende Abbildung zeigt den AEM-Workflow, der den Kreditkartenantrag verarbeitet und eine PDF-Ausgabe des Antrags generiert. 
 
@@ -405,7 +405,7 @@ In der folgenden Dokumentation finden Sie weitere Informationen zu Funktionen, d
 * [Regeleditor](/help/forms/using/rule-editor.md)
 * [Designs](/help/forms/using/themes.md)
 * [-Datenintegration](/help/forms/using/data-integration.md)
-* [Verwenden von Adobe Sign in adaptiven Formularen ](/help/forms/using/working-with-adobe-sign.md)
+* [Verwenden von Acrobat Sign in adaptiven Formularen](/help/forms/using/working-with-adobe-sign.md)
 * [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md)
 
 #### Sehen Sie selbst {#see-it-yourself-6}
@@ -434,7 +434,7 @@ Die Aufgabe wird Gloria wieder zugewiesen. Sie überprüft die beigefügte ID un
 
 Wenn Sarah den Hypothekenantrag ausfüllt und einreicht, wird ein Formular-Workflow ausgelöst und eine Aufgabe in Glorias AEM-Posteingang erstellt. Während Gloria den Antrag prüft und weitere Informationen anfordert, wird die Aufgabe John Doe zugewiesen. Wenn John Doe die ID anfügt und den Antrag erneut absendet, wird sie Gloria zugewiesen. Dies ist in dem mit dem Hypothekenantrag verknüpften AEM-Workflow definiert.
 
-AEM Forms on OSGi bietet formularbasierte Workflows, mit denen Sie adaptive formularbasierte Workflows erstellen können. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, zum Starten von Dokumentdiensten, zur Integration mit Adobe Sign-Signatur-Workflows usw. verwendet werden. Weitere Informationen finden Sie unter [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms on OSGi bietet formularbasierte Workflows, mit denen Sie adaptive formularbasierte Workflows erstellen können. Diese Workflows können für Überprüfungen und Genehmigungen, Geschäftsprozessabläufe, den Start von Document Services, die Integration in den Acrobat Sign-Signatur-Workflow usw. verwendet werden. Weitere Informationen finden Sie unter [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Das folgende Bild zeigt den AEM-Workflow, der mit dem Hypothekenantrag verknüpft ist.
 
@@ -720,7 +720,7 @@ In der folgenden Dokumentation finden Sie weitere Informationen zu Funktionen, d
 * [Regeleditor](/help/forms/using/rule-editor.md)
 * [Designs](/help/forms/using/themes.md)
 * [-Datenintegration](/help/forms/using/data-integration.md)
-* [Verwenden von Adobe Sign in adaptiven Formularen ](/help/forms/using/working-with-adobe-sign.md)
+* [Verwenden von Acrobat Sign in adaptiven Formularen](/help/forms/using/working-with-adobe-sign.md)
 * [Formularzentrierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md)
 
 #### Sehen Sie selbst {#see-it-yourself-12}
@@ -883,7 +883,7 @@ Beide Richtlinien verwenden dieselbe interaktive Kommunikation. Die Abschnitte i
 Die Referenz-Website bietet außerdem eine interaktive Kommunikation, die Microsoft Dynamics als Datenquelle für das Formulardatenmodell verwendet. Führen Sie die folgenden Schritte aus, um die interaktive Kommunikation für die Anleitung zur automatischen Versicherung zu konfigurieren:
 
 1. Melden Sie sich bei https:// an[author]:[port]/crx/de als Administrator.
-1. Öffnen Sie die `/apps/we-finance/components/ccrui/ccrui.jsp`-Datei.
+1. Öffnen Sie die Datei `/apps/we-finance/components/ccrui/ccrui.jsp`.
 1. Legen Sie den Wert von `FormFieldRequestParameter`nach `/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal-dynamics`
 1. Tippen Sie auf **Alle speichern**. Die Referenz-Website ist für die Verwendung der interaktiven Kommunikation konfiguriert, die MS Dynamics als Datenquelle verwendet.
 

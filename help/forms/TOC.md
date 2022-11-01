@@ -8,7 +8,7 @@ user-guide-title: Adobe Experience Manager 6.4, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 97%
@@ -119,7 +119,7 @@ ht-degree: 97%
       + [Forms-JEE-Workflows](using/forms-workflow-jee-handling-user-data.md)
       + [Formularportal](using/forms-portal-handling-user-data.md)
       + [Korrespondenzverwaltung](using/correspondence-management-handling-user-data.md)
-      + [Integration mit Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+      + [Integration mit Acrobat Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Document Security](/help/forms/using/document-security-handling-user-data.md)
    + Härten der AEM Forms-Umgebung {#hardening-aem-forms-environment}
       + [Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen](using/hardening-securing-aem-forms-environment.md)
@@ -161,7 +161,7 @@ ht-degree: 97%
 + Adaptive Formulare - Erweitertes Authoring {#adaptive-forms-advanced-authoring}
    + [Erstellen adaptiver Formulare mithilfe des JSON-Schemas](using/adaptive-form-json-schema-form-model.md)
    + [Adaptive Formulare mithilfe des XML-Schemas erstellen](using/adaptive-form-xml-schema-form-model.md)
-   + [Verwenden von Adobe Sign in einem adaptiven Formular](using/working-with-adobe-sign.md)
+   + [Verwenden von Acrobat Sign in einem adaptiven Formular](using/working-with-adobe-sign.md)
    + [Erstellen und Verwenden von Designs](using/themes.md)
    + [Regeleditor für adaptive Formulare](using/rule-editor.md)
    + [API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen](using/invoke-form-data-model-services.md)
@@ -181,7 +181,7 @@ ht-degree: 97%
    + [Automatisieren von Tests von adaptiven Formularen](using/calvin.md)
    + [Stilkonstrukte für adaptive Formulare](using/styling-constructs-adaptive-forms.md)
    + [Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen](using/synchronizing-adaptive-forms-xfa.md)
-   + [Integrieren von Adobe Sign mit AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
+   + [Integrieren von Acrobat Sign mit AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Erstellen und Verwalten von Assetüberprüfungen in Formularen](using/create-reviews-forms.md)
    + [Standardmäßige Validierungsfehlermeldungen für adaptive Formulare](using/standard-validation-error-messages-adaptive-forms.md)
 + Interaktive Kommunikation {#interactive-communications}

@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 47%
+ht-degree: 46%
 
 ---
 
@@ -46,7 +46,7 @@ Wenn Sie Microsoft Edge als Browser verwenden:
 * Auswählen **[!UICONTROL Immer deaktiviert]**.
 * Starten Sie den Browser neu.
 
-## Plattform {#platform}
+## Platform {#platform}
 
 * **Vorgangs-Dashboard:** Bei einer Sicherungsdatei ohne die Erweiterung „.zip“ wird die Fortschrittsleiste nicht angezeigt. (GRANITE-10713)
 * **HTL:** Java Use -Objekt mit nachstehendem Leerzeichen in der Paketdeklaration friert den SightlyJavaCompilerService ein. (GRANITE-20836)
@@ -102,7 +102,7 @@ Wenn Sie Microsoft Edge als Browser verwenden:
 ### Installation und Entwicklung
 
 * (Nur AEM Forms JEE) Beim Bootstrapping von JBoss Application Server während der Ausführung von Configuration Manager werden EJB-Aufruf- und Bootstrap-Fehler zurückgegeben. Diese können jedoch ignoriert werden. (Referenznummer CQ-4229793)
-* Wenn AEM Forms gestartet wird, wird die `SAX Security Manager could not be setup` angezeigt. (CQ-4297403)
+* Wenn AEM Forms gestartet wird, wird die Meldung `SAX Security Manager could not be setup` angezeigt. (CQ-4297403)
 
 ### Interaktive Kommunikation
 
@@ -133,14 +133,14 @@ Wenn Sie Microsoft Edge als Browser verwenden:
 
 (CQ-4238462)
 
-### Adobe Sign-Integration
+### Acrobat Sign-Integration
 
-* Der Adobe Sign-Planer setzt zwischenzeitlich aus, deshalb werden noch zu unterzeichnende Formulare nicht zur Übermittlung weitergeleitet. Um das Problem zu beheben, starten Sie den **Unterstützung für Apache Sling Scheduler** Bundle von AEM Web Console unter https://[*server*]:[*port*]/system/console/bundles.
+* Acrobat Sign Scheduler funktioniert nicht mehr zwischenzeitlich, weshalb das Zeichen für ausstehende Formulare nicht zur Übermittlung verschoben wird. Um das Problem zu beheben, starten Sie den **Unterstützung für Apache Sling Scheduler** Bundle von AEM Web Console unter https://[*server*]:[*port*]/system/console/bundles.
 
 ### Bearbeitung adaptiver Formulare
 
 * In adaptiven Formularen nimmt die Diagramm-Komponente mehr Platz ein, als es normalerweise der Fall ist.
 * Beim Speichern von Eigenschaften für adaptive Formulare, adaptive Formularfragmente oder interaktive Kommunikation in der Forms Manager-Benutzeroberfläche wird eine Ausnahme zurückgegeben.
 * Die angegebene maximale Zeichenanzahl für ein adaptives Formulartextfeld wird auf Samsung-Geräten mit Android 6.0 nicht berücksichtigt. (Referenznummer CQ-4235205)
-* Wenn Sie ein Formular mit einem standardmäßigen HTML-Upload-Feld von einem Apple iOS-Gerät senden, wird der Inhalt der Datei jetzt zuverlässig gesendet. Apple iOS 15.1 bietet eine Korrektur für das Problem.
+* Wenn Sie ein Formular mit einem Standard-HTML-Upload-Feld von einem Apple iOS-Gerät aus übermitteln, wird der Inhalt der Datei manchmal nicht gesendet und eine 0-Byte-Datei wird am anderen Ende empfangen. Apple iOS 15.1 bietet eine Korrektur für das Problem.
 

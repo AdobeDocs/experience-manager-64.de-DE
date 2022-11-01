@@ -7,10 +7,10 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: aheimoz
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: dba3b09035e6ffafd1681b370e3a10a76564bf65
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '4637'
-ht-degree: 95%
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 95%
 
 ## Schritte für den Forms-Workflow {#forms-workflow-steps}
 
-Schritte für den Forms-Workflow führen AEM Forms-spezifische Vorgänge in einem AEM-Workflow durch. Diese Schritte ermöglichen das schnelle Erstellen adaptiver formularzentrierter Workflows auf OSGi. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- oder Genehmigungs-Workflows, interner und „across-the-firewall“-Geschäftsprozesse verwendet werden. Sie können die Forms-Workflow-Schritte außerdem verwenden, um Document Services zu starten, Adobe Sign-Signatur-Workflow zu integrieren und andere AEM Forms-Vorgänge auszuführen. Sie benötigen das [AEM Forms Add-On](https://www.adobe.com/go/learn_aemforms_documentation_63_de), um diese Schritte in einem Workflow zu verwenden.
+Schritte für den Forms-Workflow führen AEM Forms-spezifische Vorgänge in einem AEM-Workflow durch. Diese Schritte ermöglichen das schnelle Erstellen adaptiver formularzentrierter Workflows auf OSGi. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- oder Genehmigungs-Workflows, interner und „across-the-firewall“-Geschäftsprozesse verwendet werden. Sie können auch Forms Workflow-Schritte verwenden, um Document Services zu starten, in den Acrobat Sign-Signatur-Workflow zu integrieren und andere AEM Forms-Vorgänge auszuführen. Sie benötigen das [AEM Forms Add-On](https://www.adobe.com/go/learn_aemforms_documentation_63_de), um diese Schritte in einem Workflow zu verwenden.
 
 ## Schritt „Aufgabe zuweisen“ {#assign-task-step}
 
@@ -106,7 +106,7 @@ Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwende
 * **Asset-URL**: Verwenden Sie diese Option zum Einbetten eines Weblinks einer interaktiven Kommunikation in die E-Mail. Nachdem Sie die Option ausgewählt haben, suchen Sie nach der interaktiven Kommunikation, die eingebettet werden soll. Das Asset kann sich auf dem Autoren- oder dem Veröffentlichungsserver befinden.
 * **Bild:** Verwenden Sie die Option, um ein Bild in die E-Mail einzubetten. Nachdem Sie die Option ausgewählt haben, suchen Sie nach dem entsprechenden Bild und wählen Sie es aus. Die Bildoption ist nur für die Bild-Tags (&lt;img src=&quot;&amp;ast;&quot; />) verfügbar, die in der E-Mail-Vorlage verfügbar sind.
 
-**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die Option **Literal**, um eine E-Mail-Adresse manuell anzugeben, oder wählen Sie die Option **Aus Workflow-Metadaten abrufen**, um die E-Mail-Adresse aus einer Metadaten-Eigenschaft abzurufen. Sie können auch eine Liste von Metadateneigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben.
+**E-Mail-Adresse des Absenders/Empfängers:** Wählen Sie die **Literal** Option zur manuellen Angabe einer E-Mail-Adresse oder zur Auswahl der **Aus Workflow-Metadaten abrufen** -Option zum Abrufen der E-Mail-Adresse aus einer Metadateneigenschaft. Sie können auch eine Liste von Metadateneigenschaften-Arrays für die Option **Aus Workflow-Metadaten abrufen** angeben.
 
 **Pfad für Dateianhang:** Das am angegebenen Speicherort verfügbare Asset wird an die E-Mail angehängt. Der Pfad des Assets kann relativ zur Payload oder zum absoluten Pfad sein. Ein Beispielpfad ist [Payload_Directory]/attachments/
 
@@ -214,11 +214,11 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
 
 ## Schritt „Dokument signieren“ {#sign-document-step}
 
-Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren von Dokumenten verwenden. Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
+Der Schritt Dokument signieren ermöglicht Ihnen die Verwendung von Acrobat Sign zum Signieren von Dokumenten. Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 
 * **Name der Vereinbarung:** Geben Sie den Titel der Vereinbarung an. Der Name der Vereinbarung wird Teil des Betreffs und des Textkörpers der E-Mail, die an die Unterzeichner gesendet wird.
 * **Gebietsschema:** Geben Sie die Sprache für die E-Mail- und Bestätigungsoptionen an. 
-* **Cloud-Konfiguration für Adobe Sign**: Wählen Sie eine Adobe Sign Cloud-Konfiguration. Wenn Sie Adobe Sign für AEM Forms nicht konfiguriert haben, lesen Sie den Abschnitt [Adobe Sign in AEM Forms integrieren](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+* **Acrobat Sign Cloud-Konfiguration**: Wählen Sie eine Acrobat Sign Cloud-Konfiguration aus. Wenn Sie Acrobat Sign nicht für AEM Forms konfiguriert haben, finden Sie weitere Informationen unter [Integrieren von Acrobat Sign mit AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Zu signierendes Dokument:** Sie können ein Dokument an einem Speicherort relativ zur Payload auswählen, Nutzdaten als Dokument verwenden oder einen absoluten Pfad für das Dokument angeben.
 * **Pfad für Eingabeanlage:** Wählen Sie eine Anlage aus. Diese Anlagen sind im Signaturdokument enthalten. Sie können die Anlagen relativ zur Payload an einem Speicherort belassen oder einen absoluten Pfad für die Anlagen angeben.
@@ -234,8 +234,8 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 * **Unterzeichner wählen:** Geben Sie die Methode zum Auswählen von Unterzeichnern für das Dokument an. Sie können den Workflow einem Benutzer oder einer Gruppe dynamisch zuweisen oder manuell Details zu einem Unterzeichner hinzufügen.
 * **Skript oder Dienst zur Auswahl von Unterzeichnern:** Die Option ist nur verfügbar, wenn die Option „Dynamisch“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Sie können ein ECMAScript oder einen Service angeben, um Unterzeichner und Verifizierungsoptionen für ein Dokument auszuwählen.
 
-* **Unterzeichnerdetails:** Die Option ist nur verfügbar, wenn die Option „Manuell“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Verifizierungsmechanismus aus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist.
-* **Statusvariable:** Ein Adobe Sign-aktiviertes Dokument speichert den Signaturstatus des Dokuments in einer Variablen. Geben Sie den Namen der Statusvariable (adobeSignStatus) an. Eine Statusvariable einer Instanz ist in CRXDE unter /etc/workflow/instances/&lt;Server>/&lt;Datum/Uhrzeit>/&lt;Instanz des Workflow-Modells>/workItems/&lt;Knoten>/metaData verfügbar und enthält den Status einer Variablen.
+* **Unterzeichnerdetails:** Die Option ist nur verfügbar, wenn die Option „Manuell“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Verifizierungsmechanismus aus. Bevor Sie einen zweistufigen Überprüfungsmechanismus auswählen, stellen Sie sicher, dass die entsprechende Überprüfungsoption für das konfigurierte Acrobat Sign-Konto aktiviert ist.
+* **Statusvariable:** Ein für Acrobat Sign aktiviertes Dokument speichert den Signaturstatus des Dokuments in einer Variablen. Geben Sie den Namen der Statusvariable (adobeSignStatus) an. Eine Statusvariable einer Instanz ist in CRXDE unter /etc/workflow/instances/&lt;Server>/&lt;Datum/Uhrzeit>/&lt;Instanz des Workflow-Modells>/workItems/&lt;Knoten>/metaData verfügbar und enthält den Status einer Variablen.
 * **Pfad für signiertes Dokument:** Geben Sie den Speicherort für die unterzeichneten Dokumente an. Sie können die Nutzdatendatei (Payload file) überschreiben oder das signierte Dokument an einem Speicherort innerhalb des Nutzdatenordners platzieren.
 
 ## Schritt „Document Services“ {#document-services-steps}
@@ -316,4 +316,4 @@ Verschlüsseln, signieren und zertifizieren Sie ein Dokument. AEM Forms unterst�
 Senden Sie ein Dokument direkt an einen Drucker. Der Dienst unterstützt die folgenden Druckerzugriffsmechanismen:
 
 * **Drucker mit direktem Zugriff**: Ein Drucker, der auf demselben Computer installiert ist, wird als Drucker mit direktem Zugriff und der Computer als Druckerhost bezeichnet. Dieser Druckertyp kann ein lokaler Drucker sein, der direkt an den Computer angeschlossen ist.
-* **Drucker mit indirektem Zugriff**: Der Drucker, der auf einem Druckserver installiert ist, steht für den Zugriff von anderen Computern zur Verfügung. Es stehen Technologien wie das Common UNIX® Printing System (CUPS) und das LPD-Protokoll (Line Printer Daemon) zur Verfügung, um eine Verbindung zu einem Netzwerkdrucker herzustellen. Um auf einen Drucker mit indirektem Zugriff zuzugreifen, geben Sie die IP oder den Hostnamen des Druck-Servers an. Bei Verwendung dieses Mechanismus können Sie ein Dokument an einen LPD-URI senden, wenn im Netzwerk ein LP-Daemon ausgeführt wird. Mit dem Mechanismus können Sie das Dokument zu jedem Drucker weiterleiten, der mit dem Netzwerk verbunden ist, in dem ein LP-Daemon ausgeführt wird.
+* **Drucker mit indirektem Zugriff**: Der Drucker, der auf einem Druckserver installiert ist, steht für den Zugriff von anderen Computern zur Verfügung. Es stehen Technologien wie das Common UNIX® Printing System (CUPS) und das LPD-Protokoll (Line Printer Daemon) zur Verfügung, um eine Verbindung zu einem Netzwerkdrucker herzustellen. Um auf einen Drucker mit indirektem Zugriff zuzugreifen, geben Sie die IP-Adresse oder den Hostnamen des Druckservers an. Bei Verwendung dieses Mechanismus können Sie ein Dokument an einen LPD-URI senden, wenn im Netzwerk ein LP-Daemon ausgeführt wird. Mit dem Mechanismus können Sie das Dokument zu jedem Drucker weiterleiten, der mit dem Netzwerk verbunden ist, in dem ein LP-Daemon ausgeführt wird.

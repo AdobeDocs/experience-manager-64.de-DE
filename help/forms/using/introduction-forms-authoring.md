@@ -1,5 +1,5 @@
 ---
-title: 'Einführung in das Authoring adaptiver Formulare '
+title: Einführung in das Authoring adaptiver Formulare
 seo-title: Introduction to authoring adaptive forms
 description: AEM Forms bietet eine benutzerfreundliche, aber leistungsstarke Benutzeroberfläche zum Authoring adaptiver Formulare. Es enthält eine Reihe von Komponenten und Werkzeugen, mit denen Sie Formulare erstellen können.
 seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
@@ -10,10 +10,10 @@ topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 feature: Adaptive Forms
 exl-id: 62f1ddd3-9fc2-49dd-b588-0c3520e1cdd2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '3045'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -107,8 +107,8 @@ Die Seitenleiste enthält folgende Browser:
    <th><strong>Funktion</strong></th> 
   </tr> 
   <tr> 
-   <td>Adobe Sign Block</td> 
-   <td>Fügt einen Textblock mit Platzhaltern für Felder hinzu, die beim Signieren mit Adobe Sign ausgefüllt werden sollen.</td> 
+   <td>Acrobat Sign Block</td> 
+   <td>Fügt einen Textblock mit Platzhaltern für Felder hinzu, die beim Signieren mit Acrobat Sign ausgefüllt werden sollen.</td> 
   </tr> 
   <tr> 
    <td>Schaltfläche</td> 
@@ -152,7 +152,7 @@ Die Seitenleiste enthält folgende Browser:
   </tr> 
   <tr> 
    <td>Dateianhang</td> 
-   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianhangskomponente unterstützt eine vordefinierte Gruppe von Dateiformaten in adaptiven Formularen, die für Adobe Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Unterstützte Dateiformate</a>.</p> </td> 
+   <td><p>Fügt eine Schaltfläche hinzu, mit der Benutzer ergänzende Dokumente suchen und an das Formular anhängen können.</p> <p><strong>Hinweis: </strong>Die Dateianlagenkomponente unterstützt einen vordefinierten Satz von Dateiformaten in adaptiven Formularen, die für Acrobat Sign aktiviert sind. Weitere Informationen finden Sie unter <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Unterstützte Dateiformate</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Auflistung der Dateianhänge</td> 

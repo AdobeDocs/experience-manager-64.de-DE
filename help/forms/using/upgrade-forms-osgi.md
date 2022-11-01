@@ -1,7 +1,7 @@
 ---
 title: Aktualisierung auf AEM 6.4 Forms
 seo-title: Upgrade to AEM 6.4 Forms
-description: 'Sie können direkt von AEM 6.1 Forms, AEM 6.2 Forms und LiveCycle ES4 SP1 auf AEM 6.3 Forms aktualisieren. '
+description: Sie können direkt von AEM 6.1 Forms, AEM 6.2 Forms und LiveCycle ES4 SP1 auf AEM 6.3 Forms aktualisieren.
 seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 183ed9c6-6a9a-4932-8405-5ae2c6fac1ec
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 97%
+ht-degree: 91%
 
 ---
 
@@ -92,9 +92,9 @@ Sie können direkt von AEM 6.2 Forms oder AEM 6.3 Forms auf AEM 6.4 Forms aktual
       WHERE `key` = 'dataType'
       ```
 
-   * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Adobe Sign neu**
+   * **(Nur bei Aktualisierung von AEM 6.2 Forms oder früheren Versionen) Konfigurieren Sie Acrobat Sign neu**
 
-      Wenn Adobe Sign in der vorherigen Version von AEM Forms konfiguriert war, müssen Sie Adobe Sign über die AEM-Cloud-Services erneut konfigurieren. Weitere Informationen finden Sie unter [Adobe Sign mit AEM Forms integrieren](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
+      Wenn Sie Acrobat Sign in der vorherigen Version von AEM Forms konfiguriert haben, konfigurieren Sie Acrobat Sign von AEM Cloud Services neu. Weitere Informationen finden Sie unter [Integrieren von Acrobat Sign mit AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
    * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Analysen und Berichte neu**
 
