@@ -5,10 +5,10 @@ description: In Inhaltsfragmentmodellen verwendete Datentypen können angepasst 
 seo-description: Data types used in Content Fragment Models can be customized.
 page-status-flag: de-activated
 uuid: d8215dbf-2dbe-43cb-a5c1-dc1cb412a204
-contentOwner: aheimoz
+contentOwner: AEM Docs
 discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 2%
@@ -115,7 +115,7 @@ Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Model
   </tr> 
   <tr> 
    <td>Einzeilentext</td> 
-   <td>String (Zeichenfolge)</td> 
+   <td>Zeichenfolge</td> 
    <td>text-single</td> 
   </tr> 
   <tr> 
@@ -150,7 +150,7 @@ Alle folgenden Eigenschaften müssen vorhanden sein, damit der Datentyp im Model
   </tr> 
   <tr> 
    <td>Tags</td> 
-   <td>String (Zeichenfolge)</td> 
+   <td>Zeichenfolge</td> 
    <td>tags</td> 
   </tr> 
  </tbody> 

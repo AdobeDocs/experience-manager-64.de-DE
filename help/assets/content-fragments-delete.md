@@ -4,7 +4,7 @@ seo-title: Content Fragments - Delete Considerations
 description: Inhaltsfragmente – Überlegungen zum Löschen
 seo-description: Content Fragments - Delete Considerations
 uuid: b4161a0e-7e17-4547-9bdd-cf3b1d0d7d63
-contentOwner: aheimoz
+contentOwner: AEM Docs
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
@@ -12,10 +12,10 @@ discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
 feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '460'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ In Bezug auf die Berechtigung zum Löschen müssen Inhaltsfragmente aus zwei Per
 1. **Das Inhaltsfragment als einzelne Entität.**
 
    * **Nutzungsszenario:** Ein Benutzer, der ein Inhaltsfragment bearbeiten oder aktualisieren und **ein ganzes Fragment löschen muss**.
-   * **Berechtigungen:**[](/help/sites-administering/security.md#actions)[ Die Berechtigung zum Löschen kann über die Benutzer- und/oder Gruppenverwaltung zugewiesen werden](/help/sites-administering/security.md#managing-permissions).
+   * **Berechtigungen**: Die Berechtigung zum [Löschen](/help/sites-administering/security.md#actions) kann [über die Benutzer- und/oder Gruppenverwaltung zugewiesen](/help/sites-administering/security.md#managing-permissions) werden.
 
 1. **Die verschiedenen Unterentitäten, die ein Inhaltsfragment bilden. Z. B. Varianten, Unterknoten.**
 
@@ -91,10 +91,10 @@ Damit einem bestimmten Benutzer und/oder einer bestimmten Benutzergruppe das Bea
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` und `jcr:removeChildNodes`, `jcr:removeNode`
 
-Diese `remove` -Berechtigungen müssen [über Zugriffssteuerungslisten in CRXDE Lite verwaltet werden](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Diese Berechtigungen zum `remove` müssen [mit Zugriffssteuerungslisten in CRXDE Lite verwaltet werden](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Die `add` und `modify` -Berechtigungen können auch in CRXDE Lite oder über die User Management Console verwaltet werden.
+Die Berechtigungen zum `add` und `modify` können ebenfalls in CRXDE Lite oder über die User Management-Konsole verwaltet werden.
 
-Beispielsweise die Definition der `remove` Berechtigungen für eine Gruppe `content-authors-no-delete`:
+Beispielsweise die Definition der Berechtigungen zum `remove` für eine Gruppe `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)

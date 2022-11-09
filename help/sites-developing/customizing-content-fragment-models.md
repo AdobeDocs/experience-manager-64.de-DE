@@ -5,13 +5,13 @@ description: Inhaltsfragmentmodelle können angepasst und erweitert werden.
 seo-description: Content Fragment Models can be customized and extended.
 page-status-flag: de-activated
 uuid: 5bcfb5d8-37d4-4a0e-882d-bc8a1bac6ba7
-contentOwner: aheimoz
+contentOwner: AEM Docs
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 3%
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ Der Inhaltsfragmentmodell-Editor ist ein Assistent, der auf `Formbuilder`, geerb
 
 Diese Komponente verfügt über die Tools, die zum Rendern der Drag-and-Drop-Oberfläche des Modell-Editors erforderlich sind, inklusive Datentypen und Eigenschaften für jede Komponente.
 
-## Standorte {#locations}
+## Speicherorte {#locations}
 
 Modelle werden gespeichert und unter `/conf`, in dem sich der Ordner [Eigenschaft &quot;Inhaltsfragmentmodelle&quot;](/help/assets/content-fragments-models.md#enable-content-fragment-models) aktiviert. Diese Einstellung ist auch im **Konfigurationseigenschaften**, auf die über die **[Konfigurationsbrowser](/help/sites-administering/configurations.md)**.
 
@@ -42,9 +42,9 @@ Ein Benutzer kann [Inhaltsfragmentmodell erstellen](/help/assets/content-fragmen
 
 >[!CAUTION]
 >
->Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
 >
->Dies liegt daran, dass der Inhalt von `/libs` wird beim nächsten Upgrade Ihrer Instanz überschrieben (und kann überschrieben werden, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal upgraden. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 
 ## Struktur eines Modells {#structure-of-a-model}
 
@@ -103,9 +103,9 @@ Die **Inhaltsfragmentmodell-Editor** hat zwei Teile:
 
 >[!CAUTION]
 >
->Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
+>Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
 >
->Dies liegt daran, dass der Inhalt von `/libs` wird beim nächsten Upgrade Ihrer Instanz überschrieben (und kann überschrieben werden, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
+>da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal upgraden. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 
 <!-- Please uncomment when files are used
 The properties on the right side define a form that is submitted directly into JCR under `/conf`; see the path in the example [Structure of a Model](/help/sites-developing/customizing-content-fragment-models.md#structure-of-a-model).

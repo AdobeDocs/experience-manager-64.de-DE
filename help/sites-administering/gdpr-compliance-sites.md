@@ -4,16 +4,16 @@ seo-title: AEM Sites - GDPR Readiness
 description: Hier erfahren Sie, wie AEM Sites die Anforderungen der Datenschutz-Grundverordnung erfüllt.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
-contentOwner: aheimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 38bae0d7-9544-42d0-9766-45c66f254e5c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 92%
 
 >[!IMPORTANT]
 >
->Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Informationen gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen. wie DSGVO, CCPA usw.
+>Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, aber die behandelten Details gelten für alle Datenschutzbestimmungen wie die DSGVO, CCPA usw.
 
 Die Datenschutz-Grundverordnung der Europäischen Union ist seit Mai 2018 in Kraft.
 
@@ -45,13 +45,13 @@ Standardmäßig speichern die Komponenten von AEM Sites keine von Besuchern auf 
 
 ## Opt-in/Opt-out {#opt-in-opt-out}
 
-AEM hat eine [Cookie-Abmeldedienst](/help/sites-developing/cookie-optout.md) die für die Verwaltung des Opt-in/Opt-outs für Benutzer verwendet werden kann.
+AEM bietet einen [Service zum Deaktivieren von Cookies](/help/sites-developing/cookie-optout.md), mit dem die Entscheidung der Benutzer bezüglich der Verwendung von Cookies verwaltet werden kann.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
 AEM Sites bietet eine optionale Integration mit Enhanced Insights by Analytics, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://docs.adobe.com/content/help/de/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Verbesserte Personalisierung durch Target {#enhanced-personalization-by-target}
 
@@ -61,7 +61,7 @@ Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Ad
 
 ## ContextHub {#contexthub}
 
-AEM bietet eine optionale Datenschicht mit [ContextHub](/help/sites-developing/contexthub.md). Dadurch verbleiben besucherspezifische Daten im Browser, die dort für eine regelbasierte Personalisierung verwendet werden.
+AEM bietet mit [ContextHub](/help/sites-developing/contexthub.md) eine optionale Datenebene. Dadurch verbleiben besucherspezifische Daten im Browser, die dort für eine regelbasierte Personalisierung verwendet werden.
 
 Standardmäßig werden diese Besucherdaten nicht in AEM gespeichert. AEM übermittelt Regeln an die Datenebene, sodass personalisierungsbezogene Entscheidungen direkt im Browser getroffen werden.
 

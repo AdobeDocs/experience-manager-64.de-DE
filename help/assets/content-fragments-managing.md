@@ -4,7 +4,7 @@ seo-title: Managing Content Fragments
 description: Inhaltsfragmente werden als Assets gespeichert und daher hauptsächlich über die Assets-Konsole verwaltet.
 seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
 feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 97%
@@ -31,7 +31,7 @@ Inhaltsfragmente werden als **[!UICONTROL Assets]** gespeichert und daher haupts
 >
 >Inhaltsfragmente werden dann für erstellte Seiten verwendet. Weitere Informationen finden Sie unter [Seitenerstellung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
 
-## Erstellen von Inhaltsfragmenten  {#creating-content-fragments}
+## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
 ### Erstellen von Inhaltsmodellen {#creating-a-content-model}
 
@@ -121,7 +121,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 
 >[!NOTE]
 >
->Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder [Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de).
+>Viele davon sind [Standardaktionen für Assets](managing-assets-touch-ui.md) und/oder [Desktop-Programm](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## Öffnen des Fragmenteditors {#opening-the-fragment-editor}
 
@@ -253,7 +253,6 @@ Neben den Standardoptionen enthält die [Zeitleiste](managing-assets-touch-ui.md
 >* Standardfunktionen für alle Assets
 >* In der Zeitleiste erstellt worden
 >* Mit dem Fragment-Asset verbunden
-
 >
 >Anmerkungen (für Inhaltsfragmente) sind:
 >
