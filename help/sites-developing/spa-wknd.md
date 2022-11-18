@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 exl-id: 6ec7f037-3582-49ce-9297-6acd01283949
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 66%
+source-wordcount: '139'
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Machen Sie sich mit diesem mehrteiligen Tutorial, das Sie durch Projekt-Setup, K
 
 ## Tutorials {#tutorials}
 
-Ein durchgängiges Beispiel für die Erstellung einer eigenen Single Page Application, die mit der AEM von der Projekteinrichtung über das Anwendungs-Routing bearbeitet werden kann, finden Sie in den WKND-SPA-Tutorials:
+Ein Komplettbeispiel für das Erstellen einer eigenen Single Page Application, die mit AEM bearbeitet werden kann, von der Projekteinrichtung bis zum Anwendungs-Routing, finden Sie in den WKND-SPA-Tutorials:
 
-* [Erste Schritte mit dem AEM SPA-Editor und Angular](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Erste Schritte mit dem AEM SPA-Editor und React](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Erste Schritte mit dem AEM SPA-Editor und Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-angular-tutorial/overview.html?lang=de)
+* [Erste Schritte mit dem AEM SPA-Editor und React](https://experienceleague.adobe.com/docs/experience-manager-learn/spa-react-tutorial/overview.html?lang=de)
 
-Bevor Sie Ihr eigenes SPA Projekt für AEM starten, sollten Sie jedoch auch die [Entwickeln von SPA für AEM](/help/sites-developing/spa-architecture.md) Dokument.
+Bevor Sie jedoch Ihr eigenes SPA-Projekt für AEM starten, sollten Sie auch das Dokument [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md) lesen.

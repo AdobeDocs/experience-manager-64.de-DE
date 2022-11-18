@@ -1,14 +1,14 @@
 ---
 title: Konfigurieren von AEM Assets mit Brand Portal
-description: 'Erfahren Sie, wie Sie AEM Assets mit Brand Portal konfigurieren, um Assets und Sammlungen in Brand Portal zu veröffentlichen. '
+description: Erfahren Sie, wie AEM Assets mit Brand Portal integriert wird, um Assets und Sammlungen in Brand Portal zu veröffentlichen.
 contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: a50cd2b50191b86ac27cc228944c6c9e917b08cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 54%
+source-wordcount: '1642'
+ht-degree: 69%
 
 ---
 
@@ -26,9 +26,9 @@ Adobe Experience Manager Assets wird mit Brand Portal über konfiguriert. [!DNL 
 >
 >***Nur für Bestandskunden***
 >
->Es wird empfohlen, weiterhin die vorhandene alte OAuth-Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth-Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über [!DNL Adobe I/O].
+>Es wird empfohlen, weiterhin die vorhandene alte OAuth-Gateway-Konfiguration zu verwenden. Falls Probleme mit der alten OAuth-Gateway-Konfiguration auftreten, löschen Sie die vorhandene Konfiguration und erstellen Sie eine neue Konfiguration über die [!DNL Adobe I/O].
 
-In dieser Hilfe werden die folgenden beiden Anwendungsfälle beschrieben:
+In diesem Hilfeartikel werden die folgenden beiden Anwendungsfälle beschrieben:
 
 * [Neue Konfiguration](#configure-new-integration-64): Wenn Sie ein neuer Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit Brand Portal konfigurieren möchten, können Sie eine neue Konfiguration in [!DNL Adobe I/O].
 * [Upgrade der Konfiguration](#upgrade-integration-64): Wenn Sie bereits ein Brand Portal-Benutzer sind und Ihre AEM Assets-Autoreninstanz mit Brand Portal auf dem alten OAuth Gateway konfiguriert ist, wird empfohlen, die vorhandenen Konfigurationen zu löschen und eine neue Konfiguration auf [!DNL Adobe I/O].
@@ -55,9 +55,9 @@ Sie benötigen Folgendes, um AEM Assets mit Brand Portal zu konfigurieren:
 
 Es wird empfohlen, AEM 6.4 zu verwenden, um eine AEM Autoreninstanz einzurichten. Wenn Sie AEM nicht eingerichtet haben, laden Sie es von den folgenden Speicherorten herunter:
 
-* Wenn Sie bereits AEM sind, laden Sie AEM 6.4 von herunter. [Adobe Licensing-Website](http://licensing.adobe.com).
+* Wenn Sie bereits ein AEM-Kunde sind, laden Sie AEM 6.4 von der [Adobe-Lizenzierungs-Website](http://licensing.adobe.com) herunter.
 
-* Wenn Sie Adobe Partner sind, verwenden Sie [Ausbildungsprogramm für Adobe](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) , um AEM 6.4 anzufordern.
+* Wenn Sie ein Adobe-Partner sind, fordern Sie über das [Adobe Partner Training-Programm](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) AEM 6.4 an.
 
 Anweisungen zum Einrichten einer AEM- Autoreninstanz finden Sie nach dem Herunterladen von AEM unter [Bereitstellen und Verwalten](https://helpx.adobe.com/de/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
 
@@ -254,7 +254,7 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
 
    >[!NOTE]
    >
-   >Die Replikationsagenten arbeiten parallel und teilen die Auftragsverteilung gleichmäßig, wodurch die Veröffentlichungsgeschwindigkeit um das Vierfache der ursprünglichen Geschwindigkeit gesteigert wird. Wenn der Cloud-Service konfiguriert wurde, sind keine zusätzlichen Konfigurationsschritte erforderlich, um die Replikationsagenten zu aktivieren. Sie werden standardmäßig aktiviert, um die parallele Veröffentlichung mehrerer Assets zu ermöglichen.
+   >Die Replikationsagenten funktionieren parallel und teilen die Auftragsverteilung gleichmäßig auf, wodurch die Veröffentlichungsgeschwindigkeit im Vergleich zur ursprünglichen Geschwindigkeit vervierfacht wird. Wenn der Cloud-Service konfiguriert wurde, sind keine zusätzlichen Konfigurationsschritte erforderlich, um die Replikationsagenten zu aktivieren. Sie werden standardmäßig aktiviert, um die parallele Veröffentlichung mehrerer Assets zu ermöglichen.
 
 1. Um die Verbindung zwischen AEM Assets Author und Brand Portal zu überprüfen, klicken Sie auf **[!UICONTROL Verbindung testen]**.
 
@@ -271,24 +271,24 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
    >
    >Vermeiden Sie es, einen der Replikationsagenten zu deaktivieren, da dies dazu führen kann, dass die Replikation einiger Assets fehlschlägt.
    >
-   >Stellen Sie sicher, dass alle vier Replikationsagenten konfiguriert sind, um Timeout-Fehler zu vermeiden. Siehe [Beheben von Problemen beim parallelen Veröffentlichen in Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Stellen Sie sicher, dass alle vier Replikationsagenten so konfiguriert sind, dass Zeitüberschreitungsfehler vermieden werden. Siehe [Beheben von Problemen beim parallelen Veröffentlichen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=de#connection-timeout).
 
 Brand Portal wurde erfolgreich mit Ihrer AEM Assets-Autoreninstanz konfiguriert. Sie haben nun die folgenden Möglichkeiten:
 
 * [Veröffentlichen von Assets aus AEM Assets in Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Veröffentlichen von Ordnern aus AEM Assets in Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Veröffentlichen von Sammlungen aus AEM Assets in Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Konfigurieren der Asset-Beschaffung](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) Ermöglichen es den Brand Portal-Benutzern, Assets in AEM Assets beizutragen und zu veröffentlichen.
+* [Konfigurieren der Asset-Beschaffung](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=de) Ermöglichen es den Brand Portal-Benutzern, Assets in AEM Assets beizutragen und zu veröffentlichen.
 
 ## Upgrade der Konfiguration {#upgrade-integration-64}
 
 Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um vorhandene Konfigurationen zu aktualisieren:
 
-1. [Ausführungsaufträge überprüfen](#verify-jobs)
-1. [Vorhandene Konfigurationen löschen](#delete-existing-configuration)
+1. [Überprüfen von laufenden Aufträgen](#verify-jobs)
+1. [Löschen von vorhandenen Konfigurationen](#delete-existing-configuration)
 1. [Erstellen einer Konfiguration](#configure-new-integration-64)
 
-### Ausführungsaufträge überprüfen {#verify-jobs}
+### Überprüfen von laufenden Aufträgen {#verify-jobs}
 
 Stellen Sie sicher, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentlichungsauftrag ausgeführt wird, bevor Sie Änderungen vornehmen. Dazu können Sie alle vier Replikationsagenten überprüfen und sicherstellen, dass die Warteschlange ideal/leer ist.
 
@@ -306,17 +306,17 @@ Stellen Sie sicher, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentlichu
 
 1. Suchen Sie die Replikationsagenten Ihres Brand Portal-Mandanten.
 
-   Stellen Sie sicher, dass **Warteschlange ist inaktiv** für alle Replikationsagenten ist kein Veröffentlichungsauftrag aktiv.
+   Stellen Sie sicher, dass für alle Replikationsagenten die **Warteschlange im Leerlauf ist** und kein Veröffentlichungsauftrag aktiv ist.
 
    ![](assets/test-integration3.png)
 
-### Vorhandene Konfigurationen löschen {#delete-existing-configuration}
+### Löschen von vorhandenen Konfigurationen {#delete-existing-configuration}
 
 Sie müssen beim Löschen der vorhandenen Konfiguration die folgende Checkliste ausführen.
 
 * Alle vier Replikationsagenten löschen
 * Cloud-Dienst löschen
-* MAC-Benutzer löschen
+* Mac-Benutzer löschen
 
 Führen Sie die folgenden Schritte aus, um die vorhandene Konfiguration zu löschen:
 
@@ -353,7 +353,7 @@ Sie können jetzt [Konfiguration erstellen](#configure-new-integration-64) auf I
    <li>Step text</li>
    -->
 
-Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen im Brand Portal veröffentlichen. Weitere Details finden Sie unter:
+Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in Brand Portal veröffentlichen. Weitere Details finden Sie unter:
 
 * [Veröffentlichen von Assets in Brand Portal](brand-portal-publish-assets.md)
 * [Veröffentlichen von Assets und Ordnern in Brand Portal](brand-portal-publish-folder.md)

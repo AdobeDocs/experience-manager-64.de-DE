@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: 268edb9b-0f52-44c4-a75c-d9dfe39e7d17
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 86%
+source-wordcount: '481'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutz
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Beachten Sie, dass die Modusauswahl keinen Designmodus mehr aufweist. Alle Seiten für We.Retail basieren auf bearbeitbaren Vorlagen. Um das Design bearbeitbarer Vorlagen zu ändern, müssen diese im Vorlagen-Editor bearbeitet werden.
-1. Aus dem **Seiteninformationen** Menüauswahl **Vorlage bearbeiten**.
+1. Wählen Sie aus dem Menü **Seiteninformationen** die Option **Vorlage bearbeiten** aus.
 1. Sie bearbeiten nun die Vorlage der Hero-Seite.
 
    Der Strukturmodus der Seite ermöglicht es Ihnen, die Struktur der Vorlage zu ändern. Dazu gehören beispielsweise die Komponenten, die im Layout-Container zulässig sind.
@@ -73,6 +73,6 @@ Alle Seiten in We.Retail basieren auf bearbeitbaren Vorlagen, sodass auch Benutz
 
 ## Weitere Informationen {#more-information}
 
-Weitere Informationen finden Sie im Authoring-Dokument . [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder der Seite mit dem Entwicklerdokument [Vorlagen - bearbeitbar](/help/sites-developing/page-templates-editable.md) für vollständige technische Details zu bearbeitbaren Vorlagen.
+Umfassende technische Informationen zu bearbeitbaren Vorlagen finden Sie im Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) für Autoren oder im Dokument [Bearbeitbare Seitenvorlagen](/help/sites-developing/page-templates-editable.md) für Entwickler.
 
-Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Siehe Authoring-Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für einen Überblick über die Funktionen der Kernkomponenten und das Entwicklerdokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für einen technischen Überblick.
+Sie können sich darüber hinaus eingehender mit [Kernkomponenten](/help/sites-developing/we-retail-core-components.md) befassen. Im Dokument [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) für Autoren finden Sie einen Überblick über die Kernkomponenten. Im Dokument [Dokumentation zur Entwicklung der Kernkomponenten](https://helpx.adobe.com/de/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.

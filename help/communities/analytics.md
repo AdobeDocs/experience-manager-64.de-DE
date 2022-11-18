@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2764'
 ht-degree: 6%
 
 ---
@@ -88,16 +88,16 @@ Um die Funktionen von Analytics for Communities zu konfigurieren, müssen Sie si
 
 ## Adobe Analytics Report Suite für Videoberichte {#adobe-analytics-report-suite-for-video-reporting}
 
-Verwenden der [Report Suite Manager](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html), können Analytics-Report Suites so konfiguriert werden, dass eine Community-Site Berichte für Communities-Funktionen bereitstellen kann.
+Verwenden der [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html), können Analytics-Report Suites so konfiguriert werden, dass eine Community-Site Berichte für Communities-Funktionen bereitstellen kann.
 
-Durch Anmeldung bei [Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) mit [Firmenname und Benutzername](analytics.md#prerequisites)kann eine neue oder vorhandene Report Suite wie folgt konfiguriert werden:
+Durch Anmeldung bei [Adobe Marketing Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) mit [Firmenname und Benutzername](analytics.md#prerequisites)kann eine neue oder vorhandene Report Suite wie folgt konfiguriert werden:
 
-* [11 Konversionsvariablen](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (eVars)
+* [11 Konversionsvariablen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (eVars)
 
    * **`evar1`** bis **`evar11`** enabled
    * Kann vorhandene eVars wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
 
-* [7 Erfolgsereignisse](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) (Ereignisse)
+* [7 Erfolgsereignisse](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) (Ereignisse)
 
    * **`event1`** bis **`event7`** enabled
    * Typ **`Counter`**
@@ -106,7 +106,7 @@ Durch Anmeldung bei [Adobe Marketing Cloud](https://docs.adobe.com/content/help/
    * Kann vorhandene Ereignisse wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
 
 
-* [Videomanagement](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+* [Videomanagement](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
    * Videoberichterkonsole
 
@@ -114,7 +114,7 @@ Durch Anmeldung bei [Adobe Marketing Cloud](https://docs.adobe.com/content/help/
       * Wählen Sie Speichern aus
    * Video Core Measurement Console
 
-      * Wählen Sie nun eine der folgenden Optionen aus `Use Solution Variables`
+      * Auswählen `Use Solution Variables`
       * Wählen Sie Speichern aus
 
 
@@ -128,7 +128,6 @@ Bei Verwendung von **vorhandene Report Suite**, kann es erforderlich sein, [Änd
 >
 >* **`evar1`** bis **`evar11`**
 >* **`event1`** bis **`event7`**
-
 >
 >**Bevor die Community-Site veröffentlicht wird,** Es ist wichtig, die bereits vorhandene Zuordnung wiederherzustellen, indem die AEM Variablen verschoben werden, die automatisch Analytics-Variablen zugeordnet waren, als Analytics für eine Community-Site aktiviert wurde.
 >
@@ -187,9 +186,9 @@ Im Dialogfeld &quot;Konfiguration erstellen&quot;geben die eingegebenen Werte di
 
 * **[!UICONTROL Vorlage]**
 
-   Wählen Sie nun eine der folgenden Optionen aus `Adobe Analytics Configuration`
+   Auswählen `Adobe Analytics Configuration`
 
-* Wählen Sie **[!UICONTROL Erstellen]**
+* Wählen Sie **[!UICONTROL Erstellen]** aus
    * Startet die Konfigurationsseite und öffnet `Analytics Settings` dialog
 
 ### Dialogfeld &quot;Analytics-Einstellungen&quot; {#analytics-settings-dialog}
@@ -241,7 +240,7 @@ So speichern Sie die Einstellungen:
       * Testen Sie ein anderes Rechenzentrum.
       * Kundenbetreuer kontaktieren
 
-* Klicken Sie auf **[!UICONTROL OK]**
+* Wählen Sie **[!UICONTROL OK]** aus
 
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
@@ -268,9 +267,9 @@ Nach erfolgreicher Konfiguration der Basisverbindung mit Adobe Analytics muss ei
 
 * **[!UICONTROL Vorlage]**
 
-   Wählen Sie nun eine der folgenden Optionen aus `Adobe Analytics Framework`
+   Auswählen `Adobe Analytics Framework`
 
-* Wählen Sie **[!UICONTROL Erstellen]**
+* Wählen Sie **[!UICONTROL Erstellen]** aus
 
 Durch Erstellen des Analytics-Frameworks wird das Framework zur Konfiguration geöffnet.
 
@@ -456,7 +455,6 @@ Siehe Abschnitte:
 >
 >* **`evar1`** bis **`evar11`**
 >* **`event1`** bis **`event7`**
-
 >
 >**Bevor die Community-Site veröffentlicht wird,** Es ist wichtig, die bereits vorhandene Zuordnung wiederherzustellen und die Communities AEM Variablen, die automatisch zugeordnet wurden (als Analytics für die Community-Site aktiviert wurde), in andere Analytics-Variablen zu verschieben. Diese Neuzuordnung sollte für alle Communities-Komponenten einheitlich sein.
 >
@@ -545,10 +543,10 @@ Das Forenthema ist derzeit das einzige Beispiel für diese Anpassung:
 
 ## Benutzerdaten in Analytics verwalten {#manage-user-data-in-analytics}
 
-Adobe Analytics bietet APIs, mit denen Sie auf Benutzerdaten zugreifen, diese exportieren und löschen können. Weitere Informationen finden Sie unter [Zugriffs- und Löschanfragen einreichen](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+Adobe Analytics bietet APIs, mit denen Sie auf Benutzerdaten zugreifen, diese exportieren und löschen können. Weitere Informationen finden Sie unter [Zugriffs- und Löschanfragen einreichen](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## Ressourcen {#resources}
 
-* Adobe Marketing Cloud: [Hilfe und Referenz zu Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+* Adobe Marketing Cloud: [Hilfe und Referenz zu Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
 * AEM: [Integration mit Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics mit externen Anbietern](../../help/sites-administering/external-providers.md)

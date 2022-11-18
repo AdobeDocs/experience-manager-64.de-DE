@@ -4,10 +4,10 @@ seo-title: Developing AEM Components
 description: AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten bereitstellen, zu speichern, zu formatieren und zu rendern.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3477'
-ht-degree: 90%
+source-wordcount: '3475'
+ht-degree: 99%
 
 ---
 
@@ -29,19 +29,19 @@ AEM-Komponenten werden verwendet, um den Inhalt, den Sie auf Ihren Web-Seiten be
 
 >[!NOTE]
 >
->Diese Seite ist eine Fortsetzung des Dokuments [AEM Komponenten - Grundlagen](/help/sites-developing/components-basics.md).
+>Diese Seite ist eine Fortsetzung des Dokuments [AEM-Komponenten – Grundlagen](/help/sites-developing/components-basics.md).
 
 >[!CAUTION]
 >
->Komponenten unten `/libs/cq/gui/components/authoring/dialog` sind nur für die Verwendung im Editor vorgesehen (Komponentendialogfelder in der Bearbeitung). Wenn sie an anderer Stelle verwendet werden (z. B. in einem Assistentendialogfeld), verhalten sie sich möglicherweise nicht wie erwartet.
+>Unter `/libs/cq/gui/components/authoring/dialog` stehende Komponenten sollen nur im Editor (Komponentendialogfelder beim Schreiben) verwendet werden. Wenn sie an anderer Stelle verwendet werden (z. B. in einem Assistentendialogfeld), verhalten sie sich möglicherweise nicht wie erwartet.
 
-## Code-Beispiele {#code-samples}
+## Codebeispiele {#code-samples}
 
 Diese Seite enthält die Referenzdokumentation (oder Links zur Referenzdokumentation) die für die Entwicklung neuer Komponenten für AEM erforderlich sind. Einige praktische Beispiele finden Sie unter [Entwickeln von AEM-Komponenten - Codebeispiele](/help/sites-developing/developing-components-samples.md).
 
 ## Struktur {#structure}
 
-Die grundlegende Struktur einer Komponente wird auf der Seite [AEM Komponenten - Grundlagen](/help/sites-developing/components-basics.md#structure) beschrieben. Dieses Dokument behandelt sowohl die Touch-optimierte als auch die klassische Benutzeroberfläche. Auch wenn Sie die klassischen Einstellungen in Ihrer neuen Komponente nicht verwenden müssen, kann es hilfreich sein, sie beim Erben von vorhandenen Komponenten zu beachten.
+Die grundlegende Struktur einer Komponente wird auf der Seite [AEM Komponenten - Grundlagen](/help/sites-developing/components-basics.md#structure) beschrieben. Dieses Dokument gilt sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche. Auch wenn Sie die klassischen Einstellungen in Ihrer neuen Komponente nicht verwenden müssen, kann es hilfreich sein, sie beim Erben von vorhandenen Komponenten zu beachten.
 
 ## Erweiterung bestehender Komponenten und Dialogfelder {#extending-existing-components-and-dialogs}
 
@@ -65,7 +65,7 @@ Das Erweitern einer vorhandenen Komponente kann mit der [Ressourcentyphierarchie
 
 Es ist auch möglich, ein *Komponentendialogfeld* mithilfe des [Sling Resource Mergers](/help/sites-developing/sling-resource-merger.md) zu überschreiben und die Eigenschaft `sling:resourceSuperType` zu definieren.
 
-Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müssen, anstatt das gesamte Dialogfeld neu zu definieren (mithilfe von `sling:resourceSuperType`). Dies ist jetzt die empfohlene Methode für die Erweiterung eines Komponentendialogfelds
+Dies bedeutet, dass Sie nur die erforderlichen Unterschiede neu definieren müssen, anstatt das gesamte Dialogfeld neu zu definieren (mit `sling:resourceSuperType`). Dies ist jetzt die empfohlene Methode für die Erweiterung eines Komponentendialogfelds
 
 Siehe [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) für weitere Informationen.
 
@@ -93,21 +93,21 @@ Der Mechanismus zum Trennen der Logik von der Erscheinung hilft zu verdeutlichen
 
 ### Verwenden von JavaScript   {#using-javascript}
 
-[Die HTL JavaScript Use-API ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
+[Die HTL JavaScript Use-API ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen](https://helpx.adobe.com/de/experience-manager/htl/using/use-api-javascript.html). Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 
-### Verwendung clientseitiger HTML-Bibliotheken {#using-client-side-html-libraries}
+### Verwendung Client-seitiger HTML-Bibliotheken {#using-client-side-html-libraries}
 
-Moderne Websites beruhen in hohem Maße auf der clientseitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
+Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-Um dieses Problem zu beheben, bietet AEM **Clientseitige Bibliotheksordner**, mit dem Sie Ihren clientseitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
+Um Abhilfe zu schaffen, stellt AEM **Client-seitige Bibliotheksordner** zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
 
-Lesen Sie [Verwendung clientseitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md) für weitere Informationen.
+Lesen Sie [Verwendung Client-seitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md) für weitere Informationen.
 
 ## Konfigurieren des Bearbeitungsverhaltens {#configuring-the-edit-behavior}
 
 Sie können das Bearbeitungsverhalten einer Komponente konfigurieren, einschließlich Attributen wie Aktionen, die für die Komponente verfügbar sind, Eigenschaften des Editors für die Bearbeitung im Kontext, die sich auf Ereignisse für die Komponente beziehen. Die Konfiguration gilt dabei für die Touch-optimierte wie die klassische Benutzeroberfläche, wenn auch mit gewissen Unterschieden.
 
-Die [Bearbeitungsverhalten einer Komponente konfiguriert ist](/help/sites-developing/components-basics.md#edit-behavior) durch Hinzufügen eines `cq:editConfig` Knoten des Typs `cq:EditConfig` unterhalb des Komponentenknotens (vom Typ `cq:Component`) und durch Hinzufügen bestimmter Eigenschaften und untergeordneter Knoten.
+Um das [Bearbeitungsverhalten einer Komponente zu konfigurieren](/help/sites-developing/components-basics.md#edit-behavior), fügen Sie einen `cq:editConfig`-Knoten des Typs `cq:EditConfig` unter dem Komponentenknoten (des Typs `cq:Component`) hinzu sowie spezifische Eigenschaften und untergeordnete Knoten.
 
 ## Konfigurieren des Vorschauverhaltens {#configuring-the-preview-behavior}
 
@@ -117,11 +117,11 @@ Komponenten mit einem Rendering, die für den WCM-Modus empfindlich sind, müsse
 
 >[!NOTE]
 >
->In der Touch-optimierten Benutzeroberfläche werden nur die Werte `EDIT` und `PREVIEW` werden für [WCM-Modus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) Cookie.
+>In der Touch-optimierten Benutzeroberfläche werden nur die Werte `EDIT` und `PREVIEW` für den [WCM-Modus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html)-Cookie verwendet.
 
 ## Erstellen und Konfigurieren eines Dialogfelds {#creating-and-configuring-a-dialog}
 
-Dialogfelder werden verwendet, um dem Autor die Interaktion mit der Komponente zu ermöglichen. Mithilfe eines Dialogfelds können Autoren und/oder Administratoren Inhalte bearbeiten, die Komponente konfigurieren oder Designparameter definieren (mithilfe eines [Dialogfeld &quot;Design&quot;](#creating-and-configuring-a-design-dialog))
+Dialogfelder werden verwendet, um dem Autor die Interaktion mit der Komponente zu ermöglichen. Mit einem Dialogfeld können Autorinnen und Autoren und/oder Admins Inhalte bearbeiten, die Komponente konfigurieren oder Design-Parameter definieren (mit einem [Design-Dialogfeld](#creating-and-configuring-a-design-dialog))
 
 ### Coral- und Granite-Benutzeroberfläche {#coral-ui-and-granite-ui}
 
@@ -151,15 +151,15 @@ Ausführliche Informationen finden Sie hier:
 
 Dialogfelder für die Touch-optimierte Benutzeroberfläche:
 
-* benannt sind `cq:dialog`.
-* werden als `nt:unstructured` Knoten mit dem `sling:resourceType` -Eigenschaft festgelegt.
+* haben den Namen`cq:dialog`.
+* sind als Knoten `nt:unstructured` mit der Eigenschaft `sling:resourceType` definiert.
 
 * befinden sich unter ihrem Knoten `cq:Component` und neben ihrer Komponentendefinition.
 * werden auf der Serverseite (als Sling-Komponenten) basierend auf ihrer Inhaltsstruktur und der Eigenschaft `sling:resourceType` gerendert.
 * verwenden das Framework der Granite-Benutzeroberfläche.
 * enthalten eine Knotenstruktur, die die Felder im Dialogfeld beschreibt.
 
-   * diese Knoten sind `nt:unstructured` mit den erforderlichen `sling:resourceType` -Eigenschaft.
+   * Diese Knoten sind `nt:unstructured` mit der erforderlichen Eigenschaft `sling:resourceType`.
 
 Eine Beispielknotenstruktur könnte wie folgt aussehen:
 
@@ -193,7 +193,7 @@ Beispiele finden Sie hier:
 >Siehe:
 >
 >* AEM-Gems-Session zum [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
->* Der zugehörige Beispielcode wird unter [Codebeispiel – So passen Sie Dialogfelder an](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields) behandelt.
+>* Der zugehörige Beispiel-Code wird unter [Codebeispiel – So passen Sie Dialogfelder an](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields) behandelt.
 >
 
 
@@ -308,7 +308,7 @@ Beispiele finden Sie hier:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield/js/validations.js`
 
-   * im Abschnitt [Codebeispiele](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `/libs/cq/gui/components/authoring/dialog/clientlibs/dialog/js/validations.js`
 
@@ -389,7 +389,7 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * `assetGroup`:
 
       * Typ: `String`
-      * Wert: die Gruppe, zu der das zugehörige Asset gehört; Beispiel: `media`
+      * Wert: die Gruppe, zu der das zugehörige Asset gehört; zum Beispiel `media`
    * `assetMimetype`:
 
       * Typ: `String`
@@ -397,15 +397,15 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * `droptarget`:
 
       * Typ: `String`
-      * Wert: Ablageziel; Beispiel: `image`
+      * Wert: das Ablageziel; zum Beispiel, `image`
    * `resourceType`:
 
       * Typ: `String`
-      * Wert: die zugehörige Komponentenressource; Beispiel: `foundation/components/image`
+      * Wert: die zugehörige Komponentenressource; zum Beispiel `foundation/components/image`
    * `type`:
 
       * Typ: `String`
-      * Wert: den Typ, beispielsweise `Images`
+      * Wert: der Typ, z. B. `Images`
 
 
 
@@ -422,12 +422,12 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-project-archetype auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
+* [Öffnen Sie das Projekt aem-project-archetype in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip) herunter.
 
 >[!NOTE]
 >
->Die automatische Erstellung von Komponenteninstanzen kann jetzt einfach über die Benutzeroberfläche konfiguriert werden, wenn Sie [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) und bearbeitbare Vorlagen. Siehe [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) für weitere Informationen zur Definition, welche Komponenten automatisch bestimmten Medientypen zugeordnet werden.
+>Die automatische Erstellung von Komponenteninstanzen kann jetzt einfach über die Benutzeroberfläche konfiguriert werden, wenn [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und bearbeitbare Vorlagen verwendet werden. Weitere Informationen zum Definieren der Komponenten, die bestimmten Medientypen automatisch zugeordnet werden, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
 ## Verwenden von AEM Brackets-Erweiterungen {#using-the-aem-brackets-extension}
 
@@ -435,8 +435,8 @@ Die [AEM Brackets-Erweiterung](/help/sites-developing/aem-brackets.md) bietet ei
 
 Die Erweiterung:
 
-* Erleichtert die Synchronisierung (kein Maven oder File Vault erforderlich), um die Effizienz der Entwickler zu erhöhen, und hilft Front-End-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen.
-* Enthält einige [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) -Unterstützung, die Vorlagensprache, die die Entwicklung von Komponenten vereinfacht und die Sicherheit erhöht.
+* Erleichtert die Synchronisierung (kein Maven oder File Vault erforderlich), um die Effizienz der Entwickler zu erhöhen, und hilft Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen.
+* Bietet [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html)-Unterstützung, die Vorlagensprache, die entwickelt wurde, um die Komponentenentwicklung zu vereinfachen und die Sicherheit zu erhöhen.
 
 >[!NOTE]
 >
@@ -467,7 +467,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
 
 ### Migrieren von cq:listener-Code {#migrating-cq-listener-code}
 
-Wenn Sie ein Projekt migrieren, das für die klassische Benutzeroberfläche entwickelt wurde, wird die `cq:listener` Code (und komponentenbezogene clientlibs) verwendet möglicherweise Funktionen, die für die klassische Benutzeroberfläche spezifisch sind (z. B. `CQ.wcm.*`). Für die Migration müssen Sie diesen Code mithilfe der entsprechenden Objekte/Funktionen in der Touch-optimierten Benutzeroberfläche aktualisieren.
+Wenn Sie ein Projekt migrieren, das für die klassische Benutzeroberfläche konzipiert wurde, verwendet der `cq:listener`-Code (und komponentenbezogene Client-Bibliotheken) möglicherweise Funktionen, die für die klassische Benutzeroberfläche spezifisch sind (z. B. `CQ.wcm.*`). Für die Migration müssen Sie diesen Code mithilfe der entsprechenden Objekte/Funktionen in der Touch-optimierten Benutzeroberfläche aktualisieren.
 
 Wenn Ihr Projekt vollständig auf die Touch-optimierte Benutzeroberfläche migriert wird, müssen Sie diesen Code ersetzen, um die für die Touch-optimierte Benutzeroberfläche relevanten Objekte und Funktionen zu verwenden.
 

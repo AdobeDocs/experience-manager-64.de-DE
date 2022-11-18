@@ -8,17 +8,17 @@ breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Administering
 role: Admin
-source-git-commit: 7eaa338be262d953abc045ab88432507021734ca
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 94%
+source-wordcount: '639'
+ht-degree: 98%
 
 ---
 
 
 # AEM 6.4-Administratorenanleitung {#administering}
 
-+ [Übersicht über das Benutzerhandbuch für Administratoren](home.md)
++ [Übersicht über die Administratorenanleitung](home.md)
 + Sites-Funktionen {#introduction}
    + [Website-Administration](msm-and-translation.md)
    + [Wiederverwenden von Inhalten: Multi Site Manager und Live Copy](msm.md)
@@ -51,7 +51,7 @@ ht-degree: 94%
    + [Der Bulk Editor](bulk-editor.md)
    + [Konfigurieren von E-Mail-Benachrichtigungen](notification.md)
    + [Konfigurieren von RTE für die Erstellung zugriffsbereiter Sites](rte-accessible-content.md)
-   + [Link-Checker](external-link-checker.md)
+   + [Der Link-Checker](external-link-checker.md)
    + [Beheben von Fehlern in AEM](troubleshoot.md)
    + [Auditprotokollwartung in AEM 6](operations-audit-log.md)
    + [Bearbeiter](enable-classic-ui-editor.md)
@@ -76,7 +76,7 @@ ht-degree: 94%
    + [Sicherheitscheckliste](security-checklist.md)
    + [OWASP – Top 10](owasp-top10.md)
    + [Ausführung von AEM im produktionsbereiten Modus](production-ready.md)
-   + [Identity Management](identity-management.md)
+   + [Identitäts-Management](identity-management.md)
    + [Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services](ims-config-and-admin-console.md)
    + [Erstellen von geschlossenen Benutzergruppen](cug.md)
    + [Beheben von Serialisierungsproblemen in AEM](mitigating-serialization-issues.md)
@@ -95,19 +95,19 @@ ht-degree: 94%
    + [Verschlüsselungsunterstützung für Konfigurationseigenschaften](encryption-support-for-configuration-properties.md)
    + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
    + [Content-Disposition-Filter](content-disposition-filter.md)
-+ Personalisierung    {#personalization}
++ Personalisierung {#personalization}
    + [Personalisierung   ](personalization.md)
    + [Konfigurieren von ContextHub](contexthub-config.md)
    + [ClientContext](client-context.md)
    + [Kampagnen](campaigns.md)
    + [Konfigurieren der Segmentierung mit ContextHub](segmentation.md)
    + [Konfigurieren der Segmentierung](campaign-segmentation.md)
-   + [Erweitern und Konfigurieren des Design-Importtools für Einstiegsseiten](extending-the-design-importer-for-landingpages.md)
+   + [Erweitern und Konfigurieren des Design-Import-Tools für Einstiegsseiten](extending-the-design-importer-for-landingpages.md)
    + [Integrieren von Einstiegsseiten in Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ E-Commerce {#ecommerce}
-   + [E-Commerce](ecommerce.md)
++ eCommerce {#ecommerce}
+   + [eCommerce](ecommerce.md)
    + [Konzepte](concepts.md)
-   + [Verwalten des generischen eCommerce](generic.md)
+   + [Verwalten von generischem E-Commerce](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
@@ -131,7 +131,7 @@ ht-degree: 94%
    + [Verwandte Community-Artikel](related-community-articles.md)
    + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
    + [Hinweis zum End of Life von Flash-Viewern](flash-viewers-eol.md)
-   + [Integrieren mit Adobe Creative Cloud](https://docs.adobe.com/content/help/de-DE/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
+   + [Integrieren mit Adobe Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html?lang=de)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
    + [Opt-in für Adobe Analytics und Adobe Target](opt-in.md)
    + [AEM-Portale und Portlets](aem-as-portal.md)
@@ -153,16 +153,16 @@ ht-degree: 94%
    + [Target-Integration mit Experience Fragments](experience-fragments-target.md)
 + Best Practices {#bestpractices}
    + [Best Practices](administer-best-practices.md)
-   + [Best Practices für die Übersetzung](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html)
-   + [Best Practices für MSM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html)
+   + [Best Practices für die Übersetzung](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/tc-bp.html?lang=de)
+   + [Best Practices für MSM](https://experienceleague.adobe.com/docs/experience-manager-64/administering/introduction/msm-best-practices.html?lang=de)
    + [AEM Sites – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-sites.md)
-   + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html)
+   + [Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/handling-gdpr-requests-for-aem-platform.html?lang=de)
    + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)
 + Content Management {#contentmanagement}
    + [Arbeiten mit Paketen](package-manager.md)
    + [Offloader für Assets-Workflows](workflow-offloader.md)
    + [Verwalten von Tags](tags.md)
-   + [Das Seiten-Exporttool](page-exporter.md)
+   + [Das Seiten-Export-Tool](page-exporter.md)
    + [Tagging-Konsole der klassischen Benutzeroberfläche](classic-console.md)
    + [Content Management für Screens](content-management-screens.md)
    + [WebDAV-Zugriff](webdav-access.md)

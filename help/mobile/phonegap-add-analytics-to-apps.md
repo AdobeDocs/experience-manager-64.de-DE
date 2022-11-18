@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 814285ca-5584-49fc-a190-eff431790d59
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1031'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Möchten Sie ansprechende und relevante Erlebnisse für Ihre Mobile App-Benutzer erstellen? Wenn Sie das Adobe Mobile Services SDK nicht zur Überwachung und Messung des Lebenszyklus und der Nutzung von Anwendungen verwenden, auf welcher Grundlage basieren Sie dann Ihre Entscheidungen? Wo sind Ihre treusten Kunden? Wie können Sie sicherstellen, dass Sie relevant bleiben und Konversionen optimieren?
 
@@ -104,7 +104,7 @@ Nachdem Sie diese Schritte ausgeführt haben, kann Ihre App alle Lebenszyklusmet
 
 ### Instrumentieren Ihres Codes für das vollständige App-Tracking {#instrument-your-code-for-full-app-tracking}
 
-Im Abschnitt werden verschiedene Tracking-APIs bereitgestellt [AMS PhoneGap-Plug-in-API.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+Im Abschnitt werden verschiedene Tracking-APIs bereitgestellt [AMS PhoneGap-Plug-in-API.](https://experienceleague.adobe.com/docs/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 Auf diese Weise können Sie Status und Aktionen verfolgen, z. B., wohin Seiten Ihre Benutzer in Ihrer App navigieren und welche Steuerelemente am häufigsten verwendet werden. Die einfachste Möglichkeit, Ihre App für das Tracking zu instrumentieren, besteht darin, die Analytics-APIs zu verwenden, die vom AMS-Plug-in bereitgestellt werden.
 

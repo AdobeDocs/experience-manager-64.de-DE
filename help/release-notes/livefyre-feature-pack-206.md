@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 5%
+source-wordcount: '643'
+ht-degree: 7%
 
 ---
 
@@ -49,7 +49,7 @@ Dieses Paket integriert die branchenführenden Kuratierungsfunktionen von Livefy
 * Integrieren Sie Ihren vorhandenen Produktkatalog nahtlos in Livefyre, um die Benutzerinteraktion und -konvertierung auf Ihren Sites zu fördern und für benutzergenerierte Inhalte mit Shopping-Funktion zu sorgen.
 * Bearbeiten oder löschen Sie Elemente in Ihrem AEM Commerce-Produktkatalog und aktualisieren Sie automatisch Änderungen in Livefyre.
 
-Hilfe zur Installation finden Sie unter [Integration mit Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html).
+Hilfe zur Installation finden Sie unter [Integration mit Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html?lang=de).
 
 ### Zusätzliche Versionsinformationen {#additional-release-information}
 
@@ -62,7 +62,7 @@ Aufgrund von Aktualisierungen, die sich auf die Aggregation von Inhalten aus Nic
 #### Neue Funktion oder Verbesserung {#new-feature-or-improvement}
 
 * Es wurde die Möglichkeit hinzugefügt, benutzergenerierte Inhalte zu durchsuchen, bevor in Livefyre soziale Konten für Rechteanforderungen eingerichtet werden. Sie müssen soziale Konten einrichten, um Berechtigungen anzufordern, oder die Rechteanforderung überschreiben, wenn Sie Eigentümer des Inhalts sind.
-* Instagram und Twitter [Workflow für UGC-Rechteanforderungen](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) wurde aktualisiert, um den neuesten APIs zu entsprechen.
+* Instagram und Twitter [Workflow für UGC-Rechteanforderungen](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html) wurde aktualisiert, um den neuesten APIs zu entsprechen.
 * Der Berechtigungsstatus und die entsprechenden Aktionen werden jetzt auf dem Bildschirm mit den Rechteanforderungen angezeigt.
 
 #### Fehlerbehebungen {#bug-fixes}

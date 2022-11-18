@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1641'
 ht-degree: 60%
 
 ---
@@ -34,7 +34,7 @@ AEM 6.4 führt zusätzlich zu Smart-Tags, die in AEM 6.3 eingeführt wurden, ein
 * Smart Content Service lernt die Unternehmenstaxonomie des Kunden und verwendet sie, um digitale Assets automatisch mit kundenrelevanten Tags zu versehen, die nicht nur allgemeine Tags sind. Dadurch lassen sich Asset erheblich schneller auffinden, wodurch die Markteinführungszeit verkürzt wird.
 * Adobe Sensei unterstützt den Smart Content Service, mit dem Sie den Bilderkennungsalgorithmus auf Ihre Unternehmenstaxonomie trainieren können. Diese Content-Intelligenz wird dann verwendet, um relevante Tags auf ähnliche Assets anzuwenden.
 
-Um AEM Assets Enhanced Smart Tags zu verwenden, installieren Sie die [neuestes Service Pack für AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
+Um AEM Assets Enhanced Smart Tags zu verwenden, installieren Sie die [neuestes Service Pack für AEM 6.4](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html).
 
 ## Smart Translation Search (basierend auf Adobe Sensei) {#smart-translation-search-powered-by-adobe-sensei}
 
@@ -105,7 +105,7 @@ AEM 6.4 bietet wichtige Verbesserungen bei der Asset-Berichterstellung:
 
 ## AEM-Desktop-Programm {#aem-desktop-app}
 
-AEM -Desktop-Programm wird auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM -Desktop-Programm finden Sie in einer speziellen [Versionshinweise zum AEM-Desktop-Programm](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/release-notes.html) Dokument.\
+AEM -Desktop-Programm wird auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM -Desktop-Programm finden Sie in einer speziellen [Versionshinweise zum AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=de) Dokument.\
 Hier finden Sie eine Liste AEM Highlights des -Desktop-Programms seit der Veröffentlichung von AEM 6.3:
 
 * Möglichkeit, hierarchische Ordner im Hintergrund hochzuladen.
@@ -117,8 +117,8 @@ Hier finden Sie eine Liste AEM Highlights des -Desktop-Programms seit der Veröf
 
 Um den Zugriff auf die Dokumentation und Best Practices zu erleichtern, stehen die folgenden Dokumentationen zur Verfügung:
 
-* [Benutzerhandbuch](https://docs.adobe.com/content/help/de/experience-manager-desktop-app/using/using.html), die sich an Endbenutzer richtet, die mit der Anwendung arbeiten.
-* [Installationshandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/install-upgrade.html), die darauf abzielt, dass Administratoren AEM und AEM Desktop-Programm für die Zusammenarbeit einrichten
+* [Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de), die sich an Endbenutzer richtet, die mit der Anwendung arbeiten.
+* [Installationshandbuch](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/install-upgrade.html), die darauf abzielt, dass Administratoren AEM und AEM Desktop-Programm für die Zusammenarbeit einrichten
 
 ## Mehrstufiger Speicher {#tiered-storage}
 

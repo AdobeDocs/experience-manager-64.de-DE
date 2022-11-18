@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 93%
+source-wordcount: '439'
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und gibt au�
 
 Wählen Sie den Berichtszeitraum aus, für den Analysedaten in der Konsole „Sites“ angezeigt werden:
 
-* Daten der  Daten
+* Daten der letzten 30   Tage
 * Daten der letzten 90 Tage
 * Daten aus diesem Jahr
 
@@ -75,7 +75,7 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 
 ### Öffnen von Inhaltseinblicken mithilfe von Sites {#opening-content-insights-from-sites}
 
-Öffnen [Content Insight](/help/sites-authoring/content-insights.md) über die Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
+Öffnen Sie [Inhaltseinsicht](/help/sites-authoring/content-insights.md) von der Konsole „Sites“ aus, um die Seiteneffektivität weiter zu untersuchen.
 
 1. Wählen Sie in der Konsole „Sites“ die Seite aus, für die Sie Inhaltseinblicke sehen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analyse und Empfehlungen“.
@@ -88,4 +88,4 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 >
 >Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.
 >
->Die [Von Adobe Analytics bereitgestelltes ActivityMap-Plugin](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) verwendet werden.
+>Ab jetzt sollte das [über Adobe Analytics bereitgestellte Activity Map-Plug-in](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de) verwendet werden.

@@ -1,15 +1,15 @@
 ---
-title: AEM 6.4-Implementierungs-Benutzerhandbuch
+title: Benutzerhandbuch zur Implementierung von AEM 6.4
 seo-title: AEM 6.4 Implementation User Guide
 description: Eine Übersicht über die Implementierung von AEM 6.4
 seo-description: An overview of how to implement AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
-source-git-commit: a01f94ddcd84c4d3f7769d6a55fbfcbef131dc57
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 44%
+source-wordcount: '102'
+ht-degree: 100%
 
 ---
 
@@ -17,15 +17,15 @@ ht-degree: 44%
 
 ## Entwickeln für AEM {#developing-on-aem}
 
-Bist du AEM Entwickler? [Beginnen Sie mit der Entwicklung auf AEM.](/help/sites-developing/home.md)
+Sind Sie AEM-Entwickler? [Erste Schritte mit der Entwicklung für AEM.](/help/sites-developing/home.md)
 
 ## Kernkomponenten für AEM {#core-components-for-aem}
 
-[Nutzen Sie die erweiterbaren Hauptkomponenten, damit Autoren mühelos Inhalte erstellen können.](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+[Nutzen Sie die erweiterbaren Hauptkomponenten, damit Autoren mühelos Inhalte erstellen können.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
 ## HTL (HTML-Vorlagensprache) für AEM {#htl-for-aem}
 
-[Verwenden Sie HTML Template Language , um für AEM zu entwickeln.](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
+[Verwenden Sie die HTML-Vorlagensprache für die Entwicklung für AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
 
 ## Cloud Manager für AEM {#cloud-manager-for-aem}
 
@@ -33,4 +33,4 @@ Bist du AEM Entwickler? [Beginnen Sie mit der Entwicklung auf AEM.](/help/sites-
 
 ## Dispatcher-Konfiguration {#dispatcher-configuration}
 
-[Dispatcher mit AEM konfigurieren](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
+[Dispatcher mit AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)

@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit SPA in AEM - Angular
+title: Erste Schritte mit SPAs in AEM – Angular
 seo-title: Getting Started with SPAs in AEM - Angular
 description: Dieser Artikel beschreibt eine Beispiel-SPA, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, unter Verwendung des Angular-Frameworks rasch mit Ihrer eigenen SPA zu arbeiten.
 seo-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
@@ -9,14 +9,14 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 exl-id: 96193680-c354-428c-ad77-428e0e79f626
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 84%
+source-wordcount: '1028'
+ht-degree: 98%
 
 ---
 
-# Erste Schritte mit SPA in AEM - Angular {#getting-started-with-spas-in-aem-angular}
+# Erste Schritte mit SPAs in AEM – Angular {#getting-started-with-spas-in-aem-angular}
 
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten in der Lage sein, Websites mithilfe von SPA-Frameworks zu erstellen, und Autoren möchten Inhalte innerhalb von AEM für eine Website, die mit SPA-Frameworks erstellt wurde, nahtlos bearbeiten.
 
@@ -29,7 +29,7 @@ Die SPA-Erstellungsfunktion bietet eine umfassende Lösung zur Unterstützung vo
 >[!NOTE]
 >Für die Funktion &quot;Single Page Application (SPA) Editor&quot;ist AEM Service Pack 2 (oder höher) 6.4 erforderlich.
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## Einführung {#introduction}
 
@@ -75,7 +75,7 @@ Weitere Details dazu können [hier auf GitHub](https://github.com/wcm-io-fronten
 
 >[!CAUTION]
 >
->Die Mindestversion der `aem-clientlib-generator` erforderlich ist 1.4.1.
+>`aem-clientlib-generator` muss mindestens Version 1.4.1 sein.
 
 Der `aem-clientlib-generator` wird in der Datei `clientlib.config.js` wie folgt konfiguriert.
 
@@ -116,7 +116,7 @@ Sobald das Paket erstellt wurde, kann es in eine AEM-Instanz hochgeladen werden.
 
 ### AEM-Projektarchetyp {#aem-project-archetype}
 
-Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
+Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ## Anwendungsstruktur {#application-structure}
 
@@ -290,10 +290,10 @@ Regelmäßig müssen Komponenten in einer SPA Daten austauschen. Es gibt mehrere
 
 ## Nächste Schritte {#next-steps}
 
-Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Abschnitt [Erste Schritte mit dem AEM-SPA-Editor - WKND-Events-Tutorial](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+Eine schrittweise Anleitung zum Erstellen einer eigenen SPA finden Sie unter [Erste Schritte mit dem AEM-SPA-Editor – WKND-Events-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de).
 
-Weitere Informationen dazu, wie Sie sich organisieren können, um SPA für AEM zu entwickeln, finden Sie im Artikel [Entwickeln von SPA für AEM](/help/sites-developing/spa-architecture.md).
+Weitere Informationen dazu, wie Sie sich für die Entwicklung von SPAs für AEM organisieren können, finden Sie im Artikel [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md).
 
-Weitere Informationen zum dynamischen Modell für die Komponentenzuordnung und dazu, wie es in SPA in AEM funktioniert, finden Sie im Artikel [Dynamisches Modell für die Komponentenzuordnung für SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Weitere Informationen zum dynamischen Modell für die Komponentenzuordnung und dazu, wie es mit SPAs in AEM funktioniert, finden Sie im Artikel [Dynamisches Modell für die Komponentenzuordnung bei SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Wenn Sie SPA in AEM für ein anderes Framework als React oder Angular implementieren möchten oder einfach nur tief in die Funktionsweise des SPA SDK für AEM eintauchen möchten, lesen Sie den Abschnitt [SPA Blueprint](/help/sites-developing/spa-blueprint.md) Artikel.
+Wenn Sie SPAs in AEM für ein anderes Framework als React oder Angular implementieren oder einfach nur tief in die Funktionsweise des SPA-SDK für AEM eintauchen möchten, lesen Sie den Artikel [SPA Blueprint](/help/sites-developing/spa-blueprint.md).

@@ -1,7 +1,7 @@
 ---
 title: Allgemeine Versionshinweise zu Adobe Experience Manager 6.4
 seo-title: Release Notes
-description: 'Die Hinweise zu Adobe Experience Manager 6.4 enthalten Versionshinweise, Neuerungen, Installationsanweisungen und detaillierte Änderungslisten. '
+description: Die Hinweise zu Adobe Experience Manager 6.4 enthalten Versionshinweise, Neuerungen, Installationsanweisungen und detaillierte Änderungslisten.
 seo-description: Adobe Experience Manager 6.4 notes outlining the release information, what's new, how to install and detailed change lists.
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: 722a82c1048105c18d59dfc35815548f9b7eace4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '2751'
-ht-degree: 80%
+source-wordcount: '2729'
+ht-degree: 84%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 80%
 | Version | 6.4 |
 | Typ | Hauptversion |
 | Datum der allgemeinen Verfügbarkeit | 4. April 2018 |
-| Empfohlene Updates | Informationen hierzu finden Sie unter [AEM-Versionen und -Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de) |
+| Empfohlene Updates | Informationen hierzu finden Sie unter [AEM-Versionen und -Updates](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html) |
 
 ### Wissenswertes {#trivia}
 
@@ -42,7 +42,7 @@ Adobe Experience Manager 6.4 ist seit dem 4. April 2018 allgemein verfügbar.
 
 Adobe Experience Manager 6.4 ist eine Upgrade-Version für die Codebasis von Adobe Experience Manager 6.3. Die Software bietet neue und erweiterte Funktionen, wichtige Kundenkorrekturen, Erweiterungen für Kunden mit hoher Priorität und allgemeine Fehlerbehebungen, die auf die Produktstabilisierung ausgerichtet sind. Sie umfasst auch die meisten aller Adobe Experience Manager 6.3 Feature Packs, Hotfixes und Service Packs.
 
-Die nachstehende Liste bietet eine Übersicht, während die nachfolgenden Seiten die vollständigen Details auflisten.
+Die folgende Liste bietet eine Übersicht und die nachfolgenden Seiten enthalten die vollständigen Details.
 
 ### Experience Manager Foundation {#experience-manager-foundation}
 
@@ -89,7 +89,7 @@ Weitere Informationen zu diesen Funktionen finden Sie in der [Dokumentation für
 
 Weitere Informationen finden Sie auf [dieser Dokumentationsseite](/help/sites-deploying/indexing-via-the-oak-run-jar.md).
 
-#### Überwachung {#monitoring}
+#### Monitoring {#monitoring}
 
 * Eine neue [Systemübersicht](/help/sites-administering/operations-dashboard.md#system-overview) bietet eine Momentaufnahme aller leistungsbezogenen Systemstatus und Aktivitäten.
 * Neue [Konsistenzprüfungen](/help/sites-administering/operations-dashboard.md#health-checks) für Indizierung, Abfragen und Wartung
@@ -117,7 +117,7 @@ Mit der Einführung von Fluid Experiences Anfang 2017 und unterstützt durch Inh
 
 **[Inhaltsfragmente](/help/assets/content-fragments.md)**
 
-Neu in 6.4 sind ein Visual Editor für [Inhaltsmodelle](/help/assets/content-fragments-models.md) und eine neue [konfigurierbare Komponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/content-fragment-component.html) zur Bereitstellung von flexiblen HTML-Ausgaben und JSON für die Einbindung in Content Services.
+Neu in 6.4 sind ein Visual Editor für [Inhaltsmodelle](/help/assets/content-fragments-models.md) und eine neue [konfigurierbare Komponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de) zur Bereitstellung von flexiblen HTML-Ausgaben und JSON für die Einbindung in Content Services.
 
 **Experience Fragments**
 
@@ -131,13 +131,13 @@ Es wurden verschiedene Verbesserungen am Sling Model Exporter und den Kernkompon
 
 Mit AEM 6.4 ist die Transformation zum Komponentenmodell der nächsten Generation abgeschlossen. Das mit Version 6.3 eingeführte und nun durch das Stilsystem ergänzte Kernkomponentenkonzept ermöglicht das effiziente Erstellen neuer bzw. Erweitern vorhandener Sites.
 
-Empfohlenes Tutorial zur optimalen Nutzung des neuen Komponentenmodells: [Erste Schritte mit AEM Sites – WKND-Tutorial](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+Empfohlenes Tutorial zur optimalen Nutzung des neuen Komponentenmodells: [Erste Schritte mit AEM Sites – WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
 
 #### Screens-Add-on {#screens-add-on}
 
 AEM Screens steht für die Bereitstellung einer konsistenten Botschaft über alle Marketingkanäle, einschließlich Digital Signage- und Kiosk-Netzwerken. Mit Einführung von AEM 6.4 wird die Ausführung des Signage Player unter Microsoft Windows und Google Chrome OS unterstützt. Darüber hinaus sind Erweiterungen für die Geräteverwaltung per Fernzugriff und Zeitpläne (Gruppen von Kanälen) verfügbar.
 
-Weitere Informationen zu Screens-Aktualisierungen finden Sie unter [AEM Screens-Benutzerhandbuch](https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Weitere Informationen zu Screens-Aktualisierungen finden Sie unter [AEM Screens-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de).
 
 ### Experience Manager Communities {#experience-manager-communities}
 
@@ -195,9 +195,9 @@ Weitere Informationen zu dieser Funktion, den damit verbundenen Systemanforderun
 
 **AEM-Desktop-Programm**
 
-AEM Desktop-Programm wurde auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-Programm finden Sie in einer speziellen [Versionshinweise zum AEM-Desktop-Programm](https://docs.adobe.com/content/help/de-DE/experience-manager-desktop-app/using/release-notes.html) Dokument.
+AEM Desktop-Programm wurde auf Version 1.8 aktualisiert, die mit AEM 6.4 kompatibel ist. Die vollständige Liste der Änderungen für AEM Desktop-Programm finden Sie in einer speziellen [Versionshinweise zum AEM-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=de) Dokument.
 
-Zu den Verbesserungen, die seit Veröffentlichung von AEM 6.3 eingeführt wurden, gehören die Möglichkeit, hierarchische Ordner im Hintergrund hochzuladen, eine neue Benutzeroberfläche zur Überwachung von Asset-Vorgängen im Hintergrund, Verbesserungen beim Caching, Arbeiten im Netzwerk und bei der Anmeldung sowie allgemeine Verbesserungen hinsichtlich der Stabilität. Die Dokumentation umfasst außerdem ein [Handbuch mit Best Practices](https://docs.adobe.com/content/help/de/experience-manager-desktop-app/using/using.html).
+Zu den Verbesserungen, die seit Veröffentlichung von AEM 6.3 eingeführt wurden, gehören die Möglichkeit, hierarchische Ordner im Hintergrund hochzuladen, eine neue Benutzeroberfläche zur Überwachung von Asset-Vorgängen im Hintergrund, Verbesserungen beim Caching, Arbeiten im Netzwerk und bei der Anmeldung sowie allgemeine Verbesserungen hinsichtlich der Stabilität. Die Dokumentation umfasst außerdem ein [Handbuch mit Best Practices](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de).
 
 **Adobe Sensei Services**
 
@@ -219,7 +219,7 @@ Es wurden zahlreiche Verbesserungen eingeführt, um das Durchsuchen, Suchen und 
 
 **Brand Portal**
 
-Es wurden verschiedene Verbesserungen in den Bereichen Metadaten, Berichterstellung, digitale Rechte, Anmeldung und Veröffentlichungsleistung bei der Asset-Verteilung eingeführt. Informationen zu den neuen Verbesserungen und Funktionen finden Sie unter [Neue Funktionen in AEM Assets Brand Portal](https://docs.adobe.com/content/help/de-DE/experience-manager-brand-portal/using/introduction/whats-new.html).
+Es wurden verschiedene Verbesserungen in den Bereichen Metadaten, Berichterstellung, digitale Rechte, Anmeldung und Veröffentlichungsleistung bei der Asset-Verteilung eingeführt. Informationen zu den neuen Verbesserungen und Funktionen finden Sie unter [Neue Funktionen in AEM Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=de).
 
 #### Dynamic Media-Add-on {#dynamic-media-add-on}
 
@@ -261,15 +261,15 @@ Weitere Informationen hierzu finden Sie auf der Seite mit Versionshinweisen zu [
 
 ### Experience Manager Livefyre {#experience-manager-livefyre}
 
-Livefyre lässt sich mit AEM 6.4-Instanzen integrieren. Weitere Informationen zur Integration von Livefyre mit AEM finden Sie auf den folgenden Seiten:
+Livefyre lässt sich in AEM 6.4-Instanzen integrieren. Weitere Informationen zur Integration von Livefyre mit AEM finden Sie auf den folgenden Seiten:
 
-* [Integrieren mit Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
+* [Integrieren mit Livefyre](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html?lang=de)
 
 ### Kundenorientierte Entwicklung nutzen {#leverage-customer-focused-development}
 
 Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden ermöglicht, zu allen Phasen des Entwicklungsprozesses von der Spezifikation bis zur Entwicklung und zum Test beizutragen. Unser Dank geht an alle beteiligten Kunden und Partner in diesem Prozess.
 
-Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungs- und Verbesserungsanforderungsentwicklung zu ermöglichen. Die [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) ist in das Adobe Enhancement &amp; Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kundendienst identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Berichterstellungszwecken verwendet. Bei der Entwicklung haben bezahlte Support- und Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
+Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungs- und Verbesserungsanforderungsentwicklung zu ermöglichen. Die [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) ist in das Adobe Enhancement &amp; Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kundendienst identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlte Support- und Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
 
 Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderungen geführt, die in AEM 6.4 vorgenommen wurden.
 
@@ -279,7 +279,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
 
 * Standalone-Schnellstart: cq-quickstart-6.4.0.jar
 * Anwendungsserver-Schnellstart: cq-quickstart-6.4.0.war
-* Dispatcher 4.3.1 oder höher für verschiedene Webserver und Plattformen. Siehe [Downloadlink](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
+* Dispatcher 4.3.1 oder höher für verschiedene Webserver und Plattformen. Siehe [Downloadlink](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=de).
 * Plug-in für Eclipse IDE. [Mehr dazu und Download](/help/sites-developing/aem-eclipse.md).
 
 * Erweiterung für den Brackets-Code-Editor. [Mehr dazu und Download](/help/sites-developing/aem-brackets.md).
@@ -302,9 +302,9 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
 
 **Assets**
 
-* Adobe Experience Manager-Desktop-Programm ([mehr dazu](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) und [herunterladen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
+* Adobe Experience Manager-Desktop-Programm ([mehr dazu](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) und [herunterladen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html))
 
-* Paket zum Hinzufügen eines erweiterten PDF-Rasterizers ([weitere Informationen](/help/assets/aem-pdf-rasterizer.md) und [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
+* Paket zum Hinzufügen eines erweiterten PDF-Rasterizers ([weitere Informationen](/help/assets/aem-pdf-rasterizer.md) und [Download](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * Paket zum Hinzufügen von erweiterter Rohbildunterstützung ([weitere Informationen](/help/assets/camera-raw.md))
 
@@ -312,7 +312,7 @@ Dieser Prozess der Priorisierung hat zu mehr als 500 kundenorientierten Änderu
 
 * Pakete für Funktionen in AEM Forms:
 
-   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   * [adobe-aemfd-aix-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)
    * [adobe-aemfd-linux-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
    * [adobe-aemfd-solaris-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
    * [adobe-aemfd-win-pkg](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
@@ -327,7 +327,7 @@ Die Benutzeroberfläche ist in den folgenden Sprachen verfügbar:
 * Französisch
 * Spanisch
 * Italienisch
-* Brasilianisches Portugiesisch
+* Brasilianisches   Portugiesisch
 * Japanisch
 * Vereinfachtes Chinesisch
 * Traditionelles Chinesisch (begrenzte Unterstützung)
@@ -376,5 +376,5 @@ Lesen Sie die Liste veralteter und entfernter Funktionen in [Adobe Experience Ma
 Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe-Kundenbetreuer.
 
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/).
-* Produktaktualisierungen, Patches und Pakete für zusätzliche Funktionen in [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Kundensupport über Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Neues Adobe-Supporterlebnis](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* Produktaktualisierungen, Patches und Pakete für zusätzliche Funktionen in der [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Kunden-Support über die Admin Console](https://adminconsole.adobe.com/). Weitere Informationen finden Sie unter [Neues Adobe-Kunden-Supporterlebnis](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=de).

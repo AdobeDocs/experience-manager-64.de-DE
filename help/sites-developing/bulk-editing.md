@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 87%
+source-wordcount: '414'
+ht-degree: 100%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 87%
 
 Durch die [Massenbearbeitung von Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) können Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten.
 
-Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften für die Massenbearbeitung nicht standardmäßig aktiviert. Sie müssen explizit zugelassen (aktiviert) werden. Wenn Sie die Seiteneigenschaften definieren, die für die Massenbearbeitung verfügbar sein sollen, müssen Sie bestimmte Implikationen berücksichtigen, wie zum Beispiel:
+Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften für die Massenbearbeitung nicht standardmäßig aktiviert. Sie müssen explizit zugelassen sein (aktiviert). Wenn Sie die Seiteneigenschaften definieren, die für die Massenbearbeitung verfügbar sein sollen, müssen Sie bestimmte Implikationen berücksichtigen, wie zum Beispiel:
 
 * Bestimmte Felder sind normalerweise eindeutig; zum Beispiel ein Seitentitel. Sie müssen entscheiden, ob es sinnvoll ist, diese Felder für die Massenbearbeitung zu aktivieren, wenn ein Wert angewendet wird.
 * Bestimmte Felder können mehrere Werte haben - dies erfordert eine sinnvolle Darstellung beim Rendern.
 
-   Zum Beispiel ein Kontrollkästchen, das „Bereit zur Veröffentlichung“ anzeigt. Diese kann mehrere Werte vor der Massenbearbeitung aufweisen (z. B. bereit, in Überprüfung, in Bearbeitung).
+   Zum Beispiel ein Kontrollkästchen, das „Bereit zur Veröffentlichung“ anzeigt. Dies kann mehrere Werte vor der Massenbearbeitung haben (z. B. bereit, in Überarbeitung, in Bearbeitung).
 
 >[!CAUTION]
 >
@@ -35,13 +35,12 @@ Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften f
 >* Nicht verfügbar in der klassischen Benutzeroberfläche.
 >* Nicht verfügbar für Seiten innerhalb einer Live Copy.
 >* Nur verfügbar für Seiten mit desselben Ressourcentyp.
-
 >
 
 
 >[!NOTE]
 >
->Massenbearbeitung ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Genauere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets. ](/help/assets/managing-multiple-assets.md) Sie können die Felder im Editor für Metadaten-Massenbearbeitung für Assets mit der [Schema Editor](/help/assets/metadata-schemas.md).
+>Massenbearbeitung ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Genauere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets. ](/help/assets/managing-multiple-assets.md) Sie können die Felder im Metadaten-Masseneditor für Assets mit dem [Schema-Editor](/help/assets/metadata-schemas.md) anpassen.
 
 ## Aktivieren eines Felds {#enabling-a-field}
 
@@ -55,7 +54,6 @@ Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften f
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
-
 >
 
 
@@ -67,9 +65,9 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
 
    >[!NOTE]
    >
-   >Für das Beispiel wird angenommen, dass die Hauptkomponenten auf die Instanz installiert wurden, das der Fall ist, wenn die Instanz mit We.Retail-Beispielinhalt ausgeführt wird. Weitere Informationen finden Sie in der [Dokumentation zu Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+   >Für das Beispiel wird angenommen, dass die Hauptkomponenten auf die Instanz installiert wurden, das der Fall ist, wenn die Instanz mit We.Retail-Beispielinhalt ausgeführt wird. Weitere Informationen finden Sie in der [Dokumentation zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
-1. Navigieren Sie zum gewünschten Feld im `cq:dialog` Definition.
+1. Navigieren Sie zum erforderlichen Feld innerhalb der `cq:dialog`-Definition.
 1. Definieren Sie die folgende Eigenschaft auf dem Feldknoten:
 
    * **Name**: `allowBulkEdit`
@@ -90,9 +88,9 @@ Felder werden in der Seitenkomponente aktiviert (*nicht* in der Vorlage):
    >
    >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >
-   >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
+   >Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
    >
-   >    1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
+   >    1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
    >    1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
