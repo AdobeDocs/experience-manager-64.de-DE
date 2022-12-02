@@ -1,7 +1,7 @@
 ---
-title: Acrobat Reader DC Extensions ServiceJava API-Schnellstart (SOAP)
+title: Service für Acrobat Reader DC-Erweiterungen – Java-API-Schnellstart (SOAP)
 seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)
-description: Verwenden Sie den Acrobat Reader DC Extensions-Dienst, um Verwendungsrechte auf ein PDF-Dokument anzuwenden, Verwendungsrechte aus PDF-Dokumenten zu entfernen und Informationen über die Berechtigung abzurufen, die zum Anwenden von Nutzungsrechten auf ein PDF-Dokument mit aktivierten Verwendungsrechten namens LoanUsageRights.pdf verwendet wird.
+description: Verwenden Sie den Service für Acrobat Reader DC-Erweiterungen, um Verwendungsrechte auf ein PDF-Dokument anzuwenden, Verwendungsrechte aus PDF-Dokumenten zu entfernen und Informationen über die Anmeldedaten abzurufen, die zum Anwenden von Verwendungsrechten auf ein PDF-Dokument mit aktivierten Verwendungsrechten namens „LoanUsageRights.pdf“ verwendet werden.
 seo-description: Use the  Acrobat Reader DC Extensions service to apply usage rights to a PDF document, remove usage rights from PDF documents, and retrieve  information about the credential that is used to apply usage-rights to a rights-enabled PDF document named LoanUsageRights.pdf.
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
@@ -13,29 +13,29 @@ exl-id: e95d8be5-04a3-4158-be5a-de1af08ab640
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
-# Acrobat Reader DC Extensions ServiceJava API-Schnellstart (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Service für Acrobat Reader DC-Erweiterungen – Java-API-Schnellstart (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
-Die folgenden Schnellstarts sind für den Acrobat Reader DC Extensions-Dienst verfügbar.
+Die folgenden Schnellstarts sind für den Service für Acrobat Reader DC-Erweiterungen verfügbar.
 
-[Schnellstart (SOAP-Modus): Anwenden von Nutzungsrechten mithilfe der Java-API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
+[Kurzanleitung (SOAP-Modus): Anwenden von Verwendungsrechten mithilfe der Java-API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
 [Entfernen von Verwendungsrechten aus PDF-Dokumenten](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
-[Schnellstart (SOAP-Modus): Abrufen von Anmeldeinformationen mithilfe der Java-API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[Schnellstart (SOAP-Modus): Abrufen von Informationen zu Berechtigungen mithilfe der Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >
->Schnellstarts, die unter Programmieren mit AEM Forms zu finden sind, basieren auf dem Forms-Serverbetriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungsserver verwenden, stellen Sie sicher, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Schnellstarts, die unter „Programmieren mit AEM Forms“ zu finden sind, basieren auf dem Forms-Server-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem, z. B. UNIX, verwenden, ersetzen Sie die Windows-spezifischen Pfade durch Pfade, die von dem jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Schnellstart (SOAP-Modus): Anwenden von Nutzungsrechten mithilfe der Java-API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
+## Kurzanleitung (SOAP-Modus): Anwenden von Verwendungsrechten mithilfe der Java-API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Verwendungsrechte auf ein PDF-Dokument mit dem Namen *Loan.pdf*. Das PDF-Dokument mit aktivierten Berechtigungen wird als PDF-Datei mit dem Namen *LoanUsageRights.pdf*. Die folgenden Verwendungsrechte werden auf dieses PDF-Dokument angewendet: `enabledComments`, `enabledFormFillIn`und `enabledDigitalSignatures`. (Siehe [Anwenden von Nutzungsrechten auf PDF-Dokumente](/help/forms/developing/assigning-usage-rights.md).
+Im folgenden Java-Code-Beispiel werden Verwendungsrechte auf ein PDF-Dokument mit dem Namen *Loan.pdf* angewendet. Das PDF-Dokument mit aktivierten Rechten wird als PDF-Datei mit dem Namen *LoanUsageRights.pdf* gespeichert. Die folgenden Verwendungsrechte werden auf dieses PDF-Dokument angewendet: `enabledComments`, `enabledFormFillIn` und `enabledDigitalSignatures`. (Siehe [Anwenden von Verwendungsrechten auf PDF-Dokumente](/help/forms/developing/assigning-usage-rights.md).)
 
 ```as3
  /* 
@@ -145,9 +145,9 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte auf ein PDF-Dokument mit
  
 ```
 
-## Schnellstart (SOAP-Modus): Entfernen von Verwendungsrechten aus einem PDF-Dokument mithilfe der Java-API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
+## Schnellstart (SOAP-Modus): Entfernen von Verwendungsrechten aus einem PDF-Dokument anhand der Java-API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Verwendungsrechte aus einem PDF-Dokument mit aktivierten Benutzerrechten namens entfernt *LoanUsageRights.pdf*. (Siehe [Entfernen von Verwendungsrechten aus PDF-Dokumenten](/help/forms/developing/assigning-usage-rights.md).
+Im folgenden Java-Code-Beispiel werden Verwendungsrechte aus einem PDF-Dokument mit aktivierten Rechten namens *LoanUsageRights.pdf* entfernt. (Siehe [Entfernen von Verwendungsrechten aus PDF-Dokumenten](/help/forms/developing/assigning-usage-rights.md).)
 
 ```as3
  /* 
@@ -245,9 +245,9 @@ Im folgenden Java-Codebeispiel werden Verwendungsrechte aus einem PDF-Dokument m
  
 ```
 
-## Schnellstart (SOAP-Modus): Abrufen von Anmeldeinformationen mithilfe der Java-API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
+## Schnellstart (SOAP-Modus): Abrufen von Informationen zu Berechtigungen mithilfe der Java API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
-Im folgenden Java-Codebeispiel werden Informationen zu den Anmeldedaten abgerufen, die zum Anwenden von Verwendungsrechten auf ein PDF-Dokument mit aktivierten Verwendungsrechten mit dem Namen verwendet werden *LoanUsageRights.pdf*. (Siehe [Abrufen von Anmeldeinformationen](/help/forms/developing/assigning-usage-rights.md).
+Im folgenden Java-Code-Beispiel werden Informationen zu den Anmeldedaten abgerufen, die zum Anwenden von Verwendungsrechten auf ein PDF-Dokument mit aktivierten Rechten mit dem Namen *LoanUsageRights.pdf* verwendet werden. (Siehe [Abrufen von Anmeldeinformationen](/help/forms/developing/assigning-usage-rights.md).)
 
 ```as3
  /* 

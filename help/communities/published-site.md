@@ -13,7 +13,7 @@ exl-id: 8f716a59-1116-4855-baeb-3997de71b55f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1135'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -95,7 +95,6 @@ Beachten Sie, dass die Kalenderseite die Startseite ist, da die ausgewählte Ref
 >
 >* [Communities-Komponenten](author-communities.md) (für Autoren)
 >* [Komponenten-, Funktionen- und Funktionsgrundlagen](essentials.md) (für Entwickler)
-
 >
 
 
@@ -194,8 +193,8 @@ Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten S
 
 Nach dem Abmelden ist es möglich, eine neue Benutzerregistrierung zu erstellen.
 
-* Wählen Sie nun eine der folgenden Optionen aus `Log In`
-* Wählen Sie nun eine der folgenden Optionen aus `Sign up for a new account`
+* Auswählen `Log In`
+* Auswählen `Sign up for a new account`
 
 ![chlimage_1-323](assets/chlimage_1-323.png) ![chlimage_1-324](assets/chlimage_1-324.png)
 

@@ -1,5 +1,5 @@
 ---
-title: AEM und Richtlinien für barrierefreien Webzugang
+title: AEM und Richtlinien für barrierefreies Webdesign
 seo-title: AEM and the Web Accessibility Guidelines
 description: Erfahren Sie, wie Sie barrierefreie Websites und Inhalte mit AEM erstellen.
 seo-description: Learn how to create accessible websites and content with AEM.
@@ -17,7 +17,7 @@ ht-degree: 84%
 
 ---
 
-# AEM und Richtlinien für barrierefreien Webzugang{#aem-and-the-web-accessibility-guidelines}
+# AEM und Richtlinien für barrierefreies Webdesign{#aem-and-the-web-accessibility-guidelines}
 
 Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Der barrierefreie Zugang ist deshalb ein immer wichtiger werdender Aspekt für gutes Webdesign.
 
@@ -38,11 +38,11 @@ Die folgenden Seiten und Abschnitte bieten Informationen und Richtlinien:
 
    Richtlinien, wie Administratoren AEM für die Erstellung barrierefreier Inhalte konfigurieren können.
 
-* [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](/help/sites-authoring/creating-accessible-content.md)
+* [Erstellen barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](/help/sites-authoring/creating-accessible-content.md)
 
    Die WCAG 2.0-Richtlinien enthalten eine Liste von Erfolgskriterien für die Konformitätsstufen Level A und Level AA. Diese Seite listet die von AEM abgedeckten Erfolgskriterien auf, gemeinsam mit Informationen darüber, wie diese bei der Erstellung von Inhalten erfüllt werden können.
 
-* [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md)
+* [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md)
 
    Hintergrundinformationen zu WCAG 2.0.
 

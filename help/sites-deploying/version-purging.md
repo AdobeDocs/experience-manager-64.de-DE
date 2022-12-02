@@ -14,7 +14,7 @@ exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 63%
+ht-degree: 68%
 
 ---
 
@@ -50,7 +50,7 @@ AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfü
 
       Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Repository gelöscht.
 
-* die [Wartungsaufgabe für Versionsbereinigung](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Dadurch wird die Notwendigkeit minimiert, die Tools zur Versionsbereinigung manuell zu verwenden.
+* [Wartungsaufgabe zur Versionsbereinigung](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versionen automatisch zu löschen. Das verringert die Notwendigkeit, die Tools zur Versionsbereinigung manuell zu verwenden.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfü
 
 Zusätzlich zum expliziten Löschen mit dem Bereinigungs-Tool kann der Versionsmanager so konfiguriert werden, dass alte Versionen bei der Erstellung von neuen Versionen entfernt werden.
 
-Um den Versionsmanager entsprechend zu konfigurieren, erstellen Sie eine Konfiguration für:
+Um den Versions-Manager entsprechend zu konfigurieren, erstellen Sie eine Konfiguration für:
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -104,7 +104,7 @@ Die folgenden Optionen sind verfügbar:
 
 ### Kombinieren von Aufbewahrungsoptionen {#combining-retention-options}
 
-Die Optionen, die festlegen, wie welche Versionen beibehalten werden sollen ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), kann je nach Ihren Anforderungen kombiniert werden.
+Die Optionen, mit denen definiert wird, welche Versionen aufbewahrt werden sollen (`maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), können gemäß Ihren Anforderungen kombiniert werden.
 
 Wenn Sie z. B. die Anzahl der Versionen, die maximal aufbewahrt werden, UND die älteste aufzubewahrende Version definieren:
 

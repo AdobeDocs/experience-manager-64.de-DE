@@ -1,5 +1,5 @@
 ---
-title: '"Tutorial: Interaktive Kommunikation planen"'
+title: "Tutorial: Interaktive Kommunikation planen"
 seo-title: Plan your Interactive Communication
 description: Planen Sie Ihre interaktive Kommunikation
 seo-description: Plan the anatomy for your Interactive Communication

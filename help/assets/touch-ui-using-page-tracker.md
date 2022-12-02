@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Seitenverfolgung und Einbettungs-Code in Web-Seiten
-description: Erfahren Sie mehr über das Miteinbeziehen der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
+description: Erfahren Sie mehr über das Einbinden der Seitenverfolgung und das Einbetten von JavaScript-Codes in Ihren Website-Code, damit Adobe Analytics Nutzungsdaten zu Assets erfassen kann.
 contentOwner: AG
 feature: Asset Reports
 role: Architect,Admin
@@ -16,7 +16,7 @@ ht-degree: 82%
 
 Seitenverfolgung ist ein JavaScript-Code, den Sie in den Code von Drittanbieter-Websites einfügen, damit Adobe Analytics Nutzungsdaten zu Adobe Experience Manager-Assets auf diesen Websites erfassen kann.
 
-Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungscode in den Code der Websites von Drittanbietern ein.
+Um Ereignisse wie Klicks usw. zu erfassen, die Asset-spezifisch sind, beziehen Sie auch den Einbettungs-Code in den Code der Websites von Drittanbietern ein.
 
 Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sowohl den Seitenverfolgungs-Code als auch Einbettungs-Code enthält:
 
@@ -62,7 +62,7 @@ Der folgende Beispiel-Code veranschaulicht, wie eine Web-Seite aussieht, die sow
 
 ## Hinzufügen von Seitenverfolgungs-Code {#adding-page-tracker-code}
 
-Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. Das folgende Codebeispiel zeigt den Seitenverfolgungscode, der in einer Beispielwebseite enthalten ist:
+Sie fügen den Seitenverfolgungs-Code in der Kopfzeile des Website-Codes hinzu. Das folgende Code-Beispiel zeigt den Seitenverfolgungs-Code, der in einer Beispiel-Web-Seite enthalten ist:
 
 ```xml
  <head>

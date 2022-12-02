@@ -14,7 +14,7 @@ exl-id: 6678e462-d40b-4b55-8f7e-98fab2273898
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3153'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
 
-Das Objekt CQ_Analytics.ClientContextMgr ist ein Singleton, das eine Reihe selbstregistrierter Sitzungsspeicher enthält und Methoden zum Registrieren, Beibehalten und Verwalten der Sitzungsspeicher bereitstellt.
+Das Objekt CQ_Analytics.ClientContextMgr ist ein Singleton, das einen Satz an selbstregistrierten Sitzungsspeichern enthält und Methoden für die Registrierung, Speicherung und Verwaltung der Sitzungsspeicher bereitstellt.
 
 Es erweitert CQ_Analytics.PersistedSessionStore.
 
@@ -54,7 +54,7 @@ Kein zurückgegebener Wert
 
 ## CQ_Analytics.ClientContextUtils {#cq-analytics-clientcontextutils}
 
-Stellt Methoden für die Überwachung bereit, um die Aktivierung und Registrierung von Sitzungsspeicher zu erkennen. Siehe auch [Überprüfen, ob ein Sitzungsspeicher definiert und initialisiert ist](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
+Stellt Methoden für die Überwachung bereit, um die Aktivierung und Registrierung von Sitzungsspeicher zu erkennen. Siehe auch [Überprüfen der Definition und Initialisierung eines Sitzungsspeichers](/help/sites-developing/client-context.md#checking-that-a-session-store-is-defined-and-initialized).
 
 ### Methoden {#methods-1}
 
@@ -72,13 +72,13 @@ Beispiel: Ein Sitzungsspeicher basiert auf einem JSON-Objekt und wird über eine
 * Der Speicher wird vorab mit Standardwerten (init-Eigenschaften) gefüllt, aber die Anforderung schlägt fehl (Zeitüberschreitung). Es erfolgt nur eine Initialisierung mit Standardwerten.
 * Der Speicher wird vorab gefüllt.
 
-Wenn die Verzögerung auf `true` oder einer Anzahl von Millisekunden wartet die Methode, bevor sie die Callback-Methode aufruft. Wenn ein anderes Initialisierungsereignis ausgelöst wird, bevor der Verzögerungszeitraum abgelaufen ist, wartet die Methode, bis der Verzögerungszeitraum ohne Initialisierungsereignis überschritten ist. So ist es möglich, zu warten, bis ein zweites Initialisierungsereignis ausgelöst wird, um die Callback-Funktion im Optimalfall aufzurufen.
+Wenn die Verzögerung auf `true` oder eine Anzahl an Millisekunden festgelegt ist, wartet die Methode, bevor sie die Callback-Methode aufruft. Wenn ein anderes Initialisierungsereignis ausgelöst wird, bevor der Verzögerungszeitraum abgelaufen ist, wartet die Methode, bis der Verzögerungszeitraum ohne Initialisierungsereignis überschritten ist. So ist es möglich, zu warten, bis ein zweites Initialisierungsereignis ausgelöst wird, um die Callback-Funktion im Optimalfall aufzurufen.
 
 **Parameter**
 
 * storeName: String. Der Name des Sitzungsspeichers, der zum Listener hinzugefügt werden soll.
 * callback: Funktion. Die Funktion, die bei der Speicherinitialisierung aufgerufen werden soll.
-* delay: boolescher Wert oder Zahl. Die Zeit, für deren Dauer der Aufruf der Callback-Funktion verzögert werden soll, in Millisekunden. Ein boolescher Wert von `true` verwendet die Standardverzögerung von `200 ms`. Beim booleschen Wert`false` oder einer negativen Zahl wird keine Verzögerung eingesetzt.
+* delay: boolescher Wert oder Zahl. Die Zeit, für deren Dauer der Aufruf der Callback-Funktion verzögert werden soll, in Millisekunden. Der boolesche Wert `true` nutzt den Standardwert `200 ms`. Beim booleschen Wert `false` oder einer negativen Zahl wird keine Verzögerung eingesetzt.
 
 **Rückgabe**
 
@@ -86,7 +86,7 @@ Kein zurückgegebener Wert
 
 #### onStoreRegistered(storeName, callback) {#onstoreregistered-storename-callback}
 
-Registriert eine Callback-Funktion, wenn ein Sitzungsspeicher registriert wird. Das Registrierungsereignis tritt auf, wenn ein Store bei [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
+Registriert eine Callback-Funktion, wenn ein Sitzungsspeicher registriert wird. Das Registrierungsereignis tritt auf, wenn ein Speicher bei [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr) registriert wird.
 
 **Parameter**
 
@@ -121,11 +121,11 @@ Erstellt ein CQ_Analytics.JSONPStore-Objekt.
 * serviceURL: String. Die URL des JSONP-Dienstes.
 * dynamicData: (optional) Objekt. JSON-Daten, die an die Initialisierungsdaten des Speichers angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
 * deferLoading: (optional) boolescher Wert. Der Wert „true“ verhindert, dass der JSONP-Dienst bei der Objekterstellung aufgerufen wird. Bei „false“ wird der JSONP-Dienst aufgerufen.
-* loadingCallback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Callback-Funktion muss einen einzigen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
+* loadingCallback: (optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Callback-Funktion muss einen einzigen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
 
 **Rückgabe**
 
-Das neue CQ_Analytics.JSONPStore-Objekt oder null , wenn storeName null ist.
+Das neue CQ_Analytics.JSONPStore-Objekt oder „null“, wenn storeName „null“ ist
 
 #### getServiceURL() {#getserviceurl}
 
@@ -155,7 +155,7 @@ Kein zurückgegebener Wert
 
 #### registerNewInstance(storeName, serviceURL, dynamicData, callback) {#registernewinstance-storename-serviceurl-dynamicdata-callback}
 
-Erstellt ein CQ_Analytics.JSONPStore-Objekt und registriert den Store bei ClientContext.
+Erstellt ein CQ_Analytics.JSONPStore-Objekt und registriert den Speicher bei ClientContext.
 
 **Parameter**
 
@@ -198,7 +198,7 @@ Der Schlüssel, der den Speicher identifiziert. Mit der Methode `getInstance` k�
 
 #### STORENAME {#storename}
 
-Der Name des Stores. Mit der Methode `getInstance` können Sie diesen Wert abrufen.
+Der Name des Speichers. Mit der Methode `getInstance` können Sie diesen Wert abrufen.
 
 ### Methoden {#methods-3}
 
@@ -243,7 +243,7 @@ Ein Objekt, das die Speicherdaten im JSON-Format repräsentiert.
 
 #### init() {#init}
 
-Löscht den Sitzungsspeicher und initialisiert ihn mit der Initialisierungseigenschaft. Setzt das Initialisierungsflag auf `true` und löst dann `initialize` und `update` -Ereignisse.
+Löscht den Sitzungsspeicher und initialisiert ihn mit der Initialisierungseigenschaft. Legt die Initialisierungsmarkierung auf `true` fest und löst dann die Ereignisse `initialize` und `update` aus.
 
 **Parameter**
 
@@ -278,7 +278,7 @@ B/B1: "valueBB1"
 **Parameter**
 
 * jsonData: ein JSON-Objekt, das die zu speichernden Daten enthält
-* doNotClear: Der Wert true behält die vorhandenen Initialisierungseigenschaften bei und fügt die vom JSON-Objekt abgeleiteten hinzu. Der Wert false entfernt vorhandene Initialisierungseigenschaften, bevor die vom JSON-Objekt abgeleiteten Eigenschaften hinzugefügt werden.
+* doNotClear: Beim Wert „true“ werden die vorhandenen Initialisierungseigenschaften beibehalten und die vom JSON-Objekt abgeleiteten Eigenschaften werden hinzugefügt. Bei „false“ werden die vorhandenen Initialisierungseigenschaften entfernt, bevor die vom JSON-Objekt abgeleiteten Eigenschaften hinzugefügt werden.
 
 **Rückgabe**
 
@@ -311,7 +311,7 @@ Registriert einen Listener für ein Ereignis. Siehe auch [Erstellen eines Listen
 
 * event: String. Der Name des Ereignisses, auf das gewartet werden soll.
 * fct: Funktion. Die Funktion, die aufgerufen wird, wenn das Ereignis eintritt.
-* Umfang: (Optional) Objekt. Der Umfang, in dem die Handler-Funktion ausgeführt werden soll. Der „this“-Kontext der Handler-Funktion.
+* scope: (optional) Objekt. Der Umfang, in dem die Handler-Funktion ausgeführt werden soll. Der „this“-Kontext der Handler-Funktion.
 
 **Rückgabe**
 
@@ -350,11 +350,11 @@ Erstellt ein CQ_Analytics.PersistedJSONPStore-Objekt.
 * serviceURL: Zeichenfolge. Die URL des JSONP-Dienstes.
 * dynamicData: (optional) Objekt. JSON-Daten, die an die Initialisierungsdaten des Speichers angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
 * deferLoading: (optional) boolescher Wert. Der Wert „true“ verhindert, dass der JSONP-Dienst bei der Objekterstellung aufgerufen wird. Bei „false“ wird der JSONP-Dienst aufgerufen.
-* loadingCallback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Callback-Funktion muss einen einzigen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
+* loadingCallback: (optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Callback-Funktion muss einen einzigen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
 
 **Rückgabe**
 
-Das neue CQ_Analytics.PersistedJSONPStore-Objekt oder null , wenn storeName null ist.
+Das neue CQ_Analytics.PersistedJSONPStore-Objekt oder „null“, wenn storeName „null“ ist.
 
 #### getServiceURL() {#getserviceurl-1}
 
@@ -384,7 +384,7 @@ Kein zurückgegebener Wert
 
 #### registerNewInstance(storeName, serviceURL, dynamicData, callback) {#registernewinstance-storename-serviceurl-dynamicdata-callback-1}
 
-Erstellt ein CQ_Analytics.PersistedJSONPStore-Objekt und registriert den Store bei ClientContext.
+Erstellt ein CQ_Analytics.PersistedJSONPStore-Objekt und registriert den Speicher bei ClientContext.
 
 **Parameter**
 
@@ -413,7 +413,7 @@ Kein zurückgegebener Wert
 
 Ein beständiger Container eines JSON-Objekts.
 
-Erweiterungen `CQ_Analytics.PersistedSessionStore`.
+Erweitert `CQ_Analytics.PersistedSessionStore`.
 
 ### Eigenschaften {#properties-2}
 
@@ -423,7 +423,7 @@ Der Schlüssel, der den Speicher identifiziert. Mit der Methode `getInstance` k�
 
 #### STORENAME {#storename-1}
 
-Der Name des Stores. Mit der Methode `getInstance` können Sie diesen Wert abrufen.
+Der Name des Speichers. Mit der Methode `getInstance` können Sie diesen Wert abrufen.
 
 ### Methoden {#methods-6}
 
@@ -479,7 +479,7 @@ B/B1: "valueBB1"
 **Parameter**
 
 * jsonData: ein JSON-Objekt, das die zu speichernden Daten enthält
-* doNotClear: Der Wert true behält die vorhandenen Initialisierungseigenschaften bei und fügt die vom JSON-Objekt abgeleiteten hinzu. Der Wert false entfernt vorhandene Initialisierungseigenschaften, bevor die vom JSON-Objekt abgeleiteten Eigenschaften hinzugefügt werden.
+* doNotClear: Beim Wert „true“ werden die vorhandenen Initialisierungseigenschaften beibehalten und die vom JSON-Objekt abgeleiteten Eigenschaften werden hinzugefügt. Bei „false“ werden die vorhandenen Initialisierungseigenschaften entfernt, bevor die vom JSON-Objekt abgeleiteten Eigenschaften hinzugefügt werden.
 
 **Rückgabe**
 
@@ -516,11 +516,11 @@ Der Standardwert ist `key`.
 
 Informationen zu geerbten Methoden finden Sie unter CQ_Analytics.SessionStore.
 
-Wenn die geerbten Methoden `clear`, `setProperty`, `setProperties`, `removeProperty` zum Ändern der Speicherdaten verwendet werden, werden die Änderungen automatisch beibehalten, es sei denn, die geänderten Eigenschaften werden als nicht beständig gekennzeichnet.
+Wenn die geerbten Methoden `clear`, `setProperty`, `setProperties`, `removeProperty` zum Ändern der Speicherdaten genutzt werden, werden die Änderungen automatisch gespeichert, es sei denn, die geänderten Eigenschaften werden als „nicht beständig“ markiert.
 
 #### getStoreKey() {#getstorekey}
 
-Ruft die `STOREKEY` -Eigenschaft.
+Ruft die Eigenschaft `STOREKEY` ab.
 
 **Parameter**
 
@@ -528,7 +528,7 @@ Ohne
 
 **Rückgabe**
 
-Der Wert der `STOREKEY` -Eigenschaft.
+Der Wert der Eigenschaft `STOREKEY`.
 
 #### isPersisted(name) {#ispersisted-name}
 
@@ -540,11 +540,11 @@ Bestimmt, ob eine Dateneigenschaft gespeichert wird.
 
 **Rückgabe**
 
-Der boolesche Wert `true`, wenn die Eigenschaft gespeichert wird, und der Wert `false`, wenn der Wert keine beständige Eigenschaft ist
+Der boolesche Wert `true`, wenn die Eigenschaft gespeichert wird, und der Wert `false`, wenn der Wert keine beständige Eigenschaft ist.
 
 #### persist() {#persist}
 
-Behält den Sitzungsspeicher bei. Der standardmäßige Persistenzmodus verwendet den Browser `localStorage` using `ClientSidePersistence` als Namen ( `window.localStorage.set("ClientSidePersistance", store);`)
+Behält den Sitzungsspeicher bei. Der standardmäßige Persistenzmodus nutzt den Browser `localStorage` mit `ClientSidePersistence` als Name (`window.localStorage.set("ClientSidePersistance", store);`)
 
 Wenn localStorage nicht verfügbar oder nicht beschreibbar ist, wird der Speicher als Eigenschaft des Fensters gespeichert.
 
@@ -560,7 +560,7 @@ Kein zurückgegebener Wert
 
 #### reset(deferEvent) {#reset-deferevent}
 
-Entfernt alle Dateneigenschaften aus dem Speicher und behält den Speicher bei. Optional wird die `udpate` -Ereignis nach Abschluss.
+Entfernt alle Dateneigenschaften aus dem Speicher und behält den Speicher bei. Löst optional nach Abschluss kein `udpate`-Ereignis aus.
 
 **Parameter**
 
@@ -720,7 +720,7 @@ Ohne.
 
 **Rückgabe**
 
-Der Wert `true`, wenn der Speicher initialisiert wurde, und der Wert `false`, wenn der Speicher nicht initialisiert wurde
+Der Wert `true`, wenn der Speicher initialisiert wurde, und der Wert `false`, wenn der Speicher nicht initialisiert wurde.
 
 #### loadInitProperties(obj, setValues) {#loadinitproperties-obj-setvalues}
 

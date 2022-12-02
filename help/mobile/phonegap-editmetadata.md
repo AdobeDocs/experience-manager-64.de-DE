@@ -21,7 +21,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die **App verwalten** Die Kachel und die Seite &quot;App verwalten&quot;bieten eine Möglichkeit, Anwendungsmetadaten anzuzeigen und zu bearbeiten. App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Dazu können gängige Metadaten, iOS-Metadaten und Screenshots gehören. Siehe [App-Kachel verwalten](/help/mobile/phonegap-app-details-tile.md) Weitere Informationen zu allgemeinen und iOS-Metadaten.
 

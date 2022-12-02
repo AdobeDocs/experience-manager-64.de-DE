@@ -13,7 +13,7 @@ exl-id: 9d2682c2-6360-402e-a020-0021f5051a2d
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -119,8 +119,8 @@ Wenn Sie das Repository einfach vorkonfigurieren möchten (ohne seine Position z
 
 * `repository.xml` am erforderlichen Speicherort extrahieren
 
-* update `repository.xml` nach Bedarf
+* `repository.xml` nach Bedarf aktualisieren
 
-* erstellen `bootstrap.properties` und definieren `repository.config`
+* `bootstrap.properties` erstellen und `repository.config` definieren
 
 Zur Erinnerung: Führen Sie diese Aktionen vor der tatsächlichen Installation aus.

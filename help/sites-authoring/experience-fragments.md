@@ -13,11 +13,11 @@ exl-id: 8906b3ab-cb08-4b3e-8796-334e36b1e491
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1309'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
-# Experience Fragments{#experience-fragments}
+# Experience Fragments {#experience-fragments}
 
 Ein Experience Fragment ist eine Gruppe aus einer oder mehreren Komponenten (einschließlich Inhalt und Layout), die innerhalb von Seiten referenziert werden können. Diese Gruppen können jede beliebige Komponente enthalten.
 
@@ -146,7 +146,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 
    ![Experience Fragments konfigurieren](assets/xf-folders-19.png)
 
-1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
 ## Erstellen eines Experience Fragment {#creating-an-experience-fragment}
 
@@ -156,7 +156,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigieren Sie zum gewünschten Ordner und wählen Sie **[!UICONTROL Erstellen]**.
+1. Gehen Sie zum gewünschten Ordner und klicken Sie auf **[!UICONTROL Erstellen]**.
 
 1. Wählen Sie **[!UICONTROL Experience Fragment]** aus, um den Assistenten zum **[!UICONTROL Erstellen von Experience Fragments]** zu öffnen.
 
@@ -173,7 +173,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-   Daraufhin wird eine Meldung angezeigt. Wählen Sie nun eine der folgenden Optionen aus:
+   Daraufhin wird eine Meldung angezeigt. Auswählen:
 
    * **[!UICONTROL Fertig]**, um zur Konsole zurückzukehren
    * **[!UICONTROL Öffnen]**, um den Editor für Fragmente zu öffnen
@@ -286,7 +286,7 @@ Der Baustein wird auf der Registerkarte **[!UICONTROL Bausteine]** angezeigt. F�
 
 Sie können den Baustein wie bei jeder anderen Komponente auch in das Absatzsystem eines beliebigen Fragments ziehen.
 
-## Einfache HTML-Ausgabe {#the-plain-html-rendition}
+## Einfache HTML-Ausgabedarstellung {#the-plain-html-rendition}
 
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe zugreifen.
 

@@ -1,7 +1,7 @@
 ---
 title: Die Anatomie einer App
 seo-title: The Anatomy of an App
-description: 'Auf dieser Seite finden Sie eine Beschreibung der Seitenkomponenten, die Sie für Ihre App erstellen, basierend auf der Komponente /libs/mobileapps/components/angular/ng-page (CRXDE Lite auf einem lokalen Server). '
+description: Auf dieser Seite finden Sie eine Beschreibung der Seitenkomponenten, die Sie für Ihre App erstellen, basierend auf der Komponente /libs/mobileapps/components/angular/ng-page (CRXDE Lite auf einem lokalen Server).
 seo-description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server).
 uuid: 4c1a74c1-85af-4a79-b723-e9fbfc661d35
 contentOwner: User
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 ## Seitenvorlagen für mobile Apps {#page-templates-for-mobile-apps}
 

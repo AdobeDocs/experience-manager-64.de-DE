@@ -112,7 +112,7 @@ Im Folgenden finden Sie einige der durchsuchbaren Eigenschaften, die für versch
 | lesen | *Boolesch* |
 | Einfluss | *Boolesch* |
 | attachments | *Boolesch* |
-| sentiment | *Lang* |
+| sentiment | *Long* |
 | markiert | *Boolesch* |
 | hinzugefügt | *Datum* |
 | modifiedDate | *Datum* |
@@ -220,7 +220,7 @@ curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/use
 
 Um Probleme mit einer Solr-Abfrage zu beheben, aktivieren Sie die DEBUG-Protokollierung für
 
-`com.adobe.cq.social.srp.impl.SocialSolrConnector`.
+`com.adobe.cq.social.srp.impl.SocialSolrConnector` möglich.
 
 Die tatsächliche Solr-Abfrage wird im Debug-Protokoll als URL-kodiert angezeigt:
 

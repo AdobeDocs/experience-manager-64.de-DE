@@ -13,7 +13,7 @@ exl-id: 245e1c28-f702-4300-81cf-5139db9d95ec
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '918'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
@@ -26,7 +26,7 @@ AEM unterstützt beides:
 
 >[!NOTE]
 >
->* [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md)
+>* [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Erstellen barrierefreier Inhalte (gemäß WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 
 
@@ -44,7 +44,7 @@ Die **Text** -Komponente in AEM ist sowohl für die Touch-optimierte als auch f�
 
 * Die **Textkomponente** in der klassischen Benutzeroberfläche:
 
-   ![Bearbeitungsdialogfeld (RTE) der Textkomponente in der klassischen Benutzeroberfläche](assets/chlimage_1-207.png)
+   ![Bearbeitungsdialogfeld (RTE) der Textkomponente in der klassischen Benutzeroberfläche.](assets/chlimage_1-207.png)
 
 >[!NOTE]
 >
@@ -52,7 +52,6 @@ Die **Text** -Komponente in AEM ist sowohl für die Touch-optimierte als auch f�
 >
 >* [Plug-ins und ihre Funktionen](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >* [Plug-ins und ihre Funktionen - Touch-optimierte Benutzeroberfläche](/help/sites-administering/rich-text-editor.md#aboutplugins)
-
 >
 
 
@@ -99,13 +98,13 @@ In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des 
 
 Um die Barrierefreiheitsfunktionen von AEM weiter auszubauen, ist es möglich, die vorhandenen Komponenten basierend auf dem RTE (wie die Komponenten **Text** und **Tabelle**) um zusätzliche Elemente und Attribute zu erweitern.
 
-Das folgende Verfahren zeigt, wie Sie die **Verzeichnis** -Komponente mit **Beschriftung** -Element, das für Benutzer von Hilfstechnologien Informationen über eine Datentabelle bereitstellt:
+Die folgende Vorgehensweise stellt dar, wie die Komponente **Tabelle** mit einem Element **Beschriftung** erweitert werden kann, das Informationen zu einer Datentabelle für Benutzer von Hilfstechnologie bereitstellt:
 
 ### Beispiel – Hinzufügen der Beschriftung zum Dialogfeld „Tabelleneigenschaften“ {#example-adding-the-caption-to-the-table-properties-dialog}
 
-Fügen Sie im Konstruktor von `TablePropertiesDialog` ein zusätzliches Texteingabefeld hinzu, dass für die Bearbeitung der Beschriftung verwendet wird. Beachten Sie Folgendes: `itemId` muss auf `caption` (d. h. der Name des DOM-Attributs), um seinen Inhalt automatisch zu verarbeiten.
+Fügen Sie im Konstruktor von `TablePropertiesDialog` ein zusätzliches Texteingabefeld hinzu, dass für die Bearbeitung der Beschriftung verwendet wird. Beachten Sie, dass `itemId` auf `caption` festgelegt sein muss (d. h. den Namen des DOM-Attributs), damit sein Inhalt automatisch verarbeitet wird.
 
-Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlegen/entfernen. Der Wert wird vom Dialogfeld im `config`-Objekt weitergegeben. Beachten Sie, dass DOM-Attribute mithilfe der entsprechenden `CQ.form.rte.Common`-Methoden (`com` ist kurz für `CQ.form.rte.Common`) festgelegt/entfernt werden sollten, um die üblichen Fallstricke bei Browserimplementierungen zu vermeiden.
+Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlegen/entfernen. Der Wert wird vom Dialogfeld im `config`-Objekt weitergegeben. Beachten Sie, dass DOM-Attribute mithilfe der entsprechenden `CQ.form.rte.Common`-Methoden (`com` ist kurz für `CQ.form.rte.Common`) festgelegt/entfernt werden sollten, um die üblichen Fallstricke bei Browser-Implementierungen zu vermeiden.
 
 >[!NOTE]
 >
@@ -114,7 +113,7 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 ### Schritt-für-Schritt-Anweisungen {#step-by-step-instructions}
 
 1. Starten Sie CRXDE Lite. Zum Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
-1. Kopieren:
+1. Kopieren Sie:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
 
@@ -126,13 +125,13 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
    >
    >Sie müssen Zwischenordner erstellen, falls diese nicht bereits vorhanden sind.
 
-1. Kopieren:
+1. Kopieren Sie:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
    in:
 
-   `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`.
+   `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js` möglich.
 
 1. Öffnen Sie die folgende Datei zur Bearbeitung (durch Doppelklicken öffnen):
 
@@ -158,9 +157,9 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 
 1. Öffnen Sie die folgende Datei:
 
-   `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
+   `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js` möglich.
 
-1. Fügen Sie den folgenden Code am Ende des `transferConfigToTable` -Methode:
+1. Fügen Sie den folgenden Code am Ende der `transferConfigToTable`-Methode hinzu:
 
    ```
    /**
@@ -203,6 +202,6 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 >
 >Um Bearbeitungsfunktionen für weitere Elemente und Attribute hinzuzufügen, stellen Sie sicher, dass sowohl:
 >
->* Die `itemId` -Eigenschaft für jedes entsprechende Feld auf den Namen des entsprechenden DOM-Attributs (`TablePropertiesDialog`).
+>* Die `itemId`-Eigenschaft zu jedem entsprechenden Feld auf den Namen des entsprechenden DOM-Attributs (`TablePropertiesDialog`) eingestellt ist.
 >* Das Attribut explizit für das DOM-Element festgelegt und/oder entfernt wird (`Table`).
 

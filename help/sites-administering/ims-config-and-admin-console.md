@@ -1,5 +1,5 @@
 ---
-title: 'Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services '
+title: Unterstützung der Adobe IMS-Authentifizierung und der Admin Console für AEM Managed Services
 seo-title: Adobe IMS Authentication and Admin Console Support for AEM Managed Services
 description: Erfahren Sie, wie Sie die Admin Console in AEM verwenden.
 seo-description: Learn how to use the Admin Console in AEM.
@@ -13,7 +13,7 @@ exl-id: 38bbad03-aead-43d3-a28c-cc716955ddfb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1749'
-ht-degree: 86%
+ht-degree: 91%
 
 ---
 
@@ -27,12 +27,12 @@ ht-degree: 86%
 
 AEM 6.4.3.0 führt Admin Console-Unterstützung für AEM Instanzen und Adobe IMS(Identity Management System)-basierte Authentifizierung für **AEM Managed Services** -Kunden.
 
-Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed Services alle Experience Cloud-Benutzer in einer Konsole verwalten. Benutzer und Gruppen können Produktprofilen zugewiesen werden, die mit AEM Instanzen verknüpft sind, sodass sie sich bei einer bestimmten Instanz anmelden können.
+Durch das AEM-Onboarding für die Admin Console können Kunden von AEM Managed Services alle Experience Cloud-Benutzer in einer Konsole verwalten. Benutzerinnen und Benutzer sowie Gruppen können Produktprofilen zugeordnet werden, die mit AEM-Instanzen verknüpft sind, sodass sie sich bei einer bestimmten Instanz anmelden können.
 
 ## Wichtige Highlights {#key-highlights}
 
 * Die Unterstützung der AEM-IMS-Authentifizierung wird nur für AEM-Autoren, Administratoren oder Entwickler unterstützt, nicht für externe Endbenutzer der Kunden-Site (z. B. Site-Besucher).
-* Die Admin Console zeigt Kunden von AEM Managed Services als „IMS-Organisationen“ und ihre Instanzen als „Produktkontexte“ an. Kundensystem- und Produktadministratoren können den Zugriff auf Instanzen verwalten.
+* Die Admin Console zeigt Kunden von AEM Managed Services als „IMS-Organisationen“ und ihre Instanzen als „Produktkontexte“ an. Kundensystem- und Produktadmins können den Zugriff auf Instanzen verwalten.
 * AEM Managed Services synchronisiert Kundentopologien mit der Admin Console. In der Admin Console ist pro Instanz eine AEM Managed Services-Produktkontext-Instanz vorhanden.
 * Produktprofile in der Admin Console legen fest, auf welche Instanzen ein Benutzer zugreifen kann.
 * Federated Authentication über den SAML 2-konformen Identitäts-Provider des Kunden wird unterstützt.
@@ -53,7 +53,7 @@ Die Schritte zur Benutzeranmeldung werden unten gezeigt. Der Benutzer wird zu IM
 
 Das Onboarding von Kunden zur Admin Console ist eine Voraussetzung für die Verwendung von Adobe IMS zur AEM-Authentifizierung.
 
-Als ersten Schritt sollten Kunden eine Organisation in Adobe IMS bereitstellen. Adobe Enterprise-Kunden werden in der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) als IMS-Organisationen angezeigt.
+Als ersten Schritt sollte Kundschaft eine Organisation in Adobe IMS bereitstellen. Adobe Enterprise-Kunden werden in der [Adobe Admin Console](https://helpx.adobe.com/de/enterprise/using/admin-console.html) als IMS-Organisationen angezeigt.
 
 AEM Managed Services-Kunden bereits über eine Organisation verfügen sollten. Im Rahmen der IMS-Bereitstellung werden die Kundeninstanzen in der Admin Console für die Verwaltung von Benutzerberechtigungen und -zugriff zur Verfügung gestellt.
 
@@ -64,10 +64,10 @@ Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
 1. Der festgelegte Systemadministrator erhält eine Einladung zur Anmeldung bei der Admin Console
-1. Die Systemadministrator beansprucht die Domäne, um die Eigentümerschaft der Domäne zu bestätigen (in diesem Beispiel acme.com).
+1. Die Systemadministrator beansprucht die Domain, um die Eigentümerschaft der Domain zu bestätigen (in diesem Beispiel acme.com).
 1. Der Systemadministrator richtet die Benutzerverzeichnisse ein.
 1. Der Systemadministrator konfiguriert den Identitätsanbieter (IDP) in der Admin Console, um SSO einzurichten.
-1. Der AEM-Administrator verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt. Siehe Benutzer- und Gruppensynchronisierung .
+1. Die bzw. der AEM-Admin verwaltet die lokalen Gruppen, Berechtigungen und Zugriffsrechte wie gewohnt. Siehe „Benutzer- und Gruppensynchronisierung“.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Sobald ein Kunde als „IMS-Organisation“ existiert und AMS die Bereitstellung
 
 ### Onboarding von Benutzern in der Admin Console {#onboarding-users-to-the-admin-console}
 
-Je nach der Größe des Kunden und den bevorzugten Einstellungen gibt es drei Möglichkeiten, Benutzer hinzuzufügen:
+Je nach der Größe des Kunden und den bevorzugten Einstellungen gibt es drei Möglichkeiten, Benutzerinnen und Benutzer hinzuzufügen:
 
 1. Manuelles Erstellen von Benutzern und Gruppen in der Admin Console
 1. Hochladen einer CSV-Datei mit Benutzern
@@ -93,7 +93,7 @@ Benutzer können auch manuell erstellt werden, wenn der Kunde diese Methode bere
 
 #### Datei-Upload in der Admin Console-Benutzeroberfläche {#file-upload-in-the-admin-console-ui}
 
-Zur einfachen Handhabung der Benutzererstellung können Sie eine CSV-Datei hochladen, um eine große Anzahl von Benutzern hinzuzufügen:
+Zur einfachen Handhabung der Benutzererstellung können Sie eine CSV-Datei hochladen, um eine große Anzahl von Benutzenden hinzuzufügen:
 
 ![image2018-9-23_18-59-57](assets/image2018-9-23_18-59-57.png)
 
@@ -109,11 +109,11 @@ Um die Benutzersynchronisierung einzurichten, muss die Organisation Anmeldeinfor
 
 ![image2018-9-23_13-36-56](assets/image2018-9-23_13-36-56.png)
 
-Das zur Benutzersynchronisierung steht über das Adobe Github-Repository an diesem Speicherort zur Verfügung:
+Die Benutzersynchronisierung steht über das Adobe Github-Repository an diesem Speicherort zur Verfügung:
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
-Beachten Sie, dass eine Vorabversion 2.4RC1 mit Unterstützung für die dynamische Gruppenerstellung verfügbar ist und hier zu finden ist: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
+Hinweis: Eine Pre-Release-Version 2.4RC1 mit Unterstützung für dynamische Gruppenerstellung steht hier zur Verfügung: [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
 Die wichtigsten Funktionen dieser Version sind die Möglichkeit, neue LDAP-Gruppen für die Benutzermitgliedschaft in der Admin Console dynamisch zuzuordnen und dynamische Benutzergruppen zu erstellen.
 
@@ -153,11 +153,11 @@ Sie können die Instanzdetails überprüfen, um die Instanz zu identifizieren:
 
 ![screen_shot_2018-09-17at105601pm](assets/screen_shot_2018-09-17at105601pm.png)
 
-Unter jeder Produktkontextinstanz ist ein zugehöriges Produktprofil vorhanden. Dieses Produktprofil wird zum Zuweisen der Zugriffsrechte für Benutzer und Gruppen verwendet.
+Unter jeder Produktkontextinstanz ist ein zugehöriges Produktprofil vorhanden. Dieses Produktprofil wird zum Zuweisen der Zugriffsrechte für Benutzende und Gruppen verwendet.
 
 ![image2018-9-18_7-48-50](assets/image2018-9-18_7-48-50.png)
 
-Alle unter diesem Produktprofil hinzugefügten Benutzer und Gruppen können sich wie im Beispiel unten gezeigt bei dieser Instanz anmelden:
+Alle unter diesem Produktprofil hinzugefügten Benutzenden und Gruppen können sich wie im Beispiel unten gezeigt bei dieser Instanz anmelden:
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
@@ -171,7 +171,7 @@ AEM kann lokale Anmeldungen für Administratoren weiterhin unterstützen, da der
 
 #### IMS-basierte Anmeldung {#ims-based-login}
 
-Für andere Benutzer kann die IMS-basierte Anmeldung verwendet werden, sobald IMS für die Instanz konfiguriert wurde. Benutzer klicken wie unten gezeigt auf die Schaltfläche **Mit Adobe anmelden**:
+Für andere Benutzende kann die IMS-basierte Anmeldung verwendet werden, sobald IMS für die Instanz konfiguriert wurde. Benutzer klicken wie unten gezeigt auf die Schaltfläche **Mit Adobe anmelden**:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -185,7 +185,7 @@ Im folgenden Beispiel ist Okta der IDP:
 
 ![screen_shot_2018-09-17at115734pm](assets/screen_shot_2018-09-17at115734pm.png)
 
-Sobald die Authentifizierung abgeschlossen ist, wird der Benutzer zurück zu AEM weitergeleitet und angemeldet:
+Sobald die Authentifizierung abgeschlossen ist, wird die Benutzerin bzw. der Benutzer zurück zu AEM weitergeleitet und angemeldet:
 
 ![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
@@ -193,7 +193,7 @@ Sobald die Authentifizierung abgeschlossen ist, wird der Benutzer zurück zu AEM
 
 Für vorhandene AEM-Instanzen, die eine andere Authentifizierungsmethode verwenden und jetzt zu IMS migriert werden, muss ein Migrationsschritt durchgeführt werden.
 
-Vorhandene Benutzer im AEM-Repository (lokal über LDAP oder SAML bezogen) können migriert werden, um mithilfe des User Migration Utility auf IMS als IDP zu verweisen.
+Vorhandene Benutzerinnen und Benutzer im AEM-Repository (lokal über LDAP oder SAML hinzugefügt) können mit dem User Migration Utility migriert werden, damit sie auf IMS als IDP verweisen.
 
 Dieses Dienstprogramm wird von Ihrem AMS-Team im Rahmen der IMS-Bereitstellung ausgeführt.
 
@@ -207,15 +207,15 @@ Hier wurde ein Benutzer auch einigen Gruppen in der Admin Console zugewiesen. ( 
 
 >[!NOTE]
 >
->Benutzergruppen werden nur synchronisiert, wenn sich die Benutzer bei der Instanz anmelden.
+>Benutzergruppen werden nur synchronisiert, wenn sich Benutzerinnen und Benutzer bei der Instanz anmelden.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
-Der Benutzer ist Teil der folgenden Gruppen in IMS:
+Die Benutzerin bzw. der Benutzer ist Teil der folgenden Gruppen in IMS:
 
 ![screen_shot_2018-09-17at94237pm](assets/screen_shot_2018-09-17at94237pm.png)
 
-Wenn sich der Benutzer anmeldet, werden die Gruppenmitgliedschaften wie unten dargestellt synchronisiert:
+Wenn sich die Benutzerin bzw. der Benutzer anmeldet, werden die Gruppenmitgliedschaften wie unten dargestellt synchronisiert:
 
 ![screen_shot_2018-09-17at94033pm](assets/screen_shot_2018-09-17at94033pm.png)
 

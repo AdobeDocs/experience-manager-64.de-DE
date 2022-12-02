@@ -13,7 +13,7 @@ exl-id: 07f89673-125b-4205-bc54-c90287a1e9a5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '761'
-ht-degree: 80%
+ht-degree: 99%
 
 ---
 
@@ -31,11 +31,11 @@ Wählen Sie in der Liste die Warnung **HTTPS konfigurieren** aus und öffnen Sie
 
 >[HINWEIS!]
 >
->Wenn die Variable **HTTPS konfigurieren** Warnhinweis nicht im Posteingang vorhanden ist, können Sie direkt zum HTTPS-Assistenten navigieren, indem Sie *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Wenn die Warnung **HTTPS konfigurieren** nicht im Posteingang vorhanden ist, können Sie direkt zum HTTPS-Assistenten navigieren, indem Sie *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* aufrufen.
 
-Ein Dienstbenutzer mit dem Namen **ssl-service** wurde für diese Funktion erstellt. Nachdem Sie die Warnung geöffnet haben, werden Sie durch den folgenden Konfigurationsassistenten geleitet:
+Ein Service-Benutzer mit dem Namen **ssl-service** wurde für diese Funktion erstellt. Nachdem Sie die Warnung geöffnet haben, werden Sie durch den folgenden Konfigurationsassistenten geleitet:
 
-1. Richten Sie als Erstes die Store-Anmeldedaten ein. Dies sind die Anmeldeinformationen für die **ssl-service** Der Schlüsselspeicher des Systembenutzers, der den privaten Schlüssel und den Trust Store für den HTTPS-Listener enthält.
+1. Richten Sie zunächst die Store-Anmeldedaten ein. Dies sind Anmeldedaten für den KeyStore des Systembenutzers **ssl-service**, der den privaten Schlüssel und den TrustStore für den HTTPS-Listener enthält.
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
@@ -45,7 +45,7 @@ Ein Dienstbenutzer mit dem Namen **ssl-service** wurde für diese Funktion erste
 
    >[!NOTE]
    >
-   >Weitere Informationen dazu, wie Sie einen privaten Schlüssel und ein Zertifikat für die Verwendung im Assistenten erzeugen, finden Sie in [diesem nachfolgenden Verfahren](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard).
+   >Weitere Informationen dazu, wie Sie einen privaten Schlüssel und ein Zertifikat für die Verwendung im Assistenten erzeugen, finden Sie in [diesem Verfahren](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard).
 
 1. Geben Sie anschließend den HTTPS-Hostnamen und den TCP-Port für den HTTPS-Listener an.
 
@@ -96,7 +96,7 @@ Das Servlet antwortet wie jedes Sling-POST-Servlet mit „200 OK“ oder einem H
 
 Nachstehend finden Sie Beispiele für eine erfolgreiche Antwort und einen Fehler.
 
-**ERFOLGSBEISPIEL** (Status = 200):
+**BEISPIEL FÜR EINE ERFOLGREICHE ANTWORT** (Status = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -127,7 +127,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**FEHLERBEISPIEL** (Status = 500):
+**BEISPIEL FÜR EINEN FEHLER** (Status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -154,7 +154,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 Alternativ können Sie das SSL-Setup auch automatisieren, indem Sie ein Paket hochladen, das bereits diese erforderlichen Elemente enthält:
 
 * Den KeyStore des Benutzers „ssl-service“. Dieser befindet sich unter */home/users/system/security/ssl-service/keystore* im Repository.
-* Die `GraniteSslConnectorFactory` Konfiguration
+* Die `GraniteSslConnectorFactory`-Konfiguration
 
 ### Generieren eines Paares aus privatem Schlüssel/Zertifikat für die Verwendung im Assistenten {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
@@ -171,7 +171,7 @@ Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Ze
    openssl rsa -in localhostprivate.key -out localhostprivate.key
    ```
 
-1. Erstellen Sie dann eine Certificate Signing Request (CSR) mithilfe des privaten Schlüssels:
+1. Generieren Sie dann mithilfe des privaten Schlüssels ein Certificate Signing Request (CSR):
 
    ```shell
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
@@ -195,34 +195,34 @@ Abschließend laden Sie **localhostprivate.der** als privaten Schlüssel und **l
 
 >[!NOTE]
 >
->Siehe [Verwenden von cURL mit AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) für eine zentralisierte Liste mit nützlichen cURL-Befehlen in AEM.
+>Eine zentrale Liste mit nützlichen cURL-Befehlen in AEM finden Sie unter [Verwenden von cURL in AEM](https://helpx.adobe.com/de/experience-manager/6-4/sites/administering/using/curl.html).
 
 Sie können die SSL-Konfiguration auch automatisieren, indem Sie das cURL-Tool verwenden. Posten Sie dazu die Konfigurationsparameter an diese URL:
 
-*https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
+*https://&lt;Server-Adresse>:&lt;Serverport>/libs/granite/security/post/sslSetup.html*
 
 Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einstellungen im Konfigurationsassistenten ändern können:
 
-* `-F "keystorePassword=password"` - das Keystore-Kennwort;
+* `-F "keystorePassword=password"` – KeyStore-Kennwort
 
-* `-F "keystorePasswordConfirm=password"` - Bestätigen Sie das KeyStore-Kennwort.
+* `-F "keystorePasswordConfirm=password"` – Bestätigung des KeyStore-Kennworts
 
-* `-F "truststorePassword=password"` - das TrustStore-Kennwort;
+* `-F "truststorePassword=password"` – TrustStore-Kennwort
 
-* `-F "truststorePasswordConfirm=password"` - das TrustStore-Kennwort bestätigen;
+* `-F "truststorePasswordConfirm=password"` – Bestätigung des TrustStore-Kennworts
 
-* `-F "privatekeyFile=@localhostprivate.der"` - den privaten Schlüssel angeben;
+* `-F "privatekeyFile=@localhostprivate.der"` – Angabe des privaten Schlüssels
 
-* `-F "certificateFile=@localhost.crt"` - die Bescheinigung anzugeben;
+* `-F "certificateFile=@localhost.crt"` – Angabe des Zertifikats
 
-* `-F "httpsHostname=host.example.com"`- den Hostnamen angeben;
-* `-F "httpsPort=8443"` - der Anschluss, an dem der HTTPS-Listener funktioniert.
+* `-F "httpsHostname=host.example.com"` – Angabe des Host-Namens
+* `-F "httpsPort=8443"` – Port, den der HTTPS-Listener abhört
 
 >[!NOTE]
 >
 >Die schnellste Art, cURL auszuführen, um die SSL-Konfiguration zu automatisieren, ist über den Ordner, in dem sich die DER- und CRT-Dateien befinden. Alternativ dazu können Sie den vollständigen Pfad in den Argumenten `privatekeyFile` und „certificateFile“ festlegen.
 >
->Sie müssen auch authentifiziert sein, um die Aktualisierung durchzuführen. Stellen Sie daher sicher, dass Sie den cURL-Befehl mit dem `-u user:passeword` Parameter.
+>Sie müssen außerdem authentifiziert werden, damit die Aktualisierung durchgeführt werden kann. Stellen Sie daher sicher, dass Sie den cURL-Befehl mit dem Parameter `-u user:passeword` anhängen.
 >
 >Ein richtiger cURL-Post-Befehl sieht wie folgt aus:
 
@@ -236,5 +236,5 @@ Sie können eine Kette von Zertifikaten an das Servlet senden, indem Sie den Par
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den Keystore gesendet wurden. Überprüfen Sie den Keystore von:\
+Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie den Keystore von:\
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)

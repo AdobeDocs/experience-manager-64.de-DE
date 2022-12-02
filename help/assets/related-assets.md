@@ -14,7 +14,7 @@ ht-degree: 89%
 
 # Zugehörige Assets {#related-assets}
 
-Mit Adobe Experience Manager Assets können Sie Assets mithilfe der Funktion &quot;Zugehörige Assets&quot;manuell basierend auf den Anforderungen Ihres Unternehmens zuordnen. Beispielsweise können Sie einem Asset oder einem Bild/Video eine Lizenzdatei zu einem ähnlichen Thema zuordnen. Sie können Assets zuordnen, die bestimmte gängige Attribute teilen. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, der INDD-Quelldatei zuordnen.
+Mit Adobe Experience Manager Assets können Sie Assets mithilfe der Funktion &quot;Zugehörige Assets&quot;manuell basierend auf den Anforderungen Ihres Unternehmens zuordnen. Beispielsweise können Sie einem Asset oder einem Bild/Video mit einer Lizenzdatei zu einem ähnlichen Thema verknüpfen. Sie können Assets verknüpfen, die bestimmte Attribute gemeinsam haben. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, mit der INDD-Quelldatei verknüpfen.
 
 Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z. B. PDF/JPG) mit Mitarbeitern/Agenturen zu teilen und die Datei mit hoher Auflösung (z. B. INDD) nur auf Anfrage zur Verfügung zu stellen.
 
@@ -49,7 +49,7 @@ Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Klicken/tippen Sie auf das Symbol **[!UICONTROL Bestätigen]**.
-1. Klicken/tippen Sie auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Je nach Auswahl der Beziehung in Schritt 3 wird das zugeordnete Asset unter einer entsprechenden Kategorie im Abschnitt **[!UICONTROL Zugehörig]** aufgeführt. Beispiel: Wenn das zugeordnete Asset die Quelldatei des aktuellen Elements ist, wird es unter **[!UICONTROL Quelle]** aufgeführt.
+1. Klicken/tippen Sie auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Je nach Auswahl der Beziehung in Schritt 3 wird das verknüpfte Asset unter einer entsprechenden Kategorie im Abschnitt **[!UICONTROL Verknüpft]** aufgeführt. Beispiel: Wenn das verknüpfte Asset die Quelldatei des aktuellen Elements ist, wird es unter **[!UICONTROL Quelle]** aufgeführt.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -61,7 +61,7 @@ Auf diese Weise haben Sie die Flexibilität, Dateien mit niedriger Auflösung (z
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Klicken/tippen Sie auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Die Assets, für die Sie Verbindungen entfernt haben, werden aus der Liste der zugeordneten Assets im Abschnitt **[!UICONTROL Zugehörig]** gelöscht.
+1. Klicken/tippen Sie auf **[!UICONTROL OK]**, um das Dialogfeld zu schließen. Die Assets, für die Sie Verknüpfungen entfernt haben, werden aus der Liste der verknüpften Assets im Abschnitt **[!UICONTROL Verknüpft]** gelöscht.
 
 ## Übersetzen von zugehörigen Assets {#translating-related-assets}
 
@@ -74,7 +74,7 @@ Wenn die Quelldatei mit einem anderen Asset verknüpft ist, [!DNL Experience Man
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
 1. Übersetzen Sie die Assets im Quellordner für eine Zielsprache, indem Sie die Schritte unter [Neues Übersetzungsprojekt erstellen](translation-projects.md#create-a-new-translation-project) befolgen. Übersetzen Sie in diesem Fall zum Beispiel Ihre Assets ins Französische.
-1. Öffnen Sie auf der Seite „Projekte“ den Übersetzungsordner.
+1. Öffnen Sie auf der Seite Projekte den Übersetzungsordner.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 

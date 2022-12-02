@@ -64,7 +64,7 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 
 Administratoren können Assets einchecken, die von anderen Benutzern ausgecheckt wurden.
 
-1. Melden Sie sich bei [!DNL Assets] als Administrator an.
+1. Melden Sie sich bei [!DNL Assets] als Admin an.
 1. Wählen Sie in der Assets-Benutzeroberfläche ein bzw. mehrere Assets, das bzw. die von anderen Benutzern ausgecheckt wurde(n).
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

@@ -13,7 +13,7 @@ exl-id: 2bbbfbaa-b0a1-4f8a-9445-51325d80e368
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 82%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ In diesem Dokument wird beschrieben, wie die Zuordnung des dynamischen Modells z
 >[!NOTE]
 >Für die Funktion &quot;Single Page Application (SPA) Editor&quot;ist AEM Service Pack 2 (oder höher) 6.4 erforderlich.
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## ComponentMapping-Modul {#componentmapping-module}
 
@@ -47,10 +47,10 @@ Single Page Applications, die das JavaScript SPA SDK für AEM nutzen, sind model
 
 ## App-Initialisierung {#app-initialization}
 
-Jede Komponente wird mit den Funktionen der [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). Die Initialisierung hat daher die folgende allgemeine Form:
+Jede Komponente wird um die Funktionen von [`ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider) erweitert. Die Initialisierung hat daher die folgende allgemeine Form:
 
 1. Jeder Modellanbieter initialisiert sich selbst und wartet auf Änderungen, die an dem Modell vorgenommen wurden, das seiner inneren Komponente entspricht.
-1. Die [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss initialisiert werden, wie durch die [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md).
+1. [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) muss gemäß dem [Initialisierungsfluss](/help/sites-developing/spa-blueprint.md) initialisiert werden.
 
 1. Nach dem Speichern gibt der Seitenmodell-Manager das vollständige Modell der App zurück.
 1. Dieses Modell wird dann an die Frontend-Stamm-[Container](/help/sites-developing/spa-blueprint.md#container)-Komponente der App übergeben.

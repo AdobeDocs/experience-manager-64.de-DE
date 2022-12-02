@@ -1,7 +1,7 @@
 ---
-title: 'Löschen einer Domain '
+title: Löschen einer Domain
 seo-title: Delete a domain
-description: 'Erfahren Sie, wie Sie die Seite „Domain-Verwaltung“ verwenden, um eine Domain zu löschen oder um eine bestehende Domain als veraltet zu markieren. '
+description: Erfahren Sie, wie Sie die Seite „Domain-Verwaltung“ verwenden, um eine Domain zu löschen oder um eine bestehende Domain als veraltet zu markieren.
 seo-description: Learn how to use the Domain Management page to delete a domain or to mark an existing domain as obsolete.
 uuid: 0d1f9835-3e28-41d3-a3b1-e36d95384328
 contentOwner: admin

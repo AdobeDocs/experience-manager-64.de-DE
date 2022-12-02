@@ -13,7 +13,7 @@ exl-id: a4cee2e6-a56f-4355-8176-b3ed7478a775
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '352'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Wenn ein Formularersteller ein adaptives Formular anhand einer [Vorlage](/help/f
 
 ## Ändern der Content-Richtlinie einer Vorlage {#changing-the-content-policy-of-a-template}
 
-Wenn Sie eine Vorlage erstellen, wird sie unter `/conf` im Inhalts-Repository. Basierend auf den Ordnern, die Sie in der `/conf` -Verzeichnis, lautet der Pfad zu Ihrer Vorlage: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
+Wenn Sie eine Vorlage erstellen, wird diese unter `/conf` im Content Repository erstellt. Basierend auf den Ordnern, die Sie im Verzeichnis `/conf` erstellt haben, lautet der Pfad zur Vorlage: `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Content-Richtlinie einer Vorlage in der Seitenleiste anzuzeigen:
 
@@ -39,15 +39,15 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
    Zum Auswählen einer Komponentengruppe ist eine neue Content-Richtlinie erforderlich. Kopieren Sie zum Erstellen einer neuen Richtlinie die Standardrichtlinie, fügen Sie sie ein und benennen Sie sie um.
 
-   Pfad zur standardmäßigen Inhaltsrichtlinie: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
+   Der Pfad zur Standardinhaltsrichtlinie lautet: `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
    Kopieren Sie im Ordner `gridFluidLayout` die Standardrichtlinie, fügen Sie sie ein und benennen Sie sie um. Beispiel: `myPolicy`.
 
    ![Kopieren von Standardrichtlinien](assets/crx-default1.png)
 
-1. Wählen Sie die neue Richtlinie aus, die Sie erstellen, und wählen Sie die **Komponenten** Eigenschaft im rechten Bereich mit Typ `string[]`.
+1. Wählen Sie die neu zu erstellende Richtlinie und anschließend im rechten Bedienfeld die Eigenschaft **Komponenten** vom Typ `string[]` aus.
 
-   Wenn Sie die Komponenteneigenschaft auswählen und öffnen, erscheint das Dialogfeld „Komponenten bearbeiten“. Im Dialogfeld „Komponenten bearbeiten“ können Sie Komponentengruppen mit den Tasten **+** und **-** hinzufügen oder entfernen. Sie können Komponentengruppen hinzufügen, die Komponenten enthalten, die von Autoren verwendet werden sollen.
+   Wenn Sie die Komponenteneigenschaft auswählen und öffnen, erscheint das Dialogfeld „Komponenten bearbeiten“. Im Dialogfeld „Komponenten bearbeiten“ können Sie Komponentengruppen mit den Tasten **+** und **-** hinzufügen oder entfernen. Sie können Komponentengruppen mit Komponenten hinzufügen, die Autoren für Formulare verwenden sollen. 
 
    ![Hinzufügen oder Entfernen von Komponenten in der Richtlinie](assets/add-components-list1.png)
 
@@ -57,7 +57,7 @@ Führen Sie die folgenden Schritte aus, um die Komponenten basierend auf der Con
 
    Um die Richtlinie zu ändern, navigieren Sie in CRXDE zu `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/guideContainer/rootPanel/items`.
 
-   Im `cq:policy` Eigenschaft, ändern `default` zum neuen Richtliniennamen ( `myPolicy`).
+   Ändern Sie in der Eigenschaft `cq:policy` den Eintrag `default` in den neuen Richtliniennamen (`myPolicy`).
 
    ![Aktualisierte Content-Richtlinie für Vorlagen](assets/updated-policy.png)
 

@@ -551,7 +551,7 @@ Unterstützte `jsdoc`-Tags:
    1. String (Zeichenfolge)
    1. Number (Zahl)
    1. Boolean (Boolesch)
-   1. date
+   1. Datum
    1. array
 
    Alle anderen Rückgabetypen fallen in eine der oben genannten Kategorien.  „None“ wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Für Rückgabetypen wird nicht zwischen Groß- und Kleinschreibung unterschieden.

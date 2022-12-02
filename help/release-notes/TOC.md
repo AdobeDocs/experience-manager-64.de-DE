@@ -2,20 +2,20 @@
 cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Adobe Experience Manager 6.4 - Versionshinweise
+user-guide-title: Versionshinweise zu Adobe Experience Manager 6.4
 breadcrumb-title: Versionshinweise
-user-guide-description: In den Versionshinweisen erhalten Sie Informationen zu den neuesten neuen Funktionen in AEM 6.4.
+user-guide-description: In den Versionshinweisen finden Sie Informationen zu den neuesten Funktionen in AEM 6.4.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 47%
+ht-degree: 78%
 
 ---
 
 
-# Adobe Experience Manager 6.4 - Versionshinweise {#release-notes}
+# Versionshinweise zu Adobe Experience Manager 6.4 {#release-notes}
 
 + [Übersicht über AEM 6.4](home.md)
 + [Allgemeine Versionshinweise](release-notes.md)
@@ -24,7 +24,7 @@ ht-degree: 47%
 + [Versionshinweise zu AEM Sites](sites.md)
 + [Versionshinweise zu AEM Assets](assets.md)
 + [Versionshinweise zu AEM Forms](forms.md)
-+ [AEM Forms JEE Patch Installationsprogramm](jee-patch-installer-64.md)
++ [AEM Forms JEE-Patch-Installationsprogramm](jee-patch-installer-64.md)
 + [Versionshinweise zu AEM Communities](communities-release-notes.md)
 + [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
 + [Bekannte Probleme](known-issues.md)

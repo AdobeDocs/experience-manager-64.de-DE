@@ -12,20 +12,20 @@ exl-id: 5f925f47-3123-4a27-aea1-0a1c1fba7bb6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Anpassen von Verfolgungstabellen{#customize-tracking-tables}
 
-Die Registerkarte &quot;Tracking&quot;in AEM Forms Workspace wird verwendet, um die Details der Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
+Die Registerkarte „Tracking“ in AEM Forms Workspace wird verwendet, um die Details von Prozessinstanzen anzuzeigen, an denen der angemeldete Benutzer beteiligt ist. Um die Verfolgungstabellen anzuzeigen, wählen Sie zunächst einen Prozessnamen im linken Fensterbereich aus, um die zugehörige Instanzenliste im mittleren Bereich anzuzeigen. Wählen Sie eine Prozessinstanz aus, um im rechten Fensterbereich eine Tabelle von Aufgaben anzuzeigen, die von dieser Instanz generiert werden. Standardmäßig enthalten die Tabellenspalten die folgenden Aufgabenattribute (das entsprechende Attribut im Aufgabenmodell wird in Klammern angegeben):
 
 * ID ( `taskId`)
 * Name ( `stepName`)
 * Anweisungen ( `instructions`)
 * Ausgewählte Aktion ( `selectedRoute`)
-* Erstellungszeit ( `createTime`)
-* Abschlusszeit ( `completeTime`)
+* Erstellungszeit (`createTime`)
+* Abschlusszeit (`completeTime`)
 * Inhaber ( `currentAssignment.queueOwner`)
 
 Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabentabelle verfügbar sind, lauten:
@@ -115,7 +115,7 @@ Die übrigen Attribute im Aufgabenmodell, die für die Anzeige in der Aufgabenta
  </tbody> 
 </table>
 
-Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. Siehe [Einführung in das Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) Hier erfahren Sie, wie Sie semantische Änderungen mithilfe des Workspace-SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
+Für die folgenden Anpassungen in der Aufgabentabelle müssen Sie semantische Änderungen im Quellcode vornehmen. In der [Einführung zum Anpassen von AEM Forms Workspace](/help/forms/using/introduction-customizing-html-workspace.md) finden Sie Anweisungen, wie Sie semantische Änderungen mithilfe von Workspace SDK vornehmen und ein minimiertes Paket aus der geänderten Quelle erstellen können.
 
 ## Ändern von Tabellenspalten und ihrer Reihenfolge {#changing-table-columns-and-their-order}
 
@@ -167,7 +167,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
    }
    ```
 
-   Rufen Sie im -Handler die `onTaskTableHeaderClick` Funktion von `js/runtime/util/history.js`.
+   Rufen Sie in dem Handler die Funktion `onTaskTableHeaderClick` von `js/runtime/util/history.js` auf.
 
    ```as3
    onTaskTableHeaderClick: function (event) {
@@ -175,7 +175,7 @@ So sortieren Sie die Aufgabenlistentabelle durch Klicken auf die Spaltenübersch
    }
    ```
 
-1. Stellen Sie die `TaskTableHeaderClick` -Methode in `js/runtime/util/history.js`.
+1. Legen Sie die Methode `TaskTableHeaderClick` in `js/runtime/util/history.js` offen.
 
    Die Methode sucht nach dem task-Attribut im Klick-Ereignis, sortiert die tasklist nach diesem Attribut und gibt die Aufgabentabelle mit der sortierten tasklist aus.
 

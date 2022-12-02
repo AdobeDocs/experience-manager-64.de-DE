@@ -13,7 +13,7 @@ exl-id: 26d1dea8-c225-4ef3-8429-bab585341c70
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3045'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -105,9 +105,9 @@ Wird eine Seite bearbeitet, die einem oder mehreren [Workflows](/help/sites-auth
 
 In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet ist. Wenn der Benutzer am aktuellen Workflow-Schritt beteiligt ist, sind zusätzlich auch Optionen verfügbar, die sich [auf den Workflow-Status auswirken](/help/sites-authoring/workflows-participating.md) und die weitere Informationen zum Workflow liefern, darunter:
 
-* **Fertig** - Öffnet die **Arbeitselement abschließen** dialog
+* **Fertigstellen**: Öffnet das Dialogfeld **Arbeitselement fertigstellen**.
 
-* **Delegieren** - Öffnet die **Arbeitselement abschließen** dialog
+* **Delegieren**: Öffnet das Dialogfeld **Arbeitselement fertigstellen**.
 
 * **Details anzeigen**: Öffnet das Fenster **Details** des entsprechenden Workflows.
 
@@ -139,7 +139,7 @@ Sie können eine neue Komponente mit dem [Komponenten-Browser](/help/sites-autho
 1. Öffnen Sie den [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
 1. Ziehen Sie die benötigte Komponente an die [passende Position](#component-placeholder).
 
-1. [Bearbeiten](#edit-configure-copy-cut-delete-paste) Sie die Komponente.
+1. [Bearbeiten Sie die Komponente.](#edit-configure-copy-cut-delete-paste)
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem 
    <td>Produkt</td> 
   </tr>
   <tr>
-   <td>Video</td> 
+   <td>Video </td> 
    <td>Flash</td> 
   </tr>
   <tr>
@@ -350,7 +350,7 @@ Für bestimmte Komponententypen können Sie Assets aus dem Asset-Browser direkt 
 | Bild | Bild |
 | Dokument | Download |
 | Produkt | Produkt |
-| Video | Flash |
+| Video  | Flash |
 | Inhaltsfragment | Inhaltsfragment |
 
 ## Bearbeiten (Inhalt) Vollbildmodus {#edit-content-full-screen-mode}
@@ -410,7 +410,7 @@ Wenn Sie eine Komponente anpassen möchten, müssen Sie nicht ständig zwischen 
 
 >[!NOTE]
 >
->Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie beispielsweise das Layout einer Komponente bearbeiten und dann auf eine andere Komponente klicken, wird die standardmäßige Bearbeitungssymbolleiste (nicht die Layout-Symbolleiste) für die neu ausgewählte Komponente angezeigt. Die Größenänderungs-Handles sowie die Emulator-Symbolleiste werden nicht mehr angezeigt.
+>Die Layout-Aktion ist immer auf die jeweils ausgewählte Komponente beschränkt. Wenn Sie etwa bei einer Komponente das Layout bearbeiten und dann auf eine andere Komponente klicken, werden in der Standardsymbolleiste für die Bearbeitung (nicht in der Layout-Symbolleiste) für die neu ausgewählte Komponente angezeigt, und die Ziehpunkte für die Größenanpassung sowie die Emulator-Symbolleiste verschwinden.
 >
 >Um das Layout für die gesamte Seite, d. h. über mehrere Komponenten hinweg, zu bearbeiten, wechseln Sie in den [Layout-Modus](/help/sites-authoring/responsive-layout.md).
 
@@ -452,7 +452,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 Wenn die Seite auf einer [bearbeitbaren Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie schnell und einfach zum [Vorlagen-Editor](/help/sites-authoring/templates.md#editing-templates-template-authors) wechseln, indem Sie im Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) die Option **Vorlage bearbeiten** auswählen.
 
-Wenn die Seite auf einer [statische Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates)können Sie zu [Designmodus](/help/sites-authoring/default-components-designmode.md) mithilfe der [Seitenmodusauswahl](/help/sites-authoring/author-environment-tools.md#page-modes) in der Symbolleiste, um Komponenten zur Verwendung auf der Seite zu aktivieren/deaktivieren.
+Wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert, können Sie auf der Symbolleiste die [Seitenmodusauswahl](/help/sites-authoring/author-environment-tools.md#page-modes) verwenden, um zum [Design-Modus](/help/sites-authoring/default-components-designmode.md) zu wechseln und Komponenten auf der Seite zu aktivieren oder zu deaktivieren.
 
 Durch Auswählen der Seite in der [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) oder [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) können Sie schnell und einfach feststellen, auf welcher Vorlage die Seite basiert.
 
@@ -484,7 +484,6 @@ Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 >* Verweise im Inhalt sind sichtbar, können im Bearbeitungsmodus jedoch nicht aufgerufen werden.
 >* Verwenden Sie eine der Vorschauoptionen, wenn Sie mithilfe von Links navigieren möchten.
 >* Verwenden Sie den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M), um zwischen der Vorschau und dem zuletzt ausgewählten Modus zu wechseln.
-
 >
 
 
@@ -534,7 +533,7 @@ Nach der Sperrung werden die Informationen der Konsolenansicht aktualisiert und 
 >
 >Seiten können gesperrt werden, wenn [anstelle eines Benutzers agiert wird](/help/sites-administering/security.md#impersonating-another-user). Eine auf diese Weise gesperrte Seite kann nur von dem Benutzer, für den stellvertretend agiert wurde, oder von einem Benutzer mit Administratorrechten entsperrt werden.
 >
->Seiten lassen sich nicht entsperren, indem stellvertretend für den Benutzer agiert wird, der die Seite gesperrt hat.
+>Seiten lassen sich nicht stellvertretend für Benutzende entsperren, die die Seite gesperrt haben.
 
 ## Entsperren einer Seite {#unlocking-a-page}
 
@@ -548,7 +547,7 @@ Im Menü „Seiteninformationen“ steht dann die Option **Entsperren** zur Verf
 >
 >Seiten können gesperrt werden, wenn [anstelle eines Benutzers agiert wird](/help/sites-administering/security.md#impersonating-another-user). Eine auf diese Weise gesperrte Seite kann nur von dem Benutzer, für den stellvertretend agiert wurde, oder von einem Benutzer mit Administratorrechten entsperrt werden.
 >
->Seiten lassen sich nicht entsperren, indem stellvertretend für den Benutzer agiert wird, der die Seite gesperrt hat.
+>Seiten lassen sich nicht stellvertretend für Benutzende entsperren, die die Seite gesperrt haben.
 
 ## Rückgängigmachen und Wiederholen von Seitenbearbeitungen {#undoing-and-redoing-page-edits}
 
@@ -558,9 +557,9 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 
 >[!NOTE]
 >
->Die [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` ist auch verfügbar, um Seitenbearbeitungsaktionen rückgängig zu machen.
+>Mit dem [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` (Strg+Z) können Sie Seitenbearbeitungen ebenfalls rückgängig machen.
 >
->Der Tastaturbefehl `Ctrl-Y` ist auch verfügbar, um Seitenbearbeitungsaktionen zu wiederholen.
+>Analog dazu können Sie zum Wiederholen von Seitenbearbeitungen den Tastaturbefehl `Ctrl-Y` (Strg+Y) verwenden.
 
 >[!NOTE]
 >
@@ -570,7 +569,7 @@ Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wied
 
 >[!NOTE]
 >
->Ihr Systemadministrator kann [verschiedene Aspekte der Funktionen zum Rückgängig machen/Wiederholen](/help/sites-administering/config-undo.md) den Anforderungen Ihrer Instanz entsprechend konfigurieren.
+>Ihre bzw. Ihr Systemadmin kann [verschiedene Aspekte der Funktionen zum Rückgängig machen/Wiederholen](/help/sites-administering/config-undo.md) den Anforderungen Ihrer Instanz entsprechend konfigurieren.
 
 AEM speichert einen Verlauf der Aktionen, die Sie ausführen, sowie die Reihenfolge der Ausführung. Sie können also mehrere Aktionen in der umgekehrten Reihenfolge ihrer Ausführung rückgängig machen und bei Bedarf die Aktionen wiederholen, wenn Sie eine oder mehrere davon erneut anwenden möchten.
 
@@ -585,7 +584,6 @@ Das Rückgängigmachen und Wiederholen von Befehlen funktioniert ähnlich wie in
 >* Aktionen wiederholen, solange Sie seit dem letzten Rückgängigmachen einer Aktion keine Seitenbearbeitungen durchgeführt haben
 >* maximal 20 Bearbeitungsaktionen rückgängig machen (Standardeinstellung)
 >* für das Rückgängigmachen und Wiederholen auch [Tastaturbefehle](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) verwenden
-
 >
 
 

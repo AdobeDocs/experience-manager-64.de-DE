@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Analytics und Berichten
 seo-title: Configuring analytics and reports
-description: 'Erfahren Sie, wie Sie Adobe Analytics so konfigurieren, dass Sie Interaktionsmuster und Probleme von Benutzern beim Arbeiten mit adaptiven Formularen, adaptiven Dokumenten und HTML5-Formularen ermitteln können. '
+description: Erfahren Sie, wie Sie Adobe Analytics so konfigurieren, dass Sie Interaktionsmuster und Probleme von Benutzern beim Arbeiten mit adaptiven Formularen, adaptiven Dokumenten und HTML5-Formularen ermitteln können.
 seo-description: Learn how to configure Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, adaptive documents, and HTML5 forms.
 uuid: f5671600-e1e2-4fef-9e47-6c8ede027700
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: a55999a8-a92b-4750-bf05-ee326d079f65
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1517'
-ht-degree: 84%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ AEM Forms ermöglicht die Integration mit Adobe Analytics, sodass Sie Leistungsm
 >
 >Die Analysefunktion in AEM Forms ist als Teil des AEM Forms-Add-On-Pakets verfügbar. Weitere Informationen zum Installieren des Add-On-Pakets finden Sie unter [Installieren und Konfigurieren von AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 >
->Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto und Administratorrechte auf der AEM-Instanz. Informationen zur Lösung finden Sie unter [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+>Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto und Administratorrechte auf der AEM-Instanz. Informationen zur Lösung finden Sie unter [Adobe Analytics](https://www.adobe.com/de/solutions/digital-analytics.html).
 
 ## Übersicht {#overview}
 
@@ -48,8 +48,8 @@ Analysedaten werden in kundenspezifischen Repositorys gespeichert, die als Repor
 
 Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 
-1. Anmelden bei [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
-1. Wählen Sie im Marketing Cloud **Admin** > **Admin Console** >  **Report Suites**.
+1. Melden Sie sich bei [https://sc.omniture.com/login/](https://sc.omniture.com/login/) an.
+1. Wählen Sie in Marketing Cloud **Admin** > **Admin Console** > **Report Suites**.
 1. Wählen Sie im Report Suite-Manager **Neu erstellen** > **Report Suite.**
 
    ![Erstellen einer neuen Report Suite](assets/newreportsuite.png)
@@ -78,15 +78,15 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
    ![Allgemeine Kontoeinstellungen](assets/geographic_settings.png)
    **Abbildung:** *Allgemeine Kontoeinstellungen*
 
-1. Aktivieren Sie im Bildschirm &quot;Allgemeine Kontoeinstellungen&quot;die Option **Geografische Berichterstellung** und klicken Sie auf **Speichern**.
+1. Aktivieren Sie im Bildschirm „Allgemeine Kontoeinstellungen“ die Option **Geografische Berichterstellung** und klicken Sie auf **Speichern**.
 1. Navigieren Sie zu **Einstellungen bearbeiten** > **Traffic** > **Traffic-Variablen**.
 
 1. Konfigurieren und aktivieren Sie in der Report Suite die folgenden Traffic-Variablen.
 
    * **formName**: Bezeichner für ein adaptives Formular.
    * **formInstance**: Bezeichner einer Instanz eines adaptiven Formulars. Aktivieren Sie Pfadberichte für diese Variable.
-   * **fieldName**: Kennung eines adaptiven Formularfelds. Aktivieren Sie Pfadberichte für diese Variable.
-   * **panelName**: Kennung eines Bereichs eines adaptiven Formulars. Aktivieren Sie Pfadberichte für diese Variable.
+   * **fieldName**: Kennung eines Feldes eines adaptiven Formulars. Aktivieren Sie Pfadberichte für diese Variable.
+   * **panelName**: Kennung des Bereichs eines adaptiven Formulars. Aktivieren Sie Pfadberichte für diese Variable.
    * **formTitle**: Titel des Formulars.
    * **fieldTitle**: Titel des Formularfelds.
    * **panelTitle**: Titel des Formularbereichs.
@@ -108,7 +108,7 @@ Führen Sie die folgenden Schritte aus, um eine Report Suite zu erstellen: 
 
    >[!NOTE]
    >
-   >Die Ereignisnummer und die Prop-Nummer, die zum Konfigurieren der AEM Forms-Analyse verwendet werden, müssen sich von der Ereignisnummer und der Prop-Nummer unterscheiden, die in [AEM](/help/sites-administering/adobeanalytics.md) Konfiguration.
+   >Eine Ereignisnummer und Eigenschaftsnummer, die verwendet wird, um AEM Forms-Analysen zu konfigurieren, müssen sich von der Ereignis- und Eigenschaftsnummer unterscheiden, die in der [AEM-Analyse](/help/sites-administering/adobeanalytics.md)-Konfiguration verwendet wird.
 
 1. Melden Sie sich bei Ihrem Adobe Marketing Cloud-Konto ab.
 
@@ -118,7 +118,7 @@ Bei einer Cloud-Service-Konfiguration handelt es sich um Informationen zu Ihrem 
 
 1. Melden Sie sich bei Ihrer AEM-Autoreninstanz als Administrator an.
 1. Klicken Sie oben links auf **Adobe Experience Manager** > **Instrumente** ![tools](assets/tools.png)> **Cloud Services** > **Ältere Cloud Services**.
-1. Suchen Sie das Symbol **Adobe Analytics**. Klicken **Konfigurationen anzeigen** und klicken Sie dann auf **[+]** , um eine neue Konfiguration hinzuzufügen.
+1. Suchen Sie das Symbol **Adobe Analytics**. Klicken Sie auf **Konfigurationen anzeigen** und anschließend auf **[+]**, um eine neue Konfiguration hinzuzufügen.
 
    Wenn Sie ein Erstbenutzer sind, klicken Sie auf **Jetzt konfigurieren**.
 
@@ -130,9 +130,9 @@ Bei einer Cloud-Service-Konfiguration handelt es sich um Informationen zu Ihrem 
 
    * **Benutzername**: Der Name, den Sie für die Anmeldung bei Adobe Analytics verwenden.
 
-   * **Passwort**: Das Adobe Analytics-Kennwort für das obige Konto.
+   * **Kennwort**: Das Kennwort für das obige Konto bei Adobe Analytics.
 
-   * **Rechenzentrum**: Das Rechenzentrum Ihres Adobe Analytics-Kontos.
+   * **Datenzentrum**: Das Datenzentrum Ihres Kontos bei Adobe Analytics.
 
 1. Klicken Sie auf **Verbindung zu Analytics herstellen**. In einem Dialogfeld wird bestätigt, dass die Verbindung erfolgreich hergestellt wurde. Klicken Sie auf **OK**.
 
@@ -142,7 +142,7 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
 
 1. Klicken Sie auf der AEM Cloud-Services-Konsole unter Adobe Analytics auf **Konfigurationen anzeigen.**
 
-1. Klicken Sie auf **[+]** neben Ihrer Analytics-Konfiguration.
+1. Klicken Sie auf den Link **[+]** neben der Analytics-Konfiguration.
 
    ![Adobe Analytics-Konfiguration](assets/adobe-analytics-cloud-services.png)
    **Abbildung:** *Adobe Analytics-Konfiguration*
@@ -165,7 +165,7 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
 ## Konfigurieren des Analytics-Konfigurationsservices von AEM Forms {#configuring-aem-forms-analytics-configuration-service}
 
 1. Öffnen Sie in der Autoreninstanz AEM Web Console Configuration Manager unter https://&lt;*server*>:&lt;*port*>/system/console/configMgr.
-1. AEM Forms Analytics-Konfiguration suchen und öffnen
+1. Suchen und öffnen Sie die Analytics-Konfiguration von AEM Forms
 
    ![Analytics-Konfigurationsservice von AEM Forms](assets/analytics_configuration.png)
    **Abbildung:** *AEM Forms Analytics-Konfigurationsdienst*
@@ -179,7 +179,7 @@ Bei einem Adobe Analytics-Framework handelt es sich um eine Reihe von Zuordnunge
 
    >[!NOTE]
    >
-   >Es kann bis zu 10 Sekunden länger dauern, bis der Abrufvorgang für den Bericht über die Zeitüberschreitung abgeschlossen ist und dann die angegebene Anzahl von Sekunden.
+   >Die maximale Wartezeit bis zum Abruf eines Berichts kann die angegebene Anzahl von Sekunden um bis zu 10 Sekunden überschreiten.
 
 1. Wiederholen Sie die Schritte 1-3 in der Veröffentlichungsinstanz, um Analysen zu konfigurieren.
 
@@ -187,12 +187,12 @@ Jetzt können Sie Analysen für Formulare aktivieren und einen Analysebericht er
 
 ## Aktivieren der Analyse für ein Formular oder Dokument {#enabling-analytics-for-a-form-or-document}
 
-1. Melden Sie sich bei AEM Portal an unter `https://[hostname]:[port]`.
+1. Melden Sie sich beim AEM-Portal unter `https://[hostname]:[port]` an.
 1. Klicken Sie auf **Formulare > Formulare und Dokumente**, wählen Sie ein Formular oder ein Dokument aus und klicken Sie auf **Analyse aktivieren**. Die Analyse ist aktiviert.
 
    ![Aktivieren der Analyse für ein Formular oder Dokument](assets/enable-analytics-1.png)
    **Abbildung:** *Aktivieren der Analyse für ein Formular*
 
-   **A.** Schaltfläche &quot;Analytics aktivieren&quot; **B.** Ausgewähltes Formular
+   **A.** Schaltfläche; „Analytics aktivieren“ **B.** Ausgewähltes Formular
 
-   Detaillierte Informationen zum Anzeigen von Formularanalyseberichten finden Sie unter [Anzeigen und Verstehen der Analyseberichte in AEM Forms](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
+   Ausführliche Informationen zur Anzeige von Formularanalyseberichten finden Sie unter [Anzeigen und Verstehen der Analyseberichte in AEM Forms](/help/forms/using/view-understand-aem-forms-analytics-reports.md).

@@ -1,5 +1,5 @@
 ---
-title: E-Commerce
+title: eCommerce
 seo-title: eCommerce
 description: Mit AEM eCommerce können Marketingexperten personalisierte Marken-Einkaufserlebnisse über Web-, Mobile- und Social-Touchpoints bereitstellen.
 seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
@@ -14,11 +14,11 @@ exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 78%
+ht-degree: 97%
 
 ---
 
-# E-Commerce{#ecommerce}
+# eCommerce{#ecommerce}
 
 * [Konzepte](/help/sites-administering/concepts.md)
 * [Verwaltung (generisch)](/help/sites-administering/generic.md)
@@ -31,13 +31,13 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
 |  | CIF On-Premise | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Unterstützte AEM-Versionen | AEM On-Premise oder AMS 6.x | AEM AMS 6.4 und 6.5 |
-| Back-End | - AEM, Java <br> - Monolithische Integration, Pre-Build-Zuordnung (Vorlage)<br> - JCR-Repository | - Magento <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
-| Front-End | Server-seitig wiedergegebene AEM-Seiten | Gemischte Seitenanwendung (hybrides Rendering) |
-| Produktkatalog | - Produkt-Importer, Editor, Zwischenspeicherung in AEM <br>- Regelmäßige Kataloge mit AEM- oder Proxy-Seiten | - Keine Einfuhr von Erzeugnissen <br>- Allgemeine Vorlagen <br>- On-Demand-Daten über Connector |
-| Skalierbarkeit | - Kann bis zu einigen Millionen Produkte unterstützen (abhängig vom Anwendungsfall) <br> - Zwischenspeicherung im Dispatcher | - Keine Volumenbegrenzung <br>- Caching im Dispatcher oder CDN |
+| Back-End | - AEM, Java <br>- Monolithische Integration, voreingestellte Zuordnung (Vorlage)<br>- JCR-Repository | - Magento <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
+| Frontend | Server-seitig wiedergegebene AEM-Seiten | Gemischte Seitenanwendung (hybrides Rendering) |
+| Produktkatalog | - Produktimport-Tool, Editor, Zwischenspeicherung in AEM <br>- Standardkataloge mit AEM- oder Proxy-Seiten | - Kein Produktimport <br>- Generische Vorlagen <br>- On-Demand-Daten über Connector |
+| Skalierbarkeit | - Unterstützt bis zu mehrere Millionen Produkte (je nach Anwendungsfall) <br>- Zwischenspeicherung im Dispatcher | - Keine Volumenbegrenzung <br>- Zwischenspeicherung im Dispatcher oder im CDN |
 | Standardisiertes Datenmodell | Nein | Ja, Magento GraphQL-Schema |
-| Verfügbarkeit | Ja:<br> - SAP-Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 zu unterstützen (Standard) und Kompatibilität mit Hybris 4 sicherzustellen <br>- Salesforce-Commerce Cloud (Connector Open-Source-Unterstützung für AEM 6.4) | Ja, über Open Source von GitHub. <br> Magento Commerce (unterstützt Magento 2.3.2 (standardmäßig) und ist mit Magento 2.3.1 kompatibel). |
-| Wann ist sie einzusetzen? | Eingeschränkte Anwendungsfälle: In Szenarien, in denen kleine statische Kataloge importiert werden müssen | Bevorzugte Lösung in den meisten Anwendungsfällen |
+| Verfügbarkeit | Ja:<br>- SAP-Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 zu unterstützen (Standard) und Kompatibilität mit Hybris 4 zu gewährleisten) <br>- Salesforce-Commerce Cloud (Open-Source-Connector zur Unterstützung von AEM 6.4) | Ja, über Open Source von GitHub. <br> Magento Commerce (unterstützt Magento 2.3.2 (standardmäßig) und ist mit Magento 2.3.1 kompatibel). |
+| Verwendungsbereiche | Eingeschränkte Anwendungsfälle: wenn kleine, statische Kataloge importiert werden müssen | Bevorzugte Lösung in den meisten Anwendungsfällen |
 
 Zusammen mit der Produktdatenverwaltung (PIM) verarbeitet eCommerce die Aktivitäten auf einer Website mit Schwerpunkt auf dem Verkauf von Produkten über einen Online-Shop:
 
@@ -65,13 +65,13 @@ Die Implementierung ermöglicht den Echtzeitzugriff auf Produktdaten. Damit läs
 >
 >Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von eCommerce](/help/sites-deploying/ecommerce.md).
 >
->Informationen zur Erweiterung der eCommerce-Funktionen finden Sie unter [Entwicklung von eCommerce](/help/sites-developing/ecommerce.md).
+>Weitere Informationen zu erweiterten eCommerce-Funktionen finden Sie unter [Entwicklung von eCommerce](/help/sites-developing/ecommerce.md).
 
 ## Zentrale Funktionen {#main-features}
 
 AEM eCommerce bietet Folgendes:
 
-* Einige **vordefinierte AEM** , um zu veranschaulichen, was für Ihr Projekt erreicht werden kann:
+* Eine Reihe von **AEM-Komponenten, die vorkonfiguriert sind** und zeigen, was bei Ihrem Projekt möglich ist:
 
    * Produktanzeige
    * Warenkorb
@@ -95,7 +95,7 @@ AEM eCommerce bietet Folgendes:
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* Verwendet die AEM Möglichkeit, **Inhalt auf mehreren Kanälen präsentieren**, sei es das vollständige Browserfenster oder Mobilgerät. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
+* Nutzt die AEM-Funktion zur **Darstellung Ihrer Inhalte auf mehreren Kanälen**, ob im Browserfenster oder auf einem Mobilgerät. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -133,7 +133,7 @@ Im Abschnitt [Konzepte](/help/sites-administering/concepts.md) finden Sie detail
 * Das Framework ist erweiterbar.
 * Das Framework stellt keine vorkonfigurierte, sofort verwendbare Website bereit. Ein gewisses Maß an Entwicklungsarbeit ist immer erforderlich, um das Framework an Ihre Vorgaben anzupassen.
 
-### Warum? {#why}
+### Vorteile {#why}
 
 * Bereitstellung der grundlegenden Mechanismen, um schnell eine benutzerdefinierte eCommerce-Website zu erstellen
 * Flexibilität, die für die Entwicklung einer echten eCommerce-Website nötig ist

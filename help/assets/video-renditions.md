@@ -8,13 +8,13 @@ exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
 source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Videoausgabeformate {#video-renditions}
 
-Adobe Experience Manager Assets generiert Videoausgabeformate für Video-Assets verschiedener Formate wie OGG, FLV usw.
+Adobe Experience Manager Assets erstellt Videoausgabeformate für Video-Assets verschiedener Formate, einschließlich OGG, FLV usw.
 
 AEM Assets unterstützt statische und dynamische Ausgabeformate (DM-kodierte Ausgabeformate) für Medien-Assets.
 
@@ -32,7 +32,7 @@ Die Liste mit Videoausgabeformate wird im Bereich **[!UICONTROL Wiedergaben]** a
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Konfigurieren Sie den Proxyserver für DM-kodierte Ausgabeformate, indem Sie [Cloud-Dienste für Dynamic Media konfigurieren](config-dynamic.md).
+Konfigurieren Sie den Proxyserver für DM-kodierte Ausgabeformate, indem Sie [Cloud-Dienste für Dynamic Media konfigurieren.](config-dynamic.md)
 
 Generieren Sie Videoausgabeformate mit gewünschten Parametern, [indem Sie ein entsprechendes Videoprofil erstellen](video-profiles.md).
 

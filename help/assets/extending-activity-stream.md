@@ -8,13 +8,13 @@ exl-id: c25a4da7-1c58-41cf-9ff6-c094b50208e6
 source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 66%
+ht-degree: 77%
 
 ---
 
 # Integrieren von Assets in den Aktivitäts-Stream {#integrating-assets-with-activity-stream}
 
-Benutzer von Adobe Experience Manager Assets führen viele Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie einen Benutzeraktivitätenverlauf erstellen können. In diesem Abschnitt werden die Aufzeichnungsfunktionen von [!DNL Experience Manager] und wie Sie [!DNL Experience Manager] , um bestimmte Ereignisse aufzuzeichnen.
+Benutzer von Adobe Experience Manager Assets führen viele Aktionen durch, z. B. das Erstellen, Hochladen und Löschen von Assets. Diese Aktionen können aufgezeichnet werden, sodass Sie einen Benutzeraktivitätenverlauf erstellen können. In diesem Abschnitt werden die Aufzeichnungsfunktionen von [!DNL Experience Manager] und die Konfigration von [!DNL Experience Manager] zum Aufzeichnen bestimmter Ereignisse beschrieben.
 
 ## Überlegungen zur Leistung und Standardverhalten {#performance-considerations-and-default-behavior}
 

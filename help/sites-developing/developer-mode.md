@@ -13,7 +13,7 @@ exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
 source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '686'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -47,7 +47,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Falls nötig, kann der Modus konfiguriert werden für die Verwendung:
 >
->* auf einer Autoreninstanz im Ausführungsmodus nosamplecontent
+>* auf einer Autoreninstanz mit dem Ausführungsmodus „nosamplecontent“
 >* auf einer Veröffentlichungsinstanz
 >
 >Der Modus sollte nach der Verwendung wieder deaktiviert werden.
@@ -56,7 +56,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Weitere Tipps und Informationen zu Tools finden Sie:
 >
->* im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
+>* im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
 >* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
 
 
@@ -117,7 +117,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Diese dienen jedoch nur als Referenz. **darf nicht** Alles bearbeiten unter `/libs`, da alle Änderungen, die Sie vornehmen, verloren gehen können. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps`, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese sind allerdings nur für Referenzzwecke bestimmt. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da von Ihnen gemachte Änderungen möglicherweise verloren gehen. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` erfolgen. Weitere Informationen hierzu finden Sie in [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 
@@ -140,4 +140,4 @@ Der Komponenteneintrag in der Struktur auf der Registerkarte „Komponenten“ w
 >
 >In AEM 6.2 wurden die Testfunktionen des Entwicklermodus als eigenständige Tools-Anwendung neu implementiert.
 >
->Ausführliche Informationen finden Sie unter [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).
+>Ausführliche Informationen finden Sie in [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).

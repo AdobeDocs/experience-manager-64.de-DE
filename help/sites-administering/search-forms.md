@@ -9,7 +9,7 @@ exl-id: b1f17bcd-1e91-43f0-85e1-963ff5fe3717
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2044'
-ht-degree: 77%
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 77%
 
 Mit **Suchformularen** können Sie die Auswahl der Suchprädikate anpassen, die in den Suchbereichen der verschiedenen AEM-Konsolen und/oder in den Suchbereichen der Autorenumgebung verwendet werden. Auf diese Weise können Sie die Suchfunktion genau auf Ihre speziellen Anforderungen ausrichten.
 
-Eine [Reihe an Prädikaten](#predicates-and-their-settings) ist vorkonfiguriert verfügbar. Sie können mehrere Eigenschaften hinzufügen, darunter (unter anderem) das Eigenschaftsprädikat für die Suche nach Assets, die mit einer von Ihnen angegebenen Eigenschaft übereinstimmen, oder das Options-Prädikat für die Suche nach Assets, die mit einem oder mehreren Werten übereinstimmen, die Sie für eine bestimmte Eigenschaft angeben.
+Eine [Reihe an Prädikaten](#predicates-and-their-settings) ist vorkonfiguriert verfügbar. Sie können mehrere Prädikate hinzufügen, darunter das Eigenschaftsprädikat für die Suche nach Assets, die mit einer einzigen von Ihnen festgelegten Eigenschaft übereinstimmen, oder das Optionsprädikat für die Suche nach Assets, die mit mindestens einem Wert übereinstimmen, den Sie für eine bestimmte Eigenschaft festgelegt haben.
 
 Sie können die [Suchformulare konfigurieren](#configuring-your-search-forms), die in den unterschiedlichen Konsolen und im Asset-Browser (bei der Bearbeitung von Seiten) genutzt werden. Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
 
@@ -37,63 +37,63 @@ Die verfügbaren Standardkonfigurationen sind:
 
 * **Seiten-Editor (Dokumentensuche):**
 
-   Diese Konfiguration definiert die Optionen, die bei der Suche nach einem Dokument im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
+   Diese Konfiguration definiert die Optionen, die bei der Suche nach Dokumenten im Assets-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Seiten-Editor (Bildsuche):**
 
-   Diese Konfiguration definiert die Optionen, die bei der Suche nach Bildern im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
+   Diese Konfiguration definiert die Optionen, die bei der Suche nach Bildern im Assets-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Seiten-Editor (Manuskriptsuche):**
 
-   Diese Konfiguration definiert die Optionen, die bei der Suche nach Manuskripten im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
+   Diese Konfiguration definiert die Optionen, die bei der Suche nach Manuskripten im Assets-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Seiten-Editor (Seitensuche):**
 
-   Diese Konfiguration definiert die Optionen, die bei der Suche nach Seiten im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
+   Diese Konfiguration definiert die Optionen, die bei der Suche nach Seiten im Assets-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Seiten-Editor (Absatzsuche):**
 
-   Diese Konfiguration definiert die Optionen, die bei der Suche nach Absätzen im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
+   Diese Konfiguration definiert die Optionen, die bei der Suche nach Absätzen im Assets-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Seiten-Editor (Produktsuche):**
 
-   Diese Konfiguration definiert die Optionen, die bei der Suche nach Produkten im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
+   Diese Konfiguration definiert die Optionen, die bei der Suche nach Produkten im Assets-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
-* **Seiten-Editor (Dynamic Media Classic) [früher Scene7] search)**:
+* **Seiten-Editor (Dynamic Media Classic [früher Scene7]-Suche)**:
 
    Diese Konfiguration definiert die Optionen, die bei der Suche nach Dynamic Media Classic-Ressourcen im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Sites-Admin-Suchleiste**:
 
-   Diese Konfiguration definiert die Suchoptionen, die Benutzern bei der Verwendung der Suchleiste der Sites-Konsole zur Verfügung stehen.
+   Diese Konfiguration definiert die Suchoptionen, die in der Suchleiste der Sites-Konsole verfügbar sind.
 
 * **Seiten-Editor (Videosuche):**
 
-   Diese Konfiguration definiert die Optionen, die bei der Suche nach Videos im Asset-Browser (beim Bearbeiten einer Seite) verfügbar sind.
+   Diese Konfiguration definiert die Optionen, die bei der Suche nach Videos im Assets-Browser (beim Bearbeiten einer Seite) verfügbar sind.
 
 * **Asset-Admin-Suchleiste:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei Verwendung der Konsole &quot;Assets&quot;zur Verfügung stehen.
+   Diese Konfiguration definiert die Suchoptionen, die in der Assets-Konsole verfügbar sind.
 
-* **Katalog-Admin-Suchschiene:**
+* **Katalog-Admin-Suchleiste:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei der Suche nach einem Commerce-Katalog zur Verfügung stehen.
+   Diese Konfiguration definiert die Suchoptionen, die bei der Suche nach einem Commerce-Katalog verfügbar sind.
 
-* **Auftrags-Admin-Suchschiene:**
+* **Auftrags-Admin-Suchleiste:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei der Suche nach Commerce-Bestellungen zur Verfügung stehen.
+   Diese Konfiguration definiert die Suchoptionen, die bei der Suche nach Commerce-Bestellungen verfügbar sind.
 
 * **Admin-Suchleiste für Produktsammlungen:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei der Suche nach Commerce-Produktsammlungen zur Verfügung stehen.
+   Diese Konfiguration definiert die Suchoptionen, die bei der Suche nach Commerce-Produktsammlungen verfügbar sind.
 
-* **Produkt-Admin-Suchschiene:**
+* **Produkt-Admin-Suchleiste:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei der Suche nach Commerce-Produkten zur Verfügung stehen.
+   Diese Konfiguration definiert die Suchoptionen, die bei der Suche nach Commerce-Produkten verfügbar sind.
 
 * **Projekt-Admin-Suchleiste:**
 
-   Diese Konfiguration definiert die Suchoptionen, die dem Benutzer bei der Projektsuche zur Verfügung stehen.
+   Diese Konfiguration definiert die Suchoptionen, die bei der Suche nach Projekten verfügbar sind.
 
 ## Prädikate und ihre Einstellungen {#predicates-and-their-settings}
 
@@ -119,8 +119,8 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Asset zuletzt geändert </td> 
-   <td>Datum der letzten Änderung des Assets.<br /> </td> 
-   <td>Ein benutzerdefiniertes Prädikat, das auf der Datumseigenschaft basiert.</td> 
+   <td>Letztes Änderungsdatum des Assets.<br /> </td> 
+   <td>Ein benutzerdefiniertes Prädikat, basierend auf dem Datumsprädikat.</td> 
   </tr> 
   <tr> 
    <td>Komponenten </td> 
@@ -146,7 +146,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Datum Bereich </td> 
-   <td>Suchen Sie Assets, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td> 
+   <td>Suche nach Assets, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -159,7 +159,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Gültigkeitsstatus </td> 
-   <td>Suchen Sie nach Assets basierend auf dem Ablaufstatus.</td> 
+   <td>Suche nach Assets basierend auf dem Ablaufstatus.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -169,7 +169,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Dateigröße </td> 
-   <td>Suchen Sie nach Assets basierend auf ihrer Größe.</td> 
+   <td>Suche nach Assets basierend auf ihrer Größe.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -202,8 +202,8 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Optionen Eigenschaft </td> 
-   <td>Suchen Sie nach einer Eigenschaft der Option.</td> 
+   <td>Options-Eigenschaft </td> 
+   <td>Suche nach einer Eigenschaft der Option.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -215,7 +215,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Seite Status </td> 
-   <td>Suchseiten nach ihrem Status.</td> 
+   <td>Suche nach Seiten basierend auf ihrem Status.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -225,8 +225,8 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Pfad </td> 
-   <td>Suchen Sie nach Assets, die sich unter einem bestimmten Pfad befinden.</td> 
+   <td>Pfad   </td> 
+   <td>Suche nach Assets unter einem bestimmten Pfad.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -241,7 +241,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Veröffentlichungsstatus </td> 
-   <td>Suchen nach Assets basierend auf ihrem Veröffentlichungsstatus</td> 
+   <td>Suche nach Assets basierend auf ihrem Veröffentlichungsstatus</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -261,7 +261,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Bereichsoptionen </td> 
-   <td>Ein spezifisches Suchprädikat für Assets und dasselbe wie das allgemeine Reglerprädikat. Ist aufgrund von Problemen mit der Abwärtskompatibilität noch verfügbar.</td> 
+   <td>Ein spezifisches Suchprädikat für Assets und identisch mit dem allgemeinen Reglerprädikat. Ist aufgrund von Problemen mit der Abwärtskompatibilität noch verfügbar.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -272,7 +272,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Bewertung </td> 
-   <td>Suchen Sie Assets nach ihrer Bewertung.<br /> </td> 
+   <td>Suche nach Assets basierend auf ihrer Bewertung.<br /> </td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -283,7 +283,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Relatives Datum </td> 
-   <td>Suchen nach Assets basierend auf dem relativen Datum ihrer Erstellung<br /> </td> 
+   <td>Suche nach Assets basierend auf ihrem relativen Erstellungsdatum.<br /> </td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -294,7 +294,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Reglerbereich </td> 
-   <td>Ein allgemeines Suchprädikat, das das Bereichprädikat mit der Reglerfunktion erweitert. Der Wert der gesuchten Eigenschaft muss zwischen den Grenzen des Reglers liegen.</td> 
+   <td>Ein allgemeines Suchprädikat, das das Bereichsprädikat mit der Reglerfunktion erweitert. Der Wert der gesuchten Eigenschaft muss zwischen den Grenzen des Reglers liegen.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -304,7 +304,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr> 
   <tr> 
    <td>Tag </td> 
-   <td>Suche nach Assets basierend auf Tags. Sie können die Pfadeigenschaft konfigurieren, um verschiedene Tags in der Tag-Liste zu füllen.</td> 
+   <td>Suche Assets basierend auf Tags. Sie können die Pfadeigenschaft konfigurieren, um verschiedene Tags in der Tag-Liste zu füllen.</td> 
    <td> 
     <ul> 
      <li>Feldbezeichnung</li> 
@@ -334,8 +334,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 >  
 >* Sucheigenschaften, die nur mit siteadmin (klassische Benutzeroberfläche) verbunden sind, befinden sich unter:
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
-   >   * Diese sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
-
+   >   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
 > 
 >Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
 
@@ -391,7 +390,7 @@ Identisch mit dem
 
 * **Veröffentlichungs- und Live Copy-Eigenschaftsname(n)** Die Bezeichnungen für die Veröffentlichungs- und Live Copy-Kontrollkästchen für das Sites-spezifische Prädikat.
 
-* &amp;ast; auf den Feldtiteln im **Einstellungen** tab bedeutet, dass die Felder erforderlich sind und, wenn leer gelassen, eine Fehlermeldung angezeigt wird
+* Der Asterisk (&amp;ast;) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** kennzeichnet Pflichtfelder. Werden diese nicht ausgefüllt, wird eine Fehlermeldung angezeigt
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -505,7 +504,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    >1. Nehmen Sie die gewünschten Änderungen in `/apps.` vor.
 
 
-1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchschiene**.
+1. Öffnen Sie die **Suchformulare-Konsole** und wählen Sie die Konfiguration aus, die Sie aktualisieren möchten. Beispiel: **Sites-Admin-Suchleiste**.
 
    Klicken/tippen Sie anschließend auf das Symbol **Suchformulare bearbeiten**.
 
@@ -550,7 +549,7 @@ In der folgenden Tabelle sind die Berechtigungen aufgeführt, die Benutzer benö
   </tr> 
   <tr> 
    <td>Vorschau</td> 
-   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/var/dam/content</code>.<br />Lese- und Schreibberechtigungen für den Knoten <code>/apps</code>.</td> 
+   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/var/dam/content</code>.<br /> Lese- und Schreibberechtigungen für den Knoten <code>/apps</code>.</td> 
   </tr> 
  </tbody> 
 </table>

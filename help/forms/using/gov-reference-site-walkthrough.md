@@ -1,7 +1,7 @@
 ---
 title: Schrittweise Anleitung zur We.Gov-Referenzwebsite
 seo-title: We.Gov reference site walkthrough
-description: 'Informationen dazu, wie AEM Forms Behörden dabei unterstützt, einzelne Informationen zu verwalten finden Sie in der schrittweisen Anleitung auf der Referenzwebsite zu We.Gov. '
+description: Informationen dazu, wie AEM Forms Behörden dabei unterstützt, einzelne Informationen zu verwalten finden Sie in der schrittweisen Anleitung auf der Referenzwebsite zu We.Gov.
 seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments manage individual information.
 uuid: 348f9067-28b5-47ed-8e83-0dbadeff0854
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: c8ebd18b-fa24-4264-bd17-f553a2a784d9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2717'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -119,7 +119,7 @@ Das Formular für Kindergeld auf der We.Gov-Website verwendet adaptive Formulare
 
 >[!NOTE]
 >
->Der Von-E-Mail-Arbeitsablauf funktioniert nur mit angemeldeten Benutzern. Im Referenzwebsite-Szenario stellen Sie sicher, dass der Benutzer Sarah Rose hinzugefügt wird. Sarahs Anmeldedaten lauten: `srose/password`.
+>Der Von-E-Mail-Arbeitsablauf funktioniert nur mit angemeldeten Benutzern. Im Referenzwebsite-Szenario stellen Sie sicher, dass der Benutzer Sarah Rose hinzugefügt wird. Sarahs Anmeldedaten lauten `srose/password`.
 
 ![mob1](assets/mob1.png)
 
@@ -220,7 +220,7 @@ Wenn Sarah den Kindergeldantrag einreicht, wird ein PDF-Dokument oder ein Datens
 
 ### Sehen Sie selbst {#see-it-yourself-2}
 
-Seite öffnen `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, wählen Sie die **[!UICONTROL Als Vertreter anmelden]** aktivieren, melden Sie sich mit grios/password als Benutzernamen/Kennwort für Gloria Rios beim AEM-Posteingang an. Die Kindergeld-Anwendung wird angezeigt. Informationen zur Verwendung AEM Posteingangs für formularzentrierte Workflow-Aufgaben finden Sie unter [Verwalten von Forms-Anwendungen und -Aufgaben im AEM Posteingang](/help/forms/using/manage-applications-inbox.md).
+Seite öffnen `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Tippen Sie auf der Seite auf **[!UICONTROL Anmelden]**, wählen Sie die **[!UICONTROL Als Vertreter anmelden]** aktivieren, melden Sie sich mit grios/password als Benutzernamen/Kennwort für Gloria Rios beim AEM-Posteingang an. Die Kindergeld-Anwendung wird angezeigt. Weitere Informationen zur Verwendung des AEM-Posteingangs für formularzentrierte Workflow-Aufgaben finden Sie unter [Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang](/help/forms/using/manage-applications-inbox.md).
 
 ![Glorias Posteingang auf der We.Gov-Referenzwebsite](assets/gloria-inbox.png)
 

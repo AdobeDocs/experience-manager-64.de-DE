@@ -13,13 +13,13 @@ exl-id: d3125110-1098-413b-ba09-50c182797d27
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '218'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # In AEM Forms nicht verfügbare Funktionen von Flex Workspace {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
-AEM Forms Workspace ist der brandneue Arbeitsbereich. Im Folgenden werden einige Funktionen des Flex-basierten Arbeitsbereichs beschrieben, die nicht in AEM Forms Workspace verfügbar sind.
+AEM Forms Workspace ist die neueste Version des Arbeitsbereichs. Im Folgenden werden einige Funktionen des Flex-basierten Arbeitsbereichs beschrieben, die nicht in AEM Forms Workspace verfügbar sind.
 
 * Die Begrüßungsseite ist nicht verfügbar. Sie können die Seiten „Startprozess“, „Aufgaben“, „Verfolgung“ und „Favoriten“ als erste Seite festlegen, die bei der Anmeldung bei Workspace angezeigt wird.
 * Nachrichten und Benachrichtigungen für Systemereignisse werden in AEM Forms Workspace nicht angezeigt. Auch die gesamten Einstellungen für Nachrichten (z. B. die Anzeigedauer der Meldungen) sind für AEM Forms Workspace nicht verfügbar.

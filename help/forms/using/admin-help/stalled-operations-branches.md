@@ -13,7 +13,7 @@ exl-id: 04a832d5-1ab5-4db3-b185-57fba21eb839
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '707'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,17 +28,17 @@ Wenn ein Prozess anhält, werden weitere Vorgänge erst wieder ausgeführt, wenn
 
 Für jedes angehaltene Element werden in der Liste die folgenden Informationen angezeigt:
 
-**Vorgangsname oder Verzweigungsname:** Der Name des Vorgangs oder Zweigs.
+**Vorgangsname oder Zweigname**: Der Name des Vorgangs oder Zweigs.
 
-**Status:** Für angehaltene Elemente immer ANGEHALTEN.
+**Status**: Für angehaltene Elemente immer ANGEHALTEN.
 
-**Fehler:** Eine kurze Beschreibung des Problems.
+**Fehler**: Eine kurze Beschreibung des Problems.
 
-**Prozess-ID:** Die positive Ganzzahl, die der Arbeitsablauf für Formulare beim Instanziieren des Prozesses zuweist (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
+**Prozess-ID**: Die positive Ganzzahl, die der Formular-Workflow zuweist, wenn der Prozess instanziiert wird (d. h. wenn ein Benutzer oder ein automatisierter Schritt einen Prozess initiiert). Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
-**Prozessname - Version:** Der Name des in Workbench zugewiesenen Prozesses.
+**Prozessname/-version**: Der Name des in Workbench zugewiesenen Prozesses.
 
-**Angehaltenes Datum:** Datum und Uhrzeit der Unterbrechung des Vorgangs oder Zweigs.
+**Anhalte-Datum**: Datum und Uhrzeit des Anhaltens des Vorgangs oder Zweigs.
 
 Sie können auf den Seiten „Angehaltene Vorgänge“ bzw. „Angehaltene Zweige“ folgende Aufgaben durchführen:
 

@@ -13,19 +13,19 @@ exl-id: 8e4ffda9-ea92-4abc-8746-5d1852e4599b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 # Speichern eines HTML5-Formulars als Entwurf {#saving-an-html-form-as-a-draft}
 
-Sie können ein HTML5-Formular als Entwurf speichern, und das Formular zu einem späteren Zeitpunkt ausfüllen. Im Forms Portal können Benutzer HTML5-Formulare speichern und wiederherstellen. Um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren, fügen Sie die folgenden Konfigurationen zum Profilknoten hinzu:
+Sie können ein HTML5-Formular als Entwurf speichern, und das Formular zu einem späteren Zeitpunkt ausfüllen. Im Forms Portal können Benutzer HTML5-Formulare speichern und wiederherstellen. Fügen Sie zum Aktivieren der Funktion „Als Entwurf speichern“ die folgenden Konfigurationen zum Profilknoten hinzu:
 
 ## Benutzerdefiniertes Profil zum Aktivieren der Funktion „Als Entwurf speichern“ {#custom-profile-to-allow-save-as-draft-feature}
 
-AEM Forms bietet standardmäßig eine **Als Entwurf speichern** Profil. Sie können ein Formular mit dem Profil „Als Entwurf speichern“ wiedergeben, um für ein HTML5-Formular die Entwurffunktion zu aktivieren. Sie können HTML-Renderprofile für ein Formular in [Forms Manager](/help/forms/using/introduction-managing-forms.md) angeben.
+In AEM Forms gibt es standardmäßig das Profil **Als Entwurf speichern**. Sie können ein Formular mit dem Profil „Als Entwurf speichern“ wiedergeben, um für ein HTML5-Formular die Entwurffunktion zu aktivieren. Sie können HTML-Renderprofile für ein Formular in [Forms Manager](/help/forms/using/introduction-managing-forms.md) angeben.
 
-So aktivieren Sie die Funktion &quot;Als Entwurf speichern&quot;für vorhandene [Benutzerdefiniertes Profil](/help/forms/using/custom-profile.md)Fügen Sie Ihrem benutzerdefinierten Profilknoten die folgenden Eigenschaften hinzu:
+Fügen Sie zum Aktivieren der Funktion „Als Entwurf speichern“ für Ihr bestehendes [benutzerdefiniertes Profil](/help/forms/using/custom-profile.md) die folgenden Eigenschaften zu Ihrem benutzerdefinierten Profilknoten hinzu: 
 
 <table> 
  <tbody> 
@@ -54,7 +54,7 @@ So aktivieren Sie die Funktion &quot;Als Entwurf speichern&quot;für vorhandene 
 
 Nach der Aktivierung der Funktion „Als Entwurf speichern“ wird das Formular, wenn es gespeichert wurde, in der Komponente [Drafts and Submission (Entwurf und Übermittlung)](/help/forms/using/draft-submission-component.md) aufgelistet. Sie können das gespeicherte Formular aus der Komponente „Drafts and Submissions“ abrufen und mit dem Ausfüllen beginnen.
 
-Um die Formularauflistung für die Komponente &quot;Drafts and Submissions&quot;zu aktivieren, fügen Sie dem Profilknoten die folgende Eigenschaft hinzu:
+Fügen Sie zum Aktivieren der Formularauflistung für die Komponente „Entwürfe und Übermittlungen“ die folgende Eigenschaft zum Profilknoten hinzu:
 
 <table> 
  <tbody> 
@@ -68,7 +68,7 @@ Um die Formularauflistung für die Komponente &quot;Drafts and Submissions&quot;
    <td>fp.enablePortalSubmit</td> 
    <td>Zeichenfolge</td> 
    <td>Ja</td> 
-   <td>So aktivieren Sie die Auflistung von Entwürfen und Formularen in<br /> Forms Portal-Komponente "Drafts &amp; Submissions"nach der Übermittlung</td> 
+   <td>Gehen Sie wie folgt vor, um Entwürfe und Formulare nach dem Übermitteln in<br /> der Komponente „Entwürfe und Übermittlungen“ des Formularportals aufzulisten</td> 
   </tr> 
  </tbody> 
 </table>

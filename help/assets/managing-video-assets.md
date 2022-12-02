@@ -11,7 +11,7 @@ exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '787'
-ht-degree: 48%
+ht-degree: 55%
 
 ---
 
@@ -21,7 +21,7 @@ Erfahren Sie, wie Sie die Video-Assets in Adobe Experience Manager Assets verwal
 
 ## Hochladen und Anzeigen der Vorschau von Video-Assets {#uploading-and-previewing-video-assets}
 
-[!DNL Experience Manager] Assets generiert eine Vorschau für Video-Assets mit der Erweiterung MP4. Wenn das Format des Assets nicht MP4 ist, installieren Sie das FFmpeg-Paket, um eine Vorschau zu generieren. FFmpeg erstellt Videoausgabeformate vom Typ OGG und MP4. Sie können eine Vorschau dieser Ausgabedarstellungen im [!DNL Experience Manager] Assets-Benutzeroberfläche.
+[!DNL Experience Manager] Assets generiert eine Vorschau für Video-Assets mit der Erweiterung MP4. Wenn das Format des Assets nicht MP4 lautet, installieren Sie das FFmpeg-Pack, um die Vorschau zu generieren. FFmpeg erstellt Video-Ausgabedarstellungen vom Typ OGG und MP4. Sie können eine Vorschau dieser Ausgabedarstellungen im [!DNL Experience Manager] Assets-Benutzeroberfläche.
 
 1. Navigieren Sie im Ordner &quot;Digitale Assets&quot;oder in den Unterordnern zu dem Speicherort, an dem Sie digitale Assets hinzufügen möchten.
 1. Um Assets hochzuladen, klicken oder tippen Sie in der Symbolleiste auf **[!UICONTROL Erstellen]** und wählen Sie dann **[!UICONTROL Dateien]** aus. Alternativ können Sie sie direkt in den Assets-Bereich ziehen. Weitere Informationen zum Hochladen finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md#uploading-assets).
@@ -44,7 +44,7 @@ Standardmäßig wird die [!DNL Experience Manager] Mit Assets können Sie keine 
 Zusätzlich zu [!DNL Experience Manager] Ändern Sie die folgenden Konfigurationen, um große Assets hochzuladen:
 
 * Erhöhen Sie die Ablaufzeit des Tokens. Siehe [!UICONTROL Adobe Granite CSRF Servlet] in der Web-Konsole unter `https://[aem_server]:[port]/system/console/configMgr`. Weitere Informationen finden Sie unter [CSRF-Schutz](/help/sites-developing/csrf-protection.md).
-* Erhöhen Sie `receiveTimeout` in der Dispatcher-Konfiguration. Weitere Informationen finden Sie unter [Experience Manager Dispatcher-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options).
+* Erhöhen Sie `receiveTimeout` in der Dispatcher-Konfiguration. Weitere Informationen finden Sie unter [Experience Manager Dispatcher-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#renders-options).
 
 >[!NOTE]
 >

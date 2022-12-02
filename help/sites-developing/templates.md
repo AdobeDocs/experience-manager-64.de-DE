@@ -14,7 +14,7 @@ exl-id: 4ecb6e10-1d6b-4065-917f-e86215687e29
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -57,12 +57,12 @@ Die Vorteile von bearbeitbaren Vorlagen:
 
 * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Das bedeutet, dass Änderungen an der Vorlagenstruktur auf allen mit dieser Vorlage erstellten Seiten wiedergegeben werden (Änderungen am ursprünglichen Inhalt werden nicht berücksichtigt).
 * Verwendet Inhaltsrichtlinien (die im Vorlageneditor bearbeitet wurden), um die Designeigenschaften beizubehalten (verwendet den Designmodus im Seiteneditor nicht).
-* werden gespeichert unter `/conf`
+* Werden gespeichert unter `/conf`
 * Siehe [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) für weitere Informationen.
 
 >[!NOTE]
 >
->Es steht ein AEM Community-Artikel zur Verfügung, der erklärt, wie eine Experience Manager-Site mit bearbeitbaren Vorlagen erstellt wird, siehe [Erstellen einer Adobe Experience Manager 6.4-Website mit bearbeitbaren Vorlagen](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
+>In einem AEM-Community-Artikel wird erläutert, wie Sie eine Experience Manager-Website mit bearbeitbaren Vorlagen erstellen, siehe [Erstellen einer Adobe Experience Manager 6.4-Website mit bearbeitbaren Vorlagen](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
 
 ### Statische Vorlagen {#static-templates}
 
@@ -73,14 +73,14 @@ Statische Vorlagen:
 * Eine statische Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur wie die zu erstellende Seite, jedoch keinen tatsächlichen Inhalt aufweist.
 * Werden kopiert, um die neue Seite zu erstellen, danach besteht keine dynamische Verbindung mehr.
 * Verwenden den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
-* werden gespeichert unter `/apps`
+* Werden gespeichert unter `/apps`
 * Siehe [Statische Vorlagen](/help/sites-developing/page-templates-static.md) für weitere Informationen.
 
 >[!NOTE]
 >
->Ab AEM 6.4 gilt die Verwendung statischer Vorlagen nicht mehr als bewährtes Verfahren. Verwenden Sie stattdessen bearbeitbare Vorlagen.
+>Ab AEM 6.4 gilt die Verwendung statischer Vorlagen nicht mehr als Best Practice. Verwenden Sie stattdessen bearbeitbare Vorlagen.
 >
->[AEM Modernisierung](modernization-tools.md) -Tools können Ihnen bei der Migration von statischen zu bearbeitbaren Vorlagen helfen.
+>[AEM-Modernisierung](modernization-tools.md)-Tools können Ihnen bei der Migration von statischen zu bearbeitbaren Vorlagen helfen.
 
 ### Verfügbarkeit von Vorlagen {#template-availability}
 
@@ -93,9 +93,8 @@ Statische Vorlagen:
 >* nur die `cq:allowedTemplates`-Eigenschaft
 >
 >* nur im Site-Stamm
-
 >
->Ein Beispiel finden Sie unter We.Retail: `/content/we-retail/jcr:content`
+>Ein Beispiel finden Sie unter „We.Retail“: `/content/we-retail/jcr:content`
 >
 >Außerdem können die Eigenschaften `allowedPaths`, `allowedParents` und `allowedChildren` in den Vorlagen platziert werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *deutlich* einfacher, in Unterabschnitten der Site weitere `cq:allowedTemplates`-Eigenschaften zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden sollen.
 >

@@ -12,7 +12,7 @@ exl-id: cb7a8e96-4440-47ec-b506-275d5acc774e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 64%
+ht-degree: 96%
 
 ---
 
@@ -22,9 +22,9 @@ Importieren von Druckkanalvorlagen und Erstellen und Aktivieren von Webkanalvorl
 
 Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Der Druckkanal wird zum Erstellen von PDFs und Papierkommunikationen verwendet, z. B. ein gedruckter Brief zur Erinnerung an die Versicherungsprämienzahlung, während der Webkanal für Online-Projekte wie eine Kreditkartenabrechnung auf einer Website verwendet wird.
 
-Autoren der interaktiven Kommunikation können Assets wie Dokumentfragmente und Bilder wiederverwenden, um sowohl Druck- als auch Webversionen der interaktiven Kommunikation zu erstellen.
+Autoren der Vorlage für die interaktive Kommunikation können Elemente wie Dokumentfragmente und Bilder verwenden, um die Druck- bzw. Netzversionen der Vorlage für die interaktive Kommunikation zu erstellen.
 
-Eine der Voraussetzungen für [Erstellen einer interaktiven Kommunikation](/help/forms/using/create-interactive-communication.md) ist es, die Vorlagen für Druck- und/oder Webkanal auf dem Server verfügbar zu machen. Während Vorlagenautoren die Webkanalvorlage in AEM selbst erstellen, wird die Druckkanalvorlage XDP in Adobe Forms Designer erstellt und auf den Server hochgeladen.
+Eine der Voraussetzungen für das [Erstellen einer interaktiver Kommunikation](/help/forms/using/create-interactive-communication.md) ist, dass die Vorlagen für den Druck- und/oder Webkanal auf dem Server verfügbar sind. Während Vorlagenautoren die Webkanalvorlage in AEM selbst erstellen, wird die Druckkanalvorlage XDP in Adobe Forms Designer erstellt und auf den Server hochgeladen.
 
 ## Druckkanal {#printchannel}
 
@@ -42,28 +42,28 @@ Um die Vorlage hochladen zu können, müssen Sie Mitglied der Gruppe „forms-us
 
 ## Webkanal {#web-channel}
 
-Vorlagenautoren und Administratoren können Webvorlagen erstellen, bearbeiten und aktivieren. Damit andere Benutzer Webvorlagen erstellen können, müssen Sie ihnen Rechte geben. Weitere Informationen finden Sie unter [Administration von Benutzern, Gruppen und Zugriffsberechtigungen](/help/sites-administering/user-group-ac-admin.md).
+Vorlagenautoren und Administratoren können Webvorlagen erstellen, bearbeiten und aktivieren. Damit andere Benutzer Webvorlagen erstellen können, müssen Sie ihnen Rechte geben. Weitere Informationen finden Sie unter [Verwalten von Benutzer-, Gruppen- und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md).
 
 ### Webkanalvorlage bearbeiten {#authoring-web-channel-template}
 
-Um eine Webkanalvorlage zu erstellen, müssen Sie zuerst einen Vorlagenordner erstellen. Nachdem Sie eine Webvorlage in einem Vorlagenordner erstellt haben, müssen Sie die Vorlage aktivieren, damit die Formularbenutzer den Webkanal einer interaktiven Kommunikation basierend auf der Vorlage erstellen können.
+Um eine Webkanalvorlage zu erstellen, müssen Sie zuerst einen Vorlagenordner erstellen. Sobald Sie eine Webvorlage in einem Vorlagenordner erstellt haben, müssen Sie die Vorlage aktivieren, damit die Formularbenutzer den Webkanal einer interaktiven Kommunikation basierend auf der Vorlage erstellen können.
 
 Führen Sie die folgenden Schritte aus, um eine Webkanalvorlage zu erstellen:
 
-1. Erstellen Sie einen Ordner &quot;Vorlage&quot;, um Ihre Webvorlagen für die interaktive Kommunikation beizubehalten, falls noch keine vorhanden ist. Weitere Informationen finden Sie unter Vorlagenordner in [Seitenvorlagen - bearbeitbar](/help/sites-developing/page-templates-editable.md).
+1. Erstellen Sie einen Vorlagenordner, um Ihre Webvorlagen für interaktive Kommunikation zu speichern, falls noch kein entsprechender Ordner eingerichtet ist. Weitere Informationen finden Sie unter „Vorlagenordner“ in [Seitenvorlagen – Bearbeitbar](/help/sites-developing/page-templates-editable.md).
 
    1. Tippen **[!UICONTROL Instrumente]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Konfigurationsbrowser]**.
       * Weitere Informationen finden Sie in der Dokumentation zum [](/help/sites-administering/configurations.md)Konfigurationsbrowser.
-   1. Tippen Sie auf der Seite &quot;Konfigurationsbrowser&quot;auf **[!UICONTROL Erstellen]**.
-   1. Geben Sie im Dialogfeld &quot;Konfiguration erstellen&quot;einen Titel für den Ordner an und prüfen Sie **[!UICONTROL Bearbeitbare Vorlagen]** und tippen Sie auf **[!UICONTROL Erstellen]**.
+   1. Tippen Sie auf der Seite „Konfigurationsbrowser“ auf **[!UICONTROL Erstellen]**.
+   1. Legen Sie im Dialogfeld „Konfiguration erstellen“ einen Titel für den Ordner fest, aktivieren Sie **[!UICONTROL Bearbeitbare Vorlagen]** und tippen Sie auf **[!UICONTROL Erstellen]**.
 
-      Der Ordner wird erstellt und auf der Seite Konfigurationsbrowser aufgelistet.
+      Der Ordner wird erstellt und auf der Seite „Konfigurationsbrowser“ aufgelistet.
 
 1. Navigieren Sie zum entsprechenden Vorlagenordner und erstellen Sie eine Webvorlage.
 
    1. Navigieren Sie durch Auswahl zum entsprechenden Vorlagenordner **[!UICONTROL Instrumente]** > **[!UICONTROL Vorlagen > Ordner]**.
    1. Tippen Sie auf **[!UICONTROL Erstellen]**.
-   1. Auswählen **[!UICONTROL Interaktive Kommunikation - Webkanal]** und tippen **[!UICONTROL Nächste]**.
+   1. Wählen Sie **[!UICONTROL Interaktive Kommunikation – Web-Kanal]** aus und tippen Sie auf **[!UICONTROL Weiter]**.
    1. Geben Sie einen Vorlagentitel und eine Beschreibung ein und tippen Sie anschließend auf **[!UICONTROL Erstellen]**.
 
       Die Vorlage wird erstellt und ein Dialogfeld wird angezeigt.
@@ -74,12 +74,12 @@ Führen Sie die folgenden Schritte aus, um eine Webkanalvorlage zu erstellen:
 
       ![webchanneltemplate](assets/webchanneltemplate.png)
 
-      Beim Erstellen oder Bearbeiten einer Vorlage kann ein Vorlagenautor diverse Aspekte definieren. Das Erstellen oder Bearbeiten einer Vorlage ähnelt der Seitenerstellung. Weitere Informationen finden Sie unter Bearbeiten von Vorlagen - Vorlagenautoren in [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
+      Beim Erstellen oder Bearbeiten einer Vorlage kann ein Vorlagenautor diverse Aspekte definieren. Das Erstellen oder Bearbeiten einer Vorlage ähnelt der Seitenerstellung. Weitere Informationen finden Sie unter „Bearbeiten von Vorlagen – Vorlagenautoren“ in [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md).
 
-1. Um die Verwendung dieser Vorlage für die Erstellung interaktiver Kommunikation zu ermöglichen, aktivieren Sie die Vorlage.
+1. Aktivieren Sie die Vorlage, um ihre Verwendung für die Erstellung interaktiver Kommunikation zu ermöglichen.
 
    1. Tippen **[!UICONTROL Instrumente]** ![tools-1](assets/tools-1.png) > **[!UICONTROL Vorlagen]**.
-   1. Navigieren Sie zur entsprechenden Vorlage, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Aktivieren]** und tippen Sie in der Warnmeldung auf **[!UICONTROL Aktivieren]**.
+   1. Navigieren Sie zu der entsprechenden Vorlage, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Aktivieren]**, dann tippen Sie in der Warnmeldung auf **[!UICONTROL Aktivieren]**.
 
       Die Vorlage ist aktiviert und ihr Status wird als „Aktiviert“ angezeigt. Jetzt können Sie mit dem Erstellen einer interaktiven Kommunikation fortfahren, in der Sie die neu erstellte Webkanalvorlage verwenden können.
 

@@ -10,7 +10,7 @@ role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
    + [DevOp-Strategien für Unternehmen](enterprise-devops.md)
    + [Best Practices für SEO und URL-Verwaltung](seo-and-url-management.md)
 + Barrierefreiheit {#accessibility}
-   + [AEM und Richtlinien für barrierefreien Webzugang](web-accessibility.md)
-   + [Kurzanleitung zu WCAG 2.0](qg-wcag.md)
+   + [AEM und Richtlinien für barrierefreies Webdesign](web-accessibility.md)
+   + [Kurzanleitung zu WCAG 2.0](qg-wcag.md)
 + Datenschutz {#data-protection}
    + [AEM – Einhaltung von Datenschutzbestimmungen](data-protection-and-privacy.md)

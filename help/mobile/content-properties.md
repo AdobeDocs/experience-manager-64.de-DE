@@ -1,7 +1,7 @@
 ---
 title: Inhaltseigenschaften und Knoten
 seo-title: Content Properties and Nodes
-description: 'Auf dieser Seite erfahren Sie mehr über Inhaltseigenschaften und -knoten.  '
+description: Auf dieser Seite erfahren Sie mehr über Inhaltseigenschaften und -knoten.
 seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
@@ -21,7 +21,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Artikel, Banner und Sammlungen werden in AEM als cq:Pages dargestellt.
 

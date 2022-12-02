@@ -13,7 +13,7 @@ exl-id: 201e2b57-17c0-4454-9b0e-026e2c95ac63
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Die Protokollebenen lauten wie folgt:
 
 ## Ausführliche Option „verbose“ zur Fehlerbehebung {#verbose-option-used-for-troubleshooting}
 
-Wenn Sie CRX starten, können Sie die Option -v (verbose) zur Befehlszeile hinzufügen, wie in: &quot;
+Beim Starten von CRX können Sie der Befehlszeile die Option „- v“ (verbose, ausführlich) hinzufügen. Beispiel: &quot;
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 

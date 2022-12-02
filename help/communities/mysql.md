@@ -83,7 +83,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
-   * Passwort: `no password by default`
+   * Kennwort: `no password by default`
    * Standardschema: `leave blank`
 1. Auswählen `Test Connection` Überprüfen der Verbindung zum ausgeführten MySQL-Dienst
 
@@ -143,7 +143,6 @@ Installieren Sie das Schema, bevor Sie die Daten installieren.
 >
 >* [JDBC-Konfiguration](#configure-jdbc-connections)
 >* [SCORM-Konfiguration](#configure-scorm)
-
 >
 
 
@@ -152,7 +151,7 @@ Installieren Sie das Schema, bevor Sie die Daten installieren.
 In der MySQL Workbench
 
 * Über das Pulldown-Menü Datei
-* Wählen Sie nun eine der folgenden Optionen aus `Open SQL Script ...`
+* Auswählen `Open SQL Script ...`
 * Wählen Sie in dieser Reihenfolge eine der folgenden Optionen aus:
    1. `database_scormengine.sql`
    1. `database_scorm_integration.sql`

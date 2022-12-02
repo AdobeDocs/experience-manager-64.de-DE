@@ -8,7 +8,7 @@ exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
 source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -20,9 +20,9 @@ Stellen Sie sicher, dass Sie Folgendes in Ihre Netzwerkgrafik einbeziehen:
 
 * Möglichkeit der Verbindung des Client-Geräts (z. B. Computer, Mobilgerät oder Tablet) mit dem Netzwerk
 * Topologie des Unternehmensnetzwerks
-* Uplink zum Internet vom Unternehmensnetzwerk und dem [!DNL Experience Manager] Umgebung
-* Topologie der [!DNL Experience Manager] Umgebung
-* Definieren Sie gleichzeitige Verbraucher der [!DNL Experience Manager] Netzwerkschnittstelle
+* Uplink zum Internet vom Unternehmensnetzwerk und von der [!DNL Experience Manager]-Umgebung
+* Topologie der [!DNL Experience Manager]-Umgebung
+* Definition gleichzeitiger Verbraucher und Verbraucherinnen der [!DNL Experience Manager]-Netzwerkschnittstelle
 * Definierte Workflows der [!DNL Experience Manager] instance
 
 ## Möglichkeit der Verbindung des Client-Geräts mit dem Unternehmensnetzwerk {#connectivity-from-the-client-device-to-the-corporate-network}
@@ -45,9 +45,9 @@ Der rechts gezeigte Computer hat einen begrenzten Upstream zum Unternehmensnetzw
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
-Das Diagramm zeigt höhere Uplinkgeschwindigkeiten innerhalb des Unternehmensnetzwerks, als im Allgemeinen üblich sind. Diese Leitungen sind freigegebene Ressourcen. Wenn erwartet wird, dass ein freigegebener Switch die Vorgänge von 50 Clients abwickelt, kann es möglicherweise zu einem Engpass kommen. Im anfangs gezeigten Diagramm nutzen nur zwei Computer die betreffende Verbindung.
+Das Diagramm zeigt höhere Uplink-Geschwindigkeiten innerhalb des Unternehmensnetzwerks, als im Allgemeinen üblich sind. Diese Leitungen sind freigegebene Ressourcen. Wenn erwartet wird, dass ein freigegebener Switch die Vorgänge von 50 Clients abwickelt, kann es möglicherweise zu einem Engpass kommen. Im anfangs gezeigten Diagramm nutzen nur zwei Computer die betreffende Verbindung.
 
-## Uplink zum Internet vom Unternehmensnetzwerk und [!DNL Experience Manager] Umgebung {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Uplink zum Internet vom Unternehmensnetzwerk und von der [!DNL Experience Manager]-Umgebung {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -57,17 +57,17 @@ Am Uplink von einem Unternehmensnetzwerk zum Internet können andere Dienste die
 
 Unternehmens-Firewalls und Proxys können Bandbreite zudem auf vielfältige Weise anpassen. Diese Geräteart kann Bandbreite mithilfe der Dienstgüte, der Bandbreitenbeschränkungen pro Benutzer oder der Bitratenbeschränkungen pro Host priorisieren. Dies sind wichtige Engpässe, die zu untersuchen sind, da sie das Assets-Benutzererlebnis erheblich beeinträchtigen können.
 
-In diesem Beispiel nutzt das Unternehmen einen 10 GBit/s schnellen Uplink. Dieser sollte für mehrere Clients ausreichen. Außerdem beschränkt die Firewall die Hostgeschwindigkeit auf 10 MBit/s. Diese Beschränkung kann möglicherweise den Traffic zu einem einzelnen Host bis auf 10 MBit/s drosseln, obwohl der Uplink zum Internet auf 10 GBit/s ausgelegt ist.
+In diesem Beispiel nutzt das Unternehmen einen 10 GBit/s schnellen Uplink. Dieser sollte für mehrere Clients ausreichen. Außerdem beschränkt die Firewall die Host-Geschwindigkeit auf 10 MBit/s. Diese Beschränkung kann möglicherweise den Traffic zu einem einzelnen Host bis auf 10 MBit/s drosseln, obwohl der Uplink zum Internet auf 10 GBit/s ausgelegt ist.
 
 Dies ist der kleinste Engpass in Bezug auf Clients. Sie können jedoch die für die Firewall verantwortliche Netzwerkbetriebsgruppe kontaktieren, um festzustellen, ob eine Änderung oder ein Eintrag in die Zulassungsliste infrage kommt.
 
 Aus den Beispieldiagrammen ist ersichtlich, dass sechs Geräte einen konzeptionellen, 10 MBit/s schnellen Kanal gemeinsam nutzen. Je nach Größe der genutzten Assets reicht dies möglicherweise aus, um die Erwartungen der Benutzer zu erfüllen.
 
-## Topologie der [!DNL Experience Manager] Umgebung {#topology-of-the-aem-environment}
+## Topologie der [!DNL Experience Manager]-Umgebung {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-Topologie der [!DNL Experience Manager] -Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration und der Art und Weise, wie das Netzwerk in der Benutzerumgebung verbunden ist.
+Das Entwerfen der Topologie der [!DNL Experience Manager]-Umgebung erfordert detaillierte Kenntnisse der Systemkonfiguration sowie der Art der Netzwerkverbindung innerhalb der Benutzerumgebung.
 
 Das Beispielszenario umfasst eine Veröffentlichungsfarm mit fünf Servern, einen binären S3-Speicher und konfigurierte dynamische Medien.
 
@@ -75,7 +75,7 @@ Der Dispatcher teilt seine 100 MBit/s-Verbindung mit zwei Entitäten, der Außen
 
 Die [!DNL Experience Manager] -Instanz teilt die 1 Gbit/s-Verbindung mit mehreren Diensten. Aus Sicht der Netzwerktopologie entspricht das der Nutzung eines einzelnen Kanals mit verschiedenen Diensten.
 
-Überprüfen Sie das Netzwerk vom Client-Gerät zum [!DNL Experience Manager] Beispielsweise scheint der kleinste Engpass die Firewall-Drosselklappe von 10 Mbit für Unternehmen zu sein. Sie können diese Werte in der in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
+Überprüfen Sie das Netzwerk vom Client-Gerät zum [!DNL Experience Manager] Beispielsweise scheint der kleinste Engpass die Firewall-Drosselklappe von 10 Mbit für Unternehmen zu sein. Sie können diese Werte für die in der [Anleitung zur Dimensionierung in Assets](assets-sizing-guide.md) beschriebenen Größenberechnung verwenden, um das Benutzererlebnis zu bestimmen.
 
 ## Definierte Workflows der [!DNL Experience Manager] instance {#defined-workflows-of-the-aem-instance}
 

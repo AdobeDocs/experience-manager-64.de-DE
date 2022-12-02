@@ -1,7 +1,7 @@
 ---
 title: E-Commerce
 seo-title: eCommerce
-description: Das Integrations-Framework enthält eine Integrationsebene mit einer API.
+description: Das Integrations-Framework enthält eine Integrationsebene mit einer API
 seo-description: The integration framework includes an integration layer with an API
 uuid: 39a13c2f-4478-4030-8fe4-03f5b271d04f
 contentOwner: Guillaume Carlino
@@ -13,7 +13,7 @@ exl-id: a5f36d26-1be4-4e06-9237-3943e903d850
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '175'
-ht-degree: 63%
+ht-degree: 72%
 
 ---
 
@@ -35,7 +35,7 @@ Weitere Informationen finden Sie unter:
 
 >[!NOTE]
 >
->Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von eCommerce](/help/sites-deploying/ecommerce.md).
+>Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von E-Commerce](/help/sites-deploying/ecommerce.md).
 >
 >Weitere Informationen zu den Konzepten und zur Verwaltung von eCommerce-Implementierungen finden Sie unter [Verwaltung von eCommerce](/help/sites-administering/ecommerce.md).
 

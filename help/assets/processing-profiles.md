@@ -11,7 +11,7 @@ exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '1374'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ Ein wichtiges Konzept für die Verwendung von Profilen in [!DNL Experience Manag
 
 >[!NOTE]
 >
->Gilt für *Dynamic Media - Scene7-Modus* nur in [!DNL Experience Manager] 6.4.7.0 oder höher.
+>Gilt für den *Dynamic Media-Scene7-Modus* nur in 6.4.7.0 oder höher.[!DNL Experience Manager]
 
 Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vorhandenes Verarbeitungsprofil verfügt, das Sie nachträglich geändert haben.
 
@@ -103,7 +103,7 @@ Siehe [Anpassen der Batch-Größe des Neuverarbeitungs-Workflows](#adjusting-loa
 
    ![Komponente „Massen-Upload in Scene7“](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Im **[!UICONTROL Batch-Upload in Scene7-Schritt-Eigenschaften]** festzulegen, legen Sie Folgendes fest:
+1. Legen Sie im Dialogfeld **[!UICONTROL Massen-Upload zu Scene7 – Schritt-Eigenschaften]** Folgendes fest:
    * Geben Sie in die Textfelder **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** einen neuen Titel und eine neue Beschreibung für den Auftrag ein, falls gewünscht.
    * Wählen Sie **[!UICONTROL Handler-Modus]** aus, wenn der Handler mit dem nächsten Schritt fortfahren soll.
    * Geben Sie im Feld **[!UICONTROL Timeout]** den externen Prozess-Timeout (Sekunden) ein.

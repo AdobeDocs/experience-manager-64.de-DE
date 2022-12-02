@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines adaptiven Formulars mit einem Satz adaptiver Formulare
 seo-title: Create an adaptive form using a set of adaptive forms
-description: 'Mit AEM Forms können Sie adaptive Formulare zu einem einzigen großen adaptiven Formular vereinen, und seine Funktionen verstehen. '
+description: Mit AEM Forms können Sie adaptive Formulare zu einem einzigen großen adaptiven Formular vereinen, und seine Funktionen verstehen.
 seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
 uuid: 1423038b-8261-455b-b4ff-7be7222448c9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ exl-id: 969b0c11-adc7-476e-8c82-d444fccba984
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Funktionen wie die unabhängige Inhaltserstellung und verzögertes Laden bieten 
 
 ## Hinter den Kulissen {#behind-the-scenes}
 
-Sie können XSD-basierte adaptive Formulare und Fragmente zum übergeordneten Formular hinzufügen. Die Struktur des übergeordneten Formulars ist dieselbe wie diejenige eines [beliebigen adaptiven Formulars](/help/forms/using/prepopulate-adaptive-form-fields.md). Wenn Sie ein adaptives Formular als untergeordnetes Formular hinzufügen, wird es als Bereich im übergeordneten Formular hinzugefügt. Daten eines gebundenen untergeordneten Formulars werden unter dem `data`root der `afBoundData` -Abschnitt des XML-Schemas des übergeordneten Formulars.
+Sie können XSD-basierte adaptive Formulare und Fragmente zum übergeordneten Formular hinzufügen. Die Struktur des übergeordneten Formulars ist dieselbe wie diejenige eines [beliebigen adaptiven Formulars](/help/forms/using/prepopulate-adaptive-form-fields.md). Wenn Sie ein adaptives Formular als untergeordnetes Formular hinzufügen, wird es in Form eines Bedienfelds im übergeordneten Formular hinzugefügt. Daten eines gebundenen untergeordneten Formulars werden unter dem `data`Stamm des `afBoundData` Abschnitts des XML-Schemas des übergeordneten Formulars gespeichert.
 
 Ihre Kunden füllen zum Beispiel ein Antragsformular aus. Die ersten beiden Felder des Formulars sind „Name“ und „Identität“. Die XML lautet:
 
@@ -54,7 +54,7 @@ Ihre Kunden füllen zum Beispiel ein Antragsformular aus. Die ersten beiden Feld
 </afData>
 ```
 
-Sie können ein anderes Formular in der Anwendung hinzufügen, sodass Ihre Kunden ihre Geschäftsadresse ausfüllen können. Der Schemastamm des Formulars des untergeordneten Elements ist `officeAddress`. Anwenden `bindref` `/application/officeAddress` oder `/officeAddress`. Wenn `bindref` nicht angegeben wird, wird das Formular des untergeordneten Elements als Unterstruktur von `officeAddress` hinzugefügt. So sehen Sie die „XML“ im unten stehenden Formular:
+Sie können ein anderes Formular in der Anwendung hinzufügen, sodass Ihre Kunden ihre Geschäftsadresse ausfüllen können. Der Schemastamm des Formulars des untergeordneten Elements ist `officeAddress`. Übernehmen `bindref` `/application/officeAddress` oder `/officeAddress`. Wenn `bindref` nicht angegeben wird, wird das Formular des untergeordneten Elements als Unterstruktur von `officeAddress` hinzugefügt. So sehen Sie die „XML“ im unten stehenden Formular:
 
 ```xml
 <afData>
@@ -74,7 +74,7 @@ Sie können ein anderes Formular in der Anwendung hinzufügen, sodass Ihre Kunde
 </afData>
 ```
 
-Wenn Sie ein anderes Formular einfügen, über das Ihre Kunden eine Hausadresse angeben können, wenden Sie `bindref` `/application/houseAddress or /houseAddress.`XML sieht wie folgt aus:
+Wenn Sie ein anderes Formular einfügen, über das Ihre Kunden eine Hausadresse angeben können, wenden Sie `bindref` `/application/houseAddress or /houseAddress.` an. Das XML sieht wie folgt aus:
 
 ```xml
 <afData>
@@ -98,9 +98,9 @@ Wenn Sie ein anderes Formular einfügen, über das Ihre Kunden eine Hausadresse 
 </afData>
 ```
 
-Wenn Sie denselben untergeordneten Stammnamen wie den Schemastamm beibehalten möchten ( `Address`in diesem Beispiel) indizierte bindrefs verwenden.
+Wenn Sie denselben Unterstammnamen wie den Schemastamm beibehalten möchten (in diesem Beispiel `Address`), verwenden Sie indizierte Bindrefs.
 
-Wenden Sie beispielsweise bindrefs an `/application/address[1]` oder `/address[1]` und `/application/address[2]` oder `/address[2]`. Die XML des Formulars lautet:
+Sie können zum Beispiel Bindrefs wie `/application/address[1]` oder `/address[1]` und `/application/address[2]` oder `/address[2]` anwenden. Das XML des Formulars lautet:
 
 ```xml
 <afData>
@@ -126,7 +126,7 @@ Wenden Sie beispielsweise bindrefs an `/application/address[1]` oder `/address[1
 
 Sie können die Standardunterstruktur des adaptiven Formulars/Fragments mithilfe der Eigenschaft `bindRef` ändern. Mit der Eigenschaft `bindRef` können Sie den Pfad, der auf einen Ordner in der Ordnerstruktur des XML-Schemas zeigt, angeben.
 
-Wenn das untergeordnete Formular ungebunden ist, werden seine Daten unter dem `data`root der `afUnboundData` -Abschnitt des XML-Schemas des übergeordneten Formulars.
+Wenn das untergeordnete Formular ungebunden ist, werden seine Daten unter dem `data` Stamm des `afUnboundData` Abschnitts des XML-Schemas des übergeordneten Formulars gespeichert.
 
 Sie können ein adaptives Formular mehrmals als untergeordnetes Formular hinzufügen. Stellen Sie sicher, dass das `bindRef` ordnungsgemäß geändert wird, sodass jede verwendete Instanz des adaptiven Formulars auf einen anderen untergeordneten Stamm des Datenstamms zeigt.
 

@@ -13,7 +13,7 @@ exl-id: 8421a092-6e99-4c05-9647-c0cc76667c85
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zum Authoring in der modernen, Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/assets/assets.md).
+>Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche. Informationen zu Bearbeitungsmöglichkeiten in der neuen Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/assets/assets.md).
 
 In der Autorenumgebung können Sie folgende Aufgaben ausführen:
 
-* [Authoring](/help/sites-authoring/author.md) (einschließlich [Seitenbearbeitung](/help/sites-authoring/qg-page-authoring.md) und [Verwalten von Assets](/help/assets/assets.md))
+* [Bearbeiten](/help/sites-authoring/author.md) (einschließlich [Seitenbearbeitung](/help/sites-authoring/qg-page-authoring.md) und [Verwaltung von Assets](/help/assets/assets.md))
 
 * [Verwaltungsaufgaben](/help/sites-administering/administer-best-practices.md), die Sie für die Erstellung und Verwaltung des Inhalts auf Ihrer Website benötigen
 
@@ -45,7 +45,7 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
    * Dies ist die moderne standardmäßige Benutzeroberfläche von AEM.
    * Sie ist überwiegend in Grau gehalten und zeichnet sich durch ihre klare und minimalistische Gestaltung aus.
    * Sie wurde sowohl für Touch- als auch für Desktop-Geräte entwickelt (für Touch optimiert). Das Erscheinungsbild ist auf allen Geräten identisch, obwohl das [Anzeigen und Auswählen Ihrer Ressourcen](/help/sites-authoring/basic-handling.md) etwas unterschiedlich aussehen kann (Tippen bzw. Klicken).  
-   * Siehe [Standarddokumentation zur Bearbeitung](/help/sites-authoring/author.md) Weitere Informationen zum Erstellen mithilfe der Touch-optimierten Benutzeroberfläche. Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche.
+   * Weitere Informationen zur Verwendung der Touch-optimierten Benutzeroberfläche finden Sie in der [Standarddokumentation zur Bearbeitung](/help/sites-authoring/author.md). Die folgende Dokumentation bezieht sich auf die klassische Benutzeroberfläche.
 
    * Desktop:
    ![chlimage_1-150](assets/chlimage_1-150.png)

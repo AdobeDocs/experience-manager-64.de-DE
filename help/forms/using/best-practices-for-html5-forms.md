@@ -1,7 +1,7 @@
 ---
 title: Empfohlene Vorgehensweisen für HTML5-Formulare
 seo-title: Best practices for HTML5 forms
-description: 'Stimmen Sie Ihre XFA-basierten HTML5-Formulare für optimale Leistung ab. '
+description: Stimmen Sie Ihre XFA-basierten HTML5-Formulare für optimale Leistung ab.
 seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
 uuid: 739700c7-4f88-4b53-9453-1be6d5bc8432
 contentOwner: khsingh

@@ -13,13 +13,13 @@ exl-id: 5e2b4930-c030-4abe-9b81-6e6729fe3ad4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '7036'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 # Glossar {#glossary}
 
-Dieses Glossar listet (alphabetisch) Details aller lieferbaren Dokumente aus dem [Projektprüfliste](/help/managing/best-practices-checklist.md).
+Dieses Glossar listet (alphabetisch) alle lieferbaren Dokumente in der [Projektcheckliste](/help/managing/best-practices-checklist.md) auf.
 
 ## Akzeptanz der Projektbeteiligten aus den Geschäftsbereichen {#acceptance-from-business-stakeholders}
 
@@ -72,7 +72,7 @@ Stellen Sie sicher, dass die gewünschten Rollen die jeweiligen [Zertifizierungs
 
 ## Technische Schulung zu AEM {#aem-technical-training}
 
-Ausbildung der entsprechenden Person; z. B. Entwickler, Architekten, Ingenieure und Geschäftsleute.
+Bieten Sie technische Schulungen für die gewünschten Rollen an, z. B. für Entwickler, Architekten, Ingenieure und kaufmännische Fachleute.
 
 ## Vereinbarung zu den KPIs, die als Projektziele definiert sind {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -92,7 +92,7 @@ Die Kunden-Roadmap besteht aus allgemeinen Milestones und Geschäftszielen. Der 
 
 ## Definition der Anwendungsarchitektur {#application-architecture-definition}
 
-Die [Anwendungsarchitektur](/help/managing/best-practices.md#development-preparation) sollte das Verhalten der vorgeschlagenen Anwendungen klar definieren.
+Die [Anwendungsarchitektur](/help/managing/best-practices.md#development-preparation) muss das Verhalten der geplanten Anwendungen klar definieren.
 
 Ihr Fokus liegt auf Folgendem:
 
@@ -107,8 +107,8 @@ Neben den standardmäßigen Wartungsaufgaben für Adobe Experience Manager (AEM)
 
 Stellen Sie sicher, dass Ihr Team aus Mitarbeitern mit entsprechender Qualifikation besteht. Zu Projektteams müssen die folgenden Mitglieder zählen:
 
-* mindestens ein AEM zertifizierter Lead-Entwickler
-* mindestens ein AEM zertifizierter Architekt
+* Mindestens ein AEM-zertifizierter Entwicklungsleiter
+* Mindestens ein AEM-zertifizierter Architekt
 * mindestens 75 % Ihrer Entwickler AEM zertifiziert sind;
 
    Dies ermöglicht es den zertifizierten Entwicklern, Nachwuchsentwickler zu betreuen und sorgt für Wissensaustausch und Transparenz
@@ -129,7 +129,7 @@ Hierbei handelt es sich um einen allgemeinen Überblick über die System- und L�
 
 Die Architekturüberprüfungskommission ist ein abteilungsübergreifendes Gremium mit folgenden Aufgaben:
 
-* überwacht die Umsetzung einer kohärenten Strategie
+* Überwachung der Umsetzung einer abgestimmten Strategie
 * Sicherstellen der Kompatibilität in Systemen
 
 Die Überprüfungskommission muss für alle Mitwirkenden an der Architektur repräsentativ sein. Sie besteht in der Regel aus einer Gruppe von Führungskräften, die für die Überprüfung und Pflege der Gesamtarchitektur verantwortlich sind.
@@ -208,7 +208,7 @@ Geschäfts-KPIs definieren messbare Werte, die aufzeigen, wie effektiv ein Unter
 
 Ein Geschäftsanforderungsdokument beschreibt die Geschäftslösung für ein Projekt und liefert eine klare Präzisierung der Geschäftsanforderungen und -erwartungen des Kunden. Es unterscheidet auch zwischen der geschäftlichen und der technischen Lösung.
 
-Bei der Prüfung der Geschäftslösung sollte die BRD die Frage beantworten: &quot;Was will das Unternehmen tun?&quot;
+Bei der Prüfung der Geschäftslösung sollte dieses Dokument die Frage beantworten: „Was will das Unternehmen erreichen?“
 
 ## Genehmigung durch die Geschäftsführung bei allen erforderlichen Anpassungen der Lösung oder Architektur entsprechend den ermittelten ROI- und KPI-Erwartungen {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -533,7 +533,7 @@ Anfangsschätzungen der folgenden Elemente:
 
 ## Verfügbarkeit der Hardware zum Erfüllen der Anforderungen {#hardware-will-be-available-to-fulfill-requirements}
 
-Bestätigung, dass alle Umgebungen über die erforderliche Mindesthardware verfügen.
+Bestätigung, dass alle Umgebungen über die erforderliche Mindest-Hardware verfügen.
 
 ## Allgemeine Anforderungen {#high-level-requirements}
 
@@ -805,7 +805,7 @@ Stellen Sie sicher, dass die Systemtechniker und das Betriebspersonal alle Über
 
 Definiert werden muss Folgendes:
 
-* wann Überwachungsberichte erstellt werden sollten
+* Wann sollen Überwachungsberichte erstellt werden?
 * An wen sollen sie übermittelt werden?
 
 ## Dokumentation der Betriebsaufgaben {#operational-tasks-documentation}
@@ -849,7 +849,7 @@ Konzeptdokument, wie Sie sicherstellen können, dass Ihre Implementierung die Le
 
 ## Leistungsbenchmarktest {#performance-benchmark}
 
-Der Leistungsbenchmarktest dient zur Definition von Leistungstests, Stabilitätstests und Überwachung. Dies geschieht durch Bewertung der Leistungsmerkmale der Lösung und der Systemhardware.
+Der Leistungsbenchmarktest dient zur Definition von Leistungstests, Stabilitätstests und Überwachung. Dies erfolgt durch die Bewertung der Leistungsmerkmale der Lösung und System-Hardware.
 
 ## Leistungs-KPIs {#performance-kpis}
 
@@ -968,7 +968,7 @@ Dieses Dokument wird zusammen mit dem Runbook verwendet, um vor und nach der Ins
 
 >[!NOTE]
 >
->Ein Beispiel finden Sie unter [AEM Versionshinweise](/help/release-notes/release-notes.md).
+>Ein Beispiel finden Sie in den [AEM-Versionshinweisen](/help/release-notes/release-notes.md).
 
 ## In der Produktionsumgebung ausgeführte Version {#release-running-on-production-environment}
 
@@ -1010,7 +1010,7 @@ In ihr werden die technischen und geschäftlichen Risiken des Projekts bewertet.
 
 Der Risikominimierungsplan umfasst die Risikobewertung. Gemeinsam decken sie Folgendes ab:
 
-* identifizierte Risiken
+* Ausgemachte Risiken
 * Mögliche Lösungen für diese Risiken, sollten sie bei der Implementierung auftreten
 
 ## ROI-Erwartungen {#roi-expectations}
@@ -1065,7 +1065,7 @@ Definieren und dokumentieren Sie Details der Sicherheitskonfiguration, die für 
 Ein allgemeiner Überblick über die Sicherheitsstruktur der folgenden Elemente:
 
 * Anwendung
-* -Architektur
+* Architektur
 * Infrastruktur
 
 ## Erfasste und eingestufte Sicherheitsprobleme {#security-issues-listed-and-assessed}
@@ -1203,7 +1203,7 @@ Ein allgemeiner Überblick, wie sich die Systemarchitektur mit allen Sicherheits
 
 Alle bei der Risikobewertung (oder anderen Überprüfungen) gefundenen Risikofaktoren werden identifiziert und bewertet:
 
-* das in jedem
+* Der Grad des Risikos jedes einzelnen
 * Der geschätzte Aufwand für Änderungen an der Implementierung, die zu ihrer Behebung erforderlich sind
 
 ## Vertrautheit des Teams mit den Erfolgsdefinitionen und -kriterien {#team-is-aware-of-success-definitions-and-criteria}
@@ -1246,7 +1246,7 @@ Die technische Spezifikation deckt (u. a.) Folgendes ab:
 
 Die Spezifikationen der erforderlichen Vorlagen. Diese sollten u. a. Details wie z. B. zu parsys, Blueprint und Vererbungszuordnung bieten.
 
-Die Spezifikationen basieren auf den Geschäftsanforderungen und Erlebnisanforderungen.
+Die Spezifikationen basieren auf den Geschäftsanforderungen und den Anforderungen an das Anwendererlebnis.
 
 ## Testfälle {#test-cases}
 
@@ -1321,7 +1321,7 @@ Die erforderlichen Zugriffsrechte müssen den jeweiligen Rollen gewährt werden,
 
 Definiert Folgendes:
 
-* Anwendungsbeispiele zum Testen der Integrationen
+* Anwendungsfälle für das Testen der Integrationen
 * Funktionalität im Zusammenhang mit Anwendungen von Drittanbietern
 
 ## Festlegung von Schwellenwerten {#threshold-definition}

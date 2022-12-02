@@ -9,7 +9,7 @@ user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digital
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 76%
+ht-degree: 83%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 76%
 # Assets-Anleitung {#assets}
 
 + [Assets-Benutzerhandbuch](home.md)
-+ [AEM 6.4 Assets - Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
++ [AEM 6.4 Assets - Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html?lang=de)
 + [Über DAM](assets.md)
 + [Verbesserungen beim Benutzererlebnis](ux-improvements.md)
 + [Best Practices für Assets](best-practices-for-assets.md)
@@ -36,7 +36,7 @@ ht-degree: 76%
    + [Dynamic Media Newsletter-Archiv von Experience League](dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media.md)
-   + [Konfigurieren von Dynamic Media - Scene7-Modus](config-dms7.md)
+   + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
    + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
    + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
    + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
@@ -49,7 +49,7 @@ ht-degree: 76%
    + [Dynamic Media-Bildprofile](image-profiles.md)
    + [Intelligente Bildbearbeitung](imaging-faq.md)
    + [Intelligente Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis](client-side-dpr.md)
-   + [Video   ](s7-video.md)
+   + [Video ](s7-video.md)
    + [Bereitstellung von Inhalten per HTTP/2](http2.md)
    + [Bereitstellen von Dynamic Media-Assets](delivering-dynamic-media-assets.md)
    + [Aktivieren des Hotlink-Schutzes in Dynamic Media](hotlink-protection.md)
@@ -58,7 +58,7 @@ ht-degree: 76%
    + [Sets mit gemischten Medien](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
    + [Panoramabilder](panoramic-images.md)
-   + [Video   ](video.md)
+   + [Video ](video.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
    + [Karussellbanner](carousel-banners.md)
@@ -94,19 +94,19 @@ ht-degree: 76%
    + [Profile für die Verarbeitung von Metadaten, Bildern und Videos](processing-profiles.md)
    + [Kaskadierende Metadaten](cascading-metadata.md)
    + [Erstellen und Konfigurieren von Asset-Editor-Seiten](assets-finder-editor.md)
-   + [Handbuch zur Dimensionierung von Assets](assets-sizing-guide.md)
+   + [Handbuch zur Assets-Dimensionierung](assets-sizing-guide.md)
    + [Metadatenschema-Referenz](meta-ref.md)
    + [Best Practices für die effiziente Übersetzung von Assets](best-practices-for-translating-assets-efficiently.md)
    + [Handbuch zur Leistungsoptimierung von Assets](performance-tuning-guidelines.md)
    + [Anleitung zum Bearbeiten oder Hinzufügen von Metadaten](meta-edit.md)
-   + [Handbuch zur Asset-Migration](assets-migration-guide.md)
+   + [Handbuch zur Assets-Migration](assets-migration-guide.md)
    + [XMP-Metadaten](xmp.md)
    + [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md)
    + [AEM Assets und AEM Media Library](medialibrary.md)
    + [Verwenden von PDF Rasterizer](aem-pdf-rasterizer.md)
    + [Konfigurieren von Asset-Upload-Beschränkungen](configuring-asset-upload-restrictions.md)
    + [Best Practices für die Integration von AEM und Creative Cloud](aem-cc-integration-best-practices.md)
-   + [Adobe Asset Link konfigurieren](configure-asset-link.md)
+   + [Konfigurieren von Adobe Asset Link](configure-asset-link.md)
    + [Integrieren von AEM Assets mit dem InDesign-Server](indesign.md)
    + [Metadatenprofile](metadata-profiles.md)
    + [Digital Rights Management in Assets](drm.md)
@@ -118,7 +118,7 @@ ht-degree: 76%
    + [Erkennen des MIME-Typs von Assets mit Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
    + [Unterstützung für IPTC-Metadaten](iptc-support.md)
-   + [Metadatenschemas](metadata-schemas.md)
+   + [Metadatenschemata](metadata-schemas.md)
    + [Multi-Tenancy für Sammlungen, Snippets sowie Snippet-Vorlagen](multi-tenancy.md)
    + [Wasserzeichen  ](watermarking.md)
    + [Massenimport und -export von Metadaten](metadata-import-export.md)

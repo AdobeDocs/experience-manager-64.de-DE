@@ -13,7 +13,7 @@ exl-id: e7111c21-1f38-4d0d-ac4b-c83133c0d8d6
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, bei
 Diese Benachrichtigungen werden je nach Benachrichtigungstyp in zwei verschiedene Posteingänge zugestellt:
 
 * Ein Posteingang, in dem die Benachrichtigungen empfangen werden, die Sie im Rahmen von Abonnements erhalten. Dieser wird im folgenden Abschnitt beschrieben.
-* Ein spezieller Posteingang für Workflow-Elemente wird im Abschnitt [Teilnehmen an Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) Dokument.
+* Ein spezieller Posteingang für Workflow-Elemente wird im Dokument [Teilnehmen an Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) beschrieben.
 
 ## Anzeigen von Benachrichtigungen {#viewing-your-notifications}
 

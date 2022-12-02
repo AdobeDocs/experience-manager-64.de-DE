@@ -1,5 +1,5 @@
 ---
-title: 'Ordner synchronisieren '
+title: Ordner synchronisieren
 seo-title: Synchronizing directories
 description: Erfahren Sie, wie Sie die User Management-Datenbank mit Änderungen an den Quellordnerservern mithilfe der manuellen oder geplanten Synchronisierung synchronisieren.
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.

@@ -1,7 +1,7 @@
 ---
 title: Verwenden der Scribble-Signatur in HTML5-Formularen
 seo-title: Using Scribble Signature in HTML5 forms
-description: 'HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine allgemeine Voraussetzung zur Unterstützung von Signaturen. Das Unterzeichnen von Dokumenten auf mobilen Geräten ist eine immer gängigere Form der Unterzeichnung von Formularen. '
+description: HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine allgemeine Voraussetzung zur Unterstützung von Signaturen. Das Unterzeichnen von Dokumenten auf mobilen Geräten ist eine immer gängigere Form der Unterzeichnung von Formularen.
 seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
 uuid: afac2d37-ef0d-428b-aed7-64a00d62792d
 contentOwner: robhagat
@@ -14,7 +14,7 @@ exl-id: 8b6b151d-2422-4261-9edb-66efe3d33f8b
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '658'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -31,20 +31,20 @@ HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine all
 
    >[!NOTE]
    >
-   >Dimensionen des in Forms Designer ausgewählten Felds werden bei der Wiedergabe des Felds angezeigt. Allerdings wird die Größe des angezeigten Unterschriftenfeldes basierend auf dem Seitenverhältnis des Felds und nicht anhand der in Forms Designer festgelegten Größe berechnet.
+   >Die Abmessungen des in Forms Designer ausgewählten Feldes werden beim Rendern des Feldes berücksichtigt. Allerdings wird die Größe des angezeigten Unterschriftenfeldes basierend auf dem Seitenverhältnis des Felds und nicht anhand der in Forms Designer festgelegten Größe berechnet.
 
 1. Konfigurieren Sie das Scribble-Signatur-Feld.
 
-   Beim Unterschreiben auf einem iPad werden am Scribble-Signatur-Feld standardmäßig die geografischen Informationen als Pflichtangabe markiert. (Diese Angabe ist auf anderen Geräten optional.) Dieses Standardverhalten kann außer Kraft gesetzt werden, indem der Wert der Eigenschaft `geoLocMandatoryOnIpad`   geändert wird. Diese Eigenschaft wird auf dem Scribble-Signatur-Feld als Extras-Option bereitgestellt. Die Schritte zum Ändern dieser Einstellung:
+   Beim Unterschreiben auf einem iPad werden am Scribble-Signatur-Feld standardmäßig die geografischen Informationen als Pflichtangabe markiert. (Diese Angabe ist auf anderen Geräten optional.) Dieses Standardverhalten kann außer Kraft gesetzt werden, indem der Wert der Eigenschaft `geoLocMandatoryOnIpad` geändert wird. Diese Eigenschaft wird auf dem Scribble-Signatur-Feld als Extras-Option bereitgestellt. Die Schritte zum Ändern dieser Einstellung:
 
    1. Wählen Sie im Formular das Scribble-Signatur-Feld.
    1. Wählen Sie die Registerkarte **XML-Quelle.**
 
       >[!NOTE]
       >
-      >Um die Registerkarte &quot;XML-Quelle&quot;zu öffnen, klicken Sie auf **Ansicht** >  **XML-Quelle**.
+      >Um die Registerkarte „XML-Quelle“ zu öffnen, klicken Sie auf **Ansicht** > **XML-Quelle**.
 
-   1. Suchen Sie die `<ui>` -Tag im `<field>` Taggen und ändern Sie den Quellcode so, dass er wie folgt aussieht:
+   1. Suchen Sie das Tag `<ui>` im Tag `<field>` und ändern Sie den Quell-Code so, dass er wie folgt aussieht:
 
       ```xml
       <extras name="x-scribble-add-on">
@@ -63,9 +63,9 @@ HTML5-Formulare werden zunehmend auf Touch-Geräten verwendet. Sie sind eine all
 
 Nachdem ein Scribble-Signatur-Feld dem Formular hinzugefügt wurde und das Formular angezeigt wird, wird beim Klicken oder Tippen auf das Feld ein Dialogfeld geöffnet. Der Benutzer kann mit einer Maus, mit dem Finger oder einem Eingabestift im gepunkteten Rechteck unterschreiben.
 
-![Geolocation](assets/geolocation.png)
+![geolocation](assets/geolocation.png)
 
-**A.** Pinsel **B.** Radiergummi **C.** Geolocation **D.** Geolocation-Informationen
+**A.** Pinsel **B.** Radiergummi **C.** Geolocation **D.** Geografische Informationen
 
 ### Geotagging {#geo-tagging}
 
@@ -83,7 +83,7 @@ Diese Einstellung kann auf iPads geändert werden, indem in den init-Parametern 
 
 ### Löschen einer Signatur {#clearing-a-signature}
 
-Bei Verwendung dieser Funktion kann ein Benutzer auf die **Radiergummi** -Symbol, um das Feld zu löschen und von vorn zu beginnen. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
+Bei dieser Funktion kann ein Benutzer auf das Symbol **Radiergummi** klicken, um den Inhalt des Felds zu löschen und von vorne zu beginnen. Wenn zuvor geografische Informationen hinzugefügt wurden, werden diese ebenfalls gelöscht.
 
 ### Speichern einer Signatur {#saving-a-signature}
 

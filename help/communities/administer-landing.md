@@ -84,7 +84,7 @@ Eine wichtige Funktion von AEM Communities ist die Erstellung benutzergenerierte
 * [Analytics-Konfiguration](analytics.md): erforderliche Informationen zur Aktivierung der Funktionen von Adobe Analytics für Communities
 * [Tagging von Aktivierungsressourcen](tag-resources.md): zum Erstellen von Aktivierungskatalogen erforderlich
 
-### Bereitstellung {#deployment}
+### Implementierung {#deployment}
 
 Der Abschnitt &quot;Bereitstellung&quot;enthält AEM Communities-spezifische Informationen.
 

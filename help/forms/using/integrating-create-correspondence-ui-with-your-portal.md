@@ -34,7 +34,7 @@ Eine Möglichkeit, die Anwendung „Korrespondenz erstellen“ von einem Cluster
 Beispielsweise würde das benutzerdefinierte Portal die URL als\
 `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]` vorbereiten, wobei es sich um die href eines Links auf dem Portal handeln könnte.\
 Wenn das Portal den Namen der Briefvorlage enthält, kann die URL\
-`https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`.
+`https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]` möglich.
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ Die Reihenfolge der Parameter in der Tabelle gibt die Voreinstellungen von Param
   </tr>
   <tr>
    <td>Willkürlich</td> 
-   <td>Zeitstempel</td> 
+   <td>Timestamp</td> 
    <td>Um das Problem des Browser Caching zu lösen</td> 
   </tr>
  </tbody>

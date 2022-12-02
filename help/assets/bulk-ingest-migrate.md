@@ -15,7 +15,7 @@ role: Admin,User
 source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '388'
-ht-degree: 15%
+ht-degree: 30%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 15%
 
 Die Installation von Feature Pack 18912 ist _optional_.
 
-Mit Feature Pack 18912 können Sie Assets entweder per FTP AEM direkt in Dynamic Media - Scene7 aufnehmen oder Assets aus Dynamic Media Classic in den Dynamic Media - Scene7 -Modus migrieren AEM. Das Feature Pack finden Sie unter [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html).
+Mit Feature Pack 18912 können Sie Assets entweder per FTP AEM direkt in Dynamic Media - Scene7 aufnehmen oder Assets aus Dynamic Media Classic in den Dynamic Media - Scene7 -Modus migrieren AEM. Das Feature Pack erhalten Sie von [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html).
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ Bevor Sie dieses Feature Pack installieren können, müssen Sie zunächst einen 
 
 Siehe auch [Konfigurieren von Dynamic Media - Scene7-Modus](https://helpx.adobe.com/experience-manager/6-4/assets/using/config-dms7.html).
 
-**So installieren Sie Feature Pack 18912 für die Massenmigration von Assets**,
+**Gehen Sie zur Installation von Feature Pack 18912 für die Massenmigration von Assets wie folgt vor**,
 
-1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Tools > Sicherheit > Benutzer > Benutzer erstellen]**. Dieser Dienstbenutzer muss Lese-/Schreibberechtigungen für `/content/dam`.
+1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Tools > Sicherheit > Benutzer > Benutzer erstellen]**. Dieser Dienstbenutzer benötigt Lese-/Schreibberechtigungen für `/content/dam`.
 1. Im **[!UICONTROL ID]** und **[!UICONTROL Passwort]** -Felder einen Benutzernamen und ein Kennwort eingeben; Beispiel: `FTP User`. Dieser Name wird in der Zeitleiste als der Benutzer angezeigt, der das Asset erstellt hat. Wenn ein Asset über FTP hochgeladen wird, gilt es als erstellt, wenn es auf den FTP-Server hochgeladen und in AEM gepusht wurde.
-1. Kontakt [Adobe-Kundenunterstützung für Experience Manager](https://helpx.adobe.com/de/contact/enterprise-support.ec.html) , um Zugriff auf Feature Pack 18912 zum Herunterladen anzufordern. Sie benötigen möglicherweise die folgenden Informationen, wenn Sie sich an den Support wenden:
+1. Kontaktieren Sie den [Kunden-Support von Adobe für Experience Manager](https://helpx.adobe.com/de/contact/enterprise-support.ec.html), um den Download von Feature Pack 18912 anzufordern. Sie benötigen möglicherweise die folgenden Informationen, wenn Sie sich an den Support wenden:
 
    * Server-IP-Adresse für Ihre Autoreninstanz, einschließlich der Portnummer (standardmäßig ist die Portnummer 4502).
    * Benutzername und Kennwort AEM Dienstbenutzers aus dem vorherigen Schritt.

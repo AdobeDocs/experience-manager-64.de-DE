@@ -14,7 +14,7 @@ exl-id: b8cbc429-b0c3-4f6e-a15f-4aef54733c8e
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1108'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
@@ -79,7 +79,7 @@ So erstellen Sie eine neue Übersetzungsintegration, die einen Connector für Ü
 * Wählen Sie **[!UICONTROL Tools]**
 * Auswählen **[!UICONTROL Aktivitäten]**
 * Auswählen **[!UICONTROL Cloud]**
-* Auswählen **[!UICONTROL Cloud Services]**
+* Wählen Sie **[!UICONTROL Cloud Services]** aus
 * Scrollen Sie nach unten zu **[!UICONTROL Übersetzungsintegration]**
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
@@ -96,7 +96,7 @@ So erstellen Sie eine neue Übersetzungsintegration, die einen Connector für Ü
 
 * **[!UICONTROL Übergeordnete Konfiguration]**
 (Erforderlich) Lassen Sie in der Regel als Standard. Der Standardwert ist 
-`/etc/cloudservices/translation`.
+`/etc/cloudservices/translation` möglich.
 
 * **[!UICONTROL Titel]**
 (Erforderlich) Geben Sie einen Anzeigetitel Ihrer Wahl ein. Kein Standardwert.
@@ -104,7 +104,7 @@ So erstellen Sie eine neue Übersetzungsintegration, die einen Connector für Ü
 * **[!UICONTROL Name]**
 (Optional) Geben Sie einen Namen für die Konfiguration ein. Der Standardwert ist ein Knotenname, der auf dem Titel basiert.
 
-* Wählen Sie **[!UICONTROL Erstellen]**
+* Wählen Sie **[!UICONTROL Erstellen]** aus
 
 #### Dialogfeld &quot;Übersetzungskonfiguration&quot; {#translation-config-dialog}
 
@@ -126,7 +126,7 @@ Wählen Sie eine Kategorie aus, die den zu übersetzenden Inhalt beschreibt. Der
 (Optional) Wenn Sie ein Gebietsschema zum Speichern von benutzergenerierten Inhalten auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](sites-console.md#translation) für die Website. Auswahl `No Common Store` deaktiviert die globale Übersetzung. Standardmäßig ist die globale Übersetzung deaktiviert.
 
 * **[!UICONTROL Assets]** tab: kann als Standard beibehalten werden
-* Klicken Sie auf **[!UICONTROL OK]**
+* Wählen Sie **[!UICONTROL OK]** aus
 
 #### Aktivierung {#activation}
 

@@ -13,7 +13,7 @@ exl-id: f3c03562-aaeb-4d43-aee1-d92d661ee329
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '227'
-ht-degree: 70%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ In der Standardeinstellung ist die Option zum Wechseln zur klassischen Benutzero
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Jede Konsole mit einer klassischen UI-Version in `/libs/cq/core/content/nav` kann einzeln wieder aktiviert werden, sodass die **Klassische Benutzeroberfläche** wird das Konsolensymbol erneut angezeigt, wenn der Mauszeiger darüber bewegt wird.
+Jede Konsole, die unter `/libs/cq/core/content/nav` über eine klassische Benutzeroberfläche verfügt, kann einzeln wieder aktiviert werden. Die Option **Klassische Benutzeroberfläche** wird für das Konsolensymbol dann wieder angezeigt, wenn Sie den Mauszeiger darauf bewegen.
 
 In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für die Sites-Konsole.
 
@@ -39,7 +39,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    `/libs/cq/core/content/nav/sites`
 
-1. Erstellen Sie eine Überlagerung mit der **Überlagerungsknoten** Option; Beispiel:
+1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten**. Beispiel:
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`

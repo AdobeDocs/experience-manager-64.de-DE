@@ -1,7 +1,7 @@
 ---
 title: Zusammenstellen von Dokumenten mithilfe der Bates-Nummerierung
 seo-title: Assembling Documents Using Bates Numbering
-description: 'Verwenden Sie die Bates-Nummerierung, um PDF-Dokumente mithilfe der Java- und Webservice-API zusammenzustellen. '
+description: Verwenden Sie die Bates-Nummerierung, um PDF-Dokumente mithilfe der Java- und Webservice-API zusammenzustellen.
 seo-description: Use Bates numbering to assemble PDF documents using the Java and Web Service API.
 uuid: 28d5faeb-6915-41a2-b6a0-78d255df024f
 contentOwner: admin

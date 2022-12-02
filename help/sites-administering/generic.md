@@ -1,5 +1,5 @@
 ---
-title: Verwalten des generischen eCommerce
+title: Verwalten von generischem E-Commerce
 seo-title: Administering Generic eCommerce
 description: Die generische AEM-Lösung verfügt über Methoden zum Verwalten der Commerce-Informationen, die im Repository gespeichert sind.
 seo-description: The AEM generic solution provides methods of managing the commerce information held within the repository.
@@ -14,11 +14,11 @@ exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
 source-wordcount: '2912'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
-# Verwalten des generischen eCommerce{#administering-generic-ecommerce}
+# Verwalten von generischem E-Commerce{#administering-generic-ecommerce}
 
 Die generische AEM-Lösung verfügt über Methoden zum Verwalten der Commerce-Informationen, die im Repository gespeichert sind (im Gegensatz zur Verwendung einer externen eCommerce-Engine). Hierzu gehört Folgendes:
 
@@ -47,7 +47,7 @@ Vor der Erstellung von Produkten müssen Sie eine [Strukturvorlage](/help/sites-
 
 Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukturvorlage ist einem Produkt jeweils wie folgt zugeordnet:
 
-* path
+* Pfad
 * Produkt kann auf Strukturvorlage verweisen
 
 >[!NOTE]
@@ -76,20 +76,20 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    * **Importtool**
 
-      Der Importeur für die spezifische [Commerce-Anbieter](/help/sites-administering/concepts.md#commerce-providers), standardmäßig `Geometrixx`.
+      Das Import-Tool für den jeweiligen [E-Commerce-Anbieter](/help/sites-administering/concepts.md#commerce-providers), (standardmäßig `Geometrixx`).
 
    * **Quelle**
 
-      Die zu importierende Datei; Sie können den Browser verwenden, um eine Datei auszuwählen.
+      Die Datei, die importiert werden soll. Sie können den Browser nutzen, um eine Datei auszuwählen.
 
    * **Inkrementeller Import**
 
-      Geben Sie an, ob es sich um einen inkrementellen Import handelt (im Gegensatz zum vollständigen Import).
+      Geben Sie an, ob dies ein inkrementeller Import ist (und kein vollständiger Import).
    >[!NOTE]
    >
-   >Der inkrementelle Import (des Beispiel-Importtools „geometrixx-outdoors“) erfolgt auf Produktebene.
+   >Der inkrementelle Import (des Beispiel-Import-Tools „geometrixx-outdoors“) erfolgt auf Produktebene.
    >
-   >Ein angepasstes Importtool kann so definiert werden, dass es wie gewünscht ausgeführt wird.
+   >Ein angepasstes Import-Tool kann so definiert werden, dass es wie gewünscht ausgeführt wird.
 
 1. Wählen Sie **Weiter**, um die Produkte zu importieren. Ein Protokoll mit den durchgeführten Aktionen wird angezeigt.
 
@@ -106,7 +106,7 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 #### Importieren von Produkten – klassische Benutzeroberfläche {#importing-products-classic-ui}
 
 1. Verwenden Sie die **Tools-Konsole**, um den Ordner **Commerce** zu öffnen.
-1. Doppelklicken Sie, um das **Produkt-Importtool** zu öffnen:
+1. Doppelklicken Sie, um das **Produkt-Import-Tool** zu öffnen:
 
    ![chlimage_1-54](assets/chlimage_1-54.jpeg)
 
@@ -114,21 +114,21 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
    * **Name speichern**
 
-      Die Produkte werden nach folgenden Kriterien importiert:
+      Die Produkte werden importiert in:
 
       `/etc/commerce/products/<*store name*>/`
 
-   * **Commerce-Anbieter**
+   * **E-Commerce-Anbieter**
 
-      Der Importeur für Ihre [Commerce-Anbieter](/help/sites-administering/concepts.md#commerce-providers); standardmäßig Geometrixx.
+      Das Import-Tool für Ihren [E-Commerce-Anbieter](/help/sites-administering/concepts.md#commerce-providers) (standardmäßig „Geometrixx“).
 
    * **Quelldatei**
 
-      Der Speicherort im Repository der zu importierenden Datei.
+      Der Ort der zu importierenden Datei im Repository.
 
    * **Inkrementeller Import**
 
-      Geben Sie an, ob es sich um einen inkrementellen Import handelt (im Gegensatz zum vollständigen Import).
+      Geben Sie an, ob dies ein inkrementeller Import ist (und kein vollständiger Import).
 
 1. Klicken Sie auf **Produkte importieren**.
 
@@ -224,14 +224,14 @@ Für jeden Produkttyp ist eine separate Strukturvorlage erforderlich. Die Strukt
 
 Sie können eine vorhandene Facette ändern oder neue hinzufügen, indem Sie CRXDE Lite verwenden:
 
-1. Gehen Sie zu:
+1. Navigieren Sie zu:
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
-1. Beispielsweise können Sie die Größen ändern, die auf der Seite für die Produktsuche angezeigt werden. Klicken Sie auf `sizegroup` Knoten.
-1. Klicken `items` Knoten und klicken Sie dann auf `propertypredicate` Knoten.
-1. Sie können die `propertyValues`. Beispielsweise können Sie XS oder XXL hinzufügen oder eine Größe entfernen.
-1. Klicken **Alle speichern** und navigieren Sie zur Seite &quot;Produktsuche&quot;. Ihre Änderungen sollten angezeigt werden.
+1. Beispielsweise können Sie die Größen ändern, die auf der Seite für die Produktsuche angezeigt werden. Klicken Sie auf den Knoten `sizegroup`.
+1. Klicken Sie auf den Knoten `items` und dann auf den Knoten `propertypredicate`.
+1. Sie können die `propertyValues` ändern. Beispielsweise können Sie XS oder XXL hinzufügen oder eine Größe entfernen.
+1. Klicken Sie auf **Alle speichern** und gehen Sie zur Seite für die Produktsuche. Ihre Änderungen sollten angezeigt werden.
 
 ### Mehrere Assets {#multiple-assets}
 
@@ -244,7 +244,7 @@ Sie können in der Produktkomponente mehrere Assets hinzufügen und dann das Ass
 #### Hinzufügen mehrerer Assets {#adding-multiple-assets}
 
 1. Navigieren Sie zur **Produktekonsole**; nutzen Sie dazu die Option **Commerce**.
-1. Verwenden der **Produkte** -Konsole, navigieren Sie zum gewünschten Produkt.
+1. Navigieren Sie in der **Produktekonsole** zum gewünschten Produkt.
 
    >[!NOTE]
    >
@@ -257,19 +257,19 @@ Sie können in der Produktkomponente mehrere Assets hinzufügen und dann das Ass
    ![chlimage_1-329](assets/chlimage_1-329.png)
 
 1. Klicken oder tippen Sie auf **Hinzufügen**. Ein neuer Platzhalter für Assets wird angezeigt.
-1. Durch Tippen/Klicken auf &quot;Ändern&quot;wird ein Dialogfeld geöffnet, in dem Sie ein Asset auswählen können.
+1. Wenn Sie auf **Ändern** klicken oder tippen, wird ein Dialogfeld geöffnet, in dem Sie ein Asset wählen können.
 1. Wählen Sie das Asset aus, das Sie hinzufügen möchten.
 
    >[!NOTE]
    >
    >Die auswählbaren Assets stammen aus [Assets](https://helpx.adobe.com/experience-manager/aem-previous-versions.html#assets).
 
-1. Klicken oder tippen Sie auf das Symbol „Fertig“.
+1. Klicken oder tippen Sie auf das Symbol „Fertig“. 
 
 In Ihrer Produktkomponente sind jetzt zwei Assets gespeichert. Sie können konfigurieren, welches auf der Produktseite angezeigt wird. Hierfür wird ein Kategoriesystem verwendet. Zuerst müssen Sie den einzelnen Assets eine Kategorie hinzufügen:
 
-1. Tippen/klicken **Produktdaten anzeigen**.
-1. Geben Sie eine **Asset-Kategorie** unter den Assets, beispielsweise `cat1` und `cat2`.
+1. Klicken oder tippen Sie auf **Produktdaten anzeigen**.
+1. Geben Sie unter den Assets eine **Asset-Kategorie** ein, z. B. `cat1` und `cat2`.
 
    >[!NOTE]
    >
@@ -309,15 +309,15 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 1. Navigieren Sie zu Ihrem Katalog.
 1. Klicken oder tippen Sie auf **Eigenschaften anzeigen**.
 1. Tippen/klicken Sie auf **Bearbeiten**.
-1. Tippen/klicken Sie auf **Assets** Registerkarte.
+1. Klicken oder tippen Sie auf die Registerkarte **Assets**.
 1. Geben Sie die gewünschte **Produkt-Asset-Kategorie** ein.
 1. Klicken oder tippen Sie auf **Fertig**.
 1. Führen Sie für Ihre Änderungen den [Rollout](#rolling-out-a-catalog) durch.
 
 #### Produktekonsole {#products-console}
 
-1. Verwenden der **Produkte** -Konsole, navigieren Sie zum gewünschten Produkt.
-1. Tippen/klicken **Produktdaten anzeigen**.
+1. Navigieren Sie in der **Produktekonsole** zum gewünschten Produkt.
+1. Klicken oder tippen Sie auf **Produktdaten anzeigen**.
 1. Tippen/klicken Sie auf **Bearbeiten**.
 1. Geben Sie eine **Standard-Asset-Kategorie** ein.
 1. Klicken oder tippen Sie auf **Fertig**.
@@ -329,7 +329,7 @@ Der Ablauf zum Auswählen des angezeigten Bilds ist wie folgt:
 
 >[!NOTE]
 >
->Häufig werden Produktinformationen über die Seiten veröffentlicht, die darauf verweisen. Wenn Sie beispielsweise Seite X veröffentlichen, die auf Produkt Y verweist, werden AEM fragen, ob Sie auch Produkt Y veröffentlichen möchten.
+>Häufig werden Produktinformationen über die Seiten veröffentlicht, die darauf verweisen. Wenn Sie zum Beispiel Seite X veröffentlichen, die auf Produkt Y verweist, fragt AEM, ob Sie auch Produkt Y veröffentlichen möchten.
 >  
 >Für Sonderfälle unterstützt AEM auch die direkte Veröffentlichung aus den Produktdaten.
 
@@ -367,15 +367,15 @@ Es ist ein Ereignis-Handler vorhanden, der ein Ereignis protokolliert, wenn ein 
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_MODIFIED`
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_DELETED`
 
-Für `PRODUCT_*` -Ereignisse, verweist der Pfad auf das Basisprodukt in `/etc/commerce/products`. Für `PRODUCT_PAGE_*` -Ereignisse, verweist der Pfad auf die `cq:Page` Knoten.
+Für die `PRODUCT_*`-Ereignisse zeigt der Pfad auf das Basisprodukt unter `/etc/commerce/products`. Für die `PRODUCT_PAGE_*`-Ereignisse zeigt der Pfad auf den Knoten `cq:Page`.
 
-Sie können sie in der Web-Konsole in OSGi-Ereignissen anzeigen ( `/system/console/events`), z. B.:
+Sie können diese in der Web-Konsole in den OSGi-Ereignissen (`/system/console/events` ) anzeigen, z. B.:
 
 ![](do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
->Lesen Sie auch [Ereignisverarbeitung in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Lesen Sie auch die Informationen unter [Ereignishandhabung in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
 ### Bild mit Links für Hinzufügen zum Warenkorb {#image-with-add-to-cart-links}
 
@@ -388,7 +388,7 @@ Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Grö�
 1. Ziehen Sie ein Bild aus dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) und legen Sie es in der Komponente ab.
 1. Wählen Sie eine der folgenden Möglichkeiten aus:
 
-   * Klicken Sie auf die Komponente und dann auf das Symbol Bearbeiten .
+   * Klicken Sie auf die Komponente und dann auf das Symbol „Bearbeiten“.
    * Führen Sie einen langsamen Doppelklick aus.
 
 1. Klicken Sie auf das Symbol für „Vollbild“.
@@ -419,7 +419,7 @@ Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Grö�
    ![](do-not-localize/chlimage_1-22.png)
 
 1. Wechseln Sie in den Modus [Vorschau](/help/sites-authoring/editing-content.md#previewing-pages).
-1. Klicken Sie auf den Hotspot „+“ Ein Dialogfeld wird geöffnet, in dem Sie die Größe und Menge des eingegebenen Produkts auswählen können **Pfad**.
+1. Klicken Sie auf den Hotspot „+“ Ein Dialogfeld wird geöffnet, in dem Sie die Größe und Menge für das Produkt auswählen können, das Sie unter **Pfad** eingegeben haben.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
@@ -463,7 +463,7 @@ Generieren Sie wie folgt einen Katalog:
 
    ![](do-not-localize/chlimage_1-23.png)
 
-1. Wählen Sie aus der Liste **Katalog erstellen**, wird der Assistent Katalog erstellen geöffnet.
+1. Wählen Sie in der Liste die Option **Katalog erstellen**. Der Assistent für das Erstellen eines Katalogs wird geöffnet.
 
    ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -473,14 +473,14 @@ Generieren Sie wie folgt einen Katalog:
 
    ![chlimage_1-338](assets/chlimage_1-338.png)
 
-1. Geben Sie einen **Titel** und **Name**.
+1. Geben Sie einen **Titel** und einen **Namen** ein.
 1. Klicken oder tippen Sie auf die Schaltfläche **Erstellen**. Der Katalog wird erstellt und ein Dialogfeld wird geöffnet.
 
    ![chlimage_1-339](assets/chlimage_1-339.png)
 
 1. Wenn Sie auf die Schaltfläche **Fertig** klicken oder tippen, gelangen Sie wieder zur Sites-Konsole, in der der Katalog angezeigt wird.
 
-   Tippen/Klicken **Katalog öffnen** -Schaltfläche öffnet Ihren Katalog (z. B. `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Wenn Sie auf die Schaltfläche **Katalog öffnen** klicken oder tippen, wird Ihr Katalog geöffnet (z. B. `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Generieren eines Katalogs – klassische Benutzeroberfläche {#generating-a-catalog-classic-ui}
 
@@ -518,7 +518,7 @@ Generieren Sie wie folgt einen Katalog:
 
 Führen Sie den Rollout für einen Katalog wie folgt durch:
 
-1. Navigieren Sie zum **Kataloge** Konsole, über **Handel**.
+1. Navigieren Sie über die Option **Commerce** zur **Katalogkonsole**.
 1. Navigieren Sie zu dem Katalog, für den Sie den Rollout durchführen möchten.
 1. Verwenden Sie eine der folgenden Optionen:
 
@@ -529,14 +529,14 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
    ![](do-not-localize/chlimage_1-24.png)
 
-1. Legen Sie im Assistenten den Rollout nach Bedarf fest und tippen/klicken Sie dann auf **Rollout-Änderungen**.
+1. Legen Sie im Assistenten den Rollout wie gewünscht fest und klicken oder tippen Sie dann auf **Rollout-Änderungen**.
 1. Ein Dialogfeld wird geöffnet. Tippen/klicken Sie auf &quot;Fertig&quot;, wenn der Prozess abgeschlossen ist.
 
 #### Durchführen des Rollouts für einen Katalog – klassische Benutzeroberfläche {#rolling-out-a-catalog-classic-ui}
 
 Führen Sie den Rollout für einen Katalog wie folgt durch:
 
-1. Navigieren Sie zum Katalog, für den Sie einen Rollout durchführen möchten. Beispiel:
+1. Navigieren Sie zu dem Katalog, für den Sie den Rollout durchführen möchten. Beispiel:
 
    `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
@@ -548,7 +548,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
 #### Blueprint-Importtool – Touch-optimierte Benutzeroberfläche {#blueprint-importer-touch-optimized-ui}
 
-1. Navigieren Sie zum **Kataloge** Konsole, über **Handel**.
+1. Navigieren Sie über die Option **Commerce** zur **Katalogkonsole**.
 1. Navigieren Sie zu dem Ort, an den Sie den Katalog-Blueprint importieren möchten.
 1. Klicken oder tippen Sie auf das Symbol **Blueprints importieren**.
 
@@ -562,7 +562,7 @@ Führen Sie den Rollout für einen Katalog wie folgt durch:
 
 #### Blueprint-Importtool – klassische Benutzeroberfläche {#blueprint-importer-classic-ui}
 
-1. Verwenden der **Instrumente** Konsole, navigieren Sie zu **Handel**.
+1. Navigieren Sie über die **Tools**-Konsole zu **Commerce**.
 
    Beispiel:
 
@@ -647,7 +647,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 >
 >Beachten Sie Folgendes: Im Lieferzustand verfügt AEM nicht über Aktionen, die für standardmäßige Funktionen für Bestellungen erforderlich sind, z. B. Warenrückgabe, Aktualisierung des Bestellstatus, Bestellabwicklung, Generierung von Lieferscheinen. Der Hauptzweck ist die Technologievorschau.
 >
->Die allgemeine Auftragsverwaltung in AEM wurde grundlegend aufbewahrt. Die im Assistenten verfügbaren Felder hängen von der Grundlage ab:\
+>Die allgemeine Bestellverwaltung in AEM wurde bewusst einfach gehalten. Es hängt von der Strukturvorlage ab, welche Felder im Assistenten verfügbar sind:\
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Wenn Sie eine angepasste Strukturvorlage erstellen, können Sie mehr Bestellinformationen speichern.
@@ -675,7 +675,7 @@ Auf der Demo-Website (Geometrixx Outdoors – Englisch) ist das Gutscheinformula
 
 #### Bearbeiten von Bestellinformationen – Touch-optimierte Benutzeroberfläche {#editing-order-information-touch-optimized-ui}
 
-1. Verwenden Sie die **Auftragskonsole**, um zur Bestellung zu navigieren.
+1. Navigieren Sie in der **Auftragskonsole** zur Bestellung.
 1. Verwenden Sie eine der folgenden Optionen:
 
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)

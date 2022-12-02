@@ -94,7 +94,7 @@ AEM 6.4 Communities bietet das Symbol &quot;Website löschen&quot;auf den vorhan
 
 AEM Communities bietet Anwenderdatenschutz im Mittelpunkt der Community-Erfahrung. [Vordefinierte APIs](user-ugc-management-service.md) und [Beispiel-Servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Diese APIs helfen bei der Massenverwaltung (Massenlöschung und Massenexport) von benutzergenerierten Inhalten und der Löschung von Benutzerprofilen und sind bei der Verarbeitung von DSGVO-Konformitäts-Anfragen der EU hilfreich.
 
-## Änderungen {#what-s-changed}
+## Was hat sich geändert {#what-s-changed}
 
 * Bei der Erstellung einer neuen Community-Site ist die Captcha-Verifizierung in AEM 6.4 Communities nicht mehr standardmäßig verfügbar. Die Communities-Site kann jedoch angepasst werden, um [Google-Komponente reCAPTCHA](https://helpx.adobe.com/experience-manager/using/aem_recaptcha.html) für mehr Sicherheit.
 * Die Option zum Hochladen eines benutzerdefinierten CSS wurde aus den Community-Sites und dem Gruppendesign entfernt.

@@ -13,7 +13,7 @@ exl-id: 6dd289ee-13fd-46be-82cd-aa69852397c9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -67,4 +67,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Wenn Sie einfach die `-nointeractive` -Parameter ohne die `-Dadmin.password.file` -Systemeigenschaft verwenden AEM das standardmäßige Administratorkennwort, ohne dass Sie dazu aufgefordert werden, es zu ändern. Dies entspricht im Wesentlichen dem Verhalten früherer Versionen. Dieser nicht interaktive Modus kann für automatische Installationen unter Verwendung der Befehlszeile in einem Installationsskript verwendet werden.
+>Wenn Sie den Parameter `-nointeractive`- ohne die Systemeigenschaft `-Dadmin.password.file` verwenden, verwendet AEM das standardmäßige Administratorkennwort und fordert Sie nicht zur Änderung des Kennworts auf, was im Wesentlichen dem Verhalten älterer Versionen entspricht. Dieser nicht interaktive Modus kann für automatische Installationen unter Verwendung der Befehlszeile in einem Installationsskript verwendet werden.

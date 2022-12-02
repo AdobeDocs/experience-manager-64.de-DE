@@ -1,5 +1,5 @@
 ---
-title: '"Tutorial: Erstellen einer interaktiven Kommunikation "'
+title: "Tutorial: Erstellen einer interaktiven Kommunikation "
 seo-title: Create an Interactive Communication for Print and Web
 description: Erstellen Sie eine interaktive Kommunikation mit allen Bausteinen
 seo-description: Create an Interactive Communication using all building blocks

@@ -1,5 +1,5 @@
 ---
-title: 'Suchen nach Assets in AEM '
+title: Suchen nach Assets in AEM
 description: Erfahren Sie, wie Sie die erforderlichen Assets in [!DNL Experience Manager] mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 contentOwner: AG
 feature: Search,Metadata
@@ -86,7 +86,7 @@ Verwenden Sie die **Statuseigenschaft**, um nach Assets zu suchen, die auf versc
 
 Wenn Sie z. B. die Asset-Veröffentlichung überwachen, können Sie die entsprechende Option verwenden, um nach den zu veröffentlichen Assets zu suchen.
 
-![-Veröffentlichung](assets/publish.png)
+![publish](assets/publish.png)
 
 Wenn Sie den Prüfungsstatus von Assets überwachen, verwenden Sie die entsprechende Option, um herauszufinden, welche Assets genehmigt wurden und für welche Assets die Genehmigung aussteht.
 

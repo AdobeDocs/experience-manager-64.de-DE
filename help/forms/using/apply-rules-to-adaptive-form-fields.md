@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial "NICHT VERÖFFENTLICHEN": Anwenden von Regeln auf adaptive Formularfelder"'
 seo-title: Apply rules to adaptive form fields
-description: 'Erstellen Sie Regeln, um einem adaptiven Formular Interaktivität, Geschäftslogik und intelligente Validierungen hinzuzufügen. '
+description: Erstellen Sie Regeln, um einem adaptiven Formular Interaktivität, Geschäftslogik und intelligente Validierungen hinzuzufügen.
 seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
 page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917

@@ -1,7 +1,7 @@
 ---
 title: Inline-Bedingung und Wiederholung in der interaktiven Kommunikation und in Briefen
 seo-title: Inline condition and repeat in Interactive Communications and letters
-description: 'Mithilfe der Inline-Bedingung und der Wiederholung in der interaktiven Kommunikation und in Briefen können Sie sehr kontextbezogene und gut strukturierte Kommunikationen erstellen. '
+description: Mithilfe der Inline-Bedingung und der Wiederholung in der interaktiven Kommunikation und in Briefen können Sie sehr kontextbezogene und gut strukturierte Kommunikationen erstellen.
 seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 16e38929-f81b-4582-9daf-6c756a4390e9
 content-type: reference

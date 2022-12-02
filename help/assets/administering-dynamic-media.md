@@ -1,5 +1,5 @@
 ---
-title: 'Einrichten von Dynamic Media  '
+title: Einrichten von Dynamic Media
 seo-title: Setting Up Dynamic Media
 description: Zum Einrichten von Dynamic Media müssen Sie Dynamic Media konfigurieren und Bild- sowie Viewer-Vorgaben verwalten.
 seo-description: To set up dynamic media, you need to configure dynamic media and manage image and viewer presets
@@ -13,7 +13,7 @@ role: Admin,User,Developer
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
@@ -33,7 +33,7 @@ Wenn Sie dynamische Medien verwalten, sind für Sie die folgenden Themen interes
 * [Konfigurieren des Dynamic Media-Hybridmodus](config-dynamic.md) - Verwenden Sie diese Konfiguration, wenn Sie bereits Dynamic Media-Kunde sind und AEM aktualisieren.
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
 * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
-* [Fehlerbehebung bei Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)
+* [Fehlerbehebung bei Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
 
 Weitere Informationen finden Sie in den folgenden Themen:
 

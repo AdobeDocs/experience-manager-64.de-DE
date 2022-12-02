@@ -13,7 +13,7 @@ exl-id: 6a7de639-9c87-4e7c-b431-e48c9cdc7982
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 69%
+ht-degree: 90%
 
 ---
 
@@ -23,15 +23,15 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 
 Über die [Kontoeinstellungen](#account-settings) und [Benutzereinstellungen](#user-preferences) können die folgenden Optionen und Einstellungen definiert werden:
 
-* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Diese Symbolleiste, die oben im Browser-Fenster angezeigt wird, bietet Ihnen 
-**Kopieren**, **Ausschneiden**, **Einfügen**, **Löschen** Schaltflächen zur Verwendung mit den Absatzkomponenten auf dieser Seite:
+* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Auf dieser Symbolleiste oben im Browser-Fenster stehen die Schaltflächen 
+**Kopieren**, **Ausschneiden**, **Einfügen**, **Löschen** zur Verwendung mit den Absatzkomponenten auf dieser Seite zur Verfügung:
 
    * Bei Bedarf anzeigen (Standardeinstellung)
    * Immer anzeigen
    * Ausblendung beibehalten
 
 * **Identität annehmen als**
-Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
+Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) kann eine Benutzerin oder ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
 * **Sprache**
 Die Sprache, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.

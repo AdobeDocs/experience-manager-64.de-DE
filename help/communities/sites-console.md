@@ -66,7 +66,7 @@ Die folgende Abbildung zeigt beispielsweise die Haupt-Konsole Communities-Sites 
 
 ![chlimage_1-448](assets/chlimage_1-448.png)
 
-## Site-Erstellung {#site-creation}
+## Erstellung einer Site {#site-creation}
 
 Die Site-Erstellungskonsole bietet einen schrittweisen Ansatz, um Funktionen der Site basierend auf einer ausgewählten [Community-Site-Vorlage](sites.md) und -Einstellungen.
 
@@ -474,7 +474,7 @@ Im Bedienfeld DESIGN kann ein neues Design angewendet werden:
 
 Das Fenster EINSTELLUNGEN ermöglicht den Zugriff auf die meisten Einstellungen unter den Unterfeldern von für Schritt 3 der Community-Site-Erstellung:
 
-* [Benutzerverwaltung](#user-management)
+* [User Management](#user-management)
 * [Tags](#tagging)
 * [Moderation](#moderation)
 * [Mitgliederrollen](#roles)
@@ -538,6 +538,7 @@ Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergrup
 >Wenn [Social-Anmeldung zulassen: Facebook](#user-management) aktiviert ist, sobald die Benutzergruppe
 >
 >* community-*&lt;site-name>*-*&lt;uid>*-members
+>
 erstellt wird, wird die angewendete [Facebook Cloud Service](social-login.md#createafacebookcloudservice) sollte so konfiguriert sein, dass Benutzer zu dieser Gruppe hinzugefügt werden.
 
 ## Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}

@@ -28,14 +28,14 @@ Sie können basierend auf den folgenden Eigenschaften nach digitalen Assets such
 | [!UICONTROL Veröffentlichungsstatus] | Veröffentlicht oder Veröffentlichung rückgängig gemacht |
 | [!UICONTROL Genehmigungsstatus] | Genehmigt oder Abgelehnt |
 | [!UICONTROL Ausrichtung] | Horizontal, Vertikal oder Quadrat |
-| [!UICONTROL Stil] | Farbe oder Schwarzweiß |
+| [!UICONTROL Style] | Farbe oder Schwarzweiß |
 | Videohöhe | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Videobreite | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Videoformat | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value wird in den Metadaten des Quellvideos und allen Ausgabeformaten gespeichert. |
 | Video-Codec | x264.Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Video-Bitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 | Audio-Codec | Libvorbis, Lame Mp3, AAC Encoding.Value wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
-| Audiobitrate | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
+| Audiobitrate   | Wird als Mindest- und Höchstwert angegeben. Der Wert wird nur in den Metadaten von Videoausgabeformaten gespeichert. |
 
 1. Tippen Sie auf der **[!UICONTROL Experience Manager]**-Seite in der linken Seitenleiste auf **[!UICONTROL Assets]**.
 

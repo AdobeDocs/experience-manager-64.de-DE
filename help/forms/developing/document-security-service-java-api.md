@@ -1,7 +1,7 @@
 ---
 title: Java API-Schnellstart (SOAP) für den Document Security-Dienst
 seo-title: Document Security Service JavaAPI Quick Start(SOAP)
-description: 'Verwenden Sie die Java-API des Rights Management-Dienstes, um eine Richtlinie zu erstellen, eine Richtlinie zu ändern, eine Richtlinie zu löschen, eine Richtlinie auf ein PDF-Dokument anzuwenden, eine Richtlinie aus einem PDF-Dokument zu entfernen, ein Dokument zu sperren, den Zugriff auf ein gesperrtes Dokument erneut zu aktivieren, richtliniengeschützte PDF-Dokumente zu prüfen, ein Wasserzeichen zu erstellen, ein Wasserzeichen zu ändern, nach Ereignissen zu suchen und eine Richtlinie aus einem Word-Dokument zu entfernen. '
+description: Verwenden Sie die Java-API des Rights Management-Dienstes, um eine Richtlinie zu erstellen, eine Richtlinie zu ändern, eine Richtlinie zu löschen, eine Richtlinie auf ein PDF-Dokument anzuwenden, eine Richtlinie aus einem PDF-Dokument zu entfernen, ein Dokument zu sperren, den Zugriff auf ein gesperrtes Dokument erneut zu aktivieren, richtliniengeschützte PDF-Dokumente zu prüfen, ein Wasserzeichen zu erstellen, ein Wasserzeichen zu ändern, nach Ereignissen zu suchen und eine Richtlinie aus einem Word-Dokument zu entfernen.
 seo-description: Use the Rights management service Java API to create a policy, modify a policy, delete a policy, apply a policy to a PDF document, remove a policy from  a PDF document, revoke a document, reinstate access to a revoked document, inspect policy protected PDF documents, create a watermark, modify a watermark, search for events, and remove a policy from a Word document.
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin

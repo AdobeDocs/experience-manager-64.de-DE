@@ -8,7 +8,7 @@ exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
 source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
 workflow-type: tm+mt
 source-wordcount: '2225'
-ht-degree: 45%
+ht-degree: 54%
 
 ---
 
@@ -37,7 +37,7 @@ Die folgenden Medien-Handler sind in Experience Manager Assets verfügbar und ve
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Wichtig</b> - Wenn Sie eine MP3-Datei hochladen, ist es [mit einer Drittanbieterbibliothek verarbeitet werden](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). Die Bibliothek berechnet eine ungenaue ungefähre ungefähre Länge, wenn das MP3 über eine variable Bitrate (VBR) verfügt. |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Wichtig</b>: Wenn Sie eine MP3-Datei hochladen, wird sie [mit einer Drittanbieterbibliothek verarbeitet](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). Die Bibliothek berechnet grob eine ungefähre Länge, wenn die MP3-Datei eine variable Bitrate (VBR) aufweist verfügt. |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -107,7 +107,7 @@ Schnittstelle und Klassen:
 * `com.day.cq.dam.core.AbstractAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
 * `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse:
    * Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktionen für die Extrahierung von Teil-Assets.
-   * Die beste Möglichkeit, eine Implementierung zu starten, besteht darin, sie von einer bereitgestellten abstrakten Implementierung zu übernehmen, die sich um die meisten Dinge kümmert und ein angemessenes Standardverhalten bietet: die Klasse com.day.cq.dam.core.AbstractAssetHandler .
+   * Am besten ist es, zu Beginn einer Implementierung den Inhalt einer bereitgestellten abstrakten Implementierung zu übernehmen, wodurch die meisten Dinge im Voraus erledigt werden und ein angemessenes Standardverhalten erreicht wird: die com.day.cq.dam.core.AbstractAssetHandler-Klasse.
    * Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. Wenn Sie also den Inhalt dieser Klasse übernehmen und das maven-sling-Plug-in verwenden, müssen Sie das Übernahme-Flag auf true setzen.
 
 Die folgenden Methoden müssen implementiert werden:
@@ -138,7 +138,7 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
 
 1. Erstellen Sie in Eclipse `myBundle` Maven-Projekt:
 
-   1. Klicken Sie in der Menüleiste auf **[!UICONTROL Datei > Neu > Sonstige]**.
+   1. Klicken Sie in der Menüleiste auf **[!UICONTROL Datei > Neu > Andere]**.
    1. Erweitern Sie im Dialogfeld den Ordner Maven , wählen Sie Maven Project und klicken Sie auf **[!UICONTROL Nächste]**.
    1. Überprüfen Sie die **[!UICONTROL Einfaches Projekt erstellen]** und **[!UICONTROL Standard-Workspace-Standorte verwenden]** und klicken Sie auf **[!UICONTROL Nächste]**.
    1. Definieren Sie das Maven-Projekt mit den folgenden Werten:
@@ -152,13 +152,13 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
 
 1. Setzen Sie den Java™ Compiler auf Version 1.5:
 
-   1. Klicken Sie mit der rechten Maustaste auf die `myBundle` Projekt, wählen Sie Eigenschaften aus.
+   1. Klicken Sie mit der rechten Maustaste auf das `myBundle`-Projekt und wählen Sie Eigenschaften aus.
    1. Wählen Sie Java™ Compiler aus und legen Sie die folgenden Eigenschaften auf 1.5 fest:
 
       * Compiler-Kompatibilitätsstufe
       * Kompatibilität von generierten .class-Dateien
       * Quellkompatibilität
-   1. Klicken Sie auf **[!UICONTROL OK]**. Klicken Sie im Dialogfenster auf „Ja“.
+   1. Klicken Sie auf **[!UICONTROL OK]**. Klicken Sie im Dialogfenster auf Ja.
 
 
 1. Ersetzen Sie den Code in der pom.xml-Datei durch folgenden Code:
@@ -280,14 +280,14 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
 
 1. Package erstellen `com.day.cq5.myhandler` , die die Java™-Klassen unter `myBundle/src/main/java`:
 
-   1. Klicken Sie unter myBundle mit der rechten Maustaste auf `src/main/java`, wählen Sie Neu und dann Paket aus.
-   1. Benennen Sie ihn `com.day.cq5.myhandler` und klicken Sie auf Beenden.
+   1. Klicken Sie unter „myBundle“ mit der rechten Maustaste auf `src/main/java`, wählen Sie „Neu“ und dann „Paket“ aus.
+   1. Benennen Sie es `com.day.cq5.myhandler` und klicken Sie auf „Fertigstellen“.
 
 1. Java™-Klasse erstellen `MyHandler`:
 
    1. In Eclipse, under `myBundle/src/main/java`klicken Sie mit der rechten Maustaste auf die `com.day.cq5.myhandler` -Paket, wählen Sie &quot;Neu&quot;und dann &quot;Klasse&quot;.
    1. Benennen Sie im Dialogfenster den Java™ Class MyHandler und klicken Sie auf Finish. Eclipse erstellt und öffnet die Datei MyHandler.java.
-   1. In `MyHandler.java` ersetzen Sie den vorhandenen Code durch den folgenden und speichern Sie dann die Änderungen:
+   1. Ersetzen Sie in `MyHandler.java` den vorhandenen Code durch Folgendes und speichern Sie dann die Änderungen:
 
    ```java
    package com.day.cq5.myhandler; 
@@ -432,17 +432,17 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
 1. Kompilieren Sie die Java™-Klasse und erstellen Sie das Bundle:
 
    1. Klicken Sie mit der rechten Maustaste auf das myBundle-Projekt und wählen Sie **[!UICONTROL Ausführen als]**, dann **[!UICONTROL Maven-Installation]**.
-   1. Das Bundle `myBundle-0.0.1-SNAPSHOT.jar` (die die kompilierte Klasse enthält) wird unter erstellt. `myBundle/target`.
+   1. Das Bundle `myBundle-0.0.1-SNAPSHOT.jar` (das die kompilierte Klasse enthält) wird unter `myBundle/target` erstellt.
 
 1. Erstellen Sie in CRX Explorer einen Knoten unter `/apps/myApp`. Name = `install`, Typ = `nt:folder`.
-1. Kopieren Sie das Bundle `myBundle-0.0.1-SNAPSHOT.jar` und speichern Sie es unter `/apps/myApp/install` (z. B. mit WebDAV). Der neue Text-Handler ist jetzt in Experience Manager aktiv.
-1. Öffnen Sie im Browser die Apache Felix Web Management Console. Wählen Sie die Registerkarte „Komponenten“ aus und deaktivieren Sie den Standard-Text-Handler `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. Kopieren Sie das Bundle `myBundle-0.0.1-SNAPSHOT.jar` und speichern Sie es unter `/apps/myApp/install` (zum Beispiel mit WebDAV). Der neue Text-Handler ist jetzt in Experience Manager aktiv.
+1. Öffnen Sie im Browser die Apache Felix Web Management Console. Wählen Sie die Registerkarte Komponenten aus und deaktivieren Sie den Standard-Text-Handler `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Befehlszeilenbasierter Medien-Handler {#command-line-based-media-handler}
 
 Mit Experience Manager können Sie ein beliebiges Befehlszeilen-Tool innerhalb eines Workflows ausführen, um Assets (z. B. ImageMagick) zu konvertieren und das neue Ausgabeformat zum Asset hinzuzufügen. Installieren Sie das Befehlszeilen-Tool auf dem Datenträger, der den Experience Manager-Server hostet, und fügen Sie einen Prozessschritt zum Workflow hinzu und konfigurieren Sie ihn. Der aufgerufene Prozess `CommandLineProcess`, filtert nach bestimmten MIME-Typen und erstellt basierend auf der neuen Ausgabedarstellung mehrere Miniaturansichten.
 
-Die folgenden Konvertierungen können automatisch ausgeführt und in [!DNL Experience Manager Assets]:
+Die folgenden Konvertierungen können automatisch ausgeführt und in [!DNL Experience Manager Assets] gespeichert werden:
 
 * EPS- und AI-Umwandlung mithilfe von [ImageMagick](https://www.imagemagick.org/script/index.php) und [Ghostscript](https://www.ghostscript.com/)
 * FLV-Videotranskodierung mithilfe von [FFmpeg](https://ffmpeg.org/)
@@ -479,7 +479,7 @@ Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf dem Datenträge
    >
    >In einigen Versionen von Windows® (z. B. Windows® SE) kann der Konvertierungsbefehl nicht ausgeführt werden, da er im Konflikt mit dem nativen Konvertierungsprogramm steht, das Teil der Windows®-Installation ist. In diesem Fall verwenden Sie den vollständigen Pfad für das ImageMagick-Dienstprogramm, das verwendet wird, um Bilddateien in Miniaturbilder zu konvertieren. Beispiel: `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`.
 
-1. Um zu überprüfen, ob das Tool ordnungsgemäß ausgeführt wird, fügen Sie ein JPG-Bild zum Arbeitsverzeichnis hinzu und führen Sie den Befehl aus `convert <image-name>.jpg -flip <image-name>-flipped.jpg` in der Befehlszeile.
+1. Um zu überprüfen, ob das Tool ordnungsgemäß ausgeführt wird, fügen Sie ein JPG-Bild in das Arbeitsverzeichnis ein und führen Sie dann den Befehl „ `convert <image-name>.jpg -flip <image-name>-flipped.jpg`“ von der Befehlszeile aus.
 
    Ein gespiegeltes Bild wird dem Verzeichnis hinzugefügt.
 
@@ -499,7 +499,7 @@ Fügen Sie zum Testen des geänderten Workflows ein Asset zu `/content/dam` hinz
 1. Rufen Sie die Konsole **[!UICONTROL CQ5 DAM]** auf, z. B. `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Öffnen Sie das Asset `myImage.tiff` und prüfen Sie, ob das gespiegelte Bilder und die drei Miniaturbilder erstellt wurden.
 
-#### Prozessschritt &quot;CommandLineProcess&quot;konfigurieren {#configuring-the-commandlineprocess-process-step}
+#### Konfiguration des Prozessschritts CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
 In diesem Abschnitt wird beschrieben, wie die **[!UICONTROL Prozess-Argumente]** des `CommandLineProcess` festgelegt werden. Trennen Sie die Werte von [!UICONTROL Prozess-Argumente] Verwenden Sie ein Komma und beginnen Sie keinen Wert mit einem Leerzeichen.
 
@@ -507,7 +507,7 @@ In diesem Abschnitt wird beschrieben, wie die **[!UICONTROL Prozess-Argumente]**
 |---|---|
 | mime:&lt;MIME-Typ> | Optionales Argument. Der Prozess wird angewendet, wenn das Asset denselben MIME-Typ wie das Argument hat. <br>Es können mehrere MIME-Typen definiert werden. |
 | tn:&lt;Breite>:&lt;Höhe> | Optionales Argument. Der Prozess erstellt ein Miniaturbild mit den Abmessungen, die im Argument definiert sind. <br>Es können mehrere Miniaturbilder definiert werden. |
-| cmd: &lt;Befehl> | Definiert den ausgeführten Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. original <br>`${extension}`: Erweiterung der Eingabedatei, z. B. jpg |
+| cmd: &lt;Befehl> | Definiert den ausgeführten Befehl. Die Syntax hängt vom Befehlszeilen-Tool ab. Nur ein Befehl kann definiert werden. <br>Die folgenden Variablen können zum Erstellen des Befehls verwendet werden:<br>`${filename}`: Name der Eingabedatei, z. B. original.jpg <br> `${file}`: vollständiger Pfadname der Eingabedatei, z. B. /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: Verzeichnis der Eingabedatei, z. B. /tmp/cqdam0816.tmp <br>`${basename}`: Name der Eingabedatei ohne Erweiterung, z. B. original <br>`${extension}`: Erweiterung der Eingabedatei, z. B. jpg |
 
 Wenn beispielsweise ImageMagick auf dem Datenträger installiert ist, der den Experience Manager-Server hostet, und Sie einen Prozessschritt mit **CommandLineProcess** als Implementierung und die folgenden Werte als **Prozess-Argumente**:
 

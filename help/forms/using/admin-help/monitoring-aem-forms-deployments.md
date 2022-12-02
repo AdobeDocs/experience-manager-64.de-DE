@@ -1,7 +1,7 @@
 ---
 title: Überwachung der AEM Forms-Bereitstellung
 seo-title: Monitoring AEM forms deployments
-description: Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Erfahren Sie mehr über das Überwachen von AEM-Forms-Bereitstellungen für dieses Dokument.
+description: Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Erfahren Sie mehr über das Überwachen von AEM Forms-Bereitstellungen für dieses Dokument.
 seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
@@ -13,7 +13,7 @@ exl-id: d2cd532b-4086-4553-ac26-f311da6d5ca9
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '614'
-ht-degree: 73%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,9 @@ ht-degree: 73%
 
 Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Hierzu können Sie spezielle Verwaltungswerkzeuge wie HP OpenView, IBM Tivoli oder CA UniCenter verwenden sowie einen JMX-Monitor eines anderen Anbieters mit dem Namen *JConsole*, der speziell für die Überwachung von Java-Aktivitäten gedacht ist. Die Implementierung einer Überwachungsstrategie verbessert die Verfügbarkeit, Zuverlässigkeit und Leistung Ihrer AEM Forms-Bereitstellungen.
 
-Weitere Informationen zum Überwachen von AEM Forms-Bereitstellungen finden Sie im [technischen Handbuch zur AEM Forms-Bereitstellung](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
+Weitere Informationen zum Überwachen von AEM Forms-Bereitstellungen finden Sie im [technischen Handbuch zur AEM Forms-Bereitstellung](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf
+
+).
 
 ## Überwachung mithilfe von MBeans {#monitoring-using-mbeans}
 
@@ -74,31 +76,31 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **MBean-Struktur**
 
-**Adobe Domain Name:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domäne nicht definiert, lautet die Standarddomäne „adobe.com“.
+**Adobe-Domain-Name:** Hängt vom Anwendungsserver ab. Wenn der Anwendungsserver die Domain nicht definiert, lautet die Standard-Domain „adobe.com“.
 
-**ServiceType:** AdobeService ist der Name, der zum Auflisten aller Dienste verwendet wird.
+**ServiceType:** AdobeService ist der Name, der zum Auflisten aller Services verwendet wird.
 
-**AdobeServiceName:** Dienstname oder Dienst-ID.
+**AdobeServiceName:** Service-Name oder Service-ID.
 
-**Version:** Version des Dienstes.
+**Version:** Version des Service.
 
 **Vorgangsstatistiken**
 
-**Aufrufzeit:** Zeit für die Ausführung der Methode. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
+**Aufrufzeit:** Die Dauer für die Ausführung der Methode. Dies schließt nicht die Zeit ein, die zum Serialisieren der Anfrage, zum Übertragen der Anfrage vom Client zum Server und zum Deserialisieren erforderlich ist.
 
-**Anzahl der Aufrufe:** Die Häufigkeit, mit der der Dienst aufgerufen wird.
+**Anzahl der Aufrufe:** Die Häufigkeit, mit der der Service aufgerufen wird.
 
 **Durchschnittliche Aufrufzeit:** Durchschnittliche Zeit aller Aufrufe, die seit dem Start des Servers ausgeführt wurden.
 
-**Max. Aufrufzeit:** Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
+**Maximale Aufrufzeit:** Die Dauer des längsten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**Min. Aufrufzeit:** Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
+**Minimale Aufrufzeit:** Die Dauer des kürzesten Aufrufs, der seit dem Start des Servers ausgeführt wurde.
 
-**Ausnahmeanzahl:** Anzahl der Aufrufe, bei denen Fehler aufgetreten sind.
+**Anzahl der Ausnahmen:** Anzahl der Aufrufe, bei denen Fehler aufgetreten sind.
 
-**Ausnahmemeldung:** Die Fehlermeldung der letzten aufgetretenen Ausnahme.
+**Ausnahmemeldung:** Die Fehlermeldung über die letzte aufgetretene Ausnahme.
 
-**Datum des letzten Samplings:** Das Datum des letzten Aufrufs.
+**Letztes Sampling: Datum, Zeit:** Das Datum des letzten Aufrufs.
 
 **Zeiteinheit:** Der Standardwert ist Millisekunde.
 

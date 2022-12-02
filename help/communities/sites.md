@@ -57,7 +57,7 @@ Vorlagenbeschreibung
 * **[!UICONTROL Deaktiviert/Aktiviert]**
 Ein Umschalter, der steuert, ob die Vorlage referenzierbar ist
 
-### Miniatur {#thumbnail}
+### Miniaturansicht {#thumbnail}
 
 ![chlimage_1-20](assets/chlimage_1-20.png)
 

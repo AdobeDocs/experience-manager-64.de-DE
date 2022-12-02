@@ -69,7 +69,7 @@ Beim Bearbeiten einer Aktivität in Adobe Target verweist die URL auf **localho
 
 Konfigurieren Sie den AEM-Externalizer wie folgt:
 
-1. Navigieren Sie zur OSGi-Web-Konsole unter **&lt;server>:&lt;port>/system/console/configMgr**.
+1. Navigieren Sie zur OSGi-Web-Konsole unter **https://&lt;server>:&lt;port>/system/console/configMgr**.
 1. Suchen Sie nach **Day CQ Link Externalizer** und geben Sie die Domain des Autorenknotens an.
 
    ![chlimage_1-120](assets/chlimage_1-120.png)

@@ -8,7 +8,7 @@ exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 57%
+ht-degree: 66%
 
 ---
 
@@ -35,7 +35,7 @@ Adobe Experience Manager Assets ruft Nutzungsdaten ab [!DNL Experience Manager] 
 
 ## Seitenverfolgung {#page-tracker}
 
-Nachdem Sie Ihr Analytics-Konto konfiguriert haben, wird der Seitenverfolgungs-Code für Sie erzeugt. So aktivieren Sie die Verfolgung durch Assets Insights [!DNL Experience Manager] -Assets, die auf Websites von Drittanbietern verwendet werden, enthalten den Seiten-Tracker-Code im Website-Code. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in [!DNL Experience Manager] Assets zum Generieren des Seitenverfolgungs-Codes. Weitere Informationen dazu, wie Sie Ihren Seitenverfolgungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md).
+Nachdem Sie Ihr Analytics-Konto konfiguriert haben, wird der Seitenverfolgungs-Code für Sie erzeugt. Um Asset Insights zur Verfolgung von [!DNL Experience Manager]-Assets in Websites von Drittanbietern zu aktivieren, schließen Sie den Seitenverfolgungs-Code in den Website-Code ein. Verwenden Sie das Seitenverfolgungs-Dienstprogramm in [!DNL Experience Manager] Assets zum Generieren des Seitenverfolgungs-Codes. Weitere Informationen dazu, wie Sie Ihren Seitenverfolgungscode in Webseiten von Drittanbietern einbeziehen, finden Sie unter [Verwenden von Seitenverfolgung und Einbettungscode in Webseiten](touch-ui-using-page-tracker.md).
 
 1. Klicken Sie AEM auf die **[!UICONTROL Tools > Assets]**.
 

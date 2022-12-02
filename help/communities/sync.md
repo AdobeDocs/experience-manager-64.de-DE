@@ -14,7 +14,7 @@ exl-id: 3a8e8fef-9aef-4b9d-8b0b-e76aa2962b61
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2500'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -94,9 +94,9 @@ Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die V
 
    Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Benutzer und Gruppen synchronisiert .
 
-1. Stellen Sie sicher, dass der neueste Code installiert wurde:
+1. Vergewissern Sie sich, dass der neueste Code installiert wurde:
 
-   * [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
+   * [AEM-Plattform-Updates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
    * [AEM Communities-Updates](deploy-communities.md#latestfeaturepack)
 
 Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung in AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, um zu verhindern, dass die Sling-Inhaltsverteilung fehlschlägt.
@@ -125,7 +125,7 @@ In AEM Autoreninstanz:
 
    * Wählen Sie die vorhandene Konfiguration aus, um sie zur Bearbeitung zu öffnen (Bleistiftsymbol).
    * Überprüfungsname: **`socialpubsync`.**
-   * Wählen Sie die **[!UICONTROL Aktiviert]** aktivieren.
+   * Aktivieren Sie das Kontrollkästchen **[!UICONTROL Aktiviert]**.
    * Auswählen **[!UICONTROL Mehrere Warteschlangen verwenden]**.
    * Angeben **[!UICONTROL Exporter Endpoints]** und **[!UICONTROL Importer Endpoints]** (Sie können weitere Exporter- und Importtool-Endpunkte hinzufügen).
 
@@ -203,7 +203,7 @@ Auf jeder AEM Veröffentlichungsinstanz:
 1. Wählen Sie die vorhandene Konfiguration aus, um sie zur Bearbeitung zu öffnen (Bleistiftsymbol).
 
    Überprüfen **[!UICONTROL Agentenname]**: `socialpubsync` \-reverse&amp;ast;&amp;ast;.
-1. Wählen Sie die **[!UICONTROL Aktiviert]** aktivieren.
+1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Aktiviert]**.
 1. Angeben **rep`:members`** as `description` für propertyName in **[!UICONTROL Namen der angezeigten Eigenschaften]** und Speichern.
 
    ![diff-obs](assets/diff-obs.png)
@@ -306,7 +306,7 @@ Bei jeder Veröffentlichungsinstanz:
 1. Beenden Sie eine der Veröffentlichungsinstanzen mit einer übereinstimmenden Sling-ID.
 1. Im `crx-quickstart/launchpad/felix` Verzeichnis, suchen und löschen Sie die Datei _sling.id.file.
 
-   *z. B. auf einem Linux-System:*
+   *Beispiel für ein Linux-System:*
 
    `rm -i $(find . -type f -name sling.id.file)`
 

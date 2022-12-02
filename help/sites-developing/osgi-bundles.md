@@ -13,7 +13,7 @@ exl-id: 19df20a9-7c89-4dfa-8eca-81c4a14c21ff
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 ## Verwenden von semantischer Versionierung {#use-semantic-versioning}
 
-Die vereinbarten Best Practices für die semantische Versionsnummerierung finden Sie unter [https://semver.org/](https://semver.org/).
+Die vereinbarten Best Practices für die semantische Versionsnummeriierung finden Sie unter [https://semver.org/](https://semver.org/).
 
 ## Bedarfsbeschränktes Einbetten von Klassen und JAR-Dateien in OSGi-Bundles  {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
@@ -43,4 +43,4 @@ Dadurch können sich Nutzer der API an Ihr Entwicklungstempo anpassen. Folgen Si
 
 ## Angeben von angezeigten Metatyp-Informationen {#include-metatype-information-where-exposed}
 
-Durch Angabe aussagekräftiger Metatyp-Informationen sind Ihre Services und Komponenten in der Felix-Konsole verständlicher. Eine Liste der SCR-Anmerkungen und -Attribute finden Sie unter: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+Durch Angabe aussagekräftiger Metatyp-Informationen sind Ihre Services und Komponenten in der Felix-Konsole verständlicher. Eine Liste der SCR-Anmerkungen und Attribute finden Sie unter: [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).

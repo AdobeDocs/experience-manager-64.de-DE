@@ -1,7 +1,7 @@
 ---
 title: Erstellen von CSS-Stilen für HTML5-Formulare
 seo-title: Creating CSS styles for HTML5 forms
-description: 'Erfahren Sie, wie Sie das Erscheinungsbild von HTML5-Formularen ändern, indem Sie die CSS-Klasse ändern, die mit dem HTML-Formularelement verknüpft ist. '
+description: Erfahren Sie, wie Sie das Erscheinungsbild von HTML5-Formularen ändern, indem Sie die CSS-Klasse ändern, die mit dem HTML-Formularelement verknüpft ist.
 seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
 uuid: 43c689b4-243c-43de-a8be-1eef10d75295
 contentOwner: robhagat
@@ -178,7 +178,7 @@ Jedes Feld verfügt über ein zugehöriges Widget, das das Benutzeroberflächen-
    <td>choicelist<br type="_moz" /> </td> 
    <td>dropDownListWidget<br type="_moz" /> </td> 
    <td>choicelistwidget<br type="_moz" /> </td> 
-   <td>select</td> 
+   <td>Wählen Sie  aus.</td> 
   </tr> 
   <tr> 
    <td>ListBox<br type="_moz" /> </td> 

@@ -13,7 +13,7 @@ exl-id: 9037f21c-5392-4322-af0d-7e220c810954
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '888'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,6 @@ Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie die
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
 >* [Formulare](/help/forms/home.md)
-
 >
 
 
@@ -69,7 +68,7 @@ AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrato
 * [Analysen und Targeting konfigurieren](/help/sites-administering/opt-in.md)
 * [AEM-Sicherheitsprüfliste anwenden](/help/sites-administering/security-checklist.md)
 * Aggregierte Sammlung von Nutzungsstatistiken aktivieren
-* [HTTPS konfigurieren](/help/sites-administering/ssl-by-default.md)
+* [Konfigurieren von HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Öffnen des Posteingangs {#opening-the-inbox}
 
@@ -102,7 +101,7 @@ In dieser Ansicht werden die Elemente nach Kalenderdatum und entsprechend der vo
 
 Sie haben folgende Möglichkeiten:
 
-* eine bestimmte Ansicht auswählen (**Timeline**,**Spalte** oder **Liste**)
+* eine bestimmte Ansicht auswählen (**Zeitleiste**,**Spalte** oder **Liste**)
 
 * die Aufgaben festlegen, die gemäß **Plan** angezeigt werden sollen (**Alle**, **Geplant**, **In Bearbeitung**, **Bald fällig** oder **Überfällig**)
 
@@ -142,7 +141,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
    Die entsprechend dem ausgewählten Element verfügbaren Aktionen können Folgendes umfassen:
 
-   * **Abschließen** einer Aktion; z. B. eine Aufgabe oder ein Workflow-Element.
+   * **Abschließen** einer Aktion, z. B. einer Aufgabe oder eines Workflow-Elements
    * **Neu zuweisen**/**Delegieren** eines Elements
    * **Öffnen** eines Elements; je nach Elementtyp bewirkt diese Aktion Folgendes:
 
@@ -189,7 +188,7 @@ Sie können vom Posteingang aus Aufgaben erstellen:
       * **Titel**
       * **Projekt**
       * **Bevollmächtigter**
-      * **Inhalt**; dies dient, ähnlich wie bei der Nutzlast, als Verweis von der Aufgabe auf eine Position im Repository.
+      * **Inhalt**; dies dient, ähnlich wie bei der Payload, als Verweis von der Aufgabe auf eine Position im Repository.
       * **Beschreibung**
       * **Aufgabenpriorität**
       * **Startdatum**

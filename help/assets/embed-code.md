@@ -43,7 +43,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
 1. Navigieren Sie zum *veröffentlichten* Video- oder Bild-Asset, dessen Einbettungs-Code Sie kopieren möchten.
 
-   Denken Sie daran, dass der Einbettungscode nur *nach* der ersten *Veröffentlichung* der Assets kopiert werden können. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
+   Denken Sie daran, dass der Einbettungs-Code nur *nach* der ersten *Veröffentlichung* der Assets kopiert werden können. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
 
    Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 

@@ -18,7 +18,7 @@ ht-degree: 100%
 
 ---
 
-# Mehrprozessgestützte Dateikonvertierungen aktivieren {#enabling-multi-threaded-file-conversions}
+# Aktivieren mehrprozessgestützter Dateikonvertierungen {#enabling-multi-threaded-file-conversions}
 
 In PDF Generator haben Sie die Möglichkeit, mehrprozessgestützte Dateikonvertierungen für bestimmte Dateitypen zu aktivieren. Mehrprozessgestützte Dateikonvertierungen verbessern die Leistung von PDF Generator, indem sie es ermöglichen, mehrere Konvertierungen gleichzeitig auszuführen.
 

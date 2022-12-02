@@ -21,7 +21,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!NOTE]
 >
@@ -54,7 +54,6 @@ Weitere Informationen **Content Services**, siehe [Übersicht über Content Serv
 >
 >* [Vorlagen](/help/sites-developing/templates.md)
 >* [Komponenten](/help/sites-developing/components.md)
-
 >
 
 

@@ -1,7 +1,7 @@
 ---
 title: AEM Mobile – Einhaltung der Datenschutz-Grundverordnung
 seo-title: AEM Mobile - GDPR Readiness
-description: '"AEM Mobile – Einhaltung der Datenschutz-Grundverordnung"'
+description: "AEM Mobile – Einhaltung der Datenschutz-Grundverordnung"
 seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
@@ -10,7 +10,7 @@ exl-id: 2b73e843-690b-4cf3-9b8f-936b70c84406
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 89%
 
 >[!IMPORTANT]
 >
->Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Informationen gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen. wie DSGVO, CCPA usw.
+>Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, aber die behandelten Details gelten für alle Datenschutzbestimmungen wie die DSGVO, CCPA usw.
 
 ## AEM Mobile – Unterstützung der Datenschutz-Grundverordnung {#aem-mobile-gdpr-support}
 
@@ -32,7 +32,7 @@ Das Produkt von Adobe für digitales Publishing (Vorgänger von AEM Mobile) unte
 
 Um sicherzustellen, dass Sie AEM Mobile nicht mit dem älteren Produkt Digital Publishing Suite verwechseln, können Sie sich hier bei Digital Publishing Suite anmelden:
 
-[https://digitalpublishing.acrobat.com/de/welcome.html](https://digitalpublishing.acrobat.com/de/welcome.html)
+[https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
 ### Initiieren von DSGVO-Anfragen {#initiating-a-gdpr-request}
 

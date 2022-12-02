@@ -1,5 +1,5 @@
 ---
-title: 'Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor '
+title: Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor
 seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität der Aktualisierung bewerten können.
 seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
@@ -14,13 +14,13 @@ exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor {#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 

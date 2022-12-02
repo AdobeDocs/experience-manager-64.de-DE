@@ -9,13 +9,13 @@ exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '3159'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
-# Wiederverwenden von mit MSM für Assets[!DNL Assets] {#reuse-assets-using-msm-for-assets}
+# Wiederverwenden von Assets mit MSM für [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
-Funktionen für Multi-Site-Manager (MSM) in [!DNL Adobe Experience Manager] ermöglicht Benutzern die Wiederverwendung von einmalig erstellten und über mehrere Webspeicherorte hinweg wiederverwendeten Inhalten. Dasselbe gilt für digitale Assets wie MSM für [!DNL Assets] Funktionalität. Mit MSM für [!DNL Assets] können Sie:
+Mit der Funktion „Multi Site Manager“ (MSM) in [!DNL Adobe Experience Manager] können Benutzer einmal erstellte Inhalte in mehreren Web-Speicherorten wiederverwenden. Für digitale Assets steht dieselbe Funktion zur Verfügung wie MSM für [!DNL Assets]. Mit MSM für [!DNL Assets] können Sie:
 
 * Einmal Assets anlegen und dann Kopien dieser Assets erstellen, um sie in anderen Bereichen der Site wiederzuverwenden.
 * Mehrere Kopien synchron halten und die ursprüngliche primäre Kopie einmal aktualisieren, um die Änderungen an die untergeordneten Kopien zu übertragen.
@@ -23,7 +23,7 @@ Funktionen für Multi-Site-Manager (MSM) in [!DNL Adobe Experience Manager] erm�
 
 ## Voraussetzungen {#msm-prerequisites}
 
-Verwenden von MSM für [!DNL Assets], installieren Sie mindestens [!DNL Experience Manager] 6.4 Service Pack 5. Weitere Informationen finden Sie unter [Versionshinweise zum neuesten Service Pack](/help/release-notes/sp-release-notes.md).
+Um MSM für [!DNL Assets] zu verwenden, müssen Sie mindestens [!DNL Experience Manager] 6.4 Service Pack 5 installieren. Weitere Informationen finden Sie in den [Versionshinweisen zum neuesten Service Pack](/help/release-notes/sp-release-notes.md).
 
 ## Wissenswertes über Vorteile und Konzepte {#understand-benefits-concepts}
 

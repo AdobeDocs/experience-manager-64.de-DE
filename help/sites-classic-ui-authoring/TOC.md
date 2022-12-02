@@ -3,23 +3,23 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.4 Classic UI Authoring-Benutzerhandbuch
-breadcrumb-title: Erstellungsleitfaden für die klassische Benutzeroberfläche
-user-guide-description: In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt.
+user-guide-title: AEM 6.4 – Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche
+breadcrumb-title: Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche
+user-guide-description: In diesem Handbuch werden die Authoring-Konzepte in AEM mit der klassischen Benutzeroberfläche erläutert.
 feature: Authoring
 role: User
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '265'
+ht-degree: 96%
 
 ---
 
 
-# AEM 6.4 Classic UI Authoring-Benutzerhandbuch {#classic-ui}
+# AEM 6.4 – Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche {#classic-ui}
 
-+ [Übersicht über das Authoring-Handbuch für die klassische Benutzeroberfläche](home.md)
-+ Einführung in das Authoring mit der klassischen Benutzeroberfläche {#introduction}
++ [Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche – Überblick](home.md)
++ Einführung in die Inhaltserstellung mit der klassischen Benutzeroberfläche {#introduction}
    + [Erste Schritte für Autoren](classic-page-author-first-steps.md)
    + [Bearbeiten in der klassischen Benutzeroberfläche](classicui.md)
    + [Arbeiten mit der Autorenumgebung](author-env.md)
@@ -60,12 +60,12 @@ ht-degree: 0%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung    {#personalization}
++ Personalisierung {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnenmanagement](classic-personalization-campaigns.md)
    + [Teaser und Strategien](classic-personalization-campaigns-teasers-strategy.md)
    + [Landing Pages](classic-personalization-campaigns-landingpage.md)
-   + [Adobe Target-Angebote](classic-personalization-campaigns-target-offers.md)
+   + [Target-Angebote](classic-personalization-campaigns-target-offers.md)
    + [Arbeiten mit dem Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [E-Mail-Marketing](classic-personalization-campaigns-email.md)
    + [Nachverfolgen nicht zugestellter E-Mails](classic-personalization-campaigns-email-tracking-bounces.md)
@@ -78,11 +78,11 @@ ht-degree: 0%
    + [Arbeiten mit Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign-Komponenten](classic-personalization-ac-components.md)
    + [Targeting von Adobe Campaign](classic-personalization-ac-target.md)
-+ Asset-Authoring in der klassischen Benutzeroberfläche {#assets}
++ Assets: Inhaltserstellung in der klassischen Benutzeroberfläche {#assets}
    + [Arbeiten mit Assets](classicui-assets.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media-assets-delivering.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
    + [Hinzufügen von Dynamic Media Classic (Scene7)-Funktionen zu Ihrer Seite](manage-assets-classic-s7.md)
    + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
-   + [Video   ](manage-assets-classic-s7-video.md)
+   + [Video ](manage-assets-classic-s7-video.md)
    + [Benennungskonventionen für Assets-Tests](asset-naming-conventions.md)

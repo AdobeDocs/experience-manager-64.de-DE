@@ -13,7 +13,7 @@ exl-id: 5d58f9c5-3210-48ef-94a3-805a1a57e3af
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -107,7 +107,7 @@ Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die 
 Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
 * Typ &#39;tut&#39;
-* Wählen Sie nun eine der folgenden Optionen aus `Tutorial`
+* Auswählen `Tutorial`
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -165,7 +165,7 @@ Wählen Sie **[!UICONTROL Weiter]** aus.
 
 ### Schritt 4: Community-Site erstellen {#step-create-communities-site}
 
-Wählen Sie **[!UICONTROL Erstellen]**.
+Wählen Sie **[!UICONTROL Erstellen]** aus.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -223,7 +223,7 @@ Wählen Sie das Exportsymbol aus, um ein Paket der Community-Site zu erstellen, 
 >
 >So verwenden Sie beispielsweise Port 6103: `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
 >
->1. Klicken Sie auf **[!UICONTROL OK]**
+>1. Wählen Sie **[!UICONTROL OK]** aus
 >1. (Optional) Wählen Sie `Clear` oder `Force Retry` Zurücksetzen der Replikationswarteschlange
 
 
@@ -283,7 +283,7 @@ Erste Schritte:
 1. Beim Veröffentlichen melden Sie sich mit Administratorrechten an
 1. Navigieren Sie zu [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 1. Erweitern Sie im Projektbrowser die `/etc/map`
-1. Wählen Sie die `http` Knoten
+1. Wählen Sie den `http`-Knoten aus
 
    * Auswählen **[!UICONTROL Knoten erstellen]**
 
@@ -309,7 +309,7 @@ Erste Schritte:
       * **Wert** /content/sites/engage/en.html
 
 
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. (optional) Löschen des Browser-Verlaufs
 1. Navigieren Sie zu http://localhost:4503/
 

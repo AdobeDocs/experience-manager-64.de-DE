@@ -1,7 +1,7 @@
 ---
 title: Funktionen für spezielle Inhalte
 seo-title: Featured Content Feature
-description: 'Mit der Funktion für spezielle Inhalte können angemeldete Site-Besucher Inhalte hervorheben '
+description: Mit der Funktion für spezielle Inhalte können angemeldete Site-Besucher Inhalte hervorheben
 seo-description: The Featured Content feature lets signed-in site visitors highlight content
 uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service

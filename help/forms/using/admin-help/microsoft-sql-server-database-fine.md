@@ -1,6 +1,6 @@
 ---
-title: '"Microsoft SQL Server-Datenbank: Konfiguration optimieren"'
-seo-title: 'Microsoft SQL Server database: Fine-tuning the configuration'
+title: "Microsoft SQL Server-Datenbank: Konfiguration optimieren"
+seo-title: "Microsoft SQL Server database: Fine-tuning the configuration"
 description: Erfahren Sie, wie Sie die Konfiguration Ihrer Microsoft SQL Server-Datenbank optimieren können.
 seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f

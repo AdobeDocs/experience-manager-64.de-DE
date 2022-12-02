@@ -26,9 +26,9 @@ Das Skript comment.hbs ist für die Erstellung der gesamten HTML für jeden Komm
 So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 
 1. Kopieren `comment.hbs`von `libs`nach `apps`
-   1. Wählen Sie nun eine der folgenden Optionen aus `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Auswählen `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. Klicken Sie auf **[!UICONTROL Kopieren]**
-   1. Wählen Sie nun eine der folgenden Optionen aus `/apps/social/commons/components/hbs/comments/comment`
+   1. Auswählen `/apps/social/commons/components/hbs/comments/comment`
    1. Auswählen **[!UICONTROL Einfügen]**
 1. Öffnen Sie die überlagerte `comment.hbs`
    * Doppelklicken auf Knoten  `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`

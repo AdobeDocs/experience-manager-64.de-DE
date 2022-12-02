@@ -57,7 +57,7 @@ Für alle AEM 6.3 Autoren- und Veröffentlichungsinstanzen:
 1. Führen Sie die folgenden Schritte aus, um die vorhandene benutzergenerierte Anzeige sichtbar zu machen:
 
    i. Navigieren Sie zur Web-Konsole. Die Standardeinstellung ist
-   `https://localhost:4502/system/console/configMgr`.
+   `https://localhost:4502/system/console/configMgr` möglich.
 
    ii. Suchen **[!UICONTROL AEM Communities Utilities]** und wählen Sie aus, um das Konfigurationsfenster zu erweitern.
 

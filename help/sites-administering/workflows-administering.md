@@ -13,7 +13,7 @@ exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Die Workflow-Konsole stellt mehrere Tools für die Verwaltung von Workflow-Insta
 
 >[!NOTE]
 >
->Die [JMX-Konsole](/help/sites-administering/jmx-console.md#workflow-maintenance) bietet zusätzliche Workflow-Wartungsvorgänge.
+>Die [JMX-Konsole](/help/sites-administering/jmx-console.md#workflow-maintenance) stellt zusätzliche Workflow-Wartungsvorgänge bereit.
 
 Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwenden Sie die [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation), um das Bedienfeld **Tools** zu öffnen, und wählen Sie dann **Workflow** aus:
 
@@ -152,7 +152,7 @@ Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deployi
 
 ## Einstellen der maximalen Größe des Posteingangs {#setting-the-maximum-size-of-the-inbox}
 
-Sie können die maximale Größe des Posteingangs festlegen, indem Sie die Variable **Adobe Granite Workflow-Dienst**, wobei [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder [Hinzufügen einer OSGi-Konfiguration zum Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). In der folgenden Tabelle ist die Eigenschaft beschrieben, die Sie für jede Methode konfigurieren.
+Sie können die maximale Größe des Posteingangs durch die Konfiguration des **Adobe Granite Workflow-Services** mithilfe der [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder durch das [Hinzufügen einer OSGi-Konfiguration zum Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) einstellen. In der folgenden Tabelle ist die Eigenschaft beschrieben, die Sie für jede Methode konfigurieren.
 
 >[!NOTE]
 >

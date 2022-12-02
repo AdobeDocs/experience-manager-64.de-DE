@@ -11,33 +11,33 @@ exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '1574'
-ht-degree: 68%
+ht-degree: 79%
 
 ---
 
 # Asset-Vorlagen {#asset-templates}
 
-Asset-Vorlagen sind eine spezielle Asset-Klasse, die die schnelle Wiederverwendung visuell ansprechender Inhalte für digitale und Druckmedien erleichtert. Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messagingabschnitt und den bearbeitbaren Abschnitt.
+Bei Asset-Vorlagen handelt es sich um eine spezielle Klasse von Assets, die das schnelle Wiederverwenden von visuell reichhaltigen Inhalten für digitale Medien und Print-Medien ermöglichen. Eine Asset-Vorlage enthält zwei Teile: den unveränderlichen Messaging-Abschnitt und den bearbeitbaren Abschnitt.
 
-Der unveränderliche Messagingabschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Bereich kann visuelle und textuelle Inhalte in Feldern enthalten, die bearbeitet werden können, um Nachrichten anzupassen.
+Der unveränderliche Messaging-Abschnitt kann proprietären Inhalt enthalten, z. B. das Markenlogo und Copyright-Informationen, die nicht bearbeitet werden können. Der bearbeitbare Abschnitt kann visuelle Inhalte und Textinhalte in Feldern enthalten, die bearbeitet werden können, um das Messaging anzupassen.
 
 Da eingeschränkte Bearbeitungen flexibel vorgenommen werden können, während das globale Erscheinungsbild geschützt ist, sind Asset-Vorlagen ideale Bausteine für die schnelle Inhaltsadaptation und Verteilung als Inhaltsartefakte für verschiedene Funktionen. Durch die Wiederverwendung von Inhalten werden die Kosten für die Verwaltung von Printkanälen und digitalen Kanälen reduziert und ganzheitliche und konsistente Umgebungen für diese Kanäle bereitgestellt.
 
 Marketer können Vorlagen in [!DNL Experience Manager] Assets und die Verwendung einer einzelnen Basisvorlage, um mühelos mehrere personalisierte Druckerlebnisse zu erstellen. Sie können verschiedene Arten von Marketingmaterial erstellen, z. B. Broschüren, Flyer, Postkarten, Visitenkarten usw., um Kunden Ihre Marketingbotschaft eindeutig und klar zu vermitteln. Außerdem können Sie aus vorhandenen oder neuen Druckausgaben mehrseitige Druckausgaben zusammenstellen. Und das Beste ist: Sie können ohne großen Aufwand gleichzeitig digitale Umgebungen und Printumgebungen bereitstellen, um für Benutzer eine konsistente integrierte Erfahrung zu schaffen.
 
-Bei Asset-Vorlagen handelt es sich zwar meistens um InDesign-Dateien, aber gute InDesign-Kenntnisse sind keine Grundvoraussetzung für die Erstellung von beeindruckenden Artefakten. Es ist nicht erforderlich, dass Sie die Felder Ihrer InDesign-Vorlage den Produktfeldern zuordnen, wie dies sonst beim Erstellen von Katalogen der Fall ist. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Web-Oberfläche bearbeiten. Damit InDesign Ihre Bearbeitungsänderungen jedoch verarbeiten kann, müssen Sie zunächst [!DNL Experience Manager] Assets zur Integration mit dem InDesign-Server.
+Bei Asset-Vorlagen handelt es sich zwar meistens um InDesign-Dateien, aber gute InDesign-Kenntnisse sind keine Grundvoraussetzung für die Erstellung von beeindruckenden Artefakten. Es ist nicht erforderlich, dass Sie die Felder Ihrer InDesign-Vorlage den Produktfeldern zuordnen, wie dies sonst beim Erstellen von Katalogen der Fall ist. Sie können die Vorlagen im WYSIWYG-Modus direkt auf der Web-Benutzeroberfläche bearbeiten. Damit InDesign Ihre Bearbeitungsänderungen jedoch verarbeiten kann, müssen Sie zunächst [!DNL Experience Manager] Assets zur Integration mit dem InDesign-Server.
 
 Die Möglichkeit, InDesign-Vorlagen über die Webbenutzeroberfläche zu bearbeiten, fördert die Zusammenarbeit zwischen dem Kreativ- und Marketingpersonal und sorgt gleichzeitig dafür, dass für regionale Werbeinitiativen die Zeit bis zur Veröffentlichung verkürzt wird.
 
 Sie können Asset-Vorlagen für folgende Zwecke nutzen:
 
-* Ändern von bearbeitbaren Vorlagenfeldern über die Webbenutzeroberfläche
+* Ändern von bearbeitbaren Vorlagenfeldern über die Web-Benutzeroberfläche
 * Steuern der grundlegenden Textformatierung, z. B. Schriftgröße, -stil und -typ auf Tag-Ebene
 * Ändern von Bildern in der Vorlage per Inhaltsauswahl
 * Anzeigen von Vorlagenbearbeitungen in der Vorschau
 * Zusammenführen mehrerer Vorlagendateien zum Erstellen eines mehrseitigen Artefakts
 
-Wenn Sie eine Vorlage für Ihr Material auswählen, [!DNL Assets] erstellt eine Kopie der Vorlage, die Sie bearbeiten können. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
+Wenn Sie eine Vorlage für Ihr Marketingmaterial auswählen, erstellt [!DNL Assets] eine Kopie der Vorlage, die Sie bearbeiten können. Die ursprüngliche Vorlage wird beibehalten, um sicherzustellen, dass Ihre globalen Logos und Unternehmenskennzeichnungen intakt bleiben und wiederverwendet werden können, um für eine einheitliche Markendarstellung zu sorgen.
 
 Sie können die aktualisierte Datei im übergeordneten Ordner in den folgenden Formaten exportieren:
 
@@ -52,11 +52,11 @@ Außerdem können Sie die Ausgabe in diesen Formaten auf Ihr lokales System heru
 Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmaterial, z. B. Broschüren, Flyer und Anzeigen, für eine anstehende Kampagne erstellen und für Ihre Geschäfte weltweit bereitstellen möchten. Wenn Sie das Material basierend auf einer Vorlage erstellen, können Sie kanalübergreifend eine einheitliche Kundenerfahrung erzielen. Designer können die Kampagnenvorlagen (einseitige oder mehrseitige) mithilfe einer kreativen Lösung wie InDesign erstellen und die Vorlagen in [!DNL Assets] für Sie. Bevor Sie ein Material erstellen, lassen Sie eine oder mehrere INDD-Vorlagen im Voraus in den Experience Manager hochladen und verfügbar.
 
 1. Klicken Sie auf [!DNL Experience Manager] und klicken Sie auf **[!UICONTROL Assets]** auf der Navigationsseite.
-1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
+1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]** aus.
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. Klicken bzw. tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie im Menü anschließend das Material aus, das Sie erstellen möchten. Wählen Sie beispielsweise **[!UICONTROL Broschüre]**.
+1. Klicken bzw. tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie im Menü anschließend das Material aus, das Sie erstellen möchten. Wählen Sie beispielsweise die Option **[!UICONTROL Broschüre]** aus.
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
@@ -82,9 +82,9 @@ Stellen Sie sich einen Fall vor, in dem Sie digitales druckbares Marketingmateri
 
 ## Bearbeiten von Sicherheiten {#editing-a-collateral}
 
-Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu können Sie es über die Seite „Vorlagen“ oder die Asset-Seite öffnen.
+Sie können Marketingmaterial sofort nach dem Erstellen bearbeiten. Alternativ hierzu können Sie es über die Seite Vorlagen oder die Asset-Seite öffnen.
 
-1. Sie haben folgende Möglichkeiten, um das Material zur Bearbeitung zu öffnen:
+1. Sie haben folgende Möglichkeiten, um das Marketingmaterial zur Bearbeitung zu öffnen:
 
    * Öffnen Sie das Material (in diesem Fall die Broschüre), das Sie in Schritt 7 unter [Erstellen von Marketingmaterial](asset-templates.md#creating-a-collateral) erstellt haben.
    * Navigieren Sie auf der Seite „Vorlagen“ zu einem Ordner, in dem Sie das Material erstellt haben, und klicken bzw. tippen Sie in der Miniaturansicht eines Marketingmaterialelements auf die Option zum schnellen Bearbeiten.
@@ -97,7 +97,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    Sie können den Text-Editor verwenden, um den Text zu ändern, der im Textfeld angezeigt werden soll. Sie können Schriftgröße, -stil, -farbe und -typ auf der Tag-Ebene ändern.
 
-   Mit der Asset-Suche können Sie in [!DNL Assets] und ersetzen Sie die bearbeitbaren Bilder in der Vorlage durch Bilder Ihrer Wahl.
+   Mithilfe der Asset-Suche können Sie in [!DNL Assets] nach Bildern suchen und die bearbeitbaren Bilder in der Vorlage durch Bilder Ihrer Wahl ersetzen.
 
    ![chlimage_1-314](assets/chlimage_1-314.png)
 
@@ -127,7 +127,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-319](assets/chlimage_1-319.png)
 
-   Sie können auch nach Bildern suchen, indem Sie Stichwörter, Tags und den Veröffentlichungsstatus angeben. Sie können die [!DNL Assets] Repository erstellen und zum Speicherort des gewünschten Bildes navigieren.
+   Sie können auch nach Bildern suchen, indem Sie Schlüsselwörter, Tags und den Veröffentlichungsstatus angeben. Sie können das [!DNL Assets]-Repository durchsuchen und zum Speicherort des gewünschten Bildes navigieren.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -143,13 +143,13 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    >[!NOTE]
    >
-   >Die Symbole „Vorschau“ und „Fertig“ sind nur aktiviert, wenn die bearbeitbaren Bildfelder im Material keine fehlenden Symbole aufweisen. Wenn in Ihrem Material Symbole fehlen, liegt dies daran, dass [!DNL Experience Manager] kann die Bilder in der InDesign-Vorlage nicht auflösen. Normalerweise [!DNL Experience Manager] kann in folgenden Fällen keine Bilder auflösen:
+   >Die Symbole „Vorschau“ und „Fertig“ sind nur aktiviert, wenn die bearbeitbaren Bildfelder im Material keine fehlenden Symbole aufweisen. Wenn in Ihrem Material Symbole fehlen, liegt dies daran, dass [!DNL Experience Manager] kann die Bilder in der InDesign-Vorlage nicht auflösen. Normalerweise können Bilder von [!DNL Experience Manager] in den folgenden Fällen nicht aufgelöst werden:
    >
    >* Bilder werden nicht in die zugrunde liegende InDesign-Vorlage eingebettet
    >* Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem
 
    >
-   >Aktivieren [!DNL Experience Manager] Gehen Sie wie folgt vor, um Bilder aufzulösen:
+   >Gehen Sie wie folgt vor, um für [!DNL Experience Manager] das Auflösen von Bildern zu ermöglichen:
    >
    >* Betten Sie Bilder ein, während Sie InDesign-Vorlagen erstellen (siehe [Informationen zu Links und eingebetteten Grafiken](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
    >* Berg [!DNL Experience Manager] Ihrem lokalen Dateisystem und ordnen Sie dann fehlende Symbole vorhandenen zu [!DNL Experience Manager] Assets.
@@ -162,7 +162,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. Klicken/tippen Sie in der Ausgabedarstellungsliste auf die PDF-Ausgabedarstellung , um die PDF-Datei herunterzuladen. Öffnen Sie die PDF-Datei, um das Material zu überprüfen.
+1. Klicken/tippen Sie in der Ausgabedarstellungsliste auf die PDF-Ausgabedarstellung , um die PDF-Datei herunterzuladen. Öffnen Sie die PDF-Datei, um das Marketingmaterial zu überprüfen.
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
@@ -170,7 +170,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
 
 1. Klicken oder tippen Sie auf **[!UICONTROL Tools > Assets]**.
-1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]**.
+1. Wählen Sie in den Optionen die Option **[!UICONTROL Vorlagen]** aus.
 1. Klicken/Tippen **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Zusammenführen]** aus dem Menü.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -187,7 +187,7 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
-   Sie können die [!DNL Assets] Repository oder Sammlungen, navigieren Sie zum Speicherort der gewünschten Vorlagen und wählen Sie sie aus, um sie zusammenzuführen.
+   Sie können das [!DNL Assets]-Repository bzw. die Sammlungen durchsuchen, zum Speicherort der gewünschten Vorlagen navigieren und sie dann für die Zusammenführung auswählen.
 
    ![chlimage_1-329](assets/chlimage_1-329.png)
 
@@ -196,11 +196,11 @@ Sie können Material sofort nach dem Erstellen bearbeiten. Alternativ hierzu kö
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
 1. Klicken bzw. tippen Sie in der Symbolleiste auf **[!UICONTROL Weiter]**.
-1. Im **[!UICONTROL Vorschau &amp; Neu anordnen]** , ordnen Sie bei Bedarf die Vorlagen neu und zeigen Sie eine Vorschau der Auswahl der zusammenzuführenden Vorlagen an. Klicken bzw. tippen Sie in der Symbolleiste dann auf **[!UICONTROL Weiter]**.
+1. Ordnen Sie die Vorlagen bei Bedarf auf dem Bildschirm **[!UICONTROL Vorschau anzeigen und neu anordnen]** neu an und zeigen Sie eine Vorschau für die ausgewählten Vorlagen für die Zusammenführung an. Klicken bzw. tippen Sie in der Symbolleiste dann auf **[!UICONTROL Weiter]**.
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
-1. Geben Sie im Bildschirm &quot;Vorlage konfigurieren&quot;einen Namen für das Material an. Geben Sie optional Tags an, die jeweils geeignet sind. Wählen Sie die Option **[!UICONTROL Acrobat (.PDF)]**, falls Sie die Ausgabe im PDF-Format exportieren möchten. Standardmäßig wird das Material im JPG- und InDesign-Format exportiert. Klicken bzw. tippen Sie auf **[!UICONTROL Miniatur ändern]**, um die angezeigte Miniaturansicht für das mehrseitige Material zu ändern.
+1. Geben Sie auf dem Bildschirm Vorlage konfigurieren einen Namen für das Marketingmaterial an. Geben Sie optional Tags an, die jeweils geeignet sind. Wählen Sie die Option **[!UICONTROL Acrobat (.PDF)]**, falls Sie die Ausgabe im PDF-Format exportieren möchten. Standardmäßig wird das Material im JPG- und InDesign-Format exportiert. Klicken bzw. tippen Sie auf **[!UICONTROL Miniatur ändern]**, um die angezeigte Miniaturansicht für das mehrseitige Material zu ändern.
 
    ![chlimage_1-332](assets/chlimage_1-332.png)
 

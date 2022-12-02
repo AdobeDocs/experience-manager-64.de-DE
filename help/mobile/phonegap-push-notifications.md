@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die Möglichkeit, Ihre AEM Mobile-App-Benutzer sofort mit wichtigen Benachrichtigungen zu benachrichtigen, ist für den Wert einer App und ihrer Marketingkampagnen von entscheidender Bedeutung. In unserem Beispiel werden die Schritte beschrieben, die unternommen werden müssen, damit Ihre App Push-Benachrichtigungen empfangen kann, sowie die Konfiguration und der Versand von Push-Benachrichtigungen von AEM Mobile an die am Telefon installierte App. Außerdem wird in diesem Abschnitt beschrieben, wie Sie die [Deep-Linking](#deeplinking) -Funktion für Ihre Push-Benachrichtigungen verwenden.
 

@@ -11,7 +11,7 @@ exl-id: 76f25e65-1bc3-4801-998c-40ff533393e2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 89%
 
 AEM Forms Document Security Java SDK stellt APIs bereit, mit denen ein Benutzerkonto ein Dokument im Auftrag eines anderen Benutzers schützen kann, ohne die Berechtigungen zum Bearbeiten des Dokuments zu erhalten. Sie können die APIs in einem Arbeitsablauf-Prozess oder programmgesteuert als Dokumentdienst verwenden. Die folgenden neuen APIs wurden eingeführt:
 
-* **protectDocumentUse** die ProtectDocument-API zum Anwenden einer Richtlinie auf ein Dokument im Namen von
+* **protectDocumentUse** die ProtectDocument-API, um eine Richtlinie im Namen eines
 
-   ein anderes Benutzerkonto. Die Berechtigungen des Benutzerkontos, das zum Anwenden der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es erhält keine Rechte zum Öffnen und Anzeigen des Dokuments. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
+   anderen Benutzerkontos auf ein Dokument anzuwenden. Die Berechtigungen des Benutzerkontos, das zum Anwenden der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es erhält keine Rechte zum Öffnen und Anzeigen des Dokuments. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
 * **createLicenseUse** Mit der createLicense-API können Sie im Namen eines anderen Benutzerkontos eine Lizenz für eine Richtlinie erstellen. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
 * **protectDocumentWithCoverPageUse** Mit der ProtectDocumentWithCoverPage-API können Sie im Namen eines anderen Benutzers eine Richtlinie auf ein Dokument anwenden und ihm ein Deckblatt hinzufügen. Die Berechtigungen des Benutzerkontos, das zum Anwenden der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es erhält keine Rechte zum Öffnen und Anzeigen des Dokuments. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)

@@ -171,8 +171,8 @@ Um den gemeinsamen MongoDB-Speicher zu testen und zu überprüfen, posten Sie ei
 
    * Navigieren Sie zum Solr-Dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/)
    * Benutzer `core selector` auswählen `collection1`
-   * Wählen Sie nun eine der folgenden Optionen aus `Query`
-   * Wählen Sie nun eine der folgenden Optionen aus `Execute Query`
+   * Auswählen `Query`
+   * Auswählen `Execute Query`
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 

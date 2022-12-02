@@ -13,7 +13,7 @@ exl-id: 3f55a02c-2733-4f69-8112-7c6c4c98938c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '558'
-ht-degree: 44%
+ht-degree: 47%
 
 ---
 
@@ -29,7 +29,7 @@ Diese Seite dokumentiert die `Social Tag Cloud` Einstellungen des Komponentendia
 
 Detaillierte Informationen für Entwickler finden Sie unter [Tag-Grundlagen](tag.md).
 
-Siehe [Verwalten von Tags](../../help/sites-administering/tags.md) Informationen zum Erstellen und Verwalten von Tags sowie dazu, auf welche Inhalts-Tags angewendet wurden.
+Informationen zur Erstellung und Verwaltung von Tags sowie dazu, auf welche Inhalte Tags angewendet wurden, finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md).
 
 ## Hinzufügen einer Social-Tag-Cloud {#adding-a-social-tag-cloud}
 

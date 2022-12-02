@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media-Videoprofile
-description: 'Dynamic Media verfügt über ein vordefiniertes Profil für die adaptive Videokodierung. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass Ihre Kunden das bestmögliche Videoanzeigeerlebnis erhalten. '
+description: Dynamic Media verfügt über ein vordefiniertes Profil für die adaptive Videokodierung. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass Ihre Kunden das bestmögliche Videoanzeigeerlebnis erhalten.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
@@ -11,7 +11,7 @@ role: Admin,User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3068'
-ht-degree: 74%
+ht-degree: 75%
 
 ---
 
@@ -57,7 +57,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td><strong>Video-Bitrate (kBit/s)</strong></td> 
    <td><strong>Video-Framerate (FPS)</strong></td> 
    <td><strong>Audio-Codec</strong></td> 
-   <td><strong>Audiobitrate (Kbit/s)</strong></td> 
+   <td><strong>Audiobitrate   (Kbit/s)</strong></td> 
   </tr> 
   <tr> 
    <td><p>MP4 H.264 (mp4)</p> </td> 
@@ -74,7 +74,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td>auto</td> 
    <td>540</td> 
    <td>Ja</td> 
-   <td>2000<br /> </td> 
+   <td>2.000<br /> </td> 
    <td>30</td> 
    <td>Dolby HE-AAC</td> 
    <td>128</td> 
@@ -84,7 +84,7 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
    <td>auto</td> 
    <td>720<br /> </td> 
    <td>Ja</td> 
-   <td>3000<br /> </td> 
+   <td>3.000<br /> </td> 
    <td>30</td> 
    <td>Dolby HE-AAC</td> 
    <td>128</td> 
@@ -119,7 +119,7 @@ Siehe auch [Best Practices zur Videokodierung](video.md#best-practices-for-encod
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](config-dms7.md#configuring-asset-processing).
 
-Wenn Sie die Erstellung des Videoprofils abgeschlossen haben, wenden Sie es auf einen oder mehrere Ordner an.
+Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf einen oder mehrere Ordner an.
 
 **So erstellen Sie ein Dynamic Media-Videokodierungsprofil für adaptives Streaming**:
 
@@ -169,7 +169,7 @@ Siehe auch [Best Practices zur Videokodierung](video.md#best-practices-for-encod
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](config-dms7.md#configuring-asset-processing).
 
-Wenn Sie die Erstellung des Videoprofils abgeschlossen haben, wenden Sie es auf einen oder mehrere Ordner an.
+Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf einen oder mehrere Ordner an.
 
 **So erstellen Sie ein Dynamic Media-Videokodierungsprofil für progressives Streaming:**
 

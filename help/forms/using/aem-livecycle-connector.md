@@ -13,7 +13,7 @@ exl-id: f40674c1-a1dd-41ef-8a19-82ece3103bcc
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1006'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Clientanwendungen können LiveCycle-Dienste programmgesteuert über eine Java AP
 
 AEM LiveCycle Connector vereinfacht den Ablauf, indem diese Client-Instanzen als OSGi-Dienste offengelegt werden, auf die über standardmäßige OSGi-Methoden zugegriffen werden kann. LiveCycle Connector umfasst die folgenden Funktionen:
 
-* Client-Instanzen als OSGi-Dienst: Die als OSGI-Bundles verpackten Clients sind im Abschnitt [Document Services-Liste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) Abschnitt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der OSGi Service Registry.
+* Clientinstanzen als OSGi-Dienst – Die als OSGI-Pakete gebündelten Clients sind im Abschnitt [Document Services-Liste](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) aufgeführt. Jede Client-JAR-Datei registriert die Client-Instanz als OSGi-Dienst in der OSGi Service Registry.
 * Weitergabe von Benutzerinformationen: Die erforderlichen Verbindungsdetails für die Verbindung mit dem LiveCycle-Server werden an einem zentralen Speicherort verwaltet.
 * ServiceClientFactory-Dienst: Zum Starten der Prozesse kann die Client-Anwendung auf die ServiceClientFactory-Instanz zugreifen.
 
@@ -116,7 +116,7 @@ Um einen angezeigten Dienst aus AEM zu starten, führen Sie folgende Schritte au
                );
    ```
 
-   Im obigen Code-Fragment wird die createPDF-API von GeneratePdfServiceClient gestartet, um ein Dokument das PDF-Format zu konvertieren. Auf einer JSP-Seite können Sie einen ähnlichen Aufruf mithilfe des folgenden Codes durchführen. Der Hauptunterschied besteht darin, dass der folgende Code Sling ScriptHelper verwendet, um auf den GeneratePdfServiceClient zuzugreifen.
+   Im obigen Code-Fragment wird die createPDF-API von GeneratePdfServiceClient gestartet, um ein Dokument das PDF-Format zu konvertieren. Auf einer JSP-Seite können Sie einen ähnlichen Aufruf mithilfe des folgenden Codes durchführen. Der wesentliche Unterschied besteht darin, dass der folgende Code Sling ScriptHelper verwendet, um auf GeneratePdfServiceClient zuzugreifen.
 
    ```java
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>

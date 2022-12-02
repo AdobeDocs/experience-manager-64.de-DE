@@ -1,7 +1,7 @@
 ---
 title: Wiederverwenden adaptiver Formulare
 seo-title: Reusing adaptive forms
-description: 'Sie können ein vorhandenes adaptives Formular verwenden, um neue adaptive Formulare zu erstellen. '
+description: Sie können ein vorhandenes adaptives Formular verwenden, um neue adaptive Formulare zu erstellen.
 seo-description: You can reuse an existing adaptive form to create new adaptive forms.
 uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -12,7 +12,7 @@ exl-id: 9393fe94-002a-497b-9579-d6ad3bb3973e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
 
 1. Wählen Sie das adaptive Formular aus. Der Auswahlprozess unterscheidet sich je nach Ansicht.
 
-   Wenn Sie sich in der Kartenansicht befinden, wechseln Sie zum Auswahlmodus, indem Sie auf die Auswahl klicken ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und klicken Sie auf alle adaptiven Formulare, die Sie kopieren möchten.
+   Wenn Sie sich in der Kartenansicht befinden, wechseln Sie zum Auswahlmodus, indem Sie das Auswahlsymbol ![aem6forms_check-circle](assets/aem6forms_check-circle.png) und alle adaptiven Formulare anklicken, die Sie kopieren möchten.
 
    Wenn Sie sich in der Listenansicht befinden, aktivieren Sie die Kontrollkästchen der gewünschten adaptiven Formulare, um sie auszuwählen.
 
@@ -46,15 +46,15 @@ Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
    >
    >Alle ausgewählten Assets müssen adaptive Formulare sein, da die Kopieren/Einfügen-Funktion nur bei adaptiven Formularen unterstützt wird. Außerdem müssen sich alle ausgewählten Elemente in demselben Ordner befinden.
 
-   Klicken Sie nach Auswahl der Assets auf die Kopie . ![aem6forms_copy](assets/aem6forms_copy.png) Symbol in der Symbolleiste, um das ausgewählte adaptive Formular zu kopieren.
+   Nach dem Auswählen der Assets klicken Sie auf das Symbol ![aem6forms_copy](assets/aem6forms_copy.png) in der Symbolleiste, um das ausgewählte adaptive Formular zu kopieren.
 
 ### Einfügen adaptiver Formulare {#paste-an-adaptive-form}
 
-Durch Klicken auf die Aktion &quot;Kopieren&quot;wird der Auswahlmodus automatisch beendet und das Einfügen erfolgt ![aem6forms_paste](assets/aem6forms_paste.png) sichtbar. Wechseln Sie nun zum gewünschten Ordnerpfad und klicken Sie auf das Symbol zum Einfügen ![aem6forms_paste](assets/aem6forms_paste.png) zum Einfügen des kopierten adaptiven Formulars.
+Wenn Sie auf die Kopieraktion klicken, wird der Auswahlmodus automatisch beendet und das Symbol zum Einfügen ![aem6forms_paste](assets/aem6forms_paste.png) wird sichtbar. Gehen Sie nun zum gewünschten Ordnerpfad und klicken Sie auf das Symbol ![aem6forms_paste](assets/aem6forms_paste.png), um das kopierte adaptive Formular einzufügen.
 
 Wenn Sie in denselben Ordner einfügen oder sich im Zielordner eine weitere Datei mit demselben Knotennamen (mit dem sie im CRX-Repository gespeichert ist) befindet, wird am Suffix eine 1 angehängt (zum Beispiel wird „myaf“ zu „myaf1“ und wenn sich „myaf1“ am selben Speicherort befindet, wird „myaf“ zu „myaf2“). Alle anderen Eigenschaften bleiben genauso wie beim ursprünglichen adaptiven Formular.
 
-Nach dem Klicken auf das Einfügen ![aem6forms_paste](assets/aem6forms_paste.png) angezeigt, wird es wieder ausgeblendet. Sie können jeweils nur einmal einfügen. Wenn Sie vom selben Asset erneut eine Kopie erstellen möchten, kopieren Sie es erneut.
+Nachdem Sie auf das Einfugen-Symbol ![aem6forms_paste](assets/aem6forms_paste.png) geklickt haben, wird es wieder ausgeblendet. Sie können jeweils nur einmal einfügen. Wenn Sie vom selben Asset erneut eine Kopie erstellen möchten, kopieren Sie es erneut.
 
 ### Ändern der Inhalte eines neuen adaptiven Formulars {#change-contents-of-new-adaptive-form}
 

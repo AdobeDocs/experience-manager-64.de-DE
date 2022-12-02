@@ -16,7 +16,7 @@ role: Admin,User
 source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '4220'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 77%
 
 Eine Dynamic Media-Viewer-Vorgabe ist eine Sammlung von Einstellungen, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computerbildschirmen und Mobilgeräten anzeigen. Administratoren können Viewer-Vorgaben erstellen. Einstellungen sind für eine Vielzahl an Viewer-Konfigurationsoptionen verfügbar. Sie können beispielsweise die Viewer-Anzeigegröße oder das Zoomverhalten ändern.
 
-Anweisungen zum Erstellen und Anpassen Ihrer eigenen HTML5-Viewer-Vorgaben finden Sie in der Adobe Dynamic Media *Dokumentation zur HTML 5 Viewer SDK-API*. Das SDK ist auf dem im SDK eingebetteten IS-Veröffentlichungsserver verfügbar. Jede Bibliotheksversion verfügt über eine eigene SDK-Dokumentation.
+Anweisungen zum Erstellen und Anpassen Ihrer eigenen HTML5-Viewer-Vorgaben finden Sie in der Dokumentation zur *HTML5 Viewer SDK API* von Adobe Dynamic Media. Das SDK ist auf dem im SDK eingebetteten IS-Veröffentlichungsserver verfügbar. Jede Bibliotheksversion verfügt über eine eigene SDK-Dokumentation.
 
 Pfad: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
-Beispiel: 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
+Beispielsweise das 3.10-SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Siehe auch [Adobe Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+Siehe auch das [Adobe Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=de).
 
 In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet und verwaltet werden. Sie können jederzeit bei der Vorschau eines Assets eine Viewer-Vorgabe darauf anwenden. Siehe [Anwenden von Viewer-Vorgaben](viewer-presets.md).
 
@@ -41,7 +41,7 @@ In diesem Abschnitt wird beschrieben, wie Viewer-Vorgaben erstellt, bearbeitet u
 
 Alle standardmäßigen Viewer unterstützen den Zugriff auf die Tastatur.
 
-Weitere Informationen finden Sie unter [Tastaturzugriff und Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html).
+Weitere Informationen finden Sie unter [Tastaturzugriff und Navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=de).
 
 ## Verwalten von Dynamic Media-Viewer-Vorgaben {#managing-presets}
 
@@ -138,8 +138,8 @@ Siehe *Versionshinweise zu Viewers* im Inhaltsverzeichnis der [Viewer-Referenzha
 | Shoppable_Video_light | Interactive_Video | html5_interactivevideovewer_light.css |
 | SpinSet_dark | Spin_Set | html5_spinviewer_dark.css |
 | SpinSet_light | Rotationsset | html5_spinviewer_light.css |
-| Video (einschließlich Unterstützung für Untertitel) | Video | html5_videoviewer.css |
-| Video_social (einschließlich Unterstützung für Untertitel und soziale Medien) | Video | html5_videoviewersocial.css |
+| Video (einschließlich Unterstützung für Untertitel) | Video  | html5_videoviewer.css |
+| Video_social (einschließlich Unterstützung für Untertitel und soziale Medien) | Video  | html5_videoviewersocial.css |
 | Zoom_dark | Zoom | html5_basiczoomviewer_dark.css |
 | Zoom_light | Zoom | html5_basiczoomviewer_light.css |
 | ZoomVertical_dark | Vertical_Zoom | html5_zoomverticalviewer_dark.css |
@@ -252,9 +252,9 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
 ## Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos {#special-considerations-for-creating-an-interactive-viewer-preset}
 
-**Wissenswertes über Anzeigemodi für Bildminiaturansichten im Anzeigefeld**
+**Über Anzeigemodi für Bildminiaturansichten im Anzeigefeld**
 
-Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, können Sie entscheiden, **[!UICONTROL Anzeigemodus]** Einstellung, die bei Auswahl von `InteractiveSwatches` von **[!UICONTROL Ausgewählte Komponente]** Pulldown-Menü unter **[!UICONTROL Verhalten]** Registerkarte. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden.  Sie können entweder eine `segment`Anzeigemodus (Standard) oder `continuous`Anzeigemodus.
+Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, können Sie entscheiden, **[!UICONTROL Anzeigemodus]** Einstellung, die bei Auswahl von `InteractiveSwatches` von **[!UICONTROL Ausgewählte Komponente]** Pulldown-Menü unter **[!UICONTROL Verhalten]** Registerkarte. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden.  Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
 
 | Anzeigemodus | Beschreibung |
 |---|---|

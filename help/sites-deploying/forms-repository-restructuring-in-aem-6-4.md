@@ -13,13 +13,13 @@ exl-id: a2d6524e-3f5b-4d1e-af64-61ff95889657
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Forms-Repository-Neustrukturierung in AEM 6.4{#forms-repository-restructuring-in-aem}
 
-Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) -Seite verwenden, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die AEM Forms-Lösung auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die ein Upgrade auf AEM 6.4 durchführen, diese Seite nutzen, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen abzuschätzen, die sich auf AEM Forms Solution auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
 
 **Mit der Aktualisierung auf 6.4**
 
@@ -39,7 +39,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
 | **Vorheriger Speicherort** | `/etc/clientlibs/fd/fp` |
 |---|---|
 | **Neuer Speicherort** | `/libs/fd/fp/components` |
-| **Leitfaden für die Neustrukturierung** | Alle expliziten Verweise im benutzerdefinierten Code auf den alten Speicherort müssen an den neuen Speicherort aktualisiert werden. |
+| **Leitfaden für die Neustrukturierung** | Alle expliziten Verweise im benutzerdefinierten Code auf den alten Speicherort müssen auf den neuen Speicherort aktualisiert werden. |
 | **Anmerkungen** | Diese Client-Bibliotheken sollten nicht modifiziert oder erweitert werden. |
 
 | **Vorheriger Speicherort** | `/etc/clientlibs/fd/rte` |
@@ -127,5 +127,5 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
 | **Vorheriger Speicherort** | `/etc/designs/fd/fp` |
 |---|---|
 | **Neuer Speicherort** | `/libs/fd/fp` |
-| **Leitfaden für die Neustrukturierung** | Alle Verweise auf die /etc-Vorlagen sollten schließlich aktualisiert werden, um auf ihre `/libs` Entsprechungen. |
+| **Leitfaden für die Neustrukturierung** | Alle Verweise auf die /etc-Vorlagen müssen schließlich so aktualisiert werden, dass sie auf ihre `/libs`-Gegenstücke verweisen. |
 | **Anmerkungen** | Nicht zutreffend |

@@ -8,7 +8,7 @@ exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
 source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 74%
+ht-degree: 87%
 
 ---
 
@@ -27,21 +27,21 @@ Aus Sicht von Adobe Experience Manager Assets sollte die Überwachung die Beobac
 
 * Integritätsprüfungen der OSGi-Konsole
 
-In der Regel [!DNL Assets] kann auf zwei Arten überwacht werden: Live-Überwachung und Langzeitüberwachung.
+Normalerweise kann die Überwachung in [!DNL Assets] auf zwei Arten durchgeführt werden: Live-Überwachung und Langzeitüberwachung.
 
 ## Live-Überwachung {#live-monitoring}
 
 Es ist ratsam, die Live-Überwachung während der Leistungstestphase Ihres Entwicklungsprozesses oder in Situationen mit hoher Auslastung durchzuführen, um sich mit den Leistungsmerkmalen Ihrer Umgebung vertraut zu machen. Normalerweise sollte für die Live-Überwachung eine Tool-Suite eingesetzt werden. Einige Empfehlungen:
 
-* [Visual VM](https://visualvm.github.io/): Mit Visual VM können Sie detaillierte Java-VM-Informationen anzeigen, einschließlich CPU-Auslastung und Java-Speicherbelegung. Außerdem können Sie Code prüfen und auswerten, der auf einer Instanz ausgeführt wird.
+* [Visual VM](https://visualvm.github.io/): Mit Visual VM können Sie ausführliche Java-VM-Informationen anzeigen, z. B. CPU-Auslastung oder Java-Speicherauslastung. Außerdem können Sie Code prüfen und auswerten, der auf einer Instanz ausgeführt wird.
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html): „Top“ ist ein Linux-Befehl zum Öffnen eines Dashboards, in dem Auslastungsstatistiken angezeigt werden, z. B. zur CPU-, Arbeitsspeicher- und I/O-Auslastung. Darin können Sie sich einen allgemeinen Überblick über die Vorgänge auf einer Instanz verschaffen.
-* [Htop](https://hisham.hm/htop/): „Htop“ ist ein interaktives Anzeigeprogramm für Prozesse. Es enthält ausführliche Informationen zur Auslastung von CPU und Arbeitsspeicher, die über die Informationen von „Top“ hinausgehen. Htop kann auf den meisten Linux-Systemen mit `yum install htop` oder `apt-get install htop`.
+* [Htop](https://hisham.hm/htop/): „Htop“ ist ein interaktives Anzeigeprogramm für Prozesse. Es enthält ausführliche Informationen zur Auslastung von CPU und Arbeitsspeicher, die über die Informationen von „Top“ hinausgehen. „Htop“ kann auf den meisten Linux-Systemen mit dem Befehl `yum install htop` oder `apt-get install htop` installiert werden.
 
-* [Iotop](https://guichaz.free.fr/iotop/): „Iotop“ ist ein ausführliches Dashboard für die I/O-Auslastung von Datenträgern. Darin werden anhand von Balken und Anzeigen die Prozesse, für die Datenträger-I/O-Vorgänge genutzt werden, sowie die verwendete Menge dargestellt. Iotop kann auf den meisten Linux-Systemen mit `yum install iotop` oder `apt-get install iotop`.
+* [Iotop](https://guichaz.free.fr/iotop/): „Iotop“ ist ein ausführliches Dashboard für die I/O-Auslastung von Datenträgern. Darin werden anhand von Balken und Anzeigen die Prozesse, für die Datenträger-I/O-Vorgänge genutzt werden, sowie die verwendete Menge dargestellt. „Iotop“ kann auf den meisten Linux-Systemen mit dem Befehl `yum install iotop` oder `apt-get install iotop` installiert werden.
 
-* [Iftop](https://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. Iftop kann auf den meisten Linux-Systemen mit `yum install iftop` oder `apt-get install iftop`.
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/): Mit „Iftop“ werden ausführliche Informationen zur Ethernet-/Netzwerkauslastung angezeigt. Es werden Statistiken pro Kommunikationskanal auf den Entitäten zur Ethernet-Verwendung und zur genutzten Bandbreite angegeben. „Iftop“ kann auf den meisten Linux-Systemen mit dem Befehl `yum install iftop` oder `apt-get install iftop` installiert werden.
 
-* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. Weitere Informationen finden Sie unter [Verwenden von Java Flight Recorder zur Diagnose von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* Java Flight Recorder (JFR): Ein kommerzielles Tool von Oracle, das Sie in Umgebungen, die nicht für die Produktion bestimmt sind, kostenlos nutzen können. Ausführliche Informationen finden Sie unter [Verwenden von Java Flight Recorder zum Diagnostizieren von CQ-Laufzeitproblemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
 * [!DNL Experience Manager] error.log-Datei: Sie können die [!DNL Experience Manager] error.log für Details zu den im System protokollierten Fehlern. Verwenden Sie den Befehl `tail -F quickstart/logs/error.log` um Fehler zu identifizieren, die Sie untersuchen sollten.
 * [Workflow-Konsole](../sites-administering/workflows.md): Nutzen Sie die Workflow-Konsole, um Workflows zu überwachen, die Verzögerungen aufweisen oder hängen.
 
@@ -57,9 +57,9 @@ Normalerweise verwenden Sie diese Tools zusammen, um eine umfassende Vorstellung
 
 Langfristige Überwachung einer [!DNL Experience Manager] -Instanz umfasst die Überwachung der gleichen Live-Übertragungen für eine längere Dauer. Außerdem werden Warnungen definiert, die speziell auf Ihre Umgebung zugeschnitten sind.
 
-### Protokollaggregation und Berichterstellung {#log-aggregation-and-reporting}
+### Protokollaggregation und Reporting {#log-aggregation-and-reporting}
 
-Es sind mehrere Tools zum Aggregieren von Protokollen verfügbar, z. B. Splunk(TM) und Elastic Search/Logstash/Kabana (ELK). So beurteilen Sie die Betriebszeit Ihrer [!DNL Experience Manager] müssen Sie beispielsweise die für Ihr System spezifischen Protokollereignisse verstehen und Warnhinweise erstellen, die auf ihnen basieren. Ein gutes Wissen über Ihre Entwicklungs- und Betriebspraktiken kann Ihnen dabei helfen, besser zu verstehen, wie Sie Ihren Protokollaggregationsprozess so einstellen können, dass er kritische Warnhinweise generiert.
+Es sind mehrere Tools zum Aggregieren von Protokollen verfügbar, z. B. Splunk(TM) und Elastic Search/Logstash/Kabana (ELK). So beurteilen Sie die Betriebszeit Ihrer [!DNL Experience Manager] müssen Sie beispielsweise die für Ihr System spezifischen Protokollereignisse verstehen und Warnhinweise erstellen, die auf ihnen basieren. Wenn Sie Ihre Entwicklungs- und Betriebsabläufe gut kennen, können Sie den Prozess der Protokollaggregation besser optimieren, um kritische Warnungen zu generieren.
 
 ### Umgebungsüberwachung {#environment-monitoring}
 
@@ -76,7 +76,7 @@ Sie benötigen externe Tools, z. B. NewRelic(TM) und AppDynamics(TM), um die ei
 
 #### Interne Anwendungsüberwachung {#internal-application-monitoring}
 
-Die interne Anwendungsüberwachung umfasst die Überwachung der Anwendungskomponenten, aus denen die [!DNL Experience Manager] stapeln, einschließlich JVM, des Inhalts-Repositorys und Überwachung durch benutzerdefinierten Anwendungscode, der auf der Plattform erstellt wurde. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
+Die interne Anwendungsüberwachung umfasst das Überwachen der Anwendungskomponenten, aus denen der [!DNL Experience Manager]-Stapel besteht, z. B. JVM, das Inhalts-Repository und die Überwachung mit benutzerdefiniertem Anwendungs-Code, der auf der Plattform erstellt wird. Im Allgemeinen wird dies mithilfe von JMX MBeans durchgeführt, die mit vielen beliebten Überwachungslösungen, z. B. SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) und anderen, direkt überwacht werden können. Für Systeme, für die keine direkte Verbindung mit JMX unterstützt wird, können Sie Shell-Skripte schreiben, um die JMX-Daten zu extrahieren und für diese Systeme in einem Format verfügbar zu machen, das nativ verstanden wird.
 
 Der Remotezugriff auf die JMX MBeans ist standardmäßig nicht aktiviert. Weitere Informationen zur Überwachung per JMX finden Sie unter [Überwachung und Verwaltung per JMX-Technologie](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
@@ -84,9 +84,9 @@ In vielen Fällen ist für das effektive Überwachen eines statistischen Werts e
 
 **JVM-Überwachung**
 
-Wie bei jedem Java-basierten Anwendungsstapel [!DNL Experience Manager] hängt von den Ressourcen ab, die über die zugrunde liegende Java Virtual Machine bereitgestellt werden. Sie können den Status von vielen dieser Ressourcen über Platform MXBeans überwachen, die per JVM verfügbar gemacht werden. Weitere Informationen zu MXBeans finden Sie unter [Verwenden von Platform MBean Server und Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Wie alle Java-basierten Anwendungsstapel ist auch [!DNL Experience Manager] von den Ressourcen abhängig, die über die zugrunde liegende Java Virtual Machine bereitgestellt werden. Sie können den Status von vielen dieser Ressourcen über Platform MXBeans überwachen, die per JVM verfügbar gemacht werden. Weitere Informationen zu MXBeans finden Sie unter [Verwenden von Platform MBean Server und Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
-Hier sind einige Baselineparameter angegeben, die Sie für JVM überwachen können:
+Hier sind einige Baseline-Parameter angegeben, die Sie für JVM überwachen können:
 
 Arbeitsspeicher
 
@@ -108,9 +108,9 @@ Threads
 
 **[!DNL Experience Manager]Monitoring**
 
-[!DNL Experience Manager] stellt über JMX auch einen Satz mit Statistiken und Vorgängen bereit. Diese Daten können dazu beitragen, die Systemintegrität zu bewerten und potenzielle Probleme zu identifizieren, bevor sie für Benutzer eine Beeinträchtigung darstellen. Weitere Informationen finden Sie in der [Dokumentation](/help/sites-administering/jmx-console.md) zu JMX MBeans.[!DNL Experience Manager]
+[!DNL Experience Manager] stellt über JMX auch einen Satz mit Statistiken und Vorgängen bereit. Diese Daten können dazu beitragen, die Systemintegrität zu bewerten und potenzielle Probleme zu identifizieren, bevor sie für Benutzende eine Beeinträchtigung darstellen. Weitere Informationen finden Sie in der [Dokumentation](/help/sites-administering/jmx-console.md) zu [!DNL Experience Manager] JMX MBeans.
 
-Im Folgenden finden Sie einige Ausgangsparameter, die Sie überwachen können [!DNL Experience Manager]:
+Hier sind einige Baseline-Parameter angegeben, die Sie für [!DNL Experience Manager] überwachen können:
 
 Replikationsagenten
 
@@ -189,11 +189,11 @@ Hier sind einige im Lieferumfang enthaltene Konsistenzprüfungen aufgeführt, di
 
 Im Rahmen der Überwachung können Sie, wenn Sie auf Probleme stoßen, einige Fehlerbehebungsaufgaben ausführen, um häufige Probleme mit [!DNL Experience Manager] Instanzen:
 
-* Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. Weitere Informationen finden Sie unter [Wartung des Repositorys](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Überprüfen `OutOfMemoryError` Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Führen Sie die Tar-Komprimierung häufig durch, falls Sie TarMK nutzen. Weitere Informationen finden Sie unter [Wartung des Repositorys](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+* Überprüfen Sie die `OutOfMemoryError`-Protokolle. Weitere Informationen finden Sie unter [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 * Prüfen Sie die Protokolle auf Verweise auf nicht indizierte Abfragen, Baumstrukturdurchläufe oder Indexdurchläufe. Dies deutet auf nicht indizierte bzw. fehlerhaft indizierte Abfragen hin. Best Practices zur Optimierung der Abfrage- und Indizierungsleistung finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Verwenden Sie die Workflow-Konsole, um sicherzustellen, dass Ihre Workflows erwartungsgemäß durchgeführt werden. Fassen Sie mehrere Workflows nach Möglichkeit zu einem einzelnen Workflow zusammen.
 * Suchen Sie über die Live-Überwachung nach weiteren Engpässen oder einem hohen Verbrauch bestimmter Ressourcen.
 * Untersuchen Sie die Ausspeisepunkte aus dem Client-Netzwerk und die Einspeisung verweist auf die [!DNL Experience Manager] Instanznetzwerk, einschließlich Dispatcher. Häufig sind dies Bereiche, in denen es zu Engpässen kommt. Weitere Informationen finden Sie unter [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md).
-* Aktualisieren Sie Ihre [!DNL Experience Manager] Server. Möglicherweise haben Sie eine unzureichende Größe [!DNL Experience Manager] -Instanz. Der Kundensupport von Adobe kann Ihnen dabei helfen, festzustellen, ob Ihr Server zu groß ist.
+* Aktualisieren Sie Ihre [!DNL Experience Manager] Server. Möglicherweise haben Sie eine unzureichende Größe [!DNL Experience Manager] -Instanz. Der Adobe Kunden-Support kann Sie dabei unterstützen, festzustellen, ob Ihr Server ggf. zu klein ausgelegt ist.
 * Untersuchen Sie die Dateien `access.log` und `error.log` auf Einträge, die zu Fehlerzeitpunkten erstellt wurden. Suchen Sie nach Mustern, die ggf. auf Anomalien im benutzerdefinierten Code hinweisen. Fügen Sie diese der Liste mit den zu überwachenden Ereignissen hinzu.

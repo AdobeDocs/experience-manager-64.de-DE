@@ -106,7 +106,7 @@ Sie klickt auf **[!UICONTROL Übernehmen]** im Antrag für die Unternehmenskarte
 Das Unternehmensportal und das Mitarbeiter-Dashboard sind AEM-Sites. Das Dashboard listet verschiedene Self-Service-Optionen auf, z. B. den Antrag für die Unternehmenskarten. Die Schaltfläche „Übernehmen“ im Antrag ist mit einem adaptiven Formular verknüpft.
 
 Das adaptive Formular für einen Antrag auf eine Unternehmenskarte ist ein einfaches, einseitiges, interaktives adaptives Formular. Es verwendet grundlegende adaptive Formularkomponenten wie Text, Telefon, numerisches Feld und numerischen Stepper. Überprüfen Sie das adaptive Formular unter:\
-`https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`.
+`https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html` möglich.
 
 **Sehen Sie selbst**
 

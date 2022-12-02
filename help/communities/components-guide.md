@@ -13,7 +13,7 @@ exl-id: 8cdd7b94-b247-4598-bb0f-36c5ec1319ec
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -164,7 +164,7 @@ Verwenden der Kommentarkomponente als Beispiel für die Autoren- oder Veröffent
    * **Typ** `String`
    * **Wert** `true`
 
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. Laden Sie die Seite &quot;Kommentare&quot;im Handbuch erneut.
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)

@@ -24,7 +24,7 @@ Wie bereits erwähnt, sind [Akzeptanztests](/help/sites-developing/planning.md) 
 * ob das Projekt die Anforderungen des Kunden erfüllt.
 * ob der Kunde das Projekt annimmt.
 
-Sie müssen vom Kunden und dem Projektmanager definiert werden. Sie haben eine besondere Bedeutung, da sie oft mit der endgültigen Rechnungsstellung zusammenhängen.
+Sie müssen vom Kunden und dem Projekt-Manager definiert werden. Sie haben eine besondere Bedeutung, da sie oft mit der endgültigen Rechnungsstellung zusammenhängen.
 
 Aus diesem Grund müssen sie:
 

@@ -13,7 +13,7 @@ exl-id: f29868e3-d05c-4898-94d1-0c77ab6b72eb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -23,13 +23,13 @@ In AEM können Sie Grafiken erstellen, die Text enthalten, der dynamisch Ihren I
 
 Hierfür können Sie auch Ihre eigenen Schriftarten hochladen und verwenden.
 
-Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https://en.wikipedia.org/wiki/Truetype)-Schriftarten.
+Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https://de.wikipedia.org/wiki/TrueType)-Schriftarten.
 
-1. Öffnen Sie die CRXDE Lite und navigieren Sie zum Ordner der Projektanwendung:
+1. Öffnen Sie CRXDE Lite und navigieren Sie zu Ihrem Projekt-Programmordner:
 
    `/apps/<your-project>/`
 
-1. under `/apps/<your-project>/` einen neuen Knoten erstellen:
+1. Erstellen Sie unter `/apps/<your-project>/` einen neuen Knoten:
 
    * **Name**: `fonts`
    * **Typ**: `sling:Folder`
@@ -40,11 +40,11 @@ Derzeit unterstützen alle Implementierungen der Java-Plattform [TrueType](https
 
    >[!NOTE]
    >
-   >Schriftdateien im Repository müssen das Suffix aufweisen `*.ttf` oder `*.TTF`.
+   >Die Schriftarten-Dateien im Repository müssen die Dateiendung `*.ttf` oder `*.TTF` aufweisen.
 
-1. Aktualisieren Sie die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Fügen Sie den Pfad zum Ordner &quot;Schriftarten&quot;hinzu. d. h. `/apps/<your-project>/fonts`.
+1. Aktualisieren Sie die [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Fügen Sie den Pfad zum Schriftarten-Ordner hinzu, d. h. `/apps/<your-project>/fonts`.
 
-1. Kehren Sie zu CRXDE Lite zurück. Sie sollten jetzt eine `.fontlist` Knoten in Ihrem Ordner, der den Namen der importierten Schriftarten enthält.
+1. Kehren Sie zu CRXDE Lite zurück. Sie sollten jetzt in Ihrem Ordner einen Knoten namens `.fontlist` sehen, der den Namen der importierten Schriftarten enthält.
 
    Diese Schriftarten stehen jetzt für die Verwendung in der Java-API zur Verfügung.
 

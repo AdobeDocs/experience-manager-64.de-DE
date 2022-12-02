@@ -144,7 +144,7 @@ Aktivieren Sie alle zulässigen Sortieroptionen:
 
 * **[!UICONTROL Als Standard festlegen]**
 Ziehen Sie den Mauszeiger nach unten, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden sollen. Der Standardwert ist 
-`Newest`.
+`Newest` möglich.
 
 * **[!UICONTROL Zeitoptionen für Analytics-Sortierung auswählen]**
 Ziehen Sie nach unten, um eines von 

@@ -13,7 +13,7 @@ exl-id: 1e0a7cab-39b9-4c90-810c-c93fb76c3869
 source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
@@ -81,17 +81,17 @@ Verwenden des Beispiels der [Tutorial zur Aktivierung](getting-started-enablemen
 
 * Knoten für untergeordnete Filter hinzufügen
 
-   * Wählen Sie die `catalog`Knoten
+   * Wählen Sie den `catalog`-Knoten aus
    * Auswählen **[!UICONTROL Knoten erstellen]**
 
       * Name: `filters`
       * Typ: `nt:unstructured`
-   * Wählen Sie **[!UICONTROL Alle speichern]** aus
+   * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 
 * Hinzufügen `se_resource-tags` -Eigenschaft auf `filters` Knoten
 
-   * Wählen Sie die `filters` Knoten
+   * Wählen Sie den `filters`-Knoten aus
    * Hinzufügen einer Eigenschaft &quot;Multi&quot;
 
       * Name: `se_resource-tags`

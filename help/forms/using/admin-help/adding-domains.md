@@ -1,5 +1,5 @@
 ---
-title: 'Hinzufügen von Domains '
+title: Hinzufügen von Domains
 seo-title: Adding domains
 description: Erfahren Sie, wie Sie ein Unternehmen, eine lokale oder Hybrid-Domain mithilfe der Einstellungen in Domain Management hinzufügen und allgmeine Gedanken zu Domain-Namen und Ids.
 seo-description: Learn how to add an enterprise, local, or hybrid domain using Domain Management settings and general considerations for domain names and IDs.

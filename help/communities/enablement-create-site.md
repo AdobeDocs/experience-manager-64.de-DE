@@ -13,7 +13,7 @@ exl-id: 5b16c775-3bd0-4a55-ba9e-f326224e8bae
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1731'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ Verwenden der [Autoreninstanz](http://localhost:4502/)
 * Anmelden mit Administratorrechten
 * Navigieren Sie zu **[!UICONTROL Communities > Sites]**
 
-* Wählen Sie **[!UICONTROL Erstellen]**
+* Wählen Sie **[!UICONTROL Erstellen]** aus
 
 ### Schritt 1: Site-Vorlage {#step-site-template}
 
@@ -105,7 +105,7 @@ Durch die Auswahl von Tag-Namespaces für die Community-Site wird außerdem die 
 Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
 * Typ &#39;tut&#39;
-* Wählen Sie nun eine der folgenden Optionen aus `Tutorial`
+* Auswählen `Tutorial`
 
 ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -158,7 +158,7 @@ Für eine Aktivierungs-Community ist es erforderlich, einen oder mehrere Communi
 `Community Enablement Managers` zur Verwaltung dieser Community-Site ausgewählt werden.
 
    * Typ &quot;s&quot;
-   * Wählen Sie nun eine der folgenden Optionen aus `Sirius Nilson`
+   * Auswählen `Sirius Nilson`
 
 * **[!UICONTROL Marketing Cloud-Organisations-ID]**
 (optional) Die Kennung für ein Adobe Analytics-Konto, die erforderlich ist, wenn [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) in der Aktivierungsberichterstellung.
@@ -169,7 +169,7 @@ Wählen Sie **[!UICONTROL Weiter]** aus.
 
 ### Schritt 4: Community-Site erstellen {#step-create-community-site}
 
-Wählen Sie **[!UICONTROL Erstellen]**.
+Wählen Sie **[!UICONTROL Erstellen]** aus.
 
 ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -276,7 +276,7 @@ Erste Schritte
    * Navigieren Sie beispielsweise zu [http://localhost:4503/crx/de](http://localhost:4503/crx/de) und melden Sie sich mit `admin/admin`
 
 1. Erweitern Sie im Projektbrowser die `/etc/map`
-1. Wählen Sie die `http` Knoten
+1. Wählen Sie den `http`-Knoten aus
 
    * Auswählen **[!UICONTROL Knoten erstellen]**
 
@@ -302,7 +302,7 @@ Erste Schritte
       * **Wert** /content/sites/enable/en.html
 
 
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. (optional) Löschen des Browser-Verlaufs
 1. Navigieren Sie zu http://localhost:4503/
 

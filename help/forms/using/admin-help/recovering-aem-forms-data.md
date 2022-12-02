@@ -13,7 +13,7 @@ exl-id: 8469b063-ea22-4706-ad02-1477d5f9d6c5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1157'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -69,15 +69,15 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
    >
    >Wenn den Ordner „/restore“ bereits vorhanden ist, sichern Sie ihn zuerst und löschen ihn dann, bevor Sie den Ordner „/backup“, der die neuesten Daten enthält, umbenennen.
 
-   * (JBoss) Umbenennen `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` an:
+   * (JBoss) Benennen Sie `[appserver root]/server/[server]/svcnative/DocumentStorage/backup` um in:
 
       `[appserver root]/server/[server]/svcnative/DocumentStorage/restore`.
 
-   * (WebLogic) Umbenennen `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` an:
+   * (WebLogic) Benennen Sie `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/backup` um in:
 
       `[appserverdomain]/[server]/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) Umbenennen `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` an:
+   * (WebSphere) Benennen Sie `[appserver root]/installedApps/adobe/[server]/DocumentStorage/backup` um in:
 
       `[appserver root]/installedApps/adobe/[server]/DocumentStorage/restore`.
 
@@ -99,7 +99,7 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 
    * **Eigenständig**
 
-      *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die hier beschrieben Schritte ausführen: [Backup and Restore.](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)
+      *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die hier beschrieben Schritte ausführen: [Backup and Restore.](https://docs.adobe.com/docs/de/crx/current/administering/backup_and_restore.html)
 
       Bei der vollständigen Wiederherstellung des Autorknotens werden auch die Daten von Forms Manager und AEM Forms Workspace wiederhergestellt.
 
@@ -108,11 +108,11 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
       Für die Wiederherstellung in einer Clusterumgebung finden Sie weitere Informationen unter [Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
 1. Löschen Sie alle temporären AEM Forms-Dateien, die im Ordner „java.io.temp“ oder im temporären Adobe-Ordner erstellt wurden.
-1. Starten AEM Formulare (siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
+1. Starten Sie AEM Forms (siehe [Starten und Stoppen von Services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern {#changing-the-gds-location-during-recovery}
 
-Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline` Ordner. Das Skript akzeptiert zwei Parameter: `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
+Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Das Skript benötigt die zwei Parameter `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
 
 >[!NOTE]
 >

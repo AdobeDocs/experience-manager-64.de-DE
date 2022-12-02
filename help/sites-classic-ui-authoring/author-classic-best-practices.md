@@ -12,7 +12,7 @@ discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
 source-wordcount: '279'
-ht-degree: 69%
+ht-degree: 88%
 
 ---
 
@@ -25,13 +25,13 @@ Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Formulare](#forms)
+* [Forms](#forms)
 
 Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finden Sie unter folgenden Themen:
 
-* [Best Practices für die Verwaltung ](/help/sites-administering/administer-best-practices.md)
+* [Best Practices für die Verwaltung](/help/sites-administering/administer-best-practices.md)
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
-* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
 Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
@@ -43,23 +43,23 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
  <tbody>
   <tr>
    <td>Dateiformate</td> 
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Best Practices für Asset-Dateiformate </a></td> 
-   <td>Beschreibt Best Practices rund um die Dateiunterstützung innerhalb von AEM Assets. </td> 
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Best Practices für Asset-Dateiformate</a></td> 
+   <td>Beschreibt Best Practices rund um die Dateiunterstützung innerhalb von AEM Assets.</td> 
   </tr>
   <tr>
    <td>Videokodierung</td> 
-   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best Practices für die Kodierung </a></td> 
+   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best Practices für die Kodierung</a></td> 
    <td>Beschreibt Best Practices rund um die Kodierung von Quellvideodateien.</td> 
   </tr>
   <tr>
    <td>Dynamic Imaging</td> 
-   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best Practices für Dynamic Imaging </a></td> 
+   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Best Practices für Dynamic Imaging</a></td> 
    <td><p>Beschreibt, wie Sie ein Bild schärfen, um optimale Ergebnisse zu erzielen, und wie Sie die Bildqualität am besten optimieren können, wenn Sie die Dynamic Media-Funktion verwenden oder mit Dynamic Media integrieren. </p> </td> 
   </tr>
   <tr>
    <td>Mehrsprachige Assets</td> 
-   <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Best Practices für die Übersetzung </a></td> 
-   <td>Beschreibt Best Practices rund um die effiziente Übersetzung von AEM-Assets.</td> 
+   <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Best Practices für die Übersetzung</a></td> 
+   <td>Beschreibt Best Practices rund um die effiziente Übersetzung von AEM Assets.</td> 
   </tr>
  </tbody>
 </table>
@@ -68,10 +68,10 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
 
 Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practices wie folgt beschrieben:
 
-Authoring: [Autorenumgebung und Tools](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Bietet einen Überblick über das Erstellen von Seiten.
+Authoring: [Autorenumgebung und Tools](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md): Bietet einen Überblick über das Erstellen von Seiten.
 
-## Formulare {#forms}
+## Forms {#forms}
 
-Adaptive Formulare: [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) - Beschreibt Best Practices zum Einrichten, Bearbeiten und Anpassen adaptiver Formulare.
+Adaptive Formulare: [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md): Beschreibt Best Practices zum Einrichten, Erstellen und Anpassen adaptiver Formulare.
 
-HTML5-Formulare: [Best Practices für die Erstellung von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) - Beschreibt Best Practices für die Arbeit am Layout und Design von HTML5-Formularen.
+HTML-Formulare5: [Best Practices bei der Entwicklung von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md): Beschreibt Best Practices bei der Arbeit am Layout und Design von HTML5-Formularen.

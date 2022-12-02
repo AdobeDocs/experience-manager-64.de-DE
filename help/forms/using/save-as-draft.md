@@ -12,7 +12,7 @@ exl-id: c21cddb3-d12d-4e1b-bd62-cf75946569be
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 81%
 
 Bei der Option „Als Entwurf speichern“ wird ein Schnappschuss einer Aufgabe oder eines Formulars zusammen mit den Daten im dazugehörigen Formular gespeichert. Sie können einen Entwurf aus einer Vorlage erstellen. Die Entwürfe werden auf dem Mobilgerät gespeichert und mit Adobe Experience Manager Forms-Server für den späteren Abruf synchronisiert.
 
-Sie können [Formular aktualisieren](/help/forms/using/working-with-form.md), [Anmerken](/help/forms/using/add-attachments.md) mit Fotos und Scribble-Notizen. Wenn Sie ein Formular aktualisieren, wird empfohlen, es als Entwurf zu speichern. Wenn Sie ein ausgefülltes Formular zu einem späteren Zeitpunkt senden möchten, kann ein gespeicherter Entwurf sehr hilfreich sein.
+Sie können das [Formular aktualisieren](/help/forms/using/working-with-form.md), [mit Fotos versehen](/help/forms/using/add-attachments.md) und Notizen machen. Wenn Sie ein Formular aktualisieren, wird empfohlen, es als Entwurf zu speichern. Wenn Sie ein ausgefülltes Formular zu einem späteren Zeitpunkt senden möchten, kann ein gespeicherter Entwurf sehr hilfreich sein.
 
-Informationen zum Aktivieren der Funktion &quot;Als Entwurf speichern&quot;für Formulare, die im Forms Portal gespeichert werden, finden Sie unter [Speichern eines HTML5-Formulars als Entwurf](/help/forms/using/saving-html5-form-draft.md).\
-Informationen zum Konfigurieren der Übermittlung adaptiver Formulare finden Sie unter [Komponente &quot;Drafts and Submissions&quot;](/help/forms/using/draft-submission-component.md). (Nicht gültig für Formulare, die mit dem AEM Forms JEE-Server synchronisiert werden.)
+Um die Funktion „Als Entwurf speichern“ für Formulare, die im Forms-Portal gespeichert sind, zu aktivieren, siehe [Speichern eines HTML5-Formulars als Entwurf](/help/forms/using/saving-html5-form-draft.md).\
+Siehe [Entwürfe und Übermittlungen-Komponente](/help/forms/using/draft-submission-component.md), um die Übermittlung von adaptiven Formularen zu konfigurieren. (Nicht gültig für Formulare, die mit dem AEM Forms auf JEE-Server synchronisiert werden.)
 
 Um einen Entwurf zu erstellen, öffnen Sie das Formular und tippen Sie auf **Als Entwurf speichern** ![save-as-draft](assets/save-as-draft.png). Geben Sie den Namen des Entwurfs an und tippen Sie auf **Speichern**. Der Entwurf wird im Ordner „Entwürfe“ gespeichert und mit dem Server synchronisiert. Er wird in dem Ordner „Outbox“ gespeichert, falls die Anwendung offline ist.
 
@@ -41,7 +41,7 @@ Sie können Entwürfe in Online- und im Offlinemodus verwerfen. Beim Verwerfen v
 
 Führen Sie die folgenden Schritte aus, um einen Entwurf zu löschen:
 
-1. Navigieren Sie in der AEM Forms-App zu **Forms.**
-1. Auswählen **Entwürfe** aus dem Dropdown-Menü neben Suchen.
-1. Ein Formular mit dem Bearbeitungssymbol ![edit-draft-app](assets/edit-draft-app.png) bezeichnet einen Entwurf. Tippen Sie auf das horizontale Auslassungszeichen neben dem Entwurf.
+1. Navigieren Sie in der AEM Forms-App zu **Formulare**.
+1. Wählen Sie **Entwürfe** aus der Dropdown-Liste neben „Suchen“. 
+1. Bei einem Formular mit dem Bearbeitungssymbol ![edit-draft-app](assets/edit-draft-app.png) handelt es sich um einen Entwurf. Tippen Sie auf das horizontale Auslassungszeichen neben dem Entwurf.
 1. Wählen Sie in den Optionen, die angezeigt werden, wenn Sie auf das horizontale Auslassungszeichen tippen, **Entwurf löschen**.

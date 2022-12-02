@@ -8,7 +8,7 @@ exl-id: 3eea4983-9dd5-4d69-ad93-3cd37a656d22
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 89%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen 
 
 Der Asset-Ablauf ist eine effektive Möglichkeit zum Durchsetzen von Lizenzanforderungen für Assets. Wenn ein veröffentlichtes Asset abläuft, wird seine Veröffentlichung aufgehoben und damit die Möglichkeit einer Lizenzverletzung unterbunden. Ein Benutzer ohne Administratorrechte kann ein abgelaufenes Asset weder bearbeiten, kopieren, verschieben, veröffentlichen noch herunterladen.
 
-Sie können den Ablaufstatus eines Assets im [!DNL Assets] in der Karten- und Listenansicht.
+Sie können den Ablaufstatus für ein Asset in der Konsole [!DNL Assets] sowohl in der Karten- als auch in der Listenansicht anzeigen.
 
 ![expi_flag_card](assets/expired_flag_card.png)
 
@@ -28,9 +28,9 @@ Sie können den Ablaufstatus eines Assets im [!DNL Assets] in der Karten- und Li
 
 ![expi_flag_list](assets/expired_flag_list.png)
 
-*Abbildung: In der Listenansicht wird die [!UICONTROL Status] -Spalte zeigt die [!UICONTROL Abgelaufen] Banner.*
+*Abbildung: In der Listenansicht zeigt die [!UICONTROL Status]-Spalte zeigt das Banner [!UICONTROL Abgelaufen] an.*
 
-Sie können den Ablaufstatus eines Assets im [!UICONTROL Timeline] in der linken Leiste.
+Sie können den Ablaufstatus eines Assets in der [!UICONTROL Zeitleiste] in der linken Leiste einsehen.
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -38,7 +38,7 @@ Sie können den Ablaufstatus eines Assets im [!UICONTROL Timeline] in der linken
 >
 >Das Ablaufdatum eines Assets wird für Benutzer in verschiedenen Zeitzonen unterschiedlich angezeigt.
 
-Sie können den Ablaufstatus von Assets auch im **[!UICONTROL Verweise]** Leiste. Hier werden der Asset-Ablaufstatus und die Beziehungen zwischen ebenenübergreifenden Assets und referenzierten Teil-Assets, Sammlungen und Projekten verwaltet.
+Sie können außerdem den Ablaufstatus von Assets in der Leiste **[!UICONTROL Verweise]** einsehen. Hier werden der Asset-Ablaufstatus und die Beziehungen zwischen ebenenübergreifenden Assets und referenzierten Teil-Assets, Sammlungen und Projekten verwaltet.
 
 1. Navigieren Sie zu dem Asset, für das Sie referenzierende Web-Seiten und ebenenübergreifende Assets anzeigen möchten.
 1. Wählen Sie das Asset aus und klicken Sie auf das [!DNL Experience Manager]-Logo.
@@ -73,11 +73,11 @@ Sie können im Suchfeld nach abgelaufenen Assets einschließlich abgelaufener Te
 
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
-1. Klicken Sie auf **[!UICONTROL Gültigkeitsstatus]** -Option, um sie zu erweitern.
+1. Klicken Sie auf die Option **[!UICONTROL Ablaufstatus]**, um sie zu erweitern.
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Auswählen **[!UICONTROL Abgelaufen]**. Die abgelaufenen Assets werden in den Suchergebnissen angezeigt.
+1. Wählen Sie **[!UICONTROL Abgelaufen]** aus. Die abgelaufenen Assets werden in den Suchergebnissen angezeigt.
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
 
@@ -99,7 +99,7 @@ Damit die [!DNL Assets]-Konsole die verweisenden ebenenübergreifenden Assets ne
 
    >[!NOTE]
    >
-   >Nur der Ersteller des Assets (die Person, die ein bestimmtes Asset in [!DNL Assets]) eine E-Mail erhält, wenn das Asset abläuft. Siehe [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md) für weitere Details zur Konfiguration von E-Mail-Benachrichtigungen insgesamt [!DNL Experience Manager] Ebene.
+   >Nur der Ersteller eines Assets (die Person, die ein bestimmtes Asset in [!DNL Assets] hochlädt) erhält eine E-Mail, wenn das Asset abläuft. Machen Sie sich damit vertraut, [wie Sie E-Mail-Benachrichtigungen konfigurieren können](/help/sites-administering/notification.md), um weitere Einzelheiten zur Konfiguration von E-Mail-Benachrichtigungen in [!DNL Experience Manager] im Allgemeinen zu erhalten.
 
 1. Geben Sie im Feld **[!UICONTROL Vorabbenachrichtigung in Sekunden]** den Zeitpunkt in Sekunden vor dem Ablauf eines Assets an, zu dem Sie über den bevorstehenden Ablauf benachrichtigt werden möchten. Wenn Sie ein Administrator oder der Ersteller des Assets sind, werden Sie vor Ablauf des Assets darüber informiert, dass das Asset nach dem angegebenen Zeitraum ablaufen wird.
 
@@ -130,9 +130,9 @@ Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhäng
 
 1. Geben Sie auf der Registerkarte Erweitert ein Ablaufdatum für das Asset im Feld **[!UICONTROL Ablaufdatum]** an.
 
-   ![Legen Sie im Feld Ablaufdatum und -uhrzeit für Assets fest.](assets/chlimage_1-159.png)
+   ![Festlegen des Ablaufdatums und der Ablaufzeit des Assets im Feld „Ablauf“](assets/chlimage_1-159.png)
 
-   *Abbildung: [!UICONTROL Erweitert] Registerkarte im Asset [!UICONTROL Eigenschaften] Seite, um den Asset-Ablauf festzulegen.*
+   *Abbildung: Registerkarte [!UICONTROL Erweitert] auf der Seite Asset-[!UICONTROL Eigenschaften], wo der Ablauf von Assets festgelegt wird.*
 
 1. Klicken Sie auf **[!UICONTROL Speichern]** und dann auf **[!UICONTROL Schließen]**, um die Asset-Konsole anzuzeigen.
 1. Der Veröffentlichungsstatus des Assets weist in der Kartenansicht im unteren Bereich der Miniatur darauf hin, dass das Asset abgelaufen ist. In der Listenansicht wird der Status des Assets als **[!UICONTROL Abgelaufen]** angegeben.

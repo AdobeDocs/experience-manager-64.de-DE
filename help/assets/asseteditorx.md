@@ -8,7 +8,7 @@ exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
@@ -30,9 +30,9 @@ Die folgenden Beispielseiten sind in Geometrixx enthalten:
 
 ### Konfigurieren der clientlib {#configuring-clientlib}
 
-[!DNL Experience Manager Assets] -Komponenten verwenden eine Erweiterung der WCM-clientlib zum Bearbeiten. Die clientlibs werden normalerweise in `init.jsp` geladen.
+[!DNL Experience Manager Assets]-Komponenten verwenden eine Erweiterung der WCM-edit-clientlib. Die clientlibs werden normalerweise in `init.jsp` geladen.
 
-Im Vergleich zum standardmäßigen Laden der clientlib (im `init.jsp`), ein [!DNL Assets] -Vorlage muss Folgendes aufweisen:
+Anders als beim Laden der Standard-clientlib (in `init.jsp` des Kerns) muss eine [!DNL Assets]-Vorlage Folgendes enthalten:
 
 * Die Vorlage muss die clientlib `cq.dam.edit` (anstelle von `cq.wcm.edit`) enthalten.
 
@@ -42,17 +42,17 @@ In den meisten Fällen sollten diese Erfordernisse erfüllt sein, wenn das vorha
 
 ### Konfigurieren von JS-Aktionen {#configuring-js-actions}
 
-Einige der [!DNL Assets] Komponenten erfordern JS-Funktionen, die in `component.js`. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
+Einige der [!DNL Assets]-Komponenten erfordern, dass JS-Funktionen in `component.js` definiert sind. Kopieren Sie diese Datei in Ihr Komponentenverzeichnis und verknüpfen Sie sie.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-Das Beispiel lädt diese JavaScript-Quelle in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+Das Beispiel lädt diese JavaScript-Quelle in `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Zusätzliche Stylesheets {#additional-style-sheets}
 
-Einige der [!DNL Assets] Komponenten verwenden die [!DNL Experience Manager] Widgets-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
+Einige der Komponenten von [!DNL Assets] verwenden die Widget-Bibliothek. [!DNL Experience Manager] Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">

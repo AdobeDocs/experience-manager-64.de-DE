@@ -1,5 +1,5 @@
 ---
-title: 'Dynamisches Füllen von Dropdownlisten '
+title: Dynamisches Füllen von Dropdownlisten
 seo-title: Dynamically populating drop-down lists
 description: Verfahren zum dynamischen Füllen von Dropdownlisten basierend auf einer Logik
 seo-description: Procedure to dynamically populate drop-down lists based on some logic

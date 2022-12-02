@@ -1,5 +1,5 @@
 ---
-title: 'Zwischenspeicherung für Output konfigurieren '
+title: Zwischenspeicherung für Output konfigurieren
 seo-title: Configuring caching for Output
 description: Der Ausgabe-Dienst speichert Formulardesigns, -fragmente und Bilder. Erfahren Sie, wie Sie die Zwischenspeicherung für die Ausgabe konfigurieren.
 seo-description: The Output service caches the form designs, fragments and images. Learn how to configure the caching for output.

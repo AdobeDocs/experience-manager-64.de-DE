@@ -1,5 +1,5 @@
 ---
-title: 'Verbessern der Performance umfangreicher Formulare durch verzögertes Laden '
+title: Verbessern der Performance umfangreicher Formulare durch verzögertes Laden
 seo-title: Improve performance of large forms with lazy loading
 description: Verzögertes Laden verbessert die Leistung von großen und komplexen adaptiven Formularen erheblich, weil Formularfragmente erst initialisiert und geladen werden, wenn sie sichtbar sind.
 seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.

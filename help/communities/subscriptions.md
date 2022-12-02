@@ -1,7 +1,7 @@
 ---
 title: Communities-Abonnements
 seo-title: Communities Subscriptions
-description: 'Community-Mitglieder interagieren per E-Mail mit anderen Mitgliedern '
+description: Community-Mitglieder interagieren per E-Mail mit anderen Mitgliedern
 seo-description: Community members interact with other members through email
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall

@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Dynamic Media – Hybridmodus
 seo-title: Configuring Dynamic Media - Hybrid mode
-description: Erfahren Sie mehr über die Konfiguration von Dynamic Media – Hybridmodus.
+description: Erfahren Sie mehr über die Konfiguration des Dynamic Media-Hybridmodus.
 seo-description: Learn how to configure Dynamic Media - Hybrid mode.
 uuid: de88f68f-4697-4ff0-8008-3ae6a4684a84
 contentOwner: Rick Brough
@@ -13,7 +13,7 @@ role: Admin,User,Developer
 source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '7780'
-ht-degree: 55%
+ht-degree: 72%
 
 ---
 
@@ -42,7 +42,7 @@ Die hybride Veröffentlichung und Bereitstellung ist eine Kernfunktion der Erwei
 
 Andere Inhalte, z. B. Dynamic Media-Viewer, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
-Wenn Sie Dynamic Media-Kunde sind, müssen Sie Hybridlieferungen als Bereitstellungsmechanismus für alle Dynamic Media-Inhalte verwenden.
+Wenn Sie Kunde von Dynamic Media sind, ist es erforderlich, dass Sie die hybride Bereitstellung als Bereitstellungsmechanismus für die gesamten Dynamic Media-Inhalte verwenden.
 
 ## Hybride Veröffentlichungsarchitektur für Videos {#hybrid-publishing-architecture-for-videos}
 
@@ -59,8 +59,8 @@ In den folgenden Konfigurationsaufgaben werden die hier angegebenen Begriffe ver
 | **Begriff** | **Dynamic Media aktiviert** | **Beschreibung** |
 |---|---|---|
 | AEM Autorenknoten | Weißes Häkchen in einem grünen Kreis | Der Autorknoten, den Sie On-Premise oder über Managed Services bereitstellen. |
-| Veröffentlichungsknoten AEM | Weißes X in einem roten Quadrat. | Der Veröffentlichungsknoten, den Sie On-Premise oder über Managed Services bereitstellen. |
-| Veröffentlichungsknoten des Bilddienstes | Weißes Häkchen in einem grünen Kreis. | Der Veröffentlichungsknoten, den Sie in Rechenzentren ausführen, die von Adobe verwaltet werden. Bezieht sich auf die Bilddienst-URL. |
+| Veröffentlichungsknoten AEM | Weißes „X“ in einem roten Quadrat. | Der Veröffentlichungsknoten, den Sie On-Premise oder über Managed Services bereitstellen. |
+| Veröffentlichungsknoten des Bilddienstes | Weißes Häkchen in einem grünen Kreis. | Der Veröffentlichungsknoten, den Sie in von Adobe verwalteten Datenzentren ausführen. Bezieht sich auf die Bilddienst-URL. |
 
 Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilder als auch für Video implementieren. Die Schritte zum Konfigurieren von Dynamic Media für Ihr jeweiliges Szenario können Sie in der folgenden Tabelle ermitteln.
 
@@ -79,9 +79,9 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
      <li>Aktivieren Sie auf dem AEM-<strong>Autorknoten</strong> die Option für <a href="#enabling-dynamic-media">dynamische Medien</a>.</li> 
      <li>Konfigurieren Sie die Bildbearbeitung unter <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services</a>.</li> 
      <li><a href="#configuring-image-replication">Konfigurieren Sie die Bildreplikation</a>.</li> 
-     <li><a href="#replicating-catalog-settings">Replizieren Sie Katalogeinstellungen</a>.</li> 
-     <li><a href="#replicating-viewer-presets">Replizieren Sie Viewer-Vorgaben</a>.</li> 
-     <li><a href="#using-default-asset-filters-for-replication">Verwenden Sie Asset-Standardfilter für die Replikation</a>.</li> 
+     <li><a href="#replicating-catalog-settings">Replizieren von Katalogeinstellungen</a>.</li> 
+     <li><a href="#replicating-viewer-presets">Replizieren von Viewer-Vorgaben</a>.</li> 
+     <li><a href="#using-default-asset-filters-for-replication">Verwenden von Asset-Standardfiltern für die Replikation</a>.</li> 
      <li><a href="#configuring-dynamic-media-image-server-settings">Konfigurieren Sie Dynamic Media-Bildserver-Einstellungen</a>.</li> 
      <li><a href="#delivering-assets">Stellen Sie Assets bereit</a>.</li> 
     </ol> </td> 
@@ -93,7 +93,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
     <ol> 
      <li>Aktivieren Sie auf dem AEM-<strong>Autorknoten</strong> die Option für <a href="#enabling-dynamic-media">dynamische Medien</a>.</li> 
      <li>Bei AEM <strong>publish</strong> Knoten, <a href="#enabling-dynamic-media">dynamische Medien aktivieren</a>.</li> 
-     <li><a href="#replicating-viewer-presets">Replizieren Sie Viewer-Vorgaben</a>.</li> 
+     <li><a href="#replicating-viewer-presets">Replizieren von Viewer-Vorgaben</a>.</li> 
      <li>Richten Sie <a href="#setting-up-asset-filters-for-imaging-in-non-production-deployments">Asset-Filter für nicht für die Produktion bestimmte Bilder</a> ein.</li> 
      <li><a href="#configuring-dynamic-media-image-server-settings">Konfigurieren Sie Dynamic Media-Bildserver-Einstellungen.</a></li> 
      <li><a href="#delivering-assets">Stellen Sie Assets bereit.</a></li> 
@@ -107,7 +107,7 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
      <li>Aktivieren Sie auf dem AEM-<strong>Autorknoten</strong> die Option für <a href="#enabling-dynamic-media">dynamische Medien</a>.</li> 
      <li>Aktivieren Sie auf dem AEM-<strong>Veröffentlichungsknoten</strong> die Option für <a href="#enabling-dynamic-media">dynamische Medien</a> (über die Veröffentlichungsinstanz werden das Video-Posterbild und die Metadaten für die Videowiedergabe bereitgestellt).</li> 
      <li>Konfigurieren Sie Videos unter <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services</a>.</li> 
-     <li><a href="#replicating-viewer-presets">Replizieren Sie Viewer-Vorgaben</a>.</li> 
+     <li><a href="#replicating-viewer-presets">Replizieren von Viewer-Vorgaben</a>.</li> 
      <li>Richten Sie <a href="#setting-up-asset-filters-for-video-only-deployments">Asset-Filter für Videos</a> ein.</li> 
      <li><a href="#delivering-assets">Stellen Sie Assets bereit.</a></li> 
     </ol> </td> 
@@ -121,8 +121,8 @@ Sie können Dynamic Media nur für Bilder, nur für Video oder sowohl für Bilde
      <li>Konfigurieren Sie Videos unter <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services</a>.</li> 
      <li>Konfigurieren Sie die Bildbearbeitung unter <a href="#configuring-dynamic-media-cloud-services">Dynamic Media Cloud Services</a>.</li> 
      <li><a href="#configuring-image-replication">Konfigurieren Sie die Bildreplikation</a>.</li> 
-     <li><a href="#replicating-catalog-settings">Replizieren Sie Katalogeinstellungen</a>.</li> 
-     <li><a href="#replicating-viewer-presets">Replizieren Sie Viewer-Vorgaben</a>.</li> 
+     <li><a href="#replicating-catalog-settings">Replizieren von Katalogeinstellungen</a>.</li> 
+     <li><a href="#replicating-viewer-presets">Replizieren von Viewer-Vorgaben</a>.</li> 
      <li><a href="#using-default-asset-filters-for-replication">Verwenden Sie Asset-Standardfilter für die Replikation.</a></li> 
      <li><a href="#configuring-dynamic-media-image-server-settings">Konfigurieren Sie Dynamic Media-Bildserver-Einstellungen.</a></li> 
      <li><a href="#delivering-assets">Stellen Sie Assets bereit.</a></li> 
@@ -169,10 +169,10 @@ Zum Aktivieren von Dynamic Media müssen Sie den Ausführungsmodus für Dynamic 
    >
    >Informationen zur Fehlerbehebung bei Problemen mit Dynamic Media finden Sie in den folgenden Protokollen im **[!UICONTROL crx-quickstart/logs/]** directory:
    >
-   >* ImageServer-&lt;portid>-&lt;yyyy>&lt;mm>&lt;dd>.log - Das ImageServer-Protokoll enthält Statistiken und analytische Informationen, die zur Analyse des Verhaltens des internen ImageServer-Prozesses verwendet werden.
+   >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log – Das ImageServer-Protokoll enthält Statistiken und Analyseinformationen, die zum Analysieren des Verhaltens des internen ImageServer-Prozesses verwendet werden.
 
-      Beispiel eines Image Server-Protokolldateinamens: `ImageServer-57346-2019-07-25.log`
-   * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - Das s7access-Protokoll zeichnet alle Anfragen auf, die über an Dynamic Media gesendet werden `/is/image` und `/is/content`.
+      Beispiel für einen Image-Server-Protokolldateinamen: `ImageServer-57346-2019-07-25.log`
+   * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - Im s7access-Protokoll werden alle Anfragen aufgezeichnet, die über `/is/image` und `/is/content` an Dynamic Media gesendet werden.
    Diese Protokolle werden nur verwendet, wenn Dynamic Media aktiviert ist. Sie sind nicht im **VollHerunterladen** -Paket, das aus der **[!UICONTROL system/console/status-Bundlelist]** Seite; Wenn Sie den Kundensupport aufrufen, wenn Sie ein Dynamic Media-Problem haben, hängen Sie beide Protokolle an das Problem an.
 
 ### Bei Installation von AEM über einen anderen Port oder Kontextpfad {#if-you-installed-aem-to-a-different-port-or-context-path}
@@ -181,7 +181,7 @@ Wenn Sie [AEM an einen Anwendungsserver](/help/sites-deploying/application-serve
 
 Falls Sie den Schnellstart für einen anderen Port oder Kontextpfad ausführen, müssen Sie die Domäne **self** ebenfalls ändern.
 
-Wenn Dynamic Media aktiviert ist, werden die statischen Miniaturansicht-Wiedergabeformate für Bild-Assets mit Dynamic Media generiert. Damit die Generierung von Miniaturansichten für Dynamic Media richtig funktioniert, muss AEM eine URL-Anforderung an sich selbst senden und sowohl die Portnummer als auch den Kontextpfad kennen.
+Wenn Dynamic Media aktiviert ist, werden die statischen Miniaturansicht-Ausgabedarstellungen für Bild-Assets mit Dynamic Media generiert. Damit die Generierung von Miniaturansichten für Dynamic Media richtig funktioniert, muss AEM eine URL-Anforderung an sich selbst senden und sowohl die Portnummer als auch den Kontextpfad kennen.
 
 In AEM:
 
@@ -209,10 +209,10 @@ Um Dynamic Media nach dem Aktivieren wieder zu deaktivieren, müssen Sie das Aus
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar
    ```
 
-1. Anfrage `http://localhost:4502/is/image`. Sie erhalten eine Nachricht, dass Dynamic Media deaktiviert wurde.
+1. Fragen Sie `http://localhost:4502/is/image` an. Sie erhalten eine Nachricht, dass Dynamic Media deaktiviert wurde.
 
    >[!NOTE]
-   Nachdem der Dynamic Media-Ausführungsmodus deaktiviert wurde, wird der Workflow-Schritt, der die `qdam.pyramid.tiff` -Ausgabeformat wird automatisch übersprungen. Hierbei werden auch die Unterstützung der dynamischen Wiedergabeformate und andere Dynamic Media-Funktionen deaktiviert.
+   Wenn der Dynamic Media-Ausführungsmodus deaktiviert wurde, wird der Workflow-Schritt zum Generieren der Ausgabedarstellungsformats `qdam.pyramid.tiff` automatisch übersprungen. Hierbei werden auch die Unterstützung der dynamischen Wiedergabeformate und andere Dynamic Media-Funktionen deaktiviert.
    Achtung: Wenn Sie den Dynamic Media-Ausführungsmodus nach der Konfiguration des AEM-Servers deaktivieren, sind alle mit diesem Ausführungsmodus hochgeladenen Elemente ungültig.
 
 ## (Optional) Migration von Dynamic Media-Vorgaben und -Konfigurationen von 6.3 auf 6.4 ohne Ausfallzeiten {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
@@ -231,14 +231,14 @@ Bei allen Upgrades, ob mit oder ohne Kompatibilitätspaket, können Sie mit dem 
 
 ## Konfigurieren der Bildreplikation {#configuring-image-replication}
 
-Die Dynamic Media-Bildbereitstellung funktioniert durch die Veröffentlichung von Bild-Assets, einschließlich Videominiaturen, aus der AEM-Autoreninstanz und die Replikation dieser Assets auf den On-Demand-Replikationsdienst der Adobe (die Replikationsdienst-URL). Assets werden dann über den On-Demand-Bildbereitstellungsdienst (die Image Service-URL) bereitgestellt.
+Die Dynamic Media-Bildbereitstellung funktioniert durch die Veröffentlichung von Bild-Assets, einschließlich Videominiaturen, aus der AEM-Autoreninstanz und die Replikation dieser Assets auf den On-Demand-Replikationsdienst der Adobe (die Replikationsdienst-URL). Die Assets werden dann über den Service für die On-Demand-Bildbereitstellung (Bildservice-URL) bereitgestellt.
 
 Führen Sie die folgenden Schritte aus:
 
-1. [Authentifizierung einrichten](#setting-up-authentication).
-1. [Konfigurieren des Replikationsagenten](#configuring-the-replication-agent).
+1. [Einrichten der Authentifizierung](#setting-up-authentication)
+1. [Konfigurieren des Replikationsagenten](#configuring-the-replication-agent)
 
-Der Replikationsagent veröffentlicht Dynamic Media-Assets wie Bilder, Videometadaten und Sets auf den von der Adobe gehosteten Bilddienst. Der Replikationsagent ist nicht standardmäßig aktiviert.
+Der Replikationsagent veröffentlicht Dynamic Media-Assets, z. B. Bilder, Videometadaten und Sätze, für den von Adobe gehosteten Bilddienst. Der Replikationsagent ist nicht standardmäßig aktiviert.
 
 Nachdem Sie den Replikationsagenten konfiguriert haben, müssen Sie [überprüfen und testen, ob die Einrichtung erfolgreich war](#validating-the-replication-agent-for-dynamic-media). In diesem Abschnitt wird die Vorgehensweise beschrieben.
 
@@ -256,7 +256,7 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 
 1. Wenden Sie sich an den Support, wenn Sie noch nicht über eine KeyStore-Datei und ein Kennwort verfügen. Dies ist Teil des Bereitstellungsvorgangs und die Schlüssel werden Ihrem Konto zugeordnet.
 1. Tippen Sie in AEM auf das AEM-Logo, um auf die globale Navigationskonsole zuzugreifen, und dann auf **[!UICONTROL Tools > Sicherheit > Benutzer]**.
-1. Navigieren Sie auf der Seite &quot;Benutzerverwaltung&quot;zur **[!UICONTROL dynamic-media-replication]** Benutzer und tippen Sie dann zum Öffnen auf .
+1. Navigieren Sie auf der Seite &quot;Benutzerverwaltung&quot;zum **[!UICONTROL dynamic-media-replication]** Benutzer und tippen Sie dann zum Öffnen auf .
 
    ![dm-replication](assets/dm-replication.png)
 
@@ -275,9 +275,9 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 
    * Im **[!UICONTROL Neuer Alias]** Geben Sie den Namen eines Alias ein, den Sie später in der Replikationskonfiguration verwenden werden. Beispiel: **Replikation**.
    * Tippen Sie auf **[!UICONTROL KeyStore-Datei]**. Navigieren Sie zur KeyStore-Datei, die Sie von Adobe, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Öffnen]**.
-   * Im **[!UICONTROL KeyStore-Dateikennwort]** Geben Sie das Kennwort für die KeyStore-Datei ein. Dies ist _not_ das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben, aber die KeyStore-Adobe für das Kennwort für die Datei ist, die in der Begrüßungs-E-Mail bereitgestellt wird, die Sie während der Bereitstellung erhalten haben. Wenden Sie sich an den Adobe-Support, wenn Sie kein Kennwort für die KeyStore-Datei erhalten haben.
-   * Geben Sie im Feld **[!UICONTROL Kennwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (dies kann dasselbe Kennwort für den privaten Schlüssel wie im vorherigen Schritt sein). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Wenden Sie sich an den Adobe-Support, wenn Sie kein Kennwort für einen privaten Schlüssel erhalten haben.
-   * Im **[!UICONTROL Alias für privaten Schlüssel]** Geben Sie den Alias für den privaten Schlüssel ein. Beispiel: `companyname-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Wenden Sie sich an den Kundensupport von Adobe , wenn Sie keinen Alias für den privaten Schlüssel erhalten haben.
+   * Geben Sie im Feld **[!UICONTROL Kennwort für KeyStore-Datei]** das Kennwort für die KeyStore-Datei ein. Dies ist _not_ das KeyStore-Kennwort, das Sie in Schritt 5 erstellt haben, aber die KeyStore-Adobe für das Kennwort für die Datei ist, die in der Begrüßungs-E-Mail bereitgestellt wird, die Sie während der Bereitstellung erhalten haben. Wenden Sie sich an dien Kunden-Support von Adobe, um Ihr Kennwort zu erhalten (falls noch nicht vorhanden).
+   * Geben Sie im Feld **[!UICONTROL Kennwort für privaten Schlüssel]** das Kennwort für den privaten Schlüssel ein (dies kann dasselbe Kennwort für den privaten Schlüssel wie im vorherigen Schritt sein). Das Kennwort für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit dem Kunden-Support von Adobe auf, falls Sie kein Kennwort für den privaten Schlüssel erhalten haben.
+   * Geben Sie im Feld **[!UICONTROL Alias für privaten Schlüssel]** den Alias für den privaten Schlüssel ein, z. B. `companyname-alias`. Der Alias für den privaten Schlüssel ist in der Begrüßungs-E-Mail von Adobe enthalten, die während der Bereitstellung an Sie gesendet wird. Nehmen Sie Kontakt mit dem Kunden-Support von Adobe auf, falls Sie keinen Alias für den privaten Schlüssel erhalten haben.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
@@ -292,11 +292,11 @@ Es ist erforderlich, dass Sie die Replikationsauthentifizierung für den Autor e
 1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf **[!UICONTROL Einstellungen]** und geben Sie Folgendes ein:
 
-   * **[!UICONTROL Aktiviert]**: Aktivieren Sie dieses Kontrollkästchen, um den Replikationsagenten zu aktivieren.
-   * **[!UICONTROL Region]** - Auf den entsprechenden Bereich setzen: Nordamerika, Europa oder Asien
-   * **[!UICONTROL Mandanten-ID]** - Dieser Wert ist der Name Ihres Unternehmens/Mandanten, das/der im Replikationsdienst veröffentlicht wird. Dieser Wert ist die Mandantenkennung, die die Adobe in der Begrüßungs-E-Mail bereitstellt, die Ihnen während der Bereitstellung gesendet wird. Wenden Sie sich an den Support von Adobe , wenn Sie diese nicht erhalten haben.
-   * **[!UICONTROL Key Store Alias]** - Dieser Wert entspricht dem Wert für &quot;Neuer Alias&quot;, der beim Generieren des Schlüssels in [Einrichten der Authentifizierung](#setting-up-authentication); Beispiel: `replication`. (Siehe Schritt 7 unter [Einrichten der Authentifizierung](#setting-up-authentication).
-   * **[!UICONTROL Key Store Password]** - Dies ist das KeyStore-Kennwort, das erstellt wurde, als Sie auf **[!UICONTROL KeyStore erstellen]**. Dieses Kennwort wird nicht von Adobe bereitgestellt. Siehe Schritt 5 von [Einrichten der Authentifizierung](#setting-up-authentication).
+   * **[!UICONTROL Aktiviert]**: Markieren Sie dieses Kontrollkästchen, um den Replikationsagenten zu aktivieren.
+   * **[!UICONTROL Region]**: Legen Sie die passende Region fest: Nordamerika, Europa oder Asien.
+   * **[!UICONTROL Mandanten-ID]**: Dieser Wert ist der Name Ihres Unternehmens bzw. Mandanten, von dem der Replikationsdienst veröffentlicht wird. Dieser Wert ist die Mandanten-ID aus der Begrüßungs-E-Mail von Adobe, die Sie während der Bereitstellung erhalten haben. Wenden Sie sich an den Support von Adobe , wenn Sie diese nicht erhalten haben.
+   * **[!UICONTROL Key Store Alias]** - Dieser Wert entspricht dem Wert für &quot;Neuer Alias&quot;, der beim Generieren des Schlüssels in [Einrichten der Authentifizierung](#setting-up-authentication); Beispiel: `replication`. (Siehe Schritt 7 unter [Einrichten der Authentifizierung](#setting-up-authentication).)
+   * **[!UICONTROL Key Store Password]** - Dies ist das KeyStore-Kennwort, das erstellt wurde, als Sie auf **[!UICONTROL KeyStore erstellen]**. Dieses Kennwort wird nicht von Adobe bereitgestellt. Siehe Schritt 5 von [Einrichten der Authentifizierung](#setting-up-authentication).
 
    In der folgenden Abbildung ist der Replikationsagent mit Beispieldaten dargestellt:
 
@@ -334,7 +334,7 @@ Sie können die Überprüfung auch durchführen, indem Sie einen der folgenden S
 
 Hier sind einige Probleme, die beim Einrichten der Authentifizierung auftreten können, und die dazugehörigen Lösungen angegeben. Achten Sie darauf, dass Sie die Replikation eingerichtet haben, bevor Sie diese Angaben prüfen.
 
-#### Problem: HTTP-Statuscode 401 mit der Meldung „Authorization Required“ (Autorisierung erforderlich) {#problem-http-status-code-with-message-authorization-required}
+#### Problem: HTTP-Status-Code 401 mit der Meldung „Authorization Required“ (Autorisierung erforderlich) {#problem-http-status-code-with-message-authorization-required}
 
 Dieses Problem kann auftreten, wenn der KeyStore für den Benutzer `dynamic-media-replication` nicht eingerichtet wurde.
 
@@ -472,11 +472,11 @@ Gehen Sie wie folgt vor, um die Konfiguration zu testen:
 1. Laden Sie ein Bild-Asset hoch. (Tippen Sie in Assets auf **[!UICONTROL Erstellen > Dateien]** und wählen Sie die Datei aus.)
 1. Warten Sie, bis der Workflow abgeschlossen ist.
 1. Veröffentlichen Sie das Bild-Asset. (Wählen Sie das Asset aus und tippen Sie auf **[!UICONTROL Quick Publish]**.)
-1. Navigieren Sie zu den Ausgabeformaten für dieses Bild, indem Sie das Bild öffnen und auf **[!UICONTROL Ausgabeformate]**.
+1. Gehen Sie zu den Ausgabedarstellungen für dieses Bild, indem Sie das Bild öffnen und auf **[!UICONTROL Ausgabedarstellungen]** klicken bzw. tippen.
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
-1. Wählen Sie eine beliebige dynamische Wiedergabe aus.
+1. Wählen Sie eine beliebige dynamische Ausgabedarstellung aus.
 1. Tippen **[!UICONTROL URL]** , um die URL für dieses Asset abzurufen.
 1. Navigieren Sie zur ausgewählten URL und überprüfen Sie, ob sich das Bild wie erwartet verhält.
 
@@ -489,7 +489,7 @@ Der Dynamic Media Cloud Service bietet Unterstützung für Cloud-Services, z. B
 Im Rahmen der Konfiguration müssen Sie eine Registrierungs-ID, Videodienst-URL, Bilddienst-URL und Replikationsdienst-URL eingeben und die Authentifizierung einrichten. Sie sollten diese gesamten Informationen im Rahmen des Prozesses für die Kontobereitstellung erhalten haben. Wenn Sie diese Informationen nicht erhalten haben, wenden Sie sich an Ihren Adobe Experience Manager-Administrator oder an den technischen Support der Adobe, um die Informationen zu erhalten.
 
 >[!NOTE]
-Bevor Sie Dynamic Media-Cloud Services einrichten, stellen Sie sicher, dass Ihre Veröffentlichungsinstanz eingerichtet ist. Außerdem müssen Sie die Replikation eingerichtet haben, bevor Sie Dynamic Media-Cloud Services konfigurieren.
+Stellen Sie vor dem Einrichten des Dynamic Media Cloud Service sicher, dass Sie Ihre Veröffentlichungsinstanz eingerichtet haben. Außerdem müssen Sie die Replikation einrichten, bevor Sie Dynamic Media Cloud Service konfigurieren.
 
 **So konfigurieren Sie Cloud-Services für Dynamic Media**:
 
@@ -563,7 +563,7 @@ So überprüfen Sie die [!DNL Video Analytics] über das JCR vorgestellt werden,
 
       `http://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
-      Um die Vorgabe auf Veröffentlichungs-Servern zu überprüfen, können Sie eine ähnliche direkte Anfrage an den Veröffentlichungsserver richten. Die Antworten sind auf dem Autor- und Veröffentlichungsknoten identisch. Die Antwort sieht in etwa wie folgt aus:
+      Um die Vorgabe auf Veröffentlichungsservern zu überprüfen, können Sie eine ähnliche direkte Anfrage an den Veröffentlichungsserver richten. Die Antworten sind auf dem Autor- und Veröffentlichungsknoten identisch. Die Antwort sieht ähnlich wie die folgende aus:
 
       ```
       marketingCloudOrgId=0FC4E86B573F99CC7F000101
@@ -625,7 +625,7 @@ Sie müssen Ihre eigenen Standardeinstellungen für den Katalog im Rahmen der Ei
 
 ## Replizieren von Viewer-Vorgaben {#replicating-viewer-presets}
 
-Um ein Asset mit einer Viewer-Vorgabe bereitzustellen, müssen Sie die Viewer-Vorgabe replizieren/veröffentlichen. (Alle Viewer-Vorgaben müssen aktiviert sein. _und_ repliziert, um die URL oder den Einbettungscode für ein Asset zu erhalten.) Weitere Informationen finden Sie unter [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
+Zum Bereitstellen eines Assets mit einer Viewer-Vorgabe müssen Sie die Viewer-Vorgabe replizieren bzw. veröffentlichen. (Alle Viewer-Vorgaben müssen aktiviert sein. _und_ repliziert, um die URL oder den Einbettungscode für ein Asset zu erhalten.) Weitere Informationen finden Sie unter [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 
 >[!NOTE]
 Standardmäßig zeigt das System bei Auswahl von **[!UICONTROL Ausgabeformate]** und eine Vielzahl von Viewer-Vorgaben, wenn Sie **[!UICONTROL Viewer]** in der Detailansicht des Assets. Sie können die angezeigte Anzahl erhöhen oder verringern. Siehe [Erhöhen der Anzahl angezeigter Bildvorgaben](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) oder [Erhöhen der Anzahl angezeigter Viewer-Vorgaben](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
@@ -634,9 +634,9 @@ Standardmäßig zeigt das System bei Auswahl von **[!UICONTROL Ausgabeformate]**
 
 In Nicht-Dynamic Media-Implementierungen replizieren Sie _all_ Assets (sowohl Bilder als auch Videos) aus Ihrer AEM Autorenumgebung in den Veröffentlichungsknoten AEM. Dieser Workflow ist erforderlich, da die AEM Veröffentlichungsserver auch die Assets bereitstellen.
 
-Da Assets jedoch in Dynamic Media-Implementierungen über die Cloud bereitgestellt werden, müssen diese Assets nicht auf Veröffentlichungsknoten repliziert AEM. Ein solcher &quot;hybrider Publishing&quot;-Workflow vermeidet zusätzliche Speicherkosten und längere Verarbeitungszeiten für die Replikation von Assets. Andere Inhalte, z. B. Dynamic Media-Anzeigeprogramme, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
+Da Assets jedoch in Dynamic Media-Implementierungen über die Cloud bereitgestellt werden, müssen diese Assets nicht auf Veröffentlichungsknoten repliziert AEM. Bei einem Workflow für die „hybride Veröffentlichung“ dieser Art werden zusätzliche Speicherkosten und längere Verarbeitungsdauern für das Replizieren der Assets vermieden. Andere Inhalte, z. B. Dynamic Media-Anzeigeprogramme, Seiten von Websites und statischer Inhalt, werden weiterhin über die AEM-Veröffentlichungsknoten bereitgestellt.
 
-Neben der Replikation der Assets werden auch die folgenden Nicht-Assets repliziert:
+Zusätzlich zu den Assets werden auch die folgenden anderen Elemente repliziert:
 
 * Dynamic Media-Bereitstellungskonfiguration: `/conf/global/settings/dam/dm/imageserver/configuration/jcr:content/settings`
 * Bildvorgaben: `/conf/global/settings/dam/dm/presets/macros`
@@ -660,30 +660,30 @@ Wenn Sie Dynamic Media für 1) Bildbearbeitung in der Produktion verwenden _oder
    <td>Dynamic Media-Bildbereitstellung</td> 
    <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td> 
    <td><p>Beginnt mit <strong>image/</strong></p> <p>Enthält <strong>application/</strong> und endet mit <strong>set</strong>.</p> </td> 
-   <td>Die standardmäßigen "filter-images"(für einzelne Bild-Assets, einschließlich interaktiver Bilder) und "filter-sets"(für Rotationssets, Bildsets, gemischte Mediensets und Karussellsets) werden: 
+   <td>Die vorkonfigurierten „filter-images“ (gilt für einzelne Bilder, einschließlich interaktiver Bilder) und „filter-sets“ (gilt für Rotationssets, Bildsets, gemischte Medien-Sets und Karussellsets) werden: 
     <ul> 
-     <li>PTIFF-Bilder und Metadaten für die Replikation einschließen (Beliebige Wiedergabe, die mit <strong>cqdam</strong>).</li> 
-     <li>Das Originalbild und statische Bildausgabeformate werden von der Replikation ausgeschlossen.</li> 
+     <li>PTIFF-Bilder und Metadaten für die Replikation enthalten (Beliebige Ausgabedarstellung, die mit <strong>cqdam</strong> beginnt).</li> 
+     <li>Das Originalbild und statische Bildausgabefdarstellungen werden von der Replikation ausgeschlossen.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>Dynamic Media-Videobereitstellung</td> 
    <td>filter-video</td> 
    <td>Beginnt mit <strong>video/</strong></td> 
-   <td>Das vordefinierte "filter-video"wird: 
+   <td>Das vorkonfigurierte „filter-video“ wird: 
     <ul> 
-     <li>Schließen Sie Proxy-Videoausgabeformate, Videominiatur-/Posterbild, Metadaten (sowohl bei übergeordneten Video- als auch Videoausgabeformaten) für die Replikation ein (Beliebige Wiedergabe, die mit beginnt <strong>cqdam</strong>).</li> 
-     <li>Das Originalvideo und statische Miniaturwiedergaben werden von der Replikation ausgeschlossen.<br /> <br /> <strong>Hinweis:</strong> Die Proxy-Videoausgabedarstellungen enthalten keine Binärdateien, sondern sind nur Knoteneigenschaften. Dies hat daher keine Auswirkung auf die Repositorygröße des Herausgebers.</li> 
+     <li>Proxy-Videoausgabedarstellungen, Videominiatur-/Posterbild, Metadaten (sowohl bei übergeordneten Video- als auch Videoausgabedarstellungen) für die Replikation enthalten (Beliebige Ausgabedarstellung, die mit <strong>cqdam</strong> beginnt).</li> 
+     <li>Das Originalvideo und statische Miniaturausgabedarstellungen werden von der Replikation ausgeschlossen.<br /> <br /> <strong>Hinweis:</strong> Die Proxy-Videoausgabedarstellungen enthalten keine Binärdateien, sondern es handelt sich lediglich um Knoteneigenschaften. Dies hat daher keine Auswirkung auf die Repositorygröße des Herausgebers.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>Dynamic Media Classic-Integration</td> 
    <td><p>filter-images</p> <p>filter-sets</p> <p>filter-video</p> </td> 
    <td><p>Beginnt mit <strong>image/</strong></p> <p>Enthält <strong>application/</strong> und endet mit <strong>set</strong>.</p> <p>Beginnt mit <strong>video/</strong></p> </td> 
-   <td><p>Sie konfigurieren den Transport-URI so, dass er auf Ihren AEM Veröffentlichungsserver verweist, anstatt auf die Adobe Dynamic Media Cloud-Replikationsdienst-URL. Durch das Einrichten dieses Filters können Assets mit Dynamic Media Classic bereitgestellt werden, anstatt mit der AEM-Veröffentlichungsinstanz.</p> <p>Die vordefinierten "filter-images", "filter-sets"und "filter-video"werden:</p> 
+   <td><p>Sie konfigurieren den Transport-URI so, dass er auf Ihren AEM Veröffentlichungsserver verweist, anstatt auf die Adobe Dynamic Media Cloud-Replikationsdienst-URL. Durch das Einrichten dieses Filters können Assets mit Dynamic Media Classic bereitgestellt werden, anstatt mit der AEM-Veröffentlichungsinstanz.</p> <p>Die vorkonfigurierten „filter-images“, „filter-sets“ und „filter-video“ werden:</p> 
     <ul> 
-     <li>Fügen Sie PTIFF-Bilder, Proxy-Videoausgabeformate und Metadaten für die Replikation hinzu. Da diese Daten in JCR nicht vorhanden sind, werden keine Schritte ausgeführt (bei Durchführung der AEM/Dynamic Media Classic-Integration).</li> 
-     <li>Das Originalbild, statische Bildwiedergaben, das Originalvideo und statische Miniaturwiedergaben werden aus der Replikation ausgeschlossen. Stattdessen werden von Dynamic Media Classic Bild- und Video-Assets bereitgestellt.</li> 
+     <li>PTIFF-Bilder, Proxy-Videoausgabedarstellungen und Metadaten für die Replikation enthalten. Da diese Daten in JCR nicht vorhanden sind, werden keine Schritte ausgeführt (bei Durchführung der AEM/Dynamic Media Classic-Integration).</li> 
+     <li>Das Originalbild, statische Bildausgabedarstellungen, das Originalvideo und statische Miniaturausgabedarstellungen werden aus der Replikation ausgeschlossen. Stattdessen werden von Dynamic Media Classic Bild- und Video-Assets bereitgestellt.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -699,12 +699,12 @@ Wenn Sie Dynamic Media ausschließlich für Videos nutzen, können Sie mit diese
 1. Tippen Sie in AEM auf das AEM -Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie auf **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten für Autor]**.
 1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish)]**.
 1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
-1. Im **[!UICONTROL Agenteneinstellungen]** im Dialogfeld [!UICONTROL Einstellungen] Registerkarte, aktivieren **[!UICONTROL Aktiviert]** , um den Agenten zu aktivieren.
+1. Markieren Sie im Dialogfeld **[!UICONTROL Agenteneinstellungen]** auf der Registerkarte [!UICONTROL Einstellungen] die Option **[!UICONTROL Aktiviert]**, um den Agenten zu aktivieren.
 1. Tippen Sie auf **[!UICONTROL OK]**.
 1. Tippen Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite]**.
-1. Navigieren Sie in der linken Ordnerstruktur zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
+1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`.
 1. Suchen Sie nach [!UICONTROL filter-video], klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren]**.
-1. Navigieren Sie in der linken Ordnerstruktur zu `/etc/replication/agents.author/publish`
+1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/publish`.
 1. Suchen Sie nach [!UICONTROL jcr:content], klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]**.
 
 So wird für die AEM-Veröffentlichungsinstanz eingerichtet, dass das Video-Posterbild sowie die für die Wiedergabe erforderlichen Videometadaten bereitgestellt werden, während das Video selbst vom Dynamic Media Cloud Service bereitgestellt wird. Mit dem Filter werden auch das Originalvideo und statische Miniaturwiedergaben, die auf der Veröffentlichungsinstanz nicht benötigt werden, von der Replikation ausgeschlossen.
@@ -716,16 +716,16 @@ Wenn Sie Dynamic Media für die Bilddarstellung in Bereitstellungen außerhalb d
 1. Tippen Sie in AEM auf das AEM -Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie auf **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten für Autor]**.
 1. Tippen Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL Standardagent (Publish)]**.
 1. Tippen Sie auf **[!UICONTROL Bearbeiten]**.
-1. Im **[!UICONTROL Agenteneinstellungen]** im Dialogfeld **[!UICONTROL Einstellungen]** Registerkarte, aktivieren **[!UICONTROL Aktiviert]** , um den Agenten zu aktivieren.
+1. Markieren Sie im Dialogfeld **[!UICONTROL Agenteneinstellungen]** auf der Registerkarte **[!UICONTROL Einstellungen]** die Option **[!UICONTROL Aktiviert]**, um den Agenten zu aktivieren.
 1. Tippen Sie auf **[!UICONTROL OK]**.
 1. Tippen Sie in AEM auf **[!UICONTROL Tools > Allgemein > CRXDE Lite]**.
-1. Navigieren Sie in der linken Ordnerstruktur zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
+1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`.
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
 1. Suchen Sie nach **[!UICONTROL filter-images]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Kopieren]**.
-1. Navigieren Sie in der linken Ordnerstruktur zu `/etc/replication/agents.author/publish`
-1. Suchen **[!UICONTROL jcr:content]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Erstellen > Knoten erstellen]**. Geben Sie den Namen ein `damRenditionFilters` des Typs `nt:unstructured`.
+1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/publish`.
+1. Suchen **[!UICONTROL jcr:content]**, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Erstellen > Knoten erstellen]**. Geben Sie den Namen `damRenditionFilters` des Typs `nt:unstructured` ein.
 1. Suchen [!UICONTROL `damRenditionFilters`], klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL Einfügen]**.
 
 Die AEM-Veröffentlichungsinstanz für die Bereitstellung der Bilder in Ihrer Umgebung, die nicht für die Produktion bestimmt ist, wird eingerichtet. Mit dem Filter werden auch das Originalbild und statische Wiedergaben, die auf der Veröffentlichungsinstanz nicht benötigt werden, von der Replikation ausgeschlossen.
@@ -741,7 +741,7 @@ Wenn Sie mehr als einen Filter auf einem Server verwenden, z. B. einen Filter f�
 Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupassen:
 
 1. Tippen Sie in AEM auf das AEM -Logo, um auf die globale Navigationskonsole zuzugreifen, und tippen Sie auf **[!UICONTROL Tools > Allgemein > CRXDE Lite]**.
-1. Navigieren Sie in der linken Ordnerstruktur zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` , um die Filter zu überprüfen.
+1. Navigieren Sie in der Ordnerstruktur auf der linken Seite zu `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`, um die Filter anzuzeigen.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
@@ -753,13 +753,13 @@ Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupasse
 
    ![chlimage_1-512](assets/chlimage_1-512.png)
 
-   Beachten Sie, dass `dc:format` für das Asset `Fiji Red.jpg` is `image/jpeg`.
+   Beachten Sie Folgendes: Das `dc:format` für das Asset `Fiji Red.jpg` lautet `image/jpeg`.
 
-   Damit dieser Filter für alle Bilder gilt, setzen Sie den Wert auf `image/*` where `*` ist ein regulärer Ausdruck, der auf alle Bilder beliebigen Formats angewendet wird.
+   Damit dieser Filter für alle Bilder gilt, müssen Sie den Wert unabhängig vom Format auf `image/*` festlegen. Hierbei ist `*`* ein regulärer Ausdruck, der auf alle Bilder beliebigen Formats angewendet wird.
 
-   Damit der Filter nur auf Bilder vom Typ JPEG angewendet werden kann, geben Sie den Wert `image/jpeg`.
+   Wenn der Filter nur für Bilder vom Typ JPEG gelten soll, geben Sie den Wert `image/jpeg` ein.
 
-1. Definieren Sie, welche Ausgabedarstellungen Sie in die Replikation einbeziehen oder davon ausschließen möchten.
+1. Definieren Sie, welche Ausgabedarstellungen Sie in die Replikation einbeziehen bzw. davon ausschließen möchten.
 
    Sie können die folgenden Zeichen verwenden, um einen Filtervorgang für die Replikation durchzuführen:
 
@@ -775,7 +775,7 @@ Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupasse
   </tr> 
   <tr> 
    <td>+</td> 
-   <td>Umfasst Assets für die Replikation.</td> 
+   <td>Schließt Assets in die Replikation ein.</td> 
   </tr> 
   <tr> 
    <td>-</td> 
@@ -786,13 +786,13 @@ Gehen Sie wie folgt vor, um Asset-Filter für die Replikation optional anzupasse
 
 Navigieren Sie zu `content/dam/<locate_your_asset>/jcr:content/renditions`.
 
-Die folgende Grafik ist ein Beispiel für die Wiedergabeformate eines Assets.
+Die folgende Grafik ist ein Beispiel für die Ausgabedarstellungen eines Assets.
 
 ![chlimage_1-513](assets/chlimage_1-513.png)
 
-Wenn Sie anhand des obigen Beispiels nur das PTIFF (Pyramid TIFF) replizieren möchten, geben Sie `+cqdam,*` , das alle Ausgabedarstellungen enthält, die mit `cqdam`. Im Beispiel lautet diese Ausgabedarstellung `cqdam.pyramid.tiff`.
+Wenn Sie unter Verwendung des obigen Beispiels nur PTIFF (Pyramid TIFF) replizieren möchten, geben Sie `+cqdam,*` ein, um alle Ausgabedarstellungen einzubeziehen, die mit `cqdam` beginnen. Im Beispiel lautet diese Ausgabedarstellung `cqdam.pyramid.tiff`.
 
-Wenn Sie nur das Original replizieren möchten, geben Sie `+original`.
+Wenn Sie nur das Original replizieren möchten, geben Sie `+original` ein.
 
 ## Konfigurieren von Dynamic Media-Bildserver-Einstellungen {#configuring-dynamic-media-image-server-settings}
 
@@ -808,7 +808,7 @@ Dynamic Media funktioniert vorkonfiguriert [nach der Aktivierung](#enabling-dyna
 1. Tippen Sie in der linken oberen Ecke von AEM auf **[!UICONTROL Adobe Experience Manager]** , um auf die globale Navigationskonsole zuzugreifen, und tippen Sie dann auf **[!UICONTROL Tools > Vorgänge > Web-Konsole]**.
 1. Im **[!UICONTROL Konfiguration der Adobe Experience Manager-Web-Konsole]** Seite, tippen Sie auf **[!UICONTROL OSGi > Konfiguration]** , um alle Pakete aufzulisten, die derzeit in AEM ausgeführt werden.
 
-   Die Dynamic Media-Bereitstellungsserver befinden sich unter den folgenden Namen in der Liste:
+   Die Dynamic Media-Server für die Bereitstellung sind in der Liste unter den folgenden Namen angegeben:
 
    * **[!UICONTROL Adobe CQ Scene7 ImageServer]**
    * **[!UICONTROL Adobe CQ Scene7 PlatformServer]**
@@ -829,17 +829,17 @@ Dynamic Media funktioniert vorkonfiguriert [nach der Aktivierung](#enabling-dyna
   <tr> 
    <td>TcpPort.name</td> 
    <td><code><em>empty</em></code></td> 
-   <td>Anschlussnummer für die Kommunikation mit dem ImageServer-Prozess. Der freie Port wird standardmäßig automatisch erkannt.</td> 
+   <td>Portnummer für die Kommunikation mit dem ImageServer-Prozess. Der freie Port wird standardmäßig automatisch erkannt.</td> 
   </tr> 
   <tr> 
    <td>AllowRemoteAccess.name</td> 
    <td><code><em>empty</em></code></td> 
-   <td><p>Der Remotezugriff auf den ImageServer-Prozess wird zugelassen bzw. nicht zugelassen. Wenn "false", überwacht der Bildserver nur den localhost.</p> <p>In Externalizer-Standardeinstellungen, die auf den „localhost“ verweisen, muss die tatsächliche Domäne oder IP-Adresse der jeweiligen VM-Instanz angegeben werden. Der Grund dafür ist, dass der localhost möglicherweise auf das übergeordnete System der VM verweist.</p> <p>Domänen oder IP-Adressen für die VM müssen ggf. über einen Hostdateieintrag verfügen, damit die Auflösung selbst durchgeführt werden kann.</p> </td> 
+   <td><p>Der Remotezugriff auf den ImageServer-Prozess wird zugelassen bzw. nicht zugelassen. Bei „false“ lauscht der Bildserver nur über „localhost“.</p> <p>In Externalizer-Standardeinstellungen, die auf den „localhost“ verweisen, muss die tatsächliche Domäne oder IP-Adresse der jeweiligen VM-Instanz angegeben werden. Der Grund dafür ist, dass der localhost möglicherweise auf das übergeordnete System der VM verweist.</p> <p>Domänen oder IP-Adressen für die VM müssen ggf. über einen Hostdateieintrag verfügen, damit die Auflösung selbst durchgeführt werden kann.</p> </td> 
   </tr> 
   <tr> 
    <td>MaxRenderRgnPixels</td> 
    <td>16 MPixel</td> 
-   <td>Maximale Größe in Megapixeln, die gerendert werden.</td> 
+   <td>Maximale Größe in Megapixel, die gerendert wird.</td> 
   </tr> 
   <tr> 
    <td>MaxMessageSize</td> 
@@ -871,7 +871,7 @@ Dynamic Media funktioniert vorkonfiguriert [nach der Aktivierung](#enabling-dyna
    | **[!UICONTROL Cache enabled]** | Aktiviert | Gibt an, ob der Cache für Antworten aktiviert ist.. |
    | **[!UICONTROL Cache roots]** | cache | Mindestens ein Pfad zu Ordnern des Caches für Antworten. Relative Pfade werden für den internen s7imaging-Bundle-Ordner aufgelöst. |
    | **[!UICONTROL Cache Max Size]** | 200000000 | Gibt die maximale Größe des Caches für Antworten in Byte an. |
-   | **[!UICONTROL Cache Max Entries]** | 100000 | Maximale Anzahl der im Cache zulässigen Einträge. |
+   | **[!UICONTROL Cache Max Entries]** | 100000 | Gibt die maximale Anzahl von Einträgen an, die im Cache zulässig ist. |
 
 ### Standardeinstellungen des Manifests {#default-manifest-settings}
 
@@ -903,37 +903,37 @@ Tabelle mit Manifesteinstellungen und deren Standardwerte:
   <tr> 
    <td>bkgcolor</td> 
    <td>FFFFFF</td> 
-   <td><p>Standard-Hintergrundfarbe. RGB-Wert, mit dem alle Bereiche des Antwortbildes gefüllt werden, die keine Bilddaten enthalten.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html">BkgColor</a> in der Image-Serving-API.</p> </td> 
+   <td><p>Standard-Hintergrundfarbe. RGB-Wert, mit dem alle Bereiche des Antwortbildes gefüllt werden, die keine Bilddaten enthalten.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html?lang=de">BkgColor</a> in der Image-Serving-API.</p> </td> 
   </tr> 
   <tr> 
    <td>defaultpix</td> 
    <td>300,300</td> 
-   <td><p>Standard-Ansichtsgröße. Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn bei der Anfrage die Größe nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.</p> <p>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. Gilt nicht für verschachtelte oder eingebettete Anforderungen.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html">DefaultPix</a> in der Image-Serving-API.</p> <p>Normalerweise verwenden Sie aber eine Viewer-Vorgabe oder Bildvorgabe, um das Asset bereitzustellen. „defaultpix“ gilt nur für ein Asset, für das keine Viewer-Vorgabe oder Bildvorgabe verwendet wird.</p> </td> 
+   <td><p>Standard-Ansichtsgröße. Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn bei der Anfrage die Größe nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.</p> <p>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. Gilt nicht für verschachtelte oder eingebettete Anforderungen.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html?lang=de">DefaultPix</a> in der Image-Serving-API.</p> <p>Normalerweise verwenden Sie aber eine Viewer-Vorgabe oder Bildvorgabe, um das Asset bereitzustellen. „defaultpix“ gilt nur für ein Asset, für das keine Viewer-Vorgabe oder Bildvorgabe verwendet wird.</p> </td> 
   </tr> 
   <tr> 
    <td>defaultthumbpix</td> 
    <td>100,100</td> 
-   <td><p>Standardgröße für Miniaturansichten. Wird anstelle von „attribute::DefaultPix“ für Miniaturanforderungen (req=tmb) verwendet.</p> <p>Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn in einer Miniaturanforderung (req=tmb) die Anzeigegröße nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.</p> <p>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. </p> <p>Gilt nicht für verschachtelte oder eingebettete Anforderungen.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">DefaultThumbPix</a> in der Image-Serving-API. </p> </td> 
+   <td><p>Standardgröße für Miniaturansichten. Wird anstelle von „attribute::DefaultPix“ für Miniaturanforderungen (req=tmb) verwendet.</p> <p>Der Server beschränkt die Größe der Antwortbilder auf diese Breite und Höhe, wenn in einer Miniaturanforderung (req=tmb) die Anzeigegröße nicht explizit durch die Werte wid=, hei= oder scl= festgelegt wird.</p> <p>Wird als zwei ganze Zahlen angegeben (0 oder höher), die durch ein Komma getrennt sind. Breite und Höhe in Pixel. Einer oder beide Werte können auf 0 festgelegt werden, um die Einschränkung aufzuheben. </p> <p>Gilt nicht für verschachtelte oder eingebettete Anforderungen.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html?lang=de">DefaultThumbPix</a> in der Image-Serving-API. </p> </td> 
   </tr> 
   <tr> 
    <td>Ablauf</td> 
    <td>36000000</td> 
-   <td><p>Standardeinstellung für Time-To-Live des Client-Caches. Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.</p> <p>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten. Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert. Dieser Wert ist standardmäßig auf 10 Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an den Support , wenn Sie den Cache früher löschen müssen.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Expiration</a> in der Image-Serving-API.</p> </td> 
+   <td><p>Standardeinstellung für Time-To-Live des Client-Caches. Bietet ein standardmäßiges Ablaufintervall für den Fall, dass ein bestimmter Katalogdatensatz keinen gültigen Wert für „catalog::Expiration“ (also den Ablauf des Katalogs) aufweist.</p> <p>Reelle Zahl, 0 oder höher. Anzahl von Millisekunden bis zum Ablauf seit der Generierung der Daten. Geben Sie „0“ an, wenn das Antwortbild immer sofort ablaufen soll. Hiermit wird das Client-Caching praktisch deaktiviert. Dieser Wert ist standardmäßig auf zehn Stunden festgelegt. Dies bedeutet, dass es bei der Veröffentlichung eines neuen Bildes zehn Stunden dauert, bis das alte Bild aus dem Cache des Benutzers entfernt wird. Wenden Sie sich an den Kunden-Support, wenn der Cache früher geleert werden soll.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html?lang=de">Expiration</a> in der Image-Serving-API.</p> </td> 
   </tr> 
   <tr> 
    <td>jpegquality</td> 
    <td>80</td> 
-   <td><p>Standardattribute für JPEG-Verschlüsselung. Legt die Standardattribute von JPEG-Antwortbildern fest.</p> <p>Ganze Zahl und Flag, getrennt durch ein Komma. Der erste Wert liegt im Bereich 1 bis 100 und definiert die Qualität. Der zweite Wert kann „0“ für normales Verhalten oder „1“ sein, um anzugeben, dass das normalerweise von der JPEG-Kodierung genutzte RGB-Farbart-Downsampling deaktiviert werden soll.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">JpegQuality</a> in der Image-Serving-API.</p> </td> 
+   <td><p>Standardattribute für JPEG-Verschlüsselung. Legt die Standardattribute von JPEG-Antwortbildern fest.</p> <p>Ganze Zahl und Flag, getrennt durch ein Komma. Der erste Wert liegt im Bereich 1 bis 100 und definiert die Qualität. Der zweite Wert kann „0“ für normales Verhalten oder „1“ sein, um anzugeben, dass das normalerweise von der JPEG-Kodierung genutzte RGB-Farbart-Downsampling deaktiviert werden soll.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html?lang=de">JpegQuality</a> in der Image-Serving-API.</p> </td> 
   </tr> 
   <tr> 
    <td>maxpix</td> 
    <td>2000,2000</td> 
-   <td><p>Maximale Größe des Antwortbildes. Maximale Breite und Höhe des Antwortbildes, das an den Client zurückgegeben wird.</p> <p>Der Server gibt einen Fehler zurück, wenn eine Anfrage ein Antwortbild verursacht, dessen Breite oder Höhe größer als das Attribut::MaxPix ist.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html">MaxPix</a> in der Image-Serving-API.</p> </td> 
+   <td><p>Maximale Größe des Antwortbildes. Maximale Breite und Höhe des Antwortbildes, das an den Client zurückgegeben wird.</p> <p>Der Server gibt einen Fehler zurück, wenn eine Anfrage zu einem Antwortbild führt, dessen Breite oder Höhe den Wert von „attribute::MaxPix“ übersteigt.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=de">MaxPix</a> in der Image-Serving-API.</p> </td> 
   </tr> 
   <tr> 
    <td>resmode</td> 
    <td>SCHARF2</td> 
-   <td><p>Standard-Resamplingmodus. Gibt die standardmäßigen Resampling- und Interpolationsattribute an, die für die Skalierung von Bilddaten verwendet werden sollen.</p> <p>Wird verwendet, wenn „resMode=“ in einer Anforderung nicht angegeben wird.</p> <p>Zulässige Werte sind BILIN, BICUB oder SHARP2.</p> <p>Enum. Festlegung für Interpolationsmodus: 2 für BILIN, 3 für BICUB oder 4 für SCHARF2. Verwenden Sie für die besten Ergebnisse die Zeichenfolge 2.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html">ResMode</a> in der Image-Serving-API.</p> </td> 
+   <td><p>Standard-Resampling-Modus. Gibt die standardmäßigen Resampling- und Interpolationsattribute an, die für die Skalierung von Bilddaten verwendet werden sollen.</p> <p>Wird verwendet, wenn „resMode=“ in einer Anforderung nicht angegeben wird.</p> <p>Zulässige Werte sind BILIN, BICUB oder SHARP2.</p> <p>Enum. Festlegung für Interpolationsmodus: 2 für BILIN, 3 für BICUB oder 4 für SCHARF2. Verwenden Sie für die besten Ergebnisse die Zeichenfolge 2.</p> <p>Siehe auch <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html?lang=de">ResMode</a> in der Image-Serving-API.</p> </td> 
   </tr> 
   <tr> 
    <td>resolution</td> 
@@ -943,16 +943,16 @@ Tabelle mit Manifesteinstellungen und deren Standardwerte:
   <tr> 
    <td>thumbnailtime</td> 
    <td>1 %,11 %,21 %,31 %,41 %,51 %,61 %,71 %,81 %,91 %</td> 
-   <td>Diese Werte stellen einen Schnappschuss der Videowiedergabezeit dar und werden an <a href="https://encoding.com/">encoding.com</a>. Weitere Informationen finden Sie unter <a href="/help/assets/video.md#about-video-thumbnails">Informationen zu Videominiaturen</a>.</td> 
+   <td>Diese Werte stellen eine Momentaufnahme der Videowiedergabezeit dar und werden an <a href="https://encoding.com/">encoding.com</a> übergeben. Weitere Informationen finden Sie unter <a href="/help/assets/video.md#about-video-thumbnails">Informationen zu Videominiaturen</a>.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Konfigurieren des Farbmanagements für dynamische Medien {#configuring-dynamic-media-color-management}
+## Konfigurieren des Farb-Managements für Dynamic Media {#configuring-dynamic-media-color-management}
 
 Beim Farbmanagement für dynamische Medien können Sie die richtigen Assets für die Vorschauanzeige farbig markieren.
 
-Bei der Farbkorrektur behalten übernommene Assets ihren Farbraum (RGB, CMYK, Grau) und das eingebettete Farbprofil im generierten Pyramid TIFF-Wiedergabeformat bei. Wenn Sie eine dynamische Wiedergabe anfordern, wird die Bildfarbe gemäß dem Zielfarbraum korrigiert. Sie konfigurieren das Wiedergabefarbprofil in JCR in den Veröffentlichungseinstellungen für dynamische Medien.
+Bei der Farbkorrektur behalten aufgenommene Assets ihren Farbraum (RGB, CMYK, Grau) und das eingebettete Farbprofil in der generierten Pyramid TIFF-Ausgabedarstellung bei. Wenn Sie eine dynamische Ausgabedarstellung anfordern, wird die Bildfarbe gemäß dem Zielfarbraum korrigiert. Sie konfigurieren das Wiedergabefarbprofil in JCR in den Veröffentlichungseinstellungen für dynamische Medien.
 
 Für das Adobe-Farbmanagement werden ICC-Profile verwendet. Dieses Format wurde vom International Color Consortium (ICC) definiert.
 
@@ -960,22 +960,22 @@ Sie können das Farbmanagement für dynamische Medien und Bildvorgaben konfiguri
 
 Für erweiterte Anwendungsfälle kann der Modifikator **[!UICONTROL icc=]** für die manuelle Konfiguration verwendet werden, um explizit ein Wiedergabefarbprofil auszuwählen:
 
-* **[!UICONTROL icc]** - [Profil der Ausgabefarben.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html)
+* **[!UICONTROL icc]** - [Profil der Ausgabefarben.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-icc.html?lang=de)
 
-* **[!UICONTROL iccEmbed]** - [Farbprofil einbetten.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
+* **[!UICONTROL iccEmbed]** - [Farbprofil einbetten.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html?lang=de)
 
 >[!NOTE]
-Der Standardsatz mit Farbprofilen für Adoben ist nur verfügbar, wenn Sie über [Feature Pack 12445 von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert. Alle Feature Packs und Service Packs sind verfügbar unter [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Feature Pack 12445 enthält die Adobe-Farbprofile.
+Der Standardsatz mit Farbprofilen für Adoben ist nur verfügbar, wenn Sie über [Feature Pack 12445 von Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) installiert. Alle Feature Packs und Service Packs sind über [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar. Feature Pack 12445 enthält die Adobe-Farbprofile.
 
 ### Installieren von Feature Pack 12445 {#installing-feature-pack}
 
 Sie müssen Feature Pack 12445 installieren, um die Funktionen für das Farbmanagement dynamischer Medien nutzen zu können.
 
-**Gehen Sie wie folgt vor, um Feature Pack 12445 zu installieren**:
+**Gehen Sie wie folgt vor, um das Feature Pack 12445 zu installieren**:
 
 1. Navigieren Sie zu [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) und herunterladen `cq-6.3.0-featurepack-12445`.
 
-   Siehe [Arbeiten mit Paketen](/help/sites-administering/package-manager.md) Weitere Informationen zur Verwendung von Paketen in [!DNL Adobe Experience Manager].
+   Weitere Informationen zur Verwendung von Paketen in [!DNL Adobe Experience Manager] finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
 1. Installieren Sie das Feature Pack.
 
@@ -985,7 +985,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
 
 **Gehen Sie wie folgt vor, um die Standardfarbprofile zu konfigurieren**:
 
-1. In **[!UICONTROL Tools > Allgemein > CRXDE Lite]**, navigieren Sie zu `/conf/global/settings/dam/dm/imageserver/configuration/settings` , die die standardmäßigen Adobe Color-Profile enthält.
+1. Gehen sie in **[!UICONTROL Tools > Allgemein > CRXDE Lite]** zum Ordner `/conf/global/settings/dam/dm/imageserver/configuration/settings`, der die Standardfarbprofile von Adobe enthält.
 
    ![chlimage_1-514](assets/chlimage_1-514.png)
 
@@ -993,7 +993,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
 
    Die Farbkorrektureigenschaften werden in der Tabelle **[!UICONTROL Farbkorrektureigenschaften]** beschrieben. Werte, die Sie Farbkorrektureigenschaften zuweisen können, sind in der Tabelle **[!UICONTROL Farbprofil]** angegeben.
 
-   Beispiel: in **[!UICONTROL Name]**, hinzufügen `iccprofilecmyk`auswählen **[!UICONTROL Typ]** `String`und fügen Sie `WebCoated` as a **[!UICONTROL Wert]**. Tippen **[!UICONTROL Hinzufügen]**, dann **[!UICONTROL Alle speichern]** , um Ihre Werte zu speichern.
+   Fügen Sie beispielsweise unter **[!UICONTROL Name]** den Namen `iccprofilecmyk` hinzu, wählen Sie bei **[!UICONTROL Typ]** die Option `String` und fügen Sie `WebCoated` als **[!UICONTROL Wert]** ein. Tippen **[!UICONTROL Hinzufügen]**, dann **[!UICONTROL Alle speichern]** , um Ihre Werte zu speichern.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1010,38 +1010,38 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td> 
       <td>Zeichenfolge</td> 
-      <td>&lt;leer&gt;</td> 
+      <td>&lt;empty&gt;</td> 
       <td>Name des standardmäßigen RGB-Profils.</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">iccprofilecmyk</a></td> 
       <td>Zeichenfolge</td> 
-      <td>&lt;leer&gt;</td> 
+      <td>&lt;empty&gt;</td> 
       <td>Name des standardmäßigen CMYK-Farbprofils.</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">iccprofilegray</a></td> 
       <td>Zeichenfolge</td> 
-      <td>&lt;leer&gt;</td> 
+      <td>&lt;empty&gt;</td> 
       <td>Name des standardmäßigen grauen Farbprofils.</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td> 
       <td>Zeichenfolge</td> 
-      <td>&lt;leer&gt;</td> 
-      <td>Name des standardmäßigen RGB-Farbprofils, das für RGB-Bilder ohne eingebettetes Farbprofil verwendet wird</td> 
+      <td>&lt;empty&gt;</td> 
+      <td>Name des standardmäßigen RGB-Farbprofils, das für RGB-Bilder ohne eingebettetes Farbprofil verwendet wird.</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrccmyk</a></td> 
       <td>Zeichenfolge</td> 
-      <td>&lt;leer&gt;</td> 
+      <td>&lt;empty&gt;</td> 
       <td>Name des standardmäßigen CMYK-Farbprofils, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td> 
       <td>Zeichenfolge</td> 
-      <td>&lt;leer&gt;</td> 
-      <td>Name des standardmäßigen grauen Farbprofils, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td> 
+      <td>&lt;empty&gt;</td> 
+      <td>Name des standardmäßigen Farbprofils für Grau, das für CMYK-Bilder ohne eingebettetes Farbprofil verwendet wird.</td> 
       </tr> 
       <tr> 
       <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">iccblackpointpayment</a></td> 
@@ -1096,12 +1096,12 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>CoatedFogra27</td> 
       <td>CMYK</td> 
-      <td>Überzogene FOGRA27 (ISO 12647-2:2004)</td> 
+      <td>Coated FOGRA27 (ISO 12647-2:2004)</td> 
       </tr> 
       <tr> 
       <td>CoatedFogra39</td> 
       <td>CMYK</td> 
-      <td>Überzogene FOGRA39 (ISO 12647-2:2004)</td> 
+      <td>Coated FOGRA39 (ISO 12647-2:2004)</td> 
       </tr> 
       <tr> 
       <td>CoatedGraCol</td> 
@@ -1124,7 +1124,7 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <td>Euroscale Coated v2</td> 
       </tr> 
       <tr> 
-      <td>EuroscaleUngestrichen</td> 
+      <td>EuroscaleUncoated</td> 
       <td>CMYK</td> 
       <td>Euroscale Unbeschichtv2</td> 
       </tr> 
@@ -1139,9 +1139,9 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <td>Japan Color 2002 Newspaper</td> 
       </tr> 
       <tr> 
-      <td>JapanColorUnxed</td> 
+      <td>JapanColorUncoated</td> 
       <td>CMYK</td> 
-      <td>Japan Color 2001 Ungestrichen</td> 
+      <td>Japan Color 2001 Uncoated</td> 
       </tr> 
       <tr> 
       <td>JapanColorWebCoated</td> 
@@ -1169,19 +1169,19 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <td>PAL/SECAM</td> 
       </tr> 
       <tr> 
-      <td>ProFoto</td> 
+      <td>ProPhoto</td> 
       <td>RGB</td> 
-      <td>ProFoto-RGB</td> 
+      <td>ProPhoto RGB</td> 
       </tr> 
       <tr> 
       <td>PS4Default</td> 
       <td>CMYK</td> 
-      <td>Photoshop 4-Standard-CMYK</td> 
+      <td>Photoshop 4 Standard CMYK</td> 
       </tr> 
       <tr> 
       <td>PS5Default</td> 
       <td>CMYK</td> 
-      <td>Photoshop 5-Standard-CMYK</td> 
+      <td>Photoshop 5 Standard CMYK</td> 
       </tr> 
       <tr> 
       <td>SheetfedCoated</td> 
@@ -1189,9 +1189,9 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <td>U.S. Sheetfed Coated v2</td> 
       </tr> 
       <tr> 
-      <td>BlattmatteUngestrichen</td> 
+      <td>SheetfedUncoated</td> 
       <td>CMYK</td> 
-      <td>U.S. Sheetfed Unbeschichtete Version 2</td> 
+      <td>U.S. Sheetfed Uncoated v2</td> 
       </tr> 
       <tr> 
       <td>SMPTE</td> 
@@ -1204,9 +1204,9 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <td>sRGB IEC61966-2.1</td> 
       </tr> 
       <tr> 
-      <td>UngestrichenFogra29</td> 
+      <td>UncoatedFogra29</td> 
       <td>CMYK</td> 
-      <td>Unbeschichtetes FOGRA29 (ISO 12647-2:2004)</td> 
+      <td>Uncoated FOGRA29 (ISO 12647-2:2004)</td> 
       </tr> 
       <tr> 
       <td>WebCoated</td> 
@@ -1221,22 +1221,22 @@ Nach der Feature Pack-Installation müssen Sie die richtigen Standardfarbprofile
       <tr> 
       <td>WebCoatedGrade3</td> 
       <td>CMYK</td> 
-      <td>Webbeschichteter SWOP 2006 Grad 3 Papier</td> 
+      <td>Web Coated SWOP 2006 Grade 3 Paper</td> 
       </tr> 
       <tr> 
       <td>WebCoatedGrade5</td> 
       <td>CMYK</td> 
-      <td>Webbeschichtetes SWOP 2006 Grade 5 Papier</td> 
+      <td>Web Coated SWOP 2006 Grade 5 Paper</td> 
       </tr> 
       <tr> 
-      <td>WebUngestrichen</td> 
+      <td>WebUncoated</td> 
       <td>CMYK</td> 
-      <td>U.S. Web Unxed v2</td> 
+      <td>U.S. Web Uncoated v2</td> 
       </tr> 
       <tr> 
       <td>WideGamutRGB</td> 
       <td>RGB</td> 
-      <td>Wide Gamut-RGB</td> 
+      <td>Wide Gamut RGB</td> 
       </tr> 
     </tbody> 
     </table>
@@ -1253,7 +1253,7 @@ Sie können beispielsweise **[!UICONTROL iccprofilergb]** nach `sRGB`und **[!UIC
 
 ## Bereitstellen von Assets {#delivering-assets}
 
-Nachdem Sie alle oben genannten Aufgaben ausgeführt haben, werden aktivierte Dynamic Media-Assets vom Bild- oder Videodienst bereitgestellt. In AEM wird diese Fähigkeit in einem **[!UICONTROL Bild-URL kopieren]**, **[!UICONTROL Viewer-URL kopieren]**, **[!UICONTROL Einbetten von Viewer-Code]** und im WCM.
+Nachdem Sie alle obigen Aufgaben abgeschlossen haben, werden aktivierte Dynamic Media-Assets über den Bild- oder Videodienst bereitgestellt. In AEM wird diese Fähigkeit in einem **[!UICONTROL Bild-URL kopieren]**, **[!UICONTROL Viewer-URL kopieren]**, **[!UICONTROL Einbetten von Viewer-Code]** und im WCM.
 
 Siehe [Bereitstellen von Assets mit Dynamic Media](delivering-dynamic-media-assets.md).
 
@@ -1265,15 +1265,15 @@ Siehe [Bereitstellen von Assets mit Dynamic Media](delivering-dynamic-media-asse
   </tr> 
   <tr> 
    <td>Kopieren einer Bild-URL</td> 
-   <td><p>Im Dialogfeld URL kopieren wird eine URL wie die folgende angezeigt (URL dient nur zur Veranschaulichung):</p> <p><code>https://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</code></p> <p>Hier verweist <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Weitere Informationen finden Sie unter <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Assets mit Dynamic Media</a>.</p> </td> 
+   <td><p>Das Dialogfeld zum Kopieren einer URL zeigt eine URL ähnlich der folgenden an (URL dient nur zur Veranschaulichung):</p> <p><code>https://IMAGESERVICEPUBLISHNODE/is/image/content/dam/path/to/Image.jpg?$preset$</code></p> <p>Hier verweist <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Weitere Informationen finden Sie unter <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Assets mit Dynamic Media</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Kopieren einer Viewer-URL</td> 
-   <td><p>Im Dialogfeld URL kopieren wird eine URL angezeigt, die der folgenden ähnelt (URL dient nur zur Veranschaulichung):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von AEM und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Weitere Informationen finden Sie unter <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Assets mit Dynamic Media</a>.</p> </td> 
+   <td><p>Das Dialogfeld zum Kopieren einer URL zeigt eine URL ähnlich der folgenden an (URL dient nur zur Veranschaulichung):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Hier verweist <code>PUBLISHNODE</code> auf den regulären Veröffentlichungsknoten von AEM und <code>IMAGESERVICEPUBLISHNODE</code> auf die Bilddienst-URL.</p> <p>Weitere Informationen finden Sie unter <a href="/help/assets/delivering-dynamic-media-assets.md">Bereitstellen von Assets mit Dynamic Media</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Kopieren von Einbettungscode eines Viewers</td> 
-   <td><p>Im Dialogfeld Einbettungscode kopieren wird ein Code-Snippet ähnlich dem folgenden angezeigt (Codebeispiel dient nur zur Veranschaulichung):</p> <p><code class="code">&lt;style type="text/css"&gt;
+   <td><p>Im Dialogfeld zum Einbetten von Code wird ein Codeschnipsel wie der folgende angezeigt (Codeschnipsel dient nur zur Veranschaulichung):</p> <p><code class="code">&lt;style type="text/css"&gt;
        #s7basiczoom_div.s7basiczoomviewer{
        width:100%;
        height:auto;
@@ -1296,6 +1296,6 @@ Siehe [Bereitstellen von Assets mit Dynamic Media](delivering-dynamic-media-asse
  </tbody> 
 </table>
 
-### Komponenten von dynamischen Medien und interaktiven Medien für WCM {#wcm-dynamic-media-and-interactive-media-components}
+### Komponenten von Dynamic Media und interaktiven Medien für WCM {#wcm-dynamic-media-and-interactive-media-components}
 
-Auf WCM-Seiten mit Verweisen auf Komponenten von dynamischen Medien und interaktiven Medien wird auf den Service für die Bereitstellung verwiesen.
+Auf WCM-Seiten mit Verweisen auf Komponenten von Dynamic Media und interaktiven Medien wird auf den Service für die Bereitstellung verwiesen.

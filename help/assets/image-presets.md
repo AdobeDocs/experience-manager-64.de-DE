@@ -15,7 +15,7 @@ role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 91%
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Anhand von Bildvorgaben kann Assets Bilder mit unterschiedlichen Größen, Forma
 
 Darüber hinaus können Sie eine responsive Bildvorgabe auswählen (nach der Auswahl durch die Schaltfläche **[!UICONTROL RESS]** gekennzeichnet).
 
-In diesem Abschnitt wird beschrieben, wie Sie Bildvorgaben verwenden. [Administratoren können Bildvorgaben erstellen und konfigurieren](managing-image-presets.md).
+In diesem Abschnitt wird beschrieben, wie Sie Bildvorgaben verwenden. [Admins können Bildvorgaben erstellen und konfigurieren](managing-image-presets.md).
 
 >[!NOTE]
 >

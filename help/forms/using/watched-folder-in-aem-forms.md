@@ -75,7 +75,7 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 
    * author
 
-   * veröffentlichen
+   * publish
 
    * author, Veröffentlichungsinstanz
 
@@ -97,7 +97,7 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 
    Sie können [Dateimuster](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) verwenden, um Folgendes auszuschließen:
 
-   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.*
+   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
    * Dateien mit bestimmten Namen; z. B. data&amp;ast; würde Dateien und Ordner mit den Namen data1, data2 usw. ausschließen.
    * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
@@ -109,7 +109,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](/
 
 * **includeFilePattern (String)**: Semikolon **;** Eine durch Trennzeichen getrennte Liste von Mustern, mit denen der überwachte Ordner bestimmt, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Wenn das IncludeFilePattern beispielsweise input&amp;ast; ist, werden alle Dateien und Ordner, die mit input&amp;ast übereinstimmen, abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &amp;ast, der alle Dateien und Ordner bedeutet. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
-   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.*
+   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
    * Dateien mit bestimmten Namen, z. B. data.„*“ würde Dateien und Ordner mit den Namen data1, data2 usw. einschließen.
 
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
@@ -558,7 +558,7 @@ Die Ausgabe der ersten Konvertierung wird an „\Pfad\result“ übergeben. Als 
 
 Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster angegeben werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
-* Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.*
+* Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
 * Dateien mit bestimmten Namen, z. B. data.*
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 

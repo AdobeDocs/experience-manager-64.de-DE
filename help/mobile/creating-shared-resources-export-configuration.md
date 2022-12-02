@@ -21,7 +21,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!CAUTION]
 >
@@ -46,7 +46,6 @@ Die Konfiguration zur Inhaltssynchronisierung finden Sie unter **&lt;dps-exportt
 >* den Beispielinhalt installiert hat
 >* AEM
 >* kein konfigurierter benutzerdefinierter Kontext oder ein anderer Port
-
 >
 
 

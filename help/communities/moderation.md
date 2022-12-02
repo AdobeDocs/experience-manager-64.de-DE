@@ -139,7 +139,7 @@ Die Textsuche beschränkt die Anzeige des referenzierten benutzergenerierten Inh
 
 ![chlimage_1-473](assets/chlimage_1-473.png)
 
-#### Website {#site}
+#### Site {#site}
 
 Die Site beschränkt die Anzeige des referenzierten benutzergenerierten Inhalts auf Beiträge auf ausgewählten Community-Sites. Wenn keine Sites aktiviert sind, werden alle Verweise auf UGC angezeigt.
 

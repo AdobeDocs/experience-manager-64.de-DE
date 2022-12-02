@@ -1,7 +1,7 @@
 ---
 title: Erstellen zielgerichteter Erlebnisse in AEM Forms
 seo-title: Create targeted experiences in AEM Forms
-description: 'Mithilfe von AEM Forms können Sie personalisierte Erlebnisse für bestimmte Zielgruppen bieten. '
+description: Mithilfe von AEM Forms können Sie personalisierte Erlebnisse für bestimmte Zielgruppen bieten.
 seo-description: Use Target in AEM Forms to create customized experiences for targeted customers.
 uuid: 174b6054-8fe3-4ab2-8afd-435e5dff9044
 content-type: reference

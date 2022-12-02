@@ -160,7 +160,7 @@ durch Navigation zum
 
 * **[!UICONTROL Passwort]**: *(optional)*
 
-* Klicken Sie auf **[!UICONTROL OK]**
+* Wählen Sie **[!UICONTROL OK]** aus
 
 ### Anpassen des Protokolls für den neuen Abruf-Importtool {#adjust-protocol-for-new-polling-importer}
 
@@ -181,4 +181,4 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
 
 Die roten Dreiecke geben die geänderten Eigenschaften an. Achten Sie darauf, die Änderungen zu speichern:
 
-* Wählen Sie **[!UICONTROL Alle speichern]** aus
+* Klicken Sie auf **[!UICONTROL Alle speichern]**

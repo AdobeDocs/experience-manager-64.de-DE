@@ -1,5 +1,5 @@
 ---
-title: Multi-Tenancy für Sammlungen, Snippets und Snippet-Vorlagen
+title: Multi-Mandantenfähigkeit für Sammlungen, Snippets sowie Snippet-Vorlagen
 description: Trennen Sie Inhalte im CRX-Repository basierend auf der Kundenorganisation, um unbefugten Zugriff zu verhindern.
 contentOwner: AG
 feature: Collections
@@ -8,11 +8,11 @@ exl-id: d00a671a-6707-4941-868d-fa13510b7b60
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '230'
-ht-degree: 34%
+ht-degree: 43%
 
 ---
 
-# Multi-Tenancy für Sammlungen, Snippets und Snippet-Vorlagen {#multi-tenancy-for-collections-snippets-and-snippet-templates}
+# Multi-Mandantenfähigkeit für Sammlungen, Snippets sowie Snippet-Vorlagen {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
 Mit der Multi-Tenancy-Funktion können Sie Inhalte in CRX auf Basis von Präfix und ID der Organisation trennen, um die Inhalte vor unberechtigtem Zugriff durch Anwender von anderen Unternehmen zu schützen.
 
@@ -28,7 +28,7 @@ Mit der Multi-Tenancy-Funktion können Sie die folgenden Assettypen und Komponen
 
 * Sammlungen
 * Allgemeine Sammlungen
-* Kataloge (einschließlich des Assistenten &quot;Seite hinzufügen/auswählen&quot;)
+* Kataloge (einschließlich des Assistenten „Seite hinzufügen/auswählen“)
 * Vorlagen
 * Snippet-Vorlagen
 * Lightbox

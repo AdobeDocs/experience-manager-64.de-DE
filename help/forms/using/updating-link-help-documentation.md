@@ -13,7 +13,7 @@ exl-id: 68fe3f97-ded8-4223-b4b9-02704077e37e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Berücksichtigen Sie die folgenden Anwendungsfälle, wenn Sie die Standardhilfe-
 
 Um die URL der Onlinedokumentation zu aktualisieren, führen Sie die Schritte unter [Generische Schritte zur Anpassung](/help/forms/using/generic-steps-html-workspace-customization.md) und dann die folgenden Schritte aus.
 
-1. Kopieren Sie die `userinfo.html` Datei aus `/libs/ws/js/runtime/templates` nach `/apps/ws/js/runtime/templates`.
+1. Kopieren Sie die `userinfo.html`-Datei aus `/libs/ws/js/runtime/templates` nach `/apps/ws/js/runtime/templates`.
 1. Änderung:
 
    ```
@@ -50,4 +50,4 @@ Um die URL der Onlinedokumentation zu aktualisieren, führen Sie die Schritte un
 1. Gehen Sie folgendermaßen vor:
 
    1. Öffnen Sie /apps/ws/js/registry.js zur Bearbeitung.
-   1. Search and replace `text!/lc/libs/ws/js/runtime/templates/userinfo.html` with `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. Suchen und ersetzen Sie `text!/lc/libs/ws/js/runtime/templates/userinfo.html` mit `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

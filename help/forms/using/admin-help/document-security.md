@@ -1,5 +1,5 @@
 ---
-title: 'Informationen zu Document Security '
+title: Informationen zu Document Security
 seo-title: About document security
 description: Erfahren Sie, wie Sie mit Document Security vordefinierte Vertraulichkeitseinstellungen mühelos erstellen, speichern und auf Dokumente anwenden.
 seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.

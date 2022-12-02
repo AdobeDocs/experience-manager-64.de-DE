@@ -1,7 +1,7 @@
 ---
 title: Brief erstellen
 seo-title: Create Letter
-description: 'In diesem Thema werden die Schritte erläutert, die Sie zum Erstellen eines Briefes und zum Hinzufügen von Datenmodulen und Anhängen an diesen Brief und einer Vorschau des Briefes in der Korrespondenzverwaltung benötigen. '
+description: In diesem Thema werden die Schritte erläutert, die Sie zum Erstellen eines Briefes und zum Hinzufügen von Datenmodulen und Anhängen an diesen Brief und einer Vorschau des Briefes in der Korrespondenzverwaltung benötigen.
 seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

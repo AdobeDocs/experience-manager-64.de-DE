@@ -105,7 +105,7 @@ Wenn supportAttachments aktiviert ist, gibt dieser Wert die maximal zulässige G
 
 * **[!UICONTROL attachmentTypeBlocklist.name]**
 Eine Blockierungsliste von Dateierweiterungen mit dem Präfix &quot;
-**.**&#39;, das vom System abgelehnt wird. Wenn die Erweiterung nicht auf die Blockierungsliste gesetzt wird, ist sie zulässig. Erweiterungen können mit dem **+**&#39; und &#39;**-**&quot;. Der Standardwert ist *STANDARD*.
+**möglich.**&#39;, das vom System abgelehnt wird. Wenn die Erweiterung nicht auf die Blockierungsliste gesetzt wird, ist sie zulässig. Erweiterungen können mit dem **+**&#39; und &#39;**-**&quot;. Der Standardwert ist *STANDARD*.
 
 * **[!UICONTROL allowedAttachmentTypes.name]**
 

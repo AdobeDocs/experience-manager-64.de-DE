@@ -13,16 +13,16 @@ exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1796'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
 # Rich-Text-Editor{#rich-text-editor}
 
-Der Rich-Text-Editor ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Im Editor können die folgenden Komponenten erstellt werden:
+Der Rich-Text-Editor ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
 
 * Text
-* Text Bild
+* Textbild
 * Tabelle
 
 ## Rich-Text-Editor {#rich-text-editor-2}
@@ -33,7 +33,7 @@ Das Editor-Dialogfeld arbeitet nach dem WYSIWYG-Prinzip und bietet eine Vielzahl
 
 >[!NOTE]
 >
->Welche Features verfügbar sind, richtet sich nach dem jeweiligen Projekt, Ihre spezielle Installation kann also Abweichungen aufweisen.
+>Welche Funktionen verfügbar sind, richtet sich nach dem jeweiligen Projekt. Ihre spezielle Installation kann also Abweichungen aufweisen.
 
 ## Bearbeiten im Kontext {#in-place-editing}
 
@@ -59,7 +59,7 @@ Derzeit ist die Bearbeitung im Kontext für Seitenelemente möglich, die durch d
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
-Der Rich-Text-Editor bietet eine Reihe von Funktionen, diese [von der Konfiguration abhängig](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
+Der Rich-Text-Editor bietet verschiedene Funktionen, die [von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente abhängen. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -87,7 +87,7 @@ Ein Stil kann auf eine bestimmte Zeichenfolge angewendet werden (ein Stil ist CS
 
 ![cq55_rte_styles_use](assets/cq55_rte_styles_use.png)
 
-Ein Format hingegen wird auf einen gesamt Textabsatz angewendet (Format sind HTML-basiert):
+Ein Format hingegen wird auf einen gesamten Textabsatz angewendet (Formate sind HTML-basiert):
 
 ![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
@@ -183,7 +183,7 @@ Sie haben folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. In einer Standardinstallation sind dies `https://`, `ftp://`und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
+>Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. Bei einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
 
 Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb des Link-Texts und klicken Sie auf das Symbol **Verknüpfung aufheben**:
 
@@ -257,7 +257,7 @@ Tabellen können auf zwei Arten eingefügt werden:
 
    >[!NOTE]
    >
-   >Obwohl Tabellen im RTE verfügbar sind, wird empfohlen, die Variable **Verzeichnis** -Komponente beim Erstellen von Tabellen.
+   >Obwohl im RTE keine Tabellen verfügbar sind, empfiehlt es sich, beim Erstellen von Tabellen die Komponente **Tabelle** zu verwenden.
 
 Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind die Tabellenoptionen über das Kontextmenü verfügbar, das in der Regel durch Klicken mit der rechten Maustaste auf die Tabelle aufgerufen wird. Beispiel:
 
@@ -275,7 +275,7 @@ Dies sind die tabellenspezifischen Funktionen:
    <td><a href="#table-properties">Tabelleneigenschaften</a><br /> </td> 
   </tr> 
   <tr> 
-   <td><a href="#cell-properties">Zellen-Eigenschaften<br /> </a></td> 
+   <td><a href="#cell-properties">Zelleneigenschaften<br /> </a></td> 
   </tr> 
   <tr> 
    <td><a href="#add-or-delete-rows">Zeilen hinzufügen oder löschen<br /> </a></td> 
@@ -341,7 +341,7 @@ Sie können die grundlegenden Eigenschaften der Tabelle angeben und dann auf **O
 >
 >Sie sollten unbedingt eine **Breite** für die Tabelle angeben.
 
-#### Zellen-Eigenschaften {#cell-properties}
+#### Zelleneigenschaften {#cell-properties}
 
 ![cq55_rte_cellproperties_icon](assets/cq55_rte_cellproperties_icon.png)
 
@@ -351,9 +351,9 @@ Die Eigenschaften einer Zelle bzw. einer Reihe von Zellen können konfiguriert w
 
 * **Breite**
 * **Höhe**
-* **Horizontale Ausrichtung** - links, zentriert oder rechts
-* **Vertikale Ausrichtung** - Oben, Mitte, Unten oder Grundlinie
-* **Zellentyp** - Daten oder Kopfzeile
+* **Horizontale Ausrichtung**: Links, Mitte oder rechts
+* **Vertikale Ausrichtung**: Oben, Mitte, unten oder Grundlinie
+* **Zellentyp**: Daten oder Kopfzeile
 * **Anwenden auf:**
    * Einzelne Zelle
    * Ganze Zeile
@@ -409,7 +409,6 @@ Durch Erstellen einer verschachtelten Tabelle wird eine neue separate Tabelle in
 >
 >* Windows IE: Verwenden Sie Strg+primäre Maustaste (in der Regel linke Maustaste) zur Auswahl mehrerer Zellen.
 >* Firefox: Ziehen Sie mit der Maus, um einen Zellenbereich auszuwählen.
-
 >
 
 
@@ -439,7 +438,7 @@ Betrachten Sie z. B. folgenden Text:
 
 ![cq55_rte_sourcemode_1](assets/cq55_rte_sourcemode_1.png)
 
-Im Quellmodus hat nimmt dieser Text folgende Gestalt an (oft ist der HTML-Quelltext wesentlich länger und Sie müssen einen Bildlauf durchführen):
+Im Quellmodus hat dieser Text folgende Gestalt (oft ist der HTML-Quelltext wesentlich länger und Sie müssen einen Bildlauf durchführen):
 
 ![cq55_rte_sourcemode_2](assets/cq55_rte_sourcemode_2.png)
 

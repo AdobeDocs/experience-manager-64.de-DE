@@ -1,7 +1,7 @@
 ---
 title: Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen
 seo-title: Customize layout and positioning of error messages of an adaptive form
-description: 'Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen. '
+description: Sie können Layout und Positionierung von Fehlermeldungen eines adaptiven Formulars anpassen.
 seo-description: You can customize layout and positioning of the error messages of an adaptive for.
 uuid: 18b6d770-8b68-4aa0-b866-6325a6ceabcf
 content-type: reference

@@ -12,7 +12,7 @@ exl-id: b85fc608-9653-4491-8557-f66a0a7da5ea
 source-git-commit: 809a62eeca8b8e30e010beea7d594ced165e8faa
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ Oak-run unterstützt alle Indizierungsszenarien über die Befehlszeile und muss 
 1. Verringert den Ressourcenverbrauch während der Neuindizierung in AEM, was die Systemleistung für andere AEM-Aktivitäten verbessert
 1. Oak-run bietet Out-of-Band-Support: Wenn die Produktionsbedingungen keine Ausführung der Neuindizierung auf Produktionsinstanzen erlauben, kann für die Neuindizierung eine geklonte Umgebung genutzt werden, um eine kritische Leistungsbeeinträchtigung zu vermeiden.
 
-Nachstehend finden Sie eine Liste von Anwendungsfällen, die Sie bei der Durchführung von Indizierungen mit dem Tool `oak-run` nutzen können. 
+Nachstehend finden Sie eine Liste von Nutzungsszenarien, die Sie bei der Durchführung von Indizierungen mit dem Tool `oak-run` nutzen können. 
 
 ## Prüfung der Indexkonsistenz {#indexconsistencychecks}
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Anwendungsfall 1 - Prüfung der Indexkonsistenz](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
+>Weitere Informationen zu diesem Szenario finden Sie unter [Nutzungsszenario 1 - Prüfung der Indexkonsistenz](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
 
 * `oak-run.jar`ermittelt schnell, ob Lucene Oak-Indizes beschädigt sind.
 * Es kann problemlos auf einer verwendeten AEM-Instanz ausgeführt werden, um die Konsistenz auf den Ebenen 1 und 2 zu prüfen.
@@ -42,7 +42,7 @@ Nachstehend finden Sie eine Liste von Anwendungsfällen, die Sie bei der Durchf�
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Anwendungsfall 2 - Indexstatistiken](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics) 
+>Weitere Informationen zu diesem Szenario finden Sie unter [Nutzungsszenario 2 - Indexstatistiken](/help/sites-deploying/oak-run-indexing-usecases.md#usecase2indexstatistics) 
 
 * `oak-run.jar` sichert alle Indexdefinitionen, wichtige Indexstatistiken und Indexinhalte für Offline-Analysen. 
 
@@ -50,7 +50,7 @@ Nachstehend finden Sie eine Liste von Anwendungsfällen, die Sie bei der Durchf�
 
 ![image2017-12-19_9-47-40](assets/image2017-12-19_9-47-40.png)
 
-## Entscheidungsbaum für Neuindizierungsansätze {#reindexingapproachdecisiontree}
+## Entscheidungsdiagramm für den Ansatz für die Neuindizierung {#reindexingapproachdecisiontree}
 
 Dieses Diagramm ist ein Entscheidungsbaum für die Verwendung der verschiedenen Neuindizierungsansätze.
 
@@ -60,7 +60,7 @@ Dieses Diagramm ist ein Entscheidungsbaum für die Verwendung der verschiedenen 
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Anwendungsfall 3 - Neuindizierung](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
+>Weitere Informationen zu diesem Szenario finden Sie unter [Nutzungsszenario 3 - Neuindizierung](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing).
 
 ### Textvorextraktion für SegmentNodeStore und DocumentNodeStore {#textpre-extraction}
 
@@ -106,7 +106,7 @@ Dieser Vorgang darf nur für eine einzelne AEM-Instanz im Cluster durchgeführt 
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
 
-Dies ist die Methode, die vor der Einführung der neuen Indizierungsfunktionen von oak-run.jar verwendet wurde. Sie kann verwendet werden, indem für den Oak-Index die Eigenschaft `reindex=true` festlegt wird.
+Dies ist die Methode, die vor der Einführung der neuen Indizierungsfunktionen von oak-run.jar angewendet wurde. Sie kann verwendet werden, indem für den Oak-Index die Eigenschaft `reindex=true` festlegt wird.
 
 Dieser Ansatz kann verwendet werden, wenn die Auswirkungen auf die Dauer und die Performance für den Kunden akzeptabel sind. Dies ist häufig bei kleinen und mittleren AEM-Installationen der Fall.
 
@@ -118,7 +118,7 @@ Dieser Ansatz kann verwendet werden, wenn die Auswirkungen auf die Dauer und die
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung - SegmentNodeStore - Die AEM-Instanz wird ausgeführt](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-Die Online-Neuindizierung von TarMK mithilfe von oak-run.jar ist schneller als die [Online-Neuindizierung für TarMK](#onlinere-indexingfortarmk) weiter oben beschrieben. Sie erfordert jedoch auch die Ausführung während eines Wartungsfensters. wobei darauf hingewiesen wird, dass das Fenster kürzer wird und weitere Schritte erforderlich sind, um die Neuindizierung durchzuführen.
+Die Online-Neuindizierung von TarMK mithilfe von oak-run.jar ist schneller als die oben beschriebene [Online-Neuindizierung für TarMK](#onlinere-indexingfortarmk). Sie muss jedoch ebenfalls während eines Wartungsfensters ausgeführt werden, wobei das Fenster kürzer ist und für die Neuindizierung mehr Schritte erforderlich sind.
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ Die Online-Neuindizierung von TarMK mithilfe von oak-run.jar ist schneller als d
 >
 >Weitere Informationen zu diesem Szenario finden Sie unter [Online-Neuindizierung - SegmentNodeStore - Die AEM-Instanz muss ausgeschaltet sein](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-Die Offline-Neuindizierung von TarMK ist der einfachste auf `oak-run.jar` basierende Neuindizierung sansatz für TarMK, da nur ein einziger `oak-run.jar`-Befehl erforderlich ist. Die AEM-Instanz muss jedoch heruntergefahren werden.
+Die Offline-Neuindizierung von TarMK ist der einfachste auf `oak-run.jar` basierende Neuindizierungsansatz für TarMK, da nur ein einziger `oak-run.jar`-Befehl erforderlich ist. Die AEM-Instanz muss jedoch heruntergefahren werden.
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Die Out-of-Band-Neuindizierung minimiert die Auswirkung der Neuindizierung auf v
 
 >[!NOTE]
 >
->Weitere Informationen zu diesem Szenario finden Sie unter [Anwendungsfall 4 - Aktualisieren von Indexdefinitionen](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
+>Weitere Informationen zu diesem Szenario finden Sie unter [Nutzungsszenario 4 - Aktualisieren von Indexdefinitionen](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
 
 ### Erstellen und Aktualisieren von Indexdefinitionen auf TarMK mit ACS Ensure Index {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
 

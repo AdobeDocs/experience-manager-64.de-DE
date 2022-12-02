@@ -1,5 +1,5 @@
 ---
-title: 'Die Tools-Konsolen '
+title: Die Tools-Konsolen
 description: Erfahren Sie mehr über die verschiedenen Tools-Konsolen in Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -45,7 +45,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Speichert Konfigurationen zum <a href="/help/sites-administering/marketing-cloud.md">Integrieren mit Adobe Marketing Cloud</a></td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/ecommerce.md">Commerce</a></td> 
+   <td><a href="/help/sites-administering/ecommerce.md">Commerce </a></td> 
    <td> </td> 
    <td>Bietet Zugriff auf Importtools und unterschiedliche Produktdaten</td> 
   </tr> 
@@ -72,7 +72,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">Dashboards</a></td> 
    <td> </td> 
-   <td>Ermöglicht die Erstellung von Berichterstellungsdashboards. Diese bieten eine anpassbare Möglichkeit zur Festlegung von Seiten, die konsolidierte Daten anzeigen.</td> 
+   <td>Ermöglicht die Erstellung von Reporting-Dashboards. Diese bieten eine anpassbare Möglichkeit zur Festlegung von Seiten, die konsolidierte Daten anzeigen.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">Designs</a></td> 
@@ -152,7 +152,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   <tr> 
    <td><a href="/help/sites-administering/campaign-segmentation.md">Segmentierung</a></td> 
    <td> </td> 
-   <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing. Die Segmentierung unterstützt Sie durch die Analyse und Charakterisierung der Benutzerdetails dabei.<br /> </td> 
+   <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing. Die Segmentierung hilft dabei, die Details eines Besuchers zu analysieren und zu charakterisieren.<br /> </td> 
   </tr> 
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 

@@ -13,7 +13,7 @@ exl-id: 92302067-3500-41ca-9855-87f36148bfbc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1096'
-ht-degree: 82%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalt
 
 Mit AEM können Sie Segmente, Teaser und Kampagnen auf einfache Weise erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
 
-Die **Segment-Editor** ermöglicht Ihnen die einfache Definition eines Segments:
+Der **Segment-Editor** ermöglicht Ihnen die einfache Definition eines Segments:
 
 ![segmenteditor-1](assets/segmenteditor-1.png)
 
@@ -39,7 +39,7 @@ Sie können jedes Segment **bearbeiten**, um einen **Titel**, eine **Beschreibun
 
 ## Faktor „Verstärken“ {#boost-factor}
 
-Jedes Segment verfügt über eine **Verstärken** Parameter, der als Gewichtungsfaktor verwendet wird; Eine höhere Zahl zeigt an, dass das Segment gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
+Jedes Segment verfügt über einen Parameter zum **Verstärken**, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment bei der Auswahl gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
 
 * Mindestwert: `0`
 * Höchstwert: `1000000`
@@ -80,11 +80,11 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können v
    <td>Jede Eigenschaft der besuchten Seite.<br /> </td> 
   </tr> 
   <tr> 
-   <td> Verweis-Stichwörter<br /> </td> 
-   <td>Suchbegriffe, die mit Informationen aus der verweisenden Website übereinstimmen sollen. <br /> </td> 
+   <td> Verweis-Schlüsselwörter<br /> </td> 
+   <td>Schlüsselwörter, die mit Informationen aus der verweisenden Website abgeglichen werden. <br /> </td> 
   </tr> 
   <tr> 
-   <td> Script</td> 
+   <td> Skript</td> 
    <td>JavaScript-Ausdruck, der ausgewertet werden soll.<br /> </td> 
   </tr> 
   <tr> 
@@ -93,11 +93,11 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können v
   </tr> 
   <tr> 
    <td> Tag-Cloud<br /> </td> 
-   <td>Tags, die mit denen der besuchten Seiten übereinstimmen.<br /> </td> 
+   <td>Tags, die mit denen der besuchten Seiten abgeglichen werden.<br /> </td> 
   </tr> 
   <tr> 
    <td> Benutzeralter<br /> </td> 
-   <td>Aus dem Benutzerprofil genommen.<br /> </td> 
+   <td>Wie aus dem Benutzerprofil übernommen.<br /> </td> 
   </tr> 
   <tr> 
    <td> Benutzereigenschaft<br /> </td> 
@@ -116,15 +116,15 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment au
 
 >[!NOTE]
 >
->Eigenschaften mit der **_i18n** -Suffix werden durch ein Skript festgelegt, das Teil der clientlib der Personalisierungsbenutzeroberfläche ist. Alle benutzeroberflächenbezogenen clientlibs werden nur dann in der Autoreninstanz geladen, wenn die Benutzeroberfläche in der Veröffentlichungsinstanz nicht benötigt wird.
+>Eigenschaften mit dem Suffix **_i18n** werden durch ein Skript festgelegt, das Teil der clientlib zur Personalisierungsbenutzeroberfläche ist. Alle benutzeroberflächenbezogenen clientlibs werden nur dann in der Autoreninstanz geladen, wenn die Benutzeroberfläche in der Veröffentlichungsinstanz nicht benötigt wird.
 >
->Daher ist es bei der Erstellung eines Segments mit solchen Eigenschaften normalerweise erforderlich, sich auf **browserFamily** für Instanz anstelle von **browserFamily_i18n**.
+>Daher ist es bei der Erstellung eines Segments mit solchen Eigenschaften normalerweise erforderlich, beispielsweise **browserFamily** statt **browserFamily_i18n** zu verwenden.
 
 ## Erstellen eines neuen Segments {#creating-a-new-segment}
 
 So legen Sie Ihr neues Segment fest:
 
-1. Wählen Sie in der Leiste **Tools > Vorgänge > Konfiguration**.
+1. Wählen Sie in der Leiste **Tools > Vorgänge > Konfiguration** aus.
 1. Klicken Sie auf die Seite **Segmentierung** im linken Bereich und navigieren Sie zum erforderlichen Ort.
 1. Erstellen Sie eine [neue Seite](/help/sites-authoring/managing-pages.md) mithilfe der Vorlage **Segment**.
 1. Öffnen Sie die neue Seite, um den Segment-Editor anzuzeigen:
@@ -167,9 +167,9 @@ Da der Hauptoperator „ODER“ lautet, müssen Sie mit einem **ODER-Container**
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe des **[ClientContext](/help/sites-administering/client-context.md)** getestet werden:
 
 1. Wählen Sie das zu testende Segment aus.
-1. Drücken Sie **[Strg-Alt-C](/help/sites-authoring/keyboard-shortcuts.md)**, um den **[ClientContext](/help/sites-administering/client-context.md)** zu öffnen, der die gesammelten Daten anzeigt. Zu Testzwecken können Sie **Bearbeiten** bestimmte Werte oder **Laden** ein weiteres Profil, um die Auswirkungen dort zu sehen.
+1. Drücken Sie **[Strg-Alt-C](/help/sites-authoring/keyboard-shortcuts.md)**, um den **[ClientContext](/help/sites-administering/client-context.md)** zu öffnen, der die gesammelten Daten anzeigt. Zu Testzwecken können Sie bestimmte Werte **bearbeiten** oder ein anderes Profil **laden**, um dort die Auswirkungen zu sehen.
 
-1. Je nach den definierten Eigenschaften können die zu der aktuellen Seite verfügbaren Daten mit der Segmentdefinition übereinstimmen oder nicht. Der Status der Übereinstimmung wird unter der Definition angezeigt.
+1. Je nach den definierten Eigenschaften können die zur aktuellen Seite verfügbaren Daten mit der Segmentdefinition übereinstimmen oder nicht. Der Status der Übereinstimmung wird unter der Definition angezeigt.
 
 Eine einfache Segmentdefinition kann auf dem Alter und Geschlecht des Benutzers basieren. Das Laden eines spezifischen Profils zeigt, dass das Segment erfolgreich aufgelöst wurde:
 

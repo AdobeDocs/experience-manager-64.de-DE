@@ -8,7 +8,7 @@ exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 87%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!CAUTION]
 >
->[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
+>[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr`-Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc`-Namespace.
 
 ## Datenmodell {#data-model}
 
@@ -42,7 +42,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 **Eigenschaften**:
 
 * `name` ist der Name des Ordners. Dies entspricht dem letzten Segment im URL-Pfad ohne die Erweiterung.
-* `title` Ist ein optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann
+* `title` Ist ein optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 
 ### Assets {#assets}
 
-Experience Managers ein Asset die folgenden Elemente enthält:
+In Experience Manager enthalten Assets die folgenden Elemente:
 
 * Die Eigenschaften und Metadaten des Assets.
 * Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Bei den zusätzlichen Ausgabedarstellungen kann es sich um Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder aus PDF- oder Adobe InDesign-Dateien extrahierte Seiten handeln.
@@ -90,7 +90,7 @@ Die Assets-HTTP-API bietet die folgenden Funktionen:
 
 * Greife Sie auf `https://[aem_server]:[port]/system/console/configMgr` zu.
 * Navigieren Sie zu **[!UICONTROL Adobe Granite CSRF-Filter]**.
-* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** umfasst: `POST`, `PUT`, `DELETE`.
+* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** Folgendes umfasst: `POST`, `PUT`, `DELETE`.
 
 ## Abrufen von Ordnerauflistungen {#retrieve-a-folder-listing}
 
@@ -128,7 +128,7 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn eine `*` anstelle eines Knotennamens angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
+Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn statt eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameter- oder Dateinamen als Knotennamen.
 
 **Parameter**: Die Parameter sind `name` für den Asset-Namen und `file` für die Dateireferenz.
 
@@ -139,14 +139,14 @@ Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DA
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
-* 201 - ERSTELLT - wenn das Asset erfolgreich erstellt wurde.
-* 409 - KONFLIKT - wenn Asset bereits vorhanden ist.
+* 201 – ERSTELLT – wenn das Asset erfolgreich erstellt wurde.
+* 409 – KONFLIKT – wenn das Asset bereits existiert.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
-Aktualisiert die Binärdatei eines Assets (Ausgabedarstellung mit dem ursprünglichen Namen). Bei einer Aktualisierung wird der standardmäßige Asset-Verarbeitungs-Workflow ausgeführt, sofern er konfiguriert ist.
+Aktualisiert eine Asset-Binärdatei (Ausgabedarstellung mit Originalnamen). Bei einer Aktualisierung wird der standardmäßige Asset-Verarbeitungs-Workflow ausgeführt, sofern er konfiguriert ist.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
@@ -170,9 +170,9 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-### Metadaten-Update synchronisieren zwischen `dc` und `jcr` namespace {#sync-metadata-between-namespaces}
+### Synchronisieren von Metadaten-Updates zwischen dem `dc`- und dem `jcr`-Namespace {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namespace. Die mithilfe der Touch-optimierten Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namespace. So synchronisieren Sie die Metadatenwerte zwischen `dc` und `jcr` -Namespace erstellen, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im `jcr`-Namespace. Die mithilfe der Touch-optimierten Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namespace. Zum Synchronisieren der Metadatenwerte zwischen dem `dc`- und dem `jcr`-Namespace können Sie einen Workflow erstellen und Experience Manager so konfigurieren, dass der Workflow bei der Asset-Bearbeitung ausgeführt wird. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();

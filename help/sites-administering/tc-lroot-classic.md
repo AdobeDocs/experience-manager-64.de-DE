@@ -14,7 +14,7 @@ exl-id: 316903a8-22cf-45e6-a9f3-ac1d75beddec
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 1. Fügt eine neue untergeordnete Seite hinzu, welche die Sprachversion der Website darstellt:
 
    1. Klicken Sie auf „Neu“ > „Neue Seite“.
-   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss im Format `<language-code>` oder `<language-code>_<country-code>`, z. B. en, en_US, en_us, en_GB, en_gb.
+   1. Geben Sie in das Dialogfeld den Titel und den Namen ein. Der Name muss im Format `<language-code>` oder `<language-code>_<country-code>`, vorliegen, wie beispielsweise en, en_US, en_us, en_GB, en_gb.
 
       * Der unterstützte Sprachcode ist ein aus zwei Buchstaben bestehender Code in Kleinbuchstaben gemäß ISO-639-1
       * Der unterstützte Ländercode ist ein aus zwei Buchstaben bestehender Code in Klein- oder Großbuchstaben gemäß ISO-3166
@@ -37,7 +37,7 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 1. Wählen Sie in der Websites-Konsole in der Baumstruktur „Websites“ die Stammseite der Website aus.
 1. Wählen Sie im Menü „Tools“ die Option „Sprachkopie“.
 
-   ![toolslanguageCopy](assets/toolslanguagecopy.png)
+   ![toolslanguagecopy](assets/toolslanguagecopy.png)
 
    Das Dialogfeld „Sprachkopie“ zeigt eine Matrix der verfügbaren Sprachversionen und der Webseiten. Ein x in einer Sprachspalte bedeutet, dass die Seite in dieser Sprache verfügbar ist.
 
@@ -47,14 +47,14 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
 
    Im folgenden Beispiel wird die Seite „Ausrüstung“/„Sonnenbrille“/„Irian“ in die französische Sprachversion kopiert.
 
-   ![languageCopyDilogdown](assets/languagecopydilogdropdown.png)
+   ![languagecopydilogdropdown](assets/languagecopydilogdropdown.png)
 
    | Art der Sprachkopie | Beschreibung |
    |---|---|
-   | auto | Verwendet das Verhalten von übergeordneten Seiten |
+   | auto | Übernimmt das Verhalten der übergeordneten Seiten |
    | ignore | Erstellt keine Kopie dieser Seite und ihrer untergeordneten Elemente |
-   | `<language>+` (z. B. Französisch+) | Kopiert die Seite und alle untergeordneten Elemente aus dieser Sprache |
-   | `<language>` (z. B. Französisch) | Kopiert nur die Seite aus dieser Sprache |
+   | `<language>+` (z. B. French+) | Kopiert die Seite und alle untergeordneten Elemente aus dieser Sprache |
+   | `<language>` (z. B. French) | Kopiert nur die Seite aus dieser Sprache |
 
-1. Klicken Sie auf „OK“, um das Dialogfeld zu schließen.
+1. Klicken Sie auf OK, um das Dialogfeld zu schließen.
 1. Klicken Sie im nächsten Dialogfeld auf „Ja“, um die Kopie zu bestätigen.

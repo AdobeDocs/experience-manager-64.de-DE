@@ -51,7 +51,7 @@ Standardmäßig enthält AEM folgende Vorlagen für die Projekterstellung:
 Die Vorgehensweise beim Erstellen eines Projekts ist für jedes Projekt identisch. Unterschiede zwischen den Projekttypen gibt es in Bezug auf verfügbare [Benutzerrollen](/help/sites-authoring/projects.md) und [Workflows](/help/sites-authoring/projects-with-workflows.md).  So erstellen Sie ein neues Projekt:
 
 1. Tippen Sie in **Projekte** auf **Erstellen**, um den Assistenten zur **Projekterstellung** zu öffnen:
-1. Wählen Sie eine Vorlage aus. Standardmäßig, Einfaches Projekt, Medienprojekt, [Übersetzungsprojekt](/help/sites-administering/tc-manage.md)und [Produkt-Fotoshooting](/help/sites-authoring/managing-product-information.md) sind verfügbar und klicken Sie auf **Nächste**.
+1. Auswählen einer Vorlage. Standardmäßig, Einfaches Projekt, Medienprojekt, [Übersetzungsprojekt](/help/sites-administering/tc-manage.md)und [Produkt-Fotoshooting](/help/sites-authoring/managing-product-information.md) sind verfügbar und klicken Sie auf **Nächste**.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 

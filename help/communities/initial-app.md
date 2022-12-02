@@ -13,7 +13,7 @@ exl-id: 3da30cb4-39b2-4495-9e8b-93567b73b644
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -32,7 +32,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
 1. Im Explorer-Bereich der CRXDE Lite
 
-   * auswählen `/apps/an-scf-sandbox/templates`
+   * Wählen Sie `/apps/an-scf-sandbox/templates` aus.
    * **[!UICONTROL Erstellen > Vorlage erstellen]**
 
 1. Geben Sie im Dialogfeld „Vorlage erstellen“ die folgenden Werte ein und klicken Sie anschließend auf **[!UICONTROL Weiter]**:
@@ -87,7 +87,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
 Erstellen Sie die *component* definiert den Inhalt und rendert alle Seiten, die basierend auf der [Paketvorlage](#createthepagetemplate).
 
-1. Klicken Sie in der CRXDE Lite mit der rechten Maustaste **`/apps/an-scf-sandbox/components`** und klicken Sie auf **[!UICONTROL Erstellen > Komponente]**.
+1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf **`/apps/an-scf-sandbox/components`** und klicken Sie auf **[!UICONTROL Erstellen > Komponente]**.
 1. Durch Festlegen des Knotennamens (Beschriftung) auf *playpage*, lautet der Pfad zur Komponente
 
    `/apps/an-scf-sandbox/components/playpage`

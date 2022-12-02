@@ -14,7 +14,7 @@ exl-id: 54109f64-eb30-47cc-bf7a-756843d2da02
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2168'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -209,7 +209,7 @@ Beispiel: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
 2. Wählen Sie im Menü Bearbeiten die Option **[!UICONTROL Benutzer erstellen]**.
 3. Füllen Sie die `Create User` angezeigt.
    * Pfad muss `/home/users/community`
-4. Wählen Sie **[!UICONTROL Erstellen]**
+4. Wählen Sie **[!UICONTROL Erstellen]** aus
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
@@ -245,8 +245,8 @@ Im Folgenden finden Sie einige Konfigurationsdetails für Community-Mitglieder u
 
    * Legen Sie die folgenden Eigenschaften fest:
 
-      * **[!UICONTROL Automatische Benutzermitgliedschaft]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Benutzerpfadpräfix]**: `/community`
+      * **[!UICONTROL User auto membership]**: `community-<site name>-<uid>-members`
+      * **[!UICONTROL User Path Prefix]**: `/community`
       * **[!UICONTROL Group Path Prefix]**: `/community`
 
 4. [Das externe Anmeldemodul](../../help/sites-administering/ldap-config.md#the-external-login-module)

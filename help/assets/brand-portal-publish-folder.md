@@ -8,7 +8,7 @@ exl-id: f41ab750-5780-42ae-a131-5bc748280215
 source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
 source-wordcount: '552'
-ht-degree: 45%
+ht-degree: 65%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 45%
 
 Als Adobe Experience Manager Assets-Administrator können Sie Assets und Ordner in der [!DNL Experience Manager Assets Brand Portal] Instanz (oder planen Sie den Veröffentlichungs-Workflow auf einen späteren Zeitpunkt) für Ihre Organisation. Sie müssen jedoch zuerst integrieren [!DNL Experience Manager Assets] mit [!DNL Brand Portal]. Weitere Informationen finden Sie unter [Konfigurieren [!DNL Experience Manager Assets] mit Brand Portal](configure-aem-assets-with-brand-portal.md).
 
-Nachdem Sie ein Asset oder einen Ordner veröffentlicht haben, ist es für Benutzer in Brand Portal verfügbar.
+Nachdem Sie ein Asset oder einen Ordner veröffentlicht haben, ist es bzw. er in Brand Portal für Benutzer verfügbar.
 
 Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in [!DNL Assets], werden die Änderungen erst dann in Brand Portal übernommen, wenn Sie das Asset oder den Ordner erneut veröffentlichen. Mit dieser Funktion wird sichergestellt, dass Änderungen im Rahmen der laufenden Bearbeitung nicht in Brand Portal verfügbar sind. Nur genehmigte, von einem Administrator veröffentlichte Änderungen sind in Brand Portal verfügbar.
 
@@ -32,20 +32,20 @@ Wenn Sie nachfolgende Änderungen am ursprünglichen Asset oder Ordner in [!DNL 
 
    Um die ausgewählten Ordner in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-   * Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Wählen Sie dann im Menü die Option **[!UICONTROL In Brand Portal veröffentlichen]**.
+   * Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Wählen Sie dann im Menü die Option **[!UICONTROL In Brand Portal veröffentlichen]** aus.
    * Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
-3. Dann aus dem **[!UICONTROL Aktion]** select **[!UICONTROL In Brand Portal veröffentlichen]** und von **[!UICONTROL Planung]** select **[!UICONTROL Jetzt]**. Tippen Sie auf **[!UICONTROL Weiter].**
+3. Wählen Sie dann unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** und unter **[!UICONTROL Zeitplan]** die Option **[!UICONTROL Jetzt]** aus. Tippen Sie auf **[!UICONTROL Weiter].**
 4. Within **[!UICONTROL Anwendungsbereich]**, bestätigen Sie Ihre Auswahl und tippen Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**.
 
    Eine Meldung erscheint, die besagt, dass der Ordner zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurde. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um den veröffentlichten Ordner zu sehen.
 
-   **Ordner später veröffentlichen**
+   **Späteres Veröffentlichen von Ordnern**
 
-   So planen Sie die Veröffentlichung von Asset-Ordnern in Brand Portal auf einen späteren Zeitpunkt:
+   So planen Sie den Workflow zum Veröffentlichen von Asset-Ordnern in Brand Portal zu einem späteren Zeitpunkt:
 
-   1. Nachdem Sie die zu veröffentlichenden Assets/Ordner ausgewählt haben, wählen Sie **[!UICONTROL Veröffentlichung verwalten]** aus der Symbolleiste am oberen Rand.
-   2. on **[!UICONTROL Veröffentlichung verwalten]** Seite, wählen Sie **[!UICONTROL In Brand Portal veröffentlichen]** von **[!UICONTROL Aktion]** und wählen Sie **[!UICONTROL Später]** von **[!UICONTROL Planung]**.
+   1. Sobald Sie die zu veröffentlichenden Assets/Ordner ausgewählt haben, wählen Sie oben in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
+   2. Wählen Sie auf der Seite **[!UICONTROL Veröffentlichung verwalten]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** unter **[!UICONTROL Aktion]** und dann **[!UICONTROL Später]** unter **[!UICONTROL Zeitplan]** aus.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -77,7 +77,7 @@ Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
-   **Veröffentlichung später in Brand Portal rückgängig machen**
+   **Späteres Rückgängigmachen der Veröffentlichung in Brand Portal**
 
    So können Sie die Veröffentlichung eines Ordners in Brand Portal zu einem späteren Zeitpunkt rückgängig machen:
 
@@ -91,4 +91,4 @@ Sie können die Veröffentlichung der Ordner in Brand Portal sofort rückgängig
 
 >[!NOTE]
 >
->Das Veröffentlichen/Rückgängigmachen der Veröffentlichung eines Assets in/von Brand Portal ähnelt dem entsprechenden Verfahren für einen Ordner.
+>Das Verfahren zum Veröffentlichen bzw. Aufheben der Veröffentlichung eines Assets in Brand Portal ähnelt dem entsprechenden Verfahren für einen Ordner.

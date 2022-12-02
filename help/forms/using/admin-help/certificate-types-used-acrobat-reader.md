@@ -1,5 +1,5 @@
 ---
-title: 'Von Acrobat Reader DC Extensions verwendete Zertifikatstypen '
+title: Von Acrobat Reader DC Extensions verwendete Zertifikatstypen
 seo-title: Certificate types used by Acrobat Reader DC extensions
 description: Erfahren Sie mehr über die Zertifikatstypen, die in Acrobat Reader DC-Erweiterungen verwendet werden.
 seo-description: Learn about the certificate types used by Acrobat Reader DC extensions.

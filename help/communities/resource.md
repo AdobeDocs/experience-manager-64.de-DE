@@ -31,7 +31,7 @@ So fügen Sie der neuen Community-Site eine Aktivierungsressource hinzu:
    ![chlimage_1-199](assets/chlimage_1-199.png)
    ![chlimage_1-200](assets/chlimage_1-200.png)
 * Wählen Sie die Community-Site aus, zu der Aktivierungsressourcen hinzugefügt werden.
-   * Wählen Sie nun eine der folgenden Optionen aus `Enablement Tutorial`
+   * Auswählen `Enablement Tutorial`
 * Wählen Sie im Menü die Option ` Create`
 * Auswählen **[!UICONTROL Ressource]**
 
@@ -91,7 +91,7 @@ Lassen Sie die Einstellung deaktiviert, da diese Aktivierungsressource einem Ler
 
 ![chlimage_1-207](assets/chlimage_1-207.png)
 
-* Wählen Sie **[!UICONTROL Erstellen]**
+* Wählen Sie **[!UICONTROL Erstellen]** aus
 
 ![chlimage_1-208](assets/chlimage_1-208.png)
 
@@ -173,7 +173,7 @@ Wählen Sie über das Pulldown-Menü die
 
    *(Erforderlich)* Wählen Sie über das Pulldown-Menü ein Mitglied aus `Quinn Harper`.
 
-* Wählen Sie **[!UICONTROL Erstellen]**
+* Wählen Sie **[!UICONTROL Erstellen]** aus
 
 ![chlimage_1-217](assets/chlimage_1-217.png)
 

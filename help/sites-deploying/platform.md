@@ -14,7 +14,7 @@ exl-id: afd8f9ab-ae44-4845-9cb4-f6e28a35ad27
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '769'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Die AEM-Plattform in AEM 6 basiert auf Apache Jackrabbit Oak.
 
 Apache Jackrabbit Oak implementiert ein skalierbares und leistungsstarkes, hierarchisches Inhalts-Repository, das als Grundlage für moderne, erstklassige Websites und andere anspruchsvolle Inhaltsanwendungen dienen soll.
 
-Es ist die Nachfolgerin von Jackrabbit 2 und wird von AEM 6 als Standard-Backend für sein Inhalts-Repository CRX verwendet.
+Es handelt sich hierbei um die Nachfolgeversion von Jackrabbit 2 und die Lösung wird von AEM 6 als Standard-Backend für dessen Inhalts-Repository, CRX, verwendet.
 
 ## Designrichtlinien und -ziele {#design-principles-and-goals}
 
@@ -68,7 +68,7 @@ Darüber hinaus sind jetzt nicht-Java-basierte Implementierungen möglich, die T
 
 Die Oak-Speicherschicht stellt eine Abstraktionsschicht für die tatsächliche Speicherung der Inhalte bereit.
 
-Zurzeit sind in AEM6 zwei Speicherimplementierungen verfügbar: **Tar-Speicher** und **MongoDB Storage**.
+Derzeit stehen in AEM 6 zwei Speicher zur Verfügung: der **TAR-Speicher** und der **MongoDB-Speicher**.
 
 ### TAR-Speicher {#tar-storage}
 

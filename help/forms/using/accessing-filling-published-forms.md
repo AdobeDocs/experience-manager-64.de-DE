@@ -12,7 +12,7 @@ exl-id: d68806f8-8ed8-4aff-9724-bafbe2b1f18e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '939'
-ht-degree: 91%
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Navigieren Sie zur veröffentlichten Forms Portal-Seite. Weitere Informationen z
 
 Die Komponente „Search &amp; Lister“ von Forms Portal zeigt die in der Veröffentlichungsinstanz des AEM-Servers verfügbaren Formulare. Diese Liste enthält alle Formulare oder die im Filter angegebenen Formulare zum Zeitpunkt der Bearbeitung der Forms Portal-Seite. Eine Forms Portal-Seite ist ähnlich der in der folgenden Abbildung gezeigten:
 
-![Beispiel einer Forms Portal-Seite ](assets/forms-portal-page.png)
+![Beispiel für die Forms Portal-Seite ](assets/forms-portal-page.png)
 **Abbildung:** *Beispiel einer Forms Portal-Seite*
 
 ### Search &amp; Lister {#search-and-lister}
@@ -54,7 +54,7 @@ Sie können mithilfe der folgenden Optionen auf der Forms Portal-Seite nach Form
 
 Mit der Volltextsuche können Sie anhand der angegebenen Schlüsselwörter Formulare suchen und auflisten.
 
-![Dialogfeld für erweiterte Suche](assets/search-panel.png)
+![Dialogfeld für die erweiterte Suche](assets/search-panel.png)
 **Abbildung:** *Dialogfeld für erweiterte Suche*
 
 Die erweiterte Suche ermöglicht das Suchen nach Formularen anhand der festgelegten Formulareigenschaften. Sie bietet genauere Ergebnisse als die Volltextsuche. Die erweiterte Suche umfasst die Suche auf Basis von Tags, Eigenschaften (wie Autor, Beschreibung und Titel), Änderungsdatum und Volltext.
@@ -76,13 +76,13 @@ Benutzer haben die Möglichkeit, den Entwurf eines Formulars zu speichern, indem
 
 Die im Formular eingetragenen Daten (einschließlich Anlagen) werden als Entwurf auf dem Server gespeichert. Der Entwurf eines Formulars kann beliebig oft gespeichert werden. Das gespeicherte Formular wird auf der Registerkarte „Formular“ der Komponente „Drafts and Submissions“ der Seite angezeigt.
 
-Nach dem Ausfüllen des Formulars versenden Benutzer die Formulare, indem sie auf dem Formular auf die Schaltfläche „Übermitteln“·klicken. Die übermittelten Formulare werden auf der Registerkarte „Übermittelte Formulare“ der Komponente „Drafts and Submissions“ der Seite angezeigt.
+Nach dem Ausfüllen des Formulars versenden Benutzer die Formulare, indem sie auf dem Formular auf die Schaltfläche „Übermitteln“ klicken. Die übermittelten Formulare werden auf der Registerkarte „Übermittelte Formulare“ der Komponente „Drafts and Submissions“ der Seite angezeigt.
 
 >[!NOTE]
 >
->Gesendete Formulare werden auf der Registerkarte &quot;Gesendete Forms&quot;nur angezeigt, wenn die Sendeaktion für das adaptive Formular als Forms Portal-Sendeaktion konfiguriert ist. Weitere Informationen zu Sendeaktionen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md).
+>Übermittelte Formulare werden nur dann auf der Registerkarte „Übermittelte Formulare“ angezeigt, wenn die Übermittlungsaktion für das adaptive Formular als Forms Portal-Übermittlungsaktion konfiguriert ist. Weitere Informationen zu Sendeaktionen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md).
 
-![Komponente &quot;Drafts and Submissions&quot;](assets/draft-submission.png)
+![Komponente „Drafts and Submissions“](assets/draft-submission.png)
 **Abbildung:** *Komponente &quot;Drafts and Submissions&quot;*
 
 ## Erstellen ein neues Formular mit den gesendeten Formulardaten {#start-a-new-form-using-submitted-form-data}

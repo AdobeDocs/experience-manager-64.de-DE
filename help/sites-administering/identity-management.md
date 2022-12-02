@@ -13,7 +13,7 @@ exl-id: 82e4af22-30b7-4678-9b14-84f2fecfd310
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1226'
-ht-degree: 78%
+ht-degree: 99%
 
 ---
 
@@ -21,26 +21,26 @@ ht-degree: 78%
 
 Die einzelnen Besucher Ihrer Website können nur identifiziert werden, wenn Sie ihnen die Möglichkeit zum Anmelden bieten. Es gibt verschiedene Gründe, warum Sie eine Anmeldemöglichkeit bieten sollten:
 
-* Besucher der [AEM Communities](/help/communities/overview.md)Website müssen sich anmelden, um Inhalte an die Community posten zu können.
+* Besuchende der [AEM Communities](/help/communities/overview.md)-Website müssen sich anmelden, um Inhalte an die Community posten zu können.
 * [Geschlossene Benutzergruppen](/help/sites-administering/cug.md)
 
-   Möglicherweise müssen Sie den Zugriff auf Ihre Website (oder Abschnitte davon) auf bestimmte Besucher beschränken.
+   Sie können den Zugang zu Ihrer Website (oder Abschnitten davon) ggf. auf bestimmte Besuchende beschränken.
 
-* [Personalisierung](/help/sites-administering/personalization.md) Ermöglicht Besuchern, bestimmte Aspekte des Zugriffs auf Ihre Website zu konfigurieren.
+* [Personalisierung](/help/sites-administering/personalization.md) ermöglicht Besuchenden die Konfiguration bestimmter Aspekte des Zugriffs auf Ihre Website.
 
-Die Anmelde (und Abmelde)-Funktion wird von einem [Konto mit einem **Profil**](#profiles-and-user-accounts) bereitgestellt, das zusätzliche Informationen über den registrierten Besucher (Benutzer) enthält. Die tatsächlichen Prozesse für die Registrierung und Autorisierung können abweichen:
+Die Anmelde- (und Abmelde)-Funktion wird von einem [Konto mit einem **Profil**](#profiles-and-user-accounts) bereitgestellt, das zusätzliche Informationen über registrierte Besuchende (Benutzende) enthält. Die tatsächlichen Prozesse für die Registrierung und Autorisierung können abweichen:
 
-* Selbstregistrierung von der Website
+* Selbstregistrierung über die Website
 
-   A [Community-Site](/help/communities/sites-console.md) kann so konfiguriert werden, dass sich Besucher selbst registrieren oder sich bei ihren Facebook- oder Twitter-Konten anmelden können.
+   Eine [Community-Website](/help/communities/sites-console.md) kann so konfiguriert werden, dass Besuchenden die Selbstregistrierung oder die Anmeldung mit ihrem Facebook- oder Twitter-Konto möglich ist.
 
-* Antrag auf Registrierung von der Website
+* Antrag auf Registrierung über die Website
 
-   Bei geschlossenen Benutzergruppen können Sie Besuchern erlauben, eine Registrierung anzufordern, aber die Autorisierung mithilfe eines Workflows erzwingen.
+   Für eine geschlossene Benutzergruppe können Sie Besuchenden einen Antrag auf Registrierung gestatten, die Autorisierung jedoch mithilfe eines Workflows zwangsweise durchsetzen.
 
-* Registrieren Sie jedes Konto in der Autorenumgebung.
+* Registrieren jedes Kontos über die Authoring-Umgebung
 
-   Wenn Sie nur über eine geringe Anzahl von Profilen verfügen, die ohnehin autorisiert werden müssen, können Sie sich entscheiden, diese direkt zu registrieren.
+   Wenn Sie nur über eine geringe Anzahl von Profilen verfügen, die ohnehin autorisiert werden müssen, können Sie diese auch direkt registrieren.
 
 Eine Reihe von Komponenten und Formularen kann zum Erfassen der erforderlichen Identifikationsinformationen sowie danach der zusätzlichen (oft optionalen) Profilinformationen dienen, um den Besuchern die Registrierung zu ermöglichen. Nachdem sie sich registriert haben, sollten sie auch in der Lage sein, die Daten, die sie eingereicht haben, zu überprüfen und zu aktualisieren.
 
@@ -57,14 +57,15 @@ Zusätzliche Funktionalität kann konfiguriert oder entwickelt werden:
 
 Ein Formular kann verwendet werden, um die Registrierungsinformationen zu erfassen und dann das neue Konto und das Profil anzulegen.
 
-Beispielsweise können Benutzer über die Geometrixx ein neues Profil anfordern\
+Benutzerinnen und Benutzer können beispielsweise mithilfe der folgenden Geometrixx-Seite ein neues Profil anfordern:
+\
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![registerform](assets/registerform.png)
 
-Nach dem Übermitteln der Anfrage wird die Profilseite geöffnet. Auf dieser kann der Benutzer persönliche Daten bereitstellen.
+Nach dem Übermitteln der Anfrage wird die Profilseite geöffnet. Auf dieser kann der Benutzer oder die Benutzerin persönliche Daten bereitstellen.
 
-![profilePage](assets/profilepage.png)
+![profilepage](assets/profilepage.png)
 
 Das neue Konto ist auch in der [Benutzerkonsole](/help/sites-administering/security.md) sichtbar.
 
@@ -72,9 +73,9 @@ Das neue Konto ist auch in der [Benutzerkonsole](/help/sites-administering/secur
 
 Die Anmeldekomponente kann zum Erfassen der Anmeldeinformationen und dann zur Aktivierung des Login-Verfahrens verwendet werden.
 
-Sie stellt dem Besucher die Standardfelder **Benutzername** und **Kennwort** bereit, sowie ferner eine Schaltfläche **Anmelden** zum Aktivieren des Login-Verfahrens bei Eingabe der Anmeldedaten.
+Sie stellt dem Besucher bzw. der Besucherin die Standardfelder **Benutzername** und **Kennwort** bereit, sowie ferner eine Schaltfläche **Anmelden** zum Aktivieren des Login-Verfahrens bei Eingabe der Anmeldedaten.
 
-Benutzer können sich beispielsweise entweder anmelden oder mithilfe der Option **Anmelden** in der Geometrixx-Symbolleiste ein neues Konto erstellen, welches folgende Seite nutzt:
+Benutzende können sich beispielsweise entweder anmelden oder mithilfe der Option **Anmelden** in der Geometrixx-Symbolleiste ein neues Konto erstellen, welches folgende Seite nutzt:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -86,18 +87,18 @@ Da ein Anmeldemechanismus vorhanden ist, ist auch ein Abmeldemechanismus erforde
 
 ## Anzeigen und Aktualisieren eines Profils {#viewing-and-updating-a-profile}
 
-Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informationen in seinem Profil haben. Sie sollten in der Lage sein, diese Informationen zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mit einem ähnlichen Formular erfolgen. Beispiel in Geometrixx:
+Je nach Ihrem Registrierungsformular kann der Benutzer die registrierten Informationen in seinem Profil haben. Sie sollten in der Lage sein, diese Informationen zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mithilfe eines ähnlichen Formulars erfolgen, beispielsweise in Geometrixx:
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Um die Details Ihres Profils anzuzeigen, klicken Sie auf **Mein Profil** in der oberen rechten Ecke einer beliebigen Seite; zum Beispiel mit dem `admin` Konto:\
+Um die Daten Ihres Profils einzusehen, klicken Sie in der oberen rechten Ecke einer beliebigen Seite auf **Mein Profil**; beispielsweise mit dem `admin`-Konto:\
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Autorenumgebung und mit ausreichend Berechtigungen) ein anderes Profil anzeigen:
+Sie können mit dem [ClientContext](/help/sites-administering/client-context.md) (in der Authoring-Umgebung und mit ausreichend Berechtigungen) ein anderes Profil anzeigen:
 
-1. Öffnen einer Seite; beispielsweise die Geometrixx-Seite:
+1. Öffnen Sie eine Seite; beispielsweise die Geometrixx-Seite:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -111,7 +112,7 @@ Sie können mit dem [ClientContext](/help/sites-administering/client-context.md)
 1. Klicken Sie auf **OK**.
 1. Klicken Sie erneut auf **Mein Profil**. Das Formular wird mit Alisons Daten aktualisiert.
 
-   ![Profil](assets/profilealison.png)
+   ![profilealison](assets/profilealison.png)
 
 1. Sie können die Daten nun mit der Option **Profil bearbeiten** oder **Kennwort ändern** aktualisieren.
 
@@ -139,7 +140,7 @@ Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufü
 
    Bei der nächsten Ansicht eines Profils können Sie eine Lieblingsfarbe auswählen:
 
-   ![aparkerfavcolor](assets/aparkerfavcolour.png)
+   ![aparkerfavcolour](assets/aparkerfavcolour.png)
 
    Das Feld wird unter dem Abschnitt **Profil** des relevanten Benutzerkontos gespeichert:
 
@@ -147,7 +148,7 @@ Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufü
 
 ## Profilstatus {#profile-states}
 
-Es gibt eine Reihe von Anwendungsfällen, in denen Sie wissen müssen, ob sich ein Benutzer (oder eher sein Profil) in einem *spezifischer Status* oder nicht.
+Es gibt eine Reihe von Nutzungsszenarien, bei denen es wichtig ist zu wissen, ob sich eine Benutzerin bzw. ein Benutzer (oder eher das Profil) in einem *bestimmten Status* befindet.
 
 Dazu müssen Sie eine geeignete Eigenschaft im Benutzerprofil in einer Weise definieren, die:
 
@@ -159,7 +160,7 @@ Dies geschieht mithilfe von:
 
 * [Statusanbieter](#state-providers)
 
-   So verwalten Sie die beiden Status einer bestimmten Eigenschaft und die Transitionen zwischen den beiden.
+   Zum Verwalten der beiden Status einer speziellen Eigenschaft sowie der Übergänge zwischen beiden.
 
 * [Workflows](#workflows)
 
@@ -168,7 +169,7 @@ Dies geschieht mithilfe von:
 Es können mehrere Status definiert werden; in Geometrixx umfassen diese beispielsweise:
 
 * das Abonnieren (oder das Aufheben des Abonnements) von Benachrichtigungen zu Newslettern oder Kommentar-Threads
-* Das Hinzufügen und Entfernen einer Verknüpfung zu einem Freund
+* Das Hinzufügen und Entfernen einer Verknüpfung zu einem Freund bzw. einer Freundin
 
 ### Statusanbieter {#state-providers}
 
@@ -183,13 +184,13 @@ Statusanbieter werden als Komponenten implementiert und können so für Ihr Proj
 
 Statusanbieter verwalten eine Profileigenschaft sowie deren Status.
 
-Ein Workflow ist erforderlich, um die statusbezogenen Aktionen zu implementieren. Beispiel: Beim Abonnieren von Benachrichtigungen handhabt der Workflow die tatsächliche Abonnementaktion; bei der Aufhebung des Benachrichtigungsabonnements handhabt der Workflow das Entfernen des Benutzers von der Abonnementliste.
+Ein Workflow ist erforderlich, um die statusbezogenen Aktionen zu implementieren. Beispiel: Beim Abonnieren von Benachrichtigungen handhabt der Workflow die tatsächliche Abonnementaktion; bei der Aufhebung des Benachrichtigungsabonnements handhabt der Workflow das Entfernen des Benutzers bzw. der Benutzerin von der Abonnementliste.
 
 ## Profile und Benutzerkonten {#profiles-and-user-accounts}
 
-Profile werden im Inhalts-Repository als Teil der [Benutzerkonto](/help/sites-administering/user-group-ac-admin.md).
+Profile werden im Content-Repository als Teil des [Benutzerkontos](/help/sites-administering/user-group-ac-admin.md) gespeichert.
 
-Das Profil finden Sie unter `/home/users/geometrixx`:
+Das Profil ist unter `/home/users/geometrixx` zu finden:
 
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
@@ -206,7 +207,7 @@ Dadurch ist Folgendes möglich:
 
 Wenn ein solcher Zugriff für Ihre Installation nicht geeignet ist, können Sie diese Standardeinstellungen ändern.
 
-Dies kann mithilfe der **[Zugriffssteuerung](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
+Verwenden Sie dazu die Registerkarte **[Zugriffskontrolle](/help/sites-administering/user-group-ac-admin.md#access-right-management)**:
 
 ![aclmanager](assets/aclmanager.png)
 
@@ -225,7 +226,7 @@ Die Standardeinstellungen der Komponente werden folgendermaßen angezeigt:
 
 ![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
 
-### Profil-Avatar-Foto {#profile-avatar-photo}
+### Profil – Avatar-Foto {#profile-avatar-photo}
 
 Diese Komponente bietet dem Benutzer die Möglichkeit, eine Avatar-Fotodatei auszuwählen und hochzuladen.
 
@@ -235,9 +236,9 @@ Diese Komponente bietet dem Benutzer die Möglichkeit, eine Avatar-Fotodatei aus
 
 Diese Komponente ermöglicht es dem Benutzer, einen detaillierten Namen einzugeben.
 
-![dc_profiles_details_name](assets/dc_profiles_detailedname.png)
+![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
 
-### Profil-Geschlecht {#profile-gender}
+### Profil – Geschlecht {#profile-gender}
 
 Diese Komponente ermöglicht dem Benutzer die Eingabe seines Geschlechts.
 

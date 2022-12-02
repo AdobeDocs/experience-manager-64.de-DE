@@ -13,7 +13,7 @@ exl-id: 21c10b39-ca37-4085-86f8-063c30a180ed
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3259'
-ht-degree: 83%
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Bei Problemen, die speziell mit der Plattform an sich in Verbindung stehen, wend
 
 Mindestanforderungen für die Installation von Adobe Experience Manager:
 
-* Installierte Java-Plattform, Standard Edition JDK oder andere unterstützte [Java Virtual Machines](#java-virtual-machines)
+* Installierte Java-Plattform, Standard Edition JDK oder andere unterstützte [Java Virtual Machines](#java-virtual-machines)
 * Experience Manager Quickstart-Datei (eigenständige JAR-Datei oder Webanwendungsbereitstellungs-WAR-Datei)
 
 ### Mindestgrößenanforderungen {#minimum-sizing-requirements}
@@ -45,7 +45,6 @@ Mindestanforderungen für die Ausführung von Adobe Experience Manager:
 >
 >* Digitale Assets benötigen mehr Grundspeicher. Einzelheiten finden Sie unter [Bereitstellung und Wartung](/help/sites-deploying/deploy.md#default-local-install).
 >* Das [AEM Forms Add-on-Paket](/help/forms/using/installing-configuring-aem-forms-osgi.md) benötigt 15 GB temporären Speicherplatz. 
-
 >
 
 
@@ -146,7 +145,7 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
   <tr> 
    <td><strong>Dateisystem mit TAR-Dateien [1] </strong></td> 
    <td>Repository</td> 
-   <td>A: Unterstützt </td> 
+   <td>A: Unterstützt</td> 
   </tr> 
   <tr> 
    <td><strong>Dateisystem mit Datenspeicher [1]</strong></td> 
@@ -169,14 +168,14 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
    <td>A: Unterstützt</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.6   [5, 6]</td> 
+   <td>MongoDB Enterprise 3.6 [5, 6]</td> 
    <td>Repository</td> 
-   <td>A: Unterstützt  mit Einschränkungen</td> 
+   <td>A: Unterstützt mit Einschränkungen</td> 
   </tr> 
   <tr> 
    <td>MongoDB Enterprise 3.4 [2, 3, 6]</td> 
    <td>Repository</td> 
-   <td>A: Unterstützt  mit Einschränkungen</td> 
+   <td>A: Unterstützt mit Einschränkungen</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
@@ -191,12 +190,12 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
   <tr> 
    <td>IBM DB2 10.5</td> 
    <td>Repository und Forms-Datenbank</td> 
-   <td>R: Eingeschränkte Unterstützung (4)</td> 
+   <td>R: Eingeschränkte Unterstützung  (4)</td> 
   </tr> 
   <tr> 
-   <td>Oracle Database 12c (12.1.x)</td> 
+   <td>Oracle Database 12c (12.1.x)</td> 
    <td>Repository und Forms-Datenbank</td> 
-   <td>R: Eingeschränkte Unterstützung</td> 
+   <td>R: Eingeschränkte Unterstützung </td> 
   </tr> 
   <tr> 
    <td>Microsoft SQL Server 2017</td> 
@@ -241,7 +240,7 @@ Es gibt verschiedene Optionen, um das Repository von Adobe Experience Manager be
 >
 >MongoDB ist eine Drittanbietersoftware und nicht Bestandteil des AEM-Lizenzierungspakets. Weitere Informationen finden Sie auf der Seite für die [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.org/about/licensing/).
 >
->Adobe empfiehlt die Lizenzierung der MongoDB Enterprise-Version, damit Sie von der professionellen Unterstützung profitieren und die AEM-Bereitstellung mit MongoDB optimal nutzen können. Siehe [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) für weitere Informationen.
+>Adobe empfiehlt die Lizenzierung der MongoDB Enterprise-Version, damit Sie von der professionellen Unterstützung profitieren und die AEM-Bereitstellung mit MongoDB optimal nutzen können. Weitere Informationen finden Sie unter [Empfohlene Implementierungen](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk).
 >
 >Die Lizenz umfasst eine Standard-Replikatgruppe. Diese besteht aus einer primären und zwei sekundären Instanzen, die für die Autoren- oder Veröffentlichungsbereitstellungen verwendet werden können.
 >
@@ -271,7 +270,7 @@ Die Servlet-API-Version muss mindestens Servlet 3.1 sein, darf jedoch nicht höh
 | Oracle WebLogic Server 12.2 (12cR2) | A: Unterstützt |
 | Continuous Delivery für IBM WebSphere Application Server (LibertyProfile) mit Web Profile 7.0 und IBM JRE 1.8 | A: Unterstützt |
 | IBM WebSphere Application Server 9.0 | A: Unterstützt |
-| Apache Tomcat 8.5.x | A: Unterstützt |
+| Apache Tomcat 8.5.x | A: Unterstützt |
 | JBoss EAP 7.1.0 mit JBoss Application Server | A: Unterstützt (1) |
 | JBoss EAP 7.0.0 mit JBoss Application Server | A: Unterstützt |
 
@@ -318,7 +317,7 @@ Adobe Experience Manager funktioniert mit den folgenden Serverplattformen:
  </tbody> 
 </table>
 
-1. Der Linux-Kernel 2.6, 3.x und 4.x enthält Derivate von Red Hat-Distribution, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. AEM Forms-Add-On-Funktionen werden nur auf CentOS 7 und Red Hat Enterprise Linux 7 unterstützt.
+1. Die Linux-Kernel 2.6, 3.x und 4.x umfassen Ableitungen aus Red Hat, einschließlich Red Hat Enterprise Linux, CentOS, Oracle Linux und Amazon Linux. AEM Forms-Add-On-Funktionen werden nur auf CentOS 7 und Red Hat Enterprise Linux 7 unterstützt.
 1. AEM Assets: Informationen hierzu finden Sie im Abschnitt über die [Unterstützung für das Zurückschreiben von XMP-Metadaten](#requirements-for-aem-assets-xmp-metadata-write-back).
 1. AEM Assets: Nicht unterstützt für Dynamic Media Imaging. Videos für dynamische Medien werden nicht unterstützt.
 1. AEM Forms wird nur auf Ubuntu 16.04 LTS unterstützt.
@@ -339,7 +338,7 @@ Für die Bereitstellung von AEM auf Azure oder AWS ohne Adobe Managed Services w
 
 ### Dispatcher-Plattformen (Webserver) {#dispatcher-platforms-web-servers}
 
-Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.4 ist die Dispatcher-Version 4.3.1 oder höher erforderlich.
+Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.4 ist die Dispatcher-Version 4.3.1 oder höher erforderlich.
 
 Die folgenden Webserver werden für die Verwendung mit der Dispatcher-Version 4.3.1 unterstützt:
 
@@ -349,7 +348,7 @@ Die folgenden Webserver werden für die Verwendung mit der Dispatcher-Version 4.
 | Microsoft IIS 10 (Internet Information Server) | A: Unterstützt |
 | Microsoft IIS 8.5 (Internet Information Server) | A: Unterstützt |
 
-1. Auf Grundlage des Apache-httpd-Quellcodes erstellte Webserver verfügen über dieselbe Unterstützungsebene wie die Version von httpd, auf der sie basiert. Wenden Sie sich bei Zweifeln hinsichtlich der Unterstützungsebene des jeweiligen Serverprodukts zur Bestätigung an Adobe. Folgende Fälle:
+1. Auf Grundlage des Apache-httpd-Quell-Codes erstellte Webserver verfügen über dieselbe Unterstützungsebene wie die Version von httpd, auf der sie basiert. Wenden Sie sich bei Zweifeln hinsichtlich der Unterstützungsebene des jeweiligen Serverprodukts zur Bestätigung an Adobe. Folgende Fälle:
 
    1. Der HTTP-Server wurde nur mithilfe von offiziellen Apache-Quellverteilungen erstellt oder
    1. der HTTP-Server wurde als Bestandteil des Betriebssystems geliefert, auf dem er ausgeführt wird. Beispiele: IBM HTTP Server, Oracle HTTP Server
@@ -383,7 +382,7 @@ Die AEM-Benutzeroberfläche ist für die Verwendung auf größeren Bildschirmen 
    <td>A: Unterstützt</td> 
   </tr> 
   <tr> 
-   <td>Microsoft Edge (Evergreen)</td> 
+   <td>Microsoft Edge (Evergreen)</td> 
    <td>A: Unterstützt</td> 
    <td>A: Unterstützt</td> 
   </tr> 
@@ -435,7 +434,7 @@ Die AEM-Benutzeroberfläche ist für die Verwendung auf größeren Bildschirmen 
  </tbody> 
 </table>
 
-1. Erweiterte Supportversion von Firefox: [Weitere Informationen darüber finden Sie auf mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
+1. Erweiterte Supportversion von Firefox: [Weitere Informationen darüber finden Sie auf mozilla.org](https://www.mozilla.org/de-DE/firefox/organizations/faq/)
 1. Unterstützung für Apple iPad 
 
 ### Unterstützte Browser für Websites {#supported-browsers-for-websites}
@@ -472,19 +471,19 @@ Wenn eine IP-Adresse angegeben werden muss, können Sie (je nach Bedarf) aus den
 
 * eine IPv6-Adresse
 
-   Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
+   zum Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * eine IPv4-Adresse
 
-   Beispiel `https://123.1.1.4:4502`
+   zum Beispiel `https://123.1.1.4:4502`
 
-* einen Servernamen
+* einen Server-Namen
 
-   Beispiel: `https://www.yourserver.com:4502`
+   zum Beispiel `https://www.yourserver.com:4502`
 
-* Standardfall von `localhost` wird sowohl für IPv4- als auch für IPv6-Netzwerkinstallationen interpretiert
+* der Standardfall von `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen interpretiert
 
-   Beispiel: `http://localhost:4502`
+   zum Beispiel `http://localhost:4502`
 
 ### Anforderungen für das Add-on AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
@@ -599,11 +598,11 @@ x86
   </tr> 
   <tr> 
    <td>OpenOffice 4.1.2</td> 
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</td> 
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</td> 
   </tr> 
   <tr> 
    <td><p>OpenOffice 3.4</p> </td> 
-   <td><p>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</p> </td> 
+   <td><p>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF und TXT</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -614,14 +613,13 @@ x86
 >
 >Zusätzlich gilt Folgendes:
 >
->* Für PDF Generator ist die [klassische Acrobat 2017-Version 17.011.30078 oder höher](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) für die Konversion erforderlich.
+>* Für PDF Generator ist die [klassische Acrobat 2017-Version 17.011.30078 oder höher](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) für die Konversion erforderlich.
 >* AEM Forms unterstützt nur 32-Bit-Editionen der unterstützten Software.
 >* Die Funktionen von OCR PDF (durchsuchbare PDF), Optimize PDF und ExportPDF werden nur unter Microsoft Windows unterstützt.
 >* Der HTML2PDF-Dienst wird unter AIX nicht mehr unterstützt.
 >* PDF Generator-Konversionen für OpenOffice werden nur unter Windows, Linux und Solaris unterstützt.
->* Die Funktionen von OCR PDF, Optimize PDF und Export PDF werden nur unter Windows unterstützt.
->* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung entsprechend Ihrer Implementierung ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
-
+>* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
+>* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
 >
 
 
@@ -638,13 +636,13 @@ x86
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC
 * Administratorrechte für die Installation von Designer
 
-### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM-Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 Die XMP-Zurückschreibung wird für die folgenden Plattformen und Dateiformate unterstützt und aktiviert:
 
 **Betriebssysteme**
 
-* Linux (32-Bit, 32-Bit-Anwendungsunterstützung auf 64-Bit-Systemen erforderlich). Anweisungen zum Installieren von 32-Bit-Client-Bibliotheken finden Sie unter [So aktivieren Sie XMP Extraktion und Zurückschreiben auf 64-Bit RedHat Linux](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+* Linux (32-Bit, 32-Bit-Anwendungsunterstützung auf 64-Bit-Systemen erforderlich). Schrittweise Anleitungen zur Installation von 32-Bit-Clientbibliotheken finden Sie unter [Aktivieren von XMP-Extraktion und -Writeback unter RedHat Linux (64 Bit)](https://helpx.adobe.com/de/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
 * Windows Server
 * Oracle Solaris

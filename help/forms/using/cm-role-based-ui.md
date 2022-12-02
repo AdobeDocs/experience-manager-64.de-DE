@@ -42,7 +42,7 @@ Weitere Informationen zu Gruppen, Berechtigungen, Zugriffssteuerungslisten und z
 
    1. Klicken Sie im Begrüßungsbildschirm oder in verschiedenen anderen Bereichen in AEM auf das Sicherheitssymbol:
 
-   1. Direktes Navigieren zu `https://[server]:[port]/useradmin`. Achten Sie darauf, sich als Administrator bei AEM anzumelden.
+   1. Navigieren Sie direkt zu `https://[server]:[port]/useradmin`. Achten Sie darauf, sich als Admin bei AEM anzumelden.
 
       ![]()
    In der linken Struktur sehen Sie alle aktuell im System vorhandenen Benutzer und Gruppen. Sie können die anzuzeigenden Spalten auswählen, den Inhalt der Spalten sortieren und sogar die Reihenfolge ändern, in der die Spalten angezeigt werden, indem Sie die Spaltenüberschrift an eine neue Position ziehen.

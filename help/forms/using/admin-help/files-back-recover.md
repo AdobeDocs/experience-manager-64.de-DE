@@ -13,7 +13,7 @@ exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
 source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
 source-wordcount: '2142'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Die zu sichernden Anwendungs- und Datendateien werden in den folgenden Abschnitt
 Berücksichtigen Sie folgende Punkte zu Sicherung und Wiederherstellung:
 
 * Die Datenbank sollte vor GDS und AEM-Repository gesichert werden.
-* Wenn Sie die Knoten in einer Clusterumgebung zur Sicherung herunterfahren müssen, stellen Sie sicher, dass die sekundären Knoten vor dem primären Knoten heruntergefahren werden. Andernfalls kann es zu Unregelmäßigkeiten im Cluster oder im Server kommen. Außerdem sollte der primäre Knoten vor jedem sekundären Knoten live geschaltet werden.
+* Wenn Sie die Knoten in einer geclusterten Umgebung für die Sicherung herunterfahren müssen, stellen Sie sicher, dass die sekundären Knoten vor dem primären Knoten heruntergefahren werden. Andernfalls kann es zu Unregelmäßigkeiten im Cluster oder im Server kommen. Außerdem sollte der primäre Knoten vor allen sekundären Knoten in Betrieb genommen werden.
 * Für den Wiederherstellungsvorgang eines Clusters sollte der Anwendungsserver für jeden Knoten im Cluster angehalten werden.
 
 ## Ordner des globalen Dokumentenspeichers {#global-document-storage-directory}
@@ -92,7 +92,7 @@ Um die Datenbank in Echtzeit zu sichern, müssen Sie den Snapshot-Modus wählen 
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe[ Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (nicht mehr unterstützt) ist ein Inhaltsverwaltungssystem, das mit LiveCycle installiert wird. Es ermöglicht es Benutzern, am Menschen orientierte Prozesse zu entwerfen, zu verwalten, zu überwachen und zu optimieren. Die Unterstützung von Content Services (veraltet) endet am 31.12.2014. Siehe [Adobe-Produkt-Lifecycle-Dokument](https://www.adobe.com/de/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -105,7 +105,7 @@ Konfigurieren Sie DB2-Datenbank für die Ausführung im Archivprotokollmodus.
 IBM bietet eine Zusammenstellung von Werkzeugen und Hilfesystemen an, die Datenbankadministratoren bei der Verwaltung von Sicherungs- und Wiederherstellungsaufgaben unterstützt:
 
 * IBM DB2 Archive Log Accelerator
-* IBM DB2 Data Archive expert (siehe [IBM DB2 Data Archive Expert User&#39;s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
+* IBM DB2 Data Archive Expert (Siehe [IBM DB2 Data Archive Expert Benutzerhandbuch und Referenz](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).
 
 DB2 verfügt über integrierte Funktionen zum Sichern einer Datenbank in Tivoli Storage Manager. Durch die Verwendung von Tivoli Storage Manager können DB2-Sicherungen auf anderen Medien oder den lokalen Festplattenlaufwerken gespeichert werden.
 
@@ -130,7 +130,7 @@ SQL Server bietet auch zwei Sicherungs- und Wiederherstellungswerkzeuge:
 * SQL Server Management Studio (grafische Benutzeroberfläche)
 * T-SQL (Befehlszeile)
 
-Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
+Weitere Informationen finden Sie unter [Sicherung und Wiederherstellung](https://msdn.microsoft.com/de-de/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -138,11 +138,11 @@ Verwenden Sie MySQLAdmin oder ändern Sie die INI-Dateien unter Windows so, dass
 
 >[!NOTE]
 >
->Der binäre Standardprotokolliermodus für MySQL ist „Statement“. Dieser Modus ist mit von Content Services (nicht mehr unterstützt) verwendeten Tabellen nicht kompatibel. Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu:
+>Der binäre Standardprotokolliermodus für MySQL ist „Statement“. Dieser Modus ist mit von Content Services (nicht mehr unterstützt) verwendeten Tabellen nicht kompatibel. Durch die Verwendung der binären Protokollierung in diesem Standardmodus schlägt Content Services (nicht mehr unterstützt) fehl. Wenn Ihr System Content Services (nicht mehr unterstützt) enthält, verwenden Sie den Protokollmodus „Gemischt“. Um die Protokollierung im Modus „Gemischt“ zu aktivieren, fügen Sie der Datei „my.ini“ folgende Argumente hinzu: 
 >
 >`binlog_format=mixed log-bin=logname`
 
-Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. Um eine inkrementelle Sicherung durchzuführen, starten Sie den Server mit dem - `log-bin` wie im vorherigen Abschnitt beschrieben. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. Sie können einen Wechsel manuell erzwingen, indem Sie die `FLUSH LOGS SQL` Befehl. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
+Mit dem Dienstprogramm „mysqldump“ können Sie eine vollständige Datenbanksicherung erstellen. Vollständige Sicherungen sind erforderlich, aber nicht immer zweckmäßig. Sie erzeugen große Sicherungsdateien und ihre Erzeugung nimmt viel Zeit in Anspruch. Um eine inkrementelle Sicherung durchzuführen, stellen Sie sicher, dass Sie den Server mit der Option - `log-bin` starten, wie im vorherigen Abschnitt beschrieben. Bei jedem Neustart des MySQL-Servers wird das Schreiben in das aktuelle Binärprotokoll beendet und ein neues erstellt, das ab dann als aktuelles Binärprotokoll gilt. Über den Befehl `FLUSH LOGS SQL` können Sie diesen Wechsel manuell erzwingen. Nach der ersten vollständigen Sicherung erfolgen nachfolgende inkrementelle Sicherungen mithilfe von „mysqladmin“ und dem Befehl `flush-logs`, der die nächste Protokolldatei generiert.
 
 Siehe [Backup Strategy Summary](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 

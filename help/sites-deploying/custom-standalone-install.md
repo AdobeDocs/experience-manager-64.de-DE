@@ -1,7 +1,7 @@
 ---
 title: Benutzerdefinierte Standalone-Installation
 seo-title: Custom Standalone Install
-description: 'Erfahren Sie mehr über die verfügbaren Optionen beim Installieren einer AEM-Standalone-Instanz. '
+description: Erfahren Sie mehr über die verfügbaren Optionen beim Installieren einer AEM-Standalone-Instanz.
 seo-description: Learn about the options available when installing a standalone AEM instance.
 uuid: e1cb45c4-3b2b-4951-8f67-213072e825b3
 contentOwner: Tyler Rushton
@@ -9,13 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c9e51008-6009-49a2-9c74-1c610cef2e7f
-source-git-commit: b7e5c42009acb5044d1112e66b8e65b528355736
+exl-id: 0933f733-50bf-48ae-a5da-be5dc9335253
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '1509'
-ht-degree: 76%
+ht-degree: 94%
 
 ---
-
 
 # Benutzerdefinierte Standalone-Installation{#custom-standalone-install}
 
@@ -23,13 +23,13 @@ In diesem Abschnitt wird beschrieben, welche Optionen bei der Installation einer
 
 ## Ändern der Portnummer durch Umbenennung der Datei {#changing-the-port-number-by-renaming-the-file}
 
-Der Standardport für AEM lautet 4502. Wenn dieser Anschluss nicht verfügbar ist oder bereits verwendet wird, konfiguriert sich Quickstart automatisch selbst, um die erste verfügbare Anschlussnummer wie folgt zu verwenden: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 888, 9362, `<random>`.
+Der Standardport für AEM lautet 4502. Wenn dieser Port nicht verfügbar ist oder bereits verwendet wird, wird Quickstart automatisch so konfiguriert, dass die erste der folgenden verfügbaren Portnummern verwendet wird: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<random>`.
 
-Sie können die Portnummer auch festlegen, indem Sie die JAR-Datei &quot;quickstart&quot;umbenennen, sodass der Dateiname die Portnummer enthält. Beispiel: `cq5-publish-p4503.jar` oder `cq5-author-p6754.jar`.
+Sie können die Portnummer auch festlegen, indem Sie die Quickstart-JAR-Datei umbenennen, sodass der Dateiname die Portnummer enthält. Beispiel: `cq5-publish-p4503.jar` oder `cq5-author-p6754.jar`.
 
 Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 
-* Wenn Sie die Datei umbenennen, muss sie mit `cq;` wie in `cq5-publish-p4503.jar`.
+* Wenn Sie die Datei umbenennen, muss sie mit `cq;` beginnen, wie in `cq5-publish-p4503.jar`.
 
 * Es wird empfohlen, die Portnummer *immer* mit dem Präfix „-p“ zu versehen, wie zum Beispiel in „cq5-publish-p4503.jar“ oder „cq5-author-p6754.jar“.
 
@@ -39,15 +39,14 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 >
 >* Die Portnummer muss aus 4 bis 5 Ziffern bestehen.
 >* Diese Ziffern müssen nach dem Bindestrich stehen.
->* Wenn der Dateiname eine andere Ziffer enthält, muss der Anschlussnummer das Präfix vorangestellt werden. `-p`
+>* Sollten sich andere Ziffern im Dateinamen befinden, muss die Portnummer mit dem Präfix `-p` versehen werden.
 >* Das Präfix „cq5“ am Anfang des Dateinamens wird ignoriert.
-
 >
 
 
 >[!NOTE]
 >
->Sie können die Portnummer auch ändern, indem Sie die `-port` im Startbefehl.
+>Sie können die Portnummer auch ändern, indem Sie die Option `-port` im Startbefehl verwenden.
 
 ## Ausführungsmodi {#run-modes}
 
@@ -57,7 +56,7 @@ Mit **Ausführungsmodi** können Sie Ihre AEM-Instanz auf einen bestimmten Zweck
 
 ## Hinzufügen eines Dateiinstallationsanbieters {#adding-a-file-install-provider}
 
-Standardmäßig ist der Ordner `crx-quickstart/install` auf Dateien überwacht wird.\
+Standardmäßig wird der Ordner `crx-quickstart/install` auf Dateien überwacht.\
 Dieser Ordner existiert nicht, kann jedoch einfach beim Ausführen erstellt werden.
 
 Wenn Bundles, Konfigurationen oder Inhaltspakete in diesem Verzeichnis abgelegt werden, werden diese automatisch registriert und installiert. Wenn sie entfernt werden, erfolgt die Deinstallation.\
@@ -71,7 +70,7 @@ Dies kann für viele Anwendungsfälle besonders interessant sein:
 
 >[!NOTE]
 >
->Siehe auch [So installieren Sie CRX-Pakete automatisch beim Serverstart](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) für Beispiele.
+>Weitere Informationen und Beispiele finden Sie in [So installieren Sie CRX-Pakete automatisch beim Serverstart](https://helpx.adobe.com/de/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
 
 ## Installieren und Starten von Adobe Experience Manager als Windows-Dienst {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
@@ -79,19 +78,19 @@ Dies kann für viele Anwendungsfälle besonders interessant sein:
 >
 >Führen Sie die folgenden Schritte durch, während Sie als Administrator angemeldet sind, oder starten Sie sie über den Kontextmenüeintrag **Als Administrator ausführen** bzw. führen Sie diese darüber aus.
 >
->**Es reicht nicht aus**, als Benutzer mit Administratorrechten angemeldet zu sein. Wenn Sie beim Durchführen dieser Schritte nicht als Administrator angemeldet sind, erhalten Sie Fehler des Typs **Zugriff verweigert**.
+>**Es reicht nicht aus**, als Benutzer mit Administratorrechten angemeldet zu sein. Wenn Sie beim Durchführen dieser Schritte nicht als Admin angemeldet sind, erhalten Sie Fehler des Typs **Zugriff verweigert**.
 
 So installieren und starten Sie AEM als Windows-Dienst:
 
 1. Öffnen Sie die Datei „crx-quickstart\opt\helpers\instsrv.bat“ in einem Texteditor.
-1. Wenn Sie einen 64-Bit-Windows-Server konfigurieren, ersetzen Sie alle Instanzen von prunsrv durch einen der folgenden Befehle, je nach Betriebssystem:
+1. Wenn Sie einen Windows-Server mit 64 Bit konfigurieren, ersetzen Sie, abhängig vom verwendeten Betriebssystem, alle Instanzen von „prunsrv“ durch einen der folgenden Befehle:
 
    * prunsrv_amd64
    * prunsrv_ia64
 
-   Dieser Befehl ruft das entsprechende Skript auf, das den Windows-Dienst-Daemon in 64-Bit Java statt in 32-Bit Java startet.
+   Dieser Befehl ruft das passende Skript auf, das den Windows-Service-Daemon in der 64-Bit-Version von Java statt der 32-Bit-Variante startet.
 
-1. Verhindern Sie, dass der Vorgang sich in mehr als einen Prozess aufspaltet, indem Sie die maximale Heap-Größe und die PermGen-JVM-Parameter erhöhen. Suchen Sie die `set jvm_options` und legen Sie den Wert wie folgt fest:
+1. Verhindern Sie, dass der Vorgang sich in mehr als einen Prozess aufspaltet, indem Sie die maximale Heap-Größe und die PermGen-JVM-Parameter erhöhen. Suchen Sie nach dem Befehl `set jvm_options` und legen Sie den Wert wie folgt fest:
 
    `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
 
@@ -121,7 +120,7 @@ So installieren und starten Sie AEM als Windows-Dienst:
 
 >[!NOTE]
 >
->Bei der Installation von AEM als Dienst müssen Sie den absoluten Pfad für den Protokollordner in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` von Configuration Manager aus.
+>Wird AEM als Service installiert, müssen Sie über den Configuration Manager den absoluten Pfad für das Protokollverzeichnis unter `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` angegeben.
 
 Deinstallieren Sie den Dienst, indem Sie entweder in der Systemsteuerung unter **Dienste** auf **Beenden** klicken oder in einer Befehlszeile zum Ordner navigieren und `instsrv.bat -uninstall cq5` eingeben. Der Dienst wird in der Systemsteuerung unter **Dienste** aus der Liste entfernt oder verschwindet in der Eingabeaufforderung aus der Liste, wenn Sie `net start` eingeben.
 
@@ -140,7 +139,7 @@ entweder zu:
 
 ## Weitere Optionen sind in der Schnellstartdatei verfügbar. {#further-options-available-from-the-quickstart-file}
 
-Weitere Optionen und Umbenennungskonventionen werden in der Schnellstart-Hilfedatei beschrieben, die über die Option -help verfügbar ist. Geben Sie Folgendes ein, um auf die Hilfe zuzugreifen:
+Weitere Optionen und Konventionen zur Umbenennung sind in der Schnellstart-Hilfedatei beschrieben, die über die Option „-help“ aufgerufen werden kann. Geben Sie Folgendes ein, um auf die Hilfe zuzugreifen:
 
 * `java -jar cq5-<version>.jar -help`
 
@@ -291,7 +290,7 @@ Mit den folgenden Links können Sie die Funktionsfähigkeit Ihrer Installation �
 
 Es bestehen zwar verschiedene Möglichkeiten, AEM WCM zu konfigurieren, bestimmte Aktionen sollten jedoch durchgeführt oder zumindest direkt nach der Installation überprüft werden:
 
-* Lesen Sie die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) für Aufgaben, die erforderlich sind, um sicherzustellen, dass Ihr System sicher bleibt.
+* Orientieren Sie sich bezüglich Maßnahmen zur Gewährleistung der Sicherheit Ihres Systems an der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
 * Überprüfen Sie die Liste der Standardbenutzer und -gruppen, die mit AEM WCM installiert werden. Überprüfen Sie, ob Maßnahmen im Hinblick auf andere Konten getroffen werden sollten. Weitere Informationen erhalten Sie unter [Sicherheits- und Benutzerverwaltung](/help/sites-administering/security.md).
 
 ## Zugreifen auf CRXDE Lite und die Web-Konsole {#accessing-crxde-lite-and-the-web-console}
@@ -303,7 +302,7 @@ Nachdem AEM WCM gestartet wurde, haben Sie zudem auf Folgendes Zugriff:
 
 ### Zugreifen auf CRXDE Lite {#accessing-crxde-lite}
 
-Zum Öffnen der CRXDE Lite können Sie **CRXDE Lite** über den Willkommensbildschirm aus oder navigieren Sie mit Ihrem Browser zu
+Öffnen Sie CRXDE Lite, indem Sie **CRXDE Lite** auf dem Willkommensbildschirm auswählen oder Ihren Browser öffnen und zu diesem Ziel navigieren.
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -316,7 +315,7 @@ Beispiel:\
 
 ### Zugreifen auf die Web-Konsole {#accessing-the-web-console}
 
-Um auf die Adobe CQ-Webkonsole zuzugreifen, können Sie **OSGi-Konsole** über den Willkommensbildschirm aus oder navigieren Sie mit Ihrem Browser zu
+Greifen Sie auf die Adobe CQ-Webkonsole zu, indem Sie auf dem Willkommensbildschirm **OSGi-Konsole** auswählen oder Ihren Browser öffnen und zu diesem Ziel navigieren.
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/system/console
@@ -345,6 +344,6 @@ Falls beständiger Speicher in das Installationsverzeichnis integriert ist, beis
 
 >[!NOTE]
 >
->Adobe empfiehlt dringend, Ihr Repository zu sichern, bevor Sie AEM löschen. Wenn Sie das gesamte CQ-Installationsverzeichnis löschen, wird dabei auch das Repository gelöscht. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;CQ-Installationsverzeichnis>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
+>Adobe empfiehlt dringend, Ihr Repository zu sichern, bevor Sie AEM löschen. Wenn Sie das gesamte &lt;CQ-Installationsverzeichnis> löschen, wird dabei auch das Repository gelöscht. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;cq-installation-directory>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
 
 Falls Ihre AEM-Installation externen Speicher nutzt, etwa einen Datenbankserver, werden beim Entfernen der Ordner nicht automatisch auch die Daten entfernt. Allerdings wird dabei die Speicherkonfiguration entfernt, wodurch die Wiederherstellung der JCR-Inhalte schwierig wird.

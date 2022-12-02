@@ -14,7 +14,7 @@ exl-id: 98f7a6b1-8b16-410c-872c-4af7bc4bcc64
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 82%
 
 In den folgenden Abschnitten erfahren Sie, wie Sie bestimmte Bereitstellungsaufgaben in AEM durchführen:
 
-* [Anleitung zur Verwendung der Protokollanzeige](https://helpx.adobe.com/experience-manager/kb/logsviewer.html) 
-* [Anleitung zur Bereinigung von Workflows und des Auditprotokolls](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html) 
+* [Anleitung zur Verwendung der Protokollanzeige](https://helpx.adobe.com/de/experience-manager/kb/logsviewer.html) 
+* [Anleitung zur Bereinigung von Workflows und des Auditprotokolls](https://helpx.adobe.com/de/experience-manager/kb/howtopurgewf.html) 
 
-* [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) 
+* [Tipps zur Leistungsoptimierung ](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html)
 * [Anleitung zum Entfernen von Funktionen vom Startbildschirm](/help/sites-developing/customizing-the-welcome-console.md)
-* [Anleitung zur Deaktivierung der Standortverfolgung](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html) 
+* [Anleitung zur Deaktivierung der Standortverfolgung](https://helpx.adobe.com/de/experience-manager/kb/turn-off-geolocation.html) 

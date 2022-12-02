@@ -39,12 +39,12 @@ Wählen Sie in der globalen Navigation auf der Autoreninstanz die Option **[!UIC
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* Wählen Sie nun eine der folgenden Optionen aus `Create button`
+* Auswählen `Create button`
 * GRUNDLEGENDE INFORMATIONEN
 
    * `Name`: Einzelseitenvorlage
    * `Description`: Eine Vorlage, die aus einer einzelnen Seitenfunktion besteht.
-   * auswählen `Enabled`
+   * Wählen Sie `Enabled` aus.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
@@ -85,17 +85,17 @@ Wählen Sie nach der Erstellung der Site-Vorlage in der globalen Navigation die 
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-* Wählen Sie nun eine der folgenden Optionen aus `Next`
+* Auswählen `Next`
 * Schritt `2 - Design`
 
    * Entwurf auswählen
 
-* Wählen Sie nun eine der folgenden Optionen aus `Next`
-* Wählen Sie nun eine der folgenden Optionen aus `Next`
+* Auswählen `Next`
+* Auswählen `Next`
 
    (Alle Standardeinstellungen akzeptieren)
 
-* Wählen Sie nun eine der folgenden Optionen aus `Create`
+* Auswählen `Create`
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 

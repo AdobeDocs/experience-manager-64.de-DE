@@ -8,7 +8,7 @@ exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 60%
+ht-degree: 71%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 60%
 
 Mit Adobe Experience Manager (AEM) Assets können Sie Übersetzungs-Workflows für Assets automatisieren (einschließlich Binärdateien, Metadaten und Tags), um Assets in anderen Sprachen für die Verwendung in mehrsprachigen Projekten zu generieren.
 
-Um Übersetzungs-Workflows zu automatisieren, integrieren Sie Übersetzungsanbieter in [!DNL Experience Manager] und erstellen Sie Projekte zum Übersetzen von Assets in mehrere Sprachen. [!DNL Experience Manager] unterstützt Workflows für menschliche und maschinelle Übersetzungen.
+Um Übersetzungs-Workflows zu automatisieren, integrieren Sie Übersetzungsdienstleister mit [!DNL Experience Manager] und erstellen Sie Projekte für die Übersetzung von Assets in mehrere Sprachen. [!DNL Experience Manager] unterstützt Workflows für menschliche und maschinelle Übersetzungen.
 
 Menschliche Übersetzung: Die übersetzten Assets werden zurückgegeben und in AEM importiert. Wenn Ihr Übersetzungsanbieter in AEM integriert ist, werden Assets automatisch zwischen [!DNL Experience Manager] und dem Übersetzungsanbieter.
 

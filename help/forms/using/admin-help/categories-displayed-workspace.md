@@ -1,5 +1,5 @@
 ---
-title: 'Die in Workspace angezeigten Kategorien verwalten '
+title: Die in Workspace angezeigten Kategorien verwalten
 seo-title: Managing the categories displayed in Workspace
 description: In Workspace werden die Prozesse, die ein Benutzer starten kann, in Kategorien im linken Navigationsbereich angezeigt. Erfahren Sie, wie Sie diese Kategorien verwalten können, die im Arbeitsbereich angezeigt werden.
 seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.

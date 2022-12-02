@@ -8,7 +8,7 @@ exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '1114'
-ht-degree: 85%
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Der [!DNL Adobe Stock]-Service bietet Designern und Unternehmen Zugang zu Millio
 
 ## Voraussetzungen {#prerequisites}
 
-Die Integration erfordert ein [Adobe Stock-Unternehmensabo](https://stockenterprise.adobe.com/) sowie  6.4 mit Service Pack 2 oder höher. [!DNL Experience Manager] Für [!DNL Experience Manager] 6.4 Service Pack-Details, siehe diese [Versionshinweise](/help/release-notes/sp-release-notes.md).
+Die Integration erfordert ein [Adobe Stock-Unternehmensabo](https://stockenterprise.adobe.com/de/home.html) sowie  6.4 mit Service Pack 2 oder höher. [!DNL Experience Manager] Für [!DNL Experience Manager] 6.4 Service Pack-Details, siehe diese [Versionshinweise](/help/release-notes/sp-release-notes.md).
 
 ## Integrieren von [!DNL Experience Manager] und [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -45,7 +45,7 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 
 ### Erstellen der [!DNL Adobe Stock]-Konfiguration in [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
 
-1. Im [!DNL Experience Manager] -Benutzeroberfläche navigieren Sie zu **[!UICONTROL Instrumente]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. Navigieren Sie in der [!DNL Experience Manager] Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um eine Konfiguration zu erstellen und sie Ihrer bestehenden IMS-Konfiguration zuzuordnen. Wählen Sie `PROD` als Umgebungsparameter aus.
 1. Lassen Sie den Speicherort im Feld **[!UICONTROL Pfad lizenzierter Assets]** unverändert. Ändern Sie den Speicherort nicht in den Pfad, in dem Sie die [!DNL Adobe Stock]-Assets speichern möchten.
 1. Schließen Sie die Erstellung ab, indem Sie alle erforderlichen Eigenschaften hinzufügen. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
@@ -65,7 +65,7 @@ Sobald ein [!DNL Adobe Stock]-Asset in [!DNL Experience Manager] lizenziert ist,
 
 *Abbildung: Suchen Sie nach [!DNL Adobe Stock] Assets und Filtern von Ergebnissen aus Ihrer [!DNL Experience Manager] -Schnittstelle.*
 
-**A.**[!DNL Adobe Stock] Suchen Sie Assets, die den Assets ähneln, deren ID bereitgestellt wird. **B.** Nach Assets suchen, die Ihrer Form- und Ausrichtungswahl entsprechen. **C.** Suche nach einem oder mehreren unterstützten Asset-Typen **D.** Filterbereich öffnen oder reduzieren **E.** Ausgewähltes Asset lizenzieren und speichern unter [!DNL Experience Manager] **F.** Speichern Sie das Asset in [!DNL Experience Manager] mit Wasserzeichen **G.** Assets durchsuchen in [!DNL Adobe Stock] Website, die dem ausgewählten Asset ähnelt **H.** Ausgewählte Assets in anzeigen [!DNL Adobe Stock] website **I.** Anzahl der ausgewählten Assets aus den Suchergebnissen **J.** Zwischen Karten- und Listenansicht wechseln
+**A.** Suche nach Assets, die den Assets ähneln, deren [!DNL Adobe Stock]-ID angegeben ist. **B.** Suche nach Assets, die Ihrer Form- und Ausrichtungswahl entsprechen. **C.** Suche nach einem von mehreren unterstützten Asset-Typen **D.** Öffnen oder Reduzieren des Filterbereichs **E.** Lizenzieren und Speichern des ausgewählten Assets in [!DNL Experience Manager] **F.** Speichern des Assets in [!DNL Experience Manager] mit Wasserzeichen **G.** Erkunden von Assets auf der [!DNL Adobe Stock]-Website, die dem ausgewählten Asset ähnlich sind **H.** Anzeigen der ausgewählten Assets auf der [!DNL Adobe Stock]-Website **I.** Anzahl der ausgewählten Assets aus den Suchergebnissen **J.** Umschalten zwischen Kartenansicht und Listenansicht
 
 ### Suchen von Assets {#find-assets}
 
@@ -123,7 +123,7 @@ Benutzer können die Eigenschaften für lizenzierte und unlizenzierte Assets anz
 
 >[!MORELIKETHIS]
 >
->* [Video-Tutorial zur Verwendung von [!DNL Adobe Stock] Assets mit [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=de)
+>* [Video-Tutorial zur Verwendung von [!DNL Adobe Stock] Assets mit  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=de)
 >* [[!DNL Adobe Stock] Hilfe zum Unternehmensplan](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
 >* [[!DNL Adobe Stock] Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/de/stock/faq.html)
 

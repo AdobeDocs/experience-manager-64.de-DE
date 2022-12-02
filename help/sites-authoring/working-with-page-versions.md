@@ -13,7 +13,7 @@ exl-id: 2df7c08f-db17-4666-ba39-e81cc2e656d7
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1075'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -29,14 +29,14 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
-* über die [Timeline-Leiste](#creating-a-new-version-timeline)
+* über die [Zeitleiste](#creating-a-new-version-timeline)
 * mithilfe der Option [Erstellen](#creating-a-new-version-create-with-a-selected-resource) (wenn eine Ressource ausgewählt ist)
 
 ### Erstellen einer neuen Version – Zeitleiste {#creating-a-new-version-timeline}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die Spalte **Timeline**.
+1. Öffnen Sie die Spalte **Zeitleiste**.
 1. Klicken/tippen Sie auf den Pfeil neben dem Kommentarfeld, um die Optionen anzuzeigen:
 
    ![screen_shot_2018-03-21at155035](assets/screen_shot_2018-03-21at155035.png)
@@ -78,7 +78,6 @@ Nachdem eine Version erstellt wurde, können Sie diese Version bei Bedarf wieder
 >* Stellen Sie die erste Version wieder her, d. h. Version 1.0.
 >* Erstellen Sie weitere neue Versionen.
 >* Die erzeugten Beschriftungen und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
-
 >
 
 
@@ -166,4 +165,4 @@ Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Au
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, das Autoren beim Verstehen und Erstellen ihres Inhalts unterstützen kann. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.

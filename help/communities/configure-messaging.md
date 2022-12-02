@@ -134,10 +134,10 @@ Sobald die Vererbung abgebrochen wurde, kann die `configure` -Symbol, um das Kon
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
 * **[!UICONTROL URL-Weiterleitung]** Geben Sie die URL der Seite ein, die nach dem Versenden der Nachricht angezeigt werden soll. Beispiel: 
-`../messaging.html`.
+`../messaging.html` möglich.
 
 * **[!UICONTROL URL abbrechen]** Geben Sie die URL der Seite ein, die angezeigt werden soll, wenn der Sender das Verfassen einer Nachricht abbricht. Beispiel: 
-`../messaging.html`.
+`../messaging.html` möglich.
 
 * **[!UICONTROL Maximale Länge des Nachrichtenbetreffs]** Die maximal zulässige Anzahl der Zeichen im Feld „Betreff“. Beispiel: 500. Der Standardwert ist keine Begrenzung.
 

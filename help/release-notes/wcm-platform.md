@@ -13,7 +13,7 @@ exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 83%
+ht-degree: 85%
 
 ---
 
@@ -40,7 +40,6 @@ ht-degree: 83%
 >[!CAUTION]
 >
 >* Aufgrund der neuen Version von Oak Segment Tar, die mit AEM 6.3 eingeführt wurde, ist eine Repository-Migration erforderlich. Dieser Schritt ist obligatorisch, wenn Sie eine Aktualisierung von einer älteren TarMK-Version durchführen oder von einem anderen Persistenztyp zum neuen Segment-TAR-Format wechseln möchten. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie unter [Migration auf Oak-Segment-TAR – Häufig gestellte Fragen (FAQ)](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
-
 >
 
 
@@ -71,7 +70,6 @@ ht-degree: 83%
 >[!CAUTION]
 >
 >* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. In AEM 6.4 ist die klassische Benutzeroberfläche integriert und Kunden, die ein Upgrade auf diese Version durchführen, können diese wie gehabt verwenden. Beachten Sie, dass die klassische Benutzeroberfläche weiterhin vollständig unterstützt wird, obwohl sie veraltet ist. [Mehr dazu](/help/sites-deploying/ui-recommendations.md).
-
 >
 
 
@@ -81,7 +79,7 @@ ht-degree: 83%
 * Unterstützung der OAuth 2.0-Authentifizierung im Verteilertransport
 * Verbesserte Leistung bei VLT-Paketen
 
-### Überwachung {#monitoring}
+### Monitoring {#monitoring}
 
 * Eine neue Systemübersicht, die eine Momentaufnahme aller leistungsbezogenen Systemzustände und Aktivitäten bietet
 * Neue Konsistenzprüfungen:

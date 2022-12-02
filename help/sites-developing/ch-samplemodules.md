@@ -13,7 +13,7 @@ exl-id: 637ec80e-320f-4cf7-b09a-9f3cbf47bb63
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Die folgenden Eigenschaften sind verfügbar:
 * **Popover-Inhalt:** Geben Sie den Inhalt an, der in einem Popover angezeigt wird, wenn auf das UI-Modul geklickt oder getippt wird.
 * **Vollbildmodus:** Kontrollieren Sie, ob der Vollbildmodus erlaubt ist.
 
-Der Quellcode befindet sich unter /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
+Der Quell-Code befindet sich unter /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
 ### Konfiguration {#configuration}
 
@@ -86,13 +86,13 @@ Im folgenden Beispiel wird ein contexthub.base-Benutzeroberflächenmodul zum Anz
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-## UI-Modultyp contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.browserinfo {#contexthub-browserinfo-ui-module-type}
 
 Das Benutzeroberflächenmodul contexthub.browserinfo zeigt Informationen über den Client-Webbrowser und das Betriebssystem an. Informationen werden vom Store „surferinfo“ bezogen, der auf dem Store-Kandidaten [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) basiert.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-Der Quellcode für das UI-Modul befindet sich unter /libs/granite/contexthub/components/modules/browserinfo. Obwohl contexthub.browserinfo das Benutzeroberflächenmodul contexthub.base erweitert, werden keine zusätzlichen Funktionen überschrieben oder bereitgestellt. Die Implementierung stellt eine Standardkonfiguration zum Rendern von Browser-Informationen bereit.
+Der Quell-Code für das Benutzeroberflächenmodul befindet sich unter /libs/granite/contexthub/components/modules/browserinfo. Obwohl contexthub.browserinfo das Benutzeroberflächenmodul contexthub.base erweitert, werden keine zusätzlichen Funktionen überschrieben oder bereitgestellt. Die Implementierung stellt eine Standardkonfiguration zum Rendern von Browser-Informationen bereit.
 
 ### Konfiguration {#configuration-1}
 
@@ -132,13 +132,13 @@ Instanzen des UI-Moduls contexthub.datetime benötigen keinen Wert für die Deta
 }
 ```
 
-## UI-Modultyp contexthub.location {#contexthub-location-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.location {#contexthub-location-ui-module-type}
 
 Das Benutzeroberflächenmodul contexthub.location zeigt den Längen- und Breitengrad des Clients an. Das Modul bietet ein Popover mit einer Google-Karte, auf die Sie klicken können, um den aktuellen Standort zu ändern. Das Modul erhält Informationen von einem ContextHub-Store namens Geolocation, der auf dem Store-Kandidaten [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) basiert.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Die Quelle des UI-Moduls befindet sich unter /etc/cloudsettings/default/contexthub/geolocation.
+Die Quelle des Benutzeroberflächenmoduls befindet sich unter /etc/cloudsettings/default/contexthub/geolocation.
 
 ### Konfiguration {#configuration-4}
 
@@ -181,7 +181,7 @@ Das Benutzeroberflächenmodul contexthub.screen-orientation zeigt die aktuelle B
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-Die Quelle des UI-Moduls befindet sich unter /libs/granite/contexthub/components/modules/screen-orientation.
+Die Quelle des Benutzeroberflächenmoduls befindet sich unter /libs/granite/contexthub/components/modules/screen-orientation.
 
 ### Konfiguration {#configuration-5}
 
@@ -199,13 +199,13 @@ Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötige
 }
 ```
 
-## UI-Modultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
+## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
 Das Benutzeroberflächenmodul contexthub.tagcloud zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popupmenü zeigt eine Tagcloud und ein Textfeld zum Hinzufügen neuer Tags an. Das Benutzeroberflächenmodul ruft Informationen aus einem ContextHub-Store namens tagcloud ab, der auf dem der Storekandidat [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) basiert.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-Die Quelle des UI-Moduls befindet sich unter /libs/granite/contexthub/components/modules/tagcloud.
+Die Quelle des Benutzeroberflächenmoduls befindet sich unter /libs/granite/contexthub/components/modules/tagcloud.
 
 ### Konfiguration {#configuration-6}
 
@@ -229,7 +229,7 @@ Das ContextHub-Benutzeroberflächenmodul granite.profile zeigt den Anzeigenamen 
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Die Quelle des UI-Moduls befindet sich unter /libs/granite/contexthub/components/modules/profile.
+Die Quelle des Benutzeroberflächenmoduls befindet sich unter /libs/granite/contexthub/components/modules/profile.
 
 ### Konfiguration {#configuration-7}
 

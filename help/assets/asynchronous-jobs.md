@@ -8,7 +8,7 @@ exl-id: 0abdfe87-d932-41dd-b1e6-9f5fa5b924fe
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -92,6 +92,6 @@ Wenn die Anzahl der zu verschiebenden Assets, Ordner oder Verweise den festgeleg
 
 >[!MORELIKETHIS]
 >
->* [E-Mail in Experience Manager konfigurieren](/help/sites-administering/notification.md).
+>* [Konfigurieren von E-Mail in Experience Manager](/help/sites-administering/notification.md)
 >* [Importieren und Exportieren von Asset-Metadaten in großen Mengen](/help/assets/metadata-import-export.md).
 

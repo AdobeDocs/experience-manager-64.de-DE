@@ -11,7 +11,7 @@ exl-id: ba3b380a-b391-44a0-884b-e57c3cb14013
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1443'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die Zielgruppe dieses Artikels sind IT-Berater, Sicherheitsexperten, Systemarchi
 
 Die folgende Abbildung zeigt Komponenten und Protokolle, die in einer typischen AEM Forms-Bereitstellung verwendet werden, einschließlich der entsprechenden Firewall-Topologie:
 
-![typische Architektur](assets/typical-architecture.png)
+![typical-architecture](assets/typical-architecture.png)
 
 AEM Forms kann in hohem Maß angepasst und in vielen verschiedenen Umgebungen eingesetzt werden. Einige der Empfehlungen sind möglicherweise für Ihr Unternehmen nicht relevant.
 
@@ -145,7 +145,7 @@ Standardmäßig speichert die Übermittlungsaktion für Forms Portal in adaptive
 
 Sie können den Speicherdienst so konfigurieren, dass er über das Netzwerk an den Verarbeitungscluster sendet, ohne dass Daten lokal auf dem Veröffentlichungsknoten gespeichert werden. Der Verarbeitungscluster befindet sich in einer sicheren Zone hinter der privaten Firewall und die Daten bleiben sicher.
 
-Verwenden Sie die Anmeldedaten des Verarbeitungsservers für den AEM DS-Einstellungsdienst, um Daten vom Veröffentlichungsknoten an den Verarbeitungsserver zu senden. Es wird empfohlen, die Anmeldedaten eines Benutzers mit eingeschränkten Rechten, der kein Administrator ist und über Lese- und Schreibzugriff auf das Repository des Verarbeitungsservers verfügt, zu verwenden. Weitere Informationen finden Sie unter [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
+Verwenden Sie die Anmeldedaten des Verarbeitungsservers für den AEM DS-Einstellungsdienst, um Daten vom Veröffentlichungsknoten an den Verarbeitungsserver zu senden. Es wird empfohlen, die Anmeldedaten eines Benutzers mit eingeschränkten Rechten, der kein Administrator ist und über Lese- und Schreibzugriff auf das Repository des Verarbeitungsservers verfügt, zu verwenden. Weitere Informationen finden Sie unter [Konfigurieren von Speicher-Services für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Durch das Formulardatenmodell (FDM) verarbeitete Daten sichern {#secure-data-handled-by-form-data-model-fdm}
 
@@ -176,7 +176,7 @@ Für die Authoring-, Veröffentlichungs- und Verarbeitungsinstanz sind jeweils u
       * können keine XDP-basierten adaptiven Formulare erstellen
       * haben keine Berechtigung zum Schreiben von Skripten für adaptive Formulare
       * können weder XDP noch Pakete importieren, die XDP enthalten
-   * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XSP enthalten.
+   * Benutzer der Gruppe „forms-power-user“ können alle Typen von Formularen erstellen, ausfüllen, veröffentlichen und senden, Skripte für adaptive Formulare schreiben und Pakete importieren, die XDP enthalten.
    * Benutzer der Gruppen „template-authors“ und „template-power-user“ können Vorlagen in der Vorschau anzeigen und erstellen.
    * Benutzer der Gruppe „fdm-authors“ können Formulardatenmodelle erstellen und ändern.
    * Benutzer der Gruppe „cm-user-agent“ können Correspondence Management-Briefe erstellen, in der Vorschau anzeigen und veröffentlichen.

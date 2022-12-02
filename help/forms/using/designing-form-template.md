@@ -1,7 +1,7 @@
 ---
 title: Entwerfen von Formularvorlagen für HTML5-Formulare
 seo-title: Designing form templates for HTML5 forms
-description: 'AEM Forms ermöglicht die Wiedergabe von XFA-Formularvorlagen im HTML5-Format. Formularentwickler können Formularvorlagen mit Designer entwerfen und die HTML5-Renderfunktion nutzen. '
+description: AEM Forms ermöglicht die Wiedergabe von XFA-Formularvorlagen im HTML5-Format. Formularentwickler können Formularvorlagen mit Designer entwerfen und die HTML5-Renderfunktion nutzen.
 seo-description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability.
 uuid: 41a00ec5-d7f9-4717-a961-00d20d8e7b2a
 content-type: reference

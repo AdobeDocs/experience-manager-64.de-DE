@@ -52,4 +52,4 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 
 Weitere Informationen finden Sie unter [https://www.adobe.com/de/legal/terms/enterprise-licensing.html](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
 
-Hinweis zu Drittlizenzen: [http://www.adobe.com/de/products/eula/third_party/](https://www.adobe.com/de/products/eula/third_party.html)
+Hinweis zu Drittlizenzen: [https://www.adobe.com/de/products/eula/third_party/](https://www.adobe.com/de/products/eula/third_party.html)

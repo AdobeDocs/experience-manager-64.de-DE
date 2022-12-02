@@ -14,7 +14,7 @@ exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 In diesem Abschnitt wird die Vorgehensweise zum Aktualisieren von AEM für Anwendungsserverinstallationen beschrieben.
 
-In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwendet. Zudem wird angenommen, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von Version **AEM 5.6 auf 6.3** beschrieben.
+In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwendet. Zudem wird angenommen, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von **AEM 5.6 auf 6.3** beschrieben.
 
 1. Starten Sie zunächst JBoss. In den meisten Fällen können Sie hierzu das Startskript `standalone.sh` und den folgenden Befehl am Terminal ausführen.
 
@@ -44,7 +44,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
 
 1. Beenden Sie JBoss.
 
-1. Migrieren Sie das Repository nun mithilfe des CRX2OAK-Migrationstools.
+1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrations-Tools:
 
    ```shell
    java -jar crx2oak.jar crx-quickstart/repository/ crx-quickstart/oak-repository
@@ -56,7 +56,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
 
 1. Löschen Sie die erforderlichen Eigenschaften in der Datei sling.properties folgendermaßen:
 
-   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties`
+   1. Öffnen Sie die unter `crx-quickstart/launchpad/sling.properties` gespeicherte Datei.
    1. Entfernen Sie die folgenden Eigenschaften und speichern Sie die Datei:
 
       1. `sling.installer.dir`
@@ -115,13 +115,13 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. Sie müssen nun die Ausführungsmodi in der WAR-Datei für AEM 6.3 ändern. Erstellen Sie dafür zunächst einen temporären Ordner, in dem die WAR-Datei für AEM 6.3 gespeichert wird. Der Name des Ordners in diesem Beispiel lautet **temp**. Extrahieren Sie nach dem Kopieren der WAR-Datei deren Inhalte im Ordner temp:
+1. Ändern Sie nun die Ausführungsmodi in der WAR-Datei für AEM 6.3. Erstellen Sie dafür zunächst einen temporären Ordner, in dem die WAR-Datei für AEM 6.3 gespeichert wird. Der Name des Ordners in diesem Beispiel lautet **temp**. Extrahieren Sie nach dem Kopieren der WAR-Datei deren Inhalte im temporären Ordner:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Wechseln Sie nach dem Extrahieren der Inhalte zum Ordner **WEB-INF** und bearbeiten Sie die Datei `web.xml`, um die Ausführungsmodi zu ändern. Suchen Sie nach der Zeichenfolge `sling.run.modes`, um ihre Position in der XML-Datei zu bestimmen. Wenn Sie sie gefunden haben, ändern Sie die Ausführungsmodi in der nächsten Codezeile, die standardmäßig auf author gesetzt ist:
+1. Wechseln Sie nach dem Extrahieren der Inhalte zum Ordner **WEB-INF** und bearbeiten Sie die Datei , um die Ausführungsmodi zu ändern. `web.xml` Suchen Sie nach der Zeichenfolge `sling.run.modes`, um ihre Position in der XML-Datei zu bestimmen. Wenn Sie sie gefunden haben, ändern Sie die Ausführungsmodi in der nächsten Code-Zeile, die standardmäßig auf author gesetzt ist:
 
    ```shell
    <param-value >author</param-value>

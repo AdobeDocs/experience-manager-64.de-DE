@@ -123,7 +123,7 @@ Wenn eine SPA zur Nutzung des AEM-SPA-Editors konfiguriert ist, merkt der Inhalt
    ![screen_shot_2018-06-07at143419](assets/screen_shot_2018-06-07at143419.png)
 
    >[!NOTE]
-   >Weitere Informationen zum integrierten Texteditor und SPAs finden Sie unter [SPA-Editor – Übersicht](spa-overview.md#requirements-limitations) für .
+   >Weitere Informationen zum integrierten Texteditor und SPAs finden Sie unter [SPA-Editor – Übersicht](spa-overview.md#requirements-limitations) für.
 
 1. Verwenden Sie den Assets-Browser, um ein neues Bild in eine Bildkomponente zu ziehen.
 

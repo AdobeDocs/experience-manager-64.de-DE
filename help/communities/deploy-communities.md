@@ -13,7 +13,7 @@ exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
 source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
 source-wordcount: '2180'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -96,7 +96,7 @@ AEM 6.4 Communities GA umfasst das Communities-Package. Informationen zu Updates
 
 Ab AEM 6.3 werden Aktualisierungen an Communities als Teil von AEM Cumulative Fix Packs und Service Packs bereitgestellt.
 
-Die neuesten Updates zu AEM 6.4 finden Sie unter [Adobe Experience Manager 6.4 Cumulative Fix Packs und Service Packs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
+Die neuesten Updates zu AEM 6.4 finden Sie unter [Adobe Experience Manager 6.4 Cumulative Fix Packs und Service Packs](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html).
 
 ### Versionsverlauf {#version-history}
 
@@ -122,7 +122,7 @@ Die erforderlichen Schritte sind:
 1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und zu starten:
 
    * Beispiel: http://localhost:4502/system/console/bundles
-   * Wählen Sie nun eine der folgenden Optionen aus **`Install/Update`**
+   * Auswählen **`Install/Update`**
    * Durchsuchen... , um das aus dem heruntergeladenen ZIP-Archiv extrahierte Bundle auszuwählen.
    * Vergewissern Sie sich, dass *JDBC-Treiber der oracle Corporation für MySQLcom.mysql.jdbc* aktiv ist, und starten Sie es, falls nicht (oder überprüfen Sie die Protokolle)
 
@@ -131,7 +131,7 @@ Die erforderlichen Schritte sind:
    * Beispiel: http://localhost:4502/system/console/configMgr
    * Suchen `Day Commons JDBC Connections Pool` Konfiguration
    * Zum Öffnen auswählen
-   * Wählen Sie nun eine der folgenden Optionen aus `Save`
+   * Auswählen `Save`
 
 1. Wiederholen Sie die Schritte 3 und 4 für alle Autoren- und Veröffentlichungsinstanzen.
 
@@ -381,9 +381,9 @@ Mit dem im Repository gespeicherten Schlüsselmaterial wird der Crypto-Schlüsse
 Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
 * Durchsuchen nach [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
-* auswählen `/etc/key`
+* Wählen Sie `/etc/key` aus.
 * open `Replication` tab
-* auswählen `Replicate`
+* Wählen Sie `Replicate` aus.
 
 * [Aktualisieren des Granite Crypto-Bundles](#refresh-the-granite-crypto-bundle)
 
@@ -431,8 +431,8 @@ Achten Sie insbesondere darauf, den richtigen Servernamen zu verwenden, nicht `l
 
 Informationen zur Verwendung eines Dispatchers finden Sie unter:
 
-* AEM [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) Dokumentation
-* [Installieren des Dispatchers](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
+* AEM [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html) Dokumentation
+* [Installieren des Dispatchers](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-install.html)
 * [Konfigurieren des Dispatchers für Communities](dispatcher.md)
 * [Bekannte Probleme](troubleshooting.md#dispatcher-refetch-fails)
 

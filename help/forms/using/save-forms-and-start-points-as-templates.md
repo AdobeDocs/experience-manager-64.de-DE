@@ -1,7 +1,7 @@
 ---
 title: Speichern von Formularen als Vorlagen
 seo-title: Save forms as templates
-description: 'Informationen zum Erstellen von Vorlagen aus Formularen mit häufig benötigten Daten. '
+description: Informationen zum Erstellen von Vorlagen aus Formularen mit häufig benötigten Daten.
 seo-description: Learn how to create templates from forms with data required repeatedly.
 uuid: 090c6271-4061-4adc-a063-9df4953b47ce
 contentOwner: khsingh

@@ -1,7 +1,7 @@
 ---
 title: Erstellen von benutzerdefinierten Erscheinungsbildern für adaptive Formularfelder
 seo-title: Create custom appearances for adaptive form fields
-description: 'Passen Sie das Erscheinungsbild einsatzbereiter Komponenten in adaptiven Formularen an. '
+description: Passen Sie das Erscheinungsbild einsatzbereiter Komponenten in adaptiven Formularen an.
 seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
 uuid: 1f2d2ac4-44e1-45f9-a6a0-eb95931b0633
 content-type: reference

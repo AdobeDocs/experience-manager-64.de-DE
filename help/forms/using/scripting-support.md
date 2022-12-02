@@ -503,7 +503,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <th>Ausnahme</th> 
   </tr> 
   <tr> 
-   <td>nodes</td> 
+   <td>Knoten</td> 
    <td>Gibt eine Liste aller untergeordneten Objekte des aktuellen Objekts zurück.</td> 
    <td> 
     <ul> 
@@ -1220,7 +1220,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
 
 1. **Logikfunktionen**
 
-   1. Wählen Sie eine der folgenden Optionen()
+   1. Choose()
    1. if()
    1. Oneof()
    1. Within()

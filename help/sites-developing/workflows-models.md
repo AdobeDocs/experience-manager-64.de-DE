@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Workflow-Modellen
 seo-title: Creating Workflow Models
-description: 'Sie erstellen ein Workflow-Modell, um die Schritte zu definieren, die ausgeführt werden, wenn ein Benutzer den Workflow startet. '
+description: Sie erstellen ein Workflow-Modell, um die Schritte zu definieren, die ausgeführt werden, wenn ein Benutzer den Workflow startet.
 seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
 uuid: 53d94176-4d5f-4ab3-9628-6b7d44f81139
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: d9c9db5f-9788-460f-ac09-88dd3c911edd
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2447'
-ht-degree: 73%
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 73%
 
 >[!CAUTION]
 >
->Informationen zur Verwendung der klassischen Benutzeroberfläche finden Sie in der [Dokumentation zu AEM 6.3](https://helpx.adobe.com/experience-manager/6-3/sites-developing/workflows-models.html).
+>Informationen zur Verwendung der klassischen Benutzeroberfläche finden Sie in der [Dokumentation zu AEM 6.3](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/workflows-models.html).
 
 Sie erstellen ein [Workflow-Modell](/help/sites-developing/workflows.md#model), um die Schritte zu definieren, die ausgeführt werden, wenn ein Benutzer den Workflow startet. Sie können auch Modelleigenschaften definieren, um beispielsweise festzulegen, ob es sich um einen Übergangs-Workflow oder einen Workflow mit mehreren Ressourcen handelt.
 
@@ -31,11 +31,11 @@ Wenn ein Benutzer einen Workflow startet, wird eine Instanz gestartet. Dabei han
 
 Wenn Sie zum ersten Mal ein neues Workflow-Modell erstellen, umfasst es Folgendes:
 
-* Die Schritte, **[!UICONTROL Flussstart]** und **[!UICONTROL Flussende]**.
+* Die Schritte **[!UICONTROL Fluss-Start]** und **[!UICONTROL Fluss-Ende]**.
 
    Diese stellen den Anfang und das Ende des Workflows dar. Diese Schritte sind obligatorisch und können nicht bearbeitet oder entfernt werden.
 
-* Beispiel **Teilnehmer** Schritt genannt **Schritt 1**.
+* Ein **Teilnehmer**-Beispielschritt namens **Schritt 1**.
 
    Dieser Schritt ist so konfiguriert, dass er dem Workflow-Initiator ein Arbeitselement zuordnet. Sie können diesen Schritt nach Bedarf bearbeiten oder löschen und Schritte hinzufügen.
 
@@ -47,7 +47,7 @@ Gehen Sie folgendermaßen vor, um einen neuen Workflow mit dem Editor zu erstell
 
 1. Wählen Sie **[!UICONTROL Erstellen]** und dann **[!UICONTROL Modell erstellen]** aus.
 1. Die **[!UICONTROL Workflow-Modell hinzufügen]** angezeigt. Geben Sie den **[!UICONTROL Titel]** und den **[!UICONTROL Namen]** (optional) ein. Wählen Sie anschließend **[!UICONTROL Fertig]** aus.
-1. Das neue Modell wird im **[!UICONTROL Workflow-Modelle]** Konsole.
+1. Das neue Modell wird nun in der **[!UICONTROL Workflow-Modelle-Konsole]** aufgeführt.
 1. Wählen Sie Ihren neuen Workflow aus und öffnen Sie ihn dann, indem Sie auf [**[!UICONTROL Bearbeiten ]**klicken, um ihn zu konfigurieren](#editing-a-workflow):
 
    ![wf-01](assets/wf-01.png)
@@ -94,14 +94,14 @@ Wenn Sie ein [Standard- bzw. Legacy-Modell](/help/sites-developing/workflows.md#
 * Die Symbolleiste weist eine Option zum **[!UICONTROL Bearbeiten]** auf (auf der rechten Seite).
 * Zunächst werden das Modell und seine Eigenschaften im schreibgeschützten Modus wie folgt dargestellt:
 
-   * Standard-Workflows befinden sich unter `/libs`
+   * Standard-Workflows befinden sich unter `/libs`.
    * Ältere Workflows befinden sich unter `/etc`
 
 Durch Auswahl von **[!UICONTROL Bearbeiten]** geschieht Folgendes:
 
-* eine Kopie des Workflows in `/conf`
+* eine Kopie des Workflows unter `/conf` gespeichert
 * erstellen **[!UICONTROL Schritte]** Browser verfügbar
-* Sie erhalten die Möglichkeit, Änderungen vorzunehmen.
+* es möglich, Änderungen vorzunehmen.
 
 >[!NOTE]
 >
@@ -128,7 +128,7 @@ Wenn Sie ein Modell bearbeiten, werden die verfügbaren Schritte in den verschie
 
    * Die Option **[!UICONTROL Filter]** zum Filtern nach bestimmten Schritten.
    * Verwenden Sie das Dropdown-Menü, um die Auswahl auf eine bestimmte Gruppe von Schritten zu begrenzen.
-   * Wählen Sie das Symbol Beschreibung anzeigen aus ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) um weitere Details zum entsprechenden Schritt anzuzeigen.
+   * Über das Symbol ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) zum Anzeigen von Breschreibungen können Sie weitere Informationen zum jeweiligen Schritt anzeigen.
 
    ![wf-02](assets/wf-02.png)
 
@@ -146,7 +146,7 @@ Wenn Sie ein Modell bearbeiten, werden die verfügbaren Schritte in den verschie
 
    Sie können vorhandene Schritte wie beim [Seiten-Editor](/help/sites-authoring/editing-content.md) darüber hinaus kopieren, ausschneiden, einfügen, gruppieren oder löschen.
 
-   Aufspaltungsschritte können auch mithilfe der Symbolleistenoption reduziert/erweitert werden: ![wf-collapse seexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
+   Unterteilte Schritte können auch mithilfe der Symbolleistenoption ![wf-collapseexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png) ein- oder ausgeblendet werden. 
 
 1. Bestätigen Sie Ihre Änderungen, indem Sie in der Editor-Symbolleiste auf **[!UICONTROL Sync]** klicken, um das Laufzeitmodell zu generieren.
 
@@ -165,11 +165,11 @@ Sie können **Konfigurieren** und passen Sie das Verhalten eines Workflow-Schrit
    >
    >Weitere Informationen zu den primären Schrittkomponenten, die mit AEM installiert werden, finden Sie in der [Referenz für Workflow-Schritte](/help/sites-developing/workflows-step-ref.md).
 
-1. Konfigurieren Sie die **[!UICONTROL Schritt-Eigenschaften]** nach Bedarf. Die jeweils verfügbaren Eigenschaften hängen vom Schritttyp ab, ggf. stehen auch mehrere Registerkarten zur Verfügung. Beispielsweise wird die Standardeinstellung **[!UICONTROL Teilnehmer-Schritt]**, in einem neuen Workflow als `Step 1`:
+1. Konfigurieren Sie die **[!UICONTROL Schritt-Eigenschaften]** nach Bedarf. Die jeweils verfügbaren Eigenschaften hängen vom Schritttyp ab, ggf. stehen auch mehrere Registerkarten zur Verfügung. Beispiel: der standardmäßige **[!UICONTROL Teilnehmer-Schritt]**, der in einem neuen Workflow als `Step 1` enthalten ist:
 
    ![wf-11](assets/wf-11.png)
 
-1. Bestätigen Sie Ihre Änderungen durch Klicken auf das Häkchen-Symbol.
+1. Bestätigen Sie die Änderungen durch Klicken auf das Häkchen-Symbol.
 1. Bestätigen Sie Ihre Änderungen, indem Sie in der Editor-Symbolleiste auf **[!UICONTROL Sync]** klicken, um das Laufzeitmodell zu generieren.
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
@@ -190,29 +190,29 @@ Sie können ein [Übergangs-](/help/sites-developing/workflows.md#transient-work
 
 >[!NOTE]
 >
->Beim Ausführen eines Workflows im [Übergangsmodus](/help/sites-developing/workflows.md#transient-workflows) speichert AEM keinen Workflow-Verlauf. Aus diesem Grund werden in der [Timeline](/help/sites-authoring/basic-handling.md#timeline) keine Informationen zu diesem Workflow angezeigt. [](/help/sites-authoring/basic-handling.md#timeline)
+>Beim Ausführen eines Workflows im [Übergangsmodus](/help/sites-developing/workflows.md#transient-workflows) speichert AEM keinen Workflow-Verlauf. Aus diesem Grund werden in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) keine Informationen zu diesem Workflow angezeigt. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ### Workflow-Modelle in der Touch-Benutzeroberfläche verfügbar machen {#make-workflow-models-available-in-touchui}
 
-Wenn ein Workflow-Modell in der klassischen Benutzeroberfläche vorhanden ist, aber im Popupmenü für die Auswahl im **[!UICONTROL Timeline]** Leiste der Touch-optimierten Benutzeroberfläche an und befolgen Sie dann die Konfiguration, um sie verfügbar zu machen. Die folgenden Schritte zeigen die Verwendung des Workflow-Modells namens **[!UICONTROL Aktivierungsanfrage]**.
+Befolgen Sie die Konfiguration, wenn ein Workflow-Modell der klassischen Benutzeroberfläche im Auswahl-Popup-Menü der **[!UICONTROL Zeitleiste]** in der Touch-Benutzeroberfläche fehlt und verfügbar gemacht werden muss. Die folgenden Schritte zeigen die Verwendung des Workflow-Modells namens **[!UICONTROL Aktivierungsanfrage]**.
 
-1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Zugreifen auf ein Asset mit `/assets.html/content/dam` Pfad. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Timeline]** in der linken Leiste. Klicken **[!UICONTROL Workflow starten]** und bestätigen Sie, dass **[!UICONTROL Aktivierungsanfrage]** -Modell ist nicht in der Popup-Liste vorhanden.
+1. Vergewissern Sie sich, dass das Modell nicht in der Touch-Benutzeroberfläche verfügbar ist. Greifen Sie über den Pfad `/assets.html/content/dam` auf ein Asset zu. Auswählen eines Assets. Öffnen Sie **[!UICONTROL Zeitleiste]** in der linken Leiste. Klicken Sie auf **[!UICONTROL Workflow starten]** und bestätigen Sie, dass das **[!UICONTROL Aktivierungsanfrage]**-Modell nicht in der Popup-Liste vorhanden ist.
 
-1. Navigieren durch **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
+1. Navigieren Sie wie folgt: **[!UICONTROL Tools > Allgemein > Tagging]**. Wählen Sie **[!UICONTROL Workflow]**.
 
-1. Auswählen **[!UICONTROL Erstellen > Tag erstellen]**. Satz **[!UICONTROL Titel]** as `DAM` und **[!UICONTROL Name]** as `dam`. Klicken Sie auf **[!UICONTROL Übermitteln]**.
+1. Wählen Sie **[!UICONTROL Erstellen > Tag erstellen]**. Legen Sie den **[!UICONTROL Titel]** als `DAM` und den **[!UICONTROL Namen]** als `dam` fest. Klicken Sie auf **[!UICONTROL Übermitteln]**.
    ![Tag im Workflow-Modell erstellen](assets/workflow_create_tag.png)
 
-1. Gehen Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Auswählen **[!UICONTROL Aktivierungsanfrage]**, wählen Sie **[!UICONTROL Bearbeiten]**.
+1. Gehen Sie zu **[!UICONTROL Tools > Workflow > Modelle]**. Wählen Sie **[!UICONTROL Aktivierungsanfrage]** aus und wählen Sie dann **[!UICONTROL Bearbeiten]**.
 
 1. Auswählen **[!UICONTROL Bearbeiten]** , dann öffnen **[!UICONTROL Workflow-Modelleigenschaften]**. Navigieren Sie zu **[!UICONTROL Allgemein]** Registerkarte.
 
-1. Hinzufügen `Workflow : DAM` nach **[!UICONTROL Tags]** -Feld. Bestätigen Sie die Auswahl mit dem Häkchen.
+1. Fügen Sie `Workflow : DAM` zum Feld **[!UICONTROL Tags]** hinzu. Bestätigen Sie die Auswahl mit dem Häkchen.
 
 1. Bestätigen Sie das Hinzufügen des Tags mit **[!UICONTROL Speichern und schließen]**.
    ![Seiteneigenschaften des Modells bearbeiten](assets/workflow_model_edit_activation1.png)
 
-1. Schließen Sie den Prozess mit **[!UICONTROL Synchronisieren]**. Der Workflow ist jetzt in der Touch-optimierten Benutzeroberfläche verfügbar.
+1. Schließen Sie den Prozess mit **[!UICONTROL Synchronisieren]** ab. Der Workflow ist jetzt in der Touch-optimierten Benutzeroberfläche verfügbar.
 
 ### Konfigurieren von Workflows für die Unterstützung für mehrere Ressourcen {#configuring-a-workflow-for-multi-resource-support}
 
@@ -231,7 +231,7 @@ Sie konfigurieren ein Workflow-Modell für die [Unterstützung für mehrere Ress
 
 ### Konfigurieren von Workflow-Phasen (die den Workflow-Fortschritt anzeigen) {#configuring-workflow-stages-that-show-workflow-progress}
 
-Die [Workflow-Phasen](/help/sites-developing/workflows.md#workflow-stages) helfen Ihnen bei der Visualisierung des Fortschritts bei der Verarbeitung von Aufgaben.
+Die [Workflow-Phasen](/help/sites-developing/workflows.md#workflow-stages) sind hilfreich, um den Fortschritt eines Workflows beim Ausführen von Aufgaben anzuzeigen.
 
 >[!CAUTION]
 >
@@ -301,14 +301,14 @@ Gehen Sie folgendermaßen vor, um **[!UICONTROL Phasen]** zu definieren:
 
 ## Verwenden von Workflows zum Verarbeiten von Formularübermittlungen {#using-workflows-to-process-form-submissions}
 
-Sie können ein Formular so konfigurieren, dass es durch den ausgewählten Workflow verarbeitet wird. Wenn Benutzer das Formular übermitteln, wird eine neue Workflow-Instanz mit den Daten der Formularübermittlung als Nutzlast erstellt.
+Sie können ein Formular so konfigurieren, dass es durch den ausgewählten Workflow verarbeitet wird. Wenn Benutzer das Formular übermitteln, wird eine neue Workflow-Instanz mit den Daten der Formularübermittlung als Payload erstellt.
 
 Gehen Sie folgendermaßen vor, um den Workflow zur Verwendung mit Ihrem Formular zu konfigurieren:
 
 1. Erstellen Sie eine neue Seite und öffnen Sie sie zur Bearbeitung.
 1. Fügen Sie der Seite die Komponente **[!UICONTROL Formular]** hinzu.
 1. Konfigurieren Sie die Komponente **[!UICONTROL Formular-Start]**, die auf der Seite angezeigt wird.
-1. Verwendung **[!UICONTROL Workflow starten]** um den gewünschten Workflow aus den verfügbaren auszuwählen:
+1. Wählen Sie mithilfe von **[!UICONTROL Workflow starten]** den gewünschten Workflow aus den verfügbaren Optionen aus:
 
    ![wf-12](assets/wf-12.png)
 
@@ -316,17 +316,17 @@ Gehen Sie folgendermaßen vor, um den Workflow zur Verwendung mit Ihrem Formular
 
 ## Testen von Workflows {#testing-workflows}
 
-Beim Testen eines Workflows ist es sinnvoll, verschiedene Nutzlasttypen zu verwenden, auch solche, die sich von denen unterscheiden, für die der Workflow entwickelt wurde. Wenn Sie beispielsweise möchten, dass Ihr Workflow für die Verwendung mit Assets ausgelegt ist, testen Sie ihn, indem Sie eine Seite als Nutzlast festlegen und sicherstellen, dass keine Fehler auftreten.
+Beim Testen eines Workflows ist es sinnvoll, verschiedene Payload-Typen zu verwenden, auch solche, die sich von denen unterscheiden, für die der Workflow entwickelt wurde. Wenn Sie beispielsweise möchten, dass Ihr Workflow für die Verwendung mit Assets ausgelegt ist, testen Sie ihn, indem Sie eine Seite als Payload festlegen und sicherstellen, dass keine Fehler auftreten.
 
 Testen Sie Ihren neuen Workflow beispielsweise wie folgt:
 
-1. [Workflow-Modell starten](/help/sites-administering/workflows-starting.md) über die Konsole aus.
-1. Definieren Sie die **[!UICONTROL Nutzlast]** und bestätigen Ihre Eingaben.
+1. [Starten Sie Ihr Workflow-Modell](/help/sites-administering/workflows-starting.md) über die Konsole.
+1. Definieren Sie die **[!UICONTROL Payload]** und bestätigen Ihre Eingaben.
 
 1. Ergreifen Sie die erforderlichen Maßnahmen, damit der Workflow fortgesetzt wird.
 1. Überwachen Sie während der Ausführung des Workflows die Protokolldateien.
 
-Sie können AEM auch so konfigurieren, dass die **[!UICONTROL DEBUG]**-Meldungen in den Protokolldateien angezeigt werden. Siehe [Protokollierung](/help/sites-deploying/configure-logging.md) Weitere Informationen erhalten Sie, und wenn die Entwicklung abgeschlossen ist, legen Sie die **[!UICONTROL Protokollebene]** zurück zu **[!UICONTROL Info]**.
+Sie können AEM auch so konfigurieren, dass die **[!UICONTROL DEBUG]**-Meldungen in den Protokolldateien angezeigt werden. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md). Wenn die Entwicklung abgeschlossen ist, legen Sie die Einstellung für die **[!UICONTROL Protokollebene]** wieder auf **[!UICONTROL Informationen]** fest.
 
 ## Beispiele {#examples}
 
@@ -342,31 +342,31 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
    * `Step 1`
    * **[!UICONTROL Prozessende]**
 
-1. Löschen `Step 1` (da es für dieses Beispiel der falsche Schritttyp ist):
+1. Löschen Sie `Step 1` (da es sich um den falschen Schritttyp für dieses Beispiel handelt):
 
-   * Klicken Sie auf den Schritt und wählen Sie **[!UICONTROL Löschen]** aus der Komponenten-Symbolleiste. Bestätigen Sie die Aktion.
+   * Klicken Sie auf den Schritt und klicken Sie in der Komponenten-Symbolleiste auf **[!UICONTROL Löschen]**. Bestätigen Sie die Aktion.
 
 1. Aus dem **[!UICONTROL Workflow]** Auswahl des Schrittbrowsers, Ziehen Sie eine **[!UICONTROL Teilnehmer-Schritt]** auf den Workflow zu platzieren und zwischen **[!UICONTROL Flussstart]** und **[!UICONTROL Flussende*]*.
 1. So öffnen Sie das Dialogfeld &quot;Eigenschaften&quot;:
 
-   * Klicken Sie auf den Teilnehmerschritt und wählen Sie **[!UICONTROL Konfigurieren]** aus der Komponenten-Symbolleiste.
+   * Klicken Sie auf den Teilnehmer-Schritt und klicken Sie in der Komponenten-Symbolleiste auf **[!UICONTROL Konfigurieren]**.
    * Doppelklicken Sie auf den Teilnehmer-Schritt.
 
-1. Im **[!UICONTROL Häufig]** tab enter `Validate Content` für beide **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]**.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Allgemein]** `Validate Content` als **[!UICONTROL Titel]** und **[!UICONTROL Beschreibung]** ein.
 1. Öffnen Sie die Registerkarte **[!UICONTROL Benutzer/Gruppe]**:
 
    * Aktivieren Sie das Kontrollkästchen **[!UICONTROL Benachrichtigen Sie den Benutzer per E-Mail]**.
-   * Auswählen `Administrator` ( `admin`) für die **[!UICONTROL Benutzer/Gruppe]** -Feld.
+   * Wählen Sie für das Feld **[!UICONTROL Benutzer/Gruppe]** die Option `Administrator` (`admin`) aus.
 
    >[!NOTE]
    >
    >Damit E-Mails versendet werden können, müssen [der E-Mail-Dienst und die Benutzerkontoinformationen konfiguriert werden](/help/sites-administering/notification.md).
 
-1. Bestätigen Sie Ihre Änderungen durch Klicken auf das Häkchen-Symbol.
+1. Bestätigen Sie die Änderungen durch Klicken auf das Häkchen-Symbol.
 
-   Sie werden zur Übersicht des Workflow-Modells zurückgeleitet. Hier wurde der Teilnehmerschritt in `Validate Content`.
+   Daraufhin wird wieder die Übersicht über das Workflow-Modell angezeigt. Der Teilnehmer-Schritt ist nun in `Validate Content` umbenannt.
 
-1. Ziehen Sie eine **[!UICONTROL Oder Aufspaltung]** auf den Workflow zu platzieren und zwischen `Validate Content` und **[!UICONTROL Flussende]**.
+1. Ziehen Sie eine **[!UICONTROL ODER-Teilung]** auf den Workflow und positionieren Sie sie zwischen `Validate Content` und **[!UICONTROL Fluss-Ende]**.
 1. Öffnen Sie die **[!UICONTROL ODER-Teilung]** zur Konfiguration.
 1. Konfigurieren:
 
@@ -374,17 +374,17 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
    * **[!UICONTROL Zweig 1]**: Wählen Sie **[!UICONTROL Standardroute]** aus.
    * **[!UICONTROL Zweig 2]**: Stellen Sie sicher, dass **[!UICONTROL Standardroute]** nicht ausgewählt ist.
 
-1. Bestätigen Sie Ihre Änderungen an der **[!UICONTROL ODER-Teilung]**.
+1. Bestätigen Sie die Änderungen an der **[!UICONTROL ODER-Teilung]**.
 1. Ziehen Sie einen **[!UICONTROL Teilnehmer-Schritt]** auf den linken Zweig, öffnen Sie die Eigenschaften, geben Sie die folgenden Werte an und bestätigen Sie die Änderungen:
 
    * **[!UICONTROL Titel]**: `Reject Publish Request`
    * **[!UICONTROL Benutzer/Gruppe]**: z. B. `projects-administrators`
-   * **[!UICONTROL Benutzer per E-Mail benachrichtigen]**: Aktivieren Sie diese Option, damit der Benutzer per E-Mail benachrichtigt wird.
+   * **[!UICONTROL Benachrichtigen des Benutzers per E-Mail]**: Aktivieren Sie dieses Kontrollkästchen, damit die Benutzer per E-Mail benachrichtigt werden.
 
 1. Ziehen Sie einen **[!UICONTROL Prozessschritt]** auf den rechten Zweig, öffnen Sie die Eigenschaften, geben Sie die folgenden Werte an und bestätigen Sie die Änderungen:
 
    * **[!UICONTROL Titel]**: `Publish Page as Requested`
-   * **[!UICONTROL Prozess]**: select `Activate Page`. Mit diesem Prozess wird die ausgewählte Seite in den Publisher-Instanzen veröffentlicht.
+   * **[!UICONTROL Prozess]**: Wählen Sie `Activate Page` aus. Mit diesem Prozess wird die ausgewählte Seite in den Publisher-Instanzen veröffentlicht.
 
 1. Klicken Sie in der Editor-Symbolleiste auf **[!UICONTROL Sync]**, um das Laufzeitmodell zu generieren.
 
@@ -398,7 +398,7 @@ Um einige der Möglichkeiten zur Erstellung eines Workflows zu veranschaulichen,
 
    ![chlimage_1-182](assets/chlimage_1-182.png)
 
-### Beispiel: Definieren einer Regel oder ODER-Teilung {#example-defining-a-rule-for-an-or-split}
+### Beispiel: Definieren einer Regel für eine ODER-Teilung     {#example-defining-a-rule-for-an-or-split}
 
 **[!UICONTROL ODER-Teilung]**-Schritte ermöglichen es Ihnen, bedingte Verarbeitungspfade in Ihren Workflow einzubinden.
 
@@ -410,26 +410,26 @@ So definieren Sie eine ODER-Regel:
 
    >[!NOTE]
    >
-   >Die Skripte müssen über eine [function `check()`](#function-check) , der einen booleschen Wert zurückgibt.
+   >Die Skripte müssen eine [Funktion `check()`](#function-check) aufweisen, die einen booleschen Wert zurückgibt.
 
 1. Bearbeiten Sie den Workflow und fügen Sie die **[!UICONTROL ODER-Teilung]** zum Modell hinzu.
 1. Bearbeiten Sie die Eigenschaften von **[!UICONTROL Zweig 1]** der **[!UICONTROL ODER-Teilung]**:
 
-   * Definieren Sie dies als **[!UICONTROL Standardroute]** durch Festlegen der **[!UICONTROL Wert]** nach `true`.
-   * As **[!UICONTROL Regel]**, legen Sie den Pfad zum Skript fest. Beispiel:
+   * Definieren Sie dies als **[!UICONTROL Standardroute]**, indem Sie den **[!UICONTROL Wert]** auf `true` festlegen.
+   * Geben Sie für **[!UICONTROL Regel]** den Pfad zum Skript an. Beispiel:
 
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
    >
-   >Sie können die Reihenfolge der Verzweigungen bei Bedarf ändern.
+   >Sie können die Reihenfolge der Verzweigungen ändern, sofern dies erforderlich ist.
 
 1. Bearbeiten Sie die Eigenschaften von **[!UICONTROL Zweig 2]** der **[!UICONTROL ODER-Teilung]**:
 
-   * As **[!UICONTROL Regel]**, legen Sie den Pfad auf das andere Skript fest. Beispiel:
+   * Geben Sie für **[!UICONTROL Regel]** den Pfad zum anderen Skript an. Beispiel:
 
       `/apps/myapp/workflow/scripts/myscript2.ecma`
 
-1. Legen Sie die Eigenschaften der einzelnen Schritte in jedem Zweig fest. Stellen Sie sicher, dass **[!UICONTROL Benutzer/Gruppe]** festgelegt ist.
+1. Legen Sie die Eigenschaften der einzelnen Schritte in jedem Zweig fest. Stellen Sie sicher, dass die Einstellung für **[!UICONTROL Benutzer/Gruppe]** festlegt ist.
 1. Klicken Sie in der Editor-Symbolleiste auf **Sync**, um Ihre Änderungen am Laufzeitmodell beizubehalten.
 
    Weitere Informationen finden Sie unter [Synchronisieren von Workflows](#sync-your-workflow-generate-a-runtime-model).
@@ -440,7 +440,7 @@ So definieren Sie eine ODER-Regel:
 >
 >Weitere Informationen finden Sie unter [Verwenden von ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
 
-Das folgende Beispielskript gibt Folgendes zurück `true` wenn der Knoten eine `JCR_PATH` befindet sich unter `/content/we-retail/us/en`:
+Das folgende Beispielskript gibt `true` zurück, wenn es sich bei dem Knoten um einen `JCR_PATH` unter `/content/we-retail/us/en` handelt:
 
 ```
 function check() {
@@ -463,4 +463,4 @@ function check() {
 
 Sie können jeden der vorkonfigurierten Workflows anpassen. Um das Verhalten anzupassen, überlagern Sie Details des entsprechenden Workflows.
 
-Beispielsweise der Workflow **[!UICONTROL Aktivierungsanfrage]**. Dieser wird für die Veröffentlichung von Seiten innerhalb von **[!UICONTROL Sites]** verwendet und automatisch ausgelöst, wenn ein Inhaltsautor nicht über die entsprechenden Replikationsrechte verfügt. Siehe [Anpassen der Seitenbearbeitung - Anpassen des Aktivierungsanfrage-Workflows](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) für weitere Informationen.
+Beispielsweise der Workflow **[!UICONTROL Aktivierungsanfrage]**. Dieser wird für die Veröffentlichung von Seiten innerhalb von **[!UICONTROL Sites]** verwendet und automatisch ausgelöst, wenn ein Inhaltsautor nicht über die entsprechenden Replikationsrechte verfügt. Weitere Informationen finden Sie unter [Anpassen der Seitenbearbeitung – Anpassen des Workflows „Aktivierungsanfrage“](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow).

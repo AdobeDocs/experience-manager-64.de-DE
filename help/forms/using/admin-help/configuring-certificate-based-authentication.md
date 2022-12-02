@@ -13,13 +13,13 @@ exl-id: 88932b5b-2acc-4f21-8ce3-b819a990ad30
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '726'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Zertifikatbasierte Authentifizierung konfigurieren {#configuring-certificate-based-authentication}
 
-User Management führt in der Regel die Authentifizierung mithilfe eines Benutzernamens und eines Kennworts aus. User Management unterstützt auch die zertifikatbasierte Authentifizierung, die Sie zum Authentifizieren von Benutzern über Acrobat oder zum programmgesteuerten Authentifizieren von Benutzern verwenden können. Ausführliche Informationen zum programmgesteuerten Authentifizieren von Benutzern finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+User Management führt in der Regel die Authentifizierung mithilfe eines Benutzernamens und eines Kennworts aus. User Management unterstützt auch die zertifikatbasierte Authentifizierung, die Sie zum Authentifizieren von Benutzern über Acrobat oder zum programmgesteuerten Authentifizieren von Benutzern verwenden können. Ausführliche Informationen zum programmgesteuerten Authentifizieren von Benutzern finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 
 Zum Verwenden der zertifikatbasierten Authentifizierung importieren Sie eine Zertifizierungsstelle (Certificate Authority, CA), der Sie vertrauen, in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung.
 
@@ -29,7 +29,7 @@ Wählen Sie beim Importieren des Zertifikats die Optionen „Trust für Zertifik
 
 ## Zertifikatzuordnung konfigurieren {#configuring-certificate-mapping}
 
-Um die zertifikatbasierte Authentifizierung für Benutzer zu aktivieren, erstellen Sie eine Zertifikatzuordnung. Eine *Zertifikatzuordnung* definiert eine Zuordnung zwischen den Attributen eines Zertifikats und den Attributen von Benutzern in einer Domäne. Sie können derselben Domäne mehr als ein Zertifikat zuordnen.
+Um die zertifikatbasierte Authentifizierung für Benutzer zu aktivieren, erstellen Sie eine Zertifikatzuordnung. Eine *Zertifikatzuordnung* definiert eine Zuordnung zwischen den Attributen eines Zertifikats und den Attributen von Benutzern in einer Domain. Sie können derselben Domain mehr als ein Zertifikat zuordnen.
 
 Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfungen, um sicherzustellen, dass das Zertifikat die folgenden Voraussetzungen erfüllt:
 
@@ -50,7 +50,7 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
 
    Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der User Management-Datenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, regex) verwenden, der mit den beiden Attributen übereinstimmen soll. Wenn beispielsweise die allgemeinen Namen der Zertifikate in etwa *Alex Pink (Authentifizierung)* und *Alex Pink (Signieren)* lauten und der allgemeine Name in der User Management-Datenbank *Alex Pink* lautet, sollten Sie einen Regex verwenden, um den erforderlichen Teil des Zertifikatattributs (in diesem Beispiel *Alex Pink* zu extrahieren.) Der von Ihnen angegebene reguläre Ausdruck muss mit der Java-Regex-Spezifikation übereinstimmen.
 
-   Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der `java.util.regex.Matcher.replaceAll()` -Methode. Das Verhalten entspricht dem Verhalten der Methode und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
+   Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der Methode `java.util.regex.Matcher.replaceAll()` verwendet. Das Verhalten entspricht dem Verhalten der Methode und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
 
    Um den Regex zu testen, geben Sie einen Wert in das Feld „Parameter testen“ ein und klicken Sie auf „Testen“.
 
@@ -83,7 +83,7 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
       **Regex:** smtp:(.&amp;ast;)
    Einzelheiten zur Verwendung regulärer Ausdrücke finden Sie im [Java-Tutorium zu regulären Ausdrücken](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
-1. Wählen Sie im Feld „Für Domäne“ die Domäne des Benutzers aus.
+1. Wählen Sie im Feld „Für Domain“ die Domain des Benutzers aus.
 1. Um diese Konfiguration zu testen, klicken Sie auf „Durchsuchen“, um ein Beispielbenutzerzertifikat hochzuladen, und klicken dann auf „Zertifikat testen“. Wenn die Konfiguration ordnungsgemäß ist, klicken Sie auf „OK“.
 
 **Vorhandene Zertifikatzuordnung bearbeiten**

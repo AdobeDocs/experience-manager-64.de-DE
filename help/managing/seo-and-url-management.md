@@ -19,7 +19,7 @@ ht-degree: 99%
 
 # Best Practices für SEO und URL-Verwaltung{#seo-and-url-management-best-practices}
 
-Suchmaschinenoptimierung (SEO) ist zu einem wichtigen Thema für viele Marketer geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden.
+Suchmaschinen-Optimierung (SEO) ist zu einem wichtigen Thema für viele Marketing-Fachleute geworden. Deshalb müssen SEO-Thematiken bei vielen AEM-Projekten berücksichtigt werden.
 
 Dieses Dokument beschreibt zunächst einige [Best Practices für SEO](#seo-best-practices) und Empfehlungen zu deren Erreichung bei einer AEM-Implementierung. Anschließend beschäftigt sich das Dokument intensiver mit einigen der [komplexeren Implementierungsschritte](#aem-configurations) aus dem ersten Abschnitt.
 

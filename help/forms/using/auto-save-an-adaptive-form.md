@@ -12,7 +12,7 @@ exl-id: 073734e9-449b-463a-b539-d73e11f50fa4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Sie können ein adaptives Formular so konfigurieren, dass Inhalt basierend auf e
 
 Für ein adaptives Formular ist die Option „Automatisches Speichern“ nicht standardmäßig aktiviert. Sie können die Option „Automatisches Speichern“ über den Abschnitt **Automatisches Speichern** eines adaptiven Formulars aktivieren. Der Abschnitt **Automatisches Speichern** bietet mehrere weitere Konfigurationsoptionen. Führen Sie zum Aktivieren und Konfigurieren der Option „Automatisches Speichern“ für ein adaptives Formular folgende Schritte durch: 
 
-1. Um auf den Abschnitt &quot;Automatisches Speichern&quot;in den Eigenschaften zuzugreifen, wählen Sie eine Komponente aus und tippen Sie dann auf ![Feldebene](assets/field-level.png) > **[!UICONTROL Container für adaptive Formulare]** und tippen Sie anschließend auf ![cmppr](assets/cmppr.png).
+1. Um auf den Abschnitt für das automatische Speichern in den Eigenschaften zuzugreifen, wählen Sie eine Komponente aus und tippen Sie auf ![Feldebene](assets/field-level.png) > **[!UICONTROL Container für ein adaptives Formular]** und anschließend auf ![cmppr](assets/cmppr.png).
 1. Im Abschnitt **[!UICONTROL Automatisches Speichern]** **[!UICONTROL aktivieren]** Sie die Option zum automatischen Speichern.
 1. Geben Sie im Feld **[!UICONTROL Adaptives Formular-Ereignis]** 1 oder TRUE ein, um das Formular automatisch zu speichern, wenn das Formular im Browser geladen wird. Sie können außerdem einen bedingten Ausdruck für ein Ereignis angeben, das, wenn es ausgelöst wird, den Status „true“ zurückgibt und den Inhalt des Formulars speichert.
 1. Geben Sie den Auslöser an. Die automatische Speicherung wird gemäß Ihrer Konfiguration ausgelöst. Ihre Optionen sind:
@@ -58,13 +58,13 @@ Für ein adaptives Formular ist die Option „Automatisches Speichern“ nicht s
    >
    >Damit die Option zum automatischen Speichern für anonyme Benutzer funktioniert, stellen Sie sicher, dass Sie den allgemeinen Forms-Konfigurationsdienst so konfiguriert ist, dass alle Benutzer Formulare in der Vorschau anzeigen, überprüfen und zu signieren können.
    >
-   >Um den Dienst zu konfigurieren, gehen Sie zur Konfiguration AEM Web-Konsole unter `https://[server]:[host]/system/console/configMgr` und bearbeiten Sie die **[!UICONTROL Forms Common Configuration Service]** zur Auswahl der **[!UICONTROL Alle Benutzer]** in der **[!UICONTROL Zulassen]** und speichern Sie die Konfiguration.
+   >Um den Service zu konfigurieren, wechseln Sie zur Konfiguration der AEM-Web-Konsole unter `https://[server]:[host]/system/console/configMgr` und bearbeiten Sie den **[!UICONTROL allgemeinen Konfigurations-Service von Forms]** so, dass die Option **[!UICONTROL Alle Benutzer]** im Feld **[!UICONTROL Zulassen]** ausgewählt wird, und speichern Sie dann die Konfiguration.
 
 ## Implementieren einer benutzerdefinierten Strategie, um automatisches Speichern für adaptive Formulare zu aktivieren {#implement-a-custom-strategy-to-enable-autosave-for-adaptive-forms}
 
 Sie können ein benutzerdefiniertes Ereignis implementieren, um die Funktion für automatisches Speichern auszulösen. Führen Sie die folgenden Schritte aus, um das benutzerdefinierte Ereignis zu implementieren.
 
-1. Erstellen Sie die Clientbibliothek und Clientbibliotheksordner. Ausführliche Anweisungen finden Sie unter  in [ Verwenden clientseitiger Bibliotheksdokumente](/help/sites-developing/clientlibs.md). 
+1. Erstellen Sie die Clientbibliothek und Clientbibliotheksordner. Ausführliche Anweisungen finden Sie unter in [Verwenden clientseitiger Bibliotheksdokumente](/help/sites-developing/clientlibs.md). 
 
    Beispiel: Das folgende Skript verwendet das benutzerdefinierte Ereignis `emailFocusChange`, um die Funktion für automatisches Speichern auszulösen:
 

@@ -13,7 +13,7 @@ exl-id: 192c436d-a507-4883-bd68-a6863a6664e0
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM Forms Workspace-Komponenten basieren auf einer MVC-Architektur mit Backbone.
 * Die Vorlage als HTML-Datei mit Steuerelementen der Benutzeroberfläche.
 * Die Ansicht, die als Steuerungklasse für die Vorlage fungiert.
 
-Die Elemente für alle Komponenten werden in der unten beschriebenen Ordnerstruktur gespeichert. Um auf die Assets zuzugreifen, melden Sie sich bei CRXDE Lite an und navigieren Sie zu `/libs/ws/js/runtime/`.
+Die Elemente für alle Komponenten werden in der unten beschriebenen Ordnerstruktur gespeichert. Um auf die Elemente zuzugreifen, melden Sie sich bei CRXDE Lite an und navigieren Sie zu `/libs/ws/js/runtime/`.
 
 **models** Enthält Backbone-Modelle.
 
@@ -33,8 +33,8 @@ Die Elemente für alle Komponenten werden in der unten beschriebenen Ordnerstruk
 
 **templates** Enthält nur die HTML-Vorlagen für die Komponenten.
 
-**Routen** Enthält universelle Routen. Der Ordner „templates“ unter „routes“ enthält den HTML-Code und die Verweise auf die Komponenten.
+**routes** Enthält universelle Routen. Der Ordner „templates“ unter „routes“ enthält den HTML-Code und die Verweise auf die Komponenten.
 
-**Dienstleistungen** Enthält die Dienstschnittstelle zum Aufrufen von Adobe Experience Manager-Server-APIs am REST-Endpunkt.
+**services** Enthält die Serviceschnittstelle zum Aufrufen von Adobe Experience Manager-Server-APIs am REST-Endpunkt.
 
-**util** Enthält allgemeine Dienstprogramme, die von mehreren Komponenten verwendet werden können.
+**util** Enthält generische Serviceprogramme, die von mehreren Komponenten verwendet werden können.

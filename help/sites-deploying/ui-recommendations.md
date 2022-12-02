@@ -13,7 +13,7 @@ exl-id: 1e5172d9-47a3-4d73-b749-166e201f4eef
 source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ In den vergangenen Jahren hat Adobe alle Adobe Experience Cloud-Lösungen um ein
 
 Die ursprüngliche Benutzeroberfläche von Adobe Experience Manager (zuvor als CQ5 bekannt), die 2008 eingeführt und von Kunden mit den Versionen 5.0–5.6.1 verwendet wurde, ist in AEM 6.4 verfügbar. So wird sichergestellt, dass Kunden eine Aktualisierung auf Version 6.4 durchführen und von einer aktualisierten Plattform mit neuen Funktionen profitieren können, während sie gleichzeitig dieselbe Benutzeroberfläche weiterverwenden.
 
-Adobe empfiehlt Kunden, 2018/19 einen Wechsel zur neuen Benutzeroberfläche zu planen. Dies ist entweder im Rahmen einer Aktualisierung auf Version 6.4 möglich oder im Rahmen separater Projekte nach der Aktualisierung, bei denen die notwendigen Änderungen an den Dialogfeldern für Anpassungen und Komponenten vorgenommen werden müssen.
+Adobe empfiehlt Kunden, den Umstieg auf die neue Benutzeroberfläche für 2018/19 zu planen. Dies ist entweder im Rahmen einer Aktualisierung auf Version 6.4 möglich oder im Rahmen separater Projekte nach der Aktualisierung, bei denen die notwendigen Änderungen an den Dialogfeldern für Anpassungen und Komponenten vorgenommen werden müssen.
 
 Ab AEM 6.4 plant Adobe keine weiteren Verbesserungen der klassischen Benutzeroberfläche mehr. Beachten Sie, dass auch die veraltete klassische Benutzeroberfläche weiterhin vollständig unterstützt wird.
 
@@ -70,7 +70,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
      <li>Aktion „Seite bearbeiten“ konfigurieren, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Festlegen der Benutzeroberfläche</a>.</li> 
     </ol> <p>Anschließend:</p> 
     <ol> 
-     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li> 
+     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt, die <a href="/help/sites-developing/modernization-tools.md">AEM-Modernisierungs-Tools</a> zu nutzen, um die Komponenten zu aktualisieren.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -82,7 +82,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
      <li>Aktion „Seite bearbeiten“ konfigurieren, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Festlegen der Benutzeroberfläche</a>.</li> 
     </ol> <p>Anschließend:</p> 
     <ol> 
-     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li> 
+     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt, die <a href="/help/sites-developing/modernization-tools.md">AEM-Modernisierungs-Tools</a> zu nutzen, um die Komponenten zu aktualisieren.</li> 
      <li>Konfigurieren Sie ContextHub (ersetzt ClientContext) und aktualisieren Sie die Seitenvorlagen für die Anwendung von ContextHub. Hinweis: ContextHub verfügt über einen Kompatibilitätsmodus, mit dem benutzerdefinierter ClientContext-Speicher geladen werden kann.</li> 
     </ol> </td> 
   </tr> 
@@ -95,7 +95,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
 
 ## Häufig gestellte Fragen (FAQ) {#faq}
 
-Weitere Einzelheiten finden Sie im Knowledge Base-Artikel [Seitenbearbeitung mit der Touch-optimierten Benutzeroberfläche – Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), darunter Informationen zur geplanten Entfernung der klassischen Benutzeroberfläche.
+Weitere Einzelheiten finden Sie im Knowledge Base-Artikel [Seitenbearbeitung mit der Touch-optimierten Benutzeroberfläche – Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/de/experience-manager/kb/index/touchui_faq.html), darunter Informationen zur geplanten Entfernung der klassischen Benutzeroberfläche.
 
 ## Festlegen der Benutzeroberfläche {#selecting-your-ui}
 
@@ -125,4 +125,4 @@ Detaillierte Entwicklungsinformationen:
 
 * [Anpassen der Seitenbearbeitung in der Touch-optimierten Benutzeroberfläche](/help/sites-developing/customizing-page-authoring-touch.md) (einschließlich Beispielcode)
 
-* [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+* [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)

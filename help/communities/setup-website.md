@@ -74,7 +74,7 @@ Der Ordner /apps ist geschützt und nicht öffentlich zugänglich wie die Ordner
    1. Im **[!UICONTROL Ordner erstellen]** dialog, enter **[!UICONTROL templates]**
    1. Klicken Sie auf **[!UICONTROL OK]**
    1. Neu auswählen `/apps/an-scf-sandbox`
-   1. Wählen Sie **[!UICONTROL Alle speichern]** aus
+   1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 
    Speichern Sie wie bei jedem Bearbeitungsprozess häufig. Wenn Probleme bei der Dateneingabe auftreten, kann dies entweder daran liegen, dass Ihre Anmeldung abgelaufen ist, oder Sie müssen frühere Bearbeitungen speichern.
 
@@ -92,7 +92,7 @@ Der Ordner /etc/designs enthält die Bilder, Skripte und Stylesheets, die zusamm
 
 1. Wählen Sie im Explorer-Bereich die **[!UICONTROL Designs]** Ordner und klicken Sie dann auf **[!UICONTROL Neu > Neue Seite]**.
 
-   Geben Sie Folgendes ein:
+   Geben Sie ein:
 
    * Titel: **Eine SCF-Sandbox**
    * Name: **an-scf-sandbox**

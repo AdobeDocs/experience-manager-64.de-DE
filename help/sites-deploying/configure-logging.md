@@ -14,7 +14,7 @@ exl-id: d94b776d-db06-4f46-ac7f-c3b8e4160b69
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Mit AEM können Sie Folgendes konfigurieren:
 
 * Globale Parameter für den zentralen Protokollierungsdienst
 * Anforderung einer Datenprotokollierung; eine spezielle Protokollierungskonfiguration zum Anfordern von Informationen
-* Spezifische Einstellungen für die einzelnen Dienste; Beispiel: eine einzelne Protokolldatei und das Format für die Protokollmeldungen
+* Spezifische Einstellungen für die einzelnen Dienste; zum Beispiel eine einzelne Protokolldatei und das Format für die Protokollmeldungen
 
 Hierbei handelt es sich jeweils um [OSGi-Konfigurationen](/help/sites-deploying/configuring-osgi.md).
 
@@ -44,7 +44,7 @@ Die Konfiguration [Apache Sling Logging Configuration](/help/sites-deploying/osg
 
 >[!NOTE]
 >
->In diesem [Knowledgebase-Artikel](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) wird das Rotieren von request.log- und access.log-Dateien erläutert.
+>In diesem [Knowledgebase-Artikel](https://helpx.adobe.com/de/experience-manager/kb/HowToRotateRequestAndAccessLog.html) wird das Rotieren von request.log- und access.log-Dateien erläutert.
 
 ## Logger und Writer für einzelne Dienste {#loggers-and-writers-for-individual-services}
 
@@ -77,7 +77,7 @@ Diese Elemente sind über die folgenden Parameter mit den entsprechenden Element
 
    Auf diese Weise werden Logging Logger und Logging Writer miteinander verknüpft. Der Wert muss für die herzustellende Verbindung mit den Parametern in der Logging-Writer-Konfiguration übereinstimmen.
 
-* **Protokolldatei (Protokollierungs-Writer)**
+* **Protokolldatei (Logging Writer)**
 
    Definieren Sie die physische Datei, in die die Protokollmeldungen geschrieben werden.
 
@@ -139,12 +139,12 @@ Sie können ein eigenes Logger-/Writer-Paar definieren:
 
    1. Geben Sie die Protokolldatei an.
    1. Geben Sie den Logger an.
-   1. Konfigurieren Sie die anderen Parameter nach Bedarf.
+   1. Konfigurieren Sie ggf. weitere Parameter.
 
 1. Erstellen Sie eine neue Instanz der Werkskonfiguration [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geben Sie die Protokolldatei an – diese muss mit der Angabe für den Logger übereinstimmen.
-   1. Konfigurieren Sie die anderen Parameter nach Bedarf.
+   1. Konfigurieren Sie ggf. weitere Parameter.
 
 >[!NOTE]
 >

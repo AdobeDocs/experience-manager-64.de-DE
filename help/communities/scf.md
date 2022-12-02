@@ -77,7 +77,7 @@ Die Hauptklassen werden im Abschnitt [Serverseitige Anpassung](server-customize.
 
 Besuch [Übersicht über den Speicheranbieter](srp.md) , um mehr über die Arbeit mit UGC zu erfahren.
 
-### -HTTP-API {#http-api}
+### HTTP-API {#http-api}
 
 Die HTTP-API unterstützt die einfache Anpassung und Auswahl von Client-Plattformen für PhoneGap-Apps, native Apps und andere Integrationen und Mashups. Darüber hinaus ermöglicht die HTTP-API es einer Community-Site, als Dienst ohne Client ausgeführt zu werden, sodass Framework-Komponenten in jede auf einer beliebigen Technologie aufbauende Webseite integriert werden können.
 

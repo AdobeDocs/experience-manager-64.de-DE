@@ -1,7 +1,7 @@
 ---
 title: ConvertPDF-Dienst
 seo-title: ConvertPDF Service
-description: 'Mithilfe des ConvertPDF-Dienstes von AEM Forms werden PDF-Dokumente in PostScript- oder Bilddateien konvertiert. '
+description: Mithilfe des ConvertPDF-Dienstes von AEM Forms werden PDF-Dokumente in PostScript- oder Bilddateien konvertiert.
 seo-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files.
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: a6fe7794-3c31-4706-9e23-fe63a506b0bc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Mit dem Convert PDF-Dienst können Sie Folgendes ausführen:
 
 ## Konfigurieren der Eigenschaften des Dienstes   {#properties}
 
-Sie können den Dienst **AEMFD ConvertPDF** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL AEM Konsole lautet `https://[host]:[port]/system/console/configMgr`.
+Sie können den Dienst **AEMFD ConvertPDF** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL der AEM-Konsole lautet `https://[host]:[port]/system/console/configMgr`.
 
 ## Verwendung des Dienstes {#using-the-service}
 

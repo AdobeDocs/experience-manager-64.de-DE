@@ -1,7 +1,7 @@
 ---
 title: Erscheinungsbild-Framework für adaptive und HTML5-Formulare
 seo-title: Appearance framework for adaptive and HTML5 forms
-description: 'Mobile Forms rendert Formularvorlagen als HTML5-Formulare. Diese Formulare verwenden jQuery, Backbone.js- und Underscore.js-Dateien für das Erscheinungsbild und um Skripten zu aktivieren. '
+description: Mobile Forms rendert Formularvorlagen als HTML5-Formulare. Diese Formulare verwenden jQuery, Backbone.js- und Underscore.js-Dateien für das Erscheinungsbild und um Skripten zu aktivieren.
 seo-description: Mobile Forms render Form Templates as HTML5 forms. These forms use jQuery, Backbone.js and Underscore.js files for the appearance and to enable scripting.
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference

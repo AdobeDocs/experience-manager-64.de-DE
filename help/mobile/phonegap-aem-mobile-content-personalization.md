@@ -1,7 +1,7 @@
 ---
 title: Personalisierung von AEM Mobile-Inhalten
 seo-title: AEM Mobile content personalization
-description: 'Auf dieser Seite erfahren Sie mehr über die Personalisierungsfunktion von AEM Mobile-Inhalten, mit der Autoren von AEM Mobile-App-Inhalten personalisieren können, indem sie Adobe Target nutzen. '
+description: Auf dieser Seite erfahren Sie mehr über die Personalisierungsfunktion von AEM Mobile-Inhalten, mit der Autoren von AEM Mobile-App-Inhalten personalisieren können, indem sie Adobe Target nutzen.
 seo-description: Follow this page to learn about AEM Mobile content personalization feature that allows AEM authors to personalize mobile app content by leveraging Adobe Target.
 uuid: 9078edd1-8399-485f-8a63-a07e766f7ef9
 contentOwner: User
@@ -9,19 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c9c818dc-c5c4-4a96-94fe-9dc9fe75705b
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+exl-id: 8b7a9edc-b7b1-4b31-9a6f-7f79aea7a960
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '2673'
 ht-degree: 3%
 
 ---
 
-
 # Personalisierung von AEM Mobile-Inhalten{#aem-mobile-content-personalization}
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!NOTE]
 >
@@ -279,7 +279,7 @@ Um Inhalte speziell für mobile Anwendungen zu rendern, verwendet AEM Mobile die
 
 Für jede mbox ein Attribut von **cq-targeting** wurde hinzugefügt, sodass Anwendungsentwickler benutzerdefinierten Code schreiben können, um ihn zu nutzen und zu verwenden, wie es ihnen gefällt. Die [AEM Mobile Hybrid Reference App](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) hat ein Beispiel für eine Angular-Direktive, die das Attribut cq-targeting verwendet. Das Konzept des Inhaltsaustauschs, wann und wie er durchgeführt wird, liegt sehr am Entwickler der Mobile App. Es gibt ein Mobile SDK, das über AEM /etc/clientlibs/mobileapps/js/mobileapps.js bereitgestellt wird, das eine API zum Aufrufen des Adobe Targeting-Dienstes bereitstellt. Es ist Sache des Anwendungsentwicklers, anzugeben, wann dieser Aufruf gemäß dem Design seiner Anwendung erfolgen soll.
 
-## Wie geht es weiter? {#what-s-next}
+## So geht es weiter? {#what-s-next}
 
 1. [Mein AEM Mobile App-Erlebnis ](/help/mobile/starting-aem-phonegap-app.md)
 1. [Verwalten des App-Inhalts ](/help/mobile/phonegap-manage-app-content.md)

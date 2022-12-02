@@ -238,8 +238,8 @@ Der Handler benötigt außerdem einen Funktionsaufruf, damit die Schnellansicht 
 
    * Unser benutzerdefiniertes Popup-Fenster identifiziert.
    * Es aus dem DOM entfernt.
-   * Den Viewer-Container identifiziert.
-   * Das Popup-Fenster ist mit dem Viewer-Container verbunden.
+   * Den Viewer-Container erkannt.
+   * Das Popup-Fenster mit dem Viewer-Container verbunden.
 
 1. Ihr fertiger setHandlers-Code sollte nun etwa wie folgt aussehen (für den interaktiven Video-Viewer):
 

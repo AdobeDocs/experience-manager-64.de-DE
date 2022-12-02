@@ -101,7 +101,7 @@ Folgen Sie dann den Anweisungen zum
 
 Beispielpaket mit Tags, die für die Tutorials für die ersten Schritte mit AEM Communities erstellt wurden
 
-[Datei laden](assets/communities_tutorialtags-10.zip)
+[Datei abrufen](assets/communities_tutorialtags-10.zip)
 
 ## Erstellen von Aktivierungsmitgliedern und -gruppen {#create-enablement-members-and-groups}
 
@@ -210,8 +210,8 @@ Scrollen Sie nach unten zu `Add User to Groups`:
 
 * Geben Sie &quot;C&quot;zur Suche ein.
 
-   * Wählen Sie nun eine der folgenden Optionen aus `Community Administrators`
-   * Wählen Sie nun eine der folgenden Optionen aus `Community Enablement Managers`
+   * Auswählen `Community Administrators`
+   * Auswählen `Community Enablement Managers`
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
 

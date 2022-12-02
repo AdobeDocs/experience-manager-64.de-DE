@@ -1,5 +1,5 @@
 ---
-title: '''Schulung: Erstellen eines adaptiven Formulars'''
+title: 'Schulung: Erstellen eines adaptiven Formulars'
 seo-title: Create an adaptive form
 description: Lernen Sie, ein adaptives Formular zu erstellen, zu gestalten und in der Vorschau anzuzeigen. Informieren Sie sich auch über das Konfigurieren von Sendeaktionen.
 seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.

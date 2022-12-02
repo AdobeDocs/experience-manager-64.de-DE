@@ -7,7 +7,7 @@ exl-id: c205046f-9e60-4010-9ae3-be7d02d45248
 source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -37,7 +37,7 @@ CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-authoring-dialog-fields-customization auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [Öffnen Sie das Projekt aem-authoring-dialog-fields-customization auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip) herunter.
 
 >[!NOTE]

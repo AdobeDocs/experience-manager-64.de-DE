@@ -1,7 +1,7 @@
 ---
 title: Komponenten
 seo-title: Components
-description: 'AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. '
+description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten.
 seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
@@ -14,7 +14,7 @@ exl-id: d552cbcc-8f71-48a3-9685-eba1ab8805c3
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content 
 
 * [Komponenten für die Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Komponenten, die zum Erstellen von Standardseiteninhalten verwendet werden, sind hauptsächlich in Gruppen enthalten **Allgemein**, **Spalten** und **Forms**.
+   Komponenten für die Erstellung von Standardseiteninhalt sind hauptsächlich in den Gruppen **Allgemein**, **Spalten** und **Formulare** enthalten.
 
 * [E-Commerce](/help/sites-administering/ecommerce.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Konfigurieren des Adobe PhoneGap Build-Cloud-Service '
+title: Konfigurieren des Adobe PhoneGap Build-Cloud-Service
 seo-title: Configure your Adobe PhoneGap Build Cloud Service
 description: Auf dieser Seite finden Sie Informationen zum Konfigurieren der Cloud-Services und zum Erstellen Ihrer Anwendung mit PhoneGap-Build.
 seo-description: Follow this page for configuring the cloud services and building your application with PhoneGap build.
@@ -21,7 +21,7 @@ ht-degree: 18%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die **PhoneGap Build** im Anwendungs-Dashboard bietet die Möglichkeit, Ihre PhoneGap-Mobile App über den Adobe PhoneGap Build-Dienst zu erstellen und zu verteilen.
 

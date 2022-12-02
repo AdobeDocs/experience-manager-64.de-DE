@@ -15,7 +15,7 @@ role: User
 source-git-commit: 76592d2714106f96184196b9e8db012801bf7c28
 workflow-type: tm+mt
 source-wordcount: '4735'
-ht-degree: 84%
+ht-degree: 86%
 
 ---
 
@@ -35,7 +35,7 @@ Auf Ihrer Website kann ein Karussellbanner wie folgt aussehen:
 
 Hier können Sie durch die Bilder navigieren (durch Klicken auf die Zahlen). Zusätzlich drehen sich die Folien automatisch basierend auf einem Intervall, das Sie anpassen können. Bilder, die Sie im Karussellbanner hinzufügen, unterstützen sowohl Hotspots als auch Imagemaps, über die Benutzer auf einen Hyperlink tippen oder zu ihm navigieren oder auf ein Schnellansichtsfenster zugreifen können.
 
-In diesem Beispiel hat ein Benutzer auf eine Imagemap getippt oder geklickt und auf das Schnellansichtsfenster für Handschuhe zugegriffen:
+In diesem Beispiel hat der Benutzer auf eine Imagemap geklickt oder getippt und das Schnellansichtsfenster für Handschuhe aufgerufen:
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
@@ -57,7 +57,7 @@ So schaffen Sie einen schnellen Einstieg:
 
    >[!NOTE]
    >
-   >Wenn Sie AEM Sites- oder eCommerce-Kunde sind, können Sie die integrierte Funktion verwenden, um zu den Produktseiten zu navigieren und die vorhandenen SKUs im Produktkatalog zu suchen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell eingeben. Weitere Informationen finden Sie unter [Einrichten von eCommerce](/help/sites-administering/generic.md).
+   >Wenn Sie AEM Sites- oder eCommerce-Kunde sind, können Sie die integrierte Funktion verwenden, um zu den Produktseiten zu navigieren und die vorhandenen SKUs im Produktkatalog zu suchen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell eingeben. Weitere Informationen finden Sie unter [Einrichten von E-Commerce](/help/sites-administering/generic.md).
    >
    >Wenn Sie AEM Assets und dynamische Medien verwenden, geben Sie Daten für Hotspots und Imagemaps manuell ein und fügen Sie dann die veröffentlichte URL oder den Einbettungscode in Ihrem Drittanbietersystem für Web Content Management ein.
 
@@ -99,11 +99,11 @@ Informationen zum Bearbeiten von Karussellsets finden Sie unter [Bearbeiten von 
 
 Ermitteln Sie zunächst die dynamischen Variablen, die von der vorhandenen Schnellansichtsimplementierung verwendet werden, damit Sie Hotspots oder Imagemap-Daten beim Erstellen von Karussellsets in AEM Assets korrekt eingeben können.
 
-Beim Hinzufügen von Hotspots oder Imagemaps zu einem Bannerbild in AEM Assets müssen Sie jedem Hotspot und jeder Imagemap eine SKU und optional zusätzliche Variablen zuweisen. Diese Variablen werden später verwendet, um Hotspots oder Imagemaps mit Schnellansichtsinhalten abzugleichen.
+Beim Hinzufügen von Hotspots oder Imagemaps zu einem Bannerbild in AEM Assets müssen Sie jedem Hotspot und jeder Imagemap eine SKU und optional zusätzliche Variablen zuweisen. Mithilfe dieser Variablen werden Hotspots oder Imagemaps später Schnellansichtsinhalten zugeordnet.
 
 >[!NOTE]
 >
->Wenn Sie AEM Sites- und/oder AEM eCommerce-Kunde sind, können Sie diesen Schritt überspringen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell ermitteln. Sie können die Integration mit eCommerce für die Produktintegration verwenden. Weitere Informationen finden Sie unter [Einrichten von eCommerce](/help/sites-administering/generic.md). Darüber hinaus können Sie die interaktive Komponente verwenden und in Ihre Webseite einfügen.
+>Wenn Sie AEM Sites- und/oder AEM eCommerce-Kunde sind, können Sie diesen Schritt überspringen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell ermitteln. Sie können die Integration mit E-Commerce für die Produktintegration verwenden. Weitere Informationen finden Sie unter [Einrichten von E-Commerce](/help/sites-administering/generic.md). Darüber hinaus können Sie die interaktive Komponente verwenden und in Ihre Webseite einfügen.
 >
 >Wenn Sie AEM Assets- oder Medien-Kunde sind, veröffentlichen Sie den URL- oder Einbettungscode, integrieren Sie ihn dann in Ihrem Drittanbieter-Content Management System und ermitteln Sie Hotspots und Imagemaps manuell.
 
@@ -231,7 +231,7 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, wenn Sie fertig sind.
 
-## Hinzufügen von Hotspots oder Imagemaps zu einem Bildbanner {#adding-hotspots-or-image-maps-to-an-image-banner}
+## Hinzufügen von Hotspots oder Imagemaps in einem Bildbanner {#adding-hotspots-or-image-maps-to-an-image-banner}
 
 Sie können einem Banner mithilfe des Karussellset-Editors Hotspots oder Imagemaps hinzufügen.
 
@@ -434,7 +434,7 @@ Sobald das interaktive Karussellbanner Schritt 1 und teilweise Schritt 2 erset
 In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 
 * Er lauscht am Ereignis, das durch das Karussellbanner ausgegeben wird.
-* Erstellt eine Schnellansichts-URL basierend auf den Hotspot- oder Imagemap-Daten.
+* Er erstellt eine Schnellansichts-URL anhand der Hotspot- oder Imagemap-Daten.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 
 Der von AEM Assets zurückgegebene Einbettungs-Code verfügt über einen einsatzbereiten Ereignis-Handler, der auskommentiert ist.

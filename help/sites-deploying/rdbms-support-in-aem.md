@@ -14,13 +14,13 @@ exl-id: 89523bb4-e4c4-469c-802b-6fe27c816a2e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '700'
-ht-degree: 73%
+ht-degree: 85%
 
 ---
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die Unterstützung für RDBMS-Persistenz in AEM wird mithilfe des Document-Mikrokernels implementiert. Der Document-Mikrokernel bildet die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
 
@@ -54,7 +54,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
 1. Stellen Sie sicher, dass der Datenbank-Daemon gestartet ist und eine aktive Datenbank für die Verwendung mit AEM vorhanden ist.
 1. Kopieren Sie die AEM 6.3-JAR-Datei in das Installationsverzeichnis.
-1. Erstellen Sie einen Ordner mit dem Namen `crx-quickstart\install` im Installationsverzeichnis.
+1. Erstellen Sie im Installationsverzeichnis einen Ordner namens `crx-quickstart\install`.
 1. Konfigurieren Sie den Document-Knotenspeicher, indem Sie eine Konfigurationsdatei mit dem folgenden Namen im Verzeichnis `crx-quickstart\install` erstellen:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
@@ -77,7 +77,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
       * Navigieren Sie zum Paket, das aus dem heruntergeladenen ZIP-Archiv extrahiert wurde.
       * Vergewissern Sie sich, dass **JDBC-Treiber der oracle Corporation für MySQLcom.mysql.jdbc** aktiv ist, und starten Sie es.
 
-1. Beginnen Sie AEM schließlich mit der `crx3` und `crx3rdb` runmodes:
+1. Starten Sie abschließend AEM mit den Ausführungsmodi `crx3` und `crx3rdb`:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -115,7 +115,7 @@ Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenf
 * `jdbc:oracle:thin:localhost:port:SID` für Oracle;
 * `jdbc:mysql://localhost:3306/databasename` für MySQL und MariaDB (experimentell)
 
-* `jdbc:sqlserver://localhost:1453;databaseName=name` für Microsoft SQL Server (experimentell).
+* `jdbc:sqlserver://localhost:1453;databaseName=name` für Microsoft SQL Server (experimentell)
 
 ## Bekannte Einschränkungen {#known-limitations}
 

@@ -13,13 +13,13 @@ exl-id: 123ef72b-f09b-47eb-9b5a-e0deb38799df
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 61%
+ht-degree: 83%
 
 ---
 
 # Externalisieren von URLs{#externalizing-urls}
 
-In AEM **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad (z. B. `/path/to/my/page`) in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
+In AEM ist der **Externalizer** ein OSGI-Service, der es Ihnen ermöglicht, einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL umzuwandeln (z. B. `https://www.mycompany.com/path/to/my/page`), indem der Pfad mit einem vorangestellten vorkonfigurieren DNS versehen wird.
 
 Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
@@ -27,11 +27,11 @@ Auf dieser Seite wird beschrieben, wie Sie den **Externalizer**-Dienst konfiguri
 
 ## Konfigurieren des Externalizer-Diensts {#configuring-the-externalizer-service}
 
-Die **Externalizer** -Dienst ermöglicht es Ihnen, zentral mehrere Domänen zu definieren, die zum programmatischen Präfix von Ressourcenpfaden verwendet werden können. Alle Domänen werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domäne identifiziert.
+Der **Externalizer**-Dienst ermöglicht es Ihnen, zentral mehrere Domains zu definieren, die für das programmgesteuerte Voranstellen von Präfixen für Ressourcenpfade verwendet werden können. Alle Domains werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domain identifiziert.
 
-Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folgt:
+Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt:
 
-1. Navigieren Sie zum Konfigurationsmanager über **Instrumente**, dann **Web-Konsole** oder geben Sie `https://<host>:<port>/system/console/configMgr.`
+1. Wechseln Sie zum Konfigurations-Manager über **Tools** > **Web-Konsole** oder geben Sie Folgendes ein `https://<host>:<port>/system/console/configMgr.`
 1. Klicken Sie auf **Day CQ Link Externalizer**, um das Konfigurationsdialogfeld zu öffnen.
 
    >[!NOTE]
@@ -45,9 +45,9 @@ Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folg
    `<unique-name> [scheme://]server[:port][/contextpath]`, Hierbei gilt:
 
    * **schema** ist normalerweise http oder https, kann aber auch ftp usw. sein.Verwenden Sie https, um https-Verknüpfungen zu erzwingen, falls gewünscht. Es wird verwendet, wenn der Clientcode das Schema beim Anfordern der Externalisierung einer URL nicht außer Kraft setzt.
-   * **server** ist der Hostname (kann ein Domänenname oder eine IP-Adresse sein).
-   * **port** (optional) ist die Anschlussnummer.
-   * **contextpath** (optional) wird nur festgelegt, wenn AEM als Web-App unter einem anderen Kontextpfad installiert ist.
+   * **Server** ist der Host-Name (kann ein Domain-Name oder eine IP-Adresse sein).
+   * **Port** (optional) ist die Portnummer.
+   * **Kontextpfad** (optional) wird nur festgelegt, wenn AEM als Web-App unter einem anderen Kontextpfad installiert wird.
 
    Beispiel: `production https://my.production.instance`
 
@@ -65,7 +65,7 @@ Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folg
 
 >[!NOTE]
 >
->Adobe empfiehlt, dass Sie [die Konfiguration zum Repository hinzufügen](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
+>Adobe empfiehlt, dass Sie [die Konfiguration dem Repository hinzufügen](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository).
 
 ## Verwenden des Externalizer-Diensts {#using-the-externalizer-service}
 

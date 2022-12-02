@@ -8,7 +8,7 @@ exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
 source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 88%
+ht-degree: 90%
 
 ---
 
@@ -37,7 +37,7 @@ Um optimale Ergebnisse zu erzielen, sollte die Adobe PDF Rasterizer-Bibliothek f
 * AI-Dateien mit nicht standardmäßig generierten Miniaturbildern
 * Für AI-Dateien mit SPOT (PMS)-Farben
 
-Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, haben eine bessere Qualität als die standardmäßige Rasterausgabe. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Ungeachtet des Farbraums der Quell-PDF-Datei generiert Adobe PDF Rasterizer nur eine RGB-Ausgabe.
+Die Miniaturbilder und Vorschauen, die mit PDF-Rasterizer generiert werden, haben eine bessere Qualität als die standardmäßige Rasterausgabe. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Ungeachtet des Farbraums der Quell-PDF-Datei generiert Adobe PDF Rasterizer nur eine RGB-Ausgabe.
 
 ## Adobe InDesign Server {#adobe-indesign-cc-server}
 

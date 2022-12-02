@@ -1,7 +1,7 @@
 ---
 title: Leistung und Skalierbarkeit
 seo-title: Performance & Scalability
-description: 'Dieses Whitepaper beschreibt, wie Skalierbarkeitsoptionen zusammen mit Leistungsindikatoren und Funktionen für die Notfallwiederherstellung in AEM integriert wurden.  '
+description: Dieses Whitepaper beschreibt, wie Skalierbarkeitsoptionen zusammen mit Leistungsindikatoren und Funktionen für die Notfallwiederherstellung in AEM integriert wurden.
 seo-description: This white paper discusses the ways scalability has been built into AEM along with performance indicators and disaster recovery features.
 uuid: 709ed651-534d-4b80-8f9b-ac99669f6f61
 contentOwner: User

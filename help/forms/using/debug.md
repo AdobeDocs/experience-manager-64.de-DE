@@ -1,7 +1,7 @@
 ---
 title: Debuggings von HTML5-Formularen
 seo-title: Debugging HTML5 forms
-description: 'Das Dokument listet Schritte zur Behebung verschiedener bekannter Probleme auf. '
+description: Das Dokument listet Schritte zur Behebung verschiedener bekannter Probleme auf.
 seo-description: The document list steps to troubleshoot various known issues.
 uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat

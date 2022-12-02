@@ -1,7 +1,7 @@
 ---
 title: Tastaturbefehle für Konsolen
 seo-title: Keyboard Shortcuts for Consoles
-description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die Seitenbearbeitung.
+description: In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die Seitenbearbeitung.
 seo-description: Various keyboard shortcuts are available throughout AEM. Some apply to the use of consoles, others to page editing.
 uuid: 3be775f4-ea44-4843-9041-dbcf0c41eec4
 contentOwner: Chris Bohnert
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Tastaturbefehle für Konsolen{#keyboard-shortcuts-for-consoles}
 
-In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

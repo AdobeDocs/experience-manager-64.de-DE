@@ -79,8 +79,8 @@ So fügen Sie eine Clientlib für eine Community-Site hinzu: [CRXDE Lite](../../
       * Auswählen `+` , um eine neue Client-Bibliothek aufzurufen
 
          * Wiederholen Sie diesen Vorgang, um weitere Client-Bibliotheken hinzuzufügen.
-      * Klicken Sie auf **[!UICONTROL OK]**
-   * Wählen Sie **[!UICONTROL Alle speichern]** aus
+      * Wählen Sie **[!UICONTROL OK]** aus
+   * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 
 

@@ -9,7 +9,7 @@ exl-id: 8c41dba4-bedc-4747-b67d-fd89d71c8b2c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '537'
-ht-degree: 79%
+ht-degree: 89%
 
 ---
 
@@ -26,13 +26,13 @@ Best Practices für die Bearbeitung, Bereitstellung, Pflege und Entwicklung find
 
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
-* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
 Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Best Practices rund um Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
+Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table> 
  <tbody>
@@ -59,7 +59,7 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktion und de
   <tr>
    <td>Dynamic Media im Vergleich zur direkten Integration mit Dynamic Media Classic</td> 
    <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media Classic/AEM-Integration versus Dynamic Media</a></td> 
-   <td>Beschreibt, wann sich die Verwendung der Lösung „Dynamische Medien“ am ehesten empfiehlt, wann S7 in AEM integriert wird und wann beide Lösungen verwendet werden.</td> 
+   <td>Beschreibt, wann sich die Verwendung der Lösung „Dynamic Media“ am ehesten empfiehlt, wann S7 in AEM integriert wird und wann beide Lösungen verwendet werden.</td> 
   </tr>
  </tbody>
 </table>
@@ -93,7 +93,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
   <tr>
    <td>Benutzerverwaltung</td> 
    <td><a href="/help/sites-administering/security.md#best-practices">Best Practices zu Berechtigungen und Rechten</a></td> 
-   <td>Beschreibt Best Practices beim Arbeiten mit Berechtigungen und Berechtigungen </td> 
+   <td>Hier sind die Best Practices für die Arbeit mit Berechtigungen und Rechten beschrieben. </td> 
   </tr>
   <tr>
    <td>Workflows</td> 

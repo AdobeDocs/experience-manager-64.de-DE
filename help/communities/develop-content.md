@@ -1,7 +1,7 @@
 ---
 title: Entwickeln von Sandbox-Inhalten
 seo-title: Develop Sandbox Content
-description: 'Inhalte entwickeln '
+description: Inhalte entwickeln
 seo-description: Develop content
 uuid: ca046cf8-f6cd-41a1-97c8-74a86fbe9cd2
 contentOwner: User

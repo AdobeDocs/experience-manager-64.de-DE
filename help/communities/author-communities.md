@@ -1,7 +1,7 @@
 ---
 title: Communities-Komponenten
 seo-title: Communities Components
-description: 'Hinzufügen von Community-Funktionen zu AEM Website '
+description: Hinzufügen von Community-Funktionen zu AEM Website
 seo-description: Adding community features to any AEM site
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert

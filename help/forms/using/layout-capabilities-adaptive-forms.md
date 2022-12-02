@@ -12,7 +12,7 @@ exl-id: 887e88c6-4c2b-4ef3-b268-8956fdb4535f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1143'
-ht-degree: 77%
+ht-degree: 89%
 
 ---
 
@@ -54,14 +54,14 @@ Formularersteller können jedem Bedienfeld eines adaptiven Formulars ein Layout 
 
 Die Bereichslayouts stehen unter `/libs/fd/af/layouts/panel` zur Verfügung.
 
-![Liste der Bereichslayouts für den Stammbereich eines adaptiven Formulars](assets/layouts.png)
+![Liste der Bedienfeldlayouts für das Stammbedienfeld eines adaptiven Formulars](assets/layouts.png)
 **Abbildung:** *Liste der Bereichslayouts in adaptiven Formularen*
 
 ### Responsiv – alles auf einer Seite ohne Navigation {#responsive-everything-on-one-page-without-navigation-br}
 
 Verwenden Sie dieses Bereichslayout, um ein responsives Layout zu erstellen, das sich ohne spezielle Navigation an die Bildschirmgröße Ihres Geräts anpasst.
 
-Mit diesem Layout können Sie mehrere **[!UICONTROL Adaptives Bedienfeldformular]** Komponenten nacheinander innerhalb des Bedienfelds.
+Mithilfe dieses Layouts können Sie in das Bedienfeld nacheinander mehrere Komponenten für **[!UICONTROL Bedienfelder für adaptive Formulare]** einfügen.
 
 ![So sieht ein Formular mit einem responsiven Layout auf einem kleinen Bildschirm aus](assets/responsive_layout_seen_on_small_screen.png)
 
@@ -75,7 +75,7 @@ Mit diesem Layout können Sie mehrere **[!UICONTROL Adaptives Bedienfeldformular
 
 Verwenden Sie dieses Bereichslayout, um innerhalb eines Formulars eine geführte Navigation anzubieten. Beispielsweise können Sie dieses Layout verwenden, wenn Sie in einem Formular obligatorische Informationen erfassen und dabei die Benutzer Schritt für Schritt anleiten möchten.
 
-Verwenden Sie die `Panel adaptive form` -Komponente, um eine schrittweise Navigation innerhalb eines Bedienfelds bereitzustellen. Wenn Sie dieses Layout verwenden, gehen Benutzer erst dann zum nächsten Schritt über, wenn der aktuelle Schritt abgeschlossen ist.
+Verwenden Sie die `Panel adaptive form`-Komponente, um in einem Bedienfeld eine schrittweise Navigation zur Verfügung zu stellen. Wenn Sie dieses Layout verwenden, gehen Benutzer erst dann zum nächsten Schritt über, wenn der aktuelle Schritt abgeschlossen ist.
 
 ```
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
@@ -91,7 +91,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ### Layout für Akkordeon-Design {#layout-for-accordion-design}
 
-Mit diesem Layout können Sie die `Panel adaptive form` -Komponente in einem Bedienfeld mit Akkordeon-Stil-Navigation. Mit diesem Layout können Sie außerdem wiederholbare Bereiche erstellen. Wiederholbare Bereiche ermöglichen es Ihnen, Bereiche nach Bedarf hinzuzufügen oder zu entfernen. Sie können dabei festlegen, wie oft sich ein Bereich mindestens oder maximal wiederholen darf. Außerdem kann anhand der in den Bereichselementen angegebenen Informationen der Titel des Bereichs dynamisch festgelegt werden.
+Mit diesem Layout können Sie die `Panel adaptive form`-Komponente in ein Bedienfeld mit Navigation im Akkordeonstil einfügen. Mit diesem Layout können Sie außerdem wiederholbare Bereiche erstellen. Wiederholbare Bereiche ermöglichen es Ihnen, Bereiche nach Bedarf hinzuzufügen oder zu entfernen. Sie können dabei festlegen, wie oft sich ein Bereich mindestens oder maximal wiederholen darf. Außerdem kann anhand der in den Bereichselementen angegebenen Informationen der Titel des Bereichs dynamisch festgelegt werden.
 
 Ein Zusammenfassungsausdruck kann verwendet werden, um im Titel des minimierten Bereichs die vom Endbenutzer eingegebenen Werte anzuzeigen.
 
@@ -101,7 +101,7 @@ Ein Zusammenfassungsausdruck kann verwendet werden, um im Titel des minimierten 
 
 ### Layout mit Registerkarten – Registerkarten werden auf der linken Seite angezeigt {#tabbed-layout-tabs-appear-on-the-left}
 
-Mit diesem Layout können Sie die `Panel adaptive form` in einem Bedienfeld mit Registerkartennavigation. Die Registerkarten befinden sich auf der linken Seite der Bereichsinhalte.
+Mithilfe dieses Layouts können Sie die `Panel adaptive form`-Komponente in ein Bedienfeld mit Registerkartennavigation einfügen. Die Registerkarten befinden sich auf der linken Seite der Bereichsinhalte.
 
 ![Im Layout mit Registerkarten werden die Registerkarten links angezeigt](assets/tabbed_layout_left.png)
 
@@ -109,7 +109,7 @@ Mit diesem Layout können Sie die `Panel adaptive form` in einem Bedienfeld mit 
 
 ### Layout mit Registerkarten – Registerkarten werden oben angezeigt {#tabbed-layout-tabs-appear-on-the-top}
 
-Mit diesem Layout können Sie die `Panel adaptive form` Komponente in einem Bedienfeld mit Registerkartennavigation. Die Registerkarten befinden sich oberhalb der Bereichsinhalte.
+Mithilfe dieses Layouts können Sie die `Panel adaptive form`-Komponente in ein Bedienfeld mit Registerkartennavigation einfügen. Die Registerkarten befinden sich oberhalb der Bereichsinhalte.
 
 ![Layout mit Registerkarten in adaptiven Formen mit Registerkarten am oberen Rand](assets/tabbed_layout_top.png)
 
@@ -121,13 +121,13 @@ Layouts für Mobilgeräte ermöglichen eine benutzerfreundliche Navigation auf m
 
 Dieses Layout steuert die Navigation mit einer Navigationsleiste und einem Hauptnavigationsmenü. In der Navigationsleiste befinden sich die Symbole **&lt;** und **>**, um den **nächsten** und den **vorigen** Navigationsschritt im Formular anzuzeigen.
 
-Die Layouts für Mobilgeräte sind unter `/libs/fd/af/layouts/mobile/` verfügbar. Die folgenden Layouts für Mobilgeräte sind in adaptiven Formularen standardmäßig verfügbar.
+Die Layouts für Mobilgeräte sind unter `/libs/fd/af/layouts/mobile/` verfügbar. Die folgenden Layouts für Mobilgeräte stehen für adaptive Formulare standardmäßig zur Verfügung.
 
 ![Liste der Layouts für Mobilgeräte in adaptiven Formularen](assets/mobile-navigation.png)
 
 **Abbildung:** *Liste der Layouts für Mobilgeräte in adaptiven Formularen*
 
-Wenn Sie ein Layout für Mobilgeräte verwenden, ist das Formularmenü für den Zugriff auf verschiedene Formularbedienfelder verfügbar, indem Sie auf ![aem6forms_form_menu](assets/aem6forms_form_menu.png) Symbol.
+Bei einem Layout für Mobilgeräte ist das Formularmenü (über das auf verschiedene Formularbereiche zugegriffen werden kann) per Klick auf das Symbol ![aem6forms_form_menu](assets/aem6forms_form_menu.png) verfügbar.
 
 ### Layout mit Bereichstiteln in der Formularkopfzeile {#layout-with-panel-titles-in-the-form-header}
 
@@ -147,13 +147,13 @@ Wie der Name schon sagt, werden bei diesem Layout nur das Navigationsmenü und d
 
 ## Symbolleistenlayouts {#toolbar-layouts}
 
-Ein Symbolleistenlayout steuert die Positionierung und Anzeige aller Aktionsschaltflächen, die Sie zu Ihren adaptiven Formularen hinzufügen. Das Layout kann auf Formular- oder Bedienfeldebene hinzugefügt werden.
+Mit einem Symbolleistenlayout werden Positionierung und Anzeige aller Aktionsschaltflächen gesteuert, die Sie Ihren adaptiven Formularen hinzufügen. Das Layout kann auf Formular- oder Bedienfeldebene hinzugefügt werden.
 
 ![Liste der Symbolleistenlayouts in adaptiven Formularen zur Steuerung des Schaltflächenlayouts](assets/toolbar-layouts.png)
 
 **Abbildung:** *Liste der Symbolleistenlayouts in adaptiven Formularen*
 
-Symbolleistenlayouts: `/libs/fd/af/layouts/toolbar` Standort. Adaptive Formulare stehen in den folgenden Symbolleistenlayouts standardmäßig zur Verfügung.
+Die Symbolleistenlayouts befinden sich unter `/libs/fd/af/layouts/toolbar`. Adaptive Formulare stehen in den folgenden Symbolleistenlayouts standardmäßig zur Verfügung.
 
 ### Standardlayout für Symbolleiste {#default-layout-for-toolbar}
 

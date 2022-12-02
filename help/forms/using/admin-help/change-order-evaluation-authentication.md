@@ -1,7 +1,7 @@
 ---
 title: Die Reihenfolge der Auswertung für die Authentifizierung ändern
 seo-title: Change the order of evaluation for authentication
-description: 'Sie können die Reihenfolge ändern, in der AEM Forms mehrere Anbieter zur Authentifizierung auswertet. '
+description: Sie können die Reihenfolge ändern, in der AEM Forms mehrere Anbieter zur Authentifizierung auswertet.
 seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin

@@ -38,7 +38,7 @@ Verwenden Sie Configuration Manager, um die URL für die führende Instanz und d
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Im **Whitelist zum Topologie-Connector** -Feld IP-Adresse oder Hostnamen der Offloader-Instanzen angeben, die eine Verbindung mit der führenden Instanz herstellen dürfen. Tippen/Klicken Sie auf **Speichern**.
+1. Im **Whitelist zum Topologie-Connector** -Feld IP-Adresse oder Hostnamen der Offloader-Instanzen angeben, die eine Verbindung mit der führenden Instanz herstellen dürfen. Tippen oder klicken Sie auf **Speichern**.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 

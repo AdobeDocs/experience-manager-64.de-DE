@@ -37,7 +37,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 | POST | Mitglied erstellt ein Kalenderereignis |
 | HINZUFÜGEN | Mitgliederkommentare für ein Kalenderereignis |
 | UPDATE | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
-| DELETE | Kalenderereignis oder -kommentar eines Mitglieds wird gelöscht |
+| LÖSCHEN | Kalenderereignis oder -kommentar eines Mitglieds wird gelöscht |
 
 [Kommentarkomponente](essentials-comments.md)
 SocialEvent `topic`= com/adobe/cq/social/comment
@@ -47,7 +47,7 @@ SocialEvent `topic`= com/adobe/cq/social/comment
 | POST | Mitglied erstellt einen Kommentar |
 | HINZUFÜGEN | Mitglied antwortet auf Kommentar |
 | AKTUALISIEREN | Der Kommentar des Mitglieds wird bearbeitet |
-| DELETE | Kommentar des Mitglieds wird gelöscht |
+| LÖSCHEN | Kommentar des Mitglieds wird gelöscht |
 
 [Dateibibliothekskomponente](essentials-file-library.md)
 SocialEvent `topic`= com/adobe/cq/social/fileLibrary
@@ -57,7 +57,7 @@ SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 | POST | Mitglied erstellt Ordner |
 | ANHÄNGEN | Mitglied lädt eine Datei hoch |
 | AKTUALISIEREN | Mitglied aktualisiert Ordner oder Dateien |
-| DELETE | Mitglied löscht Ordner oder Dateien |
+| LÖSCHEN | Mitglied löscht Ordner oder Dateien |
 
 [Forumkomponente](essentials-forum.md)
 SocialEvent `topic`= com/adobe/cq/social/forum
@@ -67,7 +67,7 @@ SocialEvent `topic`= com/adobe/cq/social/forum
 | POST | Mitglied erstellt Forumthema |
 | HINZUFÜGEN | Mitgliederantworten zum Forumthema |
 | AKTUALISIEREN | Forenthema oder Antwort des Mitglieds wird bearbeitet |
-| DELETE | Forenthema oder Antwort des Mitglieds wurde gelöscht |
+| LÖSCHEN | Forenthema oder Antwort des Mitglieds wurde gelöscht |
 
 [Journalkomponente](blog-developer-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/journal
@@ -77,7 +77,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | POST | Mitglied erstellt einen Blogartikel |
 | HINZUFÜGEN | Kommentare zu Mitgliedern in einem Blogartikel |
 | AKTUALISIEREN | Blogartikel oder Kommentar eines Mitglieds wird bearbeitet |
-| DELETE | Blogartikel oder Kommentar eines Mitglieds wird gelöscht |
+| LÖSCHEN | Blogartikel oder Kommentar eines Mitglieds wird gelöscht |
 
 [QnA-Komponente](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
@@ -89,7 +89,7 @@ SocialEvent `topic` = com/adobe/cq/social/qna
 | AKTUALISIEREN | Frage oder Antwort des Mitglieds wird bearbeitet |
 | SELECT | Antwort des Mitglieds ist ausgewählt |
 | UNSELECT | Die Antwort des Mitglieds ist deaktiviert. |
-| DELETE | Frage oder Antwort des Mitglieds wird gelöscht |
+| LÖSCHEN | Frage oder Antwort des Mitglieds wird gelöscht |
 
 [Überprüfungskomponente](reviews-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/review
@@ -98,7 +98,7 @@ SocialEvent `topic`= com/adobe/cq/social/review
 |---|---|
 | POST | Mitglied erstellt Überprüfung |
 | AKTUALISIEREN | Die Überprüfung des Mitglieds wird bearbeitet |
-| DELETE | Überprüfung durch das Mitglied wird gestrichen |
+| LÖSCHEN | Überprüfung durch das Mitglied wird gestrichen |
 
 [Bewertungskomponente](rating-basics.md)
 SocialEvent `topic`= com/adobe/cq/social/tally

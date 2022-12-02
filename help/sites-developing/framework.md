@@ -14,7 +14,7 @@ exl-id: bae592db-dc36-409f-b841-0582c464c3f6
 source-git-commit: 381e760d1634dec6c6cdb933fd4da6b4652e6ff7
 workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 55%
+ht-degree: 66%
 
 ---
 
@@ -92,8 +92,8 @@ Die folgende Tabelle zeigt einige Beispiele `TagIDs`, ihre Elemente und wie die 
 |---|---|---|---|---|---|
 | `dam:fruit/apple/braeburn` | `dam` | `fruit/apple/braeburn` | `fruit`, `apple` | `braeburn` | `/content/cq:tags/dam/fruit/apple/braeburn` |
 | `color/red` | `default` | `color/red` | `color` | `red` | `/content/cq:tags/default/color/red` |
-| `sky` | `default` | `sky` | Keine | `sky` | `/content/cq:tags/default/sky` |
-| `dam:` | `dam` | Keine | Keine | Keine | `/content/cq:tags/dam` |
+| `sky` | `default` | `sky` | Ohne | `sky` | `/content/cq:tags/default/sky` |
+| `dam:` | `dam` | Ohne | Ohne | Ohne | `/content/cq:tags/dam` |
 | `/content/cq:tags/category/car` | `category` | `car` | `car` | `car` | `/content/cq:tags/category/car` |
 
 ### Lokalisierung des Tag-Titels {#localization-of-tag-title}
@@ -165,7 +165,7 @@ Die `cq:tags` -Eigenschaft ist ein Zeichenfolgen-Array, mit dem eine oder mehrer
 
 Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository auftreten, wenn Sie Tags mit der [Tagging-Konsole](/help/sites-administering/tags.md) verschieben oder zusammenführen:
 
-* Wenn ein Tag A verschoben oder mit Tag B zusammengeführt wird unter `/content/cq:tags`:
+* Wenn ein Tag A verschoben oder mit Tag B unter `/content/cq:tags` zusammengeführt wird:
 
    * Tag A wird nicht gelöscht und erhält eine `cq:movedTo` -Eigenschaft.
    * Tag B wird erstellt (im Fall eines Verschiebevorgangs) und erhält eine `cq:backlinks` -Eigenschaft.
@@ -175,7 +175,7 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
    * Diese Eigenschaft bedeutet, dass Tag A in Tag B verschoben oder zusammengeführt wurde.
    * Durch Verschieben von Tag B wird diese Eigenschaft entsprechend aktualisiert. Tag A ist somit ausgeblendet und wird nur im Repository behalten, um Tag-IDs in Inhaltsknoten aufzulösen, die auf Tag A verweisen.
    * Der Garbage Collector für Tags entfernt Tags wie Tag A, sobald keine Inhaltsknoten mehr darauf verweisen.
-   * Ein spezieller Wert für `cq:movedTo` Eigenschaft ist `nirvana`: wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, da es Untertags mit einer `cq:movedTo` die gehalten werden müssen.
+   * Ein spezieller Wert für die Eigenschaft `cq:movedTo` ist `nirvana`: Er wird angewendet, wenn das Tag gelöscht wird, aber nicht aus dem Repository entfernt werden kann, weil untergeordnete Tags mit `cq:movedTo` vorhanden sind, die nicht entfernt werden dürfen.
 
       >[!NOTE]
       >
@@ -214,13 +214,13 @@ Im Folgenden finden Sie eine Beschreibung der Auswirkungen, die im Repository au
 
 ## Migration von Tags {#tags-migration}
 
-Ab Adobe Experience Manager 6.4 werden Tags unter `/content/cq:tags`. In Fällen, in denen Adobe Experience Manager von der vorherigen Version aktualisiert wurde, sind die Tags jedoch immer noch unter dem alten Speicherort vorhanden `/etc/tags`. In aktualisierten Systemen müssen Tags in `/content/cq:tags`.
+Ab Adobe Experience Manager 6.4 werden Tags unter `/content/cq:tags`. In Fällen, in denen Adobe Experience Manager ein Upgrade von der vorherigen Version erhielt, sind die Tags jedoch immer noch unter dem alten Speicherort `/etc/tags` vorhanden. In aktualisierten Systemen müssen Tags in `/content/cq:tags`.
 
 >[!NOTE]
 >
 >Auf der Seite Seiteneigenschaften der Tags wird empfohlen, Tag-ID zu verwenden (z. B. `geometrixx-outdoors:activity/biking`) anstatt den Tag-Basispfad fest zu kodieren (z. B. `/etc/tags/geometrixx-outdoors/activity/biking`).
 >
->So listen Sie Tags auf: `com.day.cq.tagging.servlets.TagListServlet` verwendet werden.
+>Zum Auflisten von Tags kann `com.day.cq.tagging.servlets.TagListServlet` verwendet werden.
 
 >[!NOTE]
 >
@@ -228,13 +228,13 @@ Ab Adobe Experience Manager 6.4 werden Tags unter `/content/cq:tags`. In Fällen
 
 ### Wenn die aktualisierte AEM-Instanz die TagManager-API unterstützt**
 
-1. Zu Beginn der Komponente erkennt die TagManager-API, ob es sich um eine aktualisierte AEM handelt. In einem aktualisierten System werden Tags unter `/etc/tags`.
+1. Zu Beginn der Komponente erkennt die TagManager-API, ob es sich um eine aktualisierte AEM handelt. In einem System mit Upgrade werden Tags unter `/etc/tags` gespeichert.
 
-1. Die TagManager-API wird dann im Abwärtskompatibilitätsmodus ausgeführt, d. h. die API verwendet `/etc/tags` als Basispfad. Wenn nicht, wird ein neuer Speicherort verwendet `/content/cq:tags`.
+1. Die TagManager-API wird dann im Abwärtskompatibilitätsmodus ausgeführt, d. h. die API verwendet `/etc/tags` als Basispfad. Wenn nicht, wird ein neuer Speicherort `/content/cq:tags` verwendet.
 
 1. Aktualisieren Sie den Tag-Speicherort.
 
-1. Nachdem Sie Tags an den neuen Speicherort migriert haben, führen Sie das folgende Skript aus.
+1. Führen Sie nach der Migration von Tags an den neuen Speicherort das folgende Skript aus.
 
 ```java
 import org.apache.sling.api.resource.*
@@ -286,13 +286,13 @@ session.save();
 println "---------------------------------Success-------------------------------------"
 ```
 
-Das Skript ruft alle Tags ab, die `/etc/tags` im Wert von `cq:movedTo/cq:backLinks` -Eigenschaft. Anschließend wird der abgerufene Ergebnissatz durchlaufen und der `cq:movedTo` und `cq:backlinks` Eigenschaftswerte in `/content/cq:tags` Pfade (in dem Fall, dass `/etc/tags` im Wert erkannt wird).
+Das Skript ruft alle Tags ab, die `/etc/tags` im Wert der `cq:movedTo/cq:backLinks`-Eigenschaft haben. Anschließend wird der abgerufene Ergebnissatz schrittweise durchlaufen und die Eigenschaftswerte `cq:movedTo` und `cq:backlinks` werden in `/content/cq:tags` Pfade aufgelöst (in dem Fall, dass `/etc/tags` im Wert erkannt wird).
 
 ### Wenn die aktualisierte AEM auf der klassischen Benutzeroberfläche ausgeführt wird**
 
 >[!NOTE]
 >
->Die klassische Benutzeroberfläche ist nicht mit Ausfallzeiten kompatibel und unterstützt nicht den neuen Tag-Basispfad. Wenn Sie die klassische Benutzeroberfläche als `/etc/tags` muss erstellt werden, gefolgt von `cq-tagging` Komponenten neu starten.
+>Die klassische Benutzeroberfläche ist nicht mit Ausfallzeiten kompatibel und unterstützt nicht den neuen Tag-Basispfad. Wenn Sie die klassische Benutzeroberfläche verwenden möchten, muss `/etc/tags` erstellt werden, gefolgt von einem Neustart der Komponente `cq-tagging`.
 
 Falls die aktualisierten AEM-Instanzen von der TagManager-API unterstützt werden und in der klassischen Benutzeroberfläche ausgeführt werden:
 

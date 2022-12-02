@@ -13,7 +13,7 @@ exl-id: 9cdd09f6-bfc2-48c3-af40-a54f98833a38
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -37,9 +37,9 @@ Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 
 Bevor Sie die AEM Developer Tools verwenden, müssen Sie Folgendes tun:
 
-* Downloaden und installieren Sie [Eclipse IDE für Java EE Entwickler](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Entwicklertools unterstützen derzeit Eclipse Kepler oder höher
+* Downloaden und installieren Sie [Eclipse IDE für Java EE Entwickler](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools unterstützt derzeit Eclipse Kepler oder höher.
 
-* Kann mit AEM Version 5.6.1 oder neuer verwendet werden
+* Kann mit AEM Version 5.6.1 oder höher verwendet werden.
 * Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB an Heap-Speicher haben, indem Sie Ihre Konfigurationsdatei `eclipse.ini` bearbeiten, wie in den [Eclipse-FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) beschrieben.
 
 >[!NOTE]
@@ -72,7 +72,7 @@ Sobald Sie die oben genannten [Voraussetzungen](#requirements) erfüllt haben, k
 
 >[!NOTE]
 >
->Siehe [Arbeiten mit einem Bundle in Eclipse, wenn es von AEM heruntergeladen wurde](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
+>Siehe [So arbeiten Sie mit einem Bundle in Eclipse, wenn es von AEM heruntergeladen wurde](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
 ## Die AEM-Perspektive {#the-aem-perspective}
 

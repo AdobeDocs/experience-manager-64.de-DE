@@ -21,7 +21,7 @@ ht-degree: 37%
 |---|---|
 | Version | 6.4.8.4 |
 | Typ | Cumulative Fix Pack |
-| Datum   | 25. Februar 2021 |
+| Datum | 25. Februar 2021 |
 | Voraussetzung | [AEM 6.4 Service Pack 8 (6.4.8.0)](sp-release-notes.md) |
 | Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
 
@@ -554,13 +554,13 @@ Informationen zur Verwendung von Uber Jar in einem Maven-Projekt finden Sie in 
 
 >[!NOTE]
 >
->UberJar und andere zugehörige Artefakte sind im Maven Central Repository anstelle des Adobe Public Maven-Repositorys (repo.adobe.com) verfügbar. Die UberJar-Hauptdatei wird in `uber-jar-<version>.jar` umbenannt. Daher gibt es keine `classifier`, mit `apis` als Wert für die `dependency` -Tag.
+>UberJar und andere zugehörige Artefakte sind im Maven Central Repository anstelle des Adobe Public Maven-Repositorys (repo.adobe.com) verfügbar. Die UberJar-Hauptdatei wurde in `uber-jar-<version>.jar` umbenannt. Daher gibt es keine `classifier`, mit `apis` als Wert für die `dependency` -Tag.
 
 ## Entfernte/veraltete Funktionen {#removed-deprecated-features}
 
 Dieser Abschnitt listet Funktionen und Fähigkeiten auf, die aus AEM 6.4 entfernt oder veraltet sind.
 
-| Bereich | Funktion | Ersatz | Version   |
+| Bereich | Funktion | Ersatz | Version |
 |---|---|---|---|
 | Assets | Tag-Aktion für Teil-Assets verwalten | Kein Ersatz vorhanden. | AEM 6.4.2.0 |
 | Assets und Adobe Creative Cloud-Integration | [Die gemeinsame Nutzung von AEM-Ordnern in Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) wurde in AEM 6.2 eingeführt, um Benutzern von Creative Cloud den Zugang zu den Assets von AEM zu ermöglichen. Eine neue Funktion des Creative Cloud-Programms, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus. Adobe wird die Ordnerfreigabe nicht weiter verbessern. Auch wenn die Funktion in AEM enthalten ist, wird den Kunden dringend empfohlen, den Ersatz zu verwenden. | Adobe Asset Link oder Desktop-Programm. Weitere Informationen finden Sie im Artikel zur [AEM Creative Cloud-Integration](/help/assets/aem-cc-integration-best-practices.md). | AEM 6.4.4.0 |

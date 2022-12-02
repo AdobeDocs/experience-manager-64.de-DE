@@ -9,19 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 377548fa-987a-4a59-84a3-067a3541b6b2
-source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+exl-id: 9d6ede9e-7df4-407e-8f2f-67bda86f0f94
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 10%
 
 ---
 
-
 # App-Leistung mit Adobe Mobile Analytics verfolgen{#track-app-performance-with-adobe-mobile-analytics}
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Sie möchten höhere Kundenkonversionen und -loyalität fördern.
 
@@ -108,7 +108,7 @@ Klicken Sie auf die Schaltfläche &quot;Adobe Mobile Services Application Config
 
 Jetzt, da die mobile App Zugriff auf die Datei ADBMobileConfig.json hat, verfügt sie über die nötigen Kenntnisse, um mit Adobe Analytics zu kommunizieren und Berichte zu diesen wichtigen Metrikwerten zu erstellen, die Ihnen helfen, Ihren App-Erfolg zu fördern.
 
-## Wie geht es weiter? {#what-s-next}
+## So geht es weiter? {#what-s-next}
 
 1. [Mein AEM Mobile App-Erlebnis ](/help/mobile/starting-aem-phonegap-app.md)
 1. [Verwalten des App-Inhalts ](/help/mobile/phonegap-manage-app-content.md)

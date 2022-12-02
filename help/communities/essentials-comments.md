@@ -36,7 +36,7 @@ Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Bei
    <td>Ja - Eigenschaften können bearbeitet werden in <i>Design </i>mode</td> 
   </tr>
   <tr>
-   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td> 
+   <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientbibliotheken</strong></a></td> 
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.stimating</td> 
   </tr>
   <tr>

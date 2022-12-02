@@ -1,5 +1,5 @@
 ---
-title: 'Ungültigmachen von Inhalten im CDN-Cache  '
+title: Ungültigmachen von Inhalten im CDN-Cache
 seo-title: Invalidating your CDN cached content
 description: Indem Sie die Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Sie müssen dazu also nicht auf einen Ablauf des Cache warten.
 seo-description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
@@ -15,7 +15,7 @@ role: Admin,User,Developer
 source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -27,9 +27,9 @@ Siehe auch [Überblick über Caching in Dynamic Media Classic](https://helpx.ado
 
 **So machen Sie Inhalte im CDN-Cache ungültig:** 
 
-1. Melden Sie sich bei Ihrer Dynamic Media Classic-Desktop-Applikation an.
+1. Melden Sie sich bei Ihrem Dynamic Media Classic-Desktop-Programm an.
 
-   [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)
+   [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=de#system-requirements-dmc-app)
 
    Ihre Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Ihnen die Informationen nicht vorliegen, wenden Sie sich an den technischen Support.
 

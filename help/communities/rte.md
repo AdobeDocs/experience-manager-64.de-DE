@@ -62,7 +62,7 @@ So fügen Sie die Hyperlink-Optionen zur Symbolleiste hinzu:
 
 * Hinzufügen einer Symbolleiste mit dem Namen `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* Wählen Sie **[!UICONTROL Alle speichern]** aus
+* Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 

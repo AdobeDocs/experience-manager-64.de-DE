@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichen von Ordnern in Brand Portal
-description: Erfahren Sie, wie Sie Assets in Brand Portal veröffentlichen und ihre Veröffentlichung rückgängig machen.
+description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und Veröffentlichungen rückgängig machen können.
 contentOwner: VG
 feature: Brand Portal
 role: User
@@ -8,7 +8,7 @@ exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
 source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 45%
+ht-degree: 65%
 
 ---
 
@@ -32,7 +32,7 @@ Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in [!DN
 
    ![publish2bp-2](assets/publish2bp-2.png)
 
-2. Um die Assets in Brand Portal zu veröffentlichen, stehen die folgenden beiden Optionen zur Verfügung:
+2. Um die Assets in Brand Portal zu veröffentlichen, stehen die beiden folgenden Optionen zur Verfügung:
    * [Sofortiges Veröffentlichen von Assets](#publish-now)
    * [Assets später veröffentlichen](#publish-later)
 
@@ -40,11 +40,11 @@ Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in [!DN
 
 Um die ausgewählten Assets in Brand Portal zu veröffentlichen, führen Sie einen der folgenden Schritte aus:
 
-* Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Wählen Sie dann im Menü die Option **[!UICONTROL In Brand Portal veröffentlichen]**.
+* Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus. Wählen Sie dann im Menü die Option **[!UICONTROL In Brand Portal veröffentlichen]** aus.
 
 * Wählen Sie in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
 
-   1. Dann aus dem **[!UICONTROL Aktion]** select **[!UICONTROL In Brand Portal veröffentlichen]** und von **[!UICONTROL Planung]** select **[!UICONTROL Jetzt]**. Klicken oder tippen Sie auf **[!UICONTROL Weiter].**
+   1. Wählen Sie dann unter **[!UICONTROL Aktion]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** und unter **[!UICONTROL Zeitplan]** die Option **[!UICONTROL Jetzt]** aus. Klicken oder tippen Sie auf **[!UICONTROL Weiter].**
 
    2. Within **[!UICONTROL Anwendungsbereich]**, bestätigen Sie Ihre Auswahl und tippen/klicken Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**.
 
@@ -54,8 +54,8 @@ Eine Meldung erscheint, die besagt, dass die Assets zur Veröffentlichung in Bra
 
 So planen Sie die Veröffentlichung der Assets in Brand Portal zu einem späteren Zeitpunkt:
 
-1. Nachdem Sie die Assets/Ordner zur Veröffentlichung ausgewählt haben, wählen Sie **[!UICONTROL Veröffentlichung verwalten]** aus der Symbolleiste am oberen Rand.
-2. on **[!UICONTROL Veröffentlichung verwalten]** Seite, wählen Sie **[!UICONTROL In Brand Portal veröffentlichen]** von **[!UICONTROL Aktion]** und wählen Sie **[!UICONTROL Später]** von **[!UICONTROL Planung]**.
+1. Nachdem Sie die zu veröffentlichenden Assets/Ordner ausgewählt haben, wählen Sie oben in der Symbolleiste **[!UICONTROL Veröffentlichung verwalten]** aus.
+2. Wählen Sie auf der Seite **[!UICONTROL Veröffentlichung verwalten]** die Option **[!UICONTROL In Brand Portal veröffentlichen]** unter **[!UICONTROL Aktion]** und dann **[!UICONTROL Später]** unter **[!UICONTROL Zeitplan]** aus.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 

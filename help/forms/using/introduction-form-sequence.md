@@ -36,7 +36,7 @@ Nehmen wir ein Fallbeispiel, bei dem Sie für ein Formular eine Sequenz der Schr
    * **E-sign**: Enthält die Komponente **Sign**, die in einem XFA-basierten adaptiven Formular verwendet werden kann. Es werden die folgenden Dienste zum Signieren bereitgestellt:
 
       * Adobe Document Cloud eSignature-Services
-      * Scribble-Signatur
+      * Freihändige Unterschrift
    * **Bestätigung**: Enthält die Komponente **Zusammenfassung**, in der die Übermittlung in einer Meldung bestätigt wird, nachdem der Benutzer das Formular signiert hat und in der Sequenz den Bestätigungsschritt (Zusammenfassung) erreicht hat. Autoren können den Text der Komponente Zusammenfassung konfigurieren, eine Dankesmeldung oder einen Link zur erstellten PDF-Datei anzeigen usw.
 
 

@@ -9,19 +9,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 2ecf05ed-4e56-4e0b-89cf-5161741f9001
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+exl-id: 8e9a8739-76cd-4507-9c6c-86a5ad486618
+source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 14%
 
 ---
 
-
 # Starten AEM PhoneGap {#starting-aem-phonegap}
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Für Entwickler ist es am besten, sich das Adobe Experience Manager Mobile Starterkit in github anzusehen
 

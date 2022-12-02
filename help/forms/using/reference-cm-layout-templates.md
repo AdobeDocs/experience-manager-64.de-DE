@@ -1,7 +1,7 @@
 ---
 title: Vorlagen für Empfehlungsschreiben
 seo-title: Reference letter templates
-description: 'AEM Forms stellt Vorlagen für Correspondence Management-Brieflayout, die Sie zum schnellen Erstellen von Briefen verwenden können. '
+description: AEM Forms stellt Vorlagen für Correspondence Management-Brieflayout, die Sie zum schnellen Erstellen von Briefen verwenden können.
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS

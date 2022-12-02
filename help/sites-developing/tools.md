@@ -13,7 +13,7 @@ exl-id: 9387cdb4-f8de-4229-90d1-59218ac17561
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 93%
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ Ein Bug-Tracking-System, das für Ihre eigenen Anforderungen konfiguriert werden
 
 **Tabellen**
 
-Tabellen sind zwar nicht als Bugtracker gedacht, werden aber oft als solche missbraucht, da sie leicht verständlich sind und viele Benutzer Erfahrung mit ihrer Verwendung haben.
+Tabellen sind zwar nicht als Bugtracker gedacht, werden aber oft als solche miss braucht, da sie leicht verständlich sind und viele Benutzer Erfahrung mit ihrer Verwendung haben.
 
 Wenn Tabellen als Bugtracker verwendet werden, dann:
 

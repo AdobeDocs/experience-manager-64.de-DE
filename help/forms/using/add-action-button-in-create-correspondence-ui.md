@@ -331,7 +331,7 @@ Aktivieren Sie in diesem Szenario die folgenden Komponenten, die ein Teil der a
 
 Laden Sie die `components.zip` abzurufende Datei `DSCSample.jar` und `SendLetterForReview.lca` Dateien. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
 
-[Datei laden](assets/components.zip)
+[Datei abrufen](assets/components.zip)
 
 #### Konfigurieren Sie den LiveCycle-Server, um den LCA-Vorgang auszuführen {#configure-the-livecycle-server-to-run-the-lca-process}
 

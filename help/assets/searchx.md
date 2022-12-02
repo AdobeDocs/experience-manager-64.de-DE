@@ -8,7 +8,7 @@ exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 79%
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,7 @@ Sie können dem [!DNL Experience Manager] Asset-Admin-Bedienfeld.
 
 >[!CAUTION]
 >
->Als [!DNL Experience Manager] 6.4 Die klassische Benutzeroberfläche wird nicht mehr unterstützt. Eine entsprechende Ankündigung finden Sie unter [Veraltete und entfernte Funktionen](../release-notes/deprecated-removed-features.md). Es empfiehlt sich, die Touch-optimierte Benutzeroberfläche zu verwenden. Informationen zu Anpassungen finden Sie unter [Suchfacetten](search-facets.md).
+>Seit Einführung von [!DNL Experience Manager] 6.4 ist die klassische Benutzeroberfläche veraltet. Eine entsprechende Ankündigung finden Sie unter [Veraltete und entfernte Funktionen](../release-notes/deprecated-removed-features.md). Es empfiehlt sich, die Touch-optimierte Benutzeroberfläche zu verwenden. Informationen zu Anpassungen finden Sie unter [Suchfacetten](search-facets.md).
 
 ## Überlagern {#overlaying}
 
@@ -49,9 +49,9 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie im [!DNL 
 
 [!DNL Experience Manager] Assets umfasst einen Satz vordefinierter Eigenschaften, mit denen eine Asset-Freigaben-Seite angepasst werden kann. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
 
-Zusätzlich zur Verwendung bereits vorhandener Eigenschaften gilt Folgendes: [!DNL Experience Manager] -Entwickler können auch eigene Prädikate erstellen, indem sie die [Query Builder-API](/help/sites-developing/querybuilder-api.md).
+[!DNL Experience Manager]-Entwicklerinnen und -Entwickler können neben den bereits vorhandenen Prädikaten auch eigene Prädikate erstellen. Hierfür können sie die [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) verwenden.
 
-Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
+Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
 Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispielprädikate finden Sie unter `/libs/cq/search/components/predicates`.
 
@@ -262,7 +262,7 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 | Eigenschaft | Typ | Beschreibung |
 |---|---|---|
 | predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `fulltext` |
-| searchCallback | Funktion | Callback zum Auslösen der Suche beim Ereignis `keyup`. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
+| searchCallback | Funktion | Callback zum Auslösen der Suche bei Ereignis `keyup`. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
@@ -279,7 +279,7 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 | predicateName | Zeichenfolge | Name der Eigenschaft. Standardwert ist `path` |
 | rootPath | Zeichenfolge | Stammpfad der Eigenschaft. Standardwert ist `/content/dam` |
 | pathFieldPredicateName | Zeichenfolge | Standardwert ist `folder` |
-| showFlatOption | Boolesch | Kontrollkästchen anzeigen `search in subfolders`. Standardwert ist „true“. |
+| showFlatOption | Boolesch | Markierung zum Anzeigen des Kontrollkästchen `search in subfolders`. Standardwert ist „true“. |
 
 ### DatePredicate {#datepredicate}
 
@@ -305,4 +305,4 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 
 Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. [!DNL Experience Manager] Assets umfasst einen Satz vordefinierter Linsen, mit denen Sie eine Asset-Freigaben-Seite anpassen können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
 
-Zusätzlich zur Verwendung von bereits vorhandenen Linsen [!DNL Experience Manager] -Entwickler können auch eigene Linsen erstellen.
+Zusätzlich zu den bereits vorhandenen Linsen können [!DNL Experience Manager]-Entwicklerinnen und -Entwickler auch eigene Linsen erstellen.

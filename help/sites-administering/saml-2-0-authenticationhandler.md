@@ -13,7 +13,7 @@ exl-id: 4868daad-0f3e-48cb-9b20-08dee270e74e
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Folgendes wird unterstützt:
 * Signierung und Verschlüsselung von Nachrichten
 * Automatische Erstellung von Benutzern
 * Synchronisieren von Gruppen mit vorhandenen Gruppen in AEM
-* Vom Service Provider und Identity Provider initiierte Authentifizierung
+* Durch Dienstleister und Identitätsanbieter eingeleitete Authentifizierung
 
-Dieser Handler speichert die verschlüsselte SAML-Antwortnachricht im Benutzerknoten (`usernode/samlResponse`), um die Kommunikation mit dritten Dienstleistern zu erleichtern.
+Dieser Handler speichert die verschlüsselte SAML-Antwortnachricht im Benutzerknoten (`usernode/samlResponse`), um die Kommunikation mit Dienstleistern von Drittanbietern zu erleichtern.
 
 >[!NOTE]
 >
@@ -46,36 +46,35 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 >
 >* POST-URL des Identitätsanbieters
 >* Entitäts-ID des Dienstleisters
-
 >
 
 
 >[!NOTE]
 >
->SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktioniert, müssen Sie mindestens das öffentliche Zertifikat des Identitätsanbieters im TrustStore bereitstellen. Weitere Informationen finden Sie in [Hinzufügen des Identitätsanbieterzertifikats zum TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore).
+>SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktioniert, müssen Sie zumindest das öffentliche Zertifikat des Identitätsanbieters im TrustStore angeben. Weitere Informationen finden Sie im Abschnitt [Hinzufügen des Identitätsanbieterzertifikats zum TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore).
 
 **Pfad** Repository-Pfad, für den dieser Authentifizierungs-Handler von Sling verwendet werden soll. Wenn dieser leer ist, wird der Authentifizierungs-Handler deaktiviert.
 
-**Service Ranking** Wert &quot;Service Ranking&quot;des OSGi-Frameworks, der die Reihenfolge angibt, in der dieser Dienst aufgerufen werden soll. Dies ist ein ganzzahliger Wert, wobei höhere Werte vorrangig sind.
+**Service-Rangfolge** Position in der Rangfolge der OSGi-Framework-Services. Gibt an, mit welcher Priorität dieser Service aufgerufen wird. Dies ist ein ganzzahliger Wert, wobei höhere Werte Vorrang haben.
 
-**IDP-Zertifikatalias** Der Alias des IdP-Zertifikats im globalen TrustStore. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Im Kapitel „Identitätsanbieterzertifikat zum AEM-TrustStore hinzufügen“ weiter unten finden Sie Informationen dazu, wie Sie dies einrichten.
+**IDP-Zertifikatalias** Das Alias des IDP-Zertifikats im globalen TrustStore. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Im Kapitel „Identitätsanbieterzertifikat zum AEM-TrustStore hinzufügen“ weiter unten finden Sie Informationen dazu, wie Sie dies einrichten.
 
-**Identitäts-Provider-URL** URL des IDP, an den die SAML-Authentifizierungsanforderung gesendet werden soll. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
+**Identitätsanbieter-URL** Die URL des IDP, an die die SAML-Authentifizierungsanforderung gesendet werden soll. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
 
 >[!CAUTION]
 >
 >Der Hostname des Identitätsanbieters muss der OSGi-Konfiguration **Apache Sling Referrer Filter** hinzugefügt werden. Weitere Informationen finden Sie im Abschnitt [Web-Konsole](/help/sites-deploying/configuring-osgi.md).
 
-**Entitäts-ID des Dienstanbieters** Kennung, die diesen Dienstanbieter eindeutig mit dem Identitäts-Provider identifiziert. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
+**Entitäts-ID des Dienstleisters** ID, die diesen Dienstleister eindeutig beim Identitätsanbieter identifiziert. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
 
-**Standardumleitung** Der Standardspeicherort, zu dem nach erfolgreicher Authentifizierung umgeleitet wird.
+**Standardweiterleitung** Der Standardort, an den nach einer erfolgreichen Authentifizierung weitergeleitet wird.
 
 >[!NOTE]
 >
 >Dieser Ort wird nur verwendet, wenn das Cookie `request-path` nicht festgelegt ist. Wenn Sie eine Seite unterhalb des konfigurierten Pfads ohne gültiges Anmelde-Token anfordern, wird der angeforderte Pfad in einem Cookie gespeichert\
->und der Browser nach erfolgreicher Authentifizierung erneut an diesen Speicherort weitergeleitet wird.
+>und der Browser wird nach erfolgreicher Authentifizierung erneut an diesen Ort weitergeleitet.
 
-**Benutzer-ID-Attribut** Der Name des Attributs mit der Benutzer-ID, die zum Authentifizieren und Erstellen des Benutzers im CRX-Repository verwendet wird.
+**Benutzer-ID-Attribut** Der Name des Attributs, das die Benutzer-ID enthält, die zur Authentifizierung und Erstellung des Benutzers im CRX-Repository verwendet wird.
 
 >[!NOTE]
 >
@@ -83,22 +82,22 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 
 **Verschlüsselung verwenden** Gibt an, ob dieser Authentifizierungs-Handler verschlüsselte SAML-Assertionen erwartet.
 
-**CRX-Benutzer automatisch erstellen** Gibt an, ob nach erfolgreicher Authentifizierung nicht vorhandene Benutzer automatisch im Repository erstellt werden sollen.
+**CRX-Benutzer automatisch erstellen** Gibt an, ob nicht vorhandene Benutzer nach erfolgreicher Authentifizierung automatisch im Repository erstellt werden sollen.
 
 >[!CAUTION]
 >
 >Falls die automatische Erstellung von CRX-Benutzern deaktiviert ist, müssen die Benutzer manuell erstellt werden.
 
-**Zu Gruppen hinzufügen** Gibt an, ob ein Benutzer nach erfolgreicher Authentifizierung automatisch zu CRX-Gruppen hinzugefügt werden soll.
+**Zu Gruppen hinzufügen** Gibt an, ob Benutzer nach erfolgreicher Authentifizierung automatisch zu CRX-Gruppen hinzugefügt werden sollen.
 
-**Gruppenmitgliedschaft** Der Name des saml:Attribute mit einer Liste von CRX-Gruppen, zu denen dieser Benutzer hinzugefügt werden soll.
+**Gruppenmitgliedschaft** Der Name des „saml:Attribute“, das eine Liste von CRX-Gruppen enthält, denen dieser Benutzer hinzugefügt werden muss.
 
 ## Identitätsanbieterzertifikat zum AEM TrustStore hinzufügen {#add-the-idp-certificate-to-the-aem-truststore}
 
 SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktionieren kann, müssen Sie mindestens das öffentliche Zertifikat des IdP im Repository bereitstellen. Dazu müssen Sie Folgendes tun:
 
-1. Navigieren Sie zu *http:/serveraddress:serverport/libs/granite/security/content/truststore.html*
-1. Drücken Sie die **[!UICONTROL TrustStore-Link erstellen]**
+1. Wechseln Sie zu *http:/Server-Adresse:Serverport/libs/granite/security/content/truststore.html*.
+1. Klicken Sie auf **[!UICONTROL TrustStore-Link erstellen]**.
 1. Geben Sie das Kennwort für den TrustStore ein und klicken Sie auf **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL TrustStore verwalten]**.
 1. Laden Sie das IdP-Zertifikat hoch.
@@ -106,21 +105,21 @@ SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktio
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Den Dienstleisterschlüssel- und -zertifikatkette dem AEM-Schlüsselspeicher hinzufügen {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## Hinzufügen des Schlüssels und der Zertifikatkette des Dienstleisters zum AEM-Schlüsselspeicher {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
 >Die folgenden Schritte sind obligatorisch. Andernfalls wird die folgende Ausnahme ausgelöst: `com.adobe.granite.keystore.KeyStoreNotInitialisedException: Uninitialised system trust store`
 
-1. Gehen Sie zu: [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html)
-1. Bearbeiten Sie die `authentication-service` Benutzer.
+1. Wechseln Sie zu [http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html).
+1. Bearbeiten Sie den Benutzer `authentication-service`.
 1. Erstellen Sie einen KeyStore, indem Sie unter **Kontoeinstellungen** auf **KeyStore erstellen** klicken.
 
 >[!NOTE]
 >
->Die folgenden Schritte sind nur erforderlich, wenn der Handler Nachrichten signieren oder entschlüsseln kann.
+>Die folgenden Schritte sind nur erforderlich, wenn der Handler in der Lage sein muss, Nachrichten zu signieren oder zu verschlüsseln.
 
-1. Laden Sie die Datei mit dem privaten Schlüssel hoch, indem Sie auf **Datei mit privatem Schlüssel auswählen** klicken. Der Schlüssel muss im PKCS#8-Format mit DER-Kodierung vorliegen.
+1. Laden Sie die Datei mit dem privaten Schlüssel hoch, indem Sie auf **Datei mit privatem Schlüssel auswählen** klicken. Der Schlüssel muss das Format „PKCS#8“ haben und die DER-Verschlüsselung aufweisen.
 1. Laden Sie durch Klicken auf **Zertifikatkettendateien auswählen** die Zertifikatdatei hoch.
 1. Weisen Sie ein Alias zu, wie im Folgenden gezeigt:
 
@@ -130,8 +129,8 @@ SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktio
 
 Sie können einen Logger einrichten, um alle Probleme zu debuggen, die aufgrund der falschen Konfiguration von SAML entstehen können. Gehen Sie dazu wie folgt vor:
 
-1. Wechseln Sie zur Web-Konsole unter *http://localhost:4502/system/console/configMgr*
-1. Suchen Sie nach dem Eintrag und klicken Sie darauf: **Apache Sling Logging Logger-Konfiguration**
+1. Wechseln Sie zur Web-Konsole unter *http://localhost:4502/system/console/configMgr*.
+1. Suchen Sie nach dem Eintrag **Apache Sling Logging-Logger-Konfiguration** und klicken Sie darauf.
 1. Erstellen Sie einen Logger mit folgender Konfiguration:
 
    * **Protokollebene:** Debug

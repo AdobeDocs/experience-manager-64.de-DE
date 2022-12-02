@@ -13,7 +13,7 @@ exl-id: 3d8dc987-2ff9-4f71-bc07-48018caa3af4
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -23,17 +23,17 @@ Um dafür zu sorgen, dass AEM-Installationen so sicher wie möglich sind, wird g
 
 Allerdings hängt CRXDE Lite davon ab, dass das Bundle `org.apache.sling.jcr.davex` ordnungsgemäß funktioniert, weshalb durch die Deaktivierung von WebDAV effektiv auch CRXDE Lite deaktiviert wird.
 
-In diesem Fall navigieren Sie zu `https://serveraddress:4502/crx/de/index.jsp` zeigt einen leeren Stammknoten an und alle HTTP-Anforderungen an CRXDE Lite-Ressourcen schlagen fehl:
+Wenn dies eintritt, wird beim Browsen zu `https://serveraddress:4502/crx/de/index.jsp` ein leerer Stammknoten angezeigt und alle HTTP-Anforderungen zu CRXDE Lite-Ressourcen schlagen fehl:
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-Während diese Empfehlung dazu dient, Angriffsflächen so weit wie möglich zu minimieren, müssen Systemadministratoren manchmal vielleicht auf CRXDE Lite zugreifen, um Inhalte zu durchsuchen oder Probleme von Produktionsinstanzen zu debuggen.
+Während diese Empfehlung dazu dient, Angriffsflächen so weit wie möglich zu minimieren, müssen Systemadmins manchmal vielleicht auf CRXDE Lite zugreifen, um Inhalte zu durchsuchen oder Probleme von Produktionsinstanzen zu debuggen.
 
 Wenn CRXDE Lite deaktiviert ist, können Sie es wieder aktivieren, indem Sie wie folgt vorgehen:
 
-1. Navigieren Sie zur OSGi-Komponentenkonsole unter `http://localhost:4502/system/console/components`
+1. Gehen Sie zur OSGi-Komponentenkonsole auf `http://localhost:4502/system/console/components`
 1. Suchen Sie nach der folgenden Komponente:
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`

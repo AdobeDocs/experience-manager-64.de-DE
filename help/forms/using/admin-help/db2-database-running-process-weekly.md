@@ -1,6 +1,6 @@
 ---
-title: '"Datenbank DB2: Einen Prozess wöchentlich ausführen"'
-seo-title: 'DB2 database: Running a process weekly'
+title: "Datenbank DB2: Einen Prozess wöchentlich ausführen"
+seo-title: "DB2 database: Running a process weekly"
 description: Erfahren Sie, wie Sie die Leistung Ihrer AEM Forms DB2-Datenbank verbessern können.
 seo-description: See how you can improve the performance of your AEM forms DB2 database.
 uuid: 36070087-c250-41df-a841-aa922e777697

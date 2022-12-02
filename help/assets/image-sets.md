@@ -1,7 +1,7 @@
 ---
 title: Bildsets
 seo-title: Image Sets
-description: 'Erfahren Sie, wie Sie in dynamischen Medien mit Bildsets arbeiten können. '
+description: Erfahren Sie, wie Sie in dynamischen Medien mit Bildsets arbeiten können.
 seo-description: Learn how to work with image sets in dynamic media
 uuid: 16008278-f59f-4fa8-90e9-19c78f132439
 contentOwner: Rick Brough
@@ -15,7 +15,7 @@ role: User
 source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '2146'
-ht-degree: 78%
+ht-degree: 82%
 
 ---
 
@@ -37,14 +37,14 @@ Beispiel: Sie möchten Bilder von Kappen darstellen, deren Schirme unterschiedli
 >
 >Weitere Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets mit der Touch-Benutzeroberfläche](managing-assets-touch-ui.md).
 
-Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
+Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgenden Beschränkungen:
 
-| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| Begrenzungstyp | Best Practice | Grenzwert |
 | --- | --- | --- |
 | Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
-| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Maximale Anzahl an Bildern pro Set | 5–10 Bilder pro Set | 1000 |
 
-Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
+Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 
 ## Schnellstart: Bildsets {#quick-start-image-sets}
 
@@ -138,14 +138,14 @@ Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Re
 >
 >Bildsets werden für Assets mit `,` (Komma) im Dateinamen.
 
-Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und setzt die folgenden Einschränkungen um:
+Beim Erstellen eines Bildsets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgenden Beschränkungen:
 
-| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| Begrenzungstyp | Best Practice | Grenzwert |
 | --- | --- | --- |
 | Anzahl der doppelten Assets pro Satz | Keine Duplikate | 20 |
-| Maximale Anzahl an Bildern pro Set | 5 - 10 Bilder pro Set | 1000 |
+| Maximale Anzahl an Bildern pro Set | 5–10 Bilder pro Set | 1000 |
 
-Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
+Siehe auch [Dynamic Media-Beschränkungen](/help/assets/limitations.md).
 
 **So erstellen Sie ein Bildset**:
 

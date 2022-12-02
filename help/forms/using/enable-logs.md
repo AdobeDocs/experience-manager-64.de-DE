@@ -40,7 +40,7 @@ Führen Sie die folgenden Schritte aus, um serverseitige Protokolle zu konfiguri
    >
    >Wenn Sie Protokolle im Protokollordner für HTML5-Formulare generieren möchten, stellen Sie dem Dateinamen „../logs/“ voran.
 
-1. Ändern Sie **Logger** in **HTMLFormsPerfLogger.****Klicken Sie auf Speichern**.
+1. Ändern Sie **Logger** in **HTMLFormsPerfLogger.** Klicken Sie auf **Speichern**.
 
 ## Konfigurieren der Client-Protokollierung {#configuring-client-logging}
 

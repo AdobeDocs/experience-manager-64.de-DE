@@ -8,7 +8,7 @@ exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
 source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
 source-wordcount: '1674'
-ht-degree: 51%
+ht-degree: 65%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 51%
 
 Adobe Experience Manager Assets verwendet:
 
-* Einen Proxy für den Lastenausgleich bei der Verarbeitung bestimmter Aufgaben. Ein Proxy ist [!DNL Experience Manager] -Instanz, die mit einem Proxy Worker kommuniziert, um eine bestimmte Aufgabe zu erfüllen, und andere [!DNL Experience Manager] Instanzen, um die Ergebnisse bereitzustellen.
+* Einen Proxy für den Lastenausgleich bei der Verarbeitung bestimmter Aufgaben. Ein Proxy ist eine [!DNL Experience Manager]-Instanz, die mit einem Proxy Worker kommuniziert, um eine bestimmte Aufgabe zu erfüllen, sowie mit anderen [!DNL Experience Manager]-Instanzen, um das Ergebnis bereitzustellen.
 * Einen Proxy Worker zum Definieren und Verwalten einer bestimmten Aufgabe.
 
 Diese können eine Vielzahl von Aufgaben abdecken; Beispielsweise die Verwendung einer Adobe InDesign Server zur Verarbeitung von Dateien.
@@ -33,7 +33,6 @@ Zum vollständigen Hochladen von Dateien in [!DNL Experience Manager] Assets, di
 >* [InDesign Server](https://www.adobe.com/de/products/indesignserver.html)\
    >  Diese Engine ermöglicht die programmgesteuerte automatisierte Erstellung von Dokumenten, die auf denen basieren, die Sie mit InDesign entworfen haben. Die Engine fungiert als Dienst, der eine Schnittstelle seiner [ExtendScript](https://www.adobe.com/devnet/scripting.html)-Engine bereitstellt.\
    >  Die Skripte werden in ExtendScript geschrieben, das JavaScript ähnelt. Weitere Informationen zu Adobe InDesign-Skripten finden Sie unter [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
-
 >
 
 
@@ -43,7 +42,7 @@ Die InDesign Server kann mit [!DNL Experience Manager] Assets, damit mit InDesig
 
 >[!NOTE]
 >
->Frühere Versionen von [!DNL Experience Manager] konnte XMP und die Miniaturansicht extrahieren, jetzt können alle Medien extrahiert werden.
+>Frühere Versionen von [!DNL Experience Manager] konnten XMP und die Miniaturansicht extrahieren, während jetzt alle Medien extrahiert werden können.
 
 1. Hochladen Ihrer `.indd` Datei in [!DNL Experience Manager] Assets.
 1. Ein Framework sendet Befehlsskripte via SOAP (Simple Object Access Protocol) an InDesign Server.
@@ -131,7 +130,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Medien]** auf 
 
 Argumente und Skriptpfade zum Extrahieren von Medien
 
-* **ExtendScript-Bibliothek**: Dies ist eine einfache HTTP-GET/Post-Methodenbibliothek, die von anderen Skripten benötigt wird.
+* **ExtendScript-Bibliothek**: Dies ist eine einfache HTTP-GET/POST-Methodenbibliothek, die von anderen Skripten benötigt wird.
 
 * **Skripte erweitern**: Hier können Sie unterschiedliche Skriptkombinationen angeben. Wenn Ihre eigenen Skripte auf InDesign Server ausgeführt werden sollen, speichern Sie die Skripte unter `/apps/settings/dam/indesign/scripts`.
 
@@ -141,13 +140,13 @@ Argumente und Skriptpfade zum Extrahieren von Medien
 >
 >Ändern Sie nicht die ExtendScript-Bibliothek. Die Bibliothek bietet die HTTP-Funktionalität, die für die Kommunikation mit Sling erforderlich ist. Diese Einstellung gibt die Bibliothek an, die zur Verwendung an die Adobe InDesign Server gesendet werden soll.
 
-Die `ThumbnailExport.jsx` Skript, das vom Workflow-Schritt &quot;Extrahierung von Medien&quot;ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Diese Ausgabedarstellung wird vom Workflow-Schritt &quot;Miniaturansichten verarbeiten&quot;verwendet, um die für [!DNL Experience Manager].
+Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extrahierung von Medien“ ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Diese Ausgabedarstellung wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für [!DNL Experience Manager] erforderlichen statischen Ausgabedarstellungen zu rendern.
 
 Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Standardwerte nicht entfernen, da sie von der [!DNL Experience Manager] Assets-Benutzeroberfläche. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
 
 #### Extrahierung von Seiten   {#page-extraction}
 
-Dadurch wird eine [!DNL Experience Manager] aus den extrahierten Elementen. Das Extrahieren von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extrahierungshandlers. Diese Daten werden verwendet, um eine Seite mit PageBuilder zu erstellen.
+Dabei wird eine [!DNL Experience Manager]-Seite aus den extrahierten Elementen erstellt. Das Extrahieren von Daten aus einem Ausgabeformat (aktuell HTML oder IDML) erfolgt mithilfe eines Extrahierungs-Handlers. Diese Daten werden verwendet, um eine Seite mit PageBuilder zu erstellen.
 
 Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf der Registerkarte **Argumente** vornehmen.
 
@@ -155,15 +154,15 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 
 * **Handler zur Seitenextrahierung**: Wählen Sie aus der Dropdown-Liste den Handler aus, den Sie verwenden möchten. Ein Extrahierungs-Handler arbeitet mit einem bestimmten Ausgabeformat, das mit einem entsprechenden `RenditionPicker` ausgewählt wird (siehe `ExtractionHandler`-API). Standardmäßig ist der IDML-Export-Extraktions-Handler verfügbar. Sie arbeitet auf der `IDML` Ausgabedarstellung, die im Schritt MediaExtract generiert wurde.
 
-* **Seitenname**: Geben Sie den Namen an, den Sie der resultierenden Seite zuweisen möchten. Wenn Sie das Feld leer lassen, wird als Name „Seite“ gewählt (oder eine Ableitung, falls „Seite“ bereits vorhanden ist).
+* **Seitenname**: Geben Sie den Namen an, den Sie der resultierenden Datei zuweisen möchten. Wenn Sie das Feld leer lassen, wird als Name „Seite“ gewählt (oder eine Ableitung, falls „Seite“ bereits vorhanden ist).
 
-* **Seitentitel**: Geben Sie den Titel an, den Sie der resultierenden Seite zuweisen möchten.
+* **Seitentitel**: Geben Sie den Titel an, den Sie der resultierenden Datei zuweisen möchten.
 
-* **Stammverzeichnis der Seite**: Der Pfad zum Stammverzeichnis der resultierenden Seite. Wenn Sie das Feld leer lassen, wird der Knoten mit den Ausgabeformaten des Assets verwendet.
+* **Stammverzeichnis der Seite**: Der Pfad zum Stammverzeichnis der resultierenden Datei. Wenn Sie das Feld leer lassen, wird der Knoten mit den Ausgabeformaten des Assets verwendet.
 
-* **Seitenvorlage**: Die Vorlage, die beim Generieren der resultierenden Seite verwendet werden soll.
+* **Seitenvorlage**: Die zu verwendende Vorlage für das Generieren der resultierenden Seite.
 
-* **Seitendesign**: Der Seitenentwurf, der beim Generieren der resultierenden Seite verwendet werden soll.
+* **Seiten-Design**: Das zu verwendende Seiten-Design für das Generieren der resultierenden Seite.
 
 ### Konfigurieren von Proxy Worker für InDesign Server {#configuring-the-proxy-worker-for-indesign-server}
 
@@ -188,7 +187,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 Wenn die InDesign Server und [!DNL Experience Manager] sich auf verschiedenen Hosts befinden oder eine oder beide dieser Anwendungen nicht an Standardanschlüssen funktionieren, konfigurieren Sie **Day CQ Link Externalizer** , um den Hostnamen, Port und Inhaltspfad für die InDesign Server festzulegen.
 
 1. Greifen Sie auf Configuration Manager über die URL `https://[AEM_server]:[port]/system/console/configMgr` zu.
-1. Suchen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Klicken **[!UICONTROL Bearbeiten]** zu öffnen.
+1. Suchen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]**. Klicken Sie auf **[!UICONTROL Bearbeiten]**, um sie zu öffnen.
 1. Mithilfe der Einstellungen von Link Externalizer können Sie absolute URLs für die [!DNL Experience Manager] und für [!DNL InDesign Server]. Verwendung **[!UICONTROL Domänen]** -Feld zum Angeben des Hostnamens und des Kontextpfads für [!DNL Adobe InDesign Server]. Befolgen Sie die Anweisungen auf dem Bildschirm. Klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![Externalizer-Einstellungen für Links](assets/link-externalizer-config.png)
@@ -204,7 +203,7 @@ Dazu müssen Sie zunächst die maximale Anzahl der parallelen Aufträge (`x`) fe
 
 So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
-1. Öffnen Sie die Registerkarte **[!UICONTROL Konfigurationen]** der Felix-Konsole. Beispiel:  
+1. Öffnen Sie die Registerkarte **[!UICONTROL Konfigurationen]** der Felix-Konsole. Beispiel:    
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -225,13 +224,13 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
    >[!NOTE]
    >
-   >Wenn Sie mit einem Pool von Mitarbeitern arbeiten, können Sie die Blockierungsliste von IDS-Arbeitern aktivieren.
+   >Wenn Sie mit einem Pool von Workern arbeiten, können Sie die Blockierungsliste von IDS-Workern aktivieren.
    >
    >Dazu aktivieren Sie das Kontrollkästchen „enable.retry.name“ unter der Konfiguration `com.day.cq.dam.ids.impl.IDSJobProcessor.name`, die Wiederholungen von IDS-Aufträgen ermöglicht.
    >
    >Legen Sie in der Konfiguration `com.day.cq.dam.ids.impl.IDSPoolImpl.name` außerdem einen positiven Wert für den Parameter `max.errors.to.blacklist` fest, der die Anzahl der Auftragswiederholungen steuert, bevor ein IDS aus der Auftrags-Handler-Liste ausgeschlossen wird.
    >
-   >Standardmäßig nach dem konfigurierbaren (`retry.interval.to.whitelist.name`) Zeit in Minuten, in der der IDS-Worker erneut validiert wird. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
+   >Standardmäßig wird der IDS-Worker nach einer konfigurierbaren Zeit (`retry.interval.to.whitelist.name`) in Minuten erneut validiert. Wenn der Worker online gefunden wird, wird er aus der Blockierungsliste entfernt.
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
@@ -246,7 +245,7 @@ Führen Sie für InDesign Server 10.0 oder höher die folgenden Schritte durch,
 
 >[!NOTE]
 >
->Für [!DNL InDesign Server] Integration mit [!DNL Assets]verwenden Sie einen Multicore-Prozessor, da die für die Integration erforderliche Sitzungsunterstützungsfunktion auf einzelnen Kernsystemen nicht unterstützt wird.
+>Verwenden Sie für die Integration von [!DNL InDesign Server] mit [!DNL Assets] einen Mehrkernprozessor, da die für die Integration notwendige Funktion „Sitzungsunterstützung“ auf Einzelkernsystemen nicht unterstützt wird.
 
 ## Experience Manager-Anmeldedaten konfigurieren {#configure-aem-credentials}
 

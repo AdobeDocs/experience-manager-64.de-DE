@@ -148,7 +148,7 @@ Dieser Workflow wird in [Erstellen eines Einstiegsseiten-Workflows](/help/sites-
 
 ### E-Mails {#emails}
 
-In der Kachel **E-Mails** können Sie E-Mail-Anforderungen verwalten. Hierüber lässt sich der auch der Workflow zum Anfordern einer E-Mail starten.
+In der Kachel **E-Mails** können Sie E-Mail-Anfragen verwalten. Hierüber lässt sich der auch der Workflow zum Anfragen einer E-Mail starten.
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 

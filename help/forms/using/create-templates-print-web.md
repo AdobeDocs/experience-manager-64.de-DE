@@ -1,5 +1,5 @@
 ---
-title: '"Tutorial: Erstellen Sie Vorlagen"'
+title: "Tutorial: Erstellen Sie Vorlagen"
 seo-title: Create Print and Web templates for Interactive Communication
 description: Erstellen Sie Druck- und Webvorlagen für die interaktive Kommunikation
 seo-description: Create Print and Web templates for Interactive Communication

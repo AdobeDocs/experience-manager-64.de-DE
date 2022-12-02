@@ -8,7 +8,7 @@ exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 77%
+ht-degree: 81%
 
 ---
 
@@ -58,7 +58,7 @@ Sie können eigene Namespaces in AEM hinzufügen. Es gibt vordefinierte Namespac
 
 ## Tipps und Einschränkungen {#best-practices-limitations}
 
-* Die Metadatenaktualisierungen über die Touch-optimierte Benutzeroberfläche ändern die Metadateneigenschaften im `dc` Namespace. Jegliche über die HTTP-API vorgenommenen Aktualisierungen ändern die Metadateneigenschaften in der `jcr` Namespace. Siehe [Aktualisieren von Metadaten mithilfe der HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
+* Die Metadatenaktualisierungen über die Touch-optimierte Benutzeroberfläche ändern die Metadateneigenschaften im `dc` Namespace. Jegliche über die HTTP-API vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `jcr`-Namespace. Siehe [Aktualisieren von Metadaten mithilfe der HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 >[!MORELIKETHIS]
 >

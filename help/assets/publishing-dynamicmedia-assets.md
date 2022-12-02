@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichen von Dynamic Media-Assets
-description: Veröffentlichen von Dynamic Media-Assets einschließlich der HTTP/2-Bereitstellung dieser Assets.
+description: Anleitung zum Veröffentlichen von Dynamic Media-Assets einschließlich der HTTP/2-Bereitstellung dieser Assets.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
@@ -11,7 +11,7 @@ role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,6 @@ Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Web
 >
 >* Assets müssen zunächst veröffentlicht werden, bevor Sie die URL verwenden können. Wenn Assets nicht veröffentlicht sind, können Sie die URL nicht kopieren und in einen Webbrowser einfügen.
 >* Bild- und Viewer-Vorgaben müssen für die Live-Bereitstellung aktiviert und veröffentlicht sein.
-
 >
 
 

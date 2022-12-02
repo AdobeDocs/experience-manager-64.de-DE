@@ -13,7 +13,7 @@ exl-id: 26324f89-f5e2-40bc-96b4-0f3faa08bdd1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 >[!NOTE]
 >
->Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live Copy für verschiedene Kanäle](/help/sites-administering/msm-livecopy.md).
+>Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live Copy für unterschiedliche Kanäle](/help/sites-administering/msm-livecopy.md).)
 >
->AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Gerätegruppenfiltern.](/help/sites-developing/groupfilters.md))
+>AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Gerätegruppen-Filtern](/help/sites-developing/groupfilters.md).)
 
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
 1. Rufen Sie im Browser die Konsole **Siteadmin** auf.
-1. Öffnen Sie die Seite **Produkte** unterhalb von **Websites** >> **Geometrixx Mobile Demo Site**  >>  **Englisch**.
+1. Öffnen Sie die Seite **Produkte** unterhalb von **Websites** >> **Geometrixx Mobile Demo Site** >> **Englisch**.
 
 1. Wechseln Sie zu einem anderen Emulator. Dazu haben Sie folgende Möglichkeiten:
 
@@ -48,4 +48,4 @@ Die Seite nimmt die folgende Gestalt an:
 
 >[!NOTE]
 >
->Die Emulatoren sind deaktiviert, wenn eine Seite in der Autoreninstanz von einem Mobilgerät aus aufgerufen wird. Die Bearbeitung kann dann über die Touch-optimierte Benutzeroberfläche erfolgen.
+>Die Emulatoren sind deaktiviert, wenn eine Seite in der Autoreninstanz von einem Mobilgerät aus aufgerufen wird. Das Erstellen kann in diesem Fall in der Touch-optimierten Benutzeroberfläche erfolgen.

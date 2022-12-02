@@ -243,7 +243,7 @@ Um den Vorbefüllungs-Service zu aktivieren, müssen Sie die standardmäßige Vo
 
 1. Geben Sie den Datenspeicherort oder einen Regex (regulärer Ausdruck) für die **[!UICONTROL Datendateispeicherorte]** ein. Beispiele für gültige Datendateispeicherorte:
 
-   * file:///C:/Users/public/Document/Prefill/.*
+   * file:///C:/Users/public/Document/Prefill/.&amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
 
    >[!NOTE]

@@ -14,7 +14,7 @@ exl-id: 81dddbab-1a9e-49ee-b2a5-a8e4de3630d1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 61%
+ht-degree: 90%
 
 ---
 
@@ -22,10 +22,10 @@ ht-degree: 61%
 
 Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und virtuellen Hosts für AEM verwendet.
 
-Diese Zuordnungen können Sie beispielsweise folgendermaßen verwenden:
+Diese Zuordnungen können Sie beispielsweise verwenden, um:
 
-* Präfix für alle Anforderungen mit `/content` damit die interne Struktur für die Besucher Ihrer Website ausgeblendet wird.
-* Definieren Sie eine Umleitung, sodass alle Anforderungen an die `/content/en/gateway` -Seite Ihrer Website werden zu `https://gbiv.com/`.
+* Allen Anfragen das Präfix `/content` voranzustellen, sodass die interne Struktur für Besucher Ihrer Website ausgeblendet wird.
+* Eine Umleitung zu definieren, sodass alle Anfragen an die Seite `/content/en/gateway` Ihrer Website zu `https://gbiv.com/` umgeleitet werden.
 
 Bei einer möglichen HTTP-Zuordnung wird [allen Anforderungen an localhost:4503 das Präfix /content](#configuring-an-internal-redirect-to-content) vorangestellt. Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
 
@@ -35,7 +35,7 @@ mithilfe von:
 
 `localhost:4503/geometrixx/en/products.html`
 
-da durch die Zuordnung automatisch das Präfix hinzugefügt wird `/content` nach `/geometrixx/en/products.html`.
+da die Zuordnung automatisch das Präfix `/content` zu `/geometrixx/en/products.html` hinzufügt.
 
 >[!CAUTION]
 >
@@ -49,7 +49,7 @@ da durch die Zuordnung automatisch das Präfix hinzugefügt wird `/content` nach
 
 Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
-Diese Listen können (zusammen mit Konfigurationsinformationen) unter der **JCR ResourceResolver** Option der Felix-Konsole; Beispiel: `https://<host>:<port>/system/console/jcrresolver`:
+Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<host>:<port>/system/console/jcrresolver`:
 
 * Konfiguration
 
@@ -57,11 +57,13 @@ Diese Listen können (zusammen mit Konfigurationsinformationen) unter der **JCR 
 
 * Konfigurationstest
 
-    Hiermit können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
+   Hiermit können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
 
-* **Resolver Map Entries** Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die Zuordnung von URLs zu Ressourcen verwendet wird.
+* **Resolver Map Entries**
+Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die Zuordnung von URLs zu Ressourcen verwendet wird.
 
-* **Mapping Map Entries** Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuordnung von Ressourcenpfaden zu URLs verwendet wird.
+* **Mapping Map Entries**
+Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuordnung von Ressourcenpfaden zu URLs verwendet wird.
 
 Die beiden Listen enthalten verschiedene Einträge, darunter die von der/den Anwendung/en als Standardwerte definierten. Sie dienen häufig dazu, URLs für die Benutzer zu vereinfachen.
 
@@ -87,7 +89,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->Es stehen viele Ressourcen zur Verfügung, mit denen erläutert wird, wie reguläre Ausdrücke definiert werden. Beispiel [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es stehen eine Vielzahl von Ressourcen zur Verfügung, die das Definieren regulärer Ausdrücke erläutern, z. B. [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ## Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
@@ -95,13 +97,13 @@ Eine Standardinstallation von AEM umfasst folgenden Ordner:
 
 `/etc/map/http`
 
-Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTPP-Protokoll verwendet wird. Andere Ordner ( `sling:Folder`) kann unter erstellt werden. `/etc/map` für alle anderen Protokolle, die Sie zuordnen möchten.
+Dies ist die Struktur, die beim Definieren von Zuordnungen für das HTTP-Protokoll verwendet wird. Wenn Sie Zuordnungen für weitere Protokolle erstellen möchten, können unter `/etc/map` weitere Ordner (`sling:Folder`) erstellt werden.
 
-### Konfigurieren einer internen Umleitung an „/content“ {#configuring-an-internal-redirect-to-content}
+### Konfigurieren einer internen Umleitung an /content {#configuring-an-internal-redirect-to-content}
 
 So erstellen Sie die Zuordnung, die einer Anforderung an http://localhost:4503/ vorangestellt ist mit `/content`:
 
-1. Navigieren Sie mit CRXDE zu `/etc/map/http`.
+1. Navigieren Sie mithilfe von CRXDE zu `/etc/map/http`.
 
 1. Erstellen Sie einen neuen Knoten:
 
@@ -112,7 +114,7 @@ So erstellen Sie die Zuordnung, die einer Anforderung an http://localhost:4503/ 
    * **Name** `localhost_any`
 
 1. Klicken Sie auf **Alle speichern**.
-1. **Fügen Sie** diesem Knoten die folgenden Eigenschaften hinzu:
+1. **Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:**
 
    * **Name** `sling:match`
 
@@ -138,4 +140,4 @@ wurden beantragt.
 
 >[!NOTE]
 >
->Sie können `/etc/map.publish` , um die Konfigurationen für die Veröffentlichungsumgebung zu speichern. Diese müssen dann repliziert werden und der neue Speicherort ( `/etc/map.publish`) für die **Zuordnungsort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung.
+>Die Konfigurationen für die Veröffentlichungsumgebung können unter `/etc/map.publish` gespeichert werden. Diese müssen dann repliziert und der neue Speicherort (`/etc/map.publish`) muss für den **Zuordnungs-Speicherort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung konfiguriert werden.

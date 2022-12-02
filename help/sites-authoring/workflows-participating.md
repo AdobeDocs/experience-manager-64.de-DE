@@ -13,7 +13,7 @@ exl-id: 7b645497-ddbf-403c-9e78-5e845f6bda50
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivitä
 * [Delegieren eines Teilnehmerschritts](#delegating-a-participant-step)
 * [Wechseln zu einem vorherigen Teilnehmerschritt](#performing-step-back-on-a-participant-step)
 * [Öffnen eines Workflow-Elements, um Details anzuzeigen (und Maßnahmen zu ergreifen)](#opening-a-workflow-item-to-view-details-and-take-actions)
-* [Anzeigen der Workflow-Nutzlast (mehrere Ressourcen)](#viewing-the-workflow-payload-multiple-resources)
+* [Anzeigen der Workflow-Payload (mehrere Ressourcen)](#viewing-the-workflow-payload-multiple-resources)
 
 ## Benachrichtigungen über verfügbare Workflow-Aktionen {#notifications-of-available-workflow-actions}
 
@@ -58,7 +58,7 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
    >
    >Wenn der momentane Benutzer unmittelbar am aktuellen Workflow-Schritt beteiligt ist, werden Aktionen angezeigt.
 
-* Wenn **Timeline** für die Ressource geöffnet ist, wird der Workflow-Schritt angezeigt. Wenn Sie auf das Warnbanner klicken/tippen, werden die verfügbaren Aktionen ebenfalls angezeigt:
+* Wenn die **Zeitleiste** für die Ressource geöffnet ist, wird der Workflow-Schritt angezeigt. Wenn Sie auf das Warnbanner klicken/tippen, werden die verfügbaren Aktionen ebenfalls angezeigt:
 
    ![wf-64](assets/wf-64.png)
 
@@ -97,11 +97,11 @@ Gehen Sie folgendermaßen vor, um das Arbeitselement abzuschließen:
 1. Das Dialogfeld **Arbeits-Element fertig stellen** wird geöffnet. Wählen Sie im Dropdown-Selektor die Option **Nächster Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Durchführen eines Teilnehmerschritts: Timeline {#completing-a-participant-step-timeline}
+#### Durchführen eines Teilnehmerschritts: Zeitleiste {#completing-a-participant-step-timeline}
 
-Sie können auch die Timeline verwenden, um einen Schritt abzuschließen und zum nächsten Schritt zu gelangen:
+Sie können auch die Zeitleiste verwenden, um einen Schritt abzuschließen und zum nächsten Schritt zu gelangen:
 
-1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus):
+1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus):
 
    ![wf-65](assets/wf-65.png)
 
@@ -156,11 +156,11 @@ Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren:
 1. Das Dialogfeld wird geöffnet. Wählen Sie im Dropdown-Selektor den **Benutzer** aus (dabei kann es sich auch um eine Gruppe handeln) und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Delegieren eines Teilnehmerschritts: Timeline {#delegating-a-participant-step-timeline}
+#### Delegieren eines Teilnehmerschritts: Zeitleiste {#delegating-a-participant-step-timeline}
 
-Sie können auch die Timeline verwenden, um einen Schritt zu delegieren und/oder zuzuweisen:
+Sie können auch die Zeitleiste verwenden, um einen Schritt zu delegieren und/oder zuzuweisen:
 
-1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus).
+1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
 1. Klicken/tippen Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Bevollmächtigten ändern**:
 
    ![wf-69](assets/wf-69.png)
@@ -207,11 +207,11 @@ Gehen Sie dazu folgendermaßen vor:
 1. Wählen Sie **Vorheriger Schritt** aus und fügen Sie bei Bedarf einen **Kommentar** hinzu.
 1. Verwenden Sie **OK**, um den Schritt abzuschließen (oder **Abbrechen**, um den Vorgang abzubrechen).
 
-#### Wechseln zu einem vorherigen Teilnehmerschritt: Timeline {#performing-step-back-on-a-participant-step-timeline}
+#### Wechseln zu einem vorherigen Teilnehmerschritt: Zeitleiste {#performing-step-back-on-a-participant-step-timeline}
 
-Sie können auch die Timeline verwenden, um zu einem vorherigen Schritt zurückzukehren:
+Sie können auch die Zeitleiste verwenden, um zu einem vorherigen Schritt zurückzukehren:
 
-1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Timeline** (oder öffnen Sie die **Timeline** und wählen Sie die Seite aus).
+1. Wählen Sie die entsprechende Seite aus und öffnen Sie die **Zeitleiste** (oder öffnen Sie die **Zeitleiste** und wählen Sie die Seite aus).
 1. Klicken/tippen Sie auf das Warnbanner, um die verfügbaren Aktionen anzuzeigen. Wählen Sie **Zurücksetzen**:
 
    ![wf-69-1](assets/wf-69-1.png)
@@ -270,9 +270,9 @@ Gehen Sie folgendermaßen vor, um ein Workflow-Element zu öffnen und die Detail
 1. Wählen Sie bei Bedarf die geeignete Aktion aus, geben Sie etwaige Details ein und bestätigen Sie mit **OK** (oder **Abbrechen**).
 1. Mit **Speichern** oder **Abbrechen** schließen Sie das Dialogfeld.
 
-### Ansicht der Workflow-Nutzlast (mehrere Ressourcen) {#viewing-the-workflow-payload-multiple-resources}
+### Ansicht der Workflow-Payload (mehrere Ressourcen) {#viewing-the-workflow-payload-multiple-resources}
 
-Sie können sich Details zur Nutzlast anzeigen lassen, die mit der Workflow-Instanz verbunden ist. Zunächst werden die Ressourcen im Paket gezeigt, Sie können diese aber weiter aufschlüsseln und die einzelnen Seiten anzeigen.
+Sie können sich Details zur Payload anzeigen lassen, die mit der Workflow-Instanz verbunden ist. Zunächst werden die Ressourcen im Paket gezeigt, Sie können diese aber weiter aufschlüsseln und die einzelnen Seiten anzeigen.
 
 Gehen Sie folgendermaßen vor, um die Nutzdaten und Ressourcen der Workflow-Instanz anzuzeigen:
 

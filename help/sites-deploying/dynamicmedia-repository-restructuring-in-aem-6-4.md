@@ -13,7 +13,7 @@ exl-id: 1323ee60-c80c-4eed-b3e5-aa0f0c07e6ee
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 68%
+ht-degree: 89%
 
 ---
 
@@ -26,12 +26,12 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
 * [Benutzerdefinierte Konfigurationen für die adaptive Video-Kodierung](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
 * [Cloud-Konfiguration für Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
 * [Cloud-Service-Konfiguration für Dynamic Media (DM Hybrid)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
-* [Dynamic Media - YouTube-Cloud-Service-Konfiguration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
+* [Dynamic Media – YouTube-Cloud-Service-Konfiguration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [Verschiedenes](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
 ## Vor der Aktualisierung auf 6.5 {#prior-to-upgrade}
 
-### Benutzerdefinierte Konfigurationen für die adaptive Videokodierung  {#custom-adaptive-video-encoding-configurations}
+### Benutzerdefinierte Konfigurationen für die adaptive Video-Kodierung  {#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -45,7 +45,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Sie können das folgende Migrationsskript ausführen, um zum neuen Speicherort zu migrieren:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternativ können Sie die Konfiguration in der AEM-Benutzeroberfläche bearbeiten, und die Änderungen werden am neuen Speicherort gespeichert.</p> </td> 
+   <td><p>Sie können das folgende Migrationsskript ausführen, um zum neuen Speicherort zu migrieren:</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternativ können Sie die Konfiguration in der AEM-Benutzeroberfläche bearbeiten, und die Änderungen werden am neuen Speicherort gespeichert.</p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 
@@ -70,7 +70,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
    <td><p>Der Kunde kann an diesem Speicherort ein Migrationsskript ausführen:<br /> </p> 
     <ul> 
-     <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>Starten Sie das Dynamic Media-OSGi-Bundle neu.</li> 
     </ul> </td> 
   </tr>
@@ -81,7 +81,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
  </tbody>
 </table>
 
-### Konfiguration des Dynamic Media-Cloud Service (DM Hybrid) {#cloudserviceconfiguration}
+### Cloud-Service-Konfiguration für Dynamic Media (DM Hybrid) {#cloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -95,7 +95,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Sie können das untenstehende Migrationsskript ausführen, damit eine Anpassung an das aktuelle Modell erfolgt:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
+   <td><p>Sie können das untenstehende Migrationsskript ausführen, damit eine Anpassung an das aktuelle Modell erfolgt:</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 
@@ -104,7 +104,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
  </tbody>
 </table>
 
-### Dynamic Media - YouTube-Cloud Service-Konfiguration  {#youtubecloudserviceconfiguration}
+### Dynamic Media – YouTube-Cloud-Service-Konfiguration  {#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -118,7 +118,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>1. Rückgängigmachen der Veröffentlichung aller Videos von YouTube<br /> 2. Erstellen Sie die YouTube-Konfiguration mithilfe der neuen Touch-optimierten Benutzeroberfläche (aus <code>/conf</code>), einschließlich des Kopierens aller Kanäle aus dem alten Speicherort<br /> 3. Veröffentlichen Sie alle Videos neu auf YouTube.</p> <p>Dieser Workflow führt zu neuen YouTube-URLs. Wenn Sie die Veröffentlichung nicht vor der Erstellung einer neuen YouTube-Konfiguration mit der Touch-optimierten Benutzeroberfläche aufheben, werden unter „Eigenschaften“ mehrere YouTube-URLs aufgelistet, da die neu erstellten Kanäle bei Gelegenheit erneut veröffentlicht werden. Dies bedeutet, dass Sie unbrauchbar gewordene URLs haben, die unter „Eigenschaften“ aufgelistet sind.</p> </td> 
+   <td><p>1. Machen Sie die Veröffentlichung aller Videos auf YouTube rückgängig.<br /> 2. Erstellen Sie die YouTube-Konfiguration mit der neuen Touch-optimierten Benutzeroberfläche (von <code>/conf</code>) und kopieren Sie alle Kanäle vom alten Speicherort.<br /> 3. Veröffentlichen Sie alle Videos erneut auf YouTube.</p> <p>Dieser Workflow resultiert in neuen YouTube-URLs. Wenn Sie die Veröffentlichung nicht vor der Erstellung einer neuen YouTube-Konfiguration mit der Touch-optimierten Benutzeroberfläche aufheben, werden unter „Eigenschaften“ mehrere YouTube-URLs aufgelistet, da die neu erstellten Kanäle bei Gelegenheit erneut veröffentlicht werden. Dies bedeutet, dass Sie unbrauchbar gewordene URLs haben, die unter „Eigenschaften“ aufgelistet sind.</p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 
@@ -141,7 +141,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Der Kunde kann das untenstehende Migrationsskript ausführen.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternativ können Sie die Konfiguration in der AEM-Benutzeroberfläche bearbeiten, und die Änderungen werden am neuen Speicherort gespeichert.</p> </td> 
+   <td><p>Der Kunde kann das untenstehende Migrationsskript ausführen.</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternativ können Sie die Konfiguration in der AEM-Benutzeroberfläche bearbeiten, und die Änderungen werden am neuen Speicherort gespeichert.</p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 
@@ -162,7 +162,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Der Kunde kann das untenstehende Migrationsskript ausführen.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
+   <td><p>Der Kunde kann das untenstehende Migrationsskript ausführen.</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 

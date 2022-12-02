@@ -3,7 +3,7 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.4 Authoring-Benutzeranleitung
+user-guide-title: Benutzerhandbuch zur Inhaltserstellung in AEM 6.4
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie mehr über die wichtigsten Konzepte zum Erstellen von Inhalten und Authoring in AEM.
 feature: Authoring
@@ -11,15 +11,15 @@ role: User
 source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# AEM 6.4 Authoring-Benutzeranleitung {#authoring}
+# Benutzerhandbuch zur Inhaltserstellung in AEM 6.4 {#authoring}
 
-+ [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Wesentliche Aufgaben, Tools und Konzepte für die AEM {#essentials}
++ [Benutzerhandbuch zur Inhaltserstellung – Übersicht](home.md)
++ Wesentliche Aufgaben, Tools und Konzepte für die Inhaltserstellung in AEM {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
    + [Konzept der Inhaltserstellung](author.md)
@@ -54,7 +54,7 @@ ht-degree: 87%
    + [Komponentenkonsole](default-components-console.md)
    + [Responsives Layout](responsive-layout.md)
    + [Inhaltseinblick ](content-insights.md)
-   + [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](creating-accessible-content.md)
+   + [Erstellen barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)](creating-accessible-content.md)
    + [Strukturvorlage](scaffolding.md)
    + [Konfigurieren von Komponenten im Designmodus](default-components-designmode.md)
    + [Foundation-Komponenten](default-components-foundation.md)
@@ -73,13 +73,13 @@ ht-degree: 87%
    + [Arbeiten mit Workflows](workflows.md)
    + [Anwenden von Workflows auf Seiten](workflows-applying.md)
    + [Teilnehmen an Workflows](workflows-participating.md)
-   + [Arbeiten mit Projekt-Workflows](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
+   + [Arbeiten mit Projekt-Workflows](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html?lang=de)
 + Seitenleistung {#page-performance}
-   + [Inhaltseinblick ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
+   + [Inhaltseinblick ](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html?lang=de)
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
-+ Personalisierung    {#personalization}
-   + [Personalisierung   ](personalization.md)
++ Personalisierung {#personalization}
+   + [Personalisierung ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)

@@ -1,7 +1,7 @@
 ---
 title: Referenzieren Sie adaptive Formularfragmente
 seo-title: Reference adaptive form fragments
-description: 'AEM Forms bietet adaptive Formularfragmente, die Sie als Assets verwenden können, um ein Formular schnell zu erstellen. '
+description: AEM Forms bietet adaptive Formularfragmente, die Sie als Assets verwenden können, um ein Formular schnell zu erstellen.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

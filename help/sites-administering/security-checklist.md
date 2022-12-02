@@ -14,7 +14,7 @@ exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
 source-git-commit: b921cf3a1739b031eea5c319953d20a024515544
 workflow-type: tm+mt
 source-wordcount: '2830'
-ht-degree: 88%
+ht-degree: 98%
 
 ---
 
@@ -44,25 +44,25 @@ Die Aktivierung der HTTPS-Transportschicht (Transport Layer) in den Autoren- und
 >
 >Weitere Informationen finden Sie im Abschnitt [Aktivieren von HTTP über SSL](/help/sites-administering/ssl-by-default.md).
 
-### Installieren von Sicherheit-Hotfixes {#install-security-hotfixes}
+### Installieren von Sicherheits-Hotfixes {#install-security-hotfixes}
 
 Stellen Sie sicher, dass die neuesten, [von Adobe bereitgestellten Sicherheits-Hotfixes](https://helpx.adobe.com/de/experience-manager/kb/aem63-available-hotfixes.html) installiert sind.
 
 ### Änderung von Standardkennwörtern für die Admin-Konten von AEM und der OSGi-Konsole {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe empfiehlt dringend, dass Sie das Kennwort für die mit allen Berechtigungen ausgestatteten [**-Konten von** AEM`admin` nach der Installation ändern (in allen Instanzen).](#changing-the-aem-admin-password)
+Adobe empfiehlt dringend, dass Sie das Passwort für die mit allen Berechtigungen ausgestatteten [**`admin`-Konten von AEM**](#changing-the-aem-admin-password) nach der Installation ändern (in allen Instanzen).
 
 Diese Konten beinhalten:
 
-* Die AEM `admin` account
+* Das `admin`-Konto von AEM
 
-   Nachdem Sie das Kennwort für das AEM-Administratorkonto geändert haben, müssen Sie beim Zugriff auf CRX das neue Kennwort verwenden.
+   Sobald Sie das Passwort für das Admin-Konto von AEM geändert haben, müssen Sie für den Zugriff auf CRX das neue Passwort verwenden.
 
-* Die `admin` Kennwort für die OSGi-Web-Konsole
+* Das `admin`-Passwort für die OSGi-Web-Konsole
 
-   Diese Änderung wird auch auf das Administratorkonto angewendet, das für den Zugriff auf die Web-Konsole verwendet wird. Daher müssen Sie beim Zugriff darauf dasselbe Kennwort verwenden.
+   Diese Änderung wird auch für das Admin-Konto übernommen, das für den Zugriff auf die Web-Konsole verwendet wird. Daher müssen Sie dafür dasselbe Passwort verwenden.
 
-Diese beiden Konten nutzen separate Kontoanmeldeinformationen und die Verwendung von unterschiedlichen sicheren Kennwörtern für jedes Konto ist für eine sichere Bereitstellung von entscheidender Bedeutung.
+Diese beiden Konten nutzen separate Kontoanmeldeinformationen und die Verwendung von unterschiedlichen sicheren Passwörtern für jedes Konto ist für eine sichere Bereitstellung von entscheidender Bedeutung.
 
 #### Ändern des Admin-Kennworts von AEM {#changing-the-aem-admin-password}
 
@@ -92,7 +92,7 @@ Das Kennwort muss nach der ersten Installation geändert werden, damit die Siche
 
 Gehen Sie hierfür wie folgt vor:
 
-1. Navigieren Sie zur Webkonsole unter `<server>:<port>/system/console/configMgr`.
+1. Navigieren Sie zur Web-Konsole unter `<server>:<port>/system/console/configMgr`.
 1. Navigieren Sie zu &quot;Apache Felix OSGi Management Console&quot;und ändern Sie die **Benutzername** und **password**.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
@@ -105,11 +105,11 @@ Adobe empfiehlt die Definition von benutzerdefinierten Fehler-Handler-Seiten, in
 
 >[!NOTE]
 >
->Weitere Details finden Sie im Knowledgebase-Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://helpx.adobe.com/de/experience-manager/kb/CustomErrorHandling.html).
+>Weitere Details finden Sie im Knowledgebase-Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html).
 
 ### Durchgehen der Dispatcher-Sicherheitscheckliste {#complete-dispatcher-security-checklist}
 
-Der AEM-Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=de#getting-started) durchgehen.
+Der AEM-Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://helpx.adobe.com/de/experience-manager/dispatcher/using/security-checklist.html) durchgehen.
 
 >[!CAUTION]
 >
@@ -125,9 +125,9 @@ Aus Sicherheitsgründen sollte beides unter Berücksichtigung der folgenden beid
 
 * Der **Transport-Benutzer** sollte nicht der Admin-Benutzer sein. Richten Sie stattdessen einen Benutzer auf dem Veröffentlichungssystem ein, der nur über Zugriffsrechte für die relevanten Abschnitte des Veröffentlichungssystems verfügt, und verwenden Sie die Anmeldedaten dieses Benutzers für den Transport.
 
-     Sie können mit dem gebündelten Benutzer „Replikations-Empfänger“ beginnen und die Zugriffsrechte dieses Benutzers so konfigurieren, dass sie Ihren Anforderungen entsprechen.
+     Sie können mit dem gebündelten Benutzer „Replikations-Empfänger“ beginnen und die Zugriffsrechte dieses Benutzenden so konfigurieren, dass sie Ihren Anforderungen entsprechen.
 
-* Der **Replikationsbenutzer** oder die **Agenten-Benutzer-ID** sollte auch nicht der Admin-Benutzer sein, sondern ein Benutzer, der nur die Inhalte sehen kann, die repliziert werden sollen. Der Replikationsbenutzer wird auch zum Erfassen von Inhalten verwendet, die auf dem Autorensystem repliziert werden sollen, bevor sie an den Publisher gesendet werden.
+* Der **Replikationsbenutzende** oder die **Agenten-Benutzer-ID** sollte auch nicht der Admin-User sein, sondern eine Benutzerin oder ein Benutzer, die bzw. der nur die Inhalte sehen kann, die repliziert werden sollen. Der Replikationsbenutzende wird auch zum Erfassen von Inhalten verwendet, die auf dem Autorensystem repliziert werden sollen, bevor sie an den Publisher gesendet werden.
 
 ### Kontrollieren der Sicherheits-Konsistenzprüfungen auf dem Vorgangs-Dashboard {#check-the-operations-dashboard-security-health-checks}
 
@@ -171,38 +171,38 @@ Der Referrer-Filter-Dienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurie
 
 * Welche HTTP-Methoden gefiltert werden sollen
 * Ob eine leere Referrer-Kopfzeile zulässig ist
-* und eine Liste der Server, die zusätzlich zum Server-Host zulässig sein sollen.
+* Eine Whitelist von Servern, die zusätzlich zum Serverhost zugelassen werden sollen.
 
-   Standardmäßig befinden sich alle Varianten von localhost und die aktuellen Hostnamen, an die der Server gebunden ist, in der Liste.
+   Standardmäßig sind alle Varianten von „localhost“ und die aktuellen Host-Namen, mit denen der Server verknüpft ist, in der Whitelist enthalten.
 
 So konfigurieren Sie den Referrer-Filterdienst:
 
-1. Öffnen Sie die Apache Felix-Konsole (**Konfigurationen**) bei:
+1. Öffnen Sie die Apache Felix-Konsole (**Konfigurationen**) unter:
 
    `https://<server>:<port_number>/system/console/configMgr`
 
-1. Anmelden als `admin`.
+1. Melden Sie sich als `admin` an.
 1. Wählen Sie im Menü **Konfigurationen** folgende Option aus:
 
    `Apache Sling Referrer Filter`
 
-1. Im `Allow Hosts` Geben Sie alle Hosts ein, die als Referrer zulässig sind. Jeder Eintrag muss vom Formular sein
+1. Geben Sie im Feld `Allow Hosts` alle Hosts ein, die als Referrer zugelassen werden sollen. Jeder Eintrag muss folgendes Format aufweisen:
 
-   &lt;protocol>://&lt;server>:&lt;port>
+   &lt;Protokoll>://&lt;Server>:&lt;Port>
 
    Beispiel:
 
    * `https://allowed.server:80`: Alle Anfragen von diesem Server mit dem angegebenen Port sind zugelassen.
    * Wenn Sie auch HTTPS-Anfragen zulassen wollen, müssen Sie eine zweite Zeile eingeben.
-   * Falls Sie alle Ports dieses Servers zulassen wollen, können Sie als Portnummer eine `0` eingeben.
+   * Falls Sie alle Ports dieses Servers zulassen wollen, können Sie als Port-Nummer eine `0` eingeben.
 
-1. Überprüfen Sie die `Allow Empty` -Feld, wenn Sie leere/fehlende Referrer-Header zulassen möchten.
+1. Aktivieren Sie das Feld `Allow Empty`, wenn Sie leere/fehlende Referrer-Kopfzeilen zulassen möchten.
 
    >[!CAUTION]
    >
    >Es wird empfohlen, einen Referrer bereitzustellen, wenn Sie Befehlszeilen-Tools wie `cURL` verwenden, anstatt einen leeren Wert zuzulassen, da andernfalls das Risiko besteht, dass Ihr System CSRF-Angriffen ausgesetzt ist.
 
-1. Bearbeiten Sie die Methoden, die dieser Filter für Prüfungen mit der `Filter Methods` -Feld.
+1. Bearbeiten Sie die Methoden, die dieser Filter für Prüfungen verwenden soll, über das Feld `Filter Methods`.
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
@@ -227,7 +227,7 @@ Sie müssen für jeden der folgenden Dienste die angegebenen Einstellungen ände
 
    * Heben Sie die Auswahl von **Aktivieren** auf.
 
-* [Day CQ WCM-Filter](/help/sites-deploying/osgi-configuration-settings.md):
+* [Day CQ WCM Filter](/help/sites-deploying/osgi-configuration-settings.md):
 
    * Legen Sie die Option **WCM-Modus** nur auf der Veröffentlichungsinstanz auf „Deaktiviert“ fest.
 
@@ -242,13 +242,13 @@ Sie müssen für jeden der folgenden Dienste die angegebenen Einstellungen ände
 
 Weitere Informationen finden Sie in [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).
 
-Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 ## Weitere Informationen {#further-readings}
 
 ### Verringern von Denial-of-Service-(DoS-)Angriffen {#mitigate-denial-of-service-dos-attacks}
 
-Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computerressource für die vorgesehenen Benutzer unzugänglich zu machen. Dies geschieht häufig, indem die Ressource überlastet wird, zum Beispiel:
+Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computer-Ressource für die vorgesehenen Benutzenden unzugänglich zu machen. Dies geschieht häufig, indem die Ressource überlastet wird, zum Beispiel:
 
 * durch eine Flut von Anfragen von einer externen Quelle;
 * durch eine Anforderung von mehr Informationen, als das System erfolgreich bereitstellen kann.
@@ -257,7 +257,7 @@ Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computerressource für
 
 * Wenn eine Seite mit einer unbegrenzten Anzahl an URLs angefordert wird, kann die URL einen Handler, einige Selektoren, eine Erweiterung und einen Suffix enthalten. Diese Elemente können alle geändert werden.
 
-   Beispiel: `.../en.html` kann auch wie folgt angefordert werden:
+   So kann `.../en.html` angefordert werden als:
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
@@ -293,15 +293,15 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 
    * Dies gilt insbesondere für den JSON-Renderer, der sich über mehrere Ebenen der hierarchischen Struktur erstrecken kann.
 
-      Beispielsweise die Anfrage:
+      Beispiel: Die Anfrage
 
       `http://localhost:4502/.json`
 
-      könnte das gesamte Repository in einer JSON-Darstellung ablegen. Dies würde zu erheblichen Serverproblemen führen. Aus diesem Grund beschränkt Sling die Anzahl an maximalen Ergebnissen. Um die Tiefe des JSON-Renderings zu begrenzen, können Sie den Wert für festlegen:
+      könnte das gesamte Repository in einer JSON-Darstellung ablegen. Dies würde zu erheblichen Serverproblemen führen. Aus diesem Grund beschränkt Sling die Anzahl an maximalen Ergebnissen. Um die Tiefe des JSON-Renderings zu begrenzen, können Sie den Wert für
 
-      **Max. JSON-Ergebnisse** ( `json.maximumresults`)
+      **Max. JSON-Ergebnisse** (`json.maximumresults`)
 
-      in der Konfiguration für die [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `1000`.
+      in der Konfiguration für das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md) festlegen. Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `1000`.
 
    * Deaktivieren Sie als Präventivmaßnahme die anderen Standard-Renderer (HTML, Nur Text, XML). Konfigurieren Sie dazu ebenfalls das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md).
    >[!CAUTION]
@@ -318,13 +318,13 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 >
 >Diese Abmilderung sollte nur für AEM-Umgebungen durchgeführt werden, die keine Formulare verwenden.
 
-Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwändigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Formularauswahl kann durch das Vorhandensein von **&amp;ast;.form.&amp;ast;** in Abfragen.
+Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwendigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Formularauswahl-Instanzen können anhand der Zeichenfolge **&amp;ast;.form.&amp;ast;** in Abfragen erkannt werden.
 
 Führen Sie zum Beheben dieses Problems die folgenden Schritte aus:
 
-1. Navigieren Sie zur Web-Konsole , indem Sie Ihren Browser auf *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Gehen Sie zur Web-Konsole, indem Sie im Browser *https://&lt;Server-Adresse>:&lt;Serverport>/system/console/configMgr* aufrufen.
 
-1. Suchen nach **Day CQ WCM Form Chooser Servlet**
+1. Suchen Sie nach **Day CQ WCM Form Chooser Servlet**.
 1. Klicken Sie auf den Eintrag, deaktivieren Sie im folgenden Fenster die Option **Advanced Search Require** (Erweiterte Suche erforderlich).
 
 1. Klicken Sie auf **Speichern**.
@@ -373,7 +373,7 @@ Es ist keine Konfiguration erforderlich, um sie zu aktivieren, da dies nun die S
 
 Obwohl dies nicht empfohlen wird, können Sie sie deaktivieren, wenn Sie die alte Implementierung aus Gründen der Abwärtskompatibilität mit vorhandenen Anwendungen benötigen. Gehen Sie dazu wie folgt vor:
 
-1. Navigieren Sie zur Web-Konsole und entfernen Sie den Eintrag &quot;org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName**&quot;aus der Eigenschaft **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
+1. Navigieren Sie zur Web-Konsole und entfernen Sie den Eintrag **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** aus der Eigenschaft **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
    Sie können den Oak Security Provider auch finden, indem Sie in den OSGi-Konfigurationen nach der PID **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** suchen.
 
@@ -435,12 +435,12 @@ Genauer gesagt, müssen Sie Folgendes tun:
 
 #### Replizieren von Schlüsseln in AEM 6.2 und älteren Versionen {#replicating-keys-for-aem-and-older-versions}
 
-In AEM 6.2 und älteren Versionen werden die Schlüssel im Repository unter dem `/etc/key` Knoten.
+In AEM 6.2 und älteren Versionen werden die Schlüssel im Repository im Knoten `/etc/key` gespeichert.
 
 Für eine sichere Replikation der Schlüssel auf Ihren Instanzen wird empfohlen, nur diesen Knoten zu replizieren. Sie können Knoten in CRXDE Lite selektiv replizieren:
 
 1. Öffnen Sie die CRXDE Lite, indem Sie *https://&lt;serrveraddress>:4502/crx/de/index.jsp*
-1. Wählen Sie die `/etc/key` Knoten.
+1. Wählen Sie den `/etc/key`-Knoten aus.
 1. Wechseln Sie zur Registerkarte **Replikation**.
 1. Klicken Sie auf die Schaltfläche **Replikation**.
 

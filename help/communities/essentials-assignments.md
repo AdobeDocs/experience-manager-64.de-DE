@@ -63,7 +63,7 @@ Abschlussstatus:
 * Nicht zugewiesen
 * Nicht gestartet (neu)
 * Wird ausgeführt
-* Fertig stellen
+* Umfassend
 
 Erfolgsstatus:
 
@@ -77,8 +77,8 @@ Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 |---|---|
 | Nicht gestartet | unbekannt |
 | Wird ausgeführt | unbekannt |
-| Fertig stellen | Bestanden |
-| Fertig stellen | Fehler |
+| Umfassend | Bestanden |
+| Umfassend | Fehler |
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 

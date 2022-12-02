@@ -11,12 +11,12 @@ role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
-# AEM 6.4 Bereitstellen des Benutzerhandbuchs {#deploying}
+# AEM 6.4-Bereitstellungshandbuch für Benutzer {#deploying}
 
 + [Bereitstellungshandbuch für Benutzer](home.md)
 + Einführung in die AEM-Plattform {#introduction}
@@ -53,10 +53,10 @@ ht-degree: 93%
    + [Ablauf statischer Objekte](expiration-static-objects.md)
    + [Versionsbereinigung](version-purging.md)
    + [Überwachung und Wartung der AEM-Instanz](monitoring-and-maintaining.md)
-   + [Abladung von Aufträgen](offloading.md)
+   + [Abladen von Aufträgen](offloading.md)
    + [Single Sign-On](single-sign-on.md)
    + [Ressourcenzuordnung](resource-mapping.md)
-   + [Aktivieren von HTTP über SSL](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html)
+   + [Aktivieren von HTTP über SSL](https://experienceleague.adobe.com/docs/experience-manager-64/administering/security/ssl-by-default.html?lang=de)
    + [Konsistenz- und Ausnahmeprüfungen](consistency-check.md)
    + [Leistungsrichtlinien](performance-guidelines.md)
    + [Leistungsoptimierung](configuring-performance.md)
@@ -69,11 +69,11 @@ ht-degree: 93%
    + [Planung der Aktualisierung](upgrade-planning.md)
    + [Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor ](pattern-detector.md)
    + [Abwärtskompatibilität in AEM 6.4](backward-compatibility.md)
-   + [Aktualisierungsverfahren](upgrade-procedure.md)
+   + [Upgrade-Verfahren](upgrade-procedure.md)
    + [Verwenden der Offline-Neuindizierung, um Ausfallzeiten während eines Upgrades zu reduzieren](upgrade-offline-reindexing.md)
-   + [Durchführen einer In-Place-Aktualisierung](in-place-upgrade.md)
+   + [Durchführen eines In-Place-Upgrades](in-place-upgrade.md)
    + [Lazy-Content-Migration](lazy-content-migration.md)
-   + [Verwendung des CRX2Oak-Migrationstools](using-crx2oak.md)
+   + [Verwendung des CRX2Oak-Migrations-Tools](using-crx2oak.md)
    + [Wartungsaufgaben vor einer Aktualisierung](pre-upgrade-maintenance-tasks.md)
    + [Prüfungen und Fehlerbehebung nach einer Aktualisierung](post-upgrade-checks-and-troubleshooting.md)
    + [Aktualisieren von benutzerdefinierten Suchformularen](upgrading-custom-search-forms.md)
@@ -82,7 +82,7 @@ ht-degree: 93%
    + [Schritte zur Aktualisierung von Installationen auf Anwendungsservern](app-server-upgrade.md)
    + [Liste der nach dem Upgrade deinstallierten veralteten Bundles](obsolete-bundles.md)
 + Repository-Neustrukturierung {#restructuring}
-   + [Repository-Neustrukturierung in AEM 6.4](repository-restructuring.md)
+   + [Repository-Neustrukturierung in AEM 6.4](repository-restructuring.md)
    + [Repository-Neustrukturierung für alle Lösungen in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Repository-Neustrukturierung in AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
    + [Assets-Repository-Neustrukturierung in AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=de)
@@ -90,7 +90,7 @@ ht-degree: 93%
    + [Forms-Repository-Neustrukturierung in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [E-Commerce-Repository-Neustrukturierung in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [Repository-Neustrukturierung für AEM Communities in 6.4](communities-repository-restructuring-in-aem-6-4.md)
-+ E-Commerce {#ecommerce}
++ eCommerce {#ecommerce}
    + [E-Commerce-Übersicht](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)

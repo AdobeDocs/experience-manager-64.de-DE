@@ -1,7 +1,7 @@
 ---
 title: Mobile Quickstart
 seo-title: Mobile Quickstart
-description: 'Auf dieser Seite erfahren Sie mehr über AEM Verify-App. Die AEM Verify-App ist eine schnelle und einfache Möglichkeit, Ihre AEM mobilen Apps auf jedem beliebigen iOS- oder Android-Mobilgerät auszuführen. '
+description: Auf dieser Seite erfahren Sie mehr über AEM Verify-App. Die AEM Verify-App ist eine schnelle und einfache Möglichkeit, Ihre AEM mobilen Apps auf jedem beliebigen iOS- oder Android-Mobilgerät auszuführen.
 seo-description: Follow this page to learn about AEM Verify app. The AEM Verify app is a quick and an easy way to run your AEM mobile applications on any iOS or Android mobile device.
 uuid: afae4b9d-f835-4d83-b758-39a0d7741510
 contentOwner: User
@@ -21,7 +21,7 @@ ht-degree: 25%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 ## AEM App überprüfen {#aem-verify-app}
 

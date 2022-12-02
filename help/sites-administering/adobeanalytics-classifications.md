@@ -13,13 +13,13 @@ exl-id: 25e58c68-5c67-4894-9a54-1717d90d7831
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 71%
+ht-degree: 99%
 
 ---
 
 # Adobe Classifications{#adobe-classifications}
 
-Adobe Classifications exportiert Classification-Daten nach [Adobe Analytics](/help/sites-administering/adobeanalytics.md) in geplanter Weise. Der Exporter ist eine Implementierung von **com.adobe.cq.scheduled.exporter.Exporter**.
+Adobe Classifications führt geplante Exporte von Klassifizierungsdaten in [Adobe Analytics](/help/sites-administering/adobeanalytics.md) durch. Der Exporter ist eine Implementierung von **com.adobe.cq.scheduled.exporter.Exporter**.
 
 So konfigurieren Sie diese Komponente:
 
@@ -40,7 +40,7 @@ So konfigurieren Sie diese Komponente:
    | Bei Konflikt überschreiben | Wählen Sie **Ja**, um Datenkollisionen zu überschreiben. Standardmäßig ist **Nein** eingestellt. |
    | Bearbeitete löschen | Ist **Ja** eingestellt, werden die verarbeiteten Knoten nach dem Export gelöscht. Der Standardwert lautet **False**. |
    | Beschreibung des Exportvorgangs | Geben Sie eine Beschreibung für den Adobe Classifications-Auftrag ein. |
-   | Benachrichtigungs-E-Mail | Geben Sie eine E-Mail-Adresse für die Benachrichtigung zu Adobe Classifications ein. |
+   | Benachrichtigungs-E-Mail | Geben Sie eine E-Mail-Adresse für Adobe Classifications-Benachrichtigungen ein. |
    | Report Suite | Geben Sie die Report Suite ein, für die der Importauftrag ausgeführt werden soll. |
    | Datensatz | Geben Sie die Datensatz-Bezugs-ID ein, für die der Importauftrag ausgeführt werden soll. |
    | Transformator | Wählen Sie aus dem Dropdown-Menü eine Transformator-Implementierung aus. |
@@ -51,13 +51,13 @@ So konfigurieren Sie diese Komponente:
 
 ## Ändern der Seitengröße {#modifying-page-size}
 
-Datensätze werden seitenweise verarbeitet. Standardmäßig erstellt Adobe Classifications Seiten mit einer Seitengröße von 1000.
+Datensätze werden seitenweise verarbeitet. Adobe Classifications erstellt standardmäßig Seiten mit einer Seitengröße von 1.000.
 
-Eine Adobe kann maximal 25000 Seitengrößen aufweisen, je nach Definition in Classifications und kann über die Felix-Konsole geändert werden. Während des Exports sperrt Adobe Classifications den Quellknoten, um gleichzeitige Änderungen zu verhindern. Der Knoten wird nach dem Export, bei einem Fehler oder beim Schließen der Sitzung wieder entsperrt.
+Eine Seite kann (gemäß Definition in Adobe Classifications) maximal die Größe 25.000 haben und über die Felix-Konsole geändert werden. Während des Exports sperrt Adobe Classifications den Quellknoten, um gleichzeitige Änderungen zu verhindern. Der Knoten wird nach dem Export, bei einem Fehler oder beim Schließen der Sitzung wieder entsperrt.
 
 So ändern Sie die Seitengröße:
 
-1. Navigieren Sie zur OSGi-Konsole unter **https://&lt;host>:&lt;port>/system/console/configMgr** und wählen Sie **Adobe AEM Classifications Exporter**.
+1. Navigieren Sie zur OSGI-Konsole unter **https://&lt;Host>:&lt;Port>/system/console/configMgr** und wählen Sie **Adobe AEM Classifications Exporter** aus.
 
    ![aa-26](assets/aa-26.png)
 
@@ -69,13 +69,13 @@ So ändern Sie die Seitengröße:
 >
 >Adobe Classifications wurde früher als SAINT-Exporter bezeichnet.
 
-Ein Exporter kann einen Transformator verwenden, um die Exportdaten in ein bestimmtes Format zu konvertieren. Eine Unterschnittstelle für Adobe Classifications `SAINTTransformer<String[]>` Die Implementierung der Transformatorschnittstelle wurde bereitgestellt. Diese Schnittstelle wird verwendet, um den Datentyp auf `String[]` , die von der SAINT-API verwendet wird, um eine Marker-Oberfläche zu haben, über die solche Dienste zur Auswahl gefunden werden können.
+Ein Exporter kann einen Transformator verwenden, um die Exportdaten in ein bestimmtes Format zu konvertieren. Für Adobe Classifications wird die Unterschnittstelle `SAINTTransformer<String[]>` bereitgestellt, die die Transformatorschnittstelle implementiert. Diese Schnittstelle dient dazu, den Datentyp auf den von der SAINT-API verwendeten Datentyp `String[]` zu beschränken und eine Markierungsschnittstelle für die Suche nach entsprechenden Services für die Auswahl zu erhalten.
 
-In der Standardimplementierung SAINTDefaultTransformer werden die untergeordneten Ressourcen der Exporterquelle als Datensätze mit Eigenschaftsnamen als Schlüssel und Eigenschaftswerten als Werte behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Namespace-Eigenschaften (enthalten :) werden nicht berücksichtigt.
+In der Standardimplementierung (SAINTDefaultTransformer) werden die untergeordneten Ressourcen der Exporter-Quelle als Datensätze (mit Eigenschaftsnamen als Schlüssel und Eigenschaftswerten als Werte) behandelt. Die Spalte **Schlüssel** wird automatisch als erste Spalte hinzugefügt und enthält den Knotennamen. Namespace-Eigenschaften (enthalten :) werden nicht berücksichtigt.
 
 *Knotenstruktur:*
 
-* id-classification `nt:unstructured`
+* ID-Klassifikation `nt:unstructured`
 
    * 1 `nt:unstructured`
 
@@ -87,9 +87,9 @@ In der Standardimplementierung SAINTDefaultTransformer werden die untergeordnete
 
 **SAINT-Kopfzeile und -Datensatz:**
 
-| **Schlüssel** | **Produkt** | **Preis** | **Größe** | **Farbe** | **Farbe^Code** |
+| **Schlüssel** | **Produkt** | **Preis** | **Größe** | **Farbe** | **Farb-Code** |
 |---|---|---|---|---|---|
-| 1 | Mein Produktname | 120,90 | M | black | 101 |
+| 1 | Mein Produktname | 120,90 | M | schwarz | 101 |
 
 Die Eigenschaften umfassen Folgendes:
 
@@ -117,7 +117,7 @@ Die Eigenschaften umfassen Folgendes:
   </tr> 
   <tr> 
    <td>description</td> 
-   <td>Auftragsbeschreibung <br /> </td> 
+   <td>Auftragsbeschreibung. <br /> </td> 
   </tr> 
   <tr> 
    <td>overwrite</td> 

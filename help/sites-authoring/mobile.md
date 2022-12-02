@@ -13,7 +13,7 @@ exl-id: 97f0b0d2-7d7b-4a90-a4e5-348a306e1622
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -25,16 +25,16 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 >[!NOTE]
 >
->Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live Copy für verschiedene Kanäle](/help/sites-administering/msm-livecopy.md).
+>Zur Erstellung einer Website für Mobilgeräte auf der Grundlage einer bestehenden Standard-Site erstellen Sie eine Live Copy der Standard-Site. (Siehe [Erstellen einer Live Copy für unterschiedliche Kanäle](/help/sites-administering/msm-livecopy.md).)
 >
->AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Gerätegruppenfiltern](/help/sites-developing/groupfilters.md).
+>AEM-Entwickler können neue Gerätegruppen erstellen. (Siehe [Erstellen von Gerätegruppen-Filtern](/help/sites-developing/groupfilters.md).)
 
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
 1. Öffnen Sie ausgehend von der globalen Navigation die **Sites-Konsole**.
-1. Öffnen Sie die Seite **We.Retail** -> **Vereinigte Staaten** -> **englisch**.
+1. Öffnen Sie die Seite **We.Retail** > **Vereinigte Staaten** > **Englisch**.
 
-1. Wechseln zu **Vorschau** -Modus.
+1. Wechseln Sie in den **Vorschaumodus**.
 1. Wechseln Sie durch Klicken auf das Gerätesymbol am oberen Seitenrand zum gewünschten Emulator.
 1. Verschieben Sie per Drag-and-Drop Komponenten aus dem Komponenten-Browser auf die Seite.
 

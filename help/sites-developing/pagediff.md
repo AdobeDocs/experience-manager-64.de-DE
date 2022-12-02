@@ -13,7 +13,7 @@ exl-id: 365e944d-d8a3-4f4e-8925-88629845232f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 73%
+ht-degree: 79%
 
 ---
 
@@ -57,7 +57,7 @@ Es wird automatisch eine Bereinigungsaufgabe ausgeführt, um diesen temporären 
 
 ## Entwicklerbeschränkungen {#developer-limitations}
 
-Zuvor musste in der klassischen Benutzeroberfläche bei der Entwicklung besondere Aufmerksamkeit geschenkt werden, um die AEM (z. B. `cq:text` Tag-Bibliothek oder benutzerdefinierte Integration der `DiffService` OSGi-Dienst in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie clientseitig durch DOM-Vergleich ausgeführt wird.
+Früher in der klassischen Benutzeroberfläche musste bei der Entwicklung besondere Rücksicht genommen werden, um die AEM-Vergleichsfunktion zu unterstützen (z. B. die Verwendung der Tag-Bibliothek `cq:text` oder eine individuelle Integration des OSGi-Dienstes `DiffService` in Komponenten). Für die neue Vergleichsfunktion ist dies nicht mehr notwendig, da sie Client-seitig durch DOM-Vergleich ausgeführt wird.
 
 Es gibt jedoch einige Einschränkungen, die der Entwickler beachten muss.
 

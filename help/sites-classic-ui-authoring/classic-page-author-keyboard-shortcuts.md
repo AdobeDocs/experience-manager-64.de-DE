@@ -13,7 +13,7 @@ exl-id: 04075ed1-3a52-4371-aa4e-0c3d61c878ef
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 
 >[!NOTE]
 >
->In den folgenden Tabellen finden Sie die Schlüsselkombinationen in der **Tastaturbefehl** -Spalte verwenden, funktionieren die Strg- und Befehlstaste in macOS.
+>Unter macOS kann für die in der folgenden Tabelle aufgeführten **Tastaturbefehle** anstelle der Strg- sowohl die Ctrl- als auch die Befehlstaste verwendet werden.
 
 >[!NOTE]
 >
@@ -31,7 +31,6 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >
 >* Windows: Strg + Klick auf die gewünschten Komponenten.
 >* Mac: Befehlstaste + Klick auf die gewünschten Komponenten.
-
 >
 
 
@@ -168,7 +167,7 @@ Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastatu
   </tr> 
   <tr> 
    <td>Modus Bearbeiten</td> 
-   <td>Legen Sie das folgende Suffix in der URL fest:<br /> <code>?debugClientLibs=true</code><br /> Verwenden Sie dann:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Geben Sie folgendes Suffix in die URL ein:<br /> <code>?debugClientLibs=true</code><br /> Verwenden Sie dann:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>Anzeige von zeitlichen Statistiken zum Laden von Seiten.</td> 
   </tr> 
  </tbody> 

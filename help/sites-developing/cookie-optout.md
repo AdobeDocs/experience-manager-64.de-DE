@@ -13,7 +13,7 @@ exl-id: 7f604d89-c6ad-405d-98cd-80f057466e61
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deployi
 
 | Eigenschaftsname (Web-Konsole) | OSGi-Eigenschaftsname | Beschreibung |
 |---|---|---|
-| Opt-out-Cookies | optout.cookies | Die Namen von Cookies, die angeben, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat, sofern sie auf dem Gerät des Benutzers vorhanden sind. |
-| HTTP-Header für Opt-out | optout.headers | Die Namen von HTTP-Headern, die angeben, wenn vorhanden, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
-| Cookies auf der White-List | optout.whitelist.cookies | Eine Liste von Cookies, die für die Funktionsweise der Website unerlässlich sind und ohne Zustimmung des Benutzers verwendet werden können. |
+| Opt-out-Cookies | optout.cookies | Die Namen von Cookies, die, wenn sie auf dem Gerät des Benutzers vorhanden sind, anzeigen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
+| HTTP-Header für Opt-out | optout.headers | Die Namen der HTTP-Header, die, wenn vorhanden, anzeigen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
+| Cookies auf der Zulassungsliste | optout.whitelist.cookies | Eine Liste von Cookies, die für die Funktionalität der Website unerlässlich sind und ohne Zustimmung des Benutzers verwendet werden können. |
 
 ## Überprüfen der Verwendung von Cookies {#validating-cookie-usage}
 
-Verwenden Sie clientseitiges JavaScript, um den Adobe Granite Opt-Out Service aufzurufen und zu überprüfen, ob Sie Cookies verwenden können. Verwenden Sie das Granite.OptOutUtil-JavaScript-Objekt, um die folgenden Aufgaben auszuführen:
+Verwenden Sie Client-seitiges JavaScript, um den Adobe Granite Opt-Out Service aufzurufen und zu überprüfen, ob Sie Cookies verwenden können. Verwenden Sie das Granite.OptOutUtil-JavaScript-Objekt, um die folgenden Aufgaben auszuführen:
 
 * Abrufen einer Liste von Cookie-Namen, die darauf hinweisen, dass der Benutzer nicht damit einverstanden ist, Cookies zur Nachverfolgung zu verwenden
 * Abrufen einer Liste von Cookies, die verwendet werden können
@@ -114,4 +114,4 @@ Bestimmt, ob ein bestimmtes Cookie im Browser des Benutzers verwendet werden kan
 
 **Rückgabe**
 
-Ein boolescher Wert von `true` if `cookieName` kann verwendet werden oder ein Wert von `false` if `cookieName` kann nicht verwendet werden.
+Einen booleschen Wert, der `true` lautet, wenn `cookieName` verwendet werden kann, oder `false` lautet, wenn `cookieName` nicht verwendet werden kann.

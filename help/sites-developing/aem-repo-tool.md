@@ -13,19 +13,19 @@ exl-id: 8da27ef5-bb61-4246-8a13-96a60188ebbb
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # AEM Repo Tool{#aem-repo-tool}
 
-Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wie bei FTP über die Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server übertragen können. Das AEM Repo Tool ähnelt dem [Jackrabbit FileVault-Tool](/help/sites-developing/ht-vlttool.md), ist jedoch schneller, weist minimale Abhängigkeiten auf und ist ein einfaches Bash-Skript.
+Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wie bei FTP über die Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server übertragen können. Das AEM Repo Tool ähnelt dem [Jackrabbit FileVault-Tool](/help/sites-developing/ht-vlttool.md), ist aber schneller, hat minimale Abhängigkeiten und besteht aus einem einfachen Bash-Skript.
 
 Dieses Tool vereinfacht die Dateiübertragung für Entwickler und lässt sich auch in IntelliJ und Eclipse integrieren, um die Entwicklung noch effizienter zu gestalten.
 
 ## Übersicht {#overview}
 
-Für einen bestimmten Pfad innerhalb eines `jcr_root` Dateistruktur im Dateisystem erstellt AEM Repo Tool ein Paket mit einem einzigen Filter für die gesamte Unterstruktur und überträgt es auf den Server (ähnlich wie FTP). `put`), ruft es vom Server ab ( `get`) oder vergleicht die Unterschiede ( `status` und `diff`).
+Das AEM Repo Tool erstellt für einen angegebenen Pfad in einer `jcr_root`-filevault-Struktur im Dateisystem ein Paket mit einem einzigen Filter für den gesamten untergeordneten Baum und pusht dieses Paket zum Server (ähnlich wie `put` bei FTP), ruft es vom Server ab (`get`) oder vergleicht die Unterschiede (`status` und `diff`).
 
 Mehrere Filterpfade werden vom Tool ebenso wenig unterstützt wie `filter.xml` von FileVault.
 

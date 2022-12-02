@@ -8,7 +8,7 @@ exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
 source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
 source-wordcount: '638'
-ht-degree: 73%
+ht-degree: 79%
 
 ---
 
@@ -49,20 +49,20 @@ Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden
 
 ## Exportieren von Metadaten {#export-metadata}
 
-Einige Anwendungsfälle für den Massenexport von Metadaten:
+Einige Nutzungsszenarien für den Massenexport von Metadaten:
 
 * Importieren Sie die Metadaten in ein Drittanbietersystem, wenn Sie Assets migrieren.
 * Geben Sie Asset-Metadaten für ein breiteres Projektteam frei.
 * Testen oder prüfen Sie die Metadaten auf Ihre Konformität.
 * Externalisieren Sie die Metadaten für eine separate Lokalisierung.
 
-Sie können Metadaten für mehrere Assets in einem CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. So exportieren Sie Metadaten: [!DNL Experience Manager] durchsucht die Eigenschaften des Asset-Knotens `jcr:content/metadata` und der untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
+Sie können Metadaten für mehrere Assets in einem CSV-Format exportieren. Die Metadaten werden asynchron exportiert, sodass der Export die Systemleistung nicht beeinträchtigt. Wenn Sie Metadaten exportieren, durchsucht [!DNL Experience Manager] die Eigenschaften des Asset-Knotens `jcr:content/metadata` und der untergeordneten Knoten und exportiert die Metadateneigenschaften in eine CSV-Datei.
 
 Gehen Sie wie folgt vor, um Metadaten mehrerer Assets stapelweise zu exportieren:
 
 1. Wählen Sie einen Asset-Ordner aus, der Assets enthält, für die Sie Metadaten exportieren möchten. Wählen Sie in der Symbolleiste **[!UICONTROL Metadaten exportieren]** aus.
 
-1. Im [!UICONTROL Metadatenexport] -Dialogfeld einen Namen für die CSV-Datei angeben. Um Metadaten von Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Assets in Unterordnern einschließen]**.
+1. Geben Sie im Dialogfeld [!UICONTROL Metadatenexport] einen Namen für die CSV-Datei an. Um Metadaten von Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Assets in Unterordnern einschließen]**.
 
    ![export_metadata_page](assets/export_metadata_page.png)
 

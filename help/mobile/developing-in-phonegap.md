@@ -20,7 +20,7 @@ ht-degree: 28%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 AEM kann mit PhoneGap integriert werden, damit Sie mithilfe der AEM-Seiten problemlos Apps erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer mit dem Inhalt arbeiten kann. „Content Sync“ ermöglicht Ihnen, versionierte Archive der Seiten für das Bundling mit Apps zu erstellen. 
 
@@ -32,7 +32,7 @@ Die folgenden Ressourcen helfen Ihnen bei den ersten Schritten mit AEM Mobile mi
 
 * [Entwickeln von Mobilanwendungen in AEM](/help/mobile/developing-mobile-applications.md)
 * [Mobil mit Inhaltssynchronisierung](/help/mobile/phonegap-contentsync.md)
-* [Seitenvorlagen](/help/mobile/phonegap-apps-arch-page-templates.md)
+* [Seitenvorlagen  ](/help/mobile/phonegap-apps-arch-page-templates.md)
 
 * [AEM Mobile Content Services: Eine Übersicht](/help/mobile/develop-content-as-a-service.md)
 

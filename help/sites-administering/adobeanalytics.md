@@ -19,7 +19,7 @@ ht-degree: 94%
 
 # Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
 
-Die Integration von Adobe Analytics und AEM ermöglicht es Ihnen, Webseitenaktivität zu erfassen:
+Die Integration von Adobe Analytics und AEM ermöglicht es Ihnen, Web-Seiten-Aktivität zu erfassen:
 
 * Eine Adobe Analytics-Konfiguration ermöglicht AEM die Authentifizierung mit Adobe Analytics.
 * Ein Framework identifiziert die Daten, die an die Adobe Analytics-Report Suite übermittelt werden.

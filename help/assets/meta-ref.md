@@ -1,6 +1,6 @@
 ---
 title: Metadatenschema-Referenz
-description: 'Erfahren Sie mehr über die Standard-Konventionen für das Beschreiben von Asset-Metadaten, darunter Dublin Core, IPTC und weitere Metadatenschemen. '
+description: Erfahren Sie mehr über die Standard-Konventionen für das Beschreiben von Asset-Metadaten, darunter Dublin Core, IPTC und weitere Metadatenschemen.
 contentOwner: AG
 feature: Metadata
 role: User,Admin

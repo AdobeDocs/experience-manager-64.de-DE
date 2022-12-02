@@ -14,7 +14,7 @@ exl-id: e83317bb-e69c-4e2c-92f8-4f613786e7ae
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1270'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -38,19 +38,19 @@ Es gibt verschiedene Gründe, warum eine Replikation fehlschlägt. Dieser Artike
 
 **Werden die Replikationen in den Warteschlangen der Replikationsagenten gespeichert?**
 
-Gehen Sie dazu zu /etc/replication/agents.author.html und klicken Sie dann auf die Replikationsagenten, die überprüft werden sollen.
+Wechseln Sie zu /etc/replication/agents.author.html und klicken Sie dann auf die Replikationsagenten, um dies zu überprüfen.
 
 **Wenn eine oder einige Agentenwarteschlangen hängen geblieben sind:**
 
-1. Zeigt die Warteschlange an **blockiert** status? Wenn dies der Fall ist, wird die Veröffentlichungsinstanz nicht ausgeführt oder reagiert sie überhaupt nicht? Überprüfen Sie die Veröffentlichungsinstanz, um das Problem zu ermitteln (d. h. überprüfen Sie die Protokolle, um festzustellen, ob der Fehler „OutOfMemory“ oder ein anderes Problem vorliegt). Wenn die Instanz nur allgemein langsam ist, analysieren Sie die Thread-Sicherungskopien.
-1. Zeigt den Warteschlangenstatus an **Warteschlange ist aktiv - # ausstehend**? Möglicherweise wurde der Replikationsauftrag durch einen SocketRead-Vorgang unterbrochen und wartet auf eine Reaktion der Veröffentlichungsinstanz oder des Dispatchers. Das bedeutet, dass u. U. eine hohe Last auf der Veröffentlichungsinstanz oder dem Dispatcher vorliegt oder dass diese durch eine Sperre unterbrochen wurden. Überprüfen Sie in diesem Fall die Thread-Sicherungskopien der Autoren- und Veröffentlichungsinstanzen.
+1. Lautet der Status der Warteschlange **gesperrt**? Wenn dies der Fall ist, wird die Veröffentlichungsinstanz nicht ausgeführt oder reagiert sie überhaupt nicht? Überprüfen Sie die Veröffentlichungsinstanz, um das Problem zu ermitteln (d. h. überprüfen Sie die Protokolle, um festzustellen, ob der Fehler „OutOfMemory“ oder ein anderes Problem vorliegt). Wenn die Instanz nur allgemein langsam ist, analysieren Sie die Thread-Sicherungskopien.
+1. Lautet der Status der Warteschlange **Warteschlange ist aktiv - x ausstehend**? Möglicherweise wurde der Replikationsauftrag durch einen SocketRead-Vorgang unterbrochen und wartet auf eine Reaktion der Veröffentlichungsinstanz oder des Dispatchers. Das bedeutet, dass u. U. eine hohe Last auf der Veröffentlichungsinstanz oder dem Dispatcher vorliegt oder dass diese durch eine Sperre unterbrochen wurden. Überprüfen Sie in diesem Fall die Thread-Sicherungskopien der Autoren- und Veröffentlichungsinstanzen.
 
    * Öffnen Sie die Thread-Sicherungskopien der Autoreninstanz in einem Analyzer für Thread-Sicherungskopien und prüfen Sie, ob der Sling-Eventing-Auftrag des Replikationsagenten durch einen SocketRead-Vorgang unterbrochen wurde.
-   * Öffnen Sie die Thread-Sicherungskopien der Veröffentlichungsinstanz in einem Analyzer für Thread-Sicherungskopien und analysieren Sie, aus welchen Grund die Veröffentlichungsinstanz möglicherweise nicht reagiert. Sie sollten einen Thread mit der POST /bin/receive im Namen sehen, d. h. den Thread, der die Replikation von der Autoreninstanz erhält.
+   * Öffnen Sie die Thread-Sicherungskopien der Veröffentlichungsinstanz in einem Analyzer für Thread-Sicherungskopien und analysieren Sie, aus welchen Grund die Veröffentlichungsinstanz möglicherweise nicht reagiert. Dabei sollte ein Thread mit „POST /bin/receive“ im Namen angezeigt werden. Dies ist der Thread, der die Replikation von der Autoreninstanz empfängt.
 
 **Wenn alle Agentenwarteschlangen hängen geblieben sind:**
 
-1. Es ist möglich, dass ein bestimmtes Inhaltselement aufgrund einer Beschädigung des Repositorys oder eines anderen Problems nicht unter /var/replication/data serialisiert werden kann. Überprüfen Sie logs/error.log auf einen zugehörigen Fehler. Gehen Sie wie folgt vor, um das fehlerhafte Replikationselement zu entfernen:
+1. Möglicherweise kann ein bestimmter Teil des Inhalts aufgrund eines beschädigten Repositorys oder eines anderen Problems nicht unter /var/replication/data serialisiert werden. Überprüfen Sie die Datei „logs/error.log“ auf einen entsprechenden Fehler. Gehen Sie wie folgt vor, um das fehlerhafte Replikationselement zu entfernen:
 
    1. Gehen Sie zu https://&lt;host>:&lt;port>/crx und melden Sie sich als Administrator an. Gehen Sie in CQ5.5 zu https://&lt;host>:&lt;port>/crx/explorer .
    1. Klicken Sie auf „Content Explorer“.
@@ -68,17 +68,17 @@ Gehen Sie dazu zu /etc/replication/agents.author.html und klicken Sie dann auf d
 1. Möglicherweise ist auch der Status der Konfiguration „DefaultJobManager“ inkonsistent. Dies kann vorkommen, wenn die Konfiguration für „Apache Sling Job Event Handler“ über die OSGi-Konsole manuell geändert wird (z. B. durch Deaktivieren und erneutes Aktivieren der Eigenschaft „Job Processing Enabled“ und Speichern der Konfiguration).
 
    * Dies führt dazu, dass der Status der unter „crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config“ gespeicherten Konfiguration für „DefaultJobManager“ inkonsistent wird. Obwohl die Eigenschaft „Apache Sling Job Event Handler“ anzeigt, dass „Job Processing Enabled“ aktiviert ist, wird auf der Registerkarte „Sling Eventing“ die Nachricht „JOB PROCESSING IS DISABLED“ angezeigt und die Replikation funktioniert nicht.
-   * Um dieses Problem zu beheben, müssen Sie zur Konfigurationsseite der OSGi-Konsole navigieren und die Konfiguration &quot;Apache Sling Job Event Handler&quot;löschen. Starten Sie dann den Master-Knoten des Clusters neu, um den Status der Konfiguration wieder konsistent zu machen. Damit sollte das Problem behoben sein und die Replikation sollte wieder funktionieren.
+   * Um dieses Problem zu beheben, müssen Sie zur Seite „Konfiguration“ der OSGi-Konsole navigieren und die Konfiguration „Apache Sling Job Event Handler“ löschen. Starten Sie dann den Master-Knoten des Clusters neu, um den Status der Konfiguration wieder konsistent zu machen. Damit sollte das Problem behoben sein und die Replikation sollte wieder funktionieren.
 
 **Erstellen einer „replication.log“-Datei**
 
 In manchen Fällen kann es hilfreich sein, wenn alle Replikationsprotokolle auf DEBUG-Ebene in separate Protokolldateien geschrieben werden. Gehen Sie hierfür wie folgt vor:
 
 1. Navigieren Sie zu `https://host:port/system/console/configMgr` und melden Sie sich als Administrator an.
-1. Suchen Sie die Apache Sling Logging Logger-Factory und erstellen Sie eine Instanz, indem Sie auf **+** rechts neben der Werkskonfiguration. Dadurch wird eine neue Logging Logger-Konfiguration erstellt.
+1. Suchen Sie nach der Apache Sling Logging Logger-Factory-Konfiguration und erstellen Sie eine Instanz, indem Sie auf die **+**-Schaltfläche rechts neben der Factory-Konfiguration klicken. Dadurch wird eine neue Logging Logger-Konfiguration erstellt.
 1. Richten Sie die Konfiguration wie folgt ein:
 
-   * Protokollebene: DEBUG
+   * Protokollierungsebene: DEBUG
    * Protokolldateipfad: *(CQ5.4 und 5.3)* ../logs/replication.log *(CQ5.5)* logs/replication.log
    * Kategorien: com.day.cq.replication
 
@@ -99,16 +99,16 @@ Im Allgemeinen sollten Seitenberechtigungen nicht von der Autoreninstanz auf der
 
 ### Replikations-Warteschlange blockiert bei der Replikation von Namensrauminformationen von der Autoren- zur Veröffentlichungsinstanz {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-In einigen Fällen wird die Replikations-Warteschlange beim Versuch blockiert, Namensrauminformationen von der Autoreninstanz auf die Veröffentlichungsinstanz zu replizieren. Dies geschieht, weil der Replikationsbenutzer nicht über `jcr:namespaceManagement` Berechtigung. Um dieses Problem zu vermeiden, stellen Sie Folgendes sicher:
+In einigen Fällen wird die Replikations-Warteschlange beim Versuch blockiert, Namensrauminformationen von der Autoreninstanz auf die Veröffentlichungsinstanz zu replizieren. Dies geschieht, weil der Replikationsbenutzer nicht die Berechtigung `jcr:namespaceManagement` hat. Um dieses Problem zu vermeiden, stellen Sie Folgendes sicher:
 
-* Replikationsbenutzer (wie unter der [Verkehr](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>Benutzer) auch in der Veröffentlichungsinstanz vorhanden.
+* Der Replikationsbenutzer (wie auf der Registerkarte [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) unter „Benutzer“ konfiguriert) existiert auch auf der Veröffentlichungsinstanz.
 * Der Benutzer hat Lese- und Schreibrechte für den Pfad, in dem der Inhalt installiert ist.
-* Der Benutzer hat `jcr:namespaceManagement` auf Repository-Ebene. Sie können die Berechtigungen wie folgt erteilen:
+* Der Benutzer hat die Berechtigung `jcr:namespaceManagement` auf Repository-Ebene. Sie können die Berechtigungen wie folgt erteilen:
 
-1. Melden Sie sich bei CRX/DE an ( `http://localhost:4502/crx/de/index.jsp`) als Administrator.
+1. Melden Sie sich als Admin bei CRX/DE (`http://localhost:4502/crx/de/index.jsp`) an.
 1. Klicken Sie auf die Registerkarte **Zugriffssteuerung**.
 1. Wählen Sie **Repository** aus.
 1. Klicken Sie auf **Eintrag hinzufügen** (das Plussymbol).
 1. Geben Sie den Namen des Benutzers ein.
-1. Auswählen `jcr:namespaceManagement` aus der Liste der Berechtigungen.
-1. Klicken Sie auf OK.
+1. Wählen Sie in der Liste der Berechtigungen `jcr:namespaceManagement` aus.
+1. Klicken Sie auf „OK“.

@@ -13,7 +13,7 @@ exl-id: 9abef452-b435-4419-895c-083cae6cd7d2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2753'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,6 @@ ht-degree: 93%
 >
 >* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
-
 >
 
 
@@ -69,7 +68,7 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
-* **Navigation** – dargestellt durch einen Kompass
+* **Navigation** – dargestellt durch einen Kompass 
 * **Tools** – dargestellt durch einen Hammer
 
 Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
@@ -169,11 +168,11 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
    ![screen_shot_2018-03-23at104029](assets/screen_shot_2018-03-23at104029.png)
 
-* Breadcrumb
+* Breadcrumbs
 
    ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -187,7 +186,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Diese Option ist nur in der Listenansicht verfügbar. Siehe [Listenansicht](#list-view) für weitere Informationen.
+   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen dazu finden Sie unter [Listenansicht](#list-view).
 
 * Schaltfläche **Erstellen**
 
@@ -317,7 +316,7 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
    <td>Kartenansicht<br /> </td> 
    <td>
     <ul> 
-     <li>Desktop:<br /> Bewegen Sie den Mauszeiger und verwenden Sie dann die Schnellaktion mit Häkchen .</li> 
+     <li>Desktop:<br /> Bewegen Sie den Mauszeiger und verwenden Sie dann die Häkchen-Schnellaktion</li> 
      <li>Mobilgerät: <br /> Tippen und halten Sie die Karte</li> 
     </ul> </td> 
    <td>
@@ -404,10 +403,10 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
 * In der Kartenansicht werden Informationskarten für jedes Element auf der aktuellen Ebene angezeigt. Diese bieten u. a. folgende Informationen:
 
-   * eine visuelle Darstellung des Seiteninhalts.
-   * den Seitentitel.
-   * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht).
-   * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist.
+   * eine visuelle Darstellung des Seiteninhalts
+   * den Seitentitel
+   * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
+   * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist
    * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen (sofern zutreffend)
 
       * Markierungen, die auf erforderliche Aktionen hinweisen, können mit Einträgen in Ihrem [Posteingang](/help/sites-authoring/inbox.md) verknüpft werden.
@@ -500,9 +499,9 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 
 ### Zeitleiste {#timeline}
 
-Die Timeline kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Zeitleisten-Spalte über die Schienenauswahl:
+Die Zeitleiste kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. So öffnen Sie die Zeitleistenspalte mithilfe der Schienenauswahl:
 
-Die Zeitleisten-Spalte bietet folgende Möglichkeiten:
+Die Zeitleistenspalte bietet folgende Möglichkeiten:
 
 * Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element
 
@@ -539,7 +538,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 * [Sprachkopien](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Inhaltsverweise (z. B. von der Verweiskomponente geliehener bzw. verliehener Inhalt)
 
-![screen_shot_2018-03-23at11122](assets/screen_shot_2018-03-23at111122.png)
+![screen_shot_2018-03-23at111122](assets/screen_shot_2018-03-23at111122.png)
 
 ### Filter {#filter}
 

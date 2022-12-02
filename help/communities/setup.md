@@ -110,8 +110,8 @@ Scrollen Sie nach unten zu `Add User to Groups`:
 
 * Geben Sie &quot;C&quot;zur Suche ein.
 
-   * Wählen Sie nun eine der folgenden Optionen aus `Community Administrators`
-   * Wählen Sie nun eine der folgenden Optionen aus `Community Enablement Managers`
+   * Auswählen `Community Administrators`
+   * Auswählen `Community Enablement Managers`
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
 
@@ -150,7 +150,7 @@ Folgen Sie dann den Anweisungen zum
 
 Beispielpaket mit Tags, die für die Tutorials für die ersten Schritte mit AEM Communities erstellt wurden
 
-[Datei laden](assets/tutorial_tags-v63.zip)
+[Datei abrufen](assets/tutorial_tags-v63.zip)
 
 ## MongoDB für UGC Common Store {#mongodb-for-ugc-common-store}
 

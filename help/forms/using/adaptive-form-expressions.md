@@ -1,7 +1,7 @@
 ---
 title: Adaptive Formularausdrücke
 seo-title: Adaptive Form Expressions
-description: 'Verwenden Sie adaptive Formularausdrücke, um automatische Überprüfung und Berechnung hinzuzufügen und die Sichtbarkeit eines Abschnitts zu aktivieren oder zu deaktivieren. '
+description: Verwenden Sie adaptive Formularausdrücke, um automatische Überprüfung und Berechnung hinzuzufügen und die Sichtbarkeit eines Abschnitts zu aktivieren oder zu deaktivieren.
 seo-description: Use adaptive forms expressions to add automatic validation, calculation, and turn visibility of a section on or off.
 uuid: 4f33c10f-e862-4113-9d5a-67e6208e1e66
 products: SG_EXPERIENCEMANAGER/6.4/FORMS

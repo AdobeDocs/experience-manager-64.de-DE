@@ -1,5 +1,5 @@
 ---
-title: 'Platzhaltertext in AEM Forms '
+title: Platzhaltertext in AEM Forms
 seo-title: Placeholder text in AEM Forms
 description: Platzhaltertext unterstützt den Benutzer bei der Dateneingabe, wenn das Steuerelement keinen Wert hat. Das könnte ein Beispielwert oder eine kurze Beschreibung des erwarteten Formats sein.
 seo-description: Placeholder text is intended to aid the user with data entry when the control has no value. It could be a sample value or a brief description of the expected format.

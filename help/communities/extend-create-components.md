@@ -13,7 +13,7 @@ exl-id: 48809969-5d14-41bb-bc6d-5857e679ceba
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '621'
-ht-degree: 11%
+ht-degree: 13%
 
 ---
 
@@ -42,15 +42,15 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt dadurch, dass stattdes
 
 1. Erstellen Sie einen Speicherort für benutzerdefinierte Anwendungen:
 
-   * Wählen Sie die `/apps` Knoten
+   * Wählen Sie den `/apps`-Knoten aus
 
       * **Ordner erstellen** benannt **[!UICONTROL custom]**
-   * Wählen Sie die `/apps/custom` Knoten
+   * Wählen Sie den `/apps/custom`-Knoten aus
 
       * **Ordner erstellen** benannt **[!UICONTROL Komponenten]**
 
 
-1. Wählen Sie die `/apps/custom/components` Knoten
+1. Wählen Sie den `/apps/custom/components`-Knoten aus
 
    * **[!UICONTROL Erstellen > Komponente..]**
 
@@ -62,14 +62,14 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt dadurch, dass stattdes
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Klicken Sie auf **[!UICONTROL OK]**
+   * Wählen Sie **[!UICONTROL OK]** aus
 
 
 1. Erweitern Sie den soeben erstellten Knoten: `/apps/custom/components/comments`
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. Klicken Sie mit der rechten Maustaste `comments.jsp`
 1. Wählen Sie **[!UICONTROL Löschen]** aus
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -92,14 +92,14 @@ Das Löschen der automatisch erstellten JSP-Datei erfolgt dadurch, dass stattdes
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
    * Wählen Sie **[!UICONTROL Weiter]** aus
-   * Klicken Sie auf **[!UICONTROL OK]**
+   * Wählen Sie **[!UICONTROL OK]** aus
 
 
 1. Erweitern Sie den soeben erstellten Knoten: `/apps/custom/components/comments/comment`
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. Klicken Sie mit der rechten Maustaste `comment.jsp`
 1. Wählen Sie **[!UICONTROL Löschen]** aus
-1. Wählen Sie **[!UICONTROL Alle speichern]** aus
+1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 ![chlimage_1-71](assets/chlimage_1-71.png) ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -137,7 +137,7 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
       * An `/apps/custom/components/comments/comment`
 
 * Auswählen `/apps/custom` Knoten
-* Wählen Sie **[!UICONTROL Alle speichern]** aus
+* Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 ## Erstellen eines Client-Bibliotheksordners {#create-a-client-library-folder}
 
@@ -155,7 +155,7 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
       * **Name** `categories` **Typ** `String` **Wert** `cq.social.author.hbs.comments` `Multi`
       * **Name** `dependencies` **Typ** `String` **Wert** `cq.social.scf` `Multi`
 
-* Wählen Sie **[!UICONTROL Alle speichern]** aus
+* Klicken Sie auf **[!UICONTROL Alle speichern]**
 * Mit `/apps/custom/components/comments/clientlib`Erstellen Sie als ausgewählten Knoten 3 Dateien:
 
    * **Name**: `css.txt`
@@ -163,7 +163,7 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
    * **Name**: customkommentssystem.js
 
 * Geben Sie &quot;customommentssystem.js&quot;als Inhalt von ein. `js.txt`
-* Wählen Sie **[!UICONTROL Alle speichern]** aus
+* Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -191,7 +191,7 @@ Geben Sie folgenden Text als Inhalt von ein `customcommentsystem.js`:
 })($CQ, _, Backbone, SCF);
 ```
 
-* Wählen Sie **[!UICONTROL Alle speichern]** aus
+* Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 ## App veröffentlichen {#publish-the-app}
 
@@ -202,7 +202,7 @@ Eine Möglichkeit ist, dies zu tun
 * Aus globaler Navigation
 
    * Auswählen **[!UICONTROL Tools > Bereitstellung > Replikation]**
-   * Wählen Sie nun eine der folgenden Optionen aus `Activate Tree`
+   * Auswählen `Activate Tree`
    * Satz `Start Path`: nach `/apps/custom`
    * Deaktivieren `Only Modified`
    * Auswählen `Activate`button

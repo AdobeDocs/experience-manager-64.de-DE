@@ -51,7 +51,7 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
        -->
       ```
 
-* Wählen Sie **Alle speichern** aus
+* Klicken Sie auf **Alle speichern**
 
 ## Benutzerdefinierte App replizieren {#replicate-custom-app}
 
@@ -62,7 +62,7 @@ Eine Möglichkeit ist, dies zu tun
 * Im Hauptmenü
 
    * Auswählen **[!UICONTROL Tools > Vorgänge > Replikation]**
-   * Wählen Sie nun eine der folgenden Optionen aus `Activate Tree`
+   * Auswählen `Activate Tree`
    * Satz `Start Path`: nach `/apps/custom`
    * Deaktivieren `Only Modified`
    * Auswählen `Activate` button
@@ -77,4 +77,4 @@ Eine Möglichkeit ist, dies zu tun
 
 Angehängt ist ein Paket der benutzerdefinierten Kommentaranwendung, die in diesem Tutorial erstellt wurde.
 
-[Datei laden](assets/sample-comment-extension-6-1-fp3.zip)
+[Datei abrufen](assets/sample-comment-extension-6-1-fp3.zip)

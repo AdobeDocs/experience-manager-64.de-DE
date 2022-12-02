@@ -452,7 +452,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
    * Unter Knoten /oak:index
    * Knoten ntBaseLucene auswählen
    * Klicken Sie auf **[!UICONTROL Kopieren]**
-   * Wählen Sie nun eine der folgenden Optionen aus `/oak:index`
+   * Auswählen `/oak:index`
    * Auswählen **[!UICONTROL Einfügen]**
    * Kopie von ntBaseLucene in ntBaseLucene-oauth umbenennen
 
@@ -470,7 +470,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
    * Ändern der Eigenschaften des Knotens oauthid-123xxxx
 
       * **[!UICONTROL name]**: oauthid-123xxxx
-   * Wählen Sie **[!UICONTROL Alle speichern]** aus.
+   * Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 
 **&amp;ast;** Für **name** oauthid-*123*, ersetzen *123* mit der Facebook ***App-ID*** oder Twitter ***Consumer (API) Key*** , der den Wert der **Client-ID** im [Adobe Granite OAuth Application and Provider](social-login.md#adobe-granite-oauth-application-and-provider)Konfiguration.

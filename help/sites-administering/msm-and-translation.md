@@ -13,13 +13,13 @@ exl-id: e8f83d21-b55e-4415-a581-8df1b71a84b1
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Website-Administration{#website-administration}
 
-Die folgenden Administrationstools sind für die Verwaltung von Websites und Seiten verfügbar:
+Die folgenden Administrations-Tools sind für die Verwaltung von Websites und Seiten verfügbar:
 
 * Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Website-Inhalte an mehreren Stellen und lässt gleichzeitig Varianten zu:
 
@@ -53,7 +53,6 @@ Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden
 >
 >* [MSM](/help/sites-administering/msm.md) verwaltet die Bereitstellung der übersetzten Inhalte von einem Blueprint (z. B. einem globalen Master) in die Live Copies (z. B. die lokalen Sites) innerhalb der Grenzen einer Sprache.
 >* Die AEM-Integrationsfunktionen zur [Übersetzung](/help/sites-administering/translation.md) verwalten kombiniert mit Übersetzungs-Management-Services von Drittanbietern die Sprachen und die Übersetzung der Inhalte in diese verschiedenen Sprachen.
-
 >
 >Bei noch komplexeren Nutzungsszenarien kann MSM auch über Sprachstämme hinweg eingesetzt werden.
 

@@ -72,14 +72,14 @@ Wenn es sich bei der Topologie um eine Veröffentlichungsfarm handelt, sind rele
 
 | MicroKernel | SITE CONTENTREPOSITORY | BENUTZERGENERIERTER CONTENTREPOSITORY | RESSOURCENANBIETER SPEICHERN | HÄUFIGES SPEICHER |
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
-| beliebig | JCR | MySQL | DSRP | Ja |
-| beliebig | JCR | MongoDB | MSRP | Ja |
-| beliebig | JCR | Adobe On-Demand-Speicher | ASRP | Ja |
+| Beliebig | JCR | MySQL | DSRP | Ja |
+| Beliebig | JCR | MongoDB | MSRP | Ja |
+| Beliebig | JCR | Adobe On-Demand-Speicher | ASRP | Ja |
 
 ### JSRP {#jsrp}
 
 
-| Bereitstellung | SITE CONTENTREPOSITORY | BENUTZERGENERIERTER CONTENTREPOSITORY | RESSOURCENANBIETER SPEICHERN | HÄUFIGES SPEICHER |
+| Implementierung | SITE CONTENTREPOSITORY | BENUTZERGENERIERTER CONTENTREPOSITORY | RESSOURCENANBIETER SPEICHERN | HÄUFIGES SPEICHER |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | TarMK-Farm (Standard) | JCR | JCR | JSRP | Nein |
 | Oak-Cluster | JCR | JCR | JSRP | Nur für Veröffentlichungsumgebung |

@@ -13,7 +13,7 @@ exl-id: 3e19aac2-49b1-48e1-85ce-36354cd8fd32
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -21,4 +21,4 @@ ht-degree: 80%
 
 Mit dem Dialogfeldkonvertierungs-Tool können Sie vorhandene Komponenten erweitern, für die nur ein Dialogfeld für die klassische Benutzeroberfläche auf Grundlage von ExtJS oder der Granite-Benutzeroberfläche und Coral 2 definiert ist. Das Tool verwendet das ursprüngliche Dialogfeld, um ein Dialogfeldduplikat zu erstellen, das für die Standardbenutzeroberfläche auf Grundlage der Granite-Benutzeroberfläche und Coral 3-basierten Benutzeroberfläche vorgesehen ist.
 
-Das Konvertierungs-Tool für Dialogfelder ist Teil der [Adobe-Modernisierungs-Tool-Suite.](modernization-tools.md) Weitere Informationen finden Sie in dieser Dokumentation .
+Das Dialogfeldkonvertierungs-Tool ist Teil der [Adobe-Modernisierungs-Tool-Suite.](modernization-tools.md) Weitere Informationen finden Sie in dieser Dokumentation.

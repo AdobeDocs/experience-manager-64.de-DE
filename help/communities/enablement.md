@@ -14,7 +14,7 @@ exl-id: 01cfc774-8ae1-48c0-a7e3-5836c4b39bff
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -118,4 +118,4 @@ Benutzer mit Pfad erstellen = /home/users/community
 
 ## Dispatcher {#dispatcher}
 
-Wann die Bereitstellung [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), damit die Aktivierungsfunktionen ordnungsgemäß funktionieren, muss die `clientheader`und `filter`-Abschnitte müssen geändert werden. Siehe [Konfigurieren des Dispatchers für Communities](dispatcher.md#enablement).
+Wann die Bereitstellung [AEM Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html), damit die Aktivierungsfunktionen ordnungsgemäß funktionieren, muss die `clientheader`und `filter`-Abschnitte müssen geändert werden. Siehe [Konfigurieren des Dispatchers für Communities](dispatcher.md#enablement).

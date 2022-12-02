@@ -45,7 +45,7 @@ Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müss
    * **Nachrichtenmuster:** Standardwert beibehalten
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Um beide Logger in das Feld **Logger** einzugeben, müssen Sie den Namen des ersten Loggers eingeben und dann ein weiteres Feld erstellen. Klicken Sie dazu die Schaltfläche „+“. Nun können Sie den Namen des zweiten Loggers eingeben.
+   Um beide Logger in das Feld **Logger** einzugeben, müssen Sie den Namen des ersten Loggers eingeben und dann ein weiteres Feld erstellen. Klicken Sie dazu auf die Schaltfläche „+“. Nun können Sie den Namen des zweiten Loggers eingeben.
 
 ## Beispielausgabe {#example-output}
 

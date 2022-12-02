@@ -13,7 +13,7 @@ exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '512'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Sie können die Suche auch aufrufen, indem Sie den Hotkey `/` (Schrägstrich) verwenden, wenn die Suchschiene sichtbar ist.
+>Sie können die Suche auch aufrufen, indem Sie den Hotkey `/` (Schrägstrich) verwenden, wenn die Suchleiste sichtbar ist.
 
 ## Suchen und Filtern {#search-and-filter}
 
@@ -60,7 +60,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![screen_shot_2018-03-23at101523](assets/screen_shot_2018-03-23at101523.png)
 
-1. Wenn Sie weitere Details anzeigen möchten, wählen Sie das Symbol für die Seitenleiste (oben links) aus, um den Seitenbereich **Filter und Optionen** zu öffnen.
+1. Wenn Sie einen Drilldown durchführen möchten, wählen Sie das Symbol für die Seitenleiste (oben links) aus, um den Seitenbereich **Filter und Optionen** zu öffnen.
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 

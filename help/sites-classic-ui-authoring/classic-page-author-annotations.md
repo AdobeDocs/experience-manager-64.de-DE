@@ -14,7 +14,7 @@ exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 >[!CAUTION]
 >
->Durch Löschen einer Ressource (z. B. eines Absatzes) werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind (unabhängig von ihrer Position auf der Seite als Ganzes).
+>Durch Löschen einer Ressource (z. B. eines Absatzes) werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind (unabhängig von ihrer Position auf der Seite als Ganzes).
 
 >[!NOTE]
 >
->Je nach Ihren Anforderungen können Sie auch einen Workflow entwickeln, um Benachrichtigungen zu senden, wenn Anmerkungen hinzugefügt, aktualisiert oder gelöscht werden.
+>Je nach Ihren Anforderungen können Sie auch einen Workflow erstellen, damit Benachrichtigungen gesendet werden, wenn Anmerkungen hinzugefügt, aktualisiert oder gelöscht werden.
 
 ## Anmerkungen {#annotations}
 
@@ -52,7 +52,7 @@ Sie können die Anmerkung an eine neue Position auf der Seite verschieben. Klick
 
 Anmerkungen (einschließlich zugehöriger Zeichnungen) sind auch in allen Kopier-, Ausschneide- oder Löschvorgängen enthalten, die in dem Absatz ausgeführt werden, mit dem sie verbunden sind. Bei Kopier- oder Ausschneidevorgängen wird die Position der Anmerkung (und der zugehörigen Zeichnungen) in Relation zu dem ursprünglichen Absatz beibehalten.
 
-Die Größe der Anmerkung kann auch erhöht oder verringert werden, indem Sie die untere rechte Ecke ziehen.
+Die Anmerkung kann auch durch Ziehen der Anmerkung in der unteren rechten Ecke vergrößert oder verkleinert werden.
 
 Aus Gründen der Nachverfolgung werden in der Fußzeile der Benutzer, der die Anmerkung erstellt hat, sowie das Datum angegeben. Nachfolgende Autoren können dieselbe Anmerkung bearbeiten (die Fußzeile wird dann aktualisiert) oder eine neue Anmerkung für denselben Absatz erstellen.
 
@@ -64,7 +64,7 @@ Wenn Sie die Anmerkung löschen möchten, müssen Sie den Vorgang bestätigen (d
 >
 >Anmerkungen sind nur im Bearbeitungsmodus der Autorenumgebung sichtbar. 
 >
->In einer Veröffentlichungsumgebung oder im Vorschau- oder Entwurfsmodus einer Autorenumgebung sind sie nicht sichtbar.
+>In einer Veröffentlichungsumgebung oder im Vorschau- oder Designmodus einer Autorenumgebung sind sie nicht sichtbar.
 
 >[!NOTE]
 >
@@ -79,7 +79,6 @@ Wenn Sie die Anmerkung löschen möchten, müssen Sie den Vorgang bestätigen (d
 >
 >* Wird das Symbol nicht angezeigt.
 >* Werden vorhandene Zeichnungen, die in anderen Browsern erstellt wurden, nicht angezeigt.
-
 >
 
 

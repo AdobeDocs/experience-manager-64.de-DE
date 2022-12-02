@@ -13,7 +13,7 @@ exl-id: 9eeb3203-e27a-4960-a4ec-58dd9dd098a2
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -156,7 +156,7 @@ Der Ebenenschalter ist ein Dropdown-Menü in der Symbolleiste (am oberen Rand de
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Komponenten-Symbolleiste {#component-toolbar}
+### Komponentensymbolleiste {#component-toolbar}
 
 Jede Instanz einer Komponente zeigt ihre Symbolleiste an, wenn Sie darauf klicken (entweder einmal oder mit einem langsamen Doppelklick). Die Symbolleiste enthält spezifische Aktionen (z. B. Kopieren, Einfügen, offene Bearbeitung), die für die Komponenteninstanz (bearbeitbar) auf der Seite verfügbar sind.
 
@@ -166,6 +166,6 @@ Je nach verfügbarem Platz werden die Komponenten-Symbolleisten in der oberen od
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zu den Konzepten der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Konzepte der AEM Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
+Weitere Informationen zu den Konzepten der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Weitere technische Informationen finden Sie unter [JS-Dokumentationssatz](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Touch-optimierten Seiteneditor.
+Weitere technische Informationen finden Sie im [JS-Dokumentationssatz](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Touch-optimierten Seiteneditor.

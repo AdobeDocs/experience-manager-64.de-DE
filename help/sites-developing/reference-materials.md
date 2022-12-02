@@ -14,7 +14,7 @@ exl-id: 0c80ee60-d2dd-49ad-a283-81fdb1fd201e
 source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 85%
+ht-degree: 96%
 
 ---
 
@@ -26,13 +26,13 @@ AEM stellt mehrere APIs für die Entwicklung von Anwendungen bereit. Die folgend
 
 * [API-Unterschiede](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/diff-previous/changes.html)
 
-* [API für die (Touch-optimierte) Granite-Benutzeroberfläche – Dokumentation](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+* [API für die (Touch-optimierte) Granite-Benutzeroberfläche – Dokumentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 * [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
-* [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
+* [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
 
-* [Javascript-API-Referenz zum UI-Test-Framework](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)
+* [Javascript-API-Referenz zum UI-Test-Framework](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)
 
 * [Javascript-API-Referenz zu Editor Core](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 

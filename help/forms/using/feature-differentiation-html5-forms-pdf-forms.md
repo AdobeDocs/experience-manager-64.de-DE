@@ -1,5 +1,5 @@
 ---
-title: 'Funktionsunterschiede zwischen HTML5- und PDF-Formularen '
+title: Funktionsunterschiede zwischen HTML5- und PDF-Formularen
 seo-title: Feature differentiation between HTML5 forms and PDF forms
 description: In den HTML5-Formularen und in PDF-Formularen unterstützte Funktionen
 seo-description: Feature supported in HTML5 forms and PDF forms

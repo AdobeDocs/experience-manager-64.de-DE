@@ -1,35 +1,36 @@
 ---
-title: Verwenden der intelligenten Bildbearbeitung mit dem clientseitigen Gerätepixelverhältnis
+title: Verwenden der intelligenten Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis (Device Pixel Ratio).
 description: Erfahren Sie, wie Sie das Client-seitige Gerätepixelverhältnis mit der intelligenten Bildbearbeitung in Adobe Experience Manager as a Cloud Service mit Dynamic Media verwenden.
 role: Admin,User
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+exl-id: 3c19a02f-9d97-4ed4-92ea-0b5861267219
+source-git-commit: 176e974bf99d9f70a5c1d075ee83eea9e9173221
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Über die intelligente Bildbearbeitung mit clientseitigem Geräte-Pixel-Verhältnis (DPR) {#client-side-dpr}
+# Informationen zur intelligenten Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis (Device Pixel Ratio, DPR). {#client-side-dpr}
 
 Die aktuelle Lösung für die intelligente Bildbearbeitung verwendet Benutzeragenten-Zeichenfolgen, um den verwendeten Gerätetyp (Desktop, Tablet, Mobilgerät usw.) zu bestimmen.
 
-Die Funktionen zur Geräteerkennung - die DPR auf der Basis von Benutzeragenten-Zeichenfolgen - sind häufig ungenau, insbesondere bei Apple-Geräten. Außerdem muss jedes Mal, wenn ein neues Gerät gestartet wird, es validiert werden.
+Die Funktionen zur Geräteerkennung – DPR auf Basis von Benutzeragenten-Zeichenfolgen – sind häufig ungenau, insbesondere bei Apple-Geräten. Außerdem muss jedes neue Gerät, das gestartet wird, validiert werden.
 
-Die clientseitige DSGVO liefert 100 % genaue Werte und funktioniert für jedes Gerät, unabhängig davon, ob es sich um Apple oder ein anderes neues Gerät handelt, das gestartet wurde.
+Client-seitiges DPR liefert 100 % genaue Werte und funktioniert für jedes Gerät, das gestartet wird, unabhängig davon, ob es sich um Apple oder ein anderes neues Gerät handelt.
 
-## Verwenden des clientseitigen DSGVO-Codes
+## Verwenden des Client-seitigen DPR-Codes.
 
-**Server-seitig gerenderte Apps**
+**Server-seitig gerenderte Apps.**
 
-1. Service Worker Init laden (`srvinit.js`), indem Sie das folgende Skript in den Kopfzeilenabschnitt Ihrer HTML-Seite einfügen:
+1. Laden Sie „service worker init“ (`srvinit.js`), indem Sie das folgende Skript in den Header-Abschnitt Ihrer HTML-Seite einfügen:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe empfiehlt, dieses Skript zu laden _before_ alle anderen Skripte, damit der Service Worker sofort mit der Initialisierung beginnt.
+   Adobe empfiehlt, dieses Skript _vor_ allen anderen Skripten zu laden, damit der Service Worker sofort mit der Initialisierung beginnt.
 
-1. Fügen Sie den folgenden DPR-Bild-Tag-Code oben im Hauptteil Ihrer HTML-Seite ein:
+1. Fügen Sie den folgenden DPR-Bild-Tag-Code oben im Body-Abschnitt Ihrer HTML-Seite ein:
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -40,32 +41,33 @@ Die clientseitige DSGVO liefert 100 % genaue Werte und funktioniert für jedes G
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Sie müssen diesen DPR-Bild-Tag-Code einbeziehen _before_ alle statischen Bilder auf Ihrer HTML-Seite.
+   Sie müssen diesen DPR-Bild-Tag-Code _vor_ allen statischen Bildern auf Ihrer HTML-Seite einfügen.
 
-**Clientseitig gerenderte Apps**
+**Client-seitig gerenderte Apps.**
 
-1. Schließen Sie die folgenden DSGVO-Skripte in den Kopfzeilenabschnitt Ihrer HTML-Seite ein:
+1. Schließen Sie die folgenden DPR-Skripte in den Header-Abschnitt Ihrer HTML-Seite ein:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    <script type="text/javascript" src="dprImageInjection.js"></script>
    ```
 
-   Sie können beide DSGVO-Skripte zu einem zusammenfassen, um mehrere Netzwerkanforderungen zu vermeiden.
+   Sie können die beiden DPR-Skripte zusammenfassen, um mehrere Netzwerkanforderungen zu vermeiden.
 
-   Adobe empfiehlt, diese Skripte zu laden _before_ alle anderen Skripte auf der HTML-Seite.
-Adobe empfiehlt auch, dass Sie Ihre App unter dem HTML-Tag &quot;diff&quot;und nicht unter einem Body-Element Bootstrap haben. Der Grund dafür ist, dass `dprImageInjection.js` injiziert das Bild-Tag dynamisch am Anfang des Textabschnitts auf der HTML-Seite.
+   Adobe empfiehlt, diese Skripte _vor_ allen anderen Skripten auf der HTML-Seite zu laden.
+Adobe empfiehlt auch, Ihre App unter dem HTML-Tag „diff“ und nicht unter einem Body-Element zu laden. Der Grund dafür ist, dass `dprImageInjection.js` das Bild-Tag dynamisch am Anfang des Body-Abschnitts auf der HTML-Seite einfügt.
 
-## Herunterladen von JavaScript-Dateien {#client-side-dpr-script}
+## Herunterladen von JavaScript-Dateien. {#client-side-dpr-script}
 
-Die folgenden JavaScript-Dateien im Download werden nur als Beispielreferenz bereitgestellt. Wenn Sie diese Dateien auf HTML-Seiten verwenden möchten, stellen Sie sicher, dass Sie den Code jeder Datei entsprechend Ihren eigenen Anforderungen bearbeiten.
+Die folgenden JavaScript-Dateien im Download werden nur als Beispielreferenz bereitgestellt. Wenn Sie diese Dateien auf HTML-Seiten verwenden möchten, stellen Sie sicher, dass Sie den Code jeder Datei Ihren eigenen Anforderungen entsprechend bearbeiten.
 
 * `dprImageInjection.js`
 * `srvinit.js`
 * `srvwrk.js`
 
-[Herunterladen von JavaScript-Dateien](/help/assets/assets-dm/aem-dynamicmedia-smartimaging-dpr.zip)
+[Herunterladen von JavaScript-Dateien.](/help/assets/assets-dm/aem-dynamicmedia-smartimaging-dpr.zip)
 
 >[!MORELIKETHIS]
 >
 >* [Intelligente Bildbearbeitung](/help/assets/imaging-faq.md)
+

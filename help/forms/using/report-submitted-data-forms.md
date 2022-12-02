@@ -1,7 +1,7 @@
 ---
 title: APIs zum Arbeiten mit gesendeten Formularen in Forms Portal
 seo-title: APIs to work with submitted forms on forms portal
-description: 'AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Formulardaten abfragen und Aktionen für sie durchführen können. '
+description: AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Formulardaten abfragen und Aktionen für sie durchführen können.
 seo-description: AEM Forms provides APIs that you can use to query and take actions on submitted forms data in forms portal.
 uuid: c47c8392-e5a9-4c40-b65e-4a7f379a6b45
 content-type: reference
@@ -13,7 +13,7 @@ exl-id: 6d860fe3-6884-4141-ad3a-5315c514c843
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM Forms bietet APIs, mit deren Hilfe Sie über das Formularportal gesendete Fo
 
 >[!NOTE]
 >
->Benutzer, die die APIs aufrufen, müssen zur Reviewer-Gruppe hinzugefügt werden, wie hier beschrieben: [Verknüpfen von Reviewer mit einem Formular für die Übermittlung](/help/forms/using/adding-reviewers-form.md).
+>Benutzer, die die APIs aufrufen sollen, müssen der Reviewer-Gruppe hinzugefügt werden, wie unter [Zuordnen von Übermittlungsprüfern zu einem Formular](/help/forms/using/adding-reviewers-form.md) beschrieben.
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -162,7 +162,7 @@ https://[host:[port]/content/forms/portal/submission.review.json?func=addComment
 
 ## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
-Gibt  alle für die angegebene Sendeinstanz veröffentlichten Kommentare zurück.
+Gibt alle für die angegebene Sendeinstanz veröffentlichten Kommentare zurück.
 
 ### URL-Parameter {#url-parameters-3}
 

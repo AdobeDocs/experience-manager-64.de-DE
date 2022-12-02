@@ -13,7 +13,7 @@ exl-id: 9b8c3d1c-a9b1-4dde-9044-46c8f2b22c22
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -47,7 +47,7 @@ Im **[!UICONTROL Eigenschaften]** Registerkarte für die neue `clientlibs` Knote
 Hinweis: dem Kategoriewert &quot;apps&quot;voranstellen. ist eine Konvention, die die &#39;owning application&#39; als im Ordner /apps, nicht /libs identifiziert.  WICHTIG: Platzhalter hinzufügen `js.txt` und `css.txt` Dateien. (Es handelt sich nicht offiziell um einen cq:ClientLibraryFolder ohne diese Ordner.)
 
 
-1. Rechtsklick **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Klicken Sie mit der rechten Maustaste auf **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Auswählen **[!UICONTROL Datei erstellen...]**
 1. Eingabe **[!UICONTROL Name]**: `css.txt`
 
@@ -129,7 +129,7 @@ Die Include-Anweisung gehört in die `<head>` Abschnitt `<html>` Skript. Die Sta
 
 1. Verwenden **[!UICONTROL CRXDE Lite]** auswählen **`/libs/foundation/components/page/headlibs.jsp`**
 1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Kopieren]** (oder wählen Sie in der Symbolleiste Kopieren aus)
-1. Wählen Sie nun eine der folgenden Optionen aus **`/apps/an-scf-sandbox/components/playpage`**
+1. Auswählen **`/apps/an-scf-sandbox/components/playpage`**
 1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Einfügen]** (oder wählen Sie in der Symbolleiste Einfügen aus)
 1. Doppelklicken Sie auf **`headlibs.jsp`** öffnen
 1. Hängen Sie die folgende Zeile an das Ende der Datei an
@@ -172,7 +172,7 @@ So erstellen Sie ein Paket:
    * Gruppe: &lt;leave as=&quot;&quot; default=&quot;&quot;>
    * Klicken Sie auf **[!UICONTROL OK]**
 
-* Klicken Sie auf **[!UICONTROL Bearbeiten]**.
+* Klicken Sie auf **[!UICONTROL Bearbeiten]**
 
    * Auswählen **[!UICONTROL Filter]** tab
 
@@ -188,6 +188,6 @@ So erstellen Sie ein Paket:
    * Klicken Sie auf **[!UICONTROL Speichern]**.
 
 
-* Klicken Sie auf **[!UICONTROL Erstellen]**
+* Klicken Sie auf **[!UICONTROL Aufbauen]**
 
 Jetzt können Sie **[!UICONTROL Download]** , um es auf der Festplatte zu speichern und **[!UICONTROL Paket hochladen]** und wählen Sie **[!UICONTROL Mehr > Replizieren]** , um die Sandbox an eine localhost-Veröffentlichungsinstanz zu pushen, um den Bereich Ihrer Sandbox zu erweitern.

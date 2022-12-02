@@ -55,7 +55,7 @@ Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Ad
 
 ## Verbesserte Personalisierung durch Target {#enhanced-personalization-by-target}
 
-AEM Sites bietet eine optionale Integration mit verbesserter Personalisierung durch Target, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
+AEM Sites bietet eine optionale Integration mit verbesserter Personalisierung durch Target, das Funktionen innerhalb des On-Demand-Service von Adobe Target verwendet.
 
 Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=de).
 

@@ -13,7 +13,7 @@ exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 80%
+ht-degree: 82%
 
 ---
 
@@ -40,24 +40,24 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 ### Komponenten- und Vorlagenentwicklung {#component-amp-template-development}
 
 * Projekt-Archetype 13+, siehe [Versionshinweise von GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases).
-* HTL Version 1.3.1, siehe [Versionshinweise von GitHub](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1).
-* Kernkomponenten 2.0.4+, siehe [Versionshinweise von GitHub](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
+* HTL Version 1.3.1, siehe [Versionshinweise zu GitHub](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1).
+* Kernkomponenten 2.0.4+, siehe [Versionshinweise zu Github](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
 * Stilsystem
 
    * Neues Konzept, um Komponenten CSS-Klassen zuzuweisen und es den Benutzern im Seiten-Editor zu ermöglichen, über die Benutzeroberfläche eine Auswahl aus einem Teil der Stile zu treffen
    * Neue Möglichkeit, den um die Komponente gerenderten HTML-Elementnamen zu definieren, z. B. „&lt;main>“, „&lt;aside>“
 
 * Rastersystem für Layout-Container, siehe [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
-* Vorlagen-Editor und Richtlinien
+* Vorlagen-Editor und Richtlinien:
 
    * Richtlinien unterstützen nun Stilsystemkonfigurationen pro Komponente, pro Container und pro Vorlage.
    * Verbesserte Unterstützung für das Definieren von Layouts in Vorlagen für bearbeitbare Komponenten
 
-* Referenz-Website We.Retail 3.0, siehe [Versionshinweise von GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
+* Referenz-Website We.Retail 3.0, siehe [Versionshinweise zu GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
 
 >[!CAUTION]
 >
->AEM enthält Version 1.12.4 der jQuery-Bibliothek, um eine maximale Kompatibilität mit vorhandenem benutzerdefiniertem Code zu gewährleisten. Adobe hat Änderungen vorgenommen, um bekannte Sicherheitsprobleme zu beheben.
+>AEM umfasst Version 1.12.4 der jQuery-Bibliothek, um für größtmögliche Kompatibilität mit vorhandenem benutzerdefinierten Code zu sorgen. Adobe hat Änderungen vorgenommen, um bekannte Sicherheitsprobleme zu beheben.
 
 ### Inhaltsfragmente und Editor {#content-fragments-amp-editor}
 
@@ -77,7 +77,7 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
    * Neue Inhaltsfragment-Komponente als Teil der Kernkomponenten. [Siehe Code auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment)
    * Unterstützung von Content Services mit JSON-Ausgabe über Sling Model Exporter
 
-### Experience Fragments {#experience-fragments}
+### Experience Fragments  {#experience-fragments}
 
 * Erlebnisfragment-Bausteine eingeführt, um die Wiederverwendung von Inhalten zwischen den Varianten von Erlebnisfragmenten zu vereinfachen, indem Komponenten gruppiert und einfache Verweise innerhalb von Varianten ermöglicht werden.
 * Möglichkeit zum Hinzufügen von Erlebnisfragmenten zu Übersetzungsprojekten über die Verweisleiste hinzugefügt.
@@ -103,7 +103,7 @@ Im Folgenden sind die mit AEM Sites 6.4 aufgeführten Verbesserungen aufgeführt
 * Aktualisierungen der intelligenten Übersetzung erkennen jetzt neue Seiten, die zu einem Übergeordneten Zweig der Sprache hinzugefügt wurden.
 * Übersetzungsstatusberichte in der Sites-Admin-Listenansicht eingeführt.
 
-### Verwaltung mehrerer Websites {#multi-site-management-msm}
+### Multi-Site-Management (MSM) {#multi-site-management-msm}
 
 * Verbesserte Skalierbarkeit der Verwaltung mehrerer Websites durch Verwendung eines Oak-basierten Index statt des speicherinternen Index (LiveCopyIndex)
 

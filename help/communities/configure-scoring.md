@@ -161,7 +161,7 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
-         ( `sling:resourceType = social/forum/components/hbs/forum`)
+         (`sling:resourceType = social/forum/components/hbs/forum`)
    * Eigenschaft hinzufügen, um Badge anzuzeigen
 
       * `allowBadges = true`
@@ -193,7 +193,7 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
 
       * `/content/community-components/en/forum/jcr:content/content/forum`
 
-         ( `sling:resourceType = social/forum/components/hbs/forum`)
+         (`sling:resourceType = social/forum/components/hbs/forum`)
    * Eigenschaft hinzufügen, um Badge anzuzeigen
 
       * `allowBadges = true`
@@ -222,7 +222,6 @@ Da ein Benutzer zwei Bronze-Abzeichen gesammelt und ein Moderator-Abzeichen erha
    >  /etc/community/scoring/rules/site2/forums-scoring
 >
 >* Erstellen von Unique Badge-Bildern für verschiedene AEM Sites
-
 >
 
 

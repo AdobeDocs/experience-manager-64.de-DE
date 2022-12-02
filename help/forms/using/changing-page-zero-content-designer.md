@@ -16,7 +16,7 @@ ht-degree: 87%
 
 ---
 
-# Inhalt auf Seite Null in Designer ändern {#changing-page-zero-content-in-designer}
+# Ändern des Inhalts auf Seite null im Designer {#changing-page-zero-content-in-designer}
 
 Der Inhalt von Seite Null wird standardmäßig angezeigt, wenn ein Nicht-Adobe PDF-Viewer, z. B. der standardmäßige PDF-Viewer in Chrome oder Firefox, den Inhalt des PDF/XFA-Formulars nicht lesen kann. Nachfolgend finden Sie die standardmäßige Meldung auf Seite Null.
 

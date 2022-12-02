@@ -1,7 +1,7 @@
 ---
 title: Seitenvorlagen für mobile Apps
 seo-title: Page Templates for Mobile Apps
-description: 'Auf dieser Seite erfahren Sie mehr über Seitenvorlagen für mobile Apps. '
+description: Auf dieser Seite erfahren Sie mehr über Seitenvorlagen für mobile Apps.
 seo-description: Follow this page to learn about page templates for mobile apps.
 uuid: ef469796-10f5-44f4-a5c7-25025ca192b0
 contentOwner: User
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 ## Seitenvorlagen für mobile Apps {#page-templates-for-mobile-apps-1}
 

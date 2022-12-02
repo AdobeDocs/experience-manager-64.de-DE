@@ -12,7 +12,7 @@ role: User
 source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +40,7 @@ Siehe auch [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwe
    >
    >Das ausgewählte Asset *und* die ausgewählte Bildvorgabe oder Viewer-Vorgabe müssen veröffentlicht werden, um die Schaltfläche **[!UICONTROL URL]** oder **[!UICONTROL RESS]** verfügbar zu machen.
    >
-   >Für den Hybridmodus von Dynamic Media müssen Sie Bildvorgaben veröffentlichen. Im Modus Dynamic Media - Scene7 werden Bildvorgaben automatisch veröffentlicht.
+   >Wenn Sie Dynamic Media im Hybridmodus ausführen, müssen Sie Bildvorgaben manuell veröffentlichen. Im Scene7-Modus von Dynamic Media werden Bildvorgaben automatisch veröffentlicht.
 
 1. Tippen Sie auf **[!UICONTROL RESS]**.
 

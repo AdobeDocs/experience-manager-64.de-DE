@@ -1,7 +1,7 @@
 ---
 title: Replizieren mit MSSL
 seo-title: Replicating Using Mutual SSL
-description: 'Erfahren Sie, wie Sie AEM so konfigurieren, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet. Bei MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Veröffentlichungsinstanz Zertifikate für die gegenseitige Authentifizierung. '
+description: Erfahren Sie, wie Sie AEM so konfigurieren, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet. Bei MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Veröffentlichungsinstanz Zertifikate für die gegenseitige Authentifizierung.
 seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: 8eba690a-797a-4ba9-b178-11f8c011239f
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Sie müssen festlegen, mit welchem Benutzerkonto die Replikation ausgeführt wir
 Sie benötigen einen privaten Schlüssel und ein öffentliches Zertifikat für die Autoren- und Veröffentlichungsinstanz:
 
 * Private Schlüssel müssen im PKCS#12- oder JKS-Format vorliegen.
-* Zertifikate müssen im PKCS#12- oder JKS-Format enthalten sein. Zertifikate im CER-Format können ebenfalls zu Granite Truststore hinzugefügt werden.
+* Zertifikate müssen im PKCS#12- oder JKS-Format vorliegen. Zertifikate im CER-Format können ebenfalls zu Granite Truststore hinzugefügt werden.
 * Zertifikate können von einer anerkannten Zertifizierungsstelle (Certification Authority, CA) selbst signiert oder signiert werden.
 
 ### JKS-Format {#jks-format}
@@ -217,10 +217,10 @@ In der folgenden Tabelle sind die OSGi-Eigenschaften aufgeführt, die Sie konfig
 
 | Eigenschaftsname in der Web-Konsole | OSGi-Eigenschaftsname | Wert |
 |---|---|---|
-| HTTPS aktivieren | org.apache.felix.https.enable | Ja |
-| Aktivieren Sie HTTPS zur Verwendung von Granite KeyStore. | org.apache.felix.https.use.granite.keystore | Ja |
-| HTTPS-Port | org.osgi.service.http.port.secure | 8443 (oder anderer gewünschter Anschluss) |
-| Client-Zertifikat | org.apache.felix.https.clientcertificate | &quot;Client-Zertifikat gewünscht&quot; |
+| Aktivieren von HTTPS | org.apache.felix.https.enable | true |
+| Aktivieren von HTTPS zur Verwendung von Granite KeyStore | org.apache.felix.https.use.granite.keystore | true |
+| HTTPS-Port | org.osgi.service.http.port.secure | 8443 (oder anderer gewünschter Port) |
+| Client-Zertifikat | org.apache.felix.https.clientcertificate | „Client-Zertifikat gewünscht“ |
 
 ## Konfigurieren des Replikationsagenten auf der Autoreninstanz {#configure-the-replication-agent-on-author}
 

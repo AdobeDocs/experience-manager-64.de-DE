@@ -13,7 +13,7 @@ exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '634'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,6 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 >
 >* [Anmerkungen zu Assets](/help/assets/managing-assets-touch-ui.md#annotating)
 >* [Kommentieren von Video-Assets](/help/assets/managing-video-assets.md#annotating-video-assets)
-
 >
 
 

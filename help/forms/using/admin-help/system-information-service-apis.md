@@ -13,7 +13,7 @@ exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
 source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
 source-wordcount: '338'
-ht-degree: 70%
+ht-degree: 73%
 
 ---
 
@@ -48,7 +48,7 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfo.config</p></td> 
    <td><p>https://[Server]:[Port]/rest/services/ SystemInfo.config</p></td> 
-   <td><p>Ruft den gesamten Inhalt der Datei „config.xml" ab. </p></td> 
+   <td><p>Ruft den gesamten Inhalt der Datei „config.xml“ ab. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.services</p></td> 

@@ -158,5 +158,5 @@ Die Workflow-Abladung wird mithilfe eines externen Workflows auf der primären I
 
 Dieses Dokument konzentriert sich auf die Asset-Abladung. Weitere Informationen zum Thema Abladung finden Sie u. a. in den folgenden Dokumenten:
 
-* [Abladen von Aufträgen](/help/sites-deploying/offloading.md)
+* [Abladung von Aufträgen](/help/sites-deploying/offloading.md)
 * [Offloader für Assets-Workflows](/help/sites-administering/workflow-offloader.md)

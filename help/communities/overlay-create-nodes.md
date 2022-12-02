@@ -1,7 +1,7 @@
 ---
 title: Erstellen von Knoten
 seo-title: Create Nodes
-description: 'Überlagern des Kommentarsystems '
+description: Überlagern des Kommentarsystems
 seo-description: Overlay the comments system
 uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: fc044a4e-0037-405f-8c26-b388c6a98733
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 11%
+ht-degree: 15%
 
 ---
 
@@ -52,7 +52,7 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
       * Titel eingeben: `comments`
       * Titel eingeben: `Comments`
       * Beschreibung eingeben: `List of comments without showing avatars`
-      * Super Type: `social/commons/components/comments`
+      * Obertyp: `social/commons/components/comments`
       * Gruppe eingeben: `Communities`
       * Klicken **[!UICONTROL Nächste]** bis **[!UICONTROL OK]**
 1. Auswählen `comments` Knoten
@@ -62,17 +62,17 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
       * Titel eingeben: `comment`
       * Titel eingeben: `Comment`
       * Beschreibung eingeben: `A comment instance without avatars`
-      * Super Type: `social/commons/components/comments/comment`
+      * Obertyp: `social/commons/components/comments/comment`
       * Gruppe eingeben: `.hidden`
       * Klicken **[!UICONTROL Nächste]** bis **[!UICONTROL OK]**
-   * Wählen Sie **[!UICONTROL Alle speichern]** aus
+   * Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. Standard löschen `comments.jsp`
    * Knoten auswählen `/apps/social/commons/components/hbs/comments/comments.jsp`
    * Wählen Sie **[!UICONTROL Löschen]** aus
 1. Löschen Sie die standardmäßige Datei comment.jsp .
-   * Knoten auswählen `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
+   * Wählen Sie den Knoten  aus.`/apps/social/commons/components/hbs/comments/comment/comment.jsp`
    * Wählen Sie **[!UICONTROL Löschen]** aus
-   * Wählen Sie **[!UICONTROL Alle speichern]** aus
+   * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 >[!NOTE]
 >
@@ -80,7 +80,6 @@ Einige Knoten im Pfad sind Ordner und einige sind Komponenten.
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
 >
 
 
@@ -94,6 +93,6 @@ Die Überlagerung selbst `Type`(Eigenschaft `sling:resourceType`) muss eine rela
    * Typ: `String`
    * Wert: `social/commons/components/hbs/comments/comment`
 1. Grün auswählen `[+] Add`
-   * Wählen Sie **[!UICONTROL Alle speichern]** aus
+   * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
 ![chlimage_1-4](assets/chlimage_1-4.png)

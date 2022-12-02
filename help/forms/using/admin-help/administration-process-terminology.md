@@ -13,7 +13,7 @@ exl-id: 86f8d51c-a479-4940-b3c2-4b54a67f7450
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
@@ -22,10 +22,10 @@ ht-degree: 85%
 Damit Sie den Arbeitsablauf für Formulare effektiv verwalten können, müssen Sie die folgenden Begriffe und die Hierarchie der Elemente verstehen:
 
 * *Prozesskategorien* organisieren Prozesse in logischen Gruppen.
-* *Prozesse* stellen die Geschäftsprozesse dar, die automatisiert sind.  Für jeden implementierten Geschäftsprozess muss mindestens ein Prozess vorhanden sein.
+* *Prozesse* stellen die Geschäftsprozesse dar, die automatisiert sind. Für jeden implementierten Geschäftsprozess muss mindestens ein Prozess vorhanden sein.
 * Ein *Prozessdiagramm* ist die visuelle Darstellung des Geschäftsprozesses, der automatisiert wird.
 * Eine *Prozessinstanz* ist ein Prozess, der von einem Benutzer initiiert wurde (z. B. das Abschließen und Senden eines Formulars) oder ein automatisierter Schritt. Es kann von einem Prozess mehrere Instanzen geben.
 * Ein *Vorgang *ist ein Schritt eines Prozessdiagramms, der in Workbench durch ein Symbol im Prozessdiagramm dargestellt wird.
 * Eine *Aufgabe* ist eine Aktion, die einem Benutzer zugeordnet ist. Wenn die Aufgabe ausgeführt und der Vorgang durchgeführt wird, weist der User-Dienst einem Benutzer eine Aufgabe zu.
 
-Weitere Informationen zu diesen Begriffen finden Sie in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63).
+Weitere Informationen zu diesen Begriffen finden Sie in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).

@@ -13,7 +13,7 @@ exl-id: 593a588c-02f1-4b48-ac57-9348d6652bcc
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -26,12 +26,12 @@ Adobe Experience Manager-Apps stellen die Möglichkeit zur Over-the-Air(OTA)-Akt
 So konfigurieren Sie den Referrer-Filterdienst:
 
 * Öffnen Sie die Apache Felix-Konsole (**Konfigurationen**) bei:
-* https://&lt;server>:&lt;port_number>/system/console/configMgr
+* https://&lt;Server>:&lt;Port-Nummer>/system/console/configMgr
 * Melden Sie sich als admin an.
-* Im **Konfigurationen** auswählen: *Apache Sling Referrer Filter*
-* Aktivieren Sie das Feld Leere erlauben , um leere/fehlende Referrer-Header zuzulassen.
+* Wählen Sie im Menü **Configurations**: *Apache Sling Referrer Filter*.
+* Aktivieren Sie das Feld „Leeres Feld zulassen“, um leere/fehlende Referrer-Header zuzulassen.
 * Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-Siehe [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md) und [Sicherheits-Checkliste - Probleme mit Site-übergreifenden Anforderungsfälschungen](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) für weitere Informationen.
+Weitere Informationen erhalten Sie unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md) und [Sicherheitsprüfliste – Probleme mit Site-übergreifenden Anforderungsfälschungen](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).

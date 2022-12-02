@@ -13,7 +13,7 @@ exl-id: 210cb5f2-cc5c-4664-b324-5c6f70f7b593
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -23,17 +23,17 @@ Dieser Artikel erläutert, wie Sie AEM Forms Workspace debuggen, indem Sie die P
 
 ## AEM Forms Workspace-Paket kann nicht installiert werden {#unable-to-install-aem-forms-workspace-package}
 
-Nach der Installation des Patches öffnen Sie die AEM Forms Workspace-App. Wenn der Fehler &quot;Keine Ressource gefunden&quot;auftritt, öffnen Sie den CRX Package Manager und installieren Sie die `adobe-lc-workspace-pkg-<version>.zip` Paket.
+Nach der Installation des Patches öffnen Sie die AEM Forms Workspace-App. Falls ein Fehler vom Typ „Keine Resource gefunden“ auftritt, öffnen Sie CRX Package Manager und installieren Sie das Paket `adobe-lc-workspace-pkg-<version>.zip` erneut.
 
-Wenn beim Installieren des Pakets ein Fehler auftritt `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`führen Sie die folgenden Schritte aus:
+Wenn während der Installation des Pakets der Fehler `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed` auftritt, führen Sie folgende Schritte aus:
 
-1. Melden Sie sich bei CRX DE Lite an. Die Standard-URL lautet `https://[localhost]:[port]/lc/crx/de/index.jsp`
+1. Melden Sie sich bei CRX DE Lite an. Die Standard-URL ist `https://[localhost]:[port]/lc/crx/de/index.jsp`
 1. Löschen Sie den folgenden Knoten:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
 1. Navigieren Sie zu Package Manager. Die Standardeinstellung ist `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
-1. Suchen und installieren Sie die `adobe-lc-workspace-pkg-[version].zip` Paket.
+1. Suchen Sie das Paket `adobe-lc-workspace-pkg-[version].zip` und installieren Sie es.
 1. Starten Sie den Anwendungsserver neu.
 
 ## Protokollierung für AEM Forms Workspace {#aem-forms-workspace-nbsp-logging}
@@ -42,9 +42,9 @@ Sie können Protokolle auf verschiedenen Ebenen generieren, um eine optimale Feh
 
 In AEM Forms Workspace:
 
-* Um die Protokollinformationen zu einer bestimmten Komponentendatei zu erhalten, hängen Sie `/log/<ComponentFile>/<LogLevel>` in die URL ein und drücken Sie die `Enter`. Alle Protokollinformationen für die Komponentendatei auf der angegebenen Protokollebene werden in der Konsole ausgegeben.
+* Um die Protokollinformationen zu einer bestimmten Komponentendatei zu erhalten, hängen Sie `/log/<ComponentFile>/<LogLevel>` an die URL an und drücken Sie `Enter`. Alle Protokollinformationen für die Komponentendatei auf der angegebenen Protokollebene werden in der Konsole ausgegeben.
 
-* Um Protokollinformationen zu allen Komponentendateien zu erhalten, hängen Sie Folgendes an: `/log/all/trace` in die URL ein und drücken Sie die `Enter`.
+* Um Protokollinformationen zu allen Komponentendateien zu erhalten, hängen Sie `/log/all/trace` an die URL an und drücken Sie `Enter`.
 
 * Protokollformat: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -155,11 +155,11 @@ In AEM Forms Workspace:
 
 Skripten und Stile können in verschiedenen Browsern debuggt werden.
 
-* **Debugging in IE**: Informationen zum Debugging von AEM Forms Workspace in IE finden Sie unter: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Debugging in IE**: Informationen zum Debugging von AEM Forms Workspace in IE finden Sie unter [https://msdn.microsoft.com/de-de/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/de-de/library/hh772704(v=vs.85).aspx).
 
-* **Debugging in Chrome**: Um den Debugger in Chrome zu öffnen, verwenden Sie den Tastaturbefehl: Strg+Umschalt+I. Weitere Informationen finden Sie unter: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Debugging in Chrome**: Um den Debugger in Chrome zu öffnen, verwenden Sie den Tastaturbefehl Strg+Umschalt+I. Für weitere Informationen, siehe [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
-* **Debugging in Firefox**: Zum Debugging von Skripten und Stilen in Firefox stehen mehrere Add-ons zur Verfügung. Firebug ist beispielsweise eines dieser Debugging-Hilfsprogramme ([https://getfirebug.com](https://getfirebug.com)).
+* **Debugging in Firefox**: Zum Debugging von Skripten und Stilen in Firefox stehen mehrere Add-ons zur Verfügung. Zum Beispiel ist Firebug ein solches Debugging-Programm ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Häufig gestellte Fragen {#faqs}
 
@@ -191,6 +191,6 @@ Skripten und Stile können in verschiedenen Browsern debuggt werden.
 
    Melden Sie sich von der anderen Forms-Anwendung ab und melden Sie sich dann bei Workspace an.
 
-1. Bei HTML-Formularen, die Prozesseigenschaften im Design verwenden, wird bei der Wiedergabe in AEM Forms Workspace die Schaltfläche &quot;Senden“ innerhalb des Formulars angezeigt.
+1. Bei HTML-Formularen, die Prozesseigenschaften im Design verwenden, wird bei der Wiedergabe in AEM Forms Workspace die Schaltfläche „Senden“ innerhalb des Formulars angezeigt.
 
    Wenn Sie ein Formular mit Prozesseigenschaften entwerfen, wird die Schaltfläche „Senden“ innerhalb des Formulars eingefügt. Bei der Wiedergabe als PDF in AEM Forms Workspace ist die Schaltfläche „Senden“ für den Endbenutzer nicht sichtbar. Wird in AEM Forms Workspace jedoch als HTML-Formular wiedergegeben, ist die Schaltfläche „Senden“ für den Endbenutzer sichtbar. Durch Klicken auf die Schaltfläche „Senden“ im Formular wird keine Aktion ausgelöst. Durch Klicken auf die Schaltfläche „Senden“ unten im AEM Forms Workspace, außerhalb des Formulars, wird die Aufgabe abgeschlossen.

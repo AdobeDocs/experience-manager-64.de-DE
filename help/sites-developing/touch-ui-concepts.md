@@ -13,7 +13,7 @@ exl-id: a89cf964-cc9f-46d7-afd8-150d48948513
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2197'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -77,7 +77,7 @@ Die Grundprinzipien der Touch-optimierten Benutzeroberfläche lauten:
 * Einbettung von Tests
 * Bottom-Up-Design zur Sicherstellung, dass diese Prinzipien auf alle Elemente und Komponenten angewendet werden
 
-Einen weiteren Überblick über die Struktur der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Struktur der AEM Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
+Einen weiteren Überblick über die Struktur der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## AEM-Technologiestapel {#aem-technology-stack}
 
@@ -186,19 +186,19 @@ Die Unterschiede zwischen der Granite-Benutzeroberfläche und ExtJS (für die kl
   </tr> 
   <tr> 
    <td>Remote-Prozessaufruf<br /> </td> 
-   <td>Staatliche Übergänge</td> 
+   <td>Statusübergänge</td> 
   </tr> 
   <tr> 
    <td>Datenübertragungsobjekte</td> 
    <td>Hypermedia</td> 
   </tr> 
   <tr> 
-   <td>Client kennt interne Server</td> 
-   <td>Der Kunde kennt keine Internalen</td> 
+   <td>Client kennt die Server-Interna</td> 
+   <td>Der Client kennt keine Interna</td> 
   </tr> 
   <tr> 
-   <td>"FAT-Client"</td> 
-   <td>"Thin client"</td> 
+   <td>„FAT-Client“</td> 
+   <td>„Thin-Client“</td> 
   </tr> 
   <tr> 
    <td>Spezialisierte Client-Bibliotheken</td> 
@@ -239,7 +239,7 @@ Diese Bibliothek mit Foundation-Komponenten kann von anderen Bibliotheken verwen
 
 Die folgende Liste enthält eine nützliche Übersicht über ExtJS-xtype- und -Knotentypen mit den entsprechenden Granite-Benutzeroberflächen-Ressourcentypen für die Aktualisierung von ExtJS-Code zur Verwendung der Granite-Benutzeroberfläche.
 
-| **ExtJS xtype** | **Granite-UI-Ressourcentyp** |
+| **ExtJS xtype** | **Ressourcentyp der Granite-Benutzeroberfläche** |
 |---|---|
 | `button` | `granite/ui/components/foundation/form/button` |
 | `checkbox` | `granite/ui/components/foundation/form/checkbox` |
@@ -258,7 +258,7 @@ Die folgende Liste enthält eine nützliche Übersicht über ExtJS-xtype- und -K
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
-| **Knotentyp** | **Granite-UI-Ressourcentyp** |
+| **Knotentyp** | **Ressourcentyp der Granite-Benutzeroberfläche** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
 | `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
@@ -297,14 +297,12 @@ Die Coral-Benutzeroberfläche (CUI) ist eine Implementierung des visuellen Stils
 >* Begleitmaterial, Anzeigen und Präsentationen von Adobe
 >* Benutzeroberfläche von Anwendungen unter der Marke Adobe (Schriftart darf nicht frei für andere Zwecke verfügbar sein)
 >* Geringe Anpassungen
-
 >
 >Die Nutzung der Coral-Benutzeroberfläche sollte in folgenden Fällen vermieden werden:
 >
 >* Dokumente und andere Elemente, die sich nicht auf Adobe beziehen
 >* Umgebungen für die Inhaltserstellung (in denen die Ausgangselemente von Dritten generiert werden)
 >* Anwendungen/Komponenten/Webseiten, die nicht eindeutig mit Adobe verknüpft sind
-
 >
 
 
@@ -314,7 +312,7 @@ Die Coral-Benutzeroberfläche ist eine Sammlung von Bausteinen für die Entwickl
 
 Sie ist vollständig modular konzipiert und jedes Modul stellt basierend auf seiner primäre Rolle eine eigene Ebene dar. Die Ebenen sind so konzipiert, dass sie sich gegenseitig unterstützen, aber sie können bei Bedarf auch unabhängig voneinander verwendet werden. Dies ermöglicht es, das Coral-Anwendererlebnis in allen HTML-fähigen Umgebungen zu implementieren.
 
-Für die Coral-Benutzeroberfläche muss kein bestimmtes Entwicklungsmodell bzw. keine bestimmte Plattform verwendet werden. Hauptziel von Coral ist es, einheitlichen und sauberen HTML5-Markup-Code bereitzustellen, und zwar unabhängig von der eigentlichen Methode, die zum Ausgeben des Markup-Codes verwendet wird. Er kann für client- oder serverseitiges Rendering, Vorlagen, JSP, PHP oder auch Adobe Flash-RIA-Anwendungen verwendet werden, um nur einige zu nennen.
+Für die Coral-Benutzeroberfläche muss kein bestimmtes Entwicklungsmodell bzw. keine bestimmte Plattform verwendet werden. Hauptziel von Coral ist es, einheitlichen und sauberen HTML5-Markup-Code bereitzustellen, und zwar unabhängig von der eigentlichen Methode, die zum Ausgeben des Markup-Codes verwendet wird. Er kann für Client- oder Server-seitiges Rendering, Vorlagen, JSP, PHP oder auch Adobe Flash-RIA-Anwendungen verwendet werden, um nur einige zu nennen.
 
 ### HTML-Elemente – Markup-Ebene {#html-elements-the-markup-layer}
 
@@ -372,20 +370,20 @@ Viele der HTML-Elemente müssen ein bestimmtes dynamisches Verhalten aufweisen, 
 
 Für ein Plug-in gilt einer der folgenden Fälle:
 
-* Es ist für ein spezifisches DOM-Element ausgelegt. Beispielsweise erwartet ein Dialog-Plug-in, dass `DIV class=dialog`
+* Es ist für ein spezifisches DOM-Element ausgelegt. Für ein Dialogfeld-Plug-in wird beispielsweise `DIV class=dialog` erwartet.
 * Es ist generischer Art. Über einen Layout-Manager wird beispielsweise das Layout für eine Liste mit `DIV`- oder `LI`-Elementen bereitgestellt.
 
 Das Plug-in-Verhalten kann auf folgende Arten mit Parametern angepasst werden:
 
 * Übergeben der Parameter per JavaScript-Aufruf
-* Verwendung dedizierter `data-*` -Attribute, die mit dem HTML-Markup verknüpft sind
+* Verwenden von dedizierten `data-*`-Attributen, die an den HTML-Markup-Code gebunden sind
 
 Entwickler können für jedes Plug-in den besten Ansatz wählen, aber die Faustregel lautet:
 
-* `data-*` -Attribute für Optionen im Zusammenhang mit dem HTML-Layout. Beispielsweise zum Angeben der Anzahl von Spalten.
+* `data-*`-Attribute für Optionen, die sich auf das HTML-Layout beziehen. Beispielsweise zum Angeben der Anzahl von Spalten.
 * API-Optionen/-Klassen für Funktionalität in Verbindung mit Daten. Beispiel: Erstellung der Liste mit den anzuzeigenden Elementen.
 
-Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das überprüft werden soll, müssen Sie das erforderliche Eingabeformular als benutzerdefinierten `data-*` -Attribut. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
+Dasselbe Konzept wird auch verwendet, um die Formularvalidierung zu implementieren. Für ein Element, das validiert werden soll, müssen Sie das erforderliche Eingabeformular als benutzerdefiniertes `data-*`-Attribut angeben. Dieses Attribut wird dann als Option für ein Validierungs-Plug-in verwendet.
 
 >[!NOTE]
 >
@@ -401,7 +399,7 @@ Zweck:
 Implementierung:
 
 * jQuery-Plug-in, an ein spezifisches DOM-Element (auch mehrere) gebunden
-* Verwenden `data-*` Attribute zur Verhaltensanpassung
+* Verwenden von `data-*`-Attributen zum Anpassen des Verhaltens
 
 Ein Auszug aus Beispielmarkup (beachten Sie die Optionen, die als data-&amp;ast angegeben sind); -Attribute):
 

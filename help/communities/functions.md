@@ -343,7 +343,7 @@ Da die Community-Funktion als [Live Copy](../../help/sites-administering/msm.md#
 
 Siehe auch [Multi-Site-Manager](../../help/sites-administering/msm.md).
 
-### Miniatur {#thumbnail}
+### Miniaturansicht {#thumbnail}
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 

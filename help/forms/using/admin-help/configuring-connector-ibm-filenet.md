@@ -13,7 +13,7 @@ exl-id: 3a3d59c2-6811-4513-8384-aa77fdc38686
 source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -80,11 +80,11 @@ Sie können konfigurieren, welcher Repository Service Provider mit FileNet verwe
 
 Die folgenden Optionen sind verfügbar:
 
-**Aktueller Repository Provider-Name:** Der Name des aktuellen Repository Service Providers
+**Name des aktuellen Repository-Anbieters**: Der Name des aktuellen Repository-Anbieters
 
-**IBM FileNet Repository Provider:** Legt den FileNet-Repository-Provider als Provider für das Repository fest. Diese Option ist veraltet.
+**IBM FileNet Repository-Anbieter**: Legt den FileNet-Repository-Anbieter als Anbieter für das Repository fest. Diese Option ist veraltet.
 
-**Repository Provider:** Legt den nativen Repository-Provider als Provider für das Repository fest
+**Repository-Anbieter**: Legt den nativen Repository-Anbieter als Anbieter des Repositorys fest.
 
 >[!NOTE]
 >
