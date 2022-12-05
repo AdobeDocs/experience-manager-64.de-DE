@@ -206,7 +206,7 @@ Inhalte, die in der AEM-Autoreninstanz erstellt werden, werden zunächst zur Ver
 >[!NOTE]
 >
 >Wenn Sie statt der Replikations-URL die der Öffentlichkeit zugängliche URL verwenden möchten, können Sie die **Öffentliche URL** in der folgenden Konfigurationseinstellung in OSGi festlegen (**AEM-Logo** > **Tools**-Symbol > **Vorgänge** > **Web-Konsole** > **OSGi-Konfiguration** > **AEM-Kampagnenintegration – Konfiguration**):
-**Öffentliche URL:** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
+>**Öffentliche URL:** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
 
 Dieser Schritt ist auch erforderlich, um bestimmte Autoreninstanzkonfigurationen in die Veröffentlichungsinstanz zu replizieren.
 
@@ -217,7 +217,7 @@ So konfigurieren Sie die Replikation zwischen AEM-Instanzen:
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
    >[!NOTE]
-   Verwenden Sie nach Möglichkeit nicht localhost (eine lokale Kopie von AEM), wenn Sie die Integration mit Adobe Campaign konfigurieren, außer die Veröffentlichungs- und Autoreninstanz befinden sich auf demselben Computer.
+   >Verwenden Sie nach Möglichkeit nicht localhost (eine lokale Kopie von AEM), wenn Sie die Integration mit Adobe Campaign konfigurieren, außer die Veröffentlichungs- und Autoreninstanz befinden sich auf demselben Computer.
 
 1. Tippen oder klicken Sie auf **Bearbeiten** und wählen Sie dann die Registerkarte **Transport** aus.
 1. Konfigurieren Sie den URI, indem Sie **localhost** durch die IP-Adresse oder die Adresse der AEM-Veröffentlichungsinstanz ersetzen.
@@ -245,16 +245,15 @@ Bevor Sie AEM und Adobe Campaign zusammen verwenden können, müssen Sie die be
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
    >[!NOTE]
-   Nachdem Sie [die E-Mail erstellt und veröffentlicht haben](/help/sites-authoring/campaign.md), müssen Sie die Konfiguration auf der Veröffentlichungsinstanz erneut veröffentlichen.
+   >Nachdem Sie [die E-Mail erstellt und veröffentlicht haben](/help/sites-authoring/campaign.md), müssen Sie die Konfiguration auf der Veröffentlichungsinstanz erneut veröffentlichen.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
 >[!NOTE]
-Prüfen Sie Folgendes, falls die Verbindung nicht hergestellt werden kann:
-* Möglicherweise tritt ein Zertifikatfehler auf, wenn Sie eine sichere Verbindung (https) mit einer Adobe Campaign-Instanz herstellen. Sie müssen das Zertifikat der Adobe Campaign-Instanz der Datei **cacerts** des JDK der AEM-Instanz hinzufügen.
-* Für den [aemserver-Operator](#connecting-aem-to-adobe-campaign) muss eine Sicherheitszone in Adobe Campaign konfiguriert werden. Darüber hinaus muss das Attribut **allowUserPassword** der Sicherheitszone in der Datei **serverConf.xml** auf **true** festgelegt sein, um die AEM-Verbindung mit Adobe Campaign unter Verwendung des Anmelde-/Kennwortmodus zu autorisieren.
->
-Weitere Informationen finden Sie in [Fehlerbehebung bei der AEM/Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md).
+>Prüfen Sie Folgendes, falls die Verbindung nicht hergestellt werden kann:
+>* Möglicherweise tritt ein Zertifikatfehler auf, wenn Sie eine sichere Verbindung (https) mit einer Adobe Campaign-Instanz herstellen. Sie müssen das Zertifikat der Adobe Campaign-Instanz der Datei **cacerts** des JDK der AEM-Instanz hinzufügen.
+>* Für den [aemserver-Operator](#connecting-aem-to-adobe-campaign) muss eine Sicherheitszone in Adobe Campaign konfiguriert werden. Darüber hinaus muss das Attribut **allowUserPassword** der Sicherheitszone in der Datei **serverConf.xml** auf **true** festgelegt sein, um die AEM-Verbindung mit Adobe Campaign unter Verwendung des Anmelde-/Kennwortmodus zu autorisieren.
+>Weitere Informationen finden Sie in [Fehlerbehebung bei der AEM/Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md).
 
 ### Konfigurieren des Externalizers {#configuring-the-externalizer}
 
@@ -285,7 +284,7 @@ Eine Standardliste wird bereitgestellt, kann jedoch geändert werden. Sie könne
 Zum Hinzufügen eines neuen Personalisierungsfelds zu den bereits verfügbaren Personalisierungsfeldern müssen Sie das Adobe Campaign-Schema **nms:seedMember** folgendermaßen erweitern:
 
 >[!CAUTION]
-Das Feld, das Sie hinzufügen müssen, muss bereits über eine Empfängerschemaerweiterung hinzugefügt worden sein (**nms:recipient**). Weitere Informationen finden Sie im [Konfigurationshandbuch](https://docs.campaign.adobe.com/doc/AC6.1/de/CFG_Editing_schemas_Editing_schemas.html).
+>Das Feld, das Sie hinzufügen müssen, muss bereits über eine Empfängerschemaerweiterung hinzugefügt worden sein (**nms:recipient**). Weitere Informationen finden Sie im [Konfigurationshandbuch](https://docs.campaign.adobe.com/doc/AC6.1/de/CFG_Editing_schemas_Editing_schemas.html).
 
 1. Wechseln Sie zum Knoten **Administration** > **Konfiguration** > **Datenschemata** in der Adobe Campaign-Navigation.
 1. Wählen Sie **Neu** aus.
@@ -372,6 +371,6 @@ So deaktivieren Sie einen Personalisierungsblock unter den vorhandenen Personali
 Sie können zudem Zielerweiterungsdaten für die Personalisierung eingeben. Zielerweiterungsdaten (auch als „Zieldaten“ bezeichnet) stammen aus dem Erweitern oder Hinzufügen von Daten, beispielsweise bei einer Abfrage in einem Kampagnen-Workflow. Weitere Informationen entnehmen Sie den Abschnitten [Erstellen von Abfragen](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_About_queries_in_Campaign.html) und [Erweitern von Daten](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Enriching_data.html).
 
 >[!NOTE]
-Die Zieldaten sind nur verfügbar, wenn die AEM-Inhalte mit einer Adobe Campaign-Bereitstellung synchronisiert sind. Nähere Informationen finden Sie unter [Synchronisieren von in AEM erstellten Inhalten mit einer Bereitstellung von Adobe Campaign](/help/sites-authoring/campaign.md#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).
+>Die Zieldaten sind nur verfügbar, wenn die AEM-Inhalte mit einer Adobe Campaign-Bereitstellung synchronisiert sind. Nähere Informationen finden Sie unter [Synchronisieren von in AEM erstellten Inhalten mit einer Bereitstellung von Adobe Campaign](/help/sites-authoring/campaign.md#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).
 
 ![chlimage_1-148](assets/chlimage_1-148.png)

@@ -155,8 +155,8 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 
 So fügen Sie Text mit einer Liste hinzu:
 
-* 1.
-* 2.
+* &#x200B;1.
+* &#x200B;2.
 
 der in einem RTE-Editor bearbeitet werden kann:
 

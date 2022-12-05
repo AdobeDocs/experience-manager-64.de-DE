@@ -117,7 +117,7 @@ Haltepunkte können Sie mit CRXDE Lite oder XML definieren.
 >
 >* Haltepunkte zu den Vorlagen hinzufügen
 >* dieselben Haltepunkte zu vorhandenen Seiten hinzufügen\
-   >  Da die Vererbung im Einsatz ist, können Sie dies auf die Stammseite Ihrer Inhalte beschränken.
+>  Da die Vererbung im Einsatz ist, können Sie dies auf die Stammseite Ihrer Inhalte beschränken.
 >
 
 
