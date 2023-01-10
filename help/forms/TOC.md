@@ -22,7 +22,7 @@ ht-degree: 97%
 + Versionshinweise {#release-notes-new-features}
    + [Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [Übersicht über die neuen Funktionen](using/whats-new.md)
-   + [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [Veraltete Funktionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de)
 + Erste Schritte {#getting-started}
    + [Einführung in AEM Forms](using/introduction-aem-forms.md)
    + [Einführung in das Authoring adaptiver Formulare](using/introduction-forms-authoring.md)
