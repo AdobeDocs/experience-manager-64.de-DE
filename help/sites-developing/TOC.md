@@ -8,10 +8,10 @@ breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Developing
 role: Developer
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 96%
+source-wordcount: '869'
+ht-degree: 98%
 
 ---
 
@@ -116,12 +116,11 @@ ht-degree: 96%
       + [Dynamisches Modell für die Komponentenzuordnung für SPA](spa-dynamic-model-to-component-mapping.md)
       + [SPA-Modell-Routing](spa-routing.md)
       + [SPA- und Adobe Experience Platform Launch-Integration](spa-launch.md)
-      + [Single Page Applications (SPAs) und Server-seitiges Rendering](spa-ssr.md)
+      + [Einzelseitenanwendungen (Single Page Applications, SPA) und Server-seitiges Rendering](spa-ssr.md)
       + [SPA-Referenzmaterial](spa-reference-materials.md)
    + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=de)
    + [Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments.html)
    + [Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/authoring/experience-fragments.html)
-   + [Grundlagen zu Inhaltsfragmenten und Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Entwicklungs-Tools{#devtools}
    + [Entwicklungs-Tools](dev-tools.md)
    + [AEM-Modernisierungs-Tools](modernization-tools.md)
@@ -222,3 +221,8 @@ ht-degree: 96%
    + [Responsives Design für Webseiten](responsive.md)
    + [Erstellen von Websites für Mobilgeräte](mobile.md)
    + [Emulatoren](emulators.md)
+
+<!--
+Deleted link to broken helpx video:
+    + [Understanding Content Fragments and Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
+-->
