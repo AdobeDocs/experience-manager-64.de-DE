@@ -3,7 +3,7 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: admin-user
-user-guide-title: AEM 6.4-Administratorenanleitung
+user-guide-title: Benutzerhandbuch für AEM 6.4-Admins
 breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Administering
@@ -16,7 +16,7 @@ ht-degree: 98%
 ---
 
 
-# AEM 6.4-Administratorenanleitung {#administering}
+# Benutzerhandbuch für AEM 6.4-Admins {#administering}
 
 + [Übersicht über die Administratorenanleitung](home.md)
 + Sites-Funktionen {#introduction}
@@ -66,7 +66,7 @@ ht-degree: 98%
    + [Reporting](reporting.md)
    + [Verwalten der Workflow-Instanzen](workflows-administering.md)
    + [Konfigurieren von Layout-Container und Layout-Modus](configuring-responsive-layout.md)
-   + [Aktivierung des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
+   + [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](enable-classic-ui.md)
    + [Starten von Workflows](workflows-starting.md)
    + [Konfigurieren der Rich-Text-Editor-Plug-ins](configure-rich-text-editor-plug-ins.md)
    + [Admin Consoles](enable-classic-ui-admin.md)

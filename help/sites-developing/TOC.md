@@ -3,7 +3,7 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.4-Entwickleranleitung
+user-guide-title: AEM 6.4-Benutzerhandbuch für Entwickler
 breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Developing
@@ -16,7 +16,7 @@ ht-degree: 98%
 ---
 
 
-# AEM 6.4-Entwickleranleitung {#developing}
+# AEM 6.4-Benutzerhandbuch für Entwickler {#developing}
 
 + [Benutzerhandbuch für Entwickler – Überblick](home.md)
 + Einführung für Entwickler{#introduction}

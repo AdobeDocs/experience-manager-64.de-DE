@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4-Implementierungsanleitung
 breadcrumb-title: Implementierungsanleitung
-user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich der Adobe Managed Services-Cloud-Implementierung.
+user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich unserer Cloud-Implementierung von Adobe Managed Services.
 feature: Deploying
 role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
@@ -71,7 +71,7 @@ ht-degree: 100%
    + [Abwärtskompatibilität in AEM 6.4](backward-compatibility.md)
    + [Upgrade-Verfahren](upgrade-procedure.md)
    + [Verwenden der Offline-Neuindizierung, um Ausfallzeiten während eines Upgrades zu reduzieren](upgrade-offline-reindexing.md)
-   + [Durchführen eines In-Place-Upgrades](in-place-upgrade.md)
+   + [Durchführen einer ersetzenden Aktualisierung](in-place-upgrade.md)
    + [Lazy-Content-Migration](lazy-content-migration.md)
    + [Verwendung des CRX2Oak-Migrations-Tools](using-crx2oak.md)
    + [Wartungsaufgaben vor einer Aktualisierung](pre-upgrade-maintenance-tasks.md)

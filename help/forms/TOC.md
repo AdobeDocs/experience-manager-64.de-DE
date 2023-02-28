@@ -4,9 +4,9 @@ product: adobe experience manager
 sub-product: forms
 solution: Experience Manager, Experience Manager Forms
 audience: end-user
-user-guide-title: Adobe Experience Manager 6.4, Forms-Anleitung
+user-guide-title: Handbuch zu Adobe Experience Manager 6.4 Forms
 breadcrumb-title: Forms-Anleitung
-user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
+user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
 source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
@@ -16,7 +16,7 @@ ht-degree: 97%
 ---
 
 
-# Adobe Experience Manager 6.4, Forms-Anleitung {#forms}
+# Handbuch zu Adobe Experience Manager 6.4 Forms {#forms}
 
 + [AEM 6.4 Forms-Handbuch](home.md)
 + Versionshinweise {#release-notes-new-features}
@@ -448,7 +448,7 @@ ht-degree: 97%
       + [E-Mail-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Remoting-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Endpunkte des Typs „Überwachter Ordner“ konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+      + [Konfigurieren der Task Manager-Endpunkte](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Arten von Endpunkten](/help/forms/using/admin-help/types-endpoints.md)
    + Konfigurieren von Acrobat Reader DC Extensions {#configure-acrobat-reader-dc-extensions}
       + [Von Acrobat Reader DC Extensions verwendete Zertifikatstypen](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
@@ -465,7 +465,7 @@ ht-degree: 97%
       + [Adobe PDF-Einstellungen konfigurieren](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Sicherheitseinstellungen konfigurieren](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Dateitypeinstellungen konfigurieren](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF Generator-Konfigurationsdateien importieren und exportieren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [Importieren und Exportieren der PDF Generator-Konfigurationsdateien](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A-Unterstützung aktivieren](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Einrichten eines PDFG-Netzwerkdruckers (nur Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Ersatzschriftarten konfigurieren](/help/forms/using/admin-help/configuring-fallback-fonts.md)
@@ -500,7 +500,7 @@ ht-degree: 97%
       + [Überprüfungsmeldungen konfigurieren](/help/forms/using/admin-help/configuring-validation-messages.md)
    + Output konfigurieren {#configure-output}
       + [Überblick über den Ausgabedienst](/help/forms/using/admin-help/overview-8.md)
-      + [Den Zeichensatz ändern](/help/forms/using/admin-help/change-character-set.md)
+      + [Ändern des Zeichensatzes](/help/forms/using/admin-help/change-character-set.md)
       + [XCI-Konfigurationsoptionen angeben](/help/forms/using/admin-help/specify-xci-configuration-options.md)
       + [Zwischenspeicherung für Output konfigurieren](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Dateispeicherorte für Output angeben](/help/forms/using/admin-help/specify-file-locations-output.md)
@@ -573,7 +573,7 @@ ht-degree: 97%
    + [Ad-hoc-Abfragen beim Prozess-Reporting](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Fehlerbehebung bei Process Reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Entwicklerreferenz {#developer-reference}
-   + [Entwicklergrundlagen](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html)
+   + [Entwicklergrundlagen](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html?lang=de)
    + [HTML-Vorlagensprache](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=de)
    + [AEM-Plug-In, um adaptive Formulare zu debuggen](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API-Referenz](https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/index.html)

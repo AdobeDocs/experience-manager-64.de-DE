@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4-Verwaltungsanleitung
+user-guide-title: Benutzerhandbuch für die Verwaltung von AEM 6.4
 breadcrumb-title: Bedieneranleitung
 user-guide-description: Erfahren Sie, wie Sie ein AEM-Projekt verwalten können.
 feature: Deploying
@@ -15,7 +15,7 @@ ht-degree: 100%
 ---
 
 
-# AEM 6.4-Verwaltungsanleitung {#managing}
+# Benutzerhandbuch für die Verwaltung von AEM 6.4 {#managing}
 
 + [Benutzerhandbuch Verwaltung](home.md)
 + Verwalten - Checkliste mit Best Practices {#managing-best-practices-checklist}
