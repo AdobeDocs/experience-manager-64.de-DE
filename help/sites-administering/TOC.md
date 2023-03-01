@@ -8,9 +8,9 @@ breadcrumb-title: Administratorenanleitung
 user-guide-description: Erfahren Sie mehr über die Verwaltung von AEM.
 feature: Administering
 role: Admin
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 9dcaf2538e5f968b25ce4f643ac307eff295d07d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '633'
 ht-degree: 98%
 
 ---
@@ -116,7 +116,6 @@ ht-degree: 98%
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
    + [Integrieren mit Adobe Target](target.md)
-   + [Integrieren mit Livefyre](livefyre.md)
    + [Integration mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
    + [Konfigurieren des Linktrackings für Adobe Analytics](adobeanalytics-link.md)
@@ -136,7 +135,6 @@ ht-degree: 98%
    + [Opt-in für Adobe Analytics und Adobe Target](opt-in.md)
    + [AEM-Portale und Portlets](aem-as-portal.md)
    + [Integrieren in Dynamic Media Classic](scene7.md)
-   + [AEM Livefyre-Rezepte](aem-livefyre-recipes.md)
    + [Fehlerbehebung für Integrationsprobleme](troubleshooting-integration-issues.md)
    + [Integration mit BrightEdge Content Optimizer](brightedge.md)
    + [Best Practices für E-Mail-Vorlagen](best-practices-for-email-templates.md)
