@@ -6,10 +6,10 @@ solution: Experience Manager, Dynamic Media Classic
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: Collaboration,Dynamic Media Classic
 role: Admin,User
-source-git-commit: 673e92ce3228b1a5c9951c254cc672645ff204f1
+source-git-commit: 79ff6834acd2bc1105bbea798d946cd7354474d5
 workflow-type: tm+mt
-source-wordcount: '1076'
-ht-degree: 94%
+source-wordcount: '1077'
+ht-degree: 92%
 
 ---
 
@@ -39,7 +39,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
     * Summit customer spotlight: Under Armour.
     * Never miss an Experience Insider webinar.
     * Public sector spotlight: The urgent need for digital enrollment.
-    * Look what’s new in Experience Manager Innovation.
+    * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
@@ -53,7 +53,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Sehen Sie sich die On-Demand-Skill Builder-Webinare für Dynamic Media Classic an.
    * Sehen Sie sich die Dynamic Media-Sitzungen vom Online-Adobe Summit 2020 an.
    * Erfahren Sie mehr über die kostenlosen Dynamic Media Classic-Audits von Adobe.
-   * Lernen Sie `John Monroe` kennen, Senior Programm Manager für Customer Success Services.
+   * Erfüllen `Jon Monroe`, Senior Program Manager für Adobe Customer Solutions.
 
 * **[Februar 2020, Ausgabe 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=de)**
 
@@ -64,7 +64,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Entdecken Sie, wie Sie die Zuschneidefunktion von Dynamic Media verwenden.
    * Nutzen Sie ein kostenloses Audit von Adobe, um Dynamic Media Classic optimal einzusetzen.
    * Informieren Sie sich über die neue Benutzeroberfläche von Dynamic Media Classic.
-   * Treffen Sie `Georgia Myers`, Manager of Success Manager für Adobe Experience Cloud.
+   * Erfüllen `Georgia Myers`, Senior Manager für Customer Success für Adobe Experience Cloud.
 
 * **[Januar 2020, Ausgabe 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=de)**
 
