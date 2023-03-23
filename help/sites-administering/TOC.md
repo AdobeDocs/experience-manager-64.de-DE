@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 9dcaf2538e5f968b25ce4f643ac307eff295d07d
 workflow-type: tm+mt
 source-wordcount: '633'
-ht-degree: 98%
+ht-degree: 93%
 
 ---
 
@@ -110,7 +110,7 @@ ht-degree: 98%
    + [Verwalten von generischem E-Commerce](generic.md)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+   + [Salesforce-Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](gdpr-compliance-commerce.md)
 + Integration {#integration}
    + [Integrieren mit Services von Dritten](third-party-services.md)
@@ -130,7 +130,7 @@ ht-degree: 98%
    + [Verwandte Community-Artikel](related-community-articles.md)
    + [Integrieren mit Adobe Campaign Standard](campaignstandard.md)
    + [Hinweis zum End of Life von Flash-Viewern](flash-viewers-eol.md)
-   + [Integrieren mit Adobe Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html?lang=de)
+   + [Integration mit Adobe Creative Cloud](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html?lang=de)
    + [Integrieren mit Adobe Dynamic Tag Management](dtm.md)
    + [Opt-in für Adobe Analytics und Adobe Target](opt-in.md)
    + [AEM-Portale und Portlets](aem-as-portal.md)
@@ -158,7 +158,7 @@ ht-degree: 98%
    + [AEM Commerce – Einhaltung der Datenschutz-Grundverordnung](https://experienceleague.adobe.com/docs/experience-manager-64/administering/ecommerce/gdpr-compliance-commerce.html)
 + Content Management {#contentmanagement}
    + [Arbeiten mit Paketen](package-manager.md)
-   + [Offloader für Assets-Workflows](workflow-offloader.md)
+   + [Asset-Workflow-Offloader](workflow-offloader.md)
    + [Verwalten von Tags](tags.md)
    + [Das Seiten-Export-Tool](page-exporter.md)
    + [Tagging-Konsole der klassischen Benutzeroberfläche](classic-console.md)

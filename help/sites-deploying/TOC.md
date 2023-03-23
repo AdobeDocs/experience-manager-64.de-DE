@@ -4,14 +4,14 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4-Implementierungsanleitung
-breadcrumb-title: Implementierungsanleitung
+breadcrumb-title: Implementierungshandbuch
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich unserer Cloud-Implementierung von Adobe Managed Services.
 feature: Deploying
 role: Architect
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '370'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 100%
    + [Leistungsoptimierung](configuring-performance.md)
    + [Handbuch zur Leistung von Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=de)
    + [Artikel mit Anleitungen für die Konfiguration](ht-deploy.md)
-   + [Entfernen der Geometrixx-Websites](removing-the-geometrixx-sites.md)
+   + [Entfernen der Geometrixx Sites](removing-the-geometrixx-sites.md)
    + [Konfigurieren der Web-Konsole](configuring-web-console.md)
 + Aktualisieren auf AEM 6.4 {#upgrading}
    + [Aktualisieren auf AEM 6.4](upgrade.md)
@@ -93,7 +93,7 @@ ht-degree: 100%
 + eCommerce {#ecommerce}
    + [E-Commerce-Übersicht](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+   + [Salesforce-Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Best Practices {#practices}
    + [Best Practices für die Bereitstellung](best-practices.md)
