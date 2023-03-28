@@ -8,7 +8,7 @@ exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
 source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 93%
+ht-degree: 21%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 93%
 
 Erfahren Sie, wie Sie die erforderlichen Assets in[!DNL Experience Manager]mithilfe des Bedienfelds „Filter“ finden und wie Sie die Assets verwenden, die bei der Suche zurückgegeben werden.
 
-Verwenden Sie das Bedienfeld Filter, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen.
+Verwenden Sie das Bedienfeld Filter, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Sie können Teile einer Zeichenfolge mit dem Platzhalterzeichen durchsuchen.
 
-Das Bedienfeld „Filter“ bietet mehrere Optionen, um Assets und Ordnern auf verschiedene Arten zu suchen, statt in generischer taxonomischer Reihenfolge.
+Das Bedienfeld &quot;Filter&quot;bietet verschiedene Optionen, um auf mehrere Arten nach Assets und Ordnern zu suchen, anstatt in einer allgemeinen taxonomischen Reihenfolge.
 
-Sie können eine Suche basierend auf folgenden Optionen (Prädikaten) durchführen:
+Sie können anhand der folgenden Optionen (Prädikate) suchen:
 
 * Dateityp
 * Dateigröße
@@ -33,72 +33,72 @@ Sie können eine Suche basierend auf folgenden Optionen (Prädikaten) durchführ
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](search-facets.md) hinzufügen/entfernen. Führen Sie folgende Schritte aus, um das Bedienfeld „Filter“ anzuzeigen:
+Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](search-facets.md) hinzufügen/entfernen. So zeigen Sie den Bereich Filter an:
 
 1. Tippen/klicken Sie in der Assets-Benutzeroberfläche auf ![search_icon](assets/search_icon.png) aus der Symbolleiste, um das OmniSearch-Feld anzuzeigen.
-1. Geben Sie Ihren Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie einfach die Eingabetaste drücken, ohne einen Suchbegriff einzugeben. Geben Sie keine vorangestellten Leerzeichen ein, da die Suche sonst nicht funktioniert.
+1. Geben Sie Ihren Suchbegriff ein und drücken Sie die Eingabetaste. Alternativ können Sie einfach die Eingabetaste drücken, ohne einen Suchbegriff einzugeben. Geben Sie keine führenden Leerzeichen ein, da die Suche sonst nicht funktioniert.
 
-1. Tippen/klicken Sie auf das GlobalNav-Symbol. Das Bedienfeld „Filter“ wird angezeigt.
+1. Tippen/klicken Sie auf das GlobalNav-Symbol. Der Bereich Filter wird angezeigt.
 
    ![filters_panel-1](assets/filters_panel-1.png)
 
-   Abhängig von der Art der Elemente, nach denen Sie suchen, wird die Anzahl der Übereinstimmungen oben in den Suchergebnissen angezeigt.
+   Je nach Art der Elemente, die Sie suchen, wird die Anzahl der Übereinstimmungen oben in den Suchergebnissen angezeigt.
 
    ![number_of_searches](assets/number_of_searches.png)
 
 ## Suchen nach Dateitypen {#search-for-file-types}
 
-Das Bedienfeld „Filter“ ermöglicht eine gesteigerte Granularität bei Ihren Suchen und gestaltet die Suchfunktion vielseitiger. Sie können ganz einfach einen Drilldown auf die gewünschte Detailebene durchführen.
+Das Bedienfeld &quot;Filter&quot;hilft Ihnen, Ihrer Suche mehr Granularität hinzuzufügen und die Suchfunktion vielseitiger zu gestalten. Sie können einfach einen Drilldown zur gewünschten Detailtiefe durchführen.
 
-Wenn Sie beispielsweise nach einem Bild suchen, verwenden Sie das Prädikat **[!UICONTROL Dateityp]**, um auszuwählen, ob Sie ein Bitmap- oder ein Vektorbild möchten.
+Wenn Sie beispielsweise nach einem Bild suchen, verwenden Sie die **[!UICONTROL Dateityp]** -Prädikat zur Auswahl, ob Sie ein Bitmap- oder ein Vektorbild verwenden möchten.
 
 ![image_type](assets/image_type.png)
 
-Sie können die Suche weiter eingrenzen, indem Sie den MIME-Typ für das Bild festlegen.
+Sie können den Suchbereich weiter eingrenzen, indem Sie den MIME-Typ für das Bild angeben.
 
 ![mime_type](assets/mime_type.png)
 
-Wenn Sie nach Dokumenten suchen, können Sie auf ähnliche Weise das gewünschte Format festlegen, z. B. PDF oder MS Word.
+Ebenso können Sie bei der Suche nach Dokumenten das Format angeben, z. B. PDF oder MS Word.
 
-![documents](assets/documents.png)
+![Dokumente](assets/documents.png)
 
-## Suche basierend auf der Dateigröße {#search-based-on-file-size}
+## Suche basierend auf Dateigröße {#search-based-on-file-size}
 
-Verwenden Sie das Prädikat **Dateigröße**, um basierend auf der Größe nach Assets zu suchen. Sie können die Unter- und Obergrenze für den Dateigrößenbereich festlegen, um Ihre Suche einzugrenzen. Außerdem können Sie die Maßeinheit festlegen, z. B. Kilobyte, Megabyte etc.
+Verwenden Sie die **Dateigröße** -Eigenschaft, um basierend auf ihrer Größe nach Assets zu suchen. Sie können die unteren und oberen Grenzwerte für den Größenbereich festlegen, um Ihre Suche einzugrenzen. Sie können auch die Maßeinheit angeben, z. B. Kilobyte, Megabyte usw.
 
 ![unit_of_measure](assets/unit_of_measure.png)
 
-## Suche basierend auf dem letzten Änderungsdatum von Assets {#search-based-on-when-assets-are-last-modified}
+## Suche basierend darauf, wann Assets zuletzt geändert wurden {#search-based-on-when-assets-are-last-modified}
 
-Wenn Sie unfertige Assets verwalten oder einen Prüfungs-Workflow überwachen, können Sie die Suche danach ausrichten, wann ein Asset zuletzt bearbeitet wurde. Die Suche basiert dabei auf akkuraten Zeitstempeln. Geben Sie beispielsweise Daten ein, vor oder nach denen Assets bearbeitet wurden.
+Wenn Sie laufende Assets verwalten oder einen Prüfungs-Workflow überwachen, können Sie anhand genauer Zeitstempel suchen, wann ein Asset zuletzt geändert wurde. Geben Sie beispielsweise Datumswerte vor oder nach denen Assets geändert wurden.
 
 ![last_modified_dates](assets/last_modified_dates.png)
 
-Sie können auch die folgenden Optionen nutzen, um eine höhere Granularität bei Ihrer Suche zu erreichen:
+Sie können auch die folgenden Optionen verwenden, um eine höhere Granularität bei Ihrer Suche zu erreichen:
 
 ![timestamp](assets/timestamp.png)
 
-## Suche basierend auf dem Status {#search-based-on-status}
+## Suche nach Status {#search-based-on-status}
 
-Verwenden Sie die **Statuseigenschaft**, um nach Assets zu suchen, die auf verschiedenen Statusarten basieren, beispielsweise „Veröffentlichen“, „Genehmigung“, „Auschecken“ und „Ablauf“.
+Verwenden Sie die **Status** -Prädikat verwenden, um basierend auf verschiedenen Statustypen wie Veröffentlichung, Genehmigung, Checkout und Ablauf nach Assets zu suchen.
 
 ![status](assets/status.png)
 
-Wenn Sie z. B. die Asset-Veröffentlichung überwachen, können Sie die entsprechende Option verwenden, um nach den zu veröffentlichen Assets zu suchen.
+Wenn Sie beispielsweise die Asset-Veröffentlichung überwachen, können Sie die entsprechende Option verwenden, um nach den veröffentlichten Assets zu suchen.
 
 ![publish](assets/publish.png)
 
 Wenn Sie den Prüfungsstatus von Assets überwachen, verwenden Sie die entsprechende Option, um herauszufinden, welche Assets genehmigt wurden und für welche Assets die Genehmigung aussteht.
 
-![„Genehmigung“](assets/approval.png)
+![Validierung](assets/approval.png)
 
-## Suche basierend auf Daten von Insights {#search-based-on-insights-data}
+## Suche basierend auf Insights-Daten {#search-based-on-insights-data}
 
-Verwenden Sie das Prädikat **Einblicke**, um basierend auf den Nutzungsstatistiken diverser kreativer Anwendungen nach Assets zu suchen. Die Nutzungsdaten werden derzeit unter den folgenden Kategorien gruppiert:
+Verwenden Sie die **Insights** Prädikat verwenden, um basierend auf ihren Nutzungsstatistiken aus verschiedenen Creative-Apps nach Assets zu suchen. Nutzungsdaten werden unter den folgenden Kategorien gruppiert:
 
-* Nutzungs-Bewertung
+* Nutzungsbewertung
 * Impressionen
 * Klicks
-* Medienkanäle, in denen die Elemente angezeigt werden
+* Medienkanäle, in denen die Assets angezeigt werden
 
 ![Einblicke](assets/insights.png)
