@@ -11,7 +11,7 @@ role: User
 source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
 source-wordcount: '3721'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 
@@ -43,9 +43,9 @@ ht-degree: 97%
       + [Tutorial: Erstellen einer interaktiven Kommunikation](using/create-interactive-communication-tutorial.md)
    + AEM Forms-Referenzmaterial {#aem-forms-reference-collaterals}
       + [Einrichten und Konfigurieren von AEM Forms-Referenz-Sites](using/setup-reference-sites.md)
-      + [Anleitung zur We.Finance-Referenz-Site](using/finance-reference-site-walkthrough.md)
-      + [Schrittweise Anleitung zur We.Gov-Referenzwebsite](using/gov-reference-site-walkthrough.md)
-      + [Schrittweise Anleitung zur Referenz-Site für Mitarbeiter-Self-Service](/help/forms/using/employee-self-service-reference-site.md)
+      + [Schrittweise Anleitung zur We.Finance-Referenz-Website](using/finance-reference-site-walkthrough.md)
+      + [Schrittweise Anleitung zur We.Gov-Referenz-Website](using/gov-reference-site-walkthrough.md)
+      + [Anleitung zur Referenz-Website für Mitarbeiter-Self-Service](/help/forms/using/employee-self-service-reference-site.md)
       + [Schrittweise Anleitung zum Einrichten einer Referenz-Website für Mitarbeiterrekrutierung](/help/forms/using/employee-recruitment-reference-site.md)
       + [Erneuerung der Kfz-Versicherung auf der Referenz-Site von We.Finance](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
       + [FOIA-Anleitung zur We.Gov-Referenzwebsite](/help/forms/using/gov-reference-site-foia-walkthrough.md)
@@ -70,7 +70,7 @@ ht-degree: 97%
       + [Installieren und Bereitstellen von Adobe Experience Manager Forms on JEE für JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64_de)
       + [Installieren und Bereitstellen von AEM Forms on JEE für WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_de)
       + [Installieren und Bereitstellen von Adobe Experience Manager Forms on JEE für WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_de)
-      + [Installieren von AEM Forms Workbench](http://help.adobe.com/de/AEMForms/6.1/InstallWorkbench/index.html)
+      + [Installieren von AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
       + [Installieren und Konfigurieren von Designer](using/installing-configuring-designer.md)
       + [Vorbereiten der Installation von AEM Forms (Server-Cluster)](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64_de)
       + [Konfigurieren von Adobe Experience Manager Forms on JEE auf einem JBoss-Cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64_de)
@@ -96,13 +96,13 @@ ht-degree: 97%
       + [Adobe Experience Manager Forms on JEE – Checkliste für die Aktualisierung und Planung](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64_de)
       + [Aktualisieren auf AEM 6.4 Forms on JEE](using/upgrade-forms-jee.md)
       + [Aktualisieren auf Adobe Experience Manager Forms on JEE für JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64_de)
-      + [Aktualisieren von LiveCycle ES4 SP1 auf Adobe Experience Manager Forms on JEE for JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
+      + [Aktualisieren von LiveCycle ES4 SP1 auf Adobe Experience Manager Forms on JEE für JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
       + [Aktualisieren auf AEM Forms on JEE für JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64_de)
       + [Aktualisieren von LiveCycle ES4 SP1 auf Adobe Experience Manager Forms on JEE für JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
       + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64_de)
-      + [Aktualisieren von LiveCycle ES4 SP1 auf Adobe Experience Manager Forms on JEE for WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
+      + [Aktualisieren von LiveCycle ES4 SP1 auf Adobe Experience Manager Forms on JEE für WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
       + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64_de)
-      + [Upgrade von LiveCycle ES4 SP1 auf Adobe Experience Manager Forms on JEE für WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
+      + [Aktualisieren von LiveCycle ES4 SP1 auf Adobe Experience Manager Forms on JEE für WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + Verwalten von AEM Forms {#manage-administer-aem-forms}
    + [AEM Forms für OSGi-Gruppen und -Berechtigungen](using/forms-groups-privileges-tasks.md)
    + [Erstellen neuer Ordner für die Formularkategorisierung](using/creating-new-folders-categorize-forms.md)
@@ -207,8 +207,8 @@ ht-degree: 97%
    + [In AEM Forms nicht verfügbare Funktionen von Flex Workspace](using/features-flex-workspace-available-html.md)
    + [Interaktion mit Backbone](using/backbone-interaction.md)
    + [Beschreibung wiederverwendbarer Komponenten](using/description-reusable-components.md)
-   + [Dokumentdetails für Renderer](using/document-details-renderer.md)
-   + [Integrieren von AEM Forms Workspace-Komponenten in Webanwendungen](using/integrating-html-ws-components-web.md)
+   + [Dokumentdetails für den Renderer](using/document-details-renderer.md)
+   + [Integrieren von Arbeitsbereichskomponenten von AEM Forms in Web-Anwendungen](using/integrating-html-ws-components-web.md)
    + [Neuer Wiedergabe- und Sendedienst](using/new-render-submit-service.md)
    + [Grundlagen der Ordnerstruktur](using/folder-structure.md)
    + [Integrieren von Anwendungen von Drittanbietern in AEM Forms Workspace](using/integrating-correspondence-management-html-workspace.md)
@@ -217,13 +217,13 @@ ht-degree: 97%
    + [Generische Schritte zur Anpassung von AEM Forms Workspace](using/generic-steps-html-workspace-customization.md)
    + [Ändern des Gebietsschemas der AEM Forms Workspace-Benutzeroberfläche](using/changing-locale-user-interface.md)
    + [Erstellen eines neuen Anmeldungsbildschirms](using/creating-new-login-screen.md)
-   + [Anpassen von Fehlerdialogen](using/customizing-error-dialogs.md)
+   + [Anpassen von Fehlerdialogfeldern](using/customizing-error-dialogs.md)
    + [Anpassen von Registerkarten für eine Aufgabe](using/customizing-tabs-task.md)
    + [Anpassen der Aufgabendetailseite](using/customizing-task-details-page.md)
    + [Anpassen der Auflistung von Prozessinstanzen](using/customizing-listing-process-instances.md)
    + [Anpassen von Aufgabenaktionen](using/customizing-task-actions.md)
-   + [Anzeigen zusätzlicher Daten in der ToDo-Liste](using/display-additional-data-in-todo-list.md)
-   + [Aufrufen von Aufgabenvariablen in der Zusammenfassungs-URL](using/getting-task-variables-summary-url.md)
+   + [Anzeigen zusätzlicher Daten in der Aufgabenliste](using/display-additional-data-in-todo-list.md)
+   + [Abrufen von Aufgabenvariablen in der Zusammenfassungs-URL](using/getting-task-variables-summary-url.md)
    + [In Route-Aktionen verwendete Bilder anpassen](using/images-route-actions.md)
    + [Minimierung der JavaScript-Dateien](using/minification-javascript-files.md)
    + [Anpassen von Verfolgungstabellen](using/sorting-tracking-tables-add-columns.md)
@@ -240,12 +240,12 @@ ht-degree: 97%
    + [Erste Schritte mit AEM Forms Workspace](using/getting-started-livecycle-html-workspace.md)
    + [Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manageransicht](using/tasks-organizational-hierarchy-using-manager.md)
    + [Starten von Prozessen](using/starting-processes.md)
-   + [Verfolgen von Prozessen](using/tracking-processes.md)
+   + [Nachverfolgen von Prozessen](using/tracking-processes.md)
    + [Single Sign-On und Zeitüberschreitungshandler](using/single-sign-timeout-handlers.md)
    + [Verwenden eines adaptiven Formulars in HTML Workspace](using/using-adaptive-form-html-workspace.md)
    + [Integrieren von AEM Forms Workspace in Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [Arbeiten mit Aufgabenlisten](using/todo-lists.md)
-   + [Fehlerbehebung bei Richtlinien für AEM Forms Workspace](using/troubleshooting-guidelines-html-workspace.md)
+   + [Fehlerbehebung bei Richtlinien für einen AEM Forms-Arbeitsbereich](using/troubleshooting-guidelines-html-workspace.md)
 + AEM Forms-App {#aem-forms-app}
    + [Einführung in die AEM Forms Workspace-App](using/aem-forms-app.md)
    + [Einrichten einer Umgebung für die AEM Forms-App](using/setup-environment-mobile-workspace.md)
@@ -347,8 +347,8 @@ ht-degree: 97%
    + [Verwenden von Metadaten in einer E-Mail-Benachrichtigung](using/use-metadata-in-email-notifications.md)
 + Formularportal {#use-forms-portal}
    + [Anpassen von Vorlagen für Forms Portal-Komponenten](using/customizing-templates-forms-portal-components.md)
-   + [Aktivieren der Komponenten im Forms Portal](using/enabling-forms-portal-components.md)
-   + [Erstellen einer Forms Portal-Seite](using/creating-form-portal-page.md)
+   + [Aktivieren von Formularportal-Komponenten](using/enabling-forms-portal-components.md)
+   + [Anpassen einer Formularportal-Seite](using/creating-form-portal-page.md)
    + [APIs zum Arbeiten mit gesendeten Formularen in Forms Portal](using/report-submitted-data-forms.md)
    + [Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“](using/adding-custom-storage-provider-forms.md)
 + Document Services {#use-document-services}
@@ -431,7 +431,7 @@ ht-degree: 97%
       + [Connector für Microsoft SharePoint konfigurieren](/help/forms/using/admin-help/configuring-connector-microsoft-sharepoint.md)
    + Verwalten von Zertifikaten und Berechtigungen {#manage-certificates-credentials}
       + [Benutzernamen- und Kennwortberechtigungen hinzufügen und entfernen](/help/forms/using/admin-help/adding-removing-user-name-password.md)
-      + [Verwalten von Zertifikaten revocationlists](/help/forms/using/admin-help/certificate-revocation-lists.md)
+      + [Zertifikatsperrlisten verwalten](/help/forms/using/admin-help/certificate-revocation-lists.md)
       + [Grundlagen zum Verwalten von Zertifikaten und Berechtigungen](/help/forms/using/admin-help/overview-2.md)
       + [Zertifikate verwalten](/help/forms/using/admin-help/certificates.md)
       + [HSM-Berechtigungen verwalten](/help/forms/using/admin-help/hsm-credentials.md)
@@ -447,7 +447,7 @@ ht-degree: 97%
       + [Endpunkte hinzufügen aktivieren, ändern oder entfernen](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [E-Mail-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Remoting-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
-      + [Endpunkte des Typs „Überwachter Ordner“ konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+      + [Konfigurieren von Endpunkten für überwachte Ordner](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Konfigurieren der Task Manager-Endpunkte](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Arten von Endpunkten](/help/forms/using/admin-help/types-endpoints.md)
    + Konfigurieren von Acrobat Reader DC Extensions {#configure-acrobat-reader-dc-extensions}
@@ -462,9 +462,9 @@ ht-degree: 97%
    + Arbeiten mit PDF Generator {#work-with-pdf-generator}
       + [Einführung in das Arbeiten mit PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Aktivieren mehrprozessgestützter Dateikonvertierungen](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
-      + [Adobe PDF-Einstellungen konfigurieren](/help/forms/using/admin-help/configuring-pdf-settings.md)
-      + [Sicherheitseinstellungen konfigurieren](/help/forms/using/admin-help/configuring-security-settings.md)
-      + [Dateitypeinstellungen konfigurieren](/help/forms/using/admin-help/configuring-file-type-settings.md)
+      + [Konfigurieren von Adobe PDF-Einstellungen](/help/forms/using/admin-help/configuring-pdf-settings.md)
+      + [Konfigurieren von Sicherheitseinstellungen](/help/forms/using/admin-help/configuring-security-settings.md)
+      + [Konfigurieren von Dateitypeinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md)
       + [Importieren und Exportieren der PDF Generator-Konfigurationsdateien](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A-Unterstützung aktivieren](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Einrichten eines PDFG-Netzwerkdruckers (nur Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
@@ -475,7 +475,7 @@ ht-degree: 97%
       + [Überblick über die Konfiguration von SSL](/help/forms/using/admin-help/overview-6.md)
       + [SSL für JBoss Application Server konfigurieren](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [SSL unter Windows Vista konfigurieren](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
-      + [SSL für WebLogic Server konfigurieren](/help/forms/using/admin-help/configuring-ssl-weblogic-server.md)
+      + [Konfigurieren von SSL für WebLogic Server](/help/forms/using/admin-help/configuring-ssl-weblogic-server.md)
       + [SSL für WebSphere Application Server konfigurieren](/help/forms/using/admin-help/configuring-ssl-websphere-application-server.md)
    + Arbeiten mit Document Security {#work-with-document-security}
       + [Informationen zu Document Security](/help/forms/using/admin-help/document-security.md)
@@ -507,7 +507,7 @@ ht-degree: 97%
       + [Schriften bereitstellen](/help/forms/using/admin-help/make-fonts-available.md)
       + [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Sicherheitseinstellungen angeben](/help/forms/using/admin-help/specify-security-settings.md)
-   + Konfigurieren des Arbeitsablaufs für Formulare{#configure-forms-workflow}
+   + Konfigurieren des Arbeitsablaufs für Formulare {#configure-forms-workflow}
       + [Informationen zur Administrations- und Prozessterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Prozesse verwalten](/help/forms/using/admin-help/processes.md)
       + [Konfigurieren von Geschäftskalendern](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -520,8 +520,8 @@ ht-degree: 97%
       + [Mit Aufgaben arbeiten](/help/forms/using/admin-help/tasks.md)
    + Konfigurieren von Workspace {#configure-workspace}
       + [Übersicht über den Arbeitsbereich](/help/forms/using/admin-help/overview-10.md)
-      + [Globale Einstellungen importieren und exportieren](/help/forms/using/admin-help/importing-exporting-global-settings.md)
-      + [Nachricht des Tages festlegen](/help/forms/using/admin-help/setting-message-day.md)
+      + [Importieren und Exportieren von globalen Einstellungen](/help/forms/using/admin-help/importing-exporting-global-settings.md)
+      + [Festlegen der Nachricht des Tages](/help/forms/using/admin-help/setting-message-day.md)
       + [Suchvorlagen anpassen](/help/forms/using/admin-help/customizing-search-templates.md)
       + [Die in Workspace angezeigten Kategorien verwalten](/help/forms/using/admin-help/categories-displayed-workspace.md)
    + Health Monitor {#health-monitor}
@@ -532,7 +532,7 @@ ht-degree: 97%
       + [Job Manager-Datenbank um Aufzeichnungen bereinigen](/help/forms/using/admin-help/purge-records-job-manager-database.md)
    + Warten von AEM Forms {#maintain-aem-forms}
       + [Protokolldateien](/help/forms/using/admin-help/log-files.md)
-      + [Benutzerverwaltung](/help/forms/using/admin-help/user-management.md)
+      + [User Management](/help/forms/using/admin-help/user-management.md)
       + [Überwachung der AEM Forms-Bereitstellung](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + [Work Manager und Einschränkungen](/help/forms/using/admin-help/manager-throttling.md)
       + [Ausführen von AEM Forms im Wartungsmodus](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
@@ -595,10 +595,10 @@ ht-degree: 97%
          + [Service für Acrobat Reader DC-Erweiterungen – Java-API-Schnellstart (SOAP)](developing/acrobat-reader-dc-extensions-service.md)
          + [Sicherungs- und Wiederherstellungs-Service API-Schnellstarts](developing/backup-restore-service-api-quick.md)
          + [Java API-Schnellstart (SOAP) für den Barcode-Formulardienst](developing/barcoded-forms-service-java-api.md)
-         + [Java API Quick Start (SOAP) für Komponenten und Services](developing/components-services-java-api-quick.md)
+         + [Java API-Schnellstart (SOAP) für Komponenten und Services](developing/components-services-java-api-quick.md)
          + [Convert PDF Service Java-API Schnellstart(SOAP)](developing/convert-pdf-service-java-api.md)
          + [Java API-Schnellstart (SOAP) für den Bereichtigungsdienst](developing/credential-service-java-api-quick.md)
-         + [Distiller Service Java API QuickStart(SOAP)](developing/distiller-service-java-api-quick.md)
+         + [Distiller Service Java API-Schnellstart (SOAP)](developing/distiller-service-java-api-quick.md)
          + [Kurzanleitung zur DocConverter-Service-Java-API (SOAP)](developing/docconverter-service-java-api-quick.md)
          + [Java API-Schnellstart (SOAP) für den Document Management-Dienst (veraltet)](developing/document-management-service-deprecated-java.md)
          + [Java API-Schnellstart (SOAP) für den Document Security-Dienst](developing/document-security-service-java-api.md)

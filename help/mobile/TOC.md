@@ -10,7 +10,7 @@ role: User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '331'
-ht-degree: 29%
+ht-degree: 12%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 29%
    + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
    + [Mobile Apps](mobile-apps.md)
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
-   + [AEM Mobile – Einhaltung der Datenschutz-Grundverordnung](aem-mobile-gdpr-compliance.md)
+   + [AEM Mobile - Einhaltung der DSGVO](aem-mobile-gdpr-compliance.md)
    + [Entwickeln von mobilen Apps](develop-mobile-apps.md)
 + Authoring der On-Demand Services-App {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
@@ -64,12 +64,12 @@ ht-degree: 29%
    + [App-Definitionen](phonegap-app-definitions.md)
    + [Erstellen und Verwalten von App-Inhalten](phonegap-manage-app-content.md)
    + [Erstellen einer neuen AEM Mobile-App mit dem Assistenten zum Erstellen](phonegap-create-new-app.md)
-   + [Bearbeiten von Anwendungen](phonegap-authoring-apps.md)
-   + [Kachel „App verwalten“](phonegap-app-details-tile.md)
+   + [Erstellen von mobilen Anwendungen](phonegap-authoring-apps.md)
+   + [App-Kachel verwalten](phonegap-app-details-tile.md)
    + [Personalisierung von AEM Mobile-Inhalten](phonegap-aem-mobile-content-personalization.md)
 + Entwickeln von Adobe PhoneGap Enterprise {#developphonegap}
    + [PhoneGap](developing-in-phonegap.md)
-   + [Erstellen von Mobilanwendungen](building-app-mobile-phonegap.md)
+   + [Erstellen von Mobile Apps](building-app-mobile-phonegap.md)
    + [Push-Benachrichtigungen](phonegap-push-notifications.md)
    + [Entwickeln von Mobilanwendungen in AEM](developing-mobile-applications.md)
    + [Mobil mit Inhaltssynchronisierung](phonegap-contentsync.md)
@@ -91,7 +91,7 @@ ht-degree: 29%
 + Verwalten von Adobe PhoneGap Enterprise {#administering-phonegap}
    + [Mobile Quickstart](phonegap-mobile-quickstart.md)
    + [Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM](administer-phonegap.md)
-   + [Konfigurieren des Adobe PhoneGap Build-Cloud-Service ](configure-phonegap-build-cloud.md)
-   + [Einrichten eines Referrer-Filters, um leere zu erlauben](setting-referrer-filter-empty.md)
-   + [Konfigurieren des Adobe Mobile Services Cloud-Dienstes](configure-adobe-mobile-cloud-service.md)
+   + [Adobe PhoneGap Build Cloud Service konfigurieren](configure-phonegap-build-cloud.md)
+   + [Einstellen des Referrer-Filters auf &quot;Leere erlauben&quot;](setting-referrer-filter-empty.md)
+   + [Adobe Mobile Services Cloud Service konfigurieren](configure-adobe-mobile-cloud-service.md)
    + [Konfigurieren von Benutzern und Benutzergruppen](configure-users-groups.md)

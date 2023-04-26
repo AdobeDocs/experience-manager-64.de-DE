@@ -9,7 +9,7 @@ role: Admin,User
 source-git-commit: 79ff6834acd2bc1105bbea798d946cd7354474d5
 workflow-type: tm+mt
 source-wordcount: '1077'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -53,7 +53,7 @@ In diesem archivierten Shop-Newsletter finden Sie wertvolle Ressourcen zum Wisse
    * Sehen Sie sich die On-Demand-Skill Builder-Webinare für Dynamic Media Classic an.
    * Sehen Sie sich die Dynamic Media-Sitzungen vom Online-Adobe Summit 2020 an.
    * Erfahren Sie mehr über die kostenlosen Dynamic Media Classic-Audits von Adobe.
-   * Erfüllen `Jon Monroe`, Senior Program Manager für Adobe Customer Solutions.
+   * Wir stellen vor: `Jon Monroe`, Senior Program Manager für Adobe Customer Solutions.
 
 * **[Februar 2020, Ausgabe 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=de)**
 

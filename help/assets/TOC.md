@@ -9,7 +9,7 @@ user-guide-description: Erstellen, verwalten, liefern und optimieren Sie digital
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 83%
+ht-degree: 64%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 83%
 + [Assets-Benutzerhandbuch](home.md)
 + [AEM 6.4 Assets - Versionshinweise](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html?lang=de)
 + [Über DAM](assets.md)
-+ [Verbesserungen beim Benutzererlebnis](ux-improvements.md)
++ [Verbesserungen der Benutzererfahrung](ux-improvements.md)
 + [Best Practices für Assets](best-practices-for-assets.md)
 + Verwenden von AEM Assets {#using}
    + [AEM Assets-Startseite](assets-home-page.md)
@@ -37,8 +37,8 @@ ht-degree: 83%
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media.md)
    + [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md)
-   + [Konfigurieren von Dynamic Media – Hybridmodus](config-dynamic.md)
-   + [Fehlerbehebung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
+   + [Konfigurieren von Dynamic Media - Hybridmodus](config-dynamic.md)
+   + [Fehlerbehebung in Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)
    + [Verwalten von Assets mit Dynamic Media](managing-assets.md)
    + [Best Practices für die Optimierung der Bildqualität](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Verwalten von Viewer-Vorgaben für Dynamic Media](managing-viewer-presets.md)
@@ -78,11 +78,11 @@ ht-degree: 83%
    + [Anpassen und Erweitern von Assets](extending-assets.md)
    + [Verarbeitung von Assets mit Medien-Handlern und Workflows](media-handlers.md)
    + [Erweitern der Asset-Suche](searchx.md)
-   + [Installieren und konfigurieren Sie ImageMagick, um mit AEM Assets arbeiten zu können.](best-practices-for-imagemagick.md)
+   + [Installieren und Konfigurieren von ImageMagick für die Verwendung mit AEM Assets](best-practices-for-imagemagick.md)
    + [Integrieren von Assets in den Aktivitäts-Stream](extending-activity-stream.md)
    + [Erweitern des Asset-Editors](asseteditorx.md)
    + [Assets-HTTP-API](mac-api-assets.md)
-   + [Entwicklung von Asset-Proxys](proxy.md)
+   + [Asset-Proxy-Entwicklung](proxy.md)
 + Verwalten von Assets {#administer}
    + [Von Assets unterstützte Formate](assets-formats.md)
    + [Suchfacetten](search-facets.md)
@@ -102,7 +102,7 @@ ht-degree: 83%
    + [Handbuch zur Assets-Migration](assets-migration-guide.md)
    + [XMP-Metadaten](xmp.md)
    + [Überlegungen zum Assets-Netzwerk](assets-network-considerations.md)
-   + [AEM Assets und AEM Media Library](medialibrary.md)
+   + [AEM Assets und AEM MediaLibrary](medialibrary.md)
    + [Verwenden von PDF Rasterizer](aem-pdf-rasterizer.md)
    + [Konfigurieren von Asset-Upload-Beschränkungen](configuring-asset-upload-restrictions.md)
    + [Best Practices für die Integration von AEM und Creative Cloud](aem-cc-integration-best-practices.md)
@@ -114,14 +114,14 @@ ht-degree: 83%
    + [Best Practices für die Assets-Abladung](assets-offloading-best-practices.md)
    + [Best Practices für Dateiformate in Assets](assets-file-format-best-practices.md)
    + [Asset-Überwachung – Best Practices](assets-monitoring-best-practices.md)
-   + [Unterstützung von Camera Raw](camera-raw.md)
+   + [Camera Raw Unterstützung](camera-raw.md)
    + [Erkennen des MIME-Typs von Assets mit Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Imaging Transcoding Library](imaging-transcoding-library.md)
    + [Unterstützung für IPTC-Metadaten](iptc-support.md)
    + [Metadatenschemata](metadata-schemas.md)
-   + [Multi-Tenancy für Sammlungen, Snippets sowie Snippet-Vorlagen](multi-tenancy.md)
+   + [Multi-Tenancy für Sammlungen, Snippets und Snippet-Vorlagen](multi-tenancy.md)
    + [Wasserzeichen  ](watermarking.md)
-   + [Massenimport und -export von Metadaten](metadata-import-export.md)
+   + [Massen-Metadatenimport und -export](metadata-import-export.md)
    + [Asset-Vorlagen](asset-templates.md)
    + [Best Practices für die Ordnerfreigabe aus AEM in Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Ordner-Metadatenschema](folder-metadata-schema.md)
@@ -139,7 +139,7 @@ ht-degree: 83%
    + [Zugehörige Inhalte von Inhaltsfragmenten](content-fragments-assoc-content.md)
    + [Metadaten – Fragmenteigenschaften](content-fragments-metadata.md)
    + [Inhaltsfragmente – Überlegungen zum Löschen](content-fragments-delete.md)
-   + [Inhaltsfragmente – Markdown](content-fragments-markdown.md)
+   + [Inhaltsfragmente - Markdown](content-fragments-markdown.md)
    + [Erstellen von Übersetzungsprojekten für Inhaltsfragmente](creating-translation-projects-for-content-fragments.md)
 + Verwalten von Assets {#managing}
    + [Verwalten von Assets mit der Touch-optimierten Benutzeroberfläche](managing-assets-touch-ui.md)
@@ -149,7 +149,7 @@ ht-degree: 83%
    + [Ein- und Auschecken von Dateien in Assets](check-out-and-submit-assets.md)
    + [Konfigurieren von Asset-Tags mit dem Smart Content Service](config-smart-tagging.md)
    + [Duplikatserkennung aktivieren](duplicate-detection.md)
-   + [Optimierte Sortierung von Assets in AEM](enhance-sort.md)
+   + [Erweiterte Sortierung von Assets in AEM](enhance-sort.md)
    + [Organisieren von digitalen Assets](organize-assets.md)
    + [Verwalten von Video-Assets](managing-video-assets.md)
    + [Erstellen von Übersetzungsprojekten](translation-projects.md)
@@ -166,7 +166,7 @@ ht-degree: 83%
    + [Assets Insights](touch-ui-asset-insights.md)
    + [Suchen nach Video-Assets](search-video-assets.md)
    + [Freigeben privater Ordner](private-folder.md)
-   + [Richtlinien für das Trainieren des Smart Content Service](smart-tags-training-guidelines.md)
+   + [Trainings-Richtlinien für Smart Content Service](smart-tags-training-guidelines.md)
    + [Videoausgabeformate](video-renditions.md)
 + Integration mit anderen Lösungen {#integrations}
    + [Integrationen mit [!DNL Adobe Workfront]](workfront-integrations.md)

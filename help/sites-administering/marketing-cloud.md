@@ -9,13 +9,13 @@ exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
 source-git-commit: 8220795bbf0c92ead3bb68dd6f8bbb48cc9ca2cd
 workflow-type: tm+mt
 source-wordcount: '862'
-ht-degree: 82%
+ht-degree: 46%
 
 ---
 
 # Integrieren mit Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
 
-[Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html) enthält leistungsstarke Produkte für die Web-Analyse und Website-Optimierung, die Ihnen verwertbare Echtzeitdaten und Einblicke liefern, damit Sie Online-Initiativen erfolgreich gestalten können. Sie erhalten eine integrierte und offene Plattform für die Optimierung Ihres Online-Business. Die Cloud besteht aus integrierten Anwendungen, mit denen Kundeneinblicke gesammelt werden können, die sehr nützlich sind, um die Kundenakquise, Konversions- und Bindungsmaßnahmen sowie die Erstellung und Verteilung von Inhalten zu optimieren.
+Die [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html)enthält leistungsstarke Produkte zur Webanalyse- und Website-Optimierung, die umsetzbare Echtzeitdaten und Einblicke liefern, um erfolgreiche Online-Initiativen zu fördern. Es bietet eine integrierte und offene Plattform für die Online-Geschäftsoptimierung. Die Cloud besteht aus integrierten Anwendungen, mit denen Kundeneinblicke gesammelt und freigesetzt werden können, um die Akquise, Konvertierung und Bindung von Kunden sowie die Erstellung und Verteilung von Inhalten zu optimieren.
 
 Mit Adobe Experience Manager können Sie nahtlos in die folgenden Adobe Marketing Cloud-Produkte integrieren:
 
@@ -30,18 +30,18 @@ Darüber hinaus können Sie Adobe Experience Manager in die [Creative Cloud](/he
 
 ## Integration mit Adobe Analytics {#integrating-with-adobe-analytics}
 
-[Adobe Analytics](https://www.omniture.com/de/products/analytics/sitecatalyst) ist eine branchenführende Lösung, mit der Experten für Digital Marketing integrierte Daten aller Online-Initiativen über mehrere Marketing-Kanäle hinweg messen, analysieren und optimieren können. Die Lösung ermöglicht Marketing-Experten die Web-Analyse in Echtzeit und mit verwertbaren Ergebnissen für digitale Strategien und Marketing-Initiativen. Adobe Analytics unterstützt Marketing-Experten dabei, schnell die profitabelsten Pfade einer Website zu ermitteln, Traffic zu segmentieren, um wertvolle Webbesucher zu identifizieren, herauszufinden, wohin Besucher die Website verlassen, und entscheidende Erfolgsmetriken für Online-Marketing-Kampagnen zu finden.
+[Adobe Analytics](https://www.omniture.com/de/products/analytics/sitecatalyst) ist eine branchenführende Lösung, mit der Experten für Digital Marketing integrierte Daten aller Online-Initiativen über mehrere Marketing-Kanäle hinweg messen, analysieren und optimieren können. Es bietet Marketing-Experten umsetzbare Echtzeit-Web-Analysedaten zu digitalen Strategien und Marketinginitiativen. Mit Adobe Analytics können Marketingexperten schnell die profitabelsten Pfade durch eine Website identifizieren, den Traffic segmentieren, um hochwertige Webbesucher zu erkennen, zu ermitteln, wo Besucher von der Site weg navigieren, und wichtige Erfolgsmetriken für Online-Marketingkampagnen identifizieren.
 
-Sie können Adobe Analytics nutzen, um Daten Ihrer Website zu analysieren.
+Sie können Adobe Analytics verwenden, um Daten aus Ihren Sites zu analysieren.
 
 Die Integration mit Adobe Analytics bietet Ihnen folgende Möglichkeiten:
 
 * Aktivieren von Analytics-Benutzer-Tracking
-* Zuweisen von Ausführungsmodi (z. B. Erstellen, Veröffentlichen) zu unterschiedlichen Report Suites
-* Übermitteln von Client-Kontextvariablen als Konversionsvariablen oder Traffic-Eigenschaften
-* Verwenden von vordefinierten Variablenzuweisungen
-* Konfigurieren von gesamten Websiteabschnitten auf einmal
-* Nachverfolgen von benutzerdefinierten Ereignissen
+* Ordnen Sie Ihre Ausführungsmodi (z. B. Autor, Veröffentlichung) verschiedenen Report Suites zu.
+* Senden Sie ClientContext-Variablen als Konversionsvariablen oder Traffic-Eigenschaften.
+* Verwenden Sie vordefinierte Variablenzuordnungen.
+* Konfigurieren Sie vollständige Sitebereiche gleichzeitig.
+* Verfolgen Sie benutzerdefinierte Ereignisse.
 
 Informationen zur Integration von Adobe Experience Manager in Analytics finden Sie unter [Integration mit Adobe Analytics](/help/sites-administering/adobeanalytics.md).
 
@@ -51,7 +51,7 @@ Der [Opt-in-Assistent](/help/sites-administering/opt-in.md) erleichtert die Durc
 
 [Adobe Target wird von Marketing-Experten genutzt, um Online-Tests zu entwerfen und auszuführen, in kurzer Zeit Zielgruppensegmente zu erstellen (anhand des Verhaltens) und das Targeting für Inhalte und Online-Erlebnisse zu automatisieren.](https://www.omniture.com/de/products/conversion/test-and-target)
 
-Die Wünsche der Onlinekunden entwickeln sich ständig weiter und für die Vielzahl von Websites und Inhaltsquellen, die zur Auswahl stehen, werden relevante und auch personalisierte Inhalte erwartet. Um eine Online-Zielgruppe zu erreichen, ist es wichtig, dass Experten für Online-Marketing schnell identifizieren, welche Angebote und Inhalte für ihre Zielgruppen relevant und interessant sind. Basierend auf diesem Wissen müssen Marketing-Experten die Möglichkeit haben, ihre Website ständig weiterzuentwickeln und die entsprechenden Inhalte auf unterschiedliche Zielgruppen auszurichten.
+Online-Verbraucher haben heutzutage ständig wachsende Anforderungen und erwarten relevante, sogar personalisierte Inhalte von den verschiedensten Sites und Inhaltsquellen, aus denen sie wählen können. Um eine Online-Zielgruppe zu erreichen, müssen Online-Marketing-Experten schnell ermitteln, welche Angebote und Inhalte für ihre Zielgruppen relevant und überzeugend sind. Mit diesem Wissen können Marketingexperten ihre Sites kontinuierlich weiterentwickeln und die entsprechenden Inhalte auf verschiedene Zielgruppen ausrichten.
 
 [Integration mit Adobe Target](/help/sites-administering/target.md) erläutert, wie Sie Ihre Site in Adobe Target integrieren.
 
@@ -59,11 +59,11 @@ Der [Opt-in-Assistent](/help/sites-administering/opt-in.md) erleichtert die Durc
 
 ## Opt-in für Analytics und Target {#opting-in-to-analytics-and-target}
 
-Adobe Experience Manager bietet ein einfaches Opt-in-Verfahren zur Integration in Adobe Analytics und Adobe Target. Wenn Sie sich als Administrator anmelden und zur Projektekonsole navigieren, wird ein Opt-in-Assistent angezeigt.
+Adobe Experience Manager bietet ein einfaches Opt-in-Verfahren zur Integration in Adobe Analytics und Adobe Target. Wenn Sie sich als Administrator anmelden und die Projektekonsole aufrufen, wird Ihnen ein Opt-in-Assistent angezeigt.
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Führen Sie den Opt-in für die Integration mit Analytics bzw. Target durch, um die Nutzung der Funktionen für das Seiten-Tracking und die Analyse sowie für die Personalisierung zu ermöglichen. Für den Opt-in müssen Sie Ihre Benutzerkontoinformationen und die nachverfolgten Seiten angeben.
+Nutzen Sie die Integration in Analytics und/oder Target , um die Verwendung der Tracking- und Analysefunktionen sowie der Personalisierungsfunktionen ihrer Seiten zu ermöglichen. Wenn Sie sich anmelden, müssen Sie Ihre Benutzerkontoinformationen angeben und die verfolgten Seiten angeben.
 
 Weitere Informationen finden Sie unter [Opt-in für Adobe Analytics und Target](/help/sites-administering/opt-in.md).
 
@@ -83,7 +83,7 @@ Weitere Informationen zur Integration von Adobe Experience Manager in Dynamic Me
 
 [Integrieren von Adobe Dynamic Tag Management](/help/sites-administering/dtm.md) mit Adobe Experience Manager verwenden, damit Sie Ihre Dynamic Tag Management-Webeigenschaften verwenden können, um Adobe Experience Manager-Sites zu verfolgen.
 
-## Integrieren mit Adobe Audience Manager {#integrating-with-adobe-audience-manager}
+## Integration mit Adobe Audience Manager {#integrating-with-adobe-audience-manager}
 
 Die Audience Manager-Integration wurde in Adobe Experience Manager 6.3 entfernt.
 
