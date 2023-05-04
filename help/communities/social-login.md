@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 role: Admin
 exl-id: 85dcae2f-0773-4867-a24c-056bd2f5585e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2820'
+source-wordcount: '2856'
 ht-degree: 2%
 
 ---
 
 # Anmeldung über Social Media mit Facebook und Twitter {#social-login-with-facebook-and-twitter}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Anmeldung in Social bietet die Möglichkeit, einem Site-Besucher die Möglichkeit zu geben, sich mit seinem Facebook- oder Twitter-Konto anzumelden. Daher können Sie zulässige Facebook- oder Twitter-Daten in ihr AEM-Mitgliederprofil aufnehmen.
 
@@ -110,7 +114,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**. Wählen Sie Ihren Kontext aus und bearbeiten Sie Eigenschaften. Aktivieren Sie Cloud-Konfigurationen , falls noch nicht aktiviert.
 
    ![config-propertiespng](assets/config-propertiespng.png)
-   * Weitere Informationen finden Sie in der Dokumentation zum [](/help/sites-administering/configurations.md)Konfigurationsbrowser.
+   * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurations-Browser.](/help/sites-administering/configurations.md)
 
 1. Erstellen/Bearbeiten Sie die Konfiguration des Facebook-Cloud-Service.
 
@@ -215,10 +219,10 @@ Zur Aktivierung der Anmeldung über Twitter Social ist eine konfigurierte Twitte
 
 Befolgen Sie die aktuellen Anweisungen zum Erstellen einer neuen Twitter-Anwendung unter [https://apps.twitter.com](https://apps.twitter.com/).
 
-Im Allgemeinen:
+Allgemein:
 
 1. Geben Sie einen *Name* , die Ihre Twitter-Anwendung für die Benutzer Ihrer Website identifizieren.
-1. Eingabe einer *Beschreibung.*
+1. Geben Sie einen *Beschreibung.*
 1. Für *website* - enter https://&lt;server>/.
 1. Für *Callback-URL* - enter https://&lt;server>/.
 
@@ -259,7 +263,7 @@ Die [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicat
 1. Wählen Sie **[!UICONTROL Tools > Allgemein > Konfigurationsbrowser]**. Wählen Sie Ihren Kontext aus und bearbeiten Sie Eigenschaften. Aktivieren Sie Cloud-Konfigurationen , falls noch nicht aktiviert.
 
    ![twitterconfigpropng](assets/twitterconfigproppng.png)
-   * Weitere Informationen finden Sie in der Dokumentation zum [](/help/sites-administering/configurations.md)Konfigurationsbrowser.
+   * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurations-Browser.](/help/sites-administering/configurations.md)
 
 1. Erstellen/Bearbeiten Sie die Konfiguration des Twitter-Cloud-Service.
 
@@ -452,7 +456,7 @@ Auf einer Autoreninstanz, die mit Administratorrechten angemeldet ist:
    * Unter Knoten /oak:index
    * Knoten ntBaseLucene auswählen
    * Klicken Sie auf **[!UICONTROL Kopieren]**
-   * Auswählen `/oak:index`
+   * Klicken Sie auf `/oak:index`
    * Auswählen **[!UICONTROL Einfügen]**
    * Kopie von ntBaseLucene in ntBaseLucene-oauth umbenennen
 

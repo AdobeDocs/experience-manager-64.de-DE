@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines benutzerdefinierten Symbolleistenlayouts
+title: Erstellen eines benutzerdefinierten Symbolleisten-Layouts
 seo-title: Creating custom toolbar layout
 description: Sie können ein Symbolleistenlayout für das Formular festlegen. Das Symbolleistenlayout definiert die Befehle und das Layout der Symbolleiste im Formular.
 seo-description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
@@ -9,32 +9,36 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 exl-id: 1b273437-8d71-4224-bdcd-0ae522ae8913
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 96%
+source-wordcount: '563'
+ht-degree: 49%
 
 ---
 
-# Erstellen eines benutzerdefinierten Symbolleistenlayouts {#creating-custom-toolbar-layout}
+# Erstellen eines benutzerdefinierten Symbolleisten-Layouts {#creating-custom-toolbar-layout}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Symbolleistenlayouts {#layout}
 
 Wenn Sie ein adaptives Formular erstellen, können Sie ein Symbolleistenlayout für das Formular festlegen. Das Symbolleistenlayout definiert die Befehle und das Layout der Symbolleiste im Formular.
 
-Die Verwendungen des Symbolleistenlayouts hängen stark von der clientseitigen Verarbeitung ab, die von komplexem JavaScript- und CSS-Code gesteuert wird. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein. Um Abhilfe zu schaffen, stellt AEM clientseitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Webseite, um den korrekten Code zu laden. Detaillierte Informationen dazu finden Sie unter [Funktionen von clientseitigen Bibliotheken in AEM.](/help/sites-developing/clientlibs.md)
+Die Verwendung des Symbolleistenlayouts beruht in hohem Maße auf der clientseitigen Verarbeitung, die von komplexem JavaScript- und CSS-Code gesteuert wird. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein. Um Abhilfe zu schaffen, stellt AEM clientseitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Webseite, um den korrekten Code zu laden. Detaillierte Informationen finden Sie unter [Funktionsweise clientseitiger Bibliotheken in AEM.](/help/sites-developing/clientlibs.md)
 
 ![Beispiellayout der Symbolleiste](assets/default_toolbar_layout.png)
 **Abbildung:** *Beispiellayout der Symbolleiste*
 
-Adaptive Formulare enthalten einen standardmäßigen Satz mit Layouts:
+Adaptive Formulare bieten einen Satz vordefinierter Layouts:
 
 ![Standardmäßig verfügbare Symbolleistenlayouts ](assets/toolbar1.png)
 **Abbildung:** *Vordefinierte Symbolleistenlayouts*
 
 Darüber hinaus können Sie ein benutzerdefiniertes Symbolleistenlayout erstellen.
 
-Im Folgenden werden die Schritte erläutert, um eine benutzerdefinierte Symbolleiste zu erstellen, die drei Aktionen in der Symbolleiste und die anderen Aktionen in einer Dropdown-Liste in der Symbolleiste anzeigt.
+Das folgende Verfahren beschreibt die Schritte zum Erstellen einer benutzerdefinierten Symbolleiste, die drei Aktionen in der Symbolleiste und die anderen Aktionen in einer Dropdown-Liste in der Symbolleiste anzeigt.
 
 Das angehängte Inhaltspaket enthält den gesamten unten beschriebenen Code. Nach der Installation des Inhaltspakets öffnen Sie `/content/forms/af/CustomLayoutDemo.html`, um das Beispiel für ein benutzerdefiniertes Symbolleisten-Layout anzuzeigen.
 
@@ -43,9 +47,9 @@ CustomToolbarLayoutDemo.zip
 [Datei abrufen](assets/customtoolbarlayoutdemo.zip)
 Beispiel für ein benutzerdefiniertes Symbolleisten-Layout
 
-## Erstellen eines benutzerdefinierten Symbolleistenlayouts {#layout-1}
+## So erstellen Sie ein benutzerdefiniertes Symbolleistenlayout {#layout-1}
 
-1. Erstellen Sie einen Ordner für Ihre benutzerdefinierten Symbolleistenlayouts. Beispiel:
+1. Erstellen Sie einen Ordner, um Ihre benutzerdefinierten Symbolleistenlayouts zu verwalten. Beispiel:
 
    `/apps/customlayout/toolbar`.
 
@@ -63,7 +67,7 @@ Beispiel für ein benutzerdefiniertes Symbolleisten-Layout
 
 1. Benennen Sie den kopierten Knoten `mobileFixedToolbarLayout` in `customToolbarLayout.` um.
 
-   Geben Sie außerdem eine relevante Beschreibung für den Knoten an. Beispiel: Ändern Sie jcr:description des Knotens in **Benutzerdefiniertes Layout für Symbolleiste**.
+   Geben Sie außerdem eine relevante Beschreibung für den Knoten an. Ändern Sie beispielsweise die jcr:description des Knotens in **Benutzerdefiniertes Layout für Symbolleiste**.
 
    Die Eigenschaft `guideComponentType` des Knotens legt den Layouttyp fest. In diesem Fall ist der Layouttyp „Symbolleiste“. Daher wird er in der Auswahl-Dropdown-Liste für das Symbolleistenlayout angezeigt.
 
@@ -75,13 +79,13 @@ Beispiel für ein benutzerdefiniertes Symbolleisten-Layout
 
    ![Liste der verfügbaren Symbolleistenlayouts](assets/toolbar4.png)
 
-   Liste der verfügbaren Symbolleistenlayouts
+   Liste der verfügbaren Symbolleisten-Layouts
 
    >[!NOTE]
    >
-   >Die Beschreibung, die im vorherigen Schritt aktualisiert wurde, wird in der Dropdown-Liste „Layout“ angezeigt.
+   >Die im vorherigen Schritt aktualisierte Beschreibung wird in der Dropdown-Liste Layout angezeigt.
 
-1. Wählen Sie dieses benutzerdefinierte Symbolleistenlayout und klicken Sie auf „OK“.
+1. Wählen Sie dieses benutzerdefinierte Symbolleistenlayout aus und klicken Sie auf &quot;OK&quot;.
 
    Fügen Sie clientlib (javascript und css) im Knoten `/etc/customlayout` hinzu und nehmen Sie den Verweis der clientlib in `customToolbarLayout.jsp` auf.
 
@@ -105,7 +109,7 @@ Beispiel für ein benutzerdefiniertes Symbolleisten-Layout
 
    >[!NOTE]
    >
-   >Fügen Sie die guidetoolbar-Klasse für das Layout hinzu. Die standardmäßigen Stile für die Symbolleiste werden im Hinblick auf die guidetoolbar-Klasse definiert.
+   >Fügen Sie die guidetoolbar-Klasse für das Layout hinzu. Der vordefinierte Stil für die Symbolleiste wird in Bezug auf die guidetoolbar-Klasse definiert.
 
    Beispiel `toolBarCommon.jsp`:
 
@@ -164,7 +168,7 @@ Beispiel für ein benutzerdefiniertes Symbolleisten-Layout
    </c:forEach>
    ```
 
-   Die CSS innerhalb des Knotens clientlib:
+   Das CSS, das im Knoten clientlib vorhanden ist:
 
    ```css
    .mobilecustomToolbar .dropdown {
@@ -226,7 +230,7 @@ Beispiel für ein benutzerdefiniertes Symbolleisten-Layout
 
 >[!NOTE]
 >
->Die Beschreibung, die im vorherigen Schritt aktualisiert wurde, wird in der Dropdown-Liste „Layout“ angezeigt.
+>Die im vorherigen Schritt aktualisierte Beschreibung wird in der Dropdown-Liste Layout angezeigt.
 
 ![Desktop-Ansicht der Symbolleiste mit benutzerdefiniertem Layout](assets/toolbar_1.png)
 **Abbildung:** *Desktop-Ansicht der Symbolleiste mit benutzerdefiniertem Layout*

@@ -1,7 +1,7 @@
 ---
-title: Entwicklung von Formularen (klassische Benutzeroberfläche)
+title: Entwickeln von Formularen (klassische Benutzeroberfläche)
 seo-title: Developing Forms (Classic UI)
-description: Lernen Sie das Entwickeln von Formularen
+description: Erfahren Sie, wie Sie Formulare entwickeln
 seo-description: Learn how to develop forms
 uuid: 124e63ba-8d87-4173-aa35-7809b39811d7
 contentOwner: Guillaume Carlino
@@ -10,20 +10,24 @@ topic-tags: components
 content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 exl-id: 6d52babc-9477-4528-9c25-35cb729f5d78
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 92%
+source-wordcount: '1977'
+ht-degree: 58%
 
 ---
 
-# Entwicklung von Formularen (klassische Benutzeroberfläche){#developing-forms-classic-ui}
+# Entwickeln von Formularen (klassische Benutzeroberfläche){#developing-forms-classic-ui}
 
-Die grundlegende Struktur eines Formulars sieht wie folgt aus:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die grundlegende Struktur eines Formulars ist:
 
 * Beginn des Formulars
 * Formularelemente
-* Ende des Formulars
+* Formular-Ende
 
 All diese Teile werden mit einer Reihe standardmäßiger [Formularkomponenten](/help/sites-authoring/default-components.md) realisiert, die in einer Standard-AEM-Installation verfügbar sind.
 
@@ -39,33 +43,33 @@ Neben der [Entwicklung neuer Komponenten](/help/sites-developing/developing-comp
 
 >[!NOTE]
 >
->Dieses Dokument befasst sich hauptsächlich mit der Entwicklung von Formularen mit den [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md) in der klassischen Benutzeroberfläche. Adobe empfiehlt, bei der Formularentwicklung in der Touch-optimierten Benutzeroberfläche die neuen [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und [Ausblendebedingungen](/help/sites-developing/hide-conditions.md) zu nutzen.
+>Dieses Dokument konzentriert sich auf die Entwicklung von Formularen mit dem [Foundation-Komponenten](/help/sites-authoring/default-components-foundation.md) in der klassischen Benutzeroberfläche. Adobe empfiehlt die Nutzung der neuen [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und [Bedingungen ausblenden](/help/sites-developing/hide-conditions.md) für die Formularentwicklung in der Touch-optimierten Benutzeroberfläche.
 
-## Vorausfüllen von Formularwerten {#preloading-form-values}
+## Vorabladen von Formularwerten {#preloading-form-values}
 
-Die Formular-Start-Komponente stellt ein Feld für den **Ladepfad** bereit. Dies ist ein optionaler Pfad, der auf einen Knoten im Repository verweist.
+Die Formular-Startkomponente stellt ein Feld für die **Ladepfad**, ein optionaler Pfad, der auf einen Knoten im Repository verweist.
 
-Der Ladepfad ist der Pfad zu den Knoteneigenschaften, mit dem vordefinierte Werte in mehrere Felder im Formular geladen werden.
+Der Ladepfad ist der Pfad zu Knoteneigenschaften, mit dem vordefinierte Werte in mehrere Felder im Formular geladen werden.
 
 Dies ist ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt. Wenn dieser Knoten Eigenschaften hat, die den Feldnamen entsprechen, werden die jeweiligen Felder im Formular vorab mit den Werten dieser Eigenschaften ausgefüllt. Wenn keine Übereinstimmung besteht, steht im Feld der Standardwert.
 
 >[!NOTE]
 >
->Eine [Formularaktion](#developing-your-own-form-actions) kann auch festlegen, von welcher Ressource die Anfangswerte geladen werden. Dies erfolgt mit `FormsHelper#setFormLoadResource` in `init.jsp`.
+>A [Formularaktion](#developing-your-own-form-actions) kann auch die Ressource festlegen, von der die Anfangswerte geladen werden sollen. Dies erfolgt mit `FormsHelper#setFormLoadResource` in `init.jsp`.
 >
->Das Formular wird nur über den Pfad, den der Autor in der Formular-Start-Komponente festgelegt hat, ausgefüllt, wenn dies nicht festgelegt wurde.
+>Nur wenn dies nicht festgelegt ist, wird das Formular vom Autor aus dem in der Formular-Startkomponente festgelegten Pfad ausgefüllt.
 
 ## Vorabladen von Formularfeldern mit mehreren Werten {#preloading-form-fields-with-multiple-values}
 
-Einige Formularfelder haben auch den **Element-Ladepfad**. Dies ist ein weiterer optionaler Pfad, der auf einen Knoten im Repository verweist.
+Verschiedene Formularfelder verfügen auch über die **Element-Ladepfad**, wiederum ein optionaler Pfad, der auf einen Knoten im Repository verweist.
 
 Der **Element-Ladepfad** ist der Pfad zu Knoteneigenschaften, mit dem vordefinierte Werte in dieses Formularfeld geladen werden – z. B. eine [Dropdown-Liste](/help/sites-authoring/default-components-foundation.md#dropdown-list), eine [Gruppe von Kontrollkästchen](/help/sites-authoring/default-components-foundation.md#checkbox-group) oder eine [Gruppe von Optionsschaltern](/help/sites-authoring/default-components-foundation.md#radio-group).
 
-### Beispiel: Vorabladen einer Dropdown-Liste mit mehreren Werten {#example-preloading-a-dropdown-list-with-multiple-values}
+### Beispiel - Vorausfüllen einer Dropdown-Liste mit mehreren Werten {#example-preloading-a-dropdown-list-with-multiple-values}
 
-Eine Dropdown-Liste kann mit Ihren Werten konfiguriert werden, die ausgewählt werden können.
+Eine Dropdown-Liste kann mit Ihrem Wertebereich zur Auswahl konfiguriert werden.
 
-Mit dem **Element-Ladepfad** kann auf eine Liste aus einem Ordner im Repository zugegriffen werden, die in das Feld geladen wird:
+Die **Element-Ladepfad** kann verwendet werden, um auf eine Liste aus einem Ordner im Repository zuzugreifen und sie in das Feld vorab zu laden:
 
 1. Erstellen Sie einen neuen Sling-Ordner ( `sling:Folder`)
 
@@ -73,7 +77,7 @@ Mit dem **Element-Ladepfad** kann auf eine Liste aus einem Ordner im Repository 
 
 1. Fügen Sie eine neue Eigenschaft (z. B. `myList`) des Typs mehrwertige Zeichenfolge (`String[]`) hinzu, die eine Liste der Dropdown-Elemente enthält. Sie können auch mithilfe eines Skripts Inhalte importieren, z. B. mit einem JSP-Skript oder cURL in einem Shell-Skript.
 
-1. Verwenden Sie im Feld **Elemente-Ladepfad** den vollständigen Pfad:
+1. Verwenden Sie den vollständigen Pfad im **Element-Ladepfad** -Feld:
 
    Beispiel: `/etc/designs/geometrixx/formlistvalues/myList`
 
@@ -88,13 +92,13 @@ generiert AEM die Liste wie folgt:
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
 
-Diese Funktion kann beispielsweise in einer mehrsprachigen Umgebung nützlich sein.
+Diese Funktion kann beispielsweise in einer mehrsprachigen Umgebung gut genutzt werden.
 
-### Entwicklung Ihrer eigenen Formularaktionen {#developing-your-own-form-actions}
+### Entwickeln eigener Formularaktionen {#developing-your-own-form-actions}
 
-Für ein Formular ist eine Aktion erforderlich. Die Aktion bestimmt den Vorgang, der ausgeführt wird, wenn das Formular mit Benutzerdaten eingereicht wird.
+Für ein Formular ist eine Aktion erforderlich. Eine Aktion definiert den Vorgang, der ausgeführt wird, wenn das Formular mit den Benutzerdaten gesendet wird.
 
-Mit einer Standardinstallation von AEM stehen verschiedene Aktionen zur Verfügung. Sie finden diese unter:
+Eine Reihe von Aktionen wird mit einer standardmäßigen AEM-Installation bereitgestellt. Diese sind zu sehen unter:
 
 `/libs/foundation/components/form/actions`
 
@@ -121,11 +125,11 @@ Sie können Ihre eigene Aktion wie folgt unter `/apps` hinzufügen:
       * `jcr:title`: Geben Sie einen Titel Ihrer Wahl an, der in der Dropdown-Auswahlliste angezeigt wird. Wenn Sie dies nicht festlegen, wird der Name des Knotens angezeigt
       * `jcr:description`: Geben Sie eine Beschreibung Ihrer Wahl ein
 
-1. Erstellen Sie im Ordner einen Dialogknoten:
+1. Erstellen Sie im Ordner einen Dialogfeldknoten:
 
-   1. Fügen Sie Felder hinzu, damit der Autor das Formular-Dialogfeld bearbeiten kann, nachdem die Aktion ausgewählt wurde.
+   1. Fügen Sie Felder hinzu, damit der Autor das Dialogfeld &quot;Formulare&quot;bearbeiten kann, sobald die Aktion ausgewählt wurde.
 
-1. Im Ordner erstellen Sie entweder:
+1. Erstellen Sie im Ordner entweder:
 
    1. Ein Postskript.
 
@@ -188,20 +192,20 @@ Sie können Ihre eigene Aktion wie folgt unter `/apps` hinzufügen:
 
       Dieses Skript kann für die Bereinigung verwendet werden.
 
-1. Verwenden Sie die **Formular**-Komponente in einem parsys. Das Dropdown-Menü **Aktionstyp** enthält nun Ihre neue Aktion.
+1. Verwenden Sie die **Forms** -Komponente in einem parsys. Die **Aktionstyp** -Dropdown-Liste enthält jetzt Ihre neue Aktion.
 
    >[!NOTE]
    >
-   >So zeigen Sie weitere Standardaktionen, die im Produkt inbegriffen sind:
+   >So zeigen Sie Standardaktionen an, die Teil des Produkts sind:
    >
    >`/libs/foundation/components/form/actions`
 
-### Entwicklung Ihrer eigenen Formulareinschränkungen {#developing-your-own-form-constraints}
+### Entwickeln eigener Formularbeschränkungen {#developing-your-own-form-constraints}
 
-Einschränkungen können auf zwei Ebenen angewendet werden:
+Beschränkungen können auf zwei Ebenen auferlegt werden:
 
-* Für [einzelne Felder (siehe nachfolgendes Verfahren)](#constraints-for-individual-fields)
-* Als [globale Validierung für das Formular](#form-global-constraints)
+* Für [einzelne Felder (siehe das folgende Verfahren)](#constraints-for-individual-fields)
+* As [Formular-globale Validierung](#form-global-constraints)
 
 #### Einschränkungen für einzelne Felder {#constraints-for-individual-fields}
 
@@ -234,11 +238,11 @@ Sie können wie folgt Ihre eigenen Einschränkungen für ein einzelnes Feld hinz
 
       Der Name des Skripts lautet `servervalidation.<extension>`, z. B. `servervalidation.jsp`
 
-      Dies wird beim Senden des Formulars aufgerufen. Es kann verwendet werden, um das Feld auf dem Server zu validieren, nachdem das Formular eingereicht wurde.
+      Dies wird beim Senden des Formulars aufgerufen. Sie kann verwendet werden, um das Feld auf dem Server zu validieren, nachdem es gesendet wurde.
 
 >[!NOTE]
 >
->Sie finden einige Beispiele für Einschränkungen unter:
+>Beispielbegrenzungen finden Sie unter:
 >
 >`/libs/foundation/components/form/constraints`
 
@@ -255,24 +259,24 @@ Anschließend können Sie Folgendes definieren:
 
 ### Ein- und Ausblenden von Formularkomponenten {#showing-and-hiding-form-components}
 
-Sie können das Formular so konfigurieren, dass Formularkomponenten abhängig vom Wert anderer Formularfelder ein- oder ausgeblendet werden.
+Sie können Ihr Formular so konfigurieren, dass Formularkomponenten entsprechend dem Wert anderer Felder im Formular ein- oder ausgeblendet werden.
 
-Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist. Auf einem Feedback-Formular werden Kunden beispielsweise gefragt, ob ihnen Produktinformationen per E-Mail zugesendet werden sollen. Nach der Auswahl von „Ja“ wird ein Textfeld eingeblendet, damit der Kunde seine E-Mail-Adresse eingeben kann.
+Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist. Auf einem Feedback-Formular werden Kunden beispielsweise gefragt, ob ihnen Produktinformationen per E-Mail zugesendet werden sollen. Bei Auswahl von Ja erscheint ein Textfeld, in das der Kunde seine E-Mail-Adresse eingeben kann.
 
 Legen Sie mit dem Dialogfeld **Einblenden-/Ausblenden-Regeln bearbeiten** die Bedingungen fest, unter denen eine Formularkomponente ein- oder ausgeblendet wird.
 
 ![showhideeditor](assets/showhideeditor.png)
 
-Legen Sie mit den Feldern, die im Dialogfeld oben sind, die folgenden Informationen fest:
+Verwenden Sie die Felder oben im Dialogfeld, um die folgenden Informationen anzugeben:
 
-* Ob Sie Bedingungen zum Ausblenden oder Einblenden der Komponente festlegen.
-* Ob eine oder alle Bedingungen erfüllt sein müssen, um die Komponente ein- oder auszublenden.
+* Gibt an, ob Sie Bedingungen zum Ausblenden oder Einblenden der Komponente festlegen.
+* Ob eine oder alle Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden.
 
-Eine oder mehrere Bedingungen werden unter diesen Feldern eingeblendet. Eine Bedingung vergleicht den Wert einer anderen Formularkomponente (auf dem gleichen Formular) mit einem Wert. Wenn der tatsächliche Wert im Feld die Bedingung erfüllt, wird die Bedingung als wahr ausgewertet. Bedingungen enthalten die folgenden Informationen:
+Eine oder mehrere Bedingungen werden unter diesen Feldern eingeblendet. Eine Bedingung vergleicht den Wert einer anderen Formularkomponente (im selben Formular) mit einem Wert. Wenn der tatsächliche Wert im Feld die Bedingung erfüllt, wird die Bedingung als wahr ausgewertet. Bedingungen enthalten die folgenden Informationen:
 
-* Den Titel des Formularfeldes, das geprüft wird.
-* Einen Operator.
-* Einen Wert, mit dem der Feldwert verglichen wird.
+* Der Titel des Formularfelds, das getestet wird.
+* Operator.
+* Ein Wert mit dem Feldwert wird verglichen.
 
 Beispiel: eine Optionsfeldgruppen-Komponente mit dem Titel `Receive email notifications?`* * enthält die Optionsfelder `Yes` und `No`. Eine Textfeld-Komponente mit dem Titel `Email Address` verwendet die folgende Bedingung, damit sie sichtbar wird, wenn `Yes` ausgewählt wird:
 
@@ -286,15 +290,15 @@ In JavaScript verweisen Bedingungen mit dem Wert der Eigenschaft „Elementname�
 
 1. Bearbeiten Sie die entsprechende Formular-Komponente.
 
-1. Wählen Sie **Einblenden/Ausblenden**, um das Dialogfeld **Einblenden-/Ausblenden-Regeln bearbeiten** zu öffnen:
+1. Auswählen **Einblenden/Ausblenden** , um **Einblenden-/Ausblenden-Regeln bearbeiten** dialog:
 
-   * Wählen Sie in der ersten Dropdown-Liste entweder **Einblenden** oder **Ausblenden** aus, um anzugeben, ob die Bedingungen das Einblenden oder das Ausblenden der Komponente bestimmen.
+   * Wählen Sie in der ersten Dropdown-Liste entweder **Anzeigen** oder **Ausblenden** um anzugeben, ob Ihre Bedingungen bestimmen, ob die Komponente ein- oder ausgeblendet werden soll.
    * Wählen Sie in der Dropdown-Liste am Ende der obersten Zeile Folgendes aus:
 
-      * **Alle**: Wenn alle Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden.
-      * **Beliebig**: Wenn nur eine oder mehrere Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden
-   * Wählen Sie in der Bedingungszeile (eine wird als Standard gezeigt) eine Komponente und einen Operator aus und geben Sie einen Wert an.
-   * Klicken Sie bei Bedarf auf **Bedingung hinzufügen**, um weitere Bedingungen hinzuzufügen.
+      * **all** - wenn alle Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden
+      * **any** - wenn nur eine oder mehrere Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden
+   * Wählen Sie in der Bedingungszeile (standardmäßig eine) eine Komponente und einen Operator aus und geben Sie dann einen Wert an.
+   * Fügen Sie bei Bedarf weitere Bedingungen hinzu, indem Sie auf **Bedingung hinzufügen**.
 
    Beispiel:
 
@@ -302,9 +306,9 @@ In JavaScript verweisen Bedingungen mit dem Wert der Eigenschaft „Elementname�
 
 1. Klicken Sie auf **OK**, um die Definition zu speichern.
 
-1. Nachdem Sie Ihre Definition gespeichert haben, wird in den Eigenschaften der Formularkomponente der Link **Regeln bearbeiten** neben der Option **Einblenden/Ausblenden** angezeigt. Klicken Sie auf diesen Link, um das Dialogfeld **Einblenden-/Ausblenden-Regeln bearbeiten** zu öffnen, damit Sie Änderungen vornehmen können.
+1. Nachdem Sie Ihre Definition gespeichert haben, wird ein **Regeln bearbeiten** neben dem **Einblenden/Ausblenden** in den Eigenschaften der Formularkomponente. Klicken Sie auf diesen Link, um **Einblenden-/Ausblenden-Regeln bearbeiten** Dialogfeld, um Änderungen vorzunehmen.
 
-   Klicken Sie auf **OK**, um alle Änderungen zu speichern.
+   Klicken **OK** , um alle Änderungen zu speichern.
 
    ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -316,7 +320,7 @@ In JavaScript verweisen Bedingungen mit dem Wert der Eigenschaft „Elementname�
    >* in der Veröffentlichungsumgebung
 
 
-#### Behandlung von nicht mehr gültigen Komponentenverweisen {#handling-broken-component-references}
+#### Umgang mit fehlerhaften Komponentenverweisen {#handling-broken-component-references}
 
 Einblenden/Ausblenden-Bedingungen verweisen mit dem Wert der Eigenschaft „Elementname“ auf andere auf dem Formular befindliche Komponenten. Die Einblenden/Ausblenden-Konfiguration ist ungültig, wenn eine der Bedingungen auf eine Komponente verweist, die gelöscht oder bei der die Eigenschaft „Elementname“ geändert wurde. In diesen Fällen müssen Sie die Bedingungen manuell aktualisieren. Anderenfalls tritt beim Laden des Formulars ein Fehler auf.
 

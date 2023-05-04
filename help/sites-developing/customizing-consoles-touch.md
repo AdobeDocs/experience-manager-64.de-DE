@@ -1,7 +1,7 @@
 ---
 title: Anpassen der Konsolen
 seo-title: Customizing the Consoles
-description: AEM bietet verschiedene Methoden zum Anpassen der Konsolen Ihrer Autoreninstanz.
+description: AEM bietet verschiedene Mechanismen, mit denen Sie die Konsolen Ihrer Authoring-Instanz anpassen können
 seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
 uuid: f10cea87-ef8a-468e-94ca-89a1017dcf44
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 76%
+source-wordcount: '714'
+ht-degree: 52%
 
 ---
 
@@ -21,26 +21,30 @@ ht-degree: 76%
 
 >[!CAUTION]
 >
->In diesem Dokument wird beschrieben, wie Sie Konsolen in der modernen, Touch-optimierten Benutzeroberfläche anpassen. Die Hinweise gelten nicht für die klassische Benutzeroberfläche.
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Autoreninstanz.
+>[!CAUTION]
+>
+>In diesem Dokument wird beschrieben, wie Sie Konsolen in der modernen, Touch-optimierten Benutzeroberfläche anpassen. Es gilt nicht für die klassische Benutzeroberfläche.
 
-* Clientlibs
+AEM bietet verschiedene Mechanismen, mit denen Sie die Konsolen (und die [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Authoring-Instanz.
 
-   Clientlibs ermöglichen es Ihnen, die Standardimplementierung zu erweitern, um neue Funktionen zu realisieren und gleichzeitig die Standardfunktionen, -objekte und -methoden wiederzuverwenden. Bei der Anpassung können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+* Clientbibliotheken
+
+   Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie unter `/apps.` Ihre eigene Clientbibliothek erstellen. Beispielsweise kann sie den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
 * Überlagerungen
 
-   Überlagerungen basieren auf Knotendefinitionen und ermöglichen die Überlagerung der Standardfunktionen (in `/libs`) mit Ihrer eigenen benutzerdefinierten Funktionalität (in `/apps`). Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
+   Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
 
-Überlagerungen können vielseitig zum Erweitern von AEM-Konsolen verwendet werden. Einige davon sind nachstehend (allgemein) beschrieben.
+Diese können auf viele Arten verwendet werden, um Ihre AEM Konsolen zu erweitern. Einige davon sind nachstehend (allgemein) beschrieben.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter:
 >
->* Verwenden und Erstellen von [Clientbibliotheken](/help/sites-developing/clientlibs.md).
->* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
+>* Verwenden und Erstellen [clientlibs](/help/sites-developing/clientlibs.md).
+>* Verwenden und Erstellen [Overlays](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
 >Dieses Thema wird auch in der [AEM Gems-Sitzung Anpassung der Benutzeroberfläche für AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-user-interface-customization-for-aem6.html) behandelt.
@@ -51,9 +55,9 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 >
 >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
->Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
+>Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
+>1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
@@ -93,7 +97,7 @@ Beispielsweise die folgenden Stellen innerhalb der `/libs` -Struktur kann überl
 -->
 >[!NOTE]
 >
->Weitere Tipps und Informationen zu Tools finden Sie im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
+>Weitere Tipps und Informationen zu Tools finden Sie im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -186,7 +190,7 @@ You can find the code of this page on GitHub
 
 Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpassen:
 
-1. Sie können die Ansichten durch Überlagern des erforderlichen Eintrags unter folgendem Pfad neu anordnen:
+1. Sie können die Ansichten neu anordnen, indem Sie den erforderlichen Eintrag unter überschreiben:
 
    `/libs/wcm/core/content/sites/jcr:content/views`
 
@@ -256,9 +260,9 @@ You can find the code of this page on GitHub
           `/apps/<yourProject>/admin/ext/launches/content/jcr:content/body/rail`
 -->
 
-## Hinzufügen neuer Aktionen zu Symbolleisten {#add-new-action-to-the-toolbar}
+## Hinzufügen neuer Aktionen zur Symbolleiste {#add-new-action-to-the-toolbar}
 
-1. Sie können Ihre eigenen Komponenten einschließlich der entsprechenden Clientbibliotheken für benutzerdefinierte Aktionen erstellen. Beispielsweise eine **Twitter**-Werbeaktion unter:
+1. Sie können eigene Komponenten erstellen und die entsprechenden Client-Bibliotheken für benutzerdefinierte Aktionen einschließen. Beispiel: eine **Weiterleiten an Twitter** Aktion unter:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -270,11 +274,11 @@ You can find the code of this page on GitHub
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-## Beschränken einer Symbolleisten-Aktion auf eine bestimmte Gruppe {#restrict-a-toolbar-action-to-a-specific-group}
+## Beschränken einer Symbolleistenaktion auf eine bestimmte Gruppe {#restrict-a-toolbar-action-to-a-specific-group}
 
-1. Sie können die Standardaktion mit einer benutzerdefinierten Render-Bedingung überlagern und bestimmte Bedingungen festlegen, die vor dem Rendern erfüllt sein müssen.
+1. Sie können eine benutzerdefinierte Rendering-Bedingung verwenden, um die Standardaktion zu überlagern und bestimmte Bedingungen vorzuschreiben, die erfüllt sein müssen, bevor sie gerendert wird.
 
-   Erstellen Sie beispielsweise eine Komponente zum Steuern der Render-Bedingungen nach Gruppe:
+   Erstellen Sie beispielsweise eine Komponente, um die Renderbedingungen entsprechend der Gruppe zu steuern:
 
    `/apps/myapp/components/renderconditions/group`
 
@@ -290,7 +294,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Mithilfe der Eigenschaften dieses Knotens können Sie die `groups` die spezifische Aktion ausführen dürfen; Beispiel: `administrators`
+   Mithilfe von Eigenschaften auf diesem Knoten können Sie die `groups` definieren, die die spezifische Aktion ausführen dürfen, beispielsweise `administrators`.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -363,7 +367,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, Überlagerungen vorzunehmen `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Diese Funktion ist für Spalten mit Textfeldern optimiert. Für andere Datentypen können Sie `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` überlagern.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -375,7 +379,7 @@ You can find the code of this page on GitHub
 * Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/aem-sites-extension-listview-columns/archive/master.zip)
 -->
 
-Anpassen von Spalten in der Listenansicht:
+So passen Sie die Spalten in der Listenansicht an:
 
 1. Überlagern Sie die Liste der verfügbaren Spalten.
 
@@ -388,15 +392,15 @@ Anpassen von Spalten in der Listenansicht:
 
 1. Optional:
 
-   * Wenn Sie zusätzliche Daten einbinden möchten, müssen Sie eine ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` mit
+   * Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` mit einer
 
-      `pageInfoProviderType`.
-   Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
+      `pageInfoProviderType`-Eigenschaft schreiben.
+   Siehe beispielsweise die angehängte Klasse/das angehängte Bundle (von GitHub) unten.
 
-1. Sie können jetzt die Spalte im Spaltenkonfigurator der Listenansicht auswählen.
+1. Jetzt können Sie die Spalte im Spaltenkonfigurator der Listenansicht auswählen.
 
-## Filtern von Ressourcen {#filtering-resources}
+## Ressourcen filtern {#filtering-resources}
 
-Ein häufiges Nutzungsszenario beim Verwenden der Konsole ist die Auswahl von Ressourcen (z. B. Seiten, Komponenten, Assets usw.) durch den Benutzer. Dabei kann beispielsweise eine Liste verwendet werden, aus der der Autor ein Element auswählen muss.
+Bei Verwendung einer Konsole ist es häufig der Fall, dass der Benutzer aus Ressourcen (z. B. Seiten, Komponenten, Assets usw.) auswählen muss. Dies kann in Form einer Liste erfolgen, aus der der Autor beispielsweise ein Element auswählen muss.
 
-Um die Größe der Liste (auf die relevanten Einsatzszenarios) zu beschränken, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Weitere Informationen finden Sie in [diesem Artikel](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources).
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Siehe [diesem Artikel](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) für Details.

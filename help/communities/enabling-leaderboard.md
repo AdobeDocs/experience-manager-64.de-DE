@@ -10,14 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 exl-id: 1ebe0cbb-33be-4101-92e3-64253a7f7f31
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 18%
+source-wordcount: '437'
+ht-degree: 9%
 
 ---
 
 # Leaderboard-Funktion {#leaderboard-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einführung {#introduction}
 
@@ -25,7 +29,7 @@ Die `Leaderboard` -Komponente bietet die Möglichkeit, ein Gefühl dafür zu erh
 
 Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Communities-Scoring und -Abzeichen](implementing-scoring.md).
 
-In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
+In diesem Abschnitt der Dokumentation wird
 
 * Hinzufügen der `Leaderboard` -Komponente [Community-Site](overview.md#community-sites)
 
@@ -37,11 +41,11 @@ So fügen Sie eine `Leaderboard` Komponente auf einer Seite im Autorenmodus zu f
 
 * `Communities / Leaderboard`
 
-und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
+und ziehen Sie sie an die gewünschte Stelle auf einer Seite.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
+Wenn die Komponente zum ersten Mal auf einer Seite einer Community-Site platziert wird, wird sie wie folgt angezeigt:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -51,7 +55,7 @@ Wählen Sie die platzierte `Leaderboard` -Komponente, die aufgerufen und ausgew�
 
 ![chlimage_1-9](assets/chlimage_1-9.png) ![chlimage_1-10](assets/chlimage_1-10.png)
 
-### Registerkarte „Settings“ {#settings-tab}
+### Registerkarte Einstellungen {#settings-tab}
 
 Unter dem **[!UICONTROL Einstellungen]** angeben, welche Informationen zum Mitglied angezeigt werden sollen:
 
@@ -63,17 +67,17 @@ Ein beschreibender Name, der für die Pinnwand angezeigt wird und die für die A
 * **[!UICONTROL Badge]**
 Wenn diese Option aktiviert ist, wird eine Spalte für Badge-Symbole in die Leaderboard eingefügt.
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Badge Name]**
 Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in die Leaderboard aufgenommen.
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Avatar verwenden]**
 Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds in das Leaderboard eingefügt, neben dem Namen, der mit seinem Mitgliederprofil verknüpft ist.
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 ### Registerkarte Regeln {#rules-tab}
 

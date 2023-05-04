@@ -9,14 +9,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 33eeb203-1e4b-4112-ab08-f13b9e0b82bb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 18%
+source-wordcount: '237'
+ht-degree: 15%
 
 ---
 
 # PhoneGap{#phonegap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -36,9 +40,9 @@ Ein ***AEM-Autor* (oder *Marketer*)**ist in der Lage, die nativen Vorlagen und K
 
 Erste Schritte finden Sie in den folgenden Ressourcen:
 
-* [Bearbeiten von Anwendungen](/help/mobile/phonegap-authoring-apps.md)
+* [Erstellen von mobilen Anwendungen](/help/mobile/phonegap-authoring-apps.md)
 * [Erstellen und Verwalten von App-Inhalten](/help/mobile/phonegap-manage-app-content.md)
-* [Kachel „App verwalten“](/help/mobile/phonegap-app-details-tile.md)
+* [App-Kachel verwalten](/help/mobile/phonegap-app-details-tile.md)
 * [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
 * [Erstellen einer neuen AEM Mobile-App mit dem Assistenten zum Erstellen](/help/mobile/phonegap-create-new-app.md)

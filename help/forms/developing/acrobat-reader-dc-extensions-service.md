@@ -10,14 +10,18 @@ topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 role: Developer
 exl-id: e95d8be5-04a3-4158-be5a-de1af08ab640
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 91%
 
 ---
 
 # Service für Acrobat Reader DC-Erweiterungen – Java-API-Schnellstart (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die folgenden Schnellstarts sind für den Service für Acrobat Reader DC-Erweiterungen verfügbar.
 

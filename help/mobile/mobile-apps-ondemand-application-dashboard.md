@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: 538d6c02-acee-4774-ab3f-1cf152bb42da
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 13%
+source-wordcount: '633'
+ht-degree: 9%
 
 ---
 
 # AEM Mobile Application Dashboard {#aem-mobile-application-dashboard}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -25,7 +29,7 @@ ht-degree: 13%
 
 Sie können Ihre App- und App-Inhalte über das AEM Mobile Application Dashboard oder das Control Center verwalten.
 
-Sie können für jeden Baustein im Kontrollzentrum Details anzeigen oder bearbeiten, indem Sie auf die Schaltfläche „…“ rechts unten klicken.
+Sie können die einzelnen Kacheln im Kontrollzentrum detailliert untersuchen, um Details anzuzeigen oder zu bearbeiten, indem Sie auf &quot;...&quot;klicken in der unteren rechten Ecke.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -37,7 +41,7 @@ Die Verwaltung von App-Inhalten erfordert kollektive Anstrengungen von Entwickle
 
 Schließlich veröffentlichen Administratoren strategisch den aktualisierten App-Inhalt.
 
-## Bereich „App verwalten“ {#the-manage-app-tile}
+## Die Kachel App verwalten {#the-manage-app-tile}
 
 Die **App verwalten** In der Kachel werden verfügbare Anwendungsinformationen angezeigt:
 
@@ -45,7 +49,7 @@ Die **App verwalten** In der Kachel werden verfügbare Anwendungsinformationen a
 * Beschreibung
 * Symbol
 * Zuletzt geändert
-* Last Modified By
+* Zuletzt geändert von
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 

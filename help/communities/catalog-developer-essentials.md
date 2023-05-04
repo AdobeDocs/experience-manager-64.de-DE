@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 exl-id: 1e0a7cab-39b9-4c90-810c-c93fb76c3869
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 8%
+source-wordcount: '394'
+ht-degree: 9%
 
 ---
 
 # Kataloggrundlagen {#catalog-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der Katalogfunktion von Community-Seiten für die Aktivierung.
 

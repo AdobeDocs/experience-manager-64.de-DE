@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10791'
+source-wordcount: '10827'
 ht-degree: 99%
 
 ---
 
 # Programmgesteuertes Verwalten von Endpunkten {#programmatically-managing-endpoints}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 **Über den Endpoint Registry-Service**
 
@@ -324,9 +328,9 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 * **url**: Gibt den Speicherort des überwachten Ordners an. In einer Cluster-Umgebung muss dieser Wert auf einen freigegebenen Netzwerkordner verweisen, auf den alle Computer im Cluster zugreifen können.
 * **asynchron**: Gibt den Aufruftyp als „asynchron“ oder „synchron“ an. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet true. Asynchron wird empfohlen.
 * **cronExpression**: Wird von Quarz zur zeitlichen Planung des Abrufs des Eingabeordners verwendet.
-* **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
+* **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll wird. Ein Wert von -1 Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **repeatInterval**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Sofern die Drosselung nicht aktiviert ist, sollte dieser Wert größer sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist 5.
-* **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
+* **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder das Verzeichnis überprüft. Der Wert &quot;-1&quot;bedeutet uneingeschränktes Überprüfen. Der Standardwert ist -1.
 * **throttleOn**: Begrenzt die Anzahl der Aufträge für überwachte Ordner, die zu einem bestimmten Zeitpunkt verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert von „batchSize“ bestimmt.
 * **userName**: Der Benutzername, mit dem ein Ziel-Service aus dem überwachten Ordner aufgerufen wird. Dieser Wert ist erforderlich. Der Standardwert ist „SuperAdmin“.
 * **domainName**: Die Domain des Benutzers. Dieser Wert ist erforderlich. Der Standardwert ist „DefaultDom“.
@@ -334,7 +338,7 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 * **waitTime**: Die Zeit in Millisekunden, die nach der Erstellung gewartet wird, bevor ein Ordner oder eine Datei überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei erst nach Ablauf von mindestens 59 Minuten abgerufen. Dieses Attribut ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei 10 Minuten dauert, legen Sie die Wartezeit auf 10 x 60 x 1000 Millisekunden fest. Diese Einstellung verhindert, dass der überwachte Ordner die Datei überprüft, wenn er nicht erst zehn Minuten lang gewartet hat. Der Standardwert ist 0.
 * **excludeFilePattern**: Das Muster, das ein überwachter Ordner verwendet, um zu bestimmen, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die dieses Muster haben, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dieser Schritt verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Wenn der Wert für „excludeFilePattern“ beispielsweise `data*` ist, werden alle Dateien und Ordner, die `data*` im Namen enthalten, nicht aufgenommen. Hierzu gehören auch Dateien und Ordner mit den Namen `data1`, `data2` usw. Darüber hinaus kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ordner ändert den regulären Ausdruck, um Platzhaltermuster wie `*.*` und `*.pdf` zu unterstützen. Diese Platzhaltermuster werden von regulären Ausdrücken nicht unterstützt.
 * **includeFilePattern**: Das Muster, das der überwachte Ordner verwendet, um zu bestimmen, welche Ordner und Dateien überprüft und aufgenommen werden sollen. Wenn dieser Wert beispielsweise `*` ist, werden alle Dateien und Ordner aufgenommen, die `input*` im Namen enthalten. Hierzu gehören auch Dateien und Ordner mit den Namen `input1`, `input2` usw. Der Standardwert ist `*`. Dieser Wert zeigt alle Dateien und Ordner an. Darüber hinaus kann das Muster durch Platzhaltermuster ergänzt werden, um Dateimuster anzugeben. Der überwachte Ordner ändert den regulären Ausdruck, um Platzhaltermuster wie `*.*` und `*.pdf` zu unterstützen. Diese Platzhaltermuster werden von regulären Ausdrücken nicht unterstützt. Dieser Wert ist erforderlich.
-* **resultFolderName**: Der Ordner, in dem die Ergebnisse gespeichert werden. Dieser Speicherort kann ein absoluter oder ein relativer Ordnerpfad sein. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Der Standardwert ist `result/%Y/%M/%D/`. Dies ist der Ergebnisordner innerhalb des überwachten Ordners.
+* **resultFolderName**: Der Ordner, in dem die Ergebnisse gespeichert werden. Dieser Speicherort kann ein absoluter oder ein relativer Ordnerpfad sein. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet, sondern im Fehlerordner gespeichert. Der Standardwert ist `result/%Y/%M/%D/`. Dies ist der Ergebnisordner innerhalb des überwachten Ordners.
 * **preserveFolderName**: Der Speicherort, an dem Dateien nach erfolgreicher Überprüfung und Aufnahme gespeichert werden. Der Speicherort kann ein absoluter, relativer oder leerer Ordnerpfad sein. Der Standardwert ist `preserve/%Y/%M/%D/`.
 * **failureFolderName**: Der Ordner, in dem Dateien mit Fehlern gespeichert werden. Dieser Speicherort ist stets relativ zum überwachten Ordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Der Standardwert ist `failure/%Y/%M/%D/`.
 * **preserveOnFailure**: Bewahrt die Eingabedateien auf, wenn es zu einem Fehler bei der Ausführung des Vorgangs für einen Service kommt. Der Standardwert lautet true.
@@ -559,10 +563,10 @@ Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service mü
 Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service werden die folgenden Konfigurationswerte festgelegt:
 
 * **cronExpression**: Ein Cron-Ausdruck, wenn die E-Mail mithilfe eines Cron-Ausdrucks geplant werden muss.
-* **repeatCount**: Die Häufigkeit, mit welcher der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
+* **repeatCount**: Die Häufigkeit, mit welcher der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert &quot;-1&quot;bedeutet uneingeschränktes Überprüfen. Der Standardwert ist -1.
 * **repeatInterval**: Die Überprüfungsrate in Sekunden, mit welcher der Empfänger auf eingehende E-Mails prüft. Der Standardwert ist 10.
 * **startDelay**: Der Zeitraum, der nach dem Starten des Zeitplaners verstreichen muss, damit die Überprüfung ausgeführt wird. Der Standardzeitraum ist 0.
-* **batchSize**: Die Anzahl von E-Mail-Nachrichten, die der Empfänger pro Überprüfung zur Optimierung der Leistung verarbeitet. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
+* **batchSize**: Die Anzahl von E-Mail-Nachrichten, die der Empfänger pro Überprüfung zur Optimierung der Leistung verarbeitet. Der Wert -1 zeigt alle E-Mails an. Der Standardwert ist 2.
 * **userName**: Der Benutzername, der beim Aufrufen eines Ziel-Service aus einer E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domain-Muster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „`adobe.com`“ verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.

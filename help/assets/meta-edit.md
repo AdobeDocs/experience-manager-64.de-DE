@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 81%
+source-wordcount: '515'
+ht-degree: 67%
 
 ---
 
 # Anleitung zum Bearbeiten oder Hinzufügen von Metadaten {#how-to-edit-or-add-metadata}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Metadaten sind zusätzliche Informationen zum Asset, die durchsucht werden können. Beim Hochladen eines Bildes werden sie automatisch extrahiert. Sie können die vorhandenen Metadaten bearbeiten oder vorhandenen Feldern neue Metadateneigenschaften hinzufügen (etwa wenn ein Metadatenfeld leer ist).
 
-Da Unternehmen gesteuertes und zuverlässiges Metadatenvokabular benötigen, [!DNL Experience Manager] Assets ermöglicht kein Ad-hoc-Hinzufügen neuer Metadateneigenschaften. Autoren können keine neuen Metadatenfelder für Assets hinzufügen, Entwickler hingegen schon. Informationen finden Sie unter [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
+Da Unternehmen gesteuertes und zuverlässiges Metadatenvokabular benötigen, [!DNL Experience Manager] Assets ermöglicht kein Ad-hoc-Hinzufügen neuer Metadateneigenschaften. Autoren können zwar keine neuen Metadatenfelder für Assets hinzufügen, Entwickler können dies jedoch tun. Siehe [Erstellen neuer Metadateneigenschaften für Assets](meta-edit.md#editing-metadata-schema).
 
 ## Bearbeiten von Metadaten für ein Asset {#editing-metadata-for-an-asset}
 
@@ -38,9 +42,9 @@ So bearbeiten Sie Metadaten:
    >
    >Ein leeres Textfeld gibt an, dass kein Metadatenset vorhanden ist. Sie können einen Wert in das Feld eingeben und speichern, um diese Metadateneigenschaft hinzuzufügen.
 
-Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. Dies geschieht über den Writeback-Workflow der AEM-Metadaten. Änderungen an den vorhandenen Eigenschaften (z. B. `dc:title`) werden überschrieben und neu erstellte Eigenschaften (einschließlich anwenderdefinierten Eigenschaften wie `cq:tags`) werden zusammen mit dem Schema hinzugefügt.
+Alle Änderungen an den Metadaten eines Assets werden als Teil der XMP-Daten in die ursprüngliche Binärdatei zurückgeschrieben. Dies erfolgt über AEM Workflow zum Zurückschreiben von Metadaten. Änderungen an den vorhandenen Eigenschaften (z. B. `dc:title`) werden überschrieben und neu erstellte Eigenschaften (einschließlich anwenderdefinierten Eigenschaften wie `cq:tags`) werden zusammen mit dem Schema hinzugefügt.
 
-XMP-Writeback wird für die in [Technische Anforderungen](/help/sites-deploying/technical-requirements.md) beschriebenen Plattformen und Dateiformate unterstützt und aktiviert.
+XMP Writeback wird für die Plattformen und Dateiformate unterstützt und aktiviert, die unter [Technische Anforderungen.](/help/sites-deploying/technical-requirements.md)
 
 ## Bearbeiten von Metadatenschemata {#editing-metadata-schema}
 
@@ -48,7 +52,7 @@ Weitere Informationen zur Bearbeitung von Metadatenschemata finden Sie unter [Be
 
 ## Registrieren eines benutzerdefinierten Namespace in [!DNL Experience Manager] {#registering-a-custom-namespace-within-aem}
 
-Sie können eigene Namespaces in AEM hinzufügen. Es gibt vordefinierte Namespaces wie cq, jcr und sling. Sie können aber auch einen Namespace für Ihre Repository-Metadaten und die XML-Verarbeitung hinzufügen.
+Sie können Ihre eigenen Namespaces in AEM hinzufügen. Es gibt vordefinierte Namespaces wie cq, jcr und sling. Sie können aber auch einen Namespace für Ihre Repository-Metadaten und die XML-Verarbeitung hinzufügen.
 
 1. Navigieren Sie zur Verwaltungsseite für den Knotentyp . `https://[AEM_server]:[port]/crx/explorer/nodetypes/index.jsp`.
 1. Klicken oder tippen Sie am oberen Rand der Seite auf **[!UICONTROL Namespaces]**. Die Seite zur Namespace-Verwaltung wird in einem Fenster angezeigt.

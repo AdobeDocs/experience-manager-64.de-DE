@@ -12,14 +12,18 @@ discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 exl-id: 0123fb44-9f38-4d9e-9dce-7c9cfd4260e1
 feature: Content Fragments,Metadata
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 88%
+source-wordcount: '148'
+ht-degree: 63%
 
 ---
 
 # Metadaten – Fragmenteigenschaften {#metadata-fragment-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!CAUTION]
 >
@@ -29,8 +33,8 @@ ht-degree: 88%
 
 Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und bearbeiten:
 
-1. Navigieren Sie in der Konsole **[!UICONTROL Assets]** zum Speicherort des Inhaltsfragments.
-1. Führen Sie einen der folgenden Schritte durch:
+1. Im **[!UICONTROL Assets]** -Konsole zum Speicherort des Inhaltsfragments navigieren.
+1. Entweder:
 
    * Wählen Sie [Eigenschaften anzeigen aus, um das Dialogfeld zu öffnen](managing-assets-touch-ui.md#editing-properties). Sobald es zur Anzeige geöffnet wurde, können Sie auch Bearbeitungen vornehmen.
    * Öffnen Sie das [Inhaltsfragment zum Bearbeiten](content-fragments-managing.md#opening-the-fragment-editor) und wählen Sie anschließend im seitlichen Bedienfeld **[!UICONTROL Metadaten]** aus.

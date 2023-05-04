@@ -9,30 +9,34 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: e03d2075-1d65-4ab3-b1bb-0bae925824c6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 63%
 
 ---
 
 # Web-Konsole{#web-console}
 
-Die Web-Konsole in AEM basiert auf der [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix ist ein gemeinschaftlich entwickeltes Framework zum Implementieren der OSGi R4 Service Platform, die das OSGi-Framework und die Standarddienste umfasst.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die Web-Konsole in AEM basiert auf der [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix ist eine Community-Anstrengung zur Implementierung der OSGi R4-Dienstplattform, die das OSGi-Framework und Standarddienste umfasst.
 
 >[!NOTE]
 >
->In der Web-Konsole beziehen sich alle Beschreibungen mit Standardeinstellungen auf Sling-Standardwerte.
+>In der Webkonsole beziehen sich alle Beschreibungen, in denen Standardeinstellungen erwähnt werden, auf die Sling-Standardeinstellungen.
 >
 >Für AEM gelten eigene Standardeinstellungen, sodass sich die festgelegten Standardeinstellungen möglicherweise von denen der Konsole unterscheiden.
 
-Die Web-Konsole umfasst eine Reihe von Registerkarten für die Verwaltung der OSGi-Bundles, darunter:
+Die Web-Konsole bietet eine Auswahl von Registerkarten zur Verwaltung der OSGi-Bundles, darunter:
 
-* [Konfiguration:](#configuration) Dient zur Konfiguration der OSGi-Bundles und bildet deshalb den zugrunde liegenden Mechanismus für die Konfiguration der AEM-Systemparameter.
-* [Bundles:](#bundles) Dient zum Installieren von Bundles.
-* [Komponenten:](#components) Steuert den Status der für AEM erforderlichen Komponenten.
+* [Konfiguration](#configuration): wird zum Konfigurieren der OSGi-Bundles verwendet und ist daher der zugrunde liegende Mechanismus zum Konfigurieren AEM Systemparameter.
+* [Bundles](#bundles): wird für die Installation von Bundles verwendet
+* [Komponenten](#components): zur Steuerung des Status der für AEM erforderlichen Komponenten
 
-Alle vorgenommenen Änderungen werden sofort auf das laufende System angewendet. Ein Neustart ist nicht erforderlich.
+Alle vorgenommenen Änderungen werden sofort auf das laufende System angewendet. Es ist kein Neustart erforderlich.
 
 Der Zugriff auf die Konsole ist über `../system/console` möglich, z. B.:
 
@@ -40,13 +44,13 @@ Der Zugriff auf die Konsole ist über `../system/console` möglich, z. B.:
 
 ## Konfiguration {#configuration}
 
-Die Registerkarte **Konfiguration** dient zur Konfiguration der OSGi-Bundles und bildet deshalb den zugrunde liegenden Mechanismus für die Konfiguration der AEM-Systemparameter.
+Die **Konfiguration** -Tab wird zur Konfiguration der OSGi-Bundles verwendet und ist daher der zugrunde liegende Mechanismus zur Konfiguration AEM Systemparameter.
 
 >[!NOTE]
 >
->Weitere Einzelheiten finden Sie unter [OSGi-Konfiguration mit der Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console).
+>Siehe [OSGi-Konfiguration mit der Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) für weitere Informationen.
 
-Sie können mit einer der beiden folgenden Methoden auf die Registerkarte **Konfiguration** zugreifen:
+Die **Konfiguration** auf die Registerkarte kann wie folgt zugegriffen werden:
 
 * über das Dropdown-Menü:
 
@@ -64,10 +68,10 @@ Es gibt zwei Arten von Konfigurationen, die in den Dropdown-Listen auf dem Bilds
 
 * **Konfigurationen**
 
-   Ermöglicht die Aktualisierung der vorhandenen Konfigurationen. Diese haben eine Persistent Identity (PID) und fallen in eine der beiden folgenden Kategorien:
+   Ermöglicht die Aktualisierung der vorhandenen Konfigurationen. Diese weisen eine persistente Identität (PID) auf und können entweder:
 
-   * Standardkonfigurationen, die ein integraler Bestandteil von AEM sind. Sie sind erforderlich, und die Werte werden beim Löschen auf die Standardeinstellungen zurückgesetzt.
-   * Instanzen, die vom Benutzer auf Basis von Factory-Konfigurationen erstellt werden. Sie werden durch Löschen der Instanzen entfernt.
+   * Standard und integraler Bestandteil der AEM; Diese sind erforderlich, wenn sie gelöscht werden, kehren die Werte zu den Standardeinstellungen zurück.
+   * Instanzen, die aus Factory-Konfigurationen erstellt wurden; Diese Instanzen werden vom Benutzer erstellt. Durch Löschen wird die Instanz entfernt.
 
 * **Werkskonfigurationen**
 
@@ -93,7 +97,7 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 * **Löschen**
 
-   Löscht die aktuelle Konfiguration. Bei einer Standardinstanz werden die Parameter auf die Standardeinstellungen zurückgesetzt. Basiert die Instanz auf einer Factory-Konfiguration, wird die spezifische Instanz gelöscht.
+   Löscht die aktuelle Konfiguration. Bei einer Standardinstanz werden die Parameter auf die Standardeinstellungen zurückgesetzt. Wenn sie über eine Factory-Konfiguration erstellt wurde, wird die spezifische Instanz gelöscht.
 
 * **Bindung aufheben**
 
@@ -153,7 +157,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 >[!NOTE]
 >
->Nach einer **Aktualisierung** wird empfohlen, die **Pakete zu aktualisieren**.
+>Nachher **Aktualisieren** Es wird empfohlen, eine **Aktualisieren von Paketen**.
 
 ## Komponenten {#components}
 
@@ -179,4 +183,4 @@ Klicken Sie auf den Namen einer bestimmten Komponente, um weitere Informationen 
 >
 >Das Aktivieren oder Deaktivieren einer Komponente gilt nur, bis AEM/CRX neu gestartet wird.
 >
->Der Startstatus ist im Komponenten-Deskriptor definiert, der bei der Entwicklung generiert wird, und wird bei der Bundle-Erstellung im Bundle gespeichert.
+>Der Startstatus wird innerhalb des Komponentendeskriptors definiert, der während der Entwicklung generiert und zum Zeitpunkt der Bundleerstellung im Bundle gespeichert wird.

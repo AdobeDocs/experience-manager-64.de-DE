@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3227'
-ht-degree: 5%
+source-wordcount: '3263'
+ht-degree: 4%
 
 ---
 
 # Communities Sites-Konsole {#communities-sites-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Communities Sites-Konsole bietet Zugriff auf:
 
@@ -181,7 +185,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 
    Wenn diese Option deaktiviert ist, wird die Community-Site *eingeschränkt* und Besucher der Site müssen der Mitgliedergruppe der Community-Site zugewiesen werden, eine Anforderung stellen oder per E-Mail eingeladen werden. Wenn diese Option deaktiviert ist, sollte der anonyme Zugriff nicht erlaubt sein.
 
-   Deaktivieren Sie die Option für *privat* Community-Site. Diese Option ist standardmäßig aktiviert.
+   Deaktivieren Sie die Option für *privat* Community-Site. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Anonymen Zugriff erlauben]**
 
@@ -189,7 +193,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 
    Wenn diese Option deaktiviert ist, können nur angemeldete Mitglieder auf die Site zugreifen.
 
-   Deaktivieren Sie die Option für *privat* Community-Site. Diese Option ist standardmäßig aktiviert.
+   Deaktivieren Sie die Option für *privat* Community-Site. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Messaging zulassen]**
 
@@ -197,7 +201,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 
    Wenn diese Option deaktiviert ist, werden Nachrichten nicht für die Community eingerichtet.
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Anmeldung über soziale Medien erlauben: Facebook]**
 
@@ -205,7 +209,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 
    Wenn diese Option deaktiviert ist, wird keine Facebook-Anmeldung angezeigt.
 
-   Lassen Sie die Option deaktiviert für *privat* Community-Site. Diese Option ist standardmäßig deaktiviert.
+   Lassen Sie die Option deaktiviert für *privat* Community-Site. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Anmeldung über soziale Medien erlauben: Twitter]**
 
@@ -213,7 +217,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 
    Wenn diese Option deaktiviert ist, wird keine Twitter-Anmeldung angezeigt.
 
-   Lassen Sie die Option deaktiviert für *privat* Community-Site. Diese Option ist standardmäßig deaktiviert.
+   Lassen Sie die Option deaktiviert für *privat* Community-Site. Die Option Standard ist deaktiviert.
 
 >[!NOTE]
 >
@@ -259,7 +263,7 @@ Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wi
 
 * **[!UICONTROL Inhalt ist vormoderiert]**
 
-   Wenn diese Option aktiviert ist, werden veröffentlichte Community-Inhalte erst angezeigt, nachdem sie von einem Moderator genehmigt wurden. Diese Option ist standardmäßig deaktiviert. Weitere Informationen finden Sie unter [Moderieren von Community-Inhalten](moderate-ugc.md#premoderation).
+   Wenn diese Option aktiviert ist, werden veröffentlichte Community-Inhalte erst angezeigt, nachdem sie von einem Moderator genehmigt wurden. Die Option Standard ist deaktiviert. Weitere Informationen finden Sie unter [Moderieren von Community-Inhalten](moderate-ugc.md#premoderation).
 
 * **[!UICONTROL Kennzeichnung des Schwellenwerts, bevor der Inhalt ausgeblendet wird]**
 
@@ -273,7 +277,7 @@ Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wi
 
    Nur verfügbar, wenn Adobe Analytics [konfiguriert](analytics.md) für Communities-Funktionen.
 
-   Diese Option ist standardmäßig deaktiviert. Wenn diese Option aktiviert ist, wird ein zusätzliches Auswahlmenü angezeigt:
+   Die Option Standard ist deaktiviert. Wenn diese Option aktiviert ist, wird ein zusätzliches Auswahlmenü angezeigt:
 
 ![chlimage_1-454](assets/chlimage_1-454.png)
 

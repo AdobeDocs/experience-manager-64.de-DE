@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 exl-id: c6ad3c2b-8776-4ec4-99da-ab73ecc61153
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 5%
+source-wordcount: '423'
+ht-degree: 4%
 
 ---
 
 # Grundlagen zu Messaging {#messaging-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente beschrieben, um eine Messaging-Funktion auf einer Website einzubinden.
 
@@ -142,7 +146,7 @@ Zum Testen des serverseitigen Beispielskripts benötigen Sie eine Entwicklungsum
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**
 1. Navigieren Sie zu `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` und fügen Sie alle Importanweisungen hinzu, wie in der `MessageEventHandler.java` Code.
-1. Erstellen Sie das Bundle
+1. Bundle erstellen
 1. Sichern `Day CQ Mail Service`OSGi-Dienst ist konfiguriert
 1. Melden Sie sich als ein Demobenutzer an und senden Sie eine E-Mail an einen anderen
 1. Der Empfänger sollte eine E-Mail bezüglich einer neuen Nachricht erhalten

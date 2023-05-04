@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Workflow,Renditions
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: bc27dee618ee57dc188c7f35a1af4d1dba80cf1b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2225'
-ht-degree: 54%
+source-wordcount: '2261'
+ht-degree: 47%
 
 ---
 
 # Verarbeiten von Assets mit Medien-Handlern und Workflows {#processing-assets-using-media-handlers-and-workflows}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Adobe Experience Manager Assets bietet eine Reihe von Standard-Workflows und Medien-Handlern zur Verarbeitung von Assets. Ein Workflow definiert eine typische Asset-Management- und -Verarbeitungsaufgabe und delegiert dann die spezifischen Aufgaben an die Medien-Handler, z. B. die Erstellung von Miniaturbildern oder die Metadatenextraktion.
 
@@ -47,10 +51,10 @@ Die folgenden Medien-Handler sind in Experience Manager Assets verfügbar und ve
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | Ausweichmöglichkeit, falls kein anderer Handler gefunden wurde, der Daten aus einem Asset extrahiert |
 
-Alle Handler führen folgende Aufgaben aus:
+Alle Handler führen die folgenden Aufgaben aus:
 
-* Extraktion aller verfügbaren Metadaten aus einem Asset.
-* Erstellung eines Miniaturbilds aus einem Asset.
+* Extrahieren aller verfügbaren Metadaten aus dem Asset.
+* Erstellen eines Miniaturbilds aus dem Asset.
 
 Es ist möglich, die aktiven Medien-Handler anzuzeigen:
 
@@ -72,7 +76,7 @@ Das folgende Beispiel zeigt, wie Sie die **[!UICONTROL AEM Assets-Synchronisieru
 
 ### Deaktivieren/Aktivieren eines Medien-Handlers {#disabling-enabling-a-media-handler}
 
-Die Medien-Handler können über die Apache Felix Web Management-Konsole deaktiviert bzw. aktiviert werden. Wenn der Medien-Handler deaktiviert ist, werden seine Aufgaben zur Bearbeitung von Assets nicht durchgeführt.
+Die Medien-Handler können über die Apache Felix Web Management-Konsole deaktiviert bzw. aktiviert werden. Wenn der Medien-Handler deaktiviert ist, werden seine Aufgaben nicht für die Assets ausgeführt.
 
 So aktivieren/deaktivieren Sie einen Medien-Handler:
 
@@ -83,7 +87,7 @@ So aktivieren/deaktivieren Sie einen Medien-Handler:
 
 ### Erstellen eines Medien-Handlers {#creating-a-new-media-handler}
 
-Um einen neuen Medientyp zu unterstützen oder bestimmte Aufgaben für ein Asset auszuführen, müssen Sie einen Medien-Handler erstellen. In diesem Abschnitt wird beschrieben, wie Sie vorgehen.
+Um einen neuen Medientyp zu unterstützen oder bestimmte Aufgaben für ein Asset auszuführen, müssen Sie einen Medien-Handler erstellen. In diesem Abschnitt wird beschrieben, wie Sie fortfahren.
 
 #### Wichtige Klassen und Schnittstellen     {#important-classes-and-interfaces}
 
@@ -108,7 +112,7 @@ Schnittstelle und Klassen:
 * `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse:
    * Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktionen für die Extrahierung von Teil-Assets.
    * Am besten ist es, zu Beginn einer Implementierung den Inhalt einer bereitgestellten abstrakten Implementierung zu übernehmen, wodurch die meisten Dinge im Voraus erledigt werden und ein angemessenes Standardverhalten erreicht wird: die com.day.cq.dam.core.AbstractAssetHandler-Klasse.
-   * Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. Wenn Sie also den Inhalt dieser Klasse übernehmen und das maven-sling-Plug-in verwenden, müssen Sie das Übernahme-Flag auf true setzen.
+   * Diese Klasse enthält bereits einen abstrakten Dienst-Deskriptor. Wenn Sie also von dieser Klasse erben und das maven-sling-Plug-in verwenden, stellen Sie sicher, dass Sie das Vererbung-Flag auf &quot;true&quot;setzen.
 
 Die folgenden Methoden müssen implementiert werden:
 
@@ -126,7 +130,7 @@ Schnittstelle und Klassen:
 * `com.day.cq.dam.core.AbstractAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen.
 * `com.day.cq.dam.core.AbstractSubAssetHandler`-Klasse: Diese Klasse dient als Grundlage für alle anderen Asset-Handler-Implementierungen und bietet häufig verwendete Funktionen sowie übliche Funktionen für die Extrahierung von Teil-Assets.
 
-#### Beispiel: Erstellung eines spezifischen Text-Handlers {#example-create-a-specific-text-handler}
+#### Beispiel: Erstellen eines bestimmten Text-Handlers {#example-create-a-specific-text-handler}
 
 In diesem Abschnitt erstellen Sie einen bestimmten Text-Handler, der Miniaturansichten mit einem Wasserzeichen generiert.
 
@@ -155,13 +159,13 @@ Nachdem Sie das folgende Verfahren ausgeführt haben, werden beim Hochladen eine
    1. Klicken Sie mit der rechten Maustaste auf das `myBundle`-Projekt und wählen Sie Eigenschaften aus.
    1. Wählen Sie Java™ Compiler aus und legen Sie die folgenden Eigenschaften auf 1.5 fest:
 
-      * Compiler-Kompatibilitätsstufe
-      * Kompatibilität von generierten .class-Dateien
+      * Compiler-Compliance-Level
+      * Kompatibilität der generierten .class-Dateien
       * Quellkompatibilität
    1. Klicken Sie auf **[!UICONTROL OK]**. Klicken Sie im Dialogfenster auf Ja.
 
 
-1. Ersetzen Sie den Code in der pom.xml-Datei durch folgenden Code:
+1. Ersetzen Sie den Code in der Datei &quot;pom.xml&quot;durch den folgenden Code:
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -461,7 +465,7 @@ Der Prozess `CommandLineProcess` führt folgende Vorgänge in der angegebenen Re
 * Führt den Befehl aus, der über die Argumente des Schritts definiert ist. Der Befehl wird im temporären Ordner mit den Berechtigungen des Benutzers ausgeführt, der Experience Manager ausführt.
 * Streamt das Ergebnis zurück in den Ordner &quot;rendition&quot;des Experience Manager-Servers.
 * Löscht das temporäre Verzeichnis.
-* Erstellt Miniaturbilder auf der Grundlage dieser Ausgabeformate, falls angegeben. Die Anzahl und die Abmessungen von Miniaturbildern werden durch die Argumente des Schritts definiert.
+* Erstellt Miniaturansichten basierend auf diesen Ausgabeformaten, falls angegeben. Die Anzahl und die Abmessungen der Miniaturansichten werden durch die Argumente des Schritts definiert.
 
 ### Beispiel mit ImageMagick {#an-example-using-imagemagick}
 
@@ -469,7 +473,7 @@ Das folgende Beispiel zeigt, wie Sie den Befehlszeilenprozessschritt einrichten.
 
 Verwenden Sie dazu ImageMagick. Installieren Sie ImageMagick auf dem Datenträger, der den Experience Manager-Server hostet:
 
-1. Installieren von ImageMagick. Siehe [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php) für weitere Informationen.
+1. Installieren Sie ImageMagick. Siehe [ImageMagick-Dokumentation](https://www.imagemagick.org/script/download.php) für weitere Informationen.
 1. Richten Sie das Tool ein, damit Sie `convert` in der Befehlszeile.
 1. Um festzustellen, ob das Tool ordnungsgemäß installiert wurde, führen Sie den Befehl `convert -h` über die Befehlszeile aus.
 

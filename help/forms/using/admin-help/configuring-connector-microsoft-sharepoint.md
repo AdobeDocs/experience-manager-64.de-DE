@@ -1,7 +1,7 @@
 ---
-title: Connector für Microsoft SharePoint konfigurieren
+title: Konfigurieren des Connectors für Microsoft SharePoint
 seo-title: Configuring Connector for Microsoft SharePoint
-description: Konfigurieren Sie Connector für Microsoft SharePoint, um die Kommunikation zwischen AEM Forms und Microsoft SharePoint zu aktualisieren.
+description: Konfigurieren Sie Connector für Microsoft SharePoint, um die Kommunikation zwischen AEM Formularen und Microsoft SharePoint zu aktivieren.
 seo-description: Configure Connector for Microsoft SharePoint to enable communication between AEM forms and Microsoft SharePoint.
 uuid: f1561b41-da20-4220-b13a-e78472a9449f
 contentOwner: admin
@@ -10,18 +10,22 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 exl-id: 9bd396a3-5da9-4355-ad76-e7132ac8aed8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 100%
+source-wordcount: '249'
+ht-degree: 57%
 
 ---
 
 # Connector für Microsoft SharePoint konfigurieren {#configuring-connector-for-microsoft-sharepoint}
 
-Connector für Microsoft SharePoint aktiviert die Kommunikation zwischen AEM Forms und Microsoft SharePoint. Weitere Hintergrundinformationen finden Sie im Abschnitt über Connectors für ECM in [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_63).
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-1. Wählen Sie in Administration Console „Dienste“ > „Connector für Microsoft SharePoint“.
+Connector für Microsoft SharePoint ermöglicht die Kommunikation zwischen AEM Formularen und Microsoft SharePoint. Weitere Hintergrundinformationen finden Sie unter &quot;Connectors for ECM&quot;in [Dienstreferenz](https://www.adobe.com/go/learn_aemforms_services_63).
+
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Connector für Microsoft SharePoint&quot;.
 1. Geben Sie die folgenden Einstellungen für Ihren SharePoint-Server an:
 
    **Hostname des SharePoint-Servers:** Die Hostnamen-Anschlussnummer der Webanwendung auf dem SharePoint-Server im Format `[hostname]:[port]`.
@@ -40,9 +44,9 @@ Mit dem Microsoft SharePoint-Konfigurations-Service (`(MSSharePointConfigService
 
 1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Durchlaufen Sie die Liste der Dienste und klicken Sie auf `MSSharePointConfigService`.
-1. Geben Sie auf der Seite „Konfiguration“ folgende Einstellungen an:
+1. Geben Sie auf der Seite &quot;Konfiguration&quot;die folgenden Einstellungen an:
 
    * Benutzername für einen Benutzer mit Berechtigungen zum Identitätswechsel
-   * Kennwort für den oben genannten Benutzer
+   * Kennwort für den obigen Benutzer
 
 1. Klicken Sie auf Speichern.

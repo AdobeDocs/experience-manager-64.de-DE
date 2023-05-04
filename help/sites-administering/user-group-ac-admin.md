@@ -10,70 +10,74 @@ topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 exl-id: 9c14e57b-019e-45ae-9e96-40424fa609c2
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3120'
-ht-degree: 81%
+source-wordcount: '3156'
+ht-degree: 54%
 
 ---
 
 # Verwaltung von Benutzern, Gruppen und Zugriffsrechten{#user-group-and-access-rights-administration}
 
-Die Aktivierung des Zugriffs auf ein CRX-Repository umfasst mehrere Themen:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-* [Zugriffsrechte](#how-access-rights-are-evaluated): die Konzepte, wie sie definiert und ausgewertet werden
-* [Benutzerverwaltung](#user-administration): Verwaltung der einzelnen für den Zugriff verwendeten Konten
+Die Aktivierung des Zugriffs auf ein CRX-Repository umfasst verschiedene Themen:
+
+* [Zugriffsberechtigungen](#how-access-rights-are-evaluated) - die Konzepte, wie sie definiert und ausgewertet werden
+* [Benutzerverwaltung](#user-administration) - Verwaltung der einzelnen Konten, die für den Zugriff verwendet werden
 * [Gruppenverwaltung](#group-administration): vereinfacht die Benutzerverwaltung durch die Bildung von Gruppen
 
 * [Zugriffsrechteverwaltung](#access-right-management): Definition von Richtlinien, die steuern, wie diese Benutzer und Gruppen auf Ressourcen zugreifen können
 
 Nachfolgend sind die grundlegenden Elemente aufgeführt:
 
-**Benutzerkonten** CRX authentifiziert den Zugriff durch Identifizieren und Überprüfen eines Benutzers (durch diese Person oder eine andere Anwendung) entsprechend den im Benutzerkonto gespeicherten Details.
+**Benutzerkonten**: CRX authentifiziert den Zugriff durch Identifizieren und Verifizieren eines Benutzers (durch eine Person oder eine andere Anwendung) entsprechend den im Benutzerkonto gespeicherten Details.
 
-In CRX stellt jedes Benutzerkonto einen Knoten im Workspace dar. Ein CRX-Benutzerkonto weist die folgenden Eigenschaften auf:
+In CRX ist jedes Benutzerkonto ein Knoten im Arbeitsbereich. Ein CRX-Benutzerkonto verfügt über die folgenden Eigenschaften:
 
-* Es repräsentiert einen Benutzer von CRX.
-* In ihm sind ein Benutzername und ein Kennwort gespeichert.
-* Es gilt für diesen Workspace.
-* Es kann keine Unterbenutzer haben. Verwenden Sie für hierarchische Zugriffsrechte Gruppen.
+* Es stellt einen Benutzer von CRX dar.
+* Sie enthält einen Benutzernamen und ein Kennwort.
+* Gilt für diesen Arbeitsbereich.
+* Sie kann keine Unterbenutzer haben. Für hierarchische Zugriffsrechte sollten Sie Gruppen verwenden.
 
-* Sie können Zugriffsrechte für das Benutzerkonto festlegen.
+* Sie können Zugriffsberechtigungen für das Benutzerkonto angeben.
 
    Zur Vereinfachung der Verwaltung raten wir jedoch, (in der Mehrzahl der Fälle) Zugriffsrechte zu Gruppenkonten zuzuweisen. Bei der Zuweisung von Zugriffsrechten zu jedem einzelnen Benutzer kann die Verwaltung schnell sehr schwierig werden (Ausnahmen sind bestimmte Systembenutzer, wenn nur ein oder zwei Instanzen vorhanden sind).
 
-**Gruppenkonten** Gruppenkonten sind Sammlungen von Benutzern und/oder anderen Gruppen. Sie dienen zur Vereinfachung der Verwaltung, da eine Änderung der einer Gruppe zugewiesenen Zugriffsrechte automatisch auf alle Benutzer in dieser Gruppe angewendet wird. Ein Benutzer muss nicht unbedingt Mitglied einer Gruppe sein, gehört aber häufig zu mehreren.
+**Gruppenkonten**: Gruppenkonten sind Sammlungen von Benutzern und/oder anderen Gruppen. Diese dienen zur Vereinfachung der Verwaltung, da eine Änderung der einer Gruppe zugewiesenen Zugriffsrechte automatisch auf alle Benutzer dieser Gruppe angewendet wird. Ein Benutzer muss keiner Gruppe angehören, gehört aber oft zu mehreren.
 
-In CRX verfügt eine Gruppe über die folgenden Eigenschaften:
+In CRX hat eine Gruppe die folgenden Eigenschaften:
 
-* Sie repräsentiert eine Gruppe von Benutzern mit gemeinsamen Zugriffsrechten. Beispiel: Autoren oder Entwickler
-* Sie gilt für diesen Workspace.
-* Sie kann Mitglieder enthalten. Dabei kann es sich um einzelne Benutzer oder andere Gruppen handeln.
-* Eine hierarchische Gruppierung kann mithilfe von Mitgliedsbeziehungen erzielt werden. Sie können eine Gruppe nicht direkt unter einer anderen Gruppe im Repository platzieren.
+* Es stellt eine Gruppe von Benutzern mit gemeinsamen Zugriffsrechten dar. Beispielsweise Autoren oder Entwickler.
+* Gilt für diesen Arbeitsbereich.
+* Er kann Mitglieder haben; Hierbei kann es sich um einzelne Benutzer oder andere Gruppen handeln.
+* Eine hierarchische Gruppierung kann mit Mitgliederbeziehungen erreicht werden. Sie können eine Gruppe nicht direkt unter einer anderen Gruppe im Repository platzieren.
 
 * Sie können die Zugriffsrechte für alle Gruppenmitglieder definieren.
 
-**Zugriffsberechtigungen** CRX verwendet Zugriffsrechte, um den Zugriff auf bestimmte Bereiche des Repositorys zu steuern.
+**Zugriffsrechte**: CRX verwendet Zugriffsrechte zur Steuerung des Zugriffs auf bestimmte Bereiche des Repositorys.
 
 Dies erfolgt über die Zuweisung von Berechtigungen, um den Zugriff auf eine Ressource (Knoten oder Pfad) im Repository zuzulassen oder abzulehnen. Da zahlreiche Berechtigungen zugewiesen werden können, müssen sie ausgewertet werden, um festzustellen, welche Kombination für die aktuelle Anfrage relevant ist.
 
-CRX ermöglicht es Ihnen, die Zugriffsrechte für Benutzer- und Gruppenkonten zu konfigurieren. Es werden dann dieselben grundlegenden Auswertungsprinzipien auf beide angewendet.
+Mit CRX können Sie die Zugriffsberechtigungen für Benutzer- und Gruppenkonten konfigurieren. Die gleichen Grundprinzipien der Bewertung werden dann auf beide angewendet.
 
 ## Auswerten von Zugriffsrechten {#how-access-rights-are-evaluated}
 
 >[!NOTE]
 >
->In CRX wird die [Zugriffssteuerung gemäß der Definition in JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) implementiert.
+>CRX-Implementierungen [Zugriffskontrolle gemäß Definition in JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
->Die Standardinstallation eines CRX-Repositorys ist so konfiguriert, dass sie die ressourcenbasierten Zugriffssteuerungslisten verwendet. Dies ist eine mögliche Implementierung der JSR-283-Zugriffssteuerung und eine der Implementierungen in Jackrabbit.
+>Eine Standardinstallation eines CRX-Repositorys ist für die Verwendung ressourcenbasierter Zugriffssteuerungslisten konfiguriert. Dies ist eine mögliche Implementierung der Zugriffskontrolle auf JSR-283 und einer der Implementierungen, die mit Jackrabbit vorhanden sind.
 
 ### Objekte und Prinzipale {#subjects-and-principals}
 
 CRX verwendet zwei Hauptkonzepte zur Bewertung der Zugriffsrechte:
 
-* Ein **Prinzipal** ist eine Entität, die die Zugriffsrechte enthält. Prinzipale beinhalten:
+* A **Prinzipal** ist eine Entität, die Zugriffsrechte besitzt. Zu den Prinzipalen gehören:
 
-   * Ein Benutzerkonto
+   * Ein Benutzerkonto.
    * Ein Gruppenkonto
 
       Wenn ein Benutzerkonto zu einer oder mehreren Gruppen gehört, ist es auch mit jedem dieser Gruppenprinzipale verknüpft.
@@ -82,23 +86,23 @@ CRX verwendet zwei Hauptkonzepte zur Bewertung der Zugriffsrechte:
 
    Es dient zur Konsolidierung der für diese Anfrage relevanten Zugriffsrechte. Diese stammen von:
 
-   * Benutzerprinzipal
+   * dem Benutzerprinzipal
 
-      Die Rechte, die Sie dem Benutzerkonto direkt zuweisen.
+      den Rechten, die Sie dem Benutzerkonto direkt zuweisen
 
-   * Alle mit diesem Benutzer verknüpften Gruppenprinzipale
+   * allen mit diesem Benutzer verknüpften Gruppenprinzipalen
 
-      Alle Rechte, die einer der Gruppen zugewiesen sind, zu denen der Benutzer gehört.
-   Das Ergebnis wird anschließend verwendet, um den Zugriff auf die angeforderte Ressource zuzulassen oder abzulehnen.
+      sowie allen Rechten, die Sie jeder der Gruppen zugewiesen haben, zu denen der Benutzer gehört.
+   Das Ergebnis wird dann verwendet, um den Zugriff auf die angeforderte Ressource zu erlauben oder zu verweigern.
 
-#### Kompilieren der Liste der Zugriffsrechte für ein Objekt {#compiling-the-list-of-access-rights-for-a-subject}
+#### Kompilieren der Liste der Zugriffsrechte für ein Subjekt {#compiling-the-list-of-access-rights-for-a-subject}
 
-In CRX ist das Objekt abhängig von:
+In CRX hängt das Betreff von Folgendem ab:
 
-* dem Benutzerprinzipal
-* allen Gruppenprinzipalen, die mit diesem Benutzer verknüpft sind
+* Benutzerprinzipal
+* alle Gruppenprinzipale, die mit diesem Benutzer verknüpft sind
 
-Die Liste der Zugriffsrechte, die für das Objekt relevant sind, wird erstellt aus:
+Die Liste der für den Betreff geltenden Zugriffsrechte wird erstellt aus:
 
 * den Rechten, die Sie dem Benutzerkonto direkt zuweisen
 * sowie allen Rechten, die Sie jeder der Gruppen zugewiesen haben, zu denen der Benutzer gehört
@@ -107,31 +111,30 @@ Die Liste der Zugriffsrechte, die für das Objekt relevant sind, wird erstellt a
 
 >[!NOTE]
 >
->* CRX berücksichtigt keine Benutzerhierarchie bei der Kompilierung der Liste.
->* CRX verwendet nur dann eine Gruppenhierarchie, wenn Sie eine Gruppe als Mitglied einer anderen Gruppe einfügen. Es gibt keine automatische Vererbung (Übernahme) von Gruppenberechtigungen.
->* Die Reihenfolge, in der Sie die Gruppen festlegen, hat keinen Einfluss auf die Zugriffsrechte.
-
+>* CRX berücksichtigt keine Benutzerhierarchie bei der Erstellung der Liste.
+>* CRX verwendet eine Gruppenhierarchie nur, wenn Sie eine Gruppe als Mitglied einer anderen Gruppe einbeziehen. Es gibt keine automatische Vererbung von Gruppenberechtigungen.
+>* Die Reihenfolge, in der Sie die Gruppen angeben, wirkt sich nicht auf die Zugriffsberechtigungen aus.
 >
 
 
-### Auflösen von Anfragen und Zugriffsrechten {#resolving-request-and-access-rights}
+### Auflösen von Anfragen- und Zugriffsrechten {#resolving-request-and-access-rights}
 
-Wenn CRX die Anfrage verarbeitet, vergleicht es die Zugriffsanfrage des Objekts mit der Liste der Zugriffssteuerung im Repository-Knoten:
+Wenn CRX die Anfrage verarbeitet, vergleicht es die Zugriffsanfrage des Betreffs mit der Zugriffssteuerungsliste auf dem Repository-Knoten:
 
-Wenn Linda also eine Aktualisierung der `/features` Knoten in der folgenden Repository-Struktur:
+Wenn also Linda eine Aktualisierung des Knotens `/features` in der folgenden Repository-Struktur anfordert:
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
 ### Rangfolge {#order-of-precedence}
 
-Zugriffsrechte in CRX werden wie folgt bewertet:
+Zugriffsberechtigungen in CRX werden wie folgt bewertet:
 
-* Benutzerprinzipale haben stets Vorrang vor Gruppenprinzipalen – unabhängig von:
+* Benutzerprinzipale haben immer Vorrang vor Gruppenprinzipalen, unabhängig von:
 
    * ihrer Reihenfolge in der Zugriffsteuerungsliste
-   * ihrer Position in der Knotenhierarchie
+   * ihre Position in der Knotenhierarchie
 
-* Bei einem gegebenen Prinzipal ist (maximal) 1 Ablehnungs- und 1 Zulassungseintrag in einem gegebenen Knoten vorhanden. Die Implementierung löscht immer redundante Einträge und stellt sicher, dass dieselbe Berechtigung nicht sowohl in den Zulassungs- als auch in den Ablehnungseinträgen aufgeführt wird.
+* Für einen bestimmten Prinzipal gibt es (höchstens) 1 Ablehnungs- und 1 Zulassungseintrag für einen bestimmten Knoten. Die Implementierung löscht immer redundante Einträge und stellt sicher, dass dieselbe Berechtigung nicht sowohl in den Zulassungs- als auch in den Ablehnungseinträgen aufgeführt wird.
 
 >[!NOTE]
 >
@@ -151,7 +154,7 @@ Nachfolgend sehen Sie zwei Beispiele, in denen der Benutzer `aUser` Mitglied der
 
 Im obigen Fall:
 
-* `aUser` keine Schreibberechtigung für `grandChildNode`.
+* wird dem Benutzer `aUser` keine Schreibberechtigung für den Knoten `grandChildNode` gewährt.
 
 ```xml
    + parentNode
@@ -166,11 +169,11 @@ Im obigen Fall:
 
 In diesem Fall:
 
-* `aUser` keine Schreibberechtigung für `grandChildNode`.
+* wird dem Benutzer `aUser` keine Schreibberechtigung für den Knoten `grandChildNode` gewährt.
 
 * Der zweite ACE-Eintrag für den Benutzer `aUser` ist redundant.
 
-Zugriffsrechte von mehreren Gruppenprinzipalen werden basierend auf ihrer Reihenfolge innerhalb der Hierarchie und innerhalb einer einzigen Zugriffssteuerungsliste bewertet.
+Zugriffsberechtigungen von mehreren Gruppenprinzipalen werden anhand ihrer Reihenfolge bewertet, sowohl innerhalb der Hierarchie als auch innerhalb einer einzigen Zugriffssteuerungsliste.
 
 ### Best Practices {#best-practices}
 
@@ -184,28 +187,28 @@ Die nachfolgende Tabelle enthält einige Empfehlungen und Best Practices:
   </tr> 
   <tr> 
    <td><i>Benutzergruppen</i></td> 
-   <td><p>Vermeiden Sie die Zuweisung von Zugriffsrechten für einzelne Benutzer. Dafür gibt es mehrere Gründe:</p> 
+   <td><p>Vermeiden Sie es, Zugriffsrechte Benutzer für Benutzer zuzuweisen. Dafür gibt es mehrere Gründe:</p> 
     <ul> 
-     <li>Da Sie viel mehr Benutzer als Gruppen haben, vereinfachen Gruppen die Struktur.</li> 
-     <li>Gruppen bieten einen Überblick über alle Konten.</li> 
-     <li>Die Vererbung ist bei Gruppen einfacher.</li> 
-     <li>Benutzer kommen und gehen. Gruppen sind auf Langfristigkeit ausgelegt.</li> 
+     <li>Da es viel mehr Benutzende als Gruppen gibt, vereinfachen Gruppen die Struktur.</li> 
+     <li>Gruppen bieten Ihnen einen Überblick über alle Konten.</li> 
+     <li>Die Vererbung bei Gruppen ist einfacher.</li> 
+     <li>Benutzer wechseln häufiger. Gruppen sind auf Langfristigkeit ausgelegt.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><i>Positiv sein</i></td> 
-   <td><p>Verwenden Sie immer Anweisungen vom Typ Zulassen , um die Zugriffsrechte des Gruppenprinzipals anzugeben (sofern möglich). Vermeiden Sie Anweisungen vom Typ „Ablehnen“.</p> <p>Gruppenprinzipale werden der Reihenfolge nach innerhalb der Hierarchie und innerhalb einer einzelnen Zugriffssteuerungsliste bewertet.</p> </td> 
+   <td><p>Verwenden Sie immer Anweisungen vom Typ „Zulassen“, um die Zugriffsrechte des Gruppenprinzipals anzugeben (sofern möglich). Vermeiden Sie Anweisungen vom Typ „Ablehnen“.</p> <p>Gruppenprinzipale werden der Reihenfolge nach innerhalb der Hierarchie und innerhalb einer einzelnen Zugriffssteuerungsliste bewertet.</p> </td> 
   </tr> 
   <tr> 
-   <td><i>Einfach halten</i></td> 
-   <td><p>Wenn Sie bei der Konfiguration einer Neuinstallation etwas Zeit investieren und nachdenken, wird dies gut bezahlt.</p> <p>Eine klare Struktur vereinfacht die fortlaufende Wartung und Verwaltung, sodass sowohl aktuelle Kollegen als auch Nachfolger die Implementierung problemlos verstehen können.</p> </td> 
+   <td><i>Es einfach halten</i></td> 
+   <td><p>Wenn Sie bei der Konfiguration einer Neuinstallation etwas Zeit investieren und nachdenken, zahlt sich das später aus.</p> <p>Eine klare Struktur vereinfacht die fortlaufende Wartung und Verwaltung, sodass sowohl aktuelle Kollegen als auch Nachfolger die Implementierung problemlos verstehen können.</p> </td> 
   </tr> 
   <tr> 
    <td><i>Testen</i></td> 
    <td>Verwenden Sie eine Testinstallation, um zu üben und sicherzustellen, dass Sie die Beziehungen zwischen den verschiedenen Benutzern und Gruppen verstehen.</td> 
   </tr> 
   <tr> 
-   <td><i>Standardbenutzer/Gruppen</i></td> 
+   <td><i>Standardbenutzer/-gruppen</i></td> 
    <td>Aktualisieren Sie die Standardbenutzer und -gruppen immer sofort nach der Installation, um Sicherheitsprobleme zu vermeiden.</td> 
   </tr> 
  </tbody> 
@@ -215,40 +218,44 @@ Die nachfolgende Tabelle enthält einige Empfehlungen und Best Practices:
 
 Für die **Benutzerverwaltung** wird ein Standard-Dialogfeld verwendet.
 
-Sie müssen sich beim jeweiligen Workspace anmelden und können dann wie folgt auf das Dialogfeld zugreifen:
+Sie müssen beim entsprechenden Arbeitsbereich angemeldet sein und können dann von beiden auf das Dialogfeld zugreifen:
 
-* über den Link **Benutzerverwaltung** in der Hauptkonsole von CRX
-* über das Menü **Sicherheit** des CRX Explorers
+* die **Benutzerverwaltung** Link in der Hauptkonsole von CRX
+* die **Sicherheit** Menü des CRX Explorer
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
 **Eigenschaften**
 
-* **Benutzer-ID** Kurzname für das Konto, der beim Zugriff auf CRX verwendet wird
+* **UserID**
+Kurzname für das Konto, der beim Zugriff auf CRX verwendet wird.
 
-* **Prinzipalname** Vollständiger Name des Kontos
+* **Prinzipalname**
+Ein vollständiger Textname für das Konto.
 
-* **Kennwort** Erforderlich, wenn mit diesem Konto auf CRX zugegriffen wird
+* **Passwort**
+Wird benötigt, wenn mit diesem Konto auf CRX zugegriffen wird.
 
-* **** ntlmhash Wird automatisch jedem neuen Konto zugewiesen und bei Änderung des Kennworts aktualisiert
+* **ntlmhash**
+Wird automatisch für jedes neue Konto zugewiesen und aktualisiert, wenn das Kennwort geändert wird.
 
-* Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für jede neue Eigenschaft.
+* Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie für jede neue Eigenschaft auf Speichern (grünes Häkchen-Symbol).
 
 **Gruppenmitgliedschaft** Dadurch werden alle Gruppen angezeigt, zu denen das Konto gehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
 Durch Klicken auf eine Gruppen-ID (falls verfügbar) wird die [Gruppenverwaltung](#group-administration) für diese Gruppe geöffnet.
 
-**Darsteller** Mit der Funktion &quot;Identität annehmen&quot;kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
+**Darsteller** Mit der Funktion „Stellvertretend agieren“ kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
-Dies bedeutet, dass über ein Benutzerkonto andere Konten (Benutzer oder Gruppe) festgelegt werden können, die mit ihrem Konto arbeiten können. Anders ausgedrückt: Wenn Benutzer B stellvertretend für Benutzer A agieren darf, kann Benutzer B Aktionen unter Verwendung aller Kontodetails des Benutzers A (einschließlich ID, Name und Zugriffsrechte) ausführen.
+Das bedeutet, dass ein Benutzerkonto andere Konten (Benutzer oder Gruppe) angeben kann, die mit ihrem Konto arbeiten können. Anders ausgedrückt: Wenn Benutzer B stellvertretend für Benutzer A agieren darf, kann Benutzer B Aktionen unter Verwendung aller Kontodetails des Benutzers A (einschließlich ID, Name und Zugriffsrechte) ausführen.
 
-Hierdurch kann der Stellvertreter (Darsteller) Aufgaben so abschließen, als würde er das Konto verwenden, für das er stellvertretend agiert, etwa bei Abwesenheit oder zur kurzfristigen Entlastung anderer überlasteter Benutzer.
+Dadurch können die stellvertretenden Konten Aufgaben so ausführen, als ob sie das Konto verwenden würden, für das sie stellvertretend agieren. z. B. bei Abwesenheit oder kurzfristiger Lastenteilung.
 
-Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig zu erkennen. In den Protokolldateien werden keine Informationen dazu gespeichert, ob bei den Ereignissen jemand stellvertretend agiert hat. Wenn also Benutzer B stellvertretend für Benutzer A agiert, sehen alle Ereignisse so aus, als ob sie von Benutzer A persönlich ausgeführt wurden.
+Wenn ein Konto stellvertretend für ein anderes agiert, ist es sehr schwer zu sehen. Die Protokolldateien enthalten keine Informationen darüber, dass bei den Ereignissen eine Identität aufgetreten ist. Wenn also Benutzer B stellvertretend für Benutzer A agiert, sehen alle Ereignisse so aus, als ob sie von Benutzer A persönlich durchgeführt würden.
 
-### Erstellen von Benutzerkonten {#creating-a-user-account}
+### Erstellen eines Benutzerkontos {#creating-a-user-account}
 
-1. Öffnen Sie das Dialogfeld **Benutzerverwaltung**.
+1. Öffnen Sie die **Benutzerverwaltung** angezeigt.
 1. Klicken Sie auf **Benutzer erstellen**.
 1. Sie können dann die Eigenschaften eingeben:
 
@@ -257,20 +264,19 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig 
    * **Prinzipalname** – dient zur Eingabe des vollständigen Textnamens
    * **Zwischenpfad** – kann zum Erstellen einer hierarchischen Struktur verwendet werden
 
-1. Klicken Sie auf die Schaltfläche „Speichern“ (grünes Häkchen-Symbol).
-1. Daraufhin wird das Dialogfeld erweitert und Sie können Folgendes tun:
+1. Klicken Sie auf Speichern (grünes Häkchensymbol).
+1. Das Dialogfeld wird erweitert, damit Sie Folgendes tun können:
 
-   1. Konfigurieren Sie **Eigenschaften**.
+   1. Konfigurieren **Eigenschaften**.
    1. Zeigen Sie die **Gruppenmitgliedschaft** an.
-   1. Definieren Sie **Darsteller**.
+   1. Definieren **Darsteller**.
 
 >[!NOTE]
 >
->Es kann manchmal zu einer Beeinträchtigung der Leistung kommen, wenn neue Benutzer in Installationen registriert werden, die eine hohe Anzahl haben an:
+>Manchmal kann es zu Leistungseinbußen kommen, wenn neue Benutzer in Installationen registriert werden, die über eine hohe Anzahl von beiden verfügen:
 >
 >* Benutzer
 >* Gruppen mit vielen Mitgliedern
-
 >
 
 
@@ -278,154 +284,157 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwierig 
 
 1. Öffnen Sie mithilfe des Dialogfelds **Benutzerverwaltung** die Listenansicht aller Konten.
 
-1. Navigieren Sie in der hierarchischen Struktur nach oben.
+1. Navigieren Sie durch die Baumstruktur.
 1. Klicken Sie auf das gewünschte Konto, um es zur Bearbeitung zu öffnen.
-1. Nehmen Sie eine Änderung vor und klicken Sie anschließend auf „Speichern“ (grünes Häkchen-Symbol) für diesen Eintrag.
-1. Klicken Sie zum Fertigstellen auf **Schließen** oder auf **Liste…**, um zur Liste aller Benutzerkonten zurückzukehren.
+1. Nehmen Sie eine Änderung vor und klicken Sie dann auf Speichern (grünes Häkchensymbol) für diesen Eintrag.
+1. Klicken **Schließen** bis zum Ende oder **Liste...** , um zur Liste aller Benutzerkonten zurückzukehren.
 
 ### Entfernen von Benutzerkonten {#removing-a-user-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Benutzerverwaltung** die Listenansicht aller Konten.
 
-1. Navigieren Sie in der hierarchischen Struktur nach oben.
-1. Wählen Sie das gewünschte Konto aus und klicken Sie auf **Benutzer entfernen**. Das Konto wird sofort gelöscht.
+1. Navigieren Sie durch die Baumstruktur.
+1. Wählen Sie das gewünschte Konto aus und klicken Sie auf **Benutzer löschen**; wird das Konto sofort gelöscht.
 
 >[!NOTE]
 >
 >Dadurch wird der Knoten für diesen Prinzipal aus dem Repository entfernt.
 >
->Zugriffsrechte-Einträge werden hingegen nicht entfernt. So wird die historische Integrität gesichert.
+>Einträge mit Zugriffsrechten werden nicht entfernt. So wird die historische Integrität gesichert.
 
 ### Definieren von Eigenschaften {#defining-properties}
 
-Sie können **Eigenschaften** für neue oder vorhandene Konten definieren:
+Sie können **Eigenschaften** für neue oder vorhandene Konten:
 
-1. Öffnen Sie das Dialogfeld **Benutzerverwaltung** für das entsprechende Konto.
-1. Geben Sie einen Namen für die **Eigenschaft** an.
-1. Wählen Sie den **Typ** aus der Dropdown-Liste aus.
-1. Legen Sie einen **Wert** fest.
-1. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für die neue Eigenschaft.
+1. Öffnen Sie die **Benutzerverwaltung** für das entsprechende Konto.
+1. Definieren Sie eine **Eigenschaft** name.
+1. Wählen Sie die **Typ** aus der Dropdown-Liste aus.
+1. Definieren Sie die **Wert**.
+1. Klicken Sie für die neue Eigenschaft auf Speichern (grünes Klicksymbol) .
 
-Vorhandene Eigenschaften können mit dem Papierkorb-Symbol gelöscht werden.
+Vorhandene Eigenschaften können mit dem Papierkorbsymbol gelöscht werden.
 
-Mit Ausnahme des Kennworts können Eigenschaften nicht bearbeitet werden, sie müssen gelöscht und neu erstellt werden.
+Mit Ausnahme des Kennworts können Eigenschaften nicht bearbeitet werden. Sie müssen gelöscht und neu erstellt werden.
 
-#### Ändern von Kennwörtern {#changing-the-password}
+#### Ändern des Kennworts {#changing-the-password}
 
-Das **Kennwort** ist eine spezielle Eigenschaft, die durch Klicken auf den Link **Kennwort ändern** geändert werden kann.
+Die **Passwort** ist eine spezielle Eigenschaft, die durch Klicken auf **Kennwort ändern** Link.
 
-Sie können über das Menü **Sicherheit** im CRX Explorer auch das Kennwort für Ihr eigenes Benutzerkonto ändern.
+Sie können das Kennwort auch in Ihr eigenes Benutzerkonto ändern, indem Sie die **Sicherheit** im CRX Explorer angezeigt.
 
-### Definieren von Darstellern {#defining-an-impersonator}
+### Definieren eines Impersonators {#defining-an-impersonator}
 
-Sie können Darsteller für neue oder vorhandene Konten definieren:
+Sie können Identifikatoren für neue oder vorhandene Konten definieren:
 
-1. Öffnen Sie das Dialogfeld **Benutzerverwaltung** für das entsprechende Konto.
-1. Geben Sie das Konto an, dem es gestattet sein soll, stellvertretend für dieses Konto zu agieren.
+1. Öffnen Sie die **Benutzerverwaltung** für das entsprechende Konto.
+1. Geben Sie das Konto an, das stellvertretend für dieses Konto agieren darf.
 
-   Mit Durchsuchen... können Sie ein vorhandenes Konto auswählen.
+   Sie können über die Option „Durchsuchen…“ ein bestehendes Konto auswählen.
 
-1. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für die neue Eigenschaft.
+1. Klicken Sie für die neue Eigenschaft auf Speichern (grünes Häkchensymbol) .
 
 ## Gruppenverwaltung {#group-administration}
 
-Für die **Gruppenverwaltung** wird ein Standard-Dialogfeld verwendet.
+Ein Standarddialogfeld wird verwendet für **Gruppenverwaltung**.
 
-Sie müssen sich beim jeweiligen Workspace anmelden und können dann wie folgt auf das Dialogfeld zugreifen:
+Sie müssen beim entsprechenden Arbeitsbereich angemeldet sein und können dann von beiden auf das Dialogfeld zugreifen:
 
-* über den Link **Gruppenverwaltung** in der Hauptkonsole von CRX
-* über das Menü **Sicherheit** des CRX Explorers
+* die **Gruppenverwaltung** Link in der Hauptkonsole von CRX
+* die **Sicherheit** Menü des CRX Explorer
 
 ![chlimage_1-47](assets/chlimage_1-47.jpeg)
 
 **Eigenschaften**
 
-* **Gruppen-ID** Kurzname für das Gruppenkonto.
+* **GroupID**
+Kurzname für das Gruppenkonto.
 
-* **Prinzipalname** Vollständiger Name des Gruppenkontos
+* **Prinzipalname**
+Ein vollständiger Textname für das Gruppenkonto.
 
-* Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für jede neue Eigenschaft.
-* **Mitglieder** Sie können Benutzer oder andere Gruppen als Mitglieder dieser Gruppe hinzufügen.
+* Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie für jede neue Eigenschaft auf Speichern (grünes Häkchen-Symbol).
+* **Mitglieder**
+Sie können Benutzer oder andere Gruppen als Mitglieder dieser Gruppe hinzufügen.
 
 **Gruppenmitgliedschaft** Dadurch werden alle Gruppen angezeigt, zu denen das aktuelle Gruppenkonto gehört. Die Spalte Übernommen zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
 
-Wenn Sie auf eine Gruppen-ID klicken, wird das Dialogfeld für diese Gruppe geöffnet.
+Durch Klicken auf eine Gruppen-ID wird das Dialogfeld für diese Gruppe geöffnet.
 
 **Mitglieder** Listet alle Konten (Benutzer und/oder Gruppen) auf, die Mitglieder der aktuellen Gruppe sind.
 
-Die Spalte **Übernommen** zeigt Mitgliedschaften an, die durch eine Mitgliedschaft bei einer anderen Gruppe übernommen wurden.
+Die **Übernommen** gibt die Mitgliedschaft an, die infolge der Mitgliedschaft in einer anderen Gruppe übernommen wurde.
 
 >[!NOTE]
 >
->Wenn die Eigentümer-, Bearbeiter- oder Betrachterrolle einem Benutzer in einem beliebigen Asset-Ordner zugewiesen wird, wird eine neue Gruppe erstellt. Der Gruppenname entspricht dem Format `mac-default-<foldername>` für jeden Ordner, für den die Rollen definiert sind.
+>Wenn die Eigentümer-, Bearbeiter- oder Betrachterrolle einem Benutzer in einem beliebigen Asset-Ordner zugewiesen wird, wird eine neue Gruppe erstellt. Der Gruppenname ist vom Format `mac-default-<foldername>` für jeden Ordner, für den die Rollen definiert sind.
 
-### Erstellen von Gruppenkonten {#creating-a-group-account}
+### Erstellen eines Gruppenkontos {#creating-a-group-account}
 
-1. Öffnen Sie das Dialogfeld **Gruppenverwaltung**.
-1. Klicken Sie auf **Gruppe erstellen**.
+1. Öffnen Sie die **Gruppenverwaltung** angezeigt.
+1. Klicken **Gruppe erstellen**.
 1. Sie können dann die Eigenschaften eingeben:
 
    * **Prinzipalname** – dient zur Eingabe des vollständigen Textnamens
    * **Zwischenpfad** – kann zum Erstellen einer hierarchischen Struktur verwendet werden
 
-1. Klicken Sie auf die Schaltfläche „Speichern“ (grünes Häkchen-Symbol).
-1. Daraufhin wird das Dialogfeld erweitert und Sie können Folgendes tun:
+1. Klicken Sie auf Speichern (grünes Häkchensymbol).
+1. Das Dialogfeld wird erweitert, damit Sie Folgendes tun können:
 
-   1. Konfigurieren Sie **Eigenschaften**.
+   1. Konfigurieren **Eigenschaften**.
    1. Zeigen Sie die **Gruppenmitgliedschaft** an.
-   1. Verwalten Sie die **Mitglieder**.
+   1. Verwalten **Mitglieder**.
 
-### Aktualisieren von Gruppenkonten {#updating-a-group-account}
+### Aktualisieren eines Gruppenkontos {#updating-a-group-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Gruppenverwaltung** die Listenansicht aller Konten.
 
-1. Navigieren Sie in der hierarchischen Struktur nach oben.
+1. Navigieren Sie durch die Baumstruktur.
 1. Klicken Sie auf das gewünschte Konto, um es zur Bearbeitung zu öffnen.
-1. Nehmen Sie eine Änderung vor und klicken Sie anschließend auf „Speichern“ (grünes Häkchen-Symbol) für diesen Eintrag.
-1. Klicken Sie zum Fertigstellen auf **Schließen** oder auf **Liste…**, um zur Liste aller Gruppenkonten zurückzukehren.
+1. Nehmen Sie eine Änderung vor und klicken Sie dann auf Speichern (grünes Häkchensymbol) für diesen Eintrag.
+1. Klicken **Schließen** bis zum Ende oder **Liste...** , um zur Liste aller Gruppenkonten zurückzukehren.
 
 ### Entfernen von Gruppenkonten {#removing-a-group-account}
 
 1. Öffnen Sie mithilfe des Dialogfelds **Gruppenverwaltung** die Listenansicht aller Konten.
 
-1. Navigieren Sie in der hierarchischen Struktur nach oben.
-1. Wählen Sie das gewünschte Konto aus und klicken Sie auf **Gruppe entfernen**. Das Konto wird sofort gelöscht.
+1. Navigieren Sie durch die Baumstruktur.
+1. Wählen Sie das gewünschte Konto aus und klicken Sie auf **Gruppe löschen**; wird das Konto sofort gelöscht.
 
 >[!NOTE]
 >
 >Dadurch wird der Knoten für diesen Prinzipal aus dem Repository entfernt.
 >
->Zugriffsrechte-Einträge werden hingegen nicht entfernt. So wird die historische Integrität gesichert.
+>Einträge mit Zugriffsrechten werden nicht entfernt. So wird die historische Integrität gesichert.
 
 ### Definieren von Eigenschaften {#defining-properties-1}
 
 Sie können Eigenschaften für neue oder vorhandene Konten definieren:
 
-1. Öffnen Sie das Dialogfeld **Gruppenverwaltung** für das entsprechende Konto.
-1. Geben Sie einen Namen für die **Eigenschaft** an.
-1. Wählen Sie den **Typ** aus der Dropdown-Liste aus.
-1. Legen Sie einen **Wert** fest.
-1. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für die neue Eigenschaft.
+1. Öffnen Sie die **Gruppenverwaltung** für das entsprechende Konto.
+1. Definieren Sie eine **Eigenschaft** name.
+1. Wählen Sie die **Typ** aus der Dropdown-Liste aus.
+1. Definieren Sie die **Wert**.
+1. Klicken Sie für die neue Eigenschaft auf Speichern (grünes Häkchensymbol) .
 
-Vorhandene Eigenschaften können mit dem Papierkorb-Symbol gelöscht werden.
+Vorhandene Eigenschaften können mit dem Papierkorbsymbol gelöscht werden.
 
 ### Mitglieder {#members}
 
-Sie können der aktuellen Gruppe Mitglieder hinzufügen:
+Sie können Mitglieder zur aktuellen Gruppe hinzufügen:
 
-1. Öffnen Sie das Dialogfeld **Gruppenverwaltung** für das entsprechende Konto.
-1. Führen Sie einen der folgenden Schritte durch:
+1. Öffnen Sie die **Gruppenverwaltung** für das entsprechende Konto.
+1. Entweder:
 
-   * Geben Sie den Namen des gewünschten Mitglieds (Benutzer- oder Gruppenkonto) ein.
-   * Alternativ können Sie über die Option **Durchsuchen…** nach dem hinzuzufügenden Prinzipal (Benutzer- oder Gruppenkonto) suchen und diesen auswählen.
+   * Geben Sie den Namen des erforderlichen Mitglieds ein (Benutzer- oder Gruppenkonto).
+   * Oder verwenden Sie **Durchsuchen...** , um nach dem Prinzipal (Benutzer- oder Gruppenkonto) zu suchen und ihn auszuwählen, den Sie hinzufügen möchten.
 
-1. Klicken Sie auf „Speichern“ (grünes Häkchen-Symbol) für die neue Eigenschaft.
+1. Klicken Sie für die neue Eigenschaft auf Speichern (grünes Häkchensymbol) .
 
-Alternativ können Sie ein vorhandenes Mitglied über das Papierkorb-Symbol löschen.
+Oder löschen Sie ein vorhandenes Element mit dem Papierkorbsymbol.
 
 ## Verwalten von Zugriffsrechten {#access-right-management}
 
-Mit dem **Zugriffssteuerung** -Registerkarte der CRXDE Lite können Sie die Zugriffssteuerungsrichtlinien definieren und die entsprechenden Berechtigungen zuweisen.
+Auf der Registerkarte **Zugriffssteuerung** von CRXDE Lite können Sie die Richtlinien für die Zugriffssteuerung definieren und die zugehörigen Berechtigungen zuweisen.
 
 Wählen Sie beispielsweise auf der Registerkarte „Zugangssteuerung“ im unteren rechten Bereich für die Option **Aktueller Pfad** die gewünschte Ressource im linken Bereich aus:
 
@@ -433,26 +442,32 @@ Wählen Sie beispielsweise auf der Registerkarte „Zugangssteuerung“ im unter
 
 Die Richtlinien sind wie folgt kategorisiert:
 
-* **Gültige Richtlinie für die Zugriffssteuerung** Diese Richtlinien können angewendet werden.
+* **Gültige Richtlinien zur Zugriffssteuerung**
+Diese Richtlinien können angewendet werden.
 
    Dies sind Richtlinien, die für die Erstellung einer lokalen Richtlinie zur Verfügung stehen. Nachdem Sie eine gültige Richtlinie ausgewählt und hinzugefügt haben, wird sie zu einer lokalen Richtlinie.
 
-* **Richtlinien zur lokalen Zugriffssteuerung** Dies sind Richtlinien zur Zugriffssteuerung, die Sie angewendet haben. Sie können sie dann aktualisieren, sortieren oder entfernen.
+* **Lokale Richtlinien zur Zugriffssteuerung**
+Dies sind Richtlinien zur Zugriffssteuerung, die Sie angewendet haben. Sie können sie dann aktualisieren, sortieren oder entfernen.
 
    Eine lokale Richtlinie überschreibt jedwede Richtlinien, die vom übergeordneten Element übernommen werden.
 
-* **Gültige Richtlinien zur Zugriffssteuerung** Dies sind Richtlinien zur Zugriffssteuerung, die jetzt auf alle Zugriffsanfragen angewendet werden. Sie zeigen die aggregierten Richtlinien an, die von den lokalen Richtlinien abgeleitet bzw. vom übergeordneten Element übernommenen werden.
+* **Gültige Richtlinien zur Zugriffssteuerung**
+Dies sind Richtlinien zur Zugriffssteuerung, die jetzt für alle Zugriffsanfragen gelten. Sie zeigen die aggregierten Richtlinien an, die von den lokalen Richtlinien abgeleitet bzw. vom übergeordneten Element übernommenen werden.
 
 ### Auswählen von Richtlinien {#policy-selection}
 
 Sie können Richtlinien für Folgendes auswählen:
 
-* **Aktueller Pfad**: Wählen Sie wie im vorherigen Beispiel eine Ressource innerhalb des Repositorys aus. Die Richtlinien für diesen aktuellen Pfad werden angezeigt.
+* **Aktueller Pfad**
+Wählen Sie wie im vorherigen Beispiel eine Ressource innerhalb des Repositorys aus. Die Richtlinien für diesen aktuellen Pfad werden angezeigt.
 
-* **Repository**: Wählt die Zugriffssteuerung auf Repository-Ebene aus. Wenn Sie beispielsweise 
+* **Repository**
+: Wählt die Zugriffssteuerung auf Repository-Ebene aus. Wenn Sie beispielsweise 
 `jcr:namespaceManagement` -Berechtigung, die nur für das Repository relevant ist, nicht für einen Knoten.
 
-* **Prinzipal** Ein Prinzipal, der im Repository registriert ist
+* **Principal**
+Ein Prinzipal, der im Repository registriert ist.
 
    Sie können entweder den **Prinzipal**-Namen eingeben oder auf das Symbol rechts neben dem Feld klicken, um das Dialogfeld **Prinzipal auswählen** zu öffnen.
 
@@ -462,9 +477,9 @@ Sie können Richtlinien für Folgendes auswählen:
 
 >[!NOTE]
 >
->Zur Vereinfachung der Verwaltung empfehlen wir, dass Sie Gruppenkonten und nicht einzelnen Benutzerkonten Zugriffsrechte zuweisen.
+>Um die Verwaltung zu vereinfachen, empfehlen wir, dass Sie Gruppenkonten Zugriffsrechte zuweisen, nicht einzelnen Benutzerkonten.
 >
->Es ist einfacher, einige wenige Gruppen anstatt vieler Benutzerkonten zu verwalten. 
+>Es ist einfacher, anstelle vieler Benutzerkonten einige Gruppen zu verwalten.
 
 ### Berechtigungen {#privileges}
 
@@ -474,11 +489,11 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
  <tbody> 
   <tr> 
    <th><strong>Berechtigungsname</strong></th> 
-   <th><strong>Das steuert die Berechtigung für ...</strong></th> 
+   <th><strong>Dies steuert die Berechtigung zum...</strong></th> 
   </tr> 
   <tr> 
    <td><code>jcr:read</code></td> 
-   <td>Rufen Sie einen Knoten ab und lesen Sie dessen Eigenschaften und deren Werte.</td> 
+   <td>Abrufen eines Knotens und Lesen von dessen Eigenschaften und deren Werte.</td> 
   </tr> 
   <tr> 
    <td><code>rep:write</code></td> 
@@ -494,55 +509,55 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>crx:replicate</code></td> 
-   <td>Führen Sie die Replikation eines Knotens durch.</td> 
+   <td>Durchführen der Replikation eines Knotens.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:addChildNodes</code></td> 
-   <td>Erstellen Sie untergeordnete Knoten eines Knotens.</td> 
+   <td>Erstellen von untergeordneten Knoten eines Knotens.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:lifecycleManagement</code></td> 
-   <td>Ausführen von Lebenszyklusvorgängen für einen Knoten.</td> 
+   <td>Durchführen von Lebenszyklusvorgängen für einen Knoten.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:lockManagement</code></td> 
-   <td>Knoten sperren und entsperren; Sperren aktualisieren.</td> 
+   <td>Sperren und Rntsperren eines Knoten; Aktualisieren einer Sperre.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:modifyAccessControl</code></td> 
-   <td>Ändern Sie die Zugriffssteuerungsrichtlinien eines Knotens.</td> 
+   <td>Ändern der Richtlinien zur Zugriffssteuerung für einen Knoten.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:modifyProperties</code></td> 
-   <td>Erstellen, ändern und entfernen Sie die Eigenschaften eines Knotens.</td> 
+   <td>Erstellen, Ändern und Entfernen der Eigenschaften eines Knotens.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:namespaceManagement</code></td> 
-   <td>Registrieren, Aufheben der Registrierung und Ändern von Namespace-Definitionen.</td> 
+   <td>Registrieren von Namespace-Definitionen, Aufheben der Registrierung und Ändern der Registrierung.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:nodeTypeDefinitionManagement</code></td> 
-   <td>Importieren Sie Knotentypdefinitionen in das Repository.</td> 
+   <td>Importieren von Knotentypdefinitionen in das Repository.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:nodeTypeManagement</code></td> 
-   <td>Fügen Sie Mixin-Knotentypen hinzu, entfernen Sie sie und ändern Sie den primären Knotentyp eines Knotens. Dies schließt auch alle Aufrufe der Node.addNode- und XML-Importmethoden ein, bei denen der Mixin-Typ oder primäre Typ des neuen Knotens explizit festgelegt ist.</td> 
+   <td>Steuern der Berechtigung zum Hinzufügen und Entfernen von Mixin-Knotentypen sowie Ändern des primären Knotentyps eines Knotens. Dies schließt auch alle Aufrufe der Node.addNode- und XML-Importmethoden ein, bei denen der Mixin-Typ oder primäre Typ des neuen Knotens explizit festgelegt ist.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:readAccessControl</code></td> 
-   <td>Lesen Sie die Richtlinie zur Zugriffskontrolle eines Knotens.</td> 
+   <td>Lesen der Richtlinie zur Zugriffssteuerung für einen Knoten.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:removeChildNodes</code></td> 
-   <td>Entfernen Sie untergeordnete Knoten eines Knotens.</td> 
+   <td>Entfernen von untergeordneten Knoten eines Knotens.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:removeNode</code></td> 
-   <td>Entfernen Sie einen Knoten.</td> 
+   <td>Entfernen eines Knotens.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:retentionManagement</code></td> 
-   <td>Führen Sie Aufbewahrungsverwaltungsvorgänge für einen Knoten durch.</td> 
+   <td>Durchführen von Aufbewahrungsverwaltungsvorgängen für einen Knoten.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:versionManagement</code></td> 
@@ -550,15 +565,15 @@ Die folgenden Berechtigungen können beim Hinzufügen eines Zugangssteuerungsein
   </tr> 
   <tr> 
    <td><code>jcr:workspaceManagement</code></td> 
-   <td>Das Erstellen und Löschen von Arbeitsbereichen über die JCR-API.</td> 
+   <td>Das Erstellen und Löschen von Workspaces über die JCR-API.</td> 
   </tr> 
   <tr> 
    <td><code>jcr:write</code></td> 
-   <td>Dies ist eine aggregierte Berechtigung, die Folgendes enthält:<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td> 
+   <td>Dies ist eine aggregierte Berechtigung, die Folgendes enthält:<br /> – jcr:modifyProperties<br /> – jcr:addChildNodes<br /> – jcr:removeNode<br /> – jcr:removeChildNodes</td> 
   </tr> 
   <tr> 
    <td><code>rep:privilegeManagement</code></td> 
-   <td>Registrieren Sie neue Berechtigungen.</td> 
+   <td>Registrieren von neuen Berechtigungen.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -569,7 +584,7 @@ Sie können auch neue Berechtigungen registrieren:
 
 1. Wählen Sie in der Symbolleiste **Tools** und dann **Berechtigungen** aus, um die aktuell registrierten Berechtigungen anzuzeigen.
 
-   ![ac_permissions](assets/ac_privileges.png)
+   ![ac_privileges](assets/ac_privileges.png)
 
 1. Öffnen Sie mithilfe des Symbols **Berechtigung registrieren** (**+**) das entsprechende Dialogfeld und legen Sie eine neue Berechtigung fest:
 
@@ -583,15 +598,15 @@ Sie können auch neue Berechtigungen registrieren:
 
 1. Um neue **Richtlinien zur lokalen Zugriffssteuerung** hinzuzufügen, klicken Sie auf das **+**-Symbol rechts neben der Liste **Gültige Richtlinie für die Zugriffssteuerung**:
 
-   ![crx_access_control_apply](assets/crx_accesscontrol_applicable.png)
+   ![crx_accesscontrol_applicable](assets/crx_accesscontrol_applicable.png)
 
 1. Es wird ein neuer Eintrag unter **Richtlinien zur lokalen Zugriffssteuerung** angezeigt:
 
-   ![crx_access_control_newlocal](assets/crx_accesscontrol_newlocal.png)
+   ![crx_accesscontrol_newlocal](assets/crx_accesscontrol_newlocal.png)
 
 1. Klicken Sie auf das **+**-Symbol, um einen neuen Eintrag hinzuzufügen:
 
-   ![crx_access_control_addentry](assets/crx_accesscontrol_addentry.png)
+   ![crx_accesscontrol_addentry](assets/crx_accesscontrol_addentry.png)
 
    >[!NOTE]
    >
@@ -599,7 +614,7 @@ Sie können auch neue Berechtigungen registrieren:
    >
    >Geben Sie einfach &quot;&quot; ein.
 
-1. Definieren Sie Ihre Richtlinie zur Zugriffssteuerung und klicken Sie dann zum Speichern auf **OK**. Die neue Richtlinie:
+1. Definieren Sie Ihre Zugriffssteuerungsrichtlinie und klicken Sie auf **OK** speichern. Ihre neue Richtlinie wird:
 
    * wird unter **Richtlinien zur lokalen Zugriffssteuerung** aufgeführt; 
    * reflektiert die Änderungen unter **Gültige Richtlinien zur Zugriffssteuerung**.
@@ -612,7 +627,7 @@ Die Reihenfolge in der Liste zeigt die Reihenfolge an, in der die Richtlinien an
 
 1. Wählen Sie in der Tabelle **Richtlinien zur lokalen Zugriffssteuerung** den gewünschten Eintrag aus und ziehen Sie ihn an die neue Position in der Tabelle.
 
-   ![crx_access_control_reorder](assets/crx_accesscontrol_reorder.png)
+   ![crx_accesscontrol_reorder](assets/crx_accesscontrol_reorder.png)
 
 1. Die Änderungen werden in den Tabellen **Richtlinien zur lokalen Zugriffssteuerung** und **Gültige Richtlinien zur Zugriffssteuerung** angezeigt.
 
@@ -630,4 +645,4 @@ Die Reihenfolge in der Liste zeigt die Reihenfolge an, in der die Richtlinien an
 
 1. Klicken Sie auf **Testen**, um die Ergebnisse für Ihre Auswahl zu sehen:
 
-   ![crx_access_control_test](assets/crx_accesscontrol_test.png)
+   ![crx_accesscontrol_test](assets/crx_accesscontrol_test.png)

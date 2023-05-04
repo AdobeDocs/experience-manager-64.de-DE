@@ -1,18 +1,22 @@
 ---
 title: Veröffentlichen von Sammlungen in Brand Portal
-description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und Veröffentlichungen rückgängig machen können.
+description: Erfahren Sie, wie Sie Sammlungen in Brand Portal veröffentlichen und deren Veröffentlichung rückgängig machen können.
 contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: c2c6759e-f763-405e-9e45-5a90b9d32df2
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 62%
+source-wordcount: '359'
+ht-degree: 47%
 
 ---
 
 # Veröffentlichen von Sammlungen in Brand Portal {#publish-collections-to-brand-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Als Adobe Experience Manager Assets-Administrator können Sie Sammlungen in der [!DNL Experience Manager Assets Brand Portal] -Instanz für Ihr Unternehmen. Allerdings müssen Sie zunächst Assets mit Brand Portal integrieren. Weitere Informationen finden Sie unter [Konfigurieren von  Assets mit Brand Portal](configure-aem-assets-with-brand-portal.md).
 
@@ -26,7 +30,7 @@ Spätere Änderungen an der ursprünglichen Sammlung in Assets spiegeln sich ers
 
 ## Veröffentlichen einer Sammlung in Brand Portal {#publish-a-collection-to-brand-portal}
 
-1. Tippen/klicken Sie in der Assets-Benutzeroberfläche auf die [!DNL Experience Manager] Logo. Wechseln Sie dann zu **[!UICONTROL Assets > Sammlungen]** auf der Seite **[!UICONTROL Navigation]**.
+1. Tippen/klicken Sie in der Assets-Benutzeroberfläche auf die [!DNL Experience Manager] Logo. Gehen Sie dann zu **[!UICONTROL Assets > Sammlungen]** von **[!UICONTROL Navigation]** Seite.
 2. Wählen Sie in der Konsole &quot;Sammlungen&quot;die Sammlung aus, die Sie in Brand Portal veröffentlichen möchten.
 
    ![Sammlung auswählen](assets/select_collection.png)
@@ -35,7 +39,7 @@ Spätere Änderungen an der ursprünglichen Sammlung in Assets spiegeln sich ers
 
    ![publish_to_bp_icon](assets/publish_to_bp_icon.png)
 
-4. Klicken/tippen Sie im Bestätigungsdialog auf **[!UICONTROL Veröffentlichen]**.
+4. Tippen/klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Veröffentlichen]**.
 5. Schließen Sie die Bestätigungsmeldung.
 6. Melden Sie sich bei Brand Portal als Admin an. Die veröffentlichte Sammlung steht in der Konsole „Sammlungen“ zur Verfügung.
 
@@ -53,5 +57,5 @@ Sie können die Veröffentlichung von Sammlungen, die über Assets in Brand Por
 
    ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
 
-3. Klicken/tippen Sie im Dialog auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
+3. Tippen/klicken Sie im Dialogfeld auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
 4. Schließen Sie die Bestätigungsmeldung. Die Sammlung wird aus der Brand Portal-Oberfläche entfernt.

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 exl-id: 9092df98-f600-4ed8-93d8-f2e83cd8bb6a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 7%
+source-wordcount: '1220'
+ht-degree: 5%
 
 ---
 
 # Suchgrundlagen {#search-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -111,14 +115,14 @@ Im Folgenden finden Sie einige der durchsuchbaren Eigenschaften, die für versch
 | isSpam | *Boolesch* |
 | lesen | *Boolesch* |
 | Einfluss | *Boolesch* |
-| attachments | *Boolesch* |
+| Anlagen | *Boolesch* |
 | sentiment | *Long* |
 | markiert | *Boolesch* |
 | hinzugefügt | *Datum* |
 | modifiedDate | *Datum* |
 | state | *Zeichenfolge* |
 | userIdentifier | *Zeichenfolge* |
-| antworten | *Lang* |
+| antworten | *Long* |
 | jcr:title | *Zeichenfolge* |
 | jcr:description | *Zeichenfolge* |
 | sling:resourceType | *Zeichenfolge* |
@@ -150,9 +154,9 @@ Solr ist ein Beispiel für eine Abfragesprache, die ein Schema verwendet.
 |---|---|
 | _b | *Boolesch* |
 | _dt | *Kalender* |
-| _d | *Double* |
-| _tl | *Lang* |
-| _S | *Zeichenfolge* |
+| _d | *Zweistellig* |
+| _tl | *Long* |
+| _s | *Zeichenfolge* |
 | _t | *Text* |
 
 **Anmerkungen:**
@@ -182,13 +186,13 @@ Die Standardimplementierung der [Suchkomponente](search.md) verwendet diese Synt
 
 Filteroperatoren sind:
 
-| EQ | Gleich |
+| EQ | gleich |
 |---|---|
 | NE | nicht gleich |
-| LT | Kleiner als |
-| LTE | kleiner oder gleich |
-| GE | Größer als |
-| GTE | größer oder gleich |
+| LT | kleiner als |
+| LTE | kleiner als oder gleich |
+| GE | größer als |
+| GTE | größer als oder gleich |
 | LIKE | Fuzzy Match |
 
 Es ist wichtig, dass die URL auf die Communities-Komponente (Ressource) verweist und nicht auf die Seite, auf der die Komponente platziert wird:
@@ -220,7 +224,7 @@ curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/use
 
 Um Probleme mit einer Solr-Abfrage zu beheben, aktivieren Sie die DEBUG-Protokollierung für
 
-`com.adobe.cq.social.srp.impl.SocialSolrConnector` möglich.
+`com.adobe.cq.social.srp.impl.SocialSolrConnector`.
 
 Die tatsächliche Solr-Abfrage wird im Debug-Protokoll als URL-kodiert angezeigt:
 

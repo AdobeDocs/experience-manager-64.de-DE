@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 role: Admin
 exl-id: fc7ce4d0-2051-4a67-a0d6-baf615e09ca4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 2%
+source-wordcount: '470'
+ht-degree: 3%
 
 ---
 
 # Beitragsgrenzen der Mitgliedstaaten {#member-contribution-limits}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -55,7 +59,7 @@ So erreichen Sie diese OSGi-Konfiguration:
 
    Wenn diese Option aktiviert ist, legen Sie Benutzern automatisch Beitragsbeschränkungen fest, wenn sie sich als Community-Mitglieder registrieren. Dies spiegelt sich im Profil des Community-Mitglieds wider und kann über die [Mitgliederkonsole](members.md). Neue Mitglieder mit einer E-Mail-Adresse aus einer Zulassungsliste von Domänen werden nie eingeschränkt.
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL UGC-Limit]**
 

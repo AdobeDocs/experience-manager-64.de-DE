@@ -10,24 +10,28 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6aa88583-5d34-4f77-a932-d47d84785eca
 exl-id: 31926737-1a06-4fb9-b851-665095954875
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 100%
+source-wordcount: '510'
+ht-degree: 64%
 
 ---
 
 # ContextHub-Diagnosen {#contexthub-diagnostics}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ContextHub bietet eine Diagnoseseite, auf der Sie einen Überblick über das ContextHub-Framework erhalten. Um die Seite zu öffnen, gehen Sie zur `contexthub.diagnostics.html`-Seite Ihrer AEM-Autorenrinstanz, z. B.:
 
 `http://<host>:<port>/conf/<tenant>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
-Die „Seite ContextHub-Diagnose“ enthält Informationen zu den erstellten Stores und Benutzeroberflächenmodulen, den geladenen Client-Bibliotheksordnern und Links zu nützlichen Seiten.
+Auf der Seite &quot;ContextHub-Diagnose&quot;finden Sie Informationen zu den erstellten Stores und Benutzeroberflächenmodulen, den geladenen Client-Bibliotheksordnern und Links zu nützlichen Seiten.
 
 >[!NOTE]
 >
->Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein, da andernfalls die Diagnoseseite leer ist. In [diesem Dokument](/help/sites-administering/contexthub-config.md#debugging-contexthub) finden Sie Details zum Aktivieren des Debug-Modus.
+>Damit Diagnoseinformationen zurückgegeben werden können, muss der Debug-Modus aktiviert sein, da andernfalls die Diagnoseseite leer ist. Siehe [dieses Dokuments](/help/sites-administering/contexthub-config.md#debugging-contexthub) für Details zum Aktivieren des Debug-Modus.
 
 >[!NOTE]
 >
@@ -39,8 +43,8 @@ Der Abschnitt „Stores“ listet alle ContextHub-Stores auf, die konfiguriert w
 
 * **Title:** Der [Store-Typ](/help/sites-developing/ch-samplestores.md), auf dem der Store basiert.
 * **path:** Der Pfad zum Repository-Knoten, der die Konfiguration enthält.
-* **resourceType:** Der Pfad des Repository-Knotens, in dem der Storetyp definiert ist.
-* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Storetyp implementieren.
+* **resourceType:** Der Pfad des Repository-Knotens, in dem der Speichertyp definiert ist.
+* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Store-Typ implementieren.
 
 ## Modules {#modules}
 
@@ -48,12 +52,12 @@ Der Abschnitt „Modules“ listet alle ContextHub Benutzeroberflächenmodule au
 
 * **Title:** Der [Benutzeroberflächenmodultyp](/help/sites-developing/ch-samplemodules.md), auf dem das Benutzeroberflächenmodul basiert.
 * **path:** Der Pfad zum Repository-Knoten, der die Konfiguration enthält.
-* **resourceType:** Der Pfad des Repository-Knotens, in dem der Benutzeroberflächenmodultyp definiert ist.
-* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den Benutzeroberflächenmodultyp implementieren.
+* **resourceType:** Der Pfad des Repository-Knotens, in dem der UI-Modultyp definiert ist.
+* **clientlibs:** Die Kategorien der geladenen Client-Bibliotheken, die den UI-Modultyp implementieren.
 
 ## Clientlibs {#clientlibs}
 
-Der Abschnitt „Clientlibs“ listet alle Ordner der Client-Bibliothek auf, die ContextHub geladen hat. Die Client-Bibliotheken sind kategorisiert:
+Der Abschnitt „Clientlibs“ listet alle Ordner der Client-Bibliothek auf, die ContextHub geladen hat. Die Client-Bibliotheken werden kategorisiert:
 
 * **kernel.js:** Client-Bibliotheken, die das ContextHub-Framework, die Segment-Engine und Storetypen implementieren.
 * **ui.js:** Client-Bibliotheken, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.

@@ -10,23 +10,27 @@ topic-tags: content
 content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 exl-id: 0c989965-c6cc-4ec7-a90f-6c52e8362485
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 95%
+source-wordcount: '915'
+ht-degree: 51%
 
 ---
 
 # Tagging-Konsole der klassischen Benutzeroberfläche{#classic-ui-tagging-console}
 
-Dieser Abschnitt bezieht sich auf die Tagging-Konsole der klassischen Benutzeroberfläche.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Informationen zur Tagging-Konsole der Touch-optimierten Benutzeroberfläche finden Sie [hier](/help/sites-administering/tags.md#tagging-console).
+Dieser Abschnitt richtet sich an die Tagging-Konsole der klassischen Benutzeroberfläche.
+
+Die Tagging-Konsole der Touch-optimierten Benutzeroberfläche ist [here](/help/sites-administering/tags.md#tagging-console).
 
 So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
-* In der Autoreninstanz:
-* Melden Sie sich mit Administratorrechten an.
+* in der Autoreninstanz
+* Anmelden mit Administratorrechten
 * Zur Konsole navigieren
 
    Beispiel: [http://localhost:4502/tagging](http://localhost:4502/tagging)
@@ -35,17 +39,17 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 ## Erstellen von Tags und Namespaces {#creating-tags-and-namespaces}
 
-1. Je nachdem, auf welcher Ebene sie beginnen, können Sie mithilfe des Befehls **Neu** ein Tag oder einen Namespace erstellen:
+1. Je nachdem, auf welcher Ebene Sie beginnen, können Sie entweder ein Tag oder einen Namespace mit **Neu**:
 
-   Wenn Sie **Tags** wählen, können Sie einen Namespace erstellen:
+   Wenn Sie **Tags** Sie können einen Namespace erstellen:
 
    ![creating_tags_andnamespaces-1](assets/creating_tags_andnamespaces-1.png)
 
-   Wenn Sie einen Namespace wählen (zum Beispiel **Demo**), können Sie ein Tag innerhalb dieses Namespace erstellen:
+   Wenn Sie einen Namespace auswählen (z. B. **Demo**) können Sie ein Tag in diesem Namespace erstellen:
 
    ![creating_tags_andnamespacesinnewnamespace](assets/creating_tags_andnamespacesinnewnamespace.png)
 
-1. Geben Sie in beiden Fällen Folgendes ein:
+1. In beiden Fällen
 
    * **Titel**
 (
@@ -66,49 +70,49 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
       (*Optional*) Eine Beschreibung für das Tag.
 
-   * Wählen Sie **Erstellen** aus.
+   * select **Erstellen**
 
 
 ## Bearbeiten von Tags {#editing-tags}
 
-1. Wählen Sie im rechten Fenster das zu bearbeitende Tag aus.
+1. Wählen Sie im rechten Bereich das Tag aus, das Sie bearbeiten möchten.
 1. Klicken Sie auf **Bearbeiten**.
-1. Sie können **Titel** und **Beschreibung** ändern.
-1. Klicken Sie auf **Speichern**, um das Dialogfeld zu schließen.
+1. Sie können die **Titel** und **Beschreibung**.
+1. Klicken **Speichern** , um das Dialogfeld zu schließen.
 
 ## Löschen von Tags {#deleting-tags}
 
-1. Wählen Sie im rechten Bedienfeld das zu löschende Tag aus.
+1. Wählen Sie im rechten Bereich das Tag aus, das Sie löschen möchten.
 1. Klicken Sie auf **Löschen**.
-1. Klicken Sie auf **Ja**, um das Dialogfeld zu schließen.
+1. Klicken **Ja** , um das Dialogfeld zu schließen.
 
-   Das Tag sollte nicht mehr aufgelistet werden.
+   Das -Tag sollte nicht mehr aufgeführt werden.
 
 ## Aktivieren und Deaktivieren von Tags {#activating-and-deactivating-tags}
 
-1. Wählen Sie im rechten Bedienfeld das Tag bzw. den Namespace aus, das/der aktiviert (veröffentlicht) bzw. deaktiviert (dessen Veröffentlichung rückgängig gemacht) werden soll.
-1. Klicken Sie je nach Bedarf auf **Aktivieren** oder **Deaktivieren**.
+1. Wählen Sie im rechten Bereich den Namespace oder das Tag aus, den/das Sie aktivieren (veröffentlichen) oder deaktivieren (Veröffentlichung rückgängig machen) möchten.
+1. Klicken **Aktivieren** oder **Deaktivieren** nach Bedarf.
 
-## Liste – zeigt alle Seiten, die auf Tags verweisen {#list-showing-where-tags-are-referenced}
+## Liste - zeigt, wo Tags referenziert werden {#list-showing-where-tags-are-referenced}
 
-**Liste** öffnet ein neues Fenster, das die Pfade zu allen Seiten enthält, die das markierte Tag verwenden:
+**Liste** öffnet ein neues Fenster, das die Pfade aller Seiten anzeigt, die das markierte Tag verwenden:
 
 ![list_show_whetagsarreferenziert](assets/list_showing_wheretagsarereferenced.png)
 
 ## Verschieben von Tags {#moving-tags}
 
-Um Tag-Administratoren und -Entwicklern die Organisation des Klassifikationsschemas oder die Umbenennung einer Tag-ID zu erleichtern, ist es möglich, ein Tag an einen neuen Ort zu verschieben:
+Um Tag-Administratoren und -Entwickler bei der Bereinigung der Taxonomie oder dem Umbenennen einer Tag-ID zu unterstützen, ist es möglich, ein Tag an einen neuen Speicherort zu verschieben:
 
-1. Öffnen Sie die **Tagging**-Konsole.
-1. Markieren Sie das gewünschte Tag und klicken Sie in der oberen Werkzeugleiste (oder im Kontextmenü) auf **Verschieben...**
-1. Legen Sie im Dialogfeld **Tag verschieben** folgende Optionen fest:
+1. Öffnen Sie die **Tagging** Konsole.
+1. Wählen Sie das Tag aus und klicken Sie auf **Verschieben...** in der oberen Symbolleiste (oder im Kontextmenü).
+1. Im **Tag verschieben** Dialogfeld definieren:
 
    * **nach**, den Zielknoten.
-   * **Umbenennen in**, den neuen Namen des Knotens
+   * **Umbenennen in**, den neuen Knotennamen.
 
 1. Klicken Sie auf **Verschieben**.
 
-Das Dialogfeld **Tag verschieben** hat folgende Gestalt:
+Die **Tag verschieben** -Dialogfeld wie folgt aussieht:
 
 ![move_tag](assets/move_tag.png)
 
@@ -118,28 +122,28 @@ Das Dialogfeld **Tag verschieben** hat folgende Gestalt:
 
 ## Zusammenführen von Tags {#merging-tags}
 
-Das Zusammenführen von Tags kann sich anbieten, wenn im Klassifikationsschema Duplikate vorhanden sind. Wenn Tag A mit Tag B zusammengeführt wird, werden alle mit Tag gekennzeichneten Seiten mit Tag B gekennzeichnet, und Tag A steht Autoren nicht mehr zur Verfügung.
+Das Zusammenführen von Tags kann sich anbieten, wenn in einer Taxonomie Duplikate vorhanden sind. Wenn Tag A mit Tag B zusammengeführt wird, werden alle mit Tag gekennzeichneten Seiten mit Tag B gekennzeichnet, und Tag A steht Autoren nicht mehr zur Verfügung.
 
-So führen Sie Tags zusammen:
+So führen Sie ein Tag zu einem anderen zusammen:
 
-1. Öffnen Sie die **Tagging**-Konsole.
-1. Markieren Sie das gewünschte Tag und klicken Sie in der oberen Werkzeugleiste (oder im Kontextmenü) auf **Zusammenführen...**
-1. Legen Sie im Dialogfeld **Tag zusammenführen** folgende Optionen fest:
+1. Öffnen Sie die **Tagging** Konsole.
+1. Wählen Sie das Tag aus und klicken Sie auf **Zusammenführen...** in der oberen Symbolleiste (oder im Kontextmenü).
+1. Im **Tag zusammenführen** Dialogfeld definieren:
 
    * **in**, den Zielknoten.
 
-1. Klicken Sie auf **Zusammenführen**.
+1. Klicken **Zusammenführen**.
 
 Das Dialogfeld **Tag zusammenführen** hat folgende Gestalt:
 
 ![mergetag](assets/mergetag.png)
 
-## Statistik der Tag-Verwendung {#counting-usage-of-tags}
+## Zählung der Verwendung von Tags {#counting-usage-of-tags}
 
-So können Sie anzeigen, wie oft ein Tag verwendet wurde:
+So sehen Sie, wie oft ein Tag verwendet wird:
 
-1. Öffnen Sie die **Tagging**-Konsole.
-1. Klicken Sie in der oberen Werkzeugleiste auf **Verwendung zählen**. In der Spalte „Zählung“ wird das Ergebnis angezeigt.
+1. Öffnen Sie die **Tagging** Konsole.
+1. Klicken **Count Usage** in der oberen Symbolleiste: In der Spalte Zählung wird das Ergebnis angezeigt.
 
 ## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
 
@@ -151,15 +155,15 @@ Anhand des folgenden Verfahrens wird erläutert, wie Sie den `title` des Tags **
 
 1. Navigieren Sie zur **Tagging**-Konsole.
 1. Bearbeiten Sie das Tag **Animals** unter **Tags** > **Bildarchiv**.
-1. Fügen Sie Übersetzungen in den folgenden Sprachen hinzu:
+1. Fügen Sie die Übersetzungen in den folgenden Sprachen hinzu:
 
-   * **Englisch**: Animals
-   * **Deutsch**: Tiere
-   * **Französisch**: Animaux
+   * **englisch**: Tiere
+   * **deutsch**: Tiere
+   * **französisch**: Animaux
 
 1. Speichern Sie die Änderungen.
 
-Das Dialogfeld hat die folgende Gestalt:
+Das Dialogfeld sieht wie folgt aus:
 
 ![edit_tag](assets/edit_tag.png)
 
@@ -182,7 +186,7 @@ Standardmäßig werden die Tag-`titles` in den Seiteneigenschaften in der Seiten
 
 Standardmäßig werden die Tag-`titles` im Dialogfeld „Seiteneigenschaften“ in der Seitensprache angezeigt.
 
-Die Sprache für das Tag wird im Allgemeinen von der Seitensprache übernommen, falls diese eingestellt ist. Wird das Widget [tag in anderen Fällen verwendet (z. B. in Formularen oder Dialogfeldern), hängt die Tag-Sprache vom Kontext ab.](/help/sites-developing/building.md#tagging-on-the-client-side)
+Die Sprache für das Tag wird im Allgemeinen von der Seitensprache übernommen, falls diese eingestellt ist. Wenn die [Tag-Widget](/help/sites-developing/building.md#tagging-on-the-client-side) in anderen Fällen verwendet wird (z. B. in Formularen oder Dialogfeldern), hängt die Tag-Sprache vom Kontext ab.
 
 >[!NOTE]
 >

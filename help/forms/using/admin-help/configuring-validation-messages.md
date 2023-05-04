@@ -1,7 +1,7 @@
 ---
-title: Überprüfungsmeldungen konfigurieren
+title: Konfigurieren der Überprüfungsmeldungen
 seo-title: Configuring validation messages
-description: Erfahren Sie, wie Sie angeben, wie die Validierungsnachrichten und deren Position relativ zum im Webbrowser zurückgegebenen Formular angezeigt werden.
+description: Erfahren Sie, wie Sie angeben, wie Überprüfungsmeldungen angezeigt werden und wo sie sich im Verhältnis zum im Webbrowser zurückgegebenen Formular befinden.
 seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
 uuid: f6bff4fa-f90f-4135-ae40-7ab3d3613122
 contentOwner: admin
@@ -10,58 +10,62 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 2016ac85-12a1-42cb-bc03-fced94947010
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 100%
+source-wordcount: '386'
+ht-degree: 6%
 
 ---
 
-# Überprüfungsmeldungen konfigurieren {#configuring-validation-messages}
+# Konfigurieren der Überprüfungsmeldungen {#configuring-validation-messages}
 
-Für Formulare, die als HTML wiedergegeben werden, werden Formular-Überprüfungsfehler für den Benutzer angezeigt. Sie können die Darstellung von Überprüfungsmeldungen anpassen. In Abhängigkeit davon, wo die Überprüfungsmeldungen angezeigt werden, können Sie auch die Position der Meldung im Formular sowie die Rahmenstärke steuern.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-## Angeben, wie Überprüfungsmeldungen angezeigt werden {#specify-how-validation-messages-are-displayed}
+Bei Formularen, die als HTML wiedergegeben werden, werden Fehler bei der Formularüberprüfung für den Benutzer angezeigt. Sie können die Anzeige von Validierungsmeldungen anpassen. Je nachdem, wo die Überprüfungsmeldungen angezeigt werden, können Sie auch die Position der Nachricht im Formular und die Größe des Rahmenrahmens steuern.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Forms“.
-1. Wählen Sie unter „Überprüfungsausgabe“ in der Liste „Berichte“ eine der folgenden Optionen aus:
+## Festlegen der Anzeige von Validierungsmeldungen {#specify-how-validation-messages-are-displayed}
 
-   **Meldungsfeld**, um Überprüfungsmeldungen in einem gesonderten Dialogfeld anzuzeigen.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Formulare&quot;.
+1. Wählen Sie unter &quot;Überprüfungsausgabe&quot;in der Liste &quot;Berichte&quot;eine der folgenden Optionen aus:
 
-   **Frame**, um Überprüfungsmeldungen in einem Rahmen desselben Fensters anzuzeigen.
+   **Meldungsfeld:** So zeigen Sie Überprüfungsmeldungen in einem separaten Dialogfeld an.
 
-   **Kein Frame**, um Überprüfungsmeldungen im selben Fenster anzuzeigen. Dies ist der Standardwert.
+   **Frame:** Zum Anzeigen von Überprüfungsmeldungen innerhalb eines Rahmens desselben Fensters.
 
-   **Per API (mit Daten)**, um die Überprüfungsmeldungen über die API zurückzugeben (mit Daten). Die Überprüfungsmeldungen werden nicht auf dem Bildschirm angezeigt.
+   **Kein Frame:** So zeigen Sie Überprüfungsmeldungen im selben Fenster an. Dieser Wert ist der Standardwert.
 
-   **Per API (mit Formular)**, um die Überprüfungsmeldungen über die API zurückzugeben (mit dem Formular). Die Überprüfungsmeldungen werden nicht auf dem Bildschirm angezeigt.
+   **Über API (mit Daten):** So geben Sie die Validierungsmeldungen über die API (mit Daten) zurück. Die Überprüfungsmeldungen werden nicht auf dem Bildschirm angezeigt.
 
-   **Ohne**, um keine Überprüfungsmeldungen anzuzeigen.
+   **Über API (mit Formular):** So geben Sie die Überprüfungsmeldungen über die API (mit dem Formular) zurück. Die Überprüfungsmeldungen werden nicht auf dem Bildschirm angezeigt.
 
-1. Klicken Sie auf Speichern.
-
-## Die Position der Überprüfungsmeldungen relativ zum im Webbrowser zurückgegebenen Formular angeben {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
-
-Wenn „Berichte“ auf „Frame“ oder „Kein Frame“ festgelegt ist, können Sie die Position der Überprüfungsmeldungen angeben.
-
-1. Wählen Sie unter „Überprüfungsausgabe“ in der Liste „Position“ eine der folgenden Optionen aus:
-
-   **Links**, um Überprüfungsmeldungen in der linken Hälfte des Webbrowsers anzuzeigen.
-
-   **Rechts**, um Überprüfungsmeldungen in der rechten Hälfte des Webbrowsers anzuzeigen.
-
-   **Oben**, um Überprüfungsmeldungen oben im Webbrowser anzuzeigen. Dies ist der Standardwert.
-
-   **Unten**, um Überprüfungsmeldungen unten im Webbrowser anzuzeigen.
+   **Keine:** So zeigen Sie keine Überprüfungsmeldungen an.
 
 1. Klicken Sie auf Speichern.
 
-## Die Rahmenstärke angeben {#specify-the-frame-border-size}
+## Geben Sie den Speicherort der Überprüfungsmeldungen relativ zum im Webbrowser zurückgegebenen Formular an {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
-Wenn „Berichte“ auf „Frame“ festgelegt ist, können Sie die Rahmenstärke angeben.
+Wenn &quot;Berichterstellung&quot;auf &quot;Frame&quot;oder &quot;Kein Frame&quot;festgelegt ist, können Sie den Speicherort der Überprüfungsmeldungen angeben.
 
-1. Geben Sie unter „Überprüfungsausgabe“ im Feld „Rahmenstärke“ die Stärke des Rahmens in Pixel ein.
+1. Wählen Sie unter &quot;Überprüfungsausgabe&quot;in der Liste &quot;Position&quot;eine der folgenden Optionen aus:
 
-   Die Rahmenstärke muss gleich oder größer 0 sein. Der Standardwert ist 1.
+   **Links:** Zum Anzeigen von Validierungsmeldungen auf der linken Seite des Webbrowsers.
+
+   **Rechts:** Zum Anzeigen von Validierungsmeldungen auf der rechten Seite des Webbrowsers.
+
+   **Oben**: So zeigen Sie Überprüfungsmeldungen oben im Webbrowser an. Dieser Wert ist der Standardwert.
+
+   **Unten**: So zeigen Sie Überprüfungsmeldungen am unteren Rand des Webbrowsers an.
+
+1. Klicken Sie auf Speichern.
+
+## Festlegen der Rahmenrahmengröße {#specify-the-frame-border-size}
+
+Wenn für die Berichterstellung &quot;Frame&quot;festgelegt ist, können Sie die Rahmenrahmengröße angeben.
+
+1. Geben Sie unter &quot;Überprüfungsausgabe&quot;im Feld &quot;Rahmengröße&quot;die Größe des Rahmenrahmens in Pixel ein.
+
+   Die Rahmengröße muss größer/gleich 0 sein. Der Standardwert ist 1.
 
 1. Klicken Sie auf Speichern.

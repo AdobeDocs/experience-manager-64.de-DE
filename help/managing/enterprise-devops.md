@@ -10,14 +10,18 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
 exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '1025'
+ht-degree: 94%
 
 ---
 
 # DevOp-Strategien für Unternehmen{#enterprise-devops}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 DevOp-Strategien umfassen die notwendigen Prozesse, Methoden und die Kommunikation für Folgendes:
 
@@ -32,7 +36,7 @@ DevOp-Strategien sollen unter anderem zur Vermeidung folgender Probleme beitrage
 
 ## Umgebungen {#environments}
 
-Die Bereitstellung von Adobe Experience Manager (AEM) besteht gewöhnlich aus mehreren Umgebungen, die für unterschiedliche Zwecke auf unterschiedlichen Ebenen benutzt werden:
+Eine Adobe Experience Manager-Bereitstellung (AEM) besteht in der Regel aus mehreren Umgebungen, die für unterschiedliche Zwecke auf unterschiedlichen Ebenen verwendet werden:
 
 * [Entwicklung](#development)
 * [Qualitätssicherung](#quality-assurance)
@@ -118,7 +122,7 @@ Der Code sollte immer von unten nach oben propagiert werden:
 
 Der Code (z. B. angepasste Funktionalitäten und Design-Vorlagen von Webanwendungen) wird normalerweise durch den Ex- und Import von Datenpaketen zwischen den Inhaltsspeichern übertragen. Wo angemessen, kann die Replikation als automatischer Prozess konfiguriert werden.
 
-AEM-Projekte lösen häufig die Bereitstellung von Code aus:
+AEM Projekte stellen häufig Trigger-Code bereit:
 
 * Automatisch: zur Übertragung an die Entwicklungs- und QS-Umgebungen.
 * Manuell: Die Bereitstellung für die Staging- und Produktionsumgebungen erfolgt kontrollierter und häufig manuell. Bei Bedarf ist jedoch eine Automatisierung möglich.

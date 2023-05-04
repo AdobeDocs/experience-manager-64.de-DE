@@ -1,7 +1,7 @@
 ---
-title: Überwachung der AEM Forms-Bereitstellung
+title: Überwachen von AEM Forms-Bereitstellungen
 seo-title: Monitoring AEM forms deployments
-description: Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Erfahren Sie mehr über das Überwachen von AEM Forms-Bereitstellungen für dieses Dokument.
+description: Sie können AEM Formularbereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Erfahren Sie mehr über das Überwachen von AEM Forms-Bereitstellungen für dieses Dokument.
 seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
@@ -10,31 +10,35 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: d2cd532b-4086-4553-ac26-f311da6d5ca9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 97%
+source-wordcount: '650'
+ht-degree: 34%
 
 ---
 
-# Überwachung der AEM Forms-Bereitstellung {#monitoring-aem-forms-deployments}
+# Überwachen von AEM Forms-Bereitstellungen {#monitoring-aem-forms-deployments}
 
-Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Hierzu können Sie spezielle Verwaltungswerkzeuge wie HP OpenView, IBM Tivoli oder CA UniCenter verwenden sowie einen JMX-Monitor eines anderen Anbieters mit dem Namen *JConsole*, der speziell für die Überwachung von Java-Aktivitäten gedacht ist. Die Implementierung einer Überwachungsstrategie verbessert die Verfügbarkeit, Zuverlässigkeit und Leistung Ihrer AEM Forms-Bereitstellungen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Weitere Informationen zum Überwachen von AEM Forms-Bereitstellungen finden Sie im [technischen Handbuch zur AEM Forms-Bereitstellung](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf
+Sie können AEM Formularbereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Sie können spezialisierte Verwaltungswerkzeuge wie HP OpenView, IBM Tivoli und CA UniCenter sowie einen JMX-Monitor eines Drittanbieters mit dem Namen *JConsole* , um speziell die Java-Aktivität zu überwachen. Die Implementierung einer Überwachungsstrategie verbessert die Verfügbarkeit, Zuverlässigkeit und Leistung Ihrer AEM Formularbereitstellungen.
+
+Weitere Informationen zum Überwachen AEM Formularbereitstellungen finden Sie unter [Ein technischer Leitfaden zur Überwachung AEM Formularbereitstellungen](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf
 
 ).
 
-## Überwachung mithilfe von MBeans {#monitoring-using-mbeans}
+## Überwachung mit MBeans {#monitoring-using-mbeans}
 
-AEM Forms stellt zwei registrierte MBeans bereit, die Informationen zur Navigation und statistische Informationen enthalten. Die folgenden MBeans sind die einzigen, die für die Integration und Inspektion unterstützt werden:
+AEM forms bietet zwei registrierte MBeans, die Navigations- und Statistikinformationen bereitstellen. Dies sind die einzigen MBeans, die für Integration und Inspektion unterstützt werden:
 
 * **ServiceStatistic:** Diese MBean stellt Informationen über den Dienstnamen und die Version bereit.
-* **OperationStatistic:** Diese MBean stellt die Statistik jedes Formularserverdienstes bereit. Hier können Administratoren Informationen zu bestimmten Diensten erhalten, z. B. Aufrufzeit, Anzahl der Fehler usw.
+* **OperationStatistic:** Diese MBean stellt die Statistik jedes Formularserverdienstes bereit. Hier können Administratoren Informationen zu einem bestimmten Dienst abrufen, z. B. Aufrufzeit, Fehleranzahl usw.
 
 ### Öffentliche ServiceStatisticMbean-Schnittstellen {#servicestatisticmbean-public-interfaces}
 
-Auf diese öffentlichen ServiceStatisticMBean-Schnittstellen kann zu Testzwecken zugegriffen werden:
+Auf diese öffentlichen Schnittstellen von ServiceStatistic MBean kann zu Testzwecken zugegriffen werden:
 
 ```as3
  public String getServiceId();  
@@ -44,7 +48,7 @@ Auf diese öffentlichen ServiceStatisticMBean-Schnittstellen kann zu Testzwecken
 
 ### Öffentliche OperationStatisticMbean-Schnittstellen {#operationstatisticmbean-public-interfaces}
 
-Auf diese öffentlichen OperationStatistic MBean-Schnittstellen kann zu Testzwecken zugegriffen werden:
+Auf diese öffentlichen Schnittstellen von OperationStatistic MBean kann zu Testzwecken zugegriffen werden:
 
 ```as3
  // InvocationCount: The number of times the method is invoked.  
@@ -70,9 +74,9 @@ Auf diese öffentlichen OperationStatistic MBean-Schnittstellen kann zu Testzwec
  public void setExceptionMessage(String errorMessage);
 ```
 
-### MBean Struktur- &amp; Vorgangsstatistiken {#mbean-tree-operation-statistics}
+### MBean Tree &amp; Operation Statistics {#mbean-tree-operation-statistics}
 
-Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean bereitgestellt. Diese Statistiken sind Attribute von MBean und können unter der folgenden Hierarchiestruktur gefunden werden:
+Mithilfe einer JMX-Konsole (JConsole) sind Statistiken von OperationStatistic MBean verfügbar. Diese Statistiken sind Attribute von MBean und können unter der folgenden Hierarchiestruktur navigiert werden:
 
 **MBean-Struktur**
 
@@ -104,22 +108,22 @@ Mit der JMX-Konsole (JConsole) werden Statistiken von OperationStatistic MBean b
 
 **Zeiteinheit:** Der Standardwert ist Millisekunde.
 
-Zum Aktivieren der JMX-Überwachung müssen Anwendungsserver in der Regel konfiguriert werden. Weitere Informationen dazu erhalten Sie in der Dokumentation für Ihren Anwendungsserver.
+Um die JMX-Überwachung zu aktivieren, benötigen die Anwendungsserver in der Regel einige Konfigurationen. Weitere Informationen finden Sie in der Dokumentation zum Anwendungsserver .
 
 ### Beispiele zum Einrichten eines offenen JMX-Zugriffs {#examples-of-how-to-set-up-open-jmx-access}
 
-**JBoss 4.0.3/4.2.0 – JVM-Start konfigurieren**
+**JBoss 4.0.3/4.2.0 - Konfigurieren des JVM-Starts**
 
-Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBoss-Anwendungsservers konfigurieren. Stellen Sie sicher, dass JBoss von der Datei „run.bat/sh“ gestartet wird.
+Um MBeans von JConsole anzuzeigen, konfigurieren Sie die JVM-Startparameter des JBoss-Anwendungsservers. Stellen Sie sicher, dass JBoss über die Datei &quot;run.bat/sh&quot;gestartet wurde.
 
-1. Bearbeiten Sie die Datei „run.bat/sh“, die sich unter „InstallJBoss/bin“ befindet.
+1. Bearbeiten Sie die Datei &quot;run.bat&quot;, die sich unter &quot;InstallJBoss/bin&quot;befindet.
 1. Suchen Sie die Zeile JAVA_OPTS und fügen Sie Folgendes hinzu:
 
    ```as3
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
    ```
 
-**WebLogic 9.2 /10 – JVM-Start konfigurieren**
+**WebLogic 9.2/10 - JVM-Start konfigurieren**
 
 1. Bearbeiten Sie die Datei &quot;startWebLogic.bat&quot;, die sich unter &quot;*&quot;befindet. [WebLogic-Homepage]*/user_projects/domains/Adobe_Live_Cycle/bin.
 1. Suchen Sie die Zeile JAVA_OPTS und fügen Sie Folgendes hinzu:
@@ -132,22 +136,22 @@ Zum Anzeigen von MBeans von JConsole müssen Sie die JVM-Startparameter des JBos
 
 >[!NOTE]
 >
->Für WebLogic können Sie auf die MBean entweder über Remote oder IIOP zugreifen.
+>Für WebLogic können Sie über Remote oder IIOP auf das MBean zugreifen.
 
-**Remotezugriff auf MBean**
+**Remote-Zugriff auf MBean**
 
-1. Starten Sie JConsole, um eine neue Verbindung herzustellen, und klicken Sie auf die Registerkarte „Remote“.
-1. Geben Sie den Hostnamen und Anschluss ein (9088, die Nummer, die Sie bei den Startoptionen von JVM angegeben haben).
+1. Starten Sie JConsole für neue Verbindung und klicken Sie auf die Registerkarte Remote .
+1. Geben Sie den Hostnamen und Port ein (9088, die Nummer, die Sie bei den Startoptionen von JVM angegeben haben).
 
-**Websphere 6.1 – JVM-Start konfigurieren**
+**Websphere 6.1 - JVM-Start konfigurieren**
 
-1. Fügen Sie in der Verwaltungskonsole („Application server“ > „server1“ > „Process Definition“ > „JVM“) die folgende Zeile in das Feld „Generic JVM Argument“ ein:
+1. Fügen Sie in der Admin Console (Anwendungsserver > Server1 > Prozessdefinition > JVM) die folgende Zeile in das Feld für das generische JVM-Argument hinzu:
 
    ```as3
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. Fügen Sie die folgenden drei Zeilen in der Datei „/opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties“ (oder &lt;Your Websphere JRE>/ lib/management/management.properties) hinzu oder heben Sie den Kommentar auf:
+1. Fügen Sie die folgenden drei Zeilen in der Datei /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties hinzu oder heben Sie die Auskommentierung auf (oder &lt;your websphere=&quot;&quot; jre=&quot;&quot;>lib/management/management.properties):
 
    ```as3
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect  

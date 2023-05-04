@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media-Repository-Umstrukturierung in AEM 6.4
 seo-title: Dynamic Media repository restructuring in AEM 6.4
-description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um zur neuen Repository-Struktur in AEM 6.4 für Dynamic Media zu migrieren.
+description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um in AEM 6.4 für Dynamic Media zur neuen Repository-Struktur zu migrieren.
 seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Upgrading
 exl-id: 1323ee60-c80c-4eed-b3e5-aa0f0c07e6ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 89%
+source-wordcount: '449'
+ht-degree: 55%
 
 ---
 
 # Dynamic Media-Repository-Umstrukturierung in AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
 
-Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) -Seite verwenden, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die Dynamic Media-Lösung auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) -Seite verwenden, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die Dynamic Media-Lösung auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von AEM 6.4 Arbeitsaufwand, während andere bis zu einem Upgrade auf 6.5 verschoben werden können.
 
 **Vor der Aktualisierung auf 6.5**
 
@@ -45,7 +49,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Sie können das folgende Migrationsskript ausführen, um zum neuen Speicherort zu migrieren:</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternativ können Sie die Konfiguration in der AEM-Benutzeroberfläche bearbeiten, und die Änderungen werden am neuen Speicherort gespeichert.</p> </td> 
+   <td><p>Sie können das folgende Migrationsskript ausführen, um zum neuen Speicherort zu migrieren:</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternativ können Sie die Konfiguration in AEM Benutzeroberfläche bearbeiten und die Änderungen werden am neuen Speicherort gespeichert.</p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 
@@ -118,7 +122,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>1. Machen Sie die Veröffentlichung aller Videos auf YouTube rückgängig.<br /> 2. Erstellen Sie die YouTube-Konfiguration mit der neuen Touch-optimierten Benutzeroberfläche (von <code>/conf</code>) und kopieren Sie alle Kanäle vom alten Speicherort.<br /> 3. Veröffentlichen Sie alle Videos erneut auf YouTube.</p> <p>Dieser Workflow resultiert in neuen YouTube-URLs. Wenn Sie die Veröffentlichung nicht vor der Erstellung einer neuen YouTube-Konfiguration mit der Touch-optimierten Benutzeroberfläche aufheben, werden unter „Eigenschaften“ mehrere YouTube-URLs aufgelistet, da die neu erstellten Kanäle bei Gelegenheit erneut veröffentlicht werden. Dies bedeutet, dass Sie unbrauchbar gewordene URLs haben, die unter „Eigenschaften“ aufgelistet sind.</p> </td> 
+   <td><p>1. Machen Sie die Veröffentlichung aller Videos auf YouTube rückgängig.<br /> 2. Erstellen Sie die YouTube-Konfiguration mit der neuen Touch-optimierten Benutzeroberfläche (von <code>/conf</code>) und kopieren Sie alle Kanäle vom alten Speicherort.<br /> 3. Veröffentlichen Sie alle Videos erneut auf YouTube.</p> <p>Dieser Workflow resultiert in neuen YouTube-URLs. Wenn Sie die Veröffentlichung nicht vor der Erstellung einer neuen TouchUI YouTube-Konfiguration rückgängig machen, werden unter "Eigenschaften"mehrere YouTube-URLs aufgeführt, da die neu erstellten Kanäle erneut veröffentlicht werden, wenn Sie die Gelegenheit dazu erhalten. Das bedeutet, dass Sie nutzlose URLs haben, die unter Eigenschaften aufgelistet sind.</p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 
@@ -141,7 +145,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Der Kunde kann das untenstehende Migrationsskript ausführen.</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternativ können Sie die Konfiguration in der AEM-Benutzeroberfläche bearbeiten, und die Änderungen werden am neuen Speicherort gespeichert.</p> </td> 
+   <td><p>Der Kunde kann das untenstehende Migrationsskript ausführen.</p> <p><em>https://Server-Adresse:Serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Alternativ können Sie die Konfiguration in AEM Benutzeroberfläche bearbeiten und die Änderungen werden am neuen Speicherort gespeichert.</p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 

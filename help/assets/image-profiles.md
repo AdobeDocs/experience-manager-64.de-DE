@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media-Bildprofile
 seo-title: Dynamic Media Image Profiles
-description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken, smartes Zuschneiden oder smarte Farb-/Bildmuster (oder beides) enthalten, und wenden Sie dann das Profil auf einen Ordner mit Bild-Assets an.
+description: Erstellen Sie Bildprofile, die Einstellungen für Unschärfemasken sowie smartes Zuschneiden oder smarte Farbfelder (oder beides) enthalten, und wenden Sie das Profil auf einen Ordner mit Bild-Assets an.
 seo-description: Create Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
@@ -12,14 +12,18 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 56d711eb5aa87a2aa4c5476bae0627afccc579d1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2924'
-ht-degree: 66%
+source-wordcount: '2960'
+ht-degree: 84%
 
 ---
 
 # Dynamic Media-Bildprofile {#image-profiles}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch zuschneiden, indem Sie ein neues Bildprofil auf den Ordner anwenden.
 
@@ -49,15 +53,15 @@ Die Koordinaten für das smarte Zuschneiden hängen vom Seitenverhältnis ab. Da
 Jeder von Ihnen erstellte smarte Zuschnitt erfordert zusätzliche Verarbeitungsschritte. Das Hinzufügen von mehr als fünf Seitenverhältnissen für das smarte Zuschneiden kann beispielsweise zu einer langsamen Aufnahmerate für Assets führen. Dies kann auch zu einer erhöhten Belastung der Systeme führen. Da Sie smartes Zuschneiden auf Ordnerebene anwenden können, empfiehlt Adobe, es *nur* dort anzuwenden, wo es benötigt werden.
 
 **Richtlinien zum Definieren von smartem Zuschneiden in einem Bildprofil**
-Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Verarbeitungszeit und Lagerung von Kulturen zu optimieren, empfiehlt Adobe die folgenden Richtlinien und Tipps:
+Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Verarbeitungszeit und Speicherung von Zuschnitten zu optimieren, empfiehlt Adobe die folgenden Richtlinien und Tipps:
 
 * Vermeiden Sie das Erstellen doppelter smarter Zuschnittprofile mit denselben Breiten- und Höhenwerten.
-* Benennen Sie smarte Zuschnitte basierend auf den Zuschnittdimensionen statt auf ihrer Verwendung. Dies hilft bei der Optimierung von Duplikaten, bei denen eine einzelne Dimension auf mehreren Seiten verwendet wird.
-* Erstellen Sie je Seite/je Asset-Typ Bildprofile für bestimmte Ordner und Unterordner anstelle eines gemeinsamen Smart-Zuschnittprofils, das auf alle Ordner oder Assets angewendet wird.
-* Ein Bildprofil, das Sie auf Unterordner anwenden, überschreibt ein auf den Ordner angewendetes Bildprofil.
-* Erstellen Sie seitenweise Bildprofile/Asset-Typ für bestimmte Ordner und Unterordner anstelle eines gemeinsamen Smart-Zuschnitt-Profils, das auf alle Ordner oder Assets angewendet wird.
+* Benennen Sie smarte Zuschnitte basierend auf Zuschnittdimensionen und nicht auf der Endverwendung. Dies hilft bei der Optimierung für Duplikate, bei denen eine einzelne Dimension auf mehreren Seiten verwendet wird.
+* Erstellen Sie seitenweise/assetweise Bildprofile für bestimmte Ordner und Unterordner anstelle eines gemeinsamen Profils für smartes Zuschneiden, das auf alle Ordner oder alle Assets angewendet wird.
 * Ein Bildprofil, das Sie auf Unterordner anwenden, überschreibt ein Bildprofil, das auf den Ordner angewendet wird.
-* Idealerweise sollten Sie pro Bild 10 bis 15 smarte Zuschnitte haben, um das Bildschirmverhältnis und die Verarbeitungszeit zu optimieren.
+* Erstellen Sie seitenweise/assetweise Bildprofile für bestimmte Ordner und Unterordner anstelle eines gemeinsamen Profils für smartes Zuschneiden, das auf alle Ordner oder alle Assets angewendet wird.
+* Ein Bildprofil, das Sie auf Unterordner anwenden, überschreibt ein Bildprofil, das auf den Ordner angewendet wird.
+* Idealerweise sollten Sie pro Bild 10 bis 15 smarte Zuschnitte vornehmen, um das Bildschirmverhältnis und die Verarbeitungszeit zu optimieren.
 
 <!--
 * Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. CQDOC-20087
@@ -69,7 +73,7 @@ Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Vera
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
-Es stehen für das Zuschneiden zwei Optionen zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder einen zugeschnittenen Inhalt über Zielauflösungen hinweg beibehalten.
+Es stehen zwei Optionen für das Zuschneiden von Bildern zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder einen zugeschnittenen Inhalt über Zielauflösungen hinweg beibehalten.
 
 >[!IMPORTANT]
 >
@@ -97,8 +101,8 @@ Es stehen für das Zuschneiden zwei Optionen zur Auswahl. Sie können auch die E
   </tr> 
   <tr> 
    <td>Smartes Zuschneiden</td> 
-   <td>Massenzuschnitt von Bildern basierend auf ihrem visuellen Fokus.</td> 
-   <td><p>Smartes Zuschneiden nutzt die Leistungsfähigkeit der künstlichen Intelligenz in Adobe Sensei, um das Zuschneiden von Bildern in großen Mengen schnell zu automatisieren. Smartes Zuschneiden erkennt und schneidet den Fokus in jedem Bild automatisch ab, um den vorgesehenen Zielpunkt unabhängig von der Bildschirmgröße zu erfassen.</p> <p>Um smartes Zuschneiden zu verwenden, wählen Sie aus der Dropdown-Liste „Zuschnittsoptionen“ die Option <strong>Smartes Zuschneiden</strong> aus und aktivieren Sie „Responsive Bildbeschneidung“.</p> <p>Die standardmäßigen Breakpoint-Größen "Groß", "Mittel"und "Klein"decken im Allgemeinen alle Größen ab, die die meisten Bilder auf Mobilgeräten, Tablets, Desktops und Bannern verwenden. Sie können die Standardnamen „Groß“, „Mittel“ und „Klein“ beliebig anpassen.</p> <p>Um weitere Haltepunkte hinzuzufügen, klicken Sie auf <strong>Zuschneiden hinzufügen</strong>; Um einen Zuschnitt zu löschen, klicken Sie auf das Symbol Papierkorb kann .</p> </td> 
+   <td>Führen Sie einen Massenzuschnitt von Bildern basierend auf ihrem visuellen Fokus durch.</td> 
+   <td><p>Smartes Zuschneiden nutzt die Leistungsfähigkeit der künstlichen Intelligenz in Adobe Sensei, um das Zuschneiden von Bildern in großen Mengen schnell zu automatisieren. Smartes Zuschneiden erkennt automatisch den Fokus in jedem Bild und schneidet es entsprechend zu, um das Bildmotiv richtig zu erfassen – unabhängig von der Bildschirmgröße.</p> <p>Um smartes Zuschneiden zu verwenden, wählen Sie aus der Dropdown-Liste „Zuschnittsoptionen“ die Option <strong>Smartes Zuschneiden</strong> aus und aktivieren Sie „Responsive Bildbeschneidung“.</p> <p>Die standardmäßigen Breakpoint-Größen für „Groß“, „Mittel“ und „Klein“ decken in der Regel alle Größen ab, in denen Bilder auf Smartphones, Tablets, PCs und in Bannern verwendet werden. Sie können die Standardnamen „Groß“, „Mittel“ und „Klein“ beliebig anpassen.</p> <p>Um weitere Haltepunkte hinzuzufügen, klicken Sie auf <strong>Zuschneiden hinzufügen</strong>; Um einen Zuschnitt zu löschen, klicken Sie auf das Symbol Papierkorb kann .</p> </td> 
   </tr> 
   <tr> 
    <td>Farb- und Bildmuster</td> 
@@ -112,7 +116,7 @@ Es stehen für das Zuschneiden zwei Optionen zur Auswahl. Sie können auch die E
 
 ## Unschärfemaske {#unsharp-mask}
 
-Sie verwenden **Unschärfemaske** , um einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild zu optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet dieselben Optionen wie der Adobe Photoshop-Filter &quot;Unschärfemaske&quot;.
+Sie verwenden **Unschärfemaske** , um einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild zu optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet dieselben Optionen wie der Adobe Photoshop-Filter „Unscharf maskieren“.
 
 >[!NOTE]
 Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Das bedeutet, dass die größten Ausgabedarstellungen im PTIFF nicht von der Unschärfemaske betroffen sind, während kleinere Ausgabedarstellungen wie Miniaturansichten geändert werden (und die Unschärfemaske anzeigen).
@@ -127,15 +131,15 @@ In **Unschärfemaske** sind die folgenden Filteroptionen verfügbar:
   </tr> 
   <tr> 
    <td>Stärke</td> 
-   <td>Steuert den auf Kantenpixel angewendeten Kontrastwert. Der Standardwert ist 1,75. Bei hochauflösenden Bildern können Sie ihn auf bis zu 5 erhöhen. Stellen Sie sich den Betrag als ein Maß für die Filterintensität vor. Bereich: 0-5.</td> 
+   <td>Steuert den auf die Kanten-Pixel angewendeten Kontrastwert. Der Standardwert ist 1,75. Bei hochauflösenden Bildern können Sie ihn auf bis zu 5 erhöhen. Stellen Sie sich den Betrag als ein Maß für die Filterintensität vor. Bereich: 0-5.</td> 
   </tr> 
   <tr> 
    <td>Radius</td> 
-   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2. Bereich ist 0-250.</td> 
+   <td>Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert von 1 oder 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharf gezeichnet, bei einem höheren Wert werden mehr Pixel scharf gezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2. Der Bereich ist 0–250.</td> 
   </tr> 
   <tr> 
-   <td>Schwelle</td> 
-   <td><p>Bestimmt den Kontrastbereich, der bei Anwendung des Filters "Unschärfemaske"ignoriert werden soll. Mit anderen Worten: Diese Option bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel betrachtet und scharfgezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Werten zwischen 0 und 255.</p> </td> 
+   <td>Schwellenwert</td> 
+   <td><p>Bestimmt den Kontrastbereich, der bei der Anwendung des Filters „Unschärfemaske“ ignoriert werden soll. In anderen Worten: Die Option bestimmt, wie stark sich die scharf gezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kanten-Pixel eingestuft und scharf gezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Ganzzahlwerten zwischen 0 und 255.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -167,11 +171,11 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. Speichern Sie die Änderungen bei der Bearbeitung. Bestätigen Sie beim Löschen, dass Sie das Profil entfernen möchten.
+1. Falls Sie bearbeiten, speichern Sie die Änderungen. Falls Sie löschen, bestätigen Sie, dass Sie das Profil entfernen möchten.
 
 ## Anwenden eines Dynamic Media-Bildprofils auf Ordner {#applying-an-image-profile-to-folders}
 
-Wenn Sie ein Bildprofil einem Ordner zuweisen, übernehmen automatisch alle Unterordner das Profil vom übergeordneten Ordner. Dieser Workflow bedeutet, dass Sie einem Ordner nur ein Bildprofil zuweisen können. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
+Wenn Sie einem Ordner ein Bildprofil zuweisen, übernehmen automatisch alle Unterordner das Profil vom übergeordneten Ordner. Dieser Workflow bedeutet, dass Sie einem Ordner nur ein Bildprofil zuweisen können. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
 Wenn Sie einem Ordner ein anderes Bildprofil zugewiesen haben, überschreibt das neue das vorherige Profil. Die zuvor vorhandenen Ordner-Assets verbleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
 
@@ -227,7 +231,7 @@ Sie können ein Profil nicht nur auf einen Ordner anwenden, sondern auch global 
 >[!NOTE]
 Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
-Sie können das smarte Zuschnittsfenster eines Bildes manuell neu ausrichten oder seine Größe ändern, um den Fokus weiter zu verfeinern.
+Sie können das Fenster für das smarte Zuschneiden eines Bildes manuell neu ausrichten oder seine Größe ändern, um den Fokus weiter zu verfeinern.
 
 Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die Änderung überall dort angewendet, wo Sie den Zuschnitt für bestimmte Bilder verwenden.
 
@@ -245,8 +249,8 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Ziehen Sie den Schieberegler in der rechten oberen Ecke der Seite nach links oder rechts, um die Bildanzeige zu erhöhen bzw. zu verringern.
-   * Ziehen Sie auf das Bild einen Eckpunkt, um die Größe des sichtbaren Bereichs des Zuschnitts oder Farb-/Bildmusters anzupassen.
-   * Ziehen Sie das Feld/Muster auf dem Bild an eine neue Position. Sie können nur Bildmuster bearbeiten. Farbmuster sind statisch.
+   * Ziehen Sie auf dem Bild einen Eckpunkt, um die Größe des sichtbaren Bereichs des Zuschnitts oder Farbfelds anzupassen.
+   * Ziehen Sie das Feld/Farbfeld auf dem Bild an eine neue Position. Sie können nur Bildmuster bearbeiten. Farbfelder sind dagegen statisch.
    * Tippen Sie über dem Bild auf **[!UICONTROL Wiederherstellen]**, um all Ihre Änderungen rückgängig zu machen und den ursprünglichen Zuschnitt bzw. das Farb-/Bildmuster wiederherzustellen.
 
 1. Tippen Sie in der oberen rechten Ecke der Seite auf **[!UICONTROL Speichern]** und anschließend auf **[!UICONTROL Schließen]**, um zum Asset-Ordner zurückzukehren.
@@ -272,23 +276,23 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
 
       ![edit_smart_products-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
-   * Filtern Sie die Liste der sichtbaren Bilder anhand von Breakpoint-Namen. Im folgenden Beispiel werden die Bilder nach dem Breakpoint-Namen &quot;Medium&quot;gefiltert.
+   * Filtern Sie die Liste der sichtbaren Bilder anhand von Breakpoint-Namen. Im folgenden Beispiel werden die Bilder nach dem Breakpoint-Namen „Medium“ gefiltert.
 
       Wählen Sie aus der Dropdown-Liste in der oberen rechten Ecke der Seite einen Breakpoint-Namen aus, um zu filtern, welche Bilder Ihnen angezeigt werden. (Siehe Abbildung oben.)
 
       ![edit_smart_products-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
-   * Ändern Sie die Größe des smarten Zuschnittrahmens. Führen Sie einen der folgenden Schritte aus:
+   * Ändern Sie die Rahmengröße für den smarten Zuschnitt. Führen Sie einen der folgenden Schritte aus:
 
-      * Wenn das Bild nur über einen smarten Zuschnitt oder ein smartes Farb-/Bildmuster verfügt, ziehen Sie auf dem Bild den Eckpunkt des Zuschnittrahmens, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen.
-      * Wenn das Bild sowohl über ein smartes Zuschneiden als auch über ein smartes Farb-/Bildmuster verfügt, ziehen Sie auf dem Bild den Eckpunkt des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen. Oder tippen oder klicken Sie unter dem Bild auf das smarte Bildmuster (Farbmuster sind statisch) und ziehen Sie dann den Eckpunkt des Zuschnittrahmens, um die Größe des sichtbaren Bereichs des Farbmusters anzupassen.
+      * Wenn das Bild nur über entweder einen smarten Zuschnitt oder ein smartes Farbfeld verfügt, ziehen Sie im Bild die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen.
+      * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über ein smartes Farbfeld verfügt, ziehen Sie im Bild die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen. Oder tippen oder klicken Sie unter dem Bild auf das smarte Bildmuster (Farbmuster sind statisch) und ziehen Sie dann den Eckpunkt des Zuschnittrahmens, um die Größe des sichtbaren Bereichs des Farbmusters anzupassen.
 
       ![Größenänderung des smarten Zuschnitts eines Bildes.](assets/edit_smart_crops-resize.png)
 
-   * Verschieben Sie das smarte Zuschnittsfeld. Führen Sie einen der folgenden Schritte aus:
+   * Verschieben Sie das Feld für den smarten Zuschnitt. Führen Sie einen der folgenden Schritte aus:
 
-      * Wenn das Bild nur über einen smarten Zuschnitt oder ein smartes Farb-/Bildmuster verfügt, ziehen Sie das Zuschnittsfeld auf das Bild an eine neue Position.
-      * Wenn das Bild sowohl über ein smartes Zuschneiden als auch über ein smartes Farb-/Bildmuster verfügt, ziehen Sie das Feld für das smarte Zuschneiden auf das Bild an eine neue Position. Tippen Sie alternativ auf das smarte Bildmuster unter dem Bild (Farbmuster sind statisch) und ziehen Sie dann das smarte Zuschnittsfeld an eine neue Position.
+      * Wenn das Bild nur über entweder einen smarten Zuschnitt oder ein smartes Farbfeld verfügt, ziehen Sie das Zuschnittsfeld auf dem Bild an eine neue Position.
+      * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über ein smartes Farbfeld verfügt, ziehen Sie das Feld für den smarten Zuschnitt auf dem Bild an eine neue Position. Tippen Sie alternativ auf das smarte Bildmuster unter dem Bild (Farbmuster sind statisch) und ziehen Sie dann das smarte Zuschnittsfeld an eine neue Position.
 
       ![edit_smart_cards-move](assets/edit_smart_crops-move.png)
 

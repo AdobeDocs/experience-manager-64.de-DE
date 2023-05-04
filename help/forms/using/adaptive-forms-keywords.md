@@ -1,7 +1,7 @@
 ---
-title: Adaptive Formulare Suchbegriffe
+title: Adaptive Formulare – Suchbegriffe
 seo-title: Adaptive forms keywords
-description: Sie können diese reservierten Wörter nicht als Bezeichner in Ihren adaptiven Formularen verwenden.
+description: Sie können diese reservierten Wörter nicht als Kennungen in Ihren adaptiven Formularen verwenden.
 seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,16 +9,20 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 100%
+source-wordcount: '244'
+ht-degree: 27%
 
 ---
 
-# Adaptive Formulare Suchbegriffe {#adaptive-forms-keywords}
+# Adaptive Formulare – Suchbegriffe {#adaptive-forms-keywords}
 
-Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche eine besondere Bedeutung für adaptive Formulare haben. Sie können diese Schlüsselwörter nicht als Bezeichner in Ihren adaptiven Formularen verwenden. In der folgenden Tabelle sind alle Schlüsselwörter, die reservierte ID für adaptive Formulare sind, finden.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Adaptive Formulare Schlüsselwörter sind vordefinierte, reservierte Bezeichner, die eine besondere Bedeutung für adaptive Formulare haben. Sie können diese Schlüsselwörter nicht als Kennungen in Ihren adaptiven Formularen verwenden. In der folgenden Tabelle sind alle Suchbegriffe aufgeführt, die reservierte Kennungen für adaptive Formulare sind.
 
 <table> 
  <tbody>
@@ -119,7 +123,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
   </tr>
   <tr>
    <td><p>validatePictureClauseMessage</p> </td> 
-   <td><p>items</p> </td> 
+   <td><p>Elemente</p> </td> 
    <td><p>nonLocalizedTitle</p> </td> 
   </tr>
   <tr>
@@ -133,7 +137,7 @@ Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche
    <td><p>index</p> </td> 
   </tr>
   <tr>
-   <td><p>height</p> </td> 
+   <td><p>Höhe</p> </td> 
    <td><p>showComment</p> </td> 
    <td><p>visible</p> </td> 
   </tr>

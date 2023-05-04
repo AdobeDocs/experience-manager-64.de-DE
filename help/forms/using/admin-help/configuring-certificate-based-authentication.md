@@ -1,7 +1,7 @@
 ---
-title: Zertifikatbasierte Authentifizierung konfigurieren
+title: Konfigurieren einer zertifikatbasierten Authentifizierung
 seo-title: Configuring certificate-based authentication
-description: Importieren Sie eine Zertifizierungsstelle (Certificate Authority, CA) in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung für zertifikatbasierte Authentifizierung.
+description: Importieren Sie ein Zertifikat der Zertifizierungsstelle (Certificate Authority, CA) in den Trust Store und erstellen Sie eine Zertifikatzuordnung für die zertifikatbasierte Authentifizierung.
 seo-description: Import a Certificate Authority (CA) certificate into the Trust Store and create a certificate mapping for certificate-based authentication.
 uuid: 9802a969-6d29-4b80-a4ed-06eb6e66e046
 contentOwner: admin
@@ -10,33 +10,37 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 exl-id: 88932b5b-2acc-4f21-8ce3-b819a990ad30
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 12%
 
 ---
 
-# Zertifikatbasierte Authentifizierung konfigurieren {#configuring-certificate-based-authentication}
+# Konfigurieren einer zertifikatbasierten Authentifizierung {#configuring-certificate-based-authentication}
 
-User Management führt in der Regel die Authentifizierung mithilfe eines Benutzernamens und eines Kennworts aus. User Management unterstützt auch die zertifikatbasierte Authentifizierung, die Sie zum Authentifizieren von Benutzern über Acrobat oder zum programmgesteuerten Authentifizieren von Benutzern verwenden können. Ausführliche Informationen zum programmgesteuerten Authentifizieren von Benutzern finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Zum Verwenden der zertifikatbasierten Authentifizierung importieren Sie eine Zertifizierungsstelle (Certificate Authority, CA), der Sie vertrauen, in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung.
+Die Benutzerverwaltung führt die Authentifizierung in der Regel mithilfe eines Benutzernamens und Kennworts durch. User Management unterstützt auch die zertifikatbasierte Authentifizierung, mit der Sie Benutzer über Acrobat authentifizieren oder Benutzer programmgesteuert authentifizieren können. Weitere Informationen zum programmgesteuerten Authentifizieren von Benutzern finden Sie unter [Programmieren mit AEM Formularen](https://www.adobe.com/go/learn_aemforms_programming_63_de).
+
+Um die zertifikatbasierte Authentifizierung zu verwenden, importieren Sie ein Zertifikat der Zertifizierungsstelle (Certificate Authority, CA), dem Sie vertrauen, in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung.
 
 ## CA-Zertifikat importieren {#import-the-ca-certificate}
 
-Wählen Sie beim Importieren des Zertifikats die Optionen „Trust für Zertifikatauthentifizierung“ und „Trust für Identität“ sowie weitere erforderliche Optionen aus. Einzelheiten zum Importieren von Zertifikaten finden Sie unter [Zertifikate verwalten](/help/forms/using/admin-help/certificates.md#managing-certificates).
+Wählen Sie beim Importieren des Zertifikats die Optionen &quot;Trust für Zertifikatauthentifizierung&quot;und &quot;Trust für Identität&quot;sowie alle anderen erforderlichen Optionen aus. Weitere Informationen zum Importieren von Zertifikaten finden Sie unter [Zertifikate verwalten](/help/forms/using/admin-help/certificates.md#managing-certificates).
 
 ## Zertifikatzuordnung konfigurieren {#configuring-certificate-mapping}
 
 Um die zertifikatbasierte Authentifizierung für Benutzer zu aktivieren, erstellen Sie eine Zertifikatzuordnung. Eine *Zertifikatzuordnung* definiert eine Zuordnung zwischen den Attributen eines Zertifikats und den Attributen von Benutzern in einer Domain. Sie können derselben Domain mehr als ein Zertifikat zuordnen.
 
-Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfungen, um sicherzustellen, dass das Zertifikat die folgenden Voraussetzungen erfüllt:
+Beim Testen eines Zertifikats lädt User Management die Zertifikatprüfungen hoch, um sicherzustellen, dass es die folgenden Anforderungen erfüllt:
 
 * Das Zertifikat ist gültig.
-* Der von Ihnen angegebene Herausgeber kann das Zertifikat überprüfen.
+* Der von Ihnen angegebene Aussteller kann das Zertifikat überprüfen.
 * Das Zertifikat enthält das für die Zuordnung erforderliche Attribut.
-* Die von Ihnen angegebene Zuordnung ordnet das Zertifikat nur einem Benutzer in der AEM Forms-Datenbank zu. Sowohl aktuelle als auch veraltete (gelöschte) Benutzer werden überprüft, um zu bestimmen, ob sie den Zuordnungskriterien entsprechen. Daher schlägt der Zertifikattest fehl, wenn mehr als ein Benutzer, einschließlich veralteter Benutzer, über den entsprechenden Attributwert verfügen.
+* Die von Ihnen angegebene Zuordnung ordnet das Zertifikat nur einem Benutzer in der AEM Formulardatenbank zu. Sowohl aktuelle als auch veraltete (gelöschte) Benutzer werden überprüft, um festzustellen, ob sie den Zuordnungskriterien entsprechen. Daher schlägt der Zertifikattest fehl, wenn mehr als ein Benutzer, einschließlich veralteter Benutzer, den Attributwert berücksichtigt.
 
 >[!NOTE]
 >
@@ -44,56 +48,56 @@ Wenn Sie ein Zertifikat testen, lädt User Management die Zertifikatüberprüfun
 
 **Zertifikatzuordnung hinzufügen**
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Zertifikatzuordnung“.
-1. Klicken Sie auf „Neue Zertifikatzuordnung“ und wählen Sie in der Liste „Für Herausgeber“ den in der Trust Store-Verwaltung konfigurierten Zertifikatalias aus.
-1. Weisen Sie eines der Zertifikatattribute einem Benutzerattribut zu. Sie können beispielsweise den allgemeinen Namen des Zertifikats der Anmelde-ID des Benutzers zuordnen.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;Zertifikatzuordnung&quot;.
+1. Klicken Sie auf &quot;Neue Zertifikatzuordnung&quot;und wählen Sie in der Liste &quot;Für Aussteller&quot;den Zertifikatalias aus, der in der Trust Store-Verwaltung konfiguriert wurde.
+1. Ordnen Sie eines der Attribute des Zertifikats dem -Attribut eines Benutzers zu. Sie können beispielsweise den allgemeinen Namen des Zertifikats der Anmelde-ID des Benutzers zuordnen.
 
-   Wenn sich der Inhalt des Attributs im Zertifikat von dem Inhalt des Benutzerattributs in der User Management-Datenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Java Regular Expression, regex) verwenden, der mit den beiden Attributen übereinstimmen soll. Wenn beispielsweise die allgemeinen Namen der Zertifikate in etwa *Alex Pink (Authentifizierung)* und *Alex Pink (Signieren)* lauten und der allgemeine Name in der User Management-Datenbank *Alex Pink* lautet, sollten Sie einen Regex verwenden, um den erforderlichen Teil des Zertifikatattributs (in diesem Beispiel *Alex Pink* zu extrahieren.) Der von Ihnen angegebene reguläre Ausdruck muss mit der Java-Regex-Spezifikation übereinstimmen.
+   Wenn der Inhalt des Attributs im Zertifikat sich vom Inhalt des Benutzerattributs in der User Management-Datenbank unterscheidet, können Sie einen regulären Java-Ausdruck (Regex) verwenden, der mit den beiden Attributen übereinstimmt. Wenn die allgemeinen Namen der Zertifikate beispielsweise Namen wie *Alex Pink (Authentifizierung)* und *Alex Pink (Signing)* und der allgemeine Name in der User Management-Datenbank lautet *Alex Pink* verwenden, verwenden Sie einen Regex, um den erforderlichen Teil des Zertifikatattributs zu extrahieren (in diesem Beispiel: *Alex Pink*. Der von Ihnen angegebene reguläre Ausdruck muss der Java-Regex-Spezifikation entsprechen.
 
-   Sie können den Ausdruck transformieren, indem Sie im Feld „Benutzerdefinierte Reihenfolge“ die Reihenfolge der Gruppen angeben. Die benutzerdefinierte Reihenfolge wird mit der Methode `java.util.regex.Matcher.replaceAll()` verwendet. Das Verhalten entspricht dem Verhalten der Methode und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
+   Sie können den Ausdruck transformieren, indem Sie die Reihenfolge der Gruppen im Feld &quot;Benutzerdefinierte Reihenfolge&quot;angeben. Die benutzerdefinierte Reihenfolge wird mit der Methode `java.util.regex.Matcher.replaceAll()` verwendet. Das angezeigte Verhalten entspricht dem Verhalten dieser Methode, und die Eingabezeichenfolge (die benutzerdefinierte Reihenfolge) muss entsprechend angegeben werden.
 
-   Um den Regex zu testen, geben Sie einen Wert in das Feld „Parameter testen“ ein und klicken Sie auf „Testen“.
+   Geben Sie zum Testen des Regex einen Wert in das Feld &quot;Testparameter&quot;ein und klicken Sie auf &quot;Testen&quot;.
 
-   Sie können folgende Zeichen in dem Regex verwenden:
+   Sie können die folgenden Zeichen im Regex verwenden:
 
-   * . (alle Zeichen)
+   * . (beliebiges Zeichen)
    * &amp;ast; (0 oder mehr Vorkommen)
-   * () (Geben Sie die Gruppe in Klammern an)
-   * \ (Wird verwendet, um ein Regex-Zeichen durch ein reguläres Zeichen zu ersetzen)
-   * $n (Wird verwendet, um auf die n-te Gruppe zu verweisen)
+   * () (geben Sie die Gruppe in Klammern an)
+   * \ (wird verwendet, um ein Regex-Zeichen in ein reguläres Zeichen zu Escape durchzuführen)
+   * $n (wird verwendet, um auf die n-te Gruppe zu verweisen)
 
-   Beispiele regulärer Ausdrücke:
+   Beispiele für reguläre Ausdrücke:
 
-   * So extrahieren Sie „Alex Pink“ aus „Alex Pink (Authentifizierung)“
+   * So extrahieren Sie &quot;Alex Pink&quot;aus &quot;Alex Pink (Authentifizierung)&quot;
 
       **Regex:** (.&amp;ast;) \(Authentifizierung\)
 
-   * So extrahieren Sie „Alex Pink“ aus „Alex (Authentifizierung) Pink“
+   * So extrahieren Sie &quot;Alex Pink&quot;aus &quot;Alex (Authentifizierung) Pink&quot;
 
       **Regex:** (.&amp;ast;)\(Authentifizierung\) (.&amp;ast;)
 
-   * So extrahieren Sie „Pink Alex“ aus „Alex (Authentifizierung) Pink“
+   * So extrahieren Sie &quot;Pink Alex&quot;aus &quot;Alex (Authentication) Pink&quot;
 
       **Regex:** (.&amp;ast;)\(Authentifizierung\) (.&amp;ast;)
 
-      Benutzerdefinierte Reihenfolge: 2 $1 (zweite Gruppe zurückgeben, verkettet mit der ersten Gruppe, erfasst durch Leerzeichen)
+      Benutzerdefinierte Reihenfolge: $2 $1 (return second group, verkettet mit der ersten Gruppe, erfasst durch Leerzeichen)
 
-   * So extrahieren Sie „apink@sampleorg.com“ aus „smtp:apink@sampleorg.com“
+   * So extrahieren Sie &quot;apink@sampleorg.com&quot;aus &quot;smtp:apink@sampleorg.com&quot;
 
       **Regex:** smtp:(.&amp;ast;)
-   Einzelheiten zur Verwendung regulärer Ausdrücke finden Sie im [Java-Tutorium zu regulären Ausdrücken](https://java.sun.com/docs/books/tutorial/essential/regex/).
+   Weitere Informationen zur Verwendung regulärer Ausdrücke finden Sie unter [Java-Tutorial zu regulären Ausdrücken](https://java.sun.com/docs/books/tutorial/essential/regex/).
 
 1. Wählen Sie im Feld „Für Domain“ die Domain des Benutzers aus.
-1. Um diese Konfiguration zu testen, klicken Sie auf „Durchsuchen“, um ein Beispielbenutzerzertifikat hochzuladen, und klicken dann auf „Zertifikat testen“. Wenn die Konfiguration ordnungsgemäß ist, klicken Sie auf „OK“.
+1. Um diese Konfiguration zu testen, klicken Sie auf Durchsuchen , um ein Beispielbenutzerzertifikat hochzuladen, auf Zertifikat testen und, falls die Konfiguration korrekt ist, auf OK.
 
 **Vorhandene Zertifikatzuordnung bearbeiten**
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“.
-1. Klicken Sie auf „Zertifikatzuordnung“.
-1. Wählen Sie die zu bearbeitende Zertifikatzuordnung aus und bearbeiten Sie deren Konfiguration. Sie können den regulären Ausdruck und die benutzerdefinierte Reihenfolge aktualisieren.
-1. Um die Änderungen zu testen, klicken Sie auf „Durchsuchen“, um ein Beispielzertifikat hochzuladen, klicken Sie dann auf „Zertifikat testen“ und anschließend auf „OK“.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;.
+1. Klicken Sie auf Zertifikatzuordnung.
+1. Wählen Sie die Zertifikatzuordnung aus, um die Konfiguration zu bearbeiten und zu bearbeiten. Sie können den regulären Ausdruck und die benutzerdefinierte Reihenfolge aktualisieren.
+1. Um Ihre Änderungen zu testen, klicken Sie auf &quot;Durchsuchen&quot;, um ein Beispielzertifikat hochzuladen, klicken auf &quot;Zertifikat testen&quot;und anschließend auf &quot;OK&quot;.
 
 **Zertifikatzuordnung löschen**
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Zertifikatzuordnung“.
-1. Aktivieren Sie das Kontrollkästchen der zu löschenden Zertifikatzuordnung und klicken Sie auf „Löschen“ und anschließend auf „OK“.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;Zertifikatzuordnung&quot;.
+1. Aktivieren Sie das Kontrollkästchen für die zu löschende Zertifikatzuordnung und klicken Sie auf &quot;Löschen&quot;und anschließend auf &quot;OK&quot;.

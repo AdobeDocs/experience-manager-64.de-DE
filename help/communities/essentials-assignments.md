@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 796781e6-5cab-4ea1-b484-0945bc8febbf
 exl-id: 310d9086-36b6-42ea-835f-c77d75e880cb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '249'
 ht-degree: 14%
 
 ---
 
 # Zuweisungsgrundlagen {#assignments-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der Zuweisungsfunktion von [Aktivierungs-Community](overview.md#enablement-community) Sites.
 
@@ -62,21 +66,21 @@ Abschlussstatus:
 
 * Nicht zugewiesen
 * Nicht gestartet (neu)
-* Wird ausgeführt
+* Bearbeitung läuft
 * Umfassend
 
 Erfolgsstatus:
 
-* Unknown
+* Unbekannt
 * Bestanden
 * Fehler
 
 Die einzigen möglichen Kombinationen aus Abschluss und Erfolgsstatus sind:
 
-| **Abschluss** | **Success** |
+| **Abschluss** | **Erfolg** |
 |---|---|
-| Nicht gestartet | unbekannt |
-| Wird ausgeführt | unbekannt |
+| Nicht gestartet | Unbekannt |
+| Bearbeitung läuft | Unbekannt |
 | Umfassend | Bestanden |
 | Umfassend | Fehler |
 

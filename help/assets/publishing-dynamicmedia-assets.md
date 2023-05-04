@@ -8,14 +8,18 @@ content-type: reference
 exl-id: ebe30c07-1d76-4338-b301-49591f981688
 feature: Asset Management
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 97%
+source-wordcount: '445'
+ht-degree: 75%
 
 ---
 
 # Veröffentlichen von Dynamic Media-Assets {#publishing-dynamic-media-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie veröffentlichen Dynamic Media-Assets, indem Sie die Assets auswählen und auf das Symbol **[!UICONTROL Veröffentlichen]** tippen. Nachdem Dynamic Media-Assets veröffentlicht wurden, können Sie sie per URL oder Einbetten in eine Web-Seite aufnehmen.
 
@@ -35,7 +39,7 @@ Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Web
 
 >[!NOTE]
 >
->* Assets müssen zunächst veröffentlicht werden, bevor Sie die URL verwenden können. Wenn Assets nicht veröffentlicht sind, können Sie die URL nicht kopieren und in einen Webbrowser einfügen.
+>* Assets müssen zunächst veröffentlicht werden, bevor Sie die URL verwenden können. Wenn die Assets nicht veröffentlicht werden, funktioniert das Kopieren und Einfügen der URL in einen Webbrowser nicht.
 >* Bild- und Viewer-Vorgaben müssen für die Live-Bereitstellung aktiviert und veröffentlicht sein.
 >
 
@@ -44,6 +48,6 @@ Ausführliche Informationen zum Veröffentlichen von Sets oder des Assets finden
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2  {#http-delivery-of-dynamic-media-assets}
 
-AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
+AEM unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Das veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Diese Bereitstellungsmethode verbessert die Kommunikation von Browsern und Servern, sodass die Antwort- und Ladezeiten aller Dynamic Media-Assets verbessert werden.
 
 Weitere Informationen finden Sie unter [Häufig gestellte Fragen zur Bereitstellung von Inhalten über HTTP/2](/help/sites-administering/scene7-http2faq.md).

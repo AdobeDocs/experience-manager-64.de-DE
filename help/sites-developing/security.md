@@ -1,29 +1,33 @@
 ---
 title: Sicherheit
 seo-title: Security
-description: Anwendungssicherheit beginnt während der Entwicklung
+description: Anwendungssicherheit beginnt in der Entwicklungsphase
 seo-description: Application Security starts during the development phase
 exl-id: 22c48f8c-38df-4c9b-88cf-67f6ae46e7e1
-source-git-commit: 70d86d2a8c9654a52a2d2c4a000cc101c54a4552
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '426'
-ht-degree: 86%
+source-wordcount: '462'
+ht-degree: 55%
 
 ---
 
 # Sicherheit{#security}
 
-Anwendungssicherheit beginnt während der Entwicklung. Adobe empfiehlt die folgenden Best Practices, um die Sicherheit zu verbessern.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-## Verwenden Sie Sitzungsanfragen {#use-request-session}
+Anwendungssicherheit beginnt in der Entwicklungsphase. Adobe empfiehlt die Anwendung der folgenden Best Practices für die Sicherheit.
 
-Gemäß dem Grundsatz der geringsten Berechtigung empfiehlt Adobe, dass jeder Repository-Zugriff über die mit der Benutzeranfrage verknüpfte Sitzung und eine ordnungsgemäße Zugriffskontrolle erfolgt.
+## Anforderungssitzung verwenden {#use-request-session}
 
-## Schutz vor Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
+Gemäß dem Prinzip der geringsten Rechte empfiehlt Adobe, dass jeder Zugriff auf das Repository über die an die Benutzeranfrage gebundene Sitzung und eine angemessene Zugriffskontrolle erfolgt.
 
-Mit Cross-Site Scripting (XSS) können Angreifer Code in Webseiten einfügen, die von anderen Benutzern aufgerufen werden. Diese Sicherheitslücke kann von böswilligen Nutzern ausgenutzt werden, um die Zugriffssteuerung zu umgehen.
+## Protect gegen Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
-AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Bei Entwicklung und Tests hat das Vermeiden von XSS höchste Priorität.
+Cross-Site Scripting (XSS) ermöglicht es Angreifern, Code in Webseiten einzufügen, die von anderen Benutzern angesehen werden. Diese Sicherheitslücke kann von böswilligen Webbenutzern ausgenutzt werden, um Zugriffskontrollen zu umgehen.
+
+AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Die Prävention von XSS hat sowohl bei der Entwicklung als auch beim Testen höchste Priorität.
 
 Der XSS-Schutzmechanismus, der von AEM bereitgestellt wird, basiert auf der [AntiSamy Java Library](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) von [OWASP (Open Web Application Security Project). ](https://www.owasp.org/) Die standardmäßige AntiSamy-Konfiguration finden Sie unter
 
@@ -37,13 +41,13 @@ Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforder
 
 Zusätzlich kann eine Firewall in der Web-Anwendung wie [mod_security für Apache](https://www.modsecurity.org) die Sicherheit der Bereitstellungsumgebung zuverlässig und zentral steuern und diese vor bisher unerkannten Cross-Site-Scripting-Angriffen schützen.
 
-## Zugriff auf Cloud-Service-Informationen {#access-to-cloud-service-information}
+## Zugang zu Cloud Service-Informationen {#access-to-cloud-service-information}
 
 >[!NOTE]
 >
->ACLs für die Cloud-Service-Information sowie die OSGi-Einstellungen, die zum Sichern Ihrer Instanz erforderlich sind, sind im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) automatisiert. Das bedeutet, dass Sie die Konfigurationsänderungen nicht manuell vornehmen müssen. Sie sollten sie dennoch überprüfen, bevor Sie Ihre Bereitstellung live schalten.
+>ACLs für die Cloud Service-Informationen sowie die OSGi-Einstellungen, die zum Schützen Ihrer Instanz erforderlich sind, werden im Rahmen der [Produktionsbereiter Modus](/help/sites-administering/production-ready.md). Das bedeutet, dass Sie die Konfigurationsänderungen nicht manuell vornehmen müssen. Sie sollten sie dennoch überprüfen, bevor Sie Ihre Bereitstellung live schalten.
 
-Wenn Sie [Ihre AEM-Instanz mit Adobe Marketing Cloud integrieren](/help/sites-administering/marketing-cloud.md), verwenden Sie [die Cloud-Service-Konfigurationen](/help/sites-developing/extending-cloud-config.md). Informationen über diese Konfigurationen sowie sämtliche erfassten Statistiken werden im Repository gespeichert. Wenn Sie diese Funktion verwenden, empfehlen wir Ihnen, zu überprüfen, ob die Standard-Sicherheitseinstellungen für diese Daten Ihren Anforderungen entsprechen.
+Wenn Sie [Integrieren Ihrer AEM-Instanz mit Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md) Sie verwenden [Cloud Service-Konfigurationen](/help/sites-developing/extending-cloud-config.md). Informationen zu diesen Konfigurationen sowie alle erfassten Statistiken werden im Repository gespeichert. Wenn Sie diese Funktion verwenden, sollten Sie überprüfen, ob die Standardsicherheit für diese Informationen Ihren Anforderungen entspricht.
 
 Das webservicesupport-Modul schreibt Statistiken und Konfigurationsinformationen unter:
 
@@ -57,4 +61,4 @@ Mit den Standardberechtigungen:
 
 ## Schützen Sie sich vor Cross-Site Request Forgery-Angriffen {#protect-against-cross-site-request-forgery-attacks}
 
-Weitere Informationen zu den Sicherheitsmechanismen, die AEM zur Minderung von CSRF-Angriffen einsetzen, finden Sie in der [Sling Referrer Filter](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) der Sicherheitscheckliste und der [Dokumentation zum CSRF Protection Framework](/help/sites-developing/csrf-protection.md).
+Weitere Informationen zu den Sicherheitsmechanismen, die AEM zur Abschwächung von CSRF-Angriffen einsetzt, finden Sie im Abschnitt [Sling Referrer Filter](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) der Sicherheits-Checkliste und in der [Dokumentation zum CSRF Protection Framework](/help/sites-developing/csrf-protection.md).

@@ -5,14 +5,18 @@ user-guide-title: Assets-Anleitung
 feature: Asset Management
 role: User,Architect,Admin
 exl-id: 72b5e053-9307-4333-84e5-d4cc2b6bdecc
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 65%
+source-wordcount: '336'
+ht-degree: 60%
 
 ---
 
 # Assets-Anleitung
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Dieses Handbuch behandelt alle [!DNL Experience Manager] Asset-Aufgaben, wie das Erstellen, Verwalten, Bereitstellen und Optimieren digitaler Assets.
 

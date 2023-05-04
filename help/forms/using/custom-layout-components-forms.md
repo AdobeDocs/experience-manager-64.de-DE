@@ -1,5 +1,5 @@
 ---
-title: Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare
+title: Erstellen benutzerdefinierter Layout-Komponenten für adaptive Formulare
 seo-title: Creating custom layout components for adaptive forms
 description: Verfahren zum Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare.
 seo-description: Procedure to create custom layout components for adaptive forms.
@@ -9,24 +9,28 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 102718cb-592a-4a5c-89a6-ad4d56f3d547
 exl-id: ea21b47f-25fc-48cb-a5dc-d0433146b40d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 100%
+source-wordcount: '305'
+ht-degree: 68%
 
 ---
 
-# Erstellen benutzerdefinierter Layoutkomponenten für adaptive Formulare {#creating-custom-layout-components-for-adaptive-forms}
+# Erstellen benutzerdefinierter Layout-Komponenten für adaptive Formulare {#creating-custom-layout-components-for-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Voraussetzung {#prerequisite}
 
 Wissen bezüglich Layouts, das für das Erstellen/Verwenden benutzerdefinierter Layouts nötig ist. Siehe [Ändern des Bedienfeldlayouts](/help/forms/using/layout-capabilities-adaptive-forms.md).
 
-## Komponente für das Bedienfeldlayout für adaptiven Formulare {#adaptive-form-panel-layout-component}
+## Komponente für Bedienfeldlayout für adaptive Formulare {#adaptive-form-panel-layout-component}
 
-Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteuert, wie die Komponenten des adaptiven Formulars in einem Bedienfeld im Verhältnis zur Benutzeroberfläche angelegt werden.
+Die Komponente für das Bedienfeldlayout für adaptive Formulare steuert, wie adaptive Formularkomponenten in einem Bedienfeld im Verhältnis zur Benutzeroberfläche angeordnet werden.
 
-## Erstellen eines benutzerdefinierten Bedienfeldlayouts {#creating-a-custom-panel-layout}
+## Benutzerdefiniertes Bedienfeldlayout erstellen {#creating-a-custom-panel-layout}
 
 1. Navigieren Sie zum Speicherort `/crx/de`.
 1. Kopieren Sie ein Bedienfeld-Layout vom Speicherort `/libs/fd/af/layouts/panel` (zum Beispiel `tabbedPanelLayout`) nach `/apps` (zum Beispiel `/apps/af-custom-layout`).
@@ -198,7 +202,7 @@ Mit der Komponente für das Bedienfeldlayout für adaptive Formulare wird gesteu
    </div>
    ```
 
-1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus. Das Bedienfeldlayout, das Sie definiert haben, wird der Liste zur Konfiguration der Bereichslayouts hinzugefügt.
+1. Öffnen Sie ein adaptives Formular im Bearbeitungsmodus. Das Bedienfeldlayout, das Sie definiert haben, wird der Liste zum Konfigurieren von Bedienfeldlayouts hinzugefügt.
 
    ![Benutzerdefiniertes Bedienfeld-Layout wird in der Liste der Bedienfeld-Layouts angezeigt](assets/auth-layt.png) ![Screenshot des adaptiven Formulars mit benutzerdefiniertem Bedienfeld-Layout](assets/s1.png) ![Screenshot zur Demonstration der Umschaltfunktion des benutzerdefinierten Layouts](assets/s2.png)
 

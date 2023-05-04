@@ -1,7 +1,7 @@
 ---
 title: Anzeigen von Informationen in der Aufgabenzusammenfassung
 seo-title: Displaying information in the Task Summary pane
-description: In AEM Forms Workspace kann ein Bedienfeld zur Aufgabenzusammenfassung konfiguriert werden, um die Aufgabe zusammenzufassen oder eine beliebige Website anzuzeigen.
+description: In AEM Forms Workspace kann ein Bereich "Aufgabenzusammenfassung"konfiguriert werden, um die Aufgabe zusammenzufassen oder eine beliebige andere Webseite anzuzeigen.
 seo-description: In AEM Forms workspace, a Task Summary pane can be configured to summarize the task or display any other web page.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
@@ -10,27 +10,31 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 exl-id: cb9de2d7-04ad-4221-8db7-403464c9888b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '313'
+ht-degree: 41%
 
 ---
 
 # Anzeigen von Informationen in der Aufgabenzusammenfassung {#displaying-information-in-the-task-summary-pane}
 
-Wenn Sie eine Aufgabe in AEM Forms Workspace öffnen, kann eine Zusammenfassung der Aufgabe in einem entsprechenden Fenster angezeigt werden. Diese zusätzlichen und wichtigen Informationen zu einer Aufgabe sind nützlich für den Endbenutzer von AEM Forms Workspace.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Wenn Sie eine Aufgabe in AEM Forms Workspace öffnen, kann ein Bereich &quot;Aufgabenzusammenfassung&quot;eine Zusammenfassung der Aufgabe anzeigen. Diese zusätzlichen und relevanten Informationen für eine Aufgabe bieten dem Endbenutzer von AEM Forms Workspace einen Mehrwert.
 
 AEM Forms Workspace gibt Ihnen die Möglichkeit, eine Web-Seite zu wählen, die in der Aufgabenzusammenfassung angezeigt werden soll. Es kann ein Vorgang erstellt werden, um eine Aufgabenzusammenfassung mithilfe von Workbench anzuzeigen.
 
-1. Erstellen Sie in Workbench einen Assign Task-Prozess. Weitere Informationen zum Prozess „Assign Task“ finden Sie im Dienstreferenzthema der [Workbench-Hilfe](https://help.adobe.com/de_DE/AEMForms/6.1/WorkbenchHelp/).
+1. Erstellen Sie einen Prozess &quot;Assign Task&quot;in Workbench. Weitere Informationen zum Vorgang &quot;Assign Task&quot;finden Sie unter Dienstreferenz-Thema unter [Workbench-Hilfe](https://help.adobe.com/de_DE/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >
-   >Wenn eine Aufgabenzusammenfassungs-URL vorhanden ist, wird standardmäßig diese Ansicht statt der Formularansicht geöffnet. In diesem Fall wird, auch wenn ein Benutzer in Assign Task die Option „Open the form in maximized mode“ aktiviert, das Formular nicht im maximierten Modus geöffnet.
+   >Wenn eine TaskSummary-URL vorhanden ist, wird die Ansicht &quot;Task Summary&quot;standardmäßig anstelle der Ansicht &quot;Form&quot;geöffnet. In diesem Fall wird das Formular nicht im maximierten Modus geöffnet, selbst wenn ein Benutzer die Option &quot;Formular im maximierten Modus öffnen&quot;in &quot;Aufgabe zuweisen&quot;aktiviert hat.
 
-1. Konfigurieren Sie das URL-Feld für die Aufgabenzusammenfassung. Sie können einen Literalwert, eine Vorlage, eine Variable oder einen XPath-Ausdruck angeben.
-1. Nachfolgend finden Sie ein Beispiel für die Anzeige von Informationen auf der Aufgabenzusammenfassungsseite.
+1. Konfigurieren Sie das Feld &quot;Aufgabenzusammenfassungs-URL&quot;. Sie können einen Literalwert, eine Vorlage, eine Variable oder einen XPath-Ausdruck angeben.
+1. Nachfolgend finden Sie ein Beispiel für die Anzeige der Informationen auf der Seite &quot;Aufgabenzusammenfassung&quot;.
 
    * Melden Sie sich bei der CRXDE Lite-Umgebung unter `https://[server]:[port]/lc/crx/de` an.
    * `Create a node`**SampleSummary** ` under `/content` with type `nt:unstructured`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:read` privileges.`

@@ -1,7 +1,7 @@
 ---
 title: Integrieren von Form Bridge in das benutzerdefinierte Portal für HTML5-Formulare
 seo-title: Integrating Form Bridge with custom portal for HTML5 forms
-description: Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu versenden.
+description: Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu senden.
 seo-description: You can use the FormBridge API to get or set the values of form fields from the HTML page and submit the form.
 uuid: 09f2189f-d584-4b84-895e-22833b6b17e3
 content-type: reference
@@ -10,20 +10,24 @@ topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 feature: Mobile Forms
 exl-id: bf4ae163-5d89-48fb-9bc4-182281b28f35
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 97%
+source-wordcount: '429'
+ht-degree: 27%
 
 ---
 
 # Integrieren von Form Bridge in das benutzerdefinierte Portal für HTML5-Formulare {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 FormBridge ist eine Brücken-API für HTML5-Formulare, die es Ihnen ermöglicht, mit einem Formular zu interagieren. Die FormBridge-API-Referenz finden Sie unter [FormBridge-API-Referenz](/help/forms/using/form-bridge-apis.md).
 
-Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu versenden. Beispielsweise können Sie die API verwenden, um eine assistentenähnliche Erfahrung zu erstellen.
+Sie können die FormBridge-API verwenden, um die Werte von Formularfeldern von der HTML-Seite abzurufen oder festzulegen und das Formular zu senden. Sie können beispielsweise die API verwenden, um ein assistentenähnliches Erlebnis zu erstellen.
 
-Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Formular zu interagieren und es in die HTML-Seite einzubetten. Sie können folgende Schritte verwenden, um den Wert eines Felds mithilfe der Form Bridge-API festzulegen.
+Eine bestehende HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Formular zu interagieren und es in die HTML-Seite einzubetten. Sie können die folgenden Schritte ausführen, um den Wert eines Felds mithilfe der Form Bridge-API festzulegen.
 
 ## Integrieren von HTML5-Formularen in eine Webseite {#integrating-html-forms-to-a-web-page}
 
@@ -35,9 +39,9 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
 
       Weitere Informationen zum Erstellen eines Profils finden Sie unter [Erstellen eines neuen Profils](/help/forms/using/custom-profile.md).
 
-1. **Ändern Sie das HTML-Profil**
+1. **Ändern des HTML-Profils**
 
-   Schließen Sie die XFA-Laufzeitumgebung, die XFA-Gebietsschemabibliothek und das XFA-Form-HTML-Fragment im Profil-Renderer ein, entwerfen Sie Ihre Webseite und platzieren Sie das Formular darauf.
+   Schließen Sie die XFA-Laufzeitumgebung, die XFA-Gebietsschema-Bibliothek und das XFA-Formular-HTML-Snippet in den Profil-Renderer ein, entwerfen Sie Ihre Webseite und platzieren Sie das Formular auf der Webseite.
 
    Verwenden Sie beispielsweise das folgende Codefragment, um eine App mit zwei Eingabefeldern und einem Formular zu erstellen, um die Interaktion zwischen dem Formular und einer externen App zu demonstrieren.
 
@@ -77,17 +81,17 @@ Eine vorhandene HTML-Anwendung kann die FormBridge-API nutzen, um mit einem Form
    >
    >In **Zeile 9** befinden sich zusätzliche JSP-Verweise für CSS-Stile und JavaScript-Dateien für das Seiten-Design.
    >
-   >Das Tag &lt;div id=&quot;rightdiv&quot;> in **Zeile 18** bezeichnet das HTML-Fragment des XFA-Formulars.
-   Die Seite wird in zwei Container unterteilt: **links** und **rechts**. Der rechte Container enthält das Formular. Der linke Container enthält zwei Eingabefelder und einen Teil der externen HTML-Seite.
-   Der folgende Screenshot zeigt, wie das Formular in einem Browser erscheint.
+   >Die &lt;div id=&quot;rightdiv&quot;> Tag auf **Zeile 18** enthält das HTML-Snippet des XFA-Formulars.
+   Die Seite ist in zwei Container formatiert: **left** und **right**. Der rechte Container enthält das Formular. Der linke Container enthält zwei Eingabefelder und einen Teil der externen HTML-Seite.
+   Der folgende Screenshot zeigt, wie das Formular in einem Browser angezeigt wird.
 
    ![Portal](assets/portal.jpg)
 
-   Die linke Seite ist Teil der **HTML-Seite**. Die rechte Seite, die die Felder enthält, ist das **XFA-Formular**.
+   Die linke Seite ist Teil der **HTML-Seite**. Die rechte Seite, die die Felder enthält, ist die **xfa form**.
 
-1. **Zugriff auf die Formularfelder auf der Seite**
+1. **Zugriff auf die Formularfelder von der Seite aus**
 
-   Nachstehend finden Sie ein Beispielskript, das Sie hinzufügen können, um Werte in einem Formularfeld festzulegen.
+   Im Folgenden finden Sie ein Beispielskript, das Sie hinzufügen können, um Werte in einem Formularfeld festzulegen.
 
    Wenn Sie beispielsweise den **Mitarbeiternamen** anhand der Werte in den Feldern **Vorname** und **Nachname** festlegen möchten, rufen Sie die Funktion **window.formBridge.setFieldValue** auf.
 

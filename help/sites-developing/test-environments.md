@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: db528b9b-3407-462d-8254-20b3cc2c3ccf
 exl-id: c3c7c007-4814-4bd1-987e-534df4575a4a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 100%
+source-wordcount: '216'
+ht-degree: 67%
 
 ---
 
 # Welche Testumgebungen sind erforderlich?{#which-test-environments-will-be-needed}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Beim Definieren der Konfigurationen für Tests sollten Sie Folgendes beachten:
 
@@ -35,7 +39,7 @@ Sie müssen auch entscheiden, welche Instanzen wo erforderlich sind (in der Rege
 
 Sollte in Verbindung mit dem Dispatcher getestet werden.
 
-Als Letztes müssen Sie die verwendete Hardware berücksichtigen. Leistungstests sollten auf einem System ausgeführt werden, das möglichst ähnlich wie die endgültige Live-Umgebung konfiguriert ist. Daher wird empfohlen, den Projektstart wie folgt zu unterteilen:
+Schließlich muss die tatsächliche Hardware berücksichtigt werden - alle Leistungstests sollten auf einem System durchgeführt werden, das der Konfiguration der endgültigen Live-Umgebung so ähnlich wie möglich ist. Aus diesem Grund wird auch empfohlen, den Projekt-Launch in einen aufzuteilen:
 
 **Soft Launch**: Reduzierte Verfügbarkeit, sodass Zeit für Leistungstests, Anpassungen und Optimierungen unter realistischen Bedingungen in der Produktionsumgebung bleibt.
 

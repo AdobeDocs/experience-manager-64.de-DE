@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 96%
+source-wordcount: '517'
+ht-degree: 61%
 
 ---
 
 # Konfigurieren der Kontoumgebung{#configuring-your-account-environment}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
@@ -25,11 +29,11 @@ Verwenden der [Benutzer](/help/sites-authoring/user-properties.md#user-settings)
 
 ## Benutzereinstellungen {#user-settings}
 
-Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
+Die **Benutzer** Über das Dialogfeld &quot;Einstellungen&quot;haben Sie Zugriff auf:
 
 * Identität annehmen als
 
-   * Mit der Funktion [Stellvertretend agieren](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
+   * Mit dem [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) -Funktion kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
 * Profil
 
@@ -51,13 +55,13 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Sprache**
 
-   Hiermit wird die Sprache definiert, in der die Benutzeroberfläche der Autorenumgebung angezeigt werden soll. Wählen Sie die gewünschte Sprache aus der Liste der verfügbaren Sprachen aus.
+   Dadurch wird die Sprache definiert, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.
 
-   Diese Konfiguration wird ebenfalls für die klassische Benutzeroberfläche verwendet.
+   Diese Konfiguration wird auch für die klassische Benutzeroberfläche verwendet.
 
 * **Fensterverwaltung**
 
-   Hiermit wird das Verhalten oder das Öffnen von Fenstern definiert. Wählen Sie eine der folgenden beiden Optionen aus:
+   Dies definiert das Verhalten oder das Öffnen von Fenstern. Wählen Sie eine der folgenden beiden Optionen aus:
 
    * **Mehrere Fenster** (Standard)
 
@@ -73,14 +77,14 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Anmerkungsfarbe**
 
-   Hiermit wird die Standardfarbe für Anmerkungen definiert.
+   Dadurch wird die Standardfarbe definiert, die beim Erstellen von Anmerkungen verwendet wird.
 
-   * Klicken Sie auf den Farbblock, um die Musterauswahl zur Festlegung einer Farbe zu öffnen.
+   * Klicken Sie auf den Farbblock, um die Musterauswahl zu öffnen und eine Farbe auszuwählen.
    * Alternativ dazu können Sie in das Feld den Hexcode für die gewünschte Farbe eingeben.
 
 * **Darstellung des relativen Datums**
 
-   Zur besseren Lesbarkeit rendert AEM Daten der letzten sieben Tage als relative Daten (z. B. „vor drei Tagen“) und ältere Daten als genaue Datumsangaben (z. B. 20. März 2017).
+   Um die Lesbarkeit zu verbessern, rendert AEM Datumsangaben innerhalb der letzten sieben Tage als relative Daten (z. B. vor drei Tagen) und ältere Daten als exakte Datumswerte (z. B. 20. März 2017).
 
    Diese Option definiert, wie Daten im System angezeigt werden. Die folgenden Optionen sind verfügbar:
 
@@ -98,7 +102,7 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Diese Option aktiviert Tastaturbefehle. Diese sind zwar standardmäßig aktiviert, können aber deaktiviert werden, etwa wenn für einen Benutzer bestimmte Anforderungen in Bezug auf die Barrierefreiheit bestehen.
+   Diese Option aktiviert Tastaturbefehle. Sie sind standardmäßig aktiviert, können aber deaktiviert werden, z. B. wenn ein Benutzer bestimmte Barrierefreiheitsanforderungen hat.
 
 * **Klassisches Authoring-Erlebnis verwenden**
 

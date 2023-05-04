@@ -1,7 +1,7 @@
 ---
 title: Architektur und Bereitstellungstopologien für AEM Forms
 seo-title: Architecture and deployment topologies for AEM Forms
-description: Architekturdetails für AEM Forms und empfohlene Topologien für neue und vorhandene AEM-Kunden und Kunden, die ein Upgrade von LiveCycle ES4 auf AEM Forms durchführen.
+description: Architekturdetails für AEM Forms und empfohlene Topologien für neue und bestehende AEM und Kunden, die ein Upgrade von LiveCycle ES4 auf AEM Forms durchführen.
 seo-description: Architecture details for AEM Forms and recommended topologies for new and existing AEM customers and customers upgrading from LiveCycle ES4 to AEM Forms.
 uuid: 90baa57a-4785-4b49-844c-a44717d3c12d
 content-type: reference
@@ -11,14 +11,18 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: 89ce3b39-c27b-4cc7-aae8-8d8c24100eed
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2460'
-ht-degree: 100%
+source-wordcount: '2496'
+ht-degree: 82%
 
 ---
 
 # Architektur und Bereitstellungstopologien für AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Architektur {#architecture}
 
@@ -26,22 +30,22 @@ AEM Forms ist eine Anwendung, die in AEM als AEM bereitgestellt wird. Das Paket 
 
 ![Architektur](assets/architecture.png)
 
-Die Architektur für AEM Forms beinhaltet die folgenden Komponenten:
+Die Architektur für AEM Forms umfasst die folgenden Komponenten:
 
-* **Kern-AEM-Dienste:** Grundlegende Dienste, die von AEM für eine bereitgestellte Anwendung verfügbar gemacht werden. Zu den Services gehören ein JCR-kompatibles Inhalts-Repository, ein OSGi-Service-Container, eine Workflow-Engine, ein Trust Store, ein Key Store usw. Diese Services sind für die AEM Forms-Anwendung verfügbar, werden aber nicht von AEM Forms-Paketen bereitgestellt. Die Services sind ein integraler Bestandteil des gesamten AEM-Stapels und verschiedene AEM Forms-Komponenten verwenden diese Services.
+* **Hauptdienste AEM:** Grundlegende Dienste, die für eine bereitgestellte Anwendung bereitgestellt AEM. Zu den Services gehören ein JCR-kompatibles Inhalts-Repository, ein OSGi-Service-Container, eine Workflow-Engine, ein Trust Store, ein Key Store usw. Diese Services sind für die AEM Forms-Anwendung verfügbar, werden aber nicht von AEM Forms-Paketen bereitgestellt. Die Services sind ein integraler Bestandteil des gesamten AEM-Stapels und verschiedene AEM Forms-Komponenten verwenden diese Services.
 * **Formular-Services:** Stellen formularbezogene Funktionen bereit, z. B. das Erstellen, Zusammenführen, Verteilen und Archivieren von PDF-Dokumenten, das Hinzufügen digitaler Signaturen zum Beschränken des Zugriffs auf Dokumente und das Dekodieren von Barcode-Formularen. Viele dieser Services sind öffentlich für die Nutzung durch benutzerdefinierten Code verfügbar, der in AEM bereitgestellt wird.
 * **Weblayer:** JSPs oder Servlets, die auf allgemeine Services oder Formular-Services aufgesetzt wurden und folgende Funktionalität bieten:
 
    * **Authoring-Frontend**: Eine Benutzeroberfläche zum Erstellen und Verwalten von Formularen.
-   * **Formularwiedergabe und -übermittlungs-Frontend**: Eine Benutzeroberfläche für Endbenutzer von AEM Forms (z. B. Bürger, die auf eine Behördenseite zugreifen). Dadurch werden Formularwiedergabe (Formular in einem Webbrowser anzeigen) und Sendefunktionen bereitgestellt.
+   * **Formularwiedergabe und -übermittlungs-Frontend**: Eine Benutzeroberfläche für Endbenutzer, die von Endbenutzern der AEM Forms verwendet werden kann (z. B. Bürger, die auf eine Behördenseite zugreifen). Dadurch werden Formularwiedergabe (Formular in einem Webbrowser anzeigen) und Sendefunktionen bereitgestellt.
    * **REST APIs**: JSPs und Servlets exportieren einen Teil der Formula-Services zur Nutzung durch HTTP-basierte Clients wie das SDK für mobile Formulare.
 
 **AEM Forms on OSGi:** Bei einer AEM Forms on OSGi-Umgebung handelt es sich um ein standardmäßiges AEM-Autor- oder AEM-Veröffentlichungspaket, auf dem das AEM Forms-Paket bereitgestellt ist. Sie können AEM Forms on OSGi in [Einzel-Server-Umgebungen, Farm- und Cluster-Setups ausführen](/help/sites-deploying/recommended-deploys.md). Die Cluster-Setup ist nur für AEM Autoreninstanzen verfügbar. 
 
 **AEM Forms on JEE:** AEM Forms on JEE ist ein AEM Forms-Server, der auf dem JEE-Stapel ausgeführt wird. Es verfügt über AEM Author mit AEM Forms-Add-On-Pakete und zusätzliche AEM Forms JEE-Funktionen, die gemeinsam auf einem einzigen JEE-Stapel bereitgestellt werden, der auf einem Anwendungs-Server ausgeführt wird. Sie können AEM Forms on JEE in Einze-Server- und Cluster-Setups ausführen. AEM Forms on JEE ist nur für Dokumentensicherheit, Prozessmanagement und LiveCycle-Kunden, die auf AEM Forms aktualisieren, erforderlich. Im Folgenden finden Sie einige zusätzliche Szenarien für die Verwendung von AEM Forms on JEE:
 
-* **HTML Workspace-Unterstützung (für Kunden, die HTML Workspace verwenden)**: Das Add-On ermöglicht Single Sign-on unter „Verarbeitung“, unterstützt bestimmte unter „Verarbeitung“ wiedergegebene Assets und verwaltet das Übermitteln von Formularen, die in HTML Workspace wiedergegeben werden.
-* **Erweiterte zusätzliche Verarbeitung von Formular-/interaktiven Kommunikationsdaten**: Das Add-On kann bei anspruchsvollen Anwendungsfällen, die eine erweiterte Prozessverwaltung erfordern, zur zusätzlichen Verarbeitung von Formular- bzw. interaktiven Kommunikationsdaten (und zum Speichern der Ergebnisse in einem geeigneten Datenspeicher) verwendet werden.
+* **HTML Workspace-Unterstützung (für Kunden, die HTML Workspace verwenden)**: AEM Forms on JEE ermöglicht Single Sign-on auf Verarbeitungsinstanzen, unterstützt bestimmte auf Verarbeitungsinstanzen wiedergegebene Assets und verwaltet das Übermitteln von Formularen, die in HTML Workspace wiedergegeben werden.
+* **Erweiterte zusätzliche Verarbeitung von Formular-/interaktiven Kommunikationsdaten**: AEM Forms on JEE kann bei anspruchsvollen Anwendungsfällen, die eine erweiterte Prozessverwaltung erfordern, zur zusätzlichen Verarbeitung von Formular- bzw. interaktiven Kommunikationsdaten (und zum Speichern der Ergebnisse in einem geeigneten Datenspeicher) verwendet werden.
 
 AEM Forms on JEE umfasst auch die folgenden unterstützenden Services für die AEM Komponenten:
 
@@ -58,15 +62,15 @@ Das folgende Bild zeigt verschiedene AEM Forms-Server-Konfigurationen und ihre K
 
 ![aem_forms_-_recommendedtopology](assets/aem_forms_-_recommendedtopology.png)
 
-**Autor:** Eine Autoreninstanz ist ein AEM Forms-Server, der im Standardmodus „Autor“ ausgeführt wird. Dies kann AEM Forms on JEE oder AEM Forms on OSGi-Umgebung sein. Dies ist für interne Benutzer, Designer von Formularen und interaktiver Kommunikation und Entwickler vorgesehen. Ermöglicht werden folgende Funktionen:
+**Autor:** Eine Autoreninstanz ist ein AEM Forms-Server, der im Standardmodus „Autor“ ausgeführt wird. Dies kann AEM Forms on JEE oder AEM Forms in einer OSGi-Umgebung sein. Sie ist für interne Benutzer, Formularentwickler und Entwickler interaktiver Kommunikation gedacht. Ermöglicht werden folgende Funktionen:
 
 * **Erstellen und Verwalten von Formularen und interaktiver Kommunikation:** Designer und Entwickler können adaptive Formulare und interaktive Kommunikation erstellen und bearbeiten, extern erstellte Formulare anderer Art, z. B. in Adobe Forms Designer erstellte Formulare, hochladen und diese Elemente mithilfe der Forms Manager-Konsole verwalten.
-* **Veröffentlichen von Formularen und interaktiver Kommunikation:** In einer Autoreninstanz gehostete Assets können in einer Veröffentlichungsinstanz veröffentlicht werden, um Laufzeitvorgänge durchzuführen. Asset-Veröffentlichung verwendet die Replikationsfunktionen von AEM. Adobe empfiehlt, in jeder Autoreninstanz einen Replikationsagenten für die manuelle Übertragung von veröffentlichten Formularen an die Verarbeitungsinstanzen und in jeder Verarbeitungsinstanz einen Replikationsagenten mit aktiviertem Auslöser *Bei Empfang* zu konfigurieren, damit die empfangenen Formulare automatisch zur Veröffentlichung repliziert werden.
+* **Veröffentlichen von Formularen und interaktiver Kommunikation:** Auf einer Autoreninstanz gehostete Assets können in einer Veröffentlichungsinstanz veröffentlicht werden, um Laufzeitvorgänge durchzuführen. Die Asset-Veröffentlichung verwendet AEM Replikationsfunktionen. Adobe empfiehlt, in jeder Autoreninstanz einen Replikationsagenten für die manuelle Übertragung von veröffentlichten Formularen an die Verarbeitungsinstanzen und in jeder Verarbeitungsinstanz einen Replikationsagenten mit aktiviertem Auslöser *Bei Empfang* zu konfigurieren, damit die empfangenen Formulare automatisch zur Veröffentlichung repliziert werden.
 
 **Veröffentlichen:** Eine Veröffentlichungsinstanz ist ein AEM Forms-Server, der im Standardmodus „Veröffentlichen“ ausgeführt wird. Veröffentlichungsinstanzen sind für Endbenutzer formularbasierter Anwendungen vorgesehen, z. B. Benutzer, die auf eine öffentliche Website zugreifen und Formulare senden. Ermöglicht werden folgende Funktionen:
 
-* Rendern und Senden von Formularen für Endbenutzer.
-* Transport unbearbeiteter gesendeter Formulardaten zur weiteren Verarbeitung an Verarbeitungsinstanzen und zum Speichern im endgültigen Aufzeichnungssystem. Die Standardimplementierung in AEM Forms erreicht dies mit den von AEM bereitgestellten Funktionen zur Rückwärtsreplikation. Eine alternative Implementierung ist auch das direkte Weiterleiten der Formulardaten an Verarbeitungsserver, anstatt sie zuerst lokal zu speichern (letzteres ist eine Voraussetzung für die Aktivierung der Rückwärtsreplikation ). Kunden, die Bedenken bei der Speicherung potenziell vertraulicher Daten auf Veröffentlichungsinstanzen haben, können diese [alternative Implementierung](/help/forms/using/configuring-draft-submission-storage.md) wählen, da die Verarbeitung üblicherweise in einer sichereren Zone erfolgt.
+* Rendern und Senden von Forms für Endbenutzer
+* Transport von Formularrohdaten zur Verarbeitung an Instanzen zur weiteren Verarbeitung und Speicherung im endgültigen Aufzeichnungssystem. Die in AEM Forms bereitgestellte Standardimplementierung erreicht dies mithilfe der Reverse-Replizierungsfunktionen von AEM. Eine alternative Implementierung ist auch das direkte Senden der Formulardaten an Verarbeitungsserver, anstatt sie zunächst lokal zu speichern (letzteres ist eine Voraussetzung für die Aktivierung der Rückwärtsreplikation). Kunden, die Bedenken bei der Speicherung potenziell vertraulicher Daten auf Veröffentlichungsinstanzen haben, können diese [alternative Implementierung](/help/forms/using/configuring-draft-submission-storage.md) wählen, da die Verarbeitung üblicherweise in einer sichereren Zone erfolgt.
 * Rendern und Übermitteln von interaktiven Kommunikationen und Briefen: Eine interaktive Kommunikation und Briefe werden auf Veröffentlichungsinstanzen gerendert und die entsprechenden Daten werden zur Speicherung und Nachbearbeitung an Verarbeitungsinstanzen übermittelt. Die Daten können entweder lokal in einer Veröffentlichungsinstanz gespeichert und später an eine Verarbeitungsinstanz rückrepliziert (Standardoption) oder ohne Speicherung auf der Veröffentlichungsinstanz direkt an die Verarbeitungsinstanz gesendet werden. Letztere Implementierung ist für sicherheitsbewusste Kunden nützlich.
 
 **Verarbeitung:** Eine Instanz von AEM Forms, die im Autorenmodus ausgeführt wird, wobei kein Benutzer der Gruppe „forms-manager“ zugewiesen ist. Sie können AEM Forms on JEE oder AEM Forms on OSGi als Verarbeitungsinstanz bereitstellen. Die Benutzer werden nicht zugewiesen, um sicherzustellen, dass Formularerstellungs- und -verwaltungsaktivitäten nicht in der Verarbeitungsinstanz ausgeführt werden, sondern nur in der Autoreninstanz stattfinden. Eine Verarbeitungsinstanz ermöglicht die folgenden Funktionen:
@@ -91,9 +95,9 @@ Eine Verarbeitungsinstanz wurde aus folgenden Gründen für die Ausführung im A
 
 Die unten empfohlenen AEM Forms on JEE-Topologien richten sich vor allem an Kunden, die ein Upgrade von LiveCycle oder einer früheren Version von AEM Forms on JEE durchführen. Adobe empfiehlt für Neuinstallationen die Verwendung von AEM Forms on OSGi. Eine Neuinstallation von AEM Forms on JEE wird nur für die Verwendung von Document Security- und Process Management-Funktionen empfohlen.
 
-### Topologie für die Verwendung von Document Services oder Document Security-Funktionen {#topology-for-using-document-services-or-document-security-capabilities}
+### Topologie für die Verwendung von Document Services- oder Document Security-Funktionen {#topology-for-using-document-services-or-document-security-capabilities}
 
-AEM Forms-Kunden, die nur Dokumentdienste oder Document Security-Funktionen verwenden möchten, können eine ähnliche Topologie nutzen wie die unten abgebildete. Für diese Topologie wird die Verwendung einer einzigen Instanz von AEM Forms empfohlen. Sie können bei Bedarf auch einen Cluster oder eine Farm von AEM Forms-Servern erstellen. Diese Topologie wird empfohlen, wenn die meisten Benutzer programmgesteuert (über APIs) auf die Funktionen des AEM Forms-Servers zugreifen und nur minimal über die Benutzeroberfläche eingegriffen wird. Die Topologie ist bei Stapelverarbeitungsvorgängen von Dokumenten-Services sehr hilfreich. Verwenden Sie beispielsweise den Ausgabe-Service, um täglich Hunderte von nicht bearbeitbaren PDF-Dokumenten zu erstellen.
+AEM Forms-Kunden, die ausschließlich Document Services oder Document Security-Funktionen verwenden möchten, können eine ähnliche Topologie wie die unten angezeigte haben. Für diese Topologie wird die Verwendung einer einzigen Instanz von AEM Forms empfohlen. Sie können bei Bedarf auch einen Cluster oder eine Farm von AEM Forms-Servern erstellen. Diese Topologie wird empfohlen, wenn die meisten Benutzer programmgesteuert (über APIs) auf die Funktionen des AEM Forms-Servers zugreifen und nur minimal über die Benutzeroberfläche eingegriffen wird. Die Topologie ist bei Stapelverarbeitungsvorgängen von Dokumenten-Services sehr hilfreich. Verwenden Sie beispielsweise den Ausgabe-Service, um täglich Hunderte von nicht bearbeitbaren PDF-Dokumenten zu erstellen.
 
 Obwohl Sie in AEM Forms alle Funktionen auf einem einzelnen Server einrichten und von dort ausführen können, sollten Sie Kapazitätsplanung und Lastenausgleich berücksichtigen und dedizierte Server für bestimmte Funktionen in einer Produktionsumgebung einrichten. Für eine Umgebung, die den PDF Generator-Service zum Konvertieren von Tausenden von Seiten pro Tag und mehrere adaptive Formulare zum Erfassen von Daten verwendet, richten Sie beispielsweise separate AEM Forms-Server für den PDF Generator-Service und die Funktionen für adaptive Formulare ein. Dies erleichtert es, eine optimale Leistung zu erzielen und die Server unabhängig voneinander zu skalieren.
 
@@ -134,13 +138,13 @@ AEM Forms-Kunden, die AEM Forms-Datenerfassungsfunktionen verwenden möchten, z.
 
 ### Topologie für die Verwendung von Funktionen für überwachte Ordner für die Offline-Stapelverarbeitung {#topology-for-using-watched-folder-capabilities-for-offline-batch-processing}
 
-AEM Forms-Kunden, die überwachte Ordner für die Stapelverarbeitung verwenden möchten, können eine ähnliche Topologie wie die unten gezeigte nutzen. Die Topologie zeigt eine Cluster-Umgebung. Sie entscheiden sich jedoch je nach Auslastung, ob Sie eine einzelne Instanz oder eine Farm von AEM Forms Server verwenden. Die Drittanbieter-Datenquelle ist Ihr eigenes System von Datensätzen. Es fungiert als Eingabequelle für überwachte Ordner. Die Topologie zeigt auch die Ausgabe in Form einer gedruckten Datei an. Sie können den Ausgabeinhalt auch in einem Dateisystem speichern, per E-Mail senden und andere benutzerdefinierte Methoden verwenden, um die Ausgabe zu nutzen.
+AEM Forms-Kunden, die überwachte Ordner für die Stapelverarbeitung verwenden möchten, können über eine ähnliche Topologie wie die unten angezeigte verfügen. Die Topologie zeigt eine Cluster-Umgebung. Sie entscheiden sich jedoch je nach Auslastung, ob Sie eine einzelne Instanz oder eine Farm von AEM Forms Server verwenden. Die Datenquelle eines Drittanbieters ist Ihr eigenes Aufzeichnungssystem. Sie fungiert als Eingabequelle für überwachte Ordner. Die Topologie zeigt auch die Ausgabe in Form einer gedruckten Datei an. Sie können den Ausgabeinhalt auch in einem Dateisystem speichern, per E-Mail versenden und andere benutzerdefinierte Methoden verwenden, um die Ausgabe zu nutzen.
 
 ![offline-batch-processing-via-watched-folders](assets/offline-batch-processing-via-watched-folders.png)
 
-### Topologie für die Verwendung von Document Service-Funktionen für die API-basierte Offline-Verarbeitung {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
+### Topologie für die Verwendung von Document Services-Funktionen für die Offline-API-basierte Verarbeitung {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
 
-AEM Forms-Kunden, die nur Document Services-Funktionen verwenden möchten, können eine ähnliche Topologie wie die unten angezeigte nutzen. Für diese Topologie empfiehlt sich die Verwendung eines Clusters von AEM Forms auf OSGi-Servern. Diese Topologie wird empfohlen, wenn die meisten Benutzer programmatisch (über APIs) auf die Funktionen des AEM Forms-Servers zugreifen und das Eingreifen über die Benutzeroberfläche minimal ist. Die Topologie ist in mehreren Software-Client-Szenarien sehr hilfreich. Beispiel: Mehrere Clients, die PDF Generator-Service verwenden, um PDF-Dokumente bei Bedarf zu erstellen.
+AEM Forms-Kunden, die nur Document Services-Funktionen verwenden möchten, können über eine Topologie verfügen, die der unten dargestellten ähnelt. Diese Topologie empfiehlt die Verwendung eines Clusters von AEM Forms auf OSGi-Servern. Diese Topologie wird empfohlen, wenn die meisten Benutzer programmatisch (mithilfe von APIs) auf die AEM Forms-Server-Zugriffsfunktionen zugreifen und die Eingriffe über die Benutzeroberfläche minimal sind. Die Topologie ist in mehreren Software-Client-Szenarien sehr hilfreich. Beispiel: Mehrere Clients, die PDF Generator-Service verwenden, um PDF-Dokumente bei Bedarf zu erstellen.
 
 Obwohl Sie in AEM Forms alle Funktionen von einem einzelnen Server einrichten und ausführen können, sollten Sie Kapazitätsplanung und Lastenausgleich durchführen und dedizierte Server für bestimmte Funktionen in einer Produktionsumgebung festlegen. So sollten Sie beispielsweise in einer Umgebung, in der mit dem PDF-Generator-Service Tausende von Seiten pro Tag konvertiert und mithilfe mehrerer adaptiver Formulare Daten erfasst werden, separate AEM Forms-Server für den PDF Generator-Service und adaptive Formularfunktionen einrichten. Dies erleichtert es, eine optimale Leistung zu erzielen und die Server unabhängig voneinander zu skalieren.
 

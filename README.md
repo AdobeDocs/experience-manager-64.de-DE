@@ -1,17 +1,12 @@
 ---
-source-git-commit: 787f33c60cbe2affdea0af732289d2663ad97bfb
+source-git-commit: 89ad0c9a050076678ce8a801d9f9af4ea508bd39
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '84'
-ht-degree: 69%
+source-wordcount: '68'
+ht-degree: 50%
 
 ---
 # Dokumentation zu Adobe Experience Manager 6.4
 
-Dies ist das Repository für die Dokumentation zu Adobe Experience Manager 6.4. Diese Dokumentation umfasst die Installation, Verwaltung, Authoring und Anpassung von AEM.
+Dies ist das Repository für die Dokumentation zu Adobe Experience Manager 6.4. Diese Dokumentation behandelt die Installation, die Verwaltung, die Verwendung der Author-Instanz und die Anpassung von AEM.
 
-Ihre Beiträge zur Dokumentation sind willkommen. Sehen Sie sich die folgenden Ressourcen an:
-
-* [contributing.md](contributing.md) Ein Überblick darüber, wie Sie zur Dokumentation beitragen.
-* [guidelines.md](guidelines.md) Ein Überblick darüber, was in Beiträgen erwartet wird und wie Sie Ihre Beiträge zur Dokumentation zusammenstellen können.
-* [code-of-conduct.md](code-of-conduct.md) Ein Überblick über die Verhaltensstandards, die wir erwarten, wenn Sie zu diesem Dokumentationsprojekt beitragen.
+AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht. Daher wird diese Dokumentation nicht mehr aktualisiert und dieses Repository wurde archiviert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).

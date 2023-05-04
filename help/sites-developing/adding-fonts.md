@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen von Schriftarten für das Grafik-Rendering
 seo-title: Adding Fonts for Graphic-Rendering
-description: In AEM können Sie Grafiken erstellen, die Text enthalten, der dynamisch Ihren Inhalten entnommen wird.
+description: AEM ermöglicht die Erstellung von Grafiken, die Text enthalten, der dynamisch aus Ihrem Inhalt übernommen wird
 seo-description: AEM allows you to generate graphics incorporating text dynamically taken from your content
 uuid: 67d9b10f-e986-4d29-bde2-10e08075fe17
 contentOwner: Guillaume Carlino
@@ -10,16 +10,20 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 exl-id: f29868e3-d05c-4898-94d1-0c77ab6b72eb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 100%
+source-wordcount: '219'
+ht-degree: 75%
 
 ---
 
 # Hinzufügen von Schriftarten für das Grafik-Rendering{#adding-fonts-for-graphic-rendering}
 
-In AEM können Sie Grafiken erstellen, die Text enthalten, der dynamisch Ihren Inhalten entnommen wird..
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+AEM ermöglicht die Erstellung von Grafiken, die Text enthalten, der dynamisch aus Ihrem Inhalt übernommen wird.
 
 Hierfür können Sie auch Ihre eigenen Schriftarten hochladen und verwenden.
 

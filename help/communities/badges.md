@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
 role: Admin
 exl-id: b6aa9d73-4e20-446a-a1fc-78f8968d6844
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 5%
+source-wordcount: '323'
+ht-degree: 7%
 
 ---
 
 # Badges Console {#badges-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Über Abzeichen {#about-badges}
 
@@ -30,7 +34,7 @@ Derzeit werden Abzeichen, die ein Community-Mitglied erhält oder zugewiesen wir
 
 * Profile
 * [Foren](forum.md)
-* [Frage und Antwort](working-with-qna.md)
+* [Fragen und Antworten](working-with-qna.md)
 * [Leaderboards](enabling-leaderboard.md)
 * [Ideen](ideation-feature.md)
 

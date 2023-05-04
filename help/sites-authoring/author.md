@@ -10,23 +10,27 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 exl-id: 23e30de9-1a30-484a-b370-f9f0d45b4e41
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 99%
+source-wordcount: '583'
+ht-degree: 62%
 
 ---
 
 # Konzept der Bearbeitung und Veröffentlichung{#authoring}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM bietet Ihnen zwei Umgebungen:
 
 * Autor
 * Veröffentlichung
 
-Diese interagieren miteinander und bieten Ihnen die Möglichkeit, Inhalt auf Ihrer Website verfügbar zu machen, sodass Ihre Besucher ihn lesen können.
+Diese interagieren und ermöglichen es Ihnen, Inhalte auf Ihrer Website verfügbar zu machen, damit Ihre Besucher sie lesen können.
 
-Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Überprüfen dieses Inhalts, bevor er tatsächlich veröffentlicht wird.
+Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Überprüfen dieses Inhalts, bevor er tatsächlich veröffentlicht wird:
 
 * Ein Autor erstellt und überprüft den Inhalt (dabei kann es sich um verschiedene Inhaltstypen handeln, z. B. Seiten, Assets, Veröffentlichungen usw.),
 * der zu einem späteren Zeitpunkt auf Ihrer Website veröffentlicht wird.
@@ -41,9 +45,9 @@ Der Autor arbeitet in der sogenannten **[Autorenumgebung](/help/sites-authoring/
 
 >[!NOTE]
 >
->Ihr Konto muss über die entsprechenden Zugriffsrechte verfügen, um Inhalt erstellen, bearbeiten oder veröffentlichen zu können.
+>Ihr Konto muss über die entsprechenden Zugriffsrechte verfügen, um Inhalte zu erstellen, zu bearbeiten oder zu veröffentlichen.
 
-Je nachdem, wie die jeweilige Instanz und die entsprechenden Benutzerrechte konfiguriert sind, können Autoren für Inhalte unter anderem die folgenden Aufgaben durchführen:
+Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert sind, können Sie viele Aufgaben an Ihrem Inhalt ausführen, darunter (unter anderem):
 
 * Erstellen neuer Inhalte oder Bearbeiten vorhandener Inhalte auf einer Seite
 * Verwenden vordefinierter Vorlagen zum Erstellen neuer Inhaltsseiten
@@ -56,30 +60,30 @@ Je nachdem, wie die jeweilige Instanz und die entsprechenden Benutzerrechte konf
 
 Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts unterstützen:
 
-* Workflows für die Verwaltung von Änderungen, zum Beispiel: Anfordern einer Prüfung vor der Veröffentlichung
+* Workflows für die Verwaltung von Änderungen, zum Beispiel: Erzwingen einer Überprüfung vor der Veröffentlichung
 * Projekte zur Koordinierung einzelner Aufgaben
 
 >[!NOTE]
 >
->AEM wird außerdem aus der Autorenumgebung [verwaltet](/help/sites-administering/home.md) (für eine Vielzahl von Aufgaben).
+>AEM [verabreicht](/help/sites-administering/home.md) (für die meisten Aufgaben) aus der Autorenumgebung.
 
 ## Veröffentlichungsumgebung {#publish-environment}
 
 Wenn die Inhalte der AEM-Site fertig sind, werden sie in der **Veröffentlichungsumgebung** veröffentlicht. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
 
-Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der DMZ, d. h. es besteht die Möglichkeit des Zugriffs vom Internet aus und der vollständige Schutz durch das eigene Netzwerk ist nicht mehr gewährleistet.
+Normalerweise befindet sich die Veröffentlichungsumgebung in der demilitarisierten Zone. mit anderen Worten, für das Internet verfügbar, aber nicht mehr unter dem vollen Schutz des internen Netzes.
 
-Handelt es sich bei der AEM-Site um eine [Community-Site](/help/communities/overview.md) oder enthält sie [Community-Komponenten](/help/communities/author-communities.md), können alle angemeldeten Besucher der Site (Mitglieder) die Community-Funktionen nutzen. Sie können beispielsweise in einem Forum posten, Kommentare abgeben oder anderen Mitgliedern folgen. Mitglieder erhalten möglicherweise die Berechtigung, Aktivitäten durchzuführen, die normalerweise nur in der Autorenumgebung verfügbar sind. Hierzu gehören unter anderem das Erstellen neuer Seiten (Community-Gruppen) oder Blog-Beiträge oder die Moderation der Beiträge anderer Mitglieder.
+Wenn die AEM Site ein [Community-Site](/help/communities/overview.md)oder enthält [Communities-Komponenten](/help/communities/author-communities.md), können angemeldete Site-Besucher (Mitglieder) mit Communities-Funktionen interagieren. Sie können beispielsweise in einem Forum posten, Kommentare abgeben oder anderen Mitgliedern folgen. Mitglieder erhalten möglicherweise die Berechtigung, Aktivitäten durchzuführen, die normalerweise nur in der Autorenumgebung verfügbar sind. Hierzu gehören unter anderem das Erstellen neuer Seiten (Community-Gruppen) oder Blog-Beiträge oder die Moderation der Beiträge anderer Mitglieder.
 
 >[!NOTE]
 >
->Leider gibt es bei der verwendeten Terminologie gelegentlich Überschneidungen. Dies ist bei folgenden Begriffen möglich:
+>Leider gibt es manchmal Überschneidungen in der verwendeten Terminologie. Dies kann passieren mit:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
    >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
 >
 >* **Aktivieren/Deaktivieren**
-   >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung. In der klassischen Benutzeroberfläche werden diese Begriffe häufiger verwendet.
+   >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung. Sie werden in der klassischen Benutzeroberfläche häufiger verwendet.
 >
 >* **Replizieren/Replikation**
    >  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalte, Dateien, Code, Benutzerkommentare) zwischen Umgebungen verwendet werden, z. B. beim Publishing oder beim Zurückreplizieren von Benutzerkommentaren.

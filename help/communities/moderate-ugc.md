@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 role: Admin
 exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1548'
 ht-degree: 3%
 
 ---
 
 # Moderieren von Community-Inhalten {#moderating-community-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -120,7 +124,7 @@ Anonymer Benutzer
    <td> </td> 
   </tr>
   <tr>
-   <td><strong>Gastzugang</strong></td> 
+   <td><strong>Zulassen</strong></td> 
    <td>X</td> 
    <td>X</td> 
    <td> </td> 
@@ -172,7 +176,7 @@ Die kontextbezogene Moderation kann so konfiguriert werden, dass Mitglieder beim
 
 Das System verfolgt alle Kennzeichnungen, die markiert sind, und den Grund der Kennzeichnung und sendet ein Ereignis, wenn der Schwellenwert erreicht ist. Wenn die UGC von einem Community-Moderator zugelassen wird, werden diese Flags archiviert. Nach der Erlaubnis und Archivierung würden bei nachfolgenden Flaggschiffen sie so archiviert, als gäbe es keine vorherigen Flaggings.
 
-### Gastzugang {#allow}
+### Zulassen {#allow}
 
 Die Aktion Zulassen ist eine Option für benutzergenerierte Inhalte, die in einem vormoderierten System gekennzeichnet, abgelehnt oder nicht genehmigt wurde. Mit der Aktion Zulassen werden alle gekennzeichneten oder abgelehnten/Spam-Status gelöscht und alle gekennzeichneten Daten werden archiviert.
 
@@ -192,7 +196,7 @@ Wenn UGC vormoderiert ist, wird der Beitrag erst dann auf der veröffentlichten 
 
 Die Spam-Erkennung ist eine Funktion der automatischen Moderation, die unerwünschte Teile gesendeter benutzergenerierter Inhalte herausfiltert, indem diese als Spam gekennzeichnet werden. Nach der Aktivierung wird anhand einer vorkonfigurierten Sammlung von Spam-Wörtern ermittelt, ob der vom Benutzer erstellte Inhalt Spam ist oder nicht. Die standardmäßigen Spam-Wörter finden Sie unter
 
-`/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt` möglich.
+`/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
 Um jedoch die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie eine Reihe von Wörtern im Verzeichnis /apps, die der Struktur der standardmäßigen Spam-Wörter folgen, indem Sie [Overlay](overlay-comments.md).
 
@@ -250,7 +254,7 @@ Die **sentimentprocess.name** kann auch geändert werden, um auf den Speicherort
 
 So konfigurieren Sie Sentiment und Schlagwörter:
 
-* Auf der Authoring-Instanz
+* Auf einer Autoreninstanz
 * Als Administrator anmelden
 * Öffnen [Web-Konsole](http://localhost:4502/system/console/configMgr)
 * Suchen `sentimentprocess.name`

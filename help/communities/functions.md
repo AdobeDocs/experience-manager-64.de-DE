@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
 role: Admin
 exl-id: 2007336d-d75c-4e01-af81-181751c04cfe
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2532'
-ht-degree: 6%
+source-wordcount: '2568'
+ht-degree: 3%
 
 ---
 
 # Community-Funktionen {#community-functions}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Art der Funktionen, die von einem Community-Erlebnis erwartet werden, ist bekannt. Community-Funktionen sind als Community-Funktionen verfügbar. Im Grunde sind es eine oder mehrere Seiten, die vorab mit dem Netzwerk verbunden sind, um eine Community-Funktion zu implementieren, die mehr erfordert, als einfach eine Komponente zu einer Seite im Autorenmodus hinzuzufügen. Sie sind die Bausteine, mit denen die Struktur eines [Community-Site-Vorlage](sites.md) von welchen Community-Sites [created](sites-console.md).
 
@@ -82,13 +86,13 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * Siehe [Titel und URL-Einstellungen](#title-and-url-settings)
 * **[!UICONTROL Ansicht &quot;Meine Aktivitäten&quot;]**
-Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten eine Registerkarte, auf der Aktivitäten basierend auf denen gefiltert werden, die innerhalb der Community vom aktuellen Mitglied generiert wurden. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten eine Registerkarte, auf der Aktivitäten basierend auf denen gefiltert werden, die innerhalb der Community vom aktuellen Mitglied generiert wurden. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Ansicht &quot;Alle Aktivitäten&quot;anzeigen]**
-Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten einen Tab, der alle in der Community generierten Aktivitäten enthält, auf die das aktuelle Mitglied Zugriff hat. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten einen Tab, der alle in der Community generierten Aktivitäten enthält, auf die das aktuelle Mitglied Zugriff hat. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Ansicht &quot;News Feed&quot;anzeigen]**
-Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten eine Registerkarte, auf der Aktivitäten nach denen gefiltert werden, denen das aktuelle Mitglied folgt. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten eine Registerkarte, auf der Aktivitäten nach denen gefiltert werden, denen das aktuelle Mitglied folgt. Die Option Standard ist aktiviert.
 
 ### Zuweisungsfunktion {#assignments-function}
 
@@ -108,16 +112,16 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * Siehe [Titel und URL-Einstellungen](#title-and-url-settings)
 * **[!UICONTROL Zulassen von berechtigten Mitgliedern]**
-Wenn diese Option aktiviert ist, erlaubt der Blog nur privilegierten Mitgliedern, Artikel zu erstellen, indem er die Auswahl eines [Gruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder erstellen. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, erlaubt der Blog nur privilegierten Mitgliedern, Artikel zu erstellen, indem er die Auswahl eines [Gruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder erstellen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
-Wenn diese Option aktiviert ist, bietet der Blog Mitgliedern die Möglichkeit, Dateien hochzuladen. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, bietet der Blog Mitgliedern die Möglichkeit, Dateien hochzuladen. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Threaded-Antworten zulassen]**
-Wenn nicht aktiviert, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht erlaubt. Diese Option ist standardmäßig aktiviert.
+Wenn nicht aktiviert, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht erlaubt. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Zulassen von speziellen Inhalten]**
-Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Die Option Standard ist aktiviert.
 
 ### Kalenderfunktion {#calendar-function}
 
@@ -129,19 +133,19 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * Siehe [Titel und URL-Einstellungen](#title-and-url-settings)
 * **[!UICONTROL Zulassen von Pinnwänden]**
-Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Zulassen von berechtigten Mitgliedern]**
-Wenn diese Option aktiviert ist, erlaubt der Blog nur privilegierten Mitgliedern, Artikel zu erstellen, indem er die Auswahl eines [Gruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder erstellen. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, erlaubt der Blog nur privilegierten Mitgliedern, Artikel zu erstellen, indem er die Auswahl eines [Gruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder erstellen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
-Wenn diese Option aktiviert ist, bietet der Blog Mitgliedern die Möglichkeit, Dateien hochzuladen. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, bietet der Blog Mitgliedern die Möglichkeit, Dateien hochzuladen. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Threaded-Antworten zulassen]**
-Wenn nicht aktiviert, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht erlaubt. Diese Option ist standardmäßig aktiviert.
+Wenn nicht aktiviert, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht erlaubt. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Zulassen von speziellen Inhalten]**
-Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Die Option Standard ist aktiviert.
 
 ### Katalogfunktion {#catalog-function}
 
@@ -159,7 +163,7 @@ Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Anga
    * Die ausgewählten Tag-Namespaces definieren, welche Tags von Besuchern zum Filtern der Liste der im Katalog aufgelisteten Aktivierungsressourcen ausgewählt werden können.
    * Wenn diese Option aktiviert ist, sind alle für die Community-Site zulässigen Tag-Namespaces verfügbar.
    * Wenn diese Option deaktiviert ist, können Sie einen oder mehrere Namespaces auswählen, die für die Community-Site zulässig sind.
-   * Diese Option ist standardmäßig aktiviert.
+   * Die Option Standard ist aktiviert.
 
 ### Funktion für spezielle Inhalte {#featured-content-function}
 
@@ -187,19 +191,19 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * Siehe [Titel und URL-Einstellungen](#title-and-url-settings)
 * **[!UICONTROL Zulassen von Pinnwänden]**
-Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Zulassen von berechtigten Mitgliedern]**
-Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl eines [Gruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder Beiträge posten. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl eines [Gruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
-Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Threaded-Antworten zulassen]**
-Wenn diese Option nicht aktiviert ist, werden im Forum Kommentare zu einem Thema zugelassen, Antworten auf diese Kommentare sind jedoch nicht zulässig. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option nicht aktiviert ist, werden im Forum Kommentare zu einem Thema zugelassen, Antworten auf diese Kommentare sind jedoch nicht zulässig. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Zulassen von speziellen Inhalten]**
-Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Die Option Standard ist aktiviert.
 
 ### Gruppenfunktion {#groups-function}
 
@@ -226,7 +230,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 Ein Pulldown-Menü, das die Auswahl einer oder mehrerer aktivierter Gruppenvorlagen ermöglicht, aus denen der künftige Ersteller einer neuen Community-Gruppe (in der Veröffentlichungsumgebung) wählen kann.
 
 * **[!UICONTROL Zulassen von berechtigten Mitgliedern]**
-Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl eines [Sicherheitsgruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder Beiträge posten. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl eines [Sicherheitsgruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Erstellung von Veröffentlichungen zulassen]**
 Wenn diese Option aktiviert ist, können autorisierte Community-Mitglieder eine Gruppe in der Veröffentlichungsumgebung erstellen. Wenn diese Option deaktiviert ist, können neue Gruppen (Untergruppen) nur in der Autorenumgebung über die Gruppenkonsole der Communities-Sites erstellt werden.
@@ -243,16 +247,16 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in 
 
 * Siehe [Titel und URL-Einstellungen](#title-and-url-settings)
 * **[!UICONTROL Zulassen von berechtigten Mitgliedern]**
-Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl eines [Sicherheitsgruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder Beiträge posten. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Themen posten, indem sie die Auswahl eines [Sicherheitsgruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
-Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Threaded-Antworten zulassen]**
-Wenn diese Option nicht aktiviert ist, sind Antworten (Kommentare) auf ein Thema zulässig, Antworten auf Kommentare sind jedoch nicht zulässig. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option nicht aktiviert ist, sind Antworten (Kommentare) auf ein Thema zulässig, Antworten auf Kommentare sind jedoch nicht zulässig. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Zulassen von speziellen Inhalten]**
-Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Die Option Standard ist aktiviert.
 
 ### Leaderboard-Funktion {#leaderboard-function}
 
@@ -268,17 +272,17 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in 
 * **[!UICONTROL Anzeigemarke]**
 Wenn diese Option aktiviert ist, wird eine Spalte für Badge-Symbole in die Leaderboard eingefügt.
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Name der Anzeigemarke]**
 Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in die Leaderboard aufgenommen.
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Avatar anzeigen]**
 Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds in das Leaderboard eingefügt, neben dem Namen, der mit seinem Mitgliederprofil verknüpft ist.
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 ### Seitenfunktion {#page-function}
 
@@ -296,19 +300,19 @@ Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Besc
 
 * Siehe [Titel und URL-Einstellungen](#title-and-url-settings)
 * **[!UICONTROL Zulassen von Pinnwänden]**
-Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Zulassen von berechtigten Mitgliedern]**
-Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Fragen posten, indem sie die Auswahl eines [Gruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder Beiträge posten. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, können nur privilegierte Mitglieder Fragen posten, indem sie die Auswahl eines [Gruppe privilegierter Mitglieder](users.md#privileged-members-group). Wenn diese Option nicht aktiviert ist, dürfen alle Community-Mitglieder Beiträge posten. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
-Wenn diese Option aktiviert ist, bietet das Forum die Möglichkeit, Dateien hochzuladen. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, bietet das Forum die Möglichkeit, Dateien hochzuladen. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Threaded-Antworten zulassen]**
-Wenn diese Option nicht aktiviert ist, können im Forum Kommentare (Antworten) zu einer geposteten Frage eingesehen werden. Antworten auf Antworten sind jedoch nicht zulässig. Diese Option ist standardmäßig aktiviert.
+Wenn diese Option nicht aktiviert ist, können im Forum Kommentare (Antworten) zu einer geposteten Frage eingesehen werden. Antworten auf Antworten sind jedoch nicht zulässig. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Zulassen von speziellen Inhalten]**
-Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Diese Option ist standardmäßig aktiviert.
+Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Die Option Standard ist aktiviert.
 
 ## Community-Funktion erstellen {#create-community-function}
 

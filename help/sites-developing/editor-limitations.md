@@ -1,7 +1,7 @@
 ---
 title: Editor-Einschränkungen
 seo-title: Editor Limitations
-description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
+description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
 seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 exl-id: ce860880-5954-4f72-8ec6-60209c1ec659
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 100%
+source-wordcount: '352'
+ht-degree: 61%
 
 ---
 
 # Editor-Einschränkungen{#editor-limitations}
 
-Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Auf dieser Seite werden diese Einschränkungen zusammengefasst und, wo möglich, Lösungen bzw. Problemumgehungen zur Verfügung gestellt.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
 
 ## Funktionale Einschränkungen {#functional-limitations}
 
@@ -41,9 +45,9 @@ Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglic
 
 ### Absolut positionierte Elemente {#absolutely-positioned-elements}
 
-Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Überlagerung verursachen.
+Absolut positionierte Elemente können Probleme bei der Position ihrer Überlagerung verursachen.
 
-* Ist dies der Fall, müssen Sie darauf achten, dass die Abmessungen des absolut positionierten Elements korrekt sind, weil der Editor eine Überlagerung mit den gleichen Abmessungen erstellt.
+* Stellen Sie in diesem Fall sicher, dass die Dimensionen des absolut positionierten Elements korrekt sind, da der Editor eine Überlagerung mit exakt denselben Dimensionen erstellt.
 
 ### vh-Einheiten {#vh-units}
 
@@ -51,7 +55,7 @@ Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Üb
 
 ### Feste Hintergrundbilder {#fixed-background-images}
 
-Feste Hintergrundbilder werden beim Scrollen nicht als fest angezeigt, weil sie in einen iframe eingebettet sind.
+Feste Hintergrundbilder werden beim Scrollen möglicherweise nicht als fest angezeigt, da sie in einen iframe eingebettet sind.
 
 * Wird in der Kopfzeile **Seite als veröffentlicht anzeigen** ausgewählt, wird die Seite korrekt angezeigt.
 

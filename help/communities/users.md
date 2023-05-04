@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 54109f64-eb30-47cc-bf7a-756843d2da02
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2168'
-ht-degree: 2%
+source-wordcount: '2204'
+ht-degree: 1%
 
 ---
 
 # Verwalten von Benutzern und Benutzergruppen {#managing-users-and-user-groups}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -73,7 +77,7 @@ Um in der Autorenumgebung registrierte Benutzer und Benutzergruppen zu verwalten
 
 | Wenn Gruppenmitglied... | Primäre Rolle |
 |---|---|
-| administrators | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators sowie über die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
+| Administratoren | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators sowie über die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
 | Community-Administratoren | Die Gruppe Community-Administratoren wird automatisch Mitglied aller Community-Sites und aller auf der Site erstellten Community-Gruppen. Die Administratorgruppe ist ein erstmaliges Mitglied der Gruppe Community-Administratoren . In der Autorenumgebung können Community-Administratoren Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder aus der Community verbieten) und Inhalte moderieren. |
 | Community &lt;*Site-Name*> Sitecontentmanager | Der Community-Site-Inhaltsmanager kann herkömmliche AEM erstellen, Seiten für eine Community-Site erstellen und ändern. |
 | Community-Aktivierungsmanager | Die Gruppe Community-Aktivierungsmanager besteht aus Benutzern, die für die Zuweisung zur Verwaltung der Gruppe Aktivierungsmanager einer Community-Site zur Verfügung stehen. |
@@ -201,7 +205,7 @@ Nur Benutzer, die Mitglieder der globalen `Community Enablement Managers` kann a
 
 So erstellen Sie einen Benutzer, dem die Rolle von `Community Site Enablement Manager`verwenden Sie die Sicherheitskonsole der klassischen Benutzeroberfläche, um den Pfad anzugeben:
 
-Auf der Authoring-Instanz:
+Auf einer Autoreninstanz:
 
 1. Mit Administratorrechten angemeldet, navigieren Sie zur Sicherheitskonsole der klassischen Benutzeroberfläche.
 Beispiel: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)

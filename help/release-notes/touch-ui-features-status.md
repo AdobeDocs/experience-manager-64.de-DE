@@ -1,7 +1,7 @@
 ---
 title: Status der Funktionen der Touch-optimierten Benutzeroberfläche
 seo-title: Touch UI Feature Status
-description: Spezifische Versionshinweise zur Touch-optimierten Benutzeroberfläche von Adobe Experience Manager 6.3
+description: Spezifische Versionshinweise zur Touch-optimierten Benutzeroberfläche von Adobe Experience Manager 6.3.
 seo-description: Release notes specific to Adobe Experience Manager 6.3 Touch UI.
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 exl-id: e1422581-143b-4fce-976e-e5aa3360e2d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 90%
+source-wordcount: '1096'
+ht-degree: 58%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 90%
 
 >[!CAUTION]
 >
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+>[!CAUTION]
+>
 >Mit Version 6.4 von AEM [Die klassische Benutzeroberfläche ist veraltet](/help/release-notes/deprecated-removed-features.md). Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. Es wird empfohlen, die leistungsstarken neuen Funktionen der Touch-optimierten Benutzeroberfläche zu nutzen.
 
-Seit Einführung von Version 6.0 verfügt AEM über eine neue, Touch-optimierte Benutzeroberfläche, die auf Adobe Marketing Cloud und die allgemeinen Richtlinien für Adobe-Benutzeroberflächen abgestimmt ist. Da sich die Funktionalitäten der beiden Benutzeroberflächen inzwischen nahezu entsprechen, ist dies nun die Standardbenutzeroberfläche von AEM. Die alte, Desktop-artige Benutzeroberfläche wird hingegen als „klassische Benutzeroberfläche“ bezeichnet.
+Ab Version 6.0 führte AEM eine neue Benutzeroberfläche ein, die als &quot;Touch-optimierte Benutzeroberfläche&quot;bezeichnet wird (auch als &quot;Touch-optimierte Benutzeroberfläche&quot;bezeichnet), die an die Adobe Marketing Cloud und die allgemeinen Richtlinien für die Benutzeroberfläche der Adobe angepasst ist. Da nahezu die Funktionsparität erreicht wurde, ist dies zur Standard-Benutzeroberfläche in AEM geworden, mit der veralteten, Desktop-orientierten Benutzeroberfläche, die als &quot;klassische Benutzeroberfläche&quot;bezeichnet wird.
 
 Die meisten Funktionen sind zwar in der Touch-optimierten Benutzeroberfläche vorhanden, allerdings ist die Entwicklung einiger Funktionen noch nicht abgeschlossen. Diese werden dann in künftigen Versionen hinzugefügt.
 
@@ -33,20 +37,20 @@ Empfehlungen für Kunden, die auf AEM 6.4 aktualisieren, finden Sie unter [Recom
 
 >[!NOTE]
 >
->Beachten Sie, dass auf dieser Seite nur auf die Entsprechungen der Funktionen der klassischen Benutzeroberfläche eingegangen wird.
+>Beachten Sie, dass auf dieser Seite nur die Funktionsparität mit der klassischen Benutzeroberfläche behandelt wird.
 >
->Zusätzliche spezifische Funktionen der Touch-optimierten Benutzeroberfläche, die nicht in der klassischen Benutzeroberfläche verfügbar sind, werden hier nicht aufgeführt.
+>Funktionen, die der Touch-optimierten Benutzeroberfläche hinzugefügt wurden und die nicht in der klassischen Benutzeroberfläche vorhanden sind, werden nicht aufgeführt.
 
 >[!NOTE]
 >
->Diese Liste erhebt keinen Anspruch auf Vollständigkeit.
+>Diese Liste ist vollständig, sollte jedoch nicht als vollständig betrachtet werden.
 
 ## Legende {#legend}
 
-* **Umfassend**: Die Funktion ist in vollem Umfang in der Touch-optimierten Benutzeroberfläche verfügbar.
+* **Fertig**: Die Funktion ist in der Touch-optimierten Benutzeroberfläche vollständig verfügbar
 * **Nahezu umfassend**: Die Funktion ist nahezu umfassend in der Touch-optimierten Benutzeroberfläche verfügbar.
-* **Fehlt**: Die Funktion ist nicht in der Touch-optimierten Benutzeroberfläche verfügbar. Um die entsprechende Aktion durchzuführen, müssen Sie die klassische Benutzeroberfläche verwenden.
-* **Ersetzt**: Diese Funktion wurde durch eine neue Implementierung ersetzt, die anders funktioniert.
+* **Fehlt**: Die Funktion ist in der Touch-optimierten Benutzeroberfläche nicht vorhanden. Für diese Aktion muss die klassische Benutzeroberfläche verwendet werden.
+* **Ersetzt**: Die Funktion wurde durch eine neue Implementierung ersetzt, die anders funktioniert.
 * **Entfernt**: Die Funktion ist nicht mehr in der Touch-optimierten Benutzeroberfläche verfügbar und wird nicht ersetzt.
 
 ## Funktionsstatus: Sites Admin {#feature-status-sites-admin}
@@ -106,7 +110,7 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
    <td> </td> 
   </tr>
   <tr>
-   <td>Seite kopieren/einfügen (Duplikat)</td> 
+   <td>Seite kopieren/einfügen (Duplizieren)</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
@@ -121,7 +125,7 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
    <td> </td> 
   </tr>
   <tr>
-   <td>Seite(n) ohne Replikationsberechtigung veröffentlichen</td> 
+   <td>Seite(n) ohne Replikationsrechte veröffentlichen</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
@@ -131,17 +135,17 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
    <td> </td> 
   </tr>
   <tr>
-   <td>Struktur veröffentlichen</td> 
+   <td>Veröffentlichungsstruktur</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Veröffentlichung der Seite(n) rückgängig machen</td> 
+   <td>Veröffentlichung von Seiten rückgängig machen</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Veröffentlichung der Seite(n) ohne Replikationsberechtigungen rückgängig machen</td> 
+   <td>Veröffentlichung von Seiten ohne Replikationsrechte rückgängig machen</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
@@ -166,7 +170,7 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
    <td> </td> 
   </tr>
   <tr>
-   <td>Berechtigungen für Seite(n) festlegen</td> 
+   <td>Festlegen von Berechtigungen für Seiten</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
@@ -191,12 +195,12 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
    <td> </td> 
   </tr>
   <tr>
-   <td>Live Copy-Aktionen (Rollout)</td> 
+   <td>Live Copy-Aktionen (Roll-out)</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Sprachkopien anzeigen</td> 
+   <td>Siehe Sprachkopien</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
@@ -208,7 +212,7 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
   <tr>
    <td>Benachrichtigungs-Posteingang (JCR-Ereignisse)</td> 
    <td>Fehlt</td> 
-   <td>Verwenden Sie die klassische Benutzeroberfläche. Wird durch andere Implementierung ersetzt.</td> 
+   <td>Verwenden Sie die klassische Benutzeroberfläche. Wird durch eine andere Implementierung ersetzt.</td> 
   </tr>
   <tr>
    <td>Verweise</td> 
@@ -250,7 +254,7 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
    <td> </td> 
   </tr>
   <tr>
-   <td>Apps bearbeiten</td> 
+   <td>Mobile Apps bearbeiten</td> 
    <td>Umfassend<br /> </td> 
    <td> </td> 
   </tr>
@@ -280,12 +284,12 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
    <td> </td> 
   </tr>
   <tr>
-   <td>Modus: Entwurf bearbeiten</td> 
+   <td>Modus: Design bearbeiten</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Modus: Strukturvorlagen-Modus</td> 
+   <td>Modus: Strukturvorlage</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
@@ -295,7 +299,7 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
    <td> </td> 
   </tr>
   <tr>
-   <td>Anmerkungen hinzufügen</td> 
+   <td>Hinzufügen von Anmerkungen</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
@@ -305,7 +309,7 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
    <td> </td> 
   </tr>
   <tr>
-   <td>Seiten-Rollout</td> 
+   <td>Rollout-Seite</td> 
    <td>Umfassend<br /> </td> 
    <td> </td> 
   </tr>
@@ -315,7 +319,7 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
    <td> </td> 
   </tr>
   <tr>
-   <td>Workflow-Paket-Handling</td> 
+   <td>Umgang mit Workflow-Paketen</td> 
    <td>Nahezu umfassend</td> 
    <td>Vollständiger Zugriff über die Touch-optimierte Benutzeroberfläche. In der klassischen Benutzeroberfläche werden weiterhin mehrere Workflow-Payloads angezeigt.<br /> </td> 
   </tr>
@@ -352,7 +356,7 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
   <tr>
    <td>Verweise einblenden</td> 
    <td>Entfernt</td> 
-   <td>Verwenden Sie Sites Admin, um die <a href="/help/sites-authoring/author-environment-tools.md#references">detaillierte Verweisliste anzuzeigen</a>.<br /> </td> 
+   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/author-environment-tools.md#references">siehe detaillierte Referenzliste</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Auditprotokoll</td> 
@@ -367,10 +371,10 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
   <tr>
    <td>Version wiederherstellen</td> 
    <td>Entfernt</td> 
-   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">Versionen wiederherzustellen</a>.</td> 
+   <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">Versionen wiederherstellen</a>.</td> 
   </tr>
   <tr>
-   <td>Zwischen Launches wechseln</td> 
+   <td>Launches wechseln</td> 
    <td>Entfernt</td> 
    <td>Verwenden Sie Sites Admin, um <a href="/help/sites-authoring/launches-promoting.md">zwischen Launches zu wechseln</a>.<br /> </td> 
   </tr>
@@ -392,7 +396,7 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
   <tr>
    <td>ClientContext-Benutzeroberfläche<br /> </td> 
    <td>Ersetzt</td> 
-   <td>Verwenden Sie künftig die <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a>-Benutzeroberfläche.</td> 
+   <td>Verwenden Sie die <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> Benutzeroberfläche in Zukunft.</td> 
   </tr>
   <tr>
    <td>Inhaltssuche für die unterschiedlichen Medientypen<br /> </td> 
@@ -410,7 +414,7 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
    <td> </td> 
   </tr>
   <tr>
-   <td>Komponentenliste in Zwischenablage kopieren</td> 
+   <td>Liste der Komponenten in der Zwischenablage</td> 
    <td>Fehlt</td> 
    <td> </td> 
   </tr>
@@ -420,12 +424,12 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
    <td> </td> 
   </tr>
   <tr>
-   <td>Inhalte per Drag-and-Drop in den Komponentenplatzhalter einfügen</td> 
+   <td>Inhalt in Komponenten-Platzhalter ziehen und ablegen</td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Inhalte mit der automatischen Komponentenerstellung direkt per Drag-and-Drop in den ParSys-Platzhalter einfügen<br /> </td> 
+   <td>Ziehen Sie Inhalte direkt in den ParSys-Platzhalter mit automatischer Komponentenerstellung.<br /> </td> 
    <td>Umfassend</td> 
    <td> </td> 
   </tr>
@@ -593,7 +597,7 @@ Dies ist eine Liste der Funktionen der Text-, Tabellen- und Bild-Editoren der k
 
 ## Funktionsstatus: Werkzeuge {#feature-status-tools}
 
-Dies ist eine Liste der verschiedenen Werkzeuge der klassischen Benutzeroberfläche sowie deren Status in der Touch-optimierten Benutzeroberfläche.
+Dies ist eine Liste der verschiedenen Tools, die die klassische Benutzeroberfläche hat, und des Status in der Touch-optimierten Benutzeroberfläche.
 
 <table> 
  <tbody>

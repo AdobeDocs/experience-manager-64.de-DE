@@ -1,7 +1,7 @@
 ---
 title: Software-Architektur
 seo-title: Software Architecture
-description: Best Practices für die Entwicklung der Architektur Ihrer Software
+description: Best Practices für die Architektur Ihrer Software
 seo-description: Best practices for architecting your software
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: 4c5896a4-d3f4-4278-9af3-538ab10cd210
-source-git-commit: b7d1a2435e33d4fdd1d030d81ff1ca1b65700fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 100%
+source-wordcount: '650'
+ht-degree: 86%
 
 ---
 
 # Software-Architektur{#software-architecture}
 
-## Auslegen des Designs auf Upgrades {#design-for-upgrades}
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+## Design für Upgrades {#design-for-upgrades}
 
 Bei der Erweiterung der OOTB-Verhaltensweisen ist es wichtig, Upgrades zu berücksichtigen. Nehmen Sie Anpassungen immer im Verzeichnis /apps vor und überlagern Sie entweder die entsprechenden Knoten im Verzeichnis /libs oder verwenden Sie „sling:resourceSuperType“, um das Standardverhalten zu erweitern. Zwar können Änderungen erforderlich sein, um neue AEM-Versionen zu unterstützen, doch die neue Version sollte Ihre Anpassungen nicht überschreiben, wenn diese Best Practice befolgt wird.
 
@@ -31,17 +35,17 @@ Dadurch lässt sich das Erscheinungsbild der Website vereinheitlichen und die Co
 
 Indem Sie die Komponenten definieren, die in den einzelnen Absatzsystemen auf der Seite enthalten sein können, können Sie Einfluss darauf nehmen, dass das Erscheinungsbild der Seite einheitlich ist. Durch das Beschränken des Zugriffs auf das Design auf Seiten können „Superautoren“ die zulässigen Komponenten je Seite ohne Unterstützung eines Entwicklers ändern und gleichzeitig sicherstellen, dass die anderen Autoren die Unternehmensstandards einhalten.
 
-### Entwickeln von SOLID-Architekturen {#develop-a-solid-architecture}
+### Entwickeln einer SOLID-Architektur {#develop-a-solid-architecture}
 
-SOLID ist ein Akronym, das fünf architektonische Prinzipien beschreibt, die Sie einhalten sollten:
+SOLID ist ein Akronym, das fünf architektonische Prinzipien beschreibt, die beachtet werden sollten:
 
 * **Single Responsibility**-Prinzip: Jedes Modul, jede Klasse, jede Methode usw. sollte nur eine einzige Verantwortung haben.
 * **O** pen/Closed-Prinzip: Module sollten sowohl offen (für Erweiterungen) als auch geschlossen (für Änderungen) sein.
 * **L** iskovsches Substitutionsprinzip: Typen sollten durch ihre Untertypen ersetzbar sein.
 * **Interface Segregation-Prinzip:** Clients sollten nicht gezwungen werden, von Methoden abzuhängen, die sie nicht verwenden.
-* **D** ependency Inversion-Prinzip: Module höherer Ebenen sollten nicht von Modulen niedriger Ebenen abhängig sein. Beide sollten von Abstraktionen abhängen. Abstraktionen sollten nicht von Details abhängen. Details sollten von Abstraktionen abhängen.
+* **D** ependency Inversion-Prinzip: Module höherer Ebenen sollten nicht von Modulen niedriger Ebenen abhängig sein. Beide sollten von Abstraktionen abhängen. Abstraktionen sollten nicht von Details abhängig sein. Details sollten von Abstraktionen abhängen.
 
-Durch die Berücksichtigung dieser fünf Prinzipien lässt sich ein System erzielen, in dem eine strikte Trennung der Anliegen gegeben ist.
+Das Streben nach Einhaltung dieser fünf Grundsätze sollte zu einem System führen, das eine strikte Trennung der Bedenken aufweist.
 
 >[!TIP]
 >

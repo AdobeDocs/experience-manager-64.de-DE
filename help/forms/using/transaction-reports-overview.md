@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 1fb11e02-d8f1-41a0-8e23-cb890b4e2244
 exl-id: a545aa0a-9d71-48ba-ba3e-ed30a7e34f3d
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 95%
 
 ---
 
 # Übersicht über Transaktionsberichte {#transaction-reports-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Zählen aller übermittelten Formulare, wiedergegebenen interaktiven Kommunikationen, in ein anderes Format konvertierten Dokumente usw.
 

@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools
 role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 97%
+source-wordcount: '727'
+ht-degree: 80%
 
 ---
 
 # Erweitern des Asset-Editors {#extending-asset-editor}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Beim Asset-Editor handelt es sich um die Seite, die geöffnet wird, wenn auf ein über die Asset-Freigabe gefundenes Asset geklickt wird. Er ermöglicht dem Benutzer das Bearbeiten von Aspekten des Assets wie Metadaten, Miniatur, Titel und Tags.
 
@@ -52,7 +56,7 @@ Das Beispiel lädt diese JavaScript-Quelle in `head.jsp` (`/apps/geometrixx/comp
 
 ### Zusätzliche Stylesheets {#additional-style-sheets}
 
-Einige der Komponenten von [!DNL Assets] verwenden die Widget-Bibliothek. [!DNL Experience Manager] Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
+Einige der Komponenten von [!DNL Assets] verwenden die Widget-Bibliothek. [!DNL Experience Manager] Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Für die Tag-Aktionskomponente ist eine weitere erforderlich.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -64,7 +68,7 @@ Die Komponenten der Beispielseite erfordern, dass alle Selektoren mit `.assetedi
 
 ### FormChooser: Anpassungen für eventuell geladene Ressourcen {#formchooser-adjustments-for-eventually-loaded-resources}
 
-Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen – in diesem Fall Assets – auf derselben Formularseite bearbeiten können, indem Sie der URL des Assets einfach einen Formularselektor und den Pfad des Formulars hinzufügen.
+Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen - in diesem Fall Assets - auf derselben Formularseite bearbeiten können, indem Sie einfach eine Formularauswahl und den Pfad des Formulars zur URL des Assets hinzufügen.
 
 Beispiel:
 
@@ -208,16 +212,16 @@ Sie können die im [Metadatenformular](assets-finder-editor.md#metadata-form-and
 
 Aktuell verfügbare Metadaten sind in `/libs/dam/options/metadata` definiert:
 
-* Die erste Ebene innerhalb dieses Verzeichnisses enthält die Namespaces.
-* Die Elemente in den einzelnen Namespaces stellen Metadaten dar, beispielsweise Ergebnisse in einem lokalen Teilelement.
-* Die Metadaten enthalten die Informationen für den Typ und die Optionen mit mehreren Werten.
+* Die erste Ebene in diesem Ordner enthält die Namespaces.
+* Die Elemente in jedem Namespace stellen Metadaten dar, z. B. Ergebnisse in einem lokalen Teil-Element.
+* Der Metadateninhalt enthält die Informationen für den Typ und die Optionen mit mehreren Werten.
 
 Die Optionen können in `/apps/dam/options/metadata` überschrieben werden:
 
 1. Kopieren Sie das Verzeichnis von `/libs` nach `/apps`.
 
-1. Sie können Elemente entfernen, ändern und hinzufügen.
+1. Entfernen, Ändern oder Hinzufügen von Elementen.
 
 >[!NOTE]
 >
->Wenn Sie neue Namespaces hinzufügen, müssen diese in Ihrem Repository/CRX registriert sein. Andernfalls tritt beim Übermitteln des Metadatenformulars ein Fehler auf.
+>Wenn Sie neue Namespaces hinzufügen, müssen diese in Ihrem Repository/CRX registriert sein. Andernfalls führt das Senden des Metadatenformulars zu einem Fehler.

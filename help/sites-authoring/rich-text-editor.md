@@ -10,20 +10,24 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
 exl-id: 26d912e1-d8ee-44fc-8c82-ccc66551ddc1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 36%
+source-wordcount: '325'
+ht-degree: 21%
 
 ---
 
 # Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#using-the-rich-text-editor-to-author-content}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Textbearbeitung in AEM Seiten. Viele Komponenten wie Text, Text und Bild sowie Tabelle basieren auf dem RTE.
 
 >[!NOTE]
 >
->Das Kopieren verschachtelter Listen in den RTE funktioniert nicht wie erwartet. Beim Kopieren verschachtelter Listen aus Microsoft Word müssen Sie die Listen nach dem Einfügen von Text im RTE manuell bereinigen.
+>Das Kopieren verschachtelter Listen in den RTE funktioniert nicht erwartungsgemäß. Beim Kopieren verschachtelter Listen aus Microsoft Word müssen Sie die Listen manuell bereinigen, nachdem Sie den Text in den RTE eingefügt haben.
 
 ## Bearbeitung im Kontext {#in-place-editing}
 
@@ -31,7 +35,7 @@ Wenn Sie eine textbasierte Komponente mit einem einzigen Tippen oder Klicken aus
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Durch erneutes Tippen/Klicken oder erstmaliges Auswählen der Komponente mit langsamem Doppeltippen/Klicken wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und die Formatierung ändern.
+Durch erneutes Tippen/Klicken oder erstmaliges Auswählen der Komponente mit langsamem Doppeltippen/Klicken wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und grundlegende Formatierungsänderungen vornehmen.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

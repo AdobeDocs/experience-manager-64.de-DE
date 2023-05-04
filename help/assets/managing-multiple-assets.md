@@ -5,25 +5,29 @@ contentOwner: AG
 feature: Asset Management,Metadata,Collections
 role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 77%
+source-wordcount: '469'
+ht-degree: 56%
 
 ---
 
 # Verwalten mehrerer Assets und Sammlungen {#managing-multiple-assets-and-collections}
 
-Erfahren Sie, wie Sie die Metadaten mehrerer Assets und Sammlungen simultan bearbeiten können, um schnell häufige Metadaten-Änderungen zu übertragen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Erfahren Sie, wie Sie die Metadaten mehrerer Assets und Sammlungen gleichzeitig bearbeiten, um allgemeine Metadatenänderungen schnell zu übertragen.
 
 Mit Adobe Enterprise Manager Assets können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, damit Sie häufig vorkommende Metadatenänderungen schnell und stapelweise an Assets übertragen können. Sie können die Metadaten für mehrere Sammlungen zusammen bearbeiten.
 
-Verwenden Sie die Seite „Eigenschaften“, um Metadatenänderungen für mehrere Assets oder Sammlungen durchzuführen:
+Verwenden Sie die Eigenschaftenseite, um Metadatenänderungen an mehreren Assets oder Sammlungen durchzuführen:
 
-* Metadateneigenschaften in einen gemeinsamen Wert ändern
+* Ändern von Metadateneigenschaften in einen gemeinsamen Wert
 * Tags hinzufügen oder ändern
 
-Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften, den Schemaeditor.
+Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften, den Schema-Editor.
 
 >[!NOTE]
 >
@@ -31,7 +35,7 @@ Verwenden Sie zum Anpassen der Seite mit den Metadateneigenschaften, einschließ
 
 ## Bearbeiten von Metadateneigenschaften für mehrere Assets {#editing-metadata-properties-of-multiple-assets}
 
-1. Navigieren Sie auf der Assets-Benutzeroberfläche zum Speicherort der Assets, die Sie bearbeiten möchten.
+1. Navigieren Sie in der Assets-Benutzeroberfläche zum Speicherort der Assets, die Sie bearbeiten möchten.
 1. Wählen Sie die Assets aus, für die Sie gemeinsame Eigenschaften bearbeiten möchten.
 1. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Eigenschaften]**, um für die ausgewählten Assets die Seite „Eigenschaften“ zu öffnen.
 1. Ändern Sie die Metadateneigenschaften für ausgewählte Assets auf den verschiedenen Registerkarten.

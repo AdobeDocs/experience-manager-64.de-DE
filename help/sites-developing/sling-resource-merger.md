@@ -10,20 +10,24 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 4ddbdba8-073b-42ed-b4c9-d97d20b4739b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 100%
+source-wordcount: '1290'
+ht-degree: 91%
 
 ---
 
 # Verwenden des Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Zweck {#purpose}
 
 Der Sling Resource Merger bietet Dienste für den Zugriff auf und das Zusammenführen von Ressourcen. Er stellt Differenzierungsmechanismen bereit für:
 
-* **[Überlagerungen](/help/sites-developing/overlays.md)** von Ressourcen unter Verwendung der [konfigurierten Suchpfade](/help/sites-developing/overlays.md#configuring-the-search-paths).
+* **[Überlagerungen](/help/sites-developing/overlays.md)** der Ressourcen, die [konfigurierte Suchpfade](/help/sites-developing/overlays.md#configuring-the-search-paths).
 
 * **Überschreibungen** von Komponentendialogfeldern für die Touch-optimierte Benutzeroberfläche (`cq:dialog`) unter Verwendung der Ressourcentyphierarchie (anhand der Eigenschaft `sling:resourceSuperType`).
 
@@ -35,9 +39,9 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 
 >[!CAUTION]
 >
->Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige, Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähigen Dialogfeld einer Komponente geeignet.
+>Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Dies bedeutet auch, dass sie nur für die standardmäßige, Touch-optimierte Benutzeroberfläche geeignet ist. Insbesondere auf diese Weise definierte Überschreibungen gelten nur für das Touch-optimierte Dialogfeld einer Komponente.
 >
->Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-fähigen Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original dahin, wo die Anpassung definiert wird.
+>Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-optimierten Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original in den Bereich, in dem die Anpassung definiert wird.
 
 ### Ziele für AEM {#goals-for-aem}
 
@@ -65,6 +69,7 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+
 >
 
 
@@ -258,9 +263,9 @@ Der Sling Resource Merger umfasst zwei benutzerdefinierte Ressourcenanbieter �
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`
 
-### Anwendungsbeispiele {#example-of-usage}
+### Anwendungsbeispiel {#example-of-usage}
 
-Einige Beispiele sind enthalten:
+Einige Beispiele werden behandelt:
 
 * Überlagerung:
 

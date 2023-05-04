@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 64%
+source-wordcount: '846'
+ht-degree: 62%
 
 ---
 
 # XMP-Metadaten {#xmp-metadata}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 XMP (Extensible Metadata Platform) ist der Metadatenstandard, der von [!DNL Experience Manager] Assets für die gesamte Metadatenverwaltung. XMP liefert ein Standardformat für die Erstellung, die Verarbeitung und den Austausch von Metadaten für eine Vielzahl an Programmen.
 

@@ -3,14 +3,18 @@ title: Verwenden der intelligenten Bildbearbeitung mit Client-seitigem Gerätepi
 description: Erfahren Sie, wie Sie das Client-seitige Gerätepixelverhältnis mit der intelligenten Bildbearbeitung in Adobe Experience Manager as a Cloud Service mit Dynamic Media verwenden.
 role: Admin,User
 exl-id: 3c19a02f-9d97-4ed4-92ea-0b5861267219
-source-git-commit: 176e974bf99d9f70a5c1d075ee83eea9e9173221
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 100%
+source-wordcount: '359'
+ht-degree: 92%
 
 ---
 
 # Informationen zur intelligenten Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis (Device Pixel Ratio, DPR). {#client-side-dpr}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die aktuelle Lösung für die intelligente Bildbearbeitung verwendet Benutzeragenten-Zeichenfolgen, um den verwendeten Gerätetyp (Desktop, Tablet, Mobilgerät usw.) zu bestimmen.
 

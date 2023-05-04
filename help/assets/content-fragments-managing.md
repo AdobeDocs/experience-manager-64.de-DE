@@ -12,14 +12,18 @@ discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 97%
+source-wordcount: '1528'
+ht-degree: 66%
 
 ---
 
 # Verwalten von Inhaltsfragmenten {#managing-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!CAUTION]
 >
@@ -29,7 +33,7 @@ Inhaltsfragmente werden als **[!UICONTROL Assets]** gespeichert und daher haupts
 
 >[!NOTE]
 >
->Inhaltsfragmente werden dann für erstellte Seiten verwendet. Weitere Informationen finden Sie unter [Seitenerstellung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
+>Inhaltsfragmente werden dann mit Authoring-Seiten verwendet; see [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
 
 ## Erstellen von Inhaltsfragmenten {#creating-content-fragments}
 
@@ -39,11 +43,11 @@ Inhaltsfragmente werden als **[!UICONTROL Assets]** gespeichert und daher haupts
 
 >[!NOTE]
 >
->Weitere Informationen zu für einfache Inhaltsfragmente verwendeten Vorlagen finden Sie unter [Entwickeln von Inhaltsfragmenten](/help/sites-developing/customizing-content-fragments.md).
+>Siehe [Entwickeln von Inhaltsfragmenten](/help/sites-developing/customizing-content-fragments.md) für weitere Informationen über Vorlagen; wird für einfache Inhaltsfragmente verwendet.
 
 ### Erstellen eines Inhaltsfragments {#creating-a-content-fragment}
 
-Die Methode zum Erstellen eines Inhaltsmodells ist (im Grunde genommen) bei einfachen und strukturierten Fragmenten gleich:
+Die Methode zum Erstellen eines Inhaltsfragments ist (im Grunde) für einfache und strukturierte Fragmente identisch:
 
 1. Navigieren Sie zum Ordner **[!UICONTROL Assets]**, in dem Sie das Fragment erstellen möchten.
 1. Wählen Sie **[!UICONTROL Erstellen]** und danach **[!UICONTROL Inhaltsfragment]** aus, um den Assistenten zu öffnen.
@@ -52,8 +56,8 @@ Die Methode zum Erstellen eines Inhaltsmodells ist (im Grunde genommen) bei einf
    * Dabei kann es sich um Folgendes handeln:
 
       * [](/help/sites-developing/content-fragment-templates.md)Vorlage – beispielsweise **[!UICONTROL Einfaches Fragment]**
-      * [Modell](content-fragments-models.md) – wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; beispielsweise das **Flughafen**-Modell
-   * Es werden alle verfügbaren Vorlagen und Modelle angezeigt.
+      * [Modell](content-fragments-models.md) - wird verwendet, um ein Fragment zu erstellen, für das strukturierte Inhalte erforderlich sind; z. B. die **Flughafen** model
+   * Alle verfügbaren Vorlagen und Modelle werden angezeigt.
 
    Wählen Sie **[!UICONTROL Weiter]** aus, wenn Sie Ihre Auswahl getroffen haben.
 
@@ -84,10 +88,10 @@ Die Methode zum Erstellen eines Inhaltsmodells ist (im Grunde genommen) bei einf
 
 ## Aktionen für ein Inhaltsfragment {#actions-for-a-content-fragment}
 
-In der **[!UICONTROL Assets-Konsole]** können Sie eine Reihe von Aktionen für Ihre Inhaltsfragmente vornehmen, die Sie wie folgt erreichen:
+Im **[!UICONTROL Assets]** Konsole Eine Reihe von Aktionen steht für Ihre Inhaltsfragmente zur Verfügung, entweder:
 
-* Über die Symbolleiste – nachdem Sie das Fragment ausgewählt haben, sind alle geeigneten Aktionen verfügbar.
-* Als [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions) – ein Teil der Aktionen, die für die individuellen Fragmentkarten verfügbar sind.
+* in der Symbolleiste; nach Auswahl des Fragments sind alle entsprechenden Aktionen verfügbar.
+* As [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions); eine Teilmenge von Aktionen, die für die einzelnen Fragmentkarten verfügbar sind.
 
 ![cfm-6420-17](assets/cfm-6420-17.png)
 
@@ -101,7 +105,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 * **[!UICONTROL Checkout]**
 * **[!UICONTROL Eigenschaften]**
 
-   * Ermöglicht das Anzeigen bzw. Bearbeiten der Metadaten des Fragments.
+   * Ermöglicht die Anzeige und/oder Bearbeitung der Metadaten des Fragments.
 
 * **[!UICONTROL Bearbeiten]**
 
@@ -111,7 +115,7 @@ Wählen Sie das Fragment aus, um die Symbolleiste mit entsprechenden Aktionen an
 * **[!UICONTROL Zu Sammlung]**
 
    * Fügen Sie das Fragment einer Sammlung hinzu.
-   * Dies können Sie auch erreichen, wenn Sie [eine Sammlung mit dem Fragment verknüpfen](content-fragments-assoc-content.md#adding-associated-content).
+   * Dies ist auch möglich, wenn [Zuordnen einer Sammlung zum Fragment](content-fragments-assoc-content.md#adding-associated-content).
 
 * **[!UICONTROL Kopieren/Einfügen]**
 * **[!UICONTROL Verschieben]**
@@ -129,9 +133,9 @@ So öffnen Sie ein Fragment zur Bearbeitung:
 
 >[!CAUTION]
 >
->Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+>Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
 
-1. Navigieren Sie in der Konsole **[!UICONTROL Assets]** zum Speicherort des gewünschten Inhaltsfragments.
+1. Verwenden Sie die **[!UICONTROL Assets]** -Konsole, um zum Speicherort des Inhaltsfragments zu navigieren.
 1. Öffnen Sie das Fragment zur Bearbeitung. Befolgen Sie dazu einen der folgenden Schritte:
 
    * Klicken/tippen Sie auf das Fragment oder den Fragment-Link (abhängig von der Konsolenansicht).
@@ -148,7 +152,7 @@ So öffnen Sie ein Fragment zur Bearbeitung:
    >2. Das seitliche Bedienfeld kann über das Symbol **[!UICONTROL Seitliches Bedienfeld ein/aus]** ein- oder ausgeblendet werden.
 
 
-1. Navigieren Sie mit den Symbolen im seitlichen Bedienfeld durch die drei Modi:
+1. Navigieren Sie mithilfe der Symbole im Seitenbereich durch die drei Modi:
 
    * Varianten: [Bearbeiten des Inhalts](#editing-the-content-of-your-fragment) und [Verwalten Ihrer Varianten](#creating-and-managing-variations-within-your-fragment)
    * [Anmerkungen](content-fragments-variations.md#annotating-a-content-fragment)
@@ -177,7 +181,7 @@ Der Editor bietet zwei Optionen:
 
    >[!CAUTION]
    >
-   >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+   >Um ein Inhaltsfragment zu bearbeiten, benötigen Sie [die entsprechenden Berechtigungen](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Wenden Sie sich an Ihren Systemadministrator, wenn Probleme auftreten.
 
    >[!NOTE]
    >
@@ -198,8 +202,8 @@ Beim Bearbeiten Ihres Inhaltsfragments erstellt AEM automatisch Versionen, damit
 
 1. Wenn ein Inhaltsfragment zur Bearbeitung geöffnet ist, überprüft AEM, ob ein Cookie-basiertes Token vorliegt, das angibt, ob eine *Bearbeitungssitzung* vorhanden ist:
 
-   1. Wird das entsprechende Token gefunden, gilt das Fragment als Teil der vorhandenen Bearbeitungssitzung.
-   1. Wenn das Token *nicht* verfügbar ist und der Benutzer mit dem Bearbeiten von Inhalt beginnt, wird eine Version erstellt, und ein Token für diese neue Bearbeitungssitzung wird an den Client gesendet, wo er in einem Cookie gespeichert wird.
+   1. Wenn das Token gefunden wird, wird das Fragment als Teil der vorhandenen Bearbeitungssitzung betrachtet.
+   1. Wenn das Token *not* verfügbar sind und der Benutzer mit der Bearbeitung von Inhalten beginnt, wird eine Version erstellt und ein Token für diese neue Bearbeitungssitzung wird an den Client gesendet, wo es in einem Cookie gespeichert wird.
 
 1. Während einer *aktiven* Bearbeitungssitzung wird der bearbeitete Inhalt automatisch alle 600 Sekunden gespeichert (Standardeinstellung).
 
@@ -224,7 +228,7 @@ Sobald Sie den primären Inhalt erstellt haben, können Sie [Varianten](content-
 
 ## Verknüpfen von Inhalt mit Ihrem Fragment {#associating-content-with-your-fragment}
 
-Sie können auch Inhalt mit einem Fragment [verknüpfen](content-fragments-assoc-content.md). So entsteht eine Verbindung, mit der Assets (d. h. Bilder) für ein Fragment verwendet werden können (falls gewünscht), wenn sie zu einer Inhaltsseite hinzugefügt werden.
+Sie können auch [Inhalt verknüpfen](content-fragments-assoc-content.md) mit einem Fragment. Dadurch wird eine Verbindung bereitgestellt, sodass Assets (d. h. Bilder) (optional) mit dem Fragment verwendet werden können, wenn es zu einer Inhaltsseite hinzugefügt wird.
 
 ## Anzeigen und Bearbeiten von Metadaten (Eigenschaften) des Fragments {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -252,12 +256,12 @@ Neben den Standardoptionen enthält die [Zeitleiste](managing-assets-touch-ui.md
 >
 >* Standardfunktionen für alle Assets
 >* In der Zeitleiste erstellt worden
->* Mit dem Fragment-Asset verbunden
+>* Im Zusammenhang mit dem Fragment-Asset
 >
 >Anmerkungen (für Inhaltsfragmente) sind:
 >
 >* Im Fragmenteditor eingegeben worden
->* Spezifisch für ein ausgewähltes Textsegment innerhalb des Fragments
+>* Spezifisch für ein ausgewähltes Textsegment im Fragment
 
 
 Beispiel:
@@ -268,33 +272,33 @@ Beispiel:
 
 Die Aktion **[!UICONTROL Mit aktueller Version vergleichen]** ist in der [[!UICONTROL Zeitleiste] verfügbar, sobald Sie eine bestimmte Version ausgewählt haben.](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)
 
-Folgendes wird geöffnet:
+Dadurch wird Folgendes geöffnet:
 
 * die **[!UICONTROL aktuelle]** (neueste) Version (links)
 
 * die ausgewählte Version **v&lt;*x.y*>** (rechts)
 
-Sie werden nebeneinander angezeigt:
+Sie werden nebeneinander angezeigt, wobei:
 
-* Unterschiede werden hervorgehoben
+* Alle Unterschiede werden hervorgehoben
 
-   * Gelöschter Text: Rot
+   * Gelöschter Text - rot
    * Eingefügter Text: Grün
-   * Ersetzter Text: Blau
+   * Ersetzter Text - blau
 
-* Über das Vollbildsymbol können Sie jede Version separat öffnen. Wechseln Sie dann wieder zur parallelen Ansicht.
-* Sie können die jeweilige Version **[!UICONTROL wiederherstellen]**.
-* Über **[!UICONTROL Fertig]** kehren Sie zur Konsole zurück.
+* Über das Symbol für den Vollbildmodus können Sie jede Version einzeln öffnen. dann zurück zur parallelen Ansicht
+* Sie können **[!UICONTROL Wiederherstellen]** auf die jeweilige Version
+* **[!UICONTROL Fertig]** kehren Sie zur Konsole zurück.
 
 >[!NOTE]
 >
->Sie können den Fragmentinhalt nicht bearbeiten, während Sie Fragmente vergleichen.
+>Sie können den Fragmentinhalt beim Vergleichen von Fragmenten nicht bearbeiten.
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
 ## Wiederherstellen einer früheren Version  {#reverting-to-a-version}
 
-Sie können eine frühere Version wiederherstellen.
+Sie können zu einer bestimmten Version Ihres Fragments zurückkehren:
 
 * Direkt über die [[!UICONTROL Zeitleiste]](content-fragments-managing.md#timeline-for-content-fragments).
 
@@ -306,13 +310,13 @@ Sie können eine frühere Version wiederherstellen.
 
 >[!CAUTION]
 >
->Wenn das Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass das [Modell veröffentlicht wurde](content-fragments-models.md#publishing-a-content-fragment-model).
+>Wenn Ihr Fragment auf einem Modell basiert, sollten Sie sicherstellen, dass die Variable [-Modell wurde veröffentlicht](content-fragments-models.md#publishing-a-content-fragment-model).
 >
 >Wenn Sie Inhaltsfragmente veröffentlichen, deren Modell noch nicht veröffentlicht wurde, wird dies in der Auswahlliste angezeigt und das Modell wird mit dem Fragment veröffentlicht.
 
-Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung genutzt werden zu können. Sie können folgendermaßen veröffentlicht werden:
+Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumgebung verwendet werden zu können. Sie können folgendermaßen veröffentlicht werden:
 
-* Nach der Erstellung in der Konsole **[!UICONTROL Assets]**.
+* Nach Erstellung; von **[!UICONTROL Assets]** Konsole.
 * Wenn Sie [eine Seite veröffentlichen, in der das Fragment verwendet wird](/help/sites-authoring/content-fragments.md#publishing), wird das Fragment in den Seitenverweisen aufgeführt.
 
 >[!CAUTION]
@@ -323,12 +327,12 @@ Inhaltsfragmente müssen veröffentlicht werden, um in der Veröffentlichungsumg
 
 So löschen Sie ein Fragment:
 
-1. Navigieren Sie in der Konsole **[!UICONTROL Assets]** zum Speicherort des Inhaltsfragments.
+1. Im **[!UICONTROL Assets]** -Konsole zum Speicherort des Inhaltsfragments navigieren.
 1. Wählen Sie das Fragment aus.
 
    >[!NOTE]
    >
-   >Die Aktion **[!UICONTROL Löschen]** ist nicht als Schnellzugriff verfügbar.
+   >Die **[!UICONTROL Löschen]** ist nicht als Schnellaktion verfügbar.
 
 1. Wählen Sie **[!UICONTROL Löschen]** in der Symbolleiste aus.
 1. Bestätigen Sie die **[!UICONTROL Löschaktion]**.

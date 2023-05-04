@@ -1,7 +1,7 @@
 ---
-title: Überprüfen eines DDX-Dokuments mithilfe der Webdienst-API
+title: Überprüfen eines DDX-Dokuments mithilfe der Web-Service-API
 seo-title: Validate a DDX document using theweb service API
-description: Verwenden Sie die Assembler-Dienst-API zum Überprüfen eines DDX-Dokuments.
+description: Verwenden Sie die Assembler-Service-API zum Überprüfen eines DDX-Dokuments.
 seo-description: Use the Assembler Service API to validate a DDX document.
 uuid: f6125746-6138-4e46-a1c4-fb24fd7399c5
 contentOwner: admin
@@ -11,18 +11,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 role: Developer
 exl-id: da303186-8f36-4fc8-a2db-b38a0b200c39
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 2%
+source-wordcount: '662'
+ht-degree: 95%
 
 ---
 
-# Validieren eines DDX-Dokuments mithilfe der Webdienst-API {#validate-a-ddx-document-using-theweb-service-api}
+# Validieren eines DDX-Dokuments mithilfe der Webservice-API {#validate-a-ddx-document-using-theweb-service-api}
 
-Validieren Sie ein DDX-Dokument mithilfe der Assembler-Dienst-API (Webdienst):
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-1. Projektdateien einschließen.
+So validieren Sie ein DDX-Dokument mithilfe der Assembler Service-API (Webservice):
+
+1. Schließen Sie Projektdateien ein.
 
    Erstellen Sie ein Microsoft .NET-Projekt, das MTOM verwendet. Stellen Sie sicher, dass Sie die folgende WSDL-Definition verwenden: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
@@ -32,52 +36,52 @@ Validieren Sie ein DDX-Dokument mithilfe der Assembler-Dienst-API (Webdienst):
 
 1. Erstellen Sie einen PDF Assembler-Client.
 
-   * Erstellen Sie eine `AssemblerServiceClient` -Objekt mithilfe des Standardkonstruktors.
-   * Erstellen Sie eine `AssemblerServiceClient.Endpoint.Address` -Objekt mithilfe der `System.ServiceModel.EndpointAddress` -Konstruktor. Übergeben Sie einen string -Wert, der die WSDL an den AEM Forms-Dienst angibt (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen die `lc_version` -Attribut. Dieses Attribut wird verwendet, wenn Sie eine Dienstreferenz erstellen.
-   * Erstellen Sie eine `System.ServiceModel.BasicHttpBinding` -Objekt durch Abrufen des Werts der `AssemblerServiceClient.Endpoint.Binding` -Feld. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
-   * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Aufgaben ausführen:
+   * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
+   * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` -Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
+   * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
+   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
-      * Weisen Sie dem Feld den Benutzernamen AEM Formulare zu `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Weisen Sie dem Feld den entsprechenden Kennwortwert zu `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Konstantenwert zuweisen `HttpClientCredentialType.Basic` zum Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Konstantenwert zuweisen `BasicHttpSecurityMode.TransportCredentialOnly` zum Feld `BasicHttpBindingSecurity.Security.Mode`.
+      * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
+      * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
+      * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Referenzieren Sie ein vorhandenes DDX-Dokument.
 
-   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Die `BLOB` -Objekt wird zum Speichern des DDX-Dokuments verwendet.
-   * Erstellen Sie eine `System.IO.FileStream` -Objekt, indem Sie seinen Konstruktor aufrufen und einen string -Wert übergeben, der den Dateispeicherort des DDX-Dokuments und den Modus zum Öffnen der Datei darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream` -Objekt. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
-   * Füllen Sie die `BLOB` Objekt durch Zuweisen seiner `MTOM` -Eigenschaft mit dem Inhalt des Byte-Arrays.
+   * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
+   * Erstellen Sie ein Objekt `System.IO.FileStream`, indem Sie den Konstruktor aufrufen und einen String-Wert übergeben, der den Dateispeicherort des DDX-Dokuments und den Modus, in dem die Datei geöffnet werden soll, repräsentiert.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
+   * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Legen Sie Laufzeitoptionen fest, um das DDX-Dokument zu validieren.
 
-   * Erstellen Sie eine `AssemblerOptionSpec` -Objekt, das Laufzeitoptionen mithilfe seines Konstruktors speichert.
-   * Legen Sie die Laufzeitoption fest, die den Assembler-Dienst anweist, das DDX-Dokument zu validieren, indem der Wert true dem Wert `AssemblerOptionSpec` -Objekt `validateOnly` Datenelement.
-   * Legen Sie die Menge an Informationen fest, die der Assembler-Dienst in die Protokolldatei schreibt, indem Sie dem `AssemblerOptionSpec` -Objekt `logLevel` Datenelement. -Methode Beim Validieren eines DDX-Dokuments möchten Sie weitere Informationen in die Protokolldatei schreiben, die den Validierungsprozess unterstützen. Daher können Sie den Wert `FINE` oder `FINER`. Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie unter `AssemblerOptionSpec` Klassenreferenz in [AEM Forms API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
+   * Legen Sie die Laufzeitoption fest, die den Assembler-Service anweist, das DDX-Dokument zu validieren, indem Sie dem Datenelement `validateOnly` des `AssemblerOptionSpec`-Objekts den Wert „true“ zuweisen.
+   * Legen Sie die Menge der Informationen fest, die der Assembler-Service in die Protokolldatei schreibt, indem Sie dem Datenelement `logLevel` des `AssemblerOptionSpec`-Objekts einen Zeichenfolgenwert zuweisen. Bei der Validierung eines DDX-Dokuments sollten mehr Informationen in die Protokolldatei geschrieben werden, um den Validierungsprozess zu unterstützen. Daher können Sie den Wert `FINE` oder `FINER` angeben. Weitere Informationen zu den Laufzeitoptionen, die Sie festlegen können, finden Sie in der `AssemblerOptionSpec`-Klassenreferenz in der [AEM Forms-API-Referenz](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Führen Sie die Überprüfung durch.
 
-   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeDDX` -Methode verwenden und die folgenden Werte übergeben:
+   Rufen Sie die Methode `invokeDDX` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
 
-   * A `BLOB` -Objekt, das das DDX-Dokument darstellt.
-   * Der Wert `null` für `Map` -Objekt, das normalerweise PDF-Dokumente speichert.
-   * Ein `AssemblerOptionSpec` -Objekt, das Laufzeitoptionen angibt.
+   * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt.
+   * Der Wert `null` für das `Map`-Objekt, das normalerweise PDF-Dokumente speichert.
+   * Ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen angibt.
 
-   Die `invokeDDX` -Methode gibt eine `AssemblerResult` -Objekt, das Informationen enthält, die angeben, ob das DDX-Dokument gültig ist.
+   Die `invokeDDX`-Methode gibt ein `AssemblerResult`-Objekt zurück, das Informationen enthält, die angeben, ob das DDX-Dokument gültig ist.
 
 1. Speichern Sie die Validierungsergebnisse in einer Protokolldatei.
 
-   * Erstellen Sie eine `System.IO.FileStream` -Objekt, indem Sie seinen Konstruktor aufrufen und einen string -Wert übergeben, der den Dateispeicherort der Protokolldatei und den Modus zum Öffnen der Datei darstellt. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
-   * Erstellen Sie eine `BLOB` -Objekt, das Protokollinformationen speichert, indem der Wert des `AssemblerResult` -Objekt `jobLog` Datenelement.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `BLOB` -Objekt. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` -Feld.
-   * Erstellen Sie eine `System.IO.BinaryWriter` -Objekt durch Aufrufen des Konstruktors und Übergeben des `System.IO.FileStream` -Objekt.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
+   * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und ihm einen Zeichenfolgenwert übergeben, der den Dateispeicherort der Protokolldatei und den Modus zum Öffnen der Datei darstellt. Stellen Sie sicher, dass die Dateinamenerweiterung .xml lautet.
+   * Erstellen Sie ein `BLOB`-Objekt, das Protokollinformationen speichert, indem Sie den Wert des `jobLog`-Datenelements des `AssemblerResult`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, in dem der Inhalt des `BLOB`-Objekts gespeichert wird. Füllen Sie das Byte-Array, indem Sie den Wert aus dem `MTOM`-Feld des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor verwenden und das `System.IO.FileStream`-Objekt übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `Write`-Methode des `System.IO.BinaryWriter`-Objekts aufrufen und ihr das Byte-Array übergeben.
 
    >[!NOTE]
    >
-   >Wenn das DDX-Dokument ungültig ist, wird ein `OperationException` geworfen wird. Innerhalb der catch-Anweisung können Sie den Wert der `OperationException` -Objekt `jobLog` Mitglied.
+   >Wenn das DDX-Dokument ungültig ist, wird eine `OperationException` ausgelöst. Innerhalb der catch-Anweisung können Sie den Wert des `jobLog`-Elements des `OperationException`-Objekts abrufen.
 
 **Siehe auch**
 

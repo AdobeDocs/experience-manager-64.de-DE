@@ -1,7 +1,7 @@
 ---
 title: Verwalten von Tags
 seo-title: Administering Tags
-description: Erfahren Sie, wie Sie in AEM Tags verwalten.
+description: Erfahren Sie, wie Sie Tags in AEM verwalten.
 seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
@@ -10,16 +10,20 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 91%
+source-wordcount: '1791'
+ht-degree: 63%
 
 ---
 
 # Verwalten von Tags{#administering-tags}
 
-Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Sie können Sie sich als Stichwörter oder Bezeichnungen (Metadaten) vorstellen, mit denen sich Inhalte schneller finden lassen als über die normale Suche.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Sie können als Keywords oder Beschriftungen (Metadaten) betrachtet werden, mit denen Inhalte schneller als durch eine Suche gefunden werden können.
 
 Bei Adobe Experience Manager (AEM) kann ein Tag die Eigenschaft sein von:
 
@@ -31,44 +35,44 @@ Neben Seiten und Assets werden Tags für AEM Communities-Funktionen genutzt.
 
 * benutzergenerierte Inhalte (siehe [Taggen von benutzergenerierten Inhalten)](/help/communities/tag-ugc.md)
 
-* Aktivierungsressourcen (siehe [Tagging von Aktivierungsressourcen)](/help/communities/functions.md#catalog-function)
+* Aktivierungsressourcen (siehe [Tagging von Aktivierungsressourcen](/help/communities/functions.md#catalog-function))
 
 ## Tag-Funktionen {#tag-features}
 
 Zu den Funktionen von Tags in AEM gehören u. a. folgende :
 
-* Tags können in verschiedene Namespaces gruppiert werden. Derartige Hierarchien ermöglichen das Aufstellen von Klassifikationsschemen. Diese Klassifikationsschemen werden global in AEM verwendet.
-* Die wesentliche Einschränkung für neu erstellte Tags besteht darin, dass sie in einem bestimmten Namespace eindeutig sein müssen.
-* Der Titel eines Tags sollte keine Trennzeichen des Tag-Pfads enthalten (falls doch vorhanden, werden sie nicht angezeigt).
+* Tags können in verschiedene Namespaces gruppiert werden. Solche Hierarchien ermöglichen die Erstellung von Taxonomien. Diese Taxonomien sind AEM global.
+* Die Haupteinschränkung für neu erstellte Tags besteht darin, dass sie innerhalb eines bestimmten Namespace eindeutig sein müssen.
+* Der Titel eines Tags sollte keine Trennzeichen für den Tag-Pfad enthalten (und wird auch nicht angezeigt, wenn vorhanden)
 
-   * Doppelpunkt (:) – Trennzeichen bei Namespace-Tags
-   * Schrägstrich (/) – Trennzeichen bei untergeordneten Tags
+   * Doppelpunkt (:) - Trennt das Namespace-Tag
+   * Schrägstrich (/) - Trennzeichen für Unter-Tags
 
-* Tags können von Autoren und Website-Besuchern angewendet werden. Unabhängig davon, wer die Tags erstellt hat, stehen alle Arten von Tags zur Verfügung, um sie einer Seite hinzuzufügen oder wenn man die Tags durchsucht.
+* Tags können von Autoren und Website-Besuchern angewendet werden. Unabhängig vom Ersteller werden alle Arten von Tags zur Auswahl bereitgestellt, sowohl bei der Zuweisung zu einer Seite als auch bei der Suche.
 * Mitglieder der Benutzergruppe „Tag-Administratoren“ und Mitglieder, die Bearbeitungsrechte für `/content/cq:tags` haben, können Tags erstellen und ihre Klassifikationsschemata ändern.
 
-   * Ein Tag, das untergeordnete Tags enthält, bezeichnet man als Container-Tag.
-   * Ein Tag, das kein Container-Tag ist, wird Leaf-Tag genannt.
-   * Ein Tag-Namespace ist entweder ein Leaf-Tag oder ein Container-Tag.
+   * Ein Tag, das untergeordnete Tags enthält, wird als Container-Tag bezeichnet
+   * Ein Tag, das kein Container-Tag ist, wird als Leaf-Tag bezeichnet
+   * Ein Tag-Namespace ist entweder ein Leaf-Tag oder ein Container-Tag
 
 * Tags werden von der [Such-Komponente](https://helpx.adobe.com/de/experience-manager/core-components/using/quick-search.html) genutzt, um das Suchen von Inhalten zu vereinfachen.
 * Tags werden von der [Teaser-Komponente](https://helpx.adobe.com/de/experience-manager/core-components/using/teaser.html) verwendet, bei der die Tag-Cloud eines Benutzers überwacht wird, um gezielte Inhalte bereitzustellen.
-* Wenn Tagging bei Ihren Inhalten wichtig ist:
+* Wenn Tagging ein wichtiger Aspekt Ihres Inhalts ist
 
-   * Stellen Sie sicher, dass Tags in den Paketen enthalten sind, die sie verwenden.
-   * Stellen Sie sicher, dass die [Tag-Berechtigungen](#setting-tag-permissions) Lesezugriff gewähren.
+   * Stellen Sie sicher, dass Sie Tags mit den Seiten verpacken, die sie verwenden
+   * Stellen Sie sicher, dass [Tag-Berechtigungen](#setting-tag-permissions) Lesezugriff aktivieren
 
 ## Tagging-Konsole {#tagging-console}
 
-Über die Tagging-Konsole können Sie Tags und ihre Klassifikationsschemen erstellen und verwalten. Ein Ziel besteht darin, zu vermeiden, dass viele ähnliche Tags sich auf dieselbe Sache beziehen, z. B. Seite und Seiten oder Fußbekleidung und Schuhe.
+Die Tagging-Konsole wird zum Erstellen und Verwalten von Tags und deren Taxonomien verwendet. Ein Ziel besteht darin, zu vermeiden, dass viele ähnliche Tags sich auf dieselbe Sache beziehen, z. B. Seite und Seiten oder Fußbekleidung und Schuhe.
 
-Um Tags zu verwalten, teilen Sie sie in Namespaces ein, prüfen Sie vor der Erstellung neuer Tags die Nutzung vorhandener und organisieren Sie die Tags neu, ohne sie von den Inhalten zu lösen, mit denen sie aktuell verknüpft sind.
+Tags werden verwaltet, indem sie in Namespaces gruppiert, die Verwendung vorhandener Tags vor der Erstellung neuer Tags überprüft und neu organisiert werden, ohne die Verbindung zwischen dem Tag und dem aktuell referenzierten Inhalt zu trennen.
 
 So greifen Sie auf die Tagging-Konsole zu:
 
-* In der Autoreninstanz:
-* Melden Sie sich mit Administratorrechten an.
-* Über die globale Navigation:
+* in der Autoreninstanz
+* Anmelden mit Administratorrechten
+* von der globalen Navigation
 
    * Wählen Sie **`Tools`** aus.
    * Wählen Sie **`General`** aus.
@@ -93,11 +97,11 @@ Der Namespace selbst ist ein Tag und muss keine untergeordneten Tags enthalten. 
 * **Beschreibung**
 *(optional) *Eine Beschreibung des Namespace.
 
-Wenn Sie die erforderlichen Informationen eingegeben haben:
+Nach Eingabe der erforderlichen Informationen
 
-* Wählen Sie **Erstellen** aus.
+* select **Erstellen**
 
-### Vorgänge bei Tags {#operations-on-tags}
+### Vorgänge für Tags {#operations-on-tags}
 
 Wenn Sie einen Namespace oder ein anderes Tag auswählen, werden die folgenden Vorgänge zur Verfügung gestellt :
 
@@ -119,7 +123,7 @@ Wenn das Browser-Fenster nicht groß genug ist, um alle Symbole anzuzeigen, werd
 
 ### Auswählen eines Namespace-Tags {#selecting-a-namespace-tag}
 
-Wenn ein Namespace keine Tags enthält, werden bei der ersten Auswahl die Eigenschaften rechts angezeigt, andernfalls die untergeordneten Tags. Jedes ausgewählte Tag zeigt entweder die enthaltenen Tags an oder seine Eigenschaften, wenn es über keine untergeordneten Tags verfügt.
+Wenn der Namespace zum ersten Mal keine Tags enthält, werden die Eigenschaften auf der rechten Seite angezeigt. Andernfalls werden die untergeordneten Tags angezeigt. Jedes ausgewählte Tag zeigt entweder die enthaltenen Tags an oder seine Eigenschaften, wenn es über keine untergeordneten Tags verfügt.
 
 Um ein oder mehrere Tags für die Vorgänge auszuwählen, wählen Sie nur das Symbol neben dem Titel aus. Wenn Sie den Titel auswählen, werden nur die Eigenschaften angezeigt. Wenn Sie das Tag öffnen, werden seine Inhalte angezeigt.
 
@@ -143,9 +147,9 @@ Zunächst wird die Anzahl der zugewiesenen Tags angezeigt.
 
 ![chlimage_1-191](assets/chlimage_1-191.png)
 
-Wenn Sie den Pfeil rechts neben der Zahl auswählen, werden die Verweisnamen aufgeführt.
+Durch Auswahl des Pfeils rechts neben der Zählung werden die Referenznamen aufgelistet.
 
-Der Pfad zum Verweis wird als Tooltip angezeigt, wenn Sie mit dem Mauszeiger über eine Referenz fahren.
+Der Pfad zum Verweis wird als QuickInfo angezeigt, wenn Sie den Mauszeiger über einen Verweis bewegen.
 
 ![chlimage_1-192](assets/chlimage_1-192.png)
 
@@ -166,9 +170,9 @@ Wenn Sie einen Namespace oder ein anderes Tag ausgewählt haben (indem Sie auf d
 * **Beschreibung**
 *(optional) *Eine Beschreibung des Tags.
 
-Wenn Sie die erforderlichen Informationen eingegeben haben:
+Nach Eingabe der erforderlichen Informationen
 
-* Wählen Sie **Erstellen** aus.
+* select **Erstellen**
 
 ### Bearbeiten von Tags {#editing-tags}
 
@@ -211,7 +215,7 @@ Zeigt zunächst den aktuellen
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-Das Zusammenführen von Tags kann sich anbieten, wenn im Klassifikationsschema Duplikate vorhanden sind. Wenn Tag A mit Tag B zusammengeführt wird, werden alle mit Tag A gekennzeichneten Seiten mit Tag B gekennzeichnet und Tag A steht den Autoren nicht mehr zur Verfügung.
+Das Zusammenführen von Tags kann sich anbieten, wenn im Klassifikationsschema Duplikate vorhanden sind. Wenn Tag A mit Tag B zusammengeführt wird, werden alle mit Tag A getaggten Seiten mit Tag B versehen und Tag A steht Autoren nicht mehr zur Verfügung.
 
 Wenn ein Namespace oder ein anderes Tag ausgewählt wird, wählen Sie **`Merge`Das Symbol **öffnet ein Bedienfeld, in dem der Pfad für die Zusammenführung ausgewählt werden kann.
 
@@ -228,7 +232,7 @@ Wählen Sie den Pfad des Tags aus, mit dem das erste Tag zusammengeführt werden
 >
 >Nach der Zusammenführung existiert der ursprünglich ausgewählte **Pfad* (virtuell) nicht mehr.
 >
->Wenn ein referenziertes Tag verschoben oder zusammengeführt wird, wird es nicht physisch gelöscht, sodass die Verweise beibehalten werden können.
+>Wenn ein referenziertes Tag verschoben oder zusammengeführt wird, wird es nicht physisch gelöscht, sodass Verweise beibehalten werden können.
 
 ### Veröffentlichen von Tags {#publishing-tags}
 
@@ -254,13 +258,13 @@ Wenn ein Namespace oder ein anderes Tag ausgewählt wird, wählen Sie **`Delete`
 
 Tag-Berechtigungen sind [standardmäßig sicher](/help/sites-administering/production-ready.md). Dies ist eine Best Practice für die Veröffentlichungsumgebung, bei der Schreibberechtigungen explizit für Tags zugelassen werden muss. Erreicht wird dies, indem nach dem Festlegen der Berechtigungen in der Autorenumgebung ein Paket vom Tag-Namespace erstellt und anschließend auf allen Veröffentlichungsinstanzen installiert wird.
 
-* Bei der Autoreninstanz:
+* auf Autoreninstanz
 
-   * Melden Sie sich mit Administratorrechten an.
-   * Greifen Sie auf die [Sicherheitskonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) zu,
+   * Anmelden mit Administratorrechten
+   * auf die [Sicherheitskonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
-      * z. B. unter http://localhost:4502/useradmin.
-   * Wählen Sie im linken Bedienfeld die Gruppe oder die Benutzer aus, für die die [Leseberechtigung](/help/sites-administering/security.md#permissions) gelten soll.
+      * Navigieren Sie beispielsweise zu http://localhost:4502/useradmin .
+   * Wählen Sie im linken Bereich die Gruppe (oder den Benutzer) aus, für die [Leseberechtigung](/help/sites-administering/security.md#permissions) zu gewähren
    * Suchen Sie im rechten Bedienfeld den **Pfad** für den Tag-Namespace,
 
       * Beispiel: `/content/cq:tags/mycommunity`
@@ -271,9 +275,9 @@ Tag-Berechtigungen sind [standardmäßig sicher](/help/sites-administering/produ
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
-* Stellen Sie sicher, dass alle Veröffentlichungsinstanzen dieselben Berechtigungen aufweisen.
+* sicherstellen, dass alle Veröffentlichungsinstanzen über dieselben Berechtigungen verfügen
 
-   * Erstellen Sie dazu beispielsweise [ein Paket](/help/sites-administering/package-manager.md#package-manager) des Namespace auf der Autoreninstanz.
+   * Ein Ansatz [Package erstellen](/help/sites-administering/package-manager.md#package-manager) Namespace auf der Autoreninstanz
 
       * Wählen Sie auf der Registerkarte `Advanced` für `AC Handling` die Option `Overwrite` aus.
    * Replizieren Sie das Paket.
@@ -291,9 +295,9 @@ Im folgenden Beispiel wird erklärt, wie Sie den `title` des Tags **Tiere** aus 
 
 Wählen Sie zunächst das Tag im Namespace **Stockfotografie** aus und klicken Sie auf das Symbol **`Edit`** (siehe Abschnitt [Bearbeiten von Tags](#editing-tags)).
 
-Im Bedienfeld „Tag bearbeiten“ können Sie die Sprachen auswählen, in die der Tag-Titel übersetzt werden soll.
+Im Bedienfeld Tag bearbeiten können Sie Sprachen auswählen, in die der Tag-Titel lokalisiert werden soll.
 
-Für jede ausgewählte Sprache wird ein Texteingabefeld angezeigt, in das Sie den übersetzten Titel eingeben können.
+Da jede Sprache ausgewählt ist, wird ein Textfeld angezeigt, in das der übersetzte Titel eingegeben werden kann.
 
 Nachdem alle Übersetzungen eingegeben wurden, wählen Sie **Speichern*, um den Bearbeitungsmodus zu beenden.
 

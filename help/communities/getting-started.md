@@ -1,5 +1,5 @@
 ---
-title: Einstieg in AEM Communities
+title: Erste Schritte mit AEM Communities
 seo-title: Getting Started with AEM Communities
 description: Ein Tutorial zu den ersten Schritten mit AEM Communities
 seo-description: A tutorial on getting started with AEM Communities
@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 4f4c73eb-281e-4dfb-9cb0-2341d5ee94ae
 exl-id: d065e737-dbda-4c78-a987-b1891c6c4ec6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 11%
+source-wordcount: '144'
+ht-degree: 6%
 
 ---
 
-# Einstieg in AEM Communities {#getting-started-with-aem-communities}
+# Erste Schritte mit AEM Communities {#getting-started-with-aem-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM Communities ermöglicht es Unternehmen, aus einer Bibliothek von Site-Vorlagen dedizierte Markenerlebnisse zu erstellen. Foren, Gruppen, Blogs, Dateifreigabe, Kalender, Aktivitäts-Feeds und erweiterte Benutzerprofile können in Ihre Website integriert werden, um Interaktionen zwischen Interessenten, Kunden und Unternehmen zu fördern.
 

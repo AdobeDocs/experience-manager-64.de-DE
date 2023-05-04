@@ -12,20 +12,24 @@ discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 exl-id: 07a4f315-a60e-456b-b02d-035b3f6ad9ad
 feature: Image Presets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 93%
+source-wordcount: '349'
+ht-degree: 74%
 
 ---
 
 # Anwenden von Dynamic Media-Bildvorgaben {#applying-image-presets}
 
-Anhand von Bildvorgaben kann Assets Bilder mit unterschiedlichen Größen, Formaten oder Bildeigenschaften dynamisch bereitstellen. Sie können eine Vorgabe auswählen, wenn Sie Bilder exportieren, sodass die Bilder entsprechend den Spezifikationen des Administrators umformatiert werden.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Anhand von Bildvorgaben kann Assets Bilder mit unterschiedlichen Größen, Formaten oder Bildeigenschaften dynamisch bereitstellen. Sie können beim Exportieren von Bildern eine Vorgabe auswählen, die auch Bilder entsprechend den Spezifikationen des Administrators umformatiert.
 
 Darüber hinaus können Sie eine responsive Bildvorgabe auswählen (nach der Auswahl durch die Schaltfläche **[!UICONTROL RESS]** gekennzeichnet).
 
-In diesem Abschnitt wird beschrieben, wie Sie Bildvorgaben verwenden. [Admins können Bildvorgaben erstellen und konfigurieren](managing-image-presets.md).
+In diesem Abschnitt wird die Verwendung von Bildvorgaben beschrieben. [Admins können Bildvorgaben erstellen und konfigurieren](managing-image-presets.md).
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwe
 
    >[!NOTE]
    >
-   >* Statische Ausgabeformate werden in der oberen Hälfte des Bereichs angezeigt. Dynamische Ausgabedarstellungen werden in der unteren Hälfte angezeigt. Bei dynamischen Ausgabedarstellungen (und nur bei diesen) können Sie das Bild mit der URL anzeigen. Die Schaltfläche **[!UICONTROL URL]** wird nur angezeigt, wenn Sie eine dynamische Ausgabedarstellung auswählen. Die Schaltfläche **[!UICONTROL RESS]** wird nur angezeigt, wenn Sie eine responsive Bildvorgabe auswählen.
+   >* Statische Ausgabeformate werden in der oberen Hälfte des Bereichs angezeigt. Dynamische Ausgabedarstellungen werden in der unteren Hälfte angezeigt. Bei dynamischen Ausgabedarstellungen (und nur bei diesen) können Sie das Bild mit der URL anzeigen. Die Schaltfläche **[!UICONTROL URL]** wird nur angezeigt, wenn Sie eine dynamische Ausgabedarstellung auswählen. Die **[!UICONTROL RESS]** nur angezeigt, wenn Sie eine responsive Bildvorgabe auswählen.
    >
    >* Das System zeigt mehrere Ausgabedarstellungen, wenn Sie **[!UICONTROL Ausgabedarstellungen]** in der Detailansicht eines Assets auswählen. Sie können die Anzahl der angezeigten Vorgaben erhöhen. Siehe [Erhöhung der Anzahl der angezeigten Bildvorgaben](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 

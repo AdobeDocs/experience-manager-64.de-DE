@@ -10,22 +10,26 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 exl-id: 99efe308-bf8a-41ad-8203-b57fce20820c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 97%
+source-wordcount: '1044'
+ht-degree: 59%
 
 ---
 
 # Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher {#adding-contexthub-to-pages-and-accessing-stores}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 
-Die ContextHub-JavaScript-API ermöglicht den Zugriff auf die von ContextHub verwalteten Kontextdaten. Diese Seite enthält einen kurzen Überblick über die wichtigsten Funktionen der API für den Zugriff auf Kontextdaten und deren Bearbeitung. Ausführlichere Informationen und Code-Beispiele finden Sie unter den Links zur API-Referenzdokumentation.
+Die ContextHub-JavaScript-API ermöglicht den Zugriff auf die von ContextHub verwalteten Kontextdaten. Auf dieser Seite werden die Hauptfunktionen der API für den Zugriff auf Kontextdaten und die Bearbeitung von Kontextdaten kurz beschrieben. Ausführlichere Informationen und Code-Beispiele finden Sie unter den Links zur API-Referenzdokumentation.
 
 ## Hinzufügen von ContextHub zu einer Seitenkomponente {#adding-contexthub-to-a-page-component}
 
-Schließen Sie die contexthub-Komponente in den Bereich `head` Ihrer Seite ein, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen. Der JSP-Code für Ihre Seitenkomponente sieht in etwa wie im folgenden Beispiel aus:
+Um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen, fügen Sie die ContextHub-Komponente in die `head` auf Ihrer Seite. Der JSP-Code für Ihre Seitenkomponente ähnelt dem folgenden Beispiel:
 
 ```xml
 <head>
@@ -33,34 +37,34 @@ Schließen Sie die contexthub-Komponente in den Bereich `head` Ihrer Seite ein, 
 </head>
 ```
 
-Beachten Sie, dass Sie auch konfigurieren müssen, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt werden soll. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui).
+Beachten Sie, dass Sie auch konfigurieren müssen, ob die ContextHub-Symbolleiste im Vorschaumodus angezeigt wird. Siehe [Ein- und Ausblenden der ContextHub-Benutzeroberfläche](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui).
 
 ## Informationen zu ContextHub-Speichern {#about-contexthub-stores}
 
-Verwenden Sie ContextHub-Speicher, um Kontextdaten beizubehalten. ContextHub bietet folgende Arten von Speichern, die die Grundlage für alle Speichertypen bilden:
+Verwenden Sie ContextHub-Stores, um Kontextdaten beizubehalten. ContextHub bietet die folgenden Storetypen, die die Grundlage aller Storetypen bilden:
 
 * [PersistedStore](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)
 * [SessionStore](/help/sites-developing/contexthub-api.md#contexthub-store-sessionstore)
 * [JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)
 
-Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core). Weitere Informationen zur Erstellung eines neuen Speichertyps finden Sie unter [Erstellen benutzerdefinierter Speicher](/help/sites-developing/ch-extend.md#creating-custom-store-candidates). Weitere Informationen zu Beispielspeichertypen finden Sie unter [Beispielkandidaten für ContextHub-Speicher](/help/sites-developing/ch-samplestores.md).
+Alle Speichertypen sind Erweiterungen der Klasse [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core). Informationen zum Erstellen eines neuen Storetyps finden Sie unter [Erstellen benutzerdefinierter Stores](/help/sites-developing/ch-extend.md#creating-custom-store-candidates). Weitere Informationen zu Beispiel-Store-Typen finden Sie unter [Beispiele für ContextHub-Store-Kandidaten](/help/sites-developing/ch-samplestores.md).
 
 ### Beibehaltungsmodi {#persistence-modes}
 
-ContextHub-Speicher verwenden einen der folgenden Beibehaltungsmodi:
+ContextHub-Stores verwenden einen der folgenden Persistenzmodi:
 
-* **Lokal:** Verwendet „localStorage“ (HTML5), um Daten beizubehalten. Lokaler Speicher wird im Browser sitzungsübergreifend beibehalten.
+* **Lokal:** Verwendet HTML5 localStorage , um Daten beizubehalten. Lokaler Speicher wird sitzungsübergreifend im Browser beibehalten.
 * **Sitzung:** Verwendet „sessionStorage“ (HTML5), um Daten beizubehalten. Sitzungsspeicher wird für die Dauer der Browser-Sitzung beibehalten und steht für alle Browser-Fenster zur Verfügung.
-* **Cookie:** Verwendet die native Cookie-Unterstützung des Browsers für die Datenspeicherung. Cookie-Daten werden in HTTP-Anfrage an den bzw. vom Server gesendet.
+* **Cookie:** Verwendet die native Unterstützung von Cookies durch den Browser für die Datenspeicherung. Cookie-Daten werden in HTTP-Anfrage an den bzw. vom Server gesendet.
 * **Window.name:** Verwendet die Eigenschaft „window.name“, um Daten beizubehalten.
 * **Speicher:** Verwendet ein JavaScript-Objekt, um Daten beizubehalten.
 
-ContextHub verwendet standardmäßig den lokalen Beibehaltungsmodus. Falls der Browser „localStorage“ (HTML5) nicht unterstützt oder nicht zulässt, wird die Sitzungsbeibehaltung verwendet. Falls der Browser „sessionStorage“ (HTML5) nicht unterstützt oder nicht zulässt, wird die Beibehaltung vom Typ „Window.name“ verwendet.
+Standardmäßig verwendet ContextHub den lokalen Persistenzmodus. Wenn der Browser HTML5 localStorage nicht unterstützt oder zulässt, wird die Sitzungspersistenz verwendet. Wenn der Browser HTML5 sessionStorage nicht unterstützt oder zulässt, wird die Persistenz Window.name verwendet.
 
 ### Store-Daten {#store-data}
 
-Store-Daten bilden intern eine Baumstruktur. Dadurch können Werte als primäre Typen oder als komplexe Objekte hinzugefügt werden. Wenn Sie Stores komplexe Objekte hinzufügen, bilden die Objekteigenschaften Verzweigungen in der Datenstruktur. Im folgenden Beispiel wird das folgende komplexe Objekt einem leeren, als Store bezeichneten Ort hinzugefügt:
+Intern speichern Sie Daten in einer Baumstruktur, sodass Werte als primäre Typen oder komplexe Objekte hinzugefügt werden können. Wenn Sie komplexe Objekte zu Stores hinzufügen, bilden die Objekteigenschaften Zweige in der Datenstruktur. Im folgenden Beispiel wird das folgende komplexe Objekt einem leeren, als Store bezeichneten Ort hinzugefügt:
 
 ```xml
 Object {
@@ -76,7 +80,7 @@ Object {
 }
 ```
 
-Die Baumstruktur der Store-Daten kann wie folgt dargestellt werden:
+Die Baumstruktur der Speicherdaten kann wie folgt gestaltet werden:
 
 ```xml
 /
@@ -89,7 +93,7 @@ Die Baumstruktur der Store-Daten kann wie folgt dargestellt werden:
             |- elevation
 ```
 
-Die Baumstruktur definiert Datenelemente im Store als Schlüssel-Wert-Paare. Im obigen Beispiel entspricht der Schlüssel `/number` dem Wert `321` und der Schlüssel `/data/country` dem Wert `Switzerland`.
+Die Baumstruktur definiert Datenelemente im Speicher als Schlüssel-Wert-Paare. Im obigen Beispiel entspricht der Schlüssel `/number` dem Wert `321` und der Schlüssel `/data/country` dem Wert `Switzerland`.
 
 ### Bearbeiten von Objekten {#manipulating-objects}
 
@@ -108,18 +112,18 @@ Die JavaScript-Klasse [`ContexHub.Store.Core`](/help/sites-developing/contexthu
 * [addAllItems](/help/sites-developing/contexthub-api.md#addallitems-tree-options)
 * [getTree](/help/sites-developing/contexthub-api.md#gettree-includeinternals)
 
-Einzelne Datenelemente werden als Schlüssel-Wert-Paare gespeichert. Zum Speichern und Abrufen von Werten muss der entsprechende Schlüssel angegeben werden:
+Einzelne Datenelemente werden als Satz von Schlüssel/Wert-Paaren gespeichert. Um Werte zu speichern und abzurufen, geben Sie den entsprechenden Schlüssel an:
 
 * [getItem](/help/sites-developing/contexthub-api.md#getitem-key)
 * [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)
 
-Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen definieren können, die den Zugriff auf Store-Daten ermöglichen.
+Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen definieren können, die den Zugriff auf Speicherdaten ermöglichen.
 
 >[!NOTE]
 >
->Standardmäßig sind ContextHub die derzeit bei Veröffentlichungsservern angemeldeten Benutzer nicht bekannt und solche Benutzer werden von ContextHub als anonyme Benutzer betrachtet.
+>ContextHub kennt nicht standardmäßig die aktuell angemeldeten Benutzer, die auf Veröffentlichungs-Servern verwendet werden, und diese Benutzer werden von ContextHub als &quot;Anonym&quot;betrachtet.
 >
->Sie können dafür sorgen, dass ContextHub angemeldete Benutzer erkennt, indem Sie den Profilspeicher laden, wie in der [We.Retail-Referenzsite](/help/sites-developing/we-retail.md) implementiert. Den relevanten Code finden Sie [auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Sie können ContextHub über angemeldete Benutzer informieren, indem Sie den Profilspeicher laden, wie in der implementierten [Referenz-Site &quot;We.Retail&quot;](/help/sites-developing/we-retail.md). Siehe Abschnitt [relevanter Code auf GitHub hier](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### ContextHub-Ereignisse {#contexthub-eventing}
 
@@ -137,15 +141,15 @@ Mit der ContextHub-Segment-Engine können Sie ermitteln, welche der registrierte
 
 ContextHub-Segmente werden unter dem Knoten `/conf/we-retail/settings/wcm/segments` installiert.
 
-* female
+* weiblich
 * female-over-30
 * female-under-30
-* male
+* männlich
 * male-over-30
 * male-under-30
 * order-value-75-to-100
 * order-value-over-100
-* over-30
+* über 30
 * summer
 * summer-female
 * summer-female-over-30
@@ -164,9 +168,9 @@ ContextHub-Segmente werden unter dem Knoten `/conf/we-retail/settings/wcm/segme
 
 Die Regeln zur Auflösung dieser Segmente werden wie folgt zusammengefasst:
 
-* „female“ oder „male“ wird auf der Grundlage des Datenelements `gender` des Stores [profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) bestimmt.
+* Weiblich oder männlich wird anhand der `gender` Datenelement der [profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) speichern.
 
-* Das Alter wird auf der Grundlage des Datenelements „age“ des Stores „profile“ bestimmt.
+* Das Alter wird anhand des Seitendatenelements des Profilspeichers bestimmt.
 * Die Staffel wird aus dem Datenelement &quot;latitude&quot;des [Geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) speichern und das Monatsdatenelement des surferinfo -Stores.
 
 >[!WARNING]

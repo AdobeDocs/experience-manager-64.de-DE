@@ -5,14 +5,18 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 6d9a954f-433d-41ec-9bb9-45e857890aba
-source-git-commit: 657bb7df01a7b8e03d39c3bda868d87253b81b2a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3135'
-ht-degree: 95%
+source-wordcount: '3171'
+ht-degree: 94%
 
 ---
 
 # Konfigurieren von Experience Manager Assets für Adobe Asset Link {#adobe-asset-link}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/de/creativecloud/business/enterprise/adobe-asset-link.html) optimiert die Zusammenarbeit zwischen Kreativen und Marketern bei der Inhaltserstellung. Damit wird Adobe Experience Manager Assets mit den Creative Cloud-Desktop-Programmen Adobe InDesign, Adobe Photoshop und Adobe Illustrator verbunden. Über das Adobe Asset-Link-Bedienfeld können Kreative auf in AEM Assets gespeicherte Inhalte zugreifen und diese bearbeiten, ohne die Kreativprogramme zu verlassen, mit denen sie am besten vertraut sind.
 

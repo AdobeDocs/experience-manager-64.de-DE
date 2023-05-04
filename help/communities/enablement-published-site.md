@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 exl-id: bdf91013-2136-464a-a637-a3047144ec98
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 3%
+source-wordcount: '1262'
+ht-degree: 4%
 
 ---
 
 # Erlebnis der veröffentlichten Site {#experience-the-published-site}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 
 **[⇐ Erstellen und Zuweisen von Aktivierungsressourcen](resource.md)**
@@ -188,8 +192,8 @@ Navigieren Sie zum **Communities [Berichtkonsole](reports.md)** und erstellen Si
 * Beiträge und Ansichten können sich auf alle Inhalte oder auf bestimmte Inhalte beziehen:
 
    * Forum
-   * Forumthema
-   * Frage und Antwort
+   * Forenthema
+   * Fragen und Antworten
    * Frage
    * Blog
    * Blog-Artikel
@@ -223,7 +227,7 @@ Beachten Sie, dass es wahrscheinlich zu früh ist, Daten aus Adobe Analytics anz
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
-### Berichte-Konsole {#reports-console}
+### Berichtkonsole {#reports-console}
 
 Die Berichte-Konsole ermöglicht die Erstellung von Berichten für
 

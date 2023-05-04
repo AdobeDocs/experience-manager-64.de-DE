@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Entwurfs- und Übermittlungsdatendiensten
 seo-title: Customizing Draft and Submission data services
-description: AEM Forms speichert standardmäßig Entwurfs- und adaptive gesendete Formulare in einem Standardknoten auf der Veröffentlichungsinstanz. Sie können die Entwurfs- und Übermittlungsdatendienste von AEM Forms allerdings konfigurieren, um die Speicherung von Entwurfs- und gesendeten adaptiven Formularen anzupassen.
+description: AEM Forms speichert standardmäßig Entwurfs- und gesendete adaptive Formulare in einem Standardknoten auf der Veröffentlichungsinstanz. Sie können jedoch die Entwurfs- und Übermittlungsdatendienste von AEM Forms konfigurieren, um die Speicherung von Entwurfs- und gesendeten adaptiven Formularen anzupassen.
 seo-description: AEM Forms, by default, stores draft and submitted adaptive forms in a default node on the Publish instance. However, you can configure the draft and submission data services of AEM Forms to customize the storage of draft and submitted adaptive forms.
 uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
@@ -9,24 +9,28 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: c6243a1f-8f8f-48dc-af3b-b165f451ce73
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 100%
+source-wordcount: '312'
+ht-degree: 51%
 
 ---
 
 # Anpassen von Entwurfs- und Übermittlungsdatendiensten {#customizing-draft-and-submission-data-services}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Übersicht {#overview}
 
-Mit AEM Forms können Benutzer ein adaptives Formular als Entwurf speichern. Die Entwurfsfunktion bietet Benutzern die Möglichkeit, ein Formular, an dem sie gerade arbeiten, beizubehalten. Ein Benutzer kann das Formular dann jederzeit von jedem beliebigen Gerät ausfüllen und senden.
+Mit AEM Forms können Benutzer ein adaptives Formular als Entwurf speichern. Die Entwurfsfunktion bietet Benutzern die Möglichkeit, ein Formular zu verwalten, das derzeit bearbeitet wird. Ein Benutzer kann das Formular dann jederzeit von jedem Gerät aus ausfüllen und senden.
 
 Standardmäßig speichert AEM Forms die mit dem Entwurf und der Übermittlung verknüpften Benutzerdaten auf der Veröffentlichungsinstanz im Knoten `/content/forms/fp`.
 
-AEM Forms Portal-Komponenten bieten allerdings Datendienste, mit denen Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
+AEM Forms Portal-Komponenten bieten jedoch Datendienste, mit denen Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
 
-Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste für [Entwurfsdaten](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) und [Übermittlungsdaten](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) implementieren.
+Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die [Entwurfsdaten](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) und [Übermittlungsdaten](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) Dienste.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -39,7 +43,7 @@ Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste für [E
 
 Um die Speicherung von Benutzerentwurfsdaten anzupassen, müssen Sie die Implementierung für alle Methoden der `DraftAFDataService`-Schnittstelle bereitstellen.
 
-Eine Beschreibung der Methoden und deren Argumente finden Sie im folgenden Codebeispiel der Schnittstelle:
+Eine Beschreibung der Methoden und deren Argumente finden Sie im folgenden Code-Beispiel der Schnittstelle:
 
 ```java
 public interface DraftAFDataService {

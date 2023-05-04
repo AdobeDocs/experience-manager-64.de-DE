@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: 9d459939-a311-4770-84db-f2a4b7869072
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 100%
+source-wordcount: '1942'
+ht-degree: 98%
 
 ---
 
 # Arbeiten mit Barcode-Formularen {#working-with-barcoded-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Über den Barcode-Formular-Service {#about-the-barcoded-forms-service}
 

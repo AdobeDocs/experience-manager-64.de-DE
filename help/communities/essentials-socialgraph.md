@@ -10,20 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: 55aa015e-e0e4-411e-8e28-75006ae3090b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 12%
+source-wordcount: '305'
+ht-degree: 6%
 
 ---
 
 # Grundlagen zum Social-Diagramm {#social-graph-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Die Fähigkeit eines Mitglieds der Gemeinschaft, [activities](essentials-activities.md) und werden durch zwei Komponenten festgelegt:
 
 Die `follow`-Komponente muss mit einer anderen Ressource verknüpft sein. Diese Zuordnung ist bereits für bestehende Community-Mitglieder und -Funktionen in einer [Community-Site](overview.md#communitiessites).
 
-Die `following`-Komponente listet die Mitglieder auf, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses Sozialdiagramm der Mitgliederbeziehungen untereinander ist Teil des Benutzerprofils, das für eine Community-Site bereitgestellt wird.
+Die `following`-Komponente listet die Mitglieder auf, die dem aktuellen Mitglied folgen oder dem aktuellen Mitglied folgen. Dieses soziale Diagramm der Beziehungen zwischen Mitgliedern ist in das für eine Community-Site eingerichtete Benutzerprofil aufgenommen.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -56,11 +60,11 @@ Die `following`-Komponente listet die Mitglieder auf, die dem aktuellen Mitglied
    <td>Siehe <a href="socialgraph.md">Social-Diagramm verwenden</a></td> 
   </tr>
   <tr>
-   <td><strong> optional<br /> property</strong></td> 
+   <td><strong> optionale <br />-Eigenschaft</strong></td> 
    <td>
     <ul> 
      <li>Name: <strong><code>outgoing</code></strong></li> 
-     <li>Typ: Boolean</li> 
+     <li>Typ: Boolesch</li> 
      <li>Wert:<br /> 
       <ul> 
        <li><i>true </i>- die <code>following</code> -Komponente listet die Mitglieder auf, die das derzeit angemeldete Mitglied sind <code>follows</code></li> 

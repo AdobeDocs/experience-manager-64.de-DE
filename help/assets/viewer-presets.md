@@ -8,14 +8,18 @@ content-type: reference
 exl-id: 7cd62a2f-f7c9-40b1-bcd4-5853dadabf1b
 feature: Viewer Presets
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 92%
+source-wordcount: '260'
+ht-degree: 83%
 
 ---
 
 # Anwenden von Dynamic Media-Viewer-Vorgaben {#applying-viewer-presets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Eine Viewer-Vorgabe ist eine Sammlung aus Einstellungen, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computer-Bildschirmen und Mobilgeräten anzeigen. Sie können alle vom Administrator erstellten Viewer-Vorgaben auf ein Asset anwenden.
 

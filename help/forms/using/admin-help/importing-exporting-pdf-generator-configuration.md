@@ -1,5 +1,5 @@
 ---
-title: PDF Generator-Konfigurationsdateien importieren und exportieren
+title: Importieren und Exportieren der PDF Generator-Konfigurationsdateien
 seo-title: Importing and exporting PDF Generator configuration files
 description: Erfahren Sie, wie Sie PDF Generator-Konfigurationsdateien importieren und exportieren.
 seo-description: Learn how to import and export PDF Generator configuration files.
@@ -11,56 +11,60 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 feature: PDF Generator
 exl-id: 57673410-b8f1-494e-b4a0-c6724bab643c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 100%
+source-wordcount: '414'
+ht-degree: 12%
 
 ---
 
-# PDF Generator-Konfigurationsdateien importieren und exportieren {#importing-and-exporting-pdf-generator-configuration-files}
+# Importieren und Exportieren der PDF Generator-Konfigurationsdateien {#importing-and-exporting-pdf-generator-configuration-files}
 
-Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen, einschließlich der PDF-, Dateityp- und Sicherheitseinstellungen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen, einschließlich PDF, Dateityp und Sicherheitseinstellungen.
 
 >[!NOTE]
 >
->Sie können die Zeitlimiteinstellung für PDF Generator nicht durch Importieren einer benutzerdefinierten Datei „native2pdfconfig.xml“ ändern. Die Zeitlimiteinstellung in dieser Datei dient nur zu Informationszwecken und zeigt die aktuelle Einstellung in PDF Generator an. Informationen zum Ändern der Zeitlimiteinstellung finden Sie unter „Festlegen von Leistungsparametern für überwachte Ordner in PDF Generator“ unter [deInstallieren und Bereitstellen von AEM Forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63_de).
+>Sie können die Zeitlimiteinstellung für PDF Generator nicht ändern, indem Sie eine benutzerdefinierte Datei &quot;native2pdfconfig.xml&quot;importieren. Die Zeitlimiteinstellung in dieser Datei dient nur zu Informationszwecken und zeigt die aktuelle Einstellung in PDF Generator an. Informationen zum Ändern der Zeitlimiteinstellung finden Sie unter &quot;Festlegen von Leistungsparametern für PDF Generator&quot;unter [Installieren und Bereitstellen von AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63_de).
 
-## Eine aktuelle Konfigurationsdatei exportieren {#export-your-current-configuration-file}
+## Aktuelle Konfigurationsdatei exportieren {#export-your-current-configuration-file}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
-1. Wählen Sie zum Exportieren von Einstellungen die passende Option aus:
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Konfigurationsdateien&quot;> &quot;Exportkonfiguration&quot;.
+1. Um die Einstellungen zu exportieren, wählen Sie die entsprechende Option aus:
 
-   * Um alle benannten Einstellungen zu exportieren, wählen Sie „Gesamte Konfiguration herunterladen“ aus.
-   * Um nur eine Adobe PDF-, Sicherheits- oder Dateitypeinstellung zu exportieren, wählen Sie „Mindestkonfiguration herunterladen“ aus.
+   * Um alle benannten Einstellungen zu exportieren, wählen Sie Gesamte Konfiguration herunterladen aus.
+   * Um nur eine Adobe PDF-Einstellung, Sicherheitseinstellung oder Dateitypeinstellung zu exportieren, wählen Sie &quot;Minimale Konfiguration herunterladen&quot;aus.
 
-      Wählen Sie beim Exportieren einer Mindestkonfiguration die zu exportierenden Adobe PDF-, Sicherheits- und Dateitypeinstellungen aus.
+      Wenn Sie eine Mindestkonfiguration exportieren, wählen Sie die zu exportierenden Einstellungen für Adobe PDF, Sicherheit und Dateityp aus.
 
-1. Klicken Sie auf „Herunterladen“ und speichern Sie die XML-Datei am gewünschten Speicherort.
+1. Klicken Sie auf Herunterladen und speichern Sie die XML-Datei an einem entsprechenden Speicherort.
 
-## Eine Konfigurationsdatei importieren {#import-a-configuration-file}
+## Importieren einer Konfigurationsdatei {#import-a-configuration-file}
 
 >[!NOTE]
 >
 >Ihr System wird basierend auf den Informationen in der importierten Datei neu konfiguriert.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
-1. Wählen Sie „Vorhandene Konfigurationsdatei importieren“ aus.
-1. Um den Dateispeicherort im Feld „Konfigurationsdatei“ anzugeben, klicken Sie zuerst auf „Durchsuchen“, um die Datei zu lokalisieren und auszuwählen, und dann auf **Importieren**.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Konfigurationsdateien&quot;> &quot;Importkonfiguration&quot;.
+1. Wählen Sie &quot;Vorhandene Konfigurationsdatei importieren&quot;.
+1. Um den Speicherort der Datei im Feld &quot;Konfigurationsdatei&quot;anzugeben, klicken Sie auf &quot;Durchsuchen&quot;, um die Datei zu suchen und auszuwählen, und klicken Sie dann auf **Import**.
 
-## Alle Ebenen in der AutoCAD-Datei konvertieren {#convert-all-layers-within-autocad-files}
+## Alle Ebenen in AutoCAD-Dateien konvertieren {#convert-all-layers-within-autocad-files}
 
-Standardmäßig konvertiert PDF Generator nicht alle in AutoCAD-Dateien enthaltenen Ebenen, sondern nur die Standardebene der Datei in PDF. Um alle Ebenen zu konvertieren, führen Sie folgendes Verfahren aus.
+Standardmäßig konvertiert PDF Generator nur die Standardebene von AutoCAD-Dateien in PDF anstelle aller Ebenen in der Datei. Gehen Sie wie folgt vor, um alle Ebenen zu konvertieren.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
-1. Wählen Sie „Gesamte Konfiguration herunterladen“ aus und klicken Sie auf „Herunterladen“.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Konfigurationsdateien&quot;> &quot;Exportkonfiguration&quot;.
+1. Wählen Sie Gesamte Konfiguration herunterladen und klicken Sie auf Herunterladen.
 1. Öffnen Sie die heruntergeladene Datei in einem Texteditor und fügen Sie unterhalb des Tags `AutoCAD`, aber innerhalb des Tags `PDFMaker` den Text `convertAllPages="true"` hinzu.
-1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
-1. Wählen Sie „Vorhandene Konfigurationsdatei importieren“ aus, geben Sie die aktualisierte Datei an und klicken Sie auf „Importieren“.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Konfigurationsdateien&quot;> &quot;Importkonfiguration&quot;.
+1. Wählen Sie &quot;Vorhandene Konfigurationsdatei importieren&quot;aus, geben Sie die aktualisierte Datei an und klicken Sie auf &quot;Importieren&quot;.
 
-   Bei allen AutoCAD-Dateien, die mit der geänderten Konfigurationsdatei konvertiert werden, werden alle Ebenen konvertiert.
+   Bei allen AutoCAD-Dateien, die mithilfe der geänderten Konfigurationsdatei konvertiert werden, werden alle Ebenen konvertiert.
 
-## Konfiguration auf die ursprünglichen, mit PDF Generator installierten Einstellungen zurücksetzen {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
+## Zurücksetzen der Konfiguration auf die ursprünglichen Einstellungen, die mit PDF Generator installiert wurden {#reset-your-configuration-to-the-original-settings-installed-with-pdf-generator}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „PDF Generator“ > „Konfigurationsdateien“ > „Konfiguration exportieren“.
-1. Wählen Sie „Konfiguration auf Standardeinstellungen zurücksetzen“ und klicken Sie auf „Importieren“.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;PDF Generator&quot;> &quot;Konfigurationsdateien&quot;> &quot;Importkonfiguration&quot;.
+1. Wählen Sie &quot;Konfiguration auf Standardeinstellungen zurücksetzen&quot;und klicken Sie auf &quot;Importieren&quot;.

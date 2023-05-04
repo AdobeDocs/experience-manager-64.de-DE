@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 exl-id: edc06f41-d0ee-45b0-b2f9-a8fa80e6a8d2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 100%
+source-wordcount: '903'
+ht-degree: 79%
 
 ---
 
 # Tipps zum Programmieren{#coding-tips}
 
-## So oft wie möglich TagLibs oder HTL verwenden {#use-taglibs-or-htl-as-much-as-possible}
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+## Verwenden Sie so weit wie möglich Taglibs oder HTL {#use-taglibs-or-htl-as-much-as-possible}
 
 Das Einschließen von Scriptlets in JSPs erschwert das Debugging von Fehlern im Code. Auch wird es dadurch schwierig, die Geschäftslogik von der Ansichtsebene zu trennen, was gegen das Single-Responsibility-Prinzip und das MVC-Design-Muster verstößt.
 
@@ -41,7 +45,7 @@ Für AEM-Codes gelten die folgenden Konventionen:
 * Java-Implementierungen werden in einem impl-Paket unter ihrer API platziert.
 
 
-Beachten Sie, dass diese Konventionen nicht notwendigerweise für Kundenimplementierungen gelten müssen. Es ist jedoch wichtig, dass Konventionen definiert und eingehalten werden, sodass der Code verwaltbar bleibt.
+Beachten Sie, dass diese Konventionen nicht unbedingt für Kundenimplementierungen gelten müssen. Es ist jedoch wichtig, Konventionen zu definieren und einzuhalten, damit der Code aufrechterhalten werden kann.
 
 Idealerweise sollten Namen den Zweck beschreiben. Ein guter Hinweis darauf, dass Namen nicht so deutlich sind wie gewünscht, ist das Vorhandensein von Kommentaren, die erklären, wozu die Variable oder die Methode dient:
 
@@ -52,17 +56,17 @@ Idealerweise sollten Namen den Zweck beschreiben. Ein guter Hinweis darauf, dass
    <td><p><strong>Klar</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>int d; //elapsed time in days</p> </td> 
+   <td><p>int d; //Verstrichene Zeit in Tagen</p> </td> 
    <td><p>int elapsedTimeInDays;</p> </td> 
   </tr> 
   <tr> 
-   <td><p>//get tagged images<br /> public List getItems() {}</p> </td> 
+   <td><p>//getaggte Bilder abrufen<br /> public List getItems() {}</p> </td> 
    <td><p>public List getTaggedImages() {}</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Wiederholungen vermeiden  {#don-t-repeat-yourself}
+### Wiederholen Sie sich nicht  {#don-t-repeat-yourself}
 
 Dieses Prinzip sieht vor, dass derselbe Codesatz niemals dupliziert werden sollte. Dies gilt auch für Elemente wie Zeichenfolgentexte. Code-Duplikate erhöhen die Fehleranfälligkeit, wenn etwas geändert werden muss, und sollten gesucht und entfernt werden.
 
@@ -78,9 +82,9 @@ Wenn eine API veraltet ist, ist es besser, den neuen empfohlenen Ansatz zu suche
 
 Alle Zeichenfolgen, die nicht von einem Autor bereitgestellt werden, sollten in einem Aufruf des i18n-Wörterbuchs von AEM über *I18n.get()* in JSP/Java und *CQ.I18n.get()* in JavaScript zusammengefasst werden. Diese Implementierung gibt die Zeichenfolge zurück, die an sie übergeben wurde, wenn keine Implementierung gefunden wird. Dies bietet die Flexibilität, die Lokalisierung zu implementieren, nachdem die Funktionen in der primären Sprache implementiert wurden.
 
-### Ressourcenpfade zur Sicherheit maskieren {#escape-resource-paths-for-safety}
+### Ressourcenpfade für Sicherheit maskieren {#escape-resource-paths-for-safety}
 
-Zwar sollten Pfade im JCR keine Leerzeichen enthalten, aber der Code sollte nicht fehlschlagen, wenn Leerzeichen vorhanden sind. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Für JSPs stellt die Granite-Benutzeroberfläche die Funktion *granite:encodeURIPath() EL* bereit.
+Während Pfade im JCR keine Leerzeichen enthalten sollten, sollte das Vorhandensein von Leerzeichen nicht dazu führen, dass der Code umbrochen wird. Jackrabbit stellt eine Text-Hilfsklasse mit den Methoden *escape()* und *escapePath()* bereit. Für JSPs stellt die Granite-Benutzeroberfläche die Funktion *granite:encodeURIPath() EL* bereit.
 
 ### Zur Absicherung vor Cross-Site-Scripting-Angriffen die XSS-API und/oder HTL nutzen {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
@@ -92,12 +96,12 @@ Für Java-Code unterstützt AEM slf4j als Standard-API für die Protokollierung 
 
 * ERROR: Wenn etwas im Code nicht funktioniert und die Verarbeitung nicht fortgesetzt werden kann. Dies geschieht häufig in Folge eines unerwarteten Ausnahmefehlers. In der Regel ist es hilfreich, bei solchen Szenarien Stacktraces einzuschließen.
 * WARN: Wenn etwas nicht richtig funktioniert hat, aber die Verarbeitung fortgesetzt werden kann. Dies geschieht oft in Folge eines Ausnahmefehlers, mit dem gerechnet wurde, z. B. *PathNotFoundException*.
-* INFO: Informationen, die bei der Überwachung eines Systems hilfreich sein dürften. Denken Sie daran, dass dies der Standard ist und die meisten Kunden ihn in ihren Umgebungen beibehalten. Verwenden Sie diese Ebene daher nicht zu häufig.
-* DEBUG: Informationen der unteren Ebene zur Verarbeitung. Hilfreich, wenn ein Problem zusammen mit dem Support behoben wird.
-* TRACE: Die niedrigste Ebene von Informationen, z. B. das Aufrufen/Beenden von Methoden. Dies wird in der Regel nur von Entwicklern verwendet.
+* INFO: Informationen, die bei der Überwachung eines Systems hilfreich sein dürften. Denken Sie daran, dass dies der Standard ist und die meisten Kunden ihn in ihren Umgebungen beibehalten. Verwenden Sie sie daher nicht übermäßig.
+* DEBUG: Informationen der unteren Ebene zur Verarbeitung. Nützlich beim Debugging eines Problems mit Unterstützung.
+* TRACE: Die Informationen der niedrigsten Ebene, Dinge wie Einstieg/Ausstieg-Methoden. Dies wird normalerweise nur von Entwicklern verwendet.
 
-Bei JavaScript sollte *console.log* nur während der Entwicklung genutzt werden und alle Protokollaussagen sollten vor der Veröffentlichung entfernt werden.
+Im Falle von JavaScript *console.log* sollten nur während der Entwicklung verwendet werden und alle Protokollanweisungen sollten vor der Veröffentlichung entfernt werden.
 
-### Nicht durchdachte Programmierung vermeiden {#avoid-cargo-cult-programming}
+### Vermeiden von Frachtschnitt-Programmierung {#avoid-cargo-cult-programming}
 
 Vermeiden Sie es, Code zu kopieren, ohne zu wissen, was er tut. Im Zweifelsfall ist es ratsam, jemanden zu fragen, der über größere Erfahrung mit dem Modul oder der API verfügt, bei dem/der Sie sich nicht sicher sind.

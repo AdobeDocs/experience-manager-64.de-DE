@@ -1,7 +1,7 @@
 ---
 title: AEM Developer Tools for Eclipse
 seo-title: AEM Developer Tools for Eclipse
-description: AEM Entwicklertools für Eclipse
+description: AEM Developer Tools for Eclipse
 seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 9cdd09f6-bfc2-48c3-af40-a54f98833a38
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 99%
+source-wordcount: '844'
+ht-degree: 83%
 
 ---
 
-# AEM Entwicklertools für Eclipse{#aem-developer-tools-for-eclipse}
+# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -54,15 +58,15 @@ Sobald Sie die oben genannten [Voraussetzungen](#requirements) erfüllt haben, k
 
 1. Kopieren Sie den **Installations-Link**.
 
-   Beachten Sie, dass Sie alternativ ein Archiv herunterladen können, anstatt den Installations-Link zu verwenden. Dies ermöglicht Offlineinstallation, aber Sie werden auf diese Weise automatische Update-Benachrichtigungen verpassen.
+   Beachten Sie, dass Sie alternativ ein Archiv herunterladen können, anstatt den Installations-Link zu verwenden. Dies ermöglicht die Offline-Installation, aber Sie verpassen automatische Aktualisierungsbenachrichtigungen auf diese Weise.
 
-1. Öffnen Sie in Eclipse das Menü **Hilfe**.
-1. Klicken Sie auf **Neue Software installieren**.
+1. Öffnen Sie in Eclipse die **Hilfe** Menü.
+1. Klicken **Neue Software installieren**.
 1. Klicken Sie auf **Hinzufügen...**.
-1. Unter **Namen** geben Sie „AEM Developer Tools“ ein.
+1. In **Name** Geben Sie AEM Entwicklertools ein.
 1. Unter **Standort** kopieren Sie die Installations-URL.
 1. Klicken Sie auf **OK**.
-1. Überprüfen Sie **AEM**- und **Sling**-Plug-ins.
+1. Überprüfen Sie beide **AEM** und **Sling** Plug-ins.
 1. Klicken Sie auf **Weiter**.
 1. Klicken Sie auf **Weiter**.
 1. Akzeptieren Sie die Lizenzvereinbarungen und klicken Sie auf **Beenden**.
@@ -84,9 +88,9 @@ Die AEM Development Tools for Eclipse enthalten eine Perspektive, die Ihnen die 
 
 Die AEM Developer Tools for Eclipse werden mit einem Beispielprojekt mit mehreren Modulen geliefert, mit dem Sie schnell mit der Projektkonfiguration in Eclipse vertraut werden und das als Best Practice-Leitfaden für mehrere AEM-Funktionen dienen kann. [Erfahren Sie mehr über den Projektarchetyp](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
-Führen Sie folgende Schritte aus, um das Beispielprojekt zu erstellen:
+Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
-1. Im Menü **Datei** > **Neu** > **Projekt** navigieren Sie zum **AEM**-Bereich und wählen Sie **AEM Beispiel-Multi-Modul Projekt**.
+1. Im **Datei** > **Neu** > **Projekt** Menü, navigieren Sie zum **AEM** und wählen Sie **AEM Beispiel für ein Projekt mit mehreren Modulen**.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -129,13 +133,13 @@ Führen Sie folgende Schritte aus, um das Beispielprojekt zu erstellen:
 Um ungültige Abhängigkeiten und Projektdefinitionen aufzulösen, gehen Sie wie folgt vor:
 
 1. Wählen Sie alle erstellten Projekte.
-1. Klicken Sie mit der rechten Maustaste. Im Menü **Maven** wählen Sie **Projekte aktualisieren**.
+1. Klicken Sie mit der rechten Maustaste. Im Menü **Maven** select **Projekte aktualisieren**.
 1. Aktivieren Sie **Aktualisierungen von Snapshots/Releases erzwingen**.
 1. Klicken Sie auf **OK**. Eclipse versucht, die erforderlichen Abhängigkeiten herunterzuladen.
 
-### Aktivieren der automatischen Vervollständigung von Tag-Bibliotheken in JSP-Dateien {#enabling-tag-library-autocompletion-in-jsp-files}
+### Automatische Vervollständigung von Tag-Bibliotheken in JSP-Dateien aktivieren {#enabling-tag-library-autocompletion-in-jsp-files}
 
-Die automatische Vervollständigung der Tag-Bibliothek funktioniert sofort, da die richtigen Abhängigkeiten zum Projekt hinzugefügt werden. Es gibt ein bekanntes Problem bei der Verwendung von AEM-UberJar, das die erforderlichen tld- und TagExtraInfo-Dateien nicht enthält.
+Die automatische Vervollständigung der Tag-Bibliothek funktioniert sofort, da die richtigen Abhängigkeiten zum Projekt hinzugefügt werden. Es gibt ein bekanntes Problem bei der Verwendung des AEM Uber Jar, das nicht die erforderlichen tld- und TagExtraInfo-Dateien enthält.
 
 Stellen Sie sicher, dass das org.apache.sling.scripting.jsp.taglib-Artefakt im Klassenpfad vor dem AEM-UberJar liegt, um es zu umgehen. Platzieren Sie für Maven-Projekte die folgende Abhängigkeit in der pom.xml vor dem UberJar.
 

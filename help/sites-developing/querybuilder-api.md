@@ -4,14 +4,18 @@ seo-title: Query Builder API
 description: Die Funktionalität der Query Builder-Komponente für die Asset-Freigabe wird über eine Java-API und eine REST-API verfügbar gemacht.
 seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
 exl-id: ff305c6d-c11e-4e1c-b262-4802b4f54592
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2312'
-ht-degree: 99%
+source-wordcount: '2348'
+ht-degree: 74%
 
 ---
 
 # Query Builder-API{#query-builder-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Funktionalität der [Query Builder-Komponente für die Asset-Freigabe](/help/assets/assets-finder-editor.md) wird über eine Java-API und eine REST-API verfügbar gemacht. In diesem Abschnitt werden diese APIs beschrieben.
 
@@ -19,31 +23,31 @@ Der Server-seitige Query Builder ([`QueryBuilder`](https://helpx.adobe.com/exper
 
 Die Abfragebeschreibung ist einfach eine Gruppe mit Eigenschaften ([`Predicate`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Beispiel hierfür ist eine Volltexteigenschaft, die der Funktion `jcr:contains()` in XPath entspricht.
 
-Für jeden Eigenschaftentyp ist eine Auswertungskomponente ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) vorhanden, die weiß, wie die jeweilige Eigenschaft für XPath, die Filterung und die Facettenextraktion verarbeitet werden muss. Es ist sehr einfach, benutzerdefinierte Auswertungskomponenten zu erstellen, die über die OSGi-Komponentenlaufzeit verknüpft werden.
+Für jeden Eigenschaftentyp ist eine Auswertungskomponente ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) vorhanden, die weiß, wie die jeweilige Eigenschaft für XPath, die Filterung und die Facettenextraktion verarbeitet werden muss. Es ist sehr einfach, benutzerdefinierte Auswerter zu erstellen, die über die Laufzeit der OSGi-Komponente eingebunden werden.
 
-Die REST-API ermöglicht den Zugriff auf genau die gleichen Funktionen per HTTP, wobei die Antworten per JSON gesendet werden.
+Die REST-API bietet Zugriff auf genau dieselben Funktionen über HTTP, wobei Antworten in JSON gesendet werden.
 
 >[!NOTE]
 >
->Die QueryBuilder-API wird mit der JCR-API erstellt. Sie können Adobe Experience Manager-JCR auch abfragen, indem Sie die JCR-API innerhalb eines OSGi-Bundles verwenden. Weitere Informationen erhalten Sie unter [Abfragen von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
+>Die QueryBuilder-API wird mithilfe der JCR-API erstellt. Sie können das Adobe Experience Manager-JCR auch abfragen, indem Sie die JCR-API aus einem OSGi-Bundle heraus verwenden. Weitere Informationen erhalten Sie unter [Abfragen von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## Gem-Sitzung {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten. Diese Sitzung zum Query Builder ist sehr nützlich, um einen allgemeinen Überblick und Informationen zum Tool zu erhalten.
+[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=de) ist eine Serie mit ausführlichen technischen Erläuterungen zu Adobe Experience Manager von Adobe-Experten. Diese dem Query Builder vorbehaltene Sitzung ist sehr nützlich für einen Überblick und die Verwendung des Tools.
 
 >[!NOTE]
 >
->Eine ausführliche Übersicht über den Query Builder finden Sie in der AEM Gem-Sitzung [Einfaches Suchen nach Formularen per AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html).
+>Eine ausführliche Übersicht über den Query Builder finden Sie in der AEM Gem-Sitzung [Einfaches Suchen nach Formularen per AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=de).
 
 ## Beispielabfragen {#sample-queries}
 
 Diese Beispiele sind in der Notation des Java-Eigenschaftenstils angegeben. Für die Nutzung mit der Java-API können Sie ein Java-`HashMap`-Element im folgenden API-Beispiel verwenden.
 
-Für das `QueryBuilder`-JSON-Servlet enthält jedes Beispiel einen Link zu Ihrer lokalen CQ-Installation (am Standardspeicherort `http://localhost:4502`). Beachten Sie, dass Sie sich an Ihrer CQ-Instanz anmelden müssen, bevor Sie diese Links verwenden können.
+Für das `QueryBuilder`-JSON-Servlet enthält jedes Beispiel einen Link zu Ihrer lokalen CQ-Installation (am Standardspeicherort `http://localhost:4502`). Beachten Sie, dass Sie sich bei Ihrer CQ-Instanz anmelden müssen, bevor Sie diese Links verwenden.
 
 >[!CAUTION]
 >
->Standardmäßig zeigt das Query-Builder-JSON-Servlet maximal zehn Treffer an.
+>Standardmäßig zeigt das JSON-Servlet des Query Builders maximal 10 Treffer an.
 >
 >Wenn der folgende Parameter hinzugefügt wird, kann das Servlet alle Abfrageergebnisse anzeigen:
 >
@@ -82,9 +86,9 @@ orderby=path
 
 ### Verwenden von „p.guessTotal“ zum Zurückgeben der Ergebnisse {#using-p-guesstotal-to-return-the-results}
 
-Der Zweck des Parameters `p.guessTotal` ist das Zurückgeben der entsprechenden Ergebnisse, die angezeigt werden können, indem die richtigen Mindestwerte für „viable p.offset“ und „p.limit“ kombiniert werden. Der Vorteil der Nutzung dieses Parameters ist eine verbesserte Leistung bei großen Ergebnissätzen. So wird verhindert, dass die Gesamtsumme berechnet (z. B. per Aufruf von „result.getSize()“) und das gesamte Resultset gelesen werden muss, einschließlich der Optimierung bis hinab zum OAK-Modul und dem zugehörigen Index. Dies kann sowohl in Bezug auf die Ausführungsdauer als auch auf die Speicherauslastung einen erheblichen Unterschied ausmachen, wenn mehrere Hunderttausend Ergebnisse vorhanden sind.
+Der Zweck des Parameters `p.guessTotal` ist das Zurückgeben der entsprechenden Ergebnisse, die angezeigt werden können, indem die richtigen Mindestwerte für „viable p.offset“ und „p.limit“ kombiniert werden. Der Vorteil der Nutzung dieses Parameters ist eine verbesserte Leistung bei großen Ergebnissätzen. Dadurch wird verhindert, dass die Gesamtsumme berechnet (z. B. result.getSize() aufgerufen) und die gesamte Ergebnismenge gelesen wird, die bis hinunter zur OAK-Engine und dem OAK-Index optimiert wurde. Dies kann einen signifikanten Unterschied bei 100.000 Ergebnissen sowohl in der Ausführungszeit als auch bei der Speichernutzung darstellen.
 
-Der Nachteil besteht bei diesem Parameter darin, dass Anwendern die genaue Gesamtsumme nicht angezeigt wird. Sie können aber eine Mindestzahl festlegen, z. B. „p.guessTotal=1000“, damit immer bis zum Wert 1.000 gelesen wird. Für kleinere Resultsets erhalten Sie also die genaue Gesamtsumme, aber bei einer größeren Anzahl können Sie nur einen Hinweis wie „und weitere“ anzeigen.
+Der Nachteil besteht bei diesem Parameter darin, dass Anwendern die genaue Gesamtsumme nicht angezeigt wird. Sie können jedoch eine Mindestzahl wie p.guessTotal=1000 festlegen, sodass immer bis zu 1000 gelesen wird, sodass Sie genaue Summen für kleinere Ergebnismengen erhalten, aber wenn es mehr ist, können Sie nur &quot;und mehr&quot;anzeigen.
 
 Fügen Sie der Abfrage unten `p.guessTotal=true` hinzu, um die Funktionsweise zu testen:
 
@@ -123,11 +127,11 @@ Es werden wieder gemäß Standardwert zehn Ergebnisse mit einem Offset von 0 zu
 "offset": 0,
 ```
 
-### Implementieren von Seitenumbrüchen {#implementing-pagination}
+### Implementieren der Paginierung {#implementing-pagination}
 
-Standardmäßig würde der Query Builder auch die Anzahl von Treffern angeben. Je nach Ergebnisgröße kann dies lange dauern, da das Ermitteln der genauen Anzahl auch das Prüfen jedes Ergebnisses in Bezug auf die Zugriffssteuerung umfasst. Meist wird die Gesamtsumme verwendet, um Seitenumbrüche für die Benutzeroberfläche für Endbenutzer zu implementieren. Da die Ermittlung der genauen Anzahl lange dauern kann, wird empfohlen, die Funktion „guessTotal“ zum Implementieren von Seitenumbrüchen zu verwenden.
+Standardmäßig stellt der Query Builder auch die Anzahl der Treffer bereit. Abhängig von der Ergebnisgröße kann dies lange dauern, da bei der Ermittlung der genauen Anzahl jedes Ergebnis auf Zugriffskontrolle überprüft werden muss. Meistens wird die Gesamtsumme verwendet, um die Paginierung für die Benutzeroberfläche des Endbenutzers zu implementieren. Da die Ermittlung der genauen Anzahl langsam sein kann, wird empfohlen, die Funktion guessTotal zu verwenden, um die Paginierung zu implementieren.
 
-Beispielsweise kann für die Benutzeroberfläche der folgende Ansatz genutzt werden:
+Die Benutzeroberfläche kann beispielsweise den folgenden Ansatz anpassen:
 
 * Rufen Sie die genaue Anzahl der Gesamttreffer ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) oder die Summe in der querybuilder.json-Antwort) ab, und zeigen Sie sie an (kleiner oder gleich 100).
 * Legen Sie `guessTotal` auf 100 fest, während Sie den Query Builder-Aufruf durchführen.
@@ -135,7 +139,7 @@ Beispielsweise kann für die Benutzeroberfläche der folgende Ansatz genutzt wer
 * Die Antwort kann das folgende Ergebnis enthalten:
 
    * `total=43`, `more=false` – gibt an, dass die Gesamtzahl der Treffer 43 beträgt. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten drei Seiten können Seitenumbrüche genutzt werden. Sie können diese Implementierung auch verwenden, um einen beschreibenden Text wie **„43 Ergebnisse gefunden“** anzuzeigen.
-   * `total=100`, `more=true` – gibt an, dass die Gesamtzahl der Treffer größer als 100 und die genaue Anzahl unbekannt ist. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten zehn Seiten können Seitenumbrüche genutzt werden. Sie können diese Option auch verwenden, um einen Text wie **„Mehr als 100 Ergebnisse gefunden“** anzuzeigen. Wenn der Anwender auf die nächsten Seiten zugreift, würden Query Builder-Aufrufe dazu führen, dass sich die Beschränkung von `guessTotal` und auch die Parameter `offset` und `limit` erhöhen.
+   * `total=100`, `more=true` – gibt an, dass die Gesamtzahl der Treffer größer als 100 und die genaue Anzahl unbekannt ist. Auf der Benutzeroberfläche können auf der ersten Seite bis zu zehn Ergebnisse angezeigt werden und für die nächsten zehn Seiten können Seitenumbrüche genutzt werden. Sie können dies auch verwenden, um Text wie **&quot;mehr als 100 Ergebnisse gefunden&quot;**. Wenn der Anwender auf die nächsten Seiten zugreift, würden Query Builder-Aufrufe dazu führen, dass sich die Beschränkung von `guessTotal` und auch die Parameter `offset` und `limit` erhöhen.
 
 `guessTotal` sollte auch in Fällen verwendet werden, in denen die Benutzeroberfläche das unendliche Scrollen nutzen muss, um zu vermeiden, dass der Query Builder die genaue Trefferanzahl ermittelt.
 
@@ -417,7 +421,7 @@ Für Haupteigenschaften dieser Art können Sie die Abfrage verkürzen und anstel
 
 >[!NOTE]
 >
->Weitere Informationen zur Erstellung eines OSGi-Bundles mit Nutzung der QueryBuilder-API und Verwendung dieses OSGi-Bundles in einer Adobe Experience Manager-Anwendung erhalten Sie unter [Creating Adobe CQ OSGi bundles that use the Query Builder API](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html) (Erstellen von Adobe CQ-OSGi-Bundles mit Nutzung der Query-Builder-API).
+>Informationen zum Erstellen eines OSGi-Bundles, das die QueryBuilder-API verwendet und dieses OSGi-Bundle in einer Adobe Experience Manager-Anwendung verwendet, finden Sie unter [Erstellen von Adobe CQ OSGi-Bundles, die die Query Builder-API verwenden](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I.
 
 Ausführung der gleichen Abfrage per HTTP mit dem Query Builder-Servlet (JSON):
 
@@ -451,7 +455,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 ## Testen und Debuggen {#testing-and-debugging}
 
-Zum Experimentieren mit und Debuggen von querybuilder-Abfragen können Sie die QueryBuilder-Debuggerkonsole verwenden:
+Um QueryBuilder-Abfragen wiederzugeben und zu debuggen, können Sie die QueryBuilder-Debugger-Konsole unter
 
 `http://localhost:4502/libs/cq/search/content/querydebug.html`
 
@@ -463,56 +467,56 @@ Alternativ hierzu können Sie auch das querybuilder-JSON-Servlet verwenden:
 
 ### Allgemeine Empfehlungen für das Debuggen {#general-debugging-recommendations}
 
-### Abrufen eines erläuterbaren XPath per Protokollierung {#obtain-explain-able-xpath-via-logging}
+### Abrufen von erläuterbarem XPath per Protokollierung {#obtain-explain-able-xpath-via-logging}
 
-Erläutern Sie **alle** Abfragen während des Entwicklungszyklus für den festgelegten Zielindex.
+Erklären **all** Abfragen während des Entwicklungszyklus mit dem Zielindex-Satz verknüpft.
 
-* Aktivieren Sie DEBUG-Protokolle für QueryBuilder, um eine zugrunde liegende erläuterbare XPath-Abfrage zu erhalten.
+* Aktivieren Sie DEBUG-Protokolle für QueryBuilder, um eine zugrunde liegende, erklärbare XPath-Abfrage zu erhalten.
 
    * Navigieren Sie zu https://&lt;Server-Adresse>:&lt;Serverport>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
 
 * Nachdem DEBUG für die obige Klasse aktiviert wurde, zeigen die Protokolle den von Query Builder generierten XPath an.
-* Kopieren Sie die XPath-Abfrage aus dem Protokolleintrag für die zugeordnete QueryBuilder-Abfrage. Beispiel:
+* Kopieren Sie die XPath-Abfrage aus dem Protokolleintrag für die zugeordnete QueryBuilder-Abfrage, z. B.:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Fügen Sie die XPath-Abfrage in [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#explain-query) als XPath ein, um den Abfrageplan abzurufen.
 
-### Abrufen von erläuterbarem XPath über den Query-Builder-Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
+### Abrufen von erläuterbarem XPath über den Query Builder-Debugger {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Verwenden Sie den AEM-QueryBuilder-Debugger, um eine erläuterbare XPath-Abfrage zu generieren:
+* Verwenden Sie den AEM QueryBuilder-Debugger, um eine erläuterbare XPath-Abfrage zu generieren:
 
-Erläutern Sie **alle** Abfragen während des Entwicklungszyklus für den festgelegten Zielindex.
+Erklären **all** Abfragen während des Entwicklungszyklus mit dem Zielindex-Satz verknüpft.
 
-**Abrufen eines erläuterbaren XPath per Protokollierung**
+**Abrufen von erläuterbarem XPath per Protokollierung**
 
-* Aktivieren Sie DEBUG-Protokolle für QueryBuilder, um eine zugrunde liegende erläuterbare XPath-Abfrage zu erhalten.
+* Aktivieren Sie DEBUG-Protokolle für QueryBuilder, um eine zugrunde liegende, erklärbare XPath-Abfrage zu erhalten.
 
    * Navigieren Sie zu https://&lt;Server-Adresse>:&lt;Serverport>/system/console/slinglog. Erstellen Sie einen neuen Logger für `com.day.cq.search.impl.builder.QueryImpl` unter **DEBUG**.
 
 * Nachdem DEBUG für die obige Klasse aktiviert wurde, zeigen die Protokolle den von Query Builder generierten XPath an.
-* Kopieren Sie die XPath-Abfrage aus dem Protokolleintrag für die zugeordnete QueryBuilder-Abfrage. Beispiel:
+* Kopieren Sie die XPath-Abfrage aus dem Protokolleintrag für die zugeordnete QueryBuilder-Abfrage, z. B.:
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Fügen Sie die XPath-Abfrage in [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#explain-query) als XPath ein, um den Abfrageplan abzurufen.
 
-**Abrufen von erläuterbarem XPath über den Query-Builder-Debugger**
+**Abrufen von erläuterbarem XPath über den Query Builder-Debugger**
 
-* Verwenden Sie den AEM-QueryBuilder-Debugger, um eine erläuterbare XPath-Abfrage zu generieren:
+* Verwenden Sie den AEM QueryBuilder-Debugger, um eine erläuterbare XPath-Abfrage zu generieren:
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Stellen Sie die Query-Builder-Abfrage im Query-Builder-Debugger bereit.
-1. Führen Sie die Suche durch.
-1. Rufen Sie den generierten XPath ab.
+1. Stellen Sie die Query Builder-Abfrage im Query Builder-Debugger bereit.
+1. Ausführen der Suche
+1. Abrufen des generierten XPath
 1. Fügen Sie die XPath-Abfrage in Abfrage erläutern als XPath ein, um den Abfrageplan abzurufen.
 
 >[!NOTE]
 >
->Andere Abfragen als querybuilder-Abfragen (XPath, JCR-SQL2) können unter „Abfrage erläutern“ direkt angegeben werden.
+>Abfragen, die nicht über Abfragen verfügen (XPath, JCR-SQL2), können direkt zur Erläuterung der Abfrage bereitgestellt werden.
 
-Eine Beschreibung der Vorgehensweise zum Debuggen von Abfragen mit QueryBuilder erhalten Sie im unten angegebenen Video.
+Eine Übersicht über das Debugging von Abfragen mit QueryBuilder finden Sie im folgenden Video.
 
 >[!NOTE]
 >
@@ -524,7 +528,7 @@ Eine Beschreibung der Vorgehensweise zum Debuggen von Abfragen mit QueryBuilder 
 >
 >Die Konfiguration der Logger wird im Abschnitt [Erstellen Ihrer eigenen Logger und Writer](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers) beschrieben.
 
-Die Protokollausgabe (INFO-Ebene) der Query-Builder-Implementierung beim Ausführen der Abfrage, die unter „Testen und Debuggen“ beschrieben wurde:
+Die Protokollausgabe (INFO-Ebene) der Query Builder-Implementierung bei der Ausführung der Abfrage, die unter Testen und Debuggen beschrieben wird:
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

@@ -2,14 +2,18 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: c7e0c8d4-a0e9-4e98-b356-dad9e31ac3fb
-source-git-commit: 657bb7df01a7b8e03d39c3bda868d87253b81b2a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 100%
+source-wordcount: '1532'
+ht-degree: 98%
 
 ---
 
 # Konfigurationen und der Konfigurations-Browser {#configuration-browser}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM-Konfigurationen dienen zur Verwaltung von Einstellungen in AEM und als Arbeitsbereiche.
 

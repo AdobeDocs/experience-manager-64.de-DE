@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 exl-id: 0af2e992-6670-4e31-9d26-ab74c5b9df8e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 99%
+source-wordcount: '1752'
+ht-degree: 96%
 
 ---
 
 # Erste Schritte mit dem Prozess-Reporting {#getting-started-with-process-reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Process Reporting gibt AEM Forms-Benutzern die Möglichkeit, Informationen über AEM Forms-Prozesse abzufragen, die derzeit in der AEM Forms-Implementierung definiert sind. Process Reporting greift jedoch nicht direkt auf Daten aus dem AEM Forms-Repository zu. Die Daten werden zunächst auf geplanter Basis im Process Reporting-Repository veröffentlicht (*vom ProcessDataPublisher &amp; ProcessDataStorage-Service* s). Die Berichte und Abfragen in Process Reporting werden dann aus den im Repository veröffentlichten Process Reporting-Daten generiert. Process Reporting wird als Bestandteil des Forms Workflow-Moduls installiert.
 
@@ -73,9 +77,9 @@ Um den Veröffentlichungsplan zu ändern, führen Sie folgende Schritte durch:
 1. Beenden der AEM Forms-Server-Instanz.
 1. Melden Sie sich bei WebSphere Administrative Console an. Klicken Sie in der Navigationsstruktur auf **Server** > **Programm-Server** und klicken Sie anschließend im rechten Bereich auf den Servernamen.
 
-1. Klicken Sie unter „Server Infrastructure“ auf **Java and Process Management** > **Process Definition**.
+1. Klicken Sie unter &quot;Server Infrastructure&quot;auf **Java- und Prozessverwaltung** > **Prozessdefinition**.
 
-1. Klicken Sie unter „Additional Properties“ auf **Java Virtual Machine**.
+1. Klicken Sie unter &quot;Additional Properties&quot;auf **Java Virtual Machine**.
 
    Fügen Sie in das Feld „Generic JVM Arguments“ das Argument `-Dreporting.publisher.cron = <expression>.` hinzu
 
@@ -92,7 +96,7 @@ Um den Veröffentlichungsplan zu ändern, führen Sie folgende Schritte durch:
 1. Beenden der AEM Forms-Server-Instanz.
 1. Melden Sie sich bei Administration Console an. Die Standardadresse von WebLogic Administration Console lautet `https://[hostname]:[port]/console`.
 
-1. Klicken Sie unter „Change Center“ auf **Lock &amp; Edit**.
+1. Klicken Sie im Change Center auf **Sperren und bearbeiten**.
 
 1. Klicken Sie unter „Domain Structure“ auf **Environment** > **Servers** und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 

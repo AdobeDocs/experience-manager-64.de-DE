@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: bde29d3a-8bc8-4c30-b764-a2fa1ac34069
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '245'
 ht-degree: 19%
 
 ---
 
 # Komponenten, Funktionen und Funktionsgrundlagen {#component-function-and-feature-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM Communities-Funktionen erfordern, dass Besucher der Site Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) vor dem Posten von Inhalten. Daher [Community-Site-Vorlagen](sites.md), von der aus eine Community-Site [created](sites-console.md), die so konzipiert sind, dass sie eine Anmeldefunktion sowie Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
 
@@ -28,7 +32,7 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponen
 ## Basiskomponenten {#base-components}
 
 * [Kommentare](essentials-comments.md)
-* [Reviews](reviews-basics.md)
+* [Bewertungen](reviews-basics.md)
 * [Tally](tally.md)
 
    * [Likes](essentials-liking.md)
@@ -82,6 +86,6 @@ Für jeden [Feature Pack](deploy-communities.md#latestfeaturepack), wird eine Ja
    * [Serverseitige Anpassungen](server-customize.md)
    * [Übersicht über den Speicheranbieter](srp.md)
 
-* [Kodierungsrichtlinien ](code-guide.md)
+* [Codierungsrichtlinien ](code-guide.md)
 * [Tutorials](tutorials.md)
 * [Fehlerbehebung](troubleshooting.md)

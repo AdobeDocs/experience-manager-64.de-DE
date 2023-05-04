@@ -1,7 +1,7 @@
 ---
 title: MSM-Rollout-Konflikte
 seo-title: MSM Rollout Conflicts
-description: Erfahren Sie, wie Sie Multi Site Manager-Rolloutkonflikte lösen.
+description: Erfahren Sie, wie Sie mit Rollout-Konflikten in Multi Site Manager umgehen.
 seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
 uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
 exl-id: 636b28aa-0806-4250-ad3b-a72be704af1f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 100%
+source-wordcount: '946'
+ht-degree: 66%
 
 ---
 
 # MSM-Rollout-Konflikte{#msm-rollout-conflicts}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einer abhängigen Live Copy-Verzweigung erstellt werden.
 
@@ -26,17 +30,17 @@ Solche Konflikte müssen beim Rollout gehandhabt und aufgelöst werden.
 
 ## Konfliktbehandlung {#conflict-handling}
 
-Wenn Konfliktseiten (in den Blueprint- und Live Copy-Zweigen) vorhanden sind, gestattet Ihnen MSM die Definition, wie (oder sogar ob) dieser Konflikt behoben werden soll.
+Wenn in Konflikt stehende Seiten vorhanden sind (in den Blueprint- und Live Copy-Verzweigungen), können Sie mit MSM definieren, wie diese verarbeitet werden sollen (oder auch wenn dies der Fall ist).
 
 Um sicherzustellen, dass der Rollout nicht gesperrt ist, können mögliche Definitionen Folgendes umfassen:
 
-* Welche Seite (Blueprint oder Live Copy) während des Rollouts Vorrang hat
+* welche Seite (Blueprint oder Live Copy) beim Rollout Priorität hat,
 * Welche Seiten umbenannt werden (und wie)
 * Wie dies jeglichen veröffentlichten Inhalt beeinflusst
 
-   Das Standardverhalten von AEM (Out-of-the-Box) besteht darin, dass veröffentlichte Inhalte davon unbeeinflusst bleiben. Wenn also eine Seite, die im Live Copy-Zweig manuell erstellt wurde, veröffentlicht wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout auch weiterhin veröffentlicht.
+   Das Standardverhalten von AEM (Out-of-the-Box) besteht darin, dass veröffentlichte Inhalte davon unbeeinflusst bleiben. Wenn also eine Seite veröffentlicht wurde, die manuell im Live Copy-Zweig erstellt wurde, wird dieser Inhalt nach der Konfliktbehandlung und dem Rollout weiterhin veröffentlicht.
 
-Neben den Standardfunktionen können benutzerdefinierte Konflikt-Handler hinzugefügt werden, um unterschiedliche Regeln zu implementieren. Diese können auch das Veröffentlichen von Aktionen als Einzelprozess gestatten.
+Neben der Standardfunktion können auch benutzerdefinierte Konflikt-Handler hinzugefügt werden, um verschiedene Regeln zu implementieren. Diese können auch Veröffentlichungsaktionen als einzelner Prozess zulassen.
 
 ### Beispiel-Szenario {#example-scenario}
 
@@ -90,11 +94,11 @@ AEM verfügt über ein [vordefiniertes Verhalten, wenn das Konflikt-Management d
 
 ## Konflikt-Handler {#conflict-handlers}
 
-AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist ein (das übliche) Verfahren zum Beheben derartiger Konflikte. Mehrere Konflikt-Handler können aktiv sein, um eine Reihe verschiedener Verhaltensweisen zu ermöglichen.
+AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist eine (übliche) Methode zur Lösung solcher Konflikte. Es können mehrere Konflikt-Handler verwendet werden, um eine Auswahl verschiedener Verhaltensweisen zu ermöglichen.
 
-AEM stellt Folgendes bereit:
+AEM bietet:
 
-* Den [Standard-Konflikt-Handler](#default-conflict-handler):
+* Die [Standard-Konflikt-Handler](#default-conflict-handler):
 
    * `ResourceNameRolloutConflictHandler`
 
@@ -103,14 +107,14 @@ AEM stellt Folgendes bereit:
 
 ### Standard-Konflikt-Handler {#default-conflict-handler}
 
-Der Standard-Konflikt-Handler:
+Der standardmäßige Konflikt-Handler:
 
 * Heißt `ResourceNameRolloutConflictHandler`
 
 * Mit diesem Handler hat die Blueprint-Seite Vorrang.
-* Das Service-Ranking für diesen Handler wurde als niedrig festgelegt (d. h. unterhalb des Standardwerts für die Eigenschaft `service.ranking`), da davon ausgegangen wird, dass benutzerdefinierte Handler ein höheres Ranking benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Das Service-Ranking für diesen Handler wurde als niedrig festgelegt (d. h. unterhalb des Standardwerts für die Eigenschaft `service.ranking`), da davon ausgegangen wird, dass benutzerdefinierte Handler ein höheres Ranking benötigen. Das Ranking ist jedoch nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
-Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wird (innerhalb der Live Copy-Verzweigung) nach `/b_msm_moved` verschoben.
+Dieser Konflikt-Handler hat Vorrang vor dem Blueprint. Die Live Copy-Seite `/b` wird (innerhalb der Live Copy-Verzweigung) nach `/b_msm_moved` verschoben.
 
 * Live Copy: `/b`
 
@@ -154,13 +158,13 @@ Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wir
 
 ### Angepasste Handler {#customized-handlers}
 
-Mit angepassten Konflikt-Handlern können Sie Ihre eigenen Regeln implementieren. Mit dem Service-Ranking-Mechanismus können Sie zudem festlegen, wie sie mit anderen Handlern interagieren.
+Mit benutzerdefinierten Konflikt-Handlern können Sie Ihre eigenen Regeln implementieren. Mit dem Service-Ranking-Mechanismus können Sie auch definieren, wie sie mit anderen Handlern interagieren.
 
 Benutzerdefinierte Konflikt-Handler können:
 
 * gemäß Ihren Anforderungen benannt werden; ``
-* gemäß Ihren Anforderungen entwickelt/konfiguriert werden. Beispiel: Sie können einen Handler entwickeln, sodass die Live Copy-Seite Vorrang erhält.
-* so konzipiert sein, dass die Konfiguration unter Verwendung der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) erfolgt; insbesondere gilt:
+* entsprechend Ihren Anforderungen entwickelt/konfiguriert werden; Sie können beispielsweise einen Handler entwickeln, der der Live Copy-Seite Vorrang einräumt.
+* Kann für die Konfiguration mit dem [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md); insbesondere
 
    * **Dienstpriorität**:
 
@@ -168,13 +172,13 @@ Benutzerdefinierte Konflikt-Handler können:
 
       Der Standardwert ist 0.
 
-### Verhalten, wenn die Konflikt-Behandlung deaktiviert ist {#behavior-when-conflict-handling-deactivated}
+### Verhalten bei deaktivierter Konfliktbehandlung {#behavior-when-conflict-handling-deactivated}
 
-Wenn Sie [die Konfliktbehebung manuell deaktivieren](#rollout-manager-and-conflict-handling), ergreift AEM auf keiner der Konfliktseiten Maßnahmen (das Rollout von nicht im Konflikt befindlichen Seiten erfolgt erwartungsgemäß).
+Wenn Sie manuell [Deaktivieren der Konfliktbehandlung](#rollout-manager-and-conflict-handling) AEM keine Maßnahmen auf Konfliktseiten ergreifen (nicht widersprüchliche Seiten werden erwartungsgemäß bereitgestellt).
 
 >[!CAUTION]
 >
->AEM zeigt nicht an, dass Konflikte ignoriert werden, da dieses Verhalten explizit konfiguriert werden muss. Daher wird davon ausgegangen, dass dies das erforderliche Verhalten ist.
+>AEM gibt keinen Hinweis darauf, dass Konflikte ignoriert werden, da dieses Verhalten explizit konfiguriert werden muss. Daher wird davon ausgegangen, dass es sich um das erforderliche Verhalten handelt.
 
 In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird nicht kopiert und die Live Copy-Seite `/b` bleibt unberührt.
 

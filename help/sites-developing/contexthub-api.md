@@ -10,14 +10,18 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 exl-id: 6ae560e7-cf45-466d-832c-6f2b26e08953
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5006'
-ht-degree: 100%
+source-wordcount: '5042'
+ht-degree: 70%
 
 ---
 
 # Referenz zur ContextHub-JavaScript-API {#contexthub-javascript-api-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die ContextHub-JavaScript-API ist für Ihre Skripte verfügbar, wenn die [ContextHub-Komponente zur Seite hinzugefügt wurde](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
@@ -27,7 +31,7 @@ Konstante Werte, die von der ContextHub-JavaScript-API definiert werden.
 
 ### Ereigniskonstanten {#event-constants}
 
-In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei ContextHub-Stores auftreten. Siehe auch [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)
+In der folgenden Tabelle sind die Namen von Ereignissen aufgeführt, die bei ContextHub-Stores auftreten. Siehe auch [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing).
 
 | Konstante | Beschreibung | Wert |
 |---|---|---|
@@ -117,17 +121,17 @@ var geoloc = ContextHub.getStore("geolocation");
 
 ## ContextHub.SegmentEngine.Segment {#contexthub-segmentengine-segment}
 
-Stellt ein ContextHub-Segment dar. Verwenden Sie ContextHub.SegmentEngine.SegmentManager, um Segmente zu erhalten.
+Stellt ein ContextHub-Segment dar. Verwenden Sie ContextHub.SegmentEngine.SegmentManager , um Segmente abzurufen.
 
 ### Funktionen (ContextHub.ContextEngine.Segment) {#functions-contexthub-contextengine-segment}
 
 #### getName() {#getname}
 
-Gibt den Namen des Segments als Stringwert zurück.
+Gibt den Namen des Segments als String -Wert zurück.
 
 #### getPath() {#getpath}
 
-Gibt den Repository-Pfad der Segmentdefinition als Stringwert zurück.
+Gibt den Repository-Pfad der Segmentdefinition als String-Wert zurück.
 
 ## ContextHub.SegmentEngine.SegmentManager {#contexthub-segmentengine-segmentmanager}
 
@@ -141,7 +145,7 @@ Gibt die Segmente zurück, die im aktuellen Kontext aufgelöst werden. Diese Fun
 
 **Rückgabe**
 
-Ein Array von ContextHub.SegmentEngine.Segment-Objekten.
+Ein Array von ContextHub.SegmentEngine.Segment -Objekten.
 
 ## ContextHub.Store.Core {#contexthub-store-core}
 
@@ -159,7 +163,7 @@ Der Name des Stores.
 
 #### persistence {#persistence}
 
-Ein ContextHub.Utils.Persistence-Objekt. Weitere Informationen über den Standardwert und die Initialisierung finden Sie unter [`init(name,config)`](/help/sites-developing/contexthub-api.md#init-name-config).
+Ein ContextHub.Utils.Persistence -Objekt. Weitere Informationen über den Standardwert und die Initialisierung finden Sie unter [`init(name,config)`](/help/sites-developing/contexthub-api.md#init-name-config).
 
 ### Funktionen (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
@@ -186,7 +190,7 @@ Ein `boolean`-Wert:
 
 #### addReference(key, anotherKey) {#addreference-key-anotherkey}
 
-Erstellt eine Referenz von einem Schlüssel auf einem anderen Schlüssel. Ein Schlüssel kann sich nicht selbst referenzieren.
+Erstellt einen Verweis von einem Schlüssel zum anderen. Ein Schlüssel kann sich nicht selbst referenzieren.
 
 **Parameter**
 
@@ -215,7 +219,7 @@ Gibt den Wert zurück, der einem Schlüssel zugeordnet ist.
 
 **Parameter**
 
-* **key:** (String) der Schlüssel, für den der Wert zurückgegeben werden soll.
+* **key:** (String) Der Schlüssel, für den der Wert zurückgegeben werden soll.
 
 **Rückgabe**
 
@@ -247,7 +251,7 @@ Ein Array, das referenzierende Schlüssel als Indizes für die referenzierten Sc
 
 #### getTree(includeInternals) {#gettree-includeinternals}
 
-Ruft den Datenbaum vom Store ab. Optional können Sie die Schlüssel/Wert-Paare einschließen, die intern vom ContextHub-Framework verwendet werden.
+Ruft die Datenstruktur aus dem Store ab. Optional können Sie die Schlüssel/Wert-Paare einbeziehen, die intern vom ContextHub-Framework verwendet werden.
 
 **Parameter**
 
@@ -261,20 +265,20 @@ Ein Objekt, das die Datenstruktur darstellt. Die Schlüssel sind die Eigenschaft
 
 Initialisiert den Store.
 
-* Setzt die Storedaten auf ein leeres Objekt.
+* Legt für die Speicherdaten ein leeres Objekt fest.
 * Setzt die Store-Referenzen auf ein leeres Objekt.
 * Der eventChannel ist data:*Name*, wobei *Name* der Storename ist.
 
-* Der storeDataKey ist /store/*Name*, wobei *Name* der Storename ist.
+* Der storeDataKey ist /store/*name*, wobei *name* ist der Speichername.
 
 **Parameter**
 
 * **name:** Der Name des Stores.
 * **config:** Ein Objekt, das Konfigurationseigenschaften enthält:
 
-   * eventDeferring: Standardwert ist 32.
-   * eventing: Das [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)-Objekt für diesen Store. Der Standardwert ist der ContextHub.eventing-Objektgebrauch.
-   * persistence: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Der Standardwert ist das ContextHub.persistence-Objekt.
+   * eventDeferring: Der Standardwert ist 32.
+   * eventing: Die [ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) -Objekt für diesen Store. Der Standardwert ist das ContextHub.eventing -Objekt.
+   * persistence: Das ContextHub.Utils.Persistence -Objekt für diesen Store. Der Standardwert ist das ContextHub.persistence -Objekt.
 
 #### isEventingPaused() {#iseventingpaused}
 
@@ -289,7 +293,7 @@ Ein boolescher Wert:
 
 #### pauseEventing() {#pauseeventing}
 
-Hält Eventing für den Store an, sodass keine Ereignisse ausgelöst werden. Diese Funktion erfordert keine Parameter und gibt keinen Wert zurück.
+Setzt das Eventing für den Store aus, sodass keine Ereignisse ausgelöst werden. Diese Funktion erfordert keine Parameter und gibt keinen Wert zurück.
 
 #### removeItem(key, options)  {#removeitem-key-options}
 
@@ -332,7 +336,7 @@ Ein `boolean`-Wert:
 
 Setzt die Anfangswerte der persistenten Daten des Stores zurück. Optional können Sie alle anderen Daten aus dem Store entfernen. Eventing wird für diesen Store angehalten, während der Store zurückgesetzt wird. Diese Funktion gibt keinen Wert zurück.
 
-Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Storeobjekts verwendet wird.
+Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Store-Objekts verwendet wird.
 
 **Parameter**
 
@@ -340,7 +344,7 @@ Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitge
 
 Setzt die Anfangswerte der persistenten Daten des Stores zurück. Optional können Sie alle anderen Daten aus dem Store entfernen. Eventing wird für diesen Store angehalten, während der Store zurückgesetzt wird. Diese Funktion gibt keinen Wert zurück.
 
-Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Storeobjekts verwendet wird.
+Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Store-Objekts verwendet wird.
 
 **Parameter**
 
@@ -348,7 +352,7 @@ Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitge
 
 #### resolveReference(key, retry) {#resolvereference-key-retry}
 
-Ruft einen referenzierten Schlüssel ab. Optional können Sie die Anzahl der Iterationen angeben, die zum Lösen der besten Übereinstimmung verwendet werden sollen.
+Ruft einen referenzierten Schlüssel ab. Optional können Sie die Anzahl der Iterationen angeben, die zur Auflösung der besten Übereinstimmung verwendet werden sollen.
 
 **Parameter**
 
@@ -362,7 +366,7 @@ Ein `string`-Wert, der den referenzierten Schlüssel darstellt. Wenn keine Refer
 
 #### resumeEventing() {#resumeeventing}
 
-Setzt Eventing für diesen Store fort, sodass Ereignisse ausgelöst werden. Diese Funktion definiert keine Parameter und gibt keinen Wert zurück.
+Setzt das Ereignis für diesen Store fort, damit Ereignisse ausgelöst werden. Diese Funktion definiert keine Parameter und gibt keinen Wert zurück.
 
 #### setItem(key, value, options)  {#setitem-key-value-options}
 
@@ -379,7 +383,7 @@ Die Ereignisdaten umfassen den Store-Namen, den Schlüssel, den vorherigen Wert,
 
    * silent: Ein Wert `true` verhindert das Auslösen des `data`-Ereignisses. Der Standardwert ist `false`.
 
-* **value:** (Object) Der Wert, der dem Schlüssel zugeordnet werden soll.
+* **Wert:** (Object) Der Wert, der mit dem Schlüssel verknüpft werden soll.
 
 **Rückgabe**
 
@@ -392,7 +396,7 @@ Ein `boolean`-Wert:
 
 Ein Store, der JSON-Daten enthält. Die Daten werden von einem externen JSONP-Service oder optional von einem Service abgerufen, der JSON-Daten zurückgibt. Geben Sie die Details des Service mithilfe der [-Funktion an, wenn Sie eine Instanz dieser Klasse erstellen.`init`](/help/sites-developing/contexthub-api.md#init-name-config)
 
-Der Store verwendet die speicherinterne Persistenz (JavaScript-Variable). Storedaten sind nur während der Lebensdauer der Seite verfügbar.
+Der Speicher verwendet speicherinterne Persistenz (JavaScript-Variable). Speicherdaten sind nur während der Lebensdauer der Seite verfügbar.
 
 ContextHub.Store.JSONPStore erweitert [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) und übernimmt die Funktionen dieser Klasse.
 
@@ -404,14 +408,14 @@ Konfiguriert die Details für die Verbindung mit dem JSONP-Service, den dieses O
 
 **Parameter**
 
-* **serviceConfig:** Ein Objekt, das folgende Eigenschaften enthält:
+* **serviceConfig:** Ein Objekt, das die folgenden Eigenschaften enthält:
 
-   * host: (String) Servername oder IP-Adresse.
-   * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Falls „true“, {callback: &quot;ContextHub.Callbacks.*Object.name*} Objekt wird dem service.params-Objekt hinzugefügt.
+   * Host: (String) Der Servername oder die IP-Adresse.
+   * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn &quot;true&quot;, wird der {callback: &quot;ContextHub.Callbacks.*Object.name*} -Objekt wird dem Objekt service.params hinzugefügt.
    * params: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
    * path: (String) Der Pfad zum Dienst.
    * port: (Number) Die Portnummer des Dienstes.
-   * secure: (String oder Boolesch) Bestimmt das für die Service-URL zu verwendende Protokoll:
+   * secure: (String oder Boolesch) Bestimmt das für die Dienst-URL zu verwendende Protokoll:
 
       * auto: //
       * true: https://
@@ -421,11 +425,11 @@ Konfiguriert die Details für die Verbindung mit dem JSONP-Service, den dieses O
 
 #### getRawResponse() {#getrawresponse}
 
-Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Service zwischengespeichert wurde. Die Funktion erfordert keine Parameter.
+Gibt die unbearbeitete Antwort zurück, die seit dem letzten Aufruf des JSONP-Service zwischengespeichert wurde. Für die Funktion sind keine Parameter erforderlich.
 
 **Rückgabe**
 
-Ein Objekt, das die unbearbeitete Antwort darstellt.
+Ein Objekt, das die unformatierte Antwort darstellt.
 
 #### getServiceDetails() {#getservicedetails}
 
@@ -435,13 +439,13 @@ Ruft das Service-Objekt für dieses ContextHub.Store.JSONPStore-Objekt ab. Das S
 
 Ein Objekt mit den folgenden Eigenschaften:
 
-* **host:** (String) Servername oder IP-Adresse.
-* **jsonp:** (Boolesch) Ein Wert „true“ zeigt an, dass der Dienst ein JSONP-Dienst ist, andernfalls ist er „false“. Falls „true“, {callback: &quot;ContextHub.Callbacks.*Object.name*} Objekt wird dem service.params-Objekt hinzugefügt.
+* **Host:** (String) Der Servername oder die IP-Adresse.
+* **jsonp:** (Boolesch) Ein Wert „true“ zeigt an, dass der Dienst ein JSONP-Dienst ist, andernfalls ist er „false“. Wenn &quot;true&quot;, wird der {callback: &quot;ContextHub.Callbacks.*Object.name*} -Objekt wird dem Objekt service.params hinzugefügt.
 
 * **params:** (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen sind Eigenschaftsnamen und Parameterwerte sind Eigenschaftswerte.
 * **path:** (String) Der Pfad zum Dienst.
 * **port:** (Number) Die Portnummer des Dienstes.
-* **secure:** (String oder Boolesch) Bestimmt das für die Service-URL zu verwendende Protokoll:
+* **secure:** (String oder Boolesch) Bestimmt das für die Dienst-URL zu verwendende Protokoll:
 
    * auto: //
    * true: https://
@@ -461,29 +465,29 @@ Ein `string`-Wert, der die Service-URL darstellt.
 
 #### init(name, config)  {#init-name-config-1}
 
-initialisiert das ContextHub.Store.JSONPStore-Objekt.
+initialisiert das Objekt ContextHub.Store.JSONPStore .
 
 **Parameter**
 
 * **name:** (String) Der Name des Stores.
 * **config:** (Object) Ein Objekt, das die Service-Eigenschaft enthält. Das JSONPStore-Objekt verwendet die Eigenschaften des `service`objekts, um die URL des JSONP-Service zu erstellen:
 
-   * EventDeferring: 32.
-   * eventing: Das ContextHub.Utils.Eventing-Objekt für diesen Store. Der Standardwert ist das `ContextHub.eventing`-Objekt.
-   * persistence: Das ContextHub.Utils.Persistence-Objekt für diesen Store. Standardmäßig wird die Store-Persistenz verwendet (JavaScript-Objekt).
+   * eventDeferring: 32.
+   * eventing: Das ContextHub.Utils.Eventing -Objekt für diesen Store. Der Standardwert ist das `ContextHub.eventing`-Objekt.
+   * persistence: Das ContextHub.Utils.Persistence -Objekt für diesen Store. Standardmäßig wird die Store-Persistenz verwendet (JavaScript-Objekt).
    * service: (Object)
 
-      * host: (String) Servername oder IP-Adresse.
+      * Host: (String) Der Servername oder die IP-Adresse.
       * jsonp: (Boolesch) Ein Wert „true“ zeigt an, dass der Service ein JSONP-Service ist, andernfalls ist er „false“. Wenn „true“, wird das `{callback: "ContextHub.Callbacks.*Object.name*}`-Objekt `service.params` hinzugefügt.
       * params: (Object) URL-Parameter, die als Objekteigenschaften dargestellt werden. Parameternamen und Werte sind jeweils die Namen und Werte der Objekteigenschaften.
       * path: (String) Der Pfad zum Dienst.
       * port: (Number) Die Portnummer des Dienstes.
-      * secure: (String oder Boolesch) Bestimmt das für die Service-URL zu verwendende Protokoll:
+      * secure: (String oder Boolesch) Bestimmt das für die Dienst-URL zu verwendende Protokoll:
 
          * auto: //
          * true: https://
          * false: https://
-      * timeout: (Number) Die Zeitspanne, die gewartet wird, bis der JSONP-Dienst vor Ablauf der Zeit reagiert (in Millisekunden).
+      * timeout: (Number) Die Wartezeit, die auf die Antwort des JSONP-Dienstes vor Ablauf der Zeit gewartet wird (in Millisekunden).
       * ttl: Die Mindestdauer in Millisekunden, die zwischen Aufrufen an den JSONP-Dienst vergeht. (Siehe [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) Funktion).
 
 
@@ -491,17 +495,17 @@ initialisiert das ContextHub.Store.JSONPStore-Objekt.
 
 Fragt den Remote-JSONP-Service ab und speichert die Antwort zwischen. Wenn die Zeit seit dem letzten Aufruf dieser Funktion kleiner als der Wert von `config.service.ttl` ist, wird der Service nicht aufgerufen und die zwischengespeicherte Antwort wird nicht geändert. Optional können Sie einen Aufruf des Service erzwingen. Die Eigenschaft `config.service.ttl` wird festgelegt, wenn die [init](/help/sites-developing/contexthub-api.md#init-name-config)-Funktion aufgerufen wird, um den Store zu initialisieren.
 
-Löst das bereites Ereignis aus, wenn die Abfrage beendet ist. Wenn die JSONP-Service-URL nicht festgelegt ist, führt die Funktion nichts aus.
+Löst das bereites Ereignis aus, wenn die Abfrage beendet ist. Wenn die JSONP-Dienst-URL nicht festgelegt ist, führt die Funktion nichts aus.
 
 **Parameter**
 
-* **reload:** (Boolesch) Ein Wert „true“ entfernt die zwischengespeicherte Antwort und erzwingt den Aufruf des JSONP-Dienstes.
+* **neu laden:** (Boolesch) Der Wert true entfernt die zwischengespeicherte Antwort und erzwingt den Aufruf des JSONP-Dienstes.
 
 #### Zurücksetzen {#reset}
 
 Setzt die Anfangswerte der persistenten Daten des Stores zurück und ruft dann den JSONP-Service auf. Optional können Sie alle anderen Daten aus dem Store entfernen. Eventing wird für diesen Store angehalten, während die Anfangswerte zurückgesetzt werden. Diese Funktion gibt keinen Wert zurück.
 
-Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Storeobjekts verwendet wird.
+Anfangswerte werden in der initialValues-Eigenschaft des config-Objekts bereitgestellt, das zum Instanziieren des Store-Objekts verwendet wird.
 
 **Parameter**
 
@@ -531,7 +535,7 @@ Verwaltet Benutzeroberflächenmodule und Benutzeroberflächenmodul-Renderer.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registriert einen Benutzeroberflächenmodulrenderer mit ContextHub. Nachdem der Renderer registriert ist, kann er verwendet werden, um [Benutzeroberflächenmodule zu erstellen](/help/sites-administering/contexthub-config.md#adding-a-ui-module). Verwenden Sie diese Funktion, wenn Sie[ ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) erweitern, um einen benutzerdefinierten Benutzeroberflächenmodulrenderer zu erstellen.
+Registriert einen Benutzeroberflächenmodul-Renderer bei ContextHub. Nachdem der Renderer registriert wurde, kann er wie folgt verwendet werden: [Benutzeroberflächenmodule erstellen](/help/sites-administering/contexthub-config.md#adding-a-ui-module). Verwenden Sie diese Funktion, wenn Sie [extending ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) , um einen benutzerdefinierten Benutzeroberflächenmodul-Renderer zu erstellen.
 
 **Parameter**
 
@@ -581,7 +585,7 @@ Gibt alle Cookies zurück, deren Schlüssel einem Filter entsprechen.
 
 * (Wahlweise) **filter:** Kriterien für übereinstimmende Cookie-Schlüssel. Um alle Cookies zurückzugeben, geben Sie keinen Wert an. Die folgenden Typen werden unterstützt:
 
-   * String: Der String wird mit dem Cookie-Schlüssel verglichen.
+   * Zeichenfolge: Die Zeichenfolge wird mit dem Cookie-Schlüssel verglichen.
    * Array: Jedes Element im Array ist ein Filter.
    * Ein RegExp-Objekt: Die Testfunktion des Objekts wird verwendet, um Cookie-Schlüssel abzugleichen.
    * Eine Funktion: Eine Funktion, die einen Cookie-Schlüssel für eine Übereinstimmung testet. Die Funktion muss den Cookie-Schlüssel als Parameter annehmen und true zurückgeben, wenn der Test eine Übereinstimmung bestätigt.
@@ -602,7 +606,7 @@ Gibt einen Cookie-Wert zurück.
 
 **Parameter**
 
-* **key:** Der Schlüssel des Cookies, für das Sie einen Wert abrufen möchten.
+* **key:** Der Schlüssel des Cookies, für das Sie den Wert abrufen möchten.
 
 **Rückgabe**
 
@@ -622,7 +626,7 @@ Gibt ein Array der Schlüssel der vorhandenen Cookies zurück, die mit einem Fil
 
 * **filter:** Kriterien für übereinstimmende Cookie-Schlüssel. Die folgenden Typen werden unterstützt:
 
-   * String: Der String wird mit dem Cookie-Schlüssel verglichen.
+   * Zeichenfolge: Die Zeichenfolge wird mit dem Cookie-Schlüssel verglichen.
    * Array: Jedes Element im Array ist ein Filter.
    * Ein RegExp-Objekt: Die Testfunktion des Objekts wird verwendet, um Cookie-Schlüssel abzugleichen.
    * Eine Funktion: Eine Funktion, die einen Cookie-Schlüssel für eine Übereinstimmung testet. Die Funktion muss den Cookie-Schlüssel als Parameter annehmen und `true` zurückgeben, wenn der Test eine Übereinstimmung bestätigt.
@@ -639,7 +643,7 @@ ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 
 #### removeItem(key, options)  {#removeitem-key-options-1}
 
-Entfernt ein Cookie. Um das Cookie zu entfernen, wird der Wert auf einen leeren String gesetzt und das Ablaufdatum wird auf den Tag vor dem aktuellen Datum gesetzt.
+Entfernt ein Cookie. Um das Cookie zu entfernen, wird der Wert auf eine leere Zeichenfolge gesetzt und das Ablaufdatum wird auf den Tag vor dem aktuellen Datum gesetzt.
 
 **Parameter**
 
@@ -664,7 +668,7 @@ Erstellt ein Cookie mit dem angegebenen Schlüssel und Wert und fügt das Cookie
 **Parameter**
 
 * **key:** Ein String, der den Schlüssel des Cookies enthält.
-* **value:** Ein String, der den Cookie-Wert enthält.
+* **Wert:** Ein String , der den Cookie-Wert enthält.
 * **options:** (Optional) Ein Objekt, das eine der folgenden Eigenschaften enthält, die die Cookie-Attribute konfigurieren:
 
    * expires: Ein `date`- oder `number`wert, der angibt, wann das Cookie abläuft. Ein Datumswert gibt die absolute Verfallszeit an. Eine Zahl (in Tagen) legt die Verfallszeit auf die aktuelle Zeit plus die Zahl fest. Der Standardwert ist `undefined`.
@@ -702,7 +706,7 @@ Diese Funktion gibt keinen Wert zurück.
 
 ## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-Ermöglicht es Ihnen, Funktionen an ContextHub-Store-Ereignisse zu binden und zu lösen. Greifen Sie auf ContextHub.Utils.Eventing-Objekte für einen Store zu, der die [eventing](/help/sites-developing/contexthub-api.md#eventing)-Eigenschaft des Stores verwendet.
+Ermöglicht es Ihnen, Funktionen an ContextHub-Store-Ereignisse zu binden und zu lösen. Greifen Sie auf ContextHub.Utils.Eventing -Objekte für einen Store zu, der die [Eventing](/help/sites-developing/contexthub-api.md#eventing) -Eigenschaft des Stores.
 
 ### Funktionen (ContextHub.Utils.Eventing) {#functions-contexthub-utils-eventing}
 
@@ -722,13 +726,13 @@ Diese Funktion gibt keinen Wert zurück.
 
 #### on(name, handler, selector, triggerForPastEvents) {#on-name-handler-selector-triggerforpastevents}
 
-Bindet eine Funktion an ein Ereignis. Die Funktion wird jedes Mal aufgerufen, wenn das Ereignis eintritt. Optional kann die Funktion für Ereignisse aufgerufen werden, die in der Vergangenheit stattgefunden haben, bevor die Bindung eingerichtet wird.
+Bindet eine Funktion an ein Ereignis. Die Funktion wird jedes Mal aufgerufen, wenn das Ereignis eintritt. Optional kann die Funktion für Ereignisse aufgerufen werden, die in der Vergangenheit aufgetreten sind, bevor die Bindung hergestellt wurde.
 
 **Parameter**
 
-* **name:** (String) Der [Name des Ereignisses](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing), an das Sie die Funktion binden.
+* **name:** (String) Die [Name des Ereignisses](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) an die Sie die Funktion binden.
 
-* **handler:** (Function) Die Funktion zum Binden an das Ereignis.
+* **handler:** (Funktion) Die Funktion, die an das Ereignis gebunden werden soll.
 * **selector**: (String) Eine eindeutige Kennung für die Bindung. Sie benötigen den Selektor, um die Bindung zu identifizieren, wenn Sie die `off`-Funktion verwenden möchten, um die Bindung zu entfernen.
 
 * **triggerForPastEvents:** (Boolesch) Gibt an, ob der Handler für Ereignisse ausgeführt werden soll, die in der Vergangenheit aufgetreten sind. Ein Wert `true` ruft den Handler für vergangene Ereignisse auf. Ein Wert `false` ruft den Handler für zukünftige Ereignisse auf. Der Standardwert ist `true`.
@@ -764,13 +768,13 @@ Im folgenden Beispiel wird eine Funktion an das Datenereignis des Geolocation-St
 
 #### once(name, handler, selector, triggerForPastEvents) {#once-name-handler-selector-triggerforpastevents}
 
-Bindet eine Funktion an ein Ereignis. Die Funktion wird nur einmal beim ersten Auftreten des Ereignisses aufgerufen. Optional kann die Funktion für das Ereignis aufgerufen werden, das in der Vergangenheit stattgefunden hat, bevor die Bindung hergestellt wird.
+Bindet eine Funktion an ein Ereignis. Die Funktion wird nur einmal beim ersten Auftreten des Ereignisses aufgerufen. Optional kann die Funktion für das Ereignis aufgerufen werden, das in der Vergangenheit aufgetreten ist, bevor die Bindung hergestellt wurde.
 
 **Parameter**
 
-* **name:** (String) Der [Name des Ereignisses](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing), an das Sie die Funktion binden.
+* **name:** (String) Die [Name des Ereignisses](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) an die Sie die Funktion binden.
 
-* **handler:** (Function) Die Funktion zum Binden an das Ereignis.
+* **handler:** (Funktion) Die Funktion, die an das Ereignis gebunden werden soll.
 * **selector**: (String) Eine eindeutige Kennung für die Bindung. Sie benötigen den Selektor, um die Bindung zu identifizieren, wenn Sie die `off`-Funktion verwenden möchten, um die Bindung zu entfernen.
 
 * **triggerForPastEvents:** (Boolesch) Gibt an, ob der Handler für Ereignisse ausgeführt werden soll, die in der Vergangenheit aufgetreten sind. Ein Wert `true` ruft den Handler für vergangene Ereignisse auf. Ein Wert `false` ruft den Handler für zukünftige Ereignisse auf. Der Standardwert ist `true`.
@@ -811,7 +815,7 @@ Analysiert einen String als JSON und konvertiert ihn in ein JavaScript-Objekt.
 
 **Parameter**
 
-* **data:** Ein Stringwert im JSON-Format.
+* **data:** Ein string -Wert im JSON-Format.
 
 **Rückgabe**
 
@@ -878,11 +882,11 @@ Erstellt eine Kopie eines Objekts, sucht und entfernt Elemente in der Datenstruk
 
 **Parameter**
 
-* **tree:** Das Objekt zum Löschen.
+* **tree:** Das Objekt, das bereinigt werden soll.
 
 **Rückgabe**
 
-Eine Kopie der Struktur, die bereinigt wird.
+Eine Kopie des Baums, der bereinigt wird.
 
 #### getItem() {#getitem}
 
@@ -921,7 +925,7 @@ Der folgende Beispiel-Code gibt den Wert `260` zurück.
 ContextHub.Utils.JSON.tree.getItem(myObject, "/user/location/details/elevation");
 ```
 
-Der folgende Beispiel-Code ruft den Wert für den Schlüssel zurück, der untergeordnete Schlüssel hat:
+Der folgende Beispielcode ruft den Wert für einen Schlüssel mit untergeordneten Schlüsseln ab:
 
 ```
 ContextHub.Utils.JSON.tree.getItem(myObject, "/user");
@@ -943,7 +947,7 @@ Object {
 
 #### getKeys() {#getkeys}
 
-Ruft alle Schlüssel aus der Datenstruktur eines Objekts ab. Optional können Sie nur die Schlüssel der untergeordneten Elemente eines bestimmten Schlüssels abrufen. Sie können optional auch eine Sortierreihenfolge der abgerufenen Schlüssel angeben.
+Ruft alle Schlüssel aus der Datenstruktur eines Objekts ab. Optional können Sie nur die Schlüssel der untergeordneten Elemente eines bestimmten Schlüssels abrufen. Sie können auch optional eine Sortierreihenfolge der abgerufenen Schlüssel angeben.
 
 **Parameter**
 
@@ -1015,7 +1019,7 @@ myObject {
 }
 ```
 
-Das folgende Beispielskript entfernt den Zweig /one/two/three/four aus dem Datenbaum:
+Das folgende Beispielskript entfernt den Zweig /one/two/three/four aus der Datenstruktur:
 
 ```
 myObject = ContextHub.Utils.JSON.tree.removeItem(myObject, "/one/two/three/four");
@@ -1033,11 +1037,11 @@ myObject {
 
 #### sanitizeKey(key) {#sanitizekey-key}
 
-Bereinigt Stringwerte, um sie als Schlüssel nutzbar zu machen. Um einen String zu bereinigen, führt diese Funktion die folgenden Aktionen aus:
+Bereinigt Stringwerte, um sie als Schlüssel nutzbar zu machen. Um eine Zeichenfolge zu bereinigen, führt diese Funktion die folgenden Aktionen aus:
 
-* Reduziert mehrere aufeinander folgende Schrägstriche zu einem Schrägstrich.
-* Entfernt Leerzeichen am Anfang und am Ende des Strings.
-* Teilt das Ergebnis in ein Array von Strings auf, die durch Schrägstriche abgegrenzt sind.
+* Reduziert mehrere aufeinander folgende Schrägstriche in einen einzigen Schrägstrich.
+* Entfernt Leerzeichen vom Anfang und Ende der Zeichenfolge.
+* Teilt das Ergebnis in ein Array von Zeichenfolgen, die durch Schrägstriche abgegrenzt werden.
 
 Verwenden Sie das resultierende Array, um einen verwendbaren Schlüssel zu erstellen.  **Parameter**
 
@@ -1065,7 +1069,7 @@ Fügt dem Datenbaum einer Kopie eines Objekts ein Schlüssel/Wert-Paar hinzu. We
 
 * tree: Ein Datenobjekt.
 * key: Der Schlüssel, der mit dem hinzuzufügenden Wert verknüpft werden soll. Der Schlüssel ist der Pfad zum Element im Datenbaum. Diese Funktion ruft `ContextHub.Utils.JSON.tree.sanitize` auf, um den Schlüssel vor dem Hinzufügen zu bereinigen.
-* value: Der Wert, der dem Datenbaum hinzugefügt werden soll.
+* Wert: Der Wert, der der Datenstruktur hinzugefügt werden soll.
 
 **Rückgabe**
 
@@ -1094,7 +1098,7 @@ var myValue = {
 myObject = ContextHub.Utils.JSON.tree.setItem(myObject, myKey, myValue);
 ```
 
-Das Objekt myObject hat den folgenden Wert:
+Das myObject -Objekt hat den folgenden Wert:
 
 ## ContextHub.Utils.storeCandidates {#contexthub-utils-storecandidates}
 
@@ -1104,31 +1108,31 @@ Ermöglicht es Ihnen, Store-Kandidaten zu registrieren und registrierte Store-Ka
 
 #### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
-Gibt die Store-Typen zurück, die als Store-Kandidaten registriert sind. Sie können entweder die registrierten Kandidaten eines bestimmten Storetyps oder aller Storetypen abrufen.
+Gibt die Store-Typen zurück, die als Store-Kandidaten registriert sind. Rufen Sie entweder die registrierten Candicates eines bestimmten Storetyps oder aller Storetypen ab.
 
 **Parameter**
 
-* **storeType:** (String) Der Name des Storetyps. Siehe den `storeType`-Parameter der Funktion [.`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates)
+* **storeType:** (String) Der Name des Store-Typs. Siehe den `storeType`-Parameter der Funktion [.`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates)
 
 **Rückgabe**
 
-Ein Objekt von Storetypen. Die Objekteigenschaften sind die Namen des Storetyps, und die Eigenschaftswerte sind ein Array von registrierten Storekandidaten.
+Ein Objekt von Storetypen. Die Objekteigenschaften sind die Namen des Store-Typs und die Eigenschaftswerte sind ein Array registrierter Store-Kandidaten.
 
 #### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
-Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein Storetyp mit demselben Namen erneut registriert wird, gibt die Funktion den Storetyp mit der höchsten Priorität zurück.
+Gibt einen Store-Typ aus den registrierten Kandidaten zurück. Wenn mehr als ein Storetyp mit demselben Namen gespeichert wird, gibt die Funktion den Storetyp mit der höchsten Priorität zurück.
 
 **Parameter**
 
-* storeType: (String) Der Name des Storekandidaten. Siehe den `storeType`-Parameter der Funktion [.`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)
+* storeType: (String) Der Name des Store-Kandidaten. Siehe den `storeType`-Parameter der Funktion [.`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies)
 
 **Rückgabe**
 
-Ein Objekt, das den registrierten Storekandidaten darstellt. Wenn der angeforderte Storetyp nicht registriert ist, wird ein Fehler ausgelöst.
+Ein Objekt, das den registrierten Store-Kandidaten darstellt. Wenn der angeforderte Store-Typ nicht registriert ist, wird ein Fehler ausgegeben.
 
 #### getSupportedStoreTypes() {#getsupportedstoretypes}
 
-Gibt die Namen der Storetypen zurück, die als Storekandidaten registriert sind. Diese Funktion erfordert keine Parameter.
+Gibt die Namen der Storetypen zurück, die als Storekandidaten registriert sind. Für diese Funktion sind keine Parameter erforderlich.
 
 **Rückgabe**
 
@@ -1136,14 +1140,14 @@ Ein Array von String-Werten, wobei jeder String der Store-Typ ist, mit dem ein S
 
 #### registerStoreCandidate(store, storeType, priority, applies) {#registerstorecandidate-store-storetype-priority-applies}
 
-Registriert ein Storeobjekt als einen Storekandidaten unter Verwendung eines Namens und einer Priorität.
+Registriert ein Store-Objekt mit einem Namen und einer Priorität als Store-Kandidaten.
 
-Die Priorität ist eine Zahl, die die Bedeutung der gleichnamigen Store angibt. Wenn ein Storekandidat unter Verwendung des gleichen Namens wie ein bereits registrierter Storekandidat registriert wird, wird der Kandidat mit der höheren Priorität verwendet. Bei der Registrierung eines Storekandidaten wird der Store nur registriert, wenn die Priorität höher ist als bei den gleichnamigen registrierten Storekandidaten.
+Die Priorität ist eine Zahl, die die Bedeutung der gleichnamigen Store angibt. Wenn ein Storekandidat unter Verwendung des gleichen Namens wie ein bereits registrierter Storekandidat registriert wird, wird der Kandidat mit der höheren Priorität verwendet. Beim Registrieren eines Store-Kandidaten wird der Store nur registriert, wenn die Priorität höher ist als die gleichen registrierten Store-Kandidaten.
 
 **Parameter**
 
 * **store:** (Object) Das Storeobjekt, das als Storekandidat registriert werden soll.
-* **storeType:** (String) Der Name des Storekandidaten. Dieser Wert wird beim Erstellen einer Instanz des Store-Kandidaten benötigt.
+* **storeType:** (String) Der Name des Store-Kandidaten. Dieser Wert wird beim Erstellen einer Instanz des Store-Kandidaten benötigt.
 * **priority:** (Number) die Priorität des Storekandidaten.
 * **applies:** (Function) Die aufzurufende Funktion wertet die Anwendbarkeit des Stores in der aktuellen Umgebung aus. Die Funktion muss `true` zurückgeben, wenn der Store anwendbar ist, andernfalls `false`. Der Standardwert ist eine Funktion, die „true“ zurückgibt: `function() {return true;}`
 

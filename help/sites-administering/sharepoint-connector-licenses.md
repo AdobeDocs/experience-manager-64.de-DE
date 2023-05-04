@@ -1,7 +1,7 @@
 ---
 title: SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse
 seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: Erfahren Sie mehr über SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse.
+description: Erfahren Sie mehr über SharePoint Connector-Lizenzen, Copyright-Hinweise und Haftungsausschlüsse.
 seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
@@ -10,20 +10,24 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 58%
 
 ---
 
 # SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Dieser Abschnitt umfasst alle Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse, die in Zusammenhang mit dem Day JCR Connector für Microsoft SharePoint explizit aufgeführt sein müssen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-## Überblick über die Bibliotheken von Connector-Drittanbietern {#overview-of-connector-rd-party-libraries}
+In diesem Abschnitt werden alle Lizenzen, Copyright-Hinweise und Haftungsausschlüsse aufgelistet, die im Zusammenhang mit Day JCR Connector für MS SharePoint explizit anzugeben sind.
 
-In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePoint Connector-Core-Bibliotheken genutzt werden, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
+## Übersicht über die Bibliotheken von Connector-Drittanbietern {#overview-of-connector-rd-party-libraries}
+
+In der folgenden Tabelle sind die Bibliotheken von Drittanbietern aufgelistet, die in den Core-Bibliotheken von SharePoint Connector verwendet werden, sowie die Lizenzen, Urheberrechtshinweise oder Haftungsausschlüsse, unter die diese Bibliotheken fallen:
 
 | Bibliothek | Lizenztyp |
 |---|---|
@@ -62,9 +66,9 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 | xml-apis | [Apache](#apache) (enthält Teile, die von öffentlich zugänglichen und W3C-Software-Lizenzen abgedeckt sind) |
 | XmlSchema | [Apache](#apache) |
 
-## Überblick über die Bibliotheken von CRX-Drittanbietern {#overview-of-crx-rd-party-libraries}
+## Überblick über CRX-Drittanbieter-Bibliotheken {#overview-of-crx-rd-party-libraries}
 
-In der folgenden Tabelle sind die in CRX verwendeten Drittanbieter-Bibliotheken aufgeführt, zusammen mit den Lizenzen, Urheberschutzvermerken und Haftungsausschlüssen, unter die sie fallen:
+In der folgenden Tabelle sind die in CRX verwendeten Drittanbieterbibliotheken zusammen mit den Lizenzen, Urheberrechtshinweisen oder Haftungsausschlüssen aufgeführt, unter die sie fallen:
 
 <table> 
  <colgroup> 
@@ -154,9 +158,9 @@ In der folgenden Tabelle sind die in CRX verwendeten Drittanbieter-Bibliotheken 
  </tbody> 
 </table>
 
-## Überblick über die Drittanbieter-Bibliotheken von CQSE 3. {#overview-of-cqse-rd-party-libraries}
+## Überblick über CQSE-Drittanbieter-Bibliotheken {#overview-of-cqse-rd-party-libraries}
 
-In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten Drittanbieter-Bibliotheken, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
+In der folgenden Tabelle sind die Bibliotheken von Drittanbietern aufgeführt, die in der Communiqué Servlet Engine verwendet werden, sowie die Lizenzen, Urheberrechtshinweise oder Haftungsausschlüsse, unter die sie fallen:
 
 <table> 
  <colgroup> 
@@ -425,7 +429,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      limitations under the License.
 ```
 
-## Gleichzeitig {#concurrent}
+## Concurrent {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any

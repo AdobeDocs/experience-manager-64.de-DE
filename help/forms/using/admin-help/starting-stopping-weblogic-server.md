@@ -1,7 +1,7 @@
 ---
 title: WebLogic Server starten und beenden
 seo-title: Starting and stopping WebLogic Server
-description: In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie AEM Forms-Module bereitstellen möchten, starten oder beenden. In diesem Dokument wird beschrieben, wie Sie den WebLogic Server starten und stoppen.
+description: In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie AEM Formularmodule bereitstellen möchten, starten oder stoppen. In diesem Dokument wird beschrieben, wie Sie WebLogic Server starten und beenden.
 seo-description: Several procedures require you to start or stop the instance of WebLogic Server where you want to deploy AEM forms modules. This document describes how to start and stop the WebLogic Server.
 uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 exl-id: c7a74e20-4cfb-4674-af41-f3333c9b5397
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 96%
+source-wordcount: '641'
+ht-degree: 28%
 
 ---
 
 # WebLogic Server starten und beenden {#starting-and-stopping-weblogic-server}
 
-In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie AEM Forms-Module bereitstellen möchten, starten oder beenden. Stellen Sie sicher, dass WebLogic Server je nach durchgeführter Aufgabe entweder beendet ist oder ausgeführt wird.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie AEM Formularmodule bereitstellen möchten, starten oder stoppen. Stellen Sie sicher, dass WebLogic Server je nach der von Ihnen ausgeführten Aufgabe angehalten oder ausgeführt wird.
 
 <table> 
  <thead> 
@@ -31,18 +35,18 @@ In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie A
  <tbody>
   <tr> 
    <td><p>Erstellen einer WebLogic-Domain</p></td> 
-   <td><p>Angehalten</p></td> 
+   <td><p>Beendet</p></td> 
   </tr> 
   <tr> 
-   <td><p>Erstellen eines neuen WebLogic Managed Server</p></td> 
+   <td><p>Erstellen eines verwalteten WebLogic-Servers</p></td> 
    <td><p>Wird ausgeführt</p></td> 
   </tr> 
   <tr> 
-   <td><p>Erhöhen der Thread-Anzahl des Servers</p></td> 
+   <td><p>Erhöhung der Server-Thread-Anzahl</p></td> 
    <td><p>Wird ausgeführt</p></td> 
   </tr> 
   <tr> 
-   <td><p>AEM Forms-Produkte bereitstellen</p></td> 
+   <td><p>Bereitstellen von AEM Forms-Produkten</p></td> 
    <td><p>Wird ausgeführt</p></td> 
   </tr> 
  </tbody> 
@@ -50,7 +54,7 @@ In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie A
 
 >[!NOTE]
 >
->Wenn Sie WebLogic Server unter Red Hat® Enterprise Linux Advanced Server 4.0 ausführen, legen Sie die Umgebungsvariable `LD_ASSUME_KERNEL` unter Verwendung des Befehls `export LD_ASSUME_KERNEL=2.4.19` auf 2.4.19 fest. Führen Sie anschließend WebLogic Server von der gleichen Shell aus, in der Sie auch die Umgebungsvariable eingerichtet haben.
+>Wenn Sie WebLogic Server unter Red Hat® Enterprise Linux Advanced Server 4.0 ausführen, legen Sie die Umgebungsvariable `LD_ASSUME_KERNEL` unter Verwendung des Befehls `export LD_ASSUME_KERNEL=2.4.19` auf 2.4.19 fest. Führen Sie anschließend WebLogic Server von der Shell aus, in der Sie diese Umgebungsvariable festlegen.
 
 ## WebLogic Server starten {#start-weblogic-server}
 
@@ -63,15 +67,15 @@ In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie A
 ## WebLogic Server anhalten {#stop-weblogic-server}
 
 1. Starten Sie WebLogic Server Administration-Console, indem Sie in die URL-Zeile eines Webbrowsers `https://[host name]:7001/console` eingeben.
-1. Melden Sie sich an, indem Sie den Benutzernamen und das Kennwort für diese WebLogic-Konfiguration eingeben und auf „Log In“ klicken.
-1. Klicken Sie unter „Change Center“ auf Lock &amp; Edit.
-1. Klicken Sie im Bereich „Domain Structure“ auf „Environment“ > „Servers“.
-1. Klicken Sie auf „AdminServer“ und dann im Bereich „Settings for AdminServer“ auf die Registerkarte „Control“.
-1. Stellen Sie sicher, dass „AdminServer“ in der Tabelle „Server Status“ ausgewählt ist, und klicken Sie auf „Shutdown“.
-1. Wählen Sie „When work completes“ aus, um den Server ordnungsgemäß herunterzufahren, oder „Force Shutdown Now“, um den Server sofort zu beenden, ohne laufende Vorgänge abschließen zu lassen.
-1. Klicken Sie im Bereich „Server LiveCycle Assistant“ auf „Yes“, um das Herunterfahren abzuschließen.
+1. Melden Sie sich an, indem Sie den Benutzernamen und das Kennwort eingeben, die bei der Erstellung dieser WebLogic-Konfiguration verwendet wurden, und klicken Sie dann auf Anmelden.
+1. Klicken Sie im Change Center auf „Sperren und bearbeiten“.
+1. Klicken Sie unter &quot;Domain Structure&quot;auf Environment > Servers.
+1. Klicken Sie auf AdminServer und anschließend im Bereich &quot;Settings for AdminServer&quot;auf die Registerkarte &quot;Control&quot;.
+1. Stellen Sie sicher, dass AdminServer in der Tabelle &quot;Serverstatus&quot;ausgewählt ist, und klicken Sie auf &quot;Herunterfahren&quot;.
+1. Wählen Sie Bei Abschluss der Arbeit , um den Server ordnungsgemäß herunterzufahren, oder wählen Sie Jetzt herunterfahren erzwingen , um den Server sofort zu beenden, ohne laufende Aufgaben abzuschließen.
+1. Klicken Sie im Bereich &quot;Server Life Cycle Assistant&quot;auf Yes , um das Herunterfahren abzuschließen.
 
-Die WebLogic Server-Verwaltungskonsole wird nicht mehr angezeigt und die Eingabeaufforderung, an der Sie den Startbefehl aufgerufen haben, wird verfügbar.
+Die WebLogic Server Administration Console ist nicht mehr verfügbar und die Eingabeaufforderung, über die Sie den Startbefehl ausgeführt haben, ist verfügbar.
 
 ## WebLogic Administration Console starten {#start-weblogic-administration-console}
 
@@ -80,8 +84,8 @@ Die WebLogic Server-Verwaltungskonsole wird nicht mehr angezeigt und die Eingabe
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Rufen Sie WebLogic Server Administration Console auf, indem Sie `https://*[host name]:`[Port] `/console` in der Adresszeile eines Webbrowsers, wobei *[Port]* ist der nicht sichere Listening-Anschluss. Die Standardeinstellung für diesen Anschluss ist 7001.
-1. Geben Sie auf dem Anmeldebildschirm Ihren Administrator-Benutzernamen und Ihr Kennwort ein und klicken Sie auf „Log In“.
+1. Rufen Sie WebLogic Server Administration Console auf, indem Sie `https://*[host name]:`[Port] `/console` in der Adresszeile eines Webbrowsers, wobei *[Port]* ist der nicht sichere Listening-Anschluss. Standardmäßig ist dieser Anschlusswert 7001.
+1. Geben Sie auf dem Anmeldebildschirm Ihren Administrator-Benutzernamen und Ihr Kennwort ein und klicken Sie auf Anmelden.
 
 ## Node Manager starten {#start-node-manager}
 
@@ -94,27 +98,27 @@ Die WebLogic Server-Verwaltungskonsole wird nicht mehr angezeigt und die Eingabe
 
 ## Node Manager beenden {#stop-node-manager}
 
-Nach dem Herunterfahren von WebLogic Server können Sie die Eingabeaufforderung schließen, an der Sie Node Manager aufgerufen haben.
+Nachdem Sie WebLogic Server heruntergefahren haben, können Sie die Eingabeaufforderung schließen, an der Sie Node Manager aufgerufen haben.
 
-## Einen verwalteten Server für WebLogic starten {#start-a-weblogic-managed-server}
+## WebLogic Managed Server starten {#start-a-weblogic-managed-server}
 
 >[!NOTE]
 >
 >Dieser Schritt kann nur ausgeführt werden, nachdem Sie eine WebLogic-Domain und einen verwalteten Server erstellt haben.
 
-1. Vergewissern Sie sich, dass WebLogic Server und Node Manager ausgeführt werden.
+1. Stellen Sie sicher, dass WebLogic Server und Node Manager ausgeführt werden.
 1. Starten Sie WebLogic Server Administration-Console, indem Sie in die URL-Zeile eines Webbrowsers `https://`*[Host-name]:[Port ]*`/console` eingeben.
-1. Klicken Sie im Bereich „Domain Structure“ auf „Environment“ > „Servers“.
-1. Klicken Sie im rechten Fenster auf die Registerkarte „Control“.
+1. Klicken Sie unter &quot;Domain Structure&quot;auf Environment > Servers.
+1. Klicken Sie im rechten Bereich auf die Registerkarte Kontrolle .
 1. Wählen Sie den verwalteten Server aus, den Sie starten möchten.
-1. Klicken Sie neben dem verwalteten Server, den Sie starten möchten, auf die Schaltfläche „Start“.
+1. Klicken Sie auf die Schaltfläche Starten unter dem verwalteten Server, den Sie starten möchten.
 
-## Einen verwalteten Server für WebLogic beenden {#stop-a-weblogic-managed-server}
+## Einen verwalteten WebLogic-Server stoppen {#stop-a-weblogic-managed-server}
 
 1. Starten Sie WebLogic Server Administration-Console, indem Sie in die URL-Zeile eines Webbrowsers `https://`*[Host-name]:[Port ]*`/console` eingeben.
-1. Klicken Sie im Bereich „Domain Structure“ auf „Environment“ > „Servers“.
-1. Klicken Sie im rechten Fenster auf die Registerkarte „Control“.
-1. Wählen Sie den verwalteten Server aus, den Sie beenden möchten.
-1. Klicken Sie neben dem verwalteten Server, den Sie beenden möchten, auf die Schaltfläche „Shutdown“.
-1. Wählen Sie „When work completes“ aus, um den Server ordnungsgemäß herunterzufahren, oder „Force Shutdown Now“, um den Server sofort zu beenden, ohne laufende Vorgänge abschließen zu lassen.
-1. Klicken Sie im Bereich „Server LiveCycle Assistant“ auf „Yes“, um das Herunterfahren abzuschließen.
+1. Klicken Sie unter &quot;Domain Structure&quot;auf Environment > Servers.
+1. Klicken Sie im rechten Bereich auf die Registerkarte Kontrolle .
+1. Wählen Sie den verwalteten Server aus, den Sie stoppen möchten.
+1. Klicken Sie auf die Schaltfläche Herunterfahren unter dem verwalteten Server, den Sie stoppen möchten.
+1. Wählen Sie Bei Abschluss der Arbeit , um den Server ordnungsgemäß herunterzufahren, oder wählen Sie Jetzt herunterfahren erzwingen , um den Server sofort zu beenden, ohne laufende Aufgaben abzuschließen.
+1. Klicken Sie im Bereich &quot;Server Life Cycle Assistant&quot;auf Yes , um das Herunterfahren abzuschließen.

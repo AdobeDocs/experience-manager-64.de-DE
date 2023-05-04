@@ -6,15 +6,19 @@ seo-description: DO NOT PUBLISH
 page-status-flag: de-activated
 uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 16%
+source-wordcount: '820'
+ht-degree: 14%
 
 ---
 
 
 # NICHT VERÖFFENTLICHEN Erstellen des ersten adaptiven Dokuments {#do-not-publish-create-your-first-adaptive-document}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Nutzungsszenario {#use-case}
 
@@ -30,7 +34,7 @@ Am Ende des Tutorials wird Ihnen ein adaptives Dokument ähnlich dem folgenden a
 <table> 
  <tbody>
   <tr>
-   <th>Sie werden lernen</th> 
+   <th>Sie erfahren Folgendes</th> 
    <th>
     <ul> 
      <li>Erstellen eines adaptiven Dokuments und Formulardatenmodells.</li> 
@@ -45,8 +49,8 @@ Am Ende des Tutorials wird Ihnen ein adaptives Dokument ähnlich dem folgenden a
     <ul> 
      <li>Richten Sie AEM Autoreninstanz ein. </li> 
      <li>AEM Forms-Add-on installieren. Detaillierte Informationen finden Sie unter <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">Installieren und Konfigurieren von AEM Forms</a>.</li> 
-     <li>Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf der SQL-Datenbank und verwenden den Oracle MySQL JDBC-Datenbanktreiber. </li> 
-     <li>Richten Sie eine Datenbank mit Kundendaten ein. Eine Datenbank ist für die Erstellung eines adaptiven Dokuments unerlässlich. In diesem Lernprogramm wird eine Datenbank zur Demonstration der Formulardatenmodell- und Persistenzfunktionen von AEM Forms verwendet. </li> 
+     <li>Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele in diesem Tutorial basieren auf der MySQL-Datenbank und verwenden den MySQL JDBC-Datenbanktreiber von Oracle. </li> 
+     <li>Richten Sie eine Datenbank mit Kundendaten ein. Eine Datenbank ist für die Erstellung eines adaptiven Dokuments unerlässlich. In diesem Tutorial wird eine Datenbank verwendet, um Formulardatenmodell und Persistenzfunktionen von AEM Forms anzuzeigen. </li> 
      <li>Erstellen/importieren und aktivieren <a href="/help/forms/using/web-channel-print-channel.md">Vorlagen für Druck- und Webkanäle</a>.</li> 
      <li>Vergewissern Sie sich, dass <a href="/help/forms/using/document-fragments.md">Dokumentfragmente basierend auf dem FDM</a>.</li> 
     </ul> </td> 
@@ -56,7 +60,7 @@ Am Ende des Tutorials wird Ihnen ein adaptives Dokument ähnlich dem folgenden a
 
 ## Schritt 1: Erstellen Sie ein Formulardatenmodell {#step-create-form-data-model}
 
-Ein Formulardatenmodell ermöglicht die Verbindung eines adaptiven Dokuments mit unterschiedlichen Datenquellen. Zum Beispiel AEM-Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datenrepräsentationsschema von Geschäftseinheiten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einem adaptiven Dokument verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
+Ein Formulardatenmodell ermöglicht die Verbindung eines adaptiven Dokuments mit unterschiedlichen Datenquellen. Zum Beispiel AEM Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Ein Formulardatenmodell ist ein einheitliches Datendarstellungsschema von Geschäftsentitäten und Diensten, die in verbundenen Datenquellen verfügbar sind. Sie können das Formulardatenmodell mit einem adaptiven Dokument verwenden, um Daten aus verbundenen Datenquellen abzurufen. Weitere Informationen zum Formulardatenmodell finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
 Ziele:
 

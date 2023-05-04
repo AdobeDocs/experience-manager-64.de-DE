@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 3d5396b5-10e5-49bc-aa11-5a3df93d70c3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 5%
+source-wordcount: '388'
+ht-degree: 6%
 
 ---
 
 # Grundlagen zu Kommentaren {#comments-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Auf dieser Seite finden Sie die Grundlagen zum Arbeiten mit dem Kommentarsystem (Kommentarkomponente) und Optionen zum Verwalten des benutzergenerierten Inhalts (UGC), der erstellt wird, wenn Mitglieder Kommentare oder Antworten posten.
 
@@ -66,8 +70,8 @@ Andere Funktionen beinhalten bereits das Kommentarsystem. Diese sind:
 * [Kalender](calendar-basics-for-developers.md)
 * [Dateibibliothek](essentials-file-library.md)
 * [Forum](essentials-forum.md)
-* [Frage und Antwort](qna-essentials.md)
-* [Reviews](reviews-basics.md)
+* [Fragen und Antworten](qna-essentials.md)
+* [Bewertungen](reviews-basics.md)
 
 ### Liste mit Kenn-zeichnungsgründen {#flag-reason-list}
 

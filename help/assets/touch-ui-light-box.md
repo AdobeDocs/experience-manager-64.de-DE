@@ -5,20 +5,24 @@ contentOwner: AG
 feature: Developer Tools,Renditions
 role: User,Admin
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 96%
+source-wordcount: '287'
+ht-degree: 63%
 
 ---
 
 # Lightbox {#lightbox}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Erfahren Sie mehr über Lightbox in [!DNL Experience Manager] Assets.
 
 Lightbox ist ein spezieller Sammlungstyp, der den einfachen Zugriff auf Assets ermöglicht. Sie können schnell auf Lightbox zugreifen, um Assets hinzuzufügen oder zu löschen. Es dient als Ihre persönliche Bildergalerie.
 
-Wenn Sie Adobe Experience Manager Assets verwenden, wird Lightbox bei Ihrer ersten Anmeldung bei der Anwendung automatisch erstellt. Lightbox bezieht sich ausschließlich auf Ihre eigenen Anmeldungen. Andere Benutzer können nicht auf Ihren Lightbox-Ordner zugreifen.
+Wenn Sie Adobe Experience Manager Assets verwenden, wird Lightbox bei Ihrer ersten Anmeldung bei der Anwendung automatisch erstellt. Es gilt ausschließlich für Ihre Anmeldung. Andere Benutzer können nicht auf Ihre Lightbox zugreifen.
 
 ## Hinzufügen von Assets zu Lightbox {#adding-assets-to-lightbox}
 
@@ -33,11 +37,11 @@ Wenn Sie Adobe Experience Manager Assets verwenden, wird Lightbox bei Ihrer erst
 
    >[!NOTE]
    >
-   >Obwohl Lightbox einer Sammlung ähnelt, können Sie nicht alle Aktionen ausführen, die Sie normalerweise mit Sammlungen ausführen. Sie können beispielsweise keine Einstellungen für eine Lightbox löschen, freigeben oder anzeigen. Außerdem können Sie sie nicht zu anderen Sammlungen hinzufügen. Sie können aber die Assets in einer Lightbox bearbeiten.
+   >Obwohl Lightbox einer Sammlung ähnelt, können Sie nicht alle Aktionen ausführen, die Sie normalerweise mit Sammlungen ausführen. Sie können beispielsweise keine Einstellungen für eine Lightbox löschen, freigeben oder anzeigen. Darüber hinaus können Sie sie nicht zu anderen Sammlungen hinzufügen. Sie können die Assets jedoch in einer Lightbox bearbeiten.
 
 ## Entfernen von Assets aus Lightbox {#removing-assets-from-lightbox}
 
-1. Gehen Sie zur Konsole „Sammlungen“ und tippen/klicken Sie auf „Lightbox“, um die entsprechenden Assets anzuzeigen.
+1. Navigieren Sie zur Konsole &quot;Sammlungen&quot;und tippen/klicken Sie auf Lightbox , um die zugehörigen Assets anzuzeigen.
 1. Wählen Sie die Assets aus, die Sie entfernen möchten.
 1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Entfernen]**.
 1. Tippen oder klicken Sie im Dialogfeld auf **[!UICONTROL Entfernen]**, um den Löschvorgang zu bestätigen. Die Assets werden aus Lightbox gelöscht.

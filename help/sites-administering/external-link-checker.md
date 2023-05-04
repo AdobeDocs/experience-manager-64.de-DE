@@ -2,14 +2,18 @@
 title: Der Link-Checker
 description: Der Link-Checker hilft bei der Validierung sowohl interner als auch externer Links und ermöglicht das Neuschreiben von Links.
 exl-id: 30718d02-3370-48aa-a5ba-242d5efaa14c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 100%
+source-wordcount: '1022'
+ht-degree: 97%
 
 ---
 
 # Der Link-Checker {#the-link-checker}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Inhaltsautoren sollten sich nicht mit der Validierung aller Links befassen müssen, die sie in ihre Inhaltsseiten aufnehmen.
 
@@ -46,7 +50,7 @@ Interne Links werden validiert, sobald der Inhaltsautor interne Links zu einer S
 Externe Links sind Links zu Inhalten außerhalb Ihres AEM-Repositorys. Externe Links können mit dem RTE oder mithilfe einer benutzerdefinierten Komponente hinzugefügt werden. Beispiel:
 
 * Ihre Seite `/content/wknd/us/en/adventures/ski-touring.html`
-* enthält einen Link zu `https://bunwarmerthermalunderwear.com` in einer [Textkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html).
+* enthält einen Link zu `https://bunwarmerthermalunderwear.com` in einer [Textkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de).
 
 Externe Links werden auf Syntax und Verfügbarkeit überprüft. Diese Prüfung wird asynchron in einem konfigurierbaren internen Modus durchgeführt. Wenn der Link-Checker einen externen Link für ungültig befindet:
 

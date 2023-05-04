@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: 0f82e82cf6e09a2734893a98d67ed1a84b1fec5e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 4%
+source-wordcount: '700'
+ht-degree: 3%
 
 ---
 
 # Upgrade auf AEM 6.4 Communities {#upgrading-to-aem-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Abhängig von der Topologie und den Funktionen der einzelnen Websites können beim Upgrade auf AEM Communities 6.4 oder bei der Installation des neuesten Feature Packs die folgenden Aktionen erforderlich sein:
 
@@ -37,7 +41,7 @@ Bei der Installation eines neuen Communities Feature Packs in einer mit MSRP kon
 
 ### Aktivierung 2.0 {#enablement}
 
-Ab AEM 6.3 speichern die Aktivierungsfunktionen keine Reporting-Informationen mehr in MySQL. MySQL wird nur noch für die Nachverfolgung von SCORM-Inhalten benötigt.
+Ab AEM 6.3 speichern die Aktivierungsfunktionen keine Reporting-Informationen mehr in MySQL. Die MySQL-Abhängigkeit ist nur zum Tracking von SCORM-Inhalten vorhanden.
 
 Bitte kontaktieren Sie uns [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) für Unterstützung bei der Migration von Inhalten von Enablement 1.0.
 
@@ -57,7 +61,7 @@ Für alle AEM 6.3 Autoren- und Veröffentlichungsinstanzen:
 1. Führen Sie die folgenden Schritte aus, um die vorhandene benutzergenerierte Anzeige sichtbar zu machen:
 
    i. Navigieren Sie zur Web-Konsole. Die Standardeinstellung ist
-   `https://localhost:4502/system/console/configMgr` möglich.
+   `https://localhost:4502/system/console/configMgr`.
 
    ii. Suchen **[!UICONTROL AEM Communities Utilities]** und wählen Sie aus, um das Konfigurationsfenster zu erweitern.
 

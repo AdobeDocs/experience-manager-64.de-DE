@@ -12,14 +12,18 @@ discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 54a4a053-ca44-451a-9a31-f1c1e8cb7002
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2905'
 ht-degree: 3%
 
 ---
 
 # Communities-Scoring und -Abzeichen {#communities-scoring-and-badges}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -398,7 +402,7 @@ In der Version sind zwei Badging-Regeln enthalten, die dem [Foren und Kommentar-
 
 Änderungen oder Ergänzungen an Badging-Regeln oder Bildern, die in der Autorenumgebung vorgenommen werden, müssen in der Veröffentlichungsumgebung installiert werden.
 
-## Zuteilen und Entziehen von Abzeichen {#assign-and-revoke-badges}
+## Zuweisen und Sperren von Abzeichen {#assign-and-revoke-badges}
 
 Abzeichen können Mitgliedern zugewiesen werden, indem sie entweder [Mitgliederkonsole](members.md#badges-tab) oder programmgesteuert mithilfe von cURL-Befehlen.
 
@@ -472,7 +476,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | Mitglied erstellt ein Kalenderereignis |
 | HINZUFÜGEN | Mitgliederkommentare für ein Kalenderereignis |
-| UPDATE | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
+| AKTUALISIEREN | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
 | LÖSCHEN | Kalenderereignis oder -kommentar eines Mitglieds wird gelöscht |
 
 **[Kommentarkomponente](comments.md)**
@@ -557,7 +561,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| DENY | Inhalt des Mitglieds wird verweigert |
+| ABLEHNEN | Inhalt des Mitglieds wird verweigert |
 | FLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds wird gekennzeichnet |
 | UNFLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds ist unmarkiert |
 | AKZEPT | Der Inhalt des Mitglieds wird vom Moderator genehmigt |
@@ -606,7 +610,7 @@ Mit dem [Tutorial &quot;Erste Schritte&quot;](getting-started.md) Site (engagier
    * Auswählen **[!UICONTROL Multi]**
    * Klicken Sie auf **[!UICONTROL Hinzufügen]**
    * Geben Sie `/etc/community/badging/rules/forums-badging` ein
-   * Auswählen `+`
+   * Klicken Sie auf `+`
    * Geben Sie `/etc/community/badging/rules/comments-badging` ein
    * Wählen Sie **[!UICONTROL OK]** aus
 
@@ -617,7 +621,7 @@ Mit dem [Tutorial &quot;Erste Schritte&quot;](getting-started.md) Site (engagier
    * Auswählen **[!UICONTROL Multi]**
    * Klicken Sie auf **[!UICONTROL Hinzufügen]**
    * Geben Sie `/etc/community/scoring/rules/forums-scoring` ein
-   * Auswählen `+`
+   * Klicken Sie auf `+`
    * Geben Sie `/etc/community/scoring/rules/comments-scoring` ein
    * Wählen Sie **[!UICONTROL OK]** aus
 

@@ -1,7 +1,7 @@
 ---
-title: Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten vorbereiten und senden
+title: Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche
 seo-title: Prepare and send Interactive Communication using the Agent UI
-description: Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
+description: Die Benutzeroberfläche für Agenten ermöglicht es den Agenten, interaktive Kommunikation vorzubereiten und an den Nachbearbeitungsprozess zu senden. Der Agent nimmt die erforderlichen Änderungen wie erlaubt vor und sendet die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 seo-description: Prepare and send Interactive Communication using the Agent UI
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
@@ -9,16 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 5ec33ef5-1722-4d29-9979-d8da32923e66
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 100%
+source-wordcount: '1376'
+ht-degree: 72%
 
 ---
 
-# Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten vorbereiten und senden {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
-Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die Benutzeroberfläche für Agenten ermöglicht es den Agenten, interaktive Kommunikation vorzubereiten und an den Nachbearbeitungsprozess zu senden. Der Agent nimmt die erforderlichen Änderungen wie erlaubt vor und sendet die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 
 ## Übersicht {#overview}
 
@@ -26,7 +30,7 @@ Nachdem eine interaktive Kommunikation erstellt wurde, kann der Agent die intera
 
 Beim Vorbereiten der interaktiven Kommunikation über die Agent-Benutzeroberfläche verwaltet der Agent die folgenden Aspekte der interaktiven Kommunikation in der Agent-Benutzeroberfläche, bevor er sie an einen Nachbearbeitungsprozess sendet:
 
-* **Daten**: Die Registerkarte „Daten“ der Benutzeroberfläche für Agenten zeigt alle vom Agenten bearbeitbaren Variablen und entsperrten Datenmodelleigenschaften in der interaktiven Kommunikation an. Diese Variablen/Eigenschaften werden beim Bearbeiten oder Erstellen von Dokumentfragmenten in der interaktiven Kommunikation erstellt. Die Registerkarte „Daten“ enthält auch alle Felder, die in der XDP/Druckkanalvorlage erstellt wurden. Die Registerkarte „Daten“ wird nur angezeigt, wenn Variablen, Formulardatenmodelleigenschaften oder Felder in der interaktiven Kommunikation vorhanden sind, die vom Agenten bearbeitet werden können.
+* **Daten**: Auf der Registerkarte &quot;Daten&quot;der Benutzeroberfläche für Agenten werden alle vom Agenten bearbeitbaren Variablen und entsperrten Formulardatenmodelleigenschaften in der interaktiven Kommunikation angezeigt. Diese Variablen/Eigenschaften werden beim Bearbeiten oder Erstellen von Dokumentfragmenten erstellt, die in der interaktiven Kommunikation enthalten sind. Die Registerkarte &quot;Daten&quot;enthält auch alle Felder, die in der XDP-/Druckkanalvorlage erstellt wurden. Die Registerkarte „Daten“ wird nur angezeigt, wenn Variablen, Formulardatenmodelleigenschaften oder Felder in der interaktiven Kommunikation vorhanden sind, die vom Agenten bearbeitet werden können.
 * **Inhalt**: Auf der Registerkarte „Inhalt“ verwalten Sie den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation. Der Agent kann die Änderungen im Dokumentfragment so vornehmen, wie dies beim Erstellen der interaktiven Kommunikation in den Eigenschaften dieser Dokumentfragmente zulässig ist. Der Agent kann auch ein Dokumentfragment neu anordnen, hinzufügen/entfernen und Seitenumbrüche hinzufügen, sofern dies zulässig ist.
 * **Anlagen**: Die Registerkarte „Anlagen“ wird nur dann in der Agent-Benutzeroberfläche angezeigt, wenn die interaktive Kommunikation Anlagen hat oder der Agent über Bibliothekszugriff verfügt. Der Agent darf die Anlagen ändern oder bearbeiten.
 
@@ -49,13 +53,13 @@ Beim Vorbereiten der interaktiven Kommunikation über die Agent-Benutzeroberflä
 
 ### Daten eingeben {#enter-data}
 
-1. Geben Sie auf der Registerkarte „Daten“ die erforderlichen Daten für Variablen, Formulardatenmodelleigenschaften und Druckvorlagenfelder (XDP) ein. Füllen Sie alle erforderlichen Felder (mit einem Sternchen (*) gekennzeichnet) aus, um die Schaltfläche **Senden** zu aktivieren.
+1. Geben Sie auf der Registerkarte &quot;Daten&quot;die Daten für Variablen, Formulardatenmodelleigenschaften und XDP-Felder (Druckvorlage) ein. Füllen Sie alle erforderlichen Felder (mit einem Sternchen (*) gekennzeichnet) aus, um die Schaltfläche **Senden** zu aktivieren.
 
    Tippen Sie auf einen Datenfeldwert in der Vorschau der interaktiven Kommunikation, um das entsprechende Datenfeld auf der Registerkarte „Daten“ hervorzuheben.
 
 ### Inhalt verwalten {#manage-content}
 
-Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation.
+Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfragmente und Inhaltsvariablen in der interaktiven Kommunikation.
 
 1. Wählen Sie **[!UICONTROL Inhalt]**. Die Registerkarte „Inhalt“ der interaktiven Kommunikation wird angezeigt.
 
@@ -69,7 +73,7 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    Auf der Registerkarte „Inhalt“ oder „Daten“ können Sie durch Tippen auf „Ausgewählte Module im Inhalt markieren“ (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) links oben in der Vorschau eine Funktion aktivieren oder deaktivieren, die bewirkt, dass beim Klicken auf den relevanten Text oder Absatz bzw. das Datenfeld in der Vorschau das dazugehörige Inhalts-/Datenmodul aufgerufen wird.
 
-   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden dürfen, haben das Symbol „Ausgewählten Inhalt bearbeiten“ (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol „Ausgewählten Inhalt bearbeiten“, um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
+   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden dürfen, haben das Symbol „Ausgewählten Inhalt bearbeiten“ (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol Ausgewählten Inhalt bearbeiten , um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
 
    * [Formatierungsoptionen](#formattingtext)
 
@@ -82,7 +86,7 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
 1. Um der Druckausgabe der interaktiven Kommunikation einen Seitenumbruch hinzuzufügen, tippen Sie auf die Stelle, an der Sie den Seitenumbruch einfügen möchten, und wählen Sie „Seitenumbruch vor“ oder „Seitenumbruch nach“ ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   Ein Platzhalter für einen expliziten Seitenumbruch wird in der interaktiven Kommunikation eingefügt. Sie können in der Druckvorschau anzeigen, wie sich ein expliziter Seitenumbruch auf die interaktive Kommunikation auswirkt.
+   Ein Platzhalter für einen expliziten Seitenumbruch wird in die interaktive Kommunikation eingefügt. Informationen dazu, wie sich ein expliziter Seitenumbruch auf die interaktive Kommunikation auswirkt, finden Sie in der Druckvorschau.
 
    ![explicitpagebreak](assets/explicitpagebreak.png)
 
@@ -109,7 +113,7 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
 ## Text formatieren {#formattingtext}
 
-Beim Bearbeiten eines Textfragments in der Benutzeroberfläche für Agenten ändert sich die Symbolleiste abhängig vom Typ der von Ihnen vorgenommenen Änderungen: Schriftart, Absatz oder Liste:
+Beim Bearbeiten eines Textfragments in der Benutzeroberfläche des Agenten ändert sich die Symbolleiste je nach dem Typ der Änderungen, die Sie vornehmen: Schrift, Absatz oder Liste:
 
 ![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Schrift-Symbolleiste](do-not-localize/fonttoolbar.png)
 
@@ -121,11 +125,11 @@ Absatz-Symbolleiste
 
 ![Liste-Symbolleiste](do-not-localize/listtoolbar.png)
 
-Liste-Symbolleiste
+Listen-Symbolleiste
 
-### Teile des Textes markieren/hervorheben {#highlightemphasize}
+### Teile von Text hervorheben/hervorheben {#highlightemphasize}
 
-Um Teile eines Textes in einem bearbeitbaren Fragment hervorzuheben, wählen Sie den Text aus und tippen Sie auf „Hervorhebungsfarbe“.
+Um Textteile in einem bearbeitbaren Fragment hervorzuheben bzw. hervorzuheben, wählen Sie den Text aus und tippen Sie auf Farbe hervorheben.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
@@ -135,21 +139,21 @@ Um Teile eines Textes in einem bearbeitbaren Fragment hervorzuheben, wählen Sie
 
 ### Sonderzeichen in Text einfügen {#specialcharacters}
 
-Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](/help/forms/using/custom-special-characters.md).
+Die Benutzeroberfläche für Agenten bietet integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](/help/forms/using/custom-special-characters.md).
 
 #### Anlagenübermittlung {#attachmentdelivery}
 
 * Wenn die interaktive Kommunikation mit serverseitigen APIs als interaktive oder nicht interaktive PDF gerendert wird, enthält die gerenderte PDF-Datei Anlagen im PDF-Format.
 * Wenn ein mit einer interaktiven Kommunikation verknüpfter Nachbearbeitungsprozess als Teil der Option „Senden mit Benutzeroberfläche für Agenten“ geladen wird, werden Anlagen als List&lt;com.adobe.idp.Document> im AttachmentDocs-Parameter weitergeleitet.
-* Vordefinierte Übermittlungsmechanismen, wie z. B. E-Mail und Drucken, übermitteln auch Anlagen zusammen mit einer PDF-Datei der interaktiven Kommunikation.
+* Bereitstellungsmechanismus-Workflows, wie E-Mail und Druck, übermitteln Anhänge zusammen mit der PDF-Version der interaktiven Kommunikation.
 
-## Aktionen und Informationen, die auf der Benutzeroberfläche für Agenten verfügbar sind {#actionsagentui}
+## Auf der Benutzeroberfläche &quot;Agent&quot;verfügbare Aktionen und Informationen {#actionsagentui}
 
 ### Dokumentfragmente {#document-fragments}
 
 ![](do-not-localize/contentoptionsdocfragments.png)
 
-* **Pfeile nach oben bzw. nach unten**: Pfeile zum Verschieben von Dokumentenfragmenten nach unten oder oben in der interaktiven Kommunikation.
+* **Nach-oben-/Nach-unten-Pfeile**: Pfeile zum Verschieben von Dokumentfragmenten in der interaktiven Kommunikation nach oben oder unten.
 * **Löschen**: Wenn zulässig, löschen Sie das Dokumentfragment aus der interaktiven Kommunikation.
 * **Seitenumbruch vor** (anwendbar für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch vor dem Dokumentfragment ein.
 * **Einzug:** Einzug eines Dokumentenfragments vergrößern oder verkleinern.
@@ -159,10 +163,10 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 
 * Bearbeiten (nur Textfragmente): Öffnen Sie den Rich-Text-Editor zum Bearbeiten des Textdokumentfragments. Weitere Informationen finden Sie unter [Text formatieren](#formattingtext).
 
-* Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein/schließt sie daraus aus.
+* Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein bzw. schließt sie daraus aus.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Dokumentfragment an.
 
-### Listendokumentfragmente {#list-document-fragments}
+### Dokumentfragmente auflisten {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 

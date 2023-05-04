@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: f77796ff-f5c9-455f-8616-fa590db7fdbe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 98%
+source-wordcount: '1907'
+ht-degree: 97%
 
 ---
 
 # Erstellen von Web-Programmen, die Formulare wiedergeben {#creating-web-applications-thatrenders-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Erstellen von Web-Programmen, die Formulare wiedergeben {#creating-web-applications-that-renders-forms}
 

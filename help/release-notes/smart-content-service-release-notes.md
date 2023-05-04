@@ -8,14 +8,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 32%
+source-wordcount: '341'
+ht-degree: 27%
 
 ---
 
 # Versionshinweise zu Smart Content Service {#smart-content-service-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Überblick über den Smart Content Service und bekannte Probleme rund um den Service.
 
@@ -41,7 +45,7 @@ Der Smart Content Service umfasst die folgenden wichtigen Verbesserungen:
 
 ## Produktzugriff und Support (Websites mit Zugriffsbeschränkung) {#product-access-and-support-restricted-sites}
 
-Diese Sites sind nur für Kunden verfügbar. Wenn Sie Kunde sind und Zugriff benötigen, wenden Sie sich an Ihren Adobe-Kundenbetreuer.
+Diese Sites sind nur für Kundinnen und Kunden verfügbar. Wenn Sie eine Kundin oder ein Kunde sind und Zugriff benötigen, wenden Sie sich an die Adobe-Kundenbetreuung.
 
 * [Produktzugriff](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [Produktdownload unter licensing.adobe.com](https://licensing.adobe.com/).

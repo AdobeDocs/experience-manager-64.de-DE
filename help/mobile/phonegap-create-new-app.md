@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: 79d2dbfb-5e44-4a96-ab9b-ba5d93fc3aae
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '674'
 ht-degree: 5%
 
 ---
 
 # Erstellen einer neuen AEM Mobile-App mit dem Assistenten zum Erstellen{#creating-a-new-aem-mobile-app-using-create-wizard}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -69,7 +73,7 @@ Füllen Sie bei Bedarf die Details Ihrer neuen App aus, einschließlich der opti
 
 Weitere Informationen zu anderen Authoring-Rollen finden Sie in den folgenden Ressourcen:
 
-* [Bereich „App verwalten“](/help/mobile/phonegap-app-details-tile.md)
+* [Die Kachel App verwalten](/help/mobile/phonegap-app-details-tile.md)
 * [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
 * [Vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)

@@ -1,7 +1,7 @@
 ---
 title: Vorlagen
 seo-title: Templates
-description: Vorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird
+description: Vorlagen werden beim Erstellen einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird
 seo-description: Templates are used when creating a page which will be used as the base for the new page
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
@@ -11,18 +11,22 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 4ecb6e10-1d6b-4065-917f-e86215687e29
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 100%
+source-wordcount: '999'
+ht-degree: 80%
 
 ---
 
 # Vorlagen{#templates}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Vorlagen werden an verschiedenen Stellen in AEM verwendet:
 
-* Wenn Sie eine [Seite erstellen, müssen Sie eine Vorlage auswählen](#templates-pages). Diese wird als Basis für die neue Seite verwendet. Die Vorlage definiert die Struktur der resultierenden Seite, jeden anfänglichen Inhalt und die [Komponenten](/help/sites-authoring/default-components.md), die verwendet werden können (Design-Eigenschaften).
+* Wenn Sie eine [Seite erstellen, müssen Sie eine Vorlage auswählen](#templates-pages). Diese wird als Basis für die neue Seite verwendet. Die Vorlage definiert die Struktur der resultierenden Seite, den anfänglichen Inhalt und die [Komponenten](/help/sites-authoring/default-components.md) die verwendet werden können (Designeigenschaften).
 
 * Wenn Sie ein [Inhaltsfragment erstellen, müssen Sie auch eine Vorlage auswählen](#templates-content-fragments). Diese Vorlage definiert die Struktur, die Ausgangselemente und Varianten.
 
@@ -35,7 +39,7 @@ Die folgenden Vorlagen werden im Detail beschrieben:
 
 ## Vorlagen - Seiten {#templates-pages}
 
-AEM bietet jetzt zwei grundlegende Arten von Vorlagen zum Erstellen von Seiten an:
+AEM bietet jetzt zwei grundlegende Arten von Vorlagen zum Erstellen von Seiten:
 
 >[!NOTE]
 >
@@ -43,17 +47,17 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen zum Erstellen von Seiten a
 
 ### Bearbeitbare Vorlagen {#editable-templates}
 
-Bearbeitbare Vorlagen gelten nun als Best Practices für die Entwicklung mit AEM.
+Bearbeitbare Vorlagen werden jetzt als Best Practices für die Entwicklung mit AEM betrachtet.
 
-Die Vorteile von bearbeitbaren Vorlagen:
+Die Vorteile bearbeitbarer Vorlagen:
 
-* Können von den Autoren [erstellt](/help/sites-authoring/templates.md#creating-a-new-template-template-author) und [bearbeitet](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) werden.
+* Kann [created](/help/sites-authoring/templates.md#creating-a-new-template-template-author) und [bearbeitet](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) durch Ihre Autoren.
 
-* Wurden eingeführt, damit Sie für alle mit der Vorlage erstellten Seiten Folgendes definieren können:
+* wurden eingeführt, damit Sie Folgendes für alle Seiten definieren können, die mit der Vorlage erstellt werden:
 
-   * die Struktur
-   * den ursprünglichen Inhalt
-   * Inhaltsrichtlinien
+   * Struktur
+   * den anfänglichen Inhalt
+   * Content-Richtlinien
 
 * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Das bedeutet, dass Änderungen an der Vorlagenstruktur auf allen mit dieser Vorlage erstellten Seiten wiedergegeben werden (Änderungen am ursprünglichen Inhalt werden nicht berücksichtigt).
 * Verwendet Inhaltsrichtlinien (die im Vorlageneditor bearbeitet wurden), um die Designeigenschaften beizubehalten (verwendet den Designmodus im Seiteneditor nicht).
@@ -68,11 +72,11 @@ Die Vorteile von bearbeitbaren Vorlagen:
 
 Statische Vorlagen:
 
-* Müssen durch Ihre Entwickler definiert und konfiguriert werden.
+* Muss von Ihren Entwicklern definiert und konfiguriert werden.
 * Dies war das ursprüngliche Vorlagensystem von AEM und war für viele Versionen verfügbar.
-* Eine statische Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur wie die zu erstellende Seite, jedoch keinen tatsächlichen Inhalt aufweist.
-* Werden kopiert, um die neue Seite zu erstellen, danach besteht keine dynamische Verbindung mehr.
-* Verwenden den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
+* Eine statische Vorlage ist eine Hierarchie von Knoten mit derselben Struktur wie die zu erstellende Seite, jedoch ohne tatsächlichen Inhalt.
+* werden kopiert, um die neue Seite zu erstellen. Danach existiert keine dynamische Verbindung.
+* Verwendet [Designmodus](/help/sites-authoring/default-components-designmode.md) um Designeigenschaften beizubehalten.
 * Werden gespeichert unter `/apps`
 * Siehe [Statische Vorlagen](/help/sites-developing/page-templates-static.md) für weitere Informationen.
 
@@ -140,4 +144,4 @@ Wenn Sie mehrere Einschränkungen hinzufügen möchten, z. B. bezüglich der Vor
 
 ## Vorlagen - Inhaltsfragmente {#templates-content-fragments}
 
-Vollständige Informationen finden Sie unter [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md).
+Siehe [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md) für vollständige Informationen.

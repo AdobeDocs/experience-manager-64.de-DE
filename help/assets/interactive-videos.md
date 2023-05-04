@@ -10,18 +10,22 @@ discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: Interactive Videos,Video
 role: User
-source-git-commit: af8a4d73d530c9438ff63a1b200be2d6e97c232c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5972'
-ht-degree: 84%
+source-wordcount: '6008'
+ht-degree: 78%
 
 ---
 
 # Interaktive Videos {#interactive-videos}
 
-Sie können interaktive Videos einfach erstellen, die direkt im Video den Abschluss unterstützen. Die Kundeninteraktion mit dem Video erfolgt in einem Feld neben dem Videoplayer, in dem die zugehörigen Services, Informationen oder Produktminiaturen auf Grundlage des Umfangs im Video per Bildlauf in die Ansicht einfließen. Kunden können auf die Miniatur tippen und werden direkt mit dem Service verbunden. Alternativ können sie den Artikel für den direkten Erwerb zu einem Warenkorb hinzufügen oder sie werden mit einer Web-Seite verbunden, um weitere Informationen zu erhalten.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Wenn das Video beendet wird, wird eine visuelle Zusammenfassung sämtlicher Angebote angezeigt, um den Aktionsaufruf zu unterstützen. Kunden haben eine weitere Möglichkeit, auf den gewünschten Artikel zu tippen. Umsetzbare und spezifische Erlebnisse wie diese erhöhen die Kundeninteraktion und Konversionen.
+Sie können auf einfache Weise interaktive Videos erstellen, die die Konvertierung direkt über das Video fördern. Die Kundeninteraktion mit dem Video erfolgt in einem Feld neben dem Videoplayer, in dem die zugehörigen Services, Informationen oder Produktminiaturen auf Grundlage des Umfangs im Video per Bildlauf in die Ansicht einfließen. Kunden können auf die Miniatur tippen und werden direkt mit dem Service verbunden. Alternativ können sie den Artikel für den direkten Erwerb zu einem Warenkorb hinzufügen oder sie werden mit einer Web-Seite verbunden, um weitere Informationen zu erhalten.
+
+Wenn das Video beendet wird, wird eine visuelle Zusammenfassung sämtlicher Angebote angezeigt, um den Aktionsaufruf zu unterstützen. Kunden haben noch eine Möglichkeit, auf den Artikel zu tippen, den sie möchten. Umsetzbare und spezifische Erlebnisse wie diese erhöhen die Kundeninteraktion und Konversionen.
 
 Informationen hierzu finden Sie auch unter [Interaktive Bilder](interactive-images.md).
 
@@ -39,7 +43,7 @@ Um ein interaktives Video mit Shopping-Funktion anzuzeigen, klicken Sie auf [Liv
 
 >[!NOTE]
 >
->Wenn Sie ein interaktives Video erstellen, um eine Webseite zu starten, wenn ein Benutzer auf eine Miniaturansicht klickt, wird das Öffnen der Popup-Webseite durch einige Geräte blockiert. In diesen Fällen müssen Sie die Popup-Blocker-Einstellung auf dem Gerät ändern. Auf einem Apple iPhone 6 tippen Sie beispielsweise auf **[!UICONTROL Einstellungen]** > **Safari** > **Popups blockieren** und schieben Sie das Steuerelement auf **[!UICONTROL Aus]**. Wenn Sie ein interaktives Video wiedergeben und auf eine Miniaturansicht klicken, werden Sie gefragt, ob das Popup geöffnet werden soll. Wenn Sie dies akzeptieren, wird die Web-Seite geöffnet.
+>Wenn Sie ein interaktives Video erstellen, um eine Webseite zu starten, wenn ein Benutzer auf eine Miniaturansicht klickt, wird das Öffnen der Popup-Webseite durch einige Geräte blockiert. In diesen Fällen müssen Sie die Popup-Blocker-Einstellung auf dem Gerät ändern. Tippen Sie beispielsweise auf einem Apple iPhone 6 auf **[!UICONTROL Einstellungen]** > **Safari** > **Popups blockieren**, und schieben Sie dann das Steuerelement auf **[!UICONTROL Aus]**. Wenn Sie jetzt ein interaktives Video abspielen und auf eine Miniaturansicht klicken, werden Sie gefragt, ob Sie das Popup-Fenster öffnen möchten. Wenn Sie dies akzeptieren, wird die Web-Seite geöffnet.
 
 ## Erstellen von interaktiven Videos {#watch-how-interactive-videos-are-created}
 
@@ -62,7 +66,7 @@ Suchen Sie nach der Überschrift **Beispiele** in einigen der Schnellstartaufgab
 
 Die **Beispiele** veranschaulichen die Schritte zur Integration interaktiver Videos auf Ihrer Website.
 
-Wenn Sie das Tutorial im letzten Beispiel abgeschlossen haben, sieht die finale Demowebseite mit den vollständig integrierten interaktiven Videos wie folgt aus:
+Wenn Sie das Tutorial im letzten Beispielabschnitt abschließen, wird Ihre endgültige Demo-Web-Seite mit dem vollständig integrierten interaktiven Video wie folgt aussehen:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=de)
 
@@ -70,9 +74,9 @@ Wenn Sie das Tutorial im letzten Beispiel abgeschlossen haben, sieht die finale 
 
 1. **(Optional) Ermitteln von Schnellansichtsvariablen**: Ermitteln Sie zunächst die dynamischen Variablen, die von der vorhandenen Schnellansichtsimplementierung verwendet werden. Mit den Variablen ordnen Sie Produktminiaturansichten der entsprechenden Produktschnellansicht zu, wenn Sie ein interaktives Video erstellen. Siehe [(Optional) Ermitteln von Schnellansichtsvariablen](#optional-identifying-quickview-variables).
 
-   *Dieser Schritt ist nur erforderlich, wenn alle folgenden Bedingungen erfüllt sind*:
+   *Dieser Schritt ist nur erforderlich, wenn alles Folgende zutrifft*:
 
-   * Sie möchten das Bild durch Auslösen von Schnellansichten in ein interaktives Video umwandeln.
+   * Sie möchten dem Video Interaktivität hinzufügen, indem Sie Schnellansichten aktivieren.
    * Ihre Experience Manager-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM® WebSphere® Commerce, Elastic Path, Hybris oder Intershop in Experience Manager abzurufen. Siehe [E-Commerce-Konzepte in Experience Manager Assets](/help/sites-administering/concepts.md).
 
 1. **(Optional) Erstellen einer Viewer-Vorgabe für ein interaktives Video**: Passen Sie das Aussehen und Verhalten verschiedener Komponenten im Player an, beispielsweise den Video-Scrubber und die interaktiven Miniaturansichten.
@@ -84,7 +88,7 @@ Siehe [Erstellen einer neuen Viewer-Vorgabe](managing-viewer-presets.md#creating
 
    Informationen hierzu finden Sie unter [Hochladen eines Videos und der zugehörigen Miniatur-Assets](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Hinzufügen von Interaktivität zum Video**: Fügen Sie dem Video mindestens ein Zeitsegment hinzu. Verknüpfen Sie dann Miniaturen mit diesen Zeitsegmenten. Weisen Sie jeder Miniatur eine Aktion wie einen Hyperlink, eine Schnellansicht oder ein Experience Fragment zu.
+1. **Hinzufügen von Interaktivität zum Video** - Fügen Sie dem Video ein oder mehrere Zeitsegmente hinzu. Verknüpfen Sie dann Miniaturen mit diesen Zeitsegmenten. Weisen Sie jeder Miniatur eine Aktion wie einen Hyperlink, eine Schnellansicht oder ein Experience Fragment zu.
 
    (Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.)
 
@@ -104,7 +108,7 @@ Siehe [Erstellen einer neuen Viewer-Vorgabe](managing-viewer-presets.md#creating
 
 >[!NOTE]
 Diese Aufgabe ist nur erforderlich, wenn Folgendes zutrifft:
-* Sie möchten das Bild durch Auslösen von Schnellansichten in ein interaktives Video umwandeln.
+* Sie möchten dem Video Interaktivität hinzufügen, indem Sie Schnellansichten aktivieren.
 * Ihre Experience Manager-Implementierung verwendet *kein* E-Commerce-Integrations-Framework, um Produktdaten aus einer E-Commerce-Lösung wie IBM® WebSphere® Commerce, Elastic Path, Hybris oder Intershop in Experience Manager abzurufen. Siehe [E-Commerce-Konzepte in Experience Manager Assets](/help/sites-administering/concepts.md).
 >
 Wenn Ihre Experience Manager-Implementierung E-Commerce nutzt, können Sie diese Aufgabe überspringen und mit der nächsten Aufgabe fortfahren.
@@ -126,7 +130,7 @@ Bei den meisten Schnellansichtsimplementierungen wird das folgende Muster verwen
 
 Dann werden unterschiedliche Bereiche der vorhandenen Website besucht, auf denen die Schnellansichtsfunktion implementiert wird, die Schnellansicht wird ausgelöst und die Ajax-URL, die durch die Web-Seite zum Laden der Schnellansichtsdaten oder -inhalte gesendet wurde, wird erfasst.
 
-Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne Webbrowser verfügen über Web-Inspektoren, die dafür ausreichend sind. Die folgenden Webbrowser beispielsweise umfassen Web-Inspektoren:
+Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne Webbrowser verfügen über Web-Inspektoren, die dafür ausreichend sind. Im Folgenden finden Sie einige Beispiele für Webbrowser, die Web-Inspektoren beinhalten:
 
 * Um alle ausgehenden HTTP-Anforderungen in Google Chrome anzuzeigen, verwenden Sie den Tastaturbefehl `F12` (Windows) oder `Command + Options + I` (Mac), um die **[!UICONTROL Entwicklertools]** und klicken Sie dann auf **[!UICONTROL Netzwerk]** Registerkarte.
 
@@ -138,7 +142,7 @@ Wenn die Netzwerküberwachung im Browser aktiviert ist, lösen Sie die Schnellan
 
 Suchen Sie nun die Schnellansichts-Ajax-URL im Netzwerkprotokoll und kopieren Sie die aufgezeichnete URL für die zukünftige Analyse. In den meisten Fällen werden beim Auslösen der Schnellansicht zahlreiche Anfragen an den Server gesendet. In der Regel ist die Schnellansichts-Ajax-URL die erste URL in der Liste. Sie weist einen Teil oder Pfad mit einer komplexen Abfragezeichenfolge auf und ihr MIME-Typ lautet entweder `text/html`, `text/xml` oder `text/javascript`.
 
-Während dieses Vorgangs müssen Sie verschiedene Bereiche der Website mit verschiedenen Produktkategorien und -typen besuchen. Grund dafür ist, dass Schnellansichts-URLs möglicherweise Teile aufweisen, die für eine bestimmte Website-Kategorie häufig vorkommen, sich aber nur ändern, wenn Sie einen anderen Bereich der Website besuchen.
+Während dieses Vorgangs müssen Sie verschiedene Bereiche der Website mit verschiedenen Produktkategorien und -typen besuchen. Der Grund dafür ist, dass Schnellansichts-URLs möglicherweise Teile aufweisen, die für eine bestimmte Website-Kategorie häufig vorkommen, sich aber nur ändern, wenn Sie einen anderen Bereich der Website besuchen.
 
 Im einfachsten Fall ist der einzige variable Teil der Schnellansichts-URL die Produkt-SKU. In diesem Fall ist der Wert der Produkt-SKU der einzige Teil der Daten, der zum Hinzufügen von Miniaturen zu einem Zeitintervall im interaktiven Video in Experience Manager benötigt wird.
 
@@ -191,7 +195,7 @@ Nachfolgend finden Sie einige Beispiele für Schnellansichts-URLs und die result
 
 Wenn der oben genannte Ansatz auf die Beispiel-Website angewendet wird, haben Sie eine Webseite mit mehreren Produktminiaturansichten, von denen jede eine **[!UICONTROL MEHR DAZU]** Schaltfläche:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de)
 
 Nachdem Sie alle Produktschnellansichten auf der Seite aktiviert haben, erhalten Sie die folgende Liste mit den an das Backend gesendeten Schnellansichtsanfragen:
 
@@ -216,10 +220,10 @@ Nachdem Sie alle Produktschnellansichten auf der Seite aktiviert haben, erhalten
 * datafeed/glassware-233916550.json
 * datafeed/glassware-233916597.json
 
-Wenn Sie die Server-Aufrufe betrachten, sehen Sie, dass nur der Anfragepfad produktspezifische Informationen enthält. Beachten Sie außerdem, dass die Abfragezeichenfolge überhaupt nicht verwendet wird und zwei unterschiedliche Typen von Datenteilen beteiligt sind:
+Wenn Sie die Server-Aufrufe betrachten, sehen Sie, dass nur der Anfragepfad produktspezifische Informationen enthält. Beachten Sie außerdem, dass die Abfragezeichenfolge überhaupt nicht verwendet wird und zwei unterschiedliche Arten von Datenstücken beteiligt sind:
 
-* Beim ersten Typ handelt es sich um Kerzen, Kissen, Möbel und Glaswaren. Dies kann als „Produktkategorie“ bezeichnet werden.
-* Der zweite Typ ist der Produkt-Code, wie beispielsweise „233916597“. Sie können davon ausgehen, dass dies die „Produkt-SKU“ ist.
+* Der erste Typ ist Kerzen, Kissen, Möbel und Glaswaren. Dies kann als „Produktkategorie“ bezeichnet werden.
+* Der zweite Typ ist der Produkt-Code, wie beispielsweise „233916597“. Sie können davon ausgehen, dass es sich um eine „Produkt-SKU“ handelt.
 
 Mit diesen Informationen hat die gesamte Schnellansichts-URL das folgende Muster:
 
@@ -237,7 +241,7 @@ Wenn in der Authoring-Umgebung auf eine Miniaturansicht geklickt wird, eine Vors
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-Optional können Sie eine eigene benutzerdefinierte Viewer-Vorgabe für ein interaktives Video erstellen. Sie können unter anderem den Stil des Video-Players, die interaktiven Miniaturen und die Miniatur-Rasteransicht, die am Ende des Videos angezeigt wird, bestimmen.
+Sie können optional eine eigene benutzerdefinierte Viewer-Vorgabe für interaktive Videos erstellen. Sie können unter anderem den Stil des Video-Players, die interaktiven Miniaturen und die Miniatur-Rasteransicht, die am Ende des Videos angezeigt wird, bestimmen.
 
 Eine Viewer-Vorgabe für interaktive Videos rendert das Video entsprechend sowie alle Zeitleistensegmente, die Sie hinzugefügt haben. Außerdem wird eine standardmäßige Beispielschnellansicht verwendet, wenn Sie auf eine Produktminiatur in **[!UICONTROL Vorschau]** -Modus, damit Sie die Interaktivität vor der Veröffentlichung testen können.
 
@@ -249,11 +253,11 @@ Siehe [Erstellen einer neuen Viewer-Vorgabe](managing-viewer-presets.md#creating
 
 Wenn Sie Ihr Video und die Miniaturansicht-Assets bereits hochgeladen haben, fahren Sie mit dem Schritt [Hinzufügen von Interaktivität zum Video](#adding-interactivity-to-your-video) fort.
 
-Wenn Sie falsche Videos oder Bilder hochgeladen haben oder Sie nicht mehr benötigte hochgeladene Videos oder Bilder löschen möchten, finden Sie weitere Informationen unter [Löschen von Assets](managing-assets-touch-ui.md#deleting-assets).
+Wenn Sie die falschen Videos oder Bilder hochgeladen haben oder nicht mehr benötigte hochgeladene Videos oder Bilder löschen möchten, lesen Sie [Löschen von Assets](managing-assets-touch-ui.md#deleting-assets).
 
-**So laden Sie ein Video und die zugehörigen Miniatur-Assets hoch:**
+**Um ein Video und seine zugehörigen Miniatur-Assets hochzuladen:**
 
-1. Laden Sie das Video und die zugehörigen Miniatur-Assets in den bzw. die gewünschten Ordner hoch.
+1. Laden Sie das Video und die zugehörigen Miniaturansicht-Assets in den gewünschten Ordner hoch.
 
    Informationen hierzu finden Sie unter [Hochladen von Assets](managing-assets-touch-ui.md).
 
@@ -265,7 +269,7 @@ Wenn Sie falsche Videos oder Bilder hochgeladen haben oder Sie nicht mehr benöt
 
 Sie fügen einem Video mithilfe des integrierten visuellen Editors auf der Seite „Interaktives Video erstellen“ Zeitleistensegmente hinzu.
 
-Nach dem Hinzufügen von Zeitleistensegmenten fügen Sie Miniaturbilder in jedem Segment hinzu. Für jede von Ihnen hinzugefügte Miniatur wenden Sie eine Aktion darauf an. Beispielsweise können Sie eine Schnellansicht auf die Miniatur anwenden. Alternativ können Sie ihr einen Hyperlink oder ein Experience Fragment zuweisen.
+Nach dem Hinzufügen von Zeitleistensegmenten fügen Sie Miniaturbilder in jedem Segment hinzu. Für jede Miniaturansicht, die Sie hinzufügen, wenden Sie eine Aktion darauf an. Beispielsweise können Sie eine Schnellansicht auf die Miniaturansicht anwenden. Alternativ können Sie ihr einen Hyperlink oder ein Experience Fragment zuweisen.
 
 Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-authoring/experience-fragments.md).
 
@@ -278,11 +282,11 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
 **So fügen Sie Ihrem Video Interaktivität hinzu:**
 
-1. Navigieren Sie in der Ansicht „Assets“ zum Video, das Sie hochgeladen haben und interaktiv machen möchten.
+1. Navigieren Sie in der Ansicht „Assets“ zu dem Video, das Sie hochgeladen haben und interaktiv machen möchten.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Bewegen Sie den Mauszeiger über das Bild und tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol). Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
-   * Bewegen Sie den Mauszeiger über dem Bild und tippen Sie dann auf **[!UICONTROL Mehr Aktionen]** (Ellipsensymbol) > **[!UICONTROL Bearbeiten]**.
+   * Bewegen Sie den Mauszeiger über das Bild und tippen Sie dann auf **[!UICONTROL Mehr Aktionen]** (Symbol mit drei Punkten) > **[!UICONTROL Bearbeiten]**.
    * Tippen Sie auf das Bild, damit Sie es auf der Seite &quot;Detailansicht&quot;öffnen können. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
 
 1. Im **[!UICONTROL Interaktives Video erstellen]** -Seite, führen Sie einen der folgenden Schritte aus:
@@ -291,7 +295,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
       Sie können jedem Zeitsegment, das Sie hinzufügen, mindestens ein Miniaturbild zuweisen und dann diese Miniaturen mit Schnellansicht-Produktseiten verknüpfen, damit Kundschaft über diese Einkäufe tätigen kann, oder mit Web-Seiten, auf denen weitere Informationen zu finden sind.
 
-   * Tippen Sie auf **[!UICONTROL Play]** -Schaltfläche, damit Sie das Video wiedergeben können. Wenn bestimmte Produkte, Services oder Einzelheiten, die Sie hervorheben möchten, in der Ansicht angezeigt werden, tippen Sie auf **[!UICONTROL Pause]**. Tippen Sie auf **[!UICONTROL Segment hinzufügen]**.
+   * Tippen Sie auf **[!UICONTROL Play]** -Schaltfläche, damit Sie das Video wiedergeben können. Wenn ein bestimmtes Produkt, Service oder Detail, das Sie hervorheben möchten, in der Ansicht angezeigt wird, tippen Sie auf **[!UICONTROL Anhalten]**. Tippen **[!UICONTROL Segment hinzufügen]**.
 
       Fahren Sie mit dem Wiedergeben und Anhalten des Videos an den Punkten entlang der Zeitleiste fort, an denen Sie ein Segment hinzufügen möchten, bis Sie das Ende des Videos erreicht haben.
 
@@ -308,23 +312,23 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
       <td><strong>Standardwert für die Segmentdauer</strong></td> 
       </tr> 
       <tr> 
-      <td>3 Minuten oder mehr</td> 
+      <td>3 Minuten oder mehr</td> 
       <td>60 Sekunden</td> 
       </tr> 
       <tr> 
-      <td>2–3 Minuten</td> 
+      <td>2–3 Minuten</td> 
       <td>30 Sekunden</td> 
       </tr> 
       <tr> 
-      <td>1-2 Minuten</td> 
+      <td>1–2 Minuten</td> 
       <td>20 Sekunden<br /> </td> 
       </tr> 
       <tr> 
-      <td>30–60 Sekunden</td> 
+      <td>30–60 Sekunden</td> 
       <td>10 Sekunden</td> 
       </tr> 
       <tr> 
-      <td>maximal 30 Sekunden</td> 
+      <td>30 Sekunden oder weniger</td> 
       <td>5 Sekunden</td> 
       </tr> 
     </tbody> 
@@ -350,13 +354,13 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    Screenshot C
 
-   Im Screenshot C oben wird die **[!UICONTROL Zeitleistenskalierung]** wurde auf 8 Sekunden verschoben. Beachten Sie, wie die Segmente, die Produktminiaturen enthalten, verkleinert wurden. Ein solches „Herauszoomen“ ist bei langen Videos sinnvoll, um eine Übersicht über mehrere Segmente zu erhalten, die normalerweise auf die Breite einer Seite passen.
+   Im Screenshot C oben wird die **[!UICONTROL Zeitleistenskalierung]** wurde auf 8 Sekunden verschoben. Beachten Sie, wie die Segmente, die Produktminiaturen enthalten, verkleinert wurden. Auf diese Weise herauszuzoomen ist nützlich, wenn Sie ein langes Video haben und eine Übersicht über weitere Segmente sehen möchten, die normalerweise in die Seitenbreite passen würden.
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * So passen Sie die Start- und Endzeit eines Segments an:
 
-      Wählen Sie ein Segment und ziehen Sie das blaue ovale Symbol am Anfang oder Ende, um die Zeit für den Beginn bzw. das Ende anzupassen. Der angezeigte Videoframe wechselt auf Grundlage Ihrer Anpassungen zur entsprechenden Zeit im Video. Die Verschiebung des Zeitleistensegments ist auf Grundlage der benachbarten Segmente in der Zeitleiste beschränkt. Die minimal zulässige Segmentzeit lautet eine Sekunde.
+      Wählen Sie ein Segment und ziehen Sie das blaue ovale Symbol am Anfang oder Ende, um die Zeit für den Beginn bzw. das Ende anzupassen. Der angezeigte Video-Frame wechselt basierend auf Ihren Anpassungen zur entsprechenden Stelle im Video. Die Verschiebung des Zeitleistensegments ist auf Grundlage der benachbarten Segmente in der Zeitleiste beschränkt. Die minimale zulässige Segmentzeit beträgt eine Sekunde.
 
       Verwenden Sie die folgenden Navigationsverknüpfungen, um Ihre Videosegmente schnell zu überprüfen und zu optimieren:
 
@@ -376,7 +380,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
 
 1. Wählen Sie ein Zeitsegment aus, mit dem Sie das oder die Miniaturbild(er) verknüpfen möchten.
-1. Tippen Sie auf der rechten Seite des Videos auf die Registerkarte **[!UICONTROL Inhalt]**.
+1. Tippen Sie rechts neben dem Video auf **[!UICONTROL Inhalt]** Registerkarte.
 1. Unter dem **[!UICONTROL Inhalt]** Registerkarte, tippen **[!UICONTROL Auswählen von Assets]**, durchsuchen und wählen Sie dann alle Bild-Assets aus, die Sie mit Ihrem Video verwenden möchten. Die ausgewählten Assets werden zum **[!UICONTROL Asset-Auswahl]** -Bedienfeld in **[!UICONTROL Inhalt]** Registerkarte.
 
 1. In der Asset-Auswahl auf der Registerkarte „Inhalt“ gehen Sie wie folgt vor:
@@ -391,7 +395,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
       <td>So entfernen Sie eine Miniatur aus dem ausgewählten Zeitleistensegment-Segment</td> 
       <td><p>Führen Sie einen der folgenden Schritte aus:</p> 
         <ul> 
-        <li>Tippen Sie im Asset-Auswahlbereich auf ein Bild mit einem Häkchen, um seine Auswahl aufzuheben. Das Bild-Asset wird aus dem Zeitleistensegment-Segment entfernt.<br /> </li> 
+        <li>Tippen Sie im Asset-Auswahlbereich auf ein Bild mit einem Häkchen, um die Auswahl aufzuheben. Das Bild-Asset wird aus dem Zeitleistensegment-Segment entfernt.<br /> </li> 
         <li>Tippen Sie in einem ausgewählten Zeitleistensegment-Segment auf ein Bild und tippen Sie dann in der Symbolleiste auf <strong>Produkt löschen</strong>.</li> 
         </ul> </td> 
       </tr> 
@@ -407,8 +411,8 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
    <table> 
     <tbody> 
       <tr> 
-      <td>So verknüpfen Sie das ausgewählte Miniaturbild mit einer Schnellansicht:</td> 
-      <td><p>Tippen Sie unter „Aktionstyp“ auf <strong>Schnellansicht</strong>.</p> <p>Wenn Sie ein Experience Manager Sites- und E-Commerce-Kunde sind, gehen Sie wie folgt vor:</p> 
+      <td>So verknüpfen Sie das ausgewählte Miniaturbild mit einer Schnellansicht</td> 
+      <td><p>Tippen Sie unter "Aktionstyp"auf <strong>Schnellansicht</strong>.</p> <p>Wenn Sie ein Experience Manager Sites- und E-Commerce-Kunde sind, gehen Sie wie folgt vor:</p> 
        <ul> 
        <li>Beachten Sie, dass das Textfeld "SKU-Wert"mit der SKU (Stock Keeping Unit, Bestandseinheit) des ausgewählten Produkts vorausgefüllt ist. Hierbei handelt es sich um eine eindeutige Kennung für jedes von Ihnen angebotene Produkt oder Service. Dieses Feld wird automatisch ausgefüllt, wenn das Bild mit einem Produkt in Experience Manager Commerce verknüpft ist.</li> 
        <li>Wenn die vorausgefüllte SKU falsch ist, tippen oder klicken Sie auf das Produktauswahlsymbol (Lupe), um die Seite „Produkt wählen“ zu öffnen. Tippen oder klicken Sie auf das Produkt, das Sie verwenden möchten, und tippen Sie dann oben rechts auf der Seite auf das Häkchen, damit Sie zum interaktiven Video-Editor zurückkehren können.</li> 
@@ -421,15 +425,15 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
       </tr> 
       <tr> 
       <td>So verknüpfen Sie das ausgewählte Miniaturbild mit einem Hyperlink</td> 
-      <td><p>Tippen Sie unter „Aktionstyp“ auf <strong>Hyperlink</strong> und führen Sie dann einen der folgenden Schritte aus:</p> 
+      <td><p>Tippen Sie unter "Aktionstyp"auf <strong>Hyperlink</strong>, führen Sie dann einen der folgenden Schritte aus:</p> 
        <ul> 
        <li>Wenn Sie Experience Manager Sites-Kunde sind, tippen Sie auf das Symbol zur Site-Auswahl (Ordner), um zu einer Web-Seite zu navigieren. Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.</li> 
        <li>Wenn Sie nur Dynamic Media verwenden, geben Sie im Textfeld „HREF“ den vollständigen URL-Pfad zu einer verknüpften Web-Seite an.</li> 
-       </ul> <p>Stellen Sie sicher, dass Sie angeben, ob Sie den Link in einem neuen Browser oder auf der aktuellen Registerkarte öffnen möchten.</p> </td> 
+       </ul> <p>Vergessen Sie nicht, anzugeben, ob der Link auf einer neuen Browser-Registerkarte oder auf der aktuellen Registerkarte geöffnet werden soll.</p> </td> 
       </tr> 
       <tr> 
-      <td>So verknüpfen Sie das ausgewählte Miniaturbild mit einem Experience Fragment:</td> 
-      <td><p>Tippen Sie unter „Aktionstyp“ auf <strong>Experience Fragment</strong> und führen Sie dann einen der folgenden Schritte aus:<p> 
+      <td>So verknüpfen Sie das ausgewählte Miniaturbild mit einem Experience Fragment</td> 
+      <td><p>Tippen Sie unter "Aktionstyp"auf <strong>Experience Fragment</strong>und führen Sie dann die folgenden Schritte aus:<p> 
        <ul> 
        <li>Wenn Sie Experience Manager Sites-Kunde sind, tippen Sie auf das Suchsymbol (Lupe), um die Seite „Experience Fragment“ zu öffnen. Tippen oder klicken Sie auf das Experience Fragment, das Sie verwenden möchten, und tippen Sie dann auf <strong>Auswählen </strong>in der oberen rechten Ecke der Seite, damit Sie zum Bereich Aktionen auf der vorherigen Seite zurückkehren können.<br /> Weitere Informationen finden Sie unter <a href="/help/sites-authoring/experience-fragments.md">Experience Fragments</a>.</li> 
       </ul> 
@@ -453,12 +457,12 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    ![experiencefragment_interactivevideos](assets/experiencefragment_interactivevideos.png)
 
-   Dem Miniaturbild wird ein neues Textfeld hinzugefügt.
+   Dem Miniaturbild wird eine neue Textbeschriftung hinzugefügt.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wiederholen Sie die Schritte 6 bis 11, um den Zeitleistensegmenten des Videos weitere Miniaturbilder hinzuzufügen.
-   * Fahren Sie mit dem optionalen Schritt 13 fort.
+   * Fahren Sie mit dem optionalen Schritt 13 fort.
 
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
@@ -471,7 +475,7 @@ Nachdem Sie Ihr interaktives Video gespeichert haben, wird das Video sofort in d
 
    Zusammenführen zweier ausgewählter 5-Sekunden-Segmente zu einem 10-Sekunden-Segment.
 
-   * **[!UICONTROL Segment teilen]**: Sie können ein einzelnes Segment in zwei gleich lange Segmente aufteilen. Wenn dem Segment bereits Produktminiaturen zugewiesen sind, werden die Miniaturen im linken Segment zusammengefasst.
+   * **[!UICONTROL Segment teilen]** – Sie können ein einzelnes Segment in zwei gleich lange Segmente unterteilen. Wenn dem Segment bereits Produktminiaturen zugewiesen sind, werden die Miniaturen im linken Segment zusammengefasst.
 
       Tippen Sie in der Zeitleistensegment auf ein Segment, das Sie in der Hälfte teilen möchten, und tippen Sie dann in der Symbolleiste auf **[!UICONTROL Segment teilen]**.
 
@@ -525,7 +529,7 @@ Wenn Sie Experience Manager Assets alleine verwenden, können Sie das interaktiv
 1. Ermitteln Sie im Web-Seiten-Code des Ziels, wo sich das statische Video befindet.
 1. Entfernen Sie das statische Video und ersetzen Sie den Code durch den kopierten Integrations-Code oder die URL, den bzw. die Sie wie besehen aus Experience Manager-Assets kopiert haben.
 
-   Der kopierte Integrationscode wird für eine responsive Umgebung festgelegt. Daher sollte automatisch der Bereich angepasst werden, der zuvor vom statischen Video belegt war.
+   Der kopierte Einbettungscode wird für eine responsive Umgebung festgelegt, sodass er automatisch an den Bereich angepasst werden sollte, der zuvor vom statischen Video belegt war.
 
 >[!NOTE]
 An dieser Stelle sind Sie fertig, wenn Sie die Interaktivität mit ausschließlich per Hyperlink verbundener Web-Seiten hinzugefügt haben.
@@ -535,7 +539,7 @@ Wenn Sie jedoch eine Interaktivität zum Trigger einer Schnellansicht hinzugefü
 
 Verwenden der Demo-Website als ein Beispiel:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=de)
 
 Beachten Sie, dass es sich um standardmäßigen Video-Einbettungscode handelt:
 
@@ -564,7 +568,7 @@ Beachten Sie, dass es sich um standardmäßigen Video-Einbettungscode handelt:
 </script>
 ```
 
-Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs-Code des interaktiven Videos aus Experience Manager ersetzen. Das Ergebnis sehen Sie unter folgender URL. Ein auf der Seite vorhandenes interaktives Video wird zwar angezeigt, es ist jedoch noch nicht mit den Schnellansichten integriert:
+Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs-Code des interaktiven Videos aus Experience Manager ersetzen. Das Ergebnis sehen Sie unter folgender URL. Es wird zwar ein interaktives Video auf der Seite angezeigt, es ist jedoch noch nicht in die vorhandenen Schnellansichten integriert:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=de)
 
@@ -573,7 +577,7 @@ Zur Integration müssen Sie den Video-Einbettungs-Code nur durch den Einbettungs
 >[!NOTE]
 Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
 
-Im letzten Schritt in diesem Prozess integrieren Sie das interaktive Video in einer vorhandenen Schnellansichtsimplementierung, die auf Ihrer Website verwendet wird. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig. Daher ist ein spezifischer Ansatz erforderlich, wofür die Unterstützung eines Frontend-IT-Mitarbeiters nötig ist.
+Der letzte Schritt in diesem Prozess ist, das interaktive Video in einer vorhandenen Schnellansichtsimplementierung zu integrieren, die auf Ihrer Website verwendet wird. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig. Daher ist ein spezifischer Ansatz erforderlich, wofür die Unterstützung eines Frontend-IT-Mitarbeiters nötig ist.
 
 Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette von untereinander verknüpften Aktionen dar, die auf der Web-Seite in der folgenden Reihenfolge stattfinden:
 
@@ -587,7 +591,7 @@ Die vorhandene Schnellansichtsimplementierung stellt normalerweise eine Kette vo
 
 Diese Aufrufe stellen möglicherweise keine unabhängigen öffentlichen API-Aufrufe dar, die durch die Web-Seitenlogik in einem beliebigen Schritt aufgerufen werden können. Vielmehr handelt es sich um einen verketteten Aufruf, in dem der jeweils nächste Schritte in der letzten Phase (Callback) des vorherigen Schritts ausgeblendet ist.
 
-Sobald das interaktive Video Schritt 1 und teilweise Schritt 2 ersetzt, sofern ein Benutzer auf eine Miniaturansicht im interaktiven Video klickt, wird eine solche Benutzerinteraktion durch den Viewer verarbeitet. Der Viewer gibt an die Web-Seite ein Ereignis zurück, das alle zuvor zu Experience Manager hinzugefügten Miniaturdaten aufweist.
+Während das interaktive Video Schritt 1 und teilweise Schritt 2 ersetzt, wenn ein Benutzer auf eine Miniaturansicht im interaktiven Video klickt, wird diese Benutzerinteraktion vom Viewer verarbeitet. Der Viewer gibt an die Web-Seite ein Ereignis zurück, das alle zuvor zu Experience Manager hinzugefügten Miniaturdaten aufweist.
 
 In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 
@@ -716,7 +720,7 @@ Hierbei ist `inner_container` ein Verweis auf ein `DIV`-Element, das vom Viewer 
 
 Die Schritte zum eigentlichen Auffinden des modalen Dialogfeldelements und zum Anhängen an den Container hängen vom spezifischen Fall ab. Auch hier sollten Sie die Hilfe eines Frontend-Entwicklers in Anspruch nehmen, der mit der benötigten Schnellansichtsimplementierung vertraut ist.
 
-Im Falle der Beispiel-Website wird das modale Schnellansichtsdialogfeld als `DIV` implementiert, wobei die ID der modalen Schnellansicht direkt an den Dokument-`BODY` angehängt wird. Deshalb ist der Code, um das Dialogfeld in den Container des Vierwers zu verschieben, ganz unkompliziert, wie Sie im Folgenden sehen können:
+Im Falle der Beispiel-Website wird das modale Schnellansichtsdialogfeld als `DIV` implementiert, wobei die ID der modalen Schnellansicht direkt an den Dokument-`BODY` angehängt wird. Daher ist der Code zum Verschieben dieses Dialogfelds in den Container des Viewers so einfach wie der folgende:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -769,7 +773,7 @@ Der vollständige Quell-Code lautet wie folgt:
 
 Die endgültige Demo-Website mit dem vollständig integrierten interaktiven Video hat folgendes Aussehen:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=de)
 
 ## Erstellen benutzerdefinierter Popups mithilfe von Schnellansichten {#using-quickviews-to-create-custom-pop-ups}
 

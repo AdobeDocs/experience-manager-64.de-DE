@@ -1,7 +1,7 @@
 ---
 title: Best Practices für Abfragen und Indizierung
 seo-title: Best Practices for Queries and Indexing
-description: Dieser Artikel liefert Richtlinien zum Optimieren Ihrer Indizes und Abfragen.
+description: Dieser Artikel enthält Richtlinien zur Optimierung Ihrer Indizes und Abfragen.
 seo-description: This article provides guidelines on how to optimize your indexes and queries.
 uuid: 0609935a-4a72-4b8e-a28e-daede9fc05f4
 contentOwner: User
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 5be5e2ff-2b46-4b9f-a58e-ecb16c77d603
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4602'
-ht-degree: 98%
+source-wordcount: '4638'
+ht-degree: 32%
 
 ---
 
 # Best Practices für Abfragen und Indizierung{#best-practices-for-queries-and-indexing}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Neben dem Übergang zu Oak in AEM 6 wurden auch einige bedeutende Änderungen in Bezug auf die Verwaltung von Abfragen und Indizes vorgenommen. Unter Jackrabbit 2 wurde sämtlicher Inhalt standardmäßig indiziert und war frei abrufbar. In Oak müssen Indizes manuell unter dem Knoten `oak:index` erstellt werden. Eine Abfrage kann zwar ohne Index ausgeführt werden, aber bei großen Datensätzen ist dieser Vorgang sehr langsam. Es kann sogar zu einem Abbruch kommen.
 
@@ -25,29 +29,29 @@ In diesem Artikel wird beschrieben, wann Indizes zu erstellen sind und wann auf 
 
 Darüber hinaus sollten Sie die [Oak-Dokumentation zum Erstellen von Abfragen und Indizes](/help/sites-deploying/queries-and-indexing.md) lesen. Außer den als neues Konzept in AEM 6 eingeführten Indizes gibt es syntaktische Unterschiede in Oak-Abfragen, die beim Migrieren von Code aus früheren AEM-Installationen berücksichtigt werden müssen.
 
-## Verwenden von Abfragen {#when-to-use-queries}
+## Wann Abfragen verwendet werden sollten {#when-to-use-queries}
 
 ### Repository- und Taxonomiedesign {#repository-and-taxonomy-design}
 
-Beim Entwerfen der Taxonomie für ein Repository müssen verschiedene Faktoren berücksichtigt werden. Hierzu gehören u. a. die Zugriffssteuerung, Lokalisierung, Vererbung von Komponenten- und Seiteneigenschaften.
+Bei der Erstellung der Taxonomie eines Repositorys müssen mehrere Faktoren berücksichtigt werden. Dazu gehören unter anderem Zugriffssteuerungen, Lokalisierung, die Vererbung von Komponenten- und Seiteneigenschaften.
 
-In einem Taxonomie-Design, in dem diese Punkte berücksichtigt werden, muss zudem auch die „Durchlauffähigkeit“ des Index-Designs beachtet werden. In diesem Kontext bezeichnet dieser Begriff die Fähigkeit einer Taxonomie zuzulassen, dass auf Inhalt, basierend auf seinem Pfad, planbar zugegriffen werden kann. Dies ermöglicht ein leistungsfähigeres System, das einfacher unterhalten werden kann als ein System, für das eine Vielzahl von Abfragen ausgeführt werden muss.
+Beim Entwerfen einer Taxonomie, die diese Bedenken berücksichtigt, muss zudem auch die „Durchlauffähigkeit“ des Index-Designs beachtet werden. In diesem Zusammenhang ist die Durchlaufbarkeit die Fähigkeit einer Taxonomie, die den vorhersehbaren Zugriff auf Inhalte auf Grundlage ihres Pfads ermöglicht. Dies ermöglicht ein leistungsfähigeres System, das leichter zu verwalten ist als ein System, bei dem viele Abfragen ausgeführt werden müssen.
 
 Darüber hinaus muss beim Entwerfen einer Taxonomie bedacht werden, ob eine Sortierung wichtig ist. Wenn auf eine explizite Sortierung verzichtet werden kann und eine große Anzahl gleichgeordneter Knoten erwartet wird, sind unsortierte Knotentypen wie `sling:Folder` oder `oak:Unstructured` vorzuziehen. Ist eine Sortierung erforderlich, wären `nt:unstructured` und `sling:OrderedFolder` besser geeignet.
 
 ### Abfragen in Komponenten {#queries-in-components}
 
-Da Abfragen zu den schwierigeren Vorgängen in einem AEM-System gehören können, empfiehlt es sich, diese in Komponenten zu vermeiden. Wenn beim Rendering einer Seite mehrere Abfragen gleichzeitig ausgeführt werden, kann dies die Leistung des Systems beeinträchtigen. Es gibt zwei Strategien, mit denen sich beim Rendering von Komponenten die Ausführung von Abfragen vermeiden lässt: **Durchlaufen von Knoten** und **Vorabrufen von Ergebnissen**.
+Da Abfragen eine der steuerbareren Vorgänge in einem AEM sein können, ist es empfehlenswert, sie in Ihren Komponenten zu vermeiden. Die Ausführung mehrerer Abfragen bei jedem Rendern einer Seite kann häufig die Leistung des Systems beeinträchtigen. Es gibt zwei Strategien, mit denen sich beim Rendering von Komponenten die Ausführung von Abfragen vermeiden lässt: **Durchlaufen von Knoten** und **Vorabrufen von Ergebnissen**.
 
 #### Durchlaufen von Knoten {#traversing-nodes}
 
-Wenn das Repository so aufgebaut ist, dass eine Vorabkenntnis des Speicherorts der erforderlichen Daten zulässig ist, kann der Code, der diese Daten von den notwendigen Pfaden abruft, ohne Abfragen gefunden und bereitgestellt werden.
+Wenn das Repository so konzipiert ist, dass eine vorherige Kenntnis des Speicherorts der erforderlichen Daten möglich ist, kann Code, der diese Daten aus den erforderlichen Pfaden abruft, bereitgestellt werden, ohne Abfragen ausführen zu müssen, um sie zu finden.
 
-Ein Beispiel hierfür wäre etwa das Rendering von Inhalt, der zu einer bestimmten Kategorie passt. Ein möglicher Ansatz: den Inhalt mit einer Kategorieeigenschaft zu organisieren, die abgefragt werden kann, um eine Komponente mit Elementen einer Kategorie aufzufüllen.
+Ein Beispiel hierfür wäre das Rendern von Inhalten, die zu einer bestimmten Kategorie passen. Ein Ansatz wäre, den Inhalt mit einer Kategorieeigenschaft zu organisieren, die abgefragt werden kann, um eine Komponente zu füllen, die Elemente in einer Kategorie anzeigt.
 
-Besser wäre es allerdings, diesen Inhalt in einer Taxonomie nach Kategorie zu strukturieren, damit er manuell abgerufen werden kann.
+Ein besserer Ansatz wäre, diesen Inhalt in einer Taxonomie nach Kategorie zu strukturieren, damit er manuell abgerufen werden kann.
 
-Angenommen, der Inhalt wird in einer Taxonomie wie der folgenden gespeichert:
+Wenn der Inhalt beispielsweise in einer Taxonomie gespeichert ist, die Folgendem ähnelt:
 
 ```xml
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
@@ -55,82 +59,82 @@ Angenommen, der Inhalt wird in einer Taxonomie wie der folgenden gespeichert:
 
 In diesem Fall lässt sich der Knoten `/content/myUnstructuredContent/parentCategory/childCategory` einfach abrufen und seine untergeordneten Elemente können analysiert und zum Rendern der Komponente verwendet werden.
 
-Bei einem kleinen oder homogenen Ergebnissatz kann es außerdem schneller sein, das Repository zu durchlaufen und die erforderlichen Knoten zu erfassen, statt eine Abfrage zu erstellen, die denselben Ergebnissatz zurückgibt. Generell gilt, dass Abfragen nach Möglichkeit vermieden werden sollten.
+Wenn Sie es mit einem kleinen oder homogenen Ergebnissatz zu tun haben, kann es außerdem schneller sein, das Repository zu durchlaufen und die erforderlichen Knoten zu sammeln, anstatt eine Abfrage zu erstellen, um denselben Ergebnissatz zurückzugeben. Generell sollten Abfragen vermieden werden, soweit dies möglich ist.
 
-#### Vorabruf von Ergebnissen {#prefetching-results}
+#### Vorabruf der Ergebnisse {#prefetching-results}
 
-Mitunter lassen die Inhalte oder Anforderungen im Zusammenhang mit der Komponente nicht zu, dass Knoten zum Abrufen der erforderlichen Daten durchlaufen werden. In diesen Fällen müssen die erforderlichen Abfragen vor dem Rendering der Komponente ausgeführt werden, damit eine optimale Leistung für den Endbenutzer sichergestellt werden kann.
+Manchmal lässt der Inhalt oder die Anforderungen um die Komponente die Verwendung von Knotendurchlauf zum Abrufen der erforderlichen Daten nicht zu. In diesen Fällen müssen die erforderlichen Abfragen vor dem Rendern der Komponente ausgeführt werden, damit eine optimale Leistung für den Endbenutzer gewährleistet ist.
 
-Sofern die für die Komponente erforderlichen Ergebnisse zum Zeitpunkt der Erstellung ermittelt werden können und von einer Änderung des Inhalts nicht auszugehen ist, kann die Abfrage ausgeführt werden, wenn der Autor Einstellungen im Dialogfeld anwendet.
+Wenn die für die Komponente erforderlichen Ergebnisse zum Zeitpunkt der Erstellung berechnet werden können und es nicht zu erwarten ist, dass sich der Inhalt ändert, kann die Abfrage ausgeführt werden, wenn der Autor die Einstellungen im Dialogfeld anwendet.
 
-Wenn sich Daten oder Inhalte regelmäßig ändern, kann die Abfrage nach einem Plan oder über einen Listener für Updates der zugrundeliegenden Daten ausgeführt werden. Anschließend können die Ergebnisse in einen freigegebenen Speicherort im Repository geschrieben werden. Alle Komponenten, die diese Daten benötigen, können dann die Werte aus diesem einzelnen Knoten beziehen, ohne eine Abfrage zur Laufzeit auszuführen.
+Wenn sich die Daten oder Inhalte regelmäßig ändern, kann die Abfrage planmäßig oder über einen Listener für Aktualisierungen der zugrunde liegenden Daten ausgeführt werden. Anschließend können die Ergebnisse an einen freigegebenen Speicherort im Repository geschrieben werden. Alle Komponenten, die diese Daten benötigen, können dann die Werte aus diesem einzelnen Knoten beziehen, ohne eine Abfrage zur Laufzeit auszuführen.
 
 ## Abfrageoptimierung {#query-optimization}
 
-Beim Ausführen einer indexfreien Abfrage werden Warnungen in Bezug auf das Durchlaufen von Knoten protokolliert. Im Falle einer Abfrage, die für eine häufige Ausführung vorgesehen ist, sollte ein Index erstellt werden. Um festzustellen, welcher Index von einer bestimmten Abfrage verwendet wird, wird das [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query) empfohlen. Zum Erhalt weiterer Informationen kann die DEBUG-Protokollierung für die entsprechenden Such-APIs aktiviert werden.
+Wenn eine Abfrage ausgeführt wird, bei der kein Index verwendet wird, werden Warnungen bezüglich der Knotendurchlauf protokolliert. Wenn es sich um eine Abfrage handelt, die häufig ausgeführt wird, sollte ein Index erstellt werden. Um festzustellen, welcher Index von einer bestimmten Abfrage verwendet wird, wird das [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query) empfohlen. Zum Erhalt weiterer Informationen kann die DEBUG-Protokollierung für die entsprechenden Such-APIs aktiviert werden.
 
 >[!NOTE]
 >
->Nach Ändern einer Indexdefinition muss der Index neu erstellt (neu indiziert) werden. Je nach Indexgröße kann dies etwas dauern.
+>Nach dem Ändern einer Indexdefinition muss der Index neu erstellt (neu indiziert) werden. Je nach Größe des Index kann es einige Zeit dauern, bis dies abgeschlossen ist.
 
-Beim Ausführen komplexer Abfragen kann es leistungsfähiger sein, die Abfrage in mehrere kleinere Abfragen zu unterteilen und die Daten später mithilfe von Code zusammenzuführen. Für solche Fälle wird empfohlen, die Leistung der beiden Ansätze miteinander zu vergleichen, um die für den jeweiligen Anwendungsfall besser geeignete Option zu ermitteln.
+Bei der Ausführung komplexer Abfragen kann es vorkommen, dass die Aufschlüsselung der Abfrage in mehrere kleinere Abfragen und die Verknüpfung der Daten über den Code nach der Tatsache leistungsfähiger ist. Für diese Fälle wird empfohlen, die Leistung der beiden Ansätze zu vergleichen, um festzustellen, welche Option für den betreffenden Anwendungsfall besser wäre.
 
-In AEM können Abfragen mit einer der drei folgenden Methoden geschrieben werden:
+AEM ermöglicht das Schreiben von Abfragen auf eine von drei Arten:
 
 * Verwenden von [QueryBuilder-APIs](/help/sites-developing/querybuilder-api.md) (empfohlen)
 * Verwenden von XPath (empfohlen)
 * Verwenden von SQL2
 
-Zwar werden alle Abfragen vor der Ausführung in SQL2 konvertiert, jedoch ist der Mehraufwand durch die Abfragenkonvertierung minimal. Daher stehen beim Auswählen einer Abfragesprache in erster Linie die Lesbarkeit und der Komfort für das Entwicklungsteam im Vordergrund.
+Während alle Abfragen vor der Ausführung in SQL2 konvertiert werden, ist der Aufwand für die Abfragekonvertierung minimal und daher die größte Sorge bei der Auswahl einer Abfragesprache die Lesbarkeit und Komfort des Entwicklungsteams.
 
 >[!NOTE]
 >
->Bei QueryBuilder wird die Ergebnisanzahl standardmäßig ermittelt, was in Oak im Vergleich zu vorherigen Jackrabbit-Versionen langsamer geschieht. Um dies auszugleichen, können Sie den [guessTotal-Parameter](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) verwenden.
+>Bei Verwendung von QueryBuilder wird die Ergebnisanzahl standardmäßig ermittelt, was in Oak im Vergleich zu früheren Versionen von Jackrabbit langsamer ist. Um dies zu kompensieren, können Sie die [guessTotal-Parameter](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results).
 
-### Tool „Abfrage erläutern“ {#the-explain-query-tool}
+### Tool &quot;Abfrage erläutern&quot; {#the-explain-query-tool}
 
-Wie bei jeder Abfragesprache besteht der erste Schritt zur Optimierung einer Abfrage darin, deren Ausführung zu verstehen. Dies ermöglicht das [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query), das zum Vorgangs-Dashboard gehört. Mithilfe dieses Tools kann eine Abfrage geladen und erläutert werden. Neben der Ausführungsdauer und den verwendeten Indizes wird eine Warnung angezeigt, wenn die Abfrage Probleme bei einem großen Repository verursachen wird. Das Tool kann außerdem eine Liste langsamer und gängiger Abfragen laden, die dann erläutert und optimiert werden können.
+Wie bei jeder anderen Abfragesprache besteht der erste Schritt zur Optimierung einer Abfrage darin, zu verstehen, wie sie ausgeführt wird. Dies ermöglicht das [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query), das zum Vorgangs-Dashboard gehört. Mithilfe dieses Tools kann eine Abfrage geladen und erläutert werden. Eine Warnung wird angezeigt, wenn die Abfrage Probleme mit einem großen Repository sowie die Ausführungszeit und die zu verwendenden Indizes verursacht. Das Tool kann auch eine Liste langsamer und beliebter Abfragen laden, die dann erklärt und optimiert werden können.
 
 ### DEBUG-Protokollierung für Abfragen {#debug-logging-for-queries}
 
-Um weitere Informationen darüber zu erhalten, wie Oak den zu verwendenden Index auswählt und wie das Abfragemodul eine Abfrage tatsächlich ausführt, kann für die folgenden Pakete eine **DEBUG**-Protokollierungskonfiguration hinzugefügt werden:
+Um zusätzliche Informationen darüber zu erhalten, wie Oak auswählt, welchen Index verwendet werden soll und wie die Abfrage-Engine tatsächlich eine Abfrage ausführt, wird ein **DEBUG** Die Protokollierungskonfiguration kann für die folgenden Pakete hinzugefügt werden:
 
 * org.apache.jackrabbit.oak.plugins.index
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-Achten Sie darauf, diesen Logger zu entfernen, wenn Sie das Debugging für Ihre Abfrage abgeschlossen haben, da der Logger eine große Anzahl von Aktivitäten ausgibt. Dies kann schließlich dazu führen, dass Ihre Festplatte mit Protokolldateien aufgefüllt wird.
+Stellen Sie sicher, dass Sie diesen Logger entfernen, wenn Sie das Debugging Ihrer Abfrage abgeschlossen haben, da er viele Aktivitäten ausgibt und schließlich Ihre Festplatte mit Protokolldateien füllen kann.
 
-Weitere Informationen hierzu finden Sie in der [Dokumentation zur Protokollierung](/help/sites-deploying/configure-logging.md).
+Weitere Informationen hierzu finden Sie im Abschnitt [Dokumentation zur Protokollierung](/help/sites-deploying/configure-logging.md).
 
 ### Indexstatistiken {#index-statistics}
 
-Lucene registriert ein JMX-Bean, das Details zum indizierten Inhalt enthält, einschließlich Größe und Anzahl der in jedem Index vorhandenen Dokumente.
+Lucene registriert ein JMX-Bean, das Details zu indizierten Inhalten einschließlich der Größe und Anzahl der in den einzelnen Indizes vorhandenen Dokumente bereitstellt.
 
 Ein Zugriff ist über die JMX-Konsole unter `https://server:port/system/console/jmx` möglich.
 
-Führen Sie nach Anmeldung bei der JMX-Konsole eine Suche nach **Lucene Index Statistics** durch. Weitere Indexstatistiken sind im **IndexStats** MBean verfügbar.
+Nachdem Sie in der JMX-Konsole angemeldet sind, suchen Sie nach **Lucene-Indexstatistiken** um sie zu finden. Weitere Indexstatistiken finden Sie im **IndexStats** MBean.
 
-Um Abfragestatistiken zu erhalten, sehen Sie sich das MBean mit der Bezeichnung **Oak Query Statistics** an.
+Sehen Sie sich die MBean mit dem Namen **Oak Query Statistics**.
 
-Um Ihre Indizes mit einem Tool wie [Luke](https://code.google.com/p/luke/) durchzugehen, müssen Sie die Oak-Konsole aufrufen und den Index vom `NodeStore` in einem Dateisystemverzeichnis sichern. Anleitungen hierzu finden Sie in der [Lucene-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Um Ihre Indizes mit einem Tool wie [Luke](https://code.google.com/p/luke/) durchzugehen, müssen Sie die Oak-Konsole aufrufen und den Index vom `NodeStore` in einem Dateisystemverzeichnis sichern. Anweisungen hierzu finden Sie im Abschnitt [Lucene-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-Sie können die Indizes Ihres Systems auch im JSON-Format extrahieren. Hierzu müssen Sie auf Folgendes zugreifen: `https://server:port/oak:index.tidy.-1.json`
+Sie können die Indizes in Ihrem System auch im JSON-Format extrahieren. Hierzu müssen Sie auf Folgendes zugreifen: `https://server:port/oak:index.tidy.-1.json`
 
 ### Abfragelimits {#query-limits}
 
 **Während der Entwicklung**
 
-Legen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10.000) und oak. `queryLimitReads` (z. B. 5000) fest und optimieren Sie die ressourcenintensive Abfrage, wenn die UnsupportedOperationException-Ausnahme „The query read more than x nodes...“ auftritt.
+Festlegung niedriger Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10.000) und oak. `queryLimitReads` (z. B. 5000) und optimieren Sie die teure Abfrage, wenn Sie eine UnsupportedOperationException -Ausnahme mit der Meldung &quot;The query read more than x nodes...&quot;erreichen.
 
-Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Sicherung durch einen Index oder Sicherung durch einen weniger abdeckenden Index). Beispielsweise führt eine Abfrage, die 1 Million Knoten liest, zu einer I/O-Steigerung – mit negativen Folgen für die Gesamtleistung der Anwendung. Jede Abfrage, die aufgrund eines überschrittenen Limits fehlschlägt, sollte analysiert und optimiert werden.
+Auf diese Weise lassen sich ressourcenintensive Abfragen vermeiden (d. h. nicht durch einen Index unterlegt oder durch einen Index unterlegt, der weniger bedeckt ist). Beispielsweise würde eine Abfrage, die 1 Million Knoten liest, zu einer Erhöhung der E/A führen und die Gesamtleistung der Anwendung negativ beeinflussen. Jede Abfrage, die aufgrund der obigen Beschränkungen fehlschlägt, sollte analysiert und optimiert werden.
 
 #### **Nach der Bereitstellung** {#post-deployment}
 
 * Überwachen Sie die Protokolle auf Abfragen, die eine hohe Anzahl durchlaufener Knoten oder einen hohen Heap-Speicherverbrauch auslösen:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-   * Optimieren Sie die Abfrage, um die Anzahl durchlaufener Knoten zu reduzieren.
+   * Optimieren Sie die Abfrage, um die Anzahl der durchsuchten Knoten zu reduzieren.
 
 * Überwachen Sie die Protokolle auf Abfragen, die einen hohen Heap-Speicherverbrauch auslösen:
 
@@ -150,64 +154,64 @@ Weitere Informationen finden Sie unter: [https://jackrabbit.apache.org/oak/docs/
 
 ## Tipps zum Erstellen effizienter Indizes {#tips-for-creating-efficient-indexes}
 
-### Sollte ein Index erstellt werden? {#should-i-create-an-index}
+### Sollte ich einen Index erstellen? {#should-i-create-an-index}
 
-Die erste Frage, die beim Erstellen oder Optimieren von Indizes gestellt werden muss, bezieht sich darauf, ob Indizes für eine bestimmte Situation wirklich erforderlich sind. Wenn Sie eine Abfrage nur einmal oder gelegentlich außerhalb der systembezogenen Stoßzeiten durch einen Batch-Prozess ausführen, kann es besser sein, auf die Indexerstellung komplett zu verzichten.
+Die erste Frage, die beim Erstellen oder Optimieren von Indizes gestellt werden muss, ist, ob sie für eine bestimmte Situation wirklich erforderlich sind. Wenn Sie die fragliche Abfrage nur einmal oder nur gelegentlich und zu einer Zeit außerhalb der Spitzenzeiten für das System über einen Batch-Prozess ausführen, ist es möglicherweise besser, überhaupt keinen Index zu erstellen.
 
 Wenn ein Index erstellt wurde, muss mit jeder Aktualisierung der indizierten Daten auch der Index aktualisiert werden. Da sich dies auf die Leistung des Systems auswirkt, sollten Indizes nur dann erstellt werden, wenn sie tatsächlich benötigt werden.
 
-Außerdem sind Indizes nur nützlich, wenn die im Index enthaltenen Daten so besonders sind, dass sie diesen Vorgang rechtfertigen. Denken Sie in diesem Zusammenhang an einen Index in einem Buch und die damit abgedeckten Themen. Beim Indizieren verschiedener Themen in einem Text gibt es gewöhnlich Hunderte oder Tausende von Einträgen, über die Sie schnell zu einzelnen Seiten und damit zur gesuchten Information springen können. Wenn dieser Index nur zwei oder drei Einträge hätte, jeweils mit einem Verweis auf mehrere hundert Seiten, wäre der Index nicht sonderlich nützlich. Dasselbe Konzept gilt für Datenbankindizes. Sind nur einige eindeutige Werte vorhanden, ist der Index nicht sehr nützlich. Dabei kann ein Index auch zu umfangreich werden und dadurch seine Nützlichkeit verlieren. Informationen zu Indexstatistiken finden Sie weiter oben unter [Indexstatistiken](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics).
+Darüber hinaus sind Indizes nur nützlich, wenn die im Index enthaltenen Daten eindeutig genug sind, um sie zu rechtfertigen. Betrachten Sie einen Index in einem Buch und die Themen, die darin behandelt werden. Bei der Indizierung einer Reihe von Themen in einem Text gibt es in der Regel Hunderte oder Tausende von Einträgen, was es Ihnen ermöglicht, schnell zu einer Untergruppe von Seiten zu springen, um die gesuchten Informationen schnell zu finden. Wenn dieser Index nur zwei oder drei Einträge hätte, von denen jeder auf mehrere Hundert Seiten verweist, wäre der Index nicht sehr nützlich. Dasselbe Konzept gilt für Datenbankindizes. Sind nur einige eindeutige Werte vorhanden, ist der Index nicht sehr nützlich. Dabei kann ein Index auch zu umfangreich werden und dadurch seine Nützlichkeit verlieren. Informationen zu Indexstatistiken finden Sie unter [Indexstatistiken](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) höher.
 
 ### Lucene- oder Eigenschaftenindizes? {#lucene-or-property-indexes}
 
-Lucene-Indizes wurden in Oak 1.0.9 aufgenommen und bieten verschiedene Optimierungsvarianten, die gegenüber den bei der Ersteinführung von AEM 6 enthaltenen Eigenschaftenindizes leistungsstärker sind. Bei der Entscheidung zwischen Lucene-Indizes oder Eigenschaftenindizes müssen die folgenden Aspekte berücksichtigt werden:
+Lucene-Indizes wurden in Oak 1.0.9 eingeführt und bieten einige leistungsstarke Optimierungen gegenüber den Eigenschaftenindizes, die beim ersten Start von AEM 6 eingeführt wurden. Berücksichtigen Sie bei der Entscheidung, ob Lucene-Indizes oder Eigenschaftenindizes verwendet werden sollen, Folgendes:
 
-* Lucene-Indizes weisen deutlich mehr Funktionen auf als Eigenschaftenindizes. Beispielsweise kann ein Eigenschaftenindex nur eine einzige Eigenschaft indizieren, während ein Lucene-Index eine Vielzahl von Eigenschaften umfassen kann. Weitere Informationen zu den in Lucene-Indizes verfügbaren Funktionen finden Sie in der [Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
-* Lucene-Indizes sind asynchron. Dies ist zwar mit einer erheblichen Leistungssteigerung verbunden, kann aber auch eine Verzögerung zwischen dem Schreiben von Daten in das Repository und dem Aktualisieren des Index hervorrufen. Wenn Abfragen zu 100 % genaue Ergebnisse zurückgeben müssen, ist ein Eigenschaftenindex erforderlich.
+* Lucene-Indizes bieten viel mehr Funktionen als Eigenschaftenindizes. Beispielsweise kann ein Eigenschaftenindex nur eine einzelne Eigenschaft indizieren, während ein Lucene-Index viele enthalten kann. Weitere Informationen zu allen in Lucene-Indizes verfügbaren Funktionen finden Sie im [Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+* Lucene-Indizes sind asynchron. Dies bietet zwar eine erhebliche Leistungssteigerung, kann aber auch zu einer Verzögerung zwischen dem Schreiben von Daten in das Repository und dem Aktualisieren des Index führen. Wenn Abfragen zu 100 % genaue Ergebnisse zurückgeben müssen, ist ein Eigenschaftenindex erforderlich.
 * Da Lucene-Indizes asynchron sind, können sie keine Eindeutigkeitseinschränkungen erzwingen. Sofern erforderlich, muss ein Eigenschaftenindex angelegt werden.
 
-Im Allgemeinen werden Lucene-Indizes empfohlen, außer es besteht eine zwingende Notwendigkeit für Eigenschaftenindizes, damit Sie von höherer Leistung und Flexibilität profitieren können.
+Im Allgemeinen wird empfohlen, Lucene-Indizes zu verwenden, es sei denn, es besteht eine zwingende Notwendigkeit, Eigenschaftenindizes zu verwenden, damit Sie die Vorteile einer höheren Leistung und Flexibilität nutzen können.
 
 ### Solr-Indizierung {#solr-indexing}
 
-AEM unterstützt zudem standardmäßig die Solr-Indizierung. Hauptsächlich dient dies der Unterstützung von Volltextsuchen; diese Art der Indizierung kann aber auch zum Unterstützen beliebiger JCR-Abfragen verwendet werden. Solr sollte in Betracht gezogen werden, wenn die CPU-Kapazität der AEM-Instanzen nicht für die benötigte Anzahl an Anfragen in suchintensiven Bereitstellungen wie suchgesteuerten Websites mit einer hohen Anzahl gleichzeitiger Benutzer ausreicht. Solr kann auch in einem Crawler-basierten Ansatz implementiert werden, um einige der hochmodernen Funktionen dieser Plattform nutzen zu können.
+AEM unterstützt standardmäßig auch die Solr-Indizierung. Dies wird hauptsächlich zur Unterstützung der Volltextsuche verwendet, kann aber auch zur Unterstützung beliebiger JCR-Abfragen verwendet werden. Solr sollte berücksichtigt werden, wenn die AEM Instanzen nicht über die CPU-Kapazität verfügen, um die Anzahl der Abfragen zu verarbeiten, die in suchintensiven Implementierungen wie suchgesteuerten Websites mit einer hohen Anzahl gleichzeitiger Benutzer erforderlich sind. Alternativ kann Solr in einem Crawler-basierten Ansatz implementiert werden, um einige der fortschrittlicheren Funktionen der Plattform zu nutzen.
 
-Solr-Indizes können so konfiguriert werden, dass sie eingebettet auf dem AEM-Server für Entwicklungsumgebungen ausgeführt werden, oder sie können auf eine Remote-Instanz abgeladen werden, um die Suchskalierbarkeit der Produktions- und Staging-Umgebungen zu verbessern. Zwar wird die Skalierbarkeit durch Abladen von Suchvorgängen optimiert, allerdings kommt es zu Latenz und daher wird von einem solchen Vorgehen, sofern nicht erforderlich, abgeraten. Weitere Informationen zum Konfigurieren einer Solr-Integration und zum Erstellen von Solr-Indizes finden Sie in der [Dokumentation zu Oak-Abfragen und -Indizierung](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
+Solr-Indizes können so konfiguriert werden, dass sie für Entwicklungsumgebungen eingebettet auf dem AEM-Server ausgeführt werden, oder sie können in eine Remote-Instanz abgeladen werden, um die Suchskalierbarkeit in der Produktions- und Staging-Umgebung zu verbessern. Während die Abladung der Suche die Skalierbarkeit verbessert, führt sie zu Latenzzeiten, und deshalb wird es nicht empfohlen, es sei denn, dies ist erforderlich. Weitere Informationen zum Konfigurieren der Solr-Integration und zum Erstellen von Solr-Indizes finden Sie unter [Dokumentation zu Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
 >[!NOTE]
 >
->Der integrierte Solr-Suchansatz ermöglicht es, die Indizierung auf den Solr-Server abzuladen. Wenn die fortschrittlicheren Funktionen des Solr-Servers über einen Crawler-basierten Ansatz verwendet werden, sind zusätzliche Konfigurationsvorgänge erforderlich. Headwire hat einen [Open-Source-Connector](https://www.aemsolrsearch.com/#/) entwickelt, um diese Arten der Implementierung zu beschleunigen.
+>Der integrierte Solr-Suchansatz ermöglicht es, die Indizierung auf einen Solr-Server auszulagern. Wenn die erweiterten Funktionen des Solr-Servers über einen Crawler-basierten Ansatz verwendet werden, sind zusätzliche Konfigurationsvorgänge erforderlich. Headwire hat eine [Open Source-Connector](https://www.aemsolrsearch.com/#/) um diese Implementierungen zu beschleunigen.
 
-Der Nachteil dieses Ansatzes: AEM-Abfragen berücksichtigen zwar standardmäßig ACLs, sodass die Ergebnisse ausgeblendet werden, auf die ein Benutzer keinen Zugriff hat, aber beim Externalisieren von Suchvorgängen auf einen Solr-Server wird diese Funktion nicht unterstützt. Wenn Suchvorgänge auf eine solche Art und Weise externalisiert werden sollen, muss besonders vorsichtig vorgegangen werden, um sicherzustellen, dass für Benutzer nur die für sie vorgesehenen Ergebnisse angezeigt werden.
+Der Nachteil dieses Ansatzes besteht darin, dass AEM Abfragen zwar standardmäßig ACLs respektieren und so Ergebnisse verbergen, auf die ein Benutzer keinen Zugriff hat. Eine Externalisierung der Suche an einen Solr-Server unterstützt diese Funktion nicht. Wenn die Suche auf diese Weise externalisiert werden soll, muss besonders darauf geachtet werden, dass den Benutzern keine Ergebnisse angezeigt werden, die sie nicht sehen sollten.
 
-Potenzielle Anwendungsbeispiele, für die dieser Ansatz geeignet sein kann, sind etwa Fälle, in denen Suchdaten von mehreren Quellen aggregiert werden müssen. Angenommen, Sie verfügen über eine auf AEM gehostete Website sowie über eine zweite auf einer Drittanbieterplattform gehostete Website. Solr kann so konfiguriert werden, dass der Inhalt von beiden Websites durchforstet und in einem aggregierten Index gespeichert wird. Dies würde Website-übergreifende Suchvorgänge ermöglichen.
+Mögliche Anwendungsfälle, in denen dieser Ansatz sinnvoll sein kann, sind Fälle, in denen Suchdaten aus mehreren Quellen möglicherweise aggregiert werden müssen. So kann es beispielsweise vorkommen, dass eine Site auf AEM gehostet wird und eine zweite Site auf einer Drittanbieterplattform gehostet wird. Solr könnte so konfiguriert werden, dass der Inhalt beider Sites durchsucht und in einem aggregierten Index gespeichert wird. Dies würde Site-übergreifende Suchen ermöglichen.
 
-### Designhinweise {#design-considerations}
+### Designüberlegungen {#design-considerations}
 
-Die Oak-Dokumentation für Lucene-Indizes führt verschiedene Hinweise für das Design von Indizes auf:
+In der Oak-Dokumentation für Lucene-Indizes werden verschiedene Überlegungen zum Erstellen von Indizes aufgeführt:
 
-* Verwendet die Abfrage verschiedene Pfadeinschränkungen, nutzen Sie `evaluatePathRestrictions`. Hierdurch kann die Abfrage eine Teilmenge von Ergebnissen unter dem angegebenen Pfad zurückgeben und diese dann basierend auf der Abfrage filtern. Andernfalls sucht die Abfrage nach allen Ergebnissen im Repository, die den Abfrageparametern entsprechen, und filtert diese dann basierend auf dem Pfad.
-* Wenn für die Abfrage die Sortierfunktion verwendet wird, ist eine explizite Eigenschaftendefinition erforderlich. Außerdem müssen Sie `ordered` auf `true` setzen. So können Ergebnisse im Index sortiert werden und ressourcenintensive Sortiervorgänge können zum Zeitpunkt der Abfrageausführung eingespart werden.
+* Verwendet die Abfrage verschiedene Pfadeinschränkungen, nutzen Sie `evaluatePathRestrictions`. Dadurch kann die Abfrage die Teilmenge der Ergebnisse unter dem angegebenen Pfad zurückgeben und sie dann anhand der Abfrage filtern. Andernfalls sucht die Abfrage nach allen Ergebnissen, die mit den Abfrageparametern im Repository übereinstimmen, und filtert sie dann anhand des Pfads.
+* Wenn für die Abfrage die Sortierfunktion verwendet wird, ist eine explizite Eigenschaftendefinition erforderlich. Außerdem müssen Sie `ordered` auf `true` setzen. Dadurch können die Ergebnisse als solche im Index sortiert werden und kostspielige Sortiervorgänge während der Ausführung der Abfrage gespeichert werden.
 
-* Nehmen Sie nur das in den Index auf, was erforderlich ist. Werden nicht benötigte Funktionen oder Eigenschaften hinzugefügt, wird zum einen der Index größer, zum anderen nimmt die Geschwindigkeit ab.
+* Setzen Sie nur das, was benötigt wird, in den Index. Das Hinzufügen nicht benötigter Funktionen oder Eigenschaften führt dazu, dass der Index wächst und die Leistung verlangsamt.
 * In einem Eigenschaftenindex trägt ein eindeutiger Eigenschaftsname dazu bei, die Indexgröße zu reduzieren, aber für Lucene-Indizes sollten `nodeTypes` und `mixins` zum Erstellen kohäsiver Indizes verwendet werden. Die Abfrage nach einem bestimmten `nodeType` oder `mixin` ist leistungsstärker als eine `nt:base`-Abfrage. Definieren Sie bei diesem Ansatz `indexRules` für die fraglichen `nodeTypes`.
 
-* Wenn Ihre Abfragen nur unter bestimmten Pfaden ausgeführt werden, erstellen Sie diese Indizes unter diesen Pfaden. Indizes müssen sich nicht im Repository-Stammverzeichnis befinden.
-* Es wird empfohlen, einen einzelnen Index zu verwenden, wenn alle indizierten Eigenschaften miteinander zusammenhängen, damit Lucene so viele Eigenschaftseinschränkungen wie möglich nativ bewerten kann. Darüber hinaus wird für eine Abfrage nur ein Index genutzt, selbst im Falle einer Zusammenführung.
+* Wenn Ihre Abfragen nur unter bestimmten Pfaden ausgeführt werden, erstellen Sie diese Indizes unter diesen Pfaden. Indizes müssen nicht im Stammverzeichnis des Repositorys gespeichert werden.
+* Es wird empfohlen, einen einzigen Index zu verwenden, wenn alle zu indizierenden Eigenschaften miteinander verknüpft sind, damit Lucene so viele Eigenschaftsbeschränkungen wie möglich nativ bewerten kann. Darüber hinaus verwendet eine Abfrage nur einen Index, selbst wenn ein Join durchgeführt wird.
 
 ### CopyOnRead {#copyonread}
 
-Wenn `NodeStore` remote gespeichert wird, kann die Option `CopyOnRead` aktiviert werden. Diese Option bewirkt, dass der Remote-Index beim Lesen auf das lokale Dateisystem geschrieben wird. Hierdurch kann sich die Leistung bei Abfragen, die häufig gegen diese Remote-Indizes ausgeführt werden, verbessern.
+Wenn `NodeStore` remote gespeichert wird, kann die Option `CopyOnRead` aktiviert werden. Die Option bewirkt, dass der Remote-Index beim Lesen in das lokale Dateisystem geschrieben wird. Dies kann dazu beitragen, die Leistung von Abfragen zu verbessern, die häufig mit diesen Remote-Indizes ausgeführt werden.
 
-Dies kann in der OSGi-Konsole unter dem **LuceneIndexProvider**-Dienst konfiguriert werden (standardmäßig aktiviert ab Oak 1.0.13).
+Dies kann in der OSGi-Konsole unter der **LuceneIndexProvider** und ist standardmäßig ab Oak 1.0.13 aktiviert.
 
 ### Entfernen von Indizes {#removing-indexes}
 
-Beim Entfernen eines Index wird immer empfohlen, den Index durch Einstellen der Eigenschaft `type` auf `disabled` vorübergehend zu deaktivieren und Tests durchzuführen, um vor dem Löschen eine ordnungsgemäße Funktionsweise der Anwendung sicherzustellen. Ein Index wird nicht aktualisiert, wenn er deaktiviert ist, sodass bei einer erneuten Aktivierung möglicherweise nicht der richtige Inhalt vorhanden ist und eine Neuindizierung erfolgen muss.
+Beim Entfernen eines Index wird immer empfohlen, den Index durch Einstellen der Eigenschaft `type` auf `disabled` vorübergehend zu deaktivieren und Tests durchzuführen, um vor dem Löschen eine ordnungsgemäße Funktionsweise der Anwendung sicherzustellen. Beachten Sie, dass ein Index bei Deaktivierung nicht aktualisiert wird, sodass er möglicherweise nicht über den richtigen Inhalt verfügt, wenn er reaktiviert wird, und möglicherweise neu indiziert werden muss.
 
-Nachdem ein Eigenschaftenindex in einer TarMK-Instanz entfernt wurde, muss eine Komprimierung durchgeführt werden, um belegten Festplattenspeicher wieder freizugeben. Der tatsächliche Inhalt von Lucene-Indizes befindet sich im Blob-Speicher, sodass eine automatische Bereinigung des Datenspeichers erforderlich ist.
+Nachdem Sie einen Eigenschaftsindex auf einer TarMK-Instanz entfernt haben, muss die Komprimierung ausgeführt werden, um den verwendeten Speicherplatz zurückzugewinnen. Bei Lucene-Indizes befindet sich der tatsächliche Indexinhalt im BlobStore, sodass eine automatische Datenspeicherbereinigung erforderlich ist.
 
-Wenn ein Index in einer MongoDB-Instanz entfernt wird, verhält sich der Löschaufwand proportional zur Anzahl der Knoten im Index. Da das Löschen eines großen Index zu Problemen führen kann, wird empfohlen, den Index nur während eines Wartungsfensters mit einem Tool wie **oak-mongo.js** zu deaktivieren und zu löschen. Dieser Ansatz sollte nicht für regulären Knoteninhalt eingesetzt werden, da damit Dateninkonsistenzen eingeführt werden können.
+Beim Entfernen eines Index auf einer MongoDB-Instanz sind die Löschkosten proportional zur Anzahl der Knoten im Index. Da das Löschen eines großen Index Probleme verursachen kann, wird empfohlen, den Index zu deaktivieren und ihn nur während eines Wartungsfensters zu löschen, indem ein Tool wie **oak-mongo.js**. Bitte beachten Sie, dass dieser Ansatz nicht für reguläre Knoteninhalte verwendet werden sollte, da er Dateninkonsistenzen verursachen kann.
 
 >[!NOTE]
 >
@@ -226,14 +230,14 @@ Eine Neuindizierung von Oak-Indizes muss vermieden werden, sofern nicht einer de
 >Bevor Sie die Tabellen unten durchsuchen, um festzustellen, ob eine Neuindizierung nützlich ist, sollten Sie** immer **überprüfen:
 >
 >* Die Abfrage ist korrekt.
->* Die Abfrage wird in den erwarteten Index aufgelöst (mit dem [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#diagnosis-tools)).
->* Der Indizierungsvorgang wurde abgeschlossen.
+>* Die Abfrage wird zum erwarteten Index aufgelöst (mithilfe von [Abfrage erläutern](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
+>* der Indizierungsprozess abgeschlossen ist
 >
 
 
-### Konfigurationsänderungen von Oak-Indizes {#oak-index-configuration-changes}
+### Änderungen der Oak-Indexkonfiguration {#oak-index-configuration-changes}
 
-Die Neuindizierung von Oak-Indizes ist nur dann sinnvoll, wenn sich die Konfiguration für einen Oak-Index geändert hat.
+Die einzige akzeptable, nicht fehlerhafte Bedingung für die Neuindizierung von Oak-Indizes ist, dass sich die Konfiguration eines Oak-Index geändert hat.
 
 *Vor einer Neuindizierung sollten die damit verbundenen Auswirkungen auf die AEM-Gesamtleistung angemessen berücksichtigt werden. Darüber hinaus sollte die Neuindizierung in Zeiträumen geringer Aktivität oder während Wartungsfenstern stattfinden.*
 
@@ -244,67 +248,67 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 #### Definitionsänderung des Eigenschaftenindex {#property-index-definition-change}
 
-* Gilt für folgende Fälle:
+* Gilt für/wenn:
 
    * Alle Oak-Versionen
-   * Ausschließlich [Eigenschaftenindizes](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
+   * Nur [Eigenschaftenindizes](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
 
 * Symptome:
 
-   * Knoten, die bereits vor der Definitionsaktualisierung des Eigenschaftenindex vorhanden waren, fehlen in den Ergebnissen.
+   * Knoten, die vor der Definitionsaktualisierung des Eigenschaftenindex vorhanden sind, fehlen in den Ergebnissen
 
-* Überprüfen des Problems:
+* Überprüfen:
 
-   * Bestimmen Sie, ob die fehlenden Knoten vor Bereitstellung der aktualisierten Indexdefinition erstellt/geändert wurden.
+   * Bestimmen Sie, ob fehlende Knoten vor der Bereitstellung der aktualisierten Indexdefinition erstellt/geändert wurden.
    * Überprüfen Sie die Eigenschaften `jcr:created` oder `jcr:lastModified` aller fehlenden Knoten im Hinblick auf die Änderungszeit des Index.
 
 * Beheben des Problems:
 
    * [Indizieren](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) Sie den Lucene-Index neu.
-   * Sie können auch einen Schreibvorgang ohne Auswirkungen für den fehlenden Knoten durchführen.
+   * Alternativ können Sie auf die fehlenden Knoten tippen (einen benignen Schreibvorgang durchführen)
 
-      * Es sind manuelle Bearbeitungen oder benutzerdefinierter Code erforderlich.
-      * Die fehlenden Knoten müssen bekannt sein.
-      * Eine beliebige Eigenschaft des jeweiligen Knotens muss geändert werden.
+      * Erfordert manuelle Änderungen oder benutzerdefinierten Code
+      * Erfordert, dass der Satz fehlender Knoten bekannt ist.
+      * Erfordert das Ändern einer beliebigen Eigenschaft auf dem Knoten
 
 #### Definitionsänderung des Lucene-Index {#lucene-index-definition-change}
 
-* Gilt für folgende Fälle:
+* Gilt für/wenn:
 
    * Alle Oak-Versionen
    * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptome:
 
-   * Der Lucene-Index enthält keine erwarteten Ergebnisse.
-   * Die Abfrageergebnisse spiegeln nicht das erwartete Verhalten der Indexdefinition wider.
-   * Der Abfrageplan berichtet nicht die erwartete, auf der Indexdefinition basierende Ausgabe.
+   * Lucene-Index enthält keine erwarteten Ergebnisse
+   * Die Abfrageergebnisse spiegeln nicht das erwartete Verhalten der Indexdefinition wider
+   * Der Abfrageplan meldet keine erwartete Ausgabe basierend auf Indexdefinition
 
-* Überprüfen des Problems:
+* Überprüfen:
 
    * Überprüfen Sie, ob die Indexdefinition mit dem Lucene Index Statistics JMX MBean (LuceneIndex), Methode `diffStoredIndexDefinition`, geändert wurde.
 
 * Beheben des Problems:
 
-   * Oak-Versionen vor 1.6:
+   * Oak-Versionen vor 1.6:
 
       * [Indizieren](#how-to-re-index) Sie den Lucene-Index neu.
-   * Oak-Versionen ab 1.6:
+   * Oak-Versionen 1.6+
 
-      * Wenn sich Änderungen nicht auf den vorhandenen Inhalt auswirken, ist lediglich eine Aktualisierung erforderlich.
+      * Wenn der vorhandene Inhalt nicht durch die Änderungen beeinflusst wird, ist nur eine Aktualisierung erforderlich
 
          * [Aktualisieren](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Sie den Lucene-Index, indem Sie [oak:queryIndexDefinition] @refresh=true einstellen.
-      * [Indizieren](#how-to-re-index) Sie andernfalls den Lucene-Index neu.
+      * Andernfalls [re-index](#how-to-re-index) Lucene-Index
 
-         * Hinweis: Der Indexstatus der letzten erfolgreichen Neuindizierung (oder Erstindizierung) wird so lange verwendet, bis eine Neuindizierung ausgelöst wird.
+         * Hinweis: Der Indexstatus der letzten guten Neuindizierung (oder anfänglichen Indizierung) wird verwendet, bis eine neue Neuindizierung ausgelöst wird.
 
 
 
-### Fehler- und Ausnahmesituationen {#erring-and-exceptional-situations}
+### Fehler und außergewöhnliche Situationen {#erring-and-exceptional-situations}
 
-In der folgenden Tabelle werden die einzigen akzeptablen Fehler- und Ausnahmesituationen beschrieben, in denen das Problem durch Neuindizieren der Oak-Indizes behoben wird.
+In der folgenden Tabelle werden die einzigen akzeptablen Fehler- und Ausnahmesituationen beschrieben, in denen die Neuindizierung von Oak-Indizes das Problem beheben wird.
 
-Wenn in AEM ein Problem auftritt, das nicht den nachfolgend beschriebenen Kriterien entspricht, indizieren Sie Indizes **nicht** neu, da das Problem hierdurch nicht gelöst wird.
+Wenn bei AEM ein Problem auftritt, das nicht den unten beschriebenen Kriterien entspricht, führen Sie **not** Indizieren Sie alle Indizes neu, da dies das Problem nicht behebt.
 
 Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lösungen:
 
@@ -313,18 +317,18 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 #### Fehlende Lucene-Index-Binärdateien {#lucene-index-binary-is-missing}
 
-* Gilt für folgende Fälle:
+* Gilt für/wenn:
 
    * Alle Oak-Versionen
    * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptome:
 
-   * Der Lucene-Index enthält keine erwarteten Ergebnisse.
+   * Lucene-Index enthält keine erwarteten Ergebnisse
 
-* Überprüfen des Problems:
+* Überprüfen:
 
-   * Die Fehlerprotokolldatei enthält eine Ausnahme, wonach eine Binärdatei des Lucene-Index fehlt.
+   * Die Fehlerprotokolldatei enthält eine Ausnahme, die besagt, dass eine Binärdatei des Lucene-Index fehlt.
 
 * Beheben des Problems:
 
@@ -344,16 +348,16 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 #### Beschädigte Lucene-Index-Binärdateien {#lucene-index-binary-is-corrupt}
 
-* Gilt für folgende Fälle:
+* Gilt für/wenn:
 
    * Alle Oak-Versionen
    * Ausschließlich [Lucene-Indizes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptome:
 
-   * Der Lucene-Index enthält keine erwarteten Ergebnisse.
+   * Lucene-Index enthält keine erwarteten Ergebnisse
 
-* Überprüfen des Problems:
+* Überprüfen:
 
    * `AsyncIndexUpdate` (alle 5 Sekunden) schlägt mit folgender Ausnahme im Fehlerprotokoll fehl:
 
@@ -361,9 +365,9 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 * Beheben des Problems:
 
-   * Entfernen Sie die lokale Kopie des Lucene-Index.
+   * Entfernen Sie die lokale Kopie des Lucene-Index
 
-      1. Stoppen Sie AEM.
+      1. AEM beenden
       1. Löschen Sie die lokale Kopie des Lucene-Index unter `crx-quickstart/repository/index`.
       1. Starten Sie AEM neu.
    * Wenn das Problem hierdurch nicht behoben wird und die `AsyncIndexUpdate`-Ausnahmen bestehen bleiben, gehen Sie wie folgt vor:
@@ -380,7 +384,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
 #### Neuindizieren von Eigenschaftenindizes {#re-indexing-property-indexes}
 
-* Verwenden Sie [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing), um den Eigenschaftenindex neu zu indizieren.
+* Verwendung [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) , um den Eigenschaftenindex neu zu indizieren
 * Stellen Sie im Eigenschaftenindex die Eigenschaft „reindex-async“ auf „true“ ein:
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
@@ -391,54 +395,54 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 
    [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
-#### Neuindizieren von Lucene-Eigenschaftenindizes {#re-indexing-lucene-property-indexes}
+#### Neuindizierung von Lucene-Eigenschaftenindizes {#re-indexing-lucene-property-indexes}
 
-* Verwenden Sie [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing), um den Lucene-Eigenschaftenindex neu zu indizieren.
+* Verwendung [oak-run.jar zum Neuindizieren](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) den Lucene-Eigenschaftsindex.
 * Stellen Sie im Lucene-Eigenschaftsindex
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 
 >[!NOTE]
 >
->Im vorherigen Abschnitt ist die Anleitung zur Oak-Neuindizierung aus der [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) im AEM-Kontext zusammengefasst und formuliert.
+>Im vorherigen Abschnitt werden die Anleitungen zur Neuindizierung von Oak aus der [Apache Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) im Rahmen von AEM.
 
 ### Textvorextraktion von Binärdateien {#text-pre-extraction-of-binaries}
 
-Die Vorextraktion von Text ist das Extrahieren und Verarbeiten von Text aus Binärdateien, und zwar direkt aus dem Datenspeicher über einen isolierten Prozess, sowie das direkte Offenlegen des extrahierten Texts für nachfolgende Neuindizierungen von Oak-Indizes.
+Bei der Textvorextraktion wird Text aus Binärdateien extrahiert und verarbeitet, direkt aus dem Datenspeicher über einen isolierten Prozess, und der extrahierte Text wird direkt zu nachfolgenden Neuindizierungen von Oak-Indizes weitergeleitet.
 
-* Die Oak-Textvorextraktion wird für Neuindizierungen von Lucene-Indizes in Repositorys mit einer großen Menge an (Binär-) Dateien mit extrahierbarem Text (z. B. PDF-, Word-, PPT-, TXT-Dateien usw.) empfohlen, die über bereitgestellte Oak-Indizes eine Volltextsuche ermöglichen, z. B. `/oak:index/damAssetLucene`.
-* Von einer Textvorextraktion profitiert lediglich die Neuindizierung von Lucene-Indizes, aber nicht von Oak-Eigenschaftenindizes, da Eigenschaftenindizes keinen Text aus Binärdateien extrahieren.
-* Die Textvorextraktion wirkt sich enorm positiv auf die Volltext-Neuindizierung von textlastigen Binärdateien (PDF, DOC, TXT usw.) aus, während ein Repository von Bildern hier nicht dieselbe Effizienz bietet, da Bilder keinen extrahierbaren Text enthalten.
-* Bei der Textvorextraktion wird der mit der Volltextsuche in Zusammenhang stehende Text überaus effizient extrahiert und gegenüber dem Oak-Prozess zur Neuindizierung auf eine Art und Weise offengelegt, die eine extrem effiziente Nutzung ermöglicht.
+* Die Oak-Textvorextraktion wird für die Neuindizierung/Indizierung von Lucene-Indizes in Repositorys mit großen Mengen von Dateien (Binärdateien) empfohlen, die extrahierbaren Text enthalten (z. B. PDF, Word-Dokumente, PPTs, TXT usw.) die über bereitgestellte Oak-Indizes eine Volltextsuche ermöglichen, z. B. `/oak:index/damAssetLucene`.
+* Die Textvorextraktion profitiert nur von der Neuindizierung/Indizierung von Lucene-Indizes und NICHT von Oak-Eigenschaftenindizes, da Eigenschaftenindizes keinen Text aus Binärdateien extrahieren.
+* Die Textvorextraktion wirkt sich sehr positiv auf die Volltext-Neuindizierung von textbasierten Binärdateien (PDF, Doc, TXT usw.) aus, wobei als Bildrepository nicht die gleiche Effizienz erzielt wird, da Bilder keinen extrahierbaren Text enthalten.
+* Die Textvorextraktion führt die Extraktion von Volltextsuchen-bezogenem Text auf überaus effiziente Weise durch und stellt ihn dem Oak-Neuindizierungsprozess auf eine Weise zur Verfügung, die überaus effizient zu nutzen ist.
 
 #### Wann kann die Textvorextraktion verwendet werden? {#when-can-text-pre-extraction-be-used}
 
-Neuindizieren eines **vorhandenen** Lucene-Index mit aktivierter Binärdateiextraktion
+Neuindizieren einer **vorhandene** Lucene-Index mit aktivierter Binärextraktion
 
-* Neuindizierungsverarbeitung **all** Kandidateninhalt im Repository; Wenn die Binärdateien, aus denen Volltext extrahiert werden soll, zahlreich oder komplex sind, wird eine erhöhte Rechenlast für die Volltextextextextraktion auf AEM gelegt. Bei der Textvorextraktion werden die „rechenintensiven Arbeiten“ für die Textextraktion in einen isolierten Prozess mit direktem Zugriff auf den AEM-Datenspeicher ausgelagert, sodass Mehraufwand und Ressourcenkonflikte in AEM vermieden werden.
+* Neuindizierungsverarbeitung **all** Kandidateninhalt im Repository; Wenn die Binärdateien, aus denen Volltext extrahiert werden soll, zahlreich oder komplex sind, wird eine erhöhte Rechenlast für die Volltextextextextraktion auf AEM gelegt. Die Textvorextraktion verschiebt die &quot;rechnerisch kostspielige Arbeit&quot;der Textextraktion in einen isolierten Prozess, der direkt auf AEM Datenspeicher zugreift, wodurch Overhead- und Ressourcenkonflikte in AEM vermieden werden.
 
-Unterstützung für die Bereitstellung eines **neuen** Lucene-Index in AEM mit aktivierter Binärdateiextraktion
+Unterstützung bei der Bereitstellung eines **new** Lucene-Index für AEM mit aktivierter Binärextraktion
 
-* Wenn ein neuer Index (mit aktivierter Binärdateiextraktion) in AEM bereitgestellt wird, indiziert Oak automatisch sämtlichen in Frage kommenden Inhalt bei der nächsten asynchronen Volltextindizierung. Aus den gleichen Gründen, wie oben unter „Neuindizieren“ beschrieben, kann dies zu einer AEM-Überbelastung führen.
+* Wenn ein neuer Index (mit aktivierter binärer Extraktion) in AEM bereitgestellt wird, indiziert Oak automatisch alle Kandidateninhalte beim nächsten asynchronen Volltext-Index-Lauf. Aus den gleichen Gründen, die oben unter Neuindizierung beschrieben werden, kann dies zu einer übermäßigen Belastung der AEM führen.
 
-#### Wann kann die Textvorextraktion nicht verwendet werden? {#when-can-text-pre-extraction-not-be-used}
+#### Wann kann die Textvorextraktion NICHT verwendet werden? {#when-can-text-pre-extraction-not-be-used}
 
-Die Textvorextraktion kann nicht für neu zum Repository hinzugefügten Inhalt verwendet werden; dies ist aber auch nicht notwendig.
+Die Textvorextraktion kann nicht für neue Inhalte verwendet werden, die zum Repository hinzugefügt werden, und ist auch nicht erforderlich.
 
-Neuer Inhalt, der dem Repository hinzugefügt wird, wird selbstverständlich und schrittweise durch die asynchrone Volltextindizierung indiziert (standardmäßig alle 5 Sekunden).
+Neue Inhalte werden dem Repository hinzugefügt und werden automatisch schrittweise durch den asynchronen Volltext-Indizierungsprozess indiziert (standardmäßig alle 5 Sekunden).
 
-Bei normalem AEM-Betrieb, etwa beim Hochladen von Assets über die Web-Benutzeroberfläche oder die programmatische Aufnahme von Assets, führt AEM eine automatische und schrittweise Volltextindizierung des neuen Binärinhalts durch. Da die Datenmenge inkrementell und relativ klein ist (in etwa die Datenmenge, die 5 Sekunden lang im Repository aufbewahrt werden kann), kann AEM während der Indizierung eine Volltext-Extraktion der Binärdateien durchführen, ohne dass sich dies auf die Gesamtleistung des Systems auswirkt.
+Unter normalen AEM, z. B. beim Hochladen von Assets über die Web-Benutzeroberfläche oder bei der programmatischen Aufnahme von Assets, wird AEM den neuen binären Inhalt automatisch und inkrementell in Volltext indizieren. Da die Datenmenge inkrementell und relativ gering ist (was ungefähr der Datenmenge entspricht, die in 5 Sekunden im Repository gespeichert werden kann), können AEM während der Indizierung die Volltextextextraktion aus den Binärdateien durchführen, ohne die Gesamtleistung des Systems zu beeinträchtigen.
 
-#### Voraussetzungen für eine Textvorextraktion {#prerequisites-to-using-text-pre-extraction}
+#### Voraussetzungen für die Verwendung der Textvorextraktion {#prerequisites-to-using-text-pre-extraction}
 
-* Sie müssen einen Lucene-Index neu indizieren, der eine Volltext-Binärextraktion durchführt, oder einen neuen Index bereitstellen, der einen Volltextindex für die Binärdateien des vorhandenen Inhalts erstellt.
-* Die Inhalte (Binärdateien) für die Textextraktion müssen sich im Repository befinden.
-* Es muss ein Wartungsfenster vorhanden sein, um die CSV-Datei zu generieren und die abschließende Neuindizierung durchzuführen.
-* Die folgenden Oak-Version müssen verwendet werden: 1.0.18 oder höher, 1.2.3 oder höher.
+* Sie indizieren einen Lucene-Index neu, der eine Volltext-Binärextrahierung durchführt, oder stellen einen neuen Index bereit, der Volltext-Indexbinärdateien vorhandener Inhalte bereitstellt.
+* Der Inhalt (Binärdateien), aus dem Text vorextrahiert werden soll, muss sich im Repository befinden
+* Ein Wartungsfenster zum Generieren der CSV-Datei UND zum Durchführen der endgültigen Neuindizierung
+* Oak-Version: 1.0.18+, 1.2.3+
 * Die folgende [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)-Version muss verwendet werden: 1.7.4 oder höher.
 * Es muss ein Ordner oder eine Freigabe auf dem Datensystem vorhanden sein, um extrahierten Text zu speichern, der über die indizierende(n) AEM-Instanz(en) zugänglich ist.
 
-   * Die OSGi-Konfiguration zur Textvorextraktion setzt einen Dateisystempfad zu den extrahierten Textdateien voraus; diese dürfen also nicht direkt über die AEM-Instanz (lokales Laufwerk oder Bereitstellung der Dateifreigabe) verfügbar sein.
+   * Für die OSGi-Konfiguration Textvorextraktion ist ein Dateisystempfad zu den extrahierten Textdateien erforderlich, sodass sie direkt von der AEM-Instanz (lokale Festplatte oder Dateifreigabebereitstellung) aus zugänglich sein müssen
 
 #### Durchführen der Textvorextraktion {#how-to-perform-text-pre-extraction}
 
@@ -452,17 +456,17 @@ Bei normalem AEM-Betrieb, etwa beim Hochladen von Assets über die Web-Benutzero
 
 **Generieren einer Inhaltsliste für die Vorextraktion**
 
-*Führen Sie Schritt 1(a–b) während eines Wartungsfensters oder in einem Zeitraum geringer Aktivität durch, da der Knotenspeicher während dieses Vorgangs durchlaufen wird, wodurch das System enorm belastet werden kann.*
+*Führen Sie Schritt 1 (a-b) während eines Wartungsfensters/Zeitraums mit geringer Nutzung aus, da der Knotenspeicher während dieses Vorgangs durchlaufen wird, was eine erhebliche Belastung des Systems verursachen kann.*
 
 1a. Führen Sie `oak-run.jar --generate` aus, um eine Liste der Knoten mit vorextrahiertem Text zu erstellen.
 
-1b. Die Liste der Knoten (1a) wird auf dem Dateisystem als CSV-Datei gespeichert.
+1b. Die Liste der Knoten (1a) wird im Dateisystem als CSV-Datei gespeichert
 
 Der gesamte Knotenspeicher wird jedes Mal durchlaufen (wie in den Pfaden des oak-run-Befehls angegeben), wenn `--generate` ausgeführt und eine **neue** CSV-Datei erstellt wird. Die CSV-Datei wird zwischen den diskreten Ausführungen des Textextraktionsprozesses (Schritte 1–2) **nicht** wiederverwendet.
 
-**Vorextrahieren von Text für das Dateisystem**
+**Text vorab in Dateisystem extrahieren**
 
-*Schritt 2(a–c) kann während des normalen AEM-Betriebs ausgeführt werden, da lediglich eine Interaktion mit dem Datenspeicher stattfindet.*
+*Schritt 2 (a-c) kann während des normalen AEM ausgeführt werden, da nur mit dem Datenspeicher interagiert wird.*
 
 2a. Führen Sie `oak-run.jar --tika` aus, um Text für die in der unter (1b) generierten CSV-Datei genannten Binärknoten vorzuextrahieren.
 
@@ -470,14 +474,14 @@ Der gesamte Knotenspeicher wird jedes Mal durchlaufen (wie in den Pfaden des oak
 
 2c.  Der extrahierte Text wird im Dateisystem in einem Format gespeichert, das vom Oak-Neuindizierungsprozess (3a) verarbeitet werden kann.
 
-Vorextrahierter Text ist in der CSV-Datei durch einen binären Fingerabdruck gekennzeichnet. Wenn die Binärdatei identisch ist, kann derselbe vorextrahierte Text über mehrere AEM-Instanzen hinweg verwendet werden. Da AEM Publish normalerweise ein Teil von AEM Author ist, kann mit dem aus AEM Author vorextrahierten Text häufig auch AEM Publish neu indiziert werden (sofern AEM Publish über Dateisystemzugriff auf die extrahierten Textdateien verfügt).
+Vorextrahierter Text ist in der CSV-Datei durch einen binären Fingerabdruck gekennzeichnet. Wenn die Binärdatei identisch ist, kann derselbe vorextrahierte Text für AEM Instanzen verwendet werden. Da AEM Publish normalerweise eine Untergruppe von AEM Author ist, kann der vorab extrahierte Text aus AEM Author häufig auch verwendet werden, um AEM Publish erneut zu indizieren (vorausgesetzt, die AEM-Veröffentlichung hat Dateisystemzugriff auf die extrahierten Textdateien).
 
-Vorextrahierter Text kann im Laufe der Zeit schrittweise hinzugefügt werden. Bei der Textvorextraktion werden im Extraktionsvorgang zuvor extrahierte Binärdateien ausgelassen. Daher hat es sich bewährt, vorextrahierten Text für den Fall aufzubewahren, dass zukünftig eine Neuindizierung erforderlich sein sollte. (Dies gilt, sofern der extrahierte Inhalt nicht ungeheuer groß ist. Ziehen Sie sonst eine zwischenzeitliche Zip-Komprimierung des Inhalts in Betracht, da Text gut komprimiert werden kann.)
+Vorab extrahierter Text kann schrittweise im Laufe der Zeit hinzugefügt werden. Bei der Textvorextraktion wird die Extraktion für zuvor extrahierte Binärdateien übersprungen. Daher ist es Best Practice, vorextrahierten Text beizubehalten, falls die Neuindizierung in Zukunft erneut erfolgen muss (vorausgesetzt, der extrahierte Inhalt ist nicht unnötig groß). Ziehen Sie sonst eine zwischenzeitliche Zip-Komprimierung des Inhalts in Betracht, da Text gut komprimiert werden kann.)
 
-**Neuindizieren von Oak-Indizes, Beziehen von Volltext aus extrahierten Textdateien**
+**Indizieren Sie Oak-Indizes neu, indem Sie Volltext aus extrahierten Textdateien beziehen.**
 
-*Führen Sie die Neuindizierung (Schritt 3a–b) während eines Wartungsfensters oder in einem Zeitraum geringer Aktivität durch, da der Knotenspeicher während dieses Vorgangs durchlaufen wird, wodurch das System enorm belastet werden kann.*
+*Führen Sie die Neuindizierung (Schritte 3a-b) während einer Wartungs-/Anwendungsdauer durch, da der Knotenspeicher während dieses Vorgangs durchlaufen wird, was zu einer erheblichen Belastung des Systems führen kann.*
 
-3a. Die [Neuindizierung](#how-to-re-index) von Lucene-Indizes wird in AEM aufgerufen.
+3a. [Neuindizierung](#how-to-re-index) von Lucene-Indizes werden in AEM aufgerufen
 
 3b. Die Apache Jackrabbit Oak DataStore PreExtractedTextProvider-OSGi-Konfiguration (zum Verweisen auf den extrahierten Text über einen Dateisystempfad) weist Oak an, Volltext aus den extrahierten Dateien zu beziehen, und vermeidet ein direktes Auffinden und Verarbeiten der im Repository gespeicherten Daten.

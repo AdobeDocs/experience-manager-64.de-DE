@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 role: Admin
 exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 4%
+source-wordcount: '490'
+ht-degree: 5%
 
 ---
 
 # Site-Vorlagen {#site-templates}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Konsole &quot;Site-Vorlagen&quot;ähnelt der [Gruppenvorlagen](tools-groups.md) -Konsole, die sich auf Funktionen konzentriert, die für Community-Gruppen von Interesse sind.
 

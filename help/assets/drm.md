@@ -5,14 +5,18 @@ contentOwner: AG
 feature: DRM,Asset Management
 role: User,Admin
 exl-id: 3eea4983-9dd5-4d69-ad93-3cd37a656d22
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 98%
+source-wordcount: '1466'
+ht-degree: 90%
 
 ---
 
 # Digital Rights Management für Assets {#digital-rights-management-in-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Digitale Assets sind oftmals mit einer Lizenz verbunden, in der die Bedingungen und die Nutzungsdauer festgelegt sind. Da [!DNL Adobe Experience Manager Assets] vollständig mit der [!DNL Experience Manager]-Plattform integriert ist, können Sie Asset-Ablaufinformationen und -Status effizient verwalten. Sie können Lizenzinformationen mit Assets verknüpfen.
 
@@ -101,9 +105,9 @@ Damit die [!DNL Assets]-Konsole die verweisenden ebenenübergreifenden Assets ne
    >
    >Nur der Ersteller eines Assets (die Person, die ein bestimmtes Asset in [!DNL Assets] hochlädt) erhält eine E-Mail, wenn das Asset abläuft. Machen Sie sich damit vertraut, [wie Sie E-Mail-Benachrichtigungen konfigurieren können](/help/sites-administering/notification.md), um weitere Einzelheiten zur Konfiguration von E-Mail-Benachrichtigungen in [!DNL Experience Manager] im Allgemeinen zu erhalten.
 
-1. Geben Sie im Feld **[!UICONTROL Vorabbenachrichtigung in Sekunden]** den Zeitpunkt in Sekunden vor dem Ablauf eines Assets an, zu dem Sie über den bevorstehenden Ablauf benachrichtigt werden möchten. Wenn Sie ein Administrator oder der Ersteller des Assets sind, werden Sie vor Ablauf des Assets darüber informiert, dass das Asset nach dem angegebenen Zeitraum ablaufen wird.
+1. Geben Sie im Feld **[!UICONTROL Vorabbenachrichtigung in Sekunden]** den Zeitpunkt in Sekunden vor dem Ablauf eines Assets an, zu dem Sie über den bevorstehenden Ablauf benachrichtigt werden möchten. Wenn Sie Administrator oder Asset-Ersteller sind, erhalten Sie vor Ablauf des Assets eine Nachricht, die Sie darüber informiert, dass das Asset nach der angegebenen Zeit abläuft.
 
-   Nachdem das Asset abgelaufen ist, erhalten Sie eine weitere Benachrichtigung, die den Ablauf bestätigt. Außerdem werden die abgelaufenen Assets deaktiviert.
+   Nach Ablauf des Assets erhalten Sie eine weitere Benachrichtigung, die den Ablauf bestätigt. Darüber hinaus werden die abgelaufenen Assets deaktiviert.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
@@ -162,7 +166,7 @@ Die [!DNL Assets]-Konsole kann verschiedene Status für Assets anzeigen. Abhäng
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Sie können auch auf Grundlage einer Kombination von Statusangaben mit verschiedenen Suchfacetten nach Assets suchen. Sie können beispielsweise nach veröffentlichten Assets suchen, die in einer Prüfungsaufgabe bestätigt wurden und noch nicht abgelaufen sind, indem Sie die entsprechenden Optionen in den Suchfacetten auswählen.
+1. Sie können auch auf Grundlage einer Kombination von Statusangaben mit verschiedenen Suchfacetten nach Assets suchen. Sie können beispielsweise nach veröffentlichten Assets suchen, die in einer Prüfungsaufgabe genehmigt wurden und noch nicht abgelaufen sind, indem Sie die entsprechenden Optionen in den Suchfacetten auswählen.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 

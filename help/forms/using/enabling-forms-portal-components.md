@@ -1,7 +1,7 @@
 ---
-title: Aktivieren der Komponenten im Forms Portal
+title: Aktivieren von Formularportal-Komponenten
 seo-title: Enabling forms portal components
-description: Standardmäßig sind Forms Portal-Komponenten deaktiviert. Aktivieren Sie die Gruppen „“ und „Dokumentdienst-Eigenschaften“, um Forms Portal-Komponenten zu aktivieren.
+description: Standardmäßig sind Forms Portal-Komponenten deaktiviert. Aktivieren Sie die Gruppen Document Services und Document Services Predicates , um Forms Portal-Komponenten zu aktivieren.
 seo-description: Out of the box, Forms Portal components are disabled. Enable Document Services and Document Services Predicates groups to enable Forms Portal components.
 uuid: 92d25da6-f1df-4ac0-bf84-2edf9e2722b3
 content-type: reference
@@ -10,16 +10,20 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 01c5eb6b-b097-4354-84b2-8bee7b7626f2
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 100%
+source-wordcount: '356'
+ht-degree: 72%
 
 ---
 
-# Aktivieren der Komponenten im Forms Portal {#enabling-forms-portal-components}
+# Aktivieren von Formularportal-Komponenten {#enabling-forms-portal-components}
 
-Standardmäßig sind die Forms Portal-Komponenten nicht verfügbar. Führen Sie die folgenden Schritte aus, damit die Komponenten in der Liste der verfügbaren Komponenten in AEM Sidekick angezeigt werden:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Standardmäßig sind Forms Portal-Komponenten nicht verfügbar. Führen Sie die folgenden Schritte aus, damit die Komponenten in der Liste der verfügbaren Komponenten in AEM Sidekick angezeigt werden:
 
 1. Melden Sie sich bei der Autoreninstanz Ihrer Website an und öffnen Sie eine AEM Sites-Seite.
 
@@ -37,7 +41,7 @@ Standardmäßig sind die Forms Portal-Komponenten nicht verfügbar. Führen Sie 
 
 >[!NOTE]
 >
->Sie können bestimmte Komponenten aus diesen Kategorien auch aktivieren, indem Sie die Komponenten auswählen. Weitere Informationen zu den Komponenten und ihrer Verwendung finden Sie unter[ Erstellen einer Formularportalseite](/help/forms/using/creating-form-portal-page.md) und[ Einbetten einer Verknüpfungskomponente in eine Seite](/help/forms/using/embedding-link-component-page.md).
+>Sie können auch bestimmte Komponenten aus diesen Kategorien aktivieren, indem Sie die Komponenten auswählen. Weitere Informationen zu den Komponenten und ihrer Verwendung finden Sie unter [Erstellen einer Formularportalseite](/help/forms/using/creating-form-portal-page.md) und [Einbetten der Verknüpfungskomponente in eine Seite](/help/forms/using/embedding-link-component-page.md).
 
 Jetzt sind die Komponentenkategorien „Document Services“ und „Document Services Predicates“ im Komponenten-Browser verfügbar. Die Komponenten sind für alle Seiten aktiviert, die dieselbe Vorlage verwenden.
 

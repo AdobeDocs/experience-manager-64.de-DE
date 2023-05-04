@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: f2ecd59c-a311-4e4a-b1a8-2bc3afe0599d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 2%
+source-wordcount: '320'
+ht-degree: 4%
 
 ---
 
 # Abstimmungsgrundlagen {#voting-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Abstimmungskomponente [tally](tally.md) -Unterklasse ist ein nützliches Tool, mit dem Mitglieder ein bestimmtes Inhaltselement bewerten können, indem sie einfach Pfeile nach oben oder unten auswählen, um ihre Meinung anzugeben.
 

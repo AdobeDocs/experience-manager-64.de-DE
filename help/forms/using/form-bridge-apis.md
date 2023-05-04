@@ -1,7 +1,7 @@
 ---
 title: Form Bridge APIs für HTML5-Formulare
 seo-title: Form Bridge APIs for HTML5 forms
-description: Externe Anwendungen verwenden die FormBridge-APIs, um eine Verbindung mit dem XFA Mobile Form herzustellen. Die API löst ein FormBridgeInitialized-Ereignis auf dem übergeordneten Fenster aus.
+description: Externe Anwendungen verwenden die FormBridge-API, um eine Verbindung zum XFA Mobile Form herzustellen. Die API sendet ein FormBridgeInitialized-Ereignis im übergeordneten Fenster.
 seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
 uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: ad669f3b-2bda-4c41-8032-cf25a192ce12
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 95%
+source-wordcount: '975'
+ht-degree: 82%
 
 ---
 
 # Form Bridge APIs für HTML5-Formulare {#form-bridge-apis-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können die Form Bridge APIs verwenden, um einen Übertragungskanal zwischen XFA-basierten HTML5-Formularen und Ihren Programmen zu öffnen. Die Form Bridge APIs bieten eine **Verbindungs**-API, um die Verbindung zu erstellen.
 
@@ -43,9 +47,9 @@ window.addEventListener("FormBridgeInitialized",
 
 **getBridgeVersion()**
 
-Gibt die Versionsnummer der Skriptbibliothek zurück.
+Gibt die Versionsnummer der Skriptbibliothek aus
 
-* **Eingabe:** keine
+* **Eingabe**: keine
 * **Ausgabe**: Versionsnummer der Skriptbibliothek
 * **Fehler:** keine
 
@@ -63,8 +67,8 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
    * **handler:** Funktion, die ausgeführt wird, wenn Form Bridge verbunden ist.
    * **context**: Das Objekt, auf das der Kontext (dies) der *handler *function festgelegt wird.
 
-* **Ausgabe:** keine
-* **Fehler:** keine
+* **Ausgabe**: Keines
+* **Fehler**: Keines
 
 **getDataXML(options)** Gibt die Daten des aktuellen Formulars im XML-Format zurück
 
@@ -73,15 +77,15 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
    * **options:** JavaScript-Objekt, das die folgenden Eigenschaften enthält:
 
       * **Error:** Fehlerhandler-Funktion
-      * **success:** Erfolgshandler-Funktion. Diese Funktion wird an ein Objekt übergeben, das XML in der *data*-Eigenschaft enthält.
-      * **context:** Das Objekt, auf das der Kontext (dies) der *success*-Funktion festgelegt wird.
+      * **success**: Erfolgshandler-Funktion. Diese Funktion wird an ein Objekt übergeben, das XML enthält in *data* -Eigenschaft.
+      * **context**: Das Objekt, dem der Kontext (dies) des *success* -Funktion festgelegt ist
       * **validationChecker**: Funktion, um die Validierungsfehler zu prüfen, die vom Server erhalten wurden. Der Überprüfungsfunktion wird ein Array von Fehlerstrings übergeben.
       * **formState**: Der JSON-Status des XFA-Formulars, für das XML-Daten zurückgegeben werden sollen. Wenn nicht anders angegeben, wird Daten-XML für das aktuell gerenderte Formular zurückgegeben.
 
 * **Ausgabe:** keine
 * **Fehler:** keine
 
-**registerConfig(configName, config)** Registriert Benutzer-/Portal-spezifische Konfigurationen mit FormBridge. Diese Konfigurationen überschreiben die Standardkonfigurationen. Die unterstützten Konfigurationen sind im Abschnitt „config“ angegeben.
+**registerConfig(configName, config)** Registriert Benutzer-/Portal-spezifische Konfigurationen mit FormBridge. Diese Konfigurationen überschreiben die Standardkonfigurationen. Die unterstützten Konfigurationen werden im Abschnitt &quot;config&quot;angegeben.
 
 * **Eingabe:**
 
@@ -147,9 +151,9 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 **hideSubmitButtons()**: Blendet alle Senden-Schaltflächen im Formular aus
 
-* **Eingabe:** keine
-* **Ausgabe:** keine
-* **Fehler:** Gibt einen Ausnahmefehler aus, wenn Formularstatus nicht initialisiert wurde.
+* **Eingabe**: keine
+* **Ausgabe**: Keines
+* **Fehler**: Löst eine Ausnahme aus, wenn der Formularstatus nicht initialisiert wurde
 
 **getFormState()**: Gibt die JSON-Datei zurück, die den Formularstatus darstellt
 
@@ -158,7 +162,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 * **Fehler:** keine
 
-**restoreFormState(options)**: Stellt den Formularstatus aus dem bereitgestellten JSON-Status im Optionenobjekt wieder her. Der Status wird angewendet und Erfolgs- oder Fehlerhandler werden aufgerufen, nachdem der Vorgang ist abgeschlossen ist.
+**restoreFormState(options)**: Stellt den Formularstatus aus dem bereitgestellten JSON-Status im Optionenobjekt wieder her. Der Status wird angewendet und Erfolgs- oder Fehler-Handler werden aufgerufen, nachdem der Vorgang abgeschlossen ist.
 
 * **Eingabe:**
 

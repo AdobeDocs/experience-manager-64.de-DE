@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Reports
 role: Architect,Admin
 exl-id: b0154c9c-a671-43fb-8733-274a35307a34
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 82%
+source-wordcount: '216'
+ht-degree: 72%
 
 ---
 
 # Verwenden von Seitenverfolgung und Einbettungs-Code in Web-Seiten {#using-page-tracker-and-embed-code-in-web-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Seitenverfolgung ist ein JavaScript-Code, den Sie in den Code von Drittanbieter-Websites einfügen, damit Adobe Analytics Nutzungsdaten zu Adobe Experience Manager-Assets auf diesen Websites erfassen kann.
 

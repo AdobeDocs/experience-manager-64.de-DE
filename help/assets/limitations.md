@@ -1,6 +1,6 @@
 ---
 title: Grenzwerte für Dynamic Media
-description: Erfahren Sie mehr über die Best Practices und durchgesetzten Grenzwerte beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Erfahren Sie auch mehr über nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media.
+description: Erfahren Sie mehr über die Best Practices und durchgesetzten Grenzwerte beim Erstellen eines Bildsets oder eines Rotationssets oder beim Hochladen einer PDF. Außerdem erhalten Sie Informationen zu nicht unterstützten Kombinationen von Webbrowsern und Betriebssystemen für Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
@@ -8,14 +8,18 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
-source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 80%
+source-wordcount: '271'
+ht-degree: 89%
 
 ---
 
 # Grenzwerte für Dynamic Media
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In den folgenden Abschnitten werden Grenzwerte für Dynamic Media beschrieben.
 
@@ -33,14 +37,14 @@ Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextrahierun
 | **Bild**: Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
 | **Alle Sets**: Anzahl doppelter Assets pro Set | Keine Duplikate | 20 |
 | **Alle Sets**: Maximale Anzahl von Assets pro Set | 5–10 Bilder pro Set | 1000 |
-| **Rotationsset**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1.000 |
-| **PDF**: Maximale Seitenzahl für eine PDF, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDFs) |
+| **Rotationsset**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1000 |
+| **PDF**: Maximale Zahl der Seiten für eine PDF-Datei, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDFs) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Nicht unterstützte Webbrowser- und Betriebssystemkombinationen für Dynamic Media {#unsupported-browser-os}
 
-Dynamic Media unterstützt die folgenden Webbrowser- und Betriebssystemkombinationen nicht:
+Dynamic Media unterstützt nicht die folgenden Kombinationen aus Webbrowser und Betriebssystem:
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1

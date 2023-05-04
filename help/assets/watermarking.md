@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 77%
+source-wordcount: '355'
+ht-degree: 60%
 
 ---
 
 # Versehen von digitalen Assets mit Wasserzeichen {#watermarking}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 [!DNL Adobe Experience Manager Assets] ermöglicht das Hinzufügen eines digitalen Wasserzeichens zu Assets, mit dem Benutzer die Authentizität und das Urheberrecht der Assets überprüfen können. [!DNL Experience Manager Assets] unterstützt die Verwendung von Text als Wasserzeichen auf PNG- und JPEG-Dateien.
 
@@ -31,10 +35,10 @@ Um Wasserzeichen auf Assets anwenden zu können, fügen Sie den Schritt „Wasse
    >
    >Ordnen Sie den Schritt [!UICONTROL Wasserzeichen hinzufügen] an beliebiger Stelle vor dem Schritt [!UICONTROL Miniaturansichten verarbeiten] ein.
 
-1. Öffnen Sie den Schritt **[!UICONTROL Wasserzeichen hinzufügen]**, um seine Eigenschaften anzuzeigen.
-1. Geben Sie auf die Registerkarte **[!UICONTROL Argumente]** gültige Werte in den verschiedenen Feldern an: „Text“, „Schriftart“, „Farbe“, „Position“, „Ausrichtung“ usw. Um die Änderungen zu bestätigen, klicken Sie auf **[!UICONTROL Fertig]**.
+1. Öffnen Sie die **[!UICONTROL Wasserzeichen hinzufügen]** Schritt zum Anzeigen der Eigenschaften.
+1. Im **[!UICONTROL Argumente]** -Registerkarte gültige Werte in den verschiedenen Feldern angeben, einschließlich Text, Schriftart, Größe, Farbe, Position, Ausrichtung usw. Um die Änderungen zu bestätigen, klicken Sie auf **[!UICONTROL Fertig]**.
 
-   ![Bereitstellen der Argumente im Schritt „Wasserzeichen hinzufügen“ in Assets](assets/arguments_add_watermark_aem_assets.png)
+   ![Geben Sie die Argumente im Schritt &quot;Wasserzeichen hinzufügen&quot;in Assets an](assets/arguments_add_watermark_aem_assets.png)
 
 1. Speichern Sie den Workflow **[!UICONTROL DAM-Update-Asset]** mit dem Schritt „Wasserzeichen“.
 1. Laden Sie über die [!DNL Experience Manager]-Benutzeroberfläche ein Beispiel-Asset hoch. Das Wasserzeichen wird mit der Schriftgröße, Farbe usw. an der Position angezeigt, die Sie in den oben genannten Schritten konfiguriert haben.

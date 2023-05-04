@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: 3e005993-d96b-4c7c-83b3-37f733218c3d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 0%
+source-wordcount: '1298'
+ht-degree: 1%
 
 ---
 
 # Clientseitige Anpassung {#client-side-customization}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 | **[⇐ Funktionsgrundlagen](essentials.md)** | **[Server-seitige Anpassung imetall](server-customize.md)** |
 |---|---|
@@ -65,7 +69,7 @@ Um eine Komponente zu binden, muss das gesamte Komponentenskript in einer &lt;di
 
    wird aus dem Kontext in die ID-Eigenschaft aufgelöst
 
-* `data-scf-component`=&quot;*&lt;resourceType>*
+* `data-scf-component`=&quot;*&lt;resourcetype>*
 
 Beispiel: von `/apps/weretail/components/hbs/rating/rating.hbs`:
 

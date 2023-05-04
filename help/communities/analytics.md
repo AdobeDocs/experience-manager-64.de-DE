@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 6%
+source-wordcount: '2800'
+ht-degree: 5%
 
 ---
 
 # Analytics-Konfiguration für Communities-Funktionen {#analytics-configuration-for-communities-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -45,7 +49,7 @@ Zu den unterstützten Communities-Funktionen gehören:
 
 * [Aktivierungsressourcen](resources.md)
 * [Forum](forum.md)
-* [Frage und Antwort](working-with-qna.md)
+* [Fragen und Antworten](working-with-qna.md)
 * [Blog](blog-feature.md)
 * [Dateibibliothek](file-library.md)
 * [Kalender](calendar.md)
@@ -82,9 +86,9 @@ Um die Funktionen von Analytics for Communities zu konfigurieren, müssen Sie si
 
    Die URL des Analytics-Rechenzentrums für das Konto
 
-* Report Suite
+* Berichtssuite
 
-   Der Name der verwendeten Analytics-Report Suite
+   Der Name der zu verwendenden Analytics Report Suite
 
 ## Adobe Analytics Report Suite für Videoberichte {#adobe-analytics-report-suite-for-video-reporting}
 
@@ -102,11 +106,11 @@ Durch Anmeldung bei [Adobe Marketing Cloud](https://experienceleague.adobe.com/d
    * **`event1`** bis **`event7`** enabled
    * Typ **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * nicht **`Counter (no subrelations)`**
    * Kann vorhandene Ereignisse wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
 
 
-* [Videomanagement](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [Videomanagement](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de)
 
    * Videoberichterkonsole
 
@@ -114,7 +118,7 @@ Durch Anmeldung bei [Adobe Marketing Cloud](https://experienceleague.adobe.com/d
       * Wählen Sie Speichern aus
    * Video Core Measurement Console
 
-      * Auswählen `Use Solution Variables`
+      * Klicken Sie auf `Use Solution Variables`
       * Wählen Sie Speichern aus
 
 
@@ -186,7 +190,7 @@ Im Dialogfeld &quot;Konfiguration erstellen&quot;geben die eingegebenen Werte di
 
 * **[!UICONTROL Vorlage]**
 
-   Auswählen `Adobe Analytics Configuration`
+   Klicken Sie auf `Adobe Analytics Configuration`
 
 * Wählen Sie **[!UICONTROL Erstellen]** aus
    * Startet die Konfigurationsseite und öffnet `Analytics Settings` dialog
@@ -267,7 +271,7 @@ Nach erfolgreicher Konfiguration der Basisverbindung mit Adobe Analytics muss ei
 
 * **[!UICONTROL Vorlage]**
 
-   Auswählen `Adobe Analytics Framework`
+   Klicken Sie auf `Adobe Analytics Framework`
 
 * Wählen Sie **[!UICONTROL Erstellen]** aus
 
@@ -339,8 +343,20 @@ Damit Analytics-Tracking und -Import für eine Community-Site ordnungsgemäß fu
 
 ```xml
 # present in default sitepage.hbs
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # only one scf-js-site-title class should be included
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # this example sets it to be hidden as it serves no visual purpose
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 <div
     class="navbar-brand scf-js-site-title"
     href="{{siteUrl}}.html"
@@ -391,13 +407,13 @@ Im Folgenden finden Sie ein Beispiel für standardmäßige Zuordnungen nach dem 
 |  | Aktivierungsressourcentyp | Site-Titel | Funktionstyp | Gruppentitel | Gruppenpfad | UGC-Typ | UGC-Titel | Benutzer (Mitglied) | UGC-Pfad | Site-Pfad |
 |------------------------|------------------------|-----------|--------------|------------|-----------|---------|----------|--------------|---------|----------|
 |  | **eVar1** | **eVar2** | **eVar3** | **eVar4** | **eVar5** | **eVar6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
-| event1Resource Play | (eine) | - | - | - | - | - | - | - | (i) | - |
-| event2SCFView | (eine) | (b) | (c) | (d) | (E) | (f) | (g) | (h) | i) | j) |
-| event3SCFCreate (Post) | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
-| event4SCFFollow | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
-| event5SCFVoteUp | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
-| event6SCFVoteDown | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
-| event7SCFRate | - | b) | c) | d) | (E) | f) | g) | h) | i) | j) |
+| event1Resource Play | (eine) | - | - | - | - | - | - | - | i) | - |
+| event2SCFView | (eine) | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event3SCFCreate (Post) | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event4SCFFollow | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event5SCFVoteUp | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event6SCFVoteDown | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event7SCFRate | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
 
 **Beispiele für eVar:**
 

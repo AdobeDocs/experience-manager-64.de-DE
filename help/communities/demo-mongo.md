@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: e32fc619-6226-48c6-bbd7-1910963d1036
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '861'
 ht-degree: 2%
 
 ---
 
 # Einrichten von MongoDB für Demo {#how-to-setup-mongodb-for-demo}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einführung {#introduction}
 
@@ -50,7 +54,7 @@ Diese Konfiguration eignet sich für *Nicht-Produktion* Umgebungen, z. B. für E
       * Verwenden Sie mindestens Version 2.6
 
 
-* Grundkonfiguration
+* Grundlegende Konfiguration
 
    * Befolgen Sie die MongoDB-Installationsanweisungen
    * Konfigurieren für mongod
@@ -102,7 +106,7 @@ Die folgenden Befehle sind ein Beispiel für die Einrichtung einer Replikatgrupp
    * Version 4.10 oder Version 5 verwenden
    * Solr erfordert Java 1.7 oder höher
 
-* Grundkonfiguration
+* Grundlegende Konfiguration
 
    * Folgen Sie dem Solr-Setup &quot;example&quot;.
    * Es ist kein Dienst erforderlich
@@ -171,8 +175,8 @@ Um den gemeinsamen MongoDB-Speicher zu testen und zu überprüfen, posten Sie ei
 
    * Navigieren Sie zum Solr-Dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/)
    * Benutzer `core selector` auswählen `collection1`
-   * Auswählen `Query`
-   * Auswählen `Execute Query`
+   * Klicken Sie auf `Query`
+   * Klicken Sie auf `Execute Query`
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 

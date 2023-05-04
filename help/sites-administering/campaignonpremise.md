@@ -1,7 +1,7 @@
 ---
-title: Integration mit Adobe Campaign Classic
+title: Integrieren mit Adobe Campaign Classic
 seo-title: Integrating with Adobe Campaign Classic
-description: Erfahren Sie, wie Sie AEM mit Adobe Campaign Classic integrieren
+description: Erfahren Sie, wie Sie AEM mit Adobe Campaign Classic integrieren.
 seo-description: Learn how to integrate AEM with Adobe Campaign Classic
 uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
@@ -10,24 +10,28 @@ topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: af980042-2c54-4015-b35e-cc9d417e6e82
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 100%
+source-wordcount: '2292'
+ht-degree: 58%
 
 ---
 
-# Integration mit Adobe Campaign Classic{#integrating-with-adobe-campaign-classic}
+# Integrieren mit Adobe Campaign Classic{#integrating-with-adobe-campaign-classic}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
->Diese Dokumentation beschreibt die Integration von AEM mit der On-Premise-Lösung Adobe Campaign Classic. Wenn Sie Adobe Campaign Standard verwenden, lesen Sie sich für diese Anweisungen das Dokument [Integration mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) durch.
+>Diese Dokumentation beschreibt die Integration von AEM mit der On-Premise-Lösung Adobe Campaign Classic. Wenn Sie Adobe Campaign Standard verwenden, lesen Sie [Integration mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) für diese Anweisungen.
 
-Adobe Campaign ermöglicht die Verwaltung von Inhalten und Formularen für die Übermittlung per E-Mail direkt in Adobe Experience Manager.
+Mit Adobe Campaign können Sie Inhalte und Formulare für den E-Mail-Versand direkt in Adobe Experience Manager verwalten.
 
-Um beide Lösungen gleichzeitig nutzen zu können, müssen Sie sie zunächst so konfigurieren, dass sie miteinander verbunden sind. Dies umfasst Konfigurationsschritte in Adobe Campaign und Adobe Experience Manager. Diese Schritte werden in diesem Dokument detailliert beschrieben.
+Um beide Lösungen gleichzeitig zu verwenden, müssen Sie sie zunächst so konfigurieren, dass eine Verbindung zueinander hergestellt wird. Dies umfasst Konfigurationsschritte sowohl in Adobe Campaign als auch in Adobe Experience Manager. Diese Schritte werden in diesem Dokument ausführlich beschrieben.
 
-Das Arbeiten mit Adobe Campaign in AEM bietet die Möglichkeit, E-Mails über Adobe Campaign zu versenden, und wird näher im Abschnitt [Arbeiten mit Adobe Campaign](/help/sites-authoring/campaign.md) beschrieben. Dies bezieht sich auch auf die Verwendung von Formularen auf AEM-Seiten, um so Daten zu bearbeiten.
+Das Arbeiten mit Adobe Campaign in AEM bietet die Möglichkeit, E-Mails über Adobe Campaign zu versenden. Eine Beschreibung finden Sie unter [Arbeiten mit Adobe Campaign](/help/sites-authoring/campaign.md). Dazu gehört auch die Verwendung von Formularen auf AEM Seiten zur Bearbeitung von Daten.
 
 Des Weiteren sind unter Umständen die folgenden Themen relevant, wenn Sie AEM mit [Adobe Campaign](https://helpx.adobe.com/de/support/campaign/classic.html) integrieren:
 
@@ -39,62 +43,62 @@ Hinsichtlich der Erweiterung einer Adobe Campaign-Integration sind folgende Sei
 * [Erstellen benutzerspezifischer Erweiterungen](/help/sites-developing/extending-campaign-extensions.md)
 * [Erstellen benutzerdefinierter Formularzuordnungen](/help/sites-developing/extending-campaign-form-mapping.md)
 
-## Workflow für die Integration von AEM und Adobe Campaign {#aem-and-adobe-campaign-integration-workflow}
+## Integrations-Workflow für AEM und Adobe Campaign {#aem-and-adobe-campaign-integration-workflow}
 
-Dieser Abschnitt beschreibt einen typischen Workflow zwischen AEM und Adobe Campaign beim Erstellen von Kampagnen und dem Bereitstellen von Inhalten.
+In diesem Abschnitt wird ein typischer Workflow zwischen AEM und Adobe Campaign bei der Erstellung von Kampagnen und der Bereitstellung von Inhalten beschrieben.
 
-Der typische Workflow umfasst Folgendes und ist hier näher beschrieben:
+Der typische Workflow umfasst Folgendes und wird detailliert beschrieben:
 
-1. Beginnen Sie mit dem Erstellen der Kampagne (sowohl in Adobe Campaign als auch in AEM).
-1. Bevor Sie die Inhalte und die Bereitstellung verknüpfen, personalisieren Sie die Inhalte in AEM und erstellen Sie eine Bereitstellung in Adobe Campaign.
-1. Verknüpfen Sie die Inhalte und die Bereitstellung in Adobe Campaign.
+1. Beginnen Sie mit der Erstellung Ihrer Kampagne (sowohl in Adobe Campaign als auch AEM).
+1. Bevor Sie Inhalt und Versand verknüpfen, personalisieren Sie Ihre Inhalte in AEM und erstellen Sie einen Versand in Adobe Campaign.
+1. Verknüpfen Sie Inhalt und Bereitstellung in Adobe Campaign.
 
-### Beginnen Sie mit dem Erstellen der Kampagne {#start-building-your-campaign}
+### Kampagnenerstellung starten {#start-building-your-campaign}
 
-Sie können jederzeit mit dem Erstellen einer Kampagne beginnen. Bevor Sie den Inhalt verknüpfen, sollten Sie wissen, dass AEM und AC unabhängig sind. Dies bedeutet, dass Vermarkter mit dem Erstellen ihrer Kampagnen und dem Targeting in Adobe Campaign beginnen können, während die Ersteller von Inhalten in AEM am Design arbeiten.
+Sie beginnen jederzeit mit der Erstellung einer Kampagne. Bevor Sie den Inhalt verknüpfen, sind AEM und Benutzerkontensteuerung unabhängig. Dies bedeutet, dass Marketingexperten ihre Kampagnen und Targeting in Adobe Campaign erstellen können, während Inhaltsersteller an dem Design in AEM arbeiten.
 
-### Vor dem Verknüpfen von Inhalten und der Bereitstellung {#before-linking-content-and-delivery}
+### Vor der Verknüpfung von Inhalt und Versand {#before-linking-content-and-delivery}
 
-Bevor Sie die Inhalte verknüpfen und einen Bereitstellungsmechanismus erstellen, müssen Sie folgende Schritte ausführen:
+Bevor Sie den Inhalt verknüpfen und einen Bereitstellungsmechanismus erstellen, müssen Sie Folgendes tun:
 
 **In AEM**
 
-* Personalisieren Sie mithilfe der Personalisierungsfelder in der Komponente **Text &amp; Personalisierung**.
+* Personalisieren Sie mithilfe der Personalisierungsfelder im **Text und Personalisierung** component
 
 **In Adobe Campaign **
 
-* Erstellen Sie eine Bereitstellung vom Typ **aemContent**.
+* Versand erstellen **aemContent**
 
-### Verknüpfen von Inhalten und Einstellungsbereitstellung {#linking-content-and-setting-delivery}
+### Inhalt verknüpfen und Bereitstellung festlegen {#linking-content-and-setting-delivery}
 
-Nachdem Sie den Inhalt für die Verknüpfung und Bereitstellung vorbereitet haben, legen Sie genau fest, wie und wo die Inhalte verknüpft werden sollen.
+Nachdem Sie den Inhalt für die Verknüpfung und Bereitstellung vorbereitet haben, bestimmen Sie genau, wie und wo Inhalte verknüpft werden sollen.
 
-All diese Schritte werden in Adobe Campaign ausgeführt.
+Alle diese Schritte werden in Adobe Campaign ausgeführt.
 
-1. Legen Sie fest, welche AEM-Instanz verwendet werden soll.
-1. Synchronisieren Sie die Inhalte durch Klicken auf die Schaltfläche „Synchronisieren“.
-1. Öffnen Sie die Inhaltsauswahl zur Auswahl des Inhalts.
+1. Geben Sie an, welche AEM Instanz verwendet werden soll.
+1. Synchronisieren Sie den Inhalt, indem Sie auf die Schaltfläche Synchronisieren klicken.
+1. Öffnen Sie die Inhaltsauswahl, um Ihren Inhalt auszuwählen.
 
-### Wenn Sie zum ersten Mal mit AEM arbeiten {#if-you-are-new-to-aem}
+### Wenn Sie neu bei AEM sind {#if-you-are-new-to-aem}
 
-Wenn Sie zum ersten Mal mit AEM arbeiten, finden Sie die folgenden Links möglicherweise für das Verständnis von AEM hilfreich:
+Wenn Sie AEM sind, sind die folgenden Links hilfreich, um AEM zu verstehen:
 
 * [Starten von AEM](/help/sites-deploying/deploy.md)
 * [Verstehen von Replikationsagenten](/help/sites-deploying/replication.md)
 * [Suchen von und Arbeiten mit Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 
-## Konfigurieren von Adobe Campaign {#configuring-adobe-campaign}
+## Konfigurieren von Adobe Campaign {#configuring-adobe-campaign}
 
 Die Konfiguration von Adobe Campaign umfasst Folgendes:
 
-1. Installieren des AEM-Integrationspakets in Adobe Campaign
-1. Konfigurieren eines externen Kontos
-1. Sicherstellen, dass der AEMResourceTypeFilter korrekt konfiguriert ist
+1. Installieren des AEM Integrationspakets in Adobe Campaign.
+1. Konfiguration eines externen Kontos.
+1. Überprüfen, ob der AEMResourceTypeFilter richtig konfiguriert ist.
 
-Darüber hinaus gibt es erweiterte Konfigurationen, die Sie definieren können, z. B.:
+Darüber hinaus können Sie erweiterte Konfigurationen vornehmen, darunter:
 
-* Verwalten von Inhaltsblöcken
+* Inhaltsbausteine verwalten
 * Verwalten von Personalisierungsfeldern
 
 Siehe [Erweiterte Konfigurationen](#advanced-configurations).
@@ -105,11 +109,11 @@ Siehe [Erweiterte Konfigurationen](#advanced-configurations).
 
 ### Voraussetzungen {#prerequisites}
 
-Stellen Sie im Voraus sicher, dass Sie über die folgenden Elemente verfügen:
+Stellen Sie sicher, dass Sie zuvor die folgenden Elemente haben:
 
 * [Eine AEM-Autoreninstanz](/help/sites-deploying/deploy.md#getting-started)
 * [Eine AEM-Veröffentlichungsinstanz](/help/sites-deploying/deploy.md#author-and-publish-installs)
-* [Eine Instanz von Adobe Campaign Classic](https://helpx.adobe.com/support/campaign/classic.html) – einschließlich eines Clients und eines Servers
+* [Eine Instanz von Adobe Campaign Classic](https://helpx.adobe.com/de/support/campaign/classic.html) – einschließlich eines Clients und eines Servers
 * Internet Explorer 11
 
 >[!NOTE]
@@ -124,7 +128,7 @@ Stellen Sie im Voraus sicher, dass Sie über die folgenden Elemente verfügen:
 
 Sie müssen das **AEM-Integrationspaket** in Adobe Campaign installieren. Gehen Sie hierfür wie folgt vor:
 
-1. Wechseln Sie zu der Adobe Campaign-Instanz, die Sie gern mit AEM verknüpfen möchten.
+1. Wechseln Sie zur Adobe Campaign-Instanz, mit der Sie eine Verknüpfung herstellen möchten.
 1. Wählen Sie *Tools* > *Erweitert* > *Paket importieren...* aus.
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
@@ -139,7 +143,7 @@ Sie müssen das **AEM-Integrationspaket** in Adobe Campaign installieren. Gehen 
 
    >[!CAUTION]
    >
-   >Standardmäßig ist für diesen Operator keine Sicherheitszone konfiguriert. Um die Verknüpfung über AEM mit Adobe Campaign herzustellen, müssen Sie eine Option auswählen.
+   >Standardmäßig ist keine Sicherheitszone für diesen Operator konfiguriert. Um über AEM eine Verbindung zu Adobe Campaign herzustellen, müssen Sie eine auswählen.
    >
    >In der Datei **serverConf.xml** muss das Attribut **allowUserPassword** der ausgewählten Sicherheitszone auf **true** festgelegt werden, um AEM zur Herstellung einer Verbindung mit Adobe Campaign per Anmeldung/Kennwort zu autorisieren.
    >
@@ -147,22 +151,22 @@ Sie müssen das **AEM-Integrationspaket** in Adobe Campaign installieren. Gehen 
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
-### Konfigurieren von externen AEM-Konten {#configuring-an-aem-external-account}
+### Externes AEM-Konto konfigurieren {#configuring-an-aem-external-account}
 
-Sie müssen ein externes Konto konfigurieren, das es Ihnen ermöglicht, Adobe Campaign mit Ihrer AEM-Instanz zu verknüpfen.
+Sie müssen ein externes Konto konfigurieren, über das Sie Adobe Campaign mit Ihrer AEM verbinden können.
 
 >[!NOTE]
 >
->* Beim Installieren des **AEM-Integrationspakets** wird ein externes AEM-Konto angelegt. Von diesem Konto aus können Sie die Verbindung mit der AEM-Instanz konfigurieren oder Sie können eine neue anlegen.
->* Stellen Sie in AEM sicher, dass Sie das Kennwort für den Benutzer „campaign-remote“ festlegen. Sie müssen dieses Kennwort festlegen, um Adobe Campaign mit AEM zu verknüpfen. Melden Sie sich als Administrator an und wählen Sie an der Benutzeradministrationskonsole den Benutzer „campaign-remote“. Klicken Sie dann auf **Kennwort festlegen**.
+>* Beim Installieren des **AEM-Integrationspakets** wird ein externes AEM-Konto angelegt. Sie können die Verbindung zu Ihrer AEM-Instanz daraus konfigurieren oder eine neue erstellen.
+>* Stellen Sie in AEM sicher, dass Sie das Kennwort für den Benutzer „campaign-remote“ festlegen. Sie müssen dieses Kennwort festlegen, um Adobe Campaign mit AEM zu verbinden. Melden Sie sich als Administrator an und suchen Sie in der Benutzerverwaltungskonsole nach dem Benutzer campaign-remote und klicken Sie auf **Kennwort festlegen**.
 >
 
 
-So konfigurieren Sie externe AEM-Konten:
+So konfigurieren Sie ein externes AEM:
 
 1. Wechseln Sie zum Knoten **Administration** > **Plattform** > **Externe Konten**.
 1. Erstellen Sie ein neues externes Konto und wählen Sie den **AEM**-Typ aus.
-1. Geben Sie die Zugangsparameter für die AEM-Autoreninstanz ein: die Serveradresse sowie die ID und das Kennwort für die Verbindung mit dieser Instanz. Das Kennwort für das Benutzerkonto „campaign-api“ ist dasselbe wie für den Benutzer „campaign-remote“, für den Sie in AEM ein Kennwort festgelegt haben.
+1. Geben Sie die Zugangsparameter für die AEM-Autoreninstanz ein: die Serveradresse sowie die ID und das Kennwort für die Verbindung mit dieser Instanz. Das Kennwort für das Campaign-API-Benutzerkonto entspricht dem für den Campaign-Remote-Benutzer, für den Sie in AEM ein Kennwort festlegen.
 
    >[!NOTE]
    >
@@ -174,9 +178,9 @@ So konfigurieren Sie externe AEM-Konten:
 
 ### Überprüfen der Option „AEMResourceTypeFilter“ {#verifying-the-aemresourcetypefilter-option}
 
-Die Option **AEMResourceTypeFilter** wird verwendet, um Typen von AEM-Ressourcen zu filtern, die in Adobe Campaign verwendet werden können. Dies ermöglicht Adobe Campaign das Abrufen von AEM-Inhalten, die speziell für die ausschließliche Verwendung in Adobe Campaign entwickelt wurden.
+Die Option **AEMResourceTypeFilter** wird verwendet, um Typen von AEM-Ressourcen zu filtern, die in Adobe Campaign verwendet werden können. Dadurch kann Adobe Campaign AEM Inhalte abrufen, die speziell für die Verwendung in Adobe Campaign entwickelt wurden.
 
-Diese Option sollte vorkonfiguriert sein. Wenn Sie diese Option jedoch ändern, kann es sein, dass die Integration am Ende nicht funktioniert.
+Diese Option sollte vorkonfiguriert sein. Wenn Sie diese Option jedoch ändern, kann dies zu einer nicht funktionierenden Integration führen.
 
 Überprüfen Sie wie folgt, ob die Option **AEMResourceTypeFilter** konfiguriert ist:
 
@@ -191,44 +195,44 @@ Diese Option sollte vorkonfiguriert sein. Wenn Sie diese Option jedoch ändern, 
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
-## Konfigurieren von Adobe Experience Manager {#configuring-adobe-experience-manager}
+## Konfigurieren von Adobe Experience Manager {#configuring-adobe-experience-manager}
 
-Zum Konfigurieren von AEM müssen Sie folgende Schritte ausführen:
+Gehen Sie wie folgt vor, um AEM zu konfigurieren:
 
 * Konfigurieren Sie die Replikation zwischen Instanzen.
-* Verbinden Sie AEM über Cloud-Services mit Adobe Campaign.
+* Verbinden Sie AEM über Cloud Services mit Adobe Campaign.
 * Konfigurieren Sie den Externalizer.
 
-### Konfigurieren der Replikation zwischen AEM-Instanzen {#configuring-replication-between-aem-instances}
+### Konfigurieren der Replikation zwischen AEM Instanzen {#configuring-replication-between-aem-instances}
 
-Inhalte, die in der AEM-Autoreninstanz erstellt werden, werden zunächst zur Veröffentlichungsinstanz gesendet. Sie müssen so veröffentlichen, dass die Bilder im Newsletter auf der Veröffentlichungsinstanz und für Newsletter-Empfänger verfügbar sind. Der Replikationsagent muss deshalb so konfiguriert werden, dass er aus der AEM-Autoreninstanz in die AEM-Veröffentlichungsinstanz repliziert.
+Inhalte, die aus der AEM Authoring-Instanz erstellt wurden, werden zunächst an die Veröffentlichungsinstanz gesendet. Sie müssen eine Veröffentlichung vornehmen, damit die Bilder im Newsletter in der Veröffentlichungsinstanz verfügbar sind und den Newsletter-Empfängern zur Verfügung stehen. Der Replikationsagent muss daher so konfiguriert sein, dass er von der AEM-Autoreninstanz zur AEM-Veröffentlichungsinstanz repliziert.
 
 >[!NOTE]
 >
 >Wenn Sie statt der Replikations-URL die der Öffentlichkeit zugängliche URL verwenden möchten, können Sie die **Öffentliche URL** in der folgenden Konfigurationseinstellung in OSGi festlegen (**AEM-Logo** > **Tools**-Symbol > **Vorgänge** > **Web-Konsole** > **OSGi-Konfiguration** > **AEM-Kampagnenintegration – Konfiguration**):
->**Öffentliche URL:** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
+**Öffentliche URL:** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
 
 Dieser Schritt ist auch erforderlich, um bestimmte Autoreninstanzkonfigurationen in die Veröffentlichungsinstanz zu replizieren.
 
-So konfigurieren Sie die Replikation zwischen AEM-Instanzen:
+So konfigurieren Sie die Replikation zwischen AEM Instanzen:
 
 1. Wählen Sie auf der Autoreninstanz **AEM-Logo** > **Tools**-Symbol > **Bereitstellung** > **Replikation** > **Agenten für Autor** aus und klicken Sie dann auf **Standardagent**.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
    >[!NOTE]
-   >Verwenden Sie nach Möglichkeit nicht localhost (eine lokale Kopie von AEM), wenn Sie die Integration mit Adobe Campaign konfigurieren, außer die Veröffentlichungs- und Autoreninstanz befinden sich auf demselben Computer.
+   Verwenden Sie nach Möglichkeit nicht localhost (eine lokale Kopie von AEM), wenn Sie die Integration mit Adobe Campaign konfigurieren, außer die Veröffentlichungs- und Autoreninstanz befinden sich auf demselben Computer.
 
 1. Tippen oder klicken Sie auf **Bearbeiten** und wählen Sie dann die Registerkarte **Transport** aus.
 1. Konfigurieren Sie den URI, indem Sie **localhost** durch die IP-Adresse oder die Adresse der AEM-Veröffentlichungsinstanz ersetzen.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
-### Verknüpfen von AEM mit Adobe Campaign {#connecting-aem-to-adobe-campaign}
+### AEM mit Adobe Campaign verbinden {#connecting-aem-to-adobe-campaign}
 
-Bevor Sie AEM und Adobe Campaign zusammen verwenden können, müssen Sie die beiden Lösungen verknüpfen, damit sie miteinander kommunizieren können.
+Bevor Sie AEM und Adobe Campaign gemeinsam verwenden können, müssen Sie die Verknüpfung zwischen beiden Lösungen herstellen, damit diese kommunizieren können.
 
-1. Stellen Sie eine Verbindung mit Ihrer AEM-Autoreninstanz her.
+1. Stellen Sie eine Verbindung zu Ihrer AEM Authoring-Instanz her.
 1. Wählen Sie **AEM-Logo** > **Tools**-Symbol > **Bereitstellung** > **Cloud-Services** und dann im Adobe Campaign-Abschnitt **Jetzt konfigurieren** aus.
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
@@ -237,27 +241,28 @@ Bevor Sie AEM und Adobe Campaign zusammen verwenden können, müssen Sie die be
 1. Passen Sie die Konfiguration so an, dass sie den Parametern Ihrer Adobe Campaign-Instanz entspricht.
 
    * **Benutzername**: **aemserver**, der Adobe Campaign-AEM-Integrationspaketoperator, mit dem die Verknüpfung der beiden Lösungen durchgeführt wird.
-   * **Kennwort**: Das Adobe Campaign-Kennwort des aemserver-Operators. Unter Umständen müssen Sie das Kennwort für diesen Operator direkt in Adobe Campaign erneut angeben.
-   * **API-Endpunkt**: URL der Adobe Campaign-Instanz.
+   * **Passwort**: Kennwort des Adobe Campaign-aemserver-Operators. Möglicherweise müssen Sie das Kennwort für diesen Benutzer direkt in Adobe Campaign neu angeben.
+   * **API-Endpunkt**: Adobe Campaign-Instanz-URL.
 
 1. Wählen Sie **Verbindung mit Adobe Campaign herstellen** aus und klicken Sie auf **OK**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
    >[!NOTE]
-   >Nachdem Sie [die E-Mail erstellt und veröffentlicht haben](/help/sites-authoring/campaign.md), müssen Sie die Konfiguration auf der Veröffentlichungsinstanz erneut veröffentlichen.
+   Nachdem Sie [die E-Mail erstellt und veröffentlicht haben](/help/sites-authoring/campaign.md), müssen Sie die Konfiguration auf der Veröffentlichungsinstanz erneut veröffentlichen.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
 >[!NOTE]
->Prüfen Sie Folgendes, falls die Verbindung nicht hergestellt werden kann:
->* Möglicherweise tritt ein Zertifikatfehler auf, wenn Sie eine sichere Verbindung (https) mit einer Adobe Campaign-Instanz herstellen. Sie müssen das Zertifikat der Adobe Campaign-Instanz der Datei **cacerts** des JDK der AEM-Instanz hinzufügen.
->* Für den [aemserver-Operator](#connecting-aem-to-adobe-campaign) muss eine Sicherheitszone in Adobe Campaign konfiguriert werden. Darüber hinaus muss das Attribut **allowUserPassword** der Sicherheitszone in der Datei **serverConf.xml** auf **true** festgelegt sein, um die AEM-Verbindung mit Adobe Campaign unter Verwendung des Anmelde-/Kennwortmodus zu autorisieren.
->Weitere Informationen finden Sie in [Fehlerbehebung bei der AEM/Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md).
+Wenn die Verbindung fehlschlägt, überprüfen Sie Folgendes:
+* Bei Verwendung einer sicheren Verbindung zu einer Adobe Campaign-Instanz (https) tritt möglicherweise ein Zertifikatproblem auf. Sie müssen das Zertifikat der Adobe Campaign-Instanz der Datei **cacerts** des JDK der AEM-Instanz hinzufügen.
+* Für den [aemserver-Operator](#connecting-aem-to-adobe-campaign) muss eine Sicherheitszone in Adobe Campaign konfiguriert werden. Darüber hinaus muss das Attribut **allowUserPassword** der Sicherheitszone in der Datei **serverConf.xml** auf **true** festgelegt sein, um die AEM-Verbindung mit Adobe Campaign unter Verwendung des Anmelde-/Kennwortmodus zu autorisieren.
+>
+Weitere Informationen finden Sie unter [Fehlerbehebung bei der AEM/Adobe Campaign-Integration](/help/sites-administering/troubleshooting-campaignintegration.md).
 
 ### Konfigurieren des Externalizers {#configuring-the-externalizer}
 
-Sie müssen [den Externalizer](/help/sites-developing/externalizer.md) in AEM auf der Autoreninstanz konfigurieren. Der Externalizer ist ein OSGi-Dienst, der es Ihnen ermöglicht, Ressourcenpfade in externe, absolute URLs umzuwandeln. Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs.
+Sie müssen [den Externalizer](/help/sites-developing/externalizer.md) in AEM auf der Autoreninstanz konfigurieren. Der Externalizer ist ein OSGi-Dienst, der es Ihnen ermöglicht, Ressourcenpfade in externe, absolute URLs umzuwandeln. Dieser Dienst bietet einen zentralen Ort, um diese externen URLs zu konfigurieren und zu erstellen.
 
 Allgemeine Anweisungen finden Sie unter [Konfigurieren des Externalizers](/help/sites-developing/externalizer.md). Für die Adobe Campaign-Integration muss der Veröffentlichungsserver unter `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl` so konfiguriert werden, dass er nicht auf `localhost:4503` verweist, sondern auf einen Server, der von der Adobe Campaign-Konsole erreichbar ist.
 
@@ -267,24 +272,24 @@ Wenn er auf `localhost:4503` oder einen anderen Server, den Adobe Campaign nicht
 
 ## Erweiterte Konfigurationen {#advanced-configurations}
 
-Sie können zudem einige erweiterte Konfigurationen vornehmen, wie:
+Sie können auch einige erweiterte Konfigurationen durchführen:
 
-* Das Verwalten von Personalisierungsfeldern und -blöcken.
-* Das Deaktivieren eines Personalisierungsblocks.
-* Das Verwalten von Zielerweiterungsdaten.
+* Verwalten Sie Personalisierungsfelder und -bausteine.
+* Gestaltungsbausteine deaktivieren.
+* Verwalten von Zielerweiterungsdaten.
 
-### Verwalten von Personalisierungsfeldern und -blöcken {#managing-personalization-fields-and-blocks}
+### Verwalten von Personalisierungsfeldern und -bausteinen {#managing-personalization-fields-and-blocks}
 
-Die zum Hinzufügen einer Personalisierung zu Ihrem E-Mail-Inhalt in AEM verfügbaren Felder und Blöcke werden von Adobe Campaign verwaltet.
+Die Felder und Bausteine, die zum Hinzufügen von Personalisierung zu E-Mail-Inhalten in AEM verfügbar sind, werden von Adobe Campaign verwaltet.
 
-Eine Standardliste wird bereitgestellt, kann jedoch geändert werden. Sie können Personalisierungsfelder und -blöcke auch hinzufügen oder ausblenden.
+Eine Standardliste wird bereitgestellt, kann jedoch geändert werden. Sie können auch Personalisierungsfelder und -bausteine hinzufügen oder ausblenden.
 
-#### Hinzufügen eines Personalisierungsfelds {#adding-a-personalization-field}
+#### Personalisierungsfeld hinzufügen {#adding-a-personalization-field}
 
 Zum Hinzufügen eines neuen Personalisierungsfelds zu den bereits verfügbaren Personalisierungsfeldern müssen Sie das Adobe Campaign-Schema **nms:seedMember** folgendermaßen erweitern:
 
 >[!CAUTION]
->Das Feld, das Sie hinzufügen müssen, muss bereits über eine Empfängerschemaerweiterung hinzugefügt worden sein (**nms:recipient**). Weitere Informationen finden Sie im [Konfigurationshandbuch](https://docs.campaign.adobe.com/doc/AC6.1/de/CFG_Editing_schemas_Editing_schemas.html).
+Das Feld, das Sie hinzufügen müssen, muss bereits über eine Empfängerschemaerweiterung hinzugefügt worden sein (**nms:recipient**). Weitere Informationen finden Sie im [Konfigurationshandbuch](https://docs.campaign.adobe.com/doc/AC6.1/de/CFG_Editing_schemas_Editing_schemas.html).
 
 1. Wechseln Sie zum Knoten **Administration** > **Konfiguration** > **Datenschemata** in der Adobe Campaign-Navigation.
 1. Wählen Sie **Neu** aus.
@@ -298,7 +303,7 @@ Zum Hinzufügen eines neuen Personalisierungsfelds zu den bereits verfügbaren P
 1. Geben Sie die verschiedenen Parameter des erweiterten Schemas ein:
 
    * **Schema**: Wählen Sie das Schema **nms:seedMember** aus. Die anderen Felder im Fenster werden automatisch ausgefüllt.
-   * **Namespace**: Personalisieren Sie den Namespace des erweiterten Schemas.
+   * **Namespace**: den Namespace des erweiterten Schemas personalisieren.
 
 1. Bearbeiten Sie den XML-Code des Schemas, um das Feld anzugeben, das Sie dort hinzufügen möchten. Weitere Informationen zu Erweiterungsschemata in Adobe Campaign finden Sie im [Konfigurationshandbuch](https://docs.campaign.adobe.com/doc/AC6.1/de/CFG_Editing_schemas_Extending_a_schema.html).
 1. Speichern Sie das Schema und aktualisieren Sie dann die Adobe Campaign-Datenbankstruktur im Menü **Tools** > **Erweitert** > **Datenbankstruktur aktualisieren** der Konsole.
@@ -356,9 +361,9 @@ Zum Ausblenden eines Personalisierungsfelds unter den bereits verfügbaren Perso
    </element>
    ```
 
-### Deaktivieren eines Personalisierungsblocks {#deactivating-a-personalization-block}
+### Gestaltungsbaustein deaktivieren {#deactivating-a-personalization-block}
 
-So deaktivieren Sie einen Personalisierungsblock unter den vorhandenen Personalisierungsblöcken:
+So deaktivieren Sie einen Gestaltungsbaustein unter den verfügbaren:
 
 1. Wechseln Sie zum Knoten **Ressourcen** > **Kampagnen-Management** > **Personalisierungsblöcke** in der Adobe Campaign-Navigation.
 1. Wählen Sie den Personalisierungsblock aus, den Sie in AEM deaktivieren möchten.
@@ -368,9 +373,9 @@ So deaktivieren Sie einen Personalisierungsblock unter den vorhandenen Personali
 
 ### Verwalten von Zielerweiterungsdaten {#managing-target-extension-data}
 
-Sie können zudem Zielerweiterungsdaten für die Personalisierung eingeben. Zielerweiterungsdaten (auch als „Zieldaten“ bezeichnet) stammen aus dem Erweitern oder Hinzufügen von Daten, beispielsweise bei einer Abfrage in einem Kampagnen-Workflow. Weitere Informationen entnehmen Sie den Abschnitten [Erstellen von Abfragen](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_About_queries_in_Campaign.html) und [Erweitern von Daten](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Enriching_data.html).
+Sie können auch Zielerweiterungsdaten zur Personalisierung einfügen. Target-Erweiterungsdaten (auch &quot;Zieldaten&quot;genannt) stammen beispielsweise aus der Anreicherung oder dem Hinzufügen von Daten in einer Abfrage in einem Kampagnen-Workflow. Weitere Informationen entnehmen Sie den Abschnitten [Erstellen von Abfragen](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_About_queries_in_Campaign.html) und [Erweitern von Daten](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Enriching_data.html).
 
 >[!NOTE]
->Die Zieldaten sind nur verfügbar, wenn die AEM-Inhalte mit einer Adobe Campaign-Bereitstellung synchronisiert sind. Nähere Informationen finden Sie unter [Synchronisieren von in AEM erstellten Inhalten mit einer Bereitstellung von Adobe Campaign](/help/sites-authoring/campaign.md#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).
+Die Zieldaten sind nur verfügbar, wenn die AEM-Inhalte mit einer Adobe Campaign-Bereitstellung synchronisiert sind. Nähere Informationen finden Sie unter [Synchronisieren von in AEM erstellten Inhalten mit einer Bereitstellung von Adobe Campaign](/help/sites-authoring/campaign.md#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).
 
 ![chlimage_1-148](assets/chlimage_1-148.png)

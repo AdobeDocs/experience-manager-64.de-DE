@@ -11,22 +11,26 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: d552cbcc-8f71-48a3-9685-eba1ab8805c3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 100%
+source-wordcount: '253'
+ht-degree: 64%
 
 ---
 
 # Komponenten{#components}
 
-Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Sie sind verfügbar, wenn [Bearbeiten einer Seite](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 
 >[!CAUTION]
 >
->In diesem Abschnitt werden nur Komponenten behandelt, die direkt nach einer Standardinstallation von AEM verfügbar sind.
+>Dieser Abschnitt behandelt nur Komponenten, die standardmäßig in einer AEM-Standardinstallation verfügbar sind.
 >
->Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
+>Abhängig von Ihrer Instanz verfügen Sie möglicherweise über benutzerdefinierte Komponenten, die explizit für Ihre Anforderungen entwickelt wurden. Diese können sogar denselben Namen haben wie einige der hier behandelten Komponenten.
 
 ## Komponenten - Hauptbereiche {#components-major-areas}
 

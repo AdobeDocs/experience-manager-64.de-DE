@@ -1,7 +1,7 @@
 ---
 title: Verwenden und Erweitern von Widgets (klassische Benutzeroberfläche)
 seo-title: Using and Extending Widgets (Classic UI)
-description: Die webbasierte Oberfläche von AEM nutzt AJAX und andere moderne Browsertechnologien, um WYSIWYG-Bearbeitung und -Formatierung von Inhalten durch Autoren direkt auf der Webseite zu ermöglichen.
+description: AEM webbasierte Oberfläche verwendet AJAX und andere moderne Browsertechnologien, um die WYSIWYG-Bearbeitung und -Formatierung von Inhalten durch Autoren direkt auf der Webseite zu ermöglichen
 seo-description: AEM's web-based interface uses AJAX and other modern browser technologies to enable WYSIWYG editing and formatting of content by authors right on the web page
 uuid: e8dfa140-dab7-4e08-a790-d703adf86d6f
 contentOwner: Guillaume Carlino
@@ -10,32 +10,36 @@ topic-tags: components
 content-type: reference
 discoiquuid: 508f4fab-dd87-4306-83ae-12e544b8b723
 exl-id: c747bfda-e82a-4b2d-a4af-5792bfe82576
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5151'
-ht-degree: 93%
+source-wordcount: '5187'
+ht-degree: 74%
 
 ---
 
 # Verwenden und Erweitern von Widgets (klassische Benutzeroberfläche){#using-and-extending-widgets-classic-ui}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Die webbasierte Oberfläche von Adobe Experience Manager nutzt AJAX und andere moderne Browsertechnologien, um WYSIWYG-Bearbeitung und -Formatierung von Inhalten durch Autoren direkt auf der Webseite zu ermöglichen.
 
-Adobe Experience Manager (AEM) verwendet die [ExtJS](https://www.sencha.com/)-Widgetbibliothek, die die besonders ausgereiften Benutzeroberflächenelemente bereitstellt, die in allen wichtigen Browsern funktionieren und die Erstellung von Benutzeroberflächen in Desktopqualität ermöglichen.
+Adobe Experience Manager (AEM) verwendet die [ExtJS](https://www.sencha.com/) Widgets-Bibliothek, die die hochoptimierten Elemente der Benutzeroberfläche bereitstellt, die in allen wichtigen Browsern funktionieren und die Erstellung von Benutzeroberflächen-Erlebnissen auf Desktopebene ermöglichen.
 
-Diese Widgets sind in AEM enthalten und können nicht nur von AEM, sondern auch von jeder mit AEM erstellten Website verwendet werden.
+Diese Widgets sind in AEM enthalten und können nicht nur von AEM selbst verwendet werden, sondern auch von jeder Website verwendet werden, die mit AEM erstellt wurde.
 
 Eine vollständige Übersicht aller verfügbaren Widgets in AEM finden Sie in der [Widget-API-Dokumentation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) oder der [Liste der bestehenden X-Typen](/help/sites-developing/xtypes.md). Darüber hinaus zeigen zahlreiche Beispiele auf der Website von [Sencha](https://www.sencha.com/products/extjs/examples/), dem Eigentümer des Frameworks, wie das ExtJS-Framework zu verwenden ist.
 
-Auf dieser Seite erhalten Sie einige Einblicke in die Verwendung und Erweiterung von Widgets. Zuerst wird beschrieben, wie [Client-seitiger Code in eine Seite eingefügt wird](#including-the-client-sided-code-in-a-page). Dann werden einige Beispielkomponenten beschrieben, die erstellt wurden, um einige grundlegende Anwendungs- und Erweiterungsfälle zu illustrieren. Diese Komponenten stehen als das Paket **Verwenden von ExtJS Widgets** auf **Package Share** zur Verfügung.
+Auf dieser Seite erhalten Sie einige Einblicke in die Verwendung und Erweiterung von Widgets. Zuerst wird beschrieben, wie [Client-seitiger Code in eine Seite eingefügt wird](#including-the-client-sided-code-in-a-page). Anschließend werden einige Beispielkomponenten beschrieben, die erstellt wurden, um einige grundlegende Verwendungen und Erweiterungen zu veranschaulichen. Diese Komponenten stehen als das Paket **Verwenden von ExtJS Widgets** auf **Package Share** zur Verfügung.
 
 Das Paket enthält Beispiele für:
 
-* [Grundlegende Dialogfelder](#basic-dialogs), die mit vordefinierten Widgets erstellt wurden.
-* [Dynamische Dialogfelder](#dynamic-dialogs), die mit vordefinierten Widgets und benutzerdefinierter JavaScript-Logik konfiguriert wurden.
-* Dialogfelder, die auf [benutzerdefinierten Widgets](#custom-widgets) basieren.
-* Ein [Baumstrukturbedienfeld](#tree-overview), das eine JCR-Baumstruktur unterhalb eines bestimmten Pfades anzeigt.
-* Ein [Rasterbedienfeld](#grid-overview), das Daten im Tabellenformat anzeigt.
+* [Grundlegende Dialogfelder](#basic-dialogs) mit vordefinierten Widgets erstellt.
+* [Dynamische Dialogfelder](#dynamic-dialogs) wurde mit vordefinierten Widgets und benutzerdefinierter JavaScript-Logik erstellt.
+* Dialogfelder basierend auf [benutzerdefinierte Widgets](#custom-widgets).
+* A [Baumbereich](#tree-overview) Anzeigen einer JCR-Struktur unter einem bestimmten Pfad.
+* A [Rasterbedienfeld](#grid-overview) Anzeige von Daten in Tabellenformat.
 
 >[!NOTE]
 >
@@ -43,7 +47,7 @@ Das Paket enthält Beispiele für:
 
 >[!NOTE]
 >
->Diese Seite beschreibt die Verwendung von Widgets in der klassischen Benutzeroberfläche. Adobe empfiehlt, die moderne [Touch-optimierte Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) zu verwenden, die auf [Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui) und [Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components) basiert.
+>Auf dieser Seite wird die Verwendung von Widgets in der klassischen Benutzeroberfläche beschrieben. Adobe empfiehlt, die moderne [Touch-optimierte Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md) zu verwenden, die auf [Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui) und [Granite-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#granite-ui-foundation-components) basiert.
 
 ## Einbauen von Client-seitigem Code in eine Seite {#including-the-client-sided-code-in-a-page}
 
@@ -108,9 +112,9 @@ Fügen Sie die Client-Bibliothek wie folgt in die Seitenkomponenten-JSP ein:
 
    `<ui:includeClientLib js="<category-name>"/>`
 
-Weitere Informationen finden Sie in der Beschreibung des Tags [&lt;ui:includeClientLib>](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib).
+Weitere Informationen finden Sie in der Beschreibung des [&lt;ui:includeclientlib>](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) -Tag.
 
-In manchen Fällen darf eine Client-Bibliothek nur im Autorenmodus verfügbar sein und muss im Veröffentlichungsmodus ausgeschlossen werden. Dies erreichen Sie wie folgt:
+In einigen Fällen sollte eine Client-Bibliothek nur im Autorenmodus verfügbar sein und im Veröffentlichungsmodus ausgeschlossen werden. Dies lässt sich wie folgt erreichen:
 
 ```xml
     if (WCMMode.fromRequest(request) != WCMMode.DISABLED) {
@@ -141,7 +145,7 @@ Zum Durchführen der Übungen auf dieser Seite installieren Sie das Paket **Verw
 
 ### Grundlegende Dialogfelder {#basic-dialogs}
 
-Dialogfelder werden in der Regel verwendet, um Inhalte zu bearbeiten, aber auch nur zum Anzeigen von Informationen. Eine einfache Möglichkeit zum Anzeigen eines vollständigen Dialogfelds besteht darin, auf seine Darstellung im JSON-Format zuzugreifen. Verweisen Sie dazu Ihren Browser auf:
+Dialogfelder werden normalerweise zur Bearbeitung von Inhalten verwendet, können aber auch nur Informationen anzeigen. Eine einfache Möglichkeit, ein vollständiges Dialogfeld anzuzeigen, besteht darin, auf seine Darstellung im JSON-Format zuzugreifen. Verweisen Sie dazu Ihren Browser auf:
 
 `http://localhost:4502/<path-to-dialog>.-1.json`
 
@@ -151,21 +155,21 @@ Die erste Komponente der Gruppe **Verwenden von ExtJS Widgets** im Sidekick wird
 
 * das Dialogfeld „Single Panel“ (Knoten `singlepanel`): Es zeigt ein Fenster mit einer Registerkarte mit zwei Textfeldern an.
 * das Dialogfeld „Multi Panel“ (Knoten `multipanel`): Es zeigt dasselbe an wie das Dialogfeld „Full“, ist aber anders aufgebaut.
-* das Dialogfeld „“ (Knoten `design`design): Es zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte weist ein Textfeld auf, ein Dropdown-Menü und einen ausblendbaren Textbereich. Die zweite Registerkarte verfügt über einen Feldsatz mit vier Textfeldern und einen ausblendbaren Feldsatz mit zwei Textfeldern.
+* das Dialogfeld „“ (Knoten `design`design): Es zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte besitzt ein Textfeld, ein Dropdown-Menü und einen ausblendbaren Textbereich. Die zweite Registerkarte verfügt über einen Feldsatz mit vier Textfeldern und einen ausblendbaren Feldsatz mit zwei Textfeldern.
 
-Fügen Sie die Komponente **1. Dialog Basics** der Beispielseite hinzu:
+Fügen Sie die Komponente **1. Dialog Allgemein** der Beispielseite hinzu:
 
-1. Fügen Sie die Komponente **1. Dialog Basics** der Beispielseite aus der Registerkarte **Verwenden von ExtJS Widgets** im **Sidekick** hinzu.
+1. Fügen Sie die Komponente **1. Dialog Basics** zur Beispielseite aus der Registerkarte **Verwenden von ExtJS Widgets** im **Sidekick** hinzu.
 
-1. Die Komponente zeigt einen Titel, etwas Text und einen Link **EIGENSCHAFTEN**: Klicken Sie auf den Link, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut auf den Link, um die Eigenschaften zu verbergen.
+1. Die Komponente zeigt einen Titel, einen Text und eine **EIGENSCHAFTEN** link: Klicken Sie auf den Link, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut auf den Link, um die Eigenschaften auszublenden.
 
 Die Komponente wird wie im Folgenden dargestellt:
 
 ![chlimage_1-135](assets/chlimage_1-135.png)
 
-#### Beispiel 1: Dialogfeld „Full“ {#example-full-dialog}
+#### Beispiel 1: Vollständiger Dialog {#example-full-dialog}
 
-Das Dialogfeld **Full** zeigt ein Fenster mit drei Registerkarten mit jeweils zwei Textfeldern. Es ist das Standarddialogfeld der Komponente **Dialog Allgemein**. Die Eigenschaften sind:
+Die **Voll** zeigt ein Fenster mit drei Registerkarten an, von denen jede Registerkarte zwei Textfelder enthält. Es ist das Standarddialogfeld der Komponente **Dialog Allgemein**. Die Eigenschaften sind:
 
 * Wird von einem Knoten definiert: node type = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog).
 
@@ -184,9 +188,9 @@ Das Dialogfeld wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-01-31at45411pm](assets/screen_shot_2012-01-31at45411pm.png)
 
-#### Beispiel 2: Dialogfeld „Single Panel“ {#example-single-panel-dialog}
+#### Beispiel 2: Dialogfeld &quot;Single Panel&quot; {#example-single-panel-dialog}
 
-Das Dialogfeld **Single Panel** zeigt ein Fenster mit einer Registerkarte und zwei Textfeldern an. Die Eigenschaften sind:
+Die **Einzelnes Bedienfeld** zeigt ein Fenster mit einer Registerkarte mit zwei Textfeldern an. Die Eigenschaften sind:
 
 * Zeigt eine Registerkarte (node type = `cq:Dialog`, xtype = [`panel`](/help/sites-developing/xtypes.md#panel))
 
@@ -200,12 +204,12 @@ Das Dialogfeld **Single Panel** zeigt ein Fenster mit einer Registerkarte und zw
 
    `http://localhost:4502/apps/extjstraining/components/dialogbasics/singlepanel.-1.json`
 
-* Ein Vorteil gegenüber dem Dialogfeld **Full** besteht darin, dass weniger Konfiguration erforderlich ist.
-* Empfohlene Verwendung: für einfache Dialogfelder, die Informationen anzeigen oder nur wenige Felder aufweisen.
+* Ein Vorteil gegenüber dem **Vollständiger Dialog** ist, dass weniger Konfiguration erforderlich ist.
+* Empfohlene Verwendung: für einfache Dialogfelder, die Informationen anzeigen oder nur wenige Felder haben.
 
-So verwenden Sie das Dialogfeld „Single Panel“:
+So verwenden Sie das Dialogfeld &quot;Single Panel&quot;:
 
-1. Ersetzen Sie das Dialogfeld der Komponente **Dialog Basics** durch das Dialogfeld **Single Panel**:
+1. Ersetzen Sie das Dialogfeld der **Dialoggrundlagen** -Komponente mit **Einzelnes Bedienfeld** dialog:
 
    1. Löschen Sie in **CRXDE Lite** den Knoten: `/apps/extjstraining/components/dialogbasics/dialog`
    1. Klicken Sie auf **Alle speichern**, um die Änderungen zu speichern.
@@ -248,9 +252,9 @@ Das Dialogfeld „Multi-Panel“ verwenden Sie wie folgt:
 
 ![screen_shot_2012-01-31at50119pm](assets/screen_shot_2012-01-31at50119pm.png)
 
-#### Beispiel 4: Dialogfeld „Rich“ {#example-rich-dialog}
+#### Beispiel 4: Rich-Dialogfeld {#example-rich-dialog}
 
-Das Dialogfeld **Rich** zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte weist ein Textfeld auf, ein Dropdown-Menü und einen ausblendbaren Textbereich. Die zweite Registerkarte verfügt über einen Feldsatz mit vier Textfeldern und einen ausblendbaren Feldsatz mit zwei Textfeldern. Die Eigenschaften sind:
+Die **Rich** zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte weist ein Textfeld auf, ein Dropdown-Menü und einen ausblendbaren Textbereich. Die zweite Registerkarte verfügt über einen Feldsatz mit vier Textfeldern und einen ausblendbaren Feldsatz mit zwei Textfeldern. Die Eigenschaften sind:
 
 * Wird von einem Knoten definiert (node type = `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)).
 
@@ -281,7 +285,7 @@ So verwenden Sie das Dialogfeld **Rich**:
 
 Die zweite Komponente der Gruppe **Verwenden von ExtJS Widgets** im Sidekick heißt **2. Dynamische Dialogfelder** und umfasst drei dynamische Dialogfelder, die mit standardmäßigen Widgets und **modifizierter JavaScript-Logik** erstellt wurden. Die Dialogfelder werden unter `/apps/extjstraining/components/dynamicdialogs` gespeichert. Die dynamischen Dialogfelder sind:
 
-* das Dialogfeld „Registerkarten wechseln“ (Knoten `switchtabs`): Es zeigt ein Fenster mit zwei Registerkarten. Die erste Registerkarte weist eine Navigationsauswahl mit drei Optionen auf: Wenn eine Option ausgewählt ist, wird eine Registerkarte zu der Option angezeigt. Die zweite Registerkarte weist zwei Textfelder auf.
+* das Dialogfeld „Registerkarten wechseln“ (Knoten `switchtabs`): Es zeigt ein Fenster mit zwei Registerkarten. Die erste Registerkarte verfügt über eine Optionsfeldauswahl mit drei Optionen: Wenn eine Option ausgewählt ist, wird eine Registerkarte angezeigt, die sich auf die Option bezieht. Die zweite Registerkarte enthält zwei Textfelder.
 * das Dialogfeld „Beliebig“ (Knoten `arbitrary`): Es zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über ein Feld, in das Sie Assets ziehen oder hochladen können, und ein Feld, das Informationen über die Seite, die es umfasst, und das Asset (falls auf eines verwiesen wird) anzeigt.
 * das Dialogfeld „Felder umschalten“ (Knoten `togglefield`): Es zeigt ein Fenster mit einer Registerkarte. Die Registerkarte verfügt über ein Kontrollkästchen: Ist es aktiviert, wird ein Feldsatz mit zwei Textfeldern angezeigt.
 
@@ -295,9 +299,9 @@ Die Komponente wird wie im Folgenden dargestellt:
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
 
-#### Beispiel 1: Dialogfeld „Switch Tabs“ {#example-switch-tabs-dialog}
+#### Beispiel 1: Dialogfeld &quot;Switch Tabs&quot; {#example-switch-tabs-dialog}
 
-Das Dialogfeld **Switch Tabs** zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte weist eine Navigationsauswahl mit drei Optionen auf: Wenn eine Option ausgewählt ist, wird eine Registerkarte zu der Option angezeigt. Die zweite Registerkarte weist zwei Textfelder auf.
+Die **Switch Tabs** zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte verfügt über eine Optionsfeldauswahl mit drei Optionen: Wenn eine Option ausgewählt ist, wird eine Registerkarte angezeigt, die sich auf die Option bezieht. Die zweite Registerkarte enthält zwei Textfelder.
 
 Die wichtigsten Merkmale sind:
 
@@ -362,7 +366,7 @@ Dies wird wie folgt angezeigt:
 
 Sehr oft zeigt ein Dialogfeld Inhalte aus der zugrunde liegenden Komponente an. Das hier beschriebene Dialogfeld **Arbitrary** zeigt Inhalte aus einer anderen Komponente an.
 
-Das Dialogfeld **Arbitrary** zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über zwei Felder: eines, in das Sie Assets ziehen oder hochladen können, und eines, das Informationen über die Seite, die es umfasst, und das Asset (falls auf eines verwiesen wird) anzeigt.
+Die **Arbitrary** zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über zwei Felder: ein Asset zum Ablegen oder Hochladen und eines zum Anzeigen von Informationen über die übergeordnete Seite und über das Asset, wenn auf eines verwiesen wurde.
 
 Die wichtigsten Merkmale sind:
 
@@ -416,9 +420,9 @@ So verwenden Sie das Dialogfeld **Arbitrary**:
 
 ![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
 
-#### Beispiel 3: Dialogfeld „Toggle Fields“ {#example-toggle-fields-dialog}
+#### Beispiel 3: Dialogfeld &quot;Felder ein/aus&quot; {#example-toggle-fields-dialog}
 
-Das Dialogfeld **Toggle Fields** zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über ein Kontrollkästchen: Ist es aktiviert, wird ein Feldsatz mit zwei Textfeldern angezeigt.
+Die **Umschalten zwischen Feldern** zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über ein Kontrollkästchen: Ist es aktiviert, wird ein Feldsatz mit zwei Textfeldern angezeigt.
 
 Die wichtigsten Merkmale sind:
 
@@ -453,8 +457,8 @@ Die Logik wird wie folgt durch Ereignis-Listener und JavaScript-Code implementie
    * ist `box` das Auswahlobjekt.
    * ist `panel` das Bedienfeld, das das selection- und das dialogfieldset-Widget enthält.
    * ist `fieldSet` das dialogfieldset-Objekt.
-   * ist `show` der Wert der Auswahl („true“ oder „false“). 
-   * wird das dialogfieldset anhand von „`show`“ angezeigt oder nicht.
+   * `show` ist der Wert der Auswahl (true oder false)
+   * basierend auf &quot; `show`&quot; das dialogfieldset angezeigt wird oder nicht
 
 So verwenden Sie das Dialogfeld **Felder umschalten**:
 
@@ -468,16 +472,16 @@ So verwenden Sie das Dialogfeld **Felder umschalten**:
 
 ### Benutzerdefinierte Widgets {#custom-widgets}
 
-Die direkt einsatzbereiten und im Lieferumfang von AEM enthaltenen Widgets sollten die meisten Anwendungsfälle abdecken. Trotzdem kann es passieren, dass ein benutzerdefiniertes Widget erstellt werden muss, um eine projektspezifische Anforderung zu erfüllen. Benutzerdefinierte Widgets werden erstellt, indem vorhandene erweitert werden. Das Paket **Verwenden von ExtJS Widgets** enthält drei Dialogfelder, die drei verschiedene benutzerdefinierte Widgets verwenden, um die ersten Schritte mit der Anpassung zu vereinfachen:
+Die im Lieferumfang von AEM enthaltenen vordefinierten Widgets sollten die meisten Anwendungsfälle abdecken. Trotzdem kann es passieren, dass ein benutzerdefiniertes Widget erstellt werden muss, um eine projektspezifische Anforderung zu erfüllen. Benutzerdefinierte Widgets können durch Erweiterung vorhandener Widgets erstellt werden. Das Paket **Verwenden von ExtJS Widgets** enthält drei Dialogfelder, die drei verschiedene benutzerdefinierte Widgets verwenden, um die ersten Schritte mit der Anpassung zu vereinfachen:
 
 * Das Dialogfeld „Multi Field“ (Knoten `multifield`) zeigt ein Fenster mit einer Registerkarte. Die Registerkarte verfügt über ein benutzerdefiniertes multifield-Widget mit zwei Feldern: Ein Dropdown-Menü mit zwei Optionen und ein Textfeld. Da es auf dem im Lieferumfang enthaltenen `multifield`-Widget (mit nur einem Textfeld) basiert, verfügt es über alle Funktionen des `multifield`-Widgets.
 
 * Das Dialogfeld „Tree Browse“ (`treebrowse`-Knoten) zeigt ein Fenster mit einer Registerkarte, die ein Pfadbrowser-Widget enthält: Wenn Sie auf den Pfeil klicken, wird ein Fenster geöffnet, in dem Sie eine Hierarchie durchsuchen und ein Element auswählen können. Der Pfad des Elements wird dann dem Pfadfeld hinzugefügt und wird beibehalten, wenn das Dialogfeld geschlossen wird.
 * Ein Dialogfeld, das auf dem Rich-Text-Editor-Plug-in basiert (Knoten `rteplugin`) und dem Rich-Text-Editor eine benutzerdefinierte Schaltfläche hinzufügt, mit der benutzerdefinierter Text in den Haupttext eingefügt werden kann. Es besteht aus einem `richtext`-Widget (RTE) und einer benutzerdefinierten Funktion, die durch den RTE-Plug-in-Mechanismus hinzugefügt wird.
 
-Die benutzerdefinierten Widgets und das Plug-in sind in der Komponente **3. Benutzerdefinierte Widgets** des Pakets **Verwenden von ExtJS Widgets** enthalten. Fügen Sie diese Komponente wie folgt der Beispielseite hinzu:
+Die benutzerdefinierten Widgets und das Plug-in sind in der Komponente **3. Benutzerdefinierte Widgets** des Pakets **Verwenden von ExtJS Widgets** enthalten. So fügen Sie diese Komponente zur Beispielseite hinzu:
 
-1. Fügen Sie die Komponente **3. Benutzerdefinierte Widgets** der Beispielseite aus der Registerkarte **Verwenden von ExtJS Widgets** im **Sidekick** hinzu.
+1. Fügen Sie die Komponente **3. Benutzerdefinierte Widgets** zur Beispielseite aus der Registerkarte **Verwenden von ExtJS-Widgets** im **Sidekick** hinzu.
 
 1. Die Komponente zeigt einen Titel, etwas Text und, wenn Sie auf den Link **EIGENSCHAFTEN** klicken, die Eigenschaften des im Repository gespeicherten Absatzes an. Durch erneutes Klicken werden die Eigenschaften verborgen.
 
@@ -485,9 +489,9 @@ Die benutzerdefinierten Widgets und das Plug-in sind in der Komponente **3. Benu
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-#### Beispiel 1: Custom Multifield-Widget {#example-custom-multifield-widget}
+#### Beispiel 1: Benutzerdefiniertes Multifield-Widget {#example-custom-multifield-widget}
 
-Das auf dem **Custom Multifield**-Widget basierende Dialogfeld zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über ein benutzerdefiniertes multifield-Widget mit zwei Feldern (im Gegensatz zur Standardversion mit einem Feld): Ein Dropdown-Menü mit zwei Optionen und ein Textfeld.
+Die **Benutzerdefiniertes Multifield** Widget-basiertes Dialogfeld zeigt ein Fenster mit einer Registerkarte an. Die Registerkarte verfügt über ein benutzerdefiniertes multifield -Widget, das im Gegensatz zum Standard mit einem Feld zwei Felder aufweist: ein Dropdown-Menü mit zwei Optionen und einem Textfeld.
 
 Das auf dem **Custom Multifield**-Widget basierende Dialogfeld:
 
@@ -543,9 +547,9 @@ Das auf dem **Custom Multifield**-Widget basierende Dialogfeld wird wie folgt an
 
 ![screen_shot_2012-02-01at115840am](assets/screen_shot_2012-02-01at115840am.png)
 
-#### Beispiel 2: Benutzerdefiniertes Treebrowse-Widget {#example-custom-treebrowse-widget}
+#### Beispiel 2: Benutzerdefiniertes Treebrowse-Widget {#example-custom-treebrowse-widget}
 
-Das auf dem **Treebrowse**-Widget basierende benutzerdefinierte Dialogfeld zeigt ein Fenster mit einer Registerkarte, die ein benutzerdefiniertes Pfadbrowser-Widget enthält: Wenn Sie auf den Pfeil klicken, wird ein Fenster geöffnet, in dem Sie eine Hierarchie durchsuchen und ein Element auswählen können. Der Pfad des Elements wird dann dem Pfadfeld hinzugefügt und wird beibehalten, wenn das Dialogfeld geschlossen wird.
+Die benutzerdefinierte **Treebrowse** Widget-basiertes Dialogfeld zeigt ein Fenster mit einer Registerkarte, die ein benutzerdefiniertes Pfadbrowser-Widget enthält: Wenn Sie auf den Pfeil klicken, öffnet sich ein Fenster, in dem Sie eine Hierarchie durchsuchen und ein Element auswählen können. Der Pfad des Elements wird dann dem Pfadfeld hinzugefügt und wird beibehalten, wenn das Dialogfeld geschlossen wird.
 
 Das benutzerdefinierte treebrowse-Dialogfeld:
 
@@ -601,9 +605,9 @@ So verwenden Sie das auf dem Wideget **Benutzerdefiniertes Durchsuchen der Baums
 
 ![screen_shot_2012-02-01at120104pm](assets/screen_shot_2012-02-01at120104pm.png)
 
-#### Beispiel 3: Rich-Text-Editor (RTE)-Plug-in {#example-rich-text-editor-rte-plug-in}
+#### Beispiel 3: Rich-Text-Editor (RTE)-Plug-in {#example-rich-text-editor-rte-plug-in}
 
-Das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld ist ein auf dem Rich-Text-Editor basierendes Dialogfeld, das eine benutzerdefinierte Schaltfläche aufweist, mit der benutzerdefinierter Text in eckigen Klammern eingefügt wird. Der benutzerdefinierte Text kann auch anhand einer Server-seitigen Logik geparst werden (in diesem Beispiel nicht implementiert), um beispielsweise Text hinzuzufügen, der am jeweiligen Pfad definiert ist:
+Die **Rich-Text-Editor (RTE)-Plug-in** basiertes Dialogfeld ist ein Dialogfeld, das auf dem Rich-Text-Editor basiert und über eine benutzerdefinierte Schaltfläche verfügt, um benutzerdefinierten Text in eckigen Klammern einzufügen. Der benutzerdefinierte Text kann auch anhand einer Server-seitigen Logik geparst werden (in diesem Beispiel nicht implementiert), um beispielsweise Text hinzuzufügen, der am jeweiligen Pfad definiert ist:
 
 Das auf dem **RTE-Plug-in** basierende Dialogfeld:
 
@@ -654,9 +658,9 @@ So verwenden Sie das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialo
 
    Der Pfad wird in eckigen Klammern (`[]`).
 
-1. Klicken Sie auf **OK**, um den Rich-Text-Editor zu schließen.
+1. Klicken **OK** , um den Rich-Text-Editor zu schließen.
 
-Das auf dem **Rich-Text-Editor (RTE)-Plug-in** basierende Dialogfeld wird wie folgt angezeigt:
+Die **Rich-Text-Editor (RTE)-Plug-in** Das basierte Dialogfeld wird wie folgt angezeigt:
 
 ![screen_shot_2012-02-01at120254pm](assets/screen_shot_2012-02-01at120254pm.png)
 
@@ -674,9 +678,9 @@ Fügen Sie die Komponente **Tree Overview** wie folgt der Beispielseite hinzu:
 
 1. Die Komponente zeigt:
 
-   * einen Titel und etwas Text.
-   * einen **EIGENSCHAFTEN**-Link: Klicken Sie, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.
-   * ein frei bewegliches Fenster mit einer Baumstrukturdarstellung des Repositorys, das erweitert werden kann.
+   * einen Titel mit etwas Text
+   * a **EIGENSCHAFTEN** link: Klicken Sie auf , um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.
+   * ein unverankertes Fenster mit einer Baumstruktur des Repositorys, das erweitert werden kann.
 
 Die Komponente wird wie im Folgenden dargestellt:
 
@@ -688,12 +692,12 @@ Die Komponente „Tree Overview“:
 
    `/apps/extjstraining/components/treeoverview`
 
-* Ihr Dialogfeld ermöglicht das Festlegen der Fenstergröße und das An- bzw.- Abdocken des Fensters (weitere Details unten).
+* Sein Dialogfeld ermöglicht es, die Größe des Fensters festzulegen und das Fenster anzudocken/zu lösen (siehe Details unten).
 
 Die Komponenten-JSP:
 
 * Ruft die Breite, Höhe und angedockten Eigenschaften aus dem Repository ab.
-* Zeigt Text zum Datenformat des Baumstrukturüberblicks an.
+* Zeigt Text zum Datenformat der Baumübersicht an.
 * Bettet die Fensterlogik zwischen JavaScript-Tags in die Komponenten-JSP ein.
 * Wird definiert unter:
 
@@ -736,9 +740,9 @@ Das Komponentendialogfeld:
 
 ![screen_shot_2012-02-01at120745pm](assets/screen_shot_2012-02-01at120745pm.png)
 
-### Grid Overview {#grid-overview}
+### Rasterübersicht {#grid-overview}
 
-Ein „Grid Panel“ stellt Daten in tabellarischer Form als Zeilen und Spalten dar. Es setzt sich aus Folgendem zusammen:
+Ein Rasterbedienfeld stellt Daten in tabellarischer Form von Zeilen und Spalten dar. Er umfasst Folgendes:
 
 * Store: das Modell, das die Datendatensätze enthält (Zeilen)
 * Spaltenmodell: das Spaltendesign
@@ -757,19 +761,19 @@ Fügen Sie die Komponente „Raster-Übersicht“ wie folgt der Beispielseite hi
 1. Die Komponente zeigt:
 
    * einen Titel und etwas Text.
-   * einen **EIGENSCHAFTEN**-Link: Klicken Sie, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.
-   * ein frei bewegbares Fenster, das Daten im Tabellenformat enthält.
+   * a **EIGENSCHAFTEN** link: Klicken Sie auf , um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut, um die Eigenschaften zu verbergen.
+   * ein unverankertes Fenster mit Daten im Tabellenformat.
 
 Die Komponente wird wie im Folgenden dargestellt:
 
 ![screen_shot_2012-02-01at121109pm](assets/screen_shot_2012-02-01at121109pm.png)
 
-#### Beispiel 1: Standardraster {#example-default-grid}
+#### Beispiel 1: Standardraster {#example-default-grid}
 
-In der von Adobe ausgelieferten Version zeigt die Komponente **Grid Overview** ein Fenster mit statischen Daten in tabellarischer Form. In diesem Beispiel wird die Logik auf zwei Arten in die Komponenten-JSP eingebunden:
+In der vordefinierten Version **Rasterübersicht** -Komponente zeigt ein Fenster mit statischen Daten im Tabellenformat an. In diesem Beispiel wird die Logik auf zwei Arten in die Komponenten-JSP eingebettet:
 
-* Die generische Logik wird zwischen &lt;script>&lt;/script>-Tags definiert.
-* Die spezifische Logik steht in einer separaten JS-Datei zur Verfügung und ist in der JSP verlinkt. Diese Einrichtung ermöglicht es, einfach zwischen den beiden Logiken (statisch/dynamisch) umzuschalten, indem die gewünschten &lt;script>-Tags kommentiert werden.
+* Die generische Logik wird definiert zwischen &lt;script>&lt;/script> tags
+* Die spezifische Logik ist in einer separaten JS-Datei verfügbar und in der JSP mit verknüpft. Diese Einrichtung ermöglicht es, einfach zwischen den beiden Logiken (statisch/dynamisch) umzuschalten, indem die gewünschten &lt;script>-Tags kommentiert werden.
 
 Die Komponente „Grid Overview“:
 
@@ -777,7 +781,7 @@ Die Komponente „Grid Overview“:
 
    `/apps/extjstraining/components/gridoverview`
 
-* Ihr Dialogfeld ermöglicht das Festlegen der Fenstergröße und das An- bzw.- Abdocken des Fensters.
+* Sein Dialogfeld ermöglicht es, die Größe des Fensters festzulegen und das Fenster anzudocken/zu lösen.
 
 Die Komponenten-JSP:
 
@@ -827,10 +831,10 @@ Die JavaScript-Datei (`defaultgrid.js`), auf die in der Komponenten-JSP verwiese
 
 #### Beispiel 2: Verweissuchraster {#example-reference-search-grid}
 
-Bei der Installation des Pakets zeigt die Datei `content.jsp` der Komponente **Raster-Übersicht** ein Raster an, das auf statischen Daten basiert. Es ist möglich, die Komponente so zu ändern, dass ein Raster mit den folgenden Eigenschaften angezeigt wird:
+Bei der Installation des Pakets zeigt die Datei `content.jsp` der Komponente **Raster-Übersicht** ein Raster an, das auf statischen Daten basiert. Es ist möglich, die Komponente zu ändern, um ein Raster mit den folgenden Eigenschaften anzuzeigen:
 
 * Hat drei Spalten.
-* Basiert auf Daten, die aus dem Repository abgerufen werden, indem ein Servlet aufgerufen wird.
+* basiert auf Daten, die vom Repository durch Aufruf eines Servlets abgerufen werden.
 * Die Zellen der letzten Spalte können bearbeitet werden. Der Wert wird in einer `test`-Eigenschaft unterhalb des Knotens gespeichert, der anhand des in der ersten Spalte angezeigten Pfades definiert wird.
 
 Wie im vorherigen Abschnitt erläutert, erhält das Fensterobjekt seine [`CQ.Ext.grid.GridPanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) -Objekt durch Aufruf der `getGridPanel()` -Methode, die in der `defaultgrid.js` Datei unter `/apps/extjstraining/components/gridoverview/defaultgrid.js`. Die **Rasterübersicht** -Komponente bietet eine andere Implementierung für die `getGridPanel()` -Methode, definiert in der `referencesearch.js` Datei unter `/apps/extjstraining/components/gridoverview/referencesearch.js`. Durch Wechseln der JS-Datei, auf die in der Komponenten-JSP verwiesen wird, basiert das Raster auf aus dem Repository abgerufenen Daten.

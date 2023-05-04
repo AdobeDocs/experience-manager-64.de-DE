@@ -1,18 +1,22 @@
 ---
 title: Metadatenschemata
-description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadaten-Eigenschaften. Erfahren Sie, wie Sie benutzerdefinierte Metadatenschemen erstellen und Metadatenschemen bearbeiten und auf Assets anwenden können.
+description: Das Metadatenschema definiert das Layout der Eigenschaftsseite und die für Assets angezeigten Metadateneigenschaften. Erfahren Sie, wie Sie ein benutzerdefiniertes Metadatenschema erstellen, Metadatenschema bearbeiten und Metadatenschema auf Assets anwenden.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 82%
+source-wordcount: '2560'
+ht-degree: 56%
 
 ---
 
 # Metadatenschemata   {#metadata-schemas}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In [!DNL Experience Manager Assets], definiert ein Metadatenschema das Layout der Eigenschaftsseite und die für Assets angezeigten Metadateneigenschaften, die das betreffende Schema verwenden. Zu den Metadateneigenschaften zählen u. a. Titel, Beschreibung, MIME-Typen, Tags usw. Mit dem Editor für Metadaten-Schemaformulare können Sie vorhandene Schemata ändern oder benutzerdefinierte Metadatenschemata hinzufügen.
 
@@ -30,7 +34,7 @@ Gehen Sie wie folgt vor, um die Eigenschaftenseite für ein Asset anzuzeigen und
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. Weitere Informationen finden Sie unter [Bearbeiten von Metadatenschema-Formularen](metadata-schemas.md#editing-metadata-schema-forms). Wenn Sie das Metadatenschema für einen bestimmten MIME-Typ ändern, werden das Layout der Eigenschaftenseite für Assets mit dem aktuellen MIME-Typ und alle untergeordneten Asset-Typen geändert. Ändern Sie beispielsweise eine `jpeg` Schema unter `default/image` ändert nur das Metadatenlayout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `IMAGE/JPEG`. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
+   Verwenden Sie zum Ändern des MIME-Typs für ein Asset ein benutzerdefiniertes Metadatenschema-Formular oder ändern Sie ein vorhandenes Formular. Siehe [Bearbeiten von Metadatenschema-Forms](metadata-schemas.md#editing-metadata-schema-forms) für weitere Informationen. Wenn Sie das Metadatenschema für einen bestimmten MIME-Typ ändern, wird das Seitenlayout der Eigenschaften für Assets mit dem aktuellen MIME-Typ und allen Asset-Untertypen geändert. Ändern Sie beispielsweise eine `jpeg` Schema unter `default/image` ändert nur das Metadatenlayout (Asset-Eigenschaften) für Assets mit dem MIME-Typ `IMAGE/JPEG`. Wenn Sie allerdings das „default“-Schema ändern, wird dadurch das Metadaten-Layout für alle Asset-Typen geändert.
 
 ## Metadaten-Schemaformulare {#default-metadata-schema-forms}
 
@@ -45,7 +49,7 @@ Um eine Liste von Formularen/Vorlagen anzuzeigen, lesen Sie [!DNL Experience Man
 |  | <ul><li> [!UICONTROL Dm_video]</li></ul> | Schemaformular für Dynamic Media-Videos. |
 |  | <ul><li> [!UICONTROL image]</li></ul> | Schemaformular für Assets mit dem MIME-Typ &quot;image&quot;, z. B. image/jpeg, image/png usw. <br> Das Formular [!UICONTROL Bild] weist die folgenden untergeordneten Formularvorlagen auf: <ul><li> [!UICONTROL jpeg]: Schemaformular für Assets mit dem Untertyp [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schemaformular für Assets mit Untertyp [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL Anwendung]</li></ul> | Schemaformular für Assets mit dem MIME-Typ &quot;application&quot;, z. B. application/ pdf, application/ zip usw. <br>[!UICONTROL pdf]: Schemaformular für Assets mit dem Untertyp &quot;pdf&quot;. |
-|  | <ul><li>[!UICONTROL Video]</li></ul> | Schemaformular für Assets mit dem MIME-Typ „video“, beispielsweise video/avi, video/mp4 usw. |
+|  | <ul><li>[!UICONTROL Video]</li></ul> | Schemaformular für Assets mit dem MIME-Typ &quot;Video&quot;, wie video/avi, video/mp4 usw. |
 | [!UICONTROL collection] |  | Schemaformular für Sammlungen. |
 | [!UICONTROL contentfragment] |  | Schemaformular für Inhaltsfragmente. |
 | [!UICONTROL forms] |  | Dieses Schemaformular bezieht sich auf [Adobe Experience Manager Forms](/help/forms/home.md). |
@@ -68,10 +72,10 @@ Um eine Liste von Formularen/Vorlagen anzuzeigen, lesen Sie [!DNL Experience Man
 
 ## Bearbeiten von Metadatenschema-Formularen {#editing-metadata-schema-forms}
 
-Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bearbeiten. Das Metadatenschemaformular enthält die folgenden Elemente:
+Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bearbeiten. Das Metadatenschema-Formular umfasst Folgendes:
 
 * Registerkarten
-* Formularelemente innerhalb von Registerkarten
+* Formularelemente in Registerkarten.
 
 Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im CRX-Repository zuordnen bzw. dafür konfigurieren.
 
@@ -122,13 +126,13 @@ Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
 * `./jcr:created`: Zeigt die JCR-Eigenschaft im Knoten des Assets an. Wenn Sie diese Eigenschaften für Ansichtseigenschaften konfigurieren, wird empfohlen, dass Sie sie mit „Bearbeitung deaktivieren“ markieren, da sie geschützt sind. Andernfalls wird der Fehler [!UICONTROL Asset(s) konnte(n) nicht geändert werden] Ergebnisse beim Speichern der Eigenschaften des Assets.
 
-Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt angezeigt wird, sollte der Eigenschaftenpfad keine Leerzeichen enthalten.
+Um sicherzustellen, dass die Komponente ordnungsgemäß im Metadatenschema-Formular angezeigt wird, sollte der Eigenschaftspfad keine Leerzeichen enthalten.
 
-**Platzhalter**: Geben Sie mit dieser Eigenschaft relevanten Platzhaltertext zur Metadateneigenschaft an.
+**Platzhalter**: Verwenden Sie diese Eigenschaft, um relevanten Platzhaltertext für die Metadateneigenschaft anzugeben.
 
-**Erforderlich**: Mit dieser Eigenschaft können Sie eine Metadateneigenschaft auf der Eigenschaftenseite als obligatorisch markieren.
+**Erforderlich**: Verwenden Sie diese Eigenschaft, um eine Metadateneigenschaft auf der Eigenschaftsseite als obligatorisch zu markieren.
 
-**Bearbeitung deaktivieren**: Mit dieser Eigenschaft können Sie verhindern, dass eine Metadateneigenschaft auf der Eigenschaftenseite bearbeitet werden kann.
+**Bearbeiten deaktivieren**: Verwenden Sie diese Eigenschaft, um eine Metadateneigenschaft auf der Eigenschaftenseite nicht zu bearbeiten.
 
 **Leeres Feld schreibgeschützt anzeigen**: Markieren Sie diese Eigenschaft, um eine Metadateneigenschaft auch dann auf der Eigenschaftenseite anzuzeigen, wenn sie keinen Wert aufweist. Standardmäßig werden Metadateneigenschaften ohne Werte nicht auf der Eigenschaftenseite aufgeführt.
 
@@ -138,13 +142,13 @@ Um sicherzustellen, dass die Komponente im Metadaten-Schemaformular korrekt ange
 
 **Beschreibung**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
 
-**Klasse**: Objektklasse, der die Eigenschaft zugeordnet ist.
+**Klasse**: Objektklasse, mit der die Eigenschaft verknüpft ist.
 
 **Löschsymbol** Klicken Sie auf dieses Symbol, um eine Komponente aus dem Schemaformular zu löschen.
 
 >[!NOTE]
 >
->Die Komponente Ausgeblendetes Feld enthält diese Attribute nicht. Sie enthält stattdessen Eigenschaften wie die Attribute „Name“, „Wert“, „Feldbezeichnung“ und „Beschreibung“. Die Werte für die Komponente „Ausgeblendetes Feld“ werden beim Speichern des Assets als POST-Parameter gesendet. Sie werden nicht als Metadaten für das Asset gespeichert.
+>Die Komponente Ausgeblendetes Feld enthält diese Attribute nicht. Stattdessen enthält es Eigenschaften wie Attributname, Wert, Feldbezeichnung und Beschreibung. Die Werte für die Komponente &quot;Ausgeblendetes Feld&quot;werden beim Speichern des Assets als POST-Parameter gesendet. Sie wird nicht als Metadaten für das Asset gespeichert.
 
 Wenn Sie die Option **[!UICONTROL Erforderlich]** auswählen, können Sie nach Assets suchen, denen obligatorische Metadaten fehlen. Erweitern Sie im Bedienfeld **[!UICONTROL Filter]** die Eigenschaft **[!UICONTROL Metadatenvalidierung]** und wählen Sie die Option **[!UICONTROL Ungültig]**. Die Suchergebnisse zeigen Assets an, denen erforderliche Metadaten fehlen, die Sie über das Schemaformular konfiguriert haben.
 
@@ -154,7 +158,7 @@ Wenn Sie die Komponente &quot;Kontextuelle Metadaten&quot;zu einer Registerkarte
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-Wenn Sie auf der Eigenschaftenseite zusätzlich zur Registerkarte, auf die die Komponente „Kontextuelle Metadaten“ angewendet wird, eine weitere Registerkarte aufnehmen möchten, wählen Sie die Registerkarte aus der Liste aus. Die Registerkarte wird der Eigenschaftenseite hinzugefügt.
+Um eine beliebige Registerkarte auf der Eigenschaftenseite zusätzlich zur Registerkarte einzubeziehen, auf die die Komponente &quot;Kontextuelle Metadaten&quot;angewendet wird, wählen Sie die Registerkarte aus der Liste aus. Die Registerkarte wird der Eigenschaftenseite hinzugefügt.
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
@@ -174,7 +178,7 @@ Klicken Sie auf `+`, um einem Schemaformular eine neue Registerkarte hinzuzufüg
 
 ## Löschen von Metadatenschema-Formularen {#deleting-metadata-schema-forms}
 
-In [!DNL Experience Manager] können Sie nur benutzerdefinierte Schemaformulare löschen. Die Standardschemaformulare/-vorlagen können nicht gelöscht werden. Sie können aber alle benutzerdefinierten Änderungen in diesen Formularen löschen.
+In [!DNL Experience Manager] können Sie nur benutzerdefinierte Schemaformulare löschen. Die Standardschemaformulare/-vorlagen können nicht gelöscht werden. Sie können jedoch alle benutzerdefinierten Änderungen in diesen Formularen löschen.
 
 Um ein Formular zu löschen, wählen Sie das Formular aus und klicken Sie auf das Symbol **[!UICONTROL Löschen]**.
 
@@ -188,7 +192,7 @@ Um ein Formular zu löschen, wählen Sie das Formular aus und klicken Sie auf da
 
 ## Schemaformulare für MIME-Typen {#schema-forms-for-mime-types}
 
-[!DNL Experience Manager] Assets stellt voreingestellte Standardformulare für verschiedene MIME-Typen bereit. Sie können jedoch benutzerdefinierte Formulare für verschiedene MIME-Typen hinzufügen.
+[!DNL Experience Manager] Assets bietet standardmäßig Standardformulare für verschiedene MIME-Typen. Sie können jedoch benutzerdefinierte Formulare für verschiedene MIME-Typen hinzufügen.
 
 ### Hinzufügen neuer Formulare für MIME-Typen {#adding-new-forms-for-mime-types}
 
@@ -227,20 +231,20 @@ Die Metadatenschema-Funktion steht nur Administratoren zur Verfügung. Administr
 
 ## Anwenden von ordnerspezifischen Metadaten {#applying-folder-specific-metadata}
 
-[!DNL Experience Manager]Mit  Assets können Sie Varianten eines Metadatenschemas definieren und auf einen bestimmten Ordner anwenden.
+[!DNL Experience Manager] Mit Assets können Sie eine Variante eines Metadatenschemas definieren und auf einen bestimmten Ordner anwenden.
 
-Zum Beispiel können Sie eine Variante des Standard-Metadatenschemas definieren und diese auf einen Ordner anwenden. Das ursprüngliche Standard-Metadatenschema wird dabei überschrieben.
+Sie können beispielsweise eine Variante des Standard-Metadatenschemas definieren und auf einen Ordner anwenden. Wenn Sie das geänderte Schema anwenden, überschreibt es das ursprüngliche standardmäßige Metadatenschema, das auf Assets im Ordner angewendet wird.
 
-Die Änderungen aus der Variante betreffen nur die Assets in dem Ordner, auf den das Schema angewendet wird.
+Nur Assets, die in den Ordner hochgeladen wurden, auf den dieses Schema angewendet wird, entsprechen den modifizierten Metadaten, die im Varianten-Metadatenschema definiert sind.
 
-Assets in anderen Ordnern, für die das ursprüngliche Schema gilt, entsprechen weiterhin den im ursprünglichen Schema definierten Metadaten.
+Assets in anderen Ordnern, auf die das ursprüngliche Schema angewendet wird, entsprechen weiterhin den im ursprünglichen Schema definierten Metadaten.
 
-Die Metadatenübernahme durch Assets richtet sich nach dem Schema, das auf den Ordner der ersten Ebene in der Hierarchie angewendet wird. Assets in Ordnern, die keine Unterordner enthalten, übernehmen die Metadaten aus dem Schema, das auf ihren Ordner angewendet wird.
+Die Vererbung von Metadaten durch Assets basiert auf dem Schema, das auf den Ordner der ersten Ebene in der Hierarchie angewendet wird. Wenn also ein Ordner keine Unterordner enthält, übernehmen die Assets im Ordner die Metadaten aus dem Schema, das auf den Ordner angewendet wird.
 
-Assets in Unterordnern übernehmen die Metadaten aus dem Schema, das auf den Unterordner angewendet wurde, wenn es sich um ein anderes Schema handelt als das des übergeordneten Ordners. Assets in Unterordnern, auf die kein Schema oder dasselbe Schema wie auf den übergeordneten Ordner angewendet wurde, übernehmen die Metadaten des Schemas für den übergeordneten Ordner.
+Wenn der Ordner über einen Unterordner verfügt, erben die Assets im Unterordner die Metadaten aus dem Schema, das auf die Unterordnerebene angewendet wird, wenn ein anderes Schema auf Unterordnerebene angewendet wird. Wenn jedoch kein Schema oder dasselbe Schema auf Unterordnerebene angewendet wird, erben die Assets des Unterordners die Metadaten aus dem Schema, das auf der Ebene des übergeordneten Ordners angewendet wird.
 
 1. Klicken Sie auf [!DNL Experience Manager] -Logo und navigieren Sie dann zu **[!UICONTROL Tools > Assets > Metadatenschemata]**. Die Seite **[!UICONTROL Metadatenschema-Formulare]** wird angezeigt.
-1. Aktivieren Sie das Kontrollkästchen vor einem Formular, z. B. dem Standard-Metadatenformular, klicken oder tippen Sie auf das Symbol **[!UICONTROL Kopieren]** und speichern Sie es als benutzerdefiniertes Formular. Geben Sie einen benutzerdefinierten Namen für das Formular an, beispielsweise `my_default`. Alternativ können Sie ein benutzerdefiniertes Formular erstellen.
+1. Aktivieren Sie das Kontrollkästchen vor einem Formular, z. B. dem Standard-Metadatenformular, und klicken oder tippen Sie auf das **[!UICONTROL Kopieren]** und speichern Sie es als benutzerdefiniertes Formular. Geben Sie einen benutzerdefinierten Namen für das Formular an, beispielsweise `my_default`. Alternativ können Sie ein benutzerdefiniertes Formular erstellen.
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
@@ -263,9 +267,9 @@ Assets in Unterordnern übernehmen die Metadaten aus dem Schema, das auf den Unt
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Erfolgsmeldung zu schließen.
 1. Navigieren Sie zu dem Ordner, auf den Sie das geänderte Metadatenschema angewendet haben.
 
-## Definieren obligatorischer Metadaten {#defining-mandatory-metadata}
+## Definieren erforderlicher Metadaten {#defining-mandatory-metadata}
 
-Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hochgeladene Assets erzwungen werden. Wenn Sie Assets mit fehlenden Metadaten für die zuvor definierten Pflichtfelder hochladen, wird in der Kartenansicht ein entsprechender visueller Hinweis für die Assets angezeigt.
+Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hochgeladene Assets erzwungen werden. Wenn Sie Assets mit fehlenden Metadaten für die zuvor definierten Pflichtfelder hochladen, wird in der Kartenansicht für die Assets eine visuelle Anzeige für fehlende Metadaten angezeigt.
 
 >[!NOTE]
 >
@@ -282,12 +286,12 @@ Sie können Pflichtfelder auf Ordnerebene definieren, die für in den Ordner hoc
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Das geänderte Formular wird auf der Seite **[!UICONTROL Metadatenschema-Formulare]** aufgeführt. Um die benutzerdefinierten Metadaten auf einen Ordner anzuwenden, wählen Sie das Formular aus und klicken/tippen Sie auf **[!UICONTROL Auf Ordner anwenden]** aus der Symbolleiste.
 
-1. Navigieren Sie zum Ordner und laden Sie einige Assets mit fehlenden Metadaten für das Pflichtfeld, das Sie dem benutzerdefinierten Formular hinzugefügt haben. Die Kartenansicht für die Assets zeigt eine Meldung zu den fehlenden Metadaten für das Pflichtfeld an.
+1. Navigieren Sie zum Ordner und laden Sie einige Assets mit fehlenden Metadaten für das Pflichtfeld, das Sie dem benutzerdefinierten Formular hinzugefügt haben. In der Kartenansicht für die Assets wird eine Meldung für die fehlenden Metadaten für das Pflichtfeld angezeigt.
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
 1. (Optional) Rufen Sie `http://[server]:[port]/system/console/components/` auf. Konfigurieren und aktivieren Sie die Komponente `com.day.cq.dam.core.impl.MissingMetadataNotificationJob`, die standardmäßig deaktiviert ist. Legen Sie fest, mit welcher Häufigkeit [!DNL Experience Manager] die Gültigkeit der Metadaten in den Assets überprüfen soll.
-Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu jcr:content in Assets hinzu. Verwenden dieser Eigenschaft, [!DNL Experience Manager] kann Ergebnisse in einer Suche filtern.
+Diese Konfiguration fügt eine Eigenschaft hinzu `hasValidMetadata` in jcr:content der Assets. Verwenden dieser Eigenschaft, [!DNL Experience Manager] kann Ergebnisse in einer Suche filtern.
 
 >[!NOTE]
 >
@@ -295,4 +299,4 @@ Diese Konfiguration fügt eine Eigenschaft `hasValidMetadata` zu jcr:content in 
 
 >[!CAUTION]
 >
->Die Metadaten-Überprüfungen sind ressourcenintensiv und können die Leistung Ihres Systems beeinträchtigen. Planen Sie die Überprüfungen entsprechend. Wenn die Variable [!DNL Experience Manager] Bei der Implementierung treten Leistungsprobleme auf. Versuchen Sie, diesen Auftrag zu deaktivieren.
+>Die Überprüfung der Metadaten ist ressourcenintensiv und kann sich auf die Leistung Ihres Systems auswirken. Planen Sie die Prüfungen entsprechend. Wenn die Variable [!DNL Experience Manager] Bei der Implementierung treten Leistungsprobleme auf. Versuchen Sie, diesen Auftrag zu deaktivieren.

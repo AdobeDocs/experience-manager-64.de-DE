@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 3a85fd49-5929-4eb0-9f40-e62c904dbca0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 100%
+source-wordcount: '1345'
+ht-degree: 41%
 
 ---
 
 # Konfigurieren von Layout-Container und Layout-Modus{#configuring-layout-container-and-layout-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Ein [responsives Layout](/help/sites-authoring/responsive-layout.md) ist eine Methode, um ein [responsives Webdesign](https://de.wikipedia.org/wiki/Responsive_Webdesign) zu realisieren. Damit lassen sich Web-Seiten erstellen, deren Layout und Abmessungen von dem Gerät des Benutzers abhängen.
 
@@ -36,10 +40,10 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
       /libs/wcm/foundation/components/responsivegrid
 
-   * Sie können Layout-Container wie folgt definieren:
+   * Sie können Layout-Container definieren:
 
-      * als Komponente, die Benutzer zu einer Seite hinzufügen können
-      * als Standard-ParSys für die Seite
+      * Als Komponente, die der Benutzer einer Seite hinzufügen kann.
+      * Als Standard-ParSys für die Seite.
       * Beide.
 
          Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
@@ -53,13 +57,13 @@ Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout d
 
 >[!CAUTION]
 >
->Auch wenn die **Layout-Container**-Komponente in der klassischen Benutzeroberfläche verfügbar ist, steht der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung.
+>Obwohl die Variable **Layout-Container** -Komponente in der klassischen Benutzeroberfläche verfügbar ist, ist die vollständige Funktionalität nur in der Touch-optimierten Benutzeroberfläche verfügbar.
 
-Dieser responsive Rastermechanismus bietet folgende Möglichkeiten:
+Mit diesen responsiven Rastermechanismen können Sie:
 
-* Haltepunkte (die eine Gerätegruppierung anzeigen), um unterschiedliches Verhalten der Inhalte basierend auf dem Geräte-Layout zu definieren
-* Ausblenden von Komponenten basierend auf der Gerätegruppe (definieren Sie, an welchem Haltepunkt eine Komponente ausgeblendet werden soll)
-* Horizontale Ausrichtung am Raster (platzieren Sie Komponenten im Raster, passen Sie die Größe an, definieren Sie, wann ein Reduzieren/Umfließen daneben oder drüber/darunter stattfinden soll).
+* Verwenden Sie Haltepunkte (die die Gerätegruppierung angeben), um je nach Gerätelayout ein unterschiedliches Inhaltsverhalten zu definieren.
+* Ausblenden von Komponenten basierend auf Gerätegruppen (definieren Sie, an welchem Haltepunkt eine Komponente ausgeblendet wird).
+* Verwenden Sie die horizontale Ausrichtung am Raster (platzieren Sie Komponenten in das Raster, passen Sie die Größe an, definieren Sie, wann sie nebeneinander oder darüber/darunter reduziert/umfließen sollen).
 * Realisieren einer Spaltensteuerung.
 
 >[!NOTE]
@@ -70,17 +74,17 @@ Dieser responsive Rastermechanismus bietet folgende Möglichkeiten:
 
 Mit diesen Aufgaben können Sie den responsiven **Emulator** auf Ihrer Website anzeigen.
 
-### Registrieren der Seitenkomponenten für die Emulation {#register-your-page-components-for-emulation}
+### Registrieren Ihrer Seitenkomponenten für die Emulation {#register-your-page-components-for-emulation}
 
-Um die Emulator-Unterstützung für Ihre Seiten zu aktivieren, müssen Sie die Seitenkomponenten registrieren. Weitere Informationen finden Sie unter [Registrieren von Seitenkomponenten für die Simulation](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
+Damit der Emulator Ihre Seiten unterstützen kann, müssen Sie die Seitenkomponenten registrieren. Siehe [Registrieren von Seitenkomponenten für die Simulation](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
 
-### Festlegen der Gerätegruppen {#specify-the-device-groups}
+### Gerätegruppen angeben {#specify-the-device-groups}
 
-Informationen dazu, wie Sie die Gerätegruppen festlegen, die in der Geräteliste des Emulators angezeigt werden, finden Sie unter [Festlegen der Gerätegruppen](/help/sites-developing/responsive.md#specifying-the-device-groups).
+Informationen zum Festlegen der Gerätegruppen, die in der Liste &quot;Geräte&quot;des Emulators angezeigt werden, finden Sie unter [Festlegen der Gerätegruppen](/help/sites-developing/responsive.md#specifying-the-device-groups).
 
-### Verknüpfen der Website mit den festgelegten Gerätegruppen {#link-your-site-to-the-specified-device-groups}
+### Verknüpfen Ihrer Site mit den angegebenen Gerätegruppen {#link-your-site-to-the-specified-device-groups}
 
-Um den Emulator einzubinden, müssen Sie die Website mit den Gerätegruppen verknüpfen. Siehe [Hinzufügen der Geräteliste](/help/sites-developing/responsive.md#adding-the-devices-list) (für die klassische und die Touch-optimierte Benutzeroberfläche).
+Um den Simulator einzubeziehen, müssen Sie Ihre Site mit den Gerätegruppen verknüpfen. Siehe [Hinzufügen der Geräteliste](/help/sites-developing/responsive.md#adding-the-devices-list) (für die klassische und die Touch-optimierte Benutzeroberfläche).
 
 ## Aktivieren des Layout-Modus für die Website {#activate-layout-mode-for-your-site}
 
@@ -90,20 +94,20 @@ Mit diesen Vorgängen wird der **Layout-Modus** auf Ihrer Website aktiviert.
 
 [Haltepunkte](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate):
 
-* werden bei responsiven Designs genutzt
-* können folgendermaßen definiert werden:
+* werden im responsiven Design verwendet.
+* Kann definiert werden:
 
    * auf der Seitenvorlage, von der die Einstellungen auf alle Seiten kopiert werden, die mit dieser Vorlage erstellt wurden
-   * auf dem Seitenknoten, von dem die Einstellungen von allen untergeordneten Seiten geerbt werden
+   * Auf dem Seitenknoten, von dem aus die Einstellungen von allen untergeordneten Seiten übernommen werden.
 
-* definieren einen Titel und eine Breite:
+* Definieren Sie einen Titel und eine Breite:
 
-   * Der Titel beschreibt die allgemeine Gerätegruppierung, bei Bedarf mit Ausrichtung; z. B. phone, tablet, tabletlandscape.
-   * Die Breite definiert die Höchstbreite in Pixel für diese allgemeine Gerätegruppierung. Wenn beispielsweise der Haltepunkt „phone“ eine Breite von 768 hat, ist das die Höchstbreite des Layouts, das für ein Smartphone genutzt wird.
+   * Der Titel beschreibt die generische Gerätegruppierung, gegebenenfalls mit Ausrichtung. zum Beispiel Telefon, Tablet, Tabletlandscape.
+   * Die Breite definiert die maximale Breite in Pixel für diese generische Gerätegruppierung. Wenn das Breakpoint-Telefon beispielsweise eine Breite von 768 hat, dann die maximale Breite des Layouts, das für ein Telefongerät verwendet wird.
 
-* sind als Markierung oben auf dem Seiten-Editor sichtbar, wenn Sie den Emulator nutzen
-* werden von der übergeordneten Knotenhierarchie geerbt und können beliebig überschrieben werden
-* Es gibt einen standardmäßigen (vorab konfigurierten) Haltepunkt, der alles über dem letzten *konfigurierten* Haltepunkt abdeckt.
+* Sind als Markierungen am oberen Rand des Seiteneditors sichtbar, wenn Sie den Emulator verwenden.
+* werden von der Hierarchie des übergeordneten Knotens übernommen und können beliebig überschrieben werden.
+* Es gibt einen standardmäßigen (nativen) Breakpoint, der alles über dem letzten *konfiguriert* Haltepunkt.
 
 Haltepunkte können Sie mit CRXDE Lite oder XML definieren.
 
@@ -113,19 +117,19 @@ Haltepunkte können Sie mit CRXDE Lite oder XML definieren.
 >
 >* müssen Sie Haltepunkte zu den Vorlagen hinzufügen.
 >
->Wenn Sie ein vorhandenes Projekt (mit vorhandenen Inhalten) migrieren, müssen Sie:
+>Wenn Sie ein vorhandenes Projekt (mit vorhandenem Inhalt) migrieren, gehen Sie folgendermaßen vor:
 >
->* Haltepunkte zu den Vorlagen hinzufügen
+>* Haltepunkte zu Vorlagen hinzufügen
 >* dieselben Haltepunkte zu vorhandenen Seiten hinzufügen\
->  Da die Vererbung im Einsatz ist, können Sie dies auf die Stammseite Ihrer Inhalte beschränken.
+   >  Da die Vererbung im Einsatz ist, können Sie dies auf die Stammseite Ihrer Inhalte beschränken.
 >
 
 
-#### Konfigurieren von Haltepunkten mit CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
+#### Konfigurieren von Haltepunkten mithilfe von CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
-1. Wenn Sie CRXDE Lite (o. ä.) verwenden, navigieren Sie wahlweise zu einer der folgenden Optionen:
+1. Navigieren Sie mit der CRXDE Lite (oder einer entsprechenden Vorlage) zu einer der folgenden Optionen:
 
-   * der Vorlagendefinition
+   * Ihre Vorlagendefinition.
    * dem Knoten `jcr:content` Ihrer Seite
 
 1. Erstellen Sie unter `jcr:content` den Knoten:
@@ -138,7 +142,7 @@ Haltepunkte können Sie mit CRXDE Lite oder XML definieren.
    * Name: `breakpoints`
    * Typ: `nt:unstructured`
 
-1. Unter dem Haltepunktknoten können Sie eine beliebige Anzahl an Haltepunkten erstellen. Jede Definition ist ein einziger Knoten mit den folgenden Eigenschaften:
+1. Unter dem Breakpoints-Knoten können Sie eine beliebige Anzahl von Haltepunkten erstellen. Jede Definition ist ein einzelner Knoten mit den folgenden Eigenschaften:
 
    * Name: `<descriptive name>`
    * Typ: `nt:unstructured`
@@ -149,7 +153,7 @@ Haltepunkte können Sie mit CRXDE Lite oder XML definieren.
 
 Haltepunkte befinden sich im Abschnitt `<jcr:content>` der Datei `.context.html` im entsprechenden Vorlagenorder (bzw. Inhaltsordner).
 
-Eine Beispieldefinition
+Eine Beispieldefinition:
 
 ```xml
 <cq:responsive jcr:primaryType="nt:unstructured">
@@ -160,7 +164,7 @@ Eine Beispieldefinition
 </cq:responsive>
 ```
 
-### Hinzufügen eines responsiven Informationsanbieters {#add-a-responsive-information-provider}
+### Responsive Informationsanbieter hinzufügen {#add-a-responsive-information-provider}
 
 >[!NOTE]
 >
@@ -174,16 +178,16 @@ Kopieren Sie die folgende `cq:infoProviders`-Knotenstruktur in die übergeordnet
 
 Sie müssen diese Vorgänge durchführen, um die Größe von Komponenten im **Layout-Modus** zu ändern.
 
-### Festlegen des Layout-Containers als Haupt-ParSys {#set-layout-container-as-main-parsys}
+### Layout-Container als Haupt-Parsys festlegen {#set-layout-container-as-main-parsys}
 
-Um einen Layout-Container als Haupt-ParSys einer Seite festzulegen, müssen Sie das ParSys wie folgt definieren:
+Um die Haupt-ParSys Ihrer Seite als Layout-Container festzulegen, müssen Sie die ParSys wie folgt definieren:
 
 `wcm/foundation/components/responsivegrid`
 
-Wahlweise in der:
+In beiden Fällen:
 
 * Seitenkomponente
-* Seitenvorlage (für die zukünftige Verwendung)
+* Seitenvorlage (zur zukünftigen Verwendung)
 
 Die folgenden beiden Beispiele veranschaulichen die Definition:
 
@@ -199,13 +203,13 @@ Die folgenden beiden Beispiele veranschaulichen die Definition:
    <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
    ```
 
-### Einschließen von responsivem CSS {#include-the-responsive-css}
+### Responsive CSS einschließen {#include-the-responsive-css}
 
 #### CSS für Haltepunkte mit LESS {#css-for-breakpoints-using-less}
 
-AEM nutzt LESS, um Teile des erforderlichen CSS zu erstellen. Sie müssen für Ihre Projekte eingeschlossen sein.
+AEM verwendet LESS, um Teile des erforderlichen CSS zu generieren. Diese müssen für Ihre Projekte einbezogen werden.
 
-Sie müssen auch eine [Client-Bibliothek](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) erstellen, um zusätzliche Konfigurationen und Funktionsaufrufe bereitzustellen. Der folgende LESS-Ausschnitt ist ein Beispiel für den Code, den Sie mindestens zu Ihrem Projekt hinzufügen müssen:
+Außerdem müssen Sie eine [Client-Bibliothek](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) , um zusätzliche Konfigurations- und Funktionsaufrufe bereitzustellen. Der folgende LESS-Extrakt ist ein Beispiel für das Minimum, das Sie zum Projekt hinzufügen müssen:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -237,9 +241,9 @@ Die Basisrasterdefinition finden Sie unter:
 
 `/libs/wcm/foundation/clientlibs/grid/grid_base.less`
 
-#### Überlegungen zum Stil {#styling-considerations}
+#### Überlegungen zur Formatierung {#styling-considerations}
 
-Die Größe von Komponenten in einem responsiven Container (und ihren entsprechenden HTML-DOM-Elementen) wird gemäß der Größe des responsiven Rasters geändert. Daher empfehlen wir in diesen Fällen, Definitionen von (enthaltenen) DOM-Elementen mit fester Breite zu vermeiden (oder zu aktualisieren).
+Die Größe von Komponenten, die in einem responsiven Container gespeichert sind, wird (zusammen mit den entsprechenden HTML-DOM-Elementen) entsprechend der Größe des responsiven Rasters geändert. Daher wird unter diesen Umständen empfohlen, Definitionen von DOM-Elementen mit fester Breite (enthalten) zu vermeiden (oder zu aktualisieren).
 
 Beispiel:
 
@@ -251,9 +255,9 @@ Beispiel:
 
    * `max-width=100px`
 
-#### Größenänderung und adaptive Bild-Compliance {#resizing-and-adaptive-image-compliance}
+#### Größenanpassung und Adaptive Bildkompatibilität {#resizing-and-adaptive-image-compliance}
 
-Jede Änderung der Größe einer Komponente innerhalb des Rasters löst mindestens einen der folgende Listener aus:
+Bei jeder Größenänderung einer Komponente im Raster werden die folgenden Listener entsprechend Trigger:
 
 * `beforeedit`
 * `beforechildedit`
@@ -267,23 +271,23 @@ Beispiel:
 
 `<cq:listeners jcr:primaryType="cq:EditListenersConfig" afteredit="REFRESH_PAGE" />`
 
-Der adaptive Bildmechanismus wird über ein Skript bereitgestellt, das die Auswahl des korrekten Bildes für die aktuelle Fenstergröße steuert. Es wird aktiviert, wenn das DOM bereit ist oder ein dediziertes Ereignis empfangen wird. Zurzeit muss die Seite aktualisiert werden, um das Ergebnis der Benutzeraktion korrekt widerzuspiegeln.
+Der Mechanismus für adaptive Bilder wird über ein Skript zur Verfügung gestellt, das die Auswahl des richtigen Bildes für die aktuelle Fenstergröße steuert. Sie wird aktiviert, nachdem das DOM bereit ist oder wenn ein dediziertes Ereignis empfangen wird. Derzeit muss die Seite aktualisiert werden, um das Ergebnis der Benutzeraktion korrekt widerzuspiegeln.
 
 >[!CAUTION]
 >
 >Benutzerdefinierte Stylesheet-ClientLibs müssen als Teil der Kopfzeile geladen werden, damit sie in der Autoren und der Veröffentlichungsumgebung ordnungsgemäß funktionieren.
 
-## Aktivieren der Layout-Container-Komponente für die Seite {#enable-the-layout-container-component-for-page}
+## Aktivieren der Layout-Container-Komponente für Seite {#enable-the-layout-container-component-for-page}
 
-Mit den folgenden Aufgaben können Autoren Instanzen der **Layout-Container**-Komponente auf die Seite verschieben.
+Mit diesen Aufgaben können Autoren Instanzen der **Layout-Container** auf der Seite.
 
 ### Aktivieren der Layout-Container-Komponente für die Seitenbearbeitung {#enable-the-layout-container-component-for-page-editing}
 
-Um es Autoren zu erlauben, weitere responsive Raster zu den Inhaltsseiten hinzuzufügen, müssen Sie die Layout-Container-Komponente für Ihre Seite hinzufügen. Möglich ist dies über folgende Optionen:
+Damit Autoren weitere responsive Raster zu den Inhaltsseiten hinzufügen können, müssen Sie die Layout-Container-Komponente für Ihre Seite aktivieren. Möglich ist dies über folgende Optionen:
 
 * **Autorenumgebung**
 
-   Aktivieren Sie im [Design-Modus](/help/sites-authoring/default-components-designmode.md) die **Layout-Container**-Komponente für eine Seite.
+   Verwendung [Designmodus](/help/sites-authoring/default-components-designmode.md) , um die **Ebenencontainer** -Komponente für eine Seite.
 
 * **Komponentendefinition**
 
@@ -291,23 +295,23 @@ Um es Autoren zu erlauben, weitere responsive Raster zu den Inhaltsseiten hinzuz
 
 ### Konfigurieren des Rasters des Layout-Containers {#configure-the-grid-of-the-layout-container}
 
-Sie können die Anzahl an Spalten konfigurieren, die für jede spezifische Instanz des Layout-Containers verfügbar sind:
+Sie können die Anzahl der Spalten konfigurieren, die für jede bestimmte Instanz des Layout-Containers verfügbar sind:
 
 1. **Autorenumgebung**
 
-   Sie können die Anzahl an Spalten konfigurieren, die für jede spezifische Instanz des Layout-Containers verfügbar sind.
+   Sie können die Anzahl der Spalten konfigurieren, die für jede bestimmte Instanz des Layout-Containers verfügbar sind.
 
-   Öffnen Sie dazu im [Design-Modus](/help/sites-authoring/default-components-designmode.md) das Design-Dialogfeld für den betroffenen Container. Hier können Sie festlegen, wie viele Spalten für die Positionierung und Größeneinstellung vorhanden sein sollen. Der Standardwert lautet 12.
+   Verwenden Sie dazu [Designmodus](/help/sites-authoring/default-components-designmode.md)und öffnen Sie dann das Dialogfeld &quot;Design&quot;für den erforderlichen Container. Hier können Sie festlegen, wie viele Spalten für die Positionierung und Größenanpassung verfügbar sein sollen. Der Standardwert lautet 12.
 
 1. **XML**
 
-   Die Definitionen für das responsive Raster werden in folgender Datei festgelegt:
+   Definitionen für das responsive Raster finden Sie unter:
 
    `etc/design/<*your-project-name*>/.content.xml`
 
-   Sie können die folgenden Parameter festlegen:
+   Die folgenden Parameter können definiert werden:
 
-   * Anzahl an verfügbaren Spalten:
+   * Anzahl der verfügbaren Spalten:
 
       * `columns="{String}8"`
    * Komponenten, die zur aktuellen Komponente hinzugefügt werden können:

@@ -8,14 +8,18 @@ topic-tags: managing-assets
 exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
 feature: Dynamic Media Classic
 role: User
-source-git-commit: 50b657456d2a0eaaaf681d3902eba38b15d00e12
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2824'
-ht-degree: 60%
+source-wordcount: '2860'
+ht-degree: 46%
 
 ---
 
 # Hinzufügen von Dynamic Media Classic-Komponenten zu Seiten {#adding-scene-features-to-your-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Adobe Dynamic Media Classic ist eine gehostete Lösung für die Verwaltung, Optimierung, Veröffentlichung und Bereitstellung von Rich-Media-Assets für Web-, Mobil-, E-Mail- und Internet-verbundene Anzeigen und Ausdrucke.
 
@@ -33,7 +37,7 @@ In diesem Dokument wird beschrieben, wie Sie digitale Assets von AEM in Dynamic 
 
 Siehe auch [Hinzufügen von Imagemaps](image-maps.md).
 
-Weitere Informationen über die Arbeit mit Videokomponenten mit AEM finden Sie unter [Video](video.md).
+Weitere Informationen zur Verwendung von Videokomponenten mit AEM finden Sie unter [Video](video.md).
 
 >[!NOTE]
 >
@@ -93,7 +97,7 @@ Das Hinzufügen einer Dynamic Media Classic-Komponente (Scene7) entspricht dem H
 
 1. Klicken Sie auf **[!UICONTROL Konfiguration]** -Symbol, um die Komponente zu öffnen.
 
-1. Bearbeiten Sie die Komponente bei Bedarf und klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Bearbeiten Sie die Komponente nach Bedarf und klicken Sie auf **[!UICONTROL OK]** , um Änderungen zu speichern.
 1. Ziehen Sie Ihr Bild oder Video aus dem Inhaltsbrowser auf die Dynamic Media Classic-Komponente, die Sie zur Seite hinzugefügt haben.
 
    >[!NOTE]
@@ -102,9 +106,9 @@ Das Hinzufügen einer Dynamic Media Classic-Komponente (Scene7) entspricht dem H
 
 ### Hinzufügen interaktiver Anzeigeerlebnisse zu einer responsiven Site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
-Dynamisches Design für Ihre Assets bedeutet, dass Ihre Assets in Abhängigkeit ihrer Anzeigeposition angepasst werden. Mithilfe des dynamischen Designs können dieselben Assets auf mehreren Geräten effektiv dargestellt werden.
+Responsives Design für Ihre Assets bedeutet, dass sich Ihre Assets an den Ort anpassen, an dem sie angezeigt werden. Mithilfe des dynamischen Designs können dieselben Assets auf mehreren Geräten effektiv dargestellt werden.
 
-Informationen hierzu finden Sie auch unter [Dynamisches Design für Webseiten](/help/sites-developing/responsive.md).
+Siehe auch [Responsives Design für Webseiten](/help/sites-developing/responsive.md).
 
 **So fügen Sie einer responsiven Site ein interaktives Anwendererlebnis hinzu**:
 
@@ -172,13 +176,13 @@ Sie können ein Asset in festlegen, um einen Link zu öffnen. Legen Sie die **[!
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
 * **[!UICONTROL Viewer-Vorgabe]**
-Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
+Wählen Sie eine vorhandene Viewer-Vorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md). Sie können keine Viewer-Vorgabe auswählen, wenn Sie eine Bildvorgabe verwenden und umgekehrt.
 
 * **[!UICONTROL Dynamic Media Classic-Konfiguration]**
 Wählen Sie die Dynamic Media Classic-Konfiguration aus, die Sie verwenden möchten, um aktive Bildvorgaben aus SPS abzurufen.
 
 * **[!UICONTROL Bildvorgabe]**
-Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md). Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
+Wählen Sie eine vorhandene Bildvorgabe aus dem Dropdown-Menü aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe [Verwalten von Bildvorgaben](/help/assets/managing-image-presets.md). Sie können keine Viewer-Vorgabe auswählen, wenn Sie eine Bildvorgabe verwenden und umgekehrt.
 
 * **[!UICONTROL Ausgabeformat]**
 Wählen Sie das Ausgabeformat des Bildes aus, z. B. jpeg. In Abhängigkeit des von Ihnen ausgewählten Ausgabeformats stehen Ihnen möglicherweise zusätzliche Konfigurationsoptionen zur Verfügung. Siehe [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options).
@@ -187,14 +191,14 @@ Wählen Sie das Ausgabeformat des Bildes aus, z. B. jpeg. In Abhängigkeit des v
 Wählen Sie aus, wie das Bild scharfgezeichnet werden soll. Das Scharfzeichnen wird unter [Best Practices für Bildvorgaben](/help/assets/managing-image-presets.md#image-preset-options) und [Best Practices für das Scharfzeichnen](/help/assets/assets/sharpening_images.pdf) detailliert beschrieben.
 
 * **[!UICONTROL URL-Modifikatoren]**
-Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese werden unter [Bildvorgaben](/help/assets/managing-image-presets.md) und in der [Befehlsreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=de) beschrieben.
+Sie können Bildeffekte ändern, indem Sie zusätzliche Dynamic Media Classic-Bildbefehle bereitstellen. Diese werden unter [Bildvorgaben](/help/assets/managing-image-presets.md) und [Befehlsreferenz](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=de).
 
 * **[!UICONTROL Haltepunkte]**
 Wenn Ihre Website dynamisch ist, möchten Sie die Haltepunkte anpassen. Breakpoints müssen durch Kommas (,) voneinander getrennt werden.
 
 ### Bildvorlage {#image-template}
 
-[Dynamic Media Classic-Bildvorlagen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating-the-initial-template) sind mehrschichtige Photoshop-Inhalte, die in Dynamic Media Classic importiert wurden, wo Inhalte und Eigenschaften für Variabilität parametrisiert wurden. Mit der Komponente **[!UICONTROL Bildvorlage]** können Sie Bilder importieren und den Text in AEM dynamisch ändern. Zusätzlich können Sie die Komponente **[!UICONTROL Bildvorlage]** dahingehend konfigurieren, dass sie Werte aus dem Client-Kontext übernimmt, damit das Bild jedem Benutzer personalisiert angezeigt wird.
+[Dynamic Media Classic-Bildvorlagen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/creating-template.html#creating-the-initial-template) sind mehrschichtige Photoshop-Inhalte, die in Dynamic Media Classic importiert wurden, wo Inhalte und Eigenschaften für Variabilität parametrisiert wurden. Die **[!UICONTROL Bildvorlage]** -Komponente können Sie Bilder importieren und den Text in AEM dynamisch ändern. Zusätzlich können Sie die Komponente **[!UICONTROL Bildvorlage]** dahingehend konfigurieren, dass sie Werte aus dem Client-Kontext übernimmt, damit das Bild jedem Benutzer personalisiert angezeigt wird.
 
 Tippen **[!UICONTROL Bearbeiten]** , um die Komponente zu konfigurieren. Sie können [Einstellungen, die für alle Dynamic Media Classic-Komponenten gelten](#settings-common-to-all-scene-components) sowie anderen in diesem Abschnitt beschriebenen Einstellungen.
 
@@ -222,7 +226,7 @@ Beim Importieren eines Bildes werden die Parameter vorab mit Informationen aus d
 
 #### Dynamisches Ändern von Text {#changing-text-dynamically}
 
-Geben Sie zum dynamischen Ändern des Texts neuen Text in die Felder ein und klicken Sie auf **[!UICONTROL OK]**. In diesem Beispiel lautet der **[!UICONTROL Preis]** 50 $ und der Versand kostet 0,99 $.
+Um den Text dynamisch zu ändern, geben Sie neuen Text in die Felder ein und klicken Sie auf **[!UICONTROL OK]**. In diesem Beispiel lautet der **[!UICONTROL Preis]** 50 $ und der Versand kostet 0,99 $.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -230,7 +234,7 @@ Der Text im Bild ändert sich. Sie können den Text auf den ursprünglichen Wert
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-#### Ändern von Text zum Berücksichtigen des Werts eines Clientkontextwerts {#changing-text-to-reflect-the-value-of-a-client-context-value}
+#### Ändern von Text, um den Wert eines Client-Kontextwerts widerzuspiegeln {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
 Um ein Feld mit einem Client-Kontextwert zu verknüpfen, tippen Sie auf **[!UICONTROL Auswählen]** zum Öffnen des Kontextmenüs des Clients wählen Sie den Client-Kontext aus und tippen Sie auf **[!UICONTROL OK]**. In diesem Beispiel ändert sich der Name auf Grundlage der Verknüpfung des Namens mit dem formatierten Namen im Profil.
 
@@ -261,7 +265,7 @@ Weitere Informationen darüber, wie Videos mit Dynamic Media Classic-Integration
 
 ### Bekannte Einschränkungen für die Videokomponente {#known-limitations-for-the-video-component}
 
-Adobe DAM und WCM zeigen, ob ein Mastervideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
+Adobe DAM und WCM zeigen an, ob ein Übergeordnetes Video hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
 
 * Dynamic Media Classic-kodierte Ausgabedarstellungen
 * Adaptive Dynamic Media Classic-Videosets
@@ -272,7 +276,7 @@ Wenn Sie ein adaptives Videoset mit der Dynamic Media Classic-Videokomponente ve
 
 Mit dem Dynamic Media Classic-Inhaltsbrowser können Sie Inhalte aus Dynamic Media Classic direkt in AEM anzeigen. Wählen Sie für den Zugriff auf den Inhaltsbrowser in der **[!UICONTROL Inhaltssuche]** die Option **[!UICONTROL Dynamic Media Classic]** auf der Touch-optimierten Benutzeroberfläche oder das Symbol **[!UICONTROL S7]** auf der klassischen Benutzeroberfläche aus. Die Funktionalität ist auf den beiden Benutzeroberflächen identisch.
 
-Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die [Standardkonfiguration](/help/sites-administering/scene7.md#configuring-a-default-configuration) an. Sie können unterschiedliche Kategorien direkt im Dynamic Media Classic-Inhaltsbrowser im Dropdown-Menü auswählen.
+Wenn Sie mehrere Konfigurationen haben, zeigt AEM standardmäßig die [Standardkonfiguration](/help/sites-administering/scene7.md#configuring-a-default-configuration). Sie können unterschiedliche Kategorien direkt im Dynamic Media Classic-Inhaltsbrowser im Dropdown-Menü auswählen.
 
 >[!NOTE]
 >
@@ -287,7 +291,7 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt AEM standardmäßig die 
 
 ### Durchsuchen von Inhalten in der Touch-optimierten Benutzeroberfläche {#browsing-content-in-the-touch-optimized-ui}
 
-Sie können über die Touch-optimierte oder klassische Benutzeroberfläche auf den Inhaltsbrowser zugreifen. Zurzeit weist die Touch-optimierte Benutzeroberfläche die folgende Begrenzung auf:
+Sie können entweder über die Touch-optimierte oder die klassische Benutzeroberfläche auf den Inhaltsbrowser zugreifen. Derzeit gilt für die Touch-optimierte Funktion die folgende Einschränkung:
 
 * FXG- und Flash-Assets aus Dynamic Media Classic werden nicht unterstützt.
 
@@ -296,7 +300,7 @@ Durchsuchen Sie Dynamic Media Classic-Assets, indem Sie **[!UICONTROL Dynamic Me
 >[!NOTE]
 >
 >* Der Dynamic Media Classic-Inhaltsbrowser lädt etwa 100 Assets und sortiert sie nach Namen.
->* Wenn Sie einen sicheren Vorschauserver festgelegt haben, verwendet der Browser diesen Vorschauserver zum Darstellen von Miniaturansichten und Assets.
+>* Wenn Sie einen sicheren Vorschauserver eingerichtet haben, verwendet der Browser diesen Vorschauserver zum Rendern von Miniaturansichten und Assets.
 >
 
 
@@ -306,26 +310,26 @@ Zusätzlich können Sie Informationen über Auflösung, Größe, Tage seit der �
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
-* Bei adaptiven Videosets und -vorlagen werden für Miniaturansichten keine Größeninformationen generiert.
-* Bei adaptiven Videosets wird für Miniaturansichten keine Auflösung generiert.
+* Für adaptive Videosets und Vorlagen werden keine Größeninformationen für Miniaturansichten generiert.
+* Für adaptive Videosets wird keine Auflösung für Miniaturansichten generiert.
 
 ### Suchen nach Dynamic Media Classic-Assets mit dem Inhaltsbrowser {#searching-for-scene-assets-with-the-content-browser}
 
 Die Suche nach Dynamic Media Classic-Assets verläuft ähnlich wie die Suche nach AEM Assets. Bei der Suche wird Ihnen jedoch im Dynamic Media Classic-System eine Remote-Ansicht der Assets angezeigt, anstatt sie direkt in AEM zu importieren.
 
-Sie können die klassische oder Touch-optimierte Benutzeroberfläche verwenden, um Assets anzuzeigen und nach ihnen zu suchen. In Abhängigkeit von der Oberfläche unterscheidet sich die Art und Weise der Suche etwas.
+Sie können entweder die klassische oder die Touch-optimierte Benutzeroberfläche verwenden, um Assets anzuzeigen und nach ihnen zu suchen. Je nach Benutzeroberfläche unterscheidet sich die Suchweise geringfügig.
 
 Wenn Sie auf einer der Benutzeroberflächen suchen, können Sie nach den folgenden Kriterien filtern (wird hier in der Touch-optimierten Benutzeroberfläche gezeigt):
 
 * **[!UICONTROL Suchbegriffe eingeben]**
-Sie können Assets nach Namen suchen. Bei der Suche entsprechen die von Ihnen eingegebenen Keywords dem Beginn des Dateinamens. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Tippen Sie unbedingt auf Eingabe , nachdem Sie den Begriff eingegeben haben, um das Asset zu finden.
+Sie können Assets nach Namen suchen. Bei der Suche nach den eingegebenen Keywords beginnt der Dateiname mit . Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Tippen Sie unbedingt auf Eingabe , nachdem Sie den Begriff eingegeben haben, um das Asset zu finden.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 
 * **[!UICONTROL Ordner/Pfad]**
 Der Name des angezeigten Ordners hängt von der ausgewählten Konfiguration ab. Sie können einen Drilldown zu niedrigeren Ebenen durchführen, indem Sie auf das Ordnersymbol tippen, einen Unterordner auswählen und dann auf das Häkchen tippen, um ihn auszuwählen.
 
-Wenn Sie ein Keyword eingeben und einen Ordner auswählen, durchsucht AEM diesen Ordner und die zugehörigen Unterordner. Wenn Sie jedoch bei der Suche keine Keywords eingeben, wird durch die Auswahl des Ordners das Asset nur in diesem Ordner angezeigt und nicht in Unterordnern.
+Wenn Sie einen Suchbegriff eingeben und einen Ordner auswählen, durchsucht AEM diesen Ordner und alle Unterordner. Wenn Sie bei der Suche jedoch keine Keywords eingeben, werden bei der Auswahl des Ordners nur die Assets in diesem Ordner angezeigt, keine Unterordner.
 
 Standardmäßig durchsucht AEM den ausgewählten Ordner und alle Unterordner.
 
@@ -337,7 +341,7 @@ Auswählen **[!UICONTROL Dynamic Media Classic]** , um Dynamic Media Classic-Inh
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
 * **[!UICONTROL Konfiguration]**
-Wenn mehrere Dynamic Media Classic-Konfigurationen in definiert sind: [!UICONTROL Cloud Services]können Sie sie hier auswählen. Der Ordner ändert sich anhand der von Ihnen ausgewählten Konfiguration.
+Wenn mehrere Dynamic Media Classic-Konfigurationen in definiert sind: [!UICONTROL Cloud Services]können Sie sie hier auswählen. Dadurch ändert sich der Ordner entsprechend der ausgewählten Konfiguration.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -348,10 +352,10 @@ Im Dynamic Media Classic-Browser können Sie Ergebnisse filtern, um Folgendes ei
 
 >[!NOTE]
 >
->* Auf der klassischen Benutzeroberfläche können Sie auch nach **Flash** und **FXG** suchen. Das Filtern nach diesen auf der Touch-optimierten Benutzeroberfläche wird derzeit nicht unterstützt.
+>* Auf der klassischen Benutzeroberfläche können Sie auch nach **Flash** und **FXG** suchen. Die Filterung dieser Elemente in der Touch-optimierten Benutzeroberfläche wird derzeit nicht unterstützt.
 >
 >* Beim Durchsuchen eines Videos suchen Sie nach einer einzelnen Ausgabedarstellung. Die Ergebnisse geben die ursprüngliche (nur &amp;ast;.mp4) und die kodierte Ausgabedarstellung zurück.
->* Bei der Suche nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur, wenn Sie der Suche ein Keyword hinzugefügt haben. Wenn Sie kein Keyword hinzugefügt haben, durchsucht AEM nicht die Unterordner.
+>* Bei der Suche nach einem adaptiven Videoset durchsuchen Sie den Ordner und alle Unterordner, jedoch nur, wenn Sie der Suche ein Keyword hinzugefügt haben. Wenn Sie keinen Suchbegriff hinzugefügt haben, durchsucht AEM die Unterordner nicht.
 >
 
 

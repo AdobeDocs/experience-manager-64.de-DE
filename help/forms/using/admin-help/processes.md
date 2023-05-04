@@ -1,7 +1,7 @@
 ---
-title: Prozesse verwalten
+title: Verwalten von Prozessen
 seo-title: Managing Processes
-description: Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von einem Benutzer initiiert oder automatisch gestartet wurden. Erfahren Sie mehr über die Verwaltung der Prozesse.
+description: Auf der Seite "Prozessliste"werden die Prozesse angezeigt, die von einem Benutzer initiiert oder automatisch gestartet wurden. Erfahren Sie mehr über die Verwaltung der Prozesse.
 seo-description: The Process List page shows the processes that a user has initiated or that were started automatically. Learn more about managing the processes.
 uuid: 4cd17400-681a-4e40-996c-7dda57ce449a
 contentOwner: admin
@@ -10,18 +10,22 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
 exl-id: 322cc7c2-0f24-4ed9-9af2-61b036324f46
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 100%
+source-wordcount: '1667'
+ht-degree: 40%
 
 ---
 
-# Prozesse verwalten {#managing-processes}
+# Verwalten von Prozessen {#managing-processes}
 
-Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von einem Benutzer initiiert oder automatisch gestartet wurden.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. In der Prozessliste werden die folgenden Informationen angezeigt:
+Auf der Seite &quot;Prozessliste&quot;werden die Prozesse angezeigt, die von einem Benutzer initiiert oder automatisch gestartet wurden.
+
+1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. Die Prozessliste enthält die folgenden Informationen:
 
    **Prozessname - Version:** Der Name des Prozesses, wie in Workbench definiert.
 
@@ -31,11 +35,11 @@ Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von einem Be
 
    **Erstellungsdatum:** Datum und Uhrzeit der Bereitstellung des Prozesses.
 
-1. Klicken Sie auf einen Prozessnamen, um dessen Prozessinstanzen auf der Seite „Prozessinstanz“ anzuzeigen.
+1. Klicken Sie auf einen Prozessnamen, um seine Prozessinstanzen auf der Seite &quot;Prozessinstanz&quot;anzuzeigen.
 
-## Mit Prozessinstanzen arbeiten {#working-with-process-instances}
+## Arbeiten mit Prozessinstanzen {#working-with-process-instances}
 
-Wenn Sie über die Seite „Prozessliste“ auf die Seite „Prozessinstanz“ zugreifen, werden alle Prozessinstanzen des ausgewählten Prozesses aufgelistet. Wenn Sie nach einem Suchvorgang auf die Seite „Prozessinstanz“ zugreifen, werden nur die gefundenen Prozessinstanzen aufgeführt.
+Wenn Sie über die Seite &quot;Prozessliste&quot;auf die Seite &quot;Prozessinstanz&quot;zugreifen, werden alle Prozessinstanzen des ausgewählten Prozesses aufgelistet. Wenn Sie nach der Durchführung einer Suche auf die Seite &quot;Prozessinstanz&quot;zugreifen, werden nur die gefundenen Prozessinstanzen aufgelistet.
 
 Für jede Prozessinstanz werden in der Liste die folgenden Informationen angezeigt:
 
@@ -49,15 +53,15 @@ Für jede Prozessinstanz werden in der Liste die folgenden Informationen angezei
 
 **Aktualisierungsdatum:** Datum und Uhrzeit der letzten Änderung des Status der Prozessinstanz.
 
-Sie können folgende Aufgaben auf der Seite „Prozessinstanz“ ausführen:
+Auf der Seite &quot;Prozessinstanz&quot;können Sie die folgenden Aufgaben ausführen:
 
-* Eine Prozessinstanz auswählen, um Detailinformationen dazu anzuzeigen, wie z. B. Vorgänge und Teilprozesse. Wenn Sie eine Prozessinstanz auswählen, wird die Seite „Prozessinstanzdetail“ angezeigt.
-* Prozessinstanzen aussetzen, deren Aussetzung aufheben oder beenden.
-* Nach einer Prozessinstanz suchen. Klicken Sie zum Starten einer Suche auf „Suchen“.
+* Wählen Sie eine Prozessinstanz aus, um Details wie Vorgänge und Teilprozesse anzuzeigen. Wenn Sie eine Prozessinstanz auswählen, wird die Seite &quot;Prozessinstanzdetails&quot;angezeigt.
+* Prozessinstanzen aussetzen, aussetzen oder beenden.
+* Suchen Sie nach einer Prozessinstanz. Um eine Suche zu starten, klicken Sie auf &quot;Suchen&quot;.
 
 ### Informationen zum Status von Prozessinstanzen {#about-process-instance-statuses}
 
-Eine Prozessinstanz, einschließlich ihrer Teilprozesse, kann folgende Status haben:
+Eine Prozessinstanz, einschließlich Teilprozessen, kann die folgenden Status haben:
 
 **ABGESCHLOSSEN:** Alle Zweige und Vorgänge in der Prozessinstanz wurden abgeschlossen. Dies ist der endgültige Status einer Prozessinstanz.
 
@@ -79,43 +83,43 @@ Eine Prozessinstanz, einschließlich ihrer Teilprozesse, kann folgende Status ha
 
 >[!NOTE]
 >
->Wenn eine Anforderung zum Wechseln des Status einer Prozessinstanz gesendet wird (z. B. Aussetzen oder Beenden), wird die Anforderung in die Befehlswarteschlange für den Arbeitsablauf für Formulare eingereiht. In Abhängigkeit von der Größe der Warteschlange und der allgemeinen Systemverarbeitungsgeschwindigkeit ändert sich der angezeigte Status möglicherweise erst, nachdem die Seite mehrmals neu geladen wurde.
+>Wenn eine Anforderung zum Ändern des Status einer Prozessinstanz gestellt wird (z. B. zum Aussetzen oder Beenden), wird die Anforderung in die Befehlswarteschlange für den Arbeitsablauf für Formulare eingereiht. Je nach Größe der Warteschlange und der Gesamtverarbeitungsgeschwindigkeit ändert sich der angezeigte Status möglicherweise erst, wenn die Seite mindestens einmal neu geladen wurde.
 
-### Prozessinstanzen aussetzen oder die Aussetzung aufheben {#suspend-or-unsuspend-process-instances}
+### Aussetzen oder Aufheben der Aussetzung von Prozessinstanzen {#suspend-or-unsuspend-process-instances}
 
-Wenn Sie ein Problem beheben müssen oder wissen, dass es bei einem späteren Schritt in einer Prozessinstanz aufgrund externer Bedingungen zu Problemen kommt, können Sie die Prozessinstanz vorübergehend aussetzen.
+Wenn Sie ein Problem beheben müssen oder wissen, dass eine Prozessinstanz aufgrund einer externen Bedingung in einem späteren Schritt auf ein Problem stoßen wird, können Sie die Prozessinstanz vorübergehend aussetzen.
 
 Sie können Prozessinstanzen mit dem Status WIRD AUSGEFÜHRT aussetzen.
 
-Nach dem Aussetzen einer Prozessinstanz wechselt deren Status zuerst auf WIRD AUSGESETZT, dann auf AUSGESETZT, und der Prozess hält beim aktuellen Vorgang an. Die Prozessinstanz bleibt in diesem Status, bis dieser auf AUSSETZEN WIRD AUFGEHOBEN geändert wird.
+Nachdem Sie eine Prozessinstanz ausgesetzt haben, ändert sich ihr Status in AUSSETZEN, WIRD AUSGESETZT und der Prozess wird beim aktuellen Vorgang angehalten. Die Prozessinstanz bleibt in diesem Status, bis der Status in UNSUSPENDED geändert wird.
 
-Nur Prozessinstanzen mit dem Status AUSGESETZT können auf AUSSETZEN WIRD AUFGEHOBEN geändert werden.
+Nur Prozessinstanzen mit dem Status AUSGESETZT können in AUSGESETZT geändert werden.
 
-Wenn Sie die Aussetzung einer Prozessinstanz aufheben, wechselt deren Status auf WIRD AUSGEFÜHRT und der Prozess fährt mit dem Vorgang fort, bei dem er ausgesetzt wurde.
+Wenn Sie das Aussetzen einer Prozessinstanz aufheben, ändert sich ihr Status in WIRD AUSGEFÜHRT und der Vorgang wird dort fortgesetzt, wo er ausgesetzt wurde.
 
-Wenn Sie eine Prozessinstanz aussetzen, die andere (untergeordnete) Prozesse mithilfe ihres jeweiligen Aufrufvorgangs aufgerufen hat, werden die untergeordneten Prozesse ebenfalls ausgesetzt.
+Wenn Sie eine Prozessinstanz aussetzen, die andere Prozesse (untergeordnete Prozesse) mithilfe ihres Aufrufvorgangs aufgerufen hat, werden die untergeordneten Prozesse ebenfalls ausgesetzt.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
-1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Aussetzen“ oder „Aussetzen aufheben“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Wählen Sie auf der Seite &quot;Prozessinstanz&quot;den Prozess aus und klicken Sie auf Aussetzen oder Aussetzen aufheben .
 
 ### Prozessinstanzen beenden {#terminate-a-process-instances}
 
-Wenn ein Vorgang einer Prozessinstanz angehalten hat oder ein anderer Fehlerzustand eingetreten ist, bzw. wenn Sie die Beendigung der Ausführung einer Prozessinstanz erzwingen müssen, können Sie die Prozessinstanz beenden.
+Wenn ein Vorgang einer Prozessinstanz angehalten wurde oder eine andere Fehlerbedingung aufgetreten ist oder Sie die Ausführung einer Prozessinstanz erzwingen müssen, können Sie die Prozessinstanz beenden.
 
-Sie können Prozessinstanzen mit beliebigem Status beenden.
+Sie können Prozessinstanzen mit einem beliebigen Status beenden.
 
-Wenn Sie eine Prozessinstanz beenden, wechselt deren Status zuerst auf WIRD BEENDET, dann auf BEENDET, und der Prozess wird an der aktuellen Position beendet. Es werden keine weiteren Vorgänge ausgeführt und alle zugeordneten Vorgänge und Aufgaben werden beendet.
+Wenn Sie eine Prozessinstanz beenden, ändert sich ihr Status in BEENDET, dann BEENDET und der Prozess wird beim aktuellen Vorgang beendet. Es werden keine weiteren Vorgänge ausgeführt und alle damit verbundenen Vorgänge und Aufgaben werden beendet.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
-1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Beenden“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Wählen Sie auf der Seite &quot;Prozessinstanz&quot;den Prozess aus und klicken Sie auf &quot;Beenden&quot;.
 
-## Mit Prozessinstanzdetails arbeiten {#working-with-process-instance-details}
+## Arbeiten mit Prozessinstanzdetails {#working-with-process-instance-details}
 
-Auf der Seite „Prozessinstanzdetail“ wird der Verlauf einer Prozessinstanz angezeigt.
+Auf der Seite &quot;Prozessinstanzdetail&quot;wird der Verlauf einer Prozessinstanz angezeigt.
 
-Im Bereich „Zusammenfassung“ werden grundlegende Informationen zur Prozessinstanz angezeigt.
+Im Bereich &quot;Zusammenfassung&quot;werden grundlegende Informationen zur Prozessinstanz angezeigt.
 
-Auf der Registerkarte „Vorgänge“ werden die Vorgänge für die Prozessinstanz beginnend mit dem ersten nacheinander in der Reihenfolge angezeigt, in der sie abgeschlossen wurden. Die folgenden Informationen werden angezeigt:
+Auf der Registerkarte Vorgänge wird jeder Vorgang für die Prozessinstanz in der Reihenfolge angezeigt, in der er von Anfang bis Ende abgeschlossen wurde und die folgenden Informationen enthält:
 
 **Vorgangsnamen:** Der Name des Vorgangs, wie in Workbench definiert.
 
@@ -127,7 +131,7 @@ Auf der Registerkarte „Vorgänge“ werden die Vorgänge für die Prozessinsta
 
 **Abschlussdatum:** Datum und Uhrzeit des Abschlusses des Vorgangs.
 
-Ein Teilprozess ist eine Prozessinstanz, die von einem anderen Prozess gestartet und unabhängig von diesem anderen Prozess ausgeführt wird. Teilprozesse werden nur angezeigt, wenn sie als Teil des Prozesses in Workbench angelegt wurden. Auf der Registerkarte „Teilprozesse“ wird jeder Teilprozess mit den folgenden Informationen angezeigt:
+Ein Teilprozess ist eine Prozessinstanz, die von einem anderen Prozess gestartet und unabhängig von diesem anderen Prozess ausgeführt wird. Teilprozesse werden nur angezeigt, wenn sie im Rahmen des Prozesses in Workbench entworfen wurden. Auf der Registerkarte Teilprozesse wird jeder Teilprozess mit den folgenden Informationen angezeigt:
 
 **Prozess-ID:** Diese positive Ganzzahl wird vom Formular-Workflow zugewiesen, wenn der Prozess instanziiert (d. h. von einem Benutzer oder einem automatisierten Schritt initiiert) wird. Anhand dieser ID können Sie die Prozessinstanz während ihres gesamten Lebenszyklus verfolgen.
 
@@ -139,15 +143,15 @@ Ein Teilprozess ist eine Prozessinstanz, die von einem anderen Prozess gestartet
 
 **Aktualisierungsdatum:** Datum und Uhrzeit, zu der der Status des Unterprozesses zuletzt geändert wurde.
 
-Sie können folgende Aufgaben auf der Seite „Prozessinstanzdetail“ ausführen:
+Auf der Seite &quot;Prozessinstanzdetail&quot;können Sie die folgenden Aufgaben ausführen:
 
-* Einen Vorgang auswählen, um Details dazu anzuzeigen. Wenn Sie einen Vorgang auswählen, wird die Seite „Vorgangsdetails“ angezeigt.
-* Einen Teilprozess auswählen, um Details dazu anzuzeigen. Wenn Sie einen Teilprozess auswählen, wird die Seite „Prozessinstanzdetail“ angezeigt.
-* Vorgänge oder Teilprozesse in Abhängigkeit von deren Status beenden oder wiederholen
+* Wählen Sie einen Vorgang aus, um Details dazu anzuzeigen. Wenn Sie einen Vorgang auswählen, wird die Seite &quot;Vorgangsdetails&quot;angezeigt.
+* Wählen Sie einen Teilprozess aus, um Details dazu anzuzeigen. Wenn Sie einen Teilprozess auswählen, wird die Seite &quot;Prozessinstanzdetail&quot;angezeigt.
+* Vorgänge oder Teilprozesse je nach Status beenden oder wiederholen.
 
-### Informationen zum Vorgangsstatus {#about-operation-statuses}
+### Über den Vorgangsstatus {#about-operation-statuses}
 
-Ein Vorgang (ein Schritt in einem Prozess) kann folgende Status haben:
+Ein Vorgang (ein Schritt in einem Prozess) kann die folgenden Status haben:
 
 **ABGESCHLOSSEN:** Der Vorgang wurde abgeschlossen.
 
@@ -159,36 +163,36 @@ Ein Vorgang (ein Schritt in einem Prozess) kann folgende Status haben:
 
 ### Vorgänge oder Teilprozesse beenden {#terminate-operations-or-subprocesses}
 
-Wenn ein Vorgang oder Teilprozess angehalten hat oder ein anderer Fehlerzustand eingetreten ist bzw. wenn Sie die Beendigung der Ausführung eines Vorgangs oder Teilprozesses erzwingen müssen, können Sie diesen beenden.
+Wenn ein Vorgang oder Teilprozess angehalten wurde oder eine andere Fehlerbedingung aufgetreten ist oder Sie die Ausführung eines Vorgangs oder Teilprozesses erzwingen müssen, können Sie ihn beenden.
 
-Sie können Vorgänge mit dem Status WIRD AUSGEFÜHRT beenden.
+Sie können einen Vorgang beenden, der AUSGEFÜHRT wird.
 
-Wenn Sie einen Vorgang beenden, wechselt dessen Status auf BEENDET. Der Vorgang wird nicht abgeschlossen und die Ausführung der Prozessinstanz wird beendet.
+Wenn Sie einen Vorgang beenden, ändert sich sein Status in BEENDET. Der Vorgang wird nicht abgeschlossen und die Ausführung der Prozessinstanz wird beendet.
 
-Sie können einen Teilprozess mit beliebigem Status beenden.
+Sie können einen Teilprozess mit einem beliebigen Status beenden.
 
-Wenn Sie einen Teilprozess beenden, wechselt dessen Status zuerst auf WIRD BEENDET, dann auf BEENDET, und die Prozessinstanz wird bei den aktuellen Vorgängen beendet. Es werden keine weiteren Vorgänge im Teilprozess ausgeführt, obwohl die übergeordnete Prozessinstanz weiterhin ausgeführt wird.
+Wenn Sie einen Teilprozess beenden, wechselt dessen Status zu BEENDEN, dann BEENDET, und die Prozessinstanz stoppt bei den aktuellen Vorgängen. Im Teilprozess werden keine weiteren Vorgänge ausgeführt, obwohl die übergeordnete Prozessinstanz weiter ausgeführt wird.
 
-Sie können keine Prozesse mit Knotenelementen im Prozessdiagramm beenden. Wenn Sie versuchen, diese Prozesstypen zu beenden, sind die Vorgänge innerhalb der Knotenelemente nicht betroffen. Um Vorgänge zu beenden, die sich in einem Knotenelement befinden, müssen Sie diese direkt beenden.
+Sie können Prozesse mit Gateway-Elementen im Prozessdiagramm nicht beenden. Wenn Sie versuchen, diese Prozesstypen zu beenden, sind die Vorgänge innerhalb der Gateway-Elemente nicht betroffen. Um Vorgänge zu beenden, die sich in einem Gateway-Element befinden, müssen Sie die Vorgänge direkt beenden.
 
-1. Klicken Sie auf der Seite „Prozessinstanzdetail“ auf die Registerkarte „Vorgänge“ oder „Teilprozesse“.
-1. Wählen Sie den zu beendenden Vorgang oder Teilprozess aus und klicken Sie auf „Beenden“.
+1. Klicken Sie auf der Seite &quot;Prozessinstanzdetails&quot;auf die Registerkarte Vorgänge oder die Registerkarte Teilprozesse .
+1. Wählen Sie den Vorgang oder Teilprozess aus und klicken Sie auf Beenden.
 
-### Einen Vorgang wiederholen {#retry-an-operation}
+### Vorgang wiederholen {#retry-an-operation}
 
-Sie können Vorgänge mit dem Status ANGEHALTEN wiederholen.
+Sie können den Vorgang mit dem Status &quot;STALLED&quot;wiederholen.
 
-Wenn Sie einen Vorgang wiederholen, wird eine Anforderung zum erneuten Starten des Vorgangs an den Arbeitsablauf für Formulare gesendet. Ist die Anforderung erfolgreich, wechselt der Status auf WIRD AUSGEFÜHRT. Wenn der Vorgang nicht wiederholt werden kann, bleibt er ANGEHALTEN und Sie müssen ihn möglicherweise beenden.
+Wenn Sie einen Vorgang wiederholen, wird eine Anforderung zum Neustart des Vorgangs an den Forms-Workflow gesendet. Wenn die Anfrage erfolgreich war, wechselt der Status zu WIRD AUSGEFÜHRT. Wenn der Vorgang nicht neu gestartet werden kann, bleibt er ANGEHALTEN und Sie müssen ihn möglicherweise beenden.
 
-1. Klicken Sie auf der Seite „Prozessinstanzdetail“ auf die Registerkarte „Vorgänge“.
-1. Wählen Sie den Vorgang aus und klicken Sie auf „Erneut versuchen“.
+1. Klicken Sie auf der Seite &quot;Details der Prozessinstanz&quot;auf die Registerkarte Vorgänge .
+1. Wählen Sie den Vorgang aus und klicken Sie auf &quot;Wiederholen&quot;.
 
-## Mit Vorgängen arbeiten {#working-with-operations}
+## Arbeiten mit Vorgängen {#working-with-operations}
 
-Auf der Seite „Vorgangsdetails“ wird die Zusammenfassung eines in einem Prozess enthaltenen Vorgangs mit seinen aktuellen Benutzerzuweisungen angezeigt.
+Auf der Seite &quot;Vorgangsdetails&quot;wird eine Zusammenfassung eines Vorgangs in einem Prozess und der aktuellen Benutzerzuweisungen angezeigt.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
-1. Durch Klicken auf den Namen eines Prozesses können Sie die dazugehörigen Prozessinstanzen anzeigen. Klicken Sie auf eine Prozessinstanz, um die Seite „Prozessinstanzdetails“ anzuzeigen, und wählen Sie einen Vorgang aus, um die Seite „Vorgangsdetails“ anzuzeigen.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie auf einen Prozessnamen, um seine Prozessinstanzen anzuzeigen. Klicken Sie auf eine Prozessinstanz, um die Seite &quot;Prozessinstanzdetails&quot;anzuzeigen, und wählen Sie dann einen Vorgang aus, um die Seite &quot;Vorgangsdetails&quot;anzuzeigen.
 
    Für jede Aufgabe werden in der Liste die folgenden Informationen angezeigt:
 

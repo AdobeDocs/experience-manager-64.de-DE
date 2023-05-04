@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 exl-id: 92c95cb5-fdbf-4200-89a8-10c768e4bc25
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 3%
+source-wordcount: '896'
+ht-degree: 4%
 
 ---
 
 # Ersteinrichtung für Aktivierung {#initial-setup-for-enablement}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Starten von Autoren- und Veröffentlichungsinstanzen {#start-author-and-publish-instances}
 
@@ -210,8 +214,8 @@ Scrollen Sie nach unten zu `Add User to Groups`:
 
 * Geben Sie &quot;C&quot;zur Suche ein.
 
-   * Auswählen `Community Administrators`
-   * Auswählen `Community Enablement Managers`
+   * Klicken Sie auf `Community Administrators`
+   * Klicken Sie auf `Community Enablement Managers`
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
 

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: de8d0e6d-827b-45fe-a538-d3fe1dec8427
 exl-id: 8cff0b7b-c120-462f-8fce-13822073eabb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '478'
 ht-degree: 4%
 
 ---
 
 # Blog-Grundlagen {#blog-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Ab AEM 6.1 Communities ist ein Blog eine Community-Aktivität. Blogartikel werden jetzt aus der Veröffentlichungsumgebung gepostet, wo zuvor Blogartikel nur in der Autorenumgebung erstellt und veröffentlicht werden konnten.
 
@@ -114,7 +118,7 @@ Siehe [Primärer Herausgeber](deploy-communities.md#primary-publisher) für weit
 
 Die AEM Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie unter
 
-* [Schutz vor Cross-Site Scripting (XSS)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect gegen Cross-Site Scripting (XSS)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 Ab AEM 6.2 sind die zuvor manuell vorzunehmenden Änderungen in der standardmäßigen AntiSamy-Konfigurationsdatei enthalten.
 

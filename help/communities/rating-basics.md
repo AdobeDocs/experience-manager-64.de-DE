@@ -10,20 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 exl-id: f722051c-9512-4420-b12e-cb20aa6759f7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 5%
+source-wordcount: '315'
+ht-degree: 4%
 
 ---
 
 # Bewertungsgrundlagen {#rating-essentials}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Die Bewertungskomponente [tally](tally.md) -Unterklasse, ermöglicht es angemeldeten Community-Mitgliedern, eine Funktion auf der Website zu bewerten.
 
 Das Platzieren mehrerer Instanzen einer Abstimmungskomponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft.
 
-Das anonyme Posten von Bewertungen wird nicht unterstützt. Besucher der Site müssen sich nur einmal registrieren und sich anmelden, um an einer Bewertung teilnehmen zu können. Der angemeldete Besucher (Mitglied) kann seine Bewertung jederzeit ändern.
+Das anonyme Posten einer Bewertung wird nicht unterstützt. Besucher der Site müssen sich nur einmal registrieren und sich anmelden, um an einer Bewertung teilnehmen zu können. Der angemeldete Besucher (Mitglied) kann seine Bewertung jederzeit ändern.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 

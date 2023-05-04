@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 role: Developer
 exl-id: c60ef25a-26a0-4421-b635-ced54baa324d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 100%
+source-wordcount: '290'
+ht-degree: 90%
 
 ---
 
 # Formulardatenintegrationsdienst: Schnellstart (SOAP) mit der Java-API {#form-data-integration-service-javaapi-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die folgenden Lernprogramme sind für den Form Data Integration-Service verfügbar.
 

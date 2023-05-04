@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: de8ba694-0b68-4442-bd50-5ba6d845749c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4657'
 ht-degree: 97%
 
 ---
 
 # Aufrufen von AEM Forms mithilfe von Remoting {#invoking-aem-forms-using-remoting}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In Workbench erstellte Prozesse können mit Remoting aufgerufen werden. Das heißt, Sie können einen AEM Forms-Prozess aus einem mit Flex erstellten Client-Programm aufrufen. Diese Funktion basiert auf Data Services.
 

@@ -10,18 +10,22 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
 exl-id: 8da27ef5-bb61-4246-8a13-96a60188ebbb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 100%
+source-wordcount: '320'
+ht-degree: 82%
 
 ---
 
 # AEM Repo Tool{#aem-repo-tool}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Das AEM Repo Tool ist eine einfache Lösung, mit der Sie JCR-Inhalte ähnlich wie bei FTP über die Befehlszeile zwischen Ihrem lokalen Dateisystem und dem AEM-Server übertragen können. Das AEM Repo Tool ähnelt dem [Jackrabbit FileVault-Tool](/help/sites-developing/ht-vlttool.md), ist aber schneller, hat minimale Abhängigkeiten und besteht aus einem einfachen Bash-Skript.
 
-Dieses Tool vereinfacht die Dateiübertragung für Entwickler und lässt sich auch in IntelliJ und Eclipse integrieren, um die Entwicklung noch effizienter zu gestalten.
+Dieses Tool vereinfacht die Übertragung von Dateien für Entwickler und kann auch in IntelliJ und Eclipse integriert werden, um die Entwicklung noch effizienter zu gestalten.
 
 ## Übersicht {#overview}
 
@@ -39,7 +43,7 @@ Das [AEM Repo Tool ist unter diesem Link auf GitHub verfügbar](https://github.c
 
 Wenn Sie den Quell-Code des AEM Repo Tools herunterladen möchten, sehen Sie sich das unten verlinkte GitHub-Projekt an.
 
-CODE AUF GITHUB
+CODE FÜR GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 

@@ -1,26 +1,30 @@
 ---
 title: GQL-Volltextsuche
-description: Erkunden Sie die GQL-Volltextsuchfunktion in [!DNL Experience Manager] Assets. Mit dieser Funktion können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung und Erstellername nach Assets suchen.
+description: Erkunden Sie die GQL-Volltextsuchfunktion in [!DNL Experience Manager] Assets. Verwenden Sie sie, um basierend auf bestimmten Metadaten, wie Titel, Beschreibung und Autorenname, nach Assets zu suchen.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 72%
+source-wordcount: '909'
+ht-degree: 37%
 
 ---
 
 # GQL-Volltextsuche {#gql-full-text-search}
 
-Erkunden Sie die GQL-Volltextsuchfunktion in [!DNL Experience Manager] Assets. Mit dieser Funktion können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung und Erstellername nach Assets suchen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Mit der Funktion zur GQL-Volltextsuche können Sie basierend auf speziellen Metadaten, wie Titel, Beschreibung, Ersteller usw., nach Assets suchen.
+Erkunden Sie die GQL-Volltextsuchfunktion in [!DNL Experience Manager] Assets. Verwenden Sie sie, um basierend auf bestimmten Metadaten, wie Titel, Beschreibung und Autorenname, nach Assets zu suchen.
+
+Mit der Funktion für die GQL-Volltextsuche können Sie basierend auf bestimmten Metadaten (z. B. Titel, Beschreibung, Autor usw.) nach Assets suchen.
 
 Um basierend auf Metadaten (z. B. dem Titel) nach einem Asset zu suchen, geben Sie das Metadaten-Keyword gefolgt von dessen Wert im Suchbereich an. Die Volltextsuchfunktion GQL ruft nur die Assets ab, deren Metadaten genau mit dem eingegebenen Wert übereinstimmen.
 
-Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target“ zu suchen:
+Um beispielsweise nach Assets mit dem Titel &quot;Target&quot;zu suchen, führen Sie die folgenden Schritte aus:
 
 ## Suchen nach Assets {#searching-assets}
 
@@ -28,13 +32,13 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
    ![](assets/do-not-localize/chlimage_1.png)
 
-1. Drücken Sie die Eingabetaste, während sich der Cursor im OmniSearch-Feld befindet.
+1. Betätigen Sie bei in das OmniSearch-Feld gesetztem Cursor die Eingabetaste.
 1. Klicken oder tippen Sie auf das GlobalNav-Symbol, um die **[!UICONTROL Filter]** Bereich.
-1. Geben Sie im OmniSearch-Feld den Wert „Ziel“ an. Um Ihre Suche auf einen bestimmten Ordner zu beschränken, klicken oder tippen Sie auf das Symbol „Durchsuchen“ im Bedienfeld „Filter“ und wählen Sie den Ordner aus. In diesem Fall wird die Übereinstimmung nur innerhalb des Ordners und in den untergeordneten Ordner gesucht.
+1. Geben Sie im Omni-Suchfeld den Wert &quot;Target&quot;an. Um die Suche auf einen bestimmten Ordner zu beschränken, klicken oder tippen Sie im Bedienfeld Filter auf das Symbol Durchsuchen und wählen Sie den Ordner aus. In diesem Fall wird die Übereinstimmung nur innerhalb des Ordners und der Unterordner darunter gesucht.
 
    >[!NOTE]
    >
-   >Sie können auch eine Volltextsuche für den Ordner durchführen. In diesem Fall müssen Sie einen nicht leeren Suchbegriff für die Volltextsuche angeben.
+   >Sie können auch eine Volltextsuche nach Ordnern durchführen. In diesem Fall müssen Sie einen nicht leeren Volltextsuchbegriff angeben.
 
    ![gql_search](assets/gql_search.png)
 
@@ -42,15 +46,15 @@ Beispiel: Führen Sie diese Schritte aus, um nach Assets mit dem Titel „Target
 
 Mit der Funktion für die GQL-Volltextsuche können Sie Assets anhand der folgenden Elemente durchsuchen:
 
-* Komplexe Abfrage, bei der die für mehrere Metadatenfelder (Eigenschaften) angegebenen Werte über einen Und-Vorgang kombiniert werden
+* Komplexe Abfrage, die durch Kombinieren der Werte, die Sie für mehrere Metadatenfelder (Eigenschaften) angeben, über einen Und-Vorgang erstellt wurde
 * Mehrere Werte für ein einzelnes Metadatenfeld
-* Übereinstimmende Teilzeichenfolgen
+* Teilzeichenfolge stimmt überein mit
 
 Mit der Volltextsuchfunktion GQL können Sie anhand der folgenden Metadateneigenschaften nach Assets suchen. Bei den Namen der Eigenschaften (z. B. Autor, Titel usw.) und Werten wird zwischen Groß- und Kleinschreibung unterschieden.
 
 >[!NOTE]
 >
->Die GQL-Volltextsuche funktioniert nur mit Volltexteigenschaften.
+>Die GQL-Volltextsuche funktioniert nur für Volltextprädikate.
 
 | Eigenschaft | Suchformat (Facettenwert) |
 |---|---|
@@ -59,7 +63,7 @@ Mit der Volltextsuchfunktion GQL können Sie anhand der folgenden Metadateneigen
 | [!UICONTROL Mitarbeiter] | contributor:John |
 | [!UICONTROL Speicherort] | location:India |
 | [!UICONTROL Beschreibung] | description:&quot;Sample Image&quot; |
-| [!UICONTROL Erstellungswerkzeug] | creatortool:„Adobe Photoshop 7.0“ |
+| [!UICONTROL Erstellungswerkzeug] | creatortool:&quot;Adobe Photoshop 7.0&quot; |
 | [!UICONTROL Urheberrechtsbesitzer] | copyrightowner:&quot;Adobe Systems&quot; |
 | [!UICONTROL Mitarbeiter] | contributor:John |
 | [!UICONTROL Nutzungsbedingungen] | usageterms:„CopyRights Reserved“ |
@@ -79,17 +83,17 @@ Mit der Volltextsuchfunktion GQL können Sie anhand der folgenden Metadateneigen
 
 Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen:
 
-* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):
+* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):  
 
 tiltle:&quot;John Doe&quot; creatortool : Adobe&amp;ast;
 
 * So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds)
 
-title:„Scott Reynolds“
+title:&quot;Scott Reynolds&quot;
 
 * So zeigen Sie alle Assets mit mehreren Werten für eine einzelne Eigenschaft an (wie: title=Scott Reynolds oder John Doe)
 
-title:„Scott Reynolds“ OR „John Doe“
+title:&quot;Scott Reynolds&quot; ODER &quot;John Doe&quot;
 
 * So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge beginnen (wie: title ist Scott Reynolds)
 
@@ -109,22 +113,22 @@ title:&quot;Meeting&quot;;
 
 >[!NOTE]
 >
->Die Eigenschaften „path“, „limit“, „size“ und „orderby“ können nicht über ODER mit einer anderen Eigenschaft verknüpft werden.
+>Die Eigenschaften path, limit, size und orderby können nicht mit einer anderen Eigenschaft ORed werden.
 >
 >Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbeschriftung im Eigenschafteneditor in Kleinbuchstaben und ohne Leerzeichen.
 
 >[!NOTE]
 >
->Wenn Sie eine JCR-Abfrage schreiben, um nur Unter-Assets zu suchen, werden die referenzierten Assets ebenfalls zusammen mit den übereinstimmenden Unter-Assets angezeigt.
+>Wenn Sie eine JCR-Abfrage schreiben, um nur nach Unter-Assets zu suchen, werden auch die übereinstimmenden referenzierten Assets zusammen mit den übereinstimmenden Unter-Assets angezeigt.
 
 Die Volltextsuche unterstützt auch Operatoren wie -, ^ usw. Um diese Buchstaben als alphabetische Zeichenfolgen zu suchen, setzen Sie den Suchausdruck in doppelte Anführungszeichen. Verwenden Sie z. B. „Notebook - Schönheit“ statt Notebook - Schönheit.
 
-## Optimieren der Suche {#boosting-search}
+## Verstärken der Suche {#boosting-search}
 
 Sie können die Relevanz von Keywords für bestimmte Assets verbessern, um die auf Keywords basierenden Suchen zu optimieren. D. h. die Bilder, für die Sie bestimmte Keywords festlegen, erscheinen bei der Suche nach diesen Keywords oben in den Suchergebnissen.
 
-1. Öffnen Sie in der Assets-Benutzeroberfläche die Eigenschaftenseite für das Asset, für das Sie einen Suchbegriff festlegen möchten.
-1. Wechseln Sie zur Registerkarte **[!UICONTROL Erweitert]** und klicken/tippen Sie auf die Option **[!UICONTROL Hinzufügen]** unter **[!UICONTROL Für Suchbegriffe erhöhen]**.
+1. Öffnen Sie in der Assets-Benutzeroberfläche die Eigenschaftenseite für das Asset, für das Sie einen Suchbegriff bewerben möchten.
+1. Wechseln Sie zu **[!UICONTROL Erweitert]** Registerkarte und klicken/tippen **[!UICONTROL Hinzufügen]** under **[!UICONTROL Für Suchbegriffe erhöhen]**.
 
    ![lift_for_search](assets/elevate_for_search.png)
 
@@ -133,4 +137,4 @@ Sie können die Relevanz von Keywords für bestimmte Assets verbessern, um die a
    ![add_search_word](assets/add_search_word.png)
 
 1. Klicken/tippen Sie auf **[!UICONTROL Speichern und schließen]**.
-1. Suchen Sie mithilfe des OmniSearch-Feldes nach dem Suchbegriff. Das Asset, für das Sie dieses Schlüsselwort festgelegt haben, befindet sich unter den oberen Suchergebnissen.
+1. Suchen Sie mithilfe des OmniSearch-Felds nach dem Suchbegriff. Das Asset, für das Sie diesen Suchbegriff beworben haben, wird unter den Top-Suchergebnissen angezeigt.

@@ -10,18 +10,22 @@ topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
 feature: Correspondence Management
 exl-id: a6206ae1-b71b-4066-b7a0-ce39a60d6dd0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 59%
 
 ---
 
 # Benutzerdefinierte Sonderzeichen in Correspondence Management {#custom-special-characters-in-correspondence-management}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Übersicht {#overview}
 
-Correspondence Management umfasst einen integrierten Standard-Support für 210 Sonderzeichen, die Sie mühelos in Briefen einfügen können.
+Correspondence Management verfügt über integrierte Standardunterstützung für 210 Sonderzeichen, die Sie problemlos in Briefe einfügen können.
 
 Sie können beispielsweise die folgenden Sonderzeichen einfügen:
 
@@ -36,9 +40,9 @@ Sie können Sonderzeichen in Briefe einfügen:
 
 ![specialcharactersinlinemodul](assets/specialcharactersinlinemodule.png)
 
-Der Administrator kann Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen. In diesem Artikel finden Sie Anweisungen dazu, wie Sie Unterstützung für zusätzliche benutzerdefinierte Sonderzeichen hinzufügen können.
+Der Administrator kann Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen. Dieser Artikel enthält Anweisungen dazu, wie Sie Unterstützung für zusätzliche benutzerdefinierte Sonderzeichen hinzufügen können.
 
-## Hinzufügen oder Ändern von Unterstützung für benutzerdefinierte Sonderzeichen in Correspondence Management {#creatingfolderstructure}
+## Unterstützung für benutzerdefinierte Sonderzeichen in Correspondence Management hinzufügen oder ändern {#creatingfolderstructure}
 
 Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefinierte Sonderzeichen hinzuzufügen:
 
@@ -59,18 +63,18 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
 
       >[!NOTE]
       >
-      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
+      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
       >
-      >* Ihre Instanz aktualisieren
-      >* Ein Hotfix anwenden
-      >* Ein Feature Pack installieren
+      >* Aktualisierung Ihrer Instanz
+      >* Anwenden eines Hotfixes
+      >* Installieren eines Feature Packs
 
 
    1. Klicken Sie auf **OK** und dann auf **Alle speichern**. Der Ordner „specialcharacters“ wird in dem angegebenen Pfad erstellt.
 
-      Nach dem Erstellen des Überlagerungsknotens, überprüfen Sie die Knotenstrukturtags. Jeder Knoten, der in /Apps mit der Überlagerung erstellt wurde, sollte dieselbe Klasse und dieselben Eigenschaften haben, wie es in /libs für diesen Knoten definiert ist. Wenn eine Eigenschaft oder ein Tag in der Knotenstruktur unter /Apps fehlt, synchronisieren sie die Tags mit dem entsprechenden Knoten in /libs.
+      Überprüfen Sie nach dem Erstellen der Überlagerung die Knotenstruktur-Tags. Jeder Knoten, der mit der Überlagerung in /apps erstellt wurde, sollte dieselbe Klasse und dieselben Eigenschaften wie in /libs für diesen Knoten haben. Wenn eine Eigenschaft oder ein Tag in der Knotenstruktur unter /apps fehlt, synchronisieren Sie die Tags mit dem entsprechenden Knoten in /libs.
 
-1. Stellen Sie sicher, dass der Knoten **[!UICONTROL textEditorConfig]** folgende Eigenschaften und Werte aufweist:
+1. Stellen Sie sicher, dass **[!UICONTROL textEditorConfig]** -Knoten weist die folgenden Eigenschaften und Werte auf:
 
    | Name | Typ | Wert |
    |---|---|---|
@@ -79,9 +83,9 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
 
 1. Klicken Sie mit der rechten Maustaste auf den Ordner **[!UICONTROL specialcharacters]** unter dem folgenden Pfad und wählen Sie **Erstellen > Untergeordneter Knoten** und klicken Sie dann auf **Alle speichern**:
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;yourchildnode>
 
-1. Aktualisieren Sie den Texteditor\Benutzeroberfläche „Korrespondenz erstellen“. Der Knoten, den Sie hinzugefügt haben, ist der letzte in der Liste der Sonderzeichen in der Benutzeroberfläche.
+1. Aktualisieren Sie die Seite Texteditor/Benutzeroberfläche &quot;Korrespondenz erstellen&quot;. Der Knoten, den Sie hinzugefügt haben, ist der letzte in der Liste der Sonderzeichen in der Benutzeroberfläche.
 1. Klicken Sie auf **Alle speichern**.
 1. Nehmen Sie die Änderungen in den Sonderzeichen wie gewünscht vor:
 
@@ -97,21 +101,21 @@ Führen Sie die folgenden Schritte aus, um Unterstützung für benutzerdefiniert
     <ol> 
      <li>Fügen Sie einen untergeordneten Knoten unter „/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters“ mit obligatorischen Eigenschaften hinzu.</li> 
      <li>Klicken Sie auf Alle speichern</li> 
-     <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.</li> 
+     <li>Aktualisieren Sie den Texteditor/die Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
-   <td>Aktualisieren Sie die Eigenschaften der vorhandenen Sonderzeichen</td> 
+   <td>Eigenschaften vorhandener Sonderzeichen aktualisieren</td> 
    <td> 
     <ol> 
-     <li>Überlagern den Knoten, der aktualisiert werden soll, wie oben erläutert und überprüfen Sie Tags und Klassen.</li> 
-     <li>Ändern Sie alle Werte wie Beschriftung, Wert, endValue und multipleCaption. </li> 
+     <li>Überlagern Sie den Knoten, der wie oben beschrieben aktualisiert werden soll, und überprüfen Sie Tags und Klassen.</li> 
+     <li>Ändern Sie beliebige Werte wie Beschriftung, Wert, endValue und multipleCaption. </li> 
      <li>Klicken Sie auf Alle speichern. </li> 
-     <li>Aktualisieren Sie den Texteditor/Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.</li> 
+     <li>Aktualisieren Sie den Texteditor/die Benutzeroberfläche „Korrespondenz erstellen“, um die Änderungen anzuzeigen.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
-   <td>Ausblenden von Sonderzeichen</td> 
+   <td>Ausblenden eines Sonderzeichens</td> 
    <td> 
     <ol> 
      <li>Überlagern Sie den Knoten, der unter „/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters“ ausgeblendet werden soll</li> 

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 role: Admin
 exl-id: 73c59497-43fe-4e15-afda-e3cf5264696e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 2%
+source-wordcount: '477'
+ht-degree: 3%
 
 ---
 
 # JSRP - JCR Storage Resource Provider {#jsrp-jcr-storage-resource-provider}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Über JSRP {#about-jsrp}
 

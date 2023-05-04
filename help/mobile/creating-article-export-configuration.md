@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 exl-id: d6e8412d-09d4-4cac-a691-71703ebaa374
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 7%
+source-wordcount: '335'
+ht-degree: 8%
 
 ---
 
 # Erstellen der Konfiguration von Artikelexporten{#creating-article-export-configuration}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!CAUTION]
 >
@@ -48,7 +52,6 @@ Die Konfiguration von ContentSync unter **&lt;dps-exporttemplate>/dps-article>**
 >* den Beispielinhalt installiert hat
 >* AEM
 >* kein konfigurierter benutzerdefinierter Kontext oder ein anderer Port
-
 >
 
 

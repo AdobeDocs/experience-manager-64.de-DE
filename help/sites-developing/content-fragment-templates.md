@@ -1,7 +1,7 @@
 ---
 title: Inhaltsfragmentvorlagen
 seo-title: Content Fragment Templates
-description: Vorlagen werden ausgewählt, wenn ein Inhaltsfragment erstellt und das neue Fragment mit der grundlegenden Struktur, dem Element und der Variante versehen wird
+description: Vorlagen werden beim Erstellen eines Inhaltsfragments ausgewählt und geben dem neuen Fragment die grundlegende Struktur, das Element und die Variante
 seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: 74675e82-26b4-4105-8031-21de51131236
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 exl-id: fdf1aba8-17fa-473a-9c32-7189d0628927
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 98%
+source-wordcount: '668'
+ht-degree: 87%
 
 ---
 
 # Inhaltsfragmentvorlagen{#content-fragment-templates}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!CAUTION]
 >
@@ -75,7 +79,7 @@ conf
               ...
 ```
 
-Dabei ist die bestimmte Struktur:
+Die spezifische Struktur lautet:
 
 ```xml
 + <template-name>

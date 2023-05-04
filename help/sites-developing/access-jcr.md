@@ -1,7 +1,7 @@
 ---
 title: Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR
 seo-title: How to programmatically access the AEM JCR
-description: Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerhalb des AEM-Repositorys befinden, das Teil von Adobe Marketing Cloud ist.
+description: Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich im AEM-Repository befinden, das Teil von Adobe Marketing Cloud ist
 seo-description: You can programmatically modify nodes and properties located within the AEM repository, which is part of the Adobe Marketing Cloud
 uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
 contentOwner: Guillaume Carlino
@@ -10,20 +10,24 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 exl-id: f2317fd5-df64-4042-b17e-0e0506161b90
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '627'
+ht-degree: 68%
 
 ---
 
 # Anleitung für den programmgesteuerten Zugriff auf das AEM-JCR{#how-to-programmatically-access-the-aem-jcr}
 
-Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerhalb des Adobe CQ-Repositorys befinden, das Teil von Adobe Marketing Cloud ist. Für den Zugriff auf das CQ-Repository verwenden Sie die Java Content Repository (JCR)-API. Mit der JCR-API können Sie Erstellungs-, Ersetzungs-, Aktualisierungs- und Lösch- (CRUD)-Vorgänge für Inhalte im Adobe CQ-Repository durchführen. Weitere Informationen zur Java JCR-API finden Sie unter [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerhalb des Adobe CQ-Repositorys befinden, das Teil von Adobe Marketing Cloud ist. Um auf das CQ-Repository zuzugreifen, verwenden Sie die Java Content Repository (JCR)-API. Sie können die Java JCR-API verwenden, um Vorgänge zum Erstellen, Ersetzen, Aktualisieren und Löschen (CRUD) von Inhalten im Adobe CQ-Repository durchzuführen. Weitere Informationen zur Java JCR-API finden Sie unter [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Dieser Entwicklungsartikel modifiziert das Adobe CQ-JCR aus einer externen Java-Anwendung. Es besteht auch die Möglichkeit, das JCR aus einem OSGi-Bundle mithilfe der JCR-API zu modifizieren. Details finden Sie in [Beibehalten von CQ-Daten im Java Content Repository](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de).
+>Dieser Entwicklungsartikel ändert das Adobe CQ-JCR von einer externen Java-Anwendung. Im Gegensatz dazu können Sie das JCR in einem OSGi-Bundle mithilfe der JCR-API ändern. Details finden Sie in [Beibehalten von CQ-Daten im Java Content Repository](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de).
 
 >[!NOTE]
 >
@@ -31,9 +35,9 @@ Sie können programmgesteuert Knoten und Eigenschaften ändern, die sich innerha
 
 >[!NOTE]
 >
->Eine Anleitung zur Abfrage des Adobe CQ-JCR mithilfe der JCR-Abfrage-API finden Sie in [Abfragen von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
+>Informationen zum Abfragen des Adobe CQ-JCR mithilfe der JCR-Abfrage-API finden Sie unter [Abfrage von Adobe Experience Manager-Daten mit der JCR-API](https://helpx.adobe.com/de/experience-manager/using/querying-experience-manager-data-using1.html).
 
-## Repository-Instanz erstellen {#create-a-repository-instance}
+## Erstellen einer Repository-Instanz {#create-a-repository-instance}
 
 Es gibt unterschiedliche Verfahren zur Herstellung einer Verbindung mit einem Repository. In diesem Entwicklungsartikel wird eine statische Methode verwendet, die der Klasse `org.apache.jackrabbit.commons.JcrUtils` zuzuordnen ist. Der Name der Methode lautet `getRepository`. Diese Methode verwendet einen Zeichenfolgenparameter, der die URL des Adobe CQ-Servers darstellt. Beispiel `http://localhost:4503/crx/server`.
 
@@ -50,8 +54,8 @@ Die `Repository`-Instanz stellt das CRX-Repository dar. Mit der `Repository`-Ins
 
 Sie erstellen ein `SimpleCredentials`-Objekt, indem Sie seinen Konstruktor verwenden und die folgenden Zeichenfolgenwerte übergeben:
 
-* den Benutzernamen und
-* das zugehörige Kennwort
+* den Benutzernamen;
+* Das entsprechende Kennwort
 
 Rufen Sie bei der Übergabe des zweiten Parameters die `toCharArray`-Methode des Zeichenfolgenobjekts auf. Der folgende Code zeigt, wie Sie die `login`-Methode aufrufen, die eine `javax.jcr.Sessioninstance` zurückgibt.
 
@@ -69,7 +73,7 @@ Nutzen Sie eine `Session`-Instanz, um eine `javax.jcr.Node`-Instanz zu erstellen
 Node root = session.getRootNode();
 ```
 
-Nach der Erstellung der `Node`-Instanz können Sie verschiedene Aufgaben ausführen, z. B. einen anderen Knoten erstellen und ihm einen Wert hinzufügen. Mit dem folgenden Code werden beispielsweise zwei Knoten erstellt und dem zweiten Knoten ein Wert hinzugefügt.
+Nach der Erstellung der `Node`-Instanz können Sie verschiedene Aufgaben ausführen, z. B. einen anderen Knoten erstellen und ihm einen Wert hinzufügen. Beispielsweise erstellt der folgende Code zwei Knoten und fügt dem zweiten Knoten einen Wert hinzu.
 
 ```java
 // Store content 
@@ -77,9 +81,9 @@ Node day = adobe.addNode("day");
 day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suite!");
 ```
 
-## Knotenwerte abrufen {#retrieve-node-values}
+## Abrufen von Knotenwerten {#retrieve-node-values}
 
-Zum Abrufen eines Knotens und seines Werts rufen Sie die `getNode`-Methode der `Node`-Instanz auf und übergeben einen Zeichenfolgenwert, der den vollqualifizierten Pfad zum Knoten darstellt. Betrachten Sie die Knotenstruktur, die im vorherigen Codebeispiel erstellt wurde. Zum Abrufen des Tagesknotens geben Sie „adobe/day“ an, wie das folgende Codebeispiel zeigt:
+Zum Abrufen eines Knotens und seines Werts rufen Sie die `getNode`-Methode der `Node`-Instanz auf und übergeben einen Zeichenfolgenwert, der den vollqualifizierten Pfad zum Knoten darstellt. Betrachten Sie die Knotenstruktur, die im vorherigen Codebeispiel erstellt wurde. Um den Day-Knoten abzurufen, geben Sie adobe/day an, wie im folgenden Code gezeigt:
 
 ```java
 // Retrieve content
@@ -88,7 +92,7 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Knoten im Adobe CQ-Repository erstellen {#create-nodes-in-the-adobe-cq-repository}
+## Erstellen von Knoten im Adobe CQ-Repository {#create-nodes-in-the-adobe-cq-repository}
 
 Das folgende Java-Codebeispiel stellt eine Java-Klasse dar, die eine Verbindung mit Adobe CQ herstellt, eine `Session`-Instanz erstellt und neue Knoten hinzufügt. Einem Knoten wird ein Datenwert zugewiesen, woraufhin der Wert des Knotens und seines Pfades aus der Konsole geschrieben wird. Melden Sie sich ab, um die Sitzung zu beenden.
 

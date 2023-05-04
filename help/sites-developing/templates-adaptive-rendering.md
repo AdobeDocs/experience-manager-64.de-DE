@@ -10,39 +10,43 @@ topic-tags: platform
 content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 exl-id: a2adc825-2a18-42b8-a639-c48243b2279c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 100%
+source-wordcount: '522'
+ht-degree: 51%
 
 ---
 
 # Rendering von adaptiven Vorlagen{#adaptive-template-rendering}
 
-Das Rendering von adaptiven Vorlagen bietet eine Möglichkeit, eine Seite mit Variationen zu verwalten. Ursprünglich sollte diese Funktion verschiedene HTML-Ausgaben für mobile Geräte bereitstellen (z. B. für Feature- und für Smartphones). Sie ist auch dann nützlich, wenn Erlebnisse für verschiedene Geräte bereitgestellt werden sollen, die unterschiedliche Markup- oder HTML-Ausgaben erfordern.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Das Rendering adaptiver Vorlagen bietet eine Möglichkeit, eine Seite mit Varianten zu verwalten. Diese Funktion, die ursprünglich zur Bereitstellung verschiedener HTML-Ausgaben für Mobilgeräte (z. B. Feature Phone oder Smart Phone) nützlich war, ist nützlich, wenn Erlebnisse für verschiedene Geräte bereitgestellt werden müssen, für die eine andere Markup- oder HTML-Ausgabe erforderlich ist.
 
 ## Übersicht {#overview}
 
 Vorlagen werden im Allgemeinen auf einem responsiven Raster aufgebaut. Seiten, die basierend auf diesen Vorlagen erstellt wurden, sind vollständig responsiv und passen sich automatisch an das Ansichtsfenster des Client-Geräts an. Über die Emulator-Symbolleiste im Seiten-Editor können Autoren Layouts für bestimmte Geräte festlegen.
 
-Sie können auch Vorlagen einrichten, um das adaptive Rendering zu unterstützen. Wenn Gerätegruppen korrekt konfiguriert sind, wird die Seite mit einem anderen Selektor in der URL gerendert, wenn ein Gerät im Emulatormodus ausgewählt wird. Mit einem Selektor lässt sich ein bestimmtes Seiten-Rendering direkt über die URL aufrufen.
+Es ist auch möglich, Vorlagen zur Unterstützung des adaptiven Renderings einzurichten. Wenn Gerätegruppen ordnungsgemäß konfiguriert sind, wird die Seite mit einem anderen Selektor in der URL gerendert, wenn ein Gerät im Emulatormodus ausgewählt wird. Mithilfe eines Selektors kann ein bestimmtes Seiten-Rendering direkt über die URL aufgerufen werden.
 
-Beachten Sie beim Einrichten der Gerätegruppen Folgendes:
+Denken Sie beim Einrichten Ihrer Gerätegruppen daran:
 
-* Jedes Gerät muss zu mindestens einer Gerätegruppe gehören.
-* Ein Gerät kann zu mehreren Gerätegruppen gehören.
-* Da Geräte zu mehreren Gerätegruppen gehören können, können Selektoren auch kombiniert werden.
-* Die Kombination von Selektoren wird von oben nach unten bewertet, da sie im Repository gespeichert werden.
+* Jedes Gerät muss mindestens einer Gerätegruppe angehören.
+* Ein Gerät kann mehreren Gerätegruppen angehören.
+* Da Geräte mehreren Gerätegruppen angehören können, können Selektoren kombiniert werden.
+* Die Kombination von Selektoren wird von oben nach unten ausgewertet, da sie im Repository beibehalten werden.
 
 >[!NOTE]
 >
->Die Gerätegruppe **Responsive Geräte** weist nie einen Selektor auf, da davon ausgegangen wird, dass Geräte, die responsive Designs unterstützen, kein adaptives Layout benötigen.
+>Die Gerätegruppe **Responsive Geräte** verfügt nie über einen Selektor, da Geräte, die als unterstützend responsiven Design erkannt werden, kein adaptives Layout benötigen
 
 ## Konfiguration {#configuration}
 
-Selektoren für das adaptive Rendering können Sie für vorhandene Gerätegruppen oder für [selbst erstellte Gruppen konfigurieren.](/help/sites-developing/mobile.md#device-groups)
+Adaptive Rendering-Selektoren können für bestehende Gerätegruppen oder für [Gruppen, die Sie selbst erstellt haben.](/help/sites-developing/mobile.md#device-groups)
 
-Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones** so, dass sie einen Selektor für das adaptive Rendering als Teil der Vorlage **Erlebnisseite** in We.Retail aufweisen.
+In diesem Beispiel werden wir die vorhandene Gerätegruppe konfigurieren **Smartphones** , um eine Auswahl für adaptives Rendering als Teil der **Erlebnisseite** -Vorlage in We.Retail.
 
 1. Bearbeiten Sie die Gerätegruppe, für die ein adaptiver Selektor benötigt wird, unter `http://localhost:4502/miscadmin#/etc/mobile/groups`.
 

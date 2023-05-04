@@ -1,7 +1,7 @@
 ---
 title: SAML 2.0-Authentifizierungs-Handler
 seo-title: SAML 2.0 Authentication Handler
-description: Hier finden Sie Informationen zum SAML 2.0-Authentifizierungs-Handler in AEM.
+description: Erfahren Sie mehr über den SAML 2.0 Authentication Handler in AEM.
 seo-description: Learn about the SAML 2.0 Authentication Handler in AEM.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
 contentOwner: Guillaume Carlino
@@ -10,20 +10,24 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 4868daad-0f3e-48cb-9b20-08dee270e74e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 100%
+source-wordcount: '878'
+ht-degree: 71%
 
 ---
 
-# SAML 2.0-Authentifizierungs-Handler{#saml-authentication-handler}
+# SAML 2.0-Authentifizierungs-Handler {#saml-authentication-handler}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM umfasst einen [SAML](http://saml.xml.org/saml-specifications)-Authentifizierungs-Handler. Dieser Handler unterstützt das [SAML](http://saml.xml.org/saml-specifications) 2.0-Authentifizierungsanforderungsprotokoll (Web-SSO-Profil), das die `HTTP POST`-Bindung verwendet.
 
-Folgendes wird unterstützt:
+Es unterstützt:
 
-* Signierung und Verschlüsselung von Nachrichten
+* Signieren und Verschlüsselung von Nachrichten
 * Automatische Erstellung von Benutzern
 * Synchronisieren von Gruppen mit vorhandenen Gruppen in AEM
 * Durch Dienstleister und Identitätsanbieter eingeleitete Authentifizierung
@@ -34,7 +38,7 @@ Dieser Handler speichert die verschlüsselte SAML-Antwortnachricht im Benutzerkn
 >
 >[Hier](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html) finden Sie eine Demonstration zur Integration von AEM und SAML.
 >
->Einen End-to-End-Community-Artikel finden Sie [hier](https://helpx.adobe.com/de/experience-manager/using/aem63_saml.html): Integrieren von SAML mit „Adobe Experience Manager“.
+>Um einen End-to-End-Community-Artikel zu lesen, klicken Sie auf: [Integration von SAML in Adobe Experience Manager](https://helpx.adobe.com/de/experience-manager/using/aem63_saml.html).
 
 ## Konfigurieren des SAML 2.0-Authentifizierungs-Handlers {#configuring-the-saml-authentication-handler}
 
@@ -42,22 +46,22 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 
 >[!NOTE]
 >
->Der SAML 2.0-Authentifizierungs-Handler ist standardmäßig deaktiviert. Sie müssen mindestens eine der folgenden Eigenschaften festlegen, um den Handler zu aktivieren:
+>Der SAML 2.0 Authentication Handler ist standardmäßig deaktiviert. Sie müssen mindestens eine der folgenden Eigenschaften festlegen, um den Handler zu aktivieren:
 >
 >* POST-URL des Identitätsanbieters
->* Entitäts-ID des Dienstleisters
+>* Die Entitäts-ID des Dienstanbieters.
 >
 
 
 >[!NOTE]
 >
->SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktioniert, müssen Sie zumindest das öffentliche Zertifikat des Identitätsanbieters im TrustStore angeben. Weitere Informationen finden Sie im Abschnitt [Hinzufügen des Identitätsanbieterzertifikats zum TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore).
+>SAML-Zusicherungen werden signiert und können optional verschlüsselt werden. Damit dies funktioniert, müssen Sie zumindest das öffentliche Zertifikat des Identitätsanbieters im TrustStore angeben. Weitere Informationen finden Sie im Abschnitt [Hinzufügen des Identitätsanbieterzertifikats zum TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore).
 
 **Pfad** Repository-Pfad, für den dieser Authentifizierungs-Handler von Sling verwendet werden soll. Wenn dieser leer ist, wird der Authentifizierungs-Handler deaktiviert.
 
 **Service-Rangfolge** Position in der Rangfolge der OSGi-Framework-Services. Gibt an, mit welcher Priorität dieser Service aufgerufen wird. Dies ist ein ganzzahliger Wert, wobei höhere Werte Vorrang haben.
 
-**IDP-Zertifikatalias** Das Alias des IDP-Zertifikats im globalen TrustStore. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Im Kapitel „Identitätsanbieterzertifikat zum AEM-TrustStore hinzufügen“ weiter unten finden Sie Informationen dazu, wie Sie dies einrichten.
+**IDP-Zertifikatalias** Das Alias des IDP-Zertifikats im globalen TrustStore. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Weitere Informationen zum Einrichten finden Sie im Kapitel &quot;Hinzufügen des IdP-Zertifikats zum AEM TrustStore&quot;.
 
 **Identitätsanbieter-URL** Die URL des IDP, an die die SAML-Authentifizierungsanforderung gesendet werden soll. Wenn diese Eigenschaft nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert.
 
@@ -92,16 +96,16 @@ Die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) bietet Zugriff auf 
 
 **Gruppenmitgliedschaft** Der Name des „saml:Attribute“, das eine Liste von CRX-Gruppen enthält, denen dieser Benutzer hinzugefügt werden muss.
 
-## Identitätsanbieterzertifikat zum AEM TrustStore hinzufügen {#add-the-idp-certificate-to-the-aem-truststore}
+## Hinzufügen des IdP-Zertifikats zum AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
-SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktionieren kann, müssen Sie mindestens das öffentliche Zertifikat des IdP im Repository bereitstellen. Dazu müssen Sie Folgendes tun:
+SAML-Zusicherungen werden signiert und können optional verschlüsselt werden. Damit dies funktioniert, müssen Sie mindestens das öffentliche Zertifikat des IdP im Repository angeben. Gehen Sie dazu folgendermaßen vor:
 
 1. Wechseln Sie zu *http:/Server-Adresse:Serverport/libs/granite/security/content/truststore.html*.
 1. Klicken Sie auf **[!UICONTROL TrustStore-Link erstellen]**.
-1. Geben Sie das Kennwort für den TrustStore ein und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Geben Sie das Kennwort für den TrustStore ein und drücken Sie die **[!UICONTROL Speichern]**.
 1. Klicken Sie auf **[!UICONTROL TrustStore verwalten]**.
 1. Laden Sie das IdP-Zertifikat hoch.
-1. Beachten Sie das Zertifikatalias. Im Folgenden Beispiel lautet das Alias **[!UICONTROL admin#1436172864930]**.
+1. Notieren Sie sich das Zertifikat Alias. Der Alias lautet **[!UICONTROL admin#1436172864930]** im Beispiel unten.
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
@@ -120,19 +124,19 @@ SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktio
 >Die folgenden Schritte sind nur erforderlich, wenn der Handler in der Lage sein muss, Nachrichten zu signieren oder zu verschlüsseln.
 
 1. Laden Sie die Datei mit dem privaten Schlüssel hoch, indem Sie auf **Datei mit privatem Schlüssel auswählen** klicken. Der Schlüssel muss das Format „PKCS#8“ haben und die DER-Verschlüsselung aufweisen.
-1. Laden Sie durch Klicken auf **Zertifikatkettendateien auswählen** die Zertifikatdatei hoch.
-1. Weisen Sie ein Alias zu, wie im Folgenden gezeigt:
+1. Laden Sie die Zertifikatdatei hoch, indem Sie auf **Zertifikatkettendateien auswählen**.
+1. Weisen Sie wie unten gezeigt einen Alias zu:
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
-## Logger für SAML konfigurieren {#configure-a-logger-for-saml}
+## Konfigurieren eines Loggers für SAML {#configure-a-logger-for-saml}
 
-Sie können einen Logger einrichten, um alle Probleme zu debuggen, die aufgrund der falschen Konfiguration von SAML entstehen können. Gehen Sie dazu wie folgt vor:
+Sie können einen Logger einrichten, um Probleme zu beheben, die sich aus der falschen Konfiguration von SAML ergeben könnten. Gehen Sie dazu wie folgt vor:
 
 1. Wechseln Sie zur Web-Konsole unter *http://localhost:4502/system/console/configMgr*.
 1. Suchen Sie nach dem Eintrag **Apache Sling Logging-Logger-Konfiguration** und klicken Sie darauf.
-1. Erstellen Sie einen Logger mit folgender Konfiguration:
+1. Erstellen Sie eine Protokollfunktion mit der folgenden Konfiguration:
 
-   * **Protokollebene:** Debug
+   * **Protokollebene:** Debuggen
    * **Protokolldatei:** logs/saml.log
    * **Logger:** com.adobe.granite.auth.saml

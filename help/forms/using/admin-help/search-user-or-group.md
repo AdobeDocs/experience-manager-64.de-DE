@@ -1,7 +1,7 @@
 ---
-title: Einen Benutzer bzw. eine Gruppe suchen
+title: Suche nach einem Benutzer oder einer Gruppe
 seo-title: Search for a user or group
-description: Erfahren Sie, wie Sie nach einem Benutzer oder einer Gruppe mit den User Management-Einstellungen in Administration Console suchen.
+description: Erfahren Sie, wie Sie mithilfe der User Management-Einstellungen in Administration Console nach einem Benutzer oder einer Gruppe suchen.
 seo-description: Learn how to search for a user or group using the User Management settings in the administration console.
 uuid: 8d85e1af-9977-489d-9969-c4d2661b38c3
 contentOwner: admin
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f345e42c-82d9-4970-9169-156ea4505097
 exl-id: 53aa6c11-0d73-4d95-a0b3-cf369883abe8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 100%
+source-wordcount: '116'
+ht-degree: 17%
 
 ---
 
-# Einen Benutzer bzw. eine Gruppe suchen {#search-for-a-user-or-group}
+# Suche nach einem Benutzer oder einer Gruppe {#search-for-a-user-or-group}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
-1. Geben Sie Informationen zum Eingrenzen der Suche ein und klicken Sie auf „Suchen“. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren. Es werden maximal 1000 Ergebnisse zurückgegeben.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Benutzer und Gruppen&quot;.
+1. Geben Sie Informationen zur Eingrenzung der Suche an und klicken Sie auf &quot;Suchen&quot;. Die Suchergebnisse werden unten auf der Seite aufgelistet. Sie können die Liste sortieren, indem Sie auf eine der Spaltenüberschriften klicken. Es werden maximal 1.000 Ergebnisse zurückgegeben.

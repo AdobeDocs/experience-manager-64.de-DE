@@ -10,20 +10,24 @@ content-type: reference
 topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: 843c67d6-dda1-448f-a992-19574066e1c3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 94%
+source-wordcount: '341'
+ht-degree: 91%
 
 ---
 
 # Bildeditor{#image-editor}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Der Bildeditor ist ein Kernstück von AEM und kann von Komponenten genutzt werden, um eine Bearbeitung von Bildern durch Inhaltsautoren zu erlauben.
 
 >[!CAUTION]
 >
->So verwenden Sie die in diesem Artikel beschriebenen Funktionen des Bildeditors: [Feature Pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) muss installiert sein.
+>Damit Sie die in diesem Artikel beschriebenen Funktionen des Bildeditors verwenden können, muss [Feature Pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) installiert sein.
 
 ## Relative Einheiten für Imagemap {#relative-units-for-image-map}
 

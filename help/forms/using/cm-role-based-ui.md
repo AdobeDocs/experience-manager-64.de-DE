@@ -8,15 +8,19 @@ uuid: 60808852-f63f-4c0a-badb-b0af93c995a8
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 342f111e-f15a-4f9a-8993-f90760363c02
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 28%
+source-wordcount: '521'
+ht-degree: 9%
 
 ---
 
 
 # NICHT auf Rollen basierende Benutzeroberfläche in Correspondence Management VERÖFFENTLICHEN {#do-not-publish-role-based-user-interface-in-correspondence-management}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In AEM kann der Administrator rollenbasierten Zugriff für verschiedene Benutzergruppen bereitstellen und verschiedene Aktionen für verschiedene Ressourcen durchführen. Beispielsweise kann die Funktion zum Erstellen oder Bearbeiten von Datenwörterbüchern nur Benutzern in einer bestimmten Benutzergruppe zur Verfügung stehen, während andere Benutzer nur die Datenwörterbücher anzeigen und verwenden können.
 
@@ -38,14 +42,14 @@ Weitere Informationen zu Gruppen, Berechtigungen, Zugriffssteuerungslisten und z
 
    Wenn beispielsweise ein Unternehmen über Hypotheken-, Kreditkarten- und Versicherungsabteilungen verfügt, kann es Ordner mit dem Namen `HomeMortgage`, `CreditCard,`und `Insurance` die entsprechenden Assets beizubehalten und den Zugriff selektiv auf Agenten für Assets zu gewähren, die nur für ihre Abteilungen relevant sind.
 
-1. Um auf die AEM WCM-Sicherheit zuzugreifen, führen Sie einen der folgenden Schritte aus:
+1. Führen Sie einen der folgenden Schritte aus, um auf AEM WCM-Sicherheit zuzugreifen:
 
    1. Klicken Sie im Begrüßungsbildschirm oder in verschiedenen anderen Bereichen in AEM auf das Sicherheitssymbol:
 
    1. Navigieren Sie direkt zu `https://[server]:[port]/useradmin`. Achten Sie darauf, sich als Admin bei AEM anzumelden.
 
       ![]()
-   In der linken Struktur sehen Sie alle aktuell im System vorhandenen Benutzer und Gruppen. Sie können die anzuzeigenden Spalten auswählen, den Inhalt der Spalten sortieren und sogar die Reihenfolge ändern, in der die Spalten angezeigt werden, indem Sie die Spaltenüberschrift an eine neue Position ziehen.
+   In der linken Struktur werden alle Benutzer und Gruppen aufgelistet, die sich derzeit im System befinden. Sie können die anzuzeigenden Spalten auswählen, den Inhalt der Spalten sortieren und die Anzeigereihenfolge der Spalten ändern, indem Sie die Spaltenüberschrift an eine neue Position ziehen.
 
    Über die Registerkarten können Sie auf verschiedene Konfigurationen zugreifen:
 
@@ -55,7 +59,7 @@ Weitere Informationen zu Gruppen, Berechtigungen, Zugriffssteuerungslisten und z
 
 1. Navigieren Sie auf der Registerkarte Berechtigungen zu dem Pfad, dem Sie Berechtigungen hinzufügen möchten. Die Correspondence Management-Ordner befinden sich unter der `content/apps/cm/` Ordner.
 
-   Aktivieren Sie das Kontrollkästchen in der Spalte Mitglied für die Mitglieder, die Berechtigungen für diesen Pfad erhalten sollen. Deaktivieren Sie das Kontrollkästchen für die Mitglieder, denen Berechtigungen entzogen werden sollen. In der von Ihnen geänderten Zelle wird ein rotes Dreieck angezeigt.
+   Aktivieren Sie das Kontrollkästchen in der Spalte Mitglied für die Mitglieder, die Berechtigungen für diesen Pfad erhalten sollen. Deaktivieren Sie das Kontrollkästchen für Mitglieder, für die Sie Berechtigungen entfernen möchten. In der Zelle, an der Sie Änderungen vorgenommen haben, wird ein rotes Dreieck angezeigt.
 
    ![useradmin-creditcard](assets/useradmin-creditcard.png)
 

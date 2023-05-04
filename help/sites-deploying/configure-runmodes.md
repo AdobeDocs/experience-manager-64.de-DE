@@ -1,7 +1,7 @@
 ---
 title: Ausführungsmodi
 seo-title: Run Modes
-description: Hier erfahren Sie, wie Sie Ihre AEM-Instanz mithilfe von Ausführungsmodi an einen bestimmten Verwendungszweck anpassen.
+description: Erfahren Sie, wie Sie Ihre AEM mithilfe von Ausführungsmodi für bestimmte Zwecke anpassen können.
 seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
 uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
@@ -11,24 +11,28 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: c27e74d6-3093-4c0e-a724-92ce920fe75c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 100%
+source-wordcount: '783'
+ht-degree: 50%
 
 ---
 
 # Ausführungsmodi{#run-modes}
 
-Mithilfe von Ausführungsmodi können Sie Ihre AEM-Instanz an einen bestimmten Zweck anpassen, z. B. Inhaltserstellung, Veröffentlichung, Test, Entwicklung oder Intranet.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Mit Ausführungsmodi können Sie Ihre AEM für einen bestimmten Zweck anpassen. z. B. Autor oder Veröffentlichung, Test, Entwicklung, Intranet oder andere.
 
 Sie haben folgende Möglichkeiten:
 
-* [Gruppen von Konfigurationsparametern für jeden Ausführungsmodus definieren](#defining-configuration-properties-for-a-run-mode)
+* [Kollektionen von Konfigurationsparametern für jeden Ausführungsmodus definieren](#defining-configuration-properties-for-a-run-mode).
 
    Ein Grundbestand an Konfigurationsparametern wird auf alle Ausführungsmodi angewendet. Sie können dann zusätzliche Parameter entsprechend den Anforderungen Ihrer spezifischen Umgebung einstellen. Diese werden nach Bedarf angewendet.
 
-* [Zusätzliche Bundles definieren, die für einen bestimmten Modus installiert werden](#defining-additional-bundles-to-be-installed-for-a-run-mode)
+* [Definieren zusätzlicher Pakete, die für einen bestimmten Modus installiert werden sollen](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
 Sämtliche Einstellungen und Definitionen werden im selben Repository gespeichert und durch die Auswahl des **Ausführungsmodus** aktiviert.
 
@@ -51,13 +55,13 @@ Jeweils zwei Paare von Ausführungsmodi schließen einander gegenseitig aus. Sie
 
 >[!CAUTION]
 >
->Wenn Sie einen der obigen Ausführungsmodi verwenden (author, publish, samplecontent, nosamplecontent), wird der während der Installation verwendete Wert für den Ausführungsmodus während der *gesamten Lebensdauer* dieser Installation beibehalten.
+>Bei Verwendung eines der oben genannten Ausführungsmodi (author, publish, samplecontent, nosamplecontent) definiert der während der Installation verwendete Wert den Ausführungsmodus für die *gesamte Lebensdauer* der Anlage.
 >
->Sie können diesen Wert für diese Ausführungsmodi nach der Installation *nicht mehr* ändern.
+>Für diese Ausführungsmodi *cannot* ändern Sie sie nach der Installation.
 
-## Ausführungsmodi anpassen {#customized-run-modes}
+## Benutzerdefinierte Ausführungsmodi {#customized-run-modes}
 
-Sie können auch Ihre eigenen, benutzerdefinierten Ausführungsmodi erstellen. Diese können beispielsweise folgendermaßen kombiniert werden:
+Sie können auch eigene, benutzerdefinierte Ausführungsmodi erstellen. Diese können kombiniert werden, um Szenarien abzudecken, z. B.:
 
 * `author` + `development`
 
@@ -73,19 +77,19 @@ Benutzerdefinierte Ausführungsmodi können auch bei jedem Start ausgewählt wer
 
 ## Verwenden von samplecontent und nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Beispielinhalte werden definiert, bevor der Schnellstart erstellt wird. Sie können Pakete, Konfigurationen usw. enthalten:
+Mit diesen Modi können Sie die Verwendung von Beispielinhalten steuern. Der Beispielinhalt wird vor der Erstellung des Schnellstarts definiert und kann Pakete, Konfigurationen usw. umfassen:
 
 * Mit dem Ausführungsmodus `samplecontent` wird dieser Inhalt installiert (Standardmodus). 
 
 * Mit dem Modus `nosamplecontent` wird der Beispielinhalt nicht installiert.
 
-Der nosamplecontent-Ausführungsmodus ist für Produktionsinstallationen bestimmt.
+Der Ausführungsmodus nosamplecontent wurde für Produktionsinstallationen entwickelt.
 
 ## Definieren von Konfigurationseigenschaften für einen Ausführungsmodus {#defining-configuration-properties-for-a-run-mode}
 
-Die Werte der Konfigurationseigenschaften, die für einen bestimmten Ausführungsmodus verwendet werden, können im Repository gespeichert werden.
+Eine Sammlung von Werten für Konfigurationseigenschaften, die für einen bestimmten Ausführungsmodus verwendet werden, kann im Repository gespeichert werden.
 
-Der Ausführungsmodus ist durch ein Suffix im Ordnernamen gekennzeichnet. Dadurch können Sie alle Konfigurationen in einem einzigen Repository speichern. Beispiel:
+Der Ausführungsmodus wird durch ein Suffix auf dem Ordnernamen angegeben. Auf diese Weise können Sie alle Konfigurationen in einem Repository speichern. Beispiel:
 
 * `config`
 
@@ -103,15 +107,15 @@ Der Ausführungsmodus ist durch ein Suffix im Ordnernamen gekennzeichnet. Dadurc
 
    Wird für die den entsprechenden Ausführungsmodus verwendet. z. B. config
 
-Siehe [OSGi-Konfiguration im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) für weitere Informationen zum Definieren der einzelnen Konfigurationsknoten in diesen Ordnern und zum Erstellen von Konfigurationen für Kombinationen aus mehreren Ausführungsmodi.
+Siehe [OSGi-Konfiguration im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) Weitere Informationen zum Definieren der einzelnen Konfigurationsknoten in diesen Ordnern und zum Erstellen von Konfigurationen für Kombinationen aus mehreren Ausführungsmodi.
 
 >[!NOTE]
 >
->Für [Installations-Ausführungsmodi](#installation-run-modes) (z. B. author) kann der Ausführungsmodus nach der Installation nicht mehr geändert werden. Doch Änderungen an einzelnen Konfigurationseigenschaften werden bei einem Neustart wirksam.
+>Für [Ausführungsmodi der Installation](#installation-run-modes) (z. B. Autor) Der Ausführungsmodus kann nach der Installation nicht mehr geändert werden. Änderungen an den einzelnen Konfigurationseigenschaften werden jedoch beim Neustart wirksam.
 
-## Definieren von zusätzlichen für einen Ausführungsmodus zu installierenden Bundles {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Zusätzliche Pakete definieren, die für einen Ausführungsmodus installiert werden sollen {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
-Zusätzliche Bundles, die für einen bestimmten Ausführungsmodus installiert werden sollen, können ebenfalls angegeben werden. Für diese Definitionen werden Installationsordner verwendet, die die Bundles enthalten. Auch hier ist der Ausführungsmodus durch ein Präfix gekennzeichnet:
+Zusätzliche Pakete, die für einen bestimmten Ausführungsmodus installiert werden sollen, können ebenfalls angegeben werden. Für diese Definitionen werden Installationsordner verwendet, die die Bundles enthalten. Auch hier ist der Ausführungsmodus durch ein Präfix gekennzeichnet:
 
 * `install.author`
 * `install.publish`
@@ -120,7 +124,7 @@ Diese Ordner sich vom Typ `nt:folder` und sollten das entsprechende Bundle entha
 
 ## Starten von CQ mit einem bestimmten Ausführungsmodus {#starting-cq-with-a-specific-run-mode}
 
-Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen Sie festlegen, welcher beim Start verwendet werden soll. Zur Spezifizierung des Ausführungsmodus gibt es mehrere Möglichkeiten. Gehen Sie nach dieser Reihenfolge vor:
+Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen Sie definieren, welche beim Start verwendet werden soll. Es gibt mehrere Methoden, um festzulegen, welcher Ausführungsmodus verwendet werden soll. die Reihenfolge der Auflösung lautet:
 
 1. [ ](#using-the-sling-properties-file)
 1. [ ](#using-the-r-option)
@@ -165,7 +169,7 @@ Die folgenden beiden Installations-Ausführungsmodi können durch die Umbenennun
 * publish
 * author
 
-Die JAR-Datei muss diese Benennungskonvention verwenden:
+Die JAR-Datei muss die Namenskonvention verwenden:
 
 `cq5-<run-mode>-p<port-number>`
 
@@ -175,7 +179,7 @@ Beispielsweise können Sie den Ausführungsmodus `publish` festlegen, indem Sie 
 
 ### Definieren des Ausführungsmodus in web.xml (mit Anwendungsserver) {#defining-the-run-mode-in-web-xml-with-application-server}
 
-Wenn Sie einen Anwendungsserver verwenden, können Sie auch die Eigenschaft:
+Wenn Sie einen Anwendungsserver verwenden, können Sie auch die Eigenschaft konfigurieren:
 
 `sling.run.modes`
 

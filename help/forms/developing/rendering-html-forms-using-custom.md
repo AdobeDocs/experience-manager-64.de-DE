@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: d10cbb97-1cec-4b1b-9104-48063e75a2cd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 100%
+source-wordcount: '1710'
+ht-degree: 98%
 
 ---
 
 # Rendern von HTML-Formularen mit benutzerdefinierten CSS-Dateien {#rendering-html-forms-using-custom-css-files}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Der Forms-Service rendert HTML-Formulare als Reaktion auf eine HTTP-Anfrage eines Webbrowsers. Beim Rendern eines HTML-Formulars kann der Forms-Service auf eine benutzerdefinierte CSS-Datei verweisen. Sie können eine benutzerdefinierte CSS-Datei erstellen, um Ihre Geschäftsanforderungen zu erfüllen, und auf diese CSS-Datei verweisen, wenn Sie den Forms-Service zum Rendern von HTML-Formularen verwenden.
 

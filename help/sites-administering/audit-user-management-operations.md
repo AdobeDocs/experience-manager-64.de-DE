@@ -1,7 +1,7 @@
 ---
 title: Prüfen von Benutzerverwaltungsvorgängen in AEM
 seo-title: How to Audit User Management Operations in AEM
-description: Erfahren Sie, wie Sie Benutzerverwaltungsvorgänge in AEM prüfen.
+description: Erfahren Sie, wie Sie User Management-Vorgänge in AEM überprüfen.
 feature: Operations
 seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
@@ -11,36 +11,40 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 97%
+source-wordcount: '338'
+ht-degree: 34%
 
 ---
 
 # Prüfen von Benutzerverwaltungsvorgängen in AEM{#how-to-audit-user-management-operations-in-aem}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Einführung {#introduction}
 
 AEM hat die Möglichkeit eingeführt, Berechtigungsänderungen zu protokollieren, damit sie zu einem späteren Zeitpunkt überprüft werden können.
 
-Das Upgrade ermöglicht das Prüfen von Erstellungs-, Lese-, Aktualisierungs- und Löschaktionen bei Berechtigungen und Gruppenzuweisungen von Benutzern. Die folgenden Aktionen werden protokolliert:
+Die Verbesserung ermöglicht die Prüfung von CRUD-Aktionen (Erstellen, Lesen, Aktualisieren, Löschen) für Berechtigungen und Gruppenzuweisungen von Benutzern. Konkret wird Folgendes protokolliert:
 
-* Ein neuer Benutzer wird erstellt.
-* Ein Benutzer wird zu einer Gruppe hinzugefügt.
-* Berechtigungen eines vorhandenen Benutzers oder einer vorhandenen Gruppe werden geändert.
+* Ein neuer Benutzer wird erstellt
+* Einen Benutzer, der einer Gruppe hinzugefügt wird
+* Berechtigungsänderungen eines vorhandenen Benutzers oder einer vorhandenen Gruppe
 
-Standardmäßig werden die Einträge in die Datei `error.log` geschrieben. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern. Weitere Informationen dazu finden Sie im folgenden Abschnitt.
+Standardmäßig werden die Einträge in die Datei `error.log` geschrieben. Um die Überwachung zu vereinfachen, empfiehlt es sich, diese Einträge in einer separaten Protokolldatei zu speichern. Weitere Informationen dazu finden Sie im folgenden Absatz.
 
-## Umleiten der Ausgabe in eine separate Protokolldatei {#redirecting-the-output-to-a-separate-log-file}
+## Weiterleiten der Ausgabe in eine separate Protokolldatei {#redirecting-the-output-to-a-separate-log-file}
 
-Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müssen Sie eine neue **Apache Sling Logging Logger**-Konfiguration erstellen. Im folgenden Beispiel verwenden wir `useraudit.log` als Namen dieser separaten Datei.
+Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müssen Sie eine neue **Apache Sling Logging Logger** Konfiguration. Im folgenden Beispiel verwenden wir `useraudit.log` als Namen dieser separaten Datei.
 
 1. Navigieren Sie zur Web-Konsole , indem Sie zu `https://<serveraddress>:<serverport>/system/console/configMgr`
-1. Suchen Sie nach **Apache Sling Logging Logger Configuration**. Klicken Sie dann auf das Pluszeichen (+) auf der rechten Seite des Eintrags, um eine neue Werkskonfiguration zu erstellen.
+1. Suchen Sie nach **Apache Sling Logging Logger-Konfiguration**. Klicken Sie dann auf das &quot;+&quot; rechts vom Eintrag, um eine neue Werkskonfiguration zu erstellen.
 1. Erstellen Sie die folgende Konfiguration:
 
-   * **Protokollebene:** Information
+   * **Protokollebene:** Informationen
    * **Protokolldatei:** logs/useraudit.log
    * **Nachrichtenmuster:** Standardwert beibehalten
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
@@ -49,7 +53,7 @@ Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müss
 
 ## Beispielausgabe {#example-output}
 
-Bei ordnungsgemäßer Konfiguration sollte die Ausgabe wie folgt aussehen:
+Bei richtiger Konfiguration sollte die Ausgabe wie folgt aussehen:
 
 ```xml
 19.05.2017 15:15:08.933 *INFO* [0:0:0:0:0:0:0:1 [1495196108932] POST /libs/granite/security/post/authorizables.html HTTP/1.1] com.adobe.granite.security.user.internal.servlets.AuthorizableServlet Create Group 'group1' operation initiated by User 'admin' (administrator)
@@ -83,7 +87,7 @@ Bei ordnungsgemäßer Konfiguration sollte die Ausgabe wie folgt aussehen:
 
 ## Klassische Benutzeroberfläche
 
-In der klassischen Benutzeroberfläche beschränken sich Informationen zu CRUD-Vorgängen, die im Prüfprotokoll zum Hinzufügen und Löschen von Benutzern aufgezeichnet wurden, auf die ID des betroffenen Benutzers und den Zeitpunkt der Änderung.
+In der klassischen Benutzeroberfläche sind Informationen zu CRUD-Vorgängen, die im Auditprotokoll zum Hinzufügen und Löschen von Benutzern aufgezeichnet werden, auf die ID des betroffenen Benutzers und den Zeitpunkt der Änderung beschränkt.
 
 Beispiel:
 

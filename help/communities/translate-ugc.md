@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 role: Admin
 exl-id: b8cbc429-b0c3-4f6e-a15f-4aef54733c8e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 4%
+source-wordcount: '1144'
+ht-degree: 5%
 
 ---
 
 # Übersetzen benutzergenerierter Inhalte {#translating-user-generated-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Übersetzungsfunktion für AEM Communities erweitert das Konzept [Übersetzen von Seiteninhalten](../../help/sites-administering/translation.md) an den vom Benutzer generierten Inhalt (UGC) gesendet werden, der auf Community-Sites mithilfe von [Komponenten des Social Component Framework (SCF)](scf.md).
 
@@ -96,7 +100,7 @@ So erstellen Sie eine neue Übersetzungsintegration, die einen Connector für Ü
 
 * **[!UICONTROL Übergeordnete Konfiguration]**
 (Erforderlich) Lassen Sie in der Regel als Standard. Der Standardwert ist 
-`/etc/cloudservices/translation` möglich.
+`/etc/cloudservices/translation`.
 
 * **[!UICONTROL Titel]**
 (Erforderlich) Geben Sie einen Anzeigetitel Ihrer Wahl ein. Kein Standardwert.

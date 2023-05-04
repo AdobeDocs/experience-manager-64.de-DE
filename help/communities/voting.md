@@ -1,5 +1,5 @@
 ---
-title: Verwenden einer Abstimmung
+title: Verwenden der Abstimmung
 seo-title: Using Voting
 description: Hinzufügen der Komponente "Abstimmung"zu einer Seite
 seo-description: Adding the Voting component to a page
@@ -10,18 +10,22 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 exl-id: 660a7106-0c21-4073-8319-4d6d20b9bc49
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 26%
+source-wordcount: '271'
+ht-degree: 8%
 
 ---
 
-# Verwenden einer Abstimmung {#using-voting}
+# Verwenden der Abstimmung {#using-voting}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die `Voting` -Komponente ist ein nützliches Tool, mit dem Community-Mitglieder einen bestimmten Inhalt bewerten können, z. B. eine Antwort innerhalb einer QnA-Komponente. Mit dem `Voting` -Komponente, wählen die Mitglieder Pfeile nach oben oder unten aus, um ihre Meinung zu äußern.
 
-## Hinzufügen einer Abstimmung zu einer Seite {#adding-voting-to-a-page}
+## Hinzufügen von Abstimmungen zu einer Seite {#adding-voting-to-a-page}
 
 So fügen Sie eine `Voting` -Komponente auf einer Seite im Autorenmodus verwenden Sie den Komponenten-Browser, um `Communities / Voting` und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an eine Position relativ zur Funktion, über die Benutzer abstimmen können.
 
@@ -31,7 +35,7 @@ Wenn die [erforderliche clientseitige Bibliotheken](essentials-voting.md#essenti
 
 ![chlimage_1-307](assets/chlimage_1-307.png)
 
-## Konfigurieren einer Abstimmung {#configuring-voting}
+## Konfigurieren der Abstimmung {#configuring-voting}
 
 Wählen Sie die platzierte `Voting` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
@@ -57,11 +61,11 @@ Unter dem **[!UICONTROL Texte und Beschriftungen]** -Registerkarte die Eigenscha
 
 ### Mitglieder {#members}
 
-Mitglieder dürfen nur einmal abstimmen, können ihre Meinung jedoch jederzeit ändern.
+Die Mitglieder dürfen nur einmal abstimmen, können jedoch ihre Stimme jederzeit ändern.
 
 ### Anonym {#anonymous}
 
-Eine anonyme Abstimmung wird nicht unterstützt. Besucher der Website müssen sich registrieren (Mitglieder werden) und anmelden, um selbst abstimmen zu können.
+Anonyme Abstimmungen werden nicht unterstützt. Besucher müssen sich registrieren (Mitglied werden) und sich anmelden, um einmal an der Abstimmung teilzunehmen.
 
 ## Zusätzliche Informationen {#additional-information}
 

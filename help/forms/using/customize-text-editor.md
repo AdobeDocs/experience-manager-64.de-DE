@@ -1,5 +1,5 @@
 ---
-title: Texteditor anpassen
+title: Anpassen des Texteditors
 seo-title: Customize text editor
 description: Erfahren Sie, wie Sie den Texteditor anpassen.
 seo-description: Learn how to customize text editor.
@@ -10,32 +10,36 @@ topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 feature: Correspondence Management
 exl-id: 5e9f8e0f-209e-4613-b230-2b826b46ba6b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 100%
+source-wordcount: '641'
+ht-degree: 62%
 
 ---
 
 # Texteditor anpassen {#customize-text-editor}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Übersicht {#overview}
 
-Sie können den Texteditor in der Benutzeroberfläche „Assets verwalten und Korrespondenz erstellen“ anpassen, um weitere Schriftarten und Schriftgrade hinzuzufügen. Diese Schriftarten enthalten englische und nicht-englische Schriftarten wie Japanisch.
+Sie können den Texteditor in der Benutzeroberfläche &quot;Assets verwalten&quot;und &quot;Korrespondenz erstellen&quot;anpassen, um weitere Schriftarten und Schriftgrößen hinzuzufügen. Diese Schriftarten enthalten englische und nicht englische Schriftarten, wie Japanisch, Schriftarten.
 
-Sie können die Folgendes in den Einstellungen für die Schriftart ändern:
+Sie können anpassen, um Folgendes in den Schrifteinstellungen zu ändern:
 
-* Schriftfamilie und -grad
+* Schriftfamilie und -größe
 * Eigenschaften wie Höhe und Zeichenabstand
-* Standardwerte von Schriftfamilie und -grad, Höhe, Zeichenabstand und Datumsformat
-* Einzüge für Aufzählungszeichen 
+* Standardwerte für Schriftfamilie und -größe, Höhe, Zeichenabstand und Datumsformat
+* Einzüge für Aufzählungszeichen
 
-Wenn Sie so verfahren, müssen Sie folgende Schritte durchführen:
+Gehen Sie dazu folgendermaßen vor:
 
 1. [Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten ](#customizefonts)
 1. [Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu](#addcustomfonts)
 
-## Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten  {#customizefonts}
+## Anpassen von Schriftarten durch Bearbeiten der Datei „tbxeditor-config.xml“ in CRX {#customizefonts}
 
 Anpassen von Schriften durch Bearbeiten der Datei  tbxeditor-config.xml führen Sie folgende Schritte durch:
 
@@ -62,10 +66,10 @@ Anpassen von Schriften durch Bearbeiten der Datei  tbxeditor-config.xml führen 
 
    1. Klicken Sie auf **Alle speichern**.
 
-1. Erstellen Sie eine Kopie der Datei „tbxeditor-config.xml“ im neu erstellten config-Ordner, indem Sie folgende Schritte durchführen:
+1. Erstellen Sie eine Kopie der Datei tbxeditor-config.xml im neu erstellten Konfigurationsordner, indem Sie die folgenden Schritte ausführen:
 
-   1. Klicken Sie mit der rechten Maustaste auf die Datei „tbxeditor-config.xml“ unter libs/fd/cm/config und wählen Sie **Kopieren**.
-   1. Klicken Sie mit der rechten Maustaste auf den folgenden Ordner und wählen Sie **Einfügen:** 
+   1. Klicken Sie mit der rechten Maustaste auf die Datei tbxeditor-config.xml unter libs/fd/cm/config und wählen Sie **Kopieren**.
+   1. Klicken Sie mit der rechten Maustaste auf den folgenden Ordner und wählen Sie **Einfügen:**
 
       `apps/fd/cm/config`
 
@@ -162,10 +166,10 @@ Anpassen von Schriften durch Bearbeiten der Datei  tbxeditor-config.xml führen 
 
    1. Nehmen Sie die erforderlichen Änderungen in der Datei vor, um Folgendes in den Einstellungen für die Schriftart zu ändern:
 
-      * Hinzufügen oder Entfernen von Schriftfamilie und -grad
+      * Schriftfamilie und -größe hinzufügen oder entfernen
       * Eigenschaften wie Höhe und Zeichenabstand
-      * Standardwerte von Schriftfamilie und -grad, Höhe, Zeichenabstand und Datumsformat
-      * Einzüge für Aufzählungszeichen 
+      * Standardwerte für Schriftfamilie und -größe, Höhe, Zeichenabstand und Datumsformat
+      * Einzüge für Aufzählungszeichen
 
       Um zum Beispiel eine japanische Schriftart mit dem Namen Sazanami Mincho Medium hinzuzufügen, müssen Sie Folgendes eintragen in der  XML-Datei: `<font>Sazanami Mincho Medium</font>`. Außerdem müssen Sie diese Schriftart auf dem Client-Computer installieren, der verwendet wird, um auf die Schriftartanpassung zuzugreifen und mit dieser zu arbeiten. Weitere Informationen finden Sie unter[ Hinzufügen von benutzerdefinierten Schriften zum Clientcomputer](#addcustomfonts).
 
@@ -174,7 +178,7 @@ Anpassen von Schriften durch Bearbeiten der Datei  tbxeditor-config.xml führen 
    1. Klicken Sie auf **Alle speichern**.
 
 
-## Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu {#addcustomfonts}
+## Fügen Sie dem Client-Computer benutzerdefinierte Schriftarten hinzu {#addcustomfonts}
 
 Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, muss sie auf dem Client-Computer vorhanden sein, den Sie für den Zugriff auf Correspondence Management verwenden. Um eine benutzerdefinierte Schriftart im Texteditor verwenden zu können, müssen Sie diese zunächst auf dem Clientcomputer installieren.
 
@@ -193,4 +197,4 @@ Zum Beispiel wird die Schriftart Sazanami Mincho Medium, die in der Prozedur [An
 
 >[!NOTE]
 >
->Damit Text auf Japanisch angezeigt wird, müssen Sie zuerst den Text mit japanischen Zeichen eingeben. Die Anwendung einer benutzerdefinierten japanischen Schriftart formatiert nur den Text auf eine bestimmte Art. Die Anwendung einer benutzerdefinierten japanischen Schriftart ändert englische oder andere Zeichen nicht in japanische Schriftzeichen.
+>Um Text auf Japanisch anzuzeigen, müssen Sie zunächst den Text mit japanischen Zeichen eingeben. Die Anwendung einer benutzerdefinierten japanischen Schriftart formatiert den Text nur auf eine bestimmte Weise. Die Anwendung einer benutzerdefinierten japanischen Schriftart ändert englische oder andere Zeichen nicht in japanische Zeichen.

@@ -12,14 +12,18 @@ discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 exl-id: af4f25d4-a784-47fe-bca4-75c8d373f7d2
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '229'
-ht-degree: 94%
+source-wordcount: '265'
+ht-degree: 73%
 
 ---
 
 # Zugehörige Inhalte {#associated-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!CAUTION]
 >
@@ -33,7 +37,7 @@ Zugehörige Inhalte stellen die Verbindung bereit, mit der Assets für ein Fragm
 >
 >Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
 
-Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](managing-collections-touch-ui.md#adding-assets-to-a-collection). Danach können Sie Folgendes tun:
+Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](managing-collections-touch-ui.md#adding-assets-to-a-collection). Danach können Sie:
 
 1. Öffnen Sie das Fragment und wählen Sie im seitlichen Bedienfeld **[!UICONTROL Zugehörige Inhalte]** aus.
 
@@ -46,7 +50,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
    ![cfm-6420-04](assets/cfm-6420-04.png)
 
-1. Bestätigen Sie den Vorgang (durch das Häkchen). Die Sammlung wird als verknüpft aufgeführt.
+1. Bestätigen Sie (mit dem Häkchen). Die Sammlung wird als verknüpft aufgeführt.
 
    ![cfm-6420-05](assets/cfm-6420-05.png)
 
@@ -54,7 +58,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
 Nachdem Sie eine Sammlung zugewiesen haben, können Sie Folgendes tun:
 
-* Die Verknüpfung **entfernen**.
-* Der Sammlung **Assets hinzufügen**.
-* Ein Asset für weitere Aktionen auswählen.
-* Das Asset bearbeiten.
+* **Entfernen** den Verband.
+* **Hinzufügen von Assets** in die Sammlung ein.
+* Wählen Sie ein Asset für weitere Aktionen aus.
+* Bearbeiten Sie das Asset.

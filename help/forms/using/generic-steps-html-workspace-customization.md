@@ -1,7 +1,7 @@
 ---
 title: Generische Schritte zur Anpassung von AEM Forms Workspace
 seo-title: Generic steps for AEM Forms workspace customization
-description: Erste Schritte zur Anpassung der AEM Forms Workspace-Benutzeroberfläche.
+description: Erste Schritte zur Anpassung der Benutzeroberfläche von AEM Forms Workspace.
 seo-description: How to get started customizing AEM Forms workspace user interface.
 uuid: 555b5039-cd68-4090-8a8f-30b654474f55
 contentOwner: robhagat
@@ -10,16 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 exl-id: 2c0dab68-d77e-46fb-832d-90edea510750
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 96%
+source-wordcount: '318'
+ht-degree: 70%
 
 ---
 
 # Generische Schritte zur Anpassung von AEM Forms Workspace {#generic-steps-for-aem-forms-workspace-customization}
 
-Für jede Anpassung gelten die folgenden generischen Schritte:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die allgemeinen Schritte zur Durchführung von Anpassungen sind:
 
 1. Melden Sie sich bei CRXDE Lite an, indem Sie auf `https://[server]:[port]/lc/crx/de/index.jsp` zugreifen.
 1. Erstellen Sie einen -Ordner mit dem Namen `ws` unter `/apps`, falls er noch nicht existiert. Klicken Sie auf **[!UICONTROL Alle speichern]**.
@@ -42,7 +46,7 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 1. Führen Sie die folgenden Schritte für CSS-Anpassungen aus:
 
    1. Navigieren Sie zum Ordner `/apps/ws` und erstellen Sie einen neuen Ordner mit dem Namen `css`.
-   1. Erstellen Sie im Ordner `css` eine neue Datei mit dem Namen `newStyle.css`.
+   1. Im `css`Ordner, erstellen Sie eine neue Datei mit dem Namen `newStyle.css`.
    1. Öffnen Sie `/apps/ws/html`.jsp und ändern Sie von
 
    ```css
@@ -60,9 +64,9 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
    >[!NOTE]
    >
-   >Platzieren Sie den Eintrag für die benutzerdefinierte CSS-Datei hinter demjenigen für die Datei newStyle.css, wie oben gezeigt.
+   >Platzieren Sie den Eintrag der benutzerdefinierten CSS-Datei nach dem Eintrag von newStyle.css, wie oben gezeigt.
 
-1. Ändern Sie in der Datei „apps/ws/html.jsp“ von
+1. Ändern Sie in der Datei /apps/ws/html.jsp von
 
    ```css
    <script data-main="js/main" src="js/libs/require/require.js"></script>

@@ -1,7 +1,7 @@
 ---
-title: Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“
+title: Benutzerdefinierter Speicher für die Komponente „Entwürfe und Sendungen“
 seo-title: Custom storage for drafts and submissions component
-description: Erfahren Sie, wie Sie die Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können.
+description: Erfahren Sie, wie Sie die Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen.
 seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
@@ -10,20 +10,24 @@ topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 48%
 
 ---
 
 # Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“ {#custom-storage-for-drafts-and-submissions-component}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Übersicht {#overview}
 
-Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein aktuelles Formular beibehalten, welches Sie zu einem späteren Zeitpunkt auf einem anderen Gerät abschließen und senden können.
+Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein laufendes Formular verwalten, das Sie später von jedem Gerät aus abschließen und senden können.
 
-Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars verknüpft sind, im `/content/forms/fp`-Knoten in der Publish-Instanz. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
+Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars verknüpft sind, im `/content/forms/fp`-Knoten in der Publish-Instanz. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, mit denen Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
 
 ## Voraussetzungen  {#prerequisites}
 
@@ -99,7 +103,7 @@ public interface DraftDataService {
 
 ## Übermittlungsdatendienst {#submission-data-service}
 
-Um das Speichern der Benutzerdaten für Übermittlungen anzupassen, müssen Sie alle Methoden der `SubmitDataService`-Schnittstelle implementieren. Im Folgenden Beispielcode werden die Methoden und die Argumente beschrieben.
+Um das Speichern der Benutzerdaten für Übermittlungen anzupassen, müssen Sie alle Methoden der `SubmitDataService`-Schnittstelle implementieren. Im Folgenden Beispiel-Code werden die Methoden und die Argumente beschrieben.
 
 ```java
 /**
@@ -184,7 +188,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal verwendet das Konzept eines UUID (Universally Unique Identifier), um eine eindeutige ID für die einzelnen Entwürfe und übermittelten Formulare zu generieren. Sie können auch selbst eine eindeutige ID generieren. Sie können die FPKeyGeneratorService-Schnittstelle implementieren, ihre Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes übermittelte Formular zu generieren. Legen Sie außerdem den Dienstrang der benutzerdefinierten ID-Generierungsimplementierung auf einen Wert über 0. Dies stellt sicher, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
+Das Forms-Portal verwendet das UUID-Konzept (Universally Unique Identifier), um eine eindeutige ID für jeden Entwurf und jedes gesendete Formular zu generieren. Sie können auch eine eigene eindeutige ID generieren. Sie können die FPKeyGeneratorService-Schnittstelle implementieren, ihre Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes übermittelte Formular zu generieren. Legen Sie außerdem den Dienstrang der Implementierung der benutzerdefinierten ID-Generierung auf über 0 fest. Dadurch wird sichergestellt, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -199,7 +203,7 @@ public interface FPKeyGeneratorService {
 }
 ```
 
-Mit der folgenden Anmerkung können Sie die Servicebewertung für die mit dem obigen Code generierte benutzerdefinierte ID erhöhen:
+Sie können die folgende Anmerkung verwenden, um das Dienstranking für benutzerdefinierte IDs zu erhöhen, die mit dem obigen Code generiert wurden:
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 

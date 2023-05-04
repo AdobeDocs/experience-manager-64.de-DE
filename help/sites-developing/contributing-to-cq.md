@@ -10,44 +10,48 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: e07a42e2-c659-4991-b59a-d48bfb7d2972
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 100%
+source-wordcount: '2745'
+ht-degree: 77%
 
 ---
 
 # Beitragen zu AEM{#contributing-to-aem}
 
-## Entwicklungsmethodik {#development-methodology}
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-AEM wird nach bewährten Vorgehensweisen entwickelt, die häufig in großen Open-Source-Projekten praktiziert werden. Viele Kernelemente im Technologie-Stack von AEM werden tatsächlich als aktive Open-Source-Projekte wie Sling und Jackrabbit verwaltet, die Teil der Apache Software Foundation sind. Ein wichtiger Aspekt der Idee von AEM besteht darin, dass Sie ermutigt werden, die verfügbaren Mailinglisten und Onlineforen für direkt Interaktion mit dem Entwicklungsteam zu nutzen.
+## Entwicklungsmethode {#development-methodology}
 
-Wenn Sie zu Komponenten von AEM beitragen, sollten Sie sich mit AEM genauso vertraut machen wie mit einem Open-Source-Projekt und mit dem vorhandenen Kernteam kommunizieren, als würden Sie zu einem solchen Projekt beitragen.
+AEM wird nach bewährten Vorgehensweisen entwickelt, die häufig in großen Open-Source-Projekten praktiziert werden. Viele Kernelemente im Technologie-Stack von AEM werden tatsächlich als aktive Open-Source-Projekte wie Sling und Jackrabbit verwaltet, die Teil der Apache Software Foundation sind. Ein wichtiger Aspekt dieses Geistes, der in AEM vorhanden ist, ist, dass Sie dazu ermutigt werden, die verfügbaren Mailinglisten und Online-Foren für direkte Interaktionen mit dem Entwicklungsteam zu nutzen.
 
-## Erforderliche Erfahrung {#required-experience}
+Wenn Sie zu Komponenten von AEM beitragen, sollten Sie sich mit AEM vertraut machen, wie Sie es bei der Mitarbeit an einem Open-Source-Projekt tun würden, und mit dem vorhandenen Kernteam kommunizieren, wie Sie es gerne tun würden, wenn Sie zu einem solchen Projekt beitragen würden.
+
+## Erforderliches Erlebnis {#required-experience}
 
 Das HyperText Transfer Protocol (HTTP) spielt bei allem, was wir tun, eine zentrale Rolle. Bevor Sie also zu AEM beitragen, sollten Sie über ein tiefgehendes Verständnis von HTTP verfügen, idealerweise in dem Maße, dass Sie Ihre eigene Java-Implementierung eines Multithread-HTTP-Servers mit Thread-Pooling schreiben könnten. Sie sollten auch das HTTP/1.1-Keep-Alive-Verhalten verstehen und über eingehende Kenntnisse der Server-/Client-seitigen Interaktionen mit JavaScript verfügen, insbesondere über den asynchronen Interaktionsstil, der von AJAX repräsentiert wird.
 
-Da Seitendynamik und interaktiver Inhalt der Schlüssel zum WM-Erlebnis sind, ist es wichtig, dass Sie das Dokumentobjektmodell und sein Potenzial für programmatische Manipulation als Reaktion auf Ereignisse möglichst gut verstehen. Sie sollten zum Beispiel Kenntnisse über Echtzeit-DOM-Manipulation und Drag-and-Drop-Verhalten über mehrere Browser-Dokumente haben (z. B. mit iframes).
+Da Seitendynamik und interaktiver Inhalt der Schlüssel zum WM-Erlebnis sind, ist es wichtig, dass Sie das Dokumentobjektmodell und sein Potenzial für programmatische Manipulation als Reaktion auf Ereignisse möglichst gut verstehen. Sie sollten beispielsweise Kenntnisse zur Echtzeit-DOM-Manipulation und zum Drag &amp; Drop-Verhalten über mehrere Browser-Dokumente (z. B. über iframes) haben.
 
 Auf der höchsten Ebene sollten Sie über ein solides Verständnis folgender Themen verfügen:
 
 * das [HTTP/1.1 Protokoll](https://www.ietf.org/rfc/rfc2616.txt)
 * HTML (vorzugsweise [HTML5](https://dev.w3.org/html5/spec/Overview.html))
-* Cascading Style Sheets (CSS)
+* Cascading Style Sheets
 * Extensible Markup Language (XML)
-* Entwurfsmuster für Asynchronous JavaScript and XML (AJAX)
-* JavaScript Object Notation (JSON)
-* Document Object Model
-* Stateful und Stateless-Interaktionen
-* [Uniform Resource Identifiers](https://www.ietf.org/rfc/rfc2396.txt)
-* Browser-Cookies
-* und andere moderne Web-Entwicklungskonzepte
+* Asynchrone JavaScript- und XML-Designmuster (AJAX)
+* JavaScript-Objektnotation (JSON)
+* Dokumentobjektmodell
+* Stateful- und stateless-Interaktionen
+* [Einheitliche Ressourcen-IDs](https://www.ietf.org/rfc/rfc2396.txt)
+* Browsercookies
+* und andere moderne Konzepte zur Web-Entwicklung
 
 Der Technologie-Stack von Adobe Experience Manager basiert auf dem [Apache Felix](https://felix.apache.org/)-OSGI-Container mit dem [Apache Sling](https://sling.apache.org/site/index.html)-Web-Framework und bettet ein Java Content Repository ([JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basierend auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html) ein. Sie sollten sich mit diesen einzelnen Projekten sowie mit anderen Open Source-Komponenten (z. B. Apache Lucene) vertraut machen, die in dem Bereich verwendet werden, in dem Sie Beiträge leisten möchten.
 
-## Tribal-Kenntnisse {#tribal-knowledge}
+## Stammeswissen {#tribal-knowledge}
 
 Bestimmte Konzepte und Leitprinzipien sind tief in der früheren Day-Kultur verwurzelt. In diesem Abschnitt werden einige der „tief in die DNA eingebetteten“ Probleme aufgeführt, die Sie beachten sollten.
 
@@ -61,43 +65,43 @@ Die Art und Weise, wie Inhalte in einem Java Content Repository modelliert werde
 
 ### RESTfulness {#restfulness}
 
-Der REST-Ansatz ist tief verwurzelt in dem, was wir tun. Dies bedeutet unter anderem, statusbehaftete Interaktionen zu vermeiden und zu berücksichtigen, dass URIs endgültige Adressen für Inhalte und Dienste sind.
+Der REST-Ansatz ist tief verwurzelt in dem, was wir tun. Dies bedeutet unter anderem, stateful Interaktionen zu vermeiden und zu bedenken, dass URIs endgültige Adressen für Inhalte und Dienste sind.
 
-REST (REpresentational State Transfer) bezeichnet den Software-Architekturstil, auf dem das World Wide Web basiert. Es beschreibt die Schlüsselelemente, die das Web zum Funktionieren bringen, und bietet somit eine Reihe von Prinzipien für die Gestaltung webbasierter Software. Bei der Entwicklung einer API, die über das Internet verwendet werden soll, ist es daher sinnvoll, diese Best Practices einzuhalten.
+REST (REpresentational State Transfer) bezeichnet den Software-Architekturstil, auf dem das World Wide Web basiert. Es beschreibt die Schlüsselelemente, die das Web zum Funktionieren bringen, und bietet somit eine Reihe von Prinzipien für die Gestaltung webbasierter Software. Bei der Erstellung einer API, die über das Internet verwendet werden soll, ist es daher sinnvoll, diese &quot;Best Practices&quot;einzuhalten.
 
-Da REST die Leitphilosophie ist, die hinter so viel von dem steckt, was wir tun, sollten Sie es für wichtig halten, sich in den Grundsätzen des RESTful Designs auskennen zu können. Ein guter Ausgangspunkt ist [Roy Fieldings Dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
+Da REST die Leitphilosophie ist, die hinter so viel von dem steckt, was wir tun, sollten Sie es für wichtig halten, sich in den Grundsätzen des RESTful Designs auskennen zu können. Ein guter Ausgangspunkt ist mit [Roy Fielding&#39;s Dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
 
-### Sling Anfrageauflösung {#sling-request-resolution}
+### Sling-Anforderungsauflösung {#sling-request-resolution}
 
-Ein wesentlicher Aspekt zum Verständnis von AEM ist, wie eingehende Anforderungen sich auf das Inhalts- und Anwendungsverhalten beziehen, wie Inhalte im Content-Repository strukturiert sind und wo AEM nach der Anwendungslogik sucht, um die Anforderung zu bearbeiten. Erfahren Sie mehr über die Apache [Sling URL-Dekomposition](https://sling.apache.org/site/url-decomposition.html) und die Art und Weise, wie sie den REST-Architekturstil und seine statusfreien, cachefähigen und geschichteten Systemeinschränkungen erzwingt.
+Ein wesentlicher Aspekt zum Verständnis von AEM ist, wie eingehende Anforderungen sich auf das Inhalts- und Anwendungsverhalten beziehen, wie Inhalte im Content-Repository strukturiert sind und wo AEM nach der Anwendungslogik sucht, um die Anforderung zu bearbeiten. Informationen zum Apache [Sling-URL-Dekomposition](https://sling.apache.org/site/url-decomposition.html) und wie sie den REST-Architekturstil und seine statuslosen, zwischenspeicherbaren und überlagerten Systemeinschränkungen durchsetzt.
 
-Schwerpunkte der Apache Sling-Anfrageauflösung sind, wie Anfragen hauptsächlich auf eine bestimmte Ressource im Content Repository abgebildet werden, wie zusätzliche Eigenschaften der Anfrage zusammen mit Eigenschaften dieser Inhaltsobjekte bestimmen, welcher Anwendungscode zum Rendern des Inhalts aufgerufen wird. und wie der Code in /apps den Code in /libs überschreibt.
+Die wichtigsten Aspekte bei der Anforderungsauflösung von Apache Sling sind, wie Anforderungen primär einer bestimmten Ressource im Content Repository zugeordnet werden, wie zusätzliche Eigenschaften der Anforderung zusammen mit Eigenschaften dieser Inhaltsobjekte bestimmen, welcher Anwendungscode zum Rendern des Inhalts aufgerufen wird und wie Code in /apps den Code in /libs überschreibt.
 
 ### Schnellstart {#quickstart}
 
-Kein Schritt drei: zum Installieren und Ausführen lädt man einfach die Schnellstart-JAR-Datei herunter und doppelklickt darauf. Es gibt keinen Schritt drei. Jede zusätzliche optionale Funktionalität erfordert nichts weiter als die Installation des entsprechenden Pakets von Package Share.
+Kein Schritt drei: zum Installieren und Ausführen lädt man einfach die Schnellstart-JAR-Datei herunter und doppelklickt darauf. Es gibt keinen dritten Schritt. Für jede zusätzliche optionale Funktion sollte nur die Installation des entsprechenden Pakets über Package Share erforderlich sein.
 
 Kleine Schnellstart-Größe: halten Sie die Größe der Schnellstart-JAR-Datei auf ein Minimum begrenzt. Nutzen Sie Bibliotheken intelligent und optimiert und verschieben Sie optionale Funktionen auf Package Share.
 
-Schnellere Startzeit: wenn Sie eine Änderung vornehmen, die sich auf die Startzeit auswirken könnte, stellen Sie sicher, dass sie kürzer wird, nicht länger.
+Schnellere Startzeit: Wenn Sie eine Änderung vornehmen, die sich auf die Startzeit auswirken könnte, stellen Sie sicher, dass sie kürzer und nicht länger wird.
 
-### Rank und schlank {#lean-and-mean}
+### Arithmetisches Mittel {#lean-and-mean}
 
-Wir bevorzugen Code und Projekte, die leicht, klein, schnell und elegant sind. „Gut genug“ ist nicht gut genug.
+Wir bevorzugen Code und Projekte, die leicht, klein, schnell und elegant sind. &quot;Gut genug&quot;ist nicht gut genug.
 
-Wiederverwendung von Code: Unsere OSGi-basierte Produktarchitektur und die Philosophie „Alles ist Inhalt“ bedeuten, dass wir außergewöhnlich gute Möglichkeiten für die Wiederverwendung von Code und Artefakten haben. Wir versuchen, diese Tatsache wann immer möglich zu nutzen, um Features „rank und schlank“ zu halten.
+Wiederverwendung von Code: Unsere OSGi-basierte Produktarchitektur und die Philosophie „Alles ist Inhalt“ bedeuten, dass wir außergewöhnlich gute Möglichkeiten für die Wiederverwendung von Code und Artefakten haben. Wir versuchen, diese Tatsache, wann immer möglich, zu nutzen, um die Funktionen schlank und mittelschwer zu halten.
 
-Lose Kopplung: Wir bevorzugen lose gekoppelte Interaktionen gegenüber engen Abhängigkeiten und „unerwünschter Intimität“. Lose Kopplung ermöglicht auch mehr Code-Wiederverwendung.
+Lose Kopplung: Wir bevorzugen lose gekoppelte Interaktionen gegenüber engen Abhängigkeiten und „unerwünschter Intimität“. Eine lockere Kopplung ermöglicht auch eine stärkere Wiederverwendung von Code.
 
-### Zerstören Sie die Demo nicht {#don-t-break-the-demo}
+### Das Demo nicht unterbrechen {#don-t-break-the-demo}
 
-Machen Sie sich mit Demo-Skripten und Produktfunktionen vertraut, die am häufigsten in Demos angezeigt werden. Verstehen Sie, dass nichts, was Sie tun, jemals eine „Demo-Skript“ -Funktion zerstören sollte. Das Kernprodukt sollte immer demofähig sein, auch während der Entwicklung.
+Machen Sie sich mit Demo-Skripten und Produktfunktionen vertraut, die am häufigsten in Demos angezeigt werden. Verstehen Sie, dass nichts, was Sie tun, jemals eine „Demo-Skript“ -Funktion zerstören sollte. Das Kernprodukt sollte auch während der Entwicklung immer demo-fähig sein.
 
 ### Design für Zuverlässigkeit {#design-for-reliability}
 
-Wir bemühen uns, Features in Fail-Soft-Art zu entwerfen und zu kodieren, sodass (zum Beispiel) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Machen Sie alles andere überlebensfähig. Machen Sie das Produkt „nachsichtig“.
+Wir bemühen uns, Features in Fail-Soft-Art zu entwerfen und zu kodieren, sodass (zum Beispiel) ein Problem mit einem einzelnen DOM-Element nicht dazu führt, dass eine ganze Seite nicht gerendert wird. Mit anderen Worten: Machen Sie Dinge, die tödlich sein sollten, tödlich. Macht alles andere überlebensfähig. Machen Sie das Produkt &quot;verzeihend&quot;.
 
-### Abnormal ist das neue normal {#abnormal-is-the-new-normal}
+### Abnorm ist der neue Normalzustand {#abnormal-is-the-new-normal}
 
 Verlassen Sie sich nicht auf Shutdown-Hooks, sorgen Sie für eine Bereinigung beim Start. Abnormale Beendigung ist normale Beendigung.
 
@@ -113,9 +117,9 @@ Nichts, was Sie tun, sollte den alten Code eines Kunden zerstören. Nur `/libs` 
 
 Wenn Sie für Abwärtskompatibilität entwickeln, stellen Sie außerdem sicher, dass das Upgrade-Erlebnis mit der Einfachheit der Erstinstallation übereinstimmt. Einfaches Beenden von AEM, Ersetzen der Quickstart-JAR-Datei und erneutes Starten von AEM sollten ausreichen. Mit einer schnell wachsenden Installationsbasis wird die Upgrade-Effizienz ein zunehmend wichtigerer Vorteil sein.
 
-Bestehende APIs können und sollten als veraltet markiert werden, wenn eine neuere, bessere Funktionalität diese ersetzt, alle APIs, die in einer früheren 5.x-Version veröffentlicht wurden, müssen weiterhin funktionsfähig bleiben, da sie möglicherweise in benutzerdefiniertem Anwendungs-Code verwendet werden. Keine dieser APIs sollte entfernt werden.
+Bestehende APIs können und sollten als veraltet markiert werden, wenn eine neuere, bessere Funktionalität diese ersetzt, alle APIs, die in einer früheren 5.x-Version veröffentlicht wurden, müssen weiterhin funktionsfähig bleiben, da sie möglicherweise in benutzerdefiniertem Anwendungs-Code verwendet werden. Solche APIs sollten nicht entfernt werden.
 
-Abwärtskompatibilität sollte auch im Hinblick auf die allgemeine Konsistenz der Inhaltsstruktur und Benutzererfahrung berücksichtigt werden.
+Die Abwärtskompatibilität sollte auch im Hinblick auf die allgemeine Konsistenz der Inhaltsstruktur und des Benutzererlebnisses berücksichtigt werden.
 
 ## Grundlegende Konzepte {#core-concepts}
 
@@ -137,11 +141,11 @@ Es ist auch möglich, mehrere Instanzen des Content-Repositorys zu einer JCR-Lö
 
 **ExtJS-Widgets**: Die meisten Elemente der Benutzeroberfläche in AEM verwenden ExtJS, eine in JavaScript geschriebene Widget-Bibliothek von Drittanbietern. ExtJS bietet leistungsstarke, anpassbare Benutzeroberflächen-Widgets und ein gut konzipiertes und erweiterbares Komponentenmodell.
 
-**JCR (Java Content Repository)**: Die Java Content Repository-Spezifikation (JSR-283) bietet sowohl ein abstraktes Datenmodell als auch eine Anwendungsprogrammierschnittstelle zur Realisierung eines massiv skalierbaren NoSQL-Datenrepositorys, das Merkmale eines Dateisystems und einer Objektdatenbank kombiniert. Obwohl Sie JSR-283 nicht umfassend verstehen müssen, sollten Sie sich die Zeit nehmen, sich mit den grundlegenden Funktionen von JCR und dem zugrunde liegenden Datenmodell vertraut zu machen, da JCR die „Alles ist Inhalt“-Philosophie von AEM ermöglicht.
+**JCR (Java Content Repository)**: Die Java Content Repository-Spezifikation (JSR-283) bietet sowohl ein abstraktes Datenmodell als auch eine Anwendungsprogrammierschnittstelle zur Realisierung eines massiv skalierbaren NoSQL-Datenrepositorys, das Merkmale eines Dateisystems und einer Objektdatenbank kombiniert. Obwohl Sie JSR-283 nicht vollständig verstehen müssen, sollten Sie sich die Zeit nehmen, sich mit den grundlegenden Funktionen von JCR und dem zugrunde liegenden Datenmodell vertraut zu machen, da JCR die &quot;Alles ist Inhalt&quot;-Philosophie von AEM ermöglicht.
 
-Im Wesentlichen ist JCR ein System von Knoten und Eigenschaften, in dem Knoten von anderen Knoten erben können und der gesamte Inhalt als *Eigenschaftswerte* gespeichert wird. Beachten Sie, dass JCR zusätzlich zur normalen Vererbung ein Konzept von „Mixin“-Knoten ermöglicht, das die Modellierung von Mehrfachvererbung ermöglicht.
+Im Wesentlichen ist JCR ein System von Knoten und Eigenschaften, in dem Knoten von anderen Knoten erben können und der gesamte Inhalt als *Eigenschaftswerte* gespeichert wird. Beachten Sie, dass JCR neben der normalen Vererbung ein Konzept von &quot;Mixin&quot;-Knoten ermöglicht, das die Modellierung der mehrfachen Vererbung ermöglicht.
 
-JCR verfügt über eine Reihe vordefinierter Knotentypen und Eigenschaftstypen, aber im Allgemeinen ist das Typisierungssystem ziemlich flexibel und tatsächlich besteht eine der Stärken von JCR darin, dass sowohl strukturierter als auch unstrukturierter Inhalt mit Leichtigkeit gespeichert/verwaltet werden kann. Das heißt, JCR kann stark strukturierte Daten aufnehmen, aber es kann auch beliebige dynamische Datenstrukturen ohne Schemaeinschränkungen aufnehmen.
+JCR verfügt über eine Reihe vordefinierter Knotentypen und Eigenschaftstypen, aber im Allgemeinen ist das Typisierungssystem ziemlich flexibel und tatsächlich besteht eine der Stärken von JCR darin, dass sowohl strukturierter als auch unstrukturierter Inhalt mit Leichtigkeit gespeichert/verwaltet werden kann. Das heißt, JCR kann sehr strukturierte Daten aufnehmen, kann aber auch beliebige dynamische Datenstrukturen ohne Schemaeinschränkungen aufnehmen.
 
 Die JavaDoc für die JCR-Java-API finden Sie [hier](http://jackrabbit.apache.org/jcr/jcr-api.html).
 
@@ -149,9 +153,9 @@ Bevor Sie versuchen, die JavaDoc- oder die JCR-Spezifikation selbst zu lesen, so
 
 **Multi-Site Manager (MSM)**: Die MSM-Funktion von AEM unterstützt Kunden bei der Bearbeitung mehrsprachiger und multinationaler Inhalte und ermöglicht es ihnen, zentralisiertes Branding mit lokalisierten Inhalten in Einklang zu bringen.
 
-**OSGi**: OSGi ist die servicebasierte Runtime-Technologie, die die Basis für die modularisierte Java-Entwicklung in AEM bietet. Es ist ein Framework, das nicht nur eine hochdynamische (und sichere) Classloading- und Execution-Umgebung für Coderessourcen (bekannt als Bundle) bietet, sondern auch volle Kontrolle über die Sichtbarkeit und den Lebenszyklus der verschiedenen Services, die von Bundles bereitgestellt werden. Eine Service-Registrierung stellt ein Kooperationsmodell für Bundles bereit, das Lebenszyklusdynamik (und Versionsanforderungen) berücksichtigt. OSGi löst viele der Probleme, die von Anwendungsservern gelöst werden sollten, jedoch auf leichte und hochdynamische Weise. So können beispielsweise Dienste schnell bereitgestellt werden (der neue Code wird sofort verfügbar, ohne den Server neu zu starten).
+**OSGi**: OSGi ist die servicebasierte Runtime-Technologie, die die Basis für die modularisierte Java-Entwicklung in AEM bietet. Es ist ein Framework, das nicht nur eine hochdynamische (und sichere) Classloading- und Execution-Umgebung für Coderessourcen (bekannt als Bundle) bietet, sondern auch volle Kontrolle über die Sichtbarkeit und den Lebenszyklus der verschiedenen Services, die von Bundles bereitgestellt werden. Eine Service-Registrierung stellt ein Kooperationsmodell für Bundles bereit, das Lebenszyklusdynamik (und Versionsanforderungen) berücksichtigt. OSGi löst viele der Probleme, die die Anwendungsserver lösen sollten, tut dies jedoch auf einfache, hochdynamische Weise, was es beispielsweise ermöglicht, Dienste heiß bereitzustellen (sodass der neue Code sofort verfügbar ist, ohne den Server neu zu starten).
 
-**Parsys, Absatzsystem**: Das Absatzsystem (parsys) ist eine zusammengesetzte Komponente, die es Autoren ermöglicht, einer Seite Komponenten verschiedener Typen hinzuzufügen, und die andere Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt. Das Absatzsystem selbst ist auch eine Komponente, die die anderen enthält.
+**Parsys, Absatzsystem**: Das Absatzsystem (parsys) ist eine zusammengesetzte Komponente, die es Autoren ermöglicht, einer Seite Komponenten verschiedener Typen hinzuzufügen, und die andere Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt. Das Absatzsystem selbst ist auch eine Komponente, die die anderen Absatzkomponenten enthält.
 
 **Mikrokernel** Jeder Arbeitsbereich im Repository kann separat konfiguriert werden, um seine Daten über einen bestimmten Mikrokernel zu speichern (eine Klasse, die das Lesen und Schreiben der Daten verwaltet). Ebenso kann der Repository-weite Versionsspeicher unabhängig für die Verwendung eines bestimmten Mikrokernels konfiguriert werden. Eine Reihe verschiedener Mikrokernel sind verfügbar, die Daten in einer Vielzahl von Dateiformaten oder relationalen Datenbanken speichern können. (Zum Beispiel gibt es Persistence Manager für MongoDB, DB2 oder Oracle). Der Standard-Microkernel für AEM ist TarMK (siehe weiter unten).
 
@@ -159,9 +163,9 @@ Bevor Sie versuchen, die JavaDoc- oder die JCR-Spezifikation selbst zu lesen, so
 
 **Schnellstart**: Im Gegensatz zu vielen anderen Programmen installieren Sie AEM mithilfe einer einzelnen selbstextrahierenden JAR-Schnellstart-Datei. Wenn Sie zum ersten Mal auf die JAR-Datei doppelklicken, wird alles, was Sie benötigen, automatisch installiert. Die Schnellstart-JAR enthält alle für das CRX-Repository erforderlichen Dateien (einschließlich Verwaltungseinrichtungen), virtuelle Repository-Dienste, Index- und Suchdienste, Workflow-Services, Sicherheit und einen Webserver sowie die CQ Servlet Engine (CQSE) und alle AEM-Dienste. Es sind keine weiteren Dateien zu installieren: Der Schnellstart ist eigenständig.
 
-Wenn Sie den Schnellstart zum ersten Mal starten, wird im Hintergrund ein ganzes JCR-kompatibles Repository erstellt, was einige Minuten dauern kann. Nach diesem ersten Start sind nachfolgende Startvorgänge viel schneller, da die Repository-Infrastruktur bereits angelegt wurde.
+Wenn Sie den Schnellstart zum ersten Mal starten, wird im Hintergrund ein ganzes JCR-kompatibles Repository erstellt, was einige Minuten dauern kann. Nach diesem ersten Start sind nachfolgende Startups viel schneller, da die Repository-Infrastruktur bereits eingerichtet wurde.
 
-Viele Startoptionen (z. B. die Nummer des aktiven Ports und ob die fragliche AEM-Instanz eine Veröffentlichungsinstanz oder eine Autoreninstanz sein soll und vieles mehr) können durch entsprechendes Umbenennen der Schnellstart-Datei gesteuert werden. Um eine Liste diesbezüglicher Optionen anzuzeigen, führen Sie das JAR mit „-help“ in der Befehlszeile aus:
+Viele Startoptionen (z. B. die Nummer des aktiven Ports und ob die fragliche AEM-Instanz eine Veröffentlichungsinstanz oder eine Autoreninstanz sein soll und vieles mehr) können durch entsprechendes Umbenennen der Schnellstart-Datei gesteuert werden. Um eine Liste der diesbezüglichen Optionen anzuzeigen, führen Sie die JAR mit &quot;-help&quot;in der Befehlszeile aus:
 
 ```shell
 java -jar <quickstartfilename>.jar -help
@@ -179,6 +183,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Tar-Speicher (TarMK)**: TarMK ist das standardmäßige Persistenzsystem in AEM. Obwohl AEM für die Verwendung eines anderen Persistenzsystems (z. B. MongoDB) konfiguriert werden kann, hat TarMK gewisse Vorteile, da es für typische JCR-Anwendungsfälle leistungsoptimiert ist (also sehr schnell), ein Industriestandard-Datenformat verwendet kann schnell und einfach gesichert werden kann.
 
-**Vorlage**: In AEM gibt eine Vorlage einen bestimmten Seitentyp an. Sie definiert die Struktur einer Seite (während sie normalerweise auch ein Miniaturbild und verschiedene Eigenschaften angibt). Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden.
+**Vorlage**: In AEM gibt eine Vorlage einen bestimmten Seitentyp an. Sie definiert die Struktur einer Seite (während sie normalerweise auch ein Miniaturbild und verschiedene Eigenschaften angibt). Sie können beispielsweise separate Vorlagen für Produktseiten, Sitemaps und Kontaktinformationen verwenden.
 
 **Workflow**: Das AEM-Workflow-System ermöglicht die Erstellung von automatisierten Prozessen mit Seiten oder Assets.

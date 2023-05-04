@@ -12,14 +12,18 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1628'
-ht-degree: 2%
+source-wordcount: '1664'
+ht-degree: 3%
 
 ---
 
 # Konsole für Community-Gruppen {#community-groups-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Gruppenkonsole bietet Zugriff auf das Erstellen von Community-Gruppen, wenn die [Vorlagenstruktur](sites-console.md#step1) enthält [Gruppenfunktion](functions.md#groups-function).
 
@@ -145,7 +149,7 @@ Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichke
 
 * Optionale Mitgliedschaft
 
-   Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine öffentliche Gruppe. Mitglieder der Site können an der Gruppe teilnehmen und Beiträge posten, ohne sich explizit der Gruppe anzuschließen. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine öffentliche Gruppe. Mitglieder der Site können an der Gruppe teilnehmen und Beiträge posten, ohne sich explizit der Gruppe anzuschließen. Standardmäßig ist ausgewählt.
 * Erforderliche Mitgliedschaft
 
    Wenn ausgewählt, ist die Community-Gruppe eine offene Gruppe. Community-Site-Mitglieder können den Inhalt der Gruppe anzeigen, müssen jedoch der Gruppe beitreten, bevor sie Inhalte posten können. Mitglieder werden durch Auswahl von `Join` in der Veröffentlichungsumgebung. Die Option Standard ist nicht ausgewählt.

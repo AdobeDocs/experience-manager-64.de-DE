@@ -10,14 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 04075ed1-3a52-4371-aa4e-0c3d61c878ef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 100%
+source-wordcount: '349'
+ht-degree: 50%
 
 ---
 
 # Tastaturbefehle für die Seitenbearbeitung{#keyboard-shortcuts-when-editing-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für die Bearbeitung von Seiten, andere für die [Verwendung von Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
@@ -30,7 +34,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >Mehrfachauswahl auf einem Desktop-Gerät:
 >
 >* Windows: Strg + Klick auf die gewünschten Komponenten.
->* Mac: Befehlstaste + Klick auf die gewünschten Komponenten.
+>* Mac: Klicken Sie bei gedrückter Befehlstaste auf die erforderlichen Komponenten.
 >
 
 
@@ -102,7 +106,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-Alt-c</code></strong></td> 
-   <td>Zeigt den <a href="/help/sites-administering/client-context.md">ClientContext</a> an.</td> 
+   <td>Zeigt die <a href="/help/sites-administering/client-context.md">Client-Kontext</a>.</td> 
   </tr> 
   <tr> 
    <td>Rich-Text-Editor<br /> </td> 
@@ -122,39 +126,39 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr> 
    <td>Content Finder - Suchfeld</td> 
    <td><strong><code>down-arrow</code></strong></td> 
-   <td>Auslösung einer Liste mit Vorschlägen. Wird benötigt, wenn zu wenige Zeichen eingegeben wurden, um die Liste automatisch auszulösen (was bei Eingabe von mindestens zwei Zeichen erfolgen sollte).</td> 
+   <td>Trigger einer Vorschlagsliste. Wird benötigt, wenn zu wenige Zeichen zum automatischen Trigger der Liste eingegeben wurden (dies geschieht, wenn mindestens 2 Zeichen eingegeben wurden).</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><strong><code>right-arrow</code></strong><br /> (auf einen vorgeschlagenen Pfad)</td> 
-   <td>Auswahl des Elements und Auslösen von Vorschlägen für den ausgewählten Pfad.</td> 
+   <td>Wählen Sie Elemente und Trigger-Vorschläge für den ausgewählten Pfad aus.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><strong><code>left-arrow</code></strong><br /> (auf einen vorgeschlagenen Pfad)</td> 
-   <td>Auswahl des Elements und Auslösen von Vorschlägen für die Vorgängerelemente (wie bei unter- und übergeordneten Elementen).</td> 
+   <td>Wählen Sie Elemente und Trigger-Vorschläge für ihre Vorgänger aus (wie in Geschwistern von übergeordneten Elementen).</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><strong><code>Enter</code></strong><br /> (auf einen vorgeschlagenen Pfad)</td> 
-   <td>Auswahl des Elements und Auslösen der Suche.</td> 
+   <td>Wählen Sie Element- und Trigger-Suche aus.</td> 
   </tr> 
   <tr> 
    <td> </td> 
    <td><strong><code>Esc</code></strong></td> 
-   <td>Schließen der Liste mit Vorschlägen.</td> 
+   <td>Schließen Sie die Vorschlagsebene.</td> 
   </tr> 
   <tr> 
    <td>Content Finder<br /> </td> 
    <td><strong><code>Alt+drag</code></strong></td> 
-   <td><p>Ziehen von Assets, Ablegen auf Ziel.</p> <p>Durch den Ziehvorgang wird ein neuer Absatz erstellt (anstatt das Asset am Ziel zu ersetzen).</p> </td> 
+   <td><p>Ziehen Sie Assets und legen Sie sie am Ziel ab.</p> <p>Die Ablageaktion erzeugt einen neuen Absatz. anstatt das Asset im Ziel zu ersetzen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) ebenfalls verschiedene Tastaturbefehle zur Verfügung.
 
-## Tastaturbefehle für Entwickler {#keyboard-shortcuts-for-development}
+## Tastaturbefehle für die Entwicklung {#keyboard-shortcuts-for-development}
 
 Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastaturbefehle zur Verfügung.
 

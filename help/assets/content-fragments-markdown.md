@@ -12,14 +12,18 @@ discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 97%
+source-wordcount: '571'
+ht-degree: 75%
 
 ---
 
 # Markdown {#markdown}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!CAUTION]
 >
@@ -43,7 +47,7 @@ Sie können Folgendes definieren:
 
 ## Überschriftsnotation {#heading-notation}
 
-Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Rautezeichen (#) wird für Ü1, zwei Rautezeichen (# #) werden für Ü2 usw. verwendet. Sie können bis zu 6 Rautezeichen verwenden. Beispiel:
+Zum Erstellen einer Kopfzeile durch Platzieren eines Rautezeichens (#) vor der Überschrift. Ein Hash-Tag (#) wird für ein H1-Tag, zwei Hash-Tags (##) für ein H2 usw. verwendet. Sie können bis zu 6 Hash-Tags verwenden. Beispiel:
 
     `## This is an H2`
 
@@ -63,7 +67,7 @@ Optional können Sie eine Ü1 erstellen, indem Sie den Text mit Gleichheitszeich
 
 ## Absätze und Zeilenumbrüche {#paragraphs-and-line-breaks}
 
-Bei einem Absatz handelt es sich einfach um eine oder mehrere aufeinander folgende Textzeilen, durch eine oder mehrere leere Zeilen getrennt. Eine leere Zeile ist eine Zeile, die nur Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
+Ein Absatz ist einfach eine oder mehrere aufeinander folgende Textzeilen, die durch eine oder mehrere leere Zeilen getrennt sind. Eine leere Zeile ist eine Zeile, die nur Leerzeichen oder Tabulatoren enthält. Normale Absätze sollten nicht mit Leerzeichen oder Tabulatoren eingerückt werden.
 
 Ein Zeilenumbruch wird durch Beenden einer Zeile mit zwei oder mehr Leerzeichen und Zeilenschalter erstellt.
 
@@ -117,7 +121,7 @@ Wobei „id“ der Name eines definierten Bildverweises ist. Bildverweise werden
 
 ## Blockzitate {#block-quotes}
 
-Sie können Text zitieren, indem Sie das Symbol > vor dem Text hinzufügen. Beispiel:
+Sie können Text zitieren, indem Sie das Symbol > vor dem Text einfügen. Beispiel:
 
     `>This is block quotes`
 
@@ -149,7 +153,7 @@ Um eine unsortierte Liste zu erstellen, verwenden Sie das Symbol „*“ vor den
 
     `* item in list`
 
-Um eine sortierte Liste zu erstellen, fügen Sie die Nummern, gefolgt von einem Punkt, vor jedem Element in der Liste hinzu. Beispiel:
+Um eine sortierte Liste zu erstellen, fügen Sie vor jedem Element in der Liste die Zahlen und danach einen Punkt hinzu. Beispiel:
 
     `1. First item in list.`
 
@@ -177,7 +181,7 @@ Sie können Text wie folgt fett formatieren:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Anders als ein vorformatierten Codeblock zeigt ein Codebereich Code in einem normal Absatz an.
+Um einen Codebereich anzugeben, schließen Sie ihn in einfache Anführungszeichen (&#39;) ein. Im Gegensatz zu vorformatierten Codeblöcken zeigt ein Codebereich Code innerhalb eines normalen Absatzes an.
 
 Beispiel:
 

@@ -7,14 +7,18 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 7d2cf3d6-0dd3-4ce2-be9e-5d8b65a9edab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 99%
+source-wordcount: '1377'
+ht-degree: 97%
 
 ---
 
 # Verwenden der Offline-Neuindizierung, um Ausfallzeiten während eines Upgrades zu reduzieren {#offline-reindexing-to-reduce-downtime-during-upgrades}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einführung {#introduction}
 
@@ -178,7 +182,7 @@ Es wird empfohlen, das Produktionssystem zu klonen und den Offline-Index mithilf
 
 ### Vorbereiten eines Runbooks und Testlauf {#prepare-a-runbook-and-trial-run}
 
-Es wird empfohlen, ein [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) vorzubereiten und einige Testläufe durchzuführen, bevor das Upgrade in der Produktion ausgeführt wird.
+Es wird empfohlen, ein [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=de#building-the-upgrade-and-rollback-runbook) vorzubereiten und einige Testläufe durchzuführen, bevor das Upgrade in der Produktion ausgeführt wird.
 
 ### doc-traversal-mode mit Offline-Indizierung {#doc-traversal-mode-with-offline-indexing}
 

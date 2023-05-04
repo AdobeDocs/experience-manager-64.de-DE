@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Aufgabenaktionen
 seo-title: Customizing Task Actions
-description: Sie können das Erscheinungsbild der Aufgabenaktionen anpassen, nur Bilder für Aktionen verwenden und die Bilder anpassen, die in Route-Aktionen verwendet werden.
+description: Sie können das Erscheinungsbild der Aufgabenaktionen anpassen, nur Bilder für Aktionen verwenden und die in Route-Aktionen verwendeten Bilder anpassen.
 seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: 3534864b-3d1c-42ca-96a0-5becbfbc8ce6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 94%
+source-wordcount: '329'
+ht-degree: 56%
 
 ---
 
 # Anpassen von Aufgabenaktionen {#customizing-task-actions}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM Forms Workspace ermöglicht dem Benutzer, die Aufgabenaktionen anzupassen. Bevor Sie die Aufgabenaktionen anpassen, stellen Sie sicher, dass Sie die Schritte unter [Generische Schritte zur Anpassung des Arbeitsbereichs von AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) befolgt haben.
 
@@ -110,7 +114,7 @@ Um den Textstil anzupassen, fügen Sie das folgende Codefragment in der Datei `/
 
 ## Anpassen von Bildern {#customizing-images}
 
-Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/ws/css/newStyle.css` hinzu. Das folgende Codefragment passt das Bild für die Aktion *Sperren* an:
+Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/ws/css/newStyle.css` hinzu. Das folgende Codefragment passt das Bild für die *lock* Aktion:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -120,7 +124,7 @@ Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/
 
 >[!NOTE]
 >
->Fügen Sie verschiedene Stile hinzu, um verschiedene Bilder oder Bilder unterschiedlicher Auflösung für die Aufgabenlisten- und Aufgabendetailaktionen anzuzeigen. Um beispielsweise die Aktion „Sperren“ zu ändern:
+>Fügen Sie separate Stile hinzu, um verschiedene Bilder oder Bilder mit unterschiedlicher Auflösung für die Aktionen Aufgabenliste und Aufgabendetails anzuzeigen. So ändern Sie beispielsweise die Aktion &quot;Sperren&quot;:
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -131,13 +135,13 @@ Um die Bilder anzupassen, fügen Sie folgendes Codefragment in der Datei `/apps/
 }
 ```
 
-## Ausschließliches Anzeigen von Bildern für Aktionen {#showing-only-images-for-actions}
+## Nur Bilder für Aktionen anzeigen {#showing-only-images-for-actions}
 
 Um nur Bilder für Aktionen anzuzeigen, passen Sie die Bilder an, die in Route-Aktionen verwendet werden. Detaillierte Informationen finden Sie unter [Bilder für Route-Aktionen](/help/forms/using/images-route-actions.md).
 
-### Aufgabenaktionen-Popupmenü „Aufgabenliste“ {#task-list-task-action-nbsp-pop-up-menu}
+### Aufgabenaktionen-Popup-Menü für Aufgabenliste {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Sie benötigen ein Entwicklungspaket, um Elemente des Aufgabenaktionen-Popupmenüs „Aufgabenliste“ von AEM Forms Workspace anzupassen. Ausführliche Informationen zum Erstellen des Entwicklungspakets finden Sie unter [Code für AEM Forms-Arbeitsbereich erstellen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Sie benötigen ein Entwicklungspaket, um Elemente des Popup-Menüs für die Aufgabenaktion &quot;AEM Forms Workspace Task&quot;anzupassen. Ausführliche Informationen zum Erstellen des Entwicklungspakets finden Sie unter [Code für AEM Forms-Arbeitsbereich erstellen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Kopieren Sie /libs/ws/js/runtime/templates/task.html nach `/apps/ws/js/runtime/templates/task.html`, und ersetzen Sie das folgende Codefragment:
 

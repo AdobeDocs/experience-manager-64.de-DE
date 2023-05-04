@@ -1,17 +1,21 @@
 ---
-title: AEM 6.4-Verwaltungsanleitung
+title: Benutzerhandbuch für die Verwaltung von AEM 6.4
 seo-title: AEM 6.4 Managing User Guide
 description: In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 4fa34d1f-c41e-4b9b-98d3-8c364a60776d
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 93%
+source-wordcount: '342'
+ht-degree: 85%
 
 ---
 
-# AEM 6.4-Verwaltungsanleitung
+# Benutzerhandbuch für die Verwaltung von AEM 6.4
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In diesem Handbuch wird beschrieben, wie Sie ein AEM Projekt erfolgreich verwalten
 

@@ -10,20 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 133d93b0-512c-46db-b5f9-f981d77b565f
 exl-id: 6eb00c31-6806-478a-99d1-55912798ea69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 63%
 
 ---
 
 # Verwenden der automatischen Speicherung in der AEM Forms-App {#using-autosave-in-aem-forms-app}
 
-Wenn ein Benutzer Daten in die Adobe Experience Manager Forms-App eingibt, speichert die Funktion sie automatisch in regelmäßigen Abständen. Die automatische Speicherung in der AEM Forms-App hilft Ihnen, Datenverlust zu vermeiden, wenn die App versehentlich geschlossen wird.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Ihre App wird versehentlich geschlossen:
+Wenn ein Benutzer Daten in die Adobe Experience Manager Forms-App eingibt, speichert die Funktion sie in regelmäßigen Abständen. Die Funktion zum automatischen Speichern in der AEM Forms-App hilft Ihnen, Datenverlust zu vermeiden, wenn die App versehentlich geschlossen wird.
 
-* Wenn sich Ihr Gerät aufgrund niedrigem Akku ausschaltet
+Ihre App kann versehentlich geschlossen werden:
+
+* Wenn Ihr Gerät aufgrund des niedrigen Akkus heruntergefahren wird
 * Wenn der Benutzer die App abbricht
 * Wenn ein unerwarteter Absturz auftritt
 
@@ -33,9 +37,9 @@ Sie können die Intervalle angeben, in denen die App die eingegebenen Daten spei
 >
 >Wählen Sie den Wert sorgfältig aus. Eine häufige automatische Speicherung kann spürbare Auswirkungen auf die Leistung Ihres Geräts haben.
 
-Führen Sie die folgenden Schritte aus, um die automatische Speicherung in der AEM Forms-App zu verwenden:
+Führen Sie die folgenden Schritte aus, um die Funktion zum automatischen Speichern in der AEM Forms-App zu verwenden:
 
-1. Melden Sie sich bei der App und navigieren Sie zu **[!UICONTROL „Settings“ > „General“]**.
+1. Melden Sie sich bei der App an und navigieren Sie zu **[!UICONTROL Einstellungen > Allgemein]**.
 1. Verwenden Sie im Bildschirm „General“ die Option **[!UICONTROL Autosave Frequency]**, um die Intervalle auszuwählen, in denen das Programm die eingegebenen Daten speichern soll.
    [![Einstellung „Autosave Frequency“](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 

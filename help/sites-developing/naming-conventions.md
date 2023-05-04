@@ -10,14 +10,18 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 741043c7-2ebb-455d-8163-a246b874a7b3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 100%
+source-wordcount: '337'
+ht-degree: 81%
 
 ---
 
 # Benennungskonventionen{#naming-conventions}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Knoten im Repository unterliegen den Benennungskonventionen des [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). AEM erfordert jedoch weitere Konventionen für die Namen von Seitenknoten.
 
@@ -61,17 +65,17 @@ Die standardmäßige Touch-optimierte Benutzeroberfläche:
 
 ### Klassische Benutzeroberfläche {#classic-ui}
 
-Die klassische Benutzeroberfläche gibt strengere Einschränkungen vor:
+Die klassische Benutzeroberfläche enthält strengere Einschränkungen:
 
-* Validiert den Namen bei expliziten Knotennamen, wenn entweder:
+* Validiert den Namen, wenn entweder:
 
    * ein Seitentitel zum Konvertieren in den Knotennamen angegeben ist
    * ein expliziter Knotenname angegeben ist
 
 * Gültige Zeichen (beim Erstellen innerhalb der klassischen Benutzeroberfläche sind nur diese Zeichen tatsächlich gültig, obwohl `PageManagerImpl` weitere Zeichen erlauben würde):
 
-   * „a“ bis „z“
-   * „A“ bis „Z“
-   * „0“ bis „9“
+   * &quot;a&quot;bis &quot;z&quot;
+   * &quot;A&quot;bis &quot;Z&quot;
+   * &quot;0&quot;bis &quot;9&quot;
    * _ (Unterstrich)
    * `-` (Strich/Minus)

@@ -8,21 +8,25 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 7%
+source-wordcount: '679'
+ht-degree: 6%
 
 ---
 
 # Versionshinweise zu Livefyre Feature Pack 2.0.6 {#livefyre-feature-pack-release-notes}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Versionshinweise {#release-information}
 
 | Produkte | Livefyre Feature Pack 2.0.6 |
 |--- |--- |
-| Version | 2,0,6 |
-| Typ | Neue Funktionen |
+| Version | 2.0.6 |
+| Typ | Feature Release |
 | Datum | 31. August 2018 |
 | Download-URL | Wenden Sie sich an Ihren Administrator |
 | Kompatibilität (*) | AEM 6.4 SP1, 6.4, 6.3 GA und 6.2 SP1 |
@@ -62,7 +66,7 @@ Aufgrund von Aktualisierungen, die sich auf die Aggregation von Inhalten aus Nic
 #### Neue Funktion oder Verbesserung {#new-feature-or-improvement}
 
 * Es wurde die Möglichkeit hinzugefügt, benutzergenerierte Inhalte zu durchsuchen, bevor in Livefyre soziale Konten für Rechteanforderungen eingerichtet werden. Sie müssen soziale Konten einrichten, um Berechtigungen anzufordern, oder die Rechteanforderung überschreiben, wenn Sie Eigentümer des Inhalts sind.
-* Instagram und Twitter [Workflow für UGC-Rechteanforderungen](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html) wurde aktualisiert, um den neuesten APIs zu entsprechen.
+* Instagram und Twitter [Workflow für UGC-Rechteanforderungen](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html?lang=de) wurde aktualisiert, um den neuesten APIs zu entsprechen.
 * Der Berechtigungsstatus und die entsprechenden Aktionen werden jetzt auf dem Bildschirm mit den Rechteanforderungen angezeigt.
 
 #### Fehlerbehebungen {#bug-fixes}

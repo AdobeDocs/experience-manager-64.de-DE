@@ -1,5 +1,5 @@
 ---
-title: Distiller Service Java API QuickStart(SOAP)
+title: Distiller Service Java API-Schnellstart (SOAP)
 seo-title: Distiller Service Java API QuickStart(SOAP)
 description: Verwenden Sie die Java-API des Distiller-Diensts, um eine PostScript-Datei in ein PDF-Dokument zu konvertieren.
 seo-description: Use the Distiller Service Java API to convert a PostScript file to a PDF document.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
 exl-id: 0d7cdb60-e892-4644-8a72-a8068ca2e224
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 83%
+source-wordcount: '221'
+ht-degree: 73%
 
 ---
 
 # Distiller Service Java API Quick Start (SOAP) {#distiller-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Java API Quick Start (SOAP) ist für den Distiller®-Service verfügbar:
 

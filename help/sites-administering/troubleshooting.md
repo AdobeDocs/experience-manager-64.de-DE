@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit Protokollen
 seo-title: Working with Logs
-description: Erfahren Sie, wie Sie anhand von Protokollen eine Fehlerbehebung für AEM durchführen können.
+description: Erfahren Sie, wie Sie AEM beheben können, indem Sie mit Protokollen arbeiten.
 seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: b64e0b25-5228-4c2f-9cc1-dde524134026
 contentOwner: Guillaume Carlino
@@ -10,18 +10,22 @@ topic-tags: operations
 content-type: reference
 discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
 exl-id: 201e2b57-17c0-4454-9b0e-026e2c95ac63
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 100%
+source-wordcount: '270'
+ht-degree: 67%
 
 ---
 
 # Arbeiten mit Protokollen{#working-with-logs}
 
-Dieser Abschnitt beinhaltet ausführliche Informationen zu den zur Fehlerbehebung verfügbaren Protokollen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-CRX zeichnet detaillierte Protokolle auf. Nach dem Entpacken und Aufrufen der Schnellstart-Funktion finden Sie Protokolle an den folgenden Speicherorten:
+Dieser Abschnitt enthält detaillierte Informationen zu den verfügbaren Protokollen, die Ihnen bei der Fehlerbehebung helfen.
+
+CRX zeichnet detaillierte Protokolle auf. Nachdem Sie Quickstart entpackt und gestartet haben, finden Sie Protokolle an den folgenden Speicherorten:
 
 * crx-quickstart/launchpad/logs
 * crx-quickstart/server/logs
@@ -31,7 +35,7 @@ CRX zeichnet detaillierte Protokolle auf. Nach dem Entpacken und Aufrufen der Sc
 
 Die standardmäßige Protokollebene ist INFO, DEBUG-Meldungen werden also nicht protokolliert.
 
-Zum Aktivieren der DEBUG-Protokollebene stellen Sie mit dem CRX-Explorer die Eigenschaft
+Um die DEBUG-Protokollebene zu aktivieren, verwenden Sie den CRX-Explorer, um die
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level

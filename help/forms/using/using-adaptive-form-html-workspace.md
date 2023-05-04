@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2f514072-81d9-48de-8369-cca94a330f1d
 exl-id: 88fa9c80-4eae-4663-a6c8-abbf1921444e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 98%
+source-wordcount: '713'
+ht-degree: 56%
 
 ---
 
 # Verwenden eines adaptiven Formulars in HTML Workspace {#using-an-adaptive-form-in-html-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Mit AEM Forms on JEE können adaptive Formulare in HTML Workspace verwendet werden.
 
@@ -24,19 +28,19 @@ Da während des Prozess-Designs ein XDP ausgewählt werden kann, wurde die Funkt
 
 ## Prozessdesign {#process-design-experience}
 
-Führen Sie folgende Schritte durch, damit adaptive Formulare im Prozessdesign verwendet werden können:
+Führen Sie die folgenden Schritte aus, um die Verwendung adaptiver Formulare im Prozessentwurf zu ermöglichen:
 
-* Sie können in „Aufgabe zuweisen“ und in „Ausgangspunkt“ zum adaptiven Formularelement im CRX-Repository navigieren, wenn Sie ein Formularelement einer Aufgabe zuweisen.
-* Sie können im Eigenschaftenblatt „Aufgabe zuweisen/Ausgangspunkt“ die Symbolleiste der obersten Ebene/die globale Symbolleiste eines adaptiven Formulars ausblenden.
+* In &quot;Aufgabe zuweisen&quot;und &quot;Ausgangspunkt&quot;können Sie beim Zuweisen eines Formular-Assets zu einer Aufgabe zu einem adaptiven Formular-Asset im CRX-Repository navigieren.
+* Im Eigenschaftenblatt &quot;Aufgabe zuweisen/Ausgangspunkt&quot;können Sie die Symbolleiste der obersten Ebene/die globale Symbolleiste eines adaptiven Formulars ausblenden.
 * Sie können neue Aktionsprofile für Wiedergabe- und Sendeaktionen in adaptiven Formularen verwenden.
 
-### LiveCycle-Anwendung importieren und exportieren {#livecycle-application-export-and-import}
+### Export und Import von LiveCycle-Anwendungen {#livecycle-application-export-and-import}
 
-Da adaptive Formulare im AEM-Repository vorhanden sind, enthält der Export der LiveCycle-Anwendung nur die Verweise für die verwendeten adaptiven Formulare. Deshalb umfasst der Export und Import des LiveCycle-Programms zwei Schritte. Die LiveCycle-Anwendung enthält Prozessdefinitionen usw. Ein separates Paket, das adaptive Formulare enthält, wird als ZIP-Datei aus AEM exportiert. Beim Importieren wird die LiveCycle-Anwendung über Workbench importiert und adaptive Formulare werden über AEM importiert.
+Da sich adaptive Formulare im AEM-Repository befinden, enthält der LiveCycle-Anwendungsexport nur die Verweise für verwendete adaptive Formulare. Deshalb umfasst der Export und Import des LiveCycle-Programms zwei Schritte. Die LiveCycle-Anwendung enthält Prozessdefinitionen usw. Ein separates Paket, das adaptive Formulare enthält, wird als ZIP-Datei aus AEM exportiert. Beim Importieren wird die LiveCycle-Anwendung über Workbench importiert und adaptive Formulare werden über AEM importiert.
 
-## Benutzerfreundlichkeit adaptiver Formulare in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
+## Anwendererlebnis des adaptiven Formulars in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
-HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu den Steuerelementen, die für Mobile Forms verfügbar sind. Ein Benutzer kann Anlagen hinzufügen, die adaptiven Formulare im HTML Workspace speichern, signieren, senden und navigieren, wenn der Benutzer eine Aufgabe oder einen Ausgangspunkt öffnet. Spezifikationen:
+HTML Workspace bietet einige adaptive formularspezifische Steuerelemente zusätzlich zu den Steuerelementen, die für mobile Formulare verfügbar sind. Benutzer können in HTML Workspace Anlagen hinzufügen, speichern, signieren, senden und navigieren, wenn sie eine Aufgabe oder einen Startpunkt öffnen. Im Folgenden finden Sie die Details:
 
 1. Um **Dateien anzuhängen, verwenden Sie Aufgabenanlagen, wie es in Mobile Forms der Fall war. Schaltflächen für Dateianhänge des adaptiven Formulars werden ausgeblendet.
 
@@ -48,7 +52,7 @@ HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu
 
 1. **Navigationssteuerelemente des Arbeitsbereichs für adaptive Formulare**: Die Schaltflächen „Weiter“/„Zurück“ zusammen mit den Schaltflächen „Speichern“, „Senden“ und „Route-Aktion“ sind für ein adaptives Formular in HTML Workspace verfügbar. Klicken Sie auf die Schaltflächen „Weiter/Zurück“, um zwischen den Bereichen der adaptiven Formulare in HTML Workspace zu navigieren. Die Schaltflächen „Weiter/Zurück“ ermöglichen die Navigation, ähnlich der Navigationssteuerelemente in der Ansicht „Mobil“ der adaptiven Formulare.
 
-1. **eSign-Services und die Übersichtskomponente des adaptiven Formulars**: Die Übersichtskomponente ist in HTML Workspace nicht funktional. Das heißt, wenn ein adaptives Formular eine Übersichtkomponente beinhaltet, ist sie im Arbeitsbereich nicht sichtbar. Klicken Sie in der Esign-Komponente anstelle von „Automatisch senden“ auf „Senden“ oder eine Route-Aktion in HTML Workspace. Nach der Unterzeichnung des Dokuments ist es als reduziertes signiertes Dokument sichtbar. Klicken Sie auf **Senden** oder eine Route-Aktion, um die Aufgabe oder den Ausgangspunkt zu schließen/abzuschließen.
+1. **eSign-Services und die Übersichtskomponente des adaptiven Formulars**: Die Übersichtskomponente ist in HTML Workspace nicht funktional. Anders ausgedrückt: Wenn ein adaptives Formular über eine Zusammenfassungskomponente verfügt, ist es im Arbeitsbereich nicht sichtbar. Anstelle des automatischen Sendevorgangs in der Design-Komponente klickt der Workspace-Benutzer auf die Übermittlungs- oder Routenaktion in HTML Workspace. Nachdem ein Dokument signiert wurde, ist es als reduziertes signiertes Dokument sichtbar. Klicken **Einsenden** oder einer Route-Aktion, um die Aufgabe oder den Startpunkt zu schließen/abzuschließen.
 
    Das signierte Dokument wird vom eSign-Dienste-Server erfasst und die Daten-XML-Datei wird im nächsten Schritt weitergeleitet.
 
@@ -75,6 +79,6 @@ HTML Workspace bietet adaptive formularspezifische Steuerelemente zusätzlich zu
 
    >[!NOTE]
    >
-   >Weitere Informationen zur Erstellung eines adaptiven Formulars, finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
+   >Weitere Informationen zum Erstellen eines adaptiven Formulars finden Sie unter [Erstellen eines adaptiven Formulars](/help/forms/using/creating-adaptive-form.md).
    >
    >Weitere Informationen zur Erstellung eines Prozesses finden Sie unter [Erstellen und Verwalten von Prozessen](https://help.adobe.com/de_DE/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).

@@ -8,14 +8,18 @@ topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 role: Admin
 exl-id: 308b106f-4c5a-49d6-a7f6-c1e8a0bf62e9
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 92%
+source-wordcount: '1645'
+ht-degree: 70%
 
 ---
 
 # Installieren und Konfigurieren eines formularzentrierten Workflows unter OSGi {#installing-and-configuring-forms-centric-workflow-on-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einführung {#introduction}
 
@@ -35,9 +39,9 @@ AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse. Formularzent
 
 ## Bereitstellungstopologie {#deployment-topology}
 
-AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen minimal nur eine AEM-Autoren- oder -Verarbeitungsinstanz (Produktionsautor), um die Funktionalität des formularzentrierten Workflows unter OSGi auszuführen. Eine Verarbeitungsinstanz ist eine [extrasichere AEM-Autoreninstanz](/help/forms/using/hardening-securing-aem-forms-environment.md). Führen Sie auf dem Produktionsautor kein tatsächliches Authoring durch, wie das Erstellen von Workflows oder adaptiven Formularen.
+Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Sie benötigen minimal nur eine AEM-Autoren- oder -Verarbeitungsinstanz (Produktionsautor), um die Funktionalität des formularzentrierten Workflows unter OSGi auszuführen. Eine Verarbeitungsinstanz ist eine [extrasichere AEM-Autoreninstanz](/help/forms/using/hardening-securing-aem-forms-environment.md). Führen Sie auf dem Produktionsautor kein tatsächliches Authoring durch, wie das Erstellen von Workflows oder adaptiven Formularen.
 
-Die folgende Topologie ist eine indikative Topologie zum Ausführen von AEM Forms Interactive Communications, Correspondence Management, AEM Forms-Datenerfassung und Forms-Centric-Workflow für OSGi-Funktionen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Die folgende Topologie ist eine indikative Topologie für die Ausführung von AEM Forms Interactive Communications, Correspondence Management, AEM Forms-Datenerfassung und Forms-zentrierten Workflows für OSGi-Funktionen. Detaillierte Informationen zu Topologien finden Sie unter [Architektur und Bereitstellungstopologien für AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![recommended-topology](assets/recommended-topology.png)
 
@@ -54,18 +58,18 @@ Bevor Sie mit der Installation und Konfiguration eines formularzentrierten Workf
 * Hardware- und Software-Infrastruktur ist eingerichtet. Eine detaillierte Liste der unterstützten Hardware und Software finden Sie unter [Technische Anforderungen](/help/sites-deploying/technical-requirements.md).
 
 * Der Installationspfad der AEM-Instanz enthält keine Leerzeichen.
-* Eine AEM-Instanz wird ausgeführt. In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens eine AEM Instanz (Autor oder Verarbeitung), um einen formularzentrierten Workflow unter OSGi auszuführen:
+* Eine AEM Instanz läuft. In der AEM-Terminologie bezeichnet eine „Instanz“ eine Kopie von AEM, die auf einem Server im Autor- oder Veröffentlichungsmodus ausgeführt wird. Sie benötigen mindestens eine AEM Instanz (Autor oder Verarbeitung), um einen formularzentrierten Workflow unter OSGi auszuführen:
 
    * **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
-   * **Verarbeitung:** Eine Verarbeitungsinstanz ist eine [extrasichere Instanz von AEM Autor](/help/forms/using/hardening-securing-aem-forms-environment.md). Nach der Installation können Sie eine Autoreninstanz festlegen und absichern. 
-   * **Veröffentlichen**: Eine AEM-Instanz, die den Inhalt über das Internet oder ein internes Netzwerk veröffentlicht.
+   * **Verarbeitung:** Eine Verarbeitungsinstanz ist [gehärtete AEM-Autoreninstanz](/help/forms/using/hardening-securing-aem-forms-environment.md) -Instanz. Nach der Installation können Sie eine Autoreninstanz festlegen und absichern. 
+   * **Veröffentlichen**: Eine AEM Instanz, die die veröffentlichten Inhalte über das Internet oder ein internes Netzwerk öffentlich zugänglich macht.
 
-* Speicheranforderungen werden erfüllt. Für das Add-on-Paket für AEM Forms ist Folgendes erforderlich:
+* Die Speicheranforderungen sind erfüllt. Für das Add-on-Paket für AEM Forms ist Folgendes erforderlich:
 
-   * 15 GB temporärer Speicherplatz für Microsoft Windows-basierte Installationen.
+   * 15 GB temporärer Speicherplatz für Windows-basierte Installationen von Microsoft.
    * 6 GB temporärer Speicherplatz für UNIX-basierte Installationen.
 
-* Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie die folgenden-Pakete aus den Installationsmedien des jeweiligen Betriebssystems.
+* Zusätzliche Anforderungen für UNIX-basierte Systeme: Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie die folgenden Pakete aus den Installationsmedien des jeweiligen Betriebssystems.
 
 <table> 
  <tbody>
@@ -98,13 +102,13 @@ Bevor Sie mit der Installation und Konfiguration eines formularzentrierten Workf
 
 ## Installieren des AEM Forms-Add-on-Pakets {#install-aem-forms-add-on-package}
 
-AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält einen formularzentrierten Workflow unter OSGi und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
+Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das Paket enthält einen formularzentrierten Workflow unter OSGi und andere Funktionen. Führen Sie die folgenden Schritte aus, um das Add-On-Paket zu installieren:
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
-1. Im Abschnitt **[!UICONTROL Filter]**:
-   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
+1. Im **[!UICONTROL Filter]** Abschnitt:
+   1. Auswählen **[!UICONTROL Forms]** von **[!UICONTROL Lösung]** Dropdown-Liste.
+   2. Wählen Sie die Version aus und geben Sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Tippen Sie auf den für Ihr Betriebssystem zutreffenden Paketnamen, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
@@ -116,9 +120,9 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
 
-AEM Forms verfügt über einige obligatorische und optionale Konfigurationen. Zu den obligatorischen Konfigurationen gehören die Konfiguration von BouncyCastle-Bibliotheken und des Serialisierungsagenten. Zu den optionalen Konfigurationen gehören die Konfiguration von Dispatcher und Adobe Target.
+AEM Forms verfügt über einige obligatorische und optionale Konfigurationen. Zu den obligatorischen Konfigurationen gehören die Konfiguration von BouncyCastle-Bibliotheken und Serialisierungsagenten. Zu den optionalen Konfigurationen gehören die Konfiguration von Dispatcher und Adobe Target.
 
-### Obligatorisch Konfigurationen nach der Installation {#mandatory-post-installation-configurations}
+### Obligatorische Konfigurationen nach der Installation {#mandatory-post-installation-configurations}
 
 #### Konfigurieren von RSA- und BouncyCastle-Bibliotheken  {#configure-rsa-and-bouncycastle-libraries}
 
@@ -158,26 +162,26 @@ Führen Sie auf allen Autoren- und Veröffentlichungsinstanzen folgende Schritte
 
 #### Konfiguration des Dispatchers {#configure-dispatcher}
 
-Dispatcher ist ein Tool zum Zwischenspeichern und für den Lastenausgleich für AEM. Durch Anwendung von AEM Dispatcher können Sie auch den AEM-Server vor Angriffen schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden. Wenn Sie [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
+Dispatcher ist ein Tool zum Zwischenspeichern und für den Lastenausgleich für AEM. AEM Dispatcher hilft auch, AEM Server vor Angriffen zu schützen. Somit können Sie die Sicherheit Ihrer AEM-Instanz verbessern, indem Sie den Dispatcher in Verbindung mit einem Webserver der Unternehmensklasse verwenden. Wenn Sie [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) verwenden, führen Sie die folgenden Konfigurationen für AEM Forms durch:
 
 1. Konfigurieren des Zugriffs für AEM Forms:
 
-   Öffnen Sie die Datei „dispatcher.any“, um sie zu bearbeiten. Navigieren Sie zum Filterabschnitt und fügen Sie den folgenden Filter dem Filterabschnitt hinzu:
+   Öffnen Sie die Datei &quot;dispatcher.any&quot;zur Bearbeitung. Navigieren Sie zum Filterabschnitt und fügen Sie dem Filterabschnitt den folgenden Filter hinzu:
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Speichern und schließen Sie die Datei. Detaillierte Informationen zu Filtern finden Sie unter [Dispatcher-Dokumentation](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
-1. Konfigurieren des Referrer-Filterservice:
+1. Konfigurieren Sie den Referrer-Filterdienst:
 
    Melden Sie sich beim Apache Felix Configuration Manager als Administrator an. Die Standard-URL für den Configuration Manager lautet `https://[server]:[port_number]/system/console/configMgr`. Wählen Sie im Menü **Configurations** die Option **Apache Sling Referrer Filter.** Geben Sie im Feld „Hosts zulassen“ den Hostnamen des Dispatchers ein, um ihn als Referrer zuzulassen, und klicken Sie auf **Speichern**. Das Format des Eintrags ist `https://[server]:[port]`.
 
-#### Konfigurieren des Cache {#configure-cache}
+#### Cache konfigurieren {#configure-cache}
 
-Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu reduzieren, und die Geschwindigkeit von Eingabe/Ausgabe (I/A) zu verbessern. Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne die vorausgefüllten Daten zu speichern. Die Zeit, die benötigt wird, um ein adaptives Formular oder ein Dokument auf dem Client zu rendern, wird reduziert.
+Das Caching ist ein Mechanismus, um Datenzugriffszeiten zu verkürzen, Latenzzeiten zu reduzieren und die Ein-/Ausgabegeschwindigkeit (I/O) zu verbessern. Der Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne dass vorausgefüllte Daten gespeichert werden. Dies trägt dazu bei, die zum Rendern eines adaptiven Formulars erforderliche Zeit zu verkürzen.
 
-* Wenn Sie den Cache für adaptive Formulare verwenden, nutzen Sie den [AEM-Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars oder Dokuments zwischenzuspeichern.
-* Beim Entwickeln der benutzerdefinierten Komponenten muss auf dem für die Entwicklung verwendeten Server der Cache für adaptive Formulare deaktiviert bleiben.
+* Verwenden Sie bei Verwendung des Cache für adaptive Formulare den [AEM Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html) , um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars zwischenzuspeichern.
+* Halten Sie beim Entwickeln benutzerdefinierter Komponenten den Cache für adaptive Formulare auf dem für die Entwicklung verwendeten Server deaktiviert.
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
 
@@ -186,7 +190,7 @@ Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu 
 
    >[!NOTE]
    >
-   >Um den Cache zu deaktivieren, legen Sie den Wert für die Anzahl adaptiver Formulare auf **0** fest. Der Cache wird zurückgesetzt, und alle Formulare und Dokumente werden aus dem Cache entfernt, wenn Sie die Cachekonfiguration deaktivieren oder ändern.
+   >Um den Cache zu deaktivieren, setzen Sie den Wert im Feld Anzahl adaptiver Forms auf **0**. Der Cache wird zurückgesetzt, und alle Formulare und Dokumente werden aus dem Cache entfernt, wenn Sie die Cachekonfiguration deaktivieren oder ändern.
 
 #### Konfigurieren von Acrobat Sign {#configure-adobe-sign}
 

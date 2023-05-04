@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 476b1c78-8332-4a79-93dc-a615ec58abbe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 100%
+source-wordcount: '1889'
+ht-degree: 98%
 
 ---
 
 # Berechnen von Formulardaten {#calculating-form-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Der Forms-Service kann die Werte berechnen, die ein Benutzer in ein Formular eingibt, und die Ergebnisse anzeigen. Zur Berechnung von Formulardaten müssen Sie zwei Aufgaben ausführen. Erstellen Sie zunächst ein Formularentwurfsskript, das Formulardaten berechnet. Ein Formularentwurf unterstützt drei Arten von Skripten. Ein Skripttyp wird auf dem Client ausgeführt, ein anderer auf dem Server und der dritte sowohl auf dem Server als auch auf dem Client. Der in diesem Thema beschriebene Skripttyp wird auf dem Server ausgeführt. Server-seitige Berechnungen werden für HTML-, PDF- und Formularhandbuchtransformationen (veraltet) unterstützt.
 

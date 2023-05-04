@@ -1,7 +1,7 @@
 ---
 title: OSGi-Bundles
 seo-title: OSGI Bundles
-description: Tipps für die Verwaltung von OSGi-Bundles
+description: Tipps zum Verwalten von OSGi-Bundles
 seo-description: Tips for managing your OSGi bundles
 uuid: 07af7089-a233-4e5b-928c-76ddc0af8839
 contentOwner: User
@@ -10,24 +10,28 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12
 exl-id: 19df20a9-7c89-4dfa-8eca-81c4a14c21ff
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 100%
+source-wordcount: '387'
+ht-degree: 57%
 
 ---
 
 # OSGi-Bundles{#osgi-bundles}
 
-## Verwenden von semantischer Versionierung {#use-semantic-versioning}
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+## Verwenden der semantischen Versionierung {#use-semantic-versioning}
 
 Die vereinbarten Best Practices für die semantische Versionsnummeriierung finden Sie unter [https://semver.org/](https://semver.org/).
 
-## Bedarfsbeschränktes Einbetten von Klassen und JAR-Dateien in OSGi-Bundles  {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
+## Betten Sie nicht mehr Klassen und JARs ein, als in OSGi-Bundles unbedingt erforderlich sind {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Allgemeine Bibliotheken sollten in separate Bundles ausgelagert werden. So können Sie sie für alle Bundles wiederverwenden. Wenn Sie einen *JAR*-Wrapper für ein OSGi-Bundle erstellen möchten, überprüfen Sie zuerst online, ob dieser Vorgang bereits von jemand anderem ausgeführt wurde. Bereits vorhandene Bundle-Wrapper finden Sie unter anderem in: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes und dem SpringSource Enterprise Bundle Repository.
+Gemeinsame Bibliotheken sollten in separate Bundles zusammengefasst werden. Dadurch können sie in allen Bundles wiederverwendet werden. Beim Umbrechen einer *JAR* in einem OSGi-Bundle überprüfen Sie die Online-Quellen, um festzustellen, ob dies bereits geschehen ist. Einige gängige Stellen, an denen vorhandene Bundle-Wrapper gefunden werden, sind: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes und das SpringSource Enterprise Bundle Repository.
 
-## Verwenden der niedrigsten erforderlichen Bundle-Versionen {#depend-on-the-lowest-needed-bundle-versions}
+## Abhängig von den am wenigsten benötigten Bundle-Versionen {#depend-on-the-lowest-needed-bundle-versions}
 
 Verwenden Sie für Kompilierungszeit-Abhängigkeiten in POM-Dateien immer die niedrigste erforderliche Version, die die API verfügbar macht. Dies ermöglicht eine höhere Abwärtskompatibilität und erleichtert die Backport-Fehlerbehebung bei älteren Versionen.
 
@@ -35,9 +39,9 @@ Verwenden Sie für Kompilierungszeit-Abhängigkeiten in POM-Dateien immer die ni
 
 Unmittelbar nach dem Exportieren eines Pakets wird eine API erstellt, von der andere Komponenten abhängen. Exportieren Sie so wenig wie möglich und stellen Sie sicher, dass Sie tatsächlich APIs exportieren. Es ist einfacher, eine private Methode oder Klasse öffentlich zu machen, als eine zuvor exportierte Komponente privat zu machen.
 
-Implementierungen müssen immer in einem separaten *impl*-Paket erfolgen. Standardmäßig exportiert das *maven-bundle*-Plug-in alle Komponenten eines Projekts, die kein *impl* im Namen enthalten.
+Implementierungen sollten immer in einem separaten *impl* Paket. Standardmäßig wird die *maven-bundle-plugin* exportiert alles im Projekt, das keine *impl* im Namen.
 
-## Ausdrückliches Definieren einer semantischen Version für jedes exportierte Paket {#always-explicitly-define-a-semantic-version-for-each-package-exported}
+## Definieren Sie immer explizit eine semantische Version für jedes exportierte Paket {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
 Dadurch können sich Nutzer der API an Ihr Entwicklungstempo anpassen. Folgen Sie dabei immer den Best Practices für die semantische Versionierung. Verbraucher der API sind dann immer darüber informiert, mit welchen Änderungen in einer neuen Version zu rechnen ist.
 

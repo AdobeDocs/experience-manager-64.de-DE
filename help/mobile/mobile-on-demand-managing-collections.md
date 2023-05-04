@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 exl-id: fc83cd28-2fd6-4136-839b-b48a69ca75d0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '833'
+ht-degree: 5%
 
 ---
 
 # Verwalten von Sammlungen{#managing-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -33,13 +37,13 @@ Sammlungen stellen eine genau definierte *Behälter* mit Inhalten wie Artikeln o
 >
 >Weitere Informationen zu den folgenden Themen in AEM Mobile-Apps finden Sie in den folgenden Ressourcen der Online-Hilfe:
 >
->* [Betrachtungen zum Entwurf](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Designüberlegungen](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Verwalten von Sammlungen](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 
-## Erstellen von Sammlungen {#creating-a-collection}
+## Erstellen einer Sammlung {#creating-a-collection}
 
 Der allgemeine Workflow zum Erstellen einer Kollektion lautet wie folgt:
 
@@ -108,7 +112,7 @@ Allgemeiner Workflow zum Hochladen einer Sammlung:
 1. Auswählen **Hochladen** Klicken Sie in der Aktionsleiste auf Hochladen im Dialogfeld.
 1. Ihre Sammlung(en) wurde(n) jetzt in Mobile On-Demand hochgeladen.
 
-## Löschen von Sammlungen {#deleting-a-collection}
+## Löschen einer Sammlung {#deleting-a-collection}
 
 Durch diesen Vorgang wird die ausgewählte Sammlung aus Mobile On-Demand und optional aus der lokalen AEM gelöscht.
 

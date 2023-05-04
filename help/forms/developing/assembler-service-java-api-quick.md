@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
 exl-id: 2efc0a84-4808-47dd-a859-76caf98b1872
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 91%
+source-wordcount: '1093'
+ht-degree: 89%
 
 ---
 
 # Schnellstart der Assembler-Service Java-API (SOAP) {#assembler-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Der Java-API-Schnellstart (SOAP) ist für den Assembler-Service verfügbar
 

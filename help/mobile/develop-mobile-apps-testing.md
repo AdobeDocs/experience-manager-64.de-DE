@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: 2a70f322-2540-471e-8a8e-6d48889cf94a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1061'
 ht-degree: 3%
 
 ---
 
 # Testen von mobilen Apps{#testing-mobile-apps}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -40,7 +44,7 @@ Diese Fragen sollten während der automatisierten und manuellen Tests beantworte
 
 ## Automatisierte Tests {#automated-testing}
 
-Ein gewisser Grad automatisierter Tests sollte durchgeführt werden, um die verschiedenen Bildschirmgrößen, Speicherbeschränkungen, Eingabemethoden und Betriebssysteme abzudecken. Sie deckt nicht nur einen Großteil der Testfälle ab, sondern kann Regressionstests beschleunigen, wenn neue Funktionen oder Geräte eingeführt werden. Idealerweise sollten Ihre Automatisierungstools Doppelarbeit reduzieren oder begrenzen. Verwenden Sie Tools oder Frameworks, damit Ihre Testbemühungen auf allen Plattformen gelten. Die folgende Tabelle zeigt eine vereinfachte Struktur einer Testumgebung für webbasierte Benutzeroberflächentests und Tests mobiler Apps. Die linke Seite des Diagramms zeigt eine Reihe von Selenium-Knoten mit Browsern an. SeleniumGrid kann allgemeine, webbasierte UI-Tests für jeden dieser Knoten auswerten. Der Selenium-Hub kann für plattformübergreifende App-Tests auch eine Verbindung zu Appium herstellen. Es werden nur Simulatoren angezeigt, Sie können aber adb für Android- und Xcode-Dienstprogramme für iOS-Geräte integrieren. Links finden Sie weiter unten in diesem Dokument, in dem Sie spezifische Details zu den erwähnten Tools finden.
+Ein gewisser Grad automatisierter Tests sollte durchgeführt werden, um die verschiedenen Bildschirmgrößen, Speicherbeschränkungen, Eingabemethoden und Betriebssysteme abzudecken. Sie deckt nicht nur einen Großteil der Testfälle ab, sondern kann Regressionstests beschleunigen, wenn neue Funktionen oder Geräte eingeführt werden. Idealerweise sollten Ihre Automatisierungstools Doppelarbeit reduzieren oder begrenzen. Verwenden Sie Tools oder Frameworks, damit Ihre Testbemühungen auf allen Plattformen gelten. Die folgende Tabelle zeigt eine vereinfachte Struktur einer Testumgebung für webbasierte Benutzeroberflächentests und Tests mobiler Apps. Die linke Seite des Diagramms zeigt eine Reihe von Selenium-Knoten mit Browsern an. SeleniumGrid kann allgemeine, webbasierte UI-Tests für jeden dieser Knoten auswerten. Der Selenium-Hub kann auch für plattformübergreifende App-Tests eine Verbindung zu Appium herstellen. Es werden nur Simulatoren angezeigt, Sie können aber adb für Android- und Xcode-Dienstprogramme für iOS-Geräte integrieren. Links finden Sie weiter unten in diesem Dokument, in dem Sie spezifische Details zu den erwähnten Tools finden.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 

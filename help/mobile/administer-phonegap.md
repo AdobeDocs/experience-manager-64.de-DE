@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: cd080122-7ae5-4e6e-a8f6-b95dfbb0b511
 exl-id: ad66445b-0c83-48d0-880f-14ab2dce3716
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 12%
+source-wordcount: '410'
+ht-degree: 7%
 
 ---
 
 # Verwalten von Inhalten für Adobe PhoneGap Enterprise mit AEM {#administering-content-for-adobe-phonegap-enterprise-with-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -34,9 +38,9 @@ Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie unter [Erstell
 So richten Sie Ihre Umgebung ein und beginnen mit dem Control Center:
 
 1. [Konfigurieren von Benutzern und Gruppen](/help/mobile/configure-users-groups.md)
-1. [Festlegen des Verweiserfilters für die Verwendung von leeren Verweisern ](/help/mobile/setting-referrer-filter-empty.md)
-1. [Konfigurieren des Adobe PhoneGap Build-Cloud-Service ](/help/mobile/configure-phonegap-build-cloud.md)
-1. [Konfigurieren des Adobe Analytics-Cloud-Service ](/help/mobile/configure-adobe-mobile-cloud-service.md)
+1. [Den Referrer-Filter so einstellen, dass er leer ist](/help/mobile/setting-referrer-filter-empty.md)
+1. [Adobe PhoneGap Build Cloud Service konfigurieren](/help/mobile/configure-phonegap-build-cloud.md)
+1. [Konfigurieren des Adobe Analytics Cloud-Dienstes](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
 Weitere Informationen zu Content Services Content Services finden Sie unter [Verwalten von Content Services](/help/mobile/developing-content-services.md).
 

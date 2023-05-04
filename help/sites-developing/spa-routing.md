@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: 865f524d-6b54-43c8-9b28-86a766e010a1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 97%
+source-wordcount: '536'
+ht-degree: 89%
 
 ---
 
-# SPA-Modell-Routing{#spa-model-routing}
+# SPA-Modell-Routing {#spa-model-routing}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 
@@ -59,7 +63,7 @@ Die aktuelle Implementierung basiert auf der Annahme, dass das SPA-Projekt die H
 
 `ModelRouter` unterstützt das Konzept des Modell-Routings, da es auf `pushState`- und `replaceState`-Aufrufe wartet, um Modellfragmente vorab abzurufen. Intern triggert es den `PageModelManager`, das Modell zu laden, das einer bestimmten URL entspricht, und löst ein `cq-pagemodel-route-changed`-Ereignis aus, das andere Module überwachen können.
 
-Standardmäßig ist dieses Verhalten automatisch aktiviert. Um es zu deaktivieren, sollte die SPA die folgende Meta-Eigenschaft rendern:
+Standardmäßig ist dieses Verhalten automatisch aktiviert. Um sie zu deaktivieren, sollte der SPA die folgende Meta-Eigenschaft rendern:
 
 ```
 <meta property="cq:pagemodel_router" content="disable"\>

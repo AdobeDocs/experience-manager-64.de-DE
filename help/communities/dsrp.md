@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 role: Admin
 exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '665'
 ht-degree: 4%
 
 ---
 
 # DSRP - Resource Provider für relationale Datenbankspeicher {#dsrp-relational-database-storage-resource-provider}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Über DSRP {#about-dsrp}
 
@@ -125,7 +129,7 @@ So stellen Sie die identische Konfiguration in der Veröffentlichungsumgebung zu
 Bei Autor:
 
 * Navigieren Sie vom Hauptmenü zu **[!UICONTROL Tools > Vorgänge > Replikation]**
-* Doppelklicken Sie auf **[!UICONTROL Tree aktivieren]**
+* Doppelklicken **[!UICONTROL Baum aktivieren]**
 * **Startpfad:**
 
    * Navigieren Sie zu `/conf/global/settings/community/srpc/`

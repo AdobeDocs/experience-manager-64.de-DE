@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 role: Admin
 exl-id: 0e906f67-b908-4c41-b243-e4f90100ce5d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 4%
+source-wordcount: '760'
+ht-degree: 5%
 
 ---
 
 # Messaging konfigurieren {#configuring-messaging}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -62,7 +66,7 @@ Die Gesamtzahl der pro Benutzer zulässigen Nachrichten. Der Wert -1 zeigt an, d
 
 * **[!UICONTROL Versandfehler benachrichtigen]**
 Wenn diese Option aktiviert ist, benachrichtigen Sie den Absender, wenn der Nachrichtenversand bei einigen Empfängern fehlschlägt. Der Standardwert ist 
-*markiert*.
+*aktiviert*.
 
 * **[!UICONTROL Versandabsender-ID eines fehlgeschlagenen Versands]**
 Name des Absenders, der in der Nachricht mit fehlgeschlagenen Sendungen angezeigt wird. Der Standardwert ist 
@@ -93,7 +97,7 @@ Anzahl der gleichzeitigen Threads, die für die Aktualisierung der Anzahl verwen
 
 * **[!UICONTROL supportAttachments.name]**
 Wenn diese Option aktiviert ist, können Benutzer ihren Nachrichten Anlagen hinzufügen. Der Standardwert ist 
-*markiert*.
+*aktiviert*.
 
 * **[!UICONTROL batchSize.name]**
 Anzahl der Nachrichten, die im Batch-Vorgang an eine große Empfängergruppe gesendet werden. Der Standardwert ist 
@@ -105,7 +109,7 @@ Wenn supportAttachments aktiviert ist, gibt dieser Wert die maximal zulässige G
 
 * **[!UICONTROL attachmentTypeBlocklist.name]**
 Eine Blockierungsliste von Dateierweiterungen mit dem Präfix &quot;
-**möglich.**&#39;, das vom System abgelehnt wird. Wenn die Erweiterung nicht auf die Blockierungsliste gesetzt wird, ist sie zulässig. Erweiterungen können mit dem **+**&#39; und &#39;**-**&quot;. Der Standardwert ist *STANDARD*.
+**.**&#39;, das vom System abgelehnt wird. Wenn die Erweiterung nicht auf die Blockierungsliste gesetzt wird, ist sie zulässig. Erweiterungen können mit dem **+**&#39; und &#39;**-**&quot;. Der Standardwert ist *STANDARD*.
 
 * **[!UICONTROL allowedAttachmentTypes.name]**
 

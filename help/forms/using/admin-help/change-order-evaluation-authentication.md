@@ -1,7 +1,7 @@
 ---
-title: Die Reihenfolge der Auswertung für die Authentifizierung ändern
+title: Ändern der Reihenfolge der Auswertung für die Authentifizierung
 seo-title: Change the order of evaluation for authentication
-description: Sie können die Reihenfolge ändern, in der AEM Forms mehrere Anbieter zur Authentifizierung auswertet.
+description: Sie können die Reihenfolge ändern, in der AEM Formulare mehrere Authentifizierungsanbieter auswertet.
 seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
@@ -10,19 +10,23 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 exl-id: cac16c50-a85d-4e40-a590-8a0a52be893c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 100%
+source-wordcount: '183'
+ht-degree: 52%
 
 ---
 
-# Die Reihenfolge der Auswertung für die Authentifizierung ändern {#change-the-order-of-evaluation-for-authentication}
+# Ändern der Reihenfolge der Auswertung für die Authentifizierung {#change-the-order-of-evaluation-for-authentication}
 
-Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die Reihenfolge ändern, in der AEM Forms diese Anbieter zur Authentifizierung auswertet. Die Reihenfolge, in der die Authentifizierungsanbieter in der Datei „config.xml“ aufgelistet werden, bestimmt die Reihenfolge der Auswertung für die Authentifizierung.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
-1. Um die aktuellen Konfigurationseinstellungen in eine Datei zu exportieren, klicken Sie auf Exportieren und speichern die Konfigurationsdatei an einem anderen Speicherort.
+Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die Reihenfolge ändern, in der AEM Formulare sie zur Authentifizierung auswertet. Die Reihenfolge der Authentifizierungsanbieter, die in der Datei config.xml aufgeführt sind, bestimmt die Reihenfolge der Auswertung für die Authentifizierung.
+
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
+1. Um die aktuellen Konfigurationseinstellungen in eine Datei zu exportieren, klicken Sie auf „Exportieren“ und speichern Sie die Konfigurationsdatei an einem anderen Speicherort.
 1. Suchen Sie den folgenden Knoten in der Datei:
 
    ```as3
@@ -45,5 +49,5 @@ Wenn Sie mehrere Authentifizierungsanbieter konfiguriert haben, können Sie die 
 
    Bearbeiten Sie unter `<entry key="order" value="3" />` den Wert für jeden Knoten, um die Reihenfolge der Authentifizierungsbewertung festzulegen.
 
-1. Um die aktualisierte Datei zu importieren, klicken Sie in „Benutzerverwaltung“ auf Konfiguration > Konfigurationsdateien im- und exportieren.
-1. Klicken Sie auf Durchsuchen, um die Datei zu suchen, klicken Sie dann auf „Importieren“ und anschließend auf OK.
+1. Um die aktualisierte Datei zu importieren, klicken Sie in „Benutzerverwaltung“ auf „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
+1. Klicken Sie auf „Durchsuchen“, um die Datei zu suchen, dann auf „Importieren“ und anschließend auf „OK“.

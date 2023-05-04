@@ -1,5 +1,5 @@
 ---
-title: Remoting-Endpunkte konfigurieren
+title: Konfigurieren der Remoting-Endpunkte
 seo-title: Configuring Remoting endpoints
 description: Erfahren Sie, wie Sie Remoting-Endpunkte konfigurieren.
 seo-description: Learn how to configure remoting endpoints.
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: aab9d622-d76b-4100-9ca6-e5b86f543381
 exl-id: d8e31f99-0558-4634-ae35-f4a09f34ad6d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 100%
+source-wordcount: '156'
+ht-degree: 37%
 
 ---
 
-# Remoting-Endpunkte konfigurieren {#configuring-remoting-endpoints}
+# Konfigurieren der Remoting-Endpunkte {#configuring-remoting-endpoints}
 
-Ein Remoting-Endpunkt aktiviert eine Anwendung, die mit Flex erstellt wurde, um den Dienst mithilfe von (für AEM Forms nicht mehr unterstützt) AEM Forms Remoting aufzurufen. Ein Remoting-Endpunkt wird automatisch für jeden aktivierten Dienst erstellt. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt und Flex-Clients können Remoteobjekte erstellen, die auf dieses Ziel verweisen, um Vorgänge für den entsprechenden Dienst aufzurufen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Ein Remoting-Endpunkt ermöglicht es einer mit Flex erstellten Anwendung, den Dienst mithilfe von (für AEM Formulare nicht mehr unterstützt) AEM Forms Remoting aufzurufen. Für jeden aktivierten Dienst wird automatisch ein Remoting-Endpunkt erstellt. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt. Flex-Clients können Remote-Objekte erstellen, die auf dieses Ziel verweisen, um Vorgänge für den entsprechenden Dienst aufzurufen.
 
 ## Remoting-Endpunkteinstellungen {#remoting-endpoint-settings}
 

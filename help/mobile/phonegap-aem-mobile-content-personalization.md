@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c9c818dc-c5c4-4a96-94fe-9dc9fe75705b
 exl-id: 8b7a9edc-b7b1-4b31-9a6f-7f79aea7a960
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 3%
+source-wordcount: '2709'
+ht-degree: 2%
 
 ---
 
 # Personalisierung von AEM Mobile-Inhalten{#aem-mobile-content-personalization}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -262,7 +266,7 @@ Wenn der Inhaltsautor die Erstellung von Inhalten für die Mobile App abgeschlos
    <td>Wenn "true"rekursiv alle untergeordneten Seiten rendert, werden bei "false"keine Wiederholungen ausgegeben. </td>
   </tr>
   <tr>
-   <td>extension</td>
+   <td>Erweiterung</td>
    <td>html</td>
    <td>Legt die Erweiterung für die gerenderte Ressource fest. Auf HTML gesetzt, sodass die Seiten die Erweiterung .html aufweisen.</td>
   </tr>
@@ -279,11 +283,11 @@ Um Inhalte speziell für mobile Anwendungen zu rendern, verwendet AEM Mobile die
 
 Für jede mbox ein Attribut von **cq-targeting** wurde hinzugefügt, sodass Anwendungsentwickler benutzerdefinierten Code schreiben können, um ihn zu nutzen und zu verwenden, wie es ihnen gefällt. Die [AEM Mobile Hybrid Reference App](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) hat ein Beispiel für eine Angular-Direktive, die das Attribut cq-targeting verwendet. Das Konzept des Inhaltsaustauschs, wann und wie er durchgeführt wird, liegt sehr am Entwickler der Mobile App. Es gibt ein Mobile SDK, das über AEM /etc/clientlibs/mobileapps/js/mobileapps.js bereitgestellt wird, das eine API zum Aufrufen des Adobe Targeting-Dienstes bereitstellt. Es ist Sache des Anwendungsentwicklers, anzugeben, wann dieser Aufruf gemäß dem Design seiner Anwendung erfolgen soll.
 
-## So geht es weiter? {#what-s-next}
+## Wie geht es weiter? {#what-s-next}
 
-1. [Mein AEM Mobile App-Erlebnis ](/help/mobile/starting-aem-phonegap-app.md)
-1. [Verwalten des App-Inhalts ](/help/mobile/phonegap-manage-app-content.md)
-1. [Erstellen meiner Anwendung ](/help/mobile/building-app-mobile-phonegap.md)
-1. [Messen der Leistung meiner App mit Adobe Mobile Analytics ](/help/mobile/phonegap-intro-to-app-analytics.md)
-1. [Ein personalisiertes App-Erlebnis mit Adobe Target ](/help/mobile/phonegap-aem-mobile-content-personalization.md)
-1. [Senden wichtiger Nachrichten an meine Benutzer ](/help/mobile/phonegap-push-notifications.md)
+1. [Mein AEM Mobile-App-Erlebnis starten](/help/mobile/starting-aem-phonegap-app.md)
+1. [Inhalt meiner App verwalten](/help/mobile/phonegap-manage-app-content.md)
+1. [Meine Anwendung erstellen](/help/mobile/building-app-mobile-phonegap.md)
+1. [Verfolgen der Leistung meiner App mit Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+1. [Bereitstellen eines personalisierten App-Erlebnisses mit Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+1. [Senden wichtiger Nachrichten an meine Benutzer](/help/mobile/phonegap-push-notifications.md)

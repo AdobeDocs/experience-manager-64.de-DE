@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: bef38e7a-92db-4226-a4ea-8facce573456
 exl-id: b132216a-c9b4-4f8f-97e6-738a5a9632d1
-source-git-commit: db64b7d5ac9044c4b2fee6ae4adbe9aab1cf4c7d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 100%
+source-wordcount: '920'
+ht-degree: 96%
 
 ---
 
 # Anzeigen und Verstehen von Transaktionsberichten {#viewing-and-understanding-transaction-reports}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Verwenden Sie Transaktionsberichte, um eine fundierte Entscheidung über die Produktnutzung zu treffen und Investitionen in Hardware und Software neu auszurichten.
 

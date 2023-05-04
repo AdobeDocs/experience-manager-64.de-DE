@@ -12,14 +12,18 @@ discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
 feature: Selectors
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 94%
 
 ---
 
 # Arbeiten mit Selektoren  {#working-with-selectors}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Beim Arbeiten mit einem interaktiven Bild, interaktiven Videos oder Karussellbannern wählen Sie Assets sowie Sites und Produkte für Hotspots und Imagemaps zum Verknüpfen aus. Wenn Sie mit Bildsets, Rotationssets und Multimediasets arbeiten, wählen Sie mit dem Asset-Selektor Assets aus.
 
@@ -91,7 +95,7 @@ Verwenden Sie den Site-Selektor, um eine Web-Seite auszuwählen, wenn Sie einen 
 
 1. Wenn Sie im **[!UICONTROL Vorschaumodus]** auf den Hotspot oder die Imagemap tippen, gehen Sie zur Seite der AEM-Site, die Sie angegeben haben.
 
-## Wählen von Assets {#selecting-assets}
+## Auswählen von Assets {#selecting-assets}
 
 Verwenden Sie diesen Selektor, um Bilder zur Verwendung in Karussellbannern, interaktiven Videos, Bildsets, gemischten Mediensets und Rotationssets auszuwählen. In interaktiven Videos ist der Asset-Selektor verfügbar, wenn Sie auf **[!UICONTROL Assets auswählen]** auf der Registerkarte **[!UICONTROL Inhalt]** tippen. In Karussellsets ist der Asset-Selektor verfügbar, wenn Sie eine neue Folie erstellen. In Bildsets, gemischten Mediensets und Rotationssets ist der Asset-Selektor verfügbar, wenn Sie ein neues Bildset, gemischtes Medienset oder Rotationsset erstellen.
 

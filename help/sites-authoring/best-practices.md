@@ -1,7 +1,7 @@
 ---
 title: Best Practices
 seo-title: Best Practices
-description: Wie AEM am effizientesten und effektivsten verwendet wird
+description: Verwendung von AEM auf die effizienteste und effizienteste Weise
 seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
@@ -10,18 +10,22 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 84db73b0-1bc3-4c39-9bc2-0840e24832b0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 88%
+source-wordcount: '321'
+ht-degree: 45%
 
 ---
 
 # Best Practices{#best-practices}
 
-Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese laufend erweiterte Liste von Themen enthält eine Vielzahl von Bereichen in AEM.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
+Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese wachsende Themenliste umfasst verschiedene Bereiche in AEM.
+
+In den folgenden Bereichen finden Sie Dokumentationen zu Best Practices:
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -33,11 +37,11 @@ Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finde
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
 * [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
-Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
+Spezifische Dokumente werden in den folgenden Tabellen beschrieben und mit ihnen verknüpft.
 
 ## Assets {#assets}
 
-Best Practices rund um Assets, einschließlich der Funktion für dynamische Medien und Scene7-Integration, werden in den folgenden Themen beschrieben:
+Best Practices rund um Assets, einschließlich der Dynamic Media-Funktion und der Scene7-Integration, werden in den folgenden Themen beschrieben:
 
 <table> 
  <tbody>
@@ -49,7 +53,7 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
   <tr>
    <td>Videokodierung</td> 
    <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best Practices für die Kodierung</a></td> 
-   <td>Beschreibt Best Practices rund um die Kodierung von Quellvideodateien.</td> 
+   <td>Beschreibt Best Practices für die Kodierung von Quellvideodateien.</td> 
   </tr>
   <tr>
    <td>Dynamic Imaging</td> 
@@ -66,7 +70,7 @@ Best Practices rund um Assets, einschließlich der Funktion für dynamische Medi
 
 ## Sites {#sites}
 
-Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practices wie folgt beschrieben:
+Für die Verwaltung und Bearbeitung von Website-Inhalten gelten folgende Best Practices:
 
 |  |  |  |
 |---|---|---|
@@ -77,5 +81,5 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 |  |  |  |
 |---|---|---|
-| Adaptive Formulare | [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) | Beschreibt Best Practices für das Einrichten, Bearbeiten und Anpassen adaptiver Formulare |
-| HTML5-Formulare | [Best Practices für den Entwurf von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) | Beschreibt Best Practices für Arbeiten am Layout und Design von HTML5-Formularen |
+| Adaptive Formulare | [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) | Beschreibt Best Practices zum Einrichten, Bearbeiten und Anpassen adaptiver Formulare. |
+| HTML5-Formulare | [Best Practices für die Erstellung von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) | Beschreibt Best Practices für die Arbeit am Layout und Design von HTML5-Formularen. |

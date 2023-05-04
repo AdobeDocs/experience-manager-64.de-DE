@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 9%
+source-wordcount: '506'
+ht-degree: 6%
 
 ---
 
 # Communities-Sites {#communities-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Dieser Abschnitt richtet sich an diejenigen, die AEM Communities verwalten und mit AEM Communities-Funktionen vertraut sind.
 
@@ -26,8 +30,8 @@ Dieser Abschnitt richtet sich an diejenigen, die AEM Communities verwalten und m
 
 Einen Überblick und die ersten Schritte finden Sie unter:
 
-* [Übersicht über AEM Communities](overview.md)
-* [Einstieg in AEM Communities](getting-started.md)
+* [Übersicht über AEM Communities](overview.md)
+* [Erste Schritte mit AEM Communities](getting-started.md)
 * [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md)
 
 ## Administrations- und Konfigurationsthemen {#administration-and-configuration-topics}
@@ -98,7 +102,7 @@ Es ist wichtig, die neueste Communities-Version auf der AEM zu installieren:
 
 Auf der Bereitstellungsseite finden Sie weitere Communities-spezifische Informationen, z. B. für [Upgrade](upgrade.md), [Dispatcher](dispatcher.md) und [Replikation](deploy-communities.md#replication-agents-on-author).
 
-## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
+## Verwandte Communities - Dokumentation {#related-communities-documentation}
 
 * Besuch [Bereitstellen von Communities](deploy-communities.md) , um mehr über empfohlene Bereitstellungen zu erfahren.
 

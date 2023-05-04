@@ -11,14 +11,18 @@ topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 role: Developer
 exl-id: 92351e2d-1928-4bc4-aaff-d557ee09d1ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 97%
+source-wordcount: '967'
+ht-degree: 94%
 
 ---
 
 # Dienst-Container {#service-container}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM Forms-Services, die sich im Service-Container befinden (einschließlich Standard-Services wie dem Verschlüsselungs-Service, langlebigen und kurzlebigen Prozessen), können mit verschiedenen Providern, wie z. B. einem EJB-Provider, aufgerufen werden. Ein EJB-Anbieter ermöglicht den Aufruf von AEM Forms-Services über RMI/IIOP. Ein Webservice-Anbieter stellt Services als Web-Services (WSDL-Generierung) unter Verwendung von Standards wie SOAP/HTTP und SOAP/JMS bereit.
 

@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 6%
+source-wordcount: '2216'
+ht-degree: 4%
 
 ---
 
 # Bereitstellen von Communities {#deploying-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Voraussetzungen {#prerequisites}
 
@@ -122,7 +126,7 @@ Die erforderlichen Schritte sind:
 1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und zu starten:
 
    * Beispiel: http://localhost:4502/system/console/bundles
-   * Auswählen **`Install/Update`**
+   * Klicken Sie auf **`Install/Update`**
    * Durchsuchen... , um das aus dem heruntergeladenen ZIP-Archiv extrahierte Bundle auszuwählen.
    * Vergewissern Sie sich, dass *JDBC-Treiber der oracle Corporation für MySQLcom.mysql.jdbc* aktiv ist, und starten Sie es, falls nicht (oder überprüfen Sie die Protokolle)
 
@@ -131,7 +135,7 @@ Die erforderlichen Schritte sind:
    * Beispiel: http://localhost:4502/system/console/configMgr
    * Suchen `Day Commons JDBC Connections Pool` Konfiguration
    * Zum Öffnen auswählen
-   * Auswählen `Save`
+   * Klicken Sie auf `Save`
 
 1. Wiederholen Sie die Schritte 3 und 4 für alle Autoren- und Veröffentlichungsinstanzen.
 
@@ -236,7 +240,7 @@ Der gemeinsame Speicher unterstützt die Moderation von und die Analyse von benu
 
 * [Empfohlene Topologien](topologies.md): beschreibt die je nach Anwendungsfall und SRP-Auswahl zu verwendende Topologie
 
-## Aktualisieren {#upgrading}
+## Upgrade {#upgrading}
 
 Wenn Sie von früheren Versionen von AEM auf die AEM 6.4-Plattform aktualisieren, ist es wichtig, die Informationen unter Upgrade auf AEM 6.4 zu lesen.
 
@@ -436,9 +440,9 @@ Informationen zur Verwendung eines Dispatchers finden Sie unter:
 * [Konfigurieren des Dispatchers für Communities](dispatcher.md)
 * [Bekannte Probleme](troubleshooting.md#dispatcher-refetch-fails)
 
-## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
+## Verwandte Communities - Dokumentation {#related-communities-documentation}
 
-* Unter [Communities-Sites verwalten](administer-landing.md) erfahren Sie mehr darüber, wie Sie Community-Sites erstellen, Community-Site-Vorlagen bearbeiten, Community-Inhalte moderieren, Mitglieder verwalten und Messaging-Systeme konfigurieren können.
+* Besuch [Verwalten von Communities-Sites](administer-landing.md) , um mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging zu erfahren.
 
 * Besuch [Entwickeln von Communities](communities.md) , um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
 

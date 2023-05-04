@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 66%
+source-wordcount: '429'
+ht-degree: 47%
 
 ---
 
 # Ein- und Auschecken von Dateien in Assets {#check-in-and-check-out-files-in-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Mit Adobe Experience Manager Assets können Sie Assets zur Bearbeitung auschecken und wieder einchecken, nachdem Sie die Änderungen vorgenommen haben. Nachdem Sie ein Asset ausgecheckt haben, können nur Sie es bearbeiten, kommentieren, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in [!DNL Experience Manager] Assets. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
@@ -34,7 +38,7 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 
    ![chlimage_1-470](assets/chlimage_1-470.png)
 
-   Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Ein Schlosssymbol wird auf der Miniatur des Assets angezeigt, das Sie ausgecheckt haben.
+   Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Auf der Miniaturansicht des Assets, das Sie ausgecheckt haben, wird ein Sperrsymbol angezeigt.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
 
@@ -42,9 +46,9 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   Sie können jedoch auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** klicken/tippen, um die Metadaten für das gesperrte Asset zu bearbeiten.
+   Sie können jedoch auf die **[!UICONTROL Eigenschaften anzeigen]** zum Bearbeiten der Metadaten für das gesperrte Asset.
 
-1. Klicken/tippen Sie auf das Symbol „Bearbeiten“, um das Asset im Bearbeitungsmodus zu öffnen.
+1. Klicken/tippen Sie auf das Symbol Bearbeiten , um das Asset im Bearbeitungsmodus zu öffnen.
 
    ![chlimage_1-473](assets/chlimage_1-473.png)
 
@@ -65,10 +69,10 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 Administratoren können Assets einchecken, die von anderen Benutzern ausgecheckt wurden.
 
 1. Melden Sie sich bei [!DNL Assets] als Admin an.
-1. Wählen Sie in der Assets-Benutzeroberfläche ein bzw. mehrere Assets, das bzw. die von anderen Benutzern ausgecheckt wurde(n).
+1. Wählen Sie in der Assets-Benutzeroberfläche mindestens ein Asset aus, das von anderen Benutzern ausgecheckt wurde.
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
 
-1. Klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Sperre lösen]**. Das Asset wird wieder eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
+1. Klicken/tippen Sie in der Symbolleiste auf die **[!UICONTROL Sperre freigeben]** Symbol. Das Asset wird wieder eingecheckt und steht anderen Benutzern zur Bearbeitung zur Verfügung.
 
    ![chlimage_1-477](assets/chlimage_1-477.png)

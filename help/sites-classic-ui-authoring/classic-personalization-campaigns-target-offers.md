@@ -1,7 +1,7 @@
 ---
 title: Target-Angebote
 seo-title: Target offers
-description: Target-Angebote erstellen
+description: Erstellen von Zielangeboten
 seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
@@ -10,19 +10,23 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: ca9c6fd1-7f2e-4c99-ba6e-0a064274ac24
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 100%
+source-wordcount: '127'
+ht-degree: 53%
 
 ---
 
 # Target-Angebote{#target-offers}
 
-## Erstellen eines Test&amp;Target-Angebots {#creating-a-test-target-offer-experience}
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-1. Wählen Sie im linken Bereich die neue Kampagne oder doppelklicken Sie im rechten Bereich darauf.
-1. Wählen Sie die Listenansicht mit folgendem Symbol:
+## Erstellen eines Test&amp;Target-Angebotserlebnisses {#creating-a-test-target-offer-experience}
+
+1. Wählen Sie Ihre neue Kampagne im linken Bereich aus oder doppelklicken Sie im rechten Bereich darauf.
+1. Wählen Sie die Listenansicht mithilfe des Symbols aus:
 
    ![](do-not-localize/chlimage_1-11.png)
 

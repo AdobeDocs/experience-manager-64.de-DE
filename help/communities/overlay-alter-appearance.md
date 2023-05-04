@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
 exl-id: 01a20578-56c3-41b3-8a0e-281104af2481
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 2%
+source-wordcount: '249'
+ht-degree: 5%
 
 ---
 
 # Erscheinungsbild ändern {#alter-the-appearance}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Skript ändern {#modify-the-script}
 
@@ -26,9 +30,9 @@ Das Skript comment.hbs ist für die Erstellung der gesamten HTML für jeden Komm
 So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 
 1. Kopieren `comment.hbs`von `libs`nach `apps`
-   1. Auswählen `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Klicken Sie auf `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. Klicken Sie auf **[!UICONTROL Kopieren]**
-   1. Auswählen `/apps/social/commons/components/hbs/comments/comment`
+   1. Klicken Sie auf `/apps/social/commons/components/hbs/comments/comment`
    1. Auswählen **[!UICONTROL Einfügen]**
 1. Öffnen Sie die überlagerte `comment.hbs`
    * Doppelklicken auf Knoten  `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`

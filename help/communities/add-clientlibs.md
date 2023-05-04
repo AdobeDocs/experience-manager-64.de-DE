@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 exl-id: 9b8c3d1c-a9b1-4dde-9044-46c8f2b22c22
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '735'
 ht-degree: 9%
 
 ---
 
 # Clientlibs hinzufügen {#add-clientlibs}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Hinzufügen eines ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
 
@@ -38,7 +42,7 @@ Die `categories`Der Eigenschaftswert, der dieser Client-Bibliothek zugewiesen wi
 
 Im **[!UICONTROL Eigenschaften]** Registerkarte für die neue `clientlibs` Knoten, geben Sie die **`categories`** Eigenschaft:
 
-* Name:**[!UICONTROL Kategorien]**
+* Name: **[!UICONTROL categories]**
 * Typ:**[!UICONTROL String]**
 * Wert: **[!UICONTROL apps.an-scf-sandbox]**
 * Klicken Sie auf **[!UICONTROL Hinzufügen]**
@@ -129,7 +133,7 @@ Die Include-Anweisung gehört in die `<head>` Abschnitt `<html>` Skript. Die Sta
 
 1. Verwenden **[!UICONTROL CRXDE Lite]** auswählen **`/libs/foundation/components/page/headlibs.jsp`**
 1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Kopieren]** (oder wählen Sie in der Symbolleiste Kopieren aus)
-1. Auswählen **`/apps/an-scf-sandbox/components/playpage`**
+1. Klicken Sie auf **`/apps/an-scf-sandbox/components/playpage`**
 1. Klicken Sie mit der rechten Maustaste und wählen Sie **[!UICONTROL Einfügen]** (oder wählen Sie in der Symbolleiste Einfügen aus)
 1. Doppelklicken Sie auf **`headlibs.jsp`** öffnen
 1. Hängen Sie die folgende Zeile an das Ende der Datei an

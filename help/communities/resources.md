@@ -1,5 +1,5 @@
 ---
-title: Aktivierungsressourcen-Konsole
+title: Konsole "Aktivierungsressourcen"
 seo-title: Enablement Resources Console
 description: In der Ressourcenkonsole erstellen, verwalten und weisen Aktivierungsmanager Ressourcen Mitgliedern einer Aktivierungs-Community-Site zu.
 seo-description: The Resources console is where Enablement Managers create, manage, and assign resources to members of an enablement community site
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2957'
-ht-degree: 6%
+source-wordcount: '2993'
+ht-degree: 5%
 
 ---
 
-# Aktivierungsressourcen-Konsole {#enablement-resources-console}
+# Konsole &quot;Aktivierungsressourcen&quot; {#enablement-resources-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Bei AEM Communities befindet sich die Ressourcenkonsole an der Stelle [Aktivierungsmanager](users.md) Ressourcen erstellen, verwalten und Mitgliedern einer Aktivierungs-Community-Site zuweisen.
 
@@ -146,7 +150,7 @@ Wenn die Ressource Teil eines Kurses, eines Lernpfads ist, sollten Mitglieder nu
 
 * **[!UICONTROL Im Katalog anzeigen]**
 
-   Wenn diese Option deaktiviert ist, wird die Aktivierungsressource in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird die Aktivierungsressource in allen Katalogen angezeigt, es sei denn, [vorgefiltert](catalog-developer-essentials.md#pre-filters) oder die Member-Filter aus der Benutzeroberfläche. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option deaktiviert ist, wird die Aktivierungsressource in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird die Aktivierungsressource in allen Katalogen angezeigt, es sei denn, [vorgefiltert](catalog-developer-essentials.md#pre-filters) oder die Member-Filter aus der Benutzeroberfläche. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Beschreibung]**
 
@@ -252,15 +256,15 @@ Wählen Sie aus der Asset-Bibliothek aus. Die Auswahl ist auf diejenigen beschr�
 
    * **[!UICONTROL Kommentieren zulassen]**
 
-      Wenn diese Option aktiviert ist, können Mitglieder die Ressource kommentieren. Diese Option ist standardmäßig aktiviert.
+      Wenn diese Option aktiviert ist, können Mitglieder die Ressource kommentieren. Die Option Standard ist aktiviert.
 
    * **[!UICONTROL Bewertungen zulassen]**
 
-      Wenn diese Option aktiviert ist, dürfen Mitglieder die Ressource bewerten. Diese Option ist standardmäßig aktiviert.
+      Wenn diese Option aktiviert ist, dürfen Mitglieder die Ressource bewerten. Die Option Standard ist aktiviert.
 
    * **[!UICONTROL Anonymen Zugriff erlauben]**
 
-      Wenn diese Option aktiviert ist, können anonyme Site-Besucher die Ressource in einem Katalog anzeigen, wenn die Community-Site auch einen anonymen Zugriff zulässt. Diese Option ist standardmäßig deaktiviert.
+      Wenn diese Option aktiviert ist, können anonyme Site-Besucher die Ressource in einem Katalog anzeigen, wenn die Community-Site auch einen anonymen Zugriff zulässt. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Fälligkeitsdatum]**
 
@@ -282,7 +286,7 @@ Wählen Sie aus der Asset-Bibliothek aus. Die Auswahl ist auf diejenigen beschr�
 * **[!UICONTROL Zuweisende Stellen hinzufügen]**
 Verwenden Sie das Pulldown-Menü, um aus [members](#members-group) - die Benutzer und Benutzergruppen (fettgedruckt), die als Lernende eingeschrieben werden sollen. Wenn sich Mitglieder bei der Community-Site anmelden, werden die Aktivierungsressourcen (und Lernpfade), in denen sie angemeldet sind, auf ihrer [Zuweisungen](functions.md#assignments-function) Seite.
 
-* Wählen Sie **[!UICONTROL Erstellen]** aus.
+* select **[!UICONTROL Erstellen]**
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -333,7 +337,7 @@ Bei Aktivierungsressourcen, die in einem Lernpfad enthalten sind, sollten die Zu
 
 * **[!UICONTROL Im Katalog anzeigen]**
 
-   Wenn diese Option deaktiviert ist, wird der Lernpfad in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird der Lernpfad in allen Katalogen angezeigt, es sei denn, [vorgefiltert](catalog-developer-essentials.md#pre-filters) oder die Member-Filter aus der Benutzeroberfläche. Durch die Anzeige des Lernpfads in einem Katalog wird LESE indirekt Zugriff auf alle darin enthaltenen Ressourcen gewährt. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option deaktiviert ist, wird der Lernpfad in keinem Katalog angezeigt. Wenn diese Option aktiviert ist, wird der Lernpfad in allen Katalogen angezeigt, es sei denn, [vorgefiltert](catalog-developer-essentials.md#pre-filters) oder die Member-Filter aus der Benutzeroberfläche. Durch die Anzeige des Lernpfads in einem Katalog wird LESE indirekt Zugriff auf alle darin enthaltenen Ressourcen gewährt. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Beschreibung]**
 
@@ -393,7 +397,7 @@ Bei Aktivierungsressourcen, die in einem Lernpfad enthalten sind, sollten die Zu
 
    *(Erforderlich)* Eine Person, die das Mitglied bezüglich des Lernpfads kontaktieren kann. Verwenden Sie das Pulldown-Menü, um aus den Benutzern auszuwählen, die Mitglieder der Community-Site sind. [Mitgliedergruppe](#members-group).
 
-* Wählen Sie **[!UICONTROL Erstellen]**
+* Wählen Sie **[!UICONTROL Erstellen]** aus
 
 >[!NOTE]
 >
@@ -433,7 +437,7 @@ Wenn die einzige Änderung darin besteht, Zuweisungen im Schritt Einstellungen z
 
 Durch Auswahl des Papierkorbsymbols wird die Aktivierungsressource `Delete`d nach Bestätigung.
 
-### Veröffentlichen   {#publish}
+### Veröffentlichen  {#publish}
 
 ![chlimage_1-183](assets/chlimage_1-183.png)
 

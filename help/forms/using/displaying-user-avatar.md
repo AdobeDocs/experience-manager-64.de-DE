@@ -1,7 +1,7 @@
 ---
 title: Anzeigen des Benutzeravatars
 seo-title: Displaying the user avatar
-description: Anpassen von AEM Forms Workspace, um das Bild eines angemeldeten Benutzers anzuzeigen.
+description: So passen Sie den AEM Forms-Arbeitsbereich an, um das Bild eines angemeldeten Benutzers anzuzeigen.
 seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
 uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
@@ -10,23 +10,27 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: 2bc70cd6-1ea6-4594-9b42-ab3d3000a0c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 100%
+source-wordcount: '228'
+ht-degree: 56%
 
 ---
 
 # Anzeigen des Benutzeravatars {#displaying-the-user-avatar}
 
-Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Forms Workspace angezeigt. Auch die Avatare von direkten Berichten in der hierarchischen Struktur werden in der Manageransicht angezeigt. Sie können AEM Forms Workspace so konfigurieren, dass die Benutzerbilder aus Ihrer Datenbank, z. B. vom LDAP-Server, abgerufen werden.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Forms Workspace angezeigt. Außerdem werden die Avatare der direkt unterstellten Mitarbeiter in der hierarchischen Struktur in der Manageransicht angezeigt. Sie können AEM Forms Workspace so konfigurieren, dass die Benutzerbilder aus Ihrer Datenbank, z. B. vom LDAP-Server, abgerufen werden.
 
 >[!NOTE]
 >
 >Für Benutzerbilder wird nur das Seitenverhältnis 1:1 unterstützt.
 
 1. Erstellen Sie ein DSC mithilfe der Informationen, die im nächsten Schritt angegeben werden. Weitere Informationen erhalten Sie unter „Entwickeln von Komponenten für AEM Forms“ im Handbuch [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
-1. Definieren Sie im DSC eine neue SPI, die mithilfe der Methoden getCurrentUserImageUrl und getUserImageUrl eine Bild-URL für einen AEM Forms-Benutzer abruft. Im Folgenden finden Sie ein Java™-Beispielcodefragment:
+1. Definieren Sie im DSC eine neue SPI, die mithilfe der Methoden getCurrentUserImageUrl und getUserImageUrl eine Bild-URL für einen AEM Forms-Benutzer abruft. Im Folgenden finden Sie ein Beispiel für ein Java™-Codefragment:
 
    ```as3
    public class DemoUserImageURLProviderService { 
@@ -41,7 +45,7 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
    }
    ```
 
-1. Erstellen Sie die Datei component.xml. Stellen Sie sicher, dass spec-id wie im unten gezeigten Codefragment lautet.
+1. Erstellen Sie eine Datei &quot;component.xml&quot;. Stellen Sie sicher, dass spec-id wie im Code-Snippet unten gezeigt ist.
 
    Das folgende Codefragment ist ein Beispiel. Passen Sie es an Ihre spezifischen Anforderungen an.
 
@@ -83,5 +87,5 @@ Der Avatar des angemeldeten Benutzers wird in der oberen rechten Ecke von AEM Fo
    </component>
    ```
 
-1. Stellen Sie das DSC über Workbench bereit. Starten Sie den Service `ProcessManagementClientSessionService` neu.
+1. Stellen Sie DSC über Workbench bereit. Starten Sie den Service `ProcessManagementClientSessionService` neu.
 1. Möglicherweise müssen Sie den Browser aktualisieren oder sich für den Benutzer erneut abmelden/anmelden.

@@ -10,16 +10,20 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Upgrading
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 90%
+source-wordcount: '1149'
+ht-degree: 79%
 
 ---
 
 # Assets-Repository-Neustrukturierung in AEM 6.4{#assets-repository-restructuring-in-aem}
 
-Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kundinnen und Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Neustrukturierungen einzuschätzen, die sich auf AEM Assets auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kundinnen und Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Neustrukturierungen einzuschätzen, die sich auf AEM Assets auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von AEM 6.4 Arbeitsaufwand, während andere bis zu einem Upgrade auf 6.5 verschoben werden können.
 
 **Mit der Aktualisierung auf 6.4**
 
@@ -28,7 +32,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
 **Vor der Aktualisierung auf 6.5**
 
 * [Vorlage für E-Mail-Benachrichtigung für Asset-/Sammlungsereignis](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#asset-collection-event-e-mail-notification-template)
-* [Klassische Asset-Freigabe-Designs](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#classic-asset-share-designs)
+* [Klassische Designs zur Asset-Freigabe](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#classic-asset-share-designs)
 * [Vorlage für E-Mail-Benachrichtigung zum Asset-Download](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#download-asset-e-mail-notification-template)
 * [Beispiel-DRM-Lizenzen](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/assets-repository-restructuring-in-aem-6-4.html#example-drm-licenses)
 
@@ -53,7 +57,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
   </tr> 
   <tr> 
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Wenn ein benutzerdefinierter Code von diesem Speicherort abhängig ist (d. h. der Code stützt sich explizit auf diesen Pfad), muss der Code aktualisiert werden, um den neuen Speicherort vor dem Aktualisieren zu nutzen. Im Idealfall werden die Java-APIs verwendet, um Abhängigkeiten von einem bestimmten Pfad im JCR zu reduzieren.</p> <p>Temporärer Speicherort, um die ZIP-Datei für das Herunterladen des Clients zu speichern. Eine Aktualisierung ist nicht notwendig, wenn der Client das Herunterladen des Assets anfordert. Am neuen Speicherort wird eine Datei erstellt.</p> </td> 
+   <td><p>Wenn ein benutzerdefinierter Code von diesem Speicherort abhängig ist (d. h. der Code basiert explizit auf diesem Pfad), muss der Code aktualisiert werden, um den neuen Speicherort vor der Aktualisierung zu verwenden. Idealerweise werden Java-APIs verwendet, wenn verfügbar, um Abhängigkeiten von einem bestimmten Pfad im JCR zu reduzieren.</p> <p>Temporärer Speicherort, um die ZIP-Datei für das Herunterladen des Clients zu speichern. Eine Aktualisierung ist nicht notwendig, wenn der Client das Herunterladen des Assets anfordert. Es wird eine Datei am neuen Speicherort generiert.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Anmerkungen</strong></td> 
@@ -97,7 +101,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
  </tbody> 
 </table>
 
-### Klassische Asset-Freigabe-Designs {#classic-asset-share-designs}
+### Klassische Designs zur Asset-Freigabe {#classic-asset-share-designs}
 
 <table> 
  <tbody> 
@@ -116,7 +120,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
      <li>Kopieren Sie die Designs vom bisherigen Speicherort an den neuen Speicherort unter <code>/apps</code>.</li> 
      <li>Wandeln Sie die gesamten CSS-, JavaScript- und statischen Ressourcen im Design in eine <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client-Bibliothek</a> mit <code>allowProxy = true</code> um.</li> 
      <li>Aktualisieren Sie die Verweise auf den vorherigen Speicherort in der Eigenschaft <code>cq:designPath</code> über <strong>AEM &gt; Sites &gt; Seiten für benutzerdefinierte Site &gt; Seiteneigenschaften &gt; Erweitert &gt; Design</strong>.</li> 
-     <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, um die neue Kategorie Client-Bibliothek zu verwenden. Dazu muss der Seiten-Implementierungscode aktualisiert werden.</li> 
+     <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden. Dies erfordert auf der Seite eine Aktualisierung des Implementierungs-Codes.</li> 
      <li>Aktualisieren Sie die Dispatcher-Regeln, um das Bedienen von Client-Bibliotheken über das Proxy-Servlet <code>/etc.clientlibs/</code> zuzulassen.</li> 
     </ol> <p>Für alle Designs, die nicht in SCM verwaltet werden und die zur Laufzeit über Design-Dialoge geändert werden, verschieben Sie keine bearbeitbaren Designs aus <code>/etc</code>.</p> </td> 
   </tr> 
@@ -155,7 +159,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
   </tr> 
   <tr> 
    <td><strong>Anmerkungen</strong></td> 
-   <td>Auch wenn <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> technisch für die Suche unterstützt wird (hat Vorrang vor /apps über das übliche Sling CAConfig-Lookup, aber kommt nach <code>/etc</code>), kann die Vorlage in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> platziert werden. Dies wird allerdings nicht empfohlen, da es keine Laufzeit-Benutzeroberfläche gibt, die die Bearbeitung der E-Mail-Vorlage erleichtert.</td> 
+   <td>Auch wenn <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> technisch für die Suche unterstützt wird (hat Vorrang vor /apps über das übliche Sling CAConfig-Lookup, aber kommt nach <code>/etc</code>), kann die Vorlage in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> platziert werden. Dies wird jedoch nicht empfohlen, da es keine Laufzeitbenutzeroberfläche gibt, um die Bearbeitung der E-Mail-Vorlage zu erleichtern.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -196,7 +200,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
   </tr> 
   <tr> 
    <td><strong>Anmerkungen</strong></td> 
-   <td>Auch wenn <code>/conf/global/settings/dam/adhocassetshare</code> technisch für die Suche unterstützt wird (hat Vorrang vor <code>/apps</code> über das übliche Sling CAConfig-Lookup, aber kommt nach <code>/etc</code>), kann die Vorlage in <code>/conf/global/settings/dam/adhocassetshare</code> platziert werden. Dies wird jedoch nicht empfohlen, da es keine Laufzeit-Benutzeroberfläche gibt, um das Bearbeiten der E-Mail-Vorlage zu erleichtern.</td> 
+   <td>Auch wenn <code>/conf/global/settings/dam/adhocassetshare</code> technisch für die Suche unterstützt wird (hat Vorrang vor <code>/apps</code> über das übliche Sling CAConfig-Lookup, aber kommt nach <code>/etc</code>), kann die Vorlage in <code>/conf/global/settings/dam/adhocassetshare</code> platziert werden. Dies wird jedoch nicht empfohlen, da es keine Laufzeitbenutzeroberfläche gibt, um die Bearbeitung der E-Mail-Vorlage zu erleichtern</td> 
   </tr> 
  </tbody> 
 </table>
@@ -262,7 +266,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
  </tbody> 
 </table>
 
-### Konfigurationen der Viewer-Voreinstellungen {#viewer-preset-configurations}
+### Konfigurationen von Viewer-Vorgaben {#viewer-preset-configurations}
 
 <table> 
  <tbody> 
@@ -276,7 +280,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/hel
   </tr> 
   <tr> 
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Die Voreinstellungen für die Standardanzeige sind nur am neuen Speicherort verfügbar.</p> <p>Für die benutzerdefinierte Viewer-Vorgabe:</p> 
+   <td><p>Für die vordefinierte Viewer-Vorgabe ist sie nur am neuen Speicherort verfügbar.</p> <p>Für die benutzerdefinierte Viewer-Vorgabe:</p> 
     <ul> 
      <li>Sie müssen ein Migrationsskript ausführen, um den Knoten von <code>/etc</code> nach <code>/conf</code> zu verschieben. Das Skript befindet sich unter <em>https://serveradresse:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em>.</li> 
      <li>Alternativ können Sie die Konfiguration bearbeiten und sie wird automatisch am neuen Speicherort gespeichert.</li> 

@@ -1,7 +1,7 @@
 ---
 title: Bildschirmlesehilfen für HTML5-Formulare
 seo-title: Screen readers for HTML5 forms
-description: Listet die in Verbindung mit HTML5-Formularen unterstützten Bildschirmlesehilfen auf.
+description: Listet die von HTML5-Formularen unterstützten Bildschirmlesehilfen auf.
 seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
@@ -10,27 +10,31 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 94%
+source-wordcount: '373'
+ht-degree: 60%
 
 ---
 
 # Bildschirmlesehilfen für HTML5-Formulare {#screen-readers-for-html-forms}
 
-HTML5-Formularkomponenten rendern XFA-Formularvorlagen in einem HTML5-Format. Diese Formulare können in allen Standardbrowsern wiedergegeben werden, die HTML5 unterstützen. Um ähnliche Datenerfassungsergebnisse bei allen PDF- und HTML5-Formularen zu erzielen, wird das Layout der PDF-Formulare in den HTML5-Formularen beibehalten.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-HTML5-Formulare verwenden standardmäßige HTML-Konstrukte, sodass für diese Formulare barrierefreie HTML-Anwendungen verwendet werden können. Wenn ein Formular nach den bewährten Verfahren für barrierefreie Formulare entworfen wurde, funktioniert er mit jeder unterstützten Bildschirmlesehilfe. Zusätzlich bieten diese Formulare die Option der Tastaturnavigation.
+HTML5-Formularkomponenten rendern XFA-Formularvorlagen im HTML5-Format. Diese Formulare können von allen Standardbrowsern wiedergegeben werden, die HTML5 unterstützen. Um ein ähnliches Datenerfassungserlebnis in allen PDF- und HTML5-Formularen zu unterstützen, wird das Layout der PDF forms in HTML5-Formularen beibehalten.
+
+HTML5-Formulare verwenden standardmäßige HTML-Konstrukte, sodass für diese Formulare barrierefreie HTML-Anwendungen verwendet werden können. Wenn ein Formular gemäß den Best Practices für barrierefreie Formulare entworfen wurde, funktioniert es mit jeder unterstützten Bildschirmlesehilfe. Darüber hinaus sind solche Formulare für die Tastaturnavigation aktiviert.
 
 ## Barrierefreiheitsstandards {#accessibility-standards}
 
-HTML5-Formulare erfüllen Abschnitt 508 für Barrierefreiheit mit bekannten Ausnahmen. Ausführliche Informationen finden Sie in [VPAT für HTML5-Forms](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf).
+HTML5-Formulare erfüllen Abschnitt 508 für Barrierefreiheit mit bekannten Ausnahmen. Siehe [VPAT für HTML5-Formulare](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) für Details.
 
 ## Zertifizierte Bildschirmlesehilfen für HTML5-Formulare {#certified-screen-readers-for-html-forms}
 
 * JAWS 14.0 unter Microsoft Windows
-* VoiceOver unter Mac OS X und auf iPad
+* VoiceOver unter Mac OS X und iPad
 
 ### JAWS {#jaws}
 

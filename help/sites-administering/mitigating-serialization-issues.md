@@ -1,7 +1,7 @@
 ---
 title: Beheben von Serialisierungsproblemen in AEM
 seo-title: Mitigating serialization issues in AEM
-description: Hier erfahren Sie, wie Sie Serialisierungsprobleme in AEM beheben.
+description: Erfahren Sie, wie Sie Serialisierungsprobleme in AEM vermeiden können.
 seo-description: Learn how to mitigate serialization issues in AEM.
 uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 779e1e4c-9a6e-4446-9c12-5b2499afbf6a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 99%
+source-wordcount: '992'
+ht-degree: 73%
 
 ---
 
 # Beheben von Serialisierungsproblemen in AEM{#mitigating-serialization-issues-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Überblick {#overview}
 
@@ -31,7 +35,7 @@ Standardmäßig führt der Agent eine Blockierungslisten-Prüfung für bekannte 
 
 Eine Anleitung zum Konfigurieren der Blockierungsliste und der Zulassungsliste finden Sie im Abschnitt [Konfigurieren des Agenten](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) dieses Artikels.
 
-Der Agent unterstützt Sie bei der Behandlung der neuesten bekannten Klassen mit Sicherheitsrisiko. Wenn Ihr Projekt nicht vertrauenswürdige Daten deserialisiert, ist es unter Umständen weiterhin anfällig für Denial-of-Service-Angriffe, Out-of-Memory-Angriffe und bislang noch unbekannte Deserialisierungs-Exploits.
+Der Agent soll dazu beitragen, die neuesten bekannten gefährdeten Klassen zu reduzieren. Wenn Ihr Projekt nicht vertrauenswürdige Daten deserialisiert, kann es dennoch anfällig für Denial-of-Service-Angriffe, Speicherangriffe und unbekannte zukünftige Deserialisierungs-Exploits sein.
 
 Adobe unterstützt offiziell Java 6, 7 und 8. Nach unserem Kenntnisstand unterstützt NotSoSerial aber auch Java 5.
 
@@ -44,13 +48,13 @@ Adobe unterstützt offiziell Java 6, 7 und 8. Nach unserem Kenntnisstand unter
 1. Installieren Sie das Bundle **com.adobe.cq.cq-serialization-tester**.
 
 1. Navigieren Sie zur Bundle-Web-Konsole (`https://server:port/system/console/bundles`).
-1. Suchen Sie nach dem Serialisierungsbundle und starten Sie es. Daraufhin wird der NotSoSerial-Agent automatisch dynamisch geladen.
+1. Suchen Sie nach dem Serialisierungs-Bundle und starten Sie es. Dadurch sollte der NotSoSerial-Agent dynamisch automatisch geladen werden.
 
 ## Installieren des Agenten auf Anwendungs-Servern {#installing-the-agent-on-application-servers}
 
-Der NotSoSerial-Agent ist nicht in der AEM-Standarddistribution für Anwendungsserver enthalten. Sie können ihn jedoch aus der AEM-JAR-Distribution extrahieren und mit Ihrer Anwendungsservereinrichtung verwenden:
+Der NotSoSerial-Agent ist nicht in der Standardverteilung von AEM für Anwendungsserver enthalten. Sie können es jedoch aus der AEM JAR-Distribution extrahieren und mit Ihrem Anwendungsserver-Setup verwenden:
 
-1. Laden Sie zuerst die AEM-Schnellstartdatei herunter und extrahieren Sie sie:
+1. Laden Sie zunächst die AEM Schnellstartdatei herunter und extrahieren Sie sie:
 
    ```shell
    java -jar aem-quickstart-6.2.0.jar -unpack
@@ -73,11 +77,11 @@ Die Standardkonfiguration ist für die meisten Installationen ausreichend. Dazu 
 Die Firewall-Konfiguration ist dynamisch und kann jederzeit wie folgt geändert werden:
 
 1. Wechseln zur Web-Konsole unter `https://server:port/system/console/configMgr`
-1. Suchen Sie nach **Deserialization Firewall Configuration** und klicken Sie darauf.
+1. Suchen nach und Klicken **Deserialisierungs-Firewall-Konfiguration.**
 
    >[!NOTE]
    >
-   >Die Konfigurationsseite kann auch direkt über die URL aufgerufen werden:
+   >Sie können die Konfigurationsseite auch direkt erreichen, indem Sie auf die URL zugreifen:
    >
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
@@ -106,7 +110,7 @@ Die Konfiguration des Deserialisierungs-Agenten kann unter folgender URL geprüf
 
 * `https://server:port/system/console/healthcheck?tags=deserialization`
 
-Unter der URL wird eine Liste mit Integritätsprüfungen für den Agenten angezeigt. Sind die Integritätsprüfungen erfolgreich, wurde der Agent ordnungsgemäß aktiviert. Im Falle eines Fehlers muss der Agent ggf. manuell geladen werden.
+Unter der URL wird eine Liste mit Integritätsprüfungen für den Agenten angezeigt. Sie können feststellen, ob der Agent ordnungsgemäß aktiviert ist, indem Sie überprüfen, ob die Konsistenzprüfungen erfolgreich sind. Wenn sie fehlschlagen, müssen Sie den Agenten möglicherweise manuell laden.
 
 Weitere Informationen zum Behandeln von Problemen mit dem Agenten finden Sie weiter unten unter [Behandeln von Fehlern beim dynamischen Laden des Agenten](#handling-errors-with-dynamic-agent-loading).
 
@@ -116,11 +120,11 @@ Weitere Informationen zum Behandeln von Problemen mit dem Agenten finden Sie wei
 
 ## Behandeln von Fehlern beim dynamischen Laden des Agenten {#handling-errors-with-dynamic-agent-loading}
 
-Wenn das Protokoll Fehler enthält oder bei den Überprüfungsschritten ein Ladeproblem für den Agenten festgestellt wird, muss der Agent ggf. manuell geladen werden. Dies empfiehlt sich auch, wenn Sie anstelle eines JDK (Java Development Kit) eine JRE (Java Runtime Environment) verwenden, da in diesem Fall die Tools für dynamisches Laden nicht zur Verfügung stehen.
+Wenn das Protokoll Fehler enthält oder bei den Überprüfungsschritten ein Ladeproblem für den Agenten festgestellt wird, muss der Agent ggf. manuell geladen werden. Dies wird auch empfohlen, wenn Sie JRE (Java Runtime Environment) anstelle eines JDK (Java Development Toolkit) verwenden, da die Tools für das dynamische Laden nicht verfügbar sind.
 
 Gehen Sie zum manuellen Laden des Agenten wie folgt vor:
 
-1. Ändern Sie die JVM-Startparameter der CQ-JAR-Datei, indem Sie folgende Option hinzufügen:
+1. Ändern Sie die JVM-Startparameter der CQ-JAR-Datei und fügen Sie die folgende Option hinzu:
 
    ```shell
    -javaagent:<aem-installation-folder>/crx-quickstart/opt/notsoserial/notsoserial.jar
@@ -128,7 +132,7 @@ Gehen Sie zum manuellen Laden des Agenten wie folgt vor:
 
    >[!NOTE]
    >
-   >Dies erfordert auch die Verwendung der Option „-nofork CQ/AEM“ und der entsprechenden JVM-Arbeitsspeichereinstellungen, da der Agent für eine geforkte JVM-Instanz nicht aktiviert wird.
+   >Dazu müssen Sie auch die Option -nofork CQ/AEM zusammen mit den entsprechenden JVM-Speichereinstellungen verwenden, da der Agent auf einer abgespalteten JVM nicht aktiviert wird.
 
    >[!NOTE]
    >

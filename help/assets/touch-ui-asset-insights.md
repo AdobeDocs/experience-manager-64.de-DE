@@ -5,22 +5,26 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 74%
+source-wordcount: '829'
+ht-degree: 42%
 
 ---
 
 # Assets Insights {#asset-insights}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Erfahren Sie, wie Sie mit der Funktion &quot;Asset Insights&quot;Benutzerbewertungen und Nutzungsstatistiken von Assets verfolgen können, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen der Adobe verwendet werden.
 
 Mit der Funktion &quot;Asset Insights&quot;können Sie Benutzerbewertungen und Nutzungsstatistiken von Assets verfolgen, die auf Drittanbieter-Websites, in Marketingkampagnen und den Kreativlösungen der Adobe verwendet werden, um Einblicke in ihre Leistung und Beliebtheit zu erhalten.
 
-Asset Insights erfasst Details zur Benutzeraktivität, wie z. B. die Anzahl der Asset-Bewertungen und -Aufrufe sowie der Impressionen (also wie oft das Asset auf der Website geladen wird). Basierend auf diesen Statistiken wird Assets eine Bewertung zugewiesen. Sie können die Bewertungen und Leistungs-Statistiken verwenden, um beliebte Assets für die Berücksichtigung in Katalogen, Marketing-Kampagnen usw. auszuwählen. Sie können sogar Archiv- und Lizenzerneuerungsrichtlinien für Assets auf Grundlage dieser Statistiken formulieren.
+Assets Insights erfasst Details zur Benutzeraktivität, z. B. wie oft ein Asset bewertet, angeklickt und Impressionen (wie oft das Asset auf der Website geladen wird). Basierend auf diesen Statistiken werden Assets Bewertungen zugewiesen. Sie können die Bewertungen und Leistungsstatistiken verwenden, um beliebte Assets für die Aufnahme in Kataloge, Marketing-Kampagnen usw. auszuwählen. Sie können sogar Archivierungs- und Lizenzerneuerungsrichtlinien für Assets auf der Grundlage dieser Statistiken formulieren.
 
-Damit Asset Insights Nutzungsstatistiken für Assets von einer Website erfasst, müssen Sie Code für die Assets im Website-Code einbetten.
+Damit Assets Insights Nutzungsstatistiken für Assets von einer Website erfassen kann, müssen Sie den Einbettungscode für das Asset in den Website-Code aufnehmen.
 
 Damit Asset Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurieren Sie zunächst die Funktion für den Abruf von Berichtsdaten aus [!DNL Adobe Analytics]. Weitere Details finden Sie unter [Asset Insights konfigurieren](touch-ui-configuring-asset-insights.md). Um diese Funktion in einer On-Premise-Installation zu verwenden, ist der separate Kauf einer [!DNL Adobe Analytics] -Lizenz erforderlich. Kundinnen und Kunden mit [!DNL Managed Services] erhalten die [!DNL Analytics]-Lizenz im Paket mit [!DNL Experience Manager]. Siehe [Managed Services-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
@@ -32,15 +36,15 @@ Damit Asset Insights Nutzungsstatistiken für Assets anzeigen kann, konfiguriere
 
 Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 
-1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus und tippen oder klicken Sie anschließend in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften]**.
-1. Tippen oder klicken Sie auf der Seite „Eigenschaften“ auf die Registerkarte **[!UICONTROL Statistiken]**.
-1. Überprüfen Sie die Nutzungsdetails für das Asset auf der Registerkarte **[!UICONTROL Insights]**. Der Abschnitt **[!UICONTROL Bewertung]** beschreibt die gesamte Asset-Nutzung und die Leistungsbewertungen eines Assets.
+1. Wählen Sie in der Assets-Benutzeroberfläche das Asset aus und tippen/klicken Sie dann auf das **[!UICONTROL Eigenschaften]** in der Symbolleiste.
+1. Tippen/klicken Sie auf der Seite Eigenschaften auf die **[!UICONTROL Insights]** Registerkarte.
+1. Überprüfen Sie die Nutzungsdetails für das Asset auf der Registerkarte **[!UICONTROL Insights]**. Die **[!UICONTROL Ergebnis]** -Abschnitt beschreibt die gesamte Asset-Nutzung und die Leistungsbewertungen eines Assets .
 
    Die Nutzungsbewertung beschreibt, wie oft ein Asset in verschiedenen Lösungen verwendet wird.
 
-   Die Bewertung **[!UICONTROL Impressionen]** beschreibt, wie oft das Asset auf der Website geladen wurde. Die unter **[!UICONTROL Klicks]** angezeigte Zahl beschreibt, wie oft Benutzer auf das Asset geklickt haben.
+   Die **[!UICONTROL Impressionen]** score ist die Anzahl der Ladevorgänge des Assets auf der Website. Die unter **[!UICONTROL Klicks]** ist die Anzahl der Klicks auf das Asset.
 
-1. Im Abschnitt **[!UICONTROL Nutzungsstatistiken]** können Sie ermitteln, in welchen Elementen das Asset enthalten war und in welchen Kreativlösungen es vor Kurzem verwendet wurde. Je höher die Nutzung, desto größer ist die Wahrscheinlichkeit, dass das Asset bei Benutzern beliebt ist. Nutzungsdaten werden unter den folgenden Überschriften angezeigt:
+1. Im Abschnitt **[!UICONTROL Nutzungsstatistiken]** können Sie ermitteln, in welchen Elementen das Asset enthalten war und in welchen Kreativlösungen es vor Kurzem verwendet wurde. Je höher die Nutzung ist, desto größer ist die Wahrscheinlichkeit, dass das Asset bei Benutzern beliebt ist. Nutzungsdaten werden unter den folgenden Überschriften angezeigt:
 
    * **[!UICONTROL Asset]**: Wie oft war das Asset Teil einer Sammlung oder eines zusammengesetzten Assets
    * **[!UICONTROL Web und Mobile]**: Wie oft wurde das Asset in Websites und Apps verwendet
@@ -69,9 +73,9 @@ Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 
 Mit der **[!UICONTROL Insights-Ansicht]** können Sie Bewertungen aller Assets in einem Ordner gleichzeitig anzeigen.
 
-1. Navigieren Sie in der Assets-Benutzeroberfläche zum Ordner, in dem die Assets enthalten sind, für die Sie Statistiken anzeigen möchten.
-1. Tippen oder klicken Sie auf das Layout-Symbol und wählen Sie **[!UICONTROL Insight-Ansicht]** aus.
-1. Die Seite zeigt die Nutzungsbewertungen für die Assets an. Vergleichen Sie die Bewertungen der verschiedenen Assets und ziehen Sie Ihre Erkenntnisse daraus.
+1. Navigieren Sie in der Assets-Benutzeroberfläche zu dem Ordner mit den Assets, für die Sie Einblicke anzeigen möchten.
+1. Tippen/klicken Sie in der Symbolleiste auf das Symbol Layout und wählen Sie **[!UICONTROL Insights-Ansicht]**.
+1. Auf der Seite werden Nutzungsbewertungen für die Assets angezeigt. Vergleichen Sie die Bewertungen der verschiedenen Assets und ziehen Sie Ihre Erkenntnisse daraus.
 
 ## Planen von Hintergrundaufträgen {#scheduling-background-job}
 
@@ -82,4 +86,4 @@ Assets Insights ruft Nutzungsdaten für Assets regelmäßig aus den Adobe Analyt
 
    ![chlimage_1-304](assets/chlimage_1-304.png)
 
-1. Geben Sie die gewünschte Terminplaner-Häufigkeit und Startzeit für den Auftrag im Eigenschaftsplanerausdruck ein. Speichern Sie die Änderungen.
+1. Geben Sie die gewünschte Planungsfrequenz und die Startzeit für den Auftrag im Ausdruck für die Eigenschaftsplanung an. Speichern Sie die Änderungen.

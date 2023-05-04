@@ -1,7 +1,7 @@
 ---
 title: Seitenvergleich
 seo-title: Page Diff
-description: Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
+description: Die Seitenvergleich-Funktion ermöglicht einen bequemen parallelen Vergleich zweier Seiten mit hervorgehobenen Unterschieden.
 seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
 contentOwner: User
@@ -10,20 +10,24 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 95%
+source-wordcount: '708'
+ht-degree: 56%
 
 ---
 
 # Seitenvergleich{#page-diff}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Einführung {#introduction}
 
-Inhaltserstellung ist ein iterativer Vorgang. Damit ein Autor effizient arbeiten kann, muss er sehen können, was sich von Iteration zu Iteration verändert hat. Es ist ineffizient und bringt Fehler mit sich, wenn eine Seitenversion und danach die andere geprüft wird. Ein Autor muss die Möglichkeit haben, die aktuelle Seite direkt mit der anderen Seite zu vergleichen.
+Die Inhaltserstellung ist ein iterativer Prozess. Damit ein Autor effizient arbeiten kann, muss er sehen können, was sich von Iteration zu Iteration verändert hat. Es ist ineffizient und bringt Fehler mit sich, wenn eine Seitenversion und danach die andere geprüft wird. Ein Autor möchte die aktuelle Seite einfach nebeneinander mit einer anderen Version vergleichen können.
 
-Die Seitenvergleichsfunktion ermöglicht einen bequemen Vergleich von zwei Seiten, die nebeneinander angezeigt werden und deren Unterschiede hervorgehoben sind.
+Die Seitenvergleich-Funktion ermöglicht einen bequemen parallelen Vergleich zweier Seiten mit hervorgehobenen Unterschieden.
 
 >[!CAUTION]
 >
@@ -44,31 +48,31 @@ Informieren Sie sich unter den entsprechenden Themen, wie der Seitenvergleich im
 
 ### Darstellung von Unterschieden {#presentation-of-differences}
 
-Unabhängig vom verglichenen Inhalt bleibt die Darstellung der Unterschiede gleich.
+Unabhängig vom verglichenen Inhalt bleibt die Darstellung des Vergleichs gleich.
 
-* Nachdem Sie den Seitenvergleich gestartet haben, wird der ausgewählte Inhalt auf der linken Seite angezeigt (der Differenzeinstiegspunkt).
-* Rechts wird der zu vergleichende Inhalt angezeigt (der mit dem ausgewählten Inhalt verglichen wird).
+* Der Inhalt, der beim Start des Vergleichs ausgewählt wurde, wird auf der linken Seite angezeigt (der diff-Einstiegspunkt).
+* Der Vergleich mit dem Inhalt wird rechts angezeigt (mit dem der ausgewählte Inhalt verglichen wird).
 
-Wenn Sie z. B. Versionen vergleichen, wird die aktuelle Version auf der linken Seite und die Vorversion auf der rechten Seite angezeigt.
+Wenn Sie beispielsweise Versionen vergleichen, wird die aktuelle Version auf der linken Seite und die vorherige Version auf der rechten Seite angezeigt.
 
 Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browser-Fensters angezeigt.
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
-Der Seitenvergleich erkennt Änderungen an der Komponente und der HTML-Ebene. Geänderte Elemente werden mit verschiedenen Farben hervorgehoben.
+Der Vergleich erkennt Änderungen auf Komponenten- und HTML-Ebene. Geänderte Elemente werden mit unterschiedlichen Farben hervorgehoben.
 
 **Komponentenänderungen**
 
-* Hellgrün – Komponente hinzugefügt
-* Rosa – Komponente entfernt
-* Blau – Komponente geändert
-* Blau – Komponente verschoben
+* Hellgrün - Komponente hinzugefügt
+* Rosa - Komponente entfernt
+* Blau - Komponente geändert
+* Blau - Komponente verschoben
 
-Hinweis: Die Farben für geänderte und verschobene Elemente sind identisch.
+Beachten Sie, dass die Farben Geändert und Verschieben identisch sind.
 
 **HTML-Änderungen**
 
-* Dunkelgrün – HTML hinzugefügt
+* Dunkelgrün - HTML hinzugefügt
 * Rot – HTML entfernt
 
 >[!NOTE]
@@ -93,13 +97,13 @@ Sie können den Seitenvergleich jederzeit beenden, indem Sie in der Kopfzeile au
 
 ## Beschränkungen {#limitations}
 
-In manchen Fällen erkennt der Seitenvergleich einen Unterschied nicht wie erwartet.
+Es gibt Situationen, in denen der Seitenvergleich möglicherweise keine Unterschiede wie erwartet erkennt.
 
-* Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
-* Bei Versionen erstellt der Seitenvergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
+* Bei der Variation von Versionen und Launches berücksichtigt der Vergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die für die Wiedergabe ihres Inhalts auf die Site-Struktur angewiesen sind).
+* Bei Versionen erstellt der Vergleich nicht die Zugriffssteuerungsrichtlinie und die Live Copy-Beziehungen.
 * Wenn Änderungen an einem Bild vorgenommen werden, z. B. eine Änderung der alt-, title- oder der src-Attribute, wird das geänderte Element blau hervorgehoben. In manchen Fällen weist ein Bild jedoch eine Base64-Darstellung des src-Attributs auf und selbst dann, wenn beide Bilder gleich aussehen, werden sie vom Seitenvergleich aufgrund der unterschiedlichen src-Attribute gekennzeichnet.
 * Der Seitenvergleich erkennt keine Bilddrehung.
-* Wenn eine Seite verschoben wird, können Sie keinen Vergleich mit Versionen mehr durchführen, die vor dem Verschieben erstellt wurden.
+* Wenn eine Seite verschoben wird, können Sie mit Versionen, die vor dem Verschieben vorgenommen wurden, keinen Vergleich mehr durchführen.
 
    * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 

@@ -9,42 +9,46 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: 40f6297d-7238-4e56-9fd1-6df3a6362724
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 100%
+source-wordcount: '690'
+ht-degree: 27%
 
 ---
 
-# Tutorial: Interaktive Kommunikation planen {#tutorial-plan-the-interactive-communication}
+# Tutorial: Planen einer interaktiven Kommunikation {#tutorial-plan-the-interactive-communication}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Planen Sie Ihre interaktive Kommunikation
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, der Reihe in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, auszuführen und zu demonstrieren.
 
-Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin, den Inhalt der interaktiven Kommunikation abzuschließen. Fachexperten aus Abteilungen wie Recht, Finanzen, Support oder Marketing können Ihnen dabei helfen, die Inhalte zu finalisieren. Nachdem der Inhalt abgeschlossen ist, müssen Sie ihn analysieren, um die verschiedenen Asset-Typen zu ermitteln, die zum Erstellen der interaktiven Kommunikation erforderlich sind.
+Der erste Schritt bei der Planung einer interaktiven Kommunikation besteht darin, den Inhalt der interaktiven Kommunikation fertigzustellen. Fachleute aus Abteilungen wie Rechtsabteilung, Finanzen, Support oder Marketing können Ihnen bei der Fertigstellung des Inhalts helfen. Nach Abschluss des Inhalts müssen Sie ihn analysieren, um die verschiedenen Asset-Typen zu identifizieren, die zum Erstellen der interaktiven Kommunikation erforderlich sind.
 
-## Aspekte bei der Planung {#planning-considerations}
+## Planen {#planning-considerations}
 
-Eine interaktive Kommunikation enthält die folgenden Elemente:
+Eine interaktive Kommunikation umfasst die folgenden Elemente:
 
-* **Statischer Text** umfasst im Wesentlichen die generischen Teile der interaktiven Kommunikation, die in die Kommunikation mit allen Kunden einbezogen werden. Zum Beispiel Kopfzeile, Fußzeile, Anrede oder Haftungsausschluss.
-* **Daten aus einem Backend-System (Formulardatenmodell)** sind kundenspezifisch und werden dynamisch mit der interaktiven Kommunikation zusammengeführt. Beispielsweise kann die Richtliniennummer oder Adresse mithilfe eines Formulardatenmodells bezogen werden.
-* **Layout oder Vorlagen** für die Print- und Webversion der interaktiven Kommunikation.
+* **Statischer Text** umfasst meist die Teile der interaktiven Kommunikation, die allgemein gehalten sind und in die Kommunikation mit allen Kunden einbezogen sind. Zum Beispiel Kopf-, Fußzeile, Anrede oder Haftungsausschlüsse.
+* **Daten aus einem Backend-System (Formulardatenmodell)** sind kundenspezifisch und werden dynamisch mit der interaktiven Kommunikation zusammengeführt. Beispielsweise kann die Richtliniennummer oder Adresse mithilfe des Formulardatenmodells bezogen werden.
+* **Layout oder Vorlagen** für die Druck- und Webversion der interaktiven Kommunikation.
 * **Reihenfolge**, in der die verschiedenen Textabsätze in der interaktiven Kommunikation angezeigt werden.
-* **Daten, die von einem Frontline-Mitarbeiter eingegeben wurden (Agent UI)**, der die Kommunikation vor dem Versenden anpasst. Zum Beispiel das Fälligkeitsdatum der Zahlung.
+* **Daten, die von einem Frontline-Mitarbeiter eingegeben wurden (Agent UI)**, der die Kommunikation vor dem Versenden anpasst. Beispielsweise das Fälligkeitsdatum der Zahlung.
 
-* **Bedingte Daten**, die basierend auf vordefinierten Bedingungen befüllt werden. Beispielsweise das Datum, an dem die interaktive Kommunikation generiert wird.
-* **In einem Repository gespeicherte Bilder** wie Logos und Signaturbilder. Bilder wie das Unternehmenslogo sind in den meisten oder in jeder interaktiven Kommunikation unverändert enthalten.
-* **Diagramme und Tabellen** sind erforderlich, um die Darstellung komplexer Daten in einer interaktiven Kommunikation zu vereinfachen
+* **Bedingte Daten** , der anhand vordefinierter Bedingungen ausgefüllt wird. Beispielsweise das Datum, an dem die interaktive Kommunikation generiert wird.
+* **In einem Repository gespeicherte Bilder**, wie Logos und Signaturbilder. Bilder wie Unternehmenslogos würden in den meisten oder allen interaktiven Kommunikationen angezeigt.
+* **Diagramme und Tabellen** erforderlich, um die Darstellung komplexer Daten in einer interaktiven Kommunikation zu vereinfachen
 
 ## Anatomie der interaktiven Kommunikation {#anatomy-of-the-interactive-communication}
 
-Nachdem Sie den Inhalt und die Elemente festgelegt haben, die zum Erstellen Ihrer interaktiven Kommunikation verwendet werden, können Sie eine Anatomie der interaktiven Kommunikation erstellen. Die Anatomie muss die Details im Abschnitt [Aspekte bei der Planung](/help/forms/using/planning-interactive-communications.md#planning-considerations) enthalten. Basierend auf unserem Anwendungsfall ist das folgende Beispiel ein Beispiel für eine Anatomie der monatlichen Rechnung, die ein Telekommunikationsbetreiber an seine Kunden sendet.
+Nachdem Sie den Inhalt und die Elemente, die zum Erstellen Ihrer interaktiven Kommunikation verwendet werden, fertig gestellt haben, können Sie eine Anatomie der interaktiven Kommunikation erstellen. Die Details der Anatomie müssen im Abschnitt [Planen](/help/forms/using/planning-interactive-communications.md#planning-considerations) Abschnitt. Basierend auf unserem Anwendungsfall ist das folgende Beispiel für eine Anatomie der monatlichen Rechnung, die ein Telekommunikationsbetreiber an seine Kunden sendet.
 
-Die Anatomie enthält Daten mit den folgenden Eingabemodi:
+Die Anatomie umfasst Daten mit den folgenden Eingabemodi:
 
 * Statischer Text
 * Formulardatenmodell
@@ -67,11 +71,11 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
   </tr>
   <tr>
    <td>Rechnungsdetails</td> 
-   <td><p>Rechnungsnr.</p> <p>Rechnungsdatum</p> <p>Rechnungszeitraum</p> <p>Ihr Plan</p> </td> 
-   <td><p>Wert für das Feld <strong>Ihr Plan</strong></p> <p>Tabelle - Kunde</p> </td> 
+   <td><p>Rechnungsnummer</p> <p>Rechnungsdatum</p> <p>Rechnungszeitraum</p> <p>Ihr Plan</p> </td> 
+   <td><p>Wert für <strong>Ihr Plan </strong>field</p> <p>Tabelle - Kunde</p> </td> 
    <td><p>Werte für die folgenden Felder:</p> 
     <ul> 
-     <li>Rechnungsnr.</li> 
+     <li>Rechnungsnummer</li> 
      <li>Rechnungsdatum</li> 
      <li>Rechnungszeitraum</li> 
     </ul> <p> </p> </td> 
@@ -79,26 +83,26 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
   </tr>
   <tr>
    <td>Kundendetails</td> 
-   <td><p>Ort der Lieferung</p> <p>Status-Code</p> <p>Mobilfunknummer</p> <p>Alternative Kontaktnummer</p> <p>Verhältnis-Nummer</p> <p>Anzahl von Verbindungen</p> </td> 
+   <td><p>Lieferort</p> <p>Statuscode</p> <p>Mobiltelefonnummer</p> <p>Alternative Kontaktnummer</p> <p>Beziehungsnummer</p> <p>Anzahl der Verbindungen</p> </td> 
    <td><p>Werte für die folgenden Felder:</p> 
     <ul> 
      <li>Name</li> 
      <li>Adresse</li> 
-     <li>Mobilfunknummer</li> 
+     <li>Mobiltelefonnummer</li> 
      <li>Alternative Kontaktnummer</li> 
-     <li>Verhältnis-Nummer</li> 
+     <li>Beziehungsnummer</li> 
     </ul> <p>Tabelle - Kunde</p> </td> 
    <td><p>Werte für die folgenden Felder:</p> 
     <ul> 
-     <li>Ort der Lieferung</li> 
-     <li>Status-Code</li> 
-     <li>Anzahl von Verbindungen</li> 
+     <li>Lieferort</li> 
+     <li>Statuscode</li> 
+     <li>Anzahl der Verbindungen</li> 
     </ul> </td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Rechnungszusammenfassung</td> 
-   <td><p>Vorheriger Saldo</p> <p>Zahlungen</p> <p>Anpassungen</p> <p>Gebühren des aktuellen Rechnungszeitraums</p> <p>Fälliger Betrag</p> <p>Fälligkeitsdatum</p> </td> 
+   <td><p>Vorheriger Saldo</p> <p>Zahlungen</p> <p>Anpassungen</p> <p>Gebühren für den laufenden Rechnungszeitraum</p> <p>Fälliger Betrag</p> <p>Fälligkeitsdatum</p> </td> 
    <td><p>Wert für das Feld <strong>Gebühren des aktuellen Rechnungszeitraums</strong></p> <p>Tabelle - Rechnungen</p> </td> 
    <td><p>Werte für die folgenden Felder:</p> 
     <ul> 
@@ -108,28 +112,28 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Fälliger Betrag</li> 
      <li>Fälligkeitsdatum</li> 
     </ul> </td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
    <td>Zusammenfassung der Gebühren</td> 
-   <td><p>Anrufgebühren</p> <p>Gebühren für Telefonkonferenz</p> <p>SMS-Gebühren </p> <p>Mobile Internetgebühren</p> <p>Nationale Roaming-Gebühren</p> <p>Internationale Roaming-Gebühren</p> <p>Mehrwert - Service-Gebühren</p> <p>Gesamgebühren</p> <p>GESAMT ZAHLBAR</p> <p>Bedingung im Feld „Mehrwert Service-Gebühren“</p> </td> 
+   <td><p>Anrufgebühren</p> <p>Gebühren für Konferenzanrufe</p> <p>SMS-Gebühren </p> <p>Gebühren für das mobile Internet</p> <p>Nationale Roaming-Gebühren</p> <p>Internationale Roaming-Gebühren</p> <p>Mehrwert - Service-Gebühren</p> <p>Gesamtkosten</p> <p>GESAMTZAHLBARER ZUSCHUSS</p> <p>Bedingung im Feld „Mehrwert Service-Gebühren“</p> </td> 
    <td><p>Werte für die folgenden Felder:</p> 
     <ul> 
      <li>Anrufgebühren</li> 
-     <li>Gebühren für Telefonkonferenz</li> 
+     <li>Gebühren für Konferenzanrufe</li> 
      <li>SMS-Gebühren </li> 
-     <li>Mobile Internetgebühren</li> 
+     <li>Gebühren für das mobile Internet</li> 
      <li>Nationale Roaming-Gebühren</li> 
      <li>Internationale Roaming-Gebühren</li> 
      <li>Mehrwert - Service-Gebühren</li> 
-     <li>Gesamtkosten (Feld für berechnete Nutzungsgebühren)</li> 
+     <li>Gesamtkosten (Feld für berechnete Benutzergebühren)</li> 
      <li>GESAMT ZAHLBAR (Feld für berechnete Nutzungsgebühren)</li> 
     </ul> <p>Tabelle - Rechnungen</p> </td> 
    <td>Keine Felder</td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
-   <td>Einzeln aufgeführte Anrufe - Ausgehend</td> 
+   <td>Aufgezählte Aufrufe - Ausgehend</td> 
    <td><p>Spaltennamen:</p> 
     <ul> 
      <li>Datum</li> 
@@ -138,23 +142,23 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Dauer</li> 
      <li>Gebühren</li> 
     </ul> </td> 
-   <td><p>Alle Werte</p> <p>Tabelle - Anrufe</p> </td> 
+   <td><p>Alle Werte</p> <p>Tabelle - Aufrufe</p> </td> 
    <td>Keine Felder</td> 
-   <td>—</td> 
+   <td>--</td> 
   </tr>
   <tr>
-   <td>Jetzt zahlen</td> 
-   <td>—</td> 
-   <td>—</td> 
-   <td>—</td> 
+   <td>Jetzt bezahlen</td> 
+   <td>--</td> 
+   <td>--</td> 
+   <td>--</td> 
    <td>PayNow</td> 
   </tr>
   <tr>
-   <td>Mehrwert - Service</td> 
-   <td>—</td> 
-   <td>—</td> 
-   <td>—</td> 
-   <td>Mehrwert - Service</td> 
+   <td>Mehrwertdienste</td> 
+   <td>--</td> 
+   <td>--</td> 
+   <td>--</td> 
+   <td>ValueAddedServices</td> 
   </tr>
  </tbody>
 </table>

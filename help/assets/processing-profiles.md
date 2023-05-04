@@ -1,6 +1,6 @@
 ---
 title: Profile für die Verarbeitung von Metadaten, Bildern und Videos
-description: Profile enthalten eine Reihe von Regeln rund um die Optionen, die auf in einen Ordner hochgeladene Assets angewendet werden. Geben Sie an, welches Metadaten- und welches Videokodierungsprofil auf Video-Assets angewendet werden soll, die Sie hochladen. Bei Bild-Assets können Sie auch angeben, welches Bildprofil auf Bild-Assets angewendet werden soll, um sie zuzuschneiden.
+description: Profile enthalten eine Reihe von Regeln rund um die Optionen, die auf in einen Ordner hochgeladene Assets angewendet werden. Geben Sie an, welches Metadatenprofil und welches Videokodierungsprofil auf hochgeladene Video-Assets angewendet werden soll. Bei Bild-Assets können Sie auch angeben, welches Bildprofil auf Bild-Assets angewendet werden soll, damit sie ordnungsgemäß zugeschnitten werden.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
@@ -8,28 +8,32 @@ content-type: reference
 feature: Workflow,Asset Management,Renditions
 role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 94%
+source-wordcount: '1410'
+ht-degree: 81%
 
 ---
 
 # Über Profile für die Verarbeitung von Metadaten, Bildern und Videos {#profiles-for-processing-metadata-images-and-videos}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Profile sind Rezepte, die vorgeben, welche Optionen auf Assets angewendet werden, die in einen Ordner hochgeladen werden. Beispielsweise können Sie angeben, welches Metadatenprofil und welches Videokodierungsprofil auf Video-Assets angewendet wird, die Sie hochladen. Alternativ können Sie angeben, welche Imaging-Profile auf Image-Assets angewendet werden, damit sie entsprechend zugeschnitten werden.
 
-Dazu kann das Hinzufügen von Metadaten, das smarte Zuschneiden von Bildern oder die Erstellung von Videokodierungsprofilen gehören. In AEM können Sie drei Arten von Profilen erstellen. Sie werden unter den folgenden Links detailliert vorgestellt:
+Diese Regeln können das Hinzufügen von Metadaten, das smarte Zuschneiden von Bildern oder die Erstellung von Videokodierungsprofilen umfassen. In AEM können Sie drei Profiltypen erstellen, die unter den folgenden Links ausführlich beschrieben werden:
 
 * [Metadatenprofile](metadata-profiles.md)
 * [Bildprofile](image-profiles.md)
 * [Videoprofile](video-profiles.md)
 
-Um Metadaten-, Bild- oder Videoprofile erstellen, bearbeiten oder löschen zu können, benötigen Sie Administratorrechte.
+Sie müssen über Administratorrechte verfügen, um Metadaten-, Bild- oder Videoprofile zu erstellen, zu bearbeiten und zu löschen.
 
-Nachdem Sie Ihr Metadaten-, Bild- oder Videoprofil erstellt haben, weisen Sie es mindestens einem Ordner zu, den Sie als Ziel für neu hochgeladene Assets verwenden.
+Nachdem Sie Ihre Metadaten, Bilder oder Videoprofile erstellt haben, weisen Sie sie einem oder mehreren Ordnern zu, die Sie als Ziel für neu hochgeladene Assets verwenden.
 
-Ein wichtiges Konzept für die Verwendung von Profilen in [!DNL Experience Manager] Bei Assets werden sie Ordnern zugewiesen. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Ihre Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher eine erhebliche Auswirkung darauf, wie diese Assets durch ein Profil verarbeitet werden. Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden. Ein Beispiel finden Sie unter [Organisieren von Assets mit Ordnern](organize-assets.md#organize-using-folders).
+Ein wichtiges Konzept für die Verwendung von Profilen in [!DNL Experience Manager] Bei Assets werden sie Ordnern zugewiesen. In einem Profil sind Einstellungen in Form von Metadatenprofilen zusammen mit Videoprofilen oder Bildprofilen enthalten. Mit diesen Einstellungen wird der Inhalt eines Ordners und seiner zugehörigen Unterordner verarbeitet. Wie Sie Dateien und Ordner benennen, wie Sie Unterordner anordnen und wie Sie die Dateien in diesen Ordnern verarbeiten, hat daher erhebliche Auswirkungen darauf, wie diese Assets von einem Profil verarbeitet werden. Indem Sie konsistente und geeignete Datei- und Ordnernamensstrategien zusammen mit angemessenen Metadatenpraktiken einsetzen, können Sie die Sammlung Ihrer digitalen Assets optimal nutzen und sicherstellen, dass die richtigen Dateien vom richtigen Profil verarbeitet werden. Ein Beispiel finden Sie unter [Organisieren von Assets mit Ordnern](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >

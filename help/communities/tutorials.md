@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 exl-id: 4e5c63af-78f1-4005-8dc1-2b30cb0b6c5a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 6%
+source-wordcount: '289'
+ht-degree: 5%
 
 ---
 
 # Tutorials {#tutorials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Dies sind Beispiele für das Lernen und die Arbeit mit AEM 6.1 Communities [Social Component Framework (SCF)](scf.md).
 
@@ -49,7 +53,7 @@ Beispielcode ist im Abschnitt [Adobe Marketing Cloud GitHub](https://github.com/
 
    ToDo MVC demonstriert, wie eine SCF+SRP-Komponente von Grund auf neu entwickelt wird
 
-* [Einstieg in AEM Communities](getting-started.md)
+* [Erste Schritte mit AEM Communities](getting-started.md)
 
 * [Einrichten von MongoDB für Demo](demo-mongo.md)
 

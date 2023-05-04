@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: 49c4af9a-5797-468c-b3ad-f3140d445ff2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 100%
+source-wordcount: '2231'
+ht-degree: 94%
 
 ---
 
 # Wiedergeben von Formularen, die auf Fragmenten basieren {#rendering-forms-based-on-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Wiedergeben von Formularen, die auf Fragmenten basieren {#rendering-forms-based-on-fragments-inner}
 
@@ -29,7 +33,7 @@ Die Verwendung von Fragmenten vereinfacht und beschleunigt die Erstellung und Pf
 
 Ein Fragment kann mehrere Teilformulare enthalten, die in einen Auswahl-Teilformularsatz eingeschlossen sind. Auswahl-Teilformularsätze steuern die Anzeige von Teilformularen basierend auf dem Datenfluss einer Datenverbindung. Verwenden Sie bedingte Anweisungen, um festzulegen, welches Teilformular aus dem Satz im bereitgestellten Formular angezeigt wird. Beispielsweise kann jedes Teilformular in einem Satz Informationen für einen bestimmten geografischen Standort enthalten, und auf der Grundlage des Standorts des Benutzers kann bestimmt werden, welches Teilformular angezeigt wird.
 
-Ein *Skriptfragment* enthält wiederverwendbare JavaScript-Funktionen oder -Werte, die getrennt von einem bestimmten Objekt gespeichert werden, z. B. einen Datums-Parser oder einen Aufruf eines Webservices. Diese Fragmente beinhalten ein Skriptobjekt, das in der Palette „Hierarchie“ als untergeordnetes Element von „Variablen“ aufgeführt wird. Fragmente können nicht aus Skripten erstellt werden, die Eigenschaften anderer Objekte sind, wie etwa Ereignisskripte zum Validieren, Berechnen oder Initialisieren.
+Ein *Skriptfragment* enthält wiederverwendbare JavaScript-Funktionen oder -Werte, die getrennt von einem bestimmten Objekt gespeichert werden, z. B. einen Datums-Parser oder einen Aufruf eines Webservices. Diese Fragmente enthalten ein einzelnes Skriptobjekt, das in der Palette &quot;Hierarchie&quot;als untergeordnetes Element von Variablen angezeigt wird. Fragmente können nicht aus Skripten erstellt werden, die Eigenschaften anderer Objekte sind, z. B. Ereignisskripte wie &quot;validate&quot;, &quot;calculate&quot;oder &quot;initialize&quot;.
 
 Die Verwendung von Fragmenten hat folgende Vorteile:
 
@@ -37,7 +41,7 @@ Die Verwendung von Fragmenten hat folgende Vorteile:
 * **Globale Aktualisierungen**: Sie können Fragmente verwenden, um globale Änderungen an mehreren Formularen nur einmal in einer Datei vorzunehmen. Sie können Inhalt, Skriptobjekte, Datenbindungen, Layout und Stile eines Fragments ändern. Alle XDP-Formulare, die auf dieses Fragment verweisen, spiegeln diese Änderungen wider.
 * Ein gemeinsames Element vieler Formulare kann beispielsweise ein Block von Adressen sein, der ein Dropdown-Listenobjekt für das Land beinhaltet. Wenn Sie die Werte für das Dropdown-Listenobjekt aktualisieren müssen, müssen Sie viele Formulare öffnen, um die Änderungen vorzunehmen. Wenn sich aber der Adressenblock in einem Fragment befindet, müssen Sie lediglich eine einzige Fragmentdatei öffnen und dort die Änderungen vornehmen.
 * Um ein Fragment in einem PDF-Formular zu aktualisieren, müssen Sie das Formular in Designer neu speichern.
-* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Kenntnissen in der Skripterstellung und im Umgang mit den komplexeren Funktionen von Designer können Fragmente erstellen und freigeben, die Skripten und dynamische Eigenschaften nutzen. Formularverfasser können diese Fragmente dann für die Gestaltung von Formularentwürfen verwenden. Auf diese Weise wird sichergestellt, dass alle Bestandteile eines Formulars auch dann konsistente Inhalte und eine einheitliche Funktionalität aufweisen, wenn die Formularerstellung durch mehrere Mitarbeiter erfolgt.
+* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Erfahrung in der Skripterstellung oder anderen erweiterten Funktionen von Designer können Fragmente entwickeln und freigeben, die Skripterstellung und dynamische Eigenschaften nutzen. Formularentwickler können diese Fragmente verwenden, um Formularentwürfe zu entwerfen und sicherzustellen, dass alle Teile eines Formulars ein einheitliches Erscheinungsbild und eine einheitliche Funktionalität für mehrere von mehreren Benutzern entworfene Formulare haben.
 
 ### Zusammenstellen eines Formularentwurfs, der mithilfe von Fragmenten zusammengestellt wurde {#assembling-a-form-design-assembled-using-fragments}
 

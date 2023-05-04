@@ -11,18 +11,22 @@ content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 feature: Upgrading
 exl-id: edd6e933-59ed-4d7e-8934-7e2ec485cfb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 96%
+source-wordcount: '1907'
+ht-degree: 75%
 
 ---
 
 # Prüfungen und Fehlerbehebung nach einem Upgrade{#post-upgrade-checks-and-troubleshooting}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Prüfungen nach einem Upgrade {#post-upgrade-checks}
 
-Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) sollten folgende Schritte durchgeführt werden, um das Upgrade abzuschließen. Es wird davon ausgegangen, dass AEM mit der 6.4-JAR-Datei gestartet und die aktualisierte Codebasis bereitgestellt wurde.
+Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) sollten folgende Schritte durchgeführt werden, um das Upgrade abzuschließen. Es wird davon ausgegangen, dass AEM mit der 6.4-JAR-Datei gestartet wurde und dass die aktualisierte Codebasis bereitgestellt wurde.
 
 * [Überprüfen der Protokolle auf ein erfolgreiches Upgrade](#verify-logs-for-upgrade-success)
 
@@ -43,7 +47,7 @@ Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) soll
 
 * [Aktivieren von benutzerdefinierten geplanten Aufträgen](#enable-custom-scheduled-jobs)
 
-* [Durchführen des Testplans](#execute-test-plan)
+* [Testplan ausführen](#execute-test-plan)
 
 ### Überprüfen der Protokolle auf ein erfolgreiches Upgrade {#verify-logs-for-upgrade-success}
 
@@ -51,9 +55,9 @@ Nach einem [ersetzenden Upgrade](/help/sites-deploying/in-place-upgrade.md) soll
 
 Bisher mussten diverse Protokolldateien, Teile des Repositorys und das Launchpad sorgfältig überprüft werden, um den Status Ihrer Instanz nach einem Upgrade zu bestimmen. Durch das Generieren von Berichten nach einer Aktualisierung können defekte Upgrades erkannt werden, bevor Instanzen zum Einsatz kommen.
 
-Der primäre Zweck dieser Funktion besteht darin, den manuellen Interpretationsaufwand zu reduzieren oder eine komplexe Parsing-Logik für mehrere Endpunkte zu vermeiden, die erforderlich sind, um den Erfolg eines Upgrades zu qualifizieren. Ziel der Lösung ist es, eindeutige Informationen für externe Automatisierungssysteme bereitzustellen, damit diese auf den Erfolg oder das festgestellte Fehlschlagen einer Aktualisierung reagieren können.
+Der primäre Zweck dieser Funktion besteht darin, den manuellen Interpretationsaufwand zu reduzieren oder eine komplexe Parsing-Logik für mehrere Endpunkte zu vermeiden, die erforderlich sind, um den Erfolg eines Upgrades zu qualifizieren. Die Lösung zielt darauf ab, für externe Automatisierungssysteme eindeutige Informationen bereitzustellen, damit diese auf den Erfolg oder das festgestellte Fehlschlagen einer Aktualisierung reagieren können.
 
-Sie dient vor allem dazu, Folgendes sicherzustellen:
+Insbesondere wird Folgendes sichergestellt:
 
 * Fehlgeschlagene Upgrades, die vom Upgrade-Framework erkannt werden, werden in einem einzigen Upgrade-Bericht zusammengefasst.
 * Der Upgrade-Bericht enthält Indikatoren über notwendige manuelle Eingriffe.
@@ -84,9 +88,9 @@ Nach dem Upgrade sollte ersichtlich sein, dass die Oak-Version auf Version **1.8
 
 Während des Upgrades versucht AEM, die Anpassungen zu sichern und sie unter `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>` zu speichern. Um diesen Ordner in CRXDE Lite anzuzeigen, müssen Sie [CRXDE Lite vorübergehend aktivieren](/help/sites-administering/enabling-crxde-lite.md).
 
-Der Ordner mit dem Zeitstempel sollte die Eigenschaft `mergeStatus` mit dem Wert `COMPLETED` aufweisen. Der Ordner **to-process** sollte leer sein und der Knoten **overwritten** zeigt an, welche Knoten beim Upgrade überschrieben wurden. Unter dem Knoten **leftovers** angezeigte Inhalte konnten beim Upgrade nicht problemlos zusammengeführt werden. Wenn Ihre Implementierung von einem der untergeordneten Knoten abhängig ist (und nicht bereits von Ihrem aktualisierten Codepaket installiert wurde), muss eine manuelle Zusammenführung durchgeführt werden.
+Der Ordner mit dem Zeitstempel sollte die Eigenschaft `mergeStatus` mit dem Wert `COMPLETED` aufweisen. Der Ordner **to-process** sollte leer sein und der Knoten **overwritten** zeigt an, welche Knoten beim Upgrade überschrieben wurden. Unter dem Knoten **leftovers** angezeigte Inhalte konnten beim Upgrade nicht problemlos zusammengeführt werden. Wenn Ihre Implementierung von einem der untergeordneten Knoten abhängig ist (und noch nicht von Ihrem aktualisierten Code-Paket installiert wurde), müssen sie manuell zusammengeführt werden.
 
-Deaktivieren Sie CRXDE Lite nach dieser Übung, wenn eine Staging- oder Produktionsumgebung verwendet wird.
+Deaktivieren Sie die CRXDE Lite nach dieser Übung, wenn Sie sich in einer Staging- oder Produktionsumgebung befinden.
 
 ### Erstüberprüfung von Seiten {#initial-validation-of-pages}
 
@@ -94,29 +98,29 @@ Führen Sie in AEM eine Erstüberprüfung mithilfe von mehreren Seiten durch. We
 
 ### Anwenden von AEM Service Packs {#apply-aem-service-packs}
 
-Anwenden aller relevanten AEM 6.4 Service Packs, die veröffentlicht wurden.
+Wenden Sie alle relevanten AEM 6.4 Service Packs an, falls diese veröffentlicht wurden.
 
-### Migrieren von AEM-Funktionen {#migrate-aem-features}
+### Migrieren AEM Funktionen {#migrate-aem-features}
 
-Für eine Reihe von Funktionen in AEM sind nach einem Upgrade zusätzliche Schritte erforderlich. Eine vollständige Liste dieser Funktionen und die erforderlichen Schritte zum Migrieren derselben auf AEM 6.4 finden Sie auf der Seite [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md).
+Für eine Reihe von Funktionen in AEM sind nach einem Upgrade zusätzliche Schritte erforderlich. Eine vollständige Liste dieser Funktionen und Schritte zur Migration in AEM 6.4 finden Sie im [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) Seite.
 
 ### Überprüfen der Konfigurationen für die geplante Wartung {#verify-scheduled-maintenance-configurations}
 
-#### Aktivieren der Bereinigung des Datenspeichers {#enable-data-store-garbage-collection}
+#### Datenspeicherbereinigung aktivieren {#enable-data-store-garbage-collection}
 
 Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgabe „Data Store-Abfallsammlung“ aktiviert ist und zur Liste für die wöchentliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie [hier](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
->Die Aufgabe wird nicht für benutzerdefinierte S3-Datenspeicherinstallationen empfohlen oder wenn ein freigegebener Datenspeicher verwendet wird.
+>Dies wird für benutzerdefinierte S3-Datenspeicherinstallationen oder bei Verwendung eines freigegebenen Datenspeichers nicht empfohlen.
 
-#### Aktivieren Sie die Online-Revisionsbereinigung {#enable-online-revision-cleanup}
+#### Aktivieren der Online-Revisionsbereinigung {#enable-online-revision-cleanup}
 
-Wenn Sie MongoMK oder das neue TarMK-Segmentformat verwenden, stellen Sie sicher, dass die Aufgabe „Revisionsbereinigung“ aktiviert ist und zur Liste für die tägliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie [hier](/help/sites-deploying/revision-cleanup.md).
+Wenn Sie MongoMK oder das neue TarMK-Segmentformat verwenden, stellen Sie sicher, dass die Aufgabe „Revisionsbereinigung“ aktiviert ist und zur Liste für die tägliche Wartung hinzugefügt wurde. Anleitungen [here](/help/sites-deploying/revision-cleanup.md).
 
-### Durchführen des Testplans {#execute-test-plan}
+### Testplan ausführen {#execute-test-plan}
 
-Führen Sie einen detaillierten Testplan durch, wie unter [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) im Abschnitt **Testverfahren** beschrieben.
+Ausführlichen Testplan gemäß Definition ausführen [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) unter **Testverfahren** Abschnitt.
 
 ### Aktivieren von Replikationsagenten {#enable-replication-agents}
 
@@ -124,7 +128,7 @@ Wenn eine Veröffentlichungsumgebung vollständig upgegradet und überprüft wur
 
 ### Aktivieren von benutzerdefinierten geplanten Aufträgen {#enable-custom-scheduled-jobs}
 
-Zu diesem Zeitpunkt können alle geplanten Aufträge, die Teil der Codebasis sind, aktiviert werden.
+Alle geplanten Aufträge, die Teil der Codebasis sind, können zu diesem Zeitpunkt aktiviert werden.
 
 ## Analysieren von Upgrade-Problemen {#analyzing-issues-with-upgrade}
 
@@ -136,11 +140,11 @@ Diese Szenarien sollen dabei helfen, die Grundursache der mit dem Upgrade im Zus
 
 Nach dem Upgrade von einer früheren Version auf AEM 6.4 ist die Dynamic Media Cloud-Konfiguration aus früheren Einstellungen unter Umständen nicht mehr über die TouchUI von AEM 6.4 verfügbar. Um dieses Problem zu beheben, verwenden Sie CRXDE Lite , um die vorherigen Einstellungen zu entfernen, und erstellen Sie dann eine neue Dynamic Media Cloud-Konfiguration. Siehe auch [Dynamic Media-Repository-Umstrukturierung in AEM 6.4](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md).
 
-### Fehler bei der Repository-Migration  {#repository-migration-failing-}
+### Repository-Migration fehlgeschlagen  {#repository-migration-failing-}
 
 Die Datenmigration von CRX2 auf OAK sollte für alle Szenarien mit Quellinstanzen auf Basis von CQ 5.4 durchführbar sein. Stellen Sie sicher, dass Sie die Upgrade-Anweisungen in diesem Dokument genau befolgen. Dazu gehört auch, dass Sie die Datei `repository.xml` entsprechend vorbereiten und sicherstellen, dass keine benutzerdefinierte Authentifizierung über JAAS gestartet wurde und dass die Instanz vor dem Start der Migration auf Inkonsistenzen überprüft wurde.
 
-Wenn bei der Migration weiterhin Fehler auftreten, können Sie die Grundursache bestimmen, indem Sie die Datei `upgrade.log` überprüfen. Wenn das Problem bislang unbekannt ist, melden Sie es dem Kundensupport.
+Wenn bei der Migration weiterhin Fehler auftreten, können Sie die Grundursache bestimmen, indem Sie die Datei `upgrade.log` überprüfen. Wenn das Problem noch nicht bekannt ist, melden Sie es dem Support.
 
 ### Upgrade wurde nicht ausgeführt {#the-upgrade-did-not-run}
 
@@ -148,7 +152,7 @@ Stellen Sie vor Beginn der vorbereitenden Schritte sicher, dass zuerst die **Que
 
 ### Fehlerhafte Aktualisierung von Paketen  {#packages-and-bundles-fail-to-update-}
 
-Wenn Pakete während des Upgrades nicht installiert werden können, werden die darin enthaltenen Pakete ebenfalls nicht aktualisiert. Diese Kategorie von Problemen geht für gewöhnlich auf eine Fehlkonfiguration des Datenspeichers zurück. Sie werden auch als **ERROR**- und **WARN**-Meldungen in der Datei error.log angezeigt. Da in den meisten dieser Fälle die Standardanmeldung möglicherweise nicht funktioniert, können Sie CRXDE direkt verwenden, um die Konfigurationsprobleme zu untersuchen und zu finden.
+Wenn Pakete während des Upgrades nicht installiert werden können, werden die darin enthaltenen Pakete ebenfalls nicht aktualisiert. Diese Kategorie von Problemen wird normalerweise durch eine Fehlkonfiguration des Datenspeichers verursacht. Sie werden auch als **FEHLER** und **WARN** Meldungen in der Datei error.log. Da in den meisten dieser Fälle die Standardanmeldung möglicherweise nicht funktioniert, können Sie CRXDE direkt verwenden, um die Konfigurationsprobleme zu untersuchen und zu finden.
 
 ### Einige AEM-Pakete wechseln nicht in den aktiven Status {#some-aem-bundles-are-not-switching-to-the-active-state}
 
@@ -160,21 +164,21 @@ Es wird zudem empfohlen, die Paket-Liste einer aktuellen AEM 6.4-Instanz mit der
 
 ### Benutzerdefinierte Pakete wechseln nicht in den aktiven Status {#custom-bundles-not-switching-to-the-active-state}
 
-Wenn Ihre benutzerdefinierten Pakete nicht in den aktiven Status wechseln, liegt dies höchstwahrscheinlich an Code, der die geänderte API nicht importiert. Dies führt oftmals zu nicht erfüllten Abhängigkeiten.
+Wenn Ihre benutzerdefinierten Pakete nicht in den aktiven Status wechseln, liegt dies höchstwahrscheinlich an Code, der die geänderte API nicht importiert. Dies führt meist zu nicht zufrieden stellenden Abhängigkeiten.
 
-Eine gelöschte API sollte in einer der vorherigen Versionen als veraltet markiert werden. In diesem Hinweis zur veralteten Version finden Sie u. U. Anweisungen über eine direkte Migration Ihres Codes. Adobe ist bestrebt, nach Möglichkeit eine semantische Versionierung zu verwenden, sodass die Versionen Änderungen anzeigen können, die Probleme verursachen.
+Eine gelöschte API sollte in einer der vorherigen Versionen als veraltet markiert werden. In diesem Hinweis zur veralteten Version finden Sie u. U. Anweisungen über eine direkte Migration Ihres Codes. Die Adobe zielt nach Möglichkeit auf die semantische Versionierung ab, sodass die Versionen auf brechende Änderungen hinweisen können.
 
-Es empfiehlt sich zudem, zu überprüfen, ob die Änderung, die das Problem verursacht hat, unbedingt nötig war, und sie zurückzusetzen, wenn dies nicht der Fall ist. Überprüfen Sie zudem, ob die Version des Paketexports unter Beachtung einer strengen semantischen Versionierung mehr als nötig erhöht wurde.
+Es empfiehlt sich zudem, zu überprüfen, ob die Änderung, die das Problem verursacht hat, unbedingt nötig war, und sie zurückzusetzen, wenn dies nicht der Fall ist. Überprüfen Sie außerdem, ob die Versionssteigerung des Package-Exports nach strikter semantischer Versionierung mehr als nötig erhöht wurde.
 
-### Fehlerhafte Plattform-Benutzeroberfläche {#malfunctioning-platform-ui}
+### Fehlerhafte Benutzeroberfläche der Plattform {#malfunctioning-platform-ui}
 
-Im Falle bestimmter Benutzeroberflächenfunktionen, die nach dem Upgrade nicht richtig funktionieren, sollten Sie zunächst eine Überprüfung auf benutzerdefinierte Überlagerungen der Oberfläche vornehmen. Möglicherweise haben sich einige Strukturen geändert und die Überlagerung muss u. U. aktualisiert werden oder ist veraltet.
+Im Falle bestimmter Benutzeroberflächenfunktionen, die nach dem Upgrade nicht richtig funktionieren, sollten Sie zunächst eine Überprüfung auf benutzerdefinierte Überlagerungen der Oberfläche vornehmen. Einige Strukturen haben sich möglicherweise geändert und die Überlagerung muss möglicherweise aktualisiert werden oder ist veraltet.
 
-Führen Sie anschließend eine Überprüfung auf JavaScript-Fehler durch, die möglicherweise auf benutzerdefinierte, hinzugefügte Erweiterungen zurückzuführen sind, welche mit Client-Bibliotheken verknüpft sind. Dies kann auch auf ein benutzerdefiniertes CSS zutreffen, das möglicherweise Probleme am AEM-Layout verursacht.
+Führen Sie anschließend eine Überprüfung auf JavaScript-Fehler durch, die möglicherweise auf benutzerdefinierte, hinzugefügte Erweiterungen zurückzuführen sind, welche mit Client-Bibliotheken verknüpft sind. Dasselbe kann für benutzerdefiniertes CSS gelten, das möglicherweise Probleme beim AEM-Layout verursacht.
 
-Führen Sie abschließend eine Überprüfung auf fehlerhafte Konfigurationen durch, die von JavaScript möglicherweise nicht verarbeitet werden können. Dies ist für gewöhnlich bei unsachgemäß deaktivierten Erweiterungen der Fall.
+Führen Sie abschließend eine Überprüfung auf fehlerhafte Konfigurationen durch, die von JavaScript möglicherweise nicht verarbeitet werden können. Dies ist normalerweise bei falsch deaktivierten Erweiterungen der Fall.
 
-### Fehlerhafte benutzerdefinierte Komponenten, Vorlagen oder Benutzeroberflächenerweiterungen {#malfunctioning-custom-components-templates-or-ui-extensions}
+### Fehlerhafte benutzerdefinierte Komponenten, Vorlagen oder Benutzeroberflächen-Erweiterungen {#malfunctioning-custom-components-templates-or-ui-extensions}
 
 In den meisten Fällen sind die Grundursachen für diese Probleme dieselben wie für nicht gestartete oder nicht installierte Pakete. Der einzige Unterschied besteht darin, dass die Probleme bei der ersten Verwendung der Komponenten auftreten.
 
@@ -194,7 +198,7 @@ Dafür sollten Sie alle Meldungen aus der Datei „error.log“ entfernen, die e
 grep -v UnrelatedErrorString
 ```
 
-Einige Fehlermeldungen sind möglicherweise nicht sofort selbsterklärend. In diesem Fall kann die Anzeige des Kontexts, in dem sie auftreten, verdeutlichen, wo der Fehler verursacht wurde. Sie können den Fehler mithilfe der folgenden Befehle trennen:
+Einige Fehlermeldungen sind möglicherweise nicht sofort selbsterklärend. In diesem Fall kann die Anzeige des Kontexts, in dem sie auftreten, verdeutlichen, wo der Fehler verursacht wurde. Sie können den Fehler wie folgt trennen:
 
 * `grep -B` für das Hinzufügen von Zeilen vor dem Fehler
 
@@ -202,7 +206,7 @@ oder
 
 * `grep -A` für das Hinzufügen von Zeilen nach dem Fehler.
 
-In einigen Fällen können Fehler auch in WARN-Meldungen gefunden werden, da gültige Fälle vorliegen können, die zu diesem Status führen. Die Anwendung kann darüber hinaus nicht immer entscheiden, ob ein tatsächlicher Fehler vorliegt. Sie sollten diese Meldungen ebenfalls lesen.
+In einigen Fällen können Fehler auch in WARN-Meldungen gefunden werden, da gültige Fälle vorliegen können, die zu diesem Status führen. Die Anwendung kann darüber hinaus nicht immer entscheiden, ob ein tatsächlicher Fehler vorliegt. Stellen Sie sicher, dass Sie auch diese Nachrichten konsultieren.
 
 ### Kontaktaufnahme mit dem Adobe-Support {#contacting-adobe-support}
 

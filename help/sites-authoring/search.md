@@ -1,7 +1,7 @@
 ---
 title: Suchen
 seo-title: Search
-description: Rasches Auffinden Ihrer Inhalte dank umfassender Suchfunktionen
+description: Schnellere Suche von Inhalten mit umfassender Suche
 seo-description: Find your content faster with comprehensive search
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
 contentOwner: Chris Bohnert
@@ -10,20 +10,24 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 99%
+source-wordcount: '548'
+ht-degree: 52%
 
 ---
 
 # Suchen{#search-features}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Möglichkeiten zur Inhaltssuche.
 
 >[!NOTE]
 >
->Außerhalb der Autorenumgebung stehen auch andere Verfahren für die Suche zur Verfügung, wie der [Query Builder](/help/sites-developing/querybuilder-api.md) und [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Außerhalb der Autorenumgebung stehen auch andere Mechanismen für die Suche zur Verfügung, z. B. die [Query Builder](/help/sites-developing/querybuilder-api.md) und [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Grundlagen zur Suche {#search-basics}
 
@@ -45,7 +49,7 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 So durchsuchen und filtern Sie Ressourcen:
 
-1. Öffnen Sie die Option **Suchen** (mit der Lupe in der Symbolleiste) und geben Sie den Suchbegriff ein. Es werden Empfehlungen angezeigt, die Sie dann auswählen können:
+1. Öffnen **Suche** (mit der Lupe in der Symbolleiste) und geben Sie Ihren Suchbegriff ein. Vorschläge werden erstellt und können ausgewählt werden:
 
    ![screen_shot_2018-03-23at101404](assets/screen_shot_2018-03-23at101404.png)
 
@@ -53,8 +57,8 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Falls erforderlich, können Sie den Positionsfilter entfernen (wählen Sie dazu **X** neben dem Filter aus, den Sie entfernen möchten), um alle Konsolen/Ressourcentypen zu durchsuchen.
-1. Die Ergebnisse werden angezeigt, und zwar gruppiert nach Konsole und Ressourcentyp.
+1. Bei Bedarf können Sie den Standortfilter entfernen (wählen Sie **X** auf dem Filter, den Sie entfernen möchten), um über alle Konsolen/Ressourcentypen zu suchen.
+1. Die Ergebnisse werden angezeigt und nach Konsole und Ressourcentyp gruppiert.
 
    Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
 
@@ -66,10 +70,10 @@ So durchsuchen und filtern Sie Ressourcen:
 
    Je nach Ressourcentyp zeigt die Suche eine vordefinierte Auswahl von Such-/Filterkriterien an.
 
-   Im Seitenbereich können Sie folgende Elemente auswählen:
+   Im seitlichen Bedienfeld können Sie Folgendes auswählen:
 
    * Gespeicherte Suchvorgänge
-   * Verzeichnisse, die durchsucht werden sollen
+   * Suchverzeichnis
    * Tags
    * Suchkriterien, z. B. Änderungsdatum, Veröffentlichungsstatus, Live Copy-Status. 
 
@@ -77,8 +81,8 @@ So durchsuchen und filtern Sie Ressourcen:
    >
    >Die Suchkriterien können variieren:
    >
-   >* abhängig vom ausgewählten Ressourcentyp – beispielsweise sind die Kriterien „Assets“ und „Communities“ nach Themen spezialisiert.
-   >* je nach Instanz, da die [Suchformulare](/help/sites-administering/search-forms.md) (entsprechend der Stelle in AEM) angepasst werden können.
+   >* Je nach ausgewähltem Ressourcentyp; Beispielsweise sind die Kriterien Assets und Communities verständlicherweise spezialisiert.
+   >* Ihre Instanz als [Forms durchsuchen](/help/sites-administering/search-forms.md) kann angepasst werden (entsprechend dem Speicherort in AEM).
 
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
@@ -91,15 +95,15 @@ So durchsuchen und filtern Sie Ressourcen:
 
 >[!NOTE]
 >
->Die Suchkriterien werden bei Auswahl eines Elements in den Suchergebnissen beibehalten.
+>Suchkriterien werden beibehalten, wenn ein Element in den Suchergebnissen ausgewählt wird.
 >
 >Bei Auswahl eines Elements auf der Seite mit den Suchergebnissen bleiben die Suchkriterien erhalten, wenn Sie über die Zurück-Schaltfläche des Browsers zur Suchseite zurückkehren.
 
 ## Gespeicherte Suchvorgänge {#saved-searches}
 
-Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestimmte Suchkonfiguration speichern, um diese später abzurufen und zu verwenden:
+Neben der Suche nach einer Vielzahl von Facetten können Sie auch eine bestimmte Suchkonfiguration speichern, um sie später abzurufen und zu verwenden:
 
-1. Definieren Sie die Suchkriterien und wählen Sie **Speichern**.
+1. Definieren Sie Ihre Suchkriterien und wählen Sie **Speichern**.
 
    ![screen_shot_2018-03-23at101710-1](assets/screen_shot_2018-03-23at101710-1.png)
 
@@ -113,8 +117,8 @@ Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestim
 
 1. Nach dem Speichern können Sie:
 
-   * **x** (für den Namen der gespeicherten Suche) verwenden, um eine neue Abfrage zu starten. Die gespeicherte Suche selbst wird nicht gelöscht.
-   * die Option **Gespeicherte Suche bearbeiten** verwenden, die Suchbedingungen ändern und dann erneut auf **Speichern** klicken.
+   * Verwendung **x** (neben dem Namen der gespeicherten Suche), um eine neue Abfrage zu starten (die gespeicherte Suche selbst wird nicht gelöscht).
+   * **Gespeicherte Suche bearbeiten**, ändern Sie die Suchbedingungen und **Speichern** erneut.
 
 Gespeicherte Suchen können geändert werden, indem Sie die gespeicherte Suche auswählen und unten im Suchfeld auf **Gespeicherte Suche bearbeiten** klicken.
 

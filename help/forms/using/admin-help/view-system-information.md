@@ -1,7 +1,7 @@
 ---
-title: Systeminformationen anzeigen
+title: Anzeigen von Systeminformationen
 seo-title: View system information
-description: Erfahren Sie, wie Sie Diagramme zur Ressourcenüberwachung und Informationen über den Server anzeigen, der AEM Forms ausführt.
+description: Erfahren Sie, wie Sie Diagramme zur Ressourcenüberwachung und Informationen über den Server anzeigen können, auf dem AEM Formulare ausgeführt werden.
 seo-description: Learn how you can view resource monitoring charts and information about the server that is running AEM forms.
 uuid: 983c1cc7-a8b3-48b2-a4c8-7b28a2e32537
 contentOwner: admin
@@ -10,32 +10,36 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: e4542335-fcee-4506-965a-5bfe79f4b29a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 65%
 
 ---
 
-# Systeminformationen anzeigen {#view-system-information}
+# Anzeigen von Systeminformationen {#view-system-information}
 
-Auf der Registerkarte „System“ werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, der AEM Forms ausführt. Klicken Sie in Administration Console in der rechten oberen Ecke der Seite auf „Health Monitor“, um diese Informationen anzuzeigen. Wenn Sie AEM Forms in einer Clusterumgebung ausführen, gelten die angezeigten Informationen für den auf der Serverliste ausgewählten Knoten.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Um die aktuellen Systeminformationen als Eigenschaftendatei zu speichern, klicken Sie auf „Speichern“.
+Auf der Registerkarte System werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, auf dem AEM Formulare ausgeführt werden. Um auf diese Informationen zuzugreifen, klicken Sie in Administration Console oben rechts auf der Seite auf Health Monitor . Wenn Sie AEM Formulare in einer Clusterumgebung ausführen, werden die angezeigten Informationen für den Knoten angezeigt, der aus der Serverliste ausgewählt wurde.
 
-Im rechten Bereich der Registerkarte „System“ werden die folgenden Informationen grafisch angezeigt:
+Um die aktuellen Systeminformationen als Eigenschaftendatei zu speichern, klicken Sie auf &quot;Speichern&quot;.
 
-* Anzahl der Auftrags- und Arbeitselemente
-* Heap- und zugesicherte Heap-Auslastung
-* Nicht-Heap- und zugesicherte Nicht-Heap-Auslastung
+Im rechten Bereich der Registerkarte System werden die folgenden Informationen grafisch dargestellt:
 
-Sie können Ihren Zeiger auf der Zeitachse verschieben, um Werte für einen bestimmten Zeitpunkt abzurufen.
+* Auftrags- und Arbeitzählungselemente
+* Heap- und zugesicherte Heap-Nutzung
+* Nicht-Heap- und zugesicherte Nicht-Heap-Nutzung
+
+Sie können Ihren Mauszeiger auf die Timeline ziehen, um Werte für einen bestimmten Zeitpunkt abzurufen.
 
 >[!NOTE]
 >
->Die Diagrammdaten, Serverinformationswerte und die Uhrzeit werden alle 10 Minuten aktualisiert. Die Informationen werden nicht in Echtzeit angezeigt.
+>Die Diagrammdaten, Server-Informationswerte und die Uhrzeit werden alle 10 Minuten aktualisiert. Die Informationen werden nicht in Echtzeit angezeigt.
 
-Im linken Bereich der Registerkarte „System“ werden die folgenden Informationen zum Server oder Knoten angezeigt:
+Im linken Bereich der Registerkarte System werden die folgenden Informationen zum Server oder Knoten angezeigt:
 
 **Virtual Machine:** Version von Java Virtual Machine (JVM) auf dem Server.
 

@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: spa
 discoiquuid: a458cc95-cd94-4f3f-9e7b-d6a5780ec4d5
 exl-id: 1af29921-7c24-49b5-9f4c-60671641d4e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 92%
+source-wordcount: '236'
+ht-degree: 81%
 
 ---
 
 # SPA- und Launch-Integration{#spa-and-launch-integration}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Adobe Experience Platform Launch ist die empfohlene Methode zur Implementierung von Analytics, Target und Audience Manager in Single Page Applications (SPAs).
 

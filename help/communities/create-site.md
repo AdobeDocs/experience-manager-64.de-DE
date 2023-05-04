@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
 exl-id: 5d58f9c5-3210-48ef-94a3-805a1a57e3af
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1672'
 ht-degree: 4%
 
 ---
 
 # Erstellen einer neuen Community-Site {#author-a-new-community-site}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Neue Community-Site erstellen {#create-a-new-community-site}
 
@@ -107,7 +111,7 @@ Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die 
 Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
 * Typ &#39;tut&#39;
-* Auswählen `Tutorial`
+* Klicken Sie auf `Tutorial`
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -227,7 +231,7 @@ Wählen Sie das Exportsymbol aus, um ein Paket der Community-Site zu erstellen, 
 >1. (Optional) Wählen Sie `Clear` oder `Force Retry` Zurücksetzen der Replikationswarteschlange
 
 
-### Wählen Sie Veröffentlichen {#select-publish}
+### Veröffentlichung auswählen {#select-publish}
 
 Nachdem Sie sichergestellt haben, dass der Veröffentlichungsserver ausgeführt wird, wählen Sie das Weltsymbol aus, um die Community-Site zu veröffentlichen.
 

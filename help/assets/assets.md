@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 99%
+source-wordcount: '897'
+ht-degree: 79%
 
 ---
 
 # Über [!DNL Adobe Experience Manager Assets] als DAM-Lösung {#about-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 [!DNL Assets] ist ein DAM-Tool (Digital Asset Management), das integraler Bestandteil von [!DNL Experience Manager] ist und Ihrem Unternehmen die Verwaltung und Verteilung digitaler Assets ermöglicht. Benutzende im Unternehmen können viele Arten von digitalen Assets verwalten, speichern und darauf zugreifen, z. B. Bilder, Videos, Dokumente, Audio-Clips, 3D-Dateien und Rich-Media-Dateien, die im Web, in gedruckten Dokumenten und für die digitale Verteilung verwendet werden können.
 
@@ -24,9 +28,9 @@ Die [!DNL Assets]-Funktionen von [!DNL Experience Manager] bieten Ihnen folgende
 
 * Hinzufügen und Freigeben von Bildern, Dokumenten, Audiodateien und Videodateien in einer Vielzahl von Dateiformaten.
 * Verwalten von Assets durch Gruppierung nach Tags, Lightbox oder Bewertung (Favoriten). Hinzufügen von Anmerkungen zu Assets.
-* Auffinden von Assets durch Durchsuchen von Dateinamen, des Volltextes von Dokumenten und durch Suchvorgänge nach Datum, Dokumenttyp und Tags.
+* Suchen Sie nach Assets, indem Sie nach Dateinamen, dem Volltext von Dokumenten und nach Daten, Dokumenttyp und Tags suchen.
 * Hinzufügen oder Bearbeiten von Metadateninformationen für Assets. Metadaten werden automatisch mit dem entsprechenden Asset in einer Version zusammengefasst. Sie können Asset-Metadaten importieren und exportieren.
-* Ausführen von Bildbearbeitungsvorgängen, beispielsweise Skalierung und Hinzufügen von Bildfiltern. Importieren und Exportieren mehrerer digitaler Assets gleichzeitig mithilfe eines WebDAV- oder CIFS-Ordners.
+* Führen Sie Bildbearbeitungsfunktionen wie Skalierung und Hinzufügen von Bildfiltern durch. Importieren und exportieren Sie mehrere digitale Assets gleichzeitig mit einem WebDAV- oder CIFS-Ordner.
 * Verwenden von Workflows und Benachrichtigungen, um die gemeinsame Verarbeitung und den gemeinsamen Download mehrerer Assets zu ermöglichen und Zugriffsrechte auf Assets zu verwalten.
 
 ### [!DNL Experience Manager Assets] ist mit [!DNL Experience Manager Sites] integriert {#aem-assets-fully-integrated-in-cq-wcm}
@@ -52,7 +56,7 @@ Um zu bestimmen, ob ein Bild in DAM-Repository bereitgestellt oder die Bildkompo
 
 Ein Asset ist ein digitales Dokument oder Bild bzw. eine digitale Video- oder Audiodatei (oder ein Teil davon), das bzw. die in verschiedenen Ausgabedarstellungen vorliegen und über Unter-Assets verfügen kann (beispielsweise Ebenen in einer Photoshop-Datei, Folien in einer PowerPoint-Datei, Seiten in einer PDF-Datei, Dateien in einem ZIP-Archiv).
 
-Bei einem Asset handelt es sich im Wesentlichen um eine binäre Datei mitsamt Metadaten, Wiedergabe und Unter-Assets. Ausführliche Informationen finden Sie im [DAM-Leistungshandbuch](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=de).
+Ein Asset ist im Wesentlichen eine Binärdatei sowie Metadaten, Ausgabeformate und Teil-Assets. Siehe [DAM-Leistungsleitfaden](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=de) für detaillierte Informationen.
 
 >[!CAUTION]
 >
@@ -66,13 +70,13 @@ Bei der Arbeit mit digitalen Assets in [!DNL Experience Manager] müssen Sie mit
 
 * **Metadaten**: [!DNL Assets] verfügen über Metadaten, darunter Autor, Ablaufdatum, DRM-Informationen (Digital Rights Management) usw. Metadaten sind unter der Zugangssteuerung zu finden. [!DNL Assets] unterstützt standardmäßig die folgenden allgemeinen Metadaten-Schemata:
 
-   * Dublin Core: einschließlich Autor, Beschreibung, Datum, Thema usw.
-   * IPTC: einschließlich Ereignis, Modell, Ort usw.
+   * Dublin Core: einschließlich Autor, Beschreibung, Datum, Betreff usw.
+   * IPTC: einschließlich Ereignis, Modell, Standort usw.
    * WCM: einschließlich Seiteneigenschaften, [!UICONTROL Einschaltzeit] und [!UICONTROL Ausschaltzeit] usw.
 
 * **Tagging**: [!DNL Assets] können mit Tags versehen und klassifiziert werden. Siehe [Organisieren von Assets](/help/assets/organize-assets.md).
 
-* **Ausgabedarstellungen**: Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. [!DNL Assets] verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Assets können über eine beliebige Anzahl an weiteren Darstellungen verfügen, die beispielsweise durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets erstellt werden. Das Ausgabeformat kann verschieden sein, mit einer unterschiedlichen Auflösung, einem hinzugefügten Wasserzeichen oder anderen geänderten Merkmalen.
+* **Ausgabedarstellungen**: Eine Ausgabedarstellung ist die binäre Darstellung eines Assets. [!DNL Assets] verfügen stets über eine primäre Darstellung, nämlich die der hochgeladenen Datei. Sie können über eine beliebige Anzahl zusätzlicher Darstellungen verfügen, die erstellt werden, z. B. durch benutzerdefinierte Workflow-Schritte oder beim Hochladen eines Assets. Ausgabedarstellungen können eine andere Größe aufweisen, mit einer anderen Auflösung, mit einem hinzugefügten Wasserzeichen oder einem anderen geänderten Merkmal.
 
 * **Versionen**: Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bestimmten Zeitpunkt aufgezeichnet. Sie können frühere Versionen von Assets wiederherstellen. Siehe [Versionierung in  [!DNL Assets]](managing-assets-touch-ui.md#asset-versioning).
 
@@ -80,7 +84,7 @@ Bei der Arbeit mit digitalen Assets in [!DNL Experience Manager] müssen Sie mit
 
 ### Arbeiten mit digitalen Assets {#how-to-work-with-assets}
 
-Sie können für Assets oder Sammlungen Aktionen durchführen. Mit Aktionen können Assets, Sammlungen und Darstellungen erstellt oder geändert werden. Viele der grundlegenden Aktionen, die Sie für Assets durchführen können – Hochladen, Löschen, Aktualisieren, Speichern von Unter-Assets –, lösen vorkonfigurierte Workflows aus. Diese sind in [!DNL Assets] automatisch aktiviert und werden in den Medien-Handlern für [!DNL Assets] detailliert beschrieben.
+Sie führen eine Aktion für ein Asset oder eine Sammlung durch. Mit Aktionen können Assets, Sammlungen und Ausgabedarstellungen erstellt oder geändert werden. Viele der grundlegenden Aktionen, die Sie für Assets durchführen können – Hochladen, Löschen, Aktualisieren, Speichern von Unter-Assets –, lösen vorkonfigurierte Workflows aus. Diese sind in [!DNL Assets] automatisch aktiviert und werden in den Medien-Handlern für [!DNL Assets] detailliert beschrieben.
 
 Folgende Aufgaben können Sie mit diesen vorkonfigurierten Workflows durchführen:
 

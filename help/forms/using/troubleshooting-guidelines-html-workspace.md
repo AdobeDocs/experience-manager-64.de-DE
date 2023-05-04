@@ -1,7 +1,7 @@
 ---
-title: Fehlerbehebung bei Richtlinien für AEM Forms Workspace
+title: Fehlerbehebung bei Richtlinien für einen AEM Forms-Arbeitsbereich
 seo-title: Troubleshooting guidelines for AEM Forms workspace
-description: Aktivieren Sie Protokolle und verwenden Sie Debugger im Browser, um AEM Forms Workspace-Fehler zu beheben.
+description: Aktivieren Sie Protokolle und verwenden Sie Debugger im Browser, um eine Fehlerbehebung in AEM Forms Workspace durchzuführen.
 seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
 uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
@@ -10,20 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: 210cb5f2-cc5c-4664-b324-5c6f70f7b593
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '765'
+ht-degree: 33%
 
 ---
 
-# Fehlerbehebung bei Richtlinien für AEM Forms Workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Fehlerbehebung bei Richtlinien für einen AEM Forms-Arbeitsbereich {#troubleshooting-guidelines-for-aem-forms-workspace}
 
-Dieser Artikel erläutert, wie Sie AEM Forms Workspace debuggen, indem Sie die Protokollierung aktivieren und den Debugger in einem Browser verwenden. Darüber hinaus werden einige allgemeine Fragen, die bei der Verwendung von AEM Forms Workspace auftreten können, und ihre Umgehungslösungen behandelt.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Dieser Artikel erläutert, wie Sie AEM Forms Workspace debuggen, indem Sie die Protokollierung aktivieren und den Debugger in einem Browser verwenden. Außerdem werden einige häufig auftretende Probleme bei der Verwendung von AEM Forms Workspace und deren Umgehungslösungen erläutert.
 
 ## AEM Forms Workspace-Paket kann nicht installiert werden {#unable-to-install-aem-forms-workspace-package}
 
-Nach der Installation des Patches öffnen Sie die AEM Forms Workspace-App. Falls ein Fehler vom Typ „Keine Resource gefunden“ auftritt, öffnen Sie CRX Package Manager und installieren Sie das Paket `adobe-lc-workspace-pkg-<version>.zip` erneut.
+Öffnen Sie nach der Installation des Patches den AEM Forms Workspace. Falls ein Fehler vom Typ „Keine Resource gefunden“ auftritt, öffnen Sie CRX Package Manager und installieren Sie das Paket `adobe-lc-workspace-pkg-<version>.zip` erneut.
 
 Wenn während der Installation des Pakets der Fehler `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed` auftritt, führen Sie folgende Schritte aus:
 
@@ -34,11 +38,11 @@ Wenn während der Installation des Pakets der Fehler `javax.jcr.nodetype.Constra
 
 1. Navigieren Sie zu Package Manager. Die Standardeinstellung ist `https://[localhost]:[port]/lc/crx/packmgr/index.jsp.`
 1. Suchen Sie das Paket `adobe-lc-workspace-pkg-[version].zip` und installieren Sie es.
-1. Starten Sie den Anwendungsserver neu.
+1. Starten Sie den Anwendungs-Server neu.
 
-## Protokollierung für AEM Forms Workspace {#aem-forms-workspace-nbsp-logging}
+## AEM Forms Workspace-Protokollierung {#aem-forms-workspace-nbsp-logging}
 
-Sie können Protokolle auf verschiedenen Ebenen generieren, um eine optimale Fehlerbehebung zu ermöglichen. Beispielsweise hilft in einer komplexen Anwendung die Protokollierung auf der Komponentenebene beim Debugging und der Fehlerbehebung bestimmter Komponenten.
+Sie können Protokolle auf verschiedenen Ebenen generieren, um eine optimale Fehlerbehebung zu ermöglichen. In einer komplexen Anwendung hilft beispielsweise die Protokollierung auf Komponentenebene beim Debugging und der Fehlerbehebung bei bestimmten Komponenten.
 
 In AEM Forms Workspace:
 
@@ -50,11 +54,11 @@ In AEM Forms Workspace:
 
 >[!NOTE]
 >
->Standardmäßig wird die Protokollebene aller Komponenten auf INFO festgelegt.
+>Standardmäßig ist die Protokollebene aller Komponenten auf INFO festgelegt.
 
-* Die vom Benutzer festgelegte Protokollebene gilt nur für diese Browsersitzung. Wenn der Benutzer die Seite aktualisiert, wird die Protokollebene auf den anfänglichen Wert für alle Komponenten festgelegt.
+* Die vom Benutzer festgelegte Protokollebene wird nur für diese Browsersitzung beibehalten. Wenn der Benutzer die Seite aktualisiert, wird die Protokollebene für alle Komponenten auf ihren ursprünglichen Wert festgelegt.
 
-### Liste von Komponentendateien in AEM Forms Workspace {#list-of-component-files-in-nbsp-aem-forms-workspace}
+### Liste der Komponentendateien in AEM Forms Workspace {#list-of-component-files-in-nbsp-aem-forms-workspace}
 
 <table> 
  <tbody> 
@@ -141,7 +145,7 @@ In AEM Forms Workspace:
  </tbody> 
 </table>
 
-### In AEM Forms Workspace verfügbare Protokollebenen {#log-levels-available-in-nbsp-aem-forms-workspace}
+### Verfügbare Protokollebenen in AEM Forms Workspace {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATAL
 * ERROR
@@ -151,9 +155,9 @@ In AEM Forms Workspace:
 * TRACE
 * AUS
 
-## Debugging-Information für Browser {#debugging-information-for-browsers}
+## Debugging-Informationen für Browser {#debugging-information-for-browsers}
 
-Skripten und Stile können in verschiedenen Browsern debuggt werden.
+Skripte und Stile können in verschiedenen Browsern debuggt werden.
 
 * **Debugging in IE**: Informationen zum Debugging von AEM Forms Workspace in IE finden Sie unter [https://msdn.microsoft.com/de-de/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/de-de/library/hh772704(v=vs.85).aspx).
 
@@ -165,32 +169,32 @@ Skripten und Stile können in verschiedenen Browsern debuggt werden.
 
 1. PDF-Formular wird in Google Chrome nicht wiedergegeben oder gesendet.
 
-   1. Installieren Sie das Adobe® Reader®-Plug-In.
-   1. Öffnen Sie in Chrome chrome://plugins, um verfügbare Plug-Ins anzuzeigen.
-   1. Deaktivieren Sie das Chrome-Plug-In PDF Viewer und aktivieren Sie das Adobe Reader-Plug-In.
+   1. Installieren Sie das Adobe® Reader®-Plug-in.
+   1. Öffnen Sie in Chrome chrome://plugins, um verfügbare Plug-ins anzuzeigen.
+   1. Deaktivieren Sie das Chrome PDF Viewer-Plug-in und aktivieren Sie das Adobe Reader-Plug-in.
 
-1. SWF-Formular oder Guide wird in Google-Chrome nicht angezeigt.
+1. SWF-Formular oder Guide wird in Google Chrome nicht gerendert.
 
-   1. Öffnen Sie in Chrome chrome://plugins, um verfügbare Plug-Ins anzuzeigen.
-   1. Suchen Sie nach Informationen für das Adobe Flash® Player-Plug-In.
-   1. Deaktivieren Sie PepperFlash unter dem Adobe Flash Player-Plug-In.
+   1. Öffnen Sie in Chrome chrome://plugins, um verfügbare Plug-ins anzuzeigen.
+   1. Weitere Informationen finden Sie unter Adobe Flash® Player-Plug-in .
+   1. Deaktivieren Sie PepperFlash unter dem Adobe Flash Player-Plug-in.
 
-1. Ich habe AEM Forms Workspace angepasst, aber ich kann die Änderungen nicht sehen.
+1. Ich habe AEM Forms Workspace angepasst, kann die Änderungen jedoch nicht sehen.
 
    Löschen Sie den Cache des Browsers und greifen Sie dann auf AEM Forms Workspace zu.
 
-1. Was muss der Benutzer tun, damit das Formular in HTML wiedergegeben wird, wenn es auf dem Desktop geöffnet wird?
+1. Was muss der Benutzer tun, damit das Formular beim Öffnen auf dem Desktop auf HTML wiedergegeben werden kann?
 
-   Wählen Sie bei der Verwendung von Workbench im Schritt zum Zuweisen der Aufgabe das HTML-Optionsfeld für das Standardprofil aus.
+   Wählen Sie bei Verwendung von Workbench im Schritt &quot;Aufgabe zuweisen&quot;die Optionsschaltfläche HTML für das Standardprofil aus.
 
-1. Anlage wird nicht angezeigt, wenn darauf geklickt wird.
+1. Der Anhang wird beim Klicken nicht angezeigt.
 
-   Um Anlagen anzuzeigen, aktivieren Sie Popups im Browser.
+   Um Anlagen anzuzeigen, aktivieren Sie Popups in Ihrem Browser.
 
-1. Ein Benutzer ist bei einer Forms-Anwendung angemeldet. Wenn der Benutzer versucht, sich bei Workspace anzumelden, wird es möglicherweise nicht geladen, wenn der Benutzer über keine Workspace-Berechtigungen verfügt.
+1. Ein Benutzer ist bei einer Formularanwendung angemeldet. Wenn der Benutzer versucht, sich bei Workspace anzumelden, wird er möglicherweise nicht geladen, wenn der Benutzer keine Workspace-Berechtigungen hat.
 
-   Melden Sie sich von der anderen Forms-Anwendung ab und melden Sie sich dann bei Workspace an.
+   Melden Sie sich von der anderen Formularanwendung ab und melden Sie sich dann bei Workspace an.
 
 1. Bei HTML-Formularen, die Prozesseigenschaften im Design verwenden, wird bei der Wiedergabe in AEM Forms Workspace die Schaltfläche „Senden“ innerhalb des Formulars angezeigt.
 
-   Wenn Sie ein Formular mit Prozesseigenschaften entwerfen, wird die Schaltfläche „Senden“ innerhalb des Formulars eingefügt. Bei der Wiedergabe als PDF in AEM Forms Workspace ist die Schaltfläche „Senden“ für den Endbenutzer nicht sichtbar. Wird in AEM Forms Workspace jedoch als HTML-Formular wiedergegeben, ist die Schaltfläche „Senden“ für den Endbenutzer sichtbar. Durch Klicken auf die Schaltfläche „Senden“ im Formular wird keine Aktion ausgelöst. Durch Klicken auf die Schaltfläche „Senden“ unten im AEM Forms Workspace, außerhalb des Formulars, wird die Aufgabe abgeschlossen.
+   Wenn Sie beim Entwerfen von Formularen Prozesseigenschaften verwenden, wird im Formular eine Senden-Schaltfläche hinzugefügt. Wenn die Schaltfläche &quot;Senden&quot;in AEM Forms Workspace als PDF gerendert wird, ist sie für den Endbenutzer nicht sichtbar. Bei der Wiedergabe als HTML-Formular in AEM Forms Workspace ist die Schaltfläche &quot;Senden&quot;jedoch für den Endbenutzer sichtbar. Durch Klicken auf diese Senden-Schaltfläche im Formular wird keine Aktion ausgelöst. Durch Klicken auf die Schaltfläche &quot;Senden&quot;unten im AEM Forms-Arbeitsbereich außerhalb des Formulars wird die Aufgabe abgeschlossen.

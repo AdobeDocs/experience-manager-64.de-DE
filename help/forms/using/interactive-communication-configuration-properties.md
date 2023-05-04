@@ -1,7 +1,7 @@
 ---
 title: Konfigurationseigenschaften für interaktive Kommunikation
 seo-title: Interactive Communication configuration properties
-description: Bearbeiten Sie die Standardkonfigurationseigenschaften für interaktive Kommunikation
+description: Bearbeiten von Standardkonfigurationseigenschaften für interaktive Kommunikation
 seo-description: Edit default configuration properties for Interactive Communications
 uuid: 793da9c0-7e8b-464c-b41d-559a72fac9eb
 contentOwner: anujkapo
@@ -11,16 +11,20 @@ topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 feature: Interactive Communication
 exl-id: 2caf7242-8588-4fc9-9429-40e24416d6eb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 94%
+source-wordcount: '567'
+ht-degree: 48%
 
 ---
 
 # Konfigurationseigenschaften für interaktive Kommunikation {#interactive-communications-configuration-properties}
 
-Bearbeiten Sie die Standardkonfigurationseigenschaften für interaktive Kommunikation
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Bearbeiten von Standardkonfigurationseigenschaften für interaktive Kommunikation
 
 Interaktive Kommunikation enthält Eigenschaften, die nach der Installation des Pakets [AEM Forms Add-On](/help/forms/using/installing-configuring-aem-forms-osgi.md) automatisch konfiguriert werden. Autoren der interaktiven Kommunikation können diese Standardkonfigurationseigenschaften mit Hilfe der Seite **Konfiguration von Adobe Experience Manager Web Console** bearbeiten.
 
@@ -62,45 +66,45 @@ Tippen **Konfiguration von Dokumentfragmenten** auf **Konfiguration der Adobe Ex
   </tr> 
   <tr> 
    <td>Einzug</td> 
-   <td>Die Breite der einzelnen Einzugseinheit, die auf den Text in Listendokumentfragmenten angewendet wird.</td> 
+   <td>Die Breite einer Einzugseinheit, die auf Text in Listendokumentfragmenten angewendet wird.</td> 
    <td>12.7mm</td> 
    <td>Zahl</td> 
   </tr> 
   <tr> 
-   <td>Mindestbreite von römischen Zahlen</td> 
-   <td>Mindestbreite für das Aufzählungsfeld oder Zahlenfeld, wenn römische Zahlen in Listendokumentfragmenten verwendet werden. </td> 
-   <td>12.7 mm</td> 
+   <td>Mindestbreite der römischen Zahlen</td> 
+   <td>Mindestbreite für das Aufzählungs- oder Zahlenfeld bei Verwendung von römischen Zahlen in Listendokumentfragmenten. </td> 
+   <td>12.7mm</td> 
    <td>Zahl</td> 
   </tr> 
   <tr> 
-   <td>Mindestbreite von Nummer</td> 
-   <td>Mindestbreite für das Aufzählungsfeld oder Zahlenfeld, wenn römische Zahlen in Listendokumentfragmenten verwendet werden.</td> 
+   <td>Mindestbreite der Zahl</td> 
+   <td>Mindestbreite für das Aufzählungs- oder Zahlenfeld bei nummerierten Listen, mit Ausnahme der römischen Zahlen in Listendokumentfragmenten.</td> 
    <td>8.0mm</td> 
    <td>Zahl</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Korrespondenzkonfiguration erstellen {#create-correspondence-configuration}
+## Erstellen der Korrespondenzkonfiguration {#create-correspondence-configuration}
 
 Tippen Sie auf **Korrespondenz erstellen auf der Seite Konfiguration von Adobe Experience Manager Web Console** auf der Seite **Konfiguration von Adobe Experience Manager Web Console**, um die Konfigurationseigenschaften für Dokumentfragmente anzuzeigen.
 
 | Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
-| Gelösten Inhalt zur Bearbeitung anzeigen | Aktivieren Sie das Kontrollkästchen, um aufgelösten Inhalt (tatsächliche Werte anstelle von Platzhaltern) anzuzeigen, während Sie Textmodule auf der Agentenbenutzeroberfläche bearbeiten. | Nicht ausgewählt | Nicht zutreffend |
-| Wasserzeichen während der Vorschau anwenden | Aktivieren Sie das Kontrollkästchen, um ein Wasserzeichen auf den Druckkanal der interaktiven Kommunikation im Vorschaumodus anzuwenden. | Nicht ausgewählt | Nicht zutreffend |
+| Gelösten Inhalt zur Bearbeitung anzeigen | Aktivieren Sie das Kontrollkästchen, um aufgelösten Inhalt (tatsächliche Werte anstelle von Platzhaltern) beim Bearbeiten des Textmoduls auf der Benutzeroberfläche für Agenten anzuzeigen. | Nicht ausgewählt | Nicht zutreffend |
+| Anwenden von Wasserzeichen während der Vorschau | Aktivieren Sie das Kontrollkästchen, um das Wasserzeichen auf den Druckkanal der interaktiven Kommunikation im Vorschaumodus anzuwenden. | Nicht ausgewählt | Nicht zutreffend |
 
-## Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Konfiguration des Web-Kanals für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tippen Sie auf der Seite **Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation** auf **Konfiguration von Adobe Experience Manager Web Console**, um die Konfigurationseigenschaften für den Webkanal für adaptive Formulare und interaktive Kommunikation anzuzeigen. Die folgende Tabelle beschreibt die Eigenschaften, die sich auf die interaktive Kommunikation bezieht:
+Tippen Sie auf der Seite **Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation** auf **Konfiguration von Adobe Experience Manager Web Console**, um die Konfigurationseigenschaften für den Webkanal für adaptive Formulare und interaktive Kommunikation anzuzeigen. In der folgenden Tabelle werden die Eigenschaften im Zusammenhang mit interaktiver Kommunikation beschrieben:
 
 | Eigenschaft | Beschreibung | Standard | Zulässige Werte |
 |---|---|---|---|
-| Platzhalter anzeigen | Aktivieren Sie das Kontrollkästchen, um die Anzeige von Platzhaltern für Felder zu aktivieren, die in adaptiven Formularen und in interaktiver Kommunikation enthalten sind. | Ausgewählt | Nicht zutreffend |
-| Maximale Cache-Einträge | Legen Sie die maximale Anzahl an adaptiven Formularen und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Zahl |
-| Dateinamen als eindeutig festlegen | Aktivieren Sie das Kontrollkästchen, um eindeutige Namen für Dateien zu erhalten, die als Anhänge in adaptiven Formularen und interaktiver Kommunikation enthalten sind. | Nicht ausgewählt | Nicht zutreffend |
+| Platzhalter anzeigen | Aktivieren Sie das Kontrollkästchen, um die Anzeige von Platzhaltern für Felder zu aktivieren, die in adaptiven Formularen und interaktiver Kommunikation enthalten sind. | ausgewählt | Nicht zutreffend |
+| Maximale Cache-Einträge | Legen Sie die maximale Anzahl adaptiver Formulare und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Zahl |
+| Dateinamen eindeutig machen | Aktivieren Sie das Kontrollkästchen, um eindeutige Namen für Dateien zu erhalten, die als Anhänge in Adaptive Forms und interaktive Kommunikation enthalten sind. | Nicht ausgewählt | Nicht zutreffend |
 
-## Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Konfiguration der Web-Kanalthemen für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
 Tippen Sie auf der Seite **Konfiguration von Adobe Experience Manager Web Console** auf **Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation**, um die Konfigurationseigenschaften für die Webkanalthemen für adaptive Formulare und interaktive Kommunikation anzuzeigen.
 
@@ -113,10 +117,10 @@ Tippen Sie auf der Seite **Konfiguration von Adobe Experience Manager Web Consol
    <td>Zulässige Werte</td> 
   </tr> 
   <tr> 
-   <td>Name der Schriftartliste</td> 
-   <td>Liste der Schriftarten, die beim Erstellen von adaptiven Formularen und interaktiver Kommunikation verwendet werden können.</td> 
-   <td><p>Georgia</p> <p>Buch Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Schwarz</p> <p>Auswirkungen</p> <p>Palatino-Linotyp</p> </td> 
-   <td>Alle gültigen Adobe-Server-Schriftarten</td> 
+   <td>Schriftlistenname</td> 
+   <td>Liste der Schriftarten, die beim Erstellen der adaptiven Forms- und interaktiven Kommunikation verwendet werden können.</td> 
+   <td><p>Georgien</p> <p>Buch Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Schwarz</p> <p>Auswirkungen</p> <p>Palatino-Linotyp</p> </td> 
+   <td>Alle gültigen Adobe-Serverschriftarten</td> 
   </tr> 
  </tbody> 
 </table>

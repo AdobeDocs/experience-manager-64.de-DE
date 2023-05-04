@@ -1,7 +1,7 @@
 ---
-title: AEM DS-Einstellungen konfigurieren
+title: Konfigurieren der AEM DS-Einstellungen
 seo-title: Configuring AEM DS settings
-description: Sie müssen die Verarbeitungsserver-URL angeben, bevor Sie ein Formular senden.
+description: Sie müssen die URL des Verarbeitungsservers angeben, bevor Sie ein Formular senden.
 seo-description: You need to specify the processing server URL before you submit a form.
 uuid: 2b415c99-275b-4b67-bb8e-35329514ecbb
 contentOwner: amgoyal
@@ -10,25 +10,29 @@ topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
 role: Admin
 exl-id: f60beaae-4082-4165-8a37-9d9c94e360b2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 94%
+source-wordcount: '276'
+ht-degree: 37%
 
 ---
 
 # AEM DS-Einstellungen konfigurieren {#configuring-aem-ds-settings}
 
-Dieser Artikel beschreibt, wie Sie den **AEM DS-Einstellungen-Dienst** konfigurieren. Diese Einstellung kann in mehreren Szenarien verwendet werden, zum Beispiel:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In diesem Artikel wird beschrieben, wie Sie **AEM DS Settings Service**. Diese Einstellung kann in mehreren Szenarien verwendet werden, z. B.:
 
 * In Correspondence Management
 
-   * Für die Konfiguration des AEM Forms-Workflow
-   * Achten Sie bei der Verwendung von Formularportals für Remote-Verwendung, darauf, dass Sie Entwurf/der Übermittlung speichern
+   * Konfigurieren des AEM Forms-Workflows
+   * Beim Verwenden des Formularportals zum Remote-Speichern von Entwürfen/Übermittlungen
 
-* In den adaptiven Formularen für Fälle, bei denen ein adaptives Formular von der Veröffentlichungsinstanz gesendet wird
+* In adaptiven Formularen für Fälle, in denen das adaptive Formular von der Veröffentlichungsinstanz gesendet wird
 
-Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellungen]** zu konfigurieren:
+Im Folgenden werden die Schritte zum Konfigurieren der **[!UICONTROL AEM DS-Einstellungen]**:
 
 1. Öffnen Sie den Konfigurations-Manager unter der Veröffentlichungsinstanz mit der URL:
 
@@ -46,13 +50,13 @@ Führen Sie die folgenden Schritte aus, um die **[!UICONTROL AEM DS-Einstellunge
 
 1. Fügen Sie die folgenden Informationen in die entsprechenden Felder ein:
 
-   **[!UICONTROL Verarbeitungs-Server-URL]**: Der Verarbeitungs-Server ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der AEM-Autoreninstanz oder der anderen Server-URL übereinstimmen (d. h. http://localhost:port/).
+   **[!UICONTROL Verarbeitungs-Server-URL]**: Der Verarbeitungs-Server ist der Server, auf dem der Forms- oder AEM-Workflow ausgelöst werden muss. Dies kann mit der URL der AEM Autoreninstanz oder der anderen Server-URL (d. h. http:// localhost:port/) übereinstimmen.
 
    **[!UICONTROL Verarbeitungs-Server-Benutzername]**: Benutzername des Workflow-Benutzers [basiert auf der verwendeten Server-URL]
 
-   **[!UICONTROL Verarbeitungs-Serverkennwort]**: Das Kennwort des Workflow-Benutzers
+   **[!UICONTROL Verarbeitungsserver-Kennwort]**: Kennwort des Workflow-Benutzers
 
    >[!NOTE]
    >
-   >* Bei der Verwendung von Formularen oder AEM-Workflows ist es notwendig, den DS-Einstellungendienst zu konfigurieren, bevor Sie eine Übertragung vom Veröffentlichungsserver vornehmen. Andernfalls schlägt die Übermittlung eines Formulars fehlgeschlagen.
+   >* Bei Verwendung von Forms- oder AEM-Workflows ist es vor der Übermittlung durch den Veröffentlichungsserver erforderlich, den DS-Einstellungsdienst zu konfigurieren. Andernfalls schlägt die Übermittlung des Formulars fehl.
 

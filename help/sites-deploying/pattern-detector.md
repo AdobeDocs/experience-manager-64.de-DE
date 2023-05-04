@@ -1,7 +1,7 @@
 ---
 title: Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor
 seo-title: Assessing the Upgrade Complexity with the Pattern Detector
-description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität der Aktualisierung bewerten können.
+description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität Ihres Upgrades bewerten können.
 seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
@@ -11,35 +11,39 @@ content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 feature: Upgrading
 exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 94%
+source-wordcount: '536'
+ht-degree: 37%
 
 ---
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor {#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Überblick {#overview}
 
-Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
+Mit dieser Funktion können Sie vorhandene AEM-Instanzen auf ihre Aktualisierbarkeit überprüfen, indem Sie Muster erkennen, die verwendet werden und Folgendes tun:
 
 1. gegen bestimmte Regeln verstoßen und Bereiche betreffen, die durch das Upgrade überschrieben werden
-1. Eine Funktion von AEM 6.x oder eine API verwenden, die nicht in AEM 6.4 abwärtskompatibel ist und nach der Aktualisierung möglicherweise nicht mehr funktioniert.
+1. Verwenden Sie eine AEM 6.x-Funktion oder eine API, die in AEM 6.4 nicht abwärtskompatibel ist und nach der Aktualisierung möglicherweise beschädigt werden kann.
 
-Dies kann als Bewertungsgrundlage für den erforderlichen Entwicklungsaufwand bei der Aktualisierung auf AEM 6.4 dienen.
+Dies könnte als Bewertung der Entwicklungsbemühungen dienen, die mit der Aktualisierung auf AEM 6.4 verbunden sind.
 
 ## Einrichtung {#how-to-set-up}
 
-Der Musterdetektor wird als separates [Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Er kann mit dem [Package Manager](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/package-manager.html) installiert werden.
+Der Musterdetektor wird als separates [Paket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Sie kann mithilfe der [Package Manager](https://helpx.adobe.com/de/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Verwendung {#how-to-use}
 
 >[!NOTE]
 >
->Der Musterdetektor kann in jeder beliebigen Umgebung, einschließlich lokaler Entwicklungsinstanzen, ausgeführt werden. Jedoch gilt:
+>Der Musterdetektor kann in jeder beliebigen Umgebung, einschließlich lokaler Entwicklungsinstanzen, ausgeführt werden. Um jedoch
 >
->* Um die Erkennungsrate zu erhöhen,
+>* die Erkennungsrate erhöhen
 >* vermeiden Sie jede Verlangsamung bei geschäftskritischen Instanzen.\
    >Gleichzeitig wird die Ausführung in **Staging-Umgebungen** empfohlen, die hinsichtlich Benutzerapplikationen, Inhalt und Konfigurationen den Produktionsumgebungen möglichst stark ähneln.
 
@@ -57,28 +61,28 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 * **Über die Oberfläche für reaktive JSON-Zeilen**, das in jeder Zeile ein separates JSON-Dokument generiert.
 
-Beide Methoden werden im Folgenden erläutert:
+Beide Methoden werden im Folgenden beschrieben:
 
 ## Reaktive Schnittstelle {#reactive-interface}
 
-Mit einer reaktiven Schnittstelle kann der Bericht zu den Verstößen verarbeitet werden, sobald ein Problem erkannt wird.
+Die reaktive Oberfläche ermöglicht die Verarbeitung des Verstoßberichts, sobald ein Verdacht festgestellt wird.
 
-Die Ausgabe ist zurzeit unter 2 URLs verfügbar:
+Die Ausgabe ist derzeit unter 2 URLs verfügbar:
 
 1. Nur-Text-Schnittstelle 
-1. JSON-Schnittstelle
+1. JSON-Benutzeroberfläche
 
-## Handhabung der Nur-Text-Schnittstelle {#handling-the-plain-text-interface}
+## Umgang mit der Textschnittstelle {#handling-the-plain-text-interface}
 
-Die in der Ausgabe enthaltenen Informationen sind als Serie von Ereigniseinträgen formatiert. Es gibt zwei Kanäle - einen für die Veröffentlichung von Verstößen und einen zweiten für die Veröffentlichung des aktuellen Fortschritts.
+Die Informationen in der Ausgabe werden als eine Reihe von Ereigniseinträgen formatiert. Es gibt zwei Kanäle - einen für Veröffentlichungsverletzungen und einen für die Veröffentlichung des aktuellen Fortschritts.
 
-Sie können mit den folgenden Befehlen abgerufen werden:
+Sie können mithilfe der folgenden Befehle abgerufen werden:
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
 ```
 
-Die Ausgabe sieht folgendermaßen aus:
+Die Ausgabe sieht wie folgt aus:
 
 ```
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
@@ -98,9 +102,9 @@ Dies führt zur folgenden Ausgabe:
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Behandlung der JSON-Schnittstelle {#handling-the-json-interface}
+## Umgang mit der JSON-Oberfläche {#handling-the-json-interface}
 
-JSON kann auf ähnliche Weise mit dem Tool [jq](https://stedolan.github.io/jq/) verarbeitet werden, sobald die Veröffentlichung erfolgt ist.
+Auf ähnliche Weise kann JSON mit der [jq-Tool](https://stedolan.github.io/jq/) sobald sie veröffentlicht wurde.
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -125,7 +129,7 @@ Mit der Ausgabe:
 }
 ```
 
-Der Fortschritt wird alle 5 Sekunden gemeldet und kann unter Ausschluss der anderen, nicht verdächtigen Benachrichtigungen abgerufen werden:
+Der Fortschritt wird alle 5 Sekunden gemeldet und kann abgerufen werden, indem andere Nachrichten ausgeschlossen werden, die als verdächtig markiert sind:
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == false)'
@@ -214,10 +218,10 @@ Mit der Ausgabe:
 
 ## Erkennungsbereich {#scope}
 
-Aktuell bietet der Musterdetektor folgende Überprüfungen:
+Der Musterdetektor ermöglicht derzeit die Überprüfung von:
 
-* Zwischen den Exporten und Importen von OSGi-Bundles kommt es zu Ungleichgewichten.
-* Überverwendung von Sling-Ressourcentypen und -Supertypen (mit Überlagerung von Suchpfadinhalten)
+* Die Exporte und Importe von OSGi-Bundles stimmen nicht überein
+* Überschreibungen von Sling-Ressourcentypen und -Supertypen (mit Inhaltsüberlagerungen für Suchpfade)
 * Definitionen der Oak-Indizes (Kompatibilität)
 * VLT-Pakete (Überverwendung)
-* Kompatibilität von rep:User-Knoten (im Kontext der OAuth-Konfiguration)
+* rep:User nodes-Kompatibilität (im Kontext der OAuth-Konfiguration)

@@ -9,29 +9,33 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 44871fe1-ddc9-492c-8784-5df3ca392f9b
 exl-id: a91e23e8-339d-4090-9872-2e066ab66590
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 98%
+source-wordcount: '1091'
+ht-degree: 62%
 
 ---
 
 # Einführung in das Veröffentlichen von Formularen in einem Portal {#introduction-to-publishing-forms-on-a-portal}
 
-## Überblick über die AEM Forms Portal-Komponenten {#aem-forms-portal-components-overview}
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-In einer typischen formularzentrierten Bereitstellung sind die Entwicklung von Formularen und die Entwicklung von Portalen zwei getrennte Aktivitäten. Während Formularentwickler Formulare in einem Repository erstellen und speichern, erstellen Webentwickler eine Webanwendung, um Formulare aufzulisten und gesendete Formulare zu verarbeiten. Formulare werden in die Webstufe kopiert, da keine Kommunikation zwischen dem Formular-Repository und der Webanwendung besteht.
+## Übersicht über die Komponenten des AEM Forms-Portals {#aem-forms-portal-components-overview}
 
-Solche Fälle führen oft zu Verwaltungsproblemen und Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, müssen Sie das Formular auf der Webstufe ersetzen, die Webanwendung ändern und das Formular erneut auf der öffentlichen Site bereitstellen. Die erneute Bereitstellung der Webanwendung verursacht möglicherweise einen Serverausfall. Normalerweise ist der Serverausfall eine geplante Aktivität. Daher können die Änderungen nicht sofort an die öffentliche Site gesendet werden.
+In einem typischen formularzentrierten Portal-Bereitstellungsszenario sind die Formularentwicklung und die Portalentwicklung zwei getrennte Aktivitäten. Während Formularentwickler Formulare in einem Repository entwerfen und speichern, erstellen Webentwickler eine Webanwendung, um Formulare aufzulisten und die Übermittlung von Formularen zu verarbeiten. Forms wird in die Webstufe kopiert, da keine Kommunikation zwischen dem Formular-Repository und der Webanwendung besteht.
 
-AEM Forms bietet Portalkomponenten, die den Verwaltungsaufwand und Produktionsverzögerungen reduzieren. Mit den Komponenten können Webentwickler Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites erstellen und anpassen. 
+Solche Szenarien führen oft zu Managementproblemen und Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, müssen Sie das Formular auf der Webstufe ersetzen, die Webanwendung ändern und das Formular erneut auf der öffentlichen Website bereitstellen. Die erneute Bereitstellung der Webanwendung kann zu Serverausfällen führen. In der Regel handelt es sich bei dem Serverausfall um eine geplante Aktivität, weshalb die Änderungen nicht sofort an die öffentliche Site gesendet werden können.
+
+AEM Forms bietet Portalkomponenten, die den Verwaltungsaufwand und Produktionsverzögerungen reduzieren. Die Komponenten ermöglichen es Webentwicklern, ein Formularportal auf mit Adobe Experience Manager (AEM) erstellten Websites zu erstellen und anzupassen.
 
 ![AEM Forms-Portal](assets/aem-forms-portal.png)
 
-Die Formularportalkomponenten ermöglichen es Ihnen, die folgende Funktion hinzuzufügen:
+Mit den Formularportalkomponenten können Sie die folgenden Funktionen hinzufügen:
 
-* Auflisten von Formularen in benutzerdefinierten Layouts. Standardmäßig werden Layouts für Listenansicht, Kartenansicht und Bereichsansicht bereitgestellt. Sie können auch eigene benutzerdefinierte Layouts erstellen.
-* Sie können benutzerdefinierte Metadaten sowie benutzerdefinierte Aktionen beim Auflisten anzeigen.
+* Auflisten von Formularen in benutzerdefinierten Layouts. Standardmäßig werden die Layouts für Listenansicht, Kartenansicht und Bereichsansicht bereitgestellt. Sie können auch eigene benutzerdefinierte Layouts erstellen.
+* Ermöglicht die Anzeige benutzerdefinierter Metadaten sowie benutzerdefinierter Aktionen bei deren Auflistung.
 * Auflisten von Formularen, die von der AEM Forms-Benutzeroberfläche auf der Veröffentlichungsinstanz veröffentlicht wurden, in der Formularportal-Komponenten verwendet werden.
 * Endbenutzern ermöglichen, Formulare in HTML- und im PDF-Format anzuzeigen.
 * Verwenden benutzerdefinierter HTML-Profile, um Formulare anzuzeigen.
@@ -39,7 +43,7 @@ Die Formularportalkomponenten ermöglichen es Ihnen, die folgende Funktion hinzu
 * Senden von Formulardaten an ein Servlet.
 * Verwenden von benutzerdefiniertem CSS, um das Erscheinungsbild des Portals anzupassen.
 * Erstellen von Links zu Formularen.
-* Auflisten von n und Übermittlungen für das vom Benutzer erstellte adaptive Formular.
+* Listet Entwürfe und Übermittlungen im Zusammenhang mit dem vom Endbenutzer erstellten adaptiven Formular auf.
 
 ## Verfügbare AEM Forms Portal-Komponenten {#available-aem-forms-portal-components}
 
@@ -47,15 +51,15 @@ AEM Forms bietet standardmäßig die folgenden Portalkomponenten, die in die Kom
 
 ### Suche und Auflister {#search-amp-lister}
 
-Mit der Komponente „Search &amp; Lister“ können Sie Formulare aus dem Formular-Repository auf Ihrer Portalseite auflisten. Außerdem enthält sie Konfigurationsoptionen, um Formulare basierend auf angegebenen Kriterien aufzulisten. Außerdem können Sie mit der Komponente Suchkriterien angeben, damit die Portalbenutzer die gesamte Liste der Formulare durchsuchen können.
+Mit der Komponente &quot;Search &amp; Lister&quot;können Sie Formulare aus dem Formular-Repository auf Ihrer Portalseite auflisten und Konfigurationsoptionen bereitstellen, um Formulare basierend auf angegebenen Kriterien aufzulisten. Außerdem können Sie mit der Komponente Suchkriterien angeben, damit die Portalbenutzer die gesamte Liste der Formulare durchsuchen können.
 
 ### Entwürfe und Einsendungen {#drafts-amp-submissions}
 
-Während die Komponente „Search &amp; Lister“ Formulare anzeigt, die vom Formularautor veröffentlicht wurden, zeigt die Komponente „Drafts &amp; Submissions“ Formulare, die für den späteren Abschluss als Entwurf gespeichert wurden, sowie gesendete Formulare an. Diese Komponente bietet jedem angemeldeten Benutzer eine personalisierte Nutzung.
+Während die Komponente „Suche und Auflister“ Formulare anzeigt, die vom Formularautor veröffentlicht wurden, zeigt die Komponente „Entwürfe und Sendungen“ Formulare, die für den späteren Abschluss als Entwurf gespeichert wurden, sowie gesendete Formulare an. Diese Komponente bietet jedem angemeldeten Benutzer ein personalisiertes Erlebnis.
 
 ### Verknüpfung {#link}
 
-Mithilfe der Komponente „Link“ können Sie einen Link zu einem Formular an jeder beliebigen Stelle auf der Seite erstellen. Angenommen, Sie bieten ein Schulungsprogramm an und fordern die Benutzer auf, sich über ein Formular für die Schulung anzumelden. Auf Ihrer Website stellen Sie die Programmdetails bereit. Unterhalb der Details möchten Sie einen Link zum Registrierungsformular einfügen. Diesen Link können Sie mithilfe der Komponente „Link“ erstellen.
+Mit der Komponente &quot;Link&quot;können Sie einen Link zu einem Formular an einer beliebigen Stelle auf der Seite erstellen. Angenommen, Sie bieten ein Schulungsprogramm an und möchten, dass Ihre Benutzer ein Formular zur Registrierung für das Training einreichen. Auf Ihrer Website haben Sie die Programmdetails veröffentlicht. Unter den Details möchten Sie einen Link zum Registrierungsformular angeben. Die Komponente Link kann Ihnen beim Erstellen dieses Links helfen.
 
 ## Formularportal-Workflow {#forms-portal-workflow}
 
@@ -83,7 +87,7 @@ Im Formularportal können Sie Formulare aus dem Formular-Repository auf Ihrer Po
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Verwenden der Komponente „Entwurf und Übermittlung“](/help/forms/using/draft-submission-component.md)
 * [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md#customizing-the-storage)
-* [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)
+* [Beispiel zur Integrierung der Komponente „Entwürfe und Sendungen“ in die Datenbank](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html)
 
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)

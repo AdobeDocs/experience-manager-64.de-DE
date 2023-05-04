@@ -1,5 +1,5 @@
 ---
-title: Blogfunktion
+title: Blog-Funktion
 seo-title: Blog Feature
 description: Community-Informationen im Journalformat
 seo-description: Community information in a journaling format
@@ -10,33 +10,37 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
 exl-id: 12ae8b4c-73c5-4ec9-beea-b682b55ebdfd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 48%
+source-wordcount: '1632'
+ht-degree: 6%
 
 ---
 
-# Blogfunktion {#blog-feature}
+# Blog-Funktion {#blog-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einführung {#introduction}
 
-Die Blogfunktion für AEM Communities wurde von einer Erstellungsaktivität in eine richtige Community-Aktivität umgewandelt, die in der Veröffentlichungsumgebung stattfindet.
+Die Blog-Funktion für AEM Communities wurde von einer Authoring-Aktivität zu einer echten Community-Aktivität, die in der Veröffentlichungsumgebung stattfindet, geändert.
 
-Die Blogfunktion unterstützt die Bereitstellung von Community-Informationen in einem Aufzeichnungsformat. Blogeinträge werden in der Veröffentlichungsumgebung von autorisierten Mitgliedern (registrierten, angemeldeten Benutzern) vorgenommen.
+Die Blog-Funktion unterstützt die Bereitstellung von Community-Informationen in einem Journaling-Format. Blogeinträge werden in der Veröffentlichungsumgebung von autorisierten Mitgliedern (registrierten, angemeldeten Benutzern) vorgenommen.
 
-Die Blogfunktion bietet Folgendes:
+Die Blog-Funktion bietet:
 
-* Erstellung von Blogartikeln und -kommentaren in der Veröffentlichungsumgebung
-* Bearbeiten von Rich-Text
-* Inline-Bilder (mit Drag-and-Drop-Unterstützung)
-* Eingebetteter Inhalt in sozialen Netzwerken ([Unterstützung von oEmbed](blog-developer-basics.md#allowing-rich-media))
+* Publishing-seitige Erstellung von Blogartikeln und Kommentaren
+* Rich-Text-Bearbeitung
+* Inline-Bilder (mit Drag &amp; Drop-Unterstützung)
+* Eingebetteter Inhalt in sozialen Netzwerken ([Einbettungsunterstützung](blog-developer-basics.md#allowing-rich-media))
 * Entwurfsmodus
-* Geplantes Veröffentlichen
-* Erstellen im Auftrag (ein [privilegiertes Mitglied](users.md#privileged-members-group) kann Inhalte im Namen eines anderen Community-Mitglieds erstellen)
-* [In-Kontext- und Massenmoderation](moderate-ugc.md) von Blogartikeln und -kommentaren
+* Geplante Veröffentlichung
+* Erstellen Sie im Namen (a [privilegiertes Mitglied](users.md#privileged-members-group) kann Inhalte im Namen eines anderen Community-Mitglieds erstellen)
+* [In-Kontext- und Massenmoderation](moderate-ugc.md) von Blogartikeln und Kommentaren
 
-In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
+In diesem Abschnitt der Dokumentation wird
 
 * Hinzufügen der Blog-Funktion zu einer AEM Site
 * Konfigurationseinstellungen für Blogkomponenten
@@ -45,7 +49,7 @@ In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 >
 >Die Komponenten `Journal`und `Journal Sidebar` werden `Blog` und `Blog Sidebar`.
 >
->Die Blogfunktion in AEM 6.0 und älteren Versionen wurde eingestellt. Sie beruhte auf einer Vorlage und beschränkte das Verfassen von Inhalten ausschließlich auf die Autorenumgebung.
+>Die Blogfunktion in AEM 6.0 und früheren Versionen wurde entfernt. Sie basierte auf einer Vorlage und erlaubte es Autoren nur, Inhalte in der Autorenumgebung zu erstellen.
 
 ## Hinzufügen von Blog-Komponenten zu einer Seite {#adding-blog-components-to-a-page}
 
@@ -66,15 +70,15 @@ Und wie die `Blog Sidebar` wird angezeigt:
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Konfigurieren eines Blogs {#configuring-blog}
+### Blog konfigurieren {#configuring-blog}
 
 Wählen Sie die platzierte `Blog` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![Symbol zum Konfigurieren](assets/chlimage_1-149.png) ![Blog-Einstellungen](assets/Blog-configure.png)
 
-#### Registerkarte „Settings“ {#settings-tab}
+#### Registerkarte Einstellungen {#settings-tab}
 
-Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die grundlegenden Eigenschaften des Blogs an:
+Unter dem **[!UICONTROL Einstellungen]** -Registerkarte die grundlegenden Funktionen des Blogs festlegen:
 
 * **[!UICONTROL Miniaturansicht des Anhangs zulassen]**
 Wenn diese Option aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
@@ -97,11 +101,13 @@ Fügen Sie die berechtigten Mitglieder hinzu, die Inhalte erstellen dürfen.
 * **[!UICONTROL Vom Benutzer generierte Inhalte im Bearbeitungsmodus des Autors blockieren]**
 Wenn diese Option aktiviert ist, wird benutzergenerierter Inhalt bei der Bearbeitung im Autorenmodus blockiert.
 
-* **[!UICONTROL Journaltitel]** Der Blogname, der auf der Seite angezeigt werden soll.
+* **[!UICONTROL Journaltitel]**
+Der Blogtitel, der auf der Seite angezeigt werden soll.
    >Hinweis:
    >Der Journaltitel wird verwendet, um automatisch eine URL für den Blog zu erstellen. Maximal 50 Zeichen (mit 5 zusätzlichen Zeichen für Eindeutigkeit) werden aus dem hier angegebenen Journaltitel verwendet, um eine URL für den Blog zu erstellen.
 
-* **[!UICONTROL Journalbeschreibung]** Die Beschreibung des Blogs.
+* **[!UICONTROL Journalbeschreibung]**
+Die Blogbeschreibung.
 
 * **[!UICONTROL Themen pro Seite]**
 
@@ -109,87 +115,87 @@ Wenn diese Option aktiviert ist, wird benutzergenerierter Inhalt bei der Bearbei
 
 * **[!UICONTROL Moderiert]**
 
-   Wenn diese Option aktiviert ist, muss das Posten von Blogeinträgen und Kommentaren genehmigt werden, bevor sie auf einer Veröffentlichungs-Site erscheinen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, muss das Posten von Blogeinträgen und Kommentaren genehmigt werden, bevor sie auf einer Veröffentlichungs-Site erscheinen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Geschlossen]**
 
-   Wenn diese Option aktiviert ist, ist der Blog für neue Blog-Einträge und Kommentare geschlossen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, ist der Blog für neue Blog-Einträge und Kommentare geschlossen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Rich-Text-Editor]**
 
-   Wenn diese Option aktiviert ist, können Blogeinträge und Kommentare mit Markup eingegeben werden. Diese Option ist standardmäßig aktiviert.
+   Wenn diese Option aktiviert ist, können Blogeinträge und Kommentare mit Markup eingegeben werden. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Tagging zulassen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe **[!UICONTROL Tag-Feld]** Registerkarte). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe **[!UICONTROL Tag-Feld]** Registerkarte). Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
 
-   Wenn diese Option aktiviert ist, können Sie einem Blogeintrag oder Kommentar Dateianlagen hinzufügen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie einem Blogeintrag oder Kommentar Dateianlagen hinzufügen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Max. Dateigröße]**
 
-   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe einer hochgeladenen Datei (in Byte). Der Standardwert ist 104857600 (10 MB).
 
 * **[!UICONTROL Zulässige Dateitypen]**
 
-   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
+   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben werden, dürfen nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Maximale Dateigröße für Bildanhang]**
 
-   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
+   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anzahl der Bytes, die eine hochgeladene Bilddatei aufweisen kann. Der Standardwert ist 2097152 (2 MB).
 
 * **[!UICONTROL Antworten zulassen]**
 
-   Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die auf den Blogeintrag gepostet wurden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die auf den Blogeintrag gepostet wurden. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Benutzern das Löschen von Anmerkungen und Themen ermöglichen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder die Kommentare und Blogeinträge löschen, die sie veröffentlicht haben. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder die Kommentare und Blogeinträge löschen, die sie veröffentlicht haben. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Folgende zulassen]**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](notifications.md) von neuen Stellen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL E-Mail-Abonnements zulassen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](email.md). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](email.md). Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Abstimmung zulassen]**
 
-   Wenn diese Option aktiviert ist, fügen Sie die Funktion Abstimmung in einen Blogeintrag ein. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, fügen Sie die Funktion Abstimmung in einen Blogeintrag ein. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Abzeichen anzeigen]**
 
-   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Feature-Inhalt zulassen]**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Die Option Standard ist deaktiviert.
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** die Moderationseinstellungen an:
+Unter dem **[!UICONTROL Benutzermoderation]** -Tab, geben Sie die Moderationseinstellungen an:
 
 * **[!UICONTROL Posts ablehnen]**
 
-   Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Themen schließen/erneut öffnen]**
 
-   Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern ein Thema schließen, um weitere Bearbeitungen und Kommentare vorzunehmen, und ein Thema möglicherweise erneut öffnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern ein Thema schließen, um weitere Bearbeitungen und Kommentare vorzunehmen, und ein Thema möglicherweise erneut öffnen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Posts kennzeichnen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Liste mit Kenn-zeichnungsgründen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen eingeben. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Schwellenwert für Moderation]**
 
@@ -197,43 +203,43 @@ Geben Sie auf der Registerkarte **[!UICONTROL Benutzermoderation]** die Moderati
 
 * **[!UICONTROL Kennzeichnungslimit]**
 
-   Geben Sie an, wie oft ein Thema oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
+   Geben Sie an, wie oft ein Thema oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Wenn der Wert auf -1 festgelegt ist, wird das gekennzeichnete Thema oder der Kommentar nie aus der öffentlichen Ansicht ausgeblendet. Andernfalls muss diese Zahl größer oder gleich dem Schwellenwert für Moderation sein. Der Standardwert ist 5.
 
 #### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Auf der Registerkarte **[!UICONTROL Tag-Feld]** können Sie angeben, welche Tags verwendet werden dürfen, wenn die Option **[!UICONTROL Tagging zulassen]** auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert wurde:
+Unter dem **[!UICONTROL Tag-Feld]** -Registerkarte angeben, welche Tags bei **[!UICONTROL Tagging zulassen]** wird auf der Seite **[!UICONTROL Einstellungen]** tab:
 
-* **[!UICONTROL Zulässige Namespaces]**
+* **[!UICONTROL Zugelassene Namespaces]**
 
-   Relevant, wenn `Allow Tagging` wird unter dem **[!UICONTROL Einstellungen]** Registerkarte. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+   Relevant, wenn `Allow Tagging` wird unter dem **[!UICONTROL Einstellungen]** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
 * **[!UICONTROL Empfehlungsgrenze]**
 
    Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Wert -1 bedeutet keine Beschränkungen. Der Standardwert ist 0.
 
-### Konfigurieren einer Blog-Seitenleiste {#configuring-blog-sidebar}
+### Konfigurieren der Blog-Seitenleiste {#configuring-blog-sidebar}
 
 Wenn Sie auf die `Blog Sidebar` -Komponente ein Dialogfeld zum Bearbeiten geöffnet.
 
-Auf der Registerkarte **[!UICONTROL Journal-Sidebar-Einstellungen]** können Sie das Datumsformat für Archive festlegen und angeben, welche Eintragstypen in der Seitenleiste aufgeführt werden sollen:
+Unter dem **[!UICONTROL Journal-Seitenleisten-Einstellungen]** -Registerkarte das Datumsformat für Archive festlegen und angeben, welche Art von Einträgen in der Seitenleiste angezeigt werden sollen:
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
 * **[!UICONTROL Datumsformat]**
 
-   Das Format, das für die Anzeige von Archiven von Blogeinträgen verwendet wird. In diesem Format finden sich Platzhalter, die der Java-Konvention folgen.
+   Das Format, das für die Anzeige von Archiven von Blogeinträgen verwendet wird. Das Format verwendet Platzhalter, die der Java-Konvention folgen.
 
-   * JJJJ: lange Jahresangabe, z. B. 2015
-   * JJ: kurze Jahresangabe, z. B. 15
-   * MMMMM: vollständiger Monat, z. B. Juni
-   * MMM: abgekürzter Monat, z. B. Jun
-   * MM: Monatszahl, z. B. 06
+   * jjjj: vollständiges Jahr, z. B. &quot;2015&quot;
+   * yy: kurze Jahreszahl, z. B. &quot;15&quot;
+   * MMMMM: Vollmonat, z. B. Juni
+   * MMM: kurzen Monat, wie Jun
+   * MM: Monatsnummer, z. B. 06
 
    Der Standardwert ist &quot;jjjj MMMMM&quot;, der beispielsweise &quot;Juni 2015&quot;anzeigen würde.
 
 * **[!UICONTROL Ansichtstyp]**
 
-   Der Titel und der Typ der Blogeinträge, die in der Seitenleiste angezeigt werden sollen. Die können aus folgenden Kategorien wählen:
+   Der Titel und der Typ der Blogeinträge, die in der Seitenleiste angezeigt werden sollen. Die Wahl liegt zwischen
 
    * Autoren
    * Kategorien
@@ -251,27 +257,27 @@ Auf der Registerkarte **[!UICONTROL Journal-Sidebar-Einstellungen]** können Sie
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
-In der Veröffentlichungsumgebung wird bei der Blogfunktion der neueste Blogartikel angezeigt, gefolgt von älteren Einträgen, die absteigend nach Erstellungsdatum sortiert sind. Blog-Seitenleisten ermöglichen es Besuchern der Site, einen Filter anzuwenden, um die Auswahl der anzuzeigenden Artikel einzuschränken.
+In der Veröffentlichungsumgebung zeigt die Blogfunktion den neuesten Blogartikel gefolgt von älteren Blogartikeln in absteigender Reihenfolge der Erstellung an. Blog-Seitenleisten ermöglichen es Site-Besuchern, Filter anzuwenden, um die Auswahl der angezeigten Blog-Artikel zu beschränken.
 
-Dem Blogartikel folgt ein Link, über den Kommentare gelesen oder verfasst werden können.
+Dem Blogartikel folgt ein Link zum Posten oder Anzeigen von Kommentaren.
 
-Wurde ein Blogartikel ausgewählt, werden der Artikel sowie zugehörige Kommentare eingeblendet (falls aktiviert).
+Wenn ein Blogartikel ausgewählt ist, werden der Blogartikel und die Kommentare angezeigt (sofern aktiviert).
 
-Die Verfügbarkeit weiterer Optionen hängt davon ab, ob der Site-Besucher Moderator, Administrator, Community-Mitglied, privilegiertes Mitglied oder anonymer Besucher ist.
+Andere Möglichkeiten hängen davon ab, ob der Besucher der Site Moderator, Administrator, Community-Mitglied, privilegiertes Mitglied oder anonym ist.
 
 ### Arbeiten mit Artikeln {#working-with-articles}
 
-Wenn Sie einen neuen Blogartikel erstellen, können Sie aus folgenden Optionen wählen:
+Beim Erstellen eines neuen Blogartikels haben Sie die Wahl zwischen
 
 1. Sofort veröffentlichen
-1. Einen Entwurf veröffentlichen
+1. Entwurf veröffentlichen
 1. An einem geplanten Datum und zu einer geplanten Uhrzeit veröffentlichen
 
-Die Blogartikel erscheinen auf der entsprechenden Registerkarte („Veröffentlicht“, „Entwürfe“ oder „Geplant“) und können von Mitgliedern bei der Veröffentlichung bearbeitet werden.
+Die Blogartikel werden auf der entsprechenden Registerkarte (Veröffentlicht, Entwürfe oder Geplant) für Mitglieder angezeigt, die in der Lage sind, sie in der Veröffentlichung zu erstellen.
 
 #### Moderatoren und Administratoren {#moderators-and-administrators}
 
-Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er [Moderationsaufgaben](moderate-ugc.md) für alle Blogartikel und Komponenten des Blogs durchführen (je nach Berechtigungen durch die Konfiguration der Komponente).
+Wenn der angemeldete Benutzer über Moderator- oder Administratorberechtigungen verfügt, kann er [Moderationsaufgaben](moderate-ugc.md) (wie durch die Konfiguration der Komponente erlaubt) auf allen Blogartikeln und Kommentaren, die in einem Blog veröffentlicht werden.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -292,16 +298,16 @@ Insbesondere können sie:
 
 ### Anonym {#anonymous}
 
-Nicht angemeldete Besucher können veröffentlichte Blogartikel und Kommentare lediglich lesen und übersetzen (falls unterstützt), jedoch keine eigenen Artikel oder Kommentare hinzufügen und keine Artikel und Kommentare anderer Benutzer kennzeichnen.
+Besucher der Website, die nicht angemeldet sind, dürfen nur veröffentlichte Blogartikel und Kommentare lesen, sie übersetzen, falls unterstützt, aber keine Blog-Artikel oder -Kommentare hinzufügen oder die Artikel oder Kommentare anderer kennzeichnen.
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Entwickler-Seite [Blog-Grundlagen](blog-developer-basics.md).
+Weitere Informationen finden Sie unter [Blog-Grundlagen](blog-developer-basics.md) für Entwickler.
 
-Informationen zur Moderation von Blogartikeln und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Informationen zur Moderation von Blogeinträgen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Informationen zum Tagging von Blogartikeln und Kommentaren finden Sie unter [Tagging benutzergenerierter Inhalte](tag-ugc.md).
+Informationen zum Tagging von Blogeinträgen und Kommentaren finden Sie unter [Tagging benutzergenerierter Inhalte](tag-ugc.md).
 
-Informationen zur Übersetzung von Blogartikeln und Kommentaren finden Sie unter [Übersetzung benutzergenerierter Inhalte](translate-ugc.md).
+Informationen zur Übersetzung von Blogeinträgen und Kommentaren finden Sie unter [Übersetzen benutzergenerierter Inhalte](translate-ugc.md).

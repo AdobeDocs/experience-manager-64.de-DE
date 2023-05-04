@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren des Adobe Mobile Services Cloud-Dienstes
+title: Adobe Mobile Services Cloud Service konfigurieren
 seo-title: Configure your Adobe Mobile Services Cloud Service
 description: Auf dieser Seite erfahren Sie, wie Sie Ihren Adobe Mobile Services-Cloud Service konfigurieren.
 seo-description: Follow this page to configure your Adobe Mobile Services Cloud Service.
@@ -11,14 +11,18 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 exl-id: 360c0ba9-ea49-495c-86d0-6d1db3f806a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 25%
+source-wordcount: '486'
+ht-degree: 7%
 
 ---
 
-# Konfigurieren des Adobe Mobile Services Cloud-Dienstes {#configure-your-adobe-mobile-services-cloud-service}
+# Adobe Mobile Services Cloud Service konfigurieren {#configure-your-adobe-mobile-services-cloud-service}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -26,11 +30,11 @@ ht-degree: 25%
 
 Die **Mobilmetrikbereich** im Befehlszentrum bietet Echtzeitanalysen für Ihre Mobile App.
 
-Das [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html)-SDK wird als PhoneGap-Plug-in zur Verfügung gestellt. Metriken werden erfasst und auf dem Gerät zwischengespeichert, bis das Gerät verbunden ist. Zu diesem Zeitpunkt werden die Daten zur Berichterstellung und Analyse an die Adobe Mobile Services Cloud gesendet.
+Die [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK wird über ein PhoneGap-Plug-in bereitgestellt. Metriken werden erfasst und auf dem Gerät zwischengespeichert, bis das Gerät verbunden ist. Zu diesem Zeitpunkt werden die Daten zur Berichterstellung und Analyse an die Adobe Mobile Services Cloud gesendet.
 
-Das Adobe Mobile Analytics-SDK bietet Folgendes:
+Adobe Mobile Analytics SDK bietet Folgendes:
 
-1. **Datenerfassung für mobile Kanäle** - Erfassen Sie umfassende Daten zu Ihren mobilen Websites und Apps auf allen wichtigen Betriebssystemen.
+1. **Datenerfassung für mobile Kanäle** - Erfassen Sie umfassende Daten für Ihre mobilen Websites und Apps auf allen gängigen Betriebssystemen.
 1. **Mobile Interaktionsanalyse** - Erfahren Sie mehr über die Benutzerinteraktion innerhalb Ihrer mobilen App, Website oder Videos, einschließlich der Häufigkeit, mit der Verbraucher den Kanal starten, ob sie Käufe darüber tätigen und mehr.
 1. **Dashboards und Berichte für mobile Apps** - Rufen Sie Nutzungsberichte ab, die Lebenszyklusmetriken für Ihre Apps und App Store-Metriken enthalten - siehe Trends für Benutzer, Starts, durchschnittliche Sitzungslänge, Aufbewahrungsdauer und Abstürze.
 1. **Analyse mobiler Kampagnen** - Quantifizieren Sie die Effektivität mobiler Kampagnen wie SMS, mobile Suchanzeigen, mobile Display-Anzeigen und QR-Codes.
@@ -43,9 +47,9 @@ Das Adobe Mobile Analytics-SDK bietet Folgendes:
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-Kachel „AEM-Befehlszeilenmetriken“
+AEM Kachel &quot;Befehlszeilenmetriken&quot;
 
-## Konfigurieren des Cloud-Dienstes {#configuring-the-cloud-service}
+## Konfigurieren des Cloud Service {#configuring-the-cloud-service}
 
 Um Adobe Mobile Services Analytics nutzen zu können, müssen Sie den AEM Mobile Analytics Cloud-Dienst mit Ihren Adobe Analytics-Kontoinformationen konfigurieren.
 

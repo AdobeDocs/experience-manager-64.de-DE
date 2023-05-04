@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 863ee5e3-daa7-4f7d-8897-291d367cf29d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '299'
+ht-degree: 6%
 
 ---
 
 # Tag-Grundlagen {#tag-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Wenn AEM Communities-Komponenten mit aktiviertem Tagging konfiguriert sind, können Community-Mitglieder den Inhalt taggen, den sie in der Veröffentlichungsumgebung posten.
 
@@ -37,11 +41,11 @@ Das Tagging von benutzergenerierten Inhalten kann beim Konfigurieren eines [Comm
 * [Kalender](calendar.md)
 * [Dateibibliothek](file-library.md)
 * [Forum](forum.md)
-* [Frage und Antwort](working-with-qna.md)
+* [Fragen und Antworten](working-with-qna.md)
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
-### Social-Tag-Cloud {#social-tag-cloud}
+### Social Tag-Cloud {#social-tag-cloud}
 
 <table> 
  <tbody>

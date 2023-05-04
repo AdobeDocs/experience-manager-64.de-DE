@@ -10,21 +10,25 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 24f94dd5-62a4-4ac3-9a1b-a8e189da9958
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '401'
+ht-degree: 51%
 
 ---
 
 # Vorschau von Seiten mit ContextHub-Daten{#previewing-pages-using-contexthub-data}
 
-In der [ContextHub](/help/sites-developing/contexthub.md)-Symbolleiste werden Daten aus ContextHub Stores angezeigt. Außerdem können mithilfe der Leiste Store-Daten bearbeitet werden. Die ContextHub-Symbolleiste eignet sich besonders für die Vorschau von Inhalten, die durch Daten im ContextHub Store gesteuert werden.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Diese Symbolleiste besteht aus einer Reihe Benutzeroberflächenmodi, die eines oder mehrere Oberflächenmodule enthalten.
+Die [ContextHub](/help/sites-developing/contexthub.md) in der Symbolleiste werden Daten aus ContextHub-Stores angezeigt und Sie können Store-Daten ändern. Die ContextHub-Symbolleiste ist für die Vorschau von Inhalten nützlich, die durch Daten in einem ContextHub-Store bestimmt werden.
 
-* Benutzeroberflächenmodi werden durch die Symbole links in der Symbolleiste dargestellt. Klicken oder tippen Sie auf ein solches Symbol, zeigt die Symbolleiste die im Modus enthaltenen Benutzeroberflächenmodule an.
-* In den Oberflächenmodulen werden Daten aus einem oder mehreren ContextHub Stores dargestellt. Einige Oberflächenmodule ermöglichen die Bearbeitung von Store-Daten.
+Die Symbolleiste besteht aus einer Reihe von Benutzeroberflächenmodi, die ein oder mehrere Benutzeroberflächenmodule enthalten.
+
+* Benutzeroberflächenmodi sind Symbole, die links in der Symbolleiste angezeigt werden. Wenn Sie auf ein Symbol klicken oder tippen, zeigt die Symbolleiste die darin enthaltenen UI-Module an.
+* Benutzeroberflächenmodule zeigen Daten aus einem oder mehreren ContextHub-Stores an. Einige Benutzeroberflächenmodule ermöglichen es Ihnen auch, gespeicherte Daten zu bearbeiten.
 
 Es werden verschiedene Benutzeroberflächenmodi und -module von ContextHub installiert. Möglicherweise hat Ihr Admin [ContextHub so konfiguriert](/help/sites-administering/contexthub-config.md), dass andere Module als die hier gezeigten dargestellt werden.
 
@@ -46,7 +50,7 @@ Die ContextHub-Symbolleiste ist im Vorschaumodus verfügbar. Die Symbolleiste wi
 
 ## Benutzeroberflächenmodul-Funktionen {#ui-module-features}
 
-Jedes Benutzeroberflächenmodul verfügt über eigene Funktionen, es stehen jedoch auch folgende gemeinsam genutzte Funktionen zur Verfügung. Da sich die Benutzeroberflächenmodule erweitern lassen, können Entwickler je nach Wunsch weitere Funktionen einbauen.
+Jedes UI-Modul bietet unterschiedliche Funktionen, die folgenden Arten von Funktionen sind jedoch üblich. Da UI-Module erweiterbar sind, kann Ihr Entwickler nach Bedarf andere Funktionen implementieren.
 
 ### Inhalt der Symbolleiste {#toolbar-content}
 
@@ -56,13 +60,13 @@ Mit den Benutzeroberflächenmodulen können in der Symbolleiste Daten aus einem 
 
 ### Popup-Inhalt {#popup-content}
 
-In einigen Benutzeroberflächenmodulen wird ein Popup-Overlay angezeigt, wenn darauf geklickt oder getippt wird. In der Regel enthält das Popup zusätzlich zu den in der Symbolleiste verfügbaren Informationen weitere Daten.
+Einige UI-Module zeigen ein Popup-Overlay an, wenn darauf geklickt oder getippt wird. In der Regel enthält das Popup zusätzlich zu den in der Symbolleiste verfügbaren Informationen weitere Daten.
 
 ![screen_shot_2018-03-23at094003](assets/screen_shot_2018-03-23at094003.png)
 
 ### Popup-Formulare {#popup-forms}
 
-In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Steuern diese Store-Daten Seiteninhalte, können Sie mit dem Formular Änderungen vornehmen, die sich dann in den Seiteninhalten widerspiegeln.
+In einigen Popup-Overlays der Benutzeroberflächenmodule befinden sich Formularelemente, mit deren Hilfe Sie Daten im ContextHub Store bearbeiten können. Wenn der Seiteninhalt durch die Speicherdaten bestimmt wird, können Sie das Formular verwenden und Änderungen am Seiteninhalt beobachten.
 
 ### Vollbildmodus {#fullscreen-mode}
 

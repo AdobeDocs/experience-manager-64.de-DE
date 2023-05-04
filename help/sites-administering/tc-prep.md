@@ -11,18 +11,22 @@ content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 feature: Language Copy
 exl-id: 1a7fe230-093b-4d2b-95cb-f9479c0febe5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '717'
+ht-degree: 78%
 
 ---
 
 # Vorbereiten von Inhalten für die Übersetzung{#preparing-content-for-translation}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Bei mehrsprachigen Websites wird in der Regel ein Teil der Inhalte in mehreren Sprachen bereitgestellt. Die Website wird in einer Sprache verfasst und anschließend in weitere Sprachen übersetzt. Im Allgemeinen bestehen mehrsprachige Websites aus Zweigen von Seiten, wobei jeder Zweig die Seiten der Website in einer anderen Sprache enthält.
 
-Die Beispiel-Geometrixx-Website umfasst mehrere Sprachzweige und weist die folgende Struktur auf:
+Die Beispiel-Geometrixx Demosite enthält mehrere Sprachzweige und weist die folgende Struktur auf:
 
 ```xml
 /content
@@ -44,7 +48,7 @@ Führen Sie die folgenden Schritte aus, um Ihre Website für die Übersetzung vo
 
 1. Erstellen Sie den Sprachstamm für Ihren Sprach-Master. Der Sprachstamm der englischen Beispiel-Geometrixx-Website ist z. B. /content/geometrixx/en. Stellen Sie sicher, dass der Sprachstamm entsprechend den Informationen unter [Erstellen eines Sprachstamms](/help/sites-administering/tc-prep.md#creating-a-language-root) konfiguriert ist.
 1. Verfassen Sie den Inhalt des Sprach-Masters.
-1. Erstellen Sie den Sprachstamm jeder Sprachkopie für die Website. Der Sprachstamm der französischen Beispiel-Geometrixx-Website ist z. B. /content/geometrixx/fr.
+1. Erstellen Sie den Sprachstamm jeder Sprachkopie für die Website. Beispielsweise lautet die französische Sprachkopie der Geometrixx-Beispiel-Site /content/geometrixx/fr.
 
 Wenn Sie die Inhalte für die Übersetzung vorbereitet haben, können Sie automatisch fehlende Seiten in den Sprachkopien und zugehörigen Übersetzungsprojekten erstellen. (Siehe [Erstellen eines Übersetzungsprojekts](/help/sites-administering/tc-manage.md).) Einen Überblick über den Prozess der Inhaltsübersetzung in AEM finden Sie unter [Übersetzen von Inhalten für mehrsprachige Websites](/help/sites-administering/translation.md).
 
@@ -60,12 +64,12 @@ Um den Sprachstamm zu erstellen, erstellen Sie eine Seite und verwenden Sie eine
 
 Sie können jedes dieser Formate verwenden, passend zur Struktur Ihrer globalen Website.  Beispielsweise verfügt die Stammseite der französischen Sprachkopie der Geometrixx-Website über die „Name“-Eigenschaft `fr`. Beachten Sie, dass die Eigenschaft Name als Name des Seitenknotens im Repository verwendet wird und daher den Pfad der Seite bestimmt. (http://localhost:4502/content/geometrixx/fr.html)
 
-Im folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche genutzt, um eine Sprachkopie einer Website zu erstellen. Die entsprechenden Anleitungen für die klassische Benutzeroberfläche finden Sie unter [Erstellen eines Sprachstamms über die klassische Benutzeroberfläche](/help/sites-administering/tc-lroot-classic.md).
+Im folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche verwendet, um eine Sprachkopie einer Website zu erstellen. Anweisungen zur Verwendung der klassischen Benutzeroberfläche finden Sie unter [Erstellen eines Sprachstamms mithilfe der klassischen Benutzeroberfläche](/help/sites-administering/tc-lroot-classic.md).
 
-1. Navigieren Sie zu „Sites“.
+1. Navigieren Sie zu Sites .
 1. Klicken oder tippen Sie auf die Website, für die Sie eine Sprachkopie erstellen möchten.
 
-   Wenn Sie z. B. eine Sprachkopie der Geometrixx Outdoors-Website erstellen möchten, klicken oder tippen Sie auf „Geometrixx Outdoors-Website“.
+   Wenn Sie beispielsweise eine Sprachkopie der Geometrixx Outdoors-Site erstellen möchten, klicken oder tippen Sie auf Geometrixx Outdoors-Site.
 
 1. Klicken oder tippen Sie auf „Erstellen“ und anschließend auf „Seite erstellen“.
 
@@ -80,7 +84,7 @@ Im folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche genutzt, um
 
 ## Anzeigen des Status der Sprachstämme {#seeing-the-status-of-language-roots}
 
-Die Touch-optimierte Benutzeroberfläche bietet den Bereich „Verweise“, der eine Liste der erstellten Sprachstämme anzeigt.
+Die Touch-optimierte Benutzeroberfläche bietet einen Bereich &quot;Verweise&quot;, der eine Liste der erstellten Sprachstämme anzeigt.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -90,4 +94,4 @@ Das folgende Verfahren verwendet die Touch-optimierte Benutzeroberfläche, um de
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-1. Klicken oder tippen Sie im Bereich „Verweise“ auf **Sprachkopien**. Im Bereich „Sprachkopien“ werden die Sprachkopien der Website angezeigt.
+1. Klicken oder tippen Sie im Bereich &quot;Verweise&quot;auf **Sprachkopien**. Im Bereich Sprachkopien werden die Sprachkopien der Website angezeigt.

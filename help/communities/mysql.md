@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 role: Admin
 exl-id: 1dfb55c2-41cb-445f-9bf8-f12ab6b8e9d8
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 5%
+source-wordcount: '1127'
+ht-degree: 4%
 
 ---
 
 # MySQL-Konfiguration für Aktivierungsfunktionen {#mysql-configuration-for-enablement-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 MySQL ist eine relationale Datenbank, die hauptsächlich für SCORM-Tracking- und Reporting-Daten für Aktivierungsressourcen verwendet wird. Dazu gehören Tabellen für andere Funktionen wie das Tracking von angehaltenen/wiederaufgenommenen Videos.
 
@@ -83,7 +87,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
-   * Kennwort: `no password by default`
+   * Passwort: `no password by default`
    * Standardschema: `leave blank`
 1. Auswählen `Test Connection` Überprüfen der Verbindung zum ausgeführten MySQL-Dienst
 
@@ -113,8 +117,8 @@ Die SQL-Skripte werden mithilfe der CRXDE Lite in der Autoreninstanz abgerufen. 
 1. Zur CRXDE Lite navigieren
    * Beispiel: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Erweitern Sie die `/libs/social/config/scorm/` Ordner
-1. Download `database_scormengine.sql`
-1. Download `database_scorm_integration.sql`
+1. Herunterladen `database_scormengine.sql`
+1. Herunterladen `database_scorm_integration.sql`
 
 ![chlimage_1-331](assets/chlimage_1-331.png)
 
@@ -151,7 +155,7 @@ Installieren Sie das Schema, bevor Sie die Daten installieren.
 In der MySQL Workbench
 
 * Über das Pulldown-Menü Datei
-* Auswählen `Open SQL Script ...`
+* Klicken Sie auf `Open SQL Script ...`
 * Wählen Sie in dieser Reihenfolge eine der folgenden Optionen aus:
    1. `database_scormengine.sql`
    1. `database_scorm_integration.sql`

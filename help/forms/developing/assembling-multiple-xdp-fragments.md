@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 0ed1f69d-c212-4d47-a572-ae030f2983fc
 role: Developer
 exl-id: be9db93d-97e1-4d4e-8d07-1c58a4a1a44c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 100%
+source-wordcount: '1923'
+ht-degree: 98%
 
 ---
 
 # Assemblieren mehrerer XDP-Fragmente {#assembling-multiple-xdp-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können mehrere XDP-Fragmente in einem einzelnen XDP-Dokument zusammenstellen. Betrachten Sie beispielsweise XDP-Fragmente, in denen jede XDP-Datei ein oder mehrere Teilformulare enthält, die zum Erstellen eines Gesundheitsformulars verwendet werden. Die folgende Abbildung zeigt die Gliederungsansicht (sie stellt die Datei „tuc018_template_flowed.xdp“ dar, die in der Kurzanleitung *Zusammenstellen mehrerer XDP-Fragmente* verwendet wurde):
 

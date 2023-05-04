@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 7941987a-2f4c-4c62-8ab2-0f6f30ceb064
 exl-id: 7b43a76c-2625-4dcc-8593-f587071084e1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2891'
-ht-degree: 2%
+source-wordcount: '2927'
+ht-degree: 1%
 
 ---
 
 # Mobil mit Inhaltssynchronisierung{#mobile-with-content-sync}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -149,9 +153,9 @@ Der Bildtyp wird verwendet, um das We.Retail-Logo in die ZIP-Datei einzuschließ
 
 * **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele: *touch* zum Rendern mobiler Versionen einer Seite.
 
-* **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert lautet *true.*
+* **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *wahr.*
 
-* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.
+* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert ist *true*.
 
    Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie die **Day CQ WCM Pages Update Handler** in der Webkonsole.
 
@@ -243,7 +247,7 @@ Auf die Konsole kann unter folgender Adresse zugegriffen werden:
 
 `http://localhost:4502/libs/cq/contentsync/content/console.html`
 
-Diese sieht nun wie folgt aus:
+Sie sieht wie folgt aus:
 
 ![chlimage_1-132](assets/chlimage_1-132.png)
 

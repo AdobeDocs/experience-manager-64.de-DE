@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 902fc62b-262e-4eb4-b580-dbfbf4344fa6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 99%
+source-wordcount: '1944'
+ht-degree: 95%
 
 ---
 
 # Zusammenstellen von Dokumenten mithilfe der Bates-Nummerierung {#assembling-documents-using-bates-numbering}
 
-Mithilfe der Bates-Nummerierung können Sie PDF-Dokumente zusammenstellen, die eindeutige Seitenkennungen enthalten. *Bates-Nummerierung* ist eine Methode zur Anwendung von eindeutigen Identifikatoren auf einen Stapel verwandter Dokumente. Jede Seite im Dokument (oder in einer Gruppe von Dokumenten) erhält eine Bates-Nummer, mit der die Seite eindeutig identifiziert wird. Beispielsweise Produktionsdokumente, die Materialaufstellungsinformationen enthalten und der Herstellung einer Baugruppe zugeordnet sind, können einen Bezeichner enthalten. Eine Bates-Nummer enthält einen sequenziell erhöhten numerischen Wert sowie ein optionales Präfix und Suffix. Das Präfix + numerisch + Suffix wird als *Bates-Muster* bezeichnet.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Mithilfe der Bates-Nummerierung können Sie PDF-Dokumente zusammenstellen, die eindeutige Seitenkennungen enthalten. *Bates-Nummerierung* ist eine Methode zur Anwendung von eindeutigen Identifikatoren auf einen Stapel verwandter Dokumente. Jede Seite im Dokument (oder in einer Gruppe von Dokumenten) erhält eine Bates-Nummer, mit der die Seite eindeutig identifiziert wird. Beispielsweise können Fertigungsdokumente, die Materialaufstellungsinformationen enthalten und mit der Herstellung einer Baugruppe verbunden sind, einen Bezeichner enthalten. Eine Bates-Nummer enthält einen sequenziell inkrementierten numerischen Wert sowie ein optionales Präfix und Suffix. Das Präfix + numerisch + Suffix wird als *Bates-Muster* bezeichnet.
 
 Die folgende Illustration zeigt ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet.
 

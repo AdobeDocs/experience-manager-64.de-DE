@@ -1,7 +1,7 @@
 ---
 title: Tastaturbefehle für Konsolen
 seo-title: Keyboard Shortcuts for Consoles
-description: Diese Tastaturbefehle verkürzen die Bearbeitungszeit.
+description: Mit diesen Tastaturbefehlen sparen Sie Zeit beim Authoring
 seo-description: Save time when authoring by using these keyboard shortcuts
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: 8249fd48-38af-4bf7-8dcc-2f63db6750b6
-source-git-commit: beb6e3ccc5cbef044f8b91d327c0361c881ccd72
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 100%
+source-wordcount: '414'
+ht-degree: 64%
 
 ---
 
 # Tastaturbefehle für Konsolen{#keyboard-shortcuts-for-consoles}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
@@ -36,7 +40,7 @@ Die folgenden Tastaturbefehle stehen für die Konsolen „Sites“, „Commerce�
 |  | `Left Arrow` | Navigieren nach oben in der Baumstruktur/Reduzieren des Strukturknotens |
 |  | `Down Arrow` | Navigieren nach unten in einer Liste mit Seiten auf derselben Ebene |
 |  | `Up Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
-| Konsole – Spaltenansicht | `Shift-Up/Down Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
+| Konsole - Spaltenansicht | `Shift-Up/Down Arrow` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
 |  | `Esc` | Navigieren nach oben in einer Liste mit Seiten auf derselben Ebene |
 | Konsolen | `?` | Hilfe zu Tastaturbefehlen |
 |  | `/` | Aufrufen der [Suche](/help/sites-authoring/search.md) |
@@ -56,7 +60,7 @@ Desktop-Benutzern stehen bei Verwendung des [Seiteneditors](/help/sites-authorin
 
 ## Betriebssystemspezifische Modifikatortasten {#os-specific-modifier-keys}
 
-Die für die Tastaturbefehle verwendeten Zusatztasten variieren je nach dem vom Client verwendeten Betriebssystem.
+Die für die Tastaturbefehle verwendeten Modifikatortasten variieren je nach dem vom Client verwendeten Betriebssystem.
 
 | Windows/Linux | macOS |
 |---|---|
@@ -65,19 +69,19 @@ Die für die Tastaturbefehle verwendeten Zusatztasten variieren je nach dem vom 
 
 ## Browser und Tastaturbefehle {#browsers-and-keyboard-shortcuts}
 
-AEM vermeidet gängige Tastaturbefehle von Standardbrowsern. Jedoch wird das standardmäßige Browserverhalten nicht durch AEM-Tastaturbefehle außer Kraft gesetzt.
+AEM vermeidet gängige Tastaturbefehle, die bereits von gängigen Browsern verwendet werden. Das standardmäßige Browserverhalten wird jedoch nicht durch AEM Tastaturbefehle überschrieben.
 
 Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layouts identisch.
 
 >[!NOTE]
 >
->AEM-Tastaturbefehle setzen standardmäßiges Browserverhalten nicht außer Kraft.
+>AEM Tastaturbefehle überschreiben nicht das standardmäßige Browserverhalten.
 >
->Bei einem Konflikt zwischen AEM- und Browsertastaturbefehlen funktionieren die AEM-Tastaturbefehle nicht, da der Browserfunktion Vorrang eingeräumt wird.
+>Sollte es zu Konflikten zwischen AEM- und Browser-Tastaturbefehlen kommen, funktionieren AEM Verknüpfungen nicht, was zu Browserfunktionalität führt.
 
 >[!CAUTION]
 >
->AEM-Tastaturbefehle können Bildschirmlesehilfen, bestimmte Browserfunktionen und andere Eingabehilfen stören.
+>AEM Tastaturbefehle könnten Bildschirmlesehilfen, einige Browserfunktionen und andere Eingabehilfen beeinträchtigen.
 >
 >Adobe empfiehlt, [AEM-Tastaturbefehle zu deaktivieren](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts), wenn eine Bildschirmlesehilfe verwendet wird.
 
@@ -85,9 +89,9 @@ Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layout
 
 AEM bietet Tastaturbefehle für einige häufig verwendete Funktionen (Bearbeiten, Eigenschaften, Kopieren/Einfügen, Anzeigen verschiedener Menüs in der Seitenleiste usw.).
 
-Für Benutzer, die keine Tastaturbefehle verwenden oder bei denen bestimmte Anforderungen in Bezug auf die Barrierefreiheit bestehen, können sämtliche Tastaturbefehle deaktiviert werden.
+Für Benutzer, die keine Tastaturbefehle verwenden oder bestimmte Barrierefreiheitsanforderungen haben, können alle Tastaturbefehle deaktiviert werden.
 
-Es gibt zwei Möglichkeiten, Tastaturbefehle zu deaktivieren:
+Sie können Tastaturbefehle an zwei Stellen deaktivieren:
 
 * [Benutzereinstellungen](/help/sites-authoring/user-properties.md#my-preferences)
 * [Hilfemenü](/help/sites-authoring/basic-handling.md#accessing-help)

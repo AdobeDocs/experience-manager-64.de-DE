@@ -11,16 +11,20 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: b3b0f505-3d7d-493d-a37b-abc8a365f95b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '911'
+ht-degree: 91%
 
 ---
 
 # Einbinden von Tagging in eine AEM-Anwendung{#building-tagging-into-an-aem-application}
 
-Zum Zwecke von programmatischem Arbeiten mit Tags oder zum Erweitern von Tags in einer benutzerdefinierten AEM-Anwendung wird auf dieser Seite die Verwendung der
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Zum Zweck der programmgesteuerten Arbeit mit Tags oder der Erweiterung von Tags in einem benutzerdefinierten AEM-Programm beschreibt diese Seite die Verwendung des
 
 * [Tagging-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html),
 
@@ -31,7 +35,7 @@ die mit dem
 Weitere Informationen zum Tagging finden Sie unter:
 
 * Informationen zur Erstellung und Verwaltung von Tags sowie dazu, welchen Inhalten Tags zugewiesen werden, finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
-* [Verwendung von Tags](/help/sites-authoring/tags.md) für Informationen zum Markieren von Inhalt.
+* [Verwenden von Tags](/help/sites-authoring/tags.md) für Informationen zum Tagging von Inhalten.
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
 
@@ -188,7 +192,7 @@ Beim Tagging hängt die Lokalisierung vom Kontext ab, da Tag-`titles` in der Sei
 
 ### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“ {#adding-a-new-language-to-the-edit-tag-dialog}
 
-Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (Finnisch) im Dialogfeld **Tag bearbeiten** hinzufügen:
+Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (Finnisch) zum **Tag bearbeiten** dialog:
 
 1. Bearbeiten Sie in **CRXDE** die Mehrwerteigenschaft `languages` des Knotens `/content/cq:tags`.
 

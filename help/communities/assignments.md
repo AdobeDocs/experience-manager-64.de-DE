@@ -10,16 +10,20 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: aeacddc5-a128-40cd-a4c3-07fa173f90c4
 exl-id: 6b8b19ae-eb3b-46d5-ab44-18c43d11aa61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 27%
+source-wordcount: '137'
+ht-degree: 7%
 
 ---
 
 # Zuweisungsfunktion {#assignments-feature}
 
-Die Komponenten „Aktivierungszuweisungen“ und [Aktivierungskatalog](catalog.md), die sich in der Communities-Gruppe des Komponenten-Browsers finden, sind Komponenten einer [Aktivierungs-Community](overview.md#enablement-community).
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Aktivierungszuweisungen und [Aktivierungskatalog](catalog.md) Komponenten, die in der Communities-Gruppe im Komponenten-Browser gefunden werden, sind Komponenten eines [Aktivierungs-Community](overview.md#enablement-community).
 
 Mit der Komponente &quot;Aktivierungszuweisungen&quot;kann das derzeit angemeldete Community-Mitglied (Lernende) auf die zugewiesenen [Aktivierungsressourcen](resources.md).
 

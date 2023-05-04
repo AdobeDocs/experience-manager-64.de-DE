@@ -8,16 +8,20 @@ content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
 feature: Video Profiles,Video
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3068'
-ht-degree: 75%
+source-wordcount: '3104'
+ht-degree: 62%
 
 ---
 
 # Dynamic Media-Videoprofile {#video-profiles}
 
-Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Beim Kodieren von Mastervideos mithilfe des Profils „Adaptive Videoverschlüsselung“ passt der Videoplayer während der Wiedergabe automatisch die Qualität des Videostreams auf Grundlage der Internetverbindungsgeschwindigkeit Ihrer Kunden an. Dies wird als adaptives Streaming bezeichnet.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Wenn Sie Ihre Übergeordneten Videos mithilfe des Profils &quot;Adaptive Videoverschlüsselung&quot;kodieren, passt der Videoplayer während der Wiedergabe automatisch die Qualität des Videostreams basierend auf der Internetverbindungsgeschwindigkeit Ihrer Kunden an. Dies wird als adaptives Streaming bezeichnet.
 
 Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
@@ -43,9 +47,9 @@ Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf e
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](config-dms7.md#configuring-asset-processing).
 
-## Vorgaben für adaptive Videoverschlüsselung {#adaptive-video-encoding-presets}
+## Vorgaben für die adaptive Videokodierung {#adaptive-video-encoding-presets}
 
-In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adaptive Video-Streaming auf Smartphones und Tablets sowie Desktop-Computern angegeben. Sie können diese Vorgaben für Videos mit jedem Seitenverhältnis verwenden.
+In der folgenden Tabelle werden die Best Practice Codierungsprofile für das adaptive Video-Streaming auf Smartphones und Tablets sowie Desktop-Computern angegeben. Sie können diese Vorgaben für Videos mit jedem Seitenverhältnis verwenden.
 
 <table> 
  <tbody> 
@@ -94,24 +98,24 @@ In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adapt
 
 ## Erstellen eines Dynamic Media-Videokodierungsprofils für adaptives Streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media umfasst standardmäßig das vordefinierte Profil „Adaptive Videokodierung“ (eine Gruppe mit Videoupload-Einstellungen für MP4 H.264), das für das beste Anzeigeerlebnis optimiert ist. Sie können dieses Profil beim Hochladen von Videos verwenden.
+Dynamic Media verfügt bereits über ein vordefiniertes Profil für die adaptive Videoverschlüsselung - eine Gruppe von Video-Upload-Einstellungen für MP4 H.264 -, das für das beste Anzeigeerlebnis optimiert ist. Sie können dieses Profil beim Hochladen Ihrer Videos verwenden.
 
 Wenn dieses vordefinierte Profil Ihre Anforderungen jedoch nicht erfüllt, können Sie ein eigenes Profil für die adaptive Videoverschlüsselung erstellen. Wenn Sie die Einstellung **[!UICONTROL Kodieren für adaptives Streaming]**-*Best Practice*- Alle Kodierungsvorgaben, die Sie zum Profil hinzufügen, werden validiert, um sicherzustellen, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multi-Bitrate-Set für das Streaming behandelt.
 
-Beim Erstellen des Videokodierungsprofils sehen Sie, dass die meisten Kodierungsoptionen mit empfohlenen Standardeinstellungen gefüllt sind, um Ihnen die Arbeit zu erleichtern. Wenn Sie allerdings einen anderen Wert als den empfohlenen Standard auswählen, müssen Sie bedenken, dass dies zu schlechter Videoqualität bei der Wiedergabe und zu anderen Leistungsproblemen führen kann.
+Wenn Sie das Videokodierungsprofil erstellen, werden Sie feststellen, dass die meisten Kodierungsoptionen vorab mit den empfohlenen Standardeinstellungen ausgefüllt sind, um Ihnen zu helfen. Wenn Sie jedoch einen anderen Wert als den empfohlenen Standardwert auswählen, sollten Sie beachten, dass dies zu einer schlechten Videoqualität während der Wiedergabe und anderen Leistungsproblemen führen kann.
 
-Für alle MP4 H.264-Videokodierungsvorgaben im Profil werden also die folgenden Werte validiert, um sicherzustellen, dass diese über individuelle Kodierungsvorgaben hinweg identisch sind. Dadurch wird das adaptive Streaming ermöglicht:
+Daher werden für alle MP4 H.264-Videokodierungsvorgaben im Profil die folgenden Werte validiert, um sicherzustellen, dass sie für alle individuellen Kodierungsvorgaben im Profil gleich sind, sodass adaptives Streaming möglich ist:
 
-* Videoformat-Codec – MP4 H.264 (.mp4)
+* Videoformat-Codec – MP4 H.264 (.mp4)
 * Audio-Codec
 * Audiobitrate
 * Seitenverhältnis beibehalten
-* Kodierung mit zwei Durchgängen
-* Konstante Bitrate
+* Codierung mit zwei Durchgängen
+* Konstante Bit-Rate
 * H264-Profil
-* Audio-Samplingrate
+* Audio-Sampling-Rate
 
-Wenn die Werte nicht identisch sind, können Sie das Profil durchaus im Istzustand erstellen. Denken Sie aber daran, dass das adaptive Streaming dann nicht möglich ist. Stattdessen wird das Einzel-Bitraten-Streaming durchgeführt. Es wird empfohlen, dass Sie die Kodierungseinstellungen so bearbeiten, dass dieselben Werte über individuelle Kodierungsvorgaben hinweg im Profil verwendet werden. (Beachten Sie, dass der Videoprofil-/Vorgabeneditor die Parität der adaptiven Videokodierungseinstellungen erzwingen sollte, wenn **[!UICONTROL Kodieren für adaptives Streaming]** aktiviert ist.)
+Wenn die Werte nicht identisch sind, können Sie das Profil durchaus im Istzustand erstellen. Beachten Sie jedoch, dass adaptives Streaming nicht möglich ist. Stattdessen wird für Benutzer Single-Bitrate-Streaming durchgeführt. Es wird empfohlen, dass Sie die Kodierungseinstellungen so bearbeiten, dass dieselben Werte über individuelle Kodierungsvorgaben hinweg im Profil verwendet werden. (Beachten Sie, dass der Videoprofil-/Vorgabeneditor die Parität der adaptiven Videokodierungseinstellungen erzwingen sollte, wenn **[!UICONTROL Kodieren für adaptives Streaming]** aktiviert ist.)
 
 Siehe auch [Erstellen eines Videokodierungsprofils für progressives Streaming](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -127,22 +131,22 @@ Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf e
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um ein neues Videoprofil hinzuzufügen.
 
 1. Geben Sie einen Namen und eine Beschreibung für das Profil ein.
-1. Stellen Sie sicher, dass **[!UICONTROL Für adaptives Streaming kodieren]** aktiviert ist (Standard).
-1. Tippen Sie auf **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
+1. Stellen Sie sicher, dass **[!UICONTROL Kodieren für adaptives Streaming]** aktiviert ist (Standard).
+1. Tippen **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
 1. Legen Sie auf der Registerkarte **[!UICONTROL Allgemein]** die Video- und Audiooptionen fest.
 
    Tippen Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzliche Beschreibungen oder empfohlene Einstellungen auf Grundlage des ausgewählten Videoformat-Codecs anzuzeigen.
 
 1. Stellen Sie unter der Überschrift „Videogröße“ sicher, dass **[!UICONTROL Seitenverhältnis beibehalten]** aktiviert ist.
-1. Legen Sie die Videoframe-Auflösung in Pixeln fest. Verwenden Sie den Wert **[!UICONTROL Auto]**, um das Seitenverhältnis der Quelle anzupassen (Verhältnis von Breite zu Höhe). Beispielsweise „Auto x 480“ oder „640 x Auto“.
+1. Legen Sie die Video-Frame-Auflösung in Pixeln fest. Verwenden Sie den Wert **[!UICONTROL Auto]**, um das Seitenverhältnis der Quelle anzupassen (Verhältnis von Breite zu Höhe). Beispiel: Auto x 480 oder 640 x Auto.
 
    Führen Sie einen der folgenden Schritte aus:
 
    * Geben Sie im Feld **[!UICONTROL Breite]** die Option **[!UICONTROL auto]** ein. Geben Sie im Feld **[!UICONTROL Höhe]** einen Wert in Pixel ein.
-   * Tippen Sie zur Visualisierung der Größe des Videos auf das **[!UICONTROL Informationen]** Symbol (i) rechts von **[!UICONTROL Höhe]** , um **[!UICONTROL Größenberechnung]** Seite. Legen Sie mit der **[!UICONTROL Größenberechnung]** die gewünschten Abmessungen des Videos fest (durch das blaue Feld dargestellt). Tippen Sie oben rechts auf **[!UICONTROL X]**, wenn Sie fertig sind.
+   * Tippen Sie zur Visualisierung der Größe des Videos auf das **[!UICONTROL Informationen]** Symbol (i) rechts von **[!UICONTROL Höhe]** , um **[!UICONTROL Größenberechnung]** Seite. Legen Sie mit der **[!UICONTROL Größenberechnung]** die gewünschten Abmessungen des Videos fest (durch das blaue Feld dargestellt). Tippen **[!UICONTROL X]** in der oberen rechten Ecke, wenn Sie fertig sind.
 
 1. (Optional) Tippen Sie auf die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** ausgewählt ist (empfohlen). Alternativ können Sie erweiterte Video- und Audioeinstellungen anpassen.
-1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**, um die Vorgabe zu speichern.
+1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]** , um die Vorgabe zu speichern.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wiederholen Sie Schritt 5 bis 10, um weitere Kodierungsvorgaben zu erstellen. (Das adaptive Video-Streaming erfordert mehrere Videovorgaben.)
@@ -150,7 +154,7 @@ Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf e
 
 ## Überwachen des Fortschritts eines Kodierungsauftrags {#monitoring-the-progress-of-an-encoding-job}
 
-Eine Verarbeitungsanzeige (oder eine Statusleiste) wird angezeigt, damit Sie den Fortschritt eines Videokodierungsauftrags visuell überwachen können.
+Eine Verarbeitungsanzeige (oder Statusleiste) wird angezeigt, damit Sie den Fortschritt eines Videokodierungsvorgangs visuell überwachen können.
 
 In der Datei `error.log` können Sie den Fortschritt des Kodierungsauftrags ebenfalls anzeigen. Sie können prüfen, ob die Kodierung abgeschlossen ist oder ob Auftragsfehler angezeigt werden. Die Datei `error.log` befindet sich im `logs`-Protokollordner, in dem Ihre Instanz von AEM installiert ist.
 
@@ -177,13 +181,13 @@ Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf e
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um ein neues Videoprofil hinzuzufügen.
 1. Geben Sie einen Namen und eine Beschreibung für das Profil ein.
 1. Löschen Sie die **[!UICONTROL Kodieren für adaptives Streaming]** aktivieren.
-1. Tippen Sie auf **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
+1. Tippen **[!UICONTROL Videokodierungsvorgabe hinzufügen]**.
 1. Legen Sie auf der Registerkarte **[!UICONTROL Allgemein]** die Video- und Audiooptionen fest.
 
    Tippen Sie auf **[!UICONTROL Informationen]** neben jeder Option für zusätzliche Beschreibungen oder empfohlene Einstellungen basierend auf dem ausgewählten Videoformat-Codec.
 
 1. (Optional) Unter dem **Videogröße** Überschrift, abwählen **[!UICONTROL Seitenverhältnis beibehalten]**.
-1. Im **[!UICONTROL Breite]** Feld, eingeben **[!UICONTROL auto]**; rechts von der **[!UICONTROL Höhe]** -Feld tippen Sie auf **[!UICONTROL Informationen]** Symbol. Passen Sie die Größe des Videos auf der Seite **[!UICONTROL Größenberechnung]** wunschgemäß weiter an. Tippen Sie auf **[!UICONTROL X]**, wenn Sie fertig sind.
+1. Im **[!UICONTROL Breite]** Feld, eingeben **[!UICONTROL auto]**; rechts von der **[!UICONTROL Höhe]** -Feld tippen Sie auf **[!UICONTROL Informationen]** Symbol. Passen Sie die Größe des Videos auf der Seite **[!UICONTROL Größenberechnung]** wunschgemäß weiter an. Tippen **[!UICONTROL X]** wenn Sie fertig sind.
 1. (Optional) Führen Sie einen der folgenden Schritte aus:
 
    * Tippen Sie auf die Registerkarte **[!UICONTROL Erweitert]** und stellen Sie sicher, dass das Kontrollkästchen **[!UICONTROL Standardwerte verwenden]** ausgewählt ist (empfohlen).
@@ -191,7 +195,7 @@ Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf e
 
       Tippen Sie auf **[!UICONTROL Informationen]** neben jeder Option für zusätzliche Beschreibungen oder empfohlene Einstellungen basierend auf dem ausgewählten Videoformat-Codec.
 
-1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]**, um die Vorgabe zu speichern.
+1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Speichern]** , um die Vorgabe zu speichern.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Wiederholen Sie Schritt 5 bis 10, um weitere Kodierungsvorgaben zu erstellen.
@@ -199,7 +203,7 @@ Wenn Sie das Erstellen des Videoprofils abgeschlossen haben, wenden Sie es auf e
 
 ## Verwenden von benutzerdefinierten Videokodierungsparametern {#using-custom-added-video-encoding-parameters}
 
-Sie können vorhandene Videokodierungsprofile bearbeiten, um von erweiterten Parametern zur Videokodierung zu profitieren, die beim Erstellen oder Bearbeiten eines Videoprofils in AEM nicht in der Benutzeroberfläche vorhanden sind. Fügen Sie benutzerdefiniert einen oder mehrere erweiterte Parameter hinzu, z. B. **[!UICONTROL minBitrate]** und **[!UICONTROL maxBitrate]**- Ihrem bestehenden Profil.
+Sie können ein vorhandenes Videokodierungsprofil bearbeiten, um erweiterte Videokodierungsparameter zu nutzen, die beim Erstellen oder Bearbeiten eines Videoprofils in AEM nicht in der Benutzeroberfläche vorhanden sind. Fügen Sie benutzerdefiniert einen oder mehrere erweiterte Parameter hinzu, z. B. **[!UICONTROL minBitrate]** und **[!UICONTROL maxBitrate]**- Ihrem bestehenden Profil.
 
 **So verwenden Sie vom Benutzer hinzugefügte Videokodierungsparameter**:
 
@@ -255,19 +259,19 @@ Sie können vorhandene Videokodierungsprofile bearbeiten, um von erweiterten Par
 
    ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Tippen Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Hinzufügen]**.
+1. Tippen Sie unten rechts auf der Seite auf **[!UICONTROL Hinzufügen]**.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wiederholen Sie die Schritte 3 und 4, um Ihrem Videokodierungsprofil einen weiteren Parameter hinzuzufügen.
+   * Wiederholen Sie die Schritte 3 und 4, um Ihrem Videocodierungsprofil einen weiteren Parameter hinzuzufügen.
    * Tippen Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern]**.
 
 1. In der linken oberen Ecke der **[!UICONTROL CRXDE Lite]** Seite, tippen Sie auf **[!UICONTROL Zurück zur Startseite]** -Symbol, um zu AEM zurückzukehren.
 
 ### Bearbeiten eines Dynamic Media-Videokodierungsprofils {#editing-a-video-encoding-profile}
 
-Sie können die Videokodierungsprofile bearbeiten, die Sie erstellt haben, um die in diesen Profilen enthaltenen Videovorgaben hinzuzufügen, zu bearbeiten oder zu löschen.
+Sie können jedes Videokodierungsprofil bearbeiten, das Sie zum Hinzufügen, Bearbeiten oder Löschen von Videovorgaben in diesem Profil erstellt haben.
 
-Die Bearbeitung des bereits in Dynamic Media integrierten Profils **[!UICONTROL Adaptive Videokodierung]** ist standardmäßig deaktiviert. Sie können das Profil einfach kopieren und dann unter einem neuen Namen speichern. Dann können Sie die gewünschten Vorgaben im kopierten Profil bearbeiten.
+Die Bearbeitung des bereits in Dynamic Media integrierten Profils **[!UICONTROL Adaptive Videokodierung]** ist standardmäßig deaktiviert. Sie können das Profil einfach kopieren und dann unter einem neuen Namen speichern. Sie können dann die gewünschten Vorgaben im kopierten Profil bearbeiten.
 
 Siehe auch [Best Practices zur Videokodierung](video.md#best-practices-for-encoding-videos).
 
@@ -281,7 +285,7 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 1. Im **[!UICONTROL Videokodierungsprofil]** Seite, bearbeiten Sie den Namen und die Beschreibung nach Bedarf.
 1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren.
 
-   Tippen Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Streaming anzuzeigen. (Wenn Sie ein progressives Videoprofil nicht bearbeiten möchten, aktivieren Sie dieses Kontrollkästchen nicht.)
+   Tippen Sie auf das Informationssymbol, um eine Beschreibung von adaptivem Streaming anzuzeigen. (Wenn Sie ein progressives Videoprofil bearbeiten, aktivieren Sie dieses Kontrollkästchen nicht.)
 
 1. Unter dem **[!UICONTROL Videokodierungsvorgaben]** Überschriften, Hinzufügen, Bearbeiten oder Löschen von Videokodierungsvorgaben, aus denen das Profil besteht.
 
@@ -308,12 +312,12 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 
 1. Tippen Sie auf das AEM-Logo und navigieren Sie zu **[!UICONTROL Tools > Assets > Videoprofile]**.
 1. Im **[!UICONTROL Videoprofile]** -Seite einen oder mehrere Videoprofilnamen.
-1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen]**.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Löschen]**.
 1. Tippen Sie auf **[!UICONTROL OK]**.
 
 ## Anwenden eines Dynamic Media-Videoprofils auf Ordner {#applying-a-video-profile-to-folders}
 
-Wenn Sie ein Videoprofil zu einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Demzufolge können Sie einem Ordner nur ein Videoprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig berücksichtigen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
+Wenn Sie einem Ordner ein Videoprofil zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Das bedeutet, dass Sie einem Ordner nur ein Videoprofil zuweisen können. Daher sollten Sie die Ordnerstruktur sorgfältig überdenken, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
 Wenn Sie einem Ordner ein anderes Videoprofil zugewiesen haben, überschreibt das neue das vorherige Profil. Die zuvor vorhandenen Ordner-Assets verbleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
 

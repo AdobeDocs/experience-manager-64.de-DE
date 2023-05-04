@@ -1,17 +1,21 @@
 ---
-title: AEM 6.4-Administratorenanleitung
+title: Benutzerhandbuch für AEM 6.4-Admins
 seo-title: AEM 6.4 Administering User Guide
 description: AEM
 seo-description: AEM administering
 exl-id: 74ffdd0a-681c-498e-a4a4-5ab88fd4f58f
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 96%
+source-wordcount: '330'
+ht-degree: 88%
 
 ---
 
-# AEM 6.4-Administratorenanleitung
+# Benutzerhandbuch für AEM 6.4-Admins
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Dieses Handbuch behandelt alle AEM Verwaltungsaufgaben.
 

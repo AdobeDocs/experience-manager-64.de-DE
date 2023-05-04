@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: fa9d0720-f4bf-4933-ae63-c24bb835cc60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 100%
+source-wordcount: '2118'
+ht-degree: 98%
 
 ---
 
 # Ermitteln der PDF/A-Kompatibilität von Dokumenten {#determining-whether-documents-are-pdf-a-compliant}
 
-Mithilfe des Assembler-Services können Sie feststellen, ob ein PDF-Dokument PDF/A-kompatibel ist. Ein PDF/A-Dokument liegt als ein Archivierungsformat vor, das für die langfristige Speicherung von Dokumentinhalten vorgesehen ist. Die Schriftarten werden im Dokument eingebettet und die Datei bleibt unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Mithilfe des Assembler-Services können Sie feststellen, ob ein PDF-Dokument PDF/A-kompatibel ist. Ein PDF/A-Dokument liegt als ein Archivierungsformat vor, das für die langfristige Speicherung von Dokumentinhalten vorgesehen ist. Die Schriftarten werden in das Dokument eingebettet und die Datei ist unkomprimiert. PDF/A-Dokumente sind daher in der Regel größer als normale PDF-Dokumente. Außerdem enthalten PDF/A-Dokumente keine Audio- und Videoinhalte.
 
 Die PDF/A-1-Spezifikation umfasst zwei Konformitätsstufen (Level), nämlich A und B. Der Hauptunterschied zwischen den beiden Stufen ist die Unterstützung der logischen Struktur (Barrierefreiheit), die für die Konformitätsstufe B nicht erforderlich ist. Unabhängig von der Konformitätsstufe schreibt PDF/A-1 vor, dass alle Schriftarten in das generierte PDF/A-Dokument eingebettet sind. Derzeit wird bei der Gültigkeitsprüfung (und Konvertierung) nur PDF/A-1b unterstützt.
 

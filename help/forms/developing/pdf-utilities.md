@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 role: Developer
 exl-id: 1fdabd73-ee74-426b-b815-68022ea27c4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2565'
-ht-degree: 100%
+source-wordcount: '2601'
+ht-degree: 98%
 
 ---
 
 # Arbeiten mit PDF Utilities {#working-with-pdf-utilities}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 **Über den PDF Utilities-Service**
 

@@ -1,7 +1,7 @@
 ---
-title: Anpassung der Willkommens-Konsole (klassische Benutzeroberfläche)
+title: Anpassen der Willkommens-Konsole (klassische Benutzeroberfläche)
 seo-title: Customizing the Welcome Console (Classic UI)
-description: Die Willkommens-Konsole bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM
+description: Die Begrüßungskonsole bietet eine Liste von Links zu den verschiedenen Konsolen und Funktionen in AEM
 seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 11b791f6-b14f-4f50-a64a-27a9501adeb7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 100%
+source-wordcount: '500'
+ht-degree: 50%
 
 ---
 
-# Anpassung der Willkommens-Konsole (klassische Benutzeroberfläche){#customizing-the-welcome-console-classic-ui}
+# Anpassen der Willkommens-Konsole (klassische Benutzeroberfläche){#customizing-the-welcome-console-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!CAUTION]
 >
@@ -25,24 +29,24 @@ ht-degree: 100%
 >
 >Unter [Anpassung der Konsolen](/help/sites-developing/customizing-consoles-touch.md) finden Sie genauere Informationen zur standardmäßigen Touch-optimierten Benutzeroberfläche.
 
-Die Willkommens-Konsole bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM.
+Die Begrüßungskonsole bietet eine Liste von Links zu den verschiedenen Konsolen und Funktionen in AEM.
 
 ![cq_welcomescreen](assets/cq_welcomescreen.png)
 
-Sie können die sichtbaren Links konfigurieren. Sie können diese Konfiguration auch für bestimmte Benutzer und/oder Gruppen vornehmen. Die erforderlichen Handlungen hängen vom Zieltyp ab. Dieser hängt vom Abschnitt der Konsole ab, in dem sich die Ziele befinden:
+Die sichtbaren Links können konfiguriert werden. Dies kann für bestimmte Benutzer und/oder Gruppen definiert werden. Die zu ergreifenden Aktionen hängen vom Zieltyp ab (entspricht dem Abschnitt der Konsole, in der sie sich befinden):
 
-* [Hauptkonsolen](#links-in-main-console-left-pane) – Links in der Hauptkonsole (linker Bereich)
-* [Ressourcen, Dokumentation und Verweis, Eigenschaften](#links-in-sidebar-right-pane) – Links in der Seitenleiste (rechter Bereich)
+* [Hauptkonsolen](#links-in-main-console-left-pane) - Links in der Hauptkonsole (linker Bereich)
+* [Ressourcen, Dokumentation und Referenz, Funktionen](#links-in-sidebar-right-pane) - Links in der Seitenleiste (rechter Bereich)
 
 ## Links in der Hauptkonsole (linker Bereich) {#links-in-main-console-left-pane}
 
-Dies sind die Hauptkonsolen von AEM.
+Hier werden die Hauptkonsolen von AEM aufgelistet.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
-### Legt fest, ob Hauptkonsolen-Links sichtbar sind {#configuring-whether-main-console-links-are-visible}
+### Konfigurieren, ob die Hauptkonsolen-Links sichtbar sind {#configuring-whether-main-console-links-are-visible}
 
-Berechtigungen auf Knotenebene legen fest, ob der Link sichtbar ist. Die betreffenden Knoten sind Folgende:
+Berechtigungen auf Knotenebene bestimmen, ob der Link angezeigt werden kann oder nicht. Die betreffenden Knoten sind Folgende:
 
 * **Websites:** `/libs/wcm/core/content/siteadmin`
 
@@ -66,7 +70,7 @@ Beispiel:
 
    `/libs/wcm/core/content/misc`
 
-Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Sie weitere Informationen zum Festlegen der gewünschten Berechtigungen.
+Siehe [Sicherheitsabschnitt](/help/sites-administering/security.md) für weitere Informationen zum Festlegen der gewünschten Berechtigungen.
 
 ### Links in der Seitenleiste (rechter Bereich) {#links-in-sidebar-right-pane}
 
@@ -159,9 +163,9 @@ Drei Abschnitte werden standardmäßig bereitgestellt (leicht getrennt):
  </tbody> 
 </table>
 
-#### Konfiguration der Sichtbarkeit von Seitenleisten-Links {#configuring-whether-sidebar-links-are-visible}
+#### Sichtbarkeit von Seitenleisten-Links konfigurieren {#configuring-whether-sidebar-links-are-visible}
 
-Sie können einen Link für bestimmte Benutzer oder Gruppen ausblenden, indem Sie den Lesezugriff auf die Knoten entfernen, die diesen Link repräsentieren.
+Es ist möglich, einen Link für bestimmte Benutzer oder Gruppen auszublenden, indem der Lesezugriff auf die Knoten, die den Link darstellen, entfernt wird.
 
 * Ressourcen – Entfernen des Zugriffs auf:
 
@@ -185,7 +189,7 @@ Beispiel:
 
    `/libs/cq/core/content/welcome/features/packages`
 
-Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Sie weitere Informationen zum Festlegen der gewünschten Berechtigungen.
+Siehe [Sicherheitsabschnitt](/help/sites-administering/security.md) für weitere Informationen zum Festlegen der gewünschten Berechtigungen.
 
 ### Link-Auswahlmechanismus {#link-selection-mechanism}
 
@@ -205,7 +209,7 @@ Wenn ein Benutzer oder eine Gruppe keine Leseberechtigungen für einen Knoten mi
 
 ### Hinzufügen eines benutzerdefinierten Elements {#adding-a-custom-item}
 
-Mit dem [Link-Auswahlmechanismus](#link-selection-mechanism) können Sie Ihr selbst definiertes Element zur Linkliste hinzufügen.
+Die [Link-Auswahlmechanismus](#link-selection-mechanism) kann verwendet werden, um Ihr eigenes benutzerdefiniertes Element zur Liste der Links hinzuzufügen.
 
 Fügen Sie Ihr benutzerdefiniertes Element zur Liste hinzu, indem Sie das Mixin `cq:Console` zu Ihrem Widget oder Ihrer Ressource hinzufügen. Definieren Sie dazu die Eigenschaft:
 

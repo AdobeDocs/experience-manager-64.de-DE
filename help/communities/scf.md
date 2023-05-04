@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1488'
-ht-degree: 1%
+source-wordcount: '1524'
+ht-degree: 2%
 
 ---
 
 # Social Component Framework {#social-component-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Das Social Component Framework (SCF) vereinfacht die Konfiguration, Anpassung und Erweiterung von Communities-Komponenten auf Server- und Client-Seite.
 
@@ -163,7 +167,7 @@ Es können nur einige ausgewählte AEM Communities-Komponenten dynamisch eingesc
 
 * [Kommentare](essentials-comments.md)
 * [Bewertung](rating-basics.md)
-* [Reviews](reviews-basics.md)
+* [Bewertungen](reviews-basics.md)
 * [Abstimmung](essentials-voting.md)
 
 Die [Handbuch zu Community-Komponenten](components-guide.md) ermöglicht es, einbeziehbare Komponenten von der Hinzufügung zur Einbindung umzuschalten.

@@ -1,5 +1,5 @@
 ---
-title: Schritte zur Aktualisierung von Installationen auf Anwendungsservern
+title: Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern
 seo-title: Upgrade Steps for Application Server Installations
 description: Erfahren Sie, wie Sie Instanzen von AEM aktualisieren, die über Anwendungsserver bereitgestellt werden.
 seo-description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
@@ -11,32 +11,36 @@ content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 feature: Upgrading
 exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 97%
+source-wordcount: '540'
+ht-degree: 36%
 
 ---
 
-# Schritte zur Aktualisierung von Installationen auf Anwendungsservern{#upgrade-steps-for-application-server-installations}
+# Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern{#upgrade-steps-for-application-server-installations}
 
-In diesem Abschnitt wird die Vorgehensweise zum Aktualisieren von AEM für Anwendungsserverinstallationen beschrieben.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwendet. Zudem wird angenommen, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von **AEM 5.6 auf 6.3** beschrieben.
+In diesem Abschnitt wird das Verfahren beschrieben, das befolgt werden muss, um AEM für Anwendungsserverinstallationen zu aktualisieren.
 
-1. Starten Sie zunächst JBoss. In den meisten Fällen können Sie hierzu das Startskript `standalone.sh` und den folgenden Befehl am Terminal ausführen.
+Alle Beispiele in diesem Verfahren verwenden JBoss als Anwendungsserver und implizieren, dass Sie bereits über eine funktionierende Version von AEM verfügen. In dieser Anleitung wird die Aktualisierung von **AEM 5.6 auf 6.3** beschrieben.
+
+1. Starten Sie zunächst JBoss. In den meisten Fällen können Sie dies tun, indem Sie die `standalone.sh` Startskript, indem Sie diesen Befehl über das Terminal ausführen:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
    ```
 
-1. Wenn AEM 5.6 bereits installiert ist, müssen Sie sicherstellen, dass die Bundles ordnungsgemäß funktionieren, indem Sie Folgendes ausführen:
+1. Wenn AEM 5.6 bereits bereitgestellt ist, überprüfen Sie, ob die Bundles ordnungsgemäß funktionieren, indem Sie Folgendes ausführen:
 
    ```shell
    wget https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Machen Sie als Nächstes die Bereitstellung von AEM 5.6 rückgängig:
+1. Heben Sie anschließend die Bereitstellung AEM 5.6 auf:
 
    ```shell
    rm jboss-install-folder/standalone/deployments/cq.war
@@ -52,7 +56,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
 
    >[!NOTE]
    >
-   >In diesem Beispiel ist oak-repository das temporäre Verzeichnis, in dem sich das neu konvertierte Repository befindet. Vergewissern Sie sich vor diesem Schritt, dass Sie über die neueste crx2oak.jar-Version verfügen.
+   >In diesem Beispiel ist oak-repository der temporäre Ordner, in dem sich das neu konvertierte Repository befindet. Bevor Sie diesen Schritt durchführen, stellen Sie sicher, dass Sie über die neueste crx2oak.jar-Version verfügen.
 
 1. Löschen Sie die erforderlichen Eigenschaften in der Datei sling.properties folgendermaßen:
 
@@ -68,13 +72,13 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
       1. `jre-*`
       1. `sling.run.mode.install.options`
 
-1. Entfernen Sie die nicht mehr benötigten Dateien und Ordner. Insbesondere müssen Sie diese Elemente entfernen:
+1. Entfernen Sie nicht mehr benötigte Dateien und Ordner. Die Elemente, die Sie speziell entfernen müssen, sind:
 
-   * Den Ordner **launchpad/startup**. Sie können ihn löschen, indem Sie am Terminal den folgenden Befehl ausführen: `rm -rf crx-quickstart/launchpad/startup`
+   * Die **launchpad/startup-Ordner**. Sie können ihn löschen, indem Sie am Terminal den folgenden Befehl ausführen: `rm -rf crx-quickstart/launchpad/startup`
    * Die Datei **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
    * Die Datei **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-1. Kopieren Sie den neu migrierten Segmentspeicher an den entsprechenden Speicherort:
+1. Kopieren Sie den neu migrierten Segmentspeicher an den richtigen Speicherort:
 
    ```shell
    mv crx-quickstart/oak-repository/segmentstore crx-quickstart/repository/segmentstore
@@ -86,17 +90,17 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. Als Nächstes müssen Sie den Ordner für die OSGi-Konfigurationen erstellen, die für die neue aktualisierte Instanz verwendet werden. Genauer gesagt muss ein Ordner mit dem Namen install unter **crx-quickstart** erstellt werden.
+1. Als Nächstes müssen Sie den Ordner erstellen, der die OSGi-Konfigurationen enthält, die mit der neuen aktualisierten Instanz verwendet werden. Genauer gesagt muss ein Ordner mit dem Namen install unter erstellt werden. **crx-quickstart**.
 
-1. Erstellen Sie nun die Knotenspeicher und Datenspeicher, die mit AEM 6.3 verwendet werden. Sie können zu diesem Zweck zwei Dateien mit den folgenden Namen unter **crx-quickstart\install** erstellen:
+1. Erstellen Sie nun den Knotenspeicher und den Datenspeicher, der mit AEM 6.3 verwendet werden soll. Erstellen Sie dazu zwei Dateien mit den folgenden Namen unter **crx-quickstart\install**:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
-   Diese zwei Dateien legen fest, dass AEM einen „TarMK“-Knotenspeicher und einen „File“-Datenspeicher verwendet.
+   Diese beiden Dateien konfigurieren AEM so, dass ein TarMK-Knotenspeicher und ein Dateidatenspeicher verwendet werden.
 
-1. Bearbeiten Sie die Konfigurationsdateien, damit sie einsatzbereit sind. Gehen Sie dazu folgendermaßen vor:
+1. Bearbeiten Sie die Konfigurationsdateien, damit sie einsatzbereit sind. Im Einzelnen:
 
    * Fügen Sie die folgende Zeile zu **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
@@ -109,7 +113,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
        minRecordLength=4096
       ```
 
-1. Entfernen Sie den CRX2-Ausführungsmodus, indem Sie Folgendes ausführen:
+1. Entfernen Sie den crx2-Ausführungsmodus, indem Sie Folgendes ausführen:
 
    ```shell
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
@@ -127,7 +131,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
    <param-value >author</param-value>
    ```
 
-1. Ändern Sie den oben genannten „author“-Wert und legen Sie die Ausführungsmodi folgendermaßen fest: author,crx3,crx3tar. Der endgültige Codeblock sollte wie folgt aussehen:
+1. Ändern Sie den obigen Autorenwert und legen Sie die Ausführungsmodi auf Folgendes fest: author,crx3,crx3tar Der endgültige Codeblock sollte wie folgt aussehen:
 
    ```
    <init-param>
@@ -144,7 +148,7 @@ In allen Beispielen in diesem Verfahren wird JBoss als Anwendungsserver verwende
    jar cvf aem62.war
    ```
 
-1. Stellen Sie die neue WAR-Datei abschließend neu bereit:
+1. Stellen Sie schließlich die neue WAR-Datei bereit:
 
    ```shell
    cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war

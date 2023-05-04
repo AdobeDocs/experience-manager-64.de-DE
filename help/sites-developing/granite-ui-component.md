@@ -1,7 +1,7 @@
 ---
 title: Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche
 seo-title: Creating a New Granite UI Field Component
-description: Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwendung in Formularen, die in Granite als „Felder“ bezeichnet werden.
+description: Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten, die für die Verwendung in Formularen entwickelt wurden, so genannte Felder
 seo-description: Granite UI provides a range of components designed to be used in forms, called fields
 uuid: cf26e057-4b0c-45f4-8975-2c658517f20e
 contentOwner: Guillaume Carlino
@@ -10,48 +10,52 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 exl-id: 9a6cc25e-e54e-4b8a-8fdd-bcd65d8fe601
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '575'
+ht-degree: 40%
 
 ---
 
 # Erstellen einer neuen Feld-Komponente in der Granite-Benutzeroberfläche{#creating-a-new-granite-ui-field-component}
 
-Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwendung in Formularen, die im Granite-Vokabular als *Felder* bezeichnet werden. Die Standard-Formularkomponenten in Granite sind verfügbar unter:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten, die für die Verwendung in Formularen entwickelt wurden. diese *fields* im Vokabular der Granite-Benutzeroberfläche. Die standardmäßigen Granite-Formularkomponenten sind unter verfügbar:
 
 `/libs/granite/ui/components/foundation/form/*`
 
 >[!NOTE]
 >
->Die Formularfelder der Granite-Benutzeroberfläche sind besonders interessant, da sie für [Komponenten-Dialoge](/help/sites-developing/developing-components.md) verwendet werden.
+>Diese Formularfelder der Granite-Benutzeroberfläche sind von besonderem Interesse, da sie für [Komponentendialogfelder](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
->Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Ausführliche Informationen zu Feldern finden Sie im [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
-Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche zum Entwickeln bzw. Erweitern von Granite-Komponenten. Dieses umfasst zwei Elemente:
+Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche, um Granite-Komponenten zu entwickeln und/oder zu erweitern. Dies umfasst zwei Elemente:
 
-* Serverseitig:
+* Server-seitig:
 
-   * eine Reihe von Foundation-Komponenten
+   * eine Sammlung von Foundation-Komponenten
 
-      * Foundation – modular, zusammensetzbar, schichtfähig, wiederverwendbar
+      * foundation - modular, zusammenstellbar, schichtfähig, wiederverwendbar
       * Komponenten – Sling-Komponenten
-   * Hilfsprogramme für die Anwendungsentwicklung
+   * Helfer zur Unterstützung der Anwendungsentwicklung
 
 
-* Clientseitig:
+* clientseitig:
 
-   * eine Sammlung von Client-Bibliotheken mit Vokabular (d. h. einer Erweiterung der HTML-Sprache) für generische Interaktionsmuster in einer von Hypermedia gesteuerten Benutzeroberfläche
+   * eine Sammlung von Client-Bibliotheken, die ein Vokabular bereitstellen (d. h. Erweiterung der HTML-Sprache), um generische Interaktionsmuster über eine durch Hypermedia gesteuerte Benutzeroberfläche zu erreichen.
 
 Die generische Komponente `field` der Granite-Benutzeroberfläche beinhaltet zwei wichtige Dateien:
 
 * `init.jsp`: Übernimmt die generische Verarbeitung sowie Beschriftung und Beschreibung und liefert den für das Rendern des Felds erforderlichen Formularwert.
 * `render.jsp`: Übernimmt das tatsächliche Rendern des Felds und muss für das benutzerdefinierte Feld überschrieben werden; ist in `init.jsp` enthalten.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche im Abschnitt zu Feldern](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
+Weitere Informationen finden Sie unter [Granite-UI-Dokumentation - Feld](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) , wenn Sie weitere Details wünschen.
 
 Beispiele finden Sie hier:
 
@@ -63,7 +67,7 @@ Beispiele finden Sie hier:
 
 >[!NOTE]
 >
->Da dieser Mechanismus JSP verwendet, werden i18n und XSS nicht vorgefertigt bereitgestellt. Daher müssen Sie die Zeichenfolgen internationalisieren und durch Anführungszeichen schützen. Das folgende Verzeichnis enthält die generischen Felder aus einer Standardinstanz, die Sie als Referenz verwenden können:
+>Da dieser Mechanismus JSP verwendet, werden i18n und XSS nicht nativ bereitgestellt. Das bedeutet, dass Sie Ihre Zeichenfolgen internationalisieren und maskieren müssen. Das folgende Verzeichnis enthält die generischen Felder einer Standardinstanz. Sie können diese als Referenz verwenden:
 >
 >`/libs/granite/ui/components/foundation/form`-Verzeichnis
 
@@ -79,7 +83,7 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
 
    `render.jsp`
 
-   In diesem Skript müssen Sie das Hypermedia-Markup (d. h. das erweiterte Markup mit Hypermedia-Angebot) erzeugen, damit der Client Anweisungen erhält, wie er mit dem erstellten Element interagieren soll. Verwenden Sie dabei den serverseitigen Code-Stil der Granite-Benutzeroberfläche
+   In diesem Skript müssen Sie das Hypermedia-Markup (d. h. angereichertes Markup, das die Hypermedia-Bezahlbarkeit enthält) generieren, damit der Client weiß, wie er mit dem generierten Element interagiert. Dies sollte dem serverseitigen Kodierungsstil der Granite-Benutzeroberfläche entsprechen.
 
    Bei der Anpassung *müssen* Sie nur festlegen, dass der (in `init.jsp` initialisierte) Formularwert wie folgt aus der Anforderung gelesen wird:
 
@@ -93,7 +97,7 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
 
    >[!NOTE]
    >
-   >Derzeit ist JSP die bevorzugte Methode für die Skripterstellung, da die Weitergabe von Daten von einer Komponente an die andere (die bei Formularen/Feldern häufig erfolgt) mit HTL schwierig zu bewerkstelligen ist.
+   >Derzeit ist JSP die bevorzugte Skriptmethode, da die Übergabe von Informationen von einer Komponente an eine andere (was im Kontext von Formular/Feldern recht häufig vorkommt) in HTL nicht einfach möglich ist.
 
 ## Erstellen der Client-Bibliothek für die Komponente {#creating-the-client-library-for-the-component}
 
@@ -106,4 +110,4 @@ Gehen Sie wie folgt vor, um der Komponente ein bestimmtes Client-seitiges Verhal
 
    >[!NOTE]
    >
-   >Derzeit stellt die Granite-Benutzeroberfläche keine vorgefertigten Listener oder Hooks bereit, die Sie direkt zum Hinzufügen von JS-Verhalten verwenden können. Um der JS-Komponente zusätzliches Verhalten hinzuzufügen, müssen Sie daher einen JS-Hook in einer benutzerdefinierten Klasse implementieren, die Sie der Komponente bei der Markup-Erzeugung zuweisen.
+   >Derzeit bietet die Granite-Benutzeroberfläche keine nativen Listener oder Hooks, die Sie direkt zum Hinzufügen von JS-Verhalten verwenden können. Um Ihrer Komponente also zusätzliches JS-Verhalten hinzuzufügen, müssen Sie einen JS-Hook in eine benutzerdefinierte Klasse implementieren, die Sie dann während der Markup-Generierung Ihrer Komponente zuweisen.

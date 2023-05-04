@@ -1,7 +1,7 @@
 ---
 title: RDBMS-Unterstützung in AEM 6.4
 seo-title: RDBMS Support in AEM 6.4
-description: Erfahren Sie mehr über die Unterstützung der RDBMS-Persistenz in AEM 6.4 sowie die verfügbaren Konfigurationsoptionen.
+description: Erfahren Sie mehr über die Unterstützung der Persistenz von relationalen Datenbanken in AEM 6.4 und die verfügbaren Konfigurationsoptionen.
 seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 uuid: 599d3e61-99eb-4a1c-868b-52b20a615500
 contentOwner: User
@@ -11,22 +11,26 @@ topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 feature: Configuring
 exl-id: 89523bb4-e4c4-469c-802b-6fe27c816a2e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 85%
+source-wordcount: '736'
+ht-degree: 61%
 
 ---
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Überblick {#overview}
 
-Die Unterstützung für RDBMS-Persistenz in AEM wird mithilfe des Document-Mikrokernels implementiert. Der Document-Mikrokernel bildet die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
+Die Unterstützung der relativen Datenbankpersistenz in AEM wird mithilfe des Document Microkernel implementiert. Der Document Microkernel ist die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
 
-Er umfasst eine Java-API, die auf der Mongo-Java-API basiert. Eine BlobStore-API wird ebenfalls implementiert. BLOB-Objekte werden standardmäßig in der Datenbank gespeichert.
+Er umfasst eine Java-API, die auf der Mongo-Java-API basiert. Eine BlobStore-API wird ebenfalls implementiert. Standardmäßig werden Blobs in der Datenbank gespeichert.
 
-Weitere Informationen zu den Implementierungsdetails finden Sie in der Dokumentation zu [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) und [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html).
+Weitere Informationen zu den Implementierungsdetails finden Sie im [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) und [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) Dokumentation.
 
 >[!NOTE]
 >
@@ -38,11 +42,11 @@ Weitere Informationen zur Unterstützung relationaler Datenbanken in AEM finden 
 
 ## Konfigurationsschritte {#configuration-steps}
 
-Das Repository wird durch Konfigurieren des OSGi-Dienstes `DocumentNodeStoreService` erstellt. Es muss erweitert werden, um neben der MongoDB-Persistenz auch die RDBMS-Persistenz zu unterstützen.
+Das Repository wird durch Konfigurieren des OSGi-Dienstes `DocumentNodeStoreService` erstellt. Es wurde erweitert, um neben MongoDB auch die Persistenz der relationalen Datenbank zu unterstützen.
 
 Um diese nutzen zu können, muss eine Datenquelle mithilfe von AEM konfiguriert werden. Dies geschieht über die Datei `org.apache.sling.datasource.DataSourceFactory.config`. Die JDBC-Treiber für die jeweilige Datenbank müssen separat als OSGi-Bundles in der lokalen Konfiguration bereitgestellt werden.
 
-Weitere Informationen über die Schritte zum Erstellen von OSGi-Bundles für JDBC-Treiber finden Sie in dieser [Dokumentation](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) auf der Apache Sling-Website.
+Anweisungen zum Erstellen von OSGi-Bundles für JDBC-Treiber finden Sie in diesem [Dokumentation](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) auf der Apache Sling-Website.
 
 >[!NOTE]
 >
@@ -50,7 +54,7 @@ Weitere Informationen über die Schritte zum Erstellen von OSGi-Bundles für JDB
 >
 >Wenn dies der Fall ist, kopieren Sie einfach die JAR-Datei in install-path/crx-quickstart/install/9.
 
-Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Konfigurieren der RDB-Persistenz in AEM:
+Nachdem die Bundles eingerichtet sind, führen Sie die folgenden Schritte aus, um AEM mit RDB-Persistenz zu konfigurieren:
 
 1. Stellen Sie sicher, dass der Datenbank-Daemon gestartet ist und eine aktive Datenbank für die Verwendung mit AEM vorhanden ist.
 1. Kopieren Sie die AEM 6.3-JAR-Datei in das Installationsverzeichnis.
@@ -107,7 +111,7 @@ Folgende Konfigurationsoptionen sind verfügbar:
 
 ### URL-Zeichenfolgenformate {#url-string-formats}
 
-Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenfolgenformat in der Datenquellenkonfiguration verwendet. Nachfolgend finden Sie eine Liste der Formate für die derzeit von AEM unterstützten Datenbanken:
+Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenfolgenformat in der Datenquellenkonfiguration verwendet. Nachstehend finden Sie eine Liste der Formate für die Datenbanken, die derzeit AEM unterstützt:
 
 * `jdbc:postgresql:databasename` für PostgreSQL;
 
@@ -119,6 +123,6 @@ Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenf
 
 ## Bekannte Einschränkungen {#known-limitations}
 
-Obwohl die RDBMS-Persistenz die gleichzeitige Verwendung mehrerer AEM-Instanzen mit einer einzigen Datenbank unterstützt, trifft dies nicht auf gleichzeitige Installationen zu.
+Die gleichzeitige Verwendung mehrerer AEM Instanzen mit einer einzigen Datenbank wird zwar durch die RDBMS-Persistenz unterstützt, gleichzeitige Installationen jedoch nicht.
 
 Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer Instanz aus und fügen Sie dann nach Abschluss derselben weitere hinzu.

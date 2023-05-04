@@ -1,7 +1,7 @@
 ---
 title: Best Practices für die Übersetzung
 seo-title: Translation Best Practices
-description: Hier finden Sie Best Practices für die Einrichtung und Ausführung von Übersetzungsprojekten – zusammengestellt von Technik- und Beratungsteams von Adobe.
+description: Finden Sie Best Practices, die von Adobe Engineering- und Beratungsteams zusammengestellt werden, um Sie bei der Erstellung und Ausführung von Übersetzungsprojekten zu unterstützen.
 seo-description: Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 feature: Language Copy
 exl-id: f8f99ad9-2592-45b0-a16c-33b191722e75
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 100%
+source-wordcount: '872'
+ht-degree: 91%
 
 ---
 
 # Best Practices für die Übersetzung{#translation-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Allgemein {#general}
 
@@ -29,7 +33,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
    * Prüfen Sie den aktuellen Status der Lokalisierungsreife Ihrer Organisation. Stellen Sie fest, ob Sie über die für eine globale Expansion notwendigen **Tools**, **Prozesse** und **Ressourcen** verfügen.
    * Beachten Sie **lokal unterschiedliche Rechtsvorschriften** und **regionale sprachliche Präferenzen**. Entwerfen Sie flexible Inhaltsstrukturen und -prozesse, die für eine in ständigem Wandel befindliche globale Geschäftsumgebung geeignet sind.
 
-* Wählen Sie ein **Governance**-Modell, das die globale Geschäftstätigkeit unterstützt, und verwenden Sie AEM-Mechanismen (z. B. MSM und Benutzerberechtigungen), um das gewählte Modell durchzusetzen. Legen Sie beispielsweise fest, ob Inhalte zentral verfasst und an Regionen/Länder verteilt oder von ihnen abgerufen werden. Legen Sie fest, welche Inhalte in Regionen entsperrt und geändert werden können. Legen Sie fest, wer für das Initiieren und Verwalten von Übersetzungen zuständig ist.
+* Wählen Sie ein **Governance**-Modell, das die globale Geschäftstätigkeit unterstützt, und verwenden Sie AEM-Mechanismen (z. B. MSM und Benutzerberechtigungen), um das gewählte Modell durchzusetzen. Ermitteln Sie beispielsweise, ob Inhalte zentral verfasst und in Regionen/Länder &quot;verschoben&quot;oder &quot;abgerufen&quot;werden. Legen Sie fest, welche Inhalte in Regionen entsperrt und geändert werden können. Legen Sie fest, wer für das Initiieren und Verwalten von Übersetzungen zuständig ist.
 * Falls die Ressourcensituation es erlaubt, sollten Übersetzungsaktivitäten von einem zentralen Team verwaltet werden, das Fachwissen hinsichtlich der nötigen Tools, Prozesse und Lieferantenbeziehungen entwickeln kann.
 * **Planen** Sie Ihre globale Struktur und Ihre Prozesse, **erstellen Sie Prototypen** davon und **testen** Sie sie, um sicherzustellen, dass sie Ihr Unternehmen unterstützen und dass Sie über die notwendige Unterstützung der Stakeholder in den Regionen verfügen.
 
@@ -37,7 +41,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 
 * Beginnen Sie den Entwurf der Site-Struktur mit der Untersuchung Ihrer Inhalte und stellen Sie fest, wo und in welcher Sprache Inhalte verfasst werden. Dieser Ort muss die höchste Ebene Ihrer Website darstellen.
 * Bewährt und empfohlen ist eine **sprachbasierte Struktur** mit höchstens drei Ebenen zwischen den Autorenaktivitäten auf höchster Ebene und den landesspezifischen Websites.
-* Verwenden Sie für sprachen- bzw. länderspezifische Websites eine Benennungskonvention, die **W3C-Standards** entspricht.
+* Verwenden Sie eine Sprache/Land-Site-Namenskonvention, die folgt **W3C-Standards**.
 * Legen Sie fest, wie Inhalte nach Regionen und Ländern verteilt werden. Berücksichtigen Sie Länder, in denen dieselbe Sprache gesprochen wird. Es wird empfohlen, Sprachstämme zu erstellen, eine Ebene nicht aktivierter Seiten, auf denen übersetzte Inhalte überprüft und geändert und dann an eine länderspezifische Website mit der jeweiligen Sprache verteilt oder von ihr abgerufen werden können.
 * Zum Erstellen von Sprachstämmen gibt es zwei Ansätze, einen mit Sprachkopien und einen mit MSM-/Live Copies.
 

@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 exl-id: 48809969-5d14-41bb-bc6d-5857e679ceba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '657'
 ht-degree: 13%
 
 ---
 
 # Erstellen der Komponenten {#create-the-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Das Beispiel der Erweiterung von Komponenten verwendet das Kommentarsystem, das eigentlich aus zwei Komponenten besteht
 
@@ -121,7 +125,7 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
    * Nehmen Sie die benutzerdefinierte Kommentarkomponente (~line 75) auf:
 
       * Ersetzen `{{include this resourceType='social/commons/components/hbs/comments/comment'}}`
-      * mit `{{include this resourceType='/apps/custom/components/comments/comment'}}`
+      * Mit `{{include this resourceType='/apps/custom/components/comments/comment'}}`
 
 
 * Kopieren `comment.hbs`
@@ -202,7 +206,7 @@ Eine Möglichkeit ist, dies zu tun
 * Aus globaler Navigation
 
    * Auswählen **[!UICONTROL Tools > Bereitstellung > Replikation]**
-   * Auswählen `Activate Tree`
+   * Klicken Sie auf `Activate Tree`
    * Satz `Start Path`: nach `/apps/custom`
    * Deaktivieren `Only Modified`
    * Auswählen `Activate`button

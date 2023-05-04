@@ -1,7 +1,7 @@
 ---
 title: Verfassen einer Seite für Mobilgeräte
 seo-title: Authoring a Page for Mobile Devices
-description: Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen verschiedenen Emulatoren wechseln, um zu sehen, was der Endbenutzer sieht, wenn auf er die Seite zugreift.
+description: Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen mehreren Emulatoren wechseln, um zu sehen, was der Endbenutzer beim Zugriff auf die Seite sieht.
 seo-description: When authoring a mobile page, the page is displayed in a way that emulates the mobile device. When authoring the page, you can switch between several emulators to see what the end-user sees when accessing the page.
 uuid: ca16979d-6e5f-444d-b959-ae92542039b2
 contentOwner: Chris Bohnert
@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 exl-id: 26324f89-f5e2-40bc-96b4-0f3faa08bdd1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 100%
+source-wordcount: '333'
+ht-degree: 50%
 
 ---
 
 # Verfassen einer Seite für Mobilgeräte{#authoring-a-page-for-mobile-devices}
 
-Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen verschiedenen Emulatoren wechseln, um zu sehen, was der Endbenutzer sieht, wenn auf er die Seite zugreift.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kategorien „Feature“, „Smart“ und „Touch“ eingeteilt. Wenn der Endbenutzer auf eine Seite für Mobilgeräte zugreift, ermittelt AEM das entsprechende Gerät und sendet die zu der entsprechenden Gerätegruppe gehörige Version der Seite.
+Wenn Sie eine Seite für Mobilgeräte bearbeiten, wird die Seite so angezeigt, dass das Mobilgerät emuliert wird. Beim Bearbeiten der Seite können Sie zwischen mehreren Emulatoren wechseln, um zu sehen, was der Endbenutzer beim Zugriff auf die Seite sieht.
+
+Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kategorien „Feature“, „Smart“ und „Touch“ eingeteilt. Wenn der Endbenutzer auf eine mobile Seite zugreift, erkennt AEM das Gerät und sendet die Darstellung, die der Gerätegruppe entspricht.
 
 >[!NOTE]
 >
@@ -31,18 +35,18 @@ Geräte sind entsprechend ihrer Fähigkeit zur Wiedergabe einer Seite in die Kat
 
 Gehen Sie wie folgt vor, um eine Seite für Mobilgeräte zu erstellen:
 
-1. Rufen Sie im Browser die Konsole **Siteadmin** auf.
+1. Navigieren Sie in Ihrem Browser zum **Siteadmin** Konsole.
 1. Öffnen Sie die Seite **Produkte** unterhalb von **Websites** >> **Geometrixx Mobile Demo Site** >> **Englisch**.
 
 1. Wechseln Sie zu einem anderen Emulator. Dazu haben Sie folgende Möglichkeiten:
 
-   * Klicken auf das Gerätesymbol am oberen Seitenrand.
-   * Klicken auf die Schaltfläche **Bearbeiten** im **Sidekick** und Auswahl des Geräts im Dropdown-Menü.
+   * Klicken Sie oben auf der Seite auf das Gerätesymbol.
+   * Klicken Sie auf **Bearbeiten** im **Sidekick** und wählen Sie das Gerät im Dropdown-Menü aus.
 
-1. Ziehen Sie die Komponente **Text &amp; Bild** aus der Registerkarte „Mobil“ des Sidekicks der Seite und legen Sie sie ab.
+1. Ziehen Sie die **Text und Bild** auf der Registerkarte &quot;Mobil&quot;des Sidekicks zur Seite hinzugefügt.
 1. Bearbeiten Sie die Komponente und fügen Sie Text hinzu. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
-Die Seite nimmt die folgende Gestalt an:
+Die Seite sieht wie folgt aus:
 
 ![mobileipademu](assets/mobileipademu.png)
 

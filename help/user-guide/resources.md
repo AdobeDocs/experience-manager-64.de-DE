@@ -6,14 +6,18 @@ seo-description: AEM 6.4 release notes, certifications, and additional resources
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: 77111a12-1d9d-4f2d-a2f2-6b2f66709fce
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 89%
+source-wordcount: '120'
+ht-degree: 69%
 
 ---
 
 # AEM 6.4 – Zusätzliche Ressourcen {#aem-64-additional-resources}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Versionshinweise zu AEM 6.4 {#aem-64-release-notes}
 

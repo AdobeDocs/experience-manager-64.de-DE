@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines neuen Anmeldungsbildschirms
 seo-title: Creating a new login screen
-description: Gehen Sie wie folgt vor, um die Anmeldeseite von LiveCycle-Modulen zu ändern, beispielsweise AEM Forms oder Forms Manager.
+description: Gehen Sie wie folgt vor, um die Anmeldeseite von LiveCycle-Modulen zu ändern, z. B. AEM Forms Workspace oder Forms Manager.
 seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
 uuid: c7643f87-4a08-4c63-b87c-f987dbe18ece
 content-type: reference
@@ -9,16 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 exl-id: caa4f835-c353-49d5-b18c-4d0538c1136f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 99%
+source-wordcount: '504'
+ht-degree: 74%
 
 ---
 
 # Erstellen eines neuen Anmeldungsbildschirms {#creating-a-new-login-screen}
 
-Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den AEM Forms-Anmeldungsbildschirm verwenden. Die Änderungen wirken sich beispielsweise auf den Anmeldungsbildschirm, den Formularmanager und AEM Forms aus.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Sie können den Anmeldebildschirm aller AEM Forms-Module ändern, die den AEM Forms-Anmeldebildschirm verwenden. Beispielsweise wirken sich die Änderungen auf den Anmeldebildschirm von Forms Manager und AEM Forms Workspace aus.
 
 ## Voraussetzung {#prerequisite}
 
@@ -167,7 +171,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
        }
    ```
 
-   ***Standardgebietsschema ändern***
+   ***So ändern Sie das Standardgebietsschema***
 
    ```
    String browserLocale = "en";
@@ -179,7 +183,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
    for(int i=0; i<locales.length; i++)
    ```
 
-## Hinzufügen von neuem Text oder Ändern des vorhandenen Texts {#adding-new-text-or-modifying-existing-text}
+## Hinzufügen von neuem Text oder Ändern von vorhandenem Text {#adding-new-text-or-modifying-existing-text}
 
 1. Kopieren Sie den Ordner `i18n`:
 
@@ -187,7 +191,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
    * nach `/apps/livecycle/core/components/login`
 
 1. Ändern Sie nun den Wert der Eigenschaft `sling:message` des Knotens (unter dem Codeordner des gewünschten Gebietsschemas) für den Sie den Text ändern möchten. Die Übersetzung wird mit dem Schlüssel durchgeführt, der im Wert der Eigenschaft `sling:key` des Knotens aufgeführt ist.
-1. Zum Hinzufügen des neuen Schlüssel-Wert-Paars führen Sie die folgenden Schritte aus. Überprüfen Sie ein Beispiel auf dem darauffolgenden Screenshot.
+1. Um ein neues Schlüssel-Wert-Paar hinzuzufügen, führen Sie die folgenden Aktionen aus. Überprüfen Sie ein Beispiel im folgenden Screenshot.
 
    1. Erstellen Sie unter den Gebietsschemaordnern einen Knoten vom Typ `sling:MessageEntry` oder kopieren Sie einen vorhandenen Knoten und benennen Sie ihn um.
    1. Kopieren `login.jsp` :
@@ -224,7 +228,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 
 1. Löschen Sie die Dateien `login.js` und `jquery-1.8.0.min.js` vom Knoten `/apps/livecycle/core/content/login.`
 1. Ändern Sie die Stile in der CSS-Datei.
-1. Neue Stile hinzufügen:
+1. So fügen Sie neue Stile hinzu:
 
    1. Fügen Sie neue Stile zu `/apps/livecycle/core/content/login/login.css` hinzu
    1. Kopieren `login.jsp`
@@ -262,7 +266,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 ## Fügen Sie neue Bilder hinzu {#add-new-images}
 
 1. Führen Sie die Schritte zum Hinzufügen eines neuen Stils oder Ändern des vorhandenen Stils durch (oben beschrieben).
-1. Fügen Sie neue Bilder in `/apps/livecycle/core/content/login` hinzu. Bild hinzufügen:
+1. Fügen Sie neue Bilder in `/apps/livecycle/core/content/login` hinzu. So fügen Sie ein Bild hinzu:
 
    1. Installieren Sie den WebDAV-Client.
    1. Navigieren Sie mithilfe eines WebDAV-Clients zum Ordner `/apps/livecycle/core/content/login`. Weitere Informationen finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/de/crx/current/how_to/webdav_access.html).

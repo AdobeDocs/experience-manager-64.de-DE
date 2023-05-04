@@ -10,41 +10,45 @@ topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 feature: Correspondence Management
 exl-id: 3cda92c9-5f3e-4704-a52b-55eda3b3fd2a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 100%
+source-wordcount: '253'
+ht-degree: 14%
 
 ---
 
 # Correspondence Management – Zusammenfassung {#correspondence-management-overview}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Einführung {#introduction}
 
-Mit der Correspondence Management lässt sich die Generierung, Zusammenstellung und Verteilung sicherer, personalisierter und interaktiver Schriftstücke zentralisieren und verwalten. Sie erhalten die Möglichkeit, ein Schriftstück in einem von der Generierung bis zur Archivierung gestrafften Prozess zügig aus vorab genehmigten wie aus benutzerdefinierten Inhalten zusammenzustellen. Auf diese Weise erhalten Ihre Kunden die richtige Mitteilung zur richtigen Zeit und auf die richtige Weise: rechtzeitig, präzise, praktisch, sicher und themenbezogen. Mit einem auf leichte Handhabung, Geschwindigkeit und Produktivität ausgelegten Prozess kann Ihr Unternehmen den Wert der Kundeninteraktion in größtmöglichem Umfang nutzen und dabei zugleich Kosten und Risiken minimieren.
+Correspondence Management zentralisiert und verwaltet die Erstellung, Zusammenstellung und Bereitstellung sicherer, personalisierter und interaktiver Schriftstücke. Dadurch können Sie Schriftstücke aus vorab genehmigten und benutzerdefinierten Inhalten in einem optimierten Prozess von der Erstellung bis zur Archivierung schnell zusammenstellen. Dadurch erhalten Ihre Kunden die richtige Kommunikation zur richtigen Zeit und auf die richtige Weise: zeitnah, präzise, bequem, sicher und relevant. Ihr Unternehmen maximiert den Wert von Kundeninteraktionen und minimiert Kosten und Risiken mit einem Prozess, der für Einfachheit, Geschwindigkeit und Produktivität optimiert ist.
 
 ## Vorteile {#benefits}
 
 ### Leistungsfähig und produktiv {#efficient-and-productive}
 
-Dank optimierter Verarbeitung können Sie:
+Die Verarbeitung wird optimiert und ermöglicht Ihnen Folgendes:
 
-* Vorlagen und Inhalte auf einer intuitiv bedienbaren, auf gewerbliche Anwender ausgelegten Benutzeroberfläche bereitstellen und verwalten
+* Bereitstellen und Verwalten von Vorlagen und Inhalten in einer intuitiven Benutzeroberfläche, die für Geschäftsbenutzer konzipiert ist
 * Schriftstücke aus vorab genehmigten wie aus benutzerdefinierten Inhalten zügig zusammenstellen
 
-### Kontrolliert {#managed}
+### Verwaltet {#managed}
 
-Auf der Grundlage qualitativ hochwertiger Kommunikationsmöglichkeiten können Sie:
+Es bietet qualitativ hochwertige Kommunikation und ermöglicht Ihnen Folgendes:
 
-* Unternehmensregeln und genehmigte Inhalte in einem zentralen Inhalts-Repository verwalten
-* AEM-DAM zum Verwalten von Bildern verwenden
-* PDF-Dateien für Archivierungs- und Auditing-Zwecke erstellen
+* Verwalten von Geschäftsregeln und genehmigten Inhalten in einem zentralen Inhalts-Repository
+* Verwenden AEM DAM für die Bildverwaltung
+* Erstellen von Adobe PDF-Dateien für Archivierung und Prüfung
 * unternehmenskonforme Mitteilungen erstellen und dazu dank integrierter Unternehmensregeln vorab genehmigte Inhalte verwenden.
 
 ### Umfangreich {#extensive}
 
-Sie können die Kundenkontakte intensivieren indem Sie:
+Sie verbessert die Kundeninteraktion und ermöglicht Ihnen Folgendes:
 
-* interaktive Technologie hinzufügen und so einen in beide Richtungen offenen Kommunikationskanal ermöglichen; papiergebundene Mitteilungen lassen sich dadurch erheblich reduzieren
-* vertrauliche Informationen dank integrierter, durchgängiger Dokumentsicherheit schützen
-* die Korrespondenz über den vom Kunden bevorzugten Kommunikationskanal abwickeln, sei es per E-Mail, Mobiltelefon oder Fax.
+* Hinzufügen interaktiver Technologien, um einen bidirektionalen Kanal zu ermöglichen, wodurch die Übermittlung von Papier verringert wird
+* Protect-vertrauliche Informationen mit integrierter, durchgängiger Dokumentsicherheit
+* Senden Sie die Korrespondenz über den vom Kunden bevorzugten Kommunikationskanal, sei es per E-Mail, Mobiltelefon oder Fax.

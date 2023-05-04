@@ -12,24 +12,28 @@ discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: 5f43de8d-9d26-456e-b695-3ffa71a4f3bf
-source-git-commit: 3101fab64f6b9fbe2fdeed5fe28d650b84bcdef5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2657'
-ht-degree: 98%
+source-wordcount: '2693'
+ht-degree: 46%
 
 ---
 
 # Oak-Abfragen und Indizierung{#oak-queries-and-indexing}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
->In diesem Artikel wird die Konfiguration von Indizes in AEM 6 beschrieben. Informationen zur besten Vorgehensweise beim Optimieren von Abfragen- und Indizierungsleistung finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+>In diesem Artikel geht es um die Konfiguration von Indizes in AEM 6. Informationen zur besten Vorgehensweise beim Optimieren von Abfragen- und Indizierungsleistung finden Sie unter [Best Practices für Abfragen und Indizierung](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
 ## Einführung {#introduction}
 
-Anders als bei Jackrabbit 2 wird Inhalt in Oak nicht standardmäßig indiziert. Indizes müssen daher bei Bedarf vom Benutzer erstellt werden, ähnlich wie bei herkömmlichen relationalen Datenbanken. Falls für eine spezifische Abfrage kein Index vorhanden ist, werden möglicherweise viele Knoten durchsucht. Die Abfrage kann zwar erfolgreich sein, wird jedoch sehr langsam verarbeitet.
+Im Gegensatz zu Jackrabbit 2 indiziert Oak nicht standardmäßig Inhalte. Indizes müssen daher bei Bedarf vom Benutzer erstellt werden, ähnlich wie bei herkömmlichen relationalen Datenbanken. Wenn für eine bestimmte Abfrage kein Index vorhanden ist, werden möglicherweise viele Knoten durchlaufen. Die Abfrage funktioniert möglicherweise noch, ist aber wahrscheinlich sehr langsam.
 
-Falls Oak eine nicht indizierte Abfrage findet, wird eine Protokollmeldung der Stufe WARNUNG ausgegeben:
+Wenn Oak auf eine Abfrage ohne Index stößt, wird eine Protokollmeldung auf WARN-Ebene ausgegeben:
 
 ```xml
 *WARN* Traversed 1000 nodes with filter Filter(query=select ...) consider creating an index or changing the query
@@ -37,52 +41,52 @@ Falls Oak eine nicht indizierte Abfrage findet, wird eine Protokollmeldung der S
 
 ## Unterstützte Abfragesprachen {#supported-query-languages}
 
-Die Abfrage-Engine von Oak unterstützt folgende Sprachen:
+Die Oak-Abfrage-Engine unterstützt die folgenden Sprachen:
 
 * XPath (empfohlen)
 * SQL-2
-* SQL (veraltet)
+* SQL (nicht mehr unterstützt)
 * JQOM
 
-## Indexer-Typen und Kostenberechnung {#indexer-types-and-cost-calculation}
+## Indextypen und Kostenberechnung {#indexer-types-and-cost-calculation}
 
-Beim auf Apache Oak basierenden Backend können mehrere Indexer als Plug-in für das Repository verwendet werden.
+Das auf Apache Oak basierende Backend ermöglicht die Einbindung verschiedener Indexer in das Repository.
 
-Ein Indexer ist der **Eigenschaften-Index**, dessen Indexdefinition im Repository gespeichert wird.
+Ein Indexer ist der **Eigenschaftsindex**, für die die Indexdefinition im Repository selbst gespeichert wird.
 
 Implementierungen für **Apache Lucene** und **Solr** sind ebenfalls standardmäßig verfügbar und unterstützen die Volltextindizierung.
 
-Der **Traversalindex** wird verwendet, wenn kein anderer Indexer verfügbar ist. Dies bedeutet, dass der Inhalt nicht indiziert ist und Inhaltsknoten durchsucht werden, um Übereinstimmungen mit der Abfrage zu finden.
+Der **Traversalindex** wird verwendet, wenn kein anderer Indexer verfügbar ist. Das bedeutet, dass der Inhalt nicht indiziert ist und Inhaltsknoten durchsucht werden, um Übereinstimmungen mit der Abfrage zu finden.
 
-Wenn mehrere Indexer für eine Abfrage verfügbar sind, berechnet jeder verfügbare Indexer die voraussichtlichen Kosten für das Ausführen der Abfrage. Oak wählt dann den Indexer mit den niedrigsten geschätzten Kosten aus.
+Wenn für eine Abfrage mehrere Indexer verfügbar sind, schätzt jeder verfügbare Indexer die Kosten für die Ausführung der Abfrage. Oak wählt dann den Indexer mit den niedrigsten geschätzten Kosten aus.
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-Das obige Diagramm ist eine Übersicht über den Abfragevorgang von Apache Oak.
+Das obige Diagramm stellt eine allgemeine Darstellung des Abfrageausführungsmechanismus von Apache Oak dar.
 
-Zuerst wird die Abfrage in eine abstrakte Syntaxstruktur analysiert. Dann wird die Abfrage überprüft und in SQL-2, die native Sprache für Oak-Abfragen, umgewandelt.
+Zunächst wird die Abfrage in eine abstrakte Syntaxstruktur geparst. Anschließend wird die Abfrage überprüft und in SQL-2 umgewandelt, die für Oak-Abfragen die Muttersprache ist.
 
-Im nächsten Schritt werden von jedem Index die voraussichtlichen Kosten für die Abfrage berechnet. Anschließend werden die Ergebnisse des billigsten Index abgerufen. Diese Ergebnisse werden gefiltert, um sicherzustellen, dass der aktuelle Benutzer Schreibzugriff auf diese hat und sie mit der abgeschlossenen Abfrage übereinstimmen.
+Anschließend wird jeder Index zur Schätzung der Kosten für die Abfrage herangezogen. Nach Abschluss werden die Ergebnisse aus dem billigsten Index abgerufen. Schließlich werden die Ergebnisse gefiltert, um sicherzustellen, dass der aktuelle Benutzer Lesezugriff auf das Ergebnis hat und dass das Ergebnis mit der vollständigen Abfrage übereinstimmt.
 
 ## Konfigurieren der Indizes {#configuring-the-indexes}
 
 >[!NOTE]
 >
->Hinweis: Bei großen Repositorys ist das Erstellen eines Index ein zeitaufwändiger Vorgang. Dies gilt sowohl für das erstmalige Erstellen des Index als auch für eine Neuindizierung (Neuerstellung des Index nach einer Änderung der Definition). Weitere Informationen finden Sie im Beitrag zur [Fehlerbehebung in Oak-Indizes](/help/sites-deploying/troubleshooting-oak-indexes.md) in dem Abschnitt, der [Maßnahmen gegen eine langsame Neuindizierung](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing) beschreibt.
+>Hinweis: Bei großen Repositorys ist das Erstellen eines Index ein zeitaufwändiger Vorgang. Dies gilt sowohl für die anfängliche Erstellung eines Index als auch für die Neuindizierung (Neuerstellung eines Index nach Änderung der Definition). Weitere Informationen finden Sie im Beitrag zur [Fehlerbehebung in Oak-Indizes](/help/sites-deploying/troubleshooting-oak-indexes.md) in dem Abschnitt, der [Maßnahmen gegen eine langsame Neuindizierung](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing) beschreibt.
 
-Wenn sehr große Repositorys neu indiziert werden müssen, insbesondere wenn MongoDB verwendet wird und eine Volltextindizierung erforderlich ist, empfiehlt es sich gegebenenfalls, eine Textvorextraktion durchzuführen und den Ausgangsindex mit Oak-run zu erstellen und anschließend eine Neuindizierung durchzuführen. 
+Wenn eine Neuindizierung in sehr großen Repositorys erforderlich ist, insbesondere bei der Verwendung von MongoDB und für Volltext-Indizes, sollten Sie die Textvorextraktion erwägen und oak-run verwenden, um den anfänglichen Index zu erstellen und die Neuindizierung durchzuführen.
 
-Indizes sind im Repository als Knoten unter dem Knoten **oak:index** konfiguriert.
+Indizes werden als Knoten im Repository unter dem **oak:index** Knoten.
 
-Der Typ des Indexknotens muss **oak:QueryIndexDefinition lauten.** Für jeden Indexer sind diverse Konfigurationsoptionen als Knoteneigenschaften verfügbar. Weitere Informationen finden Sie in den Konfigurationsdetails für jeden Indexer-Typ unten.
+Der Typ des Indexknotens muss **oak:QueryIndexDefinition.** Für jeden Indexer sind mehrere Konfigurationsoptionen als Knoteneigenschaften verfügbar. Weitere Informationen finden Sie unten in den Konfigurationsdetails für jeden Indextyp.
 
-### Der Eigenschaften-Index {#the-property-index}
+### Der Eigenschaftsindex {#the-property-index}
 
-Der Eigenschaften-Index ist für Abfragen mit Eigenschaftenbeschränkungen und ohne Volltext geeignet. Der Index kann wie folgt konfiguriert werden:
+Der Eigenschaftsindex ist im Allgemeinen für Abfragen nützlich, die Eigenschaftseinschränkungen aufweisen, aber keine Volltext-Elemente sind. Der Index kann wie folgt konfiguriert werden:
 
 1. Öffnen Sie CRXDE, indem Sie zu `http://localhost:4502/crx/de/index.jsp` gehen.
-1. Erstellen Sie einen neuen Knoten unter **oak:index**.
-1. Nennen Sie den Knoten **PropertyIndex** und legen Sie als Knotentyp **oak:QueryIndexDefinition** fest.
+1. Erstellen Sie einen neuen Knoten unter **oak:index**
+1. Benennen Sie den Knoten . **PropertyIndex** und legen Sie den Knotentyp auf **oak:QueryIndexDefinition**
 1. Legen Sie die folgenden Eigenschaften für den neuen Knoten fest:
 
    * **type:** `property` (vom Typ Zeichenfolge)
@@ -92,35 +96,35 @@ Der Eigenschaften-Index ist für Abfragen mit Eigenschaftenbeschränkungen und o
 
 1. Speichern Sie die Änderungen.
 
-Beim Eigenschaften-Index sind folgende Konfigurationsoptionen verfügbar:
+Der Eigenschaftsindex verfügt über die folgenden Konfigurationsoptionen:
 
 * Die Eigenschaft **type** gibt den Indextyp an und muss in diesem Fall **property** lauten.
 
-* Die Eigenschaft **propertyNames** gibt eine Liste der Eigenschaften an, die im Index gespeichert werden. Falls diese Eigenschaft fehlt, wird der Knotenname als Referenzwert des Eigenschaftennamen verwendet. In diesem Beispiel dient die Eigenschaft **jcr:uuid** dazu, die UUID (Universally Unique Identifier) des verknüpften Knotens anzuzeigen.
+* Die **propertyNames** -Eigenschaft gibt die Liste der Eigenschaften an, die im Index gespeichert werden. Wenn dies fehlt, wird der Knotenname als Referenzwert für den Eigenschaftsnamen verwendet. In diesem Beispiel wird die **jcr:uuid** -Eigenschaft, deren Auftrag darin besteht, die eindeutige Kennung (UUID) ihres Knotens anzuzeigen, wird zum Index hinzugefügt.
 
 * Falls für die Kennzeichnung **unique** der Wert **true** festgelegt ist, wird dadurch eine Eindeutigkeitsbeschränkung auf den Eigenschaften-Index angewendet.
 
 * Mit der Eigenschaft **declaringNodeTypes** können Sie einen bestimmten Knotentyp angeben, der für den Index gilt.
-* Falls für die Kennzeichnung **reindex** der Wert **true** festgelegt ist, wird eine vollständige Neuindizierung des Inhalts ausgelöst.
+* Die **reindex** Markierung, die, wenn **true**, wird eine vollständige Neuindizierung des Inhalts Trigger.
 
-### Der geordnete Index {#the-ordered-index}
+### Der sortierte Index {#the-ordered-index}
 
-Der geordnete Index ist eine Erweiterung des Eigenschaften-Index. Er ist allerdings veraltet. Indizes dieses Typs müssen durch den [Lucene-Eigenschaften-Index](#the-lucene-property-index) ersetzt werden.
+Der Index &quot;Geordnet&quot;ist eine Erweiterung des Eigenschaftenindex. Sie wird jedoch nicht mehr unterstützt. Indizes dieses Typs müssen durch den [Lucene-Eigenschaften-Index](#the-lucene-property-index) ersetzt werden.
 
 ### Der Lucene-Volltext-Index {#the-lucene-full-text-index}
 
 AEM 6 beinhaltet einen auf Apache Lucene basierten Indexer.
 
-Falls ein Volltext-Index konfiguriert ist, wird dieser für alle Abfragen mit Volltext-Bedingung verwendet, unabhängig davon, ob andere indizierte Bedingungen gelten oder ob eine Pfadbeschränkung besteht.
+Wenn ein Volltext-Index konfiguriert ist, verwenden alle Abfragen mit einer Volltext-Bedingung den Volltext-Index, unabhängig davon, ob andere Bedingungen indiziert sind oder ob eine Pfadbeschränkung vorliegt.
 
-Falls kein Volltext-Index konfiguriert ist, werden Abfragen mit Volltext-Bedingungen nicht wie erwartet verarbeitet.
+Wenn kein Volltext-Index konfiguriert ist, funktionieren Abfragen mit Volltext-Bedingungen nicht erwartungsgemäß.
 
-Da der Index über einen asynchronen Hintergrund-Thread aktualisiert wird, sind bestimmte Volltext-Suchen für einen kurzen Zeitraum nicht verfügbar, bis die Prozesse im Hintergrund beendet sind.
+Da der Index über einen asynchronen Hintergrund-Thread aktualisiert wird, sind einige Volltextsuchen für einen kurzen Zeitraum nicht verfügbar, bis die Hintergrundprozesse abgeschlossen sind.
 
 Sie können einen Lucene-Volltext-Index wie folgt konfigurieren:
 
 1. Öffnen Sie CRXDE und erstellen Sie einen neuen Knoten unter **oak:index**.
-1. Nennen Sie den Knoten **LuceneIndex** und legen Sie als Knotentyp **oak:QueryIndexDefinition** fest.
+1. Benennen Sie den Knoten . **LuceneIndex** und legen Sie den Knotentyp auf **oak:QueryIndexDefinition**
 1. Fügen Sie dem Knoten folgende Eigenschaften hinzu:
 
    * **type:** `lucene` (vom Typ Zeichenfolge)
@@ -128,19 +132,19 @@ Sie können einen Lucene-Volltext-Index wie folgt konfigurieren:
 
 1. Speichern Sie die Änderungen.
 
-Für den Lucene-Index sind folgende Konfigurationsoptionen verfügbar:
+Der Lucene-Index verfügt über die folgenden Konfigurationsoptionen:
 
-* Für die Eigenschaft **type**, die den Indextyp angibt, muss **lucene** festgelegt sein.
-* Für die Eigenschaft **async** muss **async** festgelegt sein. Dadurch wird die Index-Aktualisierung an einen Hintergrund-Thread gesendet.
-* Die Eigenschaft **includePropertyTypes**, die angibt, welche Untermenge an Eigenschaftentypen im Index enthalten sind.
+* Die **type** -Eigenschaft, die den Indextyp angibt, muss auf **Lucene**
+* Die **asynchron** -Eigenschaft, die auf **asynchron**. Dadurch wird der Index-Aktualisierungsprozess an einen Hintergrund-Thread gesendet.
+* Die **includePropertyTypes** -Eigenschaft, die definiert, welche Untergruppe von Eigenschaftstypen in den Index aufgenommen wird.
 * Die Eigenschaft **excludePropertyNames**, die eine Blockierungsliste mit Eigenschaftennamen definiert, d. h. Eigenschaften, die vom Index ausgeschlossen sein sollen.
-* Die Kennzeichnung **reindex**, die eine vollständige Neuindizierung von Inhalt auslöst, wenn für sie **true** festgelegt ist.
+* Die **reindex** Markierung, die bei Festlegung auf **true**, Trigger eine vollständige Neuindizierung des Inhalts.
 
-### Der Lucene-Eigenschaften-Index {#the-lucene-property-index}
+### Der Lucene-Eigenschaftsindex {#the-lucene-property-index}
 
-Ab **Oak 1.0.8** kann Lucene zum Erstellen von Indizes mit Eigenschaftenbeschränkungen ohne Volltext verwendet werden.
+Seit **Oak 1.0.8** kann Lucene zum Erstellen von Indizes verwendet werden, die Eigenschaftenbeschränkungen beinhalten, die nicht Volltext sind.
 
-Um einen Lucene-Eigenschaften-Index zu erhalten, muss für die Eigenschaft **fulltextEnabled** immer „false“ festgelegt sein.
+Um einen Lucene-Eigenschaftsindex zu erhalten, muss die **fulltextEnabled** -Eigenschaft muss immer auf &quot;false&quot;gesetzt sein.
 
 Sehen wir uns folgende Beispielabfrage an: 
 
@@ -183,11 +187,11 @@ Sobald der Knoten erstellt wurde, fügen Sie die folgenden Eigenschaften hinzu:
 >
 >Weitere Informationen zum Lucene-Eigenschaften-Index finden Sie auf der Dokumentationsseite zu [Apache Jackrabbit Oak Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-### Lucene-Analyzer {#lucene-analyzers}
+### Lucene Analyzer {#lucene-analyzers}
 
-Ab Version 1.2.0 unterstützt Oak Lucene-Analyzer.
+Seit Version 1.2.0 unterstützt Oak Lucene-Analyzer.
 
-Analyzer werden zum Indizieren von Dokumenten und für Abfragen verwendet. Ein Analyzer überprüft den Text von Feldern und generiert einen Token-Stream. Lucene-Analyzer beinhalten eine Reihe von Tokenizern und Filterklassen.
+Analyzer werden sowohl bei der Indizierung eines Dokuments als auch bei der Abfrage verwendet. Ein Analyzer überprüft den Text von Feldern und generiert einen Token-Stream. Lucene-Analyzer bestehen aus einer Reihe von Token- und Filterklassen.
 
 Die Analyzer können über den Knoten `analyzers` (vom Typ `nt:unstructured`) in der Definition `oak:index` konfiguriert werden.
 
@@ -197,11 +201,11 @@ Der Standard-Analyzer für einen Index wird im untergeordneten Knoten `default` 
 
 >[!NOTE]
 >
->Eine Liste der verfügbaren Analyzer finden Sie in der API-Dokumentation der Lucene-Version, die Sie verwenden.
+>Eine Liste der verfügbaren Analyzer finden Sie in der API-Dokumentation der verwendeten Lucene-Version.
 
-#### Direktes Festlegen der Analyzer-Klasse {#specifying-the-analyzer-class-directly}
+#### Direktes Angeben der Analyzer-Klasse {#specifying-the-analyzer-class-directly}
 
-Falls Sie einen vorkonfigurierten Analyzer verwenden möchten, können Sie diesen wie folgt konfigurieren:
+Wenn Sie einen vordefinierten Analyzer verwenden möchten, können Sie ihn wie folgt konfigurieren:
 
 1. Suchen Sie im Knoten `oak:index` nach dem Index, mit dem Sie den Analyzer verwenden möchten.
 
@@ -270,7 +274,7 @@ Sehen Sie sich diese Knotenstruktur als Beispiel an:
 
 
 
-Der Name der Filter „charFilters“ und „tokenizers“ wird durch Entfernen der Factory-Suffixe gebildet. Das heißt:
+Der Name der Filter, charFilters und tokenizers wird gebildet, indem die Factory-Suffixe entfernt werden. So:
 
 * `org.apache.lucene.analysis.standard.StandardTokenizerFactory` wird zu `standard`
 
@@ -284,14 +288,14 @@ In Fällen wie beim Laden von Stoppwörtern, bei denen Inhalt aus externem Datei
 
 ### Der Solr-Index {#the-solr-index}
 
-Der Solr-Index dient der Volltextsuche. Er kann jedoch auch für die Index-Suche nach Pfad, Eigenschaften- und Primärtyp-Beschränkungen verwendet werden. Der Solr-Index kann also in Oak für praktisch jeden Typ von JCR-Abfrage eingesetzt werden.
+Der Solr-Index dient hauptsächlich der Volltextsuche, kann aber auch zur Indexsuche nach Pfad, Eigenschaftsbeschränkungen und primären Typbeschränkungen verwendet werden. Das bedeutet, dass der Solr-Index in Oak für jede Art von JCR-Abfrage verwendet werden kann.
 
-Die Integration in AEM erfolgt auf Repository-Ebene, damit Solr als möglicher Index in Oak, der neuen mit AEM ausgelieferten Repository-Implementierung, verwendet werden kann.
+Die Integration in AEM erfolgt auf Repository-Ebene, sodass Solr einer der möglichen Indizes ist, die in Oak verwendet werden können, der neuen, mit AEM gelieferten Repository-Implementierung.
 
-AEM kann auch mit einer remoten Solr-Server-Instanz konfiguriert werden:
+AEM kann auch für die Verwendung mit einer Remote-Solr-Serverinstanz konfiguriert werden:
 
-1. Laden Sie die neueste Version von Solr herunter und extrahieren Sie diese. Weitere Informationen zur Vorgehensweise finden Sie in der Dokumentation zur [Apache Solr-Installation](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
-1. Erstellen Sie zwei Solr-Shards. Erstellen Sie dazu Ordner für jedes Shard in dem Ordner, in den Solr entpackt wurde:
+1. Laden Sie die neueste Version von Solr herunter und extrahieren Sie sie. Weitere Informationen hierzu finden Sie im [Dokumentation zur Installation von Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. Erstellen Sie zwei Solr-Shards. Erstellen Sie dazu Ordner für jede Datei im Ordner, in den Solr hochgeladen wurde:
 
    * Erstellen Sie für das erste Shard folgenden Ordner:
 
@@ -340,8 +344,8 @@ AEM kann auch mit einer remoten Solr-Server-Instanz konfiguriert werden:
 
 1. Wählen Sie **Remote Solr** in der Dropdown-Liste unter dem Serveranbieter **Oak Solr** aus.
 
-1. Wechseln Sie zu CRXDE und melden Sie sich mit „Admin“ an.
-1. Erstellen Sie einen neuen Knoten mit dem Namen **solrIndex** unter **oak:index** und legen Sie folgende Eigenschaften fest:
+1. Gehen Sie zu CRXDE und melden Sie sich als Administrator an.
+1. Erstellen Sie einen neuen Knoten mit dem Namen **solrIndex** under **oak:index** und legen Sie die folgenden Eigenschaften fest:
 
    * **type:**solr (vom Typ &quot;String&quot;)
    * **async:**async (vom Typ String)
@@ -351,7 +355,7 @@ AEM kann auch mit einer remoten Solr-Server-Instanz konfiguriert werden:
 
 #### Empfohlene Konfiguration für Solr {#recommended-configuration-for-solr}
 
-Unten sehen Sie ein Beispiel für eine Grundkonfiguration, die mit allen drei Solr-Bereitstellungen verwendet werden kann, die in diesem Artikel beschrieben sind. Diese Konfiguration basiert auf den dedizierten Eigenschaften-Indizes, die bereits in AEM vorhanden sind, und sollte nicht mit anderen Anwendungen verwendet werden.
+Nachfolgend finden Sie ein Beispiel für eine Basiskonfiguration, die mit allen drei Solr-Bereitstellungen verwendet werden kann, die in diesem Artikel beschrieben werden. Es werden die dedizierten Eigenschaftenindizes erfasst, die bereits in AEM vorhanden sind und nicht mit anderen Anwendungen verwendet werden sollten.
 
 Für die richtige Verwendung müssen Sie die Inhalte im Archiv direkt im Solr-Basisverzeichnis speichern. Bei Bereitstellungen mit mehreren Knoten muss der Inhalt direkt in den Stammorder der einzelnen Knoten gespeichert werden.
 
@@ -364,47 +368,47 @@ Empfohlene Solr-Konfigurationsdateien
 In AEM 6.1 sind auch zwei Indizierungs-Tools aus AEM 6.0 integriert, die Teil der Adobe Consulting Services Commons-Tools sind:
 
 1. **Explain Query**: ein Tool, das Admins das Verständnis erleichtert, wie Abfragen ausgeführt werden.
-1. **Oak Index Manager**: eine Web-Benutzeroberfläche zur Pflege vorhandener Indizes.
+1. **Oak Index Manager**, eine Webbenutzeroberfläche zur Pflege vorhandener Indizes.
 
-Sie können diese Tools aufrufen, indem Sie vom AEM-Begrüßungsbildschirm zu **Tools > Vorgänge > Dashboard > Diagnose** navigieren.
+Sie können sie jetzt erreichen, indem Sie **Tools - Vorgänge - Dashboard - Diagnose** über den AEM Willkommensbildschirm aus.
 
-Weitere Informationen zur Verwendung der Tools finden Sie in der Dokumentation zum [Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
+Weitere Informationen zu ihrer Verwendung finden Sie unter [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
 
-#### Erstellen von Eigenschaften-Indizes über OSGi {#creating-property-indexes-via-osgi}
+#### Erstellen von Eigenschaftenindizes über OSGi {#creating-property-indexes-via-osgi}
 
-Das ACS Commons-Paket enthält auch OSGi-Konfigurationen, die zum Erstellen von Eigenschaften-Indizes verwendet werden können.
+Das ACS Commons-Paket stellt auch OSGi-Konfigurationen bereit, die zum Erstellen von Eigenschaftenindizes verwendet werden können.
 
-Sie können über die Web-Konsole darauf zugreifen, indem Sie nach „**Ensure Oak Property Index**“ suchen.
+Sie können über die Web-Konsole darauf zugreifen, indem Sie nach **Oak-Eigenschaftenindex sicherstellen**&quot;.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
 ### Fehlerbehebung bei Indizierungsproblemen {#troubleshooting-indexing-issues}
 
-Unter Umständen dauert die Ausführung von Abfragen sehr lange und die allgemeine Systemreaktion ist langsam.
+Situationen können auftreten, in denen die Ausführung von Abfragen lange dauert und die allgemeine Systemreaktionszeit langsam ist.
 
 In diesem Abschnitt werden einige Empfehlungen gegeben, wie Sie vorgehen sollten, um die Ursache dieser Probleme zu finden und diese zu beheben.
 
-#### Vorbereiten von Debugging-Informationen für die Analyse {#preparing-debugging-info-for-analysis}
+#### Vorbereiten von Debugging-Informationen für Analysen {#preparing-debugging-info-for-analysis}
 
-Am einfachsten erhalten Sie die erforderlichen Informationen zu der ausgeführten Abfrage anhand des [Explain Query-Tools](/help/sites-administering/operations-dashboard.md#explain-query). Mit diesem Tool können Sie genaue Informationen zum Debuggen einer langsamen Abfrage erfassen, ohne Protokolldaten einsehen zu müssen. Dies ist hilfreich, wenn Sie wissen, welche Abfrage debuggt werden soll.
+Die einfachste Möglichkeit, die erforderlichen Informationen für die ausgeführte Abfrage zu erhalten, ist über die [Tool &quot;Abfrage erläutern&quot;](/help/sites-administering/operations-dashboard.md#explain-query). Auf diese Weise können Sie die genauen Informationen erfassen, die zum Debuggen einer langsamen Abfrage erforderlich sind, ohne die Informationen auf Protokollebene einsehen zu müssen. Dies ist hilfreich, wenn Sie wissen, welche Abfrage debuggt werden soll.
 
-Falls dies aus irgendeinem Grund nicht möglich ist, können Sie die Indizierungsprotokolle in einer Datei zusammenfassen und diese zum Beheben des spezifischen Problems verwenden.
+Wenn dies aus irgendeinem Grund nicht möglich ist, können Sie die Indizierungsprotokolle in einer einzigen Datei sammeln und sie zur Fehlerbehebung für Ihr bestimmtes Problem verwenden.
 
 #### Aktivieren der Protokollierung {#enable-logging}
 
-Um die Protokollierung zu aktivieren, müssen Sie Protokolle auf **DEBUG**-Ebene für die Kategorien aktivieren, die für Oak-Indizierung und -Abfragen gelten. Diese Kategorien sind: 
+Um die Protokollierung zu aktivieren, müssen Sie **DEBUG** Ebenenprotokolle für die Kategorien, die sich auf Oak-Indizierung und -Abfragen beziehen. Diese Kategorien sind: 
 
 * org.apache.jackrabbit.oak.plugins.index
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-Die Kategorie **com.day.cq.search** gilt nur, wenn Sie das von AEM bereitgestellte QueryBuilder-Dienstprogramm verwenden.
+Die **com.day.cq.search** -Kategorie ist nur anwendbar, wenn Sie das AEM bereitgestellte QueryBuilder-Dienstprogramm verwenden.
 
 >[!NOTE]
 >
->Es ist wichtig, für Protokolle nur für die Dauer der problematischen Abfrage, die Sie debuggen, DEBUG festzulegen, da andernfalls über einen längeren Zeitraum sehr viele Ereignisse in den Protokollen erzeugt werden. Daher sollten Sie, sobald Sie die erforderlichen Protokolle erfasst haben, für die Protokollierung der oben genannten Kategorien wieder INFO festlegen.
+>Es ist wichtig, für Protokolle nur für die Dauer der problematischen Abfrage, die Sie debuggen, DEBUG festzulegen, da andernfalls über einen längeren Zeitraum sehr viele Ereignisse in den Protokollen erzeugt werden. Daher wechseln Sie nach der Erfassung der erforderlichen Protokolle für die oben genannten Kategorien zurück zur Protokollierung auf INFO-Ebene.
 
-Sie können die Protokollierung wie folgt aktivieren:
+Sie können die Protokollierung aktivieren, indem Sie folgende Schritte ausführen:
 
 1. Lassen Sie Ihren Browser auf `https://serveraddress:port/system/console/slinglog` verweisen.
 1. Klicken Sie auf die Schaltfläche **Neue Protokollierung hinzufügen** unten in der Konsole.
@@ -421,25 +425,25 @@ Sie können die Protokollierung wie folgt aktivieren:
 
 #### Indexkonfiguration {#index-configuration}
 
-Ausschlaggebend für die Bewertung einer Abfrage ist die Indexkonfiguration. Es ist wichtig, die Indexkonfiguration abzurufen, um diese zu analysieren oder an den Support zu senden. Sie können die Konfiguration als Inhaltspaket oder als JSON-Ausgabe abrufen.
+Die Art und Weise, wie die Abfrage ausgewertet wird, wird durch die Indexkonfiguration stark beeinflusst. Es ist wichtig, die Indexkonfiguration abzurufen, um analysiert oder an die Unterstützung gesendet zu werden. Sie können die Konfiguration entweder als Inhaltspaket abrufen oder eine JSON-Ausgabedarstellung abrufen.
 
 Da die Indexkonfiguration in den meisten Fällen unter dem Knoten `/oak:index` in CRXDE gespeichert ist, können Sie die JSON-Version unter folgender Adresse abrufen:
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
-Falls sich die Indexkonfiguration an einem anderen Speicherort befindet, ändern Sie den Pfad entsprechend.
+Wenn der Index an einem anderen Speicherort konfiguriert ist, ändern Sie den Pfad entsprechend.
 
 #### MBean-Ausgabe {#mbean-output}
 
-In einigen Fällen ist es hilfreich, die Ausgabe Index-spezifischer MBeans für das Debuggen bereitzustellen. Gehen Sie dazu wie folgt vor:
+In einigen Fällen ist es hilfreich, die Ausgabe von index-bezogenen MBeans zum Debugging bereitzustellen. Gehen Sie dazu wie folgt vor:
 
 1. Wechseln Sie zur JMX-Konsole unter:
    `https://serveraddress:port/system/console/jmx`
 
-1. Suchen Sie nach folgenden MBeans:
+1. Suchen Sie nach den folgenden MBeans:
 
-   * Lucene Index statistics
-   * CopyOnRead support statistics
+   * Lucene-Indexstatistiken
+   * CopyOnRead-Unterstützungsstatistiken
    * Oak Query Statistics
    * IndexStats
 
@@ -456,7 +460,7 @@ Sie können die konsolidierte JMX-Ausgabe auch über `https://serveraddress:port
 
 #### Weitere Details {#other-details}
 
-Sie können zusätzliche Informationen sammeln, die die Problembehebung erleichtern können, zum Beispiel:
+Sie können zusätzliche Details sammeln, um die Problembehebung zu unterstützen, z. B.:
 
 1. Die Oak-Version, auf der Ihre Instanz ausgeführt wird. Öffnen Sie dazu CRXDE. Die Version wird unten rechts auf der Begrüßungsseite anzeigt. Sie können die Version auch im `org.apache.jackrabbit.oak-core`-Bundle überprüfen.
 1. Die Ausgabe des QueryBuilder-Debugger zu der problematischen Abfrage. Der Debugger kann unter `https://serveraddress:port/libs/cq/search/content/querydebug.html` aufgerufen werden.

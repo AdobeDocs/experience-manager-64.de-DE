@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 59%
 
 ---
 
 # Verwenden der SendToPrinter-API {#using-the-sendtoprinter-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -34,31 +38,31 @@ Sie können in AEM Forms den sendToPrinter-Dienst verwenden, um ein Dokument an 
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**: Der Output-Service unterstützt das CIFS-Druckprotokoll (Common Internet File System).
 
-## Verwenden des SendToPrinter-Service {#using-sendtoprinter-service}
+## Verwenden des SendToPrinter-Dienstes {#using-sendtoprinter-service}
 
-In nachstehender Tabelle wird Folgendes aufgelistet:
+In der folgenden Tabelle ist aufgeführt:
 
-* Informationen zu printerName oder printServer, die für verschiedene Protokolle verwendet werden.
+* Informationen zu printerName oder printServer, die für verschiedene Protokolle verwendet werden sollen.
 * Wert oder Ausnahme, die ein Drucker für verschiedene Kombinationen von Drucker-Server-URI und Name des Druckers zurückgibt
 
-| Protokoll (Zugriffsmechanismus) | Drucker-Server-URI (PrinterSpec.printServer) | Name des Druckers (PrinterSpec.printerName) | Ergebnis |
+| Protokoll (Zugriffsmechanismus) | Druckserver-URI (PrinterSpec.printServer) | Name des Druckers (PrinterSpec.printerName) | Ergebnis |
 |--- |--- |--- |--- |
 | SharedPrinter | Alle | Leer | Ausnahme: Das erforderliche Argument sPrinterName darf nicht leer sein. |
-| SharedPrinter | Alle | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
-| SharedPrinter | Alle | Valid | Druckauftrag wird erfolgreich ausgeführt. |
+| SharedPrinter | Alle | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden werden kann. |
+| SharedPrinter | Alle | Valid | Erfolgreicher Druckauftrag. |
 | LPD | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 | LPD | Ungültig | Leer | Ausnahmefehler, der besagt, dass das erforderliche sPrinterName-Argument nicht leer sein darf. |
 | LPD | Ungültig | Nicht leer | Ausnahmefehler, der besagt, dass sPrintServerUri nicht gefunden wurde. |
-| LPD | Gültig | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
-| LPD | Gültig | Gültig | Druckauftrag wird erfolgreich ausgeführt. |
+| LPD | Valid | Ungültig | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden werden kann. |
+| LPD | Valid | Valid | Ein erfolgreicher Druckauftrag. |
 | CUPS | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
-| CUPS | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
-| CUPS | Gültig | Alle | Druckauftrag wird erfolgreich ausgeführt. |
+| CUPS | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden werden kann. |
+| CUPS | Valid | Alle | Erfolgreicher Druckauftrag. |
 | DirectIP | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
-| DirectIP | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden wurde. |
-| DirectIP | Gültig | Alle | Druckauftrag wird erfolgreich ausgeführt. |
-| CIFS | Gültig | Leer | Druckauftrag wird erfolgreich ausgeführt. |
-| CIFS | Ungültig | Alle | Beim Drucken einen unbekannten Fehler bei Verwendung von CIFS aus. |
+| DirectIP | Ungültig | Alle | Ausnahmefehler, der besagt, dass der Drucker nicht gefunden werden kann. |
+| DirectIP | Valid | Alle | Erfolgreicher Druckauftrag. |
+| CIFS | Valid | Leer | Erfolgreicher Druckauftrag. |
+| CIFS | Ungültig | Alle | unbekannter Fehler beim Drucken mit CIFS. |
 | CIFS | Leer | Alle | ein Ausnahmefehler, der besagt, dass das erforderliche sPrintServerUri-Argument nicht leer sein darf. |
 
 ## Authentifizierungsunterstützung {#authentication-support}

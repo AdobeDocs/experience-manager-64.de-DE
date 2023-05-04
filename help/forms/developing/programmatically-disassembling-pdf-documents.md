@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 role: Developer
 exl-id: 3f757392-96a0-4f20-91d0-7fbccb1bf171
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 100%
+source-wordcount: '1783'
+ht-degree: 98%
 
 ---
 
 # Programmgesteuerte Aufteilung von PDF-Dokumenten {#programmatically-disassembling-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können ein PDF-Dokument aufteilen, indem Sie es an den Assembler-Service übergeben. Diese Aufgabe ist in der Regel hilfreich, wenn das PDF-Dokument ursprünglich aus vielen Einzeldokumenten erstellt wurde, wie z. B. einer Sammlung von Aussagen. In der folgenden Abbildung ist DocA in mehrere Zieldokumente unterteilt, wobei das Lesezeichen der Stufe 1 auf einer Seite den Beginn eines neuen resultierenden Dokuments angibt.
 

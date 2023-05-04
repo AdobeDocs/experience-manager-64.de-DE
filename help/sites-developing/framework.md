@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 feature: Tagging
 exl-id: bae592db-dc36-409f-b841-0582c464c3f6
-source-git-commit: 381e760d1634dec6c6cdb933fd4da6b4652e6ff7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 66%
+source-wordcount: '1800'
+ht-degree: 65%
 
 ---
 
 # AEM-Tagging-Framework{#aem-tagging-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 So taggen Sie Inhalte und nutzen die AEM Tagging-Infrastruktur :
 
@@ -32,7 +36,7 @@ Die Funktion eines Tags wird im Repository in einem Knoten vom Typ `cq:Tag.` erf
 
 Ein Tag kann ein einfaches Wort sein (z. B. `fruit`) oder stellen eine hierarchische Taxonomie dar (z. B. `fruit/apple`, d. h. sowohl Obst im Allgemeinen als auch der spezifischere Apfel).
 
-Tags werden anhand einer eindeutigen Tag-ID identifiziert.
+Tags werden durch eine eindeutige Tag-ID identifiziert.
 
 Ein Tag verfügt über optionale Metainformationen wie einen Titel, lokalisierte Titel und eine Beschreibung. Der Titel sollte, falls vorhanden, auf Benutzeroberflächen anstelle der `TagID` angezeigt werden.
 

@@ -1,7 +1,7 @@
 ---
 title: Entwicklungs-Tools
 seo-title: Development Tools
-description: Für die Entwicklung Ihrer JCR-, Apache Sling- oder AEM-Anwendungen stehen Ihnen eine Reihe von Toolsets zur Verfügung.
+description: Zur Entwicklung Ihrer JCR-, Apache Sling- oder AEM-Anwendungen stehen verschiedene Toolsets zur Verfügung
 seo-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
 uuid: 1bee3a52-5d76-4b0c-a222-a02e12ff3a43
 contentOwner: msm-service
@@ -10,16 +10,20 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 exl-id: 3c18feab-97a6-49f2-96be-7e7458199f5d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 88%
+source-wordcount: '428'
+ht-degree: 69%
 
 ---
 
 # Entwicklungs-Tools{#development-tools}
 
-Für die Entwicklung Ihrer JCR-, Apache Sling- oder AEM-Anwendungen stehen die folgenden Toolsets zur Verfügung:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Um Ihre JCR-, Apache Sling- oder AEM-Anwendungen zu entwickeln, sind die folgenden Toolsets verfügbar:
 
 * Ein Set mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) und WebDAV. CRXDE Lite ist in CRX/AEM integriert und ermöglicht es Ihnen, gängige Entwicklungstätigkeiten im Browser vorzunehmen. Mit CRXDE Lite können Sie Dateien (etwa JSP- und JAVA-Dateien), Ordner, Vorlagen, Komponenten, Dialoge, Knoten, Eigenschaften und Pakete erstellen und bearbeiten, während eine Protokollierung und Integration mit SVN erfolgt.
 
@@ -37,9 +41,9 @@ Adobe hat die folgenden Erweiterungen veröffentlicht:
 * [AEM Brackets-Erweiterung](/help/sites-developing/aem-brackets.md)
 * [AEM IntelliJ-Erweiterung](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) (von Headwire)
 
-### Weitere Tools {#other-tools}
+### Sonstige Instrumente {#other-tools}
 
-AEM wird mit weiteren Tools für die Entwicklung bereitgestellt:
+AEM mit anderen Werkzeugen, die die Entwicklung erleichtern:
 
 * [Dialogfeldeditor](/help/sites-developing/dialog-editor.md)
 * [Verwalten von Wörterbüchern mithilfe des Übersetzers](/help/sites-developing/i18n-translator.md)

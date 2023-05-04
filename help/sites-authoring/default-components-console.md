@@ -10,16 +10,20 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 exl-id: fa583a06-e75c-41de-a977-7e459ab8bca9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 96%
+source-wordcount: '296'
+ht-degree: 53%
 
 ---
 
 # Komponentenkonsole{#components-console}
 
-Die Komponentenkonsole ermöglicht es Ihnen, alle Komponenten zu durchsuchen, die für Ihre Instanz definiert sind, und wichtige Informationen für jede Komponente anzuzeigen. 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Mit der Komponentenkonsole können Sie alle für Ihre Instanz definierten Komponenten durchsuchen und wichtige Informationen zu den einzelnen Komponenten anzeigen.
 
 Der Zugriff erfolgt über **Instrumente** -> **Allgemein** -> **Komponenten**. In der Konsole sind Karten- und Listenansicht verfügbar. Da es keine Baumstruktur für Komponenten gibt, ist die Spaltenansicht nicht verfügbar.
 
@@ -37,7 +41,7 @@ Mit dem Symbol **Nur Inhalt** (oben links) können Sie den **Suchbereich** öffn
 
 ## Komponentendetails {#component-details}
 
-Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicken Sie auf die gewünschte Ressource. Die drei Registerkarten bieten:
+Um Details zu einer bestimmten Komponente anzuzeigen, tippen/klicken Sie auf die gewünschte Ressource. Drei Registerkarten bieten:
 
 * **Eigenschaften**
 
@@ -46,12 +50,12 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
    In der Registerkarte „Eigenschaften“ haben Sie folgende Möglichkeiten:
 
    * Ansehen der allgemeinen Eigenschaften der Komponente
-   * Ansehen, wie das [Symbol oder die Abkürzung für die Komponente definiert wurde](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)
+   * Anzeigen der [Symbol oder Abkürzung wurde definiert](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) für die Komponente.
 
-      * Durch Klicken auf die Symbolquelle gelangen Sie zu dieser Komponente.
-   * Ansehen des **Ressourcentyps** und des **Ressourcen-Supertyps** (sofern definiert) für die Komponente
+      * Durch Klicken auf die Quelle des Symbols gelangen Sie zu dieser Komponente.
+   * Anzeigen der **Ressourcentyp** und **Resource Super Type** (sofern definiert) für die Komponente.
 
-      * Durch Klicken auf den Ressourcen-Supertyp gelangen Sie zu dieser Komponente.
+      * Wenn Sie auf den Ressourcen-Supertyp klicken, gelangen Sie zu dieser Komponente.
    >[!NOTE]
    >
    >Da `/apps` zur Laufzeit nicht bearbeitet werden kann, ist die Komponentenkonsole schreibgeschützt.
@@ -70,6 +74,6 @@ Um weitere Einzelheiten zu einer bestimmten Komponente anzuzeigen, tippen/klicke
 
 * **Dokumentation**
 
-   Etwaige vom Entwickler [für eine Komponente bereitgestellte Dokumentation](/help/sites-developing/developing-components.md#documenting-your-component) wird auf der Registerkarte **Dokumentation** angezeigt. Ist keine Dokumentation verfügbar, wird die Registerkarte **Dokumentation** nicht angezeigt.
+   Wenn der Entwickler [Dokumentation für die Komponente](/help/sites-developing/developing-components.md#documenting-your-component), wird sie im **Dokumentation** Registerkarte. Ist keine Dokumentation verfügbar, wird die Registerkarte **Dokumentation** nicht angezeigt.
 
    ![chlimage_1-305](assets/chlimage_1-305.png)

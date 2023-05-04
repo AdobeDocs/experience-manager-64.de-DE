@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 9d32c815-b66e-459e-bf36-c0d2e1ed707a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2890'
-ht-degree: 99%
+source-wordcount: '2926'
+ht-degree: 98%
 
 ---
 
 # Verarbeiten von übermittelten Formularen {#handling-submitted-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Bei Web-basierten Programmen, die es dem Benutzer ermöglichen, interaktive Formulare auszufüllen, müssen die Daten an den Server zurückgesendet werden. Mithilfe des Forms-Services können Sie die Daten abrufen, die der Benutzer in ein interaktives Formular eingegeben hat. Nachdem Sie die Daten abgerufen haben, können Sie sie verarbeiten, um Ihre Geschäftsanforderungen zu erfüllen. Sie können die Daten beispielsweise in einer Datenbank speichern, an ein anderes Programm senden, an einen anderen Service senden, in einem Formularentwurf zusammenführen, in einem Webbrowser anzeigen usw.
 

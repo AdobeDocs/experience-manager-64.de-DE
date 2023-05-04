@@ -1,5 +1,5 @@
 ---
-title: Task Manager-Endpunkte konfigurieren
+title: Konfigurieren der Task Manager-Endpunkte
 seo-title: Configuring Task Manager endpoints
 description: Erfahren Sie, wie Sie Task Manager-Endpunkte konfigurieren.
 seo-description: Learn how to configure Task Manager endpoints.
@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
 exl-id: 546a699e-975f-42a1-8ab5-0de4bd7f4a8f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 100%
+source-wordcount: '268'
+ht-degree: 77%
 
 ---
 
-# Task Manager-Endpunkte konfigurieren {#configuring-task-manager-endpoints}
+# Konfigurieren der Task Manager-Endpunkte {#configuring-task-manager-endpoints}
 
-Task Manager-Endpunkte ermöglichen es einem Workspace-Benutzer, den Dienst aufzurufen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-**TaskManager-Endpunkteinstellungen**
+Task Manager-Endpunkte ermöglichen es Workspace-Benutzern, den Dienst aufzurufen.
 
-Mithilfe der folgenden Einstellungen können Sie einen TaskManager-Endpunkt konfigurieren.
+**Task Manager-Endpunkteinstellungen**
+
+Verwenden Sie die folgenden Einstellungen, um einen Task Manager-Endpunkt zu konfigurieren.
 
 **Name:** (Obligatorisch) Identifiziert den Endpunkt. Der Name wird in Workspace in der Kartenansicht angezeigt. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
 

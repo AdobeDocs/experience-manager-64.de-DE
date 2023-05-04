@@ -8,14 +8,18 @@ contentOwner: dekalra
 topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 exl-id: db416cbc-27a7-4a2c-b4b3-43e8963faf22
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '782'
-ht-degree: 92%
+source-wordcount: '818'
+ht-degree: 75%
 
 ---
 
 # Anleitung zur Erneuerung der Kfz-Versicherung auf der Referenz-Site von We.Finance {#we-finance-auto-insurance-renewal-reference-site-walkthrough}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Voraussetzungen {#pre-requisites}
 
@@ -29,16 +33,16 @@ Erfahren Sie mehr über die detaillierte Anleitung des Anwendungsfalls zur Kfz-V
 
 **Das Ganze beginnt mit dem Benutzerszenario:** 
 
-Sarah Rose ist bereits We.Finance-Kundin und hat eine Kfz-Versicherungspolice erworben. Jetzt wird es Zeit für die Erneuerung ihrer Versicherungspolice. Gloria Rios, Versicherungsmitarbeiterin von We.Finance sendet Sarah eine Erinnerung bezüglich der Erneuerung ihrer Versicherungspolice. Sarah folgt den Anweisungen in der E-Mail und schließt den Vorgang erfolgreich ab.
+Sarah Rose ist bereits We.Finance-Kundin und hat eine Kfz-Versicherungspolice erworben. Jetzt wird es Zeit für die Erneuerung ihrer Versicherungspolice. Gloria Rios, Versicherungs-Agent, We.Finance sendet eine Erinnerung an Sarah über die Verlängerung ihrer Police. Sarah folgt den Anweisungen in der E-Mail und schließt den Prozess erfolgreich ab.
 
-## Anleitung für einen Antrag auf eine Kfz-Versicherung {#auto-insurance-application-walkthrough}
+## Anleitung zur Anwendung für Kfz-Versicherungen {#auto-insurance-application-walkthrough}
 
 Das Szenario für den Antrag auf Kfz-Versicherung von We.Finance ist eine visuelle Schilderung für den Benutzer und basiert auf zwei Personen:
 
-* Sarah Rose, einen We.Finance-Kunden
-* Gloria Rios, Versicherungsmitarbeiterin, We.Finance
+* Sarah Rose, We.Finance-Kunde
+* Gloria Rios, Versicherungs-Agent, We.Finance
 
-### Gloria sendet eine Mitteilung zur Erneuerung der Versicherungspolice von We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
+### Gloria sendet eine Mitteilung zur Erneuerung einer Versicherungspolice von We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
 Gloria meldet sich bei der AEM-Instanz an, klickt auf **Erneuerung der Kfz-Versicherung** und dann auf **Agent-Benutzeroberfläche öffnen.** Durch das Klicken wird das Versicherungsdokument mit den Vertragsdetails von Sarah Rose vorausgefüllt. Gloria klickt auf **Senden**, woraufhin auf dem Bildschirm die Meldung „Submission Initiated (Absenden eingeleitet)“ und dann wenige Sekunden danach „Submitted Successfully (Erfolgreich abgesendet)“ erscheint.
 
@@ -64,11 +68,11 @@ Sarah klickt auf **Jetzt erneuern** und wird zur Web-Version des Schreibens zu i
 
 Die Web- und Druckausgabe Ihres Schreibens zur Kfz-Versicherung wird mithilfe der Mehrkanalfunktionen der interaktiven Kommunikation erstellt.
 
-Die Schaltfläche „Jetzt erneuern“ in der E-Mail ist mit der Anwendung „Kfz-Versicherung erneuern“ verknüpft, die eine interaktive Kommunikation auf einer Veröffentlichungsinstanz ist.
+Die Schaltfläche Jetzt erneuern in der E-Mail ist mit der Anwendung zur Erneuerung der Kfz-Versicherung verknüpft, bei der es sich um eine interaktive Kommunikation auf einer Veröffentlichungsinstanz handelt.
 
 #### Sehen Sie selbst {#see-it-yourself-1}
 
-Sie müssen eine E-Mail mit einem angehängten PDF-Dokument erhalten haben. Die PDF-Datei ist eine Druckversion dieses Schreibens zur Kfz-Versicherung. Klicken Sie auf **Jetzt erneuern**, um zur Web-Version der Police zu gelangen. Überprüfen Sie Ihre persönlichen Angaben und Details der Police und klicken Sie auf **Jetzt erneuern**, um zu einer anderen interaktiven Kommunikation zu gelangen.
+Sie müssen eine E-Mail mit einer angehängten PDF erhalten haben. Die PDF-Datei ist eine Druckversion dieses Schreibens zur Kfz-Versicherung. Klicken Sie auf **Jetzt erneuern**, um zur Web-Version der Police zu gelangen. Überprüfen Sie Ihre persönlichen Angaben und Details der Police und klicken Sie auf **Jetzt erneuern**, um zu einer anderen interaktiven Kommunikation zu gelangen.
 
 Die Schaltfläche **Jetzt erneuern** in der E-Mail leitet Sarah zur Web-Version der Police. Sie können folgende URL aufrufen:
 
@@ -98,7 +102,7 @@ Sarah gibt ihre Kreditkartendetails ein und klickt auf **Zahlung ausführen**.
 
 #### Funktionsweise {#how-it-works-2}
 
-Wenn Sarah die Kreditkartendaten eingibt und auf „Senden“ klickt, wird ihre Kreditkartenzahlung verarbeitet und auf dem Bildschirm erscheint eine Dankesnachricht, die im adaptiven Formular konfiguriert wurde.
+Wenn Sarah die Kreditkartendetails ausfüllt und auf Senden klickt, wird ihre Kreditkartenzahlung verarbeitet und eine im adaptiven Formular konfigurierte Dankesnachricht wird auf dem Bildschirm angezeigt.
 
 #### Sehen Sie selbst {#see-it-yourself-3}
 

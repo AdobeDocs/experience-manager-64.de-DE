@@ -6,14 +6,18 @@ feature: Asset Management,Search,Renditions,Collaboration
 role: User
 mini-toc-levels: 4
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 14633d278f1e6fe7c1a47168006b8387c150e63d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10145'
-ht-degree: 69%
+source-wordcount: '10181'
+ht-degree: 40%
 
 ---
 
 # Verwalten digitaler Assets {#managing-assets-with-the-touch-optimized-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Erfahren Sie mehr über verschiedene Asset-Management- und -Bearbeitungsaufgaben, die Sie mithilfe der Touch-optimierten Benutzeroberfläche von [!DNL Experience Manager] Assets.
 
@@ -21,7 +25,7 @@ In diesem Artikel wird beschrieben, wie Sie Assets mit der Touch-optimierten Ben
 
 ## Erstellen von Ordnern {#create-folders}
 
-Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. [!DNL Experience Manager]Bei  Assets müssen Sie Assets nicht in Ordner organisieren, um besser zu arbeiten.
+Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, können Sie Ordner erstellen, um diese zu gruppieren. Mit Ordnern können Sie Assets kategorisieren und organisieren. [!DNL Experience Manager] Für Assets müssen Sie keine Assets in Ordnern organisieren, damit sie besser funktionieren.
 
 >[!NOTE]
 >
@@ -29,9 +33,9 @@ Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, k�
 >* In Experience Manager ist die Verwendung von `subassets` als Ordnername nicht zulässig. Dies ist ein Keyword, das für Knoten reserviert ist, die Teil-Assets für ebenenübergreifende Assets enthalten..
 
 
-1. Navigieren Sie zu dem Ort in Ihrem Ordner „Digitale Assets“, an dem Sie einen neuen Ordner erstellen möchten.
+1. Navigieren Sie zu der Stelle in Ihrem Ordner mit digitalen Assets, an der Sie einen neuen Ordner erstellen möchten.
 1. Klicken Sie im Menü auf **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neuer Ordner]** aus.
-1. Geben Sie in das Feld **[!UICONTROL Titel]** einen Ordnernamen an. DAM verwendet standardmäßig den Titel, den Sie als Ordnernamen angegeben haben. Wenn der Ordner erstellt wurde, können Sie die Standardeinstellung außer Kraft setzen und einen anderen Ordnernamen angeben.
+1. Geben Sie in das Feld **[!UICONTROL Titel]** einen Ordnernamen an. Standardmäßig verwendet DAM den von Ihnen als Ordnernamen angegebenen Titel. Nachdem der Ordner erstellt wurde, können Sie den Standard überschreiben und einen anderen Ordnernamen angeben.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**. Ihr Ordner wird im Ordner „Digitale Assets“ angezeigt.
 
 Die folgenden Zeichen (in der Liste durch Leerzeichen getrennt) werden nicht unterstützt:
@@ -45,9 +49,9 @@ Sie können verschiedene Asset-Typen (z. B. Bilder, PDF-Dateien, RAW-Dateien usw
 
 >[!NOTE]
 >
->Im Dynamic Media Scene 7-Modus können Sie nur Assets mit einer Dateigröße von maximal 2 GB hochladen.
+>Im Modus Dynamic Media - Scene7 können Sie nur Assets hochladen, deren Dateigröße 2 GB oder weniger beträgt.
 
-Sie können Assets in Ordnern mit oder ohne zugewiesenem Verarbeitungsprofil hochladen.
+Sie können Assets mit oder ohne zugewiesenes Verarbeitungsprofil in Ordner hochladen.
 
 Für Ordner mit zugewiesenem Verarbeitungsprofil wird der Profilname in der Miniatur der Kartenansicht angezeigt. In der Listenansicht wird der Profilname in der Spalte **[!UICONTROL Verarbeitungsprofil]** angezeigt. Siehe [Verarbeitungsprofile](processing-profiles.md).
 
@@ -63,31 +67,31 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es sich in einem [unters
 
    ![create_menu](assets/create_menu.png)
 
-   Wenn Sie die Assets im Dialogfeld für die Dateiauswahl bei gedrückter Strg-/Befehlstaste markieren, können Sie mehrere Dateien auswählen. In iPad können Sie jeweils nur eine Datei auswählen.
+   Um mehrere Dateien auszuwählen, drücken Sie die Strg-/Befehlstaste und wählen Sie die Assets im Dialogfeld für die Dateiauswahl aus. In iPad können Sie jeweils nur eine Datei auswählen.
 
-   Sie können das Hochladen von großen Assets (größer als 500 MB) anhalten und später von der gleichen Seite aus fortsetzen. Tippen Sie auf das Symbol **[!UICONTROL Pause]** neben dem bei Uploadbeginn eingeblendeten Fortschrittsbalken.
+   Sie können das Hochladen von großen Assets (größer als 500 MB) anhalten und später von der gleichen Seite aus fortsetzen. Tippen Sie auf **[!UICONTROL Anhalten]** neben der Fortschrittsleiste, die beim Start des Uploads angezeigt wird.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-   Die Größe, ab der ein Asset als großes Asset gilt, lässt sich konfigurieren. Sie können das System beispielsweise so konfigurieren, dass Assets über 1000 MB (anstatt 500 MB) als große Assets angesehen werden. In diesem Fall wird die Schaltfläche **[!UICONTROL Pause]** im Fortschrittsbalken angezeigt, wenn Assets hochgeladen werden, die größer als 1000 MB sind.
+   Die Größe, über der ein Asset als großes Asset betrachtet wird, ist konfigurierbar. Beispielsweise können Sie das System so konfigurieren, dass Assets über 1000 MB (anstelle von 500 MB) als große Assets betrachtet werden. In diesem Fall wird die **[!UICONTROL Anhalten]** in der Fortschrittsleiste angezeigt, wenn Assets mit einer Größe von mehr als 1000 MB hochgeladen werden.
 
-   Die **[!UICONTROL Anhalten]** -Schaltfläche zeigt nicht an, ob eine Datei mit einer Größe von mehr als 1000 MB mit einer Datei von weniger als 1000 MB hochgeladen wurde. Wenn Sie jedoch den Upload der Datei abbrechen, die kleiner ist als 1000 MB, wird die Schaltfläche **[!UICONTROL Pause]** angezeigt.
+   Die **[!UICONTROL Anhalten]** -Schaltfläche zeigt nicht an, ob eine Datei mit einer Größe von mehr als 1000 MB mit einer Datei von weniger als 1000 MB hochgeladen wurde. Wenn Sie jedoch den Upload einer Datei mit einer Größe von weniger als 1000 MB abbrechen, wird die **[!UICONTROL Anhalten]** angezeigt.
 
    Um die maximale Größe zu ändern, konfigurieren Sie die Eigenschaft `chunkUploadMinFileSize` des Knotens `fileupload` im CRX-Repository.
 
-   Wenn Sie auf das Symbol **[!UICONTROL Pause]** klicken, wird es zum Symbol **[!UICONTROL Wiedergabe]**. Um das Hochladen fortzusetzen, klicken Sie auf das Symbol **[!UICONTROL Wiedergabe.]**
+   Wenn Sie auf die **[!UICONTROL Anhalten]** -Symbol, wird es zu einem **[!UICONTROL Play]** Symbol. Um den Upload fortzusetzen, klicken Sie auf **[!UICONTROL Play]** Symbol.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
    Um einen laufenden Upload abzubrechen, klicken Sie auf das `X` neben der Fortschrittsleiste. Wenn Sie den Upload abbrechen, [!DNL Experience Manager] Assets löscht den teilweise hochgeladenen Teil des Assets.
 
-   Den Upload fortsetzen zu können, ist besonders hilfreich bei geringer Bandbreite und Netzwerkfehlern, bei denen der Upload großer Assets lange dauern kann. Sie können den Uploadvorgang anhalten und später fortsetzen, wenn die Bedingungen besser sind. Beim Fortsetzen beginnt der Upload an dem Punkt, an dem Sie pausiert haben.
+   Die Möglichkeit, den Upload fortzusetzen, ist insbesondere in Szenarien mit geringer Bandbreite und Netzwerkfehlern hilfreich, in denen das Hochladen großer Assets lange dauert. Sie können den Upload-Vorgang anhalten und später fortfahren, wenn sich die Situation verbessert. Wenn Sie fortfahren, beginnt der Upload an dem Punkt, an dem Sie den Upload angehalten haben.
 
    Während des Uploads speichert [!DNL Experience Manager] die Teile des hochgeladenen Assets als Datenblöcke im CRX-Repository. Wenn der Upload abgeschlossen ist, konsolidiert [!DNL Experience Manager] diese Blöcke in einem einzelnen Datenblock im Repository.
 
    Die Bereinigungsaufgabe für nicht abgeschlossene Chunkupload-Aufträge können Sie unter `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask` konfigurieren.
 
-   Wenn Sie ein Asset unter einem Namen hochladen, der bereits für ein Asset verwendet wird, das sich am Zielort befindet, wird eine Warnmeldung angezeigt.
+   Wenn Sie ein Asset mit demselben Namen wie ein Asset hochladen, das bereits an dem Speicherort verfügbar ist, an den Sie das Asset hochladen, wird ein Warndialogfeld angezeigt.
 
    Sie können festlegen, ob ein vorhandenes Asset ersetzt, eine neue Version erstellt oder beide Assets beibehalten werden sollen, indem Sie das neue hochgeladene Asset umbenennen. Wenn Sie ein vorhandenes Asset ersetzen, werden die Metadaten für das Asset sowie alle vorherigen Änderungen und Verläufe (z. B. Anmerkungen, Zuschnitte usw.) gelöscht. Wenn Sie beide Assets beibehalten, wird das neue Asset umbenannt.
 
@@ -99,7 +103,7 @@ Stellen Sie vor dem Hochladen eines Assets sicher, dass es sich in einem [unters
    >
    >Wenn **[!UICONTROL Asset Insights]** aktiviert ist, um Impressionen/Klicks mit Adobe Analytics zu verfolgen. Diese neu generierte Asset-ID macht die für das Asset in Adobe Analytics erfassten Daten ungültig.
 
-   Wenn das hochgeladene Asset in vorhanden ist [!DNL Experience Manager] Assets, die **[!UICONTROL Duplikate erkannt]** -Dialogfeld gibt eine Warnung aus, dass Sie versuchen, ein doppeltes Asset hochzuladen. Das Dialogfeld wird nur angezeigt, wenn der SHA-1-Prüfsummenwert der Binärdatei des bestehenden Assets dem des Assets entspricht, das Sie gerade hochladen. In diesem Fall sind die Namen der Assets unerheblich. Das bedeutet, dass das Dialogfeld auch für Assets mit unterschiedlichen Namen angezeigt werden kann, wenn die SHA 1-Werte für ihre Binärdateien identisch sind.
+   Wenn das hochgeladene Asset in vorhanden ist [!DNL Experience Manager] Assets, die **[!UICONTROL Duplikate erkannt]** -Dialogfeld gibt eine Warnung aus, dass Sie versuchen, ein doppeltes Asset hochzuladen. Das Dialogfeld wird nur angezeigt, wenn der SHA 1-Prüfsummenwert der Binärdatei des vorhandenen Assets mit dem Prüfsummenwert des hochgeladenen Assets übereinstimmt. In diesem Fall sind die Namen der Assets nicht wesentlich. Das heißt, das Dialogfeld kann sogar für Assets mit unterschiedlichen Namen angezeigt werden, wenn die SHA 1-Werte für ihre Binärdateien identisch sind.
 
    >[!NOTE]
    >
@@ -141,21 +145,21 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 
 >[!NOTE]
 >
->Im Dynamic Media Scene 7-Modus können Sie nur Assets mit einer Dateigröße von maximal 2 GB hochladen.
+>Im Modus Dynamic Media - Scene7 können Sie nur Assets hochladen, deren Dateigröße 2 GB oder weniger beträgt.
 
 >[!NOTE]
 >
->So laden Sie Assets über FTP in Dynamic Media hoch - Scene7-Modus installieren Sie Feature Pack (FP) 18912 on [!DNL Experience Manager] author. Wenden Sie sich an den Adobe-Support, um auf FP-18912 zugreifen zu können, und schließen Sie das Setup Ihres FTP-Kontos ab. Weitere Informationen finden Sie unter [Installieren von Feature Pack 18912 für Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
+>So laden Sie Assets über FTP in Dynamic Media hoch - Scene7-Modus installieren Sie Feature Pack (FP) 18912 on [!DNL Experience Manager] author. Wenden Sie sich an den Adobe-Support, um auf FP-18912 zugreifen zu können, und schließen Sie das Setup Ihres FTP-Kontos ab. Siehe [Installieren von Feature Pack 18912 für die Massenmigration von Assets](/help/assets/bulk-ingest-migrate.md).
 >
 >Die in [!DNL Experience Manager] angegebenen Upload-Einstellungen werden ignoriert, wenn Sie FTP zum Hochladen von Assets verwenden. Stattdessen werden Dateiverarbeitungsregeln, wie in Dynamic Media Classic definiert, verwendet.    
 
-**So laden Sie Assets per FTP hoch**
+**Hochladen von Assets über FTP**
 
-1. Verwenden Sie den FTP-Client Ihrer Wahl und melden Sie sich beim FTP-Server mit dem FTP-Benutzernamen und -Kennwort aus der Bereitstellungs-E-Mail an. Laden Sie die Dateien und/oder Ordner über den FTP-Client auf den FTP-Server hoch.
+1. Melden Sie sich mit Ihrem FTP-Client unter Verwendung des FTP-Benutzernamens und des Passworts, den Sie aus der Bereitstellungs-E-Mail erhalten haben, beim FTP-Server an. Laden Sie im FTP-Client Dateien oder Ordner auf den FTP-Server hoch.
 1. Öffnen Sie die [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started)und melden Sie sich dann mit den Anmeldedaten, die Sie von der Bereitstellungs-E-Mail erhalten haben, bei Ihrem Konto an.
-1. Tippen oder klicken Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Hochladen]**.
+1. Tippen Sie in der Leiste &quot;Globale Navigation&quot;auf **[!UICONTROL Hochladen]**.
 1. Im **[!UICONTROL Hochladen]** Seite oben links tippen Sie auf die **[!UICONTROL Über FTP]** Registerkarte.
-1. Wählen Sie im linken Bereich der Seite einen FTP-Ordner aus, aus dem Sie Dateien hochladen. Auf der rechten Seite der Seite wählen Sie einen Zielordner aus.
+1. Wählen Sie auf der linken Seite der Seite einen FTP-Ordner aus, aus dem Dateien hochgeladen werden sollen. Wählen Sie rechts auf der Seite einen Zielordner aus.
 1. Tippen Sie unten rechts auf der Seite auf **[!UICONTROL Auftragsoptionen]** und legen Sie dann die gewünschten Optionen basierend auf den Assets im ausgewählten Ordner fest.
 
    Siehe [Upload-Auftragsoptionen](#upload-job-options).
@@ -167,73 +171,73 @@ Dynamic Media ermöglicht das Batch-Hochladen von Assets über den FTP-Server. W
 1. In der rechten unteren Ecke der **[!UICONTROL Upload-Auftragsoptionen]** Dialogfeld, tippen Sie auf **[!UICONTROL Speichern]**.
 1. In der rechten unteren Ecke der **[!UICONTROL Hochladen]** Seite, tippen Sie auf **[!UICONTROL Upload starten]**.
 
-   Um den Upload-Fortschritt anzuzeigen, tippen Sie in der Leiste „Globale Navigation“ auf **[!UICONTROL Aufträge]**. Die **[!UICONTROL Aufträge]** zeigt den Fortschritt des Uploads an. Sie können mit der Arbeit in [!DNL Experience Manager] fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
+   Um den Upload-Fortschritt anzuzeigen, tippen Sie in der Leiste &quot;Globale Navigation&quot;auf **[!UICONTROL Aufträge]**. Die **[!UICONTROL Aufträge]** zeigt den Fortschritt des Uploads an. Sie können mit der Arbeit in [!DNL Experience Manager] fortfahren und jederzeit wieder in Dynamic Media Classic zur Seite „Aufträge“ zurückkehren, um einen gerade verarbeiteten Auftrag zu überprüfen.
 
-   Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, tippen oder klicken Sie neben der Information „Dauer“ auf die Schaltfläche **[!UICONTROL Abbrechen]****[!UICONTROL .]**
+   Tippen Sie zum Abbrechen eines laufenden Upload-Auftrags auf **[!UICONTROL Abbrechen]** neben dem **[!UICONTROL Dauer]** Zeit.
 
 #### Upload-Auftragsoptionen {#upload-job-options}
 
 | Uploadoptionen | Unteroption | Beschreibung |
 |---|---|---|
 | Auftragsname |  | Der Name, der standardmäßig in diesem Feld erstellt wird, enthält den vom Benutzer eingegebenen Teil des Namens und einen Zeitstempel samt Datum. Für diesen Upload-Auftrag können Sie den Standardnamen oder einen von Ihnen selbst erstellten Namen verwenden. <br>Der Auftrag und andere Upload- und Veröffentlichungsaufträge werden auf der Seite „Aufträge“ aufgezeichnet, wo Sie den Status der Aufträge prüfen können. |
-| Nach dem Hochladen veröffentlichen |  | Veröffentlicht Assets automatisch nach dem Hochladen. |
-| In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben |  | Wählen Sie diese Option aus, wenn hochgeladene Dateien vorhandene Dateien mit denselben Namen ersetzen sollen. Der Name dieser Option kann möglicherweise anders lauten, je nach den Einstellungen in **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]** > **[!UICONTROL Zur Anwendung hochladen]** > **[!UICONTROL Bilder überschreiben]**. |
+| Nach dem Hochladen veröffentlichen |  | Veröffentlicht die hochgeladenen Assets automatisch. |
+| In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben |  | Wählen Sie diese Option aus, wenn die hochgeladenen Dateien bestehende Dateien mit denselben Namen ersetzen sollen. Der Name dieser Option kann je nach den Einstellungen unter **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]** > **[!UICONTROL In Anwendung hochladen]** > **[!UICONTROL Bilder überschreiben]**. |
 | ZIP- oder TAR-Dateien beim Hochladen dekomprimieren |  |  |
 | Auftragsoptionen |  | Tippen/klicken Sie auf **[!UICONTROL Auftragsoptionen]** , um [!UICONTROL Upload-Auftragsoptionen] und wählen Sie Optionen aus, die sich auf den gesamten Upload-Auftrag auswirken. Diese Optionen sind für alle Dateitypen gleich.<br>Sie können über die Seite „Allgemeine Programmeinstellungen“ Standardoptionen für das Hochladen von Dateien auswählen. Um diese Seite zu öffnen, wählen Sie **[!UICONTROL Einstellung]** > **[!UICONTROL Anwendungseinstellungen]**. Tippen Sie auf **[!UICONTROL Standardmäßige Upload-Optionen]** Schaltfläche zum Öffnen [!UICONTROL Upload-Auftragsoptionen] Dialogfeld. |
-|  | Wenn | Wählen Sie „Einmalig“ oder „Wiederkehrend“ aus. Zum Einrichten eines wiederkehrenden Auftrags wählen Sie eine Wiederholungsoption („Täglich“, „Wöchentlich“, „Monatlich“ oder „Benutzerdefiniert“), um anzugeben, wie oft der FTP-Upload-Auftrag wiederholt werden soll. Dann geben Sie nach Bedarf die Planungsoptionen an. |
-|  | Unterordner einschließen | Laden Sie alle Unterordner im hochzuladenden Ordner hoch. Die Namen des Ordners und der von Ihnen hochgeladenen Unterordner werden automatisch in [!DNL Experience Manager] Assets. |
-|  | Optionen für das Zuschneiden | Um die Seiten eines Bildes manuell zu beschneiden, wählen Sie im Menü „Beschneiden“ die Option „Manuell“ aus. Dann geben Sie die Anzahl von Pixeln ein, die an einer oder jeder Seite des Bildes abgeschnitten werden sollen. Um wie viel das Bild beschnitten wird, hängt von der ppi-Einstellung (Pixel per Inch; Pixel pro Zoll) in der Bilddatei ab. Beispiel: Wenn das Bild 150 ppi aufweist und Sie 75 in die Textfelder für oben, rechts, unten und links eingeben, wird ein halber Zoll von jeder Seite abgeschnitten.<br> Zum automatischen Beschneiden der Leerraumpixel eines Bildes öffnen Sie das Menü „Beschneiden“, wählen Sie „Manuell“ und geben Sie zum Beschneiden der Seiten die Pixelwerte in die Felder „Oben“, „Rechts“, „Unten“ und „Links“ ein. Sie können im Menü „Beschneiden“ auch „Zuschneiden“ und anschließend folgende Optionen auswählen:<br> **Beschneiden basierend auf** <ul><li>**Farbe**: Wählen Sie die Option „Farbe“. Wählen Sie anschließend im Menü „Ecke“ die Bildecke mit der Farbe aus, die am besten der Leerraumfarbe entspricht, die Sie entfernen möchten.</li><li>**Transparenz** – Wählen Sie die Option „Transparenz“.<br> **Toleranz**: Ziehen Sie den Regler, um eine Toleranz von 0 bis 1 festzulegen. Für das Zuschneiden auf Grundlage der Farbe geben Sie 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie genau der Farbe entsprechen, die Sie in der Bildecke ausgewählt haben. Werte, die näher an 1 liegen, lassen eine größere Farbdifferenz zu.<br>Für das Zuschneiden auf der Grundlage der Transparenz geben Sie den Wert 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie transparent sind. Werte, die näher an 1 liegen, lassen eine größere Transparenz zu.</li></ul><br>Beachten Sie, dass diese Optionen für das Beschneiden zerstörungsfrei sind. |
-|  | Farbprofiloptionen | Wählen Sie beim Erstellen optimierter Dateien eine Farbkonvertierung aus, die für die Bereitstellung verwendet wird:<ul><li>Beibehaltung der Standardfarbe: Behält die Farben des Quellbildes bei, wenn die Bilder Farbrauminformationen enthalten. Es findet keine Farbkonvertierung statt. Heutzutage ist in fast allen Bildern das entsprechende Farbprofil eingebettet. Wenn jedoch ein CMYK-Quellbild kein eingebettetes Farbprofil enthält, werden die Farben in den Farbraum sRGB (standardmäßiges Rot Grün Blau) konvertiert. sRGB ist der empfohlene Farbraum zum Anzeigen von Bildern auf Webseiten.</li><li>Ursprünglichen Farbraum beibehalten: Behält die ursprünglichen Farben bei, ohne dass an der betreffenden Stelle eine Farbkonvertierung stattfindet. Bei Bildern ohne eingebettetes Farbprofil wird jede Farbkonvertierung mit den in den Veröffentlichungseinstellungen konfigurierten Standardfarbprofilen durchgeführt. Die Farbprofile stimmen möglicherweise nicht mit der Farbe in den Dateien überein, die mit dieser Option erstellt wurden. Deshalb empfiehlt es sich, die Option „Beibehaltung der Standardfarbe“ zu verwenden.</li><li>Benutzerdefinierte Einstellung von > in:<br> Öffnet Menüs, damit Sie einen „Konvertieren von“- und einen „Konvertieren in“-Farbraum auswählen können. Diese erweiterte Option überschreibt alle Farbinformationen, die in die Quelldatei eingebettet sind. Wählen Sie diese Option aus, wenn alle Bilder, die Sie senden, falsche oder fehlende Farbprofildaten enthalten.</li></ul> |
+|  | Wenn | Wählen Sie Einmalig oder Wiederkehrend aus. Um einen wiederkehrenden Auftrag festzulegen, wählen Sie die Option &quot;Wiederholen&quot;- &quot;Täglich&quot;, &quot;Wöchentlich&quot;, &quot;Monatlich&quot;oder &quot;Benutzerdefiniert&quot;-, um anzugeben, wann der FTP-Upload-Auftrag wiederholt werden soll. Geben Sie dann bei Bedarf die Planungsoptionen an. |
+|  | Unterordner einschließen | Laden Sie alle Unterordner in den Ordner hoch, den Sie hochladen möchten. Die Namen des Ordners und der von Ihnen hochgeladenen Unterordner werden automatisch in [!DNL Experience Manager] Assets. |
+|  | Optionen für Beschneiden | Um manuell von den Seiten eines Bildes zu beschneiden, wählen Sie im Menü &quot;Beschneiden&quot;die Option &quot;Manuell&quot;. Geben Sie dann die Anzahl der Pixel ein, die von einer beliebigen Bildseite oder jeder Bildseite abgeschnitten werden sollen. Wie viel des Bildes beschnitten wird, hängt von der ppi-Einstellung (Pixel pro Zoll) in der Bilddatei ab. Wenn das Bild beispielsweise 150 ppi aufweist und Sie in die Textfelder &quot;Oben&quot;, &quot;Rechts&quot;, &quot;Unten&quot;und &quot;Links&quot;75 eingeben, wird von jeder Seite ein halber Zoll abgeschnitten.<br> Zum automatischen Beschneiden der Leerraumpixel eines Bildes öffnen Sie das Menü „Beschneiden“, wählen Sie „Manuell“ und geben Sie zum Beschneiden der Seiten die Pixelwerte in die Felder „Oben“, „Rechts“, „Unten“ und „Links“ ein. Sie können im Menü „Beschneiden“ auch „Zuschneiden“ und anschließend folgende Optionen auswählen:<br> **Beschneiden basierend auf** <ul><li>**Farbe**: Wählen Sie die Option „Farbe“. Wählen Sie anschließend im Menü „Ecke“ die Bildecke mit der Farbe aus, die am besten der Leerraumfarbe entspricht, die Sie entfernen möchten.</li><li>**Transparenz** – Wählen Sie die Option „Transparenz“.<br> **Toleranz**: Ziehen Sie den Regler, um eine Toleranz von 0 bis 1 festzulegen. Für das Zuschneiden auf Grundlage der Farbe geben Sie 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie genau der Farbe entsprechen, die Sie in der Bildecke ausgewählt haben. Werte, die näher an 1 liegen, lassen eine größere Farbdifferenz zu.<br>Für das Zuschneiden auf der Grundlage der Transparenz geben Sie den Wert 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie transparent sind. Werte, die näher an 1 liegen, lassen eine größere Transparenz zu.</li></ul><br>Beachten Sie, dass diese Zuschnittoptionen zerstörungsfrei sind. |
+|  | Farbprofiloptionen | Wählen Sie beim Erstellen optimierter Dateien eine Farbkonvertierung aus, die für die Bereitstellung verwendet wird:<ul><li>Beibehaltung der Standardfarbe: Behält die Farben des Quellbildes bei, wenn die Bilder Farbrauminformationen enthalten. Es findet keine Farbkonvertierung statt. Fast alle Bilder haben heute bereits das entsprechende Farbprofil eingebettet. Wenn jedoch ein CMYK-Quellbild kein eingebettetes Farbprofil enthält, werden die Farben in den Farbraum sRGB (standardmäßiges Rot Grün Blau) konvertiert. sRGB ist der empfohlene Farbraum für die Anzeige von Bildern auf Webseiten.</li><li>Ursprünglichen Farbraum beibehalten: Behält die ursprünglichen Farben bei, ohne dass an der betreffenden Stelle eine Farbkonvertierung stattfindet. Bei Bildern ohne eingebettetes Farbprofil wird jede Farbkonvertierung mit den in den Veröffentlichungseinstellungen konfigurierten Standardfarbprofilen durchgeführt. Die Farbprofile stimmen möglicherweise nicht mit der Farbe in den mit dieser Option erstellten Dateien überein. Daher wird empfohlen, die Option &quot;Beibehaltung der Standardfarbe&quot;zu verwenden.</li><li>Benutzerdefiniert von > zu<br> Öffnet Menüs, in denen Sie den Farbraum &quot;Konvertieren von&quot;und &quot;Konvertieren in&quot;auswählen können. Diese erweiterte Option überschreibt alle Farbinformationen, die in die Quelldatei eingebettet sind. Wählen Sie diese Option aus, wenn alle Bilder, die Sie senden, falsche oder fehlende Farbprofildaten enthalten.</li></ul> |
 |  | Bildbearbeitungsoptionen | Sie können die Schnittmasken in Bildern beibehalten und ein Farbprofil auswählen.<br> Siehe [Festlegen von Bildbearbeitungsoptionen beim Hochladen](#setting-image-editing-options-at-upload). |
-|  | PostScript-Optionen | Sie können PostScript®-Dateien rastern, Dateien beschneiden, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
-|  | Photoshop-Optionen | Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalten, Ebenennamen angeben, Text extrahieren und angeben, wie Bilder in Vorlagen verankert werden.<br> Beachten Sie, dass in AEM Vorlagen nicht unterstützt werden.<br> Siehe [Festlegen von Photoshop-Uploadoptionen](#setting-photoshop-upload-options). |
-|  | PDF-Optionen | Sie können die Dateien rastern, Suchbegriffe und -links extrahieren, automatisch einen E-Katalog erstellen, die Auflösung einstellen und einen Farbraum auswählen.<br> Beachten Sie, dass in AEM E-Kataloge nicht unterstützt werden. <br> Siehe [Festlegen von PDF-Uploadoptionen ](#setting-pdf-upload-options)<br>**Hinweis**: Die maximale Seitenanzahl für eine PDF, die für die Extraktion berücksichtigt werden soll, beträgt 5.000 Seiten für neue Uploads. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md). |
+|  | PostScript-Optionen | Sie können PostScript® rastern, Dateien zuschneiden, transparente Hintergründe beibehalten, eine Auflösung wählen und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
+|  | Photoshop-Optionen | Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalten, Ebenennamen angeben, Text extrahieren und angeben, wie Bilder in Vorlagen verankert werden.<br> Beachten Sie, dass Vorlagen in AEM nicht unterstützt werden.<br> Siehe [Festlegen von Photoshop-Uploadoptionen](#setting-photoshop-upload-options). |
+|  | PDF-Optionen | Sie können die Dateien rastern, Suchbegriffe und Links extrahieren, automatisch einen E-Katalog erstellen, die Auflösung festlegen und einen Farbraum auswählen.<br> Beachten Sie, dass E-Kataloge in AEM nicht unterstützt werden. <br> Siehe [Festlegen von PDF-Uploadoptionen ](#setting-pdf-upload-options)<br>**Hinweis**: Die maximale Seitenanzahl für eine PDF, die für die Extraktion berücksichtigt werden soll, beträgt 5.000 Seiten für neue Uploads. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md). |
 |  | Illustrator-Optionen | Sie können Adobe Illustrator®-Dateien rastern, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
-|  | eVideo-Optionen | Sie können eine Videodatei durch Auswahl einer Videovorgabe transkodieren.<br> Siehe [Festlegen von eVideo-Uploadoptionen](#setting-evideo-upload-options). |
-|  | Stapelsatz-Vorgaben | Um ein Bild- oder Rotationsset aus den hochgeladenen Dateien zu erstellen, klicken Sie auf die Spalte „Aktiv“ der Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. Die Vorgaben erstellen Sie auf der Seite „Anwendungseinstellungen/Stapelsatzvorgaben“ von Dynamic Media Classic.<br> Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Siehe [Festlegen von Stapelsatzvorgaben beim Hochladen](#setting-batch-set-presets-at-upload). |
+|  | eVideo-Optionen | Sie können eine Videodatei transkodieren, indem Sie eine Videovorgabe auswählen.<br> Siehe [Festlegen von eVideo-Uploadoptionen](#setting-evideo-upload-options). |
+|  | Stapelsatz-Vorgaben | Um ein Bildset oder Rotationsset aus den hochgeladenen Dateien zu erstellen, klicken Sie auf die Spalte Aktiv für die Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. Sie erstellen die Vorgaben auf der Seite &quot;Anwendungseinstellungen&quot;/&quot;Stapelsatzvorgaben&quot;von Dynamic Media Classic.<br> Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Siehe [Festlegen von Stapelsatzvorgaben beim Hochladen](#setting-batch-set-presets-at-upload). |
 
 #### Festlegen von Bildbearbeitungsoptionen beim Hochladen {#setting-image-editing-options-at-upload}
 
 Beim Hochladen von Bilddateien, einschließlich AI-, EPS- und PSD-Dateien, können Sie folgende Bearbeitungsaktionen im Dialogfeld **[!UICONTROL Upload-Auftragsoptionen]** vornehmen:
 
 * Leerraum am Rand von Bildern beschneiden (siehe Beschreibung in der oben stehenden Tabelle).
-* Ränder von Bildern manuell beschneiden (siehe Beschreibung in der oben stehenden Tabelle)
-* Ein Farbprofil auswählen (siehe Optionsbeschreibung in der oben stehenden Tabelle)
-* Eine Maske aus einem Beschneidungspfad erstellen
-* Bilder scharfzeichnen mit Optionen für „Unscharf maskieren“
+* Manuelles Zuschneiden von den Seiten der Bilder (siehe Beschreibung in der obigen Tabelle).
+* Wählen Sie ein Farbprofil aus (siehe Beschreibung der Option in der obigen Tabelle).
+* Erstellen Sie eine Maske aus einem Beschneidungspfad.
+* Scharfzeichnen von Bildern mit Optionen für die Unschärfemaske
 * Hintergrund aussparen
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
-| Maske aus Beschneidungspfad erstellen |  | Erstellt basierend auf den Beschneidungspfad-Informationen eine Maske für das Bild. Diese Option ist auf Bilder anwendbar, die mit Bildbearbeitungsanwendungen erstellt wurden, in denen ein Beschneidungspfad erstellt wurde. |
-| Unschärfemaske |  | Ermöglicht Ihnen die Feineinstellung eines Schärfefiltereffekts im finalen Downsampling-Bild. So können Sie die Intensität und den Radius des Effekts (in Pixel) sowie einen Schwellenwert für ignorierten Kontrast angeben.<br> Dieser Effekt verwendet dieselben Optionen wie der Photoshop-Filter Unscharf maskieren. Im Gegensatz zu dem, was der Name besagt, ist „Unscharf maskieren“ ein Scharfzeichnungsfilter. Wählen Sie unter „Unschärfemaske“ die gewünschten Optionen aus. Im Folgenden finden Sie Beschreibungen der Einstellungsoptionen: |
-|  | Stärke | Steuert den auf die Kanten-Pixel angewendeten Kontrastwert.<br> Betrachten Sie diese Unteroption als Intensität des Effekts. Der Hauptunterschied zwischen den Werten von „Unscharf maskieren“ in Dynamic Media und den Werten in Adobe Photoshop ist, dass Adobe Photoshop einen Wertebereich verwendet, der von 1 % bis 500 % reicht. In Dynamic Media hingegen reichen die Werte von 0,0 bis 5,0. Der Wert 5,0 entspricht ungefähr 500 % in Photoshop, der Wert 0,9 ungefähr 90 % usw. |
-|  | Radius | Steuert den Radius des Effekts. Der Wertebereich reicht von 0 bis 250.<br> Der Effekt wird auf alle Pixel in einem Bild angewendet und verbreitet sich in alle Richtungen. Der Radius wird in Pixel gemessen. Um beispielsweise einen ähnlichen Scharfzeichnungseffekt für ein Bild mit 2000 x 2000 Pixel und ein Bild mit 500 x 500 Pixel zu erhalten, können Sie einen Radius von zwei Pixel für das Bild mit 2000 x 2000 Pixel und einen Radius von einem Pixel für das Bild mit 500 x 500 Pixel festlegen. Ein größerer Wert wird für ein Bild mit mehr Pixel verwendet. |
-|  | Schwelle | Beschreibt den Kontrastbereich, der beim Anwenden der Unschärfemaske ignoriert wird. Das ist wichtig, damit kein Bildrauschen entsteht, wenn dieser Filter verwendet wird. Der Wertebereich reicht von 0 bis 255. Diese Werte stehen für die Anzahl der Helligkeitsschritte in einem Graustufenbild. 0 = Schwarz, 128 = 50 % Grau und 255 = Weiß.<br> Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um Rauschen zu vermeiden. Gleichzeitig wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.<br> Wenn Sie z. B. ein Foto von jemandem haben, wirkt sich die Unschärfemaske auf die kontrastreichen Teile des Bildes aus, z. B. wo Wimpern und Haut zusammenkommen, um einen offensichtlichen Kontrastbereich zu schaffen, und auf die glatte Haut selbst. Selbst die glatteste Haut weist geringfügige Änderungen der Helligkeitswerte auf. Wenn Sie keinen Schwellenwert verwenden, akzentuiert der Filter diese geringfügigen Änderungen in den Hautpixel. Dadurch entsteht ein verrauschter und unerwünschter Effekt, während der Kontrast an den Wimpern verstärkt und die Schärfe intensiviert wird.<br> Zur Vermeidung dieses Problems wird ein Schwellenwert verwendet, der den Filter anweist, die Pixel zu ignorieren, die den Kontrast nicht wesentlich ändern, beispielsweise bei glatter Haut.<br> Beachten Sie in der weiter oben gezeigten Reißverschlussgrafik die Textur neben dem Reißverschluss. Hier ist Bildrauschen erkennbar, weil die Schwellenwerte zu niedrig waren, um das Bildrauschen zu unterdrücken. |
+| Maske aus Beschneidungspfad erstellen |  | Erstellen Sie eine Maske für das Bild basierend auf den Informationen zum Beschneidungspfad. Diese Option gilt für Bilder, die mit Bildbearbeitungsanwendungen erstellt wurden, in denen ein Beschneidungspfad erstellt wurde. |
+| Unschärfemaske |  | Hiermit können Sie einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild anpassen und die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den ignorierten Kontrast steuern.<br> Dieser Effekt verwendet dieselben Optionen wie der Photoshop-Filter Unscharf maskieren. Im Gegensatz zu dem, was der Name besagt, ist „Unscharf maskieren“ ein Scharfzeichnungsfilter. Legen Sie unter &quot;Unschärfemaske&quot;die gewünschten Optionen fest. Die Einstellungsoptionen werden im Folgenden beschrieben: |
+|  | Stärke | Steuert den auf die Kanten-Pixel angewendeten Kontrastwert.<br> Betrachten Sie diese Unteroption als Intensität des Effekts. Der Hauptunterschied zwischen den Werten von „Unscharf maskieren“ in Dynamic Media und den Werten in Adobe Photoshop ist, dass Adobe Photoshop einen Wertebereich verwendet, der von 1 % bis 500 % reicht. In Dynamic Media liegt der Wertebereich zwischen 0,0 und 5,0. Ein Wert von 5,0 entspricht ungefähr 500 % in Photoshop. Ein Wert von 0,9 entspricht 90 % usw. |
+|  | Radius | Steuert den Radius des Effekts. Der Wertebereich ist 0-250.<br> Der Effekt wird auf alle Pixel in einem Bild ausgeführt und strahlt in alle Richtungen von allen Pixeln aus. Der Radius wird in Pixel gemessen. Um beispielsweise einen ähnlichen Scharfzeichnungseffekt für ein Bild mit 2000 x 2000 Pixel und ein Bild mit 500 x 500 Pixel zu erhalten, legen Sie einen Radius von zwei Pixel auf dem Bild mit 2000 x 2000 Pixel und einen Radius von einem Pixel auf dem Bild mit 500 x 500 Pixel fest. Ein größerer Wert wird für ein Bild mit mehr Pixel verwendet. |
+|  | Schwellenwert | Beschreibt den Kontrastbereich, der beim Anwenden der Unschärfemaske ignoriert wird. Es ist wichtig, dass bei Verwendung dieses Filters kein Bildrauschen entsteht. Der Wertebereich beträgt 0-255, was der Anzahl der Helligkeitsschritte in einem Graustufenbild entspricht. 0 = schwarz, 128 = 50 % grau und 255 = weiß.<br> Bei einem Schwellenwert von 12 werden beispielsweise leichte Variationen der Hauttonhelligkeit ignoriert, um Rauschen zu vermeiden. Gleichzeitig wird kontrastreichen Bereichen, z. B. wo Wimpern auf die Haut treffen, Kantenkontrast hinzugefügt.<br> Wenn Sie z. B. ein Foto von jemandem haben, wirkt sich die Unschärfemaske auf die kontrastreichen Teile des Bildes aus, z. B. wo Wimpern und Haut zusammenkommen, um einen offensichtlichen Kontrastbereich zu schaffen, und auf die glatte Haut selbst. Sogar die glatteste Haut weist geringfügige Veränderungen der Helligkeitswerte auf. Wenn Sie keinen Schwellenwert verwenden, akzentuiert der Filter diese subtilen Änderungen in den Haupt-Pixeln. Dadurch entsteht ein geräuschhafter und unerwünschter Effekt, während der Kontrast an den Wimpern erhöht wird, was die Schärfe erhöht.<br> Zur Vermeidung dieses Problems wird ein Schwellenwert verwendet, der den Filter anweist, die Pixel zu ignorieren, die den Kontrast nicht wesentlich ändern, beispielsweise bei glatter Haut.<br> Beachten Sie in der weiter oben gezeigten Reißverschlussgrafik die Textur neben dem Reißverschluss. Hier ist Bildrauschen erkennbar, weil die Schwellenwerte zu niedrig waren, um das Bildrauschen zu unterdrücken. |
 |  | Monochrom | Wählen Sie diese Option aus, um die Unschärfemaske auf die Bildhelligkeit (Intensität) anzuwenden.<br> Deaktivieren Sie diese Unteroption, um die Unschärfemaske auf jede Farbkomponente einzeln anzuwenden. |
-| Hintergrund aussparen |  | Entfernt beim Hochladen automatisch den Hintergrund eines Bildes. Mit dieser Technik ist es möglich, die Aufmerksamkeit auf ein bestimmtes Objekt zu lenken und es von einem belebten Hintergrund abzuheben. Wählen Sie diese Option aus, um die Funktion „Hintergrund aussparen“ und die folgenden Optionen zu aktivieren: |
-|  | Ecke | Erforderlich.<br> Die Ecke des Bildes, mit der die auszusparende Hintergrundfarbe definiert wird.<br> Sie können aus **Oben links**, **Unten links**, **Oben rechts** und **Unten rechts** wählen. |
-|  | Füllmethode | Erforderlich.<br> Zur Steuerung der Pixeltransparenz ausgehend von der Ecke, die Sie gewählt haben.<br> Sie können aus folgenden Füllmethoden wählen: <ul><li>**Großflächig füllen** – Macht alle Pixel transparent, die mit der von Ihnen angegebenen Ecke übereinstimmen und mit ihr verbunden sind.</li><li>**Pixel abgleichen** – Macht alle entsprechenden Pixel transparent, unabhängig von ihrer Position auf dem Bild.</li></ul> |
-|  | Toleranz | Optional.<br> Steuert die zulässige Abweichung der Pixelfarbe ausgehend von der Ecke, die Sie festgelegt haben.<br> Verwenden Sie den Wert 0,0, um die Pixelfarben genau anzugleichen, oder verwenden Sie den Wert 1,0, um die größtmögliche Abweichung zuzulassen. |
+| Hintergrund aussparen |  | Entfernt automatisch den Hintergrund eines Bildes beim Hochladen. Diese Technik ist nützlich, um die Aufmerksamkeit auf ein bestimmtes Objekt zu lenken und es von einem belebten Hintergrund abzuheben. Wählen Sie diese Option aus, um die Funktion Hintergrund aussparen und die folgenden Unteroptionen zu aktivieren oder zu aktivieren: |
+|  | Ecke | Erforderlich.<br> Die Ecke des Bildes, mit der die auszuschneidende Hintergrundfarbe definiert wird.<br> Sie können aus **Oben links**, **Unten links**, **Upper Right** oder **Unten rechts**. |
+|  | Füllmethode | Erforderlich.<br> Steuert die Pixeltransparenz von der Ecke, die Sie festlegen.<br> Sie können aus den folgenden Füllmethoden wählen: <ul><li>**Flood Fill** - Macht alle Pixel transparent, die der von Ihnen angegebenen Ecke entsprechen und mit ihr verbunden sind.</li><li>**Pixel abgleichen** - macht alle übereinstimmenden Pixel transparent, unabhängig von ihrer Position auf dem Bild.</li></ul> |
+|  | Toleranz | Optional.<br> Steuert die zulässige Abweichung der Pixelfarbe basierend auf der Ecke, die Sie festgelegt haben.<br> Verwenden Sie den Wert 0,0, um die Pixelfarben exakt abzugleichen, oder verwenden Sie den Wert 1,0, um die größte Variante zu ermöglichen. |
 
 #### Festlegen von PostScript- und Illustrator-Uploadoptionen {#setting-postscript-and-illustrator-upload-options}
 
-Wenn Sie PostScript (EPS)- oder Illustrator (AI)-Bilddateien hochladen, können Sie diese auf verschiedene Arten formatieren. Sie können die Dateien rastern, den transparenten Hintergrund beibehalten sowie eine Auflösung und einen Farbraum auswählen. Optionen zum Formatieren von PostScript- und Illustrator-Dateien stehen im Dialogfeld Upload-Auftragsoptionen unter PostScript- und Illustrator-Optionen zur Verfügung.
+Beim Hochladen von PostScript- (EPS) oder Illustrator- (AI-) Bilddateien können Sie diese auf verschiedene Weise formatieren. Sie können die Dateien rastern, den transparenten Hintergrund beibehalten sowie eine Auflösung und einen Farbraum auswählen. Optionen zum Formatieren von PostScript- und Illustrator-Dateien stehen im Dialogfeld Upload-Auftragsoptionen unter PostScript- und Illustrator-Optionen zur Verfügung.
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
-| Verarbeitung |  | Wählen Sie **[!UICONTROL Rastern]**, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
-| Transparenten Hintergrund in gerendertem Bild beibehalten |  | Zur Beibehaltung der Hintergrundtransparenz der Datei. |
-| Auflösung |  | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
+| Verarbeitung |  | Auswählen **[!UICONTROL Rastern]** , um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
+| Transparenten Hintergrund im gerenderten Bild beibehalten |  | Beibehalten der Hintergrundtransparenz der Datei. |
+| Auflösung |  | Zum Festlegen der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
 | Farbraum |  | Klicken Sie auf das Menü „Farbraum“ und wählen Sie unter den folgenden Farbraumoptionen: |
-|  | Automatisch erkennen | Der Farbraum der Datei wird beibehalten. |
+|  | Automatisch erkennen | Behält den Farbraum der Datei bei. |
 |  | Immer RGB | Zur Konvertierung in den RGB-Farbraum. |
 |  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
 |  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
 
 #### Festlegen von Photoshop-Uploadoptionen {#setting-photoshop-upload-options}
 
-PSD (Photoshop)-Dateien werden meist zum Erstellen von Bildvorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie daraus automatisch eine Bildvorlage erstellen (aktivieren Sie auf dem Upload-Bildschirm die Option Vorlage erstellen).
+PSD (Photoshop Document)-Dateien werden meist zum Erstellen von Bildvorlagen verwendet. Wenn Sie eine PSD-Datei hochladen, können Sie daraus automatisch eine Bildvorlage erstellen (aktivieren Sie auf dem Upload-Bildschirm die Option Vorlage erstellen).
 
 Dynamic Media erstellt mehrere Bilder aus einer PSD-Datei mit Ebenen, wenn Sie die Datei zum Erstellen einer Vorlage verwenden. Für jede Ebene wird ein Bild erstellt.
 
@@ -241,48 +245,48 @@ Verwenden Sie die oben beschriebenen Optionen für **[!UICONTROL Beschneiden]** 
 
 >[!NOTE]
 >
->Vorlagen werden nicht in AEM unterstützt.
+>Vorlagen werden in AEM nicht unterstützt.
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
-| Ebenen beibehalten |  | Teilt die Ebenen in der PSD-Datei ggf. in einzelne Assets auf. Die Asset-Ebenen bleiben der PSD-Datei zugeordnet. Sie können sie anzeigen, indem Sie die PSD-Datei in der Detailansicht öffnen und das Ebenenfenster auswählen. |
-| Vorlage erstellen |  | Erstellt eine Vorlage aus den Ebenen der PSD-Datei. |
+| Ebenen beibehalten |  | Teilt die Ebenen im PSD (falls vorhanden) in einzelne Assets. Die Asset-Ebenen bleiben mit der PSD verknüpft. Sie können sie anzeigen, indem Sie die PSD-Datei in der Detailansicht öffnen und das Ebenenbedienfeld auswählen. |
+| Erstellen einer Vorlage |  | Erstellt eine Vorlage aus den Ebenen der PSD-Datei. |
 | Text extrahieren |  | Extrahiert den Text, damit Benutzer den Text in einem Viewer suchen können. |
 | Ebenen auf Hintergrundgröße ausdehnen |  | Erweitert die Größe aufgeteilter Bildebenen auf die Größe der Hintergrundebene. |
 | Ebenenbenennung |  | Ebenen in der PSD-Datei werden als separate Bilder hochgeladen. |
-|  | Ebenenname | Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Wenn eine Ebene in der Original-PSD-Datei beispielsweise „Preisschild“ heißt, wird auch das zugehörige Bild „Preisschild“ genannt. Wenn es sich bei den Ebenennamen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nicht nach den Standardebenennamen, sondern nach den zugehörigen Ebenennummern in der PSD-Datei benannt. |
-|  | Photoshop- und Ebenennummer | Benennt die Bilder nach ihren Ebenennummern in der PSD-Datei und ignoriert die ursprünglichen Ebenennamen. Bilder werden mit dem Photoshop-Dateinamen und einer angefügten Ebenennummer benannt. Zum Beispiel erhält die zweite Ebene der Datei Frühjahrsannonce.psd den Namen Frühjahrsannonce_2, auch wenn sie in Photoshop einen nicht standardmäßigen Namen hatte. |
-|  | Photoshop- und Ebenenname | Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der -nummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Zum Beispiel erhält eine Ebene mit dem Namen „Preisschild“ in einer PSD-Datei mit dem Namen „Frühjahrsannonce“ den Namen „Frühjahrsannonce_Preisschild“. Eine Ebene mit dem standardmäßigen Namen „Ebene 2“ erhält den Namen „Frühjahrsannonce_2“. |
-| Anker |  | Geben Sie an, wie Bilder in Vorlagen, die aus der Zusammenstellung der Ebenen aus der PSD-Datei erstellt werden, verankert werden. Der Anker ist standardmäßig zentriert. Ein zentrierter Anker eignet sich am besten zum Auffüllen desselben Raums mit Ersatzbildern, unabhängig vom Seitenverhältnis der Ersatzbilder. Bilder mit einem anderen Seitenverhältnis, die dieses Bild ersetzen, nehmen effektiv denselben Raum ein, wenn auf die Vorlage verwiesen und die Parameterersetzung durchgeführt wird. Wählen Sie eine andere Einstellung, wenn es für Ihre Anwendung erforderlich ist, dass die Ersatzbilder den zugeordneten Raum in der Vorlage ausfüllen. |
+|  | Ebenenname | Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Wenn eine Ebene in der Original-PSD-Datei beispielsweise „Preisschild“ heißt, wird auch das zugehörige Bild „Preisschild“ genannt. Wenn es sich bei den Ebenennamen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach ihren Ebenennummern in der PSD-Datei und nicht nach ihren standardmäßigen Ebenennamen benannt. |
+|  | Photoshop- und Ebenennummer | Benennt die Bilder nach ihren Ebenennummern in der PSD-Datei, wobei die ursprünglichen Ebenennamen ignoriert werden. Bilder werden mit dem Photoshop-Dateinamen und einer angefügten Ebenennummer benannt. Beispielsweise erhält die zweite Ebene einer Datei mit dem Namen Spring Ad.psd den Namen Spring Ad_2, selbst wenn sie in Photoshop einen nicht standardmäßigen Namen hatte. |
+|  | Photoshop und Ebenenname | Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der Ebenennummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Beispielsweise erhält eine Ebene mit dem Namen &quot;Price Tag&quot;in einer PSD-Datei mit dem Namen &quot;SpringAd&quot;den Namen &quot;Spring Ad_Price Tag&quot;. Eine Ebene mit dem Standardnamen Ebene 2 heißt Frühjahrsannonce_2. |
+| Anker |  | Geben Sie an, wie Bilder in Vorlagen verankert werden, die aus der aus der PSD-Datei erzeugten mehrschichtigen Komposition generiert werden. Standardmäßig ist der Anker die Mitte. Ein zentrierter Anker ermöglicht es Ersatzbilder, unabhängig vom Seitenverhältnis des Ersatzbilds denselben Raum am besten auszufüllen. Bilder mit einem anderen Aspekt, der dieses Bild ersetzt, belegen beim Referenzieren der Vorlage und bei der Verwendung der Parameterersetzung effektiv denselben Raum. Wechseln Sie zu einer anderen Einstellung, wenn Ihre Anwendung erfordert, dass die Ersatzbilder den zugewiesenen Platz in der Vorlage ausfüllen. |
 
 #### Festlegen von PDF-Uploadoptionen {#setting-pdf-upload-options}
 
-Wenn Sie eine PDF-Datei hochladen, können Sie diese auf verschiedene Arten formatieren. Sie können ihre Seiten zuschneiden, Suchbegriffe extrahieren, eine ppi (Pixel pro Zoll)-Auflösung eingeben und einen Farbraum auswählen. PDF-Dateien enthalten oft einen Beschnittrand, Schnittmarken, Registrierungsmarken und andere Druckermarken. Sie können diese Marken von den Seitenrändern aus zuschneiden, wenn Sie eine PDF-Datei hochladen.
+Wenn Sie eine PDF-Datei hochladen, können Sie sie auf verschiedene Arten formatieren. Sie beschneiden die Seiten, extrahieren Suchbegriffe, geben eine Pixel-pro-Zoll-Auflösung ein und wählen einen Farbraum. PDF-Dateien enthalten oft einen Schnitt-, Zuschnitt-, Registrierungs- und andere Druckermarkierungen. Sie können diese Marken von den Seitenrändern aus zuschneiden, wenn Sie eine PDF-Datei hochladen.
 
 Die maximale Seitenanzahl, damit eine PDF-Datei für die Extraktion berücksichtigt werden kann, beträgt 5.000 Seiten für neue Uploads. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 
 >[!NOTE]
 >
->E-Kataloge werden nicht in AEM unterstützt.
+>E-Kataloge werden in AEM nicht unterstützt.
 
 Wählen Sie unter folgenden Optionen:
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
 | Verarbeitung | Rastern | (Standard) Zum Extrahieren der Seiten aus der PDF-Datei und zum Konvertieren von Vektorgrafiken in Bitmap-Bilder. Wählen Sie diese Option, um einen E-Katalog zu erstellen. |
-| Extrahieren | Suchbegriffe | Zum Extrahieren von Wörtern aus der PDF-Datei, damit die Datei in einem E-Katalog-Viewer mit einem Schlüsselwort durchsucht werden kann. |
-|  | Links | Zum Extrahieren von Links aus den PDF-Dateien und zum Konvertieren der PDF-Dateien in Imagemaps, die in einem E-Katalog-Viewer verwendet werden. |
-| E-Katalog aus mehrseitiger PDF automatisch erstellen |  | Zum automatischen Erstellen eines E-Katalogs aus der PDF-Datei. Der E-Katalog wird nach der von Ihnen hochgeladenen PDF-Datei benannt. (Diese Option ist nur dann verfügbar, wenn Sie die PDF-Datei beim Hochladen rastern.) |
-| Auflösung |  | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
-| Farbraum |  | Wählen Sie das Farbraummenü und einen Farbraum für die PDF-Datei aus. Die meisten PDF-Dateien enthalten sowohl RGB- als auch CMYK-Farbbilder. Der RGB-Farbraum eignet sich besonders gut, um Dateien online anzuzeigen. |
-|  | Automatisch erkennen | Der Farbraum der PDF-Datei wird beibehalten. |
-|  | Immer RGB | Zur Konvertierung in den RGB-Farbraum. |
-|  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
-|  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
+| Extrahieren | Suchbegriffe | Extrahiert Wörter aus der PDF-Datei, damit die in einem E-Katalog-Viewer nach Schlüsselwörtern durchsucht werden kann. |
+|  | Links | Extrahiert Links aus den PDF-Dateien und konvertiert sie in Imagemaps, die in einem E-Katalog-Viewer verwendet werden. |
+| eCatalog von mehrseitiger PDF automatisch generieren |  | Erstellt automatisch einen eCatalog aus der PDF-Datei. Der eCatalog wird nach der hochgeladenen PDF-Datei benannt. (Diese Option ist nur verfügbar, wenn Sie die PDF-Datei beim Hochladen rastern.) |
+| Auflösung |  | Zum Festlegen der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
+| Farbraum |  | Wählen Sie das Menü Farbraum aus und wählen Sie einen Farbraum für die PDF-Datei. Die meisten PDF-Dateien haben sowohl RGB- als auch CMYK-Farbbilder. Der Farbraum RGB ist für die Online-Anzeige vorzuziehen. |
+|  | Automatisch erkennen | Behält den Farbraum der PDF-Datei bei. |
+|  | RGB erzwingen | Konvertiert in den RGB-Farbraum. |
+|  | CMYK erzwingen | Konvertiert in den CMYK-Farbraum. |
+|  | Graufstufen erzwingen | Konvertiert in den Graustufenfarbraum. |
 
 #### Festlegen von eVideo-Uploadoptionen {#setting-evideo-upload-options}
 
-Sie können eine Videodatei neu kodieren, indem Sie aus einer Vielzahl von Videovorgaben auswählen.
+Sie können eine Videodatei umkodieren, indem Sie aus einer Vielzahl von Videovorgaben auswählen.
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
@@ -296,11 +300,11 @@ Sie können eine Videodatei neu kodieren, indem Sie aus einer Vielzahl von Video
 
 Wenn Sie aus hochgeladenen Bildern automatisch ein Bildset oder Rotationsset erstellen möchten, klicken Sie auf die Schaltfläche **[!UICONTROL Aktiv]** -Spalte für die Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. 
 
-Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssätzen](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 ### Gestreamte Uploads {#streamed-uploads}
 
-Wenn Sie zahlreiche Assets hochladen, ruft I/O die [!DNL Experience Manager] Der -Server erhöht sich drastisch, was die Upload-Effizienz verringert und sogar zu einer Zeitüberschreitung führen kann. [!DNL Experience Manager] Assets unterstützt gestreamte Uploads von Assets. Gestreamte Uploads sorgen für eine Datenträger-I/O-Reduzierung beim Hochladen, da die Speicherung von Assets in einem temporären Ordner auf dem Server vermieden wird, bevor Assets in das Repository kopiert werden. Stattdessen werden die Daten direkt an das Repository übertragen. Auf diese Weise wird die Zeit für das Hochladen von Assets und die Möglichkeit von Zeitüberschreitungen verringert. Der gestreamte Upload ist standardmäßig in aktiviert. [!DNL Experience Manager] Assets.
+Wenn Sie zahlreiche Assets hochladen, ruft I/O die [!DNL Experience Manager] Der -Server erhöht sich drastisch, was die Upload-Effizienz verringert und sogar zu einer Zeitüberschreitung führen kann. [!DNL Experience Manager] Assets unterstützt gestreamte Uploads von Assets. Durch gestreamte Uploads wird die Datenträger-E/A während des Upload-Vorgangs reduziert, indem Asset-Speicherung in einem temporären Ordner auf dem Server vermieden wird, bevor sie in das Repository kopiert werden. Stattdessen werden die Daten direkt an das Repository übertragen. Auf diese Weise wird die Zeit zum Hochladen großer Assets und die Möglichkeit von Timeouts reduziert. Der gestreamte Upload ist standardmäßig in aktiviert. [!DNL Experience Manager] Assets.
 
 Der Streaming-Upload ist deaktiviert für [!DNL Experience Manager] auf dem JEE-Server mit Servlet-API-Version unter 3.1 ausgeführt werden.
 
@@ -308,7 +312,7 @@ Der Streaming-Upload ist deaktiviert für [!DNL Experience Manager] auf dem JEE-
 
 Sie können ZIP-Archive wie jedes andere unterstützte Asset hochladen. Für ZIP-Dateien gelten dieselben Regeln für Dateinamen. Mit [!DNL Experience Manager] können Sie ein ZIP-Archiv in einen DAM-Speicherort extrahieren. 
 
-Wählen Sie jeweils ein ZIP-Archiv aus, klicken Sie auf **[!UICONTROL Archiv extrahieren]** und wählen Sie einen Zielordner aus. Wählen Sie eine Option für den Umgang mit eventuellen Konflikten. Wenn die Assets in der ZIP-Datei bereits im Zielordner vorhanden sind, können Sie eine der folgenden Optionen auswählen: Extrahieren überspringen, vorhandene Dateien ersetzen, beide Assets durch Umbenennen behalten oder neue Version erstellen.
+Wählen Sie jeweils ein ZIP-Archiv aus, klicken Sie auf **[!UICONTROL Archiv extrahieren]** und wählen Sie einen Zielordner aus. Wählen Sie gegebenenfalls eine Option zum Umgang mit Konflikten. Wenn die Assets in der ZIP-Datei bereits im Zielordner vorhanden sind, können Sie eine der folgenden Optionen auswählen: die Extraktion überspringen, vorhandene Dateien ersetzen, beide Assets durch Umbenennen beibehalten oder eine neue Version erstellen.
 
 Nach Abschluss des Extrahierungsvorgangs erhalten Sie von [!DNL Experience Manager] eine Benachrichtigung im Benachrichtigungsbereich. Während [!DNL Experience Manager] das ZIP-Archiv extrahiert, können Sie ohne Unterbrechung des Extrahierungsvorgangs mit Ihrer Arbeit fortfahren.
 
@@ -318,7 +322,7 @@ Die Funktion hat einige Einschränkungen:
 
 * Wenn sich ein gleichnamiger Ordner am Ziel befindet, werden die Assets aus der ZIP-Datei in diesen extrahiert.
 
-* Wenn Sie die Extrahierung abbrechen, werden die bereits extrahierten Assets nicht gelöscht.
+* Wenn Sie die Extraktion abbrechen, werden die bereits extrahierten Assets nicht gelöscht.
 
 * Sie können nicht gleichzeitig zwei ZIP-Dateien auswählen und extrahieren. Sie können jeweils nur ein ZIP-Archiv extrahieren.
 
@@ -331,11 +335,11 @@ Die Funktion hat einige Einschränkungen:
 
 1. Im Vorschaumodus ist eine Zoom-Funktion für [unterstützte Bildtypen](assets-formats.md#supported-raster-image-formats) verfügbar (mit interaktiver Bearbeitung).
 
-   Tippen Sie zum Vergrößern eines Assets auf **[!UICONTROL +]** (oder tippen Sie auf die Lupe des Assets). Um auszuzoomen, tippen Sie auf **[!UICONTROL -]**. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Mit dem Pfeil **[!UICONTROL Zoom zurücksetzen]** gelangen Sie zurück zur Originalansicht.
+   Tippen Sie zum Vergrößern eines Assets auf **[!UICONTROL +]** (oder tippen Sie auf die Lupe des Assets). Um auszuzoomen, tippen Sie auf **[!UICONTROL -]**. Beim Heranzoomen können Sie beliebige Bildbereiche durch Schwenken genauer untersuchen. Die **[!UICONTROL Zoom zurücksetzen]** Der Pfeil bringt Sie zurück zur Originalansicht.
 
    ![uploadicon](assets/uploadicon.png)
 
-   Tippen Sie auf die Schaltfläche **[!UICONTROL Zurücksetzen]**, um die Originalgröße der Ansicht wiederherzustellen.
+   Tippen Sie auf **[!UICONTROL Zurücksetzen]** -Schaltfläche, um die Originalgröße der Ansicht wiederherzustellen.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -376,15 +380,15 @@ Zum Erstellen von Tags benötigen Sie eine Schreibberechtigung für `/content/cq
 
    ![Bewertungen](assets/ratings.png)
 
-   Die Bewertungsnote, die Sie dem Asset zuweisen, wird unter **[!UICONTROL Ihre Bewertungen]** angezeigt. Die durchschnittliche Bewertungsnote, die das Asset von Benutzern erhält, wird unter **[!UICONTROL Bewertung]** angezeigt. Darüber hinaus wird die Aufschlüsselung der Bewertungen, die zur durchschnittlichen Bewertungsnote beitragen, unter **[!UICONTROL Bewertungsübersicht]** angezeigt. Sie können Assets basierend auf der durchschnittlichen Bewertungsnote durchsuchen.
+   Die Bewertungsbewertung, die Sie dem Asset zuweisen, wird unter **[!UICONTROL Ihre Bewertungen]**. Die durchschnittliche Bewertungsbewertung, die das Asset von Benutzern erhalten hat, die das Asset bewertet haben, wird unter **[!UICONTROL Bewertung]**. Darüber hinaus wird die Aufschlüsselung der Bewertungen, die zum durchschnittlichen Rating-Ergebnis beitragen, unter **[!UICONTROL Bewertungsaufschlüsselung]**. Sie können Assets basierend auf durchschnittlichen Bewertungen suchen.
 
 1. Um Nutzungsstatistiken für das Asset anzuzeigen, tippen Sie auf das **[!UICONTROL Insights]** Registerkarte.
 
-   Nutzungsstatistiken umfassen folgende Metriken:
+   Nutzungsstatistiken beinhalten Folgendes:
 
-   * Anzahl der Aufrufe oder Downloads des Assets.
-   * Kanäle/Geräte, über die das Asset genutzt wurde.
-   * Kreativlösungen, in denen das Asset kürzlich verwendet wurde.
+   * Gibt an, wie oft das Asset angezeigt oder heruntergeladen wurde.
+   * Kanäle/Geräte, über die das Asset verwendet wurde.
+   * Kreative Lösungen, in denen das Asset kürzlich verwendet wurde.
 
    Weitere Informationen finden Sie unter [Asset Insights](touch-ui-asset-insights.md).
 
@@ -393,15 +397,15 @@ Zum Erstellen von Tags benötigen Sie eine Schreibberechtigung für `/content/cq
 
 ## Kopieren von Assets {#copying-assets}
 
-Beim Kopieren eines Assets oder eines Ordners wird das gesamte Asset bzw. der Ordner mitsamt seiner Inhaltsstruktur kopiert. Ein kopiertes Asset oder ein kopierter Ordner wird am Zielspeicherort dupliziert. Das Asset am Quellspeicherort bleibt unverändert.
+Wenn Sie ein Asset oder einen Ordner kopieren, wird das gesamte Asset oder der Ordner zusammen mit der Inhaltsstruktur kopiert. Ein kopiertes Asset oder ein Ordner wird am Zielspeicherort dupliziert. Das Asset am Quellspeicherort wird nicht geändert.
 
-Einige wenige, für eine bestimmte Kopie eines Assets eindeutige Attribute werden nicht übertragen. Beispiele:
+Einige Attribute, die für eine bestimmte Kopie eines Assets eindeutig sind, werden nicht weitergeleitet. Beispiele:
 
 * Asset-ID, Erstellungsdatum und -zeitpunkt sowie Versionen und Versionsverlauf. Einige dieser Eigenschaften sind an den Eigenschaften `jcr:uuid`, `jcr:created` und `cq:name` zu erkennen.
 
 * Der Erstellungszeitpunkt und referenzierte Pfade sind für jedes Asset und jede seiner Ausgabedarstellungen eindeutig.
 
-Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine Teilkopie wird beim Kopieren eines Assets nicht erstellt.
+Die anderen Eigenschaften und Metadateninformationen werden beibehalten. Beim Kopieren eines Assets wird keine Teilkopie erstellt.
 
 1. Wählen Sie in der Assets-Benutzeroberfläche ein oder mehrere Assets aus und tippen Sie dann auf **[!UICONTROL Kopieren]** in der Symbolleiste. Alternativ können Sie die **[!UICONTROL Kopieren]** Schnellzugriff über die Asset-Karte.
 
@@ -421,7 +425,7 @@ Die übrigen Eigenschaften und Metadateninformationen werden beibehalten. Eine T
 
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
-   Die Assets werden in diesen Speicherort kopiert.
+   Die Assets werden an diesen Speicherort kopiert.
 
    >[!NOTE]
    >
@@ -453,8 +457,8 @@ So verschieben Sie Assets oder Ordner:
    * Klicken Sie auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
    >[!NOTE]
    >
-   >* Sie können denselben Namen für das Asset angeben, wenn sich am neuen Speicherort kein Asset mit diesem Namen befindet. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speichertort verschieben, an dem bereits ein Asset mit demselben Namen vorhanden ist. Wenn Sie denselben Namen verwenden, generiert das System automatisch eine Variante dieses Namens. Wenn Sie beispielsweise ein Asset mit dem Namen „Quadrat“ kopieren, generiert das System den Namen „Quadrat1“ für die Kopie.
-   >* Beim Umbenennen sind keine Leerzeichen in Dateinamen zulässig.
+   >* Sie können denselben Namen für das Asset angeben, wenn am neuen Speicherort kein Asset mit diesem Namen vorhanden ist. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speicherort verschieben, an dem sich ein Asset mit demselben Namen befindet. Wenn Sie denselben Namen verwenden, erzeugt das System automatisch eine Variation des Namens. Wenn Ihr Asset beispielsweise den Namen &quot;Quadrat&quot;hat, generiert das System den Namen &quot;Quadrat1&quot;für die Kopie.
+   >* Beim Umbenennen sind Leerzeichen im Dateinamen nicht zulässig.
 
 
 1. Führen Sie im Dialogfeld **[!UICONTROL Ziel auswählen]** eine der folgenden Aktionen aus:
@@ -524,7 +528,7 @@ Beim Verschieben von Assets durch Ziehen wird der Assistent [!UICONTROL Asset ve
 
    Sie können die Dimensionen für die anzuzeigende Ausgabedarstellung auf der Detailseite des entsprechenden Bild- oder Video-Assets konfigurieren. Basierend auf den von Ihnen festgelegten Dimensionen, [!DNL Experience Manager] Assets zeigt die Ausgabedarstellung mit den genauen oder nächstgelegenen Dimensionen an.
 
-   Überlagern Sie die **[!UICONTROL renditionpicker]** Knoten `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` und konfigurieren Sie den Wert der width-Eigenschaft. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um die Ausgabedarstellung auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung gibt die Eigenschaft **[!UICONTROL preferOriginal]** der Originalgröße den Vorzug, wenn das angepasste Wiedergabeformat größer ist als das Original.
+   Überlagern Sie die **[!UICONTROL renditionpicker]** Knoten `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` und konfigurieren Sie den Wert der width-Eigenschaft. Konfigurieren Sie die Eigenschaft **[!UICONTROL size (Long) in KB]** anstelle von „width“, um die Ausgabedarstellung auf der Asset-Detailseite auf Grundlage der Bildgröße anzupassen. Bei größenbasierter Anpassung wird die Eigenschaft **[!UICONTROL preferOriginal]** weist dem Original eine Voreinstellung zu, wenn die Größe der übereinstimmenden Ausgabedarstellung größer als das Original ist.
 
    Auf ähnliche Weise können Sie die **[!UICONTROL Anmerkung]** Seitenbild durch Überlagerung `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -542,9 +546,9 @@ Weitere Informationen zu Unter-Assets finden Sie unter [Verwalten von Unter-Asse
 
 Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen.
 
-Deaktivieren Sie außerdem die Schaltfläche „Löschen erzwingen“ mithilfe einer Überlagerung, um zu verhindern, dass Benutzer referenzierte Assets löschen und fehlerhafte Links hinterlassen.
+Deaktivieren Sie außerdem die Schaltfläche Löschen erzwingen mit einer Überlagerung, um Benutzer daran zu hindern, referenzierte Assets zu löschen und fehlerhafte Links zu hinterlassen.
 
-Sie benötigen eine Löschberechtigung für DAM/Asset, um ein Asset löschen zu können. Wenn Sie nur eine Änderungsberechtigung haben, haben Sie nur die Möglichkeit, die Asset-Metadaten zu bearbeiten und Notizen zum Asset hinzuzufügen. Sie können jedoch das Asset oder dessen Metadaten nicht löschen.
+Sie benötigen eine Löschberechtigung für DAM/Asset, um ein Asset löschen zu können. Wenn Sie nur über Änderungsberechtigungen verfügen, können Sie nur die Asset-Metadaten bearbeiten und dem Asset Anmerkungen hinzufügen. Sie können das Asset oder dessen Metadaten jedoch nicht löschen.
 
 **So löschen Sie Assets**:
 
@@ -598,11 +602,11 @@ Machen Sie sich mit den folgenden Einschränkungen und Tipps im Zusammenhang mit
 * Die Option [!UICONTROL Veröffentlichung verwalten] ist nur für Benutzerkonten mit Berechtigungen zur Replikation verfügbar.
 * Wenn Sie die Veröffentlichung eines komplexen Assets rückgängig machen, machen Sie die Veröffentlichung nur des Assets rückgängig. Machen Sie nicht die Veröffentlichung der Referenzen rückgängig, da diese möglicherweise auch von anderen veröffentlichten Assets referenziert werden.
 * Leere Ordner werden nicht veröffentlicht.
-* Wenn Sie ein Asset veröffentlichen, das momentan verarbeitet wird, wird nur der ursprüngliche Inhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann, oder veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
+* Wenn Sie ein Asset veröffentlichen, das verarbeitet wird, wird nur der Originalinhalt veröffentlicht. Die Ausgabedarstellungen fehlen. Warten Sie entweder, bis die Verarbeitung abgeschlossen ist, und veröffentlichen Sie das Asset erst dann, oder veröffentlichen Sie es erneut, wenn die Verarbeitung abgeschlossen ist.
 
 ## Geschlossene Benutzergruppe erstellen {#closed-user-group}
 
-Eine CUG (Closed User Group, geschlossene Benutzergruppe) wird verwendet, um den Zugriff auf bestimmte aus AEM veröffentlichte Asset-Ordner zu beschränken. Wenn Sie eine CUG für einen Ordner erstellen, wird der Zugriff auf diesen Ordner (einschließlich Ordner-Assets und Unterordnern) auf zugewiesene Mitglieder und Gruppen beschränkt. Um auf einen Ordner zuzugreifen, müssen Benutzer mit ihren Sicherheitsanmeldedaten angemeldet sein.
+Eine CUG (Closed User Group, geschlossene Benutzergruppe) wird verwendet, um den Zugriff auf bestimmte aus AEM veröffentlichte Asset-Ordner zu beschränken. Wenn Sie eine CUG für einen Ordner erstellen, ist der Zugriff auf den Ordner (einschließlich Ordner-Assets und Unterordnern) nur auf zugewiesene Mitglieder oder Gruppen beschränkt. Um auf den Ordner zugreifen zu können, müssen sie sich mit ihren Sicherheitsberechtigungen anmelden.
 
 CUG bietet eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschränken. Sie können auch eine Anmeldeseite für den Ordner konfigurieren.
 
@@ -613,18 +617,18 @@ CUG bietet eine zusätzliche Möglichkeit, den Zugriff auf Ihre Assets zu beschr
 
    ![add_user](assets/add_user.png)
 
-1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie anschließend den Pfad zur Anmeldeseite in AEM aus und speichern Sie die Änderungen.
+1. Um einen Anmeldebildschirm anzuzeigen, wenn Benutzer auf den Ordner zugreifen, wählen Sie die Option **[!UICONTROL Aktivieren]** aus. Wählen Sie dann den Pfad zu einer Anmeldeseite in AEM aus und speichern Sie die Änderungen.
 
    ![login_page](assets/login_page.png)
 
    Wenn Sie den Pfad zur Anmeldeseite nicht angeben, zeigt [!DNL Experience Manager] die standardmäßige Anmeldeseite in der Veröffentlichungsinstanz an.
 
-1. Veröffentlichen Sie den Ordner und versuchen Sie, über die Veröffentlichungsinstanz darauf zuzugreifen. Es wird ein Anmeldebildschirm angezeigt.
-1. Wenn Sie Mitglied der CUG sind, geben Sie Ihre Anmeldedaten ein. Nachdem Sie von [!DNL Experience Manager] authentifiziert wurden, wird der Ordner angezeigt.
+1. Veröffentlichen Sie den Ordner und versuchen Sie dann, über die Veröffentlichungsinstanz darauf zuzugreifen. Ein Anmeldebildschirm wird angezeigt.
+1. Wenn Sie CUG-Mitglied sind, geben Sie Ihre Sicherheitsberechtigungen ein. Nachdem Sie von [!DNL Experience Manager] authentifiziert wurden, wird der Ordner angezeigt.
 
 ## Suchen von Assets {#searching-assets}
 
-Die grundlegende Suche wird im Abschnitt über das [Suchen und Filtern](/help/sites-authoring/search.md#search-and-filter) detailliert beschrieben. Verwenden Sie die **[!UICONTROL Suche]** -Bedienfeld, um nach Assets, Tags und Metadaten zu suchen. Mithilfe des Platzhaltersternchens können Sie nach Teilen einer Zeichenfolge suchen. Darüber hinaus können Sie die **[!UICONTROL Suche]** Bedienfeld verwenden [Suchfacetten](search-facets.md).
+Die einfache Suche wird im Abschnitt [Suchen und Filtern](/help/sites-authoring/search.md#search-and-filter) Abschnitt. Verwenden Sie die **[!UICONTROL Suche]** -Bedienfeld, um nach Assets, Tags und Metadaten zu suchen. Sie können Teile einer Zeichenfolge mit dem Platzhalterzeichen durchsuchen. Darüber hinaus können Sie die **[!UICONTROL Suche]** Bedienfeld verwenden [Suchfacetten](search-facets.md).
 
 ![filters_panel](assets/filters_panel.png)
 
@@ -657,7 +661,7 @@ Weitere Informationen finden Sie unter [Anzeigen und Auswählen von Ressourcen](
 
 ## Bearbeiten von Bildern {#editing-images}
 
-Die Bearbeitungswerkzeuge im [!DNL Experience Manager] Mit der Assets-Benutzeroberfläche können Sie kleine Bearbeitungsvorgänge an Bild-Assets durchführen. Sie können Bilder beschneiden, drehen, spiegeln und auf andere Arten bearbeiten. Sie können auch Imagemaps zu den Assets hinzufügen.
+Die Bearbeitungswerkzeuge im [!DNL Experience Manager] Mit der Assets-Benutzeroberfläche können Sie kleine Bearbeitungsvorgänge an Bild-Assets durchführen. Sie können Bilder beschneiden, drehen, spiegeln und andere Bearbeitungsvorgänge ausführen. Sie können auch Imagemaps zu Assets hinzufügen.
 
 Die Bildbearbeitung wird für Dateien mit den folgenden Formaten unterstützt:
 
@@ -670,11 +674,11 @@ Bei einigen Komponenten: **[!UICONTROL Vollbild]** -Modus bietet zusätzliche Op
 
 Um eine TXT-Datei zu bearbeiten, legen Sie **[!UICONTROL Day CQ Link Externalizer]** von Configuration Manager aus.
 
-Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu finden Sie in [Hinzufügen von Imagemaps](image-maps.md).
+Sie können Imagemaps auch mit dem Bildeditor hinzufügen. Weitere Informationen finden Sie unter [Hinzufügen von Imagemaps](image-maps.md).
 
 **So bearbeiten Sie Bilder**:
 
-1. Führen Sie einen der folgenden Schritte aus, um ein Element im Bearbeitungsmodus zu öffnen:
+1. Führen Sie einen der folgenden Schritte aus, um ein Asset im Bearbeitungsmodus zu öffnen:
 
    * Wählen Sie das Asset aus und klicken Sie dann auf das **[!UICONTROL Bearbeiten]** in der Symbolleiste.
    * Tippen **[!UICONTROL Bearbeiten]** -Option, die in der Kartenansicht für ein Asset angezeigt wird.
@@ -715,7 +719,7 @@ Sie können auch Imagemaps mit dem Bild-Editor hinzufügen. Einzelheiten dazu fi
 
 Die **[!UICONTROL Timeline]** können Sie verschiedene Ereignisse für ein ausgewähltes Element anzeigen, z. B. aktive Workflows für ein Asset, Kommentare, Anmerkungen, Aktivitätsprotokolle und Versionen.
 
-In der [Konsole für Sammlungen](managing-collections-touch-ui.md#navigating-the-collections-console) bietet die Liste **[!UICONTROL Alle anzeigen]** Optionen, um nur Kommentare und Workflows anzuzeigen. Darüber hinaus wird die Zeitleiste nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
+Im [Konsole &quot;Sammlungen&quot;](managing-collections-touch-ui.md#navigating-the-collections-console), die **[!UICONTROL Alle anzeigen]** list bietet Optionen zum Anzeigen von Kommentaren und Workflows. Darüber hinaus wird die Zeitleiste nur für Sammlungen auf der höchsten Ebene angezeigt, die in der Konsole aufgelistet sind. Sie wird nicht angezeigt, wenn Sie in einer der Sammlungen navigieren.
 
 **[!UICONTROL Timeline]** enthält mehrere [Für Inhaltsfragmente spezifische Optionen](content-fragments-managing.md#timeline-for-content-fragments); Diese Funktion erfordert [[!DNL Experience Manager] 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) oder höher.
 
@@ -726,11 +730,11 @@ In der [Konsole für Sammlungen](managing-collections-touch-ui.md#navigating-the
 
    ![Zeitleiste](assets/timeline.png)
 
-1. Verwenden Sie in der angezeigten Liste die Liste **[!UICONTROL Alle anzeigen]**, um die Ergebnisse anhand der Kommentare, Versionen, Workflows und Aktivitäten zu filtern.
+1. Verwenden Sie in der angezeigten Liste die **[!UICONTROL Alle anzeigen]** Liste zum Filtern der Ergebnisse anhand von Kommentaren, Versionen, Workflows und Aktivitäten.
 
    ![timeline_options](assets/timeline_options.png)
 
-## Anmerkungen hinzufügen {#annotating}
+## Hinzufügen von Anmerkungen {#annotating}
 
 Anmerkungen sind Kommentare oder erläuternde Hinweise, die Bildern oder Videos hinzugefügt werden. Anmerkungen bieten Marketern die Möglichkeit, zusammenzuarbeiten und Feedback zu Assets bereitzustellen.
 
@@ -742,7 +746,7 @@ Sie können mehrere Anmerkungen hinzufügen, bevor Sie diese speichern.
 
 Sie können Anmerkungen zu Video-Assets hinzufügen. Während Videos mit Anmerkungen versehen werden, wird der Player angehalten, damit Sie einem Frame eine Anmerkung hinzufügen können. Details finden Sie unter [Verwalten von Video-Assets](managing-video-assets.md).
 
-Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung jedoch untergeordnete Sammlungen enthält, können Sie der übergeordneten Sammlung nur Anmerkungen oder Kommentare hinzufügen. Die **[!UICONTROL Anmerken]** ist nicht für untergeordnete Sammlungen verfügbar.
+Sie können einer Sammlung auch Anmerkungen hinzufügen. Wenn eine Sammlung jedoch untergeordnete Sammlungen enthält, können Sie der übergeordneten Sammlung nur Anmerkungen oder Kommentare hinzufügen. Die **[!UICONTROL Anmerken]** ist nicht für untergeordnete Sammlungen verfügbar.
 
 **Hinzufügen von Anmerkungen**:
 
@@ -758,7 +762,7 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-1. Um einen Benutzer über eine Anmerkung zu benachrichtigen, geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie den Kommentar hinzu. Um beispielsweise Aaron McDonald über eine Anmerkung zu benachrichtigen, geben Sie &quot;@aa&quot;ein. Vorschläge für alle übereinstimmenden Benutzer werden in einer Liste angezeigt. Wählen Sie die E-Mail-Adresse von Aaron aus der Liste aus, um ihn mit dem Kommentar zu versehen. Sie können auch weitere Benutzer innerhalb, vor oder nach der Anmerkung taggen.
+1. Um einen Benutzer über eine Anmerkung zu benachrichtigen, geben Sie die E-Mail-Adresse des Benutzers an und fügen Sie den Kommentar hinzu. Um beispielsweise Aaron McDonald über eine Anmerkung zu benachrichtigen, geben Sie &quot;@aa&quot;ein. Hinweise für alle entsprechenden Benutzer werden in einer Liste angezeigt. Wählen Sie die E-Mail-Adresse von Aaron aus der Liste aus, um ihn mit dem Kommentar zu versehen. Sie können auch weitere Benutzer innerhalb, vor oder nach der Anmerkung taggen.
 
    >[!NOTE]
    >
@@ -766,7 +770,7 @@ Sie können auch Anmerkungen zu einer Sammlung hinzufügen. Wenn eine Sammlung j
 
    ![chlimage_1-31](assets/chlimage_1-31.png)
 
-1. Tippen Sie nach dem Hinzufügen der Anmerkung auf **[!UICONTROL Hinzufügen]** , um es zu speichern. Eine Benachrichtigung über die Anmerkung wird an Aaron gesendet.
+1. Tippen Sie nach dem Hinzufügen der Anmerkung auf **[!UICONTROL Hinzufügen]** , um es zu speichern. Eine Benachrichtigung für die Anmerkung wird an Aaron gesendet.
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
@@ -817,11 +821,11 @@ Sie können auch nur die Anmerkungen oder nur den Prüfungsstatus drucken.
 >
 >Beim Drucken des Assets mit Anmerkungen als PDF können Sie mehrere Anmerkungen auswählen.
 
-Längere Anmerkungen werden in der PDF-Datei möglicherweise nicht richtig gerendert. Für optimales Rendering wird empfohlen, Anmerkungen auf 50 Wörter zu begrenzen.
+Lange Anmerkungen werden in der PDF-Datei möglicherweise nicht richtig dargestellt. Für eine optimale Darstellung empfiehlt Adobe, Anmerkungen auf 50 Wörter zu beschränken.
 
 Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf die **[!UICONTROL Drucken]** und folgen Sie den Anweisungen im Assistenten. Das Symbol **[!UICONTROL Drucken]** erscheint nur dann in der Symbolleiste, wenn dem Asset mindestens eine Anmerkung oder ein Prüfungsstatus zugewiesen ist.
 
-1. Öffnen Sie von der Assets-Benutzeroberfläche aus die Vorschauseite für ein Asset.
+1. Öffnen Sie in der Assets-Benutzeroberfläche die Vorschauseite für ein Asset.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Um alle Anmerkungen und den Prüfungsstatus zu drucken, gehen Sie zu Schritt 4.
@@ -857,11 +861,11 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf die **[!UI
    >
    >Wenn das Asset Unter-Assets enthält, können Sie alle Unter-Assets zusammen mit ihren jeweiligen seitenweisen Anmerkungen drucken.
 
-   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern, z. B. Schriftfarbe, -größe und -stil, Hintergrundfarbe der Kommentare und Status, öffnen Sie die **[!UICONTROL PDF-Konfiguration von Anmerkungen]** von **[!UICONTROL Configuration Manager]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerken](managing-assets-touch-ui.md#annotating).
+   Um das Erscheinungsbild der gerenderten PDF-Datei zu ändern, z. B. Schriftfarbe, -größe und -stil, Hintergrundfarbe der Kommentare und Status, öffnen Sie die **[!UICONTROL PDF-Konfiguration von Anmerkungen]** von **[!UICONTROL Configuration Manager]** und ändern Sie die gewünschten Optionen. Um beispielsweise die Anzeigefarbe des Status „Bestätigt“ zu ändern, modifizieren Sie im entsprechenden Feld den Farb-Code. Informationen zum Ändern der Schriftfarbe von Anmerkungen finden Sie unter [Anmerkungen](managing-assets-touch-ui.md#annotating).
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-   Kehren Sie zu der gerenderten PDF-Datei zurück und aktualisieren Sie sie. Der aktualisierte PDF-Datei spiegelt die von Ihnen vorgenommenen Änderungen wider.
+   Kehren Sie zur gerenderten PDF-Datei zurück und aktualisieren Sie sie. Die aktualisierte PDF spiegelt die von Ihnen vorgenommenen Änderungen wider.
 
 **So drucken Sie Anmerkungen in Fremdsprachen**: Wenn ein Asset Anmerkungen in Fremdsprachen enthält (insbesondere Sprachen, die nicht lateinisch sind), müssen Sie zunächst den CQ-DAM-Handler-Gibson Font Manager Service auf der Seite [!DNL Experience Manager] -Server, um diese Anmerkungen drucken zu können. Beim Konfigurieren des CQ-DAM-Handler-Gibson Font Manager Service geben Sie den Pfad an, über den auf die gewünschten Sprachen zugegriffen werden kann.
 
@@ -869,8 +873,8 @@ Um die Anmerkungen und den Prüfungsstatus zu drucken, tippen Sie auf die **[!UI
 1. So konfigurieren Sie **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** führen Sie einen der folgenden Schritte aus:
 
    * Im **[!UICONTROL Systemschriftarten]** Ordneroption, geben Sie den vollständigen Pfad zum Schriftartenverzeichnis auf Ihrem System an. Wenn Sie z. B. ein Mac-Benutzer sind, können Sie den Pfad als `/Library/Fonts` im **[!UICONTROL Systemschriftarten]** Ordneroption. [!DNL Experience Manager] ruft die Schriftarten aus diesem Verzeichnis ab.
-   * Erstellen Sie im Ordner **crx-quickstart** ein Verzeichnis mit dem Namen **[!UICONTROL fonts]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** ruft die Schriftarten automatisch am Speicherort ab `crx-quickstart/fonts`. Sie können diesen Standardpfad aus dem **[!UICONTROL Adobe Server Fonts]** Ordneroption.
-   * Erstellen Sie einen neuen Ordner für Schriftarten in Ihrem System und speichern Sie in diesem Ordner die gewünschten Schriftarten. Geben Sie dann den vollständigen Pfad zu diesem Ordner im **[!UICONTROL Kundenschriftarten]** Ordneroption.
+   * Erstellen Sie ein Verzeichnis mit dem Namen **Schriften** innerhalb der **[!UICONTROL crx-quickstart]** Ordner. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** ruft die Schriftarten automatisch am Speicherort ab `crx-quickstart/fonts`. Sie können diesen Standardpfad aus dem **[!UICONTROL Adobe Server Fonts]** Ordneroption.
+   * Erstellen Sie einen neuen Ordner für Schriftarten in Ihrem System und speichern Sie die gewünschten Schriftarten im Ordner. Geben Sie dann den vollständigen Pfad zu diesem Ordner im **[!UICONTROL Kundenschriftarten]** Ordneroption.
 
 1. Zugriff auf **[!UICONTROL Anmerkungs-PDF]** Konfiguration über die URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
 1. Konfigurieren Sie die **[!UICONTROL Anmerkungs-PDF]** mit der richtigen Schriftartfamilie wie folgt:
@@ -887,26 +891,26 @@ Im Folgenden finden Sie ein Beispiel für die Konfiguration [!DNL Experience Man
    * Noto Sans (für europäische Sprachen): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
    * Noto-Schriftarten für eine Sprache Ihrer Wahl: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
 
-1. Konfigurieren Sie die PDF-Datei, die Anmerkungen enthält, indem Sie den Schriftartparameter auf `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` setzen. Diese Konfiguration ist standardmäßig verfügbar und funktioniert bei allen europäischen und CJK-Sprachen.
+1. Konfigurieren Sie die PDF-Datei, die Anmerkungen enthält, indem Sie den Schriftartparameter auf `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` setzen. Diese Konfiguration ist standardmäßig verfügbar und funktioniert für alle europäischen und CJK-Sprachen.
 1. Wenn sich die Sprache Ihrer Wahl von den Sprachen unterscheidet, die in Schritt 2 erwähnt werden, fügen Sie der Standardschriftart einen entsprechenden (kommagetrennten) Eintrag hinzu.
 
 ## Erstellen der Asset-Versionierung {#asset-versioning}
 
-Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bestimmten Zeitpunkt aufgezeichnet. Sie hilft Ihnen bei der späteren Wiederherstellung eines vorherigen Asset-Zustands. Wenn Sie etwa eine Änderung an einem Asset rückgängig machen wollen, stellen Sie die unbearbeitete Version des Assets wieder her.
+Bei der Versionierung wird eine Momentaufnahme von digitalen Assets zu einem bestimmten Zeitpunkt aufgezeichnet. Mithilfe der Versionierung können Sie Assets zu einem späteren Zeitpunkt wieder in einen vorherigen Status zurücksetzen. Wenn Sie etwa eine Änderung an einem Asset rückgängig machen wollen, stellen Sie die unbearbeitete Version des Assets wieder her.
 
 In folgenden Szenarien werden Versionen erstellt:
 
-* Sie ändern ein Bild in einer anderen Anwendung und laden es in [!DNL Experience Manager] Assets. Es wird eine Version des Bildes erstellt, damit das Original nicht überschrieben wird.
-* Sie können die Metadaten eines Assets bearbeiten.
+* Sie ändern ein Bild in einer anderen Anwendung und laden es in [!DNL Experience Manager] Assets. Eine Version des Bildes wird erstellt, damit das Originalbild nicht überschrieben wird.
+* Sie bearbeiten die Metadaten eines Assets.
 * Sie verwenden das [!DNL Experience Manager]-Desktop-Programm, um ein vorhandenes Asset auszuchecken und Ihre Änderungen zu speichern. Bei jedem Speichern des Assets wird eine neue Version erstellt.
 
 Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabedarstellungen gemeinsam mit der Version gespeichert. Ausgabedarstellungen sind gerenderte Alternativen für dieselben Bilder, z. B. eine PNG-Ausgabedarstellung einer hochgeladenen JPEG-Datei.
 
-Die Versionierungsfunktion bietet folgende Möglichkeiten:
+Mit der Versionierungsfunktion können Sie Folgendes tun:
 
-* Erstellen einer Version eines Assets
-* Anzeigen der aktuellen Version eines Assets
-* Zurücksetzen des Assets auf eine frühere Version
+* Erstellen Sie eine Version eines Assets.
+* Anzeigen der aktuellen Version für ein Asset.
+* Wiederherstellen einer früheren Version des Assets.
 
 **So erstellen Sie die Asset-Versionierung**:
 
@@ -918,7 +922,7 @@ Die Versionierungsfunktion bietet folgende Möglichkeiten:
 
 1. Klicken **[!UICONTROL Aktionen]** unten, um die verfügbaren Aktionen anzuzeigen, die Sie für das Asset ausführen können.
 
-1. Klicken Sie auf **[!UICONTROL Als Version speichern]**, um eine Version für das Asset zu erstellen.
+1. Klicken **[!UICONTROL Als Version speichern]** , um eine Version für das Asset zu erstellen.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -958,12 +962,12 @@ Siehe [Anwenden eines Workflows auf eine [!DNL Experience Manager] Asset](/help/
 
 ## Über Sammlungen {#collections}
 
-Bei einer Sammlung handelt es sich um eine sortierte Gruppe von Assets. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
+Eine Sammlung ist ein geordneter Satz von Assets. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden.
 
-* Eine Sammlung kann Assets aus verschiedenen Speicherorten enthalten, da sie nur Verweise zu diesen Assets aufweisen. Jede Sammlung hält die referenzielle Integrität von Assets aufrecht.
-* Sie können Sammlungen für mehrere Benutzer mit unterschiedlichen Berechtigungsstufen wie Bearbeiten, Anzeigen usw. freigeben.
+* Eine Sammlung kann Assets aus verschiedenen Speicherorten enthalten, da sie nur Verweise auf diese Assets enthalten. Jede Sammlung behält die referenzielle Integrität von Assets bei.
+* Sie können Sammlungen für mehrere Benutzer mit unterschiedlichen Berechtigungsstufen (Bearbeiten, Anzeigen usw.) freigeben.
 
-Ein Benutzer kann über Zugriff auf mehrere Sammlungen verfügen. Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets sortieren:
+Ein Benutzer kann Zugriff auf mehrere Sammlungen haben. Sammlungen weisen die folgenden Typen auf, basierend auf der Art und Weise, wie sie Assets sammeln:
 
 * Eine Sammlung mit **statische Referenzliste** von Assets, Ordnern und anderen Sammlungen.
 
@@ -973,4 +977,4 @@ Siehe [Verwalten von Sammlungen](managing-collections-touch-ui.md) für Details 
 
 >[!NOTE]
 >
->Sie benötigen die entsprechenden Zugriffsrechte für Ihr Konto, um Assets zu erstellen oder zu bearbeiten.
+>Sie benötigen geeignete Zugriffsrechte für Ihr Konto, um Assets zu erstellen oder zu bearbeiten.

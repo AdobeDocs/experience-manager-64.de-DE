@@ -1,7 +1,7 @@
 ---
 title: Einrichten des Visual Studio-Projekts und Erstellen der Windows-App
 seo-title: Set up the Visual Studio project and build the Windows app
-description: Erfahren Sie, wie Sie ein Visual Studio-Projekt einrichten können, um die AEM Forms-App für Windows-Mobilgeräte zu erstellen.
+description: Erfahren Sie, wie Sie ein Visual Studio-Projekt einrichten, um die AEM Forms Windows-Mobile-Device App zu erstellen.
 seo-description: Learn how to set up a Visual Studio project to build the AEM Forms Windows mobile device app.
 uuid: 0a72387a-d920-4f66-8983-d500ef0ecd90
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 exl-id: ae0463de-271f-47c0-b947-f6d149ded8ab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 100%
+source-wordcount: '945'
+ht-degree: 59%
 
 ---
 
 # Einrichten des Visual Studio-Projekts und Erstellen des Windows-Programms {#set-up-the-visual-studio-project-and-build-the-windows-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In AEM Forms wird der vollständige Quell-Code des AEM Forms-Programms bereitgestellt. Die Quelle enthält alle Komponenten, die für ein benutzerdefiniertes Arbeitsbereich-Programm erforderlich sind. Das Quell-Code-Archiv `adobe-lc-mobileworkspace-src-<version>.zip` ist Bestandteil des `adobe-aemfd-forms-app-src-pkg-<version>.zip`-Pakets auf Software Distribution.
 
@@ -24,9 +28,9 @@ Um die Quelle des AEM Forms-Programms zu erhalten, führen Sie die folgenden Sch
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
-1. Im Abschnitt **[!UICONTROL Filter]**:
-   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
+1. Im **[!UICONTROL Filter]** Abschnitt:
+   1. Auswählen **[!UICONTROL Forms]** von **[!UICONTROL Lösung]** Dropdown-Liste.
+   2. Wählen Sie die Version aus und geben Sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Tippen Sie auf den für Ihr Betriebssystem zutreffenden Paketnamen, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
@@ -45,24 +49,24 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur des Ordners `windows` im Or
 
 ## Einrichten der Umgebung {#setting-up-the-environment}
 
-Für Windows-Geräte benötigen Sie Folgendes:
+Für Windows-Geräte benötigen Sie:
 
 * Microsoft Windows 8.1 oder Windows 10
 * Microsoft Visual Studio 2015
-* Microsoft Visual Studio-Tools für Apache Cordova
+* Microsoft Visual Studio Tools for Apache Cordova
 
-## Einrichten des Visual Studio-Projekts für die AEM Forms-App {#setting-up-visual-studio-project-for-aem-forms-app}
+## Einrichten eines Visual Studio-Projekts für die AEM Forms-App {#setting-up-visual-studio-project-for-aem-forms-app}
 
-Führen Sie folgende Schritte durch, um das AEM Forms-App-Projekt in Visual Studio einzurichten:
+Führen Sie die folgenden Schritte aus, um das AEM Forms-App-Projekt in Visual Studio einzurichten.
 
 1. Kopieren Sie das Archiv `adobe-lc-mobileworkspace-src-<version>.zip` in den Ordner `%HOMEPATH%\Projects` auf dem Windows 8.1- oder Windows 10-Gerät mit installiertem und konfiguriertem Visual Studio 2015.
 1. Entpacken Sie das Archiv in das Verzeichnis `%HOMEPATH%\Projects\MobileWorkspace`.
 1. Wechseln Sie in das Verzeichnis `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows`.
 1. Öffnen Sie die Datei `CordovaApp.sln` in Visual Studio 2015 und erstellen Sie das AEM Forms-Programm.
 
-## Erstellen der AEM Forms-App {#build-aem-forms-app}
+## AEM Forms-App erstellen {#build-aem-forms-app}
 
-Führen Sie die folgenden Schritte zum Erstellen und Bereitstellen der AEM Forms-App durch:
+Führen Sie die folgenden Schritte aus, um die AEM Forms-App zu erstellen und bereitzustellen.
 
 >[!NOTE]
 >
@@ -70,7 +74,7 @@ Führen Sie die folgenden Schritte zum Erstellen und Bereitstellen der AEM Forms
 
 1. Wählen Sie in der Visual Studio-Standardsymbolleiste in der Dropdown-Liste für den Build-Modus die Option **Release** aus.
 
-1. Wählen Sie je nach Ihrer Plattform Windows-AnyCPU, Windows-x64 oder Windows-x86. Empfohlen wird Windows-AnyCPU.
+1. Wählen Sie je nach Plattform Windows-AnyCPU, Windows-x64 oder Windows-x86 aus. Windows-AnyCPU wird empfohlen.
 1. Klicken Sie im Visual Studio Solution Explorer mit der rechten Maustaste auf das Projekt **CordovaApp.Windows** und wählen Sie **Store > Create AppPackages**.
 
    ![createappackages](assets/createapppackages.png)
@@ -91,7 +95,7 @@ Führen Sie die folgenden Schritte zum Erstellen und Bereitstellen der AEM Forms
 
    ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
-1. Nach Erstellung des Projekts können Sie die App mit folgenden Programmen installieren:
+1. Nachdem das Projekt erstellt wurde, können Sie die App wie folgt installieren:
 
    * Windows PowerShell
    * Visual Studio
@@ -99,7 +103,7 @@ Führen Sie die folgenden Schritte zum Erstellen und Bereitstellen der AEM Forms
    Das `.appx`-Paket erfordert für eine erfolgreiche Installation folgende Elemente:
 
    1. WinJS-Bibliothek
-   1. Stellen Sie sicher, dass das Paket mit einem selbstsignierten Zertifikat oder einem von einer vertrauenswürdigen Stelle signierten öffentlichen Zertifikat, wie etwa VeriSign, geliefert wird.
+   1. Stellen Sie sicher, dass das Paket mit einem selbstsignierten Zertifikat oder einem von einer vertrauenswürdigen Stelle signierten öffentlichen Zertifikat wie VeriSign geliefert wird.
    1. Entwicklerlizenz
 
    Der Ordner „Platforms\windows\AppPackages\CordovaApp.Windows_3.0.2.0_anycpu_Test“ enthält vier Hauptkomponenten:
@@ -113,25 +117,25 @@ Führen Sie die folgenden Schritte zum Erstellen und Bereitstellen der AEM Forms
 
 ## Bereitstellen einer App mit Windows PowerShell {#deploying-an-app-using-windows-powershell}
 
-Es gibt zwei Möglichkeiten zum Installieren der Anwendung auf einem Windows-Gerät.
+Es gibt zwei Möglichkeiten, die Anwendung auf einem Windows-Gerät zu installieren.
 
 ### Erwerb der Entwicklerlizenz {#by-acquiring-the-developer-license}
 
 1. Klicken Sie mit der rechten Maustaste auf die PowerShell-Datei ( `Add-AppDevPackage.ps1)`, und wählen Sie **Ausführen mit PowerShell**.
 
-1. Bei der Einrichtung werden Sie dazu aufgefordert, eine Entwicklerlizenz zu erwerben. Verwenden Sie die Microsoft-Kontoanmeldeinformationen zum Erwerben der Entwicklerlizenz.
+1. Beim Setup werden Sie aufgefordert, eine Entwicklerlizenz zu erhalten. Verwenden Sie Microsoft-Kontoanmeldeinformationen, um eine Entwicklerlizenz zu erwerben.
 
    Diese Lizenz ist für 30 Tage gültig und Sie können Sie kostenlos verlängern.
 
-1. Wenn Sie die Entwicklerlizenz erwerben, installiert das Setupprogramm das selbstsignierte Zertifikat auf dem System und die Anwendung wird erfolgreich installiert.
+1. Wenn Sie die Entwicklerlizenz erwerben, installiert das Setup das selbstsignierte Zertifikat auf dem System und die Anwendung wird erfolgreich installiert.
 
-### Verwenden von unternehmenseigenen Geräten {#by-using-enterprise-owned-devices}
+### Verwendung unternehmenseigener Geräte {#by-using-enterprise-owned-devices}
 
 Für unternehmenseigene Geräte, die in die Unternehmens-Domain eingebunden sind, ist der Erwerb einer Entwicklerlizenz nicht erforderlich.
 
-Unternehmenseigene Geräte verwenden die Professional und Enterprise Edition von Windows.
+Unternehmenseigene Geräte verwenden die Professional- und Enterprise-Editionen von Windows.
 
-Microsoft empfiehlt das Installieren eines von einer vertrauenswürdigen Stelle ausgestellten öffentlichen Zertifikats, wie etwa VeriSign.
+Microsoft empfiehlt die Installation eines von einer vertrauenswürdigen Stelle ausgestellten öffentlichen Zertifikats wie VeriSign.
 
 So stellen Sie das Programm bereit:
 
@@ -141,9 +145,9 @@ So stellen Sie das Programm bereit:
 **So aktivieren Sie die Gruppenrichtlinien-Einstellung:**
 
 1. Führen Sie auf Ihrem Gerät `gpedit.msc` aus.
-1. Navigieren Sie zu **Computerkonfiguration > Administrative Vorlagen > Windows-Komponente > Bereitstellung von App-Paketen**.
-1. Klicken Sie mit der rechten Maustaste auf **Installation aller vertrauenswürdigen Apps zulassen**.
-1. Klicken Sie auf **Bearbeiten** und wählen Sie **Aktiviert**.
+1. Navigieren Sie zu **Computerkonfiguration > Administrative Vorlagen > Windows-Komponente > Bereitstellung von App-Paketen**.
+1. Rechtsklick auf **Installation aller vertrauenswürdigen Apps zulassen**.
+1. Klicken **Bearbeiten** und wählen Sie **Aktiviert**.
 
 1. Klicken Sie auf **OK**.
 
@@ -151,11 +155,11 @@ Bearbeiten Sie das von Visual Studio generierte PowerShell-Skript, um zu verhind
 
 Legen Sie die Variable im PowerShell-Skript wie folgt fest: `$NeedDeveloperLicense = $false`.
 
-Für Geräte, die nicht in die Domain eingebunden sind, ist ein Querladen des Produktaktivierungsschlüssels erforderlich. Diesen können Sie von einem Windows-Händler erwerben.
+Für Geräte, die nicht in die Domain eingebunden sind, ist ein Querladen des Produktaktivierungsschlüssels erforderlich. Sie können es von einem Windows-Wiederverkäufer erwerben.
 
-Für die Windows 8.1 Home Edition gibt es keine Gruppenrichtlinie, ein Querladen innerhalb des Unternehmens ist nicht zulässig und Sie können sie nicht in die Unternehmens-Domain einbinden. Stellen Sie die App mithilfe der Entwicklerlizenz auf einem Gerät mit Windows 8.1 Home Edition bereit.
+Für die Windows 8.1 Home Edition gibt es keine Gruppenrichtlinie, ein Querladen innerhalb des Unternehmens ist nicht zulässig und Sie können sie nicht in die Unternehmens-Domain einbinden. Stellen Sie die App mithilfe der Entwicklerlizenz auf einem Windows 8.1 Home Edition-Gerät bereit.
 
-Klicken Sie [hier](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx), um weitere Informationen zu erhalten.
+Klicken Sie für weitere Informationen auf [here](https://blogs.msdn.com/b/mvpawardprogram/archive/2014/03/24/side-loading-deployment-of-windows-store-apps-in-enterprises-step-by-step.aspx).
 
 ## Bereitstellen einer App mit Visual Studio {#deploying-an-app-using-visual-studio}
 
@@ -165,5 +169,5 @@ So installieren Sie die App mit Visual Studio unter Windows:
 
    Weitere Informationen finden Sie unter [Ausführen von Windows Store-Apps auf einem Remote-Computer](https://docs.microsoft.com/de-de/visualstudio/debugger/run-windows-store-apps-on-a-remote-machine).
 
-1. Wählen Sie, während Sie die App in Visual Studio geöffnet haben, in der Liste der Lösungsplattformen Windows-x64, Windows-x86 oder Windows-AnyCPU und wählen Sie anschließend **Remotecomputer**.
+1. Wenn Ihre App in Visual Studio geöffnet ist, wählen Sie Windows-x64, Windows-x86 oder Windows-AnyCPU aus der Liste der Lösungsplattformen und wählen Sie **Remote-Computer**.
 1. Ihre App wird auf dem Remotecomputer bereitgestellt.

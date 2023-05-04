@@ -1,7 +1,7 @@
 ---
 title: Designs und der Designer
 seo-title: Designs and the Designer
-description: Sie müssen ein Design für Ihre Website erstellen. In AEM verwenden Sie dazu den Designer.
+description: Sie müssen ein Design für Ihre Website erstellen, und AEM verwenden dazu Designer
 seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
 uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: 8a4fc7c7-03bc-44db-93f1-dbd76fc9dbd7
-source-git-commit: 9ae048ca2811a56c5d6f0b2415fcfcccc4384dbf
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 70%
 
 ---
 
 # Designs und der Designer{#designs-and-the-designer}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!CAUTION]
 >
@@ -27,9 +31,9 @@ Mit dem Designer erstellen Sie mit der [klassischen Benutzeroberfläche](/help/r
 
 >[!NOTE]
 >
->Weitere Informationen zum Webzugriff finden Sie unter [AEM und Richtlinien für barrierefreien Webzugang](/help/managing/web-accessibility.md).
+>Weitere Informationen zur Barrierefreiheit im Web finden Sie unter [AEM und Richtlinien für barrierefreien Web-Zugang](/help/managing/web-accessibility.md).
 
-## Verwenden des Designers {#using-the-designer}
+## Verwenden von Designer {#using-the-designer}
 
 Das Design wird auf der Registerkarte **Tools** im Abschnitt **Designs** definiert:
 
@@ -43,11 +47,11 @@ Designs werden gespeichert unter `/apps/<your-project>`. Der Pfad zu einem Desig
 
 >[!NOTE]
 >
->Alle Änderungen, die im Designmodus an einer Seite vorgenommen werden, werden unterhalb des Designknotens der Website beibehalten und automatisch auf alle Seiten mit demselben Design angewendet.
+>Alle Änderungen, die auf einer Seite im Designmodus vorgenommen werden, bleiben unter dem Design-Knoten der Site erhalten und werden automatisch auf alle Seiten angewendet, die dasselbe Design aufweisen.
 
-## Voraussetzungen {#what-you-will-need}
+## Was Sie benötigen {#what-you-will-need}
 
-Zur Realisierung des Design benötigen Sie:
+Zur Realisierung Ihres Designs benötigen Sie Folgendes:
 
 **CSS**: Cascading Style Sheets definieren die Formate bestimmter Bereiche auf Ihren Seiten.
 

@@ -1,7 +1,7 @@
 ---
 title: Das CSRF Protection Framework
 seo-title: The CSRF Protection Framework
-description: Das Framework verwendet Tokens, um sicherzustellen, dass die Client-Anfrage legitim ist
+description: Das Framework verwendet Token, um sicherzustellen, dass die Client-Anfrage legitim ist
 seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
 uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
@@ -10,18 +10,22 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: 533c348e-517f-4d70-a89c-bfc87f71a633
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 100%
+source-wordcount: '318'
+ht-degree: 76%
 
 ---
 
-# Das CSRF Protection Framework{#the-csrf-protection-framework}
+# Das CSRF Protection Framework {#the-csrf-protection-framework}
 
-Neben dem Apache Sling Referrer Filter bietet Adobe zudem ein neues CSRF Protection Framework zum Schutz vor dieser Art von Angriffen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Das Framework verwendet Tokens, um sicherzustellen, dass die Client-Anfrage legitim ist. Die Tokens werden erzeugt, wenn das Formular an den Client gesendet wird, und validiert, wenn das Formular an den Server zurückgesendet wird.
+Zusätzlich zum Apache Sling Referrer-Filter bietet Adobe auch ein neues CSRF Protection Framework zum Schutz vor Angriffen dieser Art.
+
+Das Framework verwendet Tokens, um sicherzustellen, dass die Client-Anfrage legitim ist. Die Token werden generiert, wenn das Formular an den Client gesendet und validiert wird, wenn das Formular an den Server zurückgesendet wird.
 
 >[!NOTE]
 >

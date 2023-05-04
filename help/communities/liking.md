@@ -10,14 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 exl-id: b5918a54-ef7b-4b3f-bca7-ed0344bab4aa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 7%
+source-wordcount: '262'
+ht-degree: 8%
 
 ---
 
 # Verwenden von &quot;Gefällt mir&quot; {#using-liking}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die `Liking`-Komponente ist ein nützliches Tool, mit dem Benutzer zu einem bestimmten Inhalt Stellung nehmen können, z. B. zu einem Kommentar in einem Forum. Mit dem `Liking`-Komponente verwenden, wählen die Mitglieder das Herzsymbol aus, um eine positive Meinung anzuzeigen.
 

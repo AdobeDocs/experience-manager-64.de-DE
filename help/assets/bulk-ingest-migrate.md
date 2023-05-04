@@ -12,14 +12,18 @@ discoiquuid: 6198e613-a867-49a8-b9a5-a05e7889821c
 exl-id: f9bb59f6-39a5-4804-8abe-12783d4162c9
 feature: Configuration
 role: Admin,User
-source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 30%
+source-wordcount: '424'
+ht-degree: 23%
 
 ---
 
 # Installieren von Feature Pack 18912 für die Massenmigration von Assets {#installing-feature-pack}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Installation von Feature Pack 18912 ist _optional_.
 
@@ -29,7 +33,7 @@ Mit Feature Pack 18912 können Sie Assets entweder per FTP AEM direkt in Dynamic
 >
 >Sie können das Feature Pack zwar verwenden, um Assets eigenständig von Dynamic Media Classic in den Dynamic Media-Scene7-Modus zu migrieren, AEM Assets jedoch mit der FTP-Funktion in Dynamic Media Classic stapelweise zu migrieren, die Adobe jedoch nicht. *not* empfiehlt diese Methode aufgrund der Komplexität, die damit verbunden ist.
 >
->Daher sind die Migrationspaket-Packs wie dieses *only* unterstützt als Teil eines Migrationsprojekts durch [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+>Daher sind die Migrationspaket-Packs wie dieses *only* unterstützt als Teil eines Migrationsprojekts durch [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html).
 
 Bevor Sie dieses Feature Pack installieren können, müssen Sie zunächst einen Dienstbenutzer erstellen und diese Informationen für die Adobe bereitstellen.
 
@@ -38,7 +42,7 @@ Siehe auch [Konfigurieren von Dynamic Media - Scene7-Modus](https://helpx.adobe.
 **Gehen Sie zur Installation von Feature Pack 18912 für die Massenmigration von Assets wie folgt vor**,
 
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Tools > Sicherheit > Benutzer > Benutzer erstellen]**. Dieser Dienstbenutzer benötigt Lese-/Schreibberechtigungen für `/content/dam`.
-1. Im **[!UICONTROL ID]** und **[!UICONTROL Passwort]** -Felder einen Benutzernamen und ein Kennwort eingeben; Beispiel: `FTP User`. Dieser Name wird in der Zeitleiste als der Benutzer angezeigt, der das Asset erstellt hat. Wenn ein Asset über FTP hochgeladen wird, gilt es als erstellt, wenn es auf den FTP-Server hochgeladen und in AEM gepusht wurde.
+1. Im **[!UICONTROL ID]** und **[!UICONTROL Passwort]** -Felder einen Benutzernamen und ein Kennwort eingeben; Beispiel: `FTP User`. Dieser Name wird in der Zeitleiste als der Benutzer angezeigt, der das Asset erstellt hat. Wenn ein Asset aus FTP hochgeladen wird, gilt ein Asset als erstellt, wenn es auf den FTP-Server hochgeladen und an AEM gesendet wird.
 1. Kontaktieren Sie den [Kunden-Support von Adobe für Experience Manager](https://helpx.adobe.com/de/contact/enterprise-support.ec.html), um den Download von Feature Pack 18912 anzufordern. Sie benötigen möglicherweise die folgenden Informationen, wenn Sie sich an den Support wenden:
 
    * Server-IP-Adresse für Ihre Autoreninstanz, einschließlich der Portnummer (standardmäßig ist die Portnummer 4502).

@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 84%
+source-wordcount: '856'
+ht-degree: 63%
 
 ---
 
 # Erweitern der Asset-Suche {#extending-assets-search}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können die Suchfunktionen von Adobe Experience Manager Assets erweitern. Vorkonfiguriert, [!DNL Experience Manager] Assets sucht nach Assets anhand von Zeichenfolgen.
 
@@ -22,9 +26,9 @@ Sie können dem [!DNL Experience Manager] Asset-Admin-Bedienfeld.
 
 >[!CAUTION]
 >
->Seit Einführung von [!DNL Experience Manager] 6.4 ist die klassische Benutzeroberfläche veraltet. Eine entsprechende Ankündigung finden Sie unter [Veraltete und entfernte Funktionen](../release-notes/deprecated-removed-features.md). Es empfiehlt sich, die Touch-optimierte Benutzeroberfläche zu verwenden. Informationen zu Anpassungen finden Sie unter [Suchfacetten](search-facets.md).
+>Seit Einführung von [!DNL Experience Manager] 6.4 ist die klassische Benutzeroberfläche veraltet. Informationen zur Ankündigung finden Sie unter [Eingestellte und entfernte Funktionen](../release-notes/deprecated-removed-features.md). Es wird empfohlen, die Touch-optimierte Benutzeroberfläche zu verwenden. Informationen zu Anpassungen finden Sie unter [Suchfacetten](search-facets.md).
 
-## Überlagern {#overlaying}
+## Überlagerung {#overlaying}
 
 Um die vorkonfigurierten Eigenschaften zu überlagern, kopieren Sie den Knoten `facets` aus `/libs/dam/content/search/searchpanel` nach `/apps/dam/content/search/searchpanel/` oder geben Sie eine weitere `facetURL`-Eigenschaft in die Konfiguration des Suchfensters ein (standardmäßig `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
@@ -32,7 +36,7 @@ Um die vorkonfigurierten Eigenschaften zu überlagern, kopieren Sie den Knoten `
 
 >[!NOTE]
 >
->Standardmäßig ist die Verzeichnisstruktur unter /`apps` nicht vorhanden und muss erstellt werden. Stellen Sie sicher, dass die Knotentypen den Typen unter /`libs` entsprechen.
+>Standardmäßig wird die Verzeichnisstruktur unter / `apps` existiert nicht und muss erstellt werden. Stellen Sie sicher, dass die Knotentypen mit den Typen unter / übereinstimmen. `libs`.
 
 ## Hinzufügen von Registerkarten {#adding-tabs}
 
@@ -53,14 +57,14 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie im [!DNL 
 
 Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
 
-Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispielprädikate finden Sie unter `/libs/cq/search/components/predicates`.
+Es empfiehlt sich, ein vorhandenes Prädikat zu kopieren und anzupassen. Beispielprädikate finden Sie unter `/libs/cq/search/components/predicates`.
 
 ### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
 
 So erstellen Sie ein Eigenschaftsprädikat:
 
 1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. `/apps/geometrixx/components/titlepredicate`.
-1. Fügen Sie `content.xml`:
+1. Hinzufügen `content.xml`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -143,7 +147,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
    ```
 
 1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE einen Knoten hinzu `cq:editConfig` Primärtyp `cq:EditConfig`. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft `cq:actions` mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
-1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. `press.html`) in den Designmodus. Aktivieren Sie Ihre neue Komponente für das Eigenschaften-Absatzsystem (z. B. **links**).
+1. Navigieren Sie zu Ihrem Browser und auf Ihrer Beispielseite (z. B. `press.html`) in den Designmodus wechseln und Ihre neue Komponente für das Prädikat-Absatzsystem aktivieren (z. B. **left**).
 
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein, geben Sie einen Suchbegriff – z. B. **Raute** – ein und klicken Sie auf das Lupensymbol, um die Suche zu starten.
 
@@ -156,7 +160,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
 So erstellen Sie eine Gruppeneigenschaft:
 
 1. Erstellen Sie einen Komponentenordner in Ihrem Projektverzeichnis, z. B. `/apps/geometrixx/components/picspredicate`.
-1. Fügen Sie `content.xml`:
+1. Hinzufügen `content.xml`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -170,7 +174,7 @@ So erstellen Sie eine Gruppeneigenschaft:
        componentGroup="Search"/>
    ```
 
-1. Fügen Sie `titlepredicate.jsp`:
+1. Hinzufügen `titlepredicate.jsp`:
 
    ```java
    <%--
@@ -250,7 +254,7 @@ So erstellen Sie eine Gruppeneigenschaft:
    ```
 
 1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeitbar zu machen, fügen Sie in CRXDE einen Knoten hinzu `cq:editConfig` Primärtyp `cq:EditConfig`. Um Absätze entfernen zu können, fügen Sie eine `cq:actions`-Mehrwerteigenschaft mit `DELETE` als einzigem Wert hinzu.
-1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. `press.html`) in den Designmodus. Aktivieren Sie Ihre neue Komponente für das Eigenschaften-Absatzsystem (z. B. **links**).
+1. Navigieren Sie zu Ihrem Browser und auf Ihrer Beispielseite (z. B. `press.html`) in den Designmodus wechseln und Ihre neue Komponente für das Prädikat-Absatzsystem aktivieren (z. B. **left**).
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein.
 
 ### Installierte Eigenschaften-Widgets {#installed-predicate-widgets}
@@ -301,8 +305,8 @@ Die folgenden Eigenschaften sind als vorkonfigurierte ExtJS-Widgets verfügbar.
 | searchCallback | Funktion | Callback zum Auslösen der Suche. Standardwert ist `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Nummer | Zeitlimit, nach dem searchCallback ausgelöst wird. Standardwert ist 800 ms. |
 
-## Anpassen von Suchergebnissen {#customizing-search-results}
+## Anpassen der Suchergebnisse {#customizing-search-results}
 
-Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. [!DNL Experience Manager] Assets umfasst einen Satz vordefinierter Linsen, mit denen Sie eine Asset-Freigaben-Seite anpassen können. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
+Die Darstellung von Suchergebnissen in einer Asset-Freigaben-Seite wird durch die ausgewählte Linse geregelt. [!DNL Experience Manager] Assets enthält einen Satz vordefinierter Linsen, mit denen eine Asset-Freigabe-Seite angepasst werden kann. Diese Art der Anpassung einer Asset-Freigabe wird unter [Erstellen und Konfigurieren einer Asset-Freigaben-Seite](assets-finder-editor.md#creating-and-configuring-an-asset-share-page) beschrieben.
 
 Zusätzlich zu den bereits vorhandenen Linsen können [!DNL Experience Manager]-Entwicklerinnen und -Entwickler auch eigene Linsen erstellen.

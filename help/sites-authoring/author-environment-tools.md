@@ -10,22 +10,26 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 exl-id: 5bb5f984-f741-4185-acb0-ffcf7e116875
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 96%
+source-wordcount: '2160'
+ht-degree: 83%
 
 ---
 
 # Autorenumgebung und Tools{#authoring-the-environment-and-tools}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten. Die verfügbaren Tools können über verschiedene Konsolen und Seiteneditoren aufgerufen werden.
 
 ## Verwalten Ihrer Site {#managing-your-site}
 
-Die **Sites-Konsole** bietet Ihnen die Möglichkeit, auf Ihrer Website zu navigieren und diese zu verwalten. Hierfür stehen neben der Kopfzeilen- und Symbolleiste auch Aktionssymbole (für die jeweils ausgewählte Ressource) sowie Breadcrumbs und ggf. sekundäre Leisten (z. B. für Zeit und Verweise) zur Verfügung.
+Die **Sites** Mit der Konsole können Sie auf Ihrer Website navigieren und diese verwalten. Verwenden Sie dazu die Kopfzeilenleiste, Symbolleiste, Aktionssymbole (für die ausgewählte Ressource zutreffend), Breadcrumbs und ggf. sekundäre Leisten (z. B. Timeline und Verweise).
 
-Beispiel Kartenansicht:
+Beispiel: Kartenansicht:
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
@@ -47,8 +51,8 @@ Sie können eine Seite mit dem Seiteneditor bearbeiten. Beispiel:
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
-* über den Selektor [**Seiteninformationen**](/help/sites-authoring/editing-page-properties.md#page-properties), der die Einführungsfolien (wie beim erstmaligen Zugriff auf den Editor) anzeigt.
-* über das [Konfigurationsdialogfeld](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) für bestimmte Komponenten (mithilfe des Symbols „?“ in der Symbolleiste des Dialogfelds), das die kontextsensitive Hilfe anzeigt.
+* die [**Seiteninformationen**](/help/sites-authoring/editing-page-properties.md#page-properties) Selektor; Hier werden die Einführungsfolien angezeigt (wie beim ersten Zugriff auf den Editor gezeigt).
+* die [Konfiguration](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) Dialogfeld für bestimmte Komponenten (mithilfe des Symbols ? Symbol in der Symbolleiste des Dialogfelds); zeigt kontextsensitive Hilfe an.
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-authoring/basic-handling.md#accessing-help).
 
@@ -91,7 +95,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
    * Symbol oder Abkürzung
 
       * Die Symbole für die Standardkomponenten sind monochrom dargestellt.
-      * Für die Abkürzungen werden immer die ersten zwei Buchstaben des Komponentennamens verwendet.
+      * Abkürzungen sind immer die ersten beiden Zeichen des Komponentennamen.
 
    In der oberen Symbolleiste des Komponenten-Browsers haben Sie folgende Möglichkeiten:
 
@@ -128,7 +132,7 @@ Um ein Asset zu der Seite hinzuzufügen, wählen Sie es aus und ziehen Sie es an
 
 * Ein [Platzhalter](/help/sites-authoring/editing-content.md#component-placeholder) im Absatzsystem zum Erstellen einer neuen Komponente des entsprechenden Typs.
 
-   * Sie können beispielsweise ein Asset des Typs „Bild“ in das Absatzsystem ziehen, um eine Bildkomponente zu erstellen.
+   * Sie können beispielsweise ein Asset des Typs &quot;Bild&quot;auf das Absatzsystem ziehen, um eine Bildkomponente zu erstellen.
 
 >[!NOTE]
 >
@@ -149,7 +153,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 >
 >Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1.024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
 
-* **Mobilgerät, z. B. iPad**
+* **Mobilgerät wie iPad**
 
    Der Asset-Browser deckt die gesamte bearbeitete Seite ab.
 
@@ -181,7 +185,7 @@ Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. 
 
 ![screen_shot_2018-03-22at142526](assets/screen_shot_2018-03-22at142526.png)
 
-Da eine Seite häufig zahlreiche Komponenten desselben Typs enthält, wird in der Komponentenstruktur neben dem Namen des Komponententyps (in schwarz dargestellt) zusätzlich eine Beschreibung angezeigt (in grau dargestellt). Der Text für diese Beschreibung wird aus den allgemeinen Eigenschaften der Komponente (z. B. Titel oder Text) entnommen.
+Eine Seite kann problemlos aus vielen Komponenten desselben Typs bestehen. Daher wird in der Komponentenstruktur nach dem Namen des Komponententyps (in Schwarz) beschreibender Text (grau) angezeigt. Der Text für diese Beschreibung wird aus den allgemeinen Eigenschaften der Komponente (z. B. Titel oder Text) entnommen.
 
 Die Komponententypen werden in der für die Benutzeroberfläche ausgewählten Sprache angezeigt, die Beschreibung dagegen in der Sprache, die für die Seite verwendet wird.
 
@@ -213,7 +217,7 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 * Launches
 * Live Copies
 * Sprachkopien
-* Verwendung der Verweiskomponente
+* Verwendung der Referenzkomponente
 * Verweise auf Produktseiten (auf der Konsole „E-Commerce - Produkte“)
 
 Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie **Verweise** wie folgt:
@@ -226,9 +230,9 @@ Wenn Ihre Seite Inhaltsfragmente enthält, haben Sie auch Zugriff auf den [Brows
 
 Wählen Sie den gewünschten Verweistyp, um weitere Informationen anzuzeigen: In bestimmten Situationen sind weitere Aktionen verfügbar, wenn Sie einen bestimmten Verweis auswählen:
 
-* Verwendung der Verweiskomponente (z. B. Navigieren zur referenzierenden bzw. referenzierten Seite)
+* Instanzen der Referenzkomponente (z. B. Navigieren zur referenzierenden/referenzierten Seite)
 * [Verweise auf Produktseiten](/help/sites-administering/generic.md#showing-product-references) (verfügbar in der Konsole „E-Commerce - Produkte“)
-* [Starts](/help/sites-authoring/launches.md)
+* [Launches](/help/sites-authoring/launches.md)
 * [Live Copies](/help/sites-administering/msm.md) zeigt die Pfade aller Live Copies an, die auf der gewählten Ressource basieren.
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 * [Sprachkopien](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)
@@ -251,7 +255,7 @@ Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets a
 
 ## Seiteninformationen {#page-information}
 
-Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch Details zur letzten Bearbeitung und zur letzten Aktivierung enthält. Abhängig von den Eigenschaften der Seite (und der Website, zu der sie gehört) sind u. U. weitere Optionen verfügbar:
+Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch Details zur letzten Bearbeitung und zur letzten Aktivierung enthält. Je nach den Eigenschaften der Seite (und ihrer Site) stehen mehr oder weniger Optionen zur Verfügung:
 
 ![screen_shot_2018-03-22at154210](assets/screen_shot_2018-03-22at154210.png)
 
@@ -265,9 +269,9 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 * [In Admin anzeigen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Hilfe](/help/sites-authoring/basic-handling.md#accessing-help)
 
-Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen zur Verfügung:
+Beispiel: **Seiteninformationen** verfügt außerdem über die folgenden Optionen:
 
-* [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist.
+* [Launch bewerben](/help/sites-authoring/launches-promoting.md) wenn es sich bei der Seite um einen Launch handelt.
 * [Vorlage bearbeiten](/help/sites-authoring/templates.md) wenn die Seite auf einer [bearbeitbare Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [In klassischer Benutzeroberfläche öffnen](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page), wenn diese Option [von einer bzw. einem Admin aktiviert](/help/sites-administering/enable-classic-ui-editor.md) wurde.
@@ -284,7 +288,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 * [Strukturvorlage:](/help/sites-authoring/scaffolding.md) Hilft Ihnen bei der Erstellung einer großen Anzahl von Seiten, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen.
 * [Entwickler:](/help/sites-developing/developer-mode.md) Ermöglicht die Durchführung verschiedener Aktionen (Berechtigungen erforderlich), zu denen die Untersuchung der technischen Details einer Seite und von deren Komponenten gehört.
 
-* [Design](/help/sites-authoring/default-components-designmode.md): Hierüber können Sie Komponenten auf einer Seite aktivieren bzw. deaktivieren und das Design der auf der Seite verwendeten Komponenten konfigurieren (wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert).
+* [Design](/help/sites-authoring/default-components-designmode.md) - ermöglicht es Ihnen, Komponenten für die Verwendung auf einer Seite zu aktivieren bzw. zu deaktivieren und das Design der Komponente zu konfigurieren (wenn die Seite auf einer [statische Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Zielsetzung:](/help/sites-authoring/content-targeting-touch.md) Steigerung der Inhaltsrelevanz durch Zielsetzung und Messung über alle Kanäle hinweg.
 * [Activity Map:](/help/sites-authoring/pa-using.md) Zeigt Analytics-Daten für die Seite an.
@@ -316,7 +320,7 @@ Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werde
 
 Im vorliegenden Beispiel wird zur Verdeutlichung die Bildkomponente verwendet. Weitere Informationen zur Verwendung und Bearbeitung von Komponenten finden Sie unter [Komponenten für die Seitenbearbeitung](/help/sites-authoring/default-components.md).
 
-Die Pfad-Felder bieten jetzt auch automatisches Ausfüllen und Vorausschau auf Eingaben, um die Suche nach einer Ressource zu vereinfachen. Sobald Sie etwas in das Pfad-Feld eingeben, schlägt AEM Ihrer Eingabe entsprechend passende Pfade vor.
+Pfadfelder verfügen jetzt über automatische Vervollständigungs- und Vorausschau-Funktionen, um die Suche nach einer Ressource zu vereinfachen. Beginnen Sie einfach mit der Eingabe in das Pfadfeld und die AEM bietet Ihnen passende Pfade während der Eingabe.
 
 ![screen_shot_2018-03-22at154403](assets/screen_shot_2018-03-22at154403.png)
 
@@ -336,7 +340,7 @@ Wenn der Kontext die Auswahl mehrerer Ressourcen zulässt, wird bei Auswahl eine
 
 ![chlimage_1-294](assets/chlimage_1-294.png)
 
-Mithilfe der Breadcrumbs können Sie innerhalb der Ressourcenhierarchie schnell von einem Punkt zu einem anderen wechseln.
+Mit den Breadcrumbs können Sie schnell in die Ressourcenhierarchie springen.
 
 ![chlimage_1-295](assets/chlimage_1-295.png)
 

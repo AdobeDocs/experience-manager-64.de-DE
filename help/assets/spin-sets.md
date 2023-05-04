@@ -8,18 +8,22 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 72%
+source-wordcount: '1959'
+ht-degree: 49%
 
 ---
 
 # Rotationssets {#spin-sets}
 
-Ein Rotationsset simuliert das Drehen eines Gegenstands zur genaueren Untersuchung. Mit Rotationssets können Artikel aus jedem Winkel betrachtet werden, um die wesentlichen visuellen Details von allen Seiten sehen zu können.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Ein Rotationsset simuliert die 360-Grad-Anzeige. Dynamic Media bietet Rotationssets mit einer Achse, in denen ein Artikel gedreht werden kann. Darüber hinaus können Benutzer alle Ansichten mit nur wenigen Mausklicks frei zoomen und schwenken. So können Benutzer einen Artikel aus einem bestimmten Blickwinkel genauer untersuchen.
+Ein Rotationsset simuliert den realen Vorgang, ein Objekt umzudrehen, um es zu untersuchen. Rotationssets ermöglichen es, Elemente aus jedem Winkel anzuzeigen und die wichtigsten visuellen Details aus jedem Winkel zu erhalten.
+
+Ein Rotationsset simuliert eine 360-Grad-Anzeige. Dynamic Media bietet Rotationssets mit einer Achse, in denen ein Artikel gedreht werden kann. Darüber hinaus können Benutzer mit wenigen einfachen Mausklicks beliebige Ansichten &quot;frei&quot;zoomen und schwenken. Auf diese Weise können Benutzer ein Element aus einem bestimmten Blickwinkel genauer untersuchen.
 
 Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** gekennzeichnet. Darüber hinaus wird bei veröffentlichten Rotationssets das Veröffentlichungsdatum (durch das **[!UICONTROL Welt]**-Symbol gekennzeichnet) zusammen mit dem Datum der letzten Änderung (durch das **[!UICONTROL Bleistift]**-Symbol gekennzeichnet) im Banner angezeigt.
 
@@ -57,7 +61,7 @@ Gehen Sie wie folgt vor, um die Arbeit mit Rotationssets zu beschleunigen:
    >
    >*Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Aufnahme erstellt und sind nur im Scene7-Modus von Dynamic Media verfügbar*.
 
-1. Richten Sie [Rotationsset-Viewer-Vorgaben](managing-viewer-presets.md) nach Bedarf ein.
+1. Einrichten [Rotationsset-Viewer-Vorgaben](managing-viewer-presets.md)nach Bedarf.
 
    Administratoren können Rotationsset-Viewer-Vorgaben erstellen oder ändern. Um das Rotationsset mit einer Viewer-Vorgabe anzuzeigen, wählen Sie das Rotationsset aus und wählen Sie im Dropdown-Menü in der linken Seitenleiste die Option **[!UICONTROL Viewer]**.
 
@@ -75,11 +79,11 @@ Gehen Sie wie folgt vor, um die Arbeit mit Rotationssets zu beschleunigen:
 
 1. [Veröffentlichen von Rotationssets.](publishing-dynamicmedia-assets.md)
 
-   Beim Veröffentlichen eines Rotationssets wird die Reihenfolge aktiviert, in der Bilder in einem Rotationsset angezeigt werden. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.**[!UICONTROL URL]** und **[!UICONTROL Einbetten]** Zeichenfolge. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](managing-viewer-presets.md).
+   Beim Veröffentlichen eines Rotationssets wird die Reihenfolge aktiviert, in der Bilder in einem Rotationsset angezeigt werden. Sortieren Sie sie so, dass die Rotation eine glatte 360-Grad-Ansicht ist.**[!UICONTROL URL]** und **[!UICONTROL Einbetten]** Zeichenfolge. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](managing-viewer-presets.md).
 
 1. [Verknüpfen Sie URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md) oder [betten Sie den Video- oder Bild-Viewer ein](embed-code.md).
 
-   AEM Assets erstellt URL-Aufrufe für Rotationssets und aktiviert diese, nachdem Sie die Rotationssets veröffentlicht haben. Sie können diese URLs kopieren, wenn Sie eine Asset-Vorschau anzeigen. Alternativ können Sie sie auf Ihrer Website einbetten.
+   AEM Assets erstellt URL-Aufrufe für Rotationssets und aktiviert diese, nachdem Sie die Rotationssets veröffentlicht haben. Sie können diese URLs während der Asset-Vorschau kopieren. Alternativ können Sie sie auf Ihrer Website einbetten.
 
    Wählen Sie dazu das Rotationsset aus und klicken Sie dann im Dropdown-Menü in der linken Seitenleiste auf **[!UICONTROL Viewer]**.
 
@@ -95,17 +99,17 @@ Bilder für Rotationssets können Sie [genauso wie alle anderen Assets in AEM A
 
 ### Richtlinien für die Aufnahme von Rotationsset-Bildern {#guidelines-for-shooting-spin-set-images}
 
-Im Folgenden finden Sie einige Best Practices für Rotationsset-Bilder. Im Allgemeinen gilt: Je mehr Bilder ein Rotationsset enthält, desto besser gelingt der Bildrotationseffekt. Wenn Sie aber zahlreiche Bilder in das Set aufnehmen, dauert es auch länger, bis die Bilder geladen werden. AEM empfiehlt die folgenden Richtlinien für die Aufnahme von Bildern für Rotationssets.
+Im Folgenden finden Sie einige Best Practices für Rotationsset-Bilder. Im Allgemeinen gilt: Je mehr Bilder Sie in einem Rotationsset haben, desto besser ist der Bildspinnereffekt. Das Einschließen vieler Bilder in das Set erhöht jedoch auch die Zeit, die zum Laden der Bilder benötigt wird. AEM empfiehlt die folgenden Richtlinien für die Aufnahme von Bildern zur Verwendung in Rotationssets:
 
 * Verwenden Sie mindestens 8 bis 12 Bilder für ein eindimensionales Rotationsset und 16 bis 24 Bilder für ein zweidimensionales Rotationsset. Mindestens 8 Bilder sind erforderlich, um die Drehung um 360 Grad zu ermöglichen. Eindimensionale Rotationssets werden häufiger verwendet, da zweidimensionale Rotationssets sehr aufwendig zu erstellen sind.
-* Verwenden Sie ein verlustfreies Format: TIFF und PNG werden empfohlen.
-* Maskieren Sie alle Bilder so, dass der Artikel vor einem rein weißen oder kontrastreichen Hintergrund erscheint. Fügen Sie optional Schatten hinzu.
+* Verwenden Sie ein verlustfreies Format; TIFF und PNG werden empfohlen.
+* Maskieren Sie alle Bilder so, dass das Element auf einem rein weißen oder anderen kontrastreichen Hintergrund angezeigt wird. Fügen Sie optional Schatten hinzu.
 * Stellen Sie sicher, dass die Produktdetails gut beleuchtet und fokussiert sind.
-* Denken Sie z. B. an Rotationsbilder für Bekleidung an einer Schaufensterpuppe oder einem Modell. Die Schaufensterpuppe ist häufig entweder komplett maskiert (eine Schaufensterpuppe aus Glas) oder es wird eine stilisierte Schaufensterpuppe im Bild gezeigt. Sie können ein modellbezogenes Rotationsset erstellen, indem Sie die Anzahl der Winkel definieren. Markieren Sie jeden Winkel mit Klebeband auf dem Boden, um dem Modell anzugeben, einen Schritt zu machen und in die Richtung der jeweiligen Aufnahme zu schauen.
+* Nehmen Sie Drehbilder für Modekleidung mit einer Schaufensterpuppe oder einem Modell. Häufig ist das Mannequin entweder vollständig maskiert (mit einem Glasmannequin) oder eine stilisierte Mannequin/Dressform wird im Bild gezeigt. Sie können ein modellbezogenes Rotationsset erstellen, indem Sie die Anzahl der Winkel definieren. Markieren Sie jeden Winkel mit Klebeband auf dem Boden, um das Modell zu bewegen und in die Richtung jedes Schusses zu sehen.
 
 ## Erstellen von Rotationssets  {#creating-spin-sets}
 
-Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.
+Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Sortieren Sie sie so, dass die Rotation eine glatte 360-Grad-Ansicht ist.
 
 >[!NOTE]
 >
@@ -113,7 +117,7 @@ Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf,
 >
 >Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Aufnahme erstellt und sind nur im Scene7-Modus von Dynamic Media verfügbar.
 >
->Siehe „Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets“ in [Konfigurieren von Dynamic Media – Scene7-Modus](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>Siehe &quot;Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets&quot;in [Konfigurieren von Dynamic Media - Scene7-Modus](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Begrenzung:
 
@@ -140,7 +144,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
    * In der linken oberen Ecke des **[!UICONTROL Rotationsset-Editor]** Seite, tippen Sie auf **[!UICONTROL Asset hinzufügen]**.
    * In der Mitte des **[!UICONTROL Rotationsset-Editor]** Seite, tippen Sie auf **[!UICONTROL Tippen, um den Asset-Selektor zu öffnen]**.
 
-   Tippen Sie, um die gewünschten Assets für das Rotationsset auszuwählen. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie die Assets ausgewählt haben, tippen Sie auf **[!UICONTROL Auswählen]**.
+   Tippen Sie, um die gewünschten Assets für das Rotationsset auszuwählen. Die ausgewählten Assets sind mit einem Häkchen versehen. Wenn Sie fertig sind, tippen Sie oben rechts auf der Seite auf **[!UICONTROL Auswählen]**.
 
    Mit dem Asset-Selektor können Sie nach Assets suchen, indem Sie ein Keyword eingeben und auf **[!UICONTROL Eingabe]** tippen. Sie können auch Filter anwenden, um Ihre Suchergebnisse genauer abzustimmen. Sie können nach Pfad, Sammlung, Dateityp und Tag filtern. Wählen Sie den Filter und tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Filter]**. Um die Ansicht zu ändern, tippen Sie oben rechts auf der Seite auf die **[!UICONTROL Ansicht]** Symbol und tippen Sie dann auf **[!UICONTROL Spaltenansicht]**, **[!UICONTROL Kartenansicht]** oder **[!UICONTROL Listenansicht]**.
 
@@ -148,7 +152,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
 
-1. Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können die Assets nach dem Hinzufügen manuell neu anordnen oder sortieren. Ziehen Sie bei Bedarf die **[!UICONTROL Neu anordnen]** rechts neben dem Dateinamen des Assets, um Bilder in der Setliste nach oben oder unten anzuordnen.
+1. Assets, die Sie Ihrem Set hinzufügen, werden automatisch in alphanumerischer Reihenfolge hinzugefügt. Sie können Assets nach dem Hinzufügen manuell neu anordnen oder sortieren. Ziehen Sie bei Bedarf die **[!UICONTROL Neu anordnen]** rechts neben dem Dateinamen des Assets, um Bilder in der Setliste nach oben oder unten anzuordnen.
 
    ![spin_set_assets6-4](assets/spin_set_assets6-4.png)
 
@@ -161,7 +165,7 @@ Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
 
 ## Anzeigen von Rotationssets {#viewing-spin-sets}
 
-Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen. Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberfläche angezeigt. Es gibt drei verschiedene Arten, auf über Stapelsatzvorgaben erstellte Sätze zuzugreifen. (Diese Methoden sind auch dann verfügbar, wenn Sie die Rotationssets in der Benutzeroberfläche erstellt haben.)
+Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen. Mit Stapelsatzvorgaben erstellte Sets werden jedoch *nicht* in der Benutzeroberfläche angezeigt. Sie können auf Sets zugreifen, die über Stapelsatzvorgaben erstellt wurden, und zwar auf drei verschiedene Arten. (Diese Methoden sind auch dann verfügbar, wenn Sie die Rotationssets in der Benutzeroberfläche erstellt haben.)
 
 Sets können auch über die Benutzeroberfläche angezeigt werden, wie unter [Bearbeiten von Rotationssets](#editing-spin-sets) beschrieben.
 
@@ -183,7 +187,7 @@ Sets können auch über die Benutzeroberfläche angezeigt werden, wie unter [Bea
 
 ## Bearbeiten von Rotationssets {#editing-spin-sets}
 
-Sie können mehrere Bearbeitungsaufgaben für Rotationssets ausführen, z. B. die folgenden:
+Sie können verschiedene Bearbeitungsaufgaben für Rotationssets ausführen, z. B.:
 
 * Fügen Sie dem Rotationsset Bilder hinzu.
 * Ordnen Sie Bilder im Rotationsset neu an.
@@ -195,13 +199,13 @@ Sie können mehrere Bearbeitungsaufgaben für Rotationssets ausführen, z. B. d
 
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Zeigen Sie mit der Maus auf ein Rotationsset-Asset und tippen Sie auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol).
-   * Zeigen Sie mit der Maus auf ein Rotationsset-Asset und tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol) und dann auf **[!UICONTROL Bearbeiten]** in der Symbolleiste.
+   * Bewegen Sie den Mauszeiger über ein Rotationsset-Asset und tippen Sie auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol).
+   * Bewegen Sie den Mauszeiger über ein Rotationsset-Asset und tippen Sie auf **[!UICONTROL Auswählen]** (Häkchensymbol) und tippen Sie dann auf **[!UICONTROL Bearbeiten]** in der Symbolleiste.
    * Tippen Sie auf ein Rotationsset-Asset und dann auf **[!UICONTROL Bearbeiten]** (Bleistiftsymbol) in der Symbolleiste.
 
-1. Führen Sie zum Bearbeiten des Rotationssets einen der folgenden Schritte aus:
+1. Führen Sie einen der folgenden Schritte aus, um das Rotationsset zu bearbeiten:
 
-   * Ziehen Sie ein Bild, wenn Sie es an einer neuen Position anordnen möchten (zum Verschieben von Elementen wählen Sie das Symbol zum Neuanordnen).
+   * Um Bilder neu anzuordnen, ziehen Sie ein Bild an eine neue Position (wählen Sie das Symbol für die Neuanordnung aus, um Elemente zu verschieben).
    * Um Elemente in auf- oder absteigender Reihenfolge zu sortieren, tippen Sie auf die Spaltenüberschrift.
    * Um ein Asset hinzuzufügen oder ein vorhandenes Asset zu aktualisieren, tippen Sie auf **[!UICONTROL Asset hinzufügen]**. Navigieren Sie zu einem Element, wählen Sie es aus und tippen Sie oben rechts auf **[!UICONTROL Auswählen]**.
 Wenn Sie das in AEM als Miniaturansicht verwendete Bild löschen und durch ein anderes ersetzen, wird das Original-Asset weiterhin angezeigt.

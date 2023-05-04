@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
 exl-id: a81b2360-9d17-46c7-9443-51b366b0724a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 95%
+source-wordcount: '260'
+ht-degree: 85%
 
 ---
 
 # Credential-Dienst Java-API-Schnellstart (SOAP) {#credential-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Java API-Schnellstart (SOAP) ist für den Credential-Dienst verfügbar.
 

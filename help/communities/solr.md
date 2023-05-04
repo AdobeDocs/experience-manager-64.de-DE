@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: b506018d-67dc-4e47-a3d8-83ae288b5d7e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1617'
 ht-degree: 3%
 
 ---
 
 # Solr-Konfiguration für SRP {#solr-configuration-for-srp}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Solr für AEM Plattform {#solr-for-aem-platform}
 
@@ -72,7 +76,7 @@ Bei Ausführung im SolrCloud-Modus ist vor der MLS-Installation die Verwendung u
 Verweis:\
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
-Nutzung:\
+Verwendung:\
 sh ./scripts/cloud-scripts/zkcli.sh\
 -cmd upconfig \\
 -zkhost *server:port* \\
@@ -85,7 +89,7 @@ sh ./scripts/cloud-scripts/zkcli.sh\
 Verweis:\
 [https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
-Nutzung:\
+Verwendung:\
 ./bin/solr create \\
 -c *mycollection-name*\\
 -d *config-dir* \\
@@ -101,7 +105,7 @@ Verknüpfen Sie eine Sammlung mit einer Konfiguration, die bereits in ZooKeeper 
 Verweis:\
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
 
-Nutzung:\
+Verwendung:\
 sh ./scripts/cloud-scripts/zkcli.sh\
 -cmd linkconfig \\
 -zkhost *server:port* \\

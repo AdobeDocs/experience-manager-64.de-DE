@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
 exl-id: 5b16c775-3bd0-4a55-ba9e-f326224e8bae
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1731'
-ht-degree: 5%
+source-wordcount: '1767'
+ht-degree: 4%
 
 ---
 
 # Erstellen einer neuen Community-Site zur Aktivierung {#author-a-new-community-site-for-enablement}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Community-Site erstellen {#create-community-site}
 
@@ -105,7 +109,7 @@ Durch die Auswahl von Tag-Namespaces für die Community-Site wird außerdem die 
 Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
 * Typ &#39;tut&#39;
-* Auswählen `Tutorial`
+* Klicken Sie auf `Tutorial`
 
 ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -158,7 +162,7 @@ Für eine Aktivierungs-Community ist es erforderlich, einen oder mehrere Communi
 `Community Enablement Managers` zur Verwaltung dieser Community-Site ausgewählt werden.
 
    * Typ &quot;s&quot;
-   * Auswählen `Sirius Nilson`
+   * Klicken Sie auf `Sirius Nilson`
 
 * **[!UICONTROL Marketing Cloud-Organisations-ID]**
 (optional) Die Kennung für ein Adobe Analytics-Konto, die erforderlich ist, wenn [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) in der Aktivierungsberichterstellung.
@@ -210,7 +214,7 @@ Um die Community-Site zu löschen, wählen Sie das Symbol Site löschen aus, das
 
 ![enablesiteactions](assets/enablesiteactions.png)
 
-#### Wählen Sie Veröffentlichen {#select-publish}
+#### Veröffentlichung auswählen {#select-publish}
 
 Wählen Sie das Weltsymbol aus, um die Community-Site zu veröffentlichen.
 

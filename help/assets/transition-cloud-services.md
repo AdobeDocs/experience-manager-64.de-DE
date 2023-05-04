@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Translation
 role: Admin
 exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 97%
+source-wordcount: '431'
+ht-degree: 81%
 
 ---
 
 # Anwenden von Übersetzungs-Cloud-Services auf Ordner {#applying-translation-cloud-services-to-folders}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Mit Adobe Experience Manager können Sie von Cloud-basierten Übersetzungs-Services von Ihrem bevorzugten Übersetzungsanbieter Gebrauch machen, um sicherzustellen, dass Ihre Assets basierend auf Ihren Anforderungen übersetzt werden.
 
@@ -22,7 +26,7 @@ Sie können den Übersetzungs-Cloud-Service direkt auf Ihren Asset-Ordner anwend
 
 Durch die direkte Anwendung der Übersetzungs-Cloud-Services auf Ihren Assets-Ordner entfällt die Notwendigkeit, Übersetzungs-Services zu konfigurieren, wenn Sie Übersetzungs-Workflows erstellen oder aktualisieren.
 
-1. Wählen Sie in der Assets-UI den Ordner aus, auf den Sie die Übersetzungsdienste anwenden möchten.
+1. Wählen Sie in der Assets-Benutzeroberfläche den Ordner aus, auf den Sie Übersetzungsdienste anwenden möchten.
 1. Klicken/tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften]**, um die Seite **[!UICONTROL Ordnereigenschaften]** anzuzeigen.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)

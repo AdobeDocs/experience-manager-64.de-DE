@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 exl-id: 9f447a54-4512-41ab-b8d3-327e751eda58
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 7%
+source-wordcount: '742'
+ht-degree: 8%
 
 ---
 
 # Erstellen und Zuweisen von Aktivierungsressourcen {#create-and-assign-enablement-resources}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Hinzufügen einer Aktivierungsressource {#add-an-enablement-resource}
 
@@ -31,7 +35,7 @@ So fügen Sie der neuen Community-Site eine Aktivierungsressource hinzu:
    ![chlimage_1-199](assets/chlimage_1-199.png)
    ![chlimage_1-200](assets/chlimage_1-200.png)
 * Wählen Sie die Community-Site aus, zu der Aktivierungsressourcen hinzugefügt werden.
-   * Auswählen `Enablement Tutorial`
+   * Klicken Sie auf `Enablement Tutorial`
 * Wählen Sie im Menü die Option ` Create`
 * Auswählen **[!UICONTROL Ressource]**
 

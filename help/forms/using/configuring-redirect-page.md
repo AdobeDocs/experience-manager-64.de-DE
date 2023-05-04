@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren einer Umleitungsseite
 seo-title: Configuring redirect page
-description: Nachdem sie ein adaptives Formular ausgefüllt haben, können Benutzer zu einer Webseite umgeleitet werden, die Formularersteller beim Erstellen des Formulars konfigurieren können.
+description: Nachdem Sie ein adaptives Formular ausgefüllt haben, können Benutzer zu einer Webseite umgeleitet werden, die Formularverfasser beim Erstellen des Formulars konfigurieren können.
 seo-description: After filling an adaptive form, users can be redirected to a webpage that form authors can configure while creating the form.
 uuid: 5a5f912a-9696-4bc1-af3f-ead78f767e02
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
 feature: Adaptive Forms
 exl-id: bbe10952-d6a7-4adc-bab9-388c1ee8e56a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 98%
+source-wordcount: '274'
+ht-degree: 75%
 
 ---
 
 # Konfigurieren einer Umleitungsseite {#configuring-redirect-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Formularersteller können für jedes Formular eine Seite konfigurieren, zu der die Formularbenutzer nach dem Absenden eines Formulars umgeleitet werden.
 
@@ -30,7 +34,7 @@ Formularersteller können für jedes Formular eine Seite konfigurieren, zu der d
 ![Konfigurieren der Umleitungsseite](assets/thank-you-setting-1.png)
 **Abbildung:** *Konfiguration der Umleitungsseite*
 
-Formularersteller können folgende Parameter verwenden, die zur Dankeseite weitergeleitet werden. Bei allen verfügbaren Übermittlungsaktionen werden `status`- und `owner`-Parameter übergeben. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter weitergeleitet:
+Formularautoren können die folgenden Parameter verwenden, die an die Dankeseite übergeben werden. Bei allen verfügbaren Übermittlungsaktionen werden `status`- und `owner`-Parameter übergeben. Neben diesen beiden Parametern werden für die folgenden Übermittlungsaktionen einige weitere Parameter weitergeleitet:
 
 * **Aktion für Inhaltsspeicherung** (veraltet): `contentPath` – der Pfad des Knotens im Repository, in dem gesendete Daten gespeichert werden – wird weitergeleitet.
 

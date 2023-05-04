@@ -6,14 +6,18 @@ solution: Experience Manager, Dynamic Media Classic
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: Collaboration,Dynamic Media Classic
 role: Admin,User
-source-git-commit: 79ff6834acd2bc1105bbea798d946cd7354474d5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 93%
+source-wordcount: '1113'
+ht-degree: 91%
 
 ---
 
 # ![Logo des Dynamic Media Newsletters](/help/assets/assets/dynamic-media-newsletter-logo.png)
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >

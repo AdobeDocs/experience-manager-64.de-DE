@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Classic UI Authoring User Guide
 description: In diesem Handbuch werden die Authoring-Konzepte in AEM mit der klassischen Benutzeroberfläche erläutert.
 seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 56522aaf-9a8d-48b8-b748-3b57d5e9c8ef
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 100%
+source-wordcount: '354'
+ht-degree: 92%
 
 ---
 
 # AEM 6.4 – Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In diesem Handbuch werden die Authoring-Konzepte in AEM mit der klassischen Benutzeroberfläche erläutert.
 

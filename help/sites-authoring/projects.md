@@ -10,20 +10,24 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 exl-id: 70a70f56-1d33-4d8a-984a-a3e6f8deedeb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 95%
+source-wordcount: '1410'
+ht-degree: 83%
 
 ---
 
 # Projekte{#projects}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren. Eine gemeinsam genutzte Umgebung erleichtert die Projektverwaltung. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden in AEM als Kacheln bezeichnet. Kacheln können Projekt- und Team-Informationen, Assets, Workflows und andere Arten von Informationen sein. Ausführliche Informationen finden Sie unter [Projektkacheln](#project-tiles).
 
 >[!CAUTION]
 >
->Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups**. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
+>Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups**. Die einfachste Möglichkeit, dies zu implementieren, besteht darin, die **projects-users** GruppenLesezugriff auf **/home/users** und **/home/groups**.
 
 Als Benutzer haben Sie folgende Möglichkeiten:
 
@@ -138,13 +142,13 @@ Sie können Team-Mitglieder zum Team hinzufügen und aus ihm löschen. Darüber 
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-### Landing Pages {#landing-pages}
+### Landing-Pages {#landing-pages}
 
-Über die Kachel **Einstiegsseiten** können Sie eine neue Einstiegsseite anfordern.
+Die **Landing** Über die Kachel Seiten können Sie eine neue Landingpage anfordern.
 
 ![chlimage_1-183](assets/chlimage_1-183.png)
 
-Dieser Workflow wird in [Erstellen eines Einstiegsseiten-Workflows](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow) beschrieben.
+Dieser Workflow wird im Abschnitt [Erstellen eines Landingpage-Workflows](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
 
 ### E-Mails {#emails}
 
@@ -152,7 +156,7 @@ In der Kachel **E-Mails** können Sie E-Mail-Anfragen verwalten. Hierüber läss
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Weitere Informationen finden Sie unter [Workflow „E-Mail anfordern“](/help/sites-authoring/projects-with-workflows.md#request-email-workflow).
+Weitere Informationen finden Sie im Abschnitt [Workflow &quot;E-Mail anfordern&quot;.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Workflows {#workflows}
 
@@ -164,7 +168,7 @@ Sie können Ihr Projekt bestimmten Workflows zuweisen. Je nach Projekt stehen ve
 
 Diese werden unter [Arbeiten mit Projekt-Workflows](/help/sites-authoring/projects-with-workflows.md) beschrieben.
 
-### Starts {#launches}
+### Launches {#launches}
 
 Die Kachel „Launches“ enthält alle Launches, die mit einem [Workflow für die Launch-Anfrage](/help/sites-authoring/projects-with-workflows.md) angefordert wurden.
 
@@ -182,7 +186,7 @@ Im Lieferumfang von AEM sind drei verschiedene Vorlagen enthalten:
 
 * Ein einfaches Projekt: ein Referenzbeispiel für alle Projekte, die nicht in andere Kategorien passen (ein Allrounder). Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter) und vier Workflows (Projektbestätigung, Launch anfordern, Landingpage anfordern und E-Mail anfordern).
 * Ein Medienprojekt: ein beispielhaftes Referenzprojekt für medienbezogene Aktivitäten. Es umfasst eine Reihe von medienbezogenen Projektrollen (Fotografen, Bearbeiter, Werbetexter, Designer, Inhaber und Beobachter). Es enthält außerdem zwei medienbezogene Workflows: Kopie anfordern (zum Anfordern und Prüfen von Text) und Produkt-Fotoshooting (für die Verwaltung von Produktfotografie).
-* [Projekt für Produkt-Fotoshooting](/help/sites-authoring/managing-product-information.md) - Ein Referenzbeispiel für die Verwaltung der eCommerce-bezogenen Produktfotografie. Es enthält Rollen für Fotografen, Bearbeiter, Fotoretoucheure, Inhaber, Creative Directors, Social-Media-Marketer, Marketing-Manager, Prüfer und Beobachter.
+* [Projekt für Produkt-Fotoshooting](/help/sites-authoring/managing-product-information.md) - Ein Referenzbeispiel für die Verwaltung der eCommerce-bezogenen Produktfotografie. Es enthält Rollen für Fotografen, Bearbeiter, Fotoreporter, Inhaber, Creative Directors, Social Media-Marketing-Experten, Marketing-Manager, Prüfer und Beobachter.
 * [Ein Übersetzungsprojekt](/help/sites-administering/translation.md): ein beispielhaftes Referenzprojekt für die Verwaltung von übersetzungsbezogenen Aktivitäten. Es umfasst drei grundlegende Rollen (Inhaber, Bearbeiter und Beobachter). Es enthält zwei Workflows, auf die in der Workflow-Benutzeroberfläche zugegriffen werden kann.
 
 Je nach ausgewählter Vorlage stehen Ihnen verschiedene Optionen für Benutzerrollen und Workflows zur Verfügung.
@@ -215,19 +219,19 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
    <td><p>Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten.</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets</li> 
-     <li>Berechtigungen zum Hochladen einer Aufnahmenliste oder eines Fotoshootings und Überprüfen und Genehmigen von Assets</li> 
-     <li>Schreibberechtigung für „/etc/commerce“</li> 
-     <li>Verändern-Berechtigungen für ein bestimmtes Projekt</li> 
+     <li>Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets.</li> 
+     <li>Berechtigungen zum Hochladen einer Aufnahmenliste, Fotoshootings sowie zum Überprüfen und Genehmigen von Assets</li> 
+     <li>Schreibberechtigung für /etc/commerce</li> 
+     <li>Berechtigungen für ein bestimmtes Projekt ändern</li> 
     </ul> </td> 
    <td><p>Gruppe „workflow-users“</p> </td> 
   </tr> 
   <tr> 
    <td><p>Inhaber</p> </td> 
-   <td><p>Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Inhaber kann ein Projekt erstellen, Arbeitsschritte in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden.</p> </td> 
+   <td><p>Ein Benutzer mit dieser Rolle kann ein Projekt starten. Ein Eigentümer kann ein Projekt erstellen, die Arbeit in einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Inhaber angezeigt und ausgeführt werden.</p> </td> 
    <td> 
     <ul> 
-     <li>Schreibberechtigung für „/etc/commerce“</li> 
+     <li>Schreibberechtigung für /etc/commerce</li> 
     </ul> </td> 
    <td> 
     <ul> 
@@ -238,7 +242,7 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
  </tbody> 
 </table>
 
-Für kreative Projekte stehen zusätzliche Rollen, z. B. Fotografen, zur Verfügung. Sie können diese Rollen verwenden, um auf deren Grundlage benutzerdefinierte Rollen für ein bestimmtes Projekt zu erstellen.
+Für kreative Projekte werden auch zusätzliche Rollen bereitgestellt, z. B. Fotografen. Sie können diese Rollen verwenden, um auf deren Grundlage benutzerdefinierte Rollen für ein bestimmtes Projekt zu erstellen.
 
 >[!NOTE]
 >

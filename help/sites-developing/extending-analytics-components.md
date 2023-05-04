@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: f3926a15-4378-464f-968f-661745af117c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1263'
-ht-degree: 100%
+source-wordcount: '1299'
+ht-degree: 67%
 
 ---
 
 # Hinzufügen von Adobe Analytics-Tracking zu Komponenten{#adding-adobe-analytics-tracking-to-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einschließen des Adobe Analytics-Moduls in eine Seitenkomponente {#including-the-adobe-analytics-module-in-a-page-component}
 
@@ -110,9 +114,9 @@ $CQ(function(){
 </div>
 ```
 
-Dieser Code ist in allen AEM-Beispiel-Sites, wie Geometrixx Outdoors, eingeschlossen.
+Bei allen AEM Beispiel-Sites wie Geometrixx Outdoors ist dieser Code enthalten.
 
-### sitecatalystAfterCollect-Ereignis {#the-sitecatalystaftercollect-event}
+### Das sitecatalystAfterCollect-Ereignis {#the-sitecatalystaftercollect-event}
 
 Das `cloudservices`-Skript löst das `sitecatalystAfterCollect`-Ereignis aus:
 
@@ -120,7 +124,7 @@ Das `cloudservices`-Skript löst das `sitecatalystAfterCollect`-Ereignis aus:
 $CQ(document).trigger("sitecatalystAfterCollect");
 ```
 
-Dieses Ereignis wird als Bestätigung ausgelöst, sobald die Seitenverfolgung abgeschlossen ist. Falls Sie auf dieser Seite zusätzliche Verfolgungsvorgänge durchführen, müssen Sie einen Listener für dieses Ereignis anstelle des documentload- oder documentready-Ereignisses verwenden. Durch Verwendung des `sitecatalystAfterCollect`-Ereignisses vermeiden Sie Konflikte oder anderes unvorhersehbares Verhalten.
+Dieses Ereignis wird als Bestätigung ausgelöst, sobald die Seitenverfolgung abgeschlossen ist. Wenn Sie auf dieser Seite zusätzliche Tracking-Vorgänge ausführen, sollten Sie dieses Ereignis anstelle des Ereignisses &quot;Dokumentladung&quot;oder &quot;Bereit zum Dokument&quot;überwachen. Durch Verwendung des `sitecatalystAfterCollect`-Ereignisses vermeiden Sie Konflikte oder anderes unvorhersehbares Verhalten.
 
 >[!NOTE]
 >
@@ -141,8 +145,8 @@ Komponenten können mit dem Adobe Analytics-Framework interagieren, wenn sie ein
 
 Der Code in der component.jsp fügt JavaScript zur Seite hinzu, der die Verfolgung auslöst, und definiert die zu verfolgenden Daten. Der Ereignisname und die Datennamen, die im JavaScript verwendet werden, müssen mit den entsprechenden Werten der Eigenschaften im Knoten `analytics` übereinstimmen.
 
-* Verwenden Sie das data-tracking-Attribut, um Ereignisdaten beim Laden einer Seite zu verfolgen. (Siehe [Verfolgen von benutzerdefinierten Ereignissen beim Laden einer Seite](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
-* Verwenden Sie die Funktion CQ_Analytics.record, um Ereignisdaten zu verfolgen, wenn Benutzer mit den Seitenfunktionen interagieren. (Siehe [Verfolgen von benutzerdefinierten Ereignissen nach dem Laden einer Seite](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
+* Verwenden Sie das Attribut data-tracking , um Ereignisdaten beim Laden einer Seite zu verfolgen. (Siehe [Tracking benutzerspezifischer Ereignisse beim Laden der Seite](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).
+* Verwenden Sie die Funktion CQ_Analytics.record , um Ereignisdaten zu verfolgen, wenn Benutzer mit Seitenfunktionen interagieren. (Siehe [Verfolgen benutzerspezifischer Ereignisse nach dem Laden der Seite](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).
 
 Wenn Sie diese Methoden zum Daten-Tracking verwenden, wird Adobe Analytics automatisch vom Adobe Analytics-Integrationsmodul aufgerufen, um Ereignisse und Daten aufzuzeichnen.
 
@@ -150,61 +154,61 @@ Wenn Sie diese Methoden zum Daten-Tracking verwenden, wird Adobe Analytics autom
 
 Erweitern Sie die Foundation-Komponente „topnav“ so, dass Adobe Analytics Klicks auf Navigations-Links oben auf der Seite verfolgt. Beim Klicken auf einen Navigations-Link zeichnet Adobe Analytics den Link und die Seite auf, auf die geklickt wurde.
 
-Folgende Aufgaben müssen für die unten beschriebenen Verfahren bereits abgeschlossen sein:
+Für die folgenden Vorgehensweisen müssen Sie bereits die folgenden Aufgaben ausgeführt haben:
 
-* Erstellen einer CQ-Anwendung
+* Eine CQ-Anwendung wurde erstellt.
 * Erstellen einer Adobe Analytics-Konfiguration und eines Adobe Analytics-Frameworks
 
-#### Kopieren der topnav-Komponente {#copy-the-topnav-component}
+#### Kopieren Sie die topnav-Komponente {#copy-the-topnav-component}
 
-Kopieren Sie der topnav- Komponente in die CQ-Anwendung. Dieses Verfahren setzt voraus, dass die Anwendung in CRXDE Lite eingerichtet ist.
+Kopieren Sie der topnav- Komponente in die CQ-Anwendung. Dafür muss Ihre Anwendung in CRXDE Lite eingerichtet sein.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/libs/foundation/components/topnav` und dann auf „Kopieren“.
-1. Klicken Sie mit der rechten Maustaste auf den Ordner „Komponenten“ unter dem Anwendungsordner und dann auf „Einfügen“.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner Komponenten unter Ihrem Anwendungsordner und klicken Sie auf Einfügen .
 1. Klicken Sie auf „Alle speichern“
 
 #### Integrieren von topnav mit dem Adobe Analytics Framework {#integrating-topnav-with-the-adobe-analytics-framework}
 
-Konfigurieren Sie die topnav-Komponente und bearbeiten Sie die JSP-Datei, um das Verfolgen von Ereignissen und Daten zu definieren.
+Konfigurieren Sie die topnav-Komponente und bearbeiten Sie die JSP-Datei, um die Tracking-Ereignisse und -Daten zu definieren.
 
-1. Klicken Sie mit der rechten Maustaste auf den topnav-Knoten und anschließend auf „Erstellen“ und „Knoten erstellen“. Geben Sie folgende Eigenschaftenwerte ein und klicken Sie dann auf „OK“:
+1. Klicken Sie mit der rechten Maustaste auf den Knoten topnav und klicken Sie auf Erstellen > Knoten erstellen . Geben Sie die folgenden Eigenschaftswerte an und klicken Sie dann auf &quot;OK&quot;:
 
    * Name: `analytics`
    * Typ: `nt:unstructured`
 
-1. Fügen Sie die folgende Eigenschaft zum analytics-Knoten hinzu, um das Verfolgungsereignis zu benennen:
+1. Fügen Sie dem Knoten analytics die folgende Eigenschaft hinzu, um das Tracking-Ereignis zu benennen:
 
    * Name: cq:trackevents
    * Typ: String
    * Wert: topnavClick
 
-1. Fügen Sie die folgende Eigenschaft zum analytics-Knoten hinzu, um die Datenvariablen zu benennen:
+1. Fügen Sie dem Knoten analytics die folgende Eigenschaft hinzu, um die Datenvariablen zu benennen:
 
    * Name: cq:trackvars
    * Typ: String
    * Wert: topnavTarget,topnavLocation
 
-1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Komponente für den Sidekick zu benennen:
+1. Fügen Sie dem Knoten analytics die folgende Eigenschaft hinzu, um die Komponente für den Sidekick zu benennen:
 
    * Name: cq:componentName
    * Typ: String
    * Wert: topnav (tracking)
 
-1. Fügen Sie die folgende Eigenschaft zum Knoten „analytics“ hinzu, um die Komponentengruppe für den Sidekick zu benennen:
+1. Fügen Sie dem Knoten analytics die folgende Eigenschaft hinzu, um die Komponentengruppe für den Sidekick zu benennen:
 
    * Name: cq:componentGroup
    * Typ: String
-   * Wert: General
+   * Wert: Allgemein
 
 1. Klicken Sie auf „Alle speichern“.
-1. Öffnen Sie die topnav.jsp-Datei.
-1. Fügen Sie im a-Element das folgende Attribut hinzu:
+1. Öffnen Sie die Datei &quot;topnav.jsp&quot;.
+1. Fügen Sie dem Element a das folgende Attribut hinzu:
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')" 
    ```
 
-1. Fügen Sie unten auf der Seite folgenden JavaScript-Code hinzu:
+1. Fügen Sie unten auf der Seite den folgenden JavaScript-Code hinzu:
 
    ```xml
    <script type="text/javascript">
@@ -225,7 +229,7 @@ Konfigurieren Sie die topnav-Komponente und bearbeiten Sie die JSP-Datei, um das
 
 1. Klicken Sie auf „Alle speichern“
 
-Der Inhalt der topnav.jsp-Datei sollte jetzt wie folgt aussehen:
+Der Inhalt der Datei topnav.jsp sollte wie folgt aussehen:
 
 ```xml
 <%@page session="false"%><%--
@@ -296,16 +300,16 @@ Der Inhalt der topnav.jsp-Datei sollte jetzt wie folgt aussehen:
 Fügen Sie Komponenten, die für das Tracking mit Adobe Analytics aktiviert sind, zu Sidekick hinzu, um sie dem Framework hinzuzufügen.
 
 1. Öffnen Sie das Adobe Analytics-Framework über Ihre Adobe Analytics-Konfiguration. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
-1. Klicken Sie im Sidekick auf die Schaltfläche „Design“.
+1. Klicken Sie im Sidekick auf die Schaltfläche &quot;Design&quot;.
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Klicken Sie im Konfigurationsbereich für die Linkverfolgung auf „Vererbung konfigurieren“.
+1. Klicken Sie im Bereich Konfiguration der Linktracking auf Vererbung konfigurieren .
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. Wählen Sie aus der Liste „Zugelassene Komponenten“ im Abschnitt „Allgemein“ den Eintrag „topnav (tracking)“ aus und klicken Sie dann auf „OK“. 
-1. Erweitern Sie den Sidekick, um in den Bearbeitungsmodus zu wechseln. Die Komponente ist jetzt in der Gruppe „Allgemein“ verfügbar.
+1. Wählen Sie in der Liste Zugelassene Komponenten im Abschnitt Allgemein die Option topnav (tracking) und klicken Sie auf OK.
+1. Erweitern Sie den Sidekick, um in den Bearbeitungsmodus zu wechseln. Die Komponente ist jetzt in der Gruppe Allgemein verfügbar.
 
 #### Hinzufügen der topnav-Komponente zum Framework {#adding-the-topnav-component-to-your-framework}
 
@@ -364,7 +368,7 @@ Der Knoten `analytics` der Komponente muss die Namen der Variablen anzeigen, die
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-Das eCommerce-Modul stellt eine Reihe von Komponenten bereit, die Daten für die s.products-Variable erzeugen. Die Komponente „submitorder“ ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) erzeugt beispielsweise JavaScript, das dem folgenden Beispiel ähnelt:
+Das eCommerce-Modul stellt mehrere Komponenten bereit, die s.products-Variablendaten generieren. Beispielsweise die Komponente &quot;submitorder&quot;([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) generiert JavaScript, das dem folgenden Beispiel ähnelt:
 
 ```
 <script type="text/javascript">
@@ -438,8 +442,8 @@ Das eCommerce-Modul stellt eine Reihe von Komponenten bereit, die Daten für die
 </script>
 ```
 
-#### Beschränken der Größe von Verfolgungsaufrufen {#limiting-the-size-of-tracking-calls}
+#### Größe von Tracking-Aufrufen begrenzen {#limiting-the-size-of-tracking-calls}
 
-Im Allgemeinen beschränken Webbrowser die Größe von GET-Anforderungen. Da es sich beim CQ-Produkt und den SKU-Werten um Repository-Pfade handelt, können Produkt-Arrays mit mehreren Werten die Größenbeschränkung einer Anforderung überschreiten. Daher sollten die Komponenten die Anzahl der Elemente im `product`-Array jeder `CQ_Analytics.record function` beschränken. Erstellen Sie mehrere Funktionen, wenn die Anzahl der Elemente, die Sie verfolgen möchten, das Limit überschreiten kann.
+Im Allgemeinen beschränken Webbrowser die Größe von GET-Anfragen. Da CQ-Produkt- und SKU-Werte Repository-Pfade sind, können Produkt-Arrays, die mehrere Werte enthalten, die Anfragegrößenbeschränkung überschreiten. Daher sollten die Komponenten die Anzahl der Elemente im `product`-Array jeder `CQ_Analytics.record function` beschränken. Erstellen Sie mehrere Funktionen, wenn die Anzahl der Elemente, die Sie verfolgen möchten, das Limit überschreiten kann.
 
 Die submitorder-eCommerce-Komponente beschränkt z. B. die Anzahl der `product`-Elemente in einem Aufruf auf vier. Wenn der Warenkorb mehr als vier Produkte enthält, erzeugt sie mehrere `CQ_Analytics.record`-Funktionen.

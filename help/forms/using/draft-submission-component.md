@@ -1,7 +1,7 @@
 ---
-title: Komponente „Drafts and Submissions“
+title: Komponente „Entwürfe und Sendungen“
 seo-title: Drafts and submissions component
-description: Mit der Komponente „Drafts and Submissions“ können Sie Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Sie können die Darstellung und den Stil der Komponente anpassen.
+description: Mit der Komponente „Drafts and Submissions“ können Sie Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Sie können das Erscheinungsbild und den Stil der Komponente anpassen.
 seo-description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
 uuid: 351d6df5-0dc3-4f7a-8bdf-0f1c8dd80f34
 content-type: reference
@@ -9,33 +9,37 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 219dd379-5bc9-40b0-bdc2-2fb347da29d8
 exl-id: d95d3586-ea4b-4068-a8f2-a198c27a0096
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 99%
+source-wordcount: '798'
+ht-degree: 77%
 
 ---
 
-# Komponente „Drafts and Submissions“ {#drafts-and-submissions-component}
+# Komponente „Entwürfe und Sendungen“ {#drafts-and-submissions-component}
 
-Mit der Komponente „Drafts &amp;Submissions“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Die Komponente bietet separate Bereiche (Registerkarten) für Entwürfe und für gesendete Formulare. Die Benutzer können lediglich ihre eigenen Entwürfe und gesendeten Formulare anzeigen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-## Komponente konfigurieren {#configuring-the-component}
+Mit der Komponente „Drafts &amp;Submissions“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Die Komponente bietet separate Bereiche (Registerkarten) für Entwürfe und für gesendete Formulare. Benutzer können nur ihre Entwürfe und gesendeten Formulare anzeigen.
 
-In der Komponente „Drafts and Submissions“ stehen die beiden Registerkarten „Drafts“ und „Submissions“ zur Verfügung.
+## Konfigurieren der Komponente {#configuring-the-component}
+
+Die Komponente &quot;Drafts &amp; Submissions&quot;verfügt über zwei Registerkarten: Entwürfe und Übermittlungen.
 
 Damit ein übermitteltes adaptives Formular auf der Registerkarte für Übermittlungen angezeigt werden kann, definieren Sie als **Übermittlungsaktion** die Option **[Übermittlungsaktion für Formularportal](/help/forms/using/configuring-submit-actions.md).** Sie können stattdessen auch die Option „Forms Portal Submit“ aktivieren. Wenn ein Benutzer das Formular übermittelt, wird dieses der Registerkarte „Submissions“ hinzugefügt.
 
-Die Entwurfsfunktion ist standardmäßig aktiviert. Wenn der Benutzer in einem adaptiven Formular auf **Speichern** klickt, wird dieses der Registerkarte „Drafts“ hinzugefügt.
+Die Entwurfsfunktion ist standardmäßig aktiviert. Wenn ein Benutzer auf **Speichern** in einem adaptiven Formular wird das Formular der Registerkarte Entwürfe hinzugefügt.
 
-Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submissions“ hinzuzufügen:
+Führen Sie die folgenden Schritte aus, um eine Komponente &quot;Drafts &amp; Submissions&quot;hinzuzufügen und zu konfigurieren:
 
-1. Ziehen Sie die Komponente **Drafts &amp; Submissions** unter Document Services-Kategorie im Komponenten-Browser zu Ihrer Seite per Drag &amp; Drop.
+1. Ziehen Sie die **Entwürfe und Übermittlungen** -Komponente unter Document Services-Kategorie im Komponenten-Browser auf Ihrer Seite.
 1. Tippen Sie auf die Komponente und dann auf ![settings_icon](assets/settings_icon.png), um das Dialogfeld „Bearbeiten“ für die Komponente zu öffnen.
 
    ![Komponente „Drafts &amp; Submissions“](assets/drafts-submissions-edit.png)
 
-1. Geen Sie im Dialogfeld „Bearbeiten“ die folgenden Details an und tippen Sie auf **Fertig**, um die Einstellungen zu speichern.
+1. Geben Sie im Dialogfeld &quot;Bearbeiten&quot;die folgenden Details an und tippen Sie auf **Fertig** , um die Einstellungen zu speichern.
 
 <table>
  <tbody>
@@ -51,7 +55,7 @@ Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submi
   </tr>
   <tr>
    <td> </td>
-   <td>Style Type (Stiltyp)</td>
+   <td>Stiltyp</td>
    <td>Legt den Stil der Komponente fest. Sie können entweder <strong>No Style</strong> (Kein Stil), <strong>Default Style</strong> (Standardstil) oder <strong>Custom Style </strong>(Benutzerdefinierter Stil) für die Liste der Formulare angeben. Für die Option „Custom Style“ können Sie den Pfad zu Ihrem benutzerdefinierten CSS im Feld <strong>Custom Style Path</strong> angeben<strong>.</strong></td>
   </tr>
   <tr>
@@ -67,22 +71,22 @@ Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submi
   <tr>
    <td> </td>
    <td>Standardregisterkarte</td>
-   <td>Gibt an, welche Registerkarte beim Laden der Forms Portal-Seite angezeigt werden soll. Sie können eine der Registerkarten <strong>Draft Forms</strong> und <strong>Submitted Forms</strong> wählen.</td>
+   <td>Gibt an, welche Registerkarte beim Laden der Forms Portal-Seite angezeigt werden soll. Sie können zwischen <strong>Registerkarte "Forms-Entwurf"</strong> und <strong>Registerkarte "Gesendete Forms"</strong>.</td>
   </tr>
   <tr>
-   <td>Konfiguration der Registerkarte für Formularentwürfe</td>
+   <td>Konfiguration der Registerkarte "Forms"</td>
    <td>Benutzerdefinierter Titel</td>
-   <td>Geben Sie den Titel der Registerkarte für <strong>Formularentwürfe</strong> an. Der Standardwert ist <strong>Draft Forms.</strong></td>
+   <td>Geben Sie den Titel der Registerkarte für <strong>Formularentwürfe</strong> an. Der Standardwert ist <strong>Forms-Entwurf.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Layout-Vorlage</td>
-   <td><p>Gibt das für die Liste der Formularentwürfe zu verwendende Layout an.</p> <p><strong>Hinweis:</strong> Verwenden Sie nicht die Standardoption (veraltet).<br /> </p> </td>
+   <td><p>Gibt das Layout an, das für die Liste "Entwurf Forms"verwendet werden soll.</p> <p><strong>Hinweis:</strong> Verwenden Sie nicht die Option Standard (veraltet) .<br /> </p> </td>
   </tr>
   <tr>
-   <td>Konfiguration der Registerkarte für übermittelte Formulare</td>
+   <td>Konfig. für Registerkarte mit übermittelten Formularen</td>
    <td>Benutzerdefinierter Titel </td>
-   <td>Geben Sie den Titel der Registerkarte für <strong>übermittelte Formulare</strong> an. Der Standardwert ist <strong>Submitted Forms.</strong></td>
+   <td>Geben Sie den Titel der Registerkarte für <strong>übermittelte Formulare</strong> an. Der Standardwert ist <strong>Gesendete Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>

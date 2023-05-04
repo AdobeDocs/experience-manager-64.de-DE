@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: c7805d8a-eb6a-4908-9662-936920ffa67a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3912'
-ht-degree: 100%
+source-wordcount: '3948'
+ht-degree: 98%
 
 ---
 
 # Zuweisen von Verwendungsrechten {#assigning-usage-rights}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Informationen zum Service „Acrobat Reader DC-Erweiterungen“ {#about-the-acrobat-reader-dc-extensions-service}
 
@@ -36,7 +40,7 @@ Sie können diese Aufgaben mithilfe des Services „Acrobat Reader DC-Erweiterun
 
 ## Anwenden von Verwendungsrechten auf PDF-Dokumente {#applying-usage-rights-to-pdf-documents}
 
-Mit der Java-Client-API der Acrobat Reader DC-Erweiterungen und dem entsprechenden Webservice können Sie Verwendungsrechte auf PDF-Dokumente anwenden. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. PDF-Dokumente, auf die Verwendungsrechte angewandt wurden, werden als Dokumente mit aktivierten Verwendungsrechten bezeichnet. Benutzer, die ein Dokument mit aktivierten Verwendungsrechten in Adobe Reader öffnen, können Vorgänge durchführen, die für dieses spezifische Dokument aktiviert sind.
+Mit der Java-Client-API der Acrobat Reader DC-Erweiterungen und dem entsprechenden Webservice können Sie Verwendungsrechte auf PDF-Dokumente anwenden. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. PDF-Dokumente, auf die Verwendungsrechte angewendet wurden, werden als Dokumente mit aktivierten Benutzerrechten bezeichnet. Ein Benutzer, der ein Dokument mit aktivierten Benutzerrechten in Adobe Reader öffnet, kann Vorgänge durchführen, die für dieses spezifische Dokument aktiviert sind.
 
 >[!NOTE]
 >

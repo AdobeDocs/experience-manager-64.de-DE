@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: b438ffe7-22b0-4bf8-bcfd-0b706d4c39fd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
 
 # Vordefinierte App-Handler{#out-of-the-box-app-handlers}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -42,13 +46,13 @@ Im Folgenden werden vordefinierte App-Handler aufgeführt:
 
 * ***selector - String*** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele: *touch* zum Rendern mobiler Versionen einer Seite.
 
-* ***deep - Boolesch*** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert lautet *true.*
+* ***deep - Boolesch*** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *wahr.*
 
-* ***includeImages - Boolean*** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.
+* ***includeImages - Boolean*** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert ist *true*.
 
    * Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt.
 
-* ***includeVideos - Boolean*** - Optionale boolesche Eigenschaft bestimmt, ob Videos einbezogen werden sollen. Der Standardwert lautet *true*.
+* ***includeVideos - Boolean*** - Optionale boolesche Eigenschaft bestimmt, ob Videos einbezogen werden sollen. Der Standardwert ist *true*.
 
 * ***includeModifiedPagesOnly - Boolean*** - Wenn false oder ausgelassen, werden alle Seiten gerendert und Aktualisierungen im Rendering überprüft. Wenn &quot;true&quot;, unterscheidet sich die Basis von Änderungen an Seiten lastModified.
 * ***+ rewrite (Knoten)***

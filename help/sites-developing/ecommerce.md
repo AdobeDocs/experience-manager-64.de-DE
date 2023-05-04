@@ -10,19 +10,23 @@ content-type: reference
 topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 exl-id: a5f36d26-1be4-4e06-9237-3943e903d850
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '175'
-ht-degree: 72%
+source-wordcount: '211'
+ht-degree: 45%
 
 ---
 
 # E-Commerce{#ecommerce}
 
-Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dadurch können Sie:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-* ein eCommerce-System einbinden und Produktdaten in AEM abrufen.
-* AEM-Komponenten für Commerce-Funktionalität unabhängig von einer spezifischen eCommerce-Engine entwickeln.
+Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dies ermöglicht Ihnen Folgendes:
+
+* ein eCommerce-System einbinden und Produktdaten in AEM abrufen
+* Erstellen AEM Komponenten für Commerce-Funktionen unabhängig von der jeweiligen eCommerce-Engine
 
 Weitere Informationen finden Sie unter:
 

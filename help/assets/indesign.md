@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Publishing
 role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 65%
+source-wordcount: '1710'
+ht-degree: 52%
 
 ---
 
 # Integration von Assets mit Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Adobe Experience Manager Assets verwendet:
 
@@ -21,11 +25,11 @@ Adobe Experience Manager Assets verwendet:
 
 Diese können eine Vielzahl von Aufgaben abdecken; Beispielsweise die Verwendung einer Adobe InDesign Server zur Verarbeitung von Dateien.
 
-Zum vollständigen Hochladen von Dateien in [!DNL Experience Manager] Assets, die Sie mit Adobe InDesign erstellt haben, wird ein Proxy verwendet. Dieser verwendet einen Proxy Worker für die Kommunikation mit Adobe InDesign Server, wo [Skripte](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ausgeführt werden, um Metadaten zu extrahieren und verschiedene Ausgabeformate für Assets zu generieren. [!DNL Experience Manager] Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen dem InDesign Server und dem [!DNL Experience Manager] -Instanz(en) in einer Cloud-Konfiguration.
+Zum vollständigen Hochladen von Dateien in [!DNL Experience Manager] Assets, die Sie mit Adobe InDesign erstellt haben, wird ein Proxy verwendet. Hierbei wird ein Proxy Worker verwendet, um mit der Adobe InDesign Server zu kommunizieren, wobei [scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) werden ausgeführt, um Metadaten zu extrahieren und verschiedene Ausgabeformate für [!DNL Experience Manager] Assets. Der Proxy Worker ermöglicht die bidirektionale Kommunikation zwischen dem InDesign Server und dem [!DNL Experience Manager] -Instanz(en) in einer Cloud-Konfiguration.
 
 >[!NOTE]
 >
->Adobe InDesign wird in Form von zwei Produkten angeboten:
+>Adobe InDesign ist mit zwei Produkten ausgestattet:
 >
 >* [InDesign](https://www.adobe.com/de/products/indesign.html)\
    >  Damit können Sie Seiten-Layouts für den Druck bzw. die digitale Distribution entwerfen.
@@ -51,7 +55,7 @@ Die InDesign Server kann mit [!DNL Experience Manager] Assets, damit mit InDesig
    Dieses Befehlsskript führt folgende Aktionen aus:
 
    * Rufen Sie die `.indd` -Datei.
-   * Führt InDesign Server-Befehle aus:
+   * Ausführen von InDesign Server-Befehlen:
 
       * Struktur, Text und alle Mediendateien werden extrahiert.
       * PDF- und JPG-Ausgabeformate werden generiert.
@@ -60,7 +64,7 @@ Die InDesign Server kann mit [!DNL Experience Manager] Assets, damit mit InDesig
 
    >[!NOTE]
    >
-   >IDML ist ein XML-Format, das *alle Funktionen* der InDesign-Datei rendert. Es wird als komprimiertes Paket mithilfe der [ZIP-Komprimierung](https://www.techterms.com/definition/zip) gespeichert.
+   >IDML ist ein XML-basiertes Format, das *alles* in der InDesign-Datei. Sie wird als komprimiertes Paket gespeichert, indem [Zip](https://www.techterms.com/definition/zip) Komprimierung.
    >
    >Siehe [Adobe InDesign-Austauschformate INX und IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) für weitere Informationen.
 
@@ -142,7 +146,7 @@ Argumente und Skriptpfade zum Extrahieren von Medien
 
 Das Skript `ThumbnailExport.jsx`, das vom Workflow-Schritt „Extrahierung von Medien“ ausgeführt wird, generiert eine Miniaturansicht im JPG-Format. Diese Ausgabedarstellung wird vom Workflow-Schritt „Miniaturansichten verarbeiten“ dazu verwendet, die für [!DNL Experience Manager] erforderlichen statischen Ausgabedarstellungen zu rendern.
 
-Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Standardwerte nicht entfernen, da sie von der [!DNL Experience Manager] Assets-Benutzeroberfläche. Abschließend entfernt der Workflow-Schritt „Bildvorschau-Wiedergabe löschen“ die JPG-Miniaturansicht, da sie nicht mehr benötigt wird.
+Sie können den Workflow-Schritt „Miniaturansichten verarbeiten“ so konfigurieren, dass statische Darstellungen in verschiedenen Größen generiert werden. Stellen Sie sicher, dass Sie die Standardwerte nicht entfernen, da sie von der [!DNL Experience Manager] Assets-Benutzeroberfläche. Schließlich entfernt der Workflow-Schritt Bildvorschau-Wiedergabe löschen die .jpg-Miniaturansicht, da sie nicht mehr benötigt wird.
 
 #### Extrahierung von Seiten   {#page-extraction}
 
@@ -170,7 +174,7 @@ Anpassungen können Sie im Schritt **[!UICONTROL Extrahierung von Seiten]** auf 
 >
 >Der Worker befindet sich in der Proxy-Instanz.
 
-1. Erweitern Sie in der Tools-Konsole im linken Bereich den Eintrag **[!UICONTROL Cloud-Service-Konfigurationen]**. Anschließend erweitern Sie den Eintrag **[!UICONTROL Cloud-Proxy-Konfiguration]**.
+1. Erweitern Sie in der Tools-Konsole **[!UICONTROL Cloud Services-Konfigurationen]** im linken Bereich. Anschließend erweitern Sie den Eintrag **[!UICONTROL Cloud-Proxy-Konfiguration]**.
 
 1. Doppelklicken Sie auf den **[!UICONTROL IDS-Worker]**, um ihn für die Konfiguration zu öffnen.
 
@@ -198,8 +202,8 @@ Sie können jetzt die parallele Auftragsverarbeitung für IDS aktivieren.
 
 Dazu müssen Sie zunächst die maximale Anzahl der parallelen Aufträge (`x`) festlegen, die ein InDesign Server verarbeiten kann:
 
-* Auf einem einzelnen Mehrprozessor-Computer ist die Anzahl der parallelen Aufträge (x), die ein InDesign Server verarbeiten kann, um eins kleiner als die Anzahl der Prozessoren, die IDS ausführen.
-* Wenn Sie IDS auf mehreren Computern ausführen, müssen Sie von der Gesamtanzahl der verfügbaren Prozessoren (auf allen Computern) die Gesamtanzahl der Computer abziehen.
+* Auf einem einzigen Multiprozessorcomputer ist die maximale Anzahl von parallelen Aufträgen (x), die ein InDesign Server verarbeiten kann, eine weniger als die Anzahl der Prozessoren, die IDS ausführen.
+* Wenn Sie IDS auf mehreren Computern ausführen, müssen Sie die Gesamtanzahl der verfügbaren Prozessoren (d. h. auf allen Computern) zählen und dann die Gesamtanzahl der Maschinen subtrahieren.
 
 So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 
@@ -220,7 +224,7 @@ So konfigurieren Sie die Anzahl der parallelen IDS-Aufträge:
 1. Um die Unterstützung für mehrere Sitzungen für Adobe CS6 und höher zu aktivieren, überprüfen Sie die `enable.multisession.name` Kontrollkästchen unter `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`.
 1. Erstellen Sie eine [Pool von &lt; `*x*>` IDS-Sekundäre durch Hinzufügen von SOAP-Endpunkten zur IDS Worker-Konfiguration](#configuring-the-proxy-worker-for-indesign-server).
 
-   Wenn mehrere Computer InDesign Server ausführen, fügen Sie SOAP-Endpunkte (Anzahl der Prozessoren pro Computer -1) für jeden Computer hinzu.
+   Wenn mehrere Computer mit InDesign Server arbeiten, fügen Sie SOAP-Endpunkte (Anzahl der Prozessoren pro Rechner -1) für jeden Computer hinzu.
 
    >[!NOTE]
    >
@@ -252,5 +256,5 @@ Führen Sie für InDesign Server 10.0 oder höher die folgenden Schritte durch,
 Sie können die standardmäßigen Administratorberechtigungen (Benutzername und Kennwort) für den Zugriff auf den InDesign-Server von Ihrem [!DNL Experience Manager] -Instanz ohne Unterbrechung der Integration mit dem Adobe InDesign-Server.
 
 1. Wechseln zu `/etc/cloudservices/proxy.html`.
-1. Geben Sie in diesem Dialogfeld den neuen Benutzernamen und das Kennwort ein.
-1. Speichern Sie die Anmeldedaten.
+1. Geben Sie im Dialogfeld den neuen Benutzernamen und das neue Kennwort an.
+1. Speichern Sie die Anmeldeinformationen.

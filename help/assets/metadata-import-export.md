@@ -1,24 +1,28 @@
 ---
-title: Massenimport und -export von Metadaten
+title: Massen-Metadatenimport und -export
 description: Dieser Artikel beschreibt, wie Sie Metadaten in Massen importieren und exportieren können.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 79%
+source-wordcount: '674'
+ht-degree: 68%
 
 ---
 
 # Massenimport und -export von Metadaten {#bulk-metadata-import-and-export}
 
-[!DNL Experience Manager]Mit  Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+[!DNL Experience Manager] Mit Assets können Sie Asset-Metadaten mithilfe einer CSV-Datei stapelweise importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
 ## Importieren von Metadaten {#import-metadata}
 
-Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während der schlanken Server-Nutzung, um Auswirkungen auf die Leistung anderer Benutzer zu vermeiden.
+Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann ressourcenintensiv sein, da XMP Writeback-Aktivität aktiviert ist. Planen Sie einen solchen Import während der schlanken Server-Nutzung, um Auswirkungen auf die Leistung anderer Benutzer zu vermeiden.
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ Gehen Sie wie folgt vor, um Metadaten stapelweise zu importieren:
    | [!UICONTROL Workflows starten] | Lautet standardmäßig „False“. Wenn auf &quot;true&quot;gesetzt, sind die Standardeinstellungen für die Variable `DAM Metadata WriteBack Workflow` (die Metadaten in die binären XMP schreibt). Die Aktivierung der Workflows hat Auswirkungen auf die Leistung des Systems. |
    | [!UICONTROL Asset-Pfad-Spaltenname] | Definiert den Namen der Spalte in der CSV-Datei, die die Assets enthält. |
 
-1. Tippen oder klicken Sie in der Symbolleiste auf **[!UICONTROL Importieren]**. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
+1. Tippen/klicken **[!UICONTROL Import]** aus der Symbolleiste. Nachdem die Metadaten importiert wurden, wird eine Benachrichtigung an Ihren Benachrichtigungs-Posteingang gesendet. Navigieren Sie zur Asset-Eigenschaftsseite und überprüfen Sie, ob die Metadatenwerte richtig in die entsprechenden Assets importiert wurden.
 
 Um beim Importieren von Metadaten Datum und Zeitstempel hinzuzufügen, verwenden Sie das `YYYY-MM-DDThh:mm:ss.fff-00:00`-Format für Datum und Uhrzeit. Datum und Uhrzeit werden durch `T` getrennt angegeben. `hh` ist Stunden im 24-Stunden-Format, `fff` ist Nanosekunden und `-00:00` ist der Zeitzonenversatz. Zum Beispiel ist `2020-03-26T11:26:00.000-07:00` der 26. März 2020 um 11:26:00.000 Uhr (PST).
 
@@ -62,7 +66,7 @@ Gehen Sie wie folgt vor, um Metadaten mehrerer Assets stapelweise zu exportieren
 
 1. Wählen Sie einen Asset-Ordner aus, der Assets enthält, für die Sie Metadaten exportieren möchten. Wählen Sie in der Symbolleiste **[!UICONTROL Metadaten exportieren]** aus.
 
-1. Geben Sie im Dialogfeld [!UICONTROL Metadatenexport] einen Namen für die CSV-Datei an. Um Metadaten von Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Assets in Unterordnern einschließen]**.
+1. Geben Sie im Dialogfeld [!UICONTROL Metadatenexport] einen Namen für die CSV-Datei an. Um Metadaten für Assets in Unterordnern zu exportieren, wählen Sie **[!UICONTROL Einschließen von Assets in Unterordnern]**.
 
    ![export_metadata_page](assets/export_metadata_page.png)
 

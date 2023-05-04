@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Mobilanwendungen
+title: Erstellen von Mobile Apps
 seo-title: Building Mobile Applications
 description: Auf dieser Seite finden Sie einen vollständigen Schritt-für-Schritt-Artikel zum Erstellen einer Mobile App mithilfe des von GitHub verfügbaren Codes. Erstellen Sie hier Ihre Anwendung, um sie auf einem Gerät oder Simulator zu installieren, um sie zu testen oder in Appstores zu veröffentlichen. Sie können Anwendungen lokal über die PhoneGap-Befehlszeilenschnittstelle oder in der Cloud über PhoneGap Build erstellen.
 seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 9f8ca1d7-82b9-4558-8ea4-24dd8b5f89ce
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 5%
+source-wordcount: '1070'
+ht-degree: 4%
 
 ---
 
-# Erstellen von Mobilanwendungen{#building-mobile-applications}
+# Erstellen von Mobile Apps{#building-mobile-applications}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -53,7 +57,7 @@ Beispielsweise wird eine Mobile App mit dem Namen phonegapapp erstellt. Der folg
 
 ## Erstellen mithilfe der PhoneGap-Befehlszeilenschnittstelle {#building-using-the-phonegap-command-line-interface}
 
-Das Kompilieren der PhoneGap-App erfolgt auf Ihrem Computer mithilfe der PhoneGap-Befehlszeilenoberfläche (Command Line Interface, CLI). Um den AEM Inhalt in Ihre Anwendung aufzunehmen, erstellt AEM eine ZIP-Datei, die den Inhalt Ihrer Mobile App, Konfigurationen zur Inhaltssynchronisierung und andere erforderliche Assets enthält. Laden Sie die ZIP-Datei herunter und fügen Sie sie in Ihren Build ein.
+Kompilieren Sie die PhoneGap-Anwendung mithilfe der PhoneGap-Befehlszeilenschnittstelle (CLI) auf Ihrem Computer. Um den AEM Inhalt in Ihre Anwendung aufzunehmen, erstellt AEM eine ZIP-Datei, die den Inhalt Ihrer Mobile App, Konfigurationen zur Inhaltssynchronisierung und andere erforderliche Assets enthält. Laden Sie die ZIP-Datei herunter und fügen Sie sie in Ihren Build ein.
 
 ### Vorbereiten der Build-Umgebung {#preparing-your-build-environment}
 

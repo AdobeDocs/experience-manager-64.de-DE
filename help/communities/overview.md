@@ -1,5 +1,5 @@
 ---
-title: Übersicht über AEM Communities
+title: Übersicht über AEM Communities
 seo-title: AEM Communities Overview
 description: Überblick über AEM Communities-Funktionen und -Einrichtung
 seo-description: An overview of AEM Communities features and setup
@@ -10,16 +10,20 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 exl-id: 3a8b21f8-75da-4867-9a8a-80fddf7946ed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 5%
+source-wordcount: '1432'
+ht-degree: 2%
 
 ---
 
-# Übersicht über AEM Communities {#aem-communities-overview}
+# Übersicht über AEM Communities {#aem-communities-overview}
 
-Mit Adobe Experience Manager (AEM) Communities lässt sich leicht eine interne Communitysite erstellen, die verbesserte Leistung und optimierte Siteverwaltung bietet und aus Besuchern wertvolle Communitymitglieder macht.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Adobe Experience Manager (AEM) Communities bietet die Möglichkeit, schnell eine On-Premise-Community-Site zu erstellen, die die Leistung verbessert, das Site-Management verbessert und die Konversion von Site-Besuchern in wertvolle Community-Mitglieder fördert.
 
 <!--
 Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
@@ -76,14 +80,14 @@ Weitere Informationen zur Persistenz von Community-Inhalten und zu empfohlenen B
 
 In der Autorenumgebung bietet die globale Navigationskonsole Zugriff auf die [Communities-Konsole](consoles.md), der Folgendes enthält:
 
-* [Sites-Konsole](sites-console.md)
+* [Sites](sites-console.md) console
 
    * Site-Erstellung
    * Site-Bearbeitung
    * Site-Management
    * [Community-Gruppen](groups.md) console
 
-* [Moderatoren-Konsole](moderation.md)
+* [Moderation](moderation.md) console
 
    * Allgemeine Benutzeroberfläche für Massenmoderation für Autoren- und Veröffentlichungsumgebungen
    * Neue Filterkriterien
@@ -173,7 +177,7 @@ Zu den Funktionen einer Interaktionsgemeinschaft zählen:
 * Messaging
 * Foren
 * Kommentare
-* Reviews
+* Bewertungen
 * Bewertungen
 * Abstimmung
 * Blogs

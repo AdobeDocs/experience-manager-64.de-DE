@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 4dc54701-68b9-49dd-a212-b0b53330c1c0
 exl-id: 8f716a59-1116-4855-baeb-3997de71b55f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1171'
 ht-degree: 3%
 
 ---
 
 # Erlebnis der veröffentlichten Site {#experience-the-published-site}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Navigieren zur neuen Site bei der Veröffentlichung {#browse-to-new-site-on-publish}
 
@@ -121,7 +125,7 @@ Gruppen können auch in der Autorenumgebung erstellt und innerhalb der Community
 Erstellen einer Referenzgruppe:
 
 1. Auswählen **[!UICONTROL Neue Gruppe]**
-1. **[!UICONTROL Registerkarte „Settings“]**
+1. **[!UICONTROL Registerkarte Einstellungen]**
    * Gruppenname: `Sports`
    * Beschreibung: `A parent group for various sporting groups`
    * Gruppen-URL-Name: `sports`
@@ -193,8 +197,8 @@ Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten S
 
 Nach dem Abmelden ist es möglich, eine neue Benutzerregistrierung zu erstellen.
 
-* Auswählen `Log In`
-* Auswählen `Sign up for a new account`
+* Klicken Sie auf `Log In`
+* Klicken Sie auf `Sign up for a new account`
 
 ![chlimage_1-323](assets/chlimage_1-323.png) ![chlimage_1-324](assets/chlimage_1-324.png)
 

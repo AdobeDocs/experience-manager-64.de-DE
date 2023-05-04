@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools
 role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 71%
+source-wordcount: '439'
+ht-degree: 49%
 
 ---
 
 # Verwenden von Camera Raw zur Bildverarbeitung {#camera-raw-support}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können die Camera Raw Unterstützung aktivieren, um Rohdateiformate wie CR2, NEF und RAF zu verarbeiten und die Bilder im JPEG-Format zu rendern. Die Funktion wird in Adobe Experience Manager Assets mit dem [Camera Raw Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) über Softwareverteilung verfügbar.
 
@@ -69,12 +73,12 @@ Sie können jetzt Kamera-Rohdateien in [!DNL Experience Manager] Assets. Nach de
 
 *Abbildung: Verwenden Sie die Option, um Ihre Bilder geringfügig zu bearbeiten*
 
-Nach Speichern der Änderungen in einem Camera Raw-Bild wird die neue Darstellung `AdjustedPreview.jpg` für das Bild erstellt. Für andere Bildtypen als Camera Raw werden die Änderungen in allen Darstellungen übernommen.
+Nach dem Speichern der Änderungen in einem Camera Raw Bild, eine neue Ausgabedarstellung `AdjustedPreview.jpg` wird für das Bild generiert. Bei anderen Bildtypen außer Camera Raw werden die Änderungen in allen Ausgabedarstellungen übernommen.
 
 ## Best Practices, bekannte Probleme und Einschränkungen {#best-practices}
 
-Für die Funktionalität gelten folgende Einschränkungen:
+Die Funktionalität weist die folgenden Einschränkungen auf:
 
-* Die Funktion unterstützt nur JPEG-Darstellungen. Sie wird unter 64-Bit Windows, macOS und RHEL 7.x unterstützt.
+* Die Funktion unterstützt nur JPEG-Darstellungen. Es wird unter Windows 64 Bit, Mac OS und RHEL 7.x unterstützt.
 * Metadaten-Writeback wird für RAW- und DNG-Formate nicht unterstützt.
-* Für die Camera Raw-Bibliothek gelten Beschränkungen bei der gleichzeitig verarbeiteten Gesamtanzahl von Pixel. Derzeit kann sie eine maximale Größe von 65.000 Pixel auf der langen Seite einer Datei oder 512 MP verarbeiten, je nachdem, welches Kriterium zuerst erfüllt wird.
+* Die Camera Raw Bibliothek weist Einschränkungen hinsichtlich der Gesamtpixel auf, die gleichzeitig verarbeitet werden können. Derzeit kann sie eine maximale Größe von 65.000 Pixel auf der langen Seite einer Datei oder 512 MP verarbeiten, je nachdem, welches Kriterium zuerst erfüllt wird.

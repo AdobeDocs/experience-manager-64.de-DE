@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1883'
 ht-degree: 5%
 
 ---
 
 # Moderationskonsole {#moderation-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In AEM Communities Bulk [Moderation von Community-Inhalten](moderate-ugc.md) ist sowohl in der Autoren- als auch in der Veröffentlichungsumgebung durch Administratoren und Community-Moderatoren möglich (vertrauenswürdige Community-Mitglieder, die als Moderatoren zugewiesen sind).
 
@@ -156,7 +160,7 @@ Die Site beschränkt die Anzeige des referenzierten benutzergenerierten Inhalts 
 Der Content-Typ beschränkt die angezeigte referenzierte benutzergenerierte Inhaltsanzeige auf Beiträge des ausgewählten Ressourcentyps. Es können ein oder mehrere der folgenden Typen ausgewählt werden. Alle Typen werden angezeigt, wenn keine ausgewählt sind.
 
 * **Kommentar**
-* **Forumthema**
+* **Forenthema**
 * **Forumsantwort**
 * **Frage**
 * **Antwort**
@@ -175,7 +179,7 @@ Der Content-Typ beschränkt die angezeigte referenzierte benutzergenerierte Inha
 
 So fügen Sie zusätzliche Ressourcen zum Filtern hinzu:
 
-* Auf der Authoring-Instanz
+* Auf einer Autoreninstanz
 * Als Administrator anmelden
 * Öffnen [Web-Konsole](http://localhost:4502/system/console/configMgr)
 * Suchen `AEM Communities Moderation Dashboard Filters`
@@ -262,7 +266,7 @@ Im Einzelauswahlmodus ist es möglich,
 * Anzeigen von Benutzerdetails durch Auswahl des Benutzernamens
 * Zeigen Sie den Beitrag im Kontext an, indem Sie den Link zum Beitrag auswählen
 * [Antwort](#reply)
-* [Gastzugang](#allow)
+* [Zulassen](#allow)
 * [Ablehnen](#deny)
 * [Löschen](#delete)
 * [Schließen](#close)
@@ -284,7 +288,7 @@ In der Kartenansicht über den Symbolen für Moderationsaktionen ist der Text de
 
 Beim Arbeiten mit einem einzelnen Beitrag wird ein Symbol Antworten angezeigt, wenn der UGC-Typ Antworten unterstützt und so konfiguriert ist, dass Antworten zulässig sind.
 
-#### Gastzugang {#allow}
+#### Zulassen {#allow}
 
 ![chlimage_1-481](assets/chlimage_1-481.png)
 

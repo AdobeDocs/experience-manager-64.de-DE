@@ -5,28 +5,32 @@ contentOwner: AG
 feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 86%
+source-wordcount: '800'
+ht-degree: 53%
 
 ---
 
 # Installieren und konfigurieren Sie ImageMagick, um mit [!DNL Experience Manager Assets] arbeiten zu können. {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
-ImageMagick-Software ist ein Software-Plug-in zum Erstellen, Bearbeiten, Zusammenzusetzen oder Konvertieren von Bitmap-Bildern. Es kann Bilder in über 200 Formaten lesen und schreiben, darunter PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF und SVG. Verwenden Sie ImageMagick, um die Größe von Bildern zu ändern, Bilder zu kippen, zu spiegeln, zu drehen, zu verzerren, zuzuschneiden und umzuwandeln. Darüber hinaus können Sie mit ImageMagick die Bildfarben anpassen, verschiedene Spezialeffekte anwenden oder Text, Linien, Polygone, Ellipsen und Kurven zeichnen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Verwenden Sie den Adobe Experience Manager-Medien-Handler über die Befehlszeile, um Bilder über ImageMagick zu verarbeiten. Unter [Best Practices für Assets-Dateiformate](assets-file-format-best-practices.md) finden Sie weitere Informationen zur Verwendung verschiedener Dateiformate mit ImageMagick. Unter [Von Assets unterstützte Formate](assets-formats.md) erfahren Sie mehr zu allen unterstützten Dateiformaten.
+ImageMagick-Software ist ein Software-Plug-in zum Erstellen, Bearbeiten, Zusammenzusetzen oder Konvertieren von Bitmap-Bildern. Es kann Bilder in über 200 Formaten lesen und schreiben, darunter PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF und SVG. Verwenden Sie ImageMagick, um die Größe, das Spiegeln, Spiegeln, Drehen, Verzerren, Verscheren und Transformieren von Bildern zu ändern. Mit ImageMagick können Sie auch Bildfarben anpassen, verschiedene Spezialeffekte anwenden oder Text, Linien, Polygone, Ellipsen und Kurven zeichnen.
 
-Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheranforderungen, potenzielle Änderungen an IM-Richtlinien und die Gesamtauswirkung auf die Leistung berücksichtigen. Die Speicheranforderungen hängen von verschiedenen Faktoren wie Auflösung, Bittiefe, Farbprofil und Dateiformat ab. Wenn Sie sehr große Dateien mit ImageMagick verarbeiten möchten, müssen Sie ein ordnungsgemäßes [!DNL Experience Manager]-Server-Benchmark durchführen. Einige hilfreiche Ressourcen finden Sie weiter unten.
+Verwenden Sie den Adobe Experience Manager-Medien-Handler über die Befehlszeile, um Bilder über ImageMagick zu verarbeiten. Informationen zum Arbeiten mit verschiedenen Dateiformaten mit ImageMagick finden Sie unter [Best Practices für Asset-Dateiformate](assets-file-format-best-practices.md). Weitere Informationen zu allen unterstützten Dateiformaten finden Sie unter [Von Assets unterstützte Formate](assets-formats.md).
+
+Um große Dateien mit ImageMagick zu verarbeiten, sollten Sie höhere Speicheranforderungen als gewöhnlich berücksichtigen, mögliche Änderungen an IM-Richtlinien und die Gesamtauswirkungen auf die Leistung berücksichtigen. Die Speicheranforderungen hängen von verschiedenen Faktoren wie Auflösung, Bittiefe, Farbprofil und Dateiformat ab. Wenn Sie sehr große Dateien mit ImageMagick verarbeiten möchten, müssen Sie ein ordnungsgemäßes [!DNL Experience Manager]-Server-Benchmark durchführen. Einige hilfreiche Ressourcen finden Sie weiter unten.
 
 >[!NOTE]
 >
->Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe Support, wenn Sie viele große PSD- oder PSB-Dateien verarbeiten möchten. Experience Manager verarbeiten möglicherweise keine sehr hochauflösenden PSB-Dateien mit mehr als 30000 x 23000 Pixel.
+>Wenn Sie [!DNL Experience Manager] in Adobe Managed Services (AMS) verwenden, wenden Sie sich an den Adobe Support, wenn Sie viele große PSD- oder PSB-Dateien verarbeiten möchten. Experience Manager verarbeitet möglicherweise keine PSB-Dateien mit sehr hoher Auflösung, die mehr als 30000 x 23000 Pixel umfassen.
 
 ## Installieren von ImageMagick {#installing-imagemagick}
 
-Es sind mehrere ImageMagick-Installationsdateien für verschiedene Betriebssysteme verfügbar. Verwenden Sie die entsprechende Version für Ihr Betriebssystem.
+Für verschiedene Betriebssysteme stehen mehrere Versionen von ImageMagic-Installationsdateien zur Verfügung. Verwenden Sie die entsprechende Version für Ihr Betriebssystem.
 
 1. Laden Sie die entsprechenden [ImageMagick-Installationsdateien](https://www.imagemagick.org/script/download.php) für Ihr Betriebssystem herunter.
 1. Um ImageMagick auf der Festplatte zu installieren, auf der der [!DNL Experience Manager]-Server gehostet wird, starten Sie die Installationsdatei.
@@ -34,7 +38,7 @@ Es sind mehrere ImageMagick-Installationsdateien für verschiedene Betriebssyste
 1. Legen Sie die Path-Umgebungsvariable auf das ImageMagick-Installationsverzeichnis fest.
 1. Um zu überprüfen, ob die Installation erfolgreich war, führen Sie den Befehl `identify -version` aus.
 
-## Einrichten des Befehlszeilenprozessschritts {#set-up-the-command-line-process-step}
+## Einrichten des Befehlszeilen-Prozessschritts {#set-up-the-command-line-process-step}
 
 Sie können den Befehlszeilenprozessschritt für Ihren jeweiligen Anwendungsfall einrichten. Führen Sie diese Schritte aus, um jedes Mal eine gespiegelte Version von Bildern und Miniaturansichten (140x100, 48x48, 319x319 und 1280x1280) zu erstellen, wenn Sie eine JPEG-Bilddatei zum Verzeichnis `/content/dam` auf dem [!DNL Experience Manager]-Server hinzufügen:
 
@@ -56,11 +60,11 @@ Sie können den Befehlszeilenprozessschritt für Ihren jeweiligen Anwendungsfall
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Tippen/klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Tippen/klicken **[!UICONTROL OK]** , um die Änderungen zu speichern.
 
    >[!NOTE]
    >
-   >In manchen Versionen von Windows (z. B. Windows SE) kann der Befehl `convert` fehlschlagen, da er in Konflikt mit dem nativen Dienstprogramm `convert` steht, das Teil der Windows-Installation ist. Geben Sie in diesem Fall den vollständigen Pfad zum ImageMagick-Programm an. Geben Sie zum Beispiel Folgendes an:
+   >In manchen Versionen von Windows (z. B. Windows SE) kann der Befehl `convert` fehlschlagen, da er in Konflikt mit dem nativen Dienstprogramm `convert` steht, das Teil der Windows-Installation ist. Geben Sie in diesem Fall den vollständigen Pfad für das ImageMagick-Dienstprogramm an. Geben Sie beispielsweise
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
@@ -68,16 +72,16 @@ Sie können den Befehlszeilenprozessschritt für Ihren jeweiligen Anwendungsfall
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. Fügen Sie in der Registerkarte **[!UICONTROL Webfähiges Bild]** den MIME-Typ `image/jpeg` unter **[!UICONTROL Liste zum Überspringen]** hinzu. Tippen/klicken Sie auf **[!UICONTROL OK]**, um die Änderungen zu speichern.
+1. Fügen Sie in der Registerkarte **[!UICONTROL Webfähiges Bild]** den MIME-Typ `image/jpeg` unter **[!UICONTROL Liste zum Überspringen]** hinzu. Tippen/klicken **[!UICONTROL OK]** , um die Änderungen zu speichern.
 
    ![web_enabled](assets/web_enabled.png)
 
 1. Speichern Sie den Workflow.
-1. Um zu überprüfen, ob ImageMagic Bilder ordnungsgemäß verarbeiten kann, laden Sie ein JPG-Bild in [!DNL Assets]. Stellen Sie sicher, ob dafür ein gekipptes Bild und die entsprechenden Ausgabedarstellungen generiert werden.
+1. Um zu überprüfen, ob ImageMagic Bilder ordnungsgemäß verarbeiten kann, laden Sie ein JPG-Bild in [!DNL Assets]. Überprüfen Sie, ob ein gespiegeltes Bild und die Ausgabeformate dafür generiert werden.
 
-## Reduzieren von Sicherheitslücken {#mitigating-security-vulnerabilities}
+## Minderung von Sicherheitslücken {#mitigating-security-vulnerabilities}
 
-Aus der Verwendung von ImageMagick für die Bearbeitung von Bildern resultieren mehrere Sicherheitslücken. Beispielsweise bringt die Verarbeitung von Bildern, die von Benutzern übermittelt wurden, das Risiko der Ferncodeausführung mit sich.
+Die Verwendung von ImageMagick zur Verarbeitung von Bildern weist mehrere Sicherheitslücken auf. Beispielsweise birgt die Verarbeitung von vom Benutzer übermittelten Bildern das Risiko der Ausführung von Remote-Code (RCE).
 
 Darüber hinaus hängen verschiedene Bildverarbeitungs-Plug-ins von der ImageMagick-Bibliothek ab, darunter der imagick von PHP, Rmagick und Paperclip von Ruby und Node.js imagemagick.
 
@@ -90,8 +94,8 @@ Wenn Sie ImageMagick oder eine betroffene Bibliothek verwenden, empfiehlt Adobe,
 >
 >* [Best Practices für die Verarbeitung verschiedener Dateiformate mithilfe von [!DNL Assets]](assets-file-format-best-practices.md)
 >* [Befehlszeilenoptionen für ImageMagick](https://www.imagemagick.org/script/command-line-options.php)
->* [Grundlegende und erweiterte Beispiele für die Nutzung von ImageMagick](https://www.imagemagick.org/Usage/)
->* [Assets-Leistungsoptimierung für ImageMagick](performance-tuning-guidelines.md)
+>* [Grundlegende und erweiterte Beispiele für die Verwendung von ImageMagick](https://www.imagemagick.org/Usage/)
+>* [Asset-Leistungsoptimierung für ImageMagick](performance-tuning-guidelines.md)
 >* [Vollständige Liste der von [!DNL Assets]](assets-formats.md)
->* [Dateiformate und Speicherbedarf von Bildern](https://www.scantips.com/basics1d.html)
+>* [Grundlegendes zu Dateiformaten und Speicherkosten von Bildern](https://www.scantips.com/basics1d.html)
 

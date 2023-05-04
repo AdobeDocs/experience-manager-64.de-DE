@@ -10,30 +10,34 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 36c87684-e62a-4983-b123-87f56dbf7bc5
 exl-id: 020d8f9b-7e55-415c-8b1e-c23a5f84a092
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 100%
+source-wordcount: '586'
+ht-degree: 75%
 
 ---
 
 # Grundlegendes zur Segmentierung{#understanding-segmentation}
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen vor dem Start einer Kampagne bereits Segmente definiert sein.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen Segmente bereits definiert sein, bevor Sie mit der Kampagne beginnen.
 
-Dies können Sie mithilfe der Segmentierung erreichen, indem Sie die folgenden Faktoren eines Besuchers analysieren und charakterisieren:
+Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Diese Ziele zu verstehen und die Erwartungen zu erfüllen, ist ein wichtiger Erfolgsfaktor für Online-Marketing.
+
+Die Segmentierung hilft dabei, die folgenden Punkte eines Besuchers zu analysieren und zu charakterisieren:
 
 * Aktivität auf der Website
 * Profil
-* Aktivität auf anderen Websites
+* Aktivitäten auf anderen Websites
 
-Inhalte können dann entsprechend den zutreffenden Segmenten speziell auf die Anforderungen und Interessen des Besuchers abgestimmt werden.
+Inhalte können dann entsprechend den jeweiligen Segmenten speziell auf die Bedürfnisse und Interessen des Besuchers abgestimmt werden.
 
 ## Verwenden von Segmentierung {#using-segmentation}
 
-Segmente werden unter [Konfigurieren von Segmentierung](/help/sites-administering/campaign-segmentation.md) definiert. Sie werden dazu verwendet, den tatsächlich für Zielgruppen sichtbaren Inhalt zu steuern.
+Segmente werden definiert in [Konfigurieren der Segmentierung](/help/sites-administering/campaign-segmentation.md). Sie werden dazu verwendet, den tatsächlich für Zielgruppen sichtbaren Inhalt zu steuern.
 
 ## Segmentierungsterminologie {#segmentation-terminology}
 
@@ -41,7 +45,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 
 **Besucherin/Besucher**: Eine Besucherin bzw. ein Besucher ist eine Person, die eine Website besucht. Der Besuch dieser Person beginnt in der Regel auf einer verweisenden Seite und geht dann über auf eine oder mehrere Seitenansichten auf Ihrer eigenen Website. Aus den Details des Besuchs dieser Person kann ein Verhaltensprofil erstellt werden.
 
-**Benutzerin/Benutzer**: Eine Benutzerin bzw. ein Benutzer ist eine Besucherin oder ein Besucher, die/der sich bei der Website registriert, um ein Kontoprofil zu erhalten. Um ein Profil zu erstellen, geben Benutzer weitere Informationen zu ihrer Person an, z. B. eine E-Mail-Adresse oder ihr Geschlecht. Es können auch weitere Informationen erfasst werden, beispielsweise Aktivität in der Community und Kaufmuster. Basierend auf den in dem Profil angegebenen Informationen kann ein demografisches Profil erstellt werden.
+**Benutzerin/Benutzer**: Eine Benutzerin bzw. ein Benutzer ist eine Besucherin oder ein Besucher, die/der sich bei der Website registriert, um ein Kontoprofil zu erhalten. Um ein Profil zu erstellen, geben Benutzer weitere Informationen zu ihrer Person an, z. B. eine E-Mail-Adresse oder ihr Geschlecht. Es können auch weitere Informationen erfasst werden, beispielsweise Aktivität in der Community und Kaufmuster. Basierend auf den im Profil angegebenen Informationen kann ein demografisches Profil erstellt werden.
 
 **Eigenschaft**: Eine Eigenschaft ist ein Merkmal oder eine Charakteristik einer Besucherin oder eines Besuchers, das bzw. die verwendet werden kann, um die Zugehörigkeit zu einem bestimmten Segment zu bestimmen.
 
@@ -52,13 +56,13 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 * Interessensgebiete auf Ihrer Website, einschließlich besuchter Seiten und gekaufter Produkte.
 * Interessensgebiete auf der verweisenden Website, einschließlich verwendeter Suchbegriffe oder Anzeigen, auf die geklickt wurde.
 * Interessensgebiete auf anderen Sites, die durch Tools wie Spyjax ermittelt werden.
-* Loyalität der Besucher, Dauer des Besuchs, Häufigkeit der Besuche.
+* Besucherloyalität; Dauer des Besuchs, Häufigkeit der Besuche.
 
 **Demografische Eigenschaften**: Dabei handelt es sich um ausgewählte Merkmale der Population, darunter:
 
 * Alter
 * Einkommen
-* Größe der Familie
+* Familiengröße
 * Familienstand
 * Geschlecht
 * Standort

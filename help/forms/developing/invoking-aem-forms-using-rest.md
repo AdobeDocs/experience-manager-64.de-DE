@@ -11,16 +11,20 @@ topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 82770ac6-aafc-44b9-82fb-6f193bb3a128
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2492'
-ht-degree: 99%
+source-wordcount: '2528'
+ht-degree: 97%
 
 ---
 
 # Aufrufen von AEM Forms mithilfe von REST-Anforderungen {#invoking-aem-forms-using-rest-requests}
 
-In Workbench erstellte Prozesse können so konfiguriert werden, dass sie über Representational State Transfer-Anforderungen (REST) aufgerufen werden können. REST-Anforderungen werden von HTML-Seiten aus gesendet. Das heißt, Sie können mithilfe einer REST-Anforderung einen Forms-Prozess direkt von einer Web-Seite aufrufen. Sie können beispielsweise eine neue Instanz einer Web-Seite öffnen. Anschließend können Sie einen Forms-Prozess aufrufen und ein gerendertes PDF-Dokument mit Daten laden, die in einer HTTP-POST-Anfrage gesendet wurden.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In Workbench erstellte Prozesse können so konfiguriert werden, dass sie über Representational State Transfer-Anforderungen (REST) aufgerufen werden können. REST-Anfragen werden von HTML-Seiten gesendet. Das heißt, Sie können mithilfe einer REST-Anforderung einen Forms-Prozess direkt von einer Web-Seite aufrufen. Sie können beispielsweise eine neue Instanz einer Web-Seite öffnen. Anschließend können Sie einen Forms-Prozess aufrufen und ein gerendertes PDF-Dokument mit Daten laden, die in einer HTTP-POST-Anfrage gesendet wurden.
 
 Es gibt zwei Arten von HTML-Clients. Der erste HTML-Client ist ein AJAX Client, der in JavaScript geschrieben ist. Der zweite Client ist ein HTML-Formular mit einer Senden-Schaltfläche. Ein HTML-basiertes Client-Programm ist nicht der einzige mögliche REST-Client. Jedes Client-Programm, das HTTP-Anforderungen unterstützt, kann einen Service mithilfe eines REST-Aufrufs aufrufen. Beispielsweise können Sie einen Service aufrufen, indem Sie einen REST-Aufruf aus einem PDF-Formular verwenden. (Siehe [Aufrufen des Prozesses MyApplication/EncryptDocument aus Acrobat](#rest-invocation-examples).)
 
@@ -289,7 +293,7 @@ Sie können einen kurzlebigen AEM Forms-Prozess namens *MyApplication/EncryptDoc
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Code-Beispiel zu folgen, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Code-Beispiel zu folgen, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 

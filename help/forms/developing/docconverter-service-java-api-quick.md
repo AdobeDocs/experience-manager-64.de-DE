@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
 exl-id: 0a418016-f61a-485d-a87a-a3d48651e0d7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 92%
+source-wordcount: '305'
+ht-degree: 83%
 
 ---
 
 # Kurzanleitung zur DocConverter-Service-Java-API (SOAP) {#docconverter-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Kurzanleitung zur Java-API (SOAP) ist für den DocConverter-Service verfügbar.
 

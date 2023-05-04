@@ -1,7 +1,7 @@
 ---
 title: Strukturvorlage
 seo-title: Scaffolding
-description: Oftmals muss eine große Zahl von Seiten erstellt werden, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen. Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.
+description: Manchmal müssen Sie eine große Anzahl von Seiten erstellen, die zwar die gleiche Struktur, aber unterschiedliche Inhalte aufweisen. Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.
 seo-description: Sometimes you may need to create a large set of pages that share the same structure but have differing content. With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
 uuid: b1fdf2c0-e6d0-488a-96e5-dfbd6beb7610
 contentOwner: Chris Bohnert
@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 exl-id: 9f57087f-895d-43b9-9b6a-9cfb4c794c7b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1453'
-ht-degree: 95%
+source-wordcount: '1489'
+ht-degree: 40%
 
 ---
 
 # Strukturvorlage{#scaffolding}
 
-Oftmals muss eine große Zahl von Seiten erstellt werden, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen. In der Standard-Benutzeroberfläche von AEM müssten Sie jede Seite neu erstellen, die entsprechenden Komponenten auf die Seiten ziehen und sie jedes Mal einzeln mit Inhalten füllen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.
+Manchmal müssen Sie eine große Anzahl von Seiten erstellen, die zwar die gleiche Struktur, aber unterschiedliche Inhalte aufweisen. Über die standardmäßige AEM-Benutzeroberfläche müssten Sie jede Seite erstellen, die entsprechenden Komponenten auf die Seite ziehen und sie einzeln ausfüllen.
+
+Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.
 
 >[!NOTE]
 >
@@ -31,10 +35,10 @@ Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dess
 
 Strukturvorlagen sind über die **Tools**-Konsole des SiteAdmin-Bereichs verfügbar.
 
-* Öffnen Sie die **Tools-Konsole** und klicken Sie auf **Standardseiten-Strukturvorlage**.
+* Öffnen Sie die **Instrumente** Konsole und klicken Sie auf **Strukturvorlage der Standardseite**.
 
-* Klicken Sie darunter auf **geometrixx**.
-* Unter **geometrixx** sollte eine *Grundlagenseite* mit dem Namen **News** verfügbar sein. Doppelklicken Sie auf die Seite, um sie zu öffnen.
+* Klicken Sie unter diesem auf **geometrixx**.
+* under **geometrixx** finden Sie *Strukturseite* aufgerufen **Nachrichten**. Doppelklicken Sie, um diese Seite zu öffnen.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
@@ -42,30 +46,30 @@ Die Strukturvorlage besteht aus einem Formular mit einem Feld für jedes Inhalts
 
 ![pageprops](assets/pageprops.png)
 
-Es handelt sich dabei um die folgenden Eigenschaften:
+Die Eigenschaften der Strukturvorlagen-Seite sind:
 
-* **Titeltext**: Dies ist der Name der Strukturvorlagen-Seite selbst. In diesem Beispiel lautet der Name „Nachrichten“.
-* **Beschreibung**: Dieser Text wird unterhalb des Titels der Stukturvorlagen-Seite angezeigt.
-* **Target-Vorlage**: Diese Vorlage wird von der Grundlage für die Erstellung einer neuen Seite verwendet. In diesem Beispiel ist das die Vorlage *Geometrixx-Inhaltsseite*.
+* **Titeltext**: Dies ist der Name dieser Strukturvorlagen-Seite selbst. In diesem Beispiel heißt es &quot;News&quot;.
+* **Beschreibung**: Dieser wird unter dem Titel auf der Strukturvorlagen-Seite angezeigt.
+* **Zielvorlage**: Dies ist die Vorlage, die diese Grundlage beim Erstellen einer neuen Seite verwenden wird. In diesem Beispiel handelt es sich um eine *Geometrixx-Inhaltsseite* Vorlage.
 
-* **Zielpfad**: Dies ist der Pfad der übergeordneten Seite, unterhalb derer die Grundlage neue Seiten anlegt. In diesem Beispiel lautet der Pfad */content/geometrixx/de/news*.
+* **Zielpfad**: Dies ist der Pfad der übergeordneten Seite, unter der diese Grundlage neue Seiten erstellt. In diesem Beispiel lautet der Pfad */content/geometrixx/de/news*.
 
 Der Textkörper der Strukturvorlage ist das Formular. Wenn ein Benutzer eine Seite mithilfe der Strukturvorlage erstellen möchte, füllt er das Formular aus und klickt unten auf *Erstellen*. Im Beispiel **Nachrichten** oben weist das Formular die folgenden Felder auf:
 
-* **Titel**: Dies ist der Name der zu erstellenden Seite. Dieses Feld ist für jede Grundlage vorhanden.
-* **Text**: Dieses Feld stellt eine Text-Komponente für die zu erstellende Seite dar.
+* **Titel**: Dies ist der Name der zu erstellenden Seite. Dieses Feld ist immer auf jeder Grundlage vorhanden.
+* **Text**: Dieses Feld entspricht einer Textkomponente auf der resultierenden Seite.
 * **Bild**: Dieses Feld stellt eine Bildkomponente für die zu erstellende Seite dar.
-* **Bild/erweitert**: **Titel**: Der Titel des Bildes.
+* **Bild/Erweitert**: **Titel**: Der Titel des Bildes.
 
-* **Bild/erweitert**: **ALT-Text**: Der Alt-Text des Bildes.
+* **Bild/Erweitert**: **Alternativtext**: Der Alternativtext für das Bild.
 
 * **Bild/Erweitert**: **Beschreibung**: Die Beschreibung des Bildes.
 
-* **Bild/erweitert**: **Größe**: Die Größe des Bildes.
+* **Bild/Erweitert**: **Größe**: Die Größe des Bildes.
 
-* **Tags/Keywords**: Metadaten, die der jeweiligen Seite zugeordnet werden sollen. Dieses Feld ist für jede Grundlage vorhanden.
+* **Tags/Keywords**: Metadaten, die dieser Seite zugewiesen werden sollen. Dieses Feld ist immer auf jeder Grundlage vorhanden.
 
-## Erstellen von Grundlagen {#creating-a-scaffold}
+## Erstellen einer Grundlage {#creating-a-scaffold}
 
 Um eine Strukturvorlage zu erstellen, wählen Sie in der **Tools**-Konsole die Option **Standardseiten-Strukturvorlage** aus und erstellen Sie eine neue Seite. Eine *Strukturvorlagen-Vorlage* ist als einseitige Vorlage verfügbar.
 
@@ -77,13 +81,13 @@ Um eine Strukturvorlage zu erstellen, wählen Sie in der **Tools**-Konsole die O
 
 Im Dialog-Editor legen Sie die Eigenschaften fest, die bei jeder Erstellung einer neuen Seite mithilfe dieser Grundlage erstellt werden.
 
-Die Dialogdefinition einer Strukturvorlage wird ähnlich wie bei einer Komponente durchgeführt (siehe [Komponenten](/help/sites-developing/components.md)). Es gibt allerdings einige wichtige Unterschiede:
+Die Dialogdefinition für eine Grundlage funktioniert ähnlich wie bei einer Komponente (siehe [Komponenten](/help/sites-developing/components.md)). Es gibt jedoch einige wichtige Unterschiede:
 
-* Dialogdefinition von Komponenten werden als normale Dialogfelder angezeigt (wie beispielsweise im mittleren Fenster des Dialog-Editors gezeigt), während Dialogdefinitionen von Grundlagen zwar als normale Dialogfelder im Dialog-Editor erscheinen, auf der Grundlagenseite aber als Grundlagenformular angezeigt werden (wie in der Grundlage **Nachrichten** oben).
-* In Dialogfeldern für Komponenten sind nur solche Werte enthalten, die für die Definition des Inhalts einer bestimmten einzelnen Komponente erforderlich sind. Im Dialogfeld für eine Grundlage sind Felder für alle Eigenschaften in allen Absätzen der zu erstellenden Seite enthalten.
-* Bei Dialogfeldern für Komponenten ist die Komponente, die für das Rendern des angegebenen Inhalts verwendet wird, implizit, und daher wird die Eigenschaft `sling:resourceType` eines Absatzes automatisch bei dessen Erstellung eingefügt. Bei der Arbeit mit Grundlagen müssen alle Informationen bezüglich des Inhalts und der zugewiesenen Komponente für einen bestimmten Absatz explizit im Dialogfeld selbst angegeben werden. In müssen diese Informationen durch Felder des Typs *Ausgeblendet* angegeben werden, um bei der Erstellung einer Seite wirksam zu werden.
+* Komponenten-Dialogfelddefinitionen werden als normale Dialogfelder gerendert (wie z. B. im mittleren Bereich des Dialogfeldeditors angezeigt), während grundlegende Dialogfelddefinitionen zwar als normale Dialogfelder im Dialogfeldeditor angezeigt werden, aber auf der Strukturseite als Grundlagenformular wiedergegeben werden (wie in der **Nachrichten** Gerüst oben).
+* Komponentendialogfelder enthalten nur Felder für die Werte, die zum Definieren des Inhalts einer einzelnen bestimmten Komponente erforderlich sind. Ein Gerüst-Dialogfeld muss Felder für jede Eigenschaft in jedem Absatz der zu erstellenden Seite enthalten.
+* Bei Dialogfeldern für Komponenten ist die Komponente, die für das Rendern des angegebenen Inhalts verwendet wird, implizit, und daher wird die Eigenschaft `sling:resourceType` eines Absatzes automatisch bei dessen Erstellung eingefügt. Bei einer Grundlage müssen alle Informationen, die sowohl den Inhalt als auch die zugewiesene Komponente für einen bestimmten Absatz definieren, vom Dialogfeld selbst bereitgestellt werden. In Gerüst-Dialogfeldern müssen diese Informationen bereitgestellt werden, indem Sie *Ausgeblendet* -Felder, um diese Informationen bei der Seitenerstellung zu übermitteln.
 
-Ein Blick auf das für **Nachrichten** im Dialog-Editor hilft bei der Erläuterung dieser Vorgehensweise. Wechseln Sie auf der Grundlagenseite in den Designmodus und klicken Sie auf den Link für den Dialog-Editor.
+Ein Beispiel **Nachrichten** scaffold dialog im Dialog-Editor hilft zu erklären, wie dies funktioniert. Wechseln Sie in den Designmodus auf der Gerüst-Seite und klicken Sie auf den Link Dialogfeldeditor .
 
 Klicken Sie nun auf das Dialogfeld **Dialogfeld > Registerfeld > Text > Text**, wie in der folgenden Abbildung zu sehen:
 
@@ -93,18 +97,18 @@ Daraufhin wird die Eigenschaftenliste für dieses Feld auf der rechten Seite des
 
 ![list_of_properties](assets/list_of_properties.png)
 
-Beachten Sie die Eigenschaft „Name“ für dieses Feld. Sie weist folgenden Wert auf:
+Beachten Sie die Eigenschaft name für dieses Feld. Sie hat den Wert
 
 ./jcr:content/par/text/text
 
-Dies ist der Name der Eigenschaft, in die der Inhalt dieses Feldes geschrieben wird, wenn die Grundlage für die Erstellung einer neuen Seite verwendet wird. Diese Eigenschaft wird als relativer Pfad in Bezug auf den Knoten der die zu erstellende Seite darstellt, angegeben. Sie gibt die Eigenschaft „text“ unterhalb des Knotens „text“ an, der unterhalb des Knotens „par“ liegt, der wiederum ein untergeordnetes Element des Knotens „jcr:content“ unterhalb des Seitenknotens darstellt.
+Dies ist der Name der Eigenschaft, in die der Inhalt dieses Feldes geschrieben wird, wenn die Grundlage für die Erstellung einer neuen Seite verwendet wird. Die Eigenschaft wird als relativer Pfad zu dem Knoten angegeben, der die zu erstellende Seite darstellt. Sie gibt den Eigenschaftstext unter dem Knotentext an, der sich unter dem Knoten par befindet, der wiederum ein untergeordnetes Element des Knotens jcr:content unter dem Seitenknoten ist.
 
-Dadurch wird der Speicherort für den Inhalt festgelegt, der in dieses Feld eingegeben wird. Allerdings sind noch zwei weitere Eigenschaften für die Charakterisierung des Inhalts erforderlich:
+Dies definiert den Speicherort des Inhalts-Speichers für den Text, der in dieses Feld eingegeben wird. Für diesen Inhalt müssen jedoch zwei weitere Eigenschaften angegeben werden:
 
-* Zum einen muss angegeben werden, dass die hier gespeicherte Zeichenfolge als *Rich-Text* zu interpretieren ist,
-* zum anderen muss die Komponente festgelegt werden, die für das Rendern des Inhalts auf der Seite verwendet wird.
+* Die Tatsache, dass die hier gespeicherte Zeichenfolge als *Rich-Text* und
+* welche Komponente zum Rendern dieses Inhalts auf der resultierenden Seite verwendet werden soll.
 
-Beachten Sie, dass Sie diese Informationen in einem normalen Komponentendialogfeld nicht angeben müssen, weil sie durch die Tatsache, dass das Dialogfeld an eine bestimmte Komponente gebunden ist, bereits vorgegeben sind.
+Beachten Sie, dass Sie in einem normalen Komponentendialogfeld diese Informationen nicht angeben müssen, da dies dadurch impliziert wird, dass das Dialogfeld bereits an eine bestimmte Komponente gebunden ist.
 
 Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Klicken Sie auf das erste ausgeblendete Feld **Dialogfeld > Registerfeld > Text > Ausgeblendet**, wie in der folgenden Abbildung zu sehen:
 
@@ -124,9 +128,9 @@ Da wir wissen, dass der Text als Rich-Text ausgewertet werden soll, setzen wir d
 
 >[!CAUTION]
 >
->Der Dialog-Editor ermöglicht die Änderung der Werte *bestehender* Eigenschaften in der Dialogdefinition. Um eine neue Eigenschaft hinzuzufügen, muss der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wird beispielsweise einer Dialogdefinition mit dem Dialog-Editor ein neues ausgeblendetes Feld hinzugefügt, weist dieses keine Eigenschaft *value* auf (d. h. keine Eigenschaft mit diesem Namen). Wenn für das betreffende ausgeblendete Feld standardmäßig eine Eigenschaft *value* festgelegt werden muss, kann dies nur manuell mithilfe eines der CRX-Werkzeuge erfolgen. Der Wert kann nicht im Dialog-Editor selbst hinzugefügt werden. Sobald allerdings die Eigenschaft vorhanden ist, kann der Wert im Dialog-Editor geändert werden.
+>Der Dialog-Editor ermöglicht die Änderung der Werte *bestehender* Eigenschaften in der Dialogdefinition. Um eine neue Eigenschaft hinzuzufügen, muss der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Wenn beispielsweise ein neues ausgeblendetes Feld zu einer Dialogfelddefinition mit dem Dialogfeldeditor hinzugefügt wird, verfügt es über keine *value* -Eigenschaft (d. h. eine Eigenschaft mit dem Namen &quot;value&quot;). Wenn das betreffende ausgeblendete Feld eine Standardeinstellung erfordert *value* -Eigenschaft festgelegt ist, muss diese Eigenschaft manuell mit einem der CRX-Tools hinzugefügt werden. Der Wert kann nicht mit dem Dialogfeldeditor selbst hinzugefügt werden. Sobald die Eigenschaft jedoch vorhanden ist, kann ihr Wert mit dem Dialogfeldeditor bearbeitet werden.
 
-Das zweite ausgeblendete Feld kann angezeigt werden, indem Sie wie folgt darauf klicken:
+Das zweite ausgeblendete Feld kann wie folgt angezeigt werden, indem Sie darauf klicken:
 
 ![hidden2](assets/hidden2.png)
 
@@ -159,9 +163,9 @@ Diese zeigen, dass die Komponente erst bearbeitet werden kann, wenn die Vererbun
 
 >[!NOTE]
 >
->Dies ist mit [vererbten Komponenten bei der Bearbeitung von Seiteninhalten vergleichbar](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
+>Dies ist vergleichbar mit [geerbte Komponenten beim Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
 
-Durch Klicken auf das Vorhängeschloss-Symbol oder auf das Bildsymbol können Sie die Vererbung aufheben:
+Durch Klicken auf das Sperrsymbol oder das Bildsymbol können Sie die Vererbung unterbrechen:
 
 * Das Symbol ändert sich in ein geöffnetes Vorhängeschloss.
 * Nach erfolgter Entsperrung können Sie den Inhalt bearbeiten.

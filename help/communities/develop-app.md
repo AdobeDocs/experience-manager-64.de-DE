@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: cd036e4a-0884-4ba0-83e9-7013583bbbae
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '601'
 ht-degree: 8%
 
 ---
 
 # Entwickeln von Sandbox-Anwendungen {#develop-sandbox-application}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In diesem Abschnitt wurde die Vorlage jetzt im [Erstanwendung](initial-app.md) und den in der [anfänglicher Inhalt](initial-content.md) kann die Anwendung mithilfe von Foundation-Skripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionieren.
 
@@ -136,14 +140,14 @@ Im Folgenden wird gezeigt, wie die Wiedergabeseite in der klassischen Benutzerob
 
 Um Communities-Komponenten für das Authoring zu aktivieren, befolgen Sie die folgenden Anweisungen:
 
-* [Auf Communities-Komponenten zugreifen](basics.md#accessing-communities-components)
+* [Zugreifen auf Communities-Komponenten](basics.md#accessing-communities-components)
 
 Beginnen Sie für diese Sandbox mit diesen **Communities** Komponenten (aktivieren, indem Sie das Kontrollkästchen aktivieren):
 
 * Kommentare
 * Forum
 * Bewertung
-* Reviews
+* Bewertungen
 * Bewertungszusammenfassung (Anzeige)
 * Abstimmung
 
@@ -152,12 +156,12 @@ Wählen Sie außerdem **[!UICONTROL Allgemein]** Komponenten wie
 * Bild
 * Tabelle
 * Text
-* Titel (Foundation)
+* Titel (Fundament)
 
 >[!NOTE]
 >
 >Die für die Seitenpar aktivierten Komponenten werden im Repository als Wert der Variablen `components` -Eigenschaft der\
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
+>`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` Knoten.
 
 ## Landingpage {#landing-page}
 

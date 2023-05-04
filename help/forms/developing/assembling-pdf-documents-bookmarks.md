@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2506835b-a75b-4d15-8fd4-1292d40a2132
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2544'
-ht-degree: 100%
+source-wordcount: '2580'
+ht-degree: 98%
 
 ---
 
 # Zusammenstellen von PDF-Dokumenten mit Lesezeichen {#assembling-pdf-documents-with-bookmarks}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können ein PDF-Dokument zusammenstellen, das Lesezeichen enthält. Angenommen, Sie verfügen über ein PDF-Dokument, das keine Lesezeichen enthält, und Sie möchten es ändern, indem Sie Lesezeichen hinzufügen. Mithilfe des Assembler-Services können Sie ein PDF-Dokument übergeben, das keine Lesezeichen enthält, und ein PDF-Dokument mit Lesezeichen zurückerhalten.
 

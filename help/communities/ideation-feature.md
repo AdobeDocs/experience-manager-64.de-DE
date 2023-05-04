@@ -10,14 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 7c0a9120-2edb-431b-b460-68398832d5ec
 exl-id: 391885f2-e46d-4eb4-9c88-509233505df8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 41%
+source-wordcount: '1094'
+ht-degree: 2%
 
 ---
 
 # Ideen-Funktion {#ideation-feature}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einführung {#introduction}
 
@@ -28,7 +32,7 @@ Die Filterfunktion bietet einen Bereich für angemeldete Site-Besucher (Communit
 * Folgen Sie einer Idee
 * Abstimmung über eine Idee
 
-In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
+In diesem Abschnitt der Dokumentation wird
 
 * Hinzufügen der Filterfunktion zu einer AEM Site
 * Konfigurationseinstellungen für die Komponente &quot;Idee&quot;
@@ -49,13 +53,13 @@ Wählen Sie die platzierte `Ideation` -Komponente, die aufgerufen und ausgewähl
 
 ![chlimage_1-30](assets/chlimage_1-30.png) ![chlimage_1-31](assets/chlimage_1-31.png)
 
-### Registerkarte „Settings“ {#settings-tab}
+### Registerkarte Einstellungen {#settings-tab}
 
 Unter dem **[!UICONTROL Einstellungen]** Registerkarte Einstellungen für Ideen und Kommentare festlegen:
 
 * **[!UICONTROL Ideentitel]**
 Der Anzeigetitel für die Idee. Der Standardwert ist 
-`Ideation` möglich.
+`Ideation`.
 
 * **[!UICONTROL Ideenbeschreibung]**
 Eine Beschreibung, die als Untertitel für die Idee angezeigt wird. Der Standardwert ist keine Beschreibung.
@@ -64,78 +68,87 @@ Eine Beschreibung, die als Untertitel für die Idee angezeigt wird. Der Standard
 Definiert die Anzahl der pro Seite angezeigten Ideen/Beiträge. Der Standardwert ist 10.
 
 * **[!UICONTROL Moderiert]**
-Wenn diese Option aktiviert ist, muss die Veröffentlichung von Ideen und Kommentaren genehmigt werden, bevor sie auf einer Veröffentlichungs-Site erscheinen. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, muss die Veröffentlichung von Ideen und Kommentaren genehmigt werden, bevor sie auf einer Veröffentlichungs-Site erscheinen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Geschlossen]**
-Wenn diese Option aktiviert ist, steht das Ideenforum neuen Ideen und Kommentaren offen. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, steht das Ideenforum neuen Ideen und Kommentaren offen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Rich-Text-Editor]**
-Wenn diese Option aktiviert ist, können Ideen und Kommentare mit Markup eingegeben werden. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, können Ideen und Kommentare mit Markup eingegeben werden. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Tagging zulassen]** Ist diese Option aktiviert, können Mitglieder ihren Beiträgen Tag-Beschriftungen hinzufügen (siehe Registerkarte **[!UICONTROL Tag-Feld]**). Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Tagging zulassen]**
+Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe **[!UICONTROL Tag-Feld]** Registerkarte). Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Datei-Uploads zulassen]**
-Wenn diese Option aktiviert ist, können der Idee oder dem Kommentar Dateianlagen hinzugefügt werden. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, können der Idee oder dem Kommentar Dateianlagen hinzugefügt werden. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Maximale Dateigröße]**
 Nur relevant, wenn 
-`Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+`Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe einer hochgeladenen Datei (in Byte). Der Standardwert ist 104857600 (10 MB).
 
 * **[!UICONTROL Zulässige Dateitypen]**
 Nur relevant, wenn 
-`Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
+`Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben werden, dürfen nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Maximale Dateigröße für Bildanhang]**
-Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
+Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anzahl der Bytes, die eine hochgeladene Bilddatei aufweisen kann. Der Standardwert ist 2097152 (2 MB).
 
 * **[!UICONTROL Antworten zulassen]**
-Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die zur Idee gepostet wurden. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die zur Idee gepostet wurden. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Benutzern das Löschen von Kommentaren und Themen ermöglichen]**
-Wenn diese Option aktiviert ist, können Mitglieder die Kommentare und Ideen löschen, die sie veröffentlicht haben. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, können Mitglieder die Kommentare und Ideen löschen, die sie veröffentlicht haben. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Folgende erlauben]**
-Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder [benachrichtigt](notifications.md) von neuen Stellen. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Ideenbeiträge hinzu, mit der Mitglieder [benachrichtigt](notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL E-Mail-Abonnements zulassen]**
-Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](email.md). Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](email.md). Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Abstimmung zulassen]**
-Sofern aktiviert, können Sie über die Kommentare einer Idee abstimmen. Diese Option ist standardmäßig deaktiviert.
+Sofern aktiviert, können Sie über die Kommentare einer Idee abstimmen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Anzeigemarken]**
-Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](implementing-scoring.md) mit der Idee eines Mitglieds. Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](implementing-scoring.md) mit der Idee eines Mitglieds. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Zulassen von speziellen Inhalten]**
-Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Diese Option ist standardmäßig deaktiviert.
+Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](featured.md). Die Option Standard ist deaktiviert.
 
 ### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die veröffentlichten Ideen und Kommentare (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Unter dem **[!UICONTROL Benutzermoderation]** -Registerkarte angeben, wie die veröffentlichten Ideen und Kommentare (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-* **[!UICONTROL Posts ablehnen]** Ist diese Option aktiviert, können moderierende Mitglieder Beiträge ablehnen und so verhindern, dass diese im Forum veröffentlicht werden. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Posts verweigern]**
+Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Themen schließen/erneut öffnen]** Ist diese Option aktiviert, können moderierende Mitglieder Themen für die weitere Bearbeitung oder Kommentare schließen oder bereits geschlossene Themen erneut öffnen. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Themen schließen/erneut öffnen]**
+Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern ein Thema schließen, um weitere Bearbeitungen und Kommentare vorzunehmen, und ein Thema möglicherweise erneut öffnen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Posts kennzeichnen]** Ist diese Option aktiviert, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Posts kennzeichnen]**
+Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Liste mit Kennzeichnungsgründen]** Ist diese Option aktiviert, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem ein Thema oder ein Kommentar als unangemessen gekennzeichnet wird. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Liste der Kennzeichnungsgründe]**
+Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]** Ist diese Option aktiviert, können Mitglieder einen eigenen Grund dafür eingeben, warum sie Themen oder Kommentare als unangemessen kennzeichnen möchten. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]**
+Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
-* **[!UICONTROL Schwellenwert für Moderation]** Geben Sie an, wie oft ein Thema oder ein Kommentar von Mitgliedern als unangemessen gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 ( einmal).
+* **[!UICONTROL Schwellenwert für Moderation]**
+Geben Sie an, wie oft ein Thema oder Kommentar von Mitgliedern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 ( einmal).
 
-* **[!UICONTROL Kennzeichnungslimit]** Geben Sie an, wie oft ein Thema oder ein Kommentar als unangemessen gekennzeichnet werden muss, bevor es oder er aus dem öffentlichen Bereich ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
+* **[!UICONTROL Kennzeichnungslimit]**
+Geben Sie an, wie oft ein Thema oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Wenn der Wert auf -1 festgelegt ist, wird das gekennzeichnete Thema oder der Kommentar nie aus der öffentlichen Ansicht ausgeblendet. Andernfalls muss diese Zahl größer oder gleich dem Schwellenwert für Moderation sein. Der Standardwert ist 5.
 
 ### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Auf der Registerkarte **[!UICONTROL Tag-Feld]** wird eingeschränkt, welche Tags je nach ausgewähltem Namespace (falls auf der Registerkarte **[!UICONTROL Einstellungen]** aktiviert) verwendet werden können.
+Unter dem **[!UICONTROL Tag-Feld]** Registerkarte die Tags, die angewendet werden können, sofern dies unter der Variablen **[!UICONTROL Einstellungen]** Registerkarte, sind entsprechend den ausgewählten Namespaces begrenzt.
 
 * **[!UICONTROL Zulässige Namespaces]**
 Relevant, wenn 
-`Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+`Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
-* **[!UICONTROL Empfehlungsgrenze]** Geben Sie die Anzahl der Tags an, die Mitgliedern als Vorschlag angezeigt werden sollen, wenn sie Beiträge im Forum veröffentlichen. Ein Wert von 
+* **[!UICONTROL Empfehlungslimit]**
+Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Ein Wert von 
 **-** 1 bedeutet keine Begrenzung. Der Standardwert ist 0.
 
 ### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
@@ -148,7 +161,7 @@ Aktivieren Sie alle zulässigen Sortieroptionen:
 
 * **[!UICONTROL Als Standard festlegen]**
 Ziehen Sie den Mauszeiger nach unten, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden sollen. Der Standardwert ist 
-`Newest` möglich.
+`Newest`.
 
 * **[!UICONTROL Zeitoptionen für Analytics-Sortierung auswählen]**
 Ziehen Sie nach unten, um eines von 
@@ -184,6 +197,6 @@ Sobald die Idee veröffentlicht wurde, können sich andere Mitglieder anmelden u
 
 Weitere Informationen finden Sie unter [Ideengrundlagen](ideation.md) für Entwickler.
 
-Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
 Informationen zum Tagging von veröffentlichten Themen und Kommentaren finden Sie unter [Tagging benutzergenerierter Inhalte](tag-ugc.md).

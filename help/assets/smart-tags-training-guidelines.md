@@ -1,5 +1,5 @@
 ---
-title: Richtlinien für das Trainieren des Smart Content Service
+title: Trainings-Richtlinien für Smart Content Service
 description: Trainieren des AI-Dienstes zum Anwenden von Smart-Tags auf Assets
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
@@ -8,26 +8,30 @@ discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 92%
+source-wordcount: '491'
+ht-degree: 65%
 
 ---
 
-# Richtlinien für das Trainieren des Smart Content Service {#smart-content-service-training-guidelines}
+# Trainings-Richtlinien für Smart Content Service {#smart-content-service-training-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Um Ihre Markenbilder effektiv mit Tags versehen zu können, erfordert der Smart Content Service, dass die Schulungsbilder bestimmten Richtlinien entsprechen.
 
 ## Richtlinien für das Training {#guidelines-for-training}
 
-Für optimale Ergebnisse sollten Bilder im Trainingssatz folgende Richtlinien einhalten:
+Um optimale Ergebnisse zu erzielen, sollten Bilder in Ihrem Trainings-Satz den folgenden Richtlinien entsprechen:
 
 **Menge und Größe:****Mindestens 30 Bilder pro Tag**. Mindestens 500 Pixel auf der längeren Seite.
 
 **Kohärenz**: Bilder für ein Tag sollten visuell ähnlich sein.
 
-So ist es beispielsweise nicht empfehlenswert, all diese Bilder mit dem Tag *my-party* zu versehen (zu Trainingszwecken), da sie einander visuell nicht ähnlich sind.
+Es ist beispielsweise nicht empfehlenswert, alle diese Bilder mit einem Tag zu versehen als *my-party* (für das Training), da sie visuell nicht ähnlich sind.
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](assets/do-not-localize/coherence.png)
 
@@ -47,15 +51,15 @@ Beispiel: Für das Tag *casual-shoe* ist das zweite Bild kein guter Kandidat fü
 
 ![Veranschaulichende Bilder als Beispiele für die Richtlinien für das Training](assets/do-not-localize/completeness.png)
 
-## Beschränkungen {#limitations}
+## Einschränkungen {#limitations}
 
-Optimierte Smart-Tags basieren auf Lernmodellen von Markenbildern und den zugehörigen Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen Version des Smart Content Service gibt es folgende Einschränkungen:
+Verbesserte Smart-Tags basieren auf Lernmodellen von Markenbildern und deren Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Die aktuelle Version des Smart Content Service weist die folgenden Einschränkungen auf:
 
 * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
-* Tags können nicht anhand von winzigen Mustern/Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
+* Es ist nicht möglich, Tags basierend auf winzigen Mustern/Teilen eines Bildes zu identifizieren. Zum Beispiel Logos auf T-Shirts.
 * Tagging wird in den Gebietsschemata unterstützt, in denen [!DNL Experience Manager] unterstützt wird. Eine Liste der Sprachen finden Sie in den [Versionshinweisen für Smart Content Services](/help/release-notes/smart-content-service-release-notes.md).
 
-Verwenden Sie die Asset-OmniSearch, um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
+Um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen, verwenden Sie die Asset-Omni-Suche (Volltextsuche). Es gibt kein separates Suchprädikat für Smart-Tags.
 
 >[!NOTE]
 >

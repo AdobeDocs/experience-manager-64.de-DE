@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
 exl-id: 6a7de639-9c87-4e7c-b431-e48c9cdc7982
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 90%
+source-wordcount: '260'
+ht-degree: 72%
 
 ---
 
 # Konfigurieren der Kontoumgebung{#configuring-your-account-environment}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
@@ -28,7 +32,7 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 
    * Bei Bedarf anzeigen (Standardeinstellung)
    * Immer anzeigen
-   * Ausblendung beibehalten
+   * Ausgeblendet halten
 
 * **Identität annehmen als**
 Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) kann eine Benutzerin oder ein Benutzer im Namen eines anderen Benutzers arbeiten.
@@ -44,7 +48,7 @@ Wählen Sie entweder:
 
 ## Kontoeinstellungen {#account-settings}
 
-Über das Benutzersymbol haben Sie Zugang zu den folgenden Optionen:
+Über das Benutzersymbol haben Sie Zugriff auf verschiedene Optionen:
 
 * Abmelden
 * [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user)

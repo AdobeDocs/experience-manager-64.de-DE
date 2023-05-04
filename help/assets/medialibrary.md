@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Leader
 exl-id: f0afdae4-5777-464c-9203-e9d19c6d62f6
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '572'
+ht-degree: 95%
 
 ---
 
@@ -22,6 +22,10 @@ Define what is not included
 -->
 
 # Verwenden von Media Library für grundlegendes Asset-Management {#manage-assets-using-media-library}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die [!DNL Adobe Experience Manager]-Plattform bietet verschiedene Funktionen zum Verwalten von Assets. Mit Media Library können Benutzer eine kleine Anzahl von Assets in das Repository hochladen, diese auf den Web-Seiten suchen und verwenden und einfache Asset-Management-Aufgaben für die Assets ausführen.
 

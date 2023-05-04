@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 2ecf05ed-4e56-4e0b-89cf-5161741f9001
 exl-id: 8e9a8739-76cd-4507-9c6c-86a5ad486618
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 14%
+source-wordcount: '443'
+ht-degree: 7%
 
 ---
 
 # Starten AEM PhoneGap {#starting-aem-phonegap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -55,9 +59,9 @@ Sobald Sie ein solides Verständnis der beiden oben genannten Schritte haben, sp
 
 ## Die nächsten Schritte {#the-next-steps}
 
-1. [Mein AEM Mobile App-Erlebnis ](/help/mobile/starting-aem-phonegap-app.md)
-1. [Verwalten des App-Inhalts ](/help/mobile/phonegap-manage-app-content.md)
-1. [Erstellen meiner Anwendung ](/help/mobile/building-app-mobile-phonegap.md)
-1. [Messen der Leistung meiner App mit Adobe Mobile Analytics ](/help/mobile/phonegap-intro-to-app-analytics.md)
-1. [Ein personalisiertes App-Erlebnis mit Adobe Target ](/help/mobile/phonegap-aem-mobile-content-personalization.md)
-1. [Senden wichtiger Nachrichten an meine Benutzer ](/help/mobile/phonegap-push-notifications.md)
+1. [Mein AEM Mobile-App-Erlebnis starten](/help/mobile/starting-aem-phonegap-app.md)
+1. [Inhalt meiner App verwalten](/help/mobile/phonegap-manage-app-content.md)
+1. [Meine Anwendung erstellen](/help/mobile/building-app-mobile-phonegap.md)
+1. [Verfolgen der Leistung meiner App mit Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+1. [Bereitstellen eines personalisierten App-Erlebnisses mit Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+1. [Senden wichtiger Nachrichten an meine Benutzer](/help/mobile/phonegap-push-notifications.md)

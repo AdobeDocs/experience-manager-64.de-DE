@@ -1,7 +1,7 @@
 ---
-title: Offloader für Assets-Workflows
+title: Asset-Workflow-Offloader
 seo-title: Assets Workflow Offloader
-description: Informieren Sie sich über den Offloader für Assets-Workflows.
+description: Erfahren Sie mehr über den Asset Workflow-Offloader.
 seo-description: Learn about the Assets Workflow Offloader.
 uuid: d1c93ef9-a0e1-43c7-b591-f59d1ee4f88b
 contentOwner: Chiradeep Majumdar
@@ -10,16 +10,20 @@ topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 exl-id: 2ca8e786-042b-44f6-ac60-834eca64f79f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 30%
+source-wordcount: '628'
+ht-degree: 3%
 
 ---
 
-# Offloader für Assets-Workflows{#assets-workflow-offloader}
+# Asset-Workflow-Offloader{#assets-workflow-offloader}
 
-Mit dem Offloader für Assets-Workflows können Sie es ermöglichen, dass mehrere Instanzen von Adobe Experience Manager (AEM) Assets die Verarbeitungslast auf der primären (führenden) Instanz reduzieren. Die Verarbeitungslast wird unter der führenden Instanz und den verschiedenen Offloader-Instanzen (Arbeiterinstanzen), die Sie hinzufügen, aufgeteilt. Die Verteilung der Verarbeitungslast von Assets erhöht die Effizienz und Geschwindigkeit, mit der Assets in AEM Assets verarbeitet werden. Darüber hinaus unterstützt dieser Ansatz die Zuteilung von dedizierten Ressourcen, um Assets eines bestimmten MIME-Typs zu verarbeiten. Beispielsweise können Sie festlegen, dass ein bestimmter Knoten in Ihrer Topologie ausschließlich InDesign-Assets verarbeitet.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Mit dem Assets-Workflow-Offloader können Sie mehrere Instanzen von Adobe Experience Manager (AEM) Assets aktivieren, um die Verarbeitungslast auf der primären (führenden) Instanz zu reduzieren. Die Verarbeitungslast wird auf die führende Instanz und die verschiedenen Offloader-Instanzen (Worker) verteilt, die Sie ihr hinzufügen. Die Verteilung der Verarbeitungslast von Assets erhöht die Effizienz und Geschwindigkeit, mit der AEM Assets Assets verarbeitet. Darüber hinaus hilft es bei der Zuordnung dedizierter Ressourcen zur Verarbeitung von Assets eines bestimmten MIME-Typs. Sie können beispielsweise einen bestimmten Knoten in Ihrer Topologie nur der Verarbeitung von InDesign-Assets zuweisen.
 
 ## Konfigurieren der Offloader-Topologie {#configure-offloader-topology}
 
@@ -42,9 +46,9 @@ Verwenden Sie Configuration Manager, um die URL für die führende Instanz und d
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. Um die Offloader-Instanzen anzuzeigen, die mit der führenden Instanz verbunden sind, gehen Sie zu **Tools** > **Bereitstellung** > **Topologie** und tippen oder klicken Sie auf die Cluster-Ansicht.
+1. Um die Offloader-Instanzen anzuzeigen, die mit der führenden Instanz verbunden sind, gehen Sie zu **Instrumente** > **Implementierung** > **Topologie** und tippen/klicken Sie auf die Cluster-Ansicht.
 
-## Deaktivieren des Abladens {#disable-offloading}
+## Abladung deaktivieren {#disable-offloading}
 
 1. Tippen/klicken Sie auf das AEM-Logo und wählen Sie **Instrumente** > **Implementierung** > **Abladung**. Die **Browser-Abladung** Seite zeigt Themen und die Serverinstanzen an, die die Themen nutzen können.
 
@@ -76,11 +80,11 @@ Konfigurieren von Workflow-Startern für die Verwendung der **DAM-Update-Asset-A
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Anzeigen des Kontextmenüs für **DAM-Workflow-Abladung** und wählen Sie **Bearbeiten**. Überprüfen Sie den Eintrag im Feld **Auftragsthema** auf der Registerkarte **Generische Argumente** des Konfigurationsdialogfelds.
+1. Anzeigen des Kontextmenüs für **DAM-Workflow-Abladung** und wählen Sie **Bearbeiten**. Überprüfen Sie den Eintrag im **Auftragsthema** des **Generische Argumente** im Konfigurationsdialogfeld.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
-## Deaktivieren der Workflow-Starter auf den Offloader-Instanzen {#disable-the-workflow-launchers-on-the-offloader-instances}
+## Deaktivieren der Workflow-Starter für die Offloader-Instanzen {#disable-the-workflow-launchers-on-the-offloader-instances}
 
 Deaktivieren Sie die Workflow-Starter, die die **DAM-Update-Asset** Workflow in der Leader-Instanz.
 

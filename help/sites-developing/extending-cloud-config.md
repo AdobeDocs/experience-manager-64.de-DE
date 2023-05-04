@@ -1,38 +1,42 @@
 ---
 title: Cloud Service-Konfigurationen
-description: Sie können die vorhandenen Instanzen erweitern und Ihre eigenen Konfigurationen erstellen.
+description: Sie können die vorhandenen Instanzen erweitern, um Ihre eigenen Konfigurationen zu erstellen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 66%
 
 ---
 
 # Cloud Service-Konfigurationen{#cloud-service-configurations}
 
-Konfigurationen sollen die Logik und Struktur für die Speicherung von Dienstkonfigurationen bereitstellen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Sie können die vorhandenen Instanzen erweitern und Ihre eigenen Konfigurationen erstellen.
+Konfigurationen dienen dazu, die Logik und Struktur zum Speichern von Dienstkonfigurationen bereitzustellen.
+
+Sie können die vorhandenen Instanzen erweitern, um Ihre eigenen Konfigurationen zu erstellen.
 
 ## Konzepte {#concepts}
 
-Die Prinzipien, die bei der Entwicklung von Konfigurationen zum Einsatz kommen, basieren auf den folgenden Konzepten:
+Die bei der Entwicklung der Konfigurationen verwendeten Prinzipien basieren auf folgenden Konzepten:
 
-* Mit Diensten/Adaptern werden die Konfigurationen abgerufen.
-* Konfigurationen (z. B. Eigenschaften/Absätze) werden von den übergeordneten Elementen geerbt.
-* Die Verweise erfolgen von Analyseknoten nach Pfad.
-* Sie sind einfach erweiterbar.
+* Dienste/Adapter werden zum Abrufen der Konfigurationen verwendet.
+* Konfigurationen (z. B. Eigenschaften/Absätze) werden von den übergeordneten Elementen übernommen.
+* Referenziert von Analyseknoten nach Pfad.
+* Einfach erweiterbar.
 * Sie können auch komplexere Konfigurationen unterstützen, z. B. [Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
 * Unterstützung für Abhängigkeiten (z. B. benötigen [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Plug-ins eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Konfiguration).
 
 ## Struktur {#structure}
 
-Der Basispfad von Konfigurationen ist:
+Der Basispfad der Konfigurationen lautet:
 
 `/etc/cloudservices`.
 
@@ -44,10 +48,10 @@ Um eine Konfiguration für einen neuen Dienste bereitzustellen, müssen Sie:
 
    `/etc/cloudservices`
 
-* und darunter:
+* unter dieser
 
-   * eine Konfigurationsvorlage und
-   * eine Konfigurationskomponente erstellen.
+   * eine Konfigurationsvorlage
+   * eine Konfigurationskomponente
 
 Die Vorlage und die Komponente müssen `sling:resourceSuperType` von der Basisvorlage erben:
 
@@ -133,22 +137,22 @@ propertyname
 
 ### API {#api}
 
-Die Referenzdokumentation zur API finden Sie unter [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+Referenzdokumentation zur API finden Sie unter [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM-Integration {#aem-integration}
 
 Verfügbare Dienste sind auf der Registerkarte **Cloud-Services** des Dialogfelds **Seiteneigenschaften** aufgeführt (bei jeder Seite, die von `foundation/components/page` oder `wcm/mobile/components/page` erbt).
 
-Die Registerkarte bietet zusätzlich:
+Die Registerkarte bietet außerdem Folgendes:
 
-* einen Link zu dem Verzeichnis, in dem Sie den Dienst aktivieren können
-* die Auswahl einer Konfiguration (untergeordneter Knoten des Dienstes) aus einem Pfad-Feld
+* einen Link zum Speicherort, an dem Sie den Dienst aktivieren können
+* eine Konfiguration (Unterknoten des Dienstes) aus einem Pfadfeld auswählen
 
 #### Kennwortverschlüsselung {#password-encryption}
 
-Beim Speichern der Anmeldedaten der Benutzer für den Dienst sollten alle Kennwörter verschlüsselt werden.
+Beim Speichern von Benutzeranmeldeinformationen für den Dienst sollten alle Kennwörter verschlüsselt werden.
 
-Zu diesem Zweck können Sie ein ausgeblendetes Formularfeld hinzufügen. Dieses Feld sollte im Eigenschaftsnamen die Anmerkung `@Encrypted` enthalten; d. h. im Feld `password` würde der Name wie folgt geschrieben:
+Sie können dies erreichen, indem Sie ein ausgeblendetes Formularfeld hinzufügen. Dieses Feld sollte im Eigenschaftsnamen die Anmerkung `@Encrypted` enthalten; d. h. im Feld `password` würde der Name wie folgt geschrieben:
 
 `password@Encrypted`
 
@@ -213,7 +217,7 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
 
 Diese Dienste werden standardmäßig bereitgestellt:
 
-* [Tracker Snippets](/help/sites-administering/external-providers.md) (Google, WebTrends usw.)
+* [Tracker-Snippets](/help/sites-administering/external-providers.md) (Google, WebTrends usw.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)

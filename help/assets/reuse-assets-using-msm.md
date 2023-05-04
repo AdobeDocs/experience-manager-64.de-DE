@@ -6,14 +6,18 @@ mini-toc-levels: 1
 feature: Asset Management,Multi Site Manager
 role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3159'
-ht-degree: 95%
+source-wordcount: '3195'
+ht-degree: 87%
 
 ---
 
 # Wiederverwenden von Assets mit MSM für [!DNL Assets] {#reuse-assets-using-msm-for-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Mit der Funktion „Multi Site Manager“ (MSM) in [!DNL Adobe Experience Manager] können Benutzer einmal erstellte Inhalte in mehreren Web-Speicherorten wiederverwenden. Für digitale Assets steht dieselbe Funktion zur Verfügung wie MSM für [!DNL Assets]. Mit MSM für [!DNL Assets] können Sie:
 
@@ -49,15 +53,15 @@ MSM behält eine (Live-)Beziehung zwischen dem Quell-Asset und seinen Live Copi
 
 * **Rollout-Konfiguration**: Regeln, die bestimmen, welche Eigenschaften wie und wann synchronisiert werden. Diese Konfigurationen werden beim Erstellen von Live Copies angewendet und können später bearbeitet werden. Dabei kann ein untergeordnetes Element die Rollout-Konfiguration vom zugehörigen übergeordneten Asset übernehmen. Verwenden Sie für MSM für [!DNL Assets] nur die standardmäßige Rollout-Konfiguration. Die anderen Rollout-Konfigurationen sind für MSM für [!DNL Assets] nicht verfügbar.
 
-* **Synchronisieren**: Eine weitere Aktion, die zusätzlich zum Rollout für Parität zwischen Quelle und deren Live Copy sorgt, indem Aktualisierungen von der Quelle an die Live Copys gesendet werden. Eine Synchronisierung wird für eine bestimmte Live Copy initiiert und die Aktion ruft die Änderungen von der Quelle ab. Mit dieser Aktion können Sie nur eine der Live Copies aktualisieren. Siehe [Aktion „Synchronisieren“](#about-synchronize-action).
+* **Synchronisieren**: Eine weitere Aktion, die zusätzlich zum Rollout für Parität zwischen Quelle und deren Live Copy sorgt, indem Aktualisierungen von der Quelle an die Live Copys gesendet werden. Eine Synchronisierung wird für eine bestimmte Live Copy initiiert und die Aktion ruft die Änderungen von der Quelle ab. Mit dieser Aktion können Sie nur eine der Live Copies aktualisieren. Siehe [Aktion synchronisieren](#about-synchronize-action).
 
-* **Aussetzen**: Entfernt vorübergehend die Live-Beziehung zwischen einer Live Copy und dem zugehörigen Quell-Asset/-Ordner. Sie können die Beziehung wieder aufnehmen. Siehe [Aktion „Aussetzen“](#suspend-and-resume-relationship).
+* **Aussetzen**: Entfernt vorübergehend die Live-Beziehung zwischen einer Live Copy und dem zugehörigen Quell-Asset/-Ordner. Sie können die Beziehung wieder aufnehmen. Siehe [Aussetzen der Aktion](#suspend-and-resume-relationship).
 
-* **Fortsetzen**: Setzt die Live-Beziehung fort, damit eine Live Copy erneut Aktualisierungen von der Quelle empfangen kann. Siehe [Aktion „Fortsetzen“](#suspend-and-resume-relationship).
+* **Fortsetzen**: Setzt die Live-Beziehung fort, damit eine Live Copy erneut Aktualisierungen von der Quelle empfangen kann. Siehe [Aktion fortsetzen](#suspend-and-resume-relationship).
 
-* **Zurücksetzen**: Durch die Aktion „Zurücksetzen“ wird die Live Copy wieder eine Replikation der Quelle. Dazu werden lokale Änderungen überschrieben. Außerdem werden abgebrochene Vererbungsvorgänge entfernt und Vererbungen in allen Metadatenfeldern zurückgesetzt. Für zukünftige lokale Änderungen müssen Sie die Vererbung bestimmter Felder erneut abbrechen. Siehe [Lokale Änderungen an LC](#make-local-modifications-to-live-copy).
+* **Zurücksetzen**: Durch die Aktion „Zurücksetzen“ wird die Live Copy wieder eine Replikation der Quelle. Dazu werden lokale Änderungen überschrieben. Außerdem werden abgebrochene Vererbungsvorgänge entfernt und Vererbungen in allen Metadatenfeldern zurückgesetzt. Für zukünftige lokale Änderungen müssen Sie die Vererbung bestimmter Felder erneut abbrechen. Siehe [lokale Änderungen an LC](#make-local-modifications-to-live-copy).
 
-* **Trennen**: Entfernt unwiderruflich die Live-Beziehung eines Live Copy-Assets/-Ordners. Nach der Aktion „Trennen“ können Live Copies niemals Aktualisierungen aus der Quelle empfangen und sie haben keinen Live Copy-Status mehr. Siehe [Entfernen von Beziehungen](#remove-live-relationship).
+* **Trennen**: Entfernt unwiderruflich die Live-Beziehung eines Live Copy-Assets/-Ordners. Nach der Aktion „Trennen“ können Live Copies niemals Aktualisierungen aus der Quelle empfangen und sie haben keinen Live Copy-Status mehr. Siehe [Beziehung entfernen](#remove-live-relationship).
 
 ## Erstellen von Live Copies eines Assets {#create-live-copy-asset}
 
@@ -158,7 +162,7 @@ Wählen Sie Live Copy-Asset oder -Ordner aus, öffnen Sie die linke Leiste und 
 
 ## Übertragen von Änderungen von der Quelle an Live Copies   {#propagate-modifications-from-source-to-live-copies}
 
-Nach der Bearbeitung einer Quelle können die Änderungen entweder mithilfe einer Aktion „Synchronisieren“ oder „Rollout“ an die Live Copies übertragen werden. Informationen zu den Unterschieden zwischen beiden Aktionen finden Sie im [Glossar](#glossary-msm-for-assets).
+Nachdem eine Quelle geändert wurde, können die Änderungen entweder mithilfe einer Aktion &quot;Synchronisieren&quot;oder einer Rollout-Aktion an die Live Copies übertragen werden. Informationen zu den Unterschieden zwischen beiden Aktionen finden Sie im [Glossar](#glossary-msm-for-assets).
 
 ### Aktion „Rollout“  {#rollout-action}
 
@@ -236,25 +240,25 @@ Mehrere Assets in einem Live Copy-Ordner können auch schnell über die Konsole
 
 Wenn mehrere Assets in einem Live Copy-Ordner vorhanden sind, kann das Initiieren von Aktionen für jedes Asset mühsam sein. Sie können grundlegende Aktionen für eine große Zahl von Assets schnell über die Live Copy-Konsole initiieren. Die oben genannten Methoden können nach wie vor für einzelne Assets verwendet werden.
 
-1. Wählen Sie einen Quellordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]** Sie können auch den Tastaturbefehl p verwenden.
+1. Wählen Sie einen Quellordner aus. Klicken Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften.]** Alternativ können Sie den Tastaturbefehl p verwenden.
 1. Klicken Sie auf Live Copy-Quelle. Klicken Sie auf **[!UICONTROL Live Copy-Übersicht]**, um die Konsole zu öffnen.
 1. Wählen Sie in diesem Dashboard ein Live Copy-Asset aus einem Live Copy-Ordner aus. Klicken Sie in der Symbolleiste auf die gewünschten Aktionen. Die verfügbaren Aktionen sind **[!UICONTROL Bearbeiten]**, **[!UICONTROL Synchronisieren]**, **[!UICONTROL Zurücksetzen]**, **[!UICONTROL Aussetzen]** und **[!UICONTROL Trennen]**. Sie können diese Aktionen schnell für beliebige Assets in einer beliebigen Anzahl von Live Copy-Ordnern starten, die sich in einer Live-Beziehung mit dem ausgewählten Quellordner befinden.
    ![Einfaches Aktualisieren vieler Assets in Live Copy-Ordnern über die Konsole „Live Copy-Übersicht“](assets/lc_console_update_assets.png)
 
 ## Erweitern von MSM für Assets {#extend-msm-for-assets}
 
-[!DNL Experience Manager] ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern. Bei MSM für Assets funktioniert die Erweiterung genauso wie bei MSM für Sites. Weitere Details finden Sie unter [Erweitern von MSM](../sites-developing/extending-msm.md) sowie Informationen zu bestimmten Aufgaben in den folgenden Abschnitten:
+[!DNL Experience Manager] ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern. Bei Assets funktioniert die Erweiterung genauso wie bei MSM für Site. Weitere Informationen finden Sie unter [MSM erweitern](../sites-developing/extending-msm.md) und in den folgenden Abschnitten finden Sie Informationen zu bestimmten Aufgaben:
 
 * [Übersicht über APIs](../sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Erstellen einer neuen Aktion „Synchronisieren“](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
+* [Neue Synchronisierungsaktion erstellen](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
 * [Erstellen einer neuen Rollout-Konfiguration](../sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
 * [Erstellen und Verwenden einer einfachen LiveActionFactory-Klasse](../sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
 >[!NOTE]
 >
->* Blueprints in MSM für Sites werden in MSM für Assets als Live Copy-Quellen bezeichnet.
->* Das Entfernen des Schritts „Kapitel“ im Assistenten zum Erstellen von Sites wird in MSM für Assets nicht unterstützt.
->* Das Konfigurieren von MSM-Sperren in Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für Assets nicht unterstützt.
+>* Blueprint in MSM für Site wird in MSM für Assets als Live Copy-Quelle bezeichnet.
+>* Das Entfernen des Kapitelschritts im Assistenten zum Erstellen einer Site wird in MSM für Assets nicht unterstützt.
+>* Das Konfigurieren von MSM-Sperren für Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für Assets nicht unterstützt.
 
 
 ## Auswirkungen von Asset-Management-Aufgaben auf Live Copies {#impact-of-asset-management-tasks-on-live-copies}
@@ -270,12 +274,12 @@ Live Copies und Quellen sind Assets oder Ordner, die in gewissem Umfang als dig
 
 ## MSM für Assets und Sites im Vergleich {#compare-msm-for-assets-and-sites}
 
-In weiteren Szenarien entspricht das Verhalten von MSM für Assets dem von MSM für Sites. Einige wichtige Unterschiede lauten wie folgt:
+In mehr Szenarien entspricht MSM für Assets dem Verhalten der Funktion MSM für Sites . Einige wichtige Unterschiede lauten wie folgt:
 
-* In Sites können Sie Blueprints und deren Live Copies vergleichen. In Assets ist es jedoch nicht möglich, eine Quelle mit der zugehörigen Live Copy zu vergleichen.
-* Sites verfügen normalerweise über untergeordnete Elemente, Assets jedoch nicht. Die Option zum Ein- oder Ausschließen von untergeordneten Elementen ist beim Erstellen von Live Copies einzelner Assets nicht vorhanden.
-* Das Entfernen des Schritts „Kapitel“ im Assistenten zum Erstellen von Sites wird in MSM für Assets nicht unterstützt.
-* Das Konfigurieren von MSM-Sperren in Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für Assets nicht unterstützt.
+* In Sites können Sie einen Blueprint mit seiner Live Copy vergleichen, in Assets ist es jedoch nicht möglich, eine Quelle mit ihrer Live Copy zu vergleichen.
+* Sites verfügen in der Regel über untergeordnete Elemente, Assets jedoch nicht. Die Option zum Ein- oder Ausschließen von untergeordneten Elementen ist beim Erstellen von Live Copies einzelner Assets nicht vorhanden.
+* Das Entfernen des Kapitelschritts im Assistenten zum Erstellen einer Site wird in MSM für Assets nicht unterstützt.
+* Das Konfigurieren von MSM-Sperren für Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für Assets nicht unterstützt.
 * Verwenden Sie für MSM für Assets nur die standardmäßige Rollout-Konfiguration. Die anderen Rollout-Konfigurationen sind für MSM für Assets nicht verfügbar.
 
 ## Einschränkungen von MSM für Assets {#limitations-of-msm-for-assets}

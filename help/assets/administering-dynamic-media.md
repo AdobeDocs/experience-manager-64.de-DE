@@ -10,24 +10,28 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 exl-id: dd43de7b-8556-4e3f-9d90-14f0f5bd13e7
 feature: Configuration
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 72%
+source-wordcount: '289'
+ht-degree: 57%
 
 ---
 
 # Einrichten von Dynamic Media  {#setting-up-dynamic-media}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie Assets durch die On-Demand-Bereitstellung visuell ansprechender Merchandising- und Marketing-Assets verwalten, die automatisch für das Internet sowie mobile und Social-Media-Websites skaliert werden. Über ein Set von Master-Assets generiert und liefert Dynamic Media durch ein globales, skalierbares, leistungsoptimiertes Netzwerk mehrere Varianten vielfältiger Inhalte in Echtzeit.
 
 >[!NOTE]
 >
->In diesem Dokument werden die Funktionen für dynamische Medien beschrieben, die direkt in AEM integriert sind. Wenn Sie Dynamic Media Classic in AEM verwenden, lesen Sie [Dokumentation zur Dynamic Media Classic-Integration](/help/sites-administering/scene7.md).
+>In dieser Dokumentation werden Dynamic Media-Funktionen beschrieben, die direkt in AEM integriert sind. Wenn Sie Dynamic Media Classic in AEM verwenden, lesen Sie [Dokumentation zur Dynamic Media Classic-Integration](/help/sites-administering/scene7.md).
 >
 >Siehe [Szenario für die doppelte Verwendung](/help/sites-administering/scene7.md#dual-use-scenario) für Fälle, in denen Sie möglicherweise AEM verwenden möchten, die in Dynamic Media Classic gemeinsam mit Dynamic Media integriert sind.
 
-Wenn Sie dynamische Medien verwalten, sind für Sie die folgenden Themen interessant:
+Wenn Sie dynamische Medien verwalten, sind die folgenden Themen von Interesse:
 
 * [Konfigurieren des Dynamic Media-Scene7-Modus](config-dms7.md) - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
 * [Konfigurieren des Dynamic Media-Hybridmodus](config-dynamic.md) - Verwenden Sie diese Konfiguration, wenn Sie bereits Dynamic Media-Kunde sind und AEM aktualisieren.

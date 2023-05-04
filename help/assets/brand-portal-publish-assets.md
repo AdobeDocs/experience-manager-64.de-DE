@@ -5,14 +5,18 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 65%
+source-wordcount: '439'
+ht-degree: 55%
 
 ---
 
 # Veröffentlichen von Assets in Brand Portal {#publish-assets-to-brand-portal}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Als Adobe Experience Manager Assets-Administrator können Sie Assets in der [!DNL Experience Manager Assets Brand Portal] Instanz (oder planen Sie den Veröffentlichungs-Workflow auf einen späteren Zeitpunkt) für Ihre Organisation. Sie müssen jedoch zunächst [!DNL Assets] mit [!DNL Brand Portal]. Weitere Informationen finden Sie unter [Konfigurieren [!DNL Assets] mit [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md).
 
@@ -26,7 +30,7 @@ Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in [!DN
 >
 >Adobe empfiehlt eine gestaffelte Veröffentlichung, vorzugsweise außerhalb der Spitzenzeiten, sodass die [!DNL Experience Manager] Der Autor belegt keine überschüssigen Ressourcen.
 
-1. Bewegen Sie in der Assets-Konsole den Mauszeiger auf die gewünschten Assets und wählen Sie aus den Schnellaktionen die Option **[!UICONTROL Veröffentlichen]** aus.
+1. Bewegen Sie in der Konsole &quot;Assets&quot;den Mauszeiger über die gewünschten Assets und wählen Sie **[!UICONTROL Veröffentlichen]** aus den Schnellaktionen.
 
    Alternativ können Sie auch die Assets auswählen, die Sie in Brand Portal veröffentlichen möchten.
 
@@ -48,7 +52,7 @@ Um die ausgewählten Assets in Brand Portal zu veröffentlichen, führen Sie ein
 
    2. Within **[!UICONTROL Anwendungsbereich]**, bestätigen Sie Ihre Auswahl und tippen/klicken Sie auf **[!UICONTROL In Brand Portal veröffentlichen]**.
 
-Eine Meldung erscheint, die besagt, dass die Assets zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurden. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets zu sehen.
+Eine Meldung erscheint, die besagt, dass die Assets zur Veröffentlichung in Brand Portal in die Warteschlange gestellt wurden. Melden Sie sich bei der Brand Portal-Benutzeroberfläche an, um die veröffentlichten Assets anzuzeigen.
 
 ## Assets später veröffentlichen {#publish-later}
 

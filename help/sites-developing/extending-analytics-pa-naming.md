@@ -1,7 +1,7 @@
 ---
 title: Implementieren Server-seitiger Seitennamen für Analytics
 seo-title: Implementing Server-Side Page Naming for Analytics
-description: Adobe Analytics verwendet die Eigenschaft „pageName“, um Seiten eindeutig zu identifizieren und die Daten, die für die Seiten erfasst werden, zu verknüpfen.
+description: Adobe Analytics verwendet die Eigenschaft s.pageName , um Seiten eindeutig zu identifizieren und die für die Seiten erfassten Daten zuzuordnen
 seo-description: Adobe Analytics uses the s.pageName property to uniquely identify pages and to associate the data that is collected for the pages
 uuid: 37b92099-0cce-4b2d-b55c-928f636dbd7e
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: e45b56e9-2fd1-4c29-9384-350e1376c193
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 78%
 
 ---
 
 # Implementieren Server-seitiger Seitennamen für Analytics{#implementing-server-side-page-naming-for-analytics}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Adobe Analytics verwendet die Eigenschaft `s.pageName`, um Seiten eindeutig zu identifizieren und die Daten, die für die Seiten erfasst werden, zu verknüpfen. Normalerweise führen Sie in AEM die folgenden Aufgaben aus, um dieser Eigenschaft, die AEM an Analytics übermittelt, einen Wert zuzuordnen:
 
@@ -53,16 +57,16 @@ Wenn Sie der Eigenschaft `s.pageName` im Framework keine CQ-Variable zuordnen, w
 
 ## Wahren der Kontinuität beim Analytics-Reporting {#maintaining-continuity-in-analytics-reporting}
 
-Ein vollständiger Verlauf der Analysedaten für eine Seite erfordert, dass sich der Wert der Eigenschaft „s.pageName“ nicht ändert, die für eine Seite verwendet wird. Die Analtyics-Eigenschaften, die die Foundation-Seitenkomponente definiert, können jedoch problemlos geändert werden. Beispielsweise ändert das Verschieben einer Seite den Wert von `pagedata.path`. Damit ist die Kontinuität des Berichtsverlaufs nicht mehr gewahrt:
+Um einen vollständigen Verlauf der Analysedaten für eine Seite zu erhalten, muss sich der Wert der Eigenschaft s.pageName, die für eine Seite verwendet wird, nie ändern. Die Analytics-Eigenschaften, die die Foundation-Seitenkomponente definiert, können jedoch einfach geändert werden. Beispielsweise ändert das Verschieben einer Seite den Wert von `pagedata.path`. Damit ist die Kontinuität des Berichtsverlaufs nicht mehr gewahrt:
 
 * Daten, die für den vorherigen Pfad erfasst wurden, sind nicht mehr mit der Seite verknüpft.
-* Wenn eine andere Seite den Pfad verwendet, den zuvor eine weitere Seite verwendet hat, erbt die andere Seite die Daten für diesen Pfad.
+* Wenn eine andere Seite den Pfad verwendet, den eine andere Seite verwendet hat, übernimmt die andere Seite die Daten für diesen Pfad.
 
 Um die Kontinuität des Reportings zu wahren, sollte der Wert von `s.pageName` die folgenden Merkmale aufweisen:
 
-* Eindeutig
-* Stabil
-* Für Menschen lesbar
+* Eindeutig.
+* Stabil.
+* Menschen lesbar.
 
 Beispielsweise kann eine benutzerdefinierte Seitenkomponente eine Seiteneigenschaft enthalten, mit der Autoren eine eindeutige ID für die Seite angeben, die als Wert für die Eigenschaft `s.pageProperties` verwendet wird:
 
@@ -78,7 +82,7 @@ Beispielsweise kann eine benutzerdefinierte Seitenkomponente eine Seiteneigensch
 
 Implementieren Sie die Schnittstelle `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` als OSGi-Dienst, um die Logik anzupassen, die den Wert der Eigenschaft „`s.pageName`“ abruft. Die Sites-Seitenanalyse und Inhaltserkenntnisse verwenden den Dienst zum Abrufen der Berichtsdaten von Analytics.
 
-Die Schnittstelle „AnalyticsPageNameProvider“ definiert zwei Methoden, die Sie implementieren müssen:
+Die AnalyticsPageNameProvider-Schnittstelle definiert zwei Methoden, die Sie implementieren müssen:
 
 * `getPageName`: Gibt einen `String`-Wert zurück, der für den als Eigenschaft `s.pageName` zu verwendenden Wert steht.
 
@@ -91,9 +95,9 @@ Bei beiden Methoden wird ein `com.day.cq.analytics.sitecatalyst.AnalyticsPageNa
 * Das `Resource`-Objekt für die Seite.
 * Das `ResourceResolver`-Objekt für die Seite.
 
-Die Klasse stellt auch einen Setter für den Seitennamen zur Verfügung.
+Die Klasse stellt auch einen Setter für den Seitennamen bereit.
 
-### AnalyticsPageNameProvider-Beispielimplementierung {#example-analyticspagenameprovider-implementation}
+### Beispiel einer AnalyticsPageNameProvider-Implementierung {#example-analyticspagenameprovider-implementation}
 
 Die folgende `AnalyticsPageNameProvider`-Beispielimplementierung unterstützt eine Seitenkomponente:
 
@@ -122,7 +126,7 @@ public String getPageName(AnalyticsPageNameContext context) {
     }
 ```
 
-Die folgende Implementierung der Methode „getResource“ gibt das Resource-Objekt für die Seite zurück:
+Die folgende Implementierung der getResource -Methode gibt das Resource -Objekt für die Seite zurück:
 
 ```java
      public Resource getResource(AnalyticsPageNameContext context) {
@@ -154,7 +158,7 @@ Die folgende Implementierung der Methode „getResource“ gibt das Resource-Obj
     }
 ```
 
-Der folgende Code repräsentiert die gesamte Klasse, einschließlich der SCR-Anmerkungen, die den Dienst konfigurieren. Beachten Sie, dass der Dienstrang 200 lautet, womit der standardmäßige Dienst überschrieben wird.
+Der folgende Code stellt die gesamte Klasse dar, einschließlich SCR-Anmerkungen, die den Dienst konfigurieren. Beachten Sie, dass der Service-Rang 200 ist, wodurch der Standarddienst außer Kraft gesetzt wird.
 
 ```java
 /*************************************************************************

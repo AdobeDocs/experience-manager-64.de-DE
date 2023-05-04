@@ -1,7 +1,7 @@
 ---
-title: Integrieren von Einstiegsseiten in Adobe Analytics
+title: Integrieren von Landing-Pages in Adobe Analytics
 seo-title: Integrating Landing Pages with Adobe Analytics
-description: Erfahren Sie, wie Sie mit Adobe Analytics Einstiegsseiten integrieren können.
+description: Erfahren Sie, wie Sie Landingpages in Adobe Analytics integrieren können.
 seo-description: Learn how to integrate landing pages with Adobe Analytics.
 uuid: 8f6672d1-497f-4ccb-b3cc-f6120fc467ba
 contentOwner: msm-service
@@ -10,19 +10,23 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: 2923ae94-375a-4c44-a08f-f992eb08000a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 77%
 
 ---
 
-# Integrieren von Einstiegsseiten in Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
+# Integrieren von Landing-Pages in Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM hat die Einstiegsseitenlösung mithilfe des folgenden Aktionsaufrufs in [Adobe Analytics](https://www.omniture.com/de/products/analytics/sitecatalyst) integriert:
 
 1. Clickthrough-Komponente
-1. Grafischer Link
+1. Grafische Link-Komponente
 
 Diese Komponenten legen bestimmte Attribute offen, die über Adobe Analytics-Variablen (Traffic, Konversionsvariablen) und Erfolgsereignisse zugeordnet werden können, um Informationen an Adobe Analytics zu senden.
 
@@ -38,10 +42,10 @@ In AEM können die **Aktionsaufruf**-Komponenten – **ClickThroughLink** und *
 
 ### Zuordnen von Einstiegsseitenkomponenten zu Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
-Sie können wie folgt Einstiegsseitenkomponenten zu Adobe Analytics zuordnen:
+So ordnen Sie Einstiegsseitenkomponenten Adobe Analytics zu:
 
-1. Wählen Sie nach der Erstellung der Adobe Analytics-Konfiguration und der Erstellung eines neuen Frameworks die passende Suite für das Reporting aus dem Dropdown-Menü aus. Hierdurch erfolgt das Abrufen der Adobe Analytics-Variablen und ihre Anzeige in der Inhaltssuche.
-1. Ziehen Sie Aktionsaufrufkomponenten bei Bedarf vom Sidekick in den Zuordnungsbereich in der Mitte der Seite und legen Sie sie dort ab.
+1. Wählen Sie nach der Erstellung der Adobe Analytics-Konfiguration und der Erstellung eines neuen Frameworks die passende Suite für das Reporting aus dem Dropdown-Menü aus. Dadurch werden die Adobe Analytics-Variablen abgerufen und im Content Finder angezeigt.
+1. Ziehen Sie die Komponenten &quot;Aktionsaufruf (CTA)&quot;aus dem Sidekick in den Zuordnungsbereich in der Mitte der Seite, falls zutreffend.
 
 <table> 
  <tbody>

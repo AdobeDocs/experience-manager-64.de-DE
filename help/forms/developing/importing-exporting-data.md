@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: e9d10d35-6a8d-497d-83f7-67ee6c22baed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 100%
+source-wordcount: '2800'
+ht-degree: 97%
 
 ---
 
 # Importieren und Exportieren von Daten {#importing-and-exporting-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Über den Form Data Integration-Service {#about-the-form-data-integration-service}
 
@@ -29,8 +33,8 @@ Der Form Data Integration-Service erlaubt sowohl das Importieren von Daten in ei
 
 Je nach PDF-Formulartyp können Formulardaten in einem der folgenden Formate vorliegen:
 
-* Als XFDF-Datei, die eine XML-Version des Acrobat-Formulardatenformats darstellt.
-* Als XDP-Datei, die eine XML-Datei mit Formularfelddefinitionen darstellt. Diese kann auch Formularfelddaten und eine eingebettete PDF-Datei enthalten. Eine von Designer generierte XDP-Datei kann nur verwendet werden, wenn in ihr ein Base-64-kodiertes PDF-Dokument eingebettet ist.
+* Eine XFDF-Datei, die eine XML-Version des Acrobat-Formulardatenformats ist.
+* Eine XDP-Datei, die eine XML-Datei ist, die Formularfelddefinitionen enthält. Sie kann auch Formularfelddaten und eine eingebettete PDF-Datei enthalten. Eine von Designer generierte XDP-Datei kann nur verwendet werden, wenn in ihr ein Base-64-kodiertes PDF-Dokument eingebettet ist.
 
 Sie können diese Aufgaben mit dem Form Data Integration-Service erledigen:
 

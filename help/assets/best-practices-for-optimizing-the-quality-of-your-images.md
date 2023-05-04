@@ -1,6 +1,6 @@
 ---
 title: Best Practices für die Optimierung der Bildqualität
-description: Erfahren Sie mehr über die Best Practices für die Optimierung der Bildqualität in dynamischen Medien.
+description: Best Practices zur Optimierung der Bildqualität in dynamischen Medien
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
@@ -8,33 +8,37 @@ content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: Asset Management,Renditions
 role: User
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1461'
-ht-degree: 93%
+source-wordcount: '1497'
+ht-degree: 51%
 
 ---
 
 # Best Practices für die Optimierung der Bildqualität {#best-practices-for-optimizing-the-quality-of-your-images}
 
-Die Optimierung der Bildqualität kann viel Zeit in Anspruch nehmen, da zahlreiche Faktoren dazu beitragen, angemessene Ergebnisse zu erzielen. Das Ergebnis ist teilweise subjektiv, da Einzelpersonen die Bildqualität unterschiedlich empfinden. Daher ist strukturiertes Experimentieren entscheidend.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-AEM umfasst mehr als 100 Bildbereitstellungsbefehle für dynamische Medien, mit denen Bilder angepasst und optimiert und Ergebnisse gerendert werden können. Mit den folgenden Richtlinien können Sie den Prozess anhand von einigen wesentlichen Befehlen und Best Practices optimieren und schnell angemessene Ergebnisse erzielen.
+Die Optimierung der Bildqualität kann zeitaufwendig sein, da viele Faktoren dazu beitragen, akzeptable Ergebnisse zu erzielen. Das Ergebnis ist teilweise subjektiv, da Einzelpersonen die Bildqualität unterschiedlich wahrnehmen. Strukturierte Experimente sind der Schlüssel.
 
-## Best Practices für Bildformat (&amp;fmt=) {#best-practices-for-image-format-fmt}
+AEM umfasst mehr als 100 Dynamic Media-Bildbereitstellungsbefehle zum Optimieren und Optimieren von Bildern und zum Rendern von Ergebnissen. Die folgenden Richtlinien helfen Ihnen dabei, den Prozess zu optimieren und mithilfe einiger wichtiger Befehle und Best Practices schnell gute Ergebnisse zu erzielen.
 
-* JPG oder PNG ist die optimale Auswahl für die Bereitstellung von Bildern in guter Qualität und mit angemessener Größe.
+## Best Practices für das Bildformat (&amp;fmt=) {#best-practices-for-image-format-fmt}
+
+* JPG oder PNG sind die beste Wahl, um Bilder in guter Qualität und mit überschaubarer Größe und Gewicht bereitzustellen.
 * Wenn kein Formatsbefehl in der URL angegeben ist, wird standardmäßig JPG bei der Bildbereitstellung von Dynamic Media verwendet.
-* JPG nutzt ein Komprimierungsverhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateien. PNG nutzt ein Komprimierungsverhältnis von 2:1, außer in einigen Fällen, z. B. wenn Bilder einen weißen Hintergrund aufweisen. Normalerweise sind PNG-Dateien aber größer als JPG-Dateien.
-* JPG nutzt verlustreiche Komprimierung. Das heißt, dass Bildelemente (Pixel) bei der Komprimierung verloren gehen. PNG verwendet dagegen die verlustfreie Komprimierung.
-* JPG komprimiert Fotos oft mit größerer Wiedergabetreue als synthetische Bilder mit scharfen Kanten und Kontrast.
-* Wenn Bilder transparent sind, verwenden Sie PNG, da JPG keine Transparenz unterstützt.
+* JPG komprimiert im Verhältnis von 10:1 und erzeugt normalerweise kleinere Bilddateigrößen. PNG komprimiert im Verhältnis von etwa 2:1, außer in einigen Fällen, z. B. wenn Bilder einen weißen Hintergrund enthalten. Normalerweise sind PNG-Dateien jedoch größer als JPG-Dateien.
+* JPG verwendet verlustbehaftete Komprimierung, d. h. Bildelemente (Pixel) werden während der Komprimierung abgelegt. PNG hingegen verwendet verlustfreie Komprimierung.
+* JPG komprimiert Fotobilder oft mit einer höheren Wiedergabetreue als synthetische Bilder mit scharfen Kanten und Kontrast.
+* Wenn Ihre Bilder Transparenz enthalten, verwenden Sie PNG, da JPG keine Transparenz unterstützt.
 
 Als Best Practice in Bezug auf das Bildformat wird empfohlen, mit der gängigsten Einstellung `&fmt=JPG` zu beginnen.
 
 ## Best Practices für die Bildgröße {#best-practices-for-image-size}
 
-Eine der häufigsten Aufgaben betrifft die dynamische Reduzierung der Bildgröße. Dabei wird die Größe angegeben sowie (optional) welcher Downsampling-Modus für die Verkleinerung des Bildes verwendet wird.
+Die dynamische Reduzierung der Bildgröße ist eine der häufigsten Aufgaben. Es umfasst die Angabe der Größe und optional, welcher Downsampling-Modus zum Downskalieren des Bildes verwendet wird.
 
 * Für die Bildgröße ist es am besten und einfachsten, `&wid=<value>` und `&hei=<value>,` oder nur `&hei=<value>` zu verwenden. Mit diesen Parametern wird die Bildbreite automatisch entsprechend dem Seitenverhältnis festgelegt.
 * `&resMode=<value>` steuert den Algorithmus für das Downsampling. Beginnen Sie mit `&resMode=sharp2`. Mit diesem Wert erreichen Sie die beste Bildqualität. Der Downsampling-Wert `value =bilin` ist zwar schneller, führt aber auch oft zum Aliasing von Artefakten.
@@ -47,12 +51,12 @@ Die Bild-Scharfzeichnung stellt den komplexesten Aspekt bei der Kontrolle von Bi
 
 Siehe auch [Scharfzeichnen eines Bildes mit der Unschärfemaske](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html).
 
-In AEM können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder an beiden Zeitpunkten scharfzeichnen. In den meisten Fällen sollten Sie Bilder aber nur mit einer Methode, nicht mit beiden scharfzeichnen. Normalerweise erhalten Sie die besten Ergebnisse beim Scharfzeichnen von Bildern bei der Bereitstellung mit einer URL.
+In AEM können Sie Bilder bei der Aufnahme, bei der Bereitstellung oder an beiden Zeitpunkten scharfzeichnen. In den meisten Fällen sollten Sie Bilder jedoch nur mit der einen oder der anderen Methode scharfzeichnen, jedoch nicht mit beiden. Das Scharfzeichnen von Bildern bei einem Versand (über eine URL) liefert in der Regel die besten Ergebnisse.
 
-Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
+Es gibt zwei Methoden zum Scharfzeichnen von Bildern, die Sie verwenden können:
 
 * Einfache Scharfzeichnung (`&op_sharpen`): Dies ähnelt dem in Photoshop verwendeten Scharfzeichnungsfilter und wendet einfache Scharfzeichnung auf die endgültige Ansicht des Bildes nach der dynamischen Skalierung an. Diese Methode kann aber nicht vom Benutzer konfiguriert werden. Es wird empfohlen, &amp;op_sharpen nur zu verwenden, wenn es unbedingt erforderlich ist.
-* Unschärfemaske (`&op_USM`): Die Unschärfemaske ist ein dem Branchenstandard entsprechender Scharfzeichnungsfilter. Als Best Practice wird empfohlen, Bilder anhand der folgenden Richtlinien mit der Unschärfemaske scharfzuzeichnen. Bei Verwendung der Unschärfemaske können Sie die folgenden drei Parameter steuern:
+* Unschärfemaske (`&op_USM`): Die Unschärfemaske ist ein dem Branchenstandard entsprechender Scharfzeichnungsfilter. Die Best Practice ist, Bilder mit Unschärfemaske gemäß den unten stehenden Richtlinien scharfzuzeichnen. Mit der Unschärfemaske können Sie die folgenden drei Parameter steuern:
 
    * `&op_sharpen=`amount,radius,threshold
 
@@ -69,21 +73,21 @@ Sie können zwei Methoden zur Bild-Scharfzeichnung verwenden:
    * In AEM können Sie auch einen vierten Parameter steuern: monochrome (0,1). Dieser Parameter bestimmt, ob eine Unschärfemaske auf jede Farbkomponente separat (mit dem Wert 0) oder auf die Bildhelligkeit/-intensität (mit dem Wert 1) angewendet wird.
 
 
-Es wird empfohlen, mit dem Unschärfemasken-Parameter für den Radius zu beginnen. Sie können zu Beginn die folgenden Radiuseinstellungen verwenden:
+Als Best Practice wird empfohlen, mit dem Parameter für den Radius der Unschärfemaske zu beginnen. Sie können mit den folgenden Radiuseinstellungen beginnen:
 
 * **[!UICONTROL Website]**: 0,2–0,3 Pixel
 * **[!UICONTROL Fotodruck (250–300 ppi)]**: 0,3–0,5 Pixel
 * **[!UICONTROL Offset-Druck (266–300 ppi)]**: 0,7–1,0 Pixel
 * **[!UICONTROL Leinwanddruck (150 ppi)]**: 1,5–2,0 Pixel
 
-Erhöhen Sie den Wert schrittweise von 1,75 auf maximal 4. Wenn die Scharfzeichnung noch immer nicht Ihren Wünschen entspricht, erhöhen Sie den Radius um eine Dezimalstelle und erhöhen Sie den Wert erneut von 1,75 auf 4. Wiederholen Sie diesen Vorgang nach Bedarf.
+Erhöhen Sie schrittweise den Betrag von 1,75 auf 4. Wenn die Scharfzeichnung weiterhin nicht Ihren Vorstellungen entspricht, erhöhen Sie den Radius um einen Dezimalpunkt und führen Sie den Betrag erneut von 1,75 auf 4 aus. Wiederholen Sie diese Schritte nach Bedarf.
 
-Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
+Belassen Sie die Einstellung für den monochromen Parameter auf 0.
 
 ### Best Practices für JPEG-Komprimierung (&amp;qlt=) {#best-practices-for-compression-qlt}
 
-* Dieser Parameter steuert die JPG-Kodierungsqualität. Ein höherer Wert führt zu einer höheren Bildqualität, aber auch zu einer größeren Datei. Ein niedrigerer Wert dagegen bedeutet eine niedrigere Bildqualität, aber auch eine kleinere Datei. Der Bereich für diesen Parameter beträgt 0–100.
-* Um die Qualität zu optimieren, setzen Sie den Parameterwert nicht auf 100. Die Unterschiede zwischen einer Einstellung von 90 oder 95 und 100 sind fast nicht wahrnehmbar, aber die Einstellung 100 erhöht die Größe der Bilddatei unnötigerweise. Um die Qualität zu optimieren, aber zu vermeiden, dass Bilddateien zu groß werden, setzen Sie daher den Wert von `qlt=<value>` auf 90 oder 95.
+* Dieser Parameter steuert die Qualität der JPG-Kodierung. Ein höherer Wert bedeutet ein Bild mit höherer Qualität, jedoch eine große Dateigröße. Ein niedrigerer Wert bedeutet dagegen eine niedrigere Bildqualität, aber eine kleinere Dateigröße. Der Bereich für diesen Parameter ist 0-100.
+* Setzen Sie den Parameterwert nicht auf 100, um die Qualität zu optimieren. Der Unterschied zwischen einer Einstellung von 90 oder 95 und 100 ist fast nicht wahrnehmbar, aber 100 erhöht unnötig die Größe der Bilddatei. Um die Qualität zu optimieren, aber zu vermeiden, dass Bilddateien zu groß werden, setzen Sie daher den Wert von `qlt=<value>` auf 90 oder 95.
 * Erstellen Sie eine Bilddatei mit geringer Dateigröße bei akzeptabler Bildqualität, indem Sie `qlt=<value>` auf 80 setzen. Werte unter 70 bis 75 führen zu einer erheblichen Verschlechterung der Bildqualität.
 * Als Best Practice wird empfohlen, einen Kompromiss zu wählen: Setzen Sie `qlt=<value>` dazu auf 85.
 * Verwendung der Chroma-Markierung in `qlt=`
@@ -93,7 +97,7 @@ Belassen Sie die Einstellung des Parameters „monochrome“ auf 0.
 
 Verwenden Sie als Best Practice für die JPG-Komprimierung `&qlt=85,0`.
 
-## Best Practices für JPEG-Skalierung (&amp;jpegSize=) {#best-practices-for-jpeg-sizing-jpegsize}
+## Best Practices für die JPEG-Skalierung (&amp;jpegSize=) {#best-practices-for-jpeg-sizing-jpegsize}
 
 jpegSize ist ein nützlicher Parameter, wenn Sie garantieren möchten, dass ein Bild eine bestimmte Größe für die Bereitstellung an Geräten mit begrenztem Speicher nicht übersteigt.
 
@@ -108,14 +112,14 @@ Um eine hohe Bildqualität und kleine Dateien zu erreichen, wird als Best Practi
 
 `fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0`
 
-Diese Einstellungskombination sorgt in den meisten Fällen für hervorragende Ergebnisse.
+Diese Kombination von Einstellungen liefert unter den meisten Umständen hervorragende Ergebnisse.
 
-Wenn das Bild weiter optimiert werden muss, passen Sie die Parameter für die Scharfzeichnung (Unschärfemaske) schrittweise an, beginnend mit einem Radius von 0,2 oder 0,3. Erhöhen Sie dann schrittweise den Betrag von 1,75 auf maximal 4 (entspricht 400 % in Photoshop). Prüfen Sie, ob das gewünschte Ergebnis erzielt wurde.
+Wenn das Bild weiter optimiert werden muss, passen Sie die Parameter für die Scharfzeichnung (Unschärfemaske) schrittweise an, indem Sie mit einem Radius von 0,2 oder 0,3 beginnen. Erhöhen Sie dann schrittweise den Wert von 1,75 auf maximal 4 (entspricht 400 % in Photoshop). Prüfen Sie, ob das gewünschte Ergebnis erzielt wurde.
 
-Wenn die Scharfzeichnungsergebnisse noch immer nicht den Erwartungen entsprechen, erhöhen Sie den Radius in Dezimalschritten. Beginnen Sie den Wert bei jedem Dezimalschritt bei 1,75 und erhöhen Sie diesen schrittweise auf 4. Wiederholen Sie diesen Vorgang, bis Sie das gewünschte Ergebnis erzielen. Die oben genannten Werte stellen zwar einen von Kreativstudios anerkannten Ansatz dar, Sie können aber auch mit anderen Werten beginnen und andere Strategien verfolgen. Sie entscheiden subjektiv, wann die Ergebnisse zufriedenstellend sind. Daher ist das strukturierte Experimentieren entscheidend.
+Wenn die Scharfzeichnungsergebnisse immer noch nicht zufriedenstellend sind, erhöhen Sie den Radius in Dezimalschritten. Starten Sie für jede Dezimalinkrementierung den Betrag bei 1,75 neu und erhöhen Sie ihn schrittweise auf 4. Wiederholen Sie diesen Vorgang, bis Sie das gewünschte Ergebnis erzielen. Die obigen Werte sind zwar ein Ansatz, den Kreativstudios validiert haben, aber denken Sie daran, dass Sie mit anderen Werten beginnen und andere Strategien verfolgen können. Ob die Ergebnisse für Sie zufriedenstellend sind oder nicht, ist eine subjektive Angelegenheit, daher ist strukturiertes Experimentieren entscheidend.
 
-Beim Experimentieren können auch die folgenden allgemeinen Empfehlungen nützlich sein, um Ihren Workflow zu optimieren:
+Beim Experimentieren können die folgenden allgemeinen Empfehlungen zur Optimierung Ihres Workflows hilfreich sein:
 
 * Testen Sie verschiedene Parameter in Echtzeit direkt auf einer URL.
-* Denken Sie daran, dass Sie Dynamic Media-Bildverarbeitungsbefehle in einer Bildvorgabe zusammenfassen können. Eine Bildvorgabe besteht im Grunde aus URL-Befehlsmakros mit benutzerspezifischen Vorgabenamen (wie `$thumb_low$` und `&product_high$`). Der benutzerspezifische Vorgabename in einem URL-Pfad ruft diese Vorgaben auf. Mit dieser Funktion können Sie Befehle und Qualitätseinstellungen für verschiedene Nutzungsmuster von Bildern auf Ihrer Website verwalten und die Gesamtlänge von URLs reduzieren.
-* AEM bietet außerdem erweiterte Funktionen für die Optimierung der Bildqualität, wie das Scharfzeichnen von Bildern bei der Aufnahme. Bei erweiterten Anwendungsfällen, bei denen dies eine Option sein könnte, um die angezeigten Ergebnisse abzustimmen und zu optimieren, kann [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) Ihnen mit kundenspezifischen Einblicken und Best Practices behilflich sein.
+* Denken Sie daran, dass Sie Dynamic Media-Bildverarbeitungsbefehle in einer Bildvorgabe zusammenfassen können. Eine Bildvorgabe besteht im Grunde aus URL-Befehlsmakros mit benutzerspezifischen Vorgabenamen (wie `$thumb_low$` und `&product_high$`). Der benutzerdefinierte Vorgabenname in einem URL-Pfad führt einen Aufruf an diese Vorgaben durch. Mit dieser Funktion können Sie Befehle und Qualitätseinstellungen für verschiedene Nutzungsmuster von Bildern auf Ihrer Website verwalten und die Gesamtlänge von URLs reduzieren.
+* AEM bietet außerdem erweiterte Möglichkeiten zur Abstimmung der Bildqualität, z. B. das Anwenden von Scharfzeichnen von Bildern bei der Aufnahme. Bei erweiterten Anwendungsfällen, bei denen dies eine Option sein könnte, um die angezeigten Ergebnisse abzustimmen und zu optimieren, kann [Adobe Professional Services](https://www.adobe.com/de/experience-cloud/consulting-services.html) Ihnen mit kundenspezifischen Einblicken und Best Practices behilflich sein.

@@ -1,7 +1,7 @@
 ---
 title: Testen – wann und mit wem?
 seo-title: Testing - when and with whom?
-description: Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Projektentwicklung involviert sein.
+description: Verschiedene Rollen können in Tests und in verschiedenen Phasen der Projektentwicklung einbezogen werden
 seo-description: Various roles can be involved in testing and at various stages of project development
 uuid: 431e8f06-80eb-4fb3-a4c7-2580608b0a1c
 contentOwner: Guillaume Carlino
@@ -10,16 +10,20 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
 exl-id: cba4a814-052b-4b9f-96f2-8c80b2766ecc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 100%
+source-wordcount: '310'
+ht-degree: 81%
 
 ---
 
 # Testen – wann und mit wem?{#testing-when-and-with-whom}
 
-Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Projektentwicklung involviert sein.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+An Tests und in verschiedenen Phasen der Projektentwicklung können verschiedene Rollen beteiligt sein.
 
 <table> 
  <tbody> 

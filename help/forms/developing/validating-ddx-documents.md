@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
 exl-id: 5be91b23-355b-4e50-b1f5-afed248bc8b5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 100%
+source-wordcount: '1548'
+ht-degree: 98%
 
 ---
 
 # Validieren von DDX-Dokumenten {#validating-ddx-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können ein DDX-Dokumen, das vom Assembler-Service verwendet wird, programmgesteuert validieren. Mit der Assembler-Service-API können Sie also feststellen, ob ein DDX-Dokument gültig ist. Wenn Sie beispielsweise ein Upgrade von einer früheren AEM Forms-Version durchgeführt haben und sicherstellen möchten, dass Ihr DDX-Dokument gültig ist, können Sie es mithilfe der Assembler-Service-API überprüfen.
 

@@ -1,7 +1,7 @@
 ---
 title: Speicherelemente in AEM 6.4
 seo-title: Storage Elements in AEM 6.4
-description: Erfahren Sie mehr über die in AEM 6.4 verfügbaren Implementierungen von Knotenspeicher und über die Wartung von Repositorys.
+description: Erfahren Sie mehr über die in AEM 6.4 verfügbaren Implementierung des Knotenspeichers und über die Wartung des Repositorys.
 seo-description: Learn about the node storage implementations available in AEM 6.4 and how to maintain the repository.
 uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
 contentOwner: User
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 3b1100ed-44c6-4c09-aec4-9e6670234567
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 100%
+source-wordcount: '750'
+ht-degree: 70%
 
 ---
 
 # Speicherelemente in AEM 6.4{#storage-elements-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In diesem Artikel werden folgende Themen behandelt:
 
@@ -29,9 +33,9 @@ In diesem Artikel werden folgende Themen behandelt:
 
 Eine der wichtigsten Änderungen in AEM 6 sind die Innovationen auf Repository-Ebene.
 
-Derzeit sind in AEM 6 zwei Implementierungen von Knotenspeicher verfügbar: TAR-Speicher und MongoDB-Speicher.
+Derzeit sind in AEM6 zwei Implementierungen für den Knotenspeicher verfügbar: Tar-Speicher und MongoDB-Speicher.
 
-### TAR-Speicher {#tar-storage}
+### Tar-Speicher {#tar-storage}
 
 #### Ausführen einer neu installierten AEM-Instanz mit TAR-Speicher {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
@@ -39,10 +43,10 @@ Derzeit sind in AEM 6 zwei Implementierungen von Knotenspeicher verfügbar: TAR
 >
 >Die PID für den Segment-Knotenspeicher wurde von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in vorherigen Versionen von AEM 6 in org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3 geändert. Vergessen Sie nicht, die Konfiguration an diese Änderungen anzupassen.
 
-Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Binärdateien und verwendet dabei die Standardkonfigurationsoptionen. Führen Sie folgende Schritte aus, um die Speichereinstellungen manuell zu konfigurieren:
+Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Binärdateien und verwendet dabei die Standardkonfigurationsoptionen. Gehen Sie wie folgt vor, um die Speichereinstellungen manuell zu konfigurieren:
 
-1. Laden Sie die Datei „quickstart.jar“ von AEM 6 herunter und speichern Sie diese in einem neuen Ordner.
-1. Entpacken Sie AEM, indem Sie Folgendes ausführen:
+1. Laden Sie die AEM 6-Schnellstart-JAR herunter und legen Sie sie in einem neuen Ordner ab.
+1. Entpacken Sie AEM durch Ausführen:
 
    `java -jar cq-quickstart-6.jar -unpack`
 
@@ -50,7 +54,7 @@ Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Bi
 
 1. Erstellen Sie die Datei `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg` im neu erstellten Ordner.
 
-1. Bearbeiten Sie die Datei und legen Sie die Konfigurationsoptionen fest. Folgende Optionen sind für Segment-Knotenspeicher verfügbar, auf der die Implementierung von TAR-Speicher in AEM basiert:
+1. Bearbeiten Sie die Datei und legen Sie die Konfigurationsoptionen fest. Die folgenden Optionen sind für den Segment-Knotenspeicher verfügbar, der die Grundlage für AEM Tar-Speicherimplementierung bildet:
 
    * `repository.home`: Pfad zum Repository-Stammverzeichnis, in dem diverse Repository-bezogene Daten gespeichert werden. Standardmäßig werden Segmentdateien im Verzeichnis crx-quickstart/segmentstore gespeichert.
    * `tarmk.size`: Maximale Größe eines Segments in MB. Die Standardgröße ist 256 MB.
@@ -63,8 +67,8 @@ Standardmäßig verwendet AEM 6 den TAR-Speicher zum Speichern von Knoten und Bi
 
 AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie nachfolgend beschrieben:
 
-1. Laden Sie die quickstart.jar von AEM 6 herunter und speichern Sie diese in einem neuen Ordner.
-1. Entpacken Sie AEM, indem Sie folgenden Befehl ausführen:
+1. Laden Sie die AEM 6-Schnellstart-JAR herunter und legen Sie sie in einem neuen Ordner ab.
+1. Entpacken Sie AEM, indem Sie den folgenden Befehl ausführen:
 
    `java -jar cq-quickstart-6.jar -unpack`
 
@@ -80,9 +84,9 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie n
    * `db`: Name der Mongo-Datenbank. Standardmäßig wird bei AEM 6-Installationen **aem-author** als Datenbankname verwendet.
    * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Der Standardwert lautet 256.
    * `changesSize`: Größe (in MB) der begrenzten Sammlung, die in Mongo zum Caching unterschiedlicher Ausgaben verwendet wird. Der Standardwert lautet 256.
-   * `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert lautet „false“.
+   * `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert ist &quot;false&quot;.
 
-1. Erstellen Sie eine Konfigurationsdatei mit der PID des Datenspeichers, in dem Sie die Datei verwenden und bearbeiten möchten, um die Konfigurationsoptionen festzulegen. Weitere Informationen finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern](/help/sites-deploying/data-store-config.md).
+1. Erstellen Sie eine Konfigurationsdatei mit der PID des Datenspeichers, den Sie verwenden möchten, und bearbeiten Sie die Datei, um die Konfigurationsoptionen festzulegen. Weitere Informationen finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern](/help/sites-deploying/data-store-config.md).
 
 1. Starten Sie die JAR-Datei von AEM 6 mit einem MongoDB-Speicher-Backend, indem Sie Folgendes ausführen:
 
@@ -94,7 +98,7 @@ AEM 6 kann für die Ausführung mit MongoDB-Speicher konfiguriert werden, wie n
 
 #### Deaktivieren von Transparent Huge Pages {#disabling-transparent-huge-pages}
 
-Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP (Transparent Huge Pages). Während AEM feinkörnige Lese- und Schreibvorgänge durchführt, ist THP für große Operationen optimiert. Aus diesem Grund wird empfohlen, dass Sie THP auf Tar- und Mongospeicher deaktivieren. Um den Algorithmus zu deaktivieren, führen Sie die folgenden Schritte aus:
+Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP (Transparent Huge Pages). Während AEM feinkörnige Lese- und Schreibvorgänge durchführt, ist THP für große Operationen optimiert. Aus diesem Grund wird empfohlen, dass Sie THP auf Tar- und Mongospeicher deaktivieren. Gehen Sie wie folgt vor, um den Algorithmus zu deaktivieren:
 
 1. Öffnen Sie die Datei `/etc/grub.conf` in einem beliebigen Texteditor.
 1. Fügen Sie der Datei **grub.conf** die folgende Zeile hinzu:
@@ -103,13 +107,13 @@ Red Hat Linux nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung THP
    transparent_hugepage=never
    ```
 
-1. Überprüfen Sie abschließend, ob die Einstellung wirksam geworden ist, indem Sie Folgendes ausführen:
+1. Überprüfen Sie abschließend, ob die Einstellung wirksam wurde, indem Sie Folgendes ausführen:
 
    ```
    cat /sys/kernel/mm/redhat_transparent_hugepage/enabled
    ```
 
-   Wenn THP deaktiviert ist, sollte die Ausgabe des oben stehenden Befehls wie folgt sein:
+   Wenn THP deaktiviert ist, sollte die Ausgabe des obigen Befehls wie folgt lauten:
 
    ```
    always madvise [never]

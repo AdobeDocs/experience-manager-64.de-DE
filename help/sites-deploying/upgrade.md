@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren auf AEM 6.4
 seo-title: Upgrading to AEM 6.4
-description: Erfahren Sie mehr über die Grundlagen der Aktualisierung einer älteren AEM-Installation auf AEM 6.4.
+description: Erfahren Sie mehr über die Grundlagen der Aktualisierung einer älteren AEM auf AEM 6.4.
 seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.4.
 uuid: aa878528-5161-4df3-9fed-cc779fb6bdbe
 contentOwner: sarchiz
@@ -12,16 +12,20 @@ discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 92%
+source-wordcount: '736'
+ht-degree: 69%
 
 ---
 
 # Aktualisieren auf AEM 6.4{#upgrading-to-aem}
 
-In diesem Abschnitt wird das Aktualisieren einer AEM-Installation auf AEM 6.4 beschrieben:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In diesem Abschnitt wird die Aktualisierung einer AEM auf AEM 6.4 beschrieben:
 
 * [Planung von Upgrades](/help/sites-deploying/upgrade-planning.md)
 * [Bewertung der Komplexität des Upgrades mit dem Musterdetektor ](/help/sites-deploying/pattern-detector.md)
@@ -37,16 +41,16 @@ In diesem Abschnitt wird das Aktualisieren einer AEM-Installation auf AEM 6.4 be
 
 Für ein einfacheres Verständnis der in diesen Verfahren verwendeten AEM-Instanzen werden die folgenden Begriffe in diesen Artikeln verwendet:
 
-* Bei der *Quell* instanz handelt es sich um die AEM-Instanz, von der aus die Aktualisierung durchgeführt wird.
-* Bei der *Ziel* instanz handelt es sich um die Instanz, auf die die Aktualisierung durchgeführt wird.
+* Die *source* -Instanz ist die AEM Instanz, von der Sie ein Upgrade durchführen.
+* Die *target* -Instanz ist die Instanz, auf die Sie aktualisieren.
 
 >[!NOTE]
 >
 >Im Rahmen der Bemühungen zur Verbesserung der Zuverlässigkeit von Upgrades wurde AEM 6.4 einer umfassenden Repository-Umstrukturierung unterzogen. Weitere Informationen zur Anpassung an die neue Struktur finden Sie unter [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md)
 
-## Was wurde geändert? {#what-has-changed}
+## Was hat sich geändert? {#what-has-changed}
 
-Nachfolgend sind die wichtigsten Änderungen im Vergleich zu den letzten AEM-Versionen aufgeführt:
+Im Folgenden werden die wichtigsten Änderungen der letzten Versionen von AEM beschrieben:
 
 In AEM 6.0 wurde das neue Jackrabbit-Oak-Repository eingeführt. Persistenz-Manager wurden durch [Mikrokernel](/help/sites-deploying/recommended-deploys.md) ersetzt. Ab Version 6.1 wird CRX2 nicht mehr unterstützt. Ein Migrationstool mit der Bezeichnung CRX2OAK muss ausgeführt werden, um CRX2-Repositorys von 5.6.1-Instanzen zu migrieren. Weitere Informationen finden Sie unter [Verwenden des CRX2OAK-Migrationstools](/help/sites-deploying/using-crx2oak.md).
 
@@ -54,7 +58,7 @@ Wenn Asset Insights verwendet werden soll und Sie ein Upgrade von einer Version 
 
 Mit AEM 6.3 wurde ein neues Format für die `SegmentNodeStore`, die die Grundlage der TarMK-Implementierung bildet. Wenn Sie eine Version vor AEM 6.3 aktualisieren, muss beim Upgrade eine Migration des Repositorys durchgeführt werden, während der das System nicht verfügbar ist.
 
-Adobe Engineering schätzt, dass diese Ausfallzeit ca. 20 Minuten beträgt. Beachten Sie, dass keine Neuindizierung erforderlich ist. Darüber hinaus wurde eine neue Version des CRX2OAK-Tools für das neue Repository-Format veröffentlicht.
+Adobe Engineering schätzt, dass diese Ausfallzeit ca. 20 Minuten beträgt. Beachten Sie, dass eine Neuindizierung nicht erforderlich ist. Darüber hinaus wurde eine neue Version des CRX2OAK-Tools für das neue Repository-Format veröffentlicht.
 
 **Diese Migration ist nicht erforderlich, wenn Sie von AEM 6.3 auf AEM 6.4 aktualisieren.**
 
@@ -64,11 +68,11 @@ Die Befehlszeilenoptionen für die Verwendung des CRX2OAK-Tools wurden geändert
 
 Die Prüfungen nach einem Upgrade wurden ebenfalls automatisierungsfreundlich gestaltet.
 
-Zu den regelmäßig durchzuführenden Routinewartungsaufgaben gehören jetzt die regelmäßige Revisionsbereinigung und die Bereinigung des Datenspeichers. Mit der Einführung von AEM 6.3 unterstützt und empfiehlt Adobe die Online-Revisionsbereinigung. Weitere Informationen zum Konfigurieren dieser Aufgaben finden Sie unter [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md).
+Zu den regelmäßig durchzuführenden Routinewartungsaufgaben gehören jetzt die regelmäßige Revisionsbereinigung und die Bereinigung des Datenspeichers. Mit der Einführung von AEM 6.3 unterstützt und empfiehlt Adobe die Online-Revisionsbereinigung. Siehe [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) für Informationen zur Konfiguration dieser Aufgaben.
 
-Mit **AEM 6.4** wird der [Musterdetektor](/help/sites-deploying/pattern-detector.md) eingeführt, mit dem Sie bei der Planung der Aktualisierung die Komplexität der Aktualisierung ermitteln können. In 6.4 liegt der Fokus auf der [Abwärtskompatibilität](/help/sites-deploying/backward-compatibility.md) der Funktionen. Außerdem wurden Best Practices für [nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md) hinzugefügt.
+**AEM 6.4** führt die [Musterdetektor](/help/sites-deploying/pattern-detector.md) für die Beurteilung der Komplexität des Upgrades während der Planung des Upgrades. In 6.4 liegt der Fokus auf der [Abwärtskompatibilität](/help/sites-deploying/backward-compatibility.md) der Funktionen. Außerdem wurden Best Practices für [nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md) hinzugefügt.
 
-Einzelheiten zu weiteren Änderungen in den neuen AEM-Versionen finden Sie in den vollständigen Versionshinweisen:
+Weitere Informationen zu den Änderungen der letzten AEM finden Sie in den vollständigen Versionshinweisen:
 
 * [https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-2/release-notes.html)
 * [https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/de/experience-manager/6-3/release-notes.html)
@@ -82,7 +86,7 @@ Die Aktualisierung von AEM ist ein mehrstufiger Prozess, der in manchen Fällen 
 
 ## Ablauf des Upgrades mit 6.4 Upgrade-Verbesserungen {#upgrade-overview-1}
 
-Das folgende Diagramm zeigt den für das Upgrade empfohlenen Ablauf. Beachten Sie den Verweis auf die neu eingeführten Funktionen. Das Upgrade sollte damit starten, dass mit dem Musterdetektor ein Bericht über vorhandene Muster erstellt wird (siehe [Bewertung der Komplexität des Upgrades mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), mit dessen Hilfe Sie entscheiden können, welchem Pfad Sie für die Kompatibilität mit AEM 6.4 folgen möchten.
+Das folgende Diagramm zeigt den für das Upgrade empfohlenen Ablauf. Beachten Sie bitte die neuen Funktionen, die wir eingeführt haben. Das Upgrade sollte damit starten, dass mit dem Musterdetektor ein Bericht über vorhandene Muster erstellt wird (siehe [Bewertung der Komplexität des Upgrades mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), mit dessen Hilfe Sie entscheiden können, welchem Pfad Sie für die Kompatibilität mit AEM 6.4 folgen möchten.
 
 In 6.4 haben wir einen starken Fokus darauf gelegt, alle neuen Funktionen abwärtskompatibel zu gestalten. In Fällen, in denen mit der Abwärtskompatibilität weiterhin Probleme auftreten, können Sie notwendige Entwicklungsarbeiten jedoch mit dem Kompatibilitätsmodus aufschieben und so Ihren benutzerdefinierten Code vorübergehend mit 6.4 kompatibel halten. Mit diesem Ansatz vermeiden Sie sofort nach dem Upgrade jeden erforderlichen Entwicklungsaufwand (siehe [Abwärtskompatibilität in AEM 6.4](/help/sites-deploying/backward-compatibility.md)).
 

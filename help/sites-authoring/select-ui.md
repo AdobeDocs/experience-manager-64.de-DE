@@ -1,7 +1,7 @@
 ---
 title: Auswahl der Benutzeroberfläche
 seo-title: Selecting your UI
-description: Legen Sie fest, welche Benutzeroberfläche Sie beim Arbeiten in AEM verwenden möchten.
+description: Konfigurieren der Benutzeroberfläche, die Sie für die Verwendung in AEM verwenden
 seo-description: Configure which interface you will use to work in AEM
 uuid: af956219-178e-477b-a0cd-dd2341ed2ff0
 contentOwner: Chris Bohnert
@@ -10,30 +10,34 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 exl-id: 415efbe0-95f5-4c9e-ac33-c4a384a8271e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 84%
+source-wordcount: '943'
+ht-degree: 39%
 
 ---
 
 # Auswahl der Benutzeroberfläche{#selecting-your-ui}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Grundlegendes zu den Benutzeroberflächen
 
 Die Autorenumgebung ermöglicht Folgendes:
 
-* [Bearbeiten](/help/sites-authoring/author.md) (einschließlich [Seitenbearbeitung](/help/sites-authoring/author-environment-tools.md), [Verwaltung von Assets](/help/assets/home.md), [Communities](/help/communities/author-communities.md))
+* [Authoring](/help/sites-authoring/author.md) (einschließlich [Seitenbearbeitung](/help/sites-authoring/author-environment-tools.md), [Verwalten von Assets](/help/assets/home.md), [communities](/help/communities/author-communities.md))
 
 * [Verwaltungsaufgaben](/help/sites-administering/home.md), die Sie für die Erstellung und Verwaltung des Inhalts auf Ihrer Website benötigen
 
-Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese stehen über jeden modernen Browser zur Verfügung.
+Hierfür stehen zwei grafische Benutzeroberflächen zur Verfügung. Diese sind über jeden modernen Browser zugänglich.
 
 1. Touch-optimierte Benutzeroberfläche
 
    * Dies ist die moderne, standardmäßige AEM Benutzeroberfläche.
-   * Sie ist überwiegend in Grau gehalten und zeichnet sich durch ihre klare und minimalistische Gestaltung aus.
-   * Sie ist für die Verwendung auf Touch- und Desktop-Geräten konzipiert, entsprechend ist das Aussehen und Verhalten auf allen Geräten gleich. Geringfügige Unterschiede gibt es lediglich beim [Anzeigen und Auswählen von Ressourcen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) (tippen statt klicken). 
+   * Es ist vorwiegend grau, mit einer sauberen, flachen Oberfläche.
+   * Design für die Verwendung auf Touch- und Desktop-Geräten. Aussehen und Erscheinungsbild sind auf allen Geräten identisch, allerdings [Anzeigen und Auswählen von Ressourcen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) geringfügig abweicht (Tippen/Klicken).
 
       * Desktop:
 
@@ -45,22 +49,22 @@ Zu diesem Zweck werden zwei grafische Benutzeroberflächen bereitgestellt. Diese
 
 1. Klassische Benutzeroberfläche
 
-   * Dies ist die vorherige Benutzeroberfläche von AEM.
-   * Sie ist vorwiegend in Grün gehalten.
-   * Sie wurde für die Nutzung auf Desktop-Geräten entwickelt.
-   * Die folgende Dokumentation bezieht sich auf die moderne Benutzeroberfläche. Informationen zur Inhaltserstellung in der klassischen Benutzeroberfläche finden Sie in der [Dokumentation zur Inhaltserstellung für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md).
+   * Dies ist die alte Benutzeroberfläche, die seit vielen Jahren in AEM verfügbar ist.
+   * Es ist überwiegend grün.
+   * Sie wurde für die Verwendung auf Desktop-Geräten entwickelt.
+   * Die folgende Dokumentation konzentriert sich auf die moderne Benutzeroberfläche. Informationen zum Authoring in der klassischen Benutzeroberfläche finden Sie in der [Bearbeitungsdokumentation für die klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md).
 
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## Wechseln von Benutzeroberflächen
 
-Obwohl die Touch-optimierte Benutzeroberfläche jetzt die standardmäßige Benutzeroberfläche ist und [Funktionsparität](../release-notes/touch-ui-features-status.md) mit der Verwaltung und Bearbeitung von Sites nahezu erreicht wurde, kann es vorkommen, dass der Benutzer zum [klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md). Dazu stehen mehrere Optionen zur Verfügung.
+Obwohl die Touch-optimierte Benutzeroberfläche jetzt die standardmäßige Benutzeroberfläche ist und [Funktionsparität](../release-notes/touch-ui-features-status.md) mit der Verwaltung und Bearbeitung von Sites nahezu erreicht wurde, kann es vorkommen, dass der Benutzer zum [klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md). Dazu gibt es mehrere Möglichkeiten.
 
 >[!NOTE]
 >
->Weitere Informationen zum Status der Funktionen in der klassischen Benutzeroberfläche finden Sie im Dokument [Funktionsparität bei der Touch-optimierten Benutzeroberfläche](../release-notes/touch-ui-features-status.md).
+>Weitere Informationen zum Status der Funktionsparität mit der klassischen Benutzeroberfläche finden Sie im Dokument [Funktionsparität bei der Touch-optimierten Benutzeroberfläche](../release-notes/touch-ui-features-status.md).
 
-Sie können an verschiedenen Stellen definieren, welche Benutzeroberfläche verwendet werden soll:
+Es gibt verschiedene Stellen, an denen Sie definieren können, welche Benutzeroberfläche verwendet werden soll:
 
 * [Konfigurieren der Standard-Benutzeroberfläche für Ihre Instanz](#configuring-the-default-ui-for-your-instance) - Dadurch wird die Standardbenutzeroberfläche festgelegt, die bei der Benutzeranmeldung angezeigt wird. Der Benutzer kann dies jedoch außer Kraft setzen und eine andere Benutzeroberfläche für sein Konto oder die aktuelle Sitzung auswählen.
 
@@ -68,11 +72,11 @@ Sie können an verschiedenen Stellen definieren, welche Benutzeroberfläche verw
 
 * [Wechsel zur klassischen Benutzeroberfläche für die aktuelle Sitzung](#switching-to-classic-ui-for-the-current-session) - Dies wechselt zur klassischen Benutzeroberfläche für die aktuelle Sitzung.
 
-* Bei der [Seitenbearbeitung überschreibt das System einige Einstellungen bezüglicher der Benutzeroberfläche](#ui-overrides-for-the-editor).
+* Im Falle von [Seitenbearbeitung des Systems überschreibt bestimmte Aspekte in Bezug auf die Benutzeroberfläche](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
->Verschiedene Optionen für den Wechsel zur klassischen Benutzeroberfläche sind nicht vorkonfiguriert. Sie müssen speziell für Ihre Instanz konfiguriert werden.
+>Verschiedene Optionen zum Wechseln zur klassischen Benutzeroberfläche sind nicht sofort standardmäßig verfügbar, sondern müssen speziell für Ihre Instanz konfiguriert werden.
 >
 >Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md).
 
@@ -84,25 +88,25 @@ Sie können an verschiedenen Stellen definieren, welche Benutzeroberfläche verw
 
 ## Konfigurieren der Standard-Benutzeroberfläche für Ihre Instanz {#configuring-the-default-ui-for-your-instance}
 
-Ein Systemadministrator kann die bei Start und Anmeldung angezeigte Benutzeroberfläche mit der [Root-Zuordnung](/help/sites-deploying/osgi-configuration-settings.md) konfigurieren.
+Ein Systemadministrator kann die Benutzeroberfläche konfigurieren, die beim Start und bei der Anmeldung angezeigt wird, indem er [Stammzuordnung](/help/sites-deploying/osgi-configuration-settings.md).
 
-Diese Einstellungen kann durch Benutzerstandards oder Sitzungseinstellungen überschrieben werden.
+Dies kann durch Benutzereinstellungen oder Sitzungseinstellungen überschrieben werden.
 
-## Festlegen der klassischen Autorenbenutzeroberfläche für Ihr Konto {#setting-classic-ui-authoring-for-your-account}
+## Einrichten der klassischen Benutzeroberflächen-Bearbeitung für Ihr Konto {#setting-classic-ui-authoring-for-your-account}
 
-Jeder Benutzer kann über seine [Benutzereinstellungen](/help/sites-authoring/user-properties.md) definieren, ob die klassische Benutzeroberfläche (statt der Standard-Benutzeroberfläche) zur Seitenbearbeitung verwendet werden soll.
+Jeder Benutzer kann auf seine [Benutzereinstellungen](/help/sites-authoring/user-properties.md) , um zu definieren, ob er die klassische Benutzeroberfläche für die Seitenbearbeitung verwenden möchte (anstelle der Standard-Benutzeroberfläche).
 
-Diese Einstellung kann durch Sitzungseinstellungen überschrieben werden.
+Dies kann durch Sitzungseinstellungen überschrieben werden.
 
 ## Wechseln zur klassischen Benutzeroberfläche für die aktuelle Sitzung {#switching-to-classic-ui-for-the-current-session}
 
-Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Benutzer vielleicht zur klassischen Benutzeroberfläche (nur für Desktops) zurückzukehren. Es gibt mehrere Methoden, in der aktuellen Sitzung zur klassischen Benutzeroberfläche zu wechseln:
+Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Benutzer vielleicht zur klassischen Benutzeroberfläche (nur für Desktops) zurückzukehren. Es gibt mehrere Methoden, um für die aktuelle Sitzung zur klassischen Benutzeroberfläche zu wechseln:
 
 * **Navigationslinks**
 
    >[!CAUTION]
    >
-   >Die Option für den Wechsel zur klassischen Benutzeroberfläche ist nicht vorkonfiguriert. Sie muss speziell für Ihre Instanz konfiguriert werden.
+   >Diese Option zum Wechseln zur klassischen Benutzeroberfläche ist nicht sofort standardmäßig verfügbar, sondern muss speziell für Ihre Instanz konfiguriert werden.
    >
    >
    >Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md).
@@ -130,7 +134,7 @@ Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Benutzer viell
 
 >[!CAUTION]
 >
->Die Option für den Wechsel zur klassischen Benutzeroberfläche ist nicht vorkonfiguriert. Sie muss speziell für Ihre Instanz konfiguriert werden.
+>Diese Option zum Wechseln zur klassischen Benutzeroberfläche ist nicht sofort standardmäßig verfügbar, sondern muss speziell für Ihre Instanz konfiguriert werden.
 >
 >Weitere Informationen finden Sie unter [Aktivieren des Zugriffs auf die klassische Benutzeroberfläche](/help/sites-administering/enable-classic-ui.md).
 
@@ -138,11 +142,11 @@ Sofern aktiviert, ist die Option **Klassische Benutzeroberfläche öffnen** im D
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-### Benutzeroberflächenüberschreibung für den Editor {#ui-overrides-for-the-editor}
+### UI-Überschreibungen für den Editor {#ui-overrides-for-the-editor}
 
-Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen können bei der Seitenbearbeitung vom System überschreiben werden.
+Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen können vom System bei der Seitenbearbeitung überschrieben werden.
 
-* Beim Bearbeiten von Seiten:
+* Beim Erstellen von Seiten:
 
    * Die Verwendung des klassischen Editors wird erzwungen, wenn die Seite über eine URL aufgerufen wird, die `cf#` enthält. Beispiel:
 
@@ -164,13 +168,13 @@ Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen könn
 
 >[!NOTE]
 >
->Wenn [ein Benutzer bereits eine Voreinstellung für die Seitenbearbeitung festgelegt hat](#setting-classic-ui-authoring-for-your-account), wird diese nicht durch Änderung der OSGi-Eigenschaft außer Kraft gesetzt.
+>Wenn [ein Benutzer bereits eine Voreinstellung für die Seitenbearbeitung definiert hat](#setting-classic-ui-authoring-for-your-account), das nicht durch Ändern der OSGi-Eigenschaft überschrieben wird.
 
 >[!CAUTION]
 >
->Aufgrund der bereits erläuterten Verwendung von Cookies wird von folgenden Aktionen abgeraten:
+>Aufgrund der Verwendung von Cookies, wie bereits beschrieben, wird Folgendes nicht empfohlen:
 >
->* Manuelles Bearbeiten der URL. Eine Nicht-Standard-URL könnte zu einer unbekannten Situation und zu Funktionsausfall führen.
+>* Manuelles Bearbeiten der URL - Eine nicht standardmäßige URL könnte zu einer unbekannten Situation und Funktionslosigkeit führen.
 >* Verwenden Sie beide Editoren zur selben Zeit, z. B. in separaten Fenstern.
 >
 

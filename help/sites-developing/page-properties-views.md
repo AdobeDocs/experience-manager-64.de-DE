@@ -1,7 +1,7 @@
 ---
-title: Anpassen von Ansichten von Seiteneigenschaften
+title: Anpassen der Ansichten von Seiteneigenschaften
 seo-title: Customizing Views of Page Properties
-description: Jede Seite verfügt über eine Reihe von Eigenschaften, die Sie nach Bedarf bearbeiten können.
+description: Jede Seite verfügt über eine Reihe von Eigenschaften, die Sie nach Bedarf bearbeiten können
 seo-description: Every page has a set of properties that you can edit as required
 uuid: cbfca6e6-cb9e-43b1-8889-09a7cc9f8a51
 contentOwner: User
@@ -10,16 +10,20 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 25dad368-8227-424d-960b-1664d8e20a21
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 98%
+source-wordcount: '515'
+ht-degree: 69%
 
 ---
 
-# Anpassen von Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
+# Anpassen der Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
 
-Jede Seite hat eine Reihe von [Eigenschaften](/help/sites-authoring/editing-page-properties.md), die von Nutzern angezeigt und bearbeitet werden können. Einige sind erforderlich, wenn die Seite erstellt wird (Erstellungsansicht), andere können später angezeigt und bearbeitet werden (Bearbeitungsansicht). Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Jede Seite verfügt über einen Satz von [properties](/help/sites-authoring/editing-page-properties.md) die von Benutzern angezeigt und bearbeitet werden können; Einige sind beim Erstellen der Seite erforderlich (Ansicht erstellen), andere können später angezeigt und bearbeitet (Ansicht bearbeiten) werden. Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
 
 >[!CAUTION]
 >
@@ -31,7 +35,7 @@ Der Standardstatus für jede Seiteneigenschaft ist wie folgt:
 
 * In der Bearbeitungsansicht verfügbar (z. B. unter **Eigenschaften anzeigen**)
 
-Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist. Dies erfolgt mithilfe der entsprechenden Knoteneigenschaften:
+Felder müssen bei Bedarf spezifisch konfiguriert werden. Dies geschieht mithilfe der entsprechenden Knoteneigenschaften:
 
 * Seiteneigenschaft, die in der Erstellungsansicht verfügbar sein soll (z. B. im **Seitenerstellungsassistenten**):
 
@@ -51,11 +55,11 @@ Sehen Sie als Beispiel die Einstellungen für Felder, die unter **Weitere Titel 
 
 >[!TIP]
 >
->Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im [Tutorial zum Erweitern der Seiteneigenschaften](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
+>Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im [Tutorial zum Erweitern der Seiteneigenschaften](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=de).
 
 ## Konfiguration von Seiteneigenschaften {#configuring-your-page-properties}
 
-Sie können diese Felder auch konfigurieren, indem Sie das Dialogfeld Ihrer Seitenkomponente konfigurieren und die entsprechenden Knoteneigenschaften anwenden.
+Sie können auch die verfügbaren Felder konfigurieren, indem Sie das Dialogfeld Ihrer Seitenkomponente konfigurieren und die entsprechenden Knoteneigenschaften anwenden.
 
 Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pages.md#creating-a-new-page) zeigt standardmäßig die Felder an, die unter **Weitere Titel und Beschreibungen** gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
 
@@ -103,17 +107,17 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
    * **Typ**: `Boolean`
    * **Wert**: `false`
 
-   Der Abschnitt **Weitere Titel und Beschreibungen** wird nicht mehr im **Seitenerstellungsassistenten** angezeigt.
+   Die **Weitere Titel und Beschreibungen** wird nicht mehr im Abschnitt **Seite erstellen** Assistent.
 
 >[!NOTE]
 >
->Wenn Sie Seiteneigenschaften für die Verwendung mit Live Copies konfigurieren, finden Sie weitere Details unter [Konfiguration von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui).
+>Informationen zum Konfigurieren von Seiteneigenschaften für die Verwendung mit Live Copies finden Sie unter [Konfigurieren von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) für weitere Details.
 
 ## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 
 Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md), einschließlich der Verwendung von [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Es zeigt auch die Verwendung von `cq:showOnCreate` und `cq:hideOnEdit`.
 
-CODE AUF GITHUB
+CODE FÜR GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 

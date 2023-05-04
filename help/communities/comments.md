@@ -10,27 +10,31 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 exl-id: 8ad5ce3e-c5dd-48d7-8812-43172eda36cc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 38%
+source-wordcount: '1030'
+ht-degree: 7%
 
 ---
 
 # Verwenden von Kommentaren {#using-comments}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Einführung {#introduction}
 
-Die Kommentarfunktion ermöglicht es angemeldeten Site-Besuchern (Mitgliedern), ihre Meinung und ihre Kenntnisse bezüglich der Site-Inhalte kundzutun. Diese Funktion ist in der Regel bereits in anderen Funktionen enthalten, kann jedoch auch beliebigen Websites hinzugefügt werden.
+Die Kommentarfunktion ermöglicht es angemeldeten Site-Besuchern (Mitgliedern), ihre Meinungen und Kenntnisse über Inhalte auf der Site zu teilen. Diese Funktion ist oft bereits in anderen Funktionen vorhanden, kann aber zu jeder Website hinzugefügt werden.
 
-In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
+In diesem Abschnitt der Dokumentation wird
 
 * Hinzufügen `Comments`zu einer Seite
 * Konfigurationseinstellungen für `Comments`component
 
 >[!NOTE]
 >
->Das anonyme Posten von Kommentaren wird nicht unterstützt. Besucher der Website müssen sich registrieren (Mitglieder werden) und anmelden, um Kommentare verfassen zu können.
+>Das anonyme Posten eines Kommentars wird nicht unterstützt. Besucher der Site müssen sich registrieren (Mitglied werden) und sich anmelden, um teilnehmen zu können.
 
 ## Hinzufügen von Kommentaren zu einer Seite {#adding-comments-to-a-page}
 
@@ -38,7 +42,7 @@ So fügen Sie eine `Comments`-Komponente auf einer Seite im Autorenmodus verwend
 
 * `Communities / Comments`
 
-und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. in die Nähe einer Eigenschaft, die Benutzer kommentieren sollen, oder fügen Sie die Komponente am Ende der Seite ein.
+und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an die Position relativ zur Funktion, zu der Benutzer Kommentare abgeben können, oder einfach am unteren Seitenrand.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
@@ -58,11 +62,11 @@ Wählen Sie die platzierte `Comments` -Komponente, die aufgerufen und ausgewähl
 
 ### Registerkarte &quot;Kommentare&quot; {#comments-tab}
 
-Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, wie Benutzer Kommentare eingeben sollen.
+Unter dem **[!UICONTROL Kommentare]** -Registerkarte angeben, wie Kommentare von Besuchern eingegeben werden.
 
 * **[!UICONTROL Antworten zulassen]**
 
-   Ist diese Option aktiviert, können Mitglieder auf vorhandene Kommentare antworten. Diese Option ist standardmäßig deaktiviert.
+   Ist diese Option aktiviert, können Mitglieder auf vorhandene Kommentare antworten. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Kommentare pro Seite]**
 
@@ -70,7 +74,7 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, wie Benutzer K
 
 * **[!UICONTROL Datei-Uploads zulassen]**
 
-   Wenn diese Option aktiviert ist, wird die Option zum Hochladen einer Datei mit dem Texteingabefeld angezeigt. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, wird die Option zum Hochladen einer Datei mit dem Texteingabefeld angezeigt. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Max. Dateigröße]**
 
@@ -78,59 +82,59 @@ Legen Sie auf der Registerkarte **[!UICONTROL Kommentare]** fest, wie Benutzer K
 
 * **[!UICONTROL Maximale Nachrichtenlänge]**
 
-   Maximale Zeichenanzahl, die in das Textfeld eingegeben werden kann. Der Standardwert ist 4096 Zeichen.
+   Maximale Zeichenanzahl, die in das Textfeld eingegeben werden kann. Der Standardwert beträgt 4096 Zeichen.
 
 * **[!UICONTROL Zulässige Dateitypen]**
 
-   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, sind nicht angegebene Dateitypen nicht zulässig. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
+   Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, sind nicht angegebene Dateitypen nicht zulässig. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Rich-Text-Editor]**
 
-   Wenn diese Option aktiviert ist, können Kommentare mit Markup eingegeben werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Kommentare mit Markup eingegeben werden. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Abstimmung zulassen]**
 
-   Wenn diese Option aktiviert ist, wird das Texteingabefeld angezeigt. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, wird das Texteingabefeld angezeigt. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Folgende zulassen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder Kommentare folgen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder Kommentare folgen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Abzeichen anzeigen]**
 
-   Wenn diese Option aktiviert ist, können Sie die Anzeige von verdienten und vergebenen Abzeichen zulassen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Sie die Anzeige von verdienten und vergebenen Abzeichen zulassen. Die Option Standard ist deaktiviert.
 
 ### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die veröffentlichten Kommentare verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](moderate-ugc.md).
+Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die veröffentlichten Kommentare verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
 * **[!UICONTROL Vor der Moderation]**
 
-   Wenn diese Option aktiviert ist, müssen Kommentare genehmigt werden, bevor sie auf einer Veröffentlichungs-Site angezeigt werden. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, müssen Kommentare genehmigt werden, bevor sie auf einer Veröffentlichungs-Site angezeigt werden. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Kommentare löschen]**
 
-   Wenn diese Option aktiviert ist, kann das Mitglied, das den Kommentar veröffentlicht hat, ihn löschen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, kann das Mitglied, das den Kommentar veröffentlicht hat, ihn löschen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Kommentare ablehnen]**
 
-   Wenn diese Option aktiviert ist, können Moderatoren Kommentare ablehnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Moderatoren Kommentare ablehnen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Kommentare schließen/erneut öffnen]**
 
-   Wenn diese Option aktiviert ist, können Moderatoren Kommentare schließen und erneut öffnen. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Moderatoren Kommentare schließen und erneut öffnen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Kommentare kennzeichnen]**
 
-   Ist diese Option aktiviert, können Mitglieder Kommentare als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+   Ist diese Option aktiviert, können Mitglieder Kommentare als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Liste mit Kenn-zeichnungsgründen]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem ein Kommentar als unangemessen gekennzeichnet wird. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem ein Kommentar als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Grund für benutzerdefinierte Kennzeichnung]**
 
-   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Kommentars als unangemessen eingeben. Diese Option ist standardmäßig deaktiviert.
+   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
 * **[!UICONTROL Schwellenwert für Moderation]**
 
@@ -138,7 +142,7 @@ Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die ver
 
 * **[!UICONTROL Kennzeichnungslimit]**
 
-   Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Dieser Wert muss größer als der oder gleich dem **[!UICONTROL Schwellenwert für Moderation]** sein. Der Standardwert ist 5.
+   Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der **[!UICONTROL Schwellenwert für Moderation]**. Der Standardwert ist 5.
 
 ### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
@@ -152,9 +156,9 @@ Unter dem **[!UICONTROL Sortiereinstellungen]** festlegen, wie die veröffentlic
 
    Ziehen Sie nach unten, um eines von `Ascending` oder `Descending`.
 
-### Ändern in einen benutzerdefinierten Kommentartyp {#changing-to-a-custom-comment-type}
+### Ändern zu einem benutzerdefinierten Kommentartyp {#changing-to-a-custom-comment-type}
 
-Durch Änderung des Kommentarressourcentyps generiert das Kommentarsystem nicht mehr mithilfe des Standardsystems eine Instanz eines Kommentars, sondern mithilfe einer Einstellung, die von Entwicklern definiert (erweitert) wurde.
+Durch Änderung des Kommentar-Ressourcentyps generiert das Kommentarsystem nicht mehr eine Instanz eines Kommentars, die standardmäßig verwendet wird, sondern eine, die von Entwicklern angepasst (erweitert) wurde.
 
 Sobald die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie [Designmodus](../../help/sites-authoring/default-components-designmode.md) und doppelklicken Sie auf die platzierte `Comments` -Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
 
@@ -182,11 +186,11 @@ Unter dem **[!UICONTROL Ressourcentypen]** Registerkarte den benutzerdefinierten
 
 ### Moderatoren und Administratoren {#moderators-and-administrators}
 
-Verfügt der angemeldete Benutzer über Moderator- oder Administratorrechte, kann er Moderationsaufgaben ausführen, die ihm durch die Komponentenkonfiguration gestattet werden, unabhängig davon, wer den Kommentar verfasst hat.
+Wenn der angemeldete Benutzer über Moderator- oder Administratorberechtigungen verfügt, kann er die durch die Konfiguration der Komponente zulässigen Moderationsaufgaben ausführen, unabhängig davon, wer den Kommentar verfasst hat.
 
 ### Mitglieder {#members}
 
-Abhängig von der Konfiguration können angemeldete Besucher Folgendes tun:
+Wenn der Besucher der Site angemeldet ist, kann er je nach Konfiguration
 
 * Posten eines neuen Kommentars
 * Bearbeiten eigener Kommentare
@@ -195,7 +199,7 @@ Abhängig von der Konfiguration können angemeldete Besucher Folgendes tun:
 
 ### Anonym {#anonymous}
 
-Nicht registrierte oder angemeldete Besucher können veröffentlichte Kommentare lediglich lesen und übersetzen (falls unterstützt), jedoch keine eigenen Kommentare hinzufügen und keine Kommentare anderer Benutzer kennzeichnen.
+Besucher der Website, die nicht angemeldet sind, dürfen veröffentlichte Kommentare nur lesen und übersetzen, sofern sie unterstützt werden. Sie dürfen jedoch keinen Kommentar hinzufügen oder Kommentare anderer Benutzer kennzeichnen.
 
 ## Zusätzliche Informationen {#additional-information}
 
@@ -203,4 +207,4 @@ Weitere Informationen finden Sie unter [Grundlagen zu Kommentaren](essentials-co
 
 Informationen zur Moderation von geposteten Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Informationen zur Übersetzung von Kommentaren finden Sie unter [Übersetzung benutzergenerierter Inhalte](translate-ugc.md).
+Informationen zur Übersetzung geposteter Kommentare finden Sie unter [Übersetzen benutzergenerierter Inhalte](translate-ugc.md).

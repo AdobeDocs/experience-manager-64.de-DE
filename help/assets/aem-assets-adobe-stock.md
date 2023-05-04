@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Search,Adobe Stock
 role: User,Admin
 exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1114'
-ht-degree: 93%
+source-wordcount: '1150'
+ht-degree: 88%
 
 ---
 
 # Verwenden von [!DNL Adobe Stock]-Assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Organisationen können ihr [!DNL Adobe Stock]-Unternehmensabo mit [!DNL Experience Manager Assets] integrieren, damit lizenzierte Assets für kreative und Marketing-Projekte umfassend verfügbar sind und mit den leistungsstarken Asset-Management-Funktionen von [!DNL Experience Manager] verwaltet werden können.
 
@@ -20,7 +24,7 @@ Der [!DNL Adobe Stock]-Service bietet Designern und Unternehmen Zugang zu Millio
 
 ## Voraussetzungen {#prerequisites}
 
-Die Integration erfordert ein [Adobe Stock-Unternehmensabo](https://stockenterprise.adobe.com/de/home.html) sowie  6.4 mit Service Pack 2 oder höher. [!DNL Experience Manager] Für [!DNL Experience Manager] 6.4 Service Pack-Details, siehe diese [Versionshinweise](/help/release-notes/sp-release-notes.md).
+Die Integration erfordert eine [Enterprise Adobe Stock-Abo](https://stockenterprise.adobe.com/de/home.html) und [!DNL Experience Manager] 6.4 mit mindestens Service Pack 2 bereitgestellt. Für [!DNL Experience Manager] 6.4 Service Pack-Details, siehe diese [Versionshinweise](/help/release-notes/sp-release-notes.md).
 
 ## Integrieren von [!DNL Experience Manager] und [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
@@ -33,7 +37,7 @@ Um die Kommunikation zwischen [!DNL Experience Manager] und [!DNL Adobe Stock] z
 ### Erstellen einer IMS-Konfiguration {#create-an-ims-configuration}
 
 1. Navigieren Sie in der [!DNL Experience Manager]-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Adobe IMS-Konfigurationen]**. Klicken Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Cloud-Lösung]** > **[!UICONTROL Adobe Stock]**.
-1. Verwenden Sie entweder ein bestehendes Zertifikat oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]** aus.
+1. Verwenden Sie entweder ein vorhandenes Zertifikat erneut oder wählen Sie **[!UICONTROL Neues Zertifikat erstellen]**.
 1. Klicken Sie auf **[!UICONTROL Zertifikat erstellen]**. Laden Sie nach der Erstellung den öffentlichen Schlüssel herunter. Klicken Sie auf **[!UICONTROL Weiter]**. Lassen Sie den Bildschirm [!UICONTROL Konfiguration des technischen Adobe IMS-Kontos] geöffnet, um die erforderlichen Werte in Kürze anzugeben.
 1. Greifen Sie auf die [Adobe Developer Console](https://console.adobe.io) zu. Stellen Sie sicher, dass Ihr Konto über Administratorrechte für die Organisation verfügt, für die die Integration benötigt wird.
 1. Klicken Sie auf **[!UICONTROL Neues Projekt erstellen]** und dann auf **[!UICONTROL API hinzufügen]**. Wählen Sie **[!UICONTROL Adobe Stock]** aus der Liste der zur Verfügung stehenden APIs. Wählen Sie [!UICONTROL OAUTH 2.0 Web] aus.

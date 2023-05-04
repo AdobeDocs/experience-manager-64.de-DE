@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 82%
+source-wordcount: '839'
+ht-degree: 77%
 
 ---
 
 # Digitale Assets organisieren {#organize-digital-assets}
 
-Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokumenten werden extrahiert und für die Suche aufbereitet. Die Suche ermöglicht weitreichende Filtermöglichkeiten für Assets und hält dabei vollständig die korrekten Berechtigungen ein. Metadaten werden in „Metadaten in Digital Asset Management“ ausführlich behandelt.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-[!DNL Experience Manager] Assets unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch anhand von Ordnern organisieren oder in ungeordneter Ad-hoc-Manier ablegen, wobei zum Beispiel Tags verwendet werden können. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
+Alle digitalen Assets, Metadaten und Inhalte von Microsoft Office- und PDF-Dokumenten werden extrahiert und für die Suche aufbereitet. Die Suche ermöglicht ein ausgefeiltes Filtern von Assets und respektiert vollständig die entsprechenden Berechtigungen. Metadaten werden in „Metadaten in Digital Asset Management“ ausführlich behandelt.
+
+[!DNL Experience Manager] Assets unterstützt mehrere Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch anhand von Ordnern organisieren oder in ungeordneter Ad-hoc-Manier ablegen, wobei zum Beispiel Tags verwendet werden können. Benutzer können Tags im DAM Asset Editor bearbeiten, in dem Teil-Assets, Ausgabeformate und Metadaten angezeigt werden.
 
 ## Organisieren von Assets in Ordnern {#organize-using-folders}
 

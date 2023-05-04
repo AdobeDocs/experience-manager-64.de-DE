@@ -1,7 +1,7 @@
 ---
-title: Anpassen von Fehlerdialogen
+title: Anpassen von Fehlerdialogfeldern
 seo-title: Customizing error dialogs
-description: Gehen Sie wie folgt vor, um durch Anpassen der Fehlerdialoge von LiveCycle AEM Forms verschiedene Fehlerbeschreibungen hinzuzufügen.
+description: Gehen Sie wie folgt vor, um die Fehlerdialogfelder von LiveCycle AEM Forms Workspace anzupassen und verschiedene Fehlerbeschreibungen hinzuzufügen.
 seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 exl-id: e45f7f79-a5c3-439c-bf6c-7b14590cd3fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 100%
+source-wordcount: '184'
+ht-degree: 67%
 
 ---
 
-# Anpassen von Fehlerdialogen {#customizing-error-dialogs}
+# Anpassen von Fehlerdialogfeldern {#customizing-error-dialogs}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie [Generische Schritte zur Anpassung von AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) durch und anschließend die unten aufgeführten Schritte zum Anpassen von Fehlerdialogen.
 
@@ -223,7 +227,7 @@ AEM Forms Workspace ermöglicht Ihnen, Fehlerdialoge anzupassen. Führen Sie [Ge
 
 ## Beispiele {#examples}
 
-* **Um den Fehlerdialog anzupassen, ändern Sie:**
+* **Um das Fehlerdialogfeld anzupassen, ändern Sie:**
 
 ```css
 .error-dialog{

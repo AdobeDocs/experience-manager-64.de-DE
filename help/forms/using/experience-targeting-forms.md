@@ -1,7 +1,7 @@
 ---
 title: Erstellen zielgerichteter Erlebnisse in AEM Forms
 seo-title: Create targeted experiences in AEM Forms
-description: Mithilfe von AEM Forms können Sie personalisierte Erlebnisse für bestimmte Zielgruppen bieten.
+description: Verwenden Sie Target in AEM Forms, um personalisierte Erlebnisse für zielgerichtete Kunden zu erstellen.
 seo-description: Use Target in AEM Forms to create customized experiences for targeted customers.
 uuid: 174b6054-8fe3-4ab2-8afd-435e5dff9044
 content-type: reference
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
 exl-id: 5a10ffea-2c69-4902-9754-399bd2e125f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 100%
+source-wordcount: '874'
+ht-degree: 84%
 
 ---
 
 # Erstellen zielgerichteter Erlebnisse in AEM Forms {#create-targeted-experiences-in-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Integrieren von Adobe Target in AEM Forms {#integrate-adobe-target-with-aem-forms}
 
@@ -45,7 +49,7 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
 
    Beim Erstellen einer Aktivität geben Sie deren Details, Ziel und Einstellungen an.
 
-   Der Detailbereich enthält den Namen, die Targeting-Engine und die Zielsetzung. Wenn Sie Adobe Target als Targeting-Engine wählen, wird die Option für die Target-Cloud-Konfiguration aktiviert. Wählen Sie Ihre Target-Cloud-Konfiguration aus, geben Sie die Zielsetzung der Aktivität ein und tippen Sie auf **Weiter**. Interaktive Kommunikation unterstützt nur den Aktivitätstyp Erlebnis-Targeting.
+   Der Abschnitt Details enthält Namen, Targeting-Engine und Ziel. Wenn Sie Adobe Target als Targeting-Engine auswählen, wird die Target-Cloud-Konfigurationsoption aktiviert. Wählen Sie Ihre Target-Cloud-Konfiguration aus, geben Sie die Zielsetzung der Aktivität ein und tippen Sie auf **Weiter**. Interaktive Kommunikation unterstützt nur den Aktivitätstyp Erlebnis-Targeting.
 
    Im Abschnitt „Target“ können Sie das Erlebnis für die Zielgruppe hinzufügen und benennen. Klicken Sie auf **Erlebnis hinzufügen**, um die Optionen **Zielgruppe auswählen** und **Erlebnis benennen** zu aktivieren. Tippen-Sie auf **Zielgruppen wählen**, um eine Liste der Zielgruppen und ihrer Quelle zu sehen. Wählen Sie eine Zielgruppe aus der Liste „Zielgruppenname“ aus. Tippen Sie auf **Erlebnis hinzufügen**, um das Erlebnis zu benennen, und tippen Sie dann auf **Weiter**.
 
@@ -99,13 +103,13 @@ Ihre Marke wird jetzt auf der Seite „Aktivitäten“ aufgeführt. 
 
 ## Überprüfen Sie, ob die erstellte Aktivität mit dem Target-Server synchronisiert wird. {#check-if-the-created-activity-syncs-with-the-target-server}
 
-Aktivitäten, die für das Targeting verwendet werden, werden mit dem Target-Server synchronisiert. Um zu überprüfen, ob Ihre Aktivität mit dem Zielserver synchron ist, überprüfen Sie den Status Ihrer Aktivität auf Ihrer Markenseite.
+Eine für die Zielgruppenbestimmung verwendete Aktivität synchronisiert sie mit dem Target-Server. Um zu überprüfen, ob Ihre Aktivität mit dem Zielserver synchronisiert ist, überprüfen Sie den Status Ihrer Aktivität auf Ihrer Markenseite.
 
-Vergewissern Sie sich, dass die Aktivität den Status „Synchronisiert“ aufweist.
+Stellen Sie sicher, dass der Status der Aktivität &quot;Synchronisiert&quot;lautet.
 
-## Target-Verhalten validieren {#validate-target-behavior}
+## Target-Verhalten überprüfen {#validate-target-behavior}
 
-Target-Verhalten validieren:
+Überprüfen des Target-Verhaltens:
 
 * Verwenden Sie Targeting mit `wcmmode preview`-Vorschau im Autor-Modus.
 * Verwenden Sie Targeting mit `wcmmode preview` und `wcmmode disabled` im Veröffentlichungsmodus
@@ -116,4 +120,4 @@ Um das Targeting für Bildkomponenten in Ihrem Formular zu überwachen, veröffe
 
 ## Offene Probleme {#open-issues}
 
-Ausdruck für die Sichtbarkeit: Festlegen des Fokus schläft für Targeting-Bilder auf adaptiven Formularen fehl.
+Ausdruck für die Sichtbarkeit: Festlegen des Fokus schlägt für zielgerichtete Bilder in adaptiven Formularen fehl.

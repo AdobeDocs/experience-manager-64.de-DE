@@ -12,18 +12,22 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
 feature: Asset Management,Renditions
 role: Admin,User
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 90%
+source-wordcount: '452'
+ht-degree: 70%
 
 ---
 
 # Arbeiten mit Dynamic Media {#working-with-dynamic-media}
 
-Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets aus Master-Assets können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse, wie Zoom, Drehen um 360 Grad und Videos. Die Funktion für dynamische Medien bindet die Workflows der Adobe Experience Manager-Lösung für die Verwaltung digitaler Assets (Assets) auf einzigartige Weise ein, um das Management digitaler Kampagnen zu vereinfachen und zu optimieren.
+Mit [Dynamic Media](https://www.adobe.com/de/solutions/web-experience-management/dynamic-media.html) können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Mithilfe einer Reihe Übergeordneter Assets generiert und liefert Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über sein globales, skalierbares und leistungsoptimiertes Netzwerk.
+
+Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse wie Zoom, Drehen um 360 Grad und Videos. Dynamic Media verfügt über eine einzigartige Integration der Workflows der Adobe Experience Manager Digital Asset Management (Assets)-Lösung, um den Digital-Campaign-Verwaltungsprozess zu vereinfachen und zu optimieren.
 
 <!-- DEAD ARTICLE >[!NOTE]
 >
@@ -33,7 +37,7 @@ Dynamische Medien ermöglichen interaktive Anzeigeerlebnisse, wie Zoom, Drehen u
 
 Mit Dynamic Media können Sie Assets vor ihrer Veröffentlichung verwalten. Eine ausführliche Beschreibung der allgemeinen Arbeit mit digitalen Assets finden Sie in [Arbeiten mit digitalen Assets](managing-assets-touch-ui.md). Die allgemeinen Themen umfassen das Hochladen, Herunterladen, Bearbeiten und Veröffentlichen von Assets, das Anzeigen und Bearbeiten von Eigenschaften und die Suche nach Assets.
 
-Die folgenden für Dynamic Media exklusiven Funktionen sind verfügbar:
+Zu den Funktionen, die nur für Dynamic Media verfügbar sind, gehören:
 
 * [Karussellbanner](carousel-banners.md)
 * [Bildsets](image-sets.md)

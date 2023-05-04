@@ -1,7 +1,7 @@
 ---
 title: Minimierung der JavaScript-Dateien
 seo-title: Minification of the JavaScript files
-description: Anweisungen zur Generierung von minimiertem Code nach AEM Forms Workspace-Anpassungen zur Optimierung der JS-Dateien für das Web.
+description: Anleitung zum Generieren von minimiertem Code nach AEM Forms Workspace-Anpassungen zur Optimierung der JS-Dateien für das Web.
 seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 exl-id: 8394151e-e9cf-4f68-97a3-ba1d1dd6a2d2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 100%
+source-wordcount: '219'
+ht-degree: 37%
 
 ---
 
 # Minimierung der JavaScript-Dateien {#minification-of-the-javascript-files}
 
-Durch die Minimierung werden die redundanten Zeichen im Quellcode, wie Leerzeichen, neue Zeile und Kommentare, entfernt. Dies verbessert die Leistung, da die Größe des Codes verringert wird. Minimierung wirkt sich nicht auf die Funktion aus, verringert jedoch die Lesbarkeit des Codes.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Um minimierten Code für semantische Änderungen zu generieren, führen Sie folgende Schritte aus.
+Durch die Minimierung werden die redundanten Zeichen, wie Leerzeichen, neue Zeile und Kommentare, aus dem Quellcode entfernt. Dies verbessert die Leistung, indem die Größe des Codes verringert wird. Die Minimierung wirkt sich nicht auf die Funktionalität aus, verringert jedoch die Lesbarkeit des Codes.
+
+Gehen Sie wie folgt vor, um minimierten Code für semantische Änderungen zu generieren.
 
 1. Kopieren Sie `client-html/src/main/webapp/js` von „src-package“ nach „filesystem“.
 
@@ -59,13 +63,13 @@ Um minimierten Code für semantische Änderungen zu generieren, führen Sie folg
                service="service"/>
    ```
 
-1. Führen Sie unter client-html/src/main/webapp/js/minifier folgenden Befehl aus:
+1. Führen Sie unter client-html/src/main/webapp/js/minifier den Befehl aus:
 
    ```shell
    mvn clean install
    ```
 
-   Es wird ein Ordner minified-files unter client-html/src/main/webapp/js mit minimierten Dateien main.js und registry.js generiert.
+   Es wird ein Ordner minified-files unter client-html/src/main/webapp/js mit minimiertem main.js und registry.js generiert.
 
 >[!NOTE]
 >
@@ -73,4 +77,4 @@ Um minimierten Code für semantische Änderungen zu generieren, führen Sie folg
 
 >[!NOTE]
 >
->Wenn Sie minimieren, wirkt sich dies auf das Upgrade aus.
+>Wenn Sie die Aktualisierung verkleinern, wirkt sich dies auf die Aktualisierung aus.

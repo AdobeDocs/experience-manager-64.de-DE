@@ -1,7 +1,7 @@
 ---
 title: Checklisten
 seo-title: Checklists
-description: Die folgende Checkliste zeigt einige der wichtigsten Testprobleme
+description: In der folgenden Checkliste werden einige der wichtigsten Testprobleme hervorgehoben
 seo-description: The following checklist highlights some of the main testing issues
 uuid: 0456c98c-779f-415d-9641-b17ac141698b
 contentOwner: Guillaume Carlino
@@ -10,16 +10,20 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 exl-id: addb71f8-d042-4b14-8775-f15ab9fa5b6b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 100%
+source-wordcount: '193'
+ht-degree: 69%
 
 ---
 
 # Checklisten{#checklists}
 
-Die folgende Checkliste zeigt einige der wichtigsten Probleme - für alle Einzelheiten lesen Sie die anderen Abschnitte, die sich auf das Testen beziehen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In der folgenden Checkliste werden einige der Hauptprobleme hervorgehoben. Weitere Informationen finden Sie in den anderen Abschnitten zum Testen .
 
 | Überprüfen Sie Folgendes | Antwort | Aktion | Inhaber | Fällig am |
 |---|---|---|---|---|

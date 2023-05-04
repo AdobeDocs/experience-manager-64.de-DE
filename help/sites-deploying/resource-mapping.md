@@ -1,7 +1,7 @@
 ---
 title: Ressourcenzuordnung
 seo-title: Resource Mapping
-description: Erfahren Sie, wie Sie mit der Ressourcenzuordnung Umleitungen, Vanity-URLs und virtuelle Hosts für AEM definieren.
+description: Erfahren Sie, wie Sie mithilfe der Ressourcenzuordnung Umleitungen, Vanity-URLs und virtuelle Hosts für AEM definieren.
 seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
 uuid: 33de7e92-8144-431b-badd-e6a667cd78e1
 contentOwner: User
@@ -11,23 +11,27 @@ content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
 feature: Configuring
 exl-id: 81dddbab-1a9e-49ee-b2a5-a8e4de3630d1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 90%
+source-wordcount: '557'
+ht-degree: 66%
 
 ---
 
 # Ressourcenzuordnung{#resource-mapping}
 
-Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und virtuellen Hosts für AEM verwendet.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die Ressourcenzuordnung wird verwendet, um Umleitungen, Vanity-URLs und virtuelle Hosts für AEM zu definieren.
 
 Diese Zuordnungen können Sie beispielsweise verwenden, um:
 
 * Allen Anfragen das Präfix `/content` voranzustellen, sodass die interne Struktur für Besucher Ihrer Website ausgeblendet wird.
 * Eine Umleitung zu definieren, sodass alle Anfragen an die Seite `/content/en/gateway` Ihrer Website zu `https://gbiv.com/` umgeleitet werden.
 
-Bei einer möglichen HTTP-Zuordnung wird [allen Anforderungen an localhost:4503 das Präfix /content](#configuring-an-internal-redirect-to-content) vorangestellt. Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
+Eine mögliche HTTP-Zuordnung [Präfixiert alle Anforderungen an localhost:4503 mit /content](#configuring-an-internal-redirect-to-content). Eine solche Zuordnung kann zum Ausblenden der internen Struktur für die Besucher der Website verwendet werden, da sie den Zugriff auf:
 
 `localhost:4503/content/geometrixx/en/products.html`
 
@@ -47,7 +51,7 @@ da die Zuordnung automatisch das Präfix `/content` zu `/geometrixx/en/products.
 
 ## Anzeigen von Zuordnungsdefinitionen {#viewing-mapping-definitions}
 
-Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
+Die Zuordnungen bilden zwei Listen, die der JCR Resource Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
 Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<host>:<port>/system/console/jcrresolver`:
 
@@ -65,11 +69,11 @@ Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die 
 * **Mapping Map Entries**
 Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuordnung von Ressourcenpfaden zu URLs verwendet wird.
 
-Die beiden Listen enthalten verschiedene Einträge, darunter die von der/den Anwendung/en als Standardwerte definierten. Sie dienen häufig dazu, URLs für die Benutzer zu vereinfachen.
+Die beiden Listen enthalten verschiedene Einträge, darunter die von der/den Anwendung/en als Standardwerte definierten. Diese zielen häufig darauf ab, URLs für den Benutzer zu vereinfachen.
 
-Die Listen verbinden ein **Muster**, d. h. einen auf die Anforderung abgestimmten regulären Ausdruck, mit einer **Ersetzung**, die die anzuwendende Umleitung definiert.
+Das Listen-Paar enthält eine **Muster**, einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einer **Ersatz** die die Umleitung definiert, die durchgesetzt werden soll.
 
-So löst beispielsweise das
+Beispiel:
 
 **Muster** `^[^/]+/[^/]+/welcome$`
 
@@ -93,7 +97,7 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 ## Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
-Eine Standardinstallation von AEM umfasst folgenden Ordner:
+In einer Standardinstallation von AEM finden Sie den Ordner:
 
 `/etc/map/http`
 

@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: e4e99b9d-3023-4b9b-9c93-be04c7a871ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 100%
+source-wordcount: '1818'
+ht-degree: 98%
 
 ---
 
 # Erstellen von Flash Builder-Programmen, die SSO-Authentifizierung mithilfe von HTTP-Token durchführen {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können eine Client-Anwendung mit Flash Builder erstellen, der eine SSO-Authentication (Single Sign-on) mithilfe von HTTP-Token durchführt. Angenommen, Sie erstellen eine webbasierte Anwendung mit Flash Builder. Als Nächstes gehen Sie davon aus, dass die Anwendung verschiedene Ansichten enthält, bei denen jede Ansicht einen anderen AEM Forms-Vorgang aufruft. Anstatt einen Benutzer für jeden Forms-Vorgang zu authentifizieren, können Sie eine Anmeldeseite erstellen, über die sich ein Benutzer einmal authentifizieren kann. Nach der Authentication kann ein Benutzer mehrere Vorgänge aufrufen, ohne sich erneut authentifizieren zu müssen. Wenn sich ein Benutzer beispielsweise bei Workspace (oder einer anderen Forms-Anwendung) angemeldet hat, muss er sich nicht erneut authentifizieren.
 

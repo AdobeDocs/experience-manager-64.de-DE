@@ -1,7 +1,7 @@
 ---
-title: Verwaltungsdienst für Benutzer und benutzergenerierte Inhalte in AEM Communities
+title: User- und UGC-Verwaltungsdienst in AEM Communities
 seo-title: User and UGC Management Service in AEM Communities
-description: Verwenden Sie APIs zur Massenlöschung und zum Massenexport von benutzergenerierten Inhalten sowie zum Deaktivieren von Benutzerkonten.
+description: Verwenden Sie APIs, um benutzergenerierte Inhalte stapelweise zu löschen und zu exportieren und das Benutzerkonto zu deaktivieren.
 seo-description: Use APIs to bulk delete and bulk export user generated content, and disable user account.
 uuid: f4663825-eac8-4ef5-8253-46875e0cd71d
 contentOwner: mgulati
@@ -11,14 +11,18 @@ topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
 role: Admin
 exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 40%
+source-wordcount: '618'
+ht-degree: 7%
 
 ---
 
-# Verwaltungsdienst für Benutzer und benutzergenerierte Inhalte in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
+# User- und UGC-Verwaltungsdienst in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!IMPORTANT]
 >
@@ -26,7 +30,7 @@ ht-degree: 40%
 
 AEM Communities stellt native APIs zur Verwaltung von Benutzerprofilen und zur Massenverwaltung benutzergenerierter Inhalte bereit. Nach der Aktivierung wird die **UserUgcManagement** Der -Dienst ermöglicht es berechtigten Benutzern (Community-Administratoren und -Moderatoren), Benutzerprofile zu deaktivieren und UGC-Dateien für bestimmte Benutzer per Massenlöschung oder Massenexport zu löschen. Diese APIs ermöglichen es auch den Datenverantwortlichen und Verarbeitern von Kundendaten, die Datenschutz-Grundverordnung (DSGVO) der Europäischen Union und andere DSGVO-inspirierte Datenschutzmandate einzuhalten.
 
-Weitere Informationen finden Sie auf der [DSGVO-Seite im Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
+Weitere Informationen finden Sie unter [DSGVO-Seite im Adobe Privacy Center](https://www.adobe.com/de/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
@@ -36,26 +40,26 @@ Damit diese APIs verwendet werden können, müssen Sie die `/services/social/ugc
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 
-Alternativ dazu können Sie auch eine grafische Benutzeroberfläche erstellen, über die Sie dann die im System vorhandenen Benutzerprofile und benutzergenerierten Inhalte verwalten können.
+Sie können jedoch auch eine Benutzeroberfläche (Benutzeroberfläche) erstellen, um Benutzerprofile und benutzergenerierte Inhalte im System zu verwalten.
 
-Mit diesen APIs können die folgenden Funktionen ausgeführt werden:
+Diese APIs ermöglichen die Ausführung der folgenden Funktionen.
 
-## Benutzergenerierte Inhalte abrufen {#retrieve-the-ugc-of-a-user}
+## Abrufen der benutzergenerierten Inhalte eines Benutzers {#retrieve-the-ugc-of-a-user}
 
 `getUserUgc(ResourceResolver resourceResolver, String user, OutputStream outputStream)` unterstützt den Export aller benutzergenerierten Inhalte eines Benutzers aus dem System.
 
 * **Benutzer**: autorisierbare ID eines Benutzers.
-* **outputStream**: Das Ergebnis wird als Ausgabestream in einer ZIP-Datei ausgegeben, die die benutzergenierten Inhalte (als JSON-Datei) sowie Anhänge (vom Benutzer hochgeladene Bilder oder Videos) enthält.
+* **outputStream**: Das Ergebnis wird als Ausgabestream zurückgegeben. Hierbei handelt es sich um eine ZIP-Datei mit dem vom Benutzer generierten Inhalt (als JSON-Datei) und Anlagen (einschließlich Bildern oder Videos, die vom Benutzer hochgeladen wurden).
 
-Beispiel: Um die Inhalte zu exportieren, die ein Benutzer mit dem Namen „Weston McCall“ generiert hat und der für die Anmeldung bei der Communities-Site über die ID „weston.mccall@dodgit.com“ autorisiert wird, können Sie eine HTTP-GET-Anfrage senden. Diese kann in etwa wie folgt aussehen:
+Um beispielsweise die benutzergenerierte Inhalte eines Benutzers mit dem Namen Weston McCall zu exportieren, der weston.mccall@dodgit.com als autorisierbare ID verwendet, um sich bei der Communities-Site anzumelden, können Sie eine HTTP-GET-Anfrage ähnlich der folgenden senden:
 
 `http://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
-## Benutzergenerierte Inhalte löschen {#delete-the-ugc-of-a-user}
+## Löschen der benutzergenerierten Inhalte eines Benutzers {#delete-the-ugc-of-a-user}
 
 **deleteUserUgc(ResourceResolver resourceResolver, String user)** hilft, alle benutzergenerierten Inhalte für einen Benutzer aus dem System zu löschen.
 
-* **user**: Die zur Autorisierung eines Benutzers verwendete ID.
+* **Benutzer**: autorisierbare ID des Benutzers.
 
 Um beispielsweise die benutzergenerierte Inhalte eines Benutzers mit autorisierbarer ID weston.mccall@dodgit.com über eine HTTP-POST-Anfrage zu löschen, verwenden Sie die folgenden Parameter:
 
@@ -70,15 +74,15 @@ Informationen zu von AEM Communities verwendeten Adobe Analytics-Variablenzuordn
 
 ![Variablenzuordnung für AEM Communities in Adobe Analytics](assets/Analytics-Communities-Mapping.png)
 
-## Benutzerkonto deaktivieren {#disable-a-user-account}
+## Ein Benutzerkonto deaktivieren {#disable-a-user-account}
 
 **deleteUserAccount(ResourceResolver resourceResolver, String user)** hilft, ein Benutzerkonto zu deaktivieren.
 
-* **user**: Die zur Autorisierung eines Benutzers verwendete ID.
+* **Benutzer**: autorisierbare ID des Benutzers.
 
 >[!NOTE]
 >
->Durch das Deaktivieren eines Benutzers wird der gesamte von diesem generierte Inhalt gelöscht, der auf dem Server vorhanden ist.
+>Durch Deaktivieren eines Benutzers werden alle vom Benutzer generierten Inhalte gelöscht, die der Benutzer auf dem Server hat.
 
 Um beispielsweise das Profil eines Benutzers mit autorisierbarer ID weston.mccall@dodgit.com über eine HTTP-POST-Anfrage zu löschen, verwenden Sie die folgenden Parameter:
 
@@ -87,4 +91,4 @@ Um beispielsweise das Profil eines Benutzers mit autorisierbarer ID weston.mccal
 
 >[!NOTE]
 >
->Mit der API „deleteUserAccount()“ werden im System nur die benutzergenerierten Inhalte gelöscht, das diesen zugehörige Benutzerprofil wird damit lediglich deaktiviert. Um jedoch ein Benutzerprofil aus dem System zu löschen, navigieren Sie zu **CRXDE Lite**: [https://&lt;server>/crx/de](http://localhost:4502/crx/de), suchen Sie den Benutzerknoten und löschen Sie ihn.
+>Die API deleteUserAccount() deaktiviert nur ein Benutzerprofil im System und entfernt die Benutzerkontensteuerung. Um jedoch ein Benutzerprofil aus dem System zu löschen, navigieren Sie zu **CRXDE Lite**: [https://&lt;server>/crx/de](http://localhost:4502/crx/de), suchen Sie den Benutzerknoten und löschen Sie ihn.

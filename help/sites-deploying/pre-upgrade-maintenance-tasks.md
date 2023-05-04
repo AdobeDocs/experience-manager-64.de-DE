@@ -11,14 +11,18 @@ topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 feature: Upgrading
 exl-id: f146cb2f-ee77-4c99-8dff-446cdb3a7797
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2168'
-ht-degree: 99%
+source-wordcount: '2204'
+ht-degree: 78%
 
 ---
 
 # Wartungsaufgaben vor einem Upgrade{#pre-upgrade-maintenance-tasks}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Bevor Sie mit dem Upgrade beginnen, ist es wichtig, die folgenden Wartungsaufgaben durchzuführen, damit das System bereit ist und zurückgesetzt werden kann, falls Probleme auftreten:
 
@@ -40,11 +44,11 @@ Bevor Sie mit dem Upgrade beginnen, ist es wichtig, die folgenden Wartungsaufgab
 
 ## Überprüfung auf ausreichenden Festplattenspeicher {#ensure-sufficient-disk-space}
 
-Wenn Sie das Upgrade durchführen, ist zusätzlich zur Aktualisierung von Inhalt und Code auch eine Migration des Repositorys erforderlich. Bei der Migration wird eine Kopie des Repositorys im Segment-TAR-Format erstellt. Daher benötigen Sie ausreichend Festplattenspeicher, um eine zweite (möglicherweise größere) Version des Repositorys zu speichern.
+Wenn Sie das Upgrade durchführen, ist zusätzlich zur Aktualisierung von Inhalt und Code auch eine Migration des Repositorys erforderlich. Durch die Migration wird eine Kopie des Repositorys im neuen Segment-TAR-Format erstellt. Daher benötigen Sie genügend Speicherplatz, um eine zweite, möglicherweise größere Version Ihres Repositorys beizubehalten.
 
 ## Vollständige Sicherung von AEM {#fully-back-up-aem}
 
-Bevor Sie mit dem Upgrade beginnen, sollten Sie eine vollständige Sicherungskopie von AEM erstellen. Erstellen Sie Sicherungskopien des Repositorys, der Anwendungsinstallation, des Datenspeichers und der Mongo-Instanzen, falls zutreffend. Weitere Informationen zum Sichern und Wiederherstellen einer AEM-Instanz finden Sie unter[ Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md).
+Bevor Sie mit dem Upgrade beginnen, sollten Sie eine vollständige Sicherungskopie von AEM erstellen. Stellen Sie sicher, dass Sie Ihr Repository, Ihre Anwendungsinstallation, Ihren Datenspeicher und gegebenenfalls Ihre Mongo-Instanzen sichern. Weitere Informationen zum Sichern und Wiederherstellen einer AEM-Instanz finden Sie unter [Sicherung und Wiederherstellung](/help/sites-administering/backup-and-restore.md).
 
 ## Sicherung von Änderungen unter /etc {#backup-changes-etc}
 
@@ -52,13 +56,13 @@ Ein Upgrade ist ein guter Anlass, um vorhandene Inhalte und Konfigurationen unte
 
 ## Erstellen der quickstart.properties-Datei {#generate-quickstart-properties}
 
-Wenn Sie AEM von einer JAR-Datei aus starten, wird eine `quickstart.properties`-Datei unter `crx-quickstart/conf` erstellt. Falls AEM bisher nur mit dem Startskript gestartet wurde, ist diese Datei nicht vorhanden und das Upgrade schlägt fehl. Überprüfen Sie daher, dass diese Datei vorhanden ist, und starten Sie AEM andernfalls von der JAR-Datei aus neu.
+Wenn Sie AEM von einer JAR-Datei aus starten, wird eine `quickstart.properties`-Datei unter `crx-quickstart/conf` erstellt. Falls AEM bisher nur mit dem Startskript gestartet wurde, ist diese Datei nicht vorhanden und das Upgrade schlägt fehl. Überprüfen Sie, ob diese Datei vorhanden ist, und starten Sie AEM aus der JAR-Datei neu, falls sie nicht vorhanden ist.
 
 ## Konfigurieren von Workflow- und Auditprotokoll-Löschung {#configure-wf-audit-purging}
 
-Für die Aufgaben `WorkflowPurgeTask` und `com.day.cq.audit.impl.AuditLogMaintenanceTask` sind separate OSGi-Konfigurationen erforderlich, sonst werden diese nicht ausgeführt. Falls diese Aufgaben beim Ausführen von Aufgaben vor dem Upgrade fehlschlagen, sind die Ursache dafür wahrscheinlich fehlende Konfigurationen. Daher müssen Sie die OSGi-Konfigurationen für diese Aufgaben hinzufügen oder diese Aufgaben vollständig aus der Liste der Optimierungsaufgaben vor dem Upgrade löschen, falls Sie diese nicht ausführen möchten. Dokumentation zum Konfigurieren von Workflow-Löschaufgaben finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md). Informationen zur Konfiguration von Wartungsaufgaben für Auditprotokolle finden Sie unter [Wartung von Auditprotokollen in AEM 6](/help/sites-administering/operations-audit-log.md).
+Für die Aufgaben `WorkflowPurgeTask` und `com.day.cq.audit.impl.AuditLogMaintenanceTask` sind separate OSGi-Konfigurationen erforderlich, sonst werden diese nicht ausgeführt. Falls diese Aufgaben beim Ausführen von Aufgaben vor dem Upgrade fehlschlagen, sind die Ursache dafür wahrscheinlich fehlende Konfigurationen. Daher müssen Sie die OSGi-Konfigurationen für diese Aufgaben hinzufügen oder diese Aufgaben vollständig aus der Liste der Optimierungsaufgaben vor dem Upgrade löschen, falls Sie diese nicht ausführen möchten. Die Dokumentation zum Konfigurieren von Workflow-Bereinigungsaufgaben finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md) Die Konfiguration der Wartungsaufgaben im Auditprotokoll finden Sie unter [Auditprotokollwartung in AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Informationen zum Workflow und zum Löschen von Auditprotokollen in CQ 5.6 und AEM 6.0 finden Sie unter [Löschen von Workflow- und Auditknoten](https://helpx.adobe.com/de/experience-manager/kb/howtopurgewf.html).
+Informationen zu Workflow- und Auditprotokolllöschungen in CQ 5.6 sowie zur Bereinigung von Auditprotokollen in AEM 6.0 finden Sie unter [Workflow- und Auditknoten bereinigen](https://helpx.adobe.com/de/experience-manager/kb/howtopurgewf.html).
 
 ## Installieren, Konfigurieren und Ausführen der Aufgaben vor dem Upgrade {#install-configure-run-pre-upgrade-tasks}
 
@@ -76,7 +80,7 @@ Sämtliche Aufgaben, die zum Optimierungsschritt vor dem Upgrade gehören, sind 
 
 In AEM 6.3 und höher ist die Optimierung der Wartungsaufgaben vor einem Upgrade Teil der quickstart-Datei. Bei einem Upgrade von älteren AEM 6-Versionen ist sie über separate Pakete verfügbar, die Sie von Package Manager herunterladen können.
 
-Sie finden die Pakete hier:
+Die Pakete finden Sie hier:
 
 * [Beim Upgrade von AEM 6.0](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq600/product/pre-upgrade-tasks-content-cq60) 
 
@@ -96,7 +100,7 @@ Die OSGi-Komponente `PreUpgradeTasksMBean` ist mit einer Liste von Wartungsaufga
 
    ![1487758925984](assets/1487758925984.png)
 
-Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus zum Starten der Instanz. Nachfolgend finden Sie eine Beschreibung der Ausführungsmodi für die einzelnen Wartungsaufgaben.
+Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus zum Starten der Instanz. Nachfolgend finden Sie eine Beschreibung des Ausführungsmodus, für den jede Wartungsaufgabe entwickelt wurde.
 
 <table> 
  <tbody> 
@@ -113,7 +117,7 @@ Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus z
   <tr> 
    <td><code>DataStoreGarbageCollectionTask</code></td> 
    <td>crx2</td> 
-   <td>Mark und Sweep werden ausgeführt. Lassen Sie bei freigegebenen Datenspeichern diesen Schritt aus und gehen Sie<br /> manuell vor oder bereiten Sie die Instanzen vor der Ausführung richtig vor.</td> 
+   <td>Läuft markieren und kehren. Entfernen Sie bei freigegebenen Datenspeichern diesen Schritt und führen Sie<br /> -Instanzen manuell oder ordnungsgemäß vorbereiten, bevor sie ausgeführt werden.</td> 
   </tr> 
   <tr> 
    <td><code>ConsistencyCheckTask</code></td> 
@@ -123,7 +127,7 @@ Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus z
   <tr> 
    <td><code>WorkflowPurgeTask</code></td> 
    <td>crx2/crx3</td> 
-   <td>Vor der Ausführung muss die Adobe Granite Workflow-Bereinigung in OSGi konfiguriert werden.</td> 
+   <td>Vor der Ausführung muss die Adobe Granite Workflow Purge Configuration OSGi konfiguriert werden.</td> 
   </tr> 
   <tr> 
    <td><code>GenerateBundlesListFileTask</code></td> 
@@ -133,12 +137,12 @@ Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus z
   <tr> 
    <td><code>RevisionCleanupTask</code></td> 
    <td>crx3</td> 
-   <td>Für TarMK-Instanzen auf AEM 6.0 bis 6.2 führen Sie stattdessen die Offline-Revisionsbereinigung durch.</td> 
+   <td>Führen Sie bei TarMK-Instanzen unter AEM 6.0 bis 6.2 stattdessen die Offline-Revisionsbereinigung manuell aus.</td> 
   </tr> 
   <tr> 
    <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td> 
    <td>crx3</td> 
-   <td>Vor der Ausführung muss der Auditprotokoll-Bereinigungsplaner in OSGi konfiguriert werden.</td> 
+   <td>Vor der Ausführung muss die OSGi-Konfiguration für die Auditprotokolllöschung konfiguriert werden.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -151,15 +155,15 @@ Die Aufgabenliste unterscheidet sich je nach dem verwendeten Ausführungsmodus z
 
 Die OSGi-Komponente `PreUpgradeTasksMBeanImpl` umfasst eine vorkonfigurierte Liste von Tags für Konsistenzprüfungen vor einem Upgrade, die ausgeführt werden sollen, wenn die Methode `runAllPreUpgradeHealthChecks` aufgerufen wird:
 
-* **system** – Das von den Wartungs-Konsistenzprüfungen von Granite verwendete Tag.
+* **System** - das Tag, das von den Wartungs-Konsistenzprüfungen für Granite verwendet wird
 
 * **pre-upgrade** – Ein benutzerdefiniertes Tag, das Sie allen Konsistenzprüfungen hinzufügen können, deren Ausführung vor einem Upgrade festgelegt werden können.
 
-Die Liste kann bearbeitet werden. Mit den Plus- **(+)** und Minus-Schaltflächen **(-)** neben den Tags können Sie weitere benutzerdefinierte Tags hinzufügen oder die Standard-Tags entfernen.
+Die Liste kann bearbeitet werden. Sie können das Pluszeichen **(+)** und minus **(-)** -Schaltflächen neben den Tags, um weitere benutzerdefinierte Tags hinzuzufügen oder die standardmäßigen Tags zu entfernen.
 
-**MBean-Methoden** 
+**MBean-Methoden**
 
-Der Zugriff auf die Funktion für verwaltete Beans ist über die [JMX-Konsole](/help/sites-administering/jmx-console.md) möglich.
+Auf die Funktion für verwaltete Beans kann über die [JMX-Konsole](/help/sites-administering/jmx-console.md).
 
 Sie können wie folgt auf die MBeans zugreifen:
 
@@ -194,7 +198,7 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   </tr> 
   <tr> 
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td> 
-   <td>AKTION</td> 
+   <td>ACTION</td> 
    <td>Führt die Wartungsaufgabe vor dem Upgrade mit dem als Parameter angegebenen Namen aus.</td> 
   </tr> 
   <tr> 
@@ -209,33 +213,33 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   </tr> 
   <tr> 
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td> 
-   <td>AKTION</td> 
+   <td>ACTION</td> 
    <td>Gibt die genaue Ausführungszeit der Wartungsaufgaben vor dem Upgrade mit dem Namen als Parameter an.</td> 
   </tr> 
   <tr> 
    <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td> 
-   <td>AKTION</td> 
+   <td>ACTION</td> 
    <td>Gibt den letzten Ausführungsstatus der Wartungsaufgabe vor dem Upgrade mit dem Namen als Parameter an.</td> 
   </tr> 
   <tr> 
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
-   <td>AKTION</td> 
+   <td>ACTION</td> 
    <td><p>Führt alle Konsistenzprüfungen vor der Aktualisierung aus und speichert deren Status in der Datei <code>preUpgradeHCStatus.properties</code>, die im Sling-Stammpfad gespeichert ist. Wenn der Parameter <code>shutDownOnSuccess</code> auf <code>true</code> gesetzt ist, wird die AEM-Instanz heruntergefahren, allerdings nur, wenn der Status für alle Konsistenzprüfungen vor einem Upgrade „OK“ lautet.</p> <p>Die Eigenschaftendatei wird als Vorbedingung für zukünftige Upgrades verwendet<br /> und der Upgrade-Vorgang wird angehalten, wenn die Konsistenzprüfungen vor eines Upgrades<br /> fehlgeschlagen sind. Wenn Sie das Ergebnis der Konsistenzprüfungen <br />vor einem Upgrade ignorieren und das Upgrade trotzdem starten möchten, können Sie die Datei löschen.</p> </td> 
   </tr> 
   <tr> 
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
-   <td>AKTION</td> 
-   <td>Listet alle importierten Pakete auf, die nach dem<br /> Upgrade auf eine bestimmte AEM-Version nicht mehr kompatibel sind. Die AEM-Zielversion muss<br /> als Parameter angegeben werden.</td> 
+   <td>ACTION</td> 
+   <td>Listet alle importierten Pakete auf, die nach dem<br /> Upgrade auf eine bestimmte AEM-Version nicht mehr kompatibel sind. Die Zielversion AEM muss<br /> als Parameter angegeben.</td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->Die MBean-Methoden können über folgende Komponenten aufgerufen werden:
+>Die MBean-Methoden können wie folgt aufgerufen werden:
 >
 >* Die JMX-Konsole
->* Eine beliebige externe Anwendung, die eine Verbindung mit JMX herstellt
+>* Jede externe Anwendung, die eine Verbindung zu JMX herstellt
 >* cURL
 >
 
@@ -281,17 +285,17 @@ Zum Deaktivieren der in der JAAS-Konfiguration von `repository.xml` definierten 
 
 >[!NOTE]
 >
->Entfernen Sie Pakete aus dem Verzeichnis „crx-quickstart/install“ erst, NACHDEM Sie die AEM-Instanz heruntergefahren haben. Dies ist einer der letzten Schritte vor dem Start des Upgrade-Verfahrens.
+>Entfernen Sie nur Pakete aus dem Verzeichnis crx-quickstart/install , nachdem Sie die AEM-Instanz heruntergefahren haben. Dies ist einer der letzten Schritte vor dem Start des Upgrade-Verfahrens.
 
-Entfernen Sie alle Service Packs, Feature Packs oder Hotfixes, die im lokalen Dateisystem im Verzeichnis `crx-quickstart/install` bereitgestellt sind. Dadurch wird die unbeabsichtigte Installation alter Hotfixes und Service Packs auf der neuen AEM-Version nach der Aktualisierung verhindert.
+Entfernen Sie alle Service Packs, Feature Packs oder Hotfixes, die im lokalen Dateisystem im Verzeichnis `crx-quickstart/install` bereitgestellt sind. Dadurch wird verhindert, dass alte Hotfixes und Service Packs nach Abschluss der Aktualisierung versehentlich zusätzlich zur neuen AEM installiert werden.
 
 ## Beenden aller Cold-Standby-Instanzen {#stop-tarmk-coldstandby-instance}
 
-Falls Sie TarMK Cold Standby verwenden, stoppen Sie alle Cold-Standby-Instanzen, falls erforderlich. Dies stellt sicher, dass das System problemlos in den Online-Modus wechseln kann, falls bei dem Upgrade Probleme aufgetreten sind. Nach erfolgreichem Upgrade müssen die Cold-Standby-Instanzen auf Basis der aktualisierten primären Instanzen neu erstellt werden.
+Wenn Sie TarMK Cold Standby verwenden, beenden Sie alle Cold-Standby-Instanzen. Dies stellt sicher, dass das System problemlos in den Online-Modus wechseln kann, falls bei dem Upgrade Probleme aufgetreten sind. Nach erfolgreichem Upgrade müssen die Cold-Standby-Instanzen auf Basis der aktualisierten primären Instanzen neu erstellt werden.
 
 ## Deaktivieren von benutzerdefinierten geplanten Aufträgen {#disable-custom-scheduled-jobs}
 
-Deaktivieren Sie in OSGi geplante Aufträge, die im Anwendungscode enthalten sind.
+Deaktivieren Sie alle geplanten OSGi-Aufträge, die im Anwendungscode enthalten sind.
 
 ## Durchführen der Offline-Revisionsbereinigung {#execute-offline-revision-cleanup}
 
@@ -299,15 +303,15 @@ Deaktivieren Sie in OSGi geplante Aufträge, die im Anwendungscode enthalten sin
 >
 >Dieser Schritt ist nur für TarMK-Installationen erforderlich.
 
-Falls Sie TarMK verwenden, sollten Sie vor dem Upgrade eine Offline-Revisionsbereinigung durchführen. Dadurch werden die Repository-Migration und die nachfolgenden Upgrade-Aufgaben viel schneller ausgeführt. Dies wiederum unterstützt die erfolgreiche Online-Revisionsbereinigung nach dem Upgrade. Weitere Informationen zum Durchführen einer Offline-Revisionsbereinigung finden Sie unter [Durchführen einer Offline-Revisionsbereinigung](https://helpx.adobe.com/experience-manager/6-2/sites-deploying/storage-elements-in-aem-6.html#performing-offline-revision-cleanup).
+Falls Sie TarMK verwenden, sollten Sie vor dem Upgrade eine Offline-Revisionsbereinigung durchführen. Dadurch werden die Repository-Migration und die nachfolgenden Upgrade-Aufgaben viel schneller ausgeführt. Dies wiederum unterstützt die erfolgreiche Online-Revisionsbereinigung nach dem Upgrade. Informationen zum Ausführen der Offline-Revisionsbereinigung finden Sie unter [Durchführen der Offline-Revisionsbereinigung](https://helpx.adobe.com/experience-manager/6-2/sites-deploying/storage-elements-in-aem-6.html#performing-offline-revision-cleanup).
 
 ## Durchführen der Datenspeicherbereinigung {#execute-datastore-garbage-collection}
 
 >[!NOTE]
 >
->Dieser Schritt ist nur für Instanzen erforderlich, die crx3 ausführen.
+>Dieser Schritt ist nur für Instanzen erforderlich, die crx3 ausführen
 
-Nach der Revisionsbereinigung auf CRX3-Instanzen sollten Sie die Datenspeicherbereinigung ausführen, um nicht referenzierte BLOB-Objekte aus dem Datenspeicher zu löschen. Eine Anleitung finden Sie in der Dokumentation zur [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md).
+Nachdem Sie die Revisionsbereinigung auf CRX3-Instanzen ausgeführt haben, sollten Sie die Datenspeicherbereinigung ausführen, um alle nicht referenzierten Blobs im Datenspeicher zu entfernen. Anweisungen finden Sie in der Dokumentation unter [Datenspeicherbereinigung](/help/sites-administering/data-store-garbage-collection.md).
 
 ## Löschen von Benutzern, die das Upgrade behindern könnten {#delete-users-that-might-hinder-the-upgrade}
 

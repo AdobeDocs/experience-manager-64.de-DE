@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 role: Admin
 exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 2%
+source-wordcount: '557'
+ht-degree: 3%
 
 ---
 
 # Communities-Benachrichtigungen {#communities-notifications}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -58,7 +62,7 @@ Anweisungen zum Einrichten von E-Mails finden Sie unter [E-Mail konfigurieren](a
 
 Komponenten müssen konfiguriert werden, um Folgendes zu aktivieren. Funktionen, die Folgendes ermöglichen [blog](blog-feature.md), [Forum](forum.md), [Fragen und Antworten](working-with-qna.md), [calendar](calendar.md), [fileLibrary](file-library.md)und [Kommentare](comments.md).
 
-Beachten Sie, dass
+Beachten Sie Folgendes:
 
 * In der Community verwendete Komponenten [Site-Vorlagen](sites.md) und [Gruppenvorlagen](tools-groups.md) kann bereits so konfiguriert sein, dass Folgendes zulässig ist
 

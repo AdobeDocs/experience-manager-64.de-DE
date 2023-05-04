@@ -9,14 +9,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 84eb552c-ba47-46e1-86e3-9460bd77dfbe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 2%
+source-wordcount: '1195'
+ht-degree: 3%
 
 ---
 
 # Erstellen und Hinzufügen von Vorlagen und Komponenten {#creating-and-adding-templates-and-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >

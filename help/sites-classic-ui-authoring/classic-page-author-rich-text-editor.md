@@ -1,7 +1,7 @@
 ---
 title: Rich-Text-Editor
 seo-title: Rich Text Editor
-description: Der Rich-Text-Editor ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM.
+description: Der Rich-Text-Editor ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM.
 seo-description: The Rich Text Editor is a basic building block for inputting textual content into AEM.
 uuid: 42001071-f7a7-475d-8aab-a8054303db68
 contentOwner: Chris Bohnert
@@ -10,24 +10,28 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 exl-id: 44cd0092-de40-4a72-a682-1e8f5906b2e5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 99%
+source-wordcount: '1832'
+ht-degree: 37%
 
 ---
 
 # Rich-Text-Editor{#rich-text-editor}
 
-Der Rich-Text-Editor ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Der Rich-Text-Editor ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
 
 * Text
-* Textbild
+* Text Bild
 * Tabelle
 
 ## Rich-Text-Editor {#rich-text-editor-2}
 
-Das Editor-Dialogfeld arbeitet nach dem WYSIWYG-Prinzip und bietet eine Vielzahl von Funktionen.
+Das WYSIWYG-Bearbeitungsdialogfeld bietet eine große Bandbreite an Funktionen:
 
 ![cq55_rte_basicchars](assets/cq55_rte_basicchars.png)
 
@@ -37,25 +41,25 @@ Das Editor-Dialogfeld arbeitet nach dem WYSIWYG-Prinzip und bietet eine Vielzahl
 
 ## Bearbeiten im Kontext {#in-place-editing}
 
-Zusätzlich zu der Bearbeitung in Dialogfeldern durch den Rich-Text-Editor bietet AEM noch die Möglichkeit einer Bearbeitung im Kontext, bei der Sie den Text so bearbeiten, wie er im Layout der Seite erscheint.
+Zusätzlich zum Dialogfeldbasierten Rich-Text-Bearbeitungsmodus bietet AEM auch den integrierten Bearbeitungsmodus, der die direkte Bearbeitung des Texts ermöglicht, wie er im Layout der Seite angezeigt wird.
 
-Klicken Sie zwei Mal langsam auf einen Absatz (kein Doppelklick), um die Bearbeitung im Kontext zu starten. Der Rahmen der Komponente wird nun orange dargestellt.
+Klicken Sie zweimal auf einen Absatz (langsamer Doppelklick), um in den Bearbeitungsmodus für den Kontext zu wechseln (der Komponentenrahmen ist jetzt orange).
 
-Sie können nun den Text direkt auf der Seite bearbeiten, anstatt ein Dialogfenster aufrufen zu müssen. Alle Änderungen werden sofort automatisch gespeichert.
+Sie können nun den Text direkt auf der Seite bearbeiten, anstatt ein Dialogfenster aufrufen zu müssen. Nehmen Sie einfach Ihre Änderungen vor und sie werden automatisch gespeichert.
 
 ![cq55_rte_inlineediting](assets/cq55_rte_inlineediting.png)
 
 >[!NOTE]
 >
->Wenn der Content Finder geöffnet ist, wird oben auf der Registerkarte eine Symbolleiste mit den RTE-Formatierungsoptionen angezeigt (siehe oben).
+>Wenn Sie den Content Finder geöffnet haben, wird oben auf der Registerkarte eine Symbolleiste mit den RTE-Formatierungsoptionen angezeigt (wie oben).
 >
 >Wenn der Content Finder nicht geöffnet ist, wird die Symbolleiste nicht angezeigt.
 
-Derzeit ist die Bearbeitung im Kontext für Seitenelemente möglich, die durch die Komponenten **Text** und **Titel** erzeugt wurden.
+Derzeit ist der Modus Bearbeitung im Kontext für Seitenelemente aktiviert, die von der **Text** und **Titel** Komponenten.
 
 >[!NOTE]
 >
->Die **Titel**-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im kontextbasierten Bearbeitungsmodus bearbeiten, wird durch Einfügen eines Zeilenumbruchs eine neue **Text**-Komponente unter dem Titel geöffnet.
+>Die **Titel**-Komponente wurde konzipiert, um kurzen Text ohne Zeilenumbrüche zu enthalten. Wenn Sie einen Titel im Kontext-Bearbeitungsmodus bearbeiten, wird durch die Eingabe eines Zeilenumbruchs ein neuer **Text** -Komponente unterhalb des Titels.
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
@@ -65,25 +69,25 @@ Der Rich-Text-Editor bietet verschiedene Funktionen, die [von der Konfiguration]
 
 ![](do-not-localize/cq55_rte_basicchars.png)
 
-Hier können Sie Formatierungen auf ausgewählte (markierte) Zeichen anwenden, für einige Optionen gibt es auch Tastaturkürzel:
+Hier können Sie die Formatierung auf ausgewählte (hervorgehobene) Zeichen anwenden. Einige Optionen verfügen auch über Tastenkombinationen:
 
 * Fett (Strg+B)
 * Kursiv (Strg+I)
-* Unterstrichen (Strg+U)
+* Unterstreichen (Strg+U)
 * Tiefgestellt
 * Hochgestellt
 
 ![cq55_rte_basicchars_use](assets/cq55_rte_basicchars_use.png)
 
-Alle Funktionen arbeiten als Schalter, wenn Sie also erneut darauf klicken, wird die Formatierung wieder entfernt.
+Alle fungieren als Umschalter, sodass bei einer erneuten Auswahl das Format entfernt wird.
 
 ### Vordefinierte Stile und Formate {#predefined-styles-and-formats}
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Ihre Installation kann außerdem vordefinierte Stile und Formate aufweisen, die in den Dropdownlisten **Art** (also Stil) und **Format** zur Verfügung stehen und auf von Ihnen ausgewählten Text angewendet werden können.
+Ihre Installation kann vordefinierte Stile und Formate enthalten. Diese sind mit der Variablen **Stil** und **Format** Dropdown-Listen aus und können auf Text angewendet werden, den Sie ausgewählt haben.
 
-Ein Stil kann auf eine bestimmte Zeichenfolge angewendet werden (ein Stil ist CSS-basiert).
+Ein Stil kann auf eine bestimmte Zeichenfolge angewendet werden (ein Stil entspricht CSS):
 
 ![cq55_rte_styles_use](assets/cq55_rte_styles_use.png)
 
@@ -91,53 +95,53 @@ Ein Format hingegen wird auf einen gesamten Textabsatz angewendet (Formate sind 
 
 ![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
-Ein spezifisches Format kann nur geändert werden (der Standardwert lautet **Absatz**).
+Ein bestimmtes Format kann nur geändert werden (die Standardeinstellung ist **Absatz**).
 
-Ein Stil kann entfernt werden. Platzieren Sie dafür den Cursor innerhalb des Textes, auf den der Stil angewendet wurde, und klicken Sie dann auf das Löschsymbol:
+Ein Stil kann entfernt werden. Platzieren Sie den Cursor in den Text, auf den der Stil angewendet wurde, und klicken Sie auf das Symbol zum Entfernen:
 
 >[!CAUTION]
 >
->Markieren Sie keine Textbereiche in dem Text, auf den der Stil angewendet wurde, da ansonsten das Symbol nicht verfügbar ist.
+>Wählen Sie keinen Text erneut aus, auf den der Stil angewendet wurde oder das Symbol deaktiviert wird.
 
 ### Ausschneiden, Kopieren, Einfügen {#cut-copy-paste}
 
 ![](do-not-localize/cq55_rte_cutcopypaste.png)
 
-Die Standardfunktionen **Ausschneiden** und **Kopieren** stehen zur Verfügung. Verschiedene Optionen für **Einfügen** erleichtern die Arbeit mit unterschiedlichen Formaten.
+Die Standardfunktionen von **Ausschneiden** und **Kopieren** verfügbar sind. Verschiedene Aromen von **Einfügen** für unterschiedliche Formate bereitgestellt werden.
 
 * Ausschneiden (**Strg+X**)
 * Kopieren (**Strg+C**)
 * Einfügen
 
-   Dies ist das Standard-Einfügeverfahren (**Strg+V**), für gebrauchsfertige Installationen ist es auf „Aus Word einfügen“ festgelegt.
+   Dies ist der standardmäßige Einfügemechanismus (**Strg+V**) für die Komponente; Wenn nativ installiert, ist dies auf &quot;Aus Word einfügen&quot;konfiguriert.
 
 * Als Text einfügen
 
-   Hierbei werden alle Stile und Formatierungen entfernt und der Inhalt wird als reiner Text eingefügt.
+   Entfernt alle Stile und Formatierungen, um nur den Nur-Text einzufügen.
 
 * Aus Word einfügen
 
-   Hierbei wird der Inhalt im HTML-Format (mit einigen erforderlichen Umformatierungen) eingefügt.
+   Dadurch wird der Inhalt als HTML eingefügt (mit einigen erforderlichen Neuformatierungen).
 
-### Rückgängig/Wiederholen {#undo-redo}
+### Rückgängig, Wiederherstellen {#undo-redo}
 
 ![](do-not-localize/cq55_rte_undoredo.png)
 
-AEM speichert die jeweils letzten 50 Aktionen in der aktuellen Komponente in chronologischer Reihenfolge. Diese Aktionen können ggf. rückgängig gemacht werden, aber nur in der Reihenfolge ihrer Durchführung.
+AEM speichert die jeweils letzten 50 Aktionen in der aktuellen Komponente in chronologischer Reihenfolge. Diese Aktionen können bei Bedarf in strikter Reihenfolge rückgängig gemacht (und dann wiederholt) werden.
 
 >[!CAUTION]
 >
->Der Bearbeitungsverlauf wird nur für die aktuelle Bearbeitungssitzung beibehalten. Er wird jedes Mal neu erstellt, wenn Sie die Komponente zur Bearbeitung öffnen.
+>Der Bearbeitungsverlauf wird nur für die aktuelle Bearbeitungssitzung beibehalten. Er wird jedes Mal neu gestartet, wenn Sie die Komponente zur Bearbeitung öffnen.
 
 >[!NOTE]
 >
->Standardmäßig sind fünfzig Aktionen vorgesehen. Die Anzahl kann bei Ihrer Installation abweichen.
+>Fünfzig ist die Standardanzahl der Aufgaben. Dies kann für Ihre Installation anders sein.
 
 ### Ausrichtung {#alignment}
 
 ![](do-not-localize/cq55_rte_alignment.png)
 
-Text kann entweder linksbündig, mittig oder rechtsbündig ausgerichtet sein.
+Ihr Text kann entweder links, zentriert oder rechts ausgerichtet sein.
 
 ![cq55_rte_align_use](assets/cq55_rte_alignment_use.png)
 
@@ -145,7 +149,7 @@ Text kann entweder linksbündig, mittig oder rechtsbündig ausgerichtet sein.
 
 ![](do-not-localize/cq55_rte_indent.png)
 
-Der Einzug eines Absatzes kann erhöht oder verringert werden. Der ausgewählte Absatz wird eingerückt und jeder weitere eingegebene Text behält diesen Einzug bei.
+Der Einzug eines Absatzes kann erhöht oder verringert werden. Der ausgewählte Absatz wird eingerückt, jeder neue eingegebene Text behält den aktuellen Einzug bei.
 
 ![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
 
@@ -153,11 +157,11 @@ Der Einzug eines Absatzes kann erhöht oder verringert werden. Der ausgewählte 
 
 ![](do-not-localize/cq55_rte_lists.png)
 
-Sie können sowohl Stichpunkt- als auch nummerierte Listen im Text erstellen. Wählen Sie entweder den Listentyp und geben Sie die Listenpunkte ein oder markieren Sie zuerst den umzuwandelnden Text. In beiden Fällen führt ein Zeilenwechsel dazu, dass ein neuer Listenpunkt erstellt wird.
+In Ihrem Text können sowohl Listen mit Aufzählungszeichen als auch nummerierte Listen erstellt werden. Wählen Sie entweder den Listentyp aus und beginnen Sie mit der Eingabe oder markieren Sie den zu konvertierenden Text. In beiden Fällen startet ein Zeilenfeed ein neues Listenelement.
 
-Verschachtelte Listen lassen sich durch Einrücken eines oder mehrerer Listenpunkte erstellen.
+Verschachtelte Listen können durch Einrücken eines oder mehrerer Listenelemente erreicht werden.
 
-Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor innerhalb der Liste platzieren und einen anderen Stil wählen. Außerdem kann eine Unterliste einen anderen Stil aufweisen als die übergeordnete Liste. Dieser Stil kann angewendet werden, sobald Sie die Unterliste (durch Einrücken) erstellt haben.
+Der Stil einer Liste kann geändert werden, indem Sie einfach den Cursor in der Liste platzieren und dann den anderen Stil auswählen. Eine Unterliste kann auch einen anderen Stil haben als die übergeordnete Liste. Dies kann angewendet werden, sobald die Unterliste erstellt wurde (durch Einzug).
 
 ![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
 
@@ -165,7 +169,7 @@ Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor in
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Ein Link zu einer URL (entweder innerhalb der Website oder zu einer externen Adresse) wird dadurch erstellt, dass Sie den gewünschten Text markieren und das auf das Symbol **Hyperlink** klicken:
+Ein Link zu einer URL (entweder innerhalb Ihrer Website oder an einem externen Ort) wird durch Hervorhebung des erforderlichen Texts und anschließendes Klicken auf **Hyperlink** Symbol:
 
 ![](do-not-localize/chlimage_1-12.png)
 
@@ -175,15 +179,15 @@ Daraufhin wird ein Dialogfeld angezeigt, in dem Sie die Ziel-URL angeben können
 
 Sie haben folgende Möglichkeiten:
 
-* Direkte Eingabe einer URI
-* Verwenden der Sitemap zur Auswahl einer Seite innerhalb der Website
-* Eingabe des URI, dann Anfügen des Ziel-Ankers, z. B. `www.TargetUri.org#AnchorName`
-* Eingabe eines reinen Ankers (zum Verweis auf die aktuelle Seite), also z. B. `#anchor`
-* Suchen nach einer Seite im Content Finder, deren Seitensymbol dann per Drag-and-Drop in das Dialogfeld „Hyperlink“ gezogen wird
+* Direktes Eingeben eines URI
+* Verwenden Sie die Sitemap, um eine Seite innerhalb Ihrer Website auszuwählen.
+* Geben Sie den URI ein und hängen Sie dann den Ziel-Anker an. z. B. `www.TargetUri.org#AnchorName`
+* nur einen Anker eingeben (um auf &quot;die aktuelle Seite&quot;zu verweisen); z. B. `#anchor`
+* Suchen nach einer Seite im Content Finder, ziehen Sie das Seitensymbol per Drag-and-Drop in das Dialogfeld &quot;Hyperlink&quot;
 
 >[!NOTE]
 >
->Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. Bei einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
+>Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. Bei einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für Ihre Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
 
 Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb des Link-Texts und klicken Sie auf das Symbol **Verknüpfung aufheben**:
 
@@ -193,9 +197,9 @@ Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb d
 
 ![](do-not-localize/cq55_rte_anchor.png)
 
-Ein Anker kann an einer beliebigen Stelle des Texts erstellt werden, indem Sie entweder den Cursor an diese Stelle setzen oder einen Textbereich markieren. Klicken Sie dann auf das Symbol **Anker**, um das Dialogfeld zu öffnen.
+Ein Anker kann an einer beliebigen Stelle innerhalb des Textes erstellt werden, indem Sie entweder den Cursor platzieren oder Text auswählen. Klicken Sie dann auf die **Anker** -Symbol, um das Dialogfeld zu öffnen.
 
-Geben Sie einen Namen für den Anker ein und klicken Sie auf **OK**, um die Änderung zu speichern.
+Geben Sie den Namen des Ankers ein und klicken Sie auf **OK** speichern.
 
 ![cq55_rte_anchor_use](assets/cq55_rte_anchor_use.png)
 
@@ -207,11 +211,11 @@ Der Anker wird beim Bearbeiten der Komponente angezeigt und kann nun als Sprungz
 
 ![](do-not-localize/cq55_rte_findreplace.png)
 
-AEM enthält die Funktion **Suchen** und die Funktion **Ersetzen** („Suchen und Ersetzen“).
+AEM bietet sowohl eine **Suchen** und **Ersetzen** (Suchen und Ersetzen) verwenden.
 
-Bei beiden Funktionen ermöglicht die Schaltfläche **Weitersuchen** die Suche nach dem angegebenen Text innerhalb der geöffneten Komponente. Sie können außerdem angeben, ob Groß-/Kleinschreibung beachtet werden soll.
+Bei beiden Funktionen ermöglicht die Schaltfläche **Weitersuchen** die Suche nach dem angegebenen Text innerhalb der geöffneten Komponente. Sie können auch angeben, ob eine Übereinstimmung mit der Groß-/Kleinschreibung (oben/unten) erforderlich ist.
 
-Die Suche startet immer an der aktuellen Cursorposition im Text. Wird das Ende der Komponente erreicht, erhalten Sie eine Meldung, dass der Vorgang ab dem Beginn der Komponente fortgesetzt wird.
+Die Suche beginnt immer an der aktuellen Cursorposition im Text. Wenn das Ende der Komponente erreicht ist, werden Sie in einer Meldung darüber informiert, dass der nächste Suchvorgang von oben gestartet wird.
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
@@ -221,7 +225,7 @@ Mit der Option **Ersetzen** können Sie **Suchen** und dann **Ersetzen** auf ein
 
 ### Bilder {#images}
 
-Bilder können aus dem Content Finder gezogen und in den Text eingefügt werden.
+Bilder können aus der Inhaltssuche gezogen werden, um sie zum Text hinzuzufügen.
 
 ![cq55_rte_image_use](assets/cq55_rte_image_use.png)
 
@@ -245,9 +249,9 @@ Alle falschen Schreibweisen werden hervorgehoben:
 
 ### Tabellen {#tables}
 
-Tabellen können auf zwei Arten eingefügt werden:
+Tabellen sind sowohl verfügbar als auch:
 
-* Als Komponente **Tabelle**
+* Als **Verzeichnis** component
 
    ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -265,9 +269,9 @@ Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind di
 
 >[!NOTE]
 >
->In der Komponente **Tabelle** ist außerdem eine spezielle Werkzeugleiste verfügbar, die neben den Standard-Funktionen für die Bearbeitung von Rich-Text auch eine Untergruppe tabellenspezifischer Funktionen enthält.
+>Im **Verzeichnis** -Komponente ist eine spezielle Symbolleiste verfügbar, die verschiedene standardmäßige Rich-Text-Editor-Funktionen sowie eine Untergruppe tabellenspezifischer Funktionen umfasst.
 
-Dies sind die tabellenspezifischen Funktionen:
+Die tabellenspezifischen Funktionen sind:
 
 <table> 
  <tbody> 
@@ -319,19 +323,19 @@ Sie können die grundlegenden Eigenschaften der Tabelle angeben und dann auf **O
 
 * **Rahmen**
 
-   Die Umrandungsbreite der Tabelle
+   Die Größe des Tabellenrahmens.
 
-* **Cell padding**
+* **Textabstand**
 
-   Die Breite des Leerraums zwischen Zelleninhalt und Rand
+   Dadurch wird der Leerraum zwischen dem Zelleninhalt und den Rändern definiert.
 
 * **Zellenabstand**
 
-   Der Abstand zwischen den Zellen
+   Dies definiert den Abstand zwischen den Zellen.
 
 >[!NOTE]
 >
->**Breite**, **Höhe** und bestimmte andere Zelleneigenschaften können auf zwei Arten angegeben werden: 
+>**Breite**, **Höhe** und bestimmte Zelleneigenschaften können definiert werden in:
 >
 >* Pixel
 >* Prozentsätze
@@ -339,7 +343,7 @@ Sie können die grundlegenden Eigenschaften der Tabelle angeben und dann auf **O
 
 >[!CAUTION]
 >
->Sie sollten unbedingt eine **Breite** für die Tabelle angeben.
+>Adobe empfiehlt dringend, eine **Breite** für Ihren Tisch.
 
 #### Zelleneigenschaften {#cell-properties}
 
@@ -356,59 +360,59 @@ Die Eigenschaften einer Zelle bzw. einer Reihe von Zellen können konfiguriert w
 * **Zellentyp**: Daten oder Kopfzeile
 * **Anwenden auf:**
    * Einzelne Zelle
-   * Ganze Zeile
-   * Ganze Spalte
+   * Gesamte Zeile
+   * Gesamte Spalte
 
 #### Zeilen hinzufügen oder löschen {#add-or-delete-rows}
 
 ![cq55_rte_rows](assets/cq55_rte_rows.png)
 
-Zeilen können entweder über oder unter der aktuellen Zeile eingefügt werden.
+Zeilen können entweder über oder unter der aktuellen Zeile hinzugefügt werden.
 
-Die aktuelle Zeile kann außerdem gelöscht werden.
+Die aktuelle Zeile kann ebenfalls gelöscht werden.
 
-#### Spalten hinzufügen oder löschen {#add-or-delete-columns}
+#### Hinzufügen oder Löschen von Spalten {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
-Spalten können entweder links oder rechts von der aktuellen Spalte eingefügt werden.
+Spalten können entweder links oder rechts von der aktuellen Spalte hinzugefügt werden.
 
-Die aktuelle Spalte kann außerdem gelöscht werden.
+Die aktuelle Spalte kann ebenfalls gelöscht werden.
 
-#### Ganze Zeilen oder Spalten auswählen {#selecting-entire-rows-or-columns}
+#### Auswählen ganzer Zeilen oder Spalten {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-Dadurch wird die gesamte Zeile bzw. Spalte ausgewählt. Dann sind bestimmte Aktionen (z. B. „Zusammenführen“) verfügbar.
+Dadurch wird die gesamte Zeile bzw. Spalte ausgewählt. Anschließend sind spezifische Aktionen (z. B. Zusammenführen) verfügbar.
 
-#### Zellen verbinden {#merge-cells}
+#### Zusammenführen von Zellen {#merge-cells}
 
 ![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
-* Wenn Sie eine Gruppe von Zellen ausgewählt haben, können Sie sie zu einer einzigen Zelle zusammenführen.
-* Wenn Sie nur eine Zelle ausgewählt haben, können Sie diese Zelle mit der Zelle rechts davon oder der Zelle unterhalb davon zusammenführen.
+* Wenn Sie eine Gruppe von Zellen ausgewählt haben, können Sie diese zu einer Gruppe zusammenführen.
+* Wenn Sie nur eine Zelle ausgewählt haben, können Sie sie mit der Zelle rechts oder darunter zusammenführen.
 
-#### Zellen teilen {#split-cells}
+#### Teilen von Zellen {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
-Einzelne Zelle auswählen und teilen 
+Wählen Sie eine einzelne Zelle aus, um sie zu teilen:
 
-* Durch die horizontale Teilung einer Zelle wird eine neue Zelle rechts von der aktuellen Zelle und innerhalb der aktuellen Spalte eingefügt.
-* Durch die vertikale Teilung einer Zelle wird eine neue Zelle unterhalb der aktuellen Zelle und innerhalb der aktuellen Zeile eingefügt.
+* Wenn Sie eine Zelle horizontal teilen, wird eine neue Zelle rechts neben der aktuellen Zelle in der aktuellen Spalte generiert.
+* Wenn Sie eine Zelle vertikal aufteilen, wird eine neue Zelle unter der aktuellen Zelle, jedoch innerhalb der aktuellen Zeile generiert.
 
 #### Erstellen verschachtelter Tabellen {#creating-nested-tables}
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-Durch Erstellen einer verschachtelten Tabelle wird eine neue separate Tabelle innerhalb der aktuellen Zelle eingefügt.
+Durch Erstellen einer verschachtelten Tabelle wird eine neue, eigenständige Tabelle innerhalb der aktuellen Zelle erstellt.
 
 >[!NOTE]
 >
->Bestimmte weitere Optionen sind browserabhängig.
+>Bestimmte zusätzliche Verhaltensweisen sind vom Browser abhängig:
 >
->* Windows IE: Verwenden Sie Strg+primäre Maustaste (in der Regel linke Maustaste) zur Auswahl mehrerer Zellen.
->* Firefox: Ziehen Sie mit der Maus, um einen Zellenbereich auszuwählen.
+>* Windows IE: Verwenden Sie Strg+primäre Maustaste (normalerweise linke Maustaste), um mehrere Zellen auszuwählen.
+>* Firefox: Ziehen Sie die Maus, um einen Zellenbereich auszuwählen.
 >
 
 
@@ -416,25 +420,25 @@ Durch Erstellen einer verschachtelten Tabelle wird eine neue separate Tabelle in
 
 ![cq55_rte_removtable](assets/cq55_rte_removetable.png)
 
-Dadurch wird die Tabelle von innerhalb der Komponente **Text** entfernt.
+Dadurch wird die Tabelle aus dem **Text** -Komponente.
 
 ### Sonderzeichen {#special-characters}
 
 ![](do-not-localize/cq55_rte_specialchars.png)
 
-Je nach Installation können in Ihrem Rich-Text-Editor auch Sonderzeichen verfügbar sein.
+Sonderzeichen können Ihrem Rich-Text-Editor zur Verfügung gestellt werden. Diese können je nach Installation variieren.
 
 ![cq55_rte_specialchars_use](assets/cq55_rte_specialchars_use.png)
 
-Halten Sie den Mauszieger über ein bestimmtes Zeichen, um eine vergrößerte Vorschau anzuzeigen, und klicken Sie dann darauf, um es an der aktuellen Position in den Text einzufügen.
+Verwenden Sie den Mauszeiger, um eine vergrößerte Version des Zeichens anzuzeigen, und klicken Sie dann auf , um es an der aktuellen Position in Ihrem Text einzuschließen.
 
 ### Quellbearbeitungsmodus {#source-editing-mode}
 
 ![](do-not-localize/cq55_rte_sourceedit.png)
 
-Im Quellbearbeitungsmodus können Sie den HTML-Code, der der aktuellen Komponente zugrunde liegt, anzeigen und bearbeiten.
+Im Quellbearbeitungsmodus können Sie die zugrunde liegende HTML der Komponente anzeigen und bearbeiten.
 
-Betrachten Sie z. B. folgenden Text:
+Der Text:
 
 ![cq55_rte_sourcemode_1](assets/cq55_rte_sourcemode_1.png)
 
@@ -444,4 +448,4 @@ Im Quellmodus hat dieser Text folgende Gestalt (oft ist der HTML-Quelltext wesen
 
 >[!CAUTION]
 >
->Beim Verlassen des Quellmodus führt AEM bestimmte Prüfungen durch (z. B. ob der Text ordnungsgemäß in Blöcken enthalten bzw. verschachtelt ist). Dies kann zu Änderungen an den Bearbeitungen führen.
+>Beim Verlassen des Quellmodus führt AEM bestimmte Prüfungen durch (z. B. ob der Text ordnungsgemäß in Blöcken enthalten bzw. verschachtelt ist). Dies kann zu Änderungen an Ihren Bearbeitungen führen.

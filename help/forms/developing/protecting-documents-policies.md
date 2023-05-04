@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: 88065c4d-8ca9-4dfb-8663-ac8772e5e556
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '15500'
-ht-degree: 100%
+source-wordcount: '15536'
+ht-degree: 99%
 
 ---
 
 # Schützen von Dokumenten durch Richtlinien {#protecting-documents-with-policies}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 **Informationen zum Document Security-Service**
 

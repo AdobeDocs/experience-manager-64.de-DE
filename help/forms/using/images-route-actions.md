@@ -1,7 +1,7 @@
 ---
-title: In Route-Aktionen verwendete Bilder anpassen
+title: Anpassen der in Route-Aktionen verwendeten Bilder
 seo-title: Customize images used in route actions
-description: Vorgehensweise zum Anpassen von Bildern, die in Route-Aktionen in LiveCycle AEM Forms Workspace verwendet werden.
+description: So passen Sie die Bilder an, die in Route-Aktionen in LiveCycle AEM Forms Workspace verwendet werden.
 seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
@@ -9,20 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 100%
+source-wordcount: '344'
+ht-degree: 69%
 
 ---
 
-# In Route-Aktionen verwendete Bilder anpassen {#customize-images-used-in-route-actions}
+# Anpassen der in Route-Aktionen verwendeten Bilder {#customize-images-used-in-route-actions}
 
-Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte in [Generische Schritte zur Anpassung](/help/forms/using/generic-steps-html-workspace-customization.md) und anschließend die Schritte in diesem Artikel durch.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+So passen Sie die in Route-Aktionen verwendeten Bilder an: [Allgemeine Schritte zur Anpassung](/help/forms/using/generic-steps-html-workspace-customization.md) gefolgt von den in diesem Artikel beschriebenen Schritten.
 
 ## Bilder für Route-Aktionen {#images-for-route-actions}
 
-1. Fügen Sie in CSS am folgenden Speicherort die Stile hinzu, die die Bilder für die neuen Route-Aktionen definieren:
+1. Fügen Sie die Stile hinzu, die Bilder im CSS definieren, und zwar an der folgenden Stelle für die neuen Route-Aktionen:
 
    `/apps/ws/css/newStyle.css`
 
@@ -34,7 +38,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
 
    >[!NOTE]
    >
-   >Verwenden Sie den Route-Aktionsnamen auch als den Stilnamen.
+   >Verwenden Sie lieber den Stilnamen, der mit dem Route-Aktionsnamen übereinstimmt.
 
    ```css
    .myStyle1{
@@ -44,7 +48,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
        }
    ```
 
-## Popup bei Tasklist-Aufgabenaktion {#task-list-task-action-popup}
+## Popup für Aufgabenaktion &quot;Aufgabenliste&quot; {#task-list-task-action-popup}
 
 1. Erstellen Sie ein Tasklisten-Aktionspopup siehe [Erstellen von AEM Forms Workspace-Code](introduction-customizing-html-workspace.md#building-html-workspace-code). Dazu muss ein Dev-Paket verwendet werden.
 

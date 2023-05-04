@@ -1,5 +1,5 @@
 ---
-title: Richten Sie das Android-Studioprojekt ein und erstellen Sie eine Android-App
+title: Einrichten des Android Studio-Projekts und Erstellen der Android-App
 seo-title: Set up the Android studio project and build the Android app
 description: Schritte zum Einrichten des Android Studio-Projekts und Erstellen des Installationsprogramms für die AEM Forms-App
 seo-description: Steps to set up the Android Studio project and build the installer for the AEM Forms app
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 98%
+source-wordcount: '626'
+ht-degree: 80%
 
 ---
 
 # Richten Sie das Android-Studioprojekt ein und erstellen Sie eine Android-App {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Dieser Artikel gilt für das Erstellen der AEM Forms App 6.3.1.1 und höheren Versionen. Zum Erstellen einer Mobile App aus dem Quell-Code der Mobile App 6.3 von AEM Forms, siehe [Einrichten des Eclipse-Projekts und Erstellen der Android™-App](/help/forms/using/setup-eclipse-project-build-installer.md).
 
@@ -26,9 +30,9 @@ Um die AEM Forms App-Quelle zu erhalten, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
-1. Im Abschnitt **[!UICONTROL Filter]**:
-   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
+1. Im **[!UICONTROL Filter]** Abschnitt:
+   1. Auswählen **[!UICONTROL Forms]** von **[!UICONTROL Lösung]** Dropdown-Liste.
+   2. Wählen Sie die Version aus und geben Sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Tippen Sie auf den für Ihr Betriebssystem zutreffenden Paketnamen, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
@@ -43,7 +47,7 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur des Ordners `android` im Or
 
 ## Standardmäßige AEM Forms-App erstellen {#set-up-the-xcode-project}
 
-1. Führen Sie die folgenden Schritte aus, um ein Projekt in Android™ Studio einzurichten und eine Signing-Identität anzugeben:
+1. Führen Sie die folgenden Schritte aus, um ein Projekt in Android™ Studio einzurichten und eine signierende Identität anzugeben:
 
    Melden Sie sich bei einem Computer an, auf dem Android™ Studio installiert und konfiguriert ist.
 
@@ -86,7 +90,7 @@ Die folgende Abbildung zeigt die Verzeichnisstruktur des Ordners `android` im Or
 
    **Für Windows®-Benutzer:** %HOMEPATH%\Projects\MobileWorkspace\src\android
 
-1. Nachdem das Projekt importiert wurde, erscheint ein Popup mit der Option zum Aktualisieren des Android™ Plugin Gradle. Klicken Sie wie für Ihre Zwecke benötigt auf die entsprechende Schaltfläche.
+1. Nachdem das Projekt importiert wurde, wird ein Popup mit der Option zum Aktualisieren des Android™-Plug-ins Gradle angezeigt. Klicken Sie je nach Bedarf auf die entsprechende Schaltfläche.
 
    ![dontremindmeagainforthisproject](assets/dontremindmeagainforthisproject.png)
 

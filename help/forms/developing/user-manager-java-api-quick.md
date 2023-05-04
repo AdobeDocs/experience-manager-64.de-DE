@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
 exl-id: 130b5669-4533-4e88-9a64-bbbd7c68a5ca
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 100%
+source-wordcount: '530'
+ht-degree: 94%
 
 ---
 
 # Schnellstart für User Manager Java-API (SOAP) {#user-manager-java-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Java API-Schnellstart (SOAP) ist für die User Manager-API verfügbar.
 

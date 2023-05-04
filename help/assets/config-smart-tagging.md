@@ -5,27 +5,31 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd65633e85226659df99da1d3834fa18a89de11e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 79%
+source-wordcount: '1340'
+ht-degree: 77%
 
 ---
 
 # Konfigurieren von Asset-Tags mit dem Smart Content Service {#configure-asset-tagging-using-the-smart-content-service}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Sie können [!DNL Adobe Experience Manager] mit dem Smart Content Service mit [!DNL Adobe Developer Console]. Verwenden Sie diese Konfiguration, um von aus auf den Smart Content Service zuzugreifen [!DNL Experience Manager].
 
 >[!NOTE]
 >
->* Smart Content Services ist nicht mehr für neue [!DNL Experience Manager Assets] On-Premise-Kunden. Vorhandene On-Premise-Kunden, für die diese Funktion bereits aktiviert ist, können weiterhin Smart Content Services verwenden.
->* Smart Content Services ist für bestehende verfügbar [!DNL Experience Manager Assets] Managed Services-Kunden, für die diese Funktion bereits aktiviert ist.
->* Neu [!DNL Experience Manager Assets] Managed Services-Kunden können die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services befolgen.
+>* Smart Content Services ist nicht mehr für neue Kunden von [!DNL Experience Manager Assets] On-Premise verfügbar. Bestehende On-Premise-Kunden, die diese Funktion bereits aktiviert haben, können Smart Content Services weiterhin nutzen.
+>* Smart Content Services ist für bestehende Kunden von [!DNL Experience Manager Assets] Managed Services verfügbar, für die diese Funktion bereits aktiviert ist.
+>* Neue Kunden von [!DNL Experience Manager Assets] Managed Services können die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services befolgen.
 
 
-Der Artikel beschreibt die folgenden Hauptaufgaben, die zum Konfigurieren des Smart Content Service erforderlich sind. Am Backend wird die [!DNL Experience Manager] -Server authentifiziert Ihre Dienstanmeldeinformationen mit dem [!DNL Adobe Developer Console] Gateway vor der Weiterleitung Ihrer Anforderung an den Smart Content Service.
+Der Artikel beschreibt die folgenden wichtigen Aufgaben, die zum Konfigurieren des Smart Content Service erforderlich sind. Am Backend wird die [!DNL Experience Manager] -Server authentifiziert Ihre Dienstanmeldeinformationen mit dem [!DNL Adobe Developer Console] Gateway vor der Weiterleitung Ihrer Anforderung an den Smart Content Service.
 
-1. [Erstellen Sie in eine Konfiguration für den Smart Content Service, um einen öffentlichen Schlüssel zu erstellen. ](#obtain-public-certificate)[!DNL Experience Manager] [Erlangen Sie ein öffentliches Zertifikat](#obtain-public-certificate) für die OAuth-Integration.
+1. [Erstellen eines Smart Content Service](#obtain-public-certificate) Konfiguration in [!DNL Experience Manager] , um einen öffentlichen Schlüssel zu generieren. [Erlangen Sie ein öffentliches Zertifikat](#obtain-public-certificate) für die OAuth-Integration.
 
 1. [Erstellen Sie eine Integration in der Adobe Developer Console](#create-adobe-i-o-integration) und laden Sie den generierten öffentlichen Schlüssel hoch.
 
@@ -41,7 +45,7 @@ Bevor Sie den Smart Content Service verwenden, stellen Sie Folgendes sicher, um 
 
 * Es ist ein Adobe ID-Konto mit Administratorrechten für die Organisation vorhanden.
 
-* Der Smart Content ist für Ihre Organisation aktiviert.
+* Der Smart Content Service ist für Ihre Organisation aktiviert.
 
 Um optimierte Smart-Tags zu aktivieren, installieren Sie zusätzlich zu den oben genannten auch die neuesten [Experience Manager Service Pack](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html).
 
@@ -59,11 +63,11 @@ Mit einem öffentlichen Zertifikat können Sie Ihr Profil bei [!DNL Adobe Develo
 
    **[!UICONTROL Service-URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea`oder `apac` als die Regionen, in denen Ihre Experience Manager-Autoreninstanz gehostet wird.
+   Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea` oder `apac` als die Regionen angeben, in denen Ihre Experience Manager-Autoreninstanz gehostet wird.
 
    >[!NOTE]
    >
-   >Wenn der Experience Manager Managed Service vor dem 1. September 2022 bereitgestellt wurde, verwenden Sie die folgende Dienst-URL:
+   >Wenn der Experience Manager Managed Service vor dem 1. September 2022 bereitgestellt wurde, verwenden Sie die folgende Service-URL:
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Autorisierungsserver]**: `https://ims-na1.adobelogin.com`
@@ -92,9 +96,9 @@ Wenn ein Zertifikat abläuft, ist es nicht mehr vertrauenswürdig. Sie können e
 
 1. Melden Sie sich bei Ihrer [!DNL Experience Manager]-Implementierung als Administrator an. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 
-1. Suchen und finden Sie **[!UICONTROL dam-update-service]**-Benutzer und klicken Sie darauf. Klicken Sie auf die Registerkarte **[!UICONTROL Keystore]**.
+1. Suchen und finden Sie **[!UICONTROL dam-update-service]**-Benutzer und klicken Sie darauf. Klicken **[!UICONTROL Keystore]** Registerkarte.
 
-1. Löschen Sie den vorhandenen **[!UICONTROL similaritysearch]**-Keystore mit dem abgelaufenen Zertifikat. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+1. Vorhandene löschen **[!UICONTROL similaritysearch]** Keystore mit dem abgelaufenen Zertifikat. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
    ![Löschen Sie den vorhandenen Eintrag similaritysearch in Keystore, um ein neues Sicherheitszertifikat hinzuzufügen.](assets/smarttags_delete_similaritysearch_keystore.png)
 
@@ -104,7 +108,7 @@ Wenn ein Zertifikat abläuft, ist es nicht mehr vertrauenswürdig. Sie können e
 
 1. Um ein öffentliches Zertifikat herunterzuladen, klicken Sie auf **[!UICONTROL Öffentliches Zertifikat für OAuth-Integration herunterladen]**.
 
-1. Rufen Sie [https://console.adobe.io](https://console.adobe.io) auf und navigieren Sie zu den vorhandenen Smart Content Services auf der Seite **[!UICONTROL Integrationen]**. Laden Sie das neue Zertifikat hoch. Weitere Informationen finden Sie in den Anweisungen unter [Erstellen einer Integration in der Adobe Developer Console](#create-adobe-i-o-integration).
+1. Zugriff [https://console.adobe.io](https://console.adobe.io) und navigieren Sie zu den vorhandenen Smart Content Services auf der **[!UICONTROL Integrationen]** Seite. Laden Sie das neue Zertifikat hoch. Weitere Informationen finden Sie in den Anweisungen unter [Erstellen einer Integration in der Adobe Developer Console](#create-adobe-i-o-integration).
 
 ## Erstellen einer Integration in der Adobe Developer Console {#create-adobe-i-o-integration}
 
@@ -136,7 +140,7 @@ Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL
 
 1. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools > Cloud Service > Ältere Cloud-Services]**, um die [!UICONTROL Cloud Services]-Konsole zu öffnen.
 
-1. Öffnen Sie unter den **[!UICONTROL Smart-Tags für Assets]** die oben erstellte Konfiguration. Klicken Sie auf der Seite mit den Serviceeinstellungen auf **[!UICONTROL Bearbeiten]**.
+1. Unter dem **[!UICONTROL Smart-Tags für Assets]**, öffnen Sie die oben erstellte Konfiguration. Klicken Sie auf der Seite &quot;Diensteinstellungen&quot;auf **[!UICONTROL Bearbeiten]**.
 
 1. Verwenden Sie im Dialogfeld **[!UICONTROL AEM Smart Content Service]** die vorausgefüllten Werte für die Felder **[!UICONTROL Service-URL]** und **[!UICONTROL Autorisierungsserver]**.
 
@@ -157,9 +161,9 @@ Nachdem Sie die Konfiguration abgeschlossen haben, verwenden Sie ein JMX MBean, 
 
 1. Gehen Sie zu **[!UICONTROL Tools > Vorgänge > Web-Konsole]**, um die OSGi-Konsole zu öffnen. Klicken Sie auf **[!UICONTROL Main > JMX]**.
 
-1. Klicken Sie auf **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Die Seite **[!UICONTROL SimilaritySearch Miscellaneous Tasks]** wird geöffnet
+1. Klicken **[!UICONTROL com.day.cq.dam.similaritysearch.internal.impl]**. Die Seite **[!UICONTROL SimilaritySearch Miscellaneous Tasks]** wird geöffnet
 
-1. Klicken Sie auf **[!UICONTROL validateConfigs()]**. Klicken Sie im Dialogfeld **[!UICONTROL Konfigurationen prüfen]** auf **[!UICONTROL Aufrufen]**.
+1. Klicken **[!UICONTROL validateConfigs()]**. Klicken Sie im Dialogfeld **[!UICONTROL Konfigurationen prüfen]** auf **[!UICONTROL Aufrufen]**.
 
    Das Überprüfungsergebnis wird im selben Dialogfeld angezeigt.
 

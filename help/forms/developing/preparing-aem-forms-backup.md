@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: fa2bff05-a3b8-4230-95d6-1fbdc96bac3b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2506'
-ht-degree: 100%
+source-wordcount: '2542'
+ht-degree: 98%
 
 ---
 
 # Vorbereiten von AEM Forms für eine Sicherung {#preparing-aem-forms-for-backup}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Informationen zum Sicherungs- und Wiederherstellungs-Service {#about-the-backup-and-restore-service}
 
@@ -57,7 +61,7 @@ Sie aktivieren den Sicherungsmodus, um Hot-Backups eines Formularservers zu erm�
 * Der Zeitpunkt, zu dem das Sicherungsverfahren abgeschlossen sein soll.
 * Ein Flag, das angibt, ob der permanente Sicherungsmodus ausgeführt werden soll. Dies ist nur nützlich, wenn Sie fortlaufende Sicherungen durchführen.
 
-Bevor Sie Anwendungen zum Aktivieren des Sicherungsmodus schreiben, sollten Sie die Sicherungsverfahren verstehen, die verwendet werden, nachdem der Formularserver in den Sicherungsmodus versetzt wurde. Weitere Informationen dazu, was bei der Durchführung von Sicherungen für AEM Forms zu beachten ist, finden Sie in der [Hilfe zur Administration](https://www.adobe.com/go/learn_aemforms_admin_63).
+Bevor Sie Anwendungen zum Aktivieren des Sicherungsmodus schreiben, sollten Sie die Sicherungsverfahren verstehen, die verwendet werden, nachdem der Formularserver in den Sicherungsmodus versetzt wurde. Weitere Informationen dazu, was bei der Durchführung von Sicherungen für AEM Forms zu beachten ist, finden Sie in der [Hilfe zur Administration](https://www.adobe.com/go/learn_aemforms_admin_63_de).
 
 >[!NOTE]
 >
@@ -86,7 +90,7 @@ Um den Backup-Modus programmgesteuert zu deaktivieren, erstellen Sie ein BackupS
 
 **Legen Sie eine eindeutige Beschriftung fest, bestimmen Sie die Zeitdauer für die Durchführung des Backups und entscheiden Sie, ob der kontinuierliche Backup-Modus ausgeführt werden soll.**
 
-Bevor Sie in den Backup-Modus wechseln, sollten Sie sich für eine eindeutige Beschriftung entscheiden, die Zeitdauer festlegen, die Sie für die Durchführung des Backups zuweisen möchten, und entscheiden, ob der Formular-Server im Backup-Modus verbleiben soll. Diese wichtigen Überlegungen sollten unbedingt in die von Ihrem Unternehmen eingerichteten Backup-Verfahren integriert werden. (Siehe [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Bevor Sie in den Backup-Modus wechseln, sollten Sie sich für eine eindeutige Beschriftung entscheiden, die Zeitdauer festlegen, die Sie für die Durchführung des Backups zuweisen möchten, und entscheiden, ob der Formular-Server im Backup-Modus verbleiben soll. Diese wichtigen Überlegungen sollten unbedingt in die von Ihrem Unternehmen eingerichteten Backup-Verfahren integriert werden. (Siehe [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).)
 
 **Backup-Modus aktivieren**
 
@@ -182,7 +186,7 @@ So wechseln Sie mithilfe des von der Backup- und Wiederherstellungs-Service-API 
 
 Sie verlassen den Backup-Modus, damit der Formular-Server die Bereinigung der Dateien aus dem globalen Dokumentenspeicher (GDS) auf dem Formular-Server fortsetzt.
 
-Bevor Sie Programme schreiben, um in den Modus „Verlassen“ zu wechseln, sollten Sie die Backup-Verfahren verstehen, die mit AEM Forms verwendet werden. Weitere Informationen dazu, was bei der Durchführung von Backups für AEM Forms zu beachten ist, finden Sie unter [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63).
+Bevor Sie Programme schreiben, um in den Modus „Verlassen“ zu wechseln, sollten Sie die Backup-Verfahren verstehen, die mit AEM Forms verwendet werden. Weitere Informationen dazu, was bei der Durchführung von Backups für AEM Forms zu beachten ist, finden Sie unter [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).
 
 >[!NOTE]
 >

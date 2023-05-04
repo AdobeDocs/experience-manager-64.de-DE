@@ -7,14 +7,18 @@ uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: dcd67a1e-b20f-4ed4-b154-dd250cbd8320
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '471'
+ht-degree: 89%
 
 ---
 
 # Handhabung von DSGVO-bezogenen Anfragen in AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!IMPORTANT]
 >
@@ -100,7 +104,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. Löschen Sie die Profilknoten und die ihnen zugehörigen untergeordneten Elemente. Abhängig von der AEM-Version liegen die Profilknoten in zwei unterschiedlichen Formaten vor:
+1. Löschen Sie die Profilknoten und alle untergeordneten Elemente. Die Profilknoten haben je nach AEM zwei Formate:
 
    1. Das private Standardprofil unter `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]` für neue Profile, die mit AEM 6.4 erstellt werden

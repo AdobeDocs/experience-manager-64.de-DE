@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: a5b5e40e-2457-45fe-9632-baf5008fe8bf
 exl-id: a0847b2b-d508-474d-a155-8ee891c566fa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 2%
+source-wordcount: '1023'
+ht-degree: 3%
 
 ---
 
 # Single Page Applications (SPA){#single-page-applications}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 [Einzelseiten-Apps](https://en.wikipedia.org/wiki/Single-page_application) (SPA) eine kritische Masse erreicht haben, die weithin als das effektivste Muster für die Erstellung nahtloser Erlebnisse mit Webtechnologie angesehen wird. Durch Befolgen eines SPA können Sie eine Anwendung erstellen, die eine identische Leistung wie eine Desktop- oder mobile Anwendung erbringt, aber aufgrund ihrer Grundlage in offenen Webstandards eine Vielzahl von Geräteplattformen und Formfaktoren erreicht.
 

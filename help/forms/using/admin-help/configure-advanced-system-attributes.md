@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Systemattribute konfigurieren
 seo-title: Configure advanced system attributes
-description: Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „Erweiterte Systemattribute konfigurieren“ ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen.
+description: Auf der Seite "Erweiterte Systemattribute konfigurieren"können Sie bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen.
 seo-description: Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file.
 uuid: 6bcfbaa9-f492-46aa-97d2-00fc3e67d0d7
 contentOwner: admin
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 exl-id: f47c543d-6136-482b-915f-b4e13f83fa69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 100%
+source-wordcount: '511'
+ht-degree: 83%
 
 ---
 
 # Erweiterte Systemattribute konfigurieren {#configure-advanced-system-attributes}
 
-Sie können bestimmte Einstellungen in der Konfigurationsdatei auf der Seite „Erweiterte Systemattribute konfigurieren“ ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen. (Siehe [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Auf der Seite &quot;Erweiterte Systemattribute konfigurieren&quot;können Sie bestimmte Einstellungen in der Konfigurationsdatei ändern, ohne die Datei exportieren, bearbeiten und importieren zu müssen. (Siehe [Konfigurationsdatei importieren und exportieren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).
 
 1. Klicken Sie in der Administration-Console auf **[!UICONTROL „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“]**.
 1. (Optional) Ändern Sie folgende Sitzungsattribute:

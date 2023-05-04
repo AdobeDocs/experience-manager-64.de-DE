@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 exl-id: 17105abe-177b-4e73-bb4f-22b208c436ef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1189'
 ht-degree: 2%
 
 ---
 
 # Übersicht über den Speicheranbieter {#storage-resource-provider-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einführung {#introduction}
 
@@ -49,7 +53,7 @@ Dieser Standard definiert ein Datenmodell und eine Anwendungsprogrammierschnitts
 Eine Implementierung von JCR ist das AEM Repository, OAK.
 
 **Apache Jackrabbit Oak (OAK)**
-[OAK](../../help/sites-deploying/platform.md) ist eine Implementierung von JCR 2.0, einem Datenspeichersystem, das speziell für inhaltsorientierte Anwendungen entwickelt wurde. Es handelt sich um eine hierarchische Datenbank, die für unstrukturierte und teilstrukturierte Daten entwickelt wurde. Das Repository speichert nicht nur die benutzerseitigen Inhalte, sondern auch alle durch die Anwendung verwendeten Codes, Vorlagen und internen Daten. Die Benutzeroberfläche für den Zugriff auf Inhalte lautet [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+[OAK](../../help/sites-deploying/platform.md) ist eine Implementierung von JCR 2.0, einem Datenspeichersystem, das speziell für inhaltsorientierte Anwendungen entwickelt wurde. Es handelt sich um eine hierarchische Datenbank, die für unstrukturierte und teilstrukturierte Daten entwickelt wurde. Das Repository speichert nicht nur den für die Benutzenden sichtbaren Inhalt, sondern auch den gesamten Code, die Vorlagen und die internen Daten, die von der Anwendung verwendet werden. Die Benutzeroberfläche für den Zugriff auf Inhalte lautet [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 Sowohl JCR als auch OAK werden normalerweise verwendet, um auf das AEM Repository zu verweisen.
 

@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 61%
+source-wordcount: '710'
+ht-degree: 52%
 
 ---
 
 # Aktivieren von Assets Insights über DTM {#enabling-asset-insights-through-dtm}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Adobe Dynamic Tag Management ist ein Tool, mit dem Sie Ihre digitalen Marketing-Tools aktivieren können. Es wird Adobe Analytics-Kunden kostenlos bereitgestellt. Sie können entweder Ihren Tracking-Code anpassen, damit CMS-Lösungen von Drittanbietern Assets Insights nutzen können, oder Sie können DTM verwenden, um Assets Insights-Tags einzufügen. Insights werden nur für Bilder unterstützt und bereitgestellt.
 
@@ -27,7 +31,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
 
    Das API-Token sollte verfügbar sein, sobald Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) und Besuch **[!UICONTROL Kontoeinstellungen]** über das Symbol Profil . Dieser Schritt ist aus der Sicht von Assets Insights nicht erforderlich, da die Integration von [!DNL Experience Manager Sites] mit Assets Insights ist noch in Arbeit.
 
-1. Melden Sie sich bei [https://dtm.adobe.com](https://dtm.adobe.com/) an und wählen Sie ggf. ein Unternehmen aus.
+1. Anmelden bei [https://dtm.adobe.com](https://dtm.adobe.com/)und wählen Sie ggf. ein Unternehmen aus.
 1. Erstellen/Öffnen einer vorhandenen Webeigenschaft
 
    * Wählen Sie die **[!UICONTROL Webeigenschaften]** und tippen/klicken Sie dann auf **[!UICONTROL Eigenschaft hinzufügen]**.
@@ -54,7 +58,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
    >* Bei AEM gehosteten Seitenverfolgung sollte die Quelle mit dem Hostnamen der Dispatcher-Instanz auf eine Veröffentlichungsinstanz verweisen.
 
 
-1. Öffnen Sie [https://dtm.adobe.com](https://dtm.adobe.com). Klicken Sie in der Web-Eigenschaft auf Übersicht und dann auf Tool hinzufügen oder öffnen Sie ein vorhandenes Adobe Analytics-Tool. Beim Erstellen des Tools können Sie die Konfigurationsmethode auf Automatisch festlegen.
+1. Öffnen [https://dtm.adobe.com](https://dtm.adobe.com). Klicken Sie in der Web-Eigenschaft auf Übersicht und dann auf Tool hinzufügen oder öffnen Sie ein vorhandenes Adobe Analytics-Tool. Beim Erstellen des Tools können Sie die Konfigurationsmethode auf Automatisch festlegen.
 
    ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -112,7 +116,7 @@ Führen Sie diese Schritte durch, um Asset Insights über DTM zu aktivieren:
 
       Die restlichen Argumente entsprechen dem, was in der Statistiken-Konfigurationsseite konfiguriert ist (**[!UICONTROL Tools > Assets > Statistiken-Konfiguration]**).
 
-   * Das AppMeasurement-Objekt wird abgerufen, indem `satelliteLib` für alle verfügbaren SiteCatalyst-Engines abgefragt wird. Wenn mehrere Tags konfiguriert sind, ändern Sie den Index des Array-Selektors entsprechend. Einträge im Array werden gemäß der SiteCatalyst-Tools geordnet, die in der DTM-Benutzeroberfläche verfügbar sind.
+   * Das AppMeasurement-Objekt wird abgerufen, indem `satelliteLib` für alle verfügbaren SiteCatalyst-Engines abgefragt wird. Wenn mehrere Tags konfiguriert sind, ändern Sie den Index des Array-Selektors entsprechend. Einträge im Array werden gemäß den SiteCatalyst-Tools sortiert, die in der DTM-Oberfläche verfügbar sind.
 
 1. Speichern und schließen Sie das Code-Editor-Fenster und speichern Sie dann die Änderungen in der Tool-Konfiguration.
 1. Genehmigen Sie auf der Registerkarte **[!UICONTROL Genehmigungen]** die beiden ausstehenden Genehmigungen. Das DTM-Tag ist für das Einfügen auf Ihrer Webseite bereit. Weitere Informationen zum Einfügen von DTM-Tags in Webseiten finden Sie auf der archivierten Seite zu [Integrieren von DTM in benutzerdefinierten Seitenvorlagen](https://web.archive.org/web/20180816221834/https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template).

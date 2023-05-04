@@ -1,7 +1,7 @@
 ---
 title: Responsives Design für Web-Seiten
 seo-title: Responsive design for web pages
-description: Responsives Design ermöglicht die effektive Darstellung derselben Webseiten auf verschiedenen Geräten in verschiedenen Ausrichtungen.
+description: Responsives Design ermöglicht die effektive Darstellung derselben Seiten auf mehreren Geräten in verschiedenen Ausrichtungen
 seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
@@ -11,34 +11,38 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: 5f945556-1ba0-49db-b2f6-395312c40b92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5319'
-ht-degree: 99%
+source-wordcount: '5355'
+ht-degree: 52%
 
 ---
 
-# Responsives Design für Webseiten{#responsive-design-for-web-pages}
+# Responsives Design für Web-Seiten{#responsive-design-for-web-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten erforderlich ist (z. B. _React_). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Gestalten Sie Ihre Webseiten so, dass sie sich dem Client-Darstellungsfeld anpassen, auf dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Web-Seiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Grafik zeigt eine Reihe von Möglichkeiten, wie eine Seite auf Änderungen der Fenstergröße reagieren kann:
+Gestalten Sie Ihre Webseiten so, dass sie sich an den Client-Viewport anpassen, in dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Web-Seiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Abbildung zeigt einige Möglichkeiten, wie eine Seite auf Änderungen der Viewport-Größe reagieren kann:
 
-* Layout: Verwenden Sie einspaltige Layouts für kleinere Fenstergrößen und mehrspaltige Layouts für größere Fenstergrößen.
-* Textgröße: Verwenden Sie für größere Fenstergrößen größere Schriftgrößen (wo passend, z. B. Überschriften).
-* Inhalt: Zeigen Sie auf kleineren Geräten nur die wichtigsten Inhalte an.
-* Navigation: Gerätespezifische Tools werden für den Zugriff auf andere Seiten zur Verfügung gestellt.
+* Layout: Verwenden Sie einspaltige Layouts für kleinere Viewports und mehrspaltige Layouts für größere Viewports.
+* Textgröße: Verwenden Sie in größeren Viewports eine größere Textgröße (falls zutreffend, z. B. Überschriften).
+* Inhalt: Nur die wichtigsten Inhalte bei der Anzeige auf kleineren Geräten einschließen.
+* Navigation: Gerätespezifische Tools werden für den Zugriff auf andere Seiten bereitgestellt.
 * Bilder: Stellen Sie anhand der Fenstergröße dem Client-Darstellungsfeld entsprechende Bilddarstellungen zur Verfügung.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Entwickeln Sie Adobe Experience Manager (AEM)-Anwendungen, die HTML5-Seiten generieren, die sich an verschiedene Fenstergrößen und Ausrichtungen anpassen. Beispielsweise entsprechen die folgenden Darstellungsfeldbreiten unterschiedlichen Gerätetypen und Ausrichtungen:
+Entwickeln Sie Adobe Experience Manager-Anwendungen (AEM), die HTML5-Seiten generieren, die sich an verschiedene Fenstergrößen und Ausrichtungen anpassen. Beispielsweise entsprechen die folgenden Darstellungsfeldbreiten verschiedenen Gerätetypen und -ausrichtungen
 
-* Maximale Breite von 480 Pixel (Smartphone, Hochformat)
-* Maximale Breite von 767 Pixel (Smartphone, Querformat)
-* Breite zwischen 768 Pixel und 979 Pixel (Tablet, Hochformat)
+* Maximale Breite von 480 Pixel (Telefon, Hochformat)
+* Maximale Breite von 767 Pixel (Telefon, Querformat)
+* Breite zwischen 768 Pixel und 979 Pixel (Tablet, Hochformat)
 * Breite zwischen 980 Pixel und 1199 Pixel (Tablet, Querformat)
 * Breite von 1200 Pixel oder mehr (Desktop)
 
@@ -52,7 +56,7 @@ Nutzen Sie beim Design den **[!UICONTROL Sidekick]**, um eine Vorschau Ihrer Sei
 
 ## Vor der Entwicklung {#before-you-develop}
 
-Vor der Entwicklung eines AEM-Programms, das Ihre Web-Seiten unterstützt, müssen Sie einige Design-Entscheidungen treffen. Beispielsweise benötigen Sie die folgenden Informationen:
+Vor der Entwicklung eines AEM-Programms, das Ihre Web-Seiten unterstützt, müssen Sie einige Design-Entscheidungen treffen. Sie benötigen beispielsweise die folgenden Informationen:
 
 * Auf welche Geräte der Entwicklungsprozess ausgerichtet ist.
 * Die Größe der Zieldarstellungsfelder.
@@ -62,24 +66,24 @@ Vor der Entwicklung eines AEM-Programms, das Ihre Web-Seiten unterstützt, müss
 
 Die typische AEM-Programmstruktur unterstützt alle Implementierungen responsiven Designs:
 
-* Seitenkomponenten befinden sich unter /apps/*application_name*/components.
-* Vorlagen befinden sich unter /apps/*application_name*/templates.
-* Designs befinden sich unter /etc/designs.
+* Seitenkomponenten befinden sich unter /apps/*application_name*/components
+* Vorlagen befinden sich unter /apps/*application_name*/templates
+* Designs befinden sich unter /etc/designs
 
 ## Verwenden von Medienabfragen {#using-media-queries}
 
-Medienabfragen ermöglichen die selektive Nutzung von CSS-Stilen für das Seiten-Rendering. AEM-Entwicklungs-Tools und -funktionen ermöglichen Ihnen die effektive und effiziente Implementierung von Medienabfragen in Programmen.
+Medienabfragen ermöglichen die selektive Verwendung von CSS-Stilen für das Seiten-Rendering. AEM-Entwicklungs-Tools und -funktionen ermöglichen Ihnen die effektive und effiziente Implementierung von Medienabfragen in Programmen.
 
 Die W3C-Gruppe stellt die [Medienabfragen](https://www.w3.org/TR/css3-mediaqueries/)-Empfehlung zur Verfügung, die diese CSS3-Funktion und die Syntax beschreibt.
 
 ### Erstellen der CSS-Datei {#creating-the-css-file}
 
-Definieren Sie in der CSS-Datei Medienabfragen anhand der Eigenschaften der Zielgeräte. Die folgende Implementierungsstrategie kann für die Verwaltung der Stile der verschiedenen Medienabfragen verwendet werden:
+Definieren Sie in Ihrer CSS-Datei Medienabfragen anhand der Eigenschaften der Geräte, die Sie als Ziel auswählen. Die folgende Implementierungsstrategie kann für die Verwaltung der Stile der verschiedenen Medienabfragen verwendet werden:
 
-* Verwenden Sie einen ClientLibraryFolder, um das CSS zu definieren, das zusammengestellt wird, wenn die Seite gerendert wird.
-* Definieren Sie die Medienabfragen und die zugehörigen Stile in separaten CSS-Dateien. Dabei ist es hilfreich, Dateinamen zu verwenden, die die Geräteeigenschaften der Medienabfrage darstellen.
+* Verwenden Sie einen ClientLibraryFolder, um das CSS zu definieren, das beim Rendern der Seite assembliert wird.
+* Definieren Sie die Medienabfragen und die zugehörigen Stile in separaten CSS-Dateien. Es ist nützlich, Dateinamen zu verwenden, die die Gerätefunktionen der Medienabfrage darstellen.
 * Definieren Sie Stile, die alle Geräte gemeinsam haben, in einer separaten CSS-Datei.
-* Sortieren Sie in der Datei css.txt des ClientLibraryFolder die Liste der CSS-Dateien, wie es in der zusammengestellten CSS-Datei erforderlich ist.
+* Ordnen Sie in der Datei css.txt des ClientLibraryFolder die CSS-Listendateien wie in der assemblierten CSS-Datei erforderlich an.
 
 Das Beispiel „We.Retail Media“ verwendet diese Strategie zur Definition von Stilen beim Website-Design. Die von We.Retail verwendete CSS-Datei befindet sich unter `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
 
@@ -130,7 +134,7 @@ In der folgenden Tabelle werden die Dateien im untergeordneten css-Ordner aufgef
  </tbody> 
 </table>
 
-Die Datei „css.txt“ im Ordner `/etc/designs/weretail/clientlibs` führt die CSS-Dateien auf, die der Client-Bibliotheksordner enthält. Die Reihenfolge der Dateien gibt die Priorität der Styles vor. Je kleiner das Gerät, desto spezifischer sind Styles.
+Die Datei „css.txt“ im Ordner `/etc/designs/weretail/clientlibs` führt die CSS-Dateien auf, die der Client-Bibliotheksordner enthält. Die Reihenfolge der Dateien implementiert Stilpriorität. Stile sind spezifischerer, da die Gerätegröße sinkt.
 
 `#base=css`
 
@@ -149,9 +153,9 @@ responsive-1200px.css
 
 **Tipp**: Anhand aussagekräftiger Namen können Sie die jeweilige Darstellungsfeldgröße leicht identifizieren.
 
-### Nutzung von Medienabfragen mit AEM-Seiten {#using-media-queries-with-aem-pages}
+### Verwenden von Medienabfragen mit AEM Seiten {#using-media-queries-with-aem-pages}
 
-Binden Sie den Client-Bibliotheksordner in das JSP-Skript Ihrer Seitenkomponente ein, um die CSS-Datei zu erzeugen, die die Medienabfragen enthält, und auf die Datei zu verweisen.
+Schließen Sie den Client-Bibliotheksordner in das JSP-Skript Ihrer Seitenkomponente ein, um die CSS-Datei zu generieren, die die Medienabfragen enthält, und um auf die Datei zu verweisen.
 
 ```xml
 <ui:includeClientLib categories="apps.weretail.all"/>
@@ -226,25 +230,25 @@ Beispielsweise ist die Stammseite der Geometrixx Media-Website `/content/geomet
 * Typ: `String[]`
 * Wert: `/etc/mobile/groups/responsive`
 
-Verwenden Sie die Tools-Konsole, um [Gerätegruppen zu erstellen und zu bearbeiten](/help/sites-developing/groupfilters.md).
+Verwenden Sie die Tools-Konsole, um [Erstellen und Bearbeiten von Gerätegruppen](/help/sites-developing/groupfilters.md).
 
 >[!NOTE]
 >
->Bearbeiten Sie Gerätegruppen, die Sie für responsives Design verwenden, und wählen Sie auf der Registerkarte „Allgemein“ die Option „Emulator deaktivieren“ aus. Diese Option verhindert, dass das Emulatorkarussel angezeigt wird, das für responsives Design nicht relevant ist.
+>Für Gerätegruppen, die Sie für responsives Design verwenden, bearbeiten Sie die Gerätegruppe und wählen Sie auf der Registerkarte Allgemein die Option Emulator deaktivieren aus. Diese Option verhindert, dass das Emulator-Karussell angezeigt wird, was für responsives Design nicht relevant ist.
 
 ## Verwenden adaptiver Bilder {#using-adaptive-images}
 
-Mithilfe von Medienabfragen können Sie eine Bildressource auswählen, die auf der Seite angezeigt wird. Allerdings werden alle Ressourcen, die eine Medienabfrage verwenden, um ihre Nutzung mit Bedingungen zu belegen, auf den Client heruntergeladen. Die Medienabfrage bestimmt lediglich, ob die heruntergeladene Ressource angezeigt wird.
+Sie können Medienabfragen verwenden, um eine Bildressource auszuwählen, die auf der Seite angezeigt werden soll. Jede Ressource, die eine Medienabfrage verwendet, um ihre Verwendung an Bedingungen zu knüpfen, wird jedoch zum Client heruntergeladen. Die Medienabfrage bestimmt lediglich, ob die heruntergeladene Ressource angezeigt wird.
 
-Bei großen Ressourcen (z. B. Bildern) stellt das Herunterladen aller Ressourcen keine effiziente Nutzung der Client-Datenleitung dar. Verwenden Sie JavaScript zum Initiieren der Ressourcenanfrage, nachdem die Medienabfragen die Auswahl durchgeführt haben, um Ressourcen selektiv herunterzuladen.
+Bei großen Ressourcen wie Bildern ist das Herunterladen aller Ressourcen keine effiziente Nutzung der Datenpipeline des Kunden. Um Ressourcen selektiv herunterzuladen, verwenden Sie JavaScript, um die Ressourcenanforderung zu starten, nachdem die Medienabfragen die Auswahl durchgeführt haben.
 
 Die folgende Strategie lädt eine einzelne Ressource, die mithilfe von Medienabfragen ausgewählt wird:
 
-1. Fügen Sie für jede Version der Ressource ein DIV-Element hinzu. Schließen Sie den URI der Ressource als Wert eines Attributwerts mit ein. Der Browser interpretiert das Attribut nicht als Ressource.
+1. Fügen Sie für jede Version der Ressource ein DIV-Element hinzu. Schließen Sie den URI der Ressource als Wert eines Attributwerts ein. Das Attribut wird vom Browser nicht als Ressource interpretiert.
 1. Fügen Sie jedem DIV-Element eine Medienabfrage hinzu, die für die Ressource geeignet ist.
-1. Wenn das Dokument lädt oder die Größe des Fensters geändert wird, prüft JavaScript-Code die Medienabfragen aller DIV-Elemente.
-1. Anhand der Abfrageergebnisse entscheiden Sie, welche Ressourcen Sie einschließen.
-1. Fügen Sie in dem DOM, das auf die Ressource verweist, ein HTML-Element ein.
+1. Wenn das Dokument geladen wird oder die Größe des Fensters geändert wird, testet der JavaScript-Code die Medienabfrage jedes DIV-Elements.
+1. Bestimmen Sie anhand der Ergebnisse der Abfragen, welche Ressource eingeschlossen werden soll.
+1. Fügen Sie ein HTML-Element in das DOM ein, das auf die Ressource verweist.
 
 ### Prüfen von Medienabfragen mithilfe von JavaScript {#evaluating-media-queries-using-javascript}
 
@@ -287,11 +291,11 @@ Auf einer AEM-Seite ist der Wert des Attributs `data-src` der Pfad zu einer Ress
 
 ### Implementieren von adaptiven Bildern in AEM {#implementing-adaptive-images-in-aem}
 
-Sie müssen die erforderlichen JavaScript-Bibliotheken hinzufügen und auf Ihren Seiten das erforderliche HTML-Markup einfügen, um in einer AEM-Anwendung adaptive Bilder zu implementieren.
+Um adaptive Bilder in Ihre AEM zu implementieren, müssen Sie die erforderlichen JavaScript-Bibliotheken hinzufügen und das erforderliche HTML-Markup in Ihre Seiten einfügen.
 
 **Bibliotheken**
 
-Beziehen Sie die folgenden JavaScript-Bibliotheken und fügen Sie sie in einen Client-Bibliotheksordner ein:
+Rufen Sie die folgenden JavaScript-Bibliotheken ab und fügen Sie sie in einen Client-Bibliotheksordner ein:
 
 * [matchMedia.js](https://github.com/paulirish/matchMedia.js) (für Browser, die die MediaQueryList-Benutzeroberfläche nicht implementieren)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
@@ -304,7 +308,7 @@ Beziehen Sie die folgenden JavaScript-Bibliotheken und fügen Sie sie in einen C
 
 Erstellen Sie eine Komponente, die die erforderlichen div-Elemente generiert, die der picturefill.js-Code erwartet. Auf einer AEM-Seite ist der Wert des Attributs „data-src“ der Pfad zu einer Ressource im Repository. Beispielsweise kann eine Seitenkomponente die Medienabfragen und die zugeordneten Pfade für Bilddarstellungen in DAM fest programmieren. Alternativ können Sie eine benutzerdefinierte Bildkomponente erstellen, die es Autoren ermöglicht, Bilddarstellungen auszuwählen oder Laufzeit-Render-Optionen anzugeben.
 
-Im folgenden HTML-Codebeispiel wird aus 2 DAM-Darstellungen desselben Bilds ausgewählt.
+Im folgenden HTML-Beispiel werden zwei DAM-Ausgabeformate desselben Bildes ausgewählt.
 
 ```xml
 <div data-picture>
@@ -316,7 +320,7 @@ Im folgenden HTML-Codebeispiel wird aus 2 DAM-Darstellungen desselben Bilds aus
 
 >[!NOTE]
 >
->Die Foundation-Komponente „Adaptive Image“ implementiert adaptive Bilder:
+>Die Foundation-Komponente für adaptive Bilder implementiert adaptive Bilder:
 >
 >* Client-Bibliotheksordner: `/libs/foundation/components/adaptiveimage/clientlibs`
 >* Skript, das den HTML-Code generiert: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
@@ -325,12 +329,12 @@ Im folgenden HTML-Codebeispiel wird aus 2 DAM-Darstellungen desselben Bilds aus
 
 ### Grundlegendes zum Bild-Rendering in AEM {#understanding-image-rendering-in-aem}
 
-Sie müssen die standardmäßige AEM-Implementierung des Renderings für statische Bilder verstehen, um das Bild-Rendering anzupassen. AEM stellt die Bildkomponente und ein Bild-Render-Servlet zur Verfügung, die zusammenarbeiten, um Bilder für Webseiten zu rendern. Die folgende Ereignisabfolge tritt auf, wenn die Bildkomponente im Absatzsystem der Seite enthalten ist:
+Um das Bild-Rendering anzupassen, sollten Sie die standardmäßige AEM Implementierung des statischen Bild-Renderings kennen. AEM stellt die Bildkomponente und ein Image-Rendering-Servlet bereit, das zusammenarbeitet, um Bilder für Webseiten zu rendern. Die folgende Ereignisabfolge tritt auf, wenn die Bildkomponente im Absatzsystem der Seite enthalten ist:
 
-1. Bearbeiten: Autoren bearbeiten die Bildkomponente so, dass die Bilddatei angegeben wird, die in einer HTML-Seite enthalten sein soll. Der Dateipfad wird als Eigenschaftswert des Bildkomponentenknotens gespeichert.
-1. Seitenanforderung: Das JSP der Seitenkomponente generiert den HTML-Code. Das JSP der Bildkomponente generiert ein img-Element und fügt es auf der Seite ein.
-1. Bildanforderung: Der Webbrowser lädt die Seite und fordert das Bild anhand des src-Attributs des img-Elements an.
-1. Bild-Rendering: Das Servlet für das Bild-Rendering gibt das Bild an den Webbrowser zurück.
+1. Authoring: Autoren bearbeiten die Bildkomponente, um die Bilddatei anzugeben, die in eine HTML-Seite aufgenommen werden soll. Der Dateipfad wird als Eigenschaftswert des Komponentenknotens Bild gespeichert.
+1. Seitenanforderung: Die JSP der Seitenkomponente generiert den HTML-Code. Die JSP der Bildkomponente generiert und fügt der Seite ein img -Element hinzu.
+1. Bildanforderung: Der Webbrowser lädt die Seite und fordert das Bild gemäß dem src-Attribut des img-Elements an.
+1. Bild-Rendering: Das Image-Rendering-Servlet gibt das Bild an den Webbrowser zurück.
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
@@ -338,25 +342,25 @@ Beispielsweise erzeugt das JSP der Bildkomponente das folgende HTML-Element:
 
 `<img title="My Image" alt="My Image" class="cq-dd-image" src="/content/mywebsite/en/_jcr_content/par/image_0.img.jpg/1358372073597.jpg">`
 
-Wenn der Browser die Seite lädt, fordert er das Bild an und nutzt dazu den Wert des src-Attributs als URL. Sling zerlegt die URL:
+Wenn der Browser die Seite lädt, fordert er das Bild mit dem Wert des src-Attributs als URL an. Sling dekomprimiert die URL:
 
 * Ressource: `/content/mywebsite/en/_jcr_content/par/image_0`
 * Dateierweiterung: `.jpg`
 * Selektor: `img`
 * Suffix: `1358372073597.jpg`
 
-Der Knoten `image_0` hat einen `jcr:resourceType`-Wert von `foundation/components/image`, der einen `sling:resourceSuperType`-Wert von `foundation/components/parbase` hat. Die parbase-Komponente umfasst das Skript img.GET.java, das mit dem Selektor und der Dateierweiterung der Anfrage-URL übereinstimmt. CQ verwendet dieses Skript (Servlet), um das Bild zu rendern.
+Der Knoten `image_0` hat einen `jcr:resourceType`-Wert von `foundation/components/image`, der einen `sling:resourceSuperType`-Wert von `foundation/components/parbase` hat. Die parbase-Komponente enthält das Skript img.GET.java , das mit dem Selektor und der Dateinamenerweiterung der Anfrage-URL übereinstimmt. CQ verwendet dieses Skript (Servlet) zum Rendern des Bildes.
 
 Um den Quellcode des Skripts anzuzeigen, öffnen Sie mithilfe der CRXDE Lite die `/libs/foundation/components/parbase/img.GET.java`\
 file.
 
 ## Skalieren von Bildern für die aktuelle Darstellungsfeldgröße {#scaling-images-for-the-current-viewport-size}
 
-Skalieren Sie Bilder zur Laufzeit entsprechend den Eigenschaften des Client-Darstellungsfeldes, um Bilder zur Verfügung zu stellen, die den Prinzipien des responsiven Designs entsprechen. Verwenden Sie dasselbe Designmuster wie für das Rendering statischer Bilder und verwenden Sie ein Servlet und eine Bearbeitungskomponente.
+Skalieren Sie Bilder zur Laufzeit entsprechend den Eigenschaften des Client-Viewports, um Bilder bereitzustellen, die den Prinzipien des responsiven Designs entsprechen. Verwenden Sie dasselbe Designmuster wie das statische Bild-Rendering, indem Sie ein Servlet und eine Authoring-Komponente verwenden.
 
-Die Komponente muss die folgenden Aufgaben durchführen:
+Die Komponente muss die folgenden Aufgaben ausführen:
 
-* Speichern des Pfads und der gewünschten Abmessungen der Bildressource als Eigenschaftswerte
+* Speichern Sie den Pfad und die gewünschten Dimensionen der Bildressource als Eigenschaftswerte.
 * Generieren von `div`-Elementen, die Medienselektoren und Service-Aufrufe für das Rendering des Bildes umfassen
 
 >[!NOTE]
@@ -365,21 +369,21 @@ Die Komponente muss die folgenden Aufgaben durchführen:
 
 Das Servlet, das die Bildanforderung verarbeitet, muss die folgenden Aufgaben ausführen:
 
-* Abrufen des Pfads und der Abmessungen des Bilds aus den Komponenteneigenschaften
-* Skalieren des Bilds gemäß der Eigenschaften und Zurückgeben des Bilds
+* Rufen Sie den Pfad und die Abmessungen des Bildes aus den Komponenteneigenschaften ab.
+* Skalieren Sie das Bild entsprechend den Eigenschaften und geben Sie das Bild zurück.
 
 **Verfügbare Lösungen**
 
 AEM installiert die folgenden Implementierungen, die Sie verwenden oder erweitern können.
 
-* Die Foundation-Komponente für adaptive Bilder, die Medienabfragen generiert, und HTTP-Anfragen an „Adaptive Image Component Servlet“ sendet, das die Bilder skaliert.
-* Das Paket „Geometrixx Commons“ installiert die Image Reference Modification Servlet-Beispiel-Servlets, die die Bildauflösung verändern.
+* Die Foundation-Komponente für adaptive Bilder, die Medienabfragen generiert, und HTTP-Anforderungen an das Servlet für adaptive Bildkomponenten, das die Bilder skaliert.
+* Das Geometrixx Commons-Paket installiert die Beispiel-Servlets für das Image Reference Modification Servlet, die die Bildauflösung ändern.
 
 ### Grundlegendes zur Komponente für adaptive Bilder {#understanding-the-adaptive-image-component}
 
-Die Komponente für adaptive Bilder generiert Aufrufe an „Adaptive Image Component Servlet“ zum Rendern eines Bildes, dessen Größe an den Gerätebildschirm angepasst ist. Die Komponente enthält die folgenden Ressourcen:
+Die Komponente für adaptive Bilder generiert Aufrufe an „Adaptive Image Component Servlet“ zum Rendern eines Bildes, dessen Größe an den Gerätebildschirm angepasst ist. Die Komponente umfasst die folgenden Ressourcen:
 
-* JSP: Fügt div-Elemente hinzu, die Medienabfragen mit Aufrufen von „Adaptive Image Component Servlet“ verknüpfen.
+* JSP: Fügt div -Elemente hinzu, die Medienabfragen mit -Aufrufen verknüpfen, um das Servlet der adaptiven Bildkomponente zu erhalten.
 * Client-Bibliotheken: Der Ordner „clientlibs“ ist ein `cq:ClientLibraryFolder`, der die Polyfill-JavaScript-Bibliothek „matchMedia“ und eine angepasste JavaScript-Bibliothek „Picturefill“ umfasst.
 * Dialogfeld bearbeiten: Der Knoten `cq:editConfig` überschreibt die CQ-Foundation-Bildkomponente, damit das Drop-Ziel anstelle einer Foundation-Bildkomponente eine Komponente für adaptive Bilder erstellt.
 
@@ -422,15 +426,15 @@ Der folgende HTML-Code ist ein Beispiel für die `div`-Elemente, die das JSP gen
 
 #### Ändern der Bildgrößenselektoren {#changing-the-image-size-selectors}
 
-Falls Sie die adaptive Bildkomponente anpassen und die Breitenselektoren ändern, müssen Sie auch „Adaptive Image Component Servlet“ so konfigurieren, dass es die Breiten unterstützt.
+Wenn Sie die Adaptive Image-Komponente anpassen und die Breitenselektoren ändern, müssen Sie auch das Adaptive Image Component Servlet konfigurieren, um die Breiten zu unterstützen.
 
-### Einblick in „Adaptive Image Component Servlet“ {#understanding-the-adaptive-image-component-servlet}
+### Das Servlet der Adaptive Image Component {#understanding-the-adaptive-image-component-servlet}
 
 „Adaptive Component Servlet“ ändert die Größe eines JPEG-Bilds in eine gegebene Breite und legt die JPEG-Qualität fest.
 
 #### Die Benutzeroberfläche von „Adaptive Image Component Servlet“ {#the-interface-of-the-adaptive-image-component-servlet}
 
-„Adaptive Image Component Servlet“ ist an das standardmäßige Sling-Servlet gebunden und unterstützt die Dateiformate JPG, JPEG, GIF und PNG. Der Servlet-Selektor ist img.
+Das Servlet für die Adaptive Bildkomponente ist an das standardmäßige Sling-Servlet gebunden und unterstützt die Dateierweiterungen .jpg, .jpeg, .gif und .png . Der Servlet-Selektor ist img.
 
 >[!CAUTION]
 >
@@ -442,7 +446,7 @@ Deshalb löst Sling HTTP-Anforderungs-URLs im folgenden Format in dieses Servlet
 
 Beispielsweise leitet Sling HTTP-Anfragen mit der URL `http://localhost:4502/content/geometrixx/adaptiveImage.img.jpg` an „Adaptive Image Component Servlet“ weiter.
 
-Zwei weitere Selektoren definieren die angeforderte Bildbreite und JPEG-Qualität. Im folgenden Beispiel wird ein Bild mit einer Breite von 480 Pixel und von mittlerer Qualität angefordert:
+Zwei zusätzliche Selektoren geben die gewünschte Bildbreite und JPEG-Qualität an. Im folgenden Beispiel wird ein Bild mit einer Breite von 480 Pixel und mittlerer Qualität angefordert:
 
 `http://localhost:4502/content/geometrixx/adaptiveImage.adapt.480.MEDIUM.jpg`
 
@@ -456,21 +460,21 @@ Das Servlet akzeptiert eine begrenzte Anzahl von Bildbreiten und -qualitäten. D
 * 476
 * 620
 
-Der Wert „vollständig“ bedeutet, dass keine Skalierung vorgenommen wird.
+Der vollständige Wert zeigt keine Skalierung an.
 
 Die folgenden Werte für die JPEG-Qualität werden unterstützt:
 
 * LOW
 * MEDIUM
-* HIGH
+* HOCH
 
-Sie entsprechen jeweils den numerischen Werten 0,4, 0,82 und 1,0.
+Die numerischen Werte sind 0,4, 0,82 bzw. 1,0.
 
 **Ändern der standardmäßig unterstützten Breiten**
 
-Konfigurieren Sie die unterstützten Breiten von „Adobe CQ Adaptive Image Component Servlet“ anhand der Web-Konsole ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) oder eines sling:OsgiConfig-Knotens.
+Verwenden Sie die Web-Konsole ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) oder einen sling:OsgiConfig -Knoten verwenden, um die unterstützten Breiten des Adobe CQ Adaptive Image Component Servlet zu konfigurieren.
 
-Weitere Informationen dazu, wie Sie AEM-Dienste konfigurieren, finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Informationen zum Konfigurieren AEM Services finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 <table> 
  <tbody> 
@@ -504,7 +508,7 @@ Weitere Informationen dazu, wie Sie AEM-Dienste konfigurieren, finden Sie unter 
 
 Die Klasse `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` erweitert die Klasse [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Der Quell-Code von „AdaptiveImageComponentServlet“ befindet sich im Ordner `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`.
 
-Die Klasse verwendet Felix SCR-Benachrichtigungen zum Konfigurieren des Ressourcentyps und der Dateierweiterung, die dem Servlet zugeordnet werden, und des Namens des ersten Selektors.
+Die Klasse verwendet Felix SCR-Anmerkungen, um den Ressourcentyp und die Dateierweiterung zu konfigurieren, mit der das Servlet verknüpft ist, sowie den Namen des ersten Selektors.
 
 ```java
 @Component(metatype = true, label = "Adobe CQ Adaptive Image Component Servlet",
@@ -522,7 +526,7 @@ Die Klasse verwendet Felix SCR-Benachrichtigungen zum Konfigurieren des Ressour
 })
 ```
 
-Das Servlet verwendet die Property-SCR-Anmerkung zum Festlegen der standardmäßig unterstützten Bildqualitäten und -abmessungen.
+Das Servlet verwendet die SCR-Anmerkung Eigenschaft , um die standardmäßige unterstützte Bildqualität und -dimensionen festzulegen.
 
 ```java
 @Property(value = {
@@ -547,9 +551,9 @@ Die Klasse „AdaptiveImageComponentServlet“ überschreibt auch die Methode �
 
 ### Image Reference Modification Servlet (Geometrixx Common) {#image-reference-modification-servlet-geometrixx-common}
 
-Das beispielhafte „Image Reference Modification Servlet“ generiert Größenattribute für das img-Element zum Skalieren eines Bilds auf der Webseite.
+Das Beispiel-Image Reference Modification Servlet generiert Größenattribute für das img-Element, um ein Bild auf der Web-Seite zu skalieren.
 
-#### Aufrufen des Servlets {#calling-the-servlet}
+#### Servlet aufrufen {#calling-the-servlet}
 
 Das Servlet ist an `cq:page`-Ressourcen gebunden und unterstützt das Dateiformat JPG. Der Servlet-Selektor ist `image`. Deshalb löst Sling HTTP-Anforderungs-URLs im folgenden Format in dieses Servlet auf:
 
@@ -557,15 +561,15 @@ Das Servlet ist an `cq:page`-Ressourcen gebunden und unterstützt das Dateiforma
 
 Beispielsweise leitet Sling HTTP-Anfragen mit der URL `http://localhost:4502/content/geometrixx/en.image.jpg` an „Image Reference Modification Servlet“ weiter.
 
-Drei weitere Selektoren definieren die angeforderte Bildbreite, -höhe und (optional) -qualität. Im folgenden Beispiel wird ein Bild mit einer Breite von 770 Pixel, einer Höhe von 360 Pixel und von mittlerer Qualität angefordert.
+Drei zusätzliche Selektoren geben die angeforderte Bildbreite, -höhe und (optional) -Qualität an. Im folgenden Beispiel wird ein Bild mit einer Breite von 770 Pixel, einer Höhe von 360 Pixel und mittlerer Qualität angefordert.
 
 `http://localhost:4502/content/geometrixx/en.image.770.360.MEDIUM.jpg`
 
 **Unterstützte Bildeigenschaften**
 
-Das Servlet akzeptiert eine begrenzte Anzahl von Bildabmessungen und Qualitätswerten.
+Das Servlet akzeptiert eine begrenzte Anzahl von Bilddimensionen und Qualitätswerten.
 
-Die folgenden Werte werden standardmäßig unterstützt (Breite x Höhe):
+Die folgenden Werte werden standardmäßig unterstützt (widthxheight):
 
 * 256x192
 * 370x150
@@ -584,13 +588,13 @@ Die folgenden Werte werden standardmäßig unterstützt (Breite x Höhe):
 
 Die folgenden Werte für die Bildqualität werden unterstützt:
 
-* low
-* medium
-* high
+* niedrig
+* mittel
+* hoch
 
 In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-#### Festlegen der Bildressource {#specifying-the-image-resource}
+#### Bildressource festlegen {#specifying-the-image-resource}
 
 Der Bildpfad, die Abmessungen und die Qualitätswerte müssen als Eigenschaften eines Knotens im Repository gespeichert werden:
 
@@ -609,7 +613,7 @@ Verwenden Sie beim Bearbeiten einer Seite den **Sidekick** zum Angeben von Bilde
 
 Die Klasse „info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet“ erweitert die Klasse [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html). Wenn Sie das Paket „cq-geometrixx-commons-pkg“ installiert haben, befindet sich der „ImageReferenceModificationServlet“-Quell-Code im Ordner `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`.
 
-Die Klasse verwendet Felix SCR-Benachrichtigungen zum Konfigurieren des Ressourcentyps und der Dateierweiterung, die dem Servlet zugeordnet werden, und des Namens des ersten Selektors.
+Die Klasse verwendet Felix SCR-Anmerkungen, um den Ressourcentyp und die Dateierweiterung zu konfigurieren, mit der das Servlet verknüpft ist, sowie den Namen des ersten Selektors.
 
 ```java
 @Component(metatype = true, label = "Adobe CQ Image Reference Modification Servlet",
@@ -622,7 +626,7 @@ Die Klasse verwendet Felix SCR-Benachrichtigungen zum Konfigurieren des Ressour
 })
 ```
 
-Das Servlet verwendet die Property-SCR-Anmerkung zum Festlegen der standardmäßig unterstützten Bildqualitäten und -abmessungen.
+Das Servlet verwendet die SCR-Anmerkung Eigenschaft , um die standardmäßige unterstützte Bildqualität und -dimensionen festzulegen.
 
 ```java
 @Property(label = "Image Quality",
@@ -659,13 +663,13 @@ Die Klasse `ImageReferenceModificationServlet` überschreibt die Methode `create
 
 AEM ermöglicht Ihnen die effiziente und effektive Implementierung fließender Raster. Auf dieser Seite wird beschrieben, wie Sie fließende Raster oder eine vorhandene Rasterimplementierung (z. B. [Bootstrap](https://twitter.github.com/bootstrap/)) in Ihr AEM-Programm integrieren.
 
-Im Abschnitt [Einführung zu fließenden Rastern](/help/sites-developing/responsive.md#developing-a-fluid-grid) unten auf dieser Seite finden Sie nähere Informationen zu fließenden Rastern. Diese Einführung bietet einen Überblick über fließende Raster und Anleitungen für ihren Entwurf.
+Wenn Sie nicht mit fließenden Rastern vertraut sind, lesen Sie den Abschnitt [Einführung in fließende Raster](/help/sites-developing/responsive.md#developing-a-fluid-grid) unten auf dieser Seite. Diese Einführung bietet einen Überblick über fließende Raster und Anleitungen zu ihrer Konzeption.
 
 ### Definieren des Rasters mithilfe einer Seitenkomponente {#defining-the-grid-using-a-page-component}
 
-Verwenden Sie Seitenkomponenten, um die HTML-Elemente zu erzeugen, die die Inhaltsblöcke der Seite definieren. Der ClientLibraryFolder, auf den die Seite verweist, stellt das CSS zur Verfügung, das das Layout der Inhaltsblöcke steuert:
+Verwenden Sie Seitenkomponenten, um die HTML-Elemente zu generieren, die die Inhaltsbausteine der Seite definieren. Der ClientLibraryFolder, auf den die Seite verweist, stellt das CSS bereit, das das Layout der Inhaltsbausteine steuert:
 
-* Seitenkomponente: Fügt div-Elemente hinzu, die Zeilen von Inhaltsblöcken darstellen. Die div-Elemente, die Inhaltsblöcke darstellen, umfassen eine parsys-Komponente, in der Autoren Inhalte hinzufügen.
+* Seitenkomponente: Fügt div -Elemente hinzu, die Zeilen von Inhaltsbausteinen darstellen. Die div -Elemente, die Inhaltsbausteine darstellen, enthalten eine parsys-Komponente, in der Autoren Inhalte hinzufügen.
 * Client-Bibliotheksordner: Stellt die CSS-Datei zur Verfügung, die die Medienabfragen und Stile für die div-Elemente enthält.
 
 Beispielsweise enthält die Beispielanwendung „geometrixx-media“ die Komponente „media-home“. Diese Seitenkomponente fügt zwei Skripte hinzu, die zwei `div`-Elemente der Klasse `row-fluid` generieren:
@@ -698,13 +702,13 @@ Beispielsweise enthält die Beispielanwendung „geometrixx-media“ die Kompone
 
 #### Skalieren des Seitenkomponentenrasters {#scaling-the-page-component-grid}
 
-Das Design, das der Seitenkomponente „geometrixx-media“ (`/etc/designs/geometrixx-media`) zugeordnet ist, umfasst den ClientLibraryFolder `clientlibs`. Dieser ClientLibraryFolder definiert CSS-Stile für `row-fluid`-Klassen, `span*`-Klassen und `span*`-Klassen, die untergeordnete Elemente von `row-fluid`-Klassen sind. Medienabfragen ermöglichen die Neudefinition von Styles für verschiedene Darstellungsfeldgrößen.
+Das Design, das der Seitenkomponente „geometrixx-media“ (`/etc/designs/geometrixx-media`) zugeordnet ist, umfasst den ClientLibraryFolder `clientlibs`. Dieser ClientLibraryFolder definiert CSS-Stile für `row-fluid`-Klassen, `span*`-Klassen und `span*`-Klassen, die untergeordnete Elemente von `row-fluid`-Klassen sind. Medienabfragen ermöglichen die Neudefinition von Stilen für verschiedene Darstellungsfeldgrößen.
 
-Das folgende Beispiel-CSS ist eine Untergruppe dieser Styles. Diese Untergruppe konzentriert sich auf die Klassen `span12`, `span8` und `span4` sowie Medienabfragen für zwei Darstellungsfeldgrößen. Beachten Sie die folgenden Eigenschaften des CSS:
+Das folgende Beispiel-CSS ist eine Teilmenge dieser Stile. Diese Untergruppe konzentriert sich auf die Klassen `span12`, `span8` und `span4` sowie Medienabfragen für zwei Darstellungsfeldgrößen. Beachten Sie die folgenden Eigenschaften des CSS:
 
 * Die `.span`-Stile definieren Elementbreiten anhand absoluter Zahlenwerte.
-* Die `.row-fluid .span*`-Stile definieren Elementbreiten als Prozentsatz des übergeordneten Elements. Prozentsätze werden anhand der absoluten Breiten berechnet.
-* Medienabfragen für größere Darstellungsfelder weisen größere absolute Breiten zu.
+* Die `.row-fluid .span*`-Stile definieren Elementbreiten als Prozentsatz des übergeordneten Elements. Prozentsätze werden aus den absoluten Breiten berechnet.
+* Medienabfragen für größere Viewports weisen größere absolute Breiten zu.
 
 >[!NOTE]
 >
@@ -740,7 +744,7 @@ Das folgende Beispiel-CSS ist eine Untergruppe dieser Styles. Diese Untergruppe 
 
 #### Neupositionieren von Inhalten im Seitenkomponentenraster {#repositioning-content-in-the-page-component-grid}
 
-Die Seiten der beispielhaften Geometrixx Media-Anwendung verteilen Zeilen von Inhaltsblöcken horizontal in breiten Darstellungsfeldern. In kleineren Darstellungsfeldern werden dieselben Blöcke vertikal verteilt. Das folgende Beispiel-CSS zeigt die Dateitypen, die dieses Verhalten für den HTML-Code implementieren, den die Seitenkomponente „media-home“ generiert:
+Die Seiten der Beispielanwendung &quot;Geometrixx Media&quot;verteilen Zeilen von Inhaltsbausteinen horizontal in einem breiten Viewport. In kleineren Viewports werden dieselben Blöcke vertikal verteilt. Das folgende Beispiel-CSS zeigt die Stile, die dieses Verhalten für den HTML-Code implementieren, den die Medien-Homepage-Komponente generiert:
 
 * Das standardmäßige CSS für die Seite „media-welcome“ weist den `float:left`-Stil `span*`-Klassen zu, die in `row-fluid`-Klassen enthalten sind.
 
@@ -763,7 +767,7 @@ Die Seiten der beispielhaften Geometrixx Media-Anwendung verteilen Zeilen von I
 
 #### Modularisieren der Seitenkomponenten {#tip-modularize-your-page-components}
 
-Modularisieren Sie Ihre Komponenten, um die Nutzung Ihres Codes effizienter zu machen. Ihre Website verwendet wahrscheinlich verschiedene Seitentypen, z. B. eine Willkommensseite, eine Artikelseite oder eine Produktseite. Jeder Seitentyp enthält verschiedene Inhaltstypen und verwendet wahrscheinlich ein anderes Layout. Wenn jedoch bestimmte Elemente der einzelnen Layouts auf mehreren Seiten verwendet werden, können Sie den Code wiederverwenden, der diesen Teil des Layouts implementiert.
+Modularisieren Sie Ihre Komponenten, um den Code effizient zu nutzen. Ihre Site verwendet wahrscheinlich mehrere verschiedene Seitentypen, z. B. eine Begrüßungsseite, eine Artikelseite oder eine Produktseite. Jeder Seitentyp enthält verschiedene Inhaltstypen und verwendet wahrscheinlich unterschiedliche Layouts. Wenn jedoch bestimmte Elemente eines Layouts auf mehreren Seiten verwendet werden, können Sie den Code wiederverwenden, der diesen Teil des Layouts implementiert.
 
 **Seitenkomponentenüberlagerungen verwenden**
 
@@ -771,30 +775,30 @@ Erstellen Sie eine Hauptseitenkomponente, die Skripte für die Generierung der e
 
 Erstellen Sie andere Seitenkomponenten, die die Hauptseitenkomponente als `cq:resourceSuperType` verwenden. Diese Komponenten umfassen Skripte, die die Skripte der Hauptseite je nach Bedarf überschreiben.
 
-Beispielsweise umfasst das Programm „geometrixx-media“ die Seitenkomponente (`sling:resourceSuperType` ist die Foundation-Seitenkomponente). Einige untergeordnete Komponenten (z. B. „article“, „category“ und „media-home“) verwenden diese Seitenkomponente als `sling:resourceSuperType`. Jede untergeordnete Komponente beinhaltet eine Datei „content.jsp“, die die content.jsp-Datei der Seitenkomponente überschreibt.
+Beispielsweise umfasst das Programm „geometrixx-media“ die Seitenkomponente (`sling:resourceSuperType` ist die Foundation-Seitenkomponente). Einige untergeordnete Komponenten (z. B. „article“, „category“ und „media-home“) verwenden diese Seitenkomponente als `sling:resourceSuperType`. Jede untergeordnete Komponente enthält eine Datei content.jsp , die die Datei content.jsp der Seitenkomponente überschreibt.
 
 **Skripte wiederverwenden**
 
-Erstellen Sie mehrere JSP-Skripte, die Zeilen- und Spaltenkombinationen generieren, die verschiedene Seitenkomponenten gemeinsam haben. Beispielsweise verweisen sowohl das Skript `content.jsp` des Artikels als auch die media-home-Komponenten auf das Skript `8x4col.jsp`.
+Erstellen Sie mehrere JSP-Skripte, die Zeilen- und Spaltenkombinationen generieren, die für mehrere Seitenkomponenten häufig sind. Beispielsweise verweisen sowohl das Skript `content.jsp` des Artikels als auch die media-home-Komponenten auf das Skript `8x4col.jsp`.
 
-**CSS-Styles nach Darstellungsfeldgröße organisieren**
+**Organisieren von CSS-Stilen nach der Zieldarstellungsfeldgröße**
 
-Platzieren Sie CSS-Styles und Medienabfragen für verschiedene Darstellungsfeldgrößen in verschiedenen Dateien. Verwenden Sie Client-Bibliotheksordner, um sie zu verketten.
+Schließen Sie CSS-Stile und Medienabfragen für verschiedene Darstellungsfeldgrößen in separate Dateien ein. Verwenden Sie Client-Bibliotheksordner, um sie zu verketten.
 
 ### Einfügen von Komponenten in das Seitenraster {#inserting-components-into-the-page-grid}
 
-Wenn Komponenten einen einzelnen Inhaltsblock erstellen, steuert im Allgemeinen das Raster, das von der Seitenkomponente erstellt wird, die Platzierung des Inhalts.
+Wenn Komponenten einen einzelnen Inhaltsblock generieren, steuert normalerweise das von der Seitenkomponente erstellte Raster die Platzierung des Inhalts.
 
-Autoren müssen sich darüber im Klaren sein, dass die Inhaltsblöcke in verschiedenen Größen und relativen Positionen gerendert werden können. Inhaltstext darf keine relativen Verweise auf andere Inhaltsblöcke enthalten.
+Autoren sollten wissen, dass der Inhaltsbaustein in verschiedenen Größen und relativen Positionen dargestellt werden kann. Der Inhaltstext sollte keine relativen Anweisungen verwenden, um auf andere Inhaltsbausteine zu verweisen.
 
-Bei Bedarf muss die Komponente jegliche CSS- oder JavaScript-Bibliotheken zur Verfügung stellen, die für den von ihr generierten HTML-Code erforderlich sind. Verwenden Sie einen Client-Bibliotheksordner innerhalb der Komponente, um die CSS- und JS-Dateien zu generieren. Zum Anzeigen der Dateien [erstellen Sie eine Abhängigkeit oder betten Sie die Bibliothek](/help/sites-developing/clientlibs.md#creating-client-library-folders) in einem anderen Client-Bibliotheksordner unterhalb des /etc-Ordners ein.
+Bei Bedarf sollte die Komponente alle CSS- oder JavaScript-Bibliotheken bereitstellen, die für den von ihr generierten HTML-Code erforderlich sind. Verwenden Sie einen Client-Bibliotheksordner innerhalb der Komponente, um die CSS- und JS-Dateien zu generieren. Um die Dateien verfügbar zu machen, [Erstellen einer Abhängigkeit oder Einbetten der Bibliothek](/help/sites-developing/clientlibs.md#creating-client-library-folders) in einem anderen Client-Bibliotheksordner unterhalb des Ordners /etc gespeichert.
 
 **Unterraster**
 
-Falls die Komponente mehrere Inhaltsblöcke enthält, fügen Sie die Inhaltsblöcke innerhalb einer Zeile hinzu, um ein Unterraster auf der Seite zu erstellen:
+Wenn die Komponente mehrere Inhaltsblöcke enthält, fügen Sie die Inhaltsbausteine innerhalb einer Zeile hinzu, um ein Unterraster auf der Seite zu erstellen:
 
-* Verwenden Sie dieselben Klassennamen wie die enthaltende Seitenkomponente, um div-Elemente als Zeilen und Inhaltsblöcke auszudrücken.
-* Zum Überschreiben des Verhaltens, das das CSS des Seitendesigns implementiert, verwenden Sie einen zweiten Klassennamen für das div-Element der Zeile und stellen Sie das zugehörige CSS in einem Client-Bibliotheksordner zur Verfügung.
+* Verwenden Sie dieselben Klassennamen wie die übergeordnete Seitenkomponente, um div-Elemente als Zeilen und Inhaltsbausteine auszudrücken.
+* Um das vom CSS des Seitenentwurfs implementierte Verhalten zu überschreiben, verwenden Sie einen zweiten Klassennamen für das div-Element der Zeile und geben Sie die zugehörige CSS in einem Client-Bibliotheksordner an.
 
 Beispielsweise generiert die Komponente `/apps/geometrixx-media/components/2-col-article-summary` zwei Inhaltsspalten. Der HTML-Code, den sie generiert, weist die folgende Struktur auf:
 
@@ -841,29 +845,29 @@ Beispielsweise sind in der Datei `/apps/geometrixx-media/components/2-col-articl
 
 ## Einführung zu fließenden Rastern {#introduction-to-fluid-grids}
 
-Fließende Raster ermöglichen es Seitenlayouts, die Abmessungen des Client-Darstellungsfelds anzupassen. Raster bestehen aus logischen Spalten und Zeilen, die die Inhaltsblöcke auf der Seite platzieren.
+Fließende Raster ermöglichen die Anpassung von Seitenlayouts an die Dimensionen des Client-Viewports. Raster bestehen aus logischen Spalten und Zeilen, die die Inhaltsblöcke auf der Seite positionieren.
 
-* Spalten bestimmen die horizontalen Positionen und die Breiten von Inhaltsblöcken.
-* Zeilen bestimmen die relativen vertikalen Positionen von Inhaltsblöcken.
+* Spalten bestimmen die horizontalen Positionen und Breiten von Inhaltsbausteinen.
+* Zeilen bestimmen die relative vertikale Position von Inhaltsbausteinen.
 
-Anhand von HTML5-Technologie können Sie das Raster implementieren und so bearbeiten, dass es Seitenlayouts an verschiedene Darstellungsfeldgrößen anpasst:
+Mithilfe der HTML5-Technologie können Sie das Raster implementieren und bearbeiten, um Seitenlayouts an verschiedene Darstellungsfeldgrößen anzupassen:
 
 * HTML-`div`-Elemente enthalten Inhaltsblöcke, die sich über mehrere Spalten erstrecken.
 * Eine Zeile besteht aus mindestens einem dieser div-Elemente, wenn diese mindestens ein übergeordnetes div-Element gemeinsam haben.
 
 ### Verwenden separater Breiten {#using-discrete-widths}
 
-Verwenden Sie für jeden Bereich von Darstellungsfeldbreiten eine statische Seitenbreite und Inhaltsblöcke mit einer konstanten Breite. Bei der manuellen Änderung der Größe eines Browserfensters treten Änderungen an der Inhaltsgröße bei bestimmten Fensterbreiten auf, die auch als Haltepunkte bezeichnet werden. So werden Seitendesigns besser eingehalten, wodurch das Anwendererlebnis verbessert wird.
+Verwenden Sie für jeden Bereich der Viewport-Breiten, die Sie als Ziel auswählen, eine statische Seitenbreite und Inhaltsblöcke mit konstanter Breite. Bei der manuellen Größenanpassung eines Browser-Fensters treten Änderungen an der Inhaltsgröße bei separaten Fensterbreiten (auch als Haltepunkte bezeichnet) auf. Daher werden Seitenentwürfe genauer eingehalten, wodurch das Benutzererlebnis maximiert wird.
 
 #### Skalieren des Rasters {#scaling-the-grid}
 
-Verwenden Sie Raster zum Skalieren von Inhaltsblöcken, um sie an verschiedene Darstellungsfeldgrößen anzupassen. Inhaltsblöcke erstrecken sich über eine bestimmte Anzahl von Spalten. Wenn Spalten breiter oder schmaler werden, um sich verschiedenen Darstellungsfeldgrößen anzupassen, werden Inhaltsblöcke ebenso entsprechend breiter oder schmaler. Skalierung kann sowohl große als auch mittelgroße Darstellungsfelder unterstützen, die breit genug sind, um Inhaltsblöcke nebeneinander zu platzieren.
+Verwenden Sie Raster zum Skalieren von Inhaltsbausteinen, um sie an verschiedene Darstellungsfeldgrößen anzupassen. Inhaltsbausteine erstrecken sich über eine bestimmte Anzahl von Spalten. Wenn sich die Spaltenbreiten erhöhen oder verringern, um an verschiedene Darstellungsfeldgrößen anzupassen, wird die Breite der Inhaltsblöcke entsprechend erhöht oder verringert. Die Skalierung kann sowohl große als auch mittlere Viewports unterstützen, die groß genug sind, um die nebeneinander platzierte Platzierung von Inhaltsbausteinen zu ermöglichen.
 
 ![](do-not-localize/chlimage_1-1.png)
 
 #### Neupositionieren von Inhalten im Raster {#repositioning-content-in-the-grid}
 
-Die Größe der Inhaltsblöcke kann durch eine Mindestbreite beschränkt werden, bei deren Überschreitung die Skalierung nicht mehr wirksam ist. Bei kleineren Darstellungsfeldern kann das Raster verwendet werden, um Inhaltsblöcke vertikal statt horizontal zu verteilen.
+Die Größe von Inhaltsbausteinen kann durch eine minimale Breite beschränkt werden, über die die Skalierung nicht mehr effektiv ist. Bei kleineren Viewports kann das Raster verwendet werden, um Inhaltsblöcke vertikal und nicht horizontal zu verteilen.
 
 ![](do-not-localize/chlimage_1-2.png)
 
@@ -871,34 +875,34 @@ Die Größe der Inhaltsblöcke kann durch eine Mindestbreite beschränkt werden,
 
 Bestimmen Sie die Spalten und Zeilen, die Sie benötigen, um die Inhaltsblöcke auf Ihren Seiten zu positionieren. Ihre Seiten-Layouts bestimmen die Anzahl der Spalten und Zeilen, die sich über Ihr Raster erstrecken.
 
-**Anzahl der Spalten**
+**Spaltenanzahl**
 
-Verwenden Sie ausreichend Spalten, um die Inhaltsblöcke in all Ihren Layouts für alle Darstellungsfeldgrößen horizontal zu positionieren. Sie sollten zur Unterstützung zukünftiger Seitendesigns mehr Spalten verwenden, als derzeit benötigt werden.
+Fügen Sie genügend Spalten hinzu, um die Inhaltsbausteine für alle Darstellungsfeldgrößen in allen Layouts horizontal zu positionieren. Sie sollten mehr Spalten als derzeit erforderlich verwenden, um zukünftige Seitenentwürfe aufzunehmen.
 
-**Zeileninhalte**
+**Zeileninhalt**
 
-Verwenden Sie Zeilen, um die vertikale Positionierung der Inhaltsblöcke zu steuern. Bestimmen Sie die Inhaltsblöcke, die sich in derselben Zeile befinden:
+Verwenden Sie Zeilen, um die vertikale Positionierung von Inhaltsbausteinen zu steuern. Legen Sie die Inhaltsbausteine fest, die dieselbe Zeile aufweisen:
 
-* Inhaltsblöcke, die sich in einem der Layouts horizontal nebeneinander befinden, sind in derselben Zeile.
-* Inhaltsblöcke, die sich in einem der Layouts horizontal (breitere Darstellungsfelder) und vertikal (kleinere Darstellungsfelder) nebeneinander befinden, sind in derselben Zeile.
+* Inhaltsbausteine, die sich in einem der Layouts horizontal nebeneinander befinden, befinden sich in derselben Zeile.
+* Inhaltsbausteine, die sich horizontal (breitere Darstellungsfelder) und vertikal (kleinere Darstellungsfelder) nebeneinander befinden, befinden sich in derselben Zeile.
 
 ### Rasterimplementierungen {#grid-implementations}
 
-Erstellen Sie CSS-Klassen und Styles zum Steuern des Layouts der Inhaltsblöcke auf einer Seite. Seitendesigns basieren häufig auf der relativen Größe und Position von Inhaltsblöcken im Darstellungsfeld. Das Darstellungsfeld bestimmt die tatsächliche Größe der Inhaltsblöcke. Ihr CSS muss relative und absolute Größen berücksichtigen. Sie können ein fließendes Raster mit drei Arten von CSS-Klassen implementieren:
+Erstellen Sie CSS-Klassen und -Stile, um das Layout der Inhaltsbausteine auf einer Seite zu steuern. Seitenentwürfe basieren häufig auf der relativen Größe und Position von Inhaltsbausteinen im Viewport. Der Viewport bestimmt die tatsächliche Größe der Inhaltsbausteine. Ihr CSS muss die relativen und absoluten Größen berücksichtigen. Sie können ein fließendes Raster mit drei CSS-Typen implementieren:
 
 * Eine Klasse für ein `div`-Element, das ein Container für alle Zeilen ist. Diese Klasse legt die absolute Breite des Rasters fest.
 * Eine Klasse für `div`-Elemente, die eine Zeile darstellen. Diese Klasse steuert die horizontale bzw. vertikale Positionierung der Inhaltsblöcke, die sie umfasst.
-* Klassen für `div`-Elemente, die Inhaltsblöcke mit verschiedenen Breiten darstellen. Breiten werden als Prozentsatz des übergeordneten Elements (also der Zeile) ausgedrückt.
+* Klassen für `div`-Elemente, die Inhaltsblöcke mit verschiedenen Breiten darstellen. Breiten werden als Prozentsatz des übergeordneten Elements (der Zeile) ausgedrückt.
 
-Zieldarstellungsfeldbreiten (und ihre zugehörigen Medienabfragen) markieren Breiten, die für ein Seitenlayout verwendet werden.
+Zielgerichtete Darstellungsfeldbreiten (und die zugehörigen Medienabfragen) markieren diskrete Breiten, die für ein Seitenlayout verwendet werden.
 
 #### Breiten von Inhaltsblöcken {#widths-of-content-blocks}
 
 Im Allgemeinen basiert der `width`-Stil von Inhaltsblockklassen auf den folgenden Eigenschaften Ihrer Seite und Ihres Rasters:
 
-* Die absolute Seitenbreite, die Sie für die Zieldarstellungsfeldgrößen verwenden. Dies sind bekannte Werte.
-* Die absolute Breite der Rasterspalten der Seitenbreiten. Sie legen diese Werte fest.
-* Die relative Breite der einzelnen Spalten als Prozentsatz der Gesamtseitenbreite. Sie berechnen diese Werte.
+* Die absolute Seitenbreite, die Sie für jede Targeting-Darstellungsfeldgröße verwenden. Dies sind bekannte Werte.
+* Die absolute Breite der Rasterspalten für jede Seitenbreite. Sie bestimmen diese Werte.
+* Die relative Breite jeder Spalte als Prozentsatz der gesamten Seitenbreite. Sie berechnen diese Werte.
 
 Das CSS umfasst eine Reihe von Medienabfragen, die die folgende Struktur verwenden:
 
@@ -920,13 +924,13 @@ Das CSS umfasst eine Reihe von Medienabfragen, die die folgende Struktur verwend
 }
 ```
 
-Verwenden Sie den folgenden Algorithmus als Ausgangspunkt für die Entwicklung der Elementklassen und CSS-Styles für Ihre Seiten.
+Verwenden Sie den folgenden Algorithmus als Ausgangspunkt für die Entwicklung der Elementklassen und CSS-Stile für Ihre Seiten.
 
 1. Definieren Sie einen Klassennamen für das div-Element, das alle Zeilen enthält, z. B. `content.`.
 1. Definieren Sie eine CSS-Klasse für div-Elemente, die Zeilen darstellen, z. B. `row-fluid`.
-1. Definieren Sie Klassennamen für Inhaltsblockelemente. Eine Klasse wird für alle möglichen Breiten benötigt, was Spaltenbereiche angeht. Verwenden Sie beispielsweise die Klasse `span3` für `div`-Elemente, die sich über drei Spalten erstrecken und `span4`-Klassen für Bereiche von vier Spalten. Definieren Sie so viele Klassen, wie Spalten in Ihrem Raster vorhanden sind.
+1. Definieren Sie Klassennamen für Inhaltsblockelemente. Eine Klasse ist für alle möglichen Breiten in Bezug auf Spaltenbereiche erforderlich. Verwenden Sie beispielsweise die Klasse `span3` für `div`-Elemente, die sich über drei Spalten erstrecken und `span4`-Klassen für Bereiche von vier Spalten. Definieren Sie so viele Klassen wie Spalten in Ihrem Raster vorhanden sind.
 
-1. Fügen Sie der CSS-Datei für jede Zieldarstellungsfeldgröße die entsprechende Medienabfrage hinzu. Fügen Sie jeder Medienabfrage die folgenden Elemente hinzu:
+1. Fügen Sie für jede angestrebte Darstellungsfeldgröße die entsprechende Medienabfrage zu Ihrer CSS-Datei hinzu. Fügen Sie in jeder Medienabfrage die folgenden Elemente hinzu:
 
    * Einen Selektor für die Klasse `content`, z. B. `.content{}`.
    * Selektoren für die span-Klassen, z. B `.span3{ }`.
@@ -936,8 +940,8 @@ Verwenden Sie den folgenden Algorithmus als Ausgangspunkt für die Entwicklung d
 1. Fügen Sie jedem Selektor width-Stile hinzu:
 
    1. Legen Sie für die Breite von `content`-Selektoren die absolute Größe der Seite fest, z. B. `width:480px`.
-   1. Legen Sie für die Breite aller row-fluid-Selektoren 100 % fest.
-   1. Legen Sie für die Breite aller span-Selektoren die absolute Breite des Inhaltsblocks fest. Ein normales Raster verwendet gleichmäßig verteilte Spalten mit der gleichen Breite: `(absolute width of page)/(number of columns)`.
+   1. Setzen Sie die Breite aller Zeilenflüssigkeitsselektoren auf 100 %.
+   1. Legen Sie die Breite aller span-Selektoren auf die absolute Breite des Inhaltsbausteins fest. Ein normales Raster verwendet gleichmäßig verteilte Spalten mit der gleichen Breite: `(absolute width of page)/(number of columns)`.
    1. Legen Sie die Breite der `.row-fluid .span`-Selektoren als Prozentsatz der Gesamtbreite fest. Berechnen Sie diese Breite mithilfe der Formel `(absolute span width)/(absolute page width)*100`.
 
 #### Positionieren von Inhaltsblöcken in Zeilen {#positioning-content-blocks-in-rows}
@@ -948,11 +952,11 @@ Verwenden Sie den float-Stil der `.row-fluid`-Klasse, um zu steuern, ob die Inha
 
 * Der Stil `float:none` bedingt die vertikale Verteilung untergeordneter Elemente.
 
-Fügen Sie den Stil dem `.row-fluid`-Selektor in den Medienabfragen hinzu. Legen Sie den Wert entsprechend dem Seiten-Layout fest, das Sie für die Medienabfrage verwenden. Beispielsweise zeigt das folgende Diagramm eine Zeile, die Inhalte für breite Darstellungsfelder horizontal und für schmale Darstellungsfelder vertikal verteilt.
+Fügen Sie den Stil dem `.row-fluid`-Selektor in den Medienabfragen hinzu. Legen Sie den Wert entsprechend dem Seiten-Layout fest, das Sie für die Medienabfrage verwenden. Das folgende Diagramm zeigt beispielsweise eine Zeile, die Inhalte für breite Viewports horizontal und für schmale Viewports vertikal verteilt.
 
 ![](do-not-localize/chlimage_1-3.png)
 
-Das folgende CSS könnte dieses Verhalten implementieren:
+Dieses Verhalten kann durch die folgende CSS implementiert werden:
 
 ```xml
 @media (min-width: 768px) and (max-width: 979px) {
@@ -972,6 +976,6 @@ Das folgende CSS könnte dieses Verhalten implementieren:
 
 #### Zuweisen von Klassen zu Inhaltsblöcken {#assigning-classes-to-content-blocks}
 
-Legen Sie für das Seitenlayout der verschiedenen Darstellungsfeldgrößen die Anzahl der Spalten fest, über die sich die Inhaltsblöcke erstrecken. Dann legen Sie fest, welche Klasse für die div-Elemente dieser Inhaltsblöcke verwendet werden soll.
+Legen Sie für das Seitenlayout jeder gewünschten Darstellungsfeldgröße die Anzahl der Spalten fest, die jeder Inhaltsbaustein umfasst. Bestimmen Sie dann, welche Klasse für die div-Elemente dieser Inhaltsbausteine verwendet werden soll.
 
-Wenn Sie die div-Klassen erstellt haben, können Sie das Raster mithilfe Ihrer AEM-Anwendung implementieren.
+Wenn Sie die div-Klassen eingerichtet haben, können Sie das Raster mithilfe Ihrer AEM-Anwendung implementieren.

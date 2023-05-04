@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 73%
+source-wordcount: '374'
+ht-degree: 12%
 
 ---
 
 # Systeminformationsdienst-APIs {#system-information-service-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Informationen bereit. Die folgende Tabelle enthält detaillierte Informationen zu den APIs:
 
@@ -33,7 +37,7 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[Server]:[Port]/rest/services/SystemInfo.properties</p></td> 
-   <td><p>Diese API ist ein Wrapper für Java-API<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()"> system.getProperties-Java-API</a>. Sie ruft die Konfiguration des aktuellen Arbeitsbereichs ab. </p></td> 
+   <td><p>Diese API ist ein Wrapper für <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java-API. Es ruft die Konfiguration der aktuellen Arbeitsumgebung ab. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 
@@ -43,7 +47,7 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfo.logs</p></td> 
    <td><p>https://[Server]:[Port]/rest/services/ SystemInfo.logs</p></td> 
-   <td><p>Lädt eine ZIP-Datei mit Anwendungsserverprotokollen herunter. </p></td> 
+   <td><p>Lädt eine ZIP-Datei herunter, die die Protokolle des Anwendungsservers enthält. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.config</p></td> 
@@ -53,12 +57,12 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfo.services</p></td> 
    <td><p>https://[Server]:[Port]/rest/services/ SystemInfo.services</p></td> 
-   <td><p>Ruft Status und Konfigurationsparameter von AEM Forms-Diensten ab.</p></td> 
+   <td><p>Ruft Status- und Konfigurationsparameter von AEM Forms-Diensten ab.</p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.vitalDetails</p></td> 
    <td><p>https://[Server]:[Port]/rest/services/ SystemInfo.dynamicDetails</p></td> 
-   <td><p>Ruft Serverbetriebszeit, JVM-Argumente, Systemspeicher, Heap-Größe, Betriebssystemnamen, Anzahl der aktiven Threads und Thread-Anzahl ab. </p></td> 
+   <td><p>Ruft Server-Betriebszeit, JVM-Argumente, Systemspeicher, Heap-Größe, Betriebssystemnamen, Anzahl der aktiven Threads und Thread-Anzahl ab. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.coreSettings</p></td> 
@@ -97,16 +101,16 @@ Der Systeminformationsdienst stellt eine Reihe von REST-APIs zum Abrufen von Inf
   <tr>
    <td><p>SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td> 
    <td><p>https://[Server]:[Port]/rest/services/ SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td> 
-   <td><p>Ruft Anzahl und Stapelablaufverfolgung aktiver Threads ab. Folgende Parameter werden akzeptiert:</p>
+   <td><p>Ruft die Anzahl und Stapelablaufverfolgung aktiver Threads ab. Folgende Parameter werden akzeptiert:</p>
     <ul>
      <li><p>iterations= [n]: Gibt die Anzahl der Iterationen an. Ersetzen Sie n durch eine Zahl. </p></li>
-     <li><p>Delay= [n]: Gibt an, wie viele Millisekunden vor der nächsten Iteration gewartet werden soll. </p></li>
+     <li><p>Delay= [n]: Gibt die Anzahl der Millisekunden an, die gewartet werden soll, bevor die nächste Iteration gestartet wird. </p></li>
     </ul><p></p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.info</p></td> 
    <td><p>https://[Server]:[Port]/rest/services/ SystemInfo.info</p></td> 
-   <td><p>Diese API ist ein Wrapper für alle Systeminformationsdienst-APIs. Sie führt intern alle Systeminformations-APIs aus und lädt Informationen im ZIP-Format herunter. </p><p><i><strong>Hinweis</strong>: Die Datei „SystemInfo.info“ enthält nicht Anzahl und Stapelablaufverfolgung aktiver Threads. </i></p></td> 
+   <td><p>Diese API ist ein Wrapper für alle Systeminformationsdienst-APIs. Intern werden alle Systeminformationen-APIs ausgeführt und Informationen im ZIP-Format heruntergeladen. </p><p><i><strong>Hinweis</strong>: Die Datei „SystemInfo.info“ enthält nicht Anzahl und Stapelablaufverfolgung aktiver Threads. </i></p></td> 
   </tr> 
  </tbody> 
 </table>

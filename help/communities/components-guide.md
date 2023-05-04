@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 exl-id: 8cdd7b94-b247-4598-bb0f-36c5ec1319ec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1187'
+source-wordcount: '1223'
 ht-degree: 4%
 
 ---
 
 # Handbuch der Community-Komponenten {#community-components-guide}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Das Komponentenleitfaden der Community ist ein interaktives Entwicklungstool für die [Social Component Framework (SCF)](scf.md). Es bietet eine Liste der verfügbaren AEM Communities-Komponenten oder der komplexeren Funktionen, die aus mehreren Komponenten erstellt wurden.
 
@@ -62,7 +66,7 @@ Fügen Sie beim Autor Folgendes ein, um den Bearbeitungsmodus zu aktivieren: `ed
 >
 >Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation unter [grundlegende Handhabung](../../help/sites-authoring/basic-handling.md).
 
-### Startseite {#home-page}
+### Homepage {#home-page}
 
 Das Handbuch enthält eine Liste von SCF-Komponenten, die links auf der Seite für die Vorschau und das Prototyping verfügbar sind.
 
@@ -114,7 +118,7 @@ Unter dem **Vorlagen** tab:
 
    * angezeigter Text: &quot;Diese Komponente wird dynamisch einbezogen.&quot;
 
-   Diese Option ist standardmäßig deaktiviert.
+   Die Option Standard ist deaktiviert.
 
 ### Veröffentlichungsinteraktionen {#publish-interactions}
 

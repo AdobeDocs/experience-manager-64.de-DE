@@ -1,18 +1,22 @@
 ---
 title: "[!DNL Experience Manager Assets] Homepage-Erlebnis"
-description: Passen Sie die Assets-Startseite an, um Benutzern ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
+description: Personalisieren Sie die Assets-Startseite für ein umfangreiches Begrüßungsbildschirm-Erlebnis, einschließlich einer Momentaufnahme der letzten Aktivitäten rund um Assets.
 contentOwner: AG
 feature: Developer Tools,Asset Management
 role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: d9cfb5376210234b3b05877509c273c52d9cecf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 80%
+source-wordcount: '593'
+ht-degree: 53%
 
 ---
 
 # [!DNL Adobe Experience Manager Assets]-Startseiten-Erlebnis {#aem-assets-home-page-experience}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Personalisieren Sie die [!DNL Experience Manager Assets]-Startseite, um Benutzenden ein ansprechendes Erlebnis auf dem Willkommensbildschirm zu bieten, einschließlich einer Übersicht der letzten Aktivitäten rund um Assets.
 
@@ -50,17 +54,17 @@ Tippen/klicken Sie auf **[!UICONTROL Klicken Sie hier , um Ihren Erlebnislink zu
 Die Assets-Startseite enthält die folgenden Abschnitte:
 
 * Begrüßungsabschnitt
-* Widget-Abschnitt
+* Widget-Bereich
 
-**Begrüßungsabschnitt** 
+**Begrüßungsabschnitt**
 
 Wenn Ihr Profil vorhanden ist, wird im Begrüßungsabschnitt eine Begrüßungsnachricht für Sie angezeigt. Darüber hinaus werden Ihr Profilbild und ein Begrüßungsbild angezeigt (wenn bereits konfiguriert).
 
-Wenn Ihr Profil unvollständig ist, zeigt der Begrüßungsabschnitt eine generische Begrüßungsnachricht und einen Platzhalter für Ihr Profilbild an.
+Wenn Ihr Profil unvollständig ist, werden im Bereich &quot;Willkommen&quot;eine allgemeine Willkommensnachricht und ein Platzhalter für Ihr Profilbild angezeigt.
 
-**Widget-Abschnitt** 
+**Widget-Bereich**
 
-Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet fertige Widgets unter den folgenden Abschnitten:
+Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und zeigt native Widgets unter den folgenden Abschnitten an:
 
 * Aktivität
 * Aktuell
@@ -72,9 +76,9 @@ Dieser Abschnitt wird unter dem Begrüßungsabschnitt angezeigt und bietet ferti
 
 **Discover**: Die **Neu** Widget unter diesem Abschnitt zeigt die Assets und Ausgabedarstellungen an, die kürzlich in die [!DNL Assets] -Instanz.
 
-Um das Löschen von Benutzeraktivitätsdaten zu aktivieren, aktivieren Sie den **DAM Event Purge-Dienst** vom Configuration Manager aus. Nachdem Sie den Dienst aktiviert haben, werden die Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
+Um das Löschen von Benutzeraktivitätsdaten zu aktivieren, aktivieren Sie den **DAM Event Purge-Dienst** vom Configuration Manager aus. Nachdem Sie diesen Dienst aktiviert haben, werden Aktivitäten des angemeldeten Benutzers, die eine bestimmte Anzahl überschreiten, vom System gelöscht.
 
-Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in der Symbolleiste für das Zugreifen auf Ordner, Sammlungen und Kataloge.
+Der Begrüßungsbildschirm bietet einfache Navigationshilfen, z. B. Symbole in der Symbolleiste für den Zugriff auf Ordner, Sammlungen und Kataloge.
 
 >[!NOTE]
 >
@@ -82,7 +86,7 @@ Der Begrüßungsbildschirm enthält einfache Navigationshilfen, z. B. Symbole in
 
 >[!CAUTION]
 >
->Das Erfassen, Filtern und Bereinigen von Benutzeraktivitäten für die Asset-Homepage erfordert Mehraufwand. Daher sollten Administratoren die Homepage für Zielbenutzer effektiv konfigurieren.
+>Die Erfassung, Filterung und Bereinigung von Benutzeraktivitäten, die für die Asset-Startseite erforderlich sind, bringt einen Mehraufwand für die Leistung mit sich. Daher sollten Administratoren die Startseite für Zielbenutzer effektiv konfigurieren.
 >
 >Adobe empfiehlt Administratoren und Benutzern, die mit großen Datenmengen arbeiten, die Verwendung der Asset-Homepage-Funktion zu vermeiden, um einen Anstieg der Benutzeraktivitäten zu verhindern. Außerdem können Admins Aufzeichnungsaktivitäten von bestimmten Benutzenden unterbinden, indem sie den **Day CQ DAM Event Recorder** vom Configuration Manager aus konfigurieren.
 >

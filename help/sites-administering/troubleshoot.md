@@ -1,7 +1,7 @@
 ---
 title: Beheben von Fehlern in AEM
 seo-title: Troubleshooting AEM
-description: Erfahren Sie mehr über das Beheben von Fehlern in AEM.
+description: Erfahren Sie mehr über die Fehlerbehebung bei AEM.
 seo-description: Learn about troubleshooting issues with AEM.
 uuid: d68e9ead-8aa6-4108-9f1e-85d7cd7a370f
 contentOwner: Guillaume Carlino
@@ -10,24 +10,28 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
 exl-id: 34b509d5-4e80-4229-b155-40004856e87e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 100%
+source-wordcount: '583'
+ht-degree: 55%
 
 ---
 
 # Beheben von Fehlern in AEM{#troubleshooting-aem}
 
-Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Im folgenden Abschnitt werden einige Probleme behandelt, auf die Sie bei der Verwendung von AEM stoßen können, sowie Empfehlungen zur Fehlerbehebung.
 
 >[!NOTE]
 >
->Wenn Sie Probleme mit der Bearbeitung in AEM beheben wollen, lesen Sie den Abschnitt [Fehlerbehebung für Autoren](/help/sites-authoring/troubleshooting.md).
+>Wenn Sie Probleme beim Authoring in AEM beheben, finden Sie weitere Informationen unter [Fehlerbehebung für Autoren.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
->Wenn Probleme auftreten, sollten Sie auch die Liste der [bekannten Probleme](/help/release-notes/known-issues.md) für Ihre Instanz (Version und Service Packs) prüfen.
+>Bei Problemen sollten Sie auch die Liste der [Bekannte Probleme](/help/release-notes/known-issues.md) für Ihre Instanz (Release- und Service Packs).
 
 ## Fehlerbehebungsszenarien für Administratoren {#troubleshooting-scenarios-for-administrators}
 
@@ -64,19 +68,19 @@ Die folgende Tabelle bietet einen Überblick über Probleme, die Administratoren
 
 ## Installationsprobleme {#installation-issues}
 
-Weitere Informationen zu den folgenden Fehlerbehebungsszenarien finden Sie in [Allgemeine Installationsprobleme](/help/sites-deploying/troubleshooting.md#common-installation-issues):
+Siehe [Häufige Installationsprobleme](/help/sites-deploying/troubleshooting.md#common-installation-issues) für Informationen zu den folgenden Fehlerbehebungsszenarien:
 
-* Das Doppelklicken auf die Schnellstart-JAR-Datei hat keinen Effekt oder die Datei wird mit einem anderen Programm geöffnet (z. B. Archivmanager).
-* In CRX ausgeführte Anwendungen führen zu Fehlern aufgrund unzureichendem Speicherplatz.
-* Der AEM-Willkommensbildschirm wird nach einem Doppelklick auf den AEM-Schnellstart nicht im Browser angezeigt.
+* Ein Doppelklick auf die Schnellstart-JAR-Datei hat keine Auswirkungen oder die JAR-Datei mit einem anderen Programm (z. B. Archivmanager).
+* Bei Anwendungen, die auf CRX ausgeführt werden, treten Fehler wegen zu wenig Arbeitsspeicher auf.
+* Der AEM Begrüßungsbildschirm wird nach einem Doppelklick auf AEM Schnellstart nicht im Browser angezeigt.
 
-## Methoden für die Fehlerbehebungsanalyse {#methods-for-troubleshooting-analysis}
+## Methoden zur Fehlerbehebung in der Analyse {#methods-for-troubleshooting-analysis}
 
 ### Erstellen von Thread-Speicherauszügen {#making-a-thread-dump}
 
 Ein Thread-Speicherauszug ist eine Liste aller Java-Threads, die derzeit aktiv sind. Wenn AEM nicht richtig reagiert, kann der Thread-Speicherauszug helfen, Deadlocks oder andere Probleme zu identifizieren.
 
-### Verwenden des Sling Thread Dumper {#using-sling-thread-dumper}
+### Verwenden der Sling-Thread-Dumper {#using-sling-thread-dumper}
 
 1. Öffnen Sie die **AEM-Web-Konsole**; zum Beispiel unter `http://localhost:4502/system/console/`.
 
@@ -86,7 +90,7 @@ Ein Thread-Speicherauszug ist eine Liste aller Java-Threads, die derzeit aktiv s
 
 ### Verwenden von jstack (Befehlszeile) {#using-jstack-command-line}
 
-1. Suchen Sie die PID (Prozess-ID) der AEM-Java-Instanz.
+1. Suchen Sie die PID (Prozess-ID) der AEM Java-Instanz.
 
    Sie können beispielsweise `ps -ef` oder `jps` verwenden.
 
@@ -104,15 +108,15 @@ Ein Thread-Speicherauszug ist eine Liste aller Java-Threads, die derzeit aktiv s
 
 Weitere Informationen dazu finden Sie in der Dokumentation [Erstellen von Thread-Speicherauszügen von einem JVM](https://helpx.adobe.com/de/cq/kb/TakeThreadDump.html).
 
-### Überprüfung auf nicht beendete JCR-Sitzungen {#checking-for-unclosed-jcr-sessions}
+### Überprüfen auf nicht beendete JCR-Sitzungen {#checking-for-unclosed-jcr-sessions}
 
-Wenn Funktionen für AEM WCM entwickelt werden, werden möglicherweise JCR-Sitzungen geöffnet (vergleichbar mit dem Öffnen einer Datenbankverbindung). Werden die geöffneten Sitzungen nie geschlossen, können folgende Probleme in Ihrem System auftreten:
+Wenn Funktionen für AEM WCM entwickelt werden, können JCR-Sitzungen geöffnet werden (vergleichbar mit dem Öffnen einer Datenbankverbindung). Wenn die geöffneten Sitzungen nie geschlossen werden, kann Ihr System folgende Symptome aufweisen:
 
 * Das System wird langsamer.
 * Es befinden sich viele „CacheManager: resizeAll“-Einträge in der Protokolldatei. Die folgende Zahl (size=&lt;x>) gibt die Anzahl an Caches an; jede Sitzung öffnet mehrere Caches.
 * Gelegentlich reicht der Speicherplatz des Systems nicht aus (nach einigen Stunden, Tagen oder Wochen – je nach Schweregrad).
 
-Lesen Sie den Knowledgebase-Artikel [Analysieren von nicht beendeten Sitzungen](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html), um nicht beendete Sitzungen zu analysieren und festzustellen, welcher Code dazu führt, dass eine Sitzung nicht beendet wird.
+Informationen zum Analysieren nicht geschlossener Sitzungen und zum Ermitteln, welcher Code eine Sitzung nicht schließt, finden Sie im Knowledge Base-Artikel . [Nicht geschlossene Sitzungen analysieren](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html).
 
 ### Verwenden der Adobe Experience Manager-Web-Konsole {#using-the-adobe-experience-manager-web-console}
 
@@ -124,7 +128,7 @@ Der Status der OSGi-Pakete kann auch frühzeitig auf mögliche Probleme hinweise
 
 1. Überprüfen Sie Folgendes:
 
-   * den Status der Pakete. Falls Status wie „Inaktiv“ oder „Nicht erfüllt“ angezeigt werden, versuchen Sie, das Paket zu stoppen und neu zu starten. Wenn das Problem weiterhin besteht, müssen Sie dies mithilfe anderer Methoden weiter untersuchen.
+   * den Status der Pakete. Falls Status wie „Inaktiv“ oder „Nicht erfüllt“ angezeigt werden, versuchen Sie, das Paket zu stoppen und neu zu starten. Wenn das Problem weiterhin besteht, müssen Sie möglicherweise weitere Untersuchungen mit anderen Methoden durchführen.
    * ob Pakete mit fehlenden Abhängigkeiten vorliegen. Dies können Sie herausfinden, indem Sie auf den einzelnen Paket-Namen klicken, bei dem es sich um einen Link handelt (im folgenden Beispiel sind keine Probleme aufgetreten):
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)

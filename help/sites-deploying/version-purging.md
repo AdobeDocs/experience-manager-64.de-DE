@@ -11,26 +11,30 @@ content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 feature: Configuring
 exl-id: 357d5f23-3e75-44e3-905f-4efe960858bf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 68%
+source-wordcount: '752'
+ht-degree: 32%
 
 ---
 
 # Versionsbereinigung{#version-purging}
 
-Bei einer Standardinstallation erstellt AEM eine neue Version einer Seite oder eines Knotens, wenn Sie eine Seite nach der Aktualisierung des Inhalts aktivieren.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In einer Standardinstallation erstellt AEM eine neue Version einer Seite oder eines Knotens, wenn Sie eine Seite nach der Aktualisierung des Inhalts aktivieren.
 
 >[!NOTE]
 >
->Werden keine Änderungen am Inhalt vorgenommen, wird eine Meldung angezeigt, dass die Seite aktiviert wurde. Es wird jedoch keine neue Version erstellt.
+>Wenn keine Inhaltsänderungen vorgenommen werden, wird die Meldung angezeigt, dass die Seite aktiviert wurde, aber keine neue Version erstellt wird
 
 Mit der Registerkarte **Versionierung** des Sidekicks können Sie auf Anforderung zusätzliche Versionen erstellen. Diese Versionen werden im Repository gespeichert und können bei Bedarf wiederhergestellt werden.
 
-Diese Versionen werden nie bereinigt. Daher wächst die Größe des Repositorys im Laufe der Zeit an und muss verwaltet werden.
+Diese Versionen werden nie gelöscht, sodass die Repository-Größe mit der Zeit zunimmt und daher verwaltet werden muss.
 
-AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfügung:
+AEM wird mit verschiedenen Mechanismen geliefert, mit denen Sie Ihr Repository verwalten können:
 
 * die [Version Manager](#version-manager)
 
@@ -54,11 +58,11 @@ AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfü
 
 >[!CAUTION]
 >
->Um die Größe des Repositorys zu optimieren, sollten Sie die Aufgabe zur Versionsbereinigung regelmäßig ausführen. Die Aufgabe sollte außerhalb der Geschäftszeiten geplant werden, wenn der Netzwerkverkehr begrenzt ist.
+>Um die Größe des Repositorys zu optimieren, sollten Sie die Aufgabe zur Versionsbereinigung regelmäßig ausführen. Die Aufgabe sollte außerhalb der Geschäftszeiten geplant werden, wenn nur ein begrenzter Traffic verfügbar ist.
 
-## Versions-Manager {#version-manager}
+## Version Manager {#version-manager}
 
-Zusätzlich zum expliziten Löschen mit dem Bereinigungs-Tool kann der Versionsmanager so konfiguriert werden, dass alte Versionen bei der Erstellung von neuen Versionen entfernt werden.
+Zusätzlich zur expliziten Bereinigung mithilfe des Bereinigungs-Tools kann der Versionsmanager so konfiguriert werden, dass alte Versionen bei der Erstellung neuer Versionen bereinigt werden.
 
 Um den Versions-Manager entsprechend zu konfigurieren, erstellen Sie eine Konfiguration für:
 
@@ -96,7 +100,7 @@ Die folgenden Optionen sind verfügbar:
 
 * `versionmanager.minNumberVersions` (int, Standard 0)
 
-   Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden sollen. Wenn hier ein Wert kleiner 1 festgelegt ist, werden keine Versionen beibehalten.
+   Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden sollen. Wenn dieser Wert auf einen Wert kleiner als 1 gesetzt ist, wird keine Mindestanzahl von Versionen beibehalten.
 
 >[!NOTE]
 >
@@ -106,23 +110,23 @@ Die folgenden Optionen sind verfügbar:
 
 Die Optionen, mit denen definiert wird, welche Versionen aufbewahrt werden sollen (`maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), können gemäß Ihren Anforderungen kombiniert werden.
 
-Wenn Sie z. B. die Anzahl der Versionen, die maximal aufbewahrt werden, UND die älteste aufzubewahrende Version definieren:
+Beispielsweise bei der Definition der maximalen Anzahl von Versionen, die beibehalten werden sollen, UND der ältesten Version, die beibehalten werden soll:
 
 * Einstellung:
 
    * `maxNumberVersions` = 7
    * `maxAgeDays` = 30
 
-* mit:
+* Mit:
 
-   * 10 Versionen, die in den letzten 60 Tagen erstellt wurden,
-   * von denen 3 Versionen innerhalb der letzten 30 Tage erstellt wurden,
+   * 10 Versionen, die in den letzten 60 Tagen erstellt wurden
+   * 3 dieser Versionen, die innerhalb der letzten 30 Tage erstellt wurden
 
-* bedeutet dies, dass:
+* bedeutet Folgendes:
 
-   * die letzten 3 Versionen aufbewahrt werden.
+   * Die letzten drei Versionen werden beibehalten
 
-Wenn Sie z. B. die maximale UND die minimale Anzahl von Versionen, die aufbewahrt werden, UND die älteste beizubehaltende Version definieren:
+Beispielsweise bei der Definition der maximalen UND minimalen Anzahl von Versionen, die beibehalten werden sollen, UND der ältesten Version, die beibehalten werden soll:
 
 * Einstellung:
 
@@ -130,14 +134,14 @@ Wenn Sie z. B. die maximale UND die minimale Anzahl von Versionen, die aufbewahr
    * `maxAgeDays` = 30
    * `minNumberVersions` = 3
 
-* mit:
+* Mit:
 
-   * 5 Versionen, die in den letzten 60 Tagen erstellt wurden
+   * 5 Versionen vor 60 Tagen
 
-* bedeutet dies, dass:
+* bedeutet Folgendes:
 
-   * 3 Versionen aufbewahrt werden.
+   * 3 Versionen werden beibehalten
 
-## Tool „Versionen bereinigen“ {#purge-versions-tool}
+## Versionsbereinigungs-Tool {#purge-versions-tool}
 
-Das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) dient zum Bereinigen der Versionen eines Knotens oder einer Hierarchie von Knoten in Ihrem Repository. Der Hauptzweck ist die Verkleinerung des Repositorys durch Löschen alter Knotenversionen.
+Das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) dient zum Bereinigen der Versionen eines Knotens oder einer Hierarchie von Knoten in Ihrem Repository. Ihr Hauptzweck besteht darin, Ihnen zu helfen, die Größe Ihres Repositorys zu reduzieren, indem Sie alte Versionen Ihrer Knoten entfernen.

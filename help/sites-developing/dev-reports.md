@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 837c79af-a50f-40bb-b60d-205e1cac3f39
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5238'
-ht-degree: 98%
+source-wordcount: '5274'
+ht-degree: 73%
 
 ---
 
 # Entwickeln von Berichten{#developing-reports}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM bietet eine Auswahl von [Standardberichten](/help/sites-administering/reporting.md), die größtenteils auf einem Framework für das Reporting basieren.
 
@@ -80,12 +84,12 @@ Für die mit AEM bereitgestellten Standardberichte gilt Folgendes:
 
 Dem Framework für das Reporting liegen die folgenden Prinzipien zugrunde:
 
-* Es basiert vollständig auf Ergebnissätzen, die von einer vom CQ5-QueryBuilder ausgeführten Abfrage zurückgegeben werden.
-* Der Ergebnissatz definiert die im Bericht angezeigten Daten. Jede Zeile des Ergebnissatzes entspricht einer Zeile in der Tabellenansicht des Berichts.
-* Die für die Ausführung für den Ergebnissatz zur Verfügung stehenden Vorgänge ähneln RDBMS-Konzepten, allen voran die *Gruppierung* und *Aggregation*.
+* Sie basiert vollständig auf Ergebnismengen, die von einer vom CQ5 QueryBuilder ausgeführten Abfrage zurückgegeben werden.
+* Der Ergebnissatz definiert die im Bericht angezeigten Daten. Jede Zeile in der Ergebnismenge entspricht einer Zeile in der Tabellenansicht des Berichts.
+* Die für die Ausführung des Ergebnissatzes verfügbaren Vorgänge ähneln RDBMS-Konzepten. primär *grouping* und *aggregation*.
 
 * Der Datenabruf und die Datenverarbeitung erfolgen größtenteils serverseitig.
-* Der Client ist allein für die Anzeige der vorverarbeiteten Daten zuständig. Nur kleinere Verarbeitungsaufgaben (z. B. das Erstellen von Links im Zellinhalt) werden Client-seitig ausgeführt.
+* Der Kunde ist allein für die Anzeige der vorverarbeiteten Daten verantwortlich. Nur kleinere Verarbeitungsaufgaben (z. B. das Erstellen von Links im Zellinhalt) werden Client-seitig ausgeführt.
 
 Das Framework für das Reporting (am Beispiel der Struktur eines Standardberichts veranschaulicht) nutzt die folgenden Bausteine, die von der Verarbeitungswarteschlange gespeist werden:
 
@@ -93,12 +97,12 @@ Das Framework für das Reporting (am Beispiel der Struktur eines Standardbericht
 
 ### Berichtseite {#report-page}
 
-Die Berichtseite:
+Berichtsseite:
 
-* ist eine CQ5-Standardseite.
-* basiert auf einer [CQ5-Standardvorlage, die für den Bericht konfiguriert wurde](#report-template).
+* ist eine standardmäßige CQ5-Seite.
+* basiert auf einer [Standard-CQ5-Vorlage, für den Bericht konfiguriert](#report-template).
 
-### Die reportbase-Komponente {#report-base}
+### Berichtsbasis {#report-base}
 
 Die [`reportbase`-Komponente](#report-base-component) bildet die Grundlage eines jeden Berichts:
 
@@ -113,20 +117,20 @@ Die [`reportbase`-Komponente](#report-base-component) bildet die Grundlage eines
 Jede Spalte ist eine Instanz der [`columnbase`-Komponente](#column-base-component):
 
 * Sie ist ein Absatz, der vom Absatzsystem (`reportbase`) des entsprechenden Berichts verwendet wird.
-* Sie definiert den Link zum [zugrunde liegenden Ergebnissatz](#the-query-and-data-retrieval), d. h. sie definiert die spezifischen Daten, auf die im Ergebnissatz verwiesen wird, und wie diese verarbeitet werden.
-* Sie enthält neben jeglichen Standardwerten zusätzliche Definitionen, beispielsweise die verfügbaren Aggregate und Filter.
+* Definiert den Link zum [zugrunde liegender Ergebnissatz](#the-query-and-data-retrieval); d. h. definiert die spezifischen Daten, auf die in diesem Ergebnissatz verwiesen wird, und wie sie verarbeitet werden.
+* enthält zusätzliche Definitionen; wie die verfügbaren Aggregate und Filter sowie alle Standardwerte.
 
-### Die Abfrage und der Datenabruf {#the-query-and-data-retrieval}
+### Abfrage und Datenabruf {#the-query-and-data-retrieval}
 
 Die Abfrage:
 
 * ist als Teil der [`reportbase`](#report-base)-Komponente definiert.
-* basiert auf dem [QueryBuilder von CQ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
-* ruft die Daten ab, die als Grundlage für den Bericht dienen. Jede Zeile des Ergebnissatzes (Tabelle) ist an einen Knoten gebunden, der von der Abfrage zurückgegeben wird. Aus diesem Datensatz werden dann spezifische Informationen für [einzelne Spalten](#column-base-component) extrahiert.
+* basiert auf der [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
+* Ruft die Daten ab, die als Grundlage für den Bericht verwendet werden. Jede Zeile der Ergebnismenge (Tabelle) ist an einen Knoten gebunden, der von der Abfrage zurückgegeben wird. Aus diesem Datensatz werden dann spezifische Informationen für [einzelne Spalten](#column-base-component) extrahiert.
 
-* besteht meist aus:
+* Besteht normalerweise aus:
 
-   * einem Stammpfad.
+   * Ein Stammpfad.
 
       Dieser gibt die Unterbaumstruktur des zu durchsuchenden Repositorys an.
 
@@ -136,13 +140,13 @@ Die Abfrage:
 
       Diese werden angewendet, um den (anfänglichen) Ergebnissatz zu generieren. Sie umfassen u. a. Einschränkungen hinsichtlich des Knotentyps oder Eigenschaftsbeschränkungen.
 
-**Entscheidend hierbei ist, dass jeder einzelne im Ergebnissatz der Abfrage zurückgegebene Knoten verwendet wird, um eine einzelne Zeile im Bericht zu generieren (also eine 1:1-Beziehung).**
+**Der zentrale Punkt hier ist, dass jeder einzelne Knoten, der in der Ergebnismenge der Abfrage zurückgegeben wird, zum Generieren einer einzelnen Zeile im Bericht verwendet wird (also eine 1:1-Beziehung).**
 
-Der Entwickler muss sicherstellen, dass die für einen Bericht definierte Abfrage eine für diesen Bericht geeignete Knotengruppe zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten, diese können auch von über- und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom Unterknoten `profile`..
+Der Entwickler muss sicherstellen, dass die für einen Bericht definierte Abfrage einen für diesen Bericht geeigneten Knotensatz zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten. Dies kann auch von übergeordneten und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom Unterknoten `profile`..
 
 ### Verarbeitungswarteschlange {#processing-queue}
 
-Die [Abfrage](#the-query-and-data-retrieval) gibt einen Ergebnissatz von Daten zurück, die als Zeilen im Bericht angezeigt werden. Jede Zeile des Ergebnissatzes wird (serverseitig) in [mehreren Phasen](#phases-of-the-processing-queue) verarbeitet, bevor sie an den Client zur Anzeige im Bericht übergeben wird.
+Die [Abfrage](#the-query-and-data-retrieval) gibt einen Ergebnissatz mit Daten zurück, die als Zeilen im Bericht angezeigt werden. Jede Zeile des Ergebnissatzes wird (serverseitig) in [mehreren Phasen](#phases-of-the-processing-queue) verarbeitet, bevor sie an den Client zur Anzeige im Bericht übergeben wird.
 
 Dies ermöglicht Folgendes:
 
@@ -154,8 +158,8 @@ Dies ermöglicht Folgendes:
 
    Beispielsweise können Pfade einem Titel zugeordnet werden (wie im menschenlesbareren Inhalt der entsprechenden Eigenschaft *jcr:title*).
 
-* das Anwenden von Filtern an verschiedenen Stellen.
-* das Erstellen zusammengesetzter Werte, falls erforderlich.
+* Anwenden von Filtern an verschiedenen Punkten.
+* Erstellen Sie bei Bedarf zusammengesetzte Werte.
 
    Beispielsweise Werte, die aus einem Text bestehen, der den Benutzern angezeigt wird, einem Wert, nach dem sortiert werden soll, und einer zusätzlichen URL, die (Client-seitig) zum Erstellen eines Links verwendet wird.
 
@@ -173,21 +177,21 @@ Die Schritte und Elemente lauten im Detail:
 
    Die Werteextraktionsfunktionen werden automatisch abhängig vom [Spaltentyp](#column-specific-definitions) ausgewählt. Sie dienen dazu, Werte aus der zugrunde liegenden JCR-Abfrage zu lesen und daraus einen Ergebnissatz zu erstellen. Danach kann eine weitere Verarbeitung erfolgen. Beispielsweise liest die Werteextraktionsfunktion für den Typ `diff` zwei Eigenschaften und berechnet den Einzelwert, der dann zum Ergebnissatz hinzugefügt wird. Die Werteextraktionsfunktionen können nicht konfiguriert werden.
 
-1. Auf diesen ersten Ergebnissatz, der Rohdaten enthält, wird eine [anfängliche Filterung](#column-specific-definitions) (Phase *raw*) angewendet.
+1. Zu dieser anfänglichen Ergebnismenge, die Rohdaten enthält, [Erstfilterung](#column-specific-definitions) (*raw* Phase) angewendet wird.
 
-1. Die Werte werden [vorverarbeitet](#processing-queue), wie für die Phase *apply* definiert.
+1. Werte sind [vorverarbeitet](#processing-queue); wie für *apply* Phase.
 
-1. Die vorverarbeiteten Werte werden (während der Phase *preprocessed*) [gefiltert](#column-specific-definitions).
+1. [Filter](#column-specific-definitions) (zugewiesen wird der *vorverarbeitet* phase) für die vorverarbeiteten Werte ausgeführt.
 
 1. Die Werte werden entsprechend dem [definierten Resolver](#processing-queue) aufgelöst.
-1. Die aufgelösten Werte werden (während der Phase *resolved*) [gefiltert](#column-specific-definitions).
+1. [Filter](#column-specific-definitions) (zugewiesen wird der *resolved* phase) wird für die aufgelösten Werte ausgeführt.
 
-1. Die Daten werden [gruppiert und aggregiert](#column-specific-definitions).
-1. Array-Daten werden durch Konvertierung in eine (zeichenfolgenbasierte) Liste aufgelöst.
+1. Daten sind [gruppiert und aggregiert](#column-specific-definitions).
+1. Array-Daten werden aufgelöst, indem sie in eine (zeichenfolgenbasierte) Liste konvertiert werden.
 
    Dies ist ein impliziter Schritt, bei dem ein mehrwertiges Ergebnis in eine anzeigbare Liste umgewandelt wird. Dies ist für (nicht aggregierte) Zellwerte erforderlich, die auf mehrwertigen JCR-Eigenschaften basieren.
 
-1. Die Werte werden wieder [vorverarbeitet](#processing-queue), wie für die Phase *afterApply* definiert.
+1. Werte werden erneut angezeigt [vorverarbeitet](#processing-queue); wie für *afterApply* Phase.
 
 1. Die Daten werden sortiert.
 1. Die verarbeiteten Daten werden an den Client übertragen.
@@ -198,18 +202,18 @@ Die Schritte und Elemente lauten im Detail:
 >
 >Andere Elemente der Verarbeitungswarteschlange sind in den `columnbase`-Komponenten definiert.
 
-## Aufbau und Konfiguration von Berichten {#report-construction-and-configuration}
+## Berichtaufbau und -konfiguration {#report-construction-and-configuration}
 
-Um einen Bericht zu erstellen und zu konfigurieren, wird Folgendes benötigt:
+Um einen Bericht zu erstellen und zu konfigurieren, ist Folgendes erforderlich:
 
-* Ein [Speicherort für die Definition Ihrer Berichtskomponenten](#location-of-report-components)
+* a [Speicherort für die Definition Ihrer Berichtskomponenten](#location-of-report-components)
 * Eine [ `reportbase`-Komponente](#report-base-component)
 * Mindestens eine [`columnbase`-Komponente](#column-base-component)
-* Eine [Seitenkomponente](#page-component)
-* Ein [Bereichtsdesign](#report-design)
-* Eine [Berichtsvorlage](#report-template)
+* a [Seitenkomponente](#page-component)
+* a [Berichtsentwurf](#report-design)
+* a [Berichtsvorlage](#report-template)
 
-### Speicherort von Berichtskomponenten {#location-of-report-components}
+### Speicherort der Berichtskomponenten {#location-of-report-components}
 
 Die standardmäßigen Berichtskomponenten befinden sich unter `/libs/cq/reporting/components`.
 
@@ -240,17 +244,17 @@ N:apps
 
 Eine Berichtseite muss den `sling:resourceType` von `/libs/cq/reporting/components/reportpage` verwenden.
 
-Eine benutzerdefinierte Seitenkomponente sollte (in den meisten Fällen) nicht erforderlich sein.
+Eine angepasste Seitenkomponente sollte nicht erforderlich sein (in den meisten Fällen).
 
-## reportbase-Komponente {#report-base-component}
+## Berichtsgrundkomponente {#report-base-component}
 
 Jeder Berichtstyp benötigt eine von `/libs/cq/reporting/components/reportbase` abgeleitete Container-Komponente.
 
-Diese Komponente dient als Container für den gesamten Bericht und stellt Informationen für Folgendes bereit:
+Diese Komponente fungiert als Container für den gesamten Bericht und bietet Informationen für:
 
-* Die [Abfragedefinition](#query-definition)
-* Ein [(optionales) Dialogfeld](#configuration-dialog) für die Konfiguration des Berichts
-* Sämtliche in den Bericht eingebundenen [Diagramme](#chart-definitions)
+* Die [Abfragedefinition](#query-definition).
+* Ein [(optional) Dialogfeld](#configuration-dialog) zum Konfigurieren des Berichts.
+* Alle [Diagramme](#chart-definitions) in den Bericht aufgenommen.
 
 ```
 N:<reportname> [cq:Component]
@@ -354,8 +358,8 @@ N:charting
 Tortendiagramm. Wird nur aus aktuellen Daten generiert.
 
       * `lineseries`
-Eine Reihe von Linien (die Punkte verbinden, welche die eigentlichen Momentaufnahmen darstellen). Wird nur aus Verlaufsdaten generiert.
-   * Je nach Diagrammtyp stehen weitere Eigenschaften zur Verfügung:
+Eine Reihe von Linien (die Punkte verbinden, welche die eigentlichen Momentaufnahmen darstellen). Wird nur aus historischen Daten generiert.
+   * Je nach Diagrammtyp sind zusätzliche Eigenschaften verfügbar:
 
       * für den Diagrammtyp `pie`:
 
@@ -393,7 +397,7 @@ Standardwert: `9` (dies ist auch der maximal zulässige Wert)
 
 ### Konfigurationsdialogfeld {#configuration-dialog}
 
-Jeder Bericht kann ein Konfigurationsdialogfeld aufweisen, in dem die Benutzer verschiedene Parameter für den Bericht angeben können. Auf dieses Dialogfeld kann über die Schaltfläche **Bearbeiten** zugegriffen werden, wenn die Berichtseite geöffnet ist.
+Jeder Bericht kann über ein Konfigurationsdialogfeld verfügen, in dem der Benutzer verschiedene Parameter für den Bericht angeben kann. Auf dieses Dialogfeld kann über die Schaltfläche **Bearbeiten** zugegriffen werden, wenn die Berichtseite geöffnet ist.
 
 Dieses Dialogfeld ist ein CQ-[Standarddialogfeld](/help/sites-developing/components-basics.md#dialogs) und kann als solches konfiguriert werden (weitere Informationen finden Sie unter [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)).
 
@@ -476,20 +480,20 @@ Zusätzlich kann ein Stammpfad für den Bericht definiert werden:
 
    Er kann durch Folgendes angegeben werden:
 
-   * Die [Berichtsvorlage](#report-template) (entweder als fester Wert oder als Standardwert für das Konfigurationsdialogfeld).
-   * Den Benutzer (mithilfe dieses Parameters).
+   * die [Berichtsvorlage](#report-template) (entweder als fester Wert oder als Standardwert für das Konfigurationsdialogfeld).
+   * Benutzer (mithilfe dieses Parameters)
 
-## columnbase-Komponente {#column-base-component}
+## Spaltenbasiskomponente {#column-base-component}
 
 Jeder Spaltentyp benötigt eine von `/libs/cq/reporting/components/columnbase` abgeleitete Komponente.
 
-Eine Spaltenkomponente definiert eine Kombination folgender Elemente:
+Eine Spaltenkomponente definiert eine Kombination aus folgenden Elementen:
 
-* Die Konfiguration der [spaltenspezifischen Abfrage](#column-specific-query).
-* Die [Resolver und die Vorverarbeitung](#resolvers-and-preprocessing).
+* Die [Spaltenspezifische Abfrage](#column-specific-query) Konfiguration.
+* Die [Resolver und Vorverarbeitung](#resolvers-and-preprocessing).
 * Die [spaltenspezifischen Definitionen](#column-specific-definitions) (beispielsweise Filter und Aggregate; untergeordneter Knoten `definitions`).
 * [Spaltenstandardwerte](#column-default-values).
-* Den [Client-Filter](#client-filter), der die anzuzeigenden Informationen aus den vom Server zurückgegebenen Daten extrahiert.
+* Die [Client-Filter](#client-filter) , um die anzuzeigenden Informationen aus den vom Server zurückgegebenen Daten zu extrahieren.
 * Darüber hinaus muss eine Spaltenkomponente eine geeignete Instanz von `cq:editConfig` bereitstellen, um nach Bedarf [Ereignisse und Aktionen](#events-and-actions) zu definieren.
 * Die Konfiguration für [generische Spalten](#generic-columns).
 
@@ -666,7 +670,7 @@ N:definitions
 
          Definiert den Pfad, der vorangestellt werden soll.
 
-      * `propertyName` (erforderlich)
+      * `propertyName` (mandatory)
 
          Definiert die Eigenschaft für den aufgelösten Pfad, unter dem sich der aktuelle Wert befindet.
 
@@ -692,7 +696,7 @@ N:definitions
 
 Die Resolver werden verwendet, um die erforderlichen Informationen zu extrahieren. Beispiele für die verschiedenen Resolver:
 
-**Const**
+**Kosten**
 
 Im folgenden Beispiel wird ein konstanter Wert von `VersionCreated` in die Zeichenfolge `New version created` aufgelöst.
 
@@ -781,7 +785,7 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Vorverarbeitung – Muster zum Suchen und Ersetzen {#preprocessing-find-and-replace-patterns}
+#### Vorverarbeitung - Suchen und Ersetzen von Mustern {#preprocessing-find-and-replace-patterns}
 
 Für die Vorverarbeitung können Sie ein `pattern` (definiert als [regulärer Ausdruck](https://de.wikipedia.org/wiki/Regulärer_Ausdruck) oder RegEx) angeben, das durch das Muster `replace` ersetzt wird:
 
@@ -815,7 +819,7 @@ Ein Ersetzungsmuster kann beispielsweise wie folgt aufgeschlüsselt werden:
 
    * `/content/geometrixx/en/services`
 
-#### Vorverarbeitung – Datentypformatierer {#preprocessing-data-type-formatters}
+#### Vorverarbeitung - Datentypforthemen {#preprocessing-data-type-formatters}
 
 Diese Formatierer konvertieren einen numerischen Wert in eine relative Zeichenfolge.
 
@@ -894,7 +898,7 @@ N:definitions
       Diese Option wird für Werte verwendet, die unterschiedliche Werte (aus unterschiedlichen Eigenschaften) zum Sortieren und Anzeigen verwenden.
    Zusätzlich gilt Folgendes: jeder der oben genannten Werte kann als Mehrfachwert definiert werden, beispielsweise definiert `string[]` ein Array von Zeichenfolgen.
 
-   Der Werte-Extractor wird durch den Spaltentyp ausgewählt. Wenn für einen Spaltentyp ein Werte-Extractor verfügbar ist, dann wird dieser verwendet. Andernfalls wird der standardmäßige Werte-Extractor verwendet.
+   Der Werte-Extractor wird durch den Spaltentyp ausgewählt. Wenn für einen Spaltentyp ein Werteextraktor verfügbar ist, wird dieser Extractor verwendet. Andernfalls wird der Standardwert-Extractor verwendet.
 
    Ein Typ kann (optional) einen Parameter heranziehen. Beispielsweise extrahiert `timeslot:year` das Jahr aus einem Datumsfeld. Typen mit ihren Parametern:
 
@@ -1005,7 +1009,7 @@ N:defaults
 
 ### Ereignisse und Aktionen {#events-and-actions}
 
-Die Bearbeitungskonfiguration definiert sowohl die erforderlichen Ereignisse, die die Listener erkennen müssen, als auch die Aktionen, die nach dem Auftreten dieser Ereignisse ausgeführt werden sollen. Weitere Informationen finden Sie in der [Einführung zur Komponentenentwicklung](/help/sites-developing/components.md).
+&quot;Konfiguration bearbeiten&quot;definiert die Ereignisse, die die Listener erkennen müssen, und die Aktionen, die angewendet werden sollen, nachdem diese Ereignisse aufgetreten sind. Weitere Informationen finden Sie in der [Einführung zur Komponentenentwicklung](/help/sites-developing/components.md).
 
 Die folgenden Werte müssen definiert werden, um sicherzustellen, dass alle erforderlichen Aktionen berücksichtigt werden:
 
@@ -1025,9 +1029,9 @@ N:cq:editConfig [cq:EditConfig]
 
 ### Generische Spalten {#generic-columns}
 
-Generische Spalten sind eine Erweiterung, bei der (die meisten) Spaltendefinitionen auf der Instanz des Spaltenknotens (und nicht auf dem Komponentenknoten) gespeichert werden.
+Generische Spalten sind eine Erweiterung, bei der (die meisten) die Spaltendefinitionen in der Instanz des Spaltenknotens (und nicht im Komponentenknoten) gespeichert werden.
 
-Sie weisen ein (standardmäßiges) Dialogfeld auf, das Sie für eine einzelne generische Komponente anpassen. Über dieses Dialogfeld können Berichtsbenutzer die Spalteneigenschaften einer generischen Spalte auf der Berichtsseite definieren (über den Menüpunkt **Spalteneigenschaften**).
+Sie verwenden ein (standardmäßiges) Dialogfeld, das Sie für die jeweilige generische Komponente anpassen. In diesem Dialogfeld kann der Berichtsbenutzer die Spalteneigenschaften einer generischen Spalte auf der Berichtsseite definieren (mithilfe der Menüoption **Spalteneigenschaften...**).
 
 Ein Beispiel hierfür ist die Spalte **Generisch** des **Benutzerberichts**. Siehe `/libs/cq/reporting/components/userreport/genericcol`.
 
@@ -1071,9 +1075,9 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
 ## Berichtsdesign {#report-design}
 
-Mit dem Design wird festgelegt, welche Spaltentypen für die Erstellung eines Berichts zur Verfügung stehen. Außerdem wird damit das Absatzsystem definiert, dem die Spalten hinzugefügt werden.
+Der Entwurf definiert, welche Spaltentypen für die Erstellung eines Berichts verfügbar sind. Außerdem wird das Absatzsystem definiert, dem die Spalten hinzugefügt werden.
 
-Es wird dringend empfohlen, für jeden Bericht ein eigenes Design zu erstellen. Damit ist eine umfassende Flexibilität gewährleistet. Siehe auch [Definieren neuer Berichte](#defining-your-new-report).
+Es wird dringend empfohlen, für jeden Bericht ein individuelles Design zu erstellen. Dadurch wird volle Flexibilität gewährleistet. Siehe auch [Definieren neuer Berichte](#defining-your-new-report).
 
 Die standardmäßigen Berichtskomponenten befinden sich unter `/etc/designs/reports`.
 
@@ -1093,7 +1097,7 @@ Erforderliche Designeigenschaften werden unter `jcr:content/reportpage/report/co
 
    Eigenschaft mit Wert dem Wert `cq/reporting/components/repparsys`.
 
-Ein Beispiel für ein Designsnippet (aus dem Design des Komponentenberichts):
+Ein Beispiel für ein Design-Snippet (aus dem Entwurf des Komponentenberichts entnommen) ist:
 
 ```xml
 <!-- ... -->
@@ -1113,17 +1117,17 @@ Ein Beispiel für ein Designsnippet (aus dem Design des Komponentenberichts):
 <!-- ... -->
 ```
 
-Die Angabe von Designs für einzelne Spalten ist nicht erforderlich. Verfügbare Spalten können im Design-Modus definiert werden.
+Es ist nicht erforderlich, Designs für einzelne Spalten anzugeben. Verfügbare Spalten können im Design-Modus definiert werden.
 
 >[!NOTE]
 >
->Es wird empfohlen, keine Änderungen an den Standardberichtsdesigns vorzunehmen. Dadurch wird sichergestellt, dass keine Änderungen beim Aktualisieren oder Installieren von Hotfixes verloren gehen.
+>Es wird empfohlen, keine Änderungen an den Standardberichtsdesigns vorzunehmen. Dadurch soll sichergestellt werden, dass Sie beim Aktualisieren oder Installieren von Hotfixes keine Änderungen verlieren.
 >
 >Kopieren Sie den Bericht und das entsprechende Design, wenn Sie einen Standardbericht anpassen möchten.
 
 >[!NOTE]
 >
->Standardspalten können beim Erstellen eines Berichts automatisch erstellt werden. Diese werden in der Vorlage angegeben.
+>Standardspalten können bei der Berichterstellung automatisch erstellt werden. Diese werden in der Vorlage angegeben.
 
 ## Berichtsvorlage {#report-template}
 
@@ -1136,7 +1140,7 @@ Die Vorlage muss:
 * das zu verwendende Design angeben
 * einen untergeordneten Knoten `report` erstellen, der über die Eigenschaft `sling:resourceType` auf die Container-Komponente (`reportbase`) verweist.
 
-Ein Beispiel für ein Vorlagensnippet (aus der Komponentenberichtsvorlage):
+Ein Beispiel für ein Vorlagenfragment (aus der Komponentenberichtsvorlage entnommen) ist:
 
 ```xml
 <!-- ... -->
@@ -1151,7 +1155,7 @@ Ein Beispiel für ein Vorlagensnippet (aus der Komponentenberichtsvorlage):
 <!-- .. -->
 ```
 
-Beispiel für ein Vorlagensnippet, das die Definition des Stammpfads (aus der Benutzerberichtsvorlage) zeigt:
+Ein Beispiel für einen Vorlagenausschnitt, der die Definition des Stammpfads (aus der Benutzerberichtsvorlage) anzeigt:
 
 ```xml
 <!-- ... -->
@@ -1190,18 +1194,18 @@ N:apps
                 N:<reportname> [sling:Folder]
 ```
 
-## Erstellen eigener Berichte – Beispiel {#creating-your-own-report-an-example}
+## Erstellen eines eigenen Berichts - ein Beispiel {#creating-your-own-report-an-example}
 
 ### Definieren neuer Berichte {#defining-your-new-report}
 
 Um einen neuen Bericht zu definieren, müssen Sie Folgendes erstellen und konfigurieren:
 
-1. den Stamm für Ihre Berichtskomponenten.
-1. die reportbase-Komponente.
-1. mindestens eine columnbase-Komponente.
-1. das Berichtsdesign.
-1. den Stamm für Ihre Berichtsvorlage.
-1. die Berichtsvorlage.
+1. Der Stamm für Ihre Berichtskomponenten.
+1. Die ReportBase-Komponente.
+1. Eine oder mehrere Spaltengrundkomponenten.
+1. Der Berichtsentwurf.
+1. Der Stamm für Ihre Berichtsvorlage.
+1. Die Berichtsvorlage.
 
 Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht definiert, der alle OSGi-Konfigurationen im Repository aufführt, d. h. alle Instanzen des Knotens `sling:OsgiConfig`.
 
@@ -1270,9 +1274,9 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
    * nach allen Knoten des Typs `sling:OsgiConfig` sucht.
    * sowohl `pie`- als auch `lineseries`-Diagramme anzeigt.
-   * den Benutzern ein Dialogfeld zum Konfigurieren des Berichts bereitstellt.
+   * stellt ein Dialogfeld bereit, in dem der Benutzer den Bericht konfigurieren kann
 
-1. Definieren Sie Ihre erste Spaltenkomponente („columnbase“). Zum Beispiel `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
+1. Definieren Sie die Komponente für die erste Spalte (columnbase) . Zum Beispiel `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1371,15 +1375,15 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
    * Titel und Beschreibungen für die Vorlage bereitstellt.
    * eine Miniaturansicht für die Verwendung in der Vorlagenliste bereitstellt (die vollständige Definition dieses Knotens ist oben nicht aufgeführt – am einfachsten lässt sich eine Instanz von „thumbnail.png“ aus einem vorhandenen Bericht kopieren).
 
-### Erstellen von Instanzen neuer Berichte {#creating-an-instance-of-your-new-report}
+### Erstellen einer Instanz Ihres neuen Berichts {#creating-an-instance-of-your-new-report}
 
-Sie können nun eine Instanz Ihres neuen Berichts erstellen:
+Eine Instanz Ihres neuen Berichts kann jetzt erstellt werden:
 
 1. Öffnen Sie die **Tools-Konsole**.
 
-1. Wählen Sie im linken Bedienfeld **Berichte** aus.
-1. Klicken Sie dann in der Symbolleiste auf **Neu**. Definieren Sie einen **Titel** und **Namen**, wählen Sie Ihren neuen Berichtstyp (die **OSGi-Berichtsvorlage**) aus der Liste der Vorlagen aus und klicken Sie anschließen auf **Erstellen**.
-1. Ihre neue Berichtsinstanz wird in der Liste angezeigt. Doppelklicken Sie darauf, um sie zu öffnen.
+1. Auswählen **Berichte** im linken Bereich.
+1. Dann **Neu...** aus der Symbolleiste. Definieren Sie eine **Titel** und **Name**, wählen Sie Ihren neuen Berichtstyp (die **OSGi-Berichtsvorlage**) in der Liste der Vorlagen klicken Sie auf **Erstellen**.
+1. Ihre neue Berichtsinstanz wird in der Liste angezeigt. Doppelklicken Sie auf diesen Link, um ihn zu öffnen.
 1. Ziehen Sie eine Komponente (in diesem Beispiel **Bundle** in der Gruppe **OSGi Report**) aus dem Sidekick, um die erste Spalte zu erstellen, und [beginnen Sie mit dem Definieren des Berichts](/help/sites-administering/reporting.md#the-basics-of-report-customization)..
 
    >[!NOTE]
@@ -1398,18 +1402,18 @@ Sie können nun eine Instanz Ihres neuen Berichts erstellen:
 
 In diesem Abschnitt werden die erweiterten Konfigurationsoptionen für die OSGi-Dienste beschrieben, die das Framework für das Reporting implementieren.
 
-Diese können über das Konfigurationsmenü der Web-Konsole eingesehen werden (beispielsweise verfügbar unter `http://localhost:4502/system/console/configMgr`). Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Diese können über das Konfigurationsmenü der Web-Konsole eingesehen werden (beispielsweise verfügbar unter `http://localhost:4502/system/console/configMgr`). Bei der Verwendung von AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-### Grundlegender Dienst („Day CQ Reporting Configuration“) {#basic-service-day-cq-reporting-configuration}
+### Grundlegender Dienst (Day CQ Reporting Configuration) {#basic-service-day-cq-reporting-configuration}
 
-* **Zeitzone** definiert die Zeitzone, für die Verlaufsdaten erstellt werden. Damit soll sichergestellt werden, dass das Diagramm mit den Verlaufsdaten für jeden Benutzer weltweit dieselben Daten anzeigt.
-* **Gebietsschema** definiert das Gebietsschema, das in Verbindung mit der **Zeitzone** für Verlaufsdaten verwendet werden soll. Das Gebietsschema wird verwendet, um einige gebietsschemaspezifische Kalendereinstellungen festzulegen (z. B. ob der erste Tag der Woche Sonntag oder Montag ist).
+* **Zeitzone** definiert die Zeitzone, für die historische Daten erstellt werden. Dadurch soll sichergestellt werden, dass das historische Diagramm für jeden Benutzer auf der ganzen Welt dieselben Daten anzeigt.
+* **Gebietsschema** definiert das Gebietsschema, das zusammen mit dem **Zeitzone** für historische Daten. Das Gebietsschema wird verwendet, um einige gebietsschemaspezifische Kalendereinstellungen zu bestimmen (z. B. ob der erste Tag einer Woche Sonntag oder Montag ist).
 
-* **Momentaufnahmenpfad** definiert den Stammpfad, unter dem Momentaufnahmen für Diagramme mit Verlaufsdaten gespeichert werden.
-* **Pfad zu Berichten** definiert den Pfad, unter dem sich die Berichte befinden. Dieser wird vom Momentaufnahmendienst verwendet, um die Berichte zu bestimmen, für die tatsächlich Momentaufnahmen erstellt werden sollen.
-* **Tägliche Momentaufnahmen** definiert die Stunde jedes Tages, in der die täglichen Momentaufnahmen gemacht werden. Die angegebene Stunde bezieht sich auf die lokale Zeitzone des Servers.
+* **Snapshot-Pfad** definiert den Stammpfad, in dem Momentaufnahmen für historische Diagramme gespeichert werden.
+* **Pfad zu Berichten** definiert den Pfad, in dem sich die Berichte befinden. Dies wird vom Snapshot-Dienst verwendet, um die Berichte zu bestimmen, für die Momentaufnahmen erstellt werden sollen.
+* **Tägliche Momentaufnahmen** definiert die Stunde jedes Tages, in der täglich Momentaufnahmen gemacht werden. Die angegebene Stunde befindet sich in der lokalen Zeitzone des Servers.
 * **Stündliche Momentaufnahmen** definiert die Minute jeder Stunde, in der stündliche Momentaufnahmen gemacht werden.
-* **Zeilen (max.)** definiert die maximale Anzahl von Zeilen, die für jede Momentaufnahme gespeichert werden. Dieser Wert sollte mit Bedacht gewählt werden. Wenn er zu hoch ist, wirkt sich dies auf die Größe des Repositorys aus, wenn er zu niedrig ist, können Daten aufgrund der Art und Weise, wie Verlaufsdaten verarbeitet werden, ungenau sein.
+* **Zeilen (max.)** definiert die maximale Anzahl von Zeilen, die für jede Momentaufnahme gespeichert werden. Dieser Wert sollte nach vernünftigem Ermessen ausgewählt werden. Wenn es zu hoch ist, wirkt sich dies auf die Größe des Repositorys aus. Wenn es zu niedrig ist, sind die Daten aufgrund der Art und Weise, wie historische Daten verarbeitet werden, möglicherweise nicht genau.
 * **Falsche Daten** – wenn diese Option aktiviert ist, können falsche Verlaufsdaten mithilfe der `fakedata`-Auswahl erstellt werden. Wenn diese Option deaktiviert ist, wird bei Verwendung der `fakedata`-Auswahl eine Ausnahme ausgelöst.
 
    Da es sich um falsche Daten handelt, dürfen sie *ausschließlich* zu Test- und Debugging-Zwecken verwendet werden.
@@ -1424,15 +1428,15 @@ Diese können über das Konfigurationsmenü der Web-Konsole eingesehen werden (b
 
 * **Momentaufnahmenbenutzer erzwingen** – wenn diese Option aktiviert ist, werden alle Momentaufnahmen mit dem unter *Momentaufnahmenbenutzer* angegebenen Benutzer gemacht. Dies kann bei unsachgemäßem Vorgehen schwerwiegende Auswirkungen auf die Sicherheit haben.
 
-### Cache-Einstellungen („Day CQ Reporting Cache“) {#cache-settings-day-cq-reporting-cache}
+### Cache-Einstellungen (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
 
-* **Aktivieren** ermöglicht es Ihnen, das Caching von Berichtsdaten zu aktivieren bzw. zu deaktivieren. Das Aktivieren des Berichtcaches hält die Berichtsdaten während mehrerer Anforderungen im Speicher vor. Damit lässt sich zwar die Leistung steigern, allerdings wird auch mehr Speicherplatz beansprucht, was in unter extremen Umständen zu Speicherausfällen führen kann.
-* **TTL** definiert die Zeit (in Sekunden), für die Berichtsdaten zwischengespeichert werden. Mit einem höheren Wert wird zwar die Leistung gesteigert, ggf. werden dann aber ungenaue Daten zurückgegeben, wenn sich die Daten innerhalb des Zeitraums ändern.
-* **Max. Anzahl an Einträgen** definiert die maximale Anzahl an Berichten, die gleichzeitig zwischengespeichert werden.
+* **Aktivieren** ermöglicht es Ihnen, das Zwischenspeichern von Berichtsdaten zu aktivieren oder zu deaktivieren. Durch Aktivierung des Berichts-Caches bleiben Berichtsdaten bei mehreren Anforderungen im Speicher. Dies kann die Leistung steigern, führt jedoch zu einem höheren Speicherverbrauch und kann unter extremen Umständen zu Speicherausfällen führen.
+* **TTL** definiert die Zeit (in Sekunden), für die Berichtsdaten zwischengespeichert werden. Eine höhere Zahl erhöht die Leistung, kann aber auch ungenaue Daten zurückgeben, wenn sich die Daten innerhalb des Zeitraums ändern.
+* **Max. Einträge** definiert die maximale Anzahl von Berichten, die gleichzeitig zwischengespeichert werden sollen.
 
 >[!NOTE]
 >
->Die Berichtsdaten können je nach Benutzer und Sprache unterschiedlich sein. Daher werden die Berichtsdaten pro Bericht, Benutzer und Sprache zwischengespeichert. Dies bedeutet, dass ein Wert für **Max. Anzahl an Einträgen** von `2` Daten für Folgendes zwischenspeichert:
+>Berichtsdaten können für jeden Benutzer und jede Sprache unterschiedlich sein. Daher werden Berichtsdaten pro Bericht, Benutzer und Sprache zwischengespeichert. Dies bedeutet, dass ein Wert für **Max. Anzahl an Einträgen** von `2` Daten für Folgendes zwischenspeichert:
 >
 >* entweder für einen Bericht für zwei Benutzer mit unterschiedlichen Spracheinstellungen
 >* oder für einen Benutzer und zwei Berichte

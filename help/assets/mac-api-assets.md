@@ -5,14 +5,18 @@ contentOwner: AG
 feature: APIs,Assets HTTP API,Developer Tools
 role: Developer
 exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 99%
+source-wordcount: '1588'
+ht-degree: 95%
 
 ---
 
 # Assets-HTTP-API {#assets-http-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Assets-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Assets, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierten Inhalten mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert.
 
@@ -31,11 +35,11 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 ## Datenmodell {#data-model}
 
-Die Assets-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets).
+Die Assets-HTTP-API stellt zwei wichtige Elemente, Ordner und Assets bereit (für Standard-Assets).
 
 ### Ordner {#folders}
 
-Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie stellen Container für andere Ordner oder Assets dar. Ordner enthalten folgende Komponenten:
+Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie sind Container für andere Ordner oder Asserts. Ordner enthalten folgende Komponenten:
 
 **Entitäten**: Zu den Entitäten eines Ordners zählen die untergeordneten Elemente, z. B. die Ordner und Assets.
 

@@ -10,16 +10,20 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 description: Catalog Producer
 exl-id: 00776df6-1afe-4b14-a267-3ceba22dcad5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 100%
+source-wordcount: '918'
+ht-degree: 76%
 
 ---
 
 # Catalog Producer{#catalog-producer}
 
-Erfahren Sie, wie Sie mit Catalog Producer in AEM Assets Produktkataloge mit Ihren digitalen Assets generieren.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Erfahren Sie, wie Sie mit Catalog Producer in AEM Assets Produktkataloge mit Ihren digitalen Assets erstellen können.
 
 Mit dem Catalog Producer von Adobe Experience Manager (AEM) Assets können Sie mit InDesign-Vorlagen, die Sie aus einer InDesign-Anwendung importieren, Kataloge für Ihre Markenprodukte erstellen. Um InDesign-Vorlagen zu importieren, integrieren Sie zunächst AEM Assets mit einem InDesign-Server.
 
@@ -29,17 +33,17 @@ Als Teil des Integrationsvorgangs konfigurieren Sie den Workflow **DAM-Update-As
 
 >[!NOTE]
 >
->Sie können aus InDesign-Dateien InDesign-Vorlagen erstellen, bevor Sie sie in AEM Assets importieren. Weitere Informationen finden Sie unter [Arbeiten mit Dateien und Vorlagen](https://helpx.adobe.com/de/indesign/using/files-templates.html).
+>Sie können InDesign-Vorlagen aus InDesign-Dateien generieren, bevor Sie sie in AEM Assets importieren. Weitere Informationen finden Sie unter [Arbeiten mit Dateien und Vorlagen](https://helpx.adobe.com/de/indesign/using/files-templates.html).
 >
->Sie können die Elemente in Ihren InDesign-Vorlagen XML-Tags zuordnen. Die zugeordneten Tags werden als Eigenschaften angezeigt, wenn Sie im Catalog Producer den Vorlageneigenschaften Produkteigenschaften zuordnen. Informationen zu XML-Tags in InDesign-Dateien finden Sie unter [Taggen von Inhalten für XML](https://helpx.adobe.com/de/indesign/using/tagging-content-xml.html).
+>Sie können die Elemente in Ihren InDesign-Vorlagen XML-Tags zuordnen. Die zugeordneten Tags werden als Eigenschaften angezeigt, wenn Sie die Produkteigenschaften den Vorlageneigenschaften in Catalog Producer zuordnen. Informationen zu XML-Tags in InDesign-Dateien finden Sie unter [Taggen von Inhalten für XML](https://helpx.adobe.com/de/indesign/using/tagging-content-xml.html).
 
 >[!NOTE]
 >
->Nur InDesign-Dateien (.indd) werden als Vorlagen verwendet. Dateien mit der Erweiterung .indt werden nicht unterstützt.
+>Als Vorlagen werden nur InDesign-Dateien (.indd) verwendet. Dateien mit der Erweiterung .indt werden nicht unterstützt.
 
 ## Erstellen eines Katalogs {#creating-a-catalog}
 
-Der Catalog Producer verwendet Daten der Produktdatenverwaltung (PIM), um Produkteigenschaften den in der Vorlage angezeigten XML-Eigenschaften zuzuordnen. Um einen Katalog zu erstellen, führen Sie die folgenden Schritte durch:
+Catalog Producer verwendet Produktinformationsverwaltungsdaten (PIM), um Produkteigenschaften den in der Vorlage angezeigten XML-Eigenschaften zuzuordnen. Um einen Katalog zu erstellen, führen Sie die folgenden Schritte durch:
 
 1. Tippen oder klicken Sie in der Assets-Oberfläche auf das **AEM-Logo**. Rufen Sie dann **Assets > Kataloge** auf.
 1. Tippen oder klicken Sie auf der Seite **Kataloge** in der Symbolleiste auf **Erstellen**. Wählen Sie anschließend aus der Liste **Katalog** aus.
@@ -56,9 +60,9 @@ Der Catalog Producer verwendet Daten der Produktdatenverwaltung (PIM), um Produk
 
 1. Um Seiten zum Katalog hinzuzufügen, tippen oder klicken Sie in der Symbolleiste auf **Erstellen** und wählen dann die Option **Neue Seite** aus.
 1. Wählen Sie im Assistenten eine InDesign-Vorlage für Ihre Seite aus. Tippen oder klicken Sie anschließend auf **Weiter**.
-1. Geben Sie einen Namen für die Seite sowie eine optionale Beschreibung an. Legen Sie ggf. Tags fest.
-1. Tippen oder klicken Sie in der Symbolleiste auf **Erstellen**. Tippen oder klicken Sie dann im Dialogfeld auf **Öffnen**. Die Eigenschaften des Produkts werden im linken Fensterbereich angezeigt. Die vordefinierten Eigenschaften der InDesign-Vorlage werden im rechten Bereich angezeigt.
-1. Ziehen Sie die Produkteigenschaften aus dem linken Bereich in die InDesign-Vorlageneigenschaften und erstellen Sie eine Zuordnung zwischen diesen Eigenschaften.
+1. Geben Sie einen Namen für die Seite und eine optionale Beschreibung an. Geben Sie gegebenenfalls Tags an.
+1. Tippen oder klicken Sie in der Symbolleiste auf **Erstellen**. Tippen oder klicken Sie dann im Dialogfeld auf **Öffnen**. Die Eigenschaften für das Produkt werden im linken Bereich angezeigt. Die vordefinierten Eigenschaften für die InDesign-Vorlage werden im rechten Bereich angezeigt.
+1. Ziehen Sie aus dem linken Bereich die Produkteigenschaften in die Eigenschaften der InDesign-Vorlage und erstellen Sie eine Zuordnung zwischen ihnen.
 
    Um anzuzeigen, wie die Seite in Echtzeit angezeigt wird, tippen oder klicken Sie im rechten Bereich auf die Registerkarte **Vorschau**.
 
@@ -102,4 +106,4 @@ Wenn die Option „Acrobat (PDF)“ ausgewählt ist, wird zusätzlich zur InDesi
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
-   Überprüfen Sie die Seiten in Ihrem Katalog in der Vorschau. Tippen oder klicken Sie auf **Schließen**, um die Vorschau zu schließen.
+   Überprüfen Sie die Seiten in Ihrem Katalog in der Vorschau. Tippen/klicken **Schließen** , um die Vorschau zu schließen.

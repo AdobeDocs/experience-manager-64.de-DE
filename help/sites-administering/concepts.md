@@ -1,7 +1,7 @@
 ---
 title: Konzepte
 seo-title: Concepts
-description: Allgemeine eCommerce-Konzepte in AEM
+description: Allgemeine Konzepte von eCommerce mit AEM.
 seo-description: General Concepts of eCommerce with AEM.
 uuid: 1e3f0518-7797-48a7-bac7-0dc3ddaa0385
 contentOwner: Guillaume Carlino
@@ -11,38 +11,42 @@ content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
 feature: Commerce Integration Framework
 exl-id: 8140db99-fec6-4efd-87d9-62efd157d54a
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 100%
+source-wordcount: '4560'
+ht-degree: 41%
 
 ---
 
 # Konzepte{#concepts}
 
-Das Integrationsframework stellt Mechanismen und Komponenten für die folgenden Aufgaben bereit:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Das Integrations-Framework bietet Mechanismen und Komponenten für:
 
 * Verbindung zu einer eCommerce-Engine
-* Abrufen von Daten in AEM
-* Anzeigen dieser Daten und Erfassen der Antworten der Käufer
-* Zurückgabe der Transaktionsdetails
-* Durchsuchen der Daten beider Systeme
+* Daten in AEM abrufen
+* Anzeigen dieser Daten und Erfassen der Antworten des Käufers
+* Zurückgeben von Transaktionsdetails
+* Suchen nach Daten beider Systeme
 
 Das heißt:
 
-* Käufer können sich registrieren und umgehend einkaufen.
-* Preisänderungen werden den Käufern ohne Verzögerung angezeigt.
-* Produkte lassen sich bei Bedarf hinzufügen.
+* Käufer können sich registrieren und ohne Wartezeit einkaufen.
+* Preisänderungen werden von den Käufern unverzüglich beobachtet.
+* Produkte können nach Bedarf hinzugefügt werden.
 
 >[!NOTE]
 >
->Das eCommerce-Framework kann mit Folgendem verwendet werden:
+>Das eCommerce-Framework kann mit folgenden Funktionen verwendet werden:
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 >
 >* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
 >
->* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
+>* [Salesforce-Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 >
 
 
@@ -60,58 +64,58 @@ Das heißt:
 
 >[!CAUTION]
 >
->Die AEM-Standardinstallation umfasst die generische AEM-eCommerce-Implementierung (JCR).
+>Die standardmäßige AEM-Installation umfasst die allgemeine AEM (JCR) eCommerce-Implementierung.
 >
->Sie dient derzeit zur Veranschaulichung bzw. als Grundlage für eine benutzerdefinierte Implementierung nach Ihren jeweiligen Anforderungen.
+>Dies ist derzeit für Demonstrationszwecke oder als Basis für eine benutzerdefinierte Implementierung gemäß Ihren Anforderungen gedacht.
 
-Um den Betrieb zu optimieren, konzentrieren sich AEM und die eCommerce-Engine auf ihren jeweiligen Fachbereich. Daten werden in Echtzeit zwischen ihnen ausgetauscht, z. B.:
+Um den Betrieb zu optimieren, konzentrieren sich sowohl AEM als auch die eCommerce-Engine auf ihr eigenes Fachgebiet. Informationen werden zwischen den beiden in Echtzeit übertragen. Beispiel:
 
-* AEM kann:
+* AEM können:
 
    * Anfrage:
 
-      * Produktdaten von der eCommerce-Engine
+      * Produktinformationen aus der eCommerce-Engine.
    * Geben Sie Folgendes an:
 
-      * Anzeigen von Produktdaten, Warenkorb und Kasse für Benutzer
-      * Warenkorb und Bezahlungsdaten für die eCommerce-Engine
-      * Suchmaschinenoptimierung (SEO)
-      * Community-Funktion
-      * unstrukturierte Marketinginteraktionen
+      * Benutzeransichten für Produktinformationen, Warenkorb und Checkout.
+      * Warenkorb und Checkout-Informationen an die eCommerce-Engine.
+      * Suchmaschinenoptimierung (SEO).
+      * Community-Funktionalität.
+      * Unstrukturierte Marketinginteraktionen.
 
 
 * Die eCommerce-Engine kann:
 
    * Geben Sie Folgendes an:
 
-      * Produktdaten von der Datenbank
-      * Produktvarianten-Verwaltung
-      * Auftragsverwaltung
+      * Produktinformationen aus der Datenbank.
+      * Verwaltung von Produktvarianten.
+      * Auftragsverwaltung.
       * Enterprise Resource Planning (ERP)
-      * Suche in den Produktdaten
+      * Suchen Sie in den Produktinformationen.
    * Prozess:
 
-      * Warenkorb
-      * Kasse
-      * Auftragserfüllung
+      * Der Warenkorb.
+      * Der Checkout.
+      * Auftragserfüllung.
 
 
 >[!NOTE]
 >
 >Die genauen Details hängen von der eCommerce-Engine und der Projektimplementierung ab.
 
-Eine Reihe vorkonfigurierter AEM-Komponenten wird zur Verwendung der Integrationsebene bereitgestellt. Aktuell gehören dazu folgende:
+Eine Reihe vorkonfigurierter AEM-Komponenten wird zur Verwendung der Integrationsebene bereitgestellt. Dazu gehören derzeit:
 
-* Produktangaben
+* Produktinformationen
 * Warenkorb
-* Kasse
+* Auschecken
 * Mein Konto
 
-Verschiedene Suchoptionen sind ebenfalls verfügbar.
+Es stehen auch verschiedene Suchoptionen zur Verfügung.
 
 ## Architektur {#architecture}
 
-Das Integrationsframework stellt die API, mehrere Komponenten zur Veranschaulichung der Funktionalität und einige Erweiterungen für Beispiele für Anbindungsmethoden bereit:
+Das Integrations-Framework stellt die API, eine Reihe von Komponenten zur Veranschaulichung der Funktionalität und mehrere Erweiterungen bereit, um Beispiele für Verbindungsmethoden bereitzustellen:
 
 ![chlimage_1-167](assets/chlimage_1-167.png)
 
@@ -123,40 +127,40 @@ Das Integrationsframework stellt die API, mehrere Komponenten zur Veranschaulich
 
 AEM eCommerce wird mit einer eCommerce-Engine implementiert:
 
-* Das eCommerce-Integrationsframework ermöglicht Ihnen die unkomplizierte Integration einer eCommerce-Engine mit AEM. Die speziell entwickelte eCommerce-Engine steuert Produktdaten, Warenkörbe, Bezahlungen und die Auftragserfüllung. AEM steuert die Datenanzeige und Marketingkampagnen.
+* Das eCommerce-Integrations-Framework wurde entwickelt, um Ihnen die einfache Integration einer eCommerce-Engine in AEM zu ermöglichen. Die speziell entwickelte eCommerce-Engine steuert Produktdaten, Warenkörbe, Checkout und die Auftragserfüllung, während AEM die Datenanzeige und Marketingkampagnen steuert.
 
 
 >[!NOTE]
 >
->Die AEM-Standardinstallation umfasst die generische AEM-eCommerce-Implementierung (JCR).
+>Die standardmäßige AEM-Installation umfasst die allgemeine AEM (JCR) eCommerce-Implementierung.
 >
->Sie dient derzeit zur Veranschaulichung bzw. als Grundlage für eine benutzerdefinierte Implementierung nach Ihren jeweiligen Anforderungen.
+>Dies ist derzeit für Demonstrationszwecke oder als Basis für eine benutzerdefinierte Implementierung gemäß Ihren Anforderungen gedacht.
 >
->AEM eCommerce, implementiert in AEM, mit generischer Entwicklung basierend auf JCR, ist:
+>AEM in AEM implementierter eCommerce mithilfe einer generischen, auf JCR basierenden Entwicklung lautet:
 >
->* Ein eigenständiges, AEM-natives eCommerce-Beispiel, um die Nutzung der API zu veranschaulichen. Sie können damit in Verbindung mit den vorhandenen Datenanzeigen und Marketingkampagnen Produktdaten, Warenkörbe und Bezahlungen kontrollieren. In diesem Fall ist die Produktdatenbank im nativen Repository von AEM gespeichert (die [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)-Implementierung von Adobe).\
->  Die standardmäßige AEM-Installation enthält die Grundlagen der [generischen eCommerce-Implementierung](/help/sites-administering/generic.md).
+>* Ein eigenständiges, AEM-natives eCommerce-Beispiel zur Veranschaulichung der Verwendung der API. Damit können Produktdaten, Warenkörbe und Checkout in Verbindung mit den vorhandenen Datenanzeige- und Marketingkampagnen gesteuert werden. In diesem Fall wird die Produktdatenbank im nativen Repository von AEM gespeichert (Implementierung der Adobe von [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)).\
+   >  Die standardmäßige AEM-Installation enthält die Grundlagen der [generischen eCommerce-Implementierung](/help/sites-administering/generic.md).
 
 
 ### Commerce-Anbieter {#commerce-providers}
 
-Beim Importieren von Daten aus einer Commerce-Engine in Ihre AEM-eCommerce-Website erhalten die Importtools ihre Daten von einem Commerce-Anbieter. Ein Commerce-Anbieter kann mehrere Importtools unterstützen.
+Beim Importieren von Daten aus einer Commerce-Engine in Ihre AEM E-Commerce-Site wird ein Commerce-Anbieter verwendet, um den Importeuren Daten bereitzustellen. Ein Commerce-Anbieter kann mehrere Importeure unterstützen.
 
-Ein Commerce-Anbieter ist ein angepasster AEM-Code, der entweder
+Ein Commerce-Anbieter ist AEM Code angepasst an:
 
-* eine Schnittstelle zu einer Backend-Commerce-Engine darstellt oder
-* ein Commerce-System auf dem JCR-Repository implementiert.
+* Schnittstelle zu einer Back-End-Commerce-Engine
+* ein Commerce-System über dem JCR-Repository implementieren
 
-Derzeit sind zwei Beispiel-Commerce-Anbieter für AEM verfügbar:
+Derzeit stehen zwei Beispiel-Commerce-Anbieter für AEM zur Verfügung:
 
-* einer für geometrixx-hybris
-* ein weiterer für geometrixx-generic (JCR)
+* ein für geometrixx-hybris
+* ein anderer für geometrixx-generic (JCR)
 
-Dennoch müssen Sie für ein Projekt in der Regel einen eigenen, angepassten Commerce-Anbieter entsprechend dem PIM und Produktdatenschema entwickeln.
+In der Regel muss ein Projekt jedoch einen eigenen, benutzerdefinierten Commerce-Anbieter entwickeln, der für sein PIM- und Produktdatenschema spezifisch ist.
 
 >[!NOTE]
 >
->Die Geometrixx-Importtools nutzen CSV-Dateien. In den Kommentaren über ihre Implementierung finden Sie eine Beschreibung des akzeptierten Schemas (samt der zulässigen benutzerdefinierten Eigenschaften).
+>Die Geometrixx-Importeure verwenden CSV-Dateien. In den Kommentaren über ihrer Implementierung ist eine Beschreibung des akzeptierten Schemas enthalten (mit zulässigen benutzerdefinierten Eigenschaften).
 
 Der [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) verwaltet (über [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) eine Liste der Implementierungen der [ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)- und [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)-Schnittstelle. Diese sind im Import-Tool-Assistenten im Dropdown-Feld **Import-Tool/Commerce-Anbieter** aufgeführt (mit der Eigenschaft `commerceProvider` als Name).
 
@@ -173,38 +177,38 @@ Das Format der Quell-Importdatei wird vom Import-Tool definiert. Alternativ kann
 
 ## Rollen {#roles}
 
-Das integrierte System unterstützt die folgenden Rollen, um die Daten zu verwalten:
+Das integrierte System ermöglicht die Pflege der Daten durch die folgenden Rollen:
 
 * Produktdatenverwaltung (PIM)-Benutzer, der Folgendes verwaltet:
 
-   * Produktangaben.
-   * Klassifikationsschema, Kategorisierung, Genehmigung
-   * Interaktion mit dem Digital Asset Management
-   * Preisfestlegung – stammt häufig von einem ERP-System und wird nicht explizit im Commerce-System verwaltet
+   * Produktinformationen.
+   * Taxonomie, Kategorisierung, Genehmigung.
+   * Interagiert mit dem digitalen Asset-Management.
+   * Preise - Häufig handelt es sich dabei um ein ERP-System, das nicht explizit im Commerce-System verwaltet wird.
 
-* Autor/Marketingmanager, der Folgendes verwaltet:
+* Autor/Marketing-Manager, der Folgendes verwaltet:
 
-   * Marketinginhalte für alle Kanäle
+   * Marketinginhalte für alle Kanäle.
    * Promotions.
    * Gutscheine.
    * Kampagnen.
 
 * Surfer/Käufer, die:
 
-   * die Produktdaten anzeigen
-   * Artikel in den Warenkorb legen
-   * ihre Aufträge bezahlen
-   * die Auftragserfüllung erwarten
+   * Zeigt Ihre Produktinformationen an.
+   * Setzt Artikel in den Warenkorb.
+   * Checkt ihre Bestellungen aus.
+   * Erwarten Sie die Erfüllung der Bestellung.
 
-Der tatsächliche Ort kann je nach Implementierung unterschiedlich ausfallen (z. B. allgemein oder mit einer eCommerce-Engine):
+Der tatsächliche Speicherort kann von Ihrer Implementierung abhängen. Beispiel: generisch oder mit einer eCommerce-Engine:
 
 ![chlimage_1-169](assets/chlimage_1-169.png)
 
 ## Produkte {#products}
 
-### Produktdaten und Marketingdaten {#product-data-versus-marketing-data}
+### Produktdaten im Vergleich zu Marketingdaten {#product-data-versus-marketing-data}
 
-#### Strukturelle Kategorien und Marketingkategorien {#structural-versus-marketing-categories}
+#### Strukturelle und Marketing-Kategorien {#structural-versus-marketing-categories}
 
 Durch die Unterscheidung der folgenden beiden Kategorien können Sie deutliche URLs mit bedeutungsvoller Struktur erstellen (Bäume von `cq:Page`-Knoten und daher sehr ähnlich der klassischen Inhaltsverwaltung in AEM):
 
@@ -222,32 +226,32 @@ Durch die Unterscheidung der folgenden beiden Kategorien können Sie deutliche U
 
 ### Produktdaten {#product-data}
 
-Um Ihr Produkt zu beschreiben und zu verwalten, speichern Sie viele Daten zu ihm.
+Um Ihr Produkt zu präsentieren und zu verwalten, sollten Sie eine Reihe von Informationen über das Produkt speichern.
 
-Produktdaten können:
+Produktdaten können sein:
 
 * direkt in AEM verwaltet werden (allgemein)
 * in der eCommerce-Engine verwaltet und in AEM bereitgestellt werden
 
    Je nach Datentyp sind die Daten [synchronisiert](#catalog-maintenance-data-synchronization), wenn erforderlich, oder direkt zugänglich. Höchst volatile und wichtige Daten wie Produktdaten werden beispielsweise bei jeder Seitenabfrage von der E-Commerce-Engine abgerufen, damit sie jederzeit aktuell sind.
 
-In jedem Fall können Sie die Produktdaten nach der Eingabe bzw. dem Import in AEM über die **Produktekonsole** einsehen. Hier finden Sie in der Karten- und der Listenansicht eines Produkts u. a. folgende Informationen:
+Wenn die Produktdaten in AEM eingegeben/importiert wurden, können sie in den **Produkte** Konsole. Hier zeigen die Karten- und Listenansichten eines Produkts Informationen wie:
 
 * das Bild
-* den SKU-Code
-* letzte Bearbeitung
+* der SKU-Code
+* wann zuletzt geändert
 
 ![chlimage_1-170](assets/chlimage_1-170.png)
 
 ### Produktvarianten {#product-variants}
 
-Sie können auch Informationen zu Produktvarianten für die entsprechenden Produkte speichern. Beispielsweise werden bei Bekleidungsartikeln die unterschiedlichen angebotenen Farben als Varianten gespeichert:
+Für geeignete Produkte können auch Informationen über Varianten gespeichert werden. Beispielsweise werden bei Bekleidungsartikeln die unterschiedlichen angebotenen Farben als Varianten gespeichert:
 
 ![ecommerceproductvariables](assets/ecommerceproductvariants.png)
 
 ### Produktattribute {#product-attributes}
 
-Welche individuellen Attribute zu jedem Produkt gespeichert werden, hängt möglicherweise von der genutzten eCommerce-Engine und Ihrer AEM-Implementierung ab. Sie sind entsprechend verfügbar, wenn Sie die Produktseiten anzeigen und/oder Produktdaten bearbeiten. Folgende Attribute gibt es unter anderem:
+Die über die einzelnen Produkte gespeicherten Attribute können von der verwendeten eCommerce-Engine und Ihrer AEM-Implementierung abhängen. Diese sind (je nach Bedarf) beim Anzeigen von Produktseiten und/oder Bearbeiten von Produktinformationen verfügbar und können Folgendes umfassen:
 
 * **Bild**
 
@@ -293,11 +297,11 @@ Welche individuellen Attribute zu jedem Produkt gespeichert werden, hängt mögl
 
 ### Produkt-Assets {#product-assets}
 
-Sie können eine Reihe an Assets für einzelne Produkte speichern. Dazu gehören in der Regel Bilder und Videos.
+Eine Auswahl von Assets kann für einzelne Produkte gespeichert werden. Dazu gehören in der Regel Bilder und Videos.
 
 ## Kataloge {#catalogs}
 
-In einem Katalog werden Produktdaten zusammengestellt, um die Verwaltung zu vereinfachen und die Darstellung für die Käufer übersichtlich zu gestalten. Häufig wird ein Katalog nach Attributen wie Sprache, geografische Region, Marke, Saison, Hobby, Sport usw. strukturiert.
+Ein Katalog fasst Produktdaten zusammen, um sowohl die Verwaltung als auch die Darstellung für den Käufer zu erleichtern. Häufig wird ein Katalog nach Attributen wie Sprache, geografisches Gebiet, Marke, Saison, Hobby, Sport, u.a. strukturiert.
 
 ### Katalogstruktur {#catalog-structure}
 
@@ -305,7 +309,7 @@ In einem Katalog werden Produktdaten zusammengestellt, um die Verwaltung zu vere
 
 AEM unterstützt Produktinhalte in mehreren Sprachen. Beim Abfragen von Daten ruft das Integrations-Framework die Sprache vom aktuellen Baum ab (z. B. `en_US` für Seiten unter `/content/geometrixx-outdoors/en_US`).
 
-Bei einem mehrsprachigen Speicher können Sie Ihren Katalog für jeden Sprachbaum einzeln importieren (oder ihn mit [MSM](/help/sites-administering/msm.md) kopieren).
+Für einen mehrsprachigen Speicher können Sie Ihren Katalog für jeden Sprachbaum einzeln importieren (oder ihn über [MSM](/help/sites-administering/msm.md)).
 
 #### Kataloge für mehrere Marken {#catalogs-for-multiple-brands}
 
@@ -313,39 +317,39 @@ Bei einem mehrsprachigen Speicher können Sie Ihren Katalog für jeden Sprachbau
 
 #### Kataloge nach Tags {#catalogs-by-tags}
 
-Sie können Tags auch nutzen, um Produkte in einem Katalog zusammenzustellen. Dieser Ansatz bietet sich für dynamischere Kataloge an.
+Tags können auch verwendet werden, um Produkte in einem Katalog zusammenzufassen. Dieser Ansatz bietet sich für dynamischere Kataloge an.
 
-### Katalogeinrichtung (anfänglicher Import) {#catalog-setup-initial-import}
+### Katalogeinrichtung (erster Import) {#catalog-setup-initial-import}
 
-Je nach Implementierung können Sie die Produktdaten für Ihren Basiskatalog in AEM aus folgenden Quellen importieren:
+Abhängig von Ihrer Implementierung können Sie die für Ihren Basiskatalog erforderlichen Produktdaten aus folgenden AEM importieren:
 
-* CSV-Datei (für die generische Implementierung)
+* eine CSV-Datei (für die allgemeine Implementierung)
 * eCommerce-Engine
 
-### Katalogpflege (Datensynchronisierung) {#catalog-maintenance-data-synchronization}
+### Katalogwartung (Datensynchronisierung) {#catalog-maintenance-data-synchronization}
 
-Weitere Änderungen der Produktdaten sind nötig für:
+Weitere Änderungen an den Produktdaten werden unvermeidlich sein:
 
-* die generische Implementierung; sie lassen sich mit dem [Produkt-Editor](/help/sites-administering/generic.md#editing-product-information) vornehmen
+* für die generische Implementierung können diese mit der [Produkteditor](/help/sites-administering/generic.md#editing-product-information)
 * die Verwendung einer [eCommerce-Engine; hier müssen die Änderungen synchronisiert werden](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
-#### Datensynchronisierung mit einer eCommerce-Engine (fortlaufend) {#data-synchronization-with-an-ecommerce-engine-ongoing}
+#### Datensynchronisation mit einer eCommerce-Engine (laufend) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
-Nach dem anfänglichen Import sind Änderungen an den Produktdaten unvermeidbar.
+Nach dem ersten Import sind Änderungen an Ihren Produktdaten unvermeidlich.
 
-Wenn Sie eine eCommerce-Engine verwenden, werden die Daten dort verwaltet und müssen in AEM verfügbar sein. Diese Produktdaten müssen nach Aktualisierungen synchronisiert werden.
+Bei Verwendung einer eCommerce-Engine werden die Produktdaten dort gespeichert und müssen in AEM verfügbar sein. Diese Produktdaten müssen nach Aktualisierungen synchronisiert werden.
 
-Dies ist abhängig vom Datentyp:
+Dies kann vom Datentyp abhängen:
 
-* Eine [regelmäßige Synchronisierung wird zusammen mit einem Daten-Feed der Änderungen genutzt.](/help/sites-developing/sap-commerce-cloud.md#product-synchronization-and-publishing)
+* A [Die periodische Synchronisierung wird zusammen mit einem Daten-Feed der Änderungen verwendet](/help/sites-developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
 
    Zusätzlich können Sie bestimmte Aktualisierungen für ein Express-Update auswählen.
 
-* Höchst volatile und wichtige Daten wie Produktdaten werden beispielsweise bei jeder Seitenabfrage von der eCommerce-Engine abgerufen, damit sie jederzeit aktuell sind.
+* Hoch schwankende Daten wie Preisinformationen werden für jede Seitenanforderung von der Commerce-Engine abgerufen, um sicherzustellen, dass sie immer auf dem neuesten Stand sind.
 
-### Kataloge – Leistung und Skalierung {#catalogs-performance-and-scaling}
+### Kataloge - Leistung und Skalierung {#catalogs-performance-and-scaling}
 
-Das Importieren eines großen Katalogs mit einer großen Anzahl an Produkten (in der Regel mehr als 100.000) aus einer eCommerce-Engine (PIM) kann wegen der hohen Anzahl an Knoten das System beeinträchtigen. Auch die Autoreninstanz kann sich verlangsamen, wenn die Produkte mit Assets (wie Produktbildern) verknüpft sind. Das liegt daran, dass die Nachbearbeitung dieser Assets rechen- und speicherintensiv ist.
+Der Import eines großen Katalogs mit einer großen Anzahl von Produkten (in der Regel mehr als 100.000) aus einer eCommerce-Engine (PIM) kann sich aufgrund der großen Anzahl von Knoten auf das System auswirken. Sie kann auch die Authoring-Instanz verlangsamen, wenn die Produkte über verknüpfte Assets verfügen (z. B. Produktbilder). Das liegt daran, dass die Nachbearbeitung dieser Assets rechen- und speicherintensiv ist.
 
 Es gibt verschiedene Möglichkeiten, diese Probleme zu umgehen:
 
@@ -356,15 +360,15 @@ Es gibt verschiedene Möglichkeiten, diese Probleme zu umgehen:
 * [Leistungstests](#performance-testing)
 * [Leistung – Verschiedenes](#performance-miscellaneous)
 
-#### Buckets {#bucketing}
+#### Bucket {#bucketing}
 
-Wenn ein JCR-Knoten über viele direkte untergeordnete Knoten (z. B. mind. 1.000) verfügt, werden Buckets (Phantomordner) benötigt, um sicherzustellen, dass die Leistung nicht beeinträchtigt wird. Sie werden beim Importvorgang entsprechend einem Algorithmus erzeugt.
+Wenn ein JCR-Knoten viele direkt untergeordnete Knoten hat (z. B. 1000 und mehr), sind Buckets (Phantom-Ordner) erforderlich, um sicherzustellen, dass die Leistung nicht beeinträchtigt wird. Diese werden beim Import anhand eines Algorithmus generiert.
 
-Diese Buckets werden in Form von Phantomordnern in die Katalogstruktur eingeführt. Sie können sie aber so konfigurieren, dass sie in den öffentlichen URLs nicht sichtbar sind.
+Diese Behälter haben die Form von Phantom-Ordnern, die in Ihre Katalogstruktur eingeführt werden, aber so konfiguriert werden können, dass sie in öffentlichen URLs nicht sichtbar sind.
 
-#### Abladen der Asset-Nachbearbeitung auf einer dedizierten Instanz {#offload-asset-post-processing-to-a-dedicated-instance}
+#### Auslagern der Asset-Nachbearbeitung auf eine dedizierte Instanz {#offload-asset-post-processing-to-a-dedicated-instance}
 
-Dieses Szenario sieht vor, dass zwei Autoreninstanzen eingerichtet werden:
+Dieses Szenario umfasst das Einrichten von zwei Autoreninstanzen:
 
 1. Primäre Autoreninstanz
 
@@ -378,7 +382,7 @@ Dieses Szenario sieht vor, dass zwei Autoreninstanzen eingerichtet werden:
 
 #### Importieren von Produktdaten ohne Assets {#only-import-product-data}
 
-Wenn Produkte keine Assets (Bilder) enthalten, die importiert werden müssen, können Sie die Produktdaten importieren, ohne von der Asset-Nachbearbeitung beeinträchtigt zu werden.
+Wenn Produkte keine Assets (Bilder) enthalten, die importiert werden sollen, können Sie die Produktdaten importieren, ohne von der Nachbearbeitung der Assets betroffen zu sein.
 
 ![Architekturdiagramm](assets/chlimage_1-172.png)
 
@@ -389,7 +393,7 @@ Wenn Produkte keine Assets (Bilder) enthalten, die importiert werden müssen, k�
 
 #### Leistungstests {#performance-testing}
 
-Leistungstests müssen bei AEM eCommerce-Implementierungen in Erwägung gezogen werden:
+Leistungstests müssen bei AEM E-Commerce-Implementierungen berücksichtigt werden:
 
 * Autorenumgebung:
 
@@ -401,38 +405,38 @@ Leistungstests müssen bei AEM eCommerce-Implementierungen in Erwägung gezogen 
 
 * Frontend:
 
-   Kombination aus Frontend- und Cache-Invalidierung kann zu Leistungseinbußen führen. Durch Tests können diese Probleme verhindert werden.
+   Kombination aus Frontend- und Cache-Invalidierung kann zu Leistungseinbußen führen. Tests helfen dabei, diese zu vermeiden.
 
-Beachten Sie, dass für diesen Leistungstest Kenntnisse und Analysen des Ziels erforderlich sind:
+Bitte beachten Sie, dass dieser Leistungstest Kenntnisse und Analysen Ihrer Zielgruppe erfordert:
 
 * Inhaltsvolumen
 
    * Assets
-   * lokalisierte I18n-Produkte und SKUs
+   * Lokalisierte I18-End-Produkte und SKUs
 
 * Benutzeraktivität:
 
-   * Stapelausgabe
-   * Stapelveröffentlichung
-   * umfassende Suchabfragen
+   * Massenbearbeitung
+   * Massenveröffentlichung
+   * Intensiv-Suchanfragen
 
 * Hintergrundprozesse
 
    * Importvorgänge
-   * Synchronisierungsaktualisierungen (z. B. Preisfestlegung)
+   * Synchronisierungsaktualisierungen (z. B. Preise)
 
-* Wartungsanforderungen (Sicherung, Tar-PM-Optimierung, Datenspeicherbereinigung usw.)
+* Wartungsanforderungen (Sicherung, Tar-PM-Optimierung, Speicherbereinigung usw.)
 
 #### Leistung – Verschiedenes {#performance-miscellaneous}
 
-Beachten Sie bei allen Implementierungen die folgenden Punkte:
+Bei allen Implementierungen können die folgenden Punkte beachtet werden:
 
-* Da die Anzahl an Produkten, SKUs und Kategorien sehr hoch ausfallen kann, versuchen Sie, so wenig Knoten wie möglich für die Modellierung der Inhalte zu verwenden.
+* Da Produkt, Lagereinheiten und Kategorien zahlreich sein können, versuchen Sie, die geringstmögliche Anzahl von Knoten zur Modellierung des Inhalts zu verwenden.
 
-   Je mehr Knoten Sie nutzen, desto flexibler sind Ihre Inhalte (z. B. ParSys). Es ist aber immer Abwägungssache: Benötigen Sie (standardmäßig) individuelle Flexibilität, wenn Sie (beispielsweise) 30.000 Produkte bearbeiten?
+   Je mehr Knoten Sie nutzen, desto flexibler sind Ihre Inhalte (z. B. ParSys). Alles ist jedoch ein Kompromiss und benötigen Sie (standardmäßig) individuelle Flexibilität bei der Bearbeitung (z. B. 30.000 Produkte)?
 
-* Vermeiden Sie Duplikate, so gut es geht (siehe Lokalisierung), und berücksichtigen Sie, wenn sich Duplikate nicht umgehen lassen, zu wie vielen Knoten die Duplizierung führen wird.
-* Versuchen Sie, Ihre Inhalte so oft wie möglich mit Tags zu kennzeichnen, um die Abfrage zu optimieren.
+* Vermeiden Sie Duplizierungen so oft wie möglich (siehe Lokalisierung) oder überlegen Sie, zu wie vielen Knoten Ihre Duplizierung führen wird.
+* Versuchen Sie, Ihren Inhalt so oft wie möglich mit Tags zu versehen, um die Abfrageoptimierung vorzubereiten.
 
    Zum Beispiel:
 
@@ -450,14 +454,14 @@ Beachten Sie bei allen Implementierungen die folgenden Punkte:
 
    `/jcr:root/content/france/fr/shoe/reebok/pump/element(*,my:Sku)`
 
-* Planen Sie für Ihren technischen Stack faktorisierte Inhaltszugriffsmodelle und Dienste. Dies ist allgemein eine bewährte Vorgehensweise, in diesem Fall aber sogar noch wichtiger, da Sie bei Optimierungsphasen Anwendungscaches für Daten hinzufügen können, die häufig gelesen werden (und mit denen Sie nicht den Bundle-Cache füllen möchten).
+* Planen Sie in Ihrem technischen Stack ein sehr factorisiertes Inhaltszugriffsmodul und Dienste. Dies ist eine allgemeine Best Practice, aber noch wichtiger ist sie, da Sie in Optimierungsphasen Anwendungscaches für Daten hinzufügen können, die sehr häufig gelesen werden (und mit denen Sie den Bundle-Cache nicht füllen möchten).
 
    Beispielsweise ist die Attributverwaltung oft gut für das Caching geeignet, da sie Daten betrifft, die durch das Importieren von Produkten aktualisiert werden.
-* Ziehen Sie die Nutzung von [Proxyseiten](/help/sites-administering/concepts.md#proxy-pages) in Erwägung.
+* Erwägen Sie die Verwendung von [Proxy-Seiten](/help/sites-administering/concepts.md#proxy-pages).
 
 ### Katalogbereichsseiten {#catalog-section-pages}
 
-Auf Katalogsbereichsseiten finden Sie zum Beispiel:
+In Katalogabschnitten finden Sie beispielsweise Folgendes:
 
 * eine Einleitung (Bild und/oder Text) für die Kategorie; hier können auch Banner und Teaser für Sonderangebote werben
 * Links zu den einzelnen Produkten in dieser Kategorie
@@ -467,9 +471,9 @@ Auf Katalogsbereichsseiten finden Sie zum Beispiel:
 
 ### Produktseiten {#product-pages}
 
-Produktseiten bieten umfassende Informationen zu den einzelnen Produkten. Dynamische Aktualisierungen von externen Quellen werden auch widergespiegelt, z. B. Preisänderungen, die auf der eCommerce-Engine erfolgt sind.
+Produktseiten bieten umfassende Informationen zu einzelnen Produkten. Dynamische Aktualisierungen von werden ebenfalls widergespiegelt. z. B. Preisänderungen, die auf der eCommerce-Engine registriert sind.
 
-Produktseiten sind AEM-Seiten, die die **Produkt**-Komponente nutzen, beispielsweise in der Vorlage **Commerce-Produkt**:
+Produktseiten sind AEM Seiten, die **Produkt** Komponente; z. B. innerhalb der **Commerce-Produkt** template:
 
 ![ecommerce_nairobirunnersgreen](assets/ecommerce_nairobirunnersgreen.png)
 
@@ -486,54 +490,54 @@ Anhand dieser Daten kann der Käufer folgende Optionen auswählen, wenn er einen
 
 #### Produkt-Landingpages {#product-landing-pages}
 
-Dabei handelt es sich um AEM-Seiten, die in erster Linie statische Informationen anzeigen, beispielsweise eine Einleitung und eine Übersicht mit Links zu den dazugehörigen Produktseiten.
+Dies sind AEM Seiten, die hauptsächlich statische Informationen bereitstellen. z. B. eine Einführung und Übersicht mit Links zu den zugrunde liegenden Produktseiten.
 
 ### Produktkomponente {#product-component}
 
 Die **Produkt**-Komponente können Sie zu jeder Seite mit einer übergeordneten Seite hinzufügen, welche die benötigten Metadaten bereitstellt (d. h. die Pfade zu `cartPage` und `cartObject`). Bei der Demo-Website, Geometrixx Outdoors, ist dies `UserInfo.jsp`.
 
-Sie können die **Produkt**-Komponente auch an Ihre individuellen Anforderungen anpassen.
+Die **Produkt** -Komponente kann auch entsprechend Ihren individuellen Anforderungen angepasst werden.
 
-### Proxyseiten {#proxy-pages}
+### Proxy-Seiten {#proxy-pages}
 
-Mit Proxyseiten können Sie die Struktur des Repositorys vereinfachen und den Speicher für große Kataloge optimieren.
+Proxy-Seiten werden verwendet, um die Struktur des Repositorys zu vereinfachen und den Speicher für große Kataloge zu optimieren.
 
-Beim Erstellen eines Katalogs werden zehn Knoten pro Produkt eingesetzt, um individuelle Komponenten für jedes Produkt bereitzustellen, die Sie in AEM aktualisieren und anpassen können. Diese große Anzahl an Knoten kann problematisch werden, wenn Ihr Katalog mehrere hundert oder gar tausend Produkte enthält. Um diese Schwierigkeiten zu vermeiden, können Sie bei der Erstellung Ihres Katalogs Proxyseiten verwenden.
+Beim Erstellen eines Katalogs werden zehn Knoten pro Produkt verwendet, da er einzelne Komponenten für jedes Produkt bereitstellt, die Sie in AEM aktualisieren und anpassen können. Diese große Anzahl von Knoten kann zu einem Problem werden, wenn Ihr Katalog Hunderte oder sogar Tausende von Produkten enthält. Um Probleme zu vermeiden, können Sie Ihren Katalog mit Proxy-Seiten erstellen.
 
 Proxy-Seiten nutzen eine Struktur mit zwei Knoten (`jcr:content` und `cq:Page`), die keine Produktinhalte enthalten. Die Inhalte werden zur Abfragezeit durch Verweise auf die Produktdaten und die Vorlagenseite generiert.
 
-Dabei gilt allerdings: Sie können die Produktdaten nicht in AEM anpassen. Eine Standardvorlage (für Ihre Website definiert) wird verwendet.
+Es gibt jedoch einen Kompromiss. Sie können Ihre Produktinformationen nicht innerhalb von AEM anpassen. Es wird eine Standardvorlage (definiert für Ihre Site) verwendet.
 
 >[!NOTE]
 >
->Es werden keine Probleme auftreten, wenn Sie einen großen Katalog ohne Proxyseiten importieren.
+>Wenn Sie einen großen Katalog ohne Proxyseiten importieren, treten keine Probleme auf.
 >
->Die Konversion von einer Methode zur anderen ist jederzeit möglich. Sie können auch einen Teilbereich Ihres Katalogs umwandeln.
+>Sie können von einer Methodik zur anderen jederzeit konvertieren. Sie können auch einen Teilbereich Ihres Katalogs umwandeln.
 
 ## Promotions und Gutscheine {#promotions-and-vouchers}
 
 ### Gutscheine {#vouchers}
 
-Gutscheine sind eine bewährte Methode für Preisnachlässe, um Käufer zu einem Kauf zu animieren und/oder die Treue von Kunden zu belohnen.
+Gutscheine sind eine bewährte Methode, Rabatte anzubieten, um Käufer dazu zu bewegen, einen Kauf zu tätigen und/oder die Treue des Kunden zu belohnen.
 
-* Gutscheine umfassen:
+* Gutscheine:
 
-   * einen Gutscheincode (den der Käufer im Warenkorb eingeben muss)
-   * eine Gutscheinkennzeichnung (die angezeigt wird, wenn der Käufer den Gutschein im Warenkorb eingegeben hat)
-   * einen Promotionpfad (der die Aktion definiert, die der Gutschein auslöst)
+   * Ein Gutscheincode (der vom Käufer in den Warenkorb eingegeben wird).
+   * Eine Gutscheinbeschriftung (die angezeigt wird, nachdem der Käufer sie in den Warenkorb eingegeben hat).
+   * Ein Promotionpfad (der die Aktion definiert, die der Gutschein anwendet).
 
-* Externe Commerce-Engines können ebenfalls Gutscheine bereitstellen.
+* Externe Commerce-Engines können auch Gutscheine bereitstellen.
 
-In AEM:
+AEM:
 
 * Ein Gutschein ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird.
 * Die **Gutschein**-Komponente bietet:
 
    * einen Renderer für die Gutscheinadministration; er zeigt alle Gutscheine an, die sich aktuell im Warenkorb befinden
-   * das Bearbeitungsdialogfeld (Formular), um die Gutscheine zu administrieren (hinzuzufügen/zu entfernen)
-   * die Aktionen, die erforderlich sind, um Gutscheine zum Warenkorb hinzuzufügen oder daraus zu entfernen
+   * Die Bearbeitungsdialogfelder (Formular) zum Verwalten (Hinzufügen/Entfernen) der Gutscheine.
+   * Die zum Hinzufügen/Entfernen von Gutscheinen zum/vom Warenkorb erforderlichen Aktionen.
 
-* Gutscheine haben keine eigenen Datums-/Zeitangaben für Aktivierung und Deaktivierung, sondern nutzen die der übergeordneten Kampagnen.
+* Gutscheine verfügen nicht über eigene Ein- und Ausschaltzeiten, sondern über die ihrer übergeordneten Kampagnen.
 
 >[!NOTE]
 >
@@ -541,38 +545,38 @@ In AEM:
 
 ### Promotions {#promotions}
 
-Mit Promotions können Sie, in Verbindung mit Gutscheinen, Szenarien wie folgende umsetzen:
+Promotions ermöglichen Ihnen zusammen mit Gutscheinen die Realisierung von Szenarien wie:
 
-* Ein Unternehmen bietet Sonderpreise für Mitarbeiter an. Dies ist eine manuell zusammengestellte Liste an Benutzern.
-* Langjährige Kunden erhalten Nachlässe bei allen Bestellungen.
-* Ein Angebotspreis gilt für einen festgelegten Zeitraum.
-* Ein Kunde erhält einen Gutschein, wenn seine vorherige Bestellung einen bestimmten Wert überschreitet.
-* Einem Kunden, der *Produkt X* kauft, wird ein Nachlass auf *Produkt Y* angeboten (Produktpaarung).
+* Ein Unternehmen bietet benutzerdefinierte Preise für Mitarbeiter, eine handgefertigte Liste von Benutzern.
+* Langfristige Kunden erhalten Rabatte auf alle Bestellungen.
+* Ein Verkaufspreis, der über einen genau festgelegten Zeitraum angeboten wird.
+* Ein Kunde erhält einen Gutschein, wenn seine vorherige Bestellung einen bestimmten Betrag überschritten hat.
+* Ein Kunde, der kauft *product-X* erhalten Sie einen Rabatt auf *product-Y* (Produkte paarweise).
 
-Promotions werden in der Regel nicht von Produktinformationsmanagern, sondern von Marketingmanagern verwaltet:
+Promotions werden in der Regel nicht von Produktinformationsmanagern, sondern von Marketing-Managern verwaltet:
 
-* Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. &grave;&grave;
-* Promotions umfassen:
+* Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. ``
+* Angebote für Werbeaktionen:
 
-   * eine Priorität
-   * einen Promotion-Handler-Pfad
+   * Eine Priorität
+   * Ein Promotion-Handler-Pfad
 
-* Sie können Promotions mit einer Kampagne verbinden, um ihre Datums-/Zeitangaben für Aktivierung und Deaktivierung zu definieren.
-* Sie können Promotions mit einem Erlebnis verbinden, um ihre Segmente zu definieren.
-* Promotions, die nicht mit einem Erlebnis verbunden sind, starten nicht von selbst, können aber durch einen Gutschein ausgelöst werden.
-* Die Promotion-Komponente umfasst:
+* Sie können Promotions mit einer Kampagne verknüpfen, um deren Aktivierungs-/Ausschaltzeiten zu definieren.
+* Sie können Promotions mit einem Erlebnis verbinden, um deren Segmente zu definieren.
+* Promotions, die nicht mit einem Erlebnis verbunden sind, werden nicht allein ausgelöst, können aber dennoch von einem Gutschein ausgelöst werden.
+* Die Komponente Promotion enthält:
 
-   * Renderer und Dialogfelder für die Administration von Promotions
-   * Subkomponenten für das Rendern und Bearbeiten von Konfigurationsparametern für die Promotion-Handler
+   * Renderer und Dialogfelder für die Promotions-Administration
+   * Unterkomponenten zum Rendern und Bearbeiten von Konfigurationsparametern, die spezifisch für die Promotion-Handler sind
 
-In AEM sind die Promotions auch in das [Kampagnen-Management](/help/sites-authoring/personalization.md) integriert:
+AEM werden die Promotions auch in die [Campaign Management](/help/sites-authoring/personalization.md):
 
-* Eine [Kampagne](/help/sites-authoring/personalization.md) legt die Zeiten für Aktivierung/Deaktivierung fest.
-* [Erlebnisse](/help/sites-authoring/personalization.md) *innerhalb* der Kampagne dienen dazu, Assets (Teaser-Seiten, Promotions usw.) je nach dem entsprechenden Zielgruppensegment zu gruppieren.
+* a [Kampagne](/help/sites-authoring/personalization.md) gibt die Ein-/Ausschaltzeiten an
+* [Erlebnisse](/help/sites-authoring/personalization.md) *Innerhalb* die Kampagne wird verwendet, um Assets (Teaser-Seiten, Promotions usw.) entsprechend dem jeweiligen Zielgruppensegment zu gruppieren.
 
-Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne erfasst werden:
+Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne stattfinden:
 
-* Wenn eine Promotion in einem Erlebnis erfasst ist, kann sie automatisch auf ein Zielgruppensegment angewendet werden.
+* Wenn eine Promotion in einem Erlebnis gespeichert wird, kann sie automatisch auf ein Zielgruppensegment angewendet werden.
 
    Beispielsweise die Promotion auf der Beispielsite geometrixx-outdoors:
 
@@ -590,13 +594,13 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne erfas
 
 >[!NOTE]
 >
->[hybris promotions](https://www.hybris.com/modules/promotion) und [hybris vouchers](https://www.hybris.com/en/modules/voucher) decken alle Aspekte ab, die sich auf den Warenkorb auswirken und mit der Preisfestlegung in Verbindung stehen. Promotionspezifische Marketinginhalte (wie Banner) sind nicht Teil der hybris-Promotion.
+>[hybris-Promotions](https://www.hybris.com/modules/promotion) und [hybris-Gutscheine](https://www.hybris.com/en/modules/voucher) decken Sie alles ab, was den Warenkorb beeinflusst und mit der Preisgestaltung in Zusammenhang steht. Werbespezifische Marketing-Inhalte (wie Banner usw.) sind nicht Teil der hybris-Promotion.
 
 ## Personalisierung  {#personalization}
 
 ### Kundenregistrierung und -konten {#customer-registration-and-accounts}
 
-Wenn sich ein Kunde registriert, müssen die Daten seines Kontos zwischen AEM und der eCommerce-Engine synchronisiert werden. Sensible Daten werden separat gespeichert, die Profile sind jedoch freigegeben:
+Wenn sich ein Kunde registriert, müssen die Kontodetails zwischen AEM und der eCommerce-Engine synchronisiert werden. Sensible Daten werden separat gespeichert, die Profile sind jedoch freigegeben:
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
@@ -604,14 +608,14 @@ Der genaue Mechanismus hängt vom Szenario ab:
 
 1. Das Benutzerkonto ist auf beiden Systemen vorhanden:
 
-   1. Es ist keine Aktion erforderlich.
+   1. Keine Aktion erforderlich.
 
-1. Das Benutzerkonto ist nur in AEM vorhanden:
+1. Das Benutzerkonto existiert nur in AEM:
 
-   1. Der Benutzer wird in der eCommerce-Engine mit derselben Konto-ID und einem zufällig generierten Kennwort erstellt, das in AEM gespeichert wird.
-   1. Das zufällig generierte Kennwort ist nötig, weil AEM beim ersten Aufruf (wenn beispielsweise eine Produktseite angefragt und für den Preis auf die eCommerce-Engine verwiesen wird) versucht, sich bei der eCommerce-Engine anzumelden. Da dies nach der AEM-Anmeldung geschieht, ist das Kennwort nicht verfügbar.
+   1. Der Benutzer wird in der eCommerce-Engine mit derselben Konto-ID und einem zufälligen Kennwort erstellt, das in AEM gespeichert wird.
+   1. Das zufällig generierte Kennwort ist nötig, weil AEM beim ersten Aufruf (wenn beispielsweise eine Produktseite angefragt und für den Preis auf die eCommerce-Engine verwiesen wird) versucht, sich bei der eCommerce-Engine anzumelden. Da dies nach der AEM geschieht, ist das Kennwort nicht verfügbar.
 
-1. Das Benutzerkonto ist nur in der eCommerce-Engine vorhanden:
+1. Das Benutzerkonto existiert nur in der eCommerce-Engine:
 
    1. Das Konto wird in AEM mit derselben Konto-ID und demselben Kennwort erstellt.
 
@@ -619,19 +623,19 @@ Bei Verwendung einer eCommerce-Engine speichert AEM nur die Konto-ID und das Ken
 
 >[!NOTE]
 >
->Bei Nutzung einer eCommerce-Engine müssen Sie sicherstellen, dass Konten, die für Benutzer erstellt wurden, die sich bei einer AEM-Instanz anmelden, auf anderen AEM-Instanzen repliziert werden, die mit dieser Engine kommunizieren (z. B. über Workflows).
+>Bei der Verwendung einer eCommerce-Engine müssen Sie sicherstellen, dass Konten, die für Benutzer erstellt wurden, die sich bei einer AEM-Instanz anmelden (z. B. über Workflows), mit allen anderen AEM Instanzen repliziert werden, die mit dieser Engine kommunizieren.
 >
->Andernfalls versuchen diese anderen AEM-Instanzen ebenfalls, Konten für dieselben Benutzer in der Engine zu erstellen. Diese Aktionen schlagen fehl und die Engine gibt `DuplicateUidException` aus.
+>Andernfalls werden diese anderen AEM auch versuchen, Konten für dieselben Benutzer in der Engine zu erstellen. Diese Aktionen schlagen fehl und die Engine gibt `DuplicateUidException` aus.
 
 ### Kundenanmeldung {#customer-sign-up}
 
-Häufig muss sich ein Käufer anmelden, um Zugriff zum Warenkorb zu erhalten. Dafür ist eine Registrierung (Konto erstellen) nötig, damit ein kundenspezifisches Konto erstellt werden kann.
+Häufig ist eine Anmeldung erforderlich, damit der Käufer Zugriff auf den Warenkorb hat. Dafür ist eine Registrierung (Konto erstellen) nötig, damit ein kundenspezifisches Konto erstellt werden kann.
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
 >[!NOTE]
 >
->Auch ein anonymer Warenkorb und die anonyme Bezahlung werden unterstützt.
+>Ein anonymer Warenkorb und ein anonymer Kassengang werden ebenfalls unterstützt.
 
 ### Kundenanmeldung {#customer-sign-in}
 
@@ -639,41 +643,41 @@ Nach der Registrierung kann sich der Kunde bei seinem Konto anmelden, damit sein
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
-### Single Sign-On {#single-sign-on}
+### Single Sign-on {#single-sign-on}
 
-Single Sign-On wird bereitgestellt, damit Benutzer beim AEM- und beim eCommerce-System bekannt sind, ohne sich zweimal anmelden zu müssen.
+Single Sign-On (SSO) wird bereitgestellt, sodass Autoren sowohl im AEM als auch im E-Commerce-System bekannt sind, ohne sich zweimal anmelden zu müssen.
 
-### Mein Konto {#myaccount}
+### myAccount {#myaccount}
 
-Transaktionsdaten von der eCommerce-Engine werden mit personenbezogenen Daten zum Käufer kombiniert. AEM nutzt einige dieser Daten als Profildaten. Eine Formularaktion in AEM schreibt Daten zurück in die eCommerce-Engine.
+Transaktionsdaten von der eCommerce-Engine werden mit personenbezogenen Daten zum Kunden kombiniert. AEM verwendet einige dieser Daten als Profildaten. Die Aktion eines Formulars in AEM schreibt Informationen zurück in die eCommerce-Engine.
 
-Es gibt eine Seite, auf der Sie Ihre Kontodaten leicht verwalten können. Um die Seite anzuzeigen, klicken Sie oben auf der Geometrixx-Seite auf **Mein Konto** oder gehen Sie zu `/content/geometrixx-outdoors/en/user/account.html`.
+Es gibt eine Seite, auf der Sie Ihre Kontoinformationen einfach verwalten können. Um die Seite anzuzeigen, klicken Sie oben auf der Geometrixx-Seite auf **Mein Konto** oder gehen Sie zu `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
 ### Adressbuch {#address-book}
 
-Ihre Website muss zahlreiche Adressen speichern, darunter Liefer-, Rechnungs- und Alternativanschriften. Dazu können Sie Formulare basierend auf dem Standardformat der Adressen nutzen oder die Adressbuch-Komponente von AEM.
+Ihre Site muss eine Auswahl von Adressen speichern. einschließlich Versand-, Abrechnungs- und Alternativadressen. Dies kann mithilfe von Formularen implementiert werden, die auf Ihrem Standard-Adressformat basieren, oder Sie können die Komponente Adressbuch verwenden, die von AEM bereitgestellt wird.
 
-Mit der Adressbuch-Komponente können Sie:
+Mit dieser Komponente Adressbuch können Sie:
 
-* Adressen im Buch bearbeiten
-* eine Adresse aus dem Buch als Lieferanschrift auswählen
-* eine Adresse aus dem Buch als Rechnungsanschrift auswählen
+* Adressdaten im Buch bearbeiten
+* eine Adresse aus dem Buch für die Lieferadresse auswählen
+* eine Adresse aus dem Buch für die Rechnungsadresse auswählen
 
-Sie können auswählen, welche Adresse Sie als Standard festlegen möchten.
+Sie können auswählen, welche Adresse Sie als Standard verwenden möchten.
 
 Die Adressbuch-Komponente finden Sie auf der Seite **Mein Konto** durch Klicken auf **Adressbuch** oder indem Sie zu `/content/geometrixx-outdoors/en/user/account/address-book.html` gehen.
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
-Klicken Sie auf **Neue Adresse hinzufügen...**, um eine neue Adresse zum Adressbuch hinzuzufügen. Ein Formular wird geöffnet. Geben Sie die Adressdaten ein und klicken Sie dann auf **Adresse hinzufügen**.
+Klicken Sie auf **Neue Adresse hinzufügen...**, um eine neue Adresse zum Adressbuch hinzuzufügen. Dadurch wird ein Formular geöffnet, das Sie ausfüllen können. Klicken Sie dann auf **Adresse hinzufügen**.
 
 >[!NOTE]
 >
->Sie können mehrere Adressen zum Adressbuch hinzufügen.
+>Sie können mehrere Adressen in Ihr Adressbuch eingeben.
 
-Das Adressbuch kommt zum Einsatz, wenn Sie den Warenkorb bezahlen:
+Das Adressbuch wird verwendet, wenn Sie Ihren Warenkorb auschecken:
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -683,13 +687,13 @@ Die Adresse von Alison Parker befindet sich beispielsweise unter /home/users/geo
 
 Sie können auswählen, welche Adresse Sie als Standard festlegen möchten. Diese Information wird im Käuferprofil gespeichert, nicht zusammen mit der Anschrift. Als Wert für die Profileigenschaft `address.default` wird der Pfad der ausgewählten Adresse festgelegt.
 
-### Kundenspezifische Preisfestlegung {#customer-specific-pricing}
+### Kundenspezifische Preise {#customer-specific-pricing}
 
-Die eCommerce-Engine bestimmt mithilfe des Kontexts (also im Wesentlichen der Käuferdaten) den gespeicherten Preis und gibt die korrekten Daten an AEM zurück.
+Die eCommerce-Engine verwendet den Kontext (im Wesentlichen die Kaufinformationen), um den Preis zu bestimmen, den sie hält, und stellt dann die richtigen Informationen zurück an AEM.
 
 ## Warenkorb und Bestellungen {#shopping-cart-and-orders}
 
-Beim Einkaufen durchsucht der Käufer die Produktseiten und legt die ausgewählten Artikel in den Warenkorb. Wenn er zur Kasse wechselt, kann er eine Bestellung aufgeben.
+Beim Einkauf durchsucht der Käufer die Produktseiten und wählt die Artikel aus, um sie in den Warenkorb zu legen. Wenn er zur Kasse wechselt, kann er eine Bestellung aufgeben.
 
 ### Anonyme Käufer {#anonymous-shoppers}
 
@@ -697,32 +701,32 @@ Ein anonymer Käufer kann:
 
 * Produkte anzeigen
 * Produkte zum Warenkorb hinzufügen
-* auf der Kassenseite eine Bestellung aufgeben
+* Checkout durchführen, um ihre Bestellung zu platzieren
 
 >[!NOTE]
 >
->Je nach Konfiguration Ihrer Instanz ist vor dem Bezahlen die Angabe von Adressdaten oder eine Kundenregistrierung erforderlich.
+>Je nach Konfiguration Ihrer Instanz können vor dem Checkout Informationen zur Adresse oder zur Kundenregistrierung erforderlich sein.
 
 ### Registrierte Käufer {#registered-shoppers}
 
 Ein registrierter Käufer kann:
 
-* sich bei seinem Konto anmelden
+* Bei ihrem Konto anmelden
 * Produkte anzeigen
 * Produkte zum Warenkorb hinzufügen
-* auf der Kassenseite eine Bestellung aufgeben
-* frühere Bestellungen anzeigen und nachverfolgen
+* Checkout durchführen, um ihre Bestellung zu platzieren
+* Anzeigen und Verfolgen früherer Bestellungen
 
 ### Übersicht über den Inhalt des Warenkorbs {#shopping-cart-content-overview}
 
-Der Warenkorb umfasst:
+Der Warenkorb bietet:
 
-* einen Überblick über die ausgewählten Artikel
+* Übersicht über die ausgewählten Elemente
 * Links zu den Produktseiten für die ausgewählten Artikel
-* die Fähigkeit:
+* die Fähigkeit,
 
-   * die Anzahl/Menge der einzelnen Artikel zu aktualisieren
-   * einzelne Artikel zu entfernen
+   * Anzahl/Menge der einzelnen Elemente aktualisieren
+   * einzelne Elemente entfernen
 
 ![ecommerce_shoppingcart](assets/ecommerce_shoppingcart.png)
 
@@ -731,7 +735,7 @@ Der Warenkorb wird je nach verwendeter Engine gespeichert:
 * Die generische AEM-Version speichert den Warenkorb in einem Cookie.
 * Bestimmte eCommerce-Engines können den Warenkorb in einer Sitzung speichern.
 
-In jedem Fall bleiben die Artikel im Warenkorb (und können wiederhergestellt werden), wenn sich der Käufer ab- und wieder anmeldet (allerdings nur auf demselben Rechner/im selben Browser). Beispiel:
+In beiden Fällen bleiben Artikel im Warenkorb (und können wiederhergestellt werden) über die Anmeldung/das Abmelden (aber nur auf demselben Computer/Browser). Beispiel:
 
 * Surfen Sie `anonymous` und fügen Sie Produkte zum Warenkorb hinzu.
 * Melden Sie sich als `Allison Parker` an. Ihr Warenkorb ist leer.
@@ -750,15 +754,15 @@ In jedem Fall bleiben die Artikel im Warenkorb (und können wiederhergestellt we
 
 >[!NOTE]
 >
->Sie können hybris so konfigurieren, dass ausstehende Warenkörbe nach einem festgelegten Zeitraum gelöscht werden.
+>hybris kann so konfiguriert werden, dass ausstehende Warenkörbe nach einem bestimmten Zeitraum entfernt werden.
 
-Vor dem Bezahlen werden etwaige Preisänderungen (in beiden Systemen) widergespiegelt.
+Vor dem Checkout werden Preisänderungen (in beiden Systemen) übernommen, sobald sie auftreten.
 
-### Bestelldaten {#order-information}
+### Bestellinformationen {#order-information}
 
-Je nach Implementierung werden die Daten zu einer Bestellung entweder in der eCommerce-Engine oder in AEM gespeichert; diese Daten werden von AEM gerendert.
+Abhängig von Ihrer Implementierung werden Informationen zu einer Bestellung entweder in der eCommerce-Engine oder AEM gespeichert. Diese Informationen werden von AEM gerendert.
 
-Es werden unterschiedliche Daten gespeichert, beispielsweise:
+Es werden verschiedene Informationen gespeichert, darunter:
 
 * **Auftrags-ID**
 
@@ -838,31 +842,31 @@ Wenn eine Bestellung in AEM gespeichert wird, zeigt die Bestellungs-Konsole Folg
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-### Bestellungsnachverfolgung {#order-tracking}
+### Bestellverfolgung {#order-tracking}
 
-Nachdem sie eine Bestellung aufgegeben haben, kehren Käufer häufig zurück, um:
+Nach der Bestellung kehren die Käufer häufig zu folgenden Punkten zurück:
 
-* den Status ihrer Bestellung zu überprüfen
-* Produkte aus der Bestellung zu entfernen
-* Produkte zur Bestellung hinzuzufügen
+* Überprüfen des Status ihrer Bestellung
+* Produkte aus der Bestellung entfernen
+* Produkte zur Bestellung hinzufügen
 
-Nach dem Erhalt der Lieferung möchten Käufer möglicherweise die Bestellungen einsehen, die sie in einem bestimmten Zeitraum aufgegeben haben.
+Nach Erhalt des Bestellversands möchten die Käufer möglicherweise auch den Verlauf der über einen bestimmten Zeitraum erfolgten Bestellungen einsehen.
 
-Die Erfüllung und die Nachverfolgung von Bestellungen werden in der Regel von der eCommerce-Engine verwaltet. Informationen können über die Bestellverlauf-Komponente in AEM angezeigt werden, die alle relevanten Details aufführt, einschließlich der angewendeten Gutscheine und Promotions. Beispiel:
+Die Auftragserfüllung und -verfolgung wird in der Regel von der eCommerce-Engine verwaltet. Informationen können über die Bestellverlauf-Komponente in AEM angezeigt werden, die alle relevanten Details aufführt, einschließlich der angewendeten Gutscheine und Promotions. Beispiel:
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
 ## Checkout {#checkout}
 
-Die Kasse wird mit standardmäßigen AEM-Formularen implementiert. Damit kann der Marketingmanager das Erlebnis mit Marketinginhalten anpassen.
+Das Auschecken wird mit standardmäßigen AEM-Formularen implementiert. Dadurch kann der Marketing-Manager das Erlebnis mit Marketing-Inhalten anpassen.
 
-Das eCommerce-System verwaltet dann den Bezahlvorgang mit Daten aus den AEM-Formularen.
+Der eCommerce verwaltet dann den Checkout-Prozess mit Eingaben aus den AEM Formularen.
 
 ### Zahlungssicherheit {#payment-security}
 
-Zahlungsdaten, einschließlich Kreditkartendaten, werden häufig von der eCommerce-Engine verwaltet. AEM leitet solche Transaktionsdaten an die Engine weiter (von wo aus sie dann zu einem Zahlungsdienstleister weitergeleitet werden).
+Zahlungsdetails wie Kreditkarteninformationen werden häufig von der eCommerce-Engine verwaltet. AEM leitet solche Transaktionsdaten an die Engine weiter (von wo aus sie dann zu einem Zahlungsdienstleister weitergeleitet werden).
 
-Die Einhaltung des Payment Card Industry (PCI)-Standards ist gewährleistet.
+Die Kompatibilität der Zahlungskartenindustrie (PCI) ist möglich.
 
 ### Bestellbestätigung {#confirmation-of-order}
 
@@ -874,9 +878,9 @@ Die Bestellung wird auf dem Bildschirm bestätigt und lässt sich mit der [Beste
 
 Da AEM Standardseiten für Produkte nutzt, können Sie mit der Standard-Such-Komponente eine Suchseite erstellen.
 
-Wenn Sie eine tiefergreifende Implementierung benötigen, können Sie:
+Wenn Sie eine gründlichere Implementierung benötigen, können Sie entweder:
 
-* die Standard-Such-Komponente um die benötigten Funktionen erweitern oder
+* Erweitern Sie die Standardsuchkomponente mit der benötigten Funktionalität.
 * die Suchmethode im `CommerceService` implementieren und dann die eCommerce-Such-Komponente auf der Suchseite nutzen
 
 Bei Nutzung einer E-Commerce-Engine kann die E-Commerce-Such-API vollständig in die E-Commerce-Engine-Lösung implementiert werden, sodass Sie die vorkonfigurierte E-Commerce-Such-Komponente nutzen können. Mit der Facettensuche können Sie JCR und/oder die Engine durchsuchen:

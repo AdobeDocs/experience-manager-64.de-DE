@@ -12,24 +12,28 @@ discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: e6092e80-3a39-4fde-8a94-084eee5fa8a9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 87%
 
 ---
 
 # Upgrade-Verfahren{#upgrade-procedure}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
->Für das Upgrade muss mit Ausfallzeiten für die Autorenschicht gerechnet werden, da der Großteil der AEM-Upgrades als In-Place-Upgrade durchgeführt wird. Sie können Ausfallzeiten der Autorenschicht minimieren oder ganz vermeiden, indem Sie sich an die folgenden Best Practices halten.
+>Für das Upgrade muss mit Ausfallzeiten für die Autorenschicht gerechnet werden, da der Großteil der AEM-Upgrades als In-Place-Upgrade durchgeführt wird. Durch Befolgen dieser Best Practices können Sie die Ausfallzeiten der Veröffentlichungsstufe minimieren oder eliminieren.
 
 Wenn Sie die AEM-Umgebungen upgraden, müssen Sie sich die Unterschiede beim Upgrade von Autorenumgebungen und Veröffentlichungsumgebungen bewusst machen, um Ausfallzeiten für Autoren und Endbenutzer zu minimieren. Auf dieser Seite finden Sie einen Überblick über Upgrades einer AEM-Topologie, die auf einer AEM 6.x-Version ausgeführt wird. Da sich der Vorgang für die Autoren- und Veröffentlichungsschicht und ebenfalls für Bereitstellungen mit Mongo und TarMK unterscheidet, werden die einzelnen Schichten und Mikrokernel in separaten Abschnitten behandelt. Beim Ausführen der Bereitstellung wird empfohlen, zuerst die Autorenumgebung upzugraden und, wenn dies erfolgreich war, mit den Veröffentlichungsumgebungen fortzufahren.
 
-## Autorenschicht auf TarMK {#tarmk-author-tier}
+## TarMK-Autorenebene {#tarmk-author-tier}
 
-### Starten der Topologie {#starting-topology}
+### Starttopologie {#starting-topology}
 
 In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen, der auf TarMK mit einem Cold Standby ausgeführt wird. Die Replikation erfolgt vom Autorenserver an die TarMK-Veröffentlichungsfarm. Obwohl hierin nicht beschrieben, kann dieser Ansatz auch für Deployments, die nach dem Prinzip Offloading arbeiten. Stellen Sie sicher, dass Sie die Offloading-Instanz auf der neuen Version upgraden oder neu erstellen, bevor Sie Replikationsagenten, die auf der Autoreninstanz deaktiviert waren, neu aktivieren.
 
@@ -68,11 +72,11 @@ In diesem Abschnitt wird von einer Topologie mit einem Autorenserver ausgegangen
 1. Starten Sie die Cold-Standby-Instanz als neue Primärinstanz.
 1. Erstellen Sie die Autorenumgebung aus der Cold-Standby-Instanz neu.
 
-## Autoren-Cluster auf MongoMK {#mongomk-author-cluster}
+## MongoMK-Autorencluster {#mongomk-author-cluster}
 
-### Starten der Topologie {#starting}
+### Starttopologie {#starting}
 
-In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster mit mindestens zwei AEM-Autoreninstanzen ausgegangen, gesichert von mindestens zwei MongoMK-Datenbanken. Die Autoreninstanzen nutzen einen gemeinsamen Datenspeicher. Diese Schritte gelten für S3- und Dateidatenspeicher. Die Replikation erfolgt von Autorenservern an die TarMK-Veröffentlichungsfarm.
+In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster mit mindestens zwei AEM-Autoreninstanzen ausgegangen, gesichert von mindestens zwei MongoMK-Datenbanken. Die Autoreninstanzen nutzen einen gemeinsamen Datenspeicher. Diese Schritte gelten für S3- und Dateidatenspeicher. Die Replikation erfolgt von den Autorenservern zur TarMK-Veröffentlichungsfarm.
 
 ![mongo-topology](assets/mongo-topology.jpg)
 
@@ -124,7 +128,7 @@ In diesem Abschnitt wird von einer Topologie mit einem MongoMK-Autoren-Cluster m
 
 ### TarMK-Veröffentlichungsfarm {#publish-farm}
 
-In diesem Abschnitt wird von einer Topologie mit zwei TarMK-Veröffentlichungsinstanzen ausgegangen, mit Dispatchern im Frontend, die wiederum einen Lastausgleich im Frontend haben. Die Replikation erfolgt vom Autorenserver an die TarMK-Veröffentlichungsfarm.
+Die angenommene Topologie für diesen Abschnitt besteht aus zwei TarMK-Veröffentlichungsinstanzen, die von Dispatchern angeführt werden, die wiederum mit einem Lastenausgleich konfrontiert sind. Die Replikation erfolgt vom Autorenserver zur TarMK-Veröffentlichungsfarm.
 
 ![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 

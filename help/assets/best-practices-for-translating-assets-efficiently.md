@@ -1,49 +1,53 @@
 ---
-title: Best Practices für effizientes Übersetzen von Assets
+title: Best Practices für die effiziente Übersetzung von Assets
 description: Best Practices für die effiziente Verwaltung von Assets zur Synchronisation verschiedener übersetzter Versionen und zur Optimierung von Übersetzungs-Workflows.
 contentOwner: AG
 feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 94%
+source-wordcount: '534'
+ht-degree: 24%
 
 ---
 
 # Best Practices für das Übersetzen von Assets effizient {#best-practices-for-translating-assets-efficiently}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Adobe Experience Manager Assets unterstützt mehrsprachige Workflows zum Übersetzen von Binärdateien, Metadaten und Tags für digitale Assets in mehrere Gebietsschemata und zum Verwalten der übersetzten Assets. Details finden Sie unter [Mehrsprachige Assets](multilingual-assets.md).
 
-Um die Assets effizient zu verwalten und sicherzustellen, dass verschiedene übersetzte Versionen synchronisiert bleiben, erstellen Sie [Sprachkopien](preparing-assets-for-translation.md) der Assets, bevor Sie die Übersetzungsworkflows ausführen.
+Erstellen Sie für eine effiziente Verwaltung von Assets, um sicherzustellen, dass verschiedene übersetzte Versionen synchronisiert bleiben. [Sprachkopien](preparing-assets-for-translation.md) Assets vor dem Ausführen von Übersetzungs-Workflows.
 
-Die Sprachkopie eines Assets oder einer Gruppe von Assets ist ein gleichgeordnetes Sprachenelement (oder eine Version der oder des Assets in einer verwandten Sprache) mit einer ähnlichen Inhaltshierarchie.
+Eine Sprachkopie eines Assets oder einer Gruppe von Assets ist ein gleichrangiges Sprachenlernen (oder eine Version der Assets in einer Fremdsprache) mit einer ähnlichen Inhaltshierarchie.
 
-Jede Sprachkopie ist ein unabhängiges Asset. Daher kann durch das Übertragen von Assets in mehrere Gebietsschemata die Größe des CRX-Repository deutlich zunehmen. Beispielsweise kann sich durch das Übersetzen von Assets mit einer Größe von insgesamt 10 GB in zwei Sprachen die Repositorygröße auf ca. 20 GB (10 GB für jede Sprache) erhöhen.
+Jede Sprachkopie ist ein unabhängiges Asset. Daher kann durch das Übertragen von Assets in mehrere Gebietsschemata die Größe des CRX-Repository deutlich zunehmen. Wenn Sie beispielsweise Assets mit einer kombinierten Größe von 10 GB in zwei Sprachen übersetzen, kann die Repository-Größe um etwa 20 GB (10 GB für jede Sprache) erhöht werden.
 
-Asset-Binärdateien belegen im Vergleich zu Metadaten und Tags deutlich mehr Speicherplatz. Wenn das Übersetzen von Metadaten und Tags für Ihre Zwecke ausreicht, sollten Sie daher auf das Übersetzen der Binärdateien verzichten. Sie können die Originalkopie der Binärdateien im Repository zur Verknüpfung mit in verschiedene Gebietsschemata übertragenen Metadaten und Tags aufbewahren. Wenn Sie lediglich eine Einzelkopie statt mehrerer übersetzter Versionen beibehalten, wird hierdurch die Auswirkung auf die Repositorygröße minimiert.
+Asset-Binärdateien belegen im Vergleich zu Metadaten und Tags deutlich mehr Speicherplatz. Wenn die Übersetzung von Metadaten und Tags nur Ihrem Zweck dient, lassen Sie die Übersetzung der Binärdateien weg. Sie können die Originalkopie der Binärdateien im Repository zur Verknüpfung mit in verschiedene Gebietsschemata übertragenen Metadaten und Tags aufbewahren. Durch die Pflege einer einzigen Kopie von Binärdateien anstelle mehrerer übersetzter Versionen werden die Auswirkungen auf die Repository-Größe minimiert.
 
-Dateidatenspeicher und Amazon S3-Datenspeicher bieten eine Speicherinfrastruktur, die für diese Szenarien am besten geeignet ist. Diese Speicherrepositorys speichern eine Einzelkopie der Asset-Binärdateien (einschließlich Wiedergaben), die gemeinsam von Metadaten und Tags in mehreren Gebietsschemata genutzt werden kann. Daher wird die Repositorygröße nicht durch das Erstellen von Asset-Sprachkopien und Übersetzen von Metadaten und Tags beeinflusst.
+Dateidatenspeicher und Amazon S3-Datenspeicher bieten eine Speicherinfrastruktur, die für diese Szenarien am besten geeignet ist. Diese Speicherrepositorys speichern eine Einzelkopie der Asset-Binärdateien (einschließlich Wiedergaben), die gemeinsam von Metadaten und Tags in mehreren Gebietsschemata genutzt werden kann. Daher wirkt sich das Erstellen von Asset-Sprachkopien und das Übersetzen von Metadaten und Tags nicht auf die Repository-Größe aus.
 
-Mittels gewisser Änderungen an Workflows und am Framework für die Übersetzungsintegration können Sie den Prozess weiter optimieren.
+Sie können auch einige Konfigurationsänderungen an einigen Workflows und dem Framework für die Übersetzungsintegration vornehmen, um den Prozess weiter zu optimieren.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
    * [Richten Sie einen Dateidatenspeicher ein.](/help/sites-deploying/data-store-config.md)
    * [Richten Sie einen Amazon S3-Datenspeicher ein.](/help/sites-deploying/data-store-config.md)
 
-1. Deaktivieren Sie den Workflow [DAM-Metadaten-Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading).
+1. Deaktivieren Sie die [DAM MetaData Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading) Workflow
 
-   Wie der Name schon sagt, werden Metadaten im Rahmen des Workflows *DAM-Metadaten-Writeback* erneut in die Binärdatei geschrieben. Das sich die Metadaten nach der Übersetzung verändern, wird durch das Zurückschreiben dieser Metadaten in die Binärdatei eine andere Binärdatei für eine Sprachkopie generiert.
+   Wie der Name schon sagt, wird die *DAM-Metadaten-Writeback* Workflow schreibt die Metadaten in die Binärdatei um. Da sich die Metadaten nach der Übersetzung ändern, wird beim Zurückschreiben in die Binärdatei eine andere Binärdatei für eine Sprachkopie generiert.
 
    >[!NOTE]
    >
-   >Wird der Workflow *DAM-Metadaten-Writeback* deaktiviert, wird der XMP-Metadaten-Writeback-Prozess für Asset-Binärdateien ausgeschaltet. In der Folge werden zukünftige Metadatenänderungen nicht mehr innerhalb der Assets gespeichert. Schätzen Sie die Auswirkungen ein, bevor Sie diesen Workflow deaktivieren.
+   >Deaktivieren der *DAM MetaData Writeback* Workflow deaktiviert XMP Zurückschreiben von Metadaten in Asset-Binärdateien. Folglich werden zukünftige Metadatenänderungen nicht mehr in den Assets gespeichert. Bewerten Sie die Folgen, bevor Sie diesen Workflow deaktivieren.
 
-1. Aktivieren Sie den Workflow *Letztes Änderungsdatum des Sets*.
+1. Aktivieren Sie die *Datum der letzten Änderung festlegen* Arbeitsablauf.
 
-   Mit dem Workflow *DAM-Metadaten-Writeback* wird das Datum der letzten Änderung eines Assets konfiguriert. Da dieser Workflow in Schritt 2 deaktiviert wird, kann [!DNL Experience Manager Assets] das Datum der letzten Asset-Änderung nicht länger auf dem neuesten Stand halten. Aktivieren Sie daher den Workflow *Letztes Änderungsdatum des Sets*, um sicherzustellen, dass die Datumsangaben für die letzten Asset-Änderungen aktuell sind. Assets mit veralteten Datumsangaben für letzte Änderungen können Fehler verursachen.
+   Die *DAM MetaData Writeback* Der Workflow konfiguriert das Datum der letzten Änderung für ein Asset. Da dieser Workflow in Schritt 2 deaktiviert wird, kann [!DNL Experience Manager Assets] das Datum der letzten Asset-Änderung nicht länger auf dem neuesten Stand halten. Aktivieren Sie daher die *Datum der letzten Änderung festlegen* Arbeitsablauf, um sicherzustellen, dass die letzten geänderten Daten der Assets aktuell sind. Assets mit veralteten Datumsangaben der letzten Änderung können Fehler verursachen.
 
-1. [Konfigurieren Sie das Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md), damit Asset-Binärdateien nicht mehr übersetzt werden. Deaktivieren Sie auf der Registerkarte „Assets“ die Option „Assets übersetzen“, um eine Übersetzung von Asset-Binärdateien auszuschließen. 
-1. Übersetzen Sie Asset-Metadaten/-Tags mithilfe [mehrsprachiger Asset-Workflows](multilingual-assets.md).
+1. [Konfigurieren des Framework für die Übersetzungsintegration](/help/sites-administering/tc-tic.md) , um die Übersetzung von Asset-Binärdateien zu beenden. Deaktivieren Sie die Option &quot;Assets übersetzen&quot;auf der Registerkarte &quot;Assets&quot;, um die Übersetzung von Asset-Binärdateien zu stoppen.
+1. Übersetzen von Asset-Metadaten/Tags mithilfe von [Mehrsprachige Asset-Workflows](multilingual-assets.md).

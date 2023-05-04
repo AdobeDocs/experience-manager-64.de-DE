@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 role: Developer
 exl-id: fa543e13-f920-4b77-9762-36f115261e8c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 100%
+source-wordcount: '1681'
+ht-degree: 95%
 
 ---
 
 # Zusammenstellen von verschlüsselten PDF-Dokumenten {#assembling-encrypted-pdf-documents}
 
-Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie den Assembler-Service verwenden. Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, damit das Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Zum Verschlüsseln eines PDF-Dokuments mit einem Kennwort muss das DDX-Dokument encryption-Elementwerte enthalten, die für die Verschlüsselung eines PDF-Dokuments erforderlich sind.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Sie können ein PDF-Dokument mit einem Kennwort verschlüsseln, indem Sie den Assembler-Service verwenden. Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, um das PDF-Dokument in Adobe Reader oder Acrobat anzuzeigen. Um ein PDF-Dokument mit einem Kennwort zu verschlüsseln, muss das DDX-Dokument Verschlüsselungselementwerte enthalten, die zum Verschlüsseln eines PDF-Dokuments erforderlich sind.
 
 Nehmen Sie für dieses Thema bitte an, dass das folgende DDX-Dokument verwendet wird.
 

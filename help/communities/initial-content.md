@@ -1,7 +1,7 @@
 ---
 title: Anfänglicher Sandbox-Inhalt
 seo-title: Initial Sandbox Content
-description: Inhalt erstellen
+description: Erstellen von Inhalten
 seo-description: Create content
 uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 exl-id: 171fd95d-51f6-468b-84ed-4a757dba868e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '500'
 ht-degree: 7%
 
 ---
 
 # Anfänglicher Sandbox-Inhalt {#initial-sandbox-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorlage](initial-app.md#createthepagetemplate):
 

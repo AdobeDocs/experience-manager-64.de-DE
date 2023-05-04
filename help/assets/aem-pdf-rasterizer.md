@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Developer Tools,Renditions
 role: Developer,Admin
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 97%
+source-wordcount: '757'
+ht-degree: 80%
 
 ---
 
 # Verwenden von PDF Rasterizer {#using-pdf-rasterizer}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Wenn Sie große, inhaltslastige PDF- oder AI-Dateien in [!DNL Adobe Experience Manager Assets] hochladen, erstellt die Standardbibliothek u. U. keine genaue Ausgabe. Die Adobe PDF Rasterizer-Bibliothek kann zuverlässigere und präzisere Ausgaben erstellen als Standardbibliotheken. Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Szenarien:
 
@@ -22,7 +26,7 @@ Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Date
 * AI-Dateien und PDF-Dateien mit Miniaturansichten, die nicht standardmäßig generiert werden.
 * AI-Dateien mit PMS-Farben (Pantone Matching System)
 
-Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Vergleich mit der standardmäßigen Ausgabe eine bessere Qualität auf und bieten daher eine konsistente Darstellung auf allen Geräten. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Die Ausgabe erfolgt unabhängig vom Farbraum der Quelldatei immer in RGB.
+Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Vergleich mit der standardmäßigen Ausgabe eine bessere Qualität auf und bieten daher eine konsistente Darstellung auf allen Geräten. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Die Ausgabe erfolgt immer an RGB, unabhängig vom Farbraum der Quelldatei.
 
 1. Installieren Sie das PDF Rasterizer-Paket auf Ihrer [!DNL Adobe Experience Manager]-Bereitstellung von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
 
@@ -55,11 +59,11 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
-   * `-d`: Flag für eine reibungslose Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
+   * `-d`: Flag für eine reibungslose Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Wenn Sie diesen Parameter einbeziehen, wird der Befehl jedoch langsam ausgeführt und die Bildgröße erhöht.
 
-   * `-s`: Maximale Bildabmessung (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
+   * `-s`: Maximale Bildabmessung (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Wenn Seiten eine andere Größe haben, kann jede Seite möglicherweise um einen anderen Wert skaliert werden. Der Standardwert ist die tatsächliche Seitengröße.
 
-   * `-t`: Typ des Ausgabebildes. Gültige Formate sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
+   * `-t`: Typ des Ausgabebildes. Gültige Typen sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
 
    * `-i`: Pfad für die Eingabe-PDF. Dieser Parameter ist erforderlich.
 
@@ -86,11 +90,11 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
 
    Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
 
-   * `-d`: Flag für eine reibungslose Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
+   * `-d`: Flag für eine reibungslose Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Wenn Sie diesen Parameter einbeziehen, wird der Befehl jedoch langsam ausgeführt und die Bildgröße erhöht.
 
-   * `-s`: Maximale Bildabmessung (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
+   * `-s`: Maximale Bildabmessung (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Wenn Seiten eine andere Größe haben, kann jede Seite möglicherweise um einen anderen Wert skaliert werden. Der Standardwert ist die tatsächliche Seitengröße.
 
-   * `-t`: Typ des Ausgabebildes. Gültige Formate sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
+   * `-t`: Typ des Ausgabebildes. Gültige Typen sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
 
    * `-i`: Pfad für die Eingabe-PDF. Dieser Parameter ist erforderlich.
 

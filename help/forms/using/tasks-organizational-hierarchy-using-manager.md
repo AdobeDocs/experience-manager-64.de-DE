@@ -1,7 +1,7 @@
 ---
-title: Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manageransicht
+title: Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manager-Ansicht
 seo-title: Managing tasks in an organizational hierarchy using Manager View
-description: Wie Manager und Unternehmensleitungen auf die Aufgaben ihrer direkt oder indirekt unterstellten Mitarbeiter in der Registerkarte „Aufgaben“ in AEM Forms Workspace zugreifen und sie verwenden können.
+description: Wie Manager und Organisationsleiter auf die Aufgaben ihrer direkten und indirekten Berichte im Tab Aufgaben in AEM Forms Workspace zugreifen und diese bearbeiten können.
 seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
 uuid: a44d5a64-c03a-4337-8577-b121e6202449
 contentOwner: robhagat
@@ -10,16 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 exl-id: 28877528-2f91-4ee0-b9d8-c7df364ed803
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 100%
+source-wordcount: '380'
+ht-degree: 58%
 
 ---
 
-# Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manageransicht {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+# Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manager-Ansicht {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-In AEM Forms Workspace können Manager jetzt auf die Aufgaben zugreifen, die Benutzern in ihren Hierarchien – direkt oder indirekt unterstellten Mitarbeitern – zugewiesen sind, und dafür verschiedene Aktionen ausführen. Die Aufgaben sind in AEM Forms Workspace auf der Registerkarte „Aufgaben“ verfügbar. Die folgenden Aktionen werden für die Aufgaben direkt unterstellter Mitarbeiter unterstützt:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In AEM Forms Workspace können Manager jetzt auf die Aufgaben zugreifen, die Benutzern in ihren Hierarchien – direkt oder indirekt unterstellten Mitarbeitern – zugewiesen sind, und dafür verschiedene Aktionen ausführen. Die Aufgaben sind in AEM Forms Workspace auf der Registerkarte „Aufgaben“ verfügbar. Folgende Aktionen werden für die Aufgaben direkter Berichte unterstützt:
 
 **Weiterleiten** Leitet eine Aufgabe von einem direkt unterstellten Mitarbeiter an einen beliebigen Benutzer weiter.
 
@@ -29,10 +33,10 @@ In AEM Forms Workspace können Manager jetzt auf die Aufgaben zugreifen, die Ben
 
 **Ablehnen** Lehnt eine Aufgabe ab, die von einem anderen Benutzer an einen direkt unterstellten Mitarbeiter weitergeleitet wurde. Diese Option ist für die Aufgaben verfügbar, die von anderen Benutzern an einen direkt unterstellten Mitarbeiter weitergeleitet wurden.
 
-AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der Benutzer die Zugriffskontrolle (ACL) hat. Durch diese Überprüfung wird sichergestellt, dass ein Benutzer nur die Aufgaben abrufen kann, für die er Zugriffsberechtigungen hat. Eine Organisation kann die Hierarchie mit Webdiensten von Drittanbietern definieren und die Definition von Managern und direkt unterstellten Mitarbeitern an ihren Bedarf anpassen.
+AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der Benutzer die Zugriffskontrolle (ACL) hat. Mit einer solchen Prüfung wird sichergestellt, dass ein Benutzer nur die Aufgaben abrufen kann, für die er Zugriffsberechtigungen hat. Mit Webdiensten von Drittanbietern und Implementierungen zur Definition der Hierarchie kann ein Unternehmen die Definition von Manager- und Direktberichten an seine Anforderungen anpassen.
 
 1. Erstellen Sie einen DSC. Weitere Informationen erhalten Sie unter „Entwickeln von Komponenten für AEM Forms“ im Handbuch [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
-1. Definieren Sie in dem DSC eine neue SPI für das Hierarchiemanagement, um direkt unterstellte Mitarbeiter und Hierarchie unter den AEM Forms-Benutzern zu definieren. Im Folgenden finden Sie ein Java™-Beispielcodefragment.
+1. Definieren Sie in dem DSC eine neue SPI für das Hierarchiemanagement, um direkt unterstellte Mitarbeiter und Hierarchie unter den AEM Forms-Benutzern zu definieren. Im Folgenden finden Sie ein Beispiel für ein Java™-Codefragment.
 
    ```as3
    public class MyHierarchyMgmtService 
@@ -67,7 +71,7 @@ AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der
    }
    ```
 
-1. Erstellen Sie die Datei component.xml. Stellen Sie sicher, dass spec-id mit dem unten angegebenen Codefragment bereinstimmt. Im Folgenden finden Sie ein Beispielcodefragment, das Sie für Ihre Zwecke anpassen können.
+1. Erstellen Sie eine Datei &quot;component.xml&quot;. Stellen Sie sicher, dass spec-id mit dem unten im Codefragment gezeigten übereinstimmen muss. Im Folgenden finden Sie ein Beispielcode-Snippet, das Sie wiederverwenden können.
 
    ```as3
    <component xmlns="https://adobe.com/idp/dsc/component/document"> 
@@ -111,10 +115,10 @@ AEM Forms beschränkt den Zugriff eines Benutzers auf die Aufgaben, für die der
    </component>
    ```
 
-1. Stellen Sie das DSC über Workbench bereit. Starten Sie den Service `ProcessManagementTeamTasksService` neu.
+1. Stellen Sie DSC über Workbench bereit. Starten Sie den Service `ProcessManagementTeamTasksService` neu.
 1. Möglicherweise müssen Sie den Browser aktualisieren oder sich für den Benutzer erneut abmelden/anmelden.
 
-Der folgende Bildschirm veranschaulicht den Zugriff auf die Aufgaben direkt unterstellter Mitarbeiter und die verfügbaren Aktionen.
+Der folgende Bildschirm veranschaulicht den Zugriff auf die Aufgaben direkter Berichte und die verfügbaren Aktionen.
 
 ![cu_manager_view](assets/cu_manager_view.png)
 

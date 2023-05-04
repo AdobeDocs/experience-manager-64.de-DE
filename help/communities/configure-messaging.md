@@ -10,20 +10,24 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 88ee8573-58c4-42cd-8e36-2ea4a0d654e4
 exl-id: e03cf05c-2469-4883-ae7b-9d7e6660b71f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 29%
+source-wordcount: '971'
+ht-degree: 3%
 
 ---
 
 # Messaging-Funktion {#messaging-feature}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Zusätzlich zu den öffentlich sichtbaren Interaktionen in Foren und Kommentaren ermöglicht die Messaging-Funktion von AEM Communities es Community-Mitgliedern, privat miteinander zu interagieren.
 
 Diese Funktion kann bei einer [Community-Site](overview.md#communitiessites) erstellt.
 
-Die Messaging-Funktion bietet Folgendes:
+Die Messaging-Funktionen bieten folgende Möglichkeiten:
 
 * Nachricht an ein oder mehrere Community-Mitglieder senden
 * Nachricht an eine Community-Mitgliedergruppe senden
@@ -64,7 +68,7 @@ Sobald die Vererbung abgebrochen wurde, kann die `configure` -Symbol, um das Kon
 
 ![chlimage_1-397](assets/chlimage_1-397.png)
 
-#### Registerkarte &quot;Allgemein&quot; {#basic-tab}
+#### Registerkarte „Allgemein“ {#basic-tab}
 
 ![chlimage_1-398](assets/chlimage_1-398.png)
 
@@ -72,13 +76,16 @@ Sobald die Vererbung abgebrochen wurde, kann die `configure` -Symbol, um das Kon
 (*Erforderlich*) Legen Sie dies auf den Wert der Eigenschaft fest. `serviceSelector.name` von [AEM Communities Messaging-Dienst](messaging.md#messaging-operations-service).
 
 * **[!UICONTROL Seite erstellen]**
-(*Erforderlich*) Die Seite, die geöffnet werden soll, wenn ein Mitglied auf die `Reply` Schaltfläche. Die Zielseite sollte das Formular **[!UICONTROL Nachricht erstellen]** enthalten.
+(*Erforderlich*) Die Seite, die geöffnet werden soll, wenn ein Mitglied auf die `Reply` Schaltfläche. Die Zielseite sollte die **[!UICONTROL Nachricht erstellen]** Formular.
 
-* **[!UICONTROL Als Ressource antworten/anzeigen]** Ist diese Option aktiviert, verweisen die Antwort- und Ansichts-URL auf eine Ressource. Ist sie nicht aktiviert, werden Daten als Abfrageparameter in der URL übermittelt. 
+* **[!UICONTROL Antwort/Ansicht als Ressource]**
+Wenn diese Option aktiviert ist, verweisen die Antwort-URL und die Anzeigen-URL auf eine Ressource. Andernfalls werden Daten als Abfrageparameter in der URL übergeben.
 
-* **[!UICONTROL Anzeigeform für Profil]** Das Profilformular zur Anzeige des Absenderprofils.
+* **[!UICONTROL Formular zur Profilanzeige]**
+Das Profilformular, das zum Anzeigen des Senderprofils verwendet werden soll.
 
-* **[!UICONTROL Papierkorb-Ordner]** Ist die Option aktiviert, zeigt diese Nachrichtenlisten-Komponente lediglich Nachrichten an, die als gelöscht markiert wurden (Papierkorb).
+* **[!UICONTROL Ordner löschen]**
+Wenn diese Option aktiviert ist, zeigt diese Komponente nur Nachrichten an, die als gelöscht (Papierkorb) gekennzeichnet sind.
 
 * **[!UICONTROL Ordnerpfade]**
 (*Erforderlich*) Referenzieren der für `inbox.path.name` und `sentitems.path.name` im [AEM Communities Messaging-Dienst](messaging.md#messaging-operations-service). Beim Konfigurieren von `Inbox`, fügen Sie einen Eintrag mit dem Wert von hinzu. `inbox.path.name`. Beim Konfigurieren von `Outbox`, fügen Sie einen Eintrag mit dem Wert von hinzu. `sentitems.path.name`. Wenn Sie `Trash`, fügen Sie zwei Einträge mit beiden Werten hinzu.
@@ -103,9 +110,11 @@ Wenn diese Option aktiviert ist, zeigt eine
 Wenn diese Option aktiviert ist, wird angezeigt. 
 **`Reply`**, **`Reply All`**, **`Forward`** und **`Delete`** Schaltflächen zum erneuten Senden oder Löschen einer Nachricht. Dupliziert die Löschfunktion, wenn **`Delete Button`** ebenfalls aktiviert ist.
 
-* **[!UICONTROL Nachrichten pro Seite]** Die angegebene Zahl entspricht der maximalen Anzahl von Nachrichten, die bei einer Aufteilung in Seiten pro Seite angezeigt wird. Ist keine Anzahl festgelegt (leeres Feld), werden alle Nachrichten auf einer Seite angezeigt.
+* **[!UICONTROL Nachrichten pro Seite]**
+Die angegebene Anzahl entspricht der maximalen Anzahl an Nachrichten, die pro Seite in einem Paginierungsschema angezeigt werden. Wenn keine Zahl angegeben (leer gelassen) wird, werden alle Nachrichten angezeigt und es wird keine Paginierung durchgeführt.
 
-* **[!UICONTROL Zeitstempelmuster]** Stellen Sie für eine oder mehrere Sprachen Zeitstempelmuster bereit. Standardmäßig sind diese für die Sprachen en, de, fr, it, ja, zh_CN und ko_KR verfügbar.
+* **[!UICONTROL Zeitstempelmuster]**
+Stellen Sie Zeitstempelmuster für eine oder mehrere Sprachen bereit. Der Standardwert ist für en, de, fr, es, ja, zh_CN, ko_KR.
 
 * **[!UICONTROL Benutzer anzeigen]**
 Wählen Sie entweder 
@@ -129,19 +138,23 @@ Sobald die Vererbung abgebrochen wurde, kann die `configure` -Symbol, um das Kon
 
 ![chlimage_1-401](assets/chlimage_1-401.png)
 
-#### Registerkarte &quot;Allgemein&quot; {#basic-tab-1}
+#### Registerkarte „Allgemein“ {#basic-tab-1}
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
-* **[!UICONTROL URL-Weiterleitung]** Geben Sie die URL der Seite ein, die nach dem Versenden der Nachricht angezeigt werden soll. Beispiel: 
-`../messaging.html` möglich.
+* **[!UICONTROL Umleitungs-URL]**
+Geben Sie die URL der Seite ein, die nach dem Versand der Nachricht angezeigt wird. Beispiel: 
+`../messaging.html`.
 
-* **[!UICONTROL URL abbrechen]** Geben Sie die URL der Seite ein, die angezeigt werden soll, wenn der Sender das Verfassen einer Nachricht abbricht. Beispiel: 
-`../messaging.html` möglich.
+* **[!UICONTROL URL abbrechen]**
+Geben Sie die URL der Seite ein, die angezeigt wird, wenn der Absender die Nachricht abbricht. Beispiel: 
+`../messaging.html`.
 
-* **[!UICONTROL Maximale Länge des Nachrichtenbetreffs]** Die maximal zulässige Anzahl der Zeichen im Feld „Betreff“. Beispiel: 500. Der Standardwert ist keine Begrenzung.
+* **[!UICONTROL Maximale Länge des Nachrichtenbetreibers]**
+Die maximal zulässige Anzahl von Zeichen im Feld &quot;Betreff&quot;. Beispiel: 500. Der Standardwert ist keine Begrenzung.
 
-* **[!UICONTROL Maximale Länge des Nachrichtentextes]** Die maximal zulässige Anzahl der Zeichen im Feld „Inhalt“. Beispielsweise 10000. Der Standardwert ist keine Begrenzung.
+* **[!UICONTROL Maximale Länge des Nachrichtentextes]**
+Die maximal zulässige Anzahl von Zeichen im Feld Inhalt . Beispiel: 10000. Der Standardwert ist keine Begrenzung.
 
 * **[!UICONTROL Dienstauswahl]**
 (*Erforderlich*) Legen Sie dies auf den Wert der Eigenschaft fest. **`serviceSelector.name`** von [AEM Communities Messaging-Dienst](messaging.md#messaging-operations-service).
@@ -152,7 +165,7 @@ Sobald die Vererbung abgebrochen wurde, kann die `configure` -Symbol, um das Kon
 
 * **[!UICONTROL Feld anzeigen]**
 Wenn diese Option aktiviert ist, zeigen Sie die 
-`Subject` und aktivieren Sie die Option Betreff zur Nachricht hinzufügen. Diese Option ist standardmäßig deaktiviert.
+`Subject` und aktivieren Sie die Option Betreff zur Nachricht hinzufügen. Die Option Standard ist nicht aktiviert.
 
 * **[!UICONTROL Betreffbezeichnung]**
 Geben Sie den Text ein, der neben dem 
@@ -160,20 +173,22 @@ Geben Sie den Text ein, der neben dem
 
 * **[!UICONTROL Feld für Dateianhang anzeigen]**
 Wenn diese Option aktiviert ist, zeigen Sie die 
-`Attachment` und aktivieren Sie das Hinzufügen von Dateianlagen zur Nachricht. Diese Option ist standardmäßig deaktiviert.
+`Attachment` und aktivieren Sie das Hinzufügen von Dateianlagen zur Nachricht. Die Option Standard ist nicht aktiviert.
 
 * **[!UICONTROL Dateinamen anhängen]**
 Geben Sie den Text ein, der neben dem 
-`Attachment` -Feld. Der Standardwert ist **`Attach File`**.
+`Attachment` field. Der Standardwert ist **`Attach File`**.
 
 * **[!UICONTROL Inhaltsfeld anzeigen]**
 Wenn diese Option aktiviert ist, zeigen Sie die 
-`Content` und aktivieren Sie das Hinzufügen eines Nachrichtentextes. Diese Option ist standardmäßig deaktiviert.
+`Content` und aktivieren Sie das Hinzufügen eines Nachrichtentextes. Die Option Standard ist nicht aktiviert.
 
 * **[!UICONTROL Inhaltsbezeichnung]**
 Geben Sie den Text ein, der neben dem 
-`Content` -Feld. Der Standardwert ist **`Body`**.
+`Content` field. Der Standardwert ist **`Body`**.
 
-* **[!UICONTROL Mit Rich-Text-Editor]** Ist diese Option aktiviert, kann ein benutzerdefiniertes „Inhalt“-Textfeld verwendet werden, das über einen eigenen Rich-Text-Editor verfügt. Diese Option ist standardmäßig deaktiviert.
+* **[!UICONTROL Mit Rich-Text-Editor]**
+Ist diese Option aktiviert, wird die Verwendung eines benutzerdefinierten Textfelds &quot;Inhalt&quot;mit einem eigenen Rich-Text-Editor angezeigt. Die Option Standard ist nicht aktiviert.
 
-* **[!UICONTROL Zeitstempelmuster]** Stellen Sie für eine oder mehrere Sprachen Zeitstempelmuster bereit. Standardmäßig sind diese für die Sprachen en, de, fr, it, ja, zh_CN und ko_KR verfügbar.
+* **[!UICONTROL Zeitstempelmuster]**
+Stellen Sie Zeitstempelmuster für eine oder mehrere Sprachen bereit. Der Standardwert ist für en, de, fr, es, ja, zh_CN, ko_KR.

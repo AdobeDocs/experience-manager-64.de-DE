@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: b8488a39-44dd-4e6c-b3f0-857d67c79385
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '17032'
-ht-degree: 99%
+source-wordcount: '17068'
+ht-degree: 97%
 
 ---
 
 # Digitales Signieren und Zertifizieren von Dokumenten {#digitally-signing-and-certifying-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 **Über den Signature-Service**
 
@@ -53,7 +57,7 @@ Sie können die folgenden Aufgaben mithilfe des Signature-Services ausführen:
 
 ## Hinzufügen von Signaturfeldern {#adding-signature-fields}
 
-Digitale Signaturen werden in Signaturfeldern angezeigt, die eine grafische Darstellung der Signatur enthaltende Formularfelder sind. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann.
+Digitale Signaturen werden in Signaturfeldern angezeigt, bei denen es sich um Formularfelder handelt, die eine grafische Darstellung der Signatur enthalten. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann.
 
 Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Signature-Dienst-Java-API oder die Signature-Webdienst-API verwenden. Sie können mehr als ein Signaturfeld zu einem PDF-Dokument hinzufügen. Jeder Signaturfeldname muss jedoch eindeutig sein.
 
@@ -213,7 +217,7 @@ So fügen Sie mithilfe der Signature-API (Webdienst) ein Signaturfeld hinzu:
 
 ## Abrufen von Signaturfeldnamen {#retrieving-signature-field-names}
 
-Sie können die Namen aller Signaturfelder abrufen, die sich in einem zu signierenden und zertifizierenden PDF-Dokument befinden. Wenn Sie nicht sicher sind, wie die Signaturfeldnamen in einem PDF-Dokument lauten oder die Namen prüfen möchten, können Sie diese programmgesteuert abrufen. Der Signature-Dienst gibt den vollqualifizierten Namen des Signaturfelds zurück, z. B. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Sie können die Namen aller Signaturfelder abrufen, die sich in einem PDF-Dokument befinden, das Sie signieren oder zertifizieren möchten. Wenn Sie sich nicht sicher sind, welche Signaturfeldnamen sich in einem PDF-Dokument befinden oder die Namen überprüfen möchten, können Sie sie programmgesteuert abrufen. Der Signature-Dienst gibt den vollqualifizierten Namen des Signaturfelds zurück, z. B. `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
@@ -553,9 +557,9 @@ So ändern Sie ein Signaturfeld mithilfe der Signature-API (Webservice):
 
 ## Digitales Signieren von PDF-Dokumenten {#digitally-signing-pdf-documents}
 
-Digitale Signaturen können zu Sicherheitszwecken auf PDF-Dokumente angewendet werden. Digitale Signaturen bieten wie handschriftliche Signaturen ein Mittel, mit dem sich die Unterzeichner identifizieren und zum Dokument Stellung nehmen. Die zum digitalen Signieren verwendete Technologie stellt sicher, dass sowohl der Unterzeichner als auch die Empfänger genau wissen, was signiert wurde und dass das Dokument nach dem Signieren nicht geändert wurde.
+Digitale Signaturen können zu Sicherheitszwecken auf PDF-Dokumente angewendet werden. Digitale Signaturen bieten wie handschriftliche Signaturen ein Mittel, mit dem sich die Unterzeichner identifizieren und zum Dokument Stellung nehmen. Die zum digitalen Signieren verwendete Technologie stellt sicher, dass sowohl der Unterzeichner als auch die Empfänger genau wissen, was signiert wurde, und dass das Dokument seit der Unterzeichnung nicht mehr geändert wurde.
 
-PDF-Dokumente werden mittels der Technologie öffentlicher Schlüssel signiert. Ein Unterzeichner hat zwei Schlüssel: einen öffentlichen Schlüssel und einen privaten Schlüssel. Der private Schlüssel wird in den Anmeldedaten eines Benutzers gespeichert, die zum Zeitpunkt des Signierens verfügbar sein müssen. Der öffentliche Schlüssel ist im Zertifikat des Benutzers gespeichert, das den Empfängern zur Validierung der Signatur zur Verfügung stehen muss. Informationen zu gesperrten Zertifikaten finden Sie in den Zertifikatsperrlisten (CRLs) und den Antworten des Online-Zertifikatstatusprotokolls (OCSP), die von Zertifizierungsstellen (CAs) verteilt werden. Der Zeitpunkt der Signatur kann von einer vertrauenswürdigen Quelle, die als Zeitstempeldienst bezeichnet wird, erhalten werden.
+PDF-Dokumente werden mithilfe von Schlüsseltechnologie signiert. Ein Signierer hat zwei Schlüssel: einen öffentlichen und einen privaten Schlüssel. Der private Schlüssel wird in den Anmeldedaten eines Benutzers gespeichert, die zum Zeitpunkt des Signierens verfügbar sein müssen. Der öffentliche Schlüssel ist im Zertifikat des Benutzers gespeichert, das den Empfängern zur Validierung der Signatur zur Verfügung stehen muss. Informationen zu gesperrten Zertifikaten finden Sie in den von Zertifizierungsstellen verteilten Antworten auf Zertifikatsperrlisten (CRLs) und dem Online Certificate Status Protocol (OCSP). Der Zeitpunkt des Signierens kann von einer vertrauenswürdigen Quelle abgerufen werden, die als Zeitstempelstelle bezeichnet wird.
 
 >[!NOTE]
 >
@@ -1059,11 +1063,11 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
 
 ## PDF-Dokumente zertifizieren {#certifying-pdf-documents}
 
-Sie können ein PDF-Dokument absichern, indem Sie es mit einem bestimmten Signaturtyp (einer zertifizierten Signatur) zertifizieren. Eine zertifizierte Signatur entscheidet sich wie folgt von einer digitalen Signatur:
+Sie können ein PDF-Dokument schützen, indem Sie es mit einem bestimmten Signaturtyp, der als zertifizierte Signatur bezeichnet wird, zertifizieren. Eine zertifizierte Signatur unterscheidet sich wie folgt von einer digitalen Signatur:
 
-* Sie muss die erste, auf das PDF-Dokument angewendete Signatur sein. Das heißt, zum Zeitpunkt, zu dem die zertifizierte Signatur angewendet wird, müssen alle anderen Signaturfelder im Dokument unsigniert sein. In einem PDF-Dokument ist nur eine zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, müssen Sie es vor dem signieren zertifizieren. Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
-* Der Autor oder Ersteller des Dokuments kann festlegen, dass das Dokument auf bestimmte Arten modifiziert werden kann, ohne dass die zertifizierte Signatur ungültig wird. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, verhindert Acrobat, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
-* Zum Zeitpunkt des Signierens wird das Dokument auf bestimmte Typen von Inhalt überprüft, durch die die Inhalte eines Dokuments mehrdeutig oder irreführend werden könnten. Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (gültige Beglaubigung) zu solchen Inhalten kann bereitgestellt werden.
+* Sie muss die erste, auf das PDF-Dokument angewendete Signatur sein. Das heißt, zum Zeitpunkt, zu dem die zertifizierte Signatur angewendet wird, müssen alle anderen Signaturfelder im Dokument unsigniert sein. In einem PDF-Dokument ist nur eine zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, müssen Sie es vor dem signieren zertifizieren. Nachdem Sie ein PDF-Dokument zertifiziert haben, können Sie zusätzliche Signaturfelder digital signieren.
+* Der Autor oder Verfasser des Dokuments kann festlegen, dass das Dokument auf bestimmte Weise geändert werden kann, ohne dass die zertifizierte Signatur ungültig wird. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren kann in dem Dokument zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, verhindert Acrobat, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen vorgenommen werden, z. B. durch die Verwendung einer anderen Anwendung, ist die zertifizierte Signatur ungültig und Acrobat gibt beim Öffnen des Dokuments eine Warnung aus. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und normale Bearbeitungsvorgänge machen die Originalsignatur nicht ungültig.)
+* Zum Zeitpunkt des Signierens wird das Dokument auf bestimmte Inhaltstypen überprüft, die den Inhalt eines Dokuments mehrdeutig oder irreführend machen könnten. Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (gültige Beglaubigung) zu solchen Inhalten kann bereitgestellt werden.
 
 Sie können PDF-Dokumente programmgesteuert zertifizieren, indem Sie die Java-API des Signature-Services oder die Signature-Webservice-API verwenden. Beim Zertifizieren eines PDF-Dokuments müssen Sie auf eine Sicherheitsberechtigung verweisen, die im Berechtigungs-Service vorhanden ist. Informationen zu den Sicherheitsberechtigungen finden Sie im Handbuch zum *Installieren und Bereitstellen von AEM Forms* für Ihren Programm-Server.
 
@@ -1283,7 +1287,7 @@ So zertifizieren Sie ein PDF-Dokument mithilfe der Signature-API (Webservice):
 
 ## Überprüfen digitaler Signaturen {#verifying-digital-signatures}
 
-Digitale Signaturen können überprüft werden, um sicherzustellen, dass ein signiertes PDF-Dokument nicht geändert wurde und die digitale Signatur gültig ist. Beim Überprüfen einer digitalen Signatur können Sie den Signaturstatus und die Signatureigenschaften, wie etwa die Identität des Signierers, prüfen. Bevor Sie einer digitalen Signatur vertrauen, sollten Sie sie überprüfen. Verwenden Sie beim Überprüfen einer digitalen Signatur ein PDF-Dokument, das eine digitale Signatur enthält.
+Digitale Signaturen können überprüft werden, um sicherzustellen, dass ein signiertes PDF-Dokument nicht geändert wurde und die digitale Signatur gültig ist. Beim Überprüfen einer digitalen Signatur können Sie den Signaturstatus und die Signatureigenschaften, wie etwa die Identität des Signierers, prüfen. Bevor Sie einer digitalen Signatur vertrauen, sollten Sie sie überprüfen. Referenzieren Sie beim Überprüfen einer digitalen Signatur ein PDF-Dokument, das eine digitale Signatur enthält.
 
 Angenommen, die Identität des Signierers ist unbekannt. Wenn Sie das PDF-Dokument in Acrobat öffnen, wird in einer Warnmeldung darauf hingewiesen, dass die Identität des Signierers unbekannt ist, wie in der folgenden Abbildung dargestellt.
 

@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 exl-id: 07ca7715-f7b3-40e0-95bc-e05f0662ed08
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '346'
+ht-degree: 67%
 
 ---
 
 # Bestehende Domains bearbeiten und konvertieren{#editing-and-converting-existing-domains}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehende Domains ändern. Sie können auch eine bestehende Unternehmens-Domain in eine Hybrid-Domain umwandeln.
 
@@ -26,16 +30,16 @@ Sie können auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehe
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf den Namen der Domain, die bearbeitet werden soll.
 1. Um den Domain-Namen zu ändern, bearbeiten Sie den Text im Feld „Name“.
-1. Um die Authentifizierungsinformationen für eine Unternehmens- oder Hybrid-Domain zu ändern, klicken Sie auf den entsprechenden Authentifizierungsnamen am unteren Rand der Seite. Ändern Sie auf der Seite „Authentifizierung bearbeiten“ die Einstellungen den Anforderungen entsprechend. (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
-1. Um die Ordnerinformationen für eine Unternehmens-Domain zu ändern, klicken Sie auf den entsprechenden Ordnernamen am unteren Rand der Seite. Ändern Sie auf der Seite „Verzeichnis bearbeiten“ die Einstellungen den Anforderungen entsprechend. (Siehe [Ordner oder benutzerdefinierten SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
-1. Wenn Sie die gewünschten Änderungen durchgeführt haben, klicken Sie auf „OK“.
+1. Um die Authentifizierungsinformationen für eine Unternehmens- oder Hybrid-Domain zu ändern, klicken Sie auf den entsprechenden Authentifizierungsnamen am unteren Rand der Seite. Ändern Sie auf der Seite Authentifizierung bearbeiten die Einstellungen nach Bedarf. (Siehe [Authentifizierungseinstellungen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).
+1. Um die Ordnerinformationen für eine Unternehmens-Domain zu ändern, klicken Sie auf den entsprechenden Ordnernamen am unteren Rand der Seite. Ändern Sie auf der Seite &quot;Verzeichnis bearbeiten&quot;die Einstellungen nach Bedarf. (Siehe [Ordner oder benutzerdefinierte SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).
+1. Klicken Sie nach Abschluss der Änderungen auf OK.
 
 ## Konvertieren einer Unternehmens-Domain in eine Hybrid-Domain {#convert-an-enterprise-domain-to-a-hybrid-domain}
 
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf den Namen der Unternehmens-Domain, die umgewandelt werden soll.
 1. Klicken Sie auf „In Hybrid-Domain konvertieren“.
-1. Überprüfen Sie die zu Benutzern und Gruppen und zur Benutzerauthentifizierung angezeigten Informationen und klicken Sie auf „OK“.
+1. Überprüfen Sie die angezeigten Informationen zu Benutzer- und Gruppendaten sowie zur Authentifizierung von Benutzern und klicken Sie auf &quot;OK&quot;.
 1. Bearbeiten Sie die Einstellungen der Hybrid-Domain und klicken Sie auf „OK“.
 
 >[!NOTE]
@@ -47,5 +51,5 @@ Sie können auf der Seite „Domain-Verwaltung“ die Einstellungen für bestehe
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Domain-Verwaltung“.
 1. Klicken Sie auf den Namen der Hybrid-Domain, die umgewandelt werden soll.
 1. Klicken Sie auf „In Unternehmens-Domain konvertieren“.
-1. Überprüfen Sie die zu Benutzern und Gruppen und zur Benutzerauthentifizierung angezeigten Informationen und klicken Sie auf „OK“.
-1. Klicken Sie auf „Verzeichnis hinzufügen“ und konfigurieren Sie die erforderlichen Ordnerinformationen. (Siehe [Ordner oder benutzerdefinierten SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
+1. Überprüfen Sie die angezeigten Informationen zu Benutzer- und Gruppendaten sowie zur Authentifizierung von Benutzern und klicken Sie auf &quot;OK&quot;.
+1. Klicken Sie auf Verzeichnis hinzufügen und konfigurieren Sie die erforderlichen Ordnerinformationen. (Siehe [Ordner oder benutzerdefinierte SPIs hinzufügen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).

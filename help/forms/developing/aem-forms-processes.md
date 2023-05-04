@@ -11,14 +11,18 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 0ae0ddbf-ded6-4494-bf94-bf6cf7f1fd46
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 95%
+source-wordcount: '854'
+ht-degree: 92%
 
 ---
 
 # Grundlagen zu AEM Forms-Prozessen {#understanding-aem-forms-processes}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Ein gängiges Anwendungsbeispiel besteht darin, dass eine Reihe von AEM Forms-Services mit einem einzigen Dokument arbeiten kann. Sie können eine Anfrage an den Service-Container senden, indem Sie einen Prozess mithilfe von Workbench erstellen. Ein Workflow stellt einen Geschäftsprozess dar, den Sie automatisieren. Informationen zum Erstellen von Prozessen finden Sie unter [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).
 
@@ -46,7 +50,7 @@ Die folgende Abbildung zeigt ein Beispiel für einen kurzlebigen Prozess mit dem
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Code-Beispielen zum Aufrufen dieses Prozesses zu folgen, erstellen Sie mithilfe von Workbench einen Prozess namens `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Code-Beispielen zum Aufrufen dieses Prozesses zu folgen, erstellen Sie mithilfe von Workbench einen Prozess namens `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 Wenn dieser kurzlebige Prozess aufgerufen wird, führt er die folgenden Aktionen durch:
 
@@ -58,7 +62,7 @@ Wenn dieser kurzlebige Prozess aufgerufen wird, führt er die folgenden Aktionen
 
    >[!NOTE]
    >
-   >In der Regel besteht ein kurzlebiger Prozess aus mehr als drei Aktionen. Sie erstellen einen Prozess mithilfe von Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+   >In der Regel besteht ein kurzlebiger Prozess aus mehr als drei Aktionen. Sie erstellen einen Prozess mithilfe von Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
    *Programmieren mit AEM Forms* beschreibt die folgenden Methoden, mit denen Sie diesen kurzlebigen Prozess programmgesteuert aufrufen können:
 

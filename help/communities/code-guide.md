@@ -1,5 +1,5 @@
 ---
-title: 'Kodierungsrichtlinien '
+title: Codierungsrichtlinien
 seo-title: Coding Guidelines
 description: Richtlinien, Tipps und Tricks für Communities-Entwickler
 seo-description: Communities developer guidelines, tips, and tricks
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
 exl-id: 022043cd-35ed-49b1-b5b4-5cc92d29cef4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 3%
+source-wordcount: '216'
+ht-degree: 6%
 
 ---
 
-# Kodierungsrichtlinien  {#coding-guidelines}
+# Codierungsrichtlinien  {#coding-guidelines}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Richtlinien, Tipps und Tricks {#guidelines-tips-and-tricks}
 

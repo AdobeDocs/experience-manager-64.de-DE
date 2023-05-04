@@ -1,7 +1,7 @@
 ---
-title: Überblick über den Ausgabedienst
+title: Überblick über den Ausgabe-Service
 seo-title: Overview of output service
-description: 'Mit Output können Sie XML-Daten mit einem in Designer erstellten Formularentwurf zusammenführen und einen Dokumentausgabestream in einer Vielzahl von Formaten erstellen: '
+description: Mit der Ausgabe können Sie XML-Formulardaten mit einem in Designer erstellten Formularentwurf zusammenführen, um einen Dokumentausgabestream in verschiedenen Formaten zu erstellen.
 seo-description: Output lets you merge XML form data with a form design created in Designer to create a document output stream in various formats.
 uuid: 7890b0a6-bae5-4ad5-ae41-503b988ba3da
 contentOwner: admin
@@ -10,29 +10,33 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 exl-id: 00ca8bdf-77be-4f4c-a3d3-d61d13eeba7e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 100%
+source-wordcount: '301'
+ht-degree: 10%
 
 ---
 
-# Überblick über den Ausgabedienst {#overview-of-output-service}
+# Überblick über den Ausgabe-Service {#overview-of-output-service}
 
-Mit Output können Sie XML-Daten mit einem in Designer erstellten Formularentwurf zusammenführen und einen Dokumentausgabestream in einer Vielzahl von Formaten erstellen: Der Ausgabestream kann an einen Netzwerkdrucker, einen lokalen Drucker oder in eine Datei auf einem Datenträger gesendet werden
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Sie können die Output-Seite in Administration Console verwenden, um den Output-Dienst zu verwalten. Die von Ihnen konfigurierten Einstellungen werden zur Laufzeit verwendet, wenn die entsprechenden Einstellungen nicht über die API von AEM Forms festgelegt wurden. Die über das AEM Forms SDK vorgenommene Konfiguration setzt die mit Administration Console konfigurierten Einstellungen außer Kraft.
+Mit der Ausgabe können Sie XML-Formulardaten mit einem in Designer erstellten Formularentwurf zusammenführen, um einen Dokumentausgabestream in verschiedenen Formaten zu erstellen. Der Ausgabestream kann an einen Netzwerkdrucker, einen lokalen Drucker oder eine Festplattendatei gesendet werden
 
-Weitere Informationen zum Ausgabedienst finden Sie unter [Dienste-Referenz](https://www.adobe.com/go/learn_aemforms_services_61_de).
+Sie können die Output-Seite in Administration Console verwenden, um den Output-Dienst zu verwalten. Die konfigurierten Einstellungen werden zur Laufzeit verwendet, wenn die entsprechenden Einstellungen nicht über die AEM Forms-API angegeben wurden. Die über das AEM Forms SDK vorgenommene Konfiguration setzt die mithilfe von Administration Console konfigurierten Einstellungen außer Kraft.
 
-Sie können auf den Output-Seiten in Administration Console mehrere Aufgaben durchführen:
+Weitere Informationen zum Output-Dienst finden Sie unter [Dienstreferenz](https://www.adobe.com/go/learn_aemforms_services_61_de).
 
-* Zeichensätze für die Internationalisierung angeben. (Siehe [Den Zeichensatz ändern](/help/forms/using/admin-help/change-character-set.md#change-the-character-set).)
-* Absolute und relative Pfade für URLs, URIs, XCIs und Dateispeicherorte angeben. (Siehe [Dateispeicherorte für Output angeben](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
-* Cachegrößen und -richtlinien konfigurieren (Siehe [Cachemodus angeben](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) und [Cache-Einstellungen konfigurieren](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings).)
-* Schriften auf dem Anwendungsserver bereitstellen. (Siehe [Schriftarten zur Verfügung stellen](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available).)
-* Einzubettende Schriften angeben. (Siehe [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)
-* XCI-Konfigurationsoptionen angeben. (Siehe [XCI-Konfigurationsoptionen angeben](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options).)
-* Sicherheitseinstellungen angeben. (Siehe [Sicherheitseinstellungen angeben](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings).)
+Auf den Output-Seiten in Administration Console können Sie mehrere Aufgaben ausführen:
 
-Klicken Sie nach dem Ändern der Einstellungen auf „Speichern“, um sie auf Output anzuwenden. Der Server muss nicht neu gestartet werden, um die Änderungen zu übernehmen. Sie müssen jedoch ggf. den Output-Dienst neu starten, wenn Sie Cacheeinstellungen konfigurieren.
+* Geben Sie Zeichensätze für die Internationalisierung an. (Siehe [Zeichensatz ändern](/help/forms/using/admin-help/change-character-set.md#change-the-character-set).
+* Geben Sie absolute und relative Pfade für URLs, URIs, XCIs und Dateispeicherorte an. (Siehe [Dateispeicherorte für Output angeben](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
+* Konfigurieren Sie die Cachegrößen und -richtlinien. (Siehe [Festlegen des Cache-Modus](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) und [Cache-Einstellungen konfigurieren](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings).
+* Stellen Sie Schriftarten auf dem Anwendungsserver zur Verfügung. (Siehe [Schriftarten verfügbar machen](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available).
+* Geben Sie die einzubettenden Schriften an. (Siehe [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).
+* Geben Sie die XCI-Konfigurationsoptionen an. (Siehe [XCI-Konfigurationsoptionen angeben](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options).
+* Geben Sie die Sicherheitseinstellungen an. (Siehe [Sicherheitseinstellungen festlegen](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings).
+
+Nachdem Sie die Einstellungen geändert haben, klicken Sie auf Speichern , um sie auf Output anzuwenden. Sie müssen den Server nicht neu starten, damit die Änderungen wirksam werden. Möglicherweise müssen Sie den Output-Dienst jedoch beim Konfigurieren der Cacheeinstellungen neu starten.

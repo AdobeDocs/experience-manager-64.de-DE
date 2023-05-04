@@ -5,14 +5,18 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 exl-id: fcdc65c9-929d-4a87-8ff7-5e3cf5711fd9
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 1%
+source-wordcount: '1076'
+ht-degree: 0%
 
 ---
 
 # Neue Funktionen in AEM 6.4 Communities {#what-s-new-in-aem-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM Communities bietet Unternehmen ein Framework für die Zusammenarbeit zwischen ihren Partnern, Kunden und Mitarbeitern. Es bietet soziale Funktionen für die Website-Struktur und hilft Unternehmen, sich mit ihren Stakeholdern zu beschäftigen und ihnen Wissen zur Verfügung zu stellen, um ihren Markenwert zu verbessern.
 
@@ -24,7 +28,7 @@ Lesen Sie für eine schnelle Einführung in neue Funktionen und Verbesserungen w
 
 Mit AEM Communities können Community-Administratoren mithilfe vordefinierter Vorlagen in der Autorenumgebung Gruppen und Untergruppen innerhalb der Communities-Site erstellen. Diese Gruppen dienen als Untergruppen, die viele Konfigurationen übernehmen können, wie Designs und Stile von der übergeordneten Site. Diese Gruppen können jedoch von der übergeordneten Site abweichen, z. B. wenn sie unterschiedliche Gruppen-Moderatoren haben, oder können die Sicherheitsstufe variieren. Diese Gruppen fungieren als unabhängige, vollwertige Mini-Gemeinschaften, die durch die folgenden Verbesserungen weiter gestärkt werden.
 
-### Erstellen mehrsprachiger Gruppen in einem einzigen Schritt  {#create-multi-locale-groups-in-single-step}
+### Erstellen von Gruppen mit mehreren Gebietsschemas in einem Schritt {#create-multi-locale-groups-in-single-step}
 
 Als Teil einer Community-Site können mehrsprachige Gruppen in einem einzigen Vorgang erstellt werden. **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprachen]** -Feld in **[!UICONTROL Community-Gruppenvorlage]** Seite, die beim Erstellen einer [neue Community-Gruppe](groups.md) innerhalb einer Community-Site, ermöglicht dies.
 
@@ -48,7 +52,7 @@ Lerninhalte können jetzt für eine bestimmte Gruppe von Community-Mitgliedern e
 
 AEM 6.4 Communities bietet wenig Verbesserungen der Moderation, die dazu beitragen, das tägliche Leben von Moderatoren in der Community zu erleichtern.
 
-### Automatische Spamerkennung   {#automatic-spam-detection}
+### Automatische Spam-Erkennung  {#automatic-spam-detection}
 
 Die neue Spamerkennungs-Engine hilft beim Filtern unerwünschter und unerwünschter benutzergenerierter Inhalte auf Community-Sites oder -Gruppen. Wenn diese Funktion aktiviert ist, kann sie einen vom Benutzer generierten Inhalt basierend auf einem vordefinierten Satz von Spam-Wörtern als Spam oder Nicht Spam kennzeichnen. Moderatoren können den Inhalt weiter bearbeiten, um ihn in der Veröffentlichungsinstanz zu verweigern oder anzuzeigen. Diese Moderationsaktionen können inline oder über die Massenmoderationskonsole durchgeführt werden.
 

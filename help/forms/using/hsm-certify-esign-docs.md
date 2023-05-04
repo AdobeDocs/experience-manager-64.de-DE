@@ -10,34 +10,38 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 exl-id: ab5233dd-182e-4871-997f-b2142901bce7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 100%
+source-wordcount: '1032'
+ht-degree: 40%
 
 ---
 
 # Verwenden von HSM, um Dokumente digital zu signieren oder zertifizieren {#use-hsm-to-digitally-sign-or-certify-documents}
 
-Hardware-Sicherheitsmodule (HSM) und eTokens sind dedizierte, extrasichere und manipulationsgeschützte Computergeräte zum sicheren Verwalten, Verarbeiten und Speichern digitaler Schlüssel. Diese Geräte werden direkt an einen Computer oder einen Netzwerkserver angeschlossen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Adobe Experience Manager Forms kann auf einem HSM oder eToken gespeicherte Berechtigungen verwenden, um serverseitige digitale Signaturen anzuwenden oder eine Zertifizierung per eSign auszuführen. Verwenden von HSM oder einem eToken-Gerät mit AEM Forms:
+Hardware-Sicherheitsmodule (HSM) und eTokens sind dedizierte, gehärtete und manipulationsgeschützte Computergeräte, die für die sichere Verwaltung, Verarbeitung und Speicherung digitaler Schlüssel entwickelt wurden. Diese Geräte sind direkt an einen Computer oder einen Netzwerkserver angeschlossen.
+
+Adobe Experience Manager Forms kann auf einem HSM oder eToken gespeicherte Anmeldeinformationen verwenden, um serverseitige digitale Signaturen zu eSign zu verwenden oder auf ein Dokument anzuwenden. So verwenden Sie ein HSM- oder eToken-Gerät mit AEM Forms:
 
 1. Aktivieren Sie den DocAssurance-Dienst.
-1. Richten Sie Zertifikate für Reader Extension ein.
-1. Erstellen Sie einen Aliasnamen für das HSM oder eToken-Gerät in der AEM Web Console.
-1. Verwenden Sie die DocAssurance-Dienst-APIs, um die auf dem Gerät gespeicherten Dokumente mit digitalem Schlüssel zu signieren oder zu zertifizieren.
+1. Richten Sie Zertifikate für die Reader-Erweiterung ein.
+1. Erstellen Sie einen Alias für das HSM- oder eToken-Gerät in AEM Web Console.
+1. Verwenden Sie die DocAssurance-Dienst-APIs, um die Dokumente mit auf dem Gerät gespeicherten digitalen Schlüsseln zu signieren oder zu zertifizieren.
 
 ## Bevor Sie die HSM oder eToken-Geräte mit AEM Forms konfigurieren {#configurehsmetoken}
 
-* Installieren Sie das [Add-On-Paket für AEM Forms](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html).
-* Installieren und konfigurieren Sie HSM- oder eToken-Clientsoftware auf demselben Computer wie AEM Die Clientsoftware ist für die Kommunikation mit dem HSM und eToken-Geräten erforderlich.
-* (Nur Microsoft Windows) Legen Sie die Umgebungsvariable JAVA_HOME_32 so fest, dass sie auf den Ordner verweist, in dem die 32-Bit-Version von Java 8 Development Kit (JDK 8) installiert ist. Der Standardpfad des Ordners ist C:\Programme(x86)\Java\jdk&lt;Version>
-* (Nur AEM Forms auf OSGi) Installieren Sie das Stammzertifikat im Trust Store. Angabe ist erforderlich zur Verifizierung des signierten PDF.
+* Installieren [AEM Forms-Add-on](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) Paket.
+* Installieren und konfigurieren Sie HSM- oder eToken-Clientsoftware auf demselben Computer wie AEM Server. Die Clientsoftware ist für die Kommunikation mit dem HSM und eToken-Geräten erforderlich.
+* (Nur Microsoft Windows) Legen Sie die Umgebungsvariable JAVA_HOME_32 so fest, dass sie auf den Ordner verweist, in dem die 32-Bit-Version von Java 8 Development Kit (JDK 8) installiert ist. Der Standardpfad des Ordners ist C:\Program Files(x86)\Java\jdk&lt;version>
+* (Nur AEM Forms unter OSGi) Installieren Sie das Stammzertifikat im Trust Store. Angabe ist erforderlich zur Verifizierung des signierten PDF.
 
 >[!NOTE]
 >
->Unter Microsoft Windows werden nur 32-Bit-LunaSA oder EToken unterstützt.
+>Unter Microsoft Windows werden nur 32-Bit-LunaSA- oder EToken-Clients unterstützt.
 
 ## Aktivieren des DocAssurance-Dienstes {#configuredocassurance}
 
@@ -63,7 +67,7 @@ Standardmäßig ist der DocAssurance-Dienst nicht aktiviert. Führen Sie zum Akt
 1. Speichern und schließen Sie die Datei „sling.properties“.
 1. Starten Sie die AEM-Instanz neu.
 
-## Einrichten von Zertifikaten für Reader Extensions {#set-up-certificates-for-reader-extensions}
+## Einrichten von Zertifikaten für Reader-Erweiterungen {#set-up-certificates-for-reader-extensions}
 
 Führen Sie die folgenden Schritte aus, um Zertifikate einzurichten:
 
@@ -89,34 +93,34 @@ Führen Sie die folgenden Schritte aus, um Zertifikate einzurichten:
 
 >[!NOTE]
 >
->Bei AEM Forms on OSGi überprüpft die signierte PDF-Datei das Stammzertifikat im Trust Store bestehen.
+>Bei AEM Forms on OSGi wird das Stammzertifikat im Trust Store installiert, um die signierte PDF zu überprüfen.
 
 >[!NOTE]
 >
->Ersetzen Sie beim Wechsel in die Produktionsumgebung die Testzugangsdaten durch Produktionszugangsdaten. Achten Sie darauf, dass Sie Ihre alten Reader Extensions-Anmeldedaten löschen, bevor Sie abgelaufene oder Testanmeldedaten aktualisieren.
+>Ersetzen Sie beim Wechsel zur Produktionsumgebung Ihre Testberechtigungen durch Produktionsberechtigungen. Achten Sie darauf, dass Sie Ihre alten Reader Extensions-Anmeldedaten löschen, bevor Sie abgelaufene oder Testanmeldedaten aktualisieren.
 
 ## Erstellen eines Aliasnamens für das Gerät {#configuredeviceinaemconsole}
 
-Der Aliasname enthält alle Parameter, die ein HSM oder eToken erfordert. Befolgen Sie die nachfolgenden Anweisungen, um einen Aliasnamen für jede HSM- oder eToken-Berechtigung zu erstellen, die eSign oder Digital Signatures verwendet:
+Der Alias enthält alle Parameter, die ein HSM oder eToken erfordert. Führen Sie die unten aufgeführten Anweisungen aus, um einen Alias für jede HSM- oder eToken-Berechtigung zu erstellen, die eSign oder Digital Signatures verwendet:
 
-1. Öffnen Sie die AEM-Konsole. Die Standard-URL der AEM-Konsole lautet https://&lt;host>:&lt;port>/system/console/configMgr
+1. Öffnen Sie AEM Konsole. Die Standard-URL der AEM-Konsole lautet https://&lt;host>:&lt;port>/system/console/configMgr
 1. Öffnen Sie den **HSM Credentials Configuration Service** und geben Sie Werte in die folgenden Felder ein:
 
    * **Berechtigungsalias**: Geben Sie eine Zeichenfolge ein, die verwendet wird, um den Aliasnamen zu identifizieren. Dieser Wert wird als Eigenschaft für einige Digital Signatures-Vorgänge wie etwa das Signieren eines Signaturfelds verwendet.
-   * **DLL-Pfad**: Geben Sie den vollständig qualifizierten Pfad der HSM- oder eToken-Clientbibliothek auf dem Server an. Beispiel: c:\Programme\LunaSA\cryptoki.dll. In einer Clusterumgebung muss dieser Pfad für alle Server im Cluster identisch sein.
+   * **DLL-Pfad**: Geben Sie den vollständig qualifizierten Pfad Ihrer HSM- oder eToken-Client-Bibliothek auf dem Server an. Beispiel: C:\Program Files\LunaSA\cryptoki.dll. In einer Clusterumgebung muss dieser Pfad für alle Server im Cluster identisch sein.
    * **HSM-Pin**: Legen Sie ein Kennwort fest, das benötigt wird, um auf den Geräteschlüssel zuzugreifen.
-   * **HSM-Steckplatz-ID**: Geben Sie eine Steckplatz-ID als Ganzzahl an. Die Steckplatz-ID wird für jeden Client einzeln festgelegt. Falls Sie einen zweiten Rechner bei einer anderen Partition registrieren (z. B. HSMPART2 auf demselben HSM-Gerät), wird Steckplatz 1 für diesen Client mit der Partition HSMPART2 verknüpft.
+   * **HSM-Steckplatz-ID**: Geben Sie eine Steckplatzkennung vom Typ Ganzzahl an. Die Steckplatz-ID wird Client für Client festgelegt. Wenn Sie einen zweiten Rechner bei einer anderen Partition registrieren (z. B. HSMPART2 auf demselben HSM-Gerät), wird Steckplatz 1 für den Client mit der Partition HSMPART2 verknüpft.
 
-   **Hinweis:***Geben Sie beim Konfigurieren von EToken einen numerischen Wert für das HSM-Steckplatz-ID-Feld an. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.*
+   **Hinweis:** *Geben Sie beim Konfigurieren von Etoken einen numerischen Wert für das Feld HSM-Steckplatz-ID an. Ein numerischer Wert ist erforderlich, um Signaturen-Vorgänge zu ermöglichen.*
 
-   * **Zertifikat SHA1**: Geben Sie den SHA1-Wert (Thumbprint) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung an. Stellen Sie sicher, dass in dem SHA1-Wert keine Leerzeichen verwendet werden. Wenn Sie ein physisches Zertifikat verwenden, ist dies nicht erforderlich.
+   * **Zertifikat SHA1**: Geben Sie den SHA1-Wert (Thumbprint) der öffentlichen Schlüsseldatei (.cer) für die verwendete Berechtigung an. Stellen Sie sicher, dass im SHA1-Wert keine Leerzeichen verwendet werden. Wenn Sie ein physisches Zertifikat verwenden, ist es nicht erforderlich.
    * **HSM-Gerätetyp**: Wählen Sie den HSM- oder eToken-Gerätehersteller aus (Luna oder anderer). 
 
    Klicken Sie auf **Speichern**. Das Hardware-Sicherheitsmodul ist für AEM Forms konfiguriert. Jetzt können Sie das Hardware-Sicherheitsmodul mit AEM Forms verwenden, um Dokumente zu signieren oder zu zertifizieren.
 
-## Verwenden der DocAssurance-Dienst-APIs zum Signieren oder Zertifizieren eines auf dem Gerät gespeicherten Dokuments mit digitalem Schlüssel  {#programatically}
+## Verwenden Sie die DocAssurance-Dienst-APIs, um ein Dokument mit auf dem Gerät gespeicherten digitalen Schlüsseln zu signieren oder zu zertifizieren  {#programatically}
 
-Der folgende Beispielcode verwendet ein HSM oder eToken, um ein Dokument zu signieren oder zertifizieren.
+Der folgende Beispielcode verwendet ein HSM oder eToken zum Signieren oder Zertifizieren eines Dokuments.
 
 ```java
 /*************************************************************************
@@ -397,10 +401,10 @@ public class Sign{
 }
 ```
 
-Wenn Sie ein Upgrade von AEM 6.0 Form oder AEM 6.1 Forms durchgeführt haben und in der vorherigen Version den DocAssurance-Dienst verwendet haben:
+Wenn Sie ein Upgrade von AEM 6.0 Form oder AEM 6.1 Forms durchgeführt haben und den DocAssurance-Dienst in der vorherigen Version verwendet haben, dann:
 
-* Um den DocAssurance-Dienst ohne ein HSM oder eToken-Gerät zu verwenden, müssen Sie immer den vorhandenen Code verwenden.
-* Um den DocAssurance-Dienst mit einem HSM oder eToken-Gerät zu verwenden, ersetzen Sie den vorhandenen CredentialContext-Objektcode durch die unten aufgeführte API.
+* Wenn Sie den DocAssurance-Dienst ohne HSM oder eToken-Gerät verwenden möchten, verwenden Sie weiterhin den vorhandenen Code.
+* Um den DocAssurance-Dienst mit einem HSM- oder eToken-Gerät zu verwenden, ersetzen Sie den vorhandenen CredentialContext-Objektcode durch die unten aufgeführte API.
 
 ```java
 /**
@@ -413,4 +417,4 @@ Wenn Sie ein Upgrade von AEM 6.0 Form oder AEM 6.1 Forms durchgeführt haben und
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-Ausführliche Informationen zu den APIs und dem Beispielcode des Doc Assurance-Dienstes finden Sie unter [AEM Document Services programmgesteuert verwenden](/help/forms/using/aem-document-services-programmatically.md).
+Ausführliche Informationen zu APIs und Beispielcode des DocAssurance-Dienstes finden Sie unter [Programmgesteuerte Verwendung AEM Document Services](/help/forms/using/aem-document-services-programmatically.md).

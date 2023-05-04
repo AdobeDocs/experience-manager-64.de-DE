@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
 exl-id: a0d6e4a6-751f-4cab-842b-08719b899060
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 100%
+source-wordcount: '1342'
+ht-degree: 97%
 
 ---
 
 # Erstellen von PDF-Dokumenten mit gesendeten XML-Daten {#creating-pdf-documents-with-submittedxml-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Erstellen von PDF-Dokumenten mit gesendeten XML-Daten {#creating-pdf-documents-with-submitted-xml-data}
 

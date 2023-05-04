@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
 exl-id: 87be7ffe-d937-4e85-8d90-5b7c356f0876
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 4%
+source-wordcount: '629'
+ht-degree: 5%
 
 ---
 
 # Verfassen verschachtelter Gruppen {#authoring-nested-groups}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Erstellen von Gruppen in der Autoreninstanz {#creating-groups-on-author}
 
@@ -51,7 +55,7 @@ Diese Konsolen ähneln der Communities Sites-Konsole.
    * Zusätzliche verfügbare Community-Gruppensprache(n): Wählen Sie über das Pulldown-Menü die verfügbaren Community-Gruppensprachen aus. Im Menü werden alle Sprachen angezeigt, in denen die übergeordnete Community-Site erstellt wird. Benutzer können in diesem Schritt unter diesen Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
    * Community-Gruppenname: Kunst
    * Vorlage: nach unten ziehen, um `Reference Group`
-   * Wählen Sie nun eine der folgenden Optionen aus `Next`
+   * Klicken Sie auf `Next`
 
       ![parenttonestedgroup](assets/parenttonestedgroup.png)
 
@@ -65,10 +69,10 @@ Fahren Sie mit den folgenden Einstellungen durch die anderen Bedienfelder:
       * Leer lassen (von der übergeordneten Site übernehmen)
    * **Mitgliedschaft**
       * use default `Optional Membership`
-   * **Miniatur**
+   * **Miniaturansicht**
       * `optional`
-   * Wählen Sie nun eine der folgenden Optionen aus `Next`
-* Wählen Sie **[!UICONTROL Erstellen]**
+   * Klicken Sie auf `Next`
+* Wählen Sie **[!UICONTROL Erstellen]** aus
 
 ### Verschachteln von Gruppen innerhalb der Artgruppe {#nesting-groups-within-arts-group}
 

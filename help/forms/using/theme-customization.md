@@ -1,7 +1,7 @@
 ---
-title: Designanpassung
+title: Design-Anpassung
 seo-title: Theme Customization
-description: Anpassen des Themas an Ihre AEM Forms-App.
+description: Anpassen des Designs Ihrer AEM Forms-App.
 seo-description: How to customize the theme of your AEM Forms app.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
@@ -10,20 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: fb1e0bec-c943-4468-920d-8ef360a01365
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 100%
+source-wordcount: '259'
+ht-degree: 70%
 
 ---
 
-# Designanpassung {#theme-customization}
+# Design-Anpassung {#theme-customization}
 
-Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein unverwechselbares, organisationsspezifisches Erscheinungsbild zu geben. Sie können beispielsweise die Hintergrundfarbe und die Höhe von Aufgaben bzw. Startpunkten ändern. Folgendes Beispiel enthält hierzu Anweisungen:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein unverwechselbares, organisationsspezifisches Erscheinungsbild zu geben. Sie können beispielsweise die Hintergrundfarbe und die Höhe von Aufgaben oder Startpunkten ändern. Das folgende Beispiel enthält Anweisungen zum Ändern:
 
 * Anweisungen statt Beschreibungen anzeigen
 * Anzahl der Anzeigewege
-* Farbverlauf Hintergrundfarbe
+* Farbverlauf mit Hintergrundfarbe
 
 ## Schritte {#steps}
 
@@ -83,4 +87,4 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 1. Speichern Sie die Änderungen und schließen Sie die Datei `_style.css`.
 1. Öffnen Sie die AEM Forms-App.
 
-   Die AEM Forms-App zeigt jetzt Anweisungen anstelle einer Beschreibung an.
+   Das AEM Forms-Programm zeigt jetzt Anweisungen anstelle von Beschreibungen an.

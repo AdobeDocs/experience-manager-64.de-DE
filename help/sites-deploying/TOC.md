@@ -8,7 +8,8 @@ breadcrumb-title: Implementierungshandbuch
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.4, einschließlich unserer Cloud-Implementierung von Adobe Managed Services.
 feature: Deploying
 role: Architect
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 94%

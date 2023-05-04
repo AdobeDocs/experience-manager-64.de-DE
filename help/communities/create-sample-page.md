@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 exl-id: 00ac29fb-cc8f-4dd9-a261-839a4bf664c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 4%
+source-wordcount: '447'
+ht-degree: 5%
 
 ---
 
 # Erstellen einer Beispielseite {#create-a-sample-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Ab AEM 6.1 Communities ist es am einfachsten, eine Beispielseite zu erstellen, indem eine einfache Community-Site erstellt wird, die aus einer Page-Funktion besteht.
 
@@ -39,7 +43,7 @@ Wählen Sie in der globalen Navigation auf der Autoreninstanz die Option **[!UIC
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* Auswählen `Create button`
+* Klicken Sie auf `Create button`
 * GRUNDLEGENDE INFORMATIONEN
 
    * `Name`: Einzelseitenvorlage
@@ -54,7 +58,7 @@ Wählen Sie in der globalen Navigation auf der Autoreninstanz die Option **[!UIC
    * Geben Sie für Details zur Konfigurationsfunktion ein.
 
       * `Title`: Einzelseite
-      * `URL`: page
+      * `URL`: Seite
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -77,7 +81,7 @@ Wählen Sie nach der Erstellung der Site-Vorlage in der globalen Navigation die 
    * `Description`: Eine Community-Site, die aus einer einzelnen Seite zum Experimentieren besteht.
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
-   * `Name`: Beispiel
+   * `Name`: sample
 
       * url = http://localhost:4502/content/sites/sample
    * `Template`: Auswählen `Single Page Template`
@@ -85,17 +89,17 @@ Wählen Sie nach der Erstellung der Site-Vorlage in der globalen Navigation die 
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-* Auswählen `Next`
+* Klicken Sie auf `Next`
 * Schritt `2 - Design`
 
    * Entwurf auswählen
 
-* Auswählen `Next`
-* Auswählen `Next`
+* Klicken Sie auf `Next`
+* Klicken Sie auf `Next`
 
    (Alle Standardeinstellungen akzeptieren)
 
-* Auswählen `Create`
+* Klicken Sie auf `Create`
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 

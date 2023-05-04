@@ -11,18 +11,22 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 96%
+source-wordcount: '573'
+ht-degree: 74%
 
 ---
 
 # Repository-Neustrukturierung in AEM 6.4{#repository-restructuring-in-aem}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Einführung {#introduction}
 
-In Versionen vor AEM 6.4 wurde Kunden-Code teilweise in JCR-Bereichen bereitgestellt, die bei Aktualisierungen geändert werden konnten. Aus diesem Grund war es üblich, dass formale AEM-Versionen benutzerdefinierten Code, Konfigurationen oder Inhalte überschrieben haben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
+In Versionen vor AEM 6.4 wurde Kunden-Code teilweise in JCR-Bereichen bereitgestellt, die bei Aktualisierungen geändert werden konnten. Aus diesem Grund war es üblich, dass formale AEM-Versionen benutzerdefinierten Code, Konfigurationen oder Inhalte überschrieben haben. Darüber hinaus wurden durch Kundenänderungen manchmal AEM Produktcode oder -inhalt überschrieben, was die Produktfunktionalität beeinträchtigte.
 
 Durch klare Abgrenzungshierarchien für AEM-Produkt-Code und Kunden-Code können diese Konflikte vermieden werden.
 
@@ -36,7 +40,7 @@ Aus diesem Grund wird ab AEM 6.4 und in zukünftigen Versionen der Inhalt aus �
 Beim Aktualisieren auf AEM 6.4 wird eine große Teilmenge des Inhalts unter „/etc“ in andere Ordner im Repository dupliziert. Diese neuen Speicherorte sind die bevorzugten Stellen, an denen der Inhalt referenziert wird. Allerdings ist die Aktualisierung auf AEM 6.4 abwärtskompatibel mit den früheren Speicherorten im Ordner „/etc“, sodass der AEM-Code in den meisten Fällen weiterhin auf die alten Speicherorte verweist, bis Änderungen im Programm eines Kunden aktiv –- und in vielen Fällen manuell – vorgenommen werden. Hinsichtlich des Zeitrahmens gibt es zwei Kategorien von Änderungen:
 
 * Mit der Aktualisierung auf 6.4: Einige der Neustrukturierungsänderungen für „/etc“ sind nicht abwärtskompatibel und entsprechend sollten Änderungen im Rahmen der Aktualisierung auf AEM 6.4 geplant und umgesetzt werden.
-* Vor der Aktualisierung auf 6.5: Die überwiegende Mehrheit der Neustrukturierungsänderungen für /etc kann auf einen späteren Zeitpunkt nach der Aktualisierung verschoben werden. Wie bereits erwähnt, verweist der AEM 6.4-Code weiterhin auf die alten Speicherorte, bis die Änderungen im Rahmen einer Kundenfreigabe implementiert werden. Es gibt zwar keinen erforderlichen Zeitrahmen für die Änderungen, es wird jedoch empfohlen, sie vor der Aktualisierung auf 6.5 durchzuführen, da zukünftige Funktionen davon abhängen können, dass die neuen Speicherorte referenziert werden. Auch verweist die Dokumentation für eine bestimmte Funktion standardmäßig auf die neuen Speicherorte, weswegen die Verwendung alter Speicherorte verwirrend sein könnte.
+* Vor der Aktualisierung auf Version 6.5 - die überwiegende Mehrheit der Änderungen der /etc-Umstrukturierung kann bis zu einem späteren Zeitpunkt nach der Aktualisierung verschoben werden. Wie bereits erwähnt, verweist der AEM 6.4-Code weiterhin auf die alten Speicherorte, bis die Änderungen im Rahmen einer Kundenfreigabe implementiert werden. Es gibt zwar keinen erzwungenen Zeitrahmen, für den die Änderungen vorgenommen werden sollten, es wird jedoch empfohlen, sie vor der Aktualisierung auf 6.5 vorzunehmen, da zukünftige Funktionen darauf angewiesen sein können, auf die neuen Speicherorte verwiesen wird. Auch verweist die Dokumentation für eine bestimmte Funktion standardmäßig auf die neuen Speicherorte, weswegen die Verwendung alter Speicherorte verwirrend sein könnte.
 
 ### Leitfaden für die Neustrukturierung {#restructuring-guidance}
 
@@ -50,6 +54,6 @@ Bei der Planung einer Aktualisierung auf AEM 6.4 sollten die folgenden Seiten z
 * [Repository-Neustrukturierung für AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
 * [Repository-Neustrukturierung für AEM Commerce](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
 
-Jede Seite enthält zwei Bereiche entsprechend der Dringlichkeit der erforderlichen Änderungen. Alle Punkte im Abschnitt „Mit der Aktualisierung auf 6.4“ sollten im Rahmen des AEM 6.4-Aktualisierungsprojekts behandelt werden. Alles, was unter „Vor der Aktualisierung auf 6.5“ steht, kann optional auf nach der Aktualisierung verschoben werden.
+Jede Seite enthält zwei Bereiche entsprechend der Dringlichkeit der erforderlichen Änderungen. Alle Punkte im Abschnitt „Mit der Aktualisierung auf 6.4“ sollten im Rahmen des AEM 6.4-Aktualisierungsprojekts behandelt werden. Alles unter &quot;Vor der Aktualisierung auf 6.5&quot;kann optional bis nach der Aktualisierung verschoben werden.
 
-Jeder Eintrag auf der Seite enthält ein Feld „Leitfaden für die Neustrukturierung“, in dem die empfohlene technische Strategie für die Anpassung an die neue 6.4 beschrieben ist.  Repository-Modell, sodass die neuen Speicherorte für Inhalte referenziert werden, die sich zuvor im Ordner /etc befinden. Ein zusätzliches Feld „Hinweise“ bietet zusätzlichen nützlichen Kontext.
+Jeder Eintrag auf der Seite enthält ein Feld &quot;Anleitung zur Umstrukturierung&quot;, in dem die empfohlene technische Strategie für die Ausrichtung an dem neuen 6.4-Repository-Modell beschrieben wird, sodass die neuen Speicherorte für Inhalte referenziert werden, die sich zuvor im Ordner /etc befinden. Ein zusätzliches Feld „Hinweise“ bietet zusätzlichen nützlichen Kontext.

@@ -1,7 +1,7 @@
 ---
 title: Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM Sites-Seite ein.
 seo-title: Embed an adaptive form or interactive communication in AEM sites page
-description: Sie können adaptive Formulare in den AEM-Site-Seiten einbetten. Benutzer können Formulare ausfüllen und senden, ohne die Sites-Seiten zu verlassen.
+description: Sie können adaptive Formulare in Seiten AEM Sites einbetten. Benutzer können Formulare ausfüllen und senden, ohne die Sites-Seiten zu verlassen.
 seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
@@ -10,18 +10,22 @@ topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: ba5d21a4-231c-4e1e-b172-4d700cb9696e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 100%
+source-wordcount: '1119'
+ht-degree: 70%
 
 ---
 
 # Betten Sie ein adaptives Formular oder eine interaktive Kommunikation in die AEM Sites-Seite ein. {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Übersicht {#overview}
 
-Mit AEM Forms können Formularentwickler nahtlos adaptive Formulare in eine AEM Sites-Seite oder eine außerhalb von AEM gehostete Webseite einbetten. Das eingebettete adaptive Formular ist voll funktionsfähig und Benutzer können es ausfüllen und versenden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem Formular oder der interaktiven Kommunkation zu interagieren.
+Mit AEM Forms können Formularentwickler nahtlos adaptive Formulare in eine AEM Sites-Seite oder eine außerhalb von AEM gehostete Webseite einbetten. Das eingebettete adaptive Formular und die interaktive Kommunikation sind voll funktionsfähig und Benutzer können das Formular ausfüllen und senden, ohne die Seite zu verlassen. Dies hilft Benutzern, im Kontext anderer Elemente auf der Webseite zu bleiben und gleichzeitig mit dem Formular oder der interaktiven Kommunikation zu interagieren.
 
 Weitere Informationen zum Einbetten eines adaptiven Formulars in eine externe Website finden Sie unter [Adaptive Formulare in externe Webseiten einbetten](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
@@ -40,19 +44,19 @@ Falls eine Sites-Seite eine statische Vorlage verwendet, müssen Sie sie im Absa
 
 ## Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation {#af-component}
 
-Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mithilfe der AEM Forms-Container-Komponente:
+So betten Sie ein adaptives Formular oder eine interaktive Kommunikation mithilfe der AEM Forms Container-Komponente ein:
 
 1. Öffnen Sie im Bearbeitungsmodus die AEM Sites-Seite, in die Sie ein adaptives Formular oder interaktive Kommunikation einfügen möchten.
 1. Ziehen Sie die AEM Forms-Container-Komponente aus dem Komponenten-Browser auf die Seite.
 
-   Alternativ können Sie nach einem adaptiven Formular oder einer interaktiven Kommunikation im Assets-Browser suchen und per Drag &amp; Drop auf die Site-Seite ziehen. Dadurch wird das Formular in einen AEM Forms-Container eingebettet.
+   Alternativ können Sie nach einem adaptiven Formular oder einer interaktiven Kommunikation im Assets-Browser suchen und es per Drag-and-Drop auf die Sites-Seite ziehen. Dadurch wird das Formular in einen AEM Forms-Container eingebettet.
 
    >[!NOTE]
    >
    >Mehrere AEM Forms-Container-Komponenten auf einer Seite werden nicht unterstützt.
 
 1. Tippen Sie auf die eingebettete AEM Forms-Container-Komponente in der Sites-Seite und tippen Sie dann auf ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL AEM Forms-Container bearbeiten]** wird geöffnet.
-1. Geben Sie im Dialogfeld AEM Forms-Container bearbeiten Folgendes an.
+1. Geben Sie im Dialogfeld „AEM Forms-Container bearbeiten“ Folgendes an.
 
    * **Asset-Typ:** Wählen Sie den Typ des einzubettenden Assets. Die Optionen sind „Adaptives Formular“ und „Interaktive Kommunikation“
    * **Asset-Pfad**: Suchen Sie nach dem einzubettenden adaptiven Formular und wählen Sie es aus. Es wird automatisch ausgefüllt, wenn Sie es über den Assets-Browser eingefügt haben.
@@ -62,7 +66,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mithil
       * **Dankesseite**: Klicken Sie auf „Durchsuchen“ und wählen Sie die Seite aus, die bei Übermittlung eines Formulars angezeigt werden soll. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
       * **Seite beim Senden aktualisieren**: Aktivieren Sie diese Option, um die Seite mit dem eingebetteten adaptiven Formular zu aktualisieren und die Dankesseite anzuzeigen. Andernfalls ersetzt die Dankesseite das adaptive Formular im AEM Forms-Container, ohne die Seite zu aktualisieren. Diese Option steht nur zur Verfügung, wenn Sie ausgewählt haben, dass eine Dankesseite angezeigt werden soll.
    * **Thema**: Wählen Sie ein Thema, das die Formatierung der Komponenten in Ihrem adaptiven Formular oder interaktiver Kommunikation definiert. Zur Formatierung gehören Eigenschaften des Erscheinungsbildes, wie Schriftschnitt, Hintergrundfarbe, Abmessungen und Ausrichtung.
-   * **Höhe**: Geben Sie die Höhe des Containers an. Lassen Sie sie leer, um die Größe des Containers automatisch anzupassen.
+   * **Höhe**: Geben Sie die Höhe des Containers an. Lassen Sie es leer, um die Größe des Containers automatisch zu ändern.
    * **CSS-Client-Bibliothek**: Geben Sie den Pfad zu einer CSS-Client-Bibliothek an.
 
 
@@ -74,27 +78,27 @@ Betrachten wir die folgenden Szenarien für die Veröffentlichung eines eingebet
 
 * Wenn Sie die AEM Sites-Seite zum ersten Mal veröffentlichen und sie ein eingebettetes adaptives Formular oder interaktive Kommunikation enthält, veröffentlichen Sie die Siteseite und das eingebettete Formular oder Dokument.
 * Wenn Sie nur das eingebettete adaptive Formular oder die interaktive Kommunikation auf einer veröffentlichten Seite geändert haben, werden beim Veröffentlichen des Original-Assets die Änderungen in die veröffentlichte Seite übernommen. Die veröffentlichte Sites-Seite enthält einen Verweis auf das Asset und erfordert kein erneutes Veröffentlichen der Seite.
-* Wenn Sie die Site-Seite und das eingebettete adaptive Formular oder die interaktive Kommunikation geändert haben, veröffentlichen Sie die Sites-Seite und das eingebettete Asset erneut.
+* Wenn Sie die Siteseite und das eingebettete adaptive Formular oder die interaktive Kommunikation geändert haben, veröffentlichen Sie die Siteseite und das eingebettete Asset erneut.
 
 ## Eingebettete adaptive Formulare und interaktive Kommunikation bearbeiten {#modifying-embedded-adaptive-form-and-interactive-communication}
 
-Die AEM Sites-Seite behält einen Verweis auf das adaptive Formular und die interaktive Kommunikation im AEM Forms-Container bei. Deshalb werden alle Konfigurationen und Eigenschaften, beispielsweise Design, Stile und die Sendeaktion, die im adaptiven Originalformular und der interaktiven Kommunikation konfiguriert wurden, im eingebetteten adaptiven Formular und der interaktiven Kommunikation beibehalten.
+Die AEM Sites-Seite behält einen Verweis auf das adaptive Formular und die interaktive Kommunikation im AEM Forms-Container bei. Daher werden alle Konfigurationen und Eigenschaften wie das Design, die Stile und die Sendeaktion, die im ursprünglichen adaptiven Formular konfiguriert sind, sowie die interaktive Kommunikation im eingebetteten adaptiven Formular und in der interaktiven Kommunikation beibehalten.
 
-Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars zu ändern, führen Sie einen der folgenden Schritte aus.
+Um eine Konfiguration oder Eigenschaft des eingebetteten adaptiven Formulars und der interaktiven Kommunikation zu ändern, führen Sie einen der folgenden Schritte aus.
 
-* Öffnen Sie das Originalformular in adaptiven Formularen oder interaktiver Kommunikation in entsprechenden Editoren und modifizieren Sie diese.
+* Öffnen Sie das Originalformular in adaptiven Formularen oder in der interaktiven Kommunikation in den entsprechenden Editoren und ändern Sie es.
 * Tippen Sie auf der Seite im Bearbeitungsmodus auf das adaptive Formular und anschließend auf **[!UICONTROL In neuem Fenster bearbeiten]**. Das ursprüngliche Formular wird im Bearbeitungsmodus geöffnet, sodass Sie es bearbeiten können.
 
 >[!NOTE]
 >
->Die Änderungen im adaptiven Originalformular oder in der interaktiven Kommunikation werden automatisch vom eingebetteten Formular übernommen. Allerdings müssen Sie das adaptive Formular oder die Site-Seite neu veröffentlichen, damit die Änderungen in der veröffentlichten Seite angezeigt werden.
+>Die Änderungen, die im ursprünglichen adaptiven Formular oder in der interaktiven Kommunikation vorgenommen wurden, werden automatisch im eingebetteten Formular übernommen. Veröffentlichen Sie das adaptive Formular, die interaktive Kommunikation oder die Site-Seite jedoch erneut, um die Änderungen auf der veröffentlichten Seite widerzuspiegeln.
 
 ## Aspekte und Best Practices {#considerations-and-best-practices}
 
 Beachten Sie die folgenden Punkte, wenn Sie adaptive Formulare in AEM Sites-Seiten einbetten:
 
-* Die Kopf- und Fußzeile im Originalformular werden im eingebetteten Formular nicht übernommen.
-* Benutzerentwürfe und Übermittlungen von eingebetteten Formularen werden unterstützt und sind auf der entsprechenden Registerkarte im Forms Portal sichtbar.
-* Die im Originalformular konfigurierte Aktion wird im eingebetteten Formular beibehalten.
-* Die im Originalformular konfigurierten Erlebnis-Targeting und A/B-Tests funktionieren im eingebetteten Formular nicht. Sie können jedoch Erlebnis-Targeting auf der Siteseite verwenden, um verschiedene Formular je nach Benutzerprofil darzustellen.
+* Die Kopf- und Fußzeile im Originalformular sind nicht im eingebetteten Formular enthalten.
+* Benutzerentwürfe und Übermittlungen von eingebetteten Formularen werden unterstützt und sind auf den Registerkarten &quot;Entwürfe&quot;und &quot;Gesendete Forms&quot;im Formularportal sichtbar.
+* Die im Originalformular konfigurierte Sendeaktion wird im eingebetteten Formular beibehalten.
+* Erlebnis-Targeting und im Originalformular konfigurierte A/B-Tests funktionieren im eingebetteten Formular nicht. Sie können jedoch Erlebnis-Targeting auf der Siteseite verwenden, um verschiedene Formulare basierend auf Benutzerprofilen darzustellen.
 * Wenn Sie für das Originalformular Adobe Analytics konfiguriert haben, werden die Analysedaten des eingebetteten Formulars in Adobe Analytics erfasst. Sie sind jedoch nicht im Formularanalysebericht verfügbar.

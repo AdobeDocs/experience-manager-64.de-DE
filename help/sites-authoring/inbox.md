@@ -1,7 +1,7 @@
 ---
 title: Ihr Posteingang
 seo-title: Your Inbox
-description: Verwalten Ihrer Aufgaben mit dem Posteingang
+description: Verwalten Ihrer Aufgaben im Posteingang
 seo-description: Managing your tasks with the inbox
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
@@ -10,39 +10,43 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 9037f21c-5392-4322-af0d-7e220c810954
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 100%
+source-wordcount: '924'
+ht-degree: 42%
 
 ---
 
 # Ihr Posteingang{#your-inbox}
 
-Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten (darunter auch aus Workflows und Projekten), z. B. Benachrichtigungen bezüglich:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Sie können Benachrichtigungen aus verschiedenen AEM erhalten, einschließlich Workflows und Projekten. Beispiel: about:
 
 * Aufgaben:
 
-   * Diese können in diversen Bereichen der Benutzeroberfläche von AEM erstellt werden, z. B. unter **Projekte**.
-   * Diese können das Ergebnis der Workflow-Schritte **Aufgabe erstellen** oder **Projektaufgabe erstellen** sein.
+   * diese können auch an verschiedenen Stellen in der AEM Benutzeroberfläche erstellt werden, z. B. unter **Projekte**,
+   * diese können das Produkt eines Workflows sein. **Aufgabe erstellen** oder **Projektaufgabe erstellen** Schritt.
 
 * Workflows:
 
-   * Arbeitselemente, die für Aktionen stehen, die Sie auf den Seiteninhalt ausführen müssen.
+   * Arbeitselemente, die Aktionen darstellen, die Sie für Seiteninhalte ausführen müssen;
 
-      * Diese sind das Ergebnis des Workflow-Schritts **Teilnehmer**.
-   * Fehlgeschlagene Elemente, die Administratoren darauf hinweisen, einen fehlgeschlagenen Schritt erneut auszuführen
+      * diese sind das Produkt des Workflows **Teilnehmer** Schritte
+   * Fehlerelemente, damit Administratoren den fehlgeschlagenen Schritt erneut ausführen können.
 
 
-Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie diese anzeigen und darauf reagieren können.
-
->[!NOTE]
->
->AEM enthält vorab installierte Verwaltungsaufgaben, die für die Benutzergruppe der Administratoren bestimmt sind. Weitere Informationen finden Sie unter [Standardmäßige Verwaltungsaufgaben](#out-of-the-box-administrative-tasks).
+Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, in dem Sie sie anzeigen und Maßnahmen ergreifen können.
 
 >[!NOTE]
 >
->Weitere Informationen zu den Elementtypen finden Sie außerdem unter:
+>Vordefinierte AEM enthalten vordefinierte Aufgaben, die der Administrator-Benutzergruppe zugewiesen sind. Siehe [Vordefinierte Verwaltungsaufgaben](#out-of-the-box-administrative-tasks) für Details.
+
+>[!NOTE]
+>
+>Weitere Informationen zu den Elementtypen finden Sie unter:
 >
 >* [Projekte](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
@@ -53,7 +57,7 @@ Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie die
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
 
-In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Sie können diese Anzeige auch öffnen, um schnell auf die Seiten zuzugreifen, auf denen Aktionen nötig sind, oder um den Posteingang aufzurufen.
+In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Posteingang vorhandenen Elemente angezeigt. Die Anzeige kann auch geöffnet werden, um einen schnellen Zugriff auf die Seiten zu ermöglichen, für die Aktionen erforderlich sind, oder um auf den Posteingang zuzugreifen:
 
 ![wf-80](assets/wf-80.png)
 
@@ -61,9 +65,9 @@ In sämtlichen Konsolen wird in der Kopfzeile die Anzahl der aktuell in Ihrem Po
 >
 >Bestimmte Aktionen werden auch in der [Kartenansicht der jeweiligen Ressource](/help/sites-authoring/basic-handling.md#card-view) angezeigt.
 
-## Standardmäßige Verwaltungsaufgaben  {#out-of-the-box-administrative-tasks}
+## Vordefinierte Verwaltungsaufgaben  {#out-of-the-box-administrative-tasks}
 
-AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrator-Benutzergruppe zugewiesen sind.
+Standardmäßig AEM mit vier Aufgaben vorab geladen, die der Administrator-Benutzergruppe zugewiesen sind.
 
 * [Analysen und Targeting konfigurieren](/help/sites-administering/opt-in.md)
 * [AEM-Sicherheitsprüfliste anwenden](/help/sites-administering/security-checklist.md)
@@ -79,7 +83,7 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 1. Wählen Sie **Alle anzeigen** aus. Der **AEM-Posteingang** wird geöffnet. Im Posteingang werden Elemente aus den Bereichen Workflows, Projekte und Aufgaben angezeigt.
 1. Die Standardansicht ist die [Listenansicht](#inbox-list-view), Sie können aber auch zur [Kalenderansicht ](#inbox-calendar-view)wechseln. Dies erfolgt mit der Ansichtsauswahl (Symbolleiste oben rechts).
 
-   Für beide Ansichten können Sie die [Anzeigeeinstellungen](#inbox-view-settings) festlegen. Die verfügbaren Optionen hängen dabei von der aktuellen Ansicht ab.
+   Für beide Ansichten können Sie auch [Anzeigeeinstellungen](#inbox-view-settings); Die verfügbaren Optionen hängen von der aktuellen Ansicht ab.
 
    ![wf-79](assets/wf-79.png)
 
@@ -89,13 +93,13 @@ So öffnen Sie den Benachrichtigungs-Posteingang in AEM:
 
 ### Posteingang – Listenansicht {#inbox-list-view}
 
-In dieser Ansicht sind alle Elemente sowie die wichtigsten einem Element zugehörigen, relevanten Informationen aufgelistet.
+Diese Ansicht listet alle Elemente zusammen mit wichtigen relevanten Informationen auf:
 
 ![wf-82](assets/wf-82.png)
 
 ### Posteingang – Kalenderansicht {#inbox-calendar-view}
 
-In dieser Ansicht werden die Elemente nach Kalenderdatum und entsprechend der von Ihnen ausgewählten Kalenderansicht angezeigt.
+Diese Ansicht zeigt Elemente entsprechend ihrer Position im Kalender und der von Ihnen ausgewählten genauen Ansicht an:
 
 ![wf-93](assets/wf-93.png)
 
@@ -103,20 +107,20 @@ Sie haben folgende Möglichkeiten:
 
 * eine bestimmte Ansicht auswählen (**Zeitleiste**,**Spalte** oder **Liste**)
 
-* die Aufgaben festlegen, die gemäß **Plan** angezeigt werden sollen (**Alle**, **Geplant**, **In Bearbeitung**, **Bald fällig** oder **Überfällig**)
+* die Aufgaben angeben, die gemäß **Zeitplan**; **Alle**, **Geplant**, **In Bearbeitung**, **Bald fällig**, **Überfällig**
 
-* detailliertere Informationen zu einem bestimmten Element anzeigen
-* einen Datumsbereich auswählen, um die Anzeige einzugrenzen:
+* detailliertere Informationen zu einem Element anzeigen
+* Wählen Sie einen Datumsbereich aus, um die Ansicht zu fokussieren:
 
 ![wf-91](assets/wf-91.png)
 
 ### Posteingang – Anzeigeeinstellungen {#inbox-view-settings}
 
-Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
+Für beide Ansichten (Liste und Kalender) können Sie Einstellungen definieren:
 
 * **Kalenderansicht**
 
-   Für die **Kalenderansicht** können Sie Folgendes konfigurieren:
+   Für **Kalenderansicht** Sie können Folgendes konfigurieren:
 
    * **Gruppieren nach**
    * **Zeitplan** oder **Ohne**
@@ -126,7 +130,7 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
 * **Listenansicht**
 
-   Für die **Listenansicht** können Sie die Art der Sortierung konfigurieren:
+   Für **Listenansicht** Sie können den Sortiermechanismus konfigurieren:
 
    * **Sortieren nach**
    * **Sortierreihenfolge**
@@ -135,19 +139,19 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
 
-1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf das Element angewendet werden können.
+1. Um eine Aktion auf ein Element anzuwenden, wählen Sie die Miniatur des gewünschten Elements aus. In der Symbolleiste werden Symbole für die Aktionen angezeigt, die auf dieses Element anwendbar sind:
 
    ![wf-84](assets/wf-84.png)
 
    Die entsprechend dem ausgewählten Element verfügbaren Aktionen können Folgendes umfassen:
 
    * **Abschließen** einer Aktion, z. B. einer Aufgabe oder eines Workflow-Elements
-   * **Neu zuweisen**/**Delegieren** eines Elements
-   * **Öffnen** eines Elements; je nach Elementtyp bewirkt diese Aktion Folgendes:
+   * **Neu zuweisen**/**Delegieren** ein Element.
+   * **Öffnen** ein Element; Je nach Elementtyp kann diese Aktion:
 
-      * Anzeigen der Eigenschaften des Elements
-      * Öffnen des entsprechenden Dashboards oder Assistenten für weitere Aktionen
-      * Aufrufen einer zugehörigen Dokumentation
+      * Anzeigen der Objekteigenschaften
+      * Öffnen Sie das entsprechende Dashboard oder den entsprechenden Assistenten für weitere Aktionen.
+      * geöffnete zugehörige Dokumentation
    * **Schritt zurück** zu einem vorherigen Schritt.
    * Anzeigen der Payload eines Workflows.
    * Erstellen eines Projekts auf Basis des Elements.
@@ -156,32 +160,32 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
    >
    >Weitere Informationen finden Sie unter:
    >
-   >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
+   >* Workflow-Elemente - [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
 
 
-1. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
+1. Je nach ausgewähltem Element wird eine Aktion gestartet. Beispiel:
 
-   * Ein Dialogfeld für die jeweilige Aktion wird geöffnet.
-   * Ein Assistent für eine bestimmte Aktion wird gestartet.
-   * Eine Dokumentationsseite wird geöffnet.
+   * wird ein der Aktion entsprechendes Dialogfeld geöffnet.
+   * Ein Aktionsassistent wird gestartet.
+   * eine Dokumentationsseite geöffnet wird.
 
-   Wird etwa die Aktion **Neu zuweisen** ausgeführt, öffnet sich ein Dialogfeld:
+   Beispiel: **Neu zuweisen** öffnet ein Dialogfeld:
 
    ![wf-85](assets/wf-85.png)
 
    Je nachdem, ob ein Dialogfeld, ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie Folgendes durchführen:
 
-   * Die entsprechende Aktion (z. B. „Neu zuweisen“) bestätigen.
-   * Die Aktion abbrechen.
-   * Pfeil nach links; wenn z. B. ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
+   * die geeigneten Maßnahmen zu bestätigen; z. B. Neu zuweisen.
+   * Abbrechen der Aktion.
+   * Rückwärtspfeil; Wenn beispielsweise ein Aktionsassistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
 
 
 ## Erstellen einer Aufgabe {#creating-a-task}
 
-Sie können vom Posteingang aus Aufgaben erstellen:
+Im Posteingang können Sie Aufgaben erstellen:
 
-1. Klicken Sie auf **Erstellen** und anschließend auf **Aufgabe**.
-1. Füllen Sie die Felder in den Registerkarten **Allgemein** und **Erweitert** aus. Obligatorisch ist hierbei nur der **Titel**, alle anderen sind optional:
+1. Auswählen **Erstellen**, dann **Aufgabe**.
+1. Füllen Sie die erforderlichen Felder im **Allgemein** und **Erweitert** Registerkarten; nur die **Titel** ist obligatorisch, alle anderen sind optional:
 
    * **Allgemein**:
 
@@ -198,7 +202,7 @@ Sie können vom Posteingang aus Aufgaben erstellen:
 
    * **Erweitert**
 
-      * **Name**: Daraus wird die URL gebildet. Wird kein Name angegeben, basiert sie auf dem **Titel**.
+      * **Name**: wird verwendet, um die URL zu bilden; Wenn das Feld leer ist, basiert es auf der **Titel**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -206,19 +210,19 @@ Sie können vom Posteingang aus Aufgaben erstellen:
 
 ## Erstellen eines Projekts {#creating-a-project}
 
-Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/help/sites-authoring/projects.md) zu erstellen:
+Für bestimmte Aufgaben können Sie eine [Projekt](/help/sites-authoring/projects.md) basierend auf dieser Aufgabe:
 
-1. Wählen Sie die gewünschte Aufgabe aus, indem Sie auf die Miniatur tippen/klicken.
+1. Wählen Sie die gewünschte Aufgabe aus, indem Sie auf die Miniaturansicht tippen/klicken.
 
    >[!NOTE]
    >
    >Für die Erstellung eines Projekts können nur Aufgaben verwendet werden, die im **Posteingang** über die Option **Erstellen** erstellt wurden.
    >
-   >Arbeitselemente (aus einem Workflow) können nicht für die Erstellung eines Projekts verwendet werden.
+   >Arbeitselemente (aus einem Workflow) können nicht zum Erstellen eines Projekts verwendet werden.
 
 1. Wählen Sie **Projekt erstellen** aus der Symbolleiste aus, um den Assistenten zu öffnen.
-1. Wählen Sie die gewünschte Vorlage und klicken Sie auf **Weiter**.
-1. Geben Sie die gewünschten Eigenschaften an:
+1. Wählen Sie die entsprechende Vorlage aus und **Nächste**.
+1. Geben Sie die erforderlichen Eigenschaften an:
 
    * **Allgemein**
 
@@ -232,9 +236,9 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
       * **Name**
    >[!NOTE]
    >
-   >Ausführliche Informationen hierzu finden Sie unter [Erstellen eines Projekts](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).
+   >Siehe [Erstellen eines Projekts](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) für vollständige Informationen.
 
-1. Klicken Sie auf **Erstellen**, um die Aktion zu bestätigen.
+1. Auswählen **Erstellen** , um die Aktion zu bestätigen.
 
 ## Filtern von Elementen im AEM-Posteingang {#filtering-items-in-the-aem-inbox}
 

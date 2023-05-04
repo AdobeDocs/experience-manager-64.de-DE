@@ -12,20 +12,24 @@ discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 exl-id: 335c7a78-a00f-451b-8e53-225830d429c6
 feature: Asset Management,CDN Cache
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 95%
+source-wordcount: '674'
+ht-degree: 91%
 
 ---
 
 # Ungültigmachen von Inhalten im CDN-Cache   {#invalidating-your-cdn-cached-content}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Dynamic Media-Assets werden vom CDN zwecks schneller Bereitstellung im Cache gespeichert. Wenn Sie ein Asset aktualisieren, sollen diese Änderungen jedoch möglicherweise sofort wirksam werden. Indem Sie die Inhalte im CDN (Content Delivery Network)-Cache ungültig machen, können Sie von Dynamic Media bereitgestellte Assets schnell aktualisieren. Sie müssen dazu also nicht auf einen Ablauf des Cache warten.
 
 Siehe auch [Überblick über Caching in Dynamic Media Classic](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
-**So machen Sie Inhalte im CDN-Cache ungültig:** 
+**So machen Sie Inhalte im CDN-Cache ungültig:**
 
 1. Melden Sie sich bei Ihrem Dynamic Media Classic-Desktop-Programm an.
 

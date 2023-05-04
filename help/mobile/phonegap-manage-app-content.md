@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 5c8971ab-b07c-4131-b4cb-f34c52425014
 exl-id: 8000014c-98c1-4de4-9f0d-b7fdc1a37cd6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 8%
+source-wordcount: '743'
+ht-degree: 5%
 
 ---
 
 # Erstellen und Verwalten von App-Inhalten{#creating-and-managing-app-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -43,7 +47,7 @@ Schließlich veröffentlichen Administratoren strategisch den aktualisierten App
 
 Hier können Inhalte in AEM Mobile auf die gleiche Weise erstellt, bearbeitet und gelöscht werden wie in AEM Sites.
 
-Die **Kachel &quot;Seiteninhalt verwalten&quot;** zeigt die Anzahl der Seiten verwalteten Inhalts an und zuletzt geändert für eine bestimmte Payload. Durch Klicken auf die einzelnen Datensätze in diesem Bereich können Sie Details für den Inhalt anzeigen, um Seiten zu erstellen, zu kopieren, zu verschieben, zu löschen und zu aktualisieren.
+Die **Kachel &quot;Seiteninhalt verwalten&quot;** zeigt die Anzahl der Seiten verwalteten Inhalts an und zuletzt geändert für eine bestimmte Payload. Sie können einen Drilldown in den Inhalt durchführen, um Seiten zu erstellen, zu kopieren, zu verschieben, zu löschen und zu aktualisieren, indem Sie auf jeden Datensatz in der Kachel klicken.
 
 Sobald der Inhalt aktualisiert wurde, können Administratoren eine Payload für Inhaltsaktualisierungen Over-the-Air (OTA) für Kunden über die **Kachel &quot;Inhaltspakete verwalten&quot;.**
 
@@ -95,7 +99,7 @@ Wenn Sie Ihren App-Benutzern mit Content Sync OTA neue Inhalte bereitstellen mö
 
 Nachdem Sie im Anwendungs-Dashboard Informationen zum Erstellen und Verwalten von App-Inhalten erhalten haben, finden Sie in den folgenden Ressourcen weitere Autorenrollen:
 
-* [Bereich „App verwalten“](/help/mobile/phonegap-app-details-tile.md)
+* [Die Kachel App verwalten](/help/mobile/phonegap-app-details-tile.md)
 * [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
 * [Erstellen einer neuen App mit dem Assistenten zum Erstellen einer App](/help/mobile/phonegap-create-new-app.md)

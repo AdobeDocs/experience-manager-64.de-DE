@@ -1,7 +1,7 @@
 ---
-title: Wasserzeichen in der PDF-Briefvorschau
+title: Benutzerdefiniertes Wasserzeichen in der PDF-Briefvorschau
 seo-title: Custom watermark in letter PDF preview
-description: Erfahren Sie, wie Sie benutzerdefinierte Wasserzeichen in der PDF-Briefvorschau erstellen.
+description: Erfahren Sie, wie Sie in der Briefvorschau ein benutzerdefiniertes Wasserzeichen erstellen.
 seo-description: Learn how to create custom watermark in letter PDF preview.
 uuid: f406de81-af94-40dd-97ec-9ca95620f961
 content-type: reference
@@ -10,28 +10,32 @@ topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 feature: Correspondence Management
 exl-id: 8aeabd95-948d-4a54-b593-1eda8ddd731b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 90%
+source-wordcount: '371'
+ht-degree: 47%
 
 ---
 
-# Wasserzeichen in der PDF-Briefvorschau {#custom-watermark-in-letter-pdf-preview}
+# Benutzerdefiniertes Wasserzeichen in der PDF-Briefvorschau {#custom-watermark-in-letter-pdf-preview}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
-Agent-Benutzer zeigen in der Benutzeroberfläche „Korrespondenz erstellen“ die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. für E-Mails oder zum Drucken.
+Agent-Benutzer zeigen in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;die Korrespondenz in der endgültigen Form an, in der sie zur Nachbearbeitung gesendet wird, z. B. zum E-Mail-Versand oder zum Drucken.
 
-Um die nicht autorisierte Verwendung dieser Daten zu verhindern, können Unternehmen der PDF-Vorschau ein Wasserzeichen hinzufügen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
+Um die unbefugte Verwendung dieser Daten zu verhindern, können Unternehmen ein Wasserzeichen auf der Vorschau-PDF festlegen. Das standardmäßige Wasserzeichen ist „VORSCHAU“ und wird über die gesamte PDF hinweg angezeigt.
 
 Um das Wasserzeichen in der Vorschau-PDF zu aktivieren, wählen Sie die **[!UICONTROL Wasserzeichen anwenden]** Option &quot;Während der Vorschau&quot;in **[!UICONTROL Correspondence Management-Konfigurationen]** at `https://[server]:[port]/system/console/configMgr`.
 
 ![default-watermark](assets/default-watermark.png)
 
-Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild des Wasserzeichens anzupassen:
+Sie können die folgenden Schritte verwenden, um den Text und das Erscheinungsbild des Wasserzeichens anzupassen:
 
-## Passen Sie die Benutzeroberfläche „Korrespondenz erstellen“ an {#customizewatermark-}
+## Anpassen des Wasserzeichens in der PDF-Vorschau in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot; {#customizewatermark-}
 
 1. Wechseln Sie zu `https://[server]:[port]/[ContextPath]/crx/de` und melden Sie sich als „Administrator“ an.
 1. Erstellen Sie im Anwendungsordner einen Ordner mit dem Namen **[!UICONTROL previewwatermark]**, dessen Pfad/Struktur der des Ordners „previewwatermark“ im Ordner „libs“ entspricht:
@@ -50,11 +54,11 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
       >[!NOTE]
       >
-      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, gehen möglicherweise verloren, da diese Verzweigung sich ändern kann, wenn Sie:
+      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
       >
-      >* Ihre Instanz aktualisieren
-      >* Ein Hotfix anwenden
-      >* Ein Feature Pack installieren
+      >* Aktualisierung Ihrer Instanz
+      >* Anwenden eines Hotfixes
+      >* Installieren eines Feature Packs
 
 
    1. Klicken Sie auf **OK** und dann auf **Alle speichern**. Der Ordner **[!UICONTROL previewwatermark]** wird unter dem angegebenen Pfad erstellt.
@@ -81,6 +85,6 @@ Sie können folgende Schritte verwenden, um den Text und das Erscheinungsbild de
 
    >[!NOTE]
    >
-   >In der ddx-Datei sollten die Verweise auf das Ergebnis und die Quelle für output.pdf und input.pdf unverändert bleiben. Der Name der ddx-Datei darf nicht geändert werden.
+   >In der ddx-Datei sollten die Verweise auf &quot;result&quot;und &quot;source&quot;in output.pdf und input.pdf unverändert bleiben. Der Name der Datei ddx sollte ebenfalls nicht geändert werden.
 
 1. Klicken Sie auf **Alle speichern**.

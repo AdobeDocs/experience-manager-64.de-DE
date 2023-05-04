@@ -10,44 +10,48 @@ topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: 82a35d81-13d0-435f-875e-6fd0a6d574d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 100%
+source-wordcount: '235'
+ht-degree: 28%
 
 ---
 
 # Correspondence Management: Fehlerbehebung {#correspondence-management-troubleshooting}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Fehler beim Speichern eines Briefs {#errors-when-saving-a-letter}
 
 ### Problem {#issue}
 
-Einer der folgenden Fehler wird angezeigt, wenn ein Brief gespeichert wird:
+Einer der folgenden Fehler wird beim Speichern eines Briefs angezeigt:
 
 * Datenbindung für das Textmodul nicht vorhanden
 * Geben Sie die Eigenschaftsangaben an, die für Folgendes benötigt werden
 
 ### Grund {#reason}
 
-Diese Fehler können aus folgendem Grund auftreten:
+Diese Fehler können aus einem der folgenden Gründe auftreten:
 
-* Ein Datenwörterbuch ist mit dem Brief verbunden, ist aber nicht auf dem Server vorhanden.
-* Ein Datenwörterbuch ist mit dem Brief verbunden, hat aber einen Unterstrich (_) in seinem Namen.
+* Ein Datenwörterbuch ist an den Brief gebunden, aber nicht auf dem Server vorhanden.
+* Ein Datenwörterbuch ist an den Brief gebunden, hat jedoch einen Unterstrich (_) in seinem Namen.
 
 ### Problemumgehung {#workaround}
 
-Vergewissern Sie sich, dass das Datenwörterbuch, das Sie im Brief verwenden, auf dem Server vorhanden ist und keinen Unterstrich (_) im Namen enthält.
+Stellen Sie sicher, dass das Datenwörterbuch, das Sie im Brief verwenden, auf dem Server vorhanden ist und keinen Unterstrich (_) im Namen enthält.
 
-## Fehler bei der Vorschau eines Briefs {#error-when-previewing-a-letter}
+## Fehler bei der Briefvorschau {#error-when-previewing-a-letter}
 
 ### Problem {#issue-1}
 
-Bei der Vorschau eines Briefs wird, selbst wenn ein zuvor unveröffentlichtes Textelement im Brief veröffentlicht wird, der folgende Fehler angezeigt: „Fehler beim Laden des Briefs: Asset konnte nicht aus der XML-Eingabe importiert werden“.
+Bei der Vorschau eines Briefs wird der Fehler &quot;Fehler beim Laden des Briefs: Asset konnte nicht aus XML-Eingabe importiert werden&quot;wird auch dann angezeigt, wenn ein zuvor unveröffentlichtes Textelement im Brief veröffentlicht wird.
 
 ### Problemumgehung {#workaround-1}
 
-Setzen Sie den Brief-Cache für die Veröffentlichungs-Instanz zurück, indem Sie folgende Schritten durchführen. Versuchen Sie dann erneut den Brief anzuzeigen:
+Setzen Sie den Brief-Cache auf der Veröffentlichungsinstanz mit den folgenden Schritten zurück und versuchen Sie dann erneut, den Brief anzuzeigen:
 
 1. Navigieren Sie zu **`https://[server]:[port]/[contextPath]/system/console/configMgr`** und melden Sie sich als Administrator an.
 1. Wählen Sie **Correspondence Management-Konfigurationens**.

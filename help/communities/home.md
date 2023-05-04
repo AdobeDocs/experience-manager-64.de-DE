@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Communities User Guide
 description: Dieses Handbuch behandelt alle AEM Communities-Aufgaben, z. B. das Erstellen von Online-Erlebnissen wie Foren, Benutzergruppen, Lernressourcen und anderen sozialen Funktionen.
 seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 4711564b-adcc-4835-8215-138b209d1578
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 86%
+source-wordcount: '368'
+ht-degree: 79%
 
 ---
 
 # AEM 6.4 Communities-Benutzeranleitung
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Dieses Handbuch behandelt alle AEM Communities-Aufgaben, z. B. das Erstellen von Online-Erlebnissen wie Foren, Benutzergruppen, Lernressourcen und anderen sozialen Funktionen.
 

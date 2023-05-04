@@ -1,7 +1,7 @@
 ---
 title: App-Definitionen
 seo-title: App definitions
-description: 'Auf dieser Seite erfahren Sie mehr über App-Definitionen, mit denen Sie erkennen können, welche Bereiche und andere Konfigurationen für die App geeignet sind. Mit App-Definitionen kann der Benutzer Speicherplatz hinzufügen, ohne die App neu kompilieren zu müssen. '
+description: Auf dieser Seite erfahren Sie mehr über App-Definitionen, mit denen Sie erkennen können, welche Bereiche und andere Konfigurationen für die App geeignet sind. Mit App-Definitionen kann der Benutzer Speicherplatz hinzufügen, ohne die App neu kompilieren zu müssen.
 seo-description: Follow this page to learn about app definitions, that are a way to identify what spaces and other configurations are appropriate for the app. App definitions allows the user to add space, without having to recompile the app.
 uuid: bdb4063b-1597-47e2-96d4-c4cc7c78c3d7
 contentOwner: User
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 860dde0b-7cb4-4668-9fac-6f954f1ec0a7
 exl-id: c1103f7b-19fe-43b2-95e8-523efdc11950
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 12%
+source-wordcount: '263'
+ht-degree: 14%
 
 ---
 
 # App-Definitionen{#app-definitions}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Mit App-Definitionen können Sie ermitteln, welche Bereiche und andere Konfigurationen für die App geeignet sind. Mit App-Definitionen kann der Benutzer Speicherplatz hinzufügen, ohne die App neu kompilieren zu müssen. Die App-Definition wird aktualisiert und enthält die Informationen zu neuen Platzierungen.
 

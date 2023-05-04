@@ -1,18 +1,22 @@
 ---
 title: XMP-Writeback zu Ausgabedarstellungen
-description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadaten für ein Asset an alle oder spezifische Ausgabeformate des Elements propagiert.
+description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadatenänderungen für ein Asset in alle oder bestimmte Ausgabeformate des Assets propagiert.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 76%
+source-wordcount: '811'
+ht-degree: 64%
 
 ---
 
 # XMP-Writeback zu Ausgabedarstellungen {#xmp-writeback-to-renditions}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die XMP-Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert Änderungen von Metadaten in den Ausgabedarstellungen des Original-Assets. Wenn Sie die Metadaten für ein Asset aus Assets heraus ändern oder das Asset hochladen, werden die Änderungen zuerst im Metadaten-Knoten in der Asset-Hierarchie gespeichert.
 
@@ -42,7 +46,7 @@ Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propa
 
 Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabedarstellungen kopieren kann, müssen Sie diese Ausgabeformate im Workflow-Schritt „XMP-Writeback-Vorgang“ des Workflows DAM-Metadaten-Writeback angeben. Standardmäßig ist dieser Schritt mit dem ursprünglichen Format konfiguriert.
 
-Führen Sie folgende Schritte durch, damit die XMP-Writeback-Funktion Metadaten in die Ausgabeformat-Miniaturansichten „140.100.png“ und „319.319.png“ übertragen.
+Führen Sie die folgenden Schritte aus, damit die XMP Writeback-Funktion Metadaten in die Ausgabedarstellungsminiaturansichten 140.100.png und 319.319.png propagiert.
 
 1. Navigieren Sie in Experience Manager zu **[!UICONTROL Tools > Workflow > Modelle]**.
 1. Aus dem [!UICONTROL Modelle] Seite, öffnen Sie die **[!UICONTROL DAM-Metadaten-Writeback]** Workflow-Modell.
@@ -73,7 +77,7 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
 >[!NOTE]
 >
->Die Filterung funktioniert nur für aus XMP-Quellen in Asset-Binärdateien abgeleitete Eigenschaften. Bei Eigenschaften, die aus XMP-fremden Quellen wie EXIF- und IPTC-Formaten abgeleitet wurden, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. [!DNL Experience Manager] speichert diesen Wert im Metadatenfeld mit dem Namen `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
+>Die Filterung funktioniert nur für die Eigenschaften, die aus XMP Quellen in Asset-Binärdateien abgeleitet wurden. Für Eigenschaften, die aus nicht XMP Quellen wie EXIF- und IPTC-Formaten abgeleitet wurden, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. [!DNL Experience Manager] speichert diesen Wert im Metadatenfeld mit dem Namen `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
 
 1. Öffnen Sie Configuration Manager über `https://[aem_server]:[port]/system/console/configMgr`.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.

@@ -1,7 +1,7 @@
 ---
-title: Sicherheitseinstellungen angeben
+title: Angeben der Sicherheitseinstellungen
 seo-title: Specify security settings
-description: Erfahren Sie, wie Sie Sicherheitseinstellungen angeben.
+description: Erfahren Sie, wie Sie Sicherheitseinstellungen festlegen.
 seo-description: Learn how to specify security settings.
 uuid: c86ba195-010d-40d6-9f9d-4cb4c364d104
 contentOwner: admin
@@ -10,19 +10,23 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
 exl-id: 3cc39a24-dbdf-4a4c-9c96-4d39d8cff20d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 100%
+source-wordcount: '109'
+ht-degree: 26%
 
 ---
 
-# Sicherheitseinstellungen angeben {#specify-security-settings}
+# Angeben der Sicherheitseinstellungen {#specify-security-settings}
 
-Mit Output können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden. Standardmäßig werden sie aufgelöst, jedoch können Sie dieses Verhalten ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-**Die Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten verhindern**
+Mit Output können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden. Standardmäßig werden sie aufgelöst. Sie können dieses Verhalten jedoch ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
 
-1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
+**Verhindern der Verarbeitung von XML-Datendateien, die Verweise auf externe Entitäten enthalten**
+
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Ausgabe“.
 1. Deaktivieren Sie das Kontrollkästchen „Externe Entitäten auflösen“.
 1. Klicken Sie auf Speichern.

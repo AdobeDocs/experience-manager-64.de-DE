@@ -8,36 +8,40 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 84%
+source-wordcount: '956'
+ht-degree: 40%
 
 ---
 
-# Wählen Sie dynamisch einen Benutzer oder eine Gruppe für AEM Forms-zentrierte Workflow-Schritte aus. {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Dynamische Auswahl eines Benutzers order einer Gruppe für AEM Forms-zentrierte Workflow-Schritte {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Erfahren Sie, wie Sie zur Laufzeit einen Benutzer oder eine Gruppe für einen AEM Forms-Arbeitsablauf auswählen.
 
-In großen Unternehmen ist es erforderlich, Benutzer für einen Prozess dynamisch auszuwählen. Beispiel: Auswahl eines Außendienstmitarbeiters zur Betreuung eines Kunden auf Basis der Entfernung zwischen Mitarbeiter und Kunden. In einem solchen Szenario wird der Mitarbeiter dynamisch ausgewählt.
+In großen Unternehmen müssen Benutzer für einen Prozess dynamisch ausgewählt werden. Wählen Sie beispielsweise einen Feldagenten aus, um einen Kunden basierend auf der Nähe des Agenten zum Kunden zu bedienen. In einem solchen Szenario wird der Agent dynamisch ausgewählt.
 
 Zuweisen von Aufgaben und Acrobat Sign-Schritten von [Forms-orientierte Workflows in OSGi](/help/forms/using/aem-forms-workflow.md) bietet Optionen zur dynamischen Auswahl eines Benutzers. Sie können ECMAScript oder OSGi-Bundles verwenden, um einen Verantwortlichen für den Schritt „Aufgabe zuweisen“ oder Unterzeichner für den Schritt „Dokument signieren“ dynamisch auszuwählen.
 
 ## Verwenden von ECMAScript zur dynamischen Auswahl eines Benutzers oder einer Gruppe {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
-ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstellung und Server-Anwendungen verwendet. Führen Sie die folgenden Schritte aus, um mit ECMAScript einen Benutzer oder eine Gruppe dynamisch auszuwählen:
+ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstellung und Server-Anwendungen verwendet. Führen Sie die folgenden Schritte aus, um einen Benutzer oder eine Gruppe mit ECMAScript dynamisch auszuwählen:
 
 1. Öffnen Sie CRXDE Lite. Die URL lautet `https://[server]:[port]/crx/de/index.jsp`.
-1. Erstellen Sie eine Datei mit der Erweiterung „.ecma“ unter folgendem Pfad. Wenn der Pfad (Knotenstruktur) nicht vorhanden ist, erstellen Sie ihn:
+1. Erstellen Sie eine Datei mit der Erweiterung .ecma unter folgendem Pfad. Wenn der Pfad (Knotenstruktur) nicht vorhanden ist, erstellen Sie ihn:
 
    * (Pfad für Schritt „Aufgabe zuweisen“) `/apps/fd/dashboard/scripts/participantChooser`
    * (Pfad für Signaturschritt) `/apps/fd/workflow/scripts/adobesign`
 
-1. Fügen Sie der ECMA-Datei ein ECMAScript hinzu, welches über eine Logik zur dynamischen Auswahl von Benutzern verfügt, hinzu. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Fügen Sie der .ecma-Datei ECMAScript hinzu, das die Logik zur dynamischen Auswahl eines Benutzers hat. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
    Beispielskripte finden Sie unter [Beispiele für ECMAScripts zur dynamischen Auswahl eines Benutzers oder einer Gruppe](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
-1. Fügen Sie den Anzeigenamen des Skripts hinzu. Dieser Name wird in Workflow-Schritten angezeigt. Eingeben des Namens:
+1. Fügen Sie den Anzeigenamen des Skripts hinzu. Dieser Name wird in den Workflow-Schritten angezeigt. Eingeben des Namens:
 
    1. Erweitern Sie den Skriptknoten, klicken Sie mit der rechten Maustaste auf den Knoten **[!UICONTROL jcr:content]** und dann auf **[!UICONTROL Mixins]**.
    1. Fügen Sie die Eigenschaft `mix:title` im Dialogfeld „Mixins bearbeiten“ hinzu und klicken Sie auf **OK**.
@@ -45,7 +49,7 @@ ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstel
 
       | Name | Typ | Wert |
       |--- |--- |--- |
-      | jcr:title | Zeichenfolge | Geben Sie den Namen des Skripts ein. Wählen Sie beispielsweise den nächstgelegenen Außendienstmitarbeiter aus. Dieser Name wird in den Schritten „Aufgabe zuweisen“ und „Dokument unterschreiben“ angezeigt. |
+      | jcr:title | Zeichenfolge | Geben Sie den Namen des Skripts an. Wählen Sie beispielsweise den nächsten Feldagenten aus. Dieser Name wird in den Schritten &quot;Aufgabe zuweisen&quot;und &quot;Dokument unterschreiben&quot;angezeigt. |
 
    1. Klicken Sie auf **Alle speichern**. Das Skript ist nun zur Auswahl in den Komponenten des AEM-Workflows verfügbar.
 
@@ -53,7 +57,7 @@ ECMAScript ist eine Skriptsprache. Sie wird für die Client-seitige Skripterstel
 
 ### Beispiele für ECMAScripts zum dynamischen Auswählen eines Benutzers oder einer Gruppe {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
-Im folgenden Beispiel wählt das ECMAScript dynamisch einen Verantwortlichen für den Schritt „Aufgabe zuweisen“ aus. In diesem Skript wird ein Benutzer basierend auf dem Pfad der Nutzlast ausgewählt. Vor der Verwendung dieses Skripts müssen Sie sicherstellen, dass alle Benutzer, die im Skript angegeben sind, in AEM vorhanden sind. Wenn die im Skript enthaltenen Benutzer nicht in AEM existieren, schlägt der entsprechende Prozess möglicherweise fehl.
+Im folgenden Beispiel wählt ECMAScript dynamisch einen Verantwortlichen für den Schritt &quot;Aufgabe zuweisen&quot;aus. In diesem Skript wird ein Benutzer basierend auf dem Pfad der Payload ausgewählt. Bevor Sie dieses Skript verwenden, stellen Sie sicher, dass alle im Skript erwähnten Benutzer in AEM vorhanden sind. Wenn die im Skript genannten Benutzer nicht in AEM vorhanden sind, kann der zugehörige Prozess fehlschlagen.
 
 ```
 function getParticipant() {
@@ -73,7 +77,7 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-Im folgenden Beispiel wählt ECMAScript dynamisch einen Verantwortlichen für den Acrobat Sign-Schritt aus. Vor der Verwendung der unten aufgeführten Skripts müssen Sie sicherstellen, dass die Benutzerinformationen (E-Mail-Adressen und Telefonnummern), die im Skript genannt werden, richtig sind. Wenn die im Skript enthaltenen Benutzerdaten nicht korrekt sind, schlägt der entsprechende Prozess möglicherweise fehl.
+Im folgenden Beispiel wählt ECMAScript dynamisch einen Verantwortlichen für den Acrobat Sign-Schritt aus. Bevor Sie das unten stehende Skript verwenden, stellen Sie sicher, dass die im Skript erwähnten Benutzerinformationen (E-Mail-Adressen und Telefonnummern) korrekt sind. Wenn die im Skript erwähnten Benutzerinformationen falsch sind, kann der zugehörige Prozess fehlschlagen.
 
 >[!NOTE]
 >
@@ -116,14 +120,14 @@ function getAdobeSignRecipients() {
 
 ## Verwenden der Java-Schnittstelle zum dynamischen Auswählen eines Benutzers oder eine Gruppe {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Sie können die [RecipientInfoSpecifier](https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-Schnittstelle zur dynamischen Auswahl eines Benutzers oder einer Gruppe für die Schritte &quot;Acrobat Sign&quot;und &quot;Aufgabe zuweisen&quot;. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem AEM Forms-Server bereitstellen. Dadurch wird die Option zur Auswahl in den Komponenten &quot;Aufgabe zuweisen&quot;und &quot;Acrobat Sign&quot;AEM Workflows verfügbar.
+Sie können die [RecipientInfoSpecifier](https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-Schnittstelle zur dynamischen Auswahl eines Benutzers oder einer Gruppe für die Schritte &quot;Acrobat Sign&quot;und &quot;Aufgabe zuweisen&quot;. Sie können ein OSGi-Bundle erstellen, das die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, und es auf dem AEM Forms-Server bereitstellen. Dadurch wird die Option zur Auswahl in den Komponenten &quot;Aufgabe zuweisen&quot;und &quot;Acrobat Sign&quot;AEM Workflows verfügbar.
 
-Sie benötigen die Dateien [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)-JAR und [granite-JAR](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/), um die unten aufgeführten Codebeispiele zu kompilieren. Fügen Sie diese JAR-Dateien dem OSGi-Bundle-Projekt als externe Abhängigkeiten hinzu. Sie können eine beliebigen Java-IDE verwenden, um ein OSGi-Bundle zu erstellen. Das folgende Beispiel zeigt die Erstellung eines OSGi-Bundles mithilfe von Eclipse:
+Sie benötigen die Dateien [AEM Forms Client SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html)-JAR und [granite-JAR](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/), um die unten aufgeführten Codebeispiele zu kompilieren. Fügen Sie diese JAR-Dateien als externe Abhängigkeiten zum OSGi-Bundle-Projekt hinzu. Sie können eine beliebige Java IDE verwenden, um ein OSGi-Bundle zu erstellen. Im folgenden Verfahren wird beschrieben, wie Sie mit Eclipse ein OSGi-Bundle erstellen:
 
-1. Öffnen Sie die Eclipse-IDE. Navigieren Sie zu **[!UICONTROL Datei]** > **[!UICONTROL Neues Projekt]**.
-1. Wählen Sie im Assistenten-Dialogfeld **[!UICONTROL Maven-Projekt]** und klicken Sie auf **[!UICONTROL Weiter]**.
-1. Behalten Sie im Feld „Neues Maven-Projekt“ die Standardeinstellungen bei und klicken Sie auf **[!UICONTROL Weiter]**. Wählen Sie einen Archetyp aus und klicken Sie auf **[!UICONTROL Weiter]**. Beispiel: maven-archetype-quickstart. Geben Sie **[!UICONTROL Group Id]**, **[!UICONTROL Artifact ID]**, **[!UICONTROL Version]** und **[!UICONTROL Paket]** für das Projekt an und klicken Sie auf **[!UICONTROL Beenden]**. Das Projekt wird erstellt.
-1. Öffnen Sie die Datei „pom.xml“ zur Bearbeitung und ersetzen Sie den gesamten Inhalt dieser Datei durch den folgenden Text:
+1. Öffnen Sie Eclipse IDE. Navigieren Sie zu **[!UICONTROL Datei]** > **[!UICONTROL Neues Projekt]**.
+1. Wählen Sie im Bildschirm &quot;Assistenten auswählen&quot;die Option **[!UICONTROL Maven-Projekt]** und klicken Sie auf **[!UICONTROL Nächste]**.
+1. Behalten Sie im neuen Maven-Projekt die Standardeinstellungen bei und klicken Sie auf **[!UICONTROL Nächste]**. Wählen Sie einen Archetyp aus und klicken Sie auf **[!UICONTROL Nächste]**. Beispiel: maven-archetype-quickstart. Geben Sie **[!UICONTROL Group Id]**, **[!UICONTROL Artifact ID]**, **[!UICONTROL Version]** und **[!UICONTROL Paket]** für das Projekt an und klicken Sie auf **[!UICONTROL Beenden]**. Das Projekt wird erstellt.
+1. Öffnen Sie die Datei &quot;pom.xml&quot;zur Bearbeitung und ersetzen Sie den gesamten Inhalt der Datei durch den folgenden Text:
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -225,18 +229,18 @@ Sie benötigen die Dateien [AEM Forms Client SDK](https://helpx.adobe.com/de/aem
    </project>
    ```
 
-1. Fügen Sie Quell-Code hinzu, der die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, um einen Benutzer oder eine Gruppe für den Schritt „Aufgabe zuweisen“ dynamisch zuzuweisen. Unter [Beispiel für die dynamische Auswahl eines Benutzers oder einer Gruppe mithilfe einer Java-Schnittstelle](#-sample-scripts-for) finden Sie einen Beispiel-Code.
-1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Bundle-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Paket zu erstellen:
+1. Fügen Sie Quell-Code hinzu, der die Java-Schnittstelle [RecipientInfoSpecifier](https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) verwendet, um einen Benutzer oder eine Gruppe für den Schritt „Aufgabe zuweisen“ dynamisch zuzuweisen. Unter [Beispiel für die dynamische Auswahl eines Benutzers oder einer Gruppe mithilfe einer Java-Schnittstelle](#-sample-scripts-for) finden Sie einen Beispiel-Code.
+1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner, der das OSGi-Bundle-Projekt enthält. Verwenden Sie den folgenden Befehl, um das OSGi-Bundle zu erstellen:
 
    `mvn clean install`
 
-1. Laden Sie das Bundle auf einen AEM Forms-Server hoch. Sie können AEM Package Manager verwenden, um das Paket in einen AEM Forms-Server zu importieren.
+1. Laden Sie das Bundle auf einen AEM Forms-Server hoch. Sie können AEM Package Manager verwenden, um das Bundle auf den AEM Forms-Server zu importieren.
 
 Nachdem das Bundle importiert wurde, wird die Option zur Auswahl der Java-Schnittstelle für die dynamische Auswahl eines Benutzers oder einer Gruppe in für die Schritte Acrobat Sign und Assign Task verfügbar.
 
 ### Beispiele für Java-Code zum dynamischen Auswählen eines Benutzers oder einer Gruppe {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-Im folgenden Beispielcode wird dynamisch ein Verantwortlicher für den Acrobat Sign-Schritt ausgewählt. Sie verwenden den Code in einem OSGi-Bundle. Vor der Verwendung der unten aufgeführten Codes müssen Sie sicherstellen, dass die Benutzerinformationen (E-Mail-Adressen und Telefonnummern), die im Code genannt werden, richtig sind. Wenn die im Code enthaltenen Benutzerdaten nicht korrekt sind, schlägt der entsprechende Prozess möglicherweise fehl.
+Im folgenden Beispielcode wird dynamisch ein Verantwortlicher für den Acrobat Sign-Schritt ausgewählt. Sie verwenden den Code in einem OSGi-Bundle. Bevor Sie den unten aufgeführten Code verwenden, stellen Sie sicher, dass die im Code erwähnten Benutzerinformationen (E-Mail-Adressen und Telefonnummern) korrekt sind. Wenn die im Code erwähnten Benutzerinformationen falsch sind, kann der zugehörige Prozess fehlschlagen.
 
 ```java
 /*************************************************************************

@@ -8,14 +8,18 @@ content-type: reference
 exl-id: a87c7562-0d61-403e-9e8e-e706cac9b7c5
 feature: Asset Management
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 100%
+source-wordcount: '154'
+ht-degree: 76%
 
 ---
 
 # Verwalten von Dynamic Media-Assets {#managing-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Das Verwalten von Dynamic Media-Assets – Bildern, Videos und interaktiven Assets – nach dem Hochladen beinhaltet eine Vielzahl von Aufgaben, darunter das Anzeigen von Bildern in der Vorschau sowie das Herunterladen oder Veröffentlichen von Bildern.
 

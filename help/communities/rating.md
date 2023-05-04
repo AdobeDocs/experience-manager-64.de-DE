@@ -10,14 +10,18 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 exl-id: 1de28140-5334-4ca2-a476-5ad253809808
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 38%
+source-wordcount: '242'
+ht-degree: 6%
 
 ---
 
 # Verwenden von Bewertungen {#using-ratings}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die `Rating`-Komponente wird eigenständig oder in Verbindung mit anderen Communities-Funktionen verwendet. Diese Komponente ermöglicht es angemeldeten Community-Mitgliedern, ihre Meinung durch Bewertung von Inhalten zu äußern.
 
@@ -31,28 +35,28 @@ Wenn die [erforderliche clientseitige Bibliotheken](rating-basics.md#essentials-
 
 ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## Konfigurieren einer Bewertung {#configuring-rating}
+## Konfigurieren der Bewertung {#configuring-rating}
 
 Wählen Sie die platzierte `Rating` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
-Legen Sie auf der Registerkarte **[!UICONTROL Texte &amp; Beschriftungen]** die interne ID der Bewertung fest.
+Unter dem **[!UICONTROL Texte und Beschriftungen]** -Registerkarte geben Sie die interne Kennung für die Bewertung an.
 
 ![chlimage_1-495](assets/chlimage_1-495.png)
 
 **[!UICONTROL Tally Name]**
-(*Erforderlich*) Ein einfacher Name für `Rating`die diese Instanz eindeutig identifiziert. Es muss sich um einen gültigen Knotennamen des Verzeichnisses handeln.
+(*Erforderlich*) Ein einfacher Name für `Rating`die diese Instanz eindeutig identifiziert. Muss ein gültiger Knotenname für das Repository sein.
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
 ### Mitglieder {#members}
 
-Pro Mitglied ist nur eine Bewertung zulässig.  Das Mitglied kann seine Meinung jedoch jederzeit ändern.
+Pro Mitglied ist nur eine Bewertung zulässig. Das Mitglied kann sein Rating jederzeit ändern.
 
 ### Anonym {#anonymous}
 
-Das anonyme Posten von Bewertungen wird nicht unterstützt. Besucher der Website müssen sich registrieren (Mitglieder werden) und anmelden, um Kommentare verfassen zu können.
+Das anonyme Posten einer Bewertung wird nicht unterstützt. Besucher der Site müssen sich registrieren (Mitglied werden) und sich anmelden, um teilnehmen zu können.
 
 ## Zusätzliche Informationen {#additional-information}
 

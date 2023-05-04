@@ -1,7 +1,7 @@
 ---
 title: Identifizieren zu übersetzender Inhalte
 seo-title: Identifying Content to Translate
-description: Erfahren Sie, wie sich zu übersetzende Inhalte identifizieren lassen.
+description: Erfahren Sie, wie Sie Inhalte identifizieren können, die übersetzt werden müssen.
 seo-description: Learn how to identify content that needs translating.
 uuid: 81b9575c-1c7a-4955-b03f-3f26cbd4f956
 contentOwner: Guillaume Carlino
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 feature: Language Copy
 exl-id: 3e8ee0cc-b950-4823-9efa-65f12a4e6e6b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1149'
-ht-degree: 98%
+source-wordcount: '1185'
+ht-degree: 83%
 
 ---
 
 # Identifizieren zu übersetzender Inhalte{#identifying-content-to-translate}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Übersetzungsregeln identifizieren die zu übersetzenden Inhalte für Seiten, Komponenten und Assets, die in die Übersetzungsprojekte integriert oder von diesen ausgeschlossen sind. Wenn eine Seite oder ein Asset übersetzt wird, extrahiert AEM diese Inhalte, sodass sie an den Übersetzungsdienstleister gesendet werden können.
 
@@ -34,14 +38,14 @@ Die Datei gilt für alle Übersetzungsprojekte.
 
 >[!NOTE]
 >
->Nach einer Aktualisierung auf 6.4 wird empfohlen, die Datei aus /etc zu verschieben. Weitere Informationen finden Sie unter [Repository-Neustrukturierung für alle Lösungen in AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules).
+>Nach einem Upgrade auf 6.4 wird empfohlen, die Datei aus /etc zu verschieben. Weitere Informationen finden Sie unter [Repository-Neustrukturierung für alle Lösungen in AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules).
 
 Die Regeln umfassen die folgenden Informationen:
 
 * Den Pfad des Knotens, auf den die Regel angewendet wird. Die Regel gilt auch für die nachfolgenden Elemente des Knotens.
 * Die Namen der Knoteneigenschaften, die den zu übersetzenden Inhalt enthalten. Die Eigenschaft kann sich speziell auf einen bestimmten Ressourcentyp oder auf alle Ressourcentypen beziehen.
 
-Sie können zum Beispiel eine Regel erstellen, die den von den Autoren hinzugefügten Inhalt für alle AEM Foundation-Textkomponenten auf Ihren Seiten übersetzt. Die Regel kann den Knoten `/content` und die Eigenschaft `text` für die Komponente `foundation/components/text` identifizieren.
+Sie können beispielsweise eine Regel erstellen, die den Inhalt übersetzt, den Autoren zu allen AEM Foundation-Textkomponenten auf Ihren Seiten hinzufügen. Die Regel kann den Knoten `/content` und die Eigenschaft `text` für die Komponente `foundation/components/text` identifizieren.
 
 Es gibt eine eigene [Konsole](#translation-rules-ui), die für die Konfiguration von Übersetzungsregeln hinzugefügt wurde. Die Definitionen in der Benutzeroberfläche füllen die Datei für Sie auf.
 
@@ -111,7 +115,7 @@ Jedes `assetNode`-Element hat die folgenden Merkmale:
 * Ein `resourceType`-Attribut, das dem zu der Komponente führenden Pfad entspricht.
 * Ein dem Namen der Eigenschaft entsprechendes `assetReferenceAttribute`, das (bei integrierten Assets) die Binärdaten des Assets oder den Pfad zum referenzierten Asset enthält.
 
-Das folgende Beispiel extrahiert Bilder aus der Foundation-Bildkomponente:
+Im folgenden Beispiel werden Bilder aus der Foundation-Bildkomponente extrahiert:
 
 ```xml
 <assetNode resourceType="foundation/components/image" assetReferenceAttribute="fileReference"/>
@@ -189,7 +193,7 @@ Im folgenden Beispiel ist die xml dargestellt, die generiert wird, wenn **Is Dee
 </filter>
 ```
 
-**inherit** Dies lässt sich auf Eigenschaften anwenden. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass manche Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
+**inherit** Dies lässt sich auf Eigenschaften anwenden. Standardmäßig wird jede Eigenschaft vererbt. Wenn Sie jedoch möchten, dass einige Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als &quot;false&quot;markieren, damit sie nur auf diesen Knoten angewendet wird.
 
 In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
@@ -216,9 +220,9 @@ Das Ergebnis in der xml sieht wie folgt aus:
 
 ## Manuelles Bearbeiten der Regeldatei {#editing-the-rules-file-manually}
 
-Die in AEM installierte Datei translation_rules.xml enthält einen Standardsatz an Übersetzungsregeln. Sie können die Datei bearbeiten, damit die Anforderungen Ihrer Übersetzungsprojekte erfüllt werden. Sie können zum Beispiel Regeln hinzufügen, sodass die Inhalte Ihrer benutzerdefinierten Komponenten übersetzt werden.
+Die mit AEM installierte Datei translation_rules.xml enthält einen Standardsatz von Übersetzungsregeln. Sie können die Datei bearbeiten, damit die Anforderungen Ihrer Übersetzungsprojekte erfüllt werden. Sie können zum Beispiel Regeln hinzufügen, sodass die Inhalte Ihrer benutzerdefinierten Komponenten übersetzt werden.
 
-Wenn Sie die Datei translation_rules.xml bearbeiten, speichern Sie zuvor eine Sicherungskopie im Inhaltspaket. Durch die Installation von AEM Service Packs oder die erneute Installation bestimmter AEM-Pakete kann die aktuelle Datei translation_rules.xml durch das Original ersetzt werden. Um in dieser Situation die Regeln wiederherzustellen, können Sie das Paket installieren, das Ihre Sicherungskopie enthält.
+Wenn Sie die Datei translation_rules.xml bearbeiten, behalten Sie eine Sicherungskopie in einem Inhaltspaket bei. Die Installation AEM Service Packs oder die Neuinstallation bestimmter AEM Packages kann die aktuelle Datei translation_rules.xml durch die Originaldatei ersetzen. Um in dieser Situation die Regeln wiederherzustellen, können Sie das Paket installieren, das Ihre Sicherungskopie enthält.
 
 >[!NOTE]
 >

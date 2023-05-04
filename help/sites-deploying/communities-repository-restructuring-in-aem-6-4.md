@@ -1,7 +1,7 @@
 ---
 title: Repository-Neustrukturierung für AEM Communities in 6.4
 seo-title: Repository Restructuring for AEM Communities in 6.4
-description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um zu der neuen Repository-Struktur in AEM 6.4 für Communities zu migrieren.
+description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um zur neuen Repository-Struktur in AEM 6.4 für Communities zu migrieren.
 seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
 uuid: d161655f-4074-44a7-8d69-38e80934c58b
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
 exl-id: f66e349f-09a1-47f1-88fc-61eb51f65664
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1008'
-ht-degree: 100%
+source-wordcount: '1044'
+ht-degree: 74%
 
 ---
 
 # Repository-Neustrukturierung für AEM Communities in 6.4{#repository-restructuring-for-aem-communities-in}
 
-Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Neustrukturierungen einzuschätzen, die sich auf AEM Communities auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Aktualisierungsprozesses auf AEM 6.4, während andere bis zu einer Aktualisierung auf 6.5 verschoben werden können.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Neustrukturierungen einzuschätzen, die sich auf AEM Communities auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von AEM 6.4 Arbeitsaufwand, während andere bis zu einem Upgrade auf 6.5 verschoben werden können.
 
 **Mit der Aktualisierung auf 6.4**
 
@@ -86,7 +90,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/he
  </tbody>
 </table>
 
-### Schlagwortkonfigurationen {#watchwords-configurations}
+### Watchwords-Konfigurationen {#watchwords-configurations}
 
 <table> 
  <tbody>
@@ -125,10 +129,10 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Manuelle Migration ist erforderlich.</p> <p>Wenn Ihre Instanz die Badging-/Bewertungsregeln angepasst hat, gibt es keine automatisierte Möglichkeit, alle Regeln in einem Behälter („Bucket“) zu platzieren. Sie benötigen Kundenangaben dazu, welchen Konfigurations-Bucket (global oder Site-spezifisch) Sie für Ihre Site verwenden möchten.</p> <p>Keine Benutzeroberfläche verfügbar, um Badging und Bewertung für eine Site zu konfigurieren.</p> <p>So nehmen Sie eine Anpassung an eine neue Repository-Sturktur vor:</p> 
+   <td><p>Eine manuelle Migration ist erforderlich.</p> <p>Wenn Ihre Instanz die Badging-/Bewertungsregeln angepasst hat, gibt es keine automatisierte Möglichkeit, alle Regeln in einem Behälter („Bucket“) zu platzieren. Benötigen Kundeneingaben dazu, welchen Conf-Behälter (global oder standortspezifisch) Sie für Ihre Site verwenden möchten.</p> <p>Keine Benutzeroberfläche zum Konfigurieren des Badging- und Scorings für eine Site verfügbar.</p> <p>So richten Sie sich an die neue Repository-Struktur aus:</p> 
     <ol> 
-     <li>Erstellen Sie mit dem <strong>Konfigurationsbrowser</strong> unter <strong>Tools</strong> einen Bucket für den Site-Kontext.</li> 
-     <li>Wechseln Sie zum Stammordner der Site.</li> 
+     <li>Erstellen Sie einen Site-Kontext-Behälter mit dem <strong>Konfigurationsbrowser</strong> under <strong>Instrumente</strong></li> 
+     <li>Navigieren Sie zum Stammverzeichnis der Site.</li> 
      <li>Legen Sie <code>cq:confproperty</code> auf den Pfad des Buckets fest, in dem Sie alle Ihre Einstellungen speichern möchten. Dasselbe kann über die Site <strong>Bearbeitungsassistent - Eingabe der Cloud-Konfiguration festlegen</strong> festgelegt werden.</li> 
      <li>Verschieben Sie die relevanten Badging- und Bewertungsregeln von <code>/etc/community/*</code> in den im vorherigen Schritt erstellten Kontext-Bucket der Site.</li> 
      <li>Passen Sie die Eigenschaften der Badging- und Bewertungsregeln im Stammverzeichnis der Site an, um relative Referenzen auf neue Speicherorte der Regeln zu haben. 
@@ -183,11 +187,11 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Alle neuen Facebook-Cloud-Konfigurationen müssen zum neuen Speicherort migriert werden.</p> 
+   <td><p>Alle neuen Facebook Cloud-Konfigurationen müssen an den neuen Speicherort migriert werden.</p> 
     <ol> 
-     <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort an den neuen Speicherort.
+     <li>Migrieren Sie vorhandene Konfigurationen im vorherigen Speicherort zum neuen Speicherort.
       <ol> 
-       <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Facebook über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Facebook</strong>.<br /> oder <br /> </li> 
+       <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Facebook Social über die AEM Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud Services &gt; Konfiguration der Anmeldung über Facebook</strong>.<br /> oder <br /> </li> 
        <li>Kopieren Sie alle neuen Facebook-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
      <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Facebook zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li> 
@@ -239,11 +243,11 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Alle neuen Pinterest-Cloud-Konfigurationen müssen zum neuen Speicherort migriert werden.</p> 
+   <td><p>Alle neuen Pinterest Cloud-Konfigurationen müssen an den neuen Speicherort migriert werden.</p> 
     <ol> 
-     <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort an den neuen Speicherort.
+     <li>Migrieren Sie vorhandene Konfigurationen im vorherigen Speicherort zum neuen Speicherort.
       <ol> 
-       <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Pinterest über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Pinterest</strong>.<br /> oder</li> 
+       <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Pinterest Social über die AEM Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud Services &gt; Konfiguration der Anmeldung über Pinterest</strong>.<br /> oder</li> 
        <li>Kopieren Sie alle neuen Pinterest-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
      <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Pinterest zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li> 
@@ -305,11 +309,11 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Alle neuen Twitter-Cloud-Konfigurationen müssen zum neuen Speicherort migriert werden.</p> 
+   <td><p>Alle neuen Twitter Cloud-Konfigurationen müssen an den neuen Speicherort migriert werden.</p> 
     <ol> 
-     <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort an den neuen Speicherort.
+     <li>Migrieren Sie vorhandene Konfigurationen im vorherigen Speicherort zum neuen Speicherort.
       <ol> 
-       <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Twitter über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Twitter</strong>.<br /> oder <br /> </li> 
+       <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Twitter Social über die AEM Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud Services &gt; Konfiguration der Anmeldung über Twitter</strong>.<br /> oder <br /> </li> 
        <li>Kopieren Sie alle neuen Twitter-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li> 
       </ol> </li> 
      <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Twitter zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li> 
@@ -337,7 +341,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.4](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td> 
-   <td><p>Adobe hat ein Migrationsprogramm bereitgestellt unter:</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td> 
+   <td><p>Adobe hat ein Migrationsdienstprogramm bereitgestellt unter:</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td> 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td> 

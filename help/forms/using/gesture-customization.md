@@ -1,7 +1,7 @@
 ---
 title: Gestenanpassung
 seo-title: Gesture customization
-description: Anpassen der Gesten in Ihrer AEM Forms-App
+description: Gesten in Ihrer AEM Forms-App anpassen
 seo-description: Customize the gestures on your AEM Forms app
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 238410e0-1623-49dc-b2fc-b5b2d5fb362b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 100%
+source-wordcount: '332'
+ht-degree: 84%
 
 ---
 
 # Gestenanpassung {#gesture-customization}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können die Gesten der AEM Forms-App anpassen, um eine individuelle Methode der Interaktion mit der App bereitzustellen. Beispielsweise können Sie neue Gesten zum Öffnen oder Schließen einer Aufgabe bzw. eines Startpunkts hinzufügen.
 
@@ -70,6 +74,6 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
 
 1. Speichern und schließen Sie die Datei `task.js`.
-1. Erstellen Sie die AEM Forms-App und führen Sie sie aus. Jetzt können Sie eine Aufgabe mit einem Wischen nach links und rechts öffnen.
+1. Erstellen Sie die AEM Forms-App und führen Sie sie aus. Jetzt können Sie eine mithilfe mit einem Wischen nach links und rechts öffnen.
 
 Auf ähnliche Weise können Sie Änderungen in anderen Ansichten für verschiedene Kombinationen von Gesten, HTML-Elementen und Funktionen vornehmen.

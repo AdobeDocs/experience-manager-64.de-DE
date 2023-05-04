@@ -1,7 +1,7 @@
 ---
-title: Erstellen einer Forms Portal-Seite
+title: Anpassen einer Formularportal-Seite
 seo-title: Creating a forms portal page
-description: Forms Portal bietet Webentwicklern Komponenten zum Erstellen und Anpassen von Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites.
+description: Forms Portal bietet Webentwicklern Komponenten zum Erstellen und Anpassen eines Formularportals auf mit Adobe Experience Manager (AEM) erstellten Websites.
 seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
 uuid: 328f3342-d6ca-4413-9f1d-1a550df74bde
 content-type: reference
@@ -10,33 +10,37 @@ topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 feature: Forms Portal
 exl-id: 4d66ab64-a132-4f2a-89ca-3fbd8dc56ce2
-source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 93%
+source-wordcount: '1682'
+ht-degree: 53%
 
 ---
 
-# Erstellen einer Forms Portal-Seite {#creating-a-forms-portal-page}
+# Anpassen einer Formularportal-Seite {#creating-a-forms-portal-page}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Forms Portal-Komponenten bieten Webentwicklern Komponenten zum Erstellen und Anpassen von Formularportalen auf mit Adobe Experience Manager (AEM) erstellten Websites. Einen kurzen Überblick über Forms Portal finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md).
 
 ## Voraussetzungen {#prerequisites}
 
-Forms Portal-Komponenten stehen nicht standardmäßig zur Verfügung. Stellen Sie sicher, dass die folgenden Forms Portal-Komponentenkategorien aktiviert sind, wie unter [Aktivieren der Komponenten im Forms Portal](/help/forms/using/enabling-forms-portal-components.md) beschrieben.
+Forms Portal-Komponenten sind nicht standardmäßig verfügbar. Stellen Sie sicher, dass die folgenden Forms Portal-Komponentenkategorien aktiviert sind, wie unter [Aktivieren der Komponenten im Forms Portal](/help/forms/using/enabling-forms-portal-components.md).
 
 **Dokumenten-Services**: Umfasst die Komponenten „Suche und Auflister“, „Link“ und „Entwürfe und Übermittlungen“.
 
-**Document Services-Eigenschaften**: Umfasst die Komponenten „Date Predicate“, „Full Text Predicate“, „Properties Predicate“ und Tags Predicate. Diese Komponenten werden zum Konfigurieren der Suche in der Komponente „Search &amp; Lister“ verwendet.
+**Document Services-Eigenschaften** Umfasst die Komponenten &quot;Date Predicate&quot;, &quot;Full Text Predicate&quot;, &quot;Properties Predicate&quot;und &quot;Tags Predicate&quot;. Diese Komponenten werden zum Konfigurieren der Suche in der Komponente &quot;Search &amp; Lister&quot;verwendet.
 
 Sobald sie auf einer AEM Sites-Seite aktiviert sind, stehen diese Komponentenkategorien für die Verwendung im Komponenten-Browser zur Verfügung.
 
 ![AEM Forms Portal-Komponenten im Komponenten-Browser](assets/component-categories.png)
 **Abbildung:** *Forms Portal-Komponentenkategorien*
 
-## Komponente „Search &amp; Lister“ {#search-amp-lister-component}
+## Komponente &quot;Search &amp; Lister&quot; {#search-amp-lister-component}
 
-Die Komponente „Search &amp; Lister“, die in der Document Services- Komponentenkategorie verfügbar ist, dient zum Auflisten von Formularen auf einer Seite und zur Implementierung der Suche nach den aufgelisteten Formularen. Die Komponente umfasst zwei Bereiche:
+Die Komponente &quot;Search &amp; Lister&quot;, die unter der Komponentenkategorie &quot;Document Services&quot;verfügbar ist, wird verwendet, um Formulare auf einer Seite aufzulisten und die Suche in den aufgeführten Formularen zu implementieren. Die Komponente umfasst zwei Bereiche:
 
 * Listenbereich, in dem die Formulare aufgeführt sind.
 * Suchbereich, in dem Sie die Suchfunktion hinzufügen.
@@ -67,12 +71,12 @@ Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit K
   <tr>
    <td><span class="uicontrol"><strong>Asset-Ordner</strong></span></td>
    <td>Element hinzufügen</td>
-   <td>Konfiguriert die Ordner, in die Assets mit der AEM Forms-Benutzeroberfläche hochgeladen werden. Standardmäßig werden alle hochgeladenen Assets aufgeführt. Weitere Informationen zur AEM Forms-Benutzeroberfläche finden Sie in <a href="/help/forms/using/introduction-managing-forms.md" target="_blank">Einführung zum Verwalten von Formularen</a>.</td>
+   <td>Konfiguriert die Ordner, in die Assets mit der AEM Forms-Benutzeroberfläche hochgeladen werden. Standardmäßig werden alle hochgeladenen Assets aufgelistet. Weitere Informationen zur AEM Forms-Benutzeroberfläche finden Sie unter <a href="/help/forms/using/introduction-managing-forms.md" target="_blank">Einführung in das Verwalten von Formularen</a>.</td>
   </tr>
   <tr>
    <td><p><span class="uicontrol"><strong>Anzeige</strong></span></p> </td>
    <td>Titeltext</td>
-   <td>Titel für die Komponente „Seach &amp; Lister“. Der Standardtitel ist <strong>Forms Portal</strong>.</td>
+   <td>Titel für die Komponente "Search &amp; Lister". Der Standardtitel lautet <strong>Forms Portal.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -82,7 +86,7 @@ Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit K
   <tr>
    <td> </td>
    <td>Erweiterte Suche deaktivieren</td>
-   <td>Wenn diese Option aktiviert ist, wird das Symbol zur erweiterten Suche ausgeblendet.</td>
+   <td>Wenn diese Option aktiviert ist, wird das Symbol für die erweiterte Suche ausgeblendet.</td>
   </tr>
   <tr>
    <td> </td>
@@ -91,13 +95,13 @@ Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit K
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Ergebnis</strong></span></td>
-   <td>Number Of Results Per Page (Anzahl Ergebnisse pro Seite)</td>
+   <td>Anzahl der Ergebnisse pro Seite</td>
    <td>Konfiguriert die maximale Anzahl von Formularen, die auf einer Seite angezeigt werden sollen.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Ergebnistext</td>
-   <td><p>Konfiguriert den Ergebnistext (zum Beispiel 1-12 von 601 <strong>Ergebnissen</strong>). Der Standardwert ist <strong>Ergebnissen</strong>.</p> <p>Wenn Sie beispielsweise in diesem Feld <strong>Formulare</strong> angeben und es insgesamt 601 Formulare gibt, wird der Ergebnistext in „1-12 von 601 <strong>Formularen</strong>“ geändert.</p> </td>
+   <td><p>Konfiguriert den Ergebnistext (z. B. 1-12 von 601 <strong>Ergebnisse</strong>). Der Standardwert ist <strong>Ergebnisse</strong>.</p> <p>Wenn Sie beispielsweise in diesem Feld <strong>Formulare</strong> angeben und es insgesamt 601 Formulare gibt, wird der Ergebnistext in „1-12 von 601 <strong>Formularen</strong>“ geändert.</p> </td>
   </tr>
   <tr>
    <td> </td>
@@ -111,18 +115,18 @@ Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit K
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Formular-Link</strong></span></td>
-   <td>Render Type (Rendertyp)</td>
-   <td>Steuert die Auflistung von Formularen, die auf dem angegebenen Rendertyp basieren. Die verfügbaren Optionen sind PDF und HTML. Wenn Sie beispielsweise nur HTML als Rendertyp angeben, werden die PDF-Formulare herausgefiltert.</td>
+   <td>Render-Typ</td>
+   <td>Steuert die Auflistung von Formularen, die auf dem angegebenen Rendertyp basieren. Die verfügbaren Optionen sind PDF und HTML. Wenn Sie beispielsweise nur HTML als Rendertyp auswählen, werden die PDF forms herausgefiltert.</td>
   </tr>
   <tr>
    <td> </td>
-   <td>HTML Profile (HTML-Profil)</td>
-   <td>Konfiguriert das HTML-Profil, das für die Wiedergabe verwendet wird. Alle verfügbaren Profile werden in der Dropdown-Liste aufgeführt.</td>
+   <td>HTML-Profil</td>
+   <td>Konfiguriert das HTML-Profil, das für die Wiedergabe verwendet werden soll. Alle verfügbaren Profile werden in der Dropdown-Liste aufgeführt.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Übermittlungs-URL</td>
-   <td><p>Konfiguriert ein Servlet, an das die Formulardaten gesendet werden.</p> <p><strong>Hinweis:</strong> <em>Die Sende-URL für ein Formular kann an mehreren Stellen angegeben werden. Die Rangfolge ist dabei die Folgende:</em></p>
+   <td><p>Konfiguriert ein Servlet, an das die Formulardaten gesendet werden.</p> <p><strong>Hinweis:</strong> <em>Die Sende-URL für ein Formular kann an mehreren Stellen angegeben werden und die Rangfolge lautet wie folgt:</em></p>
     <ol>
      <li><em>Die Sende-URL, die in das Formular eingebettet wird (in der Senden-Schaltfläche), hat die höchste Priorität.</em></li>
      <li><em>Die Sende-URL, die in der AEM Forms -Benutzeroberfläche erwähnt wird, hat die zweithöchste Priorität.</em></li>
@@ -131,13 +135,13 @@ Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit K
   </tr>
   <tr>
    <td> </td>
-   <td>HTML Render Action tool tip (HTML-Rendervorgangs-QuickInfo)</td>
-   <td>Konfiguriert den Text für die QuickInfo, die angezeigt wird, wenn Sie den Zeiger über das <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (HTML5-Symbol) bewegen.</td>
+   <td>QuickInfo zu HTML Render Action</td>
+   <td>Konfiguriert den Text für die QuickInfo, die angezeigt wird, wenn Sie den Mauszeiger über das <img height="16" src="assets/aem6forms_panel-html.png" width="13" /> (HTML5-Symbol).</td>
   </tr>
   <tr>
    <td> </td>
-   <td>PDF Render Action tool tip (PDF-Rendervorgangs-QuickInfo)</td>
-   <td>Konfiguriert den Text für die QuickInfo, die angezeigt wird, wenn Sie den Zeiger über das <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (PDF-Symbol) bewegen.</td>
+   <td>QuickInfo zu PDF Render Action</td>
+   <td>Konfiguriert den Text für die QuickInfo, die angezeigt wird, wenn Sie den Mauszeiger über das <img height="16" src="assets/aem6forms_panel-pdf.png" width="14" /> (PDF-Symbol).</td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Stil</strong></span></td>
@@ -146,8 +150,8 @@ Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit K
   </tr>
   <tr>
    <td> </td>
-   <td>Custom Style Path (Pfad für benutzerdefinierten Stil)</td>
-   <td>Wenn Sie als „Style Type“ (Stiltyp) „Custom“ (Benutzerdefiniert) ausgewählt haben, geben Sie den Pfad zum benutzerdefinierten CSS an, oder wählen Sie ansonsten „Default“ (Standard).</td>
+   <td>Pfad für benutzerdefinierten Stil</td>
+   <td>Wenn Sie "Benutzerdefiniert"als Stiltyp ausgewählt haben, geben Sie den Pfad zum benutzerdefinierten CSS an, wählen Sie andernfalls "Standard"aus.</td>
   </tr>
  </tbody>
 </table>
@@ -163,9 +167,9 @@ Das Dialogfeld **[!UICONTROL Bearbeiten]** enthält mehrere Registerkarten mit K
 
 #### Datumseigenschaft {#date-predicate}
 
-Die Komponente „Date Predicate“ ermöglicht die Suche nach aufgeführten Formularen, die während eines festgelegten Zeitraums geändert wurden.
+Die Komponente &quot;Date Predicate&quot;ermöglicht nach dem Hinzufügen die Suche nach den aufgelisteten Formularen, die während einer bestimmten Dauer geändert wurden.
 
-Konfigurieren der Komponente „Date Predicate“:
+So konfigurieren Sie die Komponente &quot;Date Predicate&quot;:
 
 1. Tippen Sie auf die Komponente und dann auf das Sÿmbol ![settings_icon](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
 1. Geben Sie Folgendes an:
@@ -180,9 +184,9 @@ Konfigurieren der Komponente „Date Predicate“:
 
 #### Vollständige Texteigenschaft {#full-text-predicate}
 
-Die Komponente „Full Text Predicate“ implementiert die Volltextsuche nach Formulardaten, zum Beispiel Name und Beschreibung. Benutzer können nach jeder beliebigen Textzeichenfolge suchen, um Formulare zurückzugeben, die den Text in ihrem Namen oder ihrer Beschreibung enthalten.
+Die Komponente &quot;Full Text Predicate&quot;implementiert die Volltextsuche in Formulardaten, z. B. Name und Beschreibung. Benutzer können nach einer beliebigen Textzeichenfolge suchen, um Formulare zurückzugeben, die den Text in ihrem Namen oder ihrer Beschreibung enthalten.
 
-Konfigurieren der Komponente „Volltexteigenschaft“:
+So konfigurieren Sie die Komponente &quot;Volltexteigenschaft&quot;:
 
 1. Tippen Sie auf die Komponente und dann auf ![Einstellungen_Symbol](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
 1. Geben Sie den Titel im Feld **[!UICONTROL Haupttitel]** an.
@@ -190,9 +194,9 @@ Konfigurieren der Komponente „Volltexteigenschaft“:
 
 #### Eigenschaften-Eigenschaft {#properties-predicate}
 
-Die Komponente „Properties Predicate“ implementiert die Suche nach Formularen anhand von Formulareigenschaften, wie Titel, Autor und Beschreibung.
+Die Komponente &quot;Eigenschaftsprädikat&quot;implementiert die Suche nach Formularen anhand von Formulareigenschaften wie Titel, Autor und Beschreibung.
 
-Konfigurieren der Komponente „Properties Predicate“:
+So konfigurieren Sie die Komponente Eigenschaftsprädikat :
 
 1. Tippen Sie auf die Komponente und dann auf ![Einstellungen_Symbol](assets/settings_icon.png). Die **[!UICONTROL Dialogfeld &quot;Bearbeiten&quot;]** geöffnet.
 1. Im **[!UICONTROL Allgemein]** -Registerkarte, geben Sie den Suchtitel an. Der Standardwert ist **[!UICONTROL Eigenschaften]**.
@@ -208,9 +212,9 @@ Konfigurieren der Komponente „Properties Predicate“:
 
 #### Tag-Eigenschaft {#tags-predicate}
 
-Die Komponente „Tags Predicate“ implementiert die Suche nach Formularen anhand von in Forms Manager definierten Tags.
+Die Komponente &quot;Tags Predicate&quot;implementiert die Suche nach Formularen anhand von in Forms Manager definierten Tags.
 
-Konfigurieren der Komponente „Tags Predicate“:
+So konfigurieren Sie die Komponente Tag-Eigenschaft :
 
 1. Tippen Sie auf die Komponente und dann auf ![Einstellungen_Symbol](assets/settings_icon.png). Die **[!UICONTROL Dialogfeld &quot;Bearbeiten&quot;]** geöffnet.
 1. Tippen Sie neben dem Feld „Tags“ auf den Abwärtspfeil.
@@ -221,17 +225,17 @@ Die ausgewählten Tags werden im Suchbereich zusammen mit den Kontrollkästchen 
 
 ## Auflisten von Formularen auf einer Seite {#list-forms-on-a-page-br}
 
-Um Formulare auf einer Seite aufzulisten, fügen Sie die Komponente **[!UICONTROL Search &amp; Lister]** der Seite hinzu und konfigurieren Sie den **[!UICONTROL Listenbereich]**. Damit Endbenutzer Formulare nach Datum, Text und Tags suchen können, fügen Sie eine **[!UICONTROL Suchbereichskomponente]** hinzu.
+Um Formulare auf einer Seite aufzulisten, fügen Sie die Komponente **[!UICONTROL Search &amp; Lister]** der Seite hinzu und konfigurieren Sie den **[!UICONTROL Listenbereich]**. Damit Endbenutzer nach Formularen mit Datum, Text und Tags suchen können, fügen Sie eine **[!UICONTROL Suchbereich]** -Komponente.
 
-Um einen Link zu einem Formular an einer beliebigen Stelle auf der Seite anzuzeigen, verwenden Sie die Komponente „Link“. Weitere Informationen zu Link-Komponenten finden Sie unter [Einbetten einer Link-Komponente in eine Seite](/help/forms/using/embedding-link-component-page.md).
+Verwenden Sie die Komponente Link , um ein Formular von einer beliebigen Stelle auf der Seite aus zu verknüpfen. Weitere Informationen zu Link-Komponenten finden Sie unter [Einbetten einer Link-Komponente in eine Seite](/help/forms/using/embedding-link-component-page.md).
 
-Um Formulare mit dem Status „Entwurf“ sowie bereits gesendete Formulare aufzulisten, verwenden Sie die Komponente **[!UICONTROL Drafts and Submissions]**. Weitere Informationen finden Sie unter [Anpassen der Komponente „Drafts and Submissions](/help/forms/using/draft-submission-component.md).
+Um die Formulare aufzulisten, die sich im Entwurfsstatus befinden, und die bereits gesendeten Formulare aufzulisten, verwenden Sie die **[!UICONTROL Entwürfe und Übermittlungen]** -Komponente. Weitere Informationen finden Sie unter [Anpassen der Komponente &quot;Drafts and Submissions&quot;](/help/forms/using/draft-submission-component.md).
 
-## Eignung für Mobilgeräte {#mobile-device-friendliness}
+## Mobilgerätefreundlichkeit {#mobile-device-friendliness}
 
-Die Forms-Portal-Komponente „Search &amp; Lister“ ist für Mobilgeräte geeignet und passt sich entsprechend an. Das Layout aller drei Standardansichten (Raster, Karten, Bedienfeld) wird entsprechend dem Gerät, auf dem die Site geöffnet wird, angepasst, vorausgesetzt, die Webseite passt sich ebenfalls an. Die simple Tatsache besteht darin, dass „Search &amp; Lister“ nur eine Komponente ist und nicht den Seitenstil steuert.
+Die Forms Portal-Komponente &quot;Search &amp; Lister&quot;ist für Mobilgeräte benutzerfreundlich und passt sich entsprechend an. Das Layout aller drei Standardansichten (Raster, Karten, Bedienfeld) wird entsprechend dem Gerät, auf dem die Site geöffnet wird, angepasst, vorausgesetzt, die Webseite passt sich ebenfalls an. Die einfache Tatsache ist, dass &quot;Search &amp; Lister&quot;nur eine Komponente ist und nicht für die Formatierung auf Seitenebene gilt.
 
-In der folgenden Abbildung wird die Komponente „Search &amp; Lister“ angezeigt, wenn sie auf einem Mobilgerät geöffnet wird:
+Die folgende Abbildung zeigt die Komponente &quot;Search &amp; Lister&quot;, wenn sie auf einem Mobilgerät geöffnet wird:
 
 ![Screenshot der Komponente „Search und Lister“](assets/search_lister.png)
 **Abbildung:** *Komponente &quot;Search &amp; Lister&quot;*
@@ -240,9 +244,9 @@ In der folgenden Abbildung wird die Komponente „Search &amp; Lister“ angezei
 
 Sie können eine Forms Portal-Seite anpassen und ihr ein unverwechselbares Erscheinungsbild verleihen. Sie können auch Metadaten hinzufügen, um die Suchabfrage zu verbessern, das Layout der Seite zu ändern und benutzerdefinierte CSS-Stile hinzuzufügen. Weitere Informationen finden Sie unter [Anpassen von Vorlagen für Formularportalkomponenten](/help/forms/using/customizing-templates-forms-portal-components.md).
 
-In der AEM Forms-Benutzeroberfläche können Sie benutzerdefinierte Metadaten zu Formularen hinzufügen. Benutzerdefinierte Metadaten sind nützlich, wenn Sie den Endbenutzern die Auflistung und Suche von Formularen ermöglichen möchten. Weitere Informationen zu benutzerdefinierten Metadaten finden Sie unter [Anpassen von Vorlagen für Formularportalkomponenten](/help/forms/using/customizing-templates-forms-portal-components.md).
+In der AEM Forms-Benutzeroberfläche können Sie benutzerdefinierte Metadaten zu Formularen hinzufügen. Benutzerdefinierte Metadaten sind nützlich, um Endbenutzern eine Auflistung und ein Sucherlebnis für Formulare bereitzustellen. Weitere Informationen zu benutzerdefinierten Metadaten finden Sie unter [Anpassen von Vorlagen für Formularportalkomponenten](/help/forms/using/customizing-templates-forms-portal-components.md).
 
-Standardmäßig stellt Forms Portal Renderaktionen bereit. Sie können Forms Portal anpassen, um weitere Aktionen hinzuzufügen. Detaillierte Informationen finden Sie unter [Hinzufügen benutzerdefinierter Aktionen auf Formularüberwachungselementen](/help/forms/using/add-custom-action-form-lister.md).
+Standardmäßig bietet Forms Portal Renderaktionen. Sie können Forms Portal anpassen, um weitere Aktionen hinzuzufügen. Detaillierte Informationen finden Sie unter [Hinzufügen benutzerdefinierter Aktionen zu Formularlistenelementen.](/help/forms/using/add-custom-action-form-lister.md)
 
 ## Ähnliche Artikel
 

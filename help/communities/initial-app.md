@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 exl-id: 3da30cb4-39b2-4495-9e8b-93567b73b644
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 14%
+source-wordcount: '644'
+ht-degree: 7%
 
 ---
 
 # Erste Sandbox-Anwendung {#initial-sandbox-application}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In diesem Abschnitt erstellen Sie Folgendes:
 
@@ -26,16 +30,16 @@ In diesem Abschnitt erstellen Sie Folgendes:
 
 ## Erstellen der Inhaltsvorlage {#create-the-content-template}
 
-Eine Vorlage definiert den Standardinhalt einer neuen Seite. Bei komplexen Websites werden ggf. auch mehrere Vorlagen für die Erstellung der verschiedenen Seitentypen der Website verwendet. Darüber hinaus kann der Vorlagensatz zu einem Blueprint werden, der zum Rollout von Änderungen an einem Servercluster verwendet wird.
+Eine Vorlage definiert den Standardinhalt einer neuen Seite. Komplexe Websites können mehrere Vorlagen verwenden, um die verschiedenen Seitentypen auf der Site zu erstellen. Darüber hinaus kann der Vorlagensatz zu einem Blueprint werden, der zum Rollout von Änderungen an einem Servercluster verwendet wird.
 
-Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
+In dieser Übung basieren alle Seiten auf einer einfachen Vorlage.
 
 1. Im Explorer-Bereich der CRXDE Lite
 
    * Wählen Sie `/apps/an-scf-sandbox/templates` aus.
    * **[!UICONTROL Erstellen > Vorlage erstellen]**
 
-1. Geben Sie im Dialogfeld „Vorlage erstellen“ die folgenden Werte ein und klicken Sie anschließend auf **[!UICONTROL Weiter]**:
+1. Geben Sie im Dialogfeld Vorlage erstellen die folgenden Werte ein und klicken Sie auf **[!UICONTROL Nächste]**:
 
    * Bezeichnung: `playpage`
    * Titel: `An SCF Sandbox Play Template`

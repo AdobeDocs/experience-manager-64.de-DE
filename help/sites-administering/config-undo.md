@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung
 seo-title: Configuring Undo for Page Editing
-description: Erfahren Sie, wie Sie die Unterstützung für Rückgängig-Vorgänge zur Seitenbearbeitung in AEM konfigurieren können.
+description: Erfahren Sie, wie Sie die Rückgängig-Unterstützung für die Seitenbearbeitung in AEM konfigurieren.
 seo-description: Learn how to configure Undo support for page editing in AEM.
 uuid: e5a49587-a2a6-41d5-b449-f7a8f7e4cee6
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
 exl-id: badb7082-3ebf-4bb3-9157-48b8e7ea8ff9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '738'
+ht-degree: 71%
 
 ---
 
 # Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung{#configuring-undo-for-page-editing}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Der [OSGi-Dienst](/help/sites-deploying/configuring-osgi.md) **Day CQ WCM Undo Configuration** (`com.day.cq.wcm.undo.UndoConfigService`) zeigt verschiedene Eigenschaften an, die das Verhalten der Befehle „Rückgängig“ und „Wiederherstellen“ bei der Seitenbearbeitung steuern.
 
@@ -35,9 +39,9 @@ Dieser Knoten umfasst die Eigenschaften `cq.wcm.undo.whitelist` und `cq.wcm.undo
 >
 >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 
-## Konfigurieren von Rückgängig- und Wiederherstellen-Vorgängen {#configuring-undo-and-redo}
+## Konfigurieren von &quot;Rückgängig&quot;und &quot;Wiederherstellen&quot; {#configuring-undo-and-redo}
 
-Sie können diese Eigenschaften des OSGi-Diensts für Ihre eigene Instanz konfigurieren.
+Sie können diese OSGi-Diensteigenschaften für Ihre eigene Instanz konfigurieren.
 
 >[!NOTE]
 >
@@ -57,13 +61,13 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 ( 
 `cq.wcm.undo.path`)
 
-   * **Beschreibung**: Der Repository-Pfad zum Beibehalten von Rückgängig-Binärdaten. Wenn Autoren Binärdaten wie Bilder ändern, wird die ursprüngliche Version der Daten hier beibehalten. Wenn Änderungen an den Binärdaten rückgängig gemacht werden, werden diese Rückgängig-Binärdaten auf der Seite wiederhergestellt.
+   * **Beschreibung**: Der Repository-Pfad für die Beibehaltung binärer Rückgängig-Daten. Wenn Autoren Binärdaten wie Bilder ändern, wird hier die Originalversion der Daten beibehalten. Wenn Änderungen an den Binärdaten rückgängig gemacht werden, werden diese Rückgängig-Binärdaten auf der Seite wiederhergestellt.
    * **Standard**: `/var/undo`
    * **Typ**: `String`
 
    >[!NOTE]
    >
-   >Standardmäßig können nur Admins auf den Knoten `/var/undo` zugreifen. Autoren können nur Rückgängig- und Wiederherstellen-Vorgänge für Binärdaten durchführen, wenn ihnen Zugriffsberechtigungen für die Rückgängig-Binärdaten gewährt wurden.
+   >Standardmäßig können nur Admins auf den Knoten `/var/undo` zugreifen. Autoren können Vorgänge zum Rückgängigmachen und Wiederholen von Binärinhalten erst dann ausführen, wenn ihnen Berechtigungen für den Zugriff auf die binären Rückgängig-Daten erteilt wurden.
 
 * **Min. validity**
 ( 
@@ -97,7 +101,7 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 ( 
 `cq.wcm.undo.persistence.mode`)
 
-   * **Beschreibung**: Legt fest, wann der Verlauf der Rückgängigmachungen beibehalten wird. Aktivieren Sie diese Option, damit der Verlauf der Rückgängigmachungen nach jeder Seitenbearbeitung beibehalten wird. Deaktivieren Sie diese Option, damit der Verlauf nur beim erneuten Laden einer Seite beibehalten wird (wenn der Benutzer z. B. zu einer anderen Seite navigiert).
+   * **Beschreibung**: Legt fest, wann der Verlauf der Rückgängigmachungen beibehalten wird. Wählen Sie diese Option, um den Verlauf der rückgängig gemachten Angaben nach jeder Seitenbearbeitung beizubehalten. Deaktivieren Sie diese Option, damit sie nur beibehalten wird, wenn eine Seite neu geladen wird (z. B. wenn der Benutzer zu einer anderen Seite navigiert).
 
       Der Verlauf der Rückgängigmachungen wird mittels Webbrowserressourcen beibehalten. Wenn der Browser Ihrer Benutzer langsam auf Seitenbearbeitungen reagiert, versuchen Sie, den Verlauf der Rückgängigmachungen bei Seitenneuladungen beizubehalten.
 
@@ -110,8 +114,8 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 
    * **Beschreibung**: Gibt den visuellen Hinweis an, der verwendet wird, um die von einem Rückgängig- oder Wiederherstellen-Vorgang betroffenen Absätze anzugeben. Die folgenden Werte sind gültig:
 
-      * flash: Der Auswahlindikator der Absätze wird vorübergehend eingeblendet.
-      * select: Der Absatz wird ausgewählt.
+      * flash: Die Auswahlanzeige der Absätze blinkt vorübergehend.
+      * select: Der Absatz ist ausgewählt.
    * **Standard**: `flash`
    * **Typ**: `String`
 
@@ -120,7 +124,7 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 ( 
 `cq.wcm.undo.whitelist`)
 
-   * **Beschreibung**: Eine Liste von Komponenten, für die die Befehle „Rückgängig“ und „Wiederherstellen“ angewendet werden sollen. Fügen Sie dieser Liste Komponentenpfade hinzu, wenn sie korrekt mit „Rückgängig“/„Wiederherstellen“ funktionieren. Hängen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
+   * **Beschreibung**: Eine Liste von Komponenten, die von Befehlen zum Rückgängigmachen und Wiederholen betroffen sein sollen. Fügen Sie Komponentenpfade zu dieser Liste hinzu, wenn sie beim Rückgängigmachen/Wiederholen ordnungsgemäß funktionieren. Hängen Sie ein Sternchen (&amp;ast;) an, um eine Gruppe von Komponenten anzugeben:
 
       * Der folgende Wert legt die Foundation-Textkomponente fest:
 
@@ -146,9 +150,9 @@ Nachfolgend werden die Eigenschaften so aufgeführt, wie sie in der Web-Konsole
 
    >[!NOTE]
    >
-   >Wenn ein Vorgang in dieser Liste vorhanden ist, wird er nach wie vor dem Verlauf der Rückgängigmachungen hinzugefügt. Benutzer können Vorgänge nicht rückgängig machen, die im Verlauf der Rückgängigmachungen zeitlich vor einem **Bad Component**-Vorgang liegen.
+   >Wenn sich ein Vorgang auf dieser Liste befindet, wird er dennoch zum Verlauf der Rückgängigmachungen hinzugefügt. Benutzer können Vorgänge, die vor einem **Ungültige Komponente** -Operation im Verlauf der Rückgängigmachungen.
 
-   * Typische Vorgangsnamen lauten etwa wie folgt:
+   * Typische Vorgangsnamen lauten wie folgt:
 
       * `insertParagraph`: Die Komponente wird der Seite hinzugefügt.
       * `removeParagraph`: Die Komponente wird gelöscht.

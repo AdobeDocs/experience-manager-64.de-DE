@@ -10,14 +10,18 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 exl-id: 7780d04d-418e-494c-85c3-76bef5f35690
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 90%
+source-wordcount: '1753'
+ht-degree: 81%
 
 ---
 
 # Verwenden von Sling-Adaptern{#using-sling-adapters}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Mit [Sling](https://sling.apache.org) wird ein [Adaptermuster](https://sling.apache.org/site/adapters.html) zum bequemen Übersetzen von Objekten bereitgestellt, die zum Implementieren der [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)-Schnittstelle verwendet werden. Diese Schnittstelle stellt eine generische [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)-Methode bereit, mit der das Objekt in den Klassentyp übersetzt wird, der als Argument übergeben wird.
 
@@ -47,14 +51,14 @@ Es gibt die folgenden Nutzungsszenarien:
 
 `adaptTo()` kann NULL zurückgeben.
 
-Hierfür gibt es verschiedene Gründe, z. B.:
+Hierfür gibt es verschiedene Gründe:
 
-* Die Implementierung unterstützt den Zieltyp nicht.
-* Eine Adapter-Factory zur Verarbeitung dieses Falls ist nicht aktiv (z. B. aufgrund von fehlenden Service-Verweisen)
-* Fehler für interne Bedingung
+* die Implementierung unterstützt den Zieltyp nicht
+* Eine Adapterfabrik, die diesen Fall verarbeitet, ist nicht aktiv (z. B. aufgrund von fehlenden Service-Verweisen)
+* Interne Bedingung fehlgeschlagen
 * Service ist nicht verfügbar
 
-Es ist wichtig, dass Sie den NULL-Fall ordnungsgemäß verarbeiten. Für das JSP-Rendering kann es zulässig sein, dass für JSP ein Fehler auftritt, wenn dies zu einem leeren Inhaltselement führt.
+Es ist wichtig, dass Sie die Groß-/Kleinschreibung &quot;null&quot;korrekt handhaben. Für JSP-Renderings kann es akzeptabel sein, dass die JSP fehlschlägt, wenn dies zu einem leeren Inhaltselement führt.
 
 ### Caching {#caching}
 
@@ -62,7 +66,7 @@ Zur Verbesserung der Leistung dürfen Implementierungen das Objekt zwischenspeic
 
 Diese Zwischenspeicherung wird für alle auf `AdapterFactory` basierenden Fälle durchgeführt.
 
-Es gibt aber keine allgemeine Regel. Bei dem Objekt kann es sich entweder um eine neue oder eine vorhandene Instanz handeln. Dies bedeutet, dass Sie sich nicht auf eines der Verhalten verlassen können. Es ist also – vor allem innerhalb von `AdapterFactory` – wichtig, dass Objekte bei diesem Szenario wiederverwendet werden können.
+Es gibt jedoch keine allgemeine Regel - das Objekt kann entweder eine neue oder eine vorhandene Instanz sein. Dies bedeutet, dass Sie sich nicht auf eines der beiden Verhalten verlassen können. Es ist also – vor allem innerhalb von `AdapterFactory` – wichtig, dass Objekte bei diesem Szenario wiederverwendet werden können.
 
 ### Funktionsweise {#how-it-works}
 
@@ -77,7 +81,7 @@ Es gibt verschiedene Möglichkeiten, `Adaptable.adaptTo()` zu implementieren:
 
 * Eine Kombination beider Vorgehensweisen.
 
-Im ersten Fall kann über javadocs angegeben werden, welche `adaptTo-targets` möglich sind. Für bestimmte Unterklassen, z. B. die JCR-basierte Resource-Klasse, ist dies häufig nicht möglich. Da Implementierungen von `AdapterFactory` im letzteren Fall normalerweise Teil der privaten Klassen eines Pakets sind, werden sie nicht per Client-API verfügbar gemacht und auch nicht in javadocs aufgeführt. Theoretisch wäre es möglich, auf alle `AdapterFactory`-Implementierungen über die [OSGi](/help/sites-deploying/configuring-osgi.md)-Service-Laufzeit zuzugreifen und sich die Konfigurationen der „adaptierbaren Elemente“ (Quellen und Ziele) anzusehen, diese aber nicht einander zuzuordnen. Dies hängt letztendlich von der internen Logik ab, die dokumentiert werden muss. Dies ist der Grund für diesen Verweis.
+Im ersten Fall kann über javadocs angegeben werden, welche `adaptTo-targets` möglich sind. Für bestimmte Unterklassen, z. B. die JCR-basierte Resource-Klasse, ist dies häufig nicht möglich. Da Implementierungen von `AdapterFactory` im letzteren Fall normalerweise Teil der privaten Klassen eines Pakets sind, werden sie nicht per Client-API verfügbar gemacht und auch nicht in javadocs aufgeführt. Theoretisch wäre es möglich, auf alle `AdapterFactory`-Implementierungen über die [OSGi](/help/sites-deploying/configuring-osgi.md)-Service-Laufzeit zuzugreifen und sich die Konfigurationen der „adaptierbaren Elemente“ (Quellen und Ziele) anzusehen, diese aber nicht einander zuzuordnen. Letztlich hängt dies von der internen Logik ab, die dokumentiert werden muss. Daher ist dieser Verweis.
 
 ## Verweis {#reference}
 
@@ -113,7 +117,7 @@ Adaption von [**Resource**](https://helpx.adobe.com/experience-manager/6-4/sites
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/PersistableValueMap.html">PersistableValueMap</a></td> 
-   <td>Wenn dies eine auf einem JCR-Knoten basierende Ressource ist und der Benutzer über Berechtigungen zum Ändern von Eigenschaften auf diesem Knoten verfügt.<br /> Hinweis: Bei mehreren beibehaltbaren Zuordnungen werden die Werte nicht gemeinsam genutzt.</td> 
+   <td>Wenn es eine auf einem JCR-Knoten basierende Ressource ist und der Benutzer berechtigt ist, Eigenschaften auf diesem Knoten zu ändern.<br /> Hinweis: mehrere persistente Maps verwenden ihre Werte nicht.</td> 
   </tr> 
   <tr> 
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td> 
@@ -216,7 +220,7 @@ Adaption von [**Page**](https://helpx.adobe.com/experience-manager/6-4/sites/dev
    <td>Bezeichnete Ressource (== this).</td> 
   </tr> 
   <tr> 
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Knoten</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td> 
    <td>Knoten der Seite.</td> 
   </tr> 
   <tr> 
@@ -228,7 +232,7 @@ Adaption von [**Page**](https://helpx.adobe.com/experience-manager/6-4/sites/dev
 
 Adaption von [**Component**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html) für:
 
-| [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource der Komponente. |
+| [Resource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource der Komponente. |
 |---|---|
 | [LabeledResource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/LabeledResource.html) | Bezeichnete Ressource (== this). |
 | [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten der Komponente. |
@@ -247,7 +251,7 @@ Adaption von [**Template**](https://helpx.adobe.com/experience-manager/6-4/sites
    <td>Bezeichnete Ressource (== this).</td> 
   </tr> 
   <tr> 
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Knoten</a></td> 
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td> 
    <td>Knoten dieser Vorlage.</td> 
   </tr> 
   <tr> 
@@ -261,7 +265,7 @@ Adaption von [**Template**](https://helpx.adobe.com/experience-manager/6-4/sites
 
 [**Authorizable**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html), [**Benutzer**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) und [**Gruppe**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) angepasst an:
 
-| [Knoten](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Stammknoten des Benutzers/der Gruppe zurück. |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Gibt den Stammknoten des Benutzers/der Gruppe zurück. |
 |---|---|
 | [ReplicationStatus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/replication/ReplicationStatus.html) | Gibt den Replizierungsstatus für den Stammknoten des Benutzers/der Gruppe zurück. |
 
@@ -269,18 +273,18 @@ Adaption von [**Template**](https://helpx.adobe.com/experience-manager/6-4/sites
 
 Adaption von [**Asset**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) für:
 
-| [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource des Assets. |
+| [Resource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource des Assets. |
 |---|---|
-| [Knoten](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten des Assets. |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten des Assets. |
 | ... | Alle Elemente, für die die Ressource des Assets adaptiert werden kann. |
 
 #### Tagging {#tagging}
 
 Adaption von [**Tag**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html) für:
 
-| [Ressource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource des Tags. |
+| [Resource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource des Tags. |
 |---|---|
-| [Knoten](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten des Tags. |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knoten des Tags. |
 | ... | Alle Elemente, für die die Ressource des Tags adaptiert werden kann. |
 
 #### Andere {#other}

@@ -10,20 +10,24 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
 exl-id: 776ceb9f-f835-4dbb-9100-f456a36b6dcd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 100%
+source-wordcount: '509'
+ht-degree: 77%
 
 ---
 
 # Beispiele für ContextHub-Store-Kandidaten{#sample-contexthub-store-candidates}
 
-ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden für jedes Beispiel bereitgestellt:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Für jedes Beispiel werden die folgenden Informationen bereitgestellt:
 
 * Gibt an, wo der Quell-Code zu finden ist, damit Sie ihn zum Lernen öffnen können.
-* Wie werden die Stores konfiguriert, die Sie aus den Store-Kandidaten erstellen.
-* Wie sind die Store-Daten strukturiert, dasmit Sie darauf zugreifen können.
+* So konfigurieren Sie die Stores, die Sie aus den Storekandidaten erstellen.
+* Struktur der Speicherdaten, sodass Sie darauf zugreifen können.
 
 >[!WARNING]
 >
@@ -43,7 +47,7 @@ Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segment
 
 ### Konfiguration {#configuration-segmentation}
 
-Wenn Sie einen aem.segmentation-Store erstellen, ist es nicht erforderlich, eine detaillierte Konfiguration zur Verfügung zu stellen. Die Standardkonfiguration gibt den Speicherort der ContextHub-Segmentdefinitionen an.
+Wenn Sie einen aem.segmentation -Store erstellen, müssen Sie keine detaillierte Konfiguration angeben. Die Standardkonfiguration gibt den Speicherort der ContextHub-Segmentdefinitionen an.
 
 ```xml
 {
@@ -57,7 +61,7 @@ Wenn Sie einen aem.segmentation-Store erstellen, ist es nicht erforderlich, eine
 
 ## Beispiel-Store-Kandidat „contexthub.geolocations“ {#contexthub-geolocation-sample-store-candidate}
 
-Der Beispiel-Store-Kandidat „contexthub.geolocation“ verwendet Google Maps zum Abrufen und Speichern von Informationen zum Clientstandort.
+Der Beispiel-Store-Kandidat &quot;contexthub.geolocation&quot;verwendet Google Maps zum Abrufen und Speichern von Informationen zum Client-Standort.
 
 ### Quellpfad {#source-location-geolocation}
 
@@ -182,7 +186,7 @@ Stores, die diesen Store-Kandidaten verwenden, haben eine Datenstruktur, die dem
 
 ## Beispiel-Store-Kandidat „granite.emulators“  {#granite-emulators-sample-store-candidate}
 
-Der Beispiel-Store-Kandidat „granite.emulators“ speichert Informationen über Kundengeräte.
+Der Beispiel-Store-Kandidat &quot;granite.emulators&quot;speichert Informationen über Clientgeräte.
 
 ### Quellpfad {#source-location-emulators}
 

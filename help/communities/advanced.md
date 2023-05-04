@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 role: Admin
 exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 1%
+source-wordcount: '1177'
+ht-degree: 2%
 
 ---
 
 # Erweiterte Scoring- und Badges {#advanced-scoring-and-badges}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 

@@ -9,14 +9,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 exl-id: e900d93e-f7cd-4a0d-a866-7fc6c7882797
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 11%
+source-wordcount: '337'
+ht-degree: 13%
 
 ---
 
 # Content Services{#content-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -44,7 +48,7 @@ Content Services kann die Inhalte als Assets, verpackte HTML (HTML/CSS/JS) oder 
 >
 >Siehe **[Verwalten von Content Services](/help/mobile/developing-content-services.md)** für Details.
 >
->Weitere Informationen finden Sie in der Dokumentation zum [](/help/sites-administering/configurations.md)Konfigurationsbrowser.
+>Weitere Informationen finden Sie in der Dokumentation zum [Konfigurations-Browser.](/help/sites-administering/configurations.md)
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

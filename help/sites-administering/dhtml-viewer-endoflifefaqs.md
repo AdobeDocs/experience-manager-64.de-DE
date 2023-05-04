@@ -7,18 +7,22 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
-source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 66%
+source-wordcount: '78'
+ht-degree: 53%
 
 ---
 
 # Einstellung der Unterstützung für DHTML-Viewer {#dhtml-viewer-end-of-life-}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Am 31. Januar 2014 wurde die DHTML-Viewer-Plattform offiziell eingestellt.
 
-Die neuesten unterstützten Viewer finden Sie im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+Die neuesten unterstützten Viewer finden Sie im [Dynamic Media Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=de).
 
 <!-- **What is the change?**
 

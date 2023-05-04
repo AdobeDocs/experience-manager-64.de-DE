@@ -9,16 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 exl-id: ef9352c7-c164-4cbf-8f18-5b97aa5f56be
-source-git-commit: 977ada5fefe476c7cd2fe1470eb024a517a681d2
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 94%
+source-wordcount: '280'
+ht-degree: 50%
 
 ---
 
 # Arbeiten mit Startpunkten {#working-with-startpoints}
 
-Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit einem Formular verknüpft, über das der Prozess aufgerufen wird, wenn das Formular gesendet wird. Genauere Informationen zu Prozessen finden Sie unter [Schrittweise Anleitung für die Geometrixx Finance-Referenz-Website](/help/forms/using/finance-reference-site-walkthrough.md).
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit einem Formular verknüpft, über das der Prozess aufgerufen wird, wenn das Formular gesendet wird. Siehe [Schrittweise Anleitung zur Geometrixx Finance-Referenz-Website](/help/forms/using/finance-reference-site-walkthrough.md) um Prozesse zu verstehen.
 
 >[!NOTE]
 >
@@ -30,7 +34,7 @@ Um einen Prozess aus der AEM Forms-Anwendung zu initiieren, müssen Sie einen St
 
 **Starten eines in Workbench definierten Prozesses**
 
-1. Um die in der AEM Forms-App verfügbaren Startpunkte anzuzeigen, gehen Sie zum [Startbildschirm](/help/forms/using/home-screen.md).
+1. Um die in der AEM Forms-App verfügbaren Startpunkte anzuzeigen, navigieren Sie zu [Startbildschirm](/help/forms/using/home-screen.md).
 1. Auf dem Bildschirm **[!UICONTROL Startseite]** wird standardmäßig die Liste **[!UICONTROL Alle Formulare]** angezeigt.
 
    Der Startpunkt ist mit einem Formular verknüpft. Tippen Sie in der Liste auf das mit dem Startpunkt verknüpfte Formular, um es zu öffnen.
@@ -43,8 +47,8 @@ Um einen Prozess aus der AEM Forms-Anwendung zu initiieren, müssen Sie einen St
 
 1. Nachdem Sie das Formular ausgefüllt haben, tippen Sie auf **Senden.**
 
-Wenn die App offline ist, werden das Formular und die Daten im Ordner „Outbox“ gespeichert.
+Wenn die App offline ist, werden das Formular und die zugehörigen Daten im Ordner &quot;Outbox&quot;gespeichert.
 
 Wenn die App online ist, wird die Aufgabe mit dem AEM Forms-Server synchronisiert und dem im Prozess angegebenen Benutzer zugewiesen.
 
-Informationen zum Bearbeiten der Aufgabe in Ihrer Aufgabenliste finden Sie unter [Öffnen einer Aufgabe](/help/forms/using/open-task.md).
+Informationen zum Arbeiten mit der Aufgabe in der Aufgabenliste finden Sie unter [Öffnen einer Aufgabe](/help/forms/using/open-task.md).

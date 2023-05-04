@@ -9,14 +9,18 @@ topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 96%
+source-wordcount: '542'
+ht-degree: 55%
 
 ---
 
 # Interaktive Kommunikation - Übersicht {#interactive-communications-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Dieser Artikel enthält eine Übersicht, Beispiele für Anwendungsfälle, einen Erstellungs-Workflow und Unterschiede zwischen der interaktiven Kommunikation und dem Brief.
 
@@ -26,16 +30,16 @@ Interaktive Kommunikation zentralisiert und verwaltet die Erstellung, Anordnung 
 
 ## Schlüsselfunktionen {#key-capabilities}
 
-Im Folgenden sind die wichtigsten Funktionen von interaktiver Kommunikation aufgeführt:
+Im Folgenden finden Sie die wichtigsten Funktionen der interaktiven Kommunikation:
 
-* OOTB-Integration mit dem Formulardatenmodell, um einen einfachen und rationalisierten Zugriff auf Backend-Datenbanken und andere CRM-Systeme wie MS® Dynamics zu ermöglichen
-* Eine integrierte Autorbenutzeroberfläche für Druck- und Webkanal mit der Möglichkeit zum automatischen Erstellen von Druck- und Webkanälen
+* Native Integration mit dem Formulardatenmodell, um einfachen und optimierten Zugriff auf Back-End-Datenbanken und andere CRM-Systeme wie MS® Dynamics zu ermöglichen
+* Integrierte Authoring-Oberfläche für Druck- und Webkanäle mit der Möglichkeit, automatisch einen Webkanal aus dem Druckkanal zu generieren
 * Diagramme zur Darstellung von Informationen in leicht verständlichen visuellen Formaten in Druck und Web
 * Dokumentfragmente unterstützen den Regeleditor und das Formulardatenmodell
 * Die Benutzeroberfläche für Agenten zeigt die Druck- und Web-Vorschau der interaktiven Kommunikation.
 * Drag-and-Drop-Komponenten zum schnellen Erstellen von Druck- und Webkanälen
 
-## Beispielanwendungsfall {#sample-use-case}
+## Anwendungsbeispiel {#sample-use-case}
 
 Die [Begrüßungs-Kit für einen Kreditkartenkunden](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) Beispielanwendungsfall zeigt die Funktionen einer interaktiven Kommunikation.
 
@@ -52,7 +56,7 @@ Um eine Interaktive Kommunikation zu erstellen, sollten Sie die [Bausteine](#bui
 1. Geben Sie das [Formulardatenmodell](/help/forms/using/data-integration.md), den Vorbefüllungs-Dienst und die [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md) an. Sie können den Webkanal über den Druckkanal generieren.
 
 1. Fügen Sie mit der [Drag &amp; Drop-Beutzeroberfläche](/help/forms/using/introduction-interactive-communication-authoring.md) je nach Bedarf Dokumentfragmente, Bilder, Komponenten zum Druck- und Webkanal der interaktiven Kommunikation hinzu.
-1. Konfigurieren Sie die Eigenschaften für die eingefügten Komponenten wie folgt:
+1. Konfigurieren Sie die Eigenschaften für die eingefügten Komponenten, z. B.:
 
    1. Bilder
    1. [Tabellen](/help/forms/using/create-interactive-communication.md#tables) (inklusive Layout-Fragmente)
@@ -60,11 +64,11 @@ Um eine Interaktive Kommunikation zu erstellen, sollten Sie die [Bausteine](#bui
    1. [Dokumentfragmente](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. Zeigen Sie Druck- und Webkanäle in der Vorschau an und, falls erforderlich, bearbeiten Sie die interaktive Kommunikation.
-1. Der Agent verwendet die Benutzeroberfläche für Agenten, um[ die interaktive Kommunikation vorzubereiten](/help/forms/using/prepare-send-interactive-communication.md) und sie an den Empfänger/Nachbearbeitungsprozess zu senden.
+1. Der Agent verwendet die Benutzeroberfläche des Agenten für [Vorbereiten der interaktiven Kommunikation](/help/forms/using/prepare-send-interactive-communication.md) , um sie an den Empfänger/Nachbearbeitungsprozess zu senden.
 
 ### Bausteine {#buildingblocks}
 
-Im Folgenden sind die Bausteine &#x200B;&#x200B;aufgeführt, die für die Erstellung einer interaktiven Kommunikation benötigt werden:
+Die folgenden Bausteine sind für die Erstellung einer interaktiven Kommunikation erforderlich:
 
 * [Formulardatenmodell](/help/forms/using/data-integration.md)
 * [Druck- und Webkanal-Vorlagen](/help/forms/using/web-channel-print-channel.md)
@@ -89,46 +93,46 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz, um Kun
    <td>Druck</td> 
   </tr>
   <tr>
-   <td>Schema</td> 
+   <td>Aufhebung der Veröffentlichung planen</td> 
    <td>Formulardatenmodell </td> 
    <td>Datenwörterbuch </td> 
   </tr>
   <tr>
    <td>Lokalisierung</td> 
-   <td>Wird nicht im Formulardatenmodell unterstützt</td> 
-   <td>Wird im Datenwörterbuch unterstützt</td> 
+   <td>Nicht unterstützt im Formulardatenmodell</td> 
+   <td>Im Datenwörterbuch unterstützt</td> 
   </tr>
   <tr>
    <td>Regeleditor</td> 
    <td>
     <ul> 
-     <li>Text- und Bedingung unterstützen den Regeleditor zum Erstellen von Inline-Bedingungen</li> 
-     <li>Der Editor für die interaktive Kommunikation unterstützt die Anwendung von Regeln für Komponenten des Webkanals</li> 
+     <li>Regeleditor für Text- und Bedingungsunterstützung zum Erstellen von Inline-Bedingungen</li> 
+     <li>Der Editor für interaktive Kommunikation unterstützt die Anwendung von Regeln auf Komponenten des Webkanals</li> 
     </ul> </td> 
-   <td>Keine Benutzeroberfläche für die Erstellung eines bedingten Ausdrucks</td> 
+   <td>Keine Benutzeroberfläche für die Erstellung von bedingten Ausdrücken</td> 
   </tr>
   <tr>
    <td>Authoring –</td> 
-   <td>Drag-and-Drop-Benutzeroberfläche für Erstellung von Druck- und Webkanal</td> 
+   <td>Drag-and-Drop-Benutzeroberfläche zum Erstellen von Druck- und Webkanälen</td> 
    <td>Kein Drag-and-Drop-Mechanismus </td> 
   </tr>
   <tr>
    <td>Diagramme</td> 
-   <td>Diagramme werden sowohl im Druck- als auch im Webkanal unterstützt</td> 
+   <td>Unterstützte Diagramme in Druck- und Webkanal</td> 
    <td>Nicht unterstützt</td> 
   </tr>
   <tr>
    <td>Designs</td> 
-   <td>Verwendet Designs, um den Webkanal zu gestalten</td> 
+   <td>Verwendet Designs zum Gestalten des Webkanals</td> 
    <td>Unterstützt keine Designs</td> 
   </tr>
   <tr>
-   <td>Prüfung und Versionsverwaltung</td> 
+   <td>Prüfung und Versionierung</td> 
    <td>Nicht unterstützt</td> 
    <td>Unterstützt</td> 
   </tr>
   <tr>
-   <td>Entwürfe und Verwalten von Instanzen</td> 
+   <td>Entwürfe und Verwaltungsinstanz</td> 
    <td>Nicht unterstützt</td> 
    <td>Unterstützt</td> 
   </tr>
@@ -138,7 +142,7 @@ Interaktive Kommunikation ist der standardmäßige und empfohlene Ansatz, um Kun
    <td>Unterstützt </td> 
   </tr>
   <tr>
-   <td>Agentsignatur</td> 
+   <td>Agentenunterschrift</td> 
    <td>Nicht unterstützt</td> 
    <td>Unterstützt</td> 
   </tr>

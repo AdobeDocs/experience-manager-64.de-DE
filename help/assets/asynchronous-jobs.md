@@ -5,16 +5,20 @@ contentOwner: AG
 feature: Asset Management
 role: User
 exl-id: 0abdfe87-d932-41dd-b1e6-9f5fa5b924fe
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 23%
+source-wordcount: '664'
+ht-degree: 17%
 
 ---
 
 # Asynchrone Vorgänge {#asynchronous-operations}
 
-Verringerung der negativen Auswirkungen auf die Leistung, [!DNL Adobe Experience Manger Assets] verarbeitet bestimmte langwierige und ressourcenintensive Asset-Vorgänge asynchron. Die asynchrone Verarbeitung umfasst die Aneinanderreihung mehrerer Aufgaben und schließlich deren serielle Ausführung, abhängig von der Verfügbarkeit von Systemressourcen. Zu diesen Vorgängen gehören u. a.:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Verringerung der negativen Auswirkungen auf die Leistung, [!DNL Adobe Experience Manger Assets] verarbeitet bestimmte langwierige und ressourcenintensive Asset-Vorgänge asynchron. Die asynchrone Verarbeitung umfasst die Aneinanderreihung mehrerer Aufgaben und schließlich deren serielle Ausführung, abhängig von der Verfügbarkeit von Systemressourcen. Zu diesen Vorgängen gehören:
 
 * Löschen vieler Assets.
 * Verschieben vieler Assets oder Assets mit vielen Verweisen.
@@ -36,11 +40,11 @@ Immer [!DNL Assets] einen Vorgang asynchron verarbeitet, erhalten Sie eine Benac
 
    ![Status und Details asynchroner Vorgänge](assets/job_status.png)
 
-   Informationen zum Fortschritt eines Vorgangs finden Sie unter **[!UICONTROL Status]** Spalte. Abhängig vom Fortschritt wird eine der folgenden Statusmeldungen angezeigt:
+   Informationen zum Fortschritt eines Vorgangs finden Sie unter **[!UICONTROL Status]** Spalte. Je nach Fortschritt wird einer der folgenden Status angezeigt:
 
    * **[!UICONTROL Aktiv]**: Der Vorgang wird verarbeitet.
-   * **[!UICONTROL Erfolg]**: Der Vorgang wurde abgeschlossen.
-   * **[!UICONTROL Fehler]******: Der Vorgang konnte nicht verarbeitet werden.
+   * **[!UICONTROL Erfolg]**: Der Vorgang ist abgeschlossen.
+   * **[!UICONTROL Fail]** oder **[!UICONTROL Fehler]**: Der Vorgang konnte nicht verarbeitet werden.
    * **[!UICONTROL Geplant]**: Die Verarbeitung des Vorgangs ist für einen späteren Zeitpunkt geplant.
 
 1. Um einen aktiven Vorgang anzuhalten, wählen Sie ihn aus der Liste aus und klicken Sie auf **[!UICONTROL Anhalten]** ![Stopp-Symbol](assets/do-not-localize/stop_icon.svg) aus der Symbolleiste.

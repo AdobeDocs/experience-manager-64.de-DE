@@ -9,18 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
 exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '368'
+ht-degree: 55%
 
 ---
 
 # Dynamisches Füllen von Dropdownlisten  {#dynamically-populating-drop-down-lists}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Voraussetzungen {#prerequisites}
 
-* [Erstellung von OSGI-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
+* [Erstellen von OSGI-Bundles](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
 * [Entwickeln von AEM-Komponenten](/help/sites-developing/components.md)
 * [Erstellen von adaptiven Formularen](/help/forms/using/creating-adaptive-form.md)
 * [Bearbeiten adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md)
@@ -31,10 +35,10 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
 1. Erstellen Sie ein Projekt mit den folgenden Modulen:
 
-   * Das Bundle, das die Logik für das Füllen der Dropdownliste enthält, in diesem Fall handelt es sich um ein Servlet.
-   * Der Inhalt, der die .jar-Datei einbettet und über eine Dropdownressource verfügt. Das Servlet verweist auf diese Ressource.
+   * Das Bundle, das die Logik zum Ausfüllen der Dropdown-Liste enthält, in diesem Fall ein Servlet.
+   * Der Inhalt, der die JAR-Datei einbettet und eine Dropdown-Ressource enthält. Das Servlet verweist auf diese Ressource.
 
-1. Schreiben Sie ein Servlet basierend auf dem Abfrageparameter „Land“, das ein Array mit den Namen der Bundesländer im jeweiligen Land zurückgibt.
+1. Schreiben Sie ein Servlet basierend auf dem Anforderungsparameter Land , das ein Array zurückgibt, das die Namen der Bundesländer im Land enthält.
 
    ```java
    @Component(metatype = false)
@@ -149,10 +153,10 @@ Gehen Sie von einem Szenario aus, in dem Sie die Dropdownliste **Bundesland** ba
 
    ![Erstellen eines Dropdown-Knotens](assets/dropdown-node.png)
 
-1. Komprimieren Sie den Inhaltsknoten und betten Sie die .jar-Datei in einem bestimmten Verzeichnis ein (beispielsweise /apps/myfolder/demo/install/). Stellen Sie dieselbe Datei auf dem Server bereit.
-1. Erstellen Sie ein adaptives Formular und fügen Sie zwei Dropdownlisten, „Land“ und „Bundesland“, hinzu. Die Liste „Land“ kann die Namen von Ländern enthalten. Die Liste „Bundesland“ kann dynamisch die Namen der Bundesländer für das in der ersten Liste ausgewählte Land einfügen.
+1. Komprimieren Sie den Inhaltsknoten und betten Sie die JAR-Datei an einem bestimmten Speicherort ein (z. B. /apps/myfolder/demo/install/). Stellen Sie dieselbe Datei auf dem Server bereit.
+1. Erstellen Sie ein adaptives Formular und fügen Sie zwei Dropdownlisten, „Land“ und „Bundesland“, hinzu. Die Liste „Land“ kann die Namen von Ländern enthalten. Die Liste &quot;Bundesland&quot;kann die Namen der Bundesstaaten für das in der ersten Liste ausgewählte Land dynamisch ausfüllen.
 
-   Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste „Bundesland“ ein Skript hinzu, mit dem sie basierend auf dem in der Liste „Land“ gewählten Land gefüllt wird.
+   Fügen Sie die Namen der Länder hinzu, die Sie in der Liste „Land“ anzeigen möchten. Fügen Sie in der Liste &quot;Bundesland&quot;ein Skript hinzu, um es basierend auf dem Namen des Landes in der Liste &quot;Land&quot;auszufüllen.
 
    ![Hinzufügen von Ländernamen](assets/country-dropdown.png) ![Hinzufügen eines Skripts zum Ausfüllen mit Bundesländernamen](assets/state-dropdown.png) ![Dropdownlisten „Land“ und „Bundesland“](assets/2dropdowns.png)
 

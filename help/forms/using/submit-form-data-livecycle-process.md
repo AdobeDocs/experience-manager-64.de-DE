@@ -10,34 +10,38 @@ topic-tags: Configuration
 discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
 role: Admin
 exl-id: 260e405e-f59c-4aea-b83f-53ee103df94e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 54%
 
 ---
 
 # Konfigurieren von AEM Forms zum Senden von Formulardaten an einen AEM Forms on JEE-Prozess {#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
-Adaptive Formulare unterstützen die Übermittlung von Daten an einen AEM Forms on JEE-Prozess zur weiteren Verarbeitung. Dadurch können Sie einen AEM Forms-Prozess mit den Daten aus dem gesendeten Formular auslösen. Führen Sie die folgenden Schritte aus, damit Ihre AEM Forms-Instanz ein adaptives Formular an den AEM Forms on JEE-Prozess senden kann:
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-## Konfigurieren Sie Ihren AEM Forms-Server {#configure-your-aem-forms-server}
+Adaptive Formulare unterstützen das Senden von Daten an einen AEM Forms on JEE-Prozess zur weiteren Verarbeitung. Dadurch können Sie einen AEM Forms on JEE-Prozess mit den Daten, die aus dem gesendeten Formular verfügbar sind, Trigger. Führen Sie die folgenden Schritte aus, damit Ihre AEM Forms-Instanz ein adaptives Formular an den AEM Forms on JEE-Prozess senden kann:
+
+## Konfigurieren des AEM Forms-Servers {#configure-your-aem-forms-server}
 
 Führen Sie die folgenden Schritte aus, damit Ihr AEM Forms-Server Daten an einen AEM Forms on JEE-Server senden kann:
 
 1. Wechseln Sie zur Seite zur Konfiguration der AEM-Web-Konsole unter https://[*Host*]:[*Port*]/system/console/configMgr.
 
 1. Klicken Sie auf die **Adobe LiveCycle Client SDK-Konfigurationskomponente.**
-1. Klicken Sie auf die Komponente, um URL, Benutzernamen und das Kennwort des AEM Forms on JEE-Servers zu bearbeiten.
+1. Klicken Sie auf , um die Konfigurationsserver-URL, den Benutzernamen und das Kennwort für den AEM Forms on JEE-Server zu bearbeiten.
 1. Überprüfen Sie die Einstellungen und klicken Sie auf **Speichern**.
 
 ![Adobe LiveCycle Client SDK-Konfiguration](assets/clientsdkconfiguration.jpg)
 
 ## Zuordnung von Daten mit Verarbeitungsfeldern {#map-data-with-process-fields}
 
-Nachdem der AEM Forms konfiguriert ist, ordnen Sie die Daten-XML und Anhänge vom gesendeten Formular den Feldern im AEM Forms-Prozess zu. Gehen Sie hierfür wie folgt vor:
+Nachdem Ihr AEM Forms konfiguriert wurde, ordnen Sie die Daten-XML und Anhänge vom gesendeten Formular den Feldern im AEM Forms on JEE-Prozess zu. Gehen Sie hierfür wie folgt vor:
 
-1. In der AEM-Web-Konfigurationskonsole klicken Sie auf **Guide LiveCycle Process Locator and Invoker**, um die Konfiguration zu bearbeiten.
+1. Klicken Sie in der AEM Web-Konfigurationskonsole auf , um die **Guide LiveCycle Process Locator and Invoker** Konfiguration.
 1. Geben Sie die folgenden Parameter an:
 
    * **Name der Daten-XML-Parameter** (obligatorisch): Geben Sie die XML-Eigenschaftendatei des AEM Forms-Prozesses an, der die gesendeten Daten verarbeiten muss. Der Standardwert lautet **dataxml**.

@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 exl-id: 010d019b-a6ec-4a69-96c1-41b82a2a1839
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 97%
+source-wordcount: '1055'
+ht-degree: 94%
 
 ---
 
 # Benutzerdefinierte Berichte im Prozess-Reporting {#custom-reports-in-process-reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können die REST-Schnittstelle von QueryBuilder verwenden oder einen OSGi-Service mithilfe der QueryBuilder API erstellen, um einen benutzerdefinierten Bericht zu erstellen.
 
@@ -31,7 +35,7 @@ Führen Sie vor dem Hinzufügen eines benutzerdefinierten Berichts das folgende 
 
 ## Verwenden der REST-Schnittstelle von QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-Die CRX QueryBuilder REST-Schnittstelle stellt die Funktionalität des Query Builders für Asset-Freigaben über eine Java API und eine REST API bereit. Erfahren Sie, wie die [CRX QueryBuilder REST-Schnittstelle](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) verwendet wird, bevor Sie die folgenden Schritte ausführen:
+Die CRX QueryBuilder REST-Schnittstelle stellt die Funktionalität des Query Builders für Asset-Freigaben über eine Java API und eine REST API bereit. Erfahren Sie, wie die [CRX QueryBuilder REST-Schnittstelle](https://docs.adobe.com/docs/de_DE/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) verwendet wird, bevor Sie die folgenden Schritte ausführen:
 
 1. Navigieren Sie zur URL `https://[server]:[port]/lc/bin/querybuilder.json`
 
@@ -49,7 +53,7 @@ Die CRX QueryBuilder REST-Schnittstelle stellt die Funktionalität des Query Bui
 
 ## Erstellen eines Service mit der Query Builder API  {#creating-a-service-using-query-builder-api-nbsp}
 
-Voraussetzung für die Erstellung eines Service mit der Query Builder API sind die [Erstellung und Bereitstellung des CQ-OSGI-Pakets](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) sowie die [Verwendung der Query Builder API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
+Voraussetzung für die Erstellung eines Service mit der Query Builder API sind die [Erstellung und Bereitstellung des CQ-OSGI-Pakets](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) sowie die [Verwendung der Query Builder API](https://docs.adobe.com/docs/de_DE/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Erstellen Sie einen OSGi-Service mit entsprechenden Anmerkungen. Verwenden Sie für den Zugriff auf QueryBuilder Folgendes:
 

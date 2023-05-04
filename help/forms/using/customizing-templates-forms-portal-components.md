@@ -1,7 +1,7 @@
 ---
 title: Anpassen von Vorlagen für Forms Portal-Komponenten
 seo-title: Customizing templates for forms portal components
-description: Anzeigen benutzerdefinierter Metadaten in Formularlisten
+description: Anzeigen benutzerdefinierter Metadaten in der Formularauflistung
 seo-description: Display custom metadata in form listing
 uuid: 746aeece-a6d1-417b-8065-05cd54bd66d6
 content-type: reference
@@ -10,53 +10,57 @@ topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 feature: Forms Portal
 exl-id: 378e7e16-d22d-4fc3-93f4-fbfcdb28deb5
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 92%
+source-wordcount: '1269'
+ht-degree: 54%
 
 ---
 
 # Anpassen von Vorlagen für Forms Portal-Komponenten {#customizing-templates-for-forms-portal-components}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 ## Voraussetzungen {#prerequisites}
 
 [Formularmetadaten verwalten](/help/forms/using/manage-form-metadata.md)
 
-Kenntnisse im Umgang mit HTML und CSS
+Kenntnisse im Bereich HTML und CSS
 
 ## Übersicht {#overview}
 
-In der Benutzeroberfläche von AEM Forms können Sie jedem beliebigen Formular Metadaten hinzufügen. Mit benutzerdefinierten Metadaten können Sie die Benutzererfahrung bei der Auflistung und beim Durchsuchen von Formularen in Ihrem Unternehmen verbessern.
+In der Benutzeroberfläche von AEM Forms können Sie jedem beliebigen Formular Metadaten hinzufügen. Benutzerdefinierte Metadaten können das Benutzererlebnis beim Auflisten und Suchen von Formularen in Ihrer Organisation verbessern.
 
-In Forms Portal können Sie benutzerdefinierte Metadaten in den Formularlisten verwenden. Beim Erstellen von benutzerdefinierten Vorlagen für Assets können Sie das Layout bearbeiten und benutzerdefinierte Metadaten mit Ihrem CSS-Vorlagensatz verwenden.
+Mit Forms Portal können Sie benutzerdefinierte Metadaten in Formularlisten verwenden. Beim Erstellen benutzerdefinierter Vorlagen für Assets können Sie das Layout ändern und benutzerdefinierte Metadaten mit Ihrem CSS-Stilsatz verwenden.
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für verschiedene Forms Portal-Komponenten zu erstellen.
 
-## Erstellen einer benutzerdefinierten Vorlage {#creating-a-nbsp-custom-template}
+## Benutzerdefinierte Vorlage erstellen {#creating-a-nbsp-custom-template}
 
 1. Erstellen Sie einen sling:Folder-Knoten unter */apps *
 
-   Fügen Sie eine fpContentType-Eigenschaft hinzu. Geben Sie entsprechende Werte für die Eigenschaft abhängig von der Komponente an, für die Sie die benutzerdefinierte Vorlage definieren.
+   Fügen Sie eine fpContentType-Eigenschaft hinzu. Geben Sie die entsprechenden Werte für die Eigenschaft an, abhängig von der Komponente, für die Sie die benutzerdefinierte Vorlage definieren.
 
    * Komponente „Search &amp; Lister“: „/libs/fd/fp/formTemplate“
    * Komponente „Drafts &amp; Submissions“:
 
-      * Bereich „Drafts“: /libs/fd/fp/draftsTemplate
-      * Bereich „Submissions“: /libs/fd/fp/submissionsTemplate
-   * Komponente „Link“: /libs/fd/fp/linkTemplate
+      * Bereich &quot;Entwürfe&quot;: /libs/fd/fp/draftsTemplate
+      * Bereich &quot;Übermittlungen&quot;: /libs/fd/fp/submissionsTemplate
+   * Link-Komponente: /libs/fd/fp/linkTemplate
 
-   Fügen Sie einen Titel hinzu, der während der Auswahl der Layoutvorlagen angezeigt werden soll.
+   Fügen Sie einen Titel hinzu, der bei der Auswahl der Layoutvorlagen angezeigt werden soll.
 
-   *Hinweis: Der Titel kann sich von dem Knotennamen des erstellten sling:Folder unterscheiden. *
+   *Hinweis: Der Titel kann sich vom Knotennamen des von Ihnen erstellten sling:Folder unterscheiden. *
    *Die folgende Abbildung zeigt die Konfiguration der Komponente „Search &amp; Lister“.* ![Erstellen eines sling:Folder](assets/1-3.png)
 
-1. Erstellen Sie in diesem Ordner eine Datei „Template.html“, die als benutzerdefinierte Vorlage dienen soll.
-1. Schreiben Sie die benutzerdefinierte Vorlage und verwenden Sie dafür benutzerdefinierte Metadaten wie unten beschrieben.
+1. Erstellen Sie eine Datei template.html in diesem Ordner, die als benutzerdefinierte Vorlage dienen soll.
+1. Schreiben Sie die benutzerdefinierte Vorlage und verwenden Sie benutzerdefinierte Metadaten wie unten beschrieben.
 
 ## Arbeitsbeispiel {#working-example}
 
-Beim Folgenden Beispiel handelt es sich um eine Implementierung einer benutzerdefinierten Vorlage, bei der Forms Portal ein benutzerdefiniertes Geometrixx Gov Card-Layout von der Komponente „Search &amp; Lister“ abruft.
+Im Folgenden finden Sie eine Beispielimplementierung einer benutzerdefinierten Vorlage, bei der Forms Portal ein benutzerdefiniertes Geometrixx Gov Card-Layout für die Komponente &quot;Search &amp; Lister&quot;abruft.
 
 ```mxml
 <div class="__FP_boxes-container __FP_single-color">
@@ -78,9 +82,9 @@ Beim Folgenden Beispiel handelt es sich um eine Implementierung einer benutzerde
 
 ## Technische Spezifikationen für benutzerdefinierte Vorlagen {#technical-specifications-for-custom-templates}
 
-Eine benutzerdefinierte Vorlage für eine beliebige Formularportal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind die grundlegenden Einheiten für die Auflistung. Beispiele für wiederholbare Einträge sind Komponenten des Typs „Search &amp; Lister“, „Drafts &amp; Submissions“ sowie „Link“.
+Eine benutzerdefinierte Vorlage für eine beliebige Formularportal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind grundlegende Entitäten für die Auflistung. Beispiele für wiederholbare Einträge sind die Komponenten &quot;Search &amp; Lister&quot;, &quot;Drafts &amp; Submissions&quot;und &quot;Link&quot;.
 
-Forms Portal bietet eine Syntax für Platzhalter zur Anzeige von benutzerdefinierten bzw. OOTB-Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse aus Formularen, Entwürfen oder Übermittlungen angezeigt.
+Forms Portal bietet eine Syntax für Platzhalter zur Anzeige von benutzerdefinierten bzw. OOTB-Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse von Formularen, Entwürfen oder Übermittlungen ausgefüllt.
 
 Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** als **true**.
 
@@ -90,11 +94,11 @@ Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um benutze
 
 *Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
 
-## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
+## Vordefinierte Metadaten {#out-of-the-box-metadata}
 
-Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die Sie für Auflistungen verwenden können.
+Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die Sie für die Auflistung verwenden können.
 
-### Komponente „Search &amp; Lister“ {#search-amp-lister-component}
+### Komponente „Suche und Auflister“ {#search-amp-lister-component}
 
 * **Title**: Titel des Formulars
 * **name**: Name des Formulars (meist identisch mit dem Titel)
@@ -104,7 +108,7 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 * **assetType**: Typ des Assets. Gültige Werte sind unter anderem **Form**,**PDF Form**,**Print Form** und **Adaptive Form**
 * **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind **__FP_display_none****oder Leerlassen**
 
-   *Hinweis: Denken Sie daran, im benutzerdefinierten Stylesheet die Klasse „__FP_display_none“ zu verwenden*
+   *Hinweis: Denken Sie daran, die Klasse __FP_display_none in Ihrem benutzerdefinierten Stylesheet zu verwenden*
 
 * **downloadUrl**: URL für das Herunterladen eines Assets.
 
@@ -112,7 +116,7 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 
 1. **Lokalisierungsunterstützung**: Verwenden Sie zum Lokalisieren von statischem Text das Attribut . **${localize-***YOUR_TEXT***}** und stellen Sie den lokalisierten Wert zur Verfügung, falls noch nicht vorhanden.
 
-   *Im genannten Beispiel werden die Attribute „${localize-Apply}“ und „${localize-Download}“ verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
+   *In dem genannten Beispiel werden die Attribute ${localize-Apply} und ${localize-Download} verwendet, um den Text &quot;Apply&quot;und &quot;Download&quot;zu lokalisieren.*
 
 1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um Sortierung in ein Tabellenlayout einzufügen, fügen Sie dem jeweiligen Tabellen-Header das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
 
@@ -124,21 +128,21 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 
 * **Title**: Titel des Formulars
 * **formUrl**: URL zur Ausgabe des Formulars als HTML
-* **target**: Zielattribut des Links. Gültige Werte sind „_blank“ und „_self“.
-* **linkText**: Beschriftung des Links
+* **target**: Zielattribut des Links. Gültige Werte sind &quot;_blank&quot;und &quot;_self&quot;.
+* **linkText**: Linkbeschriftung
 
-### Komponente „Drafts &amp; Submissions“ {#drafts-amp-submissions-component}
+### Komponente &quot;Drafts &amp; Submissions&quot; {#drafts-amp-submissions-component}
 
 * **Path**: Pfad des Entwurfs-/Übermittlungs-Metadatenknotens. Verwenden Sie ihn mit der Erweiterung .HTML als URL, um einen Entwurf oder eine Übermittlung zu öffnen.
-* **contextPath**: Kontextpfad der AEM-Instanz.
-* **firstLetter**: Erster Buchstabe (groß) des Titels des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
+* **contextPath**: Kontextpfad der AEM-Instanz
+* **firstLetter**: Ersten Buchstaben (Großbuchstaben) des Titels des adaptiven Formulars, der als Entwurf gespeichert oder übermittelt wurde.
 * **formName**: Der Titel des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
-* **draftID**: ID für den aufgelisteten Entwurf. (Nur in der Vorlage für den Bereich „Draft“ verwenden).
-* **submitID**: ID für die aufgelistete Übermittlung. (Nur in der Vorlage für den Bereich „Submission“ verwenden).
-* **Status**: Status des übermittelten Formulars. (Nur in der Vorlage für den Bereich „Submission“ verwenden).
-* **description**: Beschreibung des adaptiven Formulars, das dem Entwurf/der Übermittlung zugewiesen ist.
-* **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ: Differenz zwischen der aktuellen Zeit und der letzten Übermittlungsaktion für die Übermittlung.
-* **iconClass**: CSS-Klasse zur Anzeige des ersten Buchstabens des Entwurfs/der Übermittlung. Forms Portal umfasst die folgenden Klassen, die Hintergründe in verschiedenen Farben bereitstellen.
+* **draftID**: ID für den aufgelisteten Entwurf (Nur in der Vorlage für den Bereich Entwurf verwenden).
+* **submitID**: ID für die aufgelistete Übermittlung (Nur in der Vorlage für den Abschnitt Übermittlung verwenden).
+* **status**: Status des gesendeten Formulars. (Nur in der Vorlage für den Abschnitt Übermittlung verwenden).
+* **description**: Beschreibung des adaptiven Formulars, das mit dem Entwurf oder der Übermittlung verknüpft ist.
+* **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ können Sie zwischen der aktuellen Zeit und der letzten Übermittlungsaktion für die Übermittlung unterscheiden.
+* **iconClass**: CSS-Klasse zur Anzeige des ersten Buchstabens des Entwurfs/der Übermittlung. Forms Portal umfasst die folgenden Klassen, die verschiedene farbige Hintergründe bieten.
 * **owner**: Benutzer, der den Entwurf/die Übermittlung erstellt hat.
 * **Today**: Erstellungsdatum des Entwurfs/der Übermittlung im Format TT:MM:JJJJ.
 * **TimeNow**: Erstellungszeitpunkt des Entwurfs/der Übermittlung im 24-Stunden-Format HH:MM:SS.

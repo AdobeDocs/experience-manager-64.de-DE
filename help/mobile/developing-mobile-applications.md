@@ -10,20 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: 1ec3096c-e63c-4384-b152-957ff0eef4b2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 11%
+source-wordcount: '619'
+ht-degree: 5%
 
 ---
 
 # Entwickeln von Mobilanwendungen in AEM {#developing-mobile-applications-in-aem}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM nutzt Adobe PhoneGap und Adobe Publishing Solutions, damit Sie inhaltsreiche und anwendungsbasierte, plattformübergreifende Mobilanwendungen erstellen können:
+AEM nutzt Adobe PhoneGap- und Adobe Publishing Solutions, mit denen Sie inhaltsreiche und anwendungsbasierte, plattformübergreifende mobile Apps erstellen und verwalten können:
 
 * Verwalten Sie alle mobilen Apps Ihrer Unternehmen an einem Ort.
 * Überprüfen Sie Apps in Entwicklungs- und Staging-Umgebungen, ohne die Komplexität von Bereitstellungsprofilen und den zusätzlichen Aufwand zum Erstellen und Hochladen Ihrer App zur Freigabe zu haben.
@@ -78,7 +82,7 @@ iOS-Entwickler sollten sich eines offenen Problems mit Cordova-Apps bewusst sein
 ## Entwickeln von Mobilanwendungen in AEM {#developing-mobile-applications-in-aem-1}
 
 * [Starten AEM PhoneGap](/help/mobile/starting-aem-phonegap-app.md)
-* [Erstellen von Mobilanwendungen](/help/mobile/building-app-mobile-phonegap.md)
+* [Erstellen von Mobile Apps](/help/mobile/building-app-mobile-phonegap.md)
 * [App strukturieren](/help/mobile/phonegap-structure-an-app.md)
 * [Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole](/help/mobile/phonegap-apps-console.md)
 * [Single Page Applications (SPA)](/help/mobile/phonegap-single-page-applications.md)

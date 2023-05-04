@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
 role: Admin
 exl-id: 4ff530ae-c676-4259-86f2-a3881843b642
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '932'
+ht-degree: 1%
 
 ---
 
 # SRP - Community-Inhaltsspeicherung {#srp-community-content-storage}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Einführung {#introduction}
 

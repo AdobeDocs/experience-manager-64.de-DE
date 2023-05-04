@@ -10,14 +10,18 @@ topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 feature: Adaptive Forms
 exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 97%
+source-wordcount: '1289'
+ht-degree: 46%
 
 ---
 
 # Automatisieren von Tests von adaptiven Formularen {#automate-testing-of-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -25,10 +29,10 @@ Adaptive Formulare sind für die Interaktion mit Ihren Kunden von wesentlicher B
 
 Calvin ermöglicht es Ihnen das automatische Testen der adaptiven Formulare im Webbrowser. Calvin verwendet die Benutzeroberfläche von [Hobbes](/help/sites-developing/hobbes.md) für das Erstellen von Tests und bietet die folgenden Werkzeuge:
 
-* Ein JavaScript-API für die Erstellung von Tests.
-* Eine Benutzeroberfläche für das Ausführen von Tests.
+* Eine JavaScript-API zum Erstellen von Tests.
+* Eine Benutzeroberfläche zum Ausführen von Tests.
 
-Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webbrowser ausführen, um Ihre adaptiven Formulare gründlich zu testen.
+Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webbrowser ausführen, um die folgenden Aspekte Ihrer adaptiven Formulare gründlich zu testen:
 
 <table> 
  <tbody> 
@@ -37,38 +41,38 @@ Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webb
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
-   <td>Befüllen eines adaptiven Formulars</td> 
+   <td>Vorabfüllen eines adaptiven Formulars</td> 
    <td> 
     <ul> 
-     <li>Wird das Formular erwartungsgemäß auf der Grundlage des Datenmodells befüllt?</li> 
-     <li>Werden die Vorschlagswerte von Formularobjekten erwartungsgemäß befüllt?</li> 
+     <li>Wird das Formular basierend auf dem Typ des Datenmodells erwartungsgemäß vorausgefüllt?</li> 
+     <li>Werden die Standardwerte von Formularobjekten erwartungsgemäß vorausgefüllt?</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Senden Sie eines adaptiven Formulars</td> 
+   <td>Senden eines adaptiven Formulars</td> 
    <td> 
     <ul> 
-     <li>Werden bei der Übermittlung korrekte Daten generiert?</li> 
-     <li>Wird das Formular während des Sendens auf dem Server erneut validiert?</li> 
-     <li>Ist die Sendeaktion für das ausgeführte Formular konfiguriert?</li> 
+     <li>Werden beim Senden korrekte Daten generiert?</li> 
+     <li>Wird das Formular beim Senden erneut auf dem Server validiert?</li> 
+     <li>Ist die Sendeaktion für das Formular konfiguriert, das ausgeführt wird?</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td><p>Ausdrucksregeln</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>Werden die mit Formularobjekten verknüpften Ausdrücke, wie z. B. rechnen, sichtbar machen, Skripte ausführen, nachdem ein Feld geschlossen wurde, ausgeführt, nachdem die entsprechenden UI-Vorgänge ausgeführt wurden?<br />  </li> 
+     <li>Werden die mit Formularobjekten verknüpften Ausdrücke wie "calculate", "visible", "execute scripts", nach dem Verlassen eines Felds ausgeführt, nachdem die entsprechenden UI-Vorgänge ausgeführt wurden?<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>Validierungen</td> 
    <td> 
     <ul> 
-     <li>Werden Feldvalidierungen nach Durchführung des Vorgang erwartungsgemäß ausgeführt?</li> 
+     <li>Werden Feldvalidierungen nach der Ausführung der Vorgänge erwartungsgemäß ausgeführt?</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>Verzögertes Laden</p> <p> </p> </td> 
+   <td><p>Lazy Loading</p> <p> </p> </td> 
    <td> 
     <ul> 
      <li>Wird beim Klicken Sie auf (oder auf ein Navigationselement eines Bereichs) der HTML-Code vom Server abgerufen, wie es in der Konfiguration für das langsame Laden der Dateien vorgesehen ist?</li> 
@@ -78,7 +82,7 @@ Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webb
    <td><p>UI-Interaktion</p> </td> 
    <td> 
     <ul> 
-     <li><a href="https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Testen von UI-Interaktion mit adaptiven Formularobjekten </a></li> 
+     <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Testen von UI-Interaktion mit adaptiven Formularobjekten </a></li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -86,20 +90,20 @@ Mit Calvin können Sie Testfälle in CRXDE erstellen und UI-Tests direkt im Webb
 
 ### Voraussetzungen {#prerequisites}
 
-Bevor Sie diesen Artikel verwenden, um Ihre Testfälle zu erstellen, müssen Sie Folgendes wissen:
+Bevor Sie diesen Artikel zum Erstellen Ihrer Testfälle verwenden, müssen Sie Folgendes wissen:
 
 * Erstellen von Test-Suites und Ausführen von Testfällen mit [Hobbes](https://docs.adobe.com/docs/de/aem/6-3/develop/components/hobbes.html)
 * [Hobbes-Javascript-APIs](https://docs.adobe.com/docs/de/aem/6-2/develop/ref/test-api/index.html)
 * [Calvin JavaScript-APIs](https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## Beispiel: Erstellen Sie einen Test für ein adaptives Formular mit Hobbes als Tests-Rahmen {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## Beispiel: Erstellen einer Testsuite für ein adaptives Formular mit Hobbes als Test-Framework {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
-Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen mehrerer adaptiver Formulare. Sie müssen einen separaten Testfall für jedes Formular erstellen, das Sie testen wollen. Wenn Sie die folgenden Schritte befolgen und den JavaScript-Code in Schritt 11 ändern, können Sie Ihre eigenen Testfälle erstellen, um Ihre adaptiven Formulare zu testen.
+Das folgende Beispiel führt Sie durch die Erstellung einer Test-Suite zum Testen mehrerer adaptiver Formulare. Sie müssen für jedes zu testende Formular einen separaten Testfall erstellen. Wenn Sie die folgenden Schritte ausführen und den JavaScript-Code in Schritt 11 ändern, können Sie eine eigene Testsuite erstellen, um Ihre adaptiven Formulare zu testen.
 
 1. Navigieren Sie zu CRXDE Lite in Ihrem Webbrowser: `https://[server]:[port]/crx/de`.
 1. Klicken Sie mit der rechten Maustaste auf den Unterordner /etc/clientlibs und dann auf **[!UICONTROL Erstellen > Knoten erstellen]**. Geben Sie einen Namen (hier afTestRegistration) ein, geben Sie den Knotentyp als cq:ClientLibraryFolder an und klicken Sie auf **[!UICONTROL OK]**.
 
-   Der Ordner „clientlibs“ enthält den Ausrichtungsaspekt Ihrer Anwendung (JS und Init). Es wird empfohlen, dass Sie alle Hobbes Test-Objekte, die für ein Formular spezifisch sind, im Clientlibs-Ordner registrieren.
+   Der Ordner clientlibs enthält den Registrierungsaspekt Ihrer Anwendung (JS und Init). Es wird empfohlen, alle Hobbes Test Suites-Objekte zu registrieren, die für ein Formular spezifisch sind, im Ordner clientlibs .
 
 1. Geben Sie folgende Werte im neu erstellten Knoten (hier afTestRegistration) ein und klicken Sie auf **[!UICONTROL Alle speichern]**. Diese Eigenschaften helfen Hobbes dabei, den Ordner als Test zu erkennen. Um diese Client-Bibliothek als Abhängigkeit in anderen Client-Bibliotheken wiederzuverwenden, benennen Sie sie granite.testing.calvin.tests.
 
@@ -125,7 +129,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
 >[!NOTE]
 >
->Die granite.testing.calvin.af-clientlib enthält alle adaptiven Formular-APIs. Diese APIs sind Teil des Calvin-namespace.
+>Die clientlib granite.testing.calvin.af enthält alle APIs für adaptive Formulare. Diese APIs sind Teil des Calvin-Namespace.
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
@@ -155,7 +159,7 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
    }(window, window.hobs));
    ```
 
-   Der obige Code erstellt Testfälle, die **Adaptives Formular- Demo Test** heißen. Um Testfälle mit einem anderen Namen anzulegen, ändern Sie den Namen entsprechend.
+   Der obige Code erstellt eine Test-Suite mit dem Namen **Adaptives Formular - Demotest**. Um eine Testsuite mit einem anderen Namen zu erstellen, ändern Sie den Namen entsprechend.
 
 1. Klicken Sie auf **[!UICONTROL Erstellen]** > **Knoten erstellen**, um einen Knoten unter dem clientlib-Ordner für jedes Formular zu erstellen, das Sie testen möchten. In diesem Beispiel wird ein Knoten mit dem Namen **testForm** zum Testen eines adaptiven Formulars mit dem Namen **testForm** `.`Geben Sie die folgenden Eigenschaften an und klicken Sie auf **[!UICONTROL OK]**:
 
@@ -175,9 +179,9 @@ Das folgende Beispiel führt Sie durch die Erstellung eines Testfalls zum Testen
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
-1. Klicken Sie mit der rechten Maustaste auf den Ordner, den Sie für das Testformular (hier testForm) erstellt haben und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]**. Nennen Sie die Datei scriptingTest.js und fügen Sie den folgenden Code zur Datei hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner, den Sie für das Testformular erstellt haben (hier testForm), und wählen Sie **[!UICONTROL Erstellen > Datei erstellen]**. Benennen Sie die Datei &quot;scriptingTest.js&quot;, fügen Sie der Datei den folgenden Code hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**
 
-   Um den folgenden Code zum Testen eines anderen adaptiven Formulars zu verwenden, ändern Sie den Pfad und den Namen des Formulars in **navigateTo** (Zeilen 11, 36 und 62) und die entsprechenden Testfälle. Weitere Informationen zu APIs zum Testen verschiedener Aspekte von Formularen und Formularobjekten finden Sie unter [Calvin-APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   Um den folgenden Code zum Testen eines anderen adaptiven Formulars zu verwenden, ändern Sie den Pfad und den Namen des Formulars in **navigateTo** (Zeilen 11, 36 und 62) und die entsprechenden Testfälle. Weitere Informationen zu APIs zum Testen verschiedener Aspekte von Formularen und Formularobjekten finden Sie unter [Calvin-APIs](https://helpx.adobe.com/de/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```
    (function(window, hobs) {
@@ -277,19 +281,19 @@ Sie können das Paket auch in der angehängten Datei SampleTestPackage.zip insta
 
 [Datei laden](assets/sampletestpackage.zip)
 
-## Testen der UI mit automatisierten Tests {#testing-your-ui-using-automated-tests}
+## Testen der Benutzeroberfläche mit automatisierten Tests {#testing-your-ui-using-automated-tests}
 
 ### Ausführen einer einzelnen Test-Suite {#running-a-single-test-suite}
 
-Test-Suites können einzeln ausgeführt werden. Wenn Sie eine Test-Suite ausführen, ändert sich die Seite, während die Testfälle und ihre Aktion ausgeführt werden, und die Ergebnisse werden nach dem Abschluss des Tests angezeigt. Symbole zeigen die Ergebnisse an.
+Testsuiten können einzeln ausgeführt werden. Wenn Sie eine Test-Suite ausführen, ändert sich die Seite, während die Testfälle und ihre Aktionen ausgeführt werden. Die Ergebnisse werden nach Abschluss des Tests angezeigt. Die Ergebnisse werden durch Symbole gekennzeichnet.
 
 Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test:  ![checkmark](assets/checkmark.png)
 
 Ein Symbol „X“ zeigt einen fehlgeschlagenen Test an: ![Kreuz](assets/cross.png)
 
-So führen Sie eine Test-Suite aus:
+So führen Sie eine Test Suite aus:
 
-1. Klicken oder tippen Sie im Testfeld auf den Namen des Testfalls, den Sie ausführen möchten, um die Details zu den Aktionen anzuzeigen.
+1. Klicken oder tippen Sie im Testfeld auf den Namen des Testfalls, den Sie ausführen möchten, um die Details der Aktionen zu erweitern.
 
    ![1_tapnameoftestcase](assets/1_tapnameoftestcase.png)
 
@@ -305,7 +309,7 @@ So führen Sie eine Test-Suite aus:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritten zum Testen Ihrer AEM-Benutzeroberfläche. Weitere Informationen zum Testen der adaptiven Formulare finden Sie unter den folgenden Themen [Benutzeroberfläche testen](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/hobbes.html):
+Die Schritte zum Testen Ihrer AEM adaptiven Formulare ähneln den Schritten zum Testen Ihrer AEM Benutzeroberfläche. Weitere Informationen zum Testen Ihrer adaptiven Formulare finden Sie in den folgenden Themen in [Testen der Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-3/sites-developing/hobbes.html):
 
 * Anzeigen von Test-Suites
 * Ausführen mehrerer Tests
@@ -319,20 +323,20 @@ Die Schritte zum Testen Ihrer adaptiven AEM-Formulare sind ähnlich den Schritte
    <td><strong>Beschreibung</strong></td> 
   </tr> 
   <tr> 
-   <td><p>Testsuite</p> </td> 
-   <td><p>Eine Testsuite ist eine Sammlung zusammengehöriger Testfälle.</p> </td> 
+   <td><p>Test Suite</p> </td> 
+   <td><p>Eine Test-Suite ist eine Sammlung verwandter Testfälle.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Testfall</p> </td> 
-   <td><p>Ein Testfall stellt eine Aufgabe dar, die ein Benutzer mithilfe der Benutzeroberfläche ausführt. Fügen Sie Testfälle zu Ihrer Testsuite hinzu, um die Aktivitäten zu testen, die Benutzer ausführen.</p> </td> 
+   <td><p>Ein Testfall stellt eine Aufgabe dar, die ein Benutzer über Ihre Benutzeroberfläche ausführt. Fügen Sie Ihrer Test-Suite Testfälle hinzu, um die Aktivitäten zu testen, die Benutzer durchführen.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Aktionen</p> </td> 
-   <td><p>Aktionen sind Methoden, die eine Geste auf der Benutzeroberfläche ausführen, wie z. B. das Klicken auf eine Schaltfläche oder das Füllen eines Eingabefeldes mit einem Wert.</p> <p>Die Methoden der Klassen hobs.actions.Assets, hobs.actions.Core und hobs.utils.af sind Aktionen, die Sie in Ihren Tests verwenden können. Alle Aktionen werden synchron ausgeführt.</p> </td> 
+   <td><p>Aktionen sind Methoden, die in der Benutzeroberfläche eine Geste ausführen, z. B. das Klicken auf eine Schaltfläche oder das Füllen eines Eingabefelds mit einem Wert.</p> <p>Die Methoden der Klassen hobs.actions.Assets, hobs.actions.Core und hobs.utils.af sind Aktionen, die Sie in Ihren Tests verwenden können. Alle Aktionen werden synchron ausgeführt.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Autoren- oder Veröffentlichungsumgebung</p> </td> 
-   <td><p>Im Allgemeinen können Formulare entweder im Autoren- oder im Veröffentlichungsumgebung getestet werden. Im Falle der Veröffentlichungsumgebung ist der Zugriff auf die Testausführung standardmäßig eingeschränkt. Dies liegt daran, dass alle Client-Bibliotheken, die mit dem Test-Runner in Verbindung stehen, innerhalb der /libs in der JCR-Struktur liegen.</p> </td> 
+   <td><p>Im Allgemeinen können Formulare entweder in der Autoren- oder Veröffentlichungsumgebung getestet werden. Im Falle einer Veröffentlichungsumgebung ist standardmäßig der Zugriff auf die Ausführung des Tests eingeschränkt. Dies liegt daran, dass sich alle Client-Bibliotheken, die mit dem Test-Runner verbunden sind, in der JCR-Struktur unter /libs befinden.</p> </td> 
   </tr> 
  </tbody> 
 </table>

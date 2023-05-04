@@ -6,18 +6,22 @@ seo-description: Resources for best practices, troubleshooting and training for 
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: ba222869-1268-481d-b342-27ea12b15999
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 96%
+source-wordcount: '445'
+ht-degree: 81%
 
 ---
 
 # Best Practices für AEM 6.4 {#aem-64-best-practices}
 
-## Wo erfahre ich mehr über Training oder Schulungen für AEM? {#training}
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Adobe bietet hilfreiche Ressourcen, die Ihnen dabei helfen, AEM optimal zu nutzen.
+## Wo erhalte ich weitere Informationen über AEM? {#training}
+
+Adobe verfügt über eine Reihe wichtiger Ressourcen, mit denen Sie das Beste aus AEM erhalten.
 
 * [Unseren offiziellen AEM-Trainings-Katalog finden Sie hier.](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1)
 * Wenn Sie sich für AEM zertifizieren lassen möchten, [finden Sie hier unseren Leitfaden zu offiziellen AEM-Zertifizierungen.](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)
@@ -39,7 +43,7 @@ Die AEM-Community erstellt ständig Beispiel-Workflows, Übungen und Code-Beispi
 
 ## Erste-Schritte-Handbücher für verschiedene AEM-Funktionen {#getting-started}
 
-AEM wird vielseitig in Unternehmen eingesetzt und verfügt über vielfältige Funktionen für verschiedenste Unternehmensbereiche. Für einen ersten Überblick eignen sich unsere Einstiegsanleitungen:
+AEM wird vielseitig in Unternehmen eingesetzt und verfügt über vielfältige Funktionen für verschiedenste Unternehmensbereiche. Wenn Sie die ersten Schritte untersuchen möchten, können Sie unsere Erste-Schritte-Handbücher besuchen:
 
 * [AEM Platform und Sites – Erste Schritte](/help/sites-deploying/deploy.md#getting-started)
 * [Erste Schritte mit AEM Forms](/help/forms/using/introduction-aem-forms.md)

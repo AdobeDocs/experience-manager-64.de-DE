@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 role: Developer
 exl-id: d4e40d68-781d-4fc8-8557-bf36462ca1d9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1775'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 98%
 
 ---
 
 # Zusammenstellen von nicht interaktiven PDF-Dokumenten {#assembling-non-interactive-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Sie können ein nicht interaktives PDF-Dokument zusammenstellen, wenn Sie ein interaktives PDF-Formular als Eingabe verwenden. Angenommen, Sie verfügen über ein Formular, mit dem Benutzer Daten in die Felder eingeben können. Sie können dieses Formular an den Assembler-Dienst übergeben, was dazu führt, dass der Assembler-Dienst ein PDF-Dokument zurückgibt, das die Eingabe von Daten durch Benutzer verhindert. Dieses Dokument ist ein nicht interaktives PDF-Formular. Die folgende Abbildung zeigt beispielsweise einen Hypothekenantrag, der ein interaktives Formular darstellt.
 

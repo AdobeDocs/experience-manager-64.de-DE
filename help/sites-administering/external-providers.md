@@ -1,7 +1,7 @@
 ---
 title: Analyse mit externen Anbietern
 seo-title: Analytics with External Providers
-description: Erfahren Sie mehr über Analyse mit externen Anbietern.
+description: Erfahren Sie mehr über Analytics mit externen Anbietern.
 seo-description: Learn about Analytics with External Providers.
 uuid: bea8ec38-a190-46f9-a5fa-8d65321fdf20
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
 exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 97%
+source-wordcount: '478'
+ht-degree: 67%
 
 ---
 
 # Analyse mit externen Anbietern{#analytics-with-external-providers}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Analysen können Ihnen wichtige und interessante Informationen darüber liefern, wie Ihre Website verwendet wird.
 
@@ -26,9 +30,9 @@ Verschiedene vordefinierte Konfigurationen stehen Ihnen zur Integration in den e
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Sie können auch Ihre eigene Instanz der **generischen Analyse-Snippets** konfigurieren, um neue Dienstkonfigurationen zu definieren.
+Sie können auch Ihre eigene Instanz der **Allgemeine Analytics-Snippets** , um neue Dienstkonfigurationen zu definieren.
 
-Die Informationen werden dann mithilfe von kleinen Code-Snippets erfasst, die den Webseiten hinzugefügt werden. Beispiel:
+Die Informationen werden dann mithilfe kleiner Codefragmente erfasst, die den Webseiten hinzugefügt werden. Beispiel:
 
 >[!CAUTION]
 >
@@ -46,12 +50,12 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-Diese Snippets ermöglichen die Erfassung von Daten und Generierung von Berichten. Welche Daten tatsächlich erfasst werden, hängt vom Anbieter und dem tatsächlich verwendeten Code-Snippet ab. Beispielstatistiken beinhalten Folgendes:
+Diese Snippets ermöglichen die Erfassung von Daten und die Erstellung von Berichten. Die tatsächlichen erfassten Daten hängen vom Provider und dem tatsächlich verwendeten Codeausschnitt ab. Zu den Beispielstatistiken gehören:
 
-* Anzahl der Besucher in einem bestimmten Zeitraum
-* Anzahl der besuchten Seiten
-* Verwendete Suchbegriffe
-* Einstiegsseiten
+* wie viele Besucher im Laufe der Zeit
+* wie viele Seiten besucht wurden
+* verwendete Suchbegriffe
+* Landingpages
 
 >[!CAUTION]
 >
@@ -105,9 +109,9 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-   Das Snippet wird nun angezeigt, wenn Sie die Seitenquelle für die Seite anzeigen.
+   Das Snippet kann jetzt angezeigt werden, wenn Sie die Seitenquelle für die Seite anzeigen.
 
-   Nach Ablauf einer gewissen Zeitspanne können Sie die Statistiken anzeigen, die erfasst wurden.
+   Nach Ablauf eines angemessenen Zeitraums können Sie die gesammelten Statistiken anzeigen.
 
    >[!NOTE]
    >

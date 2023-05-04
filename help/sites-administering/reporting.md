@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2862'
-ht-degree: 63%
+source-wordcount: '2898'
+ht-degree: 62%
 
 ---
 
 # Reporting {#reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, bietet AEM eine Auswahl von Standardberichten, die für Ihre individuellen Anforderungen konfiguriert werden können:
 

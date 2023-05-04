@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
 exl-id: ee8f5f16-218a-41eb-be42-fda4537b2b4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 100%
+source-wordcount: '464'
+ht-degree: 93%
 
 ---
 
 # Schnellstart für die LiveCycleProcess-Java-API (SOAP) {#livecycleprocess-java-api-soap-quick-start}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Der Schnellstart für die Java-API (SOAP) ist für Prozesse verfügbar. Eine *Prozessinstanz* ist ein Auftreten eines bestimmten Prozesses, der von einer Aufrufmethode wie der Aufruf-API oder aus dem Arbeitsbereich heraus gestartet wurde.
 

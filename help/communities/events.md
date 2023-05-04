@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 exl-id: 3f7d1b95-729a-4c55-af96-efdb9617d333
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 5%
+source-wordcount: '701'
+ht-degree: 6%
 
 ---
 
 # OSGi-Ereignisse für Communities-Komponenten {#osgi-events-for-communities-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -36,7 +40,7 @@ SocialEvent `topic`= com/adobe/cq/social/calendar
 |---|---|
 | POST | Mitglied erstellt ein Kalenderereignis |
 | HINZUFÜGEN | Mitgliederkommentare für ein Kalenderereignis |
-| UPDATE | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
+| AKTUALISIEREN | Kalenderereignis oder -kommentar eines Mitglieds wird bearbeitet |
 | LÖSCHEN | Kalenderereignis oder -kommentar eines Mitglieds wird gelöscht |
 
 [Kommentarkomponente](essentials-comments.md)
@@ -121,7 +125,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **Verb** | **Beschreibung** |
 |---|---|
-| DENY | Inhalt des Mitglieds wird verweigert |
+| ABLEHNEN | Inhalt des Mitglieds wird verweigert |
 | FLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds wird gekennzeichnet |
 | UNFLAG-AS-INAPPROPRIATE | Inhalt des Mitglieds ist unmarkiert |
 | AKZEPT | Der Inhalt des Mitglieds wird vom Moderator genehmigt |

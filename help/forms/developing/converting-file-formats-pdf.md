@@ -11,20 +11,24 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 79091a75-2669-453f-9560-e58bfffa3487
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '7872'
-ht-degree: 97%
+source-wordcount: '7908'
+ht-degree: 95%
 
 ---
 
 # Zwischen Dateiformaten und PDF konvertieren {#converting-between-file-formatsand-pdf}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 **Über Generate PDF-Dienst**
 
-Der Generate PDF-Dienst kann zahlreiche native Dateiformate in PDF konvertieren. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren.
+Der Generate PDF-Dienst konvertiert native Dateiformate in PDF. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren.
 
-Der Generate PDF-Dienst verwendet native Anwendungen, um die folgenden Dateiformate in PDF zu konvertieren. Sofern nicht anders aufgeführt, werden nur die deutschen, französischen, englischen und japanischen Versionen dieser Anwendungen unterstützt. *Nur Windows* bedeutet, dass nur Windows Server® 2003 und Windows Server 2008 unterstützt werden.
+Der Generate PDF-Dienst verwendet native Programme, um die folgenden Dateiformate in PDF zu konvertieren. Sofern nicht anders angegeben, werden nur die deutsche, französische, englische und japanische Version dieser Anwendungen unterstützt. *Nur Windows* bedeutet, dass nur Windows Server® 2003 und Windows Server 2008 unterstützt werden.
 
 * Microsoft Office 2003 und 2007 zum Konvertieren von DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS und PUB (nur Windows)
 
@@ -48,29 +52,29 @@ Der Generate PDF-Dienst verwendet native Anwendungen, um die folgenden Dateiform
 
 * Adobe FrameMaker® 7.2 zum Konvertieren von FM (nur Windows)
 * Adobe PageMaker® 7.0 zum Konvertieren von PMD, PM6, P65 und PM (nur Windows)
-* Native Formate, die von Drittanbieteranwendungen unterstützt werden (erfordert Entwicklung von Setup-Dateien speziell für die Anwendung) (nur Windows)
+* Native Formate, die von Drittanbieteranwendungen unterstützt werden (erfordert die Entwicklung von Setupdateien, die spezifisch für die Anwendung sind) (nur Windows)
 
-Der Generate PDF-Dienst kann folgende standardbasierte Dateiformate in PDF konvertieren.
+Der Generate PDF-Dienst konvertiert die folgenden standardbasierten Dateiformate in PDF.
 
 * Videoformate: SWF, FLV (nur Windows)
 * Bildformate: JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
 * HTML (Windows, Sun™ Solaris™ und Linux®)
 
-Der Generate PDF-Dienst kann PDF-Dateien in die folgenden Dateiformate konvertieren (nur Windows):
+Der Generate PDF-Dienst konvertiert PDF in die folgenden Dateiformate (nur Windows):
 
 * Encapsulated PostScript (EPS)
 * HTML 3.2
 * HTML 4.01 mit CSS 1.0
 * DOC (Microsoft Word-Format)
 * RTF
-* Text (sowohl barrierefrei als auch unverschlüsselt)
+* Text (sowohl barrierefrei als auch einfach)
 * XML
 * PDF/A-1a, das nur den DeviceRGB-Farbraum verwendet
 * PDF/A-1b, das nur den DeviceRGB-Farbraum verwendet
 
-Der Generate PDF-Dienst erfordert die Ausführung der folgenden Verwaltungsaufgaben:
+Für den Generate PDF-Dienst müssen Sie die folgenden Verwaltungsaufgaben ausführen:
 
-* Installieren der erforderlichen nativen Anwendungen auf dem Computer, der als Host für AEM Forms dient
+* Installieren Sie die erforderlichen nativen Anwendungen auf dem Computer, auf dem AEM Forms gehostet wird
 * Installieren Sie Adobe Acrobat Professional oder Acrobat Pro Extended 9.2 auf dem Computer, der als Host für AEM Forms dient
 * Ausführen von Einrichtungsaufgaben nach der Installation
 

@@ -8,15 +8,19 @@ uuid: 5bcfb5d8-37d4-4a0e-882d-bc8a1bac6ba7
 contentOwner: AEM Docs
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '622'
 ht-degree: 13%
 
 ---
 
 
 # NICHT VERÖFFENTLICHEN, ABER KEIN DELETE ZUM Anpassen von Inhaltsfragmentmodellen{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Der Inhaltsfragmentmodell-Editor ist ein Assistent, der auf `Formbuilder`, geerbt von:
 
@@ -119,5 +123,5 @@ Wenn ein Datentyp instanziiert wird, werden HTML-Eingaben für jede Eigenschaft 
 
 * **Beschreibung** ( `fieldDescription`) - Beschreibung der Komponente im Inhaltsfragment
 
-* und mehr.
+* und andere.
 

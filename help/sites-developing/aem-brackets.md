@@ -10,14 +10,18 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 5924d38b-243e-4a81-85b6-9ff89ae4c811
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 100%
+source-wordcount: '960'
+ht-degree: 70%
 
 ---
 
 # AEM Brackets-Erweiterung{#aem-brackets-extension}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -27,34 +31,34 @@ Die AEM Brackets-Erweiterung bietet einen reibungslosen Workflow für die Bearbe
 
 ### Funktionen {#features}
 
-Die Hauptmerkmale der AEM Brackets-Erweiterung sind:
+Die wichtigsten Funktionen der AEM Brackets-Erweiterung sind:
 
 * Automatische Synchronisierung geänderter Dateien mit der AEM-Entwicklungsinstanz
 * Manuelle bidirektionale Synchronisierung von Dateien und Ordnern
 * Vollständige Content-Package-Synchronisierung des Projekts
 * HTL-Code-Vervollständigung für Ausdrücke und `data-sly-*`-Blockanweisungen.
 
-Zusätzlich bietet Brackets viele nützliche Funktionen für AEM-Frontend-Entwickler:
+Zusätzlich bietet Brackets viele nützliche Funktionen für AEM Schriftartentwickler:
 
-* Photoshop-Dateiunterstützung zum Extrahieren von Informationen aus einer PSD-Datei, wie Schichten, Maße, Farben, Schriftarten, Texte usw.
-* Codehinweise aus der PSD, um diese extrahierten Informationen im Code einfach wiederzuverwenden.
+* Photoshop-Dateiunterstützung zum Extrahieren von Informationen aus einer PSD-Datei wie Ebenen, Messungen, Farben, Schriftarten, Texten usw.
+* Codehinweise von der PSD, um diese extrahierten Informationen im Code einfach wiederzuverwenden.
 * CSS-Präprozessor-Unterstützung wie LESS und SCSS.
-* Und Hunderte zusätzlicher Erweiterungen, die spezifischere Anforderungen abdecken.
+* Hunderte von zusätzlichen Erweiterungen, die spezifischere Anforderungen abdecken.
 
 ## Installation {#installation}
 
 ### Brackets {#brackets}
 
-Die AEM Brackets-Erweiterung unterstützt Brackets Version 1.0 oder höher.
+Die AEM Brackets-Erweiterung unterstützt Brackets-Version 1.0 oder höher.
 
 Laden Sie die neueste Brackets-Version von [brackets.io](https://brackets.io/) herunter.
 
 ### Die Erweiterung {#the-extension}
 
-Um die Erweiterung zu installieren, gehen Sie wie folgt vor:
+So installieren Sie die Erweiterung:
 
-1. Öffnen Sie Brackets. Wählen Sie im Menü **Datei** den **Extension Manager...**
-1. Geben Sie **AEM** in die Suchleiste ein und suchen Sie nach **AEM Brackets-Erweiterung**.
+1. Öffnen Sie Brackets. Im Menü **Datei** auswählen **Extension Manager...**
+1. Eingabe **AEM** in der Suchleiste und suchen Sie nach **AEM Brackets-Erweiterung**.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -63,11 +67,11 @@ Um die Erweiterung zu installieren, gehen Sie wie folgt vor:
 
 ## Erste Schritte {#getting-started}
 
-### Das Content-Package-Projekt {#the-content-package-project}
+### Das Inhaltspaket-Projekt {#the-content-package-project}
 
-Nachdem die Erweiterung installiert wurde, können Sie mit der Entwicklung von AEM-Komponenten beginnen, indem Sie mit Brackets einen content-package-Ordner aus Ihrem Dateisystem öffnen.
+Nachdem die Erweiterung installiert wurde, können Sie mit der Entwicklung AEM Komponenten beginnen, indem Sie mit Brackets einen Ordner mit Inhaltspaketen aus Ihrem Dateisystem öffnen.
 
-Das Projekt muss mindestens enthalten:
+Das Projekt muss mindestens Folgendes enthalten:
 
 1. einen Ordner `jcr_root` (z. B. `myproject/jcr_root`)
 
@@ -98,11 +102,11 @@ Die Projekteinstellungen erlauben die Definition von Folgendem:
 
 Die AEM Brackets-Erweiterung bietet folgende Arten der Inhaltssynchronisierung für Dateien und Ordner, die von den in `filter.xml` definierten Filterregeln zugelassen sind:
 
-### Automatisierte Synchronisierung von geänderten Dateien {#automated-synchronization-of-changed-files}
+### Automatisierte Synchronisierung geänderter Dateien {#automated-synchronization-of-changed-files}
 
-Diese synchronisiert nur Änderungen von Brackets mit der AEM-Instanz, aber niemals umgekehrt.
+Dadurch werden nur Änderungen von Brackets mit der AEM-Instanz synchronisiert, aber nie umgekehrt.
 
-### Manuelle bidirektionale Synchronisierung {#manual-bidirectional-synchronization}
+### Manuelle bidirektionale Synchronisation {#manual-bidirectional-synchronization}
 
 Öffnen Sie im Projekt-Explorer das Kontextmenü, indem Sie mit der rechten Maustaste auf eine Datei oder einen Ordner klicken. Dort können Sie auf die Optionen **Auf Server exportieren** oder **Von Server importieren** zugreifen.
 
@@ -120,14 +124,14 @@ Im Menü **AEM** können Sie mit den Optionen **Content-Package exportieren** od
 
 ### Synchronisierungsstatus {#synchronization-status}
 
-Die AEM Brackets-Erweiterung verfügt über ein Benachrichtigungssymbol in der Symbolleiste rechts im Fenster „Brackets“, das den Status der letzten Synchronisierung angibt:
+Die AEM Brackets-Erweiterung verfügt über ein Benachrichtigungssymbol in der Symbolleiste rechts neben dem Brackets-Fenster, das den Status der letzten Synchronisation angibt:
 
 * grün - alle Dateien wurden erfolgreich synchronisiert
-* blau - eine Synchronisierung wird ausgeführt
+* blau - Synchronisierungsvorgang wird ausgeführt
 * gelb - einige der Dateien wurden nicht synchronisiert
-* rot - keine Dateien wurden synchronisiert
+* rot - keine der Dateien wurde synchronisiert
 
-Wenn Sie auf das Benachrichtigungssymbol klicken, wird das Dialogfeld „Synchronisierungsstatusbericht“ geöffnet, das den Status aller synchronisierten Dateien anzeigt.
+Wenn Sie auf das Benachrichtigungssymbol klicken, wird das Dialogfeld Synchronisierungsstatus-Bericht geöffnet, in dem alle Status für jede synchronisierte Datei aufgelistet werden.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -144,9 +148,9 @@ Die AEM Brackets-Erweiterung bietet auch eine automatische Vervollständigung, u
 ### Automatische Vervollständigung von Attributen {#attribute-auto-completion}
 
 1. Geben Sie in einem HTML-Attribut `sly` ein. Das Attribut wird automatisch zu `data-sly-` vervollständigt.
-1. Wählen Sie das HTL-Attribut in der Dropdown-Liste aus.
+1. Wählen Sie in der Dropdown-Liste das HTL-Attribut aus.
 
-### Automatische Vervollständigung von Ausdrücken {#expression-auto-completion}
+### Ausdruck - Automatische Vervollständigung {#expression-auto-completion}
 
 Innerhalb eines `${}`-Ausdrucks werden allgemeine Variablennamen automatisch vervollständigt.
 

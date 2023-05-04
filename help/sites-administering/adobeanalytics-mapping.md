@@ -1,7 +1,7 @@
 ---
 title: Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften
 seo-title: Mapping Component Data with Adobe Analytics Properties
-description: Erfahren Sie, wie Sie Komponentendaten zu SiteCatalyst-Eigenschaften zuordnen.
+description: Erfahren Sie, wie Sie Komponentendaten mit SiteCatalyst-Eigenschaften zuordnen.
 seo-description: Learn how to map component data with SiteCatalyst properties.
 uuid: accdb0e8-957c-4617-9a8d-eccc24ac436e
 contentOwner: User
@@ -10,16 +10,20 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 2a9be3b7-b325-4d74-a5bc-8d24db491920
 exl-id: 04adbbc9-9e4c-4c64-aab1-20b17bd75bb5
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 93%
+source-wordcount: '1479'
+ht-degree: 62%
 
 ---
 
 # Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften{#mapping-component-data-with-adobe-analytics-properties}
 
-Fügen Sie Komponenten zum Framework hinzu, die Daten sammeln, um sie an Adobe Analytics zu senden. Komponenten zur Sammlung von Analysedaten speichern die Daten in der entsprechenden **CQ-Variablen**. Wenn Sie solch eine Komponente zu einem Framework hinzufügen, zeigt das Framework die Liste der CQ-Variablen an, sodass Sie jede Variable der entsprechenden **Analytics-Variablen** zuordnen können.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Fügen Sie Komponenten zum Framework hinzu, die die Daten erfassen, die an Adobe Analytics gesendet werden sollen. Komponenten, die zum Sammeln von Analysedaten entwickelt wurden, speichern die Daten in den entsprechenden **CQ-Variable**. Wenn Sie solch eine Komponente zu einem Framework hinzufügen, zeigt das Framework die Liste der CQ-Variablen an, sodass Sie jede Variable der entsprechenden **Analytics-Variablen** zuordnen können.
 
 ![aa-11](assets/aa-11.png)
 
@@ -34,7 +38,7 @@ Sie können auch mehrere Analytics-Variablen derselben **CQ-Variablen** zuordnen
 Die zugeordneten Daten werden an Adobe Analytics gesendet, wenn die Seite geladen wird und die folgenden Bedingungen erfüllt sind:
 
 * Die Seite ist mit dem Framework verknüpft.
-* Die Seite nutzt die Komponenten, die zum Framework hinzugefügt werden.
+* Die Seite verwendet die Komponenten, die dem Framework hinzugefügt werden.
 
 Mit der folgenden Vorgehensweise können Sie Variablen von CQ-Komponenten den Eigenschaften von Adobe Analytics-Berichten zuordnen.
 
@@ -42,7 +46,7 @@ Mit der folgenden Vorgehensweise können Sie Variablen von CQ-Komponenten den Ei
 
    ![aa-13](assets/aa-13.png)
 
-   Es gibt mehrere standardmäßige Komponentengruppen: **Allgemein**, **Handel**, **Communities** und **Sonstiges**. Je nach Konfiguration zeigt Ihre AEM-Instanz möglicherweise andere Gruppen und Komponenten an.
+   Es gibt mehrere Standard-Komponentengruppen: **Allgemein**, **Commerce**, **Communities** und **Andere**. Je nach Konfiguration zeigt Ihre AEM-Instanz möglicherweise andere Gruppen und Komponenten an.
 
 1. Um Adobe Analytics-Variablen den Variablen zuzuordnen, die in der Komponente definiert sind, ziehen Sie eine **Analytics-Variable** vom Content Finder in ein Feld auf der Tracking-Komponente. Ziehen Sie beispielsweise `Page Name (pageName)` auf `pagedata.title`.
 
@@ -110,23 +114,23 @@ Wenn Sie eine RSID auswählen, werden alle zu dieser RSID gehörenden Variablen 
 
 Je nach für das Framework ausgewählter Ansicht enthält der Content Finder entweder Analytics-Variablen (in der AEM-Ansicht) oder CQ-Variablen (in der Analytics-Ansicht).
 
-Sie können mit der Liste wie folgt arbeiten:
+Die Liste kann wie folgt bearbeitet werden:
 
-1. In der **AEM-Ansicht** können Sie abhängig vom ausgewählten Variablentyp die Liste mit drei Filterschaltflächen filtern:
+1. Wann **AEM** kann die Liste anhand der drei Filterschaltflächen nach ausgewähltem Variablentyp gefiltert werden:
 
    * Wenn die *Schaltfläche „Nein“* ausgewählt ist, wird die komplette Liste angezeigt.
    * Wenn die Schaltfläche **Traffic** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich „Traffic“ gehören
    * Wenn die Schaltfläche **Konversion** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich „Konversion“ gehören.
-   * Wenn die Schaltfläche **Ereignisse** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich „Ereignisse“ gehören.
+   * Wenn die Variable **Veranstaltungen** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich Ereignisse gehören.
 
    >[!NOTE]
    >
    >Sie können immer nur eine Filterschaltfläche aktivieren.
 
-   1. Die Liste bietet auch eine Suchfunktion, die die Elemente entsprechend dem im Suchfeld eingegebenen Text filtert.
-   1. Wenn bei der Suche nach Elementen in der Liste eine Filteroption aktiviert ist, werden auch die angezeigten Ergebnisse gemäß der aktivierten Schaltfläche gefiltert.
-   1. Über die Schaltfläche mit den runden Pfeilen können Sie die Liste jederzeit neu laden.
-   1. Wenn Sie mehrere RSIDs im Framework auswählen, werden alle Variablen in der Liste angezeigt. Dabei werden alle Beschriftungen verwendet, die in den ausgewählten RSIDs genutzt werden.
+   1. Die Liste verfügt außerdem über eine Suchfunktion, mit der die Elemente nach dem im Suchfeld eingegebenen Text gefiltert werden.
+   1. Wenn bei der Suche nach Elementen in der Liste eine Filteroption aktiviert ist, werden die angezeigten Ergebnisse auch nach der aktiven Schaltfläche gefiltert.
+   1. Die Liste kann jederzeit mit der Schaltfläche mit den kreisförmigen Pfeilen neu geladen werden.
+   1. Wenn mehrere RSIDs im Framework ausgewählt sind, werden alle Variablen in der Liste mit allen Beschriftungen angezeigt, die innerhalb der ausgewählten RSIDs verwendet werden.
 
 
 1. In der Adobe Analytics-Ansicht zeigt der Content Finder alle CQ-Variablen an, die zu den Tracking-Komponenten gehören, die in die CQ-Ansicht gezogen wurden.
@@ -146,29 +150,29 @@ Sie können mit der Liste wie folgt arbeiten:
 
 Auf einer Framework-Seite können Benutzende jederzeit zwischen zwei Ansichten der Adobe Analytics-Zuordnungen wechseln. Diese beiden Ansichten bieten mit ihren beiden unterschiedlichen Perspektiven einen besseren Überblick über die Zuordnungen im Framework.
 
-### AEM-Ansicht {#aem-view}
+### AEM {#aem-view}
 
 ![aa-23](assets/aa-23.png)
 
-Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigenschaften:
+Wenn Sie das obige Bild als Beispiel verwenden, wird das **AEM** weist die folgenden Eigenschaften auf:
 
-1. Dies ist die Standardansicht, wenn das Framework geöffnet wird.
+1. Dies ist die Standardansicht beim Öffnen des Frameworks.
 1. Linke Seite: Der Content Finder (cf#) zeigt basierend auf den ausgewählten RSIDs die Adobe Analytics-Variablen an.
 1. Registerkartenkopfzeilen (**AEM-Ansicht** und **Analytics-Ansicht**): Verwenden Sie diese, um zwischen den beiden Ansichten zu wechseln.
 
 1. **AEM-Ansicht**:
 
-   1. Wenn das Framework Komponenten enthält, die vom übergeordneten Framework vererbt wurden, werden sie hier aufgeführt, zusammen mit den Variablen, die den Komponenten zugeordnet sind.
+   1. Wenn das Framework Komponenten enthält, die von seinem übergeordneten Framework vererbt werden, werden sie hier aufgeführt, zusammen mit den den Komponenten zugeordneten Variablen.
 
       1. Vererbte Komponenten sind gesperrt.
-      1. Um eine geerbte Komponente zu entsperren, doppelklicken Sie einfach auf das Schlosssymbol neben dem Namen der Komponente.
-      1. Um die Vererbung rückgängig zu machen, müssen Sie die entsperrte Komponente löschen. Sie erhält daraufhin den Status „gesperrt“ zurück.
-   1. **Ziehen Sie Komponenten in diesen Bereich, um sie zum Analytics-Framework hinzuzufügen**: Komponenten können aus dem Sidekick hierhin gezogen werden.
-   1. Hier finden Sie alle Komponenten, die derzeit im Analytics-Framework enthalten sind:
+      1. Um eine geerbte Komponente zu entsperren, doppelklicken Sie einfach auf das Vorhängeschloss neben dem Namen der Komponente
+      1. Um die Vererbung wiederherzustellen, müssen Sie die entsperrte Komponente löschen. danach wird er wieder gesperrt.
+   1. **Komponenten hierher ziehen, um sie in das Analytics-Framework einzuschließen**: Komponenten können aus dem Sidekick gezogen und hier abgelegt werden.
+   1. Sie finden alle Komponenten, die derzeit im Analytics-Framework enthalten sind:
 
-      1. Um eine Komponente hinzuzufügen, ziehen Sie sie aus der Registerkarte „Komponenten“ vom Sidekick in das Framework.
+      1. Um eine Komponente hinzuzufügen, ziehen Sie sie aus der Registerkarte Komponenten des Sidekicks
       1. Um eine Komponente und alle zugehörigen Zuordnungen zu löschen, wählen Sie im Kontextmenü der Komponente die Option „Löschen“ und akzeptieren Sie den Löschvorgang im Bestätigungsdialogfeld.
-      1. Beachten Sie, dass Sie eine Komponente nur aus dem Framework löschen können, in dem sie erstellt wurde, und sie nicht im eigentlichen Sinne aus untergeordneten Frameworks löschen können. (Sie können sie dort nur überschreiben.)
+      1. Beachten Sie, dass eine Komponente nur aus dem Framework gelöscht werden kann, in dem sie erstellt wurde, und nicht aus untergeordneten Frameworks im herkömmlichen Sinne gelöscht werden kann (sie kann nur überschrieben werden).
 
 
 ### Analytics-Ansicht {#analytics-view}
@@ -176,15 +180,15 @@ Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigensc
 ![aa-24](assets/aa-24.png)
 
 1. Um auf diese Ansicht zuzugreifen, wechseln Sie im Framework zur Registerkarte **Analytics-Ansicht**.
-1. Linke Seite: Content Finder (cf#) mit CQ-Variablen, basierend auf den Komponenten, die in der CQ-Ansicht zum Framework hinzugefügt wurden.
+1. Linke Seite: Content Finder (cf#) wird von CQ-Variablen basierend auf den Komponenten, die in der CQ-Ansicht auf das Framework gezogen wurden, gefüllt.
 1. Registerkartenkopfzeilen (**AEM-Ansicht** und **Analytics-Ansicht**): Verwenden Sie diese, um zwischen den beiden Ansichten zu wechseln.
 
-1. In den drei Tabellen („Traffic“, „Konversion“, „Ereignis“) sind alle verfügbaren Adobe Analytics-Variablen aufgeführt, die zu den ausgewählten RSIDs gehören. Die hier angezeigten Zuordnungen sollten dieselben sein wie in der AEM-Ansicht:
+1. In den drei Tabellen („Traffic“, „Konversion“, „Ereignis“) sind alle verfügbaren Adobe Analytics-Variablen aufgeführt, die zu den ausgewählten RSIDs gehören. Die hier gezeigten Zuordnungen sollten mit denen in der AEM übereinstimmen:
 
    * **Traffic**:
 
       * Traffic-Variable (`prop1`), die einer CQ-Variablen (`eventdata.downloadLink`) zugeordnet ist
-      * Wenn neben der Komponente ein Schlosssymbol angezeigt wird, weist dies darauf hin, dass die Komponente von einem übergeordneten Framework geerbt wurde und daher nicht bearbeitet werden kann.
+      * Wenn neben der Komponente ein Vorhängeschloss steht, bedeutet dies, dass sie von einem übergeordneten Framework übernommen wird und daher nicht bearbeitet werden kann
    * **Konversion**:
 
       * Konversionsvariable (`eVar1`), die einer CQ-Variablen (`pagedata.title`) zugeordnet ist
@@ -197,7 +201,7 @@ Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigensc
 
 >[!NOTE]
 >
->Die Spalte der CQ-Variablen in jeder Tabelle kann auch inline ausgefüllt werden, indem auf das Feld doppelgeklickt und dann der gewünschte Text eingegeben wird. Diese Felder akzeptieren JavaScript als Eingabe.
+>Die Spalte &quot;CQ-Variable&quot;einer beliebigen Tabelle kann auch inline ausgefüllt werden, indem Sie auf das Feld doppelklicken und Text hinzufügen. Diese Felder akzeptieren JavaScript als Eingabe.
 >
 >* z. B. neben `prop3` können Sie
 >* `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\

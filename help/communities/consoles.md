@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: f31072dc-ad2d-4f2d-b222-05d7fb19e471
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 2%
+source-wordcount: '377'
+ht-degree: 3%
 
 ---
 
 # Communities-Konsolen {#communities-consoles}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die AEM Communities-Konsolen, die im globalen Navigationsbereich in der Autorenumgebung verfügbar sind, bieten Zugriff auf Verwaltungsaufgaben wie
 
@@ -73,6 +77,6 @@ Um auf die verschiedenen Communities-Konsolen zuzugreifen, wählen Sie in der gl
 
    In der Ressourcenkonsole [Aktivierungsmanager](enablement.md#communitymanagers) Erstellen, Verwalten und Zuweisen von Ressourcen zu Mitgliedern eines [Community-Site für Aktivierung](overview.md#enablement-community). Die Konsole ist nur in der Autorenumgebung verfügbar.
 
-## Konsole „Tools“ {#tools-console}
+## Tools-Konsole {#tools-console}
 
 So greifen Sie auf [Communities-Tools](tools.md) (ehemals Administration Console) aus der globalen Navigation: **[!UICONTROL Tools > Communities]**

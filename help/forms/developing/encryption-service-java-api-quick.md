@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
 exl-id: 3f287fb1-b1bb-4494-ad66-5addcc6ef2a8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 93%
+source-wordcount: '517'
+ht-degree: 88%
 
 ---
 
 # Java-API für Verschlüsselungs-Service – Schnellstart (SOAP) {#encryption-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 [Schnellstart (SOAP-Modus): Verschlüsseln eines PDF-Dokuments unter Verwendung der Java-API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 

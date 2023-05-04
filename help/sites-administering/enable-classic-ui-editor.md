@@ -1,7 +1,7 @@
 ---
 title: Bearbeiter
 seo-title: Editor
-description: Erfahren Sie, wie Sie zurück zum klassischen Benutzeroberflächen-Editor wechseln.
+description: Erfahren Sie, wie Sie zum klassischen UI-Editor zurückkehren.
 seo-description: Learn how to switch back to the Classic UI Editor.
 uuid: 78ba4db0-affa-4081-bf29-a3306720c968
 contentOwner: Chris Bohnert
@@ -10,20 +10,24 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 5fca5401-502d-483b-bfc1-ef53e2c041b7
 exl-id: 04a9c595-9a73-4a8a-99ae-c2292882338f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 100%
+source-wordcount: '138'
+ht-degree: 39%
 
 ---
 
 # Bearbeiter{#editor}
 
-Standardmäßig ist die Möglichkeit, zum klassischen Benutzeroberflächen-Editor zu wechseln, deaktiviert.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Standardmäßig wurde die Möglichkeit deaktiviert, vom Editor aus zur klassischen Benutzeroberfläche zu wechseln.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-Gehen Sie wie folgt vor, um im Menü **Seiteninformationen** die Option **In klassischer Benutzeroberfläche öffnen** wieder zu aktivieren.
+So aktivieren Sie die Option erneut **In klassischer Benutzeroberfläche öffnen** im **Seiteninformationen** Gehen Sie wie folgt vor.
 
 1. Suchen Sie mithilfe von CRXDE Lite den folgenden Knoten:
 
@@ -37,7 +41,7 @@ Gehen Sie wie folgt vor, um im Menü **Seiteninformationen** die Option **In kla
 
    * **Pfad**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Pfad für Überlagerung**: `/apps/`
-   * **Übereinstimmungstypen abgleichen**: aktiv (Kontrollkästchen aktivieren)
+   * **Knotentypen abgleichen**: active (aktivieren Sie das Kontrollkästchen)
 
 1. Fügen Sie die folgende Multiwert-Texteigenschaft zum überlagerten Knoten hinzu:
 

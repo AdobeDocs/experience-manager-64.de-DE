@@ -1,7 +1,7 @@
 ---
 title: Benutzerverwaltung und Sicherheit
 seo-title: User Administration and Security
-description: Erfahren Sie mehr über die Benutzerverwaltung und Sicherheit in AEM.
+description: Erfahren Sie mehr über Benutzerverwaltung und Sicherheit in AEM.
 feature: Security
 seo-description: Learn about User Administration and Security in AEM.
 uuid: f14619a1-d21f-465c-b79b-c98da1f1c016
@@ -11,45 +11,49 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a67b9e56-944d-424d-a64a-025f369faa5b
 exl-id: 1dd54d3f-419c-4c83-8cd8-4ae0e7feead2
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5422'
-ht-degree: 100%
+source-wordcount: '5458'
+ht-degree: 46%
 
 ---
 
 # Benutzerverwaltung und Sicherheit{#user-administration-and-security}
 
-Dieses Kapitel beschreibt, wie Benutzerautorisierungen konfiguriert und verwaltet werden, und erläutert zudem die Theorie, auf der Authentifizierungs- und Autorisierungsvorgänge in AEM basieren.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In diesem Kapitel wird beschrieben, wie die Benutzerautorisierung konfiguriert und verwaltet wird. Außerdem werden die Grundlagen für die Funktionsweise von Authentifizierung und Autorisierung in AEM beschrieben.
 
 ## Benutzer und Gruppen in AEM {#users-and-groups-in-aem}
 
-Dieser Abschnitt behandelt ausführlicher die verschiedenen Entitäten und verwandten Konzepte, um Sie beim Konfigurieren eines einfacheren Benutzerverwaltungsansatzes zu unterstützen.
+In diesem Abschnitt werden die verschiedenen Entitäten und verwandten Konzepte ausführlicher behandelt, damit Sie ein benutzerfreundliches Verwaltungskonzept konfigurieren können.
 
 ### Benutzer {#users}
 
-Benutzer melden sich mit ihrem Konto bei AEM an. Jedes Benutzerkonto ist eindeutig und umfasst die grundlegenden Kontodetails, zusammen mit den jeweils zugewiesenen Berechtigungen.
+Benutzer melden sich mit ihrem Konto bei AEM an. Jedes Benutzerkonto ist eindeutig und enthält die grundlegenden Kontodetails sowie die zugewiesenen Berechtigungen.
 
-Benutzer sind oft Mitglieder von Gruppen, was die Zuweisung dieser Berechtigungen und/oder Rechte vereinfacht.
+Benutzer sind häufig Mitglieder von Gruppen, was die Zuweisung dieser Berechtigungen und/oder Berechtigungen vereinfacht.
 
 ### Gruppen {#groups}
 
-Gruppen sind Sammlungen von Benutzern und/oder anderen Gruppen; sie werden allesamt als Mitglieder einer Gruppe bezeichnet.
+Gruppen sind Sammlungen von Benutzern und/oder anderen Gruppen; Diese werden alle als Mitglieder einer Gruppe bezeichnet.
 
-Sie sollen in erster Linie Verwaltungsvorgänge vereinfachen, indem die Anzahl der zu aktualisierenden Entitäten reduziert wird, wenn die Änderung an einer Gruppe für alle Mitglieder der Gruppe übernommen wird. Gruppen spiegeln häufig Folgendes wider:
+Ihr Hauptzweck besteht darin, den Wartungsvorgang zu vereinfachen, indem die Anzahl der zu aktualisierenden Entitäten verringert wird, da eine Änderung an einer Gruppe auf alle Mitglieder der Gruppe angewendet wird. Gruppen spiegeln häufig Folgendes wider:
 
-* Eine Rolle innerhalb die Anwendung; etwa ein Benutzer, der Inhalte durchsuchen darf, oder ein Benutzer, der Inhalte verteilen darf.
-* Ihre eigene Organisation; Sie sollten die Rollen ggf. erweitern, um zwischen Mitwirkenden aus verschiedenen Abteilungen unterscheiden zu können, wenn diese auf unterschiedliche Zweige in der Inhaltsstruktur beschränkt sind.
+* eine Rolle innerhalb der Anwendung; z. B. jemand, der den Inhalt surfen darf, oder jemand, der Inhalte hinzufügen darf.
+* Ihre eigene Organisation; Sie können die Rollen erweitern, um zwischen Mitwirkenden aus verschiedenen Abteilungen zu unterscheiden, wenn sie auf verschiedene Zweige in der Inhaltsstruktur beschränkt sind.
 
-Deshalb sind Gruppen an sich meist stabil, während Benutzer häufiger wechseln.
+Daher bleiben Gruppen meist stabil, während Benutzer häufiger kommen und gehen.
 
-Bei entsprechender Planung und einer sauberen Struktur kann die Verwendung von Gruppen Ihrer Struktur entsprechen, sodass Sie einen klaren Überblick haben und Ihnen ein effizienter Updatemechanismus zur Verfügung steht.
+Mit Planung und sauberer Struktur kann die Verwendung von Gruppen Ihre Struktur widerspiegeln, sodass Sie einen klaren Überblick und einen effizienten Mechanismus für Aktualisierungen erhalten.
 
 ### Integrierte Benutzer und Gruppen {#built-in-users-and-groups}
 
-AEM WCM installiert eine Reihe von Benutzern und Gruppen. Diese werden angezeigt, wenn Sie nach der Installation erstmalig auf die Sicherheitskonsole zugreifen.
+AEM WCM installiert eine Reihe von Benutzern und Gruppen. Diese werden angezeigt, wenn Sie nach der Installation zum ersten Mal auf die Sicherheitskonsole zugreifen.
 
-In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusammen mit:
+In den folgenden Tabellen sind die einzelnen Elemente zusammen mit aufgeführt:
 
 * einer kurzen Beschreibung;
 * etwaigen Empfehlungen zu erforderlichen Änderungen.
@@ -59,7 +63,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
 <table> 
  <tbody> 
   <tr> 
-   <td>Benutzer-ID</td> 
+   <td>Benutzer-ID </td> 
    <td>Typ</td> 
    <td>Beschreibung</td> 
    <td>Empfehlung</td> 
@@ -67,25 +71,25 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
   <tr> 
    <td><p>admin</p> <p>Standardkennwort: admin</p> </td> 
    <td>User</td> 
-   <td><p>Systemadministratorkonto mit vollen Zugriffsrechten.</p> <p>Dieses Konto dient zur Verbindung zwischen AEM WCM und CRX.</p> <p>Wenn Sie dieses Konto versehentlich löschen, wird es beim Neustart des Repositorys neu erstellt (bei Standardeinrichtung).</p> <p>Das Konto „admin“ ist eine Voraussetzung der AEM-Plattform. Folglich kann dieses Konto nicht gelöscht werden.</p> </td> 
-   <td><p>Adobe empfiehlt ausdrücklich, das für dieses Benutzerkonto vorhandene Standardkennwort zu ändern.</p> <p>Vorzugsweise sollte dies bei der Installation geschehen, es ist aber auch später möglich.</p> <p>Hinweis: Dieses Konto ist nicht mit dem Konto „admin“ der CQ Servlet Engine zu verwechseln.</p> </td> 
+   <td><p>Systemverwaltungskonto mit vollen Zugriffsrechten.</p> <p>Dieses Konto wird für die Verbindung zwischen AEM WCM und CRX verwendet.</p> <p>Wenn Sie dieses Konto versehentlich löschen, wird es beim Neustart des Repositorys neu erstellt (in der Standardeinrichtung).</p> <p>Das Administratorkonto ist eine Anforderung der AEM Plattform. Folglich kann dieses Konto nicht gelöscht werden.</p> </td> 
+   <td><p>Adobe empfiehlt dringend, das Kennwort für dieses Benutzerkonto von der Standardeinstellung zu ändern.</p> <p>Vorzugsweise sollte dies bei der Installation geschehen, aber danach ist es möglich.</p> <p>Hinweis: Dieses Konto ist nicht mit dem Administratorkonto der CQ Servlet Engine zu verwechseln.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>anonymous</p> <p> </p> </td> 
-   <td>Benutzer</td> 
-   <td><p>Konto mit Standardrechten für nicht authentifizierten Zugriff auf eine Instanz. Dieses Konto umfasst standardmäßig minimale Zugriffsrechte.</p> <p>Wenn Sie dieses Konto versehentlich löschen, wird es beim Start neu erstellt. Das Konto kann zwar nicht dauerhaft gelöscht, aber deaktiviert werden.</p> </td> 
-   <td>Vermeiden Sie es, dieses Konto zu löschen oder zu deaktivieren, da dies die Funktionalität von Autoreninstanzen beeinträchtigen kann. Falls Sie aufgrund von Sicherheitsanforderungen zum Löschen des Kontos gezwungen sind, sollten Sie die Auswirkungen auf Ihr System zunächst ordnungsgemäß testen.</td> 
+   <td><p>Anonym</p> <p> </p> </td> 
+   <td>User</td> 
+   <td><p>Enthält die Standardrechte für nicht authentifizierten Zugriff auf eine Instanz. Standardmäßig sind hierdurch die Mindestzugriffsrechte festgelegt.</p> <p>Wenn Sie dieses Konto versehentlich löschen, wird es beim Start neu erstellt. Sie kann nicht dauerhaft gelöscht werden, sie kann jedoch deaktiviert werden.</p> </td> 
+   <td>Vermeiden Sie es, dieses Konto zu löschen oder zu deaktivieren, da dies die Funktionsweise von Autoreninstanzen negativ beeinflusst. Wenn es Sicherheitsanforderungen gibt, die Sie dazu verpflichten, sie zu löschen, stellen Sie sicher, dass Sie zuerst die Auswirkungen auf Ihre Systeme ordnungsgemäß testen.</td> 
   </tr> 
   <tr> 
    <td><p>author</p> <p>Standardkennwort: author</p> </td> 
-   <td>Benutzer</td> 
-   <td><p>Ein Autorenkonto, das zu Schreibvorgängen unter /content berechtigt ist. Es umfasst die Berechtigungen von Mitwirkenden und Surfern.</p> <p>Eine Verwendung als Webmaster ist möglich, da auf die gesamte /content-Struktur zugegriffen werden kann.</p> <p>Hierbei handelt es sich nicht um einen integrierten Benutzer, sondern einen weiteren Geometrixx-Demobenutzer.</p> </td> 
-   <td><p>Adobe empfiehlt, entweder das Konto vollständig zu löschen oder das Standardkennwort zu ändern.</p> <p>Vorzugsweise sollte dies bei der Installation geschehen, es ist aber auch später möglich.</p> </td> 
+   <td>User</td> 
+   <td><p>Ein Autorenkonto, das in /content geschrieben werden darf. Umfasst Berechtigungen für Mitwirkende und Surfer.</p> <p>Kann als Webmaster verwendet werden, da er Zugriff auf die gesamte /content-Struktur hat.</p> <p>Dies ist kein integrierter Benutzer, sondern ein anderer Geometrixx-Demobenutzer</p> </td> 
+   <td><p>Adobe empfiehlt, entweder das Konto vollständig zu löschen oder das Standardkennwort zu ändern.</p> <p>Vorzugsweise sollte dies bei der Installation geschehen, aber danach ist es möglich.</p> </td> 
   </tr> 
   <tr> 
-   <td>administrators</td> 
+   <td>Administratoren</td> 
    <td>Gruppe</td> 
-   <td><p>Gruppe, die allen Mitgliedern Administratorrechte verleiht. Nur das Konto „admin“ ist zum Bearbeiten dieser Gruppe berechtigt.</p> <p>Hat volle Zugriffsrechte.</p> </td> 
+   <td><p>Gruppe, die allen Mitgliedern Administratorrechte gewährt. Diese Gruppe darf nur von Administratoren bearbeitet werden.</p> <p>Hat vollständige Zugriffsrechte.</p> </td> 
    <td>Wenn Sie für einen Knoten „deny-everyone“ festlegen, haben Admins nur dann Zugriff, wenn dieser erneut für die Gruppe gewährt wird.</td> 
   </tr> 
   <tr> 
@@ -97,25 +101,25 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
   <tr> 
    <td>contributor</td> 
    <td>Gruppe</td> 
-   <td><p>Grundlegende Rechte, durch die der Benutzer Inhalt schreiben kann (rein funktionsbezogen).</p> <p>Es werden keine Rechte für die /content-Struktur zugewiesen – diese müssen den einzelnen Gruppen oder Benutzern ausdrücklich zugeordnet werden.</p> </td> 
+   <td><p>Grundlegende Berechtigungen, die es dem Benutzer ermöglichen, Inhalte zu schreiben (nur in der Funktionalität).</p> <p>Weist der /content-Struktur keine Berechtigungen zu - diese müssen speziell für die einzelnen Gruppen oder Benutzer zugewiesen werden.</p> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>dam-users</td> 
    <td>Gruppe</td> 
-   <td>Standardmäßige Referenzgruppe für einen typischen AEM Assets-Benutzer. Mitglieder dieser Gruppe verfügen über die entsprechenden Berechtigungen, um das Hochladen/Freigeben von Assets und Sammlungen zu ermöglichen.</td> 
+   <td>Vordefinierte Referenzgruppe für einen typischen AEM Assets-Benutzer. Mitglieder dieser Gruppe verfügen über die entsprechenden Berechtigungen, um das Hochladen/Freigeben von Assets und Sammlungen zu ermöglichen.</td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td>everyone</td> 
    <td>Gruppe</td> 
-   <td><p>Jeder AEM-Benutzer ist ein Mitglied der Gruppe „everyone“, auch wenn diese Gruppe oder Mitgliedschaftsbeziehung nicht in allen Tools angezeigt wird.</p> <p>Diese Gruppe steht für Standardrechte. Sie kann verwendet werden, um Berechtigungen für alle anzuwenden, sogar zukünftig erstellte Benutzer.</p> </td> 
-   <td><p>Ändern oder löschen Sie diese Gruppe nicht.</p> <p>Eine Änderung dieses Kontos hat weitere Auswirkungen auf die Sicherheit.</p> </td> 
+   <td><p>Jeder Benutzer in AEM ist ein Mitglied der Gruppe Jeder, auch wenn Sie die Gruppe oder die Mitgliedschaftsbeziehung nicht in allen Tools sehen.</p> <p>Diese Gruppe kann als Standardberechtigungen betrachtet werden, da sie verwendet werden kann, um Berechtigungen für alle anzuwenden, selbst für Benutzer, die in Zukunft erstellt werden.</p> </td> 
+   <td><p>Ändern oder löschen Sie diese Gruppe nicht.</p> <p>Eine Änderung dieses Kontos wirkt sich auf die Sicherheit zusätzlich aus.</p> </td> 
   </tr> 
   <tr> 
    <td>tag-administrators</td> 
    <td>Gruppe</td> 
-   <td>Gruppe, die zum Bearbeiten von Tags berechtigt ist.</td> 
+   <td>Gruppe, die Tags bearbeiten darf.</td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -133,7 +137,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
   <tr> 
    <td>workflow-users</td> 
    <td>Gruppe</td> 
-   <td><p>Ein an einem Workflow beteiligter Benutzer muss Mitglied der Gruppe „workflow-users“ sein. Hierdurch hat der Benutzer Vollzugriff auf /etc/workflow/instances, sodass der Benutzer die Workflow-Instanz aktualisieren kann.</p> <p>Die Gruppe ist Teil der Standardinstallation, aber Sie müssen der Gruppe Ihre Benutzer manuell hinzufügen.</p> </td> 
+   <td><p>Ein Benutzer, der an einem Workflow teilnimmt, muss Mitglied von Gruppen-Workflow-Benutzern sein. Dadurch erhält er vollständigen Zugriff auf: /etc/workflow/instances, damit sie die Workflow-Instanz aktualisieren können.</p> <p>Die Gruppe ist Teil der Standardinstallation, Sie müssen jedoch Ihre Benutzer manuell zur Gruppe hinzufügen.</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -144,15 +148,15 @@ AEM nutzt ACLs (Access Control Lists, Zugriffssteuerungslisten), um zu ermitteln
 
 ### Berechtigungen und ACLs {#permissions-and-acls}
 
-Berechtigungen definieren, wer welche Aktionen für eine Ressource durchführen darf. Berechtigungen sind das Ergebnis einer Bewertung der [Zugriffssteuerung](#access-control-lists-and-how-they-are-evaluated).
+Berechtigungen definieren, wer welche Aktionen für eine Ressource ausführen darf. Berechtigungen sind das Ergebnis einer Bewertung der [Zugriffssteuerung](#access-control-lists-and-how-they-are-evaluated).
 
 Sie können die für bestimmte Benutzende erteilten/abgelehnten Berechtigungen durch Aktivieren oder Deaktivieren der Kontrollkästchen für die einzelnen AEM-[Aktionen](security.md#actions) ändern. Ein Häkchen bedeutet, dass eine Aktion erlaubt ist. Kein Häkchen bedeutet, dass eine Aktion abgelehnt wird.
 
-Wo sich das Häkchen im Raster befindet, gibt zudem an, welche Berechtigungen Benutzer in welchen AEM-Bereichen (also Pfaden) haben.
+Wenn sich das Häkchen im Raster befindet, zeigt auch an, welche Berechtigungen Benutzer an welchen Stellen in AEM haben (d. h. welche Pfade).
 
 ### Aktionen {#actions}
 
-Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Für jede Seite in der Hierarchie können Sie angeben, zu welcher Aktion der Benutzer auf der Seite berechtigt ist. Mithilfe von [Berechtigungen](#permissions-and-acls) können Sie eine Aktion zulassen oder ablehnen.
+Aktionen können auf einer Seite (Ressource) ausgeführt werden. Für jede Seite in der Hierarchie können Sie festlegen, welche Aktion der Benutzer auf dieser Seite ausführen darf. Mithilfe von [Berechtigungen](#permissions-and-acls) können Sie eine Aktion zulassen oder ablehnen.
 
 <table> 
  <tbody> 
@@ -204,22 +208,22 @@ Aktionen können auf einer Seite (für eine Ressource) durchgeführt werden. Fü
 
 >[!NOTE]
 >
->AEM generiert automatisch Benutzergruppen für die Rollenzuweisung (Inhaber, Bearbeiter, Betrachter) in [Sammlungen](/help/assets/managing-collections-touch-ui.md). Werden solchen Gruppen jedoch ACLs manuell hinzugefügt, kann dies zu Sicherheitsschwachstellen in AEM führen. Adobe empfiehlt, manuelles Hinzufügen von ACLs zu vermeiden.
+>AEM generiert automatisch Benutzergruppen für die Rollenzuweisung (Inhaber, Bearbeiter, Betrachter) in [Sammlungen](/help/assets/managing-collections-touch-ui.md). Das manuelle Hinzufügen von ACLs für solche Gruppen kann jedoch Sicherheitslücken in AEM verursachen. Adobe empfiehlt, das manuelle Hinzufügen von ACLs zu vermeiden.
 
-### Zugriffssteuerungslisten und ihre Bewertung {#access-control-lists-and-how-they-are-evaluated}
+### Zugriffssteuerungslisten und deren Bewertung {#access-control-lists-and-how-they-are-evaluated}
 
-AEM WCM organisiert anhand von Zugriffssteuerungslisten (Access Control Lists, ACLs) die auf die verschiedenen Seiten angewendeten Berechtigungen.
+AEM WCM verwendet Zugriffssteuerungslisten (ACLs), um die Berechtigungen zu organisieren, die auf die verschiedenen Seiten angewendet werden.
 
-Zugriffssteuerungslisten setzen sich aus einzelnen Berechtigungen zusammen und dienen dazu, die Reihenfolge zu bestimmen, in der diese Berechtigungen tatsächlich angewendet werden. Die Liste wird gemäß der Hierarchie der fraglichen Seiten gebildet. Diese Liste wird dann von unten nach oben durchsucht, bis die erste passende Berechtigung zum Anwenden auf eine Seite gefunden wird.
+Zugriffssteuerungslisten bestehen aus den individuellen Berechtigungen und werden verwendet, um die Reihenfolge zu bestimmen, in der diese Berechtigungen tatsächlich angewendet werden. Die Liste wird entsprechend der Hierarchie der betroffenen Seiten gebildet. Diese Liste wird dann von unten nach oben gescannt, bis die erste geeignete Berechtigung zur Anwendung auf eine Seite gefunden wurde.
 
 >[!NOTE]
 >
->In den Beispielen sind ACLs enthalten. Sie sollten prüfen und bestimmen, welche ACLs für Ihre Anwendungen geeignet sind. Um sich die enthaltenen ACLs anzusehen, gehen Sie zu **CRXDE** und wählen Sie die Registerkarte **Zugriffssteuerung** für die folgenden Knoten aus:
+>Es gibt ACLs, die in den Beispielen enthalten sind. Es wird empfohlen, dass Sie überprüfen und bestimmen, was für Ihre Anwendungen geeignet ist. Um sich die enthaltenen ACLs anzusehen, gehen Sie zu **CRXDE** und wählen Sie die Registerkarte **Zugriffssteuerung** für die folgenden Knoten aus:
 >
 >`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Alle haben Lesezugriff.
 >`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Alle haben Lesezugriff.
 >`/home/users/geometrixx-outdoors`: Alle haben Lesezugriff für `*/profile*` und\
->`*/social/relationships/following/*` möglich.
+>`*/social/relationships/following/*`.
 >
 >Ihre benutzerdefinierte Anwendung kann den Zugriff für andere Beziehungen festlegen, z. B. `*/social/relationships/friend/*` oder `*/social/relationships/pending-following/*`.
 >
@@ -229,20 +233,20 @@ Zugriffssteuerungslisten setzen sich aus einzelnen Berechtigungen zusammen und d
 
 >[!NOTE]
 >
->Für CQ 5.3-Benutzer:
+>Für CQ 5.3-Benutzer:
 >
->Im Gegensatz zu vorherigen CQ-Versionen sollten die Rechte **Erstellen** und **Löschen** nicht mehr erteilt werden, wenn ein Benutzer lediglich in der Lage sein muss, Seiten zu ändern. Lassen Sie stattdessen die Aktion **Verändern** nur zu, wenn Benutzer Komponenten erstellen, ändern oder aus vorhandenen Seiten löschen können sollen.
+>Im Gegensatz zu vorherigen CQ-Versionen **erstellen** und **delete** sollte nicht mehr gewährt werden, wenn ein Benutzer nur Seiten ändern muss. Geben Sie stattdessen die **Ändern** nur dann zu aktivieren, wenn Sie möchten, dass Benutzer Komponenten auf vorhandenen Seiten erstellen, ändern oder löschen können.
 >
->Aus Gründen der Rückwärtskompabilität berücksichtigen die Tests für Aktionen nicht die Sonderbehandlung von Knoten, die **jcr:content** definieren.
+>Aus Gründen der Abwärtskompatibilität werden bei den Aktionstests keine Knoten, die **jcr:content** berücksichtigt.
 
 | **Aktion** | **Beschreibung** |
 |---|---|
 | Zulassen (Häkchen) | AEM WCM ermöglicht es Benutzenden, die Aktion auf dieser Seite oder auf untergeordneten Seiten durchzuführen. |
 | Verweigern (kein Häkchen) | AEM WCM gestattet es Benutzenden nicht, die Aktion auf dieser Seite oder auf untergeordneten Seiten durchzuführen. |
 
-Die Berechtigungen gelten auch für untergeordnete Seiten.
+Die Berechtigungen werden auch auf alle untergeordneten Seiten angewendet.
 
-Wenn eine Berechtigung nicht vom übergeordneten Knoten vererbt wird, aber mindestens über einen entsprechenden lokalen Eintrag verfügt, werden die folgenden Symbole an das Kontrollkästchen angehängt. Ein lokaler Eintrag ist ein Eintrag, der in der CRX 2.2-Benutzeroberfläche erstellt wird. (Platzhalter-ACLs können derzeit nur in CRX erstellt werden.)
+Wenn eine Berechtigung nicht vom übergeordneten Knoten vererbt wird, aber mindestens einen lokalen Eintrag dafür hat, werden die folgenden Symbole an das Kontrollkästchen angehängt. Ein lokaler Eintrag ist ein Eintrag, der in der CRX 2.2-Benutzeroberfläche erstellt wird. (Platzhalter-ACLs können derzeit nur in CRX erstellt werden.)
 
 Für eine Aktion unter einem bestimmten Pfad:
 
@@ -259,7 +263,7 @@ Für eine Aktion unter einem bestimmten Pfad:
  </tbody> 
 </table>
 
-Wenn Sie auf das Sternchen oder Ausrufezeichen zeigen, liefert eine QuickInfo weitere Details zu den deklarierten Einträgen. Die QuickInfo ist zweigeteilt:
+Wenn Sie den Mauszeiger über das Sternchen oder Ausrufezeichen bewegen, enthält eine QuickInfo weitere Details zu den deklarierten Einträgen. Die QuickInfo ist in zwei Teile unterteilt:
 
 <table> 
  <tbody> 
@@ -278,26 +282,26 @@ Wenn Sie auf das Sternchen oder Ausrufezeichen zeigen, liefert eine QuickInfo we
 
 >[!NOTE]
 >
->Wenn keine Berechtigungen für eine Seite definiert sind, werden alle Aktionen abgelehnt.
+>Wenn für eine Seite keine Berechtigungen definiert sind, werden alle Aktionen verweigert.
 
-Nachfolgend finden Sie Empfehlungen zum Verwalten von Zugriffssteuerungslisten:
+Im Folgenden finden Sie Empfehlungen zur Verwaltung von Zugriffssteuerungslisten:
 
-* Weisen Sie Berechtigungen nicht direkt Benutzern zu. Weisen Sie diese nur Gruppen zu.
+* Weisen Sie Benutzern keine Berechtigungen direkt zu. Weisen Sie sie nur Gruppen zu.
 
-   Hierdurch wird die Verwaltung vereinfacht, da die Anzahl der Gruppen deutlich kleiner ist als die Anzahl der Benutzer – und damit weniger Schwankungen ausgesetzt ist.
+   Dies vereinfacht die Wartung, da die Anzahl der Gruppen viel kleiner ist als die Anzahl der Benutzer und auch weniger flüchtig ist.
 
-* Wenn eine Gruppe/ein Benutzer nur in der Lage sein soll, Seiten zu ändern, dürfen Sie keine Rechte zum Erstellen oder Ablehnen gewähren. Gewähren Sie in diesem Fall ausschließlich Änderungs- und Leserechte.
-* Setzen Sie „Ablehnen“ sparsam ein; verwenden Sie, soweit möglich, nur „Zulassen“.
+* Wenn Sie möchten, dass eine Gruppe/ein Benutzer nur Seiten ändern kann, gewähren Sie ihnen keine Berechtigung zum Erstellen oder Ablehnen von Rechten. Erteilen Sie ihnen nur Änderungen und Leseberechtigungen.
+* Verwenden Sie Deny sparsam. Soweit möglich, darf nur &quot;Zulassen&quot;verwendet werden.
 
-   Die Verwendung von „Ablehnen“ kann unerwartete Folgen haben, wenn die Berechtigungen in einer anderen Reihenfolge als der erwarteten angewendet werden. Wenn ein Benutzer Mitglied von mehr als einer Gruppe ist, können durch die Anweisungen vom Typ „Ablehnen“ einer Gruppe die Anweisungen vom Typ „Zulassen“ einer anderen Gruppe aufgehoben werden und umgekehrt. Es ist schwierig, in einem solchen Fall den Überblick zu behalten. Unvorhergesehene Ergebnisse sind ohne Weiteres möglich. Durch Zuweisung von „Zulassen“ lassen sich solche Konflikte hingegen ausschließen.
+   Die Verwendung von Ablehnen kann zu unerwarteten Auswirkungen führen, wenn die Berechtigungen in einer anderen Reihenfolge als der erwarteten angewendet werden. Wenn ein Benutzer Mitglied mehrerer Gruppen ist, können die Anweisungen vom Typ Ablehnen von einer Gruppe die Anweisung Zulassen von einer anderen Gruppe abbrechen oder umgekehrt. Es ist schwierig, in diesem Fall einen Überblick zu behalten und kann leicht zu unvorhergesehenen Ergebnissen führen, während Zuweisungen zulassen solche Konflikte nicht verursacht.
 
-   Adobe empfiehlt, „Zulassen“ statt „Ablehnen“ zu verwenden. Siehe [Best Practices](#best-practices).
+   Adobe empfiehlt, mit Allow anstatt Deny zu arbeiten. Siehe [Best Practices](#best-practices).
 
-Stellen Sie vor dem Ändern einer dieser beiden Berechtigungen sicher, dass Sie wissen, wie diese funktionieren und miteinander verbunden sind. Informationen darüber, wie AEM WCM [Zugriffsrechte bewertet](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), sowie Beispiele zum Einrichten von Zugriffssteuerungslisten finden Sie in der CRX-Dokumentation.
+Bevor Sie eine der Berechtigungen ändern, sollten Sie wissen, wie sie funktionieren und miteinander in Beziehung stehen. In der CRX-Dokumentation erfahren Sie, wie AEM WCM funktioniert. [bewertet Zugriffsberechtigungen](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) und Beispiele zum Einrichten von Zugriffssteuerungslisten.
 
 ### Berechtigungen {#permissions}
 
-Durch Berechtigungen erhalten Benutzer und Gruppen Zugriff auf AEM-Funktionen auf AEM-Seiten.
+Mit Berechtigungen erhalten Benutzer und Gruppen Zugriff auf AEM Funktionen auf AEM Seiten.
 
 Berechtigungen werden pfadweise durch Ein-/Ausblenden der Knoten durchsucht. Außerdem können Sie die Vererbung von Berechtigungen bis zum Stammknoten nachverfolgen.
 
@@ -307,9 +311,9 @@ Um Berechtigungen zuzulassen oder abzulehnen, aktivieren bzw. deaktivieren Sie d
 
 ### Anzeigen detaillierter Berechtigungsinformationen {#viewing-detailed-permission-information}
 
-Neben der Rasteransicht stellt AEM eine detaillierte Ansicht der Berechtigungen für ausgewählte Benutzer/Gruppen unter einem bestimmten Pfad bereit. Die Detailansicht liefert zusätzliche Informationen.
+Zusammen mit der Rasteransicht bietet AEM eine detaillierte Ansicht der Berechtigungen für einen ausgewählten Benutzer/eine ausgewählte Gruppe unter einem bestimmten Pfad. Die Detailansicht enthält zusätzliche Informationen.
 
-Zusätzlich zur Anzeige von Informationen können Sie auch den aktuellen Benutzer oder die aktuelle Gruppe in eine Gruppe einschließen oder daraus ausschließen. Siehe [Hinzufügen von Benutzenden oder Gruppen beim Hinzufügen von Berechtigungen](#adding-users-or-groups-while-adding-permissions). Hier durchgeführte Änderungen werden sofort im oberen Abschnitt der Detailansicht wiedergegeben.
+Neben der Anzeige von Informationen können Sie auch den aktuellen Benutzer oder die aktuelle Gruppe aus einer Gruppe ein- oder ausschließen. Siehe [Hinzufügen von Benutzenden oder Gruppen beim Hinzufügen von Berechtigungen](#adding-users-or-groups-while-adding-permissions). Hier durchgeführte Änderungen werden sofort im oberen Abschnitt der Detailansicht wiedergegeben.
 
 Zum Aufrufen der Detailansicht klicken Sie für beliebige Gruppen/Benutzende und Pfad auf der Registerkarte **Berechtigungen** auf **Details**.
 
@@ -343,9 +347,9 @@ Die Details werden in zwei voneinander getrennten Bereichen angezeigt:
 
 Mit der Funktion [Stellvertretend agieren ](/help/sites-authoring/user-properties.md#user-settings)können Benutzende im Auftrag anderer Benutzenden arbeiten.
 
-Ein Benutzerkonto kann also andere Konten angeben, die das Benutzerkonto verwenden dürfen. Anders ausgedrückt: Wenn Benutzer B stellvertretend für Benutzer A agieren darf, dann kann Benutzer B Aktionen mit allen Kontodetails von Benutzer A durchführen.
+Das bedeutet, dass ein Benutzerkonto andere Konten angeben kann, die mit seinem Konto arbeiten können. Mit anderen Worten: Wenn Benutzer B die Berechtigung hat, sich als Benutzer A zu präsentieren, kann Benutzer B Aktionen mit den vollständigen Kontodetails von Benutzer A durchführen.
 
-Hierdurch kann der Stellvertreter (Darsteller) Aufgaben so abschließen, als würde er das Konto verwenden, für das er stellvertretend agiert, etwa bei Abwesenheit oder zur kurzfristigen Entlastung anderer überlasteter Benutzer.
+Dadurch können die stellvertretenden Konten Aufgaben so ausführen, als ob sie das Konto verwenden würden, für das sie stellvertretend agieren. z. B. bei Abwesenheit oder kurzfristiger Lastenteilung.
 
 >[!NOTE]
 >
@@ -355,17 +359,17 @@ Hierdurch kann der Stellvertreter (Darsteller) Aufgaben so abschließen, als wü
 
 >[!CAUTION]
 >
->Wenn ein Konto stellvertretend für ein anderes Konto agiert, ist dies nur sehr schwer zu erkennen. Ein Eintrag im Auditprotokoll gibt an, wann die Stellvertretung (Personifikation) startet und endet, aber die anderen Protokolldateien (etwa das Zugriffsprotokoll) enthalten keine Informationen darüber, dass Ereignisse stellvertretend ausgeführt wurden. Wenn also Benutzer B stellvertretend für Benutzer A agiert, sieht es so aus, als wären alle Ereignisse persönlich von Benutzer A durchgeführt worden.
+>Wenn ein Konto stellvertretend für ein anderes agiert, ist es sehr schwer zu sehen. Im Auditprotokoll wird ein Eintrag eingefügt, wenn der Identitätswechsel beginnt und endet. Die anderen Protokolldateien (wie das Zugriffsprotokoll) enthalten jedoch keine Informationen darüber, dass bei den Ereignissen eine Identitätswechsel stattgefunden hat. Wenn also Benutzer B stellvertretend für Benutzer A agiert, sehen alle Ereignisse so aus, als ob sie von Benutzer A persönlich durchgeführt würden.
 
 >[!CAUTION]
 >
->Wird stellvertretend für andere Benutzende agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann nur von dem Benutzer, für den stellvertretend agiert wurde, oder von einem Benutzer mit Administratorrechten entsperrt werden.
+>Wird stellvertretend für andere Benutzende agiert, ist es möglich, eine Seite zu sperren. Eine auf diese Weise gesperrte Seite kann jedoch nur dann entsperrt werden, wenn der Benutzer, der stellvertretend agiert hat, oder ein Benutzer mit Administratorrechten.
 >
 >Seiten lassen sich nicht stellvertretend für Benutzende entsperren, die die Seite gesperrt haben.
 
 ### Best Practices {#best-practices}
 
-Im Folgenden werden Best Practices für die Arbeit mit Berechtigungen und Rechten beschrieben:
+Im Folgenden werden Best Practices für die Arbeit mit Berechtigungen und Berechtigungen beschrieben:
 
 | Regel | Grund |
 |--- |--- |
@@ -377,17 +381,17 @@ Im Folgenden werden Best Practices für die Arbeit mit Berechtigungen und Rechte
 
 ## Verwalten von Benutzenden und Gruppen {#managing-users-and-groups}
 
-Benutzer umfassen Anwender des Systems und von Fremdsystemen, die Anfragen an das System stellen.
+Zu den Benutzern gehören Personen, die das System verwenden, und ausländische Systeme, die Anforderungen an das System stellen.
 
-Eine Gruppe beinhaltet mehrere Benutzer.
+Eine Gruppe ist eine Gruppe von Benutzern.
 
-Benutzer und Gruppen können über die Funktion „Benutzerverwaltung“ in der Sicherheitskonsole konfiguriert werden.
+Beide können über die Funktion Benutzerverwaltung in der Sicherheitskonsole konfiguriert werden.
 
-### Zugreifen auf die Benutzerverwaltung über die Sicherheitskonsole {#accessing-user-administration-with-the-security-console}
+### Zugriff auf die Benutzerverwaltung über die Sicherheitskonsole {#accessing-user-administration-with-the-security-console}
 
-Der Zugriff auf alle Benutzer, Gruppen, und verbundenen Berechtigungen erfolgt über die Sicherheitskonsole. Alle in diesem Abschnitte beschriebenen Vorgehensweisen werden in diesem Fenster durchgeführt.
+Sie können über die Sicherheitskonsole auf alle Benutzer, Gruppen und zugehörigen Berechtigungen zugreifen. Alle in diesem Abschnitt beschriebenen Verfahren werden in diesem Fenster durchgeführt.
 
-Um auf die AEM WCM-Sicherheit zuzugreifen, führen Sie einen der folgenden Schritte aus:
+Führen Sie einen der folgenden Schritte aus, um auf AEM WCM-Sicherheit zuzugreifen:
 
 * Klicken Sie im Begrüßungsbildschirm oder in verschiedenen anderen Bereichen in AEM auf das Sicherheitssymbol:
 
@@ -399,7 +403,7 @@ Es wird folgendes Fenster angezeigt:
 
 ![cqsecuritypage](assets/cqsecuritypage.png)
 
-In der linken Struktur sehen Sie alle aktuell im System vorhandenen Benutzer und Gruppen. Sie können die anzuzeigenden Spalten auswählen, den Inhalt der Spalten sortieren und sogar die Reihenfolge ändern, in der die Spalten angezeigt werden, indem Sie die Spaltenüberschrift an eine neue Position ziehen.
+In der linken Struktur werden alle Benutzer und Gruppen aufgelistet, die sich derzeit im System befinden. Sie können die anzuzeigenden Spalten auswählen, den Inhalt der Spalten sortieren und die Anzeigereihenfolge der Spalten ändern, indem Sie die Spaltenüberschrift an eine neue Position ziehen.
 
 ![cqsecuritycolumncontext](assets/cqsecuritycolumncontext.png)
 
@@ -426,7 +430,7 @@ Sie können die Liste durch Eingabe eines Filterausdrucks filtern, der alle nich
 
 So filtern Sie Benutzende oder Gruppen:
 
-1. Geben Sie in der linken Strukturliste an der vorgesehenen Stelle den Filterausdruck ein. Durch Eingabe von **admin** werden beispielsweise alle Benutzer und Gruppen, die diese Zeichenfolge enthalten, angezeigt.
+1. Geben Sie in der linken Strukturliste Ihren Filterausdruck in das bereitgestellte Feld ein. Beispiel: **admin** zeigt alle Benutzer und Gruppen an, die diese Zeichenfolge enthalten.
 1. Klicken Sie auf die Lupe, um die Liste zu filtern.
 
    ![cqsecurityfilter](assets/cqsecurityfilter.png)
@@ -435,11 +439,11 @@ So filtern Sie Benutzende oder Gruppen:
 
 ### Ausblenden von Benutzern und Gruppen {#hiding-users-and-groups}
 
-Benutzer oder Gruppen auszublenden, ist eine weitere Möglichkeit, um die Liste aller Benutzer und Gruppen in einem System zu filtern. Es gibt zwei Umschaltmechanismen. Durch Klicken auf „Benutzer ausblenden“ können Sie alle Benutzer ausblenden, durch Klicken auf „Gruppen ausblenden“ alle Gruppen. (Es ist nicht möglich, Benutzer und Gruppen gleichzeitig auszublenden.) Informationen zum Filtern der Liste mit einem Filterausdruck finden Sie unter [Filtern von Benutzern und Gruppen](#filtering-users-and-groups).
+Das Ausblenden von Benutzern oder Gruppen ist eine weitere Möglichkeit, die Liste aller Benutzer und Gruppen in einem System zu filtern. Es gibt zwei Umschalter. Durch Klicken auf Benutzer ausblenden werden alle Benutzer aus der Ansicht ausgeblendet und durch Klicken auf Gruppen ausblenden werden alle Gruppen aus der Ansicht ausgeblendet (Sie können Benutzer und Gruppen nicht gleichzeitig ausblenden). Informationen zum Filtern der Liste mithilfe eines Filterausdrucks finden Sie unter [Filtern von Benutzern und Gruppen](#filtering-users-and-groups).
 
 So blenden Sie Benutzer und Gruppen aus:
 
-1. Klicken Sie in der **Sicherheitskonsole** auf **Benutzer ausblenden** oder **Gruppen ausblenden**. Die ausgewählte Schaltfläche wird hervorgehoben.
+1. Im **Sicherheit** Console, klicken Sie auf **Benutzer ausblenden** oder **Gruppen ausblenden**. Die ausgewählte Schaltfläche wird hervorgehoben.
 
    ![cqsecurityhideusers](assets/cqsecurityhideusers.png)
 
@@ -453,9 +457,9 @@ Erstellen von neuen Benutzenden oder Gruppen
 
    ![cqseruityeditcontextmenu](assets/cqseruityeditcontextmenu.png)
 
-1. Geben Sie jeweils die zum Erstellen eines Benutzers oder einer Gruppe erforderlichen Details ein.
+1. Geben Sie die erforderlichen Details ein, je nachdem, ob Sie einen Benutzer oder eine Gruppe erstellen.
 
-   * Bei Auswahl von **Benutzer erstellen** geben Sie die Anmeldungskennung, den Vor- und Nachnamen, die E-Mail-Adresse und ein Kennwort ein. Standardmäßig erstellt AEM einen Pfad basierend auf dem ersten Buchstaben des Nachnamens. Sie können aber auch einen anderen Pfad festlegen.
+   * Wenn Sie **Benutzer erstellen,** Geben Sie die Anmelde-ID, Vor- und Nachname, E-Mail-Adresse und ein Passwort ein. Standardmäßig erstellt AEM einen Pfad basierend auf dem ersten Buchstaben des Nachnamens. Sie können aber auch einen anderen Pfad festlegen.
 
    ![createuserdialog](assets/createuserdialog.png)
 
@@ -463,14 +467,14 @@ Erstellen von neuen Benutzenden oder Gruppen
 
    ![creategroupdialog](assets/creategroupdialog.png)
 
-1. Klicken Sie auf **Erstellen**. Der von Ihnen erstellte Benutzer bzw. die von Ihnen erstellte Gruppe wird in der Strukturliste angezeigt.
+1. Klicken Sie auf **Erstellen**. Der von Ihnen erstellte Benutzer oder die erstellte Gruppe wird in der Strukturliste angezeigt.
 
 ### Löschen von Benutzern und Gruppen {#deleting-users-and-groups}
 
 So löschen Sie einen Benutzer oder eine Gruppe:
 
-1. Wählen Sie in der **Sicherheitskonsole** den zu löschenden Benutzer bzw. die zu löschende Gruppe aus. Wenn mehrere Elemente gelöscht werden sollen, wählen Sie diese durch Klicken bei gedrückter Umschalt- oder Strg-Taste aus.
-1. Klicken Sie auf **Bearbeiten** und wählen Sie dann „Löschen“. AEM WCM fragt, ob Sie den Benutzer oder die Gruppe löschen möchten.
+1. Im **Sicherheit** -Konsole, wählen Sie den Benutzer oder die Gruppe aus, den/die Sie löschen möchten. Wenn Sie mehrere Elemente löschen möchten, klicken Sie bei gedrückter Umschalt- oder Strg-Taste, um sie auszuwählen.
+1. Klicken **Bearbeiten,** Wählen Sie dann Löschen aus. AEM WCM fragt, ob Sie den Benutzer oder die Gruppe löschen möchten.
 1. Klicken Sie auf **OK**, um den Vorgang zu bestätigen, oder auf „Abbrechen“, um die Aktion abzubrechen.
 
 ### Ändern von Benutzer- und Gruppeneigenschaften {#modifying-user-and-group-properties}
@@ -502,36 +506,36 @@ Gehen Sie wie folgt vor, um das Passwort einer/eines Benutzenden zu ändern.
 
    ![cqsecurityuserpassword](assets/cqsecurityuserpassword.png)
 
-1. Geben Sie das neue Kennwort zweimal ein. Da es nicht als Klartext angezeigt wird, dient dies zur Bestätigung. Wenn die Eingaben nicht übereinstimmen, zeigt das System einen Fehler an.
-1. Klicken Sie auf **Festlegen**, um das neue Kennwort für das Konto zu aktivieren.
+1. Geben Sie das neue Kennwort zweimal ein; da sie nicht in unverschlüsseltem Text angezeigt werden. Dies dient zur Bestätigung. Wenn sie nicht übereinstimmen, zeigt das System einen Fehler an.
+1. Klicken **Satz** , um das neue Kennwort für das Konto zu aktivieren.
 
 ### Hinzufügen von Benutzern oder Gruppen zu einer Gruppe {#adding-users-or-groups-to-a-group}
 
-AEM bietet drei Möglichkeiten, um einer vorhandenen Gruppe Benutzer oder Gruppen hinzuzufügen:
+AEM bietet drei verschiedene Möglichkeiten, Benutzer oder Gruppen zu einer vorhandenen Gruppe hinzuzufügen:
 
-* Über das Gruppenprofil können Sie Mitglieder (Benutzer oder Gruppen) hinzufügen.
-* Über das Mitgliederprofil können Sie Gruppen Mitglieder hinzufügen.
-* Beim Arbeiten an Berechtigungen können Sie Gruppen Mitglieder hinzufügen.
+* Wenn Sie sich in der Gruppe befinden, können Sie Mitglieder hinzufügen (entweder Benutzer oder Gruppen).
+* Wenn Sie Mitglied sind, können Sie Gruppen Mitglieder hinzufügen.
+* Wenn Sie an Berechtigungen arbeiten, können Sie Gruppen Mitglieder hinzufügen.
 
-### Gruppen – Hinzufügen von Benutzern oder Gruppen zu einer Gruppe {#groups-adding-users-or-groups-to-a-group}
+### Gruppen - Hinzufügen von Benutzern oder Gruppen zu einer Gruppe {#groups-adding-users-or-groups-to-a-group}
 
-Auf der Registerkarte **Gruppen** wird angezeigt, zu welchen Gruppen das aktuelle Konto gehört. Hier können Sie einer Gruppe das ausgewählte Konto hinzuzufügen:
+Die **Gruppen** zeigt an, zu welchen Gruppen das aktuelle Konto gehört. Sie können damit das ausgewählte Konto zu einer Gruppe hinzufügen:
 
-1. Doppelklicken Sie auf den Namen des Kontos (Benutzer oder Gruppe), das einer Gruppe zugewiesen werden soll.
-1. Klicken Sie auf die Registerkarte **Gruppen**. Daraufhin wird eine Liste der Gruppen angezeigt, denen das Konto bereits angehört.
-1. Klicken Sie in der Strukturliste auf den Namen der Gruppe, die dem Konto hinzugefügt werden soll, und ziehen Sie die Gruppe in den Bereich **Gruppen**. (Wenn mehrere Benutzer hinzugefügt werden sollen, klicken Sie bei gedrückter Umschalt- oder Strg-Taste auf die entsprechenden Namen und ziehen Sie diese.)
+1. Doppelklicken Sie auf den Namen des Kontos (Benutzer oder Gruppe), das Sie einer Gruppe zuweisen möchten.
+1. Klicken Sie auf **Gruppen** Registerkarte. Es wird eine Liste der Gruppen angezeigt, zu denen das Konto bereits gehört.
+1. Klicken Sie in der Strukturliste auf den Namen der Gruppe, der Sie das Konto hinzufügen möchten, und ziehen Sie sie in den **Gruppen** -Bereich. (Wenn Sie mehrere Benutzer hinzufügen möchten, klicken Sie bei gedrückter Umschalt- oder Strg-Taste auf diese Namen und ziehen Sie sie.)
 
    ![cqsecurityaddusertogroup](assets/cqsecurityaddusertogroup.png)
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
-### Mitglieder – Hinzufügen von Benutzern oder Gruppen zu einer Gruppe {#members-adding-users-or-groups-to-a-group}
+### Mitglieder - Hinzufügen von Benutzern oder Gruppen zu einer Gruppe {#members-adding-users-or-groups-to-a-group}
 
-Auf der Registerkarte **Mitglieder**, die nur für Gruppen verwendet werden kann, wird angezeigt, welche Benutzer und Gruppen zur aktuellen Gruppe gehören. Hier können Sie einer Gruppe Konten hinzufügen:
+Die **Mitglieder** -Tab funktioniert nur für Gruppen und zeigt an, welche Benutzer und Gruppen zur aktuellen Gruppe gehören. Hier können Sie einer Gruppe Konten hinzufügen:
 
-1. Doppelklicken Sie auf den Namen der Gruppe, der Mitglieder hinzugefügt werden sollen.
-1. Klicken Sie auf die Registerkarte **Mitglieder**. Daraufhin wird eine Liste der Mitglieder angezeigt, die bereits zu dieser Gruppe gehören.
-1. Klicken Sie in der Strukturliste auf den Namen des Mitglieds, das der Gruppe hinzugefügt werden soll, und ziehen Sie das Mitglied in den Bereich **Mitglieder**. (Wenn mehrere Benutzer hinzugefügt werden sollen, klicken Sie bei gedrückter Umschalt- oder Strg-Taste auf die entsprechenden Namen und ziehen Sie diese.)
+1. Doppelklicken Sie auf den Namen der Gruppe, der Sie Mitglieder hinzufügen möchten.
+1. Klicken Sie auf **Mitglieder** Registerkarte. Es wird eine Liste der Mitglieder angezeigt, die bereits zu dieser Gruppe gehören.
+1. Klicken Sie in der Strukturliste auf den Namen des Mitglieds, das Sie der Gruppe hinzufügen möchten, und ziehen Sie es in die **Mitglieder** -Bereich. (Wenn Sie mehrere Benutzer hinzufügen möchten, klicken Sie bei gedrückter Umschalt- oder Strg-Taste auf diese Namen und ziehen Sie sie.)
 
    ![cqsecurityadduserasmember](assets/cqsecurityadduserasmember.png)
 
@@ -549,24 +553,24 @@ So fügen Sie einer Gruppe unter einem bestimmten Pfad Mitglieder hinzu:
 
    ![chlimage_1-349](assets/chlimage_1-349.png)
 
-1. Aktivieren Sie das Kontrollkästchen in der Spalte **Mitglied** für die Mitglieder, die Berechtigungen für diesen Pfad erhalten sollen. Deaktivieren Sie das Kontrollkästchen für die Mitglieder, denen Berechtigungen entzogen werden sollen. In der von Ihnen geänderten Zelle wird ein rotes Dreieck angezeigt.
+1. Aktivieren Sie das Kontrollkästchen im **Mitglied** -Spalte für die Mitglieder, die Berechtigungen für diesen Pfad erhalten sollen. Deaktivieren Sie das Kontrollkästchen für Mitglieder, für die Sie Berechtigungen entfernen möchten. In der Zelle, an der Sie Änderungen vorgenommen haben, wird ein rotes Dreieck angezeigt.
 1. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ### Entfernen von Benutzenden oder Gruppen aus Gruppen {#removing-users-or-groups-from-groups}
 
-AEM bietet drei Möglichkeiten, um Benutzer oder Gruppen aus einer Gruppe zu entfernen:
+AEM bietet drei Möglichkeiten, Benutzer oder Gruppen aus einer Gruppe zu entfernen:
 
-* Über das Gruppenprofil können Sie Mitglieder (Benutzer oder Gruppen) entfernen.
-* Über das Mitgliederprofil können Sie Mitglieder aus Gruppen entfernen.
-* Beim Arbeiten an Berechtigungen können Sie Mitglieder aus Gruppen entfernen.
+* Wenn Sie sich im Gruppenprofil befinden, können Sie Mitglieder (Benutzer oder Gruppen) entfernen.
+* Wenn Sie sich im Mitgliederprofil befinden, können Sie Mitglieder aus Gruppen entfernen.
+* Wenn Sie an Berechtigungen arbeiten, können Sie Mitglieder aus Gruppen entfernen.
 
 ### Gruppen – Entfernen von Benutzenden oder Gruppen aus Gruppen {#groups-removing-users-or-groups-from-groups}
 
 So entfernen Sie ein Benutzer- oder Gruppenkonto aus einer Gruppe:
 
-1. Doppelklicken Sie auf den Namen des Gruppen- oder Benutzerkontos, das aus einer Gruppe entfernt werden soll.
-1. Klicken Sie auf die Registerkarte **Gruppen**. Sie sehen, welchen Gruppen das ausgewählte Konto angehört.
-1. Klicken Sie im Bereich **Gruppen** auf den Namen des Benutzer- oder Gruppenkontos, das aus der Gruppe entfernt werden soll, und klicken Sie auf **Entfernen**. (Wenn mehrere Konten entfernt werden sollen, klicken Sie bei gedrückter Umschalt- oder Strg-Taste auf die entsprechenden Namen und dann auf **Entfernen**.)
+1. Doppelklicken Sie auf den Namen der Gruppe oder des Benutzerkontos, die/das Sie aus einer Gruppe entfernen möchten.
+1. Klicken Sie auf **Gruppen** Registerkarte. Sie sehen, zu welchen Gruppen das ausgewählte Konto gehört.
+1. Im **Gruppen** klicken Sie auf den Namen des Benutzers oder der Gruppe, den/die Sie aus der Gruppe entfernen möchten, und klicken Sie auf **Entfernen**. (Wenn mehrere Konten entfernt werden sollen, klicken Sie bei gedrückter Umschalt- oder Strg-Taste auf die entsprechenden Namen und dann auf **Entfernen**.)
 
    ![cqsecurityremoveuserfromgrp](assets/cqsecurityremoveuserfromgrp.png)
 
@@ -576,9 +580,9 @@ So entfernen Sie ein Benutzer- oder Gruppenkonto aus einer Gruppe:
 
 So entfernen Sie Konten aus einer Gruppe:
 
-1. Doppelklicken Sie auf den Namen der Gruppe, aus der Mitglieder entfernt werden sollen.
-1. Klicken Sie auf die Registerkarte **Mitglieder**. Daraufhin wird eine Liste der Mitglieder angezeigt, die bereits zu dieser Gruppe gehören.
-1. Klicken Sie im Bereich **Mitglieder** auf den Namen des Mitglieds, das aus der Gruppe entfernt werden soll, und klicken Sie auf **Entfernen**. (Wenn mehrere Benutzer entfernt werden sollen, klicken Sie bei gedrückter Umschalt- oder Strg-Taste auf die entsprechenden Namen und dann auf **Entfernen**.)
+1. Doppelklicken Sie auf den Namen der Gruppe, aus der Sie Mitglieder entfernen möchten.
+1. Klicken Sie auf **Mitglieder** Registerkarte. Es wird eine Liste der Mitglieder angezeigt, die bereits zu dieser Gruppe gehören.
+1. Im **Mitglieder** klicken Sie auf den Namen des Mitglieds, das Sie aus der Gruppe entfernen möchten, und klicken Sie auf **Entfernen**. (Wenn Sie mehrere Benutzer entfernen möchten, klicken Sie bei gedrückter Umschalt- oder Strg-Taste auf diese Namen und klicken Sie auf **Entfernen**.
 
    ![cqsecurityremovemember](assets/cqsecurityremovemember.png)
 
@@ -596,14 +600,14 @@ So entfernen Sie Mitglieder aus einer Gruppe unter einem bestimmten Pfad:
 
    ![chlimage_1-350](assets/chlimage_1-350.png)
 
-1. Aktivieren Sie das Kontrollkästchen in der Spalte **Mitglied** für die Mitglieder, die Berechtigungen für diesen Pfad erhalten sollen. Deaktivieren Sie das Kontrollkästchen für die Mitglieder, denen Berechtigungen entzogen werden sollen. In der von Ihnen geänderten Zelle wird ein rotes Dreieck angezeigt.
+1. Aktivieren Sie das Kontrollkästchen im **Mitglied** -Spalte für die Mitglieder, die Berechtigungen für diesen Pfad erhalten sollen. Deaktivieren Sie das Kontrollkästchen für Mitglieder, für die Sie Berechtigungen entfernen möchten. In der Zelle, an der Sie Änderungen vorgenommen haben, wird ein rotes Dreieck angezeigt.
 1. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ### Benutzersynchronisierung {#user-synchronization}
 
 Wenn es sich bei der Bereitstellung um eine [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) handelt, müssen Benutzende sowie Gruppen auf allen Veröffentlichungsknoten synchronisiert werden.
 
-Informationen zur Benutzersynchronisierung und deren Aktivierung finden Sie unter [Benutzersynchronisierung](/help/sites-administering/sync.md).
+Informationen zur Benutzersynchronisierung und zur Aktivierung finden Sie unter [Benutzersynchronisierung](/help/sites-administering/sync.md).
 
 ## Verwalten von Berechtigungen {#managing-permissions}
 
@@ -611,7 +615,7 @@ Dieser Abschnitt beschreibt, wie Berechtigungen, darunter auch die zur Replikati
 
 ### Festlegen von Berechtigungen {#setting-permissions}
 
-Durch Berechtigungen können Benutzer bestimmte Aktionen für Ressourcen unter bestimmten Pfade durchführen. Dazu gehört auch das Erstellen oder Löschen von Seiten.
+Mit Berechtigungen können Benutzer bestimmte Aktionen auf Ressourcen in bestimmten Pfaden durchführen. Dazu gehört auch das Erstellen oder Löschen von Seiten.
 
 So fügen Sie Berechtigungen hinzu bzw. ändern oder löschen diese:
 
@@ -627,19 +631,19 @@ So fügen Sie Berechtigungen hinzu bzw. ändern oder löschen diese:
 
 ### Festlegen von Replikationsberechtigungen {#setting-replication-privileges}
 
-Die Replikationsberechtigung bezeichnet das Recht zur Veröffentlichung von Inhalten. Sie kann für Gruppen und Benutzer festgelegt werden.
+Die Replikationsberechtigung ist das Recht, Inhalte zu veröffentlichen und kann für Gruppen und Benutzer festgelegt werden.
 
 >[!NOTE]
 >
->* Alle auf eine Gruppe angewendeten Replikationsrechte gelten für alle Benutzer in dieser Gruppe.
+>* Alle auf eine Gruppe angewendeten Replikationsrechte gelten für alle Benutzer dieser Gruppe.
 >* Die Replikationsberechtigungen eines Benutzers ersetzen die Replikationsberechtigungen einer Gruppe.
->* Die Replikationsrechte „Zulassen“ haben Vorrang vor den Replikationsrechten „Ablehnen“. Weitere Informationen finden Sie unter [Berechtigungen in AEM](#permissions-in-aem).
+>* Die Replikationsrechte &quot;Zulassen&quot;haben eine höhere Priorität als die Replikationsrechte &quot;Ablehnen&quot;. Weitere Informationen finden Sie unter [Berechtigungen in AEM](#permissions-in-aem).
 >
 
 
 So legen Sie Replikationsberechtigungen fest:
 
-1. Wählen Sie den Benutzer oder die Gruppe aus der Liste aus, doppelklicken Sie zum Öffnen und klicken Sie auf **Berechtigungen**.
+1. Wählen Sie den Benutzer oder die Gruppe aus der Liste aus, doppelklicken Sie zum Öffnen auf und klicken Sie auf **Berechtigungen**.
 1. Navigieren Sie im Raster zu dem Pfad, unter dem die/der Benutzende Replikationsberechtigungen besitzen soll, oder [suchen Sie nach Knoten.](#searching-for-nodes)
 
 1. Aktivieren Sie in der Spalte **Replizieren** im ausgewählten Pfad das Kontrollkästchen, um eine Replikationsberechtigung für diese Benutzerin, diesen Benutzer oder diese Gruppe hinzuzufügen, oder deaktivieren Sie das Kontrollkästchen, um die Replikationsberechtigung aufzuheben. In AEM wird ein rotes Dreieck dort angezeigt, wo Sie Änderungen vorgenommen, aber noch nicht gespeichert haben.
@@ -650,11 +654,11 @@ So legen Sie Replikationsberechtigungen fest:
 
 ### Suchen nach Knoten {#searching-for-nodes}
 
-Beim Hinzufügen oder Entfernen von Berechtigungen können Sie Knoten durchsuchen oder nach Knoten suchen.
+Beim Hinzufügen oder Entfernen von Berechtigungen können Sie den Knoten durchsuchen oder suchen.
 
-Es gibt zwei verschiedene Typen von Pfadsuchvorgängen:
+Es gibt zwei verschiedene Arten der Pfadsuche:
 
-* Pfadsuche – Wenn die Suchzeichenfolge mit „/“ beginnt, wird nach den direkt untergeordneten Knoten des angegebenen Pfads gesucht:
+* Pfadsuche - Wenn die Suchzeichenfolge mit &quot;/&quot;beginnt, sucht die Suche nach den direkten Unterknoten des angegebenen Pfads:
 
 ![cqsecuritypathsearch](assets/cqsecuritypathsearch.png)
 
@@ -676,39 +680,39 @@ So führen Sie eine Pfad- oder Volltextsuche durch:
 
 1. Geben Sie einen Suchbegriff in das Suchfeld ein.
 
-### Stellvertretendes Agieren für Benutzer {#impersonating-users}
+### Benutzerpersonalisierung {#impersonating-users}
 
-Sie können einen oder mehr Benutzer angeben, die stellvertretend für den aktuellen Benutzer agieren dürfen. Dies bedeutet, dass diese Benutzer von ihren eigenen Kontoeinstellungen zu denen des aktuellen Benutzers wechseln und in dessen Auftrag handeln können.
+Sie können einen oder mehrere Benutzer angeben, die stellvertretend für den aktuellen Benutzer agieren dürfen. Dies bedeutet, dass sie ihre Kontoeinstellungen auf die des aktuellen Benutzers umstellen und im Namen dieses Benutzers handeln können.
 
-Seien Sie beim Verwenden dieser Funktion vorsichtig, da sie es Benutzern ermöglicht, Aktionen durchzuführen, zu denen sie selbst nicht berechtigt sind. Wenn Benutzer für einen anderen Benutzer stellvertretend agieren, werden sie benachrichtigt, dass sie nicht mit dem eigenen Profil angemeldet sind.
+Verwenden Sie diese Funktion mit Vorsicht, da sie Benutzern die Durchführung von Aktionen ermöglichen kann, die ihr eigener Benutzer nicht ausführen kann. Bei der stellvertretenden Verwendung eines Benutzers werden Benutzer darüber informiert, dass sie nicht als selbst angemeldet sind.
 
-Diese Funktion empfiehlt sich für verschiedene Szenarien, z. B.:
+Es gibt verschiedene Szenarien, in denen Sie diese Funktion verwenden können, darunter:
 
-* Wenn Sie nicht im Büro sind, können Sie während Ihrer Abwesenheit einen anderen Benutzer stellvertretend agieren lassen. Mithilfe dieser Funktion können Sie sicherstellen, dass ein anderer Benutzer über Ihre Zugriffsrechte verfügt und Sie weder ein Benutzerprofil ändern noch Ihr Kennwort herausgeben müssen.
-* Sie können die Funktion zum Debuggen verwenden, etwa um nachzuvollziehen, wie eine Website für Benutzer mit beschränkten Zugriffsrechten aussieht. Wenn ein Benutzer technische Probleme meldet, können Sie außerdem stellvertretend für diesen Benutzer agieren, um das Problem zu diagnostizieren und zu beheben.
+* Wenn du nicht im Büro bist, kannst du dich von einer anderen Person stellvertretend agieren lassen, während du weg bist. Mit dieser Funktion können Sie sicherstellen, dass jemand über Ihre Zugriffsrechte verfügt und Sie kein Benutzerprofil ändern oder Ihr Passwort angeben müssen.
+* Sie können sie zum Debugging verwenden. Beispielsweise um zu sehen, wie die Website nach einem Benutzer mit eingeschränkten Zugriffsrechten sucht. Wenn sich ein Benutzer über technische Probleme beschwert, können Sie sich für diesen Benutzer stellvertretend für die Diagnose und Lösung des Problems entscheiden.
 
-So agieren Sie stellvertretend für einen vorhandenen Benutzer:
+So imitieren Sie einen vorhandenen Benutzer:
 
-1. Wählen Sie in der Strukturliste den Namen des Benutzers aus, dem andere Benutzer zum stellvertretenden Agieren zugewiesen werden sollen. Doppelklicken Sie zum Öffnen darauf.
-1. Klicken Sie auf die Registerkarte **Darsteller**.
-1. Klicken Sie auf den Benutzer, der stellvertretend für den ausgewählten Benutzer agieren können soll. Ziehen Sie den Benutzer (der stellvertretend agieren wird) aus der Liste in den Bereich „Darsteller“. Der Name wird in der Liste angezeigt.
+1. Wählen Sie in der Strukturliste den Namen der Person aus, der Sie andere Benutzer zuweisen möchten, die stellvertretend agieren sollen. Doppelklicken Sie zum Öffnen auf .
+1. Klicken Sie auf **Darsteller** Registerkarte.
+1. Klicken Sie auf den Benutzer, der stellvertretend für den ausgewählten Benutzer agieren soll. Ziehen Sie den Benutzer (der stellvertretend agieren wird) aus der Liste in den Bereich Identität annehmen . Der Name wird in der Liste angezeigt.
 
    ![chlimage_1-351](assets/chlimage_1-351.png)
 
 1. Klicken Sie auf **Speichern**.
 
-### Festlegen von Benutzer- und Gruppenvoreinstellungen {#setting-user-and-group-preferences}
+### Festlegen von Benutzer- und Gruppeneinstellungen {#setting-user-and-group-preferences}
 
-So legen Sie Benutzer- und Gruppenvoreinstellungen fest, einschließlich Voreinstellungen für die Sprache, Fensterverwaltung und Symbolleiste:
+So legen Sie Benutzer- und Gruppenvoreinstellungen fest, einschließlich Sprache, Fensterverwaltung und Symbolleistenvoreinstellungen:
 
-1. Wählen Sie in der linken Struktur den Benutzer bzw. die Gruppe aus, dessen bzw. deren Voreinstellungen geändert werden sollen. Um mehrere Benutzer oder Gruppen auszuwählen, klicken Sie bei gedrückter Strg- oder Umschalttaste.
-1. Klicken Sie auf die Registerkarte **Voreinstellungen**.
+1. Wählen Sie im linken Baum den Benutzer oder die Gruppe aus, dessen Voreinstellungen Sie ändern möchten. Um mehrere Benutzer oder Gruppen auszuwählen, klicken Sie bei gedrückter Strg- oder Umschalttaste auf Ihre Auswahl.
+1. Klicken Sie auf **Voreinstellungen** Registerkarte.
 
    ![cqsecurityPreferences](assets/cqsecuritypreferences.png)
 
-1. Nehmen Sie nach Bedarf Änderungen an den Gruppen- oder Benutzereinstellungen vor und klicken Sie abschließend auf **Speichern**.
+1. Nehmen Sie die erforderlichen Änderungen an den Gruppen- oder Benutzereinstellungen vor und klicken Sie auf **Speichern** wenn fertig.
 
-### Einrichten von Benutzern oder Administratoren mit der Berechtigung zum Verwalten anderer Benutzer {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
+### Benutzer oder Administratoren mit der Berechtigung zum Verwalten anderer Benutzer einrichten {#setting-users-or-administrators-to-have-the-privilege-to-manage-other-users}
 
 So richten Sie Benutzende oder Admins mit Berechtigungen zum Löschen/Aktivieren/Deaktivieren anderer Benutzenden ein:
 
@@ -720,11 +724,11 @@ So richten Sie Benutzende oder Admins mit Berechtigungen zum Löschen/Aktivieren
 
    ![cqsecurityreplicatepermissions](assets/cqsecurityreplicatepermissions.png)
 
-   Der ausgewählte Benutzer ist nun in der Lage, Benutzer zu deaktivieren, zu aktivieren, zu löschen und zu erstellen.
+   Der ausgewählte Benutzer kann jetzt Benutzer deaktivieren, aktivieren, löschen und erstellen.
 
 ### Erweitern von Berechtigungen auf Projektebene {#extending-privileges-on-a-project-level}
 
-Wenn Sie anwendungsspezifische Berechtigungen umsetzen möchten, finden Sie im Folgenden alle erforderlichen Informationen zur Implementierung benutzerdefinierter Berechtigungen und zu ihrer CQ-weiten Durchsetzung:
+Wenn Sie planen, anwendungsspezifische Berechtigungen zu implementieren, wird in den folgenden Informationen beschrieben, was Sie für die Implementierung einer benutzerdefinierten Berechtigung und deren Durchsetzung in CQ wissen müssen:
 
 Die Berechtigung zum Ändern der Hierarchie wird von einer Kombination von jcr-Berechtigungen abgedeckt. Die Replikationsberechtigung **crx:replicate** wird mit anderen Berechtigungen im jcr-Repository gespeichert/evaluiert. Sie wird jedoch nicht auf jcr-Ebene durchgesetzt.
 

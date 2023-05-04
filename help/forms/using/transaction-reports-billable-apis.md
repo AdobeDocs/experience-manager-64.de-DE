@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
-source-git-commit: eeaa70855980ca62574f89e280b46c02c0b65bdc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1859'
-ht-degree: 95%
+source-wordcount: '1895'
+ht-degree: 93%
 
 ---
 
 # Abrechenbare APIs für Transaktionsberichte {#transaction-reports-billable-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Liste aller APIs, die als Transaktionen verbucht werden
 
@@ -77,7 +81,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td> 
+   <td><a href="https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td> 
    <td>Konvertiert Adobe PDF in unterstützte Dateitypen. </td> 
    <td>Verarbeitete Dokumente<br /> </td> 
    <td> </td> 
@@ -238,7 +242,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td> 
+   <td><a href="https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td> 
    <td>Konvertiert eine einfache PDF-Datei in das PostScript-Format mithilfe der in der Optionsbeschreibung angegebenen Optionen.</td> 
    <td>Verarbeitete Dokumente</td> 
    <td> </td> 
@@ -286,8 +290,8 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
     </ul> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
-   <td>Führt das angegebene DDX-Dokument aus und gibt ein <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>-Objekt zurück, das die resultierenden Dokumente enthält. </td> 
+   <td><a href="https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td> 
+   <td>Führt das angegebene DDX-Dokument aus und gibt ein <a href="https://helpx.adobe.com/de/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>-Objekt zurück, das die resultierenden Dokumente enthält. </td> 
    <td>Verarbeitete Dokumente</td> 
    <td>Der Assembler-Service unterstützt alle Eingabedateiformate, die von PDF Generator, Forms und Ausgabe-Services unterstützt werden, als Ausgabedateiformate. </td> 
   </tr>

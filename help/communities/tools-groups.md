@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
 role: Admin
 exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 2%
+source-wordcount: '569'
+ht-degree: 3%
 
 ---
 
 # Gruppenvorlagen {#group-templates}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Gruppenvorlagen-Konsole ähnelt der [Site-Vorlagen](sites.md) Konsole. Beide sind Blueprints für eine Reihe vorab verkabelter Seiten und Funktionen, die eine Community-Site bilden. Der Unterschied besteht darin, dass eine Site-Vorlage für die Hauptgemeinde und eine Gruppenvorlage für eine Community-Gruppe, eine Unter-Community, die in der Hauptgemeinde verschachtelt ist, bestimmt wird.
 

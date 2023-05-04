@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 64%
+source-wordcount: '1413'
+ht-degree: 53%
 
 ---
 
 # Verwalten von ebenenübergreifenden Assets mit Unter-Assets {#managing-compound-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Adobe Experience Manager Assets kann erkennen, ob eine hochgeladene Datei Verweise auf Assets enthält, die bereits im Repository vorhanden sind. Diese Funktion ist nur für unterstützte Dateiformate verfügbar. Wenn das hochgeladene Asset Referenzen zu [!DNL Experience Manager]-Assets enthält, wird eine bidirektionale Verknüpfung zwischen dem hochgeladenen Asset und den referenzierten Assets erstellt.
 
@@ -26,8 +30,8 @@ Referenzen werden auf der Grundlage von Pfad, Dokument-ID und Instanz-ID der ref
 
 Sie können vorhandene [!DNL Experience Manager] Assets aus einer Adobe Illustrator-Datei.
 
-1. Verwenden [[!DNL Experience Manager] Desktop-Programm](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html), Bereitstellung [!DNL Experience Manager] Assets-Repository als Laufwerk auf Ihrem lokalen Computer. Navigieren Sie im bereitgestellten Laufwerk zum Speicherort des Assets, das Sie referenzieren möchten.
-1. Ziehen Sie das Asset vom bereitgestellten Laufwerk auf die Illustrator-Datei.
+1. Verwenden [[!DNL Experience Manager] Desktop-Programm](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html), Bereitstellung [!DNL Experience Manager] Assets-Repository als Laufwerk auf Ihrem lokalen Computer. Navigieren Sie im bereitgestellten Laufwerk zum Speicherort des Assets, auf das Sie verweisen möchten.
+1. Ziehen Sie das Asset vom bereitgestellten Laufwerk in die Illustrator-Datei.
 1. Speichern Sie die Illustrator-Datei auf dem bereitgestellten Laufwerk oder [hochladen](managing-assets-touch-ui.md#uploading-assets) der [!DNL Experience Manager] Repository.
 1. Nachdem der Workflow abgeschlossen ist, navigieren Sie zur Detailseite für das Asset. Die Verweise auf vorhandene [!DNL Experience Manager] Assets werden unter **[!UICONTROL Abhängigkeiten]** im **[!UICONTROL Verweise]** Spalte.
 
@@ -49,7 +53,7 @@ Referenzierte Assets sind bereits in [!DNL Experience Manager] Assets. Sie könn
 
 >[!NOTE]
 >
->Wenn der InDesign-Server als Proxyserver dient, wird die Vorschau der InDesign-Dateien innerhalb der XMP-Metadaten eingebettet. In diesem Fall ist die Extraktion von Miniaturen nicht explizit erforderlich. Wenn der InDesign-Server nicht als Proxyserver fungiert, müssen Miniaturen für InDesign-Dateien explizit extrahiert werden.
+>Wenn der InDesign-Server Proxyserver ist, wird die Vorschau der InDesign-Dateien in die XMP-Metadaten eingebettet. In diesem Fall ist die Extraktion von Miniaturen nicht explizit erforderlich. Wenn der InDesign-Server jedoch nicht proximiert ist, müssen Miniaturansichten explizit für InDesign-Dateien extrahiert werden.
 
 Beim Hochladen einer INDD-Datei werden die Verweise abgerufen, indem Assets mit den Eigenschaften `xmpMM:InstanceID` und `xmpMM:DocumentID` im Repository abgefragt werden.
 
@@ -62,7 +66,7 @@ Dieses Verfahren ähnelt dem [Hinzufügen von Assets als Referenzen in Adobe Ill
 1. Führen Sie die Schritte unter [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md) , um einen neuen Workflow zu erstellen.
 1. Verwenden Sie die [Paketfunktion von Adobe InDesign](https://helpx.adobe.com/indesign/how-to/save-share-projects.html) um das Dokument zu exportieren. Adobe InDesign kann ein Dokument und die verknüpften Assets als Paket exportieren. In diesem Fall enthält der exportierte Ordner eine `Links` -Ordner, der Teil-Assets in der InDesign-Datei enthält. Der `Links`-Ordner befindet sich im selben Ordner wie die INDD-Datei.
 1. Erstellen Sie eine ZIP-Datei und laden Sie sie in das [!DNL Experience Manager]-Repository hoch.
-1. Starten Sie den Unarchiver-Workflow.
+1. Starten Sie den Workflow Archivierung aufheben .
 1. Wenn der Workflow abgeschlossen ist, werden die Referenzen im Link-Ordner automatisch als Teil-Assets referenziert. Um eine Liste der referenzierten Assets anzuzeigen, navigieren Sie zur Asset-Detailseite des InDesign-Assets und schließen Sie die [Leiste](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## Adobe Photoshop: Hinzufügen von Assets als Referenzen {#refps}
@@ -81,7 +85,7 @@ Dieses Verfahren ähnelt dem [Hinzufügen von Assets als Referenzen in Adobe Ill
 
 >[!NOTE]
 >
->Die Assets innerhalb der ebenenübergreifenden Assets können ebenfalls basierend auf ihrer Dokument-ID und ihrer Instanz-ID referenziert werden. Diese Funktion ist nur in Adobe Illustrator und Adobe Photoshop verfügbar. Bei anderen Versionen erfolgt die Referenzierung basierend auf dem relativen Pfad von verknüpften Assets im ebenenübergreifenden Haupt-Asset, wie das auch bei früheren Versionen von AEM der Fall ist.
+>Die Assets innerhalb der ebenenübergreifenden Assets können ebenfalls basierend auf ihrer Dokument-ID und ihrer Instanz-ID referenziert werden. Diese Funktion ist nur für Adobe Illustrator- und Adobe Photoshop-Versionen verfügbar. Für andere erfolgt der Verweis auf Basis des relativen Pfads verknüpfter Assets im Haupt-ebenenübergreifenden Asset, wie in früheren Versionen von AEM ausgeführt.
 
 ## Erstellen von Unter-Assets {#generate-subassets}
 
@@ -115,7 +119,7 @@ Sie können eine mehrseitige Datei, z. B. PDF, INDD, PPT, PPTX und AI-Datei anze
 
 ![Anzeigen der Seiten eines mehrseitigen Assets](assets/view_multipage_asset_fmr.gif)
 
-In InDesign können Sie Seiten mithilfe des InDesign-Servers extrahieren. Wenn die Vorschau von Seiten bei der Erstellung einer InDesign-Datei gespeichert wird, ist der InDesign-Server nicht für die Seitenextraktion erforderlich.
+Für InDesign können Sie Seiten mithilfe des InDesign-Servers extrahieren. Wenn die Seitenvorschau während der Erstellung einer InDesign-Datei gespeichert wird, ist InDesign Server nicht für die Seitenextraktion erforderlich.
 
 Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in den Steuerelementen des Seiten-Viewers verfügbar:
 

@@ -10,24 +10,28 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: ccb792f7-e837-4790-818f-e2c446328e71
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 69%
 
 ---
 
 # Testen von responsivem Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Alle We.Retail-Seiten verwenden die Layout-Container-Komponente, um responsives Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem **Layout**-Modus im Seiteneditor verwendet, mit dem Sie das responsive Layout je nach Gerät erstellen und bearbeiten können.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Alle We.Retail-Seiten verwenden die Layout-Container-Komponente, um responsives Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout entsprechend der Geräte-/Fenstergröße und dem Format neu anordnen. Die Komponente wird zusammen mit dem **Layout**-Modus im Seiteneditor verwendet, mit dem Sie das responsive Layout je nach Gerät erstellen und bearbeiten können.
 
 ## Testen {#trying-it-out}
 
-1. Bearbeiten Sie die Seite „Arctic Surfing“ im Abschnitt „Erlebnisse“ des Sprachmaster-Zweigs.
+1. Bearbeiten Sie die Seite Arktisches Surfen im Abschnitt Erlebnisse des Übergeordneten Sprachzweigs.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Wechseln Sie zu **Vorschau**, um die Seite so anzuzeigen, wie sie für einen Besucher der Website gerendert würde. Führen Sie einen Bildlauf nach unten zum Inhalt des Artikels *Aloha-Spirituosen in Nordnorwegen*.
+1. Wechseln Sie zu **Vorschau**, um die Seite so anzuzeigen, wie sie für einen Besucher der Website gerendert würde. Blättern Sie nach unten zum Inhalt des Artikels *Aloha-Spirituosen in Nordnorwegen*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -35,7 +39,7 @@ Alle We.Retail-Seiten verwenden die Layout-Container-Komponente, um responsives 
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
-1. Wechseln Sie in den Layout-Modus. Die Emulator-Symbolleiste wird automatisch angezeigt, sodass Sie Ihr Layout für das Zielgerät planen können.
+1. Wechseln Sie in den Layout-Modus. Die Emulator-Symbolleiste wird automatisch angezeigt, sodass Sie Ihr Layout für jedes Zielgerät planen können.
 
    Wenn Sie eine Komponente auswählen, werden im Bearbeitungsmenü neben den Größenänderungsgriffen für die Komponente Optionen zum Ein- und Ausblenden angezeigt.
 

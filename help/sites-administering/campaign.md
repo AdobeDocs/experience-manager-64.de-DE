@@ -1,7 +1,7 @@
 ---
 title: Integrieren mit Adobe Campaign
 seo-title: Integrating with Adobe Campaign
-description: Erfahren Sie, wie Sie AEM mit Adobe Campaign integrieren.
+description: Erfahren Sie, wie Sie AEM in Adobe Campaign integrieren.
 seo-description: Learn how to integrate AEM with Adobe Campaign.
 uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
 contentOwner: Guillaume Carlino
@@ -10,23 +10,27 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: 482c5889-d756-428b-bf0c-38c372e3c8b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 100%
+source-wordcount: '175'
+ht-degree: 38%
 
 ---
 
 # Integrieren mit Adobe Campaign{#integrating-with-adobe-campaign}
 
-Adobe Campaign umfasst verschiedene Lösungen, mit denen Sie Kampagnen personalisieren und über Ihre gesamten Online- und Offline-Kanäle liefern können.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Diese Version von AEM ermöglicht die Integration mit einer der folgenden Versionen von Adobe Campaign:
+Adobe Campaign ist eine Reihe von Lösungen, mit denen Sie Kampagnen personalisieren und über alle Ihre Online- und Offline-Kanäle hinweg bereitstellen können.
 
-* Adobe Campaign 6.1, erhältlich als On-Premise-Version.
+Sie können diese Version von AEM in eine der folgenden Versionen von Adobe Campaign integrieren:
+
+* Adobe Campaign 6.1, die On-Premise-Lösung.
 * Adobe Campaign Standard, erhältlich als Lizenzabonnement.
 
-In dieser Dokumentation wird beschrieben, wie Sie AEM mit Adobe Campaign integrieren. Die Integration läuft bei der Lösung auf Abonnementbasis und der On-Premise-Lösung jeweils unterschiedlich ab.
+In dieser Dokumentation wird die Integration von AEM in Adobe Campaign beschrieben. Je nachdem, ob Sie über die abonnementbasierte oder On-Premise-Lösung verfügen, unterscheiden sich die Integrationsschritte geringfügig.
 
 * [Integrieren mit Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md)
 * [Integrieren mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)

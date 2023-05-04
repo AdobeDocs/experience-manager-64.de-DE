@@ -1,17 +1,21 @@
 ---
-title: AEM 6.4-Entwickleranleitung
+title: AEM 6.4-Benutzerhandbuch für Entwickler
 seo-title: AEM 6.4 Developing User Guide
 description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 82ba239f-f83a-4ee1-b201-d44c220fd193
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 100%
+source-wordcount: '342'
+ht-degree: 91%
 
 ---
 
-# AEM 6.4-Entwickleranleitung
+# AEM 6.4-Benutzerhandbuch für Entwickler
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 

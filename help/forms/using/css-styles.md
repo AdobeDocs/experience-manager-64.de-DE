@@ -1,7 +1,7 @@
 ---
 title: Erstellen von CSS-Stilen für HTML5-Formulare
 seo-title: Creating CSS styles for HTML5 forms
-description: Erfahren Sie, wie Sie das Erscheinungsbild von HTML5-Formularen ändern, indem Sie die CSS-Klasse ändern, die mit dem HTML-Formularelement verknüpft ist.
+description: Erfahren Sie, wie Sie das Erscheinungsbild von HTML5-Formularen ändern können, indem Sie die CSS-Klasse ändern, die mit dem HTML-Formularelement verknüpft ist.
 seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
 uuid: 43c689b4-243c-43de-a8be-1eef10d75295
 contentOwner: robhagat
@@ -11,24 +11,28 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
 exl-id: 9e381e71-63ff-41ab-a6ec-9f92447b65a0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 100%
+source-wordcount: '848'
+ht-degree: 33%
 
 ---
 
 # Erstellen von CSS-Stilen für HTML5-Formulare {#creating-css-styles-for-html-forms}
 
-HTML5-Wiedergabe eines XFA-basierten Formularvorlage besteht aus mehreren HTML-Elementen. Diese Elemente werden in einer Reihenfolge angeordnet. Jedes Element hat klar definierte CSS-Klassen. Sie können die CSS-Klassen verwenden, um das Aussehen eines Elements zu ändern.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+HTML5-Ausgabedarstellung einer XFA-basierten Formularvorlage besteht aus mehreren HTML-Elementen. Diese Elemente werden in einer Reihenfolge angeordnet. Jedes Element hat klar definierte CSS-Klassen. Sie können diese CSS-Klasse verwenden, um das Erscheinungsbild eines Elements auszuwählen und zu ändern.
 
 >[!NOTE]
 >
->In den CSS-Klassen dürfen die Werte der Attribute für Breite, Höhe, Rahmenstärke, oberen Bereich, linken Bereich, rechten Bereich, unteren Bereich, Abstand und Rand nicht geändert werden. Änderungen an der Position und den Größenattributen ziehen Änderungen am Layout des Formulars nach sich.
+>Ändern Sie in den CSS-Klassen nicht den Wert der Attribute für Breite, Höhe, Rahmendicke, Oben, Links, Rechts, Unten, Abstand, Rand und andere Position und Größe. Jede Änderung der Position und der Größenattribute bringt Änderungen am Layout des Formulars mit sich.
 
-## CSS-Klassen für Elemente  {#css-classes-nbsp-for-elements-nbsp}
+## CSS-Klassen für Elemente  {#css-classes-nbsp-for-elements-nbsp}
 
-Jedes Element enthält klar definierte CSS-Klassen. Die Klassen können geändert werden, um das Aussehen eines Elements zu ändern. Mit Ausnahme des Feld- und Zeichenelements hat jedes Element zwei CSS-Klassen: Type-Klasse und Name-Klasse.
+Jedes Element enthält klar definierte CSS-Klassen. Sie können diese Klassen ändern, um das Erscheinungsbild eines Elements zu ändern. Mit Ausnahme des Feld- und Zeichenelements hat jedes Element zwei CSS-Klassen: Type-Klasse und Name-Klasse.
 
 * Die **Typ-Klasse** stellt den Typ des XFA-Feldes dar. Sie können die `type`-Klasse außer Kraft setzen, um den Stil aller Elemente eines bestimmten Typs zu ändern.
 
@@ -36,9 +40,9 @@ Jedes Element enthält klar definierte CSS-Klassen. Die Klassen können geänder
 
 >[!NOTE]
 >
->Manche XFA-Elemente haben keinen Namen. Um den Stil dieser Komponenten zu ändern, müssen Sie alle Komponenten dieses Typs ändern.
+>Einige XFA-Elemente haben keinen Namen. Um die Stile solcher Komponenten zu ändern, ändern Sie alle Komponenten dieses Typs.
 
-Die Seiten, die in AEM Forms Designer nicht benannt wurden, werden in einem HTML5-Formular in aufsteigenden Reihenfolge ihrer Zahl benannt. Beispiel: Für ein HTML5-Formular mit zwei Seiten werden die Seiten Seite1, Seite2 benannt.
+Für die Seiten, die nicht in AEM Forms Designer benannt sind, werden die Seiten in einem HTML5-Formular in der steigenden Reihenfolge ihrer Anzahl benannt. Beispiel: Für ein HTML5-Formular mit zwei Seiten werden die Seiten Seite1, Seite2 benannt.
 
 ## Feldelement {#field-element}
 
@@ -46,7 +50,7 @@ Das Feldelement enthält zwei verschachtelte Elemente: Widget und Beschriftung.
 
 **Widget-Element**
 
-Das Widget-Element enthält das Element der Benutzeroberfläche für die Interaktion mit dem Benutzer. Es enthält drei CSS-Klassen:
+Das Widget-Element enthält das Element der Benutzeroberfläche für die Interaktion mit Benutzern. Es enthält drei CSS-Klassen:
 
 * **Widget:** Diese Klasse hat jedes Widget.
 * **name**: Die „name“-Klasse enthalten alle Widgets von AEM. Für benutzerdefinierte Widgets stellt der Widget-Entwickler die name-Klasse bereit.
@@ -69,7 +73,7 @@ Das Widget-Element enthält das Element der Benutzeroberfläche für die Interak
 </div>
 ```
 
-Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine weitere CSS-Klasse: **subtype**. Eine subtype-Klasse zeigt an, welcher Feldtyp es ist, z. B. NumericField, DateField, TextField. Sie können die subtype-Klasse außer Kraft setzen, um die Stile aller Felder des Typs „subtype“ zu ändern.
+Neben der type- und name-Klasse enthält die Feldkomponente auch eine zusätzliche CSS-Klasse mit dem Namen **subtype**. Ein Untertyp gibt an, welcher Feldtyp es ist, z. B. NumericField, DateField, TextField. Sie können die Untertypklasse überschreiben, um die Formatierung aller Felder des Typs &quot;Untertyp&quot;zu ändern.
 
 ## CSS-Klassen für verschiedene Komponenten {#css-classes-for-different-components}
 
@@ -83,7 +87,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
   <tr> 
    <td>Seite</td> 
    <td>page</td> 
-   <td>Benutzerdefinierter Name<br /> oder<br /> Seite&lt;Seitenzahl&gt; (Standard)</td> 
+   <td>Benutzerdefinierter Name<br /> oder<br /> Seite&lt;pagenumber&gt; (Standard)</td> 
   </tr> 
   <tr> 
    <td>Inhaltsbereich</td> 
@@ -92,7 +96,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
   </tr> 
   <tr> 
    <td>Teilformular</td> 
-   <td>subform</td> 
+   <td>Teilformular</td> 
    <td>Benutzerdefinierter Name</td> 
   </tr> 
   <tr> 
@@ -101,7 +105,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
    <td>Benutzerdefinierter Name</td> 
   </tr> 
   <tr> 
-   <td>Zeichenelement</td> 
+   <td>Draw</td> 
    <td>draw</td> 
    <td>Benutzerdefinierter Name</td> 
   </tr> 
@@ -118,16 +122,16 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
   <tr> 
    <td>Widget</td> 
    <td>Widget</td> 
-   <td>Vom Widget-Entwickler definiert (Informationen zu benutzerdefinierten Widgets finden Sie im folgenden Abschnitt)</td> 
+   <td>Der Widget-Entwickler definiert sie (für benutzerdefinierte Widgets siehe die Tabelle im folgenden Abschnitt)</td> 
   </tr> 
  </tbody> 
 </table>
 
 ## CSS-Klassen für verschiedene Felder {#css-classes-for-different-fields}
 
-Der AEM Forms Designer unterstützt unterschiedliche Typen von Feldern in einem Formular wie NumericField, DecimalField und DateField. All diese Felder enthalten in HTML die oben genannten CSS-Klassen. Je nach Typ des Feldes enthalten sie auch ein paar zusätzliche Klassen.
+AEM Forms Designer unterstützt verschiedene Feldtypen in einem Formular wie NumericField, DecimalField und Date Field. Alle diese Felder in HTML enthalten die oben genannten CSS-Klassen. Je nach Feldtyp enthalten sie auch einige zusätzliche Klassen.
 
-Jedes Feld verfügt über ein zugehöriges Widget, das das Benutzeroberflächen-Element darstellt. Die Klassen jedes Feldes und die mit den Feldern verknüpfte Widgets sind unten aufgeführt.
+Jedem Feld ist ein Widget zugeordnet, das das UI-Element darstellt. Die Klassen der einzelnen Felder und die mit jedem Feld verknüpften Widgets sind unten aufgeführt.
 
 <table> 
  <tbody> 
@@ -178,7 +182,7 @@ Jedes Feld verfügt über ein zugehöriges Widget, das das Benutzeroberflächen-
    <td>choicelist<br type="_moz" /> </td> 
    <td>dropDownListWidget<br type="_moz" /> </td> 
    <td>choicelistwidget<br type="_moz" /> </td> 
-   <td>Wählen Sie  aus.</td> 
+   <td>auswählen</td> 
   </tr> 
   <tr> 
    <td>ListBox<br type="_moz" /> </td> 
@@ -227,26 +231,26 @@ Jedes Feld verfügt über ein zugehöriges Widget, das das Benutzeroberflächen-
 
 ## CSS-Klassen für verschiedene Zeichenelemente {#css-classes-for-different-draw-elements}
 
-Mithilfe des AEM Forms Designer können Sie statische Zeichenelemente wie Text und Bilder einfügen. Jedes Zeichenelement ist mit einer separaten CSS-Klasse verknüpft. Die Liste der CSS-Klassen für Zeichenelemente ist unten aufgeführt. Jedes Zeichnenelement ist mit einer draw-Klasse verknüpft.
+Mit AEM Forms Designer können Sie statische Zeichenelemente wie Text und Bilder einfügen. Für jedes Zeichenelement wird eine separate CSS-Klasse mit diesem Element verknüpft. Die Liste der CSS-Klassen für Zeichenelemente ist unten aufgeführt. Jedem Zeichenelement ist eine Zeichenklasse zugeordnet.
 
 | **Zeichentyp** | **CSS-Klasse** |
 |---|---|
 | Text | text |
 | Bild | image |
-| Rechteck | rectangle |
-| Linie | Zeile |
+| Rechteck | Rechteck |
+| Line | Zeile |
 
-## Gestalten des Stils anderer Formularteile {#styling-other-parts-of-the-form}
+## Formatieren anderer Formularteile {#styling-other-parts-of-the-form}
 
 Neben dem Aussehen der Benutzerflächen-Komponenten im HTML-Formular können Sie auch den Stil von Elementen wie Inline-Fehler, Inline-Warnungen und Felder mit Überprüfungsfehlern ändern.
 
 `Styling Inline Errors`
 
-Wenn die Überprüfung eines Feldes einen Fehler ergibt, wird ein Inline-Fehler angezeigt, wenn das Feld aktiv ist. Um den Stil von Inline-Fehlern zu ändern, muss die CSS-ID **error-msg** außer Kraft gesetzt werden.
+Wenn die Überprüfung eines Felds zu einem Fehler führt, wird ein Inline-Fehler angezeigt, wenn das Feld aktiv ist. Um den Stil von Inline-Fehlern zu ändern, überschreiben Sie die CSS-ID **error-msg**.
 
 `Styling Inline Warnings`
 
-Wenn die Überprüfung eines Feldes eine Warnung ergibt, wird eine Inline-Warnung angezeigt, wenn das Feld aktiv ist. Um den Stil von Inline-Warnungen zu ändern, muss die CSS-ID **warning-msg** außer Kraft gesetzt werden.
+Wenn die Überprüfung eines Felds zu einer Warnung führt, wird eine Inline-Warnung angezeigt, wenn das Feld aktiv ist. Um den Stil dieser Inline-Warnungen zu ändern, überschreiben Sie die CSS-ID **warning-msg**.
 
 `Styling Fields with Validation Errors`
 

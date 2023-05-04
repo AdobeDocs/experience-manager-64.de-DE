@@ -12,14 +12,18 @@ discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 role: Admin
 exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '859'
 ht-degree: 5%
 
 ---
 
 # E-Mail konfigurieren {#configuring-email}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 AEM Communities verwendet E-Mail für
 
@@ -69,11 +73,11 @@ Einmal [Standard-E-Mail-Dienst](#default-mail-service-configuration) konfigurier
 
 Nur die Instanz für Abonnements muss weiter konfiguriert werden, wenn E-Mail-Antworten zugelassen werden.
 
-1. ` [email](#configuration-for-notifications)` Veröffentlichungsinstanz
+1. ` [email](#configuration-for-notifications)` instance
 
    für Benachrichtigungen, die keine Antwort-E-Mail unterstützen und nicht geändert werden sollten
 
-1. ` [subscriptions-email](#configuration-for-subscriptions)` Veröffentlichungsinstanz
+1. ` [subscriptions-email](#configuration-for-subscriptions)` instance
 
    erfordert eine Konfiguration, um die Erstellung von Beiträgen aus einer Antwort-E-Mail vollständig zu aktivieren
 
@@ -115,7 +119,7 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit für ein Mitglied 
 
 * **[!UICONTROL Name]** : *(erforderlich)* `subscriptions-email`. Nicht bearbeiten.
 
-* **[!UICONTROL Beitrag aus Antwort-E-Mail erstellen]**: Wenn diese Option aktiviert ist, kann der Empfänger der Abonnement-E-Mail Inhalte durch Senden einer Antwort posten. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL Beitrag aus Antwort-E-Mail erstellen]**: Wenn diese Option aktiviert ist, kann der Empfänger der Abonnement-E-Mail Inhalte durch Senden einer Antwort posten. Die Option Standard ist aktiviert.
 * **[!UICONTROL Getrackte ID zur Kopfzeile hinzufügen]**: Der Standardwert ist `Reply-To`.
 
 * **[!UICONTROL Höchstlänge des Betreffs]**: Wenn die Tracker-ID zur Betreffzeile hinzugefügt wird, ist dies die maximale Länge des Betreffs, ausgenommen die verfolgte ID, nach der sie abgeschnitten wird. Beachten Sie, dass dies so klein wie möglich sein sollte, um zu verhindern, dass getrackte ID-Informationen verloren gehen. Der Standardwert ist 200.
@@ -127,7 +131,7 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit für ein Mitglied 
 
 * **[!UICONTROL Tracker-ID-Präfix im Nachrichtentext]**: Wenn die Tracker-ID zum Nachrichtentext hinzugefügt wird, wird dieses Präfix verwendet. Der Standardwert ist `Please do not remove this:`.
 
-* **[!UICONTROL E-Mail als HTML]**: Wenn diese Option aktiviert ist, wird der Inhaltstyp der E-Mail als `"text/html;charset=utf-8"`. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL E-Mail als HTML]**: Wenn diese Option aktiviert ist, wird der Inhaltstyp der E-Mail als `"text/html;charset=utf-8"`. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Standardbenutzername]**: Dieser Name wird für Benutzer ohne Namen verwendet. Der Standardwert ist `no-reply@example.com`.
 

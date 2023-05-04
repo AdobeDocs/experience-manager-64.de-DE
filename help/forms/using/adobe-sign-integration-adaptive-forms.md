@@ -10,14 +10,18 @@ topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 feature: Adaptive Forms, Acrobat Sign
 exl-id: e7c27623-a889-4bd5-bfff-cfe513cd1a35
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 47%
+source-wordcount: '1003'
+ht-degree: 39%
 
 ---
 
 # Integrieren von Acrobat Sign mit AEM Forms {#integrate-adobe-sign-with-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Acrobat Sign ermöglicht Workflows für die elektronische Signatur für adaptive Formulare. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. v. a..
 
@@ -30,7 +34,7 @@ Um Acrobat Sign mit AEM Forms zu verwenden, konfigurieren Sie Acrobat Sign in AE
 Sie benötigen Folgendes, um Acrobat Sign in AEM Forms zu integrieren:
 
 * Ein aktiver [Acrobat Sign-Entwicklerkonto.](https://acrobat.adobe.com/de/de/why-adobe/developer-form.html)
-* Einen[ SSL aktivierten](/help/sites-administering/ssl-by-default.md) AEM Forms-Server.
+* Ein [SSL aktiviert](/help/sites-administering/ssl-by-default.md) AEM Forms-Server.
 * Ein [Acrobat Sign API-Anwendung](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
 * Anmeldeinformationen (Client-ID und Client Secret) der Acrobat Sign-API-Anwendung.
 * Entfernen Sie bei der Neukonfiguration die vorhandene Acrobat Sign-Konfiguration aus der Autoren- und der Veröffentlichungsinstanz.
@@ -41,7 +45,7 @@ Sie benötigen Folgendes, um Acrobat Sign in AEM Forms zu integrieren:
 Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte aus, um Acrobat Sign mit AEM Forms in der -Autoreninstanz zu konfigurieren:
 
 1. Navigieren Sie auf der AEM Forms-Autoreninstanz zu **Tools** ![hammer](assets/hammer.png) > **Allgemein** > **Konfigurations-Browser**.
-   * Weitere Informationen finden Sie in der Dokumentation zum [](/help/sites-administering/configurations.md)Konfigurationsbrowser.
+   * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurations-Browser.](/help/sites-administering/configurations.md)
 1. Tippen Sie auf der Seite **[!UICONTROL Konfigurations-Browser]** auf **[!UICONTROL Erstellen]**.
 1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen **[!UICONTROL Titel]** für die Konfiguration fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**. Anschließend tippen Sie auf **[!UICONTROL Erstellen]**. Es wird ein Konfigurationscontainer für Cloud-Dienste erstellt.
 1. Navigieren Sie zu **Instrumente** ![Hammer](assets/hammer.png) > **Cloud Services** > **Acrobat Sign** und wählen Sie den Konfigurationscontainer aus, den Sie im obigen Schritt erstellt haben.
@@ -51,7 +55,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    >Sie können entweder die Schritte 1 bis 4 ausführen, um einen neuen Konfigurationscontainer zu erstellen und eine Acrobat Sign-Konfiguration im Container zu erstellen, oder die vorhandene `global` Ordner in **Instrumente** ![Hammer](assets/hammer.png) > **Cloud Services** > **Acrobat Sign**. Wenn Sie die Konfiguration im neuen Konfigurations-Container erstellen, dürfen Sie beim Erstellen eines adaptiven Formulars nicht vergessen, den Container-Namen im Feld **[!UICONTROL Konfigurations-Container]** anzugeben.
 
    >[!NOTE]
-   Vergewissern Sie sich, dass die URL der Cloud-Dienste-Konfigurationsseite mit **HTTPS** beginnt. Ist dies nicht der Fall, [aktivieren Sie SSL](/help/sites-administering/ssl-by-default.md) für AEM Forms-Server.
+   Vergewissern Sie sich, dass die URL der Cloud-Dienste-Konfigurationsseite mit **HTTPS** beginnt. Wenn nicht, [SSL aktivieren](/help/sites-administering/ssl-by-default.md) für den AEM Forms-Server.
 
 1. Tippen Sie auf der Konfigurationsseite auf **[!UICONTROL Erstellen]** , um die Acrobat Sign-Konfiguration in AEM Forms zu erstellen.
 1. Im **[!UICONTROL Allgemein]** des **[!UICONTROL Acrobat Sign-Konfiguration erstellen]** Seite, geben Sie eine **Name** für die Konfiguration und tippen Sie auf **Nächste**. Sie können optional einen Titel angeben und durchsuchen, um ein Miniaturbild für die Konfiguration auszuwählen.
@@ -62,7 +66,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 
    1. Öffnen Sie ein Browserfenster und melden Sie sich beim Acrobat Sign-Entwicklerkonto an.
    1. Wählen Sie die für AEM Forms konfigurierte Anwendung aus und tippen Sie auf OAuth für Anwendung konfigurieren.
-   1. Fügen Sie im Feld **Umleitungs-URL** die im vorherigen Schritt kopierte HTTPS-URL ein, und klicken Sie dann auf **Speichern**.
+   1. Im **Umleitungs-URL** Fügen Sie die im vorherigen Schritt kopierte HTTPS-URL hinzu und klicken Sie auf **Speichern**.
    1. Aktivieren Sie die folgenden OAuth-Einstellungen für die Acrobat Sign-Anwendung und klicken Sie auf **Speichern**.
    * aggrement_read
    * aggrement_write
@@ -101,7 +105,7 @@ Jetzt ist Acrobat Sign in AEM Forms integriert und kann in adaptiven Formularen 
 
 Ein für Acrobat Sign aktiviertes adaptives Formular wird erst gesendet, nachdem alle Unterzeichner den Unterzeichnungsvorgang abgeschlossen haben. Standardmäßig ist geplant, dass die Acrobat Sign-Planungsdienste die Signiererantwort alle 24 Stunden überprüfen (abfragen). Sie können das Standardintervall für Ihre Umgebung ändern. Führen Sie zum Anpassen des Standardintervalls folgende Schritte durch:
 
-1. Melden Sie sich beim AEM Forms-Server mit den Admin-Anmeldedaten an und navigieren Sie zu **Tools**> **Vorgänge**> **Web-Konsole**.
+1. Melden Sie sich mit Administratorberechtigungen beim AEM Forms-Server an und navigieren Sie zu **Instrumente** > **Aktivitäten** > **Web-Konsole**.
 
    Sie können auch folgende URL in einem Browser-Fenster öffnen:
    `https://[localhost]:'port'/system/console/configMgr`

@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren der Segmentierung
 seo-title: Configuring Segmentation
-description: Erfahren Sie, wie Sie Segmentierungen für AEM-Kampagnen konfigurieren können.
+description: Erfahren Sie, wie Sie die Segmentierung für AEM Campaign konfigurieren.
 seo-description: Learn how to configure segmentation for AEM Campaign.
 uuid: f22e41b6-d9d9-4f18-9925-2d4aebc167b3
 contentOwner: msm-service
@@ -10,34 +10,38 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
 exl-id: 92302067-3500-41ca-9855-87f36148bfbc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 98%
+source-wordcount: '1132'
+ht-degree: 44%
 
 ---
 
 # Konfigurieren der Segmentierung{#configuring-segmentation}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
->Dieses Dokument beschreibt die Konfiguration der Segmentierung bei ClientContext. Informationen zum Konfigurieren von Segmenten mit ContextHub über die Touch-Benutzeroberfläche finden Sie unter [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md).
+>Dieses Dokument behandelt die Konfiguration der Segmentierung, wie sie mit ClientContext verwendet wird. Informationen zum Konfigurieren von Segmenten mit ContextHub über die Touch-Benutzeroberfläche finden Sie unter [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md).
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Unter [Grundlegendes zur Segmentierung](/help/sites-authoring/segmentation-overview.md) finden Sie Informationen zur Funktionsweise der Segmentierung sowie zu Schlüsselbegriffen.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Siehe [Glossar zur Segmentierung](/help/sites-authoring/segmentation-overview.md) für Informationen zur Funktionsweise der Segmentierung und zu Schlüsselbegriffen.
 
 Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informationen sowie je nach Ihren angepeilten Zielen müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
-Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-authoring/personalization.md) der Website verwaltet. Hier definierte Teaser-Seiten können als Teaser-Absätze auf jeder Seite einbezogen werden – und sie können bestimmen, auf welches Besuchersegment die spezialisierten Inhalte angewendet werden sollen.
+Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-authoring/personalization.md) der Website verwaltet. Hier definierte Teaser-Seiten können als Teaser-Absätze auf jeder Seite eingefügt werden und definieren, für welches Besuchersegment die spezialisierten Inhalte gelten.
 
-Mit AEM können Sie Segmente, Teaser und Kampagnen auf einfache Weise erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
+AEM ermöglicht Ihnen das einfache Erstellen und Aktualisieren von Segmenten, Teasern und Kampagnen. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
 
 Der **Segment-Editor** ermöglicht Ihnen die einfache Definition eines Segments:
 
 ![segmenteditor-1](assets/segmenteditor-1.png)
 
-Sie können jedes Segment **bearbeiten**, um einen **Titel**, eine **Beschreibung** und einen Faktor **Verstärken** anzugeben. Mithilfe des Sidekicks können Sie **UND**- und **ODER**-Container zum Definieren der **Segmentlogik** hinzufügen und anschließend die erforderlichen **Segmenteigenschaften** zur Definition der Auswahlkriterien hinzufügen.
+Sie können **Bearbeiten** jedes Segment, um eine **Titel**, **Beschreibung** und **Verstärken** Faktor. Mithilfe des Sidekicks können Sie **UND** und **ODER** Container zum Definieren der **Segmentlogik** und fügen Sie dann die erforderlichen hinzu **Segmenteigenschaften** , um die Auswahlkriterien zu definieren.
 
-## Faktor „Verstärken“ {#boost-factor}
+## Verstärkungsfaktor {#boost-factor}
 
 Jedes Segment verfügt über einen Parameter zum **Verstärken**, der als Gewichtungsfaktor verwendet wird. Eine höhere Zahl zeigt an, dass das Segment bei der Auswahl gegenüber einem Segment mit einer niedrigeren Zahl bevorzugt wird.
 
@@ -46,7 +50,7 @@ Jedes Segment verfügt über einen Parameter zum **Verstärken**, der als Gewich
 
 ## Segmentlogik {#segment-logic}
 
-Die folgenden Logik-Container sind standardmäßig verfügbar und ermöglichen es Ihnen, die Logik Ihrer Segmentauswahl zu erstellen. Sie können vom Sidekick in den Editor gezogen werden:
+Die folgenden logischen Container sind standardmäßig verfügbar und ermöglichen es Ihnen, die Logik Ihrer Segmentauswahl zu konstruieren. Sie können aus dem Sidekick in den Editor gezogen werden:
 
 <table> 
  <tbody> 
@@ -63,7 +67,7 @@ Die folgenden Logik-Container sind standardmäßig verfügbar und ermöglichen e
 
 ## Segmenteigenschaften {#segment-traits}
 
-Die folgenden Segmenteigenschaften sind standardmäßig verfügbar und können vom Sidekick in den Editor gezogen werden:
+Die folgenden Segmenteigenschaften sind standardmäßig verfügbar: sie können aus dem Sidekick in den Editor gezogen werden:
 
 <table> 
  <tbody> 
@@ -112,7 +116,7 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment au
 
 >[!CAUTION]
 >
->Der Segmenteditor prüft nicht auf Zirkelbezüge. Ein Beispiel hierfür wäre, wenn Segment A auf ein anderes Segment B verweist, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine Zirkelbezüge enthalten.
+>Der Segmenteditor prüft nicht auf Zirkelbezüge. Beispiel: Segment A verweist auf ein anderes Segment B, das wiederum auf Segment A verweist. Sie müssen sicherstellen, dass Ihre Segmente keine zirkulären Verweise enthalten.
 
 >[!NOTE]
 >
@@ -125,49 +129,49 @@ Wenn die gesamte Anweisung mit „true“ bewertet wurde, wird dieses Segment au
 So legen Sie Ihr neues Segment fest:
 
 1. Wählen Sie in der Leiste **Tools > Vorgänge > Konfiguration** aus.
-1. Klicken Sie auf die Seite **Segmentierung** im linken Bereich und navigieren Sie zum erforderlichen Ort.
-1. Erstellen Sie eine [neue Seite](/help/sites-authoring/managing-pages.md) mithilfe der Vorlage **Segment**.
+1. Klicken Sie auf **Segmentierung** im linken Bereich und navigieren Sie zur gewünschten Position.
+1. Erstellen Sie eine [neue Seite](/help/sites-authoring/managing-pages.md) mithilfe der **Segment** Vorlage.
 1. Öffnen Sie die neue Seite, um den Segment-Editor anzuzeigen:
 
    ![screen_shot_2012-02-02at101726am](assets/screen_shot_2012-02-02at101726am.png)
 
-1. Verwenden Sie entweder den Sidekick oder das Kontextmenü (in der Regel durch Klicken mit der rechten Maustaste und die anschließende Auswahl von **Neu...**, um das Fenster „Neue Komponente einfügen“ zu öffnen), um die benötigte Segmenteigenschaft zu finden. Ziehen Sie sie dann in den **Segment-Editor**. Sie wird dann im standardmäßigen **UND**-Container angezeigt.
-1. Doppelklicken Sie auf die neue Eigenschaft, um die spezifischen Parameter zu bearbeiten – so zum Beispiel die Mausposition:
+1. Verwenden Sie entweder den Sidekick oder das Kontextmenü (in der Regel klicken Sie mit der rechten Maustaste auf die Schaltfläche und wählen Sie dann **Neu...** , um das Fenster Neue Komponente einfügen zu öffnen), um die benötigte Segmenteigenschaft zu finden. Ziehen Sie es dann auf die **Segment-Editor** wird er in der Standardeinstellung angezeigt **UND** Container.
+1. Doppelklicken Sie auf die neue Eigenschaft, um die spezifischen Parameter zu bearbeiten. z. B. Mausposition:
 
    ![screen_shot_2012-02-02at103135am-1](assets/screen_shot_2012-02-02at103135am-1.png)
 
-1. Klicken Sie auf **OK**, um Ihre Definition zu speichern:
-1. Sie können die Segmentdefinition **bearbeiten**, um ihr einen **Titel**, eine **Beschreibung** und einen Faktor **[Verstärken](/help/sites-administering/campaign-segmentation.md#boost-factor)** zuzuordnen:
+1. Klicken **OK** , um Ihre Definition zu speichern:
+1. Sie können **Bearbeiten** die Segmentdefinition, um ihr eine **Titel**, **Beschreibung** und **[Verstärken](/help/sites-administering/campaign-segmentation.md#boost-factor)** Faktor:
 
    ![screen_shot_2012-02-02at103547am](assets/screen_shot_2012-02-02at103547am.png)
 
-1. Fügen Sie bei Bedarf weitere Eigenschaften hinzu. Sie können boolesche Ausdrücke anhand der **UND-Container-** und **ODER-Containerkomponenten** hinzufügen, die unter **Segmentlogik** zu finden sind. Mit dem Segment-Editor können Sie nicht mehr benötigte Eigenschaften oder Container löschen oder diese an neue Positionen innerhalb der Anweisung ziehen.
+1. Fügen Sie bei Bedarf weitere Eigenschaften hinzu. Sie können boolesche Ausdrücke mit der **UND-Container** und **ODER-Container** Komponenten gefunden unter **Segmentlogik**. Mit dem Segmenteditor können Sie nicht mehr benötigte Eigenschaften oder Container löschen oder sie an neue Positionen innerhalb der Anweisung ziehen.
 
 ## Verwenden von UND- und ODER-Containern {#using-and-and-or-containers}
 
-Sie können in AEM komplexe Segmente erstellen. Es ist hilfreich, sich einige grundlegende Punkte bewusst zu machen:
+Sie können komplexe Segmente in AEM erstellen. Es ist hilfreich, einige grundlegende Punkte zu beachten:
 
 * Die oberste Ebene der Definition ist immer der ursprünglich erstellte UND-Container. Dies kann nicht verändert werden, hat allerdings auch keine Auswirkungen auf den Rest der Segmentdefinition.
-* Stellen Sie sicher, dass die Verschachtelung Ihrer Container Sinn ergibt. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
+* Stellen Sie sicher, dass die Verschachtelung Ihres Containers sinnvoll ist. Die Container können als die Klammern Ihres booleschen Ausdrucks betrachtet werden.
 
-Das folgende Beispiel wird für die Auswahl von Besuchern verwendet, auf die eine der beiden folgenden Möglichkeiten zutrifft:
+Das folgende Beispiel wird verwendet, um Besucher auszuwählen, die entweder
 
-Männlich und zwischen 16 und 65
+Männlich und zwischen 16 und 65 Jahren
 
 ODER
 
-Weiblich und zwischen 16 und 62
+Weiblich und zwischen 16 und 62 Jahren
 
-Da der Hauptoperator „ODER“ lautet, müssen Sie mit einem **ODER-Container** beginnen. Innerhalb dieses Containers verfügen Sie über 2 „UND“-Anweisungen für die Sie jeweils einen **UND-Container** benötigen, zu dem Sie die einzelnen Eigenschaften hinzufügen können.
+Da der Hauptoperator ODER ist, müssen Sie mit einem **ODER-Container**. Innerhalb dieses Abschnitts verfügen Sie über 2 UND-Anweisungen, für jede dieser müssen Sie eine **UND-Container**, zu dem Sie die einzelnen Eigenschaften hinzufügen können.
 
 ![screen_shot_2012-02-02at105145am-1](assets/screen_shot_2012-02-02at105145am-1.png)
 
 ## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
 
-Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe des **[ClientContext](/help/sites-administering/client-context.md)** getestet werden:
+Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe der **[ClientContext](/help/sites-administering/client-context.md)**:
 
 1. Wählen Sie das zu testende Segment aus.
-1. Drücken Sie **[Strg-Alt-C](/help/sites-authoring/keyboard-shortcuts.md)**, um den **[ClientContext](/help/sites-administering/client-context.md)** zu öffnen, der die gesammelten Daten anzeigt. Zu Testzwecken können Sie bestimmte Werte **bearbeiten** oder ein anderes Profil **laden**, um dort die Auswirkungen zu sehen.
+1. Presse **[Strg+Alt+C](/help/sites-authoring/keyboard-shortcuts.md)** , um **[ClientContext](/help/sites-administering/client-context.md)**, der die erfassten Daten anzeigt. Zu Testzwecken können Sie bestimmte Werte **bearbeiten** oder ein anderes Profil **laden**, um dort die Auswirkungen zu sehen.
 
 1. Je nach den definierten Eigenschaften können die zur aktuellen Seite verfügbaren Daten mit der Segmentdefinition übereinstimmen oder nicht. Der Status der Übereinstimmung wird unter der Definition angezeigt.
 
@@ -181,14 +185,14 @@ Oder nicht:
 
 >[!NOTE]
 >
->Alle Eigenschaften werden sofort aufgelöst, obwohl die meisten sich nur beim erneuten Laden der Seite ändern. Änderungen an der Mausposition sind sofort sichtbar, was für Testzwecke sehr nützlich ist.
+>Alle Eigenschaften werden sofort aufgelöst, obwohl sich die meisten beim Neuladen der Seite ändern. Änderungen an der Mausposition sind sofort sichtbar, sodass sie für Testzwecke nützlich sind.
 
 Solche Tests können auch auf Inhaltsseiten und in Kombination mit **Teaser**-Komponenten durchgeführt werden.
 
-In der QuickInfo zum Teaser-Absatz werden die angewendeten Segmente angezeigt sowie ob diese derzeit aufgelöst sind und entsprechend warum die aktuelle Teaser-Instanz ausgewählt wurde:
+Wenn Sie den Mauszeiger über einen Teaser-Absatz bewegen, werden die angewendeten Segmente angezeigt, unabhängig davon, ob sie derzeit aufgelöst werden und warum daher die aktuelle Teaser-Instanz ausgewählt wurde:
 
 ![chlimage_1-408](assets/chlimage_1-408.png)
 
 ## Verwenden Ihres Segments {#using-your-segment}
 
-Die Segmente werden aktuell innerhalb von [Kampagnen](/help/sites-authoring/personalization.md) verwendet. Sie werden zur Steuerung des tatsächlichen Inhalts verwendet, der spezifischen Zielgruppen angezeigt wird. Weitere Informationen finden Sie unter [Segmente](/help/sites-authoring/segmentation-overview.md).
+Segmente werden derzeit in [Kampagnen](/help/sites-authoring/personalization.md). Sie werden verwendet, um den tatsächlichen Inhalt zu steuern, der für bestimmte Zielgruppen sichtbar ist. Siehe [Grundlegendes zu Segmenten](/help/sites-authoring/segmentation-overview.md) für weitere Informationen.

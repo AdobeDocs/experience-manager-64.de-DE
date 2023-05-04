@@ -1,7 +1,7 @@
 ---
-title: Erstellen eines individuellen Cloud-Service
+title: Erstellen eines individuellen Cloud-Services
 seo-title: Creating a Custom Cloud Service
-description: Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services erweitert werden
+description: Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-Typen erweitert werden
 seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
@@ -10,20 +10,24 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: dc3e5d4d-ff8b-4394-9bfc-aceee6f269a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 100%
+source-wordcount: '454'
+ht-degree: 72%
 
 ---
 
-# Erstellen eines individuellen Cloud-Service{#creating-a-custom-cloud-service}
+# Erstellen eines individuellen Cloud-Services{#creating-a-custom-cloud-service}
 
-Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services erweitert werden. So können Sie auf strukturierte Weise eigenes Markup in die Seite einfügen. Diese Funktion ist hauptsächlich für externe Analyseanbieter hilfreich, z. B. Google Analytics, Chartbeat usw. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf jeder Ebene unterbrochen werden.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-Typen erweitert werden. Auf diese Weise können Sie benutzerdefiniertes Markup strukturiert in die Seite einfügen. Diese Funktion ist hauptsächlich für externe Analyseanbieter hilfreich, z. B. Google Analytics, Chartbeat usw. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf jeder Ebene unterbrochen werden.
 
 >[!NOTE]
 >
->In dieser Schritt-für-Schritt-Anleitung zum Erstellen eines neuen Cloud-Service wird Google Analytics als Beispiel verwendet. Einige Informationen treffen auf Ihren Anwendungsfall möglicherweise nicht zu.
+>Diese schrittweise Anleitung zum Erstellen eines neuen Cloud Service ist ein Beispiel für die Verwendung von Google Analytics. Alles trifft möglicherweise nicht auf Ihren Anwendungsfall zu.
 
 1. Erstellen Sie in CRXDE Lite einen neuen Knoten unter `/apps`:
 
@@ -124,8 +128,8 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    * **Eigenschaften**:
 
       * **Name**: `fieldLabel`
-      * **Typ**: String
-      * **Wert**: Account ID
+      * **Typ**: Zeichenfolge
+      * **Wert**: Konto-ID
 
       * **Name**: `fieldDescription`
       * **Typ**: `String`
@@ -215,5 +219,5 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    Wählen Sie **Google Analytics Configuration** und klicken Sie auf **Erstellen**.
 
 1. Geben Sie eine **Konto-ID** ein, z. B. `AA-11111111-1`. Klicken Sie auf **OK**.
-1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter der Registerkarte **Cloud-Services** hinzu.
-1. Das benutzerdefinierte Markup wird der Seite hinzugefügt.
+1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter dem **Cloud Services** Registerkarte.
+1. Der Seite wird das benutzerdefinierte Markup hinzugefügt.

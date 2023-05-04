@@ -1,7 +1,7 @@
 ---
 title: Die Funktion „SSL By Default“ (SSL als Standard)
 seo-title: SSL By Default
-description: Erfahren Sie, wie Sie die Funktion „SSL By Default“ (SSL als Standard) in AEM verwenden.
+description: Erfahren Sie, wie Sie in AEM SSL standardmäßig verwenden.
 seo-description: Learn how to use SSL by Default in AEM.
 uuid: 262474b0-f5fa-4cff-8727-9f39c5b5f760
 contentOwner: User
@@ -10,22 +10,26 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 exl-id: 07f89673-125b-4205-bc54-c90287a1e9a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 99%
+source-wordcount: '797'
+ht-degree: 45%
 
 ---
 
 # Die Funktion „SSL By Default“ (SSL als Standard){#ssl-by-default}
 
-Im Bestreben, die Sicherheit von AEM kontinuierlich weiter zu verbessern, hat Adobe eine Funktion namens „SSL By Default“ (SSL als Standard) eingeführt. Der Zweck dieser Funktion ist, die Verwendung von HTTPS zum Herstellen einer Verbindung zu AEM-Instanzen zu fördern.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-## Aktivieren der Funktion „SSL By Default“ (SSL als Standard) {#enabling-ssl-by-default}
+Um die Sicherheit von AEM kontinuierlich zu verbessern, hat Adobe eine Funktion namens &quot;SSL By Default&quot;eingeführt. Der Zweck besteht darin, die Verwendung von HTTPS zur Verbindung mit AEM Instanzen zu fördern.
 
-Sie beginnen mit der Konfiguration der Funktion „SSL By Default“ (SSL als Standard), indem Sie auf Ihrem AEM-Startbildschirm im Posteingang auf die relevante Nachricht klicken. Drücken Sie zum Aufrufen des Posteingangs auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie dann auf **Alles anzeigen**. Daraufhin wird eine Liste mit allen Warnungen, die in einer Listenansicht angeordnet sind, angezeigt.
+## SSL standardmäßig aktivieren {#enabling-ssl-by-default}
 
-Wählen Sie in der Liste die Warnung **HTTPS konfigurieren** aus und öffnen Sie sie:
+Sie können mit der Konfiguration von SSL By Default beginnen, indem Sie auf der AEM-Startseite auf die entsprechende Posteingangsnachricht klicken. Um den Posteingang zu erreichen, drücken Sie auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie dann auf **Alle anzeigen**. Dadurch wird eine Liste aller in einer Listenansicht bestellten Warnungen angezeigt.
+
+Wählen Sie in der Liste die **HTTPS konfigurieren** alert:
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
@@ -33,13 +37,13 @@ Wählen Sie in der Liste die Warnung **HTTPS konfigurieren** aus und öffnen Sie
 >
 >Wenn die Warnung **HTTPS konfigurieren** nicht im Posteingang vorhanden ist, können Sie direkt zum HTTPS-Assistenten navigieren, indem Sie *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* aufrufen.
 
-Ein Service-Benutzer mit dem Namen **ssl-service** wurde für diese Funktion erstellt. Nachdem Sie die Warnung geöffnet haben, werden Sie durch den folgenden Konfigurationsassistenten geleitet:
+Ein Service-Benutzer mit dem Namen **ssl-service** wurde für diese Funktion erstellt. Nach dem Öffnen des Warnhinweises werden Sie durch den folgenden Konfigurationsassistenten geführt:
 
 1. Richten Sie zunächst die Store-Anmeldedaten ein. Dies sind Anmeldedaten für den KeyStore des Systembenutzers **ssl-service**, der den privaten Schlüssel und den TrustStore für den HTTPS-Listener enthält.
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
-1. Nachdem Sie die Anmeldedaten eingeben haben, klicken Sie in der oberen rechten Ecke der Seite auf **Weiter**. Laden Sie dann den zugehörigen privaten Schlüssel und das Zertifikat für die SSL-Verbindung hoch.
+1. Nachdem Sie die Anmeldedaten eingegeben haben, klicken Sie auf **Nächste** in der oberen rechten Ecke der Seite. Laden Sie dann den zugehörigen privaten Schlüssel und das zugehörige Zertifikat für die SSL-Verbindung hoch.
 
    ![chlimage_1-343](assets/chlimage_1-343.png)
 
@@ -51,19 +55,19 @@ Ein Service-Benutzer mit dem Namen **ssl-service** wurde für diese Funktion ers
 
    ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
 
-## Automatisieren der Funktion „SSL By Default“ (SSL als Standard) {#automating-ssl-by-default}
+## SSL standardmäßig automatisieren {#automating-ssl-by-default}
 
-Die Funktion „SSL By Default“ (SSL als Standard) kann auf drei Arten automatisiert werden.
+Es gibt drei Möglichkeiten, SSL standardmäßig zu automatisieren.
 
-### Über HTTP POST {#via-http-post}
+### Über HTTP-POST {#via-http-post}
 
-Bei der ersten Methode wird ein Post an den SSLSetup-Server gesendet, der vom Konfigurationsassistenten verwendet wird:
+Die erste Methode umfasst das Posten auf dem SSLSetup-Server, der vom Konfigurationsassistenten verwendet wird:
 
 ```shell
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Sie können die folgende Payload in Ihrem POST verwenden, um die Konfiguration zu automatisieren:
+Sie können die folgende Payload in Ihrer POST verwenden, um die Konfiguration zu automatisieren:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -92,9 +96,9 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-Das Servlet antwortet wie jedes Sling-POST-Servlet mit „200 OK“ oder einem HTTP-Fehlerstatuscode. Details zum Status finden Sie im HTML-Hauptteil der Antwort.
+Das Servlet antwortet wie jedes Sling-POST-Servlet mit 200 OK oder einem Fehler-HTTP-Statuscode. Details zum Status finden Sie im HTML-Textkörper der Antwort.
 
-Nachstehend finden Sie Beispiele für eine erfolgreiche Antwort und einen Fehler.
+Im Folgenden finden Sie Beispiele für eine erfolgreiche Antwort und einen Fehler.
 
 **BEISPIEL FÜR EINE ERFOLGREICHE ANTWORT** (Status = 200):
 
@@ -149,11 +153,11 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-### Über ein Paket {#via-package}
+### Über Package {#via-package}
 
-Alternativ können Sie das SSL-Setup auch automatisieren, indem Sie ein Paket hochladen, das bereits diese erforderlichen Elemente enthält:
+Alternativ können Sie die SSL-Einrichtung automatisieren, indem Sie ein Paket hochladen, das bereits die folgenden erforderlichen Elemente enthält:
 
-* Den KeyStore des Benutzers „ssl-service“. Dieser befindet sich unter */home/users/system/security/ssl-service/keystore* im Repository.
+* Der Keystore des ssl-service-Benutzers. Dies befindet sich unter */home/users/system/security/ssl-service/keystore* im Repository.
 * Die `GraniteSslConnectorFactory`-Konfiguration
 
 ### Generieren eines Paares aus privatem Schlüssel/Zertifikat für die Verwendung im Assistenten {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
@@ -164,7 +168,7 @@ Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Ze
 >
 >Die Verwendung eines selbstsignierten Zertifikats dient hier lediglich zu Beispielszwecken. Ein solches Zertifikat sollte in Produktionsumgebungen nicht verwendet werden.
 
-1. Erstellen Sie zuerst den privaten Schlüssel:
+1. Erstellen Sie zunächst den privaten Schlüssel:
 
    ```shell
    openssl genrsa -aes256 -out localhostprivate.key 4096
@@ -177,19 +181,19 @@ Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Ze
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
    ```
 
-1. Generieren Sie das SSL-Zertifikat und melden Sie sich mit dem privaten Schlüssel an. In diesem Beispiel läuft dieser in einem Jahr ab jetzt ab:
+1. Generieren Sie das SSL-Zertifikat und signieren Sie es mit dem privaten Schlüssel. In diesem Beispiel läuft in einem Jahr ab:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-Konvertieren Sie den privaten Schlüssel in ein DER-Format. Der SSL-Assistent benötigt den Schlüssel im DER-Format:
+Konvertieren Sie den privaten Schlüssel in das DER-Format. Dies liegt daran, dass der SSL-Assistent den Schlüssel im DER-Format erfordert:
 
 ```shell
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Abschließend laden Sie **localhostprivate.der** als privaten Schlüssel und **localhost.crt** als SSL-Zertifikat, wie in Schritt 2 des grafischen SSL-Assistenten am Anfang dieser Seite beschrieben, hoch.
+Laden Sie abschließend die **localhostprivate.der** als privaten Schlüssel und **localhost.crt** als SSL-Zertifikat in Schritt 2 des grafischen SSL-Assistenten, der am Anfang dieser Seite beschrieben wird.
 
 ### Aktualisieren der SSL-Konfiguration über cURL {#updating-the-ssl-configuration-via-curl}
 
@@ -197,7 +201,7 @@ Abschließend laden Sie **localhostprivate.der** als privaten Schlüssel und **l
 >
 >Eine zentrale Liste mit nützlichen cURL-Befehlen in AEM finden Sie unter [Verwenden von cURL in AEM](https://helpx.adobe.com/de/experience-manager/6-4/sites/administering/using/curl.html).
 
-Sie können die SSL-Konfiguration auch automatisieren, indem Sie das cURL-Tool verwenden. Posten Sie dazu die Konfigurationsparameter an diese URL:
+Sie können die SSL-Konfiguration auch mithilfe des cURL-Tools automatisieren. Sie können dies tun, indem Sie die Konfigurationsparameter an diese URL senden:
 
 *https://&lt;Server-Adresse>:&lt;Serverport>/libs/granite/security/post/sslSetup.html*
 
@@ -224,7 +228,7 @@ Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einste
 >
 >Sie müssen außerdem authentifiziert werden, damit die Aktualisierung durchgeführt werden kann. Stellen Sie daher sicher, dass Sie den cURL-Befehl mit dem Parameter `-u user:passeword` anhängen.
 >
->Ein richtiger cURL-Post-Befehl sieht wie folgt aus:
+>Ein korrekter cURL-Post-Befehl sollte wie folgt aussehen:
 
 ```shell
 curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm=password" -F "truststorePassword=password" -F "truststorePasswordConfirm=password" -F "privatekeyFile=@localhostprivate.der" -F "certificateFile=@localhost.crt" -F "httpsHostname=host.example.com" -F "httpsPort=8443" https://host:port/libs/granite/security/post/sslSetup.html
@@ -232,7 +236,7 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 
 #### Mehrere Zertifikate mit cURL {#multiple-certificates-using-curl}
 
-Sie können eine Kette von Zertifikaten an das Servlet senden, indem Sie den Parameter „certificateFile“ wie folgt wiederholen:
+Sie können dem Servlet eine Kette von Zertifikaten senden, indem Sie den Parameter certificateFile wie folgt wiederholen:
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 

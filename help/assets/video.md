@@ -8,14 +8,18 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10401'
-ht-degree: 80%
+source-wordcount: '10437'
+ht-degree: 61%
 
 ---
 
 # Video {#video}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In diesem Abschnitt wird die Arbeit mit Videos in Dynamic Media beschrieben.
 
@@ -27,8 +31,8 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 >
 >Stellen Sie vor der Arbeit mit Videos in Dynamic Media sicher, dass der AEM-Administrator Dynamic Media Cloud Services bereits aktiviert und konfiguriert hat.
 >
->* Siehe [Konfigurieren von Dynamic Media-Cloud-Services unter Konfigurieren von Dynamic Media – Hybridmodus.](/help/assets/config-dynamic.md)
->* Siehe [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md) und [Fehlerbehebung für Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
+>* Siehe [Konfigurieren von Dynamic Media Cloud Services im Hybridmodus &quot;Konfigurieren von Dynamic Media&quot;.](/help/assets/config-dynamic.md)
+>* Siehe [Konfigurieren von Dynamic Media - Scene7-Modus](config-dms7.md) und [Fehlerbehebung in Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)
 >
 
 
@@ -40,16 +44,16 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
       * Erfahren Sie mehr über die [Best Practices für Videokodierung](#best-practices-for-encoding-videos).
    * Verknüpfen Sie das Videoverarbeitungsprofil mit den Ordnern, in die Sie die Master-Videos hochladen.
 
-      * [Anwenden eines Videoprofils auf Ordner](video-profiles.md#applying-a-video-profile-to-folders)
+      * [Anwenden eines Videoprofils auf Ordner](video-profiles.md#applying-a-video-profile-to-folders).
       * Erfahren Sie mehr über die [Best Practices für die Organisation Ihrer digitalen Assets zur Verwendung von Verarbeitungsprofilen](organize-assets.md#organize-using-folders).
       * Weitere Informationen zum [Organisieren digitaler Assets](organize-assets.md)
    * Laden Sie die Primärvideos in die Ordner hoch. Wenn Sie dem Ordner Videos hinzufügen, werden diese gemäß dem diesem Ordner zugewiesenen Videoverarbeitungsprofil kodiert.
 
       * Dynamic Media unterstützt hauptsächlich Kurzvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von 25 x 25.
       * Sie können Videodateien mit bis zu 15 GB pro Datei hochladen.
-      * [Videos hochladen](managing-video-assets.md#uploading-and-previewing-video-assets)
-      * Weitere Informationen zu [Unterstützten Eingabedateiformaten](assets-formats.md#supported-multimedia-formats)
-   * [Fortschritt der Videokodierung](#monitoring-video-encoding-and-youtube-publishing-progress) in der Asset- oder Workflow-Ansicht überwachen
+      * [Videos hochladen](managing-video-assets.md#uploading-and-previewing-video-assets).
+      * Weitere Informationen zu [Unterstützten Eingabedateiformaten](assets-formats.md#supported-multimedia-formats).
+   * [Fortschritt der Videokodierung](#monitoring-video-encoding-and-youtube-publishing-progress) in der Asset- oder Workflow-Ansicht überwachen.
 
 
 
@@ -122,7 +126,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen dabei helfen, in Dyna
 
 Auf einem iOS-Mobilgerät wird beispielsweise die Bandbreite 3G, 4G oder WLAN erkannt. Dann wird automatisch das richtig kodierte Video aus den verschiedenen Video-Bitraten im adaptiven Videoset ausgewählt. Das Video wird auf Desktops, Mobilgeräten oder Tablets gestreamt.
 
-Außerdem wird die Videoqualität automatisch geändert, wenn sich die Netzwerkbedingungen am Desktop oder Mobilgerät ändern. Wenn darüber hinaus ein Kunde den Vollbildmodus an einem Desktop aktiviert, reagiert das adaptive Videoset, indem eine bessere Auflösung verwendet wird, um das Anzeigeerlebis des Kunden zu verbessern. Adaptive Videosets bieten Ihnen bestmögliche Wiedergabe für Kunden, die das Dynamic Media-Video auf unterschiedlichen Bildschirmen und Geräten wiedergeben.
+Außerdem wird die Videoqualität automatisch geändert, wenn sich die Netzwerkbedingungen am Desktop oder Mobilgerät ändern. Wenn ein Kunde auf einem Desktop in den Vollbildmodus wechselt, antwortet das adaptive Videoset mit einer besseren Auflösung, wodurch sich das Anzeigeerlebnis des Kunden verbessert. Adaptive Videosets bieten Ihnen bestmögliche Wiedergabe für Kunden, die das Dynamic Media-Video auf unterschiedlichen Bildschirmen und Geräten wiedergeben.
 
 Die Logik, mit der Video-Player bestimmen, welches kodierte Video wiedergegeben oder während der Wiedergabe ausgewählt werden soll, basiert auf dem folgenden Algorithmus:
 
@@ -139,17 +143,17 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 * Hochladen von Videos mit zahlreichen unterstützten Video- und Audioformaten und Kodieren von Videos in das MP4 H.264-Format für die Wiedergabe auf mehreren Bildschirmen Sie können vordefinierte adaptive Videovorgaben oder einzelne Videokodierungsvorgaben verwenden bzw. Ihre eigene Kodierung anpassen, um die Qualität und Größe der Videos zu steuern.
 
    * Wenn ein adaptives Videoset generiert wird, umfasst es MP4-Videos.
-   * **Hinweis**: Master-/Quellvideos werden einem adaptiven Videoset nicht hinzugefügt.
+   * **Hinweis**: Primär-/Quellvideos werden einem adaptiven Video-Set nicht hinzugefügt.
 
 * Videountertitelung in allen HTML5-Video-Viewern
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
-* Bereitstellen von adaptiven Videosets im Internet sowie auf Desktops und Mobilgeräten, einschließlich iPhone, iPad, Android™, Blackberry und Windows Phone.
+* Bereitstellen von adaptiven Videosets für das Web sowie für Desktops und Mobilgeräte, einschließlich iPhone, iPad, Android, Blackberry und Windows Phone.
 
 Das adaptive Video-Streaming wird auf einer Vielzahl von iOS-Plattformen unterstützt. Siehe [Adobe Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=de).
 
 Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. Welche BlackBerry-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für BlackBerry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
+Windows-Geräte, die dieses Videoformat unterstützen, finden Sie unter: [Unterstützte Videoformate auf Windows Phone](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)
 
 * Wiedergabe von Videos mit Video-Viewer-Vorgaben aus Dynamic Media, einschließlich der folgenden:
 
@@ -169,7 +173,7 @@ Die HTML5-Video-Viewer-Vorgaben aus „Dynamic Media“ stellen robuste Video-Pl
 
 In Bezug auf die Entwicklung des Players können Sie alle Funktionen des Video-Players mit standardmäßigen Web-Entwicklungs-Tools entwerfen. Sie können beispielsweise die Schaltflächen, die Steuerelemente und den benutzerdefinierten Poster-Hintergrund mit HTML5 und CSS entwerfen, um Ihre Kunden mit einem angepassten Erscheinungsbild anzusprechen.
 
-Auf der Wiedergabeseite des Viewers wird die Videofähigkeit des Browsers automatisch erkannt. Das Video wird dann per HLS-Streaming (adaptives Video-Streaming) bereitgestellt. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen der progressive HTML5-Download verwendet.
+Auf der Wiedergabeseite des Viewers wird die Videofähigkeit des Browsers automatisch erkannt. Anschließend wird das Video mit HLS-Streaming (adaptives Video-Streaming) bereitgestellt. Wenn diese Bereitstellungsmethoden nicht verfügbar sind, wird stattdessen der progressive HTML5-Download verwendet.
 
 Indem Sie die Fähigkeiten, die Wiedergabekomponenten anhand von HTML5 und CSS zu entwerfen, eingebettete Wiedergabe zu ermöglichen und adaptives und progressives Streaming zu verwenden (je nach Browser-Funktionen), in einem einzelnen Player kombinieren, erreichen Sie mit Ihren Rich-Media-Inhalten mehr Desktop- und Mobilbenutzer und können für ein optimiertes Videoerlebnis sorgen.
 
@@ -179,16 +183,16 @@ Weitere Informationen finden Sie auch im Abschnitt zu [HTML5-Viewern](https://ex
 
 Beim adaptiven Video-Streaming auf Desktop und Mobilgeräten basieren die für den Bit-Ratenwechsel verwendeten Videos auf allen MP4-Videos im adaptiven Videoset.
 
-Die Videowiedergabe erfolgt entweder mithilfe von HLS-Videostreams (HTTP-Live-Streaming) oder progressivem Video-Download. In früheren Versionen von AEM, z. B. 6.0, 6.1 und 6.2, wurden Videos über HTTP gestreamt.
+Die Videowiedergabe erfolgt entweder über HLS (HTTP Live Streaming)-Video-Streaming oder progressiven Video-Download. In früheren Versionen von AEM, z. B. 6.0, 6.1 und 6.2, wurden Videos über HTTP gestreamt.
 
-In AEM 6.3 und höheren Versionen werden die Videos nun über HTTPS gestreamt (d. h. HLS-Videostreaming), da die DM-Gatewayservice-URL ebenfalls immer HTTPS verwendet. Beachten Sie, dass es bei diesem Standardverhalten keine Auswirkung auf den Kunden gibt. Video-Streaming wird immer über HTTPS ausgeführt, wenn es nicht durch den Browser unterstützt wird. (siehe folgende Tabelle). Daher:
+In AEM 6.3 und höher werden Videos jetzt jedoch über HTTPS gestreamt (d. h. HLS-Video-Streaming), da die DM-Gateway-Dienst-URL immer auch HTTPS verwendet. Beachten Sie, dass sich dieses Standardverhalten nicht auf den Kunden auswirkt. Video-Streaming wird immer über HTTPS ausgeführt, wenn es nicht durch den Browser unterstützt wird. (siehe folgende Tabelle). Daher:
 
 * Wenn Sie eine HTTPS-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut.
 * Wenn Sie eine HTTP-Website mit HTTPS-Video-Streaming haben, ist das Streaming gut und es gibt keine Probleme mit gemischten Inhalten im Webbrowser.
 
-HLS (HTTP Live Streaming) ist ein Apple-Standard für adaptives Videostreaming, der die Wiedergabe automatisch an die Netzwerkbandbreitenkapazität anpasst. Darüber hinaus können Kunden einen beliebigen Punkt im Video „suchen“, ohne auf den Download des restlichen Videos zu warten (siehe auch „HTTP-Live-Streaming“). 
+HLS (HTTP Live Streaming) ist ein Apple-Standard für adaptives Video-Streaming, der die Wiedergabe automatisch an die Netzwerkbandbreitenkapazität anpasst. Sie ermöglicht dem Kunden auch, zu einem beliebigen Punkt im Video zu &quot;suchen&quot;, ohne auf den Download des restlichen Videos warten zu müssen (siehe auch HTTP Live Streaming ).
 
-Progressives Video wird übermittelt, indem das Video lokal auf den Desktop-Bildschirm oder das Mobilgerät hochgeladen und gespeichert wird.
+Progressives Video wird bereitgestellt, indem das Video lokal auf den Desktop-Bildschirm oder das Mobilgerät eines Benutzers heruntergeladen und gespeichert wird.
 
 Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethode für Videos auf Desktop-Computern und Mobilgeräten mit Dynamic Media Video Viewer.
 
@@ -207,7 +211,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr> 
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>Unter Windows 8 und Windows 10 – HTTPS bei Anfragen von HLS erzwingen. Bekannte Einschränkung: HTTP kann in dieser Kombination von Browser/Betriebssystem nicht mit HLS verwendet werden<br /> <br /> Unter Windows 7 – Progressiver Download. Verwendet Standardlogik zur Auswahl von HTTP vs. HTTPS.</td>
+   <td>Unter Windows 8 und Windows 10 – HTTPS bei Anfragen von HLS erzwingen. Bekannte Einschränkung: HTTP auf HLS funktioniert in dieser Kombination aus Browser und Betriebssystem nicht<br /> <br /> Unter Windows 7 - Progressiver Download. Verwendet Standardlogik zur Auswahl von HTTP vs. HTTPS.</td>
   </tr>
   <tr> 
    <td>Desktop</td>
@@ -231,13 +235,13 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   </tr>
   <tr> 
    <td>Mobilgerät</td>
-   <td>Chrome (Android 6 oder früher)</td>
+   <td>Chrome (Android 6 oder früher)</td>
    <td>Progressiver Download.</td>
   </tr>
   <tr> 
    <td>Mobilgerät</td>
-   <td>Chrome (Android 7 oder neuer)</td>
-   <td>HLS Video-Streaming.</td>
+   <td>Chrome (Android 7 oder höher)</td>
+   <td>HLS-Video-Streaming.</td>
   </tr>
   <tr> 
    <td>Mobilgerät</td>
@@ -257,14 +261,14 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr> 
    <td>Mobilgerät</td>
    <td>Blackberry</td>
-   <td>HLS Video-Streaming.</td>
+   <td>HLS-Video-Streaming.</td>
   </tr>
  </tbody>
 </table>
 
 ## Architektur der Dynamic Media-Videolösung {#architecture-of-dynamic-media-video-solution}
 
-Die folgende Grafik zeigt den allgemeinen Bearbeitungs-Workflow für Videos, die über DMGateway hochgeladen und kodiert und für die öffentliche Anzeige verfügbar gemacht werden.
+Die folgende Abbildung zeigt den allgemeinen Authoring-Workflow von Videos, die über DMGateway hochgeladen und kodiert und für den öffentlichen Gebrauch bereitgestellt werden.
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
@@ -290,7 +294,7 @@ Verwenden Sie zum Kodieren einer Videodatei eine Quellvideodatei mit der höchst
 * Dynamic Media unterstützt hauptsächlich Kurzvideos mit einer maximalen Länge von 30 Minuten und einer Mindestauflösung von 25 x 25.
 * Sie können Videodateien mit einer Größe von bis zu 15 GB als Primärquelle hochladen.
 
-Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhältnis und Mindest-Bitrate, die Quellvideos vor der Kodierung aufweisen sollten:
+In der folgenden Tabelle werden die empfohlene Größe, das Seitenverhältnis und die minimale Bitrate beschrieben, die Ihre Quellvideodateien haben sollten, bevor Sie sie kodieren:
 
 | Größe | Seitenverhältnis | Mindest-Bitrate |
 |--- |--- |--- |
@@ -300,7 +304,7 @@ Die folgende Tabelle beschreibt die empfohlenen Werte für Größe, Seitenverhä
 
 ### Abrufen der Metadaten von Dateien {#obtaining-a-file-s-metadata}
 
-Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobearbeitungs-Tool anzeigen oder ein Programm verwenden, das zum Abrufen von Metadaten entwickelt wurde. Im Folgenden wird die Nutzung von MediaInfo, einer Drittanbieteranwendung, zum Abrufen der Metadaten einer Videodatei beschrieben:
+Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobearbeitungs-Tool anzeigen oder ein Programm verwenden, das zum Abrufen von Metadaten entwickelt wurde. Im Folgenden wird die Nutzung von MediaInfo, eines Drittanbieterprogramms, zum Abrufen der Metadaten einer Videodatei beschrieben:
 
 1. Gehen Sie auf diese Webseite: [https://mediaarea.net/en/MediaInfo](https://mediaarea.net/en/MediaInfo).
 1. Wählen Sie das Installationsprogramm für die verwendete GUI-Version aus, laden Sie es herunter und befolgen Sie die Installationsanweisungen.
@@ -308,7 +312,7 @@ Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobe
 
 ### Seitenverhältnis {#aspect-ratio}
 
-Wenn Sie eine Videokodierungsvorgabe für die Mastervideodatei auswählen oder erstellen, achten Sie darauf, dass die Vorgabe dasselbe Seitenverhältnis wie die Mastervideodatei aufweist. Das Seitenverhältnis ist das Verhältnis zwischen Breite und Höhe des Videos.
+Wenn Sie eine Videokodierungsvorgabe für Ihre Übergeordnete Videodatei auswählen oder erstellen, achten Sie darauf, dass die Vorgabe dasselbe Seitenverhältnis wie die Übergeordnete Videodatei aufweist. Das Seitenverhältnis ist das Verhältnis zwischen Breite und Höhe des Videos.
 
 Um das Seitenverhältnis einer Videodatei zu ermitteln, rufen Sie die Metadaten der Datei ab und notieren Sie die Breite und Höhe der Datei (siehe „Abrufen der Metadaten von Dateien“ oben). Ermitteln Sie das Seitenverhältnis dann anhand der folgenden Formel:
 
@@ -323,7 +327,7 @@ Anhand der folgenden Tabelle können Sie die Formelergebnisse in gängige Seiten
 | 1,78 | 16:9 |
 | 0,56 | 9:16 |
 
-Beispiel: Ein Video mit einer Breite von 1440 x einer Höhe von 1080 hat ein Seitenverhältnis von 1440/1080 bzw. 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3 aus, um die Videodatei zu kodieren.
+Beispiel: Ein Video mit einer Breite von 1440 x 1080 hat ein Seitenverhältnis von 1440/1080 oder 1,33. In diesem Fall wählen Sie eine Videokodierungsvorgabe mit einem Seitenverhältnis von 4:3, um die Videodatei zu kodieren.
 
 ### Bitrate {#bitrate}
 
@@ -342,9 +346,9 @@ Sie können zwischen zwei Arten der Bitraten-Kodierung wählen:
    VBR benötigt mehr Zeit für die Kodierung, liefert jedoch die besten Ergebnisse. Die Qualität der Mediendatei ist besonders gut. VBR wird meist für die progressive HTTP-Übermittlung von Videoinhalten verwendet.
 
 **Verwendung von VBR vs. CRB**
-Wenn es um die Auswahl von VBR oder CBR geht, wird für Ihre Mediendateien meist VBR empfohlen. VBR bietet Dateien mit besserer Qualität zu kompetitiven Bitraten. Verwenden Sie bei VBR auf jeden Fall eine Kodierung mit zwei Durchgängen und stellen Sie die maximale Bitrate so ein, dass sie 1,5-mal größer ist als die Ziel-Video-Bitrate.
+Wenn es um die Auswahl von VBR oder CBR geht, wird für Ihre Mediendateien meist VBR empfohlen. VBR bietet Dateien mit höherer Qualität zu konkurrenzfähigen Bitraten. Verwenden Sie bei VBR auf jeden Fall eine Kodierung mit zwei Durchgängen und stellen Sie die maximale Bitrate so ein, dass sie 1,5-mal größer ist als die Ziel-Video-Bitrate.
 
-Berücksichtigen Sie bei Auswahl einer Videokodierungsvorgabe die Verbindungsgeschwindigkeit des Zielendbenutzers. Wählen Sie eine Vorgabe mit einer Datenrate, die 80 % dieser Geschwindigkeit beträgt. Beispiel: Wenn die Verbindungsgeschwindigkeit des Zielendbenutzers 1000 kBit/s beträgt, hat die optimale Vorgabe eine Videodatenrate von 800 kBit/s.
+Berücksichtigen Sie bei der Auswahl einer Videokodierungsvorgabe die Verbindungsgeschwindigkeit des Zielendbenutzers. Wählen Sie eine Vorgabe mit einer Datenrate, die 80 % dieser Geschwindigkeit beträgt. Beispiel: Wenn die Verbindungsgeschwindigkeit des Zielendbenutzers 1000 kBit/s beträgt, hat die optimale Vorgabe eine Videodatenrate von 800 kBit/s.
 
 Diese Tabelle enthält die Datenraten von typischen Verbindungsgeschwindigkeiten.
 
@@ -368,14 +372,14 @@ Auflösung und Datenrate stellen zwei eng miteinander verknüpfte Faktoren der V
 
 Die Datei mit 640 x 480 enthält viermal so viele Pixel pro Frame. Um dieselbe Datenrate für diese beiden Auflösungen zu erreichen, wenden Sie eine vierfache Komprimierung auf die Datei mit 640 x 480 an, was zu einer schlechteren Videoqualität führen kann. Daher führt eine Videodatenrate von 250 kBit/s zu einer hohen Anzeigequalität bei einer Auflösung von 320 x 240, aber nicht bei einer Auflösung von 640 x 480.
 
-Im Allgemeinen gilt: Je höher die verwendete Datenrate, desto besser sieht das Video aus, und je höher die verwendete Auflösung, desto höher ist die benötigte Datenrate, um die Anzeigequalität aufrechtzuerhalten (im Vergleich zu niedrigeren Auflösungen).
+Im Allgemeinen gilt: Je höher die verwendete Datenrate, desto besser sieht Ihr Video aus und je höher die verwendete Auflösung, desto höher muss die Datenrate sein, um die Anzeigequalität aufrechtzuerhalten (im Vergleich zu niedrigeren Auflösungen).
 
 Da Auflösung und Datenrate miteinander verknüpft sind, haben Sie beim Kodieren von Videos zwei Optionen:
 
-* Wählen Sie eine Datenrate und kodieren Sie dann mit der höchsten Auflösung, die mit der gewählten Datenrate eine gute Qualität erzeugt.
+* Wählen Sie eine Datenrate und codieren Sie dann mit der höchsten Auflösung, die mit der gewählten Datenrate eine gute Qualität erzeugt.
 * Wählen Sie eine Auflösung und kodieren Sie dann mit der erforderlichen Datenrate, um hohe Videoqualität mit der gewählten Auflösung zu erreichen.
 
-Orientieren Sie sich beim Auswählen (oder Erstellen) einer Videokodierungsvorgabe für die Mastervideodatei an der folgenden Tabelle, um die richtige Auflösung auszuwählen.
+Wenn Sie eine Videokodierungsvorgabe für Ihre Übergeordnete Videodatei auswählen (oder erstellen), verwenden Sie diese Tabelle, um die richtige Auflösung auszuwählen:
 
 | Auflösung | Höhe (Pixel) | Bildschirmgröße |
 |--- |--- |--- |
@@ -390,7 +394,7 @@ Orientieren Sie sich beim Auswählen (oder Erstellen) einer Videokodierungsvorga
 
 In den USA und Japan werden die meisten Videos mit 29,97 Frames pro Sekunde (fps) aufgenommen, in Europa mit 25 fps. Filme werden mit 24 fps aufgenommen.
 
-Wählen Sie eine Videokodierungsvorgabe aus, die der fps-Rate der jeweiligen Mastervideodatei entspricht. Wenn das Mastervideo beispielsweise 25 fps aufweist, wählen Sie eine Kodierungsvorgabe mit 25 fps. Standardmäßig wird bei jeder benutzerdefinierten Kodierung der fps-Wert der Mastervideodatei verwendet. Daher müssen Sie die fps-Einstellung nicht explizit angeben, wenn Sie eine Videokodierungsvorgabe erstellen.
+Wählen Sie eine Videokodierungsvorgabe aus, die der fps-Rate der Übergeordneten Videodatei entspricht. Wenn Ihr Übergeordnetes Video beispielsweise 25 fps aufweist, wählen Sie eine Kodierungsvorgabe mit 25 fps. Standardmäßig wird bei jeder benutzerdefinierten Kodierung das fps-Format der Übergeordneten Videodatei verwendet. Daher müssen Sie die fps-Einstellung nicht explizit angeben, wenn Sie eine Videokodierungsvorgabe erstellen.
 
 ### Abmessungen bei der Videokodierung {#video-encoding-dimensions}
 
@@ -443,11 +447,11 @@ In Dynamic Media wird empfohlen, MP4 H.264-Videokodierungsvorgaben zu verwenden.
 
 ## Veröffentlichen von Videos auf YouTube {#publishing-videos-to-youtube}
 
-Sie können AEM-Video-Assets direkt in einem YouTube-Kanal veröffentlichen, den Sie zuvor erstellt haben.
+Sie können On-Premise-AEM Video-Assets direkt in einem YouTube-Kanal veröffentlichen, den Sie zuvor erstellt haben.
 
-Um Video-Assets auf YouTube zu veröffentlichen, richten Sie AEM Assets mit Tags ein. Diese Tags verknüpfen Sie mit einem YouTube-Kanal. Wenn das Tag eines Video-Assets mit dem Tag eines YouTube-Kanals übereinstimmt, wird das Video auf YouTube veröffentlicht. Wenn das Video-Asset kein Tag enthält, wird es nicht in YouTube veröffentlicht.
+Um Video-Assets in YouTube zu veröffentlichen, richten Sie AEM Assets mit Tags ein. Diese Tags verknüpfen Sie mit einem YouTube-Kanal. Wenn das Tag eines Video-Assets mit dem Tag eines YouTube-Kanals übereinstimmt, wird das Video auf YouTube veröffentlicht. Wenn das Video-Asset kein Tag enthält, wird es nicht in YouTube veröffentlicht.
 
-Beim Veröffentlichen in YouTube wird das Verarbeitungsprofilsystem in AEM umgangen, also auch das Videokodierungsprofil. Diese Umgehung erfolgt, weil YouTube über eine eigene Kodierung verfügt, sodass kein Videoverarbeitungsprofil erforderlich ist. In den meisten Fällen wird aber davon ausgegangen, dass Ihre Video-Assets bereits ein Videoverarbeitungsprofil durchlaufen haben. Wenn Sie das Videoverarbeitungsprofil umgehen und es direkt in YouTube veröffentlichen, bedeutet dies einfach, dass Ihr Video-Asset in AEM Asset keine anzeigbare Miniaturansicht erhält. Außerdem funktionieren nicht kodierte Videos bei Ausführung im Dynamic Media-Ausführungsmodus nicht mit einem der Dynamic Media-Asset-Typen.
+Beim Veröffentlichen in YouTube wird das Verarbeitungsprofilsystem in AEM umgangen, also auch das Videokodierungsprofil. Diese Umgehung erfolgt, weil YouTube über eine eigene Kodierung verfügt, sodass kein Videoverarbeitungsprofil erforderlich ist. In den meisten Fällen ist jedoch davon auszugehen, dass Ihre Video-Assets bereits ein Videoverarbeitungsprofil durchlaufen haben. Wenn Sie das Videoverarbeitungsprofil umgehen und es direkt in YouTube veröffentlichen, bedeutet dies einfach, dass Ihr Video-Asset in AEM Asset keine anzeigbare Miniaturansicht erhält. Wenn Sie im Dynamic Media-Ausführungsmodus ausgeführt werden, funktionieren nicht kodierte Videos mit keinem der Dynamic Media-Asset-Typen.
 
 Für das Veröffentlichen von Video-Assets auf YouTube-Video-Servern müssen folgende Aufgaben abgeschlossen werden, um eine sichere Server-zu-Server-Authentifizierung mit YouTube zu erlauben.
 
@@ -469,7 +473,7 @@ Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wen
 
 >[!NOTE]
 >
->Zum Zeitpunkt der Veröffentlichung dieses Artikels waren die folgenden Schritte korrekt. Google aktualisiert jedoch regelmäßig ohne vorherige Ankündigung seine Websites. Daher können die Schritte geringfügig abweichen.
+>Zum Zeitpunkt der Veröffentlichung dieses Artikels waren die folgenden Schritte korrekt. Google aktualisiert jedoch regelmäßig ohne vorherige Ankündigung seine Websites. Daher können diese Schritte etwas anders ausfallen.
 
 **So konfigurieren Sie Google Cloud-Einstellungen:**
 
@@ -480,29 +484,29 @@ Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wen
    Wenn Sie bereits über ein Google-Konto verfügen, können Sie zum nächsten Schritt wechseln.
 
 1. Rufen Sie [https://cloud.google.com/](https://cloud.google.com/) auf.
-1. Tippen Sie oben auf der Seite &quot;Google Cloud Platform&quot;auf **[!UICONTROL Konsole]**. Möglicherweise müssen Sie sich mit Ihren Google-Konto-Anmeldeinformationen **anmelden**.
+1. Tippen Sie oben auf der Seite &quot;Google Cloud Platform&quot;auf **[!UICONTROL Konsole]**. Möglicherweise benötigen Sie **Anmelden** die Anmeldedaten Ihres Google-Kontos verwenden.
 1. Im **[!UICONTROL Dashboard]** Seite, tippen Sie auf **[!UICONTROL Projekt erstellen]**.
 1. Im **[!UICONTROL Neues Projekt]** in ein Dialogfeld eingeben.
 
-    Beachten Sie, dass Ihre Projekt-ID auf dem Projektnamen basiert. Wählen Sie daher den Projektnamen sorgfältig. Er kann nach seiner Erstellung nicht geändert werden. Außerdem müssen Sie dieselbe Projekt-ID erneut eingeben, wenn Sie YouTube später in Adobe Experience Manager einrichten. Notieren Sie sich die ID des Projekts.
+   Beachten Sie, dass Ihre Projekt-ID auf Ihrem Projektnamen basiert. Wählen Sie daher den Projektnamen sorgfältig. Er kann nach seiner Erstellung nicht geändert werden. Außerdem müssen Sie dieselbe Projekt-ID erneut eingeben, wenn Sie YouTube später in Adobe Experience Manager einrichten. Sie können die Kennung des Projekts aufschreiben.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**.
 
 1. Auf dem **[!UICONTROL Dashboard]** in der **[!UICONTROL Erste Schritte]** Karte, tippen **[!UICONTROL Aktivieren von APIs und Abrufen von Anmeldeinformationen wie Schlüsseln]**.
 1. Oben am **[!UICONTROL Dashboard]** Seite, tippen Sie auf **[!UICONTROL API aktivieren]**.
 1. Im **[!UICONTROL Bibliothek]** Seite, tippen Sie unter &quot;YouTube-APIs&quot;auf **[!UICONTROL YouTube Data API]**.
 1. Oben am **[!UICONTROL YouTube Data API v3]** Seite, tippen Sie auf **[!UICONTROL Aktivieren]** , um es zu aktivieren.
-1. Um die API zu verwenden, benötigen Sie Berechtigungen. Falls erforderlich, tippen Sie auf **[!UICONTROL Erstellen von Anmeldeinformationen]**.
+1. Möglicherweise benötigen Sie zur Verwendung der API Anmeldeinformationen. Falls erforderlich, tippen Sie auf **[!UICONTROL Erstellen von Anmeldeinformationen]**.
 1. Wählen Sie aus der Dropdown-Liste **[!UICONTROL Über welche Plattform wir die API abgerufen?]** die Option **[!UICONTROL Webserver (z. B. Node.js, Tomcat)]**.
-1. Wählen Sie unter **[!UICONTROL Auf welche Daten greifen Sie zu?]** die Option **[!UICONTROL Benutzerdaten]**.
+1. under **[!UICONTROL Auf welche Daten greifen Sie zu?]** select **[!UICONTROL Benutzerdaten]**.
 1. Tippen Sie auf **[!UICONTROL Welche Anmeldedaten brauche ich?]** Schaltfläche.
-1. Geben Sie unter der Überschrift **[!UICONTROL OAuth 2.0-Client-ID erstellen]** einen eindeutigen Namen ein.
+1. Unter dem **[!UICONTROL Erstellen einer OAuth 2.0-Client-ID]** -Überschrift einen eindeutigen Namen eingeben.
 1. Im Textfeld unter dem **[!UICONTROL Autorisierte Javascript-Ursprünge]** -Überschrift, geben Sie den folgenden Pfad ein, ersetzen Sie Ihre eigene Domäne und Port-Nummer im Pfad und drücken Sie dann die Eingabetaste **[!UICONTROL Eingabe]** , um den Pfad zur Liste hinzuzufügen:
 
    `https://<servername.domain>:<port_number>`
 
    Beispiel: `https://1a2b3c.mycompany.com:4321`
 
-   **Hinweis**: Dieses Pfadbeispiel dient nur zu Veranschaulichungszwecken.
+   **Hinweis**: Das obige Pfadbeispiel dient nur zu Veranschaulichungszwecken.
 
 1. Im Textfeld unter dem **[!UICONTROL Autorisierte Umleitungs-URIs]** -Überschrift, geben Sie Folgendes ein, ersetzen Sie Ihre eigene Domäne und Port-Nummer im Pfad und drücken Sie dann die Eingabetaste , um den Pfad zur Liste hinzuzufügen:
 
@@ -510,19 +514,19 @@ Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wen
 
    Beispiel: `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **Hinweis**: Dieses Pfadbeispiel dient nur zu Veranschaulichungszwecken.
+   **Hinweis**: Das obige Pfadbeispiel dient nur zu Veranschaulichungszwecken.
 
 1. Tippen **[!UICONTROL Client-ID erstellen]**.
 1. Auf der Seite &quot;Anmeldeinformationen&quot;unter **[!UICONTROL OAuth 2.0-Bildschirm für Zustimmung einrichten]** die derzeit verwendete Gmail-Adresse.
-1. Geben Sie im Textfeld unter der Überschrift **[!UICONTROL Benutzern angezeigter Produktname]** die Daten ein, die auf dem Genehmigungsbildschirm angezeigt werden sollen.
+1. Im Textfeld unter dem **[!UICONTROL Produktname für Benutzer angezeigt]** -Überschrift eingeben, was Sie auf dem Einverständnisbildschirm anzeigen möchten.
 
-   Der Genehmigungsbildschirm wird AEM-Administratoren angezeigt, wenn sie sich auf YouTube authentifizieren. AEM kontaktiert YouTube, um die Berechtigung zu erhalten.
+   Der Bildschirm für die Zustimmung wird dem AEM-Administrator angezeigt, wenn er sich bei YouTube authentifiziert. AEM kontaktiert YouTube zur Erlaubnis.
 
 1. Tippen **[!UICONTROL Weiter]**.
 1. Unter dem **[!UICONTROL Download-Anmeldeinformationen]** Überschrift, tippen **[!UICONTROL Download]**.
 1. Speichern Sie die Datei `client_id.json`.
 
-   Sie benötigen die heruntergeladene JSON-Datei beim späteren Einrichten von YouTube in Adobe Experience Manager.
+   Sie benötigen diese heruntergeladene JSON-Datei, wenn Sie YouTube später in Adobe Experience Manager einrichten.
 
 1. Tippen Sie auf **[!UICONTROL Fertig]**.
 
@@ -530,7 +534,7 @@ Um Inhalte auf YouTube zu veröffentlichen, benötigen Sie ein Google-Konto. Wen
 
 ### Erstellen eines YouTube-Kanals {#creating-a-youtube-channel}
 
-Für das Veröffentlichen von Videos auf YouTube benötigen Sie mindestens einen Kanal. Wenn Sie bereits einen YouTube-Kanal erstellt haben, können Sie diese Aufgabe überspringen und zur Aufgabe **Hinzufügen von Tags für die Veröffentlichung** wechseln.
+Für das Veröffentlichen von Videos auf YouTube benötigen Sie mindestens einen Kanal. Wenn Sie bereits einen YouTube-Kanal erstellt haben, können Sie diese Aufgabe überspringen und zu **Hinzufügen von Tags zur Veröffentlichung**.
 
 >[!CAUTION]
 >
@@ -544,7 +548,7 @@ Für das Veröffentlichen von Videos auf YouTube benötigen Sie mindestens einen
 1. Im **[!UICONTROL Kanäle]** Seite, tippen Sie auf **[!UICONTROL Neuen Kanal erstellen]**.
 1. Im **[!UICONTROL Markenkonto]** in der **[!UICONTROL Name des Markenkontos]** ein, geben Sie einen Geschäftsnamen oder einen anderen Kanalnamen ein, den Sie für die Veröffentlichung der Video-Assets auswählen, und tippen Sie dann auf **[!UICONTROL Erstellen]**.
 
-   Merken Sie sich den von Ihnen hier eingegebenen Namen, da Sie ihn beim Einrichten von YouTube in AEM erneut eingeben müssen.
+   Merken Sie sich den hier eingegebenen Namen, da Sie ihn bei der Einrichtung von YouTube in AEM erneut eingeben müssen.
 
 1. (Optional) Fügen Sie gegebenenfalls weitere Kanäle hinzu.
 
@@ -552,7 +556,7 @@ Für das Veröffentlichen von Videos auf YouTube benötigen Sie mindestens einen
 
 ### Hinzufügen von Tags zur Veröffentlichung {#adding-tags-for-publishing}
 
-Um Ihre Videos auf YouTube zu veröffentlichen, ordnet AEM Tags einem oder mehreren YouTube-Kanälen hinzu. Informationen zum Hinzufügen von Tags für die Veröffentlichung finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
+Um Videos in YouTube zu veröffentlichen, ordnet AEM Tags einem oder mehreren YouTube-Kanälen zu. Informationen zum Hinzufügen von Tags für die Veröffentlichung finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
 
 Falls Sie die Standard-Tags in AEM verwenden möchten, können Sie diese Aufgabe überspringen und zu [Aktivieren des Agenten für die YouTube-Veröffentlichungsreplikation](#enabling-the-youtube-publish-replication-agent) navigieren.
 
@@ -561,10 +565,10 @@ Falls Sie die Standard-Tags in AEM verwenden möchten, können Sie diese Aufgabe
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools > Bereitstellung > Replikation > Agenten für Autor]**.
 1. Im **[!UICONTROL Agenten des Autors]** Seite, tippen Sie auf **[!UICONTROL YouTube Publish (YouTube)]**.
 1. Tippen Sie in der Symbolleiste rechts neben Einstellungen auf **[!UICONTROL Bearbeiten]**.
-1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Aktiviert]**, um den Replikationsagenten zu aktivieren.
+1. Wählen Sie die **[!UICONTROL Aktiviert]** aktivieren, um den Replikationsagenten zu aktivieren.
 1. Tippen **[!UICONTROL OK]**.
 
-   Nun richten Sie YouTube in AEM ein.
+   Jetzt richten Sie YouTube in AEM ein.
 
 ### Einrichten von YouTube in AEM {#setting-up-youtube-in-aem}
 
@@ -580,10 +584,10 @@ Falls Sie die Standard-Tags in AEM verwenden möchten, können Sie diese Aufgabe
 
 1. Öffnen Sie die in der vorherigen Aufgabe zum Konfigurieren von Google Cloud-Einstellungen heruntergeladene und gespeicherte JSON-Datei in einem Nur-Text-Editor.
 1. Markieren und kopieren Sie den gesamten JSON-Text.
-1. Kehren Sie zu **[!UICONTROL YouTube-Kontoeinstellungen]** Dialogfeld. Im **[!UICONTROL JSON-Konfiguration]** -Feld den JSON-Text ein.
+1. Kehren Sie zu **[!UICONTROL YouTube-Kontoeinstellungen]** Dialogfeld. Fügen Sie im Feld **[!UICONTROL JSON-Konfiguration]** den JSON-Text ein.
 1. Tippen Sie auf **[!UICONTROL OK]**.
 
-   Richten Sie nun YouTube-Kanäle in AEM ein.
+   Sie werden jetzt YouTube-Kanäle in AEM einrichten.
 
 1. Tippen Sie rechts neben **[!UICONTROL Verfügbare Kanäle]** auf **[!UICONTROL +]** (Pluszeichen).
 1. Im **[!UICONTROL YouTube-Kanaleinstellungen]** im Dialogfeld **[!UICONTROL Titel]** Geben Sie den Namen des Kanals ein, den Sie in der Aufgabe erstellt haben. **C[!UICONTROL Erstellen eines YouTube-Kanals]** früher.
@@ -599,11 +603,11 @@ Falls Sie die Standard-Tags in AEM verwenden möchten, können Sie diese Aufgabe
 
 1. Tippen Sie auf **[!UICONTROL Zulassen]**.
 
-   Richten Sie nun Tags für die Veröffentlichung ein.
+   Sie richten jetzt Tags für die Veröffentlichung ein.
 
 1. **Festlegen von Tags für die Veröffentlichung** - Im **[!UICONTROL Cloud Services > YouTube]** Seite, tippen Sie auf **[!UICONTROL Bleistift]** zum Bearbeiten der Liste der Tags, die Sie verwenden möchten.
 1. Tippen Sie auf das Dropdown-Listen-Symbol (umgekehrtes Caret-Zeichen), um die Liste der verfügbaren Tags in AEM anzuzeigen.
-1. Tippen Sie auf mindestens ein Tag, um es hinzuzufügen.
+1. Tippen Sie auf ein oder mehrere Tags, um sie hinzuzufügen.
 
    Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und tippen Sie auf **[!UICONTROL X]**.
 
@@ -613,20 +617,20 @@ Falls Sie die Standard-Tags in AEM verwenden möchten, können Sie diese Aufgabe
 
 ### (Optional) Automatisieren der Einstellung von YouTube-Standardeigenschaften für hochgeladene Videos {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-Sie können die Einstellung von YouTube-Eigenschaften beim Hochladen Ihrer Videos automatisieren. Dazu erstellen Sie in AEM ein Metadaten-Verarbeitungsprofil.
+Sie können die Einstellung von YouTube-Eigenschaften beim Hochladen Ihrer Videos automatisieren. Erstellen Sie dazu ein Metadaten-Verarbeitungsprofil in AEM.
 
 Um das Metadaten-Verarbeitungsprofil zu erstellen, kopieren Sie zunächst die Werte aus den Feldern **[!UICONTROL Feldbezeichnung]**, **[!UICONTROL Zuordnung zu Eigenschaft]** und **[!UICONTROL Auswahl]**, die alle in den Metadatenschemata für Videos enthalten sind. Anschließend erstellen Sie Ihr YouTube-Metadaten-Verarbeitungsprofil, indem Sie ihm diese Werte hinzufügen.
 
 **So automatisieren Sie optional die Einstellung von YouTube-Standardeigenschaften für hochgeladene Videos:**
 
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools > Assets > Metadatenschemata]**.
-1. Tippen Sie auf **[!UICONTROL Standardwert]**. (Aktiveren Sie nicht das Auswahlfeld links neben „Standard“.)
+1. Tippen **[!UICONTROL default]**. (Aktiveren Sie nicht das Auswahlfeld links neben „Standard“.)
 1. Markieren Sie auf der Seite **[!UICONTROL Standard]** das Kontrollkästchen links neben **[!UICONTROL Video]** und klicken Sie dann auf **[!UICONTROL Bearbeiten]**.
 1. Im **[!UICONTROL Metadatenschema-Editor]** Seite, tippen Sie auf **[!UICONTROL Erweitert]** Registerkarte.
-1. Tippen Sie unter der Überschrift &quot;YouTube Publishing&quot;auf **[!UICONTROL YouTube-Kategorie]**. (Tippen Sie nicht auf die Dropdown-Liste „YouTube-Kategorie“.)
+1. Tippen Sie unter der Überschrift &quot;YouTube Publishing&quot;auf **[!UICONTROL YouTube-Kategorie]**. (Tippen Sie nicht auf die Dropdownliste YouTube-Kategorie .)
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
 
-   * Wählen Sie den Wert im Textfeld **[!UICONTROL Feldbezeichnung]** aus und kopieren Sie ihn.
+   * Im **[!UICONTROL Feldbezeichnung]** Textfeld, wählen Sie den Wert aus und kopieren Sie ihn.
 
       Fügen Sie den kopierten Wert in einen geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
@@ -639,10 +643,10 @@ Um das Metadaten-Verarbeitungsprofil zu erstellen, kopieren Sie zunächst die We
 
       Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
-1. Tippen Sie unter der Überschrift „Veröffentlichen auf YouTube“ auf **[!UICONTROL YouTube-Datenschutz]**. (Tippen Sie nicht auf die Dropdown-Liste „YouTube-Datenschutz“.)
+1. Tippen Sie unter der Überschrift „Veröffentlichen auf YouTube“ auf **[!UICONTROL YouTube-Datenschutz]**. (Tippen Sie nicht auf die Dropdownliste YouTube-Datenschutz .)
 1. Führen Sie auf der Registerkarte **[!UICONTROL Einstellungen]** rechts auf der Seite folgende Schritte aus:
 
-   * Wählen Sie den Wert im Textfeld **[!UICONTROL Feldbezeichnung]** aus und kopieren Sie ihn.
+   * Im **[!UICONTROL Feldbezeichnung]** Textfeld, wählen Sie den Wert aus und kopieren Sie ihn.
 
       Fügen Sie den kopierten Wert in einen geöffneten Texteditor ein. Sie benötigen diesen Wert später, wenn Sie das Metadaten-Verarbeitungsprofil erstellen. Lassen Sie den Texteditor geöffnet.
 
@@ -662,7 +666,7 @@ Um das Metadaten-Verarbeitungsprofil zu erstellen, kopieren Sie zunächst die We
 1. Im **[!UICONTROL Metadatenprofil-Editor]** Seite, tippen Sie auf **[!UICONTROL Voranbringen]** Registerkarte.
 1. Fügen Sie die kopierten YouTube-Publishing-Werte dem Profil hinzu, indem Sie folgende Schritte ausführen:
 
-   * Tippen Sie rechts auf der Seite auf die Registerkarte **[!UICONTROL Formular erstellen]**.
+   * Tippen Sie rechts auf der Seite auf die **[!UICONTROL Formular erstellen]** Registerkarte.
    * Ziehen Sie die Komponente mit der Beschriftung **[!UICONTROL Bereichs-Kopfzeile]** nach links und legen Sie sie im Formularbereich ab.
    * Tippen **[!UICONTROL Feldbezeichnung]** , um die Komponente auszuwählen.
    * Auf der rechten Seite der Seite, unter dem **[!UICONTROL Einstellungen]** im **[!UICONTROL Feldbezeichnung]** Textfeld eingeben `YouTube Publishing`.
@@ -672,7 +676,7 @@ Um das Metadaten-Verarbeitungsprofil zu erstellen, kopieren Sie zunächst die We
 
 1. Fügen Sie die kopierten YouTube-Datenschutzwerte dem Profil hinzu, indem Sie folgende Schritte ausführen:
 
-   * Tippen Sie rechts auf der Seite auf die Registerkarte **[!UICONTROL Formular erstellen]**.
+   * Tippen Sie rechts auf der Seite auf die **[!UICONTROL Formular erstellen]** Registerkarte.
    * Ziehen Sie die Komponente mit der Beschriftung **[!UICONTROL Bereichs-Kopfzeile]** nach links und legen Sie sie im Formularbereich ab.
    * Tippen **[!UICONTROL Feldbezeichnung]** , um die Komponente auszuwählen.
    * Geben Sie rechts auf der Seite auf der Registerkarte Einstellungen im Textfeld Feldbezeichnung die Option `YouTube Privacy`.
@@ -681,7 +685,7 @@ Um das Metadaten-Verarbeitungsprofil zu erstellen, kopieren Sie zunächst die We
    * Auf der rechten Seite der Seite, unter dem **[!UICONTROL Einstellungen]** Registerkarte, fügen Sie die **[!UICONTROL YouTube Publishing]** -Werte (**[!UICONTROL Feldbezeichnung]** Wert und **[!UICONTROL Zu Eigenschaft zuordnen]** -Wert), den Sie zuvor in die entsprechenden Felder im Formular kopiert haben. Fügen Sie die **[!UICONTROL Auswahlmöglichkeiten]** Wert in **[!UICONTROL Standardwert]** -Feld.
 
 1. Tippen Sie oben rechts auf **[!UICONTROL Speichern]**.
-1. Wenden Sie das Metadatenprofil für YouTube Publishing auf die Ordner an, in die Sie Videos hochladen möchten. Sie müssen sowohl das Metadatenprofil als auch das Video-Profil festlegen.
+1. Wenden Sie das Metadatenprofil für YouTube Publishing auf die Ordner an, in die Sie Videos hochladen möchten. Sie benötigen sowohl das Metadatenprofil als auch das Videoprofil.
 
    Siehe [Metadatenprofile](metadata-profiles.md) und [Videoprofile](video-profiles.md).
 
@@ -697,7 +701,7 @@ Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#
 1. Navigieren Sie in AEM zu einem Video-Asset, das Sie in Ihrem YouTube-Kanal veröffentlichen möchten.
 1. Wählen Sie das Video-Asset aus.
 
-   Unabhängig von ausgewähltem Video-Asset, ursprünglichem Quellvideo oder kodierter Darstellung des Videos wird immer das ursprüngliche Quellvideo hochgeladen.
+   Unabhängig davon, welches Video-Asset Sie auswählen - z. B. das Originalvideo oder eine kodierte Ausgabe davon - wird das Originalvideo immer hochgeladen.
 
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
 1. Im **[!UICONTROL Allgemein]** Registerkarte unter der Überschrift &quot;Metadaten&quot;tippen Sie auf **[!UICONTROL Durchsuchen]** rechts von der **[!UICONTROL Tags]** -Feld.
@@ -714,9 +718,9 @@ Sie können den Fortschritt der YouTube-Veröffentlichung (oder des Rückgängig
 
 Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Publishing-Zeiten können abhängig von zahlreichen Faktoren erheblich variieren, einschließlich Format des Mastervideos, Dateigröße und Upload-Datenverkehr. Der Publishing-Prozess kann einige Minuten bis zu mehrere Stunden dauern. Denken Sie außerdem daran, dass Formate mit höheren Auflösungen sehr viel langsamer angezeigt werden. Die Anzeige von 720p und 1080p beispielsweise dauert sehr viel länger als die Anzeige von 480p.
+Die Veröffentlichungszeiten können abhängig von zahlreichen Faktoren stark variieren, darunter dem Format Ihres Übergeordneten Videos, der Dateigröße und dem Upload-Traffic. Der Publishing-Prozess kann einige Minuten bis zu mehrere Stunden dauern. Beachten Sie außerdem, dass Formate mit höherer Auflösung viel langsamer gerendert werden. Beispielsweise dauert es bei 720p und 1080p wesentlich länger, als bei 480p.
 
-Wenn nach acht Stunden noch immer die Statusmeldung **[!UICONTROL Hochgeladen (Verarbeitung läuft, bitte warten)]** angezeigt wird, entfernen Sie das Video von der Site und laden Sie es erneut hoch.
+Nach acht Stunden, wenn weiterhin eine Statusmeldung angezeigt wird, in der **[!UICONTROL Hochgeladen (Verarbeitung, bitte warten)]** versuchen Sie, das Video von unserer Site zu entfernen und es erneut hochzuladen.
 
 ### Verknüpfen von YouTube-URLs mit Ihrer Web-Anwendung {#linking-youtube-urls-to-your-web-application}
 
@@ -731,7 +735,7 @@ Die YouTube-URL kann erst kopiert werden, wenn Sie das Video-Asset in YouTube ve
    Denken Sie daran, dass YouTube-URLs erst kopiert werden können, *nachdem* Sie die Video-Assets in YouTube *veröffentlicht* haben.
 
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
-1. Tippen Sie auf die Registerkarte **[!UICONTROL Erweitert]**.
+1. Tippen Sie auf **[!UICONTROL Erweitert]** Registerkarte.
 1. Unter dem **[!UICONTROL YouTube Publishing]** -Überschrift in der **[!UICONTROL YouTube-URL]** Auflisten, wählen Sie den URL-Text aus und kopieren Sie ihn in Ihren Webbrowser, um das Asset in der Vorschau anzuzeigen oder es Ihrer Web-Inhaltsseite hinzuzufügen.
 
 ### Rückgängigmachen der Veröffentlichung von Videos aus YouTube {#unpublishing-videos-to-remove-them-from-youtube}
@@ -740,9 +744,9 @@ Wenn Sie die Veröffentlichung eines Video-Assets in AEM rückgängig machen, wi
 
 >[!CAUTION]
 >
->Videos, die Sie direkt in YouTube entfernen, erkennt AEM nicht als gelöscht und verhält sich so, als wären sie auf YouTube weiterhin veröffentlicht. Machen Sie die Veröffentlichung von Video-Assets in YouTube immer über AEM rückgängig.
+>Wenn Sie ein Video direkt aus YouTube entfernen, ist AEM nicht informiert und verhält sich weiterhin so, als ob das Video noch in YouTube veröffentlicht wird. Machen Sie die Veröffentlichung eines Video-Assets über YouTube immer rückgängig AEM.
 
-Um Inhalte aus YouTube zu entfernen, verwendet AEM den Workflow **[!UICONTROL Veröffentlichung auf YouTube rückgängig machen]**, mit dem Sie den Fortschritt überwachen und Fehlerinformationen anzeigen können.
+Um Inhalte aus YouTube zu entfernen, verwendet AEM die **[!UICONTROL Veröffentlichung in YouTube rückgängig machen]** Workflow, mit dem Sie den Fortschritt überwachen und Fehlerinformationen anzeigen können.
 Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **So heben Sie die Veröffentlichung von Videos auf, um sie aus YouTube zu entfernen:**
@@ -754,11 +758,11 @@ Siehe [Überwachen der Videokodierung und des YouTube Publishing-Fortschritts](#
 
 ## Fortschritt von Videokodierung und YouTube-Veröffentlichung überwachen {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angewendet wurde, oder Ihr Video auf YouTube veröffentlichen, haben Sie vielfältige Möglichkeiten, den Fortschritt (oder die aufgetretenen Fehler) der Videokodierung/Youtube-Veröffentlichung zu überwachen. Der tatsächliche Fortschritt der YouTube-Veröffentlichung ist nur über die Protokolle einsehbar. Ob die Veröffentlichung erfolgreich war oder nicht, kann jedoch auch auf andere Weise geprüft werden, wie im folgenden Verfahren beschrieben. Darüber hinaus können Sie in einer E-Mail-Benachrichtigung darüber informiert werden, ob ein Workflow zur YouTube-Veröffentlichung oder Videokodierung abgeschlossen oder abgebrochen wurde.
+Wenn Sie ein neues Video in einen Ordner hochladen, auf den die Videokodierung angewendet wurde, oder Ihr Video auf YouTube veröffentlichen, können Sie auf verschiedene Weise überwachen, wie die Videokodierung/YouTube-Veröffentlichung voranschreitet (oder fehlschlägt). Der tatsächliche Veröffentlichungsfortschritt von YouTube ist nur über die Protokolle verfügbar. Ob er erfolgreich oder fehlgeschlagen ist, wird jedoch auf weitere Weise aufgelistet, die im folgenden Verfahren beschrieben werden. Darüber hinaus können Sie E-Mail-Benachrichtigungen erhalten, wenn ein YouTube-Veröffentlichungs-Workflow oder eine Videokodierung abgeschlossen oder abgebrochen wird.
 
 ### Überwachen des Fortschritts {#monitoring-progress}
 
-So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-Veröffentlichung):
+So überwachen Sie den Fortschritt (einschließlich fehlgeschlagener Kodierung/YouTube-Veröffentlichung):
 
 1. Fortschritt der Videokodierung in Ihrem Asset-Ordner anzeigen:
 
@@ -778,7 +782,7 @@ So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-V
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   Workflow-Informationen wie Kodierung werden in der Zeitleiste angezeigt. Bei YouTube-Veröffentlichungen muss die **[!UICONTROL Workflow]** Die Timeline enthält auch den Namen des YouTube-Kanals und die YouTube-Video-URL. Darüber hinaus werden Fehlerbenachrichtigungen im **[!UICONTROL Workflow]** Timeline.
+   Alle Workflow-Informationen wie die Kodierung werden in der Timeline angezeigt. Bei YouTube-Veröffentlichungen muss die **[!UICONTROL Workflow]** Die Timeline enthält auch den Namen des YouTube-Kanals und die YouTube-Video-URL. Darüber hinaus werden Fehlerbenachrichtigungen im **[!UICONTROL Workflow]** Timeline.
 
    >[!NOTE]
    >
@@ -831,7 +835,7 @@ So überwachen Sie den Fortschritt (auch die fehlgeschlagene Kodierung/YouTube-V
    ![chlimage_1-436](assets/chlimage_1-436.png)
 
 1. Möglicherweise erhalten Sie E-Mail-Benachrichtigungen über abgebrochene oder fehlgeschlagene Workflow-Aufträge. Diese E-Mail-Benachrichtigungen können von einem Administrator konfiguriert werden.
-Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen](#configuring-e-mail-notifications).
+Siehe [E-Mail-Benachrichtigungen konfigurieren](#configuring-e-mail-notifications).
 
 #### Konfigurieren von E-Mail-Benachrichtigungen {#configuring-e-mail-notifications}
 
@@ -847,17 +851,17 @@ Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigu
 1. Wählen Sie die **[!UICONTROL In YouTube veröffentlichen]** Workflow und tippen Sie dann auf **[!UICONTROL Bearbeiten]**.
 1. Klicken Sie mit der rechten Maustaste auf die **[!UICONTROL YouTube-Upload]** Workflow-Schritt und tippen Sie dann auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf **[!UICONTROL Argument]s** Registerkarte.
-1. Sie können die folgenden Kontrollkästchen aktivieren bzw. deaktivieren:
+1. Sie können die folgenden Kontrollkästchen aktivieren oder deaktivieren:
 
    * **[!UICONTROL Start der Veröffentlichung]**
    * **[!UICONTROL Fehler beim Veröffentlichen]**
    * **[!UICONTROL Abschluss der Veröffentlichung]**, das Informationen zu Kanälen und URLs enthält
 
-   Wenn Sie ein Kontrollkästchen deaktivieren, erhalten Sie die angegebene E-Mail-Benachrichtigung vom Workflow „YouTube-Publishing“ nicht.
+   Das Deaktivieren eines Kontrollkästchens bedeutet, dass Sie die angegebene E-Mail-Benachrichtigung nicht vom YouTube-Veröffentlichungs-Workflow erhalten.
 
    >[!NOTE]
    >
-   >Diese E-Mails sind für YouTube spezifisch und eine Ergänzung der generischen Workflow-E-Mail-Benachrichtigungen. Sie können daher je nach den Konfigurationseinstellungen zwei E-Mail-Benachrichtigungen erhalten – die im **E-Mail-Benachrichtigungsservice Day CQ-Workflow** verfügbare generische Benachrichtigung und eine für YouTube spezifische Benachrichtigung.
+   >Diese E-Mails sind für YouTube spezifisch und eine Ergänzung der generischen Workflow-E-Mail-Benachrichtigungen. Daher erhalten Sie möglicherweise zwei Sätze von E-Mail-Benachrichtigungen - die allgemeine Benachrichtigung, die im Abschnitt **Day CQ Workflow Email Notification Service** und je nach Konfigurationseinstellungen eine für YouTube spezifische
 
 ## Anzeigen von Videoberichten {#viewing-video-reports}
 
@@ -873,11 +877,11 @@ Videoberichte enthalten mehrere aggregierte Metriken für einen angegebenen Zeit
 
 Eine Tabelle mit allen *veröffentlichten* Videos wird ebenfalls angezeigt, damit Sie die am häufigsten angezeigten Videos auf der Website basierend auf insgesamt gestarteten Videos verfolgen können.
 
-Wenn Sie in der Liste auf einen Videonamen tippen, wird der Bericht zur Zielgruppentreue (Abbruch) in Form eines Liniendiagramms angezeigt. Das Diagramm enthält die Anzahl der Ansichten für jeden einzelnen Moment während der Videowiedergabe. Wenn Sie das Video wiedergeben, bewegt sich die vertikale Leiste synchron mit der Zeitanzeige im Player. Abfälle in den Liniendiagrammdaten geben an, wo die Zielgruppe das Video aus Desinteresse abbricht.
+Wenn Sie auf einen Videonamen in der Liste tippen, wird der Bericht zur Zielgruppenerfassung (Abbruch) des Videos in Form eines Liniendiagramms angezeigt. Das Diagramm zeigt die Anzahl der Ansichten für einen bestimmten Zeitpunkt während der Videowiedergabe an. Beim Abspielen des Videos wird die vertikale Leiste mit der Zeitanzeige im Player synchronisiert. Drops in den Liniendiagrammdaten geben an, wo Ihre Zielgruppe aus Desinteresse abfällt.
 
-Wenn das Video außerhalb von Adobe Experience Manager für Dynamic Media kodiert wurde, sind das Diagramm zur Zielgruppentreue (Abbruch) und die Daten zur Wiedergabe in Prozent in der Tabelle nicht verfügbar.
+Wenn das Video außerhalb von Adobe Experience Manager Dynamic Media codiert wurde, sind das Diagramm zur Zielgruppentreue (Abbruch) und die Daten zur Wiedergabe in Prozent in der Tabelle nicht verfügbar.
 
-Informationen hierzu finden Sie im Abschnitt zum [Konfigurieren der Dynamic Media Cloud Services](/help/assets/config-dynamic.md).
+Siehe auch [Konfigurieren von Dynamic Media Cloud Services](/help/assets/config-dynamic.md).
 
 >[!NOTE]
 >
@@ -907,7 +911,7 @@ Damit Videoberichte ordnungsgemäß funktionieren, wird automatisch eine Report 
 
 Wenn Sie einen von Dynamic Media standardmäßig bereitgestellten Video-Viewer verwenden oder eine benutzerdefinierte Viewer-Vorgabe anhand eines Standardvideo-Viewers erstellt haben, müssen Sie keine zusätzlichen Schritte ausführen, um Videoberichte anzuzeigen. Wenn Sie jedoch Ihren eigenen Video-Viewer basierend auf der HTML5 Viewer SDK-API erstellt haben, führen Sie die folgenden Schritte aus, um sicherzustellen, dass der Video-Viewer Tracking-Ereignisse an Dynamic Media-Videoberichte sendet.
 
-Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) und die [HTML5-Viewer-SDK-API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html), um Ihre eigenen Video-Viewer zu erstellen.
+Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=de) und die [HTML5-Viewer-SDK-API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html), um Ihre eigenen Video-Viewer zu erstellen.
 
 So zeigen Sie Videoberichte basierend auf einem Video-Viewer an, den Sie mit der HTML5 Viewer SDK-API erstellt haben:
 
@@ -976,7 +980,7 @@ Geschlossene Untertitel ermöglichen auch einen besseren Zugang für Personen, d
 >
 >Der verwendete Video-Player muss die Anzeige von Untertiteln unterstützen.
 
-Mit Dynamic Media können Untertiteldateien in das JSON-Format (JavaScript Object Notation) konvertiert werden. Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kunden die Videos leichter finden können und zusätzliche Details zum Videoinhalt erhalten.
+Mit Dynamic Media können Untertiteldateien in das JSON-Format (JavaScript Object Notation) konvertiert werden. Diese Konvertierung bedeutet, dass Sie den JSON-Text als verborgenes, aber vollständiges Transkript des Videos einfügen können. Suchmaschinen können dann den Inhalt durchsuchen und indizieren, damit Kundinnen und Kunden die Videos leichter finden können und zusätzliche Detailinformationen zum Videoinhalt erhalten.
 
 Siehe [Bereitstellen von statischen (Nicht-Bild-)Inhalten](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=de#image-serving-api) im *Hilfe zur Dynamic Media Image Serving and Rendering API* Weitere Informationen zur Verwendung der JSON-Funktion in einer URL.
 
@@ -996,11 +1000,11 @@ Siehe [Bereitstellen von statischen (Nicht-Bild-)Inhalten](https://experiencelea
 
    Im Tool im **[!UICONTROL URL der Videodatei eingeben]** ein, fügen Sie die kopierte URL Ihrer Videodatei ein und tippen Sie dann auf **[!UICONTROL Laden]**. Lesen Sie [Erhalten einer URL für ein Asset](linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset), um die URL für die Videodatei zu erhalten, die Sie dann in das Feld **[!UICONTROL URL der Videodatei eingeben]** einfügen können. Internet Explorer, Chrome oder Safari können das Video dann nativ wiedergeben.
 
-   Folgen Sie jetzt auf der Website den Anweisungen auf dem Bildschirm, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei und fügen Sie ihn in einen Texteditor ein. Speichern Sie ihn dann mit der Dateierweiterung .vtt.
+   Folgen Sie jetzt auf der Website den Anweisungen auf dem Bildschirm, um Ihre WebVTT-Datei zu erstellen und zu speichern. Wenn Sie fertig sind, kopieren Sie den Inhalt der Untertiteldatei, fügen Sie ihn in einen Texteditor ein und speichern Sie ihn mit der Dateierweiterung .vtt.
 
    >[!NOTE]
    >
-   >Für globale Unterstützung von Videountertiteln in verschiedenen Sprachen ist zu beachten, dass der WebVTT-Standard separate .vtt-Dateien und Abrufe für jede Sprache benötigt, die Sie unterstützen möchten.
+   >Für die globale Unterstützung von Videountertiteln in mehreren Sprachen müssen Sie beim WebVTT-Standard separate .vtt-Dateien und Aufrufe für jede Sprache erstellen, die Sie unterstützen möchten.
 
    Im Allgemeinen sollte die VTT-Untertiteldatei denselben Namen haben wie die Videodatei, an den jedoch ein Kürzel für die Sprache wie -EN, -FR oder -DE angehängt ist. Dies kann Ihnen helfen, die Generierung von Video-URLs mit Ihrem vorhandenen Web-Content-Management-System zu automatisieren.
 
@@ -1035,7 +1039,7 @@ Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, kön
 
 Anstelle der Video-Viewer-Vorgabe können Sie gegebenenfalls einen eigenen benutzerdefinierten Video-Viewer mit Kapiteln erstellen und mit Ihrer Marke versehen. Anweisungen zum Erstellen eigener HTML5-Viewer mit Kapitelnavigation finden Sie in der „Adobe-Viewer-SDK-API für HTML5“ unter dem Abschnitt „Anpassen von Verhaltensweisen mit Modifikatoren“ unter den Klassen `s7sdk.video.VideoPlayer` und `s7sdk.video.VideoScrubber`. Siehe die Dokumentation zur [HTML5-Viewer-SDK-API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html).
 
-Die Kapitelliste für Videos wird auf die gleiche Weise erstellt wie Untertitel. Das heißt, Sie erstellen eine WebVTT-Datei. Diese Datei muss jedoch getrennt von der WebVTT-Untertiteldatei erstellt werden. Untertitel und Kapitel dürfen nicht in derselben WebVTT-Datei enthalten sein.
+Die Kapitelliste für Videos wird auf die gleiche Weise erstellt wie Untertitel. Das heißt, Sie erstellen eine WebVTT-Datei. Beachten Sie jedoch, dass diese Datei getrennt von jeder WebVTT-Untertiteldatei sein muss, die Sie möglicherweise auch verwenden. Sie können Untertitel und Kapitel nicht in einer WebVTT-Datei kombinieren.
 
 Orientieren Sie sich bei der Erstellung einer WebVTT-Datei mit Kapitelnavigation am Format des folgenden Beispiels:
 
@@ -1059,15 +1063,15 @@ Cost-efficient access to rapidly evolving technology.
 
 Im obigen Beispiel ist `Chapter 1` der Cue-Point-Bezeichner. Diese Angabe ist optional. Die Cue-Point-Zeit `00:00:000 --> 01:04:364` gibt die Start- und Endzeit des Kapitels im Format `00:00:000` an. Die letzten drei Ziffern geben die Millisekunden an und können bei `000` belassen werden. Der Kapiteltitel `The bicycle store behind it all` ist die tatsächliche Beschreibung des Kapitelinhalts. Der Cue-Point-Bezeichner, die Cue-Point-Zeit und der Kapiteltitel werden im Video-Player in einem Popup-Fenster angezeigt, wenn Benutzer mit dem Mauszeiger auf einen visuellen Cue-Point in der Video-Zeitleistensegment zeigen.
 
-Da Sie einen HTML5-Video-Viewer verwenden, stellen Sie sicher, dass die erstellte Kapiteldatei dem WebVTT (Web Video Text Tracks)-Standard entspricht. Die Erweiterung des Kapiteldateinamens lautet „.vtt“. Weitere Informationen zum WebVTT-Untertitelstandard erhalten Sie auf der folgenden Seite.
+Da Sie einen HTML5-Video-Viewer verwenden, stellen Sie sicher, dass die erstellte Kapiteldatei dem WebVTT (Web Video Text Tracks)-Standard entspricht. Die Erweiterung des Kapiteldateinamens ist .vtt. Weitere Informationen zum WebVTT-Untertitelstandard erhalten Sie auf der folgenden Seite.
 
 Siehe [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt/)
 
 **So fügen Sie Kapitelmarken zu Videos hinzu:**
 
-1. Erstellen Sie die Videokapiteldatei in einem einfachen Texteditor außerhalb von AEM.
+1. Erstellen Sie die Video-Kapiteldatei mit einem einfachen Texteditor außerhalb AEM.
 
-   Für globale Unterstützung von Videokapiteln in anderen Sprachen als Englisch benötigt der WebVTT-Standard separate VTT-Dateien und Aufrufe für jede Sprache, die unterstützt werden soll.
+   Für die globale Unterstützung von Videokapiteln in anderen Sprachen als Englisch müssen Sie beim WebVTT-Standard separate .vtt-Dateien und Aufrufe für jede Sprache erstellen, die Sie unterstützen möchten.
 
 1. Speichern Sie die `.vtt` -Datei in UTF8-Kodierung, um Probleme mit der Zeichendarstellung im Text des Kapiteltitels zu vermeiden.
 
@@ -1107,44 +1111,44 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://dev.w3.org/html5/webvtt
      </tbody> 
     </table>
 
-## Informationen zu Videominiaturen {#about-video-thumbnails}
+## Über Videominiaturen {#about-video-thumbnails}
 
-Wählen Sie eine von zehn automatisch von Dynamic Media erstellten Miniaturansichten, die Ihrem Video hinzugefügt werden sollen. Der Video-Player zeigt die ausgewählte Miniatur, wenn ein Video-Asset mit der Dynamic Media-Komponente in der Authoring-Umgebung von AEM Sites, AEM Mobile oder AEM Screens verwendet wird. Die Miniaturansicht dient als statisches Bild, das den Inhalt des gesamten Videos am besten darstellt und die Benutzer dazu ermutigt, auf die Schaltfläche Abspielen zu tippen.
+Wählen Sie eine von zehn automatisch von Dynamic Media erstellten Miniaturansichten, die Ihrem Video hinzugefügt werden sollen. Der Videoplayer zeigt die ausgewählte Miniaturansicht an, wenn ein Video-Asset mit der Dynamic Media-Komponente in der Authoring-Umgebung von AEM Sites, AEM Mobile oder AEM Screens verwendet wird. Die Miniaturansicht dient als statisches Bild, das den Inhalt des gesamten Videos am besten darstellt und die Benutzer dazu ermutigt, auf die Schaltfläche Abspielen zu tippen.
 
-Basierend auf der Gesamtdauer des Videos erfasst Dynamic Media zehn (Standardwert) Miniaturansichten bei 1 %, 11 %, 21 %, 31 %, 41 %, 51 %, 61 %, 71 %, 81 % und 91 % im Video. Die zehn Miniaturansichten bleiben erhalten, sodass Sie die Serie nicht neu generieren müssen, falls Sie zu einem späteren Zeitpunkt eine andere Miniaturansicht auswählen. Sie sehen die zehn Miniaturen in der Vorschau an und wählen jene aus, die Sie mit Ihrem Video verwenden möchten. Wenn Sie die Standardeinstellung ändern möchten, können Sie mit CRXDE Lite das Zeitintervall konfigurieren, in dem Miniaturansichten generiert werden. Beispiel: Sie möchten eine Serie aus nur vier Miniaturansichten mit gleichem Abstand aus Ihrem Video generieren. Dafür konfigurieren Sie das Zeitintervall bei 24 %, 49 %, 74 % und 99 %.
+Basierend auf der Gesamtdauer des Videos erfasst Dynamic Media zehn (standardmäßige) Miniaturansichten bei 1 %, 11 %, 21 %, 31 %, 41 %, 51 %, 61 %, 71 %, 81 % und 91 % im Video. Die zehn Miniaturansichten bleiben bestehen, d. h., wenn Sie später eine andere Miniaturansicht auswählen, müssen Sie die Serie nicht neu generieren. Sie sehen sich die zehn Miniaturbilder in der Vorschau an und wählen dann das Miniaturbild aus, das Sie für Ihr Video verwenden möchten. Wenn Sie die Standardeinstellung ändern möchten, können Sie mit CRXDE Lite das Zeitintervall konfigurieren, in dem Miniaturansichten generiert werden. Wenn Sie beispielsweise nur eine Reihe von vier Miniaturbildern mit gleichmäßigem Abstand aus Ihrem Video generieren möchten, können Sie die Zeiten der Intervalle auf 24 %, 49 %, 74 % und 99 % konfigurieren.
 
-Im Idealfall können Sie Video-Miniaturansichten jederzeit zwischen dem Hochladen und dem Veröffentlichen des Videos auf Ihrer Website hinzufügen.
+Idealerweise können Sie eine Videominiaturansicht jederzeit hinzufügen, nachdem Sie Ihr Video hochgeladen haben, aber bevor Sie es auf Ihrer Website veröffentlichen.
 
-Sie haben auch die Möglichkeit, statt einer von Dynamic Media generierten Miniaturansicht eine benutzerdefinierte Miniaturansicht hochzuladen, die Ihr Video repräsentiert. Erstellen Sie beispielsweise eine benutzerdefinierte Miniaturansicht mit dem Titel Ihres Videos, einem ansprechenden Eröffnungsbild oder einem spezifischen Bild, das Sie aus Ihrem Video erfasst haben. Die benutzerdefinierte Videominiaturansicht, die Sie hochladen, sollte eine maximale Auflösung von 1280 x 720 Pixeln (Mindestbreite von 640 Pixeln) haben und nicht größer sein als 2 MB.
+Wenn Sie es vorziehen, können Sie auch eine benutzerdefinierte Miniaturansicht hochladen, um Ihr Video darzustellen, anstatt eine von Dynamic Media generierte Miniaturansicht zu verwenden. Sie können beispielsweise eine benutzerdefinierte Miniaturansicht erstellen, die den Titel Ihres Videos, ein auffälliges öffnendes Bild oder ein sehr spezifisches Bild aufweist, das aus Ihrem Video erfasst wurde. Das benutzerdefinierte Videominiaturbild, das Sie hochladen, sollte eine maximale Auflösung von 1280 x 720 Pixel (Mindestbreite von 640 Pixel) und nicht größer als 2 MB sein.
 
 >[!NOTE]
 >
->Benutzerdefinierte Videominiaturen sind nur verfügbar, wenn Sie Dynamic Media im Hybridmodus ausführen.
+>Benutzerdefinierte Videominiaturen sind nur verfügbar, wenn Sie Dynamic Media - Hybridmodus ausführen.
 
 ### Hinzufügen einer Videominiatur {#adding-a-video-thumbnail}
 
 1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine Videominiaturansicht hinzufügen möchten.
 1. Im Asset-Auswahlmodus können Sie die **[!UICONTROL Listenansicht]** oder **[!UICONTROL Kartenansicht]** tippen Sie auf das Video-Asset.
-1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** (ein Kreis mit einem darin enthaltenen „i“).
+1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** (Kreis mit „i“ darin).
 1. Im Video **[!UICONTROL Eigenschaften]** Seite, tippen Sie auf **[!UICONTROL Miniatur ändern]**.
 1. Im **[!UICONTROL Miniatur ändern]** Seite, tippen Sie in der Symbolleiste auf **[!UICONTROL Frame auswählen]**.
 
-   Dynamic Media generiert eine Serie von Miniaturansichten aus Ihrem Video, die auf dem Standardzeitintervall oder dem angepassten Zeitintervall basiert.
+   Dynamic Media generiert eine Serie von Miniaturbildern aus Ihrem Video, basierend auf dem von Ihnen angepassten standardmäßigen Zeitintervall oder Zeitintervall.
 
-1. Zeigen Sie die generierten Miniaturansichten in einer Vorschau an und wählen Sie jene aus, die Sie Ihrem Video hinzufügen möchten.
-1. Tippen Sie auf **[!UICONTROL Änderungen speichern]**.
+1. Zeigen Sie die generierten Miniaturbilder in der Vorschau an und wählen Sie dann dasjenige aus, das Sie zum Video hinzufügen möchten.
+1. Tippen Sie auf **[!UICONTROL Änderung speichern]**.
 
-   Die Miniaturansicht des Videos wird aktualisiert. Die ausgewählte Miniaturansicht wird verwendet. Wenn Sie die Miniaturansicht zu einem späteren Zeitpunkt wieder ändern möchten, kehren Sie zur Seite **[!UICONTROL Miniatur ändern]** zurück und wählen Sie eine neue Miniaturansicht aus.
+   Das Miniaturbild des Videos wird aktualisiert. Es wird nun die ausgewählte Miniaturansicht verwendet. Wenn Sie sich später entscheiden, das Miniaturbild zu ändern, können Sie zur Seite **[!UICONTROL Miniaturansicht ändern]** zurückkehren und ein neues Bild auswählen.
 
-   Wenn Sie neue Standardzeitintervalle konfiguriert oder ein neues Video hochgeladen haben, das das vorhandene Video ersetzt, muss Dynamic Media die Miniaturen neu generieren.
+   Wenn Sie neue Standardzeitintervalle konfiguriert haben oder ein neues Video hochgeladen haben, um das vorhandene Video zu ersetzen, müssen Sie Dynamic Media die Miniaturansichten neu generieren lassen.
 
-   Siehe [Konfigurieren des Standardzeitintervalls für die Generierung von Videominiaturansichten](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
+   Siehe [Konfigurieren des Standardzeitintervalls für die Generierung von Videominiaturen](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
 #### Konfigurieren des Standardzeitintervalls für die Generierung von Videominiaturansichten {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
-Wenn Sie das neue Standardzeitintervall konfigurieren und speichern, wird Ihre Änderung automatisch nur auf Videos angewendet, die Sie in Zukunft hochladen. Sie wird nicht automatisch auf die Videos angewendet, die Sie zuvor hochgeladen haben. Für die vorhandenen Videos müssen Sie die Miniaturansichten neu generieren.
+Wenn Sie das neue Standardzeitintervall konfigurieren und speichern, wird Ihre Änderung automatisch nur auf Videos angewendet, die Sie in Zukunft hochladen. Die neue Standardeinstellung wird nicht automatisch auf Videos angewendet, die Sie zuvor hochgeladen haben. Für vorhandene Videos müssen Sie die Miniaturansichten neu generieren.
 
-Siehe [Hinzufügen von Videominiaturen](#adding-a-video-thumbnail).
+Siehe [Hinzufügen einer Videominiatur](#adding-a-video-thumbnail).
 
 So konfigurieren Sie das Standardzeitintervall, in dem Videominiaturansichten generiert werden,
 
@@ -1152,32 +1156,32 @@ So konfigurieren Sie das Standardzeitintervall, in dem Videominiaturansichten ge
 
 1. Navigieren Sie auf der CRXDE Lite-Seite im Verzeichnisbereich links zu `o etc/dam/imageserver/configuration/jcr:content/settings.`.
 
-   Wenn die Verzeichnisleiste nicht angezeigt wird, tippen Sie links neben der Registerkarte „Startseite“ auf das Symbol >>.
+   Wenn das Ordnerbedienfeld nicht sichtbar ist, müssen Sie möglicherweise auf das Symbol >> links neben der Registerkarte Startseite tippen.
 
 1. Im rechten unteren Bereich der **[!UICONTROL Eigenschaften]** Registerkarte, doppeltippen `thumbnailtime`.
 1. Geben Sie im Dialogfeld Zeit der Miniaturansicht bearbeiten in den Textfeldern Intervalle als Prozentwerte ein.
 
-   * Tippen Sie auf das Pluszeichen (+), um ein oder mehrere Intervallwertfelder hinzuzufügen. Möglicherweise müssen Sie am unteren Rand des Dialogfelds einen Bildlauf durchführen, um das Symbol zu sehen.
-   * Tippen Sie rechts neben dem Intervallwertfeld auf das Minuszeichen (-), um es aus der Liste zu löschen.
-   * Tippen Sie auf die Pfeile nach oben und unten, um die Intervallwerte neu anzuordnen.
+   * Tippen Sie auf das Pluszeichen (+), um ein oder mehrere Intervallwertfelder hinzuzufügen. Möglicherweise müssen Sie zum unteren Rand des Dialogfelds scrollen, um das Symbol anzuzeigen.
+   * Tippen Sie auf das Minuszeichen (-) rechts neben einem Intervallwertfeld, um es aus der Liste zu löschen.
+   * Tippen Sie auf das Symbol mit dem Nach-oben-Pfeil und das Symbol mit dem Nach-unten-Pfeil, um die Intervallwerte neu anzuordnen.
 
-1. Tippen Sie auf **[!UICONTROL OK]**, um zur Registerkarte „Eigenschaften“ zurückzukehren.****
-1. Tippen Sie in der linken oberen Ecke der Seite „CRXDE Lite“ auf **[!UICONTROL Alle speichern]** und tippen Sie dann auf das Symbol „Zurück zur Startseite“, um zu AEM zurückzukehren.****
+1. Tippen **[!UICONTROL OK]** , um zur **[!UICONTROL Eigenschaften]** Registerkarte.
+1. Tippen Sie links oben auf der Seite &quot;CRXDE Lite&quot;auf **[!UICONTROL Alle speichern]** und tippen Sie dann auf **[!UICONTROL Zurück zur Startseite]** in der oberen linken Ecke, um zu AEM zurückzukehren.
 
-   Siehe [Hinzufügen von Videominiaturen.](#adding-a-video-thumbnail)
+   Siehe [Hinzufügen einer Videominiatur.](#adding-a-video-thumbnail)
 
 ### Hinzufügen einer benutzerdefinierten Videominiatur {#adding-a-custom-video-thumbnail}
 
 >[!NOTE]
 >
->Diese Funktion ist nur verfügbar, wenn Sie Dynamic Media im Hybridmodus ausführen.
+>Diese Funktion ist nur verfügbar, wenn Sie den Hybridmodus von Dynamic Media ausführen.
 
 1. Navigieren Sie zum hochgeladenen Video-Asset, dem Sie eine Videominiaturansicht hinzufügen möchten.
 1. Im Asset-Auswahlmodus können Sie die **[!UICONTROL Listenansicht]** oder **[!UICONTROL Kartenansicht]** tippen Sie auf das Video-Asset.
-1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** (ein Kreis mit einem darin enthaltenen „i“).
+1. Tippen Sie in der Symbolleiste auf das Symbol **[!UICONTROL Eigenschaften anzeigen]** (Kreis mit „i“ darin).
 1. Im Video **[!UICONTROL Eigenschaften]** Seite, tippen Sie auf **[!UICONTROL Miniatur ändern]**.
 1. Im **[!UICONTROL Miniatur ändern]** Seite, tippen Sie in der Symbolleiste auf **[!UICONTROL Neue Miniatur hochladen]**.
-1. Navigieren Sie zu einer Miniaturansicht, die Sie verwenden möchten, wählen Sie sie aus und tippen Sie auf **[!UICONTROL Öffnen]**, um die Ansicht in AEM hochzuladen.
+1. Navigieren Sie zu einem Miniaturbild, das Sie verwenden möchten, wählen Sie es aus und tippen Sie dann auf **[!UICONTROL Öffnen]** , um mit dem Hochladen des Bildes in AEM zu beginnen
 1. Nachdem das Bild erfolgreich hochgeladen wurde, wird im **[!UICONTROL Miniatur ändern]** Seite, tippen Sie auf **[!UICONTROL Änderungen speichern]**.
 
-   Die benutzerdefinierte Miniaturansicht wird Ihrem Video hinzugefügt. 
+   Die benutzerdefinierte Miniaturansicht wird Ihrem Video hinzugefügt.

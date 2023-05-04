@@ -1,7 +1,7 @@
 ---
 title: Oak-run.jar – Indizierungsanwendungsfälle
 seo-title: Oak-run.jar Indexing Use Cases
-description: Erfahren Sie mehr über die verschiedenen Anwendungsfälle für die Durchführung der Indizierung mit dem Oak-run-Tool.
+description: Erfahren Sie mehr über die verschiedenen Anwendungsfälle für die Indizierung mit dem Oak-run-Tool.
 seo-description: Learn about the various user cases for performing indexing with the Oak-run tool.
 uuid: 3c50080d-1e0d-4886-8d37-269f06881eb4
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,29 +10,33 @@ topic-tags: deploying
 discoiquuid: 084075b8-826d-4f27-9342-35f33368f24f
 noindex: true
 exl-id: 62f1d3e6-b0d2-4d64-b62e-91836b573e8c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 100%
+source-wordcount: '1411'
+ht-degree: 58%
 
 ---
 
 # Oak-run.jar – Indizierungsanwendungsfälle{#oak-run-jar-indexing-use-cases}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Oak-run unterstützt Indizierungen über die Befehlszeile, ohne dass diese über die JMX-Konsole von AEM ausgeführt werden müssen.
 
 Die übergreifenden Vorteile bei der Verwendung des oak-run.jar-Befehls „index“ für die Verwaltung von Oak-Indizes:
 
 1. Der Oak-run-Befehl „index“ bietet ein neues Indizierungs-Tool für AEM 6.4.
-1. Oak-run verkürzt die Neuindizierungszeit, was sich insbesondere bei großen Repositorys auszahlt.
-1. Oak-run verringert den Ressourcenverbrauch während der Neuindizierung in AEM, was die Gesamtleistung des Systems verbessert.
-1. Oak-run bietet eine Out-of-Band-Neuindizierung und unterstützt damit Szenarios, in denen die Produktion verfügbar sein muss und keine Wartungs- oder Ausfallzeiten eingeplant werden können.
+1. Oak-run verkürzt die Zeit bis zur Neuindizierung, wodurch die Neuindizierungszeiten bei größeren Repositorys reduziert werden.
+1. Oak-run reduziert den Ressourcenverbrauch während der Neuindizierung in AEM, was zu einer insgesamt besseren Systemleistung führt.
+1. Oak-run bietet Out-of-Band-Neuindizierung und unterstützt Situationen, in denen die Produktion verfügbar sein muss und keine Wartung oder Ausfallzeiten tolerieren kann, die andernfalls für die Neuindizierung erforderlich sind.
 
-In den folgenden Abschnitten finden Sie Beispielbefehle. Der Oak-run-Befehl „index“ unterstützt alle NodeStore- und BlobStore-Setups. Die folgenden Beispiele beziehen sich auf Setups mit FileDataStore und SegmentNodeStore.
+In den folgenden Abschnitten finden Sie Beispielbefehle. Der oak-run-Indexbefehl unterstützt alle NodeStore- und BlobStore-Setups. Die folgenden Beispiele beziehen sich auf Setups mit FileDataStore und SegmentNodeStore.
 
-## Anwendungsfall 1 - Prüfung der Indexkonsistenz {#usercase1indexconsistencycheck}
+## Nutzungsszenario 1 - Prüfung der Indexkonsistenz {#usercase1indexconsistencycheck}
 
-Dies ist ein Anwendungsfall, in dem der Index beschädigt wurde. In einigen Fällen ist es nicht möglich festzustellen, welcher Index beschädigt wurde. Hierzu stellt Adobe Tools für folgende Aufgaben bereit:
+Dies ist ein Anwendungsfall im Zusammenhang mit Indexbeschädigung. In einigen Fällen war es nicht möglich festzustellen, welche Indizes beschädigt sind. Daher bietet Adobe Tools, die Folgendes ermöglichen:
 
 1. Konsistenzprüfungen aller Indizes und Erstellung eines Berichts über die gültigen und ungültigen Indizes. 
 1. Das Tool kann auch verwendet werden, wenn kein Zugriff auf AEM möglich ist. 
@@ -44,7 +48,7 @@ Eine Suche nach beschädigten Indizes kann mit dem Vorgang `--index-consistency-
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-consistency-check
 ```
 
-Dieser generiert einen Bericht in der Datei `indexing-result/index-consistency-check-report.txt` Unten sehen Sie ein Beispiel für diesen Bericht:
+Dieser generiert einen Bericht in der Datei `indexing-result/index-consistency-check-report.txt` Unten finden Sie einen Beispielbericht:
 
 ```
 Valid indexes :
@@ -70,11 +74,11 @@ Valid indexes :
 
 ### Vorteile {#uc1benefits}
 
-Diese Tools können jetzt durch den Support und den Systemadministrator verwendet werden, um schnell zu ermitteln, welche Indizes beschädigt sind, um diese dann neu zu indizieren.
+Diese Tools können jetzt vom Support und vom Systemadministrator verwendet werden, um schnell zu ermitteln, welche Indizes beschädigt sind, und sie dann neu indizieren.
 
-## Anwendungsfall 2 - Indexstatistiken {#usecase2indexstatistics}
+## Anwendungsfall 2: Indexstatistiken {#usecase2indexstatistics}
 
-Für die Diagnose von Problemen mit der Abfrageperformance benötigt Adobe häufig die vorhandene Indexdefinition sowie zu Indizes gehörende Statistiken aus dem Setup von Kunden. Bisher waren diese Informationen über mehrere Ressourcen verstreut. Um die Fehlerbehebung zu erleichtern, bietet Adobe Tools, die folgende Aufgaben durchführen:
+Für die Diagnose einiger Fälle rund um die Adobe der Abfrageleistung waren häufig eine vorhandene Indexdefinition und indexbezogene Statistiken aus der Kundeneinrichtung erforderlich. Bisher wurden diese Informationen über mehrere Ressourcen verteilt. Um die Fehlerbehebung zu vereinfachen, hat Adobe Tools erstellt, die Folgendes ermöglichen:
 
 1. Dump aller im System vorhandener Indexdefinitionen in einer einzigen JSON-Datei. 
 
@@ -100,19 +104,19 @@ java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstor
 
 Die Berichte werden in `indexing-result/index-info.txt` und `indexing-result/index-definitions.json` erstellt.
 
-Außerdem werden einige Informationen über die Web-Konsole bereitgestellt und befinden sich in der vom Dump erzeugten ZIP-Datei. Der Zugriff ist über folgende URL möglich:
+Außerdem werden dieselben Details über die Web-Konsole bereitgestellt und wären Teil der ZIP-Datei für die Konfigurationsablage. Sie können unter folgendem Pfad darauf zugreifen:
 
 `https://serverhost:serverport/system/console/status-oak-index-defn`
 
 ### Vorteile {#uc2benefits}
 
-Dieses Werkzeug aktiviert die schnelle Sammlung aller erforderlichen Details, die mit Index- oder Abfrageproblemen zusammenhängen, und verkürzt die für das Extrahieren dieser Informationen benötigte Zeit.
+Diese Tools ermöglichen die schnelle Erfassung aller erforderlichen Details im Zusammenhang mit Indizierungs- oder Abfrageproblemen und verkürzen die Zeit, die mit dem Extrahieren dieser Informationen verbracht wird.
 
-## Anwendungsfall 3 - Neuindizierung {#usecase3reindexing}
+## Anwendungsfall 3: Neuindizierung {#usecase3reindexing}
 
-Je nach [Szenario](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) ist es in einigen Fällen notwendig, eine Neuindizierung durchzuführen. Zurzeit erfolgt die Neuindizierung, indem das Flag `reindex` im Indexdefinitionsknoten über CRXDE oder die Benutzeroberfläche des Index-Managers auf `true` gesetzt wird. Nach dem Setzen des Flags wird die Neuindizierung asynchron ausgeführt.
+Je nach [Szenario](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) ist es in einigen Fällen notwendig, eine Neuindizierung durchzuführen. Zurzeit erfolgt die Neuindizierung, indem das Flag `reindex` im Indexdefinitionsknoten über CRXDE oder die Benutzeroberfläche des Index-Managers auf `true` gesetzt wird. Nachdem das Flag gesetzt wurde, erfolgt die Neuindizierung asynchron.
 
-Einige wichtige Aspekte der Neuindizierung:
+Einige Hinweise zur Neuindizierung:
 
 * Die Neuindizierung verläuft in `DocumentNodeStore`-Setups weitaus langsamer als in `SegmentNodeStore`-Setups, in denen der gesamte Inhalt lokal gespeichert ist. 
 
@@ -120,9 +124,9 @@ Einige wichtige Aspekte der Neuindizierung:
 * Bei der Neuindizierung muss das gesamte Repository durchlaufen werden, was eine hohe Verarbeitungslast für das AEM-Setup bedeuten und sich negativ auf die Benutzerfreundlichkeit auswirken kann.
 * Für eine `DocumentNodeStore`-Installation, in der die Neuindizierung sehr lange dauern kann, muss die Indizierung komplett neu gestartet werden, falls die Verbindung zur Mongo-Datenbank während des Vorgangs unterbrochen wird.
 
-* In manchen Fällen benötigt die Neuindizierung viel Zeit, weil eine Textextraktion stattfindet. Dies gilt vor allem für Setups mit vielen PDF-Dateien. Hier kann sich die für die Textextraktion erforderliche Zeit auf die für die Indizierung benötigte Zeit auswirken.
+* In einigen Fällen kann die Neuindizierung aufgrund der Textextraktion lange dauern. Dies ist hauptsächlich für Setups mit vielen PDF-Dateien spezifisch, bei denen sich die für die Textextraktion aufgewendete Zeit auf die Indizierungszeit auswirken kann.
 
-Um diese Ziele zu erreichen, unterstützt das Oak-run-Tool verschiedene Indizierungsmodi, die in den einzelnen Fällen verwendet werden können. Der Oak-run-Befehl „index“ bietet folgende Vorteile:
+Um diese Ziele zu erreichen, unterstützt das Oak-run-Index-Tool verschiedene Neuindizierungsmodi, die bei Bedarf verwendet werden können. Der oak-run-Indexbefehl bietet folgende Vorteile:
 
 * **Out-of-Band-Neuindizierung** – Die Oak-run-Neuindizierung kann getrennt von einem ausgeführten AEM-Setup ausgeführt werden. Dies minimiert die Auswirkungen auf die verwendete AEM-Instanz. 
 
@@ -142,7 +146,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 Dies bietet die folgenden Vorteile
 
-* Minimale Auswirkung auf das Ausführen von AEM-Instanzen. Die meisten Lesevorgänge können von Sekundärservern ausgeführt werden und ausgeführte AEM-Caches sind nicht von all den für die Neuindizierung erforderlichen Durchläufen betroffen. 
+* Minimale Auswirkung auf AEM Instanzen. Die meisten Lesevorgänge können von Sekundärservern ausgeführt werden und ausgeführte AEM-Caches sind nicht von all den für die Neuindizierung erforderlichen Durchläufen betroffen. 
 * Benutzer können über die Option `--index-definitions-file` auch eine JSON-Datei oder einen neuen oder aktualisierten Index bereitstellen.
 
 ### Neuindizierung – SegmentNodeStore {#reindexsegmentnodestore}
@@ -155,9 +159,9 @@ Das übliche Verfahren, bei dem das Flag `reindex` gesetzt wird.
 
 #### Online-Neuindizierung – SegmentNodeStore – Die AEM-Instanz wird ausgeführt {#onlinereindexsegmentnodestoretheaeminstanceisrunning}
 
-In `SegmentNodeStore`-Installationen kann nur ein Prozess im Lese-/Schreibmodus auf Segmentdateien zugreifen. Aus diesem Grund sind für einige Vorgänge der Oak-run-Indizierung weitere manuelle Schritte erforderlich.
+In `SegmentNodeStore`-Installationen kann nur ein Prozess im Lese-/Schreibmodus auf Segmentdateien zugreifen. Daher erfordern einige Vorgänge der Oak-run-Indizierung zusätzliche manuelle Schritte.
 
-Hierzu gehören:
+Dies würde Folgendes umfassen:
 
 1. Schritttext
 1. Verbinden Sie `oak-run` mit dem von AEM verwendeten Repository im schreibgeschützten Modus und führen Sie die Neuindizierung durch. Beispiel: 
@@ -168,25 +172,25 @@ Hierzu gehören:
 
 1. Importieren Sie nach dem Ausführen des obigen Befehls die erstellten Indexdateien mit dem Vorgang `IndexerMBean#importIndex` aus dem Pfad, unter dem Oak-run die Indexdateien gespeichert hat.
 
-In diesem Szenario ist es nicht erforderlich, den AEM-Server zu stoppen oder eine neue Instanz bereitzustellen. Da für die Indizierung jedoch das gesamte Repository durchlaufen werden muss, erhöht sich die E/A-Last der Installation, was sich negativ auf die Performance auswirkt.
+In diesem Szenario müssen Sie den AEM-Server nicht stoppen oder eine neue Instanz bereitstellen. Da die Indizierung jedoch das Durchlaufen des gesamten Repositorys beinhaltet, würde sich die I/O-Belastung der Installation erhöhen und die Laufzeitleistung negativ beeinflussen.
 
-#### Online-Neuindizierung – SegmentNodeStore – Die AEM-Instanz ist beendet {#onlinereindexsegmentnodestoreaeminstanceisdown}
+#### Online-Neuindizierung - SegmentNodeStore - Die AEM Instanz ist beendet. {#onlinereindexsegmentnodestoreaeminstanceisdown}
 
-Für `SegmentNodeStore`-Installationen kann die Neuindizierung über einen einzigen Oak-run-Befehl ausgeführt werden: Die AEM-Instanz muss allerdings heruntergefahren werden.
+Für `SegmentNodeStore`-Installationen kann die Neuindizierung über einen einzigen Oak-run-Befehl ausgeführt werden: Die AEM-Instanz muss jedoch heruntergefahren werden.
 
-Sie können die Neuindizierung mit dem folgenden Befehl auslösen:
+Sie können die Neuindizierung des Triggers mit dem folgenden Befehl durchführen:
 
 ```shell
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore  /path/to/segmentstore/ 
 ```
 
-Der Unterschied zwischen diesem und dem oben erläuterten Ansatz besteht darin, dass das Erstellen des Checkpoints und das Importieren des Index automatisch erfolgen. Der Nachteil besteht darin, dass AEM während des Prozesses beendet sein muss.
+Der Unterschied zwischen diesem und dem oben erläuterten Ansatz besteht darin, dass die Erstellung von Checkpoints und der Import von Indizes automatisch erfolgen. Der Nachteil ist, dass AEM während des Prozesses ausfallen muss.
 
-#### Out-of-Band-Neuindizierung – SegmentNodeStore {#outofbandreindexsegmentnodestore}
+#### Out-Band-Neuindizierung - SegmentNodeStore {#outofbandreindexsegmentnodestore}
 
-In diesem Szenario können Sie die Neuindizierung in einem geklonten Setup durchführen, um die Auswirkungen auf die laufende AEM-Instanz zu minimieren:
+In diesem Anwendungsfall können Sie eine Neuindizierung an einem geklonten Setup durchführen, um die Auswirkungen auf die laufende AEM zu minimieren:
 
-1. Erstellen Sie den Checkpoint über einen JMX-Vorgang. Hierzu können Sie in der [JMX-Konsole](/help/sites-administering/jmx-console.md) nach `CheckpointManager` suchen. Klicken Sie anschließend auf den Vorgang **createCheckpoint (long p1)** und verwenden Sie einen hohen Ablaufwert in Sekunden (z. B. **2592000**).
+1. Erstellen Sie einen Checkpoint über einen JMX-Vorgang. Hierzu können Sie in der [JMX-Konsole](/help/sites-administering/jmx-console.md) nach `CheckpointManager` suchen. Klicken Sie anschließend auf den Vorgang **createCheckpoint (long p1)** und verwenden Sie einen hohen Ablaufwert in Sekunden (z. B. **2592000**).
 1. Kopieren Sie den Ordner `crx-quickstart` auf einen neuen Computer.
 1. Führen Sie die Neuindizierung über den Oak-run-Befehl „index“ durch. 
 
@@ -200,11 +204,11 @@ In diesem Szenario wird davon ausgegangen, dass der Zugriff auf den Datenspeiche
 
 Zurzeit können Sie Änderungen der Indexdefinitionen über das Paket [ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) versenden. Dies ermöglicht den Versand der Indexdefinitionen über das Inhaltspaket, das später neu indiziert werden muss, indem das Flag `reindex` auf `true` gesetzt wird.
 
-Dies funktioniert gut für kleinere Installationen, bei denen die Neuindizierung nicht viel Zeit in Anspruch nimmt. Bei sehr großen Repositorys benötigt die Neuindizierung jedoch erheblich mehr Zeit. Für diese Fälle kann jetzt das Oak-run-Tool für die Indizierung genutzt werden.
+Dies funktioniert bei kleineren Installationen, bei denen die Neuindizierung nicht lange dauert. Bei sehr großen Repositorys erfolgt die Neuindizierung jedoch in einer deutlich größeren Zeit. Für solche Fälle können wir jetzt das Oak-Run-Index-Tool verwenden.
 
-Oak-run unterstützt jetzt die Bereitstellung von Indexdefinitionen im JSON-Format und das Erstellen des Index im Out-of-Band-Modus, in dem keine Änderungen an einer Liveinstanz ausgeführt werden.
+Oak-run unterstützt jetzt die Bereitstellung von Indexdefinitionen im JSON-Format und die Erstellung von Index im Out-of-Band-Modus, bei dem keine Änderungen an einer Live-Instanz vorgenommen werden.
 
-Für diesen Anwendungsfall kommt der folgende Prozess zum Tragen:
+Der Prozess, den Sie für diesen Anwendungsfall beachten müssen, ist:
 
 1. Ein Entwickler aktualisiert die Indexdefinitionen in einer lokalen Instanz und generiert dann mit der Option `--index-definitions` eine JSON-Indexdefinitionsdatei.
 

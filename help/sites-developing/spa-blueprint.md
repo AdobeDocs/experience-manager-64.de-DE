@@ -9,14 +9,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: b46f0325ddbf68b65270c8e741e06469c584ae4d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 98%
+source-wordcount: '2126'
+ht-degree: 95%
 
 ---
 
 # SPA-Blueprint{#spa-blueprint}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Damit die Autorin oder der Autor mit dem AEM-SPA-Editor den Inhalt einer SPA bearbeiten kann, muss die SPA die in diesem Dokument beschriebenen Anforderungen erfüllen.
 
@@ -32,7 +36,7 @@ In diesem Dokument wird der Generalvertrag beschrieben, den jedes SPA-Framework 
 
 >[!NOTE]
 >
->Die folgenden Bedingungen gelten unabhängig vom Framework. Sofern diese Anforderungen erfüllt sind, kann eine Framework-spezifische Schicht aus Modulen, Komponenten und Services bereitgestellt werden.
+>Die folgenden Anforderungen sind Framework-unabhängig. Wenn diese Anforderungen erfüllt sind, kann eine Framework-spezifische Schicht aus Modulen, Komponenten und Diensten bereitgestellt werden.
 >
 >**Für die React- und Angular-Frameworks werden diese Anforderungen in AEM bereits erfüllt.** Die Anforderungen im vorliegenden Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
 
@@ -74,7 +78,7 @@ Das restliche Dokument beschreibt die Anforderungen dieser zwischengelagerten Fr
 
 ### Seitenmodell {#page-model}
 
-Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA-Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
+Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
 
 Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
@@ -236,7 +240,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 ## Vertrag mit dem Seiteneditor {#contract-with-the-page-editor}
 
-Die Projektkomponenten müssen die folgenden Datenattribute generieren, damit der Editor mit ihnen interagieren kann.
+Die Projektkomponenten müssen mindestens die folgenden Datenattribute generieren, damit der Editor mit ihnen interagieren kann.
 
 * `data-cq-data-path`: Relativer Pfad der Komponente, der von `PageModel` angegeben wird (z. B. `"root/responsivegrid/image"`). Dieses Attribut sollte nicht zu Seiten hinzugefügt werden.
 

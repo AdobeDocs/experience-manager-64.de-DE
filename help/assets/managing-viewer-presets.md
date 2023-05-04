@@ -13,18 +13,22 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
 feature: Viewer Presets
 role: Admin,User
-source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4220'
-ht-degree: 79%
+source-wordcount: '4256'
+ht-degree: 73%
 
 ---
 
 # Verwalten von Dynamic Media-Viewer-Vorgaben {#managing-viewer-presets}
 
-Eine Dynamic Media-Viewer-Vorgabe ist eine Sammlung von Einstellungen, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computerbildschirmen und Mobilgeräten anzeigen. Administratoren können Viewer-Vorgaben erstellen. Einstellungen sind für eine Vielzahl an Viewer-Konfigurationsoptionen verfügbar. Sie können beispielsweise die Viewer-Anzeigegröße oder das Zoomverhalten ändern.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-Anweisungen zum Erstellen und Anpassen Ihrer eigenen HTML5-Viewer-Vorgaben finden Sie in der Dokumentation zur *HTML5 Viewer SDK API* von Adobe Dynamic Media. Das SDK ist auf dem im SDK eingebetteten IS-Veröffentlichungsserver verfügbar. Jede Bibliotheksversion verfügt über eine eigene SDK-Dokumentation.
+Eine Dynamic Media-Viewer-Vorgabe ist eine Sammlung von Einstellungen, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computerbildschirmen und Mobilgeräten anzeigen. Administratoren können Viewer-Vorgaben erstellen. Einstellungen sind für eine Reihe von Viewer-Konfigurationsoptionen verfügbar. Sie können beispielsweise die Viewer-Anzeigegröße oder das Zoom-Verhalten ändern.
+
+Anweisungen zum Erstellen und Anpassen Ihrer eigenen HTML5-Viewer-Vorgaben finden Sie in der Dokumentation zur *HTML5 Viewer SDK API* von Adobe Dynamic Media. Das SDK ist auf dem im SDK selbst eingebetteten IS-Veröffentlichungs-Server verfügbar. Jede Bibliotheksversion verfügt über eine eigene SDK-Dokumentation.
 
 Pfad: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Beispielsweise das 3.10-SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
@@ -82,22 +86,22 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
 | Rich-Media-Typen | Beschreibung |
 |:---|:---|
 | **Karussellset** | Hotspots, Imagemaps oder beide werden zu einer Serie von mindestens zwei Bildern hinzugefügt. Kunden können einen Bildschwenk nach links oder rechts durchführen und dann auf einen Hotspot auf einem Bild klicken, um zusätzliche Details aufzurufen oder direkt über eine Kategorie-, Start- oder Landingpage einer Website zu kaufen. |
-| **Flyout-Zoom** | Zeigt ein zweites Bild des vergrößerten Bereichs neben dem Originalbild an. Dafür gibt es keine Steuerelemente. Benutzer verschieben die Auswahl auf den gewünschten Bereich. |
-|  | Bei der Bestimmung der vollständigen Bandbreitenauslastung für diesen Viewer müssen Sie berücksichtigen, dass sowohl das Hauptbild als auch das Flyout-Bild im Viewer verarbeitet werden. Die Größe des Hauptbildes (Anzeigenbreite und -höhe) und der Zoomfaktor bestimmen die Größe des Flyout-Bildes. Sie müssen ein Gleichgewicht zwischen diesen beiden Werten schaffen, um zu verhindern, dass die Flyout-Datei zu groß wird: Wenn das Hauptbild sehr groß ist, reduzieren Sie den Zoomfaktor-Wert. (Die Flyout-Breite und Flyout-Höhe bestimmen die Größe des Flyout-Fensters, aber nicht die Größe des Flyout-Bildes, das im Viewer verarbeitet wird.) |
-|  | Beispiel: Wenn das Hauptbild eine Größe von 350 x 350 Pixel und einen Zoomfaktor von 3 aufweist, hat das resultierende Flyout-Bild eine Größe von 1050 x 1050 Pixel. Wenn das Hauptbild eine Größe von 300 x 300 Pixel und einen Zoomfaktor von 4 aufweist, hat das Flyout-Bild eine Größe von 1200 x 1200 Pixel. Abhängig von der JPEG-Qualitätseinstellung (empfohlene Einstellungen liegen zwischen 80 und 90) können Sie die Dateigröße erheblich reduzieren. Als Zoomfaktor wird ein Wert zwischen 2,5 und 4 empfohlen, je nach Größe des Hauptbildes. |
-| **Inline-Zoom** | Zeigt ein Bild des hereingezoomten Bereichs im ursprünglichen Viewer an. Es stehen keinerlei Steuerelemente zur Verfügung. Benutzer verschieben vielmehr die Auswahl über den Bereich, der angezeigt werden soll. |
+| **Flyout-Zoom** | Zeigt ein zweites Bild des gezoomten Bereichs neben dem Originalbild an. Es gibt dazu keine Steuerelemente, sondern die Auswahl muss über den Bereich verschoben werden, der angezeigt werden soll. |
+|  | Beachten Sie bei der Bestimmung der vollständigen Bandbreitennutzung für diesen Viewer, dass sowohl das Hauptbild als auch das Flyout-Bild im Viewer angezeigt werden. Die Größe des Hauptbilds (Stage-Breite und -Höhe) und der Zoom-Faktor bestimmen die Größe des Flyout-Bildes. Damit die Flyout-Datei nicht zu groß wird, sollten Sie diese beiden Werte ausgleichen: Wenn Sie eine große Hauptbildgröße haben, senken Sie den Wert des Zoom-Faktors. (Die Flyout-Breite und Flyout-Höhe bestimmen die Größe des Flyout-Fensters, jedoch nicht die Größe des Flyout-Bildes, das für den Viewer bereitgestellt wird.) |
+|  | Wenn die Größe des Hauptbilds beispielsweise 350 x 350 Pixel bei einem Zoom-Faktor von 3 beträgt, misst das resultierende Flyout-Bild 1050 x 1050 Pixel. Wenn die Größe des Hauptbilds 300 x 300 Pixel bei einem Zoomfaktor von 4 beträgt, umfasst das Flyout-Bild 1200 x 1200 Pixel. Je nach JPEG-Qualitätseinstellung (empfohlene Einstellungen sind zwischen 80 und 90) können Sie die Dateigröße erheblich verringern. Je nach Größe des Hauptbilds werden Zoom-Faktoren von 2,5 bis 4 empfohlen. |
+| **Inline-Zoom** | Zeigt ein Bild des gezoomten Bereichs im Original-Viewer an. Es stehen keinerlei Steuerelemente zur Verfügung. Benutzer verschieben vielmehr die Auswahl über den Bereich, der angezeigt werden soll. |
 | **Bildset** | Im Bildset-Viewer können Benutzer unterschiedliche Ansichten oder Farbvariationen eines Elements sehen, indem sie auf eine Miniaturansicht klicken. Dieser Viewer bietet auch Zoomtools, mit denen Bilder genauer untersucht werden können. |
 | **Interaktives Bild** | Hotspots werden zu Teilmengen eines Bildes hinzugefügt, auf die ein Kunde anschließend klicken kann, um zusätzliche Informationen zu erhalten oder den Kauf direkt über die Kategorie einer Website, über die Startseite oder Landingpages vorzunehmen. |
 | **Interaktives Video** | Miniaturansichten werden Zeitleistensegmenten in einem Video hinzugefügt, auf die ein Kunde anschließend klicken kann, um zusätzliche Informationen zu erhalten oder den Kauf direkt über die Kategorie einer Website, über die Startseite oder Landingpages vorzunehmen. |
 | **Gemischte Medien** | Zeigt unterschiedliche Medientypen in einem Viewer an. Dort können Sie Rotationssets, Bildsets, Bilder und Videos aufnehmen. |
-| **Panoramabild** | Die Viewer für Panoramabilder und PanoramicVR geben Kugelpanoramen wieder, um Benutzern ein 360°-Betrachtererlebnis eines Zimmers, einer Immobilie, eines Orts oder einer Landschaft zu bieten. |
-|  | Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss mindestens eine der beiden folgenden Eigenschaften zutreffen: <ul><li>Ein Seitenverhältnis von 2:1.</li><li>Mit den Keywords equirectangular oder spherical und panorama oder spherical und panoramic als Tags versehen. Weitere Informationen finden Sie unter [Verwenden von Tags](../sites-authoring/tags.md).</li></ul> |
-|  | Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente „Panoramamedien“. |
+| **Panoramabild** | Die Viewer für Panoramabilder und PanoramaVR rendern kugelförmige Panoramabilder, um ein 360°-Zuschauererlebnis eines Raums, einer Eigenschaft, eines Standorts oder einer Landschaft zu erzielen. |
+|  | Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss es entweder eine oder beide der folgenden Eigenschaften aufweisen: <ul><li>Ein Seitenverhältnis von 2:1.</li><li>Mit den Keywords equirechteckig, kugelförmig und panorama oder kugelförmig und panoramisch getaggt. Weitere Informationen finden Sie unter [Verwenden von Tags](../sites-authoring/tags.md).</li></ul> |
+|  | Sowohl das Kriterium für das Seitenverhältnis als auch das für die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente für „Panoramamedien“. |
 |  | Wichtig: Dieser Viewer ist nur im Scene7-Modus von Dynamic Media verfügbar. |
 | **Rotationsset** | Stellt mehrere Ansichten eines Bildes bereit, sodass Benutzer den Gegenstand drehen können, um ihn von allen Seiten zu betrachten. |
-| **Video** | Wiedergeben von Videos unter Verwendung des progressiven oder adaptiven Bitraten-Streamings. Beim Streaming mit adaptiver Bitrate wird eine automatische Geräte- und Brandbreitenerkennung durchgeführt, um Videos mit der richtigen Qualität und im richtigen Format bereitzustellen. |
-| **Vertikaler Zoom** | Mit dem Viewer für vertikalen Zoom können Sie das Betrachtererlebnis für Produktbilder optimieren, um Ihren Benutzern die bestmögliche Darstellung eines Produktes zu bieten. Die vertikale Positionierung von Farbfeldern: <ul><li>Stellt sicher, dass die Farbfelder über der Kante liegen. Bei horizontalen Farbfeldern waren die Farbfelder je nach Bildschirmgröße des Benutzers auf dem Desktop  erst sichtbar, wenn der Benutzer einen Bildlauf auf der Seite nach unten ausgeführt hat. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li><li>Maximiert die Größe des Hauptbildes. Bei horizontalen Farbfeldern ist es erforderlich, Platz auf der Seite zu lassen, um sicherzustellen, dass sie sichtbar sind. Diese Positionierung verringerte die mögliche Größe des Hauptbildes. Bei einer vertikalen Farbfeld-Platzierung ist es jedoch nicht notwendig, diesen Platz freizulassen. Somit können Sie die Größe des Hauptbildes maximieren.</li></ul> |
-| **Zoom** | Damit können Benutzer den Bereich durch Klicken ein- und auszoomen. Benutzer können auf Steuerelemente klicken, um ein- und auszuzoomen und das Bild auf seine Standardgröße zurückzusetzen. |
+| **Video** | Gibt Videos mit progressivem oder adaptivem Bit-Rate-Streaming wieder. Beim adaptiven Bit-Rate-Streaming wird automatisch eine Geräte- und Bandbreitenerkennung durchgeführt, um das richtige Video in der richtigen Qualität und im richtigen Format bereitzustellen. |
+| **Vertikaler Zoom** | Mit dem Viewer für vertikalen Zoom können Sie das Anzeigeerlebnis von Produktbildern maximieren, um Ihrem Publikum die bestmögliche Darstellung eines Produkts zu bieten. Die vertikale Position von Farbfeldern bewirkt Folgendes: <ul><li>Stellt sicher, dass die Farbfelder über der Kante liegen. Bei horizontalen Farbfeldern waren die Farbfelder je nach Bildschirmgröße des Benutzers auf dem Desktop  erst sichtbar, wenn der Benutzer einen Bildlauf auf der Seite nach unten ausgeführt hat. Durch die vertikale Platzierung der Farbfelder im Viewer wird sichergestellt, dass sie unabhängig von der Bildschirmgröße der Benutzenden sichtbar sind.</li><li>Maximiert die Größe des Hauptbilds. Bei horizontalen Farbfeldern muss Platz auf der Seite eingeplant werden, um sicherzustellen, dass sie sichtbar sind. Durch diese Positionierung wird die Größe des Hauptbilds verringert. Bei einem vertikalen Farbfeld-Layout ist das Einplanen dieses Bereichs jedoch nicht erforderlich. Daher können Sie die Größe des Hauptbilds maximieren.</li></ul> |
+| **Zoom** | Ermöglicht Benutzern das Vergrößern des Bereichs durch Klicken darauf. Benutzer können auf Steuerelemente klicken, um ein- und auszuzoomen und das Bild auf die Standardgröße zurückzusetzen. |
 
 ## Liste der standardmäßig vorhandenen Viewer-Vorgaben {#list-of-out-of-the-box-viewer-presets}
 
@@ -107,7 +111,7 @@ Siehe auch [Live-Demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/
 
 Informationen zu unterstützten Webbrowsern und Betriebssystemversionen für Viewer finden Sie in den Viewer-Versionshinweisen.
 
-Siehe *Versionshinweise zu Viewers* im Inhaltsverzeichnis der [Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+Siehe *Versionshinweise zu Viewers* im Inhaltsverzeichnis der [Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=de).
 
 >[!NOTE]
 >
@@ -120,30 +124,30 @@ Siehe *Versionshinweise zu Viewers* im Inhaltsverzeichnis der [Viewer-Referenzha
 | Viewer-Vorgabentitel | Typ | CSS-Dateiname |
 |:---|:---|:---|
 | Carousel_Dotted_dark | Carousel_Set | html5_carouselviewer_dotted_dark.css |
-| Carousel_Dotted_light | Karussell_Set | html5_carouselviewer_dotted_light.css |
-| Carousel_Numeric_dark | Karussell_Set | html5_carouselviewer_numeric_dark.css |
-| Carousel_Numeric_light | Karussell_Set | html5_carouselviewer_numeric_light.css |
+| Carousel_Dotted_light | Carousel_Set | html5_carouselviewer_dotted_light.css |
+| Carousel_Numeric_dark | Carousel_Set | html5_carouselviewer_numeric_dark.css |
+| Carousel_Numeric_light | Carousel_Set | html5_carouselviewer_numeric_light.css |
 | Flyout | Flyout_Zoom | html5_flyoutviewer.css |
 | ImageSet_dark | Bildset | html5_zoomviewer_dark.css |
 | ImageSet_light | Bildset | html5_zoomviewer_light.css |
 | InlineMixedMedia_dark | Mixed_Media | html5_inlinemixedmediaviewer_dark.css |
-| InlineMixedMedia_light | Gemischte Medien | html5_inlinemixedmediaviewer_light.css  |
+| InlineMixedMedia_light | Mixed_Media | html5_inlinemixedmediaviewer_light.css |
 | InlineZoom | Flyout_Zoom | html5_inlinezoomviewer.css |
-| MixedMedia_dark | Gemischte Medien | html5_mixedmediaviewer_dark.css |
-| MixedMedia_light | Gemischte Medien | html5_mixedmediaviewer_light.css |
-| PanoramicImage | Panoramic_Image | html5_panoramicimage.css |
-| PanoramicImageVR | panoramic_image | html5_panoramicimage.css |
+| MixedMedia_dark | Mixed_Media | html5_mixedmediaviewer_dark.css |
+| MixedMedia_light | Mixed_Media | html5_mixedmediaviewer_light.css |
+| PanoramicImage | Panoramic_image | html5_panoramicimage.css |
+| PanoramicImageVR | Panoramic_image | html5_panoramicimage.css |
 | Shoppable_Banner | Interactive_Image | html5_interactiveimage.css |
 | Shoppable_Video_dark | Interactive_Video | html5_interactivevideoviewer_dark.css |
 | Shoppable_Video_light | Interactive_Video | html5_interactivevideovewer_light.css |
 | SpinSet_dark | Spin_Set | html5_spinviewer_dark.css |
-| SpinSet_light | Rotationsset | html5_spinviewer_light.css |
+| SpinSet_light | Spin_Set | html5_spinviewer_light.css |
 | Video (einschließlich Unterstützung für Untertitel) | Video  | html5_videoviewer.css |
 | Video_social (einschließlich Unterstützung für Untertitel und soziale Medien) | Video  | html5_videoviewersocial.css |
 | Zoom_dark | Zoom | html5_basiczoomviewer_dark.css |
 | Zoom_light | Zoom | html5_basiczoomviewer_light.css |
 | ZoomVertical_dark | Vertical_Zoom | html5_zoomverticalviewer_dark.css |
-| ZoomVertical_light | Vertikaler_Zoom | html5_zoomverticalviewer_light.css |
+| ZoomVertical_light | Vertical_Zoom | html5_zoomverticalviewer_light.css |
 
 ### Matrix unterstützter Mobile-Viewer-Gesten {#supported-mobile-viewers-gestures-matrix}
 
@@ -197,7 +201,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
    ![Viewer-Vorgaben](assets/viewerpresets.png)
 
 1. Im **[!UICONTROL Viewer-Vorgaben]** Seite, tippen Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**.
-1. Geben Sie im Dialogfeld **[!UICONTROL Neue Viewer-Vorgabe]** in das Feld **[!UICONTROL Vorgabename]** den Namen der neuen Vorgabe ein. Achten Sie darauf, einen geeigneten Namen festzulegen, da dieser nach dem Tippen auf **[!UICONTROL Erstellen]** nicht mehr geändert werden kann.
+1. Geben Sie im Dialogfeld **[!UICONTROL Neue Viewer-Vorgabe]** in das Feld **[!UICONTROL Vorgabename]** den Namen der neuen Vorgabe ein. Achten Sie darauf, einen Namen zu wählen, der nach dem Tippen nicht mehr bearbeitet werden kann. **[!UICONTROL Erstellen]**.
 
    Wenn Sie die Vorgabe später in diesen Schritten speichern, wird der Name auf der Seite &quot;Viewer-Vorgaben&quot;unter der **[!UICONTROL Vorgabentitel]** Spaltenüberschrift.
 
@@ -212,7 +216,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
       Der Visual Editor zeigt Ihnen, wie sich eine bestimmte Eigenschaft auf einen Stil auswirkt. Legen Sie eine beliebige Eigenschaft fest bzw. passen Sie diese an, um sofort anhand des Beispiels auf der linken Seite des Editors zu sehen, wie sich dies auf den Viewer auswirkt.
 
-      Die CSS-Stileigenschaften für jeden Viewer-Vorgabetyp werden im Abschnitt &quot;Anpassen von *&lt;viewer_name>* Hilfethema &quot;Viewer&quot;im [Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
+      Die CSS-Stileigenschaften für jeden Viewer-Vorgabetyp werden im Abschnitt &quot;Anpassen von *&lt;viewer_name>* Hilfethema &quot;Viewer&quot;im [Viewer-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=de).
 
       Wenn Sie z. B. eine Viewer-Vorgabe vom Typ `Mixed_Media` erstellen, finden Sie im Thema zum [Anpassen von Viewern für gemischte Medien](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=de) eine Aufstellung und Beschreibung jeder Eigenschaft.
 
@@ -220,7 +224,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
       Beim Importieren einer CSS-Datei überprüft der Visual Editor, ob CSS die korrekten Viewer-Markierungen verwendet. Wenn Sie etwa einen Zoom-Viewer erstellen, müssen alle CSS-Regeln, die Sie importieren, mit dem zugehörigen Viewer-Klassennamen `.s7mixedmediaviewer` (definiert in einem übergeordneten Viewer-Element) festgelegt werden.
 
-      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen des *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=de).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
+      Sie können beliebige, selbst definierte CSS-Dateien importieren, solange diese die CSS-Markierungen für den jeweiligen Viewer ordnungsgemäß definieren. (CSS-Markierungen werden im Hilfethema „Anpassen des *&lt;Viewer-Name>*-Viewers“ im [Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=de) erläutert. Wenn Sie beispielsweise mehr über CSS-Markierungen für den Zoom-Viewer erfahren möchten, lesen Sie den Abschnitt [Anpassen des Zoom-Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=de).) Es ist jedoch möglich, dass der Visual Editor nicht alle CSS-Werte versteht. In diesem Fall versucht der Visual Editor, die Fehler zu überschreiben, damit CSS nach wie vor verwendet werden kann.
    >[!NOTE]
    >
    >Wenn Sie CSS lieber direkt im Rohformat bearbeiten möchten, tippen Sie im Pulldown-Menü „Ausgewählter Typ“ auf **[!UICONTROL CSS ein-/ausblenden]** (Sie müssen ggf. im Visual Editor nach oben blättern, um diese Option anzuzeigen).****
@@ -243,7 +247,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
    >
    >**Bei Nutzung eines Touch-Geräts, etwa eines Smartphones oder Tablets:**
    >
-   >Nachdem Sie einen Wert in das Textfeld eingegeben haben, tippen Sie auf eine andere Stelle in der Benutzeroberfläche, um die Änderung weiterzuleiten und die virtuelle Tastatur zu schließen. Wenn Sie auf die **[!UICONTROL Eingabetaste]** tippen, wird keine Aktion ausgeführt.
+   >Nachdem Sie einen Wert in das Textfeld eingegeben haben, tippen Sie an einer anderen Stelle in der Benutzeroberfläche, um die Änderung zu senden und die virtuelle Tastatur zu schließen. Wenn Sie auf **[!UICONTROL Eingabe]**, keine Aktion erfolgt.
 
 1. Tippen Sie oben rechts auf **[!UICONTROL Speichern]**.
 1. Veröffentlichen Sie die neue Viewer-Vorgabe. Sie müssen die Vorgabe veröffentlichen, um sie auf Ihrer Website verwenden zu können.
@@ -254,7 +258,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
 **Über Anzeigemodi für Bildminiaturansichten im Anzeigefeld**
 
-Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, können Sie entscheiden, **[!UICONTROL Anzeigemodus]** Einstellung, die bei Auswahl von `InteractiveSwatches` von **[!UICONTROL Ausgewählte Komponente]** Pulldown-Menü unter **[!UICONTROL Verhalten]** Registerkarte. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden.  Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
+Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, können Sie entscheiden, **[!UICONTROL Anzeigemodus]** Einstellung, die bei Auswahl von `InteractiveSwatches` von **[!UICONTROL Ausgewählte Komponente]** Pulldown-Menü unter **[!UICONTROL Verhalten]** Registerkarte. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden. Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
 
 | Anzeigemodus | Beschreibung |
 |---|---|
@@ -262,7 +266,7 @@ Wenn Sie eine Viewer-Vorgabe für interaktive Videos erstellen oder bearbeiten, 
 |  | Wenn einem Videosegment weniger Miniaturansichten als sichtbare Spots im Anzeigefeld zugewiesen sind, werden in diesem Modus Miniaturansichten von den nächsten oder vorhergehenden Untersegmenten nicht herangezogen, um leere Spots im Feld aufzufüllen. So bleibt die Anzeige von einem bestimmten Videosegment zugewiesenen Mustern erhalten. |
 | [!UICONTROL Kontinuierlich] | In [!UICONTROL Kontinuierlich] Anzeigemodus: Wenn die Anzahl der Miniaturansichten in einem Segment kleiner ist als die Anzahl, die im Bedienfeld sichtbar ist, schließt der Viewer in den Fällen, in denen die letzte Miniaturansicht angezeigt wird, automatisch die Anzeige von Miniaturansichten aus dem nächsten oder vorherigen Segment ein. |
 
-**Wissenswertes über den automatischen Bildlauf im Viewer für interaktive Videos** 
+**Informationen zum automatischen Bildlauf im Viewer für interaktive Videos**
 
 Das automatische Bildlaufverhalten von Miniaturen der Viewer-Funktionen für interaktive Videos erfolgt unabhängig vom gewählten Anzeigemodus.
 
@@ -309,7 +313,7 @@ Beim Erstellen von Viewer-Vorgaben für Karussellbanner kann der Stil von Hotspo
 
 ## Aktivieren oder Deaktivieren von Dynamic Media-Viewer-Vorgaben {#activating-or-deactivating-viewer-presets}
 
-Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche Vorgaben im Autorenmodus aktiviert wurden. Standardmäßig ist eine Viewer-Vorgabe *on* nach der Erstellung. Wenn Sie die Vorgabe deaktivieren möchten, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wird. Sie wird immer veröffentlicht, unabhängig davon, ob sie aktiviert oder deaktiviert wurde. Sie können Viewer-Vorgaben deaktivieren, wenn die Liste zu schwierig wird oder wenn keine Viewer-Vorgabe zur Verfügung gestellt werden soll.
+Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche im Autorenmodus aktiv sind. Standardmäßig ist eine Viewer-Vorgabe *on* nach der Erstellung. Wenn Sie die Vorgabe deaktivieren, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wurde. Es wird immer veröffentlicht, unabhängig davon, ob es ein- oder ausgeschaltet ist. Sie können Viewer-Vorgaben deaktivieren, wenn die Liste zu schwierig wird oder wenn keine Viewer-Vorgabe zur Verfügung gestellt werden soll.
 
 **So aktivieren oder deaktivieren Sie Dynamic Media-Viewer-Vorgaben**:
 
@@ -326,13 +330,13 @@ Um jedoch ein Asset mit einer Viewer-Vorgabe bereitzustellen, muss die Viewer-Vo
 
 Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactivating-viewer-presets).
 
-Siehe auch [Anzeigen von Assets in einer Vorschau](previewing-assets.md).
+Weitere Informationen finden Sie unter [Vorschau von Assets](previewing-assets.md).
 
 **So veröffentlichen Sie Dynamic Media-Viewer-Vorgaben**:
 
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools > Assets > Viewer-Vorgaben]**.
 1. Wählen Sie eine oder mehrere Viewer-Vorgaben zum Veröffentlichen aus.
-1. Tippen Sie auf der Symbolleiste auf das Symbol **[!UICONTROL Veröffentlichen]**.
+1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichen]** Symbol.
 
 ## Sortieren von Dynamic Media-Viewer-Vorgaben {#sorting-viewer-presets}
 
@@ -350,7 +354,7 @@ Denken Sie daran, dass die Bearbeitung von *vordefinierten, standardmäßig vorh
 1. Tippen Sie in der linken oberen Ecke von AEM auf das AEM-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools > Assets > Viewer-Vorgaben]**.
 1. Wählen Sie eine Vorgabe aus, indem Sie das Kontrollkästchen links neben dem Viewer-Vorgabentitel aktivieren.
 1. Tippen Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**.
-1. Nehmen Sie auf der Seite **[!UICONTROL Viewer-Vorgabe bearbeiten]** die gewünschten Änderungen an der Viewer-Vorgabe vor. 
+1. Im **[!UICONTROL Viewer-Vorgabe bearbeiten]** -Seite nehmen Sie die Änderungen an der Viewer-Vorgabe vor.
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Tippen Sie auf **[!UICONTROL Speichern]**, um Ihre Änderungen zu speichern und zur Seite „Viewer-Vorgabe“ zurückzukehren.****

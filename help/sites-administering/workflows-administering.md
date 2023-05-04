@@ -1,7 +1,7 @@
 ---
 title: Verwalten der Workflow-Instanzen
 seo-title: Administering Workflow Instances
-description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden.
+description: Erfahren Sie, wie Sie Workflow-Instanzen verwalten.
 seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 94%
 
 ---
 
 # Verwalten der Workflow-Instanzen{#administering-workflow-instances}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die Workflow-Konsole stellt mehrere Tools für die Verwaltung von Workflow-Instanzen bereit, um sicherzustellen, dass sie wie erwartet ausgeführt werden.
 
@@ -84,7 +88,7 @@ Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 
-* **Schritt erneut ausführen** Hierdurch wird die Komponenteninstanz „Skriptschritt“ erneut ausgeführt. Verwenden Sie den Befehl „Schritt erneut ausführen“, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Bugs in dem Skript, das vom Prozessschritt ausgeführt wird.
+* **Schritt erneut ausführen** Hierdurch wird die Komponenteninstanz „Skriptschritt“ erneut ausgeführt. Verwenden Sie den Befehl &quot;Schritt wiederholen&quot;, nachdem Sie die Ursache des ursprünglichen Fehlers behoben haben. Wiederholen Sie zum Beispiel den Schritt nach der Behebung eines Bugs in dem Skript, das vom Prozessschritt ausgeführt wird.
 * **Beenden** Beenden Sie den Workflow, wenn der Fehler eine nicht mit dem Workflow zu vereinbarende Situation verursacht hat. So kann der Workflow beispielsweise von Umgebungsbedingungen abhängen, wie zum Beispiel von Informationen im Repository, die nicht mehr für die Workflow-Instanz gelten.
 * **Beenden und erneut versuchen** Dies hat ähnliche Auswirkungen wie **Beenden**, außer dass eine neue Workflow-Instanz mit der ursprünglichen Payload und Beschreibung sowie dem ursprünglichen Titel gestartet wird.
 

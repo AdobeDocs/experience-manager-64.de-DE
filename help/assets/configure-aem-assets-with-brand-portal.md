@@ -5,14 +5,18 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1642'
-ht-degree: 69%
+source-wordcount: '1678'
+ht-degree: 65%
 
 ---
 
 # Konfigurieren von AEM Assets mit Brand Portal {#configure-integration-64}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Adobe Experience Manager Assets wird mit Brand Portal über konfiguriert. [!DNL Adobe I/O], wodurch ein IMS-Token zur Autorisierung Ihres Brand Portal-Mandanten abgerufen wird.
 
@@ -260,7 +264,7 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
 
    ![](assets/test-integration4.png)
 
-1. Sehen Sie sich den unteren Bereich der Testergebnisse an, um zu prüfen, ob die Replikation erfolgreich war.
+1. Überprüfen Sie am Ende der Testergebnisse, ob die Replikation erfolgreich war.
 
    ![](assets/test-integration5.png)
 
@@ -269,7 +273,7 @@ Führen Sie die folgenden Schritte aus, um eine Cloud Service-Konfiguration für
 
    >[!NOTE]
    >
-   >Vermeiden Sie es, einen der Replikationsagenten zu deaktivieren, da dies dazu führen kann, dass die Replikation einiger Assets fehlschlägt.
+   >Vermeiden Sie das Deaktivieren von Replikationsagenten, da dies dazu führen kann, dass die Replikation einiger Assets fehlschlägt.
    >
    >Stellen Sie sicher, dass alle vier Replikationsagenten so konfiguriert sind, dass Zeitüberschreitungsfehler vermieden werden. Siehe [Beheben von Problemen beim parallelen Veröffentlichen in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=de#connection-timeout).
 
@@ -353,8 +357,8 @@ Sie können jetzt [Konfiguration erstellen](#configure-new-integration-64) auf I
    <li>Step text</li>
    -->
 
-Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in Brand Portal veröffentlichen. Weitere Details finden Sie unter:
+Nach erfolgreicher Replikation können Sie Assets, Ordner und Sammlungen in Brand Portal veröffentlichen. Weitere Informationen finden Sie unter:
 
 * [Veröffentlichen von Assets in Brand Portal](brand-portal-publish-assets.md)
-* [Veröffentlichen von Assets und Ordnern in Brand Portal](brand-portal-publish-folder.md)
+* [Veröffentlichen von Assets und Ordnern in Brand Portal](brand-portal-publish-folder.md)
 * [Veröffentlichen von Sammlungen in Brand Portal](brand-portal-publish-collection.md)

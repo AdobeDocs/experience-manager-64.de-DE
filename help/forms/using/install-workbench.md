@@ -6,22 +6,26 @@ uuid: null
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: null
-source-git-commit: 19dcda357b34e7160792d43cb9335fc3be0dedbc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2743'
-ht-degree: 89%
+source-wordcount: '2779'
+ht-degree: 46%
 
 ---
 
 
 # Installieren von Workbench {#install-workbench}
 
-Dieses Dokument enthält Anweisungen zur Installation und Konfiguration von Workbench. Das Installationsprogramm installiert außerdem Designer.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Dieses Dokument enthält Anweisungen zum Installieren und Konfigurieren von Workbench. Das Installationsprogramm installiert außerdem Designer.
 
 ## Info {#about}
 
-Die Informationen in diesem Dokument richten sich an Administratoren und Entwickler, die für die Installation, Konfiguration, Verwaltung oder Bereitstellung von Workbench zuständig sind.
-Darüber hinaus finden Sie darin die Informationen, die erforderlich sind, um Ihr System so konfigurieren, dass aktualisierte Prozesse von Adobe ® AEM Forms® Enterprise Suite (ES) Update 1 (8.2.x) und Adobe® AEM Forms® Enterprise Suite 2 (ES2) unterstützt werden.
+Dieses Dokument richtet sich an Administratoren oder Entwickler, die für die Installation, Konfiguration, Verwaltung oder Bereitstellung von Workbench zuständig sind.
+Außerdem finden Sie hier Informationen, die Sie benötigen, um Ihr System für die Unterstützung der Prozesse von Adobe® AEM Forms® Enterprise Suite (ES) Update 1 (8.2.x) und Adobe® AEM Forms® Enterprise Suite 2 (ES2) zu konfigurieren.
 Es wird vorausgesetzt, dass die Leser dieses Dokuments mit dem Microsoft® Windows®-Betriebssystem vertraut sind.
 
 ## Zusätzliche Informationen {#additional-information}
@@ -34,7 +38,7 @@ Die Ressourcen in dieser Tabelle können Ihnen dabei helfen, mehr über AEM Form
    <td><p><strong>Siehe</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Informationen bezüglich der Prozesse für Workbench</p> </td> 
+   <td><p>Informationen zu Prozessen für Workbench</p> </td> 
    <td><p><a href="http://www.adobe.com/go/learn_aemforms_workbench_61_de">Workbench-Hilfe</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
@@ -47,7 +51,7 @@ Die Ressourcen in dieser Tabelle können Ihnen dabei helfen, mehr über AEM Form
   </tr> 
   <tr> 
    <td><p>Die gesamte Dokumentation, die für AEM Forms verfügbar ist</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-Dokumentation</a><br /> <br /> </p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65_de">AEM Forms-Dokumentation</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Sonstige Dienste und Produkte, die in AEM Forms integriert werden können</p> </td> 
@@ -55,7 +59,7 @@ Die Ressourcen in dieser Tabelle können Ihnen dabei helfen, mehr über AEM Form
   </tr> 
   <tr> 
    <td><p>Patch-Updates, technische Hinweise und zusätzliche Informationen zu dieser Produktversion</p> </td> 
-   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">Wenden Sie sich an den Adobe Enterprise-Support</a><br /> <br /> </p> </td> 
+   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">Support für Adobe kontaktieren</a><br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -68,11 +72,11 @@ Die Ressourcen in dieser Tabelle können Ihnen dabei helfen, mehr über AEM Form
 
 ### Installation von Workbench – Übersicht {#workbench-installation-overview}
 
-Workbench ist eine integrierte Entwicklungsumgebung (IDE), die Entwickler und Formularersteller verwenden, um automatisierte Geschäftsprozesse und Formulare zu erstellen. Sie wird auch verwendet, um die Ressourcen und Dienste zu verwalten, die die Prozesse und die Formulare verwenden.
+Workbench ist eine integrierte Entwicklungsumgebung (IDE), die Entwickler und Formularautoren zum Erstellen automatisierter Geschäftsprozesse und Formulare verwenden. Es wird auch verwendet, um die Ressourcen und Dienste zu verwalten, die die Prozesse und Formulare verwenden.
 
-Die folgende Abbildung zeigt die Workbench-Installation, einschließlich:
-* Process Design mit Workbench
-* Formularentwickler mit Designer
+Die folgende Abbildung zeigt die Workbench-Installation einschließlich:
+* Prozessdesign mit Workbench
+* Formularentwurf mit Designer
 
 >[!NOTE]
 >
@@ -80,7 +84,7 @@ Die folgende Abbildung zeigt die Workbench-Installation, einschließlich:
 
 ## Systemanforderungen {#system-prerequisites}
 
-In diesem Abschnitt werden die Hardware- und Softwareanforderungen und die unterstützten Plattformen dargelegt.
+In diesem Abschnitt werden die Hardware- und Softwareanforderungen sowie die unterstützten Plattformen beschrieben.
 
 ### Mindestanforderungen an Hardware und Software {#minimum-hardware-software-requirements}
 
@@ -96,7 +100,7 @@ Speicherplatz für die Installation:
 >Wenn sich diese Speicherorte alle auf einem einzigen Laufwerk befinden, müssen während der Installation 1,5 GB Speicherplatz zur Verfügung stehen. Die Dateien, die in den temporären Ordner kopiert werden, werden nach Abschluss der Installation gelöscht.
 
 * Hardware-Anforderung: Intel® Pentium® 4 oder gleichwertiger AMD-Prozessor, 1 GHz.
-* Laden Sie die neueste Version von Adobe AIR herunter und installieren Sie diese (von <a href="http://www.adobe.com/">www.adobe.com</a>) erforderlich für den Community Help Client, der in Workbench integriert ist.
+* Laden Sie die neueste Version von Adobe AIR herunter und installieren Sie diese (von <a href="http://www.adobe.com/de/">www.adobe.com</a>) erforderlich für den Community Help Client, der in Workbench integriert ist.
 * Java™ Runtime Environment (JRE) 6.0 Update 22 oder höher Updates auf 6.0 *Neu für 10*.
 * Minimale Bildschirmauflösung 1024 x 768 Pixel oder höher mit 16-Bit-Farbtiefe oder höher.
 * TCP/IPv4- oder TCP/IPv6-Netzwerkverbindung zum AEM Forms-Server.
@@ -105,11 +109,11 @@ Speicherplatz für die Installation:
 
 >[!NOTE]
 >
->Wenn auf Ihrem Computer Adobe® Acrobat® X installiert ist, stellen Sie sicher, dass Sie es deinstallieren, bevor Sie Workbench installieren. Sie können Acrobat erneut installieren, nachdem Sie Workbench installiert haben.
+>Wenn auf Ihrem Computer Adobe® Acrobat® X installiert ist, deinstallieren Sie diese, bevor Sie Workbench installieren. Sie können Acrobat nach der Installation von Workbench neu installieren.
 
 >[!NOTE]
 >
->Sie müssen über Administratorrechte verfügen, um Workbench installieren zu können. Wenn Sie die Installation nicht unter einem Administratorkonto durchführen, werden Sie vom Installationsprogramm zur Eingabe der Berechtigungen für ein passendes Konto aufgefordert.
+>Sie müssen über Administratorrechte verfügen, um Workbench zu installieren. Wenn Sie die Installation mit einem Konto ohne Administratorrechte durchführen, werden Sie vom Installationsprogramm zur Eingabe der Anmeldeinformationen für ein entsprechendes Konto aufgefordert.
 
 ### Unterstützte Plattformen {#supported-platforms}
 
@@ -117,24 +121,24 @@ Die vollständige Liste der unterstützten Plattformen für Workbench finden Sie
 
 ## Überlegungen zur Installation von Designer {#designer-installation-considerations}
 
-Standardmäßig enthält die Workbench-Installation eine entsprechende englische Version von Designer. Wenn das Programm zur Installation von Workbench eine vorhandene Version von Designer auf Ihrem Computer erkennt, kann es sein, dass die Installation abbricht und Sie aufgefordert werden, erst Ihre aktuelle Version von Designer zu entfernen, bevor Sie fortfahren können.
-Die folgende Tabelle enthält eine vollständige Liste der möglicherweise auftretenden Installationsszenarien von Designer, sowie alle Aktionen, die Sie ausführen müssen, wenn Sie Workbench installieren.
+Standardmäßig enthält die Workbench-Installation eine entsprechende englischsprachige Version von Designer. Wenn das Programm zur Installation von Workbench eine vorhandene Version von Designer auf Ihrem Computer erkennt, kann es sein, dass die Installation abbricht und Sie aufgefordert werden, erst Ihre aktuelle Version von Designer zu entfernen, bevor Sie fortfahren können.
+Die nachstehende Tabelle enthält eine vollständige Liste der möglichen Installationsszenarien für Designer, auf die Sie stoßen können, sowie alle Aktionen, die Sie bei der Installation von Workbench ausführen müssen.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Aktuell installierte Version von Designer</strong></p> </td> 
+   <td><p><strong>Die aktuell installierte Version von Designer</strong></p> </td> 
    <td><p><strong>Erforderliche Aktionen</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Acrobat Pro oder Acrobat Pro Extended (mit Designer)</p> </td> 
+   <td><p>Acrobat Pro oder Acrobat Pro Extended (einschließlich Designer)</p> </td> 
    <td><p>Ohne. Die Workbench-Installation erkennt auf Ihrem Computer eine Instanz von Designer, die entweder mit Acrobat Pro oder Acrobat Pro Extended installiert wurde.
-Verschiedene Versionen von Designer können parallel auf demselben System vorhanden sein – zum Beispiel Designer 8.2.x und 9.0.x. Es ist nicht erforderlich, die Version von Designer zu deinstallieren, die mit Acrobat 10 Pro oder Acrobat 10 Pro Extended installiert wurde.
+Verschiedene Versionen von Designer können auf demselben System nebeneinander bestehen, z. B. Designer 8.2.x und 9.0.x. Es ist nicht erforderlich, die mit Acrobat 10 Pro oder Acrobat 10 Pro Extended installierte Version von Designer zu deinstallieren.
 <br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Designer (eigenständig)</p> </td> 
-   <td><p>Ohne. Die Version von Designer in Workbench ist nur in englischer Sprache verfügbar. Das Workbench-Installationsprogramm installiert keine neue Version von Designer. Stattdessen wird eine aktualisierte Version, zusammen mit dem Installationsprogramm von Workbench, gepatcht. Dies ermöglicht es Ihnen auch, Ihre lokalisierte Version von Designer in Workbench zu verwenden.<br /> <br /> </p> </td> 
+   <td><p>Ohne. Die Version von Designer in Workbench ist nur in englischer Sprache verfügbar. Das Workbench-Installationsprogramm installiert keine neue Version von Designer. Stattdessen wird eine aktualisierte Version, die mit dem Workbench-Installationsprogramm geliefert wird, gepatcht. Auf diese Weise können Sie auch Ihre lokalisierte Version von Designer in Workbench verwenden.<br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -151,27 +155,27 @@ Verschiedene Versionen von Designer können parallel auf demselben System vorhan
 1. Wählen Sie unter Aktuell installierte Programm das Programm **Adobe Designer**.
 1. Klicken Sie auf **Deinstallieren** und dann auf **Ja**.
 
-### Deinstallation von Designer, wenn das Programm in Acrobat Pro oder Acrobat Pro Extended enthalten ist {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
+### So deinstallieren Sie Designer im Lieferumfang von Acrobat Pro oder Acrobat Pro Extended {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
 
 1. Navigieren Sie zu **Systemsteuerung > Programme > Programme und Funktionen**
-1. Wählen Sie unter Aktuell installierte Programm **Adobe Acrobat Pro** oder **Adobe Acrobat Pro Extended**.
+1. Wählen Sie in der Liste Aktuell installierte Programme die Option **Adobe Acrobat Pro** oder **Adobe Acrobat Pro Extended**.
 1. Klicken **Änderung** und klicken Sie anschließend auf **Nächste**.
 1. Auswählen **Ändern** und klicken Sie anschließend auf **Nächste**.
-1. Wählen Sie **Adobe Designer**, dann **Diese Funktion ist nicht verfügbar** und klicken Sie dann auf **Weiter**
-1. Klicken Sie auf **Aktualisieren** und dann auf **Fertig stellen**
+1. Auswählen **Adobe Designer** auswählen **Diese Funktion ist nicht verfügbar.** und klicken Sie anschließend auf **Nächste**
+1. Klicken **Aktualisieren** und klicken Sie anschließend auf **Beenden**
 
 ### Deinstallieren von Designer, das in Acrobat Pro oder Acrobat Pro Extended unter Windows 10 enthalten ist {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
 
 1. Navigieren Sie zu **Systemsteuerung > Programme > Programme und Funktionen**
-1. Wählen Sie unter Aktuell installierte Programm **Adobe Acrobat Pro** oder **Adobe Acrobat Pro Extended**.
+1. Wählen Sie in der Liste Aktuell installierte Programme die Option **Adobe Acrobat Pro** oder **Adobe Acrobat Pro Extended**.
 1. Klicken **Änderung** und klicken Sie anschließend auf **Nächste**.
 1. Auswählen **Ändern** und klicken Sie anschließend auf **Nächste**.
-1. Wählen Sie **Adobe Designer**, dann **Diese Funktion ist nicht verfügbar** und klicken Sie dann auf **Weiter**
-1. Klicken Sie auf **Aktualisieren** und dann auf **Fertig stellen**
+1. Auswählen **Adobe Designer** auswählen **Diese Funktion ist nicht verfügbar.** und klicken Sie anschließend auf **Nächste**
+1. Klicken **Aktualisieren** und klicken Sie anschließend auf **Beenden**
 
-## Workbench installieren {#installing-workbench}
+## Installieren von Workbench {#installing-workbench}
 
-In diesem Kapitel wird beschrieben, wie Workbench installiert wird.
+In diesem Kapitel wird die Installation von Workbench beschrieben.
 
 ### Installieren und Ausführen von Workbench {#installing-and-running-workbench}
 
@@ -180,12 +184,12 @@ Stellen Sie vor der Installation von Workbench sicher, dass die Umgebung über d
 **Installation und Ausführung von Workbench:**
 
 1. Führen Sie eine der folgenden Aufgaben aus:
-   * Navigieren Sie zum Ordner \Workbench auf dem Installationsmedium und doppelklicken Sie auf die Datei „run_windows_installer.bat“.
-   * Laden Sie Workbench auf Ihr Dateisystem herunter und entpacken Sie es. Nach dem Herunterladen navigieren Sie zum Ordner \Workbench und doppelklicken Sie auf die Datei „run_windows_installer.bat“.
+   * Navigieren Sie zum Ordner \Workbench auf dem Installationsdatenträger und doppelklicken Sie auf die Datei &quot;run_windows_installer.bat&quot;.
+   * Laden Sie Workbench herunter und entpacken Sie es in Ihr Dateisystem. Navigieren Sie nach dem Herunterladen zum Ordner \Workbench und doppelklicken Sie auf die Datei &quot;run_windows_installer.bat&quot;.
 
    >[!IMPORTANT]
    >
-   >Das Installationsprogramm von Workbench wird nur von einer DVD oder einem lokalen Laufwerk aus ausgeführt. Es kann nicht von einer Remote-Site aus ausgeführt werden.
+   >Das Workbench-Installationsprogramm kann nur von einer DVD oder einem lokalen Laufwerk aus ausgeführt werden. Es kann nicht von einer Remote-Site aus ausgeführt werden.
 
    >[!NOTE]
    >
@@ -205,34 +209,34 @@ Stellen Sie vor der Installation von Workbench sicher, dass die Umgebung über d
    >
    >Der Installationsordnerpfad darf keine #- (Raute-) und $- (Dollar-)Zeichen enthalten.
 
-1. Lesen Sie die Vorinstallationsübersicht und klicken Sie auf Installieren. Das Installationsprogramm zeigt den Status der Installation an.
-1. Lesen Sie die Installationsübersicht. Wählen Sie „AEM Forms Workbench starten“, um Workbench zu starten, und klicken Sie dann auf „Weiter“.
+1. Lesen Sie die Vorinstallationsübersicht und klicken Sie auf Installieren. Das Installationsprogramm zeigt den Fortschritt der Installation an.
+1. Überprüfen Sie die Installationsübersicht. Wählen Sie „AEM Forms Workbench starten“, um Workbench zu starten, und klicken Sie dann auf „Weiter“.
 1. Lesen Sie die Versionshinweise und klicken Sie auf Fertig.
 1. Jetzt sind die folgenden Elemente auf Ihrem Computer installiert:
    * **Workbench**: Um Workbench im Menü „Start“ auszuführen, wählen Sie „Alle Programme“ > „AEM Forms“ > „Workbench“, falls Sie den Verknüpfungsordner dort gespeichert haben. Weitere Informationen finden Sie in der Dokumentation Verwenden von Workbench.
    * **Designer**: Sie können von Workbench aus auf Designer zugreifen. Weitere Informationen finden Sie im Thema „Erste Schritte“ in der Designer-Hilfe.
    * **Workbench-Plug-in**: Befolgen Sie die Anweisungen unter &quot;3.3 Installation der Workbench Eclipse-Funktion&quot;auf Seite 6.
-   * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter <a href="http://www.adobe.com/go/learn_lc_programming_10_de">Programmieren mit AEM Forms</a>.
+   * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter <a href="http://www.adobe.com/go/learn_lc_programming_10">Programmieren mit AEM Forms</a>.
 
 ## Aktualisieren von Prozessen {#upgrading-processes}
 
 AEM Forms Update 1- und LiveCycle ES2-Prozesse können mit dem Upgrade-Assistenten auf AEM Forms-Anwendungen aktualisiert werden. Weitere Informationen finden Sie in der Dokumentation zum Aktualisieren von Legacy-Artefakten in der Workbench-Hilfe.
 
-### Installation der Funktion Workbench Eclipse {#installing-workbench-eclipse-feature}
+### Installation der Funktion &quot;Workbench Eclipse&quot; {#installing-workbench-eclipse-feature}
 
-Sie können optional die Workbench-Funktion zu Eclipse hinzufügen. Sie können Workbench hinzufügen, nachdem Sie Workbench installiert haben. Für JBoss enthält die Datei zum Beispiel der folgende Speicherort:
+Sie können optional die Workbench-Funktion zu Eclipse hinzufügen. Sie können Workbench hinzufügen, nachdem Sie Workbench installiert haben. Für JBoss enthält beispielsweise der folgende Speicherort die Datei:
 
 * Workbench_DVD/additional/eclipse Herunterladen und Installieren von Eclipse 3.6 aus <a href="https://www.eclipse.org/downloads/">www.eclipse.org/downloads</a>.
 
 ### Konfigurieren der Eclipse-Aktualisierungsfunktion für Workbench {#configuring-eclipse-update-feature-for-workbench}
 
-Workbench unterstützt die Aktualisierungsfunktion, um sicherzustellen, dass die aktuellste Version von Eclipse verwendet wird. Allerdings müssen Sie sicherstellen, dass bestimmte zusätzliche Module in jedem Download enthalten sind:
+Workbench unterstützt die Aktualisierungsfunktion, um sicherzustellen, dass Sie die neueste Eclipse-Version verwenden. Sie müssen jedoch sicherstellen, dass bei jedem Download bestimmte zusätzliche Module enthalten sind:
 
 <table> 
  <tbody> 
   <tr> 
-   <td><p><strong>Eclipse Version</strong></p> </td> 
-   <td><p><strong>Für Workbench erforderliche Module</strong></p> </td> 
+   <td><p><strong>Eclipse-Version</strong></p> </td> 
+   <td><p><strong>Workbench-erforderliche Module</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p>Eclipse 3.6.x</p> </td> 
@@ -248,15 +252,15 @@ Workbench unterstützt die Aktualisierungsfunktion, um sicherzustellen, dass die
   </tbody>
   </table>
 
-**Installation und Bereitstellung der Workbench-Funktion in Eclipse**:
+**So installieren und stellen Sie die Workbench-Funktion in Eclipse bereit**:
 1. Starten Sie Eclipse.
-1. Wählen Sie Hilfe > Neue Software installieren und klicken Sie auf Hinzufügen, um das Dialogfeld „Repository hinzufügen“ zu öffnen.
-1. Klicken Sie im Dialogfeld „Repository hinzufügen“ auf Lokal und navigieren Sie zu dem Ordner, in dem die Workbench-Installation die Plug-in-ZIP-Datei gespeichert hat, dann wählen Sie die Datei workbench-updatesite.zip und klicken auf Öffnen.
+1. Wählen Sie Hilfe > Neue Software installieren und klicken Sie auf Hinzufügen , um das Dialogfeld Repository hinzufügen zu öffnen.
+1. Klicken Sie im Dialogfeld &quot;Repository hinzufügen&quot;auf &quot;Lokal&quot;, navigieren Sie zu dem Ordner, in dem die Workbench-Installation die Plug-in-ZIP-Datei gespeichert hat, wählen Sie &quot;workbench-updatesite.zip&quot;und klicken Sie auf &quot;Öffnen&quot;.
 1. Befolgen Sie die Anweisungen auf den nachfolgenden Bildschirmen, um die Workbench-Funktion in Eclipse bereitzustellen.
 
    >[!NOTE]
    >
-   >Ignorieren Sie die Meldung „Warnung: Sie sind im Begriff, eine unsignierte Funktion zu installieren“, und klicken Sie auf Installieren, um fortzufahren.
+   >Ignorieren Sie die Meldung &quot;Warnung: Sie sind im Begriff, eine nicht signierte Funktion zu installieren&quot; und klicken auf &quot;Installieren&quot;, um fortzufahren.
 
    >[!NOTE]
    >
@@ -282,10 +286,10 @@ Um Workbench über HTTPS mit einem AEM Forms-Server zu verbinden, müssen Sie si
 >
 >[Workbench_HOME] ist dabei der Ordner, in dem Sie Workbench installiert haben. Der standardmäßige Speicherort ist C:\Programme (x86)\Adobe Experience Manager Forms Workbench.
 
-Stellen Sie sicher, dass Sie die Verbindung mit HTTPS herstellen, indem Sie den im Zertifikat angegebenen Namen verwenden. Dieser Name ist in der Regel der vollständig qualifizierte Hostname.
+Stellen Sie sicher, dass Sie eine Verbindung mit HTTPS herstellen, indem Sie den im Zertifikat angegebenen Namen verwenden. Dieser Name ist normalerweise der vollständig qualifizierte Hostname.
 
 **Zur Aktualisierung der Datei „cacert“**:
-1. Stellen Sie sicher, dass Sie eine Kopie des Secure Sockets Layer- (SSL-)Zertifikats haben. Kontaktieren Sie entweder den Administrator, der den SSL-Server konfiguriert hat, oder exportieren Sie das Zertifikat, indem Sie einen Webbrowser verwenden.
+1. Stellen Sie sicher, dass Sie über eine Kopie des SSL-Zertifikats (Secure Sockets Layer) verfügen. Wenden Sie sich entweder an den Administrator, der den SSL-Server konfiguriert hat, oder exportieren Sie das Zertifikat über einen Webbrowser.
 
    >[!NOTE]
    >
@@ -304,40 +308,40 @@ Dabei gilt:
 
 1. Schließen Sie Workbench und starten Sie es neu, um Änderungen anzuwenden.
 
-### Konfiguration von Cache-Einstellungen für dynamisch erstellte Vorlagen {#configuring-cache-settings-for-dynamically-generated-templates}
+### Cache-Einstellungen für dynamisch generierte Vorlagen konfigurieren {#configuring-cache-settings-for-dynamically-generated-templates}
 
-Die folgenden Aspekte der Cache-Operation sollten Sie in Betracht gezogen werden, wenn Ihre Anwendung eindeutige Vorlagen spontan erstellt, indem XFA-Inhalte automatisch aktualisiert werden. In Wirklichkeit verwendet jede Transaktion eine neue, eindeutige Vorlage.
+Die folgenden Aspekte des Cache-Vorgangs sollten berücksichtigt werden, wenn Ihre Anwendung eindeutige Vorlagen spontan generiert, indem XFA-Inhalte automatisch aktualisiert werden. In der Tat verwendet jede Transaktion eine neue, eindeutige Vorlage.
 
-Wenn der Formularersteller oder die Formularausgabe im Cache nach Einträgen für eine bestimmte Formularvorlage sucht oder sie aktualisiert, verwendet er/sie mehrere Schlüsselwerte, um den entsprechenden Cache-Eintrag zu finden, auf den zugegriffen wird.
+Wenn der Formularersteller oder die Formularausgabe nach Einträgen im Cache für eine bestimmte Formularvorlage sucht oder diese aktualisiert, verwendet er mehrere Schlüsselwerte, um den spezifischen Cache-Eintrag zu finden, auf den zugegriffen wird.
 
-* **Dateiname der Vorlage**: Als primäre eindeutige Kennung des zwischengespeicherten Formulars wird der Pfad und der Dateiname der Vorlage verwendet.
-* **Zeitstempel**: Die Vorlagedatei enthält einen Zeitstempel, der verwendet wird, um den Zeitpunkt der letzten Aktualisierung des Formulars zu bestimmen.
-* **Vorlage-UUID**: Designer fügt in die jeweilige Vorlage eine eindeutige Kennung (UUID) für das Formular und seine Version ein. Immer wenn das Formular aktualisiert wird, wird die eingebettete UUID aktualisiert. Die XDP-Vorlage könnte zum Beispiel den folgenden Inhalt anzeigen:
+* **Name der Vorlagendatei**: Der Speicherort und der Dateiname der Vorlage, die als primäre eindeutige Kennung des zwischengespeicherten Formulars verwendet wird.
+* **Zeitstempel**: Die Vorlagendatei enthält einen Zeitstempel, mit dem die letzte Aktualisierungszeit des Formulars ermittelt wird.
+* **Vorlagen-UUID**: Designer fügt in jede Vorlage eine eindeutige Kennung (UUID) für das Formular und dessen Version ein. Jedes Mal, wenn das Formular aktualisiert wird, wird die eingebettete UUID aktualisiert. Eine XDP-Vorlage kann beispielsweise den folgenden Inhalt enthalten:
 
    `<?xml version="1.0" encoding="UTF-8"?>`
    `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
 
-* **Wiedergabeoptionen**: Im Formularwiedergabecache werden die Cache-Inhalte für jeden Satz von eindeutigen Wiedergabeoptionen separat gespeichert.
+* **Renderoptionen**: Im wiedergegebenen Formular-Cache werden die Cache-Inhalte für jeden Satz eindeutiger Renderoptionen separat gespeichert.
 
 
-Der Forms-Dienst erhält Vorlagen durch Verweis auf Dateinamen oder Repository-Speicherort oder durch einen Wert als XML-Objekt im Speicher.
-* **Durch Verweis übergebene Vorlagen**: Verwendet den Inhaltsstamm und den Formularnamen. Wenn bei jeder Anforderung eindeutige Vorlagen mit unterschiedlichem Dateinamen mithilfe dieser Methode übergeben werden, wächst der Datenträger-Cache endlos und wird nie wieder verwendet. Um dies zu verhindern, sollten eindeutige Vorlagen mit demselben Dateinamen übergeben werden, um sicherzustellen dass für alle Anforderungen derselbe Cache aktualisiert wird.
-* **Nach Wert übergebene Vorlagen**: Verwendet die Vorlagen-Bytes, die zusammen mit den Daten übergeben werden, mithilfe des Parameters theinDataDoc. Wenn eindeutige Vorlagen mit unterschiedlichem UUID mithilfe dieser Methode übergeben werden, wächst der Datenträger-Cache endlos und wird nie wieder verwendet. Um dies zu verhindern, sollte das UUID-Attribut aus allen Vorlagen entfernt werden, um sicherzustellen, dass für die Vorlage kein Cache erstellt wird. Alternativ werden durch die Übergabe derselben UUID, deren Wert nicht Null ist, Cache-Objekte erstellt, es wird jedoch sichergestellt, dass bei jeder Anforderung derselbe Cache aktualisiert wird.
+Der Forms-Dienst empfängt Vorlagen anhand des Dateinamens oder des Repository-Speicherorts oder anhand des Wertes als XML-Objekt im Speicher.
+* **Von Referenz übergebene Vorlagen**: Verwendet den Inhaltsstamm und den Formularnamen. Wenn bei jeder Anfrage mit dieser Methode eindeutige Vorlagen mit unterschiedlichen Dateinamen übergeben werden, wächst der Datenträgercache endlos und wird nie wiederverwendet. Um dies zu verhindern, sollten eindeutige Vorlagen mit demselben Dateinamen übergeben werden, um sicherzustellen, dass derselbe Cache für alle Anforderungen aktualisiert wird.
+* **Nach Wert übergebene Vorlagen**: Verwendet Vorlagen-Bytes, die zusammen mit den Daten mit dem Parameter theinDataDoc übergeben werden. Wenn eindeutige Vorlagen mit unterschiedlicher UID mithilfe dieser Methode übergeben werden, wächst der Datenträgercache endlos und wird nie wiederverwendet. Um dies zu verhindern, sollte das UUID-Attribut aus allen Vorlagen entfernt werden, um sicherzustellen, dass kein Cache für die Vorlage erstellt wird. Alternativ dazu können die Cache-Objekte erstellt werden, wenn dieselbe UUID ungleich null übergeben wird. Es wird jedoch sichergestellt, dass bei jeder Anfrage derselbe Cache aktualisiert wird.
 
 Um zu verhindern, dass der Cache endlos anwächst, sollten Sie die folgenden Faktoren für das Rendern von dynamisch generierten Vorlagen mithilfe der neuen AEM Forms-APIs, nämlich renderHTMLForm2 und renderPDFForm2, berücksichtigen.
 
 Wenn Sie neue APIs verwenden, wird die Vorlage als ein Dokumentobjekt übergeben, das im Forms-Dienst bearbeitet wird, je nachdem, ob es passiviert ist oder nicht.
 
-Für passivierte Dokumente, in denen die UUID und der Inhaltsstamm als Cache-Schlüssel dienen, sollten Sie folgende Aspekte beachten:
+Beachten Sie bei passivierten Dokumenten, bei denen die UUID und der Inhaltsstamm als Cache-Schlüssel dienen, die folgenden Aspekte:
 * Der Cache wird nicht für passivierte Eingabevorlagen ohne UUID erstellt.
-* Wenn mehr als eine passivierte Eingabevorlage mit derselben UUID und demselben Inhaltsstamm übergeben werden, wird derselbe Cache überschrieben.
+* Wenn mehr als eine passivierte Eingabevorlage mit derselben UUID und demselben Inhaltsstamm übergeben wird, wird derselbe Cache überschrieben.
 
-Für nicht passivierte Dokumente, in denen der Dateiname und der Inhaltsstamm als Cache-Schlüssel dienen, sollten Sie folgende Aspekte beachten:
+Beachten Sie bei nicht passivierten Dokumenten, bei denen der Dateiname und der Inhaltsstamm als Cache-Schlüssel dienen, den folgenden Aspekt:
 * Bei nicht-passivierten Eingabevorlagen hängt das Zwischenspeichern vom Inhaltsstamm und vom Dateinamen ab, von wo aus das Dokument erstellt wurde.
 Derselbe Cache wird nur für Anforderungen mit demselben Inhaltsstamm und demselben Dateinamen der Vorlage verwendet.
-Die folgenden bewährten Methoden stellen sicher, dass der Cache nicht endlos wächst, wenn dynamisch erstellte Vorlagen an den Forms-Dienst übergeben werden:
+Die folgenden Best Practices stellen sicher, dass der Cache nicht endlos wächst, wenn dynamisch generierte Vorlagen an den Forms-Dienst übergeben werden:
    * Entfernen Sie die UUID oder übergeben Sie dieselbe UUID in allen dynamisch generierten Vorlagen.
-   * Generieren Sie das Dokument entweder aus Vorlage-Bytes oder aus demselben Dateinamen auf der Festplatte.
+   * Generieren Sie das Dokument entweder aus Vorlagen-Bytes oder aus demselben Dateinamen auf der Festplatte.
 
 ### Deinstallieren von Workbench {#uninstalling-workbench}
 
@@ -345,7 +349,7 @@ Verwenden Sie die Funktion „Software“ in der Systemsteuerung, um das Deinsta
 
 ## Konfigurieren von AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor}
 
-Mit dem XDC Editor können Administratoren von Netzwerkdruckern XML Forms Architecture Device Configuration-(XDC-)Dateien erstellen und ändern. XDC-Dateien beschreiben die Eigenschaften von Druckern, wie die Druckersprache oder die Korrelation zwischen Papierformat und Position des Druckschachts.
+Mithilfe des XDC-Editors können Netzwerkdruckeradministratoren XML Forms Architecture Device Configuration (XDC)-Dateien erstellen und ändern. XDC-Dateien beschreiben die Funktionen von Druckern, wie die Druckersprache oder die Korrelation zwischen Papiergröße und Position der Fächer.
 
 Bevor der Administrator des Netzwerkdruckers den XDC-Editor verwendet, verschieben Sie die XDC-Beispiel-Dateien und lesen Sie die Datei Geräteprofile mit XDC-Editor erstellen.
 

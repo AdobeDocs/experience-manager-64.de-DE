@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: 1de1ffc6-63f8-4316-a2fa-5095d407c265
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '759'
 ht-degree: 5%
 
 ---
 
 # MySQL-Konfiguration für DSRP {#mysql-configuration-for-dsrp}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 MySQL ist eine relationale Datenbank, in der benutzergenerierte Inhalte (UGC) gespeichert werden können.
 
@@ -93,7 +97,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
-   * Kennwort: `no password by default`
+   * Passwort: `no password by default`
    * Standardschema: `leave blank`
 
 1. Auswählen `Test Connection` Überprüfen der Verbindung zum ausgeführten MySQL-Dienst
@@ -122,7 +126,7 @@ Das SQL-Skript wird aus dem AEM Repository abgerufen:
    * Beispiel: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
 1. Wählen Sie den Ordner /libs/social/config/datastore/dsrp/schema aus.
-1. Download `init-schema.sql`
+1. Herunterladen `init-schema.sql`
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 

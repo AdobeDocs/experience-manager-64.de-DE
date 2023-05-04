@@ -12,14 +12,18 @@ discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 98%
+source-wordcount: '2020'
+ht-degree: 85%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!CAUTION]
 >
@@ -87,7 +91,7 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 >
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
 >
->* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
+>* **Inhaltsfragmente** sind redaktionelle Inhalte, in erster Linie Text und zugehörige Bilder. Sie sind reine Inhalte ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
@@ -96,9 +100,9 @@ Zusammen mit der JSON-Exportfunktion der AEM-Kernkomponenten kann dieser struktu
 
 >[!CAUTION]
 >
->Inhaltsfragmente stehen über die klassische Benutzeroberfläche nicht zur Verfügung. 
+>Inhaltsfragmente sind nicht in der klassischen Benutzeroberfläche verfügbar.
 >
->Die Inhaltsfragmente-Komponente kann im Sidekick der klassischen Benutzeroberfläche angezeigt werden. Es stehen jedoch keine weiteren Funktionen zur Verfügung. 
+>Die Inhaltsfragment-Komponente ist im Sidekick der klassischen Benutzeroberfläche sichtbar, weitere Funktionen sind jedoch nicht verfügbar.
 
 >[!NOTE]
 >
@@ -177,11 +181,11 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 * **Fragmentelementen**
 
    * Elemente korrelieren mit den Datenfeldern, die Inhalte enthalten.
-   * Verwenden Sie bei Fragmenten mit strukturiertem Inhalt ein Inhaltsmodell, um das Inhaltsfragment zu erstellen. Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments. Bei diesen Elementen (Feldern) gibt es verschiedene Datentypen.
-   * Bei einfachen Fragmenten:
+   * Bei Fragmenten mit strukturiertem Inhalt verwenden Sie ein Inhaltsmodell, um das Inhaltsfragment zu erstellen. Die im Modell angegebenen Elemente (Felder) definieren die Struktur des Fragments. Bei diesen Elementen (Feldern) gibt es verschiedene Datentypen.
+   * Für einfache Fragmente:
 
       * Der Inhalt befindet sich in einem (oder mehreren) mehrzeiligen Textfeld(ern) oder Element(en).
-      * Die Elemente werden in der Fragmentvorlage definiert (es ist nicht möglich, sie bei der Fragmenterstellung zu definieren. Weitere Informationen finden Sie unter [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md)).
+      * Die Elemente werden in der Fragmentvorlage definiert (sie können beim Bearbeiten des Fragments nicht definiert werden; siehe [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md)).
 
 * **Fragmentabsätze**
 
@@ -205,7 +209,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
    >[!CAUTION]
    >
-   >Ein (versehentliches) Löschen aus dem Fragment ist möglich, wenn in das Nur-Text-Format gewechselt wird. 
+   >Kann (versehentlich) aus einem Fragment entfernt werden, indem auf das Nur Text -Format umgestellt wird.
 
    >[!NOTE]
    >
@@ -217,7 +221,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * Die einzelnen Assets innerhalb der Sammlung können mit dem Fragment im Seiten-Editor verwendet werden, wenn es einer Seite hinzugefügt wird. Zugehörige Inhalte sind also optional, abhängig von den Anforderungen des jeweiligen Kanals.
    * Die Assets sind [mit Fragmenten über Sammlungen verknüpft](content-fragments-assoc-content.md). Mithilfe verknüpfter Sammlungen kann der Autor entscheiden, welche Assets beim Bearbeiten einer Seite verwendet werden sollen.
 
-      * Sammlungen können mit Fragmenten anhand von Vorlagen als Standardinhalt oder von Autoren während der Fragmentbearbeitung verbunden werden.
+      * Sammlungen können Fragmenten über Vorlagen, als Standardinhalt oder von Autoren während der Fragmenterstellung zugeordnet werden.
       * [Asset (DAM)-Sammlungen](managing-collections-touch-ui.md) sind die Basis für die zugehörigen Inhalte von Fragmenten.
    * Sie können auch das eigentliche Fragment zu einer Sammlung hinzufügen und so die Nachverfolgung unterstützen.
 
@@ -251,7 +255,7 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
    * Ausgabedarstellungen von Fragmenttext, eigens zu redaktionellen Zwecken. Diese können mit einem Kanal verbunden sein, doch ist dies nicht obligatorisch; auch für lokale Ad-hoc-Änderungen geeignet;
    * werden als Kopien vom **Master** erstellt, können dann aber nach Bedarf bearbeitet werden; gewöhnlich kommt es zu einer Inhaltsüberlappung zwischen den Varianten;
-   * können während der Fragmentbearbeitung definiert oder in Fragment-Vorlagen vordefiniert werden;
+   * Kann während der Fragmentbearbeitung definiert oder in Fragmentvorlagen vordefiniert werden.
    * werden im Fragment gespeichert, um die Streuung von Inhaltskopien zu vermeiden;
    * können mit der Vorlage [synchronisiert](content-fragments-variations.md#synchronizing-with-master) werden, wenn der Vorlageninhalt aktualisiert wurde;
    * können [zusammengefasst](content-fragments-variations.md#summarizing-text) werden, um Text schnell auf eine vordefinierte Länge zu kürzen;
@@ -276,17 +280,17 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
 
 * **Inhaltsmodelle**
 
-   * Wird [mithilfe von Tools aktiviert und erstellt](content-fragments-models.md).
-   * Erforderlich für das [Erstellen eines strukturierten Fragments](content-fragments-managing.md#creating-content-fragments).
+   * sind [aktiviert und anschließend mithilfe der Tools erstellt werden](content-fragments-models.md).
+   * Erforderlich für [Erstellen eines strukturierten Fragments](content-fragments-managing.md#creating-content-fragments).
    * Definiert die Struktur eines Fragments (Titel, Inhaltselemente, Tag-Definitionen).
-   * Inhaltsmodelldefinitionen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional. Das Modell definiert einen minimalen Gültigkeitsbereich für das Fragment und ggf. den Standardinhalt. Autoren können die definierte Struktur ändern, wenn sie den Fragmentinhalt erstellen.
+   * Inhaltsmodelldefinitionen erfordern einen Titel und ein Datenelement. Alle weiteren Elemente sind optional. Das Modell definiert einen minimalen Umfang des Fragments und ggf. Standardinhalt. Autoren können die definierte Struktur ändern, wenn sie den Fragmentinhalt erstellen.
 
 * **Fragmentvorlage**
 
-   * Erforderlich für das [Erstellen eines einfachen Fragments](content-fragments-managing.md#creating-content-fragments).
-   * In der Regel [während der Projektimplementierung entwickelt](/help/sites-developing/content-fragment-templates.md); kann nicht während des Erstellens entwickelt werden. 
+   * Erforderlich für [Erstellen eines einfachen Fragments](content-fragments-managing.md#creating-content-fragments).
+   * Normalerweise [während der Projektdurchführung entwickelt wurde](/help/sites-developing/content-fragment-templates.md); kann beim Authoring nicht erstellt werden.
    * Definiert die grundlegenden Eigenschaften eines einfachen Fragments (Titel, Anzahl der Textelemente, Tag-Definitionen).
-   * Vorlagendefinitionen erfordern einen Titel und ein Textelement. Alle weiteren Elemente sind optional. Die Vorlage definiert einen minimalen Gültigkeitsbereich für das Fragment und ggf. den Standardinhalt. Autoren können zu einem späteren Zeitpunkt die Definition eines Fragments über die Angaben in der Vorlage hinaus erweitern.
+   * Vorlagendefinitionen erfordern einen Titel und ein Textelement. alles andere ist optional. Die Vorlage definiert einen minimalen Umfang des Fragments und ggf. den Standardinhalt. Autoren können zu einem späteren Zeitpunkt die Definition eines Fragments über die Angaben in der Vorlage hinaus erweitern.
 
 * **Inhaltsfragment-Komponente**
 
@@ -300,8 +304,8 @@ Zum Erstellen, Bearbeiten und Verwenden von Inhaltsfragmenten ist zudem Folgende
 
 Ein Fragment samt seinen Elementen und Varianten kann zur Erstellung von kohärentem Inhalt für verschiedene Kanäle verwendet werden. Beim Entwurf eines Fragments muss berücksichtigt werden, welche Elemente wo verwendet werden.
 
-### We.Retail-Beispiel  {#we-retail-sample}
+### We.Retail-Beispiel {#we-retail-sample}
 
-Ein Beispielfragment ist hier zu sehen: 
+Ein Beispielfragment ist zu finden unter:
 
 [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten ) 

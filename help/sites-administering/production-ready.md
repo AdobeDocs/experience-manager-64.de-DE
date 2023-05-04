@@ -1,5 +1,5 @@
 ---
-title: Ausführung von AEM im produktionsbereiten Modus
+title: Ausführen von AEM im produktionsbereiten Modus
 seo-title: Running AEM in Production Ready Mode
 description: Erfahren Sie, wie Sie AEM im produktionsbereiten Modus ausführen.
 seo-description: Learn how to run AEM in Production Ready Mode.
@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 exl-id: 2ab55a72-2eb2-49dc-8716-0a8a4d0c4b73
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 100%
+source-wordcount: '419'
+ht-degree: 73%
 
 ---
 
-# Ausführung von AEM im produktionsbereiten Modus{#running-aem-in-production-ready-mode}
+# Ausführen von AEM im produktionsbereiten Modus{#running-aem-in-production-ready-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Mit AEM 6.1 hat Adobe den neuen `"nosamplecontent"`-Ausführungsmodus eingeführt, der der Automatisierung der für die Vorbereitung einer AEM-Instanz zur Bereitstellung einer Produktionsumgebung erforderlichen Schritte dient.
 
@@ -25,9 +29,9 @@ Der neue Ausführungsmodus konfiguriert nicht nur automatisch die Instanz, um di
 
 >[!NOTE]
 >
->Da der produktionsbereite Modus von AEM aus praktischen Gründen nur einen Großteil der für die Sicherung einer Instanz erforderlichen Aufgaben abdeckt, empfehlen wir Ihnen dringend, vor dem tatsächlichen Einsatz der Produktionsumgebung die [Sicherheitsprüfliste](/help/sites-administering/security-checklist.md) durchzugehen.
+>Da aus praktischen Gründen der AEM produktionsbereite Modus nur die meisten Aufgaben abdeckt, die zum Sichern einer Instanz erforderlich sind, wird empfohlen, die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) bevor Sie mit Ihrer Produktionsumgebung live gehen.
 >
->Beachten Sie außerdem, dass durch die Ausführung von AEM im produktionsbereiten Modus CRXDE Lite effektiv deaktiviert wird. Wenn Sie es zum Debuggen benötigen, finden Sie unter [Aktivieren von CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) weitere Informationen.
+>Beachten Sie außerdem, dass die Ausführung von AEM im produktionsbereiten Modus den Zugriff auf die CRXDE Lite effektiv deaktiviert. Wenn Sie es zum Debuggen benötigen, finden Sie unter [Aktivieren von CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) weitere Informationen.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
@@ -47,7 +51,7 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 Genauer gesagt werden die folgenden Konfigurationsveränderungen durchgeführt, wenn AEM im produktionsbereiten Modus ausgeführt wird:
 
-1. Das **CRXDE-Support-Bundle** (`com.adobe.granite.crxde-support`) ist im produktionsbereiten Modus standardmäßig deaktiviert. Es kann jederzeit über das öffentliche Maven-Repository installiert werden. Für AEM 6.1. ist Version 3.0.0 erforderlich.
+1. Das **CRXDE-Support-Bundle** (`com.adobe.granite.crxde-support`) ist im produktionsbereiten Modus standardmäßig deaktiviert. Es kann jederzeit über das öffentliche Maven-Repository von Adobe installiert werden. Version 3.0.0 ist für AEM 6.1 erforderlich.
 
 1. Das Bundle **Apache Sling Simple WebDAV Access to repositories** (`org.apache.sling.jcr.webdav`) ist nur für **Autoreninstanzen** verfügbar.
 

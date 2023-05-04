@@ -1,7 +1,7 @@
 ---
 title: AEM Foundation und Repository
 seo-title: AEM Foundation & Repository
-description: Spezifische Versionshinweise zur Plattform und zum Repository von Adobe Experience Manager 6.3
+description: Spezifische Versionshinweise für Adobe Experience Manager 6.3 AEM Platform und Repository.
 seo-description: Release notes specific to Adobe Experience Manager 6.3 AEM Platform and Repository.
 uuid: 147b38d0-cf87-467c-a52d-3399d4af7e6e
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
 exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 85%
+source-wordcount: '755'
+ht-degree: 12%
 
 ---
 
 # AEM Foundation und Repository {#aem-foundation-repository}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Liste der Änderungen {#list-of-changes}
 
@@ -25,21 +29,21 @@ ht-degree: 85%
 
 * Oak Segment Tar MicroKernel
 
-   * Schneller Komprimierungsmodus (Fragmentkomprimierung) für Online-Revisionsbereinigung
+   * Schneller Komprimierungsmodus (Tail-Komprimierung) für die Online-Revisionsbereinigung
    * Verbesserte Schreibraten
-   * Statistiken zu Segmentvorgängen werden über JMXBean zur Verfügung gestellt
-   * Geschätzte Dauer der Offline-Revisionsbereinigung
+   * Statistiken zu Segmentvorgängen werden über JMXBean verfügbar gemacht
+   * Schätzung der Dauer für die Offline-Revisionsbereinigung
 
-* Oak Mongo MicroKernel
+* Oak Mongo-Mikrokernel
 
-   * Fortlaufende Revisionsbereinigung für MongoMK ersetzt geplante Revisionsbereinigung.
+   * Die kontinuierliche Revisionsbereinigung für MongoMK ersetzt die geplante Bereinigung
 
-* Verbesserte Effizienz bei der Revisionsbereinigung von Dokument-Knotenspeichern.
+* Verbesserte Effizienz bei der Revisionsbereinigung von Dokument-Knotenspeichern
 * Siehe [Apache Jackrabbit Oak Jira v 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) und [Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) für einen vollständigen Überblick über behobene Probleme.
 
 >[!CAUTION]
 >
->* Aufgrund der neuen Version von Oak Segment Tar, die mit AEM 6.3 eingeführt wurde, ist eine Repository-Migration erforderlich. Dieser Schritt ist obligatorisch, wenn Sie eine Aktualisierung von einer älteren TarMK-Version durchführen oder von einem anderen Persistenztyp zum neuen Segment-TAR-Format wechseln möchten. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie unter [Migration auf Oak-Segment-TAR – Häufig gestellte Fragen (FAQ)](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>* Aufgrund der neuen Version von Oak Segment Tar, die mit AEM 6.3 eingeführt wurde, ist eine Repository-Migration erforderlich. Dieser Schritt ist obligatorisch, wenn Sie eine Aktualisierung von einer älteren TarMK-Version durchführen oder von einem anderen Persistenztyp zum neuen Segment-TAR-Format wechseln möchten. Weitere Informationen zu den Vorteilen des neuen Segment-TAR finden Sie unter [Häufig gestellte Fragen zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 >
 
 
@@ -47,67 +51,67 @@ ht-degree: 85%
 
 * Erweiterte Unterstützung für Indizierungsvorgänge über oak-run (CLI):
 
-   * Indexkonsistenzüberprüfung
+   * Indexkonsistenzprüfung
    * Indizierungsstatistiken
-   * Import und Export von Indexkonfigurationen
+   * Im/Export der Indexkonfiguration
    * Neuindizierung
 
-* Verringertes Repository-Wachstum im Zusammenhang mit Lucene für eine verbesserte Gesamtleistung des Systems
-* Synchrone Lucene-Eigenschaftenindizes [(weitere Informationen)](https://wiki.apache.org/jackrabbit/Synchronous%20Lucene%20Property%20Indexes)
-* Explain Query im Index-Manager unterstützt jetzt die AEM QueryBuilder-Syntax
-* Index-Manager stellt jetzt Index-Metriken bereit: Größe, letzte Aktualisierung und Konsistenzüberprüfung
+* Verringertes Repository-Wachstum im Zusammenhang mit Lucene für eine insgesamt verbesserte Systemleistung
+* Synchrone Lucene-Eigenschaftenindizes [(Weitere Infos)](https://wiki.apache.org/jackrabbit/Synchronous%20Lucene%20Property%20Indexes)
+* Explain Query in Index Manager unterstützt jetzt AEM QueryBuilder-Syntax
+* Der Index-Manager zeigt jetzt Indexmetriken an: Größe, letzte Aktualisierung und Konsistenzprüfung
 
 ### Benutzeroberfläche {#user-interface}
 
-* Die Benutzeroberfläche wurde verbessert, um sie effizienter und benutzerfreundlicher zu gestalten.
-* Neue Inhaltsstrukturleiste zur schnellen Navigation in Hierarchien. In Verbindung mit der Listenansicht sind damit wieder dieselben Interaktionen wie in der klassischen Benutzeroberfläche möglich.
-* Verbesserte Funktion zum Scrollen in der Karten- und Listenansicht großer Ordner.
-* Verbesserte Interaktion mit den Suchergebnissen – über die Schaltfläche „Zurück“ lässt sich das vorherige Suchergebnis wieder aufrufen.
-* Zusätzliche Tastenkombinationen für die gängigsten Aktionen, etwa das Öffnen einer bestimmten Leiste, das Bearbeiten, Verschieben und Löschen von Elementen oder das Öffnen von Eigenschaften.
-* Möglichkeit zum Deaktivieren von Tastaturbefehlen (diese können unter „Voreinstellungen“ aktiviert bzw. deaktiviert werden).
-* Keine weitere Anzeige von Zeitstempeln in der gesamten Benutzeroberfläche nach sieben Tagen (als Standardeinstellung in den Voreinstellungen festgelegt).
+* An der Benutzeroberfläche wurden verschiedene Verbesserungen vorgenommen, um sie produktiver und benutzerfreundlicher zu gestalten.
+* Neue Leiste &quot;Inhaltsstruktur&quot;, um schnell in einer Hierarchie zu navigieren. In Kombination mit der Listenansicht wird dadurch das Interaktionsmodell der klassischen Benutzeroberfläche wiederhergestellt.
+* Verbessertes Scrollen in der Karten- und Listenansicht großer Ordner.
+* Verbesserte Interaktion mit den Suchergebnissen - die Schaltfläche &quot;Zurück&quot;stellt das vorherige Suchergebnis wieder her.
+* Zusätzliche Tastaturbefehle für die gängigsten Aktionen, wie das Öffnen einer bestimmten Leiste, das Bearbeiten, Verschieben und Löschen von Elementen oder das Öffnen von Eigenschaften.
+* Möglichkeit, Tastaturbefehle zu deaktivieren (in den Voreinstellungen aktivieren/deaktivieren).
+* Stoppen Sie die Anzeige von Zeitstempeln in der gesamten Benutzeroberfläche relativ nach 7 Tagen (standardmäßig in den Voreinstellungen festgelegt).
 
 >[!CAUTION]
 >
->* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. In AEM 6.4 ist die klassische Benutzeroberfläche integriert und Kunden, die ein Upgrade auf diese Version durchführen, können diese wie gehabt verwenden. Beachten Sie, dass die klassische Benutzeroberfläche weiterhin vollständig unterstützt wird, obwohl sie veraltet ist. [Mehr dazu](/help/sites-deploying/ui-recommendations.md).
+>* Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. AEM Version 6.4 enthält die klassische Benutzeroberfläche, und Kunden, die ein Upgrade von früheren Versionen durchführen, können diese weiterhin unverändert verwenden. Beachten Sie, dass die klassische Benutzeroberfläche weiterhin vollständig unterstützt wird, obwohl sie veraltet ist. [Mehr dazu](/help/sites-deploying/ui-recommendations.md).
 >
 
 
 ### Inhaltsverteilung {#content-distribution}
 
-* Verbesserte Replikationsleistung zur Unterstützung der Veröffentlichung großer Asset-Volumina
-* Unterstützung der OAuth 2.0-Authentifizierung im Verteilertransport
-* Verbesserte Leistung bei VLT-Paketen
+* Verbesserte Replikationsleistung zur Unterstützung von Asset-Veröffentlichungen mit großen Volumen
+* Unterstützung der OAuth 2.0-Authentifizierung im Verteilungstransport
+* Verbesserte Leistung für VLT-Pakete
 
 ### Monitoring {#monitoring}
 
-* Eine neue Systemübersicht, die eine Momentaufnahme aller leistungsbezogenen Systemzustände und Aktivitäten bietet
+* Eine neue Systemübersicht bietet eine Momentaufnahme aller leistungsbezogenen Systemstatus- und -aktivitäten
 * Neue Konsistenzprüfungen:
 
-   * Erkennung großer Lucene-Indizes
+   * Große Lucene-Indizes erkennen
    * Status der asynchronen Indizierung
    * Große Lucene-Indizes
    * Abfrageleistung
    * Abfrage-Ausnahmelimits
    * Synchronisierte Uhren
-   * Systemwartung – Revisionsbereinigung
-   * Systemwartung – DataStore GC
-   * Systemwartung – Continuous Revision GC
+   * Systemwartung - Revisionsbereinigung
+   * Systemwartung - DataStore GC
+   * Systemwartung - Kontinuierliche Revision GC
 
-* Benutzer können nun den Umfang von status.zip-Downloads festlegen.
+* Der Benutzer kann jetzt den Umfang des status.zip-Downloads definieren
 
 ### Wartung {#maintenance}
 
 * Aktives Löschen von Lucene-Binärdateien mithilfe einer Wartungsaufgabe
-* Die RevisionGC-Wartungsaufgabe für MongoDB ist jetzt zugunsten der fortlaufenden Revisionsbereinigung deaktiviert. Weitere Informationen dazu finden Sie im obenstehenden Abschnitt „Repository“.
-* Versionsbereinigungskonfiguration ermöglicht das Vorhalten einer minimalen Anzahl von Versionen.
-* Versionsbereinigung stoppt bei Ende eines Wartungsfensters. Sie kann auch manuell gestartet und gestoppt werden und wird beim nächsten Start inkrementell fortgesetzt.
+* Die RevisionGC-Wartungsaufgabe für MongoDB ist jetzt zugunsten der kontinuierlichen Revisionsbereinigung deaktiviert. Weitere Informationen finden Sie im Abschnitt &quot;Repository&quot;oben.
+* Die Konfiguration der Versionsbereinigung ermöglicht die Beibehaltung einer Mindestanzahl von Versionen
+* Die Versionsbereinigung hält am Ende eines Wartungsfensters an. Es kann auch manuell gestartet und gestoppt werden und wird beim nächsten Start schrittweise fortgesetzt.
 
 ### Aktualisierung {#upgrade}
 
-* Abwärtskompatibilität: Durch die Abwärtskompatibilität von Version 6.4 bleibt Ihr benutzerdefinierter Code in den meisten Fällen kompatibel. Außerdem verringert sich dadurch der mit dem Upgrade verbundene Aufwand.
-* Analyse der Upgrade-Komplexität: Ein neues Mustererkennungstool analysiert die Komplexität von Upgrades.
-* Nachhaltige Upgrades: Die eingeführte API-Oberfläche und Inhaltsklassifizierung erleichtert Ihnen die Umsetzung von Best Practices für effiziente und nahtlose Upgrades auf die nächste Version während Ihres gesamten Entwicklungszyklus.
+* Abwärtskompatibilität: Abwärtskompatible Funktionen in Version 6.4 helfen Ihnen, Ihren benutzerdefinierten Code in den meisten Fällen kompatibel zu halten und reduzieren den Upgrade-Aufwand.
+* Bewertung der Upgrade-Komplexität: Neues Musterdetektor-Tool zur Beurteilung der Komplexität Ihrer Upgrades.
+* Nachhaltige Aktualisierungen: Die API-Oberfläche und die Inhaltsklassifizierung wurden eingeführt, damit Sie die Best Practices für eine effiziente und nahtlose Aktualisierung auf die nächste Version während Ihres Entwicklungszyklus einfach befolgen können.
 * Repository-Neustrukturierung: Erhebliche Umstrukturierung (in erster Linie /etc) zur Erleichterung von Upgrades und zur Förderung der Best Practices bei der Implementierung. [Weitere Informationen.](/help/sites-deploying/repository-restructuring.md)
 * Siehe [Upgrade-Dokumentation](/help/sites-deploying/upgrade.md) Weitere Informationen zu diesen Funktionen.
 
@@ -119,9 +123,9 @@ ht-degree: 85%
 ### Sicherheit {#security}
 
 * Verbesserte und vereinfachte Benutzeroberfläche zur Benutzererstellung mit Unterstützung für mehrere Benutzerprofile.
-* Verbesserte Leistung bei umfangreichen Gruppenmitgliedschaften für Benutzer.
+* Verbesserte Leistung bei großen Gruppenmitgliedschaften für Benutzer.
 
 ### Projekte und Workflows {#projects-and-workflows}
 
-* Workflow-Editor der Touch-optimierten Benutzeroberfläche zur effizienteren Verwaltung von Workflow-Modellen.
-* Unterstützung für die Bereinigung von Projektaufgaben in Wartungsaufgaben.
+* Tippen Sie auf den UI-basierten Workflow-Editor, um Workflow-Modelle auf rationellere Weise zu verwalten.
+* Unterstützung für die Bereinigung von Projektaufgaben bei Wartungsaufgaben.

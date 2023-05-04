@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
 role: Admin
 exl-id: 136c0913-c8b8-451d-bb28-3c3285c172a1
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '847'
 ht-degree: 3%
 
 ---
 
 # ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Über ASRP {#about-asrp}
 

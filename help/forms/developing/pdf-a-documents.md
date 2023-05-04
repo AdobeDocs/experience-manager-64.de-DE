@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: fbf6c225-5351-4589-97d3-9faf9c5939bc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2358'
-ht-degree: 100%
+source-wordcount: '2394'
+ht-degree: 98%
 
 ---
 
 # Arbeiten mit PDF/A-Dokumenten {#working-with-pdf-a-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 **Über den DocConverter-Service**
 

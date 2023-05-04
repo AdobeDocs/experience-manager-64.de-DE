@@ -10,24 +10,28 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 exl-id: 9fff10fb-4b65-459a-a7a7-6ee9c0c26bf5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 100%
+source-wordcount: '468'
+ht-degree: 68%
 
 ---
 
 # Inhaltsarchitektur{#content-architecture}
 
-## Setzen Sie das Modell von David Nuescheler um {#follow-david-s-model}
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+## David&#39;s Modell folgen {#follow-david-s-model}
 
 „David’s Model“ wurde vor Jahren von David Nuescheler entworfen, hat aber bis heute Gültigkeit. Die wichtigsten Grundsätze des Modells lauten:
 
 * Erst die Daten, dann die Struktur. Zumindest gegebenenfalls.
 * Steuern Sie die Content-Hierarchie, anstatt sie dem Zufall zu überlassen.
 * Workspaces sind für `clone()`, `merge()` und `update()` vorgesehen.
-* Bei gleichgeordneten Elementen mit identischem Namen ist Vorsicht geboten.
-* Verweise richten mehr Schaden an, als sie nutzen.
+* Vorsicht vor gleichnamigen Geschwistern.
+* Verweise gelten als schädlich.
 * Dateien sind Dateien.
 * IDs sind zu vermeiden.
 
@@ -35,9 +39,9 @@ ht-degree: 100%
 
 ### Alles ist Inhalt {#everything-is-content}
 
-Sie sollten alles im Repository speichern, anstatt sich auf separate Datenquellen von Dritten wie etwa Datenbanken zu verlassen. Dies bezieht sich auf erstellte Inhalte, Binärdaten wie Bilder, Code und Konfigurationen. Auf diese Weise können Sie mit einem Satz von APIs alle Inhalte verwalten und die Promotion dieser Inhalte durch Replikation steuern. Außerdem profitieren Sie von nur einer einzigen Quelle für Backups, Protokollierung usw.
+Alles sollte im Repository gespeichert werden, anstatt sich auf separate Datenquellen von Drittanbietern wie Datenbanken zu verlassen. Dies gilt für erstellte Inhalte, Binärdaten wie Bilder, Code, Konfigurationen usw. Auf diese Weise können wir eine Reihe von APIs verwenden, um alle Inhalte zu verwalten und die Promotion dieses Inhalts durch Replikation zu verwalten. Wir erhalten auch eine einzige Quelle für Backup, Protokollierung usw.
 
-### Anwenden des Designgrundsatzes „Content Model First“ {#use-the-content-model-first-design-principle}
+### Verwenden des Designprinzips &quot;Inhaltsmodell zuerst&quot; {#use-the-content-model-first-design-principle}
 
 Wenn Sie eine neue Funktion entwickeln, beginnen Sie immer damit, zunächst die JCR-Inhaltsstruktur zu entwerfen. Befassen Sie sich dann erst mit dem Lesen und Schreiben Ihrer Inhalte mithilfe der standardmäßigen Sling-Servlets. Auf diese Weise können Sie sicherstellen, dass Ihre Implementierung problemlos mit Standardmechanismen für die Zugriffssteuerung funktioniert, und darüber hinaus die Erstellung überflüssiger Servlets im CRUD-Stil vermeiden.
 
@@ -55,14 +59,14 @@ Durch die Einhaltung von Namenskonventionen wird die Konsistenz der Codebasis er
 
 * Knotennamen
 
-   * Ausschließliche Verwendung von Kleinbuchstaben
+   * Kleinbuchstaben
    * Worttrennung mithilfe von Bindestrichen
 
 * Eigenschaftsnamen
 
-   * Gemischte Groß-/Kleinschreibung, beginnend mit einem Kleinbuchstaben
+   * Groß-/Kleinschreibung, beginnend mit einem Kleinbuchstaben
 
 * Komponenten (JSP/HTML)
 
-   * Ausschließliche Verwendung von Kleinbuchstaben
+   * Kleinbuchstaben
    * Worttrennung mithilfe von Bindestrichen

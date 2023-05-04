@@ -1,7 +1,7 @@
 ---
-title: Konsistenz- und Ausnahmeprüfungen
+title: Konsistenz- und Durchlaufprüfungen
 seo-title: Consistency and Traversal Checks
-description: Erfahren Sie, wie Sie Konsistenz- und Ausnahmeprüfungen durchführen.
+description: Erfahren Sie, wie Sie Konsistenz- und Durchlaufprüfungen durchführen.
 seo-description: Learn how to perform consistency and traversal checks.
 uuid: 0304e378-7c60-4bf5-9052-d01149d2a6df
 contentOwner: User
@@ -10,16 +10,20 @@ content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 feature: Configuring
 exl-id: 67dfa0f7-24ac-41ae-83c9-3bb1a8656502
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '192'
+ht-degree: 76%
 
 ---
 
-# Konsistenz- und Ausnahmeprüfungen{#consistency-and-traversal-checks}
+# Konsistenz- und Durchlaufprüfungen{#consistency-and-traversal-checks}
 
-Beim Aktualisieren können aufgrund von Arbeitsbereichsinkonsistenzen Probleme auftreten. Sie können eine Testaktualisierung ausführen, um anzuzeigen, ob dies ein Problem darstellt, oder Konsistenzüberprüfungen als Präventivmaßnahme ausführen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Bei der Aktualisierung kann es aufgrund von Arbeitsbereichsinkonsistenzen zu Problemen kommen. Sie können eine Testaktualisierung ausführen, um anzuzeigen, ob dies ein Problem darstellt, oder Konsistenzüberprüfungen als Präventivmaßnahme ausführen.
 
 Wenn Sie eine Testaktualisierung ausführen, die aufgrund von Arbeitsbereichsinkonsistenzen fehlschlägt, werden in der Datei „crx-quickstart/logs/crx/error.log“ Einträge angezeigt, die den folgenden ähneln:
 

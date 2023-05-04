@@ -10,14 +10,18 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 5066e2a2-9904-4203-914f-b0d4da2c88e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 92%
+source-wordcount: '1073'
+ht-degree: 77%
 
 ---
 
 # Verwalten von Projekten{#managing-projects}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Mithilfe von Projekten können Sie Ressourcen zu einer Einheit gruppieren.
 
@@ -29,15 +33,15 @@ In „Projekte“ können Sie ein Projekt erstellen, Ressourcen mit Ihrem Projek
 
 >[!NOTE]
 >
->In Version 6.2 besteht die Möglichkeit, Projekte in Ordnern zu organisieren. Auf der Seite „Projekte“ haben Sie die Möglichkeit, ein Projekt oder einen Ordner zu erstellen.
+>In 6.2 wurde die Möglichkeit eingeführt, Projekte in Ordnern zu organisieren. Auf der Seite &quot;Projekte&quot;können Sie ein Projekt oder einen Ordner erstellen.
 >
->Nach der Erstellung eines Ordners wird er geöffnet, sodass Benutzer dort weitere Ordner oder ein Projekt erstellen können. Es wird empfohlen, Projekte anhand von Kategorien wie Produktkampagnen, Ort, Sprache usw. in Ordnern zu organisieren.
+>Wenn ein Ordner erstellt wird, wird der Benutzer in diesen Ordner geleitet, in dem er einen anderen Ordner oder ein Projekt erstellen kann. Sie können Projekte anhand von Kategorien wie Produktkampagnen, Standort, Übersetzungssprachen usw. in Ordnern organisieren.
 >
 >Die Projekte und Ordner können in einer Listenansicht angezeigt und durchsucht werden.
 
 >[!CAUTION]
 >
->Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups**. Um dies umzusetzen, erteilen Sie am besten der Gruppe **projects-users** Lesezugriff auf **/home/users** und **/home/groups**.
+>Damit Benutzer in Projekten andere Benutzer/Gruppen sehen können, während sie Projektfunktionen wie das Erstellen von Projekten, das Erstellen von Aufgaben/Workflows, das Anzeigen und Verwalten des Teams verwenden, müssen diese Benutzer Lesezugriff auf **/home/users** und **/home/groups**. Die einfachste Möglichkeit, dies zu implementieren, besteht darin, die **projects-users** GruppenLesezugriff auf **/home/users** und **/home/groups**.
 
 ## Erstellen eines Projekts {#creating-a-project}
 
@@ -126,7 +130,7 @@ Dazu öffnen Sie die Kachel, sodass Sie ihre Elemente anzeigen und ändern könn
 
 ## Anzeigen von Projektstatistiken {#viewing-project-statistics}
 
-Um Projektstatistiken anzuzeigen, klicken Sie in der **Projektekonsole** auf **Statistikansicht anzeigen**. Der Fortschrittsstatus für jedes Projekt wird angezeigt. Klicken Sie erneut auf **Statistikansicht anzeigen**, um zur **Projektekonsole** zurückzukehren.
+So zeigen Sie Projektstatistiken in der **Projekte** Console, klicken Sie auf **Statistikansicht anzeigen**. Die Fertigstellungsstufe für jedes Projekt wird angezeigt. Klicken Sie erneut auf **Statistikansicht anzeigen**, um zur **Projektekonsole** zurückzukehren.
 
 ![chlimage_1-263](assets/chlimage_1-263.png)
 
@@ -138,7 +142,7 @@ Die Projekt-Zeitleiste enthält Informationen dazu, wann Assets des Projekts zul
 
 ### Anzeigen aktiver/inaktiver Projekte {#viewing-active-inactive-projects}
 
-Um zwischen aktiven und inaktiven Projekten zu wechseln, klicken Sie in der **Projektekonsole** auf **Aktive Projekte ein/aus**. Wenn neben dem Symbol ein Häkchen zu sehen ist, werden die aktiven Projekte angezeigt.
+Um zwischen aktiven und inaktiven Projekten zu wechseln, klicken Sie in der **Projektekonsole** auf **Aktive Projekte ein/aus**. Wenn neben dem Symbol ein Häkchen angezeigt wird, werden die aktiven Projekte angezeigt.
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 

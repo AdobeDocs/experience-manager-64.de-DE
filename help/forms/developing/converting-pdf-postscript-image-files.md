@@ -11,18 +11,22 @@ topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 4afed537-1694-4187-8968-608f49116c2e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2795'
-ht-degree: 100%
+source-wordcount: '2831'
+ht-degree: 97%
 
 ---
 
 # Konvertieren von PDF in PostScript- und Grafikdateien {#converting-pdf-to-postscript-andimage-files}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 **Über den Convert PDF-Service**
 
-Der Convert PDF-Service konvertiert PDF-Dokumente in PostScript sowie verschiedene Bildformate (JPEG, JPEG 2000, PNG und TIFF). Das Konvertieren eines PDF-Dokuments in PostScript ist nützlich für die unbeaufsichtigte serverbasierte Druckausgabe auf PostScript-Druckern. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist beim Archivieren von Dokumenten in Content Management-Systemen praktisch, die PDF-Dokumente nicht unterstützen.
+Der Convert PDF-Service konvertiert PDF-Dokumente in PostScript sowie verschiedene Bildformate (JPEG, JPEG 2000, PNG und TIFF). Die Konvertierung eines PDF-Dokuments in PostScript ist für den unbeaufsichtigten serverbasierten Druck auf einem beliebigen PostScript-Drucker nützlich. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist bei der Archivierung von Dokumenten in Content-Management-Systemen praktisch, die keine PDF-Dokumente unterstützen.
 
 Mithilfe des Convert PDF-Services können Sie die folgenden Aufgaben ausführen:
 

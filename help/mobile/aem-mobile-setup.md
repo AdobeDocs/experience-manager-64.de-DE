@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 8f608465-7d0d-48d2-8105-ee2d4ceb727a
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 4%
+source-wordcount: '979'
+ht-degree: 5%
 
 ---
 
 # AEM Mobile-Einrichtung{#aem-mobile-setup}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -35,7 +39,7 @@ Führen Sie die folgenden Schritte aus, um AEM Mobile einzurichten und es dem Be
 
 Gehen Sie wie folgt vor, um AEM Mobile einzurichten:
 
-* **API-Schlüssel anfordern**: Für den Zugriff auf die On-Demand Services API müssen Sie einen API-Schlüssel anfordern. Um den API-Schlüssel anzufordern, führen Sie die [PDF-Formular](https://helpx.adobe.com/de/digital-publishing-solution/help/integrating-dps.html). Senden Sie das ausgefüllte Formular an den Adobe Developer-Support: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **API-Schlüssel anfordern**: Für den Zugriff auf die On-Demand Services API müssen Sie einen API-Schlüssel anfordern. Um den API-Schlüssel anzufordern, führen Sie die [PDF-Formular](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html). Senden Sie das ausgefüllte Formular an den Adobe Developer-Support: [wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **Generieren der Geräte-ID und des Geräte-Tokens**: Nachdem Sie Ihren API-Schlüssel erhalten haben, können Sie die Geräte-ID und das Geräte-Token generieren. Gehen Sie zu aex.aemmobile.adobe.com und führen Sie folgende Schritte aus:
 

@@ -10,27 +10,31 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: c828302c-54ad-4171-89d1-f77f4d836277
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 100%
+source-wordcount: '1175'
+ht-degree: 64%
 
 ---
 
 # Prozessreferenz für Workflows{#workflow-process-reference}
 
-AEM bietet verschiedene Prozessschritte für die Erstellung von Workflow-Modellen. Darüber hinaus können auch benutzerdefinierte Prozessschritte für Aufgaben hinzugefügt werden, die nicht von den integrierten Schritten abgedeckt werden (vergleiche [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)).
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+AEM bietet mehrere Prozessschritte, die zum Erstellen von Workflow-Modellen verwendet werden können. Benutzerdefinierte Prozessschritte können auch für Aufgaben hinzugefügt werden, die nicht von den integrierten Schritten abgedeckt werden (siehe [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md)).
 
 ## Prozessmerkmale {#process-characteristics}
 
-Die folgenden Merkmale werden für jeden Prozessschritt beschrieben.
+Für jeden Prozessschritt werden die folgenden Eigenschaften beschrieben.
 
 ### Java-Klasse oder ECMA-Pfad {#java-class-or-ecma-path}
 
 Prozessschritte werden entweder durch eine Java-Klasse oder ein ECMAScript definiert.
 
-* Bei Java-Klassenprozessen wird der vollqualifizierte Klassenname angegeben.
-* Bei ECMAScript-Prozessen wird der Pfad des Skripts angegeben.
+* Für die Java-Klassenprozesse wird der vollständig qualifizierte Klassenname bereitgestellt.
+* Für die ECMAScript-Prozesse wird der Pfad zum Skript bereitgestellt.
 
 ### Payload {#payload}
 
@@ -44,7 +48,7 @@ Meistens besteht die Payload aus einem JCR-Knoten im Repository (beispielsweise 
 
 Einige Workflow-Prozesse akzeptieren Argumente, die der Administrator beim Einrichten des Workflow-Schritts angibt.
 
-Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Workflow-Editors in der Eigenschaft **Prozess-Argumente** angegeben. Das Format der Argumentzeichenfolge wird für jeden unten beschriebenen Prozess in einfacher EBNF-Grammatik angegeben. Im folgenden Beispiel besteht die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren. Jedes Paar besteht aus einem Namen (einer Zeichenfolge) und einem Wert, die durch einen zweifachen Doppelpunkt getrennt werden:
+Argumente werden als einzelne Zeichenfolge in der **Prozess-Argumente** -Eigenschaft in **Eigenschaften** -Bereich des Workflow-Editors. Für jeden unten beschriebenen Prozess wird das Format der Argumentzeichenfolge in einer einfachen EBNF-Grammatik beschrieben. Im folgenden Beispiel besteht die Argumentzeichenfolge aus einem oder mehreren durch Kommas getrennten Paaren. Jedes Paar besteht aus einem Namen (einer Zeichenfolge) und einem Wert, die durch einen zweifachen Doppelpunkt getrennt werden:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -55,7 +59,7 @@ Argumente werden als einzelne Zeichenfolge im Bereich **Eigenschaften** des Work
 
 ### Zeitüberschreitung {#timeout}
 
-Nach einer gewissen Zeitüberschreitung funktioniert der Workflow-Schritt nicht mehr. Einige Workflow-Prozesse respektieren die Zeitüberschreitung, für andere gilt sie nicht und wird daher ignoriert.
+Nach dieser Zeitüberschreitung ist der Workflow-Schritt nicht mehr funktionsfähig. Einige Workflow-Prozesse berücksichtigen den Timeout-Wert, während er für andere nicht gilt und ignoriert wird.
 
 ### Berechtigungen {#permissions}
 
@@ -69,15 +73,15 @@ Die Sitzung, die an den `WorkflowProcess` übergeben wird, wird durch den Diens
 
 Wenn dieser Berechtigungssatz nicht ausreichend für die `WorkflowProcess`-Implementierung ist, muss auf eine Sitzung mit den erforderlichen Berechtigungen zurückgegriffen werden.
 
-Hierfür wird empfohlen, einen Dienstbenutzer mit einer minimalen Untergruppe der erforderlichen Berechtigungen zu verwenden.
+Die empfohlene Vorgehensweise ist die Verwendung eines Dienstbenutzers, der mit der erforderlichen, jedoch minimalen Untergruppe von Berechtigungen erstellt wurde.
 
 >[!CAUTION]
 >
->Wenn Sie ein Upgrade von einer früheren Version auf AEM 6.2 durchführen, müssen Sie möglicherweise auch Ihre Implementierung aktualisieren.
+>Wenn Sie ein Upgrade von einer Version vor AEM 6.2 durchführen, müssen Sie möglicherweise Ihre Implementierung aktualisieren.
 >
 >In den vorherigen Versionen wurde die Adminsitzung an die `WorkflowProcess`-Implementierungen übergeben. Danach war der uneingeschränkte Zugriff auf das Repository ohne Definition der spezifischen ACLs möglich.
 >
->Die Berechtigungen werden nun wie oben dargestellt definiert ([Berechtigungen](#permissions)). Dasselbe gilt für die empfohlene Methode zum Aktualisieren Ihrer Implementierung.
+>Die Berechtigungen werden jetzt wie oben definiert ([Berechtigungen](#permissions)). Dies ist die empfohlene Methode für die Aktualisierung Ihrer Implementierung.
 >
 >Wenn Codeänderungen nicht praktikabel sind, steht eine kurzfristige Lösung für die Abwärtskompatibilität zur Verfügung:
 >
@@ -87,9 +91,9 @@ Hierfür wird empfohlen, einen Dienstbenutzer mit einer minimalen Untergruppe de
 >
 >Dadurch wird das bisherige Verhalten wieder aktiviert, nach dem eine Adminsitzung an die `WorkflowProcess`-Implementierung übergeben und uneingeschränkter Zugriff auf das gesamte Repository eingeräumt wird.
 
-## Workflow-Steuerungsprozesse {#workflow-control-processes}
+## Workflow-Kontrollprozesse {#workflow-control-processes}
 
-Die folgenden Prozesse wirken sich nicht auf Inhalte aus. Sie dienen der Steuerung des Workflows.
+Die folgenden Prozesse führen keine Aktionen für Inhalte durch. Sie dienen der Steuerung des Workflows.
 
 ### AbsoluteTimeAutoAdvancer (automatisches Voranschreiten für absolute Uhrzeit) {#absolutetimeautoadvancer-absolute-time-auto-advancer}
 
@@ -134,9 +138,9 @@ Der `ProcessAssembler`-Prozess führt mehrere Teilprozesse nacheinander in einem
 
 Beispiel:
 
-* Extrahieren Sie die Metadaten des Assets.
+* Extrahieren Sie die Metadaten aus dem Asset.
 * Erstellen Sie drei Miniaturansichten der drei angegebenen Größen.
-* Erstellen Sie ein JPEG-Bild aus dem Asset, vorausgesetzt, das Asset ist ursprünglich weder eine GIF- noch eine PNG-Datei (in diesem Fall wird kein JPEG-Bild erstellt).
+* Erstellen Sie ein JPEG-Bild aus dem Asset, vorausgesetzt das Asset ist ursprünglich weder ein GIF noch ein PNG (in diesem Fall wird keine JPEG erstellt).
 * Legen Sie das Datum der letzten Änderung für das Asset fest.
 
 ```shell
@@ -158,7 +162,7 @@ Die folgenden Prozesse führen einfache Aufgaben durch oder dienen als Beispiel.
 
 ### Löschen Sie {#delete}
 
-Das Element unter dem angegebenen Pfad wird gelöscht.
+Das Element am angegebenen Pfad wird gelöscht.
 
 * **ECMA-Skript-Pfad**: `/libs/workflow/scripts/delete.ecma`
 
@@ -186,9 +190,9 @@ Dies ist ein Null-Prozess, der `false` für die `check()`-Methode zurückgibt.
 * **Argumente**: Keine
 * **Zeitüberschreitung**: Ignoriert
 
-### Beispiel {#sample}
+### sample {#sample}
 
-Ein Muster-ECMAScript-Prozess.
+Dies ist ein Beispiel für einen ECMAScript-Prozess.
 
 * **ECMA-Skript-Pfad**: `/libs/workflow/scripts/sample.ecma`
 
@@ -198,7 +202,7 @@ Ein Muster-ECMAScript-Prozess.
 
 ### urlcaller {#urlcaller}
 
-Einfacher Workflow-Prozess, der die angegebene URL aufruft. Für gewöhnlich ist die URL ein Verweis auf ein JSP (oder ein anderes entsprechendes Servlet), das eine einfache Aufgabe ausführt. Dieser Prozess sollte nur während der Entwicklung und für Demonstrationen verwendet werden, nicht in einer Produktionsumgebung. Die Argumente legen die URL, die Anmeldedaten und das Kennwort fest.
+Dies ist ein einfacher Workflow-Prozess, der die angegebene URL aufruft. Normalerweise ist die URL ein Verweis auf eine JSP (oder ein anderes Servlet-Äquivalent), die eine einfache Aufgabe ausführt. Dieser Prozess sollte nur während der Entwicklung und Demonstrationen und nicht in einer Produktionsumgebung verwendet werden. Die Argumente geben die URL, die Anmeldung und das Kennwort an.
 
 * **ECMA-Skript-Pfad**: `/libs/workflow/scripts/urlcaller.ecma`
 
@@ -223,10 +227,10 @@ Sperrt die Payload des Workflows.
 * **Java-Klasse:** `com.day.cq.workflow.impl.process.LockProcess`
 
 * **Payload:** JCR_PATH und JCR_UUID
-* **Argumente:** Keine
+* **Argumente:** Keines
 * **Zeitüberschreitung:** Ignoriert
 
-Unter folgenden Bedingungen ist der Schritt nicht wirksam:
+Der Schritt hat unter folgenden Umständen keine Auswirkungen:
 
 * Die Payload wurde bereits gesperrt
 * Der Payload-Knoten enthält keinen untergeordneten jcr:content-Knoten
@@ -238,10 +242,10 @@ Entsperrt die Payload des Workflows.
 * **Java-Klasse:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
 * **Payload:** JCR_PATH und JCR_UUID
-* **Argumente:** Keine
+* **Argumente:** Keines
 * **Zeitüberschreitung:** Ignoriert
 
-Unter folgenden Bedingungen ist der Schritt nicht wirksam:
+Der Schritt hat unter folgenden Umständen keine Auswirkungen:
 
 * Die Payload wurde bereits entsperrt
 * Der Payload-Knoten enthält keinen untergeordneten jcr:content-Knoten

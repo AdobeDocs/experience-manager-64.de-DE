@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: b051b279-b0d9-41a3-b5d8-4b9bad448c0f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 11%
+source-wordcount: '428'
+ht-degree: 7%
 
 ---
 
 # Entwickeln von Communities {#developing-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Übersicht {#overview}
 
@@ -27,8 +31,8 @@ Die Grundlage eines [Community-Site](overview.md#communitiessites) ist die [Soci
 
 Einen Überblick und die ersten Schritte finden Sie unter:
 
-* [Übersicht über AEM Communities](overview.md)
-* [Einstieg in AEM Communities](getting-started.md)
+* [Übersicht über AEM Communities](overview.md)
+* [Erste Schritte mit AEM Communities](getting-started.md)
 * [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md)
 
 >[!NOTE]
@@ -91,7 +95,7 @@ AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine f
 * [Fehlerbehebung](troubleshooting.md)
 * [Bekannte Probleme](/help/release-notes/known-issues.md)
 
-## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
+## Verwandte Communities - Dokumentation {#related-communities-documentation}
 
 * Besuch [Bereitstellen von Communities](deploy-communities.md) , um mehr über empfohlene Bereitstellungen und die Dispatcher-Konfiguration zu erfahren.
 

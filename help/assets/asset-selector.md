@@ -1,24 +1,28 @@
 ---
-title: Asset-Wähler
-description: Erfahren Sie, wie Sie mit der Asset-Auswahl Metadaten für Assets in Adobe Experience Manager Assets suchen, filtern, durchsuchen und abrufen können. Erfahren Sie außerdem mehr über das benutzerdefinierte Anpassen der Oberfläche des Asset-Wählers.
+title: Asset-Auswahl
+description: Erfahren Sie, wie Sie mit der Asset-Auswahl Metadaten für Assets in Adobe Experience Manager Assets suchen, filtern, durchsuchen und abrufen können. Erfahren Sie außerdem, wie Sie die Benutzeroberfläche des Asset-Wählers anpassen.
 contentOwner: AG
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 67%
+source-wordcount: '526'
+ht-degree: 41%
 
 ---
 
 # Asset-Wähler {#asset-selector}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
 >Der Asset-Selektor wurde als [Asset-Auswahl](https://helpx.adobe.com/de/experience-manager/6-2/assets/using/asset-picker.html) in früheren Versionen von [!DNL Experience Manager].
 
-Mit der Asset-Auswahl können Sie Assets in [!DNL Adobe Experience Manager] Assets. Außerdem können Sie die Metadaten der Assets abrufen, die Sie über den Asset-Wähler auswählen. Sie können die Benutzeroberfläche des Asset-Wählers mit unterstützten Anforderungsparametern starten, um sie anzupassen. Mit diesen Parametern wird der Kontext des Asset-Wählers für ein bestimmtes Szenario festgelegt.
+Mit der Asset-Auswahl können Sie Assets in [!DNL Adobe Experience Manager] Assets. Sie können auch die Metadaten von Assets abrufen, die Sie mithilfe des Asset-Wählers auswählen. Um die Benutzeroberfläche des Asset-Wählers anzupassen, können Sie sie mit unterstützten Anforderungsparametern starten. Diese Parameter legen den Kontext des Asset-Wählers für ein bestimmtes Szenario fest.
 
 Derzeit können Sie die Anforderungsparameter übergeben `assettype` (*Bild/Video/Text*) und Auswahl `mode` (*Einfach/Mehrere*) als Kontextinformationen für die Asset-Auswahl, die während der Auswahl intakt bleiben.
 
@@ -39,8 +43,8 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 | Dialogfeld | true, false | `http://localhost:4502/aem/assetpicker.html`<br>`?dialog=true` | Verwenden Sie diese Parameter, um den Asset-Wähler als Granite-Dialogfeld zu öffnen. Diese Option ist nur relevant, wenn Sie den Asset-Wähler per Granite-Pfadfeld starten und als pickerSrc-URL konfigurieren. |
 | root | `<folder_path>` | `http://localhost:4502/aem/`<br>`assetpicker.html?assettype=images`<br>`&root=/content/dam/we-retail/en/activities` | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
 | viewmode | Suchen |  | So starten Sie die Asset-Auswahl im Suchmodus mit den Parametern Assettyp und MIME-Typ . |
-| assettype (S) | images, documents, multimedia, archives | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | Verwenden Sie diese Option, um die Asset-Typen basierend auf dem übergebenen Wert zu filtern. |
-| mimetype | MIME-Typen (`/jcr:content/metadata/dc:format`) eines Assets (Platzhalter wird ebenfalls unterstützt) | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | Verwenden Sie diese Option zum Filtern von Assets anhand von MIME-Typen. |
+| assettype (S) | Bilder, Dokumente, Multimedia, Archive | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | Verwenden Sie diese Option, um Asset-Typen anhand des übergebenen Werts zu filtern. |
+| mimetype | MIME-Typen (`/jcr:content/metadata/dc:format`) eines Assets (Platzhalter wird ebenfalls unterstützt) | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | Filtern von Assets nach MIME-Typ(en) |
 
 ## Verwenden der Asset-Auswahl {#using-the-asset-selector}
 
@@ -49,11 +53,11 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 
    ![chlimage_1-441](assets/chlimage_1-441.png)
 
-   Alternativ dazu können Sie über das OmniSearch-Feld nach dem gewünschten Asset suchen und es dann auswählen.
+   Alternativ können Sie im OmniSearch-Feld nach dem gewünschten Asset suchen und es dann auswählen.
 
    ![chlimage_1-442](assets/chlimage_1-442.png)
 
-   Wenn Sie das OmniSearch-Feld zum Suchen nach Assets verwenden, können Sie im Bereich **[!UICONTROL Filter]** verschiedene Filter auswählen, um Ihre Suche einzugrenzen.
+   Wenn Sie über das OmniSearch-Feld nach Assets suchen, können Sie verschiedene Filter aus dem **[!UICONTROL Filter]** -Bereich, um die Suche zu verfeinern.
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 

@@ -6,14 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
-source-git-commit: 8220795bbf0c92ead3bb68dd6f8bbb48cc9ca2cd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 46%
+source-wordcount: '898'
+ht-degree: 45%
 
 ---
 
 # Integrieren mit Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Die [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html)enthält leistungsstarke Produkte zur Webanalyse- und Website-Optimierung, die umsetzbare Echtzeitdaten und Einblicke liefern, um erfolgreiche Online-Initiativen zu fördern. Es bietet eine integrierte und offene Plattform für die Online-Geschäftsoptimierung. Die Cloud besteht aus integrierten Anwendungen, mit denen Kundeneinblicke gesammelt und freigesetzt werden können, um die Akquise, Konvertierung und Bindung von Kunden sowie die Erstellung und Verteilung von Inhalten zu optimieren.
 

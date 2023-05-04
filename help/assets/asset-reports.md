@@ -5,24 +5,28 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: User,Admin
 exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 93%
+source-wordcount: '1097'
+ht-degree: 82%
 
 ---
 
 # Asset-Berichte {#asset-reports}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren, und die Frage, welche Assets heruntergeladen und freigegeben werden.
 
 Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten und so festzustellen, wie gut [!DNL Assets] innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 
-Das [!DNL Assets]-Reporting-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
+Das [!DNL Assets]-Reporting-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Sie ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung erhöht die Effizienz und Geschwindigkeit der Berichterstellung.
 
-Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
+Die Berichtverwaltungsoberfläche ist intuitiv und enthält detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und die Anzeige des Ausführungsstatus von Berichten (Erfolg, fehlgeschlagen und in der Warteschlange).
 
-Wenn ein Bericht generiert wird, werden Sie mit einer E-Mail (optional) und einer Benachrichtigung im Posteingang benachrichtigt. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
+Bei der Erstellung eines Berichts werden Sie per E-Mail (optional) und Posteingang über eine Benachrichtigung benachrichtigt. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
 
 ## Voraussetzung {#prerequisite-for-reporting}
 
@@ -64,7 +68,7 @@ Um Berichte zu erstellen, stellen Sie Folgendes sicher:
 
    >[!NOTE]
    >
-   >Die [!UICONTROL Download] zeigt nur Details zu den Assets an, die einzeln ausgewählt und mit der Schnellaktion heruntergeladen oder heruntergeladen wurden. Er enthält jedoch keine Details zu den Assets, die sich in einem heruntergeladenen Ordner befanden.
+   >Die [!UICONTROL Download] zeigt nur Details zu den Assets an, die einzeln ausgewählt und mit der Schnellaktion heruntergeladen oder heruntergeladen wurden. Sie enthält jedoch nicht die Details der Assets, die sich in einem heruntergeladenen Ordner befanden.
 
 1. Konfigurieren Sie die Berichtdetails wie Titel, Beschreibung, Miniatur sowie den Ordnerpfad im CRX-Repository, der den Speicherort des Berichts angibt. Der standardmäßige Ordnerpfad lautet `/content/dam`. Sie können auch einen anderen Pfad festlegen.
 
@@ -115,7 +119,7 @@ Um Berichte zu erstellen, stellen Sie Folgendes sicher:
 
 ## Hinzufügen benutzerdefinierter Spalten {#add-custom-columns}
 
-Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
+Sie können den folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre benutzerdefinierten Anforderungen anzuzeigen:
 
 * Hochladen
 * Download

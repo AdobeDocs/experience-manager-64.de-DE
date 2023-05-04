@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 exl-id: 21e89233-2282-4859-b3c8-5d880d70d6be
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 27%
+source-wordcount: '405'
+ht-degree: 10%
 
 ---
 
 # Bearbeiten von App-Metadaten{#editing-app-metadata}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -29,7 +33,7 @@ Die **App verwalten** Die Kachel und die Seite &quot;App verwalten&quot;bieten e
 
 So bearbeiten Sie die Metadaten der App:
 
-1. Gehen Sie zur Dashboard-Seite für die App.
+1. Navigieren Sie zur Dashboard-Seite für die App.
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -50,7 +54,7 @@ Sie können die allgemeinen und IOS-Metadaten bearbeiten:
 
 ## Hinzufügen und Entfernen von Screenshots {#add-and-remove-screenshots}
 
-Sie können App-Screenshots in das Metadaten-Rollup einbeziehen. Einige Anbieter benötigen präzise Screenshots, wenn Sie eine App an den App Store senden. Diese Bilder müssen bereits in Assets vorhanden sein. Informationen zum Hochladen Ihrer Screenshots finden Sie unter [Asset-Auswahl](/help/assets/asset-selector.md).
+Sie können App-Screenshots in die Metadaten-Datenaggregation aufnehmen. Einige Anbieter benötigen genaue Screenshots, wenn sie eine App an ihren Appstore senden. Diese Bilder müssen bereits in Assets vorhanden sein. Siehe [Asset-Auswahl](/help/assets/asset-selector.md) , um Ihre Screenshots hochzuladen.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -81,7 +85,7 @@ Klicken Sie auf den Löschvorgang für das Asset.
 
 Weitere Informationen zu anderen Authoring-Rollen finden Sie in den folgenden Ressourcen:
 
-* [Bereich „App verwalten“](/help/mobile/phonegap-app-details-tile.md)
+* [Die Kachel App verwalten](/help/mobile/phonegap-app-details-tile.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
 * [Erstellen einer neuen App mit dem Assistenten zum Erstellen einer App](/help/mobile/phonegap-create-new-app.md)
 * [Vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)

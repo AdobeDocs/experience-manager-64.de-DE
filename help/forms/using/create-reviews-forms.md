@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 feature: Adaptive Forms
 exl-id: ff113288-a69a-4083-82a6-4c65c5062411
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 97%
+source-wordcount: '695'
+ht-degree: 77%
 
 ---
 
 # Erstellen und Verwalten von Assetüberprüfungen in Formularen  {#creating-and-managing-reviews-for-assets-in-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Überprüfung {#review}
 
@@ -31,17 +35,17 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, bei dem mindestens
 
    * Überprüfungsname (erforderlich): Darf alphanumerische Zeichen, Bindestriche oder Unterstriche enthalten.
    * Überprüfungsbeschreibung (optional): Beschreibung des Zwecks/Inhalts der Überprüfung.
-   * Überprüfungstermin (optional): Datum, an dem die Überprüfung beendet wird. Wenn der Termin bereits abgelaufen ist, wird die Aufgabe als „überfällig“ angezeigt.
-   * Reviewer: Es muss mindestens ein Reviewer angegeben werden. Verwenden Sie das Kombinationsfeld, um Reviewer hinzuzufügen. Beim Eingeben eines Namens werden alle passenden Namen angezeigt. Wählen Sie einen Namen aus und klicken Sie auf „Hinzufügen“.
+   * Überprüfungstermin (optional): Datum, an dem die Überprüfung beendet wird. Wenn die Frist bereits abgelaufen ist, wird die Aufgabe als „überfällig“ angezeigt.
+   * Reviewer: Es muss mindestens ein Reviewer angegeben werden. Verwenden Sie das Kombinationsfeld, um Reviewer hinzuzufügen. Beim Eingeben eines Namens werden alle übereinstimmenden Namen aufgelistet. einen Namen auswählen und auf Hinzufügen klicken.
 
-1. Füllen Sie alle weiteren Details und klicken Sie dann auf „Start“.
+1. Füllen Sie alle weiteren Details aus und klicken Sie auf Start.
 
 ### Aktionen beim Einrichten von Überprüfungen {#actions-that-occur-when-a-review-is-set-up}
 
 In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erstellt bzw. eingerichtet wird.
 
 1. Eine neue Überprüfungsaufgabe wird erstellt und dem Initiator der Überprüfung zugewiesen.
-1. Allen Reviewern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird in ihrem Benachrichtigungsabschnitt angezeigt. Reviewer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Reviewer können per Klick die Überprüfungsaufgabe öffnen, das Formular anzeigen und Kommentare hinzufügen.
+1. Allen Reviewern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird im Abschnitt Benachrichtigungen angezeigt. Reviewer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Reviewer können per Klick die Überprüfungsaufgabe öffnen, das Formular anzeigen und Kommentare hinzufügen.
 
    ![Warnung bei Reviewerbenachrichtigungen](assets/noti.png)
    **Abbildung:** *Warnung zur Reviewer-Benachrichtigung*
@@ -52,7 +56,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 >[!NOTE]
 >
->Es können nur Überprüfungen geändert werden, die noch nicht abgeschlossen sind. Abgeschlossene Überprüfungen können nicht geändert werden.
+>Nur laufende Überprüfungen können geändert werden. Abgeschlossene Überprüfungen können nicht geändert werden.
 
 1. Gehen Sie zur Registerkarte „Formulare“ und wählen Sie ein Formular aus.
 
@@ -69,7 +73,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
    * **Überprüfungstermin**: Kann bearbeitet werden. Die Werte für Datum und Uhrzeit des Termins können geändert werden, wenn sie in der Zukunft liegen.
    * **Reviewer**: Kann bearbeitet werden. Sie können Reviewer hinzufügen oder entfernen. Wenn eine Aufgabe überfällig ist, können Sie Reviewer erst hinzufügen, wenn Sie den Termin verlängern und er über das aktuelle Datum hinausgeht.
 
-1. Bearbeiten Sie die erforderlichen Felder und klicken Sie dann auf „Aktualisieren“.
+1. Bearbeiten Sie die erforderlichen Felder und klicken Sie auf Aktualisieren.
 
    ![Überprüfen des aktuellen Status im Task Manager](assets/tskmgr.png)
    **Abbildung:** *Aktualisierten Status in Task Manager überprüfen*
@@ -78,7 +82,7 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 
 ### Aktionen beim Bearbeiten einer Überprüfung {#actions-that-occur-when-a-review-is-modified}
 
-In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüfungen passiert:
+In diesem Abschnitt wird beschrieben, was beim Beenden/Ändern von Überprüfungen passiert:
 
 1. Wenn die Überprüfungsbeschreibung geändert wird, wird die entsprechende Aufgabe der Reviewer und des Initiators aktualisiert.
 1. Wenn der Überprüfungstermin geändert wird, wird die entsprechende Aufgabe der Reviewer mit dem neuen Datum aktualisiert.
@@ -88,7 +92,7 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
    ![Entfernen eines Reviewers](assets/removeduser.png)
    **Abbildung:** *Validierer entfernen*
 
-   1. Falls die zugewiesene Aufgabe unvollständig ist, wird sie beendet.
+   1. Wenn die zugewiesene Aufgabe unvollständig ist, wird sie beendet.
    1. Der Reviewer kann das Asset nicht mehr kommentieren.
 
 1. Wenn ein Reviewer hinzugefügt wird:
@@ -102,5 +106,5 @@ In diesem Abschnitt wird beschrieben, was beim Beenden/Bearbeiten von Überprüf
 1. Wenn eine Überprüfung abgeschlossen wird:
 
    1. **Reviewer**: Bei allen Reviewern werden zugewiesene unvollständige Aufgaben beendet. Die Aufgabe wird im Benachrichtigungsabschnitt des Reviewers nicht mehr als „Ausstehend“ angezeigt.
-   1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe wird als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators von Überprüfungen entfernt.
-   1. **Alle**: Die Überprüfung wird im Abschnitt für die vorherigen Überprüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.
+   1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe ist als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators der Überprüfung entfernt.
+   1. **Alle**: Die Überprüfung wird im Abschnitt Frühere Prüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.

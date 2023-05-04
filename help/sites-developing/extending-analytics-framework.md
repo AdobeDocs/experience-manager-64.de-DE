@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: 7e465a56-ca26-481e-9b3e-b438ef7fbff0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1618'
-ht-degree: 100%
+source-wordcount: '1654'
+ht-degree: 82%
 
 ---
 
 # Anpassen des Adobe Analytics Framework{#customizing-the-adobe-analytics-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Das Adobe Analytics-Framework bestimmt die Informationen, die mit Adobe Analytics verfolgt werden. Um das Standard-Framework anzupassen, können Sie mit JavaScript benutzerdefiniertes Tracking hinzufügen, Adobe Analytics-Plug-ins integrieren und die allgemeinen Einstellungen in dem zum Tracking genutzten Framework ändern.
 
@@ -59,7 +63,7 @@ s.doPlugins=s_doPlugins;
 */
 ```
 
-Wenn Sie mit angepasstem JavaScript-Code das Framework anpassen, ändern Sie den Inhalt dieser Datei.
+Wenn Sie benutzerdefinierten JavaScript-Code verwenden, um das Framework anzupassen, ändern Sie den Inhalt dieser Datei.
 
 ## Konfigurieren von Adobe Analytics-Eigenschaften {#configuring-adobe-analytics-properties}
 
@@ -99,11 +103,11 @@ Mit dem folgenden Verfahren können Sie Variablen zur Liste hinzufügen:
 
 1. Geben Sie in der rechten Spalte einen Wertfür die Variable ein, zum Beispiel `CONSTANT`.
 
-1. Um eine Variable zu entfernen, klicken Sie auf das Minuszeichen (-) neben der Variablen.
+1. Um eine Variable zu entfernen, klicken Sie auf die Schaltfläche (-) neben der Variablen.
 
 >[!NOTE]
 >
->Stellen Sie bei der Eingabe von Variablen und Werten sicher, dass sie korrekt formatiert und geschrieben sind. Andernfalls werden die **Aufrufe nicht** mit dem korrekten Wert/Variable-Paar gesendet. Falsch geschriebene Variablen und Werte können Aufrufe sogar komplett verhindern.
+>Stellen Sie bei der Eingabe von Variablen und Werten sicher, dass sie korrekt formatiert und geschrieben sind, oder **-Aufrufe werden nicht gesendet** mit dem richtigen Wert-/Variablenpaar. Falsch geschriebene Variablen und Werte können sogar Aufrufe verhindern.
 >
 >Beraten Sie sich mit dem für Sie zuständigen Adobe Analytics-Mitarbeiter, um sicherzustellen, dass diese Variablen richtig festgelegt sind.
 
@@ -194,11 +198,11 @@ Daher sollte Ihr JavaScript `s.usePlugins` auf `true` festlegen, damit jeder Cod
 
 >[!NOTE]
 >
->Bearbeiten Sie die Datei /libs/cq/analytics/components/sitecatalyst/config.js.jsp nicht. Bei bestimmten AEM-Upgrade- oder Wartungsaufgaben wird möglicherweise die Originaldatei erneut installiert und ihre Änderungen werden dabei entfernt.
+>Bearbeiten Sie die Datei /libs/cq/analytics/components/sitecatalyst/config.js.jsp nicht. Bestimmte AEM Upgrade- oder Wartungsaufgaben können die Originaldatei neu installieren und Ihre Änderungen entfernen.
 
-1. Erstellen Sie in CRXDE Lite die Ordnerstruktur /apps/cq/analytics/components:
+1. Erstellen Sie in CRXDE Lite die Ordnerstruktur /apps/cq/analytics/components :
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner /apps und anschließend auf „Erstellen“ > „Ordner erstellen“.
+   1. Klicken Sie mit der rechten Maustaste auf den Ordner /apps und klicken Sie auf Erstellen > Ordner erstellen .
    1. Legen Sie als Ordnernamen `cq` fest und klicken Sie auf „OK“.
    1. Erstellen Sie auf dieselbe Weise die Ordner `analytics` und `components`.
 
@@ -266,7 +270,7 @@ Der Client-Bibliotheksordner /libs/cq/analytics/clientlibs/sitecatalyst/plugins 
 >
 >Erstellen Sie einen neuen Client-Bibliotheksordner für Ihre Plug-ins. Fügen Sie keine Plug-ins zum Ordner `/libs/cq/analytics/clientlibs/sitecatalyst/plugins` hinzu. Dadurch wird sichergestellt, dass Ihre Beiträge zur Kategorie `sitecatalyst.plugins` bei erneuten Installationen oder Upgrades von AEM nicht überschrieben werden.
 
-Mit dem folgenden Verfahren können Sie den Client-Bibliotheksordner für Ihre Plug-ins erstellen. Sie müssen diesen Vorgang nur einmal durchführen. Über das darauffolgende Verfahren können Sie ein Plug-in zum Client-Bibliotheksordner hinzufügen.
+Führen Sie die folgenden Schritte aus, um den Client-Bibliotheksordner für Ihre Plug-ins zu erstellen. Sie müssen diesen Vorgang nur einmal ausführen. Über das darauffolgende Verfahren können Sie ein Plug-in zum Client-Bibliotheksordner hinzufügen.
 
 1. Öffnen Sie CRXDE Lite in einem Webbrowser. ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))
 
@@ -276,12 +280,12 @@ Mit dem folgenden Verfahren können Sie den Client-Bibliotheksordner für Ihre P
 
    * Typ: cq:ClientLibraryFolder
 
-1. Wählen Sie den gerade erstellten Client-Bibliotheksordner aus und fügen Sie über die Eigenschaftsleiste rechts unten die folgende Eigenschaft hinzu:
+1. Wählen Sie den soeben erstellten Client-Bibliotheksordner aus und fügen Sie mithilfe der rechten unteren Eigenschaftenleiste die folgende Eigenschaft hinzu:
 
    * Name: categories
    * Typ: String
    * Wert: sitecatalyst.plugins
-   * Multi: ausgewählt
+   * Multi: selected
 
    Klicken Sie im Eigenschaftsfenster auf „OK“, um den Eigenschaftswert zu bestätigen.
 
@@ -292,11 +296,11 @@ Mit dem folgenden Verfahren können Sie den Client-Bibliotheksordner für Ihre P
 Mit dem folgenden Verfahren können Sie sich den Plug-in-Code beschaffen, den Code im AEM-Repository speichern und den Code zu Ihrem Client-Bibliotheksordner hinzufügen.
 
 1. Melden Sie sich mit Ihrem Adobe Analytics-Konto bei [sc.omniture.com](https://sc.omniture.com) an.
-1. Klicken Sie auf der Landingpage auf „Hilfe“ > „Hilfe-Startseite“.
-1. Klicken Sie im Inhaltsverzeichnis links auf „Implementierungs-Plug-ins“.
+1. Navigieren Sie auf der Landingpage zu Hilfe > Hilfe-Startseite.
+1. Klicken Sie im Inhaltsverzeichnis auf der linken Seite auf Plug-ins für Implementierungen.
 1. Klicken Sie auf den Link zu dem Plug-in, das Sie hinzufügen möchten. Wenn sich die Seite öffnet, suchen Sie den JavaScript-Quell-Code für das Plug-in, wählen Sie den Code aus und kopieren Sie ihn.
 
-1. Klicken Sie mit der rechten Maustaste auf den Client-Bibliotheksordner und klicken Sie auf „Erstellen“ > „Datei erstellen“. Geben Sie als Dateinamen den Namen des zu integrierenden Plug-ins gefolgt von „.js“ ein und klicken Sie dann auf „OK“. Wenn Sie z. B. das Plug-in getQueryParam integrieren, nennen Sie die Datei „getQueryParam.js“.
+1. Klicken Sie mit der rechten Maustaste auf Ihren Client-Bibliotheksordner und klicken Sie auf Erstellen > Datei erstellen . Geben Sie als Dateinamen den Namen des zu integrierenden Plug-ins gefolgt von .js ein und klicken Sie auf OK. Wenn Sie z. B. das Plug-in getQueryParam integrieren, nennen Sie die Datei „getQueryParam.js“.
 
    Wenn Sie die Datei erstellen, wird sie zur Bearbeitung geöffnet.
 
@@ -308,6 +312,6 @@ Mit dem folgenden Verfahren können Sie sich den Plug-in-Code beschaffen, den Co
 
 >[!NOTE]
 >
->Stellen Sie bei der Verwendung von Plug-ins sicher, dass Sie auch unterstützende Plug-ins integrieren. Andernfalls erkennt das JavaScript des Plug-ins die Aufrufe nicht, die an die Funktionen im unterstützenden Plug-in erfolgen. Beispielsweise muss für das Plug-in getPreviousValue() das Plug-in split() ordnungsgemäß funktionieren.
+>Stellen Sie bei der Verwendung von Plug-ins sicher, dass Sie auch unterstützende Plug-ins integrieren. Andernfalls erkennt das Plug-in-JavaScript die Aufrufe, die es an die Funktionen im unterstützenden Plug-in sendet, nicht. Beispielsweise benötigt das Plug-in getPreviousValue() das Plug-in split() , um ordnungsgemäß zu funktionieren.
 >  
 >Den Namen des unterstützenden Plug-ins müssen Sie ebenfalls in die Datei **js.txt** einfügen.

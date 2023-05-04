@@ -10,16 +10,20 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 exl-id: 15d8bd59-397e-4bd3-b0a2-b6893c015798
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 29%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
 
 # Suchfunktion {#search-feature}
 
-Die Suchfunktion kann für zahlreiche andere Funktionen wie beispielsweise Foren eingesetzt werden und bietet somit die Möglichkeit, bestimmte Inhalte aufzufinden.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die Suchfunktion kann mit verschiedenen anderen Funktionen wie Foren verwendet werden, um die Suche nach Inhalten zu ermöglichen.
 
 Beim Hinzufügen der Möglichkeit, Beiträge von Community-Mitgliedern zu durchsuchen, die als benutzergenerierte Inhalte (UGC) bezeichnet werden, gibt es zwei Komponenten: [ `Search`](#search-features) und [ `Search Results`](#search-results).
 
@@ -27,7 +31,7 @@ Die Seite, die die `Search Results` -Komponente unterstützt sowohl die Suche al
 
 Die Seite, die die `Search`-Komponente bietet einen Ort zum Starten einer Suche mit Ergebnissen, die auf der `Search Results` Seite.
 
-Die Suchfunktion kann gemeinsam mit anderen Funktionen verwendet werden, sodass Site-Besucher und Mitglieder in der Lage sind, Inhalte einzusehen.
+Die Suchfunktion kann mit jeder anderen Funktion verwendet werden, die es Site-Besuchern und Mitgliedern ermöglicht, Inhalte anzuzeigen.
 
 ## Suchen {#search-features}
 
@@ -51,13 +55,14 @@ Unter dem **[!UICONTROL Sucheinstellungen]** angeben, wie die Pfade bei der Eing
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
-* **[!UICONTROL Suchpfade]** Durch Hinzufügen von Suchpfaden mithilfe der Schaltfläche „Element hinzufügen“ wird die Elementsuche eingeschränkt. Um beispielsweise die Suche auf ein bestimmtes Forum zu beschränken, wählen Sie eine Forumskomponente aus, die auf einer Seite platziert wird:
+* **[!UICONTROL Suchpfade]**
+Durch Hinzufügen von Suchpfaden mit der Schaltfläche Element hinzufügen ist die Inhaltssuche eingeschränkt. Um beispielsweise die Suche auf ein bestimmtes Forum zu beschränken, wählen Sie eine Forumskomponente aus, die auf einer Seite platziert wird:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Ergebnisseite]**
 Die Ergebnisse werden auf einer separaten Seite angezeigt, die mithilfe des Browsers angegeben wird, um eine Seite auszuwählen, die die 
-`Search Results` component.
+`Search Results` Komponente.
 
 ## Suchergebnisse {#search-results}
 
@@ -67,7 +72,7 @@ So fügen Sie eine `Search Results` -Komponente auf einer Seite im Autorenmodus 
 
 * `Communities / Search Results`
 
-und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite. Im Gegensatz zur Komponente „Suche“ wird hier keine zweite Seite benötigt, da die Suchergebnisse auf der gleichen Seite angezeigt werden können.
+und ziehen Sie sie an die gewünschte Stelle auf einer Seite. Im Gegensatz zur Suchkomponente ist keine zweite Seite erforderlich, da die Ergebnisse auf derselben Seite angezeigt werden.
 
 Wenn Sie die Suche an einer anderen Stelle auf der Website verwenden, wird diese eine Seite mit `Search Results` kann so konfiguriert werden, dass `Result Page` für alle oder alle Instanzen von `Search`.
 
@@ -77,7 +82,7 @@ Wenn die erforderliche clientseitige Bibliothek `cq.social.hbs.search`, enthalte
 
 ![chlimage_1-376](assets/chlimage_1-376.png)
 
-### Konfigurieren hinzugefügter Suchergebnisse {#configure-the-added-search-result}
+### Konfigurieren des hinzugefügten Suchergebnisses {#configure-the-added-search-result}
 
 Wählen Sie die platzierte `Search Results` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
@@ -90,7 +95,8 @@ Unter dem **[!UICONTROL Suchergebniseinstellungen]** -Registerkarte können Sie 
 * **[!UICONTROL Suchergebnisse pro Seite]**
 Definieren Sie die Anzahl der Themen/Beiträge, die pro Seite angezeigt werden. Der Standardwert ist 10.
 
-* **[!UICONTROL Suchpfade]** Durch Hinzufügen von Suchpfaden mithilfe der Schaltfläche „Element hinzufügen“ wird die Elementsuche eingeschränkt.
+* **[!UICONTROL Suchpfade]**
+Durch Hinzufügen von Suchpfaden mit der Schaltfläche Element hinzufügen ist die Inhaltssuche eingeschränkt.
 
 ## Zusätzliche Informationen {#additional-information}
 

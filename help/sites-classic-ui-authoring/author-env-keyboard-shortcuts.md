@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: f98302cf-159b-488b-aa62-8739ad32460c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 100%
+source-wordcount: '150'
+ht-degree: 75%
 
 ---
 
 # Tastaturbefehle für Konsolen{#keyboard-shortcuts-for-consoles}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. Davon beziehen sich einige auf die Verwendung von Konsolen und andere auf die [Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 
@@ -27,7 +31,7 @@ In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. 
 >
 >* Windows: **Strg** + **Klick** auf die erforderlichen Komponenten.
 >
->* Mac: **Befehl** + **Klick** auf die erforderlichen Komponenten.
+>* Mac: **Befehl**+**click** für erforderliche Komponenten.
 >
 
 
@@ -42,7 +46,7 @@ In Adobe Experience Manager stehen verschiedene Tastaturbefehle zur Verfügung. 
   </tr> 
   <tr> 
    <td>Konsole</td> 
-   <td><strong><code>Shift-Double-Click</code></strong><br /> (auf die gewünschte Seite)</td> 
+   <td><strong><code>Shift-Double-Click</code></strong><br /> (auf der erforderlichen Seite)</td> 
    <td>Seite in neuem Fenster öffnen.<br />
 <strong>Hinweis:</strong> Dieser Befehl ist verfügbar, wenn die <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">Benutzereigenschaften</a> auf „Einfaches Fenster“ gesetzt sind. Bei „Mehrere Fenster“ ist dies das Standardverhalten.</td> 
   </tr> 

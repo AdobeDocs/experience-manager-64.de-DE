@@ -1,7 +1,7 @@
 ---
-title: CRX2OAK-Migrations-Tool
+title: Migrationstool CRX2OAK
 seo-title: CRX2OAK Migration Tool
-description: Spezifische Versionshinweise zum 6.4 CRX2OAK-Migrations-Tool für Adobe Experience Manager
+description: Spezifische Versionshinweise zum Adobe Experience Manager 6.4 CRX2OAK-Migrationstool.
 seo-description: Release notes specific to the Adobe Experience Manager 6.4 CRX2OAK Migration tool.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 exl-id: 441c8ba0-f8b2-4c2c-b7be-cfdad9e1e498
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '252'
-ht-degree: 64%
+source-wordcount: '288'
+ht-degree: 2%
 
 ---
 
-# CRX2OAK-Migrations-Tool {#crx-oak-migration-tool}
+# Migrationstool CRX2OAK {#crx-oak-migration-tool}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Liste der Änderungen und Fehlerbehebungen {#list-of-changes-and-fixes}
 
@@ -39,31 +43,31 @@ ht-degree: 64%
 
 ### Version 1.6.8 (März 2017) {#version-march}
 
-* Oak wurde auf Version 1.6.1 aktualisiert
+* Oak-Version wurde auf 1.6.1 aktualisiert.
 * CQ-61847 Zusammenführen von crx2oak-quickstart-extension mit crx2oak (hinzugefügte Migrationsprofile)
-* CQ-97488 Es wurden AEM-Ausführungsmodi hinzugefügt und entfernt (indem sling.options.file neu geschrieben wurde)
+* CQ-97488 Weiterleiten und Ablegen AEM Ausführungsmodi (durch Neuschreiben der Datei sling.options.file)
 * GRANITE-12798/OAK-4260 Fähigkeit, eine Nebenstufe vom Oak-Segment zum Oak-Segment-Tar zu erstellen
 
 ### Version 1.4.2 (März 2016) {#version-march-1}
 
-* Oak-Version auf 1.4.1 aktualisieren
-* OAK-3846/GRANITE-10748 SNS-Knoten umbenennen, wenn sie gegen Knotentypbeschränkungen verstoßen
-* Migration OAK-3910/GRANITE-10730 Migrieren von Knoten, die ohne Versionsverlauf von `mix:versionable` übernommen wurden
-* OAK-4128/GRANITE-11757 `RepositorySidegrade` kopiert keine Stammknoteneigenschaften
+* Aktualisierung der Oak-Version auf 1.4.1
+* OAK-3846/GRANITE-10748 SNS-Knoten umbenennen, wenn sie Knotentyp-Einschränkungen verletzen
+* OAK-3910/GRANITE-10730 Migrieren des Knotens, der erbt von `mix:versionable` ohne Versionsverlauf
+* OAK-4128/GRANITE-11757 `RepositorySidegrade` kopiert keine Eigenschaften des Stammknotens
 
 ### Version 1.3.4 (Januar 2016) {#version-january}
 
-* Oak-Version auf 1.3.16 aktualisieren
+* Aktualisierung der Oak-Version auf Version 1.3.16
 * OAK-3844/GRANITE-10730 Bessere Unterstützung für versionierbare Knoten ohne Versionsverläufe
-* OAK-3846 SNS-Knoten umbenennen, wenn sie gegen Knotentypbeschränkungen verstoßen
+* OAK-3846 SNS-Knoten umbenennen, wenn sie Knotentyp-Einschränkungen verletzen
 
 ### Version 1.3.2 (Dezember 2015) {#version-december}
 
-* Oak-Version auf 1.3.12 aktualisieren
+* Upgrade der Oak-Version auf 1.3.12
 * Datenspeicherverzeichnis sollte nach der Migration nicht verschoben werden (GRANITE-10447)
-* crx2oak-Schnellstarterweiterung mit crx2oak zusammenführen (CQ -61847)
+* Zusammenführen von crx2oak-quickstart-extension mit crx2oak (CQ-61847)
 * crx2oak schlägt bei doppelten Werten im Repository fehl (CQ-61906)
-* Langer AEM-Start nach der Migration von CQ 5.x (GRANITE-10309)
+* Lange AEM nach der Migration von CQ 5.x (GRANITE-10309)
 * Unterstützung für mehrere LDAP-Server in crx2oak (GRANITE-9917)
-* Überprüfung der maximalen Knotennamenlänge erzwingen (OAK-3111)
-* S3DataSource als Migrationsquelle unterstützen (OAK-3685)
+* Erzwingen der Überprüfung auf maximale Knotennamenlänge (OAK-3111)
+* Unterstützung von S3DataSource als Migrationsquelle (OAK-3685)

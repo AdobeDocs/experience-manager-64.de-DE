@@ -1,7 +1,7 @@
 ---
-title: Erstellen von Websites mit vollem Funktionsumfang (JSP)
+title: Erstellen einer vollständigen Website (JSP)
 seo-title: Create a Fully-Featured Website (JSP)
-description: In diesem Tutorial erfahren Sie, wie Sie mit AEM Websites mit vollem Funktionsumfang erstellen.
+description: Mit diesem Tutorial können Sie eine Website mit vollem Funktionsumfang mit AEM erstellen.
 seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: bb8d4efd-7631-4cc5-8084-b03c6aabdef3
 contentOwner: Guillaume Carlino
@@ -10,46 +10,50 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 exl-id: 6d408fd6-9241-4069-9b04-806e30e03ff2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4899'
-ht-degree: 64%
+source-wordcount: '4935'
+ht-degree: 40%
 
 ---
 
-# Erstellen von Websites mit vollem Funktionsumfang (JSP){#create-a-fully-featured-website-jsp}
+# Erstellen einer vollständigen Website (JSP){#create-a-fully-featured-website-jsp}
 
 >[!CAUTION]
 >
->In diesem Artikel wird erläutert, wie Sie über die klassische Benutzeroberfläche mithilfe von JSP Websites erstellen. Adobe empfiehlt, die neuesten AEM-Technologien für Ihre Websites zu nutzen, wie ausführlich im Artikel [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md) beschrieben.
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
-In diesem Tutorial erfahren Sie, wie Sie mit Adobe Experience Manager (AEM) Websites mit vollem Funktionsumfang erstellen. Eine so erstellte Website basiert auf einer generischen Website und ist vor allem auf Webentwickler ausgerichtet. Die gesamte Entwicklung erfolgt in einer Autorenumgebung.
+>[!CAUTION]
+>
+>In diesem Artikel wird beschrieben, wie Sie eine Website mit JSP erstellen und auf der klassischen Benutzeroberfläche basieren. Adobe empfiehlt, die neuesten AEM-Technologien für Ihre Websites zu nutzen, wie ausführlich im Artikel [Erste Schritte bei der Entwicklung von AEM Sites](/help/sites-developing/getting-started.md) beschrieben.
 
-In diesem Tutorial wird erläutert, wie Sie die folgenden Aktionen durchführen:
+In diesem Tutorial können Sie eine Website mit vollem Funktionsumfang mit Adobe Experience Manager (AEM) erstellen. Die Website basiert auf einer generischen Website und ist in erster Linie auf Webentwickler ausgerichtet. Die gesamte Entwicklung erfolgt in einer Autorenumgebung.
 
-1. Installieren von AEM
+In diesem Tutorial wird Folgendes beschrieben:
+
+1. Installieren Sie AEM.
 1. Zugreifen auf CRXDE Lite (die Entwicklungsumgebung)
 1. Einrichten der Projektstruktur in CRXDE Lite
-1. Erstellen der Vorlagen, Komponenten und Skripte, die als Grundlage für die Erstellung von Inhaltsseiten dienen
-1. Erstellen der Stammseite für die Website sowie der Inhaltsseiten
+1. Erstellen Sie die Vorlage, die Komponente und die Skripte, die als Grundlage für die Erstellung von Inhaltsseiten verwendet werden.
+1. Erstellen Sie die Stammseite für Ihre Website und dann Inhaltsseiten.
 1. Erstellen der folgenden Komponenten zur Verwendung auf den Seiten
 
    * **[!UICONTROL topnav (Navigation oben)]**
    * **[!UICONTROL listchildren (Untergeordnete Elemente auflisten)]**
-   * **[!UICONTROL -Logo]**
+   * **[!UICONTROL Logo]**
    * **[!UICONTROL Bild]**
    * **[!UICONTROL textimage (Textbild)]**
    * **[!UICONTROL Suchen]**
 
-1. Einbinden unterschiedlicher Foundation-Komponenten
+1. Fügen Sie verschiedene Foundation-Komponenten ein.
 
 Nachdem Sie alle Schritte ausgeführt haben, sehen Ihre Seiten wie folgt aus:
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
-**Herunterladen der fertiggestellten Website**
+**Endergebnis herunterladen**
 
-Wenn Sie es vorziehen, dem Tutorial zu folgen, anstatt die Übungen durchzuführen, laden Sie die Datei website-1.0.zip herunter. Diese Datei ist ein AEM-Inhaltspaket, das die Ergebnisse dieses Tutorials enthält. Installieren Sie das Paket mithilfe von [Package Manager](/help/sites-administering/package-manager.md) auf Ihrer Autoreninstanz.
+Laden Sie website-1.0.zip herunter, um dem Tutorial anstatt der Übungen zu folgen. Diese Datei ist ein AEM Inhaltspaket, das die Ergebnisse dieses Tutorials enthält. Verwendung [Package Manager](/help/sites-administering/package-manager.md) , um das Paket in Ihrer Autoreninstanz zu installieren.
 
 >[!NOTE]
 >Durch die Installation dieses Pakets werden alle Ressourcen in Ihrer Authoring-Instanz überschrieben, die Sie mithilfe dieses Tutorials erstellt haben.
@@ -60,7 +64,7 @@ Website-Inhaltspaket
 
 ## Installieren von Adobe Experience Manager {#installing-adobe-experience-manager}
 
-Um eine AEM-Instanz für die Entwicklung Ihrer Website zu installieren, befolgen Sie die Anweisungen zum Einrichten einer [Bereitstellungsumgebung mit Autoren- und Veröffentlichungsinstanzen](/help/sites-deploying/deploy.md#author-and-publish-installs)oder führen Sie eine [allgemeine Installation](/help/sites-deploying/deploy.md#default-local-install). Die generische Installation umfasst das Herunterladen der AEM Schnellstart-JAR-Datei, das Platzieren der Datei license.properties im selben Ordner wie die JAR-Datei und das Doppelklicken auf die JAR-Datei.
+Um eine AEM-Instanz für die Entwicklung Ihrer Website zu installieren, folgen Sie den Anweisungen zum Einrichten einer [Implementierungsumgebung mit Erstellungs- und Veröffentlichungsinstanzen](/help/sites-deploying/deploy.md#author-and-publish-installs) oder nehmen Sie eine [allgemeine Installation](/help/sites-deploying/deploy.md#default-local-install) vor. Im Zuge einer allgemeinen Installation laden Sie die Quickstart-JAR-Datei von AEM herunter und speichern die Datei license.properties im selben Verzeichnis wie die JAR-Datei. Anschließend doppelklicken Sie auf die JAR-Datei.
 
 Nachdem Sie AEM installiert haben, greifen Sie auf die CRXDE Lite-Entwicklungsumgebung zu, indem Sie auf der Begrüßungsseite auf den Link für CRXDE Lite klicken:
 
@@ -70,13 +74,13 @@ Nachdem Sie AEM installiert haben, greifen Sie auf die CRXDE Lite-Entwicklungsu
 >
 >Die URL der CRXDE Lite für eine AEM Authoring-Instanz, die lokal mit dem Standardport installiert wird, lautet [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/).
 
-## Einrichten von Projektstrukturen in CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
+## Einrichten der Projektstruktur in CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
 
-Verwenden Sie CRXDE Lite, um die mywebsite-Anwendungsstruktur im Repository zu erstellen:
+Verwenden Sie die CRXDE Lite, um die Anwendungsstruktur von mywebsite im Repository zu erstellen:
 
-1. Klicken Sie im Baum auf der linken Seite der CRXDE Lite mit der rechten Maustaste auf die **`/apps`** Ordner und klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**. Geben Sie im Dialogfeld **Ordner erstellen** als Ordnernamen `mywebsite` ein und klicken Sie auf **OK**.
-1. Klicken Sie mit der rechten Maustaste auf die `/apps/mywebsite` Ordner und klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** als Ordnernamen `components` ein und klicken Sie auf **[!UICONTROL OK]**.
-1. Klicken Sie mit der rechten Maustaste auf die `/apps/mywebsite` Ordner und klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** als Ordnernamen `templates` ein und klicken Sie auf **[!UICONTROL OK]**.
+1. Klicken Sie in der Baumstruktur links in CRXDE Lite mit der rechten Maustaste auf den Ordner **`/apps`** und klicken Sie dann auf **[!UICONTROL Erstellen > Ordner erstellen]**. Geben Sie im Dialogfeld **Ordner erstellen** als Ordnernamen `mywebsite` ein und klicken Sie auf **OK**.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/mywebsite` und klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** als Ordnernamen `components` ein und klicken Sie auf **[!UICONTROL OK]**.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/mywebsite` und klicken Sie auf **[!UICONTROL Erstellen > Ordner erstellen]**. Geben Sie im Dialogfeld **[!UICONTROL Ordner erstellen]** als Ordnernamen `templates` ein und klicken Sie auf **[!UICONTROL OK]**.
 
    Die Struktur im Baum sollte nun in etwa so aussehen:
 
@@ -84,9 +88,9 @@ Verwenden Sie CRXDE Lite, um die mywebsite-Anwendungsstruktur im Repository zu e
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-## Einrichten von Designs {#setting-up-the-design}
+## Einrichten des Designs {#setting-up-the-design}
 
-In diesem Abschnitt erstellen Sie das Design für Ihre Anwendung mithilfe des Designer-Tools. Das Design stellt CSS- und Bildressourcen für Ihre Website bereit.
+In diesem Abschnitt erstellen Sie das Design für Ihre Anwendung mit dem Designer-Tool. Das Design stellt CSS- und Bildressourcen für Ihre Website bereit.
 
 >[!NOTE]
 >
@@ -100,7 +104,7 @@ Beispieldatei static.css und Bilder
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. In the folder tree, select the **[!UICONTROL Designs]** folder and then click **[!UICONTROL New > New Page]**. Type `mywebsite` as the title and click **[!UICONTROL Create]**.
+1. Wählen Sie in der Ordnerbaumstruktur den Ordner **[!UICONTROL Designs]** aus und klicken Sie dann auf **[!UICONTROL Neu > Neue Seite]**. Geben Sie `mywebsite` als Titel ein und klicken Sie auf **[!UICONTROL Erstellen]**.
 
 1. Wenn das Element „mywebsite“ nicht in der Tabelle aufgeführt wird, aktualisieren Sie die Baumansicht bzw. die Tabelle.
 
@@ -110,73 +114,73 @@ Beispieldatei static.css und Bilder
 
 ## Erstellen der contentpage-Vorlage, -Komponente und des Skripts {#creating-the-contentpage-template-component-and-script}
 
-In diesem Abschnitt wird die Erstellung der folgenden Elemente beschrieben:
+In diesem Abschnitt erstellen Sie Folgendes:
 
-* Die contentpage-Vorlage, die zur Erstellung von Inhaltsseiten in der Beispielwebsite verwendet wird
-* Die contentpage-Komponente, die zum Rendern von Inhaltsseiten verwendet werden soll
-* Das contentpage-Skript
+* Die contentpage-Vorlage, die zum Erstellen von Inhaltsseiten in der Beispiel-Website verwendet wird
+* Die contentpage-Komponente, die zum Rendern von Inhaltsseiten verwendet wird
+* contentpage-Skript
 
-### Erstellen von contentpage-Vorlagen {#creating-the-contentpage-template}
+### Erstellen der contentpage-Vorlage {#creating-the-contentpage-template}
 
-Erstellen Sie eine Vorlage, die als Basis für die Webseiten Ihrer Website dient.
+Erstellen Sie eine Vorlage, die als Grundlage für die Webseiten Ihrer Site verwendet werden soll.
 
-Eine Vorlage definiert den Standardinhalt einer neuen Seite. Bei komplexen Websites werden ggf. auch mehrere Vorlagen für die Erstellung der verschiedenen Seitentypen der Website verwendet. Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
+Eine Vorlage definiert den Standardinhalt einer neuen Seite. Komplexe Websites können mehrere Vorlagen verwenden, um die verschiedenen Seitentypen auf der Site zu erstellen. In dieser Übung basieren alle Seiten auf einer einfachen Vorlage.
 
-1. In the folder tree of CRXDE Lite, right-click `/apps/mywebsite/templates` and click **[!UICONTROL Create > Create Template]**.
+1. Klicken Sie in der Ordnerbaumstruktur von CRXDE Lite mit der rechten Maustaste auf `/apps/mywebsite/templates`. Klicken Sie dann auf **[!UICONTROL Erstellen > Vorlage erstellen]**.
 
-1. Geben Sie im Dialogfeld „Vorlage erstellen“ die folgenden Werte ein und klicken Sie anschließend auf **[!UICONTROL Weiter]**:
+1. Geben Sie im Dialogfeld Vorlage erstellen die folgenden Werte ein und klicken Sie auf **[!UICONTROL Nächste]**:
 
-   * **[!UICONTROL Bezeichnung]**: contentpage
+   * **[!UICONTROL Titel]**: contentpage
    * **[!UICONTROL Titel]**: My Website Content Page Template
-   * **[!UICONTROL Beschreibung]**: This is my Website Content Page Template
+   * **[!UICONTROL Beschreibung]**: Dies ist meine Website-Inhaltsseitenvorlage
    * **[!UICONTROL Ressourcentyp]**: mywebsite/components/contentpage
 
    Verwenden Sie den Standardwert für die Eigenschaft „Rangfolge“.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-   Der Ressourcentyp identifiziert die Komponente, die die Seite rendert. In diesem Fall werden alle Seiten, die mit der contentpage-Vorlage erstellt wurden, von der `mywebsite/components/contentpage` -Komponente.
+   Der Ressourcentyp identifiziert die Komponente, die die Seite rendert. In diesem Fall werden alle Seiten, die mithilfe der contentpage-Vorlage erstellt wurden, von der Komponente `mywebsite/components/contentpage` gerendert.
 
-1. Um die Pfade der Seiten anzugeben, die diese Vorlage verwenden können, klicken Sie auf die Schaltfläche mit dem Pluszeichen und geben Sie `/content(/.*)?` in das angezeigte Textfeld ein. Klicken Sie dann auf **[!UICONTROL Weiter]**.
+1. Um die Pfade der Seiten anzugeben, die diese Vorlage verwenden können, klicken Sie auf die Schaltfläche mit dem Pluszeichen und geben Sie in das daraufhin angezeigte Textfeld `/content(/.*)?` ein. Klicken Sie dann auf **[!UICONTROL Weiter]**.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
-   Der Wert der zulässigen Pfadeigenschaft ist ein *regulären Ausdruck.* Seiten mit einem Pfad, der dem Ausdruck entspricht, können die Vorlage verwenden. In diesem Fall stimmt der reguläre Ausdruck mit dem Pfad der `/content` und allen Unterseiten.
+   Beim Wert der Eigenschaft „Zugelassene Pfade“ handelt es sich um einen *regulären Ausdruck.* Seiten mit einem Pfad, der dem Ausdruck entspricht, können die Vorlage verwenden. In diesem Fall stimmt der reguläre Ausdruck mit dem Pfad der `/content` und allen Unterseiten.
 
    Wenn ein Autor eine Seite unten erstellt `/content`, die **[!UICONTROL contentpage]** in einer Liste der zu verwendenden Vorlagen angezeigt.
 
-1. Klicken Sie in den Bedienfeldern **[!UICONTROL Zugelassene übergeordnete Elemente]** und **[!UICONTROL Zugelassene untergeordnete Elemente]** auf **[!UICONTROL Weiter]** und dann auf **[!UICONTROL OK]**. Klicken Sie in CRXDE Lite auf **[!UICONTROL Alle speichern]**.
+1. Klicken **[!UICONTROL Nächste]** im **[!UICONTROL Zugelassene übergeordnete Elemente]** und **[!UICONTROL Zugelassene Kinder]** Bedienfelder und klicken **[!UICONTROL OK]**. Klicken Sie in CRXDE Lite auf **[!UICONTROL Alle speichern]**.
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
-#### Erstellen von contentpage-Komponenten {#creating-the-contentpage-component}
+#### Erstellen der contentpage-Komponente {#creating-the-contentpage-component}
 
-Erstellen Sie die *Komponente*, die den Inhalt definiert und die Seiten rendert, die die contentpage-Vorlage verwenden. Der Speicherort der Komponente muss dem Wert der Eigenschaft „Ressourcentyp“ der contentpage-Vorlage entsprechen.
+Erstellen Sie die *component* definiert den Inhalt und rendert die Seiten, die die contentpage-Vorlage verwenden. Der Speicherort der Komponente muss mit dem Wert der Eigenschaft &quot;Ressourcentyp&quot;der contentpage-Vorlage übereinstimmen.
 
-1. Klicken Sie in der CRXDE Lite mit der rechten Maustaste `/apps/mywebsite/components` und klicken Sie auf **[!UICONTROL Erstellen > Komponente]**.
+1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf `/apps/mywebsite/components` und klicken Sie auf **[!UICONTROL Erstellen > Komponente]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Komponente erstellen]** die folgenden Eigenschaftswerte ein:
 
-   * **[!UICONTROL Bezeichnung]**: contentpage
+   * **[!UICONTROL Titel]**: contentpage
    * **[!UICONTROL Titel]**: My Website Content Page Component
-   * **[!UICONTROL Beschreibung]**: This is My Website Content Page Component
+   * **[!UICONTROL Beschreibung]**: Dies ist meine Website-Inhaltsseitenkomponente
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
-   Der Speicherort der neuen Komponente lautet `/apps/mywebsite/components/contentpage`. Dieser Pfad entspricht dem Ressourcentyp der contentpage-Vorlage (abzüglich des ersten `/apps/` Teil des Pfads).
+   Der Speicherort der neuen Komponente ist `/apps/mywebsite/components/contentpage`. Dieser Pfad entspricht dem Ressourcentyp der contentpage-Vorlage (ohne den ersten Teil `/apps/` des Pfads).
 
    Diese Entsprechung verbindet die Vorlage mit der Komponente und ist entscheidend für die ordnungsgemäße Funktionsweise der Website.
 
-1. Click **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel of the dialog appears, and then click **[!UICONTROL OK]**. Klicken Sie in CRXDE Lite auf **[!UICONTROL Alle speichern]**.
+1. Klicken Sie auf **[!UICONTROL Weiter]******, bis das Bedienfeld „Zugelassene untergeordnete Elemente“ angezeigt wird. Klicken Sie dann auf **[!UICONTROL OK]**. Klicken Sie in CRXDE Lite auf **[!UICONTROL Alle speichern]**.
 
    Die Struktur sieht nun wie folgt aus:
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
-#### Entwickeln von Skripten für contentpage-Komponenten {#developing-the-contentpage-component-script}
+#### Entwickeln des Skripts für contentpage-Komponenten {#developing-the-contentpage-component-script}
 
 Fügen Sie dem Skript contentpage.jsp Code hinzu, um den Seiteninhalt zu definieren.
 
-1. Öffnen Sie in CRXDE Lite die -Datei. `contentpage.jsp` in `/apps/mywebsite/components/contentpage`. Die Datei enthält standardmäßig den folgenden Code:
+1. Öffnen Sie in CRXDE Lite die Datei `contentpage.jsp` unter `/apps/mywebsite/components/contentpage`. Die Datei enthält standardmäßig den folgenden Code:
 
    ```java
    <%--
@@ -215,54 +219,54 @@ Fügen Sie dem Skript contentpage.jsp Code hinzu, um den Seiteninhalt zu definie
 
 ### Erstellen von Website-Seiten und Inhaltsseiten {#creating-your-website-page-and-content-pages}
 
-In this section, you create the following pages which all use the contentpage template: My Website, English, Products, Services, and Customers.
+In diesem Abschnitt wird erläutert, wie Sie die folgenden Seiten erstellen, die alle die contentpage-Vorlage verwenden: „Meine Website“, „Englisch“, „Produkte“, „Services“ und „Kunden“.
 
-1. Klicken Sie auf der AEM-Begrüßungsseite ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)) auf „Websites“.
+1. Auf der AEM Begrüßungsseite ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), klicken Sie auf Websites.
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
-1. Wählen Sie in der Ordnerstruktur die **[!UICONTROL Websites]** Ordner und klicken Sie dann auf **[!UICONTROL Neu > Neue Seite]**.
+1. Wählen Sie in der Ordnerbaumstruktur den Ordner **[!UICONTROL Websites]** aus und klicken Sie dann auf **[!UICONTROL Neu > Neue Seite]**.
 1. Geben Sie im Fenster **[!UICONTROL Seite erstellen]** Folgendes ein:
 
    * **[!UICONTROL Titel]**: `My Website`
    * **[!UICONTROL Name]**: `mywebsite`
-   * Wählen Sie **[!UICONTROL My Website Content Page Template]** aus.
+   * Wählen Sie die **[!UICONTROL My Website Content Page Template]**
 
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]**. In the folder tree, select the `/Websites/My Website` page and click **[!UICONTROL New > New Page]**.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. Wählen Sie in der Ordnerstruktur die `/Websites/My Website` Seite und klicken Sie auf **[!UICONTROL Neu > Neue Seite]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Seite erstellen]** die folgenden Eigenschaftswerte ein und klicken Sie dann auf Erstellen:
 
    * **[!UICONTROL Titel]**: englisch
    * **[!UICONTROL Name]**: en
-   * Wählen Sie **[!UICONTROL My Website Content Page Template]** aus.
+   * Wählen Sie die **[!UICONTROL My Website Content Page Template]**
 
 1. Wählen Sie in der Ordnerstruktur die `/Websites/My Website/English` Seite und klicken Sie auf **[!UICONTROL Neu > Neue Seite]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Seite erstellen]** die folgenden Eigenschaftswerte ein und klicken Sie dann auf **[!UICONTROL Erstellen]**:
 
    * **[!UICONTROL Titel]**: Produkte
-   * Wählen Sie **[!UICONTROL My Website Content Page Template]** aus.
+   * Wählen Sie die **[!UICONTROL My Website Content Page Template]**
 
 1. Wählen Sie in der Ordnerstruktur die `/Websites/My Website/English` Seite und klicken Sie auf **[!UICONTROL Neu > Neue Seite]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Seite erstellen]** die folgenden Eigenschaftswerte ein und klicken Sie dann auf **[!UICONTROL Erstellen]**:
 
    * **Titel**: Dienste
-   * Wählen Sie **[!UICONTROL My Website Content Page Template]** aus.
+   * Wählen Sie die **[!UICONTROL My Website Content Page Template]**
 
-1. In the folder tree, select the `/Websites/My Website/English` page and click **[!UICONTROL New > New Page]**.
+1. Wählen Sie in der Ordnerstruktur die `/Websites/My Website/English` Seite und klicken Sie auf **[!UICONTROL Neu > Neue Seite]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Seite erstellen]** die folgenden Eigenschaftswerte ein und klicken Sie dann auf **[!UICONTROL Erstellen]**:
 
-   * **Title**: Customers
-   * Wählen Sie **[!UICONTROL My Website Content Page Template]** aus.
+   * **Titel**: Kunden
+   * Wählen Sie die **[!UICONTROL My Website Content Page Template]**
 
    Ihre Struktur sieht nun wie folgt aus:
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Um Ihre Seiten mit dem Entwurf der Website zu verknüpfen, wählen Sie in CRXDE Lite die `/content/mywebsite/en/jcr:content` Knoten. Im **[!UICONTROL Eigenschaften]** -Registerkarte die folgenden Werte für eine neue Eigenschaft eingeben und auf Hinzufügen klicken:
+1. Um Ihre Seiten mit dem mywebsite-Design zu verknüpfen, wählen Sie in CRXDE Lite den Knoten `/content/mywebsite/en/jcr:content` aus. Im **[!UICONTROL Eigenschaften]** -Registerkarte die folgenden Werte für eine neue Eigenschaft eingeben und auf Hinzufügen klicken:
 
    * **[!UICONTROL Name]**: cq:designPath
-   * **[!UICONTROL Typ]**: String
+   * **[!UICONTROL Typ]**: Zeichenfolge
    * **[!UICONTROL Wert]**: /etc/designs/mywebsite
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
@@ -271,32 +275,32 @@ In this section, you create the following pages which all use the contentpage te
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-### Erweitern des contentpage-Skripts {#enhancing-the-contentpage-script}
+### Verbessern des contentpage-Skripts {#enhancing-the-contentpage-script}
 
-In diesem Abschnitt wird beschrieben, wie das contentpage-Skript mit Skripten für AEM-Foundation-Komponenten sowie mit eigenen Skripten erweitert werden kann.
+In diesem Abschnitt wird beschrieben, wie Sie das contentpage-Skript mithilfe der AEM Foundation-Komponentenskripte verbessern und eigene Skripte schreiben.
 
-Die Seite **[!UICONTROL Products]** sieht nun wie folgt aus:
+Die Seite **[!UICONTROL Produkte]** sieht nun wie folgt aus:
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-#### Verwenden von Skripten für Foundation-Seitenkomponenten {#using-the-foundation-page-scripts}
+#### Verwenden von Foundation-Seitenskripten {#using-the-foundation-page-scripts}
 
-Im Rahmen dieser Übung konfigurieren Sie Ihre pagecontent-Komponente so, dass ihr Supertyp die AEM-Seitenkomponente ist. Da Komponenten die Funktionen ihres Supertyps übernehmen, übernimmt Ihr Seiteninhalt die Skripte und Eigenschaften der Seitenkomponente.
+In dieser Übung konfigurieren Sie Ihre Seitenkomponente so, dass ihr Supertyp die AEM Seitenkomponente ist. Da Komponenten die Eigenschaften ihres Supertyps erben, erbt Ihre pagecontent-Komponente die Skripte und Eigenschaften der Seitenkomponente.
 
 Beispielsweise können Sie im JSP-Code der Komponente so auf die Skripte verweisen, die den Supertyp der Komponente bereitstellen, als wären sie in Ihrer Komponente enthalten.
 
-1. Fügen Sie in CRXDE Lite eine Eigenschaft zum `/apps/mywebsite/components/contentpage` Knoten.
+1. Fügen Sie in CRXDE Lite eine Eigenschaft zum Knoten `/apps/mywebsite/components/contentpage` hinzu.
 
-   1. Wählen Sie die `/apps/mywebsite/components/contentpage` Knoten.
-   1. Geben Sie unten auf der Registerkarte Eigenschaften die folgenden Eigenschaftswerte ein und klicken Sie auf Hinzufügen:
+   1. Wählen Sie den Knoten `/apps/mywebsite/components/contentpage` aus.
+   1. Geben Sie unten auf der Registerkarte „Eigenschaften“ die folgenden Eigenschaftswerte ein und klicken Sie dann auf „Hinzufügen“:
 
       * **[!UICONTROL Name]**: sling:resourceSuperType
-      * **[!UICONTROL Typ]**: String
+      * **[!UICONTROL Typ]**: Zeichenfolge
       * **[!UICONTROL Wert]**: foundation/components/page
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 
-1. Öffnen Sie die `contentpage.jsp` Datei unter `/apps/mywebsite/components/contentpage` und ersetzen Sie den vorhandenen Code durch den folgenden Code:
+1. Öffnen Sie die Datei `contentpage.jsp` unter `/apps/mywebsite/components/contentpage` und ersetzen Sie den vorhandenen Code durch den folgenden Code:
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -309,11 +313,11 @@ Beispielsweise können Sie im JSP-Code der Komponente so auf die Skripte verweis
    ```
 
 1. Speichern Sie Ihre Änderungen.
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Diese sieht nun wie folgt aus:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Sie sieht wie folgt aus:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
-   Öffnen Sie die Seitenquelle, um die JavaScript- und HTML-Elemente anzuzeigen, die die Skripte head.jsp und body.jsp generiert haben. Das folgende Skript-Snippet öffnet den Sidekick, wenn Sie die Seite öffnen:
+   Öffnen Sie die Seitenquelle, um die JavaScript- und HTML-Elemente anzuzeigen, die von den Skripten head.jsp und body.jsp generiert wurden. Das folgende Skriptfragment öffnet den Sidekick, wenn Sie die Seite öffnen:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -324,11 +328,11 @@ Beispielsweise können Sie im JSP-Code der Komponente so auf die Skripte verweis
 
 #### Verwenden eigener Skripte {#using-your-own-scripts}
 
-In diesem Abschnitt wird beschrieben, wie Sie mehrere Skripte erstellen, die jeweils einen Teil des Seitentextes generieren. Erstellen Sie anschließend in der pagecontent-Komponente die Datei body.jsp, um die Datei body.jsp der AEM-Seitenkomponente zu überschreiben. Binden Sie in Ihre Datei body.jsp Ihre Skripte ein, die die verschiedenen Teile des Seitentextes generieren.
+In diesem Abschnitt erstellen Sie mehrere Skripte, die jeweils einen Teil des Seitentextes generieren. Anschließend erstellen Sie die Datei body.jsp in der Komponente pagecontent , um die Datei body.jsp der AEM Seitenkomponente zu überschreiben. In der Datei body.jsp fügen Sie Ihre Skripte ein, die die verschiedenen Teile des Seitentextes generieren.
 
 **Tipp**: Wenn eine Komponente eine Datei enthält, die denselben Namen und denselben relativen Speicherort wie eine Datei im Supertyp der Komponente aufweist, wird dies als *Überlagerung* bezeichnet.
 
-1. Erstellen Sie in CRXDE Lite die Datei `left.jsp` under `/apps/mywebsite/components/contentpage`:
+1. Erstellen Sie in CRXDE Lite die Datei `left.jsp` unter `/apps/mywebsite/components/contentpage`:
 
    1. Rechtsklick auf den Knoten `/apps/mywebsite/components/contentpage`, wählen Sie **[!UICONTROL Erstellen]** then **[!UICONTROL Datei erstellen]**.
    1. Geben Sie im Fenster `left.jsp` als &quot;Name&quot;und klicken Sie auf **[!UICONTROL OK]**.
@@ -345,12 +349,12 @@ In diesem Abschnitt wird beschrieben, wie Sie mehrere Skripte erstellen, die jew
    ```
 
 1. Speichern Sie die Änderungen.
-1. In CRXDE Lite, create the file `center.jsp` under `/apps/mywebsite/components/contentpage`:
+1. Erstellen Sie in CRXDE Lite die Datei `center.jsp` unter `/apps/mywebsite/components/contentpage`:
 
-   1. Rechtsklick auf den Knoten `/apps/mywebsite/components/contentpage`auswählen **[!UICONTROL Erstellen]**, dann **[!UICONTROL Datei erstellen]**.
+   1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/mywebsite/components/contentpage`, wählen Sie dann die Option **[!UICONTROL Erstellen]** und anschließend die Option **[!UICONTROL Datei erstellen]** aus.
    1. Geben Sie im Dialogfeld `center.jsp` as **[!UICONTROL Name]** und klicken Sie auf **[!UICONTROL OK]**.
 
-1. Datei bearbeiten `center.jsp` , um den vorhandenen Inhalt zu entfernen und ihn durch den folgenden Code zu ersetzen:
+1. Bearbeiten Sie die Datei `center.jsp`, um den vorhandenen Inhalt zu entfernen und durch den folgenden Code zu ersetzen:
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -362,10 +366,10 @@ In diesem Abschnitt wird beschrieben, wie Sie mehrere Skripte erstellen, die jew
    ```
 
 1. Speichern Sie die Änderungen.
-1. Erstellen Sie in CRXDE Lite die Datei `right.jsp` under `/apps/mywebsite/components/contentpage`:
+1. Erstellen Sie in CRXDE Lite die Datei `right.jsp` unter `/apps/mywebsite/components/contentpage`:
 
-   1. Rechtsklick auf den Knoten `/apps/mywebsite/components/contentpage`auswählen **[!UICONTROL Erstellen]**, dann **[!UICONTROL Datei erstellen]**.
-   1. Geben Sie im Dialogfeld in das Feld `right.jsp`Name den Dateinamen **** ein und klicken Sie auf **[!UICONTROL OK]**.
+   1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/mywebsite/components/contentpage`, wählen Sie dann die Option **[!UICONTROL Erstellen]** und anschließend die Option **[!UICONTROL Datei erstellen]** aus.
+   1. Geben Sie im Dialogfeld in das Feld `right.jsp`Name den **[!UICONTROL Dateinamen]** ein und klicken Sie auf **[!UICONTROL OK]**.
 
 1. Bearbeiten Sie die Datei `right.jsp`, um den vorhandenen Inhalt zu entfernen und durch den folgenden Code zu ersetzen:
 
@@ -377,7 +381,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mehrere Skripte erstellen, die jew
    ```
 
 1. Speichern Sie die Änderungen.
-1. Erstellen Sie in CRXDE Lite die Datei `body.jsp` under `/apps/mywebsite/components/contentpage`:
+1. Erstellen Sie in CRXDE Lite die Datei `body.jsp` unter `/apps/mywebsite/components/contentpage`:
 1. Bearbeiten Sie die Datei `body.jsp`, um den vorhandenen Inhalt zu entfernen und durch den folgenden Code zu ersetzen:
 
    ```java
@@ -398,37 +402,37 @@ In diesem Abschnitt wird beschrieben, wie Sie mehrere Skripte erstellen, die jew
    ```
 
 1. Speichern Sie die Änderungen.
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Diese sieht nun wie folgt aus:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Sie sieht wie folgt aus:
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-### Erstellen von topnav-Komponenten {#creating-the-top-navigation-component}
+### Erstellen der Komponente für die obere Navigationsleiste {#creating-the-top-navigation-component}
 
-In diesem Abschnitt wird beschrieben, wie Sie eine Komponente erstellen, die Links zu allen Seiten der obersten Ebene der Website anzeigt, um die Navigation zu vereinfachen. Dieser Komponenteninhalt erscheint oben auf allen Seiten, die mit der contentpage-Vorlage erstellt wurden.
+In diesem Abschnitt erstellen Sie eine Komponente, die Links zu allen Seiten der obersten Ebene der Website anzeigt, um die Navigation zu vereinfachen. Dieser Komponenteninhalt wird oben auf allen Seiten angezeigt, die mit der contentpage-Vorlage erstellt wurden.
 
-In der ersten Version der topnav-Komponente handelt es sich bei den Navigationselementen ausschließlich um Textlinks. In der zweiten Version implementieren Sie „topnav“ mit Bildnavigationslinks.
+In der ersten Version der oberen Navigationskomponente (topnav) sind die Navigationselemente nur Textlinks. In der zweiten Version implementieren Sie topnav mit Links zur Bildnavigation.
 
-Die Navigation oben sieht nun wie folgt aus:
+Die Navigation oben sieht wie folgt aus:
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Erstellen von topnav-Komponenten {#creating-the-top-navigation-component-1}
 
-1. Klicken Sie in der CRXDE Lite mit der rechten Maustaste `/apps/mywebsite/components`auswählen **[!UICONTROL Erstellen]**, dann **[!UICONTROL Komponente erstellen]**.
+1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf `/apps/mywebsite/components`, wählen Sie dann die Option **[!UICONTROL Erstellen]** und anschließend die Option **[!UICONTROL Komponente erstellen]** aus.
 1. Geben Sie im Fenster **[!UICONTROL Komponente erstellen]** Folgendes ein:
 
-   * **[!UICONTROL Titel]**: `topnav`
+   * **[!UICONTROL Bezeichnung]**: `topnav`
    * **[!UICONTROL Titel]**: `My Top Navigation Component`
    * **[!UICONTROL Beschreibung]**: `This is My Top Navigation Component`
 
-1. Klicken Sie auf **[!UICONTROL Weiter]**, bis Sie das letzte Fenster erreicht haben. Klicken Sie dort auf **[!UICONTROL OK]**. Speichern Sie Ihre Änderungen.
+1. Klicken **[!UICONTROL Nächste]** bis Sie zum letzten Fenster kommen, in dem Sie auf **[!UICONTROL OK]**. Speichern Sie Ihre Änderungen.
 
-#### Erstellen von topnav-Skripten mit Textlinks {#creating-the-top-navigation-script-with-textual-links}
+#### Erstellen des obersten Navigationsskripts mit Textlinks {#creating-the-top-navigation-script-with-textual-links}
 
-Fügen Sie das Rendering-Skript zu „topnav“ hinzu, um Textlinks zu untergeordneten Seiten zu generieren:
+Fügen Sie das Rendering-Skript zu topnav hinzu, um Textlinks zu untergeordneten Seiten zu generieren:
 
-1. Öffnen Sie in CRXDE Lite die -Datei. `topnav.jsp` under `/apps/mywebsite/components/topnav`.
-1. Ersetzen Sie den vorhandenen Code, indem Sie den folgenden Code kopieren und einfügen:
+1. Öffnen Sie in CRXDE Lite die Datei `topnav.jsp` unter `/apps/mywebsite/components/topnav`.
+1. Ersetzen Sie den vorhandenen Code durch Kopieren und Einfügen des folgenden Codes:
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><% 
@@ -450,11 +454,11 @@ Fügen Sie das Rendering-Skript zu „topnav“ hinzu, um Textlinks zu untergeor
    %> 
    ```
 
-#### Einbinden von „topnav“ in contentpage-Komponenten {#including-top-navigation-in-the-contentpage-component}
+#### Einbinden der obersten Navigation in die contentpage-Komponente {#including-top-navigation-in-the-contentpage-component}
 
-Gehen Sie wie folgt vor, um „topnav“ in Ihre contentpage-Komponente einzubinden:
+So fügen Sie topnav in Ihre contentpage-Komponente ein:
 
-1. Öffnen Sie in CRXDE Lite die `body.jsp` under `/apps/mywebsite/components/contentpage`und ersetzen:
+1. Öffnen Sie in CRXDE Lite die Datei `body.jsp` unter `/apps/mywebsite/components/contentpage` und ersetzen Sie:
 
    ```xml
    <div class="topnav">topnav</div>
@@ -467,39 +471,39 @@ Gehen Sie wie folgt vor, um „topnav“ in Ihre contentpage-Komponente einzubin
    ```
 
 1. Speichern Sie die Änderungen.
-1. Laden Sie in Ihrem Browser die **[!UICONTROL Produkte]** Seite. Die Navigation oben wird nun wie folgt angezeigt:
+1. Laden Sie in Ihrem Browser die **[!UICONTROL Produkte]** Seite. Die obere Navigation wird wie folgt angezeigt:
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-#### Erweitern von Seiten mit Untertiteln {#enhancing-pages-with-subtitles}
+#### Verbessern von Seiten mit Untertiteln {#enhancing-pages-with-subtitles}
 
-Die **[!UICONTROL Seite]** -Komponente definiert Eigenschaften, mit denen Sie Untertitel für Seiten bereitstellen können. Fügen Sie Untertitel hinzu, die Informationen über den Seiteninhalt bereitstellen.
+Die **[!UICONTROL Seite]** -Komponente definiert Eigenschaften, mit denen Sie Untertitel für Seiten bereitstellen können. Fügen Sie Untertitel hinzu, die Informationen zum Seiteninhalt bereitstellen.
 
-1. Öffnen Sie in Ihrem Browser die **[!UICONTROL Produkte]** Seite.
-1. On the Sidekick **[!UICONTROL Page]** tab, click **[!UICONTROL Page Properties]**.
+1. Öffnen Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]**.
+1. Klicken Sie im Sidekick auf der Registerkarte **[!UICONTROL Seite]** auf **[!UICONTROL Seiteneigenschaften]**.
 1. Im **[!UICONTROL Allgemein]** Registerkarte des Dialogfelds, erweitern **[!UICONTROL Weitere Titel und Beschreibungen]** und für **[!UICONTROL Untertitel]** Eigenschaft, Typ `what we do`. Klicken Sie auf **[!UICONTROL OK]**.
-1. Wiederholen Sie die vorherigen Schritte, um den Untertitel hinzuzufügen. **über unsere Dienstleistungen** der **[!UICONTROL Dienste]** Seite.
-1. Repeat the previous steps to add the subtitle **the trust we earn** to the **[!UICONTROL Customers]** page.
+1. Wiederholen Sie die vorherigen Schritte, um den Untertitel **Über unsere Services** zur Seite **[!UICONTROL Services]** hinzuzufügen.
+1. Wiederholen Sie die vorherigen Schritte, um den Untertitel **Warum Sie uns vertrauen können** zur Seite **[!UICONTROL Kunden]** hinzuzufügen.
 
-   **Tipp**: Wählen Sie in CRXDE Lite den Knoten /content/mywebsite/en/products/jcr:content aus, um zu überprüfen, ob die Eigenschaft „Untertitel“ hinzugefügt wurde.
+   **Tipp:** Wählen Sie in CRXDE Lite den Knoten /content/mywebsite/en/products/jcr:content aus, um zu sehen, dass die Eigenschaft &quot;subtitle&quot;hinzugefügt wird.
 
-#### Erweitern von „topnav“ mithilfe von Bildlinks {#enhance-top-navigation-by-using-image-links}
+#### Verbessern der oberen Navigation mithilfe von Bildlinks {#enhance-top-navigation-by-using-image-links}
 
-Erweitern Sie das Rendering-Skript der topnav-Komponente, um für die Navigationssteuerung Bildlinks anstelle von Hypertext zu verwenden. Das Bild enthält den Titel und Untertitel des Linkziels.
+Verbessern Sie das Rendering-Skript der topnav-Komponente, sodass für die Navigationssteuerelemente Bild-Links anstelle von Hypertext verwendet werden. Das Bild enthält den Titel und den Untertitel des Link-Ziels.
 
-Diese Übung veranschaulicht die [Sling-Anforderungsverarbeitung](/help/sites-developing/the-basics.md#sling-request-processing). Das Skript topnav.jsp wurde so geändert, dass es ein Skript aufruft, das dynamisch Bilder für die Seitennavigationslinks generiert. In dieser Übung analysiert Sling die URL der Bildquelldateien, um das Skript zu bestimmen, das zum Rendern der Bilder verwendet werden soll.
+Diese Übung zeigt [Verarbeitung von Sling-Anforderungen](/help/sites-developing/the-basics.md#sling-request-processing). Das Skript topnav.jsp wird geändert, um ein Skript aufzurufen, das dynamisch Bilder generiert, die für die Seitennavigationslinks verwendet werden. In dieser Übung analysiert Sling die URL der Bildquelldateien, um das Skript zu bestimmen, das zum Rendern der Bilder verwendet werden soll.
 
-Die Quelle für den Bildlink zur Seite „Products“ könnte beispielsweise http://localhost:4502/content/mywebsite/en/products.navimage.png lauten. Sling analysiert diese URL, um den Ressourcentyp und das Skript zum Rendern der Ressource zu bestimmen:
+Beispielsweise könnte die Quelle für den Bild-Link zur Produktseite http://localhost:4502/content/mywebsite/en/products.navimage.png lauten. Sling analysiert diese URL, um den Ressourcentyp und das Skript zum Rendern der Ressource zu bestimmen:
 
-1. Sling determines the path of the resource to be `/content/mwebysite/en/products.png.`
-1. Sling stimmt mit diesem Pfad mit dem `/content/mywebsite/en/products` Knoten.
-1. Sling determines the `sling:resourceType` of this node to be `mywebsite/components/contentpage`.
+1. Sling bestimmt `/content/mwebysite/en/products.png.` als Pfad der Ressource.
+1. Sling ordnet diesen Pfad dem Knoten `/content/mywebsite/en/products` zu.
+1. Sling bestimmt `sling:resourceType` als `mywebsite/components/contentpage` dieses Knotens.
 
 1. Sling findet das Skript in dieser Komponente, das die größte Übereinstimmung mit der URL-Auswahl (`navimage`) und der Dateinamenerweiterung (`png`) aufweist.
 
 Im Rahmen dieser Übung ordnet Sling diese URLs dem Skript /apps/mywebsite/components/contentpage/navimage.png.java zu, das Sie erstellen.
 
-1. Öffnen Sie in CRXDE Lite die `topnav.jsp` under `/apps/mywebsite/components/topnav.`Suchen Sie den Inhalt des Ankerelements (Zeile 14):
+1. Öffnen Sie in CRXDE Lite die Datei `topnav.jsp` unter `/apps/mywebsite/components/topnav.`. Suchen Sie den Inhalt des Ankerelements (Zeile 14):
 
    ```xml
    <%=child.getTitle() %>
@@ -513,15 +517,15 @@ Im Rahmen dieser Übung ordnet Sling diese URLs dem Skript /apps/mywebsite/compo
 
 1. Speichern Sie die Änderungen.
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/mywebsite/components/contentpage` und klicken Sie auf **[!UICONTROL Erstellen > Datei erstellen]**.
-1. Im **[!UICONTROL Datei erstellen]** window, as **[!UICONTROL Name]**, Typ `navimage.png.java`.
+1. Geben Sie im Fenster **[!UICONTROL Datei erstellen]** in das Feld **[!UICONTROL Name]** `navimage.png.java` ein.
 
-   Die Dateinamenerweiterung .java gibt Sling an, dass die Java-Unterstützung für Apache Sling Scripting verwendet werden sollte, um das Skript zu kompilieren und ein Servlet zu erstellen.
+   Die Dateinamenerweiterung „.java“ gibt für Sling an, dass das Modul „Apache Sling Scripting Java Support“ verwendet werden muss, um das Skript zu kompilieren und ein Servlet zu erstellen.
 
-1. Kopieren Sie den folgenden Code nach `navimage.png.java.`Der Code erweitert die Klasse AbstractImageServlet :
+1. Kopieren Sie den folgenden Code nach `navimage.png.java.`. Der Code erweitert die Klasse „AbstractImageServlet“:
 
-   * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) erstellt ein ImageContext-Objekt, das die Eigenschaften der aktuellen Ressource speichert.
+   * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) erstellt ein ImageContext -Objekt, das die Eigenschaften der aktuellen Ressource speichert.
    * Die übergeordnete Seite der Ressource wird aus dem ImageContext-Objekt extrahiert. Dann werden der Seitentitel und der Untertitel abgerufen.
-   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) wird verwendet, um das Bild aus der Datei navimage_bg.jpg des Site-Designs, des Seitentitels und des Seitenuntertitels zu generieren.
+   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) wird verwendet, um das Bild aus der Datei &quot;navimage_bg.jpg&quot;des Site-Designs, dem Seitentitel und dem Seitentitel zu generieren.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -639,19 +643,19 @@ Im Rahmen dieser Übung ordnet Sling diese URLs dem Skript /apps/mywebsite/compo
    ```
 
 1. Speichern Sie die Änderungen.
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Die Navigation oben wird nun wie folgt angezeigt:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Die obere Navigation wird jetzt wie folgt angezeigt:
 
    ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
-### Erstellen von listchildren-Komponenten {#creating-the-list-children-component}
+### Erstellen der Komponente &quot;List Children&quot; {#creating-the-list-children-component}
 
-Erstellen Sie die listchildren-Komponente, die eine Liste von Seitenlinks mit Titel, Beschreibung und Datum der Seiten (z. B. Produktseiten) generiert. Die Links führen zu den untergeordneten Seiten der aktuellen Seite oder einer Stammseite, die im Komponenten-Dialogfeld angegeben ist.
+Erstellen Sie die listchildren-Komponente, die eine Liste von Seitenlinks generiert, die den Titel, die Beschreibung und das Datum der Seiten enthalten (z. B. Produktseiten). Die Links zielen auf die untergeordneten Seiten der aktuellen Seite oder einer Stammseite ab, die im Komponentendialogfeld angegeben ist.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 #### Erstellen von Produktseiten {#creating-product-pages}
 
-Erstellen Sie zwei Seiten unter dem **[!UICONTROL Produkte]** Seite. Legen Sie für die beiden Seiten, die jeweils ein bestimmtes Produkt beschreiben, einen Titel, eine Beschreibung und ein Datum fest.
+Erstellen Sie zwei Seiten unter dem **[!UICONTROL Produkte]** Seite. Für jede Seite, die zwei spezifische Produkte beschreibt, legen Sie einen Titel, eine Beschreibung und ein Datum fest.
 
 1. Im Ordnerbaum der **[!UICONTROL Websites]** Seite, wählen Sie die **[!UICONTROL Websites/Meine Website/Englisch/Produkte]** Element und klicken Sie auf **[!UICONTROL Neu > Neue Seite]**.
 1. Geben Sie im Dialogfeld die folgenden Eigenschaftswerte ein und klicken Sie auf **[!UICONTROL Erstellen]**:
@@ -660,7 +664,7 @@ Erstellen Sie zwei Seiten unter dem **[!UICONTROL Produkte]** Seite. Legen Sie f
    * **[!UICONTROL Name]**: product1.
    * Auswählen **[!UICONTROL My Website Content Page Template]**
 
-1. Erstellen Sie eine weitere Seite unter „Products“ mit den folgenden Eigenschaftswerten:
+1. Erstellen Sie eine weitere Seite unter „Produkte“ mit den folgenden Eigenschaftswerten:
 
    * **[!UICONTROL Titel]**: Produkt 2
    * **[!UICONTROL Name]**: product2
@@ -668,17 +672,17 @@ Erstellen Sie zwei Seiten unter dem **[!UICONTROL Produkte]** Seite. Legen Sie f
 
 1. Legen Sie in CRXDE Lite eine Beschreibung und ein Datum für die Seite „Product 1“ fest:
 
-   1. Wählen Sie die `/content/mywebsite/en/products/product1/jcr:content` Knoten.
+   1. Wählen Sie den Knoten `/content/mywebsite/en/products/product1/jcr:content` aus.
    1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** die folgenden Werte ein:
 
       * **[!UICONTROL Name]**: `jcr:description`
       * **[!UICONTROL Typ]**: `String`
       * **[!UICONTROL Wert]**: `This is a description of the Product 1!.`
    1. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
-   1. Erstellen Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** eine weitere Eigenschaft mit den folgenden Werten:
+   1. Im **[!UICONTROL Eigenschaften]** erstellen Sie eine weitere Eigenschaft mit den folgenden Werten:
 
       * **[!UICONTROL Name]**: date
-      * **[!UICONTROL Typ]**: String
+      * **[!UICONTROL Typ]**: Zeichenfolge
       * **[!UICONTROL Wert]**: 14.02.2008
       * Klicken Sie auf **[!UICONTROL Hinzufügen]**.
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
@@ -687,41 +691,41 @@ Erstellen Sie zwei Seiten unter dem **[!UICONTROL Produkte]** Seite. Legen Sie f
 
 1. Legen Sie in CRXDE Lite eine Beschreibung und ein Datum für die Seite „Product 2“ fest:
 
-   1. Wählen Sie die `/content/mywebsite/en/products/product2/jcr:content` Knoten.
+   1. Wählen Sie den Knoten `/content/mywebsite/en/products/product2/jcr:content` aus.
    1. Geben Sie auf der Registerkarte **[!UICONTROL Eigenschaften]** die folgenden Werte ein:
 
       * **[!UICONTROL Name]**: jcr:description
-      * **[!UICONTROL Typ]**: String
+      * **[!UICONTROL Typ]**: Zeichenfolge
       * **[!UICONTROL Wert]**: Dies ist eine Beschreibung des Produkts 2!.
    1. Klicken Sie auf **[!UICONTROL Hinzufügen]**.
    1. Ersetzen Sie in denselben Textfeldern die vorherigen Werte durch die folgenden Werte:
 
       * **[!UICONTROL Name]**: date
-      * **[!UICONTROL Typ]**: String
+      * **[!UICONTROL Typ]**: Zeichenfolge
       * **[!UICONTROL Wert]**: 11. Mai 2012
       * Klicken Sie auf **[!UICONTROL Hinzufügen]**.
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
 
 
-#### Erstellen von listchildren-Komponenten {#creating-the-list-children-component-1}
+#### Erstellen der Komponente &quot;List Children&quot; {#creating-the-list-children-component-1}
 
-Gehen Sie wie folgt vor, um die listchildren-Komponente zu erstellen:
+So erstellen Sie die listchildren-Komponente:
 
-1. Klicken Sie in der CRXDE Lite mit der rechten Maustaste `/apps/mywebsite/components`auswählen **[!UICONTROL Erstellen]**, dann **[!UICONTROL Komponente erstellen]**.
+1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf `/apps/mywebsite/components`, wählen Sie dann die Option **[!UICONTROL Erstellen]** und anschließend die Option **[!UICONTROL Komponente erstellen]** aus.
 1. Geben Sie im Dialogfeld die folgenden Eigenschaftswerte ein und klicken Sie auf **[!UICONTROL Nächste]**:
 
    * **[!UICONTROL Titel]**: listchildren
-   * **[!UICONTROL Title]**: My Listchildren Component.
+   * **[!UICONTROL Titel]**: Meine Listchildren-Komponente.
    * **[!UICONTROL Beschreibung]**: Dies ist die Komponente Meine Listchildren .
 
-1. Continue clicking **[!UICONTROL Next]** until the **[!UICONTROL Allowed Children]** panel appears, and then click **[!UICONTROL OK]**.
+1. Weiter klicken **[!UICONTROL Nächste]** bis zum **[!UICONTROL Zugelassene Kinder]** wird angezeigt und klicken Sie dann auf **[!UICONTROL OK]**.
 
-#### Erstellen von listchildren-Skripten {#creating-the-list-children-script}
+#### Erstellen des untergeordneten Listenskripts {#creating-the-list-children-script}
 
 Entwickeln Sie das Skript für die listchildren-Komponente.
 
-1. Öffnen Sie in CRXDE Lite die -Datei. `listchildren.jsp` under `/apps/mywebsite/components/listchildren`.
+1. Öffnen Sie in CRXDE Lite die Datei `listchildren.jsp` unter `/apps/mywebsite/components/listchildren`.
 1. Ersetzen Sie den Standardcode durch den folgenden Code:
 
    ```xml
@@ -750,16 +754,16 @@ Entwickeln Sie das Skript für die listchildren-Komponente.
 
 1. Speichern Sie die Änderungen.
 
-#### Erstellen von listchildren-Dialogfeldern {#creating-the-list-children-dialog}
+#### Erstellen des Dialogfelds &quot;Untergeordnete Listen&quot; {#creating-the-list-children-dialog}
 
-Erstellen Sie das Dialogfeld zum Konfigurieren der Eigenschaften der listchildren-Komponente.
+Erstellen Sie das Dialogfeld, das zum Konfigurieren der listchildren-Komponenteneigenschaften verwendet wird.
 
 1. Erstellen Sie den Dialogknoten unter der listchildren-Komponente:
 
-   1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf die `/apps/mywebsite/components/listchildren`Knoten und klicken Sie auf **[!UICONTROL Erstellen > Dialogfeld &quot;Erstellen&quot;]**.
+   1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf den Knoten `/apps/mywebsite/components/listchildren` und klicken Sie dann auf **[!UICONTROL Erstellen > Dialogfeld erstellen]**.
    1. Geben Sie im Dialogfeld die folgenden Eigenschaftswerte ein und klicken Sie dann auf „OK“:
 
-      * **[!UICONTROL Titel]**: `dialog`
+      * **[!UICONTROL Bezeichnung]**: `dialog`
       * **[!UICONTROL Titel]**: `Edit Component` und klicken Sie auf **[!UICONTROL OK]**.
 
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
@@ -768,7 +772,7 @@ Erstellen Sie das Dialogfeld zum Konfigurieren der Eigenschaften der listchildre
 
    ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
-1. Wählen Sie die `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` Knoten.
+1. Wählen Sie den Knoten `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` aus.
 1. Im **[!UICONTROL Eigenschaften]** Registerkarte ändern Sie den Wert der **[!UICONTROL title]** Eigenschaft auf `List Children`
 
    ![chlimage_1-117](assets/chlimage_1-117.png)
@@ -780,14 +784,14 @@ Erstellen Sie das Dialogfeld zum Konfigurieren der Eigenschaften der listchildre
 
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
-1. Erstellen Sie einen Knoten unterhalb des Knotens „items“ mit den folgenden Eigenschaftswerten:
+1. Erstellen Sie einen Knoten unter dem Knoten items mit den folgenden Eigenschaftswerten:
 
    * **[!UICONTROL Name]**: listroot
    * **[!UICONTROL Typ]**: cq:Widget
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Fügen Sie Eigenschaften für den Knoten listroot hinzu, um ihn als Textfeld zu konfigurieren. Jede Zeile der folgenden Tabelle stellt eine Eigenschaft dar. Klicken Sie abschließend auf **[!UICONTROL Alle speichern]**.
+1. Fügen Sie Eigenschaften für den Knoten „listroot“ hinzu, um ihn als Textfeld zu konfigurieren. Jede Zeile in der folgenden Tabelle stellt eine Eigenschaft dar. Klicken Sie abschließend auf **[!UICONTROL Alle speichern]**.
 
    | Name | Typ | Wert |
    |---|---|---|
@@ -797,11 +801,11 @@ Erstellen Sie das Dialogfeld zum Konfigurieren der Eigenschaften der listchildre
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
 
-#### Einbinden von „listchildren“ in contentpage-Komponenten {#including-list-children-in-the-contentpage-component}
+#### Einschließen von Listenuntergründen in die contentpage-Komponente {#including-list-children-in-the-contentpage-component}
 
-Gehen Sie wie folgt vor, um die listchildren-Komponente in Ihre contentpage-Komponente einzubinden:
+Um die listchildren-Komponente in Ihre contentpage-Komponente einzubeziehen, gehen Sie wie folgt vor:
 
-1. In CRXDE Lite, open the file `left.jsp` under `/apps/mywebsite/components/contentpage` and locate the following code (line 4):
+1. Öffnen Sie in CRXDE Lite die Datei `left.jsp` unter `/apps/mywebsite/components/contentpage` und suchen Sie den folgenden Code (Zeile 4):
 
    ```xml
    <div>newslist</div>
@@ -815,59 +819,59 @@ Gehen Sie wie folgt vor, um die listchildren-Komponente in Ihre contentpage-Komp
 
 1. Speichern Sie die Änderungen.
 
-#### Anzeigen von „listchildren“ auf einer Seite {#viewing-list-children-in-a-page}
+#### Anzeigen von untergeordneten Listen auf einer Seite {#viewing-list-children-in-a-page}
 
-Um sämtliche Vorgänge im Zusammenhang mit dieser Komponente einzusehen, können Sie die Seite „Products“ anzeigen:
+Um sämtliche Vorgänge im Zusammenhang mit dieser Komponente einzusehen, können Sie die Seite „Produkte“ anzeigen:
 
-* wenn die übergeordnete Seite („Pfad des Listenstammverzeichnisses“) nicht definiert ist.
-* wenn die übergeordnete Seite („Pfad des Listenstammverzeichnisses“) definiert ist.
+* wenn die übergeordnete Seite (&quot;Pfad des Listenstamms&quot;) nicht definiert ist.
+* wenn die übergeordnete Seite (&quot;Pfad des Listenstamms&quot;) definiert ist.
 
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Die listchildren-Komponente wird nun wie folgt angezeigt:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Die listchildren-Komponente wird wie folgt angezeigt:
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
 1. ![chlimage_1-119](assets/chlimage_1-119.png)
 
-1. Geben Sie als Pfad des Listenstamms Folgendes ein: `/content/mywebsite/en`. Klicken Sie auf **[!UICONTROL OK]**. Die listchildren-Komponente auf Ihrer Seite sieht nun wie folgt aus:
+1. Geben Sie im Feld „Pfad des Listenstammverzeichnisses“ `/content/mywebsite/en` ein. Klicken Sie auf **[!UICONTROL OK]**. Die listchildren-Komponente auf Ihrer Seite sieht nun wie folgt aus:
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
-### Erstellen von logo-Komponenten {#creating-the-logo-component}
+### Erstellen der Logokomponente {#creating-the-logo-component}
 
-Erstellen Sie eine Komponente, die das Firmenlogo anzeigt und einen Link zur Homepage der Website bereitstellt. Die Komponente enthält ein Designmodus-Dialogfeld, sodass Eigenschaftswerte im Site-Design gespeichert werden (/etc/designs/mywebsite):
+Erstellen Sie eine Komponente, die das Firmenlogo anzeigt und einen Link zur Startseite der Site bereitstellt. Die Komponente enthält ein Dialogfeld für den Designmodus, sodass Eigenschaftswerte im Site-Design (/etc/designs/mywebsite) gespeichert werden:
 
 * Die Eigenschaftswerte gelten für alle Instanzen der Komponente, die zu Seiten hinzugefügt werden, die das Design verwenden.
-* Die Eigenschaften können über jede Instanz der Komponente konfiguriert werden, die sich auf einer Seite befindet, die das Design verwendet.
+* Die Eigenschaften können mit jeder Instanz der Komponente konfiguriert werden, die sich auf einer Seite befindet, die das Design verwendet.
 
-Ihr Designmodus-Dialogfeld umfasst Eigenschaften zum Festlegen des Bilds und des Linkpfads. Die logo-Komponente wird oben links auf allen Seiten der Website platziert.
+Ihr Dialogfeld für den Designmodus enthält Eigenschaften zum Festlegen des Bildes und des Linkpfads. Die logo-Komponente wird auf der linken oberen Seite aller Seiten der Website platziert.
 
-Es sieht wie nun folgt aus:
+Sie sieht wie folgt aus:
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
 >[!NOTE]
 >
->Adobe Experience Manager bietet eine logo-Komponente mit mehr Funktionen ( `/libs/foundation/components/logo`).
+>Adobe Experience Manager bietet eine logo-Komponente mit umfassenderem Funktionsumfang ( `/libs/foundation/components/logo`).
 
-#### Erstellen von Knoten für logo-Komponenten {#creating-the-logo-component-node}
+#### Erstellen des Knotens der logo-Komponente {#creating-the-logo-component-node}
 
 Gehen Sie wie folgt vor, um die logo-Komponente zu erstellen:
 
 1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf /apps/mywebsite/components, wählen Sie dann die Option **[!UICONTROL Erstellen]** und anschließend die Option **[!UICONTROL Komponente erstellen]** aus.
 1. Geben Sie im Dialogfeld „Komponente erstellen“ die folgenden Eigenschaftswerte ein und klicken Sie dann auf „Weiter“:
 
-   * **[!UICONTROL Titel]**: `logo`.
+   * **[!UICONTROL Bezeichnung]**: `logo`.
    * **[!UICONTROL Titel]**: `My Logo Component`.
    * **[!UICONTROL Beschreibung]**: `This is My Logo Component`.
 
-1. Klicken Sie auf „Weiter“, bis Sie das letzte Bedienfeld des Dialogfelds erreicht haben, und klicken Sie dann auf **[!UICONTROL OK]**.
+1. Klicken Sie auf Weiter , bis Sie zum letzten Bedienfeld des Dialogfelds gelangen, und klicken Sie dann auf **[!UICONTROL OK]**.
 
-#### Erstellen von logo-Skripten {#creating-the-logo-script}
+#### Erstellen eines Logoskripts {#creating-the-logo-script}
 
-In diesem Abschnitt wird beschrieben, wie Sie das Skript zum Anzeigen des Logobilds mit einem Link zur Homepage erstellen.
+In diesem Abschnitt wird beschrieben, wie Sie das Skript erstellen, um das Logo-Bild mit einem Link zur Homepage anzuzeigen.
 
-1. Öffnen Sie in CRXDE Lite die -Datei. `logo.jsp` under `/apps/mywebsite/components/logo`.
-1. Mit dem folgenden Code wird ein Link zur Homepage der Website erstellt und einen Verweis auf das Logobild hinzufügt. Kopieren Sie den Code nach `logo.jsp`:
+1. Öffnen Sie in CRXDE Lite die Datei `logo.jsp` unter `/apps/mywebsite/components/logo`.
+1. Mit dem folgenden Code wird ein Link zur Homepage der Website erstellt und einen Verweis auf das Logobild hinzufügt. Kopieren Sie den Code und fügen Sie ihn in `logo.jsp` ein:
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -901,20 +905,20 @@ In diesem Abschnitt wird beschrieben, wie Sie das Skript zum Anzeigen des Logobi
 
 1. Speichern Sie die Änderungen.
 
-#### Erstellen des Logodesign-Dialogfelds {#creating-the-logo-design-dialog}
+#### Erstellen des Dialogfelds &quot;Logo Design&quot; {#creating-the-logo-design-dialog}
 
-Erstellen Sie das Dialogfeld zum Konfigurieren Ihrer logo-Komponente im Designmodus. Dialogfeldknoten für den Designmodus müssen benannt werden `design_dialog`.
+Erstellen Sie das Dialogfeld zum Konfigurieren Ihrer logo-Komponente im Designmodus. Knoten für Designmodus-Dialogfelder müssen `design_dialog` benannt werden.
 
 1. Erstellen Sie den Knoten „dialog“ unter der logo-Komponente:
 
-   1. Klicken Sie mit der rechten Maustaste auf die `/apps/mywebsite/components/logo` Knoten und klicken Sie auf **[!UICONTROL Erstellen > Dialogfeld &quot;Erstellen&quot;]**.
+   1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/mywebsite/components/logo` und klicken Sie dann auf **[!UICONTROL Erstellen > Dialogfeld erstellen]**.
    1. Geben Sie die folgenden Eigenschaftswerte ein und klicken Sie auf **[!UICONTROL OK]**:
 
-      * **[!UICONTROL Titel]** `design_dialog`
+      * **[!UICONTROL Bezeichnung]** `design_dialog`
       * **[!UICONTROL Titel]** `Logo (Design)`
 
-1. Klicken Sie mit der rechten Maustaste im Zweig „design_dialog“ auf den Knoten „tab1“ und klicken Sie dann auf „Löschen“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
-1. Unter dem `design_dialog/items/items`Knoten erstellen Sie einen neuen Knoten mit dem Namen `img` des Typs `cq:Widget`. Fügen Sie die folgenden Eigenschaften hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**:
+1. Klicken Sie mit der rechten Maustaste auf den Knoten tab1 im Zweig design_dialog und klicken Sie auf Löschen. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Erstellen Sie unter dem Knoten `design_dialog/items/items` einen neuen Knoten namens `img` des Typs `cq:Widget`. Fügen Sie die folgenden Eigenschaften hinzu und klicken Sie auf **[!UICONTROL Alle speichern]**:
 
    | Name | Typ | Wert |
    |---|---|---|
@@ -926,9 +930,9 @@ Erstellen Sie das Dialogfeld zum Konfigurieren Ihrer logo-Komponente im Designmo
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
-#### Erstellen von Rendering-Skripten für Logos {#creating-the-logo-render-script}
+#### Erstellen des Renderskripts für das Logo {#creating-the-logo-render-script}
 
-Erstellen Sie das Skript, das das Logobild abruft und es in die Seite schreibt.
+Erstellen Sie das Skript, das das Logo-Bild abruft und auf die Seite schreibt.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten der logo-Komponente und klicken Sie auf **[!UICONTROL Erstellen > Datei erstellen]** , um die Skriptdatei mit dem Namen img.GET.java zu erstellen.
 1. Öffnen Sie die Datei, kopieren Sie den folgenden Code in die Datei und klicken Sie auf **[!UICONTROL Alle speichern]**:
@@ -999,9 +1003,9 @@ public class img_GET extends AbstractImageServlet {
 }
 ```
 
-#### Hinzufügen von logo-Komponenten zu contentpage-Komponenten {#adding-the-logo-component-to-the-contentpage-component}
+#### Hinzufügen der logo-Komponente zur contentpage-Komponente {#adding-the-logo-component-to-the-contentpage-component}
 
-1. Öffnen Sie in CRXDE Lite die `left.jsp` under `/apps/mywebsite/components/contentpage file` und suchen Sie die folgende Codezeile:
+1. Öffnen Sie in CRXDE Lite die Datei `left.jsp` unter `/apps/mywebsite/components/contentpage file` und suchen Sie die folgende Codezeile:
 
    ```xml
    <div>logo</div>
@@ -1014,13 +1018,13 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. Speichern Sie die Änderungen.
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Das Logo sieht nun wie folgt aus, zeigt aber zurzeit nur den zugrundeliegenden Link:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Das Logo sieht nun wie folgt aus, zeigt aber zurzeit nur den zugrundeliegenden Link:
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
 
-#### Festlegen von Logobildern auf Seiten {#setting-the-logo-image-in-a-page}
+#### Festlegen des Logobilds auf einer Seite {#setting-the-logo-image-in-a-page}
 
-In diesem Abschnitt wird beschrieben, wie Sie mithilfe des Designmodus-Dialogfelds ein Bild als Logo festlegen.
+In diesem Abschnitt wird beschrieben, wie Sie ein Bild mithilfe des Dialogfelds &quot;Designmodus&quot;als Logo festlegen.
 
 1. Mit dem **[!UICONTROL Produkte]** in Ihrem Browser öffnen, klicken Sie auf das **[!UICONTROL Design]** Schaltfläche unten im Sidekick zur Eingabe **[!UICONTROL Design]** -Modus.
 
@@ -1039,11 +1043,11 @@ In diesem Abschnitt wird beschrieben, wie Sie mithilfe des Designmodus-Dialogfel
 
    `/etc/designs/mywebsite/jcr:content/contentpage/logo`
 
-### Einbinden von trail-Komponenten {#including-the-breadcrumb-component}
+### Einschließen der Breadcrumb-Komponente {#including-the-breadcrumb-component}
 
-In diesem Abschnitt wird beschrieben, wie Sie die trail-Komponente (Breadcrumb) einbinden, die zu den Foundation-Komponenten gehört.
+In diesem Abschnitt schließen Sie die Breadcrumb-Komponente (Pfad) ein, die eine der Foundation-Komponenten ist.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp` und ersetzen:
+1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp` und ersetzen Sie:
 
    ```java
    <div>trail</div>
@@ -1056,15 +1060,15 @@ In diesem Abschnitt wird beschrieben, wie Sie die trail-Komponente (Breadcrumb) 
    ```
 
 1. Speichern Sie die Änderungen.
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products 1]** neu. Die trail-Komponente sieht nun wie folgt aus:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte 1]** neu. Die Trail-Komponente sieht wie folgt aus:
 
    ![chlimage_1-125](assets/chlimage_1-125.png)
 
-### Einbinden von title-Komponenten {#including-the-title-component}
+### Einschließen der Titelkomponente {#including-the-title-component}
 
-In diesem Abschnitt wird beschrieben, wie Sie die title-Komponente einbinden, die zu den Foundation-Komponenten gehört.
+In diesem Abschnitt schließen Sie die title-Komponente ein, die eine der Foundation-Komponenten ist.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp` und ersetzen:
+1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `center.jsp` und ersetzen Sie:
 
    ```xml
    <div>title</div>
@@ -1077,16 +1081,16 @@ In diesem Abschnitt wird beschrieben, wie Sie die title-Komponente einbinden, di
    ```
 
 1. Speichern Sie die Änderungen.
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Die title-Komponente sieht nun wie folgt aus:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Die title-Komponente sieht nun wie folgt aus:
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
 >[!NOTE]
 >Sie können unter **[!UICONTROL Bearbeiten]** -Modus.
 
-### Einbinden von parsys-Komponenten {#including-the-paragraph-system-component}
+### Einschließen der Absatzsystemkomponente {#including-the-paragraph-system-component}
 
-Das Absatzsystem („parsys“) ist ein wesentlicher Teil einer Website, da es eine Liste von Absätzen verwaltet. Es ermöglicht den Autoren das Hinzufügen von Absatzkomponenten zur Seite und schafft Struktur.
+Das Absatzsystem (parsys) ist ein wichtiger Teil einer Website, da es eine Liste von Absätzen verwaltet. Sie ermöglicht es Autoren, Absatzkomponenten zur Seite hinzuzufügen, und bietet eine Struktur.
 
 Fügen Sie die parsys-Komponente (eine der Foundation-Komponenten) zu Ihrer contentpage-Komponente hinzu.
 
@@ -1102,46 +1106,46 @@ Fügen Sie die parsys-Komponente (eine der Foundation-Komponenten) zu Ihrer cont
    <cq:include path="par" resourceType="foundation/components/parsys" />
    ```
 
-1. Aktualisieren Sie im Browser die **[!UICONTROL Produkte]** Seite. Sie weist nun die parsys-Komponente auf, die wie folgt aussieht:
+1. Aktualisieren Sie im Browser die **[!UICONTROL Produkte]** Seite. Sie verfügt jetzt über die parsys-Komponente, die wie folgt aussieht:
 
    ![chlimage_1-127](assets/chlimage_1-127.png)
 
-### Erstellen von image-Komponenten {#creating-the-image-component}
+### Erstellen der Bildkomponente {#creating-the-image-component}
 
-Erstellen Sie eine Komponente, die ein Bild im Absatzsystem anzeigt. Um Zeit zu sparen, wird die image-Komponente als Kopie der logo-Komponente erstellt, bei der einige Eigenschaften geändert wurden.
+Erstellen Sie eine Komponente, die ein Bild im Absatzsystem anzeigt. Um Zeit zu sparen, wird die Bildkomponente als Kopie der logo-Komponente mit einigen Eigenschaftsänderungen erstellt.
 
 >[!NOTE]
 >
->Adobe Experience Manager bietet eine Bildkomponente mit mehr Funktionen ( `/libs/foundation/components/image`).
+>Adobe Experience Manager bietet eine image-Komponente mit umfassenderen Funktionsumfang (`/libs/foundation/components/image`).
 
 #### Erstellen von image-Komponenten {#creating-the-image-component-1}
 
-1. Right click the `/apps/mywebsite/components/logo` node and click **[!UICONTROL Copy]**.
-1. Right-click the `/apps/mywebsite/components` node and click **[!UICONTROL Paste]**.
-1. Klicken Sie mit der rechten Maustaste auf die `Copy of logo` Knoten, klicken Sie auf **[!UICONTROL Umbenennen]**, löschen Sie den vorhandenen Text und geben Sie `image`.
+1. Klicken Sie mit der rechten Maustaste auf `/apps/mywebsite/components/logo` Knoten und klicken Sie auf **[!UICONTROL Kopieren]**.
+1. Klicken Sie mit der rechten Maustaste auf die `/apps/mywebsite/components` Knoten und klicken Sie auf **[!UICONTROL Einfügen]**.
+1. Klicken Sie mit der rechten Maustaste auf den Knoten `Copy of logo`****, klicken Sie auf „Umbenennen“, löschen Sie den vorhandenen Text und geben Sie `image` ein.
 
 1. Wählen Sie den Komponentenknoten `image` aus und ändern Sie die folgenden Eigenschaftswerte:
 
-   * `jcr:title:` Meine Bildkomponente.
-   * `jcr:description`: Dies ist meine Bildkomponente.
+   * `jcr:title:` Meine image-Komponente.
+   * `jcr:description`: Dies ist meine image-Komponente.
 
 1. Fügen Sie zum Knoten `image` eine Eigenschaft mit den folgenden Eigenschaftswerten hinzu:
 
    * **[!UICONTROL Name]**: componentGroup
-   * **[!UICONTROL Typ]**: String
+   * **[!UICONTROL Typ]**: Zeichenfolge
    * **[!UICONTROL Wert]**: MyWebsite
 
-1. Unter dem `image` Knoten, benennen Sie die `design_dialog` Knoten zu `dialog`.
+1. Benennen Sie den Knoten `image` unter dem Knoten `design_dialog` in `dialog` um.
 
-1. Umbenennen `logo.jsp` nach `image.jsp.`
+1. Umbenennen von `logo.jsp` in `image.jsp.`
 
 1. Öffnen Sie img.GET.java und ändern Sie das Paket in `apps.mywebsite.components.image`.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-#### Erstellen von image-Skripten {#creating-the-image-script}
+#### Erstellen des Bildskripts {#creating-the-image-script}
 
-In diesem Abschnitt wird beschrieben, wie Sie das image-Skript erstellen.
+In diesem Abschnitt wird beschrieben, wie Sie das Bildskript erstellen.
 
 1. Öffnen Sie `/apps/mywebsite/components/image/` `image.jsp`
 1. Ersetzen Sie den vorhandenen Code durch den folgenden Code und speichern Sie dann die Änderungen:
@@ -1165,23 +1169,23 @@ In diesem Abschnitt wird beschrieben, wie Sie das image-Skript erstellen.
 
 1. Speichern Sie die Änderungen.
 
-#### Erstellen des Knotens „Image cq:editConfig“ {#creating-the-image-cq-editconfig-node}
+#### Erstellen des Knotens &quot;Image cq:editConfig&quot; {#creating-the-image-cq-editconfig-node}
 
 Über den Knoten `cq:editConfig` können Sie bestimmte Verhaltensweisen von Komponenten konfigurieren, indem Sie ihre Eigenschaften bearbeiten.
 
-In diesem Abschnitt verwenden Sie den Knoten „cq:editConfig“, um Assets aus dem Content Finder in Ihre image-Komponente zu ziehen.
+In diesem Abschnitt verwenden Sie einen Knoten cq:editConfig , mit dem Sie Assets aus dem Content Finder in Ihre Bildkomponente ziehen können.
 
-1. Erstellen Sie in CRXDE Lite unter dem Knoten /apps/mywebsite/components/image wie folgt einen neuen Knoten:
+1. Erstellen Sie in CRXDE Lite unter dem Knoten /apps/mywebsite/components/image einen neuen Knoten wie folgt:
 
    * **[!UICONTROL Name]**: cq:editConfig.
    * **[!UICONTROL Typ]**: cq:EditConfig.
 
-1. Erstellen Sie unter dem Knoten „cq:editConfig“ wie folgt einen neuen Knoten:
+1. Erstellen Sie unter dem Knoten cq:editConfig einen neuen Knoten wie folgt:
 
    * **[!UICONTROL Name]**: cq:dropTargets.
    * **[!UICONTROL Typ]**: cq:DropTargetConfig.
 
-1. Erstellen Sie unter dem Knoten „cq:dropTargets“ wie folgt einen neuen Knoten:
+1. Erstellen Sie unter dem Knoten cq:dropTargets einen neuen Knoten wie folgt:
 
    * **[!UICONTROL Name]**: Bild.
    * **[!UICONTROL Typ]**: nt:unstructured.
@@ -1196,45 +1200,45 @@ In diesem Abschnitt verwenden Sie den Knoten „cq:editConfig“, um Assets aus 
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-#### Hinzufügen des Symbols {#adding-the-icon}
+#### Symbol hinzufügen {#adding-the-icon}
 
-In diesem Abschnitt fügen Sie das Symbol hinzu, das neben der image-Komponente angezeigt wird, wenn diese im Sidekick aufgeführt ist:
+In diesem Abschnitt fügen Sie das Symbol hinzu, das neben der Bildkomponente angezeigt werden soll, wenn sie im Sidekick aufgeführt wird:
 
 1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf die Datei. `/libs/foundation/components/image/icon.png` und wählen Sie **[!UICONTROL Kopieren]**.
-1. Rechtsklick auf den Knoten `/apps/mywebsite/components/image` und klicken Sie auf **[!UICONTROL Einfügen]** Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/mywebsite/components/image` und klicken Sie dann auf **[!UICONTROL Einfügen]** und anschließend auf **[!UICONTROL Alle speichern]**.
 
 #### Verwenden von image-Komponenten {#using-the-image-component}
 
-In diesem Abschnitt zeigen Sie die Seite **[!UICONTROL Products]** an und fügen Ihre image-Komponente zum Absatzsystem hinzu.
+In diesem Abschnitt zeigen Sie die Seite **[!UICONTROL Produkte]** an und fügen Ihre image-Komponente zum Absatzsystem hinzu.
 
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu.
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu.
 1. Klicken Sie im Sidekick auf die **[!UICONTROL Designmodus]** Symbol.
 1. Klicken Sie auf **[!UICONTROL Bearbeiten]** Schaltfläche zum Bearbeiten des Designdialogfelds von par.
-1. Im Dialogfeld wird die Liste **[!UICONTROL Zugelassene Komponenten]** angezeigt. Navigieren Sie zu **[!UICONTROL MyWebsite]**, wählen Sie die Komponente **[!UICONTROL My Image]** aus und klicken Sie auf **[!UICONTROL OK]**.
+1. Im Dialogfeld wird eine Liste von **[!UICONTROL Zugelassene Komponenten]** angezeigt wird; navigieren zu **[!UICONTROL MyWebsite]**, wählen Sie die **[!UICONTROL My Image Component]** und klicken Sie auf **[!UICONTROL OK]**.
 1. Zurück zu **[!UICONTROL Bearbeitungsmodus]**.
-1. Doppelklicken Sie auf den parsys-Rahmen (im Bereich **[!UICONTROL Komponenten oder Assets hierhin ziehen]**). Die Auswahlen **[!UICONTROL Neue Komponente einfügen]** und **[!UICONTROL Sidekick]** sehen wie folgt aus:
+1. Doppelklicken Sie auf den Rahmen parsys (auf **[!UICONTROL Komponenten oder Assets hierher ziehen]**). Die **[!UICONTROL Neue Komponente einfügen]** und **[!UICONTROL Sidekick]** Selektoren sehen wie folgt aus:
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
-### Einbinden von toolbar-Komponenten {#including-the-toolbar-component}
+### Einschließen der Toolbar-Komponente {#including-the-toolbar-component}
 
-In diesem Abschnitt wird beschrieben, wie Sie die toolbar-Komponente einbinden, die zu den Foundation-Komponenten gehört.
+In diesem Abschnitt fügen Sie die Symbolleistenkomponente ein, die eine der Foundation-Komponenten ist.
 
-Ihnen stehen dazu mehrere Optionen im Bearbeitungsmodus und im Designmodus zur Auswahl.
+Sie haben mehrere Optionen im Bearbeitungsmodus sowie im Designmodus.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die `body.jsp` und suchen Sie den folgenden Code:
+1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `body.jsp` und suchen Sie nach dem folgenden Code:
 
    ```java
    <div class="toolbar">toolbar</div>
    ```
 
-1. Ersetzen Sie diese Codezeile durch den folgenden Code und speichern Sie die Änderungen:
+1. Ersetzen Sie diesen Code durch den folgenden Code und speichern Sie die Änderungen:
 
    ```java
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. Wählen Sie im Ordnerbaum der Seite AEM Websites die Option `Websites/My Website/English`Klicken Sie auf **[!UICONTROL Neu > Neue Seite]**. Geben Sie die folgenden Eigenschaftswerte an und klicken Sie auf „Erstellen“:
+1. Wählen Sie im Ordnerbaum der Seite AEM Websites die Option `Websites/My Website/English`Klicken Sie auf **[!UICONTROL Neu > Neue Seite]**. Geben Sie die folgenden Eigenschaftswerte an und klicken Sie auf Erstellen:
 
    * **[!UICONTROL Titel]**: Symbolleiste
    * Auswählen **[!UICONTROL My Website Content Page Template]**
@@ -1245,18 +1249,18 @@ Ihnen stehen dazu mehrere Optionen im Bearbeitungsmodus und im Designmodus zur A
 
 1. under **[!UICONTROL Symbolleiste]**, erstellen Sie die folgenden Seiten:
 
-   * Contacts
+   * Kontakte
    * Feedback
    * Anmeldung
    * Suchen
 
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Diese sieht nun wie folgt aus:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Sie sieht wie folgt aus:
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
-### Erstellen von search-Komponenten {#creating-the-search-component}
+### Erstellen der Suchkomponente {#creating-the-search-component}
 
-In diesem Abschnitt erstellen Sie die Komponente zum Suchen nach Inhalten auf der Website. Diese search-Komponente kann im Absatzsystem einer beliebigen Seite (z. B. auf einer spezialisierten Suchergebnisseite) platziert werden.
+In diesem Abschnitt erstellen Sie die Komponente, um auf der Website nach Inhalten zu suchen. Diese Suchkomponente kann im Absatzsystem einer beliebigen Seite platziert werden (z. B. auf einer speziellen Suchergebnisseite).
 
 Das Eingabefeld für die Suche auf der Seite **[!UICONTROL Englisch]** sieht nun wie folgt aus:
 
@@ -1264,10 +1268,10 @@ Das Eingabefeld für die Suche auf der Seite **[!UICONTROL Englisch]** sieht nun
 
 #### Erstellen von search-Komponenten {#creating-the-search-component-1}
 
-1. Klicken Sie in der CRXDE Lite mit der rechten Maustaste `/apps/mywebsite/components`auswählen **[!UICONTROL Erstellen]**, dann **[!UICONTROL Komponente erstellen]**.
-1. Konfigurieren Sie die Komponente über das Dialogfeld:
+1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf `/apps/mywebsite/components`, wählen Sie dann die Option **[!UICONTROL Erstellen]** und anschließend die Option **[!UICONTROL Komponente erstellen]** aus.
+1. Verwenden Sie das Dialogfeld, um die Komponente zu konfigurieren:
 
-   1. Geben Sie im ersten Bedienfeld die folgenden Eigenschaftswerte an:
+   1. Geben Sie in einem ersten Bereich die folgenden Eigenschaftswerte an:
 
       * **[!UICONTROL Titel]**: suchen
       * **[!UICONTROL Titel]**: Meine Suchkomponente
@@ -1287,11 +1291,11 @@ Das Eingabefeld für die Suche auf der Seite **[!UICONTROL Englisch]** sieht nun
 
 1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-#### Erstellen von search-Skripten {#creating-the-search-script}
+#### Erstellen des Suchskripts {#creating-the-search-script}
 
-In diesem Abschnitt wird beschrieben, wie Sie das Suchskript erstellen:
+In diesem Abschnitt wird beschrieben, wie Sie das search-Skript erstellen.
 
-1. Open the `/apps/mywebsite/components/search/search.jsp` file.
+1. Öffnen Sie die Datei `/apps/mywebsite/components/search/search.jsp`.
 1. Kopieren Sie den folgenden Code und fügen Sie ihn in `search.jsp` ein:
 
    ```java
@@ -1445,17 +1449,17 @@ In diesem Abschnitt wird beschrieben, wie Sie das Suchskript erstellen:
 
 1. Speichern Sie die Änderungen.
 
-#### Einbinden von Suchfeldern in contentpage-Komponenten {#including-a-search-box-in-the-contentpage-component}
+#### Einschließen eines Suchfelds in die contentpage-Komponente {#including-a-search-box-in-the-contentpage-component}
 
-Gehen Sie wie folgt vor, um ein Eingabefeld für die Suche in den linken Bereich Ihrer Inhaltsseite einzufügen:
+Gehen Sie wie folgt vor, um ein Sucheingabefeld in den linken Bereich Ihrer Inhaltsseite einzuschließen:
 
-1. Öffnen Sie in CRXDE Lite die -Datei. `left.jsp` under `/apps/mywebsite/components/contentpage` und suchen Sie den folgenden Code (Zeile 2):
+1. Öffnen Sie in CRXDE Lite die Datei `left.jsp` unter `/apps/mywebsite/components/contentpage` und suchen Sie den folgenden Code (Zeile 2):
 
    ```xml
    %><div class="left">
    ```
 
-1. Fügen Sie den folgenden Code *vor* dieser Zeile ein:
+1. Fügen Sie den folgenden Code ein *before* diese Zeile:
 
    ```java
    %><%@ page import="com.day.text.Text"%><%
@@ -1482,20 +1486,20 @@ Gehen Sie wie folgt vor, um ein Eingabefeld für die Suche in den linken Bereich
    </div>
    ```
 
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Die search-Komponente sieht nun wie folgt aus:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Die Suchkomponente sieht wie folgt aus:
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
 
-#### Einbinden vom search-Komponenten in die Seite „Search“ {#including-the-search-component-in-the-search-page}
+#### Einschließen der Suchkomponente in die Suchseite {#including-the-search-component-in-the-search-page}
 
-In diesem Abschnitt fügen Sie die search-Komponente zum Absatzsystem hinzu.
+In diesem Abschnitt fügen Sie Ihre Suchkomponente zum Absatzsystem hinzu.
 
 1. Öffnen Sie in Ihrem Browser die **Suche** Seite.
 1. Klicken Sie im Sidekick auf die **[!UICONTROL Design]** Modussymbol.
 1. Klicken Sie im Block &quot;Design von par&quot;(unter dem Suchtitel) auf **[!UICONTROL Bearbeiten]**.
-1. Scrollen Sie im Dialogfeld nach unten zum **[!UICONTROL Meine Websites]** Gruppe, wählen Sie **[!UICONTROL Meine Suchkomponente]** und klicken Sie auf **[!UICONTROL OK]**.
+1. Führen Sie im Dialogfeld einen Bildlauf nach unten zur Gruppe **[!UICONTROL Meine Websites]** durch, wählen Sie **[!UICONTROL Meine Such-Komponente]** aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie im Sidekick auf das Dreieck, um zu **[!UICONTROL Bearbeiten]** -Modus.
-1. Ziehen Sie die **[!UICONTROL Meine Suche]** aus dem Sidekick in den Rahmen parsys. Diese sieht nun wie folgt aus:
+1. Ziehen Sie die **[!UICONTROL Meine Suche]** aus dem Sidekick in den Rahmen parsys. Sie sieht wie folgt aus:
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
@@ -1503,13 +1507,13 @@ In diesem Abschnitt fügen Sie die search-Komponente zum Absatzsystem hinzu.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
-### Einbinden von iparsys-Komponenten {#including-the-iparsys-component}
+### Einschließen der Iparsys-Komponente {#including-the-iparsys-component}
 
-In diesem Abschnitt wird beschrieben, wie Sie die iparsys-Komponente (Inheritance Paragraph System) einbinden, die zu den Foundation-Komponenten gehört. Mit dieser Komponente können Sie eine Struktur von Absätzen auf einer übergeordneten Seite erstellen und die Absätze von den untergeordneten Seiten erben lassen.
+In diesem Abschnitt schließen Sie die Komponente Vererbungs-Absatzsystem (iparsys) ein, die eine der Foundation-Komponenten ist. Mit dieser Komponente können Sie eine Struktur von Absätzen auf einer übergeordneten Seite erstellen und die Absätze von untergeordneten Seiten übernehmen lassen.
 
-Für diese Komponente können Sie verschiedene Parameter im Bearbeitungs- und Designmodus festlegen.
+Für diese Komponente können Sie mehrere Parameter sowohl im Bearbeitungs- als auch im Designmodus festlegen.
 
-1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `right.jsp` und ersetzen:
+1. Navigieren Sie in CRXDE Lite zu `/apps/mywebsite/components/contentpage`, öffnen Sie die Datei `right.jsp` und ersetzen Sie:
 
    ```java
    <div>iparsys</div>
@@ -1522,6 +1526,6 @@ Für diese Komponente können Sie verschiedene Parameter im Bearbeitungs- und De
    ```
 
 1. Speichern Sie die Änderungen.
-1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Products]** neu. Die Seite sieht nun insgesamt wie folgt aus:
+1. Laden Sie in Ihrem Browser die Seite **[!UICONTROL Produkte]** neu. Die Seite sieht nun insgesamt wie folgt aus:
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)

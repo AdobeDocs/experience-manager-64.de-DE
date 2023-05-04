@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 exl-id: a874b1da-26ec-4e33-97bd-f474edc6f4e9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 4%
+source-wordcount: '714'
+ht-degree: 5%
 
 ---
 
 # Verwalten von Artikeln{#managing-articles}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -33,7 +37,7 @@ Artikel repräsentieren den Text, der auf Kunst basiert, um Informationen zu ver
 >
 >Weitere Informationen zu den folgenden Themen in AEM Mobile-Apps finden Sie in den folgenden Ressourcen der Online-Hilfe:
 >
->* [Betrachtungen zum Entwurf](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Designüberlegungen](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Verwalten von Artikeln](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >

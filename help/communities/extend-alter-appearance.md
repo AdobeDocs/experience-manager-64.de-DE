@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
 exl-id: 358b70b8-8122-4eda-baa7-d9a58d6901f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 2%
+source-wordcount: '304'
+ht-degree: 4%
 
 ---
 
 # Erscheinungsbild ändern (HBS) {#alter-the-appearance-hbs}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Nachdem die Komponenten für das benutzerdefinierte Kommentarsystem im Anwendungsverzeichnis (/apps) vorhanden sind, wobei ein resourceSuperType auf das standardmäßige Kommentarsystem verweist und das benutzerdefinierte Modell/die benutzerdefinierte Ansicht registriert ist, können Sie die Implementierung ändern.
 
@@ -62,7 +66,7 @@ Eine Möglichkeit ist, dies zu tun
 * Im Hauptmenü
 
    * Auswählen **[!UICONTROL Tools > Vorgänge > Replikation]**
-   * Auswählen `Activate Tree`
+   * Klicken Sie auf `Activate Tree`
    * Satz `Start Path`: nach `/apps/custom`
    * Deaktivieren `Only Modified`
    * Auswählen `Activate` button

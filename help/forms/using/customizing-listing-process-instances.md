@@ -9,16 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: e7b8206c-bac2-48a6-b353-d06bc73b29f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 100%
+source-wordcount: '320'
+ht-degree: 55%
 
 ---
 
 # Anpassen der Auflistung von Prozessinstanzen {#customizing-the-listing-of-process-instances}
 
-Die Prozessinstanzliste wird auf der Registerkarte „Verfolgung“ von AEM Forms Workspace angezeigt.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+Die Liste der Prozessinstanzen wird auf der Registerkarte &quot;Verfolgung&quot;von AEM Forms Workspace angezeigt.
 
 In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz einige Eigenschaften dieser Instanz. Die folgenden Eigenschaften sind für jede Prozessinstanz verfügbar. Diese Eigenschaften werden als Attribute im Prozessinstanz-Komponentenmodell gespeichert und sind in dessen Ansicht und Vorlage verfügbar.
 
@@ -30,39 +34,39 @@ In der Prozessinstanzliste zeigt AEM Forms Workspace für jede Prozessinstanz ei
   </tr> 
   <tr> 
    <td>description</td> 
-   <td>Beschreibung der Prozessinstanz</td> 
+   <td>Beschreibung der Prozessinstanz.</td> 
   </tr> 
   <tr> 
-   <td>initiator</td> 
-   <td>Name des Initiators der Prozessinstanz</td> 
+   <td>Initiator</td> 
+   <td>Name des Initiators der Prozessinstanz.</td> 
   </tr> 
   <tr> 
    <td>initiatorId</td> 
-   <td>ID des Initiators der Prozessinstanz</td> 
+   <td>Kennung des Initiators der Prozessinstanz.</td> 
   </tr> 
   <tr> 
    <td>processCompleteTime</td> 
-   <td>Zeitstempel zum Zeitpunkt, als der Vorgang abgeschlossen wurde.</td> 
+   <td>Zeitstempel zum Zeitpunkt, zu dem der Prozess abgeschlossen wurde.</td> 
   </tr> 
   <tr> 
    <td>processInstanceId</td> 
-   <td>ID der Prozessinstanz</td> 
+   <td>ID der Prozessinstanz.</td> 
   </tr> 
   <tr> 
    <td>processInstanceStatus</td> 
-   <td>0 = Initiiert<br />1 = Wird ausgeführt<br /> 2 = Abgeschlossen<br /> 3 = Wird abgeschlossen<br />4 = Beendet<br /> 5 = Wird beendet<br /> 6 = Ausgesetzt<br /> 7 = Wird ausgesetzt<br /> 8 = Aussetzen wird aufgehoben</td> 
+   <td>0 = Initiiert<br /> 1 = Läuft<br /> 2 = Abgeschlossen<br /> 3 = Abgeschlossen<br /> 4 = Beendet<br /> 5 = Beenden<br /> 6 = Ausgesetzt<br /> 7 = Aussetzen<br /> 8 = Aufhebung der Aussetzung</td> 
   </tr> 
   <tr> 
    <td>processName</td> 
-   <td>Der Name des Vorgangs</td> 
+   <td>Name des Prozesses.</td> 
   </tr> 
   <tr> 
    <td>processStartTime</td> 
-   <td>Zeitstempel zum Zeitpunkt, als der Prozess gestartet wurde.</td> 
+   <td>Zeitstempel zum Zeitpunkt, zu dem der Prozess gestartet wurde.</td> 
   </tr> 
   <tr> 
    <td>processVariables</td> 
-   <td>Array von Objekten aus Prozessvariablen Jedes Objekt einer Prozessvariable enthält <strong>name</strong> (den Namen der Prozessvariable), <strong>value</strong> (den Wert der Prozessvariable) und <strong>type</strong> (den Typ der Prozessvariable).</td> 
+   <td>Array von Objekten aus Prozessvariablen. Jedes Prozessvariablenobjekt enthält <strong>name</strong> (Name der Prozessvariablen), <strong>value</strong> (Wert der Prozessvariablen) und<strong> type</strong> (der Typ der Prozessvariablen).</td> 
   </tr> 
  </tbody> 
 </table>

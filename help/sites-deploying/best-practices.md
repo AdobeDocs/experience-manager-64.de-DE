@@ -1,7 +1,7 @@
 ---
 title: Best Practices für die Bereitstellung
 seo-title: Deploying Best Practices
-description: Best Practices für die Bereitstellung und Wartung
+description: Bereitstellen und Verwalten von Best Practices.
 seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
@@ -10,16 +10,20 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 0c8fefb5-6fa0-4fab-a890-9f5ae7508459
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 100%
+source-wordcount: '466'
+ht-degree: 86%
 
 ---
 
 # Best Practices für die Bereitstellung{#deploying-best-practices}
 
-In den Best Practices für die Bereitstellung wird beschrieben, wie AEM am effizientesten und wirkungsvollsten bereitgestellt und gewartet wird. Diese laufend erweiterte Liste von Themen enthält eine Vielzahl von AEM-Bereichen.
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
+In den Best Practices für die Bereitstellung wird beschrieben, wie AEM am effizientesten und wirkungsvollsten bereitgestellt und gewartet wird. Diese wachsende Themenliste umfasst verschiedene Bereiche in AEM.
 
 Für die folgenden Bereiche ist Dokumentation zu Best Practices und Empfehlungen für die Bereitstellung und Wartung verfügbar:
 
@@ -34,7 +38,7 @@ Informationen zu Best Practices zur Verwaltung, Entwicklung oder Inhaltserstellu
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
 
-Die folgenden Tabellen enthalten auch Beschreibungen und Links zu speziellen Dokumenten.
+Spezifische Dokumente werden in den folgenden Tabellen beschrieben und mit ihnen verknüpft.
 
 ## OAK {#oak}
 
@@ -88,7 +92,7 @@ AEM verfügt derzeit über zwei Benutzeroberflächen: die klassische und die Tou
 
 ## Leistung {#performance}
 
-Best Practices über die Leistung sind hier aufgeführt:
+Best Practices zur Leistung sind hier aufgeführt:
 
 <table> 
  <tbody>

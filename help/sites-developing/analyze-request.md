@@ -1,7 +1,7 @@
 ---
 title: Anfragenanalyse-Skript
 seo-title: Request Analysis Script
-description: Das Anfragenanalyse-Skript vereinfacht die Analyse der access.log-Dateien und erzeugt einen lesbaren Bericht für die spätere Verarbeitung.
+description: Das Skript zur Anforderungsanalyse erleichtert die Analyse der access.log-Dateien, die einen lesbaren Bericht zur späteren Verarbeitung erzeugen
 seo-description: The request analysis script is made to ease the analysis of the access.log files producing a readable report for later processing
 uuid: 24eff3c6-5748-46f3-a30c-4a3a6427ce1d
 contentOwner: Guillaume Carlino
@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 1b5e0ccf-4157-45e3-8caf-1d6739d7d9d2
 exl-id: 8582bbca-c11a-4880-88ba-da22e0301dba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 76%
 
 ---
 
 # Anfragenanalyse-Skript{#request-analysis-script}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 ## Download {#download}
 

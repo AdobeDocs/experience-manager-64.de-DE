@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 7317fd2f-9756-4231-b343-ea808ea159ec
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2653'
 ht-degree: 2%
 
 ---
 
 # Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole{#creating-and-editing-apps-using-the-apps-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 >[!NOTE]
 >
@@ -282,7 +286,7 @@ Bei Verwendung der Anwendung ist die Seite Standorte in der Menüliste auf der e
 
 Beim Verfassen der Seiten einer Mobile App sind im Sidekick sofort mehrere Komponenten verfügbar. Die Komponenten gehören zur PhoneGap-Komponentengruppe.
 
-### Swipe-Karussell {#swipe-carousel}
+### Karussell-Galerie {#swipe-carousel}
 
 Die Komponente Karussell löschen ist ein Tool zum Anzeigen und Navigieren von Seiten der Site. Die Komponente enthält ein Karussell, bei dem die Bilder für die Seiten über einer Liste von Seitenlinks durchlaufen werden. Bearbeiten Sie die Komponente, um die anzuzeigenden Seiten und das Verhalten des Karussells anzugeben.
 

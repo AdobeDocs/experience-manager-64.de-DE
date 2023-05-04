@@ -1,7 +1,7 @@
 ---
 title: Modelle im Repository
 seo-title: Models in Repository
-description: 'null'
+description: null
 seo-description: null
 uuid: 54f81180-4178-4e33-a6f0-e9e6ea50798e
 contentOwner: User
@@ -9,19 +9,23 @@ content-type: reference
 discoiquuid: ae1a72f4-d8c1-4c75-ba2c-7322f3743b17
 noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/mobile/using/administer-mobile-apps
-source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 2%
+source-wordcount: '1364'
+ht-degree: 3%
 
 ---
 
 
 # Modelle im Repository{#models-in-repository}
 
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
+
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Ein Modell enthält einen Satz von Datentypen, die die Eigenschaften definieren, die letztendlich von Content Services gerendert werden. Ein Modell definiert auch die Beziehungen zwischen anderen Modellen, um die Datenintegrität zu erzwingen.
 
@@ -94,7 +98,7 @@ Die folgende Tabelle zeigt die für ein Modell definierten Eigenschaften:
 |---|---|
 | Modelltitel | Name des Modells |
 | Beschreibung | Beschreibung des Modells |
-| Miniatur | Miniaturbild des Modells |
+| Miniaturansicht | Miniaturbild des Modells |
 | Modelltyp | Modelltyp (dies kann eine einfache Zeichenfolge oder ein Pfad zu einer tatsächlichen Komponente sein) |
 | Zugelassene untergeordnete Elemente | Pfad einer Vorlage, die dieser Vorlage untergeordnet sein darf |
 | Zugelassene übergeordnete Elemente | Pfad einer Vorlage, die dieser Vorlage übergeordnet sein darf |

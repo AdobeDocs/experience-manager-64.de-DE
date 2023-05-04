@@ -10,14 +10,18 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: ead4306a-6337-4dae-8839-14fada0ae0e5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 100%
+source-wordcount: '477'
+ht-degree: 76%
 
 ---
 
 # JSON-Exporter für Content Services{#json-exporter-for-content-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Mit den AEM Content Services können die Beschreibung und Bereitstellung von Inhalten in/über AEM über einen Fokus auf Web-Seiten hinweg generalisiert werden.
 
@@ -35,19 +39,19 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 
 ## JSON Exporter mit Inhaltsfragment-Kernkomponenten {#json-exporter-with-content-fragment-core-components}
 
-Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
+Mit dem AEM JSON Exporter können Sie den Inhalt einer (y) AEM Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
 
 In AEM erfolgt die Bereitstellung mit dem `model`-Selektor und der `.json`-Erweiterung.
 
 `.model.json`
 
-1. Zum Beispiel werden über eine URL wie:
+1. Beispielsweise eine URL wie:
 
    ```shell
    http://localhost:4502/content/we-retail/language-masters/en.model.json
    ```
 
-1. Inhalte der folgenden Art bereitgestellt:
+1. liefert Inhalte wie:
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
@@ -57,15 +61,15 @@ Verwenden Sie dazu den vollständigen Pfad zum Fragment (über `jcr:content`); b
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
-Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten verschiedener Art enthalten. Sie können außerdem Mechanismen wie Listenkomponenten verwenden, um automatisch nach relevantem Inhalt zu suchen.
+Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten verschiedener Typen enthalten. Sie können auch Mechanismen wie Listenkomponenten verwenden, um automatisch nach relevanten Inhalten zu suchen.
 
-* Zum Beispiel werden über eine URL wie:
+* Beispielsweise eine URL wie:
 
    ```shell
    http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
    ```
 
-* Inhalte der folgenden Art bereitgestellt:
+* liefert Inhalte wie:
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -87,7 +91,7 @@ Siehe auch:
 
 * Sling-Modelle:
 
-   * [Sling-Modelle – Zuweisung von Modellklassen und Ressourcentypen seit 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling-Modelle - Verknüpfen einer Modellklasse mit einem Ressourcentyp seit 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM mit JSON:
 
@@ -97,7 +101,7 @@ Siehe auch:
 
 Weitere Informationen finden Sie unter:
 
-* Das [Thema „Inhaltsfragmente“·im Assets-Benutzerhandbuch](https://helpx.adobe.com/de/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Das [Thema „Inhaltsfragmente“ im Assets-Benutzerhandbuch](https://helpx.adobe.com/de/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)

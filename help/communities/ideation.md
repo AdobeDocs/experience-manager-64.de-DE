@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 exl-id: 7fb68293-c6e3-4793-b433-205bcfc23e20
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 6%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
 
 # Ideengrundlagen {#ideation-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 hat das Ende der erweiterten Unterstützung erreicht und diese Dokumentation wird nicht mehr aktualisiert. Weitere Informationen finden Sie in unserer [technische Unterstützung](https://helpx.adobe.com/de/support/programs/eol-matrix.html). Unterstützte Versionen suchen [here](https://experienceleague.adobe.com/docs/?lang=de).
 
 Auf dieser Seite finden Sie die wichtigsten Informationen für die Arbeit mit der Ideenfunktion, die einem Forum ähnlich ist, jedoch mit der Möglichkeit, als Entwurf zu speichern und ein kollaboratives Gefühl zu entwickeln.
 
